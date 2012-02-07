@@ -4,6 +4,7 @@
       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
       xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:spdx="http://spdx.org/rdf/terms#"
       xmlns:lidb="http://ns.licensedb.org/#"
       xml:lang="en-US" lang="en-US">
 
@@ -60,6 +61,7 @@ color-stop(0.54, #0068E8)
         patent grant, etc..
       </span>
       <span rel="rdfs:subClassOf" resource="cc:License"></span>
+      <span rel="rdfs:subClassOf" resource="spdx:License"></span>
     </div>
 
     <div id="LicenseException" about="#LicenseException"
@@ -72,6 +74,14 @@ color-stop(0.54, #0068E8)
     </div>
 
     <h2>License Properties</h2>
+
+    <div id="id" about="#id" typeof="rdf:Property">
+      <h4>lidb:id</h4>
+      The <span rel="rdfs:range"
+      resource="http://www.w3.org/2000/01/rdf-schema#Literal">identifier</span>
+      assigned to the <a rel="rdfs:range" href="#License">license</a>
+      by the LicenseDB project.
+    </div>
 
     <div id="compatible" about="#compatible" typeof="rdf:Property">
       <h4>lidb:compatible</h4> A 
