@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:lidb="http://ns.licensedb.org/#"
+      xml:lang="en-US" lang="en-US">
+
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>License Database vocabulary</title>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+  </head>
+
+  <body>
+    <div id="header" style="width: 100%;
+
+border-bottom: 2px solid #222;
+
+background-image: linear-gradient(top, #004EAD 0%, #0068E8 54%);
+background-image: -o-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+background-image: -moz-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+background-image: -webkit-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+background-image: -ms-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+
+background-image: -webkit-gradient(
+linear,
+left top,
+left bottom,
+color-stop(0, #004EAD),
+color-stop(0.54, #0068E8)
+);
+">
+      <img src="../licensedb.png" style="margin: 1em;" />
+    </div>
+
+    <h1>License Database vocabulary</h1>
+
+    <p>
+      The License Database vocabulary extends The Creative Commons
+      Rights Expression Language
+      (<a href="http://wiki.creativecommons.org/CC_REL">CC REL</a>)
+      with additional properties to describe existing copyright and
+      database licenses in more detail.
+    </p>
+    <p>
+      <a href="http://licensedb.org">The License Database project</a>
+      uses this vocabulary to describe existing free software, open
+      source software and free culture licenses used today.
+    </p>
+
+    <h2>Classes</h2>
+
+    <div id="License" about="#License" typeof="rdfs:Class">
+      <h4 property="rdfs:label">License</h4>
+      <span property="rdfs:comment">
+        a set of requests/permissions to users of a Work, e.g. a
+        copyright license, database rights license, trademark license,
+        patent grant, etc..
+      </span>
+      <span rel="rdfs:subClassOf" resource="cc:License"></span>
+    </div>
+
+    <div id="LicenseException" about="#LicenseException"
+         typeof="rdfs:Class">
+      <h4 property="rdfs:label">License Exception</h4>
+      <span property="rdfs:comment">
+        a set of permissions granted in addition to the permissions
+        granted by a copyright license.
+      </span>
+    </div>
+
+    <h2>License Properties</h2>
+
+    <div id="compatible" about="#compatible" typeof="rdf:Property">
+      <h4>lidb:compatible</h4> A 
+      <a rel="rdfs:domain" href="#License">License</a> 
+      <span property="rdfs:label">is compatible with</span>
+      a <a rel="rdfs:range" href="#License">License</a>.
+    </div>
+
+    <div id="hasEarlierVersion" about="#hasEarlierVersion"
+         typeof="rdf:Property">
+      <h4>lidb:hasEarlierVersion</h4> A 
+      <a rel="rdfs:range" href="#License">License</a> is an earlier
+      version of <a rel="rdfs:domain" href="#License">License</a>
+    </div>
+
+    <div id="hasLaterVersion" about="#hasLaterVersion"
+         typeof="rdf:Property">
+      <h4>lidb:hasLaterVersion</h4> A 
+      <a rel="rdfs:range" href="#License">License</a>
+      is a <span property="rdfs:label">is a later version</span>
+      <a rel="rdfs:domain" href="#License">License</a>.
+      :
+      <span property="rdfs:comment">
+        This property can be used to find applicable licenses for a
+        work which is licensed under a versioned license with an "or
+        any later version" clause.
+      </span>
+    </div>
+
+    <div id="hasPlainText" about="#hasPlainText"
+         typeof="rdf:Property">
+      <h4>lidb:hasPlainText</h4>
+      A <a rel="rdfs:domain" href="#License">license</a> is available
+      as a plain text <span rel="rdfs:subPropertyOf"
+      resource="http://purl.org/dc/terms/hasFormat">formatted</span> <span rel="rdfs:range"
+      resource="http://www.w3.org/2000/01/rdf-schema#Resource">resource</span>. This
+      is usually the preferred format to include in packaged software
+      project.
+    </div>
+
+      The <span rel="rdfs:range"
+      resource="http://www.w3.org/2000/01/rdf-schema#Literal">license
+      notices</span> typically used in project documentation or source
+      files to put the work under this <a rel="rdfs:range"
+      href="#License">license</a> (with an "or any later version"
+      clause).
+    </div>
+
+    <div id="orLaterNotices" about="#orLaterNotices"
+         typeof="rdf:Property">
+      <h4>lidb:orLaterNotices</h4>
+      
+      The <span rel="rdfs:range"
+      resource="http://www.w3.org/2000/01/rdf-schema#Literal">license
+      notices</span> typically used in project documentation or source
+      files to put the work under this <a rel="rdfs:range"
+      href="#License">license</a> (with an "or any later version"
+      clause).
+    </div>
+
+    <div id="orLaterShortNotice" about="#orLaterShortNotice"
+         typeof="rdf:Property">
+      <h4>lidb:orLaterShortNotice</h4>
+
+      The <span rel="rdfs:range"
+      resource="http://www.w3.org/2000/01/rdf-schema#Literal">license
+      notice</span> typically used in the user interface of a work to
+      put the work under this <a rel="rdfs:range"
+      href="#License">license</a> (with an "or any later version"
+      clause).
+    </div>
+
+    <div id="versionOnlyNotices" about="#versionOnlyNotices"
+         typeof="rdf:Property">
+      <h4>lidb:versionOnlyNotices</h4>
+      
+      The <span rel="rdfs:range"
+      resource="http://www.w3.org/2000/01/rdf-schema#Literal">license
+      notices</span> typically used in project documentation or source
+      files to put the work under this <a rel="rdfs:range"
+      href="#License">license</a> (with an "only this version"
+      clause if the license is versioned).
+    </div>
+
+    <div id="versionOnlyShortNotice" about="#versionOnlyShortNotice"
+         typeof="rdf:Property">
+      <h4>lidb:versionOnlyShortNotice</h4>
+
+      The <span rel="rdfs:range"
+      resource="http://www.w3.org/2000/01/rdf-schema#Literal">license
+      notice</span> typically used in the user interface of a work to
+      put the work under this <a rel="rdfs:range"
+      href="#License">license</a> (with an "only this version"
+      clause if the license is versioned).
+    </div>
+
+  </body>
+</html>
