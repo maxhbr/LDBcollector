@@ -1,0 +1,26 @@
+
+QuickStart
+==========
+
+  1. get RVM, https://rvm.beginrescueend.com/rvm/install/
+  2. rvm requirements
+  3. rvm install 1.9.2
+  4. rvm 1.9.2 do gem install linkeddata
+  5. rvm use 1.9.2
+
+
+More info
+=========
+
+To convert between RDF/XML, JSON-LD and any other formats used by the
+License Database project you will need RDF.rb and most of its plugins.
+If you already have a working ruby setup you can install these with
+"gem install linkeddata".  The QuickStart instructions above recommend
+using "RVM", which is somewhat similar in purpose as perl's local::lib
+and python's virtualenv.
+
+Once you have installed the linkeddata gem you can check that everything
+is working with the following command:
+
+    rdf serialize --output-format jsonld http://creativecommons.org/licenses/by-sa/3.0/rdf
+
