@@ -4,7 +4,7 @@ SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-DEST=$DIR/../plaintext
+DEST=$DIR/../upstream/plaintext
 
 # NOTE: There is no official plain-text version of PDDL 1.0
 wget http://www.opendatacommons.org/wp-content/uploads/2009/06/odbl-10.txt --output-document $DEST/ODbL-1.txt
