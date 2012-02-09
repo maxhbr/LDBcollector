@@ -26,6 +26,7 @@ if [ -s $DIR/../upstream/rdf/$1.rdf ]; then
     rdf serialize $DIR/../upstream/rdf/$1.rdf >> $1.triples
 fi
 
-$DIR/../build/withcontext.rb $1.triples $1.json ../context.json
+$DIR/../build/publish-json.rb $1.triples $1.json ../context.json
+$DIR/../build/publish-rdf.rb $1.triples $1.rdf ../context.json
 rm $1.triples
-# rdf serialize --output-format rdfxml $1.json > $1.rdf
+
