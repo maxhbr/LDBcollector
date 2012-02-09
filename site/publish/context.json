@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "cc": "http://creativecommons.org/ns#",
+    "li": "https://licensedb.org/ns#",
+    "dc": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl/",
+    "cc:legalcode":      { "@type": "@id" },
+    "cc:permits":        { "@type": "@id" },
+    "cc:requires":       { "@type": "@id" },
+    "dc:creator":        { "@type": "@id" },
+    "owl:sameAs":        { "@type": "@id" },
+    "foaf:logo":         { "@type": "@id" },
+    "li:earlierVersion": { "@type": "@id" },
+    "li:laterVersion":   { "@type": "@id" },
+    "li:plaintext":      { "@type": "@id" }
+  }
+}

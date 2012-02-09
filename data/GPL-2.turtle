@@ -1,0 +1,7 @@
+@prefix li: <https://licensedb.org/ns#> .
+
+<http://gnu.org/licenses/gpl-2.0.html> a li:License;
+   li:id "GPL-2";
+   li:plaintext <http://gnu.org/licenses/gpl-2.0.txt>;
+   li:earlierVersion <http://gnu.org/licenses/gpl-1.0.html>;
+   li:laterVersion <http://gnu.org/licenses/gpl-3.0.html>.
