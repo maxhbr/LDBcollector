@@ -44,9 +44,9 @@ www/robots.txt: src/site/robots.txt | www/id; @cp $< $@
 www/favicon.ico: src/site/favicon.ico | www/id; @cp $< $@
 www/licensedb.png: src/site/licensedb.png | www/id; @cp $< $@
 
-www/ns: src/site/ns.html | www/id; php src/site/page.php $< > $@
-www/about: src/site/about.html | www/id; php src/site/page.php $< > $@
-www/index.html: src/site/index.html | www/id; php src/site/page.php $< > $@
+www/ns: src/site/ns.html src/site/page.php | www/id; php src/site/page.php $< > $@
+www/about: src/site/about.html src/site/page.php | www/id; php src/site/page.php $< > $@
+www/index.html: src/site/index.html src/site/page.php | www/id; php src/site/page.php $< > $@
 
 clean:
 	rm -rf .build

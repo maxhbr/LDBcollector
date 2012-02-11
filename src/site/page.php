@@ -1,4 +1,4 @@
-<?php
+<?php // -*- mode: html -*- 
 
 $content = file_get_contents ($argv[1])
 
@@ -47,6 +47,9 @@ $content = file_get_contents ($argv[1])
       h4 { font-size: 14px; line-height: 18px; margin: 18px 0 0 0; }
       h5 { font-size: 12px; line-height: 18px; }
       h6 { font-size: 11px; line-height: 18px; text-transform: uppercase; }
+
+      dt { margin: 1em 0 0 0;  font-weight: bolder; }
+      dd { margin: 0.5em 0 0 3em; }
 
       #header {
           width: 100%;

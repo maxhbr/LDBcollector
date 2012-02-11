@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html version="HTML+RDFa 1.1" lang="en" xml:lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:li="https://licensedb.org/ns#"
+      xmlns:spdx="http://spdx.org/rdf/terms#"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>GNU General Public License</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <style>
+      div.sidebar { font-size: 80%; width: 20em; float: right; border: 2px dashed #88f; }
+    </style>
+  </head>
+  <body>
+
+    <div about="http://gnu.org/licenses/gpl-3.0.html" typeof="li:License cc:License">
+
+      <div class="sidebar">
+        <div class="logo">
+          <!-- algorithm: extract numbers, sum, take largest. or HEAD, take largest. or fetch, take dimensions. -->
+          <!-- select largest with js? -->
+            <a class="logo1" property="foaf:logo" href="http://www.gnu.org/graphics/gplv3-127x51.png">
+              <img src="http://www.gnu.org/graphics/gplv3-127x51.png" />
+            </a>
+            <a class="logo2" style="display: none" property="foaf:logo" href="http://www.gnu.org/graphics/gplv3-88x31.png">
+              <img src="http://www.gnu.org/graphics/gplv3-88x31.png" />
+            </a>
+        </div>
+        
+        <ul>
+          <li><span class="prefix">li:</span>id: <span property="li:id">GPL-3</span></li>
+          <li><span class="prefix">li:</span>earlierVersion: <a property="https://licensedb.org/ns#earlierVersion" href="https://licensedb.org/id/GPL-2">GPL-2</a></li>
+          <hr />
+          <li><span class="prefix">dc:</span>title: <span property="dc:title">GNU General Public License</span></li>
+          <li><span class="prefix">dc:</span>identifier: <span property="dc:identifier">GNU GPL</span></li>
+          <li><span class="prefix">dc:</span>hasVersion: <span property="dc:hasVersion">3.0</span></li>
+          <li><span class="prefix">dc:</span>creator: <a property="dc:creator" href="http://fsf.org/">http://fsf.org/</a>
+          <hr />
+          <li><span class="prefix">spdx:</span>licenseId: 
+            <a property="spdx:licenseId" href="http://spdx.org/licenses/GPL-3.0">GPL-3.0</a></li>
+          <li><span class="prefix">spdx:</span>licenseId: 
+            <a property="spdx:licenseId" href="http://spdx.org/licenses/GPL-3.0+">GPL-3.0+</a></li>
+          <li><span class="prefix">spdx:</span>licenseId: 
+            <a property="spdx:licenseId" href="http://spdx.org/licenses/GPL-3.0-with-autoconf-exception">GPL-3.0-with-autoconf-exception</a></li>
+          <li><span class="prefix">spdx:</span>licenseId: 
+            <a property="spdx:licenseId" href="http://spdx.org/licenses/GPL-3.0-with-GCC-exception">GPL-3.0-with-GCC-exception</a></li>
+          <hr />
+          <li><span class="prefix">foaf:</span>logo: <button class="selected logo1">gplv3-127x51</button></li>
+          <li><span class="prefix">foaf:</span>logo: <button class="logo2">gplv3-88x31</button></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <h1 property="dc:title">GNU General Public License</h1>
+        <h2>version <span property="dc:hasVersion">3.0</span></h2>
+
+        <ul>
+          <li><span class="prefix">cc:</span>legalcode: 
+            <a property="cc:legalcode" href="http://gnu.org/licenses/gpl-3.0.html">gpl-3.0.html <span class="domain">(gnu.org)</span></a></li>
+          <li><span class="prefix">li:</span>plaintext: 
+            <a property="li:plaintext" href="http://gnu.org/licenses/gpl-3.0.txt">gpl-3.0.txt <span class="domain">(gnu.org)</span></a></li>
+          <hr />
+          <li><span class="prefix">cc:</span>permits:
+            <a property="cc:permits" href="http://creativecommons.org/ns#Distribution">Distribution</a></li>
+          <li><span class="prefix">cc:</span>permits:
+            <a property="cc:permits" href="http://creativecommons.org/ns#Reproduction">Reproduction</a></li>
+          <li><span class="prefix">cc:</span>permits:
+            <a property="cc:permits" href="http://creativecommons.org/ns#DerivativeWorks">DerivativeWorks</a></li>
+          <li><span class="prefix">cc:</span>requires:
+            <a property="cc:requires" href="http://creativecommons.org/ns#Copyleft">Copyleft</a></li>
+          <li><span class="prefix">cc:</span>requires:
+            <a property="cc:requires" href="http://creativecommons.org/ns#SourceCode">SourceCode</a></li>
+          <li><span class="prefix">cc:</span>requires:
+            <a property="cc:requires" href="http://creativecommons.org/ns#Notice">Notice</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <script>
+      $('div.sidebar').find ('button').bind ('click', function (event) {
+        $('div.sidebar').find ('a[property="foaf:logo"]').hide ();
+        $('div.sidebar').find ('button').removeClass ('selected');
+        var logo = $(this).attr ('class');
+        $(this).addClass ('selected');
+        $('div.sidebar').find ('a.' + logo).show ();
+      });
+    </script>
+
+  </body>
+</html>
