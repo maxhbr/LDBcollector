@@ -88,47 +88,26 @@ $content = file_get_contents ($argv[1])
       <a href="http://licensedb.org/" title="home"><img src="licensedb.png" style="margin: 1em;" /></a>
       <div id="menu">
         <ul>
-          <li><a href="https://licensedb.org/about/">About</a></li>
+          <li><a href="https://licensedb.org/">About</a></li>
           <li><a href="https://gitorious.org/licensedb/licensedb/">Download</a></li>
-          <li><a href="https://licensedb.org/ns/">Vocabulary</a></li>
+          <li><a href="https://licensedb.org/ns">Vocabulary</a></li>
+          <li><a href="https://licensedb.org/license">License</a></li>
         </ul>
       </div>
     </div>
 
     <div id="content"><?php echo $content ?></div>
 
-    <script type="text/javascript" language="JavaScript">
-      function license_info () {
-        var l = document.getElementById("license");
-        l.style.display = 'block';
-        l.scrollIntoView ();
-      }
-    </script>
     <div id="footer">
       <p class="copyright">
-        &copy; 2012 <a href="https://frob.nl">Kuno Woudt</a>,
-        <a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a>
-        <button onclick="license_info(); return false;">More information</button>
+        &copy; 2012 <a href="https://frob.nl">Kuno Woudt</a>, software
+        licensed under <a rel="license"
+        href="http://www.apache.org/licenses/LICENSE-2.0.html" >Apache
+        2.0</a>, database available under <a rel="license"
+        href="http://creativecommons.org/publicdomain/zero/1.0/"
+        >CC0</a>. See <a href="https://licensedb.ogr/license">the
+        license page</a> for more details.
       </p>
-      <div id="license" style="display: none;">
-        <p>
-          Licensed under the Apache License, Version 2.0 (the
-          "License"); you may not use this file except in compliance
-          with the License.  You may obtain a copy of the License at
-        </p>
-        <p class="indent">
-          <a href="http://www.apache.org/licenses/LICENSE-2.0"
-             >http://www.apache.org/licenses/LICENSE-2.0</a>
-        </p>
-        <p>
-          Unless required by applicable law or agreed to in writing,
-          software distributed under the License is distributed on an
-          "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-          either express or implied.  See the License for the specific
-          language governing permissions and limitations under the
-          License.
-        </p>
-      </div>
     </div>
 
   </body>

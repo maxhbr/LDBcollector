@@ -52,6 +52,19 @@
         <span rel="rdfs:subClassOf" resource="http://spdx.org/rdf/terms#License"></span>
       </div>
 
+      <div id="Notice" about="#Notice" typeof="rdfs:Class">
+        <h4 property="rdfs:label"><span class="prefix">li:</span>Notice</h4>
+        <p property="rdfs:comment">
+          A set of notices used to apply a particular license to a
+          work, it usually states where the full license text can be
+          found or in case it is a short license consist of the full
+          license text.  It also often contains a notice to
+          disclaim warranty.
+        </p>
+        <span rel="rdfs:subClassOf" resource="http://creativecommons.org/ns#License"></span>
+        <span rel="rdfs:subClassOf" resource="http://spdx.org/rdf/terms#License"></span>
+      </div>
+
       <h2>License Properties</h2>
 
       <div id="id" about="#id" typeof="rdf:Property">
@@ -59,7 +72,7 @@
         <p>
           The <span rel="rdfs:range"
           resource="http://www.w3.org/2000/01/rdf-schema#Literal"
-          >identifier</span> assigned to the <a rel="rdfs:range"
+          >identifier</span> assigned to the <a rel="rdfs:domain"
           href="#License">license</a> by the LicenseDB project.
           (the intent is to follow the same naming scheme as
            defined in <a href="http://dep.debian.net/deps/dep5/#license-specification">DEP5</a>)
@@ -113,3 +126,45 @@
           </p>
       </div>
 
+      <h2>Notice Properties</h2>
+
+      <div id="text" about="#text" typeof="rdf:Property">
+        <h4><span class="prefix">li:</span>text</h4>
+        <p>
+          The <span rel="rdfs:range"
+          resource="http://www.w3.org/2000/01/rdf-schema#Literal"
+          >text</span> used to apply a <a rel="rdfs:domain"
+          href="#License">license</a> to a work.
+        </p>
+      </div>
+
+      <div id="short" about="#short" typeof="rdf:Property">
+        <h4><span class="prefix">li:</span>short</h4>
+        <p>
+          A <span rel="rdfs:range"
+          resource="http://www.w3.org/2001/XMLSchema-datatypes#boolean"
+          >boolean</span>, if true signifies that this particular
+          <a rel="rdfs:domain" href="#Notice">notice</a> is a short
+          notice typically used in user interfaces where there is not
+          enough room for a longer text.  If false the notice is a
+          slightly longer text typically used in software source code
+          files
+          and <a href="http://en.wikipedia.org/wiki/README">README</a>
+          files or anywhere else where there is sufficient room for a
+          slightly longer text.
+        </p>
+      </div>
+
+      <div id="orlater" about="#orlater" typeof="rdf:Property">
+        <h4><span class="prefix">li:</span>orlater</h4>
+        <p>
+          A <span rel="rdfs:range"
+          resource="http://www.w3.org/2001/XMLSchema-datatypes#boolean"
+          >boolean</span>, if true signifies that this
+          particular <a rel="rdfs:domain" href="#Notice">notice</a> is
+          a notice typically used to apply an "or-later" clause to a
+          versioned license.  If false the notice will not allow the
+          licensee to upgrade to a newer version of the license (or
+          there is only one license version).
+        </p>
+      </div>

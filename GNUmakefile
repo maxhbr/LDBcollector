@@ -2,7 +2,7 @@ SOURCES := $(wildcard data/*.turtle)
 JSON_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.json,$(SOURCES))))
 RDF_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.rdf,$(SOURCES))))
 
-WEB_SOURCES = index.html about ns
+WEB_SOURCES = index.html license ns
 WEB_VERBATIM = robots.txt favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM))
 
@@ -45,7 +45,7 @@ www/favicon.ico: src/site/favicon.ico | www/id; @cp $< $@
 www/licensedb.png: src/site/licensedb.png | www/id; @cp $< $@
 
 www/ns: src/site/ns.html src/site/page.php | www/id; php src/site/page.php $< > $@
-www/about: src/site/about.html src/site/page.php | www/id; php src/site/page.php $< > $@
+www/license: src/site/license.html src/site/page.php | www/id; php src/site/page.php $< > $@
 www/index.html: src/site/index.html src/site/page.php | www/id; php src/site/page.php $< > $@
 
 clean:

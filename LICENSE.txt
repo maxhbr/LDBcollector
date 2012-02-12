@@ -16,7 +16,7 @@ database for more information.
 Software
 ========
 
-The Software consists of all the files in build/, site/ and the
+The Software consists of all the files in build/, src/ and the
 README.txt and INSTALL.txt files in the project root.
 
 Copyright 2012  Kuno Woudt
