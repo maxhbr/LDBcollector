@@ -1,6 +1,7 @@
-<?php // -*- mode: html -*- 
+<?php // -*- mode: html -*-
 
 $contextfile = dirname (__FILE__) . "/../../data/context.json";
+$pagename = basename ($argv[1], ".json");
 $data = json_decode (file_get_contents ($argv[1]), true);
 $context = json_decode (file_get_contents ($contextfile), true);
 
@@ -55,10 +56,10 @@ function render_linked_property_entry ($name, $value) {
         $value = $propurl . $url_name;
     }
     else
-    { 
+    {
         $propurl = $context["@context"][$prefix];
-        $host = parse_url ($value, PHP_URL_HOST); 
-        $path = parse_url ($value, PHP_URL_PATH); 
+        $host = parse_url ($value, PHP_URL_HOST);
+        $path = parse_url ($value, PHP_URL_PATH);
         if (empty ($path) or $path == "/") {
             $display = $host;
         }
@@ -245,21 +246,20 @@ function sidebar ()
 
       hr { border: 1px solid #eee; }
 
+      div.column1 { float: left; width: 60%; min-width: 30em; max-width: 52em; }
+      div.column2 { float: left; width: 30%; min-width: 20em; max-width: 30em; }
+
       div.footer,
       div.main,
       div.sidebar {
           background: #ddd;
           padding: 1em;
-          margin: 0 2em 2em 2em;
+          margin: 2em;
           border: 4px solid #fff;
           box-shadow: 0 1px 16px #888;
       }
 
-      div.sidebar { width: 22em; float: right; }
-      div.footer,
-      div.main { width: 44em; margin: 2em; }
-
-      pre { font-size: 12px; }
+      pre { font-size: 12px; overflow: auto; }
 
       div.logo { padding: 1em; text-align: center; }
     </style>
@@ -269,10 +269,7 @@ function sidebar ()
     <div about="<?php echo $data['@id']; ?>"
           typeof="li:License cc:License">
 
-      <div class="sidebar">
-          <?php sidebar () ?>
-      </div>
-
+      <div class="column1">
       <div class="main">
         <h1>
           <span property="dc:title">GNU General Public License</span><br />
@@ -294,7 +291,7 @@ function sidebar ()
           </div>
 
           <h3><span class="prefix">li:</span>notice</h3>
-          <pre property="https://licensedb.org/ns#text">License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt
+          <pre property="https://licensedb.org/ns#text">License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 </pre>
@@ -331,19 +328,26 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
         </div>
 
       </div>
+
+      <div class="footer">
+        <p>
+          You're viewing metadata from <a href="https://licensedb.org">The License Database</a>.
+          Get this data as <a href="<?=$pagename?>.json">JSON-LD</a> or
+          <a href="<?=$pagename?>.rdf">RDF</a>.
+        </p>
+
+        <p>
+          To the extent possible under law, the License Database contributors
+          have waived all copyright and related or neighboring rights to this work.
+          See <a href="https://licensedb.org/license">the license page</a> for more details.
+        </p>
+      </div>
     </div>
 
-    <div class="footer">
-      <p>
-        You're viewing metadata from <a href="https://licensedb.org">The License Database</a>.
-        Get this data as <a href="GPL-3.json">JSON-LD</a> or <a href="GPL-3.rdf">RDF</a>.
-      </p>
-
-      <p>
-        To the extent possible under law, the License Database contributors
-        have waived all copyright and related or neighboring rights to this work.  
-        See <a href="https://licensedb.org/license">the license page</a> for more details.
-      </p>
+    <div class="column2">
+      <div class="sidebar">
+        <?php sidebar () ?>
+      </div>
     </div>
 
     <script>
