@@ -10,9 +10,93 @@
   <head>
     <meta charset="UTF-8"/>
     <title>GNU General Public License</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <style>
-      div.sidebar { font-size: 80%; width: 20em; float: right; border: 2px dashed #88f; }
+      html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+      pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+      img, ins, q, samp, small, strike, strong, sub, sup, tt, var, dl,
+      dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+      caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0; padding: 0; border: 0; outline: 0; text-decoration: none;
+        vertical-align: baseline; background: transparent; color: black;
+      }
+      ol, ul { list-style: none; }
+      blockquote, q { quotes: none; }
+      blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+      table { border-collapse: collapse; border-spacing: 0; }
+      ins { text-decoration: none; }
+      del { text-decoration: line-through; }
+
+      html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+      body { color: #333; background: #ccc; }
+      body, p {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px; line-height: 18px;
+      }
+
+      p { margin-bottom: 9px; }
+
+      h1, h2, h3, h4, h5, h6 { font-weight: bold; text-rendering: optimizelegibility; }
+      h1 { font-size: 30px; line-height: 36px; margin: 36px 0; }
+      h1 small { font-size: 18px; }
+      h2 { font-size: 24px; line-height: 36px; margin: 36px 0; }
+      h3 { font-size: 18px; line-height: 27px; margin: 18px 0; }
+      h4 { font-size: 14px; line-height: 18px; margin: 18px 0 0 0; }
+      h5 { font-size: 12px; line-height: 18px; }
+      h6 { font-size: 11px; line-height: 18px; text-transform: uppercase; }
+
+      dt { margin: 1em 0 0 0;  font-weight: bolder; }
+      dd { margin: 0.5em 0 0 3em; }
+
+      #header {
+          width: 100%;
+          border-bottom: 2px solid #222;
+          background-image: linear-gradient(top, #004EAD 0%, #0068E8 54%);
+          background-image: -o-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+          background-image: -moz-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+          background-image: -webkit-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+          background-image: -ms-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+          background-image: -webkit-gradient(linear, left top, left bottom,
+                            color-stop(0, #004EAD), color-stop(0.54, #0068E8));
+      }
+
+      #menu { font-size: 18px; line-height: 27px; float: right; margin: 27px 18px 0 0; }
+      #menu ul li { display: inline-block; margin: 18px; }
+      #menu ul li a, #menu ul li a:visited { color: #fff; }
+
+      #content { width: 42em; padding-left: 108px; }
+
+      #footer { width: 100%; margin-top: 36px; padding: 6px 0 36px 0; border-top: 2px solid #222; }
+      #footer p { margin-left: 108px; width: 42em; }
+      #footer p.indent { padding-left: 2em; }
+
+      h1, h2, h3, h4, h5, h6, p, span { color: #333; }
+      span.prefix { color: #999;    }
+      a {           color: #004ead; }
+      a:visited {   color: #002757; }
+
+      #footer { background: #555; }
+      #footer p, #footer span, #footer a, #footer a:visited  { color: #eee; }
+
+      hr { border: 1px solid #eee; }
+
+      div.footer,
+      div.main,
+      div.sidebar {
+          background: #ddd;
+          padding: 1em;
+          margin: 0 2em 2em 2em;
+          border: 4px solid #fff;
+          box-shadow: 0 1px 16px #888;
+      }
+
+      div.sidebar { width: 22em; float: right; }
+      div.footer,
+      div.main { width: 44em; margin: 2em; }
+
+      pre { font-size: 12px; }
+
+      div.logo { padding: 1em; text-align: center; }
     </style>
   </head>
   <body>
@@ -24,10 +108,10 @@
           <!-- algorithm: extract numbers, sum, take largest. or HEAD, take largest. or fetch, take dimensions. -->
           <!-- select largest with js? -->
             <a class="logo1" property="foaf:logo" href="http://www.gnu.org/graphics/gplv3-127x51.png">
-              <img src="http://www.gnu.org/graphics/gplv3-127x51.png" />
+              <img src="gplv3-127x51.png" />
             </a>
             <a class="logo2" style="display: none" property="foaf:logo" href="http://www.gnu.org/graphics/gplv3-88x31.png">
-              <img src="http://www.gnu.org/graphics/gplv3-88x31.png" />
+              <img src="gplv3-88x31.png" />
             </a>
         </div>
         
@@ -40,6 +124,28 @@
           <li><span class="prefix">dc:</span>hasVersion: <span property="dc:hasVersion">3.0</span></li>
           <li><span class="prefix">dc:</span>creator: <a property="dc:creator" href="http://fsf.org/">http://fsf.org/</a>
           <hr />
+          <li><span class="prefix">foaf:</span>logo: <button class="selected logo1">gplv3-127x51</button></li>
+          <li><span class="prefix">foaf:</span>logo: <button class="logo2">gplv3-88x31</button></li>
+          <hr />
+          <li><span class="prefix">li:</span>plaintext: 
+            <a property="li:plaintext" href="http://gnu.org/licenses/gpl-3.0.txt">gpl-3.0.txt <span class="domain">(gnu.org)</span></a></li>
+          <li><span class="prefix">cc:</span>legalcode: 
+            <a property="cc:legalcode" href="http://gnu.org/licenses/gpl-3.0.html">gpl-3.0.html <span class="domain">(gnu.org)</span></a></li>
+          <hr />
+          <li><span class="prefix">cc:</span>permits:
+            <a property="cc:permits" href="http://creativecommons.org/ns#Distribution">Distribution</a></li>
+          <li><span class="prefix">cc:</span>permits:
+            <a property="cc:permits" href="http://creativecommons.org/ns#Reproduction">Reproduction</a></li>
+          <li><span class="prefix">cc:</span>permits:
+            <a property="cc:permits" href="http://creativecommons.org/ns#DerivativeWorks">DerivativeWorks</a></li>
+          <hr />
+          <li><span class="prefix">cc:</span>requires:
+            <a property="cc:requires" href="http://creativecommons.org/ns#Copyleft">Copyleft</a></li>
+          <li><span class="prefix">cc:</span>requires:
+            <a property="cc:requires" href="http://creativecommons.org/ns#SourceCode">SourceCode</a></li>
+          <li><span class="prefix">cc:</span>requires:
+            <a property="cc:requires" href="http://creativecommons.org/ns#Notice">Notice</a></li>
+          <hr />
           <li><span class="prefix">spdx:</span>licenseId: 
             <a property="spdx:licenseId" href="http://spdx.org/licenses/GPL-3.0">GPL-3.0</a></li>
           <li><span class="prefix">spdx:</span>licenseId: 
@@ -48,16 +154,15 @@
             <a property="spdx:licenseId" href="http://spdx.org/licenses/GPL-3.0-with-autoconf-exception">GPL-3.0-with-autoconf-exception</a></li>
           <li><span class="prefix">spdx:</span>licenseId: 
             <a property="spdx:licenseId" href="http://spdx.org/licenses/GPL-3.0-with-GCC-exception">GPL-3.0-with-GCC-exception</a></li>
-          <hr />
-          <li><span class="prefix">foaf:</span>logo: <button class="selected logo1">gplv3-127x51</button></li>
-          <li><span class="prefix">foaf:</span>logo: <button class="logo2">gplv3-88x31</button></li>
         </ul>
       </div>
 
       <div class="main">
-        <h1 property="dc:title">GNU General Public License</h1>
-        <h2>version <span property="dc:hasVersion">3.0</span></h2>
-
+        <h1>
+          <span property="dc:title">GNU General Public License</span><br />
+          <small>version <span property="dc:hasVersion">3.0</span></small>
+        </h1>
+<!--
         <ul>
           <li><span class="prefix">cc:</span>legalcode: 
             <a property="cc:legalcode" href="http://gnu.org/licenses/gpl-3.0.html">gpl-3.0.html <span class="domain">(gnu.org)</span></a></li>
@@ -65,20 +170,81 @@
             <a property="li:plaintext" href="http://gnu.org/licenses/gpl-3.0.txt">gpl-3.0.txt <span class="domain">(gnu.org)</span></a></li>
           <hr />
           <li><span class="prefix">cc:</span>permits:
-            <a property="cc:permits" href="http://creativecommons.org/ns#Distribution">Distribution</a></li>
-          <li><span class="prefix">cc:</span>permits:
-            <a property="cc:permits" href="http://creativecommons.org/ns#Reproduction">Reproduction</a></li>
-          <li><span class="prefix">cc:</span>permits:
+            <a property="cc:permits" href="http://creativecommons.org/ns#Distribution">Distribution</a>, 
+            <a property="cc:permits" href="http://creativecommons.org/ns#Reproduction">Reproduction</a>,
             <a property="cc:permits" href="http://creativecommons.org/ns#DerivativeWorks">DerivativeWorks</a></li>
           <li><span class="prefix">cc:</span>requires:
-            <a property="cc:requires" href="http://creativecommons.org/ns#Copyleft">Copyleft</a></li>
-          <li><span class="prefix">cc:</span>requires:
-            <a property="cc:requires" href="http://creativecommons.org/ns#SourceCode">SourceCode</a></li>
-          <li><span class="prefix">cc:</span>requires:
+            <a property="cc:requires" href="http://creativecommons.org/ns#Copyleft">Copyleft</a>,
+            <a property="cc:requires" href="http://creativecommons.org/ns#SourceCode">SourceCode</a>,
             <a property="cc:requires" href="http://creativecommons.org/ns#Notice">Notice</a></li>
         </ul>
-      </div>
+-->
 
+        <div rel="https://licensedb.org/ns#notice">
+
+          <div class="notice-properties" style="float:right; margin-top: 0.5em;">
+            <input id="orlater" type="checkbox" checked="checked" />
+            <span class="prefix">li:</span>orlater
+            <span style="display: none;" property="https://licensedb.org/ns#orlater"
+                  datatype="http://www.w3.org/2001/XMLSchema-datatypes#boolean">true</span>
+
+            <input id="orlater" type="checkbox" checked="checked" />
+            <span class="prefix">li:</span>short
+            <span style="display: none;" property="https://licensedb.org/ns#short"
+                  datatype="http://www.w3.org/2001/XMLSchema-datatypes#boolean">true</span>
+          </div>
+
+          <h3><span class="prefix">li:</span>notice</h3>
+          <pre property="https://licensedb.org/ns#text">License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+</pre>
+        </div>
+
+        <div rel="https://licensedb.org/ns#notice">
+
+          <div class="notice-properties" style="float:right; margin-top: 0.5em;">
+            <input id="orlater" type="checkbox" checked="checked" />
+            <span class="prefix">li:</span>orlater
+            <span style="display: none;" property="https://licensedb.org/ns#orlater"
+                  datatype="http://www.w3.org/2001/XMLSchema-datatypes#boolean">true</span>
+
+            <input id="orlater" type="checkbox" />
+            <span class="prefix">li:</span>short
+            <span style="display: none;" property="https://licensedb.org/ns#short"
+                  datatype="http://www.w3.org/2001/XMLSchema-datatypes#boolean">false</span>
+          </div>
+
+          <h3><span class="prefix">li:</span>notice</h3>
+          <pre property="https://licensedb.org/ns#text">This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+</pre>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        You're viewing metadata from <a href="https://licensedb.org">The License Database</a>.
+        Get this data as <a href="GPL-3.json">JSON-LD</a> or <a href="GPL-3.rdf">RDF</a>.
+      </p>
+
+      <p>
+        To the extent possible under law, the License Database contributors
+        have waived all copyright and related or neighboring rights to this work.  
+        See <a href="https://licensedb.org/license">the license page</a> for more details.
+      </p>
     </div>
 
     <script>
@@ -88,7 +254,7 @@
         var logo = $(this).attr ('class');
         $(this).addClass ('selected');
         $('div.sidebar').find ('a.' + logo).show ();
-      });
+p      });
     </script>
 
   </body>
