@@ -1,6 +1,6 @@
 <?php // -*- mode: html -*- 
 
-$content = file_get_contents ($argv[1])
+$content = file_get_contents ($argv[1]);
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
