@@ -1,12 +1,13 @@
 SOURCES := $(wildcard data/*.turtle)
 JSON_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.json,$(SOURCES))))
+RDFA_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.html,$(SOURCES))))
 RDF_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.rdf,$(SOURCES))))
 
-WEB_SOURCES = index.html license ns
+WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = robots.txt favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM))
 
-all: $(JSON_TARGETS) $(RDF_TARGETS) $(WEB_TARGETS)
+all: $(JSON_TARGETS) $(RDFA_TARGETS) $(RDF_TARGETS) $(WEB_TARGETS)
 
 www/id:
 	mkdir --parents www/id
@@ -40,13 +41,15 @@ www/id/%.rdf: .build/%.triples www/context.json | www/id
 	@echo Serializing to $@
 	@cd www/id ; ../../build/publish-rdf.rb ../../$<  ../../$@ ../context.json
 
+www/id/%.html: www/id/%.json data/context.json src/site/rdfa.php src/site/metadata.php
+	@echo Serializing to $@
+	@php src/site/rdfa.php $< > $@
+
+www/%.html: src/site/%.html src/site/page.php | www/id; php src/site/page.php $< > $@
+
 www/robots.txt: src/site/robots.txt | www/id; @cp $< $@
 www/favicon.ico: src/site/favicon.ico | www/id; @cp $< $@
 www/licensedb.png: src/site/licensedb.png | www/id; @cp $< $@
-
-www/ns: src/site/ns.html src/site/page.php | www/id; php src/site/page.php $< > $@
-www/license: src/site/license.html src/site/page.php | www/id; php src/site/page.php $< > $@
-www/index.html: src/site/index.html src/site/page.php | www/id; php src/site/page.php $< > $@
 
 clean:
 	rm -rf .build

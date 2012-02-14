@@ -28,3 +28,22 @@ is working with the following command:
 
     rdf serialize --output-format jsonld http://creativecommons.org/licenses/by-sa/3.0/rdf
 
+
+Hosting
+=======
+
+The License Database project website (which includes the database) is
+currently hosted using apache, to map http://licensedb.org/ns to
+www/ns.html on disk the following rewrite rules have been configured:
+
+
+    RewriteEngine on
+
+    RewriteCond %{REQUEST_URI}   ^.*/[^/.]+$
+    RewriteRule ^(.*)$           $1.html        [L]
+
+
+
+
+
+

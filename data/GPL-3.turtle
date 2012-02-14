@@ -13,24 +13,24 @@
    li:notice _:notice1, _:notice2, _:notice3, _:notice4.
 
 _:notice1
-   li:orlater "true"^^xsd:boolean;
-   li:short "true"^^xsd:boolean;
+   li:orlater true;
+   li:short true;
    li:text """License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 """.
 
 _:notice2
-   li:orlater "false"^^xsd:boolean;
-   li:short "true"^^xsd:boolean;
+   li:orlater false;
+   li:short true;
    li:text """License GPLv3-only: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 """.
 
 _:notice3
-   li:orlater "true"^^xsd:boolean;
-   li:short "false"^^xsd:boolean;
+   li:orlater true;
+   li:short false;
    li:text """This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -46,8 +46,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """.
 
 _:notice4
-   li:orlater "false"^^xsd:boolean;
-   li:short "false"^^xsd:boolean;
+   li:orlater false;
+   li:short false;
    li:text """This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 3 as published by
 the Free Software Foundation.
