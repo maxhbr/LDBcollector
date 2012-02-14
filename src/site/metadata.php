@@ -217,24 +217,19 @@ function cmp_notice ($a, $b)
 
 function notices ($data, $context)
 {
-    /* FIXME: sort notices. */
-
-    $ret = "";
     if (!isset ($data["li:notice"]))
-        return $ret;
+        return "";
 
-    $notices = array ();
-    if (!is_array ($data["li:notice"]))
+    if (isset ($data["li:notice"]) and
+        isset ($data["li:notice"]["li:text"]))
     {
-        $notices[0] = $data["li:notice"];
-    }
-    else
-    {
-        $notices = $data["li:notice"];
+        return render_notice ($data["li:notice"]);
     }
 
+    $notices = $data["li:notice"];
     usort ($notices, "cmp_notice");
 
+    $ret = "";
     foreach ($notices as $notice)
     {
         $ret .= render_notice ($notice);
