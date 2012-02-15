@@ -1,6 +1,9 @@
 <?php // -*- mode: html -*- 
 
-$content = file_get_contents ($argv[1]);
+$lines = file ($argv[1]);
+$title = array_shift ($lines);
+$content = join ("", $lines);
+
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
@@ -14,7 +17,7 @@ $content = file_get_contents ($argv[1]);
 
   <head profile="http://www.w3.org/1999/xhtml/vocab">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>License Database vocabulary</title>
+    <title><?=$title ?></title>
     <style>
       html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
       pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,

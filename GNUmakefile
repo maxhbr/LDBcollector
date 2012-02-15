@@ -5,7 +5,7 @@ RDF_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.rdf,$(SOURCES)
 
 WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = robots.txt favicon.ico licensedb.png
-WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM))
+WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html
 
 all: $(JSON_TARGETS) $(RDFA_TARGETS) $(RDF_TARGETS) $(WEB_TARGETS)
 
@@ -45,6 +45,11 @@ www/id/%.rdf: .build/%.triples www/context.json | www/id
 www/id/%.html: www/id/%.json data/context.json src/site/rdfa.php src/site/metadata.php
 	@echo Serializing to $@
 	@php src/site/rdfa.php $< > $@
+
+www/id/index.html: src/site/dbindex.php $(SOURCES) | www/id  .build
+	@echo Generating index at $@
+	@php src/site/dbindex.php > .build/indexpage.html
+	@php src/site/page.php .build/indexpage.html > $@
 
 www/%.html: src/site/%.html src/site/page.php | www/id; php src/site/page.php $< > $@
 
