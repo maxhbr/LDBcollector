@@ -1,0 +1,5 @@
+@prefix li: <https://licensedb.org/ns#> .
+
+<http://creativecommons.org/publicdomain/zero/1.0/> a li:License;
+   li:id "CC0";
+   li:plaintext <http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt>.

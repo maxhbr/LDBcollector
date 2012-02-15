@@ -1,6 +1,5 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema-datatypes#> .
 
 <http://gnu.org/licenses/gpl-3.0.html> a li:License;
    li:id "GPL-3";

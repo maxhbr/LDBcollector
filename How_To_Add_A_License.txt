@@ -1,0 +1,43 @@
+
+I intend for the License Database to be a community edited database
+(similar to wikipedia, musicbrainz, etc..).  However, I fear that the
+community of people interested in machine-readable information about
+copyright licenses is fairly small and I have no interest in
+developing a full edit-system for the purpose.  So, for now to add an
+entry to the database do a checkout of the source code repository at
+https://gitorious.org/licensedb/licensedb/ and make your changes.
+Then send me a merge request through gitorious, e-mail (kuno@frob.nl)
+or come talk to me on irc (warp on freenode irc).
+
+To add an entry, I follow these guidelines:
+
+- li:id should follow DEP5 (http://dep.debian.net/deps/dep5/) as
+   much as possible.
+
+- dc:title is the name of the license, it should always be present.
+- dc:hasVersion should be present if the license is versioned.
+- dc:creator should be the URL of the homepage of the publisher.
+- cc:legalcode should be the full legal text, preferably text/html.
+- li:plaintext should be the full legal text, text/plain.
+- spdx:licenseId should be the license identifiers assigned by SPDX.
+
+- cc:permits, cc:requires, cc:prohibits  should not be added, they
+  should be preserved if provided by upstream but would likely
+  be incomplete if we mess with them.  (e.g. Apache 2.0 includes
+  a patent grant, which seems like an important detail to make
+  machine-readable in this manner, but CCREL has no way to express
+  that).
+
+- li:notice is an optional, but important aspect of the License
+  Database.  These are the license notices which can be used by
+  authoring / packaging tools to apply the license to a work.  Any
+  canonical text recommended by the publisher of the license should
+  be included here, but if the publisher doesn't provide any we
+  want to add some ourselves so the license can still be applied.
+
+  For deprecated licenses there is no need to invent notices, as
+  no authoring / packaging tools should be using the license.  But
+  adding any canonical notices could still be useful for license
+  analysis tools.
+
+

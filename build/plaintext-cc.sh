@@ -16,4 +16,5 @@ wget http://creativecommons.org/licenses/by-nd/3.0/legalcode.txt --output-docume
 wget http://creativecommons.org/licenses/by-nc/3.0/legalcode.txt --output-document $DEST/CC-BY-NC-3.txt
 wget http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode.txt --output-document $DEST/CC-BY-NC-SA-3.txt
 wget http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode.txt --output-document $DEST/CC-BY-NC-ND-3.txt
-wget http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt --output-document $DEST/CC0-1.txt
+wget http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt --output-document $DEST/CC0.txt
+

@@ -7,6 +7,7 @@ $pagename = basename ($argv[1], ".json");
 $data = json_decode (file_get_contents ($argv[1]), true);
 $context = json_decode (file_get_contents ($contextfile), true);
 $logos = get_logos ($data);
+$title = get_single_literal_value ("dc:title", $data, $context);
 
 ?><!DOCTYPE html>
 <html version="HTML+RDFa 1.1" lang="en" xml:lang="en"
@@ -19,7 +20,7 @@ $logos = get_logos ($data);
       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <head>
     <meta charset="UTF-8"/>
-    <title>GNU General Public License</title>
+    <title><?=$title?></title>
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <style>
       html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -118,7 +119,7 @@ $logos = get_logos ($data);
       <div class="column1">
       <div class="main">
         <h1>
-          <span property="dc:title"><?=$data["dc:title"]?></span>
+          <span property="dc:title"><?=$title?></span>
           <?php if (isset ($data["dc:hasVersion"])): ?>
           <br />
           <small>version <span property="dc:hasVersion"><?=$data["dc:hasVersion"]?></span></small>

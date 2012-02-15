@@ -10,10 +10,6 @@
    dc:creator <http://apache.org/>;
    dc:hasVersion "2.0";
    cc:legalcode <http://www.apache.org/licenses/LICENSE-2.0>;
-   cc:permits cc:Distribution,
-     cc:Reproduction,
-     cc:DerivativeWorks;
-   cc:requires cc:Notice;
    spdx:licenseId "Apache-2.0";
    li:notice _:notice1.
 

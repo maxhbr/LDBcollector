@@ -30,7 +30,8 @@ www/context.json: data/context.json | www/id
 	@echo Serializing to $@
 	@rdf serialize $< > $@
 	@if [ -s upstream/rdf/$(basename $(notdir $<)).rdf ]; then \
-	    rdf serialize upstream/rdf/$(basename $(notdir $<)).rdf >> $@; \
+	    rdf serialize upstream/rdf/$(basename $(notdir $<)).rdf \
+	    | ruby src/data/normalize.rb >> $@; \
 	fi
 
 www/id/%.json: .build/%.triples www/context.json | www/id

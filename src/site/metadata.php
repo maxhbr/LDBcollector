@@ -83,16 +83,50 @@ function render_linked_property_entry ($name, $value, $data, $context)
         "href=\"$value\">$display</a>$domain</li>";
 }
 
+function get_single_literal_value ($name, $data, $context)
+{
+    /* A literal in JSON-LD may be just a string, or an object with
+       @literal and @language keys.  And a particular property may
+       have multiple values, which are expressed in JSON-LD as a list
+       (or as an array in PHP).
+
+       The code below deals with all these cases, and picks one
+       of the values instead of displaying all.
+    */
+
+    $value = $data[$name];
+    if (!is_array ($value))
+        return $value;
+
+    if (isset ($value["@literal"]))
+    {
+        return $value["@literal"];
+    }
+
+    foreach ($value as $literal)
+    {
+        if (!is_array ($literal))
+        {
+            return $literal;
+        }
+    }
+
+    $random = array_shift ($value);
+    return $random["@literal"];
+}
+
 function render_literal_property ($name, $data, $context)
 {
     if (!isset ($data[$name]))
-        return;
+        return False;
 
     list ($prefix, $propname) = explode (':', $name);
 
+    $value = get_single_literal_value ($name, $data, $context);
+
     return "<li>" .
         "<span class=\"prefix\">$prefix:</span>$propname: " .
-        "<span property=\"$name\">${data[$name]}</span></li>";
+        "<span property=\"$name\">$value</span></li>";
 }
 
 function add_section (&$sections, $data)

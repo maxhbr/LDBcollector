@@ -12,17 +12,12 @@
    dc:hasVersion "1.0";
    dc:identifier "GNU GPL" ;
    cc:legalcode <http://gnu.org/licenses/gpl-1.0.html>;
-   cc:permits cc:Distribution,
-     cc:Reproduction,
-     cc:DerivativeWorks;
-   cc:requires cc:Copyleft,
-     cc:SourceCode,
-     cc:Notice;
    spdx:licenseId "GPL-1.0";
    spdx:licenseId "GPL-1.0+";
    li:notice _:notice1.
 
 _:notice1
+   li:canonical true;
    li:orlater true;
    li:short false;
    li:text """This program is free software; you can redistribute it and/or modify
