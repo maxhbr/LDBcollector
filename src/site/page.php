@@ -35,7 +35,7 @@ $content = join ("", $lines);
       del { text-decoration: line-through; }
 
       html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-      body { color: #333; background: #fff; }
+      body { color: #333; background: #555; }
       body, p {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 13px; line-height: 18px;
@@ -70,9 +70,13 @@ $content = join ("", $lines);
       #menu ul li { display: inline-block; margin: 18px; }
       #menu ul li a, #menu ul li a:visited { color: #fff; }
 
+      #contentwrapper {
+          width: 100%; margin: 0; padding: 0 0 36px 0; background: #fff;
+          border-color: #fff; border-width: 1px 0; border-style: solid;
+      }
       #content { width: 42em; padding-left: 108px; }
 
-      #footer { width: 100%; margin-top: 36px; padding: 6px 0 36px 0; border-top: 2px solid #222; }
+      #footer { width: 100%; padding: 6px 0 36px 0; border-top: 2px solid #222; }
       #footer p { margin-left: 108px; width: 42em; }
       #footer p.indent { padding-left: 2em; }
 
@@ -98,9 +102,11 @@ $content = join ("", $lines);
         </ul>
       </div>
     </div>
+    <div id="contentwrapper">
 
     <div id="content"><?php echo $content ?></div>
 
+    </div>
     <div id="footer">
       <p class="copyright">
         &copy; 2012 <a href="https://frob.nl">Kuno Woudt</a>, software
