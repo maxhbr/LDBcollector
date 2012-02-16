@@ -1,0 +1,12 @@
+
+This archive contains the license database, available from
+https://licensedb.org/download/
+
+The License Database is contributed to the public domain using
+the CC0 1.0 Universal Public Domain Dedication:
+
+To the extent possible under law, the contributors of the License
+Database project waive all copyright and related or neighboring rights
+to The License Database. See the CC0-1.txt file included with the
+database for more information.
+

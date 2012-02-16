@@ -1,6 +1,7 @@
 
-add BSD licenses
+upstream/plaintext should only include licenses actually in the database.
+the scripts to download plaintext licenses should be removed, instead a script
+to go through all li:plaintext links and download those should be provided.
 
-provide full database download in www/
 
 
