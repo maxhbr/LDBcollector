@@ -1,0 +1,35 @@
+
+The files in this directory were obtained from jquery.org,
+they carry the following copyright notice:
+
+     jQuery JavaScript Library v1.7.1
+     http://jquery.com/
+ 
+     Copyright 2011, John Resig
+     Dual licensed under the MIT or GPL Version 2 licenses.
+     http://jquery.org/license
+
+     Includes Sizzle.js
+     http://sizzlejs.com/
+     Copyright 2011, The Dojo Foundation
+     Released under the MIT, BSD, and GPL Licenses.
+
+jquery.org/license states:
+
+     You may use any jQuery project under the terms of either the MIT
+     License or the GNU General Public License (GPL) Version 2
+
+     The MIT License is recommended for most projects. It is simple
+     and easy to understand and it places almost no restrictions on
+     what you can do with a jQuery project.
+
+     If the GPL suits your project better you are also free to use a
+     jQuery project under that license.
+
+     You don’t have to do anything special to choose one license or
+     the other and you don’t have to notify anyone which license you
+     are using. You are free to use a jQuery project in commercial
+     projects as long as the copyright header is left intact.
+
+The linked licenses have been included here as MIT-LICENSE.txt and
+GPL-LICENSE.txt.

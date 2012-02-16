@@ -35,9 +35,14 @@ permissions and limitations under the License.
 Upstream
 ========
 
-All the files in upstream/ are plaintext versions of licenses intended
-for free software, open source or free culture projects, obtained
-directly from their publishers and included without modifications.
+upstream/jquery contains jquery by John Resig & The Dojo Foundation.
+Please see upstream/jquery/copyright.txt for their license details.
+
+All the files in upstream/plaintext are plaintext versions of licenses
+intended for free software, open source or free culture projects,
+obtained directly from their publishers and included without
+modifications.  Similarly upstream/rdf contains metadata about
+licenses obtained directoly from their publishers.
 
 Most of these licenses are not explicit about the terms which apply to
 the license text itself.  Our belief is that there is at least an
@@ -47,3 +52,4 @@ these licenses and their associated metadata.
 If however you are the copyright holder for any of this data and wish
 for it to be removed from this project, please contact
 copyright@licensedb.org .
+

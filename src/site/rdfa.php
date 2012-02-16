@@ -21,7 +21,7 @@ $title = get_single_literal_value ("dc:title", $data, $context);
   <head>
     <meta charset="UTF-8"/>
     <title><?=$title?></title>
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://licensedb.org/jquery.js"></script>
     <style>
       html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
       pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,

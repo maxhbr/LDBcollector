@@ -18,7 +18,9 @@
 _:notice1
    li:orlater true;
    li:short true;
-   li:text """License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>
+   li:canonical false;
+   li:text """Copyright (C) {{year}}  {{rightsholder}}
+License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 """.
@@ -26,7 +28,9 @@ There is NO WARRANTY, to the extent permitted by law.
 _:notice2
    li:orlater false;
    li:short true;
-   li:text """License GPLv2-only: GNU GPL version 2 <http://gnu.org/licenses/gpl-2.0.html>
+   li:canonical false;
+   li:text """Copyright (C) {{year}}  {{rightsholder}}
+License GPLv2-only: GNU GPL version 2 <http://gnu.org/licenses/gpl-2.0.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 """.
@@ -34,7 +38,11 @@ There is NO WARRANTY, to the extent permitted by law.
 _:notice3
    li:orlater true;
    li:short false;
-   li:text """This program is free software; you can redistribute it and/or modify
+   li:canonical true;
+   li:text """{{description}}
+Copyright (C) {{year}}  {{rightsholder}}
+
+This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 2 of the License, or
 (at your option) any later version.
@@ -52,7 +60,11 @@ along with this program; if not, write to the Free Software Foundation, Inc.,
 _:notice4
    li:orlater false;
    li:short false;
-   li:text """This program is free software; you can redistribute it and/or modify
+   li:canonical false;
+   li:text """{{description}}
+Copyright (C) {{year}}  {{rightsholder}}
+
+This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2 as
 published by the Free Software Foundation.
 

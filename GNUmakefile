@@ -5,7 +5,7 @@ RDF_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.rdf,$(SOURCES)
 
 WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = robots.txt favicon.ico licensedb.png
-WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html
+WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
 
 all: $(JSON_TARGETS) $(RDFA_TARGETS) $(RDF_TARGETS) $(WEB_TARGETS)
 
@@ -58,6 +58,7 @@ www/%.html: src/site/%.html src/site/page.php | www/id
 www/robots.txt: src/site/robots.txt | www/id; @cp $< $@
 www/favicon.ico: src/site/favicon.ico | www/id; @cp $< $@
 www/licensedb.png: src/site/licensedb.png | www/id; @cp $< $@
+www/jquery.js: upstream/jquery/jquery-1.7.1.min.js | www/id; @cp $< $@
 
 clean:
 	rm -rf .build

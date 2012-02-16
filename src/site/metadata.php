@@ -69,11 +69,12 @@ function render_linked_property_entry ($name, $value, $data, $context)
             {
                 $value = "http://spdx.org/licenses/$value";
             }
-
+/*
             if (!empty ($host) && $host !== "licensedb.org")
             {
                 $domain = " ($host)";
             }
+*/
         }
     }
 
@@ -192,41 +193,34 @@ function sidebar ($data, $context, $logos)
     echo "</ul>\n";
 }
 
+function render_notice_property ($notice, $property)
+{
+    $checked = "";
+    $bool = "false";
+
+    if ($notice["li:$property"])
+    {
+        $checked = 'checked="checked" ';
+        $bool = "true";
+    }
+
+    return "<input id=\"$property\" type=\"checkbox\" $checked " .
+        'disabled="disabled" /><span class="prefix">li:</span>' .
+        "$property<span style=\"display: none;\" " .
+        "property=\"https://licensedb.org/ns#$property\"" .
+        "datatype=\"http://www.w3.org/2001/XMLSchema-datatypes#boolean\">" .
+        "$bool</span>";
+}
+
 function render_notice ($notice)
 {
-    $orlater_checked = "";
-    $orlater_bool = "false";
-    $short_checked = "";
-    $short_bool = "";
-
-    if ($notice["li:orlater"])
-    {
-        $orlater_checked = 'checked="checked" ';
-        $orlater_bool = "true";
-    }
-
-    if ($notice["li:short"])
-    {
-        $short_checked = 'checked="checked" ';
-        $short = "true";
-    }
 
     return '<div rel="https://licensedb.org/ns#notice">' .
         '<div class="notice-properties">' .
-        '<input id="orlater" type="checkbox" ' . $orlater_checked .
-        ' disabled="disabled" />'.
-        '<span class="prefix">li:</span>orlater' .
-        '<span style="display: none;" '.
-        'property="https://licensedb.org/ns#orlater" '.
-        'datatype="http://www.w3.org/2001/XMLSchema-datatypes#' .
-        'boolean">' . $orlater_bool . '</span>'.
-        '<input id="short" type="checkbox" ' . $short_checked .
-        ' disabled="disabled" />'.
-        '<span class="prefix">li:</span>short' .
-        '<span style="display: none;" '.
-        'property="https://licensedb.org/ns#short" '.
-        'datatype="http://www.w3.org/2001/XMLSchema-datatypes#' .
-        'boolean">' . $short_bool . '</span></div>'.
+        render_notice_property ($notice, "canonical") .
+        render_notice_property ($notice, "orlater") .
+        render_notice_property ($notice, "short") .
+        '</div>'.
         '<h3><span class="prefix">li:</span>notice</h3>'.
         '<pre property="https://licensedb.org/ns#text">'.
         htmlentities($notice["li:text"]).'</pre></div>';
@@ -234,6 +228,12 @@ function render_notice ($notice)
 
 function cmp_notice ($a, $b)
 {
+    if ($a["li:canonical"] and !$b["li:canonical"])
+        return -1;
+
+    if (!$a["li:canonical"] and $b["li:canonical"])
+        return 1;
+
     if ($a["li:orlater"] and !$b["li:orlater"])
         return -1;
 
