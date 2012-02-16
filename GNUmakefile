@@ -26,7 +26,7 @@ upstream:
 www/context.json: data/context.json | www/id
 	@cp $< $@ 
 
-.build/%.triples: data/%.turtle | .build
+.build/%.nt: data/%.turtle | .build
 	@echo Serializing to $@
 	@rdf serialize $< > $@
 	@if [ -s upstream/rdf/$(basename $(notdir $<)).rdf ]; then \
@@ -34,11 +34,11 @@ www/context.json: data/context.json | www/id
 	    | ruby src/data/normalize.rb >> $@; \
 	fi
 
-www/id/%.json: .build/%.triples www/context.json | www/id
+www/id/%.json: .build/%.nt www/context.json | www/id
 	@echo Serializing to $@
 	@cd www/id ; ../../build/publish-json.rb ../../$<  ../../$@ ../context.json
 
-www/id/%.rdf: .build/%.triples www/context.json | www/id
+www/id/%.rdf: .build/%.nt www/context.json | www/id
 	@echo Serializing to $@
 	@cd www/id ; ../../build/publish-rdf.rb ../../$<  ../../$@ ../context.json
 
@@ -46,12 +46,14 @@ www/id/%.html: www/id/%.json data/context.json src/site/rdfa.php src/site/metada
 	@echo Serializing to $@
 	@php src/site/rdfa.php $< > $@
 
-www/id/index.html: src/site/dbindex.php $(SOURCES) | www/id  .build
+www/id/index.html: src/site/dbindex.php src/site/page.php $(SOURCES) | www/id  .build
 	@echo Generating index at $@
 	@php src/site/dbindex.php > .build/indexpage.html
 	@php src/site/page.php .build/indexpage.html > $@
 
-www/%.html: src/site/%.html src/site/page.php | www/id; php src/site/page.php $< > $@
+www/%.html: src/site/%.html src/site/page.php | www/id
+	@echo Generating $@ web page 
+	@php src/site/page.php $< > $@
 
 www/robots.txt: src/site/robots.txt | www/id; @cp $< $@
 www/favicon.ico: src/site/favicon.ico | www/id; @cp $< $@

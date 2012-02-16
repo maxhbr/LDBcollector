@@ -1,0 +1,11 @@
+
+add li:canonical support to src/site/RDFa.php
+
+turn li:notices into templates
+
+add template to CC0
+
+add BSD licenses
+
+
+

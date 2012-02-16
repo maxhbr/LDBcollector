@@ -88,10 +88,11 @@ $content = join ("", $lines);
 
   <body>
     <div id="header">
-      <a href="http://licensedb.org/" title="home"><img src="licensedb.png" style="margin: 1em;" /></a>
+      <a href="http://licensedb.org/" title="home"><img src="https://licensedb.org/licensedb.png" style="margin: 1em;" /></a>
       <div id="menu">
         <ul>
           <li><a href="https://licensedb.org/">About</a></li>
+          <li><a href="https://gitorious.org/id/">Database</a></li>
           <li><a href="https://gitorious.org/licensedb/licensedb/">Download</a></li>
           <li><a href="https://licensedb.org/ns">Vocabulary</a></li>
           <li><a href="https://licensedb.org/license">License</a></li>
@@ -112,6 +113,18 @@ $content = join ("", $lines);
         license page</a> for more details.
       </p>
     </div>
+
+    <script type="text/javascript">
+      var pkBaseURL = (("https:" == document.location.protocol) ? "https://frob.nl/piwik/" : "http://frob.nl/piwik/");
+      document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+        piwikTracker.trackPageView();
+        piwikTracker.enableLinkTracking();
+      } catch( err ) {}
+    </script><noscript><p><img src="https://frob.nl/piwik/piwik.php?idsite=4" style="border:0" alt="" /></p></noscript>
 
   </body>
 </html>
