@@ -4,6 +4,8 @@
 <http://gnu.org/licenses/agpl-3.0.html> a li:License;
    li:id "AGPL-3";
    li:plaintext <http://gnu.org/licenses/agpl-3.0.txt>;
+   li:earlierVersion <https://licensedb.org/id/AGPL-1>;
+   li:earlierVersion <https://licensedb.org/id/AGPL-2>;
    spdx:licenseId "AGPL-3.0";
    li:notice _:notice1, _:notice2, _:notice3, _:notice4.
 
