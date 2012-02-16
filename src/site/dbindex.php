@@ -12,6 +12,11 @@ The License Database
         data to the database.
       </p>
 
+      <p>
+       If you want to use the database in an application, you can download
+       the <a href="https://licensedb.org/dl/license-database.tar.gz">full database</a>.
+      </p>
+
       <h2>Licenses currently in the database</h2>
 
       <ul>

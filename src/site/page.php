@@ -92,8 +92,7 @@ $content = join ("", $lines);
       <div id="menu">
         <ul>
           <li><a href="https://licensedb.org/">About</a></li>
-          <li><a href="https://gitorious.org/id/">Database</a></li>
-          <li><a href="https://gitorious.org/licensedb/licensedb/">Download</a></li>
+          <li><a href="https://licensedb.org/id/">Database</a></li>
           <li><a href="https://licensedb.org/ns">Vocabulary</a></li>
           <li><a href="https://licensedb.org/license">License</a></li>
         </ul>
@@ -109,7 +108,7 @@ $content = join ("", $lines);
         href="http://www.apache.org/licenses/LICENSE-2.0.html" >Apache
         2.0</a>, database available under <a rel="license"
         href="http://creativecommons.org/publicdomain/zero/1.0/"
-        >CC0</a>. See <a href="https://licensedb.ogr/license">the
+        >CC0</a>. See <a href="https://licensedb.org/license">the
         license page</a> for more details.
       </p>
     </div>
