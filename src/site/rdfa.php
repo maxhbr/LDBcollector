@@ -119,13 +119,14 @@ $title = get_single_literal_value ("dc:title", $data, $context);
       <div class="column1">
       <div class="main">
         <h1>
+          <a href="<?=$data["@id"]?>">
           <span property="dc:title"><?=$title?></span>
           <?php if (isset ($data["dc:hasVersion"])): ?>
+          </a>
           <br />
           <small>version <span property="dc:hasVersion"><?=$data["dc:hasVersion"]?></span></small>
           <?php endif; ?>
         </h1>
-
         <?php echo notices ($data, $context); ?>
       </div>
 

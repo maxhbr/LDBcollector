@@ -20,7 +20,7 @@ To add an entry, I follow these guidelines:
 - spdx:licenseId should be the license identifiers assigned by SPDX.
 
 - cc:legalcode should be the full legal text, preferably text/html.
-  generally this should be the same as resource url for the license
+  often this should be the same as resource url for the license
   object.
 
 - li:plaintext should be the full legal text, text/plain.

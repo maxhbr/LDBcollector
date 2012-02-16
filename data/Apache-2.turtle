@@ -6,6 +6,7 @@
 <http://www.apache.org/licenses/LICENSE-2.0> a li:License;
    li:id "Apache-2";
    li:plaintext <http://www.apache.org/licenses/LICENSE-2.0.txt>;
+   li:earlierVersion <https://licensedb.org/id/Apache-1.1>;
    dc:title "Apache License";
    dc:creator <http://apache.org/>;
    dc:hasVersion "2.0";
