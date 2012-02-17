@@ -1,0 +1,22 @@
+@prefix li: <https://licensedb.org/ns#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<http://opendatacommons.org/licenses/pddl/1.0/> a li:License;
+   li:id "PDDL-1";
+   cc:legalcode <http://opendatacommons.org/licenses/pddl/1.0/>;
+   dc:title "Public Domain Dedication and License";
+   dc:creator <http://opendatacommons.org/>;
+   dc:hasVersion "1.0";
+   dc:identifier "PDDL" ;
+   li:notice _:notice1.
+
+_:notice1
+   li:orlater false;
+   li:short true;
+   li:canonical true;
+   li:text """{{title}} is made available under the Public Domain Dedication and
+License v1.0 whose full text can be found at:
+http://www.opendatacommons.org/licenses/pddl/1.0/.
+""".

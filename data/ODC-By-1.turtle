@@ -1,0 +1,22 @@
+@prefix li: <https://licensedb.org/ns#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<http://opendatacommons.org/licenses/by/1.0/> a li:License;
+   li:id "ODC-By-1";
+   cc:legalcode <http://opendatacommons.org/licenses/by/1.0/>;
+   li:plaintext <http://www.opendatacommons.org/wp-content/uploads/2010/01/odc_by_1.0_public_text.txt>;
+   dc:title "Open Data Commons Attribution License";
+   dc:creator <http://opendatacommons.org/>;
+   dc:hasVersion "1.0";
+   dc:identifier "ODC-By";
+   li:notice _:notice1.
+
+_:notice1
+   li:orlater false;
+   li:short true;
+   li:canonical true;
+   li:text """{{title}} is made available under the Open Data Commons Attribution
+License: http://opendatacommons.org/licenses/by/1.0/.
+""".

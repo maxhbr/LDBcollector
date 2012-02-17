@@ -65,6 +65,11 @@ function render_linked_property_entry ($name, $value, $data, $context)
         {
             $parts = explode ("/", $value);
             $display = array_pop ($parts);
+            if (empty ($display))
+            {
+                $display = array_pop ($parts);
+            }
+
             if ($prefix === "spdx")
             {
                 $value = "http://spdx.org/licenses/$value";

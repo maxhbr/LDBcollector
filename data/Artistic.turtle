@@ -1,0 +1,13 @@
+@prefix li: <https://licensedb.org/ns#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<http://www.perlfoundation.org/artistic_license_1_0> a li:License;
+   li:id "Artistic";
+   li:laterVersion <https://licensedb.org/id/Artistic-2>;
+   dc:title "Artistic License";
+   dc:creator <http://perlfoundation.org/>;
+   cc:legalcode <http://www.perlfoundation.org/artistic_license_1_0>;
+   li:plaintext <http://www.perlfoundation.org/attachment/legal/Artistic_1.0.txt>;
+   spdx:licenseId "Artistic-1.0".

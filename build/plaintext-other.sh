@@ -13,3 +13,5 @@ wget http://unlicense.org/UNLICENSE --output-document $DEST/Unlicense.txt
 wget http://git.savannah.gnu.org/cgit/threadmill.git/plain/COPYING.WTFPL --output-document $DEST/WTFPL-1.1.txt
 wget http://sam.zoy.org/wtfpl/COPYING --output-document $DEST/WTFPL-2.txt
 wget http://www.ncftp.com/ncftp/doc/LICENSE.txt --output-document $DEST/Clarified-Artistic.txt
+wget http://www.perlfoundation.org/attachment/legal/artistic-2_0.txt --output-document $DEST/Artistic-2.txt
+wget http://www.perlfoundation.org/attachment/legal/Artistic_1.0.txt --output-document $DEST/Artistic.txt
