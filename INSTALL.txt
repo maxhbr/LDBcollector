@@ -33,17 +33,13 @@ Hosting
 =======
 
 The License Database project website (which includes the database) is
-currently hosted using apache, to map http://licensedb.org/ns to
-www/ns.html on disk the following rewrite rules have been configured:
+currently hosted using apache, add the following rules to the apache
+config to allow content negotiation. (so that https://licensedb.org/ns
+returns ns.html, and https://licensedb.org/id/LGPL-2.1 can return
+html, json and RDF based on the accept header of the client)
 
-
-    RewriteEngine on
-
-    RewriteCond %{REQUEST_URI}   ^.*/[^/.]+$
-    RewriteRule ^(.*)$           $1.html        [L]
-
-
-
-
-
+        Options +MultiViews
+        AddType     application/rdf+xml     rdf
+        AddType     application/json        json
+        AddType     application/ld+json     jsonld
 

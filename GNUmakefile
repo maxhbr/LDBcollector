@@ -1,13 +1,14 @@
 SOURCES := $(wildcard data/*.turtle)
-JSON_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.json,$(SOURCES))))
-RDFA_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.html,$(SOURCES))))
 RDF_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.rdf,$(SOURCES))))
+RDFA_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.html,$(SOURCES))))
+JSON_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.json,$(SOURCES))))
+JSONLD_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.jsonld,$(SOURCES))))
 
 WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = robots.txt favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
 
-all: $(JSON_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) $(WEB_TARGETS) www/dl/license-database.tar.gz
+all: $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) $(WEB_TARGETS) www/dl/license-database.tar.gz
 
 www:
 	mkdir --parents www/id
@@ -49,6 +50,9 @@ www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 www/id/%.json: .build/%.nt www/context.json | www
 	@echo Serializing to $@
 	@cd www/id ; ../../build/publish-json.rb ../../$<  ../../$@ ../context.json
+
+www/id/%.jsonld: www/id/%.json
+	@cp $< $@
 
 www/id/%.rdf: .build/%.nt www/context.json | www
 	@echo Serializing to $@

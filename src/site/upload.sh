@@ -6,5 +6,5 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 cd $DIR/../../www
 
-rsync --progress --verbose --archive --delete-after * licensedb.org:/var/www/licensedb.org/
+rsync --checksum --progress --verbose --archive --delete-after * licensedb.org:/var/www/licensedb.org/
 
