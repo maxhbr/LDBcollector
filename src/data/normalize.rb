@@ -68,16 +68,29 @@ def normalize()
               english_titles[s.subject] = s.object.value
             end
           else
-            default_titles[s.subject] = s.object.value
+            unless s.object.value == ""
+              default_titles[s.subject] = s.object.value
+            end
           end
         end
 
-        writer << s
+        if s.object.literal?
+          # some values in
+          # e.g. http://creativecommons.org/licenses/sampling/1.0/rdf/
+          # are CDATA encoded, when serialized their value is "" and
+          # their language is lost.  This is probably a bug in RDF.rb.
+          # For now just filter out the empty values.
+          unless s.object.value == ""
+            writer << s
+          end
+        else
+          writer << s
+        end
       end
 
       english_titles.each do |subj, obj|
         if not default_titles.has_key?(subj)
-          p = RDF::URI.new("http://purl.org/dc/terms/title")       
+          p = RDF::URI.new("http://purl.org/dc/terms/title")
           writer << RDF::Statement.new(subj, p, obj)
         end
       end
