@@ -16,8 +16,8 @@ database for more information.
 Software
 ========
 
-The Software consists of all the files in build/, src/ and the
-README.txt and INSTALL.txt files in the project root.
+The Software consists of all the files in src/ and INSTALL.txt,
+README.txt and EDITING.txt in the project root.
 
 Copyright 2012  Kuno Woudt
 
@@ -52,4 +52,3 @@ these licenses and their associated metadata.
 If however you are the copyright holder for any of this data and wish
 for it to be removed from this project, please contact
 copyright@licensedb.org .
-

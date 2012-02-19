@@ -45,7 +45,7 @@ def has_plaintext(ccurl):
 
 
 if __name__ == '__main__':
-    root = dirname (dirname (abspath (__file__)))
+    root = dirname (dirname (dirname (abspath (__file__))))
     rdf_path = join (root, 'upstream', 'rdf')
 
     spdx_license_list = "http://spdx.org/licenses/"

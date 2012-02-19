@@ -4,7 +4,7 @@ SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-DEST=$DIR/../upstream/rdf
+DEST=$DIR/../../upstream/rdf
 
 wget http://www.gnu.org/licenses/gpl-2.0.rdf --output-document $DEST/GPL-2.rdf
 wget http://www.gnu.org/licenses/gpl-3.0.rdf --output-document $DEST/GPL-3.rdf

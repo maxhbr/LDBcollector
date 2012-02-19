@@ -4,7 +4,7 @@ SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-DEST=$DIR/../upstream/rdf
+DEST=$DIR/../../upstream/rdf
 
 mkdir --parents $DIR/.build
 cd $DIR/.build

@@ -4,7 +4,7 @@ SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-DEST=$DIR/../upstream/plaintext
+DEST=$DIR/../../upstream/plaintext
 
 # NOTE: most creative commons licenses do not have an official plain/text
 # version (http://creativecommons.org/weblog/entry/27094).  We're only

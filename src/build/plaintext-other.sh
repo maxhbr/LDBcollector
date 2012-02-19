@@ -4,7 +4,7 @@ SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-DEST=$DIR/../upstream/plaintext
+DEST=$DIR/../../upstream/plaintext
 
 wget http://www.apache.org/licenses/LICENSE-2.0.txt --output-document $DEST/Apache-2.txt
 wget http://www.apache.org/licenses/LICENSE-1.1 --output-document $DEST/Apache-1.1.txt

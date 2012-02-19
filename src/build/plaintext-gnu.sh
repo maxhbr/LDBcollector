@@ -4,7 +4,7 @@ SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-DEST=$DIR/../upstream/plaintext
+DEST=$DIR/../../upstream/plaintext
 
 wget http://www.gnu.org/licenses/gpl-1.0.txt --output-document $DEST/GPL-1.txt
 wget http://www.gnu.org/licenses/gpl-2.0.txt --output-document $DEST/GPL-2.txt
