@@ -22,10 +22,10 @@ www:
 upstream:
 	mkdir --parents upstream/plaintext
 	mkdir --parents upstream/rdf
-	build/plaintext-gnu.sh
-	build/plaintext-cc.sh
-	build/plaintext-odc.sh
-	build/rdf-gnu.sh
+	src/build/plaintext-gnu.sh
+	src/build/plaintext-cc.sh
+	src/build/plaintext-odc.sh
+	src/build/rdf-gnu.sh
 
 www/context.json: data/context.json | www
 	@cp $< $@ 
@@ -49,14 +49,14 @@ www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 
 www/id/%.json: .build/%.nt www/context.json | www
 	@echo Serializing to $@
-	@cd www/id ; ../../build/publish-json.rb ../../$<  ../../$@ ../context.json
+	@cd www/id ; ../../src/build/publish-json.rb ../../$<  ../../$@ ../context.json
 
 www/id/%.jsonld: www/id/%.json
 	@cp $< $@
 
 www/id/%.rdf: .build/%.nt www/context.json | www
 	@echo Serializing to $@
-	@cd www/id ; ../../build/publish-rdf.rb ../../$<  ../../$@ ../context.json
+	@cd www/id ; ../../src/build/publish-rdf.rb ../../$<  ../../$@ ../context.json
 
 www/id/%.html: www/id/%.json data/context.json src/site/rdfa.php src/site/metadata.php
 	@echo Serializing to $@
