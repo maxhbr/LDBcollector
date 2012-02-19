@@ -1,0 +1,5 @@
+@prefix li: <https://licensedb.org/ns#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<http://creativecommons.org/licenses/by-nc/3.0/au/> a li:License;
+   li:id "CC-BY-NC-3.0-au".

@@ -1,0 +1,7 @@
+@prefix li: <https://licensedb.org/ns#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<http://creativecommons.org/licenses/by-nd/3.0/> a li:License;
+   li:plaintext <http://creativecommons.org/licenses/by-nd/3.0/legalcode.txt>;
+   spdx:licenseId "CC-BY-ND-3.0";
+   li:id "CC-BY-ND-3.0".

@@ -11,8 +11,13 @@ or come talk to me on irc (warp on freenode irc).
 
 To add an entry, I follow these guidelines:
 
-- li:id should follow DEP5 (http://dep.debian.net/deps/dep5/) as
-   much as possible.
+- li:id should follow DEP5 (http://dep.debian.net/deps/dep5/) as much
+  as possible.  The only exceptions are the creative commons licenses,
+  since there are so many variations of each license we preserve the
+  '.0' consistently to avoid confusion.  And CC0 1.0 is just CC0
+  because that's the most commonly used name for it.
+
+  None of this is set in stone, I welcome feedback on this.
 
 - dc:title is the name of the license, it should always be present.
 - dc:hasVersion should be present if the license is versioned.
