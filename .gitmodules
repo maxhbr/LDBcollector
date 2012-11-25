@@ -1,0 +1,3 @@
+[submodule "upstream/creativecommons"]
+	path = upstream/creativecommons
+	url = git://code.creativecommons.org/license.rdf.git
