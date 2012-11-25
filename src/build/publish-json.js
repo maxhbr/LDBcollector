@@ -29,15 +29,16 @@ function walk (obj, key, list, action) {
         _obj.each (function (val, key, list) {
             walk (val, key, list, action);
         });
-
-        action (obj, key, list);
     }
+
+    action (obj, key, list);
 };
 
 function directGraph (compacted)
 {
     var objects = {};
     var used = {};
+    var toplevel = {};
 
     if (! compacted.hasOwnProperty ("@graph"))
         return compacted;
@@ -46,28 +47,37 @@ function directGraph (compacted)
         objects[val["@id"]] = val;
     });
 
-    walk (objects, null, null, function (val, key, list) {
-        if (val.hasOwnProperty ("@id"))
-        {
-            id = val["@id"];
-            if (objects.hasOwnProperty (id) && list[key] != objects[id])
+    _(objects).each (function (toplevel_object, toplevel_id, list) {
+        walk (toplevel_object, null, null, function (val, key, list) {
+
+            if (val.hasOwnProperty ("@id") && !_(list).isEmpty ())
             {
-                used[id] = true;
-                list[key] = objects[id];
+                id = val["@id"];
+                if (objects.hasOwnProperty (id))
+                {
+                    toplevel[toplevel_id] = true;
+                    used[id] = true;
+                    list[key] = objects[id];
+                }
             }
-        }
+            else
+            {
+                if (objects.hasOwnProperty (val) && val != toplevel_id)
+                {
+                    toplevel[toplevel_id] = true;
+                    used[val] = true;
+                }
+            }
+        });
     });
 
-    _(used).each (function (val, key) {
-        delete objects[key];
-    });
-
-    if (_(objects).size () > 1)
+    if (_(toplevel).size () != 1)
     {
-        throw exception("Unlinked objects left after directing the graph");
+        // console.log (JSON.stringify (objects, null, 4));
+        throw exception("Multiple top-level objects left after directing the graph");
     }
 
-    var directed = objects[_(objects).keys ()[0]];
+    var directed = objects[_(toplevel).keys ()[0]];
     directed["@context"] = compacted["@context"];
 
     return directed;
