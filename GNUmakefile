@@ -10,6 +10,9 @@ WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.htm
 
 all: $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) $(WEB_TARGETS) www/dl/license-database.tar.gz
 
+node_modules:
+	npm install
+
 www:
 	mkdir --parents www/id
 	mkdir --parents www/dl
@@ -47,9 +50,9 @@ www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 	@cp upstream/plaintext/*txt .build/license-database/plaintext/
 	@cd .build ; tar cfz ../www/dl/license-database.tar.gz license-database
 
-www/id/%.json: .build/%.nt www/context.json | www
+www/id/%.json: .build/%.nt www/context.json | www node_modules
 	@echo Serializing to $@
-	@cd www/id ; ../../src/build/publish-json.rb ../../$<  ../../$@ ../context.json
+	@node src/build/publish-json.js www/context.json $< $@
 
 www/id/%.jsonld: www/id/%.json
 	@cp $< $@

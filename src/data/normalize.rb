@@ -74,16 +74,18 @@ def normalize()
           end
         end
 
-        if s.object.literal?
-          # some values in
-          # e.g. http://creativecommons.org/licenses/sampling/1.0/rdf/
-          # are CDATA encoded, when serialized their value is "" and
-          # their language is lost.  This is probably a bug in RDF.rb.
-          # For now just filter out the empty values.
-          unless s.object.value == ""
-            writer << s
-          end
-        else
+        # some values in
+        # e.g. http://creativecommons.org/licenses/sampling/1.0/rdf/
+        # are CDATA encoded, when serialized their value is "" and
+        # their language is lost.  This is probably a bug in RDF.rb.
+        # For now just filter out the empty values.
+        emptyliteral = s.object.literal? && s.object.value == ""
+
+        # The @i18n language tag used by creative commons is not valid
+        # syntax in the NTriples/NQuads grammar.
+        boguslang = s.object.literal? && s.object.has_language? && s.object.language.to_s.start_with?('i18n')
+
+        unless (emptyliteral || boguslang)
           writer << s
         end
       end

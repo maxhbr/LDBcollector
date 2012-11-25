@@ -5,13 +5,18 @@ QuickStart
 You will need ruby and the "linkeddata" gem, you could install it with
 the following steps:
 
-  1. get RVM, https://rvm.beginrescueend.com/rvm/install/
-  2. rvm requirements
-  3. rvm install 1.9.2
-  4. rvm 1.9.2 do gem install linkeddata
-  5. rvm use 1.9.2
+    1. get RVM, https://rvm.beginrescueend.com/rvm/install/
+    2. rvm requirements
+    3. rvm install 1.9.2
+    4. rvm 1.9.2 do gem install linkeddata
+    5. rvm use 1.9.2
 
-You will also need the commandline version of php and GNU Make.
+You also need:
+
+    - a recent version (0.8.x) of nodejs with npm
+    - the commandline version of php
+    - GNU Make.
+
 
 More info
 =========
