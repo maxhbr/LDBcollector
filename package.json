@@ -2,7 +2,8 @@
     "author": "Kuno Woudt <kuno@frob.nl>",
     "dependencies": {
         "jsonld": "git://github.com/digitalbazaar/jsonld.js.git",
-        "underscore": "1.4.x"
+        "underscore": "1.4.x",
+        "negotiator": "0.2.x"
     },
     "description": "LicenseDB, the License Database project.",
     "engines": {

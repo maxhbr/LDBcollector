@@ -38,13 +38,9 @@ Hosting
 =======
 
 The License Database project website (which includes the database) is
-currently hosted using apache, add the following rules to the apache
-config to allow content negotiation. (so that https://licensedb.org/ns
-returns ns.html, and https://licensedb.org/id/LGPL-2.1 can return
-html, json and RDF based on the accept header of the client)
+currently hosted using nginx, with a small node server to do content
+negotiation.  A daemontools service directory is included as
+etc/service/ and the nginx configuration as etc/nginx.conf.
 
-        Options +MultiViews
-        AddType     application/rdf+xml     rdf
-        AddType     application/json        json
-        AddType     application/ld+json     jsonld
+
 

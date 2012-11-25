@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir --parents main
+exec setuidgid site multilog t ./main
+
