@@ -8,7 +8,7 @@ WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = robots.txt favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
 
-all: $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) $(WEB_TARGETS) www/dl/license-database.tar.gz
+all: $(WEB_TARGETS) $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) www/dl/license-database.tar.gz
 
 node_modules:
 	npm install
