@@ -54,7 +54,6 @@ function directGraph (compacted)
             {
                 used[id] = true;
                 list[key] = objects[id];
-                // console.log ("need to replace", key, "in something with", id);
             }
         }
     });
@@ -86,7 +85,14 @@ function main (ctx, src, dst) {
 
     jsonld.fromRDF (data, function (err, parsed) {
         jsonld.compact (parsed, context, { optimize: true }, function (err, compacted) {
-            save_to(dst, directGraph (compacted));
+            if (compacted)
+            {
+                save_to(dst, directGraph (compacted));
+            }
+            else
+            {
+                console.error ("Error during compaction:", err);
+            }
         });
     });
 };
