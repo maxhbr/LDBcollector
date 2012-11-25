@@ -14,7 +14,7 @@ cd license_rdf
 rm creativecommons.org_licenses_GPL_2.0_.rdf
 rm creativecommons.org_licenses_LGPL_2.1_.rdf
 rm creativecommons.org_licenses_publicdomain_.rdf
-rm creativecommons.org-publicdomain-zero-1.0.rdf
+rm creativecommons.org_publicdomain_zero_1.0_.rdf
 rm Makefile.am
 
 ls > ../filenames.txt
@@ -25,5 +25,10 @@ paste ../filenames.txt ../newnames.txt | sed 's/^/mv /' | sh
 # for some reason the svn version is missing all dc:titles,
 # I hope this isn't true for all the other CC licenses as well.
 wget http://creativecommons.org/publicdomain/zero/1.0/rdf --output-document CC0.rdf
+
+# Another document where the online rdf version is different from the
+# version in subversion.
+wget http://creativecommons.org/licenses/by-nc-nd/2.0/jp/rdf --output-document CC-BY-NC-ND-2.0-jp.rdf
+
 mv *.rdf $DEST
 
