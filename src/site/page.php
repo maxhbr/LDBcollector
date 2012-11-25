@@ -64,6 +64,7 @@ $content = join ("", $lines);
           background-image: -ms-linear-gradient(top, #004EAD 0%, #0068E8 54%);
           background-image: -webkit-gradient(linear, left top, left bottom,
                             color-stop(0, #004EAD), color-stop(0.54, #0068E8));
+          min-height: 46px;
       }
 
       #menu { font-size: 18px; line-height: 27px; float: right; margin: 27px 18px 0 0; }
