@@ -1,2 +1,2 @@
 
-Please see https://licensedb.org/about/
+Please see https://licensedb.org/

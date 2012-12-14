@@ -15,7 +15,11 @@ You also need:
 
     - a recent version (0.8.x) of nodejs with npm
     - the commandline version of php
+    - python 3
     - GNU Make.
+
+The python scripts need requests and rdflib, you can set up a virtualenv
+for that using the bootstrap.sh script.
 
 
 More info
