@@ -113,10 +113,10 @@ def write_turtle (spdx, root, rdf):
         plaintext = "   li:plaintext <%s>;\n" % (txturl)
 
     if rdf.earlierVersion:
-        earlierVersion = "    li:earlierVersion <%s>;\n" % (rdf.earlierVersion)
+        earlierVersion = "   li:earlierVersion <%s>;\n" % (rdf.earlierVersion)
 
     if rdf.laterVersion:
-        laterVersion = "    li:laterVersion <%s>;\n" % (rdf.laterVersion)
+        laterVersion = "   li:laterVersion <%s>;\n" % (rdf.laterVersion)
 
     with open (turtle_file, "wb") as turtle:
         print ("writing", turtle_file)

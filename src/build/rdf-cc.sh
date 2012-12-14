@@ -8,7 +8,7 @@ ROOT=$DIR/../..
 DEST=$ROOT/upstream/rdf
 
 cd $ROOT
-## git submodule update --init
+git submodule update --init
 mkdir --parents .build
 
 ls upstream/creativecommons/cc/licenserdf/licenses/ > .build/filenames.txt

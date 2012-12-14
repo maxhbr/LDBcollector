@@ -2,4 +2,5 @@
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://creativecommons.org/licenses/by-nd/2.5/za/> a li:License;
+   li:earlierVersion <https://licensedb.org/id/CC-BY-ND-2.0-za>;
    li:id "CC-BY-ND-2.5-za".

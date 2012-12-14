@@ -29,6 +29,7 @@ upstream:
 	src/build/plaintext-cc.sh
 	src/build/plaintext-odc.sh
 	src/build/rdf-gnu.sh
+	src/build/rdf-cc.sh
 
 www/context.json: data/context.json | www
 	@cp $< $@ 

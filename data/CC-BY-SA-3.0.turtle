@@ -3,5 +3,6 @@
 
 <http://creativecommons.org/licenses/by-sa/3.0/> a li:License;
    li:plaintext <http://creativecommons.org/licenses/by-sa/3.0/legalcode.txt>;
+   li:earlierVersion <https://licensedb.org/id/CC-BY-SA-2.5>;
    spdx:licenseId "CC-BY-SA-3.0";
    li:id "CC-BY-SA-3.0".
