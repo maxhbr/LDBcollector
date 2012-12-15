@@ -12,6 +12,7 @@
    cc:legalcode <http://gnu.org/licenses/fdl-1.2.html>;
    dc:title "GNU Free Documentation License";
    dc:creator <http://fsf.org/>;
+   li:libre <http://fsf.org/>;
    dc:hasVersion "1.2";
    dc:identifier "GNU FDL";
    spdx:licenseId "GFDL-1.2".

@@ -19,13 +19,17 @@ To add an entry, I follow these guidelines:
 
   None of this is set in stone, I welcome feedback on this.
 
-- dc:title is the name of the license, it should always be present.
+- li:name is a shorter name for the license, it must be present if a
+  license isn't superseded or deprecated.  Otherwise it isn't
+  mandatory, though still encouraged.
+
+- dc:title is the name of the license, it must always be present.
 - dc:hasVersion should be present if the license is versioned.
 - dc:creator should be the URL of the homepage of the publisher.
 - spdx:licenseId should be the license identifiers assigned by SPDX.
 
 - cc:legalcode should be the full legal text, preferably text/html.
-  often this should be the same as resource url for the license
+  often this is the same as the original identity url for the license
   object.
 
 - li:plaintext should be the full legal text, text/plain.
@@ -53,4 +57,31 @@ To add an entry, I follow these guidelines:
   adding any canonical notices could still be useful for license
   analysis tools.
 
+- li:libre is an optional list of organizations who consider this
+  license suitable for free culture works, free software, open source
+  software, and/or open data.
 
+  This list should only contain organizations which a community of
+  people consider authorative on this topic.
+
+  If the listed organization has also published copyright licenses,
+  the dc:creator property of those licenses should match the
+  identifier used for the organization here.
+
+  Currently these organizations can be listed:
+
+  1. Debian, http://www.debian.org/
+  2. Free Software Foundation, http://fsf.org/
+  3. Open Source Initiative, http://opensource.org/
+  4. Creative Commons, http://creativecommons.org/
+  5. Freedom Defined, http://freedomdefined.org/
+
+  Reference documents:
+
+  1. http://wiki.debian.org/DFSGLicenses
+  2. http://www.gnu.org/licenses/license-list.html
+  3. http://opensource.org/licenses/alphabetical
+  4. Creative Commons has their opinion on their own licenses encoded here:
+     http://code.creativecommons.org/viewgit/cc.license.git/tree/cc/license/_lib/classes.py#n127
+  5. http://freedomdefined.org/Licenses and
+     http://freedomdefined.org/index.php?title=Special%3APrefixIndex&prefix=Licenses%2F&namespace=0

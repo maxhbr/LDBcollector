@@ -35,6 +35,16 @@ function render_linked_property ($name, $data, $context)
 
 function render_linked_property_entry ($name, $value, $data, $context)
 {
+    if (is_array ($value))
+    {
+        $ret = "";
+        foreach ($value as $v) {
+            $ret .= render_linked_property_entry ($name, $v, $data, $context);
+        }
+
+        return $ret;
+    }
+
     $display = "";
     $domain = "";
     $propurl = "";
@@ -163,6 +173,7 @@ function sidebar ($data, $context, $logos)
 
     add_section ($sections,
                  render_linked_property ("li:id", $data, $context).
+                 render_literal_property ("li:name", $data, $context).
                  render_linked_property ("li:earlierVersion", $data, $context).
                  render_linked_property ("li:laterVersion", $data, $context));
 
@@ -186,6 +197,8 @@ function sidebar ($data, $context, $logos)
     add_section ($sections,
                  render_linked_property ("li:plaintext", $data, $context).
                  render_linked_property ("cc:legalcode", $data, $context));
+
+    add_section ($sections, render_linked_property ("li:libre", $data, $context));
 
     add_section ($sections, render_linked_property ("cc:permits", $data, $context));
     add_section ($sections, render_linked_property ("cc:requires", $data, $context));

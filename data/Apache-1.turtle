@@ -10,6 +10,7 @@
    li:laterVersion <https://licensedb.org/id/Apache-1.1>;
    dc:title "Apache License";
    dc:creator <http://apache.org/>;
+   li:libre <http://fsf.org/>;
    dc:hasVersion "1.0";
    cc:legalcode <http://www.apache.org/licenses/LICENSE-1.0>;
    spdx:licenseId "Apache-1.0".

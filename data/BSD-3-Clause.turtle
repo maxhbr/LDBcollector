@@ -9,6 +9,8 @@
    dc:title "BSD 3-Clause";
    cc:legalcode <http://opensource.org/licenses/BSD-3-Clause>;
    spdx:licenseId "BSD-3-Clause";
+   li:libre <http://freedomdefined.org/>;
+   li:libre <http://fsf.org/>;
    li:notice _:notice1.
 
 _:notice1

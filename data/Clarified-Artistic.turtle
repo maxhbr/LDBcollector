@@ -7,6 +7,7 @@
    li:id "Clarified-Artistic";
    li:name "Clarified Artistic";
    li:earlierVersion <https://licensedb.org/id/Artistic>;
+   li:libre <http://fsf.org/>;
    dc:title "Clarified Artistic License";
    cc:legalcode <http://www.ncftp.com/ncftp/doc/LICENSE.txt>;
    li:plaintext <http://www.ncftp.com/ncftp/doc/LICENSE.txt>;

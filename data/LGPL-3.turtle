@@ -6,6 +6,7 @@
    li:name "GNU LGPLv3";
    li:plaintext <http://gnu.org/licenses/lgpl-3.0.txt>;
    li:earlierVersion <https://licensedb.org/id/LGPL-2.1>;
+   li:libre <http://fsf.org/>;
    spdx:licenseId "LGPL-3.0";
    spdx:licenseId "LGPL-3.0+";
    li:notice _:notice1, _:notice2, _:notice3, _:notice4.

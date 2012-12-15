@@ -10,5 +10,6 @@
    li:laterVersion <https://licensedb.org/id/AGPL-3>;
    dc:title "Affero General Public License";
    dc:creator <http://www.affero.org/>;
+   li:libre <http://fsf.org/>;
    dc:hasVersion "1";
    cc:legalcode <http://www.affero.org/oagpl.html>.
