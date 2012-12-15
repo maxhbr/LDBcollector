@@ -5,6 +5,7 @@
 
 <http://opensource.org/licenses/BSD-3-Clause> a li:License;
    li:id "BSD-3-Clause";
+   li:name "BSD (3 clause)";
    dc:title "BSD 3-Clause";
    cc:legalcode <http://opensource.org/licenses/BSD-3-Clause>;
    spdx:licenseId "BSD-3-Clause";

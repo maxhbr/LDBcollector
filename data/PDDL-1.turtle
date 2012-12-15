@@ -5,6 +5,7 @@
 
 <http://opendatacommons.org/licenses/pddl/1.0/> a li:License;
    li:id "PDDL-1";
+   li:name "ODC PDDL";
    cc:legalcode <http://opendatacommons.org/licenses/pddl/1.0/>;
    dc:title "Public Domain Dedication and License";
    dc:creator <http://opendatacommons.org/>;

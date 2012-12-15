@@ -5,6 +5,7 @@
 
 <http://gnu.org/licenses/lgpl-2.0.html> a li:License;
    li:id "LGPL-2";
+   li:name "GNU LGPLv2";
    li:plaintext <http://gnu.org/licenses/lgpl-2.0.txt>;
    li:laterVersion <https://licensedb.org/id/LGPL-2.1>;
    dc:title "GNU Library General Public License";

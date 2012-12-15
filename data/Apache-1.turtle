@@ -5,6 +5,7 @@
 
 <http://www.apache.org/licenses/LICENSE-1.0> a li:License;
    li:id "Apache-1";
+   li:name "Apache 1.0";
    li:plaintext <http://www.apache.org/licenses/LICENSE-1.0.txt>;
    li:laterVersion <https://licensedb.org/id/Apache-1.1>;
    dc:title "Apache License";

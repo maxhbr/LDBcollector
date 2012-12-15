@@ -5,6 +5,7 @@
 
 <http://www.perlfoundation.org/artistic_license_2_0> a li:License;
    li:id "Artistic-2";
+   li:name "Artistic 2.0";
    li:earlierVersion <https://licensedb.org/id/Artistic>;
    dc:title "Artistic License 2.0";
    dc:creator <http://perlfoundation.org/>;

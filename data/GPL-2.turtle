@@ -3,6 +3,7 @@
 
 <http://gnu.org/licenses/gpl-2.0.html> a li:License;
    li:id "GPL-2";
+   li:name "GNU GPLv2";
    li:plaintext <http://gnu.org/licenses/gpl-2.0.txt>;
    li:earlierVersion <https://licensedb.org/id/GPL-1>;
    li:laterVersion <https://licensedb.org/id/GPL-3>;

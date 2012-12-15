@@ -5,6 +5,7 @@
 
 <http://opensource.org/licenses/BSD-2-Clause> a li:License;
    li:id "BSD-2-Clause";
+   li:name "BSD (2 clause)";
    dc:title "BSD 2-Clause";
    cc:legalcode <http://opensource.org/licenses/BSD-2-Clause>;
    spdx:licenseId "BSD-2-Clause";

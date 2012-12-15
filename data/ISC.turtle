@@ -5,6 +5,7 @@
 
 <http://www.isc.org/software/license> a li:License;
    li:id "ISC";
+   li:name "ISC License";
    dc:title "The ISC License";
    cc:legalcode <http://www.isc.org/software/license>;
    spdx:licenseId "ISC";

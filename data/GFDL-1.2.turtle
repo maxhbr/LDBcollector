@@ -5,6 +5,7 @@
 
 <http://gnu.org/licenses/fdl-1.2.html> a li:License;
    li:id "GFDL-1.2";
+   li:name "GNU FDL 1.2";
    li:earlierVersion <https://licensedb.org/id/GFDL-1.1>;
    li:laterVersion <https://licensedb.org/id/GFDL-1.3>;
    li:plaintext <http://gnu.org/licenses/fdl-1.2.txt>;

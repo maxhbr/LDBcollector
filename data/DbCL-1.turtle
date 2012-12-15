@@ -5,6 +5,7 @@
 
 <http://opendatacommons.org/licenses/dbcl/1.0/> a li:License;
    li:id "DbCL-1";
+   li:name "ODC DbCL 1.0";
    cc:legalcode <http://opendatacommons.org/licenses/dbcl/1.0/>;
    li:plaintext <http://www.opendatacommons.org/wp-content/uploads/2009/06/dbcl-10.txt>;
    dc:title "Database Contents License";

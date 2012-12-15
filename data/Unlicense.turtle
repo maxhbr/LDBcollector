@@ -5,6 +5,7 @@
 
 <http://unlicense.org> a li:License;
    li:id "Unlicense";
+   li:name "Unlicense";
    dc:title "Unlicense";
    cc:legalcode <http://unlicense.org/UNLICENSE>;
    li:plaintext <http://unlicense.org/UNLICENSE>;

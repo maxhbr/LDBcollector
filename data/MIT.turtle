@@ -5,6 +5,7 @@
 
 <http://opensource.org/licenses/MIT> a li:License;
    li:id "MIT";
+   li:name "MIT License";
    dc:title "The MIT License";
    cc:legalcode <http://opensource.org/licenses/MIT>;
    spdx:licenseId "MIT";

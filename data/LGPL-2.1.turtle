@@ -3,6 +3,7 @@
 
 <http://gnu.org/licenses/lgpl-2.1.html> a li:License;
    li:id "LGPL-2.1";
+   li:name "GNU LGPL 2.1";
    li:plaintext <http://gnu.org/licenses/lgpl-2.1.txt>;
    li:earlierVersion <https://licensedb.org/id/LGPL-2>;
    li:laterVersion <https://licensedb.org/id/LGPL-3>;
