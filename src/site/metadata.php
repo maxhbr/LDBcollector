@@ -74,12 +74,11 @@ function render_linked_property_entry ($name, $value, $data, $context)
             {
                 $value = "http://spdx.org/licenses/$value";
             }
-/*
-            if (!empty ($host) && $host !== "licensedb.org")
+
+            if ($prefix === "li" && $propname === "id")
             {
-                $domain = " ($host)";
+                $value = "https://licensedb.org/id/$value";
             }
-*/
         }
     }
 
@@ -163,7 +162,7 @@ function sidebar ($data, $context, $logos)
     echo "<ul>\n";
 
     add_section ($sections,
-                 render_literal_property ("li:id", $data, $context).
+                 render_linked_property ("li:id", $data, $context).
                  render_linked_property ("li:earlierVersion", $data, $context).
                  render_linked_property ("li:laterVersion", $data, $context));
 
