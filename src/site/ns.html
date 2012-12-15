@@ -3,7 +3,7 @@ The License Database vocabulary
       <h1>The License Database vocabulary</h1>
 
       <dt>Last update:</dt>
-      <dd>2012-02-12</dd>
+      <dd>2012-12-15</dd>
       <dt>Editors:</dt>
       <dd><a href="mailto:kuno@frob.nl">Kuno Woudt</a> (<a href="http://frob.nl">frob.nl</a>)</dd>
 
@@ -30,7 +30,7 @@ The License Database vocabulary
         uses this vocabulary to describe existing free software licenses, open
         source licenses and free culture licenses used today.
       </p>
-      
+
       <h2>Status of this document</h2>
       <p>
         This is an editor's draft without any formal standing. It is
@@ -86,6 +86,24 @@ The License Database vocabulary
           href="#License">license</a> by the LicenseDB project.
           (the intent is to follow the same naming scheme as
            defined in <a href="http://dep.debian.net/deps/dep5/#license-specification">DEP5</a>)
+        </p>
+      </div>
+
+      <div id="name" about="#name" typeof="rdf:Property">
+        <h4><span class="prefix">li:</span>name</h4>
+        <p>
+          A short <span rel="rdfs:range"
+          resource="http://www.w3.org/2000/01/rdf-schema#Literal"
+          >name</span> assigned to the <a rel="rdfs:domain"
+          href="#License">license</a>.  This should be a short name
+          suitable for display in a dropdown menu of a simple license
+          chooser or the copyright notice where there is limited room
+          for such notices.
+        </p>
+        <p>
+          For example, "CC BY-SA 3.0 NL" is the li:name for a creative
+          commons license which has "Attribution-ShareAlike 3.0
+          Netherlands" as dc:title.
         </p>
       </div>
 

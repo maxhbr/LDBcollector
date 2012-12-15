@@ -2,4 +2,5 @@
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://creativecommons.org/licenses/by-nd-nc/1.0/il/> a li:License;
+   li:name "CC BY-ND-NC 1.0 IL";
    li:id "CC-BY-ND-NC-1.0-il".

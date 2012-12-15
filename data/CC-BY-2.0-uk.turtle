@@ -2,4 +2,5 @@
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://creativecommons.org/licenses/by/2.0/uk/> a li:License;
+   li:name "CC BY 2.0 UK";
    li:id "CC-BY-2.0-uk".

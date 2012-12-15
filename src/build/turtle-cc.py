@@ -53,9 +53,44 @@ class License (object):
     replacedBy = None
     earlierVersion = None
     laterVersion = None
+    hasVersion = None
+    jurisdiction = None
+    dcidentifier = None
 
     def __init__ (self, identifier = None):
         self.id = identifier
+
+    def short_name (self):
+        """ Return a short display name, e.g. "CC BY-SA 3.0 NL". """
+
+        # This is a quick hack to get a string identical to the value
+        # of dc:identifier set by the license_name macro here:
+        # http://code.creativecommons.org/viewgit/cc.engine.git/tree/cc/engine/templates/licenses/standard_deed.html#n19
+
+        id = ""
+        ver = ""
+        jur = ""
+
+        if not self.dcidentifier:
+            print ("WARNING:", self.id, "does not have a dc:identifier")
+            return None
+
+        if ("mark" == self.dcidentifier or
+            "sampling" in self.dcidentifier or
+            "devnations" in self.dcidentifier):
+            return None
+
+        id = self.dcidentifier.upper ()
+
+        if self.hasVersion:
+            ver = " " + self.hasVersion
+
+        if self.jurisdiction:
+            j = self.jurisdiction.replace ("http://creativecommons.org/international/", "")
+            jur = " " + j.split ("/")[0].upper ()
+
+        return "CC %s%s%s" % (id, ver, jur)
+
 
     def __str__ (self):
         return (", ".join (filter (lambda x: x, [
@@ -70,6 +105,11 @@ def parse_rdf (license_, filename):
     rdf_type = rdflib.term.URIRef ("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
     cc_license = rdflib.term.URIRef ("http://creativecommons.org/ns#License")
     replaced_by = rdflib.term.URIRef ("http://purl.org/dc/terms/isReplacedBy")
+    jurisdiction = rdflib.term.URIRef ("http://creativecommons.org/ns#jurisdiction")
+    hasVersion1 = rdflib.term.URIRef ("http://purl.org/dc/terms/hasVersion")
+    hasVersion2 = rdflib.term.URIRef ("http://purl.org/dc/elements/1.1/hasVersion")
+    dcidentifier1 = rdflib.term.URIRef ("http://purl.org/dc/terms/identifier")
+    dcidentifier2 = rdflib.term.URIRef ("http://purl.org/dc/elements/1.1/identifier")
 
     for s, p, o in g:
         if p == rdf_type and o == cc_license:
@@ -77,6 +117,16 @@ def parse_rdf (license_, filename):
 
         if p == replaced_by:
             license_.replacedBy = unicode (o)
+
+        if p in [hasVersion1, hasVersion2]:
+            license_.hasVersion = unicode (o)
+
+        if p == jurisdiction:
+            license_.jurisdiction = unicode (o)
+
+        if p in [dcidentifier1, dcidentifier2]:
+            license_.dcidentifier = unicode (o)
+
 
     return license_
 
@@ -104,6 +154,7 @@ def write_turtle (spdx, root, rdf):
     plaintext = ""
     earlierVersion = ""
     laterVersion = ""
+    name = ""
 
     if rdf.id in spdx.text:
         spdxid = "   spdx:licenseId \"%s\";\n" % (rdf.id)
@@ -118,14 +169,19 @@ def write_turtle (spdx, root, rdf):
     if rdf.laterVersion:
         laterVersion = "   li:laterVersion <%s>;\n" % (rdf.laterVersion)
 
+    shortname = rdf.short_name ()
+    if shortname:
+        name = "   li:name \"%s\";\n" % (shortname)
+
     with open (turtle_file, "wb") as turtle:
         print ("writing", turtle_file)
         turtle.write ("""@prefix li: <https://licensedb.org/ns#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <%s> a li:License;
-%s%s%s%s   li:id "%s".
-""" % (rdf.uri, plaintext, earlierVersion, laterVersion, spdxid, rdf.id))
+%s%s%s%s%s   li:id "%s".
+""" % (rdf.uri, name, plaintext,
+       earlierVersion, laterVersion, spdxid, rdf.id))
 
 
 def main ():
