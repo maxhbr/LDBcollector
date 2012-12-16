@@ -92,7 +92,7 @@ $title = get_single_literal_value ("dc:title", $data, $context);
       hr { border: 1px solid #eee; }
 
       div.column1 { float: left; width: 69%; min-width: 30em; max-width: 52em; }
-      div.column2 { float: left; width: 30%; min-width: 20em; max-width: 30em; }
+      div.column2 { float: left; width: 30%; min-width: 20em; max-width: 32em; }
 
       div.footer,
       div.main,

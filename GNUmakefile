@@ -32,15 +32,17 @@ upstream:
 	src/build/rdf-cc.sh
 
 www/context.json: data/context.json | www
-	@cp $< $@ 
+	@cp $< $@
 
 .build/%.nt: data/%.turtle | .build
 	@echo Serializing to $@
-	@rdf serialize $< > $@
+	@rapper --quiet --input turtle --output ntriples $< > $@.tmp
 	@if [ -s upstream/rdf/$(basename $(notdir $<)).rdf ]; then \
-	    rdf serialize upstream/rdf/$(basename $(notdir $<)).rdf \
-	    | ruby src/data/normalize.rb >> $@; \
+	    rapper --quiet --input rdfxml --output ntriples upstream/rdf/$(basename $(notdir $<)).rdf \
+	    | node src/build/normalize.js --quiet >> $@.tmp; \
 	fi
+	@node src/build/derive.js --all < $@.tmp > $@
+	@rm $@.tmp
 
 www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 	@echo Generating database archive $@
@@ -60,7 +62,7 @@ www/id/%.jsonld: www/id/%.json
 
 www/id/%.rdf: .build/%.nt www/context.json | www
 	@echo Serializing to $@
-	@cd www/id ; ../../src/build/publish-rdf.rb ../../$<  ../../$@ ../context.json
+	@node src/build/publish-rdf-with-rapper.js www/context.json $< | sh > $@
 
 www/id/%.html: www/id/%.json data/context.json src/site/rdfa.php src/site/metadata.php
 	@echo Serializing to $@
@@ -72,7 +74,7 @@ www/id/index.html: src/site/dbindex.php src/site/page.php $(SOURCES) | www  .bui
 	@php src/site/page.php .build/indexpage.html > $@
 
 www/%.html: src/site/%.html src/site/page.php | www
-	@echo Generating $@ web page 
+	@echo Generating $@ web page
 	@php src/site/page.php $< > $@
 
 www/robots.txt: src/site/robots.txt | www; @cp $< $@
