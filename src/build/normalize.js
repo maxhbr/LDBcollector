@@ -37,8 +37,6 @@ _.mixin(require('underscore.string').exports());
 // http://dublincore.org/usage/decisions/2008/dcterms-changes/
 
 function normalize (statements) {
-    var default_titles = {};
-    var english_titles = {};
     var dc11 = 'http://purl.org/dc/elements/1.1/';
     var dct = 'http://purl.org/dc/terms/';
 
@@ -72,22 +70,6 @@ function normalize (statements) {
             if (s.property.nominalValue == dc11+'source')
             {
                 s.property.nominalValue = dct+'source';
-            }
-
-            if (s.property.nominalValue == dct+'title')
-            {
-                if (s.object.language)
-                {
-                    if (_(s.object.language).startsWith ('en')) {
-                        english_titles[s.subject] = s.object.nominalValue;
-                    }
-                }
-                else
-                {
-                    if (! _(s.object.nominalValue).isEmpty ()) {
-                        default_titles[s.subject] = s.object.nominalValue;
-                    }
-                }
             }
 
             // Skip empty values.

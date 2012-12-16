@@ -32,15 +32,17 @@ upstream:
 	src/build/rdf-cc.sh
 
 www/context.json: data/context.json | www
-	@cp $< $@ 
+	@cp $< $@
 
 .build/%.nt: data/%.turtle | .build
 	@echo Serializing to $@
-	@rapper --quiet --input turtle --output ntriples $< > $@
+	@rapper --quiet --input turtle --output ntriples $< > $@.tmp
 	@if [ -s upstream/rdf/$(basename $(notdir $<)).rdf ]; then \
 	    rapper --quiet --input rdfxml --output ntriples upstream/rdf/$(basename $(notdir $<)).rdf \
-	    | node src/build/normalize.js --quiet >> $@; \
+	    | node src/build/normalize.js --quiet >> $@.tmp; \
 	fi
+	@node src/build/derive.js --all < $@.tmp > $@
+	@rm $@.tmp
 
 www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 	@echo Generating database archive $@

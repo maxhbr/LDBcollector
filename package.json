@@ -3,7 +3,9 @@
     "dependencies": {
         "jsonld": "git://github.com/digitalbazaar/jsonld.js.git",
         "underscore": "1.4.x",
-        "negotiator": "0.2.x"
+        "underscore.string": "2.3.x",
+        "negotiator": "0.2.x",
+        "clone": "0.1.x",
     },
     "description": "LicenseDB, the License Database project.",
     "engines": {

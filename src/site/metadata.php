@@ -1,5 +1,23 @@
 <?php
 
+/* A quick guess of the relative image size by picking the final integer
+   in the url.  Sufficient to sort FSF and CC license logos on size. */
+function guess_logo_size ($url)
+{
+    $matches = NULL;
+    if (preg_match ("/.*[^0-9]([0-9]+)[^0-9]*$/", $url, $matches))
+    {
+        return $matches[1];
+    }
+
+    return 0;
+}
+
+function cmp_logos ($a, $b)
+{
+    return guess_logo_size ($a) < guess_logo_size ($b);
+}
+
 function get_logos ($data)
 {
     $logos = array ();
@@ -9,6 +27,9 @@ function get_logos ($data)
                   $data["foaf:logo"] :
                   array ( $data["foaf:logo"] ));
     }
+
+    /* Sort larger images first. */
+    usort ($logos, 'cmp_logos');
 
     return $logos;
 }
@@ -80,6 +101,11 @@ function render_linked_property_entry ($name, $value, $data, $context)
                 $display = array_pop ($parts);
             }
 
+            /* if ($prefix === "owl" && $propname === "sameAs") */
+            /* { */
+            /*     $display = $value; */
+            /* } */
+
             if ($prefix === "spdx")
             {
                 $value = "http://spdx.org/licenses/$value";
@@ -95,7 +121,7 @@ function render_linked_property_entry ($name, $value, $data, $context)
     return "<li>" .
         "<span class=\"prefix\">$prefix:</span>$propname: " .
         "<a property=\"$propurl$propname\" " .
-        "href=\"$value\">$display</a>$domain</li>";
+        "href=\"$value\">$display</a>$domain</li>\n";
 }
 
 function get_single_literal_value ($name, $data, $context)
@@ -173,9 +199,7 @@ function sidebar ($data, $context, $logos)
 
     add_section ($sections,
                  render_linked_property ("li:id", $data, $context).
-                 render_literal_property ("li:name", $data, $context).
-                 render_linked_property ("li:earlierVersion", $data, $context).
-                 render_linked_property ("li:laterVersion", $data, $context));
+                 render_literal_property ("li:name", $data, $context));
 
     add_section ($sections,
                  render_literal_property ("dc:title", $data, $context).
@@ -188,7 +212,7 @@ function sidebar ($data, $context, $logos)
     foreach ($logos as $url) {
         $count++;
         $logodata .= "<li><span class=\"prefix\">foaf:</span>".
-            "logo: <button class=\"selected logo$count\">" .
+            "logo: <button class=\"logo$count\">" .
             basename($url, ".png") . "</button></li>";
     };
 
@@ -203,7 +227,14 @@ function sidebar ($data, $context, $logos)
     add_section ($sections, render_linked_property ("cc:permits", $data, $context));
     add_section ($sections, render_linked_property ("cc:requires", $data, $context));
     add_section ($sections, render_linked_property ("cc:prohibits", $data, $context));
-    add_section ($sections, render_linked_property ("spdx:licenseId", $data, $context));
+
+    add_section ($sections,
+                 render_linked_property ("owl:sameAs", $data, $context).
+                 render_linked_property ("li:earlierVersion", $data, $context).
+                 render_linked_property ("li:laterVersion", $data, $context));
+
+    add_section ($sections,
+                 render_linked_property ("spdx:licenseId", $data, $context));
 
     echo join ("<hr />", $sections);
 
