@@ -1,0 +1,37 @@
+@prefix li: <https://licensedb.org/ns#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<http://mozilla.org/MPL/2.0/> a li:License;
+   li:id "MPL-2";
+   li:name "MPL 2";
+   dc:title "Mozilla Public License";
+   dc:hasVersion "2.0";
+   dc:creator <http://mozilla.org/>;
+   li:plaintext <http://mozilla.org/MPL/2.0/index.txt>;
+   cc:legalcode <http://mozilla.org/MPL/2.0/>;
+   li:earlierVersion <https://licensedb.org/id/MPL-1.1>;
+   li:libre <http://debian.org/>;
+   li:libre <http://fsf.org/>;
+   li:libre <http://opensource.org/>;
+   spdx:licenseId "MPL-2.0";
+   spdx:licenseId "MPL-2.0-no-copyleft-exception";
+   li:notice _:notice1, _:notice2.
+
+_:notice1
+   li:short true;
+   li:canonical true;
+   li:text """This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+""".
+
+_:notice2
+   li:short true;
+   li:canonical true;
+   li:text """This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+This Source Code Form is "Incompatible With Secondary Licenses", as
+defined by the Mozilla Public License, v. 2.0.
+""".
