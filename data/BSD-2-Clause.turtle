@@ -11,6 +11,7 @@
    li:libre <http://fsf.org/>;
    spdx:licenseId "BSD-2-Clause";
    li:libre <http://freedomdefined.org/>;
+   li:libre <http://opensource.org/>;
    li:notice _:notice1.
 
 _:notice1

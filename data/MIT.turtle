@@ -9,6 +9,7 @@
    dc:title "The MIT License";
    cc:legalcode <http://opensource.org/licenses/MIT>;
    li:libre <http://freedomdefined.org/>;
+   li:libre <http://opensource.org/>;
    spdx:licenseId "MIT";
    li:notice _:notice1.
 

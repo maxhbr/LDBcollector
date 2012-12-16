@@ -7,6 +7,7 @@
    li:id "Artistic";
    li:name "Artistic 1.0";
    li:laterVersion <https://licensedb.org/id/Artistic-2>;
+   li:libre <http://opensource.org/>;
    dc:title "Artistic License";
    dc:creator <http://perlfoundation.org/>;
    cc:legalcode <http://www.perlfoundation.org/artistic_license_1_0>;

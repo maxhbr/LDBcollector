@@ -8,6 +8,7 @@
    li:earlierVersion <https://licensedb.org/id/AGPL-1>;
    li:earlierVersion <https://licensedb.org/id/AGPL-2>;
    li:libre <http://fsf.org/>;
+   li:libre <http://opensource.org/>;
    spdx:licenseId "AGPL-3.0";
    li:notice _:notice1, _:notice2, _:notice3, _:notice4.
 

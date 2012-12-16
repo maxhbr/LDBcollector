@@ -10,6 +10,7 @@
    dc:title "Artistic License 2.0";
    dc:creator <http://perlfoundation.org/>;
    li:libre <http://fsf.org/>;
+   li:libre <http://opensource.org/>;
    cc:legalcode <http://www.perlfoundation.org/artistic_license_2_0>;
    li:plaintext <http://www.perlfoundation.org/attachment/legal/artistic-2_0.txt>;
    spdx:licenseId "Artistic-2.0";
