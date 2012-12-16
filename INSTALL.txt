@@ -10,29 +10,13 @@ You will need:
     - python 2.7
     - GNU Make.
 
-On Ubuntu you will have to install node manually, but the rest can be
+On Ubuntu 12.04 you will have to install node manually, but the rest can be
 installed with:
 
    sudo apt-get install raptor2-utils php5-cli python2.7 python-virtualenv make
 
 The python scripts need requests and rdflib, you can set up a virtualenv
 for that by running the included bin/bootstrap.sh script.
-
-
-More info
-=========
-
-To convert between RDF/XML, JSON-LD and any other formats used by the
-License Database project you will need RDF.rb and most of its plugins.
-If you already have a working ruby setup you can install these with
-"gem install linkeddata".  The QuickStart instructions above recommend
-using "RVM", which is somewhat similar in purpose as perl's local::lib
-and python's virtualenv.
-
-Once you have installed the linkeddata gem you can check that everything
-is working with the following command:
-
-    rdf serialize --output-format jsonld http://creativecommons.org/licenses/by-sa/3.0/rdf
 
 
 Hosting
