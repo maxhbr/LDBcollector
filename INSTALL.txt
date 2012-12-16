@@ -2,24 +2,21 @@
 QuickStart
 ==========
 
-You will need ruby and the "linkeddata" gem, you could install it with
-the following steps:
-
-    1. get RVM, https://rvm.beginrescueend.com/rvm/install/
-    2. rvm requirements
-    3. rvm install 1.9.2
-    4. rvm use 1.9.2
-    5. gem install linkeddata nokogiri equivalent-xml
-
-You also need:
+You will need:
 
     - a recent version (0.8.x) of nodejs with npm
+    - raptor2 (http://librdf.org/raptor/)
     - the commandline version of php
-    - python 3
+    - python 2.7
     - GNU Make.
 
+On Ubuntu you will have to install node manually, but the rest can be
+installed with:
+
+   sudo apt-get install raptor2-utils php5-cli python2.7 python-virtualenv make
+
 The python scripts need requests and rdflib, you can set up a virtualenv
-for that using the bootstrap.sh script.
+for that by running the included bin/bootstrap.sh script.
 
 
 More info

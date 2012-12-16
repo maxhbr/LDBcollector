@@ -1,6 +1,10 @@
 /**
  * A JavaScript implementation of the JSON-LD API.
  *
+ * NOTE: this version has been slightly modified for the license
+ * database project (https://licensedb.org) to export the RDFParsers.
+ * Original: https://github.com/digitalbazaar/jsonld.js
+ *
  * @author Dave Longley
  *
  * BSD 3-Clause License
@@ -1112,6 +1116,7 @@ jsonld.unregisterRDFParser = function(contentType) {
   delete _rdfParsers[contentType];
 };
 
+
 // determine if in-browser or using node.js
 var _nodejs = (typeof module !== 'undefined');
 var _browser = !_nodejs;
@@ -1121,6 +1126,9 @@ if(_nodejs) {
   module.exports = jsonld;
   // use node URL resolver by default
   jsonld.useUrlResolver('node');
+
+  module.exports.parseNQuads = _parseNQuads;
+  module.exports.toNQuad = _toNQuad;
 
   // needed for serialization of XML literals
   if(typeof XMLSerializer === 'undefined') {

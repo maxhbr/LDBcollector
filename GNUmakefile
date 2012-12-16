@@ -36,10 +36,10 @@ www/context.json: data/context.json | www
 
 .build/%.nt: data/%.turtle | .build
 	@echo Serializing to $@
-	@rdf serialize $< > $@
+	@rapper --quiet --input turtle --output ntriples $< > $@
 	@if [ -s upstream/rdf/$(basename $(notdir $<)).rdf ]; then \
-	    rdf serialize upstream/rdf/$(basename $(notdir $<)).rdf \
-	    | ruby src/data/normalize.rb >> $@; \
+	    rapper --quiet --input rdfxml --output ntriples upstream/rdf/$(basename $(notdir $<)).rdf \
+	    | node src/build/normalize.js --quiet >> $@; \
 	fi
 
 www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
