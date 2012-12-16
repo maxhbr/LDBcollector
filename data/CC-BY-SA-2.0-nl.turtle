@@ -3,6 +3,8 @@
 
 <http://creativecommons.org/licenses/by-sa/2.0/nl/> a li:License;
    li:name "CC BY-SA 2.0 NL";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:earlierVersion <https://licensedb.org/id/CC-BY-SA-1.0-nl>;
    li:laterVersion <https://licensedb.org/id/CC-BY-SA-2.5-nl>;
    li:id "CC-BY-SA-2.0-nl".

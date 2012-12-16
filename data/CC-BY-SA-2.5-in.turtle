@@ -3,4 +3,6 @@
 
 <http://creativecommons.org/licenses/by-sa/2.5/in/> a li:License;
    li:name "CC BY-SA 2.5 IN";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:id "CC-BY-SA-2.5-in".

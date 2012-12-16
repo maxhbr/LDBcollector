@@ -3,4 +3,6 @@
 
 <http://creativecommons.org/licenses/by/2.0/cl/> a li:License;
    li:name "CC BY 2.0 CL";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:id "CC-BY-2.0-cl".

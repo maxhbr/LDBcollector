@@ -3,6 +3,8 @@
 
 <http://creativecommons.org/licenses/by/2.5/> a li:License;
    li:name "CC BY 2.5";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:earlierVersion <https://licensedb.org/id/CC-BY-2.0>;
    li:laterVersion <https://licensedb.org/id/CC-BY-3.0>;
    spdx:licenseId "CC-BY-2.5";

@@ -3,4 +3,6 @@
 
 <http://creativecommons.org/licenses/by/3.0/nz/> a li:License;
    li:name "CC BY 3.0 NZ";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:id "CC-BY-3.0-nz".

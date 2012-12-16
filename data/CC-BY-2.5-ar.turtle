@@ -3,4 +3,6 @@
 
 <http://creativecommons.org/licenses/by/2.5/ar/> a li:License;
    li:name "CC BY 2.5 AR";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:id "CC-BY-2.5-ar".

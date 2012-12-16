@@ -138,7 +138,17 @@ def get_rdf_data (rdf_path):
             yield parse_rdf (license_, join (rdf_path, entry))
 
 
-def has_plaintext(ccurl):
+def has_plaintext(license):
+
+    # We know only the unported 3.0 licenses currently have a plaintext
+    # version.  So only try to get plaintext for 3.0 licenses and newer,
+    # and for 3.0 only do so for unported licenses.
+    if license.hasVersion in [ "1.0", "1.3", "2.0", "2.1", "2.5" ]:
+        return False
+    if license.hasVersion in [ "3.0" ] and license.jurisdiction:
+        return False
+
+    ccurl = license.uri
     txturl = ccurl + 'legalcode.txt'
     r = requests.head (txturl)
     if r.status_code == 200:
@@ -155,11 +165,12 @@ def write_turtle (spdx, root, rdf):
     earlierVersion = ""
     laterVersion = ""
     name = ""
+    libre = ""
 
     if rdf.id in spdx.text:
         spdxid = "   spdx:licenseId \"%s\";\n" % (rdf.id)
 
-    txturl = has_plaintext (rdf.uri)
+    txturl = has_plaintext (rdf)
     if txturl:
         plaintext = "   li:plaintext <%s>;\n" % (txturl)
 
@@ -173,14 +184,26 @@ def write_turtle (spdx, root, rdf):
     if shortname:
         name = "   li:name \"%s\";\n" % (shortname)
 
+    # http://code.creativecommons.org/viewgit/cc.license.git/tree/cc/license/_lib/classes.py#n127
+    # http://freedomdefined.org/Licenses
+    # http://www.gnu.org/licenses/license-list.html#ccby
+    # http://wiki.debian.org/DFSGLicenses#Creative_Commons_Attribution_Share-Alike_.28CC-BY-SA.29_v3.0
+    if rdf.dcidentifier in [ "by", "by-sa", "publicdomain" ]:
+        libre = libre + "   li:libre <http://creativecommons.org/>;\n"
+        libre = libre + "   li:libre <http://freedomdefined.org/>;\n"
+        if rdf.hasVersion == "2.0" and not rdf.jurisdiction:
+            libre = libre + "   li:libre <http://fsf.org/>;\n"
+        if rdf.hasVersion == "3.0" and not rdf.jurisdiction:
+            libre = libre + "   li:libre <http://debian.org/>;\n"
+
     with open (turtle_file, "wb") as turtle:
         print ("writing", turtle_file)
         turtle.write ("""@prefix li: <https://licensedb.org/ns#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <%s> a li:License;
-%s%s%s%s%s   li:id "%s".
-""" % (rdf.uri, name, plaintext,
+%s%s%s%s%s%s   li:id "%s".
+""" % (rdf.uri, name, plaintext, libre,
        earlierVersion, laterVersion, spdxid, rdf.id))
 
 

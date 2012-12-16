@@ -3,4 +3,6 @@
 
 <http://creativecommons.org/licenses/by/2.0/kr/> a li:License;
    li:name "CC BY 2.0 KR";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:id "CC-BY-2.0-kr".

@@ -3,4 +3,6 @@
 
 <http://creativecommons.org/licenses/by-sa/3.0/hr/> a li:License;
    li:name "CC BY-SA 3.0 HR";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:id "CC-BY-SA-3.0-hr".

@@ -3,4 +3,6 @@
 
 <http://creativecommons.org/licenses/by/1.0/fi/> a li:License;
    li:name "CC BY 1.0 FI";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:id "CC-BY-1.0-fi".

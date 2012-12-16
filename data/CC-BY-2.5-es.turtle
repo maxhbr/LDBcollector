@@ -3,5 +3,7 @@
 
 <http://creativecommons.org/licenses/by/2.5/es/> a li:License;
    li:name "CC BY 2.5 ES";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:earlierVersion <https://licensedb.org/id/CC-BY-2.1-es>;
    li:id "CC-BY-2.5-es".

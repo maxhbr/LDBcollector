@@ -70,7 +70,7 @@ To add an entry, I follow these guidelines:
 
   Currently these organizations can be listed:
 
-  1. Debian, http://www.debian.org/
+  1. Debian, http://debian.org/
   2. Free Software Foundation, http://fsf.org/
   3. Open Source Initiative, http://opensource.org/
   4. Creative Commons, http://creativecommons.org/

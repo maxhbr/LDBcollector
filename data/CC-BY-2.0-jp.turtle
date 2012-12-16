@@ -3,5 +3,7 @@
 
 <http://creativecommons.org/licenses/by/2.0/jp/> a li:License;
    li:name "CC BY 2.0 JP";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:laterVersion <https://licensedb.org/id/CC-BY-2.1-jp>;
    li:id "CC-BY-2.0-jp".

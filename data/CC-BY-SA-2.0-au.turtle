@@ -3,5 +3,7 @@
 
 <http://creativecommons.org/licenses/by-sa/2.0/au/> a li:License;
    li:name "CC BY-SA 2.0 AU";
+   li:libre <http://creativecommons.org/>;
+   li:libre <http://freedomdefined.org/>;
    li:laterVersion <https://licensedb.org/id/CC-BY-SA-2.1-au>;
    li:id "CC-BY-SA-2.0-au".
