@@ -12,6 +12,7 @@
    dc:creator <http://apache.org/>;
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
+   li:libre <http://debian.org/>;
    dc:hasVersion "2.0";
    cc:legalcode <http://www.apache.org/licenses/LICENSE-2.0>;
    spdx:licenseId "Apache-2.0";

@@ -9,6 +9,7 @@
    li:libre <http://freedomdefined.org/>;
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
+   li:libre <http://debian.org/>;
    spdx:licenseId "GPL-3.0";
    spdx:licenseId "GPL-3.0+";
    spdx:licenseId "GPL-3.0-with-autoconf-exception";

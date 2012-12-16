@@ -10,6 +10,7 @@
    cc:legalcode <http://opensource.org/licenses/MIT>;
    li:libre <http://freedomdefined.org/>;
    li:libre <http://opensource.org/>;
+   li:libre <http://debian.org/>;
    spdx:licenseId "MIT";
    li:notice _:notice1.
 
