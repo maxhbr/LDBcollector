@@ -62,7 +62,7 @@ www/id/%.jsonld: www/id/%.json
 
 www/id/%.rdf: .build/%.nt www/context.json | www
 	@echo Serializing to $@
-	@cd www/id ; ../../src/build/publish-rdf.rb ../../$<  ../../$@ ../context.json
+	@node src/build/publish-rdf-with-rapper.js www/context.json $< | sh > $@
 
 www/id/%.html: www/id/%.json data/context.json src/site/rdfa.php src/site/metadata.php
 	@echo Serializing to $@
@@ -74,7 +74,7 @@ www/id/index.html: src/site/dbindex.php src/site/page.php $(SOURCES) | www  .bui
 	@php src/site/page.php .build/indexpage.html > $@
 
 www/%.html: src/site/%.html src/site/page.php | www
-	@echo Generating $@ web page 
+	@echo Generating $@ web page
 	@php src/site/page.php $< > $@
 
 www/robots.txt: src/site/robots.txt | www; @cp $< $@
