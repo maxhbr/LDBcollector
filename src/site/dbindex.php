@@ -23,12 +23,12 @@ The License Database
         Showing <span id="selected">4</span> of <span id="total">10</span>
         licenses, including:<br />
         <label><input type="checkbox" class="filter nonfree" />non-free</label>
-        <label><input type="checkbox" class="filter superseded" />superseded</label>
+        <label><input type="checkbox" class="filter deprecated" />superseded / deprecated</label>
         <label><input type="checkbox" class="filter jurisdiction" />jurisdiction specific</label>
         <script>
           var update_filters = function (ev) {
               $('#database li').show ();
-              $.each ([ "nonfree", "superseded", "jurisdiction" ], function (key, val) {
+              $.each ([ "nonfree", "deprecated", "jurisdiction" ], function (key, val) {
                   if (! $('input.filter.' + val).is(':checked'))
                   {
                       $('#database li.' + val).hide ();
@@ -75,11 +75,6 @@ The License Database
     {
         $classes = array ();
 
-        if (array_key_exists ("dc:isReplacedBy", $data))
-        {
-            $classes["superseded"] = true;
-        }
-
         if (!array_key_exists ("li:libre", $data))
         {
             $classes["nonfree"] = true;
@@ -88,6 +83,12 @@ The License Database
         if (array_key_exists ("cc:jurisdiction", $data))
         {
             $classes["jurisdiction"] = true;
+        }
+
+        if (array_key_exists ("dc:isReplacedBy", $data)
+            || array_key_exists ("cc:deprecatedOn", $data))
+        {
+            $classes["deprecated"] = true;
         }
 
         $id = $data["li:id"];
