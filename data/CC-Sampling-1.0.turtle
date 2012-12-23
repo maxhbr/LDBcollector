@@ -2,4 +2,5 @@
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://creativecommons.org/licenses/sampling/1.0/> a li:License;
+   li:name "CC Sampling 1.0";
    li:id "CC-Sampling-1.0".

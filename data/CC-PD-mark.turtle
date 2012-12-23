@@ -2,4 +2,5 @@
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://creativecommons.org/publicdomain/mark/1.0/> a li:License;
+   li:name "Public Domain";
    li:id "CC-PD-mark".

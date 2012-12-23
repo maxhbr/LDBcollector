@@ -75,12 +75,17 @@ class License (object):
             print ("WARNING:", self.id, "does not have a dc:identifier")
             return None
 
-        if ("mark" == self.dcidentifier or
-            "sampling" in self.dcidentifier or
-            "devnations" in self.dcidentifier):
-            return None
+        if "mark" == self.dcidentifier:
+            return "Public Domain"
 
-        id = self.dcidentifier.upper ()
+        if ("devnations" in self.dcidentifier
+            or "sampling" in self.dcidentifier):
+            id = (self.dcidentifier
+                  .replace ("nc", "NC")
+                  .replace ("devnations", "Devnations")
+                  .replace ("sampling", "Sampling"))
+        else:
+            id = self.dcidentifier.upper ()
 
         if self.hasVersion:
             ver = " " + self.hasVersion
