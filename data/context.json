@@ -10,11 +10,17 @@
         "cc:legalcode":      { "@type": "@id" },
         "cc:permits":        { "@type": "@id" },
         "cc:requires":       { "@type": "@id" },
+        "cc:prohibits":      { "@type": "@id" },
+        "cc:jurisdiction":   { "@type": "@id" },
+        "cc:licenseClass":   { "@type": "@id" },
         "dc:creator":        { "@type": "@id" },
-        "owl:sameAs":        { "@type": "@id" },
-        "foaf:logo":         { "@type": "@id" },
+        "dc:source":         { "@type": "@id" },
         "dc:replaces":       { "@type": "@id" },
+        "dc:isBasedOn":      { "@type": "@id" },
         "dc:isReplacedBy":   { "@type": "@id" },
-        "li:plaintext":      { "@type": "@id" }
+        "foaf:logo":         { "@type": "@id" },
+        "li:plaintext":      { "@type": "@id" },
+        "li:libre":          { "@type": "@id" },
+        "owl:sameAs":        { "@type": "@id" }
     }
 }

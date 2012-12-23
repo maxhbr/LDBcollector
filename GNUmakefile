@@ -5,7 +5,7 @@ JSON_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.json,$(SOURCE
 JSONLD_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.jsonld,$(SOURCES))))
 
 WEB_SOURCES = index.html license.html ns.html
-WEB_VERBATIM = robots.txt favicon.ico licensedb.png
+WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
 
 all: $(WEB_TARGETS) $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) www/dl/license-database.tar.gz
@@ -68,18 +68,18 @@ www/id/%.html: www/id/%.json data/context.json src/site/rdfa.php src/site/metada
 	@echo Serializing to $@
 	@php src/site/rdfa.php $< > $@
 
-www/id/index.html: src/site/dbindex.php src/site/page.php $(SOURCES) | www  .build
+www/id/index.html: src/site/dbindex.php src/site/page.php $(JSON_TARGETS) | www  .build
 	@echo Generating index at $@
 	@php src/site/dbindex.php > .build/indexpage.html
-	@php src/site/page.php .build/indexpage.html > $@
+	@php src/site/page.php .build/indexpage.html "../" > $@
 
 www/%.html: src/site/%.html src/site/page.php | www
 	@echo Generating $@ web page
-	@php src/site/page.php $< > $@
+	@php src/site/page.php $< "" > $@
 
-www/robots.txt: src/site/robots.txt | www; @cp $< $@
 www/favicon.ico: src/site/favicon.ico | www; @cp $< $@
 www/licensedb.png: src/site/licensedb.png | www; @cp $< $@
+www/licensedb.css: src/site/licensedb.css | www; @cp $< $@
 www/jquery.js: upstream/jquery/jquery-1.7.1.min.js | www; @cp $< $@
 
 clean:

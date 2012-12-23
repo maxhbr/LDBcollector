@@ -19,28 +19,82 @@ The License Database
 
       <h2>Licenses currently in the database</h2>
 
-      <ul>
+      <div id="filter" style="display: none;">
+        Showing <span id="selected">4</span> of <span id="total">10</span>
+        licenses, including:<br />
+        <label><input type="checkbox" class="filter nonfree" />non-free</label>
+        <label><input type="checkbox" class="filter superseded" />superseded</label>
+        <label><input type="checkbox" class="filter jurisdiction" />jurisdiction specific</label>
+        <script>
+          var update_filters = function (ev) {
+              $('#database li').show ();
+              $.each ([ "nonfree", "superseded", "jurisdiction" ], function (key, val) {
+                  if (! $('input.filter.' + val).is(':checked'))
+                  {
+                      $('#database li.' + val).hide ();
+                  }
+              });
+              $('#selected').text ($('#database li:visible').length);
+          };
+          $(document).ready (function () {
+              $('#filter').show ();
+              $('#total').text ($('#database li').length);
+              update_filters ();
+          });
+          $('input.filter').on ('change', update_filters);
+        </script>
+      </div>
+
+      <ul id="database">
 <?php
 
-    $licenses = array ();
+    function by_name ($a, $b) {
+        return strcasecmp ($a['li:name'], $b['li:name']);
+    };
 
-    if ($dh = opendir (dirname (__FILE__)."/../../data/"))
+    $licenses = array ();
+    $json_sources_path = dirname (__FILE__)."/../../www/id";
+
+    if ($dh = opendir ($json_sources_path))
     {
         while (($file = readdir($dh)) !== false)
         {
             $matches = array ();
-            if (preg_match ("/(.*).turtle$/", $file, $matches))
+            if (preg_match ("/(.*).json$/", $file, $matches))
             {
-                array_push ($licenses, $matches[1]);
+                array_push ($licenses, json_decode (
+                                file_get_contents ("$json_sources_path/$file"), true));
             }
         }
         closedir ($dh);
     }
 
-    sort ($licenses);
-    foreach ($licenses as $id)
+    usort ($licenses, "by_name");
+
+    foreach ($licenses as $data)
     {
-        echo "<li><a href=\"$id\">$id</a></li>\n";
+        $classes = array ();
+
+        if (array_key_exists ("dc:isReplacedBy", $data))
+        {
+            $classes["superseded"] = true;
+        }
+
+        if (!array_key_exists ("li:libre", $data))
+        {
+            $classes["nonfree"] = true;
+        }
+
+        if (array_key_exists ("cc:jurisdiction", $data))
+        {
+            $classes["jurisdiction"] = true;
+        }
+
+        $id = $data["li:id"];
+        $name = $data["li:name"];
+        $class = join (" ", array_keys ($classes));
+
+        echo "<li class=\"$class\"><a href=\"$id\">$name</a></li>\n";
     }
 
 ?>

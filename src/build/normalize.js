@@ -33,6 +33,9 @@ _.mixin(require('underscore.string').exports());
 // 5. http://purl.org/dc/elements/1.1/source is replaced with
 //    http://purl.org/dc/terms/source.
 //
+// 6. http://purl.org/dc/elements/1.1/isReplacedBy is replaced with
+//    http://purl.org/dc/terms/isReplacedBy.
+//
 // see:
 // http://dublincore.org/usage/decisions/2008/dcterms-changes/
 
@@ -70,6 +73,11 @@ function normalize (statements) {
             if (s.property.nominalValue == dc11+'source')
             {
                 s.property.nominalValue = dct+'source';
+            }
+
+            if (s.property.nominalValue == dc11+'isReplacedBy')
+            {
+                s.property.nominalValue = dct+'isReplacedBy';
             }
 
             // Skip empty values.
