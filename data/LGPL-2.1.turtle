@@ -1,12 +1,13 @@
 @prefix li: <https://licensedb.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://gnu.org/licenses/lgpl-2.1.html> a li:License;
    li:id "LGPL-2.1";
    li:name "GNU LGPL 2.1";
    li:plaintext <http://gnu.org/licenses/lgpl-2.1.txt>;
-   li:earlierVersion <https://licensedb.org/id/LGPL-2>;
-   li:laterVersion <https://licensedb.org/id/LGPL-3>;
+   dc:replaces <https://licensedb.org/id/LGPL-2>;
+   dc:isReplacedBy <https://licensedb.org/id/LGPL-3>;
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
    li:libre <http://debian.org/>;

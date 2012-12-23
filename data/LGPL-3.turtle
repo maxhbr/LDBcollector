@@ -1,11 +1,12 @@
 @prefix li: <https://licensedb.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://gnu.org/licenses/lgpl-3.0.html> a li:License;
    li:id "LGPL-3";
    li:name "GNU LGPLv3";
    li:plaintext <http://gnu.org/licenses/lgpl-3.0.txt>;
-   li:earlierVersion <https://licensedb.org/id/LGPL-2.1>;
+   dc:replaces <https://licensedb.org/id/LGPL-2.1>;
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
    li:libre <http://debian.org/>;

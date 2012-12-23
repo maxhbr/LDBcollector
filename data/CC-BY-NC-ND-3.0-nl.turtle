@@ -1,7 +1,8 @@
 @prefix li: <https://licensedb.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://creativecommons.org/licenses/by-nc-nd/3.0/nl/> a li:License;
    li:name "CC BY-NC-ND 3.0 NL";
-   li:earlierVersion <https://licensedb.org/id/CC-BY-NC-ND-2.5-nl>;
+   dc:replaces <https://licensedb.org/id/CC-BY-NC-ND-2.5-nl>;
    li:id "CC-BY-NC-ND-3.0-nl".

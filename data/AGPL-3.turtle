@@ -1,12 +1,13 @@
 @prefix li: <https://licensedb.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://gnu.org/licenses/agpl-3.0.html> a li:License;
    li:id "AGPL-3";
    li:name "GNU AGPLv3";
    li:plaintext <http://gnu.org/licenses/agpl-3.0.txt>;
-   li:earlierVersion <https://licensedb.org/id/AGPL-1>;
-   li:earlierVersion <https://licensedb.org/id/AGPL-2>;
+   dc:replaces <https://licensedb.org/id/AGPL-1>;
+   dc:replaces <https://licensedb.org/id/AGPL-2>;
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
    spdx:licenseId "AGPL-3.0";

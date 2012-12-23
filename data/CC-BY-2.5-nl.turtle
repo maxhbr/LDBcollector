@@ -1,10 +1,11 @@
 @prefix li: <https://licensedb.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://creativecommons.org/licenses/by/2.5/nl/> a li:License;
    li:name "CC BY 2.5 NL";
    li:libre <http://creativecommons.org/>;
    li:libre <http://freedomdefined.org/>;
-   li:earlierVersion <https://licensedb.org/id/CC-BY-2.0-nl>;
-   li:laterVersion <https://licensedb.org/id/CC-BY-3.0-nl>;
+   dc:replaces <https://licensedb.org/id/CC-BY-2.0-nl>;
+   dc:isReplacedBy <https://licensedb.org/id/CC-BY-3.0-nl>;
    li:id "CC-BY-2.5-nl".

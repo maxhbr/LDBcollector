@@ -1,10 +1,11 @@
 @prefix li: <https://licensedb.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://creativecommons.org/licenses/by-sa/2.1/au/> a li:License;
    li:name "CC BY-SA 2.1 AU";
    li:libre <http://creativecommons.org/>;
    li:libre <http://freedomdefined.org/>;
-   li:earlierVersion <https://licensedb.org/id/CC-BY-SA-2.0-au>;
-   li:laterVersion <https://licensedb.org/id/CC-BY-SA-2.5-au>;
+   dc:replaces <https://licensedb.org/id/CC-BY-SA-2.0-au>;
+   dc:isReplacedBy <https://licensedb.org/id/CC-BY-SA-2.5-au>;
    li:id "CC-BY-SA-2.1-au".

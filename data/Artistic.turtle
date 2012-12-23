@@ -6,7 +6,7 @@
 <http://www.perlfoundation.org/artistic_license_1_0> a li:License;
    li:id "Artistic";
    li:name "Artistic 1.0";
-   li:laterVersion <https://licensedb.org/id/Artistic-2>;
+   dc:isReplacedBy <https://licensedb.org/id/Artistic-2>;
    li:libre <http://opensource.org/>;
    li:libre <http://debian.org/>;
    dc:title "Artistic License";

@@ -6,7 +6,7 @@
 <http://www.ncftp.com/ncftp/doc/LICENSE.txt> a li:License;
    li:id "Clarified-Artistic";
    li:name "Clarified Artistic";
-   li:earlierVersion <https://licensedb.org/id/Artistic>;
+   dc:replaces <https://licensedb.org/id/Artistic>;
    li:libre <http://fsf.org/>;
    li:libre <http://debian.org/>;
    dc:title "Clarified Artistic License";

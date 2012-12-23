@@ -230,8 +230,8 @@ function sidebar ($data, $context, $logos)
 
     add_section ($sections,
                  render_linked_property ("owl:sameAs", $data, $context).
-                 render_linked_property ("li:earlierVersion", $data, $context).
-                 render_linked_property ("li:laterVersion", $data, $context));
+                 render_linked_property ("dc:replaces", $data, $context).
+                 render_linked_property ("dc:isReplacedBy", $data, $context));
 
     add_section ($sections,
                  render_linked_property ("spdx:licenseId", $data, $context));

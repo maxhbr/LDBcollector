@@ -11,7 +11,7 @@
    dc:creator <http://mozilla.org/>;
    li:plaintext <http://mozilla.org/MPL/2.0/index.txt>;
    cc:legalcode <http://mozilla.org/MPL/2.0/>;
-   li:earlierVersion <https://licensedb.org/id/MPL-1.1>;
+   dc:replaces <https://licensedb.org/id/MPL-1.1>;
    li:libre <http://debian.org/>;
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;

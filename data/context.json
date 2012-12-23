@@ -13,8 +13,8 @@
         "dc:creator":        { "@type": "@id" },
         "owl:sameAs":        { "@type": "@id" },
         "foaf:logo":         { "@type": "@id" },
-        "li:earlierVersion": { "@type": "@id" },
-        "li:laterVersion":   { "@type": "@id" },
+        "dc:replaces":       { "@type": "@id" },
+        "dc:isReplacedBy":   { "@type": "@id" },
         "li:plaintext":      { "@type": "@id" }
     }
 }

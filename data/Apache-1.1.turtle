@@ -7,8 +7,8 @@
    li:id "Apache-1.1";
    li:name "Apache 1.1";
    li:plaintext <http://www.apache.org/licenses/LICENSE-1.1.txt>;
-   li:earlierVersion <https://licensedb.org/id/Apache-1>;
-   li:laterVersion <https://licensedb.org/id/Apache-2>;
+   dc:replaces <https://licensedb.org/id/Apache-1>;
+   dc:isReplacedBy <https://licensedb.org/id/Apache-2>;
    dc:title "Apache License";
    dc:creator <http://apache.org/>;
    li:libre <http://fsf.org/>;

@@ -180,10 +180,10 @@ def write_turtle (spdx, root, rdf):
         plaintext = "   li:plaintext <%s>;\n" % (txturl)
 
     if rdf.earlierVersion:
-        earlierVersion = "   li:earlierVersion <%s>;\n" % (rdf.earlierVersion)
+        earlierVersion = "   dc:replaces <%s>;\n" % (rdf.earlierVersion)
 
     if rdf.laterVersion:
-        laterVersion = "   li:laterVersion <%s>;\n" % (rdf.laterVersion)
+        laterVersion = "   dc:isReplacedBy <%s>;\n" % (rdf.laterVersion)
 
     shortname = rdf.short_name ()
     if shortname:
@@ -204,6 +204,7 @@ def write_turtle (spdx, root, rdf):
     with open (turtle_file, "wb") as turtle:
         print ("writing", turtle_file)
         turtle.write ("""@prefix li: <https://licensedb.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <%s> a li:License;

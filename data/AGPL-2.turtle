@@ -6,8 +6,8 @@
 <http://www.affero.org/agpl2.html> a li:License;
    li:id "AGPL-2";
    li:name "AGPLv2";
-   li:laterVersion <https://licensedb.org/id/AGPL-3>;
-   li:earlierVersion <https://licensedb.org/id/AGPL-1>;
+   dc:isReplacedBy <https://licensedb.org/id/AGPL-3>;
+   dc:replaces <https://licensedb.org/id/AGPL-1>;
    dc:title "Affero General Public License";
    dc:creator <http://www.affero.org/>;
    dc:hasVersion "2";
