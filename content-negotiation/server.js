@@ -39,7 +39,7 @@ function server (request, response) {
     var location = url.parse(request.url);
     location.pathname = location.pathname + '.' + typemap[content_type]
 
-    if (!fs.existsSync('www'+location.pathname))
+    if (!fs.existsSync('production.www'+location.pathname))
         return error404 (response)
 
     var location_str = base_url + url.format (location);
