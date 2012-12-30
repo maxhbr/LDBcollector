@@ -35,8 +35,8 @@ $content = join ("", $lines);
       </div>
     </div>
     <div id="contentwrapper">
-
-    <div id="content"><?php echo $content ?></div>
+      <div id="content"><?php echo $content ?></div>
+    </div>
 
     <div id="footer">
       <p class="copyright">
