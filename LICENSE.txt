@@ -2,22 +2,24 @@
 Database
 ========
 
-The License Database consists of all the files in data/ 
+The License Database consists of all the files included in
+www/id/license-database.tar.gz.  This archive is built from the files
+in data/.
 
 The License Database itself is contributed to the public domain using
 the CC0 1.0 Universal Public Domain Dedication:
 
 To the extent possible under law, the contributors of the License
 Database project waive all copyright and related or neighboring rights
-to The License Database. See the CC0-1.txt file included with the
+to The License Database. See the CC0.txt file included with the
 database for more information.
 
 
 Software
 ========
 
-The Software consists of all the files in src/ and INSTALL.txt,
-README.txt and EDITING.txt in the project root.
+The Software consists of all the files in the project root and the
+files in bin/, etc/, and src/.
 
 Copyright 2012  Kuno Woudt
 
@@ -42,7 +44,7 @@ All the files in upstream/plaintext are plaintext versions of licenses
 intended for free software, open source or free culture projects,
 obtained directly from their publishers and included without
 modifications.  Similarly upstream/rdf contains metadata about
-licenses obtained directoly from their publishers.
+licenses obtained directly from their publishers.
 
 Most of these licenses are not explicit about the terms which apply to
 the license text itself.  Our belief is that there is at least an

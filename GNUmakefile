@@ -57,7 +57,7 @@ www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 	@cp data/context.json .build/license-database/
 	@cp www/id/*json .build/license-database/json/
 	@cp www/id/*rdf .build/license-database/rdf/
-	@cp upstream/plaintext/*txt .build/license-database/plaintext/
+	@cp www/id/*txt .build/license-database/plaintext/
 	@cd .build ; tar cfz ../www/dl/license-database.tar.gz license-database
 
 www/id/%.txt: upstream/plaintext/%.txt | www
