@@ -89,5 +89,6 @@ www/licensedb.css: src/site/licensedb.css | www; @cp $< $@
 www/jquery.js: upstream/jquery/jquery-1.7.1.min.js | www; @cp $< $@
 
 clean:
+	rm -rf data/CC-*.turtle
 	rm -rf .build
 	rm -rf www
