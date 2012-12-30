@@ -1,9 +1,0 @@
-@prefix li: <https://licensedb.org/ns#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix spdx: <http://spdx.org/rdf/terms#> .
-
-<http://creativecommons.org/licenses/by-nc/2.1/es/> a li:License;
-   li:name "CC BY-NC 2.1 ES";
-   dc:replaces <https://licensedb.org/id/CC-BY-NC-2.0-es>;
-   dc:isReplacedBy <https://licensedb.org/id/CC-BY-NC-2.5-es>;
-   li:id "CC-BY-NC-2.1-es".
