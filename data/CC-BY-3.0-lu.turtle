@@ -1,9 +1,0 @@
-@prefix li: <https://licensedb.org/ns#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix spdx: <http://spdx.org/rdf/terms#> .
-
-<http://creativecommons.org/licenses/by/3.0/lu/> a li:License;
-   li:name "CC BY 3.0 LU";
-   li:libre <http://creativecommons.org/>;
-   li:libre <http://freedomdefined.org/>;
-   li:id "CC-BY-3.0-lu".

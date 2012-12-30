@@ -1,4 +1,7 @@
-SOURCES := $(wildcard data/*.turtle)
+CC_RDF_SOURCES := $(wildcard upstream/rdf/CC-*.rdf)
+CC_DATA_TARGETS := $(addprefix data/,$(notdir $(patsubst %.rdf,%.turtle,$(CC_RDF_SOURCES))))
+
+SOURCES := $(wildcard data/*.turtle) $(CC_DATA_TARGETS)
 RDF_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.rdf,$(SOURCES))))
 RDFA_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.html,$(SOURCES))))
 JSON_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.json,$(SOURCES))))
@@ -8,7 +11,7 @@ WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
 
-all: $(WEB_TARGETS) $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) www/dl/license-database.tar.gz
+all: $(CC_DATA_TARGETS) $(WEB_TARGETS) $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) www/dl/license-database.tar.gz
 
 node_modules:
 	npm install
@@ -30,6 +33,9 @@ upstream:
 	src/build/plaintext-odc.sh
 	src/build/rdf-gnu.sh
 	src/build/rdf-cc.sh
+
+data/CC-%.turtle: src/build/turtle-cc.py | upstream
+	@src/build/turtle-cc.py
 
 www/context.json: data/context.json | www
 	@cp $< $@

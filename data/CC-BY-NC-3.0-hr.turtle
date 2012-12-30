@@ -1,7 +1,0 @@
-@prefix li: <https://licensedb.org/ns#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix spdx: <http://spdx.org/rdf/terms#> .
-
-<http://creativecommons.org/licenses/by-nc/3.0/hr/> a li:License;
-   li:name "CC BY-NC 3.0 HR";
-   li:id "CC-BY-NC-3.0-hr".

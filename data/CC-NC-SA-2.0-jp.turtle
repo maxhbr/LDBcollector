@@ -1,7 +1,0 @@
-@prefix li: <https://licensedb.org/ns#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix spdx: <http://spdx.org/rdf/terms#> .
-
-<http://creativecommons.org/licenses/nc-sa/2.0/jp/> a li:License;
-   li:name "CC NC-SA 2.0 JP";
-   li:id "CC-NC-SA-2.0-jp".
