@@ -6,12 +6,13 @@ RDF_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.rdf,$(SOURCES)
 RDFA_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.html,$(SOURCES))))
 JSON_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.json,$(SOURCES))))
 JSONLD_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.turtle,%.jsonld,$(SOURCES))))
+TXT_TARGETS := $(addprefix www/id/,$(notdir $(wildcard upstream/plaintext/*)))
 
 WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
 
-all: $(CC_DATA_TARGETS) $(WEB_TARGETS) $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) www/dl/license-database.tar.gz
+all: $(CC_DATA_TARGETS) $(WEB_TARGETS) $(TXT_TARGETS) $(JSON_TARGETS) $(JSONLD_TARGETS) $(RDF_TARGETS) $(RDFA_TARGETS) www/dl/license-database.tar.gz
 
 node_modules:
 	npm install
@@ -58,6 +59,10 @@ www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 	@cp www/id/*rdf .build/license-database/rdf/
 	@cp upstream/plaintext/*txt .build/license-database/plaintext/
 	@cd .build ; tar cfz ../www/dl/license-database.tar.gz license-database
+
+www/id/%.txt: upstream/plaintext/%.txt | www
+	@echo Copying plaintext license to $@
+	@cp $< $@
 
 www/id/%.json: .build/%.nt www/context.json | www node_modules
 	@echo Serializing to $@

@@ -38,17 +38,23 @@ function derive (statements) {
         // Generate a owl:sameAs link with the fully-qualified licensedb identifier.
         if (s.property.nominalValue == 'https://licensedb.org/ns#id')
         {
-            output.push ({
-                'subject': clone (s.subject),
-                'property': {
-                    'nominalValue': 'http://www.w3.org/2002/07/owl#sameAs',
-                    'interfaceName': 'IRI'
-                },
-                'object': {
-                    'nominalValue': 'https://licensedb.org/id/' + s.object.nominalValue,
-                    'interfaceName': 'IRI'
-                }
-            });
+            sameas_obj = 'https://licensedb.org/id/' + s.object.nominalValue;
+
+            /* Don't output if subject and object are identical. */
+            if (s.subject.nominalValue != sameas_obj)
+            {
+                output.push ({
+                    'subject': clone (s.subject),
+                    'property': {
+                        'nominalValue': 'http://www.w3.org/2002/07/owl#sameAs',
+                        'interfaceName': 'IRI'
+                    },
+                    'object': {
+                        'nominalValue': sameas_obj,
+                        'interfaceName': 'IRI'
+                    }
+                });
+            }
         }
     });
 
@@ -89,35 +95,13 @@ function main (all) {
 
         _(derive (statements)).map (write_statement);
     });
-
-
-    // var x = fs.readSync(process.stdin.fd);
-
-    // console.log();
-    // console.log(fs.readFileSync('/dev/stdin').toString());
-
-    // new Lazy(process.stdin).lines.forEach(function(line) {
-
-    //     var statements = [];
-    //     statements = statements.concat (jsonld.parseNQuads (line.toString ()))
-
-    //     if (all) {
-    //         _(statements).map (function (s) { process.stdout.write (s); });
-    //     }
-
-    //     _.chain(derive (statements)).map (jsonld.toNQuad).map (function (val) {
-    //         process.stdout.write (val);
-    //     });
-    // });
-
-    // process.stdin.resume();
 };
 
 function usage () {
     console.log ("derived.js - derive new statements for the License Database.");
     console.log ("copyright 2012  Kuno Woudt");
     console.log ("");
-    console.log ("usage:  derived.js [--all]");
+    console.log ("usage:  derive.js [--all]");
 };
 
 
