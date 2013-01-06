@@ -22,6 +22,8 @@ var fs = require ('fs');
 var url = require ('url');
 var Negotiator = require ('negotiator');
 
+_.mixin(require('underscore.string').exports());
+
 var _types = _([
     [ "text/html",           "html"   ],
     [ "application/rdf+xml", "rdf"    ],
@@ -35,8 +37,7 @@ var typemap = _types.reduce (function (memo, val) {
 }, {});
 
 var available_types = _types.map (function (val) { return val[0]; });
-
-var base_url = process.argv[2] ? process.argv[2] : "";
+var base_location = {};
 
 function error404 (response)
 {
@@ -44,8 +45,11 @@ function error404 (response)
     response.end('Not Found\n');
 }
 
-exports.content = function (request, response)
-{
+exports.init = function (base_url) {
+    base_location = url.parse (base_url);
+};
+
+exports.content = function (request, response) {
     var negotiator = new Negotiator(request);
     var content_type = negotiator.preferredMediaType(available_types);
 
@@ -58,7 +62,7 @@ exports.content = function (request, response)
     if (!fs.existsSync('production.www'+location.pathname))
         return error404 (response)
 
-    var location_str = base_url + url.format (location);
+    var location_str = url.format (_(location).defaults (base_location));
 
     response.writeHead(303, {
         'Content-Type': 'text/plain',

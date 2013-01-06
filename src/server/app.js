@@ -18,19 +18,16 @@ permissions and limitations under the License.
 */
 
 var http = require ('http');
-var negotiate = require ('./negotiate');
+var main = require ('./main');
 
-function server (request, response)
-{
-    negotiate.content (request, response);
-};
+var base_url = process.argv[2] ? process.argv[2] : "";
 
-function main (port) {
+function app (port) {
 
     console.log('Server running at http://127.0.0.1:' + port.toString () + '/');
-    http.createServer(server).listen(port);
+    http.createServer(main.server (base_url)).listen(port);
 
 };
 
-main (26553);
+app (26553);
 

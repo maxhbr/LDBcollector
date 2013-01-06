@@ -5,5 +5,5 @@ while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 cd "$DIR/../.."
-exec setuidgid site node src/server/server.js https://licensedb.org
+exec setuidgid site node src/server/app.js https://licensedb.org
 
