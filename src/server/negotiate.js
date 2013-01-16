@@ -1,7 +1,7 @@
 /*
 
 negotiate.js -- this file is part of the licensedb.org server.
-copyright 2013 Kuno Woudt
+copyright 2012,2013 Kuno Woudt
 
 Licensed under the Apache License, Version 2.0 (the "License"); you
 may not use this file except in compliance with the License.  You may
@@ -24,49 +24,55 @@ var Negotiator = require ('negotiator');
 
 _.mixin(require('underscore.string').exports());
 
+var MimeType = function (type, suffix) {
+    return { 'type': type, 'suffix': suffix };
+};
+
 var _types = _([
-    [ "text/html",           "html"   ],
-    [ "application/rdf+xml", "rdf"    ],
-    [ "application/json",    "json"   ],
-    [ "application/ld+json", "jsonld" ]
+    MimeType("text/html", "html"),
+    MimeType("application/rdf+xml", "rdf"),
+    MimeType("application/json", "json"),
+    MimeType("application/ld+json", "jsonld"),
 ]);
 
 var typemap = _types.reduce (function (memo, val) {
-    memo[val[0]] = val[1];
+    memo[val.type] = val.suffix;
     return memo;
 }, {});
 
-var available_types = _types.map (function (val) { return val[0]; });
+var available_types = _types.map (function (val) { return val.type; });
 var base_location = {};
 
-function error404 (response)
-{
-    response.writeHead(404, {'Content-Type': 'text/plain'});
+var error404 = function (response) {
+    response.writeHead (404, { 'Content-Type': 'text/plain' });
     response.end('Not Found\n');
-}
+};
 
 exports.init = function (base_url) {
     base_location = url.parse (base_url);
 };
 
 exports.content = function (request, response) {
-    var negotiator = new Negotiator(request);
-    var content_type = negotiator.preferredMediaType(available_types);
+    var negotiator = new Negotiator (request);
+    var content_type = negotiator.preferredMediaType (available_types);
 
-    if (!content_type)
-        return error404 (response);
+    if (!content_type) {
+        return error404(response);
+    }
 
     var location = url.parse(request.url);
-    location.pathname = location.pathname + '.' + typemap[content_type]
 
-    if (!fs.existsSync('production.www'+location.pathname))
-        return error404 (response)
+    location.pathname = location.pathname + '.' + typemap[content_type];
 
-    var location_str = url.format (_(location).defaults (base_location));
+    if (!fs.existsSync('production.www' + location.pathname)) {
+        return error404(response);
+    }
 
-    response.writeHead(303, {
+    var location_str = url.format(_(location).defaults(base_location));
+
+    response.writeHead (303, {
         'Content-Type': 'text/plain',
-        'Location': location_str,
+        'Location': location_str
     });
     response.end('see: ' + location_str + '\n');
 };

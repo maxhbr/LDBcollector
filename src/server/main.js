@@ -1,6 +1,6 @@
 /*
 
-server.js -- this file is part of the licensedb.org server.
+main.js -- this file is part of the licensedb.org server.
 copyright 2012,2013 Kuno Woudt
 
 Licensed under the Apache License, Version 2.0 (the "License"); you
@@ -20,14 +20,12 @@ permissions and limitations under the License.
 var http = require ('http');
 var negotiate = require ('./negotiate');
 
-exports.server = function (base_url) {
-
-    negotiate.init (base_url);
-
+exports.listener = function(base_url) {
+    negotiate.init(base_url);
     return function (request, response) {
-        negotiate.content (request, response);
-    };
+        negotiate.content(request, response);
+    }
+}
 
-};
-
-exports.http = http.createServer (exports.server ('https://licensedb.org'));
+exports.server = http.createServer(
+    exports.listener('https://licensedb.org'));

@@ -1,6 +1,6 @@
 /*
 
-server.js -- this file is part of the licensedb.org server.
+app.js -- this file is part of the licensedb.org server.
 copyright 2012,2013 Kuno Woudt
 
 Licensed under the Apache License, Version 2.0 (the "License"); you
@@ -22,12 +22,9 @@ var main = require ('./main');
 
 var base_url = process.argv[2] ? process.argv[2] : "";
 
-function app (port) {
+exports.app = function (port, hostname) {
+    console.log ('Server running at http://127.0.0.1:' + port.toString () + '/');
+    http.createServer (main.listener (base_url)).listen (port, hostname);
+}
 
-    console.log('Server running at http://127.0.0.1:' + port.toString () + '/');
-    http.createServer(main.server (base_url)).listen(port);
-
-};
-
-app (26553);
-
+exports.app(26553);

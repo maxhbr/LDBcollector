@@ -17,6 +17,9 @@ all: $(CC_DATA_TARGETS) $(WEB_TARGETS) $(TXT_TARGETS) $(JSON_TARGETS) $(JSONLD_T
 node_modules:
 	npm install
 
+test:
+	npm test
+
 www:
 	mkdir --parents www/id
 	mkdir --parents www/dl
