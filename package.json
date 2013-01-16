@@ -10,7 +10,8 @@
         "underscore.string": "2.3.x"
     },
     "devDependencies": {
-        "expresso": "0.9.x"
+        "mocha": "1.8.x",
+        "supertest": "0.5.x"
     },
     "description": "LicenseDB, the License Database project.",
     "engines": {

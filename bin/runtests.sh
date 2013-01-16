@@ -1,17 +1,17 @@
 #!/bin/bash
 
-EXPRESSO=node_modules/expresso/bin/expresso
+MOCHA=node_modules/mocha/bin/mocha
 
-if [ ! -x $EXPRESSO ]; then
-    EXPRESSO=`which expresso`
+if [ ! -x $MOCHA ]; then
+    MOCHA=`which mocha`
 fi
 
-if [ ! -x $EXPRESSO ]; then
-    echo "Cannot find expresso, please install it with:"
+if [ ! -x $MOCHA ]; then
+    echo "Cannot find mocha, please install it with:"
     echo ""
-    echo "    npm install -g expresso"
+    echo "    npm install -g mocha"
     echo ""
     exit 1
 fi
 
-$EXPRESSO src/server/tests/*js
+$MOCHA --reporter spec src/server/tests/*js

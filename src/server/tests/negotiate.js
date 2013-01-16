@@ -1,6 +1,6 @@
 /*
 
-server.js -- this file is part of the licensedb.org server.
+tests/negotiate.js -- this file is part of the licensedb.org server.
 copyright 2012,2013 Kuno Woudt
 
 Licensed under the Apache License, Version 2.0 (the "License"); you
@@ -19,36 +19,32 @@ permissions and limitations under the License.
 
 var assert = require ('assert');
 var main = require ('../main');
+var request = require ('supertest');
 
-function redirect_test (mimetype, suffix) {
+var redirect_test = function (mimetype, suffix) {
+    describe ('Accept: ' + mimetype, function () {
+        it ('responds with ' + suffix, function (done) {
+            request(main.server)
+                .get('/id/Apache-2')
+                .set('Accept', mimetype)
+                .expect('Location', 'https://licensedb.org/id/Apache-2.' + suffix)
+                .expect(303, done);
+        });
+    });
+};
 
-    var request = {
-        url: 'https://licensedb.org/id/Apache-2',
-        headers: { 'Accept': mimetype }
-    };
+describe('Content Negotiation', function () {
+    describe ('/does/not/exist', function () {
+        it ('responds with 404', function(done) {
+            request(main.server)
+                .get('/does/not/exist')
+                .expect(404, done);
+        });
+    });
 
-    var expected = {
-        status: 303,
-        headers: {
-            'Location': 'https://licensedb.org/id/Apache-2.' + suffix
-        }
-    };
-
-    var message = "Accept " + mimetype + " redirects to " + suffix;
-    assert.response(main.server, request, expected, message);
-}
-
-exports.test_404 = function() {
-    assert.response(main.server,
-                    { url: 'https://licensedb.org/does/not/exist' },
-                    { status: 404 },
-                    "Non-existant url results in 404");
-}
-
-exports.test_redirects = function() {
     redirect_test('*/*', 'html');
     redirect_test('text/html', 'html');
     redirect_test('application/json', 'json');
     redirect_test('application/ld+json', 'jsonld');
     redirect_test('application/rdf+xml', 'rdf');
-}
+});
