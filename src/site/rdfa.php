@@ -159,6 +159,13 @@ $title = get_single_literal_value ("dc:title", $data, $context);
         $(this).addClass ('selected');
         $('div.sidebar').find ('a.' + logo).show ();
       });
+
+      /* If we have javascript, use that to prevent changes to the checkboxes.
+         the "disabled" checkbox is not that suitable to display a state, and
+         cannot be styled. */
+      $('input:disabled').on ('click', function (event) {
+          return false;
+      }).removeAttr ('disabled');
     </script>
 
     <script type="text/javascript">

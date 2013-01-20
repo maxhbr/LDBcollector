@@ -246,7 +246,7 @@ function render_notice_property ($notice, $property)
     $checked = "";
     $bool = "false";
 
-    if ($notice["li:$property"])
+    if ($notice["li:$property"]["@value"])
     {
         $checked = 'checked="checked" ';
         $bool = "true";
@@ -262,7 +262,6 @@ function render_notice_property ($notice, $property)
 
 function render_notice ($notice)
 {
-
     return '<div rel="https://licensedb.org/ns#notice">' .
         '<div class="notice-properties">' .
         render_notice_property ($notice, "canonical") .
