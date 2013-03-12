@@ -11,6 +11,7 @@
    li:libre <http://freedomdefined.org/>;
    li:libre <http://opensource.org/>;
    li:libre <http://debian.org/>;
+   li:libre <http://fsf.org/>;
    spdx:licenseId "MIT";
    li:notice _:notice1.
 
