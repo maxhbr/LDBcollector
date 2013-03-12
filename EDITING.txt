@@ -62,7 +62,7 @@ To add an entry, I follow these guidelines:
   software, and/or open data.
 
   This list should only contain organizations which a community of
-  people consider authorative on this topic.
+  people consider authoritative on this topic.
 
   If the listed organization has also published copyright licenses,
   the dc:creator property of those licenses should match the
