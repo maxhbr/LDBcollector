@@ -21,6 +21,10 @@ for that by running the included bin/bootstrap.sh script.
 For nodejs, several modules are required: 
    mocha, underscore, underscore.string, negotiator, supertest
 
+Build the project using the provided GNUmakefile:
+   make
+
+It will also deploy in production.www, expected by the web server.
 
 Hosting
 =======
@@ -29,6 +33,4 @@ The License Database project website (which includes the database) is
 currently hosted using nginx, with a small node server to do content
 negotiation.  A daemontools service directory is included as
 etc/service/ and the nginx configuration as etc/nginx.conf.
-
-
 
