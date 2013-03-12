@@ -78,7 +78,8 @@ To add an entry, I follow these guidelines:
 
   Reference documents:
 
-  1. http://wiki.debian.org/DFSGLicenses
+  1. http://wiki.debian.org/DFSGLicenses and
+     http://www.debian.org/legal/licenses/
   2. http://www.gnu.org/licenses/license-list.html
   3. http://opensource.org/licenses/alphabetical
   4. Creative Commons has their opinion on their own licenses encoded here:
