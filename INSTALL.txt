@@ -10,13 +10,16 @@ You will need:
     - python 2.7
     - GNU Make.
 
-On Ubuntu 12.04 you will have to install node manually, but the rest can be
-installed with:
+On Ubuntu 12.04 or Debian 7.0 (Wheezy) you will have to install node manually,
+but the rest can be installed with:
 
    sudo apt-get install raptor2-utils php5-cli python2.7 python-virtualenv make
 
 The python scripts need requests and rdflib, you can set up a virtualenv
 for that by running the included bin/bootstrap.sh script.
+
+For nodejs, several modules are required: 
+   mocha, underscore, underscore.string, negotiator, supertest
 
 
 Hosting
