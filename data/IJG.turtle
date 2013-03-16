@@ -7,7 +7,7 @@
    li:id "IJG";
    li:name "JPEG License";
    dc:title "Independent JPEG Group License";
-   cc:legalcode <http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2>;
+   cc:legalcode <https://licensedb.org/id/IJG.txt>;
    li:libre <http://fsf.org/>;
    spdx:licenseId "IJG";
    li:notice _:notice1.
