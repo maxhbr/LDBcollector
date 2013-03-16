@@ -8,7 +8,6 @@
    li:name "CDDL 1.0";
    dc:title "Common Development and Distribution License";
    dc:hasVersion "1.0";
-   li:plaintext <http://opensource.org/licenses/cddl1.txt>;
    cc:legalcode <http://opensource.org/licenses/CDDL-1.0>;
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
