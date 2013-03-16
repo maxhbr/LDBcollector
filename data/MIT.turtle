@@ -14,8 +14,8 @@
    li:libre <http://debian.org/>;
    li:libre <http://fsf.org/>;
    spdx:licenseId "MIT";
-   li:notice _:notice1;
-   owl:sameAs "Expat".
+   dc:isVersionOf <https://licensedb.org/id/Expat>;
+   li:notice _:notice1 .
 
 _:notice1
    li:orlater false;
