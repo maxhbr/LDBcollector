@@ -9,9 +9,8 @@
    dc:title "Common Public License";
    dc:hasVersion "1.0";
    dc:creator <http://www.ibm.com/>;
-   li:plaintext <http://opensource.org/licenses/cpl1.0.txt>;
    cc:legalcode <http://www.ibm.com/developerworks/library/os-cpl.html>;
-   dc:isReplacedBy <https://licensedb.org/id/EPL-1.0>;
+   dc:isReplacedBy <https://licensedb.org/id/EPL-1>;
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
    spdx:licenseId "CPL-1.0";
