@@ -4,17 +4,17 @@
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<http://opensource.org/licenses/MIT> a li:License;
-   li:id "MIT";
-   li:name "MIT License";
-   dc:title "The MIT License";
-   cc:legalcode <http://opensource.org/licenses/MIT>;
+<http://www.jclark.com/xml/copying.txt> a li:License;
+   li:id "Expat";
+   li:name "Expat License";
+   dc:title "The Expat License";
+   cc:legalcode <http://www.jclark.com/xml/copying.txt>;
    li:libre <http://freedomdefined.org/>;
    li:libre <http://opensource.org/>;
    li:libre <http://debian.org/>;
    li:libre <http://fsf.org/>;
    spdx:licenseId "MIT";
-   dc:isVersionOf <https://licensedb.org/id/Expat>;
+   dc:isVersionOf <https://licensedb.org/id/MIT>;
    li:notice _:notice1 .
 
 _:notice1
