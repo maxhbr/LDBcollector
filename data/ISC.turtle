@@ -9,7 +9,7 @@
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
    dc:title "The ISC License";
-   cc:legalcode <http://www.isc.org/software/license>;
+   cc:legalcode <http://www.isc.org/downloads/software-support-policy/isc-license>;
    spdx:licenseId "ISC";
    li:notice _:notice1.
 
