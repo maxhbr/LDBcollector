@@ -8,6 +8,7 @@
    li:name "BSD (repoze)";
    dc:title "BSD-derived (repoze)";
    cc:legalcode <http://repoze.org/LICENSE.txt>;
+   li:libre <http://debian.org/>;
    li:notice _:notice1.
 
 _:notice1
