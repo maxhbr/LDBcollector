@@ -73,7 +73,6 @@ function directGraph (compacted)
 
     if (_(toplevel).size () != 1)
     {
-        // console.log (JSON.stringify (objects, null, 4));
         throw exception("Multiple top-level objects left after directing the graph");
     }
 
@@ -108,4 +107,3 @@ function main (ctx, src, dst) {
 };
 
 main (process.argv[2], process.argv[3], process.argv[4]);
-

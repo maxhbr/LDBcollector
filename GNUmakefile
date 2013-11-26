@@ -67,7 +67,7 @@ www/id/%.txt: upstream/plaintext/%.txt | www
 	@echo Copying plaintext license to $@
 	@cp $< $@
 
-www/id/%.json: .build/%.nt www/context.json | www node_modules
+www/id/%.json: .build/%.nt | www node_modules
 	@echo Serializing to $@
 	@node src/build/publish-json.js www/context.json $< $@
 

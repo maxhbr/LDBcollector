@@ -87,7 +87,13 @@ function main (all) {
 
     read_stdin (function (data) {
 
-        var statements = jsonld.parseNQuads (data);
+        var cc4deed = /4.0\/deed/;
+
+        var statements = _(jsonld.parseNQuads (data)).filter (function (triple) {
+            /* HACK: skip the CC 4.0 deeds as subject, as it confuses
+             * publish-json.js. */
+            return ! cc4deed.test (triple["subject"].nominalValue);
+        });
 
         if (all) {
             _(statements).map (write_statement);
@@ -103,7 +109,6 @@ function usage () {
     console.log ("");
     console.log ("usage:  derive.js [--all]");
 };
-
 
 if (process.argv[2] == "--help")
 {
