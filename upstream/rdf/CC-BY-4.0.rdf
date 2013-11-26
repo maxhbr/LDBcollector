@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:frbr="http://purl.org/vocab/frbr/core#"
+   xmlns:md="http://www.w3.org/ns/md#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
+>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.zh_TW">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.fr">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.es_ES">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.id">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.is">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.de">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.fi">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.pt_BR">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.it">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.ru">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.da">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.es">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.ko">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.pl">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.hr">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.en">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/">
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.zh_TW"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.is"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.pt_BR"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.uk"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.es"/>
+    <dct:creator rdf:resource="http://creativecommons.org/"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.zh_TW"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.id"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.eo"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.ru"/>
+    <dct:title xml:lang="en">Attribution 4.0 International</dct:title>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.it"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.es"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.sv"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <dc:creator rdf:resource="http://creativecommons.org/"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.sv"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.ru"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.id"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.pt"/>
+    <dc:identifier xml:lang="en">CC BY 4.0</dc:identifier>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.it"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.fi"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.ca"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.nl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.de"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.pt"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.fi"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.hr"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.eo"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.es_ES"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.pl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.uk"/>
+    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/jurisdictions.css"/>
+    <dct:identifier xml:lang="en">CC BY 4.0</dct:identifier>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.fr"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.en"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.ca"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.hr"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.nl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/rdf"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/deed3.css"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.pt_BR"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.ko"/>
+    <dc:title xml:lang="en">Attribution 4.0 International</dc:title>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.en"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.pl"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.da"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.de"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.is"/>
+    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/yahooapis/2.6.0/container.css"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.es_ES"/>
+    <md:item rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.da"/>
+    <rdf:type rdf:resource="http://creativecommons.org/ns#License"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.ko"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by/4.0/deed.fr"/>
+    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/deed3-print.css"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/">
+    <dc:title xml:lang="en">Creative Commons</dc:title>
+    <dct:title xml:lang="en">Creative Commons</dct:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.nl">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.sv">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.eo">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.uk">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.pt">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by/4.0/deed.ca">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -27,7 +27,7 @@ $VIRTUALENV "${DATA_HOME}/licensedb/virtualenv"
 
 PIP="${DATA_HOME}/licensedb/virtualenv/bin/pip"
 if [ -x $PIP ]; then
-    $PIP install requests rdflib
+    $PIP install --requirement=requirements.txt
 else
     echo "There was an error installing the virtualenv."
     echo "Could not find pip at $PIP."
