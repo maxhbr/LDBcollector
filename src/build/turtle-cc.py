@@ -24,6 +24,7 @@ from license import activate_virtualenv, License
 
 activate_virtualenv ('licensedb')
 
+import codecs
 import collections
 import re
 import requests
@@ -31,8 +32,17 @@ import rdflib
 import rdflib.term
 
 def parse_rdf (license_, filename):
+    contents = ""
+    with codecs.open (filename, "rb", "utf-8") as f:
+        contents = f.read ()
+
+    # patch some invalid language tags.
+    contents = contents.replace('xml:lang="sr@latin"', 'xml:lang="sr"')
+    # use "zxx no linguistic content, not applicable" for these template strings.
+    contents = contents.replace('xml:lang="i18n"', 'xml:lang="zxx"')
+
     g = rdflib.Graph ()
-    g.load (filename)
+    g.parse (data=contents)
 
     rdf_type = rdflib.term.URIRef ("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
     cc_license = rdflib.term.URIRef ("http://creativecommons.org/ns#License")
@@ -59,12 +69,21 @@ def parse_rdf (license_, filename):
         if p in [dcidentifier1, dcidentifier2]:
             license_.dcidentifier = unicode (o)
 
+    if not license_.replacedBy:
+        for type_ in [ 'CC-BY', 'CC-BY-SA', 'CC-BY-ND',
+                       'CC-BY-NC', 'CC-BY-NC-SA', 'CC-BY-NC-ND' ]:
+            if license_.id.startswith (type_ + '-3'):
+                license_.laterVersion = 'https://licensedb.org/id/' + type_ + '-4.0'
 
     return license_
 
 
 def get_rdf_data (rdf_path):
     for entry in os.listdir (rdf_path):
+        # Skip the 4.0 licenses, we'll deal with those manually.
+        if entry.endswith ('4.0.rdf'):
+            continue
+
         if entry.endswith ('.rdf') and entry.startswith ('CC-'):
             license_ = License (entry.replace ('.rdf', ''))
             yield parse_rdf (license_, join (rdf_path, entry))
@@ -164,7 +183,6 @@ def main ():
                 mapping[rdf.replacedBy].earlierVersion = 'https://licensedb.org/id/' + rdf.id
             except KeyError:
                 print ("WARNING: replacedBy refers to non-existent", rdf.replacedBy)
-
 
     for rdf in mapping.itervalues ():
         write_turtle (spdx, root, rdf)
