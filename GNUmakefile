@@ -67,7 +67,7 @@ www/id/%.txt: upstream/plaintext/%.txt | www
 	@echo Copying plaintext license to $@
 	@cp $< $@
 
-www/id/%.json: .build/%.nt | www node_modules
+www/id/%.json: .build/%.nt www/context.json | www node_modules
 	@echo Serializing to $@
 	@node src/build/publish-json.js www/context.json $< $@
 
@@ -98,6 +98,8 @@ www/jquery.js: upstream/jquery/jquery-1.7.1.min.js | www; @cp $< $@
 
 clean:
 	rm -rf data/CC-*.turtle
+	# FIXME: ugh.. find a better way to do this.
+	git checkout data/CC-BY-4.0.turtle data/CC-BY-NC-4.0.turtle data/CC-BY-NC-ND-4.0.turtle data/CC-BY-NC-SA-4.0.turtle data/CC-BY-ND-4.0.turtle data/CC-BY-SA-4.0.turtle
 	rm -rf .build
 	rm -rf www
 

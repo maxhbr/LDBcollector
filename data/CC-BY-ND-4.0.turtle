@@ -1,0 +1,10 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<http://creativecommons.org/licenses/by-nd/4.0/> a li:License;
+   li:name "CC BY-ND 4.0";
+   li:id "CC-BY-ND-4.0";
+   dc:replaces <https://licensedb.org/id/CC-BY-ND-3.0> ;
+   dc:hasVersion "4.0" ;
+   foaf:logo <http://i.creativecommons.org/l/by-nd/4.0/88x31.png> .
