@@ -144,6 +144,11 @@ function get_single_literal_value ($name, $data, $context)
         return $value["@literal"];
     }
 
+    if (isset ($value["@value"]))
+    {
+        return $value["@value"];
+    }
+
     foreach ($value as $literal)
     {
         if (!is_array ($literal))
@@ -152,8 +157,13 @@ function get_single_literal_value ($name, $data, $context)
         }
     }
 
-    $random = array_shift ($value);
-    return $random["@literal"];
+    $value = array_shift ($value);
+    if (isset ($value["@literal"]))
+    {
+        return $value["@literal"];
+    }
+
+    return $value["@value"];
 }
 
 function render_literal_property ($name, $data, $context)
