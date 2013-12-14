@@ -5,3 +5,8 @@ node_modules/
 /data/CC-*.turtle
 /production.www
 *.pyc
+
+# Development environment
+.project
+.pydevproject
+.settings/*
