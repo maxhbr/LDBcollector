@@ -1,0 +1,12 @@
+@prefix li: <https://licensedb.org/ns#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<http://www.opensource.org/licenses/SimPL-2.0> a li:License;
+   li:id "SimPL-2";
+   li:name "Simple Public License 2.0";
+   dc:title "Simple Public License";
+   li:libre <http://opensource.org/>;
+   dc:hasVersion "2.0";
+   cc:legalcode <http://www.opensource.org/licenses/SimPL-2.0>.
