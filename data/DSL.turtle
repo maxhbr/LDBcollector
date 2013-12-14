@@ -7,4 +7,5 @@
    li:id "DSL";
    li:name "Design Science License";
    dc:title "DSL";
+   li:libre <http://opendefinition.org/>;
    cc:legalcode <https://licensedb.org/id/DSL.txt>.
