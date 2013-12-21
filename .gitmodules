@@ -1,3 +1,3 @@
 [submodule "upstream/creativecommons"]
 	path = upstream/creativecommons
-	url = git://gitorious.org/licensedb/creativecommons-license-rdf.git
+	url = git://github.com/creativecommons/license.rdf.git

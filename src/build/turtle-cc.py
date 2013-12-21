@@ -142,6 +142,7 @@ def write_turtle (spdx, root, rdf):
     if rdf.dcidentifier in [ "by", "by-sa", "publicdomain" ]:
         libre = libre + "   li:libre <http://creativecommons.org/>;\n"
         libre = libre + "   li:libre <http://freedomdefined.org/>;\n"
+        libre = libre + "   li:libre <http://opendefinition.org/>;\n"
         if rdf.hasVersion == "2.0" and not rdf.jurisdiction:
             libre = libre + "   li:libre <http://fsf.org/>;\n"
         if rdf.hasVersion == "3.0" and not rdf.jurisdiction:

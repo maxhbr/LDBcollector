@@ -75,6 +75,7 @@ To add an entry, I follow these guidelines:
   3. Open Source Initiative, http://opensource.org/
   4. Creative Commons, http://creativecommons.org/
   5. Freedom Defined, http://freedomdefined.org/
+  6. Open Knowledge Foundation, http://opendefinition.org/
 
   Reference documents:
 
@@ -86,3 +87,5 @@ To add an entry, I follow these guidelines:
      http://code.creativecommons.org/viewgit/cc.license.git/tree/cc/license/_lib/classes.py#n127
   5. http://freedomdefined.org/Licenses and
      http://freedomdefined.org/index.php?title=Special%3APrefixIndex&prefix=Licenses%2F&namespace=0
+  6. http://opendefinition.org/licenses
+
