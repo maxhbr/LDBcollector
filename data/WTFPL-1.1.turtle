@@ -1,7 +1,6 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://git.savannah.gnu.org/cgit/threadmill.git/plain/COPYING.WTFPL> a li:License;
    li:id "WTFPL-1.1";
@@ -9,5 +8,4 @@
    dc:isReplacedBy <https://licensedb.org/id/WTFPL-2>;
    dc:title "Do What The Fuck You Want To Public License";
    cc:legalcode <http://git.savannah.gnu.org/cgit/threadmill.git/plain/COPYING.WTFPL>;
-   li:plaintext <http://git.savannah.gnu.org/cgit/threadmill.git/plain/COPYING.WTFPL>;
-   spdx:licenseId "ClArtistic".
+   li:plaintext <http://git.savannah.gnu.org/cgit/threadmill.git/plain/COPYING.WTFPL>.
