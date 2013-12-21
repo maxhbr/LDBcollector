@@ -10,6 +10,7 @@
    li:plaintext <http://www.opendatacommons.org/wp-content/uploads/2010/01/odc_by_1.0_public_text.txt>;
    dc:title "Open Data Commons Attribution License";
    dc:creator <http://opendatacommons.org/>;
+   li:libre <http://opendefinition.org/>;
    dc:hasVersion "1.0";
    dc:identifier "ODC-By";
    li:notice _:notice1.

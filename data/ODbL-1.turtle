@@ -10,6 +10,7 @@
    li:plaintext <http://www.opendatacommons.org/wp-content/uploads/2009/06/odbl-10.txt>;
    dc:title "Open Database License";
    dc:creator <http://opendatacommons.org/>;
+   li:libre <http://opendefinition.org/>;
    dc:hasVersion "1.0";
    dc:identifier "ODbL" ;
    li:notice _:notice1.
