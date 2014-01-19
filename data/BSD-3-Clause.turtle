@@ -1,6 +1,7 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://opensource.org/licenses/BSD-3-Clause> a li:License;
@@ -13,7 +14,8 @@
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
    li:libre <http://debian.org/>;
-   li:notice _:notice1.
+   li:notice _:notice1;
+   owl:sameAs <magnet:?xt=urn:btih:c80d50af7d3db9be66a4d0a86db0286e4fd33292&dn=bsd-3-clause.txt>.
 
 _:notice1
    li:orlater false;

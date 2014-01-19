@@ -1,5 +1,6 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
@@ -16,7 +17,8 @@
    dc:hasVersion "2.0";
    cc:legalcode <http://www.apache.org/licenses/LICENSE-2.0>;
    spdx:licenseId "Apache-2.0";
-   li:notice _:notice1.
+   li:notice _:notice1;
+   owl:sameAs <magnet:?xt=urn:btih:8e4f440f4c65981c5bf93c76d35135ba5064d8b7&dn=apache-2.0.txt>.
 
 _:notice1
    li:orlater false;

@@ -15,7 +15,8 @@
    li:libre <http://fsf.org/>;
    spdx:licenseId "MIT";
    dc:isVersionOf <https://licensedb.org/id/MIT>;
-   li:notice _:notice1 .
+   li:notice _:notice1;
+   owl:sameAs <magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt>.
 
 _:notice1
    li:orlater false;

@@ -1,5 +1,6 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://gnu.org/licenses/lgpl-3.0.html> a li:License;
@@ -12,7 +13,8 @@
    li:libre <http://debian.org/>;
    spdx:licenseId "LGPL-3.0";
    spdx:licenseId "LGPL-3.0+";
-   li:notice _:notice1, _:notice2, _:notice3, _:notice4.
+   li:notice _:notice1, _:notice2, _:notice3, _:notice4;
+   owl:sameAs <magnet:?xt=urn:btih:0ef1b8170b3b615170ff270def6427c317705f85&dn=lgpl-3.0.txt>.
 
 _:notice1
    li:orlater true;

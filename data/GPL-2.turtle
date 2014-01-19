@@ -1,5 +1,6 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://gnu.org/licenses/gpl-2.0.html> a li:License;
@@ -19,7 +20,8 @@
    spdx:licenseId "GPL-2.0-with-classpath-exception";
    spdx:licenseId "GPL-2.0-with-font-exception";
    spdx:licenseId "GPL-2.0-with-GCC-exception";
-   li:notice _:notice1, _:notice2, _:notice3, _:notice4.
+   li:notice _:notice1, _:notice2, _:notice3, _:notice4;
+   owl:sameAs <magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&dn=gpl-2.0.txt>.
 
 _:notice1
    li:orlater true;

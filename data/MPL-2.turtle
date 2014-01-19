@@ -1,6 +1,7 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <http://mozilla.org/MPL/2.0/> a li:License;
@@ -17,7 +18,8 @@
    li:libre <http://opensource.org/>;
    spdx:licenseId "MPL-2.0";
    spdx:licenseId "MPL-2.0-no-copyleft-exception";
-   li:notice _:notice1, _:notice2.
+   li:notice _:notice1, _:notice2;
+   owl:sameAs <magnet:?xt=urn:btih:3877d6d54b3accd4bc32f8a48bf32ebc0901502a&dn=mpl-2.0.txt>.
 
 _:notice1
    li:orlater false;
