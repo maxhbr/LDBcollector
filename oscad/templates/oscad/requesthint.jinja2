@@ -1,0 +1,10 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h4 class="panel-title">{{ _('Hint') }}</h4>
+  </div>
+  <div class="panel-body">
+    {%- trans legal_expert=request.oscad_settings.legal_expert(request) -%}
+    The OSLiC and the OSCAd are dealing with prototypic use cases. If you feel, that your specific case can't be specified by this form or is irregularly covered by one of the cases (false positives), please contact {{ legal_expert }}. If you feel that your specific case is irregularly not covered by our taxonomy (false negative), contact us, please!
+    {%- endtrans %}
+  </div>
+</div>

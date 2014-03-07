@@ -1,0 +1,78 @@
+{%- extends 'oscad:templates/oscad/baserequest.jinja2' -%}
+
+{%- block request -%}
+<div class="table-responsive">
+  <form method="POST" action="{{ request.route_path('result') }}">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          {%- for topic, text in [
+                           ('type', _('Type')),
+                           ('state', _('State')),
+                           ('context', _('Context')),
+                           ('recipient', _('Recipient')),
+                           ('form', _('Form')),
+          ] -%}
+          <th>
+            {{ help_link(topic, text) }}
+          </th>
+          {%- endfor -%}
+          <th>OSUC</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for t, s, c, r, f, o in table -%}
+        <tr>
+          {%- for e in [t, s, c, r, f] -%}
+            {%- if e and e[0] -%}
+            <td rowspan="{{ e[1] }}">
+              {{ e[0] }}
+            </td>
+            {%- endif -%}
+          {%- endfor -%}
+          <td>
+            <button class="btn btn-sm osuc-btn" type="submit" name="osuc" value="{{ o }}">
+              <span class="inline hidden-sm hidden-xs">OSUC-</span>{{ o | trim }}
+            </button>
+          </td>
+        </tr>
+        {%- endfor -%}
+
+        <tr class="multicolumn-cell">
+          <td>{{ _('Known licenses') }}</td>
+          <td colspan="5">
+            <ul>
+              {%- for license in licenses -%}
+              <li class="radio">
+                  <label>
+                    <input type="radio" name="license" value="{{ license }}"
+                         {%- if license == default_license
+                         %} checked="checked" {%- endif %} />
+                    {{ license }}
+                  </label>
+                </li>
+                {%- endfor -%}
+              </ul>
+            </td>
+          </tr>
+          <tr class="multicolumn-cell">
+            <td>{{ _('Planned licenses') }}</td>
+            <td colspan="5">
+              <ul>
+              {%- for license in planned_licenses -%}
+              <li class="radio">
+                  <label>
+                    <input type="radio" name="license" value="{{ license }}"
+                           disabled="disabled" />
+                    {{ license }}
+                  </label>
+                </li>
+                {%- endfor -%}
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+{%- endblock -%}

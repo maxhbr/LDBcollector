@@ -1,0 +1,73 @@
+{%- extends 'oscad:templates/oscad/base.jinja2' -%}
+
+{% macro component(name, url, usage, license, licenseurl) %}
+    <tr>
+      <td><a href="{{ url }}">{{ name }}</a></td>
+      <td>{{ usage }}</td>
+      <td><a href="{{ licenseurl }}">{{ license }}</a></td>
+    </tr>
+{% endmacro %}
+
+{% macro section(heading) %}
+  <tr><td colspan="3"><h5>{{ heading }}<h5></td></tr>
+  {{ caller() }}
+{% endmacro %}
+
+{% block content %}
+<h1>{{ _('Components') }}</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>{% trans %}Name{% endtrans %}</th>
+      <th>{% trans %}Usage{% endtrans %}</th>
+      <th>{% trans %}License{% endtrans %}</th>
+    </tr>
+  </thead>
+  <tbody>
+{% call section(_('Dependencies')) %}
+  {{ component('Pyramid', 'http://www.pylonsproject.org/projects/pyramid/about',
+               _('Backend for the Web Application'), 'BSD-derived',
+               'http://www.repoze.org/LICENSE.txt') }}
+  {{ component('Jinja2', 'http://jinja.pocoo.org/',
+               _('Templating for the Web Application'), 'BSD',
+               'https://raw.github.com/mitsuhiko/jinja2/master/LICENSE') }}
+  {{ component('pyScss', 'http://pyscss.readthedocs.org/en/latest/',
+               _('Dynamic creation of CSS Stylesheets'), 'MIT',
+               'https://raw.github.com/Kronuz/pyScss/master/LICENSE') }}
+  {{ component('Babel', 'http://babel.pocoo.org',
+               _('Translation support and workflow'), 'BSD',
+               'http://babel.pocoo.org/docs/license/') }}
+{% endcall %}
+
+{% call section(_('Embedded Components')) %}
+  {{ component('jQuery', 'http://jquery.com/',
+               _('Javascript utilities'), 'MIT',
+               'https://github.com/jquery/jquery/raw/master/MIT-LICENSE.txt') }}
+  {{ component('sass-bootstrap', 'https://github.com/jlong/sass-bootstrap',
+               _('Base CSS Stylesheets'), 'Apache 2',
+               'https://github.com/jlong/sass-bootstrap/raw/0c9ad8f0a09783c18f57e30de499fcf0d0fcff56/LICENSE') }}
+{% endcall %}
+</table>
+</tbody>
+
+<h1>{{ _('Translations') }}</h1>
+  <p>
+    {%- trans -%}
+      Here you can download the Gettext translation files used in this instance of OSCAd. They are not PowerPoint files (even if your browser tells you so). Open them with a dedicated Gettext editor or a generic text editor.
+    {%- endtrans -%}
+  </p>
+<ul>
+  <li>
+    <a href="{{ request.route_path('translation_template') }}">
+      {{ _('Empty template (english)') }}
+    </a>
+  </li>
+  {% for tag, name in langs %}
+    <li>
+      <a href="{{ request.route_path('translation_file', lang=tag) }}">
+        {{ name }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

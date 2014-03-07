@@ -1,0 +1,31 @@
+{%- extends 'oscad:templates/oscad/base.jinja2' -%}
+
+{%- macro help_link(topic, text) -%}
+<a href="{{ request.route_path('help', _anchor=topic) }}" class="help-link">
+  {{ text }}
+  <span class="glyphicon glyphicon-question-sign hidden-xs hidden-sm inline"></span>
+</a>
+{%- endmacro -%}
+
+{%- block content -%}
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+    {%- include 'oscad:templates/oscad/requesthint.jinja2' -%}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+    <p>
+      {%- trans -%}
+      What do I have to do for using or distributing a piece of open source software in accordance to specific open source license &mdash; as a modified or unmodified, embedded or independent application or library, used or distributed in the form of binaries or sources?
+      {%- endtrans -%}
+    </p>
+  </div>
+</div>
+<div class="row">
+  {%- block request -%}{%- endblock -%}
+</div>
+<div class="row">
+  {%- include 'oscad:templates/oscad/disclaimer.jinja2' -%}
+</div>
+{%- endblock -%}

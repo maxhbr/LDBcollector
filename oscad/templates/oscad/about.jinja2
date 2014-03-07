@@ -1,0 +1,123 @@
+{% extends 'oscad:templates/oscad/base.jinja2' %}
+
+{% macro oscad() %}
+<span>
+  <span class="text-primary">O</span>pen
+  <span class="text-primary">S</span>ource
+  <span class="text-primary">C</span>ompliance
+  <span class="text-primary">Ad</span>visor
+</span>
+{% endmacro %}
+
+{% macro oslic() %}
+<a href="http://www.oslic.org/">
+  Open Source License Compendium
+</a>
+{% endmacro %}
+
+{% macro agpl3() %}
+<a href="{{ request.static_path('oscad:static/agpl-3.0.txt') }}">
+  GNU Affero General Public License version 3
+</a>
+{% endmacro %}
+
+
+{% block content %}
+<div class="col-md-offset-2 col-md-8">
+  <h2>{{ _('Version') }}</h2>
+  <p>
+    {%- trans oscad_version=oscad_version -%}
+    This site is running version {{ oscad_version }} of the OSCAd software.
+    {%- endtrans -%}
+  </p>
+
+  <h2>{{ _('License') }}</h2>
+  <p>
+    {%- trans agpl3=agpl3() -%}
+    The OSCAd software is licensed under the {{ agpl3 }}.
+    {%- endtrans -%}
+  </p>
+
+  <h2>{{ _('Development') }}</h2>
+  <p>
+    {%- trans oscad=oscad(), oslic=oslic() -%}
+    The {{ oscad }} is intended to be developed in collaboration with the Open Source Community. The task lists presented by the OSCAd strictly follow the {{ oslic }}.
+    {%- endtrans -%}
+  </p>
+
+  <p>
+    {%- trans -%}
+    This OSLiC was presented on the European Legal and Licensing Workshop 2013 in Amsterdam.  It was very welcomed. But the very benevolent feedback of this meeting also expressed the need to have an interactive version of the OSLiC instead of being thrown back to the slightly unwieldy pdf version. The OSCAd seizes this idea. Initially, the OSCAd was developed by some employees of Deutsche Telekom AG.
+    {%- endtrans -%}
+  </p>
+
+  <p>
+    {%- trans amadeus=Markup('<a href="http://amadeus.com">Amadeus Germany GmbH</a>') -%}
+    This version here is a complete rewrite initiated and sponsored by {{ amadeus }}. The new version is designed to fulfill requirements by Amadeus which the old version could not.
+    {%- endtrans -%}
+  </p>
+
+  <h2>
+    {{ _('Author:') }} Thomas Wei&szlig;schuh
+  </h2>
+
+  <p>
+    {%- trans -%}
+    is currently engaged as a Systems Analyst at 'Amadeus Germany GmbH'. He is a contributor to various Open Source Projects and a member of the Amadeus Open Source initiative.
+    {%- endtrans -%}
+  </p>
+
+  <h2>
+    {{ _('Author:') }} Kristian Schuhmacher
+  </h2>
+
+  <h2>
+    {{ _('Initiator:') }}
+    <a href="http://de.linkedin.com/pub/karsten-reincke/25/465/245">
+      Karsten Reincke
+    </a>
+  </h2>
+  <p>
+    {%- trans -%}
+    is currently engaged as a Senior Expert at 'Deutsche Telekom AG / Products &amp; Innovation' and a leading member of the Telekom Open Source Review Board. Formerly he worked as PMI certified Project Manager, Certified ScrumMaster, Technical Project Leader, IT System Specialist, and Programmer. He is the mentor of the (Telekom) Open Source License Compendium and initiator of the (Telekom) Open Source Compliance Advisor.
+    {%- endtrans -%}
+  </p>
+
+  <h2>
+    {{ _('Contributors') }}
+  </h2>
+  <h3>
+    {{ _('Generously, we got help by') }}
+  </h3>
+
+  <p>
+    <ul>
+      <li>
+        <a href="https://github.com/engelnyst">engelnyst</a>
+      </li>
+    </ul>
+  </p>
+
+  <h3>
+    {{ _('Sponsoring Companies') }}
+  </h3>
+  <div class="company-logos">
+    <figure>
+      <a href="http://www.telekom.com">
+        <img
+              alt="Logo of Deutsche Telekom"
+              src="{{ request.static_url('oscad:static/img/telekom.png') }}" />
+        <figcaption>Deutsche Telekom AG</figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="http://www.amadeus.com">
+        <img
+              alt="Logo of Amadeus IT Group"
+              src="{{ request.static_url('oscad:static/img/amadeus.png') }}" />
+        <figcaption>Amadeus IT Group</figcaption>
+      </a>
+    </figure>
+  </div>
+</div>
+{%- endblock -%}

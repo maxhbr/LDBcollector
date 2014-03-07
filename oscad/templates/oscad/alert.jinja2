@@ -1,0 +1,16 @@
+<nav class="navbar navbar-fixed-top navbar-headerbar headerbar-second">
+  {%- block alert -%}
+  <div class="alert alert-danger">
+    <div class="container text-center">
+      <strong>Warning!</strong>
+      This software is for testing and demonstration purpuses <strong>only</strong>.
+      It is not ready for production and may be removed at any time!
+      You can find a productive version <a href="http://oscad.fodina.de">here</a>
+    </div>
+  </div>
+  {%- endblock -%}
+</nav>
+<nav class="navbar navbar-headerbar headerbar-second">
+  {{ self.alert() }}
+  </div>
+</nav>

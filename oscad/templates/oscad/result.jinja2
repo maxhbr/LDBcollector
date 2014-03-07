@@ -1,0 +1,148 @@
+{% extends 'oscad:templates/oscad/base.jinja2' %}
+
+{% macro oslic_chapter_link(location) -%}
+  <a href="{{ request.oslic_chapter_url(location) }}">{{ location }}</a>
+{%- endmacro %}
+
+{% block content %}
+<div class="page-header">
+  <h1>
+    <span class="text-primary">O</span>pen
+    <span class="text-primary">S</span>ource
+    <span class="text-primary">C</span>ompliance
+    <span class="text-primary">Ad</span>visor
+    {{ _('Results') }}
+  </h1>
+</div>
+<div class="row">
+  <div class="col-md-offset-1 col-md-2 result-answer-label">
+    {{ _('Request:') }}
+  </div>
+  <div class="col-md-8">
+    <p>
+      {# FIXME class=text-primary on placeholders #}
+      {%- filter htmlize -%}
+      {%- trans recipient=recipient, state_article=state_article,
+      state=state, type=type_, form=form, context=context_,
+      context_suffix=context_suffix, license=lsuc.license_info.name
+      -%}
+      Provided I want to {{ recipient }} {{ state_article }} {{ state }} open source {{ type }} in the form of {{ form }} as an {{ context }} {{ context_suffix }}, what do I have to do for acting in accordance to the {{ license }}?
+      {%- endtrans -%}
+      {%- endfilter -%}
+    </p>
+  </div>
+</div>
+<hr />
+<div class="row text-center">
+  {{ _('refers to') }}
+</div>
+<hr />
+<div class="row">
+  <div class="col-md-offset-1 col-md-2 result-answer-label">
+    <p>
+    {{ osuc.name }}:
+    </p>
+  </div>
+  <div class="col-md-8">
+    <p>
+      {{ osuc.description }}
+    </p>
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="col-md-offset-1 col-md-2 result-answer-label">
+    {%- trans lsuc_name=lsuc.name -%}
+    connotes w.r.t. {{ lsuc_name }}:
+    {%- endtrans -%}
+  </div>
+  <div class="col-md-8">
+    <p>{{ lsuc.description }}</p>
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="col-md-offset-1 col-md-2 result-answer-label">
+    <b>{{ _('requires:') }}</b>
+  </div>
+  <div class="col-md-8">
+    <b>{{ lsuc.requirements.req_prefix }} </b>
+    <p>{{ lsuc.requirements.notasks }}</p>
+
+    {%- if lsuc.requirements.mandatory -%}
+    <ul>
+      {%- for req in lsuc.requirements.mandatory -%}
+      <li>
+        <b>{{ _('mandatory:') }}</b>
+        <p>{{ req }}</p>
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+
+    {%- if lsuc.requirements.voluntary -%}
+    <ul>
+      {%- for req in lsuc.requirements.voluntary -%}
+      <li>
+        <b>{{ _('voluntary:') }}</b>
+        <p>{{ req }}</p>
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="col-md-offset-1 col-md-2 result-answer-label">
+    <b>{{ _('forbids:') }}</b>
+  </div>
+  <div class="col-md-8">
+    <p>{{ lsuc.requirements.forbids_prefix }}</p>
+    {%- if lsuc.requirements.forbids_array -%}
+    <ul>
+      {%- for elem in lsuc.requirements.forbids_array -%}
+      <li>{{ elem }}</li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+  </div>
+</div>
+{% if lsuc_extra_info %}
+<hr />
+<div class="row">
+  {{ lsuc_extra_info }}
+</div>
+{% endif %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {%- trans lsuc_license_name=lsuc.license_info.name, osuc_name=osuc.name,
+                  lsuc_oslic_todo=oslic_chapter_link(lsuc.oslic_info.todo),
+                  lsuc_oslic_lsuc=oslic_chapter_link(lsuc.oslic_info.lsuc),
+                  lsuc_oslic_explain=oslic_chapter_link(lsuc.oslic_info.explain),
+                  lsuc_oslic_protection=oslic_chapter_link(lsuc.oslic_info.protection)
+        -%}
+        Background information: For a deeper understanding of the reasons why these tasks are fulfilling the license {{ lsuc_license_name }} in respect to {{ osuc_name }} see OSLiC chapter {{ lsuc_oslic_todo }} especially chapter {{ lsuc_oslic_lsuc }} and chapter {{ lsuc_oslic_explain }}. For further information on the protecting power of the license {{ lsuc_license_name }}, see OSLiC chapter {{ lsuc_oslic_protection }}.
+        {%- endtrans -%}
+        &nbsp;
+        {%- if lsuc.oslic_info.patent -%}
+        {%- trans lsuc_license_name=lsuc.license_info.name,
+                  lsuc_oslic_patent=oslic_chapter_link(lsuc.oslic_info.patent),
+                  oslic_chapter_general_1=oslic_chapter_link('4'),
+                  oslic_chapter_general_2=oslic_chapter_link('5')
+        -%}
+        Concerning the open source use cases in general, see OSLiC chapter {{ oslic_chapter_general_1 }} and {{ oslic_chapter_general_2 }}. Finally, {{ lsuc_license_name }} contains a patent clause; for details see OSLiC chapter {{ lsuc_oslic_patent }}.
+        {%- endtrans -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    {%- include 'oscad:templates/oscad/disclaimer.jinja2' -%}
+  </div>
+</div>
+{% endblock %}

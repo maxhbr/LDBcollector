@@ -1,0 +1,118 @@
+{%- extends 'oscad:templates/oscad/baserequest.jinja2' -%}
+
+{%- macro question(title, id, choices) -%}
+<tr>
+  <td>{{ help_link(id, title) }}</td>
+  <td>
+    {%- filter htmlize -%}
+    {{ caller() }}
+    {%- endfilter -%}
+  </td>
+  <td>
+    {%- for choice in choices -%}
+    <div class="radio">
+      <label>
+        <input type="radio" name="{{ id }}" value="{{ choice[0] }}"
+        {% if choice[1] %}checked{% endif %} />
+        {{ choice[0] }}
+      </label>
+    </div>
+    {%- endfor -%}
+  </td>
+</tr>
+{%- endmacro -%}
+
+{%- block request -%}
+  <form action="{{ request.route_path('result') }}" method="POST">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>{{ _('Focus') }}</th>
+          <th>{{ _('Question') }}</th>
+          <th>{{ _('Answer') }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- call question(_('Type'), 'type', [('snimoli', false), ('proapse', true)]) -%}
+        {%- trans -%}
+        Is the open source software you want to use a library in the broadest sense (an includable code {sni}ppet, a linkable {mo}dule or {li}brary, or a loadable plugin), or is it an autonomous {pro}gram, {ap}plication or {se}rver which can be executed?
+        {%- endtrans -%}
+        {%- endcall -%}
+
+        {%- call question(_('Context'), 'context', [('independent', true), ('embedded', false)]) -%}
+        {%- trans -%}
+        Given you want to use a library in the broadest sense, are you going to use / distribute this open source software as an {independent} unit, or do you plan to integrate it as an {embedded} component into a complexer piece of software?
+        {%- endtrans -%}
+        {%- endcall -%}
+
+        {%- call question(_('State'), 'state', [('unmodified', true), ('modified', false)]) -%}
+        {%- trans -%}
+        Do you want to leave the open source software {unmodified} as you have received it, or are you going to create a {modified} version of it?
+        {%- endtrans -%}
+        {%- endcall -%}
+
+        {%- call question(_('Recipient'), 'recipient', [('4yourself', true), ('2others', false)]) -%}
+        {%- trans -%}
+        Are you going to use the open source software only {for yourself}, or do you plan to (re)distribute it (also) {to other} third parties?
+        {%- endtrans -%}
+        {%- endcall -%}
+
+        {%- call question(_('Form'), 'form', [('binaries', true), ('sources', false)]) -%}
+        {%- trans -%}
+        Given you want to (re)distribute an open source based work [2others], do you focus on distributing the {binaries} or the {sources}?
+        {%- endtrans -%}
+        {%- endcall -%}
+        <tr>
+          <td>{{ _('License') }}</td>
+          <td>
+            {%- trans -%}
+            Under which open source license is the software released you want to use?
+            {%- endtrans -%}
+          </td>
+          <td></td>
+        </tr>
+        <tr class="multicolumn-cell">
+          <td>{{ _('known') }}</td>
+          <td>
+            <ul>
+              {%- for license in licenses -%}
+              <li class="radio">
+                <label>
+                  <input type="radio" name="license"
+                         value="{{ license }}"
+                         {%- if license == default_license
+                         %} checked="checked" {%- endif %}
+                  />
+                  {{ license }}
+                </label>
+              </li>
+              {%- endfor -%}
+            </ul>
+          </td>
+          <td></td>
+        </tr>
+        <tr class="multicolumn-cell">
+          <td>{{ _('planned') }}</td>
+          <td>
+            <ul>
+              {%- for license in planned_licenses -%}
+              <li class="radio">
+                <label>
+                  <input type="radio" name="license" disabled="disabled" />
+                  {{ license }}
+                </label>
+              </li>
+              {%- endfor -%}
+            </ul>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="text-center">
+      <button class="btn btn-primary" type="submit">
+        {{ _('Submit request') }}
+      </button>
+    </div>
+  </form>
+{%- endblock -%}

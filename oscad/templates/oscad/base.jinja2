@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ request.localizer.locale.language }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% block title %}OSCAd{% endblock %}</title>
+    {%- include 'oscad:templates/oscad/css.jinja2' -%}
+    {%- include 'oscad:templates/oscad/favicon.jinja2' -%}
+  </head>
+  <body>
+    {%- include 'oscad:templates/oscad/headerbar.jinja2' ignore missing -%}
+    {%- include 'oscad:templates/oscad/navigation.jinja2' -%}
+
+    {%- if request.session.peek_flash() -%}
+    <div class="container">
+      {%- for message in request.session.pop_flash() -%}
+      <div class="alert alert-info">
+        {{ message }}
+      </div>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+    <div class="container">
+      {%- block content %}{%- endblock -%}
+    </div>
+    {%- include 'oscad:templates/oscad/javascript.jinja2' -%}
+  </body>
+</html>

@@ -1,0 +1,11 @@
+/000-branch-*
+*.pyc
+*.egg-info/
+*.egg
+dist/
+build/
+bin/
+develop-eggs/
+.tox/
+.coverage
+.installed.cfg
