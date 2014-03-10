@@ -20,7 +20,7 @@ msgstr ""
 
 #: oscad/__init__.py:24
 msgid "your legal expert"
-msgstr "votre expert juridique."
+msgstr "votre expert juridique"
 
 #: oscad/subscribers.py:16
 msgid "New Request"
