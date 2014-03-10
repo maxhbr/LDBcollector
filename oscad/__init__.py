@@ -23,7 +23,7 @@ class OscadSettings(object):
 def oscad_default_legal_expert(request):
     return request.translate('your legal expert')
 
-oslic_url = 'http://opensource.telekom.net/oslic/releases/oslic-0.98.1.pdf'
+oslic_url = 'http://opensource.telekom.net/oslic/releases/oslic-0.99.1.pdf'
 
 oscad_default_settings = OscadSettings(legal_expert=oscad_default_legal_expert,
                                        lsuc_extra_info=None,
