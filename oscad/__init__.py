@@ -1,6 +1,7 @@
 from pyramid.config import Configurator
 from pyramid.session import UnencryptedCookieSessionFactoryConfig
 from pyramid.settings import asbool
+from pyramid.threadlocal import get_current_request
 
 import jinja2
 
@@ -15,9 +16,21 @@ __version__ = version.__version__
 class OscadSettings(object):
     def __init__(self, legal_expert=None, lsuc_extra_info=None,
                  oslic_url=None):
-        self.legal_expert = legal_expert
+        self._legal_expert = legal_expert
         self.lsuc_extra_info = lsuc_extra_info
         self.oslic_url = oslic_url
+
+    @property
+    def legal_expert(self):
+        le = self._legal_expert
+        if callable(le):
+            return le(get_current_request())
+        else:
+            return le
+
+    @legal_expert.setter
+    def legal_expert(self, value):
+        self._legal_expert = value
 
 
 def oscad_default_legal_expert(request):
@@ -72,6 +85,7 @@ def oslic_chapter_url(request, location):
 
     # we could also add #nameddest=section1.1.1
     return oslic_url + '#' + level_name + '.' + location
+
 
 
 def main(global_config, **settings):
