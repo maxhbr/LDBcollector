@@ -57,7 +57,7 @@
     {%- endtrans -%}
   </div>
   <div class="col-md-8">
-    <p>{{ lsuc.description }}</p>
+    <p>{{ lsuc.description|safe }}</p>
   </div>
 </div>
 <hr />
@@ -74,7 +74,7 @@
       {%- for req in lsuc.requirements.mandatory -%}
       <li>
         <b>{{ _('mandatory:') }}</b>
-        <p>{{ req }}</p>
+        <p>{{ req|safe }}</p>
       </li>
       {%- endfor -%}
     </ul>
@@ -85,7 +85,7 @@
       {%- for req in lsuc.requirements.voluntary -%}
       <li>
         <b>{{ _('voluntary:') }}</b>
-        <p>{{ req }}</p>
+        <p>{{ req|safe }}</p>
       </li>
       {%- endfor -%}
     </ul>
@@ -102,7 +102,7 @@
     {%- if lsuc.requirements.forbids_array -%}
     <ul>
       {%- for elem in lsuc.requirements.forbids_array -%}
-      <li>{{ elem }}</li>
+      <li>{{ elem|safe }}</li>
       {%- endfor -%}
     </ul>
     {%- endif -%}
