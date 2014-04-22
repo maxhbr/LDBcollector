@@ -120,10 +120,11 @@ class OscadScss(Scss):
 
                     pname, filename = resolve_asset_spec(full_filename)
                     if resource_exists(pname, filename):
-                        resource_string(pname, filename),
+                        content = resource_string(pname,
+                                                  filename).decode('utf-8')
                         return (filename,
                                 os.path.join(relpath, dirname),
-                                resource_string(pname, filename),
+                                content,
                                 seen_paths)
 
         return None, None, None, seen_paths
@@ -207,10 +208,10 @@ class ScssRenderer(object):
         dirname, filename = os.path.split(scss)
         try:
             source_file = SourceFile('split',
-                                    '$icon-font-path: "{0}";\n'
-                                    '@import "{1}"'.format(
-                                        request.static_path('bootstrap/fonts/'),
-                                        filename))
+                                     '$icon-font-path: "{0}";\n'
+                                     '@import "{1}"'.format(
+                                         request.static_path('bootstrap/fonts/'),
+                                         filename))
             source_file.parent_dir = dirname
             css = parser.compile(source_file=source_file)
         except SassError as e:
