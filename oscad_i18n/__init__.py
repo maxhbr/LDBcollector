@@ -1,12 +1,12 @@
 import os.path
 
-from pyramid.i18n import negotiate_locale_name
+from pyramid.i18n import negotiate_locale_name, Translations
 from pyramid.interfaces import (
     ILocalizer,
     ITranslationDirectories,
     )
 from babel.core import Locale
-from babel.support import Translations, Format
+from babel.support import Format
 from zope.interface import Interface
 
 # Parts of the following code are adapted from the Babel project
@@ -29,25 +29,25 @@ class Localizer(object):
 
     def gettext(self, string, **variables):
         if variables:
-            return self._translations.ugettext(string) % variables
-        return self._translations.ugettext(string)
+            return self._translations.gettext(string) % variables
+        return self._translations.gettext(string)
 
     def ngettext(self, singular, plural, num, **variables):
         if variables:
-            return self._translations.ungettext(
+            return self._translations.ngettext(
                 singular, plural, num) % variables
-        return self._translations.ungettext(singular, plural, num)
+        return self._translations.ngettext(singular, plural, num)
 
     def pgettext(self, context, string, **variables):
         if variables:
-            return self._translations.upgettext(context, string) % variables
-        return self._translations.upgettext(context, string)
+            return self._translations.pgettext(context, string) % variables
+        return self._translations.pgettext(context, string)
 
     def npgettext(self, context, singular, plural, num, **variables):
         if variables:
-            return self._translations.unpgettext(
+            return self._translations.npgettext(
                 context, singular, plural, num) % variables
-        return self._translations.unpgettext(context, singular, plural, num)
+        return self._translations.npgettext(context, singular, plural, num)
 
     pluralize = ngettext
     translate = gettext
