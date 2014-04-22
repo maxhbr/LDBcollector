@@ -131,11 +131,13 @@ def main(global_config, **settings):
         config.add_view('export', 'views:export')
         config.add_route('export', 'export')
 
+    load_themes(config, settings)
+
+    config.scan()
+    config.commit()
+
     jenv = config.get_jinja2_environment()
     jenv.filters['htmlize'] = htmlize
     jenv.undefined = jinja2.StrictUndefined
 
-    load_themes(config, settings)
-
-    config.scan()
     return config.make_wsgi_app()
