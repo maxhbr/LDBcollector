@@ -1,4 +1,4 @@
-{%- extends 'oscad:templates/oscad/base.jinja2' -%}
+{%- extends 'base.jinja2' -%}
 
 {%- macro help_link(topic, text) -%}
 <a href="{{ request.route_path('help', _anchor=topic) }}" class="help-link">
@@ -10,7 +10,7 @@
 {%- block content -%}
 <div class="row">
   <div class="col-md-offset-1 col-md-10">
-    {%- include 'oscad:templates/oscad/requesthint.jinja2' -%}
+    {%- include 'requesthint.jinja2' -%}
   </div>
 </div>
 <div class="row">
@@ -26,6 +26,6 @@
   {%- block request -%}{%- endblock -%}
 </div>
 <div class="row">
-  {%- include 'oscad:templates/oscad/disclaimer.jinja2' -%}
+  {%- include 'disclaimer.jinja2' -%}
 </div>
 {%- endblock -%}

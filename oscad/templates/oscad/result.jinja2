@@ -1,4 +1,4 @@
-{% extends 'oscad:templates/oscad/base.jinja2' %}
+{% extends 'base.jinja2' %}
 
 {% macro oslic_chapter_link(location) -%}
   <a href="{{ request.oslic_chapter_url(location) }}">{{ location }}</a>
@@ -142,7 +142,7 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    {%- include 'oscad:templates/oscad/disclaimer.jinja2' -%}
+    {%- include 'disclaimer.jinja2' -%}
   </div>
 </div>
 {% endblock %}
