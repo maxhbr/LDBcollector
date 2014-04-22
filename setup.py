@@ -45,12 +45,14 @@ requires = [
 extras_require = {
     'dev': [
         'pyramid_debugtoolbar',
-        'translate-toolkit',
         'flake8',
     ],
     'serve': [
         'waitress',
     ],
+    'translate': [
+        'translate-toolkit',
+    ]
 }
 
 tests_require = [
