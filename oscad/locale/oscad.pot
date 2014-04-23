@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the oscad project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: oscad 2.0.0\n"
+"Project-Id-Version: oscad 2.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-03-07 11:48+0000\n"
+"POT-Creation-Date: 2014-04-23 12:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,30 +116,39 @@ msgid ""
 "application"
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:27
+#: oscad/templates/oscad/about.jinja2:30
 msgid "Version"
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:29
+#: oscad/templates/oscad/about.jinja2:32
 #, python-format
 msgid "This site is running version %(oscad_version)s of the OSCAd software."
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:34 oscad/templates/oscad/components.jinja2:23
+#: oscad/templates/oscad/about.jinja2:37 oscad/templates/oscad/components.jinja2:23
 #: oscad/templates/oscad/request.jinja2:66
 msgid "License"
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:36
+#: oscad/templates/oscad/about.jinja2:39
 #, python-format
 msgid "The OSCAd software is licensed under the %(agpl3)s."
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:41
+#: oscad/templates/oscad/about.jinja2:45
+msgid "Source Code"
+msgstr ""
+
+#: oscad/templates/oscad/about.jinja2:47
+#, python-format
+msgid "The source code for the OSCAd software is available on %(github)s."
+msgstr ""
+
+#: oscad/templates/oscad/about.jinja2:53
 msgid "Development"
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:43
+#: oscad/templates/oscad/about.jinja2:55
 #, python-format
 msgid ""
 "The %(oscad)s is intended to be developed in collaboration with the Open "
@@ -148,7 +156,7 @@ msgid ""
 "%(oslic)s."
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:49
+#: oscad/templates/oscad/about.jinja2:61
 msgid ""
 "This OSLiC was presented on the European Legal and Licensing Workshop 2013 in"
 " Amsterdam.  It was very welcomed. But the very benevolent feedback of this "
@@ -158,7 +166,7 @@ msgid ""
 "Deutsche Telekom AG."
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:55
+#: oscad/templates/oscad/about.jinja2:67
 #, python-format
 msgid ""
 "This version here is a complete rewrite initiated and sponsored by "
@@ -166,22 +174,22 @@ msgid ""
 "which the old version could not."
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:61 oscad/templates/oscad/about.jinja2:71
+#: oscad/templates/oscad/about.jinja2:73 oscad/templates/oscad/about.jinja2:83
 msgid "Author:"
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:65
+#: oscad/templates/oscad/about.jinja2:77
 msgid ""
 "is currently engaged as a Systems Analyst at 'Amadeus Germany GmbH'. He is a "
 "contributor to various Open Source Projects and a member of the Amadeus Open "
 "Source initiative."
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:75
+#: oscad/templates/oscad/about.jinja2:87
 msgid "Initiator:"
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:81
+#: oscad/templates/oscad/about.jinja2:93
 msgid ""
 "is currently engaged as a Senior Expert at 'Deutsche Telekom AG / Products "
 "&amp; Innovation' and a leading member of the Telekom Open Source Review "
@@ -191,15 +199,15 @@ msgid ""
 "initiator of the (Telekom) Open Source Compliance Advisor."
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:87
+#: oscad/templates/oscad/about.jinja2:99
 msgid "Contributors"
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:90
+#: oscad/templates/oscad/about.jinja2:102
 msgid "Generously, we got help by"
 msgstr ""
 
-#: oscad/templates/oscad/about.jinja2:102
+#: oscad/templates/oscad/about.jinja2:114
 msgid "Sponsoring Companies"
 msgstr ""
 

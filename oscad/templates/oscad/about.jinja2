@@ -21,6 +21,9 @@
 </a>
 {% endmacro %}
 
+{% macro repo_url() -%}
+<a href="http://github.com/AmadeusITGroup/oscad">Github</a>
+{%- endmacro %}
 
 {% block content %}
 <div class="col-md-offset-2 col-md-8">
@@ -37,6 +40,15 @@
     The OSCAd software is licensed under the {{ agpl3 }}.
     {%- endtrans -%}
   </p>
+
+  {% block oscad_source_location %}
+  <h2>{{ _('Source Code') }}</h2>
+  <p>
+    {%- trans github=repo_url() -%}
+    The source code for the OSCAd software is available on {{ github }}.
+    {%- endtrans -%}
+  </p>
+  {% endblock %}
 
   <h2>{{ _('Development') }}</h2>
   <p>
