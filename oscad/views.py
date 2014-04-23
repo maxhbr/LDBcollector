@@ -40,6 +40,8 @@ def translation_texts_for_osuc(request, osuc):
         form = _('sources')
     elif osuc.form == 'binaries':
         form = _('binary files')
+    elif osuc.form == 'any':
+        form = _('sources or binary files')
 
     if osuc.context == 'independent':
         context = _('independent')

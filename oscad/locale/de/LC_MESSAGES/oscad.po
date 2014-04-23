@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: oscad 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-04-23 12:51+0000\n"
+"POT-Creation-Date: 2014-04-23 13:05+0000\n"
 "PO-Revision-Date: 2014-03-13 15:42+0100\n"
 "Last-Translator: Kristian Schuhmacher - Amadeus IT Group "
 "<kristian.schuhmacher@de.amadeus.com>\n"
@@ -86,32 +86,36 @@ msgstr "Quellcode"
 msgid "binary files"
 msgstr "Binärdateien"
 
-#: oscad/views.py:45
+#: oscad/views.py:44
+msgid "sources or binary files"
+msgstr "Quellcode oder Binärdateien"
+
+#: oscad/views.py:47
 msgid "independent"
 msgstr "unabhängige"
 
-#: oscad/views.py:46
+#: oscad/views.py:48
 msgid "piece of software"
 msgstr "Software"
 
-#: oscad/views.py:48
+#: oscad/views.py:50
 msgid "embedded"
 msgstr "eingebettet"
 
-#: oscad/views.py:49
+#: oscad/views.py:51
 msgid "in my own software development"
 msgstr "bei meiner eigenen Softwareentwicklung"
 
-#: oscad/views.py:238
+#: oscad/views.py:240
 #, python-format
 msgid "Missing parameter: %(param)s"
 msgstr "Fehlender Parameter: %(param)s"
 
-#: oscad/views.py:245
+#: oscad/views.py:247
 msgid "The combination of parameters you have entered is invalid"
 msgstr "Die Kombination der eingegebenen Parameter ist ungültig"
 
-#: oscad/views.py:253
+#: oscad/views.py:255
 #, python-format
 msgid ""
 "The license \"%(license)s\" you have entered is not covered by this "
