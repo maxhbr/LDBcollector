@@ -201,6 +201,11 @@ class ScssRenderer(object):
         if ct == response.default_content_type:
             response.content_type = 'text/css'
 
+        css = self.cache.get(request.url)
+
+        if css is not None:
+            return css
+
         asset_path = self.info.settings['scss.asset_path'].split()
         parser = OscadScss(scss_opts=self.options,
                            search_paths=asset_path)
@@ -216,6 +221,8 @@ class ScssRenderer(object):
             css = parser.compile(source_file=source_file)
         except SassError as e:
             raise HTTPNotFound(e)
+
+        self.cache[request.url] = css
         return css
 
 
