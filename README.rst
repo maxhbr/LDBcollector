@@ -22,6 +22,21 @@ in your virtualenv. So be sure to activate the virtualenv or specify the absolut
 path to the binary. For more information about virtualenv take a look at
 http://www.virtualenv.org/
 
+History
+-------
+
+OSCAd is an interactive version of the
+`Open Source License Compendium (OSLiC <https://github.com/dtag-dbu/oslic>`.
+It has been created to allow anyone to make sure they comply with the licenses
+of Open Source components they are using.
+
+This software is the successor to the original OSCAd application written by
+Karsten Reincke from the Deutsche Telekom.
+You can find the original software on https://github.com/dtag-dbu/oscad.
+We thank Mr. Reincke and the Deutsche Telekom for allowing us to be part of a
+great community and for entrusting us with further development of OSCAd.
+The Deutsche Telekom will continue to maintain and develop the OSLiC document.
+
 Installation
 ------------
 
