@@ -20,7 +20,7 @@ OSCAd is tested with
 When the documentation mentions the ``python`` binary it always means the binary
 in your virtualenv. So be sure to activate the virtualenv or specify the absolut
 path to the binary. For more information about virtualenv take a look at
-<http://www.virtualenv.org/>_
+http://www.virtualenv.org/
 
 Installation
 ------------
