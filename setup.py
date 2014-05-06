@@ -87,6 +87,7 @@ setup(name='oscad',
           'oscad_data',
           'oscad_i18n',
           'oscad_theme_basic',
+          'oscad_theme_amadeus',
       ],
       package_data={
           '': [
