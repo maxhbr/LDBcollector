@@ -44,7 +44,7 @@ Installation
 
 .. code-block:: bash
 
-    # apt-get install python-virtualenv python-pip
+    $ sudo apt-get install python-virtualenv python-pip
 
 * Create and activate a new virtualenv
 
@@ -53,8 +53,8 @@ Installation
     $ cd $OSCAD_DIR
     $ virtualenv venv
     $ source venv/bin/activate
+    $ pip install -r dev-requirements.txt
     $ pip install -e .
-    $ pip install waitress
 
 * Start the application with the development configuration
 
