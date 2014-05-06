@@ -9,3 +9,4 @@ develop-eggs/
 .tox/
 .coverage
 .installed.cfg
+venv/
