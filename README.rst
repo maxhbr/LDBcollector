@@ -1,5 +1,5 @@
-OSCAd: Open Source Compliance Advisor
-=====================================
+OSCAd 2.0: Open Source Compliance Advisor
+=========================================
 
 OSCAd is written in the Python programming language and uses the `Pyramid Web
 Framework <http://docs.pylonsproject.org/projects/pyramid/en/latest/index.htmlhttp://docs.pylonsproject.org/projects/pyramid/en/latest/index.html>`_
