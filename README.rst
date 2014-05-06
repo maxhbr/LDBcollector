@@ -26,7 +26,7 @@ History
 -------
 
 OSCAd is an interactive version of the
-`Open Source License Compendium (OSLiC <https://github.com/dtag-dbu/oslic>`.
+`Open Source License Compendium (OSLiC <https://github.com/dtag-dbu/oslic>`_.
 It has been created to allow anyone to make sure they comply with the licenses
 of Open Source components they are using.
 
