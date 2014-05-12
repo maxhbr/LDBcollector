@@ -121,6 +121,7 @@ def main(global_config, **settings):
     config.add_route('request', 'request')
     config.add_route('matrix_request', 'matrix')
     config.add_route('result', 'result')
+    config.add_route('lsuc', 'result/{osuc}/{lsuc}')
     config.add_route('imprint', 'imprint')
     config.add_route('about', 'about')
     config.add_route('help', 'help')

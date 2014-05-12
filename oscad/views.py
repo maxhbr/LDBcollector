@@ -9,7 +9,7 @@ from pkg_resources import resource_stream
 import oscad_data as data
 
 from . import exceptions
-from .models import OSUC
+from .models import OSUC, LSUC
 from .version import __version__ as oscad_version
 
 PLANNED_LICENSES = sorted(['AGPLv3.0', 'CDDLv1.0', 'ZLIB'])
@@ -59,33 +59,6 @@ def translation_texts_for_osuc(request, osuc):
         'context_suffix': context_suffix,
         'recipient': recipient,
     }
-
-
-def results_for_osuc_and_license(request, osuc, license):
-    if osuc is None:
-        raise exceptions.InvalidParameterCombination()
-
-    lsuc = osuc.get_lsuc(license)
-
-    if lsuc is None:
-        raise exceptions.InvalidParameterCombination()
-
-    lsuc_extra_info_hook = request.oscad_settings.lsuc_extra_info
-
-    if lsuc_extra_info_hook:
-        lsuc_extra_info = lsuc_extra_info_hook(request, lsuc, osuc)
-    else:
-        lsuc_extra_info = None
-
-    result = {
-        'osuc': osuc,
-        'lsuc': lsuc,
-        'lsuc_extra_info': lsuc_extra_info,
-    }
-
-    result.update(translation_texts_for_osuc(request, osuc))
-
-    return result
 
 
 def extract_params(request, params):
@@ -138,7 +111,8 @@ def about(request):
     }
 
 
-@view_config(route_name='components', renderer='templates/oscad/components.jinja2')
+@view_config(route_name='components',
+             renderer='templates/oscad/components.jinja2')
 def components(request):
     avail = request.available_locales
 
@@ -158,12 +132,39 @@ def change_language(request):
     if lang is None:
         resp.unset_cookie('_LOCALE_')
     else:
-        resp.set_cookie('_LOCALE_', lang, max_age=timedelta(days=365))  # max_age = year
+        # max_age = year
+        resp.set_cookie('_LOCALE_', lang, max_age=timedelta(days=365))
 
     return resp
 
 
-@view_config(route_name='result', renderer='templates/oscad/result.jinja2')
+@view_config(route_name='lsuc', renderer='templates/oscad/result.jinja2')
+def lsuc(request):
+    lsuc = LSUC.from_name(request.matchdict.get('lsuc'))
+    osuc = OSUC.from_number(request.matchdict.get('osuc'))
+
+    if lsuc is None or osuc is None:
+        return HTTPNotFound()
+
+    lsuc_extra_info_hook = request.oscad_settings.lsuc_extra_info
+
+    if lsuc_extra_info_hook:
+        lsuc_extra_info = lsuc_extra_info_hook(request, lsuc, osuc)
+    else:
+        lsuc_extra_info = None
+
+    result = {
+        'osuc': osuc,
+        'lsuc': lsuc,
+        'lsuc_extra_info': lsuc_extra_info,
+    }
+
+    result.update(translation_texts_for_osuc(request, osuc))
+
+    return result
+
+
+@view_config(route_name='result')
 def result(request):
 
     license, = extract_params(request, ['license'])
@@ -181,7 +182,17 @@ def result(request):
         osuc = OSUC.from_attrs(recipient=recipient, type=type_, state=state,
                                form=form, context=context)
 
-    return results_for_osuc_and_license(request, osuc, license)
+    if osuc is None:
+        raise exceptions.InvalidParameterCombination()
+
+    lsuc = osuc.get_lsuc(license)
+
+    if lsuc is None:
+        raise exceptions.InvalidParameterCombination()
+
+    return HTTPSeeOther(request.route_path('lsuc',
+                                           lsuc=lsuc.mnemonic,
+                                           osuc=osuc.number))
 
 
 @view_config(route_name='matrix_request',

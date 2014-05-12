@@ -142,12 +142,19 @@ class LSUC(object):
     def __json__(self, request):
         return self.__dict__
 
+    @property
+    def mnemonic(self):
+        return self.name
+
     @classmethod
     def from_name(cls, name):
         # why not....
         name = name.replace('PGL', 'PgL')
 
-        store = data.lsuc[name]
+        store = data.lsuc.get(name)
+
+        if store is None:
+            return None
 
         l = store['license']
 
