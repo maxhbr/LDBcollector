@@ -8,139 +8,200 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
 >
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it">
-    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">
-    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk">
-    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES">
-    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl">
-    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv">
-    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW"/>
-    <md:item rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da"/>
-    <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo"/>
-    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/yahooapis/2.6.0/container.css"/>
-    <dc:identifier xml:lang="en">CC BY-NC-SA 4.0</dc:identifier>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"/>
-    <dct:creator rdf:resource="http://creativecommons.org/"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"/>
     <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hu"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt"/>
     <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/deed3-print.css"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv"/>
-    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/rdf"/>
     <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"/>
+    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/yahooapis/2.6.0/container.css"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.el"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"/>
+    <md:item rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <dc:creator rdf:resource="http://creativecommons.org/"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru"/>
+    <dc:identifier xml:lang="en">CC BY-NC-SA 4.0</dc:identifier>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lv"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk"/>
+    <cc:prohibits rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/rdf"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl"/>
+    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/jurisdictions.css"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"/>
+    <dct:creator rdf:resource="http://creativecommons.org/"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+    <dct:title xml:lang="en">Attribution-NonCommercial-ShareAlike 4.0 International</dct:title>
+    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/deed3.css"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
     <dc:title xml:lang="en">Attribution-NonCommercial-ShareAlike 4.0 International</dc:title>
-    <dct:identifier xml:lang="en">CC BY-NC-SA 4.0</dct:identifier>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ms"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lv"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr"/>
+    <rdf:type rdf:resource="http://creativecommons.org/ns#License"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"/>
     <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo"/>
     <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES"/>
-    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/jurisdictions.css"/>
-    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk"/>
-    <rdf:type rdf:resource="http://creativecommons.org/ns#License"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt"/>
-    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
-    <xhv:stylesheet rdf:resource="http://creativecommons.org/includes/deed3.css"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ms"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.el"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv"/>
     <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"/>
-    <dc:creator rdf:resource="http://creativecommons.org/"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is"/>
+    <dct:identifier xml:lang="en">CC BY-NC-SA 4.0</dct:identifier>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl"/>
     <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES"/>
-    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da"/>
-    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"/>
-    <dct:title xml:lang="en">Attribution-NonCommercial-ShareAlike 4.0 International</dct:title>
-    <cc:prohibits rdf:resource="http://creativecommons.org/ns#CommercialUse"/>
+    <frbr:translation rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hu"/>
+    <xhv:alternate rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.el">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.it">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+  <rdf:Description rdf:about="http://creativecommons.org/">
+    <dc:title xml:lang="en">Creative Commons</dc:title>
+    <dct:title xml:lang="en">Creative Commons</dct:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.sv">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.id">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.no">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.lv">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ms">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/">
-    <dct:title xml:lang="en">Creative Commons</dct:title>
-    <dc:title xml:lang="en">Creative Commons</dc:title>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.is">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.da">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.de">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.gl">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hu">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.eo">
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt">
+    <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">
     <frbr:translationOf rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   </rdf:Description>
 </rdf:RDF>
