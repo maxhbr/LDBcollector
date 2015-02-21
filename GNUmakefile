@@ -5,7 +5,7 @@ WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
 
-all: cc publish $(WEB_TARGETS) $(TXT_TARGETS)
+all: $(TXT_TARGETS) cc publish $(WEB_TARGETS)
 
 web: $(WEB_TARGETS)
 txt: $(TXT_TARGETS)
@@ -38,7 +38,7 @@ cc: src/build/turtle-cc.py | upstream
 	mkdir --parents generated
 	@src/build/turtle-cc.py
 
-publish: src/build/publish.py
+publish: src/build/publish.py | txt
 	mkdir --parents generated
 	@src/build/publish.py
 
