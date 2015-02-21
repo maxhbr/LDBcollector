@@ -53,4 +53,4 @@ these licenses and their associated metadata.
 
 If however you are the copyright holder for any of this data and wish
 for it to be removed from this project, please contact
-copyright@licensedb.org .
+kuno@frob.nl .
