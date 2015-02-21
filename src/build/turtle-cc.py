@@ -40,6 +40,7 @@ a = RDF.type
 
 CC = rdflib.Namespace ('http://creativecommons.org/ns#')
 DC = rdflib.Namespace ('http://purl.org/dc/terms/')
+FOAF = rdflib.Namespace ('http://xmlns.com/foaf/0.1/')
 LI = rdflib.Namespace ('https://licensedb.org/ns#')
 OWL = rdflib.Namespace ('http://www.w3.org/2002/07/owl#')
 SPDX = rdflib.Namespace ('http://spdx.org/rdf/terms#')
@@ -55,6 +56,9 @@ def load_namespaces (root, graph):
 
 def short_name (li_id, identifier, version, jurisdiction):
     """ Return a short display name, e.g. "Apache-1". """
+
+    if unicode(version) == '4.0':
+        return unicode(identifier)
 
     # This is a quick hack to get a string identical to the value
     # of dc:identifier set by the license_name macro here:
@@ -86,11 +90,7 @@ def short_name (li_id, identifier, version, jurisdiction):
         j = jurisdiction.replace ("http://creativecommons.org/international/", "")
         jur = " " + j.split ("/")[0].upper ()
 
-    prefix = ''
-    if not id.startswith('CC '):
-        prefix = 'CC '
-
-    return "%s%s%s%s" % (prefix, id, ver, jur)
+    return "CC %s%s%s" % (id, ver, jur)
 
 
 def parse_rdf (root, identifier, filename):
@@ -144,6 +144,12 @@ def enrich (graph, spdx):
         graph.add ((licensedb_url, DC.hasVersion, rdflib.term.Literal ('4.0')))
         graph.add ((upstream_url, DC.hasVersion, rdflib.term.Literal ('4.0')))
 
+        # the 4.0 versions are missing a logo
+        logo = upstream_url.replace('http://creativecommons.org/licenses/',
+                                    'http://i.creativecommons.org/l/') + '88x31.png'
+        graph.add ((licensedb_url, FOAF.logo, rdflib.term.URIRef(logo)))
+
+
     if licensedb_id.endswith('-3.0'):
         # the 3.0 and 4.0 versions don't have isReplacedBy / replaces links
         upstream_ver4 = rdflib.term.URIRef (upstream_url.replace('/3.0/', '/4.0/'))
@@ -164,6 +170,7 @@ def enrich (graph, spdx):
         org_cc = rdflib.term.URIRef('http://creativecommons.org/')
         org_fsf = rdflib.term.URIRef('http://fsf.org/')
         org_debian = rdflib.term.URIRef('http://debian.org/')
+        org_freedomdefined = rdflib.term.URIRef('http://freedomdefined.org/')
 
         # http://code.creativecommons.org/viewgit/cc.license.git/tree/cc/license/_lib/classes.py#n127
         # http://freedomdefined.org/Licenses
@@ -176,10 +183,12 @@ def enrich (graph, spdx):
 
         if unicode(cc_dc_version) == "3.0" and not cc_jurisdiction:
             graph.add((licensedb_url, LI.libre, org_debian))
+            graph.add((licensedb_url, LI.libre, org_freedomdefined))
 
         if unicode(cc_dc_version) == "4.0" and not cc_jurisdiction:
             graph.add((licensedb_url, LI.libre, org_fsf))
             graph.add((licensedb_url, LI.libre, org_debian))
+            graph.add((licensedb_url, LI.libre, org_freedomdefined))
 
     return (licensedb_id, licensedb_url, upstream_url)
 
