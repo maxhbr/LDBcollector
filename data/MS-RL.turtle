@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://www.opensource.org/licenses/MS-RL> a li:License;
+<https://licensedb.org/id/MS-RL> a li:License;
+   owl:sameAs <http://www.opensource.org/licenses/MS-RL>;
    li:id "MS-RL";
    li:name "MS-RL";
    dc:title "Microsoft Reciprocal License (MS-RL)";

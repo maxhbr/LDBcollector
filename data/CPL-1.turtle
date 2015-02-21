@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://www.ibm.com/developerworks/library/os-cpl.html> a li:License;
+<https://licensedb.org/id/CPL-1> a li:License;
+   owl:sameAs <http://www.ibm.com/developerworks/library/os-cpl.html>;
    li:id "CPL-1";
    li:name "CPL 1.0";
    dc:title "Common Public License";
@@ -29,5 +30,5 @@ _:notice1
  *
  * Contributors:
  *    ______________ - initial API and implementation
- *******************************************************************************/ 
+ *******************************************************************************/
 """.

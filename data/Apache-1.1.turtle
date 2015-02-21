@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://www.apache.org/licenses/LICENSE-1.1> a li:License;
+<https://licensedb.org/id/Apache-1.1> a li:License;
+   owl:sameAs <http://www.apache.org/licenses/LICENSE-1.1>;
    li:id "Apache-1.1";
    li:name "Apache 1.1";
    li:plaintext <http://www.apache.org/licenses/LICENSE-1.1.txt>;

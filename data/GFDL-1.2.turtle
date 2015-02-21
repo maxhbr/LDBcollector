@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://gnu.org/licenses/fdl-1.2.html> a li:License;
+<https://licensedb.org/id/GFDL-1.2> a li:License;
+   owl:sameAs <http://gnu.org/licenses/fdl-1.2.html>;
    li:id "GFDL-1.2";
    li:name "GNU FDL 1.2";
    dc:replaces <https://licensedb.org/id/GFDL-1.1>;

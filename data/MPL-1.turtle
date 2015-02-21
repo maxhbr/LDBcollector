@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://mozilla.org/MPL/1.0/> a li:License;
+<https://licensedb.org/id/MPL-1> a li:License;
+   owl:sameAs <http://mozilla.org/MPL/1.0/>;
    li:id "MPL-1";
    li:name "MPL 1.0";
    dc:title "Mozilla Public License";

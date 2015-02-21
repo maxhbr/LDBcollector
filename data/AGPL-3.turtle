@@ -3,7 +3,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://gnu.org/licenses/agpl-3.0.html> a li:License;
+<https://licensedb.org/id/AGPL-3> a li:License;
+   owl:sameAs <http://gnu.org/licenses/agpl-3.0.html>,
+       <magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt>.
    li:id "AGPL-3";
    li:name "GNU AGPLv3";
    li:plaintext <http://gnu.org/licenses/agpl-3.0.txt>;
@@ -12,8 +14,7 @@
    li:libre <http://fsf.org/>;
    li:libre <http://opensource.org/>;
    spdx:licenseId "AGPL-3.0";
-   li:notice _:notice1, _:notice2, _:notice3, _:notice4;
-   owl:sameAs <magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt>.
+   li:notice _:notice1, _:notice2, _:notice3, _:notice4.
 
 _:notice1
    li:orlater true;

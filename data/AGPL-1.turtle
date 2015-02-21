@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://www.affero.org/oagpl.html> a li:License;
+<https://licensedb.org/id/AGPL-1> a li:License;
+   owl:sameAs <http://www.affero.org/oagpl.html>;
    li:id "AGPL-1";
    li:name "AGPLv1";
    dc:isReplacedBy <https://licensedb.org/id/AGPL-2>;

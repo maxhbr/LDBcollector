@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://www.ncftp.com/ncftp/doc/LICENSE.txt> a li:License;
+<https://licensedb.org/id/Clarified-Artistic> a li:License;
+   owl:sameAs <http://www.ncftp.com/ncftp/doc/LICENSE.txt>;
    li:id "Clarified-Artistic";
    li:name "Clarified Artistic";
    dc:replaces <https://licensedb.org/id/Artistic>;

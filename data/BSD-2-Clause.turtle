@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://opensource.org/licenses/BSD-2-Clause> a li:License;
+<https://licensedb.org/id/BSD-2-Clause> a li:License;
+   owl:sameAs <http://opensource.org/licenses/BSD-2-Clause>;
    li:id "BSD-2-Clause";
    li:name "BSD (2 clause)";
    dc:title "BSD 2-Clause";

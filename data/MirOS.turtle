@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://mirbsd.de/MirOS-Licence> a li:License;
+<https://licensedb.org/id/MirOS> a li:License;
+   owl:sameAs <http://mirbsd.de/MirOS-Licence>;
    li:id "MirOS";
    li:name "MirOS";
    dc:title "MirOS";

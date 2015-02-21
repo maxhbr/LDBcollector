@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://gnu.org/licenses/lgpl-2.0.html> a li:License;
+<https://licensedb.org/id/LGPL-2> a li:License;
+   owl:sameAs <http://gnu.org/licenses/lgpl-2.0.html>;
    li:id "LGPL-2";
    li:name "GNU LGPLv2";
    li:plaintext <http://gnu.org/licenses/lgpl-2.0.txt>;

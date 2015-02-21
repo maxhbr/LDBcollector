@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://opendatacommons.org/licenses/pddl/1.0/> a li:License;
+<https://licensedb.org/id/PDDL-1> a li:License;
+   owl:sameAs <http://opendatacommons.org/licenses/pddl/1.0/>;
    li:id "PDDL-1";
    li:name "ODC PDDL";
    cc:legalcode <http://opendatacommons.org/licenses/pddl/1.0/>;

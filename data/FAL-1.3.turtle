@@ -8,5 +8,5 @@
    li:name "Free Art License";
    dc:title "FAL 1.3";
    li:libre <http://opendefinition.org/>;
-   cc:legalcode <https://licensedb.org/id/FAL-1.3.txt>;
-   li:plaintext <https://licensedb.org/id/FAL-1.3.txt>.
+   cc:legalcode <https://licensedb.org/id/FAL-1.3.txt>.
+

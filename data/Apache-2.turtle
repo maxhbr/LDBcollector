@@ -4,7 +4,9 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://www.apache.org/licenses/LICENSE-2.0> a li:License;
+<https://licensedb.org/id/Apache-2> a li:License;
+   owl:sameAs <http://www.apache.org/licenses/LICENSE-2.0>,
+       <magnet:?xt=urn:btih:8e4f440f4c65981c5bf93c76d35135ba5064d8b7&dn=apache-2.0.txt>.
    li:id "Apache-2";
    li:name "Apache 2.0";
    li:plaintext <http://www.apache.org/licenses/LICENSE-2.0.txt>;
@@ -17,8 +19,7 @@
    dc:hasVersion "2.0";
    cc:legalcode <http://www.apache.org/licenses/LICENSE-2.0>;
    spdx:licenseId "Apache-2.0";
-   li:notice _:notice1;
-   owl:sameAs <magnet:?xt=urn:btih:8e4f440f4c65981c5bf93c76d35135ba5064d8b7&dn=apache-2.0.txt>.
+   li:notice _:notice1.
 
 _:notice1
    li:orlater false;

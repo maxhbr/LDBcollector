@@ -2,9 +2,10 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 
-<http://git.savannah.gnu.org/cgit/threadmill.git/plain/COPYING.WTFPL> a li:License;
+<https://licensedb.org/id/WTFPL-1.1> a li:License;
    li:id "WTFPL-1.1";
-   li:name "Do What The Fuck You Want To";
+   li:name "Do What The Fuck You Want To Public License";
+   dc:hasVersion "1.1";
    dc:isReplacedBy <https://licensedb.org/id/WTFPL-2>;
    dc:title "Do What The Fuck You Want To Public License";
    cc:legalcode <http://git.savannah.gnu.org/cgit/threadmill.git/plain/COPYING.WTFPL>;

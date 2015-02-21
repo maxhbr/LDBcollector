@@ -4,7 +4,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://opensource.org/licenses/BSD-3-Clause> a li:License;
+<https://licensedb.org/id/BSD-3-Clause> a li:License;
+   owl:sameAs <http://opensource.org/licenses/BSD-3-Clause>;
    li:id "BSD-3-Clause";
    li:name "BSD (3 clause)";
    dc:title "BSD 3-Clause";

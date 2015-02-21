@@ -4,7 +4,8 @@
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<http://opensource.org/licenses/MIT> a li:License;
+<https://licensedb.org/id/MIT> a li:License;
+   owl:sameAs <http://opensource.org/licenses/MIT>;
    li:id "MIT";
    li:name "MIT License";
    dc:title "The MIT License";

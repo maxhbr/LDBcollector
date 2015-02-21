@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://www.opensource.org/licenses/W3C> a li:License;
+<https://licensedb.org/id/W3C> a li:License;
+   owl:sameAs <http://www.opensource.org/licenses/W3C>;
    li:id "W3C";
    li:name "W3C Software License";
    dc:title "W3C Software License";

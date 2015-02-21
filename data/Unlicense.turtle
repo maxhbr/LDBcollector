@@ -3,7 +3,8 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<http://unlicense.org> a li:License;
+<https://licensedb.org/id/Unlicense> a li:License;
+   owl:sameAs <http://unlicense.org>;
    li:id "Unlicense";
    li:name "Unlicense";
    dc:title "Unlicense";
@@ -40,4 +41,4 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
-""". 
+""".

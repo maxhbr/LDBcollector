@@ -4,7 +4,9 @@
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<http://www.jclark.com/xml/copying.txt> a li:License;
+<https://licensedb.org/id/Expat> a li:License;
+   owl:sameAs <http://www.jclark.com/xml/copying.txt>,
+       <magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt>;
    li:id "Expat";
    li:name "Expat License";
    dc:title "The Expat License";
@@ -15,8 +17,7 @@
    li:libre <http://fsf.org/>;
    spdx:licenseId "MIT";
    dc:isVersionOf <https://licensedb.org/id/MIT>;
-   li:notice _:notice1;
-   owl:sameAs <magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt>.
+   li:notice _:notice1.
 
 _:notice1
    li:orlater false;
