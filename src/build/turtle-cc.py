@@ -1,6 +1,7 @@
 #!/usr/bin/python
-
-# Copyright 2012  Kuno Woudt
+# -*- encoding: utf-8 -*-
+#
+# Copyright 2012,2015  Kuno Woudt <kuno@frob.nl>
 
 # All software related to the License Database project is licensed under
 # the Apache License, Version 2.0. See the file Apache-2.0.txt for more
@@ -26,12 +27,73 @@ activate_virtualenv ('licensedb')
 
 import codecs
 import collections
+import json
 import re
 import requests
 import rdflib
 import rdflib.term
 
-def parse_rdf (license_, filename):
+from rdflib.namespace import RDF
+from sre_compile import isstring
+
+a = RDF.type
+
+CC = rdflib.Namespace ('http://creativecommons.org/ns#')
+DC = rdflib.Namespace ('http://purl.org/dc/terms/')
+LI = rdflib.Namespace ('https://licensedb.org/ns#')
+OWL = rdflib.Namespace ('http://www.w3.org/2002/07/owl#')
+SPDX = rdflib.Namespace ('http://spdx.org/rdf/terms#')
+
+def load_namespaces (root, graph):
+    with open (join (root, 'data', 'context.json'), "rb") as f:
+        context = json.loads (f.read ())
+
+        for prefix, url in context["@context"].items ():
+            if isstring (url):
+                graph.namespace_manager.bind (prefix, url)
+
+
+def short_name (li_id, identifier, version, jurisdiction):
+    """ Return a short display name, e.g. "Apache-1". """
+
+    # This is a quick hack to get a string identical to the value
+    # of dc:identifier set by the license_name macro here:
+    # http://code.creativecommons.org/viewgit/cc.engine.git/tree/cc/engine/templates/licenses/standard_deed.html#n19
+
+    id = ""
+    ver = ""
+    jur = ""
+
+    if not identifier:
+        print ("WARNING:", li_id, "does not have a dc:identifier")
+        return None
+
+    if "mark" == identifier:
+        return "Public Domain"
+
+    if ("devnations" in identifier or "sampling" in identifier):
+        id = (identifier
+            .replace ("nc", "NC")
+            .replace ("devnations", "Devnations")
+            .replace ("sampling", "Sampling"))
+    else:
+        id = identifier.upper ()
+
+    if version:
+        ver = " " + version
+
+    if jurisdiction:
+        j = jurisdiction.replace ("http://creativecommons.org/international/", "")
+        jur = " " + j.split ("/")[0].upper ()
+
+    prefix = ''
+    if not id.startswith('CC '):
+        prefix = 'CC '
+
+    return "%s%s%s%s" % (prefix, id, ver, jur)
+
+
+def parse_rdf (root, identifier, filename):
     contents = ""
     with codecs.open (filename, "rb", "utf-8") as f:
         contents = f.read ()
@@ -42,122 +104,121 @@ def parse_rdf (license_, filename):
     contents = contents.replace('xml:lang="i18n"', 'xml:lang="zxx"')
 
     g = rdflib.Graph ()
+    load_namespaces (root, g)
     g.parse (data=contents)
 
-    rdf_type = rdflib.term.URIRef ("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
-    cc_license = rdflib.term.URIRef ("http://creativecommons.org/ns#License")
-    replaced_by = rdflib.term.URIRef ("http://purl.org/dc/terms/isReplacedBy")
-    jurisdiction = rdflib.term.URIRef ("http://creativecommons.org/ns#jurisdiction")
-    hasVersion1 = rdflib.term.URIRef ("http://purl.org/dc/terms/hasVersion")
-    hasVersion2 = rdflib.term.URIRef ("http://purl.org/dc/elements/1.1/hasVersion")
-    dcidentifier1 = rdflib.term.URIRef ("http://purl.org/dc/terms/identifier")
-    dcidentifier2 = rdflib.term.URIRef ("http://purl.org/dc/elements/1.1/identifier")
+    url = rdflib.term.URIRef('https://licensedb.org/id/' + identifier)
+    id = rdflib.term.Literal(identifier)
+    g.add((url, LI.id, id));
 
-    for s, p, o in g:
-        if p == rdf_type and o == cc_license:
-            license_.uri = unicode (s)
-
-        if p == replaced_by:
-            license_.replacedBy = unicode (o)
-
-        if p in [hasVersion1, hasVersion2]:
-            license_.hasVersion = unicode (o)
-
-        if p == jurisdiction:
-            license_.jurisdiction = unicode (o)
-
-        if p in [dcidentifier1, dcidentifier2]:
-            license_.dcidentifier = unicode (o)
-
-    if not license_.replacedBy:
-        for type_ in [ 'CC-BY', 'CC-BY-SA', 'CC-BY-ND',
-                       'CC-BY-NC', 'CC-BY-NC-SA', 'CC-BY-NC-ND' ]:
-            if license_.id.startswith (type_ + '-3'):
-                license_.laterVersion = 'https://licensedb.org/id/' + type_ + '-4.0'
-
-    return license_
+    return g
 
 
-def get_rdf_data (rdf_path):
-    for entry in os.listdir (rdf_path):
-        # Skip the 4.0 licenses, we'll deal with those manually.
-        if entry.endswith ('4.0.rdf'):
-            continue
+def enrich (graph, spdx):
+    upstream_url = graph.value (None, a, CC.License)
 
+    (licensedb_url, licensedb_id) = graph[:LI.id:].next()
+
+    graph.add ((licensedb_url, OWL.sameAs, upstream_url))
+    graph.add ((upstream_url, OWL.sameAs, licensedb_url))
+
+    for s, p, o in graph:
+        if (p.startswith ("http://purl.org/dc/elements/1.1/")):
+            new_p = rdflib.term.URIRef (p.replace ("http://purl.org/dc/elements/1.1/", "http://purl.org/dc/terms/"))
+            graph.remove ((s, p, o))
+            graph.add ((s, new_p, o))
+
+    for s, p, o in graph:
+        if (s == upstream_url
+            and o != upstream_url
+            and p != OWL.sameAs
+            and p != DC.isReplacedBy
+            and p != DC.replaces):
+            graph.add ((licensedb_url, p, o))
+
+    if licensedb_id in spdx.text:
+        graph.add ((licensedb_url, SPDX.licenseId, licensedb_id))
+
+    if licensedb_id.endswith('-4.0'):
+        # the 4.0 versions are missing dc:hasVersion
+        graph.add ((licensedb_url, DC.hasVersion, rdflib.term.Literal ('4.0')))
+        graph.add ((upstream_url, DC.hasVersion, rdflib.term.Literal ('4.0')))
+
+    if licensedb_id.endswith('-3.0'):
+        # the 3.0 and 4.0 versions don't have isReplacedBy / replaces links
+        upstream_ver4 = rdflib.term.URIRef (upstream_url.replace('/3.0/', '/4.0/'))
+        graph.add ((upstream_url, DC.isReplacedBy, upstream_ver4))
+
+    plaintext(licensedb_id, licensedb_url, upstream_url, graph)
+
+    cc_dc_id =      graph.value (upstream_url, DC.identifier, None)
+    cc_dc_version = graph.value (upstream_url, DC.hasVersion, None)
+    cc_jurisdiction = graph.value (upstream_url, CC.jurisdiction, None)
+
+    name = short_name (licensedb_id, cc_dc_id, cc_dc_version, cc_jurisdiction)
+    if name:
+        graph.add ((licensedb_url, LI.name, rdflib.term.Literal (name)))
+
+    if (unicode(cc_dc_id) in [ "by", "by-sa", "publicdomain" ]
+        or " BY " in cc_dc_id or " BY-SA " in cc_dc_id):
+        org_cc = rdflib.term.URIRef('http://creativecommons.org/')
+        org_fsf = rdflib.term.URIRef('http://fsf.org/')
+        org_debian = rdflib.term.URIRef('http://debian.org/')
+
+        # http://code.creativecommons.org/viewgit/cc.license.git/tree/cc/license/_lib/classes.py#n127
+        # http://freedomdefined.org/Licenses
+        # http://www.gnu.org/licenses/license-list.html#ccby
+        # http://wiki.debian.org/DFSGLicenses#Creative_Commons_Attribution_Share-Alike_.28CC-BY-SA.29_v3.0
+
+        graph.add((licensedb_url, LI.libre, org_cc))
+        if unicode(cc_dc_version) == "2.0" and not cc_jurisdiction:
+            graph.add((licensedb_url, LI.libre, org_fsf))
+
+        if unicode(cc_dc_version) == "3.0" and not cc_jurisdiction:
+            graph.add((licensedb_url, LI.libre, org_debian))
+
+        if unicode(cc_dc_version) == "4.0" and not cc_jurisdiction:
+            graph.add((licensedb_url, LI.libre, org_fsf))
+            graph.add((licensedb_url, LI.libre, org_debian))
+
+    return (licensedb_id, licensedb_url, upstream_url)
+
+
+def get_rdf_data (root, rdf_path):
+    for entry in sorted (os.listdir (rdf_path)):
         if entry.endswith ('.rdf') and entry.startswith ('CC-'):
-            license_ = License (entry.replace ('.rdf', ''))
-            yield parse_rdf (license_, join (rdf_path, entry))
+            identifier = entry.replace ('.rdf', '')
+            yield parse_rdf (root, identifier, join (rdf_path, entry))
 
 
-def has_plaintext(license):
+def plaintext(id, url, ccurl, graph):
+    has_plaintext = [
+        "CC-BY-NC-ND-3.0",
+        "CC-BY-NC-SA-3.0",
+        "CC-BY-NC-3.0",
+        "CC-BY-ND-3.0",
+        "CC-BY-SA-3.0",
+        "CC-BY-3.0",
+        "CC0",
+        "CC-BY-NC-ND-4.0",
+        "CC-BY-NC-SA-4.0",
+        "CC-BY-NC-4.0",
+        "CC-BY-ND-4.0",
+        "CC-BY-SA-4.0",
+        "CC-BY-4.0",
+    ]
 
-    # We know only the unported 3.0 licenses currently have a plaintext
-    # version.  So only try to get plaintext for 3.0 licenses and newer,
-    # and for 3.0 only do so for unported licenses.
-    if license.hasVersion in [ "1.0", "1.3", "2.0", "2.1", "2.5" ]:
-        return False
-    if license.hasVersion in [ "3.0" ] and license.jurisdiction:
-        return False
-
-    ccurl = license.uri
-    txturl = ccurl + 'legalcode.txt'
-    r = requests.head (txturl)
-    if r.status_code == 200:
-        return txturl
-
-    return False
+    if unicode(id) in has_plaintext:
+        graph.add ((url, LI.plaintext, ccurl + 'legalcode.txt'))
+        graph.add ((url, LI.plaintext, url + '.txt'))
 
 
-def write_turtle (spdx, root, rdf):
-    turtle_file = join (root, "data", rdf.id + ".turtle")
-
-    spdxid = ""
-    plaintext = ""
-    earlierVersion = ""
-    laterVersion = ""
-    name = ""
-    libre = ""
-
-    if rdf.id in spdx.text:
-        spdxid = "   spdx:licenseId \"%s\";\n" % (rdf.id)
-
-    txturl = has_plaintext (rdf)
-    if txturl:
-        plaintext = "   li:plaintext <%s>;\n" % (txturl)
-
-    if rdf.earlierVersion:
-        earlierVersion = "   dc:replaces <%s>;\n" % (rdf.earlierVersion)
-
-    if rdf.laterVersion:
-        laterVersion = "   dc:isReplacedBy <%s>;\n" % (rdf.laterVersion)
-
-    shortname = rdf.short_name ()
-    if shortname:
-        name = "   li:name \"%s\";\n" % (shortname)
-
-    # http://code.creativecommons.org/viewgit/cc.license.git/tree/cc/license/_lib/classes.py#n127
-    # http://freedomdefined.org/Licenses
-    # http://www.gnu.org/licenses/license-list.html#ccby
-    # http://wiki.debian.org/DFSGLicenses#Creative_Commons_Attribution_Share-Alike_.28CC-BY-SA.29_v3.0
-    if rdf.dcidentifier in [ "by", "by-sa", "publicdomain" ]:
-        libre = libre + "   li:libre <http://creativecommons.org/>;\n"
-        libre = libre + "   li:libre <http://freedomdefined.org/>;\n"
-        libre = libre + "   li:libre <http://opendefinition.org/>;\n"
-        if rdf.hasVersion == "2.0" and not rdf.jurisdiction:
-            libre = libre + "   li:libre <http://fsf.org/>;\n"
-        if rdf.hasVersion == "3.0" and not rdf.jurisdiction:
-            libre = libre + "   li:libre <http://debian.org/>;\n"
+def write_turtle (id, root, graph):
+    turtle_file = join (root, "generated", id + ".turtle")
 
     with open (turtle_file, "wb") as turtle:
         print ("writing", turtle_file)
-        turtle.write ("""@prefix li: <https://licensedb.org/ns#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix spdx: <http://spdx.org/rdf/terms#> .
-
-<%s> a li:License;
-%s%s%s%s%s%s   li:id "%s".
-""" % (rdf.uri, name, plaintext, libre,
-       earlierVersion, laterVersion, spdxid, rdf.id))
+        turtle.write (graph.serialize(format='turtle'))
 
 
 def main ():
@@ -170,24 +231,31 @@ def main ():
         print ("Could not load", spdx_license_list)
         sys.exit (1)
 
-    mapping = {}
-    earlierVersion = {}
+    graphs = collections.OrderedDict()
+    graphs_by_url = collections.OrderedDict()
+    mapping = collections.OrderedDict()
 
     count = 0
-    for rdf in get_rdf_data (rdf_path):
-        mapping[rdf.uri] = rdf
+    for graph in get_rdf_data (root, rdf_path):
+        identifiers = enrich (graph, spdx)
+        (id, url, ccurl) = identifiers
+        print ("processing", id)
 
-    for rdf in mapping.itervalues ():
-        if rdf.replacedBy:
-            try:
-                rdf.laterVersion = 'https://licensedb.org/id/' + mapping[rdf.replacedBy].id
-                mapping[rdf.replacedBy].earlierVersion = 'https://licensedb.org/id/' + rdf.id
-            except KeyError:
-                print ("WARNING: replacedBy refers to non-existent", rdf.replacedBy)
+        graphs[identifiers] = graph
+        graphs_by_url[url] = graph
+        mapping[ccurl] = url
 
-    for rdf in mapping.itervalues ():
-        write_turtle (spdx, root, rdf)
+    for (identifiers, graph) in graphs.iteritems ():
+        (id, url, ccurl) = identifiers
+        replacedBy = graph.value (ccurl, DC.isReplacedBy, None)
+        if replacedBy in mapping:
+            replacement_url = mapping[replacedBy]
+            graph.add((url, DC.isReplacedBy, replacement_url))
+            graphs_by_url[replacement_url].add ((replacement_url, DC.replaces, url))
 
+    for (identifiers, graph) in graphs.iteritems ():
+        (id, url, ccurl) = identifiers
+        write_turtle (id, root, graph)
 
 if __name__ == '__main__':
     main ()

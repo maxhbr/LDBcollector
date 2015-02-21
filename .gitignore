@@ -1,12 +1,7 @@
-*~
-node_modules/
-/www
-/.build
-/data/CC-*.turtle
-/production.www
 *.pyc
-
-# Development environment
-.project
-.pydevproject
-.settings/*
+*~
+/.build
+/generated/
+/production.www
+/www
+node_modules/

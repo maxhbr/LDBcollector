@@ -1,26 +1,26 @@
 {
-    "author": "Kuno Woudt <kuno@frob.nl>",
-    "dependencies": {
-        "jsonld": "git://github.com/digitalbazaar/jsonld.js.git",
-        "clone": "0.1.x",
-        "lazy": "1.0.x",
-        "negotiator": "0.2.x",
-        "request": "2.12.x",
-        "underscore": "1.4.x",
-        "underscore.string": "2.3.x"
-    },
-    "devDependencies": {
-        "mocha": "1.8.x",
-        "supertest": "0.5.x"
-    },
-    "description": "LicenseDB, the License Database project.",
-    "engines": {
-        "node": ">=0.8"
-    },
-    "scripts": {
-        "test": "bin/runtests.sh"
-    },
-    "license": "Apache-2",
-    "name": "licensedb",
-    "version": "1.0.0"
+  "author": "Kuno Woudt <kuno@frob.nl>",
+  "dependencies": {
+    "clone": "0.1.x",
+    "jsonld": "^0.3.22",
+    "lazy": "1.0.x",
+    "negotiator": "0.2.x",
+    "request": "2.12.x",
+    "underscore": "1.4.x",
+    "underscore.string": "2.3.x"
+  },
+  "devDependencies": {
+    "mocha": "1.8.x",
+    "supertest": "0.5.x"
+  },
+  "description": "LicenseDB, the License Database project.",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "test": "bin/runtests.sh"
+  },
+  "license": "Apache-2",
+  "name": "licensedb",
+  "version": "1.0.0"
 }
