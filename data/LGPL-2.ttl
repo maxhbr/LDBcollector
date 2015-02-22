@@ -1,11 +1,12 @@
 @prefix li: <https://licensedb.org/ns#> .
+@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <https://licensedb.org/id/LGPL-2> a cc:License;
-   owl:sameAs <http://gnu.org/licenses/lgpl-2.0.html>;
+   schema:sameAs <http://gnu.org/licenses/lgpl-2.0.html>;
    li:id "LGPL-2";
    li:name "GNU LGPLv2";
    li:plaintext <http://gnu.org/licenses/lgpl-2.0.txt>;

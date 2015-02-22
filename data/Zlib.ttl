@@ -1,11 +1,12 @@
 @prefix li: <https://licensedb.org/ns#> .
+@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <https://licensedb.org/id/Zlib> a cc:License;
-   owl:sameAs <http://zlib.net/zlib_license.html>;
+   schema:sameAs <http://zlib.net/zlib_license.html>;
    li:id "Zlib";
    li:name "Zlib License";
    dc:title "Zlib License";

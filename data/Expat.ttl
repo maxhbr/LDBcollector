@@ -2,11 +2,12 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://licensedb.org/id/Expat> a cc:License;
-   owl:sameAs <http://www.jclark.com/xml/copying.txt>,
-       <magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt>;
+   schema:sameAs <http://www.jclark.com/xml/copying.txt>;
+   owl:sameAs <magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt>;
    li:id "Expat";
    li:name "Expat License";
    dc:title "The Expat License";

@@ -1,11 +1,12 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <https://licensedb.org/id/CDDL-1> a cc:License;
-   owl:sameAs <http://opensource.org/licenses/CDDL-1.0>;
+   schema:sameAs <http://opensource.org/licenses/CDDL-1.0>;
    li:id "CDDL-1";
    li:name "CDDL 1.0";
    dc:title "Common Development and Distribution License";

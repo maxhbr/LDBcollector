@@ -1,11 +1,12 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <https://licensedb.org/id/CPL-1> a cc:License;
-   owl:sameAs <http://www.ibm.com/developerworks/library/os-cpl.html>;
+   schema:sameAs <http://www.ibm.com/developerworks/library/os-cpl.html>;
    li:id "CPL-1";
    li:name "CPL 1.0";
    dc:title "Common Public License";

@@ -1,11 +1,12 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <https://licensedb.org/id/BSD-3-Clause> a cc:License;
-   owl:sameAs <http://opensource.org/licenses/BSD-3-Clause>;
+   schema:sameAs <http://opensource.org/licenses/BSD-3-Clause>;
    li:id "BSD-3-Clause";
    li:name "BSD (3 clause)";
    dc:title "BSD 3-Clause";

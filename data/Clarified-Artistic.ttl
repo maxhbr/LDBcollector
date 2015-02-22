@@ -1,11 +1,12 @@
 @prefix li: <https://licensedb.org/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
+@prefix schema: <http://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <https://licensedb.org/id/Clarified-Artistic> a cc:License;
-   owl:sameAs <http://www.ncftp.com/ncftp/doc/LICENSE.txt>;
+   schema:sameAs <http://www.ncftp.com/ncftp/doc/LICENSE.txt>;
    li:id "Clarified-Artistic";
    li:name "Clarified Artistic";
    dc:replaces <https://licensedb.org/id/Artistic>;
