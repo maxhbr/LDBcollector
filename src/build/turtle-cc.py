@@ -43,6 +43,7 @@ DC = rdflib.Namespace ('http://purl.org/dc/terms/')
 FOAF = rdflib.Namespace ('http://xmlns.com/foaf/0.1/')
 LI = rdflib.Namespace ('https://licensedb.org/ns#')
 OWL = rdflib.Namespace ('http://www.w3.org/2002/07/owl#')
+SCHEMA = rdflib.Namespace ('http://schema.org/')
 SPDX = rdflib.Namespace ('http://spdx.org/rdf/terms#')
 
 def load_namespaces (root, graph):
@@ -138,6 +139,8 @@ def enrich (graph, spdx):
 
     if licensedb_id in spdx.text:
         graph.add ((licensedb_url, SPDX.licenseId, licensedb_id))
+        spdx_url = rdflib.term.URIRef('http://spdx.org/licenses/' + unicode(licensedb_id))
+        graph.add ((licensedb_url, SCHEMA.sameAs, spdx_url))
 
     if licensedb_id.endswith('-4.0'):
         # the 4.0 versions are missing dc:hasVersion

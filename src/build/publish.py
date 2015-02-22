@@ -43,6 +43,7 @@ DC = rdflib.Namespace ('http://purl.org/dc/terms/')
 FOAF = rdflib.Namespace ('http://xmlns.com/foaf/0.1/')
 LI = rdflib.Namespace ('https://licensedb.org/ns#')
 OWL = rdflib.Namespace ('http://www.w3.org/2002/07/owl#')
+SCHEMA = rdflib.Namespace ('http://schema.org/')
 SPDX = rdflib.Namespace ('http://spdx.org/rdf/terms#')
 
 def load_namespaces (root, graph):
@@ -76,13 +77,13 @@ def process (root, graph):
 
     for identifier in graph[licensedb_url:SPDX.licenseId:]:
 
-        # FIXME: sameAs is currently too strong for these relationships
+        # FIXME: sameAs is perhaps too strong for these relationships
         # because LicenseDB doesn't distinguish between different uses of
         # some licenses (e.g. SPDX distinguishes between GPLv3-only and GPLv3-or-later
         # and GPLv3 with various exceptions)
 
         spdx_url = rdflib.term.URIRef('http://spdx.org/licenses/' + unicode(identifier))
-        graph.add ((licensedb_url, OWL.sameAs, spdx_url))
+        graph.add ((licensedb_url, SCHEMA.sameAs, spdx_url))
 
     plaintext_path = join(root, 'www', 'id', licensedb_id + '.txt')
     if isfile(plaintext_path):
