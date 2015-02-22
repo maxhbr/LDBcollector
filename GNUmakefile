@@ -21,6 +21,9 @@ WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.htm
 all: $(TXT_TARGETS) cc publish $(WEB_TARGETS)
 
 jsonld: $(JSON_TARGETS) $(JSONLD_TARGETS)
+	@echo Serializing to www/ns.jsonld
+	@node_modules/.bin/turtle-to-jsonld data/vocab.ttl > www/ns.jsonld
+
 
 web: $(WEB_TARGETS)
 txt: $(TXT_TARGETS)

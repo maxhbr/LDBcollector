@@ -95,9 +95,23 @@ def process (root, graph):
     return (licensedb_url, licensedb_id)
 
 
+def copy_vocab (root, filename):
+    dst = join (root, 'www', 'ns.ttl')
+    print ("copying   ", filename, "to", dst)
+
+    with codecs.open (filename, "rb", "utf-8") as f:
+        contents = f.read ()
+
+        with codecs.open (dst, "wb", "utf-8") as f2:
+            f2.write (contents)
+
+
 def get_rdf_data (root, rdf_path):
     for entry in sorted (os.listdir (rdf_path)):
-        if entry.endswith ('.ttl'):
+        if entry == 'vocab.ttl':
+            copy_vocab (root, join (rdf_path, entry))
+
+        elif entry.endswith ('.ttl'):
             identifier = entry.replace ('.ttl', '')
             yield parse_rdf (root, identifier, join (rdf_path, entry))
 
