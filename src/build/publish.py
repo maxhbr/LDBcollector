@@ -122,7 +122,7 @@ def plaintext(id, url, ccurl, graph):
 
 
 def write_turtle (id, root, graph):
-    turtle_file = join (root, "generated", id + ".turtle")
+    turtle_file = join (root, "www", "id", id + ".turtle")
 
     with open (turtle_file, "wb") as turtle:
         print ("writing   ", turtle_file)

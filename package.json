@@ -6,6 +6,7 @@
     "lazy": "1.0.x",
     "negotiator": "0.2.x",
     "request": "2.12.x",
+    "turtle-to-jsonld": "warpr/turtle-to-jsonld",
     "underscore": "1.4.x",
     "underscore.string": "2.3.x"
   },

@@ -1,11 +1,15 @@
 
 TXT_TARGETS := $(addprefix www/id/,$(notdir $(wildcard upstream/plaintext/*)))
+JSON_TARGETS = $(patsubst %.turtle,%.json,$(wildcard www/id/*.turtle))
+JSONLD_TARGETS = $(patsubst %.turtle,%.jsonld,$(wildcard www/id/*.turtle))
 
 WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
 
 all: $(TXT_TARGETS) cc publish $(WEB_TARGETS)
+
+jsonld: $(JSON_TARGETS) $(JSONLD_TARGETS)
 
 web: $(WEB_TARGETS)
 txt: $(TXT_TARGETS)
@@ -34,26 +38,16 @@ upstream:
 	src/build/rdf-gnu.sh
 	src/build/rdf-cc.sh
 
-cc: src/build/turtle-cc.py | upstream
-	mkdir --parents generated
+cc: src/build/turtle-cc.py
+	mkdir --parents www/id
 	@src/build/turtle-cc.py
 
 publish: src/build/publish.py | txt
-	mkdir --parents generated
+	mkdir --parents www/id
 	@src/build/publish.py
 
 www/context.json: data/context.json | www
 	@cp $< $@
-
-# .build/%.nt: data/%.turtle | .build
-# 	@echo Serializing to $@
-# 	@rapper --quiet --input turtle --output ntriples $< > $@.tmp
-# 	@if [ -s upstream/rdf/$(basename $(notdir $<)).rdf ]; then \
-# 	    rapper --quiet --input rdfxml --output ntriples upstream/rdf/$(basename $(notdir $<)).rdf \
-# 	    | node src/build/normalize.js --quiet >> $@.tmp; \
-# 	fi
-# 	@node src/build/derive.js --all < $@.tmp > $@
-# 	@rm $@.tmp
 
 # www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 # 	@echo Generating database archive $@
@@ -68,12 +62,12 @@ www/id/%.txt: upstream/plaintext/%.txt | www
 	@echo Copying plaintext license to $@
 	@cp $< $@
 
-# www/id/%.json: .build/%.nt www/context.json | www node_modules
-# 	@echo Serializing to $@
-# 	@node src/build/publish-json.js www/context.json $< $@
+www/id/%.json: www/id/%.turtle www/context.json
+	@echo Serializing to $@
+	@node src/build/publish-json.js www/context.json $< $@
 
-# www/id/%.jsonld: www/id/%.json
-# 	@cp $< $@
+www/id/%.jsonld: www/id/%.json
+	@cp $< $@
 
 # www/id/%.rdf: .build/%.nt www/context.json | www
 # 	@echo Serializing to $@
@@ -98,7 +92,6 @@ www/licensedb.css: src/site/licensedb.css | www; @cp $< $@
 www/jquery.js: upstream/jquery/jquery-1.7.1.min.js | www; @cp $< $@
 
 clean:
-	rm -rf generated/
 	rm -rf .build
 	rm -rf www
 
