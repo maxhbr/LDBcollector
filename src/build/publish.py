@@ -75,6 +75,8 @@ def parse_rdf (root, identifier, filename):
 def process (root, graph):
     (licensedb_url, licensedb_id) = graph[:LI.id:].next()
 
+    graph.add ((licensedb_url, a, LI.License))
+
     for identifier in graph[licensedb_url:SPDX.licenseId:]:
 
         # FIXME: sameAs is perhaps too strong for these relationships

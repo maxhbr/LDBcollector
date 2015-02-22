@@ -122,6 +122,7 @@ def enrich (graph, spdx):
 
     graph.add ((licensedb_url, OWL.sameAs, upstream_url))
     graph.add ((upstream_url, OWL.sameAs, licensedb_url))
+    graph.add ((licensedb_url, a, LI.License))
 
     for s, p, o in graph:
         if (p.startswith ("http://purl.org/dc/elements/1.1/")):
