@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/DbCL-1> a li:License;
+<https://licensedb.org/id/DbCL-1> a cc:License;
    owl:sameAs <http://opendatacommons.org/licenses/dbcl/1.0/>;
    li:id "DbCL-1";
    li:name "ODC DbCL 1.0";

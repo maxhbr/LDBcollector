@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/Artistic> a li:License;
+<https://licensedb.org/id/Artistic> a cc:License;
    owl:sameAs <http://www.perlfoundation.org/artistic_license_1_0>;
    li:id "Artistic";
    li:name "Artistic 1.0";

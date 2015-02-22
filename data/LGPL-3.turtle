@@ -1,9 +1,10 @@
+@prefix cc: <http://creativecommons.org/ns#> .
 @prefix li: <https://licensedb.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/LPGL-3> a li:License;
+<https://licensedb.org/id/LPGL-3> a cc:License;
    owl:sameAs <http://gnu.org/licenses/lgpl-3.0.html>;
    li:id "LGPL-3";
    li:name "GNU LGPLv3";

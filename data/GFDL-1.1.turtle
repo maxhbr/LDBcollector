@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/GFDL-1.1> a li:License;
+<https://licensedb.org/id/GFDL-1.1> a cc:License;
    owl:sameAs <http://gnu.org/licenses/fdl-1.1.html>;
    li:id "GFDL-1.1";
    li:name "GNU FDL 1.1";

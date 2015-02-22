@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/EPL-1> a li:License;
+<https://licensedb.org/id/EPL-1> a cc:License;
    owl:sameAs <http://www.eclipse.org/legal/epl-v10.html>;
    li:id "EPL-1";
    li:name "EPL 1.0";

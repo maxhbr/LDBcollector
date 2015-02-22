@@ -3,7 +3,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/BSD-4-Clause> a li:License;
+<https://licensedb.org/id/BSD-4-Clause> a cc:License;
    li:id "BSD-4-Clause";
    li:name "BSD (4 clause)";
    dc:title "BSD 4-Clause";

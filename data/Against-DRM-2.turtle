@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/Against-DRM-2> a li:License;
+<https://licensedb.org/id/Against-DRM-2> a cc:License;
    owl:sameAs <http://www.opendefinition.org/licenses/against-drm>;
    li:id "Against-DRM-2";
    li:name "Against DRM 2.0";

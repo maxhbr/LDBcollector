@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/MS-RL> a li:License;
+<https://licensedb.org/id/MS-RL> a cc:License;
    owl:sameAs <http://www.opensource.org/licenses/MS-RL>;
    li:id "MS-RL";
    li:name "MS-RL";

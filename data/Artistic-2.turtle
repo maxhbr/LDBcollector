@@ -4,7 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/Artistic-2> a li:License;
+<https://licensedb.org/id/Artistic-2> a cc:License;
    owl:sameAs <http://www.perlfoundation.org/artistic_license_2_0>;
    li:id "Artistic-2";
    li:name "Artistic 2.0";

@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/Zlib> a li:License;
+<https://licensedb.org/id/Zlib> a cc:License;
    owl:sameAs <http://zlib.net/zlib_license.html>;
    li:id "Zlib";
    li:name "Zlib License";

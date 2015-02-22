@@ -4,7 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/ISC> a li:License;
+<https://licensedb.org/id/ISC> a cc:License;
    owl:sameAs <http://www.isc.org/software/license>;
    li:id "ISC";
    li:name "ISC License";

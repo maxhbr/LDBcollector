@@ -3,7 +3,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/IJG> a li:License;
+<https://licensedb.org/id/IJG> a cc:License;
    li:id "IJG";
    li:name "JPEG License";
    dc:title "Independent JPEG Group License";

@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/MirOS> a li:License;
+<https://licensedb.org/id/MirOS> a cc:License;
    owl:sameAs <http://mirbsd.de/MirOS-Licence>;
    li:id "MirOS";
    li:name "MirOS";

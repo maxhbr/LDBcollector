@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/SimPL-2> a li:License;
+<https://licensedb.org/id/SimPL-2> a cc:License;
    owl:sameAs <http://www.opensource.org/licenses/SimPL-2.0>;
    li:id "SimPL-2";
    li:name "Simple Public License 2.0";

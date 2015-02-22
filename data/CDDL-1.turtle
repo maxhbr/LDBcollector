@@ -4,7 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/CDDL-1> a li:License;
+<https://licensedb.org/id/CDDL-1> a cc:License;
    owl:sameAs <http://opensource.org/licenses/CDDL-1.0>;
    li:id "CDDL-1";
    li:name "CDDL 1.0";

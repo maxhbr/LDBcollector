@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/BSD-Repoze> a li:License;
+<https://licensedb.org/id/BSD-Repoze> a cc:License;
    li:id "BSD-Repoze";
    li:name "BSD (repoze)";
    dc:title "BSD-derived (repoze)";

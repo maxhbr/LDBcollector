@@ -4,7 +4,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 
-<https://licensedb.org/id/CPL-1> a li:License;
+<https://licensedb.org/id/CPL-1> a cc:License;
    owl:sameAs <http://www.ibm.com/developerworks/library/os-cpl.html>;
    li:id "CPL-1";
    li:name "CPL 1.0";
