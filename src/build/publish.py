@@ -94,8 +94,8 @@ def process (root, graph):
 
 def get_rdf_data (root, rdf_path):
     for entry in sorted (os.listdir (rdf_path)):
-        if entry.endswith ('.turtle'):
-            identifier = entry.replace ('.turtle', '')
+        if entry.endswith ('.ttl'):
+            identifier = entry.replace ('.ttl', '')
             yield parse_rdf (root, identifier, join (rdf_path, entry))
 
 
@@ -122,7 +122,7 @@ def plaintext(id, url, ccurl, graph):
 
 
 def write_turtle (id, root, graph):
-    turtle_file = join (root, "www", "id", id + ".turtle")
+    turtle_file = join (root, "www", "id", id + ".ttl")
 
     with open (turtle_file, "wb") as turtle:
         print ("writing   ", turtle_file)

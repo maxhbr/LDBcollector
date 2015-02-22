@@ -35,7 +35,7 @@ function main (ctx, src, dst) {
         dst = src.replace (/\.[^.]+$/, '.jsonld');
     }
 
-    var id = path.basename(src, '.turtle');
+    var id = path.basename(src, '.ttl');
     var root = 'https://licensedb.org/id/' + id;
     var data = fs.readFileSync (src).toString ();
     var context = JSON.parse (fs.readFileSync (ctx).toString ());

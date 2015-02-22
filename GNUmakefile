@@ -1,7 +1,18 @@
 
+# CC_RDF_SOURCES := $(wildcard upstream/rdf/CC-*.rdf)
+# CC_DATA_TARGETS := $(addprefix data/,$(notdir $(patsubst %.rdf,%.ttl,$(CC_RDF_SOURCES))))
+
+# SOURCES := $(wildcard data/*.ttl) $(CC_DATA_TARGETS)
+# RDF_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.ttl,%.rdf,$(SOURCES))))
+# RDFA_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.ttl,%.html,$(SOURCES))))
+# JSON_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.ttl,%.json,$(SOURCES))))
+# JSONLD_TARGETS := $(addprefix www/id/,$(notdir $(patsubst %.ttl,%.jsonld,$(SOURCES))))
+
+
+
 TXT_TARGETS := $(addprefix www/id/,$(notdir $(wildcard upstream/plaintext/*)))
-JSON_TARGETS = $(patsubst %.turtle,%.json,$(wildcard www/id/*.turtle))
-JSONLD_TARGETS = $(patsubst %.turtle,%.jsonld,$(wildcard www/id/*.turtle))
+JSON_TARGETS = $(patsubst %.ttl,%.json,$(wildcard www/id/*.ttl))
+JSONLD_TARGETS = $(patsubst %.ttl,%.jsonld,$(wildcard www/id/*.ttl))
 
 WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
@@ -62,7 +73,7 @@ www/id/%.txt: upstream/plaintext/%.txt | www
 	@echo Copying plaintext license to $@
 	@cp $< $@
 
-www/id/%.json: www/id/%.turtle www/context.json
+www/id/%.json: www/id/%.ttl www/context.json
 	@echo Serializing to $@
 	@node src/build/publish-json.js www/context.json $< $@
 
