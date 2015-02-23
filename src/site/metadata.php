@@ -101,16 +101,6 @@ function render_linked_property_entry ($name, $value, $data, $context)
                 $display = array_pop ($parts);
             }
 
-            /* if ($prefix === "owl" && $propname === "sameAs") */
-            /* { */
-            /*     $display = $value; */
-            /* } */
-
-            if ($prefix === "spdx")
-            {
-                $value = "http://spdx.org/licenses/$value";
-            }
-
             if ($prefix === "li" && $propname === "id")
             {
                 $value = "https://licensedb.org/id/$value";
@@ -120,9 +110,50 @@ function render_linked_property_entry ($name, $value, $data, $context)
 
     return "<li>" .
         "<span class=\"prefix\">$prefix:</span>$propname: " .
-        "<a property=\"$propurl$propname\" " .
-        "href=\"$value\">$display</a>$domain</li>\n";
+        "<a href=\"$value\">$display</a>$domain</li>\n";
 }
+
+function get_single_english_literal ($name, $data, $context)
+{
+    if (!isset($data[$name])) {
+        return false;
+    }
+
+    $value = $data[$name];
+    if (!is_array ($value)) {
+        return $value;
+    }
+
+    if (isset ($value["@literal"])) {
+        return $value["@literal"];
+    }
+
+    if (isset ($value["@value"])) {
+        return $value["@value"];
+    }
+
+    foreach ($value as $literal) {
+        if (!is_array ($literal)) {
+            return $literal;
+        }
+    }
+
+    // FIXME: don't just grab whichever one looks good enough, but score them and
+    // return the best match
+
+    foreach ($value as $literal) {
+        if (!isset ($literal["@language"])) {
+            return $literal["@value"];
+        } else if (substr($literal["@language"], 0, 2) == "en") {
+            // just grab the first english value
+            return $literal["@value"];
+        }
+    }
+
+    $value = array_shift ($value);
+    return $value["@value"];
+}
+
 
 function get_single_literal_value ($name, $data, $context)
 {
@@ -134,6 +165,10 @@ function get_single_literal_value ($name, $data, $context)
        The code below deals with all these cases, and picks one
        of the values instead of displaying all.
     */
+
+    if (!isset($data[$name])) {
+        return false;
+    }
 
     $value = $data[$name];
     if (!is_array ($value))
@@ -188,6 +223,24 @@ function add_section (&$sections, $data)
     array_push ($sections, $data);
 }
 
+function plaintext_fallback () {
+
+
+    return "<p class=\"plaintext\">No plain text version available, please see the links in the sidebar" .
+        " for the full license text</p>";
+}
+
+function plaintext ($data)
+{
+    if (!isset($data['li:plaintext'])) {
+        return plaintext_fallback ();
+    }
+
+    $url = is_array($data['li:plaintext']) ? $data['li:plaintext'][0] : $data['li:plaintext'];
+
+    return "<iframe class=\"plaintext\" src=\"{$url}\"></iframe>";
+}
+
 function sidebar ($data, $context, $logos)
 {
     if (!empty ($logos)) {
@@ -239,7 +292,6 @@ function sidebar ($data, $context, $logos)
     add_section ($sections, render_linked_property ("cc:prohibits", $data, $context));
 
     add_section ($sections,
-                 render_linked_property ("owl:sameAs", $data, $context).
                  render_linked_property ("dc:isVersionOf", $data, $context).
                  render_linked_property ("dc:replaces", $data, $context).
                  render_linked_property ("dc:isReplacedBy", $data, $context));

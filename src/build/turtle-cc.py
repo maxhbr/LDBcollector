@@ -47,7 +47,7 @@ SCHEMA = rdflib.Namespace ('http://schema.org/')
 SPDX = rdflib.Namespace ('http://spdx.org/rdf/terms#')
 
 def load_namespaces (root, graph):
-    with open (join (root, 'data', 'context.json'), "rb") as f:
+    with open (join (root, 'data', 'context.jsonld'), "rb") as f:
         context = json.loads (f.read ())
 
         for prefix, url in context["@context"].items ():
