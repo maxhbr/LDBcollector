@@ -126,6 +126,7 @@ def main(global_config, **settings):
     config.add_route('about', 'about')
     config.add_route('help', 'help')
     config.add_route('components', 'components')
+    config.add_route('license', 'license/{license}')
     config.add_route('change_language', 'language/{lang}')
     config.add_route('translation_template', 'translations/oscad.pot')
     config.add_route('translation_file', 'translations/{lang}')

@@ -7,6 +7,13 @@
 </a>
 {%- endmacro -%}
 
+{%- macro license_link(id) -%}
+<a href="{{ request.route_path('license', license=id) }}"
+  title="{{ license_details[id].name }}">
+{{ id }}
+</a>
+{%- endmacro -%}
+
 {%- block content -%}
 <div class="row">
   <div class="col-md-offset-1 col-md-10">

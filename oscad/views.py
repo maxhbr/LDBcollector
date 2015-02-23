@@ -94,6 +94,7 @@ def index(request):
 def request(request):
     return {
         'licenses': data.valid_licenses,
+        'license_details': data.license_details,
         'default_license': DEFAULT_LICENSE,
         'planned_licenses': PLANNED_LICENSES,
     }
@@ -108,6 +109,20 @@ def imprint(request):
 def about(request):
     return {
         'oscad_version': oscad_version,
+    }
+
+
+@view_config(route_name='license', renderer='templates/oscad/license.jinja2')
+def license(request):
+    slug = request.matchdict['license']
+    info = data.license_details[slug]
+    name = info['name']
+    text = info['text']
+
+    return {
+        'slug': slug,
+        'name': name,
+        'text': text,
     }
 
 
@@ -201,6 +216,7 @@ def matrix_request(request):
     return {
         'table': data.license_matrix(),
         'licenses': data.valid_licenses,
+        'license_details': data.license_details,
         'default_license': DEFAULT_LICENSE,
         'planned_licenses': PLANNED_LICENSES,
     }

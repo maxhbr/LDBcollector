@@ -83,7 +83,7 @@
                          {%- if license == default_license
                          %} checked="checked" {%- endif %}
                   />
-                  {{ license }}
+                  {{ license_link(license) }}
                 </label>
               </li>
               {%- endfor -%}
@@ -99,7 +99,7 @@
               <li class="radio">
                 <label>
                   <input type="radio" name="license" disabled="disabled" />
-                  {{ license }}
+                  {{ license_link(license) }}
                 </label>
               </li>
               {%- endfor -%}

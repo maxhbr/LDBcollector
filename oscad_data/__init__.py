@@ -1,5 +1,6 @@
+from pkg_resources import resource_stream, resource_string
+
 import yaml
-from pkg_resources import resource_stream
 
 
 def load_data(name):
@@ -14,6 +15,7 @@ parameters = load_data('parameters')
 licensenames = load_data('licensenames')
 osuc = load_data('osuc')
 lsuc = load_data('lsuc')
+license_details = load_data('license_details')
 
 attrs = [
     ('recipients', 'recipient'),
@@ -32,6 +34,10 @@ for coll, elem in attrs:
 valid_licenses = sorted(licenses.keys())
 
 valid_inputs['license'] = valid_licenses
+
+for id, details in license_details.items():
+    details['text'] = resource_string(
+        __name__, 'data/texts/{}.txt'.format(id)).decode('utf-8')
 
 
 # generate from sources
