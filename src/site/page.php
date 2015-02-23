@@ -1,30 +1,34 @@
-<?php // -*- mode: html -*-
+<?php // -*- mode: web -*-
 
 $lines = file ($argv[1]);
 $wwwroot = $argv[2];
 $title = array_shift ($lines);
 $content = join ("", $lines);
 
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:cc="http://creativecommons.org/ns#"
-      xmlns:spdx="http://spdx.org/rdf/terms#"
-      xmlns:li="https://licensedb.org/ns/#"
-      xml:lang="en-US" lang="en-US">
+// if this is the vocab page, embed the vocabulary.
+if ($argv[1] === "src/site/ns.html") {
+    $ns_jsonld = json_decode (file_get_contents ("www/ns.jsonld"), true);
+    $embedded_vocab = "<script type=\"application/ld+json\">\n"
+        . json_encode($ns_jsonld, JSON_HEX_TAG | JSON_HEX_AMP | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n"
+        . "\n</script>\n";
+} else {
+    $embedded_vocab = "";
+}
 
-  <head profile="http://www.w3.org/1999/xhtml/vocab">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+?><!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
     <title><?=$title ?></title>
     <link rel="stylesheet" href="<?=$wwwroot ?>licensedb.css" type="text/css">
-    <script type="text/javascript" src="../jquery.js"></script>
+    <?php echo $embedded_vocab; ?>
   </head>
 
   <body>
     <div id="header">
-      <a href="http://licensedb.org/" title="home"><img src="https://licensedb.org/licensedb.png" style="margin: 1em;" /></a>
+      <a href="http://licensedb.org/" title="home">
+        <img src="https://licensedb.org/licensedb.png" style="margin: 1em;" />
+      </a>
       <div id="menu">
         <ul>
           <li><a href="https://licensedb.org/">About</a></li>
@@ -40,13 +44,11 @@ $content = join ("", $lines);
 
     <div id="footer">
       <p class="copyright">
-        &copy; 2012 <a href="https://frob.nl">Kuno Woudt</a>, software
-        licensed under <a rel="license"
-        href="http://www.apache.org/licenses/LICENSE-2.0.html" >Apache
+        &copy; 2015 <a href="https://frob.nl">Kuno Woudt</a>, software licensed
+        under <a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache
         2.0</a>, database available under <a rel="license"
-        href="http://creativecommons.org/publicdomain/zero/1.0/"
-        >CC0</a>. See <a href="https://licensedb.org/license">the
-        license page</a> for more details.
+        href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
+        See <a href="https://licensedb.org/license">the license page</a> for more details.
       </p>
     </div>
 

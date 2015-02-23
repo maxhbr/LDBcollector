@@ -230,7 +230,7 @@ def write_turtle (id, root, graph):
     turtle_file = join (root, "www", "id", id + ".ttl")
 
     with open (turtle_file, "wb") as turtle:
-        print ("writing   ", turtle_file)
+        print ("writing    ", turtle_file)
         turtle.write (graph.serialize(format='turtle'))
 
 
@@ -252,7 +252,7 @@ def main ():
     for graph in get_rdf_data (root, rdf_path):
         identifiers = enrich (graph, spdx)
         (id, url, ccurl) = identifiers
-        print ("processing", id)
+        print ("processing ", id)
 
         graphs[identifiers] = graph
         graphs_by_url[url] = graph

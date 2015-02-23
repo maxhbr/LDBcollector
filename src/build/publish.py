@@ -62,7 +62,7 @@ def parse_rdf (root, identifier, filename):
 
     g = rdflib.Graph ()
     load_namespaces (root, g)
-    print ("processing", filename)
+    print ("processing ", filename)
     g.parse (data=contents, format='turtle')
 
     url = rdflib.term.URIRef('https://licensedb.org/id/' + identifier)
@@ -142,7 +142,7 @@ def write_turtle (id, root, graph):
     turtle_file = join (root, "www", "id", id + ".ttl")
 
     with open (turtle_file, "wb") as turtle:
-        print ("writing   ", turtle_file)
+        print ("writing    ", turtle_file)
         turtle.write (graph.serialize(format='turtle'))
 
 

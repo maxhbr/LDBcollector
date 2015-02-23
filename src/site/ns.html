@@ -3,7 +3,7 @@ The License Database vocabulary
       <h1>The License Database vocabulary</h1>
 
       <dt>Last update:</dt>
-      <dd>2012-12-23</dd>
+      <dd>2015-02-22</dd>
       <dt>Editors:</dt>
       <dd><a href="mailto:kuno@frob.nl">Kuno Woudt</a> (<a href="http://frob.nl">frob.nl</a>)</dd>
 
@@ -43,26 +43,24 @@ The License Database vocabulary
 
       <h2>Classes</h2>
 
-      <div id="License" about="#License" typeof="rdfs:Class">
-        <h4 property="rdfs:label"><span class="prefix">li:</span>License</h4>
-        <p property="rdfs:comment">
+      <div id="License">
+        <h4><span class="prefix">li:</span>License</h4>
+        <p>
           A set of requests/permissions to users of a Work, e.g. a
           copyright license, database rights license, trademark license,
           patent grant, etc..
         </p>
-        <span rel="rdfs:subClassOf" resource="http://creativecommons.org/ns#License"></span>
-        <span rel="rdfs:subClassOf" resource="http://spdx.org/rdf/terms#License"></span>
       </div>
 
-      <div id="Notice" about="#Notice" typeof="rdfs:Class">
-        <h4 property="rdfs:label"><span class="prefix">li:</span>Notice</h4>
-        <p property="rdfs:comment">
+      <div id="Notice">
+        <h4><span class="prefix">li:</span>Notice</h4>
+        <p>
           A set of notices used to apply a particular license to a
           work. Typically these notices disclaim warranty and state
           where the full license text can be found.  (If the license
           text is very short this may contain the full license text).
         </p>
-        <p property="rdfs:comment">
+        <p>
           Often the recommended (canonical) notices to use with a
           particular license are a template where an author is
           expected to fill in their details when using it to apply the
@@ -77,68 +75,50 @@ The License Database vocabulary
 
       <h2>License Properties</h2>
 
-      <div id="id" about="#id" typeof="rdf:Property">
+      <div id="id">
         <h4><span class="prefix">li:</span>id</h4>
         <p>
-          The <span rel="rdfs:range"
-          resource="http://www.w3.org/2000/01/rdf-schema#Literal"
-          >identifier</span> assigned to the <a rel="rdfs:domain"
-          href="#License">license</a> by the LicenseDB project.
-          (the intent is to follow the same naming scheme as
-           defined in <a href="http://dep.debian.net/deps/dep5/#license-specification">DEP5</a>)
+          The identifier assigned to the <a href="#License">license</a> by the LicenseDB
+          project. (the intent is to follow the same naming scheme as defined
+          in <a href="http://dep.debian.net/deps/dep5/#license-specification">DEP5</a>)
         </p>
       </div>
 
-      <div id="name" about="#name" typeof="rdf:Property">
+      <div id="name">
         <h4><span class="prefix">li:</span>name</h4>
         <p>
-          A short <span rel="rdfs:range"
-          resource="http://www.w3.org/2000/01/rdf-schema#Literal"
-          >name</span> assigned to the <a rel="rdfs:domain"
-          href="#License">license</a>.  This should be a short name
-          suitable for display in a dropdown menu of a simple license
-          chooser or the copyright notice where there is limited room
-          for such notices.
+          A short name assigned to the <a href="#License">license</a>. This should be a
+          short name suitable for display in a dropdown menu of a simple license chooser or
+          the copyright notice where there is limited room for such notices.
         </p>
         <p>
-          For example, "CC BY-SA 3.0 NL" is the li:name for a creative
-          commons license which has "Attribution-ShareAlike 3.0
-          Netherlands" as dc:title.
+          For example, "CC BY-SA 3.0 NL" is the li:name for a creative commons license which
+          has "Attribution-ShareAlike 3.0 Netherlands" as dc:title.
         </p>
       </div>
 
-      <div id="plaintext" about="#plaintext" typeof="rdf:Property">
+      <div id="plaintext">
         <h4><span class="prefix">li:</span>plaintext</h4>
         <p>
-          A <a rel="rdfs:domain" href="#License">license</a> is
-          available as a plain text <span rel="rdfs:subPropertyOf"
-          resource="http://purl.org/dc/terms/hasFormat"
-          >formatted</span> <span rel="rdfs:range"
-          resource="http://www.w3.org/2000/01/rdf-schema#Resource"
-          >resource</span>. This is usually the preferred format to
-          include in packaged software project.
+          A <a href="#License">license</a> is available as a plain text formatted
+          resource. This is usually the preferred format to include in packaged software
+          project.
         </p>
       </div>
 
-      <div id="libre" about="#libre" typeof="rdf:Property">
+      <div id="libre">
         <h4><span class="prefix">li:</span>libre</h4>
         <p>
-          This property states that a <a rel="rdfs:domain"
-          href="#License">license</a> is suitable for use in free
-          software, open source software, free culture or open
-          data according to a particular <span rel="rdfs:range"
-          resource="http://www.w3.org/2000/01/rdf-schema#Resource"
-          >organization</span>.
+          This property states that a <a href="#License">license</a> is suitable for use in
+          free software, open source software, free culture or open data according to a
+          particular organization.
         </p>
       </div>
 
-      <div id="compatible" about="#compatible" typeof="rdf:Property">
+      <div id="compatible">
         <h4><span class="prefix">li:</span>compatible</h4>
         <p>
-          A <a rel="rdfs:domain"
-          href="#License">License</a> <span property="rdfs:label">is
-          compatible with</span> a <a rel="rdfs:range"
-          href="#License">License</a>.
+          A <a href="#License">License</a> is compatible with a <a href="#License">License</a>.
         </p>
       </div>
 
@@ -146,58 +126,42 @@ The License Database vocabulary
 
       <h2>Notice Properties</h2>
 
-      <div id="text" about="#text" typeof="rdf:Property">
+      <div id="text">
         <h4><span class="prefix">li:</span>text</h4>
         <p>
-          The <span rel="rdfs:range"
-          resource="http://www.w3.org/2000/01/rdf-schema#Literal"
-          >text</span> used to apply a <a rel="rdfs:domain"
-          href="#License">license</a> to a work.
+          The text used to apply a <a href="#License">license</a> to a work.
         </p>
       </div>
 
-      <div id="short" about="#short" typeof="rdf:Property">
+      <div id="short">
         <h4><span class="prefix">li:</span>short</h4>
         <p>
-          A <span rel="rdfs:range"
-          resource="http://www.w3.org/2001/XMLSchema-datatypes#boolean"
-          >boolean</span>, if true signifies that this particular
-          <a rel="rdfs:domain" href="#Notice">notice</a> is a short
-          notice typically used in user interfaces where there is not
-          enough room for a longer text.  If false the notice is a
-          slightly longer text typically used in software source code
-          files
-          and <a href="http://en.wikipedia.org/wiki/README">README</a>
-          files or anywhere else where there is sufficient room for a
-          slightly longer text.
+          A boolean, if true signifies that this particular <a href="#Notice">notice</a> is
+          a short notice typically used in user interfaces where there is not enough room
+          for a longer text.  If false the notice is a slightly longer text typically used
+          in software source code files
+          and <a href="http://en.wikipedia.org/wiki/README">README</a> files or anywhere
+          else where there is sufficient room for a slightly longer text.
         </p>
       </div>
 
-      <div id="orlater" about="#orlater" typeof="rdf:Property">
+      <div id="orlater">
         <h4><span class="prefix">li:</span>orlater</h4>
         <p>
-          A <span rel="rdfs:range"
-          resource="http://www.w3.org/2001/XMLSchema-datatypes#boolean"
-          >boolean</span>, if true signifies that this
-          particular <a rel="rdfs:domain" href="#Notice">notice</a> is
-          a notice typically used to apply an "or-later" clause to a
-          versioned license.  If false the notice will not allow the
-          licensee to upgrade to a newer version of the license (or
-          there is only one license version).
+          A boolean, if true signifies that this particular <a href="#Notice">notice</a> is
+          a notice typically used to apply an "or-later" clause to a versioned license.  If
+          false the notice will not allow the licensee to upgrade to a newer version of the
+          license (or there is only one license version).
         </p>
       </div>
 
-      <div id="canonical" about="#canonical" typeof="rdf:Property">
+      <div id="canonical">
         <h4><span class="prefix">li:</span>canonical</h4>
         <p>
-          A <span rel="rdfs:range"
-          resource="http://www.w3.org/2001/XMLSchema-datatypes#boolean"
-          >boolean</span>, if true signifies that this
-          particular <a rel="rdfs:domain" href="#Notice">notice</a> is
-          a canonical notice recommended by the publisher of the
-          license (e.g. in the license text itself).  This is also set
-          as "true" for short (permissive) licenses where the notice
-          is the full license
+          A boolean, if true signifies that this particular <a href="#Notice">notice</a> is
+          a canonical notice recommended by the publisher of the license (e.g. in the
+          license text itself).  This is also set as "true" for short (permissive) licenses
+          where the notice is the full license.
         </p>
       </div>
 

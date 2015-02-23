@@ -123,6 +123,12 @@ li:libre a rdf:Property ;
 use in free software, open source software, free culture or open data
 according to a particular organization."""@en-US .
 
+li:compatible a rdf:Property ;
+   rdfs:domain li:License ;
+   rdfs:range li:License ;
+   rdfs:comment """This property states that works under these licenses
+can be combined into a single work."""@en-US .
+
 
 li:text a rdf:Property ;
    rdfs:comment "The text used to apply a license to a work."@en-US ;

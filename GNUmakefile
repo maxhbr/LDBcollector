@@ -16,16 +16,23 @@ JSONLD_TARGETS = $(patsubst %.ttl,%.jsonld,$(wildcard www/id/*.ttl))
 
 WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
-WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM)) www/id/index.html www/jquery.js
+WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM))
 
 all: $(TXT_TARGETS) cc publish $(WEB_TARGETS)
 
-jsonld: $(JSON_TARGETS) $(JSONLD_TARGETS)
-	@echo Serializing to www/ns.jsonld
+jsonld: $(JSON_TARGETS) $(JSONLD_TARGETS) vocab
+	@echo writing     www/context.json
+	@cp data/context.json www/context.json
+
+vocab:
+	@echo serializing www/ns.jsonld
 	@node_modules/.bin/turtle-to-jsonld data/vocab.ttl > www/ns.jsonld
 
+website: $(WEB_TARGETS) | www
+	@echo Generating id/index.html web page
+	@php src/site/page.php src/site/id.php "../" > www/id/index.html
 
-web: $(WEB_TARGETS)
+
 txt: $(TXT_TARGETS)
 
 node_modules:
@@ -60,8 +67,7 @@ publish: src/build/publish.py | txt
 	mkdir --parents www/id
 	@src/build/publish.py
 
-www/context.json: data/context.json | www
-	@cp $< $@
+website:
 
 # www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
 # 	@echo Generating database archive $@
@@ -83,27 +89,17 @@ www/id/%.json: www/id/%.ttl www/context.json
 www/id/%.jsonld: www/id/%.json
 	@cp $< $@
 
-# www/id/%.rdf: .build/%.nt www/context.json | www
-# 	@echo Serializing to $@
-# 	@node src/build/publish-rdf-with-rapper.js www/context.json $< | sh > $@
-
 www/id/%.html: www/id/%.json data/context.json src/site/rdfa.php src/site/metadata.php
 	@echo Serializing to $@
 	@php src/site/rdfa.php $< > $@
 
-www/id/index.html: src/site/dbindex.php src/site/page.php $(JSON_TARGETS) | www  .build
-	@echo Generating index at $@
-	@php src/site/dbindex.php > .build/indexpage.html
-	@php src/site/page.php .build/indexpage.html "../" > $@
-
-www/%.html: src/site/%.html src/site/page.php | www
+www/%.html: src/site/%.html src/site/page.php vocab | www
 	@echo Generating $@ web page
 	@php src/site/page.php $< "" > $@
 
 www/favicon.ico: src/site/favicon.ico | www; @cp $< $@
 www/licensedb.png: src/site/licensedb.png | www; @cp $< $@
 www/licensedb.css: src/site/licensedb.css | www; @cp $< $@
-www/jquery.js: upstream/jquery/jquery-1.7.1.min.js | www; @cp $< $@
 
 clean:
 	rm -rf .build
