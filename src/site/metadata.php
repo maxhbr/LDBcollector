@@ -42,9 +42,13 @@ function render_linked_property ($name, $data, $context)
     $ret = "";
     if (is_array ($data[$name]))
     {
-       foreach ($data[$name] as $value) {
-           $ret .= render_linked_property_entry ($name, $value, $data, $context);
-       }
+        if (isset ($data[$name]['@id'])) {
+            $ret .= render_linked_property_entry ($name, $data[$name]['@id'], $data, $context);
+        } else {
+            foreach ($data[$name] as $value) {
+                $ret .= render_linked_property_entry ($name, $value, $data, $context);
+            }
+        }
     }
     else
     {

@@ -9,7 +9,7 @@
     <style type="text/css">
      article.license-details { height: 88em; }
      p.plaintext,
-     iframe { float: left; width: 42em; height: 80em; margin: 0; padding: 0; border: 0; }
+     iframe { float: left; width: 46em; height: 80em; margin: 0; padding: 0; border: 0; }
      .sidebar {
          width: 24em;
          float: left;

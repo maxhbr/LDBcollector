@@ -62,12 +62,31 @@ def parse_rdf (root, identifier, filename):
 
     g = rdflib.Graph ()
     load_namespaces (root, g)
-    print ("processing ", filename)
+    print ("processing ", filename.replace(root + '/', ''))
     g.parse (data=contents, format='turtle')
 
     url = rdflib.term.URIRef('https://licensedb.org/id/' + identifier)
     id = rdflib.term.Literal(identifier)
     g.add((url, LI.id, id));
+
+    upstream_rdf = join ('upstream', 'rdf', identifier + '.rdf')
+    if isfile(upstream_rdf):
+        print ("processing ", upstream_rdf)
+        with codecs.open (upstream_rdf, "rb", "utf-8") as f:
+            contents = f.read ()
+
+        # patch some invalid language tags.
+        contents = contents.replace('xml:lang="sr@latin"', 'xml:lang="sr"')
+        # use "zxx no linguistic content, not applicable" for these template strings.
+        contents = contents.replace('xml:lang="i18n"', 'xml:lang="zxx"')
+        g.parse (data=contents, format='xml')
+
+        for license_url in g[None:a:CC.License]:
+            if license_url.startswith ('https://licensedb.org/'):
+               continue
+
+            for p, o in g[license_url:None:None]:
+                g.add((url, p, o))
 
     return g
 
@@ -142,7 +161,7 @@ def write_turtle (id, root, graph):
     turtle_file = join (root, "www", "id", id + ".ttl")
 
     with open (turtle_file, "wb") as turtle:
-        print ("writing    ", turtle_file)
+        print ("writing    ", turtle_file.replace (root + '/', ''))
         turtle.write (graph.serialize(format='turtle'))
 
 
