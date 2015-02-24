@@ -8,10 +8,14 @@
 {%- endmacro -%}
 
 {%- macro license_link(id) -%}
-<a href="{{ request.route_path('license', license=id) }}"
+<span
+  data-toggle="tooltip"
   title="{{ license_details[id].name }}">
-{{ id }}
-</a>
+  {{ id }}
+  <a href="{{ request.route_path('license', license=id) }}" class="help-link" >
+    <span class="glyphicon glyphicon-question-sign hidden-xs hidden-sm inline"></span>
+  </a>
+</span>
 {%- endmacro -%}
 
 {%- block content -%}

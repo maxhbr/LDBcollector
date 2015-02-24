@@ -110,6 +110,7 @@ setup(name='oscad',
           ],
           'oscad_data': [
               'data/*.yml',
+              'data/texts/*.txt',
           ],
       },
       install_requires=requires,
