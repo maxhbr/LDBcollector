@@ -19,9 +19,8 @@ from __future__ import unicode_literals
 
 import os
 import sys
-import license
 from os.path import abspath, dirname, isfile, join
-from license import activate_virtualenv, License
+from misc import activate_virtualenv
 
 activate_virtualenv ('licensedb')
 

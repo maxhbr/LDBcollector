@@ -5,3 +5,4 @@
 /production.www
 /www
 node_modules/
+/bin/rdf2hdt

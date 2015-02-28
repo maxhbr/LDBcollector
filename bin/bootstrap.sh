@@ -5,6 +5,8 @@ function req {
     echo ""
     echo "    sudo apt-get install python-virtualenv python-pip"
     echo ""
+    echo "A recent version of node.js or io.js is also required, see https://iojs.org/"
+    echo ""
     exit 1
 }
 
@@ -22,6 +24,13 @@ PIP=`which pip`
 if [ -z "$PIP" ]; then
     req
 fi
+
+NPM=`which npm`
+if [ -z "$NPM" ]; then
+    req
+fi
+
+$NPM install
 
 $VIRTUALENV "${DATA_HOME}/licensedb/virtualenv"
 

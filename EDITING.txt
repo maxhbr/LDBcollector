@@ -1,13 +1,10 @@
 
-I intend for the License Database to be a community edited database
-(similar to wikipedia, musicbrainz, etc..).  However, I fear that the
-community of people interested in machine-readable information about
-copyright licenses is fairly small and I have no interest in
-developing a full edit-system at this time.  To add an entry to the
-database do a checkout of the source code repository at
-https://gitorious.org/licensedb/licensedb/ and make your changes.
-Then send me a merge request through gitorious, e-mail (kuno@frob.nl)
-or come talk to me on irc (warp on freenode irc).
+I intend for the License Database to be a community edited database (similar to wikipedia,
+musicbrainz, etc..).  However, I fear that the community of people interested in
+machine-readable information about copyright licenses is fairly small and I have no interest
+in developing a full edit-system at this time.  To add an entry to the database do a
+checkout of the source code repository at https://github.com/warpr/licensedb/ and make your
+changes.  Then send me a pull request or come talk to me on irc (kuno on freenode irc).
 
 To add an entry, I follow these guidelines:
 
@@ -29,8 +26,6 @@ To add an entry, I follow these guidelines:
 - spdx:licenseId should be the license identifiers assigned by SPDX.
 
 - cc:legalcode should be the full legal text, preferably text/html.
-  often this is the same as the original identity url for the license
-  object.
 
 - li:plaintext should be the full legal text, text/plain.
   this property is mandatory for those entries which describe a

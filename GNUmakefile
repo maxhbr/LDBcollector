@@ -1,4 +1,9 @@
+# Download rdfhdt from http://www.rdfhdt.org/download/ and then place a
+# link to rdf2hdt in bin, e.g.:
+#     ln -s ~/code/3rdparty/hdt-it/trunk/hdt-lib/tools/rdf2hdt bin/
+RDF2HDT := bin/rdf2hdt
 
+TODAY = `date +"%Y-%m-%d"`
 TXT_TARGETS := $(addprefix www/id/,$(notdir $(wildcard upstream/plaintext/*)))
 HTML_TARGETS = $(patsubst %.ttl,%.html,$(wildcard www/id/*.ttl))
 JSONLD_TARGETS = $(patsubst %.ttl,%.jsonld,$(wildcard www/id/*.ttl))
@@ -7,7 +12,7 @@ WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM))
 
-all: $(TXT_TARGETS) cc publish jsonld html website
+all: $(TXT_TARGETS) cc publish dataset jsonld html website
 
 jsonld: $(JSON_TARGETS) $(JSONLD_TARGETS) vocab
 	@echo writing     www/context.jsonld
@@ -26,6 +31,14 @@ website: $(WEB_TARGETS) | www
 	@php src/site/page.php src/site/id.php "../" > www/id/index.html
 
 txt: $(TXT_TARGETS)
+
+dataset: cc publish
+	@src/build/combine.py
+	rapper -i turtle www/dl/licensedb.ttl > www/dl/licensedb.nt
+	$(RDF2HDT) -f ntriples www/dl/licensedb.nt www/dl/licensedb.hdt
+	mv www/dl/licensedb.ttl www/dl/licensedb.$(TODAY).ttl
+	mv www/dl/licensedb.hdt www/dl/licensedb.$(TODAY).hdt
+	rm www/dl/licensedb.nt
 
 www:
 	mkdir --parents www/id
