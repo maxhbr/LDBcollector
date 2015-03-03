@@ -13,7 +13,19 @@
   "engines": {
     "node": ">=0.10"
   },
+  "scripts": {
+    "test": "bin/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/warpr/licensedb.git"
+  },
   "license": "Apache-2",
   "name": "licensedb",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "devDependencies": {
+    "eslint": "^0.15.1",
+    "mocha": "^2.1.0",
+    "request-promise": "^0.4.0"
+  }
 }

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+node_modules/.bin/eslint test
+node_modules/.bin/mocha --ui tdd --reporter spec
+

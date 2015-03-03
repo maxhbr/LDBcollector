@@ -93,9 +93,3 @@ www/licensedb.css: src/site/licensedb.css | www; @cp $< $@
 clean:
 	rm -rf .build
 	rm -rf www
-
-deploy: | all
-	@echo Deploying www to production.www
-	test -x production.www && mv production.www production.old || true
-	mv www production.www
-	rm -rf production.old
