@@ -15,107 +15,114 @@ var rp = require ('request-promise').defaults({ resolveWithFullResponse: true })
 
 var baseIRI = 'http://www.frob.mobi/';
 
-// var accept = [
-//     'application/ld+json;q=1.0',
-//     'application/trig;q=0.9',
-//     'application/n-quads;q=0.7',
-//     'text/turtle;q=0.6',
-//     'application/n-triples;q=0.5',
-//     'text/n3;q=0.4',
-//     'text/html;q=0.3'
-// ].join (',');
+var testRequest = function (path, conneg, expected) {
+    var options = {
+        headers: {},
+        url: baseIRI + path
+    };
+
+    if (expected.statusCode === undefined) {
+        expected.statusCode = 200;
+    }
+
+    switch (conneg) {
+        case 'html':
+        options.headers.Accept = 'text/turtle;q=0.3,text/html;q=0.7';
+        break;
+
+        case 'turtle':
+        options.headers.Accept = 'text/turtle;q=0.9,text/html;q=0.7';
+        break;
+
+        case 'jsonld':
+        options.headers.Accept = 'text/turtle;q=0.3,application/ld+json;q=0.8,text/html;q=0.7';
+        break;
+    }
+
+    return rp(options).then (function (response) {
+        assert.equal (response.statusCode, expected.statusCode);
+        assert.equal (response.headers['content-type'], expected.contentType);
+        assert.equal (response.body.slice(0, expected.startsWith.length), expected.startsWith);
+        return response;
+    });
+};
 
 suite ('Apache configuration', function () {
 
     test ('vocabulary (content negotiate html)', function () {
-        return rp({
-            url: baseIRI + 'ns',
-            headers: {
-                Accept: 'text/turtle;q=0.3,text/html;q=0.7'
-            }
-        }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'text/html');
-            assert.equal (response.body.slice(0, 15), '<!DOCTYPE html>');
+        return testRequest('ns', 'html', {
+            contentType: 'text/html',
+            startsWith: '<!DOCTYPE html>'
         });
     });
 
     test ('vocabulary (content negotiate turtle)', function () {
-        return rp({
-            url: baseIRI + 'ns',
-            headers: {
-                Accept: 'text/turtle;q=0.9,text/html;q=0.7'
-            }
-        }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'text/turtle');
-            assert.equal (response.body.slice(0, 7), '@prefix');
+        return testRequest('ns', 'turtle', {
+            contentType: 'text/turtle',
+            startsWith: '@prefix'
         });
     });
 
     test ('vocabulary (content negotiate json-ld)', function () {
-        return rp({
-            url: baseIRI + 'ns',
-            headers: {
-                Accept: 'text/turtle;q=0.3,application/ld+json;q=0.8,text/html;q=0.7'
-            }
-        }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'application/ld+json');
-            assert.equal (response.body.slice(0, 1), '{');
+        return testRequest('ns', 'jsonld', {
+            contentType: 'application/ld+json',
+            startsWith: '{'
         });
     });
 
     test ('vocabulary (.html)', function () {
-        return rp({ url: baseIRI + 'ns.html' }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'text/html');
-            assert.equal (response.body.slice(0, 15), '<!DOCTYPE html>');
+        return testRequest('ns.html', null, {
+            contentType: 'text/html',
+            startsWith: '<!DOCTYPE html>'
         });
     });
 
     test ('vocabulary (.ttl)', function () {
-        return rp({ url: baseIRI + 'ns.ttl' }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'text/turtle');
-            assert.equal (response.body.slice(0, 7), '@prefix');
+        return testRequest('ns.ttl', null, {
+            contentType: 'text/turtle',
+            startsWith: '@prefix'
         });
     });
 
     test ('vocabulary (.jsonld)', function () {
-        return rp({ url: baseIRI + 'ns.jsonld' }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'application/ld+json');
-            assert.equal (response.body.slice(0, 1), '{');
+        return testRequest('ns.jsonld', null, {
+            contentType: 'application/ld+json',
+            startsWith: '{'
         });
     });
 
     test ('vocabulary (trailing slash redirect)', function () {
-        return rp({
-            url: baseIRI + 'ns/',
-            headers: {
-                Accept: 'text/turtle;q=0.3,text/html;q=0.7'
-            }
-        }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'text/html');
-            assert.equal (response.body.slice(0, 15), '<!DOCTYPE html>');
+        return testRequest('ns/', 'html', {
+            contentType: 'text/html',
+            startsWith: '<!DOCTYPE html>'
         });
     });
 
     test ('license', function () {
-        return rp({ url: baseIRI + 'license' }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'text/html');
-            assert.equal (response.body.slice(0, 15), '<!DOCTYPE html>');
+        return testRequest('license', null, {
+            contentType: 'text/html',
+            startsWith: '<!DOCTYPE html>'
         });
     });
 
     test ('license (trailing slash redirect)', function () {
-        return rp({ url: baseIRI + 'license/' }).then (function (response) {
-            assert.equal (response.statusCode, 200);
-            assert.equal (response.headers['content-type'], 'text/html');
-            assert.equal (response.body.slice(0, 15), '<!DOCTYPE html>');
+        return testRequest('license/', null, {
+            contentType: 'text/html',
+            startsWith: '<!DOCTYPE html>'
+        });
+    });
+
+    test ('AGPL-3 (trailing slash redirect)', function () {
+        return testRequest('id/AGPL-3/', 'html', {
+            contentType: 'text/html',
+            startsWith: '<!DOCTYPE html>'
+        });
+    });
+
+    test ('AGPL-3', function () {
+        return testRequest('id/AGPL-3', 'html', {
+            contentType: 'text/html',
+            startsWith: '<!DOCTYPE html>'
         });
     });
 

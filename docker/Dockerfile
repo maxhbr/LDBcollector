@@ -38,7 +38,11 @@ RUN git clone https://github.com/warpr/licensedb
 WORKDIR /srv/licensedb
 RUN ln -s /root/hdt-cpp/hdt-lib/tools/rdf2hdt bin/rdf2hdt
 RUN bin/bootstrap.sh
-RUN make
+# We need two passes because some of the targets to be built are not known during
+# the first run.
+RUN make && make
+
+RUN a2enmod rewrite
 
 COPY service/apache2.sh          /etc/service/apache2/run
 COPY apache2/licensedb.conf      /etc/apache2/sites-available/licensedb.conf
