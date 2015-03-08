@@ -216,7 +216,7 @@ function render_literal_property ($name, $data, $context)
 
     return "<li>" .
         "<span class=\"prefix\">$prefix:</span>$propname: " .
-        "<span property=\"$name\">$value</span></li>";
+        "<span>$value</span></li>";
 }
 
 function add_section (&$sections, $data)
@@ -253,7 +253,7 @@ function sidebar ($data, $context, $logos)
         foreach ($logos as $url)
         {
             $count++;
-            echo "<a class=\"logo$count\" property=\"foaf:logo\" ";
+            echo "<a class=\"logo$count\" ";
             if ($count > 1) { echo 'style="display: none"'; }
             echo "href=\"$url\"><img src=\"$url\" /></a>\n";
         }
@@ -321,23 +321,19 @@ function render_notice_property ($notice, $property)
 
     return "<input id=\"$property\" type=\"checkbox\" $checked " .
         'disabled="disabled" /><span class="prefix">li:</span>' .
-        "$property<span style=\"display: none;\" " .
-        "property=\"https://licensedb.org/ns#$property\"" .
-        "datatype=\"http://www.w3.org/2001/XMLSchema-datatypes#boolean\">" .
-        "$bool</span>";
+        "$property";
 }
 
 function render_notice ($notice)
 {
-    return '<div rel="https://licensedb.org/ns#notice">' .
+    return '<div>' .
         '<div class="notice-properties">' .
         render_notice_property ($notice, "canonical") .
         render_notice_property ($notice, "orlater") .
         render_notice_property ($notice, "short") .
         '</div>'.
         '<h3><span class="prefix">li:</span>notice</h3>'.
-        '<pre property="https://licensedb.org/ns#text">'.
-        htmlentities($notice["li:text"]).'</pre></div>';
+        '<pre>'.htmlentities($notice["li:text"]).'</pre></div>';
 }
 
 function cmp_notice ($a, $b)

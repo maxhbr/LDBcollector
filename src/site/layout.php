@@ -23,15 +23,15 @@
 
   <body>
     <div id="header">
-      <a href="http://licensedb.org/" title="home">
-        <img src="https://licensedb.org/licensedb.png" style="margin: 1em;" />
+      <a href="/" title="home">
+        <img src="/licensedb.png" style="margin: 1em;" />
       </a>
       <div id="menu">
         <ul>
-          <li><a href="https://licensedb.org/">About</a></li>
-          <li><a href="https://licensedb.org/id/">Database</a></li>
-          <li><a href="https://licensedb.org/ns">Vocabulary</a></li>
-          <li><a href="https://licensedb.org/license">License</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/id/">Database</a></li>
+          <li><a href="/ns">Vocabulary</a></li>
+          <li><a href="/license">License</a></li>
         </ul>
       </div>
     </div>
@@ -45,7 +45,7 @@
         under <a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache
         2.0</a>, database available under <a rel="license"
         href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
-        See <a href="https://licensedb.org/license">the license page</a> for more details.
+        See <a href="/license">the license page</a> for more details.
       </p>
     </div>
 
