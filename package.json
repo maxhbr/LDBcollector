@@ -4,9 +4,10 @@
     "clone": "0.1.x",
     "jsonld": "^0.3.22",
     "lazy": "1.0.x",
+    "negotiator": "^0.5.1",
     "request": "2.12.x",
     "turtle-to-jsonld": "warpr/turtle-to-jsonld",
-    "underscore": "1.4.x",
+    "underscore": "^1.4.4",
     "underscore.string": "2.3.x"
   },
   "description": "LicenseDB, the License Database project.",

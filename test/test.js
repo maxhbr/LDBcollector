@@ -13,7 +13,7 @@
 var assert = require ('assert');
 var rp = require ('request-promise').defaults({ resolveWithFullResponse: true });
 
-var baseIRI = 'http://www.frob.mobi/';
+var baseIRI = 'http://10.237.180.17';
 
 var testRequest = function (path, conneg, expected) {
     var options = {
