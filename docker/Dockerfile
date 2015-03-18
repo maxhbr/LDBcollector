@@ -16,7 +16,7 @@ COPY nginx/sources.list     /etc/apt/sources.list.d/nginx.list
 
 RUN apt-get -y update && apt-get -y upgrade
 RUN apt-get -y install build-essential curl git libkyotocabinet-dev libraptor2-dev \
-    nginx python-virtualenv python-pip php5-cli
+    nginx python-virtualenv python-pip php5-cli screen
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -40,6 +40,11 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
   && tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
   && rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
 
+RUN printf "\ndaemon off;\n" >> /etc/nginx/nginx.conf
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx/licensedb.org.conf  /etc/nginx/conf.d/licensedb.org.conf
+COPY service/nginx.sh          /etc/service/nginx/run
+
 WORKDIR /srv
 RUN git clone https://github.com/warpr/licensedb
 
@@ -50,10 +55,5 @@ RUN bin/bootstrap.sh
 # the first run.
 RUN make && make
 
-RUN apt-get -y update && apt-get -y install screen
-
-RUN printf "\ndaemon off;\n" >> /etc/nginx/nginx.conf
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx/licensedb.org.conf  /etc/nginx/conf.d/licensedb.org.conf
-COPY service/nginx.sh          /etc/service/nginx/run
+COPY service/licensedb.sh /etc/service/licensedb/run
 
