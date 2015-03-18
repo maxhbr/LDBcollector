@@ -13,7 +13,7 @@
 var assert = require ('assert');
 var rp = require ('request-promise').defaults({ resolveWithFullResponse: true });
 
-var baseIRI = 'http://10.237.180.17';
+var baseIRI = 'http://10.237.180.17/';
 
 var testRequest = function (path, conneg, expected) {
     var options = {
@@ -47,7 +47,7 @@ var testRequest = function (path, conneg, expected) {
     });
 };
 
-suite ('Apache configuration', function () {
+suite ('Main site', function () {
 
     test ('vocabulary (content negotiate html)', function () {
         return testRequest('ns', 'html', {
@@ -112,15 +112,50 @@ suite ('Apache configuration', function () {
         });
     });
 
-    test ('AGPL-3 (trailing slash redirect)', function () {
-        return testRequest('id/AGPL-3/', 'html', {
+    test ('AGPL-3 (content negotiate html)', function () {
+        return testRequest('id/AGPL-3', 'html', {
             contentType: 'text/html',
             startsWith: '<!DOCTYPE html>'
         });
     });
 
-    test ('AGPL-3', function () {
-        return testRequest('id/AGPL-3', 'html', {
+    test ('AGPL-3 (content negotiate turtle)', function () {
+        return testRequest('id/AGPL-3', 'turtle', {
+            contentType: 'text/turtle',
+            startsWith: '@prefix'
+        });
+    });
+
+    test ('AGPL-3 (content negotiate json-ld)', function () {
+        return testRequest('id/AGPL-3', 'jsonld', {
+            contentType: 'application/ld+json',
+            startsWith: '{'
+        });
+    });
+
+    test ('AGPL-3 (.html)', function () {
+        return testRequest('id/AGPL-3.html', null, {
+            contentType: 'text/html',
+            startsWith: '<!DOCTYPE html>'
+        });
+    });
+
+    test ('AGPL-3 (.ttl)', function () {
+        return testRequest('id/AGPL-3.ttl', null, {
+            contentType: 'text/turtle',
+            startsWith: '@prefix'
+        });
+    });
+
+    test ('AGPL-3 (.jsonld)', function () {
+        return testRequest('id/AGPL-3.jsonld', null, {
+            contentType: 'application/ld+json',
+            startsWith: '{'
+        });
+    });
+
+    test ('AGPL-3 (trailing slash redirect)', function () {
+        return testRequest('id/AGPL-3/', 'html', {
             contentType: 'text/html',
             startsWith: '<!DOCTYPE html>'
         });
