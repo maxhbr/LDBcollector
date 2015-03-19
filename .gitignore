@@ -1,8 +1,7 @@
 *.pyc
 *~
-/.build
-/generated/
-/production.www
-/www
-node_modules/
 /bin/rdf2hdt
+/etc/ldf-server.json
+/www
+/node_modules/
+

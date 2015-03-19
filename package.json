@@ -4,6 +4,7 @@
     "clone": "0.1.x",
     "jsonld": "^0.3.22",
     "lazy": "1.0.x",
+    "ldf-server": "^1.1.4",
     "negotiator": "^0.5.1",
     "request": "2.12.x",
     "turtle-to-jsonld": "warpr/turtle-to-jsonld",

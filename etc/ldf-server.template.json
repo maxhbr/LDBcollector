@@ -1,0 +1,17 @@
+{
+    "title": "LicenseDB",
+    "baseURL": "http://licensedb.org/data/",
+    "datasources": {
+        "licensedb": {
+            "title": "LicenseDB %DATE%",
+            "description": "The License Database (%DATE%)",
+            "license": "CC0 1.0 Universal",
+            "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "homepage": "https://licensedb.org/id/",
+            "type": "HdtDatasource",
+            "settings": {
+                "file": "www/dl/licensedb.%DATE%.hdt"
+            }
+        }
+    }
+}

@@ -39,6 +39,7 @@ dataset: cc publish
 	mv www/dl/licensedb.ttl www/dl/licensedb.$(TODAY).ttl
 	mv www/dl/licensedb.hdt www/dl/licensedb.$(TODAY).hdt
 	rm www/dl/licensedb.nt
+	cat etc/ldf-server.template.json | sed "s/%DATE%/$(TODAY)/" > etc/ldf-server.json
 
 www:
 	mkdir --parents www/id
@@ -61,15 +62,6 @@ publish: src/build/publish.py | txt
 	mkdir --parents www/id
 	@src/build/publish.py
 
-# www/dl/license-database.tar.gz: $(JSON_TARGETS) $(RDF_TARGETS) | www .build
-# 	@echo Generating database archive $@
-# 	@cp data/copyright.txt .build/license-database/
-# 	@cp data/context.json .build/license-database/
-# 	@cp www/id/*json .build/license-database/json/
-# 	@cp www/id/*rdf .build/license-database/rdf/
-# 	@cp www/id/*txt .build/license-database/plaintext/
-# 	@cd .build ; tar cfz ../www/dl/license-database.tar.gz license-database
-
 www/id/%.txt: upstream/plaintext/%.txt | www
 	@echo Copying plaintext license to $@
 	@cp $< $@
@@ -91,5 +83,4 @@ www/licensedb.png: src/site/licensedb.png | www; @cp $< $@
 www/licensedb.css: src/site/licensedb.css | www; @cp $< $@
 
 clean:
-	rm -rf .build
 	rm -rf www
