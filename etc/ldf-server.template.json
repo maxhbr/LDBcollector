@@ -1,6 +1,6 @@
 {
     "title": "LicenseDB",
-    "baseURL": "http://licensedb.org/data/",
+    "baseURL": "https://licensedb.org/data/",
     "datasources": {
         "licensedb": {
             "title": "LicenseDB %DATE%",

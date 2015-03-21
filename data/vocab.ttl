@@ -32,7 +32,7 @@ Expression Language ([CC REL](http://wiki.creativecommons.org/CC_REL))
 with additional properties to describe existing copyright and database
 licenses in more detail.
 
-[The License Database](http://licensedb.org/) project uses this
+[The License Database](https://licensedb.org/) project uses this
 vocabulary to describe existing free software licenses, open source
 licenses and free culture licenses used today.
 
