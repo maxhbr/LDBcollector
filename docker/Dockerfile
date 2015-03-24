@@ -44,6 +44,8 @@ RUN printf "\ndaemon off;\n" >> /etc/nginx/nginx.conf
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx/licensedb.org.conf  /etc/nginx/conf.d/licensedb.org.conf
 COPY service/nginx.sh          /etc/service/nginx/run
+COPY service/licensedb.sh      /etc/service/licensedb/run
+COPY service/ldf.sh            /etc/service/ldf/run
 
 WORKDIR /srv
 RUN git clone https://github.com/warpr/licensedb
@@ -55,5 +57,3 @@ RUN bin/bootstrap.sh
 # the first run.
 RUN make && make
 
-COPY service/licensedb.sh /etc/service/licensedb/run
-COPY service/ldf.sh /etc/service/ldf/run

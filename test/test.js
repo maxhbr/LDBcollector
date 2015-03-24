@@ -11,6 +11,7 @@
 /* global suite test */
 
 var assert = require ('assert');
+var qs = require ('querystring');
 var rp = require ('request-promise').defaults({ resolveWithFullResponse: true });
 
 var baseIRI = 'http://10.237.180.17/';
@@ -42,7 +43,29 @@ var testRequest = function (path, conneg, expected) {
     return rp(options).then (function (response) {
         assert.equal (response.statusCode, expected.statusCode);
         assert.equal (response.headers['content-type'], expected.contentType);
-        assert.equal (response.body.slice(0, expected.startsWith.length), expected.startsWith);
+
+        if (expected.hasOwnProperty('startsWith')) {
+            assert.strictEqual (
+                response.body.slice(0, expected.startsWith.length),
+                expected.startsWith,
+                'body starts with "' + expected.contains + '"'
+            );
+        }
+
+        if (expected.hasOwnProperty('contains')) {
+            var contains = expected.contains;
+            if (typeof expected.contains === 'string') {
+                contains = [ expected.contains ];
+            }
+
+            for (var key in contains) {
+                if (contains.hasOwnProperty(key)) {
+                    var idx = response.body.indexOf(contains[key]);
+                    assert.ok(idx >= 0, 'body contains "' + contains[key] + '"');
+                }
+            }
+        }
+
         return response;
     });
 };
@@ -158,6 +181,75 @@ suite ('Main site', function () {
         return testRequest('id/AGPL-3/', 'html', {
             contentType: 'text/html',
             startsWith: '<!DOCTYPE html>'
+        });
+    });
+
+});
+
+suite ('Linked Data Fragments server', function () {
+
+    test ('LDF list of datasets', function () {
+        return testRequest('data', 'html', {
+            contentType: 'text/html;charset=utf-8',
+            contains: [ 'Available datasets', 'https://licensedb.org/data/licensedb' ]
+        });
+    });
+
+    test ('LDF LicenseDB index', function () {
+        return testRequest('data/licensedb', 'html', {
+            contentType: 'text/html;charset=utf-8',
+            contains: [ 'Matches in LicenseDB', 'CC0 1.0 Universal' ]
+        });
+    });
+
+    test ('Search for AGPLv3 (html)', function () {
+        var query = qs.stringify({
+            subject: 'https://licensedb.org/id/AGPL-3',
+            predicate: '',
+            object: ''
+        });
+
+        return testRequest('data/licensedb?' + query, 'html', {
+            contentType: 'text/html;charset=utf-8',
+            contains: [
+                'agplv3-155x51.png',
+                'GNU Affero General Public License',
+                '?predicate=http%3A%2F%2Fcreativecommons.org%2Fns%23legalcode'
+            ]
+        });
+    });
+
+    test ('Search for AGPLv3 (turtle)', function () {
+        var query = qs.stringify({
+            subject: 'https://licensedb.org/id/AGPL-3',
+            predicate: '',
+            object: ''
+        });
+
+        return testRequest('data/licensedb?' + query, 'turtle', {
+            contentType: 'text/turtle;charset=utf-8',
+            contains: [
+                'agplv3-155x51.png',
+                'GNU Affero General Public License',
+                '<http://creativecommons.org/ns#legalcode>',
+            ]
+        });
+    });
+
+    test ('Search for FSF approved free licenses (html)', function () {
+        var query = qs.stringify({
+            subject: '',
+            predicate: 'https://licensedb.org/ns#libre',
+            object: 'http://fsf.org/'
+        });
+
+        return testRequest('data/licensedb?' + query, 'html', {
+            contentType: 'text/html;charset=utf-8',
+            contains: [
+                'AGPL-3',
+                'Apache-2',
+                'CC-BY-SA-4.0'
+            ]
         });
     });
 
