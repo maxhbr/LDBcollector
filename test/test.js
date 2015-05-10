@@ -14,7 +14,7 @@ var assert = require ('assert');
 var qs = require ('querystring');
 var rp = require ('request-promise').defaults({ resolveWithFullResponse: true });
 
-var baseIRI = 'http://10.237.180.17/';
+var baseIRI = 'http://' + process.env.CONTAINER_IP + '/';
 
 var testRequest = function (path, conneg, expected) {
     var options = {
@@ -41,6 +41,8 @@ var testRequest = function (path, conneg, expected) {
     }
 
     return rp(options).then (function (response) {
+        var key;
+
         assert.equal (response.statusCode, expected.statusCode);
         assert.equal (response.headers['content-type'], expected.contentType);
 
@@ -58,10 +60,24 @@ var testRequest = function (path, conneg, expected) {
                 contains = [ expected.contains ];
             }
 
-            for (var key in contains) {
+            for (key in contains) {
                 if (contains.hasOwnProperty(key)) {
                     var idx = response.body.indexOf(contains[key]);
                     assert.ok(idx >= 0, 'body contains "' + contains[key] + '"');
+                }
+            }
+        }
+
+        if (expected.hasOwnProperty('regex')) {
+            var regexes = expected.regex;
+            if (typeof expected.regex === 'string') {
+                regexes = [ expected.regex ];
+            }
+
+            for (key in regexes) {
+                if (regexes.hasOwnProperty (key)) {
+                    var r = new RegExp(regexes[key]);
+                    assert.ok(r.test(response.body), 'body matches "' + regexes[key] + '"');
                 }
             }
         }
@@ -181,6 +197,20 @@ suite ('Main site', function () {
         return testRequest('id/AGPL-3/', 'html', {
             contentType: 'text/html',
             startsWith: '<!DOCTYPE html>'
+        });
+    });
+
+    test ('HDT download', function () {
+        return testRequest('dl/', 'html', {
+            contentType: 'text/html',
+            regex: 'licensedb\.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].hdt'
+        });
+    });
+
+    test ('TTL download', function () {
+        return testRequest('dl/', 'html', {
+            contentType: 'text/html',
+            regex: 'licensedb\.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].ttl'
         });
     });
 

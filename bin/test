@@ -1,5 +1,33 @@
-#!/bin/sh
+#!/bin/bash
 
-node_modules/.bin/eslint test
+if [ ! -d "node_modules/.bin" ]; then
+    echo "ERROR: cannot find node_modules/.bin"
+    echo "Try running bin/test from the LicenseDB project root."
+    exit 1
+fi
+
+node_modules/.bin/eslint test || exit 1
+
+export CONTAINER_ID=$(docker ps --no-trunc | grep 'warp/licensedb:latest' | awk '{ print $1 }')
+if [ -z "$CONTAINER_ID" ]; then
+    echo "ERROR: The LicenseDB container not running."
+    echo "Use the \"docker/run\" script to start it."
+    exit 1
+fi
+
+echo "Using docker container $CONTAINER_ID"
+export CONTAINER_IP=$(docker inspect $CONTAINER_ID | python3 bin/docker-ip.py)
+if [ -z "$CONTAINER_IP" ]; then
+    echo "ERROR: Could not determine container IP address."
+    exit 1
+fi
+
+if curl --silent --head --max-time 1 "http://$CONTAINER_IP" | grep '200 OK'; then
+    echo "Connected to container at $CONTAINER_IP, starting tests..."
+else
+    echo "ERROR: Failed to connect to container at $CONTAINER_IP"
+    exit 1
+fi
+
 node_modules/.bin/mocha --ui tdd --reporter spec
 

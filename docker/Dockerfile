@@ -1,7 +1,6 @@
 # -*- mode: shell-script -*-
 
 FROM phusion/baseimage:0.9.16
-# FROM phusion/passenger-full:0.9.15
 
 EXPOSE 80
 
@@ -31,7 +30,7 @@ RUN cd /root/hdt-cpp/libcds-v1.0.12 \
 # gpg keys listed at https://github.com/iojs/io.js
 RUN gpg --keyserver pool.sks-keyservers.net --recv-keys 9554F04D7259F04124DE6B476D5A82AC7E37093B DD8F2338BAE7501E3DD5AC78C273792F7D83545D
 
-ENV IOJS_VERSION 1.5.1
+ENV IOJS_VERSION 2.0.1
 
 RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz" \
   && curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/SHASUMS256.txt.asc" \
@@ -48,7 +47,7 @@ COPY service/licensedb.sh      /etc/service/licensedb/run
 COPY service/ldf.sh            /etc/service/ldf/run
 
 WORKDIR /srv
-RUN git clone https://github.com/warpr/licensedb
+RUN git clone https://github.com/warpr/licensedb # updated 2015-03-23
 
 WORKDIR /srv/licensedb
 RUN ln -s /root/hdt-cpp/hdt-lib/tools/rdf2hdt bin/rdf2hdt

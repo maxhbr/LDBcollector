@@ -3,8 +3,8 @@ The License Database
       <h1>The License Database</h1>
 
       <p>
-          To access the database use <a href="http://linkeddatafragments.org/">Linked
-          Data Fragments</a> server at <a href="https://licensedb.org/data/">licensedb.org/data/</a>.
+          To access the database use the <a href="http://linkeddatafragments.org/">Linked
+          Data Fragments</a> server at <a href="https://licensedb.org/data">licensedb.org/data</a>.
       </p>
       <p>
           You can also download full database dumps from

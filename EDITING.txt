@@ -25,9 +25,9 @@ To add an entry, I follow these guidelines:
 - dc:creator should be the URL of the homepage of the publisher.
 - spdx:licenseId should be the license identifiers assigned by SPDX.
 
-- cc:legalcode should be the full legal text, preferably text/html.
+- cc:legalcode should be (a link to) the full legal text, preferably text/html.
 
-- li:plaintext should be the full legal text, text/plain.
+- li:plaintext should be (a link to) the full legal text, text/plain.
   this property is mandatory for those entries which describe a
   license which requires or recommends that a full copy of the
   license is included (which is common with free software licenses,
