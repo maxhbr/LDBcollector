@@ -39,15 +39,8 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
   && tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
   && rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
 
-RUN printf "\ndaemon off;\n" >> /etc/nginx/nginx.conf
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx/licensedb.org.conf  /etc/nginx/conf.d/licensedb.org.conf
-COPY service/nginx.sh          /etc/service/nginx/run
-COPY service/licensedb.sh      /etc/service/licensedb/run
-COPY service/ldf.sh            /etc/service/ldf/run
-
 WORKDIR /srv
-RUN git clone https://github.com/warpr/licensedb # updated 2015-03-23
+RUN git clone https://github.com/warpr/licensedb # updated 2015-05-10
 
 WORKDIR /srv/licensedb
 RUN ln -s /root/hdt-cpp/hdt-lib/tools/rdf2hdt bin/rdf2hdt
@@ -55,4 +48,11 @@ RUN bin/bootstrap.sh
 # We need two passes because some of the targets to be built are not known during
 # the first run.
 RUN make && make
+
+RUN printf "\ndaemon off;\n" >> /etc/nginx/nginx.conf
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx/licensedb.org.conf  /etc/nginx/conf.d/licensedb.org.conf
+COPY service/nginx.sh          /etc/service/nginx/run
+COPY service/licensedb.sh      /etc/service/licensedb/run
+COPY service/ldf.sh            /etc/service/ldf/run
 

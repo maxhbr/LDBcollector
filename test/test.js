@@ -232,6 +232,15 @@ suite ('Linked Data Fragments server', function () {
         });
     });
 
+    test ('LDF paging URL', function () {
+        return testRequest('data/licensedb', 'html', {
+            contentType: 'text/html;charset=utf-8',
+            contains: [
+                'https://licensedb.org/data/licensedb?page=2'
+            ]
+        });
+    });
+
     test ('Search for AGPLv3 (html)', function () {
         var query = qs.stringify({
             subject: 'https://licensedb.org/id/AGPL-3',
