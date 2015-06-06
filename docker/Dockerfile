@@ -6,7 +6,7 @@ EXPOSE 80
 
 CMD ["/sbin/my_init"]
 
-RUN apt-get -y update && apt-get -y install add-apt-key
+RUN apt-get -y update && apt-get -y install add-apt-key # 2015-06-06
 
 # nginx repository and GPG key
 RUN add-apt-key --keyserver pool.sks-keyservers.net 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
@@ -40,11 +40,12 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
   && rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
 
 WORKDIR /srv
-RUN git clone https://github.com/warpr/licensedb # updated 2015-05-10
+RUN git clone https://github.com/warpr/licensedb # updated 2015-06-06
 
 WORKDIR /srv/licensedb
 RUN ln -s /root/hdt-cpp/hdt-lib/tools/rdf2hdt bin/rdf2hdt
 RUN bin/bootstrap.sh
+
 # We need two passes because some of the targets to be built are not known during
 # the first run.
 RUN make && make
