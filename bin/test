@@ -8,24 +8,30 @@ fi
 
 node_modules/.bin/eslint test || exit 1
 
-export CONTAINER_ID=$(docker ps --no-trunc | grep 'warp/licensedb:latest' | awk '{ print $1 }')
-if [ -z "$CONTAINER_ID" ]; then
-    echo "ERROR: The LicenseDB container not running."
-    echo "Use the \"docker/run\" script to start it."
-    exit 1
-fi
-
-echo "Using docker container $CONTAINER_ID"
-export CONTAINER_IP=$(docker inspect $CONTAINER_ID | python3 bin/docker-ip.py)
-if [ -z "$CONTAINER_IP" ]; then
-    echo "ERROR: Could not determine container IP address."
-    exit 1
-fi
-
-if curl --silent --head --max-time 1 "http://$CONTAINER_IP" | grep '200 OK'; then
-    echo "Connected to container at $CONTAINER_IP, starting tests..."
+if [ "$1" == "prod" ]; then
+    export LICENSEDB_TEST_URI="https://licensedb.org/"
 else
-    echo "ERROR: Failed to connect to container at $CONTAINER_IP"
+    export CONTAINER_ID=$(docker ps --no-trunc | grep 'warp/licensedb:latest' | awk '{ print $1 }')
+    if [ -z "$CONTAINER_ID" ]; then
+        echo "ERROR: The LicenseDB container not running."
+        echo "Use the \"docker/run\" script to start it."
+        exit 1
+    fi
+
+    echo "Using docker container $CONTAINER_ID"
+    export CONTAINER_IP=$(docker inspect $CONTAINER_ID | python3 bin/docker-ip.py)
+    if [ -z "$CONTAINER_IP" ]; then
+        echo "ERROR: Could not determine container IP address."
+        exit 1
+    fi
+
+    export LICENSEDB_TEST_URI="http://$CONTAINER_IP/"
+fi
+
+if curl --silent --head --max-time 1 "$LICENSEDB_TEST_URI" | grep '200 OK'; then
+    echo "Connected to licensedb at $LICENSEDB_TEST_URI, starting tests..."
+else
+    echo "ERROR: Failed to connect to container at $LICENSEDB_TEST_URI"
     exit 1
 fi
 

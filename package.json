@@ -2,6 +2,7 @@
   "author": "Kuno Woudt <kuno@frob.nl>",
   "dependencies": {
     "clone": "0.1.x",
+    "eslint": "^1.0.0",
     "jsonld": "^0.3.22",
     "lazy": "1.0.x",
     "ldf-server": "^1.1.6",
@@ -26,8 +27,8 @@
   "name": "licensedb",
   "version": "1.0.0",
   "devDependencies": {
-    "eslint": "^0.15.1",
-    "mocha": "^2.1.0",
-    "request-promise": "^0.4.0"
+    "eslint": "^0.24.1",
+    "mocha": "^2.2.5",
+    "request-promise": "^0.4.2"
   }
 }

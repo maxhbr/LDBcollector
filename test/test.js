@@ -14,19 +14,10 @@ var assert = require ('assert');
 var qs = require ('querystring');
 var rp = require ('request-promise').defaults({ resolveWithFullResponse: true });
 
-var baseIRI = 'http://' + process.env.CONTAINER_IP + '/';
+var baseIRI = process.env.LICENSEDB_TEST_URI;
 
-var testRequest = function (path, conneg, expected) {
-    var options = {
-        headers: {},
-        url: baseIRI + path
-    };
-
-    if (expected.statusCode === undefined) {
-        expected.statusCode = 200;
-    }
-
-    switch (conneg) {
+var contentNegotiation = function (options, type) {
+    switch (type) {
         case 'html':
         options.headers.Accept = 'text/turtle;q=0.3,text/html;q=0.7';
         break;
@@ -38,6 +29,19 @@ var testRequest = function (path, conneg, expected) {
         case 'jsonld':
         options.headers.Accept = 'text/turtle;q=0.3,application/ld+json;q=0.8,text/html;q=0.7';
         break;
+    }
+};
+
+var testRequest = function (path, conneg, expected) {
+    var options = {
+        headers: {},
+        url: baseIRI + path
+    };
+
+    contentNegotiation (options, conneg);
+
+    if (expected.statusCode === undefined) {
+        expected.statusCode = 200;
     }
 
     return rp(options).then (function (response) {
@@ -134,6 +138,22 @@ suite ('Main site', function () {
         return testRequest('ns/', 'html', {
             contentType: 'text/html',
             startsWith: '<!DOCTYPE html>'
+        });
+    });
+
+    test ('vocabulary (redirect to correct domain, scheme and port)', function () {
+        var options = {
+            headers: {},
+            followRedirect: false,
+            url: baseIRI + 'ns/'
+        };
+
+        contentNegotiation(options, 'html');
+
+        return rp(options).then (function (response) {
+            assert.fail ('Request succeeded', 'Request failed (redirect)');
+        }).catch(function (result) {
+            assert.equal (result.response.headers.location, 'https://licensedb.org/ns');
         });
     });
 
