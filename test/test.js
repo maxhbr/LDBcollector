@@ -15,6 +15,7 @@ var qs = require ('querystring');
 var rp = require ('request-promise').defaults({ resolveWithFullResponse: true });
 
 var baseIRI = process.env.LICENSEDB_TEST_URI;
+var timeout = 8000;
 
 var contentNegotiation = function (options, type) {
     switch (type) {
@@ -91,6 +92,7 @@ var testRequest = function (path, conneg, expected) {
 };
 
 suite ('Main site', function () {
+    this.timeout(timeout);
 
     test ('vocabulary (content negotiate html)', function () {
         return testRequest('ns', 'html', {
@@ -237,6 +239,7 @@ suite ('Main site', function () {
 });
 
 suite ('Linked Data Fragments server', function () {
+    this.timeout(timeout);
 
     test ('LDF list of datasets', function () {
         return testRequest('data', 'html', {
