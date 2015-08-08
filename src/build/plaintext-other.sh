@@ -17,6 +17,12 @@ wget http://www.perlfoundation.org/attachment/legal/artistic-2_0.txt --output-do
 wget http://www.perlfoundation.org/attachment/legal/Artistic_1.0.txt --output-document $DEST/Artistic.txt
 wget http://repoze.org/LICENSE.txt --output-document $DEST/BSD-Repoze.txt
 
+wget https://raw.githubusercontent.com/richardfontana/copyleft-next/master/Releases/copyleft-next-0.1.0 --output-document $DEST/copyleft-next-0.1.0.txt
+wget https://raw.githubusercontent.com/richardfontana/copyleft-next/master/Releases/copyleft-next-0.1.1 --output-document $DEST/copyleft-next-0.1.1.txt
+wget https://raw.githubusercontent.com/richardfontana/copyleft-next/master/Releases/copyleft-next-0.2.0 --output-document $DEST/copyleft-next-0.2.0.txt
+wget https://raw.githubusercontent.com/richardfontana/copyleft-next/master/Releases/copyleft-next-0.2.1 --output-document $DEST/copyleft-next-0.2.1.txt
+wget https://raw.githubusercontent.com/richardfontana/copyleft-next/master/Releases/copyleft-next-0.3.0 --output-document $DEST/copyleft-next-0.3.0.txt
+
 # The IJG JPEG license doesn't seem to have a nice official plaintext
 # version.  Download an official release and extract the license text.
 wget http://www.ijg.org/files/jpegsrc.v6b.tar.gz --output-document - | tar --gzip --extract jpeg-6b/README --to-stdout | sed -ne '/^LEGAL ISSUES$/,/^REFERENCES$/p' | head --lines=-1 > $DEST/IJG.txt
