@@ -6,8 +6,10 @@
     "jsonld": "^0.3.22",
     "lazy": "1.0.x",
     "ldf-server": "^1.1.6",
+    "mocha": "^2.2.5",
     "negotiator": "^0.5.1",
     "request": "2.12.x",
+    "request-promise": "^0.4.2",
     "turtle-to-jsonld": "warpr/turtle-to-jsonld",
     "underscore": "^1.4.4",
     "underscore.string": "2.3.x"
@@ -25,10 +27,5 @@
   },
   "license": "Apache-2",
   "name": "licensedb",
-  "version": "1.0.0",
-  "devDependencies": {
-    "eslint": "^0.24.1",
-    "mocha": "^2.2.5",
-    "request-promise": "^0.4.2"
-  }
+  "version": "1.0.1"
 }

@@ -40,7 +40,7 @@ RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x6
   && rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
 
 WORKDIR /srv
-RUN git clone https://github.com/warpr/licensedb # updated 2015-06-06
+RUN git clone https://github.com/warpr/licensedb # updated 2015-08-09
 
 WORKDIR /srv/licensedb
 RUN ln -s /root/hdt-cpp/hdt-lib/tools/rdf2hdt bin/rdf2hdt
