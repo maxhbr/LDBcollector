@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# node_modules/.bin/bower install
+# cd node_modules/n3 && npm install && browser/build-browser-versions

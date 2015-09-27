@@ -1,0 +1,21 @@
+{
+  "name": "wald-find",
+  "version": "0.0.0",
+  "authors": [
+    "kuno <kuno@frob.nl>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "copyleft-next 0.3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "qs": "hapijs/qs#~3.1.0"
+  }
+}

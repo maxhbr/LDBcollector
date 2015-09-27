@@ -1,0 +1,8 @@
+*~
+\#*\#
+.\#*
+.DS_Store
+
+/bower_components/
+/js/
+/node_modules/
