@@ -15,6 +15,8 @@ WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM))
 all: $(TXT_TARGETS) cc publish dataset jsonld html website
 
 jsonld: $(JSON_TARGETS) $(JSONLD_TARGETS) vocab
+
+www/context.jsonld:
 	@echo writing     www/context.jsonld
 	@cp data/context.jsonld www/context.jsonld
 

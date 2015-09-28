@@ -16,9 +16,9 @@
    dc:hasVersion "0.3.0";
    dc:identifier "copyleft-next";
    dc:title "copyleft-next";
-   dc:creator <http://www.wikidata.org/entity/Q7325725>;
+   dc:creator <https://www.wikidata.org/entity/Q7325725>;
    dc:creator <http://dbpedia.org/resource/Richard_Fontana>;
    dc:replaces <https://licensedb.org/id/copyleft-next-0.2.1>.
 
-<https://www.wikidata.org/wiki/Q7325725> owl:sameAs <http://dbpedia.org/page/Richard_Fontana>.
+<https://www.wikidata.org/entity/Q7325725> owl:sameAs <http://dbpedia.org/page/Richard_Fontana>.
 
