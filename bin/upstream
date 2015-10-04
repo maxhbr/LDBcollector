@@ -1,0 +1,10 @@
+#!/bin/sh
+
+mkdir --parents upstream/plaintext
+mkdir --parents upstream/rdf
+src/build/plaintext-gnu.sh
+src/build/plaintext-cc.sh
+src/build/plaintext-odc.sh
+src/build/rdf-gnu.sh
+src/build/rdf-cc.sh
+

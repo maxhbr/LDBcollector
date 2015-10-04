@@ -10,7 +10,7 @@
             "homepage": "https://licensedb.org/id/",
             "type": "HdtDatasource",
             "settings": {
-                "file": "www/dl/licensedb.%DATE%.hdt"
+                "file": "www/dl/licensedb.hdt"
             }
         }
     }
