@@ -3,7 +3,7 @@ AFFERO GENERAL PUBLIC LICENSE
 
 Version 1, January 2002
 
-Copyright © 2002 Affero Inc.
+Copyright Â© 2002 Affero Inc.
 510 Third Street - Suite 225, San Francisco, CA 94107, USA
 
 This license is a modified version of the GNU General Public License

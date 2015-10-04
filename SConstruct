@@ -103,15 +103,24 @@ for f in Glob('www/id/*.jsonld'):
     Depends(basename + '.html', [env.File('data/context.jsonld'), Glob('src/site/*.php')])
     env.build_license_page(f)
 
-
-# www/id/%.html: www/id/%.jsonld data/context.jsonld src/site/license-page.php src/site/metadata.php
-# 	@echo Serializing to $@
-# 	@php src/site/license-page.php $< > $@
-
-
 # Generate website
 # ================
 
+Depends('www/id/index.html', [env.File('src/site/page.php')])
+env.Command('www/id/index.html', 'src/site/id.php', 'php src/site/page.php $SOURCE "../" > $TARGET')
+
+for f in Split('licensedb.css favicon.ico licensedb.png'):
+    env.Command('www/' + str(f), 'src/site/' + str(f), 'cp $SOURCE $TARGET')
+
+for f in Split('index.html license.html ns.html'):
+    Depends('www/' + str(f), [env.File('src/site/page.php'), env.File('www/ns.jsonld')])
+    env.Command('www/' + str(f), 'src/site/' + str(f), 'php src/site/page.php $SOURCE "" > $TARGET')
+
+env.Command('www/nprogress.css', 'node_modules/nprogress/nprogress.css', 'cp $SOURCE $TARGET')
+env.Command('www/js/nprogress.js', 'node_modules/nprogress/nprogress.js', 'cp $SOURCE $TARGET')
+
+Depends('www/js/app.js', Glob('src/*.jsx'))
+env.Command('www/js/app.js', 'webpack.config.js', 'node_modules/.bin/webpack -p -d --progress --colors --display-error-details')
 
 # ;; Local Variables:
 # ;; mode: python
