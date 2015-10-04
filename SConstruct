@@ -87,6 +87,31 @@ env.Command('www/dl/licensedb.nt', 'www/dl/licensedb.ttl', 'rapper -i turtle $SO
 env.Command('www/dl/licensedb.hdt', 'www/dl/licensedb.nt', RDF2HDT + ' -f ntriples $SOURCE $TARGET')
 env.Command('etc/ldf-server.json', 'etc/ldf-server.template.json', 'sed "s/%DATE%/' + TODAY + '/" < $SOURCE > $TARGET')
 
+# Generate website license pages
+# ==============================
+
+env.Append(BUILDERS = {
+    'build_license_page': Builder(
+        action = 'php src/site/license-page.php $SOURCE > $TARGET',
+        suffix = '.html',
+        src_suffix = '.jsonld'
+    ),
+})
+
+for f in Glob('www/id/*.jsonld'):
+    (basename, suffix) = os.path.splitext(str(f))
+    Depends(basename + '.html', [env.File('data/context.jsonld'), Glob('src/site/*.php')])
+    env.build_license_page(f)
+
+
+# www/id/%.html: www/id/%.jsonld data/context.jsonld src/site/license-page.php src/site/metadata.php
+# 	@echo Serializing to $@
+# 	@php src/site/license-page.php $< > $@
+
+
+# Generate website
+# ================
+
 
 # ;; Local Variables:
 # ;; mode: python

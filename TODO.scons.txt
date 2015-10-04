@@ -1,9 +1,4 @@
-# Download rdfhdt from http://www.rdfhdt.org/download/ and then place a
-# link to rdf2hdt in bin, e.g.:
-#     ln -s ~/code/3rdparty/hdt-it/trunk/hdt-lib/tools/rdf2hdt bin/
-RDF2HDT := bin/rdf2hdt
 
-TODAY = `date +"%Y-%m-%d"`
 HTML_TARGETS = $(patsubst %.ttl,%.html,$(wildcard www/id/*.ttl))
 JSONLD_TARGETS = $(patsubst %.ttl,%.jsonld,$(wildcard www/id/*.ttl))
 
@@ -40,9 +35,6 @@ www/js/nprogress.js: node_modules/nprogress/nprogress.js | www; @cp $< $@
 
 www/js/app.js: src/app.jsx src/license.jsx src/prefixes.jsx
 	node_modules/.bin/webpack -p -d --progress --colors --display-error-details
-
-clean:
-	rm -rf www
 
 # Local Variables:
 # mode: makefile

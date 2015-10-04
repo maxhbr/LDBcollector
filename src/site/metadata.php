@@ -158,7 +158,6 @@ function get_single_english_literal ($name, $data, $context)
     return $value["@value"];
 }
 
-
 function get_single_literal_value ($name, $data, $context)
 {
     /* A literal in JSON-LD may be just a string, or an object with
