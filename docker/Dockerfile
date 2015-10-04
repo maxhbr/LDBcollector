@@ -43,18 +43,7 @@ WORKDIR /srv
 RUN git clone https://gitlab.com/kuno/licensedb.git
 
 WORKDIR /srv/licensedb
-# RUN mkdir --parents node_modules
-# WORKDIR /srv/licensedb/node_modules
-# RUN git clone https://github.com/RubenVerborgh/HDT-Node hdt
-# WORKDIR /srv/licensedb/node_modules/hdt
-# RUN git checkout 90022554f11ead4cee92b960b4de43eebf72354c
-# RUN git submodule init && git submodule update
-# RUN npm install --unsafe-perm
-# RUN npm test
-# WORKDIR /srv/licensedb
-
 ENV HOME /root
-
 RUN ln -s /root/hdt-cpp/hdt-lib/tools/rdf2hdt bin/rdf2hdt
 RUN bin/bootstrap.sh
 RUN scons

@@ -25,8 +25,9 @@ def activate_virtualenv (appname):
     if not data_home:
         home = os.getenv ('HOME')
         if not home:
-            print ('ERROR: $HOME environment variable not set')
-            sys.exit (1)
+            # probably building under docker
+            print ('WARNING: $HOME environment variable not set, using /root')
+            home = '/root'
 
         data_home = join (home, '.local', 'share')
 
