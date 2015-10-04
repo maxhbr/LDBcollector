@@ -11,8 +11,11 @@ JSONLD_TARGETS = $(patsubst %.ttl,%.jsonld,$(wildcard www/id/*.ttl))
 WEB_SOURCES = index.html license.html ns.html
 WEB_VERBATIM = licensedb.css favicon.ico licensedb.png
 WEB_TARGETS := $(addprefix www/,$(WEB_SOURCES) $(WEB_VERBATIM))
+JS_TARGETS = www/js/nprogress.js www/js/app.js www/nprogress.css
 
-all: $(TXT_TARGETS) cc publish dataset jsonld html website
+all: $(TXT_TARGETS) $(JS_TARGETS) cc publish dataset jsonld html website
+
+js: $(JS_TARGETS)
 
 jsonld: $(JSON_TARGETS) $(JSONLD_TARGETS) vocab
 
@@ -46,6 +49,7 @@ dataset: cc publish
 www:
 	mkdir --parents www/id
 	mkdir --parents www/dl
+	mkdir --parents www/js
 
 upstream:
 	mkdir --parents upstream/plaintext
@@ -83,6 +87,11 @@ www/%.html: src/site/%.html src/site/page.php vocab | www
 www/favicon.ico: src/site/favicon.ico | www; @cp $< $@
 www/licensedb.png: src/site/licensedb.png | www; @cp $< $@
 www/licensedb.css: src/site/licensedb.css | www; @cp $< $@
+www/nprogress.css: node_modules/nprogress/nprogress.css | www; @cp $< $@
+www/js/nprogress.js: node_modules/nprogress/nprogress.js | www; @cp $< $@
+
+www/js/app.js: src/app.jsx src/license.jsx src/prefixes.jsx
+	node_modules/.bin/webpack -p -d --progress --colors --display-error-details
 
 clean:
 	rm -rf www

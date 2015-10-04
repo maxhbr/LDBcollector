@@ -83,3 +83,48 @@ a:visited {   color: #002757; }
 #filter label { padding-right: 1em; }
 input[type=checkbox] { vertical-align: bottom; }
 ul#database { clear: right; }
+
+
+article.license-group {
+    margin: 0;
+}
+
+article.license-group > h1 {
+    margin: 32px 0 16px 0;
+    padding: 0 32px;
+}
+
+div.license-group {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+div.license-group h2 {
+    margin: 16px 0 24px 0;
+    font-weight: normal;
+    border-bottom: 2px solid #000;
+}
+
+section.license-metadata {
+    max-width: 320px;
+    padding: 0 32px;
+}
+
+section.license-plaintext {
+    width: 620px;
+    padding: 0 32px;
+}
+
+section.license-plaintext > pre {
+    font-family: "courier new", monospace;
+    font-size: 12px;
+}
+
+div.label-wrapper { display: inline-block; min-width: 10em; }
+span.prefix { color: #888; }
+span.label  { color: #000; }

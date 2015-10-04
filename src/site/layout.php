@@ -4,21 +4,13 @@
     <meta charset="utf-8" />
     <title><?=$title ?></title>
     <link rel="stylesheet" href="<?=$wwwroot ?>licensedb.css" type="text/css">
-    <?php echo $embedded_vocab; ?>
-
-    <style type="text/css">
-     article.license-details { height: 88em; }
-     p.plaintext,
-     iframe { float: left; width: 46em; height: 80em; margin: 0; padding: 0; border: 0; }
-     .sidebar {
-         width: 24em;
-         float: left;
-         border: 1px solid #888;
-         padding: 1em;
-         margin: 0 1em 1em 0;
-     }
-     .sidebar hr { border: 0; border-top: 1px solid #888; }
+    <link href="<?=$wwwroot ?>nprogress.css" rel="stylesheet" />
+    <style>
+     #nprogress .bar { background: #fff; }
+     #nprogress .peg { box-shadow: 0 0 10px #fff, 0 0 5px #fff; }
+     #nprogress .spinner-icon { border-top-color: #fff; border-left-color: #fff; }
     </style>
+    <?php echo $embedded_vocab; ?>
   </head>
 
   <body>
@@ -36,18 +28,22 @@
       </div>
     </div>
     <div id="contentwrapper">
-      <div id="content"><?php echo $content ?></div>
+        <?php echo $content ?>
     </div>
 
-    <div id="footer">
-      <p class="copyright">
-        &copy; 2015 <a href="https://frob.nl">Kuno Woudt</a>, software licensed
-        under <a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache
-        2.0</a>, database available under <a rel="license"
-        href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
-        See <a href="/license">the license page</a> for more details.
-      </p>
-    </div>
+    <?php if ($footer): ?>
+        <div id="footer">
+            <p class="copyright">
+                &copy; 2015 <a href="https://frob.nl">Kuno Woudt</a>, software licensed under
+                <a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache
+                2.0</a>, database available under <a rel="license"
+                href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
+                See <a href="/license">the license page</a> for more details.
+            </p>
+        </div>
+    <?php endif ?>
+
+    <?php echo $scripts ?>
 
   </body>
 </html>

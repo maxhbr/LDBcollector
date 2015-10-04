@@ -3,7 +3,7 @@
 $lines = file ($argv[1]);
 $wwwroot = $argv[2];
 $title = array_shift ($lines);
-$content = join ("", $lines);
+$content = '<div id="content">' . join ("", $lines) . '</div>';
 
 // if this is the vocab page, embed the vocabulary.
 if ($argv[1] === "src/site/ns.html") {
@@ -14,5 +14,8 @@ if ($argv[1] === "src/site/ns.html") {
 } else {
     $embedded_vocab = "";
 }
+
+$footer = true;
+$scripts = "";
 
 require dirname(__FILE__) . "/layout.php";

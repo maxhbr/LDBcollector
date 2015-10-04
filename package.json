@@ -4,17 +4,29 @@
     "clone": "^1.0.2",
     "contextify": "rvagg/contextify#nan2",
     "eslint": "^1.5.1",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-react": "^3.4.2",
     "hdt": "^1.2.2",
+    "httpinvoke": "^1.4.0",
+    "imports-loader": "^0.6.4",
     "jsonld": "^0.4.1",
+    "jsx-loader": "^0.13.2",
     "lazy": "^1.0.11",
     "ldf-server": "^1.1.6",
     "mocha": "^2.3.3",
     "negotiator": "^0.5.3",
+    "nprogress": "^0.2.0",
+    "react": "^0.13.3",
+    "react-tools": "^0.13.3",
     "request": "^2.64.0",
     "request-promise": "^0.4.3",
     "turtle-to-jsonld": "warpr/turtle-to-jsonld",
     "underscore": "^1.8.3",
-    "underscore.string": "^3.2.2"
+    "underscore.string": "^3.2.2",
+    "wald": "warpr/waldjs",
+    "webpack": "^1.12.2",
+    "webpack-stats-plugin": "^0.1.0",
+    "when": "^3.7.3"
   },
   "description": "LicenseDB, the License Database project.",
   "engines": {
@@ -27,7 +39,7 @@
     "type": "git",
     "url": "https://github.com/warpr/licensedb.git"
   },
-  "license": "Apache-2",
+  "license": "Apache-2.0",
   "name": "licensedb",
   "version": "1.0.1"
 }
