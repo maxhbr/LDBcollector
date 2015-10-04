@@ -9,8 +9,7 @@ import datetime
 RDF2HDT = 'bin/rdf2hdt'
 
 TODAY = datetime.date.today().isoformat()
-env = Environment(ENV = {'PATH' : os.environ['PATH']})
-
+env = Environment(ENV = {'PATH': os.environ['PATH'], 'HOME': os.environ['HOME']})
 
 # Generate www/context.jsonld
 # ===========================
