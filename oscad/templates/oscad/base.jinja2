@@ -23,5 +23,9 @@
       {%- block content %}{%- endblock -%}
     </div>
     {%- include 'javascript.jinja2' -%}
+    {%- if request.piwik -%}
+      {%- from 'piwik.jinja2' import piwik -%}
+      {{ piwik(request.piwik.baseurl, request.piwik.siteid) }}
+    {%- endif -%}
   </body>
 </html>

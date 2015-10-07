@@ -1,3 +1,5 @@
+from collections import namedtuple
+
 from pyramid.config import Configurator
 from pyramid.session import UnencryptedCookieSessionFactoryConfig
 from pyramid.settings import asbool
@@ -20,6 +22,9 @@ class OscadSettings(object):
         self.oslic_url = oslic_url
 
 
+Piwik = namedtuple('Piwik', ['baseurl', 'siteid'])
+
+
 def oscad_default_legal_expert(request):
     return request.translate('your legal expert')
 
@@ -30,8 +35,21 @@ oscad_default_settings = OscadSettings(legal_expert=oscad_default_legal_expert,
                                        oslic_url=oslic_url)
 
 
+def piwik_from_settings(settings):
+    baseurl = settings.get('piwik.baseurl')
+    siteid = settings.get('piwik.siteid')
+
+    if baseurl and siteid is not None:
+        return Piwik(baseurl, siteid)
+    return None
+
+
 def oscad_settings(request):
     return request.registry.settings.oscad_settings
+
+
+def piwik(request):
+    return request.registry.settings.piwik
 
 
 def add_toplevel_link(config, route_name, link_text):
@@ -93,6 +111,7 @@ def main(global_config, **settings):
     config.add_directive('add_toplevel_link', add_toplevel_link)
     config.add_request_method(scss_path)
     config.add_request_method(oscad_settings, property=True)
+    config.add_request_method(piwik, property=True)
     config.add_request_method(oslic_chapter_url)
 
     config.add_renderer('scss', renderer_factory)
@@ -116,6 +135,7 @@ def main(global_config, **settings):
         'jquery')
 
     config.registry.settings.oscad_settings = oscad_default_settings
+    config.registry.settings.piwik = piwik_from_settings(settings)
 
     config.add_route('index', '')
     config.add_route('request', 'request')
