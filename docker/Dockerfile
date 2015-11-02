@@ -14,13 +14,23 @@ RUN add-apt-key --keyserver pool.sks-keyservers.net 573BFD6B3D8FBC641079A6ABABF5
 COPY nginx/sources.list     /etc/apt/sources.list.d/nginx.list
 
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get -y install build-essential curl git libkyotocabinet-dev libraptor2-dev \
-    nginx python-virtualenv python-pip php5-cli screen raptor2-utils scons
+RUN apt-get -y install build-essential curl git libkyotocabinet-dev \
+    libpython-dev libraptor2-dev nginx python-virtualenv python-pip php5-cli \
+    screen raptor2-utils scons wget
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /root
-RUN git clone https://github.com/rdfhdt/hdt-cpp
+
+RUN wget http://download.drobilla.net/serd-0.22.0.tar.bz2
+RUN bzcat serd-0.22.0.tar.bz2 | tar xf -
+RUN cd serd-0.22.0 \
+    && ./waf configure \
+    && ./waf \
+    && ./waf install
+
+RUN git clone https://github.com/rdfhdt/hdt-cpp \
+  && cd hdt-cpp && git checkout 1c0c145738e533d1ba9ed515075978a3b8957cd8
 
 RUN cd /root/hdt-cpp/libcds-v1.0.12 \
   && make \
@@ -45,6 +55,7 @@ RUN git clone https://gitlab.com/kuno/licensedb.git
 WORKDIR /srv/licensedb
 ENV HOME /root
 RUN ln -s /root/hdt-cpp/hdt-lib/tools/rdf2hdt bin/rdf2hdt
+RUN npm install
 RUN bin/bootstrap.sh
 RUN scons
 
@@ -54,4 +65,3 @@ COPY nginx/licensedb.org.conf  /etc/nginx/conf.d/licensedb.org.conf
 COPY service/nginx.sh          /etc/service/nginx/run
 COPY service/licensedb.sh      /etc/service/licensedb/run
 COPY service/ldf.sh            /etc/service/ldf/run
-
