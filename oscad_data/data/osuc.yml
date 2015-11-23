@@ -1,146 +1,142 @@
-"04S":
-  number: "04S"
-  name: OSUC-04S
-  desc: >-
-    You are going to modify a received open source program,
-    application, or server, before you will distribute it to 3rd
-    parties - in the form of sources. But you do not combine
-    this modified program, application, or server with other
-    software components in the sense of software development
-"06":
-  number: "06"
-  name: OSUC-06
-  desc: >-
-    Only for yourself and just as you received it, you are going
-    to combine an unmodified open source library, code snippet,
-    module, or plugin into a larger software unit as one of its
-    parts.
+---
 "01":
   number: "01"
   name: OSUC-01
-  desc: >-
-    Only for yourself, you are going to use an unmodified open
-    source program, application, or server – just as you
-    received it. In this case, you do not combine it with other
-    components in the sense of software development.
-"04B":
-  number: "04B"
-  name: OSUC-04B
-  desc: >-
-    You are going to modify a received open source program,
-    application, or server, before you will distribute it to 3rd
-    parties - in the form of binaries. But you do not combine
-    this modified program, application, or server with other
-    software components in the sense of software development
-"10S":
-  number: "10S"
-  name: OSUC-10S
-  desc: >-
-    Before you will distribute it to 3rd parties in the form of
-    sources, you are going to modify an open source library,
-    code snippet, module, or plugin, which you combine with
-    other software components in the sense of software
-    development.
-"07S":
-  number: "07S"
-  name: OSUC-07S
-  desc: >-
-    Just as you received it and before you will distribute it to
-    3rd parties - in the form of sources and together with the
-    larger software unit, you are going to combine and embed an
-    unmodified open source library, code snippet, module, or
-    plugin into a larger software unit in the sense of software
-    development
+  desc: ! >-
+    Only for yourself, you are going to use an unmodified open source program, application,
+    or server just as you received it. But you do not combine it with other components
+    in the sense of software development
 "02S":
   number: "02S"
   name: OSUC-02S
-  desc: >-
-    Just as you received it, you are going to distribute an
-    unmodified open source program, application, or server to
-    3rd parties - in the form of sources. In this act of
-    distribution, you do not combine this program, application,
-    or server with other software components in the sense of
-    software development.
-"07B":
-  number: "07B"
-  name: OSUC-07B
-  desc: >-
-    Just as you received it and before you will distribute it to
-    3rd parties - in the form of binaries and together with the
-    larger software unit, you are going to combine and embed an
-    unmodified open source library, code snippet, module, or
-    plugin into a larger software unit in the sense of software
-    development
-"08S":
-  number: "08S"
-  name: OSUC-08S
-  desc: >-
-    Before you will distribute it to 3rd parties in the form of
-    sources, you are going to modify an open source library,
-    code snippet, module, or plugin. But you do not combine it
-    with other software components in the sense of software
-    development.
+  desc: ! >-
+    Just as you received it, you are going to distribute an unmodified open source
+    program, application, or server to third parties in the form of sources. In this
+    act of distribution, you do not combine this program, application, or server with
+    other software components in the sense of software development
 "02B":
   number: "02B"
   name: OSUC-02B
-  desc: >-
-    Just as you received it, you are going to distribute an
-    unmodified open source program, application, or server to
-    3rd parties - in the form of binaries. In this act of
-    distribution, you do not combine this program, application,
-    or server with other software components in the sense of
-    software development.
-"09":
-  number: "09"
-  name: OSUC-09
-  desc: >-
-    Only for yourself, you are going to modify an open source
-    library, code snippet, module, or plugin, and you will
-    combine it - in the sense of software development - into a
-    larger software unit as one of its parts.
-"05B":
-  number: "05B"
-  name: OSUC-05B
-  desc: >-
-    Just as you received it, you are going to distribute an
-    unmodified open source library, code snippet, module, or
-    plugin to 3rd parties - in the form of binaries. In this act
-    of distribution, you do not combine this library, code
-    snippet, module, or plugin with other software components in
-    the sense of software development
+  desc: ! >-
+    Just as you received it, you are going to distribute an unmodified open source
+    program, application, or server to third parties in the form of binaries. In this
+    act of distribution, you do not combine this program, application, or server with
+    other software components in the sense of software development
+"03L":
+  number: "03L"
+  name: OSUC-03L
+  desc: ! >-
+    You are executing an open source program, application, or server which you have
+    modified (but not combined with other components in the sense of software development)
+    and which distributes its input/output only locally to you
+"03N":
+  number: "03N"
+  name: OSUC-03N
+  desc: ! >-
+    You are executing an open source program, application, or server which you have
+    modified (but not combined with other components in the sense of software development)
+    and which distributes its input/output to you or other users via the internet
+"04S":
+  number: "04S"
+  name: OSUC-04S
+  desc: ! >-
+    You are going to modify an open source program, application, or server after you
+    received it and before you will distribute it to third parties in the form of
+    sources. But you do not combine this modified program, application, or server
+    with other software components in the sense of software development
+"04B":
+  number: "04B"
+  name: OSUC-04B
+  desc: ! >-
+    You are going to modify an open source program, application, or server after you
+    received it and before you will distribute it to third parties in the form of
+    binaries. But you do not combine this modified program, application, or server
+    with other software components in the sense of software development
 "05S":
   number: "05S"
   name: OSUC-05S
-  desc: >-
-    Just as you received it, you are going to distribute an
-    unmodified open source library, code snippet, module, or
-    plugin to 3rd parties  - in the form of sources. In this act
-    of distribution, you do not combine this library, code
-    snippet, module, or plugin with other software components in
-    the sense of software development
-"10B":
-  number: "10B"
-  name: OSUC-10B
-  desc: >-
-    Before you will distribute it to 3rd parties in the form of
-    binaries, you are going to modify an open source library,
-    code snippet, module, or plugin, which you combine with
-    other software components in the sense of software
-    development.
-"03":
-  number: "03"
-  name: OSUC-03
-  desc: >-
-    Only for yourself, you are going to modify a received open
-    source program, application, or server, before you will use
-    it. But you do not combine it with other components in the
-    sense of software development
+  desc: ! >-
+    Just as you received it, you are going to distribute an unmodified open source
+    library, code snippet, module, or plugin to third parties in the form of sources.
+    In this act of distribution, you do not combine this library, code snippet, module,
+    or plugin with other software components in the sense of software development
+"05B":
+  number: "05B"
+  name: OSUC-05B
+  desc: ! >-
+    Just as you received it, you are going to distribute an unmodified open source
+    library, code snippet, module, or plugin to third parties in the form of binaries.
+    In this act of distribution, you do not combine this library, code snippet, module,
+    or plugin with other software components in the sense of software development
+"06L":
+  number: "06L"
+  name: OSUC-06L
+  desc: ! >-
+    You are executing any application which distributes input/output only locally
+    to you and which uses an unmodified embedded open source library, code snippet,
+    module, or plugin
+"06N":
+  number: "06N"
+  name: OSUC-06N
+  desc: ! >-
+    You are executing any application which distributes its input/output to you or
+    other users via the internet and which uses an unmodified embedded open source
+    library, code snippet, module, or plugin
+"07S":
+  number: "07S"
+  name: OSUC-07S
+  desc: ! >-
+    Just as you received it and before you will distribute it to third parties in
+    the form of sources and together with a larger software unit, you are going to
+    combine and embed an unmodified open source library, code snippet, module, or
+    plugin into that larger software unit in the sense of software development
+"07B":
+  number: "07B"
+  name: OSUC-07B
+  desc: ! >-
+    Just as you received it and before you will distribute it to third parties in
+    the form of binaries and together with a larger software unit, you are going to
+    combine and embed an unmodified open source library, code snippet, module, or
+    plugin into that larger software unit in the sense of software development
+"08S":
+  number: "08S"
+  name: OSUC-08S
+  desc: ! >-
+    Before you will distribute it to third parties in the form of sources, you are
+    going to modify an open source library, code snippet, module, or plugin. But you
+    do not combine it with other software components in the sense of software development
 "08B":
   number: "08B"
   name: OSUC-08B
-  desc: >-
-    Before you will distribute it to 3rd parties in the form of
-    binaries, you are going to modify an open source library,
-    code snippet, module, or plugin. But you do not combine it
-    with other software components in the sense of software
-    development.
+  desc: ! >-
+    Before you will distribute it to third parties in the form of binaries, you are
+    going to modify an open source library, code snippet, module, or plugin. But you
+    do not combine it with other software components in the sense of software development
+"09L":
+  number: "09L"
+  name: OSUC-09L
+  desc: ! >-
+    You are executing any application which distributes input/output only locally
+    to you and which uses an embedded open source library, code snippet, module, or
+    plugin -- being modified by you
+"09N":
+  number: "09N"
+  name: OSUC-09N
+  desc: ! >-
+    You are executing any application which distributes its input/output to you or
+    other users via the internet and which uses an embedded open source library, code
+    snippet, module, or plugin -- being modified by you
+"10S":
+  number: "10S"
+  name: OSUC-10S
+  desc: ! >-
+    Before you will distribute it to third parties in the form of sources, you are
+    going to modify an open source library, code snippet, module, or plugin, which
+    you combine with other software components in the sense of software development
+"10B":
+  number: "10B"
+  name: OSUC-10B
+  desc: ! >-
+    Before you will distribute it to third parties in the form of binaries, you are
+    going to modify an open source library, code snippet, module, or plugin, which
+    you combine with other software components in the sense of software development
