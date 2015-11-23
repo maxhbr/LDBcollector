@@ -1,49 +1,49 @@
-AGPLv3.0:
+AGPL-3.0:
   name: "GNU Affero General Public License 3.0"
   licensedb_id: AGPL-3.0
-ApLv2.0:
+Apache-2.0:
   name: "Apache License 2.0"
   licensedb_id: Apache-2.0
-BSDv2CL:
+BSD-2-Clause:
   name: 'BSD 2-Clause "Simplified" or "FreeBSD" License'
   licensedb_id: BSD-2-Clause
-BSDv3CL:
+BSD-3-Clause:
   name: 'BSD 3-Clause "New" or "Revised" License'
   licensedb_id: BSD-3-Clause
-CDDLv1.0:
+CDDL-1.0:
   name: "Common Development and Distribution License 1.0"
   licensedb_id: CDDL-1.0
-EPLv1.0:
+EPL-1.0:
   name: "Eclipse Public License 1.0"
   licensedb_id: EPL-1.0
-EUPLv1.1:
+EUPL-1.1:
   name: "European Union Public License, Version 1.1"
   licensedb_id: EUPL-1.1
-GPLv2.0:
+GPL-2.0:
   name: "GNU General Public License version 2.0"
   licensedb_id: GPL-2.0
-GPLv3.0:
+GPL-3.0:
   name: "GNU General Public License version 3.0"
   licensedb_id: GPL-3.0
-LGPLv2.1:
+LGPL-2.1:
   name: 'GNU Library or "Lesser" General Public License version 2.1'
   licensedb_id: LGPL-2.1
-LGPLv3.0:
+LGPL-3.0:
   name: 'GNU Library or "Lesser" General Public License version 3.0'
   licensedb_id: LGPL-3.0
 MIT:
   name: "MIT license"
   licensedb_id: MIT
-MPLv2.0:
+MPL-2.0:
   name: "Mozilla Public License 2.0"
   licensedb_id: MPL-2.0
 MS-PL:
   name: "Microsoft Public License"
   licensedb_id: MS-PL
-PGL:
+PostgreSQL:
   name: "The PostgreSQL License"
   licensedb_id: PostgreSQL
-PHPv3.0:
+PHP-3.0:
   name: "PHP License 3.0"
   licensedb_id: PHP-3.0
 ZLIB:

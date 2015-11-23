@@ -12,7 +12,7 @@ from . import exceptions
 from .models import OSUC, LSUC
 from .version import __version__ as oscad_version
 
-PLANNED_LICENSES = sorted(['AGPLv3.0', 'CDDLv1.0', 'ZLIB'])
+PLANNED_LICENSES = sorted(['CDDL-1.0', 'ZLIB'])
 DEFAULT_LICENSE = 'GPLv2.0'
 
 
