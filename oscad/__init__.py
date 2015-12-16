@@ -79,6 +79,7 @@ def main(global_config, **settings):
     """
     settings['available_locales'] = settings.get(
         'available_locales', '').split()
+    static_prefix = settings.get('static_prefix', 'static')
 
     config = Configurator(settings=settings)
 
@@ -104,14 +105,15 @@ def main(global_config, **settings):
                           'pyramid.events.NewRequest')
     config.add_translation_dirs('oscad:locale')
 
-    config.add_route('scss', 'static/css/{css_path:.*}.css')
-    config.add_static_view('static', 'static', cache_max_age=3600)
+    config.add_route('scss', static_prefix + '/css/{css_path:.*}.css')
+    config.add_static_view(static_prefix, 'static', cache_max_age=3600)
 
-    config.add_static_view(settings.get('bootstrap_location',
-                                        'static/bootstrap'),
-                           'bootstrap')
-    config.add_static_view(settings.get('jquery_location', 'static/jquery'),
-                           'jquery')
+    config.add_static_view(
+        settings.get('bootstrap_location', static_prefix + '/bootstrap'),
+        'bootstrap')
+    config.add_static_view(
+        settings.get('jquery_location', static_prefix + '/jquery'),
+        'jquery')
 
     config.registry.settings.oscad_settings = oscad_default_settings
 
