@@ -35,9 +35,13 @@ tr td:last-child .btn {
   }
 
   ul {
-    -moz-column-width: 8em;
-    -webkit-column-width: 8em;
-    column-width: 8em;
+    -moz-column-width: 9em;
+    -webkit-column-width: 9em;
+    column-width: 9em;
+
+    li {
+      display: inline-block;
+    }
   }
 }
 
