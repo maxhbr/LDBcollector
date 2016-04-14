@@ -2,7 +2,7 @@ from datetime import timedelta
 
 from babel import Locale
 from pyramid.view import view_config
-from pyramid.httpexceptions import HTTPSeeOther, HTTPNotFound
+from pyramid.httpexceptions import HTTPSeeOther, HTTPNotFound, HTTPForbidden
 from pyramid.response import Response
 from pkg_resources import resource_stream
 
@@ -11,6 +11,7 @@ import oscad_data as data
 from . import exceptions
 from .models import OSUC, LSUC
 from .version import __version__ as oscad_version
+from .util import is_application_url
 
 PLANNED_LICENSES = sorted(['CDDL-1.0', 'ZLIB'])
 DEFAULT_LICENSE = 'GPLv2.0'
@@ -142,7 +143,13 @@ def components(request):
 @view_config(route_name='change_language')
 def change_language(request):
     lang = request.matchdict.get('lang')
-    resp = HTTPSeeOther(request.application_url)
+    next = request.GET.get('next')
+    if next and not is_application_url(request, next):
+        raise HTTPForbidden((
+            'The URL you accessed would have led to an redirect outside of '
+            'this webapplication ({}). This is a sign of a phishing attack!'
+        ).format(next))
+    resp = HTTPSeeOther(next or request.application_url)
 
     if lang is None:
         resp.unset_cookie('_LOCALE_')

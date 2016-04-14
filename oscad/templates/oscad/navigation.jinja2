@@ -23,7 +23,8 @@
       <ul class="nav navbar-nav navbar-right">
         {%- for lang in request.available_locales -%}
         <li {% if request.locale_name == lang -%} class="active" {%- endif -%}>
-          <a href="{{ request.route_path('change_language', lang=lang) }}">
+            <a href="{{ request.route_path('change_language', lang=lang,
+              _query={'next': request.path_qs}) }}">
             {{ lang }}
           </a>
         </li>

@@ -1,7 +1,7 @@
 try:
-    from urllib.parse import urljoin  # noqa
+    from urllib.parse import urljoin, urlparse  # noqa
 except ImportError:
-    from urlparse import urljoin  # noqa
+    from urlparse import urljoin, urlparse  # noqa
 
 try:
     from collections import OrderedDict  # noqa

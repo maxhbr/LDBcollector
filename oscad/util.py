@@ -3,6 +3,7 @@ from pkg_resources import resource_isdir
 from pyramid.exceptions import ConfigurationError
 
 from .exceptions import UtilException
+from .compat import urlparse
 
 
 def _check_balances(text, begin, end):
@@ -48,3 +49,29 @@ def load_themes(config, settings):
             config.include(theme)
         except ConfigurationError:
             pass
+
+
+def is_application_url(request, url):
+    p = urlparse(url)
+
+    if p.scheme and p.scheme != request.scheme:
+        return False
+
+    if p.netloc and p.netloc != request.host:
+        return False
+
+    if not p.path:
+        return False
+
+    return is_url_prefix(request.script_name, p.path)
+
+
+def is_url_prefix(prefix, url):
+    if not url.startswith(prefix):
+        return False
+
+    if prefix and prefix[-1] != '/' and \
+       len(url) > len(prefix) and url[len(prefix)] != '/':
+        return False
+
+    return True
