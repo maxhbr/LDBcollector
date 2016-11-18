@@ -1,5 +1,5 @@
 name: checkmodulemd
-namespace: dist
+namespace: modules
 desc: download modulemd and run validity checks upon it
 maintainer: merlinm
 
@@ -9,30 +9,41 @@ input:
 
 environment:
     rpm:
-    #    - rpmgrill
+    #    - avocado
 
 actions:
-    #- name: download rpms from koji
-    #  koji:
-    #    action: download
-    #    koji_build: ${koji_build}
-    #    arch: ['all']
-    #    src: True
-    #    build_log: True
+    - name: download testmodule modulemd file
+      distgit:
+        package: testmodule
+        gitref: master
+        baseurl: http://pkgs.stg.fedoraproject.org
+        path:
+          - testmodule.yaml
+        localpath:
+          - download/testmodule.yaml
+
+    - name: download base-runtime modulemd file
+      distgit:
+        package: base-runtime
+        gitref: master
+        baseurl: http://pkgs.stg.fedoraproject.org
+        path:
+          - base-runtime.yaml
+        localpath:
+          - download/base-runtime.yaml
 
     - name: run avocado modulemd validity test
       shell:
-        - [avocado, run, check_modulemd.py, --mux-inject, 'run:modulemd:/tmp/foo']
-      export: check_modulemd_output
+        - [avocado, run, check_modulemd.py, --mux-inject, 'run:modulemd:${workdir}/download/testmodule.yaml']
 
-    #- name: process rpmgrill results
+    #- name: process avocado run output
     #  python:
     #      file: process_results.py
     #      callable: run
     #      workdir: ${workdir}
     #      koji_build: ${koji_build}
     #      artifactsdir: ${artifactsdir}
-    #  export: rpmgrill_output
+    #  export: check_modulemd_output
 
     #- name: report results to resultsdb
     #  resultsdb:
