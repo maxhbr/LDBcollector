@@ -1,0 +1,39 @@
+name: checkmodulemd
+namespace: dist
+desc: download modulemd and run validity checks upon it
+maintainer: merlinm
+
+input:
+    args:
+        - module
+
+environment:
+    rpm:
+    #    - rpmgrill
+
+actions:
+    #- name: download rpms from koji
+    #  koji:
+    #    action: download
+    #    koji_build: ${koji_build}
+    #    arch: ['all']
+    #    src: True
+    #    build_log: True
+
+    - name: run avocado modulemd validity test
+      shell:
+        - [avocado, run, check_modulemd.py, --mux-inject, 'run:modulemd:/tmp/foo']
+      export: check_modulemd_output
+
+    #- name: process rpmgrill results
+    #  python:
+    #      file: process_results.py
+    #      callable: run
+    #      workdir: ${workdir}
+    #      koji_build: ${koji_build}
+    #      artifactsdir: ${artifactsdir}
+    #  export: rpmgrill_output
+
+    #- name: report results to resultsdb
+    #  resultsdb:
+    #      results: ${check_modulemd_output}
