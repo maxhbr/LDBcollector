@@ -3,7 +3,7 @@
 This contains an [avocado testing framework](http://avocado-framework.github.io/)
 based test to check the validitity of a modulemd file.
 
-It is currently just a skeleton that verifies a 'modulemd' parameter has been
+It is currently little more than a skeleton that verifies a 'modulemd' parameter has been
 passed via avocado and that the parameter refers to a file that exists.
 
 ## Setup
