@@ -9,7 +9,9 @@ input:
 
 environment:
     rpm:
-    #    - avocado
+        - python2-aexpect
+        - python2-avocado
+        - python2-modulemd
 
 actions:
     - name: download testmodule modulemd file
