@@ -1,10 +1,7 @@
 # check_modulemd
 
 This contains an [avocado testing framework](http://avocado-framework.github.io/)
-based test to check the validitity of a modulemd file.
-
-It is currently little more than a skeleton that verifies a 'modulemd' parameter has been
-passed via avocado and that the parameter refers to a file that exists.
+based test to check the validity of a modulemd file.
 
 ## Setup
 
@@ -15,12 +12,12 @@ Install avocado and its dependencies.
 Call avocado to run check_modulemd.py, providing the path to the modulemd file using
 [avocado's parameter passing mechanism](http://avocado-framework.readthedocs.io/en/latest/WritingTests.html#accessing-test-parameters):
 
-    avocado run ./check_modulemd.py --mux-inject 'run:modulemd:/path/to/modulemd'
+    avocado run ./check_modulemd.py --mux-inject 'run:modulemd:/path/to/modulemd.yaml'
 
 For convenience during development of the test script, a wrapper script is
 provided that simplifies passing the required parameter:
 
-    ./run-check.sh /tmp/to/modulemd
+    ./run-check.sh /path/to/modulemd.yaml
 
 ## Example modulemd files
 

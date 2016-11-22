@@ -18,7 +18,8 @@ class ModulemdTest(Test):
 
     def setUp(self):
         """
-        Verify required modulemd file parameter has been specified and exists.
+        Verify required modulemd file parameter has been specified, exists,
+        and can be loaded. The file name and loaded metadata are saved.
         """
         mdfile = self.params.get('modulemd')
         if mdfile is None:
@@ -28,57 +29,94 @@ class ModulemdTest(Test):
         if not os.path.isfile(mdfile):
             self.error("modulemd file %s must exist" % mdfile)
 
-        self.modulemd = mdfile
+        try:
+            mmd = modulemd.ModuleMetadata()
+            mmd.load(mdfile)
+        except:
+            self.error("Could not load modulemd file %s" % mdfile)
 
-    def test_modulemd(self):
+        self.mdfile = mdfile
+        self.mmd = mmd
+
+    def test_debugdump(self):
         """
-        Dummy test
+        Make sure we can dump a copy of the metadata to the logs for debugging.
         """
-        self.log.info("Dummy test for modulemd file %s" % self.modulemd)
+        data = self.mmd.dumps()
+        if not data:
+            self.error("Could not dump metadata for modulemd file %s" %
+                       self.mdfile)
 
-        self.log.info("Attempting to load modulemd file %s" % self.modulemd)
-        mmd = modulemd.ModuleMetadata()
-        mmd.load(self.modulemd)
+        self.log.debug("Metadata dump for modulemd file %s:\n%s" %
+                       (self.mdfile, data))
 
-        self.log.debug("Dump of modulemd: %s" % mmd.dumps())
-
-        # Do we provide an API?
+    def test_api(self):
+        """
+        Do we provide an API?
+        """
         self.log.info("Checking for presence of API definition")
-        self.assertTrue(mmd.api)
+        self.assertTrue(self.mmd.api)
 
-        # Do we include any components?
+        self.log.warn("Implementation incomplete")
+
+    def test_components(self):
+        """
+        Do we include any components?
+        """
         self.log.info("Checking for presence of components")
-        self.assertTrue(mmd.components)
+        self.assertTrue(self.mmd.components)
 
-        # Do our module-level dependencies look sane?
+        self.log.warn("Implementation incomplete")
 
-        # Any spellcheck failures?
+    def test_dependencies(self):
+        """
+        Do our module-level dependencies look sane?
+        """
+        self.log.warn("Not yet implemented")
 
-        # Stretch: Does the description end with a period?
+    def test_spellcheck(self):
+        """
+        Any spellcheck failures?
+        """
+        self.log.warn("Not yet implemented")
+
+    def test_description(self):
+        """
+        Does the description end with a period?
+        """
         self.log.info(
             "Checking for presence of description that is properly punctuated")
-        if mmd.description and len(mmd.description) > 0:
-            if not mmd.description.endswith('.'):
+        if self.mmd.description and len(self.mmd.description) > 0:
+            if not self.mmd.description.endswith('.'):
                 self.error("Description should end with a period: %s" %
-                           mmd.description)
+                           self.mmd.description)
         else:
             self.error("No description")
 
-        # Stretch: And the summary does not?
+    def test_summary(self):
+        """
+        Does the summary not end with a period?
+        """
         self.log.info(
             "Checking for presence of summary that is properly punctuated")
-        if mmd.summary and len(mmd.summary) > 0:
-            if mmd.summary.endswith('.'):
+        if self.mmd.summary and len(self.mmd.summary) > 0:
+            if self.mmd.summary.endswith('.'):
                 self.error("Summary should not end with a period: %s" %
-                           mmd.summary)
+                           self.mmd.summary)
         else:
             self.error("No summary")
 
-        # Stretch: Do all the rationales end with a period?
-        # Are all the components we reference in the packages section available?
-        # If we decide to store core module component list definitions
-        # someplace else, check that the modulemd file actually follows those
-        # definitions
+    def test_rationales(self):
+        """
+        Do all the rationales end with a period?
+        """
+        self.log.warn("Not yet implemented")
+
+    def test_component_availability(self):
+        """
+        Are all the components we reference in the packages section available?
+        """
+        self.log.warn("Not yet implemented")
 
     def tearDown(self):
         """
