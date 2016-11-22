@@ -22,6 +22,14 @@ provided that simplifies passing the required parameter:
 
     ./run-check.sh /tmp/to/modulemd
 
+## Example modulemd files
+
+Some example modulemd files can be obtained from the following locations:
+
+* http://pkgs.stg.fedoraproject.org/cgit/modules/base-runtime.git/plain/base-runtime.yaml
+* http://pkgs.stg.fedoraproject.org/cgit/modules/testmodule.git/plain/testmodule.yaml
+* https://pagure.io/modulemd/raw/master/f/spec.yaml
+
 ## Taskotron
 
 This check should eventually be called by [Taskotron](https://fedoraproject.org/wiki/Taskotron). A *non-working* start of a task definition has been included:
