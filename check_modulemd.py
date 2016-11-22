@@ -54,10 +54,10 @@ class ModulemdTest(Test):
         """
         Do we provide an API?
         """
-        self.log.info("Checking for presence of API definition")
+        self.log.info("Checking for presence of proper API definition")
         self.assertTrue(self.mmd.api)
-
-        self.log.warn("Implementation incomplete")
+        self.assertIsInstance(self.mmd.api.rpms, set)
+        self.assertGreater(len(self.mmd.api.rpms), 0)
 
     def test_components(self):
         """
@@ -65,8 +65,10 @@ class ModulemdTest(Test):
         """
         self.log.info("Checking for presence of components")
         self.assertTrue(self.mmd.components)
-
-        self.log.warn("Implementation incomplete")
+        self.assertIsInstance(self.mmd.components.rpms, dict)
+        self.assertIsInstance(self.mmd.components.modules, dict)
+        self.assertGreater(len(self.mmd.components.rpms) +
+                           len(self.mmd.components.modules), 0)
 
     def test_dependencies(self):
         """
