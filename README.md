@@ -5,7 +5,11 @@ based test to check the validity of a modulemd file.
 
 ## Setup
 
-Install avocado and its dependencies.
+Install prerequisite RPMs if necessary:
+* python-aexpect - dependency for python-avocado
+* python-avocado - avocado testing framework
+* python-enchant - spell checker library
+* hunspell-en-US - English dictionary
 
 ## Running
 

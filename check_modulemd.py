@@ -2,6 +2,7 @@
 
 import os
 import modulemd
+from enchant.checker import SpellChecker
 
 from avocado import main
 from avocado import Test
@@ -75,12 +76,21 @@ class ModulemdTest(Test):
         Do our module-level dependencies look sane?
         """
         self.log.warn("Not yet implemented")
+        self.log.info("Checking sanity of module level dependencies")
+        if self.mmd.requires:
+            for p in self.mmd.requires.keys():
+                self.log.warn("Need to sanity check requires %s (stream: %s)" % (
+                    p, self.mmd.requires[p]))
+        else:
+            self.log.info("No dependencies to sanity check")
 
-    def test_spellcheck(self):
-        """
-        Any spellcheck failures?
-        """
-        self.log.warn("Not yet implemented")
+        self.log.info("Checking sanity of module level build dependencies")
+        if self.mmd.buildrequires:
+            for p in self.mmd.buildrequires.keys():
+                self.log.warn("Need to sanity check build requires %s (stream: %s)" % (
+                    p, self.mmd.buildrequires[p]))
+        else:
+            self.log.info("No build dependencies to sanity check")
 
     def test_description(self):
         """
@@ -95,6 +105,22 @@ class ModulemdTest(Test):
         else:
             self.error("No description")
 
+    def test_description_spelling(self):
+        """
+        Any spellcheck failures in description?
+        """
+        self.log.info("Checking for spelling errors in description")
+        dict = "en_US"
+        try:
+            chkr = SpellChecker(dict)
+        except:
+            self.error(
+                "Could not initialize spell checker with dictionary %s" % dict)
+        chkr.set_text(self.mmd.description)
+        for err in chkr:
+            self.log.warn(
+                "Potential spelling problem in description: %s" % err.word)
+
     def test_summary(self):
         """
         Does the summary not end with a period?
@@ -108,17 +134,78 @@ class ModulemdTest(Test):
         else:
             self.error("No summary")
 
+    def test_summary_spelling(self):
+        """
+        Any spellcheck failures in summary?
+        """
+        self.log.info("Checking for spelling errors in summary")
+        dict = "en_US"
+        try:
+            chkr = SpellChecker(dict)
+        except:
+            self.error(
+                "Could not initialize spell checker with dictionary %s" % dict)
+        chkr.set_text(self.mmd.summary)
+        for err in chkr:
+            self.log.warn(
+                "Potential spelling problem in summary: %s" % err.word)
+
     def test_rationales(self):
         """
         Do all the rationales end with a period?
         """
-        self.log.warn("Not yet implemented")
+        self.log.info(
+            "Checking for presence of component rationales that are properly punctuated")
+
+        for p in self.mmd.components.rpms.values():
+            if p.rationale and len(p.rationale) > 0:
+                if not p.rationale.endswith('.'):
+                    self.error("Rationale for component RPM %s should end with a period: %s" % (
+                        p.name, p.rationale))
+            else:
+                self.error("No rationale for component RPM %s" % p.name)
+        for p in self.mmd.components.modules.values():
+            if p.rationale and len(p.rationale) > 0:
+                if not p.rationale.endswith('.'):
+                    self.error("Rationale for component module %s should end with a period: %s" % (
+                        p.name, p.rationale))
+            else:
+                self.error("No rationale for component module %s" % p.name)
+
+    def test_rationales_spelling(self):
+        """
+        Any spellcheck failures in rationales?
+        """
+        self.log.info("Checking for spelling errors in component rationales")
+        dict = "en_US"
+        try:
+            chkr = SpellChecker(dict)
+        except:
+            self.error(
+                "Could not initialize spell checker with dictionary %s" % dict)
+
+        for p in self.mmd.components.rpms.values():
+            chkr.set_text(p.rationale)
+            for err in chkr:
+                self.log.warn("Potential spelling problem in component RPM %s rationale: %s" % (
+                    p.name, err.word))
+        for p in self.mmd.components.modules.values():
+            chkr.set_text(p.rationale)
+            for err in chkr:
+                self.log.warn("Potential spelling problem in component module %s rationale: %s" % (
+                    p.name, err.word))
 
     def test_component_availability(self):
         """
         Are all the components we reference in the packages section available?
         """
         self.log.warn("Not yet implemented")
+        for p in self.mmd.components.rpms.values():
+            self.log.warn(
+                "Need to check availability of component RPM %s" % p.name)
+        for p in self.mmd.components.modules.values():
+            self.log.warn(
+                "Need to check availability of component module %s" % p.name)
 
     def tearDown(self):
         """
