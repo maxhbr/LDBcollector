@@ -1,0 +1,5 @@
+# bare minimum file that can be loaded as modulemd yaml
+document: modulemd
+version: 1
+data:
+  components:

@@ -75,6 +75,7 @@ class ModulemdTest(Test):
         """
         Do our module-level dependencies look sane?
         """
+        # check that all the references modules and stream are registered in the PDC (i.e. they exist)
         self.log.warn("Not yet implemented")
         self.log.info("Checking sanity of module level dependencies")
         if self.mmd.requires:
@@ -199,6 +200,8 @@ class ModulemdTest(Test):
         """
         Are all the components we reference in the packages section available?
         """
+        # verify that the specified ref (if any, defaults to master HEAD) is available in the
+        # specified repository (if any, defaults to Fedora [stg] dist-git).
         self.log.warn("Not yet implemented")
         for p in self.mmd.components.rpms.values():
             self.log.warn(
