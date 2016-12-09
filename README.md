@@ -42,7 +42,7 @@ Some example modulemd files can be obtained from the following locations:
 
 This check should eventually be called by [Taskotron](https://fedoraproject.org/wiki/Taskotron). A *non-working* start of a task definition has been included:
 
-    runtask ./runtask.yml
+    runtask -i "modules/testmodule#aaca87a82c35c1f0eb85556191f09f8a842abd9f" -t dist_git_commit -a noarch ./runtask.yml
 
 ## Running check_compose.py
 
