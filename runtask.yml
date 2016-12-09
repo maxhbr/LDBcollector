@@ -5,7 +5,7 @@ maintainer: merlinm
 
 input:
     args:
-        - module
+        - dist_git_commit
 
 environment:
     rpm:
@@ -14,29 +14,28 @@ environment:
         - python2-modulemd
 
 actions:
-    - name: download testmodule modulemd file
-      distgit:
-        package: testmodule
-        gitref: master
-        baseurl: http://pkgs.stg.fedoraproject.org
-        path:
-          - testmodule.yaml
-        localpath:
-          - download/testmodule.yaml
+    - name: split the given commit identifier into useful pieces
+      python:
+        file: split_string.py
+        callable: run
+        string: ${dist_git_commit}
+      export: c
 
-    - name: download base-runtime modulemd file
+    - name: download the modulemd file
       distgit:
-        package: base-runtime
-        gitref: master
+        package: ${c.name}
+        gitref: ${c.gitref}
+        # This will always be modules/ ...
+        namespace: ${c.namespace}
         baseurl: http://pkgs.stg.fedoraproject.org
         path:
-          - base-runtime.yaml
+          - ${c.name}.yaml
         localpath:
-          - download/base-runtime.yaml
+          - download/${c.name}.yaml
 
     - name: run avocado modulemd validity test
       shell:
-        - [avocado, run, check_modulemd.py, --mux-inject, 'run:modulemd:${workdir}/download/testmodule.yaml']
+      - [avocado, run, check_modulemd.py, --mux-inject, 'run:modulemd:${workdir}/download/${c.name}.yaml']
 
     #- name: process avocado run output
     #  python:
