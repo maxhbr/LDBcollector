@@ -37,6 +37,18 @@ class ModulemdTest(Test):
         except:
             self.error("Could not load modulemd file %s" % mdfile)
 
+        # Infer the module name from the mdfile name and check that it is sane
+        mdfileModuleName, mdfileExtension = os.path.basename(mdfile).split('.', 1)
+        if (mdfileExtension != 'yaml') and (mdfileExtension != 'yml'):
+            self.error("modulemd file %s must have a .y[a]ml extension" % mdfile)
+        if mmd.name == '':
+            # The name can be missing from the metadata because the builder
+            # knows how to infer it
+            mmd.name = mdfileModuleName
+        elif mmd.name != mdfileModuleName:
+            self.error("modulemd file name %s and module name %s do not match" % (
+                mdfileModuleName, mmd.name))
+
         self.mdfile = mdfile
         self.mmd = mmd
 
@@ -45,6 +57,8 @@ class ModulemdTest(Test):
             if jargonfile is not None:
                 jargonfile = str(jargonfile)
                 dict = DictWithPWL("en_US", jargonfile)
+                for w in self.mmd.name.split('-'):
+                    dict.add_to_session(w)
                 self.chkr = SpellChecker(dict)
             else:
                 self.chkr = SpellChecker("en_US")
