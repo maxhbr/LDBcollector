@@ -3,6 +3,7 @@
 import os
 import modulemd
 from enchant.checker import SpellChecker
+from enchant import DictWithPWL
 
 from avocado import main
 from avocado import Test
@@ -38,6 +39,18 @@ class ModulemdTest(Test):
 
         self.mdfile = mdfile
         self.mmd = mmd
+
+        try:
+            jargonfile = self.params.get('jargonfile')
+            if jargonfile is not None:
+                jargonfile = str(jargonfile)
+                dict = DictWithPWL("en_US", jargonfile)
+                self.chkr = SpellChecker(dict)
+            else:
+                self.chkr = SpellChecker("en_US")
+        except:
+            self.error(
+                "Could not initialize spell checker with dictionary %s" % dict)
 
     def test_debugdump(self):
         """
@@ -111,14 +124,8 @@ class ModulemdTest(Test):
         Any spellcheck failures in description?
         """
         self.log.info("Checking for spelling errors in description")
-        dict = "en_US"
-        try:
-            chkr = SpellChecker(dict)
-        except:
-            self.error(
-                "Could not initialize spell checker with dictionary %s" % dict)
-        chkr.set_text(self.mmd.description)
-        for err in chkr:
+        self.chkr.set_text(self.mmd.description)
+        for err in self.chkr:
             self.log.warn(
                 "Potential spelling problem in description: %s" % err.word)
 
@@ -140,14 +147,8 @@ class ModulemdTest(Test):
         Any spellcheck failures in summary?
         """
         self.log.info("Checking for spelling errors in summary")
-        dict = "en_US"
-        try:
-            chkr = SpellChecker(dict)
-        except:
-            self.error(
-                "Could not initialize spell checker with dictionary %s" % dict)
-        chkr.set_text(self.mmd.summary)
-        for err in chkr:
+        self.chkr.set_text(self.mmd.summary)
+        for err in self.chkr:
             self.log.warn(
                 "Potential spelling problem in summary: %s" % err.word)
 
@@ -178,21 +179,15 @@ class ModulemdTest(Test):
         Any spellcheck failures in rationales?
         """
         self.log.info("Checking for spelling errors in component rationales")
-        dict = "en_US"
-        try:
-            chkr = SpellChecker(dict)
-        except:
-            self.error(
-                "Could not initialize spell checker with dictionary %s" % dict)
 
         for p in self.mmd.components.rpms.values():
-            chkr.set_text(p.rationale)
-            for err in chkr:
+            self.chkr.set_text(p.rationale)
+            for err in self.chkr:
                 self.log.warn("Potential spelling problem in component RPM %s rationale: %s" % (
                     p.name, err.word))
         for p in self.mmd.components.modules.values():
-            chkr.set_text(p.rationale)
-            for err in chkr:
+            self.chkr.set_text(p.rationale)
+            for err in self.chkr:
                 self.log.warn("Potential spelling problem in component module %s rationale: %s" % (
                     p.name, err.word))
 

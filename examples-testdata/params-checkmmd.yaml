@@ -1,0 +1,2 @@
+modulemd: 'examples-modulemd/base-runtime.yaml'
+jargonfile: 'examples-testdata/jargon.txt'
