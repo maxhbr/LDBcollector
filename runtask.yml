@@ -35,7 +35,12 @@ actions:
 
     - name: run avocado modulemd validity test
       shell:
-      - [avocado, run, check_modulemd.py, --job-results-dir, "${workdir}", --mux-inject, 'run:modulemd:${workdir}/download/${c.name}.yaml']
+      - [
+          avocado, run, check_modulemd.py, --job-results-dir, "${workdir}",
+          --mux-inject,
+          'run:modulemd:${workdir}/download/${c.name}.yaml',
+          'run:jargonfile:examples-testdata/jargon.txt',
+      ]
 
     - name: process avocado run output, for resultsdb
       python:
