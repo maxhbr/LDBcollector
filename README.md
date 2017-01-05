@@ -24,9 +24,11 @@ Call avocado to run check_modulemd.py, providing the path to the modulemd file u
 
     avocado run ./check_modulemd.py --mux-inject 'run:modulemd:/path/to/modulemd.yaml'
 
-In order to use a custom list of packaging jargon in the spell-checker, a
-second parameter must be passed. This can be done by using a multiplexer
-yaml file like the one used in this example:
+In order to use a custom list of packaging jargon in the spell-checker, an optional additional parameter may be passed. This can be done by also providing the path to the jargon file on the command line:
+
+    avocado run ./check_modulemd.py --mux-inject 'run:modulemd:/path/to/modulemd.yaml' 'run:jargonfile:/path/to/jargon.txt'
+
+or by providing both the modulemd and jargonfile parameters using a multiplexer yaml file like the one used in this example:
 
     avocado run ./check_modulemd.py -m examples-testdata/params-checkmmd.yaml
 
