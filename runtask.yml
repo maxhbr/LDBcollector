@@ -27,7 +27,7 @@ actions:
         gitref: ${c.gitref}
         # This will always be modules/ ...
         namespace: ${c.namespace}
-        baseurl: http://pkgs.stg.fedoraproject.org
+        baseurl: https://src.stg.fedoraproject.org
         path:
           - ${c.name}.yaml
         localpath:
