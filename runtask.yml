@@ -1,5 +1,5 @@
 name: checkmodulemd
-namespace: modules
+namespace: dist
 desc: download modulemd and run validity checks upon it
 maintainer: merlinm
 
