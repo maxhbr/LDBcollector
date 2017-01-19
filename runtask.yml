@@ -12,6 +12,7 @@ environment:
         - python2-aexpect
         - python2-avocado
         - python2-modulemd
+        - python2-enchant
 
 actions:
     - name: split the given commit identifier into useful pieces
@@ -35,14 +36,13 @@ actions:
 
     - name: run avocado modulemd validity test
       shell:
-          - ignorereturn:
-              - [
-                  avocado, run, check_modulemd.py,
-                  --job-results-dir, "${workdir}",
-                  --mux-inject,
-                  'run:modulemd:${workdir}/download/${c.name}.yaml',
-                  'run:jargonfile:examples-testdata/jargon.txt',
-              ]
+          - [
+              avocado, run, check_modulemd.py,
+              --job-results-dir, "${workdir}",
+              --mux-inject,
+              'run:modulemd:${workdir}/download/${c.name}.yaml',
+              'run:jargonfile:examples-testdata/jargon.txt',
+          ]
 
     - name: process avocado run output, for resultsdb
       python:
