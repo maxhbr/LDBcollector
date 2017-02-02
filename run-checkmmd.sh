@@ -22,9 +22,10 @@ do
       ;;
   esac
 done
-  
 
-cmd="avocado run ./check_modulemd.py"
+CHECK_MODULE_DIR=$(dirname $0)
+
+cmd="avocado run $CHECK_MODULE_DIR/check_modulemd.py"
 
 if [[ $DEBUG = true ]]
 then
