@@ -34,8 +34,8 @@ class ModulemdTest(Test):
         try:
             mmd = modulemd.ModuleMetadata()
             mmd.load(mdfile)
-        except:
-            self.error("Could not load modulemd file %s" % mdfile)
+        except Exception as ex:
+            self.error("There was an error while processing modulemd file %s: %s" % (mdfile, ex))
 
         # Infer the module name from the mdfile name and check that it is sane
         mdfileModuleName, mdfileExtension = os.path.basename(mdfile).split('.', 1)
