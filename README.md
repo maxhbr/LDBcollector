@@ -35,6 +35,15 @@ provided that simplifies passing the required parameter:
 
     ./run-checkmmd.sh [--debug] /path/to/modulemd.yaml
 
+You can also use provided Dockerfile:
+
+    docker build --tag=$USER/check-modulemd .
+
+And use it:
+
+    docker run -ti -v $PWD/$MODULE.yaml:/$MODULE.yaml $USER/check-modulemd
+
+
 
 ### Example modulemd files
 
