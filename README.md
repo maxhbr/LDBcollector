@@ -49,8 +49,8 @@ And use it:
 
 Some example modulemd files can be obtained from the following locations:
 
-* http://pkgs.stg.fedoraproject.org/cgit/modules/base-runtime.git/plain/base-runtime.yaml
-* http://pkgs.stg.fedoraproject.org/cgit/modules/testmodule.git/plain/testmodule.yaml
+* http://pkgs.fedoraproject.org/cgit/modules/base-runtime.git/plain/base-runtime.yaml
+* http://pkgs.fedoraproject.org/cgit/modules/testmodule.git/plain/testmodule.yaml
 * https://pagure.io/modulemd/raw/master/f/spec.yaml
 
 ### Taskotron

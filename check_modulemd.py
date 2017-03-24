@@ -210,7 +210,7 @@ class ModulemdTest(Test):
         Are all the components we reference in the packages section available?
         """
         # verify that the specified ref (if any, defaults to master HEAD) is available in the
-        # specified repository (if any, defaults to Fedora [stg] dist-git).
+        # specified repository (if any, defaults to Fedora dist-git).
         self.log.warn("Not yet implemented")
         for p in self.mmd.components.rpms.values():
             self.log.warn(
