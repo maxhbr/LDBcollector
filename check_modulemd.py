@@ -83,7 +83,11 @@ class ModulemdTest(Test):
         Do we provide an API?
         """
         self.log.info("Checking for presence of proper API definition")
-        self.assertTrue(self.mmd.api)
+        #API is not mandatory, but most modules should have it
+        if not self.mmd.api:
+            self.log.warn("API is not defined for module file: %s" %
+                          self.mdfile)
+            return
         self.assertIsInstance(self.mmd.api.rpms, set)
         self.assertGreater(len(self.mmd.api.rpms), 0)
 
