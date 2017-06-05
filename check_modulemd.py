@@ -2,6 +2,7 @@
 
 import os
 import modulemd
+import requests
 from enchant.checker import SpellChecker
 from enchant import DictWithPWL
 
@@ -209,19 +210,42 @@ class ModulemdTest(Test):
                 self.log.warn("Potential spelling problem in component module %s rationale: %s" % (
                     p.name, err.word))
 
+    def _is_commit_ref_available(self, package, namespace):
+        """
+        Check if commit ref is available on git repository
+        """
+        if not package or not namespace:
+            self.error("Missing parameter to check if commit is available")
+
+        repository = "https://src.fedoraproject.org/cgit/%s/%s.git" % (namespace, package.name)
+
+        if package.repository:
+            repository = package.repository
+
+        ref = "HEAD"
+        if package.ref:
+            ref = package.ref
+        patch_path = "/patch/?id=%s" % ref
+
+        url = repository + patch_path
+        resp = requests.head(url)
+        if resp.status_code < 200 or resp.status_code >= 300:
+            self.error("Could not find ref '%s' on '%s'. returned exit status %d; output:\n%s" %
+                       (ref, package.name, resp.status_code, resp.text))
+
+        self.log.info("Found ref: %s for %s" % (ref, package.name))
+
     def test_component_availability(self):
         """
         Are all the components we reference in the packages section available?
         """
-        # verify that the specified ref (if any, defaults to master HEAD) is available in the
-        # specified repository (if any, defaults to Fedora dist-git).
-        self.log.warn("Not yet implemented")
+        # verify that the specified ref (if none, defaults to master HEAD) is available in the
+        # specified repository (if none, defaults to Fedora dist-git).
         for p in self.mmd.components.rpms.values():
-            self.log.warn(
-                "Need to check availability of component RPM %s" % p.name)
+            self._is_commit_ref_available(p, "rpms")
+
         for p in self.mmd.components.modules.values():
-            self.log.warn(
-                "Need to check availability of component module %s" % p.name)
+            self._is_commit_ref_available(p, "modules")
 
     def tearDown(self):
         """
