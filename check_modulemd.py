@@ -8,6 +8,7 @@ from enchant import DictWithPWL
 from avocado import main
 from avocado import Test
 import yaml
+import tempfile
 from moduleframework import module_framework
 
 
@@ -26,14 +27,15 @@ class ModulemdTest(Test):
         """
         mmd = modulemd.ModuleMetadata()
         mdfile = self.params.get('modulemd')
+        self.tmdfile = None
         # try to use module testing farmework if possible
         # https://pagure.io/modularity-testing-framework
         try:
             mtf_backend = module_framework.CommonFunctions()
-            tmdfile = "temp_modulemdfile.yaml"
-            with open(tmdfile, 'w') as yaml_file:
-                yaml.dump(mtf_backend.getModulemdYamlconfig(), yaml_file, default_flow_style=False)
-            mdfile=tmdfile
+            self.tmdfile = tempfile.mkstemp(suffix=".yaml")[1]
+            with open(self.tmdfile, 'w+b') as yamlfile:
+                yaml.dump(mtf_backend.getModulemdYamlconfig(), yamlfile, default_flow_style=False)
+            mdfile=self.tmdfile
         except Exception as e:
             print e
 
@@ -266,6 +268,8 @@ class ModulemdTest(Test):
         """
         Do any required teardown here
         """
+        if self.tmdfile:
+            os.remove(self.tmdfile)
 
 if __name__ == "__main__":
     main()
