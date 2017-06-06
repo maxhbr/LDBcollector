@@ -15,6 +15,7 @@ Install prerequisite RPMs if necessary:
 * python2-requests - HTTP library
 * python-enchant - spell checker library
 * hunspell-en-US - English dictionary
+* module-testing-framework - MTF support (read modulemd files from config)
 
 ## Running check_modulemd.py
 
@@ -35,6 +36,14 @@ For convenience during development of the test script, a wrapper script is
 provided that simplifies passing the required parameter:
 
     ./run-checkmmd.sh [--debug] /path/to/modulemd.yaml
+
+You can run project also as part of Modularity Testing Framework.
+It will read modulemd files from config file and and can be scheduled as one of tests.
+Jargon file can be passed via env variable JARGONFILE=/path/to/jargon.txt or
+as multiplex value
+
+     avocado run ./check_modulemd.py
+
 
 You can also use provided Dockerfile:
 
