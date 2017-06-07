@@ -132,8 +132,11 @@ class ModulemdTest(Test):
         self.log.info(
             "Checking for presence of description that is properly punctuated")
         if self.mmd.description and len(self.mmd.description) > 0:
-            if not self.mmd.description.endswith('.'):
-                self.error("Description should end with a period: %s" %
+            if len(self.mmd.description) != len(self.mmd.description.rstrip()):
+                self.log.warn("Description should not end with newline/whitespace '%s'" %
+                           self.mmd.description)
+            if not self.mmd.description.rstrip().endswith('.'):
+                self.log.warn("Description should end with a period: '%s'" %
                            self.mmd.description)
         else:
             self.error("No description")
@@ -155,8 +158,11 @@ class ModulemdTest(Test):
         self.log.info(
             "Checking for presence of summary that is properly punctuated")
         if self.mmd.summary and len(self.mmd.summary) > 0:
-            if self.mmd.summary.endswith('.'):
-                self.error("Summary should not end with a period: %s" %
+            if len(self.mmd.summary) != len(self.mmd.summary.rstrip()):
+                self.log.warn("Summary should not end with newline/whitespace: '%s'" %
+                           self.mmd.summary)
+            if self.mmd.summary.rstrip().endswith('.'):
+                self.log.warn("Summary should not end with a period: '%s'" %
                            self.mmd.summary)
         else:
             self.error("No summary")
@@ -180,15 +186,21 @@ class ModulemdTest(Test):
 
         for p in self.mmd.components.rpms.values():
             if p.rationale and len(p.rationale) > 0:
-                if not p.rationale.endswith('.'):
-                    self.error("Rationale for component RPM %s should end with a period: %s" % (
-                        p.name, p.rationale))
+                if len(p.rationale) != len(p.rationale.rstrip()):
+                    self.log.warn("Rationale for component RPM %s should" % p.name +
+                                  " not end with newline/whitespace: '%s'" % p.rationale)
+                if not p.rationale.rstrip().endswith('.'):
+                    self.log.warn("Rationale for component RPM %s should end with a period: %s" % (
+                                  p.name, p.rationale))
             else:
                 self.error("No rationale for component RPM %s" % p.name)
         for p in self.mmd.components.modules.values():
             if p.rationale and len(p.rationale) > 0:
-                if not p.rationale.endswith('.'):
-                    self.error("Rationale for component module %s should end with a period: %s" % (
+                if len(p.rationale) != len(p.rationale.rstrip()):
+                    self.log.warn("Rationale for component module %s should" % p.name +
+                                  " not end with newline/whitespace: '%s'" % p.rationale)
+                if not p.rationale.rstrip().endswith('.'):
+                    self.log.warn("Rationale for component module %s should end with a period: '%s'" % (
                         p.name, p.rationale))
             else:
                 self.error("No rationale for component module %s" % p.name)
