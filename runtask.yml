@@ -43,7 +43,6 @@ actions:
             --job-results-dir, "${workdir}",
             --mux-inject,
             'run:modulemd:${workdir}/download/${c.name}.yaml',
-            'run:jargonfile:examples-testdata/jargon.txt',
         ]
 
     - name: process avocado run output, for resultsdb
