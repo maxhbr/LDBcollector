@@ -9,6 +9,7 @@ based tests to conduct various module checks.
 
 Install prerequisite RPMs if necessary:
 
+* pdc-client
 * python2-aexpect - dependency for python-avocado
 * python2-avocado - avocado testing framework
 * python2-modulemd - Module metadata manipulation library
