@@ -2,6 +2,7 @@
 
 import os
 import modulemd
+import requests
 from enchant.checker import SpellChecker
 from enchant import DictWithPWL
 
@@ -83,7 +84,11 @@ class ModulemdTest(Test):
         Do we provide an API?
         """
         self.log.info("Checking for presence of proper API definition")
-        self.assertTrue(self.mmd.api)
+        #API is not mandatory, but most modules should have it
+        if not self.mmd.api:
+            self.log.warn("API is not defined for module file: %s" %
+                          self.mdfile)
+            return
         self.assertIsInstance(self.mmd.api.rpms, set)
         self.assertGreater(len(self.mmd.api.rpms), 0)
 
@@ -127,8 +132,11 @@ class ModulemdTest(Test):
         self.log.info(
             "Checking for presence of description that is properly punctuated")
         if self.mmd.description and len(self.mmd.description) > 0:
-            if not self.mmd.description.endswith('.'):
-                self.error("Description should end with a period: %s" %
+            if len(self.mmd.description) != len(self.mmd.description.rstrip()):
+                self.log.warn("Description should not end with newline/whitespace '%s'" %
+                           self.mmd.description)
+            if not self.mmd.description.rstrip().endswith('.'):
+                self.log.warn("Description should end with a period: '%s'" %
                            self.mmd.description)
         else:
             self.error("No description")
@@ -150,8 +158,11 @@ class ModulemdTest(Test):
         self.log.info(
             "Checking for presence of summary that is properly punctuated")
         if self.mmd.summary and len(self.mmd.summary) > 0:
-            if self.mmd.summary.endswith('.'):
-                self.error("Summary should not end with a period: %s" %
+            if len(self.mmd.summary) != len(self.mmd.summary.rstrip()):
+                self.log.warn("Summary should not end with newline/whitespace: '%s'" %
+                           self.mmd.summary)
+            if self.mmd.summary.rstrip().endswith('.'):
+                self.log.warn("Summary should not end with a period: '%s'" %
                            self.mmd.summary)
         else:
             self.error("No summary")
@@ -175,15 +186,21 @@ class ModulemdTest(Test):
 
         for p in self.mmd.components.rpms.values():
             if p.rationale and len(p.rationale) > 0:
-                if not p.rationale.endswith('.'):
-                    self.error("Rationale for component RPM %s should end with a period: %s" % (
-                        p.name, p.rationale))
+                if len(p.rationale) != len(p.rationale.rstrip()):
+                    self.log.warn("Rationale for component RPM %s should" % p.name +
+                                  " not end with newline/whitespace: '%s'" % p.rationale)
+                if not p.rationale.rstrip().endswith('.'):
+                    self.log.warn("Rationale for component RPM %s should end with a period: %s" % (
+                                  p.name, p.rationale))
             else:
                 self.error("No rationale for component RPM %s" % p.name)
         for p in self.mmd.components.modules.values():
             if p.rationale and len(p.rationale) > 0:
-                if not p.rationale.endswith('.'):
-                    self.error("Rationale for component module %s should end with a period: %s" % (
+                if len(p.rationale) != len(p.rationale.rstrip()):
+                    self.log.warn("Rationale for component module %s should" % p.name +
+                                  " not end with newline/whitespace: '%s'" % p.rationale)
+                if not p.rationale.rstrip().endswith('.'):
+                    self.log.warn("Rationale for component module %s should end with a period: '%s'" % (
                         p.name, p.rationale))
             else:
                 self.error("No rationale for component module %s" % p.name)
@@ -205,19 +222,42 @@ class ModulemdTest(Test):
                 self.log.warn("Potential spelling problem in component module %s rationale: %s" % (
                     p.name, err.word))
 
+    def _is_commit_ref_available(self, package, namespace):
+        """
+        Check if commit ref is available on git repository
+        """
+        if not package or not namespace:
+            self.error("Missing parameter to check if commit is available")
+
+        repository = "https://src.fedoraproject.org/cgit/%s/%s.git" % (namespace, package.name)
+
+        if package.repository:
+            repository = package.repository
+
+        ref = "HEAD"
+        if package.ref:
+            ref = package.ref
+        patch_path = "/patch/?id=%s" % ref
+
+        url = repository + patch_path
+        resp = requests.head(url)
+        if resp.status_code < 200 or resp.status_code >= 300:
+            self.error("Could not find ref '%s' on '%s'. returned exit status %d; output:\n%s" %
+                       (ref, package.name, resp.status_code, resp.text))
+
+        self.log.info("Found ref: %s for %s" % (ref, package.name))
+
     def test_component_availability(self):
         """
         Are all the components we reference in the packages section available?
         """
-        # verify that the specified ref (if any, defaults to master HEAD) is available in the
-        # specified repository (if any, defaults to Fedora dist-git).
-        self.log.warn("Not yet implemented")
+        # verify that the specified ref (if none, defaults to master HEAD) is available in the
+        # specified repository (if none, defaults to Fedora dist-git).
         for p in self.mmd.components.rpms.values():
-            self.log.warn(
-                "Need to check availability of component RPM %s" % p.name)
+            self._is_commit_ref_available(p, "rpms")
+
         for p in self.mmd.components.modules.values():
-            self.log.warn(
-                "Need to check availability of component module %s" % p.name)
+            self._is_commit_ref_available(p, "modules")
 
     def tearDown(self):
         """

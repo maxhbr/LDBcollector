@@ -12,8 +12,9 @@ Install prerequisite RPMs if necessary:
 * python2-aexpect - dependency for python-avocado
 * python2-avocado - avocado testing framework
 * python2-modulemd - Module metadata manipulation library
-* python-enchant - spell checker library 
-* hunspell-en-US - English dictionary 
+* python2-requests - HTTP library
+* python-enchant - spell checker library
+* hunspell-en-US - English dictionary
 
 ## Running check_modulemd.py
 
