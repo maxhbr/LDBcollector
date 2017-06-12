@@ -13,6 +13,7 @@ environment:
         - python2-avocado
         - python2-modulemd
         - python2-enchant
+        - modularity-testing-framework
 
 actions:
     - name: split the given commit identifier into useful pieces

@@ -5,16 +5,17 @@ import modulemd
 import requests
 from enchant.checker import SpellChecker
 from enchant import DictWithPWL
-
 from avocado import main
 from avocado import Test
+import yaml
+import tempfile
+from moduleframework import module_framework
 
 
 class ModulemdTest(Test):
 
     """
     Validate modulemd
-
     params:
     :param modulemd: Path to the modulemd file.
     """
@@ -24,16 +25,29 @@ class ModulemdTest(Test):
         Verify required modulemd file parameter has been specified, exists,
         and can be loaded. The file name and loaded metadata are saved.
         """
+        mmd = modulemd.ModuleMetadata()
         mdfile = self.params.get('modulemd')
+        self.tmdfile = None
+        # try to use module testing farmework if possible
+        # https://pagure.io/modularity-testing-framework
+        try:
+            mtf_backend = module_framework.CommonFunctions()
+            self.tmdfile = tempfile.mkstemp(suffix=".yaml")[1]
+            with open(self.tmdfile, 'w+b') as yamlfile:
+                yaml.dump(mtf_backend.getModulemdYamlconfig(), yamlfile, default_flow_style=False)
+            mdfile=self.tmdfile
+        except Exception as e:
+            print e
+
+
+
         if mdfile is None:
             self.error("modulemd parameter must be supplied")
 
         mdfile = str(mdfile)
         if not os.path.isfile(mdfile):
             self.error("modulemd file %s must exist" % mdfile)
-
         try:
-            mmd = modulemd.ModuleMetadata()
             mmd.load(mdfile)
         except Exception as ex:
             self.error("There was an error while processing modulemd file %s: %s" % (mdfile, ex))
@@ -49,12 +63,15 @@ class ModulemdTest(Test):
         elif mmd.name != mdfileModuleName:
             self.error("modulemd file name %s and module name %s do not match" % (
                 mdfileModuleName, mmd.name))
-
         self.mdfile = mdfile
         self.mmd = mmd
 
+        self.chkr = None
+        jargonfile = self.params.get('jargonfile')
+        dict = ""
+        if not jargonfile:
+            jargonfile = os.environ.get('JARGONFILE')
         try:
-            jargonfile = self.params.get('jargonfile')
             if jargonfile is not None:
                 jargonfile = str(jargonfile)
                 dict = DictWithPWL("en_US", jargonfile)
@@ -263,6 +280,8 @@ class ModulemdTest(Test):
         """
         Do any required teardown here
         """
+        if self.tmdfile:
+            os.remove(self.tmdfile)
 
 if __name__ == "__main__":
     main()
