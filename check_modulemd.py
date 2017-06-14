@@ -5,6 +5,8 @@ import modulemd
 import requests
 from enchant.checker import SpellChecker
 from enchant import DictWithPWL
+from pdc_client import PDCClient
+
 from avocado import main
 from avocado import Test
 import yaml
@@ -120,25 +122,45 @@ class ModulemdTest(Test):
         self.assertGreater(len(self.mmd.components.rpms) +
                            len(self.mmd.components.modules), 0)
 
+
+    def _query_pdc(self, module_name, stream):
+        """
+        Check if module and stream are built successfully on PDC server
+        """
+        pdc_server = "https://pdc.fedoraproject.org/rest_api/v1/unreleasedvariants"
+        #Using develop=True to not authenticate to the server
+        pdc_session = PDCClient(pdc_server, ssl_verify=True, develop=True)
+        pdc_query = dict(
+            variant_id = module_name,
+            variant_version = stream,
+            #active=True returns only succesful builds
+            active = True
+        )
+        try:
+            mod_info = pdc_session(**pdc_query)
+        except Exception as ex:
+            self.error("Could not query PDC server for %s (stream: %s) - %s" % (
+                       module_name, stream, ex))
+        if not mod_info or "results" not in mod_info.keys() or not mod_info["results"]:
+            self.error("%s (stream: %s) is not available on PDC" % (
+                       module_name, stream))
+
     def test_dependencies(self):
         """
         Do our module-level dependencies look sane?
         """
         # check that all the references modules and stream are registered in the PDC (i.e. they exist)
-        self.log.warn("Not yet implemented")
         self.log.info("Checking sanity of module level dependencies")
         if self.mmd.requires:
             for p in self.mmd.requires.keys():
-                self.log.warn("Need to sanity check requires %s (stream: %s)" % (
-                    p, self.mmd.requires[p]))
+                self._query_pdc(p, self.mmd.requires[p])
         else:
             self.log.info("No dependencies to sanity check")
 
         self.log.info("Checking sanity of module level build dependencies")
         if self.mmd.buildrequires:
             for p in self.mmd.buildrequires.keys():
-                self.log.warn("Need to sanity check build requires %s (stream: %s)" % (
-                    p, self.mmd.buildrequires[p]))
+                self._query_pdc(p, self.mmd.buildrequires[p])
         else:
             self.log.info("No build dependencies to sanity check")
 
