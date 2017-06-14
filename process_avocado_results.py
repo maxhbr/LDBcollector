@@ -37,6 +37,7 @@ def sanitize(testname):
     """
     testname = testname.split('-', 1)[-1]    # Strip off leading 'XX-'
     testname = testname.replace('.py:', '.') # Remove filename suffixes
+    testname = testname.rsplit(';run-', 1)[0] # Strip off trailing ';run-XXXX'
     return testname
 
 
