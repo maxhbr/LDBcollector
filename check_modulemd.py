@@ -12,6 +12,7 @@ from avocado import Test
 import yaml
 import tempfile
 from moduleframework import module_framework
+from moduleframework import common
 
 
 class ModulemdTest(Test):
@@ -28,20 +29,20 @@ class ModulemdTest(Test):
         and can be loaded. The file name and loaded metadata are saved.
         """
         mmd = modulemd.ModuleMetadata()
-        mdfile = self.params.get('modulemd')
+        mdfile = self.params.get("modulemd")
         self.tmdfile = None
-        # try to use module testing farmework if possible
-        # https://pagure.io/modularity-testing-framework
-        try:
-            mtf_backend = module_framework.CommonFunctions()
-            self.tmdfile = tempfile.mkstemp(suffix=".yaml")[1]
-            with open(self.tmdfile, 'w+b') as yamlfile:
-                yaml.dump(mtf_backend.getModulemdYamlconfig(), yamlfile, default_flow_style=False)
-            mdfile=self.tmdfile
-        except Exception as e:
-            print e
 
-
+        if not mdfile:
+            # try to use module testing farmework if possible
+            # https://pagure.io/modularity-testing-framework
+            try:
+                mtf_backend = module_framework.CommonFunctions()
+                self.tmdfile = tempfile.mkstemp(suffix=".yaml")[1]
+                with open(self.tmdfile, "w+b") as yamlfile:
+                    yaml.dump(mtf_backend.getModulemdYamlconfig(), yamlfile, default_flow_style=False)
+                mdfile = self.tmdfile
+            except common.ConfigExc:
+                pass
 
         if mdfile is None:
             self.error("modulemd parameter must be supplied")
@@ -56,7 +57,7 @@ class ModulemdTest(Test):
 
         # Infer the module name from the mdfile name and check that it is sane
         mdfileModuleName, mdfileExtension = os.path.basename(mdfile).split('.', 1)
-        if (mdfileExtension != 'yaml') and (mdfileExtension != 'yml'):
+        if (mdfileExtension != "yaml") and (mdfileExtension != "yml"):
             self.error("modulemd file %s must have a .y[a]ml extension" % mdfile)
         if mmd.name == '':
             # The name can be missing from the metadata because the builder
