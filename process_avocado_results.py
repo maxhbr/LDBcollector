@@ -56,10 +56,10 @@ def run(item, item_type, checkname, workdir='.', artifactsdir='artifacts'):
     results = read_results(workdir)
 
     # 2. Store log
-    log_path = store_logs(workdir, artifactsdir)
+    store_logs(workdir, artifactsdir)
 
     # 3. Massage avocado results into a format suitable for resultsdb/taskotron
-    details = list(massage_results(results, checkname, item, item_type, log_path))
+    details = list(massage_results(results, checkname, item, item_type, artifactsdir))
     output = check.export_YAML(details)
     return output
 
