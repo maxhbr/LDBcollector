@@ -9,10 +9,14 @@ input:
 
 environment:
     rpm:
+        - pdc-client
         - python2-aexpect
         - python2-avocado
         - python2-modulemd
+        - python2-requests
         - python2-enchant
+        - hunspell-en-US
+        - modularity-testing-framework
 
 actions:
     - name: split the given commit identifier into useful pieces
@@ -42,7 +46,6 @@ actions:
             --job-results-dir, "${workdir}",
             --mux-inject,
             'run:modulemd:${workdir}/download/${c.name}.yaml',
-            'run:jargonfile:examples-testdata/jargon.txt',
         ]
 
     - name: process avocado run output, for resultsdb

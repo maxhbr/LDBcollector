@@ -5,16 +5,20 @@ import modulemd
 import requests
 from enchant.checker import SpellChecker
 from enchant import DictWithPWL
+from pdc_client import PDCClient
 
 from avocado import main
 from avocado import Test
+import yaml
+import tempfile
+from moduleframework import module_framework
+from moduleframework import common
 
 
 class ModulemdTest(Test):
 
     """
     Validate modulemd
-
     params:
     :param modulemd: Path to the modulemd file.
     """
@@ -24,23 +28,36 @@ class ModulemdTest(Test):
         Verify required modulemd file parameter has been specified, exists,
         and can be loaded. The file name and loaded metadata are saved.
         """
-        mdfile = self.params.get('modulemd')
+        mmd = modulemd.ModuleMetadata()
+        mdfile = self.params.get("modulemd")
+        self.tmdfile = None
+
+        if not mdfile:
+            # try to use module testing farmework if possible
+            # https://pagure.io/modularity-testing-framework
+            try:
+                mtf_backend = module_framework.CommonFunctions()
+                self.tmdfile = tempfile.mkstemp(suffix=".yaml")[1]
+                with open(self.tmdfile, "w+b") as yamlfile:
+                    yaml.dump(mtf_backend.getModulemdYamlconfig(), yamlfile, default_flow_style=False)
+                mdfile = self.tmdfile
+            except common.ConfigExc:
+                pass
+
         if mdfile is None:
             self.error("modulemd parameter must be supplied")
 
         mdfile = str(mdfile)
         if not os.path.isfile(mdfile):
             self.error("modulemd file %s must exist" % mdfile)
-
         try:
-            mmd = modulemd.ModuleMetadata()
             mmd.load(mdfile)
         except Exception as ex:
             self.error("There was an error while processing modulemd file %s: %s" % (mdfile, ex))
 
         # Infer the module name from the mdfile name and check that it is sane
         mdfileModuleName, mdfileExtension = os.path.basename(mdfile).split('.', 1)
-        if (mdfileExtension != 'yaml') and (mdfileExtension != 'yml'):
+        if (mdfileExtension != "yaml") and (mdfileExtension != "yml"):
             self.error("modulemd file %s must have a .y[a]ml extension" % mdfile)
         if mmd.name == '':
             # The name can be missing from the metadata because the builder
@@ -49,23 +66,54 @@ class ModulemdTest(Test):
         elif mmd.name != mdfileModuleName:
             self.error("modulemd file name %s and module name %s do not match" % (
                 mdfileModuleName, mmd.name))
-
         self.mdfile = mdfile
         self.mmd = mmd
 
-        try:
-            jargonfile = self.params.get('jargonfile')
-            if jargonfile is not None:
+    def _init_spell_checker(self):
+        """
+        Initialize spell checker dictionary
+        """
+
+        default_dict = "en_US"
+        spell_dict = None
+
+        jargonfile = self.params.get('jargonfile')
+        if not jargonfile:
+            jargonfile = os.environ.get('JARGONFILE')
+        if jargonfile is not None:
+            try:
                 jargonfile = str(jargonfile)
-                dict = DictWithPWL("en_US", jargonfile)
-                for w in self.mmd.name.split('-'):
-                    dict.add_to_session(w)
-                self.chkr = SpellChecker(dict)
-            else:
-                self.chkr = SpellChecker("en_US")
+                spell_dict = DictWithPWL(default_dict, jargonfile)
+            except:
+                self.error(
+                    "Could not initialize dictionary using %s file" % jargonfile)
+
+        if not spell_dict:
+            try:
+                spell_dict = DictWithPWL(default_dict)
+            except:
+                self.error(
+                    "Could not initialize spell checker with dictionary %s" % default_dict)
+
+            #Check if there is jargonfile on module repo
+            url = ("https://src.fedoraproject.org/cgit/modules/%s.git/plain/jargon.txt" %
+                   self.mmd.name)
+            resp = requests.get(url)
+            if resp.status_code >= 200 and resp.status_code < 300:
+                for w in resp.content.split("\n"):
+                    if w != '':
+                        spell_dict.add_to_session(w)
+
+        #add words from module name as jargon
+        for w in self.mmd.name.split('-'):
+            spell_dict.add_to_session(w)
+
+        try:
+            chkr = SpellChecker(spell_dict)
         except:
-            self.error(
-                "Could not initialize spell checker with dictionary %s" % dict)
+            self.error("Could not initialize spell checker")
+
+        return chkr
 
     def test_debugdump(self):
         """
@@ -103,25 +151,45 @@ class ModulemdTest(Test):
         self.assertGreater(len(self.mmd.components.rpms) +
                            len(self.mmd.components.modules), 0)
 
+
+    def _query_pdc(self, module_name, stream):
+        """
+        Check if module and stream are built successfully on PDC server
+        """
+        pdc_server = "https://pdc.fedoraproject.org/rest_api/v1/unreleasedvariants"
+        #Using develop=True to not authenticate to the server
+        pdc_session = PDCClient(pdc_server, ssl_verify=True, develop=True)
+        pdc_query = dict(
+            variant_id = module_name,
+            variant_version = stream,
+            #active=True returns only succesful builds
+            active = True
+        )
+        try:
+            mod_info = pdc_session(**pdc_query)
+        except Exception as ex:
+            self.error("Could not query PDC server for %s (stream: %s) - %s" % (
+                       module_name, stream, ex))
+        if not mod_info or "results" not in mod_info.keys() or not mod_info["results"]:
+            self.error("%s (stream: %s) is not available on PDC" % (
+                       module_name, stream))
+
     def test_dependencies(self):
         """
         Do our module-level dependencies look sane?
         """
         # check that all the references modules and stream are registered in the PDC (i.e. they exist)
-        self.log.warn("Not yet implemented")
         self.log.info("Checking sanity of module level dependencies")
         if self.mmd.requires:
             for p in self.mmd.requires.keys():
-                self.log.warn("Need to sanity check requires %s (stream: %s)" % (
-                    p, self.mmd.requires[p]))
+                self._query_pdc(p, self.mmd.requires[p])
         else:
             self.log.info("No dependencies to sanity check")
 
         self.log.info("Checking sanity of module level build dependencies")
         if self.mmd.buildrequires:
             for p in self.mmd.buildrequires.keys():
-                self.log.warn("Need to sanity check build requires %s (stream: %s)" % (
-                    p, self.mmd.buildrequires[p]))
+                self._query_pdc(p, self.mmd.buildrequires[p])
         else:
             self.log.info("No build dependencies to sanity check")
 
@@ -146,8 +214,9 @@ class ModulemdTest(Test):
         Any spellcheck failures in description?
         """
         self.log.info("Checking for spelling errors in description")
-        self.chkr.set_text(self.mmd.description)
-        for err in self.chkr:
+        chkr = self._init_spell_checker()
+        chkr.set_text(self.mmd.description)
+        for err in chkr:
             self.log.warn(
                 "Potential spelling problem in description: %s" % err.word)
 
@@ -172,8 +241,9 @@ class ModulemdTest(Test):
         Any spellcheck failures in summary?
         """
         self.log.info("Checking for spelling errors in summary")
-        self.chkr.set_text(self.mmd.summary)
-        for err in self.chkr:
+        chkr = self._init_spell_checker()
+        chkr.set_text(self.mmd.summary)
+        for err in chkr:
             self.log.warn(
                 "Potential spelling problem in summary: %s" % err.word)
 
@@ -211,14 +281,15 @@ class ModulemdTest(Test):
         """
         self.log.info("Checking for spelling errors in component rationales")
 
+        chkr = self._init_spell_checker()
         for p in self.mmd.components.rpms.values():
-            self.chkr.set_text(p.rationale)
-            for err in self.chkr:
+            chkr.set_text(p.rationale)
+            for err in chkr:
                 self.log.warn("Potential spelling problem in component RPM %s rationale: %s" % (
                     p.name, err.word))
         for p in self.mmd.components.modules.values():
-            self.chkr.set_text(p.rationale)
-            for err in self.chkr:
+            chkr.set_text(p.rationale)
+            for err in chkr:
                 self.log.warn("Potential spelling problem in component module %s rationale: %s" % (
                     p.name, err.word))
 
@@ -263,6 +334,8 @@ class ModulemdTest(Test):
         """
         Do any required teardown here
         """
+        if self.tmdfile:
+            os.remove(self.tmdfile)
 
 if __name__ == "__main__":
     main()

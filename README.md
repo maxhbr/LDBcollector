@@ -9,12 +9,14 @@ based tests to conduct various module checks.
 
 Install prerequisite RPMs if necessary:
 
+* pdc-client
 * python2-aexpect - dependency for python-avocado
 * python2-avocado - avocado testing framework
 * python2-modulemd - Module metadata manipulation library
 * python2-requests - HTTP library
 * python-enchant - spell checker library
 * hunspell-en-US - English dictionary
+* module-testing-framework - MTF support (read modulemd files from config)
 
 ## Running check_modulemd.py
 
@@ -36,6 +38,14 @@ provided that simplifies passing the required parameter:
 
     ./run-checkmmd.sh [--debug] /path/to/modulemd.yaml
 
+You can run project also as part of Modularity Testing Framework.
+It will read modulemd files from config file and and can be scheduled as one of tests.
+Jargon file can be passed via env variable JARGONFILE=/path/to/jargon.txt or
+as multiplex value
+
+     avocado run ./check_modulemd.py
+
+
 You can also use provided Dockerfile:
 
     docker build --tag=$USER/check-modulemd .
@@ -56,7 +66,6 @@ Some example modulemd files can be obtained from the following locations:
 
 ### Taskotron
 
-This check should eventually be called by [Taskotron](https://fedoraproject.org/wiki/Taskotron). A *non-working* start of a task definition has been included:
+This check is executed by [Taskotron](https://fedoraproject.org/wiki/Taskotron), see [results](https://taskotron.fedoraproject.org/resultsdb/results?&testcases=dist.modulemd). An example command to run this through Taskotron on your local machine is:
 
-    runtask -i "modules/testmodule#aaca87a82c35c1f0eb85556191f09f8a842abd9f" -t dist_git_commit -a noarch ./runtask.yml
-
+    runtask --item 'modules/dnf#70a99271d33db2bb35c79cf0bb9a2c62548646cc' --type dist_git_commit ./runtask.yml

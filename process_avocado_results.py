@@ -37,6 +37,7 @@ def sanitize(testname):
     """
     testname = testname.split('-', 1)[-1]    # Strip off leading 'XX-'
     testname = testname.replace('.py:', '.') # Remove filename suffixes
+    testname = testname.rsplit(';run-', 1)[0] # Strip off trailing ';run-XXXX'
     return testname
 
 
@@ -55,10 +56,10 @@ def run(item, item_type, checkname, workdir='.', artifactsdir='artifacts'):
     results = read_results(workdir)
 
     # 2. Store log
-    log_path = store_logs(workdir, artifactsdir)
+    store_logs(workdir, artifactsdir)
 
     # 3. Massage avocado results into a format suitable for resultsdb/taskotron
-    details = list(massage_results(results, checkname, item, item_type, log_path))
+    details = list(massage_results(results, checkname, item, item_type, artifactsdir))
     output = check.export_YAML(details)
     return output
 
