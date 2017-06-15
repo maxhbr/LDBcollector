@@ -66,7 +66,6 @@ Some example modulemd files can be obtained from the following locations:
 
 ### Taskotron
 
-This check should eventually be called by [Taskotron](https://fedoraproject.org/wiki/Taskotron). A *non-working* start of a task definition has been included:
+This check is executed by [Taskotron](https://fedoraproject.org/wiki/Taskotron), see [results](https://taskotron.fedoraproject.org/resultsdb/results?&testcases=dist.modulemd). An example command to run this through Taskotron on your local machine is:
 
-    runtask -i "modules/testmodule#aaca87a82c35c1f0eb85556191f09f8a842abd9f" -t dist_git_commit -a noarch ./runtask.yml
-
+    runtask --item 'modules/dnf#70a99271d33db2bb35c79cf0bb9a2c62548646cc' --type dist_git_commit ./runtask.yml
