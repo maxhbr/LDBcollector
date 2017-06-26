@@ -11,14 +11,23 @@ environment:
     rpm:
         - pdc-client
         - python2-aexpect
-        - python2-avocado
         - python2-modulemd
         - python2-requests
         - python2-enchant
         - hunspell-en-US
-        - modularity-testing-framework
 
 actions:
+    - name: install avocado from updates-testing
+      shell: >
+        dnf install -y --enablerepo=updates-testing
+        python2-avocado python2-avocado-plugins-varianter-yaml-to-mux
+
+    # NOTE: temporary until the package is in Fedora proper
+    - name: install modularity-testing-framework
+      shell:
+        - dnf copr -y enable phracek/modularity-testing-framework
+        - dnf install --best -y modularity-testing-framework
+
     - name: split the given commit identifier into useful pieces
       python:
         file: split_string.py
