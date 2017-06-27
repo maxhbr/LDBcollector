@@ -1,0 +1,13 @@
+# Valid Documentation Licenses according to https://fedoraproject.org/wiki/Licensing:Main
+
+CC-BY                               # Creative Commons Attribution license
+CC-BY-SA                            # Creative Commons Attribution-ShareAlike
+CDL                                 # Apple's Common Documentation License, Version 1.0
+FBSDDL                              # FreeBSD Documentation License
+GFDL                                # GNU Free Documentation License
+IEEE                                # IEEE and Open Group Documentation License
+LDPL                                # Linux Documentation Project License
+OFSFDL                              # Old FSF Documentation License
+Open Publication                    # Open Publication License, v1.0
+Public Use                          # Public Use License, v1.0
+Verbatim                            # Verbatim License
