@@ -18,9 +18,10 @@ environment:
 
 actions:
     - name: install avocado from updates-testing
-      shell: >
-        dnf install -y --enablerepo=updates-testing
-        python2-avocado python2-avocado-plugins-varianter-yaml-to-mux
+      shell:
+        - >-
+          dnf install -y --enablerepo=updates-testing
+          python2-avocado python2-avocado-plugins-varianter-yaml-to-mux
 
     # NOTE: temporary until the package is in Fedora proper
     - name: install modularity-testing-framework
