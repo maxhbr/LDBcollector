@@ -1,0 +1,14 @@
+# Valid Content Licenses according to https://fedoraproject.org/wiki/Licensing:Main
+
+BSD with advertising                # Open Data License (GeoLite Country and GeoLite City databases)
+CC0                                 # Creative Commons Zero 1.0 Universal
+CC-BY                               # Creative Commons Attribution license
+CC-BY-ND                            # Creative Commons Attribution-NoDerivs
+CC-BY-SA                            # Creative Commons Attribution-ShareAlike
+DMTF                                # Distributed Management Task Force License
+DSL                                 # Design Science License
+EFML                                # Ethymonics Free Music License
+Free Art                            # Free Art License
+GeoGratis                           # GeoGratis Licence Agreement
+Green OpenMusic                     # LinuxTag Green OpenMusic License
+OAL                                 # EFF Open Audio License v1

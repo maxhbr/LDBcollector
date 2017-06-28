@@ -3,6 +3,7 @@
 import os
 import modulemd
 import requests
+import re
 from enchant.checker import SpellChecker
 from enchant import DictWithPWL
 from pdc_client import PDCClient
@@ -219,6 +220,69 @@ class ModulemdTest(Test):
         for err in chkr:
             self.log.warn(
                 "Potential spelling problem in description: %s" % err.word)
+
+
+    def _read_license_file(self, filename):
+        """
+        Read all licenses from a file and return them as a list
+        """
+        try:
+            with open(filename) as f:
+                data = f.readlines()
+        except Exception as ex:
+            self.error("Could not open file %s (%s)" % (filename, ex))
+        licenses = []
+        for line in data:
+            #remove all comments from the file
+            license = re.sub("#.*","", line).strip()
+            if not license:
+                continue
+            licenses.append(license)
+        return licenses
+
+    def _split_license(self, license):
+        license_regex = re.compile(r'\(([^)]+)\)|\s(?:and|or|AND|OR)\s')
+        return (x.strip() for x in
+                (l for l in license_regex.split(license) if l))
+
+    def test_license(self):
+        """
+        Does the module provide license?
+        Based on code from: https://github.com/rpm-software-management/rpmlint/blob/master/TagsCheck.py
+        """
+        self.log.info(
+            "Checking for presence of license")
+        if not self.mmd.module_licenses:
+            self.error("No module license")
+
+        self.assertIsInstance(self.mmd.module_licenses, set)
+        self.assertGreater(len(self.mmd.module_licenses), 0)
+
+        valid_licenses = []
+        license_files = [
+            "valid_sw_licenses.txt",
+            "valid_doc_licenses.txt",
+            "valid_content_licenses.txt"
+        ]
+
+        for license_file in license_files:
+            licenses = self._read_license_file(license_file)
+            if not licenses:
+                continue
+            valid_licenses.extend(licenses)
+
+        #remove duplicated entries
+        valid_licenses = list(set(valid_licenses))
+
+        for license in self.mmd.module_licenses:
+            if license in valid_licenses:
+                continue
+            for l1 in self._split_license(license):
+                if l1 in valid_licenses:
+                    continue
+                for l2 in self._split_license(l1):
+                    if l2 not in valid_licenses:
+                        self.error("License '%s' is not valid" % l2)
 
     def test_summary(self):
         """

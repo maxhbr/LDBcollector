@@ -12,6 +12,7 @@ Install prerequisite RPMs if necessary:
 * pdc-client
 * python2-aexpect - dependency for python-avocado
 * python2-avocado - avocado testing framework
+* python2-avocado-plugins-varianter-yaml-to-mux - parse YAML file into variants (Required for avocado-51.0 or later)
 * python2-modulemd - Module metadata manipulation library
 * python2-requests - HTTP library
 * python-enchant - spell checker library
