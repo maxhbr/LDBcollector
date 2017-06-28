@@ -26,7 +26,7 @@ actions:
     # NOTE: temporary until the package is in Fedora proper
     - name: install modularity-testing-framework
       shell:
-        - dnf copr -y enable phracek/modularity-testing-framework
+        - dnf copr -y enable phracek/Modularity-testing-framework
         - dnf install --best -y modularity-testing-framework
 
     - name: split the given commit identifier into useful pieces
