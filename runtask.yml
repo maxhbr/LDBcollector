@@ -24,10 +24,13 @@ actions:
           python2-avocado python2-avocado-plugins-varianter-yaml-to-mux
 
     # NOTE: temporary until the package is in Fedora proper
+    # updates-testing needs to be enabled as mtf installs avocado packages
     - name: install modularity-testing-framework
       shell:
         - dnf copr -y enable phracek/Modularity-testing-framework
-        - dnf install --best -y modularity-testing-framework
+        - >-
+          dnf install --best -y --enablerepo=updates-testing
+          modularity-testing-framework
 
     - name: split the given commit identifier into useful pieces
       python:
