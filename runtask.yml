@@ -9,7 +9,7 @@ input:
 
 environment:
     rpm:
-        - pdc-client
+        - python2-pdc-client
         - python2-aexpect
         - python2-modulemd
         - python2-requests
