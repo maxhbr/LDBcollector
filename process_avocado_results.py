@@ -72,19 +72,22 @@ def read_results(workdir):
 
 
 def store_logs(workdir, artifactdir):
-    log_paths = ["test-results", "html"]
+    log_path = "test-results"
 
-    for log_path in log_paths:
-        resultsdir = os.path.join(workdir, 'latest/%s/' % log_path)
+    resultsdir = os.path.join(workdir, 'latest/%s/' % log_path)
 
-        # Copy everything in log directory over to be archived.
-        for path in os.listdir(resultsdir):
-            src = os.path.join(resultsdir, path)
-            dst = os.path.join(artifactdir, log_path, path)
-            if os.path.isfile(src):
-                shutil.copyfile(src, dst)
-            else:
-                shutil.copytree(src, dst)
+    dst_artifactdir = os.path.join(artifactdir, log_path)
+    if not os.path.exists(dst_artifactdir):
+        os.makedirs(dst_artifactdir)
+
+    # Copy everything in log directory over to be archived.
+    for path in os.listdir(resultsdir):
+        src = os.path.join(resultsdir, path)
+        dst = os.path.join(dst_artifactdir, path)
+        if os.path.isfile(src):
+            shutil.copyfile(src, dst)
+        else:
+            shutil.copytree(src, dst)
 
     # Also, copy a few top-level summary files
     toplevel = os.path.join(workdir, 'latest/')

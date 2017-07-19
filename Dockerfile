@@ -3,9 +3,13 @@ FROM fedora:25
 RUN dnf install --setopt=tsflags=nodocs -y \
     python2-aexpect \
     python2-avocado \
+    python2-avocado-plugins-varianter-yaml-to-mux \
     python2-modulemd \
+    python2-requests \
     python-enchant \
     hunspell-en-US \
+    python2-pdc-client \
+    modularity-testing-framework \
     python2-dnf && \
     dnf clean all
 

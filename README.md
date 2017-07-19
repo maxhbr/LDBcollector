@@ -17,7 +17,15 @@ Install prerequisite RPMs if necessary:
 * python2-requests - HTTP library
 * python-enchant - spell checker library
 * hunspell-en-US - English dictionary
-* module-testing-framework - MTF support (read modulemd files from config)
+* modularity-testing-framework - MTF support (read modulemd files from config)
+
+e.g.
+
+    dnf install -y python2-aexpect \
+    python2-avocado python2-avocado-plugins-varianter-yaml-to-mux \
+    python2-modulemd python2-requests python-enchant \
+    hunspell-en-US python2-pdc-client \
+    modularity-testing-framework python2-dnf
 
 ## Running check_modulemd.py
 
