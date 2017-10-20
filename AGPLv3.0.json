@@ -4,7 +4,8 @@
   },
   "name": "GNU Affero General Public License (AGPL) version 3",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "https://www.gnu.org/licenses/agpl.html"
 }

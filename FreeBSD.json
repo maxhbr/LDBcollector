@@ -5,7 +5,8 @@
   "name": "FreeBSD license",
   "tags": [
     "fdl-compatible",
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki?title=License:FreeBSD"
 }

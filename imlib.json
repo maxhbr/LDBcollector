@@ -1,7 +1,8 @@
 {
   "name": "License of imlib2",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki/License:Imlib2"
 }

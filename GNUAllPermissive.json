@@ -4,7 +4,8 @@
   },
   "name": "GNU All-Permissive License",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
 }

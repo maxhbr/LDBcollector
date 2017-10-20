@@ -1,7 +1,8 @@
 {
   "name": "GNU Lesser General Public License (LGPL) version 3",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "https://www.gnu.org/licenses/lgpl.html"
 }

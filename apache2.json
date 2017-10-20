@@ -1,7 +1,8 @@
 {
   "name": "Apache License, Version 2.0",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki/License:Apache2.0"
 }

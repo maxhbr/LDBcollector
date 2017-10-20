@@ -1,7 +1,8 @@
 {
   "name": "Zope Public License, versions 2.0 and 2.1",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki?title=License:ZopePLv2.1"
 }

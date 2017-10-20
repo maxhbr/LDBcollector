@@ -1,7 +1,8 @@
 {
   "name": "Universal Permissive License (UPL)",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki/License:Universal_Permissive_License"
 }

@@ -4,7 +4,8 @@
   },
   "name": "Expat License",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki/License:Expat"
 }

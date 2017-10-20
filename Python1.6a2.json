@@ -1,7 +1,8 @@
 {
   "name": "License of Python 1.6a2 and earlier versions",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki?title=License:Python1.6a2"
 }

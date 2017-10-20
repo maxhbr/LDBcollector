@@ -1,7 +1,8 @@
 {
   "name": "License of the iMatix Standard Function Library",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki?title=License:SFL"
 }

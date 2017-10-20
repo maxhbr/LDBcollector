@@ -1,7 +1,8 @@
 {
   "name": "License of Vim, Version 6.1 or later",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki/License:Vim7.2"
 }

@@ -1,7 +1,8 @@
 {
   "name": "WTFPL, Version 2",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://sam.zoy.org/wtfpl/COPYING"
 }

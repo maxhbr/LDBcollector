@@ -1,7 +1,8 @@
 {
   "name": "Freetype Project License",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "http://directory.fsf.org/wiki/License:FreeType"
 }

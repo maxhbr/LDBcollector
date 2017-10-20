@@ -4,7 +4,8 @@
   },
   "name": "CeCILL version 2",
   "tags": [
-    "glp-compatible"
+    "glp-compatible",
+    "libre"
   ],
   "uri": "https://directory.fsf.org/wiki/License:CeCILLv2"
 }
