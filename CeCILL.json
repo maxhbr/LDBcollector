@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "CECILL-2.0"
+  },
+  "name": "CeCILL version 2",
+  "tags": [
+    "glp-compatible"
+  ],
+  "uri": "https://directory.fsf.org/wiki/License:CeCILLv2"
+}

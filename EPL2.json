@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "EPL-2.0"
+  },
+  "name": "Eclipse Public License Version 2.0",
+  "tags": [
+    "libre"
+  ],
+  "uri": "http://directory.fsf.org/wiki/License:EPLv2.0"
+}

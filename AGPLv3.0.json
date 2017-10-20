@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "AGPL-3.0"
+  },
+  "name": "GNU Affero General Public License (AGPL) version 3",
+  "tags": [
+    "glp-compatible"
+  ],
+  "uri": "/licenses/agpl.html"
+}

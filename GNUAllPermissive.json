@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "FSFAP"
+  },
+  "name": "GNU All-Permissive License",
+  "tags": [
+    "glp-compatible"
+  ],
+  "uri": "/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+}

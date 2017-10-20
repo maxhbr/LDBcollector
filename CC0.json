@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "CC0-1.0"
+  },
+  "name": "CC0",
+  "tags": [
+    "glp-compatible"
+  ],
+  "uri": "http://directory.fsf.org/wiki/License:CC0"
+}

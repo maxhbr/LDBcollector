@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "MIT"
+  },
+  "name": "Expat License",
+  "tags": [
+    "glp-compatible"
+  ],
+  "uri": "http://directory.fsf.org/wiki/License:Expat"
+}

@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "GPL-3.0"
+  },
+  "name": "GNU General Public License (GPL) version 3",
+  "tags": [
+    "glp-compatible"
+  ],
+  "uri": "/licenses/gpl.html"
+}

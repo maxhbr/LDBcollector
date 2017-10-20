@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "EUDatagrid"
+  },
+  "name": "EU DataGrid Software License",
+  "tags": [
+    "glp-compatible"
+  ],
+  "uri": "http://directory.fsf.org/wiki/License:EUDataGrid"
+}

@@ -1,0 +1,11 @@
+{
+  "identifiers": {
+    "spdx": "BSD-2-Clause"
+  },
+  "name": "FreeBSD license",
+  "tags": [
+    "fdl-compatible",
+    "glp-compatible"
+  ],
+  "uri": "http://directory.fsf.org/wiki?title=License:FreeBSD"
+}
