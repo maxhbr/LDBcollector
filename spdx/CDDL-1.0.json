@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "CDDL-1.0"
+  },
+  "name": "Common Development and Distribution License (CDDL), version 1.0",
+  "tags": [
+    "libre"
+  ],
+  "uri": "http://directory.fsf.org/wiki/License:CDDLv1.0"
+}

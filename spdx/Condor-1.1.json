@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "Condor-1.1"
+  },
+  "name": "Condor Public License",
+  "tags": [
+    "libre"
+  ],
+  "uri": "http://directory.fsf.org/wiki?title=License:Condor1.1"
+}

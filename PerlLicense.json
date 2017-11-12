@@ -1,7 +1,8 @@
 {
   "name": "License of Perl 5 and below",
   "tags": [
-    "glp-compatible",
+    "gpl-2-compatible",
+    "gpl-3-compatible",
     "libre"
   ]
 }

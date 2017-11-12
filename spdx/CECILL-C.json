@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "CECILL-C"
+  },
+  "name": "CeCILL-C version 1",
+  "tags": [
+    "libre"
+  ],
+  "uri": "https://directory.fsf.org/wiki/License:CeCILL-C"
+}

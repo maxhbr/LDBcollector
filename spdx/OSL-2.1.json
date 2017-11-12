@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "OSL-2.1"
+  },
+  "name": "Open Software License, all versions through 3.0",
+  "tags": [
+    "libre"
+  ],
+  "uri": "http://directory.fsf.org/wiki/License:OSLv3.0"
+}

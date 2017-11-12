@@ -1,7 +1,8 @@
 {
   "name": "GNU General Public License",
   "tags": [
-    "glp-compatible",
+    "gpl-2-compatible",
+    "gpl-3-compatible",
     "libre"
   ],
   "uri": "https://www.gnu.org/licenses/gpl.html"

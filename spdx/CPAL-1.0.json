@@ -1,0 +1,10 @@
+{
+  "identifiers": {
+    "spdx": "CPAL-1.0"
+  },
+  "name": "Common Public Attribution License 1.0 (CPAL)",
+  "tags": [
+    "libre"
+  ],
+  "uri": "https://www.socialtext.net/open/cpal_license_in_wikitext"
+}

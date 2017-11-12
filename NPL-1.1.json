@@ -1,4 +1,7 @@
 {
+  "identifiers": {
+    "spdx": "NPL-1.1"
+  },
   "name": "Netscape Public License (NPL)",
   "tags": [
     "libre"
