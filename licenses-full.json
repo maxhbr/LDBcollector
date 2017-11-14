@@ -229,7 +229,8 @@
     },
     "name": "Creative Commons Noderivatives, any version",
     "tags": [
-      "non-free"
+      "non-free",
+      "viewpoint"
     ],
     "uri": "https://www.gnu.org/licenses/license-list.html"
   },
@@ -1406,13 +1407,6 @@
       "libre"
     ],
     "uri": "http://creativecommons.org/licenses/by/4.0/legalcode"
-  },
-  "ccbynd": {
-    "name": "Creative Commons Attribution-NoDerivs 4.0 license\n    (a.k.a. CC",
-    "tags": [
-      "viewpoint"
-    ],
-    "uri": "https://creativecommons.org/licenses/by-nd/4.0/legalcode"
   },
   "ccbysa": {
     "identifiers": {
