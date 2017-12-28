@@ -1,0 +1,240 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.5/au/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/au/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.5/au/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.5 Australië"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.5 أستراليا"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@as,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@az,
+        "Attribution-NonCommercial-ShareAlike 2.5 Аўстралія"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.5 Австралия"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.5 Austràlia"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.5 Austrálie"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.5 Australien"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.5 Australien"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Australien"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Australien"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.5 Αυστραλία"@el,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.5 Aŭstralio"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.5 Australia"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.5 Australia"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.5 Australia"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.5 Australia"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.5 Austraalia"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.5 Australia"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.5 استرالیا"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.5 Australia"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.5 Australie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Australie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Australie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Australie"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.5 Australia"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.5 אוסטרליה"@he,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.5 Australija"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.5 Ausztrália"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.5 Australia"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.5 Australia"@id,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Australia"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Australia"@it-ch,
+        "表示 - 非営利 - 継承 2.5 オーストラリア"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.5 ავსტრალია"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.5 Australia"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.5 Austrālija"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.5 Австралија"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.5 ആസ്ട്രേലിയ"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.5 Australia"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.5 Australië"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.5 Australia"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.5 Australia"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 Australia"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.5 Austrália"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.5 Australia"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.5 Austrália"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Australia"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.5 Австралия"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.5 Avstralija"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australi"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Australija"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.5 Аустралија"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Australija"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.5 Australien"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.5 ఆస్ట్రేలియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.5 ออสเตรเลีย"@th,
+        "Attribution-Gayriticari-ShareAlike 2.5 Avustralya"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.5 Nước Úc "@vi,
+        "署名-非商业性使用-相同方式共享 2.5 澳大利亚"@zh,
+        "姓名標示-非商業性-相同方式分享 2.5 澳大利亞"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.5 澳大利亞"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.5 e-Australia"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.5 ${Australia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-SA-2.5-au> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.5/au/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.5/au/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-SA-2.5-au> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/au/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.5/au/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-sa" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-NC-SA-2.1-au> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.5/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.5 Australië"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.5 أستراليا"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@as,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@az,
+        "Attribution-NonCommercial-ShareAlike 2.5 Аўстралія"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.5 Австралия"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.5 Austràlia"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.5 Austrálie"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.5 Australien"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.5 Australien"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Australien"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.5 Australien"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.5 Αυστραλία"@el,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.5 Aŭstralio"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.5 Australia"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.5 Australia"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.5 Australia"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.5 Australia"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.5 Australia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.5 Austraalia"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.5 Australia"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.5 استرالیا"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.5 Australia"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.5 Australie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Australie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Australie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.5 Australie"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.5 Australia"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.5 אוסטרליה"@he,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.5 Australija"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.5 Ausztrália"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.5 Australia"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.5 Australia"@id,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Australia"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.5 Australia"@it-ch,
+        "表示 - 非営利 - 継承 2.5 オーストラリア"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.5 ავსტრალია"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.5 Australia"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.5 Austrālija"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.5 Австралија"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.5 ആസ്ട്രേലിയ"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.5 Australia"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.5 Australië"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.5 Australia"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.5 Australia"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.5 Australia"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.5 Austrália"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.5 Australia"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.5 Austrália"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Australia"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.5 Австралия"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.5 Avstralija"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australi"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Australija"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.5 Аустралија"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.5 Australija"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.5 Australien"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.5 ఆస్ట్రేలియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.5 ออสเตรเลีย"@th,
+        "Attribution-Gayriticari-ShareAlike 2.5 Avustralya"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.5 Australia"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.5 Nước Úc "@vi,
+        "署名-非商业性使用-相同方式共享 2.5 澳大利亚"@zh,
+        "姓名標示-非商業性-相同方式分享 2.5 澳大利亞"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.5 澳大利亞"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.5 e-Australia"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.5 ${Australia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-sa/2.5/au/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.5/au/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.5/au/88x31.png> ;
+    li:id "CC-BY-NC-SA-2.5-au" ;
+    li:name "CC BY-NC-SA 2.5 AU" .
+

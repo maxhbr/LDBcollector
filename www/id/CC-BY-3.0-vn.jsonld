@@ -1,0 +1,859 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-3.0-vn",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/vn/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/vn/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 3.0 Vietnam"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  3.0 فيتنام"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 3.0 Vietnam"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 3.0 Vietnam"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 3.0 Vietnam"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 3.0 Vietnam"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 3.0 Vietnam"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 3.0 Vietnam"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 3.0 Vietnam"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 3.0 Vietnam"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 3.0 Βιετνάμ"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 3.0 Vjetnamujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 3.0 Vietnam"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 3.0 Vietnam"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 3.0 Vietnam"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 3.0 Vietnam"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 3.0 Vietnam"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 3.0 Vietnam"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 3.0 Vietnam"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 3.0 Vietnam"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 3.0 Vietnam"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 3.0 Vietnam"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 3.0 Vietnam"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 3.0 Vietnam"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 3.0 ویتنام"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 3.0 Vietnam"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 3.0 Viêt Nam"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 3.0 Vietnam"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 3.0 Vietnam"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 3.0 Vietnam"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 3.0 Vietnam"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 3.0 Vietnam"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 3.0 Vijetnam"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 3.0 Vietnam"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 3.0 Vietnam"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 3.0 Vietnam"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 3.0 Vietnam"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 3.0 Vietnam"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 3.0 ベトナム"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  3.0 ვიეტნამი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 3.0 Vietnam"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 3.0 베트남"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 3.0 Vietnam"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 3.0 Vjetnama"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 3.0 Виетнам"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 3.0 വിയറ്റ്നാം"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 3.0 Vietnam"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 3.0 Vietnam"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 3.0 Vietnam"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 3.0 Vietnam"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 3.0 wietnamski"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  3.0 Vietname"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 3.0 Vietnam"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 3.0 Vietnã"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 3.0 Vietnam"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 3.0 Vietnam"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 3.0 Вьетнам"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 3.0 Vietnam"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 3.0 Vijetnam"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 3.0 Вијетнам"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 3.0 Vijetnam"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 3.0 country.vn"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 3.0 Vietnam"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 3.0 வியட்நாம்"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 3.0 వియెత్నాం"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 3.0 Vietnam"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 3.0 Vietnam"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 3.0 Việt Nam"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 3.0 Vietnam"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 3.0 越南"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 3.0 越南"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 3.0 Vietnam"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 3.0 ${Vietnam}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/3.0/vn/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/vn/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/vn/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 3.0 Vietnam"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  3.0 فيتنام"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 3.0 Vietnam"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 3.0 Vietnam"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 3.0 Vietnam"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 3.0 Vietnam"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 3.0 Vietnam"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 3.0 Vietnam"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 3.0 Vietnam"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 3.0 Vietnam"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 3.0 Βιετνάμ"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 3.0 Vjetnamujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 3.0 Vietnam"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 3.0 Vietnam"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 3.0 Vietnam"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 3.0 Vietnam"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 3.0 Vietnam"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 3.0 Vietnam"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 3.0 Vietnam"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 3.0 Vietnam"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 3.0 Vietnam"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 3.0 Vietnam"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 3.0 Vietnam"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 3.0 Vietnam"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 3.0 ویتنام"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 3.0 Vietnam"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 3.0 Viêt Nam"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 3.0 Vietnam"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 3.0 Vietnam"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 3.0 Vietnam"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 3.0 Vietnam"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 3.0 Vietnam"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 3.0 Vijetnam"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 3.0 Vietnam"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 3.0 Vietnam"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 3.0 Vietnam"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 3.0 Vietnam"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 3.0 Vietnam"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 3.0 ベトナム"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  3.0 ვიეტნამი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 3.0 Vietnam"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 3.0 베트남"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 3.0 Vietnam"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 3.0 Vjetnama"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 3.0 Виетнам"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 3.0 വിയറ്റ്നാം"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 3.0 Vietnam"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 3.0 Vietnam"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 3.0 Vietnam"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 3.0 Vietnam"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 3.0 wietnamski"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  3.0 Vietname"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 3.0 Vietnam"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 3.0 Vietnã"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 3.0 Vietnam"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 3.0 Vietnam"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 3.0 Вьетнам"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 3.0 Vietnam"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 3.0 Vijetnam"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 3.0 Вијетнам"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 3.0 Vijetnam"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 3.0 country.vn"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 3.0 Vietnam"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 3.0 வியட்நாம்"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 3.0 వియెత్నాం"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 3.0 Vietnam"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 3.0 Vietnam"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 3.0 Việt Nam"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 3.0 Vietnam"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 3.0 越南"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 3.0 越南"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 3.0 Vietnam"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 3.0 ${Vietnam}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-3.0-vn",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/3.0/vn/80x15.png",
+            "http://i.creativecommons.org/l/by/3.0/vn/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/3.0/vn/80x15.png",
+        "http://i.creativecommons.org/l/by/3.0/vn/88x31.png"
+    ],
+    "li:id": "CC-BY-3.0-vn",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 3.0 VN"
+}

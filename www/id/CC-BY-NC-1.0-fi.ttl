@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/1.0/fi/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/1.0/> ;
+    dc:title "Erkenning-NieKommersieel 1.0 Finland"@af,
+        "نسب - غير تجاري 1.0 فلندا"@ar,
+        "Attribution-NonCommercial 1.0 Finland"@as,
+        "Attribution-NonCommercial 1.0 Finland"@ast,
+        "Attribution-NonCommercial 1.0 Finland"@ast-es,
+        "Attribution-NonCommercial 1.0 Finland"@az,
+        "Attribution-NonCommercial 1.0 Фінляндыя"@be,
+        "Признание-Некомерсиално 1.0 Финландия"@bg,
+        "Attribution-NonCommercial 1.0 Finland"@bn,
+        "Reconeixement-NoComercial 1.0 Finlàndia"@ca,
+        "Uveďte autora-Neužívejte komerčně 1.0 Finsko"@cs,
+        "Navngivelse-IkkeKommerciel 1.0 Finland"@da,
+        "Namensnennung-Nicht-kommerziell 1.0 Finnland"@de,
+        "Namensnennung-NichtKommerziell 1.0 Finnland"@de-at,
+        "Namensnennung-NichtKommerziell 1.0 Finnland"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 1.0 Φιλανδία"@el,
+        "Attribution-NonCommercial 1.0 Finland"@en,
+        "Attribution-NonCommercial 1.0 Finland"@en-ca,
+        "Attribution-NonCommercial 1.0 Finland"@en-gb,
+        "Attribution-NonCommercial 1.0 Finland"@en-hk,
+        "Attribution-NonCommercial 1.0 Finland"@en-sg,
+        "Attribution-NonCommercial 1.0 Finland"@en-us,
+        "Atribuite-Nekomerce 1.0 Suomujo"@eo,
+        "Atribución-NoComercial 1.0 Finlandia"@es,
+        "Atribución-NoComercial 1.0 Finlandia"@es-ar,
+        "Atribución-NoComercial 1.0 Finlandia"@es-cl,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-co,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-ec,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-es,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-gt,
+        "Atribución-No Comercial 1.0 Finlandia"@es-mx,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-pe,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 1.0 Soome"@et,
+        "Aitortu-EzKomertziala 1.0 Finlandia"@eu,
+        "Attribution-NonCommercial 1.0 فنلاند"@fa,
+        "Nimeä-Epäkaupallinen 1.0 Suomi"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Finlande"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-lu,
+        "Attribution-NonCommercial 1.0 Finland"@ga,
+        "Recoñecemento-NonComercial 1.0 Finlandia"@gl,
+        "ייחוס-שימוש לא מסחרי 1.0 פינלנד"@he,
+        "Attribution-NonCommercial 1.0 Finland"@hi,
+        "Imenovanje-Nekomercijalno 1.0 Finska"@hr,
+        "Nevezd meg! - Ne add el! 1.0 Finnország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 1.0 Finland"@hy,
+        "Attribusi-NonKomersial 1.0 Finlandia"@id,
+        "Attribution-NonCommercial 1.0 Finland"@is,
+        "Attribuzione - Non commerciale 1.0 Finlandia"@it,
+        "Attribuzione - Non commerciale 1.0 Finlandia"@it-ch,
+        "表示 - 非営利 1.0 フィンランド"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 1.0 ფინეთი"@ka,
+        "Коммерциялық емес 1.0 Finland"@kk,
+        "저작자표시-비영리 1.0 핀란드"@ko,
+        "Attribution-NonCommercial 1.0 Suomija"@lt,
+        "Atsaucoties-Nekomerciāli 1.0 Somija"@lv,
+        "НаведиИзвор-Некомерцијално 1.0 Финска"@mk,
+        "Attribution-NonCommercial 1.0 ഫിൻലാന്റ്"@ml,
+        "Attribution-NonCommercial 1.0 Finland"@mn,
+        "Pengiktirafan-BukanKomersial 1.0 Finland"@ms,
+        "Naamsvermelding-NietCommercieel 1.0 Finland"@nl,
+        "Navngivelse-Ikkekommersiell 1.0 Finland"@no,
+        "Tsebagatšo- E sego ya kgwebo 1.0 Finland"@nso,
+        "Attribution-NonCommercial 1.0 Finland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 1.0 Finlandia"@pl,
+        "Atribuição - NãoComercial 1.0 Finlândia"@pt,
+        "Atribuição-Uso não-comercial 1.0 Finland"@pt-br,
+        "Atribuição-Uso Não-Comercial 1.0 Filândia"@pt-pt,
+        "Atribuire-NeComercial 1.0 Finlanda"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 1.0 Финляндия"@ru,
+        "Attribution-NonCommercial 1.0 Finland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 1.0 Finska"@sl,
+        "Attribution-NonCommercial 1.0 Finlandë"@sq,
+        "Autorstvo-Nekomercijalno 1.0 Finska"@sr,
+        "Ауторство-Некомерцијално 1.0 Финска"@sr,
+        "Autorstvo-Nekomercijalno 1.0 Finska"@sr-latn,
+        "Attribution-NonCommercial 1.0 Finland"@st,
+        "Erkännande-IckeKommersiell 1.0 Finland"@sv,
+        "Attribution-NonCommercial 1.0 Finland"@ta,
+        "Attribution-NonCommercial 1.0 ఫిన్లాండ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 1.0 ฟินแลนด์"@th,
+        "Alıntı-Gayriticari 1.0 Finlandiya"@tr,
+        "Attribution-NonCommercial 1.0 Finland"@uk,
+        "Attribution-NonCommercial 1.0 Finland"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  1.0 Finland"@vi,
+        "署名-非商业性使用 1.0 芬兰"@zh,
+        "姓名標示-非商業性 1.0 芬蘭"@zh-hk,
+        "姓名標示-非商業性 1.0 芬蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 1.0 iFinland"@zu,
+        "${Attribution-NonCommercial} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-1.0-fi> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/1.0/fi/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/1.0/fi/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-1.0-fi> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/1.0/> ;
+    dc:title "Erkenning-NieKommersieel 1.0 Finland"@af,
+        "نسب - غير تجاري 1.0 فلندا"@ar,
+        "Attribution-NonCommercial 1.0 Finland"@as,
+        "Attribution-NonCommercial 1.0 Finland"@ast,
+        "Attribution-NonCommercial 1.0 Finland"@ast-es,
+        "Attribution-NonCommercial 1.0 Finland"@az,
+        "Attribution-NonCommercial 1.0 Фінляндыя"@be,
+        "Признание-Некомерсиално 1.0 Финландия"@bg,
+        "Attribution-NonCommercial 1.0 Finland"@bn,
+        "Reconeixement-NoComercial 1.0 Finlàndia"@ca,
+        "Uveďte autora-Neužívejte komerčně 1.0 Finsko"@cs,
+        "Navngivelse-IkkeKommerciel 1.0 Finland"@da,
+        "Namensnennung-Nicht-kommerziell 1.0 Finnland"@de,
+        "Namensnennung-NichtKommerziell 1.0 Finnland"@de-at,
+        "Namensnennung-NichtKommerziell 1.0 Finnland"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 1.0 Φιλανδία"@el,
+        "Attribution-NonCommercial 1.0 Finland"@en,
+        "Attribution-NonCommercial 1.0 Finland"@en-ca,
+        "Attribution-NonCommercial 1.0 Finland"@en-gb,
+        "Attribution-NonCommercial 1.0 Finland"@en-hk,
+        "Attribution-NonCommercial 1.0 Finland"@en-sg,
+        "Attribution-NonCommercial 1.0 Finland"@en-us,
+        "Atribuite-Nekomerce 1.0 Suomujo"@eo,
+        "Atribución-NoComercial 1.0 Finlandia"@es,
+        "Atribución-NoComercial 1.0 Finlandia"@es-ar,
+        "Atribución-NoComercial 1.0 Finlandia"@es-cl,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-co,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-ec,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-es,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-gt,
+        "Atribución-No Comercial 1.0 Finlandia"@es-mx,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-pe,
+        "Reconocimiento-NoComercial 1.0 Finlandia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 1.0 Soome"@et,
+        "Aitortu-EzKomertziala 1.0 Finlandia"@eu,
+        "Attribution-NonCommercial 1.0 فنلاند"@fa,
+        "Nimeä-Epäkaupallinen 1.0 Suomi"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Finlande"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Finlande"@fr-lu,
+        "Attribution-NonCommercial 1.0 Finland"@ga,
+        "Recoñecemento-NonComercial 1.0 Finlandia"@gl,
+        "ייחוס-שימוש לא מסחרי 1.0 פינלנד"@he,
+        "Attribution-NonCommercial 1.0 Finland"@hi,
+        "Imenovanje-Nekomercijalno 1.0 Finska"@hr,
+        "Nevezd meg! - Ne add el! 1.0 Finnország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 1.0 Finland"@hy,
+        "Attribusi-NonKomersial 1.0 Finlandia"@id,
+        "Attribution-NonCommercial 1.0 Finland"@is,
+        "Attribuzione - Non commerciale 1.0 Finlandia"@it,
+        "Attribuzione - Non commerciale 1.0 Finlandia"@it-ch,
+        "表示 - 非営利 1.0 フィンランド"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 1.0 ფინეთი"@ka,
+        "Коммерциялық емес 1.0 Finland"@kk,
+        "저작자표시-비영리 1.0 핀란드"@ko,
+        "Attribution-NonCommercial 1.0 Suomija"@lt,
+        "Atsaucoties-Nekomerciāli 1.0 Somija"@lv,
+        "НаведиИзвор-Некомерцијално 1.0 Финска"@mk,
+        "Attribution-NonCommercial 1.0 ഫിൻലാന്റ്"@ml,
+        "Attribution-NonCommercial 1.0 Finland"@mn,
+        "Pengiktirafan-BukanKomersial 1.0 Finland"@ms,
+        "Naamsvermelding-NietCommercieel 1.0 Finland"@nl,
+        "Navngivelse-Ikkekommersiell 1.0 Finland"@no,
+        "Tsebagatšo- E sego ya kgwebo 1.0 Finland"@nso,
+        "Attribution-NonCommercial 1.0 Finland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 1.0 Finlandia"@pl,
+        "Atribuição - NãoComercial 1.0 Finlândia"@pt,
+        "Atribuição-Uso não-comercial 1.0 Finland"@pt-br,
+        "Atribuição-Uso Não-Comercial 1.0 Filândia"@pt-pt,
+        "Atribuire-NeComercial 1.0 Finlanda"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 1.0 Финляндия"@ru,
+        "Attribution-NonCommercial 1.0 Finland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 1.0 Finska"@sl,
+        "Attribution-NonCommercial 1.0 Finlandë"@sq,
+        "Autorstvo-Nekomercijalno 1.0 Finska"@sr,
+        "Ауторство-Некомерцијално 1.0 Финска"@sr,
+        "Autorstvo-Nekomercijalno 1.0 Finska"@sr-latn,
+        "Attribution-NonCommercial 1.0 Finland"@st,
+        "Erkännande-IckeKommersiell 1.0 Finland"@sv,
+        "Attribution-NonCommercial 1.0 Finland"@ta,
+        "Attribution-NonCommercial 1.0 ఫిన్లాండ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 1.0 ฟินแลนด์"@th,
+        "Alıntı-Gayriticari 1.0 Finlandiya"@tr,
+        "Attribution-NonCommercial 1.0 Finland"@uk,
+        "Attribution-NonCommercial 1.0 Finland"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  1.0 Finland"@vi,
+        "署名-非商业性使用 1.0 芬兰"@zh,
+        "姓名標示-非商業性 1.0 芬蘭"@zh-hk,
+        "姓名標示-非商業性 1.0 芬蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 1.0 iFinland"@zu,
+        "${Attribution-NonCommercial} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/1.0/fi/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/1.0/fi/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/1.0/fi/88x31.png> ;
+    li:id "CC-BY-NC-1.0-fi" ;
+    li:name "CC BY-NC 1.0 FI" .
+

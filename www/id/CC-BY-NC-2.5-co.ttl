@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/2.5/co/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/co/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.5/co/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.5/> ;
+    dc:title "Erkenning-NieKommersieel 2.5 Colombia"@af,
+        "نسب - غير تجاري 2.5 كولمبيا"@ar,
+        "Attribution-NonCommercial 2.5 Colombia"@as,
+        "Attribution-NonCommercial 2.5 Colombia"@ast,
+        "Attribution-NonCommercial 2.5 Colombia"@ast-es,
+        "Attribution-NonCommercial 2.5 Colombia"@az,
+        "Attribution-NonCommercial 2.5 Калумбія"@be,
+        "Признание-Некомерсиално 2.5 Колумбия"@bg,
+        "Attribution-NonCommercial 2.5 Colombia"@bn,
+        "Reconeixement-NoComercial 2.5 Colòmbia"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.5 Kolumbie"@cs,
+        "Navngivelse-IkkeKommerciel 2.5 Columbia"@da,
+        "Namensnennung-Nicht-kommerziell 2.5 Kolumbien"@de,
+        "Namensnennung-NichtKommerziell 2.5 Kolumbien"@de-at,
+        "Namensnennung-NichtKommerziell 2.5 Kolumbien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Κολομβία"@el,
+        "Attribution-NonCommercial 2.5 Colombia"@en,
+        "Attribution-NonCommercial 2.5 Colombia"@en-ca,
+        "Attribution-NonCommercial 2.5 Colombia"@en-gb,
+        "Attribution-NonCommercial 2.5 Colombia"@en-hk,
+        "Attribution-NonCommercial 2.5 Colombia"@en-sg,
+        "Attribution-NonCommercial 2.5 Colombia"@en-us,
+        "Atribuite-Nekomerce 2.5 Kolombio"@eo,
+        "Atribución-NoComercial 2.5 Colombia"@es,
+        "Atribución-NoComercial 2.5 Colombia"@es-ar,
+        "Atribución-NoComercial 2.5 Colombia"@es-cl,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-co,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-ec,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-es,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-gt,
+        "Atribución-No Comercial 2.5 Colombia"@es-mx,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-pe,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.5 Kolumbia"@et,
+        "Aitortu-EzKomertziala 2.5 Kolonbia"@eu,
+        "Attribution-NonCommercial 2.5 کلمبیا"@fa,
+        "Nimeä-Epäkaupallinen 2.5 Kolumbia"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Colombie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Colombie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Colombie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Colombie"@fr-lu,
+        "Attribution-NonCommercial 2.5 Colombia"@ga,
+        "Recoñecemento-NonComercial 2.5 Colombia"@gl,
+        "ייחוס-שימוש לא מסחרי 2.5 קולומביה"@he,
+        "Attribution-NonCommercial 2.5 Colombia"@hi,
+        "Imenovanje-Nekomercijalno 2.5 Kolumbija"@hr,
+        "Nevezd meg! - Ne add el! 2.5 Kolumbia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.5 Կոլումբիա"@hy,
+        "Attribusi-NonKomersial 2.5 Kolombia"@id,
+        "Attribution-NonCommercial 2.5 Colombia"@is,
+        "Attribuzione - Non commerciale 2.5 Colombia"@it,
+        "Attribuzione - Non commerciale 2.5 Colombia"@it-ch,
+        "表示 - 非営利 2.5 コロンビア"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 კოლუმბია"@ka,
+        "Коммерциялық емес 2.5 Colombia"@kk,
+        "저작자표시-비영리 2.5 콜롬비아"@ko,
+        "Attribution-NonCommercial 2.5 Kolumbija"@lt,
+        "Atsaucoties-Nekomerciāli 2.5 Kolumbija"@lv,
+        "НаведиИзвор-Некомерцијално 2.5 Колумбија"@mk,
+        "Attribution-NonCommercial 2.5 കൊളംബിയ"@ml,
+        "Attribution-NonCommercial 2.5 Colombia"@mn,
+        "Pengiktirafan-BukanKomersial 2.5 Colombia"@ms,
+        "Naamsvermelding-NietCommercieel 2.5 Colombia"@nl,
+        "Navngivelse-Ikkekommersiell 2.5 Colombia"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.5 Colombia"@nso,
+        "Attribution-NonCommercial 2.5 Colombia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.5 Kolumbia"@pl,
+        "Atribuição - NãoComercial 2.5 Colômbia"@pt,
+        "Atribuição-Uso não-comercial 2.5 Colombia"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.5 Colombia"@pt-pt,
+        "Atribuire-NeComercial 2.5 Colombia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Колумбия"@ru,
+        "Attribution-NonCommercial 2.5 Colombia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.5 Kolumbija"@sl,
+        "Attribution-NonCommercial 2.5 Kolumbi"@sq,
+        "Autorstvo-Nekomercijalno 2.5 Kolumbija"@sr,
+        "Ауторство-Некомерцијално 2.5 Колумбија"@sr,
+        "Autorstvo-Nekomercijalno 2.5 Kolumbija"@sr-latn,
+        "Attribution-NonCommercial 2.5 Colombia"@st,
+        "Erkännande-IckeKommersiell 2.5 Columbia"@sv,
+        "Attribution-NonCommercial 2.5 Colombia"@ta,
+        "Attribution-NonCommercial 2.5 కొలంబియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 โคลัมเบีย"@th,
+        "Alıntı-Gayriticari 2.5 Kolombiya"@tr,
+        "Attribution-NonCommercial 2.5 Colombia"@uk,
+        "Attribution-NonCommercial 2.5 Colombia"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.5 Colombia"@vi,
+        "署名-非商业性使用 2.5 哥伦比亚"@zh,
+        "姓名標示-非商業性 2.5 哥倫比亞"@zh-hk,
+        "姓名標示-非商業性 2.5 哥倫比亞"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 iColombia"@zu,
+        "${Attribution-NonCommercial} 2.5 ${Colombia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-2.5-co> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.5/co/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.5/co/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-2.5-co> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/co/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.5/co/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.5/> ;
+    dc:title "Erkenning-NieKommersieel 2.5 Colombia"@af,
+        "نسب - غير تجاري 2.5 كولمبيا"@ar,
+        "Attribution-NonCommercial 2.5 Colombia"@as,
+        "Attribution-NonCommercial 2.5 Colombia"@ast,
+        "Attribution-NonCommercial 2.5 Colombia"@ast-es,
+        "Attribution-NonCommercial 2.5 Colombia"@az,
+        "Attribution-NonCommercial 2.5 Калумбія"@be,
+        "Признание-Некомерсиално 2.5 Колумбия"@bg,
+        "Attribution-NonCommercial 2.5 Colombia"@bn,
+        "Reconeixement-NoComercial 2.5 Colòmbia"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.5 Kolumbie"@cs,
+        "Navngivelse-IkkeKommerciel 2.5 Columbia"@da,
+        "Namensnennung-Nicht-kommerziell 2.5 Kolumbien"@de,
+        "Namensnennung-NichtKommerziell 2.5 Kolumbien"@de-at,
+        "Namensnennung-NichtKommerziell 2.5 Kolumbien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Κολομβία"@el,
+        "Attribution-NonCommercial 2.5 Colombia"@en,
+        "Attribution-NonCommercial 2.5 Colombia"@en-ca,
+        "Attribution-NonCommercial 2.5 Colombia"@en-gb,
+        "Attribution-NonCommercial 2.5 Colombia"@en-hk,
+        "Attribution-NonCommercial 2.5 Colombia"@en-sg,
+        "Attribution-NonCommercial 2.5 Colombia"@en-us,
+        "Atribuite-Nekomerce 2.5 Kolombio"@eo,
+        "Atribución-NoComercial 2.5 Colombia"@es,
+        "Atribución-NoComercial 2.5 Colombia"@es-ar,
+        "Atribución-NoComercial 2.5 Colombia"@es-cl,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-co,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-ec,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-es,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-gt,
+        "Atribución-No Comercial 2.5 Colombia"@es-mx,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-pe,
+        "Reconocimiento-NoComercial 2.5 Colombia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.5 Kolumbia"@et,
+        "Aitortu-EzKomertziala 2.5 Kolonbia"@eu,
+        "Attribution-NonCommercial 2.5 کلمبیا"@fa,
+        "Nimeä-Epäkaupallinen 2.5 Kolumbia"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Colombie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Colombie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Colombie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Colombie"@fr-lu,
+        "Attribution-NonCommercial 2.5 Colombia"@ga,
+        "Recoñecemento-NonComercial 2.5 Colombia"@gl,
+        "ייחוס-שימוש לא מסחרי 2.5 קולומביה"@he,
+        "Attribution-NonCommercial 2.5 Colombia"@hi,
+        "Imenovanje-Nekomercijalno 2.5 Kolumbija"@hr,
+        "Nevezd meg! - Ne add el! 2.5 Kolumbia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.5 Կոլումբիա"@hy,
+        "Attribusi-NonKomersial 2.5 Kolombia"@id,
+        "Attribution-NonCommercial 2.5 Colombia"@is,
+        "Attribuzione - Non commerciale 2.5 Colombia"@it,
+        "Attribuzione - Non commerciale 2.5 Colombia"@it-ch,
+        "表示 - 非営利 2.5 コロンビア"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 კოლუმბია"@ka,
+        "Коммерциялық емес 2.5 Colombia"@kk,
+        "저작자표시-비영리 2.5 콜롬비아"@ko,
+        "Attribution-NonCommercial 2.5 Kolumbija"@lt,
+        "Atsaucoties-Nekomerciāli 2.5 Kolumbija"@lv,
+        "НаведиИзвор-Некомерцијално 2.5 Колумбија"@mk,
+        "Attribution-NonCommercial 2.5 കൊളംബിയ"@ml,
+        "Attribution-NonCommercial 2.5 Colombia"@mn,
+        "Pengiktirafan-BukanKomersial 2.5 Colombia"@ms,
+        "Naamsvermelding-NietCommercieel 2.5 Colombia"@nl,
+        "Navngivelse-Ikkekommersiell 2.5 Colombia"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.5 Colombia"@nso,
+        "Attribution-NonCommercial 2.5 Colombia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.5 Kolumbia"@pl,
+        "Atribuição - NãoComercial 2.5 Colômbia"@pt,
+        "Atribuição-Uso não-comercial 2.5 Colombia"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.5 Colombia"@pt-pt,
+        "Atribuire-NeComercial 2.5 Colombia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Колумбия"@ru,
+        "Attribution-NonCommercial 2.5 Colombia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.5 Kolumbija"@sl,
+        "Attribution-NonCommercial 2.5 Kolumbi"@sq,
+        "Autorstvo-Nekomercijalno 2.5 Kolumbija"@sr,
+        "Ауторство-Некомерцијално 2.5 Колумбија"@sr,
+        "Autorstvo-Nekomercijalno 2.5 Kolumbija"@sr-latn,
+        "Attribution-NonCommercial 2.5 Colombia"@st,
+        "Erkännande-IckeKommersiell 2.5 Columbia"@sv,
+        "Attribution-NonCommercial 2.5 Colombia"@ta,
+        "Attribution-NonCommercial 2.5 కొలంబియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 โคลัมเบีย"@th,
+        "Alıntı-Gayriticari 2.5 Kolombiya"@tr,
+        "Attribution-NonCommercial 2.5 Colombia"@uk,
+        "Attribution-NonCommercial 2.5 Colombia"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.5 Colombia"@vi,
+        "署名-非商业性使用 2.5 哥伦比亚"@zh,
+        "姓名標示-非商業性 2.5 哥倫比亞"@zh-hk,
+        "姓名標示-非商業性 2.5 哥倫比亞"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 iColombia"@zu,
+        "${Attribution-NonCommercial} 2.5 ${Colombia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/2.5/co/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.5/co/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.5/co/88x31.png> ;
+    li:id "CC-BY-NC-2.5-co" ;
+    li:name "CC BY-NC 2.5 CO" .
+

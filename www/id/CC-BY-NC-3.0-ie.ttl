@@ -1,0 +1,223 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/3.0/ie/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ie/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/3.0/ie/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/3.0/> ;
+    dc:title "Erkenning-NieKommersieel 3.0 Ierland"@af,
+        "نسب - غير تجاري 3.0  أيرلاندا"@ar,
+        "Attribution-NonCommercial 3.0 Ireland"@as,
+        "Attribution-NonCommercial 3.0 Ireland"@ast,
+        "Attribution-NonCommercial 3.0 Ireland"@ast-es,
+        "Attribution-NonCommercial 3.0 Ireland"@az,
+        "Attribution-NonCommercial 3.0 Ірландыя"@be,
+        "Признание-Некомерсиално 3.0 Ирландия"@bg,
+        "Attribution-NonCommercial 3.0 Ireland"@bn,
+        "Reconeixement-NoComercial 3.0 Irlanda"@ca,
+        "Uveďte autora-Neužívejte komerčně 3.0 Irsko"@cs,
+        "Navngivelse-IkkeKommerciel 3.0 Irland"@da,
+        "Namensnennung-Nicht-kommerziell 3.0 Irland"@de,
+        "Namensnennung-NichtKommerziell 3.0 Irland"@de-at,
+        "Namensnennung-NichtKommerziell 3.0 Irland"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Ιρλανδία"@el,
+        "Attribution-NonCommercial 3.0 Ireland"@en,
+        "Attribution-NonCommercial 3.0 Ireland"@en-ca,
+        "Attribution-NonCommercial 3.0 Ireland"@en-gb,
+        "Attribution-NonCommercial 3.0 Ireland"@en-hk,
+        "Attribution-NonCommercial 3.0 Ireland"@en-sg,
+        "Attribution-NonCommercial 3.0 Ireland"@en-us,
+        "Atribuite-Nekomerce 3.0 Irlando"@eo,
+        "Atribución-NoComercial 3.0 Irlanda"@es,
+        "Atribución-NoComercial 3.0 Irlanda"@es-ar,
+        "Reconocimiento-NoComercial 3.0 Irlanda"@es-es,
+        "Reconocimiento-NoComercial 3.0 Irlanda"@es-pe,
+        "Autorile viitamine + Mitteäriline eesmärk 3.0 Iirimaa"@et,
+        "Aitortu-EzKomertziala 3.0 Irlanda"@eu,
+        "Attribution-NonCommercial 3.0 ایرلند"@fa,
+        "Nimeä-Epäkaupallinen 3.0 Irlanti"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Irlande"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Irlande"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Irlande"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Irlande"@fr-lu,
+        "Attribution-NonCommercial 3.0 Ireland"@ga,
+        "Recoñecemento-NonComercial 3.0 Irlanda"@gl,
+        "ייחוס-שימוש לא מסחרי 3.0 אירלנד"@he,
+        "Attribution-NonCommercial 3.0 ऐरलैंड"@hi,
+        "Imenovanje-Nekomercijalno 3.0 Irska"@hr,
+        "Nevezd meg! - Ne add el! 3.0 Írország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 3.0 Իրլանդիա"@hy,
+        "Attribusi-NonKomersial 3.0 Irlandia"@id,
+        "Attribution-NonCommercial 3.0 Írland"@is,
+        "Attribuzione - Non commerciale 3.0 Irlanda"@it,
+        "Attribuzione - Non commerciale 3.0 Irlanda"@it-ch,
+        "表示 - 非営利 3.0 アイルランド"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 ირლანდია"@ka,
+        "Коммерциялық емес 3.0 Ireland"@kk,
+        "저작자표시-비영리 3.0 아일랜드"@ko,
+        "Attribution-NonCommercial 3.0 Airija"@lt,
+        "Atsaucoties-Nekomerciāli 3.0 Īrija"@lv,
+        "НаведиИзвор-Некомерцијално 3.0 Ирска"@mk,
+        "Attribution-NonCommercial 3.0 അയർലാന്റ്"@ml,
+        "Attribution-NonCommercial 3.0 Ирланд"@mn,
+        "Pengiktirafan-BukanKomersial 3.0 Ireland"@ms,
+        "Naamsvermelding-NietCommercieel 3.0 Ierland"@nl,
+        "Navngivelse-Ikkekommersiell 3.0 Irland"@no,
+        "Tsebagatšo- E sego ya kgwebo 3.0 Ireland"@nso,
+        "Attribution-NonCommercial 3.0 Ireland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 3.0 Irlandia"@pl,
+        "Atribuição - NãoComercial 3.0 Irlanda"@pt,
+        "Atribuição-Uso não-comercial 3.0 Ireland"@pt-br,
+        "Atribuição-Uso Não-Comercial 3.0 Irlanda"@pt-pt,
+        "Atribuire-NeComercial 3.0 Irlanda"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Ирландия"@ru,
+        "Attribution-NonCommercial 3.0 Ireland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 3.0 Irska"@sl,
+        "Attribution-NonCommercial 3.0 Irlandë"@sq,
+        "Attribution-NonCommercial 3.0 Ireland"@sr,
+        "Ауторство-Некомерцијално 3.0 Ирска"@sr,
+        "Autorstvo-Nekomercijalno 3.0 Irska"@sr-latn,
+        "Erkännande-IckeKommersiell 3.0 Irland"@sv,
+        "Attribution-NonCommercial 3.0 ஐயர்லாந்து"@ta,
+        "Attribution-NonCommercial 3.0 ఐర్లాండ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 ไอร์แลนด์"@th,
+        "Alıntı-Gayriticari 3.0 İrlanda"@tr,
+        "Attribution-NonCommercial 3.0 Ireland"@uk,
+        "Attribution-NonCommercial 3.0 Ireland"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  3.0 Nước Ireland"@vi,
+        "署名-非商业性使用 3.0 爱尔兰"@zh,
+        "姓名標示-非商業性 3.0 愛爾蘭"@zh-hk,
+        "姓名標示-非商業性 3.0 愛爾蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 i-Ireland"@zu,
+        "${Attribution-NonCommercial} 3.0 ${Ireland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-3.0-ie> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/3.0/ie/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/3.0/ie/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-3.0-ie> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ie/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/3.0/ie/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/3.0/> ;
+    dc:title "Erkenning-NieKommersieel 3.0 Ierland"@af,
+        "نسب - غير تجاري 3.0  أيرلاندا"@ar,
+        "Attribution-NonCommercial 3.0 Ireland"@as,
+        "Attribution-NonCommercial 3.0 Ireland"@ast,
+        "Attribution-NonCommercial 3.0 Ireland"@ast-es,
+        "Attribution-NonCommercial 3.0 Ireland"@az,
+        "Attribution-NonCommercial 3.0 Ірландыя"@be,
+        "Признание-Некомерсиално 3.0 Ирландия"@bg,
+        "Attribution-NonCommercial 3.0 Ireland"@bn,
+        "Reconeixement-NoComercial 3.0 Irlanda"@ca,
+        "Uveďte autora-Neužívejte komerčně 3.0 Irsko"@cs,
+        "Navngivelse-IkkeKommerciel 3.0 Irland"@da,
+        "Namensnennung-Nicht-kommerziell 3.0 Irland"@de,
+        "Namensnennung-NichtKommerziell 3.0 Irland"@de-at,
+        "Namensnennung-NichtKommerziell 3.0 Irland"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Ιρλανδία"@el,
+        "Attribution-NonCommercial 3.0 Ireland"@en,
+        "Attribution-NonCommercial 3.0 Ireland"@en-ca,
+        "Attribution-NonCommercial 3.0 Ireland"@en-gb,
+        "Attribution-NonCommercial 3.0 Ireland"@en-hk,
+        "Attribution-NonCommercial 3.0 Ireland"@en-sg,
+        "Attribution-NonCommercial 3.0 Ireland"@en-us,
+        "Atribuite-Nekomerce 3.0 Irlando"@eo,
+        "Atribución-NoComercial 3.0 Irlanda"@es,
+        "Atribución-NoComercial 3.0 Irlanda"@es-ar,
+        "Reconocimiento-NoComercial 3.0 Irlanda"@es-es,
+        "Reconocimiento-NoComercial 3.0 Irlanda"@es-pe,
+        "Autorile viitamine + Mitteäriline eesmärk 3.0 Iirimaa"@et,
+        "Aitortu-EzKomertziala 3.0 Irlanda"@eu,
+        "Attribution-NonCommercial 3.0 ایرلند"@fa,
+        "Nimeä-Epäkaupallinen 3.0 Irlanti"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Irlande"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Irlande"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Irlande"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Irlande"@fr-lu,
+        "Attribution-NonCommercial 3.0 Ireland"@ga,
+        "Recoñecemento-NonComercial 3.0 Irlanda"@gl,
+        "ייחוס-שימוש לא מסחרי 3.0 אירלנד"@he,
+        "Attribution-NonCommercial 3.0 ऐरलैंड"@hi,
+        "Imenovanje-Nekomercijalno 3.0 Irska"@hr,
+        "Nevezd meg! - Ne add el! 3.0 Írország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 3.0 Իրլանդիա"@hy,
+        "Attribusi-NonKomersial 3.0 Irlandia"@id,
+        "Attribution-NonCommercial 3.0 Írland"@is,
+        "Attribuzione - Non commerciale 3.0 Irlanda"@it,
+        "Attribuzione - Non commerciale 3.0 Irlanda"@it-ch,
+        "表示 - 非営利 3.0 アイルランド"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 ირლანდია"@ka,
+        "Коммерциялық емес 3.0 Ireland"@kk,
+        "저작자표시-비영리 3.0 아일랜드"@ko,
+        "Attribution-NonCommercial 3.0 Airija"@lt,
+        "Atsaucoties-Nekomerciāli 3.0 Īrija"@lv,
+        "НаведиИзвор-Некомерцијално 3.0 Ирска"@mk,
+        "Attribution-NonCommercial 3.0 അയർലാന്റ്"@ml,
+        "Attribution-NonCommercial 3.0 Ирланд"@mn,
+        "Pengiktirafan-BukanKomersial 3.0 Ireland"@ms,
+        "Naamsvermelding-NietCommercieel 3.0 Ierland"@nl,
+        "Navngivelse-Ikkekommersiell 3.0 Irland"@no,
+        "Tsebagatšo- E sego ya kgwebo 3.0 Ireland"@nso,
+        "Attribution-NonCommercial 3.0 Ireland"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 3.0 Irlandia"@pl,
+        "Atribuição - NãoComercial 3.0 Irlanda"@pt,
+        "Atribuição-Uso não-comercial 3.0 Ireland"@pt-br,
+        "Atribuição-Uso Não-Comercial 3.0 Irlanda"@pt-pt,
+        "Atribuire-NeComercial 3.0 Irlanda"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Ирландия"@ru,
+        "Attribution-NonCommercial 3.0 Ireland"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 3.0 Irska"@sl,
+        "Attribution-NonCommercial 3.0 Irlandë"@sq,
+        "Attribution-NonCommercial 3.0 Ireland"@sr,
+        "Ауторство-Некомерцијално 3.0 Ирска"@sr,
+        "Autorstvo-Nekomercijalno 3.0 Irska"@sr-latn,
+        "Erkännande-IckeKommersiell 3.0 Irland"@sv,
+        "Attribution-NonCommercial 3.0 ஐயர்லாந்து"@ta,
+        "Attribution-NonCommercial 3.0 ఐర్లాండ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 ไอร์แลนด์"@th,
+        "Alıntı-Gayriticari 3.0 İrlanda"@tr,
+        "Attribution-NonCommercial 3.0 Ireland"@uk,
+        "Attribution-NonCommercial 3.0 Ireland"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  3.0 Nước Ireland"@vi,
+        "署名-非商业性使用 3.0 爱尔兰"@zh,
+        "姓名標示-非商業性 3.0 愛爾蘭"@zh-hk,
+        "姓名標示-非商業性 3.0 愛爾蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 i-Ireland"@zu,
+        "${Attribution-NonCommercial} 3.0 ${Ireland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/3.0/ie/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/3.0/ie/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/3.0/ie/88x31.png> ;
+    li:id "CC-BY-NC-3.0-ie" ;
+    li:name "CC BY-NC 3.0 IE" .
+

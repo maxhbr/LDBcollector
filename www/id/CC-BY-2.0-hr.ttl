@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.0/hr/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/hr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/hr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.5/hr/> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Kroasië"@af,
+        "نسب المصنف  2.0 كرواتيا"@ar,
+        "Attribution 2.0 Croatia"@as,
+        "Attribution 2.0 Croatia"@ast,
+        "Attribution 2.0 Croatia"@ast-es,
+        "Attribution 2.0 Croatia"@az,
+        "Атрыбуцыя 2.0 Харватыя"@be,
+        "Признание 2.0 Хърватска"@bg,
+        "Attribution 2.0 Croatia"@bn,
+        "Reconeixement 2.0 Croàcia"@ca,
+        "Uveďte autora 2.0 Chorvatsko"@cs,
+        "Navngivelse 2.0 Kroatien"@da,
+        "Namensnennung 2.0 Kroatien"@de,
+        "Namensnennung 2.0 Kroatien"@de-at,
+        "Namensnennung 2.0 Kroatien"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Κροατία"@el,
+        "Attribution 2.0 Croatia"@en,
+        "Attribution 2.0 Croatia"@en-ca,
+        "Attribution 2.0 Croatia"@en-gb,
+        "Attribution 2.0 Croatia"@en-hk,
+        "Attribution 2.0 Croatia"@en-sg,
+        "Attribution 2.0 Croatia"@en-us,
+        "Atribuite 2.0 Kroatujo"@eo,
+        "Atribución 2.0 Croacia"@es,
+        "Atribución 2.0 Croacia"@es-ar,
+        "Atribución 2.0 Croacia"@es-cl,
+        "Reconocimiento 2.0 Croacia"@es-co,
+        "Reconocimiento 2.0 Croacia"@es-ec,
+        "Reconocimiento 2.0 Croacia"@es-es,
+        "Reconocimiento 2.0 Croacia"@es-gt,
+        "Atribución 2.0 Croacia"@es-mx,
+        "Reconocimiento 2.0 Croacia"@es-pe,
+        "Reconocimiento 2.0 Croacia"@es-pr,
+        "Autorile viitamine 2.0 Horvaatia"@et,
+        "Aitortu 2.0 Kroazia"@eu,
+        "Attribution 2.0 کرواسی"@fa,
+        "Nimeä 2.0 Kroatia"@fi,
+        "Attribution 2.0 Croatie"@fr,
+        "Paternité 2.0 Croatie"@fr-ca,
+        "Paternité 2.0 Croatie"@fr-ch,
+        "Paternité 2.0 Croatie"@fr-lu,
+        "Attribution 2.0 Croatia"@ga,
+        "Recoñecemento 2.0 Croacia"@gl,
+        "ייחוס 2.0 קרואטיה"@he,
+        "Attribution 2.0 Croatia"@hi,
+        "Imenovanje 2.0 Hrvatska"@hr,
+        "Nevezd meg! 2.0 Horvátország"@hu,
+        "Հղում 2.0 Խորվաթիա"@hy,
+        "Atribusi 2.0 Kroasia"@id,
+        "Attribution 2.0 Króatía"@is,
+        "Attribuzione 2.0 Croazia"@it,
+        "Attribuzione 2.0 Croazia"@it-ch,
+        "表示 2.0 クロアチア"@ja,
+        "ავტორობის მითითებით  2.0 ხორვატია"@ka,
+        "Атауын сақтау 2.0 Croatia"@kk,
+        "저작자표시(Attribution) 2.0 크로아티아"@ko,
+        "Priskyrimas 2.0 Kroatija"@lt,
+        "Atsaucoties 2.0 Horvātija"@lv,
+        "Наведи извор 2.0 Хрватска"@mk,
+        "കടപ്പാട് 2.0 ക്രൊയേഷിയ"@ml,
+        "Attribution 2.0 Croatia"@mn,
+        "Pengiktirafan 2.0 Kroatia"@ms,
+        "Naamsvermelding 2.0 Kroatië"@nl,
+        "Navngivelse 2.0 Kroatia"@no,
+        "Tsebagatšo 2.0 Croatia"@nso,
+        "Attribution 2.0 Croatia"@oci-es,
+        "Uznanie autorstwa 2.0 Chorwacja"@pl,
+        "Atribuição  2.0 Croácia"@pt,
+        "Atribuição 2.0 Croatia"@pt-br,
+        "Atribuição 2.0 Croácia"@pt-pt,
+        "Atribuire 2.0 Croaţia"@ro,
+        "Attribution (Атрибуция) 2.0 Хорватия"@ru,
+        "Attribution 2.0 Croatia"@si-lk,
+        "Priznanje avtorstva 2.0 Hrvaška"@sl,
+        "Attribution 2.0 Kroaci"@sq,
+        "Autorstvo 2.0 Hrvatska"@sr,
+        "Ауторство 2.0 Хрватска"@sr,
+        "Autorstvo 2.0 Hrvatska"@sr-latn,
+        "Attribution 2.0 Croatia"@st,
+        "Erkännande 2.0 Kroatien"@sv,
+        "Attribution 2.0 Croatia"@ta,
+        "ఆపాదింపు 2.0 క్రోయేషియా"@te,
+        "แสดงที่มา 2.0 โครเอเชีย"@th,
+        "Attribution 2.0 Hırvatistan"@tr,
+        "Attribution 2.0 Croatia"@uk,
+        "Attribution 2.0 Croatia"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Croatia"@vi,
+        "署名 2.0 克罗地亚"@zh,
+        "姓名標示 2.0 克羅埃西亞"@zh-hk,
+        "姓名標示 2.0 克羅埃西亞"@zh-tw,
+        "Qaphela Umnikazi 2.0 eCroatia"@zu,
+        "${Attribution} 2.0 ${Croatia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.0-hr> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/hr/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/hr/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.0-hr> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/hr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/hr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.5-hr> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Kroasië"@af,
+        "نسب المصنف  2.0 كرواتيا"@ar,
+        "Attribution 2.0 Croatia"@as,
+        "Attribution 2.0 Croatia"@ast,
+        "Attribution 2.0 Croatia"@ast-es,
+        "Attribution 2.0 Croatia"@az,
+        "Атрыбуцыя 2.0 Харватыя"@be,
+        "Признание 2.0 Хърватска"@bg,
+        "Attribution 2.0 Croatia"@bn,
+        "Reconeixement 2.0 Croàcia"@ca,
+        "Uveďte autora 2.0 Chorvatsko"@cs,
+        "Navngivelse 2.0 Kroatien"@da,
+        "Namensnennung 2.0 Kroatien"@de,
+        "Namensnennung 2.0 Kroatien"@de-at,
+        "Namensnennung 2.0 Kroatien"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Κροατία"@el,
+        "Attribution 2.0 Croatia"@en,
+        "Attribution 2.0 Croatia"@en-ca,
+        "Attribution 2.0 Croatia"@en-gb,
+        "Attribution 2.0 Croatia"@en-hk,
+        "Attribution 2.0 Croatia"@en-sg,
+        "Attribution 2.0 Croatia"@en-us,
+        "Atribuite 2.0 Kroatujo"@eo,
+        "Atribución 2.0 Croacia"@es,
+        "Atribución 2.0 Croacia"@es-ar,
+        "Atribución 2.0 Croacia"@es-cl,
+        "Reconocimiento 2.0 Croacia"@es-co,
+        "Reconocimiento 2.0 Croacia"@es-ec,
+        "Reconocimiento 2.0 Croacia"@es-es,
+        "Reconocimiento 2.0 Croacia"@es-gt,
+        "Atribución 2.0 Croacia"@es-mx,
+        "Reconocimiento 2.0 Croacia"@es-pe,
+        "Reconocimiento 2.0 Croacia"@es-pr,
+        "Autorile viitamine 2.0 Horvaatia"@et,
+        "Aitortu 2.0 Kroazia"@eu,
+        "Attribution 2.0 کرواسی"@fa,
+        "Nimeä 2.0 Kroatia"@fi,
+        "Attribution 2.0 Croatie"@fr,
+        "Paternité 2.0 Croatie"@fr-ca,
+        "Paternité 2.0 Croatie"@fr-ch,
+        "Paternité 2.0 Croatie"@fr-lu,
+        "Attribution 2.0 Croatia"@ga,
+        "Recoñecemento 2.0 Croacia"@gl,
+        "ייחוס 2.0 קרואטיה"@he,
+        "Attribution 2.0 Croatia"@hi,
+        "Imenovanje 2.0 Hrvatska"@hr,
+        "Nevezd meg! 2.0 Horvátország"@hu,
+        "Հղում 2.0 Խորվաթիա"@hy,
+        "Atribusi 2.0 Kroasia"@id,
+        "Attribution 2.0 Króatía"@is,
+        "Attribuzione 2.0 Croazia"@it,
+        "Attribuzione 2.0 Croazia"@it-ch,
+        "表示 2.0 クロアチア"@ja,
+        "ავტორობის მითითებით  2.0 ხორვატია"@ka,
+        "Атауын сақтау 2.0 Croatia"@kk,
+        "저작자표시(Attribution) 2.0 크로아티아"@ko,
+        "Priskyrimas 2.0 Kroatija"@lt,
+        "Atsaucoties 2.0 Horvātija"@lv,
+        "Наведи извор 2.0 Хрватска"@mk,
+        "കടപ്പാട് 2.0 ക്രൊയേഷിയ"@ml,
+        "Attribution 2.0 Croatia"@mn,
+        "Pengiktirafan 2.0 Kroatia"@ms,
+        "Naamsvermelding 2.0 Kroatië"@nl,
+        "Navngivelse 2.0 Kroatia"@no,
+        "Tsebagatšo 2.0 Croatia"@nso,
+        "Attribution 2.0 Croatia"@oci-es,
+        "Uznanie autorstwa 2.0 Chorwacja"@pl,
+        "Atribuição  2.0 Croácia"@pt,
+        "Atribuição 2.0 Croatia"@pt-br,
+        "Atribuição 2.0 Croácia"@pt-pt,
+        "Atribuire 2.0 Croaţia"@ro,
+        "Attribution (Атрибуция) 2.0 Хорватия"@ru,
+        "Attribution 2.0 Croatia"@si-lk,
+        "Priznanje avtorstva 2.0 Hrvaška"@sl,
+        "Attribution 2.0 Kroaci"@sq,
+        "Autorstvo 2.0 Hrvatska"@sr,
+        "Ауторство 2.0 Хрватска"@sr,
+        "Autorstvo 2.0 Hrvatska"@sr-latn,
+        "Attribution 2.0 Croatia"@st,
+        "Erkännande 2.0 Kroatien"@sv,
+        "Attribution 2.0 Croatia"@ta,
+        "ఆపాదింపు 2.0 క్రోయేషియా"@te,
+        "แสดงที่มา 2.0 โครเอเชีย"@th,
+        "Attribution 2.0 Hırvatistan"@tr,
+        "Attribution 2.0 Croatia"@uk,
+        "Attribution 2.0 Croatia"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Croatia"@vi,
+        "署名 2.0 克罗地亚"@zh,
+        "姓名標示 2.0 克羅埃西亞"@zh-hk,
+        "姓名標示 2.0 克羅埃西亞"@zh-tw,
+        "Qaphela Umnikazi 2.0 eCroatia"@zu,
+        "${Attribution} 2.0 ${Croatia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.0/hr/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/hr/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/hr/88x31.png> ;
+    li:id "CC-BY-2.0-hr" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.0 HR" .
+

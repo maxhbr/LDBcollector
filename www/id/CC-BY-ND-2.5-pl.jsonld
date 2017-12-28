@@ -1,0 +1,849 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-2.5-pl",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/pl/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/pl/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nd",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-ND-2.0-pl",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 2.5 Pole"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 2.5 بولندا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 2.5 Польшча"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 2.5 Полша"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 2.5 Polònia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 2.5 Polsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 2.5 Polen"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 2.5 Polen"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 Polen"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 Polen"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Πολωνία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 2.5 Polujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 2.5 Polonia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 2.5 Polonia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 2.5 Polonia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 2.5 Polonia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Poola"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 2.5 Polonia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 2.5 لهستان"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 2.5 Puola"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 2.5 Pologne"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 2.5 Pologne"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 2.5 Pologne"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 2.5 Pologne"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 2.5 Polonia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 2.5 פולין"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 2.5 पोलैंड"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 2.5 Poljska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 2.5 Lengyelország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 Լեհաստան"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 2.5 Polandia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 2.5 Pólland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 2.5 Polonia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 2.5 Polonia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 2.5 ポーランド"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 პოლონეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 2.5 Poland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 2.5 폴란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 2.5 Lenkija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 2.5 Polija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 2.5 Полска"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 2.5 പോളണ്ട്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 2.5 Польш"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 2.5 Poland"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 Polen"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 2.5 Polen"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 Poland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 Polska"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 2.5 Polónia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 Poland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 Polonia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 2.5 Polonia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Польша"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 2.5 Poljska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 2.5 Poloni"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 2.5 Poljska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 2.5 Пољска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 2.5 Poljska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 2.5 Polen"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 2.5 போலாந்து"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 2.5 పోలాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 โปแลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 2.5 Polonya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 2.5 Poland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 Nước Phần Lan"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 2.5 波兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 2.5 波蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 2.5 波蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 EPoland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 2.5 ${Poland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/2.5/pl/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/pl/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/pl/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 2.5 Pole"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 2.5 بولندا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 2.5 Польшча"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 2.5 Полша"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 2.5 Polònia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 2.5 Polsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 2.5 Polen"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 2.5 Polen"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 Polen"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 Polen"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Πολωνία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 2.5 Polujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 2.5 Polonia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 2.5 Polonia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 2.5 Polonia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 2.5 Polonia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Polonia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Poola"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 2.5 Polonia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 2.5 لهستان"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 2.5 Puola"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 2.5 Pologne"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 2.5 Pologne"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 2.5 Pologne"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 2.5 Pologne"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 2.5 Polonia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 2.5 פולין"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 2.5 पोलैंड"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 2.5 Poljska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 2.5 Lengyelország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 Լեհաստան"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 2.5 Polandia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 2.5 Pólland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 2.5 Polonia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 2.5 Polonia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 2.5 ポーランド"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 პოლონეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 2.5 Poland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 2.5 폴란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 2.5 Lenkija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 2.5 Polija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 2.5 Полска"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 2.5 പോളണ്ട്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 2.5 Польш"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 2.5 Poland"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 Polen"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 2.5 Polen"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 Poland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 Polska"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 2.5 Polónia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 Poland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 Polonia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 2.5 Polonia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Польша"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 2.5 Poljska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 2.5 Poloni"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 2.5 Poljska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 2.5 Пољска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 2.5 Poljska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 2.5 Polen"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 2.5 போலாந்து"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 2.5 పోలాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 โปแลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 2.5 Polonya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 2.5 Poland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 Nước Phần Lan"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 2.5 波兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 2.5 波蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 2.5 波蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 EPoland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 2.5 ${Poland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-2.5-pl",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/2.5/pl/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/2.5/pl/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/2.5/pl/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/2.5/pl/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-2.5-pl",
+    "li:name": "CC BY-ND 2.5 PL"
+}

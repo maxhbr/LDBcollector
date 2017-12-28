@@ -1,0 +1,231 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/nd/1.0/fi/> a cc:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nd/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nd" ;
+    dc:source <http://creativecommons.org/licenses/nd/1.0/> ;
+    dc:title "GeenAfleidings 1.0 Finland"@af,
+        "لا اشتقاق 1.0 فلندا"@ar,
+        "NoDerivs 1.0 Finland"@as,
+        "NoDerivs 1.0 Finland"@ast,
+        "NoDerivs 1.0 Finland"@ast-es,
+        "NoDerivs 1.0 Finland"@az,
+        "NoDerivs 1.0 Фінляндыя"@be,
+        "Без производни 1.0 Финландия"@bg,
+        "NoDerivs 1.0 Finland"@bn,
+        "SenseObraDerivada 1.0 Finlàndia"@ca,
+        "Nezasahujte do díla 1.0 Finsko"@cs,
+        "IngenBearbejdelse 1.0 Finland"@da,
+        "Keine Bearbeitung 1.0 Finnland"@de,
+        "KeineBearbeitung 1.0 Finnland"@de-at,
+        "KeineBearbeitung 1.0 Finnland"@de-ch,
+        "Όχι Παράγωγα Έργα 1.0 Φιλανδία"@el,
+        "NoDerivs 1.0 Finland"@en,
+        "NoDerivs 1.0 Finland"@en-ca,
+        "NoDerivs 1.0 Finland"@en-gb,
+        "NoDerivs 1.0 Finland"@en-hk,
+        "NoDerivs 1.0 Finland"@en-sg,
+        "NoDerivs 1.0 Finland"@en-us,
+        "Nemodifite 1.0 Suomujo"@eo,
+        "SinDerivadas 1.0 Finlandia"@es,
+        "SinDerivadas 1.0 Finlandia"@es-ar,
+        "SinDerivadas 1.0 Finlandia"@es-cl,
+        "SinObraDerivada 1.0 Finlandia"@es-co,
+        "Sin Obra Derivada 1.0 Finlandia"@es-ec,
+        "SinObraDerivada 1.0 Finlandia"@es-es,
+        "Sin Obra Derivada 1.0 Finlandia"@es-gt,
+        "No Derivadas 1.0 Finlandia"@es-mx,
+        "SinObraDerivada 1.0 Finlandia"@es-pe,
+        "SinObrasDerivadas 1.0 Finlandia"@es-pr,
+        "Tuletatud teoste keeld  1.0 Soome"@et,
+        "LanEratorririkGabe 1.0 Finlandia"@eu,
+        "NoDerivs 1.0 فنلاند"@fa,
+        "Ei muutoksia 1.0 Suomi"@fi,
+        "Pas de Modification 1.0 Finlande"@fr,
+        "Pas de modification 1.0 Finlande"@fr-ca,
+        "Pas de modification 1.0 Finlande"@fr-ch,
+        "Pas de modification 1.0 Finlande"@fr-lu,
+        "NoDerivs 1.0 Finland"@ga,
+        "SenObraDerivada 1.0 Finlandia"@gl,
+        "איסור יצירות נגזרות 1.0 פינלנד"@he,
+        "NoDerivs 1.0 Finland"@hi,
+        "Bez prerada 1.0 Finska"@hr,
+        "Ne változtasd! 1.0 Finnország"@hu,
+        "Օգտագործում առանց վերափոխումների 1.0 Finland"@hy,
+        "TanpaTurunan 1.0 Finlandia"@id,
+        "NoDerivs 1.0 Finland"@is,
+        "NoOpereDerivate 1.0 Finlandia"@it,
+        "NoOpereDerivate 1.0 Finlandia"@it-ch,
+        "改変禁止 1.0 フィンランド"@ja,
+        "გადამუშავებული ნაწარმოების შექმნის გარეშე 1.0 ფინეთი"@ka,
+        "ТУындысыз 1.0 Finland"@kk,
+        "변경금지 1.0 핀란드"@ko,
+        "Be išvedinių 1.0 Suomija"@lt,
+        "Nav atvasinājumu 1.0 Somija"@lv,
+        "БезИзведениДела 1.0 Финска"@mk,
+        "NoDerivs 1.0 ഫിൻലാന്റ്"@ml,
+        "NoDerivs 1.0 Finland"@mn,
+        "TiadaTerbitan 1.0 Finland"@ms,
+        "GeenAfgeleideWerken 1.0 Finland"@nl,
+        "IngenBearbeidelse 1.0 Finland"@no,
+        "Tše sa fetolwego 1.0 Finland"@nso,
+        "NoDerivs 1.0 Finland"@oci-es,
+        "Bez utworów zależnych 1.0 Finlandia"@pl,
+        "SemDerivados 1.0 Finlândia"@pt,
+        "Vedada a criação de obras derivadas 1.0 Finland"@pt-br,
+        "Proibição de realização de Obras Derivadas 1.0 Filândia"@pt-pt,
+        "FărăModificări 1.0 Finlanda"@ro,
+        "Без производных произведений(<i>NoDerivs</i>) 1.0 Финляндия"@ru,
+        "NoDerivs 1.0 Finland"@si-lk,
+        "Brez predelav 1.0 Finska"@sl,
+        "NoDerivs 1.0 Finlandë"@sq,
+        "Bez prerada 1.0 Finska"@sr,
+        "Без прерада 1.0 Финска"@sr,
+        "Bez prerada 1.0 Finska"@sr-latn,
+        "NoDerivs 1.0 Finland"@st,
+        "IngaBearbetningar 1.0 Finland"@sv,
+        "NoDerivs 1.0 Finland"@ta,
+        "NoDerivs 1.0 ఫిన్లాండ్"@te,
+        "ไม่ดัดแปลง 1.0 ฟินแลนด์"@th,
+        "Türetilemez 1.0 Finlandiya"@tr,
+        "NoDerivs 1.0 Finland"@uk,
+        "NoDerivs 1.0 Finland"@ur,
+        "Không Phái sinh 1.0 Finland"@vi,
+        "禁止演绎 1.0 芬兰"@zh,
+        "禁止改作 1.0 芬蘭"@zh-hk,
+        "禁止改作 1.0 芬蘭"@zh-tw,
+        "Ungasuseli lutho kulokhu 1.0 iFinland"@zu,
+        "${NoDerivs} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-ND-1.0-fi> ;
+    foaf:logo <http://i.creativecommons.org/l/nd/1.0/fi/88x31.png> .
+
+<https://licensedb.org/id/CC-ND-1.0-fi> a cc:License,
+        li:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/fi/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nd/1.0/fi/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nd" ;
+    dc:source <http://creativecommons.org/licenses/nd/1.0/> ;
+    dc:title "GeenAfleidings 1.0 Finland"@af,
+        "لا اشتقاق 1.0 فلندا"@ar,
+        "NoDerivs 1.0 Finland"@as,
+        "NoDerivs 1.0 Finland"@ast,
+        "NoDerivs 1.0 Finland"@ast-es,
+        "NoDerivs 1.0 Finland"@az,
+        "NoDerivs 1.0 Фінляндыя"@be,
+        "Без производни 1.0 Финландия"@bg,
+        "NoDerivs 1.0 Finland"@bn,
+        "SenseObraDerivada 1.0 Finlàndia"@ca,
+        "Nezasahujte do díla 1.0 Finsko"@cs,
+        "IngenBearbejdelse 1.0 Finland"@da,
+        "Keine Bearbeitung 1.0 Finnland"@de,
+        "KeineBearbeitung 1.0 Finnland"@de-at,
+        "KeineBearbeitung 1.0 Finnland"@de-ch,
+        "Όχι Παράγωγα Έργα 1.0 Φιλανδία"@el,
+        "NoDerivs 1.0 Finland"@en,
+        "NoDerivs 1.0 Finland"@en-ca,
+        "NoDerivs 1.0 Finland"@en-gb,
+        "NoDerivs 1.0 Finland"@en-hk,
+        "NoDerivs 1.0 Finland"@en-sg,
+        "NoDerivs 1.0 Finland"@en-us,
+        "Nemodifite 1.0 Suomujo"@eo,
+        "SinDerivadas 1.0 Finlandia"@es,
+        "SinDerivadas 1.0 Finlandia"@es-ar,
+        "SinDerivadas 1.0 Finlandia"@es-cl,
+        "SinObraDerivada 1.0 Finlandia"@es-co,
+        "Sin Obra Derivada 1.0 Finlandia"@es-ec,
+        "SinObraDerivada 1.0 Finlandia"@es-es,
+        "Sin Obra Derivada 1.0 Finlandia"@es-gt,
+        "No Derivadas 1.0 Finlandia"@es-mx,
+        "SinObraDerivada 1.0 Finlandia"@es-pe,
+        "SinObrasDerivadas 1.0 Finlandia"@es-pr,
+        "Tuletatud teoste keeld  1.0 Soome"@et,
+        "LanEratorririkGabe 1.0 Finlandia"@eu,
+        "NoDerivs 1.0 فنلاند"@fa,
+        "Ei muutoksia 1.0 Suomi"@fi,
+        "Pas de Modification 1.0 Finlande"@fr,
+        "Pas de modification 1.0 Finlande"@fr-ca,
+        "Pas de modification 1.0 Finlande"@fr-ch,
+        "Pas de modification 1.0 Finlande"@fr-lu,
+        "NoDerivs 1.0 Finland"@ga,
+        "SenObraDerivada 1.0 Finlandia"@gl,
+        "איסור יצירות נגזרות 1.0 פינלנד"@he,
+        "NoDerivs 1.0 Finland"@hi,
+        "Bez prerada 1.0 Finska"@hr,
+        "Ne változtasd! 1.0 Finnország"@hu,
+        "Օգտագործում առանց վերափոխումների 1.0 Finland"@hy,
+        "TanpaTurunan 1.0 Finlandia"@id,
+        "NoDerivs 1.0 Finland"@is,
+        "NoOpereDerivate 1.0 Finlandia"@it,
+        "NoOpereDerivate 1.0 Finlandia"@it-ch,
+        "改変禁止 1.0 フィンランド"@ja,
+        "გადამუშავებული ნაწარმოების შექმნის გარეშე 1.0 ფინეთი"@ka,
+        "ТУындысыз 1.0 Finland"@kk,
+        "변경금지 1.0 핀란드"@ko,
+        "Be išvedinių 1.0 Suomija"@lt,
+        "Nav atvasinājumu 1.0 Somija"@lv,
+        "БезИзведениДела 1.0 Финска"@mk,
+        "NoDerivs 1.0 ഫിൻലാന്റ്"@ml,
+        "NoDerivs 1.0 Finland"@mn,
+        "TiadaTerbitan 1.0 Finland"@ms,
+        "GeenAfgeleideWerken 1.0 Finland"@nl,
+        "IngenBearbeidelse 1.0 Finland"@no,
+        "Tše sa fetolwego 1.0 Finland"@nso,
+        "NoDerivs 1.0 Finland"@oci-es,
+        "Bez utworów zależnych 1.0 Finlandia"@pl,
+        "SemDerivados 1.0 Finlândia"@pt,
+        "Vedada a criação de obras derivadas 1.0 Finland"@pt-br,
+        "Proibição de realização de Obras Derivadas 1.0 Filândia"@pt-pt,
+        "FărăModificări 1.0 Finlanda"@ro,
+        "Без производных произведений(<i>NoDerivs</i>) 1.0 Финляндия"@ru,
+        "NoDerivs 1.0 Finland"@si-lk,
+        "Brez predelav 1.0 Finska"@sl,
+        "NoDerivs 1.0 Finlandë"@sq,
+        "Bez prerada 1.0 Finska"@sr,
+        "Без прерада 1.0 Финска"@sr,
+        "Bez prerada 1.0 Finska"@sr-latn,
+        "NoDerivs 1.0 Finland"@st,
+        "IngaBearbetningar 1.0 Finland"@sv,
+        "NoDerivs 1.0 Finland"@ta,
+        "NoDerivs 1.0 ఫిన్లాండ్"@te,
+        "ไม่ดัดแปลง 1.0 ฟินแลนด์"@th,
+        "Türetilemez 1.0 Finlandiya"@tr,
+        "NoDerivs 1.0 Finland"@uk,
+        "NoDerivs 1.0 Finland"@ur,
+        "Không Phái sinh 1.0 Finland"@vi,
+        "禁止演绎 1.0 芬兰"@zh,
+        "禁止改作 1.0 芬蘭"@zh-hk,
+        "禁止改作 1.0 芬蘭"@zh-tw,
+        "Ungasuseli lutho kulokhu 1.0 iFinland"@zu,
+        "${NoDerivs} 1.0 ${Finland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/nd/1.0/fi/> ;
+    foaf:logo <http://i.creativecommons.org/l/nd/1.0/fi/88x31.png> ;
+    li:id "CC-ND-1.0-fi" ;
+    li:name "CC ND 1.0 FI" .
+

@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/nc/1.0/nl/> a cc:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nc/1.0/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nc" ;
+    dc:source <http://creativecommons.org/licenses/nc/1.0/> ;
+    dc:title "NieKommersieel 1.0 Nederland"@af,
+        "غير تجاري 1.0 هولندا"@ar,
+        "NonCommercial 1.0 Netherlands"@as,
+        "NonCommercial 1.0 Netherlands"@ast,
+        "NonCommercial 1.0 Netherlands"@ast-es,
+        "NonCommercial 1.0 Netherlands"@az,
+        "NonCommercial 1.0 Нідэрланды"@be,
+        "Некомерсиално 1.0 Холандия"@bg,
+        "অ-বানিজ্যিক 1.0 Netherlands"@bn,
+        "NoComercial 1.0 Holanda"@ca,
+        "Neužívejte dílo komerčně 1.0 Nizozemí"@cs,
+        "IkkeKommerciel 1.0 Holland"@da,
+        "Nicht kommerziell 1.0 Niederlande"@de,
+        "NichtKommerziell 1.0 Niederlande"@de-at,
+        "NichtKommerziell 1.0 Niederlande"@de-ch,
+        "Μη Εμπορική Χρήση 1.0 Ολλανδία"@el,
+        "NonCommercial 1.0 Netherlands"@en,
+        "NonCommercial 1.0 Netherlands"@en-ca,
+        "Non-Commercial 1.0 Netherlands"@en-gb,
+        "Non-Commercial 1.0 Netherlands"@en-hk,
+        "Non-Commercial 1.0 Netherlands"@en-sg,
+        "NonCommercial 1.0 Netherlands"@en-us,
+        "Nekomerce 1.0 Nederlando"@eo,
+        "NoComercial 1.0 Holanda"@es,
+        "NoComercial 1.0 Holanda"@es-ar,
+        "NoComercial 1.0 Holanda"@es-cl,
+        "NoComercial 1.0 Holanda"@es-co,
+        "No Comercial 1.0 Holanda"@es-ec,
+        "NoComercial 1.0 Holanda"@es-es,
+        "No Comercial 1.0 Holanda"@es-gt,
+        "No Comercial 1.0 Holanda"@es-mx,
+        "NoComercial 1.0 Holanda"@es-pe,
+        "NoComercial 1.0 Holanda"@es-pr,
+        "Mitteäriline eesmärk 1.0 Holland"@et,
+        "EzKomertziala 1.0 Herbehereak"@eu,
+        "غیر تجاری 1.0 هلند"@fa,
+        "Epäkaupallinen 1.0 Hollanti"@fi,
+        "Pas d'Utilisation Commerciale 1.0 Pays-Bas"@fr,
+        "Pas d'Utilisation Commerciale 1.0 Pays-Bas"@fr-ca,
+        "Pas d'Utilisation Commerciale 1.0 Pays-Bas"@fr-ch,
+        "Pas d'Utilisation Commerciale 1.0 Pays-Bas"@fr-lu,
+        "NonCommercial 1.0 Netherlands"@ga,
+        "NonComercial 1.0 Holanda"@gl,
+        "שימוש לא מסחרי 1.0 הולנד"@he,
+        "NonCommercial 1.0 Netherlands"@hi,
+        "Nekomercijalno 1.0 Nizozemska"@hr,
+        "Ne add el! 1.0 Hollandia"@hu,
+        "Ոչ-առևտրային օգտագործում 1.0 Նիդերլանդներ"@hy,
+        "NonKomersial 1.0 Belanda"@id,
+        "NonCommercial 1.0 Holland"@is,
+        "NonCommerciale 1.0 Olanda"@it,
+        "NonCommerciale 1.0 Olanda"@it-ch,
+        "非営利 1.0 オランダ"@ja,
+        "არაკომერციული  1.0 ნიდერლანდები"@ka,
+        "Коммерциялық емес 1.0 Netherlands"@kk,
+        "비영리 1.0 네덜란드"@ko,
+        "Nekomercinis 1.0 Nyderlandai"@lt,
+        "Nekomerciāli 1.0 Nīderlande"@lv,
+        "Некомерцијално 1.0 Холандија"@mk,
+        "NonCommercial 1.0 നെതർലാന്റ്സ്"@ml,
+        "NonCommercial 1.0 Netherlands"@mn,
+        "BukanKomersial 1.0 Netherlands"@ms,
+        "NietCommercieel 1.0 Nederland"@nl,
+        "Ikkekommersiell 1.0 Nederland"@no,
+        "E sego ya Kgwebo 1.0 Netherlands"@nso,
+        "NonCommercial 1.0 Netherlands"@oci-es,
+        "Użycie niekomercyjne 1.0 Holandia"@pl,
+        "NãoComercial 1.0 Holanda"@pt,
+        "Uso não-comercial 1.0 Netherlands"@pt-br,
+        "Uso Não-Comercial 1.0 Holanda"@pt-pt,
+        "NeComercial 1.0 Olanda"@ro,
+        "Некоммерческое использование 1.0 Нидерланды"@ru,
+        "NonCommercial 1.0 Netherlands"@si-lk,
+        "Nekomercialno 1.0 Nizozemska"@sl,
+        "NonCommercial 1.0 Holandë"@sq,
+        "Nekomercijalno 1.0 Holandija"@sr,
+        "Некомерцијално 1.0 Холандија"@sr,
+        "Nekomercijalno 1.0 Holandija"@sr-latn,
+        "NonCommercial 1.0 Netherlands"@st,
+        "IckeKommersiell 1.0 Nederländerna"@sv,
+        "NonCommercial 1.0 நெதர்லாந்து"@ta,
+        "NonCommercial 1.0 నెదర్లాండ్స్"@te,
+        "ไม่ใช้เพื่อการค้า 1.0 เนเธอร์แลนด์"@th,
+        "Gayriticari 1.0 Hollanda"@tr,
+        "NonCommercial 1.0 Netherlands"@uk,
+        "NonCommercial 1.0 Netherlands"@ur,
+        "Phi thương mại 1.0 Nước Hà Lan"@vi,
+        "非商业性使用 1.0 荷兰"@zh,
+        "非商業性 1.0 荷蘭"@zh-hk,
+        "非商業性 1.0 荷蘭"@zh-tw,
+        "Ungayisebenziseli Ezentengiselwano 1.0 iNetherlands"@zu,
+        "${NonCommercial} 1.0 ${Netherlands}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-NC-1.0-nl> ;
+    foaf:logo <http://i.creativecommons.org/l/nc/1.0/nl/88x31.png> .
+
+<https://licensedb.org/id/CC-NC-1.0-nl> a cc:License,
+        li:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nc/1.0/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nc" ;
+    dc:source <http://creativecommons.org/licenses/nc/1.0/> ;
+    dc:title "NieKommersieel 1.0 Nederland"@af,
+        "غير تجاري 1.0 هولندا"@ar,
+        "NonCommercial 1.0 Netherlands"@as,
+        "NonCommercial 1.0 Netherlands"@ast,
+        "NonCommercial 1.0 Netherlands"@ast-es,
+        "NonCommercial 1.0 Netherlands"@az,
+        "NonCommercial 1.0 Нідэрланды"@be,
+        "Некомерсиално 1.0 Холандия"@bg,
+        "অ-বানিজ্যিক 1.0 Netherlands"@bn,
+        "NoComercial 1.0 Holanda"@ca,
+        "Neužívejte dílo komerčně 1.0 Nizozemí"@cs,
+        "IkkeKommerciel 1.0 Holland"@da,
+        "Nicht kommerziell 1.0 Niederlande"@de,
+        "NichtKommerziell 1.0 Niederlande"@de-at,
+        "NichtKommerziell 1.0 Niederlande"@de-ch,
+        "Μη Εμπορική Χρήση 1.0 Ολλανδία"@el,
+        "NonCommercial 1.0 Netherlands"@en,
+        "NonCommercial 1.0 Netherlands"@en-ca,
+        "Non-Commercial 1.0 Netherlands"@en-gb,
+        "Non-Commercial 1.0 Netherlands"@en-hk,
+        "Non-Commercial 1.0 Netherlands"@en-sg,
+        "NonCommercial 1.0 Netherlands"@en-us,
+        "Nekomerce 1.0 Nederlando"@eo,
+        "NoComercial 1.0 Holanda"@es,
+        "NoComercial 1.0 Holanda"@es-ar,
+        "NoComercial 1.0 Holanda"@es-cl,
+        "NoComercial 1.0 Holanda"@es-co,
+        "No Comercial 1.0 Holanda"@es-ec,
+        "NoComercial 1.0 Holanda"@es-es,
+        "No Comercial 1.0 Holanda"@es-gt,
+        "No Comercial 1.0 Holanda"@es-mx,
+        "NoComercial 1.0 Holanda"@es-pe,
+        "NoComercial 1.0 Holanda"@es-pr,
+        "Mitteäriline eesmärk 1.0 Holland"@et,
+        "EzKomertziala 1.0 Herbehereak"@eu,
+        "غیر تجاری 1.0 هلند"@fa,
+        "Epäkaupallinen 1.0 Hollanti"@fi,
+        "Pas d'Utilisation Commerciale 1.0 Pays-Bas"@fr,
+        "Pas d'Utilisation Commerciale 1.0 Pays-Bas"@fr-ca,
+        "Pas d'Utilisation Commerciale 1.0 Pays-Bas"@fr-ch,
+        "Pas d'Utilisation Commerciale 1.0 Pays-Bas"@fr-lu,
+        "NonCommercial 1.0 Netherlands"@ga,
+        "NonComercial 1.0 Holanda"@gl,
+        "שימוש לא מסחרי 1.0 הולנד"@he,
+        "NonCommercial 1.0 Netherlands"@hi,
+        "Nekomercijalno 1.0 Nizozemska"@hr,
+        "Ne add el! 1.0 Hollandia"@hu,
+        "Ոչ-առևտրային օգտագործում 1.0 Նիդերլանդներ"@hy,
+        "NonKomersial 1.0 Belanda"@id,
+        "NonCommercial 1.0 Holland"@is,
+        "NonCommerciale 1.0 Olanda"@it,
+        "NonCommerciale 1.0 Olanda"@it-ch,
+        "非営利 1.0 オランダ"@ja,
+        "არაკომერციული  1.0 ნიდერლანდები"@ka,
+        "Коммерциялық емес 1.0 Netherlands"@kk,
+        "비영리 1.0 네덜란드"@ko,
+        "Nekomercinis 1.0 Nyderlandai"@lt,
+        "Nekomerciāli 1.0 Nīderlande"@lv,
+        "Некомерцијално 1.0 Холандија"@mk,
+        "NonCommercial 1.0 നെതർലാന്റ്സ്"@ml,
+        "NonCommercial 1.0 Netherlands"@mn,
+        "BukanKomersial 1.0 Netherlands"@ms,
+        "NietCommercieel 1.0 Nederland"@nl,
+        "Ikkekommersiell 1.0 Nederland"@no,
+        "E sego ya Kgwebo 1.0 Netherlands"@nso,
+        "NonCommercial 1.0 Netherlands"@oci-es,
+        "Użycie niekomercyjne 1.0 Holandia"@pl,
+        "NãoComercial 1.0 Holanda"@pt,
+        "Uso não-comercial 1.0 Netherlands"@pt-br,
+        "Uso Não-Comercial 1.0 Holanda"@pt-pt,
+        "NeComercial 1.0 Olanda"@ro,
+        "Некоммерческое использование 1.0 Нидерланды"@ru,
+        "NonCommercial 1.0 Netherlands"@si-lk,
+        "Nekomercialno 1.0 Nizozemska"@sl,
+        "NonCommercial 1.0 Holandë"@sq,
+        "Nekomercijalno 1.0 Holandija"@sr,
+        "Некомерцијално 1.0 Холандија"@sr,
+        "Nekomercijalno 1.0 Holandija"@sr-latn,
+        "NonCommercial 1.0 Netherlands"@st,
+        "IckeKommersiell 1.0 Nederländerna"@sv,
+        "NonCommercial 1.0 நெதர்லாந்து"@ta,
+        "NonCommercial 1.0 నెదర్లాండ్స్"@te,
+        "ไม่ใช้เพื่อการค้า 1.0 เนเธอร์แลนด์"@th,
+        "Gayriticari 1.0 Hollanda"@tr,
+        "NonCommercial 1.0 Netherlands"@uk,
+        "NonCommercial 1.0 Netherlands"@ur,
+        "Phi thương mại 1.0 Nước Hà Lan"@vi,
+        "非商业性使用 1.0 荷兰"@zh,
+        "非商業性 1.0 荷蘭"@zh-hk,
+        "非商業性 1.0 荷蘭"@zh-tw,
+        "Ungayisebenziseli Ezentengiselwano 1.0 iNetherlands"@zu,
+        "${NonCommercial} 1.0 ${Netherlands}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/nc/1.0/nl/> ;
+    foaf:logo <http://i.creativecommons.org/l/nc/1.0/nl/88x31.png> ;
+    li:id "CC-NC-1.0-nl" ;
+    li:name "CC NC 1.0 NL" .
+

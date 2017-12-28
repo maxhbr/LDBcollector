@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/3.0/pl/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/pl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Pole"@af,
+        "نسب المصنف  3.0 بولندا"@ar,
+        "Attribution 3.0 Poland"@as,
+        "Attribution 3.0 Poland"@ast,
+        "Attribution 3.0 Poland"@ast-es,
+        "Attribution 3.0 Poland"@az,
+        "Атрыбуцыя 3.0 Польшча"@be,
+        "Признание 3.0 Полша"@bg,
+        "Attribution 3.0 Poland"@bn,
+        "Reconeixement 3.0 Polònia"@ca,
+        "Uveďte autora 3.0 Polsko"@cs,
+        "Navngivelse 3.0 Polen"@da,
+        "Namensnennung 3.0 Polen"@de,
+        "Namensnennung 3.0 Polen"@de-at,
+        "Namensnennung 3.0 Polen"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Πολωνία"@el,
+        "Attribution 3.0 Poland"@en,
+        "Attribution 3.0 Poland"@en-ca,
+        "Attribution 3.0 Poland"@en-gb,
+        "Attribution 3.0 Poland"@en-hk,
+        "Attribution 3.0 Poland"@en-sg,
+        "Attribution 3.0 Poland"@en-us,
+        "Atribuite 3.0 Polujo"@eo,
+        "Atribución 3.0 Polonia"@es,
+        "Atribución 3.0 Polonia"@es-ar,
+        "Atribución 3.0 Polonia"@es-cl,
+        "Reconocimiento 3.0 Polonia"@es-co,
+        "Reconocimiento 3.0 Polonia"@es-ec,
+        "Reconocimiento 3.0 Polonia"@es-es,
+        "Reconocimiento 3.0 Polonia"@es-gt,
+        "Atribución 3.0 Polonia"@es-mx,
+        "Reconocimiento 3.0 Polonia"@es-pe,
+        "Reconocimiento 3.0 Polonia"@es-pr,
+        "Autorile viitamine 3.0 Poola"@et,
+        "Aitortu 3.0 Polonia"@eu,
+        "Attribution 3.0 لهستان"@fa,
+        "Nimeä 3.0 Puola"@fi,
+        "Attribution 3.0 Pologne"@fr,
+        "Paternité 3.0 Pologne"@fr-ca,
+        "Paternité 3.0 Pologne"@fr-ch,
+        "Paternité 3.0 Pologne"@fr-lu,
+        "Attribution 3.0 Poland"@ga,
+        "Recoñecemento 3.0 Polonia"@gl,
+        "ייחוס 3.0 פולין"@he,
+        "Attribution 3.0 पोलैंड"@hi,
+        "Imenovanje 3.0 Poljska"@hr,
+        "Nevezd meg! 3.0 Lengyelország"@hu,
+        "Հղում 3.0 Լեհաստան"@hy,
+        "Atribusi 3.0 Polandia"@id,
+        "Attribution 3.0 Pólland"@is,
+        "Attribuzione 3.0 Polonia"@it,
+        "Attribuzione 3.0 Polonia"@it-ch,
+        "表示 3.0 ポーランド"@ja,
+        "ავტორობის მითითებით  3.0 პოლონეთი"@ka,
+        "Атауын сақтау 3.0 Poland"@kk,
+        "저작자표시(Attribution) 3.0 폴란드"@ko,
+        "Priskyrimas 3.0 Lenkija"@lt,
+        "Atsaucoties 3.0 Polija"@lv,
+        "Наведи извор 3.0 Полска"@mk,
+        "കടപ്പാട് 3.0 പോളണ്ട്"@ml,
+        "Attribution 3.0 Польш"@mn,
+        "Pengiktirafan 3.0 Poland"@ms,
+        "Naamsvermelding 3.0 Polen"@nl,
+        "Navngivelse 3.0 Polen"@no,
+        "Tsebagatšo 3.0 Poland"@nso,
+        "Attribution 3.0 Poland"@oci-es,
+        "Uznanie autorstwa 3.0 Polska"@pl,
+        "Atribuição  3.0 Polónia"@pt,
+        "Atribuição 3.0 Poland"@pt-br,
+        "Atribuição 3.0 Polonia"@pt-pt,
+        "Atribuire 3.0 Polonia"@ro,
+        "Attribution (Атрибуция) 3.0 Польша"@ru,
+        "Attribution 3.0 Poland"@si-lk,
+        "Priznanje avtorstva 3.0 Poljska"@sl,
+        "Attribution 3.0 Poloni"@sq,
+        "Autorstvo 3.0 Poljska"@sr,
+        "Ауторство 3.0 Пољска"@sr,
+        "Autorstvo 3.0 Poljska"@sr-latn,
+        "Attribution 3.0 Poland"@st,
+        "Erkännande 3.0 Polen"@sv,
+        "Attribution 3.0 போலாந்து"@ta,
+        "ఆపాదింపు 3.0 పోలాండ్"@te,
+        "แสดงที่มา 3.0 โปแลนด์"@th,
+        "Attribution 3.0 Polonya"@tr,
+        "Attribution 3.0 Poland"@uk,
+        "Attribution 3.0 Poland"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Phần Lan"@vi,
+        "署名 3.0 波兰"@zh,
+        "姓名標示 3.0 波蘭"@zh-hk,
+        "姓名標示 3.0 波蘭"@zh-tw,
+        "Qaphela Umnikazi 3.0 EPoland"@zu,
+        "${Attribution} 3.0 ${Poland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-3.0-pl> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/pl/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/pl/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-3.0-pl> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/pl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-2.5-pl> ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Pole"@af,
+        "نسب المصنف  3.0 بولندا"@ar,
+        "Attribution 3.0 Poland"@as,
+        "Attribution 3.0 Poland"@ast,
+        "Attribution 3.0 Poland"@ast-es,
+        "Attribution 3.0 Poland"@az,
+        "Атрыбуцыя 3.0 Польшча"@be,
+        "Признание 3.0 Полша"@bg,
+        "Attribution 3.0 Poland"@bn,
+        "Reconeixement 3.0 Polònia"@ca,
+        "Uveďte autora 3.0 Polsko"@cs,
+        "Navngivelse 3.0 Polen"@da,
+        "Namensnennung 3.0 Polen"@de,
+        "Namensnennung 3.0 Polen"@de-at,
+        "Namensnennung 3.0 Polen"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Πολωνία"@el,
+        "Attribution 3.0 Poland"@en,
+        "Attribution 3.0 Poland"@en-ca,
+        "Attribution 3.0 Poland"@en-gb,
+        "Attribution 3.0 Poland"@en-hk,
+        "Attribution 3.0 Poland"@en-sg,
+        "Attribution 3.0 Poland"@en-us,
+        "Atribuite 3.0 Polujo"@eo,
+        "Atribución 3.0 Polonia"@es,
+        "Atribución 3.0 Polonia"@es-ar,
+        "Atribución 3.0 Polonia"@es-cl,
+        "Reconocimiento 3.0 Polonia"@es-co,
+        "Reconocimiento 3.0 Polonia"@es-ec,
+        "Reconocimiento 3.0 Polonia"@es-es,
+        "Reconocimiento 3.0 Polonia"@es-gt,
+        "Atribución 3.0 Polonia"@es-mx,
+        "Reconocimiento 3.0 Polonia"@es-pe,
+        "Reconocimiento 3.0 Polonia"@es-pr,
+        "Autorile viitamine 3.0 Poola"@et,
+        "Aitortu 3.0 Polonia"@eu,
+        "Attribution 3.0 لهستان"@fa,
+        "Nimeä 3.0 Puola"@fi,
+        "Attribution 3.0 Pologne"@fr,
+        "Paternité 3.0 Pologne"@fr-ca,
+        "Paternité 3.0 Pologne"@fr-ch,
+        "Paternité 3.0 Pologne"@fr-lu,
+        "Attribution 3.0 Poland"@ga,
+        "Recoñecemento 3.0 Polonia"@gl,
+        "ייחוס 3.0 פולין"@he,
+        "Attribution 3.0 पोलैंड"@hi,
+        "Imenovanje 3.0 Poljska"@hr,
+        "Nevezd meg! 3.0 Lengyelország"@hu,
+        "Հղում 3.0 Լեհաստան"@hy,
+        "Atribusi 3.0 Polandia"@id,
+        "Attribution 3.0 Pólland"@is,
+        "Attribuzione 3.0 Polonia"@it,
+        "Attribuzione 3.0 Polonia"@it-ch,
+        "表示 3.0 ポーランド"@ja,
+        "ავტორობის მითითებით  3.0 პოლონეთი"@ka,
+        "Атауын сақтау 3.0 Poland"@kk,
+        "저작자표시(Attribution) 3.0 폴란드"@ko,
+        "Priskyrimas 3.0 Lenkija"@lt,
+        "Atsaucoties 3.0 Polija"@lv,
+        "Наведи извор 3.0 Полска"@mk,
+        "കടപ്പാട് 3.0 പോളണ്ട്"@ml,
+        "Attribution 3.0 Польш"@mn,
+        "Pengiktirafan 3.0 Poland"@ms,
+        "Naamsvermelding 3.0 Polen"@nl,
+        "Navngivelse 3.0 Polen"@no,
+        "Tsebagatšo 3.0 Poland"@nso,
+        "Attribution 3.0 Poland"@oci-es,
+        "Uznanie autorstwa 3.0 Polska"@pl,
+        "Atribuição  3.0 Polónia"@pt,
+        "Atribuição 3.0 Poland"@pt-br,
+        "Atribuição 3.0 Polonia"@pt-pt,
+        "Atribuire 3.0 Polonia"@ro,
+        "Attribution (Атрибуция) 3.0 Польша"@ru,
+        "Attribution 3.0 Poland"@si-lk,
+        "Priznanje avtorstva 3.0 Poljska"@sl,
+        "Attribution 3.0 Poloni"@sq,
+        "Autorstvo 3.0 Poljska"@sr,
+        "Ауторство 3.0 Пољска"@sr,
+        "Autorstvo 3.0 Poljska"@sr-latn,
+        "Attribution 3.0 Poland"@st,
+        "Erkännande 3.0 Polen"@sv,
+        "Attribution 3.0 போலாந்து"@ta,
+        "ఆపాదింపు 3.0 పోలాండ్"@te,
+        "แสดงที่มา 3.0 โปแลนด์"@th,
+        "Attribution 3.0 Polonya"@tr,
+        "Attribution 3.0 Poland"@uk,
+        "Attribution 3.0 Poland"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Phần Lan"@vi,
+        "署名 3.0 波兰"@zh,
+        "姓名標示 3.0 波蘭"@zh-hk,
+        "姓名標示 3.0 波蘭"@zh-tw,
+        "Qaphela Umnikazi 3.0 EPoland"@zu,
+        "${Attribution} 3.0 ${Poland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/3.0/pl/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/pl/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/pl/88x31.png> ;
+    li:id "CC-BY-3.0-pl" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 3.0 PL" .
+

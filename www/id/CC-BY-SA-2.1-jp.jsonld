@@ -1,0 +1,854 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-SA-2.1-jp",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/jp/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.1/jp/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.1",
+    "dc:identifier": "by-sa",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-SA-2.0-jp",
+    "dc:source": "http://creativecommons.org/licenses/by-sa/2.1/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-InsgelyksDeel 2.1 Japan"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب العمل- المشاركة على قدم المساواة 2.1 اليابان"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-ShareAlike 2.1 Японія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Споделяне на споделеното 2.1 Япония"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-CompartirIgual 2.1 Japó"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Zachovejte licenci 2.1 Japonsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.1 Japan"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.1 Ιαπωνία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Samkondiĉe 2.1 Japanujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-CompartirDerivadasIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-LicenciarIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-Licenciamiento Recíproco 2.1 Japón"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.1 Jaapan"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-PartekatuBerdin 2.1 Japonia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-ShareAlike 2.1 ژاپن"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Tarttuva 2.1 Japani"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Partage à l'Identique 2.1 Japon"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-CompartirIgual 2.1 Xapón"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שיתוף זהה 2.1 יפן"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Dijeli pod istim uvjetima 2.1 Japan"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Így add tovább! 2.1 Japán"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - համանման տարածում 2.1 Japan"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-BerbagiSerupa 2.1 Jepang"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.1 Giappone"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.1 Giappone"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 継承 2.1 日本"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.1 იაპონია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-동일조건변경허락 2.1 일본"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-ShareAlike 2.1 Japonija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nemainot licenci 2.1 Japāna"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-СподелиПодИстиУслови 2.1 Јапонија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-ShareAlike 2.1 ജപ്പാൻ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-PerkongsianSerupa 2.1 Jepun"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GelijkDelen 2.1 Japan"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.1 Japan"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo -Mohlakanelwa 2.1 Japane"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Na tych samych warunkach 2.1 Japonia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - CompartilhaIgual 2.1 Japão"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Partilha nos termos da mesma licença 2.1 Japão"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire - Distribuire-în-condiţii-identice 2.1 Japonia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.1 Япония"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.1 Japonska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-ShareAlike 2.1 Japoni"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.1 Japan"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Делити под истим условима 2.1 Јапан"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.1 Japan"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-DelaLika 2.1 Japan"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-ShareAlike 2.1 జపాన్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.1 ่ญี่ปุ่น"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-LisansıDevamEttirme 2.1 Japonya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-ShareAlike 2.1 Japan"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-ShareAlike 2.1 Nước Nhật Bản"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-相同方式共享 2.1 日本"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-相同方式分享 2.1 日本"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-相同方式分享 2.1 日本"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.1 Ejapane"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-ShareAlike} 2.1 ${Japan}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-sa/2.1/jp/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/jp/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.1/jp/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.1",
+        "dc:identifier": "by-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-sa/2.1/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-InsgelyksDeel 2.1 Japan"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب العمل- المشاركة على قدم المساواة 2.1 اليابان"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-ShareAlike 2.1 Японія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Споделяне на споделеното 2.1 Япония"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-CompartirIgual 2.1 Japó"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Zachovejte licenci 2.1 Japonsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.1 Japan"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.1 Japan"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.1 Ιαπωνία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Samkondiĉe 2.1 Japanujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-CompartirDerivadasIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-LicenciarIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-Licenciamiento Recíproco 2.1 Japón"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-CompartirIgual 2.1 Japón"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.1 Jaapan"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-PartekatuBerdin 2.1 Japonia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-ShareAlike 2.1 ژاپن"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Tarttuva 2.1 Japani"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Partage à l'Identique 2.1 Japon"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.1 Japon"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-CompartirIgual 2.1 Xapón"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שיתוף זהה 2.1 יפן"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Dijeli pod istim uvjetima 2.1 Japan"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Így add tovább! 2.1 Japán"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - համանման տարածում 2.1 Japan"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-BerbagiSerupa 2.1 Jepang"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.1 Giappone"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.1 Giappone"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 継承 2.1 日本"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.1 იაპონია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-동일조건변경허락 2.1 일본"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-ShareAlike 2.1 Japonija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nemainot licenci 2.1 Japāna"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-СподелиПодИстиУслови 2.1 Јапонија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-ShareAlike 2.1 ജപ്പാൻ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-PerkongsianSerupa 2.1 Jepun"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GelijkDelen 2.1 Japan"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.1 Japan"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo -Mohlakanelwa 2.1 Japane"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Na tych samych warunkach 2.1 Japonia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - CompartilhaIgual 2.1 Japão"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Partilha nos termos da mesma licença 2.1 Japão"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire - Distribuire-în-condiţii-identice 2.1 Japonia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.1 Япония"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.1 Japonska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-ShareAlike 2.1 Japoni"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.1 Japan"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Делити под истим условима 2.1 Јапан"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.1 Japan"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-DelaLika 2.1 Japan"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-ShareAlike 2.1 జపాన్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.1 ่ญี่ปุ่น"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-LisansıDevamEttirme 2.1 Japonya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-ShareAlike 2.1 Japan"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-ShareAlike 2.1 Nước Nhật Bản"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-相同方式共享 2.1 日本"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-相同方式分享 2.1 日本"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-相同方式分享 2.1 日本"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.1 Ejapane"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-ShareAlike} 2.1 ${Japan}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-SA-2.1-jp",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-sa/2.1/jp/80x15.png",
+            "http://i.creativecommons.org/l/by-sa/2.1/jp/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-sa/2.1/jp/80x15.png",
+        "http://i.creativecommons.org/l/by-sa/2.1/jp/88x31.png"
+    ],
+    "li:id": "CC-BY-SA-2.1-jp",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY-SA 2.1 JP"
+}

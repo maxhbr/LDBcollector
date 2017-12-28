@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.0-fr",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/fr/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.0/fr/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.0 Frankryk"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.0 فرنسا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.0 Францыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.0 Франция"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.0 França"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.0 Francie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.0 Frankrig"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.0 Frankreich"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.0 Frankreich"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.0 Frankreich"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.0 Γαλλία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.0 Francujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.0 Francia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.0 Francia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.0 Francia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.0 Francia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.0 Francia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.0 Francia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.0 Francia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.0 Francia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.0 Francia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.0 Francia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.0 Prantsusmaa"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.0 Frantzia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.0 فرانسه"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.0 Ranska"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.0 France"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.0 France"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.0  France"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.0 Francia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.0 צרפת"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.0 Francuska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.0 Franciaország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.0 Ֆրանսիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.0 Perancis"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.0 Francia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.0 Francia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.0 フランス"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.0 საფრანგეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.0 France"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.0 프랑스"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.0 Prancūzija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.0 Francija"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.0 Франција"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.0 ഫ്രാൻസ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.0 Perancis"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.0 Frankrijk"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.0 Frankrike"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.0 Fora"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.0 Francja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.0 França"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.0 France"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.0 França"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.0 Franţa"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.0 Франция"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.0 ප්‍රංශ"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.0 Francija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.0 Francë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.0 Francuska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.0 Француска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.0 Francuska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.0 Frankrike"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.0 ఫ్రాన్స్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.0 ฝรั่งเศส"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.0 Fransa"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.0 France"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.0 France"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.0 法国"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.0 法國"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.0 法國"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.0 EFrance"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.0 ${France}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.0/fr/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/fr/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.0/fr/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.0 Frankryk"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.0 فرنسا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.0 Францыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.0 Франция"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.0 França"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.0 Francie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.0 Frankrig"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.0 Frankreich"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.0 Frankreich"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.0 Frankreich"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.0 Γαλλία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.0 Francujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.0 Francia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.0 Francia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.0 Francia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.0 Francia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.0 Francia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.0 Francia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.0 Francia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.0 Francia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.0 Francia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.0 Francia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.0 Prantsusmaa"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.0 Frantzia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.0 فرانسه"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.0 Ranska"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.0 France"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.0 France"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.0  France"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.0 Francia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.0 צרפת"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.0 Francuska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.0 Franciaország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.0 Ֆրանսիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.0 Perancis"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.0 Francia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.0 Francia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.0 フランス"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.0 საფრანგეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.0 France"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.0 프랑스"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.0 Prancūzija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.0 Francija"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.0 Франција"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.0 ഫ്രാൻസ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.0 Perancis"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.0 Frankrijk"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.0 Frankrike"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.0 Fora"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.0 Francja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.0 França"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.0 France"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.0 França"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.0 Franţa"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.0 Франция"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.0 ප්‍රංශ"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.0 Francija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.0 Francë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.0 Francuska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.0 Француска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.0 Francuska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.0 Frankrike"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.0 ఫ్రాన్స్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.0 ฝรั่งเศส"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.0 Fransa"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.0 France"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.0 France"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.0 法国"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.0 法國"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.0 法國"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.0 EFrance"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.0 ${France}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.0-fr",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.0/fr/80x15.png",
+            "http://i.creativecommons.org/l/by/2.0/fr/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.0/fr/80x15.png",
+        "http://i.creativecommons.org/l/by/2.0/fr/88x31.png"
+    ],
+    "li:id": "CC-BY-2.0-fr",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.0 FR"
+}

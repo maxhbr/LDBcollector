@@ -1,0 +1,852 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-3.0-no",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/no/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/3.0/no/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nc",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 3.0 Norway"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 3.0 نروج"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 3.0 Нарвегія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 3.0 Norway"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 3.0 Noruega"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 3.0 Norsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 3.0 Norway"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 3.0 Norwegen"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 3.0 Norway"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 3.0 Norway"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Νορβηγία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 3.0 Norvegujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 3.0 Noruega"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 3.0 Norway"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 3.0 Norway"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 3.0 Norway"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 3.0 Norway"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 3.0 Noruega"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 3.0 Norway"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 3.0 Norway"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 3.0 Norway"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 3.0 Norway"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 3.0 Norra"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 3.0 Norway"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 3.0 نروژ"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 3.0 Norja"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Norvège"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Norway"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Norway"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Norway"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 3.0 Norway"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 3.0 נורווגיה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 3.0 Norveška"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 3.0 Norvégia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 3.0 Նորվեգիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 3.0 Norwegia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 3.0 Norway"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 3.0 Norway"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 3.0 ノルウェー"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 ნოვეგია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 3.0 Norway"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 3.0 노르웨이"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 3.0 Norvegija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 3.0 Norvēģija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 3.0 Норвешка"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 3.0 നോർവെ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 3.0 Norway"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 3.0 Norwegen "
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 3.0 Norge"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 3.0 Norway"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 3.0 Norwegia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 3.0 Noruega"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 3.0 Noruega"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 3.0 Norway"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 3.0 Norvegia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Норвегия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 3.0 නෝර්වේ"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 3.0 Norway"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 3.0 Norvegji"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 3.0 Norveška"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 3.0 Норвешка"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 3.0 Norveška"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 3.0 Norge"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 3.0 నార్వే"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 นอร์เวย์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 3.0 Norveç"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 3.0 Norway"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  3.0 Norway"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 3.0 挪威"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 3.0 挪威"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 3.0 挪威"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 Norway"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 3.0 ${Norway}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/3.0/no/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/no/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/3.0/no/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nc",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 3.0 Norway"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 3.0 نروج"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 3.0 Нарвегія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 3.0 Norway"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 3.0 Noruega"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 3.0 Norsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 3.0 Norway"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 3.0 Norwegen"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 3.0 Norway"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 3.0 Norway"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Νορβηγία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 3.0 Norvegujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 3.0 Noruega"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 3.0 Norway"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 3.0 Norway"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 3.0 Norway"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 3.0 Norway"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 3.0 Noruega"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 3.0 Norway"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 3.0 Norway"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 3.0 Norway"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 3.0 Norway"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 3.0 Norra"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 3.0 Norway"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 3.0 نروژ"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 3.0 Norja"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Norvège"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Norway"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Norway"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 3.0 Norway"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 3.0 Norway"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 3.0 נורווגיה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 3.0 Norveška"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 3.0 Norvégia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 3.0 Նորվեգիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 3.0 Norwegia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 3.0 Norway"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 3.0 Norway"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 3.0 ノルウェー"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 ნოვეგია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 3.0 Norway"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 3.0 노르웨이"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 3.0 Norvegija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 3.0 Norvēģija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 3.0 Норвешка"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 3.0 നോർവെ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 3.0 Norway"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 3.0 Norwegen "
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 3.0 Norge"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 3.0 Norway"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 3.0 Norwegia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 3.0 Noruega"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 3.0 Noruega"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 3.0 Norway"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 3.0 Norvegia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Норвегия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 3.0 නෝර්වේ"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 3.0 Norway"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 3.0 Norvegji"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 3.0 Norveška"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 3.0 Норвешка"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 3.0 Norveška"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 3.0 Norge"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 3.0 నార్వే"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 นอร์เวย์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 3.0 Norveç"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 3.0 Norway"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  3.0 Norway"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 3.0 挪威"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 3.0 挪威"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 3.0 挪威"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 Norway"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 3.0 ${Norway}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-3.0-no",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/3.0/no/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/3.0/no/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/3.0/no/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/3.0/no/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-3.0-no",
+    "li:name": "CC BY-NC 3.0 NO"
+}

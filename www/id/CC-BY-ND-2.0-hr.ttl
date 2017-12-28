@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd/2.0/hr/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/hr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/2.0/hr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nd" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nd/2.5/hr/> ;
+    dc:source <http://creativecommons.org/licenses/by-nd/2.0/> ;
+    dc:title "Erkenning-GeenAfleidings 2.0 Kroasië"@af,
+        "نسب- غير مشتق 2.0 كرواتيا"@ar,
+        "Attribution-NoDerivs 2.0 Croatia"@as,
+        "Attribution-NoDerivs 2.0 Croatia"@ast,
+        "Attribution-NoDerivs 2.0 Croatia"@ast-es,
+        "Attribution-NoDerivs 2.0 Croatia"@az,
+        "Attribution-NoDerivs 2.0 Харватыя"@be,
+        "Признание-Без производни 2.0 Хърватска"@bg,
+        "Attribution-NoDerivs 2.0 Croatia"@bn,
+        "Reconeixement-SenseObraDerivada 2.0 Croàcia"@ca,
+        "Uveďte autora-Nezasahujte do díla 2.0 Chorvatsko"@cs,
+        "Navngivelse-IngenBearbejdelse 2.0 Kroatien"@da,
+        "Namensnennung-Keine Bearbeitung 2.0 Kroatien"@de,
+        "Namensnennung-KeineBearbeitung 2.0 Kroatien"@de-at,
+        "Namensnennung-KeineBearbeitung 2.0 Kroatien"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.0 Κροατία"@el,
+        "Attribution-NoDerivs 2.0 Croatia"@en,
+        "Attribution-NoDerivs 2.0 Croatia"@en-ca,
+        "Attribution-NoDerivs 2.0 Croatia"@en-gb,
+        "Attribution-NoDerivs 2.0 Croatia"@en-hk,
+        "Attribution-NoDerivs 2.0 Croatia"@en-sg,
+        "Attribution-NoDerivs 2.0 Croatia"@en-us,
+        "Atribuite-Nemodifite 2.0 Kroatujo"@eo,
+        "Atribución-SinDerivadas 2.0 Croacia"@es,
+        "Atribución-SinDerivadas 2.0 Croacia"@es-ar,
+        "Atribución-SinDerivadas 2.0 Croacia"@es-cl,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-co,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-ec,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-es,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-gt,
+        "Atribución-No Derivadas 2.0 Croacia"@es-mx,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-pe,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 2.0 Horvaatia"@et,
+        "Aitortu-LanEratorririkGabe 2.0 Kroazia"@eu,
+        "Attribution-NoDerivs 2.0 کرواسی"@fa,
+        "Nimeä-Ei muutoksia 2.0 Kroatia"@fi,
+        "Paternité - Pas de Modification 2.0 Croatie"@fr,
+        "Paternité - Pas de Modification 2.0 Croatie"@fr-ca,
+        "Paternité - Pas de Modification 2.0 Croatie"@fr-ch,
+        "Paternité - Pas de Modification 2.0 Croatie"@fr-lu,
+        "Attribution-NoDerivs 2.0 Croatia"@ga,
+        "Recoñecemento-SenObraDerivada 2.0 Croacia"@gl,
+        "ייחוס-איסור יצירות נגזרות 2.0 קרואטיה"@he,
+        "Attribution-NoDerivs 2.0 Croatia"@hi,
+        "Imenovanje-Bez prerada 2.0 Hrvatska"@hr,
+        "Nevezd meg! - Ne változtasd! 2.0 Horvátország"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 2.0 Խորվաթիա"@hy,
+        "Atribusi-TanpaTurunan 2.0 Kroasia"@id,
+        "Attribution-NoDerivs 2.0 Króatía"@is,
+        "Attribuzione - Non opere derivate 2.0 Croazia"@it,
+        "Attribuzione - Non opere derivate 2.0 Croazia"@it-ch,
+        "表示 - 改変禁止 2.0 クロアチア"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 2.0 ხორვატია"@ka,
+        "Туынды жасамау 2.0 Croatia"@kk,
+        "저작자표시-변경금지 2.0 크로아티아"@ko,
+        "Attribution-NoDerivs 2.0 Kroatija"@lt,
+        "Atsaucoties-Neatvasinot 2.0 Horvātija"@lv,
+        "НаведиИзвор-БезИзведениДела 2.0 Хрватска"@mk,
+        "Attribution-NoDerivs 2.0 ക്രൊയേഷിയ"@ml,
+        "Attribution-NoDerivs 2.0 Croatia"@mn,
+        "Pengiktirafan-TiadaTerbitan 2.0 Kroatia"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 2.0 Kroatië"@nl,
+        "Navngivelse-IngenBearbeidelse 2.0 Kroatia"@no,
+        "Tsebagatšo - Tše sa Fetolwego 2.0 Croatia"@nso,
+        "Attribution-NoDerivs 2.0 Croatia"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 2.0 Chorwacja"@pl,
+        "Atribuição - SemDerivados 2.0 Croácia"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 2.0 Croatia"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 2.0 Croácia"@pt-pt,
+        "Atribuire-FărăModificări 2.0 Croaţia"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.0 Хорватия"@ru,
+        "Attribution-NoDerivs 2.0 Croatia"@si-lk,
+        "Priznanje avtorstva-Brez predelav 2.0 Hrvaška"@sl,
+        "Attribution-NoDerivs 2.0 Kroaci"@sq,
+        "Autorstvo-Bez prerada 2.0 Hrvatska"@sr,
+        "Ауторство-Без прерада 2.0 Хрватска"@sr,
+        "Autorstvo-Bez prerada 2.0 Hrvatska"@sr-latn,
+        "Attribution-NoDerivs 2.0 Croatia"@st,
+        "Erkännande-IngaBearbetningar 2.0 Kroatien"@sv,
+        "Attribution-NoDerivs 2.0 Croatia"@ta,
+        "Attribution-NoDerivs 2.0 క్రోయేషియా"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 2.0 โครเอเชีย"@th,
+        "Alıntı-Türetilemez 2.0 Hırvatistan"@tr,
+        "Attribution-NoDerivs 2.0 Croatia"@uk,
+        "Attribution-NoDerivs 2.0 Croatia"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 2.0 Nước Croatia"@vi,
+        "署名-禁止演绎 2.0 克罗地亚"@zh,
+        "姓名標示-禁止改作 2.0 克羅埃西亞"@zh-hk,
+        "姓名標示-禁止改作 2.0 克羅埃西亞"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.0 eCroatia"@zu,
+        "${Attribution-NoDerivs} 2.0 ${Croatia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-2.0-hr> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/2.0/hr/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/2.0/hr/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-2.0-hr> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/hr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd/2.0/hr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nd" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-ND-2.5-hr> ;
+    dc:source <http://creativecommons.org/licenses/by-nd/2.0/> ;
+    dc:title "Erkenning-GeenAfleidings 2.0 Kroasië"@af,
+        "نسب- غير مشتق 2.0 كرواتيا"@ar,
+        "Attribution-NoDerivs 2.0 Croatia"@as,
+        "Attribution-NoDerivs 2.0 Croatia"@ast,
+        "Attribution-NoDerivs 2.0 Croatia"@ast-es,
+        "Attribution-NoDerivs 2.0 Croatia"@az,
+        "Attribution-NoDerivs 2.0 Харватыя"@be,
+        "Признание-Без производни 2.0 Хърватска"@bg,
+        "Attribution-NoDerivs 2.0 Croatia"@bn,
+        "Reconeixement-SenseObraDerivada 2.0 Croàcia"@ca,
+        "Uveďte autora-Nezasahujte do díla 2.0 Chorvatsko"@cs,
+        "Navngivelse-IngenBearbejdelse 2.0 Kroatien"@da,
+        "Namensnennung-Keine Bearbeitung 2.0 Kroatien"@de,
+        "Namensnennung-KeineBearbeitung 2.0 Kroatien"@de-at,
+        "Namensnennung-KeineBearbeitung 2.0 Kroatien"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.0 Κροατία"@el,
+        "Attribution-NoDerivs 2.0 Croatia"@en,
+        "Attribution-NoDerivs 2.0 Croatia"@en-ca,
+        "Attribution-NoDerivs 2.0 Croatia"@en-gb,
+        "Attribution-NoDerivs 2.0 Croatia"@en-hk,
+        "Attribution-NoDerivs 2.0 Croatia"@en-sg,
+        "Attribution-NoDerivs 2.0 Croatia"@en-us,
+        "Atribuite-Nemodifite 2.0 Kroatujo"@eo,
+        "Atribución-SinDerivadas 2.0 Croacia"@es,
+        "Atribución-SinDerivadas 2.0 Croacia"@es-ar,
+        "Atribución-SinDerivadas 2.0 Croacia"@es-cl,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-co,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-ec,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-es,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-gt,
+        "Atribución-No Derivadas 2.0 Croacia"@es-mx,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-pe,
+        "Reconocimiento-SinObraDerivada 2.0 Croacia"@es-pr,
+        "Autorile viitamine + Tuletatud teoste keeld 2.0 Horvaatia"@et,
+        "Aitortu-LanEratorririkGabe 2.0 Kroazia"@eu,
+        "Attribution-NoDerivs 2.0 کرواسی"@fa,
+        "Nimeä-Ei muutoksia 2.0 Kroatia"@fi,
+        "Paternité - Pas de Modification 2.0 Croatie"@fr,
+        "Paternité - Pas de Modification 2.0 Croatie"@fr-ca,
+        "Paternité - Pas de Modification 2.0 Croatie"@fr-ch,
+        "Paternité - Pas de Modification 2.0 Croatie"@fr-lu,
+        "Attribution-NoDerivs 2.0 Croatia"@ga,
+        "Recoñecemento-SenObraDerivada 2.0 Croacia"@gl,
+        "ייחוס-איסור יצירות נגזרות 2.0 קרואטיה"@he,
+        "Attribution-NoDerivs 2.0 Croatia"@hi,
+        "Imenovanje-Bez prerada 2.0 Hrvatska"@hr,
+        "Nevezd meg! - Ne változtasd! 2.0 Horvátország"@hu,
+        "Հղում - Օգտագործում առանց վերափոխումների 2.0 Խորվաթիա"@hy,
+        "Atribusi-TanpaTurunan 2.0 Kroasia"@id,
+        "Attribution-NoDerivs 2.0 Króatía"@is,
+        "Attribuzione - Non opere derivate 2.0 Croazia"@it,
+        "Attribuzione - Non opere derivate 2.0 Croazia"@it-ch,
+        "表示 - 改変禁止 2.0 クロアチア"@ja,
+        "ავტორობის მითითებით გადამუშავების გარეშე 2.0 ხორვატია"@ka,
+        "Туынды жасамау 2.0 Croatia"@kk,
+        "저작자표시-변경금지 2.0 크로아티아"@ko,
+        "Attribution-NoDerivs 2.0 Kroatija"@lt,
+        "Atsaucoties-Neatvasinot 2.0 Horvātija"@lv,
+        "НаведиИзвор-БезИзведениДела 2.0 Хрватска"@mk,
+        "Attribution-NoDerivs 2.0 ക്രൊയേഷിയ"@ml,
+        "Attribution-NoDerivs 2.0 Croatia"@mn,
+        "Pengiktirafan-TiadaTerbitan 2.0 Kroatia"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken 2.0 Kroatië"@nl,
+        "Navngivelse-IngenBearbeidelse 2.0 Kroatia"@no,
+        "Tsebagatšo - Tše sa Fetolwego 2.0 Croatia"@nso,
+        "Attribution-NoDerivs 2.0 Croatia"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych 2.0 Chorwacja"@pl,
+        "Atribuição - SemDerivados 2.0 Croácia"@pt,
+        "Atribuição-Vedada a criação de obras derivativas 2.0 Croatia"@pt-br,
+        "Atribuição-Proibição de realização de Obras Derivadas 2.0 Croácia"@pt-pt,
+        "Atribuire-FărăModificări 2.0 Croaţia"@ro,
+        "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.0 Хорватия"@ru,
+        "Attribution-NoDerivs 2.0 Croatia"@si-lk,
+        "Priznanje avtorstva-Brez predelav 2.0 Hrvaška"@sl,
+        "Attribution-NoDerivs 2.0 Kroaci"@sq,
+        "Autorstvo-Bez prerada 2.0 Hrvatska"@sr,
+        "Ауторство-Без прерада 2.0 Хрватска"@sr,
+        "Autorstvo-Bez prerada 2.0 Hrvatska"@sr-latn,
+        "Attribution-NoDerivs 2.0 Croatia"@st,
+        "Erkännande-IngaBearbetningar 2.0 Kroatien"@sv,
+        "Attribution-NoDerivs 2.0 Croatia"@ta,
+        "Attribution-NoDerivs 2.0 క్రోయేషియా"@te,
+        "แสดงที่มา-ไม่ดัดแปลง 2.0 โครเอเชีย"@th,
+        "Alıntı-Türetilemez 2.0 Hırvatistan"@tr,
+        "Attribution-NoDerivs 2.0 Croatia"@uk,
+        "Attribution-NoDerivs 2.0 Croatia"@ur,
+        "Ghi nhận công của tác giả - Không phái sinh 2.0 Nước Croatia"@vi,
+        "署名-禁止演绎 2.0 克罗地亚"@zh,
+        "姓名標示-禁止改作 2.0 克羅埃西亞"@zh-hk,
+        "姓名標示-禁止改作 2.0 克羅埃西亞"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.0 eCroatia"@zu,
+        "${Attribution-NoDerivs} 2.0 ${Croatia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd/2.0/hr/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd/2.0/hr/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd/2.0/hr/88x31.png> ;
+    li:id "CC-BY-ND-2.0-hr" ;
+    li:name "CC BY-ND 2.0 HR" .
+

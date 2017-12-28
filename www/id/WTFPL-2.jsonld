@@ -1,0 +1,83 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/WTFPL-2",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://sam.zoy.org/wtfpl/COPYING",
+    "dc:hasVersion": "2",
+    "dc:replaces": "https://licensedb.org/id/WTFPL-1.1",
+    "dc:title": {
+        "@language": "en",
+        "@value": "Do What The Fuck You Want To Public License"
+    },
+    "schema:sameAs": [
+        {
+            "@id": "http://sam.zoy.org/wtfpl/COPYING"
+        },
+        {
+            "@id": "http://spdx.org/licenses/WTFPL"
+        }
+    ],
+    "spdx:licenseId": "WTFPL",
+    "li:id": "WTFPL-2",
+    "li:libre": "http://fsf.org/",
+    "li:name": "Do What The Fuck You Want To Public License",
+    "li:plaintext": "http://sam.zoy.org/wtfpl/COPYING"
+}

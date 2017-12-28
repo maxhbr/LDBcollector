@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.0/za/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/za/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/za/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.5/za/> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Suid-Afrika"@af,
+        "نسب المصنف  2.0 جنوب إفريقيا"@ar,
+        "Attribution 2.0 South Africa"@as,
+        "Attribution 2.0 South Africa"@ast,
+        "Attribution 2.0 South Africa"@ast-es,
+        "Attribution 2.0 South Africa"@az,
+        "Атрыбуцыя 2.0 ПАР"@be,
+        "Признание 2.0 Южна Африка"@bg,
+        "Attribution 2.0 South Africa"@bn,
+        "Reconeixement 2.0 Sudàfrica"@ca,
+        "Uveďte autora 2.0 Jižní Afrika"@cs,
+        "Navngivelse 2.0 Sydafrika"@da,
+        "Namensnennung 2.0 Südafrika"@de,
+        "Namensnennung 2.0 Südafrika"@de-at,
+        "Namensnennung 2.0 Südafrika"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Νότια Αφρική"@el,
+        "Attribution 2.0 South Africa"@en,
+        "Attribution 2.0 South Africa"@en-ca,
+        "Attribution 2.0 South Africa"@en-gb,
+        "Attribution 2.0 South Africa"@en-hk,
+        "Attribution 2.0 South Africa"@en-sg,
+        "Attribution 2.0 South Africa"@en-us,
+        "Atribuite 2.0 Sud-Afriko"@eo,
+        "Atribución 2.0 Sudáfrica"@es,
+        "Atribución 2.0 Sudáfrica"@es-ar,
+        "Atribución 2.0 Sudáfrica"@es-cl,
+        "Reconocimiento 2.0 Suráfrica"@es-co,
+        "Reconocimiento 2.0 Sudáfrica"@es-ec,
+        "Reconocimiento 2.0 Suráfrica"@es-es,
+        "Reconocimiento 2.0 Sudáfrica"@es-gt,
+        "Atribución 2.0 Suráfrica"@es-mx,
+        "Reconocimiento 2.0 Suráfrica"@es-pe,
+        "Reconocimiento 2.0 Suráfrica"@es-pr,
+        "Autorile viitamine 2.0 Lõuna-Aafrika"@et,
+        "Aitortu 2.0 Hegoafrika"@eu,
+        "Attribution 2.0 آفریقای جنوبی"@fa,
+        "Nimeä 2.0 Etelä-Afrikka"@fi,
+        "Attribution 2.0 Afrique du Sud"@fr,
+        "Paternité 2.0 Afrique du Sud"@fr-ca,
+        "Paternité 2.0 Afrique du Sud"@fr-ch,
+        "Paternité 2.0 Afrique du Sud"@fr-lu,
+        "Attribution 2.0 South Africa"@ga,
+        "Recoñecemento 2.0 Sudáfrica"@gl,
+        "ייחוס 2.0 דרום אפריקה"@he,
+        "Attribution 2.0 South Africa"@hi,
+        "Imenovanje 2.0 Južna Afrika"@hr,
+        "Nevezd meg! 2.0 Dél-Afrika"@hu,
+        "Հղում 2.0 Հարավային Աֆրիկա"@hy,
+        "Atribusi 2.0 Afrika Selatan"@id,
+        "Attribution 2.0 South Africa"@is,
+        "Attribuzione 2.0 Sud Africa"@it,
+        "Attribuzione 2.0 Sud Africa"@it-ch,
+        "表示 2.0 南アフリカ"@ja,
+        "ავტორობის მითითებით  2.0 სამხრეთ აფრიკა"@ka,
+        "Атауын сақтау 2.0 South Africa"@kk,
+        "저작자표시(Attribution) 2.0 남아프리카 공화국"@ko,
+        "Priskyrimas 2.0 Pietų Afrika"@lt,
+        "Atsaucoties 2.0 Dienvidāfrika"@lv,
+        "Наведи извор 2.0 Јужна Африка"@mk,
+        "കടപ്പാട് 2.0 ദക്ഷിണാഫ്രിക്ക"@ml,
+        "Attribution 2.0 South Africa"@mn,
+        "Pengiktirafan 2.0 Afrika Selatan"@ms,
+        "Naamsvermelding 2.0 Zuid-Afrika"@nl,
+        "Navngivelse 2.0 Sør-afrika"@no,
+        "Tsebagatšo 2.0 Afrika Borwa"@nso,
+        "Attribution 2.0 South Africa"@oci-es,
+        "Uznanie autorstwa 2.0 Południowa Afryka"@pl,
+        "Atribuição  2.0 África do Sul"@pt,
+        "Atribuição 2.0 South Africa"@pt-br,
+        "Atribuição 2.0 África do Sul"@pt-pt,
+        "Atribuire 2.0 Africa de Sud"@ro,
+        "Attribution (Атрибуция) 2.0 ЮАР"@ru,
+        "Attribution 2.0 South Africa"@si-lk,
+        "Priznanje avtorstva 2.0 Južnoafriška Republika"@sl,
+        "Attribution 2.0 Afrikë e Jugut"@sq,
+        "Autorstvo 2.0 Južna Afrika"@sr,
+        "Ауторство 2.0 Јужна Африка"@sr,
+        "Autorstvo 2.0 Južna Afrika"@sr-latn,
+        "Attribution 2.0 South Africa"@st,
+        "Erkännande 2.0 Sydafrika"@sv,
+        "Attribution 2.0 South Africa"@ta,
+        "ఆపాదింపు 2.0 దక్షిణ ఆఫ్రికా"@te,
+        "แสดงที่มา 2.0 แอฟริกาใต้"@th,
+        "Attribution 2.0 South Africa"@tr,
+        "Attribution 2.0 South Africa"@uk,
+        "Attribution 2.0 South Africa"@ur,
+        "Ghi nhận công của tác giả 2.0 South Africa"@vi,
+        "署名 2.0 南非"@zh,
+        "姓名標示 2.0 南非"@zh-hk,
+        "姓名標示 2.0 南非"@zh-tw,
+        "Qaphela Umnikazi 2.0 ENingizimu Afrika"@zu,
+        "${Attribution} 2.0 ${South Africa}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.0-za> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/za/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/za/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.0-za> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/za/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/za/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.5-za> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Suid-Afrika"@af,
+        "نسب المصنف  2.0 جنوب إفريقيا"@ar,
+        "Attribution 2.0 South Africa"@as,
+        "Attribution 2.0 South Africa"@ast,
+        "Attribution 2.0 South Africa"@ast-es,
+        "Attribution 2.0 South Africa"@az,
+        "Атрыбуцыя 2.0 ПАР"@be,
+        "Признание 2.0 Южна Африка"@bg,
+        "Attribution 2.0 South Africa"@bn,
+        "Reconeixement 2.0 Sudàfrica"@ca,
+        "Uveďte autora 2.0 Jižní Afrika"@cs,
+        "Navngivelse 2.0 Sydafrika"@da,
+        "Namensnennung 2.0 Südafrika"@de,
+        "Namensnennung 2.0 Südafrika"@de-at,
+        "Namensnennung 2.0 Südafrika"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Νότια Αφρική"@el,
+        "Attribution 2.0 South Africa"@en,
+        "Attribution 2.0 South Africa"@en-ca,
+        "Attribution 2.0 South Africa"@en-gb,
+        "Attribution 2.0 South Africa"@en-hk,
+        "Attribution 2.0 South Africa"@en-sg,
+        "Attribution 2.0 South Africa"@en-us,
+        "Atribuite 2.0 Sud-Afriko"@eo,
+        "Atribución 2.0 Sudáfrica"@es,
+        "Atribución 2.0 Sudáfrica"@es-ar,
+        "Atribución 2.0 Sudáfrica"@es-cl,
+        "Reconocimiento 2.0 Suráfrica"@es-co,
+        "Reconocimiento 2.0 Sudáfrica"@es-ec,
+        "Reconocimiento 2.0 Suráfrica"@es-es,
+        "Reconocimiento 2.0 Sudáfrica"@es-gt,
+        "Atribución 2.0 Suráfrica"@es-mx,
+        "Reconocimiento 2.0 Suráfrica"@es-pe,
+        "Reconocimiento 2.0 Suráfrica"@es-pr,
+        "Autorile viitamine 2.0 Lõuna-Aafrika"@et,
+        "Aitortu 2.0 Hegoafrika"@eu,
+        "Attribution 2.0 آفریقای جنوبی"@fa,
+        "Nimeä 2.0 Etelä-Afrikka"@fi,
+        "Attribution 2.0 Afrique du Sud"@fr,
+        "Paternité 2.0 Afrique du Sud"@fr-ca,
+        "Paternité 2.0 Afrique du Sud"@fr-ch,
+        "Paternité 2.0 Afrique du Sud"@fr-lu,
+        "Attribution 2.0 South Africa"@ga,
+        "Recoñecemento 2.0 Sudáfrica"@gl,
+        "ייחוס 2.0 דרום אפריקה"@he,
+        "Attribution 2.0 South Africa"@hi,
+        "Imenovanje 2.0 Južna Afrika"@hr,
+        "Nevezd meg! 2.0 Dél-Afrika"@hu,
+        "Հղում 2.0 Հարավային Աֆրիկա"@hy,
+        "Atribusi 2.0 Afrika Selatan"@id,
+        "Attribution 2.0 South Africa"@is,
+        "Attribuzione 2.0 Sud Africa"@it,
+        "Attribuzione 2.0 Sud Africa"@it-ch,
+        "表示 2.0 南アフリカ"@ja,
+        "ავტორობის მითითებით  2.0 სამხრეთ აფრიკა"@ka,
+        "Атауын сақтау 2.0 South Africa"@kk,
+        "저작자표시(Attribution) 2.0 남아프리카 공화국"@ko,
+        "Priskyrimas 2.0 Pietų Afrika"@lt,
+        "Atsaucoties 2.0 Dienvidāfrika"@lv,
+        "Наведи извор 2.0 Јужна Африка"@mk,
+        "കടപ്പാട് 2.0 ദക്ഷിണാഫ്രിക്ക"@ml,
+        "Attribution 2.0 South Africa"@mn,
+        "Pengiktirafan 2.0 Afrika Selatan"@ms,
+        "Naamsvermelding 2.0 Zuid-Afrika"@nl,
+        "Navngivelse 2.0 Sør-afrika"@no,
+        "Tsebagatšo 2.0 Afrika Borwa"@nso,
+        "Attribution 2.0 South Africa"@oci-es,
+        "Uznanie autorstwa 2.0 Południowa Afryka"@pl,
+        "Atribuição  2.0 África do Sul"@pt,
+        "Atribuição 2.0 South Africa"@pt-br,
+        "Atribuição 2.0 África do Sul"@pt-pt,
+        "Atribuire 2.0 Africa de Sud"@ro,
+        "Attribution (Атрибуция) 2.0 ЮАР"@ru,
+        "Attribution 2.0 South Africa"@si-lk,
+        "Priznanje avtorstva 2.0 Južnoafriška Republika"@sl,
+        "Attribution 2.0 Afrikë e Jugut"@sq,
+        "Autorstvo 2.0 Južna Afrika"@sr,
+        "Ауторство 2.0 Јужна Африка"@sr,
+        "Autorstvo 2.0 Južna Afrika"@sr-latn,
+        "Attribution 2.0 South Africa"@st,
+        "Erkännande 2.0 Sydafrika"@sv,
+        "Attribution 2.0 South Africa"@ta,
+        "ఆపాదింపు 2.0 దక్షిణ ఆఫ్రికా"@te,
+        "แสดงที่มา 2.0 แอฟริกาใต้"@th,
+        "Attribution 2.0 South Africa"@tr,
+        "Attribution 2.0 South Africa"@uk,
+        "Attribution 2.0 South Africa"@ur,
+        "Ghi nhận công của tác giả 2.0 South Africa"@vi,
+        "署名 2.0 南非"@zh,
+        "姓名標示 2.0 南非"@zh-hk,
+        "姓名標示 2.0 南非"@zh-tw,
+        "Qaphela Umnikazi 2.0 ENingizimu Afrika"@zu,
+        "${Attribution} 2.0 ${South Africa}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.0/za/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/za/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/za/88x31.png> ;
+    li:id "CC-BY-2.0-za" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.0 ZA" .
+

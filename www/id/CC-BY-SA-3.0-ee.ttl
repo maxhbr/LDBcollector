@@ -1,0 +1,228 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/3.0/ee/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ee/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/3.0/ee/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 3.0 Estonia"@af,
+        "نسب العمل- المشاركة على قدم المساواة 3.0 Estonia"@ar,
+        "Attribution-ShareAlike 3.0 Estonia"@as,
+        "Attribution-ShareAlike 3.0 Estonia"@ast,
+        "Attribution-ShareAlike 3.0 country.ee"@ast-es,
+        "Attribution-ShareAlike 3.0 Estonia"@az,
+        "Attribution-ShareAlike 3.0 Estonia"@be,
+        "Признание-Споделяне на споделеното 3.0 Estonia"@bg,
+        "Attribution-ShareAlike 3.0 Estonia"@bn,
+        "Reconeixement-CompartirIgual 3.0 Estònia"@ca,
+        "Uveďte autora-Zachovejte licenci 3.0 Estonia"@cs,
+        "Navngivelse-DelPåSammeVilkår 3.0 estisk"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Estland"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Estonia"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Estonia"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 3.0 Εσθονία"@el,
+        "Attribution-ShareAlike 3.0 Estonia"@en,
+        "Attribution-ShareAlike 3.0 Estonia"@en-ca,
+        "Attribution-ShareAlike 3.0 Estonia"@en-gb,
+        "Attribution-ShareAlike 3.0 Estonia"@en-hk,
+        "Attribution-ShareAlike 3.0 Estonia"@en-sg,
+        "Attribution-ShareAlike 3.0 Estonia"@en-us,
+        "Atribuite-Samkondiĉe 3.0 Estonujo"@eo,
+        "Atribución-CompartirIgual 3.0 Estonia"@es,
+        "Atribución-CompartirDerivadasIgual 3.0 Estonia"@es-ar,
+        "Reconocimiento-CompartirIgual 3.0 Estonia"@es-es,
+        "Reconocimiento-CompartirIgual 3.0 Estonia"@es-pe,
+        "Autorile viitamine + Jagamine samadel tingimustel 3.0 Eesti"@et,
+        "Aitortu-PartekatuBerdin 3.0 Estonia"@eu,
+        "Attribution-ShareAlike 3.0 Estonia"@fa,
+        "Nimeä-Tarttuva 3.0 Viro"@fi,
+        "Paternité - Partage à l'Identique 3.0 Estonie"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Estonia"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Estonia"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Estonia"@fr-lu,
+        "Attribution-ShareAlike 3.0 Estonia"@ga,
+        "Recoñecemento-CompartirIgual 3.0 Estonia"@gl,
+        "ייחוס-שיתוף זהה 3.0 Estonia"@he,
+        "Attribution-ShareAlike 3.0 Estonia"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 3.0 Estonija"@hr,
+        "Nevezd meg! - Így add tovább! 3.0 Estonia"@hu,
+        "Հղում - համանման տարածում 3.0 Estonia"@hy,
+        "Atribusi-BerbagiSerupa 3.0 Estonia"@id,
+        "Attribution-ShareAlike 3.0 Estonia"@is,
+        "Attribuzione - Condividi allo stesso modo 3.0 Estonia"@it,
+        "Attribuzione - Condividi allo stesso modo 3.0 Estonia"@it-ch,
+        "表示 - 継承 3.0 エストニア"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  3.0 Estonia"@ka,
+        "Attribution-ShareAlike 3.0 Estonia"@kk,
+        "저작자표시-동일조건변경허락 3.0 에스토니아"@ko,
+        "Attribution-ShareAlike 3.0 Estonia"@lt,
+        "Atsaucoties-Nemainot licenci 3.0 Estonia"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 3.0 Естонија"@mk,
+        "Attribution-ShareAlike 3.0 Estonia"@ml,
+        "Attribution-ShareAlike 3.0 Estonia"@mn,
+        "Pengiktirafan-PerkongsianSerupa 3.0 Estonia"@ms,
+        "Naamsvermelding-GelijkDelen 3.0 Estland"@nl,
+        "Navngivelse-DelPåSammeVilkår 3.0 Estland"@no,
+        "Tsebagatšo -Mohlakanelwa 3.0 Estonia"@nso,
+        "Attribution-ShareAlike 3.0 Estonia"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 3.0 Estonia"@pl,
+        "Atribuição - CompartilhaIgual 3.0 Estónia"@pt,
+        "Attribution-ShareAlike 3.0 Estonia"@pt-br,
+        "Attribution-ShareAlike 3.0 Estônia"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 3.0 Estonia"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 3.0 Estonia"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 3.0 Эстония"@ru,
+        "Attribution-ShareAlike 3.0 Estonia"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 3.0 Estonia"@sl,
+        "Attribution-ShareAlike 3.0 Estoni"@sq,
+        "Autorstvo-Deliti pod istim uslovima 3.0 country.ee"@sr,
+        "Ауторство-Делити под истим условима 3.0 Estonia"@sr,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Estonia"@sr-latn,
+        "Erkännande-DelaLika 3.0 Estonia"@sv,
+        "Attribution-ShareAlike 3.0 Estonia"@ta,
+        "Attribution-ShareAlike 3.0 Estonia"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 3.0 Estonia"@th,
+        "Alıntı-LisansıDevamEttirme 3.0 Estonya"@tr,
+        "Attribution-ShareAlike 3.0 Estonia"@uk,
+        "Attribution-ShareAlike 3.0 Estonia"@ur,
+        "Attribution-ShareAlike 3.0 Estonia"@vi,
+        "署名-相同方式共享 3.0 Estonia"@zh,
+        "姓名標示-相同方式分享 3.0 Estonia"@zh-hk,
+        "姓名標示-相同方式分享 3.0 Estonia"@zh-tw,
+        "姓名標示-相同方式分享 3.0 愛沙尼亞"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 3.0 Estonia"@zu,
+        "${Attribution-ShareAlike} 3.0 ${Estonia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-3.0-ee> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/3.0/ee/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/3.0/ee/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-3.0-ee> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ee/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/3.0/ee/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 3.0 Estonia"@af,
+        "نسب العمل- المشاركة على قدم المساواة 3.0 Estonia"@ar,
+        "Attribution-ShareAlike 3.0 Estonia"@as,
+        "Attribution-ShareAlike 3.0 Estonia"@ast,
+        "Attribution-ShareAlike 3.0 country.ee"@ast-es,
+        "Attribution-ShareAlike 3.0 Estonia"@az,
+        "Attribution-ShareAlike 3.0 Estonia"@be,
+        "Признание-Споделяне на споделеното 3.0 Estonia"@bg,
+        "Attribution-ShareAlike 3.0 Estonia"@bn,
+        "Reconeixement-CompartirIgual 3.0 Estònia"@ca,
+        "Uveďte autora-Zachovejte licenci 3.0 Estonia"@cs,
+        "Navngivelse-DelPåSammeVilkår 3.0 estisk"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Estland"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Estonia"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Estonia"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 3.0 Εσθονία"@el,
+        "Attribution-ShareAlike 3.0 Estonia"@en,
+        "Attribution-ShareAlike 3.0 Estonia"@en-ca,
+        "Attribution-ShareAlike 3.0 Estonia"@en-gb,
+        "Attribution-ShareAlike 3.0 Estonia"@en-hk,
+        "Attribution-ShareAlike 3.0 Estonia"@en-sg,
+        "Attribution-ShareAlike 3.0 Estonia"@en-us,
+        "Atribuite-Samkondiĉe 3.0 Estonujo"@eo,
+        "Atribución-CompartirIgual 3.0 Estonia"@es,
+        "Atribución-CompartirDerivadasIgual 3.0 Estonia"@es-ar,
+        "Reconocimiento-CompartirIgual 3.0 Estonia"@es-es,
+        "Reconocimiento-CompartirIgual 3.0 Estonia"@es-pe,
+        "Autorile viitamine + Jagamine samadel tingimustel 3.0 Eesti"@et,
+        "Aitortu-PartekatuBerdin 3.0 Estonia"@eu,
+        "Attribution-ShareAlike 3.0 Estonia"@fa,
+        "Nimeä-Tarttuva 3.0 Viro"@fi,
+        "Paternité - Partage à l'Identique 3.0 Estonie"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Estonia"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Estonia"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Estonia"@fr-lu,
+        "Attribution-ShareAlike 3.0 Estonia"@ga,
+        "Recoñecemento-CompartirIgual 3.0 Estonia"@gl,
+        "ייחוס-שיתוף זהה 3.0 Estonia"@he,
+        "Attribution-ShareAlike 3.0 Estonia"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 3.0 Estonija"@hr,
+        "Nevezd meg! - Így add tovább! 3.0 Estonia"@hu,
+        "Հղում - համանման տարածում 3.0 Estonia"@hy,
+        "Atribusi-BerbagiSerupa 3.0 Estonia"@id,
+        "Attribution-ShareAlike 3.0 Estonia"@is,
+        "Attribuzione - Condividi allo stesso modo 3.0 Estonia"@it,
+        "Attribuzione - Condividi allo stesso modo 3.0 Estonia"@it-ch,
+        "表示 - 継承 3.0 エストニア"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  3.0 Estonia"@ka,
+        "Attribution-ShareAlike 3.0 Estonia"@kk,
+        "저작자표시-동일조건변경허락 3.0 에스토니아"@ko,
+        "Attribution-ShareAlike 3.0 Estonia"@lt,
+        "Atsaucoties-Nemainot licenci 3.0 Estonia"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 3.0 Естонија"@mk,
+        "Attribution-ShareAlike 3.0 Estonia"@ml,
+        "Attribution-ShareAlike 3.0 Estonia"@mn,
+        "Pengiktirafan-PerkongsianSerupa 3.0 Estonia"@ms,
+        "Naamsvermelding-GelijkDelen 3.0 Estland"@nl,
+        "Navngivelse-DelPåSammeVilkår 3.0 Estland"@no,
+        "Tsebagatšo -Mohlakanelwa 3.0 Estonia"@nso,
+        "Attribution-ShareAlike 3.0 Estonia"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 3.0 Estonia"@pl,
+        "Atribuição - CompartilhaIgual 3.0 Estónia"@pt,
+        "Attribution-ShareAlike 3.0 Estonia"@pt-br,
+        "Attribution-ShareAlike 3.0 Estônia"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 3.0 Estonia"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 3.0 Estonia"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 3.0 Эстония"@ru,
+        "Attribution-ShareAlike 3.0 Estonia"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 3.0 Estonia"@sl,
+        "Attribution-ShareAlike 3.0 Estoni"@sq,
+        "Autorstvo-Deliti pod istim uslovima 3.0 country.ee"@sr,
+        "Ауторство-Делити под истим условима 3.0 Estonia"@sr,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Estonia"@sr-latn,
+        "Erkännande-DelaLika 3.0 Estonia"@sv,
+        "Attribution-ShareAlike 3.0 Estonia"@ta,
+        "Attribution-ShareAlike 3.0 Estonia"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 3.0 Estonia"@th,
+        "Alıntı-LisansıDevamEttirme 3.0 Estonya"@tr,
+        "Attribution-ShareAlike 3.0 Estonia"@uk,
+        "Attribution-ShareAlike 3.0 Estonia"@ur,
+        "Attribution-ShareAlike 3.0 Estonia"@vi,
+        "署名-相同方式共享 3.0 Estonia"@zh,
+        "姓名標示-相同方式分享 3.0 Estonia"@zh-hk,
+        "姓名標示-相同方式分享 3.0 Estonia"@zh-tw,
+        "姓名標示-相同方式分享 3.0 愛沙尼亞"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 3.0 Estonia"@zu,
+        "${Attribution-ShareAlike} 3.0 ${Estonia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/3.0/ee/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/3.0/ee/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/3.0/ee/88x31.png> ;
+    li:id "CC-BY-SA-3.0-ee" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY-SA 3.0 EE" .
+

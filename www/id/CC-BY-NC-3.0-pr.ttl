@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/3.0/pr/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/3.0/pr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/3.0/> ;
+    dc:title "Erkenning-NieKommersieel 3.0 Puerto Rico"@af,
+        "نسب - غير تجاري 3.0 بورتوريكو"@ar,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@as,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ast,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ast-es,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@az,
+        "Attribution-NonCommercial 3.0 Пуэрта-Рыко"@be,
+        "Признание-Некомерсиално 3.0 Пуерто Рико"@bg,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@bn,
+        "Reconeixement-NoComercial 3.0 Puerto Rico"@ca,
+        "Uveďte autora-Neužívejte komerčně 3.0 Puerto Rico"@cs,
+        "Navngivelse-IkkeKommerciel 3.0 Puerto Rico"@da,
+        "Namensnennung-Nicht-kommerziell 3.0 Puerto Rico"@de,
+        "Namensnennung-NichtKommerziell 3.0 Puerto Rico"@de-at,
+        "Namensnennung-NichtKommerziell 3.0 Puerto Rico"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Πουέρτο Ρίκο"@el,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-ca,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-gb,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-hk,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-sg,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-us,
+        "Atribuite-Nekomerce 3.0 Puertoriko"@eo,
+        "Atribución-NoComercial 3.0 Puerto Rico"@es,
+        "Atribución-NoComercial 3.0 Puerto Rico"@es-ar,
+        "Atribución-NoComercial 3.0 Puerto Rico"@es-cl,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-co,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-ec,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-es,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-gt,
+        "Atribución-No Comercial 3.0 Puerto Rico"@es-mx,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-pe,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 3.0 Puerto Rico"@et,
+        "Aitortu-EzKomertziala 3.0 Puerto Rico"@eu,
+        "Attribution-NonCommercial 3.0 پورتو ریکو"@fa,
+        "Nimeä-Epäkaupallinen 3.0 Puerto Rico"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Porto Rico"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Puerto Rico"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Puerto Rico"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Puerto Rico"@fr-lu,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ga,
+        "Recoñecemento-NonComercial 3.0 Puerto Rico"@gl,
+        "ייחוס-שימוש לא מסחרי 3.0 פוארטו ריקו"@he,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@hi,
+        "Imenovanje-Nekomercijalno 3.0 Puerto Rico"@hr,
+        "Nevezd meg! - Ne add el! 3.0 Puerto Rico"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 3.0 Պուերտո Րիկո"@hy,
+        "Attribusi-NonKomersial 3.0 Puerto Riko"@id,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@is,
+        "Attribuzione - Non commerciale 3.0 Puerto Rico"@it,
+        "Attribuzione - Non commerciale 3.0 Puerto Rico"@it-ch,
+        "表示 - 非営利 3.0 プエルトリコ"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 პუერტო რიკო"@ka,
+        "Коммерциялық емес 3.0 Puerto Rico"@kk,
+        "저작자표시-비영리 3.0 푸에르토리코"@ko,
+        "Attribution-NonCommercial 3.0 Puerto Rikas"@lt,
+        "Atsaucoties-Nekomerciāli 3.0 Porto Rico"@lv,
+        "НаведиИзвор-Некомерцијално 3.0 Порторико"@mk,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ml,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@mn,
+        "Pengiktirafan-BukanKomersial 3.0 Puerto Rico"@ms,
+        "Naamsvermelding-NietCommercieel 3.0 Puerto Rico"@nl,
+        "Navngivelse-Ikkekommersiell 3.0 Puerto Rico"@no,
+        "Tsebagatšo- E sego ya kgwebo 3.0 Puerto Rico"@nso,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 3.0 Portoryko"@pl,
+        "Atribuição - NãoComercial 3.0 Porto Rico"@pt,
+        "Atribuição-Uso não-comercial 3.0 Puerto Rico"@pt-br,
+        "Atribuição-Uso Não-Comercial 3.0 Puerto Rico"@pt-pt,
+        "Atribuire-NeComercial 3.0 Porto Rico"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Пуэрто-Рико"@ru,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 3.0 Portoriko"@sl,
+        "Attribution-NonCommercial 3.0 Porto Riko"@sq,
+        "Autorstvo-Nekomercijalno 3.0 Portoriko"@sr,
+        "Ауторство-Некомерцијално 3.0 Порторико"@sr,
+        "Autorstvo-Nekomercijalno 3.0 Portoriko"@sr-latn,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@st,
+        "Erkännande-IckeKommersiell 3.0 Puerto Rico"@sv,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ta,
+        "Attribution-NonCommercial 3.0 పోర్టో రీకో"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 เปอร์โตริโก"@th,
+        "Alıntı-Gayriticari 3.0 Porto Riko"@tr,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@uk,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  3.0 Puerto Rico"@vi,
+        "署名-非商业性使用 3.0 Puerto Rico"@zh,
+        "姓名標示-非商業性 3.0 波多黎各"@zh-hk,
+        "姓名標示-非商業性 3.0 波多黎各"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 Puerto Rico"@zu,
+        "${Attribution-NonCommercial} 3.0 ${Puerto Rico}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-3.0-pr> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/3.0/pr/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/3.0/pr/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-3.0-pr> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/3.0/pr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/3.0/> ;
+    dc:title "Erkenning-NieKommersieel 3.0 Puerto Rico"@af,
+        "نسب - غير تجاري 3.0 بورتوريكو"@ar,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@as,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ast,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ast-es,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@az,
+        "Attribution-NonCommercial 3.0 Пуэрта-Рыко"@be,
+        "Признание-Некомерсиално 3.0 Пуерто Рико"@bg,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@bn,
+        "Reconeixement-NoComercial 3.0 Puerto Rico"@ca,
+        "Uveďte autora-Neužívejte komerčně 3.0 Puerto Rico"@cs,
+        "Navngivelse-IkkeKommerciel 3.0 Puerto Rico"@da,
+        "Namensnennung-Nicht-kommerziell 3.0 Puerto Rico"@de,
+        "Namensnennung-NichtKommerziell 3.0 Puerto Rico"@de-at,
+        "Namensnennung-NichtKommerziell 3.0 Puerto Rico"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Πουέρτο Ρίκο"@el,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-ca,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-gb,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-hk,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-sg,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@en-us,
+        "Atribuite-Nekomerce 3.0 Puertoriko"@eo,
+        "Atribución-NoComercial 3.0 Puerto Rico"@es,
+        "Atribución-NoComercial 3.0 Puerto Rico"@es-ar,
+        "Atribución-NoComercial 3.0 Puerto Rico"@es-cl,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-co,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-ec,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-es,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-gt,
+        "Atribución-No Comercial 3.0 Puerto Rico"@es-mx,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-pe,
+        "Reconocimiento-NoComercial 3.0 Puerto Rico"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 3.0 Puerto Rico"@et,
+        "Aitortu-EzKomertziala 3.0 Puerto Rico"@eu,
+        "Attribution-NonCommercial 3.0 پورتو ریکو"@fa,
+        "Nimeä-Epäkaupallinen 3.0 Puerto Rico"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Porto Rico"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Puerto Rico"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Puerto Rico"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Puerto Rico"@fr-lu,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ga,
+        "Recoñecemento-NonComercial 3.0 Puerto Rico"@gl,
+        "ייחוס-שימוש לא מסחרי 3.0 פוארטו ריקו"@he,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@hi,
+        "Imenovanje-Nekomercijalno 3.0 Puerto Rico"@hr,
+        "Nevezd meg! - Ne add el! 3.0 Puerto Rico"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 3.0 Պուերտո Րիկո"@hy,
+        "Attribusi-NonKomersial 3.0 Puerto Riko"@id,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@is,
+        "Attribuzione - Non commerciale 3.0 Puerto Rico"@it,
+        "Attribuzione - Non commerciale 3.0 Puerto Rico"@it-ch,
+        "表示 - 非営利 3.0 プエルトリコ"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 პუერტო რიკო"@ka,
+        "Коммерциялық емес 3.0 Puerto Rico"@kk,
+        "저작자표시-비영리 3.0 푸에르토리코"@ko,
+        "Attribution-NonCommercial 3.0 Puerto Rikas"@lt,
+        "Atsaucoties-Nekomerciāli 3.0 Porto Rico"@lv,
+        "НаведиИзвор-Некомерцијално 3.0 Порторико"@mk,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ml,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@mn,
+        "Pengiktirafan-BukanKomersial 3.0 Puerto Rico"@ms,
+        "Naamsvermelding-NietCommercieel 3.0 Puerto Rico"@nl,
+        "Navngivelse-Ikkekommersiell 3.0 Puerto Rico"@no,
+        "Tsebagatšo- E sego ya kgwebo 3.0 Puerto Rico"@nso,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 3.0 Portoryko"@pl,
+        "Atribuição - NãoComercial 3.0 Porto Rico"@pt,
+        "Atribuição-Uso não-comercial 3.0 Puerto Rico"@pt-br,
+        "Atribuição-Uso Não-Comercial 3.0 Puerto Rico"@pt-pt,
+        "Atribuire-NeComercial 3.0 Porto Rico"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Пуэрто-Рико"@ru,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 3.0 Portoriko"@sl,
+        "Attribution-NonCommercial 3.0 Porto Riko"@sq,
+        "Autorstvo-Nekomercijalno 3.0 Portoriko"@sr,
+        "Ауторство-Некомерцијално 3.0 Порторико"@sr,
+        "Autorstvo-Nekomercijalno 3.0 Portoriko"@sr-latn,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@st,
+        "Erkännande-IckeKommersiell 3.0 Puerto Rico"@sv,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ta,
+        "Attribution-NonCommercial 3.0 పోర్టో రీకో"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 เปอร์โตริโก"@th,
+        "Alıntı-Gayriticari 3.0 Porto Riko"@tr,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@uk,
+        "Attribution-NonCommercial 3.0 Puerto Rico"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  3.0 Puerto Rico"@vi,
+        "署名-非商业性使用 3.0 Puerto Rico"@zh,
+        "姓名標示-非商業性 3.0 波多黎各"@zh-hk,
+        "姓名標示-非商業性 3.0 波多黎各"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 Puerto Rico"@zu,
+        "${Attribution-NonCommercial} 3.0 ${Puerto Rico}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/3.0/pr/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/3.0/pr/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/3.0/pr/88x31.png> ;
+    li:id "CC-BY-NC-3.0-pr" ;
+    li:name "CC BY-NC 3.0 PR" .
+

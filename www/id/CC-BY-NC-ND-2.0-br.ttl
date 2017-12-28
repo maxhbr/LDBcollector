@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/br/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/br/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/br/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nc-nd/2.5/br/> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 Brasilië"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 البرازيل"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бразілія"@be,
+        "Признание-Некомерсиално-Без производни 2.0 Бразилия"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Brasil"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 Brazílie"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Brasilien"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Brasilien"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Brasilien"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Brasilien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 Βραζιλία"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Brazilo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 Brasil"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Brasil"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Brasil"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Brasil"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Brasil"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Brasiilia"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 Brasil"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 برزیل"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Brasilia"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Brésil"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Brésil"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Brésil"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Brésil"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 Brasil"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 ברזיל"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 ब्रज़ील"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 Brazil"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 Brazília"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 Բրազիլիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 Brasil"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brasilía"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Brasile"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Brasile"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 ブラジル"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 ბრაზილია"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@kk,
+        "저작자표시-비영리-변경금지 2.0 브라질"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazilija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 Brazīlija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Бразил"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 ബ്രസീൽ"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бразил"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 Brasil"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 Brazilië"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Brasil"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 Brazil"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Brazylia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Brasil"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 Brasil"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 Brasil"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Brazilia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Бразилия"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 Brazilija"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Brazil"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 Бразил"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Brazil"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 Brasilien"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 பிரேசில்"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 బ్రెజిల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 บราซิล"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Brezilya"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бразилія"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 Nước Brazil"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 巴西"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 巴西"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 巴西"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 iBrazil"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Brazil}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.0-br> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/br/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/br/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.0-br> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/br/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/br/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-NC-ND-2.5-br> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 Brasilië"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 البرازيل"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бразілія"@be,
+        "Признание-Некомерсиално-Без производни 2.0 Бразилия"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Brasil"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 Brazílie"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Brasilien"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Brasilien"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Brasilien"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Brasilien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 Βραζιλία"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Brazilo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 Brasil"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Brasil"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Brasil"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Brasil"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Brasil"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Brasil"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Brasiilia"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 Brasil"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 برزیل"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Brasilia"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Brésil"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Brésil"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Brésil"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 Brésil"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 Brasil"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 ברזיל"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 ब्रज़ील"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 Brazil"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 Brazília"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 Բրազիլիա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 Brasil"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brasilía"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Brasile"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Brasile"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 ブラジル"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 ბრაზილია"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@kk,
+        "저작자표시-비영리-변경금지 2.0 브라질"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazilija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 Brazīlija"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Бразил"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 ബ്രസീൽ"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бразил"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 Brasil"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 Brazilië"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Brasil"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 Brazil"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Brazylia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Brasil"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 Brasil"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 Brasil"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Brazilia"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Бразилия"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 Brazilija"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Brazil"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 Бразил"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Brazil"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 Brasilien"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 பிரேசில்"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 బ్రెజిల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 บราซิล"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Brezilya"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 Бразилія"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 Brazil"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 Nước Brazil"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 巴西"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 巴西"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 巴西"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 iBrazil"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Brazil}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.0/br/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/br/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/br/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.0-br" ;
+    li:name "CC BY-NC-ND 2.0 BR" .
+

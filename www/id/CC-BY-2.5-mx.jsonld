@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-mx",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/mx/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/mx/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Mexiko"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 مكسيك"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 Мексіка"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Мексико"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Mèxic"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Mexiko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Mexico"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Mexiko"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 Mexiko"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 Mexiko"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Μεξικό"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Meksiko"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 México"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 México"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 México"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 México"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 México"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 México"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 México"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 México"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 México"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 México"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 Mehhiko"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 Mexiko"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 مکزیک"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Meksiko"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Mexique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Mexique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Mexique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Mexique"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 Mexico"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 מקסיקו"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Meksiko"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 Mexikó"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 Մեքսիկա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 Meksiko"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 Messico"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 Mexico"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 メキシコ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 მექსიკა"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 Mexico"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 멕시코"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Meksika"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Meksika"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Мексико"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 മെക്സിക്കൊ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 Mexico"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 Mexico"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 Mexiko"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 Mexico"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Meksyk"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 México"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 Mexico"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 Mexico"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 Mexic"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 Мексика"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Mehika"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Meksikë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Meksiko"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Мексико"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Meksiko"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Mexiko"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 మెక్సికో"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 เม็กซิโก"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 Meksika"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 Mexico"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 Mexico"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 墨西哥"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 墨西哥"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 墨西哥"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 EMexico"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${Mexico}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/mx/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/mx/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/mx/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Mexiko"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 مكسيك"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 Мексіка"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Мексико"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Mèxic"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Mexiko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Mexico"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Mexiko"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 Mexiko"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 Mexiko"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Μεξικό"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Meksiko"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 México"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 México"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 México"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 México"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 México"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 México"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 México"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 México"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 México"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 México"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 Mehhiko"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 Mexiko"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 مکزیک"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Meksiko"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Mexique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Mexique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Mexique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Mexique"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 Mexico"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 מקסיקו"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Meksiko"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 Mexikó"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 Մեքսիկա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 Meksiko"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 Messico"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 Mexico"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 メキシコ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 მექსიკა"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 Mexico"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 멕시코"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Meksika"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Meksika"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Мексико"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 മെക്സിക്കൊ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 Mexico"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 Mexico"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 Mexiko"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 Mexico"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Meksyk"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 México"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 Mexico"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 Mexico"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 Mexic"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 Мексика"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Mehika"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Meksikë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Meksiko"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Мексико"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Meksiko"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Mexiko"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 మెక్సికో"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 เม็กซิโก"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 Meksika"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 Mexico"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 Mexico"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 墨西哥"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 墨西哥"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 墨西哥"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 EMexico"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${Mexico}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-mx",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/mx/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/mx/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/mx/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/mx/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-mx",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 MX"
+}

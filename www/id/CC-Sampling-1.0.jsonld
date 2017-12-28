@@ -1,0 +1,852 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-Sampling-1.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:deprecatedOn": {
+        "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+        "@value": "2007-06-04"
+    },
+    "cc:legalcode": "http://creativecommons.org/licenses/sampling/1.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/sampling/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "sampling",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Voorsmaak 1.0"
+        },
+        {
+            "@language": "ar",
+            "@value": "العينات 1.0"
+        },
+        {
+            "@language": "as",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "ast",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "az",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "be",
+            "@value": "Семплирование 1.0"
+        },
+        {
+            "@language": "bg",
+            "@value": "Семплиране 1.0"
+        },
+        {
+            "@language": "bn",
+            "@value": "উদাহরন হিসেবে নির্বাচিত শিক্ষার যোগ্য 1.0"
+        },
+        {
+            "@language": "ca",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "cs",
+            "@value": "Vytváření samplů 1.0"
+        },
+        {
+            "@language": "da",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "de",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "el",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "en",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "eo",
+            "@value": "Specimeno 1.0"
+        },
+        {
+            "@language": "es",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "et",
+            "@value": "Valikkasutus 1.0"
+        },
+        {
+            "@language": "eu",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "fa",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "fi",
+            "@value": "Sämpläys 1.0"
+        },
+        {
+            "@language": "fr",
+            "@value": "Échantillonnage 1.0"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Sampling/Echantillonage 1.0"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Sampling/Echantillonage 1.0"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Sampling/Echantillonage 1.0"
+        },
+        {
+            "@language": "ga",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "gl",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "he",
+            "@value": "דגימה 1.0"
+        },
+        {
+            "@language": "hi",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "hr",
+            "@value": "Sempliranje 1.0"
+        },
+        {
+            "@language": "hu",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "hy",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "id",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "is",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "it",
+            "@value": "<span lang=\"en\">Sampling</span> 1.0"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "<span lang=\"en\">Sampling</span> 1.0"
+        },
+        {
+            "@language": "ja",
+            "@value": "サンプリング 1.0"
+        },
+        {
+            "@language": "ka",
+            "@value": "სცადეთ 1.0"
+        },
+        {
+            "@language": "kk",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "ko",
+            "@value": "샘플링 1.0"
+        },
+        {
+            "@language": "lt",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "lv",
+            "@value": "Iztveršana 1.0"
+        },
+        {
+            "@language": "mk",
+            "@value": "Семплирање 1.0"
+        },
+        {
+            "@language": "ml",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "mn",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "ms",
+            "@value": "Mengambil Contoh 1.0"
+        },
+        {
+            "@language": "nl",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "no",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "nso",
+            "@value": "Sampole 1.0"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "pl",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "pt",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "ro",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "ru",
+            "@value": "Использование частей произведения (<i>Sampling</i>) 1.0"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "sl",
+            "@value": "Vzorčenje (sampling) 1.0"
+        },
+        {
+            "@language": "sq",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "sr",
+            "@value": "Stvaranje dela na osnovu uzorka (sampling) 1.0"
+        },
+        {
+            "@language": "sr",
+            "@value": "Стварање дела на основу узорка (sampling) 1.0"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Stvaranje dela na osnovu uzorka (sampling) 1.0"
+        },
+        {
+            "@language": "st",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "sv",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "ta",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "te",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "th",
+            "@value": "ใช้ตัวอย่าง 1.0"
+        },
+        {
+            "@language": "tr",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "uk",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "ur",
+            "@value": "Sampling 1.0"
+        },
+        {
+            "@language": "vi",
+            "@value": "Làm mẫu 1.0"
+        },
+        {
+            "@language": "zh",
+            "@value": "取样使用 1.0"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "取樣 1.0"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "取樣 1.0"
+        },
+        {
+            "@language": "zu",
+            "@value": "Ukuthatha isampula 1.0"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Sampling} 1.0"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/sampling/1.0/",
+        "@type": "cc:License",
+        "cc:deprecatedOn": {
+            "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+            "@value": "2007-06-04"
+        },
+        "cc:legalcode": "http://creativecommons.org/licenses/sampling/1.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/sampling/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "sampling",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Voorsmaak 1.0"
+            },
+            {
+                "@language": "ar",
+                "@value": "العينات 1.0"
+            },
+            {
+                "@language": "as",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "ast",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "az",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "be",
+                "@value": "Семплирование 1.0"
+            },
+            {
+                "@language": "bg",
+                "@value": "Семплиране 1.0"
+            },
+            {
+                "@language": "bn",
+                "@value": "উদাহরন হিসেবে নির্বাচিত শিক্ষার যোগ্য 1.0"
+            },
+            {
+                "@language": "ca",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "cs",
+                "@value": "Vytváření samplů 1.0"
+            },
+            {
+                "@language": "da",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "de",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "el",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "en",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "eo",
+                "@value": "Specimeno 1.0"
+            },
+            {
+                "@language": "es",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "et",
+                "@value": "Valikkasutus 1.0"
+            },
+            {
+                "@language": "eu",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "fa",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "fi",
+                "@value": "Sämpläys 1.0"
+            },
+            {
+                "@language": "fr",
+                "@value": "Échantillonnage 1.0"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Sampling/Echantillonage 1.0"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Sampling/Echantillonage 1.0"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Sampling/Echantillonage 1.0"
+            },
+            {
+                "@language": "ga",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "gl",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "he",
+                "@value": "דגימה 1.0"
+            },
+            {
+                "@language": "hi",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "hr",
+                "@value": "Sempliranje 1.0"
+            },
+            {
+                "@language": "hu",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "hy",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "id",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "is",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "it",
+                "@value": "<span lang=\"en\">Sampling</span> 1.0"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "<span lang=\"en\">Sampling</span> 1.0"
+            },
+            {
+                "@language": "ja",
+                "@value": "サンプリング 1.0"
+            },
+            {
+                "@language": "ka",
+                "@value": "სცადეთ 1.0"
+            },
+            {
+                "@language": "kk",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "ko",
+                "@value": "샘플링 1.0"
+            },
+            {
+                "@language": "lt",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "lv",
+                "@value": "Iztveršana 1.0"
+            },
+            {
+                "@language": "mk",
+                "@value": "Семплирање 1.0"
+            },
+            {
+                "@language": "ml",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "mn",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "ms",
+                "@value": "Mengambil Contoh 1.0"
+            },
+            {
+                "@language": "nl",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "no",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "nso",
+                "@value": "Sampole 1.0"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "pl",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "pt",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "ro",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "ru",
+                "@value": "Использование частей произведения (<i>Sampling</i>) 1.0"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "sl",
+                "@value": "Vzorčenje (sampling) 1.0"
+            },
+            {
+                "@language": "sq",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "sr",
+                "@value": "Stvaranje dela na osnovu uzorka (sampling) 1.0"
+            },
+            {
+                "@language": "sr",
+                "@value": "Стварање дела на основу узорка (sampling) 1.0"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Stvaranje dela na osnovu uzorka (sampling) 1.0"
+            },
+            {
+                "@language": "st",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "sv",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "ta",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "te",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "th",
+                "@value": "ใช้ตัวอย่าง 1.0"
+            },
+            {
+                "@language": "tr",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "uk",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "ur",
+                "@value": "Sampling 1.0"
+            },
+            {
+                "@language": "vi",
+                "@value": "Làm mẫu 1.0"
+            },
+            {
+                "@language": "zh",
+                "@value": "取样使用 1.0"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "取樣 1.0"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "取樣 1.0"
+            },
+            {
+                "@language": "zu",
+                "@value": "Ukuthatha isampula 1.0"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Sampling} 1.0"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-Sampling-1.0",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/sampling/1.0/80x15.png",
+            "http://i.creativecommons.org/l/sampling/1.0/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/sampling/1.0/80x15.png",
+        "http://i.creativecommons.org/l/sampling/1.0/88x31.png"
+    ],
+    "li:id": "CC-Sampling-1.0",
+    "li:name": "CC Sampling 1.0"
+}

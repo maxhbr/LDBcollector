@@ -1,0 +1,90 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/EPL-1",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://www.eclipse.org/legal/epl-v10.html",
+    "dc:creator": "http://www.eclipse.org/",
+    "dc:hasVersion": "1.0",
+    "dc:replaces": "https://licensedb.org/id/CPL-1.0",
+    "dc:title": "Eclipse Public License",
+    "schema:sameAs": [
+        {
+            "@id": "http://spdx.org/licenses/EPL-1.0"
+        },
+        {
+            "@id": "http://www.eclipse.org/legal/epl-v10.html"
+        }
+    ],
+    "spdx:licenseId": "EPL-1.0",
+    "li:id": "EPL-1",
+    "li:libre": [
+        "http://fsf.org/",
+        "http://opensource.org/"
+    ],
+    "li:name": "EPL 1.0",
+    "li:notice": {
+        "li:canonical": true,
+        "li:orlater": false,
+        "li:short": true,
+        "li:text": "/*******************************************************************************\n * Copyright (c) {{year}} {{rightsholder}}.\n * All rights reserved. This program and the accompanying materials\n * are made available under the terms of the Eclipse Public License v1.0\n * which accompanies this distribution, and is available at\n * http://www.eclipse.org/legal/epl-v10.html\n *\n * Contributors:\n *    __________________ - initial API and implementation\n *******************************************************************************/ \n"
+    },
+    "li:plaintext": "http://opensource.org/licenses/eclipse-1.0.txt"
+}

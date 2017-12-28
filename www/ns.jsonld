@@ -1,0 +1,231 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "xhv": "http://www.w3.org/1999/xhtml/vocab#",
+        "xsd": "http://www.w3.org/2001/XMLSchema-datatypes#",
+        "vann": "http://purl.org/vocab/vann/",
+        "wdrs": "http://www.w3.org/2007/05/powder-s#"
+    },
+    "@graph": [
+        {
+            "@id": "_:b0_mayHaveCreator",
+            "@type": "owl:Restriction",
+            "owl:minCardinality": 0,
+            "owl:onProperty": {
+                "@id": "dc:creator"
+            }
+        },
+        {
+            "@id": "_:b0_mayHaveIdentifier",
+            "@type": "owl:Restriction",
+            "owl:minCardinality": 0,
+            "owl:onProperty": {
+                "@id": "dc:identifier"
+            }
+        },
+        {
+            "@id": "_:b0_mayHaveVersion",
+            "@type": "owl:Restriction",
+            "owl:maxCardinality": 1,
+            "owl:minCardinality": 0,
+            "owl:onProperty": {
+                "@id": "dc:hasVersion"
+            }
+        },
+        {
+            "@id": "_:b0_mustHaveTitle",
+            "@type": "owl:Restriction",
+            "owl:minCardinality": 1,
+            "owl:onProperty": {
+                "@id": "dc:title"
+            }
+        },
+        {
+            "@id": "https://licensedb.org/ns#",
+            "@type": "owl:Ontology",
+            "dc:creator": "Kuno Woudt <kuno@frob.nl>",
+            "dc:modified": "2015-02-22",
+            "dc:title": {
+                "@language": "en-us",
+                "@value": "The License Database vocabulary"
+            },
+            "vann:preferredNamespacePrefix": "li",
+            "vann:preferredNamespaceUri": "https://licensedb.org/ns#",
+            "xhv:license": {
+                "@id": "http://www.apache.org/licenses/LICENSE-2.0.html"
+            },
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "## Introduction\n\nThere are a few situations where it would be useful to have a\nmachine-readable database of commonly used free culture and free\nsoftware licenses. The initial goal is to make this data available for\nauthoring and publishing software, to make it easier for creators to\npick any license they want and have the appropriate notices\nautomatically included when a copyrighted work is packaged for\ndistribution or published on a published platform.\n\nThe License Database vocabulary extends The Creative Commons Rights\nExpression Language ([CC REL](http://wiki.creativecommons.org/CC_REL))\nwith additional properties to describe existing copyright and database\nlicenses in more detail.\n\n[The License Database](https://licensedb.org/) project uses this\nvocabulary to describe existing free software licenses, open source\nlicenses and free culture licenses used today.\n\n\n## Status of this document\n\nThis is an editor's draft without any formal standing. It is not\nendorsed by any organisation. Anything in this document is subject to\nchange, the editors welcome feedback on this document. Please send any\ncomments to [kuno@frob.nl](mailto:kuno@frob.nl) or contact \"kuno\" on\nfreenode irc.\n\n"
+            }
+        },
+        {
+            "@id": "li:License",
+            "@type": "rdfs:Class",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A standard text which can be applied by authors of\na creative work to license that work to users.  The standard text can\nbe copyright license, database rights license, trademark license,\npatent grant, etc.."
+            },
+            "rdfs:subClassOf": [
+                {
+                    "@id": "cc:License"
+                },
+                {
+                    "@id": "_:b0_mustHaveTitle"
+                },
+                {
+                    "@id": "_:b0_mayHaveCreator"
+                },
+                {
+                    "@id": "_:b0_mayHaveIdentifier"
+                },
+                {
+                    "@id": "_:b0_mayHaveVersion"
+                }
+            ]
+        },
+        {
+            "@id": "li:Notice",
+            "@type": "rdfs:Class",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A set of notices used to apply a particular license\nto a work. Typically these notices disclaim warranty and state where\nthe full license text can be found. (If the license text is very short\nthis may contain the full license text).\n\nOften the recommended (canonical) notices to use with a particular\nlicense are a template where an author is expected to fill in their\ndetails when using it to apply the license to a work -- this is\nimplemented in the License Database using the\n[Mustache](http://mustache.github.com/mustache.5.html) template\nlanguage. The keys which may be used by a license notice template are:\n{{year}}, {{rightsholder}}, {{description}} and {{title}}. "
+            }
+        },
+        {
+            "@id": "li:canonical",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A boolean, if true signifies that this particular\nnotice is a canonical notice recommended by the publisher of the license\n(e.g. in the license text itself). This is also set as \"true\" for short\n(permissive) licenses where the notice is the full license."
+            },
+            "rdfs:domain": {
+                "@id": "li:Notice"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            }
+        },
+        {
+            "@id": "li:compatible",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "This property states that works under these licenses\ncan be combined into a single work."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "li:License"
+            }
+        },
+        {
+            "@id": "li:id",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "The identifier assigned to the license by\nthe LicenseDB project. (the intent is to follow the same naming\nscheme as defined in\n[DEP5](http://dep.debian.net/deps/dep5/#license-specification))"
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        },
+        {
+            "@id": "li:libre",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "This property states that a license is suitable for\nuse in free software, open source software, free culture or open data\naccording to a particular organization."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "rdfs:Resource"
+            }
+        },
+        {
+            "@id": "li:name",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A short name assigned to the license. This should\nbe a short name suitable for display in a dropdown menu of a simple\nlicense chooser or the copyright notice where there is limited room\nfor such notices.\n\nFor example, \"CC BY-SA 3.0 NL\" is the li:name for a creative commons\nlicense which has \"Attribution-ShareAlike 3.0 Netherlands\" as\ndc:title."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "rdfs:Literal"
+            }
+        },
+        {
+            "@id": "li:orlater",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A boolean, if true signifies that this particular\nnotice is a notice typically used to apply an \"or-later\" clause to a\nversioned license. If false the notice will not allow the licensee to\nupgrade to a newer version of the license."
+            },
+            "rdfs:domain": {
+                "@id": "li:Notice"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            }
+        },
+        {
+            "@id": "li:plaintext",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "The license is available as a plain text formatted\ndocument at the linked resource.  This is usually the preferred format\nto include in a packaged software project."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "rdfs:Resource"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:hasFormat"
+            }
+        },
+        {
+            "@id": "li:short",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A boolean, if true signifies that this particular\nnotice is a short notice typically used in user interfaces where there\nis not enough room for a longer text. If false the notice is a slightly\nlonger text typically used in software source code files and\n[README](http://en.wikipedia.org/wiki/README) files or anywhere else\nwhere there is sufficient room for a slightly longer text."
+            },
+            "rdfs:domain": {
+                "@id": "li:Notice"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            }
+        },
+        {
+            "@id": "li:text",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "The text used to apply a license to a work."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "rdfs:Literal"
+            }
+        }
+    ]
+}

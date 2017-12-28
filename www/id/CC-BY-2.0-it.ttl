@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.0/it/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/it/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/it/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.5/it/> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Italië"@af,
+        "نسب المصنف  2.0 ايطاليا"@ar,
+        "Attribution 2.0 Italy"@as,
+        "Attribution 2.0 Italy"@ast,
+        "Attribution 2.0 Italy"@ast-es,
+        "Attribution 2.0 Italy"@az,
+        "Атрыбуцыя 2.0 Італія"@be,
+        "Признание 2.0 Италия"@bg,
+        "Attribution 2.0 Italy"@bn,
+        "Reconeixement 2.0 Itàlia"@ca,
+        "Uveďte autora 2.0 Itálie"@cs,
+        "Navngivelse 2.0 Italien"@da,
+        "Namensnennung 2.0 Italien"@de,
+        "Namensnennung 2.0 Italien"@de-at,
+        "Namensnennung 2.0 Italien"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Ιταλία"@el,
+        "Attribution 2.0 Italy"@en,
+        "Attribution 2.0 Italy"@en-ca,
+        "Attribution 2.0 Italy"@en-gb,
+        "Attribution 2.0 Italy"@en-hk,
+        "Attribution 2.0 Italy"@en-sg,
+        "Attribution 2.0 Italy"@en-us,
+        "Atribuite 2.0 Italujo"@eo,
+        "Atribución 2.0 Italia"@es,
+        "Atribución 2.0 Italia"@es-ar,
+        "Atribución 2.0 Italia"@es-cl,
+        "Reconocimiento 2.0 Italia"@es-co,
+        "Reconocimiento 2.0 Italia"@es-ec,
+        "Reconocimiento 2.0 Italia"@es-es,
+        "Reconocimiento 2.0 Italia"@es-gt,
+        "Atribución 2.0 Italia"@es-mx,
+        "Reconocimiento 2.0 Italia"@es-pe,
+        "Reconocimiento 2.0 Italia"@es-pr,
+        "Autorile viitamine 2.0 Itaalia"@et,
+        "Aitortu 2.0 Italia"@eu,
+        "Attribution 2.0 ایتالیا"@fa,
+        "Nimeä 2.0 Italia"@fi,
+        "Attribution 2.0 Italie"@fr,
+        "Paternité 2.0 Italie"@fr-ca,
+        "Paternité 2.0 Italie"@fr-ch,
+        "Paternité 2.0 Italie"@fr-lu,
+        "Attribution 2.0 Italy"@ga,
+        "Recoñecemento 2.0 Italia"@gl,
+        "ייחוס 2.0 איטליה"@he,
+        "Attribution 2.0 इटली"@hi,
+        "Imenovanje 2.0 Italija"@hr,
+        "Nevezd meg! 2.0 Olaszország"@hu,
+        "Հղում 2.0 Իտալիա"@hy,
+        "Atribusi 2.0 Italia"@id,
+        "Attribution 2.0 Ítalía"@is,
+        "Attribuzione 2.0 Italia"@it,
+        "Attribuzione 2.0 Italia"@it-ch,
+        "表示 2.0 イタリア"@ja,
+        "ავტორობის მითითებით  2.0 იტალია"@ka,
+        "Атауын сақтау 2.0 Italy"@kk,
+        "저작자표시(Attribution) 2.0 이탈리아"@ko,
+        "Priskyrimas 2.0 Italija"@lt,
+        "Atsaucoties 2.0 Itāļu"@lv,
+        "Наведи извор 2.0 Италија"@mk,
+        "കടപ്പാട് 2.0 ഇറ്റലി"@ml,
+        "Attribution 2.0 Итали"@mn,
+        "Pengiktirafan 2.0 Itali"@ms,
+        "Naamsvermelding 2.0 Italië"@nl,
+        "Navngivelse 2.0 Italia"@no,
+        "Tsebagatšo 2.0 Italia"@nso,
+        "Attribution 2.0 Italy"@oci-es,
+        "Uznanie autorstwa 2.0 Włochy"@pl,
+        "Atribuição  2.0 Itália"@pt,
+        "Atribuição 2.0 Italy"@pt-br,
+        "Atribuição 2.0 Itália"@pt-pt,
+        "Atribuire 2.0 Italia"@ro,
+        "Attribution (Атрибуция) 2.0 Италия"@ru,
+        "Attribution 2.0 Italy"@si-lk,
+        "Priznanje avtorstva 2.0 Italija"@sl,
+        "Attribution 2.0 Itali"@sq,
+        "Autorstvo 2.0 Italija"@sr,
+        "Ауторство 2.0 Италија"@sr,
+        "Autorstvo 2.0 Italija"@sr-latn,
+        "Attribution 2.0 Italy"@st,
+        "Erkännande 2.0 Italien"@sv,
+        "Attribution 2.0 இத்தாலி"@ta,
+        "ఆపాదింపు 2.0 ఇటలీ"@te,
+        "แสดงที่มา 2.0 อิตาลี"@th,
+        "Attribution 2.0 İtalya"@tr,
+        "Attribution 2.0 Italy"@uk,
+        "Attribution 2.0 Italy"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Italy"@vi,
+        "署名 2.0 意大利"@zh,
+        "姓名標示 2.0 義大利"@zh-hk,
+        "姓名標示 2.0 義大利"@zh-tw,
+        "Qaphela Umnikazi 2.0 i-Italy"@zu,
+        "${Attribution} 2.0 ${Italy}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.0-it> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/it/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/it/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.0-it> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/it/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/it/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.5-it> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Italië"@af,
+        "نسب المصنف  2.0 ايطاليا"@ar,
+        "Attribution 2.0 Italy"@as,
+        "Attribution 2.0 Italy"@ast,
+        "Attribution 2.0 Italy"@ast-es,
+        "Attribution 2.0 Italy"@az,
+        "Атрыбуцыя 2.0 Італія"@be,
+        "Признание 2.0 Италия"@bg,
+        "Attribution 2.0 Italy"@bn,
+        "Reconeixement 2.0 Itàlia"@ca,
+        "Uveďte autora 2.0 Itálie"@cs,
+        "Navngivelse 2.0 Italien"@da,
+        "Namensnennung 2.0 Italien"@de,
+        "Namensnennung 2.0 Italien"@de-at,
+        "Namensnennung 2.0 Italien"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Ιταλία"@el,
+        "Attribution 2.0 Italy"@en,
+        "Attribution 2.0 Italy"@en-ca,
+        "Attribution 2.0 Italy"@en-gb,
+        "Attribution 2.0 Italy"@en-hk,
+        "Attribution 2.0 Italy"@en-sg,
+        "Attribution 2.0 Italy"@en-us,
+        "Atribuite 2.0 Italujo"@eo,
+        "Atribución 2.0 Italia"@es,
+        "Atribución 2.0 Italia"@es-ar,
+        "Atribución 2.0 Italia"@es-cl,
+        "Reconocimiento 2.0 Italia"@es-co,
+        "Reconocimiento 2.0 Italia"@es-ec,
+        "Reconocimiento 2.0 Italia"@es-es,
+        "Reconocimiento 2.0 Italia"@es-gt,
+        "Atribución 2.0 Italia"@es-mx,
+        "Reconocimiento 2.0 Italia"@es-pe,
+        "Reconocimiento 2.0 Italia"@es-pr,
+        "Autorile viitamine 2.0 Itaalia"@et,
+        "Aitortu 2.0 Italia"@eu,
+        "Attribution 2.0 ایتالیا"@fa,
+        "Nimeä 2.0 Italia"@fi,
+        "Attribution 2.0 Italie"@fr,
+        "Paternité 2.0 Italie"@fr-ca,
+        "Paternité 2.0 Italie"@fr-ch,
+        "Paternité 2.0 Italie"@fr-lu,
+        "Attribution 2.0 Italy"@ga,
+        "Recoñecemento 2.0 Italia"@gl,
+        "ייחוס 2.0 איטליה"@he,
+        "Attribution 2.0 इटली"@hi,
+        "Imenovanje 2.0 Italija"@hr,
+        "Nevezd meg! 2.0 Olaszország"@hu,
+        "Հղում 2.0 Իտալիա"@hy,
+        "Atribusi 2.0 Italia"@id,
+        "Attribution 2.0 Ítalía"@is,
+        "Attribuzione 2.0 Italia"@it,
+        "Attribuzione 2.0 Italia"@it-ch,
+        "表示 2.0 イタリア"@ja,
+        "ავტორობის მითითებით  2.0 იტალია"@ka,
+        "Атауын сақтау 2.0 Italy"@kk,
+        "저작자표시(Attribution) 2.0 이탈리아"@ko,
+        "Priskyrimas 2.0 Italija"@lt,
+        "Atsaucoties 2.0 Itāļu"@lv,
+        "Наведи извор 2.0 Италија"@mk,
+        "കടപ്പാട് 2.0 ഇറ്റലി"@ml,
+        "Attribution 2.0 Итали"@mn,
+        "Pengiktirafan 2.0 Itali"@ms,
+        "Naamsvermelding 2.0 Italië"@nl,
+        "Navngivelse 2.0 Italia"@no,
+        "Tsebagatšo 2.0 Italia"@nso,
+        "Attribution 2.0 Italy"@oci-es,
+        "Uznanie autorstwa 2.0 Włochy"@pl,
+        "Atribuição  2.0 Itália"@pt,
+        "Atribuição 2.0 Italy"@pt-br,
+        "Atribuição 2.0 Itália"@pt-pt,
+        "Atribuire 2.0 Italia"@ro,
+        "Attribution (Атрибуция) 2.0 Италия"@ru,
+        "Attribution 2.0 Italy"@si-lk,
+        "Priznanje avtorstva 2.0 Italija"@sl,
+        "Attribution 2.0 Itali"@sq,
+        "Autorstvo 2.0 Italija"@sr,
+        "Ауторство 2.0 Италија"@sr,
+        "Autorstvo 2.0 Italija"@sr-latn,
+        "Attribution 2.0 Italy"@st,
+        "Erkännande 2.0 Italien"@sv,
+        "Attribution 2.0 இத்தாலி"@ta,
+        "ఆపాదింపు 2.0 ఇటలీ"@te,
+        "แสดงที่มา 2.0 อิตาลี"@th,
+        "Attribution 2.0 İtalya"@tr,
+        "Attribution 2.0 Italy"@uk,
+        "Attribution 2.0 Italy"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Italy"@vi,
+        "署名 2.0 意大利"@zh,
+        "姓名標示 2.0 義大利"@zh-hk,
+        "姓名標示 2.0 義大利"@zh-tw,
+        "Qaphela Umnikazi 2.0 i-Italy"@zu,
+        "${Attribution} 2.0 ${Italy}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.0/it/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/it/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/it/88x31.png> ;
+    li:id "CC-BY-2.0-it" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.0 IT" .
+

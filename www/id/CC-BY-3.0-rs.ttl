@@ -1,0 +1,242 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/3.0/rs/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/rs/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/rs/legalcode.sr-Cyrl>,
+        <http://creativecommons.org/licenses/by/3.0/rs/legalcode.sr-Latn> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Serbia"@af,
+        "نسب المصنف  3.0 صربيا"@ar,
+        "Attribution 3.0 Serbia"@as,
+        "Attribution 3.0 Serbia"@ast,
+        "Attribution 3.0 Serbia"@ast-es,
+        "Attribution 3.0 Serbia"@az,
+        "Атрыбуцыя 3.0 Сербія"@be,
+        "Признание 3.0 Сърбия"@bg,
+        "Attribution 3.0 Serbia"@bn,
+        "Reconeixement 3.0 Sèrbia"@ca,
+        "Uveďte autora 3.0 Srbsko"@cs,
+        "Navngivelse 3.0 Serbia"@da,
+        "Namensnennung 3.0 Serbien"@de,
+        "Namensnennung 3.0 Serbien"@de-at,
+        "Namensnennung 3.0 Serbien"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Σερβία"@el,
+        "Attribution 3.0 Serbia"@en,
+        "Attribution 3.0 Serbia"@en-ca,
+        "Attribution 3.0 Serbia"@en-gb,
+        "Attribution 3.0 Serbia"@en-hk,
+        "Attribution 3.0 Serbia"@en-sg,
+        "Attribution 3.0 Serbia"@en-us,
+        "Atribuite 3.0 Serbujo"@eo,
+        "Atribución 3.0 Serbia"@es,
+        "Atribución 3.0 Serbia"@es-ar,
+        "Atribución 3.0 Serbia"@es-cl,
+        "Reconocimiento 3.0 Serbia"@es-co,
+        "Reconocimiento 3.0 Serbia"@es-ec,
+        "Reconocimiento 3.0 Serbia"@es-es,
+        "Reconocimiento 3.0 Serbia"@es-gt,
+        "Atribución 3.0 Serbia"@es-mx,
+        "Reconocimiento 3.0 Serbia"@es-pe,
+        "Reconocimiento 3.0 Serbia"@es-pr,
+        "Autorile viitamine 3.0 Serbia"@et,
+        "Aitortu 3.0 Serbia"@eu,
+        "Attribution 3.0 صربستان"@fa,
+        "Nimeä 3.0 Serbia"@fi,
+        "Attribution 3.0 Serbie"@fr,
+        "Paternité 3.0 Serbie"@fr-ca,
+        "Paternité 3.0 Serbie"@fr-ch,
+        "Paternité 3.0 Serbie"@fr-lu,
+        "Attribution 3.0 Serbia"@ga,
+        "Recoñecemento 3.0 Serbia"@gl,
+        "ייחוס 3.0 סרביה"@he,
+        "Attribution 3.0 Serbia"@hi,
+        "Imenovanje 3.0 Srbija"@hr,
+        "Nevezd meg! 3.0 Szerbia"@hu,
+        "Հղում 3.0 Սերբիա"@hy,
+        "Atribusi 3.0 Serbia"@id,
+        "Attribution 3.0 Serbía"@is,
+        "Attribuzione 3.0 Serbia"@it,
+        "Attribuzione 3.0 Serbia"@it-ch,
+        "表示 3.0 セルビア"@ja,
+        "ავტორობის მითითებით  3.0 სერბია"@ka,
+        "Атауын сақтау 3.0 Serbia"@kk,
+        "저작자표시(Attribution) 3.0 세르비아"@ko,
+        "Priskyrimas 3.0 Serbija"@lt,
+        "Atsaucoties 3.0 Serbija"@lv,
+        "Наведи извор 3.0 Србија"@mk,
+        "കടപ്പാട് 3.0 സെർബിയ"@ml,
+        "Attribution 3.0 Serbia"@mn,
+        "Pengiktirafan 3.0 Serbia"@ms,
+        "Naamsvermelding 3.0 Servië"@nl,
+        "Navngivelse 3.0 Serbia"@no,
+        "Tsebagatšo 3.0 Serbia"@nso,
+        "Attribution 3.0 Serbia"@oci-es,
+        "Uznanie autorstwa 3.0 Serbia"@pl,
+        "Atribuição  3.0 Sérvia"@pt,
+        "Atribuição 3.0 Serbia"@pt-br,
+        "Atribuição 3.0 Serbia"@pt-pt,
+        "Atribuire 3.0 Serbia"@ro,
+        "Attribution (Атрибуция) 3.0 Сербия"@ru,
+        "Attribution 3.0 Serbia"@si-lk,
+        "Priznanje avtorstva 3.0 Srbija"@sl,
+        "Attribution 3.0 Serbi"@sq,
+        "Autorstvo 3.0 Srbija"@sr,
+        "Ауторство 3.0 Србија"@sr,
+        "Autorstvo 3.0 Srbija"@sr-latn,
+        "Attribution 3.0 Serbia"@st,
+        "Erkännande 3.0 Serbien"@sv,
+        "Attribution 3.0 செர்பியா"@ta,
+        "ఆపాదింపు 3.0 సెర్బియా"@te,
+        "แสดงที่มา 3.0 เซอร์เบีย"@th,
+        "Attribution 3.0 Sırbistan"@tr,
+        "Attribution 3.0 Serbia"@uk,
+        "Attribution 3.0 Serbia"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Serbia"@vi,
+        "署名 3.0 塞尔维亚"@zh,
+        "姓名標示 3.0 塞爾維亞"@zh-hk,
+        "姓名標示 3.0 塞爾維亞"@zh-tw,
+        "Qaphela Umnikazi 3.0 Serbia"@zu,
+        "${Attribution} 3.0 ${Serbia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-3.0-rs> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/rs/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/rs/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-3.0-rs> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/rs/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/rs/legalcode.sr-Cyrl>,
+        <http://creativecommons.org/licenses/by/3.0/rs/legalcode.sr-Latn> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Serbia"@af,
+        "نسب المصنف  3.0 صربيا"@ar,
+        "Attribution 3.0 Serbia"@as,
+        "Attribution 3.0 Serbia"@ast,
+        "Attribution 3.0 Serbia"@ast-es,
+        "Attribution 3.0 Serbia"@az,
+        "Атрыбуцыя 3.0 Сербія"@be,
+        "Признание 3.0 Сърбия"@bg,
+        "Attribution 3.0 Serbia"@bn,
+        "Reconeixement 3.0 Sèrbia"@ca,
+        "Uveďte autora 3.0 Srbsko"@cs,
+        "Navngivelse 3.0 Serbia"@da,
+        "Namensnennung 3.0 Serbien"@de,
+        "Namensnennung 3.0 Serbien"@de-at,
+        "Namensnennung 3.0 Serbien"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Σερβία"@el,
+        "Attribution 3.0 Serbia"@en,
+        "Attribution 3.0 Serbia"@en-ca,
+        "Attribution 3.0 Serbia"@en-gb,
+        "Attribution 3.0 Serbia"@en-hk,
+        "Attribution 3.0 Serbia"@en-sg,
+        "Attribution 3.0 Serbia"@en-us,
+        "Atribuite 3.0 Serbujo"@eo,
+        "Atribución 3.0 Serbia"@es,
+        "Atribución 3.0 Serbia"@es-ar,
+        "Atribución 3.0 Serbia"@es-cl,
+        "Reconocimiento 3.0 Serbia"@es-co,
+        "Reconocimiento 3.0 Serbia"@es-ec,
+        "Reconocimiento 3.0 Serbia"@es-es,
+        "Reconocimiento 3.0 Serbia"@es-gt,
+        "Atribución 3.0 Serbia"@es-mx,
+        "Reconocimiento 3.0 Serbia"@es-pe,
+        "Reconocimiento 3.0 Serbia"@es-pr,
+        "Autorile viitamine 3.0 Serbia"@et,
+        "Aitortu 3.0 Serbia"@eu,
+        "Attribution 3.0 صربستان"@fa,
+        "Nimeä 3.0 Serbia"@fi,
+        "Attribution 3.0 Serbie"@fr,
+        "Paternité 3.0 Serbie"@fr-ca,
+        "Paternité 3.0 Serbie"@fr-ch,
+        "Paternité 3.0 Serbie"@fr-lu,
+        "Attribution 3.0 Serbia"@ga,
+        "Recoñecemento 3.0 Serbia"@gl,
+        "ייחוס 3.0 סרביה"@he,
+        "Attribution 3.0 Serbia"@hi,
+        "Imenovanje 3.0 Srbija"@hr,
+        "Nevezd meg! 3.0 Szerbia"@hu,
+        "Հղում 3.0 Սերբիա"@hy,
+        "Atribusi 3.0 Serbia"@id,
+        "Attribution 3.0 Serbía"@is,
+        "Attribuzione 3.0 Serbia"@it,
+        "Attribuzione 3.0 Serbia"@it-ch,
+        "表示 3.0 セルビア"@ja,
+        "ავტორობის მითითებით  3.0 სერბია"@ka,
+        "Атауын сақтау 3.0 Serbia"@kk,
+        "저작자표시(Attribution) 3.0 세르비아"@ko,
+        "Priskyrimas 3.0 Serbija"@lt,
+        "Atsaucoties 3.0 Serbija"@lv,
+        "Наведи извор 3.0 Србија"@mk,
+        "കടപ്പാട് 3.0 സെർബിയ"@ml,
+        "Attribution 3.0 Serbia"@mn,
+        "Pengiktirafan 3.0 Serbia"@ms,
+        "Naamsvermelding 3.0 Servië"@nl,
+        "Navngivelse 3.0 Serbia"@no,
+        "Tsebagatšo 3.0 Serbia"@nso,
+        "Attribution 3.0 Serbia"@oci-es,
+        "Uznanie autorstwa 3.0 Serbia"@pl,
+        "Atribuição  3.0 Sérvia"@pt,
+        "Atribuição 3.0 Serbia"@pt-br,
+        "Atribuição 3.0 Serbia"@pt-pt,
+        "Atribuire 3.0 Serbia"@ro,
+        "Attribution (Атрибуция) 3.0 Сербия"@ru,
+        "Attribution 3.0 Serbia"@si-lk,
+        "Priznanje avtorstva 3.0 Srbija"@sl,
+        "Attribution 3.0 Serbi"@sq,
+        "Autorstvo 3.0 Srbija"@sr,
+        "Ауторство 3.0 Србија"@sr,
+        "Autorstvo 3.0 Srbija"@sr-latn,
+        "Attribution 3.0 Serbia"@st,
+        "Erkännande 3.0 Serbien"@sv,
+        "Attribution 3.0 செர்பியா"@ta,
+        "ఆపాదింపు 3.0 సెర్బియా"@te,
+        "แสดงที่มา 3.0 เซอร์เบีย"@th,
+        "Attribution 3.0 Sırbistan"@tr,
+        "Attribution 3.0 Serbia"@uk,
+        "Attribution 3.0 Serbia"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Serbia"@vi,
+        "署名 3.0 塞尔维亚"@zh,
+        "姓名標示 3.0 塞爾維亞"@zh-hk,
+        "姓名標示 3.0 塞爾維亞"@zh-tw,
+        "Qaphela Umnikazi 3.0 Serbia"@zu,
+        "${Attribution} 3.0 ${Serbia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/3.0/rs/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/rs/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/rs/88x31.png> ;
+    li:id "CC-BY-3.0-rs" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 3.0 RS" .
+
+<http://creativecommons.org/licenses/by/3.0/rs/legalcode.sr-Cyrl> dc:language "sr-Cyrl" .
+
+<http://creativecommons.org/licenses/by/3.0/rs/legalcode.sr-Latn> dc:language "sr-Latn" .
+

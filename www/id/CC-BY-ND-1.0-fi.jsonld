@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-1.0-fi",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/fi/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/1.0/fi/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/1.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 1.0 Finland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 1.0 فلندا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 1.0 Фінляндыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 1.0 Финландия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 1.0 Finlàndia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 1.0 Finsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 1.0 Finland"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 1.0 Finnland"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 1.0 Finnland"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 1.0 Finnland"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 1.0 Φιλανδία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 1.0 Suomujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 1.0 Finlandia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 1.0 Finlandia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 1.0 Finlandia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 1.0 Finlandia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 1.0 Soome"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 1.0 Finlandia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 1.0 فنلاند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 1.0 Suomi"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 1.0 Finlande"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 1.0 Finlande"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 1.0 Finlande"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 1.0 Finlande"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 1.0 Finlandia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 1.0 פינלנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 1.0 Finska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 1.0 Finnország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 1.0 Finland"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 1.0 Finlandia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 1.0 Finlandia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 1.0 Finlandia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 1.0 フィンランド"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 1.0 ფინეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 1.0 Finland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 1.0 핀란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 1.0 Suomija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 1.0 Somija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 1.0 Финска"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 1.0 ഫിൻലാന്റ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 1.0 Finland"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 1.0 Finland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 1.0 Finland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 1.0 Finland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 1.0 Finlandia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 1.0 Finlândia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 1.0 Finland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 1.0 Filândia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 1.0 Finlanda"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 1.0 Финляндия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 1.0 Finska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 1.0 Finlandë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 1.0 Finska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 1.0 Финска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 1.0 Finska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 1.0 Finland"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 1.0 ఫిన్లాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 1.0 ฟินแลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 1.0 Finlandiya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 1.0 Finland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 1.0 Finland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 1.0 芬兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 1.0 芬蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 1.0 芬蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 1.0 iFinland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 1.0 ${Finland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/1.0/fi/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/fi/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/1.0/fi/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/1.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 1.0 Finland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 1.0 فلندا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 1.0 Фінляндыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 1.0 Финландия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 1.0 Finlàndia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 1.0 Finsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 1.0 Finland"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 1.0 Finnland"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 1.0 Finnland"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 1.0 Finnland"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 1.0 Φιλανδία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 1.0 Suomujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 1.0 Finlandia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 1.0 Finlandia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 1.0 Finlandia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 1.0 Finlandia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 1.0 Finlandia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 1.0 Soome"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 1.0 Finlandia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 1.0 فنلاند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 1.0 Suomi"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 1.0 Finlande"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 1.0 Finlande"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 1.0 Finlande"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 1.0 Finlande"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 1.0 Finlandia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 1.0 פינלנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 1.0 Finska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 1.0 Finnország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 1.0 Finland"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 1.0 Finlandia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 1.0 Finlandia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 1.0 Finlandia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 1.0 フィンランド"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 1.0 ფინეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 1.0 Finland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 1.0 핀란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 1.0 Suomija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 1.0 Somija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 1.0 Финска"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 1.0 ഫിൻലാന്റ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 1.0 Finland"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 1.0 Finland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 1.0 Finland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 1.0 Finland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 1.0 Finlandia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 1.0 Finlândia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 1.0 Finland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 1.0 Filândia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 1.0 Finlanda"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 1.0 Финляндия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 1.0 Finska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 1.0 Finlandë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 1.0 Finska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 1.0 Финска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 1.0 Finska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 1.0 Finland"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 1.0 ఫిన్లాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 1.0 ฟินแลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 1.0 Finlandiya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 1.0 Finland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 1.0 Finland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 1.0 芬兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 1.0 芬蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 1.0 芬蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 1.0 iFinland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 1.0 ${Finland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-1.0-fi",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/1.0/fi/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/1.0/fi/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/1.0/fi/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/1.0/fi/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-1.0-fi",
+    "li:name": "CC BY-ND 1.0 FI"
+}

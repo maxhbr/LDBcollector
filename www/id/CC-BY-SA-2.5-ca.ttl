@@ -1,0 +1,245 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/2.5/ca/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ca/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.5/ca/legalcode.en>,
+        <http://creativecommons.org/licenses/by-sa/2.5/ca/legalcode.fr> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.5/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.5 Kanada"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.5 كندا"@ar,
+        "Attribution-ShareAlike 2.5 Canada"@as,
+        "Attribution-ShareAlike 2.5 Canada"@ast,
+        "Attribution-ShareAlike 2.5 Canada"@ast-es,
+        "Attribution-ShareAlike 2.5 Canada"@az,
+        "Attribution-ShareAlike 2.5 Канада"@be,
+        "Признание-Споделяне на споделеното 2.5 Канада"@bg,
+        "Attribution-ShareAlike 2.5 Canada"@bn,
+        "Reconeixement-CompartirIgual 2.5 Canadà"@ca,
+        "Uveďte autora-Zachovejte licenci 2.5 Kanada"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.5 Canada"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kanada"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kanada"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kanada"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Καναδάς"@el,
+        "Attribution-ShareAlike 2.5 Canada"@en,
+        "Attribution-ShareAlike 2.5 Canada"@en-ca,
+        "Attribution-ShareAlike 2.5 Canada"@en-gb,
+        "Attribution-ShareAlike 2.5 Canada"@en-hk,
+        "Attribution-ShareAlike 2.5 Canada"@en-sg,
+        "Attribution-ShareAlike 2.5 Canada"@en-us,
+        "Atribuite-Samkondiĉe 2.5 Kanado"@eo,
+        "Atribución-CompartirIgual 2.5 Canadá"@es,
+        "Atribución-CompartirDerivadasIgual 2.5 Canadá"@es-ar,
+        "Atribución-LicenciarIgual 2.5 Canadá"@es-cl,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-co,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-ec,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-es,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.5 Canadá"@es-mx,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-pe,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.5 Kanada"@et,
+        "Aitortu-PartekatuBerdin 2.5 Kanada"@eu,
+        "Attribution-ShareAlike 2.5 کانادا"@fa,
+        "Nimeä-Tarttuva 2.5 Kanada"@fi,
+        "Paternité - Partage à l'Identique 2.5 Canada"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Canada"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Canada"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Canada"@fr-lu,
+        "Attribution-ShareAlike 2.5 Canada"@ga,
+        "Recoñecemento-CompartirIgual 2.5 Canadá"@gl,
+        "ייחוס-שיתוף זהה 2.5 קנדה"@he,
+        "Attribution-ShareAlike 2.5 Canada"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.5 Kanada"@hr,
+        "Nevezd meg! - Így add tovább! 2.5 Kanada"@hu,
+        "Հղում - համանման տարածում 2.5 Կանադա"@hy,
+        "Atribusi-BerbagiSerupa 2.5 Kanada"@id,
+        "Attribution-ShareAlike 2.5 Canada"@is,
+        "Attribuzione - Condividi allo stesso modo 2.5 Canada"@it,
+        "Attribuzione - Condividi allo stesso modo 2.5 Canada"@it-ch,
+        "表示 - 継承 2.5 カナダ"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 კანადა"@ka,
+        "Attribution-ShareAlike 2.5 Canada"@kk,
+        "저작자표시-동일조건변경허락 2.5 캐나다"@ko,
+        "Attribution-ShareAlike 2.5 Kanada"@lt,
+        "Atsaucoties-Nemainot licenci 2.5 Kanāda"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.5 Канада"@mk,
+        "Attribution-ShareAlike 2.5 കാനഡ"@ml,
+        "Attribution-ShareAlike 2.5 Canada"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.5 Kanada"@ms,
+        "Naamsvermelding-GelijkDelen 2.5 Canada"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.5 Canada"@no,
+        "Tsebagatšo -Mohlakanelwa 2.5 Khanada"@nso,
+        "Attribution-ShareAlike 2.5 Canada"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.5 Kanada"@pl,
+        "Atribuição - CompartilhaIgual 2.5 Canadá"@pt,
+        "Attribution-ShareAlike 2.5 Canada"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.5 Canadá"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.5 Canada"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Канада"@ru,
+        "Attribution-ShareAlike 2.5 Canada"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Kanada"@sl,
+        "Attribution-ShareAlike 2.5 Kanada"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Kanada"@sr,
+        "Ауторство-Делити под истим условима 2.5 Канада"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Kanada"@sr-latn,
+        "Attribution-ShareAlike 2.5 Canada"@st,
+        "Erkännande-DelaLika 2.5 Kanada"@sv,
+        "Attribution-ShareAlike 2.5 Canada"@ta,
+        "Attribution-ShareAlike 2.5 కెనడా"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 แคนาดา"@th,
+        "Alıntı-LisansıDevamEttirme 2.5 Kanada"@tr,
+        "Attribution-ShareAlike 2.5 Canada"@uk,
+        "Attribution-ShareAlike 2.5 Canada"@ur,
+        "Attribution-ShareAlike 2.5 Canada"@vi,
+        "署名-相同方式共享 2.5 加拿大"@zh,
+        "姓名標示-相同方式分享 2.5 加拿大"@zh-hk,
+        "姓名標示-相同方式分享 2.5 加拿大"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.5 Ecanada"@zu,
+        "${Attribution-ShareAlike} 2.5 ${Canada}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-2.5-ca> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.5/ca/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.5/ca/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-2.5-ca> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ca/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.5/ca/legalcode.en>,
+        <http://creativecommons.org/licenses/by-sa/2.5/ca/legalcode.fr> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-sa" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-SA-2.0-ca> ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.5/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.5 Kanada"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.5 كندا"@ar,
+        "Attribution-ShareAlike 2.5 Canada"@as,
+        "Attribution-ShareAlike 2.5 Canada"@ast,
+        "Attribution-ShareAlike 2.5 Canada"@ast-es,
+        "Attribution-ShareAlike 2.5 Canada"@az,
+        "Attribution-ShareAlike 2.5 Канада"@be,
+        "Признание-Споделяне на споделеното 2.5 Канада"@bg,
+        "Attribution-ShareAlike 2.5 Canada"@bn,
+        "Reconeixement-CompartirIgual 2.5 Canadà"@ca,
+        "Uveďte autora-Zachovejte licenci 2.5 Kanada"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.5 Canada"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kanada"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kanada"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Kanada"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Καναδάς"@el,
+        "Attribution-ShareAlike 2.5 Canada"@en,
+        "Attribution-ShareAlike 2.5 Canada"@en-ca,
+        "Attribution-ShareAlike 2.5 Canada"@en-gb,
+        "Attribution-ShareAlike 2.5 Canada"@en-hk,
+        "Attribution-ShareAlike 2.5 Canada"@en-sg,
+        "Attribution-ShareAlike 2.5 Canada"@en-us,
+        "Atribuite-Samkondiĉe 2.5 Kanado"@eo,
+        "Atribución-CompartirIgual 2.5 Canadá"@es,
+        "Atribución-CompartirDerivadasIgual 2.5 Canadá"@es-ar,
+        "Atribución-LicenciarIgual 2.5 Canadá"@es-cl,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-co,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-ec,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-es,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.5 Canadá"@es-mx,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-pe,
+        "Reconocimiento-CompartirIgual 2.5 Canadá"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.5 Kanada"@et,
+        "Aitortu-PartekatuBerdin 2.5 Kanada"@eu,
+        "Attribution-ShareAlike 2.5 کانادا"@fa,
+        "Nimeä-Tarttuva 2.5 Kanada"@fi,
+        "Paternité - Partage à l'Identique 2.5 Canada"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Canada"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Canada"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Canada"@fr-lu,
+        "Attribution-ShareAlike 2.5 Canada"@ga,
+        "Recoñecemento-CompartirIgual 2.5 Canadá"@gl,
+        "ייחוס-שיתוף זהה 2.5 קנדה"@he,
+        "Attribution-ShareAlike 2.5 Canada"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.5 Kanada"@hr,
+        "Nevezd meg! - Így add tovább! 2.5 Kanada"@hu,
+        "Հղում - համանման տարածում 2.5 Կանադա"@hy,
+        "Atribusi-BerbagiSerupa 2.5 Kanada"@id,
+        "Attribution-ShareAlike 2.5 Canada"@is,
+        "Attribuzione - Condividi allo stesso modo 2.5 Canada"@it,
+        "Attribuzione - Condividi allo stesso modo 2.5 Canada"@it-ch,
+        "表示 - 継承 2.5 カナダ"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 კანადა"@ka,
+        "Attribution-ShareAlike 2.5 Canada"@kk,
+        "저작자표시-동일조건변경허락 2.5 캐나다"@ko,
+        "Attribution-ShareAlike 2.5 Kanada"@lt,
+        "Atsaucoties-Nemainot licenci 2.5 Kanāda"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.5 Канада"@mk,
+        "Attribution-ShareAlike 2.5 കാനഡ"@ml,
+        "Attribution-ShareAlike 2.5 Canada"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.5 Kanada"@ms,
+        "Naamsvermelding-GelijkDelen 2.5 Canada"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.5 Canada"@no,
+        "Tsebagatšo -Mohlakanelwa 2.5 Khanada"@nso,
+        "Attribution-ShareAlike 2.5 Canada"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.5 Kanada"@pl,
+        "Atribuição - CompartilhaIgual 2.5 Canadá"@pt,
+        "Attribution-ShareAlike 2.5 Canada"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.5 Canadá"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.5 Canada"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Канада"@ru,
+        "Attribution-ShareAlike 2.5 Canada"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Kanada"@sl,
+        "Attribution-ShareAlike 2.5 Kanada"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Kanada"@sr,
+        "Ауторство-Делити под истим условима 2.5 Канада"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Kanada"@sr-latn,
+        "Attribution-ShareAlike 2.5 Canada"@st,
+        "Erkännande-DelaLika 2.5 Kanada"@sv,
+        "Attribution-ShareAlike 2.5 Canada"@ta,
+        "Attribution-ShareAlike 2.5 కెనడా"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 แคนาดา"@th,
+        "Alıntı-LisansıDevamEttirme 2.5 Kanada"@tr,
+        "Attribution-ShareAlike 2.5 Canada"@uk,
+        "Attribution-ShareAlike 2.5 Canada"@ur,
+        "Attribution-ShareAlike 2.5 Canada"@vi,
+        "署名-相同方式共享 2.5 加拿大"@zh,
+        "姓名標示-相同方式分享 2.5 加拿大"@zh-hk,
+        "姓名標示-相同方式分享 2.5 加拿大"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.5 Ecanada"@zu,
+        "${Attribution-ShareAlike} 2.5 ${Canada}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/2.5/ca/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.5/ca/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.5/ca/88x31.png> ;
+    li:id "CC-BY-SA-2.5-ca" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY-SA 2.5 CA" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/ca/legalcode.en> dc:language "en" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/ca/legalcode.fr> dc:language "fr" .
+

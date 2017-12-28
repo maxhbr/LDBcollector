@@ -1,0 +1,856 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-SA-2.5-ch",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/ch/",
+    "cc:legalcode": {
+        "@id": "http://creativecommons.org/licenses/by-sa/2.5/ch/legalcode.de",
+        "dc:language": "de"
+    },
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-sa",
+    "dc:source": "http://creativecommons.org/licenses/by-sa/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-InsgelyksDeel 2.5 Switserland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب العمل- المشاركة على قدم المساواة 2.5 سوسرا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-ShareAlike 2.5 Швейцарыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Споделяне на споделеното 2.5 Швейцария"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-CompartirIgual 2.5 Suïssa"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Zachovejte licenci 2.5 Švýcarsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.5 Schweiz"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Ελβετία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Samkondiĉe 2.5 Svisujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-CompartirIgual 2.5 Suiza"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-CompartirDerivadasIgual 2.5 Suiza"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-LicenciarIgual 2.5 Suiza"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-Licenciamiento Recíproco 2.5 Suiza"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.5 Šveits"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-PartekatuBerdin 2.5 Suitza"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-ShareAlike 2.5 سویس"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Tarttuva 2.5 Sveitsi"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Partage à l'Identique 2.5 Suisse"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-CompartirIgual 2.5 Switzerland"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שיתוף זהה 2.5 שוויץ"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Dijeli pod istim uvjetima 2.5 Švicarska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Így add tovább! 2.5 Svájc"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - համանման տարածում 2.5 Շվեյցարիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-BerbagiSerupa 2.5 Swiss"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.5 Switzerland"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Condividi allo stesso modo 2.5 Switzerland"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 継承 2.5 スイス"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 შვეიცარია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-동일조건변경허락 2.5 스위스"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-ShareAlike 2.5 Šveicarija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nemainot licenci 2.5 Šveice"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-СподелиПодИстиУслови 2.5 Швајцарија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-ShareAlike 2.5 സ്വിറ്റ്സർലാന്റ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-PerkongsianSerupa 2.5 Switzerland"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GelijkDelen 2.5 Zwitserland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-DelPåSammeVilkår 2.5 Sveits"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo -Mohlakanelwa 2.5 Switzerland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Na tych samych warunkach 2.5 Szwajcaria"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - CompartilhaIgual 2.5 Suíça"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Partilha nos termos da mesma licença 2.5 Switzerland"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire - Distribuire-în-condiţii-identice 2.5 Elveţia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Швейцария"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Švica"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-ShareAlike 2.5 Zvicër"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Švajcarska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Делити под истим условима 2.5 Швајцарска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Švajcarska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-DelaLika 2.5 Schweiz"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-ShareAlike 2.5 స్విట్జర్లాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 สวิสเซอร์แลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-LisansıDevamEttirme 2.5 İsviçre"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Attribution-ShareAlike 2.5 Switzerland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-相同方式共享 2.5 瑞士"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-相同方式分享 2.5 瑞士"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-相同方式分享 2.5 瑞士"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.5 ESwitzerland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-ShareAlike} 2.5 ${Switzerland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-sa/2.5/ch/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/ch/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-sa/2.5/ch/legalcode.de",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-sa",
+        "dc:source": "http://creativecommons.org/licenses/by-sa/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-InsgelyksDeel 2.5 Switserland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب العمل- المشاركة على قدم المساواة 2.5 سوسرا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-ShareAlike 2.5 Швейцарыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Споделяне на споделеното 2.5 Швейцария"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-CompartirIgual 2.5 Suïssa"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Zachovejte licenci 2.5 Švýcarsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.5 Schweiz"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Ελβετία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Samkondiĉe 2.5 Svisujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-CompartirIgual 2.5 Suiza"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-CompartirDerivadasIgual 2.5 Suiza"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-LicenciarIgual 2.5 Suiza"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-Licenciamiento Recíproco 2.5 Suiza"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-CompartirIgual 2.5 Suiza"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Jagamine samadel tingimustel 2.5 Šveits"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-PartekatuBerdin 2.5 Suitza"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-ShareAlike 2.5 سویس"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Tarttuva 2.5 Sveitsi"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Partage à l'Identique 2.5 Suisse"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-CompartirIgual 2.5 Switzerland"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שיתוף זהה 2.5 שוויץ"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Dijeli pod istim uvjetima 2.5 Švicarska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Így add tovább! 2.5 Svájc"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - համանման տարածում 2.5 Շվեյցարիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-BerbagiSerupa 2.5 Swiss"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.5 Switzerland"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Condividi allo stesso modo 2.5 Switzerland"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 継承 2.5 スイス"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 შვეიცარია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-동일조건변경허락 2.5 스위스"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-ShareAlike 2.5 Šveicarija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nemainot licenci 2.5 Šveice"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-СподелиПодИстиУслови 2.5 Швајцарија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-ShareAlike 2.5 സ്വിറ്റ്സർലാന്റ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-PerkongsianSerupa 2.5 Switzerland"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GelijkDelen 2.5 Zwitserland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-DelPåSammeVilkår 2.5 Sveits"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo -Mohlakanelwa 2.5 Switzerland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Na tych samych warunkach 2.5 Szwajcaria"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - CompartilhaIgual 2.5 Suíça"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Partilha nos termos da mesma licença 2.5 Switzerland"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire - Distribuire-în-condiţii-identice 2.5 Elveţia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Швейцария"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Švica"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-ShareAlike 2.5 Zvicër"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Švajcarska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Делити под истим условима 2.5 Швајцарска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Deliti pod istim uslovima 2.5 Švajcarska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-DelaLika 2.5 Schweiz"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-ShareAlike 2.5 స్విట్జర్లాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 สวิสเซอร์แลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-LisansıDevamEttirme 2.5 İsviçre"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Attribution-ShareAlike 2.5 Switzerland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-相同方式共享 2.5 瑞士"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-相同方式分享 2.5 瑞士"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-相同方式分享 2.5 瑞士"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Zihlanganyeleni 2.5 ESwitzerland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-ShareAlike} 2.5 ${Switzerland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-SA-2.5-ch",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-sa/2.5/ch/80x15.png",
+            "http://i.creativecommons.org/l/by-sa/2.5/ch/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-sa/2.5/ch/80x15.png",
+        "http://i.creativecommons.org/l/by-sa/2.5/ch/88x31.png"
+    ],
+    "li:id": "CC-BY-SA-2.5-ch",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY-SA 2.5 CH"
+}

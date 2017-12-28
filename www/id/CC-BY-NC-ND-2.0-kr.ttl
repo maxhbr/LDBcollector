@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.0/kr/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/kr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/kr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 South Korea"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 South Korea"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Korea"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@be,
+        "Признание-Некомерсиално-Без производни 2.0 South Korea"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Corea del Sud"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 South Korea"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Sydkorea"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Süd-Korea"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 country.kr"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 country.kr"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 South Korea"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 country.kr"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 country.kr"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 country.kr"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Sud-Koreujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 South Korea"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Corea del Sur"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Corea"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Corea"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Corea"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 South Korea"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Corea"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Corea"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 country.kr"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Corea"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 South Korea"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 South Korea"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 South Korea"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Corée du Sud"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 South Korea"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 country.kr"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 country.kr"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 South Korea"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 South Korea"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 South Korea"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 South Korea"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 South Korea"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 South Korea"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Korea Del Sud"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 country.kr"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 大韓民国"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 South Korea"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@kk,
+        "저작자표시-비영리-변경금지 2.0 대한민국"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 South Korea"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Јужна Кореја"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 South Korea"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 Zuid Korea"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Sør-Korea"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 South Korea"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Korea Południowa"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Coreia do Sul"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 South Korea"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 country.kr"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 South Korea"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Южная Корея"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 South Korea"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Koreja"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 South Korea"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 South Korea"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Korea"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 South Korea"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 South Korea"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Güney Kore"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 South Korea"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 South Korea"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 South Korea"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 South Korea"@zh-tw,
+        "姓名標示-非商業性-禁止改作 2.0 南韓"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 South Korea"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Korea}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.0-kr> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/kr/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/kr/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.0-kr> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/kr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.0/kr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.0 South Korea"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.0 South Korea"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@as,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.0 Korea"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@az,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@be,
+        "Признание-Некомерсиално-Без производни 2.0 South Korea"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.0 Corea del Sud"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.0 South Korea"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.0 Sydkorea"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 Süd-Korea"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 country.kr"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.0 country.kr"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.0 South Korea"@el,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@en,
+        "Attribution-NonCommercial-NoDerivs 2.0 country.kr"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.0 country.kr"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.0 country.kr"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.0 Sud-Koreujo"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.0 South Korea"@es,
+        "Atribución-NoComercial-SinDerivadas 2.0 Corea del Sur"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.0 Corea"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Corea"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Corea"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 South Korea"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 Corea"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.0 Corea"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.0 country.kr"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.0 Corea"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 South Korea"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.0 South Korea"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 South Korea"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.0 Corée du Sud"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 South Korea"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 country.kr"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.0 country.kr"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.0 South Korea"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.0 South Korea"@he,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.0 South Korea"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.0 South Korea"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.0 South Korea"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.0 South Korea"@id,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 Korea Del Sud"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.0 country.kr"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.0 大韓民国"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.0 South Korea"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@kk,
+        "저작자표시-비영리-변경금지 2.0 대한민국"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.0 South Korea"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.0 Јужна Кореја"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.0 South Korea"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.0 Zuid Korea"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.0 Sør-Korea"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.0 South Korea"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.0 Korea Południowa"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.0 Coreia do Sul"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.0 South Korea"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.0 country.kr"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 South Korea"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.0 Южная Корея"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.0 South Korea"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 Koreja"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.0 South Korea"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.0 South Korea"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.0 Korea"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.0 South Korea"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.0 South Korea"@th,
+        "Attribution-Gayriticari-NoDerivs 2.0 Güney Kore"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.0 South Korea"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.0 South Korea"@vi,
+        "署名-非商业性使用-禁止演绎 2.0 South Korea"@zh,
+        "姓名標示-非商業性-禁止改作 2.0 South Korea"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.0 South Korea"@zh-tw,
+        "姓名標示-非商業性-禁止改作 2.0 南韓"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.0 South Korea"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.0 ${Korea}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.0/kr/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.0/kr/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.0/kr/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.0-kr" ;
+    li:name "CC BY-NC-ND 2.0 KR" .
+

@@ -1,0 +1,795 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-3.0-it",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/it/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/it/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 3.0 Italië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  3.0 ايطاليا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 3.0 Італія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 3.0 Италия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 3.0 Itàlia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 3.0 Itálie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 3.0 Italien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 3.0 Italien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 3.0 Italien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 3.0 Italien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 3.0 Ιταλία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 3.0 Italujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 3.0 Italia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 3.0 Italia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 3.0 Italia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 3.0 Italia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 3.0 Itaalia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 3.0 Italia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 3.0 ایتالیا"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 3.0 Italia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 3.0 Italie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 3.0 Italie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 3.0 Italie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 3.0 Italie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 3.0 Italia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 3.0 איטליה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 3.0 इटली"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 3.0 Italija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 3.0 Olaszország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 3.0 Իտալիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 3.0 Italia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 3.0 Ítalía"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 3.0 Italia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 3.0 Italia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 3.0 イタリア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  3.0 იტალია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 3.0 Italy"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 3.0 이탈리아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 3.0 Italija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 3.0 Itāļu"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 3.0 Италија"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 3.0 ഇറ്റലി"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 3.0 Итали"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 3.0 Itali"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 3.0 Italië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 3.0 Italia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 3.0 Italia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 3.0 Włochy"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  3.0 Itália"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 3.0 Italy"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 3.0 Itália"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 3.0 Italia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 3.0 Италия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 3.0 Italija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 3.0 Itali"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 3.0 Italija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 3.0 Италија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 3.0 Italija"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 3.0 Italien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 3.0 இத்தாலி"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 3.0 ఇటలీ"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 3.0 อิตาลี"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 3.0 İtalya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 3.0 Italy"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 3.0 Nước Italy"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 3.0 意大利"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 3.0 義大利"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 3.0 義大利"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 3.0 i-Italy"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 3.0 ${Italy}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/3.0/it/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/it/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/it/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 3.0 Italië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  3.0 ايطاليا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 3.0 Італія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 3.0 Италия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 3.0 Itàlia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 3.0 Itálie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 3.0 Italien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 3.0 Italien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 3.0 Italien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 3.0 Italien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 3.0 Ιταλία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 3.0 Italujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 3.0 Italia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 3.0 Italia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 3.0 Italia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 3.0 Italia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 3.0 Itaalia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 3.0 Italia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 3.0 ایتالیا"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 3.0 Italia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 3.0 Italie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 3.0 Italie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 3.0 Italie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 3.0 Italie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 3.0 Italia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 3.0 איטליה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 3.0 इटली"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 3.0 Italija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 3.0 Olaszország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 3.0 Իտալիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 3.0 Italia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 3.0 Ítalía"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 3.0 Italia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 3.0 Italia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 3.0 イタリア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  3.0 იტალია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 3.0 Italy"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 3.0 이탈리아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 3.0 Italija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 3.0 Itāļu"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 3.0 Италија"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 3.0 ഇറ്റലി"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 3.0 Итали"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 3.0 Itali"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 3.0 Italië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 3.0 Italia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 3.0 Italia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 3.0 Włochy"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  3.0 Itália"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 3.0 Italy"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 3.0 Itália"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 3.0 Italia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 3.0 Италия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 3.0 Italija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 3.0 Itali"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 3.0 Italija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 3.0 Италија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 3.0 Italija"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 3.0 Italien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 3.0 இத்தாலி"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 3.0 ఇటలీ"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 3.0 อิตาลี"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 3.0 İtalya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 3.0 Italy"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 3.0 Nước Italy"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 3.0 意大利"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 3.0 義大利"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 3.0 義大利"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 3.0 i-Italy"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 3.0 ${Italy}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-3.0-it",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/3.0/it/80x15.png",
+            "http://i.creativecommons.org/l/by/3.0/it/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/3.0/it/80x15.png",
+        "http://i.creativecommons.org/l/by/3.0/it/88x31.png"
+    ],
+    "li:id": "CC-BY-3.0-it",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 3.0 IT"
+}

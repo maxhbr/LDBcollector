@@ -1,0 +1,241 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-sa/2.0/br/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/br/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.0/br/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-sa" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nc-sa/2.5/br/> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.0/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.0 Brasilië"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.0 البرازيل"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@as,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@az,
+        "Attribution-NonCommercial-ShareAlike 2.0 Бразілія"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.0 Бразилия"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.0 Brasil"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.0 Brazílie"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.0 Brasilien"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.0 Brasilien"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.0 Brasilien"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.0 Brasilien"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.0 Βραζιλία"@el,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.0 Brazilo"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.0 Brasil"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.0 Brasil"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.0 Brasil"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.0 Brasil"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.0 Brasiilia"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.0 Brasil"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.0 برزیل"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.0 Brasilia"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.0 Brésil"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Brésil"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Brésil"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Brésil"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.0 Brasil"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.0 ברזיל"@he,
+        "Attribution-NonCommercial-ShareAlike 2.0 ब्रज़ील"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.0 Brazil"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.0 Brazília"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.0 Բրազիլիա"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.0 Brasil"@id,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brasilía"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.0 Brasile"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.0 Brasile"@it-ch,
+        "表示 - 非営利 - 継承 2.0 ブラジル"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.0 ბრაზილია"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.0 브라질"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazilija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.0 Brazīlija"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.0 Бразил"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.0 ബ്രസീൽ"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.0 Бразил"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.0 Brasil"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.0 Brazilië"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.0 Brasil"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.0 Brazil"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.0 Brazylia"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.0 Brasil"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.0 Brasil"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.0 Brasil"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Brazilia"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.0 Бразилия"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.0 Brazilija"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.0 Brazil"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.0 Бразил"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.0 Brazil"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.0 Brasilien"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.0 பிரேசில்"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.0 బ్రెజిల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.0 บราซิล"@th,
+        "Attribution-Gayriticari-ShareAlike 2.0 Brezilya"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.0 Бразилія"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.0 Nước Brazil"@vi,
+        "署名-非商业性使用-相同方式共享 2.0 巴西"@zh,
+        "姓名標示-非商業性-相同方式分享 2.0 巴西"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.0 巴西"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.0 iBrazil"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.0 ${Brazil}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-SA-2.0-br> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.0/br/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.0/br/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-SA-2.0-br> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/br/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-sa/2.0/br/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nc-sa" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-NC-SA-2.5-br> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-sa/2.0/> ;
+    dc:title "Erkenning-Niekommersieel-InsgelyksDeel 2.0 Brasilië"@af,
+        "المشاركة على قدم المساواة-غير تجاري-نسب العمل 2.0 البرازيل"@ar,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@as,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@ast,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@ast-es,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@az,
+        "Attribution-NonCommercial-ShareAlike 2.0 Бразілія"@be,
+        "Признание-Некомерсиално-Споделяне на споделеното 2.0 Бразилия"@bg,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@bn,
+        "Reconeixement-NoComercial-CompartirIgual 2.0 Brasil"@ca,
+        "Uveďte autora-Nevyužívejte dílo komerčně-Zachovejte licenci 2.0 Brazílie"@cs,
+        "Navngivelse-IkkeKommerciel–DelPåSammeVilkår 2.0 Brasilien"@da,
+        "Namensnennung-Nicht-kommerziell-Weitergabe unter gleichen Bedingungen 2.0 Brasilien"@de,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.0 Brasilien"@de-at,
+        "Namensnennung-NichtKommerziell-Weitergabe unter gleichen Bedingungen 2.0 Brasilien"@de-ch,
+        "Αναφορά Δημιουργού - Μη Εμπορική Χρήση - Παρόμοια Διανομή 2.0 Βραζιλία"@el,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-ca,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-gb,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-hk,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-sg,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@en-us,
+        "Atribuite-Nekomerce-Samkondiĉe 2.0 Brazilo"@eo,
+        "Atribución-NoComercial-CompartirIgual 2.0 Brasil"@es,
+        "Atribución-NoComercial-CompartirDerivadasIgual 2.0 Brasil"@es-ar,
+        "Atribución-NoComercial-LicenciarIgual 2.0 Brasil"@es-cl,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-co,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-ec,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-es,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-gt,
+        "Atribución-No Comercial-Licenciamiento Recíproco 2.0 Brasil"@es-mx,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-pe,
+        "Reconocimiento-NoComercial-CompartirIgual 2.0 Brasil"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Jagamine samadel tingimustel 2.0 Brasiilia"@et,
+        "Aitortu-EzKomertziala-PartekatuBerdin 2.0 Brasil"@eu,
+        "Attribution-NonCommercial-ShareAlike 2.0 برزیل"@fa,
+        "Nimeä-Epäkaupallinen-Tarttuva 2.0 Brasilia"@fi,
+        "Attribution - Pas d'Utilisation Commerciale - Partage à l'Identique 2.0 Brésil"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Brésil"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Brésil"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 2.0 Brésil"@fr-lu,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@ga,
+        "Recoñecemento-NonComercial-CompartirIgual 2.0 Brasil"@gl,
+        "ייחוס-שימוש לא מסחרי-שיתוף זהה 2.0 ברזיל"@he,
+        "Attribution-NonCommercial-ShareAlike 2.0 ब्रज़ील"@hi,
+        "Imenovanje-Nekomercijalno-Dijeli pod istim uvjetima 2.0 Brazil"@hr,
+        "Nevezd meg! - Ne add el! - Így add tovább! 2.0 Brazília"@hu,
+        "Հղում - ոչ-առևտրային օգտագործում - համանման տարածում 2.0 Բրազիլիա"@hy,
+        "Atribusi-NonKomersial-BerbagiSerupa 2.0 Brasil"@id,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brasilía"@is,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.0 Brasile"@it,
+        "Attribuzione - Non commerciale - Condividi allo stesso modo 2.0 Brasile"@it-ch,
+        "表示 - 非営利 - 継承 2.0 ブラジル"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენებისთვის–გამოყენება იგივე პირობებით 2.0 ბრაზილია"@ka,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@kk,
+        "저작자표시-비영리-동일조건변경허락 2.0 브라질"@ko,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazilija"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainot licenci 2.0 Brazīlija"@lv,
+        "НаведиИзвор-Некомерцијално-СподелиПодИстиУслови 2.0 Бразил"@mk,
+        "Attribution-NonCommercial-ShareAlike 2.0 ബ്രസീൽ"@ml,
+        "Attribution-NonCommercial-ShareAlike 2.0 Бразил"@mn,
+        "Pengiktirafan-BukanKomersial-PerkongsianSerupa 2.0 Brasil"@ms,
+        "Naamsvermelding-NietCommercieel-GelijkDelen 2.0 Brazilië"@nl,
+        "Navngivelse-Ikkekommersiell-DelPåSammeVilkår 2.0 Brasil"@no,
+        "Tsebagatšo - E sego ya Kgwebo - Mohlakanelwa 2.0 Brazil"@nso,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Na tych samych warunkach 2.0 Brazylia"@pl,
+        "Atribuição - NãoComercial - CompartilhaIgual 2.0 Brasil"@pt,
+        "Atribuição-Uso não-comercial-Compartilhamento pela mesma licença 2.0 Brasil"@pt-br,
+        "Atribuição-Uso Não-Comercial-Partilha nos termos da mesma licença 2.0 Brasil"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.0 Brazilia"@ro,
+        "Attribution-NonCommercial-ShareAlike (Атрибуция — Некоммерческое использование — С сохранением условий) 2.0 Бразилия"@ru,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Deljenje pod enakimi pogoji 2.0 Brazilija"@sl,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@sq,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.0 Brazil"@sr,
+        "Ауторство-Некомерцијално-Делити под истим условима 2.0 Бразил"@sr,
+        "Autorstvo-Nekomercijalno-Deliti pod istim uslovima 2.0 Brazil"@sr-latn,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@st,
+        "Erkännande-IckeKommersiell-DelaLika 2.0 Brasilien"@sv,
+        "Attribution-NonCommercial-ShareAlike 2.0 பிரேசில்"@ta,
+        "Attribution-NonCommercial-ShareAlike 2.0 బ్రెజిల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน 2.0 บราซิล"@th,
+        "Attribution-Gayriticari-ShareAlike 2.0 Brezilya"@tr,
+        "Attribution-NonCommercial-ShareAlike 2.0 Бразилія"@uk,
+        "Attribution-NonCommercial-ShareAlike 2.0 Brazil"@ur,
+        "Attribution-NonCommercial-ShareAlike 2.0 Nước Brazil"@vi,
+        "署名-非商业性使用-相同方式共享 2.0 巴西"@zh,
+        "姓名標示-非商業性-相同方式分享 2.0 巴西"@zh-hk,
+        "姓名標示-非商業性-相同方式分享 2.0 巴西"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Yihlanganyeleni 2.0 iBrazil"@zu,
+        "${Attribution-NonCommercial-ShareAlike} 2.0 ${Brazil}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-sa/2.0/br/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-sa/2.0/br/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-sa/2.0/br/88x31.png> ;
+    li:id "CC-BY-NC-SA-2.0-br" ;
+    li:name "CC BY-NC-SA 2.0 BR" .
+

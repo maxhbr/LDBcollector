@@ -1,0 +1,852 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-za",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/za/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/za/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-2.0-za",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Suid-Afrika"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 جنوب إفريقيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 ПАР"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Южна Африка"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Sudàfrica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Jižní Afrika"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Sydafrika"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Südafrika"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 Südafrika"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 Südafrika"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Νότια Αφρική"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Sud-Afriko"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 Sudáfrica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 Sudáfrica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 Sudáfrica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 Suráfrica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 Sudáfrica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 Suráfrica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 Sudáfrica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 Suráfrica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 Suráfrica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 Suráfrica"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 Lõuna-Aafrika"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 Hegoafrika"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 آفریقای جنوبی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Etelä-Afrikka"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Afrique du Sud"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Afrique du Sud"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Afrique du Sud"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Afrique du Sud"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 Sudáfrica"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 דרום אפריקה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Južna Afrika"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 Dél-Afrika"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 Հարավային Աֆրիկա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 Afrika Selatan"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 Sud Africa"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 Sud Africa"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 南アフリカ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 სამხრეთ აფრიკა"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 South Africa"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 남아프리카 공화국"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Pietų Afrika"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Dienvidāfrika"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Јужна Африка"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 ദക്ഷിണാഫ്രിക്ക"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 Afrika Selatan"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 Zuid-Afrika"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 Sør-afrika"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 Afrika Borwa"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Południowa Afryka"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 África do Sul"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 South Africa"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 África do Sul"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 Africa de Sud"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 ЮАР"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Južnoafriška Republika"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Afrikë e Jugut"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Južna Afrika"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Јужна Африка"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Južna Afrika"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Sydafrika"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 దక్షిణ ఆఫ్రికా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 แอฟริกาใต้"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 South Africa"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 South Africa"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 南非"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 南非"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 南非"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 ENingizimu Afrika"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${South Africa}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/za/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/za/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/za/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Suid-Afrika"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 جنوب إفريقيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 ПАР"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Южна Африка"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Sudàfrica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Jižní Afrika"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Sydafrika"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Südafrika"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 Südafrika"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 Südafrika"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Νότια Αφρική"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Sud-Afriko"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 Sudáfrica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 Sudáfrica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 Sudáfrica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 Suráfrica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 Sudáfrica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 Suráfrica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 Sudáfrica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 Suráfrica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 Suráfrica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 Suráfrica"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 Lõuna-Aafrika"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 Hegoafrika"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 آفریقای جنوبی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Etelä-Afrikka"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Afrique du Sud"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Afrique du Sud"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Afrique du Sud"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Afrique du Sud"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 Sudáfrica"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 דרום אפריקה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Južna Afrika"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 Dél-Afrika"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 Հարավային Աֆրիկա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 Afrika Selatan"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 Sud Africa"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 Sud Africa"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 南アフリカ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 სამხრეთ აფრიკა"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 South Africa"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 남아프리카 공화국"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Pietų Afrika"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Dienvidāfrika"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Јужна Африка"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 ദക്ഷിണാഫ്രിക്ക"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 Afrika Selatan"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 Zuid-Afrika"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 Sør-afrika"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 Afrika Borwa"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Południowa Afryka"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 África do Sul"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 South Africa"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 África do Sul"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 Africa de Sud"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 ЮАР"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Južnoafriška Republika"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Afrikë e Jugut"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Južna Afrika"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Јужна Африка"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Južna Afrika"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Sydafrika"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 దక్షిణ ఆఫ్రికా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 แอฟริกาใต้"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 South Africa"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 South Africa"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 南非"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 南非"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 南非"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 ENingizimu Afrika"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${South Africa}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-za",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/za/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/za/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/za/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/za/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-za",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 ZA"
+}

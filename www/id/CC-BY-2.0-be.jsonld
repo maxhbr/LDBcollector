@@ -1,0 +1,863 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.0-be",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/be/",
+    "cc:legalcode": [
+        {
+            "@id": "http://creativecommons.org/licenses/by/2.0/be/legalcode.fr",
+            "dc:language": "fr"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by/2.0/be/legalcode.nl",
+            "dc:language": "nl"
+        }
+    ],
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.0 België"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.0 بلجيكا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.0 Бельгія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.0 Белгия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.0 Bèlgica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.0 Belgie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.0 Belgien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.0 Belgien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.0 Belgien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.0 Belgien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.0 Βέλγιο"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.0 Belgujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.0 Bélgica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.0 Bélgica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.0 Bélgica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.0 Bélgica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.0 Bélgica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.0 Bélgica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.0 Bélgica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.0 Bélgica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.0 Bélgica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.0 Bélgica"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.0 Belgia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.0 Belgika"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.0 بلژیک"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.0 Belgia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.0 Belgique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.0 Belgique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.0 Belgique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.0 Belgique"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.0 Bélxica"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.0 בלגיה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.0 बेलजियम"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.0 Belgija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.0 Belgium"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.0 Բելգիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.0 Belgia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.0 Belgía"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.0 Belgio"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.0 Belgio"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.0 ベルギー"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.0 ბელგია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.0 Belgium"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.0 벨기에"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.0 Belgija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.0 Beļģija"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.0 Белгија"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.0 ബെൽജിയം"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.0 Бельги"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.0 Belgium"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.0 België"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.0 Belgia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.0 Belgium"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.0 Belgia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.0 Bélgica"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.0 Bélgica"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.0 Bélgica"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.0 Belgia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.0 Бельгия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.0 Belgija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.0 Belgjikë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.0 Belgija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.0 Белгија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.0 Belgija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.0 Belgien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.0 பெல்ஜியம்"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.0 బెల్జియం"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.0 เบลเยียม"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.0 Belçika"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.0 Бельгія"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.0 Belgium"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.0 Nước Bỉ"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.0 比利时"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.0 比利時"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.0 比利時"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.0 eBelgium"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.0 ${Belgium}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.0/be/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/be/",
+        "cc:legalcode": [
+            "http://creativecommons.org/licenses/by/2.0/be/legalcode.fr",
+            "http://creativecommons.org/licenses/by/2.0/be/legalcode.nl"
+        ],
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.0 België"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.0 بلجيكا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.0 Бельгія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.0 Белгия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.0 Bèlgica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.0 Belgie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.0 Belgien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.0 Belgien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.0 Belgien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.0 Belgien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.0 Βέλγιο"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.0 Belgujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.0 Bélgica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.0 Bélgica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.0 Bélgica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.0 Bélgica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.0 Bélgica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.0 Bélgica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.0 Bélgica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.0 Bélgica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.0 Bélgica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.0 Bélgica"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.0 Belgia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.0 Belgika"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.0 بلژیک"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.0 Belgia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.0 Belgique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.0 Belgique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.0 Belgique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.0 Belgique"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.0 Bélxica"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.0 בלגיה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.0 बेलजियम"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.0 Belgija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.0 Belgium"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.0 Բելգիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.0 Belgia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.0 Belgía"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.0 Belgio"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.0 Belgio"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.0 ベルギー"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.0 ბელგია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.0 Belgium"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.0 벨기에"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.0 Belgija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.0 Beļģija"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.0 Белгија"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.0 ബെൽജിയം"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.0 Бельги"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.0 Belgium"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.0 België"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.0 Belgia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.0 Belgium"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.0 Belgia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.0 Bélgica"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.0 Bélgica"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.0 Bélgica"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.0 Belgia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.0 Бельгия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.0 Belgija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.0 Belgjikë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.0 Belgija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.0 Белгија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.0 Belgija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.0 Belgien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.0 பெல்ஜியம்"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.0 బెల్జియం"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.0 เบลเยียม"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.0 Belçika"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.0 Бельгія"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.0 Belgium"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.0 Nước Bỉ"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.0 比利时"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.0 比利時"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.0 比利時"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.0 eBelgium"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.0 ${Belgium}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.0-be",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.0/be/80x15.png",
+            "http://i.creativecommons.org/l/by/2.0/be/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.0/be/80x15.png",
+        "http://i.creativecommons.org/l/by/2.0/be/88x31.png"
+    ],
+    "li:id": "CC-BY-2.0-be",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.0 BE"
+}

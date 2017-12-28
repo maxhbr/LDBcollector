@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/ar/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ar/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/ar/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Argentinië"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 الأرجنتين"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Аргентына"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Аржентина"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Argentina"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Argentina"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Argentina"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Argentinien"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Argentinien"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Argentinien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Αργεντινή"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Argentino"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Argentina"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Argentina"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Argentina"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Argentina"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Argentina"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Argentiina"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Argentina"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 آرژانتین"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Argentiina"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Argentine"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Argentine"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Argentine"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Argentine"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Argentina"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 ארגנטינה"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Argentina"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Argentína"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Արգենտինա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Argentina"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Argentina"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Argentina"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 アルゼンチン"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 არგენტინა"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@kk,
+        "저작자표시-비영리-변경금지 2.5 Argentina"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Argentīna"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Аргентина"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 അർജന്റീന"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Argentina"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Argentinië"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Argentina"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Argentina"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Argentyna"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Argentina"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Argentina"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Argentina"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Argentina"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Аргентина"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Argentina"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argjentinë"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Argentina"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Аргентина"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Argentina"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Argentina"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 అర్జెంటీనా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 อาร์เจนตินา"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Arjantin"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Achentina"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 阿根廷"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 阿根廷"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 阿根廷"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 E-Argentina"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Argentina}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.5-ar> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/ar/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/ar/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.5-ar> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ar/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/ar/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Argentinië"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 الأرجنتين"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Аргентына"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Аржентина"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Argentina"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Argentina"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Argentina"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Argentinien"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Argentinien"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Argentinien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Αργεντινή"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Argentino"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Argentina"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Argentina"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Argentina"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Argentina"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Argentina"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Argentina"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Argentiina"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Argentina"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 آرژانتین"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Argentiina"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Argentine"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Argentine"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Argentine"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Argentine"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Argentina"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 ארגנטינה"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Argentina"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Argentína"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Արգենտինա"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Argentina"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Argentina"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Argentina"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 アルゼンチン"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 არგენტინა"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@kk,
+        "저작자표시-비영리-변경금지 2.5 Argentina"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Argentīna"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Аргентина"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 അർജന്റീന"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Argentina"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Argentinië"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Argentina"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Argentina"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Argentyna"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Argentina"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Argentina"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Argentina"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Argentina"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Аргентина"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Argentina"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argjentinë"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Argentina"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Аргентина"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Argentina"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Argentina"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 అర్జెంటీనా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 อาร์เจนตินา"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Arjantin"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Argentina"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Achentina"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 阿根廷"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 阿根廷"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 阿根廷"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 E-Argentina"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Argentina}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.5/ar/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/ar/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/ar/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.5-ar" ;
+    li:name "CC BY-NC-ND 2.5 AR" .
+

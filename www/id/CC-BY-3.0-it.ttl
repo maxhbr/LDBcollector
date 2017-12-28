@@ -1,0 +1,222 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/3.0/it/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/it/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/it/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Italië"@af,
+        "نسب المصنف  3.0 ايطاليا"@ar,
+        "Attribution 3.0 Italy"@as,
+        "Attribution 3.0 Italy"@ast,
+        "Attribution 3.0 Italy"@ast-es,
+        "Attribution 3.0 Italy"@az,
+        "Атрыбуцыя 3.0 Італія"@be,
+        "Признание 3.0 Италия"@bg,
+        "Attribution 3.0 Italy"@bn,
+        "Reconeixement 3.0 Itàlia"@ca,
+        "Uveďte autora 3.0 Itálie"@cs,
+        "Navngivelse 3.0 Italien"@da,
+        "Namensnennung 3.0 Italien"@de,
+        "Namensnennung 3.0 Italien"@de-at,
+        "Namensnennung 3.0 Italien"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Ιταλία"@el,
+        "Attribution 3.0 Italy"@en,
+        "Attribution 3.0 Italy"@en-ca,
+        "Attribution 3.0 Italy"@en-gb,
+        "Attribution 3.0 Italy"@en-hk,
+        "Attribution 3.0 Italy"@en-sg,
+        "Attribution 3.0 Italy"@en-us,
+        "Atribuite 3.0 Italujo"@eo,
+        "Atribución 3.0 Italia"@es,
+        "Atribución 3.0 Italia"@es-ar,
+        "Reconocimiento 3.0 Italia"@es-es,
+        "Reconocimiento 3.0 Italia"@es-pe,
+        "Autorile viitamine 3.0 Itaalia"@et,
+        "Aitortu 3.0 Italia"@eu,
+        "Attribution 3.0 ایتالیا"@fa,
+        "Nimeä 3.0 Italia"@fi,
+        "Attribution 3.0 Italie"@fr,
+        "Paternité 3.0 Italie"@fr-ca,
+        "Paternité 3.0 Italie"@fr-ch,
+        "Paternité 3.0 Italie"@fr-lu,
+        "Attribution 3.0 Italy"@ga,
+        "Recoñecemento 3.0 Italia"@gl,
+        "ייחוס 3.0 איטליה"@he,
+        "Attribution 3.0 इटली"@hi,
+        "Imenovanje 3.0 Italija"@hr,
+        "Nevezd meg! 3.0 Olaszország"@hu,
+        "Հղում 3.0 Իտալիա"@hy,
+        "Atribusi 3.0 Italia"@id,
+        "Attribution 3.0 Ítalía"@is,
+        "Attribuzione 3.0 Italia"@it,
+        "Attribuzione 3.0 Italia"@it-ch,
+        "表示 3.0 イタリア"@ja,
+        "ავტორობის მითითებით  3.0 იტალია"@ka,
+        "Атауын сақтау 3.0 Italy"@kk,
+        "저작자표시(Attribution) 3.0 이탈리아"@ko,
+        "Priskyrimas 3.0 Italija"@lt,
+        "Atsaucoties 3.0 Itāļu"@lv,
+        "Наведи извор 3.0 Италија"@mk,
+        "കടപ്പാട് 3.0 ഇറ്റലി"@ml,
+        "Attribution 3.0 Итали"@mn,
+        "Pengiktirafan 3.0 Itali"@ms,
+        "Naamsvermelding 3.0 Italië"@nl,
+        "Navngivelse 3.0 Italia"@no,
+        "Tsebagatšo 3.0 Italia"@nso,
+        "Attribution 3.0 Italy"@oci-es,
+        "Uznanie autorstwa 3.0 Włochy"@pl,
+        "Atribuição  3.0 Itália"@pt,
+        "Atribuição 3.0 Italy"@pt-br,
+        "Atribuição 3.0 Itália"@pt-pt,
+        "Atribuire 3.0 Italia"@ro,
+        "Attribution (Атрибуция) 3.0 Италия"@ru,
+        "Attribution 3.0 Italy"@si-lk,
+        "Priznanje avtorstva 3.0 Italija"@sl,
+        "Attribution 3.0 Itali"@sq,
+        "Autorstvo 3.0 Italija"@sr,
+        "Ауторство 3.0 Италија"@sr,
+        "Autorstvo 3.0 Italija"@sr-latn,
+        "Erkännande 3.0 Italien"@sv,
+        "Attribution 3.0 இத்தாலி"@ta,
+        "ఆపాదింపు 3.0 ఇటలీ"@te,
+        "แสดงที่มา 3.0 อิตาลี"@th,
+        "Attribution 3.0 İtalya"@tr,
+        "Attribution 3.0 Italy"@uk,
+        "Attribution 3.0 Italy"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Italy"@vi,
+        "署名 3.0 意大利"@zh,
+        "姓名標示 3.0 義大利"@zh-hk,
+        "姓名標示 3.0 義大利"@zh-tw,
+        "Qaphela Umnikazi 3.0 i-Italy"@zu,
+        "${Attribution} 3.0 ${Italy}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-3.0-it> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/it/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/it/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-3.0-it> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/it/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/it/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Italië"@af,
+        "نسب المصنف  3.0 ايطاليا"@ar,
+        "Attribution 3.0 Italy"@as,
+        "Attribution 3.0 Italy"@ast,
+        "Attribution 3.0 Italy"@ast-es,
+        "Attribution 3.0 Italy"@az,
+        "Атрыбуцыя 3.0 Італія"@be,
+        "Признание 3.0 Италия"@bg,
+        "Attribution 3.0 Italy"@bn,
+        "Reconeixement 3.0 Itàlia"@ca,
+        "Uveďte autora 3.0 Itálie"@cs,
+        "Navngivelse 3.0 Italien"@da,
+        "Namensnennung 3.0 Italien"@de,
+        "Namensnennung 3.0 Italien"@de-at,
+        "Namensnennung 3.0 Italien"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Ιταλία"@el,
+        "Attribution 3.0 Italy"@en,
+        "Attribution 3.0 Italy"@en-ca,
+        "Attribution 3.0 Italy"@en-gb,
+        "Attribution 3.0 Italy"@en-hk,
+        "Attribution 3.0 Italy"@en-sg,
+        "Attribution 3.0 Italy"@en-us,
+        "Atribuite 3.0 Italujo"@eo,
+        "Atribución 3.0 Italia"@es,
+        "Atribución 3.0 Italia"@es-ar,
+        "Reconocimiento 3.0 Italia"@es-es,
+        "Reconocimiento 3.0 Italia"@es-pe,
+        "Autorile viitamine 3.0 Itaalia"@et,
+        "Aitortu 3.0 Italia"@eu,
+        "Attribution 3.0 ایتالیا"@fa,
+        "Nimeä 3.0 Italia"@fi,
+        "Attribution 3.0 Italie"@fr,
+        "Paternité 3.0 Italie"@fr-ca,
+        "Paternité 3.0 Italie"@fr-ch,
+        "Paternité 3.0 Italie"@fr-lu,
+        "Attribution 3.0 Italy"@ga,
+        "Recoñecemento 3.0 Italia"@gl,
+        "ייחוס 3.0 איטליה"@he,
+        "Attribution 3.0 इटली"@hi,
+        "Imenovanje 3.0 Italija"@hr,
+        "Nevezd meg! 3.0 Olaszország"@hu,
+        "Հղում 3.0 Իտալիա"@hy,
+        "Atribusi 3.0 Italia"@id,
+        "Attribution 3.0 Ítalía"@is,
+        "Attribuzione 3.0 Italia"@it,
+        "Attribuzione 3.0 Italia"@it-ch,
+        "表示 3.0 イタリア"@ja,
+        "ავტორობის მითითებით  3.0 იტალია"@ka,
+        "Атауын сақтау 3.0 Italy"@kk,
+        "저작자표시(Attribution) 3.0 이탈리아"@ko,
+        "Priskyrimas 3.0 Italija"@lt,
+        "Atsaucoties 3.0 Itāļu"@lv,
+        "Наведи извор 3.0 Италија"@mk,
+        "കടപ്പാട് 3.0 ഇറ്റലി"@ml,
+        "Attribution 3.0 Итали"@mn,
+        "Pengiktirafan 3.0 Itali"@ms,
+        "Naamsvermelding 3.0 Italië"@nl,
+        "Navngivelse 3.0 Italia"@no,
+        "Tsebagatšo 3.0 Italia"@nso,
+        "Attribution 3.0 Italy"@oci-es,
+        "Uznanie autorstwa 3.0 Włochy"@pl,
+        "Atribuição  3.0 Itália"@pt,
+        "Atribuição 3.0 Italy"@pt-br,
+        "Atribuição 3.0 Itália"@pt-pt,
+        "Atribuire 3.0 Italia"@ro,
+        "Attribution (Атрибуция) 3.0 Италия"@ru,
+        "Attribution 3.0 Italy"@si-lk,
+        "Priznanje avtorstva 3.0 Italija"@sl,
+        "Attribution 3.0 Itali"@sq,
+        "Autorstvo 3.0 Italija"@sr,
+        "Ауторство 3.0 Италија"@sr,
+        "Autorstvo 3.0 Italija"@sr-latn,
+        "Erkännande 3.0 Italien"@sv,
+        "Attribution 3.0 இத்தாலி"@ta,
+        "ఆపాదింపు 3.0 ఇటలీ"@te,
+        "แสดงที่มา 3.0 อิตาลี"@th,
+        "Attribution 3.0 İtalya"@tr,
+        "Attribution 3.0 Italy"@uk,
+        "Attribution 3.0 Italy"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Italy"@vi,
+        "署名 3.0 意大利"@zh,
+        "姓名標示 3.0 義大利"@zh-hk,
+        "姓名標示 3.0 義大利"@zh-tw,
+        "Qaphela Umnikazi 3.0 i-Italy"@zu,
+        "${Attribution} 3.0 ${Italy}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/3.0/it/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/it/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/it/88x31.png> ;
+    li:id "CC-BY-3.0-it" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 3.0 IT" .
+

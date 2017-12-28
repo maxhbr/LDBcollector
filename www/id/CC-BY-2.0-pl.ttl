@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.0/pl/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/pl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by/2.5/pl/> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Pole"@af,
+        "نسب المصنف  2.0 بولندا"@ar,
+        "Attribution 2.0 Poland"@as,
+        "Attribution 2.0 Poland"@ast,
+        "Attribution 2.0 Poland"@ast-es,
+        "Attribution 2.0 Poland"@az,
+        "Атрыбуцыя 2.0 Польшча"@be,
+        "Признание 2.0 Полша"@bg,
+        "Attribution 2.0 Poland"@bn,
+        "Reconeixement 2.0 Polònia"@ca,
+        "Uveďte autora 2.0 Polsko"@cs,
+        "Navngivelse 2.0 Polen"@da,
+        "Namensnennung 2.0 Polen"@de,
+        "Namensnennung 2.0 Polen"@de-at,
+        "Namensnennung 2.0 Polen"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Πολωνία"@el,
+        "Attribution 2.0 Poland"@en,
+        "Attribution 2.0 Poland"@en-ca,
+        "Attribution 2.0 Poland"@en-gb,
+        "Attribution 2.0 Poland"@en-hk,
+        "Attribution 2.0 Poland"@en-sg,
+        "Attribution 2.0 Poland"@en-us,
+        "Atribuite 2.0 Polujo"@eo,
+        "Atribución 2.0 Polonia"@es,
+        "Atribución 2.0 Polonia"@es-ar,
+        "Atribución 2.0 Polonia"@es-cl,
+        "Reconocimiento 2.0 Polonia"@es-co,
+        "Reconocimiento 2.0 Polonia"@es-ec,
+        "Reconocimiento 2.0 Polonia"@es-es,
+        "Reconocimiento 2.0 Polonia"@es-gt,
+        "Atribución 2.0 Polonia"@es-mx,
+        "Reconocimiento 2.0 Polonia"@es-pe,
+        "Reconocimiento 2.0 Polonia"@es-pr,
+        "Autorile viitamine 2.0 Poola"@et,
+        "Aitortu 2.0 Polonia"@eu,
+        "Attribution 2.0 لهستان"@fa,
+        "Nimeä 2.0 Puola"@fi,
+        "Attribution 2.0 Pologne"@fr,
+        "Paternité 2.0 Pologne"@fr-ca,
+        "Paternité 2.0 Pologne"@fr-ch,
+        "Paternité 2.0 Pologne"@fr-lu,
+        "Attribution 2.0 Poland"@ga,
+        "Recoñecemento 2.0 Polonia"@gl,
+        "ייחוס 2.0 פולין"@he,
+        "Attribution 2.0 पोलैंड"@hi,
+        "Imenovanje 2.0 Poljska"@hr,
+        "Nevezd meg! 2.0 Lengyelország"@hu,
+        "Հղում 2.0 Լեհաստան"@hy,
+        "Atribusi 2.0 Polandia"@id,
+        "Attribution 2.0 Pólland"@is,
+        "Attribuzione 2.0 Polonia"@it,
+        "Attribuzione 2.0 Polonia"@it-ch,
+        "表示 2.0 ポーランド"@ja,
+        "ავტორობის მითითებით  2.0 პოლონეთი"@ka,
+        "Атауын сақтау 2.0 Poland"@kk,
+        "저작자표시(Attribution) 2.0 폴란드"@ko,
+        "Priskyrimas 2.0 Lenkija"@lt,
+        "Atsaucoties 2.0 Polija"@lv,
+        "Наведи извор 2.0 Полска"@mk,
+        "കടപ്പാട് 2.0 പോളണ്ട്"@ml,
+        "Attribution 2.0 Польш"@mn,
+        "Pengiktirafan 2.0 Poland"@ms,
+        "Naamsvermelding 2.0 Polen"@nl,
+        "Navngivelse 2.0 Polen"@no,
+        "Tsebagatšo 2.0 Poland"@nso,
+        "Attribution 2.0 Poland"@oci-es,
+        "Uznanie autorstwa 2.0 Polska"@pl,
+        "Atribuição  2.0 Polónia"@pt,
+        "Atribuição 2.0 Poland"@pt-br,
+        "Atribuição 2.0 Polonia"@pt-pt,
+        "Atribuire 2.0 Polonia"@ro,
+        "Attribution (Атрибуция) 2.0 Польша"@ru,
+        "Attribution 2.0 Poland"@si-lk,
+        "Priznanje avtorstva 2.0 Poljska"@sl,
+        "Attribution 2.0 Poloni"@sq,
+        "Autorstvo 2.0 Poljska"@sr,
+        "Ауторство 2.0 Пољска"@sr,
+        "Autorstvo 2.0 Poljska"@sr-latn,
+        "Attribution 2.0 Poland"@st,
+        "Erkännande 2.0 Polen"@sv,
+        "Attribution 2.0 போலாந்து"@ta,
+        "ఆపాదింపు 2.0 పోలాండ్"@te,
+        "แสดงที่มา 2.0 โปแลนด์"@th,
+        "Attribution 2.0 Polonya"@tr,
+        "Attribution 2.0 Poland"@uk,
+        "Attribution 2.0 Poland"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Phần Lan"@vi,
+        "署名 2.0 波兰"@zh,
+        "姓名標示 2.0 波蘭"@zh-hk,
+        "姓名標示 2.0 波蘭"@zh-tw,
+        "Qaphela Umnikazi 2.0 EPoland"@zu,
+        "${Attribution} 2.0 ${Poland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.0-pl> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/pl/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/pl/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.0-pl> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/pl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/pl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-2.5-pl> ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 Pole"@af,
+        "نسب المصنف  2.0 بولندا"@ar,
+        "Attribution 2.0 Poland"@as,
+        "Attribution 2.0 Poland"@ast,
+        "Attribution 2.0 Poland"@ast-es,
+        "Attribution 2.0 Poland"@az,
+        "Атрыбуцыя 2.0 Польшча"@be,
+        "Признание 2.0 Полша"@bg,
+        "Attribution 2.0 Poland"@bn,
+        "Reconeixement 2.0 Polònia"@ca,
+        "Uveďte autora 2.0 Polsko"@cs,
+        "Navngivelse 2.0 Polen"@da,
+        "Namensnennung 2.0 Polen"@de,
+        "Namensnennung 2.0 Polen"@de-at,
+        "Namensnennung 2.0 Polen"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Πολωνία"@el,
+        "Attribution 2.0 Poland"@en,
+        "Attribution 2.0 Poland"@en-ca,
+        "Attribution 2.0 Poland"@en-gb,
+        "Attribution 2.0 Poland"@en-hk,
+        "Attribution 2.0 Poland"@en-sg,
+        "Attribution 2.0 Poland"@en-us,
+        "Atribuite 2.0 Polujo"@eo,
+        "Atribución 2.0 Polonia"@es,
+        "Atribución 2.0 Polonia"@es-ar,
+        "Atribución 2.0 Polonia"@es-cl,
+        "Reconocimiento 2.0 Polonia"@es-co,
+        "Reconocimiento 2.0 Polonia"@es-ec,
+        "Reconocimiento 2.0 Polonia"@es-es,
+        "Reconocimiento 2.0 Polonia"@es-gt,
+        "Atribución 2.0 Polonia"@es-mx,
+        "Reconocimiento 2.0 Polonia"@es-pe,
+        "Reconocimiento 2.0 Polonia"@es-pr,
+        "Autorile viitamine 2.0 Poola"@et,
+        "Aitortu 2.0 Polonia"@eu,
+        "Attribution 2.0 لهستان"@fa,
+        "Nimeä 2.0 Puola"@fi,
+        "Attribution 2.0 Pologne"@fr,
+        "Paternité 2.0 Pologne"@fr-ca,
+        "Paternité 2.0 Pologne"@fr-ch,
+        "Paternité 2.0 Pologne"@fr-lu,
+        "Attribution 2.0 Poland"@ga,
+        "Recoñecemento 2.0 Polonia"@gl,
+        "ייחוס 2.0 פולין"@he,
+        "Attribution 2.0 पोलैंड"@hi,
+        "Imenovanje 2.0 Poljska"@hr,
+        "Nevezd meg! 2.0 Lengyelország"@hu,
+        "Հղում 2.0 Լեհաստան"@hy,
+        "Atribusi 2.0 Polandia"@id,
+        "Attribution 2.0 Pólland"@is,
+        "Attribuzione 2.0 Polonia"@it,
+        "Attribuzione 2.0 Polonia"@it-ch,
+        "表示 2.0 ポーランド"@ja,
+        "ავტორობის მითითებით  2.0 პოლონეთი"@ka,
+        "Атауын сақтау 2.0 Poland"@kk,
+        "저작자표시(Attribution) 2.0 폴란드"@ko,
+        "Priskyrimas 2.0 Lenkija"@lt,
+        "Atsaucoties 2.0 Polija"@lv,
+        "Наведи извор 2.0 Полска"@mk,
+        "കടപ്പാട് 2.0 പോളണ്ട്"@ml,
+        "Attribution 2.0 Польш"@mn,
+        "Pengiktirafan 2.0 Poland"@ms,
+        "Naamsvermelding 2.0 Polen"@nl,
+        "Navngivelse 2.0 Polen"@no,
+        "Tsebagatšo 2.0 Poland"@nso,
+        "Attribution 2.0 Poland"@oci-es,
+        "Uznanie autorstwa 2.0 Polska"@pl,
+        "Atribuição  2.0 Polónia"@pt,
+        "Atribuição 2.0 Poland"@pt-br,
+        "Atribuição 2.0 Polonia"@pt-pt,
+        "Atribuire 2.0 Polonia"@ro,
+        "Attribution (Атрибуция) 2.0 Польша"@ru,
+        "Attribution 2.0 Poland"@si-lk,
+        "Priznanje avtorstva 2.0 Poljska"@sl,
+        "Attribution 2.0 Poloni"@sq,
+        "Autorstvo 2.0 Poljska"@sr,
+        "Ауторство 2.0 Пољска"@sr,
+        "Autorstvo 2.0 Poljska"@sr-latn,
+        "Attribution 2.0 Poland"@st,
+        "Erkännande 2.0 Polen"@sv,
+        "Attribution 2.0 போலாந்து"@ta,
+        "ఆపాదింపు 2.0 పోలాండ్"@te,
+        "แสดงที่มา 2.0 โปแลนด์"@th,
+        "Attribution 2.0 Polonya"@tr,
+        "Attribution 2.0 Poland"@uk,
+        "Attribution 2.0 Poland"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Phần Lan"@vi,
+        "署名 2.0 波兰"@zh,
+        "姓名標示 2.0 波蘭"@zh-hk,
+        "姓名標示 2.0 波蘭"@zh-tw,
+        "Qaphela Umnikazi 2.0 EPoland"@zu,
+        "${Attribution} 2.0 ${Poland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.0/pl/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/pl/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/pl/88x31.png> ;
+    li:id "CC-BY-2.0-pl" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.0 PL" .
+

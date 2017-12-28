@@ -1,0 +1,224 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/3.0/fr/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/fr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/3.0/fr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 3.0 Frankryk"@af,
+        "نسب العمل- المشاركة على قدم المساواة 3.0 فرنسا"@ar,
+        "Attribution-ShareAlike 3.0 France"@as,
+        "Attribution-ShareAlike 3.0 France"@ast,
+        "Attribution-ShareAlike 3.0 France"@ast-es,
+        "Attribution-ShareAlike 3.0 France"@az,
+        "Attribution-ShareAlike 3.0 Францыя"@be,
+        "Признание-Споделяне на споделеното 3.0 Франция"@bg,
+        "Attribution-ShareAlike 3.0 France"@bn,
+        "Reconeixement-CompartirIgual 3.0 França"@ca,
+        "Uveďte autora-Zachovejte licenci 3.0 Francie"@cs,
+        "Navngivelse-DelPåSammeVilkår 3.0 Frankrig"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Frankreich"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Frankreich"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Frankreich"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 3.0 Γαλλία"@el,
+        "Attribution-ShareAlike 3.0 France"@en,
+        "Attribution-ShareAlike 3.0 France"@en-ca,
+        "Attribution-ShareAlike 3.0 France"@en-gb,
+        "Attribution-ShareAlike 3.0 France"@en-hk,
+        "Attribution-ShareAlike 3.0 France"@en-sg,
+        "Attribution-ShareAlike 3.0 France"@en-us,
+        "Atribuite-Samkondiĉe 3.0 Francujo"@eo,
+        "Atribución-CompartirIgual 3.0 Francia"@es,
+        "Atribución-CompartirDerivadasIgual 3.0 Francia"@es-ar,
+        "Reconocimiento-CompartirIgual 3.0 Francia"@es-es,
+        "Reconocimiento-CompartirIgual 3.0 Francia"@es-pe,
+        "Autorile viitamine + Jagamine samadel tingimustel 3.0 Prantsusmaa"@et,
+        "Aitortu-PartekatuBerdin 3.0 Frantzia"@eu,
+        "Attribution-ShareAlike 3.0 فرانسه"@fa,
+        "Nimeä-Tarttuva 3.0 Ranska"@fi,
+        "Paternité - Partage à l'Identique 3.0 France"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 France"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 France"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0  France"@fr-lu,
+        "Attribution-ShareAlike 3.0 France"@ga,
+        "Recoñecemento-CompartirIgual 3.0 Francia"@gl,
+        "ייחוס-שיתוף זהה 3.0 צרפת"@he,
+        "Attribution-ShareAlike 3.0 France"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 3.0 Francuska"@hr,
+        "Nevezd meg! - Így add tovább! 3.0 Franciaország"@hu,
+        "Հղում - համանման տարածում 3.0 Ֆրանսիա"@hy,
+        "Atribusi-BerbagiSerupa 3.0 Perancis"@id,
+        "Attribution-ShareAlike 3.0 France"@is,
+        "Attribuzione - Condividi allo stesso modo 3.0 Francia"@it,
+        "Attribuzione - Condividi allo stesso modo 3.0 Francia"@it-ch,
+        "表示 - 継承 3.0 フランス"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  3.0 საფრანგეთი"@ka,
+        "Attribution-ShareAlike 3.0 France"@kk,
+        "저작자표시-동일조건변경허락 3.0 프랑스"@ko,
+        "Attribution-ShareAlike 3.0 Prancūzija"@lt,
+        "Atsaucoties-Nemainot licenci 3.0 Francija"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 3.0 Франција"@mk,
+        "Attribution-ShareAlike 3.0 ഫ്രാൻസ്"@ml,
+        "Attribution-ShareAlike 3.0 France"@mn,
+        "Pengiktirafan-PerkongsianSerupa 3.0 Perancis"@ms,
+        "Naamsvermelding-GelijkDelen 3.0 Frankrijk"@nl,
+        "Navngivelse-DelPåSammeVilkår 3.0 Frankrike"@no,
+        "Tsebagatšo -Mohlakanelwa 3.0 Fora"@nso,
+        "Attribution-ShareAlike 3.0 France"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 3.0 Francja"@pl,
+        "Atribuição - CompartilhaIgual 3.0 França"@pt,
+        "Attribution-ShareAlike 3.0 France"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 3.0 França"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 3.0 Franţa"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 3.0 Франция"@ru,
+        "Attribution-ShareAlike 3.0 ප්‍රංශ"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 3.0 Francija"@sl,
+        "Attribution-ShareAlike 3.0 Francë"@sq,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Francuska"@sr,
+        "Ауторство-Делити под истим условима 3.0 Француска"@sr,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Francuska"@sr-latn,
+        "Erkännande-DelaLika 3.0 Frankrike"@sv,
+        "Attribution-ShareAlike 3.0 France"@ta,
+        "Attribution-ShareAlike 3.0 ఫ్రాన్స్"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 3.0 ฝรั่งเศส"@th,
+        "Alıntı-LisansıDevamEttirme 3.0 Fransa"@tr,
+        "Attribution-ShareAlike 3.0 France"@uk,
+        "Attribution-ShareAlike 3.0 France"@ur,
+        "Attribution-ShareAlike 3.0 France"@vi,
+        "署名-相同方式共享 3.0 法国"@zh,
+        "姓名標示-相同方式分享 3.0 法國"@zh-hk,
+        "姓名標示-相同方式分享 3.0 法國"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 3.0 EFrance"@zu,
+        "${Attribution-ShareAlike} 3.0 ${France}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-3.0-fr> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/3.0/fr/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/3.0/fr/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-3.0-fr> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/fr/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/3.0/fr/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 3.0 Frankryk"@af,
+        "نسب العمل- المشاركة على قدم المساواة 3.0 فرنسا"@ar,
+        "Attribution-ShareAlike 3.0 France"@as,
+        "Attribution-ShareAlike 3.0 France"@ast,
+        "Attribution-ShareAlike 3.0 France"@ast-es,
+        "Attribution-ShareAlike 3.0 France"@az,
+        "Attribution-ShareAlike 3.0 Францыя"@be,
+        "Признание-Споделяне на споделеното 3.0 Франция"@bg,
+        "Attribution-ShareAlike 3.0 France"@bn,
+        "Reconeixement-CompartirIgual 3.0 França"@ca,
+        "Uveďte autora-Zachovejte licenci 3.0 Francie"@cs,
+        "Navngivelse-DelPåSammeVilkår 3.0 Frankrig"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Frankreich"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Frankreich"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Frankreich"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 3.0 Γαλλία"@el,
+        "Attribution-ShareAlike 3.0 France"@en,
+        "Attribution-ShareAlike 3.0 France"@en-ca,
+        "Attribution-ShareAlike 3.0 France"@en-gb,
+        "Attribution-ShareAlike 3.0 France"@en-hk,
+        "Attribution-ShareAlike 3.0 France"@en-sg,
+        "Attribution-ShareAlike 3.0 France"@en-us,
+        "Atribuite-Samkondiĉe 3.0 Francujo"@eo,
+        "Atribución-CompartirIgual 3.0 Francia"@es,
+        "Atribución-CompartirDerivadasIgual 3.0 Francia"@es-ar,
+        "Reconocimiento-CompartirIgual 3.0 Francia"@es-es,
+        "Reconocimiento-CompartirIgual 3.0 Francia"@es-pe,
+        "Autorile viitamine + Jagamine samadel tingimustel 3.0 Prantsusmaa"@et,
+        "Aitortu-PartekatuBerdin 3.0 Frantzia"@eu,
+        "Attribution-ShareAlike 3.0 فرانسه"@fa,
+        "Nimeä-Tarttuva 3.0 Ranska"@fi,
+        "Paternité - Partage à l'Identique 3.0 France"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 France"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 France"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0  France"@fr-lu,
+        "Attribution-ShareAlike 3.0 France"@ga,
+        "Recoñecemento-CompartirIgual 3.0 Francia"@gl,
+        "ייחוס-שיתוף זהה 3.0 צרפת"@he,
+        "Attribution-ShareAlike 3.0 France"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 3.0 Francuska"@hr,
+        "Nevezd meg! - Így add tovább! 3.0 Franciaország"@hu,
+        "Հղում - համանման տարածում 3.0 Ֆրանսիա"@hy,
+        "Atribusi-BerbagiSerupa 3.0 Perancis"@id,
+        "Attribution-ShareAlike 3.0 France"@is,
+        "Attribuzione - Condividi allo stesso modo 3.0 Francia"@it,
+        "Attribuzione - Condividi allo stesso modo 3.0 Francia"@it-ch,
+        "表示 - 継承 3.0 フランス"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  3.0 საფრანგეთი"@ka,
+        "Attribution-ShareAlike 3.0 France"@kk,
+        "저작자표시-동일조건변경허락 3.0 프랑스"@ko,
+        "Attribution-ShareAlike 3.0 Prancūzija"@lt,
+        "Atsaucoties-Nemainot licenci 3.0 Francija"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 3.0 Франција"@mk,
+        "Attribution-ShareAlike 3.0 ഫ്രാൻസ്"@ml,
+        "Attribution-ShareAlike 3.0 France"@mn,
+        "Pengiktirafan-PerkongsianSerupa 3.0 Perancis"@ms,
+        "Naamsvermelding-GelijkDelen 3.0 Frankrijk"@nl,
+        "Navngivelse-DelPåSammeVilkår 3.0 Frankrike"@no,
+        "Tsebagatšo -Mohlakanelwa 3.0 Fora"@nso,
+        "Attribution-ShareAlike 3.0 France"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 3.0 Francja"@pl,
+        "Atribuição - CompartilhaIgual 3.0 França"@pt,
+        "Attribution-ShareAlike 3.0 France"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 3.0 França"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 3.0 Franţa"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 3.0 Франция"@ru,
+        "Attribution-ShareAlike 3.0 ප්‍රංශ"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 3.0 Francija"@sl,
+        "Attribution-ShareAlike 3.0 Francë"@sq,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Francuska"@sr,
+        "Ауторство-Делити под истим условима 3.0 Француска"@sr,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Francuska"@sr-latn,
+        "Erkännande-DelaLika 3.0 Frankrike"@sv,
+        "Attribution-ShareAlike 3.0 France"@ta,
+        "Attribution-ShareAlike 3.0 ఫ్రాన్స్"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 3.0 ฝรั่งเศส"@th,
+        "Alıntı-LisansıDevamEttirme 3.0 Fransa"@tr,
+        "Attribution-ShareAlike 3.0 France"@uk,
+        "Attribution-ShareAlike 3.0 France"@ur,
+        "Attribution-ShareAlike 3.0 France"@vi,
+        "署名-相同方式共享 3.0 法国"@zh,
+        "姓名標示-相同方式分享 3.0 法國"@zh-hk,
+        "姓名標示-相同方式分享 3.0 法國"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 3.0 EFrance"@zu,
+        "${Attribution-ShareAlike} 3.0 ${France}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/3.0/fr/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/3.0/fr/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/3.0/fr/88x31.png> ;
+    li:id "CC-BY-SA-3.0-fr" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY-SA 3.0 FR" .
+

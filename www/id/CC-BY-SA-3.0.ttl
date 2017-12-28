@@ -1,0 +1,243 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/3.0/> a cc:License ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/3.0/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-sa" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-sa/4.0/> ;
+    dc:title "Erkenning-InsgelyksDeel 3.0 Unported"@af,
+        "نسب العمل- المشاركة على قدم المساواة 3.0 الاصلية"@ar,
+        "Attribution-ShareAlike 3.0 Unported"@as,
+        "Attribution-ShareAlike 3.0 Unported"@ast,
+        "Attribution-ShareAlike 3.0 Unported"@ast-es,
+        "Attribution-ShareAlike 3.0 Unported"@az,
+        "Attribution-ShareAlike 3.0 Unported"@be,
+        "Признание-Споделяне на споделеното 3.0 Нелокализиран"@bg,
+        "Attribution-ShareAlike 3.0 Unported"@bn,
+        "Reconeixement-CompartirIgual 3.0 No adaptada"@ca,
+        "Uveďte autora-Zachovejte licenci 3.0 Unported"@cs,
+        "Navngivelse-DelPåSammeVilkår 3.0 Unported"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Unported"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Unported"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Unported"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 3.0 Μη εισαγόμενο"@el,
+        "Attribution-ShareAlike 3.0 Unported"@en,
+        "Attribution-ShareAlike 3.0 Unported"@en-ca,
+        "Attribution-ShareAlike 3.0 Unported"@en-gb,
+        "Attribution-ShareAlike 3.0 Unported"@en-hk,
+        "Attribution-ShareAlike 3.0 Unported"@en-sg,
+        "Attribution-ShareAlike 3.0 Unported"@en-us,
+        "Atribuite-Samkondiĉe 3.0 Neadaptita"@eo,
+        "Atribución-CompartirIgual 3.0 Unported"@es,
+        "Atribución-CompartirDerivadasIgual 3.0 Unported"@es-ar,
+        "Atribución-LicenciarIgual 3.0 Unported"@es-cl,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-co,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-ec,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-es,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-gt,
+        "Atribución-Licenciamiento Recíproco 3.0 Unported"@es-mx,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-pe,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 3.0 Jurisdiktsiooniga sidumata"@et,
+        "Aitortu-PartekatuBerdin 3.0 Unported"@eu,
+        "Attribution-ShareAlike 3.0 Unported"@fa,
+        "Nimeä-Tarttuva 3.0 Muokkaamaton"@fi,
+        "Paternité - Partage à l'Identique 3.0 non transposé"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Unported"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Unported"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Unported"@fr-lu,
+        "Attribution-ShareAlike 3.0 Unported"@ga,
+        "Recoñecemento-CompartirIgual 3.0 Unported"@gl,
+        "ייחוס-שיתוף זהה 3.0 לא מותאם"@he,
+        "Attribution-ShareAlike 3.0 Unported"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 3.0 neloklizirana licenca"@hr,
+        "Nevezd meg! - Így add tovább! 3.0 Unported"@hu,
+        "Հղում - համանման տարածում 3.0 Չտեղայնացված"@hy,
+        "Atribusi-BerbagiSerupa 3.0 Unported"@id,
+        "Attribution-ShareAlike 3.0 Unported"@is,
+        "Attribuzione - Condividi allo stesso modo 3.0 Unported"@it,
+        "Attribuzione - Condividi allo stesso modo 3.0 Unported"@it-ch,
+        "表示 - 継承 3.0 非移植"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  3.0 არაპორტირებული"@ka,
+        "Attribution-ShareAlike 3.0 Unported"@kk,
+        "저작자표시-동일조건변경허락 3.0 Unported"@ko,
+        "Attribution-ShareAlike 3.0 Unported"@lt,
+        "Atsaucoties-Nemainot licenci 3.0 Nepārnesta"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 3.0 Unported"@mk,
+        "Attribution-ShareAlike 3.0 Unported"@ml,
+        "Attribution-ShareAlike 3.0 Unported"@mn,
+        "Pengiktirafan-PerkongsianSerupa 3.0 Unported"@ms,
+        "Naamsvermelding-GelijkDelen 3.0 Unported"@nl,
+        "Navngivelse-DelPåSammeVilkår 3.0 Unported"@no,
+        "Tsebagatšo -Mohlakanelwa 3.0 Unported"@nso,
+        "Attribution-ShareAlike 3.0 Unported"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 3.0 Unported"@pl,
+        "Atribuição - CompartilhaIgual 3.0 Não Adaptada"@pt,
+        "Attribution-ShareAlike 3.0 Unported"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 3.0 Unported"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 3.0 Ne-adaptată"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 3.0 Непортированная"@ru,
+        "Attribution-ShareAlike 3.0 Unported"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 3.0 Nedoločena"@sl,
+        "Attribution-ShareAlike 3.0 Unported"@sq,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Unported"@sr,
+        "Ауторство-Делити под истим условима 3.0 Unported"@sr,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Unported"@sr-latn,
+        "Attribution-ShareAlike 3.0 Unported"@st,
+        "Erkännande-DelaLika 3.0 Unported"@sv,
+        "Attribution-ShareAlike 3.0 Unported"@ta,
+        "Attribution-ShareAlike 3.0 Unported"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 3.0 ต้นฉบับ"@th,
+        "Alıntı-LisansıDevamEttirme 3.0 Unported"@tr,
+        "Attribution-ShareAlike 3.0 Unported"@uk,
+        "Attribution-ShareAlike 3.0 Unported"@ur,
+        "Attribution-ShareAlike 3.0 Unported"@vi,
+        "署名-相同方式共享 3.0 Unported"@zh,
+        "姓名標示-相同方式分享 3.0 Unported"@zh-hk,
+        "姓名標示-相同方式分享 3.0 Unported"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 3.0 Unported"@zu,
+        "${Attribution-ShareAlike} 3.0 ${Unported}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-3.0> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/3.0/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/3.0/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-3.0> a cc:License,
+        li:License ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/3.0/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-sa" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-SA-4.0> ;
+    dc:replaces <https://licensedb.org/id/CC-BY-SA-2.5> ;
+    dc:title "Erkenning-InsgelyksDeel 3.0 Unported"@af,
+        "نسب العمل- المشاركة على قدم المساواة 3.0 الاصلية"@ar,
+        "Attribution-ShareAlike 3.0 Unported"@as,
+        "Attribution-ShareAlike 3.0 Unported"@ast,
+        "Attribution-ShareAlike 3.0 Unported"@ast-es,
+        "Attribution-ShareAlike 3.0 Unported"@az,
+        "Attribution-ShareAlike 3.0 Unported"@be,
+        "Признание-Споделяне на споделеното 3.0 Нелокализиран"@bg,
+        "Attribution-ShareAlike 3.0 Unported"@bn,
+        "Reconeixement-CompartirIgual 3.0 No adaptada"@ca,
+        "Uveďte autora-Zachovejte licenci 3.0 Unported"@cs,
+        "Navngivelse-DelPåSammeVilkår 3.0 Unported"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Unported"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Unported"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Unported"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 3.0 Μη εισαγόμενο"@el,
+        "Attribution-ShareAlike 3.0 Unported"@en,
+        "Attribution-ShareAlike 3.0 Unported"@en-ca,
+        "Attribution-ShareAlike 3.0 Unported"@en-gb,
+        "Attribution-ShareAlike 3.0 Unported"@en-hk,
+        "Attribution-ShareAlike 3.0 Unported"@en-sg,
+        "Attribution-ShareAlike 3.0 Unported"@en-us,
+        "Atribuite-Samkondiĉe 3.0 Neadaptita"@eo,
+        "Atribución-CompartirIgual 3.0 Unported"@es,
+        "Atribución-CompartirDerivadasIgual 3.0 Unported"@es-ar,
+        "Atribución-LicenciarIgual 3.0 Unported"@es-cl,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-co,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-ec,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-es,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-gt,
+        "Atribución-Licenciamiento Recíproco 3.0 Unported"@es-mx,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-pe,
+        "Reconocimiento-CompartirIgual 3.0 Unported"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 3.0 Jurisdiktsiooniga sidumata"@et,
+        "Aitortu-PartekatuBerdin 3.0 Unported"@eu,
+        "Attribution-ShareAlike 3.0 Unported"@fa,
+        "Nimeä-Tarttuva 3.0 Muokkaamaton"@fi,
+        "Paternité - Partage à l'Identique 3.0 non transposé"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Unported"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Unported"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 3.0 Unported"@fr-lu,
+        "Attribution-ShareAlike 3.0 Unported"@ga,
+        "Recoñecemento-CompartirIgual 3.0 Unported"@gl,
+        "ייחוס-שיתוף זהה 3.0 לא מותאם"@he,
+        "Attribution-ShareAlike 3.0 Unported"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 3.0 neloklizirana licenca"@hr,
+        "Nevezd meg! - Így add tovább! 3.0 Unported"@hu,
+        "Հղում - համանման տարածում 3.0 Չտեղայնացված"@hy,
+        "Atribusi-BerbagiSerupa 3.0 Unported"@id,
+        "Attribution-ShareAlike 3.0 Unported"@is,
+        "Attribuzione - Condividi allo stesso modo 3.0 Unported"@it,
+        "Attribuzione - Condividi allo stesso modo 3.0 Unported"@it-ch,
+        "表示 - 継承 3.0 非移植"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  3.0 არაპორტირებული"@ka,
+        "Attribution-ShareAlike 3.0 Unported"@kk,
+        "저작자표시-동일조건변경허락 3.0 Unported"@ko,
+        "Attribution-ShareAlike 3.0 Unported"@lt,
+        "Atsaucoties-Nemainot licenci 3.0 Nepārnesta"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 3.0 Unported"@mk,
+        "Attribution-ShareAlike 3.0 Unported"@ml,
+        "Attribution-ShareAlike 3.0 Unported"@mn,
+        "Pengiktirafan-PerkongsianSerupa 3.0 Unported"@ms,
+        "Naamsvermelding-GelijkDelen 3.0 Unported"@nl,
+        "Navngivelse-DelPåSammeVilkår 3.0 Unported"@no,
+        "Tsebagatšo -Mohlakanelwa 3.0 Unported"@nso,
+        "Attribution-ShareAlike 3.0 Unported"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 3.0 Unported"@pl,
+        "Atribuição - CompartilhaIgual 3.0 Não Adaptada"@pt,
+        "Attribution-ShareAlike 3.0 Unported"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 3.0 Unported"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 3.0 Ne-adaptată"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 3.0 Непортированная"@ru,
+        "Attribution-ShareAlike 3.0 Unported"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 3.0 Nedoločena"@sl,
+        "Attribution-ShareAlike 3.0 Unported"@sq,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Unported"@sr,
+        "Ауторство-Делити под истим условима 3.0 Unported"@sr,
+        "Autorstvo-Deliti pod istim uslovima 3.0 Unported"@sr-latn,
+        "Attribution-ShareAlike 3.0 Unported"@st,
+        "Erkännande-DelaLika 3.0 Unported"@sv,
+        "Attribution-ShareAlike 3.0 Unported"@ta,
+        "Attribution-ShareAlike 3.0 Unported"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 3.0 ต้นฉบับ"@th,
+        "Alıntı-LisansıDevamEttirme 3.0 Unported"@tr,
+        "Attribution-ShareAlike 3.0 Unported"@uk,
+        "Attribution-ShareAlike 3.0 Unported"@ur,
+        "Attribution-ShareAlike 3.0 Unported"@vi,
+        "署名-相同方式共享 3.0 Unported"@zh,
+        "姓名標示-相同方式分享 3.0 Unported"@zh-hk,
+        "姓名標示-相同方式分享 3.0 Unported"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 3.0 Unported"@zu,
+        "${Attribution-ShareAlike} 3.0 ${Unported}"@zxx ;
+    schema:sameAs <http://spdx.org/licenses/CC-BY-SA-3.0> ;
+    spdx:licenseId "CC-BY-SA-3.0" ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/3.0/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/3.0/88x31.png> ;
+    li:id "CC-BY-SA-3.0" ;
+    li:libre <http://creativecommons.org/>,
+        <http://debian.org/>,
+        <http://freedomdefined.org/> ;
+    li:name "CC BY-SA 3.0" ;
+    li:plaintext <http://creativecommons.org/licenses/by-sa/3.0/legalcode.txt>,
+        <https://licensedb.org/id/CC-BY-SA-3.0.txt> .
+

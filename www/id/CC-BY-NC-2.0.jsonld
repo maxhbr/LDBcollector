@@ -1,0 +1,855 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-2.0",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "by-nc",
+    "dc:isReplacedBy": "https://licensedb.org/id/CC-BY-NC-2.5",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-NC-1.0",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 2.0 Generies"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 2.0 عام"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 2.0 Неадаптиран"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 2.0 Genèrica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 2.0 Generic"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 2.0 Generisk"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 2.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 2.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 2.0 US-amerikanisch (nicht portiert)"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.0 Γενικό"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 2.0 Ĝenerala"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 2.0 Üldine"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 2.0 Generikoa"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 2.0 Raakaversio"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Générique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Générique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Générique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Générique"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 2.0 Xenérica"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 2.0 לא מותאם"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 2.0 nelokalizirana licenca"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 2.0 Általános"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.0 Generic"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 2.0 Generik"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 2.0 Generico"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 2.0 Generico"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 2.0 一般"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.0 ზოგადი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 2.0 Generic"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 2.0 일반"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 2.0 Vispārīgs"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 2.0 Нелокализирана лиценца"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 2.0 Umum"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 2.0 Unported"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 2.0 Generisk"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 2.0 E sa fetišwago"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.0 Ogólny"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 2.0 Genérica"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 2.0 Generic"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 2.0 Genérica"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 2.0 Generică"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.0 Generic"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 2.0 Generična"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 2.0 Të përgjithshme"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 2.0 Generička licenca"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 2.0 Генеричка лиценца"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 2.0 Generička licenca"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 2.0 Generisk"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.0 ทั่วไป"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 2.0 Kapsamlı"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 2.0 Generic"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  2.0 Chung"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 2.0 未本地化版本"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 2.0 通用版"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 2.0 通用版"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.0 Engadlulisiwe"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 2.0 ${Generic}"
+        }
+    ],
+    "schema:sameAs": {
+        "@id": "http://spdx.org/licenses/CC-BY-NC-2.0"
+    },
+    "spdx:licenseId": "CC-BY-NC-2.0",
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/2.0/",
+        "@type": "cc:License",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "by-nc",
+        "dc:isReplacedBy": "http://creativecommons.org/licenses/by-nc/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 2.0 Generies"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 2.0 عام"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 2.0 Неадаптиран"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 2.0 Genèrica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 2.0 Generic"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 2.0 Generisk"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 2.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 2.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 2.0 US-amerikanisch (nicht portiert)"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.0 Γενικό"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 2.0 Ĝenerala"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 2.0 Üldine"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 2.0 Generikoa"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 2.0 Raakaversio"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Générique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Générique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Générique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Générique"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 2.0 Xenérica"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 2.0 לא מותאם"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 2.0 nelokalizirana licenca"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 2.0 Általános"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.0 Generic"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 2.0 Generik"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 2.0 Generico"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 2.0 Generico"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 2.0 一般"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.0 ზოგადი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 2.0 Generic"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 2.0 일반"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 2.0 Vispārīgs"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 2.0 Нелокализирана лиценца"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 2.0 Umum"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 2.0 Unported"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 2.0 Generisk"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 2.0 E sa fetišwago"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.0 Ogólny"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 2.0 Genérica"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 2.0 Generic"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 2.0 Genérica"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 2.0 Generică"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.0 Generic"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 2.0 Generična"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 2.0 Të përgjithshme"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 2.0 Generička licenca"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 2.0 Генеричка лиценца"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 2.0 Generička licenca"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 2.0 Generisk"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.0 ทั่วไป"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 2.0 Kapsamlı"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 2.0 Generic"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  2.0 Chung"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 2.0 未本地化版本"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 2.0 通用版"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 2.0 通用版"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.0 Engadlulisiwe"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 2.0 ${Generic}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-2.0",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/2.0/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/2.0/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/2.0/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/2.0/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-2.0",
+    "li:name": "CC BY-NC 2.0"
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>The License Database vocabulary
+</title>
+    <link rel="stylesheet" href="licensedb.css" type="text/css">
+    <link href="nprogress.css" rel="stylesheet" />
+    <style>
+     #nprogress .bar { background: #fff; }
+     #nprogress .peg { box-shadow: 0 0 10px #fff, 0 0 5px #fff; }
+     #nprogress .spinner-icon { border-top-color: #fff; border-left-color: #fff; }
+    </style>
+    <script type="application/ld+json">
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "xhv": "http://www.w3.org/1999/xhtml/vocab#",
+        "xsd": "http://www.w3.org/2001/XMLSchema-datatypes#",
+        "vann": "http://purl.org/vocab/vann/",
+        "wdrs": "http://www.w3.org/2007/05/powder-s#"
+    },
+    "@graph": [
+        {
+            "@id": "_:b0_mayHaveCreator",
+            "@type": "owl:Restriction",
+            "owl:minCardinality": 0,
+            "owl:onProperty": {
+                "@id": "dc:creator"
+            }
+        },
+        {
+            "@id": "_:b0_mayHaveIdentifier",
+            "@type": "owl:Restriction",
+            "owl:minCardinality": 0,
+            "owl:onProperty": {
+                "@id": "dc:identifier"
+            }
+        },
+        {
+            "@id": "_:b0_mayHaveVersion",
+            "@type": "owl:Restriction",
+            "owl:maxCardinality": 1,
+            "owl:minCardinality": 0,
+            "owl:onProperty": {
+                "@id": "dc:hasVersion"
+            }
+        },
+        {
+            "@id": "_:b0_mustHaveTitle",
+            "@type": "owl:Restriction",
+            "owl:minCardinality": 1,
+            "owl:onProperty": {
+                "@id": "dc:title"
+            }
+        },
+        {
+            "@id": "https://licensedb.org/ns#",
+            "@type": "owl:Ontology",
+            "dc:creator": "Kuno Woudt \u003Ckuno@frob.nl\u003E",
+            "dc:modified": "2015-02-22",
+            "dc:title": {
+                "@language": "en-us",
+                "@value": "The License Database vocabulary"
+            },
+            "vann:preferredNamespacePrefix": "li",
+            "vann:preferredNamespaceUri": "https://licensedb.org/ns#",
+            "xhv:license": {
+                "@id": "http://www.apache.org/licenses/LICENSE-2.0.html"
+            },
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "## Introduction\n\nThere are a few situations where it would be useful to have a\nmachine-readable database of commonly used free culture and free\nsoftware licenses. The initial goal is to make this data available for\nauthoring and publishing software, to make it easier for creators to\npick any license they want and have the appropriate notices\nautomatically included when a copyrighted work is packaged for\ndistribution or published on a published platform.\n\nThe License Database vocabulary extends The Creative Commons Rights\nExpression Language ([CC REL](http://wiki.creativecommons.org/CC_REL))\nwith additional properties to describe existing copyright and database\nlicenses in more detail.\n\n[The License Database](https://licensedb.org/) project uses this\nvocabulary to describe existing free software licenses, open source\nlicenses and free culture licenses used today.\n\n\n## Status of this document\n\nThis is an editor's draft without any formal standing. It is not\nendorsed by any organisation. Anything in this document is subject to\nchange, the editors welcome feedback on this document. Please send any\ncomments to [kuno@frob.nl](mailto:kuno@frob.nl) or contact \"kuno\" on\nfreenode irc.\n\n"
+            }
+        },
+        {
+            "@id": "li:License",
+            "@type": "rdfs:Class",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A standard text which can be applied by authors of\na creative work to license that work to users.  The standard text can\nbe copyright license, database rights license, trademark license,\npatent grant, etc.."
+            },
+            "rdfs:subClassOf": [
+                {
+                    "@id": "cc:License"
+                },
+                {
+                    "@id": "_:b0_mustHaveTitle"
+                },
+                {
+                    "@id": "_:b0_mayHaveCreator"
+                },
+                {
+                    "@id": "_:b0_mayHaveIdentifier"
+                },
+                {
+                    "@id": "_:b0_mayHaveVersion"
+                }
+            ]
+        },
+        {
+            "@id": "li:Notice",
+            "@type": "rdfs:Class",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A set of notices used to apply a particular license\nto a work. Typically these notices disclaim warranty and state where\nthe full license text can be found. (If the license text is very short\nthis may contain the full license text).\n\nOften the recommended (canonical) notices to use with a particular\nlicense are a template where an author is expected to fill in their\ndetails when using it to apply the license to a work -- this is\nimplemented in the License Database using the\n[Mustache](http://mustache.github.com/mustache.5.html) template\nlanguage. The keys which may be used by a license notice template are:\n{{year}}, {{rightsholder}}, {{description}} and {{title}}. "
+            }
+        },
+        {
+            "@id": "li:canonical",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A boolean, if true signifies that this particular\nnotice is a canonical notice recommended by the publisher of the license\n(e.g. in the license text itself). This is also set as \"true\" for short\n(permissive) licenses where the notice is the full license."
+            },
+            "rdfs:domain": {
+                "@id": "li:Notice"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            }
+        },
+        {
+            "@id": "li:compatible",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "This property states that works under these licenses\ncan be combined into a single work."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "li:License"
+            }
+        },
+        {
+            "@id": "li:id",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "The identifier assigned to the license by\nthe LicenseDB project. (the intent is to follow the same naming\nscheme as defined in\n[DEP5](http://dep.debian.net/deps/dep5/#license-specification))"
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        },
+        {
+            "@id": "li:libre",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "This property states that a license is suitable for\nuse in free software, open source software, free culture or open data\naccording to a particular organization."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "rdfs:Resource"
+            }
+        },
+        {
+            "@id": "li:name",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A short name assigned to the license. This should\nbe a short name suitable for display in a dropdown menu of a simple\nlicense chooser or the copyright notice where there is limited room\nfor such notices.\n\nFor example, \"CC BY-SA 3.0 NL\" is the li:name for a creative commons\nlicense which has \"Attribution-ShareAlike 3.0 Netherlands\" as\ndc:title."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "rdfs:Literal"
+            }
+        },
+        {
+            "@id": "li:orlater",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A boolean, if true signifies that this particular\nnotice is a notice typically used to apply an \"or-later\" clause to a\nversioned license. If false the notice will not allow the licensee to\nupgrade to a newer version of the license."
+            },
+            "rdfs:domain": {
+                "@id": "li:Notice"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            }
+        },
+        {
+            "@id": "li:plaintext",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "The license is available as a plain text formatted\ndocument at the linked resource.  This is usually the preferred format\nto include in a packaged software project."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "rdfs:Resource"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:hasFormat"
+            }
+        },
+        {
+            "@id": "li:short",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "A boolean, if true signifies that this particular\nnotice is a short notice typically used in user interfaces where there\nis not enough room for a longer text. If false the notice is a slightly\nlonger text typically used in software source code files and\n[README](http://en.wikipedia.org/wiki/README) files or anywhere else\nwhere there is sufficient room for a slightly longer text."
+            },
+            "rdfs:domain": {
+                "@id": "li:Notice"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            }
+        },
+        {
+            "@id": "li:text",
+            "@type": "rdf:Property",
+            "rdfs:comment": {
+                "@language": "en-us",
+                "@value": "The text used to apply a license to a work."
+            },
+            "rdfs:domain": {
+                "@id": "li:License"
+            },
+            "rdfs:range": {
+                "@id": "rdfs:Literal"
+            }
+        }
+    ]
+}
+
+</script>
+  </head>
+
+  <body>
+    <div id="header">
+      <a href="/" title="home">
+        <img src="/licensedb.png" style="margin: 1em;" />
+      </a>
+      <div id="menu">
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/id/">Database</a></li>
+          <li><a href="/ns">Vocabulary</a></li>
+          <li><a href="/license">License</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contentwrapper">
+        <div id="content">
+      <h1>The License Database vocabulary</h1>
+
+      <dt>Last update:</dt>
+      <dd>2015-02-22</dd>
+      <dt>Editors:</dt>
+      <dd><a href="mailto:kuno@frob.nl">Kuno Woudt</a> (<a href="http://frob.nl">frob.nl</a>)</dd>
+      <dt>Other formats:</dt>
+      <dd><a href="ns.ttl">Turtle</a> | <a href="ns.jsonld">JSON-LD</a></dd>
+
+      <h2>Introduction</h2>
+
+      <p>
+        There are a few situations where it would be useful to have a
+        machine-readable database of commonly used free culture and
+        free software licenses.  The initial goal is to make this data
+        available for authoring and packaging software, to make it
+        easier for users of such software to pick any license they
+        want and have the appropriate notices automatically included
+        when a copyrighted work is packaged for distribution.
+      </p>
+      <p>
+        The License Database vocabulary extends The Creative Commons
+        Rights Expression Language
+        (<a href="http://wiki.creativecommons.org/CC_REL">CC REL</a>)
+        with additional properties to describe existing copyright and
+        database licenses in more detail.
+      </p>
+      <p>
+        <a href="https://licensedb.org">The License Database project</a>
+        uses this vocabulary to describe existing free software licenses, open
+        source licenses and free culture licenses used today.
+      </p>
+
+      <h2>Status of this document</h2>
+      <p>
+        This is an editor's draft without any formal standing. It is
+        not endorsed by any organisation. Anything in this document is
+        subject to change, the editors welcome feedback on this
+        document. Please send any comments
+        to <a href="mailto:kuno@frob.nl">kuno@frob.nl</a> or contact
+        "warp" on freenode irc.
+      </p>
+
+      <h2>Classes</h2>
+
+      <div id="License">
+        <h4><span class="prefix">li:</span>License</h4>
+        <p>
+          A set of requests/permissions to users of a Work, e.g. a
+          copyright license, database rights license, trademark license,
+          patent grant, etc..
+        </p>
+      </div>
+
+      <div id="Notice">
+        <h4><span class="prefix">li:</span>Notice</h4>
+        <p>
+          A set of notices used to apply a particular license to a
+          work. Typically these notices disclaim warranty and state
+          where the full license text can be found.  (If the license
+          text is very short this may contain the full license text).
+        </p>
+        <p>
+          Often the recommended (canonical) notices to use with a
+          particular license are a template where an author is
+          expected to fill in their details when using it to apply the
+          license to a work -- this is implemented in the License
+          Database using the <a
+          href="http://mustache.github.com/mustache.5.html">Mustache</a>
+          template language.  The keys which may be used by a license
+          notice template are: {{year}}, {{rightsholder}},
+          {{description}} and {{title}}.
+        </p>
+      </div>
+
+      <h2>License Properties</h2>
+
+      <div id="id">
+        <h4><span class="prefix">li:</span>id</h4>
+        <p>
+          The identifier assigned to the <a href="#License">license</a> by the LicenseDB
+          project. (the intent is to follow the same naming scheme as defined
+          in <a href="http://dep.debian.net/deps/dep5/#license-specification">DEP5</a>)
+        </p>
+      </div>
+
+      <div id="name">
+        <h4><span class="prefix">li:</span>name</h4>
+        <p>
+          A short name assigned to the <a href="#License">license</a>. This should be a
+          short name suitable for display in a dropdown menu of a simple license chooser or
+          the copyright notice where there is limited room for such notices.
+        </p>
+        <p>
+          For example, "CC BY-SA 3.0 NL" is the li:name for a creative commons license which
+          has "Attribution-ShareAlike 3.0 Netherlands" as dc:title.
+        </p>
+      </div>
+
+      <div id="plaintext">
+        <h4><span class="prefix">li:</span>plaintext</h4>
+        <p>
+          A <a href="#License">license</a> is available as a plain text formatted
+          resource. This is usually the preferred format to include in packaged software
+          project.
+        </p>
+      </div>
+
+      <div id="libre">
+        <h4><span class="prefix">li:</span>libre</h4>
+        <p>
+          This property states that a <a href="#License">license</a> is suitable for use in
+          free software, open source software, free culture or open data according to a
+          particular organization.
+        </p>
+      </div>
+
+      <div id="compatible">
+        <h4><span class="prefix">li:</span>compatible</h4>
+        <p>
+          A <a href="#License">License</a> is compatible with a <a href="#License">License</a>.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>Notice Properties</h2>
+
+      <div id="text">
+        <h4><span class="prefix">li:</span>text</h4>
+        <p>
+          The text used to apply a <a href="#License">license</a> to a work.
+        </p>
+      </div>
+
+      <div id="short">
+        <h4><span class="prefix">li:</span>short</h4>
+        <p>
+          A boolean, if true signifies that this particular <a href="#Notice">notice</a> is
+          a short notice typically used in user interfaces where there is not enough room
+          for a longer text.  If false the notice is a slightly longer text typically used
+          in software source code files
+          and <a href="http://en.wikipedia.org/wiki/README">README</a> files or anywhere
+          else where there is sufficient room for a slightly longer text.
+        </p>
+      </div>
+
+      <div id="orlater">
+        <h4><span class="prefix">li:</span>orlater</h4>
+        <p>
+          A boolean, if true signifies that this particular <a href="#Notice">notice</a> is
+          a notice typically used to apply an "or-later" clause to a versioned license.  If
+          false the notice will not allow the licensee to upgrade to a newer version of the
+          license (or there is only one license version).
+        </p>
+      </div>
+
+      <div id="canonical">
+        <h4><span class="prefix">li:</span>canonical</h4>
+        <p>
+          A boolean, if true signifies that this particular <a href="#Notice">notice</a> is
+          a canonical notice recommended by the publisher of the license (e.g. in the
+          license text itself).  This is also set as "true" for short (permissive) licenses
+          where the notice is the full license.
+        </p>
+      </div>
+
+</div>    </div>
+
+            <div id="footer">
+            <p class="copyright">
+                &copy; 2015 <a href="https://frob.nl">Kuno Woudt</a>, software licensed under
+                <a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache
+                2.0</a>, database available under <a rel="license"
+                href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
+                See <a href="/license">the license page</a> for more details.
+            </p>
+        </div>
+    
+    
+  </body>
+</html>

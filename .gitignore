@@ -2,7 +2,6 @@
 *~
 /bin/rdf2hdt
 /etc/ldf-server.json
-/www
 /node_modules/
 
 .sconsign.dblite

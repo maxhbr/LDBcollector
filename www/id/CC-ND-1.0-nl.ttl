@@ -1,0 +1,231 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/nd/1.0/nl/> a cc:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nd/1.0/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nd" ;
+    dc:source <http://creativecommons.org/licenses/nd/1.0/> ;
+    dc:title "GeenAfleidings 1.0 Nederland"@af,
+        "لا اشتقاق 1.0 هولندا"@ar,
+        "NoDerivs 1.0 Netherlands"@as,
+        "NoDerivs 1.0 Netherlands"@ast,
+        "NoDerivs 1.0 Netherlands"@ast-es,
+        "NoDerivs 1.0 Netherlands"@az,
+        "NoDerivs 1.0 Нідэрланды"@be,
+        "Без производни 1.0 Холандия"@bg,
+        "NoDerivs 1.0 Netherlands"@bn,
+        "SenseObraDerivada 1.0 Holanda"@ca,
+        "Nezasahujte do díla 1.0 Nizozemí"@cs,
+        "IngenBearbejdelse 1.0 Holland"@da,
+        "Keine Bearbeitung 1.0 Niederlande"@de,
+        "KeineBearbeitung 1.0 Niederlande"@de-at,
+        "KeineBearbeitung 1.0 Niederlande"@de-ch,
+        "Όχι Παράγωγα Έργα 1.0 Ολλανδία"@el,
+        "NoDerivs 1.0 Netherlands"@en,
+        "NoDerivs 1.0 Netherlands"@en-ca,
+        "NoDerivs 1.0 Netherlands"@en-gb,
+        "NoDerivs 1.0 Netherlands"@en-hk,
+        "NoDerivs 1.0 Netherlands"@en-sg,
+        "NoDerivs 1.0 Netherlands"@en-us,
+        "Nemodifite 1.0 Nederlando"@eo,
+        "SinDerivadas 1.0 Holanda"@es,
+        "SinDerivadas 1.0 Holanda"@es-ar,
+        "SinDerivadas 1.0 Holanda"@es-cl,
+        "SinObraDerivada 1.0 Holanda"@es-co,
+        "Sin Obra Derivada 1.0 Holanda"@es-ec,
+        "SinObraDerivada 1.0 Holanda"@es-es,
+        "Sin Obra Derivada 1.0 Holanda"@es-gt,
+        "No Derivadas 1.0 Holanda"@es-mx,
+        "SinObraDerivada 1.0 Holanda"@es-pe,
+        "SinObrasDerivadas 1.0 Holanda"@es-pr,
+        "Tuletatud teoste keeld  1.0 Holland"@et,
+        "LanEratorririkGabe 1.0 Herbehereak"@eu,
+        "NoDerivs 1.0 هلند"@fa,
+        "Ei muutoksia 1.0 Hollanti"@fi,
+        "Pas de Modification 1.0 Pays-Bas"@fr,
+        "Pas de modification 1.0 Pays-Bas"@fr-ca,
+        "Pas de modification 1.0 Pays-Bas"@fr-ch,
+        "Pas de modification 1.0 Pays-Bas"@fr-lu,
+        "NoDerivs 1.0 Netherlands"@ga,
+        "SenObraDerivada 1.0 Holanda"@gl,
+        "איסור יצירות נגזרות 1.0 הולנד"@he,
+        "NoDerivs 1.0 Netherlands"@hi,
+        "Bez prerada 1.0 Nizozemska"@hr,
+        "Ne változtasd! 1.0 Hollandia"@hu,
+        "Օգտագործում առանց վերափոխումների 1.0 Նիդերլանդներ"@hy,
+        "TanpaTurunan 1.0 Belanda"@id,
+        "NoDerivs 1.0 Holland"@is,
+        "NoOpereDerivate 1.0 Olanda"@it,
+        "NoOpereDerivate 1.0 Olanda"@it-ch,
+        "改変禁止 1.0 オランダ"@ja,
+        "გადამუშავებული ნაწარმოების შექმნის გარეშე 1.0 ნიდერლანდები"@ka,
+        "ТУындысыз 1.0 Netherlands"@kk,
+        "변경금지 1.0 네덜란드"@ko,
+        "Be išvedinių 1.0 Nyderlandai"@lt,
+        "Nav atvasinājumu 1.0 Nīderlande"@lv,
+        "БезИзведениДела 1.0 Холандија"@mk,
+        "NoDerivs 1.0 നെതർലാന്റ്സ്"@ml,
+        "NoDerivs 1.0 Netherlands"@mn,
+        "TiadaTerbitan 1.0 Netherlands"@ms,
+        "GeenAfgeleideWerken 1.0 Nederland"@nl,
+        "IngenBearbeidelse 1.0 Nederland"@no,
+        "Tše sa fetolwego 1.0 Netherlands"@nso,
+        "NoDerivs 1.0 Netherlands"@oci-es,
+        "Bez utworów zależnych 1.0 Holandia"@pl,
+        "SemDerivados 1.0 Holanda"@pt,
+        "Vedada a criação de obras derivadas 1.0 Netherlands"@pt-br,
+        "Proibição de realização de Obras Derivadas 1.0 Holanda"@pt-pt,
+        "FărăModificări 1.0 Olanda"@ro,
+        "Без производных произведений(<i>NoDerivs</i>) 1.0 Нидерланды"@ru,
+        "NoDerivs 1.0 Netherlands"@si-lk,
+        "Brez predelav 1.0 Nizozemska"@sl,
+        "NoDerivs 1.0 Holandë"@sq,
+        "Bez prerada 1.0 Holandija"@sr,
+        "Без прерада 1.0 Холандија"@sr,
+        "Bez prerada 1.0 Holandija"@sr-latn,
+        "NoDerivs 1.0 Netherlands"@st,
+        "IngaBearbetningar 1.0 Nederländerna"@sv,
+        "NoDerivs 1.0 நெதர்லாந்து"@ta,
+        "NoDerivs 1.0 నెదర్లాండ్స్"@te,
+        "ไม่ดัดแปลง 1.0 เนเธอร์แลนด์"@th,
+        "Türetilemez 1.0 Hollanda"@tr,
+        "NoDerivs 1.0 Netherlands"@uk,
+        "NoDerivs 1.0 Netherlands"@ur,
+        "Không Phái sinh 1.0 Nước Hà Lan"@vi,
+        "禁止演绎 1.0 荷兰"@zh,
+        "禁止改作 1.0 荷蘭"@zh-hk,
+        "禁止改作 1.0 荷蘭"@zh-tw,
+        "Ungasuseli lutho kulokhu 1.0 iNetherlands"@zu,
+        "${NoDerivs} 1.0 ${Netherlands}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-ND-1.0-nl> ;
+    foaf:logo <http://i.creativecommons.org/l/nd/1.0/nl/88x31.png> .
+
+<https://licensedb.org/id/CC-ND-1.0-nl> a cc:License,
+        li:License ;
+    cc:deprecatedOn "2004-05-25"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/nd/1.0/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "nd" ;
+    dc:source <http://creativecommons.org/licenses/nd/1.0/> ;
+    dc:title "GeenAfleidings 1.0 Nederland"@af,
+        "لا اشتقاق 1.0 هولندا"@ar,
+        "NoDerivs 1.0 Netherlands"@as,
+        "NoDerivs 1.0 Netherlands"@ast,
+        "NoDerivs 1.0 Netherlands"@ast-es,
+        "NoDerivs 1.0 Netherlands"@az,
+        "NoDerivs 1.0 Нідэрланды"@be,
+        "Без производни 1.0 Холандия"@bg,
+        "NoDerivs 1.0 Netherlands"@bn,
+        "SenseObraDerivada 1.0 Holanda"@ca,
+        "Nezasahujte do díla 1.0 Nizozemí"@cs,
+        "IngenBearbejdelse 1.0 Holland"@da,
+        "Keine Bearbeitung 1.0 Niederlande"@de,
+        "KeineBearbeitung 1.0 Niederlande"@de-at,
+        "KeineBearbeitung 1.0 Niederlande"@de-ch,
+        "Όχι Παράγωγα Έργα 1.0 Ολλανδία"@el,
+        "NoDerivs 1.0 Netherlands"@en,
+        "NoDerivs 1.0 Netherlands"@en-ca,
+        "NoDerivs 1.0 Netherlands"@en-gb,
+        "NoDerivs 1.0 Netherlands"@en-hk,
+        "NoDerivs 1.0 Netherlands"@en-sg,
+        "NoDerivs 1.0 Netherlands"@en-us,
+        "Nemodifite 1.0 Nederlando"@eo,
+        "SinDerivadas 1.0 Holanda"@es,
+        "SinDerivadas 1.0 Holanda"@es-ar,
+        "SinDerivadas 1.0 Holanda"@es-cl,
+        "SinObraDerivada 1.0 Holanda"@es-co,
+        "Sin Obra Derivada 1.0 Holanda"@es-ec,
+        "SinObraDerivada 1.0 Holanda"@es-es,
+        "Sin Obra Derivada 1.0 Holanda"@es-gt,
+        "No Derivadas 1.0 Holanda"@es-mx,
+        "SinObraDerivada 1.0 Holanda"@es-pe,
+        "SinObrasDerivadas 1.0 Holanda"@es-pr,
+        "Tuletatud teoste keeld  1.0 Holland"@et,
+        "LanEratorririkGabe 1.0 Herbehereak"@eu,
+        "NoDerivs 1.0 هلند"@fa,
+        "Ei muutoksia 1.0 Hollanti"@fi,
+        "Pas de Modification 1.0 Pays-Bas"@fr,
+        "Pas de modification 1.0 Pays-Bas"@fr-ca,
+        "Pas de modification 1.0 Pays-Bas"@fr-ch,
+        "Pas de modification 1.0 Pays-Bas"@fr-lu,
+        "NoDerivs 1.0 Netherlands"@ga,
+        "SenObraDerivada 1.0 Holanda"@gl,
+        "איסור יצירות נגזרות 1.0 הולנד"@he,
+        "NoDerivs 1.0 Netherlands"@hi,
+        "Bez prerada 1.0 Nizozemska"@hr,
+        "Ne változtasd! 1.0 Hollandia"@hu,
+        "Օգտագործում առանց վերափոխումների 1.0 Նիդերլանդներ"@hy,
+        "TanpaTurunan 1.0 Belanda"@id,
+        "NoDerivs 1.0 Holland"@is,
+        "NoOpereDerivate 1.0 Olanda"@it,
+        "NoOpereDerivate 1.0 Olanda"@it-ch,
+        "改変禁止 1.0 オランダ"@ja,
+        "გადამუშავებული ნაწარმოების შექმნის გარეშე 1.0 ნიდერლანდები"@ka,
+        "ТУындысыз 1.0 Netherlands"@kk,
+        "변경금지 1.0 네덜란드"@ko,
+        "Be išvedinių 1.0 Nyderlandai"@lt,
+        "Nav atvasinājumu 1.0 Nīderlande"@lv,
+        "БезИзведениДела 1.0 Холандија"@mk,
+        "NoDerivs 1.0 നെതർലാന്റ്സ്"@ml,
+        "NoDerivs 1.0 Netherlands"@mn,
+        "TiadaTerbitan 1.0 Netherlands"@ms,
+        "GeenAfgeleideWerken 1.0 Nederland"@nl,
+        "IngenBearbeidelse 1.0 Nederland"@no,
+        "Tše sa fetolwego 1.0 Netherlands"@nso,
+        "NoDerivs 1.0 Netherlands"@oci-es,
+        "Bez utworów zależnych 1.0 Holandia"@pl,
+        "SemDerivados 1.0 Holanda"@pt,
+        "Vedada a criação de obras derivadas 1.0 Netherlands"@pt-br,
+        "Proibição de realização de Obras Derivadas 1.0 Holanda"@pt-pt,
+        "FărăModificări 1.0 Olanda"@ro,
+        "Без производных произведений(<i>NoDerivs</i>) 1.0 Нидерланды"@ru,
+        "NoDerivs 1.0 Netherlands"@si-lk,
+        "Brez predelav 1.0 Nizozemska"@sl,
+        "NoDerivs 1.0 Holandë"@sq,
+        "Bez prerada 1.0 Holandija"@sr,
+        "Без прерада 1.0 Холандија"@sr,
+        "Bez prerada 1.0 Holandija"@sr-latn,
+        "NoDerivs 1.0 Netherlands"@st,
+        "IngaBearbetningar 1.0 Nederländerna"@sv,
+        "NoDerivs 1.0 நெதர்லாந்து"@ta,
+        "NoDerivs 1.0 నెదర్లాండ్స్"@te,
+        "ไม่ดัดแปลง 1.0 เนเธอร์แลนด์"@th,
+        "Türetilemez 1.0 Hollanda"@tr,
+        "NoDerivs 1.0 Netherlands"@uk,
+        "NoDerivs 1.0 Netherlands"@ur,
+        "Không Phái sinh 1.0 Nước Hà Lan"@vi,
+        "禁止演绎 1.0 荷兰"@zh,
+        "禁止改作 1.0 荷蘭"@zh-hk,
+        "禁止改作 1.0 荷蘭"@zh-tw,
+        "Ungasuseli lutho kulokhu 1.0 iNetherlands"@zu,
+        "${NoDerivs} 1.0 ${Netherlands}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/nd/1.0/nl/> ;
+    foaf:logo <http://i.creativecommons.org/l/nd/1.0/nl/88x31.png> ;
+    li:id "CC-ND-1.0-nl" ;
+    li:name "CC ND 1.0 NL" .
+
