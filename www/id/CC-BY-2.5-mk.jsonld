@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-mk",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/mk/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/mk/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Macedonia"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 مقدونيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 Македонія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Македония"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Macedònia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Makedonie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Macedonia"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Mazedonien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 Mazedonien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 Mazedonien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Πρώην Γιουγκοσλαβική Δημοκρατία της Μακεδονίας"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Makedonujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 Macedonia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 Macedonia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 Macedonia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 Macedonia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 Macedonia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 Macedonia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 Macedonia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 Macedonia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 Macedonia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 Macedonia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 Makedoonia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 Macedonia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 مقدونیه"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Makedonia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Macédoine"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Macédonie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Macédonie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Macédonie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 Macedonia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 מקדוניה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Makedonija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 Macedonia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 Մակեդոնիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 Makedonia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 Macedonia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 Macedonia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 マセドニア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 მაკედონია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 Macedonia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 Macedonia"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Makedonija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Makedonija"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Македонија"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 മസഡോണിയൻ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 Macedonia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 Macedonië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 Makedonia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 Macedonia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Macedonia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 Macedónia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 Macedonia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 Macedonia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 Macedonia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 Македония"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Makedonija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Maqedoni"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Makedonija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Македонија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Makedonija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Makedonien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 మాసిడోనియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 มาซิโดเนีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 Makedonya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 Macedonia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 Macedonia"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 马其顿"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 馬其頓"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 馬其頓"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 Macedonia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${Macedonia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/mk/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/mk/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/mk/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Macedonia"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 مقدونيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 Македонія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Македония"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Macedònia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Makedonie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Macedonia"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Mazedonien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 Mazedonien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 Mazedonien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Πρώην Γιουγκοσλαβική Δημοκρατία της Μακεδονίας"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Makedonujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 Macedonia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 Macedonia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 Macedonia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 Macedonia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 Macedonia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 Macedonia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 Macedonia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 Macedonia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 Macedonia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 Macedonia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 Makedoonia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 Macedonia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 مقدونیه"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Makedonia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Macédoine"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Macédonie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Macédonie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Macédonie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 Macedonia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 מקדוניה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Makedonija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 Macedonia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 Մակեդոնիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 Makedonia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 Macedonia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 Macedonia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 マセドニア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 მაკედონია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 Macedonia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 Macedonia"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Makedonija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Makedonija"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Македонија"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 മസഡോണിയൻ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 Macedonia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 Macedonië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 Makedonia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 Macedonia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Macedonia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 Macedónia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 Macedonia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 Macedonia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 Macedonia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 Македония"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Makedonija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Maqedoni"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Makedonija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Македонија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Makedonija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Makedonien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 మాసిడోనియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 มาซิโดเนีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 Makedonya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 Macedonia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 Macedonia"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 马其顿"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 馬其頓"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 馬其頓"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 Macedonia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${Macedonia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-mk",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/mk/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/mk/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/mk/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/mk/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-mk",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 MK"
+}

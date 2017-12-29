@@ -1,0 +1,242 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/2.0/be/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/be/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/be/legalcode.fr>,
+        <http://creativecommons.org/licenses/by/2.0/be/legalcode.nl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 België"@af,
+        "نسب المصنف  2.0 بلجيكا"@ar,
+        "Attribution 2.0 Belgium"@as,
+        "Attribution 2.0 Belgium"@ast,
+        "Attribution 2.0 Belgium"@ast-es,
+        "Attribution 2.0 Belgium"@az,
+        "Атрыбуцыя 2.0 Бельгія"@be,
+        "Признание 2.0 Белгия"@bg,
+        "Attribution 2.0 Belgium"@bn,
+        "Reconeixement 2.0 Bèlgica"@ca,
+        "Uveďte autora 2.0 Belgie"@cs,
+        "Navngivelse 2.0 Belgien"@da,
+        "Namensnennung 2.0 Belgien"@de,
+        "Namensnennung 2.0 Belgien"@de-at,
+        "Namensnennung 2.0 Belgien"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Βέλγιο"@el,
+        "Attribution 2.0 Belgium"@en,
+        "Attribution 2.0 Belgium"@en-ca,
+        "Attribution 2.0 Belgium"@en-gb,
+        "Attribution 2.0 Belgium"@en-hk,
+        "Attribution 2.0 Belgium"@en-sg,
+        "Attribution 2.0 Belgium"@en-us,
+        "Atribuite 2.0 Belgujo"@eo,
+        "Atribución 2.0 Bélgica"@es,
+        "Atribución 2.0 Bélgica"@es-ar,
+        "Atribución 2.0 Bélgica"@es-cl,
+        "Reconocimiento 2.0 Bélgica"@es-co,
+        "Reconocimiento 2.0 Bélgica"@es-ec,
+        "Reconocimiento 2.0 Bélgica"@es-es,
+        "Reconocimiento 2.0 Bélgica"@es-gt,
+        "Atribución 2.0 Bélgica"@es-mx,
+        "Reconocimiento 2.0 Bélgica"@es-pe,
+        "Reconocimiento 2.0 Bélgica"@es-pr,
+        "Autorile viitamine 2.0 Belgia"@et,
+        "Aitortu 2.0 Belgika"@eu,
+        "Attribution 2.0 بلژیک"@fa,
+        "Nimeä 2.0 Belgia"@fi,
+        "Attribution 2.0 Belgique"@fr,
+        "Paternité 2.0 Belgique"@fr-ca,
+        "Paternité 2.0 Belgique"@fr-ch,
+        "Paternité 2.0 Belgique"@fr-lu,
+        "Attribution 2.0 Belgium"@ga,
+        "Recoñecemento 2.0 Bélxica"@gl,
+        "ייחוס 2.0 בלגיה"@he,
+        "Attribution 2.0 बेलजियम"@hi,
+        "Imenovanje 2.0 Belgija"@hr,
+        "Nevezd meg! 2.0 Belgium"@hu,
+        "Հղում 2.0 Բելգիա"@hy,
+        "Atribusi 2.0 Belgia"@id,
+        "Attribution 2.0 Belgía"@is,
+        "Attribuzione 2.0 Belgio"@it,
+        "Attribuzione 2.0 Belgio"@it-ch,
+        "表示 2.0 ベルギー"@ja,
+        "ავტორობის მითითებით  2.0 ბელგია"@ka,
+        "Атауын сақтау 2.0 Belgium"@kk,
+        "저작자표시(Attribution) 2.0 벨기에"@ko,
+        "Priskyrimas 2.0 Belgija"@lt,
+        "Atsaucoties 2.0 Beļģija"@lv,
+        "Наведи извор 2.0 Белгија"@mk,
+        "കടപ്പാട് 2.0 ബെൽജിയം"@ml,
+        "Attribution 2.0 Бельги"@mn,
+        "Pengiktirafan 2.0 Belgium"@ms,
+        "Naamsvermelding 2.0 België"@nl,
+        "Navngivelse 2.0 Belgia"@no,
+        "Tsebagatšo 2.0 Belgium"@nso,
+        "Attribution 2.0 Belgium"@oci-es,
+        "Uznanie autorstwa 2.0 Belgia"@pl,
+        "Atribuição  2.0 Bélgica"@pt,
+        "Atribuição 2.0 Bélgica"@pt-br,
+        "Atribuição 2.0 Bélgica"@pt-pt,
+        "Atribuire 2.0 Belgia"@ro,
+        "Attribution (Атрибуция) 2.0 Бельгия"@ru,
+        "Attribution 2.0 Belgium"@si-lk,
+        "Priznanje avtorstva 2.0 Belgija"@sl,
+        "Attribution 2.0 Belgjikë"@sq,
+        "Autorstvo 2.0 Belgija"@sr,
+        "Ауторство 2.0 Белгија"@sr,
+        "Autorstvo 2.0 Belgija"@sr-latn,
+        "Attribution 2.0 Belgium"@st,
+        "Erkännande 2.0 Belgien"@sv,
+        "Attribution 2.0 பெல்ஜியம்"@ta,
+        "ఆపాదింపు 2.0 బెల్జియం"@te,
+        "แสดงที่มา 2.0 เบลเยียม"@th,
+        "Attribution 2.0 Belçika"@tr,
+        "Attribution 2.0 Бельгія"@uk,
+        "Attribution 2.0 Belgium"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Bỉ"@vi,
+        "署名 2.0 比利时"@zh,
+        "姓名標示 2.0 比利時"@zh-hk,
+        "姓名標示 2.0 比利時"@zh-tw,
+        "Qaphela Umnikazi 2.0 eBelgium"@zu,
+        "${Attribution} 2.0 ${Belgium}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-2.0-be> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/be/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/be/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-2.0-be> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/be/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/2.0/be/legalcode.fr>,
+        <http://creativecommons.org/licenses/by/2.0/be/legalcode.nl> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/2.0/> ;
+    dc:title "Erkenning 2.0 België"@af,
+        "نسب المصنف  2.0 بلجيكا"@ar,
+        "Attribution 2.0 Belgium"@as,
+        "Attribution 2.0 Belgium"@ast,
+        "Attribution 2.0 Belgium"@ast-es,
+        "Attribution 2.0 Belgium"@az,
+        "Атрыбуцыя 2.0 Бельгія"@be,
+        "Признание 2.0 Белгия"@bg,
+        "Attribution 2.0 Belgium"@bn,
+        "Reconeixement 2.0 Bèlgica"@ca,
+        "Uveďte autora 2.0 Belgie"@cs,
+        "Navngivelse 2.0 Belgien"@da,
+        "Namensnennung 2.0 Belgien"@de,
+        "Namensnennung 2.0 Belgien"@de-at,
+        "Namensnennung 2.0 Belgien"@de-ch,
+        "Αναφορά Δημιουργού 2.0 Βέλγιο"@el,
+        "Attribution 2.0 Belgium"@en,
+        "Attribution 2.0 Belgium"@en-ca,
+        "Attribution 2.0 Belgium"@en-gb,
+        "Attribution 2.0 Belgium"@en-hk,
+        "Attribution 2.0 Belgium"@en-sg,
+        "Attribution 2.0 Belgium"@en-us,
+        "Atribuite 2.0 Belgujo"@eo,
+        "Atribución 2.0 Bélgica"@es,
+        "Atribución 2.0 Bélgica"@es-ar,
+        "Atribución 2.0 Bélgica"@es-cl,
+        "Reconocimiento 2.0 Bélgica"@es-co,
+        "Reconocimiento 2.0 Bélgica"@es-ec,
+        "Reconocimiento 2.0 Bélgica"@es-es,
+        "Reconocimiento 2.0 Bélgica"@es-gt,
+        "Atribución 2.0 Bélgica"@es-mx,
+        "Reconocimiento 2.0 Bélgica"@es-pe,
+        "Reconocimiento 2.0 Bélgica"@es-pr,
+        "Autorile viitamine 2.0 Belgia"@et,
+        "Aitortu 2.0 Belgika"@eu,
+        "Attribution 2.0 بلژیک"@fa,
+        "Nimeä 2.0 Belgia"@fi,
+        "Attribution 2.0 Belgique"@fr,
+        "Paternité 2.0 Belgique"@fr-ca,
+        "Paternité 2.0 Belgique"@fr-ch,
+        "Paternité 2.0 Belgique"@fr-lu,
+        "Attribution 2.0 Belgium"@ga,
+        "Recoñecemento 2.0 Bélxica"@gl,
+        "ייחוס 2.0 בלגיה"@he,
+        "Attribution 2.0 बेलजियम"@hi,
+        "Imenovanje 2.0 Belgija"@hr,
+        "Nevezd meg! 2.0 Belgium"@hu,
+        "Հղում 2.0 Բելգիա"@hy,
+        "Atribusi 2.0 Belgia"@id,
+        "Attribution 2.0 Belgía"@is,
+        "Attribuzione 2.0 Belgio"@it,
+        "Attribuzione 2.0 Belgio"@it-ch,
+        "表示 2.0 ベルギー"@ja,
+        "ავტორობის მითითებით  2.0 ბელგია"@ka,
+        "Атауын сақтау 2.0 Belgium"@kk,
+        "저작자표시(Attribution) 2.0 벨기에"@ko,
+        "Priskyrimas 2.0 Belgija"@lt,
+        "Atsaucoties 2.0 Beļģija"@lv,
+        "Наведи извор 2.0 Белгија"@mk,
+        "കടപ്പാട് 2.0 ബെൽജിയം"@ml,
+        "Attribution 2.0 Бельги"@mn,
+        "Pengiktirafan 2.0 Belgium"@ms,
+        "Naamsvermelding 2.0 België"@nl,
+        "Navngivelse 2.0 Belgia"@no,
+        "Tsebagatšo 2.0 Belgium"@nso,
+        "Attribution 2.0 Belgium"@oci-es,
+        "Uznanie autorstwa 2.0 Belgia"@pl,
+        "Atribuição  2.0 Bélgica"@pt,
+        "Atribuição 2.0 Bélgica"@pt-br,
+        "Atribuição 2.0 Bélgica"@pt-pt,
+        "Atribuire 2.0 Belgia"@ro,
+        "Attribution (Атрибуция) 2.0 Бельгия"@ru,
+        "Attribution 2.0 Belgium"@si-lk,
+        "Priznanje avtorstva 2.0 Belgija"@sl,
+        "Attribution 2.0 Belgjikë"@sq,
+        "Autorstvo 2.0 Belgija"@sr,
+        "Ауторство 2.0 Белгија"@sr,
+        "Autorstvo 2.0 Belgija"@sr-latn,
+        "Attribution 2.0 Belgium"@st,
+        "Erkännande 2.0 Belgien"@sv,
+        "Attribution 2.0 பெல்ஜியம்"@ta,
+        "ఆపాదింపు 2.0 బెల్జియం"@te,
+        "แสดงที่มา 2.0 เบลเยียม"@th,
+        "Attribution 2.0 Belçika"@tr,
+        "Attribution 2.0 Бельгія"@uk,
+        "Attribution 2.0 Belgium"@ur,
+        "Ghi nhận công của tác giả 2.0 Nước Bỉ"@vi,
+        "署名 2.0 比利时"@zh,
+        "姓名標示 2.0 比利時"@zh-hk,
+        "姓名標示 2.0 比利時"@zh-tw,
+        "Qaphela Umnikazi 2.0 eBelgium"@zu,
+        "${Attribution} 2.0 ${Belgium}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/2.0/be/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/2.0/be/80x15.png>,
+        <http://i.creativecommons.org/l/by/2.0/be/88x31.png> ;
+    li:id "CC-BY-2.0-be" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 2.0 BE" .
+
+<http://creativecommons.org/licenses/by/2.0/be/legalcode.fr> dc:language "fr" .
+
+<http://creativecommons.org/licenses/by/2.0/be/legalcode.nl> dc:language "nl" .
+

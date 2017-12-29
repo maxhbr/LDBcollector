@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/2.5/it/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/it/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.5/it/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.5/> ;
+    dc:title "Erkenning-NieKommersieel 2.5 Italië"@af,
+        "نسب - غير تجاري 2.5 ايطاليا"@ar,
+        "Attribution-NonCommercial 2.5 Italy"@as,
+        "Attribution-NonCommercial 2.5 Italy"@ast,
+        "Attribution-NonCommercial 2.5 Italy"@ast-es,
+        "Attribution-NonCommercial 2.5 Italy"@az,
+        "Attribution-NonCommercial 2.5 Італія"@be,
+        "Признание-Некомерсиално 2.5 Италия"@bg,
+        "Attribution-NonCommercial 2.5 Italy"@bn,
+        "Reconeixement-NoComercial 2.5 Itàlia"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.5 Itálie"@cs,
+        "Navngivelse-IkkeKommerciel 2.5 Italien"@da,
+        "Namensnennung-Nicht-kommerziell 2.5 Italien"@de,
+        "Namensnennung-NichtKommerziell 2.5 Italien"@de-at,
+        "Namensnennung-NichtKommerziell 2.5 Italien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Ιταλία"@el,
+        "Attribution-NonCommercial 2.5 Italy"@en,
+        "Attribution-NonCommercial 2.5 Italy"@en-ca,
+        "Attribution-NonCommercial 2.5 Italy"@en-gb,
+        "Attribution-NonCommercial 2.5 Italy"@en-hk,
+        "Attribution-NonCommercial 2.5 Italy"@en-sg,
+        "Attribution-NonCommercial 2.5 Italy"@en-us,
+        "Atribuite-Nekomerce 2.5 Italujo"@eo,
+        "Atribución-NoComercial 2.5 Italia"@es,
+        "Atribución-NoComercial 2.5 Italia"@es-ar,
+        "Atribución-NoComercial 2.5 Italia"@es-cl,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-co,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-ec,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-es,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-gt,
+        "Atribución-No Comercial 2.5 Italia"@es-mx,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-pe,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.5 Itaalia"@et,
+        "Aitortu-EzKomertziala 2.5 Italia"@eu,
+        "Attribution-NonCommercial 2.5 ایتالیا"@fa,
+        "Nimeä-Epäkaupallinen 2.5 Italia"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Italie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Italie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Italie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Italie"@fr-lu,
+        "Attribution-NonCommercial 2.5 Italy"@ga,
+        "Recoñecemento-NonComercial 2.5 Italia"@gl,
+        "ייחוס-שימוש לא מסחרי 2.5 איטליה"@he,
+        "Attribution-NonCommercial 2.5 इटली"@hi,
+        "Imenovanje-Nekomercijalno 2.5 Italija"@hr,
+        "Nevezd meg! - Ne add el! 2.5 Olaszország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.5 Իտալիա"@hy,
+        "Attribusi-NonKomersial 2.5 Italia"@id,
+        "Attribution-NonCommercial 2.5 Ítalía"@is,
+        "Attribuzione - Non commerciale 2.5 Italia"@it,
+        "Attribuzione - Non commerciale 2.5 Italia"@it-ch,
+        "表示 - 非営利 2.5 イタリア"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 იტალია"@ka,
+        "Коммерциялық емес 2.5 Italy"@kk,
+        "저작자표시-비영리 2.5 이탈리아"@ko,
+        "Attribution-NonCommercial 2.5 Italija"@lt,
+        "Atsaucoties-Nekomerciāli 2.5 Itāļu"@lv,
+        "НаведиИзвор-Некомерцијално 2.5 Италија"@mk,
+        "Attribution-NonCommercial 2.5 ഇറ്റലി"@ml,
+        "Attribution-NonCommercial 2.5 Итали"@mn,
+        "Pengiktirafan-BukanKomersial 2.5 Itali"@ms,
+        "Naamsvermelding-NietCommercieel 2.5 Italië"@nl,
+        "Navngivelse-Ikkekommersiell 2.5 Italia"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.5 Italia"@nso,
+        "Attribution-NonCommercial 2.5 Italy"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.5 Włochy"@pl,
+        "Atribuição - NãoComercial 2.5 Itália"@pt,
+        "Atribuição-Uso não-comercial 2.5 Italy"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.5 Itália"@pt-pt,
+        "Atribuire-NeComercial 2.5 Italia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Италия"@ru,
+        "Attribution-NonCommercial 2.5 Italy"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.5 Italija"@sl,
+        "Attribution-NonCommercial 2.5 Itali"@sq,
+        "Autorstvo-Nekomercijalno 2.5 Italija"@sr,
+        "Ауторство-Некомерцијално 2.5 Италија"@sr,
+        "Autorstvo-Nekomercijalno 2.5 Italija"@sr-latn,
+        "Attribution-NonCommercial 2.5 Italy"@st,
+        "Erkännande-IckeKommersiell 2.5 Italien"@sv,
+        "Attribution-NonCommercial 2.5 இத்தாலி"@ta,
+        "Attribution-NonCommercial 2.5 ఇటలీ"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 อิตาลี"@th,
+        "Alıntı-Gayriticari 2.5 İtalya"@tr,
+        "Attribution-NonCommercial 2.5 Italy"@uk,
+        "Attribution-NonCommercial 2.5 Italy"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.5 Nước Italy"@vi,
+        "署名-非商业性使用 2.5 意大利"@zh,
+        "姓名標示-非商業性 2.5 義大利"@zh-hk,
+        "姓名標示-非商業性 2.5 義大利"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 i-Italy"@zu,
+        "${Attribution-NonCommercial} 2.5 ${Italy}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-2.5-it> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.5/it/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.5/it/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-2.5-it> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/it/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/2.5/it/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc" ;
+    dc:replaces <https://licensedb.org/id/CC-BY-NC-2.0-it> ;
+    dc:source <http://creativecommons.org/licenses/by-nc/2.5/> ;
+    dc:title "Erkenning-NieKommersieel 2.5 Italië"@af,
+        "نسب - غير تجاري 2.5 ايطاليا"@ar,
+        "Attribution-NonCommercial 2.5 Italy"@as,
+        "Attribution-NonCommercial 2.5 Italy"@ast,
+        "Attribution-NonCommercial 2.5 Italy"@ast-es,
+        "Attribution-NonCommercial 2.5 Italy"@az,
+        "Attribution-NonCommercial 2.5 Італія"@be,
+        "Признание-Некомерсиално 2.5 Италия"@bg,
+        "Attribution-NonCommercial 2.5 Italy"@bn,
+        "Reconeixement-NoComercial 2.5 Itàlia"@ca,
+        "Uveďte autora-Neužívejte komerčně 2.5 Itálie"@cs,
+        "Navngivelse-IkkeKommerciel 2.5 Italien"@da,
+        "Namensnennung-Nicht-kommerziell 2.5 Italien"@de,
+        "Namensnennung-NichtKommerziell 2.5 Italien"@de-at,
+        "Namensnennung-NichtKommerziell 2.5 Italien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.5 Ιταλία"@el,
+        "Attribution-NonCommercial 2.5 Italy"@en,
+        "Attribution-NonCommercial 2.5 Italy"@en-ca,
+        "Attribution-NonCommercial 2.5 Italy"@en-gb,
+        "Attribution-NonCommercial 2.5 Italy"@en-hk,
+        "Attribution-NonCommercial 2.5 Italy"@en-sg,
+        "Attribution-NonCommercial 2.5 Italy"@en-us,
+        "Atribuite-Nekomerce 2.5 Italujo"@eo,
+        "Atribución-NoComercial 2.5 Italia"@es,
+        "Atribución-NoComercial 2.5 Italia"@es-ar,
+        "Atribución-NoComercial 2.5 Italia"@es-cl,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-co,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-ec,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-es,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-gt,
+        "Atribución-No Comercial 2.5 Italia"@es-mx,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-pe,
+        "Reconocimiento-NoComercial 2.5 Italia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 2.5 Itaalia"@et,
+        "Aitortu-EzKomertziala 2.5 Italia"@eu,
+        "Attribution-NonCommercial 2.5 ایتالیا"@fa,
+        "Nimeä-Epäkaupallinen 2.5 Italia"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Italie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Italie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Italie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 2.5 Italie"@fr-lu,
+        "Attribution-NonCommercial 2.5 Italy"@ga,
+        "Recoñecemento-NonComercial 2.5 Italia"@gl,
+        "ייחוס-שימוש לא מסחרי 2.5 איטליה"@he,
+        "Attribution-NonCommercial 2.5 इटली"@hi,
+        "Imenovanje-Nekomercijalno 2.5 Italija"@hr,
+        "Nevezd meg! - Ne add el! 2.5 Olaszország"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 2.5 Իտալիա"@hy,
+        "Attribusi-NonKomersial 2.5 Italia"@id,
+        "Attribution-NonCommercial 2.5 Ítalía"@is,
+        "Attribuzione - Non commerciale 2.5 Italia"@it,
+        "Attribuzione - Non commerciale 2.5 Italia"@it-ch,
+        "表示 - 非営利 2.5 イタリア"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.5 იტალია"@ka,
+        "Коммерциялық емес 2.5 Italy"@kk,
+        "저작자표시-비영리 2.5 이탈리아"@ko,
+        "Attribution-NonCommercial 2.5 Italija"@lt,
+        "Atsaucoties-Nekomerciāli 2.5 Itāļu"@lv,
+        "НаведиИзвор-Некомерцијално 2.5 Италија"@mk,
+        "Attribution-NonCommercial 2.5 ഇറ്റലി"@ml,
+        "Attribution-NonCommercial 2.5 Итали"@mn,
+        "Pengiktirafan-BukanKomersial 2.5 Itali"@ms,
+        "Naamsvermelding-NietCommercieel 2.5 Italië"@nl,
+        "Navngivelse-Ikkekommersiell 2.5 Italia"@no,
+        "Tsebagatšo- E sego ya kgwebo 2.5 Italia"@nso,
+        "Attribution-NonCommercial 2.5 Italy"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 2.5 Włochy"@pl,
+        "Atribuição - NãoComercial 2.5 Itália"@pt,
+        "Atribuição-Uso não-comercial 2.5 Italy"@pt-br,
+        "Atribuição-Uso Não-Comercial 2.5 Itália"@pt-pt,
+        "Atribuire-NeComercial 2.5 Italia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.5 Италия"@ru,
+        "Attribution-NonCommercial 2.5 Italy"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 2.5 Italija"@sl,
+        "Attribution-NonCommercial 2.5 Itali"@sq,
+        "Autorstvo-Nekomercijalno 2.5 Italija"@sr,
+        "Ауторство-Некомерцијално 2.5 Италија"@sr,
+        "Autorstvo-Nekomercijalno 2.5 Italija"@sr-latn,
+        "Attribution-NonCommercial 2.5 Italy"@st,
+        "Erkännande-IckeKommersiell 2.5 Italien"@sv,
+        "Attribution-NonCommercial 2.5 இத்தாலி"@ta,
+        "Attribution-NonCommercial 2.5 ఇటలీ"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.5 อิตาลี"@th,
+        "Alıntı-Gayriticari 2.5 İtalya"@tr,
+        "Attribution-NonCommercial 2.5 Italy"@uk,
+        "Attribution-NonCommercial 2.5 Italy"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  2.5 Nước Italy"@vi,
+        "署名-非商业性使用 2.5 意大利"@zh,
+        "姓名標示-非商業性 2.5 義大利"@zh-hk,
+        "姓名標示-非商業性 2.5 義大利"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.5 i-Italy"@zu,
+        "${Attribution-NonCommercial} 2.5 ${Italy}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/2.5/it/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/2.5/it/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/2.5/it/88x31.png> ;
+    li:id "CC-BY-NC-2.5-it" ;
+    li:name "CC BY-NC 2.5 IT" .
+

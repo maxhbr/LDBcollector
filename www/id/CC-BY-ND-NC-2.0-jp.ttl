@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nd-nc/2.0/jp/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/jp/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd-nc/2.0/jp/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nd-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nd-nc/2.0/> ;
+    dc:title "Erkenning-GeenAfleidings-NieKommersieel 2.0 Japan"@af,
+        "نسب المصنف- غير مشتق- غير تجاري 2.0 اليابان"@ar,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@as,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ast,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ast-es,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@az,
+        "Attribution-NoDerivs-NonCommercial 2.0 Японія"@be,
+        "Признание-Без производни-Некомерсиално 2.0 Япония"@bg,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@bn,
+        "Reconeixement-SenseObraDerivada-NoComercial 2.0 Japó"@ca,
+        "Uveďte autora-Nezasahujte do díla-Neužívejte komerčně 2.0 Japonsko"@cs,
+        "Navngivelse-IngenBearbejdelse-IkkeKommerciel 2.0 Japan"@da,
+        "Namensnennung-Keine Bearbeitung-Nicht-kommerziell 2.0 Japan"@de,
+        "Namensnennung-KeineBearbeitung-NichtKommerziell 2.0 Japan"@de-at,
+        "Namensnennung-KeineBearbeitung-NichtKommerziell 2.0 Japan"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα-Μη Εμπορική Χρήση 2.0 Ιαπωνία"@el,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-ca,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-gb,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-hk,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-sg,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-us,
+        "Atribuite-Nemodifite-Nekomerce 2.0 Japanujo"@eo,
+        "Atribución-SinDerivadas-NoComercial 2.0 Japón"@es,
+        "Atribución-SinDerivadas-NoComercial 2.0 Japón"@es-ar,
+        "Atribución-SinDerivadas-NoComercial 2.0 Japón"@es-cl,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-co,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-ec,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-es,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-gt,
+        "Atribución-No Derivadas-No Comercial 2.0 Japón"@es-mx,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-pe,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Jaapan"@et,
+        "Aitortu-LanEratorririkGabe-EzKomertziala 2.0 Japonia"@eu,
+        "Attribution-NoDerivs-NonCommercial 2.0 ژاپن"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Japani"@fi,
+        "Paternité - Pas de Modification - Pas d'Utilisation Commerciale 2.0 Japon"@fr,
+        "Paternité - Pas de Modification - Pas d'Utilisation Commerciale 2.0 Japon"@fr-ca,
+        "Paternité - Pas de Modification - Pas d'Utilisation Commerciale 2.0 Japon"@fr-ch,
+        "Paternité - Pas de Modification - Pas d'Utilisation Commerciale 2.0 Japon"@fr-lu,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ga,
+        "Recoñecemento-SenObraDerivada-NonComercial 2.0 Xapón"@gl,
+        "ייחוס-איסור יצירות נגזרות-שימוש לא מסחרי 2.0 יפן"@he,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@hi,
+        "Imenovanje-Bez prerada-Nekomercijalno 2.0 Japan"@hr,
+        "Nevezd meg! - Ne változtasd! - Ne add el! 2.0 Japán"@hu,
+        "Հղում-օգտագործում առանց վերափոխումների - ոչ-առևտրային օգտագործում 2.0 Japan"@hy,
+        "Atribusi-TanpaTurunan-NonKomersial 2.0 Jepang"@id,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@is,
+        "Attribuzione - Non opere derivate - Non commerciale 2.0 Giappone"@it,
+        "Attribuzione - Non opere derivate - Non commerciale 2.0 Giappone"@it-ch,
+        "表示 - 改変禁止 - 非営利 2.0 日本"@ja,
+        "ავტორობის მითითებით–გადამუშავების გარეშე–არაკომერციული გამოყენებისათვის  2.0 იაპონია"@ka,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@kk,
+        "저작자표시-변경금지-비영리 2.0 일본"@ko,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japonija"@lt,
+        "Atsaucoties-Nemainīts-Nekomerciāls 2.0 Japāna"@lv,
+        "НаведиИзвор-БезИзведениДела-Некомерцијално 2.0 Јапонија"@mk,
+        "Attribution-NoDerivs-NonCommercial 2.0 ജപ്പാൻ"@ml,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@mn,
+        "Pengiktirafan-TiadaTerbitan-BukanKomersial 2.0 Jepun"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken-NietCommercieel 2.0 Japan"@nl,
+        "Navngivelse-IngenBearbeidelse-Ikkekommersiell 2.0 Japan"@no,
+        "Tsebagatšo-Tše sa fetolwego-E sego ya Kgwebo 2.0 Japane"@nso,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych- Użycie Niekomercyjne 2.0 Japonia"@pl,
+        "Atribuição - SemDerivados - NãoComercial 2.0 Japão"@pt,
+        "Atribuição-Vedada a criação de obras derivadas-Uso não-comercial 2.0 Japan"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de obras derivadas 2.0 Japão"@pt-pt,
+        "Atribuire-FărăModificări-Necomercial 2.0 Japonia"@ro,
+        "Attribution-NoDerivs-NonCommercial (Атрибуция — Без производных произведений — Некоммерческое использование) 2.0 Япония"@ru,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@si-lk,
+        "Priznanje avtorstva-Brez predelav-Nekomercialno 2.0 Japonska"@sl,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japoni"@sq,
+        "Autorstvo-Bez prerada-Nekomercijalno 2.0 Japan"@sr,
+        "Ауторство-Без прерада-Некомерцијално 2.0 Јапан"@sr,
+        "Autorstvo-Bez prerada-Nekomercijalno 2.0 Japan"@sr-latn,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@st,
+        "Erkännande-IngaBearbetningar-IckeKommersiell 2.0 Japan"@sv,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ta,
+        "Attribution-NoDerivs-NonCommercial 2.0 జపాన్"@te,
+        "แสดงที่มา-ไม่ดัดแปลง-ไม่ใช้เพื่อการค้า 2.0 ่ญี่ปุ่น"@th,
+        "Alıntı-Türetilemez-Gayriticari 2.0 Japonya"@tr,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@uk,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ur,
+        "Ghi nhận công của tác giả- Không phái sinh - Phi thương mại  2.0 Nước Nhật Bản"@vi,
+        "署名-禁止演绎-非商业性使用 2.0 日本"@zh,
+        "姓名標示-禁止改作-非商業性 2.0 日本"@zh-hk,
+        "姓名標示-禁止改作-非商業性 2.0 日本"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu-Ungayisebenziseli Ezentengiselwano 2.0 Ejapane"@zu,
+        "${Attribution-NoDerivs-NonCommercial} 2.0 ${Japan}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-ND-NC-2.0-jp> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd-nc/2.0/jp/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd-nc/2.0/jp/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-ND-NC-2.0-jp> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/jp/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nd-nc/2.0/jp/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.0" ;
+    dc:identifier "by-nd-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nd-nc/2.0/> ;
+    dc:title "Erkenning-GeenAfleidings-NieKommersieel 2.0 Japan"@af,
+        "نسب المصنف- غير مشتق- غير تجاري 2.0 اليابان"@ar,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@as,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ast,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ast-es,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@az,
+        "Attribution-NoDerivs-NonCommercial 2.0 Японія"@be,
+        "Признание-Без производни-Некомерсиално 2.0 Япония"@bg,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@bn,
+        "Reconeixement-SenseObraDerivada-NoComercial 2.0 Japó"@ca,
+        "Uveďte autora-Nezasahujte do díla-Neužívejte komerčně 2.0 Japonsko"@cs,
+        "Navngivelse-IngenBearbejdelse-IkkeKommerciel 2.0 Japan"@da,
+        "Namensnennung-Keine Bearbeitung-Nicht-kommerziell 2.0 Japan"@de,
+        "Namensnennung-KeineBearbeitung-NichtKommerziell 2.0 Japan"@de-at,
+        "Namensnennung-KeineBearbeitung-NichtKommerziell 2.0 Japan"@de-ch,
+        "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα-Μη Εμπορική Χρήση 2.0 Ιαπωνία"@el,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-ca,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-gb,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-hk,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-sg,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@en-us,
+        "Atribuite-Nemodifite-Nekomerce 2.0 Japanujo"@eo,
+        "Atribución-SinDerivadas-NoComercial 2.0 Japón"@es,
+        "Atribución-SinDerivadas-NoComercial 2.0 Japón"@es-ar,
+        "Atribución-SinDerivadas-NoComercial 2.0 Japón"@es-cl,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-co,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-ec,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-es,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-gt,
+        "Atribución-No Derivadas-No Comercial 2.0 Japón"@es-mx,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-pe,
+        "Reconocimiento-SinObraDerivada-NoComercial 2.0 Japón"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.0 Jaapan"@et,
+        "Aitortu-LanEratorririkGabe-EzKomertziala 2.0 Japonia"@eu,
+        "Attribution-NoDerivs-NonCommercial 2.0 ژاپن"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.0 Japani"@fi,
+        "Paternité - Pas de Modification - Pas d'Utilisation Commerciale 2.0 Japon"@fr,
+        "Paternité - Pas de Modification - Pas d'Utilisation Commerciale 2.0 Japon"@fr-ca,
+        "Paternité - Pas de Modification - Pas d'Utilisation Commerciale 2.0 Japon"@fr-ch,
+        "Paternité - Pas de Modification - Pas d'Utilisation Commerciale 2.0 Japon"@fr-lu,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ga,
+        "Recoñecemento-SenObraDerivada-NonComercial 2.0 Xapón"@gl,
+        "ייחוס-איסור יצירות נגזרות-שימוש לא מסחרי 2.0 יפן"@he,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@hi,
+        "Imenovanje-Bez prerada-Nekomercijalno 2.0 Japan"@hr,
+        "Nevezd meg! - Ne változtasd! - Ne add el! 2.0 Japán"@hu,
+        "Հղում-օգտագործում առանց վերափոխումների - ոչ-առևտրային օգտագործում 2.0 Japan"@hy,
+        "Atribusi-TanpaTurunan-NonKomersial 2.0 Jepang"@id,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@is,
+        "Attribuzione - Non opere derivate - Non commerciale 2.0 Giappone"@it,
+        "Attribuzione - Non opere derivate - Non commerciale 2.0 Giappone"@it-ch,
+        "表示 - 改変禁止 - 非営利 2.0 日本"@ja,
+        "ავტორობის მითითებით–გადამუშავების გარეშე–არაკომერციული გამოყენებისათვის  2.0 იაპონია"@ka,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@kk,
+        "저작자표시-변경금지-비영리 2.0 일본"@ko,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japonija"@lt,
+        "Atsaucoties-Nemainīts-Nekomerciāls 2.0 Japāna"@lv,
+        "НаведиИзвор-БезИзведениДела-Некомерцијално 2.0 Јапонија"@mk,
+        "Attribution-NoDerivs-NonCommercial 2.0 ജപ്പാൻ"@ml,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@mn,
+        "Pengiktirafan-TiadaTerbitan-BukanKomersial 2.0 Jepun"@ms,
+        "Naamsvermelding-GeenAfgeleideWerken-NietCommercieel 2.0 Japan"@nl,
+        "Navngivelse-IngenBearbeidelse-Ikkekommersiell 2.0 Japan"@no,
+        "Tsebagatšo-Tše sa fetolwego-E sego ya Kgwebo 2.0 Japane"@nso,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@oci-es,
+        "Uznanie autorstwa-Bez utworów zależnych- Użycie Niekomercyjne 2.0 Japonia"@pl,
+        "Atribuição - SemDerivados - NãoComercial 2.0 Japão"@pt,
+        "Atribuição-Vedada a criação de obras derivadas-Uso não-comercial 2.0 Japan"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de obras derivadas 2.0 Japão"@pt-pt,
+        "Atribuire-FărăModificări-Necomercial 2.0 Japonia"@ro,
+        "Attribution-NoDerivs-NonCommercial (Атрибуция — Без производных произведений — Некоммерческое использование) 2.0 Япония"@ru,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@si-lk,
+        "Priznanje avtorstva-Brez predelav-Nekomercialno 2.0 Japonska"@sl,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japoni"@sq,
+        "Autorstvo-Bez prerada-Nekomercijalno 2.0 Japan"@sr,
+        "Ауторство-Без прерада-Некомерцијално 2.0 Јапан"@sr,
+        "Autorstvo-Bez prerada-Nekomercijalno 2.0 Japan"@sr-latn,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@st,
+        "Erkännande-IngaBearbetningar-IckeKommersiell 2.0 Japan"@sv,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ta,
+        "Attribution-NoDerivs-NonCommercial 2.0 జపాన్"@te,
+        "แสดงที่มา-ไม่ดัดแปลง-ไม่ใช้เพื่อการค้า 2.0 ่ญี่ปุ่น"@th,
+        "Alıntı-Türetilemez-Gayriticari 2.0 Japonya"@tr,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@uk,
+        "Attribution-NoDerivs-NonCommercial 2.0 Japan"@ur,
+        "Ghi nhận công của tác giả- Không phái sinh - Phi thương mại  2.0 Nước Nhật Bản"@vi,
+        "署名-禁止演绎-非商业性使用 2.0 日本"@zh,
+        "姓名標示-禁止改作-非商業性 2.0 日本"@zh-hk,
+        "姓名標示-禁止改作-非商業性 2.0 日本"@zh-tw,
+        "Qaphela Umnikazi-Ungasuseli lutho kulokhu-Ungayisebenziseli Ezentengiselwano 2.0 Ejapane"@zu,
+        "${Attribution-NoDerivs-NonCommercial} 2.0 ${Japan}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nd-nc/2.0/jp/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nd-nc/2.0/jp/80x15.png>,
+        <http://i.creativecommons.org/l/by-nd-nc/2.0/jp/88x31.png> ;
+    li:id "CC-BY-ND-NC-2.0-jp" ;
+    li:name "CC BY-ND-NC 2.0 JP" .
+

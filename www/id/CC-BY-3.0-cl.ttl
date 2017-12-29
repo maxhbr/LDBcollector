@@ -1,0 +1,222 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by/3.0/cl/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/cl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Chili"@af,
+        "نسب المصنف  3.0 شيلي"@ar,
+        "Attribution 3.0 Chile"@as,
+        "Attribution 3.0 Chile"@ast,
+        "Attribution 3.0 Chile"@ast-es,
+        "Attribution 3.0 Chile"@az,
+        "Атрыбуцыя 3.0 Чылі"@be,
+        "Признание 3.0 Чили"@bg,
+        "Attribution 3.0 Chile"@bn,
+        "Reconeixement 3.0 Xile"@ca,
+        "Uveďte autora 3.0 Čile"@cs,
+        "Navngivelse 3.0 Chile"@da,
+        "Namensnennung 3.0 Chile"@de,
+        "Namensnennung 3.0 Chile"@de-at,
+        "Namensnennung 3.0 Chile"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Χιλή"@el,
+        "Attribution 3.0 Chile"@en,
+        "Attribution 3.0 Chile"@en-ca,
+        "Attribution 3.0 Chile"@en-gb,
+        "Attribution 3.0 Chile"@en-hk,
+        "Attribution 3.0 Chile"@en-sg,
+        "Attribution 3.0 Chile"@en-us,
+        "Atribuite 3.0 Ĉilio"@eo,
+        "Atribución 3.0 Chile"@es,
+        "Atribución 3.0 Chile"@es-ar,
+        "Reconocimiento 3.0 Chile"@es-es,
+        "Reconocimiento 3.0 Chile"@es-pe,
+        "Autorile viitamine 3.0 Tšiili"@et,
+        "Aitortu 3.0 Txile"@eu,
+        "Attribution 3.0 شیلی"@fa,
+        "Nimeä 3.0 Chile"@fi,
+        "Attribution 3.0 Chili"@fr,
+        "Paternité 3.0 Chili"@fr-ca,
+        "Paternité 3.0 Chili"@fr-ch,
+        "Paternité 3.0 Chili"@fr-lu,
+        "Attribution 3.0 Chile"@ga,
+        "Recoñecemento 3.0 Chile"@gl,
+        "ייחוס 3.0 צ'ילה"@he,
+        "Attribution 3.0 Chile"@hi,
+        "Imenovanje 3.0 Čile"@hr,
+        "Nevezd meg! 3.0 Chile"@hu,
+        "Հղում 3.0 Չիլի"@hy,
+        "Atribusi 3.0 Chili"@id,
+        "Attribution 3.0 Chíle"@is,
+        "Attribuzione 3.0 Cile"@it,
+        "Attribuzione 3.0 Chile"@it-ch,
+        "表示 3.0 チリ"@ja,
+        "ავტორობის მითითებით  3.0 ჩილე"@ka,
+        "Атауын сақтау 3.0 Chile"@kk,
+        "저작자표시(Attribution) 3.0 칠레"@ko,
+        "Priskyrimas 3.0 Čilė"@lt,
+        "Atsaucoties 3.0 Čīle"@lv,
+        "Наведи извор 3.0 Чиле"@mk,
+        "കടപ്പാട് 3.0 ചിലി"@ml,
+        "Attribution 3.0 Chile"@mn,
+        "Pengiktirafan 3.0 Chile"@ms,
+        "Naamsvermelding 3.0 Chili"@nl,
+        "Navngivelse 3.0 Chile"@no,
+        "Tsebagatšo 3.0 Chile"@nso,
+        "Attribution 3.0 Chile"@oci-es,
+        "Uznanie autorstwa 3.0 Chile"@pl,
+        "Atribuição  3.0 Chile"@pt,
+        "Atribuição 3.0 Chile"@pt-br,
+        "Atribuição 3.0 Chile"@pt-pt,
+        "Atribuire 3.0 Chile"@ro,
+        "Attribution (Атрибуция) 3.0 Чили"@ru,
+        "Attribution 3.0 Chile"@si-lk,
+        "Priznanje avtorstva 3.0 Čile"@sl,
+        "Attribution 3.0 Kili"@sq,
+        "Autorstvo 3.0 Čile"@sr,
+        "Ауторство 3.0 Чиле"@sr,
+        "Autorstvo 3.0 Čile"@sr-latn,
+        "Erkännande 3.0 Chile"@sv,
+        "Attribution 3.0 சிலி"@ta,
+        "ఆపాదింపు 3.0 చిలీ"@te,
+        "แสดงที่มา 3.0 ชิลี"@th,
+        "Attribution 3.0 Şili"@tr,
+        "Attribution 3.0 Chile"@uk,
+        "Attribution 3.0 Chile"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Chi lê"@vi,
+        "署名 3.0 智利"@zh,
+        "姓名標示 3.0 智利"@zh-hk,
+        "姓名標示 3.0 智利"@zh-tw,
+        "Qaphela Umnikazi 3.0 Echile"@zu,
+        "${Attribution} 3.0 ${Chile}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-3.0-cl> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/cl/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/cl/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-3.0-cl> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by/3.0/cl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by" ;
+    dc:source <http://creativecommons.org/licenses/by/3.0/> ;
+    dc:title "Erkenning 3.0 Chili"@af,
+        "نسب المصنف  3.0 شيلي"@ar,
+        "Attribution 3.0 Chile"@as,
+        "Attribution 3.0 Chile"@ast,
+        "Attribution 3.0 Chile"@ast-es,
+        "Attribution 3.0 Chile"@az,
+        "Атрыбуцыя 3.0 Чылі"@be,
+        "Признание 3.0 Чили"@bg,
+        "Attribution 3.0 Chile"@bn,
+        "Reconeixement 3.0 Xile"@ca,
+        "Uveďte autora 3.0 Čile"@cs,
+        "Navngivelse 3.0 Chile"@da,
+        "Namensnennung 3.0 Chile"@de,
+        "Namensnennung 3.0 Chile"@de-at,
+        "Namensnennung 3.0 Chile"@de-ch,
+        "Αναφορά Δημιουργού 3.0 Χιλή"@el,
+        "Attribution 3.0 Chile"@en,
+        "Attribution 3.0 Chile"@en-ca,
+        "Attribution 3.0 Chile"@en-gb,
+        "Attribution 3.0 Chile"@en-hk,
+        "Attribution 3.0 Chile"@en-sg,
+        "Attribution 3.0 Chile"@en-us,
+        "Atribuite 3.0 Ĉilio"@eo,
+        "Atribución 3.0 Chile"@es,
+        "Atribución 3.0 Chile"@es-ar,
+        "Reconocimiento 3.0 Chile"@es-es,
+        "Reconocimiento 3.0 Chile"@es-pe,
+        "Autorile viitamine 3.0 Tšiili"@et,
+        "Aitortu 3.0 Txile"@eu,
+        "Attribution 3.0 شیلی"@fa,
+        "Nimeä 3.0 Chile"@fi,
+        "Attribution 3.0 Chili"@fr,
+        "Paternité 3.0 Chili"@fr-ca,
+        "Paternité 3.0 Chili"@fr-ch,
+        "Paternité 3.0 Chili"@fr-lu,
+        "Attribution 3.0 Chile"@ga,
+        "Recoñecemento 3.0 Chile"@gl,
+        "ייחוס 3.0 צ'ילה"@he,
+        "Attribution 3.0 Chile"@hi,
+        "Imenovanje 3.0 Čile"@hr,
+        "Nevezd meg! 3.0 Chile"@hu,
+        "Հղում 3.0 Չիլի"@hy,
+        "Atribusi 3.0 Chili"@id,
+        "Attribution 3.0 Chíle"@is,
+        "Attribuzione 3.0 Cile"@it,
+        "Attribuzione 3.0 Chile"@it-ch,
+        "表示 3.0 チリ"@ja,
+        "ავტორობის მითითებით  3.0 ჩილე"@ka,
+        "Атауын сақтау 3.0 Chile"@kk,
+        "저작자표시(Attribution) 3.0 칠레"@ko,
+        "Priskyrimas 3.0 Čilė"@lt,
+        "Atsaucoties 3.0 Čīle"@lv,
+        "Наведи извор 3.0 Чиле"@mk,
+        "കടപ്പാട് 3.0 ചിലി"@ml,
+        "Attribution 3.0 Chile"@mn,
+        "Pengiktirafan 3.0 Chile"@ms,
+        "Naamsvermelding 3.0 Chili"@nl,
+        "Navngivelse 3.0 Chile"@no,
+        "Tsebagatšo 3.0 Chile"@nso,
+        "Attribution 3.0 Chile"@oci-es,
+        "Uznanie autorstwa 3.0 Chile"@pl,
+        "Atribuição  3.0 Chile"@pt,
+        "Atribuição 3.0 Chile"@pt-br,
+        "Atribuição 3.0 Chile"@pt-pt,
+        "Atribuire 3.0 Chile"@ro,
+        "Attribution (Атрибуция) 3.0 Чили"@ru,
+        "Attribution 3.0 Chile"@si-lk,
+        "Priznanje avtorstva 3.0 Čile"@sl,
+        "Attribution 3.0 Kili"@sq,
+        "Autorstvo 3.0 Čile"@sr,
+        "Ауторство 3.0 Чиле"@sr,
+        "Autorstvo 3.0 Čile"@sr-latn,
+        "Erkännande 3.0 Chile"@sv,
+        "Attribution 3.0 சிலி"@ta,
+        "ఆపాదింపు 3.0 చిలీ"@te,
+        "แสดงที่มา 3.0 ชิลี"@th,
+        "Attribution 3.0 Şili"@tr,
+        "Attribution 3.0 Chile"@uk,
+        "Attribution 3.0 Chile"@ur,
+        "Ghi nhận công của tác giả 3.0 Nước Chi lê"@vi,
+        "署名 3.0 智利"@zh,
+        "姓名標示 3.0 智利"@zh-hk,
+        "姓名標示 3.0 智利"@zh-tw,
+        "Qaphela Umnikazi 3.0 Echile"@zu,
+        "${Attribution} 3.0 ${Chile}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by/3.0/cl/> ;
+    foaf:logo <http://i.creativecommons.org/l/by/3.0/cl/80x15.png>,
+        <http://i.creativecommons.org/l/by/3.0/cl/88x31.png> ;
+    li:id "CC-BY-3.0-cl" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY 3.0 CL" .
+

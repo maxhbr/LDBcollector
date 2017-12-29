@@ -1,0 +1,795 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-3.0-ch",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/ch/",
+    "cc:legalcode": {
+        "@id": "http://creativecommons.org/licenses/by-nd/3.0/ch/legalcode.de",
+        "dc:language": "de"
+    },
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 3.0 Switserland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 3.0 سويسرا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Reconocimiento-NonDerivaos 3.0 Switzerland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Reconocimiento-NonDerivaos 3.0 Switzerland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 3.0 Швейцарыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 3.0 Швейцария"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 3.0 Suïssa"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 3.0 Švýcarsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 3.0 Schweiz"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 3.0 Schweiz"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 3.0 Schweiz"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-Keine Bearbeitung 3.0 Schweiz"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ελβετία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 3.0 Svisujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 3.0 Suiza"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 3.0 Suiza"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Suiza"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 3.0 Suiza"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Šveits"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 3.0 Suitza"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 3.0 سویس"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 3.0 Sveitsi"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 3.0 Suisse"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 3.0 Suisse"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 3.0 Suisse"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 3.0 Suisse"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 3.0 Switzerland"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 3.0 שוויץ"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 3.0 Švicarska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 3.0 Svájc"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Շվեյցարիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 3.0 Swiss"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 3.0 Switzerland"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 3.0 Switzerland"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 3.0 スイス"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 შვეიცარია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 3.0 Switzerland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 3.0 스위스"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 3.0 Šveicarija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 3.0 Šveice"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 3.0 Швајцарија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 3.0 സ്വിറ്റ്സർലാന്റ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 3.0 Switzerland"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Zwitserland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 3.0 Sveits"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Switzerland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Szwajcaria"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 3.0 Suíça"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-SemDerivados 3.0 Suíça"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Switzerland"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 3.0 Elveţia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Швейцария"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 3.0 Švica"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 3.0 Zvicër"
+        },
+        {
+            "@language": "sr",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 3.0 Швајцарска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 3.0 Švajcarska"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 3.0 Schweiz"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 3.0 స్విట్జర్లాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 สวิสเซอร์แลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 3.0 İsviçre"
+        },
+        {
+            "@language": "uk",
+            "@value": "Із зазначенням авторства - Без похідних творів 3.0 Швейцарія"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 3.0 Switzerland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Switzerland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 3.0 瑞士"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 3.0 瑞士"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 3.0 瑞士"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 ESwitzerland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 3.0 ${Switzerland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/3.0/ch/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/ch/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/3.0/ch/legalcode.de",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 3.0 Switserland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 3.0 سويسرا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Reconocimiento-NonDerivaos 3.0 Switzerland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Reconocimiento-NonDerivaos 3.0 Switzerland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 3.0 Швейцарыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 3.0 Швейцария"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 3.0 Suïssa"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 3.0 Švýcarsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 3.0 Schweiz"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 3.0 Schweiz"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 3.0 Schweiz"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-Keine Bearbeitung 3.0 Schweiz"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 3.0 Ελβετία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 3.0 Svisujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 3.0 Suiza"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 3.0 Suiza"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Suiza"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 3.0 Suiza"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 3.0 Šveits"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 3.0 Suitza"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 3.0 سویس"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 3.0 Sveitsi"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 3.0 Suisse"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 3.0 Suisse"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 3.0 Suisse"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 3.0 Suisse"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 3.0 Switzerland"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 3.0 שוויץ"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 3.0 Švicarska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 3.0 Svájc"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 3.0 Շվեյցարիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 3.0 Swiss"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 3.0 Switzerland"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 3.0 Switzerland"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 3.0 スイス"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 3.0 შვეიცარია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 3.0 Switzerland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 3.0 스위스"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 3.0 Šveicarija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 3.0 Šveice"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 3.0 Швајцарија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 3.0 സ്വിറ്റ്സർലാന്റ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 3.0 Switzerland"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 3.0 Zwitserland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 3.0 Sveits"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 3.0 Switzerland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 3.0 Szwajcaria"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 3.0 Suíça"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-SemDerivados 3.0 Suíça"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 3.0 Switzerland"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 3.0 Elveţia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 3.0 Швейцария"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 3.0 Švica"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 3.0 Zvicër"
+            },
+            {
+                "@language": "sr",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 3.0 Швајцарска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 3.0 Švajcarska"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 3.0 Schweiz"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 3.0 స్విట్జర్లాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 3.0 สวิสเซอร์แลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 3.0 İsviçre"
+            },
+            {
+                "@language": "uk",
+                "@value": "Із зазначенням авторства - Без похідних творів 3.0 Швейцарія"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 3.0 Switzerland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 3.0 Switzerland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 3.0 瑞士"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 3.0 瑞士"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 3.0 瑞士"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 3.0 ESwitzerland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 3.0 ${Switzerland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-3.0-ch",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/3.0/ch/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/3.0/ch/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/3.0/ch/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/3.0/ch/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-3.0-ch",
+    "li:name": "CC BY-ND 3.0 CH"
+}

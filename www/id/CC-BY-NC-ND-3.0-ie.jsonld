@@ -1,0 +1,794 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-ND-3.0-ie",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/ie/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/3.0/ie/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by-nc-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel-GeenAfleidings 3.0 Ierland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير تجاري - لا اشتقاق 3.0  أيرلاندا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ірландыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Без производни 3.0 Ирландия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-SenseObraDerivada 3.0 Irlanda"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Irsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Irland"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Irland"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Irland"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Irland"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Ιρλανδία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Nemodifite 3.0 Irlando"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-SinDerivadas 3.0 Irlanda"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-SinDerivadas 3.0 Irlanda"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Irlanda"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Irlanda"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Iirimaa"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Irlanda"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 ایرلند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Irlanti"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Irlande"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Irlande"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Irlande"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Irlande"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-SenObraDerivada 3.0 Irlanda"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 אירלנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 ऐरलैंड"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Bez prerada 3.0 Irska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Írország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Իրլանդիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-TanpaTurunan 3.0 Irlandia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Írland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 3.0 Irlanda"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 3.0 Irlanda"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 改変禁止 3.0 アイルランド"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ირლანდია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-변경금지 3.0 아일랜드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Airija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Īrija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Ирска"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 അയർലാന്റ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ирланд"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Ireland"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Ierland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Irland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Ireland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Irlandia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - SemDerivados 3.0 Irlanda"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Ireland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Irlanda"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 3.0 Irlanda"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Ирландия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Irska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Irlandë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Без прерада 3.0 Ирска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 3.0 Irska"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Irland"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 ஐயர்லாந்து"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 ఐర్లాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 ไอร์แลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-NoDerivs 3.0 İrlanda"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Nước Ireland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-禁止演绎 3.0 爱尔兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-禁止改作 3.0 愛爾蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-禁止改作 3.0 愛爾蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 i-Ireland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-NoDerivs} 3.0 ${Ireland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-nd/3.0/ie/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/ie/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/3.0/ie/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by-nc-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel-GeenAfleidings 3.0 Ierland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير تجاري - لا اشتقاق 3.0  أيرلاندا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ірландыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Без производни 3.0 Ирландия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-SenseObraDerivada 3.0 Irlanda"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Irsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Irland"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Irland"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Irland"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Irland"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Ιρλανδία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Nemodifite 3.0 Irlando"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-SinDerivadas 3.0 Irlanda"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-SinDerivadas 3.0 Irlanda"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Irlanda"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 3.0 Irlanda"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Iirimaa"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Irlanda"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 ایرلند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Irlanti"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Irlande"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Irlande"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Irlande"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Irlande"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-SenObraDerivada 3.0 Irlanda"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 אירלנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 ऐरलैंड"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Bez prerada 3.0 Irska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Írország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Իրլանդիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-TanpaTurunan 3.0 Irlandia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Írland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 3.0 Irlanda"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 3.0 Irlanda"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 改変禁止 3.0 アイルランド"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ირლანდია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-변경금지 3.0 아일랜드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Airija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Īrija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Ирска"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 അയർലാന്റ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ирланд"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Ireland"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Ierland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Irland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Ireland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Irlandia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - SemDerivados 3.0 Irlanda"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Ireland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Irlanda"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 3.0 Irlanda"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Ирландия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Irska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Irlandë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Без прерада 3.0 Ирска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 3.0 Irska"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Irland"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 ஐயர்லாந்து"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 ఐర్లాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 ไอร์แลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-NoDerivs 3.0 İrlanda"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-NoDerivs 3.0 Ireland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Nước Ireland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-禁止演绎 3.0 爱尔兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-禁止改作 3.0 愛爾蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-禁止改作 3.0 愛爾蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 i-Ireland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-NoDerivs} 3.0 ${Ireland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-ND-3.0-ie",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-nd/3.0/ie/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-nd/3.0/ie/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-nd/3.0/ie/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-nd/3.0/ie/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-ND-3.0-ie",
+    "li:name": "CC BY-NC-ND 3.0 IE"
+}

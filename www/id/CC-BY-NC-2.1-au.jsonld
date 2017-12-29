@@ -1,0 +1,855 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-2.1-au",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/au/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.1/au/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.1",
+    "dc:identifier": "by-nc",
+    "dc:isReplacedBy": "https://licensedb.org/id/CC-BY-NC-2.5-au",
+    "dc:replaces": "https://licensedb.org/id/CC-BY-NC-2.0-au",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/2.1/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 2.1 Australië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 2.1 أستراليا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 2.1 Аўстралія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 2.1 Австралия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 2.1 Austràlia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 2.1 Austrálie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 2.1 Australien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 2.1 Australien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 2.1 Australien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 2.1 Australien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.1 Αυστραλία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 2.1 Aŭstralio"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 2.1 Australia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 2.1 Australia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 2.1 Austraalia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 2.1 Australia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 2.1 استرالیا"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 2.1 Australia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.1 Australie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.1 Australie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.1 Australie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.1 Australie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 2.1 Australia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 2.1 אוסטרליה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 2.1 Australija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 2.1 Ausztrália"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.1 Australia"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 2.1 Australia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 2.1 Australia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 2.1 Australia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 2.1 オーストラリア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.1 ავსტრალია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 2.1 Australia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 2.1 Australia"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 2.1 Australija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 2.1 Austrālija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 2.1 Австралија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 2.1 ആസ്ട്രേലിയ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 2.1 Australia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 2.1 Australië"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 2.1 Australia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 2.1 Australia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.1 Australia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 2.1 Austrália"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 2.1 Australia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 2.1 Austrália"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 2.1 Australia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.1 Австралия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 2.1 Avstralija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 2.1 Australi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 2.1 Australija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 2.1 Аустралија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 2.1 Australija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 2.1 Australien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 2.1 ఆస్ట్రేలియా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.1 ออสเตรเลีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 2.1 Avustralya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 2.1 Australia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  2.1 Nước Úc "
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 2.1 澳大利亚"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 2.1 澳大利亞"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 2.1 澳大利亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.1 e-Australia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 2.1 ${Australia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/2.1/au/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/au/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.1/au/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.1",
+        "dc:identifier": "by-nc",
+        "dc:isReplacedBy": "http://creativecommons.org/licenses/by-nc/2.5/au/",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/2.1/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 2.1 Australië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 2.1 أستراليا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 2.1 Аўстралія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 2.1 Австралия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 2.1 Austràlia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 2.1 Austrálie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 2.1 Australien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 2.1 Australien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 2.1 Australien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 2.1 Australien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.1 Αυστραλία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 2.1 Aŭstralio"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 2.1 Australia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 2.1 Australia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 2.1 Austraalia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 2.1 Australia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 2.1 استرالیا"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 2.1 Australia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.1 Australie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.1 Australie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.1 Australie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.1 Australie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 2.1 Australia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 2.1 אוסטרליה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 2.1 Australija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 2.1 Ausztrália"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.1 Australia"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 2.1 Australia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 2.1 Australia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 2.1 Australia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 2.1 オーストラリア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.1 ავსტრალია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 2.1 Australia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 2.1 Australia"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 2.1 Australija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 2.1 Austrālija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 2.1 Австралија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 2.1 ആസ്ട്രേലിയ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 2.1 Australia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 2.1 Australië"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 2.1 Australia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 2.1 Australia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.1 Australia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 2.1 Austrália"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 2.1 Australia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 2.1 Austrália"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 2.1 Australia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.1 Австралия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 2.1 Avstralija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 2.1 Australi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 2.1 Australija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 2.1 Аустралија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 2.1 Australija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 2.1 Australien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 2.1 ఆస్ట్రేలియా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.1 ออสเตรเลีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 2.1 Avustralya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 2.1 Australia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  2.1 Nước Úc "
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 2.1 澳大利亚"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 2.1 澳大利亞"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 2.1 澳大利亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.1 e-Australia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 2.1 ${Australia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-2.1-au",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/2.1/au/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/2.1/au/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/2.1/au/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/2.1/au/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-2.1-au",
+    "li:name": "CC BY-NC 2.1 AU"
+}

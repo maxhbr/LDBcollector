@@ -1,0 +1,836 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-PD-mark",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:legalcode": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/choose/mark/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "mark",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ar",
+            "@value": "علامة المجال العام 1.0"
+        },
+        {
+            "@language": "as",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ast",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "az",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "be",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "bg",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "bn",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ca",
+            "@value": "Marca de Domini Públic 1.0"
+        },
+        {
+            "@language": "cs",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "da",
+            "@value": "Public Domain markeret 1.0"
+        },
+        {
+            "@language": "de",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "el",
+            "@value": "Σήμα Δημόσιου Τομέα 1.0"
+        },
+        {
+            "@language": "en",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "eo",
+            "@value": "Publikaĵa Marko 1.0"
+        },
+        {
+            "@language": "es",
+            "@value": "Etiqueta de Dominio Público 1.0"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "et",
+            "@value": "Vabas kasutuses oleva teose märgend 1.0"
+        },
+        {
+            "@language": "eu",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "fa",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "fi",
+            "@value": "Public Domain -merkki 1.0"
+        },
+        {
+            "@language": "fr",
+            "@value": "marque du domaine public 1.0"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ga",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "gl",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "he",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "hi",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "hr",
+            "@value": "Oznaka javnog dobra 1.0"
+        },
+        {
+            "@language": "hu",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "hy",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "id",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "is",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "it",
+            "@value": "Marchio di pubblico dominio 1.0"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ja",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ka",
+            "@value": "საზოგადოებრივი საკუთრების ნიშანი 1.0"
+        },
+        {
+            "@language": "kk",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ko",
+            "@value": "공개 마크 1.0"
+        },
+        {
+            "@language": "lt",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "lv",
+            "@value": "Sabiedrības īpašuma iezīme 1.0"
+        },
+        {
+            "@language": "mk",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ml",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "mn",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ms",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "nl",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "no",
+            "@value": "Public Domain-merket 1.0"
+        },
+        {
+            "@language": "nso",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "pl",
+            "@value": "Oznaczenie domeny publicznej 1.0"
+        },
+        {
+            "@language": "pt",
+            "@value": "Marcação de Domínio Público 1.0"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Registro de Domínio Público 1.0"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ro",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ru",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "sl",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "sq",
+            "@value": "Shenjë Përkatësie Publike 1.0"
+        },
+        {
+            "@language": "sr",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "sv",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ta",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "te",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "th",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "tr",
+            "@value": "Kamuya Açık Eser İşareti 1.0"
+        },
+        {
+            "@language": "uk",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "ur",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "vi",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "zh",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "公共領域標誌 1.0"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "公共領域標誌 1.0"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "公眾領域標誌 1.0"
+        },
+        {
+            "@language": "zu",
+            "@value": "Public Domain Mark 1.0"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Public Domain Mark} 1.0"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "@type": "cc:License",
+        "cc:legalcode": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/choose/mark/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "mark",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ar",
+                "@value": "علامة المجال العام 1.0"
+            },
+            {
+                "@language": "as",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ast",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "az",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "be",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "bg",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "bn",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ca",
+                "@value": "Marca de Domini Públic 1.0"
+            },
+            {
+                "@language": "cs",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "da",
+                "@value": "Public Domain markeret 1.0"
+            },
+            {
+                "@language": "de",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "el",
+                "@value": "Σήμα Δημόσιου Τομέα 1.0"
+            },
+            {
+                "@language": "en",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "eo",
+                "@value": "Publikaĵa Marko 1.0"
+            },
+            {
+                "@language": "es",
+                "@value": "Etiqueta de Dominio Público 1.0"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "et",
+                "@value": "Vabas kasutuses oleva teose märgend 1.0"
+            },
+            {
+                "@language": "eu",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "fa",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "fi",
+                "@value": "Public Domain -merkki 1.0"
+            },
+            {
+                "@language": "fr",
+                "@value": "marque du domaine public 1.0"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ga",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "gl",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "he",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "hi",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "hr",
+                "@value": "Oznaka javnog dobra 1.0"
+            },
+            {
+                "@language": "hu",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "hy",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "id",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "is",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "it",
+                "@value": "Marchio di pubblico dominio 1.0"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ja",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ka",
+                "@value": "საზოგადოებრივი საკუთრების ნიშანი 1.0"
+            },
+            {
+                "@language": "kk",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ko",
+                "@value": "공개 마크 1.0"
+            },
+            {
+                "@language": "lt",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "lv",
+                "@value": "Sabiedrības īpašuma iezīme 1.0"
+            },
+            {
+                "@language": "mk",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ml",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "mn",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ms",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "nl",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "no",
+                "@value": "Public Domain-merket 1.0"
+            },
+            {
+                "@language": "nso",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "pl",
+                "@value": "Oznaczenie domeny publicznej 1.0"
+            },
+            {
+                "@language": "pt",
+                "@value": "Marcação de Domínio Público 1.0"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Registro de Domínio Público 1.0"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ro",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ru",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "sl",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "sq",
+                "@value": "Shenjë Përkatësie Publike 1.0"
+            },
+            {
+                "@language": "sr",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "sv",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ta",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "te",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "th",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "tr",
+                "@value": "Kamuya Açık Eser İşareti 1.0"
+            },
+            {
+                "@language": "uk",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "ur",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "vi",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "zh",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "公共領域標誌 1.0"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "公共領域標誌 1.0"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "公眾領域標誌 1.0"
+            },
+            {
+                "@language": "zu",
+                "@value": "Public Domain Mark 1.0"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Public Domain Mark} 1.0"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-PD-mark",
+        "foaf:logo": [
+            "http://i.creativecommons.org/p/mark/1.0/80x15.png",
+            "http://i.creativecommons.org/p/mark/1.0/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/p/mark/1.0/80x15.png",
+        "http://i.creativecommons.org/p/mark/1.0/88x31.png"
+    ],
+    "li:id": "CC-PD-mark",
+    "li:name": "CC MARK 1.0"
+}

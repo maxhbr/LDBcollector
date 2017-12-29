@@ -1,0 +1,850 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-ND-2.5-mt",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/mt/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/2.5/mt/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nc-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nc-nd/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel-GeenAfleidings 2.5 Malta"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير تجاري - لا اشتقاق 2.5 مالطا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Мальта"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално-Без производни 2.5 Малта"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial-SenseObraDerivada 2.5 Malta"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Malta"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Malta"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Malta"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Malta"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Malta"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Μάλτα"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce-Nemodifite 2.5 Malto"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Malta"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Malta"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial-SinDerivadas 2.5 Malta"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial-No Derivadas 2.5 Malta"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Malta"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Malta"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Malta"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 جزیره مالت"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Malta"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Malte"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Malte"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Malte"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Malte"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial-SenObraDerivada 2.5 Malta"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 מאלטה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno-Bez prerada 2.5 Malta"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Malta"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Մալտա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-NonKomersial-TanpaTurunan 2.5 Malta"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Malta"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Malta"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 - 改変禁止 2.5 マルタ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 მალტა"
+        },
+        {
+            "@language": "kk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리-변경금지 2.5 몰타"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Malta"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Малта"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 മാൾട്ട"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Malta"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Malta"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Malta"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Malta"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Malta"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial - SemDerivados 2.5 Malta"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Malta"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Malta"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-Necomercial-FărăModificări 2.5 Malta"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Мальта"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Malta"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Maltë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Malta"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално-Без прерада 2.5 Малта"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Malta"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Malta"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 మాల్టా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 มอลตา"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution-Gayriticari-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Malta"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用-禁止演绎 2.5 马耳他"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性-禁止改作 2.5 馬爾他"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性-禁止改作 2.5 馬爾他"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 eMalta"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial-NoDerivs} 2.5 ${Malta}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc-nd/2.5/mt/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/mt/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc-nd/2.5/mt/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nc-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nc-nd/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel-GeenAfleidings 2.5 Malta"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير تجاري - لا اشتقاق 2.5 مالطا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Мальта"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално-Без производни 2.5 Малта"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial-SenseObraDerivada 2.5 Malta"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Malta"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Malta"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Malta"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Malta"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Malta"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Μάλτα"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce-Nemodifite 2.5 Malto"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Malta"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Malta"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial-SinDerivadas 2.5 Malta"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial-No Derivadas 2.5 Malta"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial-SinObraDerivada 2.5 Malta"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Malta"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Malta"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Malta"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 جزیره مالت"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Malta"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Malte"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Malte"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Malte"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Malte"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial-SenObraDerivada 2.5 Malta"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 מאלטה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno-Bez prerada 2.5 Malta"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Malta"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Մալտա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-NonKomersial-TanpaTurunan 2.5 Malta"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Malta"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale - Non opere derivate 2.5 Malta"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 - 改変禁止 2.5 マルタ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 მალტა"
+            },
+            {
+                "@language": "kk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리-변경금지 2.5 몰타"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Malta"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Малта"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 മാൾട്ട"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Malta"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Malta"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Malta"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Malta"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Malta"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial - SemDerivados 2.5 Malta"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Malta"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Malta"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-Necomercial-FărăModificări 2.5 Malta"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Мальта"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Malta"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Maltë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Malta"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално-Без прерада 2.5 Малта"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno-Bez prerada 2.5 Malta"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Malta"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 మాల్టా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 มอลตา"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution-Gayriticari-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial-NoDerivs 2.5 Malta"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Malta"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用-禁止演绎 2.5 马耳他"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性-禁止改作 2.5 馬爾他"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性-禁止改作 2.5 馬爾他"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 eMalta"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial-NoDerivs} 2.5 ${Malta}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-ND-2.5-mt",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc-nd/2.5/mt/80x15.png",
+            "http://i.creativecommons.org/l/by-nc-nd/2.5/mt/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc-nd/2.5/mt/80x15.png",
+        "http://i.creativecommons.org/l/by-nc-nd/2.5/mt/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-ND-2.5-mt",
+    "li:name": "CC BY-NC-ND 2.5 MT"
+}

@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/3.0/cz/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cz/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/3.0/cz/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/3.0/> ;
+    dc:title "Erkenning-NieKommersieel 3.0 Tsjeggiese Republiek"@af,
+        "نسب - غير تجاري 3.0 جمهورية التشيك"@ar,
+        "Attribution-NonCommercial 3.0 Czech Republic"@as,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ast,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ast-es,
+        "Attribution-NonCommercial 3.0 Czech Republic"@az,
+        "Attribution-NonCommercial 3.0 Чэхія"@be,
+        "Признание-Некомерсиално 3.0 Чехия"@bg,
+        "Attribution-NonCommercial 3.0 Czech Republic"@bn,
+        "Reconeixement-NoComercial 3.0 República Txeca"@ca,
+        "Uveďte autora-Neužívejte komerčně 3.0 Česko"@cs,
+        "Navngivelse-IkkeKommerciel 3.0 Tjekkiet"@da,
+        "Namensnennung-Nicht-kommerziell 3.0 Tschechische Republik"@de,
+        "Namensnennung-NichtKommerziell 3.0 Tschechische Republik"@de-at,
+        "Namensnennung-NichtKommerziell 3.0 Tschechische Republik"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Δημοκρατία της Τσεχίας"@el,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-ca,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-gb,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-hk,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-sg,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-us,
+        "Atribuite-Nekomerce 3.0 Ĉeĥujo"@eo,
+        "Atribución-NoComercial 3.0 República Checa"@es,
+        "Atribución-NoComercial 3.0 República Checa"@es-ar,
+        "Atribución-NoComercial 3.0 República Checa"@es-cl,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-co,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-ec,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-es,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-gt,
+        "Atribución-No Comercial 3.0 República Checa"@es-mx,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-pe,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 3.0 Tšehhi"@et,
+        "Aitortu-EzKomertziala 3.0 Txekiar Errepublika"@eu,
+        "Attribution-NonCommercial 3.0 جمهوری چک"@fa,
+        "Nimeä-Epäkaupallinen 3.0 Tsekki"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 République Tchèque"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 République Tchèque"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 République Tchèque"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 République Tchèque"@fr-lu,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ga,
+        "Recoñecemento-NonComercial 3.0 Czech Republic"@gl,
+        "ייחוס-שימוש לא מסחרי 3.0 צ'כיה"@he,
+        "Attribution-NonCommercial 3.0 Czech Republic"@hi,
+        "Imenovanje-Nekomercijalno 3.0 Češka"@hr,
+        "Nevezd meg! - Ne add el! 3.0 Cseh Köztársaság"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 3.0 Չեխիայի Հանրապետություն"@hy,
+        "Attribusi-NonKomersial 3.0 Republik Ceko"@id,
+        "Attribution-NonCommercial 3.0 Czech Republic"@is,
+        "Attribuzione - Non commerciale 3.0 Czech Republic"@it,
+        "Attribuzione - Non commerciale 3.0 Czech Republic"@it-ch,
+        "表示 - 非営利 3.0 チェコ共和国"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 ჩეხეთის რესპუბლიკა"@ka,
+        "Коммерциялық емес 3.0 Czech Republic"@kk,
+        "저작자표시-비영리 3.0 체코"@ko,
+        "Attribution-NonCommercial 3.0 Čekijos Respublika"@lt,
+        "Atsaucoties-Nekomerciāli 3.0 Čehija"@lv,
+        "НаведиИзвор-Некомерцијално 3.0 Чешка"@mk,
+        "Attribution-NonCommercial 3.0 ചെക്ക് റിപ്പബ്ലിക്ക്"@ml,
+        "Attribution-NonCommercial 3.0 Czech Republic"@mn,
+        "Pengiktirafan-BukanKomersial 3.0 Republik Czeck"@ms,
+        "Naamsvermelding-NietCommercieel 3.0 Tjechië"@nl,
+        "Navngivelse-Ikkekommersiell 3.0 Tjekkia"@no,
+        "Tsebagatšo- E sego ya kgwebo 3.0 Czech Repabliki"@nso,
+        "Attribution-NonCommercial 3.0 Czech Republic"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 3.0 Czechy"@pl,
+        "Atribuição - NãoComercial 3.0 República Checa"@pt,
+        "Atribuição-Uso não-comercial 3.0 Czech Republic"@pt-br,
+        "Atribuição-Uso Não-Comercial 3.0 Czech Republic"@pt-pt,
+        "Atribuire-NeComercial 3.0 Cehia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Чехия"@ru,
+        "Attribution-NonCommercial 3.0 Czech Republic"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 3.0 Češka"@sl,
+        "Attribution-NonCommercial 3.0 Republika Çeke"@sq,
+        "Autorstvo-Nekomercijalno 3.0 Češka"@sr,
+        "Ауторство-Некомерцијално 3.0 Чешка"@sr,
+        "Autorstvo-Nekomercijalno 3.0 Češka"@sr-latn,
+        "Attribution-NonCommercial 3.0 Czech Republic"@st,
+        "Erkännande-IckeKommersiell 3.0 Tjeckien"@sv,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ta,
+        "Attribution-NonCommercial 3.0 ఛెక్ రిపబ్లిక్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 สาธารณรัฐเชค"@th,
+        "Alıntı-Gayriticari 3.0 Çek Cumhuriyeti"@tr,
+        "Attribution-NonCommercial 3.0 Czech Republic"@uk,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  3.0 Czech Republic"@vi,
+        "署名-非商业性使用 3.0 捷克共和国"@zh,
+        "姓名標示-非商業性 3.0 捷克"@zh-hk,
+        "姓名標示-非商業性 3.0 捷克"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 ECzech Republic"@zu,
+        "${Attribution-NonCommercial} 3.0 ${Czech Republic}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-3.0-cz> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/3.0/cz/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/3.0/cz/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-3.0-cz> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/cz/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/3.0/cz/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/3.0/> ;
+    dc:title "Erkenning-NieKommersieel 3.0 Tsjeggiese Republiek"@af,
+        "نسب - غير تجاري 3.0 جمهورية التشيك"@ar,
+        "Attribution-NonCommercial 3.0 Czech Republic"@as,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ast,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ast-es,
+        "Attribution-NonCommercial 3.0 Czech Republic"@az,
+        "Attribution-NonCommercial 3.0 Чэхія"@be,
+        "Признание-Некомерсиално 3.0 Чехия"@bg,
+        "Attribution-NonCommercial 3.0 Czech Republic"@bn,
+        "Reconeixement-NoComercial 3.0 República Txeca"@ca,
+        "Uveďte autora-Neužívejte komerčně 3.0 Česko"@cs,
+        "Navngivelse-IkkeKommerciel 3.0 Tjekkiet"@da,
+        "Namensnennung-Nicht-kommerziell 3.0 Tschechische Republik"@de,
+        "Namensnennung-NichtKommerziell 3.0 Tschechische Republik"@de-at,
+        "Namensnennung-NichtKommerziell 3.0 Tschechische Republik"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Δημοκρατία της Τσεχίας"@el,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-ca,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-gb,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-hk,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-sg,
+        "Attribution-NonCommercial 3.0 Czech Republic"@en-us,
+        "Atribuite-Nekomerce 3.0 Ĉeĥujo"@eo,
+        "Atribución-NoComercial 3.0 República Checa"@es,
+        "Atribución-NoComercial 3.0 República Checa"@es-ar,
+        "Atribución-NoComercial 3.0 República Checa"@es-cl,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-co,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-ec,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-es,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-gt,
+        "Atribución-No Comercial 3.0 República Checa"@es-mx,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-pe,
+        "Reconocimiento-NoComercial 3.0 República Checa"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 3.0 Tšehhi"@et,
+        "Aitortu-EzKomertziala 3.0 Txekiar Errepublika"@eu,
+        "Attribution-NonCommercial 3.0 جمهوری چک"@fa,
+        "Nimeä-Epäkaupallinen 3.0 Tsekki"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 République Tchèque"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 République Tchèque"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 République Tchèque"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 République Tchèque"@fr-lu,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ga,
+        "Recoñecemento-NonComercial 3.0 Czech Republic"@gl,
+        "ייחוס-שימוש לא מסחרי 3.0 צ'כיה"@he,
+        "Attribution-NonCommercial 3.0 Czech Republic"@hi,
+        "Imenovanje-Nekomercijalno 3.0 Češka"@hr,
+        "Nevezd meg! - Ne add el! 3.0 Cseh Köztársaság"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 3.0 Չեխիայի Հանրապետություն"@hy,
+        "Attribusi-NonKomersial 3.0 Republik Ceko"@id,
+        "Attribution-NonCommercial 3.0 Czech Republic"@is,
+        "Attribuzione - Non commerciale 3.0 Czech Republic"@it,
+        "Attribuzione - Non commerciale 3.0 Czech Republic"@it-ch,
+        "表示 - 非営利 3.0 チェコ共和国"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 ჩეხეთის რესპუბლიკა"@ka,
+        "Коммерциялық емес 3.0 Czech Republic"@kk,
+        "저작자표시-비영리 3.0 체코"@ko,
+        "Attribution-NonCommercial 3.0 Čekijos Respublika"@lt,
+        "Atsaucoties-Nekomerciāli 3.0 Čehija"@lv,
+        "НаведиИзвор-Некомерцијално 3.0 Чешка"@mk,
+        "Attribution-NonCommercial 3.0 ചെക്ക് റിപ്പബ്ലിക്ക്"@ml,
+        "Attribution-NonCommercial 3.0 Czech Republic"@mn,
+        "Pengiktirafan-BukanKomersial 3.0 Republik Czeck"@ms,
+        "Naamsvermelding-NietCommercieel 3.0 Tjechië"@nl,
+        "Navngivelse-Ikkekommersiell 3.0 Tjekkia"@no,
+        "Tsebagatšo- E sego ya kgwebo 3.0 Czech Repabliki"@nso,
+        "Attribution-NonCommercial 3.0 Czech Republic"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 3.0 Czechy"@pl,
+        "Atribuição - NãoComercial 3.0 República Checa"@pt,
+        "Atribuição-Uso não-comercial 3.0 Czech Republic"@pt-br,
+        "Atribuição-Uso Não-Comercial 3.0 Czech Republic"@pt-pt,
+        "Atribuire-NeComercial 3.0 Cehia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Чехия"@ru,
+        "Attribution-NonCommercial 3.0 Czech Republic"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 3.0 Češka"@sl,
+        "Attribution-NonCommercial 3.0 Republika Çeke"@sq,
+        "Autorstvo-Nekomercijalno 3.0 Češka"@sr,
+        "Ауторство-Некомерцијално 3.0 Чешка"@sr,
+        "Autorstvo-Nekomercijalno 3.0 Češka"@sr-latn,
+        "Attribution-NonCommercial 3.0 Czech Republic"@st,
+        "Erkännande-IckeKommersiell 3.0 Tjeckien"@sv,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ta,
+        "Attribution-NonCommercial 3.0 ఛెక్ రిపబ్లిక్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 สาธารณรัฐเชค"@th,
+        "Alıntı-Gayriticari 3.0 Çek Cumhuriyeti"@tr,
+        "Attribution-NonCommercial 3.0 Czech Republic"@uk,
+        "Attribution-NonCommercial 3.0 Czech Republic"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  3.0 Czech Republic"@vi,
+        "署名-非商业性使用 3.0 捷克共和国"@zh,
+        "姓名標示-非商業性 3.0 捷克"@zh-hk,
+        "姓名標示-非商業性 3.0 捷克"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 ECzech Republic"@zu,
+        "${Attribution-NonCommercial} 3.0 ${Czech Republic}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/3.0/cz/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/3.0/cz/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/3.0/cz/88x31.png> ;
+    li:id "CC-BY-NC-3.0-cz" ;
+    li:name "CC BY-NC 3.0 CZ" .
+

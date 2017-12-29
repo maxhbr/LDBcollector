@@ -1,0 +1,33 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/PDDL-1> a cc:License,
+        li:License ;
+    cc:legalcode <http://opendatacommons.org/licenses/pddl/1.0/> ;
+    dc:creator <http://opendatacommons.org/> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "PDDL" ;
+    dc:title "Public Domain Dedication and License" ;
+    schema:sameAs <http://opendatacommons.org/licenses/pddl/1.0/> ;
+    spdx:licenseID "PDDL-1.0" ;
+    li:id "PDDL-1" ;
+    li:libre <http://opendefinition.org/> ;
+    li:name "ODC PDDL" ;
+    li:notice [ li:canonical true ;
+            li:orlater false ;
+            li:short true ;
+            li:text """{{title}} is made available under the Public Domain Dedication and
+License v1.0 whose full text can be found at:
+http://www.opendatacommons.org/licenses/pddl/1.0/.
+""" ] .
+

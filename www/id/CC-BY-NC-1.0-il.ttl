@@ -1,0 +1,239 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/1.0/il/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/il/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/1.0/il/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "by-nc" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nc/2.5/il/> ;
+    dc:source <http://creativecommons.org/licenses/by-nc/1.0/> ;
+    dc:title "Erkenning-NieKommersieel 1.0 Israel"@af,
+        "نسب - غير تجاري 1.0 اسرائيل"@ar,
+        "Attribution-NonCommercial 1.0 Israel"@as,
+        "Attribution-NonCommercial 1.0 Israel"@ast,
+        "Attribution-NonCommercial 1.0 Israel"@ast-es,
+        "Attribution-NonCommercial 1.0 Israel"@az,
+        "Attribution-NonCommercial 1.0 Ізраіль"@be,
+        "Признание-Некомерсиално 1.0 Израел"@bg,
+        "Attribution-NonCommercial 1.0 Israel"@bn,
+        "Reconeixement-NoComercial 1.0 Israel"@ca,
+        "Uveďte autora-Neužívejte komerčně 1.0 Izrael"@cs,
+        "Navngivelse-IkkeKommerciel 1.0 Israel"@da,
+        "Namensnennung-Nicht-kommerziell 1.0 Israel"@de,
+        "Namensnennung-NichtKommerziell 1.0 Israel"@de-at,
+        "Namensnennung-NichtKommerziell 1.0 Israel"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 1.0 Ισραήλ"@el,
+        "Attribution-NonCommercial 1.0 Israel"@en,
+        "Attribution-NonCommercial 1.0 Israel"@en-ca,
+        "Attribution-NonCommercial 1.0 Israel"@en-gb,
+        "Attribution-NonCommercial 1.0 Israel"@en-hk,
+        "Attribution-NonCommercial 1.0 Israel"@en-sg,
+        "Attribution-NonCommercial 1.0 Israel"@en-us,
+        "Atribuite-Nekomerce 1.0 Israelo"@eo,
+        "Atribución-NoComercial 1.0 Israel"@es,
+        "Atribución-NoComercial 1.0 Israel"@es-ar,
+        "Atribución-NoComercial 1.0 Israel"@es-cl,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-co,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-ec,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-es,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-gt,
+        "Atribución-No Comercial 1.0 Israel"@es-mx,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-pe,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 1.0 Iisrael"@et,
+        "Aitortu-EzKomertziala 1.0 Israel"@eu,
+        "Attribution-NonCommercial 1.0 اسرائيل"@fa,
+        "Nimeä-Epäkaupallinen 1.0 Israel"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Israël"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Israël"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Israël"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Israël"@fr-lu,
+        "Attribution-NonCommercial 1.0 Israel"@ga,
+        "Recoñecemento-NonComercial 1.0 Israel"@gl,
+        "ייחוס-שימוש לא מסחרי 1.0 ישראל"@he,
+        "Attribution-NonCommercial 1.0 इसरैल"@hi,
+        "Imenovanje-Nekomercijalno 1.0 Izrael"@hr,
+        "Nevezd meg! - Ne add el! 1.0 Izrael"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 1.0 Իսրայել"@hy,
+        "Attribusi-NonKomersial 1.0 Israel"@id,
+        "Attribution-NonCommercial 1.0 Ísrael"@is,
+        "Attribuzione - Non commerciale 1.0 Israele"@it,
+        "Attribuzione - Non commerciale 1.0 Israel"@it-ch,
+        "表示 - 非営利 1.0 イスラエル"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 1.0 ისრაელი"@ka,
+        "Коммерциялық емес 1.0 Israel"@kk,
+        "저작자표시-비영리 1.0 이스라엘"@ko,
+        "Attribution-NonCommercial 1.0 Izraelis"@lt,
+        "Atsaucoties-Nekomerciāli 1.0 Izraēla"@lv,
+        "НаведиИзвор-Некомерцијално 1.0 Израел"@mk,
+        "Attribution-NonCommercial 1.0 ഇസ്രായൽ"@ml,
+        "Attribution-NonCommercial 1.0 Израйль"@mn,
+        "Pengiktirafan-BukanKomersial 1.0 Isreal"@ms,
+        "Naamsvermelding-NietCommercieel 1.0 Israël"@nl,
+        "Navngivelse-Ikkekommersiell 1.0 Israel"@no,
+        "Tsebagatšo- E sego ya kgwebo 1.0 Isiraele"@nso,
+        "Attribution-NonCommercial 1.0 Israel"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 1.0 Izrael"@pl,
+        "Atribuição - NãoComercial 1.0 Israel"@pt,
+        "Atribuição-Uso não-comercial 1.0 Israel"@pt-br,
+        "Atribuição-Uso Não-Comercial 1.0 Israel"@pt-pt,
+        "Atribuire-NeComercial 1.0 Israel"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 1.0 Израиль"@ru,
+        "Attribution-NonCommercial 1.0 Israel"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 1.0 Izrael"@sl,
+        "Attribution-NonCommercial 1.0 Izrael"@sq,
+        "Autorstvo-Nekomercijalno 1.0 Izrael"@sr,
+        "Ауторство-Некомерцијално 1.0 Израел"@sr,
+        "Autorstvo-Nekomercijalno 1.0 Izrael"@sr-latn,
+        "Attribution-NonCommercial 1.0 Israel"@st,
+        "Erkännande-IckeKommersiell 1.0 Israel"@sv,
+        "Attribution-NonCommercial 1.0 Israel"@ta,
+        "Attribution-NonCommercial 1.0 ఇజ్రాయిల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 1.0 อิสราเอล"@th,
+        "Alıntı-Gayriticari 1.0 İsrail"@tr,
+        "Attribution-NonCommercial 1.0 Israel"@uk,
+        "Attribution-NonCommercial 1.0 Israel"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  1.0 Nước Israel"@vi,
+        "署名-非商业性使用 1.0 以色列"@zh,
+        "姓名標示-非商業性 1.0 以色列"@zh-hk,
+        "姓名標示-非商業性 1.0 以色列"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 1.0 E-Israel"@zu,
+        "${Attribution-NonCommercial} 1.0 ${Israel}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-1.0-il> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/1.0/il/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/1.0/il/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-1.0-il> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/il/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/1.0/il/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "by-nc" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-NC-2.5-il> ;
+    dc:source <http://creativecommons.org/licenses/by-nc/1.0/> ;
+    dc:title "Erkenning-NieKommersieel 1.0 Israel"@af,
+        "نسب - غير تجاري 1.0 اسرائيل"@ar,
+        "Attribution-NonCommercial 1.0 Israel"@as,
+        "Attribution-NonCommercial 1.0 Israel"@ast,
+        "Attribution-NonCommercial 1.0 Israel"@ast-es,
+        "Attribution-NonCommercial 1.0 Israel"@az,
+        "Attribution-NonCommercial 1.0 Ізраіль"@be,
+        "Признание-Некомерсиално 1.0 Израел"@bg,
+        "Attribution-NonCommercial 1.0 Israel"@bn,
+        "Reconeixement-NoComercial 1.0 Israel"@ca,
+        "Uveďte autora-Neužívejte komerčně 1.0 Izrael"@cs,
+        "Navngivelse-IkkeKommerciel 1.0 Israel"@da,
+        "Namensnennung-Nicht-kommerziell 1.0 Israel"@de,
+        "Namensnennung-NichtKommerziell 1.0 Israel"@de-at,
+        "Namensnennung-NichtKommerziell 1.0 Israel"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 1.0 Ισραήλ"@el,
+        "Attribution-NonCommercial 1.0 Israel"@en,
+        "Attribution-NonCommercial 1.0 Israel"@en-ca,
+        "Attribution-NonCommercial 1.0 Israel"@en-gb,
+        "Attribution-NonCommercial 1.0 Israel"@en-hk,
+        "Attribution-NonCommercial 1.0 Israel"@en-sg,
+        "Attribution-NonCommercial 1.0 Israel"@en-us,
+        "Atribuite-Nekomerce 1.0 Israelo"@eo,
+        "Atribución-NoComercial 1.0 Israel"@es,
+        "Atribución-NoComercial 1.0 Israel"@es-ar,
+        "Atribución-NoComercial 1.0 Israel"@es-cl,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-co,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-ec,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-es,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-gt,
+        "Atribución-No Comercial 1.0 Israel"@es-mx,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-pe,
+        "Reconocimiento-NoComercial 1.0 Israel"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 1.0 Iisrael"@et,
+        "Aitortu-EzKomertziala 1.0 Israel"@eu,
+        "Attribution-NonCommercial 1.0 اسرائيل"@fa,
+        "Nimeä-Epäkaupallinen 1.0 Israel"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Israël"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Israël"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Israël"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 1.0 Israël"@fr-lu,
+        "Attribution-NonCommercial 1.0 Israel"@ga,
+        "Recoñecemento-NonComercial 1.0 Israel"@gl,
+        "ייחוס-שימוש לא מסחרי 1.0 ישראל"@he,
+        "Attribution-NonCommercial 1.0 इसरैल"@hi,
+        "Imenovanje-Nekomercijalno 1.0 Izrael"@hr,
+        "Nevezd meg! - Ne add el! 1.0 Izrael"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 1.0 Իսրայել"@hy,
+        "Attribusi-NonKomersial 1.0 Israel"@id,
+        "Attribution-NonCommercial 1.0 Ísrael"@is,
+        "Attribuzione - Non commerciale 1.0 Israele"@it,
+        "Attribuzione - Non commerciale 1.0 Israel"@it-ch,
+        "表示 - 非営利 1.0 イスラエル"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 1.0 ისრაელი"@ka,
+        "Коммерциялық емес 1.0 Israel"@kk,
+        "저작자표시-비영리 1.0 이스라엘"@ko,
+        "Attribution-NonCommercial 1.0 Izraelis"@lt,
+        "Atsaucoties-Nekomerciāli 1.0 Izraēla"@lv,
+        "НаведиИзвор-Некомерцијално 1.0 Израел"@mk,
+        "Attribution-NonCommercial 1.0 ഇസ്രായൽ"@ml,
+        "Attribution-NonCommercial 1.0 Израйль"@mn,
+        "Pengiktirafan-BukanKomersial 1.0 Isreal"@ms,
+        "Naamsvermelding-NietCommercieel 1.0 Israël"@nl,
+        "Navngivelse-Ikkekommersiell 1.0 Israel"@no,
+        "Tsebagatšo- E sego ya kgwebo 1.0 Isiraele"@nso,
+        "Attribution-NonCommercial 1.0 Israel"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 1.0 Izrael"@pl,
+        "Atribuição - NãoComercial 1.0 Israel"@pt,
+        "Atribuição-Uso não-comercial 1.0 Israel"@pt-br,
+        "Atribuição-Uso Não-Comercial 1.0 Israel"@pt-pt,
+        "Atribuire-NeComercial 1.0 Israel"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 1.0 Израиль"@ru,
+        "Attribution-NonCommercial 1.0 Israel"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 1.0 Izrael"@sl,
+        "Attribution-NonCommercial 1.0 Izrael"@sq,
+        "Autorstvo-Nekomercijalno 1.0 Izrael"@sr,
+        "Ауторство-Некомерцијално 1.0 Израел"@sr,
+        "Autorstvo-Nekomercijalno 1.0 Izrael"@sr-latn,
+        "Attribution-NonCommercial 1.0 Israel"@st,
+        "Erkännande-IckeKommersiell 1.0 Israel"@sv,
+        "Attribution-NonCommercial 1.0 Israel"@ta,
+        "Attribution-NonCommercial 1.0 ఇజ్రాయిల్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 1.0 อิสราเอล"@th,
+        "Alıntı-Gayriticari 1.0 İsrail"@tr,
+        "Attribution-NonCommercial 1.0 Israel"@uk,
+        "Attribution-NonCommercial 1.0 Israel"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  1.0 Nước Israel"@vi,
+        "署名-非商业性使用 1.0 以色列"@zh,
+        "姓名標示-非商業性 1.0 以色列"@zh-hk,
+        "姓名標示-非商業性 1.0 以色列"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 1.0 E-Israel"@zu,
+        "${Attribution-NonCommercial} 1.0 ${Israel}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/1.0/il/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/1.0/il/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/1.0/il/88x31.png> ;
+    li:id "CC-BY-NC-1.0-il" ;
+    li:name "CC BY-NC 1.0 IL" .
+

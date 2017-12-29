@@ -1,0 +1,238 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/2.5/nl/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:isReplacedBy <http://creativecommons.org/licenses/by-nc-nd/3.0/nl/> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Nederland"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 هولندا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Нідэрланды"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Холандия"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Holanda"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Nizozemí"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Holland"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Niederlande"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Niederlande"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Niederlande"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Ολλανδία"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Nederlando"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Holanda"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Holanda"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Holanda"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Holanda"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Holanda"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Holland"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Herbehereak"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 هلند"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Hollanti"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Pays-Bas"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pays-Bas"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pays-Bas"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pays-Bas"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Holanda"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 הולנד"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Nizozemska"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Hollandia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Նիդերլանդներ"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Belanda"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Holland"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Olanda"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Olanda"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 オランダ"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 ნიდერლანდები"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@kk,
+        "저작자표시-비영리-변경금지 2.5 네덜란드"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Nyderlandai"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Nīderlande"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Холандија"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 നെതർലാന്റ്സ്"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Netherlands"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Nederland"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Nederland"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Netherlands"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Holandia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Holanda"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Netherlands"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Holanda"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Olanda"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Нидерланды"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Nizozemska"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Holandë"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Holandija"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Холандија"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Holandija"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Nederländerna"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 நெதர்லாந்து"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 నెదర్లాండ్స్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 เนเธอร์แลนด์"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Hollanda"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Hà Lan"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 荷兰"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 荷蘭"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 荷蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 iNetherlands"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Netherlands}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-2.5-nl> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/nl/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/nl/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-2.5-nl> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/nl/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/2.5/nl/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-nc-nd" ;
+    dc:isReplacedBy <https://licensedb.org/id/CC-BY-NC-ND-3.0-nl> ;
+    dc:replaces <https://licensedb.org/id/CC-BY-NC-ND-2.0-nl> ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/2.5/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 2.5 Nederland"@af,
+        "نسب- غير تجاري - لا اشتقاق 2.5 هولندا"@ar,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@as,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@ast,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@az,
+        "Attribution-NonCommercial-NoDerivs 2.5 Нідэрланды"@be,
+        "Признание-Некомерсиално-Без производни 2.5 Холандия"@bg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 2.5 Holanda"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 2.5 Nizozemí"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 2.5 Holland"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Niederlande"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Niederlande"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 2.5 Niederlande"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 2.5 Ολλανδία"@el,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 2.5 Nederlando"@eo,
+        "Atribución-NoComercial-SinDerivadas 2.5 Holanda"@es,
+        "Atribución-NoComercial-SinDerivadas 2.5 Holanda"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 2.5 Holanda"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-gt,
+        "Atribución-No Comercial-No Derivadas 2.5 Holanda"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 2.5 Holanda"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 2.5 Holanda"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 2.5 Holland"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 2.5 Herbehereak"@eu,
+        "Attribution-NonCommercial-NoDerivs 2.5 هلند"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 2.5 Hollanti"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 2.5 Pays-Bas"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pays-Bas"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pays-Bas"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 2.5 Pays-Bas"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 2.5 Holanda"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 2.5 הולנד"@he,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 2.5 Nizozemska"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 2.5 Hollandia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 2.5 Նիդերլանդներ"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 2.5 Belanda"@id,
+        "Attribution-NonCommercial-NoDerivs 2.5 Holland"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Olanda"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 2.5 Olanda"@it-ch,
+        "表示 - 非営利 - 改変禁止 2.5 オランダ"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 2.5 ნიდერლანდები"@ka,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@kk,
+        "저작자표시-비영리-변경금지 2.5 네덜란드"@ko,
+        "Attribution-NonCommercial-NoDerivs 2.5 Nyderlandai"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 2.5 Nīderlande"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 2.5 Холандија"@mk,
+        "Attribution-NonCommercial-NoDerivs 2.5 നെതർലാന്റ്സ്"@ml,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 2.5 Netherlands"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 2.5 Nederland"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 2.5 Nederland"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 2.5 Netherlands"@nso,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 2.5 Holandia"@pl,
+        "Atribuição - NãoComercial - SemDerivados 2.5 Holanda"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 2.5 Netherlands"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 2.5 Holanda"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 2.5 Olanda"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 2.5 Нидерланды"@ru,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 2.5 Nizozemska"@sl,
+        "Attribution-NonCommercial-NoDerivs 2.5 Holandë"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Holandija"@sr,
+        "Ауторство-Некомерцијално-Без прерада 2.5 Холандија"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 2.5 Holandija"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 2.5 Nederländerna"@sv,
+        "Attribution-NonCommercial-NoDerivs 2.5 நெதர்லாந்து"@ta,
+        "Attribution-NonCommercial-NoDerivs 2.5 నెదర్లాండ్స్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 2.5 เนเธอร์แลนด์"@th,
+        "Attribution-Gayriticari-NoDerivs 2.5 Hollanda"@tr,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@uk,
+        "Attribution-NonCommercial-NoDerivs 2.5 Netherlands"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  2.5 Nước Hà Lan"@vi,
+        "署名-非商业性使用-禁止演绎 2.5 荷兰"@zh,
+        "姓名標示-非商業性-禁止改作 2.5 荷蘭"@zh-hk,
+        "姓名標示-非商業性-禁止改作 2.5 荷蘭"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 2.5 iNetherlands"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 2.5 ${Netherlands}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/2.5/nl/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/2.5/nl/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/2.5/nl/88x31.png> ;
+    li:id "CC-BY-NC-ND-2.5-nl" ;
+    li:name "CC BY-NC-ND 2.5 NL" .
+

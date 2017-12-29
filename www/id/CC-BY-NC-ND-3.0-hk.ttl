@@ -1,0 +1,235 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc-nd/3.0/hk/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/hk/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/3.0/hk/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 3.0 Hong Kong"@af,
+        "نسب- غير تجاري - لا اشتقاق 3.0 هونج كونج"@ar,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@as,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ast,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@az,
+        "Attribution-NonCommercial-NoDerivs 3.0 Ганконг"@be,
+        "Признание-Некомерсиално-Без производни 3.0 Hong Kong"@bg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 3.0 Hong Kong"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Hong Kong"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Hong Kong"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Hong Kong"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Hong Kong"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Hong Kong"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Χονγκ Κονγκ"@el,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 3.0 Honkongo"@eo,
+        "Atribución-NoComercial-SinDerivadas 3.0 Hong Kong"@es,
+        "Atribución-NoComercial-SinDerivadas 3.0 Hong Kong"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 3.0 Hong Kong"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-gt,
+        "Atribución-No Comercial-No Derivadas 3.0 Hong Kong"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 3.0 Hong Kong"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Hongkong"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Hong Kong"@eu,
+        "Attribution-NonCommercial-NoDerivs 3.0 هنگ کنگ"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Hong Kong"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Hong Kong"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Hong Kong"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Hong Kong"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Hong Kong"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 3.0 Hong Kong"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 הונג קונג"@he,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 3.0 Hong Kong"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Hong Kong"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Հոնգ Կոնգ"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 3.0 Hong Kong"@id,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Hong Kong"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Hong Kong"@it-ch,
+        "表示 - 非営利 - 改変禁止 3.0 香港"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ჰონგ კონგი"@ka,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@kk,
+        "저작자표시-비영리-변경금지 3.0 홍콩"@ko,
+        "Attribution-NonCommercial-NoDerivs 3.0 Honkongas"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Honkonga"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Хонг Конг"@mk,
+        "Attribution-NonCommercial-NoDerivs 3.0 ഹോങ്ക്കോംഗ്"@ml,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Hong Kong"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Hong Kong"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Hong Kong"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Hong Kong"@nso,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Hong Kong"@pl,
+        "Atribuição - NãoComercial - SemDerivados 3.0 Hong Kong"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Hong Kong"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Hong Kong"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 3.0 Hong Kong"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Гонконг"@ru,
+        "Attribution-NonCommercial-NoDerivs 3.0 හොංකොං"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Hong Kong"@sl,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Hong Kong"@sr,
+        "Ауторство-Некомерцијално-Без прерада 3.0 Хонг Конг"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Hong Kong"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 3.0 country.hk"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Hong Kong"@sv,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ta,
+        "Attribution-NonCommercial-NoDerivs 3.0 హాంకాంగ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 ฮ่องกง"@th,
+        "Attribution-Gayriticari-NoDerivs 3.0 Hong Kong"@tr,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@uk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Hong Kong"@vi,
+        "署名-非商业性使用-禁止演绎 3.0 香港"@zh,
+        "姓名標示-非商業性-禁止改作 3.0 香港"@zh-hk,
+        "姓名標示-非商業性-禁止改作 3.0 香港"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 Hong Kong"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 3.0 ${Hong Kong}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-ND-3.0-hk> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/3.0/hk/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/3.0/hk/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-ND-3.0-hk> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/hk/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc-nd/3.0/hk/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc-nd" ;
+    dc:source <http://creativecommons.org/licenses/by-nc-nd/3.0/> ;
+    dc:title "Erkenning-NieKommersieel-GeenAfleidings 3.0 Hong Kong"@af,
+        "نسب- غير تجاري - لا اشتقاق 3.0 هونج كونج"@ar,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@as,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ast,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ast-es,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@az,
+        "Attribution-NonCommercial-NoDerivs 3.0 Ганконг"@be,
+        "Признание-Некомерсиално-Без производни 3.0 Hong Kong"@bg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@bn,
+        "Reconeixement-NoComercial-SenseObraDerivada 3.0 Hong Kong"@ca,
+        "Uveďte autora-Neužívejte dílo komerčně-Nezasahujte do díla 3.0 Hong Kong"@cs,
+        "Navngivelse-IkkeKommerciel-IngenBearbejdelse 3.0 Hong Kong"@da,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Hong Kong"@de,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Hong Kong"@de-at,
+        "Namensnennung-NichtKommerziell-KeineBearbeitung 3.0 Hong Kong"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα 3.0 Χονγκ Κονγκ"@el,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-ca,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-gb,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-hk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-sg,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@en-us,
+        "Atribuite-Nekomerce-Nemodifite 3.0 Honkongo"@eo,
+        "Atribución-NoComercial-SinDerivadas 3.0 Hong Kong"@es,
+        "Atribución-NoComercial-SinDerivadas 3.0 Hong Kong"@es-ar,
+        "Atribución-NoComercial-SinDerivadas 3.0 Hong Kong"@es-cl,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-co,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-ec,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-es,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-gt,
+        "Atribución-No Comercial-No Derivadas 3.0 Hong Kong"@es-mx,
+        "Reconocimiento-NoComercial-SinObraDerivada 3.0 Hong Kong"@es-pe,
+        "Reconocimiento-NoComercial-SinObrasDerivadas 3.0 Hong Kong"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk + Tuletatud teoste keeld 3.0 Hongkong"@et,
+        "Aitortu-EzKomertziala-LanEratorririkGabe 3.0 Hong Kong"@eu,
+        "Attribution-NonCommercial-NoDerivs 3.0 هنگ کنگ"@fa,
+        "Nimeä-Ei muutoksia-Epäkaupallinen 3.0 Hong Kong"@fi,
+        "Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 Hong Kong"@fr,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Hong Kong"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Hong Kong"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale - Pas de Modification 3.0 Hong Kong"@fr-lu,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ga,
+        "Recoñecemento-NonComercial-SenObraDerivada 3.0 Hong Kong"@gl,
+        "ייחוס-שימוש לא מסחרי-איסור יצירות נגזרות 3.0 הונג קונג"@he,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@hi,
+        "Imenovanje-Nekomercijalno-Bez prerada 3.0 Hong Kong"@hr,
+        "Nevezd meg! - Ne add el! - Ne változtasd! 3.0 Hong Kong"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում - Օգտագործում առանց վերափոխումների 3.0 Հոնգ Կոնգ"@hy,
+        "Atribusi-NonKomersial-TanpaTurunan 3.0 Hong Kong"@id,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@is,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Hong Kong"@it,
+        "Attribuzione - Non commerciale - Non opere derivate 3.0 Hong Kong"@it-ch,
+        "表示 - 非営利 - 改変禁止 3.0 香港"@ja,
+        "ავტორობის მითითებით–არაკომერციული გამოყენბისათვის–გადამუშავების გარეშე 3.0 ჰონგ კონგი"@ka,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@kk,
+        "저작자표시-비영리-변경금지 3.0 홍콩"@ko,
+        "Attribution-NonCommercial-NoDerivs 3.0 Honkongas"@lt,
+        "Atsaucoties-Nekomerciāls-Nemainīts 3.0 Honkonga"@lv,
+        "НаведиИзвор-Некомерцијално-БезАдаптираниДела 3.0 Хонг Конг"@mk,
+        "Attribution-NonCommercial-NoDerivs 3.0 ഹോങ്ക്കോംഗ്"@ml,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@mn,
+        "Pengiktirafan-BukanKomersial-TiadaTerbitan 3.0 Hong Kong"@ms,
+        "Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 3.0 Hong Kong"@nl,
+        "Navngivelse-Ikkekommersiell-IngenBearbeidelse 3.0 Hong Kong"@no,
+        "Tsebagatšo-E sego ya Kgwebo-Tše sa fetolwego 3.0 Hong Kong"@nso,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne-Bez utworów zależnych 3.0 Hong Kong"@pl,
+        "Atribuição - NãoComercial - SemDerivados 3.0 Hong Kong"@pt,
+        "Atribuição-Uso não-comercial-Vedada a criação de obras derivadas 3.0 Hong Kong"@pt-br,
+        "Atribuição-Uso Não-Comercial-Proibição de realização de Obras Derivadas 3.0 Hong Kong"@pt-pt,
+        "Atribuire-Necomercial-FărăModificări 3.0 Hong Kong"@ro,
+        "Attribution-NonCommercial-NoDerivs (Атрибуция — Некоммерческое использование — Без производных произведений) 3.0 Гонконг"@ru,
+        "Attribution-NonCommercial-NoDerivs 3.0 හොංකොං"@si-lk,
+        "Priznanje avtorstva-Nekomercialno-Brez predelav 3.0 Hong Kong"@sl,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@sq,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Hong Kong"@sr,
+        "Ауторство-Некомерцијално-Без прерада 3.0 Хонг Конг"@sr,
+        "Autorstvo-Nekomercijalno-Bez prerada 3.0 Hong Kong"@sr-latn,
+        "Attribution-NonCommercial-NoDerivs 3.0 country.hk"@st,
+        "Erkännande-Ickekommersiell-IngaBearbetningar 3.0 Hong Kong"@sv,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ta,
+        "Attribution-NonCommercial-NoDerivs 3.0 హాంకాంగ్"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า-ไม่ดัดแปลง 3.0 ฮ่องกง"@th,
+        "Attribution-Gayriticari-NoDerivs 3.0 Hong Kong"@tr,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@uk,
+        "Attribution-NonCommercial-NoDerivs 3.0 Hong Kong"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại - Không phái sinh  3.0 Hong Kong"@vi,
+        "署名-非商业性使用-禁止演绎 3.0 香港"@zh,
+        "姓名標示-非商業性-禁止改作 3.0 香港"@zh-hk,
+        "姓名標示-非商業性-禁止改作 3.0 香港"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano-Ungasuseli lutho kulokhu 3.0 Hong Kong"@zu,
+        "${Attribution-NonCommercial-NoDerivs} 3.0 ${Hong Kong}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc-nd/3.0/hk/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc-nd/3.0/hk/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc-nd/3.0/hk/88x31.png> ;
+    li:id "CC-BY-NC-ND-3.0-hk" ;
+    li:name "CC BY-NC-ND 3.0 HK" .
+

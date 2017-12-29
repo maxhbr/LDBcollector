@@ -1,0 +1,848 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-ND-2.5-scotland",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/scotland/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/scotland/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by-nd",
+    "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-GeenAfleidings 2.5 VK: Skotland"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب- غير مشتق 2.5 سكوتلندا - المملكة المتحدة"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NoDerivs 2.5 Шатландыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Без производни 2.5 Обединено кралство: Шотландия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-SenseObraDerivada 2.5 Escòcia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Nezasahujte do díla 2.5 Skotsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IngenBearbejdelse 2.5 Skotland"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Keine Bearbeitung 2.5 Schottland"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 Schottland"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-KeineBearbeitung 2.5 Schottland"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Ηνωμένο Βασίλειο: Σκωτία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nemodifite 2.5 Britujo: Skotujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-SinDerivadas 2.5 Escocia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-SinDerivadas 2.5 Reino Unido: Escocia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-SinDerivadas 2.5 Escocia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Derivadas 2.5 Escocia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Šotimaa"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-LanEratorririkGabe 2.5 Eskozia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NoDerivs 2.5 انگلستان : اسکاتلند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Ei muutoksia 2.5 Iso-Britannia: Scotland"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas de Modification 2.5 Royaume-Uni : Ecosse"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas de Modification 2.5 Royaume-Uni : Ecosse"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas de Modification 2.5 Royaume-Uni : Ecosse"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas de Modification 2.5 Royaume-Uni : Ecosse"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-SenObraDerivada 2.5 UK: Scotland"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-איסור יצירות נגזרות 2.5 סקוטלנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Bez prerada 2.5 VB: Škotska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne változtasd! 2.5 UK: Skócia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 ՄԹ: Շոտլանդիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi-TanpaTurunan 2.5 Britania Raya: Skotlandia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non opere derivate 2.5 UK: Scotland"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non opere derivate 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 改変禁止 2.5 スコットランド（英）"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 გაერტიანებული სამეფო: შოტლანდია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Туынды жасамау 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-변경금지 2.5 영국 : 스코틀란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NoDerivs 2.5 Jungtinė Karalystė: Škotija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Neatvasinot 2.5 Apvienotā karaliste: Skotija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-БезИзведениДела 2.5 Велика Британија: Шкотска"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-TiadaTerbitan 2.5 UK: Scotland"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 Schotland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-IngenBearbeidelse 2.5 UK: Skottland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 UK: Scotland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 UK: Szkocja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - SemDerivados 2.5 Reino Unido: Escócia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 UK: Scotland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-FărăModificări 2.5 Marea Britanie: Scoţia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Великобритания: Шотландия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Brez predelav 2.5 Združeno kraljestvo: Škotska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NoDerivs 2.5 UK: Skoci"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Bez prerada 2.5 VB: Škotska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Без прерада 2.5 ВБ: Шкотска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Bez prerada 2.5 VB: Škotska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IngaBearbetningar 2.5 UK: Skottland"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 สหราชอาณาจักร : สกอตแลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Türetilemez 2.5 UK: İngiltere"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 UK: Scotland"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-禁止演绎 2.5 英国：苏格兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-禁止改作 2.5 英國: 蘇格蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-禁止改作 2.5 英國: 蘇格蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 E-UK: Scotland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NoDerivs} 2.5 ${UK: Scotland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nd/2.5/scotland/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/scotland/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nd/2.5/scotland/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by-nd",
+        "dc:source": "http://creativecommons.org/licenses/by-nd/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-GeenAfleidings 2.5 VK: Skotland"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب- غير مشتق 2.5 سكوتلندا - المملكة المتحدة"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NoDerivs 2.5 Шатландыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Без производни 2.5 Обединено кралство: Шотландия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-SenseObraDerivada 2.5 Escòcia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Nezasahujte do díla 2.5 Skotsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IngenBearbejdelse 2.5 Skotland"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Keine Bearbeitung 2.5 Schottland"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 Schottland"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-KeineBearbeitung 2.5 Schottland"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Όχι Παράγωγα Έργα 2.5 Ηνωμένο Βασίλειο: Σκωτία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nemodifite 2.5 Britujo: Skotujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-SinDerivadas 2.5 Escocia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-SinDerivadas 2.5 Reino Unido: Escocia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-SinDerivadas 2.5 Escocia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Derivadas 2.5 Escocia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-SinObraDerivada 2.5 Escocia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Tuletatud teoste keeld 2.5 Šotimaa"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-LanEratorririkGabe 2.5 Eskozia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NoDerivs 2.5 انگلستان : اسکاتلند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Ei muutoksia 2.5 Iso-Britannia: Scotland"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas de Modification 2.5 Royaume-Uni : Ecosse"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas de Modification 2.5 Royaume-Uni : Ecosse"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas de Modification 2.5 Royaume-Uni : Ecosse"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas de Modification 2.5 Royaume-Uni : Ecosse"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-SenObraDerivada 2.5 UK: Scotland"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-איסור יצירות נגזרות 2.5 סקוטלנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Bez prerada 2.5 VB: Škotska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne változtasd! 2.5 UK: Skócia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Օգտագործում առանց վերափոխումների 2.5 ՄԹ: Շոտլանդիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi-TanpaTurunan 2.5 Britania Raya: Skotlandia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non opere derivate 2.5 UK: Scotland"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non opere derivate 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 改変禁止 2.5 スコットランド（英）"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით გადამუშავების გარეშე 2.5 გაერტიანებული სამეფო: შოტლანდია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Туынды жасамау 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-변경금지 2.5 영국 : 스코틀란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NoDerivs 2.5 Jungtinė Karalystė: Škotija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Neatvasinot 2.5 Apvienotā karaliste: Skotija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-БезИзведениДела 2.5 Велика Британија: Шкотска"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-TiadaTerbitan 2.5 UK: Scotland"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-GeenAfgeleideWerken 2.5 Schotland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-IngenBearbeidelse 2.5 UK: Skottland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo - Tše sa Fetolwego 2.5 UK: Scotland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Bez utworów zależnych 2.5 UK: Szkocja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - SemDerivados 2.5 Reino Unido: Escócia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Vedada a criação de obras derivativas 2.5 UK: Scotland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Proibição de realização de Obras Derivadas 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-FărăModificări 2.5 Marea Britanie: Scoţia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NoDerivs (Атрибуция — Без производных произведений) 2.5 Великобритания: Шотландия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Brez predelav 2.5 Združeno kraljestvo: Škotska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NoDerivs 2.5 UK: Skoci"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Bez prerada 2.5 VB: Škotska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Без прерада 2.5 ВБ: Шкотска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Bez prerada 2.5 VB: Škotska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IngaBearbetningar 2.5 UK: Skottland"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ดัดแปลง 2.5 สหราชอาณาจักร : สกอตแลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Türetilemez 2.5 UK: İngiltere"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NoDerivs 2.5 UK: Scotland"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Không phái sinh 2.5 UK: Scotland"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-禁止演绎 2.5 英国：苏格兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-禁止改作 2.5 英國: 蘇格蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-禁止改作 2.5 英國: 蘇格蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungasuseli lutho kulokhu 2.5 E-UK: Scotland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NoDerivs} 2.5 ${UK: Scotland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-ND-2.5-scotland",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nd/2.5/scotland/80x15.png",
+            "http://i.creativecommons.org/l/by-nd/2.5/scotland/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nd/2.5/scotland/80x15.png",
+        "http://i.creativecommons.org/l/by-nd/2.5/scotland/88x31.png"
+    ],
+    "li:id": "CC-BY-ND-2.5-scotland",
+    "li:name": "CC BY-ND 2.5 SCOTLAND"
+}

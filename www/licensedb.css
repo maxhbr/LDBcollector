@@ -1,0 +1,130 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, q, samp, small, strike, strong, sub, sup, tt, var, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0; padding: 0; border: 0; outline: 0; text-decoration: none;
+    vertical-align: baseline; background: transparent; color: black;
+}
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { color: #333; background: #555; }
+body, p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px; line-height: 18px;
+}
+
+p { margin-bottom: 9px; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; text-rendering: optimizelegibility; }
+h1 { font-size: 30px; line-height: 36px; margin: 36px 0; }
+h2 { font-size: 24px; line-height: 36px; margin: 36px 0; }
+h3 { font-size: 18px; line-height: 27px; margin: 18px 0; }
+h4 { font-size: 14px; line-height: 18px; margin: 18px 0 0 0; }
+h5 { font-size: 12px; line-height: 18px; }
+h6 { font-size: 11px; line-height: 18px; text-transform: uppercase; }
+
+dt { margin: 1em 0 0 0;  font-weight: bolder; }
+dd { margin: 0.5em 0 0 3em; }
+
+#header {
+    width: 100%;
+    border-bottom: 2px solid #222;
+    background-image: linear-gradient(top, #004EAD 0%, #0068E8 54%);
+    background-image: -o-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+    background-image: -moz-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+    background-image: -webkit-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+    background-image: -ms-linear-gradient(top, #004EAD 0%, #0068E8 54%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #004EAD), color-stop(0.54, #0068E8));
+    min-height: 46px;
+}
+
+#menu { font-size: 18px; line-height: 27px; float: right; margin: 27px 18px 0 0; }
+#menu ul li { display: inline-block; margin: 18px; }
+#menu ul li a, #menu ul li a:visited { color: #fff; }
+
+#contentwrapper {
+    width: 100%; margin: 0; padding: 0 0 36px 0; background: #fff;
+    border-color: #fff; border-width: 1px 0; border-style: solid;
+}
+#content { padding: 0 108px; }
+#content p { width: 42em; }
+#database {
+    -webkit-column-width: 12em;
+    -moz-column-width: 12em;
+    column-width: 12em;
+}
+
+#footer { width: 100%; padding: 6px 0 36px 0; border-top: 2px solid #222; }
+#footer p { margin-left: 108px; width: 42em; }
+#footer p.indent { padding-left: 2em; }
+
+h1, h2, h3, h4, h5, h6, p, span { color: #333; }
+span.prefix { color: #999;    }
+a {           color: #004ead; }
+a:visited {   color: #002757; }
+
+#footer { background: #555; }
+#footer p, #footer span, #footer a, #footer a:visited  { color: #eee; }
+
+#filter {
+    border: 1px solid #888;
+    background: #eee;
+    float: right;
+    margin: -36px 1em 1em 1em;
+    padding: 0.5em;
+}
+#filter label { padding-right: 1em; }
+input[type=checkbox] { vertical-align: bottom; }
+ul#database { clear: right; }
+
+
+article.license-group {
+    margin: 0;
+}
+
+article.license-group > h1 {
+    margin: 32px 0 16px 0;
+    padding: 0 32px;
+}
+
+div.license-group {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+div.license-group h2 {
+    margin: 16px 0 24px 0;
+    font-weight: normal;
+    border-bottom: 2px solid #000;
+}
+
+section.license-metadata {
+    max-width: 320px;
+    padding: 0 32px;
+}
+
+section.license-plaintext {
+    width: 620px;
+    padding: 0 32px;
+}
+
+section.license-plaintext > pre {
+    font-family: "courier new", monospace;
+    font-size: 12px;
+}
+
+div.label-wrapper { display: inline-block; min-width: 10em; }
+span.prefix { color: #888; }
+span.label  { color: #000; }

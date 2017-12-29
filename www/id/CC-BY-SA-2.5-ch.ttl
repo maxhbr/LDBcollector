@@ -1,0 +1,240 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-sa/2.5/ch/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ch/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.5/ch/legalcode.de> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.5/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.5 Switserland"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.5 سوسرا"@ar,
+        "Attribution-ShareAlike 2.5 Switzerland"@as,
+        "Attribution-ShareAlike 2.5 Switzerland"@ast,
+        "Attribution-ShareAlike 2.5 Switzerland"@ast-es,
+        "Attribution-ShareAlike 2.5 Switzerland"@az,
+        "Attribution-ShareAlike 2.5 Швейцарыя"@be,
+        "Признание-Споделяне на споделеното 2.5 Швейцария"@bg,
+        "Attribution-ShareAlike 2.5 Switzerland"@bn,
+        "Reconeixement-CompartirIgual 2.5 Suïssa"@ca,
+        "Uveďte autora-Zachovejte licenci 2.5 Švýcarsko"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.5 Schweiz"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Ελβετία"@el,
+        "Attribution-ShareAlike 2.5 Switzerland"@en,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-ca,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-gb,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-hk,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-sg,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-us,
+        "Atribuite-Samkondiĉe 2.5 Svisujo"@eo,
+        "Atribución-CompartirIgual 2.5 Suiza"@es,
+        "Atribución-CompartirDerivadasIgual 2.5 Suiza"@es-ar,
+        "Atribución-LicenciarIgual 2.5 Suiza"@es-cl,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-co,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-ec,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-es,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.5 Suiza"@es-mx,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-pe,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.5 Šveits"@et,
+        "Aitortu-PartekatuBerdin 2.5 Suitza"@eu,
+        "Attribution-ShareAlike 2.5 سویس"@fa,
+        "Nimeä-Tarttuva 2.5 Sveitsi"@fi,
+        "Paternité - Partage à l'Identique 2.5 Suisse"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"@fr-lu,
+        "Attribution-ShareAlike 2.5 Switzerland"@ga,
+        "Recoñecemento-CompartirIgual 2.5 Switzerland"@gl,
+        "ייחוס-שיתוף זהה 2.5 שוויץ"@he,
+        "Attribution-ShareAlike 2.5 Switzerland"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.5 Švicarska"@hr,
+        "Nevezd meg! - Így add tovább! 2.5 Svájc"@hu,
+        "Հղում - համանման տարածում 2.5 Շվեյցարիա"@hy,
+        "Atribusi-BerbagiSerupa 2.5 Swiss"@id,
+        "Attribution-ShareAlike 2.5 Switzerland"@is,
+        "Attribuzione - Condividi allo stesso modo 2.5 Switzerland"@it,
+        "Attribuzione - Condividi allo stesso modo 2.5 Switzerland"@it-ch,
+        "表示 - 継承 2.5 スイス"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 შვეიცარია"@ka,
+        "Attribution-ShareAlike 2.5 Switzerland"@kk,
+        "저작자표시-동일조건변경허락 2.5 스위스"@ko,
+        "Attribution-ShareAlike 2.5 Šveicarija"@lt,
+        "Atsaucoties-Nemainot licenci 2.5 Šveice"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.5 Швајцарија"@mk,
+        "Attribution-ShareAlike 2.5 സ്വിറ്റ്സർലാന്റ്"@ml,
+        "Attribution-ShareAlike 2.5 Switzerland"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.5 Switzerland"@ms,
+        "Naamsvermelding-GelijkDelen 2.5 Zwitserland"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.5 Sveits"@no,
+        "Tsebagatšo -Mohlakanelwa 2.5 Switzerland"@nso,
+        "Attribution-ShareAlike 2.5 Switzerland"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.5 Szwajcaria"@pl,
+        "Atribuição - CompartilhaIgual 2.5 Suíça"@pt,
+        "Attribution-ShareAlike 2.5 Switzerland"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.5 Switzerland"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.5 Elveţia"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Швейцария"@ru,
+        "Attribution-ShareAlike 2.5 Switzerland"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Švica"@sl,
+        "Attribution-ShareAlike 2.5 Zvicër"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Švajcarska"@sr,
+        "Ауторство-Делити под истим условима 2.5 Швајцарска"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Švajcarska"@sr-latn,
+        "Attribution-ShareAlike 2.5 Switzerland"@st,
+        "Erkännande-DelaLika 2.5 Schweiz"@sv,
+        "Attribution-ShareAlike 2.5 Switzerland"@ta,
+        "Attribution-ShareAlike 2.5 స్విట్జర్లాండ్"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 สวิสเซอร์แลนด์"@th,
+        "Alıntı-LisansıDevamEttirme 2.5 İsviçre"@tr,
+        "Attribution-ShareAlike 2.5 Switzerland"@uk,
+        "Attribution-ShareAlike 2.5 Switzerland"@ur,
+        "Attribution-ShareAlike 2.5 Switzerland"@vi,
+        "署名-相同方式共享 2.5 瑞士"@zh,
+        "姓名標示-相同方式分享 2.5 瑞士"@zh-hk,
+        "姓名標示-相同方式分享 2.5 瑞士"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.5 ESwitzerland"@zu,
+        "${Attribution-ShareAlike} 2.5 ${Switzerland}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-SA-2.5-ch> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.5/ch/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.5/ch/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-SA-2.5-ch> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/ch/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-sa/2.5/ch/legalcode.de> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:requires cc:Attribution,
+        cc:Notice,
+        cc:ShareAlike ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "2.5" ;
+    dc:identifier "by-sa" ;
+    dc:source <http://creativecommons.org/licenses/by-sa/2.5/> ;
+    dc:title "Erkenning-InsgelyksDeel 2.5 Switserland"@af,
+        "نسب العمل- المشاركة على قدم المساواة 2.5 سوسرا"@ar,
+        "Attribution-ShareAlike 2.5 Switzerland"@as,
+        "Attribution-ShareAlike 2.5 Switzerland"@ast,
+        "Attribution-ShareAlike 2.5 Switzerland"@ast-es,
+        "Attribution-ShareAlike 2.5 Switzerland"@az,
+        "Attribution-ShareAlike 2.5 Швейцарыя"@be,
+        "Признание-Споделяне на споделеното 2.5 Швейцария"@bg,
+        "Attribution-ShareAlike 2.5 Switzerland"@bn,
+        "Reconeixement-CompartirIgual 2.5 Suïssa"@ca,
+        "Uveďte autora-Zachovejte licenci 2.5 Švýcarsko"@cs,
+        "Navngivelse-DelPåSammeVilkår 2.5 Schweiz"@da,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"@de,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"@de-at,
+        "Namensnennung-Weitergabe unter gleichen Bedingungen 2.5 Schweiz"@de-ch,
+        "Αναφορά Δημιουργού - Παρόμοια Διανομή 2.5 Ελβετία"@el,
+        "Attribution-ShareAlike 2.5 Switzerland"@en,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-ca,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-gb,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-hk,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-sg,
+        "Attribution-ShareAlike 2.5 Switzerland"@en-us,
+        "Atribuite-Samkondiĉe 2.5 Svisujo"@eo,
+        "Atribución-CompartirIgual 2.5 Suiza"@es,
+        "Atribución-CompartirDerivadasIgual 2.5 Suiza"@es-ar,
+        "Atribución-LicenciarIgual 2.5 Suiza"@es-cl,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-co,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-ec,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-es,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-gt,
+        "Atribución-Licenciamiento Recíproco 2.5 Suiza"@es-mx,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-pe,
+        "Reconocimiento-CompartirIgual 2.5 Suiza"@es-pr,
+        "Autorile viitamine + Jagamine samadel tingimustel 2.5 Šveits"@et,
+        "Aitortu-PartekatuBerdin 2.5 Suitza"@eu,
+        "Attribution-ShareAlike 2.5 سویس"@fa,
+        "Nimeä-Tarttuva 2.5 Sveitsi"@fi,
+        "Paternité - Partage à l'Identique 2.5 Suisse"@fr,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"@fr-ca,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"@fr-ch,
+        "Paternité - Partage des Conditions Initiales à l'Identique 2.5 Suisse"@fr-lu,
+        "Attribution-ShareAlike 2.5 Switzerland"@ga,
+        "Recoñecemento-CompartirIgual 2.5 Switzerland"@gl,
+        "ייחוס-שיתוף זהה 2.5 שוויץ"@he,
+        "Attribution-ShareAlike 2.5 Switzerland"@hi,
+        "Imenovanje-Dijeli pod istim uvjetima 2.5 Švicarska"@hr,
+        "Nevezd meg! - Így add tovább! 2.5 Svájc"@hu,
+        "Հղում - համանման տարածում 2.5 Շվեյցարիա"@hy,
+        "Atribusi-BerbagiSerupa 2.5 Swiss"@id,
+        "Attribution-ShareAlike 2.5 Switzerland"@is,
+        "Attribuzione - Condividi allo stesso modo 2.5 Switzerland"@it,
+        "Attribuzione - Condividi allo stesso modo 2.5 Switzerland"@it-ch,
+        "表示 - 継承 2.5 スイス"@ja,
+        "ავტორობის მითითებით – გავრცელება იგივე პირობებით  2.5 შვეიცარია"@ka,
+        "Attribution-ShareAlike 2.5 Switzerland"@kk,
+        "저작자표시-동일조건변경허락 2.5 스위스"@ko,
+        "Attribution-ShareAlike 2.5 Šveicarija"@lt,
+        "Atsaucoties-Nemainot licenci 2.5 Šveice"@lv,
+        "НаведиИзвор-СподелиПодИстиУслови 2.5 Швајцарија"@mk,
+        "Attribution-ShareAlike 2.5 സ്വിറ്റ്സർലാന്റ്"@ml,
+        "Attribution-ShareAlike 2.5 Switzerland"@mn,
+        "Pengiktirafan-PerkongsianSerupa 2.5 Switzerland"@ms,
+        "Naamsvermelding-GelijkDelen 2.5 Zwitserland"@nl,
+        "Navngivelse-DelPåSammeVilkår 2.5 Sveits"@no,
+        "Tsebagatšo -Mohlakanelwa 2.5 Switzerland"@nso,
+        "Attribution-ShareAlike 2.5 Switzerland"@oci-es,
+        "Uznanie autorstwa-Na tych samych warunkach 2.5 Szwajcaria"@pl,
+        "Atribuição - CompartilhaIgual 2.5 Suíça"@pt,
+        "Attribution-ShareAlike 2.5 Switzerland"@pt-br,
+        "Atribuição-Partilha nos termos da mesma licença 2.5 Switzerland"@pt-pt,
+        "Atribuire - Distribuire-în-condiţii-identice 2.5 Elveţia"@ro,
+        "Attribution-ShareAlike (Атрибуция — С сохранением условий) 2.5 Швейцария"@ru,
+        "Attribution-ShareAlike 2.5 Switzerland"@si-lk,
+        "Priznanje avtorstva-Deljenje pod enakimi pogoji 2.5 Švica"@sl,
+        "Attribution-ShareAlike 2.5 Zvicër"@sq,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Švajcarska"@sr,
+        "Ауторство-Делити под истим условима 2.5 Швајцарска"@sr,
+        "Autorstvo-Deliti pod istim uslovima 2.5 Švajcarska"@sr-latn,
+        "Attribution-ShareAlike 2.5 Switzerland"@st,
+        "Erkännande-DelaLika 2.5 Schweiz"@sv,
+        "Attribution-ShareAlike 2.5 Switzerland"@ta,
+        "Attribution-ShareAlike 2.5 స్విట్జర్లాండ్"@te,
+        "แสดงที่มา-อนุญาตแบบเดียวกัน 2.5 สวิสเซอร์แลนด์"@th,
+        "Alıntı-LisansıDevamEttirme 2.5 İsviçre"@tr,
+        "Attribution-ShareAlike 2.5 Switzerland"@uk,
+        "Attribution-ShareAlike 2.5 Switzerland"@ur,
+        "Attribution-ShareAlike 2.5 Switzerland"@vi,
+        "署名-相同方式共享 2.5 瑞士"@zh,
+        "姓名標示-相同方式分享 2.5 瑞士"@zh-hk,
+        "姓名標示-相同方式分享 2.5 瑞士"@zh-tw,
+        "Qaphela Umnikazi-Zihlanganyeleni 2.5 ESwitzerland"@zu,
+        "${Attribution-ShareAlike} 2.5 ${Switzerland}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-sa/2.5/ch/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-sa/2.5/ch/80x15.png>,
+        <http://i.creativecommons.org/l/by-sa/2.5/ch/88x31.png> ;
+    li:id "CC-BY-SA-2.5-ch" ;
+    li:libre <http://creativecommons.org/> ;
+    li:name "CC BY-SA 2.5 CH" .
+
+<http://creativecommons.org/licenses/by-sa/2.5/ch/legalcode.de> dc:language "de" .
+

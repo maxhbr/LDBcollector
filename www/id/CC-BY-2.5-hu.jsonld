@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-hu",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/hu/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/hu/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Hongarye"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 هونغاريا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 Вугоршчына"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Унгария"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Hongria"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Maďarsko"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Ungarn"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Ungarn"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 Ungarn"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 Ungarn"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Ουγγαρία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Hungarujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 Hungría"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 Hungría"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 Hungría"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 Hungría"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 Hungría"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 Hungría"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 Hungría"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 Hungría"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 Hungría"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 Hungría"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 Ungari"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 Hungaria"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 مجارستان"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Unkari"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Hongrie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Hongrie"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Hongrie"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Hongrie"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 Hungary"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 הונגריה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Mađarska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 Magyarország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 Հունգարիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 Hongaria"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 Ungverjaland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 Ungheria"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 Hungary"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 ハンガリー"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 უნგრეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 Hungary"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 헝가리"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Vengrija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Ungārija"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Унгарија"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 ഹംഗറി"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 Hungary"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 Hongarije"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 Ungarn"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 Hungary"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Węgry"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 Hungria"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 Hungary"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 Hungary"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 Ungaria"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 Венгрия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Madžarska"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Hungari"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Madjarska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Мађарска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Madjarska"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Ungern"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 హంగేరీ"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 ฮังการี"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 Macaristan"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 Hungary"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 Nước Hungary"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 匈牙利"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 匈牙利"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 匈牙利"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 iHungary"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${Hungary}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/hu/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/hu/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/hu/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Hongarye"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 هونغاريا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 Вугоршчына"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Унгария"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Hongria"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Maďarsko"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Ungarn"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Ungarn"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 Ungarn"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 Ungarn"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Ουγγαρία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Hungarujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 Hungría"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 Hungría"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 Hungría"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 Hungría"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 Hungría"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 Hungría"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 Hungría"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 Hungría"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 Hungría"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 Hungría"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 Ungari"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 Hungaria"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 مجارستان"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Unkari"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Hongrie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Hongrie"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Hongrie"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Hongrie"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 Hungary"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 הונגריה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Mađarska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 Magyarország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 Հունգարիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 Hongaria"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 Ungverjaland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 Ungheria"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 Hungary"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 ハンガリー"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 უნგრეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 Hungary"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 헝가리"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Vengrija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Ungārija"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Унгарија"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 ഹംഗറി"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 Hungary"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 Hongarije"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 Ungarn"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 Hungary"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Węgry"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 Hungria"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 Hungary"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 Hungary"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 Ungaria"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 Венгрия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Madžarska"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Hungari"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Madjarska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Мађарска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Madjarska"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Ungern"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 హంగేరీ"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 ฮังการี"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 Macaristan"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 Hungary"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 Nước Hungary"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 匈牙利"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 匈牙利"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 匈牙利"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 iHungary"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${Hungary}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-hu",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/hu/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/hu/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/hu/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/hu/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-hu",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 HU"
+}

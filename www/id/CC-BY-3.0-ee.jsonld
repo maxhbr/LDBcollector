@@ -1,0 +1,811 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-3.0-ee",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/ee/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/ee/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 3.0 Estonia"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  3.0 Estonia"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 3.0 country.ee"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 3.0 Estonia"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 3.0 Estonia"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 3.0 Estònia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 3.0 Estonia"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 3.0 estisk"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 3.0 Estland"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 3.0 Estonia"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 3.0 Estonia"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 3.0 Εσθονία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 3.0 Estonujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 3.0 Estonia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 3.0 Estonia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 3.0 Estonia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 3.0 Estonia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 3.0 Eesti"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 3.0 Estonia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 3.0 Viro"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 3.0 Estonie"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 3.0 Estonia"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 3.0 Estonia"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 3.0 Estonia"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 3.0 Estonia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 3.0 Estonia"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 3.0 Estonija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 3.0 Estonia"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 3.0 Estonia"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 3.0 Estonia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 3.0 Estonia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 3.0 Estonia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 3.0 エストニア"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  3.0 Estonia"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 3.0 Estonia"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 3.0 에스토니아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 3.0 Estonia"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 3.0 Estonia"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 3.0 Естонија"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 3.0 Estonia"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 3.0 Estonia"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 3.0 Estland"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 3.0 Estland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 3.0 Estonia"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 3.0 Estonia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  3.0 Estónia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 3.0 Estonia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 3.0 Estônia"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 3.0 Estonia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 3.0 Estonia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 3.0 Эстония"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 3.0 Estonia"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 3.0 Estoni"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 3.0 country.ee"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 3.0 Estonia"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 3.0 Estonia"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 3.0 Estonia"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 3.0 Estonia"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 3.0 Estonia"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 3.0 Estonya"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 3.0 Estonia"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 3.0 Estonia"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 3.0 Estonia"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 3.0 Estonia"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 3.0 Estonia"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 3.0 愛沙尼亞"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 3.0 Estonia"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 3.0 ${Estonia}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/3.0/ee/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/ee/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/ee/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 3.0 Estonia"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  3.0 Estonia"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 3.0 country.ee"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 3.0 Estonia"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 3.0 Estonia"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 3.0 Estònia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 3.0 Estonia"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 3.0 estisk"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 3.0 Estland"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 3.0 Estonia"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 3.0 Estonia"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 3.0 Εσθονία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 3.0 Estonujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 3.0 Estonia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 3.0 Estonia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 3.0 Estonia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 3.0 Estonia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 3.0 Eesti"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 3.0 Estonia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 3.0 Viro"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 3.0 Estonie"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 3.0 Estonia"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 3.0 Estonia"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 3.0 Estonia"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 3.0 Estonia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 3.0 Estonia"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 3.0 Estonija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 3.0 Estonia"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 3.0 Estonia"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 3.0 Estonia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 3.0 Estonia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 3.0 Estonia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 3.0 エストニア"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  3.0 Estonia"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 3.0 Estonia"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 3.0 에스토니아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 3.0 Estonia"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 3.0 Estonia"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 3.0 Естонија"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 3.0 Estonia"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 3.0 Estonia"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 3.0 Estland"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 3.0 Estland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 3.0 Estonia"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 3.0 Estonia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  3.0 Estónia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 3.0 Estonia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 3.0 Estônia"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 3.0 Estonia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 3.0 Estonia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 3.0 Эстония"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 3.0 Estonia"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 3.0 Estoni"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 3.0 country.ee"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 3.0 Estonia"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 3.0 Estonia"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 3.0 Estonia"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 3.0 Estonia"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 3.0 Estonia"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 3.0 Estonya"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 3.0 Estonia"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 3.0 Estonia"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 3.0 Estonia"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 3.0 Estonia"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 3.0 Estonia"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 3.0 愛沙尼亞"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 3.0 Estonia"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 3.0 ${Estonia}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-3.0-ee",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/3.0/ee/80x15.png",
+            "http://i.creativecommons.org/l/by/3.0/ee/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/3.0/ee/80x15.png",
+        "http://i.creativecommons.org/l/by/3.0/ee/88x31.png"
+    ],
+    "li:id": "CC-BY-3.0-ee",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 3.0 EE"
+}

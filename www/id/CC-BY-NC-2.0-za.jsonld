@@ -1,0 +1,854 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-2.0-za",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/za/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.0/za/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "by-nc",
+    "dc:isReplacedBy": "https://licensedb.org/id/CC-BY-NC-2.5-za",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/2.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 2.0 Suid-Afrika"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 2.0 جنوب إفريقيا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 2.0 ПАР"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 2.0 Южна Африка"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 2.0 Sudàfrica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 2.0 Jižní Afrika"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 2.0 Sydafrika"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 2.0 Südafrika"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 2.0 Südafrika"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 2.0 Südafrika"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.0 Νότια Αφρική"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 2.0 Sud-Afriko"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 2.0 Sudáfrica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 2.0 Sudáfrica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 2.0 Sudáfrica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 2.0 Suráfrica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 2.0 Sudáfrica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 2.0 Suráfrica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 2.0 Sudáfrica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 2.0 Suráfrica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 2.0 Suráfrica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 2.0 Suráfrica"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 2.0 Lõuna-Aafrika"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 2.0 Hegoafrika"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 2.0 آفریقای جنوبی"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 2.0 Etelä-Afrikka"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Afrique du Sud"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Afrique du Sud"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Afrique du Sud"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Afrique du Sud"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 2.0 Sudáfrica"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 2.0 דרום אפריקה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 2.0 Južna Afrika"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 2.0 Dél-Afrika"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.0 Հարավային Աֆրիկա"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 2.0 Afrika Selatan"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 2.0 Sud Africa"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 2.0 Sud Africa"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 2.0 南アフリカ"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.0 სამხრეთ აფრიკა"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 2.0 South Africa"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 2.0 남아프리카 공화국"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 2.0 Pietų Afrika"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 2.0 Dienvidāfrika"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 2.0 Јужна Африка"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 2.0 ദക്ഷിണാഫ്രിക്ക"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 2.0 Afrika Selatan"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 2.0 Zuid-Afrika"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 2.0 Sør-afrika"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 2.0 Afrika Borwa"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.0 Południowa Afryka"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 2.0 África do Sul"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 2.0 South Africa"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 2.0 África do Sul"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 2.0 Africa de Sud"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.0 ЮАР"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 2.0 Južnoafriška Republika"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 2.0 Afrikë e Jugut"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 2.0 Južna Afrika"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 2.0 Јужна Африка"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 2.0 Južna Afrika"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 2.0 Sydafrika"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 2.0 దక్షిణ ఆఫ్రికా"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.0 แอฟริกาใต้"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 2.0 South Africa"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 2.0 South Africa"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  2.0 South Africa"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 2.0 南非"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 2.0 南非"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 2.0 南非"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.0 ENingizimu Afrika"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 2.0 ${South Africa}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/2.0/za/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/za/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by-nc/2.0/za/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "by-nc",
+        "dc:isReplacedBy": "http://creativecommons.org/licenses/by-nc/2.5/za/",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 2.0 Suid-Afrika"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 2.0 جنوب إفريقيا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 2.0 ПАР"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 2.0 Южна Африка"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 2.0 Sudàfrica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 2.0 Jižní Afrika"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 2.0 Sydafrika"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 2.0 Südafrika"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 2.0 Südafrika"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 2.0 Südafrika"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.0 Νότια Αφρική"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 2.0 Sud-Afriko"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 2.0 Sudáfrica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 2.0 Sudáfrica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 2.0 Sudáfrica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 2.0 Suráfrica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 2.0 Sudáfrica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 2.0 Suráfrica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 2.0 Sudáfrica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 2.0 Suráfrica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 2.0 Suráfrica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 2.0 Suráfrica"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 2.0 Lõuna-Aafrika"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 2.0 Hegoafrika"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 2.0 آفریقای جنوبی"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 2.0 Etelä-Afrikka"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Afrique du Sud"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Afrique du Sud"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Afrique du Sud"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Afrique du Sud"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 2.0 Sudáfrica"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 2.0 דרום אפריקה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 2.0 Južna Afrika"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 2.0 Dél-Afrika"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.0 Հարավային Աֆրիկա"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 2.0 Afrika Selatan"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 2.0 Sud Africa"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 2.0 Sud Africa"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 2.0 南アフリカ"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.0 სამხრეთ აფრიკა"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 2.0 South Africa"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 2.0 남아프리카 공화국"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 2.0 Pietų Afrika"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 2.0 Dienvidāfrika"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 2.0 Јужна Африка"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 2.0 ദക്ഷിണാഫ്രിക്ക"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 2.0 Afrika Selatan"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 2.0 Zuid-Afrika"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 2.0 Sør-afrika"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 2.0 Afrika Borwa"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.0 Południowa Afryka"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 2.0 África do Sul"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 2.0 South Africa"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 2.0 África do Sul"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 2.0 Africa de Sud"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.0 ЮАР"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 2.0 Južnoafriška Republika"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 2.0 Afrikë e Jugut"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 2.0 Južna Afrika"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 2.0 Јужна Африка"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 2.0 Južna Afrika"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 2.0 Sydafrika"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 2.0 దక్షిణ ఆఫ్రికా"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.0 แอฟริกาใต้"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 2.0 South Africa"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 2.0 South Africa"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  2.0 South Africa"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 2.0 南非"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 2.0 南非"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 2.0 南非"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.0 ENingizimu Afrika"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 2.0 ${South Africa}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-2.0-za",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/2.0/za/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/2.0/za/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/2.0/za/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/2.0/za/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-2.0-za",
+    "li:name": "CC BY-NC 2.0 ZA"
+}

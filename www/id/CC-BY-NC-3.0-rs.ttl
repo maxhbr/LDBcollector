@@ -1,0 +1,243 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/by-nc/3.0/rs/> a cc:License ;
+    cc:jurisdiction <http://creativecommons.org/international/rs/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/3.0/rs/legalcode.sr-Cyrl>,
+        <http://creativecommons.org/licenses/by-nc/3.0/rs/legalcode.sr-Latn> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/3.0/> ;
+    dc:title "Erkenning-NieKommersieel 3.0 Serbia"@af,
+        "نسب - غير تجاري 3.0 صربيا"@ar,
+        "Attribution-NonCommercial 3.0 Serbia"@as,
+        "Attribution-NonCommercial 3.0 Serbia"@ast,
+        "Attribution-NonCommercial 3.0 Serbia"@ast-es,
+        "Attribution-NonCommercial 3.0 Serbia"@az,
+        "Attribution-NonCommercial 3.0 Сербія"@be,
+        "Признание-Некомерсиално 3.0 Сърбия"@bg,
+        "Attribution-NonCommercial 3.0 Serbia"@bn,
+        "Reconeixement-NoComercial 3.0 Sèrbia"@ca,
+        "Uveďte autora-Neužívejte komerčně 3.0 Srbsko"@cs,
+        "Navngivelse-IkkeKommerciel 3.0 Serbia"@da,
+        "Namensnennung-Nicht-kommerziell 3.0 Serbien"@de,
+        "Namensnennung-NichtKommerziell 3.0 Serbien"@de-at,
+        "Namensnennung-NichtKommerziell 3.0 Serbien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Σερβία"@el,
+        "Attribution-NonCommercial 3.0 Serbia"@en,
+        "Attribution-NonCommercial 3.0 Serbia"@en-ca,
+        "Attribution-NonCommercial 3.0 Serbia"@en-gb,
+        "Attribution-NonCommercial 3.0 Serbia"@en-hk,
+        "Attribution-NonCommercial 3.0 Serbia"@en-sg,
+        "Attribution-NonCommercial 3.0 Serbia"@en-us,
+        "Atribuite-Nekomerce 3.0 Serbujo"@eo,
+        "Atribución-NoComercial 3.0 Serbia"@es,
+        "Atribución-NoComercial 3.0 Serbia"@es-ar,
+        "Atribución-NoComercial 3.0 Serbia"@es-cl,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-co,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-ec,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-es,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-gt,
+        "Atribución-No Comercial 3.0 Serbia"@es-mx,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-pe,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 3.0 Serbia"@et,
+        "Aitortu-EzKomertziala 3.0 Serbia"@eu,
+        "Attribution-NonCommercial 3.0 صربستان"@fa,
+        "Nimeä-Epäkaupallinen 3.0 Serbia"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Serbie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Serbie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Serbie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Serbie"@fr-lu,
+        "Attribution-NonCommercial 3.0 Serbia"@ga,
+        "Recoñecemento-NonComercial 3.0 Serbia"@gl,
+        "ייחוס-שימוש לא מסחרי 3.0 סרביה"@he,
+        "Attribution-NonCommercial 3.0 Serbia"@hi,
+        "Imenovanje-Nekomercijalno 3.0 Srbija"@hr,
+        "Nevezd meg! - Ne add el! 3.0 Szerbia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 3.0 Սերբիա"@hy,
+        "Attribusi-NonKomersial 3.0 Serbia"@id,
+        "Attribution-NonCommercial 3.0 Serbía"@is,
+        "Attribuzione - Non commerciale 3.0 Serbia"@it,
+        "Attribuzione - Non commerciale 3.0 Serbia"@it-ch,
+        "表示 - 非営利 3.0 セルビア"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 სერბია"@ka,
+        "Коммерциялық емес 3.0 Serbia"@kk,
+        "저작자표시-비영리 3.0 세르비아"@ko,
+        "Attribution-NonCommercial 3.0 Serbija"@lt,
+        "Atsaucoties-Nekomerciāli 3.0 Serbija"@lv,
+        "НаведиИзвор-Некомерцијално 3.0 Србија"@mk,
+        "Attribution-NonCommercial 3.0 സെർബിയ"@ml,
+        "Attribution-NonCommercial 3.0 Serbia"@mn,
+        "Pengiktirafan-BukanKomersial 3.0 Serbia"@ms,
+        "Naamsvermelding-NietCommercieel 3.0 Servië"@nl,
+        "Navngivelse-Ikkekommersiell 3.0 Serbia"@no,
+        "Tsebagatšo- E sego ya kgwebo 3.0 Serbia"@nso,
+        "Attribution-NonCommercial 3.0 Serbia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 3.0 Serbia"@pl,
+        "Atribuição - NãoComercial 3.0 Sérvia"@pt,
+        "Atribuição-Uso não-comercial 3.0 Serbia"@pt-br,
+        "Atribuição-Uso Não-Comercial 3.0 Serbia"@pt-pt,
+        "Atribuire-NeComercial 3.0 Serbia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Сербия"@ru,
+        "Attribution-NonCommercial 3.0 Serbia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 3.0 Srbija"@sl,
+        "Attribution-NonCommercial 3.0 Serbi"@sq,
+        "Autorstvo-Nekomercijalno 3.0 Srbija"@sr,
+        "Ауторство-Некомерцијално 3.0 Србија"@sr,
+        "Autorstvo-Nekomercijalno 3.0 Srbija"@sr-latn,
+        "Attribution-NonCommercial 3.0 Serbia"@st,
+        "Erkännande-IckeKommersiell 3.0 Serbien"@sv,
+        "Attribution-NonCommercial 3.0 செர்பியா"@ta,
+        "Attribution-NonCommercial 3.0 సెర్బియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 เซอร์เบีย"@th,
+        "Alıntı-Gayriticari 3.0 Sırbistan"@tr,
+        "Attribution-NonCommercial 3.0 Serbia"@uk,
+        "Attribution-NonCommercial 3.0 Serbia"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  3.0 Nước Serbia"@vi,
+        "署名-非商业性使用 3.0 塞尔维亚"@zh,
+        "姓名標示-非商業性 3.0 塞爾維亞"@zh-hk,
+        "姓名標示-非商業性 3.0 塞爾維亞"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 Serbia"@zu,
+        "${Attribution-NonCommercial} 3.0 ${Serbia}"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-BY-NC-3.0-rs> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/3.0/rs/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/3.0/rs/88x31.png> .
+
+<https://licensedb.org/id/CC-BY-NC-3.0-rs> a cc:License,
+        li:License ;
+    cc:jurisdiction <http://creativecommons.org/international/rs/> ;
+    cc:legalcode <http://creativecommons.org/licenses/by-nc/3.0/rs/legalcode.sr-Cyrl>,
+        <http://creativecommons.org/licenses/by-nc/3.0/rs/legalcode.sr-Latn> ;
+    cc:licenseClass <http://creativecommons.org/license/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Distribution,
+        cc:Reproduction ;
+    cc:prohibits cc:CommercialUse ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "3.0" ;
+    dc:identifier "by-nc" ;
+    dc:source <http://creativecommons.org/licenses/by-nc/3.0/> ;
+    dc:title "Erkenning-NieKommersieel 3.0 Serbia"@af,
+        "نسب - غير تجاري 3.0 صربيا"@ar,
+        "Attribution-NonCommercial 3.0 Serbia"@as,
+        "Attribution-NonCommercial 3.0 Serbia"@ast,
+        "Attribution-NonCommercial 3.0 Serbia"@ast-es,
+        "Attribution-NonCommercial 3.0 Serbia"@az,
+        "Attribution-NonCommercial 3.0 Сербія"@be,
+        "Признание-Некомерсиално 3.0 Сърбия"@bg,
+        "Attribution-NonCommercial 3.0 Serbia"@bn,
+        "Reconeixement-NoComercial 3.0 Sèrbia"@ca,
+        "Uveďte autora-Neužívejte komerčně 3.0 Srbsko"@cs,
+        "Navngivelse-IkkeKommerciel 3.0 Serbia"@da,
+        "Namensnennung-Nicht-kommerziell 3.0 Serbien"@de,
+        "Namensnennung-NichtKommerziell 3.0 Serbien"@de-at,
+        "Namensnennung-NichtKommerziell 3.0 Serbien"@de-ch,
+        "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 3.0 Σερβία"@el,
+        "Attribution-NonCommercial 3.0 Serbia"@en,
+        "Attribution-NonCommercial 3.0 Serbia"@en-ca,
+        "Attribution-NonCommercial 3.0 Serbia"@en-gb,
+        "Attribution-NonCommercial 3.0 Serbia"@en-hk,
+        "Attribution-NonCommercial 3.0 Serbia"@en-sg,
+        "Attribution-NonCommercial 3.0 Serbia"@en-us,
+        "Atribuite-Nekomerce 3.0 Serbujo"@eo,
+        "Atribución-NoComercial 3.0 Serbia"@es,
+        "Atribución-NoComercial 3.0 Serbia"@es-ar,
+        "Atribución-NoComercial 3.0 Serbia"@es-cl,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-co,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-ec,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-es,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-gt,
+        "Atribución-No Comercial 3.0 Serbia"@es-mx,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-pe,
+        "Reconocimiento-NoComercial 3.0 Serbia"@es-pr,
+        "Autorile viitamine + Mitteäriline eesmärk 3.0 Serbia"@et,
+        "Aitortu-EzKomertziala 3.0 Serbia"@eu,
+        "Attribution-NonCommercial 3.0 صربستان"@fa,
+        "Nimeä-Epäkaupallinen 3.0 Serbia"@fi,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Serbie"@fr,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Serbie"@fr-ca,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Serbie"@fr-ch,
+        "Paternité - Pas d'Utilisation Commerciale 3.0 Serbie"@fr-lu,
+        "Attribution-NonCommercial 3.0 Serbia"@ga,
+        "Recoñecemento-NonComercial 3.0 Serbia"@gl,
+        "ייחוס-שימוש לא מסחרי 3.0 סרביה"@he,
+        "Attribution-NonCommercial 3.0 Serbia"@hi,
+        "Imenovanje-Nekomercijalno 3.0 Srbija"@hr,
+        "Nevezd meg! - Ne add el! 3.0 Szerbia"@hu,
+        "Հղում - Ոչ-առևտրային օգտագործում 3.0 Սերբիա"@hy,
+        "Attribusi-NonKomersial 3.0 Serbia"@id,
+        "Attribution-NonCommercial 3.0 Serbía"@is,
+        "Attribuzione - Non commerciale 3.0 Serbia"@it,
+        "Attribuzione - Non commerciale 3.0 Serbia"@it-ch,
+        "表示 - 非営利 3.0 セルビア"@ja,
+        "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 3.0 სერბია"@ka,
+        "Коммерциялық емес 3.0 Serbia"@kk,
+        "저작자표시-비영리 3.0 세르비아"@ko,
+        "Attribution-NonCommercial 3.0 Serbija"@lt,
+        "Atsaucoties-Nekomerciāli 3.0 Serbija"@lv,
+        "НаведиИзвор-Некомерцијално 3.0 Србија"@mk,
+        "Attribution-NonCommercial 3.0 സെർബിയ"@ml,
+        "Attribution-NonCommercial 3.0 Serbia"@mn,
+        "Pengiktirafan-BukanKomersial 3.0 Serbia"@ms,
+        "Naamsvermelding-NietCommercieel 3.0 Servië"@nl,
+        "Navngivelse-Ikkekommersiell 3.0 Serbia"@no,
+        "Tsebagatšo- E sego ya kgwebo 3.0 Serbia"@nso,
+        "Attribution-NonCommercial 3.0 Serbia"@oci-es,
+        "Uznanie autorstwa-Użycie niekomercyjne 3.0 Serbia"@pl,
+        "Atribuição - NãoComercial 3.0 Sérvia"@pt,
+        "Atribuição-Uso não-comercial 3.0 Serbia"@pt-br,
+        "Atribuição-Uso Não-Comercial 3.0 Serbia"@pt-pt,
+        "Atribuire-NeComercial 3.0 Serbia"@ro,
+        "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 3.0 Сербия"@ru,
+        "Attribution-NonCommercial 3.0 Serbia"@si-lk,
+        "Priznanje avtorstva-Nekomercialno 3.0 Srbija"@sl,
+        "Attribution-NonCommercial 3.0 Serbi"@sq,
+        "Autorstvo-Nekomercijalno 3.0 Srbija"@sr,
+        "Ауторство-Некомерцијално 3.0 Србија"@sr,
+        "Autorstvo-Nekomercijalno 3.0 Srbija"@sr-latn,
+        "Attribution-NonCommercial 3.0 Serbia"@st,
+        "Erkännande-IckeKommersiell 3.0 Serbien"@sv,
+        "Attribution-NonCommercial 3.0 செர்பியா"@ta,
+        "Attribution-NonCommercial 3.0 సెర్బియా"@te,
+        "แสดงที่มา-ไม่ใช้เพื่อการค้า 3.0 เซอร์เบีย"@th,
+        "Alıntı-Gayriticari 3.0 Sırbistan"@tr,
+        "Attribution-NonCommercial 3.0 Serbia"@uk,
+        "Attribution-NonCommercial 3.0 Serbia"@ur,
+        "Ghi nhận công của tác giả - Phi thương mại  3.0 Nước Serbia"@vi,
+        "署名-非商业性使用 3.0 塞尔维亚"@zh,
+        "姓名標示-非商業性 3.0 塞爾維亞"@zh-hk,
+        "姓名標示-非商業性 3.0 塞爾維亞"@zh-tw,
+        "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 3.0 Serbia"@zu,
+        "${Attribution-NonCommercial} 3.0 ${Serbia}"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/by-nc/3.0/rs/> ;
+    foaf:logo <http://i.creativecommons.org/l/by-nc/3.0/rs/80x15.png>,
+        <http://i.creativecommons.org/l/by-nc/3.0/rs/88x31.png> ;
+    li:id "CC-BY-NC-3.0-rs" ;
+    li:name "CC BY-NC 3.0 RS" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/rs/legalcode.sr-Cyrl> dc:language "sr-Cyrl" .
+
+<http://creativecommons.org/licenses/by-nc/3.0/rs/legalcode.sr-Latn> dc:language "sr-Latn" .
+

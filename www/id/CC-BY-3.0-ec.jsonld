@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-3.0-ec",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/ec/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/ec/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 3.0 Ecuador"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  3.0 اكودار"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 3.0 Эквадор"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 3.0 Ecuador"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 3.0 Equador"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 3.0 Ekvádor"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 3.0 Ecuador"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 3.0 Ecuador"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 3.0 Ecuador"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 3.0 Ecuador"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 3.0 Εκουαδόρ"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 3.0 Ekvadoro"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 3.0 Ecuador"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 3.0 Ecuador"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 3.0 Ecuador"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 3.0 Ecuador"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 3.0 Ecuador"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 3.0 Ecuador"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 3.0 Ecuador"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 3.0 Ecuador"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 3.0 Ecuador"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 3.0 Ecuador"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 3.0 Ecuador"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 3.0 Ecuador"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 3.0 اکوادور"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 3.0 Ecuador"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 3.0 Équateur"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 3.0 Ecuador"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 3.0 Ecuador"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 3.0 Ecuador"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 3.0 Ecuador"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 3.0 אקוודור"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 3.0 Ekvador"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 3.0 Ecuador"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 3.0 Էկվադոր"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 3.0 Ekuador"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 3.0 Ecuador"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 3.0 Ecuador"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 3.0 エクアドル"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  3.0 ეკვადორი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 3.0 Ecuador"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 3.0 에콰도르"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 3.0 Ekvadoras"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 3.0 Ekvadora"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 3.0 Еквадор"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 3.0 ഇക്വഡോർ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 3.0 Ecuador"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 3.0 Ecuador"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 3.0 Ecuador"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 3.0 Ecuador"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 3.0 Ekwador"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  3.0 Equador"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 3.0 Ecuador"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 3.0 Ecuador"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 3.0 Ecuador"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 3.0 Эквадор"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 3.0 Ekvador"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 3.0 Ekuador"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 3.0 Ekvador"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 3.0 Еквадор"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 3.0 Ekvador"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 3.0 Ecuador"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 3.0 ఈక్వెడార్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 3.0 เอกวาดอร์"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 3.0 Ekvador"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 3.0 Ecuador"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 3.0 Ecuador"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 3.0 Ecuador"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 3.0 厄瓜多爾"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 3.0 厄瓜多爾"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 3.0 Ecuador"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 3.0 ${Ecuador}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/3.0/ec/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/ec/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/ec/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 3.0 Ecuador"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  3.0 اكودار"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 3.0 Эквадор"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 3.0 Ecuador"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 3.0 Equador"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 3.0 Ekvádor"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 3.0 Ecuador"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 3.0 Ecuador"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 3.0 Ecuador"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 3.0 Ecuador"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 3.0 Εκουαδόρ"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 3.0 Ekvadoro"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 3.0 Ecuador"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 3.0 Ecuador"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 3.0 Ecuador"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 3.0 Ecuador"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 3.0 Ecuador"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 3.0 Ecuador"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 3.0 Ecuador"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 3.0 Ecuador"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 3.0 Ecuador"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 3.0 Ecuador"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 3.0 Ecuador"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 3.0 Ecuador"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 3.0 اکوادور"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 3.0 Ecuador"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 3.0 Équateur"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 3.0 Ecuador"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 3.0 Ecuador"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 3.0 Ecuador"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 3.0 Ecuador"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 3.0 אקוודור"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 3.0 Ekvador"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 3.0 Ecuador"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 3.0 Էկվադոր"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 3.0 Ekuador"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 3.0 Ecuador"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 3.0 Ecuador"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 3.0 エクアドル"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  3.0 ეკვადორი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 3.0 Ecuador"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 3.0 에콰도르"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 3.0 Ekvadoras"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 3.0 Ekvadora"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 3.0 Еквадор"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 3.0 ഇക്വഡോർ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 3.0 Ecuador"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 3.0 Ecuador"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 3.0 Ecuador"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 3.0 Ecuador"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 3.0 Ekwador"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  3.0 Equador"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 3.0 Ecuador"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 3.0 Ecuador"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 3.0 Ecuador"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 3.0 Эквадор"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 3.0 Ekvador"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 3.0 Ekuador"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 3.0 Ekvador"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 3.0 Еквадор"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 3.0 Ekvador"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 3.0 Ecuador"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 3.0 ఈక్వెడార్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 3.0 เอกวาดอร์"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 3.0 Ekvador"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 3.0 Ecuador"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 3.0 Ecuador"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 3.0 Ecuador"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 3.0 厄瓜多爾"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 3.0 厄瓜多爾"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 3.0 Ecuador"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 3.0 ${Ecuador}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-3.0-ec",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/3.0/ec/80x15.png",
+            "http://i.creativecommons.org/l/by/3.0/ec/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/3.0/ec/80x15.png",
+        "http://i.creativecommons.org/l/by/3.0/ec/88x31.png"
+    ],
+    "li:id": "CC-BY-3.0-ec",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 3.0 EC"
+}

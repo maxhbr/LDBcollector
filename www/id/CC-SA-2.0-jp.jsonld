@@ -1,0 +1,844 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-SA-2.0-jp",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/jp/",
+    "cc:legalcode": "http://creativecommons.org/licenses/sa/2.0/jp/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "sa",
+    "dc:source": "http://creativecommons.org/licenses/sa/2.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "InsgelyksDeel 2.0 Japan"
+        },
+        {
+            "@language": "ar",
+            "@value": "المشاركة على قدم المساواة 2.0 اليابان"
+        },
+        {
+            "@language": "as",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "ast",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "az",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "be",
+            "@value": "ShareAlike 2.0 Японія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Споделяне на споделеното 2.0 Япония"
+        },
+        {
+            "@language": "bn",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "ca",
+            "@value": "CompartirIgual 2.0 Japó"
+        },
+        {
+            "@language": "cs",
+            "@value": "Zachovejte licenci 2.0 Japonsko"
+        },
+        {
+            "@language": "da",
+            "@value": "DelPåSammeVilkår 2.0 Japan"
+        },
+        {
+            "@language": "de",
+            "@value": "Weitergabe unter gleichen Bedingungen 2.0 Japan"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Weitergabe unter gleichen Bedingungen 2.0 Japan"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Weitergabe unter gleichen Bedingungen 2.0 Japan"
+        },
+        {
+            "@language": "el",
+            "@value": "Παρόμοια Διανομή 2.0 Ιαπωνία"
+        },
+        {
+            "@language": "en",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "en-us",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "eo",
+            "@value": "Samkondiĉe 2.0 Japanujo"
+        },
+        {
+            "@language": "es",
+            "@value": "CompartirIgual 2.0 Japón"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "CompartirDerivadasIgual 2.0 Japón"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Licenciar Igual 2.0 Japón"
+        },
+        {
+            "@language": "es-co",
+            "@value": "CompartirIgual 2.0 Japón"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "CompartirIgual 2.0 Japón"
+        },
+        {
+            "@language": "es-es",
+            "@value": "CompartirIgual 2.0 Japón"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "CompartirIgual 2.0 Japón"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Licenciamiento Recíproco 2.0 Japón"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "CompartirIgual 2.0 Japón"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "CompartirIgual 2.0 Japón"
+        },
+        {
+            "@language": "et",
+            "@value": "Jagamine samadel tingimustel  2.0 Jaapan"
+        },
+        {
+            "@language": "eu",
+            "@value": "PartekatuBerdin 2.0 Japonia"
+        },
+        {
+            "@language": "fa",
+            "@value": "ShareAlike 2.0 ژاپن"
+        },
+        {
+            "@language": "fi",
+            "@value": "Tarttuva 2.0 Japani"
+        },
+        {
+            "@language": "fr",
+            "@value": "Partage à l'Identique 2.0 Japon"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Partage des conditions initiales à l'identique 2.0 Japon"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Partage des conditions initiales à l'identique 2.0 Japon"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Partage des conditions initiales à l'identique 2.0 Japon"
+        },
+        {
+            "@language": "ga",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "gl",
+            "@value": "CompartirIgual 2.0 Xapón"
+        },
+        {
+            "@language": "he",
+            "@value": "שיתוף זהה 2.0 יפן"
+        },
+        {
+            "@language": "hi",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "hr",
+            "@value": "Dijeli pod istim uvjetima 2.0 Japan"
+        },
+        {
+            "@language": "hu",
+            "@value": "Így add tovább! 2.0 Japán"
+        },
+        {
+            "@language": "hy",
+            "@value": "Համանման տարածում 2.0 Japan"
+        },
+        {
+            "@language": "id",
+            "@value": "BerbagiSerupa 2.0 Jepang"
+        },
+        {
+            "@language": "is",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "it",
+            "@value": "StessaLicenza 2.0 Giappone"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "StessaLicenza 2.0 Giappone"
+        },
+        {
+            "@language": "ja",
+            "@value": "継承 2.0 日本"
+        },
+        {
+            "@language": "ka",
+            "@value": "გავრცელება იგივე პირობებით 2.0 იაპონია"
+        },
+        {
+            "@language": "kk",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "ko",
+            "@value": "동일조건변경허락 2.0 일본"
+        },
+        {
+            "@language": "lt",
+            "@value": "ShareAlike 2.0 Japonija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Līdzvērtīgs 2.0 Japāna"
+        },
+        {
+            "@language": "mk",
+            "@value": "СподелиПодИстиУслови 2.0 Јапонија"
+        },
+        {
+            "@language": "ml",
+            "@value": "ShareAlike 2.0 ജപ്പാൻ"
+        },
+        {
+            "@language": "mn",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "ms",
+            "@value": "Perkongsian serupa 2.0 Jepun"
+        },
+        {
+            "@language": "nl",
+            "@value": "GelijkDelen 2.0 Japan"
+        },
+        {
+            "@language": "no",
+            "@value": "DelPåSammeVilkår 2.0 Japan"
+        },
+        {
+            "@language": "nso",
+            "@value": "Mohlakanelwa 2.0 Japane"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "pl",
+            "@value": "Na tych samych warunkach 2.0 Japonia"
+        },
+        {
+            "@language": "pt",
+            "@value": "CompartilhaIgual 2.0 Japão"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Partilha nos termos da mesma licença 2.0 Japão"
+        },
+        {
+            "@language": "ro",
+            "@value": "Distribuie-în-condiţii-identice 2.0 Japonia"
+        },
+        {
+            "@language": "ru",
+            "@value": "С сохранением условий<br />(<i>ShareAlike</i>) 2.0 Япония"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "sl",
+            "@value": "Deljenje pod enakimi pogoji 2.0 Japonska"
+        },
+        {
+            "@language": "sq",
+            "@value": "ShareAlike 2.0 Japoni"
+        },
+        {
+            "@language": "sr",
+            "@value": "Deliti pod istim uslovima 2.0 Japan"
+        },
+        {
+            "@language": "sr",
+            "@value": "Делити под истим условима 2.0 Јапан"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Deliti pod istim uslovima 2.0 Japan"
+        },
+        {
+            "@language": "st",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "sv",
+            "@value": "DelaLika 2.0 Japan"
+        },
+        {
+            "@language": "ta",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "te",
+            "@value": "ShareAlike 2.0 జపాన్"
+        },
+        {
+            "@language": "th",
+            "@value": "อนุญาตแบบเดียวกัน 2.0 ่ญี่ปุ่น"
+        },
+        {
+            "@language": "tr",
+            "@value": "LisansıDevamEttirme 2.0 Japonya"
+        },
+        {
+            "@language": "uk",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "ur",
+            "@value": "ShareAlike 2.0 Japan"
+        },
+        {
+            "@language": "vi",
+            "@value": "ShareAlike 2.0 Nước Nhật Bản"
+        },
+        {
+            "@language": "zh",
+            "@value": "相同方式共享 2.0 日本"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "相同方式分享 2.0 日本"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "相同方式分享 2.0 日本"
+        },
+        {
+            "@language": "zu",
+            "@value": "Zihlanganyeleni 2.0 Ejapane"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${ShareAlike} 2.0 ${Japan}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/sa/2.0/jp/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/jp/",
+        "cc:legalcode": "http://creativecommons.org/licenses/sa/2.0/jp/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "sa",
+        "dc:source": "http://creativecommons.org/licenses/sa/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "InsgelyksDeel 2.0 Japan"
+            },
+            {
+                "@language": "ar",
+                "@value": "المشاركة على قدم المساواة 2.0 اليابان"
+            },
+            {
+                "@language": "as",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "ast",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "az",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "be",
+                "@value": "ShareAlike 2.0 Японія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Споделяне на споделеното 2.0 Япония"
+            },
+            {
+                "@language": "bn",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "ca",
+                "@value": "CompartirIgual 2.0 Japó"
+            },
+            {
+                "@language": "cs",
+                "@value": "Zachovejte licenci 2.0 Japonsko"
+            },
+            {
+                "@language": "da",
+                "@value": "DelPåSammeVilkår 2.0 Japan"
+            },
+            {
+                "@language": "de",
+                "@value": "Weitergabe unter gleichen Bedingungen 2.0 Japan"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Weitergabe unter gleichen Bedingungen 2.0 Japan"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Weitergabe unter gleichen Bedingungen 2.0 Japan"
+            },
+            {
+                "@language": "el",
+                "@value": "Παρόμοια Διανομή 2.0 Ιαπωνία"
+            },
+            {
+                "@language": "en",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "en-us",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "eo",
+                "@value": "Samkondiĉe 2.0 Japanujo"
+            },
+            {
+                "@language": "es",
+                "@value": "CompartirIgual 2.0 Japón"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "CompartirDerivadasIgual 2.0 Japón"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Licenciar Igual 2.0 Japón"
+            },
+            {
+                "@language": "es-co",
+                "@value": "CompartirIgual 2.0 Japón"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "CompartirIgual 2.0 Japón"
+            },
+            {
+                "@language": "es-es",
+                "@value": "CompartirIgual 2.0 Japón"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "CompartirIgual 2.0 Japón"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Licenciamiento Recíproco 2.0 Japón"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "CompartirIgual 2.0 Japón"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "CompartirIgual 2.0 Japón"
+            },
+            {
+                "@language": "et",
+                "@value": "Jagamine samadel tingimustel  2.0 Jaapan"
+            },
+            {
+                "@language": "eu",
+                "@value": "PartekatuBerdin 2.0 Japonia"
+            },
+            {
+                "@language": "fa",
+                "@value": "ShareAlike 2.0 ژاپن"
+            },
+            {
+                "@language": "fi",
+                "@value": "Tarttuva 2.0 Japani"
+            },
+            {
+                "@language": "fr",
+                "@value": "Partage à l'Identique 2.0 Japon"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Partage des conditions initiales à l'identique 2.0 Japon"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Partage des conditions initiales à l'identique 2.0 Japon"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Partage des conditions initiales à l'identique 2.0 Japon"
+            },
+            {
+                "@language": "ga",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "gl",
+                "@value": "CompartirIgual 2.0 Xapón"
+            },
+            {
+                "@language": "he",
+                "@value": "שיתוף זהה 2.0 יפן"
+            },
+            {
+                "@language": "hi",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "hr",
+                "@value": "Dijeli pod istim uvjetima 2.0 Japan"
+            },
+            {
+                "@language": "hu",
+                "@value": "Így add tovább! 2.0 Japán"
+            },
+            {
+                "@language": "hy",
+                "@value": "Համանման տարածում 2.0 Japan"
+            },
+            {
+                "@language": "id",
+                "@value": "BerbagiSerupa 2.0 Jepang"
+            },
+            {
+                "@language": "is",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "it",
+                "@value": "StessaLicenza 2.0 Giappone"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "StessaLicenza 2.0 Giappone"
+            },
+            {
+                "@language": "ja",
+                "@value": "継承 2.0 日本"
+            },
+            {
+                "@language": "ka",
+                "@value": "გავრცელება იგივე პირობებით 2.0 იაპონია"
+            },
+            {
+                "@language": "kk",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "ko",
+                "@value": "동일조건변경허락 2.0 일본"
+            },
+            {
+                "@language": "lt",
+                "@value": "ShareAlike 2.0 Japonija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Līdzvērtīgs 2.0 Japāna"
+            },
+            {
+                "@language": "mk",
+                "@value": "СподелиПодИстиУслови 2.0 Јапонија"
+            },
+            {
+                "@language": "ml",
+                "@value": "ShareAlike 2.0 ജപ്പാൻ"
+            },
+            {
+                "@language": "mn",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "ms",
+                "@value": "Perkongsian serupa 2.0 Jepun"
+            },
+            {
+                "@language": "nl",
+                "@value": "GelijkDelen 2.0 Japan"
+            },
+            {
+                "@language": "no",
+                "@value": "DelPåSammeVilkår 2.0 Japan"
+            },
+            {
+                "@language": "nso",
+                "@value": "Mohlakanelwa 2.0 Japane"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "pl",
+                "@value": "Na tych samych warunkach 2.0 Japonia"
+            },
+            {
+                "@language": "pt",
+                "@value": "CompartilhaIgual 2.0 Japão"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Partilha nos termos da mesma licença 2.0 Japão"
+            },
+            {
+                "@language": "ro",
+                "@value": "Distribuie-în-condiţii-identice 2.0 Japonia"
+            },
+            {
+                "@language": "ru",
+                "@value": "С сохранением условий<br />(<i>ShareAlike</i>) 2.0 Япония"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "sl",
+                "@value": "Deljenje pod enakimi pogoji 2.0 Japonska"
+            },
+            {
+                "@language": "sq",
+                "@value": "ShareAlike 2.0 Japoni"
+            },
+            {
+                "@language": "sr",
+                "@value": "Deliti pod istim uslovima 2.0 Japan"
+            },
+            {
+                "@language": "sr",
+                "@value": "Делити под истим условима 2.0 Јапан"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Deliti pod istim uslovima 2.0 Japan"
+            },
+            {
+                "@language": "st",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "sv",
+                "@value": "DelaLika 2.0 Japan"
+            },
+            {
+                "@language": "ta",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "te",
+                "@value": "ShareAlike 2.0 జపాన్"
+            },
+            {
+                "@language": "th",
+                "@value": "อนุญาตแบบเดียวกัน 2.0 ่ญี่ปุ่น"
+            },
+            {
+                "@language": "tr",
+                "@value": "LisansıDevamEttirme 2.0 Japonya"
+            },
+            {
+                "@language": "uk",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "ur",
+                "@value": "ShareAlike 2.0 Japan"
+            },
+            {
+                "@language": "vi",
+                "@value": "ShareAlike 2.0 Nước Nhật Bản"
+            },
+            {
+                "@language": "zh",
+                "@value": "相同方式共享 2.0 日本"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "相同方式分享 2.0 日本"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "相同方式分享 2.0 日本"
+            },
+            {
+                "@language": "zu",
+                "@value": "Zihlanganyeleni 2.0 Ejapane"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${ShareAlike} 2.0 ${Japan}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-SA-2.0-jp",
+        "foaf:logo": "http://i.creativecommons.org/l/sa/2.0/jp/88x31.png"
+    },
+    "foaf:logo": "http://i.creativecommons.org/l/sa/2.0/jp/88x31.png",
+    "li:id": "CC-SA-2.0-jp",
+    "li:name": "CC SA 2.0 JP"
+}

@@ -1,0 +1,864 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-NC-2.0-be",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/be/",
+    "cc:legalcode": [
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc/2.0/be/legalcode.fr",
+            "dc:language": "fr"
+        },
+        {
+            "@id": "http://creativecommons.org/licenses/by-nc/2.0/be/legalcode.nl",
+            "dc:language": "nl"
+        }
+    ],
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.0",
+    "dc:identifier": "by-nc",
+    "dc:source": "http://creativecommons.org/licenses/by-nc/2.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning-NieKommersieel 2.0 België"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب - غير تجاري 2.0 بلجيكا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "be",
+            "@value": "Attribution-NonCommercial 2.0 Бельгія"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание-Некомерсиално 2.0 Белгия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement-NoComercial 2.0 Bèlgica"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora-Neužívejte komerčně 2.0 Belgie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse-IkkeKommerciel 2.0 Belgien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung-Nicht-kommerziell 2.0 Belgien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung-NichtKommerziell 2.0 Belgien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung-NichtKommerziell 2.0 Belgien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.0 Βέλγιο"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite-Nekomerce 2.0 Belgujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución-No Comercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine + Mitteäriline eesmärk 2.0 Belgia"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu-EzKomertziala 2.0 Belgika"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution-NonCommercial 2.0 بلژیک"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä-Epäkaupallinen 2.0 Belgia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Belgique"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Belgique"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Belgique"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Belgique"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento-NonComercial 2.0 Bélxica"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס-שימוש לא מסחרי 2.0 בלגיה"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution-NonCommercial 2.0 बेलजियम"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje-Nekomercijalno 2.0 Belgija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! - Ne add el! 2.0 Belgium"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.0 Բելգիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Attribusi-NonKomersial 2.0 Belgia"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution-NonCommercial 2.0 Belgía"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione - Non commerciale 2.0 Belgio"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione - Non commerciale 2.0 Belgio"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 - 非営利 2.0 ベルギー"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.0 ბელგია"
+        },
+        {
+            "@language": "kk",
+            "@value": "Коммерциялық емес 2.0 Belgium"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시-비영리 2.0 벨기에"
+        },
+        {
+            "@language": "lt",
+            "@value": "Attribution-NonCommercial 2.0 Belgija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties-Nekomerciāli 2.0 Beļģija"
+        },
+        {
+            "@language": "mk",
+            "@value": "НаведиИзвор-Некомерцијално 2.0 Белгија"
+        },
+        {
+            "@language": "ml",
+            "@value": "Attribution-NonCommercial 2.0 ബെൽജിയം"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution-NonCommercial 2.0 Бельги"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan-BukanKomersial 2.0 Belgium"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding-NietCommercieel 2.0 België"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse-Ikkekommersiell 2.0 Belgia"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo- E sego ya kgwebo 2.0 Belgium"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.0 Belgia"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição - NãoComercial 2.0 Bélgica"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição-Uso não-comercial 2.0 Bélgica"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição-Uso Não-Comercial 2.0 Bélgica"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire-NeComercial 2.0 Belgia"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.0 Бельгия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva-Nekomercialno 2.0 Belgija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution-NonCommercial 2.0 Belgjikë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo-Nekomercijalno 2.0 Belgija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство-Некомерцијално 2.0 Белгија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo-Nekomercijalno 2.0 Belgija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande-IckeKommersiell 2.0 Belgien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution-NonCommercial 2.0 பெல்ஜியம்"
+        },
+        {
+            "@language": "te",
+            "@value": "Attribution-NonCommercial 2.0 బెల్జియం"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.0 เบลเยียม"
+        },
+        {
+            "@language": "tr",
+            "@value": "Alıntı-Gayriticari 2.0 Belçika"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution-NonCommercial 2.0 Бельгія"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution-NonCommercial 2.0 Belgium"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả - Phi thương mại  2.0 Nước Bỉ"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名-非商业性使用 2.0 比利时"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示-非商業性 2.0 比利時"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示-非商業性 2.0 比利時"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.0 eBelgium"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution-NonCommercial} 2.0 ${Belgium}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by-nc/2.0/be/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/be/",
+        "cc:legalcode": [
+            "http://creativecommons.org/licenses/by-nc/2.0/be/legalcode.fr",
+            "http://creativecommons.org/licenses/by-nc/2.0/be/legalcode.nl"
+        ],
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.0",
+        "dc:identifier": "by-nc",
+        "dc:source": "http://creativecommons.org/licenses/by-nc/2.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning-NieKommersieel 2.0 België"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب - غير تجاري 2.0 بلجيكا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "be",
+                "@value": "Attribution-NonCommercial 2.0 Бельгія"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание-Некомерсиално 2.0 Белгия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement-NoComercial 2.0 Bèlgica"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora-Neužívejte komerčně 2.0 Belgie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse-IkkeKommerciel 2.0 Belgien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung-Nicht-kommerziell 2.0 Belgien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung-NichtKommerziell 2.0 Belgien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung-NichtKommerziell 2.0 Belgien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού-Μη Εμπορική Χρήση 2.0 Βέλγιο"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite-Nekomerce 2.0 Belgujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución-No Comercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento-NoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine + Mitteäriline eesmärk 2.0 Belgia"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu-EzKomertziala 2.0 Belgika"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution-NonCommercial 2.0 بلژیک"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä-Epäkaupallinen 2.0 Belgia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Belgique"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Belgique"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Belgique"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité - Pas d'Utilisation Commerciale 2.0 Belgique"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento-NonComercial 2.0 Bélxica"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס-שימוש לא מסחרי 2.0 בלגיה"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution-NonCommercial 2.0 बेलजियम"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje-Nekomercijalno 2.0 Belgija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! - Ne add el! 2.0 Belgium"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում - Ոչ-առևտրային օգտագործում 2.0 Բելգիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Attribusi-NonKomersial 2.0 Belgia"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution-NonCommercial 2.0 Belgía"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione - Non commerciale 2.0 Belgio"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione - Non commerciale 2.0 Belgio"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 - 非営利 2.0 ベルギー"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით არაკომერციული გამოყენებისათვის 2.0 ბელგია"
+            },
+            {
+                "@language": "kk",
+                "@value": "Коммерциялық емес 2.0 Belgium"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시-비영리 2.0 벨기에"
+            },
+            {
+                "@language": "lt",
+                "@value": "Attribution-NonCommercial 2.0 Belgija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties-Nekomerciāli 2.0 Beļģija"
+            },
+            {
+                "@language": "mk",
+                "@value": "НаведиИзвор-Некомерцијално 2.0 Белгија"
+            },
+            {
+                "@language": "ml",
+                "@value": "Attribution-NonCommercial 2.0 ബെൽജിയം"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution-NonCommercial 2.0 Бельги"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan-BukanKomersial 2.0 Belgium"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding-NietCommercieel 2.0 België"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse-Ikkekommersiell 2.0 Belgia"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo- E sego ya kgwebo 2.0 Belgium"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa-Użycie niekomercyjne 2.0 Belgia"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição - NãoComercial 2.0 Bélgica"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição-Uso não-comercial 2.0 Bélgica"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição-Uso Não-Comercial 2.0 Bélgica"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire-NeComercial 2.0 Belgia"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution-NonCommercial (Атрибуция — Некоммерческое использование) 2.0 Бельгия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva-Nekomercialno 2.0 Belgija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution-NonCommercial 2.0 Belgjikë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo-Nekomercijalno 2.0 Belgija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство-Некомерцијално 2.0 Белгија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo-Nekomercijalno 2.0 Belgija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande-IckeKommersiell 2.0 Belgien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution-NonCommercial 2.0 பெல்ஜியம்"
+            },
+            {
+                "@language": "te",
+                "@value": "Attribution-NonCommercial 2.0 బెల్జియం"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา-ไม่ใช้เพื่อการค้า 2.0 เบลเยียม"
+            },
+            {
+                "@language": "tr",
+                "@value": "Alıntı-Gayriticari 2.0 Belçika"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution-NonCommercial 2.0 Бельгія"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution-NonCommercial 2.0 Belgium"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả - Phi thương mại  2.0 Nước Bỉ"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名-非商业性使用 2.0 比利时"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示-非商業性 2.0 比利時"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示-非商業性 2.0 比利時"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi-Ungayisebenziseli Ezentengiselwano 2.0 eBelgium"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution-NonCommercial} 2.0 ${Belgium}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-NC-2.0-be",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by-nc/2.0/be/80x15.png",
+            "http://i.creativecommons.org/l/by-nc/2.0/be/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by-nc/2.0/be/80x15.png",
+        "http://i.creativecommons.org/l/by-nc/2.0/be/88x31.png"
+    ],
+    "li:id": "CC-BY-NC-2.0-be",
+    "li:name": "CC BY-NC 2.0 BE"
+}

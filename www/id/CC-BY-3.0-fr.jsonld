@@ -1,0 +1,795 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-3.0-fr",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/fr/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/fr/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "3.0",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 3.0 Frankryk"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  3.0 فرنسا"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 3.0 Францыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 3.0 Франция"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 3.0 França"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 3.0 Francie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 3.0 Frankrig"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 3.0 Frankreich"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 3.0 Frankreich"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 3.0 Frankreich"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 3.0 Γαλλία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 3.0 Francujo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 3.0 Francia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 3.0 Francia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 3.0 Francia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 3.0 Francia"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 3.0 Prantsusmaa"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 3.0 Frantzia"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 3.0 فرانسه"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 3.0 Ranska"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 3.0 France"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 3.0 France"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 3.0  France"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 3.0 Francia"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 3.0 צרפת"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 3.0 Francuska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 3.0 Franciaország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 3.0 Ֆրանսիա"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 3.0 Perancis"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 3.0 Francia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 3.0 Francia"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 3.0 フランス"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  3.0 საფრანგეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 3.0 France"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 3.0 프랑스"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 3.0 Prancūzija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 3.0 Francija"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 3.0 Франција"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 3.0 ഫ്രാൻസ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 3.0 Perancis"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 3.0 Frankrijk"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 3.0 Frankrike"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 3.0 Fora"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 3.0 Francja"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  3.0 França"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 3.0 France"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 3.0 França"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 3.0 Franţa"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 3.0 Франция"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 3.0 ප්‍රංශ"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 3.0 Francija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 3.0 Francë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 3.0 Francuska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 3.0 Француска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 3.0 Francuska"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 3.0 Frankrike"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 3.0 ఫ్రాన్స్"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 3.0 ฝรั่งเศส"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 3.0 Fransa"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 3.0 France"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 3.0 France"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 3.0 法国"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 3.0 法國"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 3.0 法國"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 3.0 EFrance"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 3.0 ${France}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/3.0/fr/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/fr/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/3.0/fr/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "3.0",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/3.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 3.0 Frankryk"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  3.0 فرنسا"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 3.0 Францыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 3.0 Франция"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 3.0 França"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 3.0 Francie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 3.0 Frankrig"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 3.0 Frankreich"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 3.0 Frankreich"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 3.0 Frankreich"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 3.0 Γαλλία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 3.0 Francujo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 3.0 Francia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 3.0 Francia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 3.0 Francia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 3.0 Francia"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 3.0 Prantsusmaa"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 3.0 Frantzia"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 3.0 فرانسه"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 3.0 Ranska"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 3.0 France"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 3.0 France"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 3.0  France"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 3.0 Francia"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 3.0 צרפת"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 3.0 Francuska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 3.0 Franciaország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 3.0 Ֆրանսիա"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 3.0 Perancis"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 3.0 Francia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 3.0 Francia"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 3.0 フランス"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  3.0 საფრანგეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 3.0 France"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 3.0 프랑스"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 3.0 Prancūzija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 3.0 Francija"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 3.0 Франција"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 3.0 ഫ്രാൻസ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 3.0 Perancis"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 3.0 Frankrijk"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 3.0 Frankrike"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 3.0 Fora"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 3.0 Francja"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  3.0 França"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 3.0 France"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 3.0 França"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 3.0 Franţa"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 3.0 Франция"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 3.0 ප්‍රංශ"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 3.0 Francija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 3.0 Francë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 3.0 Francuska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 3.0 Француска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 3.0 Francuska"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 3.0 Frankrike"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 3.0 ఫ్రాన్స్"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 3.0 ฝรั่งเศส"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 3.0 Fransa"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 3.0 France"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 3.0 France"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 3.0 法国"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 3.0 法國"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 3.0 法國"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 3.0 EFrance"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 3.0 ${France}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-3.0-fr",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/3.0/fr/80x15.png",
+            "http://i.creativecommons.org/l/by/3.0/fr/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/3.0/fr/80x15.png",
+        "http://i.creativecommons.org/l/by/3.0/fr/88x31.png"
+    ],
+    "li:id": "CC-BY-3.0-fr",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 3.0 FR"
+}

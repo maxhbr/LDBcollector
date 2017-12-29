@@ -1,0 +1,48 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/Apache-2> a cc:License,
+        li:License ;
+    cc:legalcode <http://www.apache.org/licenses/LICENSE-2.0> ;
+    dc:creator <http://apache.org/> ;
+    dc:hasVersion "2.0" ;
+    dc:replaces <https://licensedb.org/id/Apache-1.1> ;
+    dc:title "Apache License" ;
+    schema:sameAs <http://spdx.org/licenses/Apache-2.0>,
+        <http://www.apache.org/licenses/LICENSE-2.0> ;
+    spdx:licenseId "Apache-2.0" ;
+    owl:sameAs <magnet:?xt=urn:btih:8e4f440f4c65981c5bf93c76d35135ba5064d8b7&dn=apache-2.0.txt> ;
+    li:id "Apache-2" ;
+    li:libre <http://debian.org/>,
+        <http://fsf.org/>,
+        <http://opensource.org/> ;
+    li:name "Apache 2.0" ;
+    li:notice [ li:canonical true ;
+            li:orlater false ;
+            li:short false ;
+            li:text """Copyright {{year}} {{rightsholder}}
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+""" ] ;
+    li:plaintext <http://www.apache.org/licenses/LICENSE-2.0.txt> .
+

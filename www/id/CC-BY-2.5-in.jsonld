@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-in",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/in/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/in/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Indië"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 الهند"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 Індыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Индия"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Índia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Indie"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Indien"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Indien"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 Indien"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 Indien"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Ινδία"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Barato"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 India"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 India"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 India"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 India"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 India"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 India"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 India"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 India"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 India"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 India"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 India"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 India"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 هندوستان"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Intia"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Inde"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Inde"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Inde"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Inde"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 India"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 הודו"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 भारत"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Indija"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 India"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 Հնդկաստան"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 India"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 Indland"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 India"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 India"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 インド"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 ინდოეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 India"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 인디아"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Indija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Indiešu"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Индија"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 ഇന്ത്യ"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 Энэтхэг"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 India"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 India"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 India"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 India"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Indie"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 Índia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 India"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 India"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 India"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 Индия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Indija"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Indi"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Indija"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Индија"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Indija"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Indien"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 இந்தியா"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 భారతదేశం"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 อินเดีย"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 Hindistan"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 India"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 Nước Ấn độ "
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 印度"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 印度"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 印度"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 Endiya"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${India}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/in/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/in/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/in/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Indië"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 الهند"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 Індыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Индия"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Índia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Indie"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Indien"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Indien"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 Indien"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 Indien"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Ινδία"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Barato"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 India"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 India"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 India"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 India"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 India"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 India"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 India"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 India"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 India"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 India"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 India"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 India"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 هندوستان"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Intia"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Inde"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Inde"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Inde"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Inde"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 India"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 הודו"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 भारत"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Indija"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 India"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 Հնդկաստան"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 India"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 Indland"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 India"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 India"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 インド"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 ინდოეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 India"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 인디아"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Indija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Indiešu"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Индија"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 ഇന്ത്യ"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 Энэтхэг"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 India"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 India"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 India"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 India"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Indie"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 Índia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 India"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 India"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 India"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 Индия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Indija"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Indi"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Indija"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Индија"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Indija"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Indien"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 இந்தியா"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 భారతదేశం"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 อินเดีย"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 Hindistan"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 India"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 Nước Ấn độ "
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 印度"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 印度"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 印度"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 Endiya"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${India}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-in",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/in/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/in/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/in/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/in/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-in",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 IN"
+}

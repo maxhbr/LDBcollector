@@ -1,0 +1,29 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://licensedb.org/id/GFDL-1.1> a cc:License,
+        li:License ;
+    cc:legalcode <http://gnu.org/licenses/fdl-1.1.html> ;
+    dc:creator <http://fsf.org/> ;
+    dc:hasVersion "1.1" ;
+    dc:identifier "GNU FDL" ;
+    dc:isReplacedBy <https://licensedb.org/id/GFDL-1.2> ;
+    dc:title "GNU Free Documentation License" ;
+    schema:sameAs <http://gnu.org/licenses/fdl-1.1.html>,
+        <http://spdx.org/licenses/GFDL-1.1> ;
+    spdx:licenseId "GFDL-1.1" ;
+    li:id "GFDL-1.1" ;
+    li:libre <http://fsf.org/> ;
+    li:name "GNU FDL 1.1" ;
+    li:plaintext <http://gnu.org/licenses/fdl-1.1.txt> .
+

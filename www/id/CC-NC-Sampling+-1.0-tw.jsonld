@@ -1,0 +1,860 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-NC-Sampling+-1.0-tw",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:deprecatedOn": {
+        "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+        "@value": "2011-09-09"
+    },
+    "cc:jurisdiction": "http://creativecommons.org/international/tw/",
+    "cc:legalcode": "http://creativecommons.org/licenses/nc-sampling+/1.0/tw/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/sampling/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:prohibits": "cc:CommercialUse",
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "nc-sampling+",
+    "dc:source": "http://creativecommons.org/licenses/nc-sampling+/1.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "NieKommersiële Voorsmaak Plus 1.0"
+        },
+        {
+            "@language": "ar",
+            "@value": "غير تجاري- نماذج اضافية 1.0"
+        },
+        {
+            "@language": "as",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "ast",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "az",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "be",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "bg",
+            "@value": "Некомерсиално Семплиране плюс 1.0"
+        },
+        {
+            "@language": "bn",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "ca",
+            "@value": "SamplingPlus NoComercial 1.0"
+        },
+        {
+            "@language": "cs",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "da",
+            "@value": "IkkeKommerciel Sampling Plus 1.0"
+        },
+        {
+            "@language": "de",
+            "@value": "Nicht-kommerziell Sampling Plus 1.0"
+        },
+        {
+            "@language": "de-at",
+            "@value": "NichtKommerzielle Sampling Plus 1.0"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "NichtKommerzielle Sampling Plus 1.0"
+        },
+        {
+            "@language": "el",
+            "@value": " Άδεια Δείγματος Plus για Μη Εμπορική Χρήση 1.0"
+        },
+        {
+            "@language": "en",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Non-Commercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Non-Commercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Non-Commercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "en-us",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "eo",
+            "@value": "Nekomerca Specimeno Plus 1.0"
+        },
+        {
+            "@language": "es",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Sampling Plus NoComercial 1.0"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Sampling Plus No Comercial 1.0"
+        },
+        {
+            "@language": "et",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "eu",
+            "@value": "Sampling Plus Ez Komertziala 1.0"
+        },
+        {
+            "@language": "fa",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "fi",
+            "@value": "Epäkaupallinen sämpläys Plus 1.0"
+        },
+        {
+            "@language": "fr",
+            "@value": "Sampling Plus Pas d'Utilisation Commerciale 1.0"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "ga",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "gl",
+            "@value": "NonComercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "he",
+            "@value": "שימוש לא מסחרי בדגימה פלוס 1.0"
+        },
+        {
+            "@language": "hi",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "hr",
+            "@value": "Nekompercijalno sempliranje plus 1.0"
+        },
+        {
+            "@language": "hu",
+            "@value": "Ne add el! Sampling Plus 1.0"
+        },
+        {
+            "@language": "hy",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "id",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "is",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "it",
+            "@value": "Sampling Plus NonCommerciale 1.0"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Sampling Plus NonCommerciale 1.0"
+        },
+        {
+            "@language": "ja",
+            "@value": "非営利サンプリング・プラス 1.0"
+        },
+        {
+            "@language": "ka",
+            "@value": "არაკომერციული გამოყენებისათვის დამატებითი მაგალითი 1.0"
+        },
+        {
+            "@language": "kk",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "ko",
+            "@value": "비영리 샘플링  1.0"
+        },
+        {
+            "@language": "lt",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "lv",
+            "@value": "Nekomerciāli plus iztverot 1.0"
+        },
+        {
+            "@language": "mk",
+            "@value": "Некомерцијално Семплирање плус 1.0"
+        },
+        {
+            "@language": "ml",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "mn",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "ms",
+            "@value": "BukanKomersial Mengambil Cuba Tambah 1.0"
+        },
+        {
+            "@language": "nl",
+            "@value": "Niet-commercieel Sampling Plus 1.0"
+        },
+        {
+            "@language": "no",
+            "@value": "Ikkekommersiell Sampling Plus 1.0"
+        },
+        {
+            "@language": "nso",
+            "@value": "Sampole ya Tlaleletšo e Sego ya Kgwebo 1.0"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "pl",
+            "@value": "Użycie niekomercyjne-Sampling Plus 1.0"
+        },
+        {
+            "@language": "pt",
+            "@value": "Sampling Não Comercial Plus 1.0"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Uso Não-Comercial para Sampling Plus 1.0"
+        },
+        {
+            "@language": "ro",
+            "@value": "Necomercială Sampling Plus 1.0"
+        },
+        {
+            "@language": "ru",
+            "@value": "Некоммерческое расширенное использование частей произведения (<i>NonCommercial Sampling Plus</i>) 1.0"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "sl",
+            "@value": "Nekomercialno Sampling Plus 1.0"
+        },
+        {
+            "@language": "sq",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "sr",
+            "@value": "Nekomercijalna Sampling Plus 1.0"
+        },
+        {
+            "@language": "sr",
+            "@value": "Некомерцијална Sampling Plus 1.0"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Nekomercijalna Sampling Plus 1.0"
+        },
+        {
+            "@language": "st",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "sv",
+            "@value": "IckeKommersiell Sampling Plus 1.0"
+        },
+        {
+            "@language": "ta",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "te",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "th",
+            "@value": "ใช้ตัวอย่างพิเศษ-ไม่ใช้เพื่อการค้า 1.0"
+        },
+        {
+            "@language": "tr",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "uk",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "ur",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "vi",
+            "@value": "NonCommercial Sampling Plus 1.0"
+        },
+        {
+            "@language": "zh",
+            "@value": "非商业性取样使用加强版 1.0"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "非商業性特別取樣 1.0"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "非商業性特別取樣 1.0"
+        },
+        {
+            "@language": "zu",
+            "@value": "Ungayisebenziseli Ezentengiselwano-Ukuthatha Isampula Nokunye 1.0"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${NonCommercial Sampling Plus} 1.0"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/nc-sampling+/1.0/tw/",
+        "@type": "cc:License",
+        "cc:deprecatedOn": {
+            "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+            "@value": "2011-09-09"
+        },
+        "cc:jurisdiction": "http://creativecommons.org/international/tw/",
+        "cc:legalcode": "http://creativecommons.org/licenses/nc-sampling+/1.0/tw/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/sampling/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:prohibits": "cc:CommercialUse",
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "nc-sampling+",
+        "dc:source": "http://creativecommons.org/licenses/nc-sampling+/1.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "NieKommersiële Voorsmaak Plus 1.0"
+            },
+            {
+                "@language": "ar",
+                "@value": "غير تجاري- نماذج اضافية 1.0"
+            },
+            {
+                "@language": "as",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "ast",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "az",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "be",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "bg",
+                "@value": "Некомерсиално Семплиране плюс 1.0"
+            },
+            {
+                "@language": "bn",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "ca",
+                "@value": "SamplingPlus NoComercial 1.0"
+            },
+            {
+                "@language": "cs",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "da",
+                "@value": "IkkeKommerciel Sampling Plus 1.0"
+            },
+            {
+                "@language": "de",
+                "@value": "Nicht-kommerziell Sampling Plus 1.0"
+            },
+            {
+                "@language": "de-at",
+                "@value": "NichtKommerzielle Sampling Plus 1.0"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "NichtKommerzielle Sampling Plus 1.0"
+            },
+            {
+                "@language": "el",
+                "@value": " Άδεια Δείγματος Plus για Μη Εμπορική Χρήση 1.0"
+            },
+            {
+                "@language": "en",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Non-Commercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Non-Commercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Non-Commercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "en-us",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "eo",
+                "@value": "Nekomerca Specimeno Plus 1.0"
+            },
+            {
+                "@language": "es",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Sampling Plus NoComercial 1.0"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Sampling Plus No Comercial 1.0"
+            },
+            {
+                "@language": "et",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "eu",
+                "@value": "Sampling Plus Ez Komertziala 1.0"
+            },
+            {
+                "@language": "fa",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "fi",
+                "@value": "Epäkaupallinen sämpläys Plus 1.0"
+            },
+            {
+                "@language": "fr",
+                "@value": "Sampling Plus Pas d'Utilisation Commerciale 1.0"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "ga",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "gl",
+                "@value": "NonComercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "he",
+                "@value": "שימוש לא מסחרי בדגימה פלוס 1.0"
+            },
+            {
+                "@language": "hi",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "hr",
+                "@value": "Nekompercijalno sempliranje plus 1.0"
+            },
+            {
+                "@language": "hu",
+                "@value": "Ne add el! Sampling Plus 1.0"
+            },
+            {
+                "@language": "hy",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "id",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "is",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "it",
+                "@value": "Sampling Plus NonCommerciale 1.0"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Sampling Plus NonCommerciale 1.0"
+            },
+            {
+                "@language": "ja",
+                "@value": "非営利サンプリング・プラス 1.0"
+            },
+            {
+                "@language": "ka",
+                "@value": "არაკომერციული გამოყენებისათვის დამატებითი მაგალითი 1.0"
+            },
+            {
+                "@language": "kk",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "ko",
+                "@value": "비영리 샘플링  1.0"
+            },
+            {
+                "@language": "lt",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "lv",
+                "@value": "Nekomerciāli plus iztverot 1.0"
+            },
+            {
+                "@language": "mk",
+                "@value": "Некомерцијално Семплирање плус 1.0"
+            },
+            {
+                "@language": "ml",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "mn",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "ms",
+                "@value": "BukanKomersial Mengambil Cuba Tambah 1.0"
+            },
+            {
+                "@language": "nl",
+                "@value": "Niet-commercieel Sampling Plus 1.0"
+            },
+            {
+                "@language": "no",
+                "@value": "Ikkekommersiell Sampling Plus 1.0"
+            },
+            {
+                "@language": "nso",
+                "@value": "Sampole ya Tlaleletšo e Sego ya Kgwebo 1.0"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "pl",
+                "@value": "Użycie niekomercyjne-Sampling Plus 1.0"
+            },
+            {
+                "@language": "pt",
+                "@value": "Sampling Não Comercial Plus 1.0"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Uso Não-Comercial para Sampling Plus 1.0"
+            },
+            {
+                "@language": "ro",
+                "@value": "Necomercială Sampling Plus 1.0"
+            },
+            {
+                "@language": "ru",
+                "@value": "Некоммерческое расширенное использование частей произведения (<i>NonCommercial Sampling Plus</i>) 1.0"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "sl",
+                "@value": "Nekomercialno Sampling Plus 1.0"
+            },
+            {
+                "@language": "sq",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "sr",
+                "@value": "Nekomercijalna Sampling Plus 1.0"
+            },
+            {
+                "@language": "sr",
+                "@value": "Некомерцијална Sampling Plus 1.0"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Nekomercijalna Sampling Plus 1.0"
+            },
+            {
+                "@language": "st",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "sv",
+                "@value": "IckeKommersiell Sampling Plus 1.0"
+            },
+            {
+                "@language": "ta",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "te",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "th",
+                "@value": "ใช้ตัวอย่างพิเศษ-ไม่ใช้เพื่อการค้า 1.0"
+            },
+            {
+                "@language": "tr",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "uk",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "ur",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "vi",
+                "@value": "NonCommercial Sampling Plus 1.0"
+            },
+            {
+                "@language": "zh",
+                "@value": "非商业性取样使用加强版 1.0"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "非商業性特別取樣 1.0"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "非商業性特別取樣 1.0"
+            },
+            {
+                "@language": "zu",
+                "@value": "Ungayisebenziseli Ezentengiselwano-Ukuthatha Isampula Nokunye 1.0"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${NonCommercial Sampling Plus} 1.0"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-NC-Sampling+-1.0-tw",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/nc-sampling+/1.0/tw/80x15.png",
+            "http://i.creativecommons.org/l/nc-sampling+/1.0/tw/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/nc-sampling+/1.0/tw/80x15.png",
+        "http://i.creativecommons.org/l/nc-sampling+/1.0/tw/88x31.png"
+    ],
+    "li:id": "CC-NC-Sampling+-1.0-tw",
+    "li:name": "CC NC-Sampling+ 1.0 TW"
+}

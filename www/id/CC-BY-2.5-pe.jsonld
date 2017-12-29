@@ -1,0 +1,851 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-BY-2.5-pe",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:jurisdiction": "http://creativecommons.org/international/pe/",
+    "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/pe/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Attribution",
+        "cc:Notice"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "2.5",
+    "dc:identifier": "by",
+    "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "Erkenning 2.5 Peru"
+        },
+        {
+            "@language": "ar",
+            "@value": "نسب المصنف  2.5 بيرو"
+        },
+        {
+            "@language": "as",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "ast",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "az",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "be",
+            "@value": "Атрыбуцыя 2.5 Пяру"
+        },
+        {
+            "@language": "bg",
+            "@value": "Признание 2.5 Перу"
+        },
+        {
+            "@language": "bn",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "ca",
+            "@value": "Reconeixement 2.5 Perú"
+        },
+        {
+            "@language": "cs",
+            "@value": "Uveďte autora 2.5 Peru"
+        },
+        {
+            "@language": "da",
+            "@value": "Navngivelse 2.5 Peru"
+        },
+        {
+            "@language": "de",
+            "@value": "Namensnennung 2.5 Peru"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Namensnennung 2.5 Peru"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Namensnennung 2.5 Peru"
+        },
+        {
+            "@language": "el",
+            "@value": "Αναφορά Δημιουργού 2.5 Περού"
+        },
+        {
+            "@language": "en",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "en-us",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "eo",
+            "@value": "Atribuite 2.5 Peruo"
+        },
+        {
+            "@language": "es",
+            "@value": "Atribución 2.5 Perú"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "Atribución 2.5 Perú"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Atribución 2.5 Perú"
+        },
+        {
+            "@language": "es-co",
+            "@value": "Reconocimiento 2.5 Perú"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "Reconocimiento 2.5 Perú"
+        },
+        {
+            "@language": "es-es",
+            "@value": "Reconocimiento 2.5 Perú"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "Reconocimiento 2.5 Perú"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Atribución 2.5 Perú"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "Reconocimiento 2.5 Perú"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "Reconocimiento 2.5 Perú"
+        },
+        {
+            "@language": "et",
+            "@value": "Autorile viitamine 2.5 Peruu"
+        },
+        {
+            "@language": "eu",
+            "@value": "Aitortu 2.5 Peru"
+        },
+        {
+            "@language": "fa",
+            "@value": "Attribution 2.5 پرو"
+        },
+        {
+            "@language": "fi",
+            "@value": "Nimeä 2.5 Peru"
+        },
+        {
+            "@language": "fr",
+            "@value": "Attribution 2.5 Pérou"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Paternité 2.5 Pérou"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Paternité 2.5 Pérou"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Paternité 2.5 Pérou"
+        },
+        {
+            "@language": "ga",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "gl",
+            "@value": "Recoñecemento 2.5 Peru"
+        },
+        {
+            "@language": "he",
+            "@value": "ייחוס 2.5 פרו"
+        },
+        {
+            "@language": "hi",
+            "@value": "Attribution 2.5 पेरू"
+        },
+        {
+            "@language": "hr",
+            "@value": "Imenovanje 2.5 Peru"
+        },
+        {
+            "@language": "hu",
+            "@value": "Nevezd meg! 2.5 Peru"
+        },
+        {
+            "@language": "hy",
+            "@value": "Հղում 2.5 Պերու"
+        },
+        {
+            "@language": "id",
+            "@value": "Atribusi 2.5 Peru"
+        },
+        {
+            "@language": "is",
+            "@value": "Attribution 2.5 Perú"
+        },
+        {
+            "@language": "it",
+            "@value": "Attribuzione 2.5 Perù"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "Attribuzione 2.5 Peru"
+        },
+        {
+            "@language": "ja",
+            "@value": "表示 2.5 ペルー"
+        },
+        {
+            "@language": "ka",
+            "@value": "ავტორობის მითითებით  2.5 პერუ"
+        },
+        {
+            "@language": "kk",
+            "@value": "Атауын сақтау 2.5 Peru"
+        },
+        {
+            "@language": "ko",
+            "@value": "저작자표시(Attribution) 2.5 페루"
+        },
+        {
+            "@language": "lt",
+            "@value": "Priskyrimas 2.5 Peru"
+        },
+        {
+            "@language": "lv",
+            "@value": "Atsaucoties 2.5 Peru"
+        },
+        {
+            "@language": "mk",
+            "@value": "Наведи извор 2.5 Перу"
+        },
+        {
+            "@language": "ml",
+            "@value": "കടപ്പാട് 2.5 പെറു"
+        },
+        {
+            "@language": "mn",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "ms",
+            "@value": "Pengiktirafan 2.5 Peru"
+        },
+        {
+            "@language": "nl",
+            "@value": "Naamsvermelding 2.5 Peru"
+        },
+        {
+            "@language": "no",
+            "@value": "Navngivelse 2.5 Peru"
+        },
+        {
+            "@language": "nso",
+            "@value": "Tsebagatšo 2.5 Peru"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "pl",
+            "@value": "Uznanie autorstwa 2.5 Peru"
+        },
+        {
+            "@language": "pt",
+            "@value": "Atribuição  2.5 Peru"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "Atribuição 2.5 Peru"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Atribuição 2.5 Peru"
+        },
+        {
+            "@language": "ro",
+            "@value": "Atribuire 2.5 Peru"
+        },
+        {
+            "@language": "ru",
+            "@value": "Attribution (Атрибуция) 2.5 Перу"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "sl",
+            "@value": "Priznanje avtorstva 2.5 Peru"
+        },
+        {
+            "@language": "sq",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "sr",
+            "@value": "Autorstvo 2.5 Peru"
+        },
+        {
+            "@language": "sr",
+            "@value": "Ауторство 2.5 Перу"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Autorstvo 2.5 Peru"
+        },
+        {
+            "@language": "st",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "sv",
+            "@value": "Erkännande 2.5 Peru"
+        },
+        {
+            "@language": "ta",
+            "@value": "Attribution 2.5 பெரு"
+        },
+        {
+            "@language": "te",
+            "@value": "ఆపాదింపు 2.5 పెరూ"
+        },
+        {
+            "@language": "th",
+            "@value": "แสดงที่มา 2.5 เปรู"
+        },
+        {
+            "@language": "tr",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "uk",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "ur",
+            "@value": "Attribution 2.5 Peru"
+        },
+        {
+            "@language": "vi",
+            "@value": "Ghi nhận công của tác giả 2.5 Nước Peru"
+        },
+        {
+            "@language": "zh",
+            "@value": "署名 2.5 秘鲁"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "姓名標示 2.5 秘魯"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "姓名標示 2.5 秘魯"
+        },
+        {
+            "@language": "zu",
+            "@value": "Qaphela Umnikazi 2.5 ePeru"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${Attribution} 2.5 ${Peru}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/by/2.5/pe/",
+        "@type": "cc:License",
+        "cc:jurisdiction": "http://creativecommons.org/international/pe/",
+        "cc:legalcode": "http://creativecommons.org/licenses/by/2.5/pe/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Attribution",
+            "cc:Notice"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "2.5",
+        "dc:identifier": "by",
+        "dc:source": "http://creativecommons.org/licenses/by/2.5/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "Erkenning 2.5 Peru"
+            },
+            {
+                "@language": "ar",
+                "@value": "نسب المصنف  2.5 بيرو"
+            },
+            {
+                "@language": "as",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "ast",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "az",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "be",
+                "@value": "Атрыбуцыя 2.5 Пяру"
+            },
+            {
+                "@language": "bg",
+                "@value": "Признание 2.5 Перу"
+            },
+            {
+                "@language": "bn",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "ca",
+                "@value": "Reconeixement 2.5 Perú"
+            },
+            {
+                "@language": "cs",
+                "@value": "Uveďte autora 2.5 Peru"
+            },
+            {
+                "@language": "da",
+                "@value": "Navngivelse 2.5 Peru"
+            },
+            {
+                "@language": "de",
+                "@value": "Namensnennung 2.5 Peru"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Namensnennung 2.5 Peru"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Namensnennung 2.5 Peru"
+            },
+            {
+                "@language": "el",
+                "@value": "Αναφορά Δημιουργού 2.5 Περού"
+            },
+            {
+                "@language": "en",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "en-us",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "eo",
+                "@value": "Atribuite 2.5 Peruo"
+            },
+            {
+                "@language": "es",
+                "@value": "Atribución 2.5 Perú"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "Atribución 2.5 Perú"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Atribución 2.5 Perú"
+            },
+            {
+                "@language": "es-co",
+                "@value": "Reconocimiento 2.5 Perú"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "Reconocimiento 2.5 Perú"
+            },
+            {
+                "@language": "es-es",
+                "@value": "Reconocimiento 2.5 Perú"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "Reconocimiento 2.5 Perú"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Atribución 2.5 Perú"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "Reconocimiento 2.5 Perú"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "Reconocimiento 2.5 Perú"
+            },
+            {
+                "@language": "et",
+                "@value": "Autorile viitamine 2.5 Peruu"
+            },
+            {
+                "@language": "eu",
+                "@value": "Aitortu 2.5 Peru"
+            },
+            {
+                "@language": "fa",
+                "@value": "Attribution 2.5 پرو"
+            },
+            {
+                "@language": "fi",
+                "@value": "Nimeä 2.5 Peru"
+            },
+            {
+                "@language": "fr",
+                "@value": "Attribution 2.5 Pérou"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Paternité 2.5 Pérou"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Paternité 2.5 Pérou"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Paternité 2.5 Pérou"
+            },
+            {
+                "@language": "ga",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "gl",
+                "@value": "Recoñecemento 2.5 Peru"
+            },
+            {
+                "@language": "he",
+                "@value": "ייחוס 2.5 פרו"
+            },
+            {
+                "@language": "hi",
+                "@value": "Attribution 2.5 पेरू"
+            },
+            {
+                "@language": "hr",
+                "@value": "Imenovanje 2.5 Peru"
+            },
+            {
+                "@language": "hu",
+                "@value": "Nevezd meg! 2.5 Peru"
+            },
+            {
+                "@language": "hy",
+                "@value": "Հղում 2.5 Պերու"
+            },
+            {
+                "@language": "id",
+                "@value": "Atribusi 2.5 Peru"
+            },
+            {
+                "@language": "is",
+                "@value": "Attribution 2.5 Perú"
+            },
+            {
+                "@language": "it",
+                "@value": "Attribuzione 2.5 Perù"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "Attribuzione 2.5 Peru"
+            },
+            {
+                "@language": "ja",
+                "@value": "表示 2.5 ペルー"
+            },
+            {
+                "@language": "ka",
+                "@value": "ავტორობის მითითებით  2.5 პერუ"
+            },
+            {
+                "@language": "kk",
+                "@value": "Атауын сақтау 2.5 Peru"
+            },
+            {
+                "@language": "ko",
+                "@value": "저작자표시(Attribution) 2.5 페루"
+            },
+            {
+                "@language": "lt",
+                "@value": "Priskyrimas 2.5 Peru"
+            },
+            {
+                "@language": "lv",
+                "@value": "Atsaucoties 2.5 Peru"
+            },
+            {
+                "@language": "mk",
+                "@value": "Наведи извор 2.5 Перу"
+            },
+            {
+                "@language": "ml",
+                "@value": "കടപ്പാട് 2.5 പെറു"
+            },
+            {
+                "@language": "mn",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "ms",
+                "@value": "Pengiktirafan 2.5 Peru"
+            },
+            {
+                "@language": "nl",
+                "@value": "Naamsvermelding 2.5 Peru"
+            },
+            {
+                "@language": "no",
+                "@value": "Navngivelse 2.5 Peru"
+            },
+            {
+                "@language": "nso",
+                "@value": "Tsebagatšo 2.5 Peru"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "pl",
+                "@value": "Uznanie autorstwa 2.5 Peru"
+            },
+            {
+                "@language": "pt",
+                "@value": "Atribuição  2.5 Peru"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "Atribuição 2.5 Peru"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Atribuição 2.5 Peru"
+            },
+            {
+                "@language": "ro",
+                "@value": "Atribuire 2.5 Peru"
+            },
+            {
+                "@language": "ru",
+                "@value": "Attribution (Атрибуция) 2.5 Перу"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "sl",
+                "@value": "Priznanje avtorstva 2.5 Peru"
+            },
+            {
+                "@language": "sq",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "sr",
+                "@value": "Autorstvo 2.5 Peru"
+            },
+            {
+                "@language": "sr",
+                "@value": "Ауторство 2.5 Перу"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Autorstvo 2.5 Peru"
+            },
+            {
+                "@language": "st",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "sv",
+                "@value": "Erkännande 2.5 Peru"
+            },
+            {
+                "@language": "ta",
+                "@value": "Attribution 2.5 பெரு"
+            },
+            {
+                "@language": "te",
+                "@value": "ఆపాదింపు 2.5 పెరూ"
+            },
+            {
+                "@language": "th",
+                "@value": "แสดงที่มา 2.5 เปรู"
+            },
+            {
+                "@language": "tr",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "uk",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "ur",
+                "@value": "Attribution 2.5 Peru"
+            },
+            {
+                "@language": "vi",
+                "@value": "Ghi nhận công của tác giả 2.5 Nước Peru"
+            },
+            {
+                "@language": "zh",
+                "@value": "署名 2.5 秘鲁"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "姓名標示 2.5 秘魯"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "姓名標示 2.5 秘魯"
+            },
+            {
+                "@language": "zu",
+                "@value": "Qaphela Umnikazi 2.5 ePeru"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${Attribution} 2.5 ${Peru}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-BY-2.5-pe",
+        "foaf:logo": [
+            "http://i.creativecommons.org/l/by/2.5/pe/80x15.png",
+            "http://i.creativecommons.org/l/by/2.5/pe/88x31.png"
+        ]
+    },
+    "foaf:logo": [
+        "http://i.creativecommons.org/l/by/2.5/pe/80x15.png",
+        "http://i.creativecommons.org/l/by/2.5/pe/88x31.png"
+    ],
+    "li:id": "CC-BY-2.5-pe",
+    "li:libre": "http://creativecommons.org/",
+    "li:name": "CC BY 2.5 PE"
+}

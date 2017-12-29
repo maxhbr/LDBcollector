@@ -1,0 +1,237 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/elements/1.1/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix li: <https://licensedb.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://creativecommons.org/licenses/sampling+/1.0/tw/> a cc:License ;
+    cc:deprecatedOn "2011-09-09"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/tw/> ;
+    cc:legalcode <http://creativecommons.org/licenses/sampling+/1.0/tw/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/sampling/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Reproduction,
+        cc:Sharing ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "sampling+" ;
+    dc:source <http://creativecommons.org/licenses/sampling+/1.0/> ;
+    dc:title "Voorsmaak Plus 1.0"@af,
+        "نماذج اضافية 1.0"@ar,
+        "Sampling Plus 1.0"@as,
+        "Sampling Plus 1.0"@ast,
+        "Sampling Plus 1.0"@ast-es,
+        "Sampling Plus 1.0"@az,
+        "Sampling Plus 1.0"@be,
+        "Семплиране плюс 1.0"@bg,
+        "Sampling Plus 1.0"@bn,
+        "Sampling Plus 1.0"@ca,
+        "Sampling Plus 1.0"@cs,
+        "Sampling Plus 1.0"@da,
+        "Sampling Plus 1.0"@de,
+        "Sampling Plus 1.0"@de-at,
+        "Sampling Plus 1.0"@de-ch,
+        "Άδεια Δείγματος Plus 1.0"@el,
+        "Sampling Plus 1.0"@en,
+        "Sampling Plus 1.0"@en-ca,
+        "Sampling Plus 1.0"@en-gb,
+        "Sampling Plus 1.0"@en-hk,
+        "Sampling Plus 1.0"@en-sg,
+        "Sampling Plus 1.0"@en-us,
+        "Specimeno Plus 1.0"@eo,
+        "Sampling Plus 1.0"@es,
+        "Sampling Plus 1.0"@es-ar,
+        "Sampling Plus 1.0"@es-cl,
+        "Sampling Plus 1.0"@es-co,
+        "Sampling Plus 1.0"@es-ec,
+        "Sampling Plus 1.0"@es-es,
+        "Sampling Plus 1.0"@es-gt,
+        "Sampling Plus 1.0"@es-mx,
+        "Sampling Plus 1.0"@es-pe,
+        "Sampling Plus 1.0"@es-pr,
+        "Sampling Plus 1.0"@et,
+        "Sampling Plus 1.0"@eu,
+        "Sampling Plus 1.0"@fa,
+        "Sämpläys Plus 1.0"@fi,
+        "Sampling Plus 1.0"@fr,
+        "Sampling Plus 1.0"@fr-ca,
+        "Sampling Plus 1.0"@fr-ch,
+        "Sampling Plus 1.0"@fr-lu,
+        "Sampling Plus 1.0"@ga,
+        "Sampling Plus 1.0"@gl,
+        "דגימה פלוס 1.0"@he,
+        "Sampling Plus 1.0"@hi,
+        "Sempliranje plus 1.0"@hr,
+        "Sampling Plus 1.0"@hu,
+        "Sampling Plus 1.0"@hy,
+        "Sampling Plus 1.0"@id,
+        "Sampling Plus 1.0"@is,
+        "<span lang=\"en\">Sampling Plus</span> 1.0"@it,
+        "<span lang=\"en\">Sampling Plus</span> 1.0"@it-ch,
+        "サンプリング・プラス 1.0"@ja,
+        "დამატებითი ნიმუში 1.0"@ka,
+        "Sampling Plus 1.0"@kk,
+        "샘플링 플러스 1.0"@ko,
+        "Sampling Plus 1.0"@lt,
+        "Iztverot plus 1.0"@lv,
+        "Семплирање плус 1.0"@mk,
+        "Sampling Plus 1.0"@ml,
+        "Sampling Plus 1.0"@mn,
+        "Mengambil contoh tambah 1.0"@ms,
+        "Sampling Plus 1.0"@nl,
+        "Sampling Plus 1.0"@no,
+        "Sampole ya Tlaleletšo 1.0"@nso,
+        "Sampling Plus 1.0"@oci-es,
+        "Sampling Plus 1.0"@pl,
+        "Sampling Plus 1.0"@pt,
+        "Sampling Plus 1.0"@pt-br,
+        "Sampling Plus 1.0"@pt-pt,
+        "Sampling Plus 1.0"@ro,
+        "Расширенное использование частей произведения (<i>Sampling Plus</i>) 1.0"@ru,
+        "Sampling Plus 1.0"@si-lk,
+        "Sampling Plus 1.0"@sl,
+        "Sampling Plus 1.0"@sq,
+        "licenca Sampling Plus 1.0"@sr,
+        "лиценца Sampling Plus 1.0"@sr,
+        "licenca Sampling Plus 1.0"@sr-latn,
+        "Sampling Plus 1.0"@st,
+        "Sampling Plus 1.0"@sv,
+        "Sampling Plus 1.0"@ta,
+        "Sampling Plus 1.0"@te,
+        "ใช้ตัวอย่างพิเศษ 1.0"@th,
+        "Sampling Plus 1.0"@tr,
+        "Sampling Plus 1.0"@uk,
+        "Sampling Plus 1.0"@ur,
+        "Sampling Plus 1.0"@vi,
+        "取样使用加强版 1.0"@zh,
+        "特別取樣 1.0"@zh-hk,
+        "特別取樣 1.0"@zh-tw,
+        "Ukuthatha Isampula Nokunye 1.0"@zu,
+        "${Sampling Plus} 1.0"@zxx ;
+    owl:sameAs <https://licensedb.org/id/CC-Sampling+-1.0-tw> ;
+    foaf:logo <http://i.creativecommons.org/l/sampling+/1.0/tw/80x15.png>,
+        <http://i.creativecommons.org/l/sampling+/1.0/tw/88x31.png> .
+
+<https://licensedb.org/id/CC-Sampling+-1.0-tw> a cc:License,
+        li:License ;
+    cc:deprecatedOn "2011-09-09"^^<http://www.w3.org/2001/XMLSchema-datatypes#date> ;
+    cc:jurisdiction <http://creativecommons.org/international/tw/> ;
+    cc:legalcode <http://creativecommons.org/licenses/sampling+/1.0/tw/legalcode> ;
+    cc:licenseClass <http://creativecommons.org/license/sampling/> ;
+    cc:permits cc:DerivativeWorks,
+        cc:Reproduction,
+        cc:Sharing ;
+    cc:requires cc:Attribution,
+        cc:Notice ;
+    dc:creator <http://creativecommons.org> ;
+    dc:hasVersion "1.0" ;
+    dc:identifier "sampling+" ;
+    dc:source <http://creativecommons.org/licenses/sampling+/1.0/> ;
+    dc:title "Voorsmaak Plus 1.0"@af,
+        "نماذج اضافية 1.0"@ar,
+        "Sampling Plus 1.0"@as,
+        "Sampling Plus 1.0"@ast,
+        "Sampling Plus 1.0"@ast-es,
+        "Sampling Plus 1.0"@az,
+        "Sampling Plus 1.0"@be,
+        "Семплиране плюс 1.0"@bg,
+        "Sampling Plus 1.0"@bn,
+        "Sampling Plus 1.0"@ca,
+        "Sampling Plus 1.0"@cs,
+        "Sampling Plus 1.0"@da,
+        "Sampling Plus 1.0"@de,
+        "Sampling Plus 1.0"@de-at,
+        "Sampling Plus 1.0"@de-ch,
+        "Άδεια Δείγματος Plus 1.0"@el,
+        "Sampling Plus 1.0"@en,
+        "Sampling Plus 1.0"@en-ca,
+        "Sampling Plus 1.0"@en-gb,
+        "Sampling Plus 1.0"@en-hk,
+        "Sampling Plus 1.0"@en-sg,
+        "Sampling Plus 1.0"@en-us,
+        "Specimeno Plus 1.0"@eo,
+        "Sampling Plus 1.0"@es,
+        "Sampling Plus 1.0"@es-ar,
+        "Sampling Plus 1.0"@es-cl,
+        "Sampling Plus 1.0"@es-co,
+        "Sampling Plus 1.0"@es-ec,
+        "Sampling Plus 1.0"@es-es,
+        "Sampling Plus 1.0"@es-gt,
+        "Sampling Plus 1.0"@es-mx,
+        "Sampling Plus 1.0"@es-pe,
+        "Sampling Plus 1.0"@es-pr,
+        "Sampling Plus 1.0"@et,
+        "Sampling Plus 1.0"@eu,
+        "Sampling Plus 1.0"@fa,
+        "Sämpläys Plus 1.0"@fi,
+        "Sampling Plus 1.0"@fr,
+        "Sampling Plus 1.0"@fr-ca,
+        "Sampling Plus 1.0"@fr-ch,
+        "Sampling Plus 1.0"@fr-lu,
+        "Sampling Plus 1.0"@ga,
+        "Sampling Plus 1.0"@gl,
+        "דגימה פלוס 1.0"@he,
+        "Sampling Plus 1.0"@hi,
+        "Sempliranje plus 1.0"@hr,
+        "Sampling Plus 1.0"@hu,
+        "Sampling Plus 1.0"@hy,
+        "Sampling Plus 1.0"@id,
+        "Sampling Plus 1.0"@is,
+        "<span lang=\"en\">Sampling Plus</span> 1.0"@it,
+        "<span lang=\"en\">Sampling Plus</span> 1.0"@it-ch,
+        "サンプリング・プラス 1.0"@ja,
+        "დამატებითი ნიმუში 1.0"@ka,
+        "Sampling Plus 1.0"@kk,
+        "샘플링 플러스 1.0"@ko,
+        "Sampling Plus 1.0"@lt,
+        "Iztverot plus 1.0"@lv,
+        "Семплирање плус 1.0"@mk,
+        "Sampling Plus 1.0"@ml,
+        "Sampling Plus 1.0"@mn,
+        "Mengambil contoh tambah 1.0"@ms,
+        "Sampling Plus 1.0"@nl,
+        "Sampling Plus 1.0"@no,
+        "Sampole ya Tlaleletšo 1.0"@nso,
+        "Sampling Plus 1.0"@oci-es,
+        "Sampling Plus 1.0"@pl,
+        "Sampling Plus 1.0"@pt,
+        "Sampling Plus 1.0"@pt-br,
+        "Sampling Plus 1.0"@pt-pt,
+        "Sampling Plus 1.0"@ro,
+        "Расширенное использование частей произведения (<i>Sampling Plus</i>) 1.0"@ru,
+        "Sampling Plus 1.0"@si-lk,
+        "Sampling Plus 1.0"@sl,
+        "Sampling Plus 1.0"@sq,
+        "licenca Sampling Plus 1.0"@sr,
+        "лиценца Sampling Plus 1.0"@sr,
+        "licenca Sampling Plus 1.0"@sr-latn,
+        "Sampling Plus 1.0"@st,
+        "Sampling Plus 1.0"@sv,
+        "Sampling Plus 1.0"@ta,
+        "Sampling Plus 1.0"@te,
+        "ใช้ตัวอย่างพิเศษ 1.0"@th,
+        "Sampling Plus 1.0"@tr,
+        "Sampling Plus 1.0"@uk,
+        "Sampling Plus 1.0"@ur,
+        "Sampling Plus 1.0"@vi,
+        "取样使用加强版 1.0"@zh,
+        "特別取樣 1.0"@zh-hk,
+        "特別取樣 1.0"@zh-tw,
+        "Ukuthatha Isampula Nokunye 1.0"@zu,
+        "${Sampling Plus} 1.0"@zxx ;
+    owl:sameAs <http://creativecommons.org/licenses/sampling+/1.0/tw/> ;
+    foaf:logo <http://i.creativecommons.org/l/sampling+/1.0/tw/80x15.png>,
+        <http://i.creativecommons.org/l/sampling+/1.0/tw/88x31.png> ;
+    li:id "CC-Sampling+-1.0-tw" ;
+    li:name "CC Sampling+ 1.0 TW" .
+

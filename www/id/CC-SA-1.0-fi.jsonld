@@ -1,0 +1,852 @@
+{
+    "@context": {
+        "cc": "http://creativecommons.org/ns#",
+        "dc": "http://purl.org/dc/terms/",
+        "dc11": "http://purl.org/dc/elements/1.1/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "li": "https://licensedb.org/ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "schema": "http://schema.org/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "cc:legalcode": {
+            "@type": "@id"
+        },
+        "cc:permits": {
+            "@type": "@id"
+        },
+        "cc:requires": {
+            "@type": "@id"
+        },
+        "cc:prohibits": {
+            "@type": "@id"
+        },
+        "cc:jurisdiction": {
+            "@type": "@id"
+        },
+        "cc:licenseClass": {
+            "@type": "@id"
+        },
+        "dc:creator": {
+            "@type": "@id"
+        },
+        "dc:source": {
+            "@type": "@id"
+        },
+        "dc:replaces": {
+            "@type": "@id"
+        },
+        "dc:isBasedOn": {
+            "@type": "@id"
+        },
+        "dc:isReplacedBy": {
+            "@type": "@id"
+        },
+        "foaf:logo": {
+            "@type": "@id"
+        },
+        "li:plaintext": {
+            "@type": "@id"
+        },
+        "li:libre": {
+            "@type": "@id"
+        },
+        "owl:sameAs": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://licensedb.org/id/CC-SA-1.0-fi",
+    "@type": [
+        "cc:License",
+        "li:License"
+    ],
+    "cc:deprecatedOn": {
+        "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+        "@value": "2004-05-25"
+    },
+    "cc:jurisdiction": "http://creativecommons.org/international/fi/",
+    "cc:legalcode": "http://creativecommons.org/licenses/sa/1.0/fi/legalcode",
+    "cc:licenseClass": "http://creativecommons.org/license/",
+    "cc:permits": [
+        "cc:DerivativeWorks",
+        "cc:Distribution",
+        "cc:Reproduction"
+    ],
+    "cc:requires": [
+        "cc:Notice",
+        "cc:ShareAlike"
+    ],
+    "dc:creator": "http://creativecommons.org",
+    "dc:hasVersion": "1.0",
+    "dc:identifier": "sa",
+    "dc:source": "http://creativecommons.org/licenses/sa/1.0/",
+    "dc:title": [
+        {
+            "@language": "af",
+            "@value": "InsgelyksDeel 1.0 Finland"
+        },
+        {
+            "@language": "ar",
+            "@value": "المشاركة على قدم المساواة 1.0 فلندا"
+        },
+        {
+            "@language": "as",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "ast",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "ast-es",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "az",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "be",
+            "@value": "ShareAlike 1.0 Фінляндыя"
+        },
+        {
+            "@language": "bg",
+            "@value": "Споделяне на споделеното 1.0 Финландия"
+        },
+        {
+            "@language": "bn",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "ca",
+            "@value": "CompartirIgual 1.0 Finlàndia"
+        },
+        {
+            "@language": "cs",
+            "@value": "Zachovejte licenci 1.0 Finsko"
+        },
+        {
+            "@language": "da",
+            "@value": "DelPåSammeVilkår 1.0 Finland"
+        },
+        {
+            "@language": "de",
+            "@value": "Weitergabe unter gleichen Bedingungen 1.0 Finnland"
+        },
+        {
+            "@language": "de-at",
+            "@value": "Weitergabe unter gleichen Bedingungen 1.0 Finnland"
+        },
+        {
+            "@language": "de-ch",
+            "@value": "Weitergabe unter gleichen Bedingungen 1.0 Finnland"
+        },
+        {
+            "@language": "el",
+            "@value": "Παρόμοια Διανομή 1.0 Φιλανδία"
+        },
+        {
+            "@language": "en",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "en-ca",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "en-gb",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "en-hk",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "en-sg",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "en-us",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "eo",
+            "@value": "Samkondiĉe 1.0 Suomujo"
+        },
+        {
+            "@language": "es",
+            "@value": "CompartirIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "es-ar",
+            "@value": "CompartirDerivadasIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "es-cl",
+            "@value": "Licenciar Igual 1.0 Finlandia"
+        },
+        {
+            "@language": "es-co",
+            "@value": "CompartirIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "es-ec",
+            "@value": "CompartirIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "es-es",
+            "@value": "CompartirIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "es-gt",
+            "@value": "CompartirIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "es-mx",
+            "@value": "Licenciamiento Recíproco 1.0 Finlandia"
+        },
+        {
+            "@language": "es-pe",
+            "@value": "CompartirIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "es-pr",
+            "@value": "CompartirIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "et",
+            "@value": "Jagamine samadel tingimustel  1.0 Soome"
+        },
+        {
+            "@language": "eu",
+            "@value": "PartekatuBerdin 1.0 Finlandia"
+        },
+        {
+            "@language": "fa",
+            "@value": "ShareAlike 1.0 فنلاند"
+        },
+        {
+            "@language": "fi",
+            "@value": "Tarttuva 1.0 Suomi"
+        },
+        {
+            "@language": "fr",
+            "@value": "Partage à l'Identique 1.0 Finlande"
+        },
+        {
+            "@language": "fr-ca",
+            "@value": "Partage des conditions initiales à l'identique 1.0 Finlande"
+        },
+        {
+            "@language": "fr-ch",
+            "@value": "Partage des conditions initiales à l'identique 1.0 Finlande"
+        },
+        {
+            "@language": "fr-lu",
+            "@value": "Partage des conditions initiales à l'identique 1.0 Finlande"
+        },
+        {
+            "@language": "ga",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "gl",
+            "@value": "CompartirIgual 1.0 Finlandia"
+        },
+        {
+            "@language": "he",
+            "@value": "שיתוף זהה 1.0 פינלנד"
+        },
+        {
+            "@language": "hi",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "hr",
+            "@value": "Dijeli pod istim uvjetima 1.0 Finska"
+        },
+        {
+            "@language": "hu",
+            "@value": "Így add tovább! 1.0 Finnország"
+        },
+        {
+            "@language": "hy",
+            "@value": "Համանման տարածում 1.0 Finland"
+        },
+        {
+            "@language": "id",
+            "@value": "BerbagiSerupa 1.0 Finlandia"
+        },
+        {
+            "@language": "is",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "it",
+            "@value": "StessaLicenza 1.0 Finlandia"
+        },
+        {
+            "@language": "it-ch",
+            "@value": "StessaLicenza 1.0 Finlandia"
+        },
+        {
+            "@language": "ja",
+            "@value": "継承 1.0 フィンランド"
+        },
+        {
+            "@language": "ka",
+            "@value": "გავრცელება იგივე პირობებით 1.0 ფინეთი"
+        },
+        {
+            "@language": "kk",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "ko",
+            "@value": "동일조건변경허락 1.0 핀란드"
+        },
+        {
+            "@language": "lt",
+            "@value": "ShareAlike 1.0 Suomija"
+        },
+        {
+            "@language": "lv",
+            "@value": "Līdzvērtīgs 1.0 Somija"
+        },
+        {
+            "@language": "mk",
+            "@value": "СподелиПодИстиУслови 1.0 Финска"
+        },
+        {
+            "@language": "ml",
+            "@value": "ShareAlike 1.0 ഫിൻലാന്റ്"
+        },
+        {
+            "@language": "mn",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "ms",
+            "@value": "Perkongsian serupa 1.0 Finland"
+        },
+        {
+            "@language": "nl",
+            "@value": "GelijkDelen 1.0 Finland"
+        },
+        {
+            "@language": "no",
+            "@value": "DelPåSammeVilkår 1.0 Finland"
+        },
+        {
+            "@language": "nso",
+            "@value": "Mohlakanelwa 1.0 Finland"
+        },
+        {
+            "@language": "oci-es",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "pl",
+            "@value": "Na tych samych warunkach 1.0 Finlandia"
+        },
+        {
+            "@language": "pt",
+            "@value": "CompartilhaIgual 1.0 Finlândia"
+        },
+        {
+            "@language": "pt-br",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "pt-pt",
+            "@value": "Partilha nos termos da mesma licença 1.0 Filândia"
+        },
+        {
+            "@language": "ro",
+            "@value": "Distribuie-în-condiţii-identice 1.0 Finlanda"
+        },
+        {
+            "@language": "ru",
+            "@value": "С сохранением условий<br />(<i>ShareAlike</i>) 1.0 Финляндия"
+        },
+        {
+            "@language": "si-lk",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "sl",
+            "@value": "Deljenje pod enakimi pogoji 1.0 Finska"
+        },
+        {
+            "@language": "sq",
+            "@value": "ShareAlike 1.0 Finlandë"
+        },
+        {
+            "@language": "sr",
+            "@value": "Deliti pod istim uslovima 1.0 Finska"
+        },
+        {
+            "@language": "sr",
+            "@value": "Делити под истим условима 1.0 Финска"
+        },
+        {
+            "@language": "sr-latn",
+            "@value": "Deliti pod istim uslovima 1.0 Finska"
+        },
+        {
+            "@language": "st",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "sv",
+            "@value": "DelaLika 1.0 Finland"
+        },
+        {
+            "@language": "ta",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "te",
+            "@value": "ShareAlike 1.0 ఫిన్లాండ్"
+        },
+        {
+            "@language": "th",
+            "@value": "อนุญาตแบบเดียวกัน 1.0 ฟินแลนด์"
+        },
+        {
+            "@language": "tr",
+            "@value": "LisansıDevamEttirme 1.0 Finlandiya"
+        },
+        {
+            "@language": "uk",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "ur",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "vi",
+            "@value": "ShareAlike 1.0 Finland"
+        },
+        {
+            "@language": "zh",
+            "@value": "相同方式共享 1.0 芬兰"
+        },
+        {
+            "@language": "zh-hk",
+            "@value": "相同方式分享 1.0 芬蘭"
+        },
+        {
+            "@language": "zh-tw",
+            "@value": "相同方式分享 1.0 芬蘭"
+        },
+        {
+            "@language": "zu",
+            "@value": "Zihlanganyeleni 1.0 iFinland"
+        },
+        {
+            "@language": "zxx",
+            "@value": "${ShareAlike} 1.0 ${Finland}"
+        }
+    ],
+    "owl:sameAs": {
+        "@id": "http://creativecommons.org/licenses/sa/1.0/fi/",
+        "@type": "cc:License",
+        "cc:deprecatedOn": {
+            "@type": "http://www.w3.org/2001/XMLSchema-datatypes#date",
+            "@value": "2004-05-25"
+        },
+        "cc:jurisdiction": "http://creativecommons.org/international/fi/",
+        "cc:legalcode": "http://creativecommons.org/licenses/sa/1.0/fi/legalcode",
+        "cc:licenseClass": "http://creativecommons.org/license/",
+        "cc:permits": [
+            "cc:DerivativeWorks",
+            "cc:Distribution",
+            "cc:Reproduction"
+        ],
+        "cc:requires": [
+            "cc:Notice",
+            "cc:ShareAlike"
+        ],
+        "dc:creator": "http://creativecommons.org",
+        "dc:hasVersion": "1.0",
+        "dc:identifier": "sa",
+        "dc:source": "http://creativecommons.org/licenses/sa/1.0/",
+        "dc:title": [
+            {
+                "@language": "af",
+                "@value": "InsgelyksDeel 1.0 Finland"
+            },
+            {
+                "@language": "ar",
+                "@value": "المشاركة على قدم المساواة 1.0 فلندا"
+            },
+            {
+                "@language": "as",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "ast",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "ast-es",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "az",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "be",
+                "@value": "ShareAlike 1.0 Фінляндыя"
+            },
+            {
+                "@language": "bg",
+                "@value": "Споделяне на споделеното 1.0 Финландия"
+            },
+            {
+                "@language": "bn",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "ca",
+                "@value": "CompartirIgual 1.0 Finlàndia"
+            },
+            {
+                "@language": "cs",
+                "@value": "Zachovejte licenci 1.0 Finsko"
+            },
+            {
+                "@language": "da",
+                "@value": "DelPåSammeVilkår 1.0 Finland"
+            },
+            {
+                "@language": "de",
+                "@value": "Weitergabe unter gleichen Bedingungen 1.0 Finnland"
+            },
+            {
+                "@language": "de-at",
+                "@value": "Weitergabe unter gleichen Bedingungen 1.0 Finnland"
+            },
+            {
+                "@language": "de-ch",
+                "@value": "Weitergabe unter gleichen Bedingungen 1.0 Finnland"
+            },
+            {
+                "@language": "el",
+                "@value": "Παρόμοια Διανομή 1.0 Φιλανδία"
+            },
+            {
+                "@language": "en",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "en-ca",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "en-gb",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "en-hk",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "en-sg",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "en-us",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "eo",
+                "@value": "Samkondiĉe 1.0 Suomujo"
+            },
+            {
+                "@language": "es",
+                "@value": "CompartirIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "es-ar",
+                "@value": "CompartirDerivadasIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "es-cl",
+                "@value": "Licenciar Igual 1.0 Finlandia"
+            },
+            {
+                "@language": "es-co",
+                "@value": "CompartirIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "es-ec",
+                "@value": "CompartirIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "es-es",
+                "@value": "CompartirIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "es-gt",
+                "@value": "CompartirIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "es-mx",
+                "@value": "Licenciamiento Recíproco 1.0 Finlandia"
+            },
+            {
+                "@language": "es-pe",
+                "@value": "CompartirIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "es-pr",
+                "@value": "CompartirIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "et",
+                "@value": "Jagamine samadel tingimustel  1.0 Soome"
+            },
+            {
+                "@language": "eu",
+                "@value": "PartekatuBerdin 1.0 Finlandia"
+            },
+            {
+                "@language": "fa",
+                "@value": "ShareAlike 1.0 فنلاند"
+            },
+            {
+                "@language": "fi",
+                "@value": "Tarttuva 1.0 Suomi"
+            },
+            {
+                "@language": "fr",
+                "@value": "Partage à l'Identique 1.0 Finlande"
+            },
+            {
+                "@language": "fr-ca",
+                "@value": "Partage des conditions initiales à l'identique 1.0 Finlande"
+            },
+            {
+                "@language": "fr-ch",
+                "@value": "Partage des conditions initiales à l'identique 1.0 Finlande"
+            },
+            {
+                "@language": "fr-lu",
+                "@value": "Partage des conditions initiales à l'identique 1.0 Finlande"
+            },
+            {
+                "@language": "ga",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "gl",
+                "@value": "CompartirIgual 1.0 Finlandia"
+            },
+            {
+                "@language": "he",
+                "@value": "שיתוף זהה 1.0 פינלנד"
+            },
+            {
+                "@language": "hi",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "hr",
+                "@value": "Dijeli pod istim uvjetima 1.0 Finska"
+            },
+            {
+                "@language": "hu",
+                "@value": "Így add tovább! 1.0 Finnország"
+            },
+            {
+                "@language": "hy",
+                "@value": "Համանման տարածում 1.0 Finland"
+            },
+            {
+                "@language": "id",
+                "@value": "BerbagiSerupa 1.0 Finlandia"
+            },
+            {
+                "@language": "is",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "it",
+                "@value": "StessaLicenza 1.0 Finlandia"
+            },
+            {
+                "@language": "it-ch",
+                "@value": "StessaLicenza 1.0 Finlandia"
+            },
+            {
+                "@language": "ja",
+                "@value": "継承 1.0 フィンランド"
+            },
+            {
+                "@language": "ka",
+                "@value": "გავრცელება იგივე პირობებით 1.0 ფინეთი"
+            },
+            {
+                "@language": "kk",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "ko",
+                "@value": "동일조건변경허락 1.0 핀란드"
+            },
+            {
+                "@language": "lt",
+                "@value": "ShareAlike 1.0 Suomija"
+            },
+            {
+                "@language": "lv",
+                "@value": "Līdzvērtīgs 1.0 Somija"
+            },
+            {
+                "@language": "mk",
+                "@value": "СподелиПодИстиУслови 1.0 Финска"
+            },
+            {
+                "@language": "ml",
+                "@value": "ShareAlike 1.0 ഫിൻലാന്റ്"
+            },
+            {
+                "@language": "mn",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "ms",
+                "@value": "Perkongsian serupa 1.0 Finland"
+            },
+            {
+                "@language": "nl",
+                "@value": "GelijkDelen 1.0 Finland"
+            },
+            {
+                "@language": "no",
+                "@value": "DelPåSammeVilkår 1.0 Finland"
+            },
+            {
+                "@language": "nso",
+                "@value": "Mohlakanelwa 1.0 Finland"
+            },
+            {
+                "@language": "oci-es",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "pl",
+                "@value": "Na tych samych warunkach 1.0 Finlandia"
+            },
+            {
+                "@language": "pt",
+                "@value": "CompartilhaIgual 1.0 Finlândia"
+            },
+            {
+                "@language": "pt-br",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "pt-pt",
+                "@value": "Partilha nos termos da mesma licença 1.0 Filândia"
+            },
+            {
+                "@language": "ro",
+                "@value": "Distribuie-în-condiţii-identice 1.0 Finlanda"
+            },
+            {
+                "@language": "ru",
+                "@value": "С сохранением условий<br />(<i>ShareAlike</i>) 1.0 Финляндия"
+            },
+            {
+                "@language": "si-lk",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "sl",
+                "@value": "Deljenje pod enakimi pogoji 1.0 Finska"
+            },
+            {
+                "@language": "sq",
+                "@value": "ShareAlike 1.0 Finlandë"
+            },
+            {
+                "@language": "sr",
+                "@value": "Deliti pod istim uslovima 1.0 Finska"
+            },
+            {
+                "@language": "sr",
+                "@value": "Делити под истим условима 1.0 Финска"
+            },
+            {
+                "@language": "sr-latn",
+                "@value": "Deliti pod istim uslovima 1.0 Finska"
+            },
+            {
+                "@language": "st",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "sv",
+                "@value": "DelaLika 1.0 Finland"
+            },
+            {
+                "@language": "ta",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "te",
+                "@value": "ShareAlike 1.0 ఫిన్లాండ్"
+            },
+            {
+                "@language": "th",
+                "@value": "อนุญาตแบบเดียวกัน 1.0 ฟินแลนด์"
+            },
+            {
+                "@language": "tr",
+                "@value": "LisansıDevamEttirme 1.0 Finlandiya"
+            },
+            {
+                "@language": "uk",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "ur",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "vi",
+                "@value": "ShareAlike 1.0 Finland"
+            },
+            {
+                "@language": "zh",
+                "@value": "相同方式共享 1.0 芬兰"
+            },
+            {
+                "@language": "zh-hk",
+                "@value": "相同方式分享 1.0 芬蘭"
+            },
+            {
+                "@language": "zh-tw",
+                "@value": "相同方式分享 1.0 芬蘭"
+            },
+            {
+                "@language": "zu",
+                "@value": "Zihlanganyeleni 1.0 iFinland"
+            },
+            {
+                "@language": "zxx",
+                "@value": "${ShareAlike} 1.0 ${Finland}"
+            }
+        ],
+        "owl:sameAs": "https://licensedb.org/id/CC-SA-1.0-fi",
+        "foaf:logo": "http://i.creativecommons.org/l/sa/1.0/fi/88x31.png"
+    },
+    "foaf:logo": "http://i.creativecommons.org/l/sa/1.0/fi/88x31.png",
+    "li:id": "CC-SA-1.0-fi",
+    "li:name": "CC SA 1.0 FI"
+}
