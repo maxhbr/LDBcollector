@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "BSD-4-Clause"
+    "spdx": [
+      "BSD-4-Clause"
+    ]
   },
   "name": "Original BSD license",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:BSD_4Clause"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#OriginalBSD",
+    "http://directory.fsf.org/wiki/License:BSD_4Clause"
+  ]
 }

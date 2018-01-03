@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "WTFPL"
+    "spdx": [
+      "WTFPL"
+    ]
   },
   "name": "WTFPL, Version 2",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://sam.zoy.org/wtfpl/COPYING"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#WTFPL",
+    "http://sam.zoy.org/wtfpl/COPYING"
+  ]
 }

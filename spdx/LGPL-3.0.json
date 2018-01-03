@@ -1,11 +1,18 @@
 {
   "identifiers": {
-    "spdx": "LGPL-3.0"
+    "spdx": [
+      "LGPL-3.0-or-later",
+      "LGPL-3.0-only",
+      "LGPL-3.0"
+    ]
   },
   "name": "GNU Lesser General Public License (LGPL) version 3",
   "tags": [
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "https://www.gnu.org/licenses/lgpl.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#LGPLv3",
+    "https://www.gnu.org/licenses/lgpl.html"
+  ]
 }

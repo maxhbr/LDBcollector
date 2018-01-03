@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "Nokia"
+    "spdx": [
+      "Nokia"
+    ]
   },
   "name": "Nokia Open Source License",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:NokOSv1.0a"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Nokia",
+    "http://directory.fsf.org/wiki/License:NokOSv1.0a"
+  ]
 }

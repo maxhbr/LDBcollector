@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://www.accellera.org/about/policies/SystemC_Open_Source_License.pdf"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SystemC-3.0",
+    "http://www.accellera.org/about/policies/SystemC_Open_Source_License.pdf"
+  ]
 }

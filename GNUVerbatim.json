@@ -3,5 +3,8 @@
   "tags": [
     "viewpoint"
   ],
-  "uri": "https://www.gnu.org/licenses/licenses.html#VerbatimCopying"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#GNUVerbatim",
+    "https://www.gnu.org/licenses/licenses.html#VerbatimCopying"
+  ]
 }

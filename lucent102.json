@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "LPL-1.02"
+    "spdx": [
+      "LPL-1.02"
+    ]
   },
   "name": "Lucent Public License Version 1.02 (Plan 9 license)",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:LucentPLv1.02"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#lucent102",
+    "http://directory.fsf.org/wiki/License:LucentPLv1.02"
+  ]
 }

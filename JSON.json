@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "JSON"
+    "spdx": [
+      "JSON"
+    ]
   },
   "name": "The JSON License",
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:JSON"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#JSON",
+    "http://directory.fsf.org/wiki/License:JSON"
+  ]
 }

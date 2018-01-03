@@ -5,5 +5,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:PublicDomain"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#PublicDomain",
+    "http://directory.fsf.org/wiki/License:PublicDomain"
+  ]
 }

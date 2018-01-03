@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#UtahPublicLicense",
+    "http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt"
+  ]
 }

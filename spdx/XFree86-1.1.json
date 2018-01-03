@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "XFree86-1.1"
+    "spdx": [
+      "XFree86-1.1"
+    ]
   },
   "name": "XFree86 1.1 License",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:XFree86_1.1"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#XFree861.1License",
+    "http://directory.fsf.org/wiki/License:XFree86_1.1"
+  ]
 }

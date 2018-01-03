@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "Watcom-1.0"
+    "spdx": [
+      "Watcom-1.0"
+    ]
   },
   "name": "Sybase Open Watcom Public License version 1.0",
   "tags": [
     "non-free"
   ],
-  "uri": "ftp://ftp.openwatcom.org/install/license.txt"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Watcom",
+    "ftp://ftp.openwatcom.org/install/license.txt"
+  ]
 }

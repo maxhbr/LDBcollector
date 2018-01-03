@@ -1,11 +1,18 @@
 {
   "identifiers": {
-    "spdx": "CC-BY-ND-4.0"
+    "spdx": [
+      "CC-BY-ND-4.0"
+    ]
   },
   "name": "Creative Commons Noderivatives, any version",
   "tags": [
     "non-free",
     "viewpoint"
   ],
-  "uri": "https://www.gnu.org/licenses/license-list.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#CC-BY-ND",
+    "https://www.gnu.org/licenses/license-list.html",
+    "https://www.gnu.org/licenses/license-list.html#ccbynd",
+    "https://creativecommons.org/licenses/by-nd/4.0/legalcode"
+  ]
 }

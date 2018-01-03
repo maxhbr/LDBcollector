@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "NASA-1.3"
+    "spdx": [
+      "NASA-1.3"
+    ]
   },
   "name": "NASA Open Source Agreement",
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:NASA-OSA_v1.3"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#NASA",
+    "http://directory.fsf.org/wiki/License:NASA-OSA_v1.3"
+  ]
 }

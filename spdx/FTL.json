@@ -1,11 +1,16 @@
 {
   "identifiers": {
-    "spdx": "FTL"
+    "spdx": [
+      "FTL"
+    ]
   },
   "name": "Freetype Project License",
   "tags": [
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:FreeType"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#freetype",
+    "http://directory.fsf.org/wiki/License:FreeType"
+  ]
 }

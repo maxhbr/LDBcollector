@@ -3,5 +3,8 @@
   "tags": [
     "libre"
   ],
-  "uri": "https://directory.fsf.org/wiki/License:Free-Art-L-v1.3"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#FreeArt",
+    "https://directory.fsf.org/wiki/License:Free-Art-L-v1.3"
+  ]
 }

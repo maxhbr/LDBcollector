@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "CECILL-2.0"
+    "spdx": [
+      "CECILL-2.0"
+    ]
   },
   "name": "CeCILL version 2",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "https://directory.fsf.org/wiki/License:CeCILLv2"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#CeCILL",
+    "https://directory.fsf.org/wiki/License:CeCILLv2"
+  ]
 }

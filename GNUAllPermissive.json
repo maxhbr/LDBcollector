@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "FSFAP"
+    "spdx": [
+      "FSFAP"
+    ]
   },
   "name": "GNU All-Permissive License",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#GNUAllPermissive",
+    "https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+  ]
 }

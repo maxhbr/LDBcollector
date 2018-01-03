@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "MIT"
+    "spdx": [
+      "MIT"
+    ]
   },
   "name": "Expat License",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Expat"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Expat",
+    "http://directory.fsf.org/wiki/License:Expat"
+  ]
 }

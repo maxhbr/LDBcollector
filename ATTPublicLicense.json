@@ -2,5 +2,8 @@
   "name": "AT&T Public License",
   "tags": [
     "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ATTPublicLicense"
   ]
 }

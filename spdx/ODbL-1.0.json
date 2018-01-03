@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "ODbL-1.0"
+    "spdx": [
+      "ODbL-1.0"
+    ]
   },
   "name": "Open Database license",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:ODbl"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ODbl",
+    "http://directory.fsf.org/wiki/License:ODbl"
+  ]
 }

@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "UPL-1.0"
+    "spdx": [
+      "UPL-1.0"
+    ]
   },
   "name": "Universal Permissive License (UPL)",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Universal_Permissive_License"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#UPL",
+    "http://directory.fsf.org/wiki/License:Universal_Permissive_License"
+  ]
 }

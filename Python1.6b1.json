@@ -3,5 +3,8 @@
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Python1.6b1"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#PythonOld",
+    "http://directory.fsf.org/wiki/License:Python1.6b1"
+  ]
 }

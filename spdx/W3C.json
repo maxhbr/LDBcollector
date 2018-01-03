@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "W3C"
+    "spdx": [
+      "W3C"
+    ]
   },
   "name": "W3C Software Notice and License",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:W3C_31Dec2002"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#W3C",
+    "http://directory.fsf.org/wiki/License:W3C_31Dec2002"
+  ]
 }

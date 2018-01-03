@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "IPA"
+    "spdx": [
+      "IPA"
+    ]
   },
   "name": "IPA\n    Font License",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:IPA_Font_License"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#IPAFONT",
+    "http://directory.fsf.org/wiki/License:IPA_Font_License"
+  ]
 }

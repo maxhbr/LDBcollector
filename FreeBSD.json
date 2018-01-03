@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "BSD-2-Clause-FreeBSD"
+    "spdx": [
+      "BSD-2-Clause-FreeBSD"
+    ]
   },
   "name": "FreeBSD license",
   "tags": [
@@ -9,5 +11,9 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki?title=License:FreeBSD"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#FreeBSD",
+    "http://directory.fsf.org/wiki?title=License:FreeBSD",
+    "https://www.gnu.org/licenses/license-list.html#FreeBSDDL"
+  ]
 }

@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:SunCSLv2.8"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SunCommunitySourceLicense",
+    "http://directory.fsf.org/wiki/License:SunCSLv2.8"
+  ]
 }

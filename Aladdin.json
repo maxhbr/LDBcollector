@@ -1,9 +1,14 @@
 {
   "identifiers": {
-    "spdx": "Aladdin"
+    "spdx": [
+      "Aladdin"
+    ]
   },
   "name": "Aladdin Free Public License",
   "tags": [
     "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Aladdin"
   ]
 }

@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "OFL-1.1"
+    "spdx": [
+      "OFL-1.1"
+    ]
   },
   "name": "SIL Open Font License 1.1",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/SIL_Open_Font_License_1.1"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SILOFL",
+    "http://directory.fsf.org/wiki/SIL_Open_Font_License_1.1"
+  ]
 }

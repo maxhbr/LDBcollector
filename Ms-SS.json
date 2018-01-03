@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Ms-SS"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Ms-SS",
+    "http://directory.fsf.org/wiki/License:Ms-SS"
+  ]
 }

@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "MPL-2.0"
+    "spdx": [
+      "MPL-2.0"
+    ]
   },
   "name": "Mozilla Public\n       License (MPL) version 2.0",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:MPLv2.0"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#MPL-2.0",
+    "http://directory.fsf.org/wiki/License:MPLv2.0"
+  ]
 }

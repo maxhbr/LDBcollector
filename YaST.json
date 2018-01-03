@@ -2,5 +2,8 @@
   "name": "YaST License",
   "tags": [
     "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#YaST"
   ]
 }

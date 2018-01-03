@@ -1,11 +1,18 @@
 {
   "identifiers": {
-    "spdx": "GPL-2.0"
+    "spdx": [
+      "GPL-2.0-or-later",
+      "GPL-2.0-only",
+      "GPL-2.0"
+    ]
   },
   "name": "GNU General Public License (GPL) version 2",
   "tags": [
     "gpl-2-compatible",
     "libre"
   ],
-  "uri": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#GPLv2",
+    "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  ]
 }

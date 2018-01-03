@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "Sleepycat"
+    "spdx": [
+      "Sleepycat"
+    ]
   },
   "name": "Berkeley Database License",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Sleepycat"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#BerkeleyDB",
+    "http://directory.fsf.org/wiki/License:Sleepycat"
+  ]
 }

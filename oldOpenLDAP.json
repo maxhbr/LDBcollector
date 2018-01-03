@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "OLDAP-2.3"
+    "spdx": [
+      "OLDAP-2.3"
+    ]
   },
   "name": "Old OpenLDAP License, Version 2.3",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:OpenLDAPv2.3"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#oldOpenLDAP",
+    "http://directory.fsf.org/wiki/License:OpenLDAPv2.3"
+  ]
 }

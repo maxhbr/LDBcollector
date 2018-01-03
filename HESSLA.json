@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://www.hacktivismo.com/about/hessla.php"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#HESSLA",
+    "http://www.hacktivismo.com/about/hessla.php"
+  ]
 }

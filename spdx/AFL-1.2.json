@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "AFL-1.2"
+    "spdx": [
+      "AFL-1.2"
+    ]
   },
   "name": "Academic Free License, all versions through 3.0",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:AFLv3"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#AcademicFreeLicense",
+    "http://directory.fsf.org/wiki/License:AFLv3"
+  ]
 }

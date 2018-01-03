@@ -3,5 +3,8 @@
   "tags": [
     "libre"
   ],
-  "uri": "http://opencontent.org/openpub/"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#OpenPublicationL",
+    "http://opencontent.org/openpub/"
+  ]
 }

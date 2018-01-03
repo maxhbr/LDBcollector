@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "YPL-1.1"
+    "spdx": [
+      "YPL-1.1"
+    ]
   },
   "name": "Yahoo! Public License 1.1",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:YPLv1.1"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Yahoo",
+    "http://directory.fsf.org/wiki/License:YPLv1.1"
+  ]
 }

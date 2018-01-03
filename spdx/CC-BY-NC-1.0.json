@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "CC-BY-NC-1.0"
+    "spdx": [
+      "CC-BY-NC-1.0"
+    ]
   },
   "name": "Creative Commons Nocommercial, any version",
   "tags": [
     "non-free"
   ],
-  "uri": "https://www.gnu.org/licenses/license-list.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#CC-BY-NC",
+    "https://www.gnu.org/licenses/license-list.html"
+  ]
 }

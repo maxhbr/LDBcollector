@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "PHP-3.01"
+    "spdx": [
+      "PHP-3.01"
+    ]
   },
   "name": "PHP License, Version 3.01",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:PHPv3.01"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#PHP-3.01",
+    "http://directory.fsf.org/wiki/License:PHPv3.01"
+  ]
 }

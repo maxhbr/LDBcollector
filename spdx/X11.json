@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "X11"
+    "spdx": [
+      "X11"
+    ]
   },
   "name": "X11 License",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:X11"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#X11License",
+    "http://directory.fsf.org/wiki/License:X11"
+  ]
 }

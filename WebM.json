@@ -5,5 +5,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:WebM"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#WebM",
+    "http://directory.fsf.org/wiki/License:WebM"
+  ]
 }

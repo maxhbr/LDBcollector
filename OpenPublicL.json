@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "OPL-1.0"
+    "spdx": [
+      "OPL-1.0"
+    ]
   },
   "name": "Open Public License",
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:OpenPLv1.0"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#OpenPublicL",
+    "http://directory.fsf.org/wiki/License:OpenPLv1.0"
+  ]
 }

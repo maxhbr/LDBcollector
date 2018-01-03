@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "APSL-1.0"
+    "spdx": [
+      "APSL-1.0"
+    ]
   },
   "name": "Apple Public Source License (APSL), version 1.x",
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:APSLv1.x"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#apsl1",
+    "http://directory.fsf.org/wiki/License:APSLv1.x"
+  ]
 }

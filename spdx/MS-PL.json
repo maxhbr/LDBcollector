@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "MS-PL"
+    "spdx": [
+      "MS-PL"
+    ]
   },
   "name": "Microsoft Public License (Ms-PL)",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:MsPL"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ms-pl",
+    "http://directory.fsf.org/wiki/License:MsPL"
+  ]
 }

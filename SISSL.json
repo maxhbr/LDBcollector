@@ -3,5 +3,8 @@
   "tags": [
     "libre"
   ],
-  "uri": "http://www.openoffice.org/licenses/sissl_license.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SISSL",
+    "http://www.openoffice.org/licenses/sissl_license.html"
+  ]
 }

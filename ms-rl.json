@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "MS-RL"
+    "spdx": [
+      "MS-RL"
+    ]
   },
   "name": "Microsoft Reciprocal License (Ms-RL)",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:MsRL"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ms-rl",
+    "http://directory.fsf.org/wiki/License:MsRL"
+  ]
 }

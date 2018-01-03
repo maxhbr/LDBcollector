@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:TrueCrypt"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Truecrypt-3.0",
+    "http://directory.fsf.org/wiki/License:TrueCrypt"
+  ]
 }

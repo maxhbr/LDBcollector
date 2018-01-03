@@ -1,11 +1,18 @@
 {
   "identifiers": {
-    "spdx": "GPL-3.0"
+    "spdx": [
+      "GPL-3.0-or-later",
+      "GPL-3.0-only",
+      "GPL-3.0"
+    ]
   },
   "name": "GNU General Public License (GPL) version 3",
   "tags": [
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "https://www.gnu.org/licenses/gpl.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#GNUGPLv3",
+    "https://www.gnu.org/licenses/gpl.html"
+  ]
 }

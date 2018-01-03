@@ -1,11 +1,19 @@
 {
   "identifiers": {
-    "spdx": "GFDL-1.3"
+    "spdx": [
+      "GFDL-1.3-or-later",
+      "GFDL-1.3-only",
+      "GFDL-1.3"
+    ]
   },
   "name": "GNU Free Documentation License",
   "tags": [
     "fdl-compatible",
     "libre"
   ],
-  "uri": "https://www.gnu.org/licenses/fdl.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#FDL",
+    "https://www.gnu.org/licenses/fdl.html",
+    "https://www.gnu.org/licenses/license-list.html#FDLOther"
+  ]
 }

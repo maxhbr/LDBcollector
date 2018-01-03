@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "xinetd"
+    "spdx": [
+      "xinetd"
+    ]
   },
   "name": "License of xinetd",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Xinetd"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#xinetd",
+    "http://directory.fsf.org/wiki/License:Xinetd"
+  ]
 }

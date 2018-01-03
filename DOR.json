@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://dorepository.org/download.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#DOR",
+    "http://dorepository.org/download.html"
+  ]
 }

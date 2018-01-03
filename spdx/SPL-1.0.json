@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "SPL-1.0"
+    "spdx": [
+      "SPL-1.0"
+    ]
   },
   "name": "Sun Public License",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:SPLv1.0"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SPL",
+    "http://directory.fsf.org/wiki/License:SPLv1.0"
+  ]
 }

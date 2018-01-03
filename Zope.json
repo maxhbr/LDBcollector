@@ -3,5 +3,8 @@
   "tags": [
     "libre"
   ],
-  "uri": "http://web.archive.org/web/20000816090640/http://www.zope.org/Resources/ZPL"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Zope",
+    "http://web.archive.org/web/20000816090640/http://www.zope.org/Resources/ZPL"
+  ]
 }

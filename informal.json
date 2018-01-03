@@ -4,5 +4,8 @@
     "gpl-2-compatible",
     "gpl-3-compatible",
     "libre"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#informal"
   ]
 }

@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "Artistic-1.0"
+    "spdx": [
+      "Artistic-1.0"
+    ]
   },
   "name": "Artistic License 1.0",
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Artistic_v1.0"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ArtisticLicense",
+    "http://directory.fsf.org/wiki/License:Artistic_v1.0"
+  ]
 }

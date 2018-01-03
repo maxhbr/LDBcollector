@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "gnuplot"
+    "spdx": [
+      "gnuplot"
+    ]
   },
   "name": "Gnuplot license",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Gnuplot"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#gnuplot",
+    "http://directory.fsf.org/wiki/License:Gnuplot"
+  ]
 }

@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "OpenSSL"
+    "spdx": [
+      "OpenSSL"
+    ]
   },
   "name": "OpenSSL license",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:OpenSSL"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#OpenSSL",
+    "http://directory.fsf.org/wiki/License:OpenSSL"
+  ]
 }

@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Oculus_VR_Rift_SDK_License"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#OculusRift",
+    "http://directory.fsf.org/wiki/License:Oculus_VR_Rift_SDK_License"
+  ]
 }

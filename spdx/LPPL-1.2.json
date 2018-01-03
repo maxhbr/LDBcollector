@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "LPPL-1.2"
+    "spdx": [
+      "LPPL-1.2"
+    ]
   },
   "name": "LaTeX Project Public License 1.2",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:LPPLv1.2"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#LPPL-1.2",
+    "http://directory.fsf.org/wiki/License:LPPLv1.2"
+  ]
 }

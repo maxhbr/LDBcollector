@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "https://web.archive.org/web/19981206111937/http://www.opencontent.org/opl.shtml"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#OpenContentL",
+    "https://web.archive.org/web/19981206111937/http://www.opencontent.org/opl.shtml"
+  ]
 }

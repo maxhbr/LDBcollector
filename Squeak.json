@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Squeak-old"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Squeak",
+    "http://directory.fsf.org/wiki/License:Squeak-old"
+  ]
 }

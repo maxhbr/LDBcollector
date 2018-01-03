@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "AGPL-1.0"
+    "spdx": [
+      "AGPL-1.0"
+    ]
   },
   "name": "Affero General Public License version 1",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:AGPLv1"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#AGPLv1.0",
+    "http://directory.fsf.org/wiki/License:AGPLv1"
+  ]
 }

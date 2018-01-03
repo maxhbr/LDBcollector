@@ -1,9 +1,14 @@
 {
   "identifiers": {
-    "spdx": "CPOL-1.02"
+    "spdx": [
+      "CPOL-1.02"
+    ]
   },
   "name": "Code Project Open License, version 1.02",
   "tags": [
     "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#cpol"
   ]
 }

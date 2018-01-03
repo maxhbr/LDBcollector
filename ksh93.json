@@ -2,5 +2,8 @@
   "name": "Old license of ksh93",
   "tags": [
     "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ksh93"
   ]
 }

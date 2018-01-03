@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "Apache-1.1"
+    "spdx": [
+      "Apache-1.1"
+    ]
   },
   "name": "Apache License, Version 1.1",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:Apache1.1"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#apache1.1",
+    "http://directory.fsf.org/wiki/License:Apache1.1"
+  ]
 }

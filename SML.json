@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:SimpleM"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#SML",
+    "http://directory.fsf.org/wiki/License:SimpleM"
+  ]
 }

@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "EFL-2.0"
+    "spdx": [
+      "EFL-2.0"
+    ]
   },
   "name": "Eiffel Forum License, version 2",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:EFLv2"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Eiffel",
+    "http://directory.fsf.org/wiki/License:EFLv2"
+  ]
 }

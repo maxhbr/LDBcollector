@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "BSD-3-Clause"
+    "spdx": [
+      "BSD-3-Clause"
+    ]
   },
   "name": "Modified BSD license",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki/License:BSD_3Clause"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#ModifiedBSD",
+    "http://directory.fsf.org/wiki/License:BSD_3Clause"
+  ]
 }

@@ -1,9 +1,14 @@
 {
   "identifiers": {
-    "spdx": "NONE"
+    "spdx": [
+      "NONE"
+    ]
   },
   "name": "No license",
   "tags": [
     "non-free"
+  ],
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#NoLicense"
   ]
 }

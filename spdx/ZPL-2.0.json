@@ -1,6 +1,8 @@
 {
   "identifiers": {
-    "spdx": "ZPL-2.0"
+    "spdx": [
+      "ZPL-2.0"
+    ]
   },
   "name": "Zope Public License, versions 2.0 and 2.1",
   "tags": [
@@ -8,5 +10,8 @@
     "gpl-3-compatible",
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki?title=License:ZopePLv2.1"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Zope2.0",
+    "http://directory.fsf.org/wiki?title=License:ZopePLv2.1"
+  ]
 }

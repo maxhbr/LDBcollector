@@ -3,5 +3,8 @@
   "tags": [
     "non-free"
   ],
-  "uri": "http://web.archive.org/web/20050317081359/http://www.jahia.org/jahia/page145.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#Jahia",
+    "http://web.archive.org/web/20050317081359/http://www.jahia.org/jahia/page145.html"
+  ]
 }

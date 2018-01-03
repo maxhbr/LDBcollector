@@ -3,5 +3,8 @@
   "tags": [
     "libre"
   ],
-  "uri": "https://www.gnu.org/licenses/dsl.html"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#dsl",
+    "https://www.gnu.org/licenses/dsl.html"
+  ]
 }

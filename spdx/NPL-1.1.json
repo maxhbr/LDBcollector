@@ -1,10 +1,15 @@
 {
   "identifiers": {
-    "spdx": "NPL-1.1"
+    "spdx": [
+      "NPL-1.1"
+    ]
   },
   "name": "Netscape Public License (NPL)",
   "tags": [
     "libre"
   ],
-  "uri": "http://directory.fsf.org/wiki?title=License:NPLv1.1"
+  "uris": [
+    "https://www.gnu.org/licenses/license-list.html#NPL",
+    "http://directory.fsf.org/wiki?title=License:NPLv1.1"
+  ]
 }
