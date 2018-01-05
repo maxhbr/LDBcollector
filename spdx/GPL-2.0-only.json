@@ -1,4 +1,5 @@
 {
+  "id": "GPLv2",
   "identifiers": {
     "spdx": [
       "GPL-2.0-or-later",

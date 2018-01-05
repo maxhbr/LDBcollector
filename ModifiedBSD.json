@@ -1,4 +1,5 @@
 {
+  "id": "ModifiedBSD",
   "identifiers": {
     "spdx": [
       "BSD-3-Clause"

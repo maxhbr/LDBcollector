@@ -1,4 +1,5 @@
 {
+  "id": "PerlLicense",
   "name": "License of Perl 5 and below",
   "tags": [
     "gpl-2-compatible",

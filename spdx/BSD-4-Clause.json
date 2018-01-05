@@ -1,4 +1,5 @@
 {
+  "id": "OriginalBSD",
   "identifiers": {
     "spdx": [
       "BSD-4-Clause"

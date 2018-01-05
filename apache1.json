@@ -1,4 +1,5 @@
 {
+  "id": "apache1",
   "identifiers": {
     "spdx": [
       "Apache-1.0"

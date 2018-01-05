@@ -1,4 +1,5 @@
 {
+  "id": "newOpenLDAP",
   "identifiers": {
     "spdx": [
       "OLDAP-2.7"

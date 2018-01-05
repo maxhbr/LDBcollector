@@ -1,4 +1,5 @@
 {
+  "id": "BerkeleyDB",
   "identifiers": {
     "spdx": [
       "Sleepycat"

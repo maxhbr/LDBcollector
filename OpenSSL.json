@@ -1,4 +1,5 @@
 {
+  "id": "OpenSSL",
   "identifiers": {
     "spdx": [
       "OpenSSL"

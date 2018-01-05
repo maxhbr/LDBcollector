@@ -1,4 +1,5 @@
 {
+  "id": "bittorrent",
   "identifiers": {
     "spdx": [
       "BitTorrent-1.1"
