@@ -43,51 +43,60 @@ for id, details in license_details.items():
 # generate from sources
 def license_matrix():
     return [
-        (('proapse', 6), ('unmodified', 3), ('independent', 3),
-         ('4yourself', 1), ('any', 1), '01'),
+        (('proapse', 7), ('unmodified', 3), ('independent', 3),
+         ('4yourself', 1), ('any', 1), ('any', 1), '01'),
 
         (None, None, None,
-         ('2others', 2), ('sources', 1), '02S'),
+         ('2others', 2), ('sources', 1), ('any', 1), '02S'),
 
         (None, None, None,
-         None, ('binaries', 1), '02B'),
+         None, ('binaries', 1), ('any', 1), '02B'),
 
-        (None, ('modified', 3), ('independent', 3),
-         ('4yourself', 1), ('any', 1), '03'),
+        (None, ('modified', 4), ('independent', 4),
+         ('4yourself', 2), ('any', 2), ('onlyLocal', 1), '03L'),
 
-        (None, None, None,
-         ('2others', 2), ('sources', 1), '04S'),
-
-        (None, None, None,
-         None, ('binaries', 1), '04B'),
-
-        (('snimoli', 10), ('unmodified', 5), ('independent', 2),
-         ('2others', 2), ('sources', 1), '05S'),
+        (None, None, None, None, None,
+         ('viaInternet', 1), '03N'),
 
         (None, None, None,
-         None, ('binaries', 1), '05B'),
-
-        (None, None, ('embedded', 3),
-         ('4yourself', 1), ('any', 1), '06'),
+         ('2others', 2), ('sources', 1), ('any', 1), '04S'),
 
         (None, None, None,
-         ('2others', 2), ('sources', 1), '07S'),
+         None, ('binaries', 1), ('any', 1), '04B'),
+
+        (('snimoli', 12), ('unmodified', 6), ('independent', 2),
+         ('2others', 2), ('sources', 1), ('any', 1), '05S'),
 
         (None, None, None,
-         None, ('binaries', 1), '07B'),
+         None, ('binaries', 1), ('any', 1), '05B'),
 
-        (None, ('modified', 5), ('independent', 2),
-         ('2others', 2), ('sources', 1), '08S'),
+        (None, None, ('embedded', 4),
+         ('4yourself', 2), ('any', 2), ('onlyLocally', 1), '06L'),
 
-        (None, None, None,
-         None, ('binaries', 1), '08B'),
-
-        (None, None, ('embedded', 3),
-         ('4yourself', 1), ('any', 1), '09'),
+        (None, None, None, None, None,
+         ('viaInternet', 1), '06N'),
 
         (None, None, None,
-         ('2others', 2), ('sources', 1), '10S'),
+         ('2others', 2), ('sources', 1), ('any', 1), '07S'),
 
         (None, None, None,
-         None, ('binaries', 1), '10B'),
+         None, ('binaries', 1), ('any', 1), '07B'),
+
+        (None, ('modified', 6), ('independent', 2),
+         ('2others', 2), ('sources', 1), ('any', 1), '08S'),
+
+        (None, None, None,
+         None, ('binaries', 1), ('any', 1), '08B'),
+
+        (None, None, ('embedded', 4),
+         ('4yourself', 2), ('any', 2), ('onlyLocally', 1), '09s'),
+
+        (None, None, None, None, None,
+         ('viaInternet', 1), '09N'),
+
+        (None, None, None,
+         ('2others', 2), ('sources', 1), ('any', 1), '10S'),
+
+        (None, None, None,
+         None, ('binaries', 1), ('any', 1), '10B'),
     ]
