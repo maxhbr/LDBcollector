@@ -14,7 +14,7 @@ from .version import __version__ as oscad_version
 from .util import is_application_url
 
 PLANNED_LICENSES = sorted(['CDDL-1.0', 'ZLIB'])
-DEFAULT_LICENSE = 'GPLv2.0'
+DEFAULT_LICENSE = 'GPL-2.0'
 
 
 def translation_texts_for_osuc(request, osuc):
@@ -51,6 +51,13 @@ def translation_texts_for_osuc(request, osuc):
         context = _('embedded')
         context_suffix = _('in my own software development')
 
+    if osuc.ioaccess == 'onlyLocal':
+        ioaccess = _('locally')
+    elif osuc.ioaccess == 'viaInternet':
+        ioaccess = _('over the internet')
+    elif osuc.ioaccess is None:
+        ioaccess = None
+
     return {
         'type_': type_,
         'state_article': state_article,
@@ -59,6 +66,7 @@ def translation_texts_for_osuc(request, osuc):
         'context_': context,
         'context_suffix': context_suffix,
         'recipient': recipient,
+        'ioaccess': ioaccess,
     }
 
 
@@ -196,13 +204,13 @@ def result(request):
         osuc = OSUC.from_number(osuc_number)
 
     else:
-        recipient, type_, state, form, context = extract_params(
+        recipient, type_, state, form, context, ioaccess = extract_params(
             request,
-            ['recipient', 'type', 'state', 'form', 'context']
+            ['recipient', 'type', 'state', 'form', 'context', 'ioaccess']
         )
 
         osuc = OSUC.from_attrs(recipient=recipient, type=type_, state=state,
-                               form=form, context=context)
+                               form=form, context=context, ioaccess=ioaccess)
 
     if osuc is None:
         raise exceptions.InvalidParameterCombination()

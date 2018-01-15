@@ -62,6 +62,17 @@
         Given you want to (re)distribute an open source based work [2others], do you focus on distributing the {binaries} or the {sources}?
         {%- endtrans -%}
         {%- endcall -%}
+
+        {%- call question(_('IoAccess'), 'ioaccess', [('onlyLocally', true), ('viaInternet', false)]) -%}
+        {%- trans -%}
+        Given you are using open source software [4yourself] by executing a
+        modified os program [modified] or by creating & executing a program using
+        an os library [embedded], does this program consume or produce data {only locally} or {via internet}?
+        {%- endtrans -%}
+        {%- endcall -%}
+      </table>
+      <table class="table">
+        <thead>
         <tr>
           <td>{{ _('License') }}</td>
           <td>

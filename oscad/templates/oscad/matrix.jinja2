@@ -1,8 +1,17 @@
 {%- extends 'baserequest.jinja2' -%}
 
 {%- block request -%}
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+      <div class="alert alert-warning">
+        Warning! The matrix request has not yet been adapter for OSLiC 1.0 and
+        lacks the IoAccess selection.
+      </div>
+  </div>
+</div>
 <div class="table-responsive">
   <form method="POST" action="{{ request.route_path('result') }}">
+    <input type="hidden" name="ioaccess" value="onlyLocal" />
     <table class="table table-striped table-hover">
       <thead>
         <tr>

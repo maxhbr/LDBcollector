@@ -7,7 +7,7 @@ __all__ = ['OSUC', 'LSUC']
 
 class OSUC(object):
     def __init__(self, number, name, description, type, state, form, context,
-                 recipient):
+                 recipient, ioaccess):
         self.number = number
         self.name = name
         self.description = description
@@ -16,6 +16,7 @@ class OSUC(object):
         self.form = form
         self.context = context
         self.recipient = recipient
+        self.ioaccess = ioaccess
 
     def __str__(self):
         return ('<OSUC {name} t={type} s={state}'
@@ -35,6 +36,7 @@ class OSUC(object):
                 form = candidate.get('form', 'any')
                 context = candidate['context']
                 recipient = candidate['recipient']
+                ioaccess = candidate.get('ioaccess')
                 break
 
         return cls(name=store['name'],
@@ -44,11 +46,12 @@ class OSUC(object):
                    state=state,
                    form=form,
                    context=context,
-                   recipient=recipient)
+                   recipient=recipient,
+                   ioaccess=ioaccess)
 
     @classmethod
     def from_attrs(cls, type=None, state=None, form=None, context=None,
-                   recipient=None):
+                   recipient=None, ioaccess=None):
 
         for candidate in data.licensenames:
             t = candidate['type']
@@ -71,7 +74,8 @@ class OSUC(object):
                            state=state,
                            form=form,
                            context=context,
-                           recipient=recipient)
+                           recipient=recipient,
+                           ioaccess=ioaccess)
 
     def get_lsuc(self, license):
 

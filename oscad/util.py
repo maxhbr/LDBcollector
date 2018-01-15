@@ -36,6 +36,12 @@ def htmlize(text, tag='b', begin='{', end='}'):
     return escaped.replace(begin, begin_tag).replace(end, end_tag)
 
 
+def strip_if_empty(text):
+    if text.isspace():
+        return ''
+    return text
+
+
 def load_themes(config, settings):
     for theme in settings.get('themes', '').split():
         config.override_asset('oscad:templates/', '%s:templates/' % theme)

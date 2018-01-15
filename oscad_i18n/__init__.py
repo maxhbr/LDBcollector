@@ -5,7 +5,7 @@ from pyramid.interfaces import (
     ILocalizer,
     ITranslationDirectories,
     )
-from babel.core import Locale
+from babel.core import Locale, UnknownLocaleError
 from babel.support import Format
 from zope.interface import Interface
 
@@ -58,7 +58,10 @@ def make_localizer(current_locale_name, translation_directories, domain=None):
     corresponding to the provided locale name from the
     translations found in the list of translation directories."""
 
-    locale = Locale.parse(current_locale_name)
+    try:
+        locale = Locale.parse(current_locale_name)
+    except UnknownLocaleError:
+        locale = Locale.parse('en')
 
     translations = Translations(domain=domain)
     translations._catalog = {}

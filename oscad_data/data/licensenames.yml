@@ -2,6 +2,13 @@
   state: unmodified
   context: independent
   recipient: 4yourself
+  ioaccess: onlyLocal
+  osuc: "01"
+- type: proapse
+  state: unmodified
+  context: independent
+  recipient: 4yourself
+  ioaccess: viaInternet
   osuc: "01"
 - type: proapse
   state: unmodified
@@ -19,7 +26,14 @@
   state: modified
   context: independent
   recipient: 4yourself
-  osuc: "03"
+  ioaccess: onlyLocal
+  osuc: "03L"
+- type: proapse
+  state: modified
+  context: independent
+  recipient: 4yourself
+  ioaccess: viaInternet
+  osuc: "03N"
 - type: proapse
   state: modified
   context: independent
@@ -49,7 +63,14 @@
   state: unmodified
   context: embedded
   recipient: 4yourself
-  osuc: "06"
+  ioaccess: onlyLocal
+  osuc: "06L"
+- type: snimoli
+  state: unmodified
+  context: embedded
+  recipient: 4yourself
+  ioaccess: viaInternet
+  osuc: "06N"
 - type: snimoli
   state: unmodified
   context: embedded
@@ -78,7 +99,14 @@
   state: modified
   context: embedded
   recipient: 4yourself
-  osuc: "09"
+  ioaccess: onlyLocal
+  osuc: "09L"
+- type: snimoli
+  state: modified
+  context: embedded
+  recipient: 4yourself
+  ioaccess: viaInternet
+  osuc: "09N"
 - type: snimoli
   state: modified
   context: embedded

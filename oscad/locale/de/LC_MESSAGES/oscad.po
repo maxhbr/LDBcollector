@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: oscad 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-04-23 13:05+0000\n"
+"POT-Creation-Date: 2016-04-14 11:11+0000\n"
 "PO-Revision-Date: 2014-03-13 15:42+0100\n"
 "Last-Translator: Kristian Schuhmacher - Amadeus IT Group "
 "<kristian.schuhmacher@de.amadeus.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: oscad/__init__.py:24
+#: oscad/__init__.py:29
 msgid "your legal expert"
 msgstr "ihren Rechtsexperten"
 
@@ -106,16 +106,24 @@ msgstr "eingebettet"
 msgid "in my own software development"
 msgstr "bei meiner eigenen Softwareentwicklung"
 
-#: oscad/views.py:240
+#: oscad/views.py:54
+msgid "locally"
+msgstr "lokal"
+
+#: oscad/views.py:56
+msgid "over the internet"
+msgstr "über das Internet"
+
+#: oscad/views.py:275
 #, python-format
 msgid "Missing parameter: %(param)s"
 msgstr "Fehlender Parameter: %(param)s"
 
-#: oscad/views.py:247
+#: oscad/views.py:282
 msgid "The combination of parameters you have entered is invalid"
 msgstr "Die Kombination der eingegebenen Parameter ist ungültig"
 
-#: oscad/views.py:255
+#: oscad/views.py:290
 #, python-format
 msgid ""
 "The license \"%(license)s\" you have entered is not covered by this "
@@ -135,7 +143,7 @@ msgstr "Diese Seite basiert auf Version %(oscad_version)s der OSCAd software."
 
 #: oscad/templates/oscad/about.jinja2:37
 #: oscad/templates/oscad/components.jinja2:23
-#: oscad/templates/oscad/request.jinja2:66
+#: oscad/templates/oscad/request.jinja2:77
 msgid "License"
 msgstr "Lizenz"
 
@@ -243,7 +251,7 @@ msgstr "Wir bedanken uns für die großzügige Unterstützung durch"
 msgid "Sponsoring Companies"
 msgstr "Unterstützende Firmen"
 
-#: oscad/templates/oscad/baserequest.jinja2:19
+#: oscad/templates/oscad/baserequest.jinja2:30
 msgid ""
 "What do I have to do for using or distributing a piece of open source "
 "software in accordance to specific open source license &mdash; as a "
@@ -320,7 +328,7 @@ msgstr "Leere Vorlage (englisch)"
 msgid "Parameters"
 msgstr "Parameter"
 
-#: oscad/templates/oscad/help.jinja2:16 oscad/templates/oscad/matrix.jinja2:10
+#: oscad/templates/oscad/help.jinja2:16 oscad/templates/oscad/matrix.jinja2:19
 #: oscad/templates/oscad/request.jinja2:36
 msgid "Type"
 msgstr "Typ"
@@ -347,7 +355,7 @@ msgstr ""
 "vereinzelte Codeteile (snippets), Module, Bibliotheken oder PlugIns "
 "handelt [snimoli]."
 
-#: oscad/templates/oscad/help.jinja2:25 oscad/templates/oscad/matrix.jinja2:12
+#: oscad/templates/oscad/help.jinja2:25 oscad/templates/oscad/matrix.jinja2:21
 #: oscad/templates/oscad/request.jinja2:42
 msgid "Context"
 msgstr "Kontext"
@@ -413,7 +421,7 @@ msgstr ""
 "Bibliotheken mit ausgeliefert, so sind Sie diesem Fall als unabhängige "
 "Softwarekomponenten zu behandeln. "
 
-#: oscad/templates/oscad/help.jinja2:58 oscad/templates/oscad/matrix.jinja2:11
+#: oscad/templates/oscad/help.jinja2:58 oscad/templates/oscad/matrix.jinja2:20
 #: oscad/templates/oscad/request.jinja2:48
 msgid "State"
 msgstr "Zustand"
@@ -446,7 +454,7 @@ msgstr ""
 "Hinweis: wenn nur Konfigurationsdateien einer Software verändert werden, "
 "so gilt das nicht als Veränderung der Open Source Software selbst!"
 
-#: oscad/templates/oscad/help.jinja2:75 oscad/templates/oscad/matrix.jinja2:13
+#: oscad/templates/oscad/help.jinja2:75 oscad/templates/oscad/matrix.jinja2:22
 #: oscad/templates/oscad/request.jinja2:54
 msgid "Recipient"
 msgstr "Empfänger"
@@ -478,7 +486,7 @@ msgstr ""
 "weitergereicht werden (verkauft oder unentgeltlich), dann handelt es sich"
 " um eine Weitergabe an Dritte (2others)."
 
-#: oscad/templates/oscad/help.jinja2:85 oscad/templates/oscad/matrix.jinja2:14
+#: oscad/templates/oscad/help.jinja2:85 oscad/templates/oscad/matrix.jinja2:23
 #: oscad/templates/oscad/request.jinja2:60
 msgid "Form"
 msgstr "Form"
@@ -501,11 +509,23 @@ msgstr ""
 "Softwareprodukten unterschiedliche Vorgehensweisen vor, je nachdem ob, "
 "Quellcode oder ausführbare Programme genutzt oder weitergegeben werden. "
 
-#: oscad/templates/oscad/matrix.jinja2:42
+#: oscad/templates/oscad/help.jinja2:96
+msgid "Access"
+msgstr "Zugriff"
+
+#: oscad/templates/oscad/help.jinja2:97
+msgid "What does this mean: viaInternet or onlyLocally"
+msgstr "Was bedeutet dies: viaInternet oder onlyLocally?"
+
+#: oscad/templates/oscad/help.jinja2:99
+msgid "FIXME: clarify viaInternet and onlyLocally"
+msgstr ""
+
+#: oscad/templates/oscad/matrix.jinja2:51
 msgid "Known licenses"
 msgstr "Bekannte Lizenzen"
 
-#: oscad/templates/oscad/matrix.jinja2:59
+#: oscad/templates/oscad/matrix.jinja2:68
 msgid "Planned licenses"
 msgstr "Geplante Lizenzen"
 
@@ -573,21 +593,39 @@ msgstr ""
 " wird dies als Quellcode ({sources}) oder Binärdateien ({binaries}) "
 "geschehen?"
 
-#: oscad/templates/oscad/request.jinja2:68
+#: oscad/templates/oscad/request.jinja2:66
+msgid "IoAccess"
+msgstr "Ein-/Ausgabezugriff"
+
+#: oscad/templates/oscad/request.jinja2:67
+msgid ""
+"Given you are using open source software [4yourself] by executing a\n"
+"        modified os program [modified] or by creating & executing a "
+"program using\n"
+"        an os library [embedded], does this program consume or produce "
+"data {only locally} or {via internet}?"
+msgstr ""
+"Angenommen, Sie nutzen ein Open Source Werk [4yourself] indem sie eine "
+"modifizierte Fassung ausführen [modified] oder durch die Erstellung und "
+"Ausführung eines Programmes, das eine Open Source Bibliothek nutzt "
+"[embedded], werden die Ein- und Ausgabe des Programmes nur lokal ({only "
+"Locally}) oder über das Internet ({via internet}) durchgeführt?"
+
+#: oscad/templates/oscad/request.jinja2:79
 msgid "Under which open source license is the software released you want to use?"
 msgstr ""
 "Unter welcher Open Source Lizenz wurde die zu nutzende Software "
 "veröffentlicht?"
 
-#: oscad/templates/oscad/request.jinja2:75
+#: oscad/templates/oscad/request.jinja2:86
 msgid "known"
 msgstr "bekannt"
 
-#: oscad/templates/oscad/request.jinja2:95
+#: oscad/templates/oscad/request.jinja2:106
 msgid "planned"
 msgstr "geplant"
 
-#: oscad/templates/oscad/request.jinja2:114
+#: oscad/templates/oscad/request.jinja2:125
 msgid "Submit request"
 msgstr "Anfrage abschicken"
 
@@ -623,40 +661,41 @@ msgstr "Anfrage:"
 #: oscad/templates/oscad/result.jinja2:25
 #, python-format
 msgid ""
-"Provided I want to %(recipient)s %(state_article)s %(state)s open source "
-"%(type)s in the form of %(form)s as an %(context)s %(context_suffix)s, "
-"what do I have to do for acting in accordance to the %(license)s?"
+"Provided I want to %(recipient)s %(state_article)s %(state)s open\n"
+"      source %(type)s in the form of %(form)s as an %(context)s "
+"%(context_suffix)s %(ioaccess)s, what do I have to do for acting in "
+"accordance to the %(license)s?"
 msgstr ""
 "Angenommen, ich will %(state_article)s %(state)s Open Source %(type)s in "
-"Form von %(form)s als %(context)s %(context_suffix)s %(recipient)s, was "
+"Form von %(form)s als %(context)s %(context_suffix)s %(recipient)s %(ioaccess)s, was "
 "muss ich tun um den Bedingungen der %(license)s zu entsprechen?"
 
-#: oscad/templates/oscad/result.jinja2:37
+#: oscad/templates/oscad/result.jinja2:40
 msgid "refers to"
 msgstr "bezieht sich auf"
 
-#: oscad/templates/oscad/result.jinja2:55
+#: oscad/templates/oscad/result.jinja2:58
 #, python-format
 msgid "connotes w.r.t. %(lsuc_name)s:"
 msgstr "bedeutet in Bezug auf %(lsuc_name)s:"
 
-#: oscad/templates/oscad/result.jinja2:66
+#: oscad/templates/oscad/result.jinja2:69
 msgid "requires:"
 msgstr "verlangt:"
 
-#: oscad/templates/oscad/result.jinja2:76
+#: oscad/templates/oscad/result.jinja2:79
 msgid "mandatory:"
 msgstr "obligatorisch:"
 
-#: oscad/templates/oscad/result.jinja2:87
+#: oscad/templates/oscad/result.jinja2:90
 msgid "voluntary:"
 msgstr "freiwillig:"
 
-#: oscad/templates/oscad/result.jinja2:98
+#: oscad/templates/oscad/result.jinja2:101
 msgid "forbids:"
 msgstr "verbietet:"
 
-#: oscad/templates/oscad/result.jinja2:121
+#: oscad/templates/oscad/result.jinja2:124
 #, python-format
 msgid ""
 "Background information: For a deeper understanding of the reasons why "
@@ -673,7 +712,7 @@ msgstr ""
 "Weitere Informationen zu der Schutzwirkung von %(lsuc_license_name)s "
 "können Sie im OSLiC Kapitel %(lsuc_oslic_protection)s nachlesen."
 
-#: oscad/templates/oscad/result.jinja2:131
+#: oscad/templates/oscad/result.jinja2:134
 #, python-format
 msgid ""
 "Concerning the open source use cases in general, see OSLiC chapter "
