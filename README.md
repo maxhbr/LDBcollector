@@ -80,21 +80,21 @@ This check is executed by [Taskotron](https://fedoraproject.org/wiki/Taskotron),
 ### Running locally
 
 You can run the same locally by running the ansible playbook. Execute the
-following command as root (don't do this on a production machine!)::
+following command as root (don't do this on a production machine!):
 
-  $ ansible-playbook tests.yml -e taskotron_item=<distgit_id>
+    $ ansible-playbook tests.yml -e taskotron_item=<distgit_id>
 
-and replace ``<distgit_id>`` with value in the form of ``namespace/name#gitref``.
+and replace `<distgit_id>` with value in the form of `namespace/name#gitref`.
 
-For example::
+For example:
 
-  $ ansible-playbook tests.yml -e taskotron_item=modules/perl-bootstrap#cb3ea78913715df3e5b44e91ec2e464a61be918d
+    $ ansible-playbook tests.yml -e taskotron_item=modules/perl-bootstrap#cb3ea78913715df3e5b44e91ec2e464a61be918d
 
-You can see the results in ``./artifacts/`` directory.
+You can see the results in `./artifacts/` directory.
 
-Alternatively you can run the task through Taskotron runner::
+Alternatively you can run the task through Taskotron runner:
 
-  $ runtask --item <distgit_id> --type dist_git_commit check_modulemd/
+    $ runtask --item <distgit_id> --type dist_git_commit check_modulemd/
 
-Don't forget to use ``--ssh`` or ``--libvirt``, otherwise you need to run this
+Don't forget to use `--ssh` or `--libvirt`, otherwise you need to run this
 as root (not recommended).
