@@ -1,0 +1,58 @@
+---
+- hosts: localhost
+  remote_user: root
+  vars:
+    artifacts: ./artifacts
+    testcase: dist.modulemd
+    taskotron_generic_task: true
+  tasks:
+    - name: Install required packages
+      dnf:
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - python2-pdc-client
+        - python2-aexpect
+        - python2-modulemd
+        - python2-requests
+        - python2-enchant
+        - hunspell-en-US
+        - libtaskotron-core
+        - libtaskotron-fedora
+
+    - name: Install avocado from updates-testing
+      dnf:
+        name: "{{ item }}"
+        state: latest
+        enablerepo: updates-testing
+      with_items:
+        - python2-avocado
+        - python2-avocado-plugins-varianter-yaml-to-mux
+
+    - name: Enable MTF Copr repo
+      shell: dnf copr -y enable phracek/Modularity-testing-framework
+
+    - name: Install MTF from updates-testing
+      dnf:
+        name: modularity-testing-framework
+        state: latest
+        enablerepo: updates-testing
+
+    - name: Make sure taskotron results dir exists
+      # this is for placing results.yml file
+      file:
+        path: "{{ artifacts }}/taskotron"
+        state: directory
+
+    - name: Create work dir
+      tempfile:
+        path: /var/tmp
+        state: directory
+        prefix: task-{{ testcase }}_
+      register: workdir
+
+    - name: Run the check
+      shell: >
+        ./run_check.py {{ taskotron_item }} {{ workdir.path }}
+        {{ artifacts }} {{ testcase }}
+        &> {{ artifacts }}/test.log

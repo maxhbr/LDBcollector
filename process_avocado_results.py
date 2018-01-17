@@ -42,7 +42,10 @@ def sanitize(testname):
 
 
 def run(item, item_type, checkname, workdir='.', artifactsdir='artifacts'):
-    '''The main method to run from Taskotron'''
+    '''The main method to run from Taskotron
+
+    :return: True if all checks passed, False otherwise
+    '''
 
     if not os.path.exists(artifactsdir):
         os.makedirs(artifactsdir)
@@ -60,8 +63,18 @@ def run(item, item_type, checkname, workdir='.', artifactsdir='artifacts'):
 
     # 3. Massage avocado results into a format suitable for resultsdb/taskotron
     details = list(massage_results(results, checkname, item, item_type, artifactsdir))
-    output = check.export_YAML(details)
-    return output
+
+    # 4. Save resultyaml
+    save_resultyaml(details=details, artifactsdir=artifactsdir)
+
+    # compute return value
+    main_detail = [ detail for detail in details
+                    if detail.checkname == checkname ]
+    assert len(main_detail) == 1
+    main_detail = main_detail[0]
+    all_passed = True if main_detail.outcome in ['PASSED', 'INFO'] else False
+
+    return all_passed
 
 
 def read_results(workdir):
@@ -145,6 +158,17 @@ def massage_results(results, checkname, item, item_type, log_path):
         checkname=checkname,
         artifact=log_path,
     )
+
+
+def save_resultyaml(details, artifactsdir):
+    '''Save result.yaml in artifactsdir/taskotron.
+
+    :param details: list of CheckDetail
+    '''
+    resultyaml = check.export_YAML(details)
+    results_path = os.path.join(artifactsdir, 'taskotron', 'results.yml')
+    with open(results_path, 'w') as results_file:
+        results_file.write(resultyaml)
 
 
 if __name__ == '__main__':
