@@ -97,4 +97,5 @@ Alternatively you can run the task through Taskotron runner:
     $ runtask --item <distgit_id> --type dist_git_commit check_modulemd/
 
 Don't forget to use `--ssh` or `--libvirt`, otherwise you need to run this
-as root (not recommended).
+as root (not recommended). See
+[Taskotron documentation](https://qa.fedoraproject.org/docs/libtaskotron/latest/runningtasks.html).
