@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   remote_user: root
+  gather_facts: no
   vars:
     artifacts: ./artifacts
     testcase: dist.modulemd
