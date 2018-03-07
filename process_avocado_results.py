@@ -19,7 +19,7 @@ import shutil
 
 from libtaskotron import check
 
-log = logging.getLogger('modulemd')
+log = logging.getLogger('check_modulemd.process_results')
 log.setLevel(logging.DEBUG)
 log.addHandler(logging.NullHandler())
 

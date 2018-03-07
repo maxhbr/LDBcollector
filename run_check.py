@@ -7,9 +7,15 @@ through Taskotron.'''
 import os
 import sys
 import subprocess
+import logging
 from libtaskotron.directives import distgit_directive
 
 import process_avocado_results as process
+
+log = logging.getLogger('check_modulemd')
+log.setLevel(logging.DEBUG)
+log.addHandler(logging.NullHandler())
+
 
 def split_item(item):
     '''split up dist_git_commit string from namespace/name#gitref to a dict,
@@ -28,7 +34,7 @@ def download_modulemd(namespace, name, gitref, workdir):
     '''
     localpath = 'download/{}.yaml'.format(name)
     modulemd_file = os.path.abspath(os.path.join(workdir, localpath))
-    print 'Downloading modulemd into {} ...'.format(modulemd_file)
+    log.info('Downloading modulemd into {} ...'.format(modulemd_file))
 
     distgit = distgit_directive.DistGitDirective()
     params = {'package': name,
@@ -42,32 +48,35 @@ def download_modulemd(namespace, name, gitref, workdir):
     arg_data = {'workdir': None}
     distgit.process(params, arg_data)
 
-    print 'Downloading complete'
+    log.debug('Downloading complete')
     return modulemd_file
 
 def run_avocado(workdir, modulemd_file):
     '''Run avocado modulemd validity test. Ignore exit code.'''
-    print 'Running avocado...'
+    log.info('Running avocado...')
     retcode = subprocess.call(
         ['avocado', 'run', 'check_modulemd.py',
          '--job-results-dir', workdir,
          '--mux-inject', 'run:modulemd:{}'.format(modulemd_file)])
-    print 'Avocado run ended with exit code {}'.format(retcode)
+    log.info('Avocado run ended with exit code {}'.format(retcode))
 
 def process_results(item, testcase, workdir, artifactsdir):
     '''Process avocado run output, for ResultsDB
 
     :return: True if all checks passed, False otherwise
     '''
-    print 'Processing avocado results...'
+    log.debug('Processing avocado results...')
     all_passed = process.run(item=item, item_type='dist_git_commit',
                              checkname=testcase, workdir=workdir,
                              artifactsdir=artifactsdir)
-    print 'Processing results complete, {}'.format(
-        'all checks passed' if all_passed else 'some checks failed')
+    log.info('Processing results complete, {}'.format(
+        'all checks passed' if all_passed else 'some checks failed'))
     return all_passed
 
 def main():
+    logging.basicConfig()
+    logging.getLogger('libtaskotron').setLevel(logging.DEBUG)
+
     item, workdir, artifactsdir, testcase = sys.argv[1:]
     itemdict = split_item(item)
 
@@ -78,7 +87,7 @@ def main():
                                  artifactsdir=artifactsdir)
 
     rc = 0 if all_passed else 1
-    print 'Execution complete, exiting with return code {}'.format(rc)
+    log.info('Execution complete, exiting with return code {}'.format(rc))
     sys.exit(rc)
 
 
