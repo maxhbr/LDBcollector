@@ -112,8 +112,6 @@ ihr nachgebildeten Derivate.
 1. Academic Free License (AFL) (v. 3.0): http://www.rosenlaw.com/AFL3.0.htm
 1. Apple Public Source License 1.0: https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0
 1. Beerware License: http://people.freebsd.org/~phk/
-1. /* *
---------------------------------------------------------------------------...
 1. Boost Software License (Einordnung umstritten): http://www.boost.org/LICENSE_1_0.txt
 1. CeCILL-B License: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt
 1. CNRI Open Source License Agreement: http://www.handle.net/python_licenses/python1.6_9-5-00.html
