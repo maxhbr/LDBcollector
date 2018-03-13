@@ -168,8 +168,7 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
 1. GNU General Public License (GPL) (v. 1.0): http://www.gnu.org/copyleft/copying-1.0.html
 1. GNU General Public License (GPL) (v. 2.0): http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 1. GNU General Public License (GPL) (v. 3.0): http://www.fsf.org/licensing/licenses/gpl.html
-1. GNU General Public License (GPL) (v. 3.0): http://www.gnu.de/gpl-ger.html
-1. (Inoffizielle deutsche Übersetzung)
+1. GNU General Public License (GPL) (v. 3.0): http://www.gnu.de/gpl-ger.html (Inoffizielle deutsche Übersetzung)
 1. GNU General Public License v2.0 w/Bison exception: http://spdx.org/licenses/GPL-2.0-with-bison-exception#licenseText
 1. GNU General Public License v2.0 w/Classpath exception: http://www.gnu.org/software/classpath/license.html
 1. GNU General Public License v2.0 w/Font exception: http://www.gnu.org/licenses/gpl-faq.html#FontException
@@ -249,15 +248,12 @@ erleichtert werden.
 
 1. Apple Public Source License (v. 2.0): http://www.opensource.apple.com/apsl/2.0.txt
 1. BitTorrent Open Source License v1.0: http://spdx.org/licenses/BitTorrent-1.0#licenseText
-1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz)
-(v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf
-1. (.pdf-Dokument)
+1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
 1. CeCILL-C License: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.txt
 1. Cougaar Open Source License Agreement: http://cougaar.org/docman/view.php/17/126/old_cosl_license.html (Einordnung umstritten)
 1. GNU Lesser General Public License (LGPL) (v. 2.1): http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.org/licenses/lgpl.html
-1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.de/lgpl-ger.html
-1. ( Inoffizielle deutsche Übersetzung)
+1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.de/lgpl-ger.html (Inoffizielle deutsche Übersetzung)
 1. GNU Library General Public License (LibGPL) (v. 2.0): http://www.gnu.org/copyleft/library.html
 1. Hi-Potent Open Source License: http://web.archive.org/web/20030804175518/www.hi-potent.com/license.html
 1. Jabber Open Source License: http://archive.jabber.org/core/JOSL.pdf
@@ -283,8 +279,7 @@ Weiterentwicklungen weiterverbreitet werden können.
 1. LaTeX Project Public License (LPPL) (v. 1.0): http://www.latex-project.org/lppl/lppl-1-0.html
 1. LaTeX Project Public License (LPPL) (v. 1.1): http://www.latex-project.org/lppl/lppl-1-1.html
 1. LaTeX Project Public License (LPPL) (v. 1.2): http://www.latex-project.org/lppl/lppl-1-2.html
-1. LaTeX Project Public License (LPPL) (v. 1.3b): http://www.latex-project.org/lppl/lppl-1-3b-de.html
-1. (Inoffizielle deutsche Übersetzung)
+1. LaTeX Project Public License (LPPL) (v. 1.3b): http://www.latex-project.org/lppl/lppl-1-3b-de.html (Inoffizielle deutsche Übersetzung)
 1. LaTeX Project Public License (LPPL) (v. 1.3c): http://www.latex-project.org/lppl/lppl-1-3c.html
 1. Microsoft Public License (Ms-PL): http://www.microsoft.com/resources/sharedsource/licensingbasics/publiclicense.mspx
 1. Open Source License for Oracle Berkeley DB: http://www.oracle.com/technology/software/products/berkeley-db/htdocs/oslicense.html
@@ -400,10 +395,8 @@ Open Content Definition besteht, sind die Lizenzen sehr heterogen.
 1. Free Art License: http://artlibre.org/licence.php/lalgb.html
 1. FreeBSD Documentation License: http://www.freebsd.org/copyright/freebsd-doc-license.html
 1. GNU Free Documentation License (FDL) (v. 1.1): http://www.gnu.org/licenses/old-licenses/fdl-1.1.html
-1. GNU Free Documentation License (FDL) (v. 1.1): http://nautix.sourceforge.net/docs/fdl.de.html
-1. (inoffizielle deutsche Übersetzung)
-1. GNU Free Documentation License (FDL) (v. 1.2): http://www.giese-online.de/gnufdl-de.html
-1. (inoffizielle deutsche Übersetzung)
+1. GNU Free Documentation License (FDL) (v. 1.1): http://nautix.sourceforge.net/docs/fdl.de.html (inoffizielle deutsche Übersetzung)
+1. GNU Free Documentation License (FDL) (v. 1.2): http://www.giese-online.de/gnufdl-de.html (inoffizielle deutsche Übersetzung)
 1. GNU Free Documentation License (FDL) (v. 1.2): http://www.gnu.org/licenses/old-licenses/fdl-1.2.html
 1. GNU Free Documentation License (FDL) (v. 1.3): http://www.gnu.org/copyleft/fdl.html
 1. Guy Hoffman's license: http://www.ram.org/ramblings/philosophy/fmp/hoffman_license.html
