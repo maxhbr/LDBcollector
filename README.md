@@ -67,8 +67,7 @@ ihr nachgebildeten Derivate.
 1. FreeBSD Copyright (Modifizierte BSD-Lizenz): http://www.de.freebsd.org/copyright/freebsd-license.html
 1. Horde Apache-like License: http://www.horde.org/licenses/asl.php
 1. Horde BSD-like License: http://www.horde.org/licenses/bsdl.php
-1. Indiana University Extreme! Lab Software License, Version
-1.2: http://www.extreme.indiana.edu/license.txt
+1. Indiana University Extreme! Lab Software License, Version 1.2: http://www.extreme.indiana.edu/license.txt
 1. Intel Open Source License for CDSA/CSSM Implementation: http://www.opensource.org/licenses/intel-open-source-license.php
 1. ISC License (Bind, DHCP Server): http://www.isc.org/software/license
 1. JasPer License Version 2.0: http://www.ece.uvic.ca/~frodo/jasper/LICENSE
@@ -174,11 +173,9 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
 1. GNU General Public License v2.0 w/Bison exception: http://spdx.org/licenses/GPL-2.0-with-bison-exception#licenseText
 1. GNU General Public License v2.0 w/Classpath exception: http://www.gnu.org/software/classpath/license.html
 1. GNU General Public License v2.0 w/Font exception: http://www.gnu.org/licenses/gpl-faq.html#FontException
-1. GNU General Public License v2.0 w/GCC Runtime Library
-exception: http://www.gnu.org/licenses/gpl-faq.html
+1. GNU General Public License v2.0 w/GCC Runtime Library exception: http://www.gnu.org/licenses/gpl-faq.html
 1. GNU General Public License v3.0 w/Autoconf exception: http://www.gnu.org/licenses/autoconf-exception-3.0.html
-1. GNU General Public License v3.0 w/GCC Runtime Library
-exception: http://www.gnu.org/licenses/gcc-exception-3.1.html
+1. GNU General Public License v3.0 w/GCC Runtime Library exception: http://www.gnu.org/licenses/gcc-exception-3.1.html
 1. Honest Public License (HPL) (1.0): http://www.projectpier.org/manual/tour/licence
 1. Honest Public License (HPL) (1.1): http://www.gnugeneration.com/licenses/HPLv1.1.txt
 1. IPA Font License: http://www.opensource.org/licenses/ipafont.html
@@ -220,8 +217,7 @@ erleichtert werden.
 #### MPLartige Lizenzen
 
 1. Common Development and Distribution License (CDDL) (v. 1.0): http://oss.oracle.com/licenses/CDDL
-1. Common Development and Distribution License, Version 1.1
-(CDDL v 1.1): https://glassfish.java.net/public/CDDL+GPL_1_1.html
+1. Common Development and Distribution License, Version 1.1 (CDDL v 1.1): https://glassfish.java.net/public/CDDL+GPL_1_1.html
 1. Common Public Attribution License 1.0: http://www.opensource.org/licenses/cpal_1.0
 1. Computer Associates Trusted Open Source License 1.1: http://www.luebeckonline.com/mustervertraege/software-vertraege/open-source-lizenz/computer-associates-trusted-open-source-license-version-11.html
 1. CUA Office Public License v1.0: http://www.opensource.org/licenses/cuaoffice.php
@@ -317,8 +313,7 @@ proprietär vertrieben wurden.
 1. Open Map Software License Agreement: http://openmap.bbn.com/license.html
 1. Q Public License (QPL): http://doc.trolltech.com/4.0/qpl.html
 1. Q Public License 1.0: http://doc.qt.nokia.com/3.3/license.html
-1. RealNetworks Community Source License - Research and
-Development Use (RCSL R&D)(v 3.0): https://helixcommunity.org/content/rcsl
+1. RealNetworks Community Source License - Research and Development Use (RCSL R&D)(v 3.0): https://helixcommunity.org/content/rcsl
 1. RealNetworks Public Source License (RPSL) (v. 1.0): https://community.helixcommunity.org/content/rpsl
 
 ## Sonstige Software Lizenzen
@@ -335,8 +330,7 @@ kommerzielle Weiterverbreitung verbieten.
 1. AT&T Source Code Agreement (v. 1.2D): http://web.archive.org/web/20050424024245/http://www.research.att.com/sw/license/ast-open.html
 1. CrossPoint Quelltext Lizenz (alt): http://www.crosspoint.de/oldlicense.html
 1. Enhydra Public License (v. 1.1): http://ksoap.objectweb.org/software/license/index.html (Einordnung umstritten)
-1. Hacktivismo Enhanced-Source Software License Agreement (v.
-0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
+1. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
 1. Jahia Community Source License (JSCL) (v.012): http://www.jahia.org/jahia/Jahia/pid/145
 1. JasPer Software License (1.0): http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE
 1. Microsoft Reference License (Ms-RefL): http://www.microsoft.com/resources/sharedsource/licensingbasics/referencelicense.mspx
@@ -349,8 +343,7 @@ kommerzielle Weiterverbreitung verbieten.
 1. ShippySoft Source Available License (SSSAL): http://www.shippysoft.com/license.shtml
 1. Squeak License (Apple): http://squeak.org/SqueakLicense/
 1. Sun Community Source License: http://www.sun.com/software/jini/licensing/SCSL3_JiniTSA1.html
-1. Sun Solaris Source Code (Foundation Release) License (v.
-1.1): http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
+1. Sun Solaris Source Code (Foundation Release) License (v. 1.1): http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
 1. The Code Project Open License (CPOL) 1.02: http://www.codeproject.com/info/cpol10.aspx
 1. Truecrypt License v. 3: https://github.com/FreeApophis/TrueCrypt/blob/master/License.txt
 1. University of Utah Public License: http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt
@@ -380,22 +373,16 @@ Open Content Definition besteht, sind die Lizenzen sehr heterogen.
 1. Creative Commons Attribution Non Commercial 2.0: http://creativecommons.org/licenses/by-nc/2.0/legalcode
 1. Creative Commons Attribution Non Commercial 2.5: http://creativecommons.org/licenses/by-nc/2.5/legalcode
 1. Creative Commons Attribution Non Commercial 3.0: http://creativecommons.org/licenses/by-nc/3.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives
-1.0: http://creativecommons.org/licenses/by-nd-nc/1.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives
-2.0: http://creativecommons.org/licenses/by-nc-nd/2.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives
-2.5: http://creativecommons.org/licenses/by-nc-nd/2.5/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives
-3.0: http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode
+1. Creative Commons Attribution Non Commercial No Derivatives 1.0: http://creativecommons.org/licenses/by-nd-nc/1.0/legalcode
+1. Creative Commons Attribution Non Commercial No Derivatives 2.0: http://creativecommons.org/licenses/by-nc-nd/2.0/legalcode
+1. Creative Commons Attribution Non Commercial No Derivatives 2.5: http://creativecommons.org/licenses/by-nc-nd/2.5/legalcode
+1. Creative Commons Attribution Non Commercial No Derivatives 3.0: http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode
 1. Creative Commons Attribution Non Commercial Share Alike 1.0: http://creativecommons.org/licenses/by-nc-sa/1.0/legalcode
 1. Creative Commons Attribution Non Commercial Share Alike 2.0: http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
 1. Creative Commons Attribution Non Commercial Share Alike 2.5: http://creativecommons.org/licenses/by-nc-sa/2.5/legalcode
 1. Creative Commons Attribution Non Commercial Share Alike 3.0: http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
-1. Creative Commons Attribution NonCommercial NoDerivatives 4.0
-International: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-1. Creative Commons Attribution NonCommercial ShareAlike 4.0
-International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+1. Creative Commons Attribution NonCommercial NoDerivatives 4.0 International: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+1. Creative Commons Attribution NonCommercial ShareAlike 4.0 International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 1. Creative Commons Attribution Share Alike 1.0: http://creativecommons.org/licenses/by-sa/1.0/legalcode
 1. Creative Commons Attribution Share Alike 2.0: http://creativecommons.org/licenses/by-sa/2.0/legalcode
 1. Creative Commons Attribution Share Alike 2.5: http://creativecommons.org/licenses/by-sa/2.5/legalcode
@@ -484,8 +471,7 @@ Begriff als Entwicklerlizenzvereinbarung.
 1. Harmony Individual Contributor Assignment Agreement: http://harmonyagreements.org/docs/ha-caa-i-v1.pdf
 1. Joomla Contributor Agreement: http://developer.joomla.org/cms/contribute.html
 1. Mobile Joomla Contributor Agreement: http://www.mobilejoomla.com/documentation/13-development/45-contribution-agreement.html
-1. Novell Copyright Assignment Agreement for Open Source
-Projects: ftp://sdk.provo.novell.com/ndk/evolution/docs/copyright_form.pdf
+1. Novell Copyright Assignment Agreement for Open Source Projects: ftp://sdk.provo.novell.com/ndk/evolution/docs/copyright_form.pdf
 1. Oracle Contributor Agreement: http://www.oracle.com/technetwork/oca-405177.pdf
 1. SugarForge SugarCRM Contributor Agreement: http://www.sugarforge.org/content/community/participate/contributor-agreement.php
 1. Zimbra Individual Contributor License Agreement: http://files.zimbra.com/website/docs/Zimbra-Individual-Contributor-License-Agreement.pdf
@@ -500,6 +486,6 @@ Begriff Committer Agreement als Entwicklerrahmenvereinbarung.
 1. Debian Social Contract: https://www.debian.org/social_contract
 1. Fedora Project Contributor Agreement: https://fedoraproject.org/wiki/Legal:Fedora_Project_Contributor_Agreement#FPCA_Text
 1. Linux Developer's Certificate of Origin v. 1.1: http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/Documentation/SubmittingPatches#n358
-1. Mozilla Foundation Committer’s Agreement v2.1: https://www.mozilla.org/hacking/committer/committers-agreement.pdf
+1. Mozilla Foundation Committer's Agreement v2.1: https://www.mozilla.org/hacking/committer/committers-agreement.pdf
 
 #### BSDartige Lizenzen (Einordnung umstritten)
