@@ -56,7 +56,7 @@ ihr nachgebildeten Derivate.
 1. BSD 3-clause "New" or "Revised" License: https://spdx.org/licenses/BSD-3-Clause
 1. BSD 4-clause "Original" or "Old" License: https://www.freebsd.org/copyright/license.html
 1. Christian Software Public License: http://pudge.net/jesux/cspl.html
-1. Cougaar Open Source License: http://cougaar.org/twiki/bin/view/Main/LicenseText (Einordnung umstritten)
+1. Cougaar Open Source License: https://web.archive.org/web/20100818181228/http://cougaar.org/twiki/bin/view/Main/LicenseText
 1. Cryptix General License: http://www.cryptix.org/LICENSE.TXT
 1. Eiffel Forum License (v. 1.0): http://www.eiffel-nice.org/license/forum.txt
 1. Eiffel Forum License (v. 2.0): http://www.eiffel-nice.org/license/eiffel-forum-license-2.html
