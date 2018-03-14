@@ -72,34 +72,31 @@ ihr nachgebildeten Derivate.
 1. MIT License: https://spdx.org/licenses/MIT.html#licenseText
 1. Mozart License: http://mozart.github.io/license-info/license.html
 1. Naumen Public License: http://www.worldlii.org/int/other/PubRL/2009/42.html
-1. Open Media Group Open Source License: http://www.openmediagroup.com/license.html
+1. Open Media Group Open Source License: https://web.archive.org/web/20090213173457/http://www.openmediagroup.com/license.html
 1. OpenLDAP Public License (v. 2.3): http://www.mibsoftware.com/librock/librock/license/oldap2_3.txt
-1. OpenLDAP Public License (v. 2.5): http://www.covalent.net/legal/docs/license_openldap.txt
+1. OpenLDAP Public License (v. 2.5): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=6852b9d90022e8593c98205413380536b1b5a7cf
 1. OpenLDAP Public License (v. 2.7): http://www.openldap.org/doc/admin21/license.html
 1. OpenLDAP Public License (v. 2.8): http://www.openldap.org/software/release/license.html
 1. OpenSSL License (Einordnung umstritten): http://www.openssl.org/source/license.html
 1. Pangeia Informatica Copyright (v. 1.2): http://www.chkrootkit.org/COPYRIGHT
 1. Phorum License (v. 2.0): http://phorum.org/license.txt
 1. PHP License (v. 3.0): http://www.php.net/license/3_0.txt
-1. Python Copyright: http://www.python.org/download/releases/2.4.2/license/
-1. Python Software Foundation License v2: http://spdx.org/licenses/Python-2.0#licenseText
+1. Privaria Attribution Assurance License: https://web.archive.org/web/20050305170641/http://eepatents.com/privaria/#license
+1. Python 2.4.2 license: http://www.python.org/download/releases/2.4.2/license/
 1. skyBuilders Open Source License: http://www.skybuilders.com/OpenSourceLicense.html
 1. SpeechWorks Public License - Software (v. 1.1): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
 1. Tea Software License: http://teatrove.sourceforge.net/license.html
-1. The License of ZLib: http://www.gzip.org/zlib/zlib_license.html
-1. The Privaria Attribution Assurance License: https://web.archive.org/web/20050305170641/http://eepatents.com/privaria/#license
 1. The SpeechWorks Public License (v. 1.1 ): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
 1. Udanax Open-Source License: http://udanax.xanadu.com/license.html
-1. Vovida Software License: http://www.vovida.org/document/VOCAL-1.4.0/license.txt
-1. Vovida Software License v1.0: http://www.opensource.org/licenses/vovidapl.php
-1. W3C Software Notice and License: http://www.w3.org/Consortium/Legal/copyright-software.html
+1. Vovida Software License v 1.0: https://web.archive.org/web/20050410031206/http://www.vovida.org/document/VOCAL-1.4.0/license.txt
+1. W3C Software and Document Notice and License: http://www.w3.org/Consortium/Legal/copyright-software.html
 1. Wide Open License (WOL): http://www.dspguru.com/wol2.htm
-1. X Window System License: http://www.x.org/Downloads_terms.html
+1. X Window System License: https://web.archive.org/web/20050406051821/%20http://www.x.org/Downloads_terms.html
 1. X.Net License: http://www.xnetinc.com/xiua/copyright.htm
-1. XFree86 License 1.1: http://www.xfree86.org/current/LICENSE4.html
-1. XFree86 Project Licence: http://www.xfree86.org/legal/licenses.html
+1. XFree86 Licence: http://www.xfree86.org/legal/licenses.html
+1. ZLib license: http://www.gzip.org/zlib/zlib_license.html
 1. Zope Public License 1.1: http://old.zope.org/Resources/License/ZPL-1.1
-1. Zope Public License 2.0: http://opensource.org/licenses/ZPL-2.0
+1. Zope Public License 2.0: http://old.zope.org/Resources/License/ZPL-2.0
 
 #### Sonstige Lizenzen ohne Copyleft-Effekt
 
@@ -126,6 +123,7 @@ ihr nachgebildeten Derivate.
 1. MTX Lizenzvereinbarung: http://www.monotype.com/de/legal/mtx-licensing-statement
 1. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
 1. PSF License Agreement (Python): http://www.python.org/2.0.1/license.html
+1. Python Software Foundation License (v. 2): http://spdx.org/licenses/Python-2.0#licenseText
 1. Ruby License: http://www.ruby-lang.org/en/LICENSE.txt
 1. Sendmail License: http://www.sendmail.org/ftp/LICENSE
 1. SFL License Agreement (iMatix): http://legacy.imatix.com/html/sfl/sfl4.htm
