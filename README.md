@@ -183,7 +183,6 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
 
 1. Arphic Public License: http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE
 1. Common Public License: http://www.eclipse.org/legal/cpl-v10.html
-1. Common Public License 1.0: http://www.opensource.org/licenses/cpl1.0.php
 1. Deutsche Freie Softwarelizenz (d-fsl): http://www.d-fsl.org/
 1. Eclipse Public License (v. 1.0): http://www.eclipse.org/legal/epl-v10.html
 1. European Union Public License (v. 1.0): http://ec.europa.eu/idabc/en/document/7330.html
