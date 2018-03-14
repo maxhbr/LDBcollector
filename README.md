@@ -54,8 +54,7 @@ ihr nachgebildeten Derivate.
 1. Apache License (v. 2.0): http://www.apache.org/licenses/LICENSE-2.0.html
 1. BSD 2-clause "Simplified" or "FreeBSD" License: http://www.freebsd.org/copyright/freebsd-license.html
 1. BSD 3-clause "New" or "Revised" License: https://spdx.org/licenses/BSD-3-Clause
-1. BSD 4-clause "Original" or "Old" License: http://www.opensource.org/licenses/bsd-license.php
-1. BSD License (Original): https://www.freebsd.org/copyright/license.html
+1. BSD 4-clause "Original" or "Old" License: https://www.freebsd.org/copyright/license.html
 1. Christian Software Public License: http://www.geocities.com/ResearchTriangle/Node/4081/cspl.html
 1. Cougaar Open Source License: http://cougaar.org/twiki/bin/view/Main/LicenseText (Einordnung umstritten)
 1. Cryptix General License: http://www.cryptix.org/LICENSE.TXT
