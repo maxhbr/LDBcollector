@@ -69,7 +69,7 @@ ihr nachgebildeten Derivate.
 1. ISC License: https://www.isc.org/downloads/software-support-policy/isc-license/
 1. JasPer License Version 2.0: http://www.ece.uvic.ca/~frodo/jasper/LICENSE
 1. Lua Copyright notice: http://www.lua.org/copyright.html
-1. MIT License: http://www.opensource.org/licenses/mit-license.php
+1. MIT License: https://spdx.org/licenses/MIT.html#licenseText
 1. Mozart License: http://www.mozart-oz.org/LICENSE.html
 1. Naumen Public License: http://www.worldlii.org/int/other/PubRL/2009/42.html
 1. Open Media Group Open Source License: http://www.openmediagroup.com/license.html
