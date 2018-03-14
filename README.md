@@ -52,7 +52,6 @@ ihr nachgebildeten Derivate.
 1. Apache License (v. 1.0): http://www.apache.org/licenses/LICENSE-1.0
 1. Apache License (v. 1.1): http://www.apache.org/licenses/LICENSE-1.1
 1. Apache License (v. 2.0): http://www.apache.org/licenses/LICENSE-2.0.html
-1. Attribution Assurance License: http://eepatents.com/privaria/#license
 1. BSD 2-clause "Simplified" or "FreeBSD" License: http://www.freebsd.org/copyright/freebsd-license.html
 1. BSD 3-clause "New" or "Revised" License: https://spdx.org/licenses/BSD-3-Clause
 1. BSD 4-clause "Original" or "Old" License: http://www.opensource.org/licenses/bsd-license.php
@@ -90,6 +89,7 @@ ihr nachgebildeten Derivate.
 1. SpeechWorks Public License - Software (v. 1.1): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
 1. Tea Software License: http://teatrove.sourceforge.net/license.html
 1. The License of ZLib: http://www.gzip.org/zlib/zlib_license.html
+1. The Privaria Attribution Assurance License: https://web.archive.org/web/20050305170641/http://eepatents.com/privaria/#license
 1. The SpeechWorks Public License (v. 1.1 ): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
 1. Udanax Open-Source License: http://udanax.xanadu.com/license.html
 1. Vovida Software License: http://www.vovida.org/document/VOCAL-1.4.0/license.txt
