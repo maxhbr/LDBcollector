@@ -47,7 +47,7 @@ Zu den BSDartigen Lizenzen gehört die Original BSD-Lizenz und die
 ihr nachgebildeten Derivate.
 
 1. 4.4 BSD Copyright (Original BSD-Lizenz): https://www.freebsd.org/copyright/license.html
-1. 4Suite License (v. 1.1): http://4suite.org/COPYRIGHT.doc
+1. 4Suite License (v. 1.1): https://web.archive.org/web/20060210220828/http://4suite.org/COPYRIGHT.doc
 1. Apache License (v. 1.0): http://www.apache.org/licenses/LICENSE-1.0
 1. Apache License (v. 1.0): http://www.apache.org/licenses/LICENSE-1.0
 1. Apache License (v. 1.1): http://www.apache.org/licenses/LICENSE-1.1
