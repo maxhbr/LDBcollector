@@ -244,6 +244,7 @@ erleichtert werden.
 1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
 1. CeCILL-C License: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.txt
 1. Cougaar Open Source License Agreement: http://cougaar.org/docman/view.php/17/126/old_cosl_license.html (Einordnung umstritten)
+1. Eclipse Public License (v. 2.0): https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
 1. GNU Lesser General Public License (LGPL) (v. 2.1): http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.org/licenses/lgpl.html
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.de/lgpl-ger.html (Inoffizielle deutsche Übersetzung)
