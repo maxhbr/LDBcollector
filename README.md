@@ -60,14 +60,13 @@ ihr nachgebildeten Derivate.
 1. Cryptix General License: http://www.cryptix.org/LICENSE.TXT
 1. Eiffel Forum License (v. 1.0): http://www.eiffel-nice.org/license/forum.txt
 1. Eiffel Forum License (v. 2.0): http://www.eiffel-nice.org/license/eiffel-forum-license-2.html
-1. Entessa Public License (EPL) (v. 1.0): http://web.archive.org/web/20050419215723/www.openseal.org/epl/
+1. Entessa Public License (v. 1.0): http://web.archive.org/web/20050419215723/www.openseal.org/epl/
 1. Free Fuzzy Logic Library Open Source License: http://ffll.sourceforge.net/license.txt
-1. FreeBSD Copyright (Modifizierte BSD-Lizenz): http://www.de.freebsd.org/copyright/freebsd-license.html
 1. Horde Apache-like License: http://www.horde.org/licenses/asl.php
 1. Horde BSD-like License: http://www.horde.org/licenses/bsdl.php
 1. Indiana University Extreme! Lab Software License, Version 1.2: http://www.extreme.indiana.edu/license.txt
 1. Intel Open Source License for CDSA/CSSM Implementation: http://www.opensource.org/licenses/intel-open-source-license.php
-1. ISC License (Bind, DHCP Server): http://www.isc.org/software/license
+1. ISC License: https://www.isc.org/downloads/software-support-policy/isc-license/
 1. JasPer License Version 2.0: http://www.ece.uvic.ca/~frodo/jasper/LICENSE
 1. Lua Copyright notice: http://www.lua.org/copyright.html
 1. MIT License: http://www.opensource.org/licenses/mit-license.php
