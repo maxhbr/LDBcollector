@@ -114,9 +114,9 @@ ihr nachgebildeten Derivate.
 1. Condor Public License (v. 1.1): http://www.cs.wisc.edu/condor/license.html#condor
 1. FreeType Project License: http://www.freetype.org/FTL.TXT
 1. Galen Open Source License (GOSL): http://www.opengalen.org/gosl.html
-1. Globus Toolkit Public License: http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html
+1. Globus Toolkit Public License: https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html
 1. Globus Toolkit Public License (GTPL) (v. 2.0): http://www.globus.org/toolkit/license.html
-1. ICU License: http://source.icu-project.org/repos/icu/icu/trunk/license.html
+1. ICU License: https://www.unicode.org/copyright.html#License
 1. ISC License: http://mirbsd.org/ISC-Licence
 1. Lucent Public License Version (v. 1.02): https://opensource.org/licenses/LPL-1.02
 1. MirOS License: http://mirbsd.org/MirOS-Licence
@@ -132,7 +132,7 @@ ihr nachgebildeten Derivate.
 1. Tcl/Tk License Terms: http://www.tcl.tk/software/tcltk/license.html
 1. The Sleepycat License: https://fedoraproject.org/wiki/Licensing/Sleepycat
 1. xinetd License: http://www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
-1. Zope Public License (v. 2.1): http://www.zope.org/Resources/ZPL
+1. Zope Public License (v. 2.1): https://web.archive.org/web/20060426220850/http://www.zope.org:80/Resources/ZPL/
 
 ### Lizenzen mit strengem Copyleft-Effekt
 
@@ -153,7 +153,7 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
 1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
 1. CrossPoint Quelltextlizenz: http://www.crosspoint.de/srclicense.html
 1. eCos License (v. 2.0): http://www.gnu.org/licenses/ecos-license.html
-1. European Union Public Licence (v1.1): https://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf
+1. European Union Public Licence (v1.1): https://web.archive.org/web/20120707011902/http://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf
 1. FreeCard License: http://freecard.sourceforge.net/website/licence/license.php
 1. GNU Affero General Public License (AGPLv3) (v. 3.0): http://www.fsf.org/licensing/licenses/agpl-3.0.html
 1. GNU Classpath - GPL with special exception: http://www.gnu.org/software/classpath/license.html
@@ -172,7 +172,7 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
 1. Honest Public License (HPL) (1.0): http://www.projectpier.org/manual/tour/licence
 1. Honest Public License (HPL) (1.1): http://www.gnugeneration.com/licenses/HPLv1.1.txt
 1. IPA Font License: http://www.opensource.org/licenses/ipafont.html
-1. Open RTLinux Patent License: http://www.rtlinuxfree.com/openpatentlicense.html
+1. Open RTLinux Patent License: https://web.archive.org/web/20120222184907/http://rtlinuxfree.com/openpatentlicense.html
 1. wxWindows Library License v. 3.1 (OSI): https://www.wxwidgets.org/about/licence/
 
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
@@ -187,7 +187,7 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
 1. Open Group Public License: http://www.opengroup.org/openmotif/license
 1. Open Software License (OSL) (v 2.1): http://opensource.org/licenses/osl-2.1.php
 1. Open Software License 1.0: http://www.opensource.org/licenses/osl-1.0.txt
-1. Open Software License 2.0: http://www.nexb.com/license/LICENSE-OSL-2.0.html
+1. Open Software License 2.0: https://web.archive.org/web/20110805014901/http://www.nexb.com:80/license/LICENSE-OSL-2.0.html
 1. Open Software License 3.0: http://www.rosenlaw.com/OSL3.0.htm
 1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
 1. RedHat eCos Public License (v. 1.1): http://sources.redhat.com/ecos/license-overview.html
@@ -251,11 +251,11 @@ erleichtert werden.
 1. GNU Library General Public License (LibGPL) (v. 2.0): http://www.gnu.org/copyleft/library.html
 1. Hi-Potent Open Source License: http://web.archive.org/web/20030804175518/www.hi-potent.com/license.html
 1. Jabber Open Source License: http://archive.jabber.org/core/JOSL.pdf
-1. Microsoft Limited Reciprocal License (Ms-LRL): http://www.microsoft.com/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx
-1. Microsoft Reciprocal License (Ms-RL): http://www.microsoft.com/resources/sharedsource/licensingbasics/reciprocallicense.mspx
+1. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx1.
+1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080408142746/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx1.
 1. Motosoto Open Source License (v. 0.9.1): http://opensource.org/licenses/motosoto.php
 1. Sybase Open Watcom Public License: http://downloads.openwatcom.org/ftp/license.txt
-1. wxWindows Library License (v. 3.0): http://www.freiburg.linux.de/~wxxt/licence.html
+1. wxWindows Library License (v. 3.0): https://web.archive.org/web/20090511105912/http://www.freiburg.linux.de:80/~wxxt/licence.html
 1. Yahoo! Public License (YPL) (v. 1.1): http://www.zimbra.com/license/yahoo_public_license_1.1.html
 
 #### Lizenzen mit Wahlmöglichkeiten
@@ -275,7 +275,7 @@ Weiterentwicklungen weiterverbreitet werden können.
 1. LaTeX Project Public License (LPPL) (v. 1.2): http://www.latex-project.org/lppl/lppl-1-2.html
 1. LaTeX Project Public License (LPPL) (v. 1.3b): http://www.latex-project.org/lppl/lppl-1-3b-de.html (Inoffizielle deutsche Übersetzung)
 1. LaTeX Project Public License (LPPL) (v. 1.3c): http://www.latex-project.org/lppl/lppl-1-3c.html
-1. Microsoft Public License (Ms-PL): http://www.microsoft.com/resources/sharedsource/licensingbasics/publiclicense.mspx
+1. Microsoft Public License (Ms-PL): https://web.archive.org/web/20080408161715/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx
 1. Open Source License for Oracle Berkeley DB: http://www.oracle.com/technology/software/products/berkeley-db/htdocs/oslicense.html
 1. Physnet Package License: http://web.archive.org/web/20060821203230/http://35.9.69.219/home/modules/license.html
 1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
@@ -297,10 +297,10 @@ proprietär vertrieben wurden.
 1. Macromedia Open Source License Agreement (v. 1.0): http://www.adobe.com/v1/handlers/index.cfm?ID=23075
 1. Netscape Public License (NPL) (v. 1.0): http://www.mozilla.org/NPL/NPL-1.0.html
 1. Netscape Public License (NPL) (v. 1.1): http://www.mozilla.org/NPL/NPL-1.1.html
-1. OCLC Research Public License (v. 1.0): http://www.free-soft.org/mirrors/www.opensource.org/licenses/oclc.php
+1. OCLC Research Public License (v. 1.0): https://web.archive.org/web/20061013042737/http://www.free-soft.org/mirrors/www.opensource.org/licenses/oclc.php
 1. OCLC Research Public License (v. 2.0): http://www.oclc.org/research/software/license/v2final.htm
-1. Open Map Software License Agreement: http://openmap.bbn.com/license.html
-1. Q Public License (QPL): http://doc.trolltech.com/4.0/qpl.html
+1. Open Map Software License Agreement: https://web.archive.org/web/20160528102034/http://openmap.bbn.com:80/license.html
+1. Q Public License (QPL): https://web.archive.org/web/20101115061537/http://doc.trolltech.com:80/4.0/qpl.html
 1. Q Public License 1.0: http://doc.qt.nokia.com/3.3/license.html
 1. RealNetworks Community Source License - Research and Development Use (RCSL R&D)(v 3.0): https://helixcommunity.org/content/rcsl
 1. RealNetworks Public Source License (RPSL) (v. 1.0): https://community.helixcommunity.org/content/rpsl
@@ -315,14 +315,14 @@ Non-Profit-Lizenzen, die anders als Open Source Lizenzen eine
 kommerzielle Weiterverbreitung verbieten.
 
 1. Aladdin Free Public License (v. 8.0): http://www.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm
-1. Aladdin Free Public License (v. 9.0): http://www.artifex.com/downloads/doc/Public.htm
+1. Aladdin Free Public License (v. 9.0): https://web.archive.org/web/20121218095513/http://www.artifex.com:80/downloads/doc/Public.htm
 1. AT&T Source Code Agreement (v. 1.2D): http://web.archive.org/web/20050424024245/http://www.research.att.com/sw/license/ast-open.html
 1. CrossPoint Quelltext Lizenz (alt): http://www.crosspoint.de/oldlicense.html
 1. Enhydra Public License (v. 1.1): http://ksoap.objectweb.org/software/license/index.html (Einordnung umstritten)
 1. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
 1. Jahia Community Source License (JSCL) (v.012): http://www.jahia.org/jahia/Jahia/pid/145
 1. JasPer Software License (1.0): http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE
-1. Microsoft Reference License (Ms-RefL): http://www.microsoft.com/resources/sharedsource/licensingbasics/referencelicense.mspx
+1. Microsoft Reference License (Ms-RefL): https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx
 1. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
 1. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
 1. PLS Free Software License Agreement (v. 1.0): http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm
@@ -330,7 +330,7 @@ kommerzielle Weiterverbreitung verbieten.
 1. Scilab license: http://www.worldlii.org/int/other/PubRL/2009/51.html
 1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
 1. ShippySoft Source Available License (SSSAL): http://www.shippysoft.com/license.shtml
-1. Squeak License (Apple): http://squeak.org/SqueakLicense/
+1. Squeak License (Apple): https://web.archive.org/web/20150308154920/http://www.squeak.org:80/SqueakLicense
 1. Sun Community Source License: http://www.sun.com/software/jini/licensing/SCSL3_JiniTSA1.html
 1. Sun Solaris Source Code (Foundation Release) License (v. 1.1): http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
 1. The Code Project Open License (CPOL) 1.02: http://www.codeproject.com/info/cpol10.aspx
@@ -338,7 +338,7 @@ kommerzielle Weiterverbreitung verbieten.
 1. University of Utah Public License: http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt
 1. YaST and SuSE Linux license terms: http://ftp2.de.freebsd.org/pub/linux/suse/5.3/i386.de/COPYRIGHT.yast
 1. YaST und SuSE Linux Lizenzbestimmungen: http://www.suse.de/de/private/support/licenses/yast.html
-1. ZIB Academic License: http://www.zib.de/Optimization/Software/ziblicense.html
+1. ZIB Academic License: https://web.archive.org/web/20090408081543/http://www.zib.de:80/Optimization/Software/ziblicense.html
 
 ## Open Content Lizenzen
 
@@ -386,7 +386,7 @@ Open Content Definition besteht, sind die Lizenzen sehr heterogen.
 1. EFF Audio Public License (v. 1.0.1): http://www.eff.org/IP/Open_licenses/20010421_eff_oal_1.0.html
 1. electronic Music Public License: http://web.archive.org/web/20050408042334/http://www.killerfish.de/fys/empl/empl_de.html
 1. Ethymonics Free Music License: http://www.ethymonics.co.uk/fml.html
-1. Free Art License: http://artlibre.org/licence.php/lalgb.html
+1. Free Art License: https://web.archive.org/web/20080704173805/http://www.artlibre.org/licence.php/lalgb.html
 1. FreeBSD Documentation License: http://www.freebsd.org/copyright/freebsd-doc-license.html
 1. GNU Free Documentation License (FDL) (v. 1.1): http://www.gnu.org/licenses/old-licenses/fdl-1.1.html
 1. GNU Free Documentation License (FDL) (v. 1.1): http://nautix.sourceforge.net/docs/fdl.de.html (inoffizielle deutsche Übersetzung)
@@ -396,13 +396,13 @@ Open Content Definition besteht, sind die Lizenzen sehr heterogen.
 1. Guy Hoffman's license: http://www.ram.org/ramblings/philosophy/fmp/hoffman_license.html
 1. ifrOSS` Freie Lizenz für Texte und Textdatenbanken (IFL Text): http://www.ifross.de/ifross_html/ifl.html
 1. Linux Documentation Project Copying License: http://tldp.org/LDP-COPYRIGHT.html
-1. Lizenz "Freie Kunst": http://artlibre.org/licence.php/lalde.html
+1. Lizenz "Freie Kunst": https://web.archive.org/web/20081118201323/http://artlibre.org/licence.php/lalde.html
 1. (Übersetzung der Free Art License)
 1. Lizenz für die freie Nutzung unveränderter Inhalte: http://www.cec.nrw.de/Lizenzen/uvm-lizenz2html.htm
 1. Lizenz für die nichtkommerzielle Nutzung von Inhalten an Schulen und Hochschulen: http://www.cec.nrw.de/Lizenzen/uvm-lizenz4html.htm
 1. Lizenz für die Nutzung von Inhalten in bestimmten Nutzerkreisen: http://www.cec.nrw.de/Lizenzen/uvm-lizenz3html.htm
-1. Lizenz für Freie Inhalte: http://www.politikon.org/e-lernplattform/lizenzmodelle/lizenz-fuer-freie-inhalte.html
-1. Open Content License (OPL): http://opencontent.org/opl.shtml
+1. Lizenz für Freie Inhalte: https://web.archive.org/web/20140701174344/http://www.politikon.org:80/e-lernplattform/lizenzmodelle/lizenz-fuer-freie-inhalte.html
+1. Open Content License (OPL): https://web.archive.org/web/20140608191625/http://www.opencontent.org:80/opl.shtml
 1. Open Directory Project License: http://dmoz.org/license.html
 1. Open Game License: http://www.opengamingfoundation.org/ogl.html
 1. Open Publication License (v. 1.0): http://opencontent.org/openpub
@@ -453,7 +453,7 @@ Begriff als Entwicklerlizenzvereinbarung.
 
 ### CLA mit ausschließlicher Lizenz, Assignments
 
-1. Free Software Foundation Assignment (GNU): http://ftp.xemacs.org/old-beta/FSF/assign.changes
+1. Free Software Foundation Assignment (GNU): https://web.archive.org/web/20160512041501/http://ftp.xemacs.org:80/old-beta/FSF/assign.changes
 1. Free Software Foundation Europe Fiduciary License Agreement: http://fsfe.org/activities/ftf/FLA.en.pdf
 1. Harmony Individual Contributor Assignment Agreement: http://harmonyagreements.org/docs/ha-caa-i-v1.pdf
 1. Joomla Contributor Agreement: http://developer.joomla.org/cms/contribute.html
