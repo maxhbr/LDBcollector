@@ -1,4 +1,4 @@
-_Dies ist eine experimentelle Demo der kollaborativen Arbeit an
+Dies ist eine experimentelle Demo der kollaborativen Arbeit an
 einer GitHub Page. Vorlage und offizielle Version dieser Seite ist
 [ifrOSS.org/Lizenz-Center](http://www.ifross.org/lizenz-center).
 
@@ -100,12 +100,13 @@ ihr nachgebildeten Derivate.
 
 #### Sonstige Lizenzen ohne Copyleft-Effekt
 
-1. Academic Free License (AFL) (v. 1.1): http://opensource-definition.org/licenses/afl-1.1.txt
-1. Academic Free License (AFL) (v. 1.2): http://opensource-definition.org/licenses/academic.html
-1. Academic Free License (AFL) (v. 2.0): http://opensource-definition.org/licenses/afl-2.0.html
-1. Academic Free License (AFL) (v. 2.1): http://opensource-definition.org/licenses/afl-2.1.html
-1. Academic Free License (AFL) (v. 3.0): http://www.rosenlaw.com/AFL3.0.htm
-1. Apple Public Source License 1.0: https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0
+1. Academic Free License (AFL) (v. 1.0): https://web.archive.org/web/20020808082753/http://www.rosenlaw.com:80/afl.html
+1. Academic Free License (AFL) (v. 1.1): https://web.archive.org/web/20030224125640/http://www.rosenlaw.com:80/afl.html
+1. Academic Free License (AFL) (v. 1.2): https://web.archive.org/web/20030515043719/http://www.rosenlaw.com:80/afl1.2.html
+1. Academic Free License (AFL) (v. 2.0): https://web.archive.org/web/20041212013430/http://rosenlaw.com:80/afl2.0.html
+1. Academic Free License (AFL) (v. 2.1): https://web.archive.org/web/20080413164801/http://rosenlaw.com:80/afl21.htm
+1. Academic Free License (AFL) (v. 3.0): https://web.archive.org/web/20080317004542/http://www.rosenlaw.com/AFL3.0.htm
+1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html
 1. Beerware License: http://people.freebsd.org/~phk/
 1. Boost Software License (Einordnung umstritten): http://www.boost.org/LICENSE_1_0.txt
 1. CeCILL-B License: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt
@@ -295,8 +296,8 @@ proprietär vertrieben wurden.
 1. Apple Public Source License (v. 1.1): http://www.opensource.apple.com/apsl/1.1.txt (Einordnung umstritten)
 1. Apple Public Source License (v. 1.2): http://www.opensource.apple.com/apsl/1.2.txt (Einordnung umstritten)
 1. Macromedia Open Source License Agreement (v. 1.0): http://www.adobe.com/v1/handlers/index.cfm?ID=23075
-1. Netscape Public License (NPL) (v. 1.0): http://www.mozilla.org/NPL/NPL-1.0.html
-1. Netscape Public License (NPL) (v. 1.1): http://www.mozilla.org/NPL/NPL-1.1.html
+1. Netscape Public License (NPL) (v. 1.0): https://web.archive.org/web/19990422030305/http://www.mozilla.org/NPL/NPL-1.0.html
+1. Netscape Public License (NPL) (v. 1.1): https://web.archive.org/web/20020202113823/http://www.mozilla.org:80/MPL/NPL-1.1.html
 1. OCLC Research Public License (v. 1.0): https://web.archive.org/web/20061013042737/http://www.free-soft.org/mirrors/www.opensource.org/licenses/oclc.php
 1. OCLC Research Public License (v. 2.0): http://www.oclc.org/research/software/license/v2final.htm
 1. Open Map Software License Agreement: https://web.archive.org/web/20160528102034/http://openmap.bbn.com:80/license.html
