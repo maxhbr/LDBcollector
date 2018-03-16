@@ -113,26 +113,24 @@ ihr nachgebildeten Derivate.
 1. CNRI Open Source License Agreement: http://www.handle.net/python_licenses/python1.6_9-5-00.html
 1. (bis Python 1.6)
 1. Condor Public License (v. 1.1): http://www.cs.wisc.edu/condor/license.html#condor
-1. FreeType Project License: http://www.freetype.org/FTL.TXT
+1. FreeType Project License: http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
 1. Galen Open Source License (GOSL): http://www.opengalen.org/gosl.html
 1. Globus Toolkit Public License: https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html
 1. Globus Toolkit Public License (GTPL) (v. 2.0): http://www.globus.org/toolkit/license.html
-1. ICU License: https://www.unicode.org/copyright.html#License
+1. ICU License: https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
 1. ISC License: http://mirbsd.org/ISC-Licence
-1. Lucent Public License Version (v. 1.02): https://opensource.org/licenses/LPL-1.02
+1. Lucent Public License Version (v. 1.02): https://web.archive.org/web/20080514131645/http://plan9.bell-labs.com/plan9/license.html
 1. MirOS License: http://mirbsd.org/MirOS-Licence
-1. MTX Lizenzvereinbarung: http://www.monotype.com/de/legal/mtx-licensing-statement
 1. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
-1. PSF License Agreement (Python): http://www.python.org/2.0.1/license.html
-1. Python Software Foundation License (v. 2): http://spdx.org/licenses/Python-2.0#licenseText
+1. Python 2.0.1 License: https://www.python.org/download/releases/2.0.1/license/
+1. Python Software Foundation License (v. 2): https://www.python.org/download/releases/2.7.7/license/
 1. Ruby License: http://www.ruby-lang.org/en/LICENSE.txt
 1. Sendmail License: http://www.sendmail.org/ftp/LICENSE
-1. SFL License Agreement (iMatix): http://legacy.imatix.com/html/sfl/sfl4.htm
 1. Standard ML of New Jersey Copyright Notice: http://cm.bell-labs.com/cm/cs/what/smlnj/license.html
-1. Suneido Free Software License: http://www.suneido.com/free_software_license.htm
+1. Suneido Free Software License: http://suneido.com/wp-content/uploads/delightful-downloads/2014/10/free_license.txt
 1. Tcl/Tk License Terms: http://www.tcl.tk/software/tcltk/license.html
 1. The Sleepycat License: https://fedoraproject.org/wiki/Licensing/Sleepycat
-1. xinetd License: http://www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
+1. xinetd License: https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
 1. Zope Public License (v. 2.1): https://web.archive.org/web/20060426220850/http://www.zope.org:80/Resources/ZPL/
 
 ### Lizenzen mit strengem Copyleft-Effekt
@@ -279,6 +277,7 @@ Weiterentwicklungen weiterverbreitet werden können.
 1. Microsoft Public License (Ms-PL): https://web.archive.org/web/20080408161715/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx
 1. Open Source License for Oracle Berkeley DB: http://www.oracle.com/technology/software/products/berkeley-db/htdocs/oslicense.html
 1. Physnet Package License: http://web.archive.org/web/20060821203230/http://35.9.69.219/home/modules/license.html
+1. SFL License Agreement: https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm
 1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
 1. SGI Free Software License B (v. 1.1): http://oss.sgi.com/projects/FreeB (Einordnung umstritten)
 1. Sleepycat Software Product License: http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html
