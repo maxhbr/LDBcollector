@@ -1,6 +1,6 @@
 _Dies ist eine experimentelle Demo der kollaborativen Arbeit an
 einer GitHub Page. Vorlage und offizielle Version dieser Seite ist
-[ifrOSS.org/Lizenz-Center](http://www.ifross.org/lizenz-center)._
+[ifrOSS.org/Lizenz-Center](http://www.ifross.org/lizenz-center).
 
 # Lizenz-Center
 
