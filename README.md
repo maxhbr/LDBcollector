@@ -272,18 +272,17 @@ Weiterentwicklungen weiterverbreitet werden können.
 1. Artistic License (v. 1.0): http://www.perlfoundation.org/artistic_license_1_0 (Einordnung umstritten)
 1. Artistic License (v. 2.0): http://www.perlfoundation.org/artistic_license_2_0
 1. Clarified Artistic License: http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html
-1. Keith Devens' Open Source License: http://www.keithdevens.com/software/license/
+1. Keith Devens' Open Source License: https://web.archive.org/web/20100604220226/http://www.keithdevens.com/software/license/
 1. LaTeX Project Public License (LPPL) (v. 1.0): http://www.latex-project.org/lppl/lppl-1-0.html
 1. LaTeX Project Public License (LPPL) (v. 1.1): http://www.latex-project.org/lppl/lppl-1-1.html
 1. LaTeX Project Public License (LPPL) (v. 1.2): http://www.latex-project.org/lppl/lppl-1-2.html
+1. LaTeX Project Public License (LPPL) (v. 1.3b): https://www.latex-project.org/lppl/lppl-1-3b/
 1. LaTeX Project Public License (LPPL) (v. 1.3b): http://www.latex-project.org/lppl/lppl-1-3b-de.html (Inoffizielle deutsche Übersetzung)
 1. LaTeX Project Public License (LPPL) (v. 1.3c): http://www.latex-project.org/lppl/lppl-1-3c.html
-1. Microsoft Public License (Ms-PL): https://web.archive.org/web/20080408161715/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx
-1. Open Source License for Oracle Berkeley DB: http://www.oracle.com/technology/software/products/berkeley-db/htdocs/oslicense.html
 1. Physnet Package License: http://web.archive.org/web/20060821203230/http://35.9.69.219/home/modules/license.html
 1. SFL License Agreement: https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm
-1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
-1. SGI Free Software License B (v. 1.1): http://oss.sgi.com/projects/FreeB (Einordnung umstritten)
+1. SGI Free Software License B (v. 1.0): https://web.archive.org/web/20130114073135/http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
+1. SGI Free Software License B (v. 1.1): https://web.archive.org/web/20170414231252/http://oss.sgi.com:80/projects/FreeB/SGIFreeSWLicB.1.1.doc (Einordnung umstritten)
 1. Sleepycat Software Product License: http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html
 
 #### Lizenzen mit Sonderrechten
