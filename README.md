@@ -255,13 +255,11 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.de/lgpl-ger.html (Inoffizielle deutsche Übersetzung)
 1. Hi-Potent Open Source License: http://web.archive.org/web/20030804175518/www.hi-potent.com/license.html
 1. Jabber Open Source License: http://archive.jabber.org/core/JOSL.pdf
-1. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx1.
 1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx.
 1. Motosoto Open Source License (v. 0.9.1): http://opensource.org/licenses/motosoto.php
-1. Sybase Open Watcom Public License: http://downloads.openwatcom.org/ftp/license.txt
 1. wxWindows Library License (v. 3.0): https://web.archive.org/web/20090511105912/http://www.freiburg.linux.de:80/~wxxt/licence.html
 1. wxWindows Library License (v. 3.1): https://www.wxwidgets.org/about/licence/
-1. Yahoo! Public License (YPL) (v. 1.1): http://www.zimbra.com/license/yahoo_public_license_1.1.html
+1. Yahoo! Public License (YPL) (v. 1.1): https://web.archive.org/web/20120617001853/http://www.zimbra.com/license/yahoo_public_license_1.0.html
 
 #### Lizenzen mit Wahlmöglichkeiten
 
@@ -332,6 +330,7 @@ kommerzielle Weiterverbreitung verbieten.
 1. Microsoft Limited Public License (Ms-LPL): https://web.archive.org/web/20071223053203/http://microsoft.com:80/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx 
 1. Microsoft Limited Community License (Ms-LCL): https://web.archive.org/web/20070427113623/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedcommunitylicense.mspx
 1. Microsoft Reference License (Ms-RefL): https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx
+1. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx
 1. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
 1. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
 1. PLS Free Software License Agreement (v. 1.0): http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm
