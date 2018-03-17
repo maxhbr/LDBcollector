@@ -31,7 +31,8 @@ Open Source Definition nicht identisch sind und zudem ständig
 weiterentwickelt werden. Diese Lizenzen sind mit "Einordnung
 umstritten" gekennzeichnet.
 
-### Lizenzen ohne Copyleft-Effekt
+
+### Lizenzen ohne Copyleft-Effekt ("Permissive Licenses")
 
 Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
 dem Lizenznehmer alle Freiheiten einer Open Source Lizenz
@@ -59,11 +60,11 @@ proprietäre Software überführen.
 1. BSD 2-clause "Simplified" or "FreeBSD" License: http://www.freebsd.org/copyright/freebsd-license.html
 1. BSD 3-clause "New" or "Revised" License: https://spdx.org/licenses/BSD-3-Clause
 1. BSD 4-clause "Original" or "Old" License: https://www.freebsd.org/copyright/license.html
-1. CeCILL-B License: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt
+1. CeCILL-B Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html
 1. Christian Software Public License: http://pudge.net/jesux/cspl.html
 1. CNRI Open Source License Agreement: http://www.handle.net/python_licenses/python1.6_9-5-00.html
-1. (bis Python 1.6)
 1. Condor Public License (v. 1.1): http://www.cs.wisc.edu/condor/license.html#condor
+1. Contrat de License de Logiciel Libre CeCILL-B: http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html
 1. Cougaar Open Source License: https://web.archive.org/web/20100818181228/http://cougaar.org/twiki/bin/view/Main/LicenseText
 1. Cryptix General License: http://www.cryptix.org/LICENSE.TXT
 1. Eiffel Forum License (v. 1.0): http://www.eiffel-nice.org/license/forum.txt
@@ -132,24 +133,19 @@ Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
 Lizenznehmer verpflichtet von der ursprünglichen Software
 abgeleitete Werke ebenfalls nur unter den Bedingungen der
 Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten
-Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
+Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
+
 
 #### GPLartige Lizenzen
 
-1. Affero General Public License: http://www.affero.org/oagpl.html
+1. Affero General Public License (v. 1): http://www.affero.org/oagpl.html
+1. Affero General Public License (v. 2): http://www.affero.org/agpl2.html
 1. Alternate Route Open Source License (v. 1.1): http://www.wsdot.wa.gov/eesc/bridge/alternateroute/arosl.htm
-1. CeCILL Free Software License Agreement v1.0: http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html
-1. CeCILL Free Software License Agreement v2.0: http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html
-1. CeCILL License (v. 2): http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt
-1. CeCILL-B Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html
-1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
 1. CrossPoint Quelltextlizenz: http://www.crosspoint.de/srclicense.html
 1. eCos License (v. 2.0): http://www.gnu.org/licenses/ecos-license.html
-1. European Union Public Licence (v1.1): https://web.archive.org/web/20120707011902/http://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf
 1. FreeCard License: http://freecard.sourceforge.net/website/licence/license.php
-1. GNU Affero General Public License (AGPLv3) (v. 3.0): http://www.fsf.org/licensing/licenses/agpl-3.0.html
+1. GNU Affero General Public License (AGPL-3.0) (v. 3.0): http://www.fsf.org/licensing/licenses/agpl-3.0.html
 1. GNU Classpath - GPL with special exception: http://www.gnu.org/software/classpath/license.html
-1. (GPL with special exception)
 1. GNU Emacs General Public License: http://www.free-soft.org/gpl_history/emacs_gpl.html
 1. GNU General Public License (GPL) (v. 1.0): http://www.gnu.org/copyleft/copying-1.0.html
 1. GNU General Public License (GPL) (v. 2.0): http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -170,10 +166,19 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
 
 1. Arphic Public License: http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE
+1. CeCILL Free Software License Agreement (v. 1.0): http://www.cecill.info/licences/Licence_CeCILL_V1-US.html
+1. CeCILL Free Software License Agreement (v. 1.1): http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html
+1. CeCILL Free Software License Agreement (v. 2.0): http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
+1. CeCILL Free Software License Agreement (v. 2.1): http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html
+1. Contrat de License de Logiciel Libre CeCILL (v. 1.0): http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html
+1. Contrat de License de Logiciel Libre CeCILL  (v. 2.0): http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html
+1. Contrat de License de Logiciel Libre CeCILL  (v. 2.1): http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html
 1. Common Public License: http://www.eclipse.org/legal/cpl-v10.html
 1. Deutsche Freie Softwarelizenz (d-fsl): http://www.d-fsl.org/
 1. Eclipse Public License (v. 1.0): http://www.eclipse.org/legal/epl-v10.html
 1. European Union Public License (v. 1.0): http://ec.europa.eu/idabc/en/document/7330.html
+1. European Union Public Licence (v. 1.1): https://joinup.ec.europa.eu/page/eupl-text-11-12
+1. European Union Public Licence (v. 1.2): https://joinup.ec.europa.eu/page/eupl-text-11-12
 1. IBM Public License: http://www-128.ibm.com/developerworks/opensource/library/os-i18n2/os-ipl.html
 1. Nethack General Public License: http://www.nethack.org/common/license.html
 1. Open Group Public License: http://www.opengroup.org/openmotif/license
@@ -234,7 +239,8 @@ erleichtert werden.
 1. Apple Public Source License (v. 2.0): http://www.opensource.apple.com/apsl/2.0.txt
 1. BitTorrent Open Source License v1.0: http://spdx.org/licenses/BitTorrent-1.0#licenseText
 1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
-1. CeCILL-C License: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.txt
+1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
+1. Contrat de License de Logiciel Libre CeCILL-C: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
 1. Cougaar Open Source License Agreement: http://cougaar.org/docman/view.php/17/126/old_cosl_license.html (Einordnung umstritten)
 1. Eclipse Public License (v. 2.0): https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
 1. GNU Lesser General Public License (LGPL) (v. 2.1): http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
@@ -387,7 +393,7 @@ Open Content Definition besteht, sind die Lizenzen sehr heterogen.
 1. GNU Free Documentation License (FDL) (v. 1.2): http://www.gnu.org/licenses/old-licenses/fdl-1.2.html
 1. GNU Free Documentation License (FDL) (v. 1.3): http://www.gnu.org/copyleft/fdl.html
 1. Guy Hoffman's license: http://www.ram.org/ramblings/philosophy/fmp/hoffman_license.html
-1. ifrOSS` Freie Lizenz für Texte und Textdatenbanken (IFL Text): http://www.ifross.de/ifross_html/ifl.html
+1. ifrOSS Freie Lizenz für Texte und Textdatenbanken (IFL Text): http://www.ifross.de/ifross_html/ifl.html
 1. Linux Documentation Project Copying License: http://tldp.org/LDP-COPYRIGHT.html
 1. Lizenz "Freie Kunst": https://web.archive.org/web/20081118201323/http://artlibre.org/licence.php/lalde.html
 1. (Übersetzung der Free Art License)
