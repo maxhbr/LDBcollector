@@ -138,6 +138,8 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
 
 #### GPLartige Lizenzen
 
+Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit ausnahmen können auch als beschränktes Copyleft verstanden werden.
+
 1. Affero General Public License (v. 1): http://www.affero.org/oagpl.html
 1. Affero General Public License (v. 2): http://www.affero.org/agpl2.html
 1. Alternate Route Open Source License (v. 1.1): http://www.wsdot.wa.gov/eesc/bridge/alternateroute/arosl.htm
@@ -188,44 +190,43 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
 1. Open Software License 2.0: http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html
 1. Open Software License 2.1: http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm
 1. Open Software License 3.0: https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm
-1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
-1. RedHat eCos Public License (v. 2.0): http://sources.redhat.com/ecos/license-overview.html
 1. Salutation Public License: http://web.archive.org/web/20050323201906/http://www.salutation.org/lite/lite_license.htm
 1. Software AG License Terms (Quip License) (v. 1.3): http://www.cse.uconn.edu/~dqg/cse350/xml/quip/License.txt
 1. Vim License: http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
 
 ### Lizenzen mit beschränktem Copyleft-Effekt
 
-Lizenzen mit beschränktem Copyleft-Effekt gleichen den unter II.
-aufgeführten Lizenzen insoweit, als sie ebenfalls einen
-Copyleft-Effekt haben, der aber nur eingeschränkt ist. Sofern
-Modifikationen der Software in eigenen Dateien realisiert werden,
-können diese Dateien auch unter anderen, z.B. proprietären
-Lizenzbedingungen weiterverbreitet werden. Damit soll die
-Kombination von Software unter verschiedenen Lizenztypen
-erleichtert werden.
+Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält. 
 
 #### MPLartige Lizenzen
 
+Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, können diese Dateien auch unter anderen, z.B. proprietären Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden.
+
 1. Common Development and Distribution License (CDDL) (v. 1.0): http://oss.oracle.com/licenses/CDDL
-1. Common Development and Distribution License, Version 1.1 (CDDL v 1.1): https://glassfish.java.net/public/CDDL+GPL_1_1.html
-1. Common Public Attribution License 1.0: http://www.opensource.org/licenses/cpal_1.0
-1. Computer Associates Trusted Open Source License 1.1: http://www.luebeckonline.com/mustervertraege/software-vertraege/open-source-lizenz/computer-associates-trusted-open-source-license-version-11.html
+1. Common Development and Distribution License, Version 1.1 (CDDL v 1.1): https://javaee.github.io/glassfish/LICENSE
+1. Common Public Attribution License 1.0: https://www.agnitas.de/e-marketing-manager/email-marketing-software/openemm/license/
+1. Computer Associates Trusted Open Source License 1.1: https://web.archive.org/web/20160308205306/http://www.luebeckonline.com/mustervertraege/software-vertraege/open-source-lizenz/computer-associates-trusted-open-source-license-version-11.html
 1. CUA Office Public License v1.0: http://www.opensource.org/licenses/cuaoffice.php
 1. Erlang Public License (v. 1.1): http://www.erlang.org/EPLICENSE
-1. Erlang Public License v1.1: http://www.erlang.org/EPLICENSE
-1. gSOAP Public License v1.b: http://www.cs.fsu.edu/~engelen/license.html
+1. gSOAP Public License (v. 1): https://web.archive.org/web/20020822050424/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v.  1.1): https://web.archive.org/web/20021104130030/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v.  1.2): https://web.archive.org/web/20030420224716/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v.  1.3): https://web.archive.org/web/20030608134559/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v. 1.3a): https://web.archive.org/web/20050923110600/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v. 1.3b): http://www.cs.fsu.edu/~engelen/license.html
 1. ICS Open Source Public License: http://web.archive.org/web/20030625151406/http://www.opencontrol.org/OSPL.htm
-1. Interbase Public License: http://www.borland.com/devsupport/interbase/opensource/IPL.html
+1. Interbase Public License: https://web.archive.org/web/20051201062423/http://bdn.borland.com:80/article/0,1410,30198,00.html
 1. Mozilla Public License (v. 1.0): http://www.mozilla.org/MPL/MPL-1.0.html
 1. Mozilla Public License (v. 1.1): http://www.mozilla.org/MPL/MPL-1.1.html
 1. Mozilla Public License (v. 2.0): http://www.mozilla.org/MPL/2.0/
-1. NASA Open Source Agreement (v. 1.3): http://worldwind.arc.nasa.gov/worldwind-nosa-1.3.html
+1. NASA Open Source Agreement (v. 1.3): https://ti.arc.nasa.gov/opensource/nosa/
 1. Netizen Open Source License (NOSL): http://web.archive.org/web/20000815212105/bits.netizen.com.au/licenses/NOSL/
 1. Nokia Open Source License: http://www.opensource.org/licenses/nokia.php
 1. Open Telecom Public License: http://www.ifross.de/Fremdartikel/otpl.htm
 1. Openbravo Public License: http://www.openbravo.com/legal/license.html
-1. Red Hat eCos Public License v1.1: http://ecos.sourceware.org/old-license.html
+1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
+1. RedHat eCos Public License (v. 2.0): http://sources.redhat.com/ecos/license-overview.html
 1. Ricoh Source Code Public License: http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml
 1. SugarCRM Public License v1.1.3: http://www.sugarcrm.com/crm/SPL
 1. Sun Industry Standards Source License (v. 1.1): http://www.openoffice.org/licenses/sissl_license.html
