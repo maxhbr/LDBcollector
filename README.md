@@ -85,6 +85,8 @@ proprietäre Software überführen.
 1. JasPer License Version 2.0: http://www.ece.uvic.ca/~frodo/jasper/LICENSE
 1. Lua Copyright notice: http://www.lua.org/copyright.html
 1. Lucent Public License Version (v. 1.02): https://web.archive.org/web/20080514131645/http://plan9.bell-labs.com/plan9/license.html
+1. Microsoft Permissive License (Ms-PL): https://web.archive.org/web/20070512223652/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/permissivelicense.mspx (Einordnung unklar)
+1. Microsoft Public License (Ms-PL): https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)
 1. MirOS License: http://mirbsd.org/MirOS-Licence
 1. MIT License: https://spdx.org/licenses/MIT.html#licenseText
 1. Mozart License: http://mozart.github.io/license-info/license.html
@@ -164,6 +166,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Honest Public License (HPL) (v 1.1): https://web.archive.org/web/20150815003528/http://gnugeneration.com/licenses/HPLv1.1.txt
 1. Nethack General Public License: http://www.nethack.org/common/license.html
 1. Open RTLinux Patent License: https://web.archive.org/web/20120222184907/http://rtlinuxfree.com/openpatentlicense.html
+1. RedHat eCos Public License (v. 2.0): http://sources.redhat.com/ecos/license-overview.html
 
 
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
@@ -226,34 +229,34 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Open Telecom Public License: http://www.ifross.de/Fremdartikel/otpl.htm
 1. Openbravo Public License: http://www.openbravo.com/legal/license.html
 1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
-1. RedHat eCos Public License (v. 2.0): http://sources.redhat.com/ecos/license-overview.html
 1. Ricoh Source Code Public License: http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml
-1. SugarCRM Public License v1.1.3: http://www.sugarcrm.com/crm/SPL
+1. SugarCRM Public License (v. 1.1.3): https://web.archive.org/web/20160622020613/http://www.sugarcrm.com/page/sugarcrm-public-license/en
 1. Sun Industry Standards Source License (v. 1.1): http://www.openoffice.org/licenses/sissl_license.html
 1. Sun Public License: http://java.sun.com/spl.html
 1. Sun Public License v1.0: http://www.opensource.org/licenses/sunpublic.php
-1. Sybase Open Watcom Public License 1.0: http://www.opensource.org/licenses/sybase.php
+1. Sybase Open Watcom Public License 1.0: ftp://ftp.openwatcom.org/install/license.txt
 1. Zenplex Public License: http://web.archive.org/web/20041010201945/www.zenplex.org/zpl_txt.html
-1. Zimbra Public License (ZPL) (v. 1.2): http://www.zimbra.com/license/zimbra_public_license_1.2.html
-1. Zimbra Publice License v1.3: http://www.zimbra.com/license/zimbra-public-license-1-3.html
+1. Zimbra Public License (ZPL) (v. 1.2): https://web.archive.org/web/20080205064641/http://www.zimbra.com/license/zimbra_public_license_1.2.html
+1. Zimbra Publice License (v. 1.3): https://web.archive.org/web/20120617001845/http://www.zimbra.com/license/zimbra-public-license-1-3.html
+1. Zimbra Publice License (v. 1.4): https://www.zimbra.com/legal/zimbra-public-license-1-4/
 
 #### Sonstige Lizenzen mit beschränktem Copyleft-Effekt
 
-1. Apple Public Source License (v. 2.0): http://www.opensource.apple.com/apsl/2.0.txt
-1. BitTorrent Open Source License v1.0: http://spdx.org/licenses/BitTorrent-1.0#licenseText
+1. Apple Public Source License (v. 2.0): https://web.archive.org/web/20060323040828/https://opensource.apple.com/apsl/2.0.txt
+1. BitTorrent Open Source License (v. 1.0): https://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?diff_format=s&revision=1.1.1.1&view=markup
 1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
 1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
 1. Contrat de License de Logiciel Libre CeCILL-C: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
-1. Cougaar Open Source License Agreement: http://cougaar.org/docman/view.php/17/126/old_cosl_license.html (Einordnung umstritten)
+1. Cougaar Open Source License Agreement: https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html (Einordnung umstritten)
 1. Eclipse Public License (v. 2.0): https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
+1. GNU Library General Public License (LGPL) (v. 2.0): http://www.gnu.org/copyleft/library.html
 1. GNU Lesser General Public License (LGPL) (v. 2.1): http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.org/licenses/lgpl.html
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.de/lgpl-ger.html (Inoffizielle deutsche Übersetzung)
-1. GNU Library General Public License (LibGPL) (v. 2.0): http://www.gnu.org/copyleft/library.html
 1. Hi-Potent Open Source License: http://web.archive.org/web/20030804175518/www.hi-potent.com/license.html
 1. Jabber Open Source License: http://archive.jabber.org/core/JOSL.pdf
 1. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx1.
-1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080408142746/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx1.
+1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx.
 1. Motosoto Open Source License (v. 0.9.1): http://opensource.org/licenses/motosoto.php
 1. Sybase Open Watcom Public License: http://downloads.openwatcom.org/ftp/license.txt
 1. wxWindows Library License (v. 3.0): https://web.archive.org/web/20090511105912/http://www.freiburg.linux.de:80/~wxxt/licence.html
@@ -325,6 +328,9 @@ kommerzielle Weiterverbreitung verbieten.
 1. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
 1. Jahia Community Source License (JSCL) (v.012): http://www.jahia.org/jahia/Jahia/pid/145
 1. JasPer Software License (1.0): http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE
+1. Microsoft Limited Permissive License (Ms-LPL): https://web.archive.org/web/20070509061152/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedpermissivelicense.mspx 
+1. Microsoft Limited Public License (Ms-LPL): https://web.archive.org/web/20071223053203/http://microsoft.com:80/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx 
+1. Microsoft Limited Community License (Ms-LCL): https://web.archive.org/web/20070427113623/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedcommunitylicense.mspx
 1. Microsoft Reference License (Ms-RefL): https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx
 1. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
 1. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
