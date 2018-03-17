@@ -151,17 +151,18 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
 1. GNU General Public License (GPL) (v. 2.0): http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 1. GNU General Public License (GPL) (v. 3.0): http://www.fsf.org/licensing/licenses/gpl.html
 1. GNU General Public License (GPL) (v. 3.0): http://www.gnu.de/gpl-ger.html (Inoffizielle deutsche Übersetzung)
-1. GNU General Public License v2.0 w/Bison exception: http://spdx.org/licenses/GPL-2.0-with-bison-exception#licenseText
+1. GNU General Public License v2.0 w/Bison exception: https://github.com/ifrOSS/Lizenzcenter/blob/Neue-Gliederung/Bison-exception-2.2
 1. GNU General Public License v2.0 w/Classpath exception: http://www.gnu.org/software/classpath/license.html
 1. GNU General Public License v2.0 w/Font exception: http://www.gnu.org/licenses/gpl-faq.html#FontException
-1. GNU General Public License v2.0 w/GCC Runtime Library exception: http://www.gnu.org/licenses/gpl-faq.html
+1. GNU General Public License v2.0 w/GCC Runtime Library exception: https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=gcc/libgcc1.c;h=762f5143fc6eed57b6797c82710f3538aa52b40b;hb=cb143a3ce4fb417c68f5fa2691a1b1b1053dfba9
 1. GNU General Public License v3.0 w/Autoconf exception: http://www.gnu.org/licenses/autoconf-exception-3.0.html
-1. GNU General Public License v3.0 w/GCC Runtime Library exception: http://www.gnu.org/licenses/gcc-exception-3.1.html
-1. Honest Public License (HPL) (1.0): http://www.projectpier.org/manual/tour/licence
-1. Honest Public License (HPL) (1.1): http://www.gnugeneration.com/licenses/HPLv1.1.txt
-1. IPA Font License: http://www.opensource.org/licenses/ipafont.html
+1. GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.0): http://www.gnu.org/licenses/gcc-exception-3.0.html
+1. GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.1): http://www.gnu.org/licenses/gcc-exception-3.1.html
+1. Honest Public License (HPL) (v 1.0): https://web.archive.org/web/20080215154706/http://www.projectpier.org/manual/tour/licence
+1. Honest Public License (HPL) (v 1.1): https://web.archive.org/web/20150815003528/http://gnugeneration.com/licenses/HPLv1.1.txt
+1. Nethack General Public License: http://www.nethack.org/common/license.html
 1. Open RTLinux Patent License: https://web.archive.org/web/20120222184907/http://rtlinuxfree.com/openpatentlicense.html
-1. wxWindows Library License v. 3.1 (OSI): https://www.wxwidgets.org/about/licence/
+
 
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
 
@@ -179,18 +180,19 @@ Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
 1. European Union Public License (v. 1.0): http://ec.europa.eu/idabc/en/document/7330.html
 1. European Union Public Licence (v. 1.1): https://joinup.ec.europa.eu/page/eupl-text-11-12
 1. European Union Public Licence (v. 1.2): https://joinup.ec.europa.eu/page/eupl-text-11-12
-1. IBM Public License: http://www-128.ibm.com/developerworks/opensource/library/os-i18n2/os-ipl.html
-1. Nethack General Public License: http://www.nethack.org/common/license.html
+1. German Free Software License: https://www.hbz-nrw.de/produkte/open-access/lizenzen/dfsl/german-free-software-license
+1. IBM Public License: http://oss.software.ibm.com:80/developerworks/opensource/license10.html
+1. IPA Font License: https://ipafont.ipa.go.jp/old/ipafont/download.html#en
 1. Open Group Public License: http://www.opengroup.org/openmotif/license
-1. Open Software License (OSL) (v 2.1): http://opensource.org/licenses/osl-2.1.php
-1. Open Software License 1.0: http://www.opensource.org/licenses/osl-1.0.txt
-1. Open Software License 2.0: https://web.archive.org/web/20110805014901/http://www.nexb.com:80/license/LICENSE-OSL-2.0.html
-1. Open Software License 3.0: http://www.rosenlaw.com/OSL3.0.htm
+1. Open Software License 1.0: http://web.archive.org/web/20021201193408/http://rosenlaw.com:80/osl.html
+1. Open Software License 2.0: http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html
+1. Open Software License 2.1: http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm
+1. Open Software License 3.0: https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm
 1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
-1. RedHat eCos Public License (v. 1.1): http://sources.redhat.com/ecos/license-overview.html
+1. RedHat eCos Public License (v. 2.0): http://sources.redhat.com/ecos/license-overview.html
 1. Salutation Public License: http://web.archive.org/web/20050323201906/http://www.salutation.org/lite/lite_license.htm
 1. Software AG License Terms (Quip License) (v. 1.3): http://www.cse.uconn.edu/~dqg/cse350/xml/quip/License.txt
-1. Vim License: http://www.vim.org/htmldoc/uganda.html
+1. Vim License: http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
 
 ### Lizenzen mit beschränktem Copyleft-Effekt
 
@@ -254,6 +256,7 @@ erleichtert werden.
 1. Motosoto Open Source License (v. 0.9.1): http://opensource.org/licenses/motosoto.php
 1. Sybase Open Watcom Public License: http://downloads.openwatcom.org/ftp/license.txt
 1. wxWindows Library License (v. 3.0): https://web.archive.org/web/20090511105912/http://www.freiburg.linux.de:80/~wxxt/licence.html
+1. wxWindows Library License (v. 3.1): https://www.wxwidgets.org/about/licence/
 1. Yahoo! Public License (YPL) (v. 1.1): http://www.zimbra.com/license/yahoo_public_license_1.1.html
 
 #### Lizenzen mit Wahlmöglichkeiten
