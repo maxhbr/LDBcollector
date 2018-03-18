@@ -268,7 +268,6 @@ nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
 Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
 Weiterentwicklungen weiterverbreitet werden können.
 
-1. Apple Public Source License 1.1: http://www.opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE
 1. Artistic License (v. 1.0): http://www.perlfoundation.org/artistic_license_1_0 (Einordnung umstritten)
 1. Artistic License (v. 2.0): http://www.perlfoundation.org/artistic_license_2_0
 1. Clarified Artistic License: http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html
@@ -294,17 +293,17 @@ Weiterentwicklungen durch den Lizenznehmer vor. Diese Lizenzen
 werden zumeist bei Programmen verwendet, die ursprünglich
 proprietär vertrieben wurden.
 
-1. Apple Public Source License: http://www.opensource.apple.com/apsl/1.0.txt (Einordnung umstritten)
-1. Apple Public Source License (v. 1.1): http://www.opensource.apple.com/apsl/1.1.txt (Einordnung umstritten)
-1. Apple Public Source License (v. 1.2): http://www.opensource.apple.com/apsl/1.2.txt (Einordnung umstritten)
-1. Macromedia Open Source License Agreement (v. 1.0): http://www.adobe.com/v1/handlers/index.cfm?ID=23075
+1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html (Einordnung umstritten)
+1. Apple Public Source License 1.1: https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE (Einordnung umstritten)
+1. Apple Public Source License (v. 1.2): https://web.archive.org/web/20060209125840/http://www.opensource.apple.com/apsl/1.2.txt (Einordnung umstritten)
+1. Macromedia Open Source License Agreement (v. 1.0): https://web.archive.org/web/20020627100645/http://www.macromedia.com/v1/handlers/index.cfm?ID=23075
 1. Netscape Public License (NPL) (v. 1.0): https://web.archive.org/web/19990422030305/http://www.mozilla.org/NPL/NPL-1.0.html
 1. Netscape Public License (NPL) (v. 1.1): https://web.archive.org/web/20020202113823/http://www.mozilla.org:80/MPL/NPL-1.1.html
-1. OCLC Research Public License (v. 1.0): https://web.archive.org/web/20061013042737/http://www.free-soft.org/mirrors/www.opensource.org/licenses/oclc.php
-1. OCLC Research Public License (v. 2.0): http://www.oclc.org/research/software/license/v2final.htm
+1. OCLC Research Public License (v. 1.0): https://web.archive.org/web/20020817035019/http://www.oclc.org/research/software/license/
+1. OCLC Research Public License (v. 2.0): https://web.archive.org/web/20060217100845/http://www.oclc.org/research/software/license/v2final.htm
 1. Open Map Software License Agreement: https://web.archive.org/web/20160528102034/http://openmap.bbn.com:80/license.html
-1. Q Public License (QPL): https://web.archive.org/web/20101115061537/http://doc.trolltech.com:80/4.0/qpl.html
-1. Q Public License 1.0: http://doc.qt.nokia.com/3.3/license.html
-1. RealNetworks Community Source License - Research and Development Use (RCSL R&D)(v 3.0): https://helixcommunity.org/content/rcsl
+1. Q Public License (v. 1.0) (QPL): https://web.archive.org/web/20101115061537/http://doc.trolltech.com:80/4.0/qpl.html
+1. RealNetworks Community Source License - Research and Development Use (RCSL R&D) (v 2.0): https://web.archive.org/web/20060924224843/https://www.helixcommunity.org/content/rcsl
+1. RealNetworks Community Source License - Research and Development Use (RCSL R&D) (v 3.0): https://web.archive.org/web/20141226113418/https://helixcommunity.org/content/rcsl
 1. RealNetworks Public Source License (RPSL) (v. 1.0): https://community.helixcommunity.org/content/rpsl
 
