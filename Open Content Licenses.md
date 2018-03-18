@@ -35,10 +35,16 @@ andere Werkgattungen zu übertragen. Da keine allgemein anerkannte Open Content 
 1. Creative Commons Attribution Share Alike 4.0 International: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 1. Creative Commons Licenses: http://creativecommons.org/licenses
 1. Creative Commons Zero v1.0 Universal: http://creativecommons.org/publicdomain/zero/1.0/legalcode
-1. Digital Peer Publishing License (v. 1.0): http://www.dipp.nrw.de/lizenzen/dppl/index_html/dppl/DPPL_v1_de_02-2004.html
-1. Digital Peer Publishing License (v. 2.0): http://www.dipp.nrw.de/lizenzen/dppl/index_html/dppl/DPPL_v2_de_06-2004.html
-1. Digital Peer Publishing License - "freie DPPL" (f-DPPL): http://www.dipp.nrw.de/lizenzen/dppl/index_html/fdppl/f-DPPL_v1_de_11-2004.html
-1. Digital Peer Publishing License - "modulare DPPL" (m-DPPL): http://www.dipp.nrw.de/lizenzen/dppl/index_html/mdppl/m-DPPL_v1_de_11-2004.html
+1. Digital Peer Publishing Lizenz 1.0 (DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/dppl/DPPL_v1_de_02-2004
+1. Digital Peer Publishing Lizenz 2.0 (DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/dppl/DPPL_v2_de_06-2004
+1. Digital Peer Publishing Lizenz 3.0 (DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/dppl/DPPL_v3_de_06-2004
+1. Digital Peer Publishing Licence 3.0 (DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/fdppl/f-DPPL_v3_en_11-2008 
+1. Freie Digital Peer Publishing Lizenz - "freie DPPL" 1.0 (f-DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/fdppl/f-DPPL_v1_de_11-2004
+1. Freie Digital Peer Publishing Lizenz - "freie DPPL" 3.0 (f-DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/dppl/DPPL_v3_de_11-2008
+1. Free Digital Peer Publishing License 3.0 (f-DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/dppl/DPPL_v3_en_11-2008
+1. Modulare Digital Peer Publishing Lizenz 1.0 (m-DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/mdppl/m-DPPL_v1_de_11-2004
+1. Modulare Digital Peer Publishing Lizenz 3.0 (m-DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/mdppl/m-DPPL_v3_de_11-2008
+1. Modular Digital Peer Publishing Licence 3.0 (m-DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/mdppl/m-DPPL_v3_en_11-2008
 1. EFF Audio Public License (v. 1.0.1): http://www.eff.org/IP/Open_licenses/20010421_eff_oal_1.0.html
 1. electronic Music Public License: http://web.archive.org/web/20050408042334/http://www.killerfish.de/fys/empl/empl_de.html
 1. Ethymonics Free Music License: http://www.ethymonics.co.uk/fml.html
