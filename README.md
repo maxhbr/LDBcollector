@@ -31,7 +31,8 @@ Open Source Definition nicht identisch sind und zudem ständig
 weiterentwickelt werden. Diese Lizenzen sind mit "Einordnung
 umstritten" gekennzeichnet.
 
-### Lizenzen ohne Copyleft-Effekt
+
+### Lizenzen ohne Copyleft-Effekt ("Permissive Licenses")
 
 Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
 dem Lizenznehmer alle Freiheiten einer Open Source Lizenz
@@ -41,27 +42,41 @@ der Lizenznehmer veränderte Versionen der Software unter
 beliebigen Lizenzbedingungen weiterverbreiten, also auch in
 proprietäre Software überführen.
 
-#### BSDartige Lizenzen
 
-Zu den BSDartigen Lizenzen gehört die Original BSD-Lizenz und die
-ihr nachgebildeten Derivate.
-
-1. 4.4 BSD Copyright (Original BSD-Lizenz): https://www.freebsd.org/copyright/license.html
 1. 4Suite License (v. 1.1): https://web.archive.org/web/20060210220828/http://4suite.org/COPYRIGHT.doc
+1. Academic Free License (AFL) (v. 1.0): https://web.archive.org/web/20020808082753/http://www.rosenlaw.com:80/afl.html
+1. Academic Free License (AFL) (v. 1.1): https://web.archive.org/web/20030224125640/http://www.rosenlaw.com:80/afl.html
+1. Academic Free License (AFL) (v. 1.2): https://web.archive.org/web/20030515043719/http://www.rosenlaw.com:80/afl1.2.html
+1. Academic Free License (AFL) (v. 2.0): https://web.archive.org/web/20041212013430/http://rosenlaw.com:80/afl2.0.html
+1. Academic Free License (AFL) (v. 2.1): https://web.archive.org/web/20080413164801/http://rosenlaw.com:80/afl21.htm
+1. Academic Free License (AFL) (v. 3.0): https://web.archive.org/web/20080317004542/http://www.rosenlaw.com/AFL3.0.htm
 1. Apache License (v. 1.0): http://www.apache.org/licenses/LICENSE-1.0
 1. Apache License (v. 1.0): http://www.apache.org/licenses/LICENSE-1.0
 1. Apache License (v. 1.1): http://www.apache.org/licenses/LICENSE-1.1
 1. Apache License (v. 2.0): http://www.apache.org/licenses/LICENSE-2.0.html
+1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html
+1. Beerware License: http://people.freebsd.org/~phk/
+1. Boost Software License (Einordnung umstritten): http://www.boost.org/LICENSE_1_0.txt
 1. BSD 2-clause "Simplified" or "FreeBSD" License: http://www.freebsd.org/copyright/freebsd-license.html
 1. BSD 3-clause "New" or "Revised" License: https://spdx.org/licenses/BSD-3-Clause
 1. BSD 4-clause "Original" or "Old" License: https://www.freebsd.org/copyright/license.html
+1. CeCILL-B Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html
 1. Christian Software Public License: http://pudge.net/jesux/cspl.html
+1. CNRI Open Source License Agreement: http://www.handle.net/python_licenses/python1.6_9-5-00.html
+1. Condor Public License (v. 1.1): http://www.cs.wisc.edu/condor/license.html#condor
+1. Contrat de License de Logiciel Libre CeCILL-B: http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html
 1. Cougaar Open Source License: https://web.archive.org/web/20100818181228/http://cougaar.org/twiki/bin/view/Main/LicenseText
 1. Cryptix General License: http://www.cryptix.org/LICENSE.TXT
 1. Eiffel Forum License (v. 1.0): http://www.eiffel-nice.org/license/forum.txt
 1. Eiffel Forum License (v. 2.0): http://www.eiffel-nice.org/license/eiffel-forum-license-2.html
 1. Entessa Public License (v. 1.0): http://web.archive.org/web/20050419215723/www.openseal.org/epl/
 1. Free Fuzzy Logic Library Open Source License: http://ffll.sourceforge.net/license.txt
+1. FreeType Project License: http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
+1. Galen Open Source License (GOSL): http://www.opengalen.org/gosl.html
+1. Globus Toolkit Public License: https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html
+1. Globus Toolkit Public License (GTPL) (v. 2.0): http://www.globus.org/toolkit/license.html
+1. ICU License: https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
+1. ISC License: http://mirbsd.org/ISC-Licence
 1. Horde Apache-like License: http://www.horde.org/licenses/asl.php
 1. Horde BSD-like License: http://www.horde.org/licenses/bsdl.php
 1. Indiana University Extreme! Lab Software License, Version 1.2: http://www.extreme.indiana.edu/license.txt
@@ -69,9 +84,14 @@ ihr nachgebildeten Derivate.
 1. ISC License: https://www.isc.org/downloads/software-support-policy/isc-license/
 1. JasPer License Version 2.0: http://www.ece.uvic.ca/~frodo/jasper/LICENSE
 1. Lua Copyright notice: http://www.lua.org/copyright.html
+1. Lucent Public License Version (v. 1.02): https://web.archive.org/web/20080514131645/http://plan9.bell-labs.com/plan9/license.html
+1. Microsoft Permissive License (Ms-PL): https://web.archive.org/web/20070512223652/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/permissivelicense.mspx (Einordnung unklar)
+1. Microsoft Public License (Ms-PL): https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)
+1. MirOS License: http://mirbsd.org/MirOS-Licence
 1. MIT License: https://spdx.org/licenses/MIT.html#licenseText
 1. Mozart License: http://mozart.github.io/license-info/license.html
 1. Naumen Public License: http://www.worldlii.org/int/other/PubRL/2009/42.html
+1. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
 1. Open Media Group Open Source License: https://web.archive.org/web/20090213173457/http://www.openmediagroup.com/license.html
 1. OpenLDAP Public License (v. 2.3): http://www.mibsoftware.com/librock/librock/license/oldap2_3.txt
 1. OpenLDAP Public License (v. 2.5): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=6852b9d90022e8593c98205413380536b1b5a7cf
@@ -82,9 +102,17 @@ ihr nachgebildeten Derivate.
 1. Phorum License (v. 2.0): http://phorum.org/license.txt
 1. PHP License (v. 3.0): http://www.php.net/license/3_0.txt
 1. Privaria Attribution Assurance License: https://web.archive.org/web/20050305170641/http://eepatents.com/privaria/#license
+1. Python 2.0.1 License: https://www.python.org/download/releases/2.0.1/license/
 1. Python 2.4.2 license: http://www.python.org/download/releases/2.4.2/license/
+1. Python Software Foundation License (v. 2): https://www.python.org/download/releases/2.7.7/license/
+1. Ruby License: http://www.ruby-lang.org/en/LICENSE.txt
+1. Sendmail License: http://www.sendmail.org/ftp/LICENSE
 1. skyBuilders Open Source License: http://www.skybuilders.com/OpenSourceLicense.html
+1. Sleepycat License: https://fedoraproject.org/wiki/Licensing/Sleepycat
 1. SpeechWorks Public License - Software (v. 1.1): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
+1. Standard ML of New Jersey Copyright Notice: http://cm.bell-labs.com/cm/cs/what/smlnj/license.html
+1. Suneido Free Software License: http://suneido.com/wp-content/uploads/delightful-downloads/2014/10/free_license.txt
+1. Tcl/Tk License Terms: http://www.tcl.tk/software/tcltk/license.html
 1. Tea Software License: http://teatrove.sourceforge.net/license.html
 1. The SpeechWorks Public License (v. 1.1 ): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
 1. Udanax Open-Source License: http://udanax.xanadu.com/license.html
@@ -94,44 +122,12 @@ ihr nachgebildeten Derivate.
 1. X Window System License: https://web.archive.org/web/20050406051821/%20http://www.x.org/Downloads_terms.html
 1. X.Net License: http://www.xnetinc.com/xiua/copyright.htm
 1. XFree86 Licence: http://www.xfree86.org/legal/licenses.html
+1. xinetd License: https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
 1. ZLib license: http://www.gzip.org/zlib/zlib_license.html
 1. Zope Public License 1.1: http://old.zope.org/Resources/License/ZPL-1.1
 1. Zope Public License 2.0: http://old.zope.org/Resources/License/ZPL-2.0
-
-#### Sonstige Lizenzen ohne Copyleft-Effekt
-
-1. Academic Free License (AFL) (v. 1.0): https://web.archive.org/web/20020808082753/http://www.rosenlaw.com:80/afl.html
-1. Academic Free License (AFL) (v. 1.1): https://web.archive.org/web/20030224125640/http://www.rosenlaw.com:80/afl.html
-1. Academic Free License (AFL) (v. 1.2): https://web.archive.org/web/20030515043719/http://www.rosenlaw.com:80/afl1.2.html
-1. Academic Free License (AFL) (v. 2.0): https://web.archive.org/web/20041212013430/http://rosenlaw.com:80/afl2.0.html
-1. Academic Free License (AFL) (v. 2.1): https://web.archive.org/web/20080413164801/http://rosenlaw.com:80/afl21.htm
-1. Academic Free License (AFL) (v. 3.0): https://web.archive.org/web/20080317004542/http://www.rosenlaw.com/AFL3.0.htm
-1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html
-1. Beerware License: http://people.freebsd.org/~phk/
-1. Boost Software License (Einordnung umstritten): http://www.boost.org/LICENSE_1_0.txt
-1. CeCILL-B License: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt
-1. CNRI Open Source License Agreement: http://www.handle.net/python_licenses/python1.6_9-5-00.html
-1. (bis Python 1.6)
-1. Condor Public License (v. 1.1): http://www.cs.wisc.edu/condor/license.html#condor
-1. FreeType Project License: http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
-1. Galen Open Source License (GOSL): http://www.opengalen.org/gosl.html
-1. Globus Toolkit Public License: https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html
-1. Globus Toolkit Public License (GTPL) (v. 2.0): http://www.globus.org/toolkit/license.html
-1. ICU License: https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
-1. ISC License: http://mirbsd.org/ISC-Licence
-1. Lucent Public License Version (v. 1.02): https://web.archive.org/web/20080514131645/http://plan9.bell-labs.com/plan9/license.html
-1. MirOS License: http://mirbsd.org/MirOS-Licence
-1. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
-1. Python 2.0.1 License: https://www.python.org/download/releases/2.0.1/license/
-1. Python Software Foundation License (v. 2): https://www.python.org/download/releases/2.7.7/license/
-1. Ruby License: http://www.ruby-lang.org/en/LICENSE.txt
-1. Sendmail License: http://www.sendmail.org/ftp/LICENSE
-1. Standard ML of New Jersey Copyright Notice: http://cm.bell-labs.com/cm/cs/what/smlnj/license.html
-1. Suneido Free Software License: http://suneido.com/wp-content/uploads/delightful-downloads/2014/10/free_license.txt
-1. Tcl/Tk License Terms: http://www.tcl.tk/software/tcltk/license.html
-1. The Sleepycat License: https://fedoraproject.org/wiki/Licensing/Sleepycat
-1. xinetd License: https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
 1. Zope Public License (v. 2.1): https://web.archive.org/web/20060426220850/http://www.zope.org:80/Resources/ZPL/
+
 
 ### Lizenzen mit strengem Copyleft-Effekt
 
@@ -139,123 +135,131 @@ Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
 Lizenznehmer verpflichtet von der ursprünglichen Software
 abgeleitete Werke ebenfalls nur unter den Bedingungen der
 Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten
-Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel"
+Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
+
 
 #### GPLartige Lizenzen
 
-1. Affero General Public License: http://www.affero.org/oagpl.html
+Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit ausnahmen können auch als beschränktes Copyleft verstanden werden.
+
+1. Affero General Public License (v. 1): http://www.affero.org/oagpl.html
+1. Affero General Public License (v. 2): http://www.affero.org/agpl2.html
 1. Alternate Route Open Source License (v. 1.1): http://www.wsdot.wa.gov/eesc/bridge/alternateroute/arosl.htm
-1. CeCILL Free Software License Agreement v1.0: http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html
-1. CeCILL Free Software License Agreement v2.0: http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html
-1. CeCILL License (v. 2): http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt
-1. CeCILL-B Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-B_V1-fr.html
-1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
 1. CrossPoint Quelltextlizenz: http://www.crosspoint.de/srclicense.html
 1. eCos License (v. 2.0): http://www.gnu.org/licenses/ecos-license.html
-1. European Union Public Licence (v1.1): https://web.archive.org/web/20120707011902/http://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf
 1. FreeCard License: http://freecard.sourceforge.net/website/licence/license.php
-1. GNU Affero General Public License (AGPLv3) (v. 3.0): http://www.fsf.org/licensing/licenses/agpl-3.0.html
+1. GNU Affero General Public License (AGPL-3.0) (v. 3.0): http://www.fsf.org/licensing/licenses/agpl-3.0.html
 1. GNU Classpath - GPL with special exception: http://www.gnu.org/software/classpath/license.html
-1. (GPL with special exception)
 1. GNU Emacs General Public License: http://www.free-soft.org/gpl_history/emacs_gpl.html
 1. GNU General Public License (GPL) (v. 1.0): http://www.gnu.org/copyleft/copying-1.0.html
 1. GNU General Public License (GPL) (v. 2.0): http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 1. GNU General Public License (GPL) (v. 3.0): http://www.fsf.org/licensing/licenses/gpl.html
 1. GNU General Public License (GPL) (v. 3.0): http://www.gnu.de/gpl-ger.html (Inoffizielle deutsche Übersetzung)
-1. GNU General Public License v2.0 w/Bison exception: http://spdx.org/licenses/GPL-2.0-with-bison-exception#licenseText
+1. GNU General Public License v2.0 w/Bison exception: https://github.com/ifrOSS/Lizenzcenter/blob/Neue-Gliederung/Bison-exception-2.2
 1. GNU General Public License v2.0 w/Classpath exception: http://www.gnu.org/software/classpath/license.html
 1. GNU General Public License v2.0 w/Font exception: http://www.gnu.org/licenses/gpl-faq.html#FontException
-1. GNU General Public License v2.0 w/GCC Runtime Library exception: http://www.gnu.org/licenses/gpl-faq.html
+1. GNU General Public License v2.0 w/GCC Runtime Library exception: https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=gcc/libgcc1.c;h=762f5143fc6eed57b6797c82710f3538aa52b40b;hb=cb143a3ce4fb417c68f5fa2691a1b1b1053dfba9
 1. GNU General Public License v3.0 w/Autoconf exception: http://www.gnu.org/licenses/autoconf-exception-3.0.html
-1. GNU General Public License v3.0 w/GCC Runtime Library exception: http://www.gnu.org/licenses/gcc-exception-3.1.html
-1. Honest Public License (HPL) (1.0): http://www.projectpier.org/manual/tour/licence
-1. Honest Public License (HPL) (1.1): http://www.gnugeneration.com/licenses/HPLv1.1.txt
-1. IPA Font License: http://www.opensource.org/licenses/ipafont.html
+1. GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.0): http://www.gnu.org/licenses/gcc-exception-3.0.html
+1. GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.1): http://www.gnu.org/licenses/gcc-exception-3.1.html
+1. Honest Public License (HPL) (v 1.0): https://web.archive.org/web/20080215154706/http://www.projectpier.org/manual/tour/licence
+1. Honest Public License (HPL) (v 1.1): https://web.archive.org/web/20150815003528/http://gnugeneration.com/licenses/HPLv1.1.txt
+1. Nethack General Public License: http://www.nethack.org/common/license.html
 1. Open RTLinux Patent License: https://web.archive.org/web/20120222184907/http://rtlinuxfree.com/openpatentlicense.html
-1. wxWindows Library License v. 3.1 (OSI): https://www.wxwidgets.org/about/licence/
+1. RedHat eCos Public License (v. 2.0): http://sources.redhat.com/ecos/license-overview.html
+
 
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
 
 1. Arphic Public License: http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE
+1. CeCILL Free Software License Agreement (v. 1.0): http://www.cecill.info/licences/Licence_CeCILL_V1-US.html
+1. CeCILL Free Software License Agreement (v. 1.1): http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html
+1. CeCILL Free Software License Agreement (v. 2.0): http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
+1. CeCILL Free Software License Agreement (v. 2.1): http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html
+1. Contrat de License de Logiciel Libre CeCILL (v. 1.0): http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html
+1. Contrat de License de Logiciel Libre CeCILL  (v. 2.0): http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html
+1. Contrat de License de Logiciel Libre CeCILL  (v. 2.1): http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html
 1. Common Public License: http://www.eclipse.org/legal/cpl-v10.html
 1. Deutsche Freie Softwarelizenz (d-fsl): http://www.d-fsl.org/
 1. Eclipse Public License (v. 1.0): http://www.eclipse.org/legal/epl-v10.html
 1. European Union Public License (v. 1.0): http://ec.europa.eu/idabc/en/document/7330.html
-1. IBM Public License: http://www-128.ibm.com/developerworks/opensource/library/os-i18n2/os-ipl.html
-1. Nethack General Public License: http://www.nethack.org/common/license.html
+1. European Union Public Licence (v. 1.1): https://joinup.ec.europa.eu/page/eupl-text-11-12
+1. European Union Public Licence (v. 1.2): https://joinup.ec.europa.eu/page/eupl-text-11-12
+1. German Free Software License: https://www.hbz-nrw.de/produkte/open-access/lizenzen/dfsl/german-free-software-license
+1. IBM Public License: http://oss.software.ibm.com:80/developerworks/opensource/license10.html
+1. IPA Font License: https://ipafont.ipa.go.jp/old/ipafont/download.html#en
 1. Open Group Public License: http://www.opengroup.org/openmotif/license
-1. Open Software License (OSL) (v 2.1): http://opensource.org/licenses/osl-2.1.php
-1. Open Software License 1.0: http://www.opensource.org/licenses/osl-1.0.txt
-1. Open Software License 2.0: https://web.archive.org/web/20110805014901/http://www.nexb.com:80/license/LICENSE-OSL-2.0.html
-1. Open Software License 3.0: http://www.rosenlaw.com/OSL3.0.htm
-1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
-1. RedHat eCos Public License (v. 1.1): http://sources.redhat.com/ecos/license-overview.html
+1. Open Software License 1.0: http://web.archive.org/web/20021201193408/http://rosenlaw.com:80/osl.html
+1. Open Software License 2.0: http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html
+1. Open Software License 2.1: http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm
+1. Open Software License 3.0: https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm
 1. Salutation Public License: http://web.archive.org/web/20050323201906/http://www.salutation.org/lite/lite_license.htm
 1. Software AG License Terms (Quip License) (v. 1.3): http://www.cse.uconn.edu/~dqg/cse350/xml/quip/License.txt
-1. Vim License: http://www.vim.org/htmldoc/uganda.html
+1. Vim License: http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
 
 ### Lizenzen mit beschränktem Copyleft-Effekt
 
-Lizenzen mit beschränktem Copyleft-Effekt gleichen den unter II.
-aufgeführten Lizenzen insoweit, als sie ebenfalls einen
-Copyleft-Effekt haben, der aber nur eingeschränkt ist. Sofern
-Modifikationen der Software in eigenen Dateien realisiert werden,
-können diese Dateien auch unter anderen, z.B. proprietären
-Lizenzbedingungen weiterverbreitet werden. Damit soll die
-Kombination von Software unter verschiedenen Lizenztypen
-erleichtert werden.
+Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält. 
 
 #### MPLartige Lizenzen
 
+Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, können diese Dateien auch unter anderen, z.B. proprietären Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden.
+
 1. Common Development and Distribution License (CDDL) (v. 1.0): http://oss.oracle.com/licenses/CDDL
-1. Common Development and Distribution License, Version 1.1 (CDDL v 1.1): https://glassfish.java.net/public/CDDL+GPL_1_1.html
-1. Common Public Attribution License 1.0: http://www.opensource.org/licenses/cpal_1.0
-1. Computer Associates Trusted Open Source License 1.1: http://www.luebeckonline.com/mustervertraege/software-vertraege/open-source-lizenz/computer-associates-trusted-open-source-license-version-11.html
+1. Common Development and Distribution License, Version 1.1 (CDDL v 1.1): https://javaee.github.io/glassfish/LICENSE
+1. Common Public Attribution License 1.0: https://www.agnitas.de/e-marketing-manager/email-marketing-software/openemm/license/
+1. Computer Associates Trusted Open Source License 1.1: https://web.archive.org/web/20160308205306/http://www.luebeckonline.com/mustervertraege/software-vertraege/open-source-lizenz/computer-associates-trusted-open-source-license-version-11.html
 1. CUA Office Public License v1.0: http://www.opensource.org/licenses/cuaoffice.php
 1. Erlang Public License (v. 1.1): http://www.erlang.org/EPLICENSE
-1. Erlang Public License v1.1: http://www.erlang.org/EPLICENSE
-1. gSOAP Public License v1.b: http://www.cs.fsu.edu/~engelen/license.html
+1. gSOAP Public License (v. 1): https://web.archive.org/web/20020822050424/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v.  1.1): https://web.archive.org/web/20021104130030/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v.  1.2): https://web.archive.org/web/20030420224716/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v.  1.3): https://web.archive.org/web/20030608134559/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v. 1.3a): https://web.archive.org/web/20050923110600/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v. 1.3b): http://www.cs.fsu.edu/~engelen/license.html
 1. ICS Open Source Public License: http://web.archive.org/web/20030625151406/http://www.opencontrol.org/OSPL.htm
-1. Interbase Public License: http://www.borland.com/devsupport/interbase/opensource/IPL.html
+1. Interbase Public License: https://web.archive.org/web/20051201062423/http://bdn.borland.com:80/article/0,1410,30198,00.html
 1. Mozilla Public License (v. 1.0): http://www.mozilla.org/MPL/MPL-1.0.html
 1. Mozilla Public License (v. 1.1): http://www.mozilla.org/MPL/MPL-1.1.html
 1. Mozilla Public License (v. 2.0): http://www.mozilla.org/MPL/2.0/
-1. NASA Open Source Agreement (v. 1.3): http://worldwind.arc.nasa.gov/worldwind-nosa-1.3.html
+1. NASA Open Source Agreement (v. 1.3): https://ti.arc.nasa.gov/opensource/nosa/
 1. Netizen Open Source License (NOSL): http://web.archive.org/web/20000815212105/bits.netizen.com.au/licenses/NOSL/
 1. Nokia Open Source License: http://www.opensource.org/licenses/nokia.php
 1. Open Telecom Public License: http://www.ifross.de/Fremdartikel/otpl.htm
 1. Openbravo Public License: http://www.openbravo.com/legal/license.html
-1. Red Hat eCos Public License v1.1: http://ecos.sourceware.org/old-license.html
+1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
 1. Ricoh Source Code Public License: http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml
-1. SugarCRM Public License v1.1.3: http://www.sugarcrm.com/crm/SPL
+1. SugarCRM Public License (v. 1.1.3): https://web.archive.org/web/20160622020613/http://www.sugarcrm.com/page/sugarcrm-public-license/en
 1. Sun Industry Standards Source License (v. 1.1): http://www.openoffice.org/licenses/sissl_license.html
 1. Sun Public License: http://java.sun.com/spl.html
 1. Sun Public License v1.0: http://www.opensource.org/licenses/sunpublic.php
-1. Sybase Open Watcom Public License 1.0: http://www.opensource.org/licenses/sybase.php
+1. Sybase Open Watcom Public License 1.0: ftp://ftp.openwatcom.org/install/license.txt
 1. Zenplex Public License: http://web.archive.org/web/20041010201945/www.zenplex.org/zpl_txt.html
-1. Zimbra Public License (ZPL) (v. 1.2): http://www.zimbra.com/license/zimbra_public_license_1.2.html
-1. Zimbra Publice License v1.3: http://www.zimbra.com/license/zimbra-public-license-1-3.html
+1. Zimbra Public License (ZPL) (v. 1.2): https://web.archive.org/web/20080205064641/http://www.zimbra.com/license/zimbra_public_license_1.2.html
+1. Zimbra Publice License (v. 1.3): https://web.archive.org/web/20120617001845/http://www.zimbra.com/license/zimbra-public-license-1-3.html
+1. Zimbra Publice License (v. 1.4): https://www.zimbra.com/legal/zimbra-public-license-1-4/
 
 #### Sonstige Lizenzen mit beschränktem Copyleft-Effekt
 
-1. Apple Public Source License (v. 2.0): http://www.opensource.apple.com/apsl/2.0.txt
-1. BitTorrent Open Source License v1.0: http://spdx.org/licenses/BitTorrent-1.0#licenseText
+1. Apple Public Source License (v. 2.0): https://web.archive.org/web/20060323040828/https://opensource.apple.com/apsl/2.0.txt
+1. BitTorrent Open Source License (v. 1.0): https://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?diff_format=s&revision=1.1.1.1&view=markup
 1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
-1. CeCILL-C License: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.txt
-1. Cougaar Open Source License Agreement: http://cougaar.org/docman/view.php/17/126/old_cosl_license.html (Einordnung umstritten)
+1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
+1. Contrat de License de Logiciel Libre CeCILL-C: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
+1. Cougaar Open Source License Agreement: https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html (Einordnung umstritten)
 1. Eclipse Public License (v. 2.0): https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
+1. GNU Library General Public License (LGPL) (v. 2.0): http://www.gnu.org/copyleft/library.html
 1. GNU Lesser General Public License (LGPL) (v. 2.1): http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.org/licenses/lgpl.html
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.de/lgpl-ger.html (Inoffizielle deutsche Übersetzung)
-1. GNU Library General Public License (LibGPL) (v. 2.0): http://www.gnu.org/copyleft/library.html
 1. Hi-Potent Open Source License: http://web.archive.org/web/20030804175518/www.hi-potent.com/license.html
 1. Jabber Open Source License: http://archive.jabber.org/core/JOSL.pdf
-1. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx1.
-1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080408142746/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx1.
+1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx.
 1. Motosoto Open Source License (v. 0.9.1): http://opensource.org/licenses/motosoto.php
-1. Sybase Open Watcom Public License: http://downloads.openwatcom.org/ftp/license.txt
 1. wxWindows Library License (v. 3.0): https://web.archive.org/web/20090511105912/http://www.freiburg.linux.de:80/~wxxt/licence.html
-1. Yahoo! Public License (YPL) (v. 1.1): http://www.zimbra.com/license/yahoo_public_license_1.1.html
+1. wxWindows Library License (v. 3.1): https://www.wxwidgets.org/about/licence/
+1. Yahoo! Public License (YPL) (v. 1.1): https://web.archive.org/web/20120617001853/http://www.zimbra.com/license/yahoo_public_license_1.0.html
 
 #### Lizenzen mit Wahlmöglichkeiten
 
@@ -268,18 +272,17 @@ Weiterentwicklungen weiterverbreitet werden können.
 1. Artistic License (v. 1.0): http://www.perlfoundation.org/artistic_license_1_0 (Einordnung umstritten)
 1. Artistic License (v. 2.0): http://www.perlfoundation.org/artistic_license_2_0
 1. Clarified Artistic License: http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html
-1. Keith Devens' Open Source License: http://www.keithdevens.com/software/license/
+1. Keith Devens' Open Source License: https://web.archive.org/web/20100604220226/http://www.keithdevens.com/software/license/
 1. LaTeX Project Public License (LPPL) (v. 1.0): http://www.latex-project.org/lppl/lppl-1-0.html
 1. LaTeX Project Public License (LPPL) (v. 1.1): http://www.latex-project.org/lppl/lppl-1-1.html
 1. LaTeX Project Public License (LPPL) (v. 1.2): http://www.latex-project.org/lppl/lppl-1-2.html
+1. LaTeX Project Public License (LPPL) (v. 1.3b): https://www.latex-project.org/lppl/lppl-1-3b/
 1. LaTeX Project Public License (LPPL) (v. 1.3b): http://www.latex-project.org/lppl/lppl-1-3b-de.html (Inoffizielle deutsche Übersetzung)
 1. LaTeX Project Public License (LPPL) (v. 1.3c): http://www.latex-project.org/lppl/lppl-1-3c.html
-1. Microsoft Public License (Ms-PL): https://web.archive.org/web/20080408161715/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx
-1. Open Source License for Oracle Berkeley DB: http://www.oracle.com/technology/software/products/berkeley-db/htdocs/oslicense.html
 1. Physnet Package License: http://web.archive.org/web/20060821203230/http://35.9.69.219/home/modules/license.html
 1. SFL License Agreement: https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm
-1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
-1. SGI Free Software License B (v. 1.1): http://oss.sgi.com/projects/FreeB (Einordnung umstritten)
+1. SGI Free Software License B (v. 1.0): https://web.archive.org/web/20130114073135/http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
+1. SGI Free Software License B (v. 1.1): https://web.archive.org/web/20170414231252/http://oss.sgi.com:80/projects/FreeB/SGIFreeSWLicB.1.1.doc (Einordnung umstritten)
 1. Sleepycat Software Product License: http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html
 
 #### Lizenzen mit Sonderrechten
@@ -305,172 +308,3 @@ proprietär vertrieben wurden.
 1. RealNetworks Community Source License - Research and Development Use (RCSL R&D)(v 3.0): https://helixcommunity.org/content/rcsl
 1. RealNetworks Public Source License (RPSL) (v. 1.0): https://community.helixcommunity.org/content/rpsl
 
-## Sonstige Software Lizenzen
-
-Die hier aufgeführten Lizenzen stammen aus dem Umfeld Freier
-Software oder geben sich den Anschein, Freie Software zu sein,
-ohne die Voraussetzungen der Free Software Definition oder der
-Open Source Definition zu erfüllen. Zum Teil handelt es sich um
-Non-Profit-Lizenzen, die anders als Open Source Lizenzen eine
-kommerzielle Weiterverbreitung verbieten.
-
-1. Aladdin Free Public License (v. 8.0): http://www.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm
-1. Aladdin Free Public License (v. 9.0): https://web.archive.org/web/20121218095513/http://www.artifex.com:80/downloads/doc/Public.htm
-1. AT&T Source Code Agreement (v. 1.2D): http://web.archive.org/web/20050424024245/http://www.research.att.com/sw/license/ast-open.html
-1. CrossPoint Quelltext Lizenz (alt): http://www.crosspoint.de/oldlicense.html
-1. Enhydra Public License (v. 1.1): http://ksoap.objectweb.org/software/license/index.html (Einordnung umstritten)
-1. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
-1. Jahia Community Source License (JSCL) (v.012): http://www.jahia.org/jahia/Jahia/pid/145
-1. JasPer Software License (1.0): http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE
-1. Microsoft Reference License (Ms-RefL): https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx
-1. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
-1. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
-1. PLS Free Software License Agreement (v. 1.0): http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm
-1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html (Einordnung umstritten)
-1. Scilab license: http://www.worldlii.org/int/other/PubRL/2009/51.html
-1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
-1. ShippySoft Source Available License (SSSAL): http://www.shippysoft.com/license.shtml
-1. Squeak License (Apple): https://web.archive.org/web/20150308154920/http://www.squeak.org:80/SqueakLicense
-1. Sun Community Source License: http://www.sun.com/software/jini/licensing/SCSL3_JiniTSA1.html
-1. Sun Solaris Source Code (Foundation Release) License (v. 1.1): http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
-1. The Code Project Open License (CPOL) 1.02: http://www.codeproject.com/info/cpol10.aspx
-1. Truecrypt License v. 3: https://github.com/FreeApophis/TrueCrypt/blob/master/License.txt
-1. University of Utah Public License: http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt
-1. YaST and SuSE Linux license terms: http://ftp2.de.freebsd.org/pub/linux/suse/5.3/i386.de/COPYRIGHT.yast
-1. YaST und SuSE Linux Lizenzbestimmungen: http://www.suse.de/de/private/support/licenses/yast.html
-1. ZIB Academic License: https://web.archive.org/web/20090408081543/http://www.zib.de:80/Optimization/Software/ziblicense.html
-
-## Open Content Lizenzen
-
-Die im Folgenden aufgeführten Lizenzen versuchen, den
-Grundgedanken, der der Freien Software zu Grunde liegt, auch auf
-andere Werkgattungen zu übertragen. Da keine allgemein anerkannte
-Open Content Definition besteht, sind die Lizenzen sehr heterogen.
-
-1. Apple's Common Documentation License (v. 1.0): http://www.opensource.apple.com/cdl
-1. Creative Commons Attribution 1.0: http://creativecommons.org/licenses/by/1.0/legalcode
-1. Creative Commons Attribution 2.0: http://creativecommons.org/licenses/by/2.0/legalcode
-1. Creative Commons Attribution 2.5: http://creativecommons.org/licenses/by/2.5/legalcode
-1. Creative Commons Attribution 3.0: http://creativecommons.org/licenses/by/3.0/legalcode
-1. Creative Commons Attribution 4.0 International: https://creativecommons.org/licenses/by/4.0/legalcode
-1. Creative Commons Attribution No Derivatives 1.0: http://creativecommons.org/licenses/by-nd/1.0/legalcode
-1. Creative Commons Attribution No Derivatives 2.0: http://creativecommons.org/licenses/by-nd/2.0/legalcode
-1. Creative Commons Attribution No Derivatives 2.5: http://creativecommons.org/licenses/by-nd/2.5/legalcode
-1. Creative Commons Attribution No Derivatives 3.0: http://creativecommons.org/licenses/by-nd/3.0/legalcode
-1. Creative Commons Attribution NoDerivatives 4.0 International: https://creativecommons.org/licenses/by-nd/4.0/legalcode
-1. Creative Commons Attribution Non Commercial 1.0: http://creativecommons.org/licenses/by-nc/1.0/legalcode
-1. Creative Commons Attribution Non Commercial 2.0: http://creativecommons.org/licenses/by-nc/2.0/legalcode
-1. Creative Commons Attribution Non Commercial 2.5: http://creativecommons.org/licenses/by-nc/2.5/legalcode
-1. Creative Commons Attribution Non Commercial 3.0: http://creativecommons.org/licenses/by-nc/3.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 1.0: http://creativecommons.org/licenses/by-nd-nc/1.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 2.0: http://creativecommons.org/licenses/by-nc-nd/2.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 2.5: http://creativecommons.org/licenses/by-nc-nd/2.5/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 3.0: http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 1.0: http://creativecommons.org/licenses/by-nc-sa/1.0/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 2.0: http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 2.5: http://creativecommons.org/licenses/by-nc-sa/2.5/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 3.0: http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
-1. Creative Commons Attribution NonCommercial NoDerivatives 4.0 International: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-1. Creative Commons Attribution NonCommercial ShareAlike 4.0 International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
-1. Creative Commons Attribution Share Alike 1.0: http://creativecommons.org/licenses/by-sa/1.0/legalcode
-1. Creative Commons Attribution Share Alike 2.0: http://creativecommons.org/licenses/by-sa/2.0/legalcode
-1. Creative Commons Attribution Share Alike 2.5: http://creativecommons.org/licenses/by-sa/2.5/legalcode
-1. Creative Commons Attribution Share Alike 3.0: http://creativecommons.org/licenses/by-sa/3.0/legalcode
-1. Creative Commons Attribution Share Alike 4.0 International: https://creativecommons.org/licenses/by-sa/4.0/legalcode
-1. Creative Commons Licenses: http://creativecommons.org/licenses
-1. Creative Commons Zero v1.0 Universal: http://creativecommons.org/publicdomain/zero/1.0/legalcode
-1. Digital Peer Publishing License (v. 1.0): http://www.dipp.nrw.de/lizenzen/dppl/index_html/dppl/DPPL_v1_de_02-2004.html
-1. Digital Peer Publishing License (v. 2.0): http://www.dipp.nrw.de/lizenzen/dppl/index_html/dppl/DPPL_v2_de_06-2004.html
-1. Digital Peer Publishing License - "freie DPPL" (f-DPPL): http://www.dipp.nrw.de/lizenzen/dppl/index_html/fdppl/f-DPPL_v1_de_11-2004.html
-1. Digital Peer Publishing License - "modulare DPPL" (m-DPPL): http://www.dipp.nrw.de/lizenzen/dppl/index_html/mdppl/m-DPPL_v1_de_11-2004.html
-1. EFF Audio Public License (v. 1.0.1): http://www.eff.org/IP/Open_licenses/20010421_eff_oal_1.0.html
-1. electronic Music Public License: http://web.archive.org/web/20050408042334/http://www.killerfish.de/fys/empl/empl_de.html
-1. Ethymonics Free Music License: http://www.ethymonics.co.uk/fml.html
-1. Free Art License: https://web.archive.org/web/20080704173805/http://www.artlibre.org/licence.php/lalgb.html
-1. FreeBSD Documentation License: http://www.freebsd.org/copyright/freebsd-doc-license.html
-1. GNU Free Documentation License (FDL) (v. 1.1): http://www.gnu.org/licenses/old-licenses/fdl-1.1.html
-1. GNU Free Documentation License (FDL) (v. 1.1): http://nautix.sourceforge.net/docs/fdl.de.html (inoffizielle deutsche Übersetzung)
-1. GNU Free Documentation License (FDL) (v. 1.2): http://www.giese-online.de/gnufdl-de.html (inoffizielle deutsche Übersetzung)
-1. GNU Free Documentation License (FDL) (v. 1.2): http://www.gnu.org/licenses/old-licenses/fdl-1.2.html
-1. GNU Free Documentation License (FDL) (v. 1.3): http://www.gnu.org/copyleft/fdl.html
-1. Guy Hoffman's license: http://www.ram.org/ramblings/philosophy/fmp/hoffman_license.html
-1. ifrOSS` Freie Lizenz für Texte und Textdatenbanken (IFL Text): http://www.ifross.de/ifross_html/ifl.html
-1. Linux Documentation Project Copying License: http://tldp.org/LDP-COPYRIGHT.html
-1. Lizenz "Freie Kunst": https://web.archive.org/web/20081118201323/http://artlibre.org/licence.php/lalde.html
-1. (Übersetzung der Free Art License)
-1. Lizenz für die freie Nutzung unveränderter Inhalte: http://www.cec.nrw.de/Lizenzen/uvm-lizenz2html.htm
-1. Lizenz für die nichtkommerzielle Nutzung von Inhalten an Schulen und Hochschulen: http://www.cec.nrw.de/Lizenzen/uvm-lizenz4html.htm
-1. Lizenz für die Nutzung von Inhalten in bestimmten Nutzerkreisen: http://www.cec.nrw.de/Lizenzen/uvm-lizenz3html.htm
-1. Lizenz für Freie Inhalte: https://web.archive.org/web/20140701174344/http://www.politikon.org:80/e-lernplattform/lizenzmodelle/lizenz-fuer-freie-inhalte.html
-1. Open Content License (OPL): https://web.archive.org/web/20140608191625/http://www.opencontent.org:80/opl.shtml
-1. Open Directory Project License: http://dmoz.org/license.html
-1. Open Game License: http://www.opengamingfoundation.org/ogl.html
-1. Open Publication License (v. 1.0): http://opencontent.org/openpub
-1. Open Source Music License (OSML): http://www.rootrecords.org/licenses.html
-1. Public Documentation License (PDL): http://www.openoffice.org/licenses/PDL.html
-1. The green Open Music Licence: http://openmusic.linuxtag.org/modules/freecontent/content/openmusic/green.html
-1. The yellow Open Music License: http://openmusic.linuxtag.org/modules/freecontent/content/openmusic/yellow.html
-
-## Sonstige Lizenzen zur freien Nutzung von Immaterialgütern
-
-Der Folgende Abschnitt, führt Lizenzen auf, die weder der Gattung
-Freier Software, noch dem Bereich Open Content unterstellbar sind
-und somit eine eigene Kategorie im Bereich der Immaterialgüter
-bilden.
-
-1. BiOS Material Transfer Agreemant (v. 1.0): http://www.bios.net/daisy/bios/licenses/2998/3004.html
-1. CAMBIA Plant Molecular Enabling Technology BiOS License (v. 1.5): http://www.bios.net/daisy/bios/3530/version/default/part/AttachmentData/data/BiOS%20License%20and%20Tech%20Support%20Agreement%20version%201.5.pdf
-1. Open Database License (ODbL) (v. 1.0): http://www.opendatacommons.org/licenses/odbl/
-
-## Contributor License Agreements
-
-Dieser Abschnitt führt Vereinbarungen auf, die eine eigene
-("inbound") Lizenz enthalten. Sie verweisen ("outbound")
-zusätzlich auf externe Lizenztexte. Übersetzen lässt sich der
-Begriff als Entwicklerlizenzvereinbarung.
-
-### CLA mit nicht-ausschließlicher Lizenz
-
-1. 52°North Contributor License Agreement: http://52north.org/images/stories/52nadmin/files/52north_contributor_license_agreement.pdf
-1. Apache Individual Contributor License Agreement V 2.0: http://www.apache.org/licenses/icla.txt
-1. Aribaweb Contributor Agreement v. 1: http://aribaweb.org/AribaWeb_Contributor_Agreement.pdf
-1. Box, Inc. Contributor License Agreement: http://opensource.box.com/cla/
-1. Django Software Foundation Individual Contributor License Agreement: https://www.djangoproject.com/m/foundation/icla.pdf
-1. Dojo Foundation Individual CLA: http://dojofoundation.org/about/claForm
-1. Fedora Project Individual Contributor License Agreement: https://fedoraproject.org/wiki/Legal:Licenses/CLA
-1. Google Individual Contributor License Agreement: https://developers.google.com/open-source/cla/individual
-1. Harmony Individual Contributor License Agreement: http://harmonyagreements.org/docs/ha-cla-i-v1.pdf
-1. NodeJS Contributor License Agreement: http://nodejs.org/cla.html
-1. Open Web Foundation Contributor License Agreement v. 1.0 (Patent and Copyright Grants): https://sites.google.com/site/openwebfoundation/legal/the-owf-1-0-agreements/owf-contributor-license-agreement-1-0---copyright-and-patent
-1. OpenCms Project by Alkacon Software CLA: http://www.opencms.org/export/sites/opencms/de/development/contribute/OpenCms-Contributor-License-Agreement.pdf
-1. Perl Foundation Contributor License Agreement: http://www.perlfoundation.org/contributor_license_agreement
-1. Qt Contribution Agreement v. 1.1 (KDE): http://www.kde.org/community/whatiskde/QtContributionLicenseAgreement-1-1.pdf
-1. RedHat CCM Public License v. 1.0: http://www.redhat.com/licenses/ccmpl.html
-1. Symbian Agreement for ongoing non-member contributions: http://www.symlab.org/wiki/images/9/9e/Non-Member_Contribution_Agreement.pdf
-1. Twitter CLA: https://engineering.twitter.com/opensource/cla
-1. Typesafe, Inc. Individual Contributor License Agreement: http://downloads.typesafe.com/website/legal/TypesafeContributorLicenseAgreement-Individual-v2.2.pdf
-1. W3C Community Contributor License Agreement: http://www.w3.org/community/about/agreements/cla/
-
-### CLA mit ausschließlicher Lizenz, Assignments
-
-1. Free Software Foundation Assignment (GNU): https://web.archive.org/web/20160512041501/http://ftp.xemacs.org:80/old-beta/FSF/assign.changes
-1. Free Software Foundation Europe Fiduciary License Agreement: http://fsfe.org/activities/ftf/FLA.en.pdf
-1. Harmony Individual Contributor Assignment Agreement: http://harmonyagreements.org/docs/ha-caa-i-v1.pdf
-1. Joomla Contributor Agreement: http://developer.joomla.org/cms/contribute.html
-1. Mobile Joomla Contributor Agreement: http://www.mobilejoomla.com/documentation/13-development/45-contribution-agreement.html
-1. Novell Copyright Assignment Agreement for Open Source Projects: ftp://sdk.provo.novell.com/ndk/evolution/docs/copyright_form.pdf
-1. Oracle Contributor Agreement: http://www.oracle.com/technetwork/oca-405177.pdf
-1. SugarForge SugarCRM Contributor Agreement: http://www.sugarforge.org/content/community/participate/contributor-agreement.php
-1. Zimbra Individual Contributor License Agreement: http://files.zimbra.com/website/docs/Zimbra-Individual-Contributor-License-Agreement.pdf
-
-## Committer Agreements
-
-Der folgende Abschnitt führt Vereinbarungen auf, die die Umstände
-eines Beitrags regeln. Sie enthalten keine eigene Lizenz, sondern
-verweisen auf externe Lizenztexte. Übersetzen lässt sich der
-Begriff Committer Agreement als Entwicklerrahmenvereinbarung.
-
-1. Debian Social Contract: https://www.debian.org/social_contract
-1. Fedora Project Contributor Agreement: https://fedoraproject.org/wiki/Legal:Fedora_Project_Contributor_Agreement#FPCA_Text
-1. Linux Developer's Certificate of Origin v. 1.1: http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/Documentation/SubmittingPatches#n358
-1. Mozilla Foundation Committer's Agreement v2.1: https://www.mozilla.org/hacking/committer/committers-agreement.pdf
