@@ -58,16 +58,16 @@ andere Werkgattungen zu übertragen. Da keine allgemein anerkannte Open Content 
 1. Guy Hoffman's license: http://www.ram.org/ramblings/philosophy/fmp/hoffman_license.html
 1. ifrOSS Freie Lizenz für Texte und Textdatenbanken (IFL Text): https://github.com/ifrOSS/Lizenzcenter/blob/Neue-Gliederung/IFL
 1. Linux Documentation Project Copying License: http://tldp.org/LDP-COPYRIGHT.html
+1. LinuxTag Green Open Music Licence: http://openmusic.linuxtag.org/modules/freecontent/content/openmusic/green.html
+1. LinuxTag Yellow Open Music License: http://openmusic.linuxtag.org/modules/freecontent/content/openmusic/yellow.html
 1. Lizenz "Freie Kunst": https://web.archive.org/web/20081118201323/http://artlibre.org/licence.php/lalde.html (Übersetzung der Free Art License)
 1. Lizenz für die freie Nutzung unveränderter Inhalte: http://www.ifross.org/Lizenzen/LizenzFuerUnveraenderteInhalte.html
 1. Lizenz für die nichtkommerzielle Nutzung von Inhalten an Schulen und Hochschulen (MuSofT): http://www.ifross.org/Lizenzen/MuSoft-Lizenz.htm
 1. Lizenz für die Nutzung von Inhalten in bestimmten Nutzerkreisen: http://www.ifross.org/Lizenzen/Lizenz%20bestimmte%20Nutzerkreise.htm
 1. Lizenz für Freie Inhalte: http://www.ifross.org/Lizenzen/LizenzFuerFreieInhalte.html
 1. Open Content License (OPL): https://web.archive.org/web/20140608191625/http://www.opencontent.org:80/opl.shtml
-1. Open Directory Project License: http://dmoz.org/license.html
-1. Open Game License: http://www.opengamingfoundation.org/ogl.html
+1. Open Directory License: https://web.archive.org/web/20011106104708/http://dmoz.org:80/license.html
+1. Open Game License (v. 1.0a): http://www.opengamingfoundation.org/ogl.html
 1. Open Publication License (v. 1.0): http://opencontent.org/openpub
-1. Open Source Music License (OSML): http://www.rootrecords.org/licenses.html
+1. Open Source Music License (v. 1.5) (OSML): https://web.archive.org/web/20120818042338/http://www.rootrecords.org:80/licenses.html
 1. Public Documentation License (PDL): http://www.openoffice.org/licenses/PDL.html
-1. The green Open Music Licence: http://openmusic.linuxtag.org/modules/freecontent/content/openmusic/green.html
-1. The yellow Open Music License: http://openmusic.linuxtag.org/modules/freecontent/content/openmusic/yellow.html
