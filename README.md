@@ -359,46 +359,6 @@ bilden.
 1. CAMBIA Plant Molecular Enabling Technology BiOS License (v. 1.5): http://www.bios.net/daisy/bios/3530/version/default/part/AttachmentData/data/BiOS%20License%20and%20Tech%20Support%20Agreement%20version%201.5.pdf
 1. Open Database License (ODbL) (v. 1.0): http://www.opendatacommons.org/licenses/odbl/
 
-## Contributor License Agreements
-
-Dieser Abschnitt führt Vereinbarungen auf, die eine eigene
-("inbound") Lizenz enthalten. Sie verweisen ("outbound")
-zusätzlich auf externe Lizenztexte. Übersetzen lässt sich der
-Begriff als Entwicklerlizenzvereinbarung.
-
-### CLA mit nicht-ausschließlicher Lizenz
-
-1. 52°North Contributor License Agreement: http://52north.org/images/stories/52nadmin/files/52north_contributor_license_agreement.pdf
-1. Apache Individual Contributor License Agreement V 2.0: http://www.apache.org/licenses/icla.txt
-1. Aribaweb Contributor Agreement v. 1: http://aribaweb.org/AribaWeb_Contributor_Agreement.pdf
-1. Box, Inc. Contributor License Agreement: http://opensource.box.com/cla/
-1. Django Software Foundation Individual Contributor License Agreement: https://www.djangoproject.com/m/foundation/icla.pdf
-1. Dojo Foundation Individual CLA: http://dojofoundation.org/about/claForm
-1. Fedora Project Individual Contributor License Agreement: https://fedoraproject.org/wiki/Legal:Licenses/CLA
-1. Google Individual Contributor License Agreement: https://developers.google.com/open-source/cla/individual
-1. Harmony Individual Contributor License Agreement: http://harmonyagreements.org/docs/ha-cla-i-v1.pdf
-1. NodeJS Contributor License Agreement: http://nodejs.org/cla.html
-1. Open Web Foundation Contributor License Agreement v. 1.0 (Patent and Copyright Grants): https://sites.google.com/site/openwebfoundation/legal/the-owf-1-0-agreements/owf-contributor-license-agreement-1-0---copyright-and-patent
-1. OpenCms Project by Alkacon Software CLA: http://www.opencms.org/export/sites/opencms/de/development/contribute/OpenCms-Contributor-License-Agreement.pdf
-1. Perl Foundation Contributor License Agreement: http://www.perlfoundation.org/contributor_license_agreement
-1. Qt Contribution Agreement v. 1.1 (KDE): http://www.kde.org/community/whatiskde/QtContributionLicenseAgreement-1-1.pdf
-1. RedHat CCM Public License v. 1.0: http://www.redhat.com/licenses/ccmpl.html
-1. Symbian Agreement for ongoing non-member contributions: http://www.symlab.org/wiki/images/9/9e/Non-Member_Contribution_Agreement.pdf
-1. Twitter CLA: https://engineering.twitter.com/opensource/cla
-1. Typesafe, Inc. Individual Contributor License Agreement: http://downloads.typesafe.com/website/legal/TypesafeContributorLicenseAgreement-Individual-v2.2.pdf
-1. W3C Community Contributor License Agreement: http://www.w3.org/community/about/agreements/cla/
-
-### CLA mit ausschließlicher Lizenz, Assignments
-
-1. Free Software Foundation Assignment (GNU): https://web.archive.org/web/20160512041501/http://ftp.xemacs.org:80/old-beta/FSF/assign.changes
-1. Free Software Foundation Europe Fiduciary License Agreement: http://fsfe.org/activities/ftf/FLA.en.pdf
-1. Harmony Individual Contributor Assignment Agreement: http://harmonyagreements.org/docs/ha-caa-i-v1.pdf
-1. Joomla Contributor Agreement: http://developer.joomla.org/cms/contribute.html
-1. Mobile Joomla Contributor Agreement: http://www.mobilejoomla.com/documentation/13-development/45-contribution-agreement.html
-1. Novell Copyright Assignment Agreement for Open Source Projects: ftp://sdk.provo.novell.com/ndk/evolution/docs/copyright_form.pdf
-1. Oracle Contributor Agreement: http://www.oracle.com/technetwork/oca-405177.pdf
-1. SugarForge SugarCRM Contributor Agreement: http://www.sugarforge.org/content/community/participate/contributor-agreement.php
-1. Zimbra Individual Contributor License Agreement: http://files.zimbra.com/website/docs/Zimbra-Individual-Contributor-License-Agreement.pdf
 
 ## Committer Agreements
 
