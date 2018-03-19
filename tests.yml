@@ -20,6 +20,17 @@
         - hunspell-en-US
         - libtaskotron-core
         - libtaskotron-fedora
+      register: dnf_output
+
+    - name: Print msg of DNF task
+      debug:
+        var: dnf_output.results[0].msg
+      when: "'msg' in dnf_output.results[0]"
+
+    - name: Print results of DNF task
+      debug:
+        var: dnf_output.results[0].results | sort
+      when: "'results' in dnf_output.results[0]"
 
     - name: Install avocado from updates-testing
       dnf:
@@ -29,6 +40,17 @@
       with_items:
         - python2-avocado
         - python2-avocado-plugins-varianter-yaml-to-mux
+      register: dnf_output
+
+    - name: Print msg of DNF task
+      debug:
+        var: dnf_output.results[0].msg
+      when: "'msg' in dnf_output.results[0]"
+
+    - name: Print results of DNF task
+      debug:
+        var: dnf_output.results[0].results | sort
+      when: "'results' in dnf_output.results[0]"
 
     - name: Enable MTF Copr repo
       shell: dnf copr -y enable phracek/Modularity-testing-framework
@@ -38,6 +60,17 @@
         name: modularity-testing-framework
         state: latest
         enablerepo: updates-testing
+      register: dnf_output
+
+    - name: Print msg of DNF task
+      debug:
+        var: dnf_output.msg
+      when: "'msg' in dnf_output"
+
+    - name: Print results of DNF task
+      debug:
+        var: dnf_output.results | sort
+      when: "'results' in dnf_output"
 
     - name: Make sure taskotron results dir exists
       # this is for placing results.yml file
