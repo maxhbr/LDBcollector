@@ -1,9 +1,7 @@
 ## Contributor License Agreements
 
-Dieser Abschnitt führt Vereinbarungen auf, die eine eigene
-("inbound") Lizenz enthalten. Sie verweisen ("outbound")
-zusätzlich auf externe Lizenztexte. Übersetzen lässt sich der
-Begriff als Entwicklerlizenzvereinbarung.
+Die aufgeführten Lizenzvereinbarungen dienen dazu, dem Verwender über die im Wege einer Open Source Lizenz eingeräumten Nutzungsrechte hinaus weitere Nutzungsrechte einzuräumen, um diesem z.B. einen Lizenzwechsel zu ermöglichen. Umfassende Informationen dazu sowie Mustertexte finden sich unter http://contributoragreements.org/.
+
 
 ### CLA mit nicht-ausschließlicher Lizenz
 
