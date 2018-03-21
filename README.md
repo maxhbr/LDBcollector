@@ -43,7 +43,7 @@ beliebigen Lizenzbedingungen weiterverbreiten, also auch in
 proprietäre Software überführen.
 
 
-1. [4Suite License (v. 1.1)](https://web.archive.org/web/20060210220828/http://4suite.org/COPYRIGHT.doc)
+1. 4Suite License (v. 1.1): https://web.archive.org/web/20060210220828/http://4suite.org/COPYRIGHT.doc
 1. Academic Free License (AFL) (v. 1.0): https://web.archive.org/web/20020808082753/http://www.rosenlaw.com:80/afl.html
 1. Academic Free License (AFL) (v. 1.1): https://web.archive.org/web/20030224125640/http://www.rosenlaw.com:80/afl.html
 1. Academic Free License (AFL) (v. 1.2): https://web.archive.org/web/20030515043719/http://www.rosenlaw.com:80/afl1.2.html
