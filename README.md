@@ -21,20 +21,18 @@ dieser Liste willkommen.
 
 ## Open Source Lizenzen
 
-Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen
-der Free Software Definition und Open Source Definition. Sie
-werden nach ihren lizenzrechtlichen Charakteristika in Lizenzen
-ohne Copyleft-Effekt, Lizenzen mit strengem Copyleft-Effekt,
-Lizenzen mit beschränktem Copyleft-Effekt , Lizenzen mit
-Wahlmöglichkeiten, Lizenzen mit Sonderrechten und Sonstige
-Lizenzen zur freien Nutzung von Immaterialgütern unterteilt.
-Software unter solchen Lizenzen kann als Freie oder Open Source
-Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen
-ist umstritten, ob diese Anforderungen erfüllt sind, da die
-relevanten Definitionen, die Free Software Definition und die
-Open Source Definition nicht identisch sind und zudem ständig
-weiterentwickelt werden. Diese Lizenzen sind mit "Einordnung
-umstritten" gekennzeichnet.
+Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
+werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
+
+* [Lizenzen ohne Copyleft-Effekt](###Lizenzen-ohne-Copyleft-Effekt)
+* [Lizenzen mit strengem Copyleft-Effekt](###Lizenzen-mit-strengem-Copyleft-Effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](###Lizenzen-mit-beschränktem-Copyleft-Effekt)
+* [Lizenzen mit Wahlmöglichkeiten](###Lizenzen-mit-Wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](Lizenzen-mit-Sonderrechten)
+
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen
+ist umstritten, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die
+Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit "Einordnung umstritten" gekennzeichnet.
 
 
 ### Lizenzen ohne Copyleft-Effekt ("Permissive Licenses")
