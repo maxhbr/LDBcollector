@@ -1,12 +1,17 @@
-Dies ist eine experimentelle Demo der kollaborativen Arbeit an
-einer GitHub Page. Vorlage und offizielle Version dieser Seite ist
-[ifrOSS.org/Lizenz-Center](http://www.ifross.org/lizenz-center).
+Dies ist eine offizielle Übernahme des
+[ifrOSS.org/Lizenz-Center](http://www.ifross.org/lizenz-center) zur einfacheren Aktualisisierung und kollaborativen Bearbeitung. 
 
 # Lizenz-Center
 
-Im Lizenzcenter des ifrOSS werden die Lizenzen für Freie
-Software, Open Source, Open Content, Open Data und Open Source
-Hardware gesammelt und verschiedenen Lizenztypen zugeordnet.
+Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und verschiedenen Lizenztypen zugeordnet. Dies betrifft folgende Kategorien:
+
+* [Freie Software und Open Source](## Open Source Lizenzen)
+* [Open Content Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenContentLicenses.md)
+* [Open Data Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenDataLicenses.md)
+* [Open Hardware Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenHardwareLicenses.md)
+* [Sonstige Freie Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OtherFreeLicenses.md)
+* [Ähnliche Lizenzen, die nicht den Anforderungen der Open Source Definition genügen](https://github.com/ifrOSS/Lizenzcenter/blob/master/NonFreeLicenses.md)
+ 
 Damit wird eine einfache Auffindbarkeit und Charakterisierung
 ermöglicht. Da fortlaufend neue Lizenzen erstellt werden, in
 neuen Versionen erscheinen oder nicht mehr unter ihrer alten URL
