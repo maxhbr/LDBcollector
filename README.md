@@ -5,7 +5,7 @@ Dies ist eine offizielle Übernahme des
 
 Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und verschiedenen Lizenztypen zugeordnet. Dies betrifft folgende Kategorien:
 
-* [Freie Software und Open Source](## Open Source Lizenzen)
+* Freie Software und Open Source Lizenzen (siehe unten)
 * [Open Content Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenContentLicenses.md)
 * [Open Data Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenDataLicenses.md)
 * [Open Hardware Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenHardwareLicenses.md)
