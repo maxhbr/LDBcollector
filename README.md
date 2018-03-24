@@ -102,8 +102,19 @@ proprietäre Software überführen.
 1. NUnit License: http://nunit.org/docs/2.4/license.html
 1. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
 1. Open Media Group Open Source License: https://web.archive.org/web/20090213173457/http://www.openmediagroup.com/license.html
+1. OpenLDAP Public License (v. 1.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=806557a5ad59804ef3a44d5abfbe91d706b0791f
+1. OpenLDAP Public License (v. 1.2): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=42b0383c50c299977b5893ee695cf4e486fb0dc7
+1. OpenLDAP Public License (v. 1.3): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=e5f8117f0ce088d0bd7a8e18ddf37eaa40eb09b1
+1. OpenLDAP Public License (v. 1.4): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;
+1. OpenLDAP Public License (v. 2.0): hb=c9f95c2f3f2ffb5e0ae55fe7388af75547660941
+http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea
+1. OpenLDAP Public License (v. 2.0.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=b6d68acd14e51ca3aab4428bf26522aa74873f0e
+1. OpenLDAP Public License (v. 2.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=b0d176738e96a0d3b9f85cb51e140a86f21be715
+1. OpenLDAP Public License (v. 2.2): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=470b0c18ec67621c85881b2733057fecf4a1acc3
 1. OpenLDAP Public License (v. 2.3): http://www.mibsoftware.com/librock/librock/license/oldap2_3.txt
+1. OpenLDAP Public License (v. 2.4): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cd1284c4a91a8a380d904eee68d1583f989ed386
 1. OpenLDAP Public License (v. 2.5): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=6852b9d90022e8593c98205413380536b1b5a7cf
+1. OpenLDAP Public License (v. 2.6): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=1cae062821881f41b73012ba816434897abf4205
 1. OpenLDAP Public License (v. 2.7): http://www.openldap.org/doc/admin21/license.html
 1. OpenLDAP Public License (v. 2.8): http://www.openldap.org/software/release/license.html
 1. OpenSSL License (Einordnung umstritten): http://www.openssl.org/source/license.html
