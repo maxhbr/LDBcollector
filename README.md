@@ -126,6 +126,7 @@ proprietäre Software überführen.
 1. Tcl/Tk License Terms: http://www.tcl.tk/software/tcltk/license.html
 1. Tea Software License: http://teatrove.sourceforge.net/license.html
 1. The SpeechWorks Public License (v. 1.1 ): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
+1. Trusster Open Source License (v. 1.0a): https://github.com/trusster/trusster/blob/master/truss/cpp/src/truss_verification_top.cpp
 1. Udanax Open-Source License: http://udanax.xanadu.com/license.html
 1. Universal Permissive License (v. 1.0): http://www.oracle.com/technetwork/licenses/upl-license-2927578.html
 1. Unlicense: http://unlicense.org/
@@ -181,6 +182,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Nethack General Public License: http://www.nethack.org/common/license.html
 1. Open RTLinux Patent License: https://web.archive.org/web/20120222184907/http://rtlinuxfree.com/openpatentlicense.html
 1. RedHat eCos Public License (v. 2.0): http://sources.redhat.com/ecos/license-overview.html
+1. Simple Public License 2.0: https://web.archive.org/web/20080906145432/http://www.law.washington.edu/Casrip/License/SimplePublicLicense.html
 
 
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
@@ -207,6 +209,9 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Open Software License 2.0: http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html
 1. Open Software License 2.1: http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm
 1. Open Software License 3.0: https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm
+1. Reciprocal Public License (v. 1.0): https://web.archive.org/web/20030424114621fw_/http://www.technicalpursuit.com:80/Biz_RPL.html
+1. Reciprocal Public License (v. 1.3): https://web.archive.org/web/20080828191234/http://www.technicalpursuit.com/licenses/RPL_1.3.html
+1. Reciprocal Public License (v. 1.5): http://lists.opensource.org/pipermail/license-discuss_lists.opensource.org/attachments/20070724/6944e582/attachment.txt
 1. Salutation Public License: http://web.archive.org/web/20050323201906/http://www.salutation.org/lite/lite_license.htm
 1. Software AG License Terms (Quip License) (v. 1.3): http://www.cse.uconn.edu/~dqg/cse350/xml/quip/License.txt
 1. VOSTROM Public License for Open Source: http://pwhois.org/license.who
@@ -241,11 +246,13 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. NASA Open Source Agreement (v. 1.3): https://ti.arc.nasa.gov/opensource/nosa/
 1. Netizen Open Source License (NOSL): http://web.archive.org/web/20000815212105/bits.netizen.com.au/licenses/NOSL/
 1. Nokia Open Source License: http://www.opensource.org/licenses/nokia.php
+1. Open Public License (v. 1.0): https://web.archive.org/web/20140411111551/http://old.koalateam.com/jackaroo/OPL_1_0.TXT
 1. Open Telecom Public License: http://www.ifross.de/Fremdartikel/otpl.htm
 1. Openbravo Public License: http://www.openbravo.com/legal/license.html
 1. OpenC++ License Terms: http://opencxx.sourceforge.net/license/
 1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
 1. Ricoh Source Code Public License: http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml
+1. SNIA Public License Version (v.1.1): https://web.archive.org/web/20050214120435/https://www.snia.org/smi/developers/open_source
 1. SugarCRM Public License (v. 1.1.3): https://web.archive.org/web/20160622020613/http://www.sugarcrm.com/page/sugarcrm-public-license/en
 1. Sun Industry Standards Source License (v. 1.0): https://web.archive.org/web/20000816085057/http://openoffice.org:80/project/www/sissl_license.html
 1. Sun Industry Standards Source License (v. 1.1): http://www.openoffice.org/licenses/sissl_license.html
