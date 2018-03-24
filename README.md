@@ -78,6 +78,7 @@ proprietäre Software überführen.
 1. Entessa Public License (v. 1.0): http://web.archive.org/web/20050419215723/www.openseal.org/epl/
 1. Free Fuzzy Logic Library Open Source License: http://ffll.sourceforge.net/license.txt
 1. FreeType Project License: http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
+1. FSF Unlimited License: https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License
 1. Galen Open Source License (GOSL): http://www.opengalen.org/gosl.html
 1. Globus Toolkit Public License: https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html
 1. Globus Toolkit Public License (GTPL) (v. 2.0): http://www.globus.org/toolkit/license.html
@@ -100,6 +101,7 @@ proprietäre Software überführen.
 1. MIT License: https://spdx.org/licenses/MIT.html#licenseText
 1. Mozart License: http://mozart.github.io/license-info/license.html
 1. Naumen Public License: http://www.worldlii.org/int/other/PubRL/2009/42.html
+1. NTP License: https://www.eecis.udel.edu/~mills/ntp/html/copyright.html
 1. NUnit License: http://nunit.org/docs/2.4/license.html
 1. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
 1. Open Media Group Open Source License: https://web.archive.org/web/20090213173457/http://www.openmediagroup.com/license.html
