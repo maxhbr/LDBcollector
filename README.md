@@ -197,7 +197,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Nethack General Public License: http://www.nethack.org/common/license.html
 1. Open RTLinux Patent License: https://web.archive.org/web/20120222184907/http://rtlinuxfree.com/openpatentlicense.html
 1. RedHat eCos Public License (v. 2.0): http://sources.redhat.com/ecos/license-overview.html
-1. Simple Public License 2.0: https://web.archive.org/web/20080906145432/http://www.law.washington.edu/Casrip/License/SimplePublicLicense.html
+1. Simple Public License (v. 2.0): https://web.archive.org/web/20080906145432/http://www.law.washington.edu/Casrip/License/SimplePublicLicense.html
 
 
 #### Sonstige Lizenzen mit strengem Copyleft-Effekt
