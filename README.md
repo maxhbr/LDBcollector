@@ -92,7 +92,7 @@ proprietäre Software überführen.
 1. JSON License http://www.json.org/license.html
 1. Libpng License: http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 1. Lua Copyright notice: http://www.lua.org/copyright.html
-1. 1. Lucent Public License Version (v. 1): https://web.archive.org/web/20030520193826/http://plan9.bell-labs.com/hidden/lpl4-2-03.html
+1. Lucent Public License Version (v. 1): https://web.archive.org/web/20030520193826/http://plan9.bell-labs.com/hidden/lpl4-2-03.html
 1. Lucent Public License Version (v. 1.02): https://web.archive.org/web/20080514131645/http://plan9.bell-labs.com/plan9/license.html
 1. Microsoft Permissive License (Ms-PL): https://web.archive.org/web/20070512223652/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/permissivelicense.mspx (Einordnung unklar)
 1. Microsoft Public License (Ms-PL): https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)
@@ -254,6 +254,7 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Mozilla Public License (v. 1.0): http://www.mozilla.org/MPL/MPL-1.0.html
 1. Mozilla Public License (v. 1.1): http://www.mozilla.org/MPL/MPL-1.1.html
 1. Mozilla Public License (v. 2.0): http://www.mozilla.org/MPL/2.0/
+1. NASA Open Source Agreement (v. 1.1): https://web.archive.org/web/20040426023805/https://www.nas.nasa.gov/Research/Software/Open-Source/NASA_Open_Source_Agreement_1.1.txt
 1. NASA Open Source Agreement (v. 1.3): https://ti.arc.nasa.gov/opensource/nosa/
 1. Netizen Open Source License (NOSL): http://web.archive.org/web/20000815212105/bits.netizen.com.au/licenses/NOSL/
 1. Nokia Open Source License: http://www.opensource.org/licenses/nokia.php
