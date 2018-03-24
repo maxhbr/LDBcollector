@@ -83,6 +83,7 @@ proprietäre Software überführen.
 1. Globus Toolkit Public License: https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html
 1. Globus Toolkit Public License (GTPL) (v. 2.0): http://www.globus.org/toolkit/license.html
 1. ICU License: https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
+1. Independent JPEG Group License: https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG
 1. ISC License: http://mirbsd.org/ISC-Licence
 1. Horde Apache-like License: http://www.horde.org/licenses/asl.php
 1. Horde BSD-like License: http://www.horde.org/licenses/bsdl.php
