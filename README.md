@@ -73,6 +73,7 @@ proprietäre Software überführen.
 1. Curl License: https://github.com/curl/curl/blob/master/COPYING
 1. Do What The Fuck You Want To Public License (v. 1.0): https://commons.wikimedia.org/wiki/Template:WTFPL-1
 1. Do What The Fuck You Want To Public License (v. 2.0): http://www.wtfpl.net/txt/copying/ 
+1. Eclipse Distribution License (v 1.0): https://www.eclipse.org/org/documents/edl-v10.php
 1. Eiffel Forum License (v. 1.0): http://www.eiffel-nice.org/license/forum.txt
 1. Eiffel Forum License (v. 2.0): http://www.eiffel-nice.org/license/eiffel-forum-license-2.html
 1. Entessa Public License (v. 1.0): http://web.archive.org/web/20050419215723/www.openseal.org/epl/
