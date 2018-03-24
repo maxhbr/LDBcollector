@@ -221,6 +221,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Open Software License 2.1: http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm
 1. Open Software License 3.0: https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm
 1. Reciprocal Public License (v. 1.0): https://web.archive.org/web/20030424114621fw_/http://www.technicalpursuit.com:80/Biz_RPL.html
+1. Reciprocal Public License (v. 1.1): https://opensource.org/licenses/RPL-1.1
 1. Reciprocal Public License (v. 1.3): https://web.archive.org/web/20080828191234/http://www.technicalpursuit.com/licenses/RPL_1.3.html
 1. Reciprocal Public License (v. 1.5): http://lists.opensource.org/pipermail/license-discuss_lists.opensource.org/attachments/20070724/6944e582/attachment.txt
 1. Salutation Public License: http://web.archive.org/web/20050323201906/http://www.salutation.org/lite/lite_license.htm
