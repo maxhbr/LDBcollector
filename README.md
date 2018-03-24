@@ -239,11 +239,11 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 
 1. Common Development and Distribution License (CDDL) (v. 1.0): http://oss.oracle.com/licenses/CDDL
 1. Common Development and Distribution License, Version 1.1 (CDDL v 1.1): https://javaee.github.io/glassfish/LICENSE
-1. Common Public Attribution License 1.0: https://www.agnitas.de/e-marketing-manager/email-marketing-software/openemm/license/
-1. Computer Associates Trusted Open Source License 1.1: https://web.archive.org/web/20160308205306/http://www.luebeckonline.com/mustervertraege/software-vertraege/open-source-lizenz/computer-associates-trusted-open-source-license-version-11.html
-1. CUA Office Public License v1.0: http://www.opensource.org/licenses/cuaoffice.php
+1. Common Public Attribution License (v. 1.0): https://www.agnitas.de/e-marketing-manager/email-marketing-software/openemm/license/
+1. Computer Associates Trusted Open Source License (v. 1.1): https://web.archive.org/web/20160308205306/http://www.luebeckonline.com/mustervertraege/software-vertraege/open-source-lizenz/computer-associates-trusted-open-source-license-version-11.html
+1. CUA Office Public License (v. 1.0): https://web.archive.org/web/20040212235130/http://cuaoffice.sourceforge.net/CPL.htm
 1. Erlang Public License (v. 1.1): http://www.erlang.org/EPLICENSE
-1. gSOAP Public License (v. 1): https://web.archive.org/web/20020822050424/http://www.cs.fsu.edu:80/~engelen/license.html
+1. gSOAP Public License (v. 1.0): https://web.archive.org/web/20020822050424/http://www.cs.fsu.edu:80/~engelen/license.html
 1. gSOAP Public License (v.  1.1): https://web.archive.org/web/20021104130030/http://www.cs.fsu.edu:80/~engelen/license.html
 1. gSOAP Public License (v.  1.2): https://web.archive.org/web/20030420224716/http://www.cs.fsu.edu:80/~engelen/license.html
 1. gSOAP Public License (v.  1.3): https://web.archive.org/web/20030608134559/http://www.cs.fsu.edu:80/~engelen/license.html
