@@ -291,9 +291,10 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.de/lgpl-ger.html (Inoffizielle deutsche Übersetzung)
 1. Hi-Potent Open Source License: http://web.archive.org/web/20030804175518/www.hi-potent.com/license.html
 1. Jabber Open Source License: http://archive.jabber.org/core/JOSL.pdf
-1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx.
+1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx
 1. Motosoto Open Source License (v. 0.9.1): http://opensource.org/licenses/motosoto.php
-1. wxWindows Library License (v. 3.0): https://web.archive.org/web/20090511105912/http://www.freiburg.linux.de:80/~wxxt/licence.html
+1. wxWindows License (v. 1.0): https://web.archive.org/web/20001121033400/http://www.wxwindows.org:80/licence.htm
+1. wxWindows Library License (v. 3.0): https://web.archive.org/web/20001121041000/http://www.wxwindows.org:80/licence3.txt
 1. wxWindows Library License (v. 3.1): https://www.wxwidgets.org/about/licence/
 1. Yahoo! Public License (YPL) (v. 1.1): https://web.archive.org/web/20120617001853/http://www.zimbra.com/license/yahoo_public_license_1.0.html
 
