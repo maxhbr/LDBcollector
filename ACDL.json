@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "ACDL",
   "name": "Apple's Common Documentation License, Version 1.0",
   "tags": [

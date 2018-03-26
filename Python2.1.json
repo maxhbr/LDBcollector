@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "Python2.1",
   "name": "License of Python 1.6b1 through 2.0 and 2.1",
   "tags": [

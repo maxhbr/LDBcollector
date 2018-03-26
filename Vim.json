@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "Vim",
   "identifiers": {
     "spdx": [

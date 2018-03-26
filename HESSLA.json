@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "HESSLA",
   "name": "Hacktivismo Enhanced-Source Software License Agreement",
   "tags": [

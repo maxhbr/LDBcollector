@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "Plan9",
   "name": "Old Plan 9 license",
   "tags": [

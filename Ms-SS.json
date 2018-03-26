@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "Ms-SS",
   "name": "Microsoft's Shared Source CLI, C#, and Jscript License",
   "tags": [

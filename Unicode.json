@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "Unicode",
   "name": "Unicode, Inc. License Agreement for Data Files and Software",
   "tags": [

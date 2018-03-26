@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "Scratch",
   "name": "Scratch 1.4 license",
   "tags": [

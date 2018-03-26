@@ -1,4 +1,5 @@
 {
+  "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
   "id": "Zope",
   "name": "Zope Public License version 1",
   "tags": [
