@@ -31,8 +31,8 @@ werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unter
 * [Lizenzen mit Sonderrechten](Lizenzen-mit-Sonderrechten)
 
 Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen
-ist umstritten, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die
-Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit "Einordnung umstritten" gekennzeichnet.
+ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die
+Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit "Einordnung unklar" gekennzeichnet.
 
 
 ### Lizenzen ohne Copyleft-Effekt ("Permissive Licenses")
@@ -56,9 +56,8 @@ proprietäre Software überführen.
 1. Apache License (v. 1.0): http://www.apache.org/licenses/LICENSE-1.0
 1. Apache License (v. 1.1): http://www.apache.org/licenses/LICENSE-1.1
 1. Apache License (v. 2.0): http://www.apache.org/licenses/LICENSE-2.0.html
-1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html
 1. Beerware License: http://people.freebsd.org/~phk/
-1. Boost Software License (Einordnung umstritten): http://www.boost.org/LICENSE_1_0.txt
+1. Boost Software License (Einordnung unklar): http://www.boost.org/LICENSE_1_0.txt
 1. BSD 2-clause "Simplified" or "FreeBSD" License: http://www.freebsd.org/copyright/freebsd-license.html
 1. BSD 3-clause "New" or "Revised" License: https://spdx.org/licenses/BSD-3-Clause
 1. BSD 4-clause "Original" or "Old" License: https://www.freebsd.org/copyright/license.html
@@ -120,7 +119,7 @@ proprietäre Software überführen.
 1. OpenLDAP Public License (v. 2.6): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=1cae062821881f41b73012ba816434897abf4205
 1. OpenLDAP Public License (v. 2.7): http://www.openldap.org/doc/admin21/license.html
 1. OpenLDAP Public License (v. 2.8): http://www.openldap.org/software/release/license.html
-1. OpenSSL License (Einordnung umstritten): http://www.openssl.org/source/license.html
+1. OpenSSL License (Einordnung unklar): http://www.openssl.org/source/license.html
 1. Pangeia Informatica Copyright (v. 1.2): http://www.chkrootkit.org/COPYRIGHT
 1. Phorum License (v. 2.0): http://phorum.org/license.txt
 1. PHP License (v. 3.0): http://www.php.net/license/3_0.txt
@@ -153,8 +152,8 @@ proprietäre Software überführen.
 1. XFree86 Licence: http://www.xfree86.org/legal/licenses.html
 1. xinetd License: https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
 1. Zlib license: http://www.gzip.org/zlib/zlib_license.html
-1. Zope Public License 1.1: http://old.zope.org/Resources/License/ZPL-1.1
-1. Zope Public License 2.0: http://old.zope.org/Resources/License/ZPL-2.0
+1. Zope Public License (v. 1.1): http://old.zope.org/Resources/License/ZPL-1.1
+1. Zope Public License (v. 2.0): http://old.zope.org/Resources/License/ZPL-2.0
 1. Zope Public License (v. 2.1): https://web.archive.org/web/20060426220850/http://www.zope.org:80/Resources/ZPL/
 
 
@@ -289,7 +288,7 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
 1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
 1. Contrat de License de Logiciel Libre CeCILL-C: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
-1. Cougaar Open Source License Agreement: https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html (Einordnung umstritten)
+1. Cougaar Open Source License Agreement: https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html (Einordnung unklar)
 1. Eclipse Public License (v. 2.0): https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
 1. GNU Library General Public License (LGPL) (v. 2.0): http://www.gnu.org/copyleft/library.html
 1. GNU Lesser General Public License (LGPL) (v. 2.1): http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
@@ -312,7 +311,7 @@ Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
 Weiterentwicklungen weiterverbreitet werden können.
 
 1. ANTLR 2 License: http://www.antlr2.org/license.html
-1. Artistic License (v. 1.0): http://www.perlfoundation.org/artistic_license_1_0 (Einordnung umstritten)
+1. Artistic License (v. 1.0): http://www.perlfoundation.org/artistic_license_1_0 (Einordnung unklar)
 1. Artistic License (v. 2.0): http://www.perlfoundation.org/artistic_license_2_0
 1. Clarified Artistic License: http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html
 1. Keith Devens' Open Source License: https://web.archive.org/web/20100604220226/http://www.keithdevens.com/software/license/
@@ -325,8 +324,8 @@ Weiterentwicklungen weiterverbreitet werden können.
 1. Physnet Package License: http://web.archive.org/web/20060821203230/http://35.9.69.219/home/modules/license.html
 1. Ruby License: http://www.ruby-lang.org/en/about/license.txt
 1. SFL License Agreement: https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm
-1. SGI Free Software License B (v. 1.0): https://web.archive.org/web/20130114073135/http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
-1. SGI Free Software License B (v. 1.1): https://web.archive.org/web/20170414231252/http://oss.sgi.com:80/projects/FreeB/SGIFreeSWLicB.1.1.doc (Einordnung umstritten)
+1. SGI Free Software License B (v. 1.0): https://web.archive.org/web/20130114073135/http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung unklar)
+1. SGI Free Software License B (v. 1.1): https://web.archive.org/web/20170414231252/http://oss.sgi.com:80/projects/FreeB/SGIFreeSWLicB.1.1.doc (Einordnung unklar)
 1. Sleepycat Software Product License: http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html
 1. Vim License: http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
 
@@ -340,9 +339,9 @@ Weiterentwicklungen durch den Lizenznehmer vor. Diese Lizenzen
 werden zumeist bei Programmen verwendet, die ursprünglich
 proprietär vertrieben wurden.
 
-1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html (Einordnung umstritten)
-1. Apple Public Source License 1.1: https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE (Einordnung umstritten)
-1. Apple Public Source License (v. 1.2): https://web.archive.org/web/20060209125840/http://www.opensource.apple.com/apsl/1.2.txt (Einordnung umstritten)
+1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html (Einordnung unklar)
+1. Apple Public Source License 1.1: https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE (Einordnung unklar)
+1. Apple Public Source License (v. 1.2): https://web.archive.org/web/20060209125840/http://www.opensource.apple.com/apsl/1.2.txt (Einordnung unklar)
 1. Macromedia Open Source License Agreement (v. 1.0): https://web.archive.org/web/20020627100645/http://www.macromedia.com/v1/handlers/index.cfm?ID=23075
 1. Netscape Public License (NPL) (v. 1.0): https://web.archive.org/web/19990422030305/http://www.mozilla.org/NPL/NPL-1.0.html
 1. Netscape Public License (NPL) (v. 1.1): https://web.archive.org/web/20020202113823/http://www.mozilla.org:80/MPL/NPL-1.1.html
