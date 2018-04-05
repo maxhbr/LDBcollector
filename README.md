@@ -54,7 +54,6 @@ proprietäre Software überführen.
 1. Academic Free License (AFL) (v. 2.1): https://web.archive.org/web/20080413164801/http://rosenlaw.com:80/afl21.htm
 1. Academic Free License (AFL) (v. 3.0): https://web.archive.org/web/20080317004542/http://www.rosenlaw.com/AFL3.0.htm
 1. Apache License (v. 1.0): http://www.apache.org/licenses/LICENSE-1.0
-1. Apache License (v. 1.0): http://www.apache.org/licenses/LICENSE-1.0
 1. Apache License (v. 1.1): http://www.apache.org/licenses/LICENSE-1.1
 1. Apache License (v. 2.0): http://www.apache.org/licenses/LICENSE-2.0.html
 1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html
