@@ -293,6 +293,7 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. BitTorrent Open Source License (v. 1.0): https://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?diff_format=s&revision=1.1.1.1&view=markup
 1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
 1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
+1. Code Project Open License (CPOL) (v. 1.02): https://www.codeproject.com/info/cpol10.aspx
 1. Contrat de License de Logiciel Libre CeCILL-C: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
 1. Cougaar Open Source License Agreement: https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html (Einordnung unklar)
 1. Eclipse Public License (v. 2.0): https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
