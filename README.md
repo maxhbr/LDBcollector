@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="http://www.ifross.org/sites/default/files/fourseasons_logo.png"><br><br>
+  <img src="http://www.ifross.org/sites/default/files/fourseasons_logo.png"><br><br></div>
 <div id="site-slogan">Institut für Rechtsfragen der Freien und Open Source Software</div>
  
 
