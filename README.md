@@ -223,7 +223,9 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. European Union Public Licence (v. 1.2): https://joinup.ec.europa.eu/page/eupl-text-11-12
 1. German Free Software License: https://www.hbz-nrw.de/produkte/open-access/lizenzen/dfsl/german-free-software-license
 1. IBM Public License: http://oss.software.ibm.com:80/developerworks/opensource/license10.html
+1. Intel Open Source License: https://opensource.org/licenses/intel-open-source-license.php
 1. IPA Font License: https://ipafont.ipa.go.jp/old/ipafont/download.html#en
+1. No Limit Public License: http://spdx.org/licenses/NLPL
 1. Open Group Public License: http://www.opengroup.org/openmotif/license
 1. Open Software License 1.0: http://web.archive.org/web/20021201193408/http://rosenlaw.com:80/osl.html
 1. Open Software License 2.0: http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html
@@ -233,6 +235,8 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Reciprocal Public License (v. 1.1): https://opensource.org/licenses/RPL-1.1
 1. Reciprocal Public License (v. 1.3): https://web.archive.org/web/20080828191234/http://www.technicalpursuit.com/licenses/RPL_1.3.html
 1. Reciprocal Public License (v. 1.5): http://lists.opensource.org/pipermail/license-discuss_lists.opensource.org/attachments/20070724/6944e582/attachment.txt
+1. SIL Open Font License (v. 1.0): http://scripts.sil.org/cms/scripts/page.php?item_id=OFL10_web
+1. SIL Open Font License (v. 1.1): http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
 1. Salutation Public License: http://web.archive.org/web/20050323201906/http://www.salutation.org/lite/lite_license.htm
 1. Software AG License Terms (Quip License) (v. 1.3): http://www.cse.uconn.edu/~dqg/cse350/xml/quip/License.txt
 1. VOSTROM Public License for Open Source: http://pwhois.org/license.who
