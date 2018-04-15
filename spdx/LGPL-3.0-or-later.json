@@ -5,7 +5,8 @@
     "spdx": [
       "LGPL-3.0-or-later",
       "LGPL-3.0-only",
-      "LGPL-3.0"
+      "LGPL-3.0",
+      "LGPL-3.0+"
     ]
   },
   "name": "GNU Lesser General Public License (LGPL) version 3",

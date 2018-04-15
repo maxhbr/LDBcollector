@@ -786,7 +786,8 @@
         "spdx": [
           "GPL-3.0-or-later",
           "GPL-3.0-only",
-          "GPL-3.0"
+          "GPL-3.0",
+          "GPL-3.0+"
         ]
       },
       "name": "GNU General Public License (GPL) version 3",
@@ -853,7 +854,8 @@
         "spdx": [
           "GPL-2.0-or-later",
           "GPL-2.0-only",
-          "GPL-2.0"
+          "GPL-2.0",
+          "GPL-2.0+"
         ]
       },
       "name": "GNU General Public License (GPL) version 2",
@@ -978,7 +980,8 @@
         "spdx": [
           "LGPL-2.1-or-later",
           "LGPL-2.1-only",
-          "LGPL-2.1"
+          "LGPL-2.1",
+          "LGPL-2.1+"
         ]
       },
       "name": "GNU Lesser General Public License (LGPL) version 2.1",
@@ -998,7 +1001,8 @@
         "spdx": [
           "LGPL-3.0-or-later",
           "LGPL-3.0-only",
-          "LGPL-3.0"
+          "LGPL-3.0",
+          "LGPL-3.0+"
         ]
       },
       "name": "GNU Lesser General Public License (LGPL) version 3",
@@ -1725,7 +1729,8 @@
       "id": "StandardMLofNJ",
       "identifiers": {
         "spdx": [
-          "SMLNJ"
+          "SMLNJ",
+          "StandardML-NJ"
         ]
       },
       "name": "Standard ML of New Jersey Copyright License",
@@ -1991,7 +1996,8 @@
       "id": "ZLib",
       "identifiers": {
         "spdx": [
-          "Zlib"
+          "Zlib",
+          "Nunit"
         ]
       },
       "name": "License of ZLib",
@@ -2298,7 +2304,8 @@
       "id": "eCos2.0",
       "identifiers": {
         "spdx": [
-          "GPL-2.0+ WITH eCos-exception-2.0"
+          "GPL-2.0+ WITH eCos-exception-2.0",
+          "eCos-2.0"
         ]
       },
       "name": "eCos license version 2.0",

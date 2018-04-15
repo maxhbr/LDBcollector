@@ -3,7 +3,8 @@
   "id": "StandardMLofNJ",
   "identifiers": {
     "spdx": [
-      "SMLNJ"
+      "SMLNJ",
+      "StandardML-NJ"
     ]
   },
   "name": "Standard ML of New Jersey Copyright License",

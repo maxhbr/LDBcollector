@@ -1,22 +1,22 @@
 {
   "@context": {
-    "schema": "https://schema.org/",
-    "id": {
-      "@id": "schema:identifier"
-    },
-    "name": {
-      "@id": "schema:name"
-    },
-    "identifiers": {
-      "@container": "@index",
-      "@id": "schema:identifier"
-    },
     "uris": {
       "@container": "@list",
       "@id": "schema:url"
     },
     "tags": {
       "@id": "schema:keywords"
+    },
+    "id": {
+      "@id": "schema:identifier"
+    },
+    "name": {
+      "@id": "schema:name"
+    },
+    "schema": "https://schema.org/",
+    "identifiers": {
+      "@container": "@index",
+      "@id": "schema:identifier"
     }
   }
 }

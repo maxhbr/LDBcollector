@@ -3,7 +3,8 @@
   "id": "ZLib",
   "identifiers": {
     "spdx": [
-      "Zlib"
+      "Zlib",
+      "Nunit"
     ]
   },
   "name": "License of ZLib",

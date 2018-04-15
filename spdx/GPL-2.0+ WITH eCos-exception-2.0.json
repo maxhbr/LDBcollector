@@ -3,7 +3,8 @@
   "id": "eCos2.0",
   "identifiers": {
     "spdx": [
-      "GPL-2.0+ WITH eCos-exception-2.0"
+      "GPL-2.0+ WITH eCos-exception-2.0",
+      "eCos-2.0"
     ]
   },
   "name": "eCos license version 2.0",
