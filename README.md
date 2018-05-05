@@ -215,7 +215,8 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Contrat de License de Logiciel Libre CeCILL (v. 1.0): http://www.cecill.info/licences/Licence_CeCILL_V1-fr.html
 1. Contrat de License de Logiciel Libre CeCILL  (v. 2.0): http://www.cecill.info/licences/Licence_CeCILL_V2-fr.html
 1. Contrat de License de Logiciel Libre CeCILL  (v. 2.1): http://www.cecill.info/licences/Licence_CeCILL_V2.1-fr.html
-1. Common Public License: http://www.eclipse.org/legal/cpl-v10.html
+1. Common Public License (v. 0.5): http://www.eclipse.org/legal/cpl-v05.html
+1. Common Public License (v. 1.0): http://www.eclipse.org/legal/cpl-v10.html
 1. Deutsche Freie Softwarelizenz (d-fsl): http://www.d-fsl.org/
 1. Eclipse Public License (v. 1.0): http://www.eclipse.org/legal/epl-v10.html
 1. European Union Public License (v. 1.0): http://ec.europa.eu/idabc/en/document/7330.html
