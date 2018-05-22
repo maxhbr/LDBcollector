@@ -1,9 +1,9 @@
 {
   "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
-  "id": "SILOFL-1.1",
+  "id": "SILOFL-1.0",
   "identifiers": {
     "spdx": [
-      "OFL-1.1"
+      "OFL-1.0"
     ]
   },
   "name": "SIL Open Font License 1.1",

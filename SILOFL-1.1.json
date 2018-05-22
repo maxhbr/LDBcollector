@@ -1,6 +1,6 @@
 {
   "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
-  "id": "SILOFL",
+  "id": "SILOFL-1.1",
   "identifiers": {
     "spdx": [
       "OFL-1.1"
