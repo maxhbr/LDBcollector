@@ -1,13 +1,7 @@
- ---
+---
 layout: default
 title: "Lizenz-Center - ifrOSS.org"
 ---
-
- <div id="headline">
-    <img src="http://www.ifross.org/sites/default/files/fourseasons_logo.png"></div></a>
-  <div id="site-slogan">Institut für Rechtsfragen der Freien und Open Source Software</div>  </div>
-
------------------
 
 Dies ist eine offizielle Übernahme des
 [ifrOSS.org/Lizenz-Center](http://www.ifross.org/lizenz-center) zur einfacheren Aktualisierung und kollaborativen Bearbeitung. 
