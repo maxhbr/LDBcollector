@@ -52,7 +52,28 @@
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
       </script>
-    {% endif %}     
-
+    {% endif %}
+    
+    <script src="{{ site.baseurl }}/js/Autolinker.min.js"></script>
+    <script>
+        var myTextEl = document.getElementById( 'main_content' );
+        var autolinker = new Autolinker( {
+            urls : {
+                schemeMatches : true,
+                wwwMatches    : true,
+                tldMatches    : true
+            },
+            email       : true,
+            phone       : true,
+            stripPrefix : true,
+            stripTrailingSlash : true,
+            newWindow   : true,
+            truncate : {
+                length   : 0,
+                location : 'end'
+            },
+        } );    
+        myTextEl.innerHTML = autolinker.link( myTextEl.innerHTML );g
+    </script>
   </body>
 </html>
