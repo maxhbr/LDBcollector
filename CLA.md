@@ -1,4 +1,13 @@
-## Contributor License Agreements
+---
+layout: default
+title: "Contributor License Agreements - ifrOSS.org"
+---
+
+<h1>Contributor License Agreements</h1>
+
+<h2>Inhalt</h2>
+* TOC
+{:toc}
 
 Die aufgeführten Lizenzvereinbarungen dienen dazu, dem Verwender über die im Wege einer Open Source Lizenz eingeräumten Nutzungsrechte hinaus weitere Nutzungsrechte einzuräumen, um diesem z.B. einen Lizenzwechsel zu ermöglichen. Umfassende Informationen dazu sowie Mustertexte finden sich unter http://contributoragreements.org/.
 
