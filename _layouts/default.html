@@ -8,9 +8,6 @@
     <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
 
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script>
-      {% include Autolinker.min.js %}
-    </script>
 {% seo %}
   </head>
   <body>
@@ -24,9 +21,7 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {% include toc.html html=content class="inline_toc" id="toc" ordered=true %}
-        
+      <section id="main_content" class="inner">    
         {{ content }}
       </section>
     </div>
@@ -58,10 +53,26 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-    
+    <script src="{{ site.baseurl }}/js/Autolinker.min.js"></script>
     <script>
-      var myTextEl = document.getElementById( 'main_content' );
-      myTextEl.innerHTML = Autolinker.link( myTextEl.innerHTML );
+        var myTextEl = document.getElementById( 'main_content' );
+        var autolinker = new Autolinker( {
+            urls : {
+                schemeMatches : true,
+                wwwMatches    : true,
+                tldMatches    : true
+            },
+            email       : true,
+            phone       : true,
+            stripPrefix : true,
+            stripTrailingSlash : true,
+            newWindow   : true,
+            truncate : {
+                length   : 0,
+                location : 'end'
+            },
+        } );    
+        myTextEl.innerHTML = autolinker.link( myTextEl.innerHTML );g
     </script>
   </body>
 </html>
