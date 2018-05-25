@@ -1,14 +1,18 @@
- <div id="headline">
-    <img src="http://www.ifross.org/sites/default/files/fourseasons_logo.png"></div></a>
-  <div id="site-slogan">Institut für Rechtsfragen der Freien und Open Source Software</div>  </div>
-
------------------
+---
+layout: default
+title: "Lizenz-Center - ifrOSS.org"
+---
 
 Dies ist eine offizielle Übernahme des
 [ifrOSS.org/Lizenz-Center](http://www.ifross.org/lizenz-center) zur einfacheren Aktualisierung und kollaborativen Bearbeitung. 
 
-# Lizenz-Center
+<h1>Lizenz-Center</h1>
 
+<h2>Inhalt</h2>
+* TOC
+{:toc}
+
+## Kategorien
 Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und verschiedenen Lizenztypen zugeordnet. Dies betrifft folgende Kategorien:
 
 * [Freie Software und Open Source Lizenzen](##Open-Source-Lizenzen)
@@ -23,7 +27,6 @@ ermöglicht. Da fortlaufend neue Lizenzen erstellt werden, in
 neuen Versionen erscheinen oder nicht mehr unter ihrer alten URL
 aufrufbar sind, ist die Beteiligung aller bei der Aktualisierung
 dieser Liste willkommen.
-
 
 ## Open Source Lizenzen
 

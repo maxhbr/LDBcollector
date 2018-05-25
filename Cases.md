@@ -1,7 +1,13 @@
+---
+layout: default
+title: "Urteile - ifrOSS.org"
+---
 
-# Urteile
+<h1>Urteile</h1>
 
-{% include toc.html html=content %}
+* TOC
+{:toc}
+
 ___
 ## Deutschland
 ___
