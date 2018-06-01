@@ -81,6 +81,8 @@ proprietäre Software überführen.
 1. Do What The Fuck You Want To Public License (v. 1.0): https://commons.wikimedia.org/wiki/Template:WTFPL-1
 1. Do What The Fuck You Want To Public License (v. 2.0): http://www.wtfpl.net/txt/copying/ 
 1. Eclipse Distribution License (v 1.0): https://www.eclipse.org/org/documents/edl-v10.php
+1. Educational Community License (v. 1.0): https://web.archive.org/web/20050326095112/http://www.sakaiproject.org:80/license.html
+1. Educational Community License (v. 2.0): https://web.archive.org/web/20100617144451/http://www.osedu.org/licenses/ECL-2.0
 1. Eiffel Forum License (v. 1.0): http://www.eiffel-nice.org/license/forum.txt
 1. Eiffel Forum License (v. 2.0): http://www.eiffel-nice.org/license/eiffel-forum-license-2.html
 1. Entessa Public License (v. 1.0): http://web.archive.org/web/20050419215723/www.openseal.org/epl/
