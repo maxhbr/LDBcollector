@@ -236,6 +236,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Intel Open Source License: https://opensource.org/licenses/intel-open-source-license.php
 1. IPA Font License: https://ipafont.ipa.go.jp/old/ipafont/download.html#en
 1. No Limit Public License: http://spdx.org/licenses/NLPL
+1. Non-Profit Open Software License 3.0: https://spdx.org/licenses/NPOSL-3.0.html
 1. Open Group Public License: http://www.opengroup.org/openmotif/license
 1. Open Software License 1.0: http://web.archive.org/web/20021201193408/http://rosenlaw.com:80/osl.html
 1. Open Software License 2.0: http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html
@@ -337,6 +338,7 @@ Weiterentwicklungen weiterverbreitet werden können.
 1. Artistic License (v. 1.0): http://www.perlfoundation.org/artistic_license_1_0 (Einordnung unklar)
 1. Artistic License (v. 2.0): http://www.perlfoundation.org/artistic_license_2_0
 1. Clarified Artistic License: http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html
+1. Frameworx Open License (v. 1.0): https://spdx.org/licenses/Frameworx-1.0.html
 1. Keith Devens' Open Source License: https://web.archive.org/web/20100604220226/http://www.keithdevens.com/software/license/
 1. LaTeX Project Public License (LPPL) (v. 1.0): http://www.latex-project.org/lppl/lppl-1-0.html
 1. LaTeX Project Public License (LPPL) (v. 1.1): http://www.latex-project.org/lppl/lppl-1-1.html
