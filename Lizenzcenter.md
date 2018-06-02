@@ -157,6 +157,7 @@ proprietäre Software überführen.
 1. Trusster Open Source License (v. 1.0a): https://github.com/trusster/trusster/blob/master/truss/cpp/src/truss_verification_top.cpp
 1. Udanax Open-Source License: http://udanax.xanadu.com/license.html
 1. Universal Permissive License (v. 1.0): http://www.oracle.com/technetwork/licenses/upl-license-2927578.html
+1. University of Illinois/NCSA Open Source License (NSCA): https://web.archive.org/web/20100814031321/http://otm.illinois.edu/uiuc_openSource
 1. Unlicense: http://unlicense.org/
 1. Vovida Software License v 1.0: https://web.archive.org/web/20050410031206/http://www.vovida.org/document/VOCAL-1.4.0/license.txt
 1. W3C Software and Document Notice and License: http://www.w3.org/Consortium/Legal/copyright-software.html
@@ -303,6 +304,7 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 
 #### Sonstige Lizenzen mit beschränktem Copyleft-Effekt
 
+1. Adaptive Public License (v.1.0): https://web.archive.org/web/20070722115014/http://www.mamook.net/mediawiki/index.php/Adaptive_Public_License
 1. Apple Public Source License (v. 2.0): https://web.archive.org/web/20060323040828/https://opensource.apple.com/apsl/2.0.txt
 1. BitTorrent Open Source License (v. 1.0): https://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?diff_format=s&revision=1.1.1.1&view=markup
 1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
