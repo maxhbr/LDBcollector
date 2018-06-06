@@ -28,6 +28,7 @@ neuen Versionen erscheinen oder nicht mehr unter ihrer alten URL
 aufrufbar sind, ist die Beteiligung aller bei der Aktualisierung
 dieser Liste willkommen.
 
+
 ## Open Source Lizenzen
 
 Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
@@ -37,11 +38,9 @@ werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unter
 * [Lizenzen mit strengem Copyleft-Effekt](###Lizenzen-mit-strengem-Copyleft-Effekt)
 * [Lizenzen mit beschränktem Copyleft-Effekt](###Lizenzen-mit-beschränktem-Copyleft-Effekt)
 * [Lizenzen mit Wahlmöglichkeiten](###Lizenzen-mit-Wahlmöglichkeiten)
-* [Lizenzen mit Sonderrechten](Lizenzen-mit-Sonderrechten)
+* [Lizenzen mit Sonderrechten](###Lizenzen-mit-Sonderrechten)
 
-Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen
-ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die
-Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit "Einordnung unklar" gekennzeichnet.
+Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit "Einordnung unklar" gekennzeichnet.
 
 
 ### Lizenzen ohne Copyleft-Effekt ("Permissive Licenses")
@@ -53,7 +52,6 @@ hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann
 der Lizenznehmer veränderte Versionen der Software unter
 beliebigen Lizenzbedingungen weiterverbreiten, also auch in
 proprietäre Software überführen.
-
 
 1. 4Suite License (v. 1.1): https://web.archive.org/web/20060210220828/http://4suite.org/COPYRIGHT.doc
 1. Academic Free License (AFL) (v. 1.0): https://web.archive.org/web/20020808082753/http://www.rosenlaw.com:80/afl.html
@@ -175,16 +173,14 @@ proprietäre Software überführen.
 
 ### Lizenzen mit strengem Copyleft-Effekt
 
-Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
-Lizenznehmer verpflichtet von der ursprünglichen Software
-abgeleitete Werke ebenfalls nur unter den Bedingungen der
-Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten
+Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software
+abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten
 Lizenzen sind deswegen aber nicht schon unbedingt "GPL-kompatibel".
 
 
 #### GPLartige Lizenzen
 
-Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit ausnahmen können auch als beschränktes Copyleft verstanden werden.
+Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit Ausnahmen können auch als beschränktes Copyleft verstanden werden.
 
 1. Affero General Public License (v. 1): http://www.affero.org/oagpl.html
 1. Affero General Public License (v. 2): http://www.affero.org/agpl2.html
@@ -255,8 +251,8 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 
 ### Lizenzen mit beschränktem Copyleft-Effekt
 
-Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
-Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält. 
+Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält. 
+
 
 #### MPLartige Lizenzen
 
@@ -303,6 +299,7 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Zimbra Publice License (v. 1.3): https://web.archive.org/web/20120617001845/http://www.zimbra.com/license/zimbra-public-license-1-3.html
 1. Zimbra Publice License (v. 1.4): https://www.zimbra.com/legal/zimbra-public-license-1-4/
 
+
 #### Sonstige Lizenzen mit beschränktem Copyleft-Effekt
 
 1. Adaptive Public License (v.1.0): https://web.archive.org/web/20070722115014/http://www.mamook.net/mediawiki/index.php/Adaptive_Public_License
@@ -327,12 +324,10 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. wxWindows Library License (v. 3.1): https://www.wxwidgets.org/about/licence/
 1. Yahoo! Public License (YPL) (v. 1.1): https://web.archive.org/web/20120617001853/http://www.zimbra.com/license/yahoo_public_license_1.0.html
 
-#### Lizenzen mit Wahlmöglichkeiten
 
-Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
-nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
-Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
-Weiterentwicklungen weiterverbreitet werden können.
+### Lizenzen mit Wahlmöglichkeiten
+
+Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können.
 
 1. ANTLR 2 License: http://www.antlr2.org/license.html
 1. Artistic License (v. 1.0): http://www.perlfoundation.org/artistic_license_1_0 (Einordnung unklar)
@@ -355,14 +350,10 @@ Weiterentwicklungen weiterverbreitet werden können.
 1. Vim License: http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
 
 
-#### Lizenzen mit Sonderrechten
+### Lizenzen mit Sonderrechten
 
-Die Lizenzen mit Sonderrechten gewähren den Lizenznehmern zwar
-alle diejenigen Rechte, die Freie Software ausmachen, sehen aber
-zugleich besondere Privilegien für den Lizenzgeber bei
-Weiterentwicklungen durch den Lizenznehmer vor. Diese Lizenzen
-werden zumeist bei Programmen verwendet, die ursprünglich
-proprietär vertrieben wurden.
+Die Lizenzen mit Sonderrechten gewähren den Lizenznehmern zwar alle diejenigen Rechte, die Freie Software ausmachen, sehen aber zugleich besondere Privilegien für den Lizenzgeber bei Weiterentwicklungen durch den Lizenznehmer vor. Diese Lizenzen
+werden zumeist bei Programmen verwendet, die ursprünglich proprietär vertrieben wurden.
 
 1. Apple Public Source License 1.0: https://www.apple.com/publicsource/license.html (Einordnung unklar)
 1. Apple Public Source License 1.1: https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE (Einordnung unklar)
@@ -377,4 +368,3 @@ proprietär vertrieben wurden.
 1. RealNetworks Community Source License - Research and Development Use (RCSL R&D) (v 2.0): https://web.archive.org/web/20060924224843/https://www.helixcommunity.org/content/rcsl
 1. RealNetworks Community Source License - Research and Development Use (RCSL R&D) (v 3.0): https://web.archive.org/web/20141226113418/https://helixcommunity.org/content/rcsl
 1. RealNetworks Public Source License (RPSL) (v. 1.0): https://community.helixcommunity.org/content/rpsl
-
