@@ -21,6 +21,10 @@
         - libtaskotron-core
         - libtaskotron-fedora
       register: dnf_output
+      # retry for network failures
+      retries: 3
+      delay: 30
+      until: dnf_output is succeeded
 
     - name: Print msg of DNF task
       debug:
