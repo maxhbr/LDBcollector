@@ -1,6 +1,6 @@
 {
   "@context": "https://wking.github.io/fsf-api/schema/license.jsonld",
-  "id": "EUPL",
+  "id": "EUPL-1.1",
   "identifiers": {
     "spdx": [
       "EUPL-1.1"
@@ -11,7 +11,7 @@
     "libre"
   ],
   "uris": [
-    "https://www.gnu.org/licenses/license-list.html#EUPL",
+    "https://www.gnu.org/licenses/license-list.html#EUPL-1.1",
     "http://directory.fsf.org/wiki/License:EUPLv1.1"
   ]
 }
