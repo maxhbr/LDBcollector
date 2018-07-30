@@ -145,7 +145,6 @@ proprietäre Software überführen.
 1. Ruby License: http://www.ruby-lang.org/en/LICENSE.txt
 1. Sendmail License: http://www.sendmail.org/ftp/LICENSE
 1. skyBuilders Open Source License: http://www.skybuilders.com/OpenSourceLicense.html
-1. Sleepycat License: https://fedoraproject.org/wiki/Licensing/Sleepycat
 1. SpeechWorks Public License - Software (v. 1.1): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
 1. Standard ML of New Jersey Copyright Notice: http://cm.bell-labs.com/cm/cs/what/smlnj/license.html
 1. Suneido Free Software License: http://suneido.com/wp-content/uploads/delightful-downloads/2014/10/free_license.txt
@@ -346,6 +345,7 @@ Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfa
 1. SFL License Agreement: https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm
 1. SGI Free Software License B (v. 1.0): https://web.archive.org/web/20130114073135/http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung unklar)
 1. SGI Free Software License B (v. 1.1): https://web.archive.org/web/20170414231252/http://oss.sgi.com:80/projects/FreeB/SGIFreeSWLicB.1.1.doc (Einordnung unklar)
+1. Sleepycat License: https://fedoraproject.org/wiki/Licensing/Sleepycat
 1. Sleepycat Software Product License: http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html
 1. Vim License: http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
 
