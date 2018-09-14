@@ -33,6 +33,7 @@ Dies ist eine Übersicht freier Lizenzen für Datenbanken. Einen Überblick zum 
 1. Open Government Licence (v. 1.0) (UK): https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/
 1. Open Government Licence (v. 2.0) (UK): https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/
 1. Open Government Licence (v. 3.0) (UK): http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+1. Persper Public Data Set License Agreement (v. 1.0): https://www.persper.org/pdl-v1
 1. Singapore Open Data Licence (v. 1.0): https://data.gov.sg/open-data-licence
 1. Statistics Canada Open Licence Agreement: https://www.statcan.gc.ca/eng/reference/licence
 1. Talis Community License (TCL): http://web.archive.org/web/20130923083859/http://tdnarchive.capita-libraries.co.uk/tcl
