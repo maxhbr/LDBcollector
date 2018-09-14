@@ -15,6 +15,7 @@ kommerzielle Weiterverbreitung verbieten.
 1. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
 1. Jahia Community Source License (JSCL) (v.012): http://www.jahia.org/jahia/Jahia/pid/145
 1. JasPer Software License (1.0): http://stuff.mit.edu/afs/sipb/user/kenta/jasper-SunOS/jasper-1.700.2/LICENSE
+1. MCU path license 2018: https://01.org/mcu-path-license-2018
 1. Microsoft Limited Permissive License (Ms-LPL): https://web.archive.org/web/20070509061152/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedpermissivelicense.mspx 
 1. Microsoft Limited Public License (Ms-LPL): https://web.archive.org/web/20071223053203/http://microsoft.com:80/resources/sharedsource/licensingbasics/limitedpubliclicense.mspx 
 1. Microsoft Limited Community License (Ms-LCL): https://web.archive.org/web/20070427113623/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedcommunitylicense.mspx
