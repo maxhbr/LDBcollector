@@ -69,7 +69,7 @@ instance FromJSON SPDXList where
 
 loadSPDXFactsFromString :: ByteString -> Facts
 loadSPDXFactsFromString s = case (decode s :: Maybe SPDXList) of
-  Just (SPDXList v es _)  -> trace ("SPDX License list version is: " ++ v) $ let
+  Just (SPDXList v es _)  -> trace ("INFO: SPDX License list version is: " ++ v) $ let
       filteredEs = filter (\f -> not $ isSPDXLicenseDeprecated f) es
     in V.fromList $ map (mkLicenseFact "SPDX") filteredEs
   Nothing                 -> V.empty
@@ -80,6 +80,6 @@ loadSPDXFacts :: FilePath -> IO Facts
 loadSPDXFacts basepath = let
     licensesJSONFile = basepath </> "licenses.json"
   in do
-    hPutStrLn stderr $ "DEBUG: parse SPDX file: " ++ licensesJSONFile
+    hPutStrLn stderr $ "INFO: parse SPDX file: " ++ licensesJSONFile
     bs <- B.readFile licensesJSONFile
     return (loadSPDXFactsFromString bs)

@@ -15,6 +15,12 @@
 ### How it is licensed:
 - data-license: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
+## Licenses from the nexB scancode-toolkit scanner
+### How to update:
+- take the content of the folder `/src/licensedcode/data/licenses/` from https://github.com/nexB/scancode-toolkit
+### How it is licensed:
+- cc0-1.0
+
 ## Other Sources
   - [OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src)
     data-license: CC-BY-SA-4.0
