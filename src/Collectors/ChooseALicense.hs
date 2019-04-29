@@ -33,25 +33,25 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON CALFactRaw
 instance LFRaw CALFactRaw where
-  getImpliedShortnames (CALFactRaw sn _ sid _) = [sn] ++ (case sid of
-                                                            Just v  -> [v]
-                                                            Nothing -> [])
+  getImpliedShortnames (CALFactRaw sn _ sid _) = sn : (case sid of
+                                                         Just v  -> [v]
+                                                         Nothing -> [])
   getType _                                    = "CALFact"
 
 loadCalFactFromFile :: FilePath -> FilePath -> IO LicenseFact
 loadCalFactFromFile calFolder calFile = let
     fileWithPath = calFolder </> calFile
-    name = dropExtension calFile
+    n = dropExtension calFile
   in do
     cnt <- B.readFile fileWithPath
     let sCnt = Char8.unpack cnt
         ls = lines sCnt
         getValueFor key = let
             prefix = key ++ ": "
-          in stripPrefix prefix ((filter (prefix `isPrefixOf`) ls) !! 0)
+          in stripPrefix prefix (head (filter (prefix `isPrefixOf`) ls))
         t = getValueFor "title"
         sid = getValueFor "spdx-id"
-    return (mkLicenseFact "choosealicense.com" (CALFactRaw name t sid cnt))
+    return (mkLicenseFact "choosealicense.com" (CALFactRaw n t sid cnt))
 
 loadChooseALicenseFacts :: FilePath -> IO Facts
 loadChooseALicenseFacts calFolder = do
