@@ -29,7 +29,15 @@ main = do
   factsFromBlueOak <- loadBlueOakFacts "./data/Blue_Oak_Council/blue-oak-council-license-list.json"
   factsFromOCPT <- loadOSPTFacts "./data/OpenChainPolicyTemplate/Table.csv"
   factsFromScancode <- loadScancodeFacts "./data/nexB_scancode-toolkit_license_list/"
-  let facts = V.concat [factsFromSPDX, factsFromBlueOak, factsFromOCPT, factsFromScancode]
+  factsFromOsadl <- loadOsadlFacts "./data/OSADL/"
+  factsFromChooseALicense <- loadChooseALicenseFacts "./data/choosealicense.com/"
+  let facts = V.concat [ factsFromSPDX
+                       , factsFromBlueOak
+                       , factsFromOCPT
+                       , factsFromScancode
+                       , factsFromOsadl
+                       , factsFromChooseALicense
+                       ]
 
   hPutStrLn stderr "... done with collecting data"
 

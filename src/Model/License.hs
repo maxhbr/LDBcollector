@@ -16,6 +16,7 @@ module Model.License
 import           Data.List (intersect)
 import qualified Data.Text as T
 import           Data.Text (Text)
+import           Data.Char (toUpper)
 import qualified Data.Vector as V
 import           Data.Vector (Vector)
 import           Text.JSON
@@ -83,10 +84,10 @@ mkLicenseTextFact s t = mkLicenseFact defaultLicenseFactScope (LicenseTextFactRa
 -- get license from facts
 getLicenseFromFacts :: LicenseShortname -> [LicenseShortname] -> Facts -> License
 getLicenseFromFacts shortname otherShortnames fs = let
-    allShortnamse = shortname : otherShortnames
+    allShortnames = map (map toUpper) $ shortname : otherShortnames
     shortnamefilter f = let
-        impliedShortnames = getImpliedShortnames f
-      in not (null (allShortnamse `intersect` impliedShortnames))
+        impliedShortnames = map (map toUpper) $ getImpliedShortnames f
+      in not (null (allShortnames `intersect` impliedShortnames))
   in License $ mkLicenseShortnameFact shortname `V.cons` V.filter shortnamefilter fs
 
 containsFactOfType :: License -> String -> Bool

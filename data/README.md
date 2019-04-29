@@ -48,6 +48,9 @@ TODO: where is a better source?
 ### How to update
 - use the update script
 
+## TLDRLegal
+Licensing is unclear
+
 ## Other Sources
   - [OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src)
     data-license: CC-BY-SA-4.0

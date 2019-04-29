@@ -7,3 +7,5 @@ import Collectors.SPDX as X
 import Collectors.BlueOak as X
 import Collectors.OpenChainPolicyTemplate as X
 import Collectors.Scancode as X
+import Collectors.OSADL as X
+import Collectors.ChooseALicense as X
