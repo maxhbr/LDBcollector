@@ -1,0 +1,82 @@
+Full Name,FSF Free?,Upstream URL,Notes
+9wm License (Original),No,http://unauthorised.org/dhog/9wm/README,The argument that there's a strongly-implied right to modify is unlikely to fly in many countries outside the US. NOTE: 9wm has since been relicensed to MIT.
+Adaptive Public License,No,http://opensource.org/licenses/apl1.0.php,
+Agere LT Modem Driver License,No,https://fedoraproject.org/wiki/Licensing/Agere_LT_Modem_Driver_License,
+Aladdin Free Public License,No,http://www.artifex.com/downloads/doc/Public.htm,
+AMAP License,No,https://fedoraproject.org/wiki/Licensing/AMAP_License,Additional restrictions are non-free and GPL incompatible
+Amazon Software License,No,http://aws.amazon.com/asl/,Section 3.3 is a clear field-of-use restriction
+Apple iTunes License,No,http://images.apple.com/legal/sla/docs/itunes.pdf,No source related permissions
+Apple Public Source License 1.0,No,https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0,
+Apple Public Source License 1.1,No,https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.1,
+Apple Public Source License 1.2,No,https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.2,
+Apple Quicktime License,No,http://store.apple.com/Catalog/US/Images/quicktime.html,No source related permissions
+Aptana Public License,No,http://aptana.com/legal/apl/,No permission to redistribute
+Artistic 1.0 (original),No,http://www.perl.com/pub/a/language/misc/Artistic.html,See: http://www.gnu.org/licenses/license-list.html#ArtisticLicense
+AT&T Public License,No,,Deprecated license
+C/Migemo License,No,https://fedoraproject.org/wiki/Licensing/CMigemo,
+CACert Root Distribution License,No,https://fedoraproject.org/wiki/Licensing/CACert_Root_Distribution_License,Liability disclaimer is actually use restriction
+CodeProject Open License (CPOL),No,http://www.codeproject.com/info/cpol10.aspx,Unacceptable use restrictions
+Commons Clause,No,https://fedoraproject.org/wiki/Licensing/CommonsClause,Commercial use restrictions
+"eCos Public License, v1.1",No,,
+Eiffel Forum License 1.0,No,https://fedoraproject.org/wiki/Licensing/Eiffel_Forum_License_V1,
+EMC2 License,No,http://pauillac.inria.fr/cdrom_a_graver/www/emc2/copyright.htm,Commercial use restrictions
+European Union Public License v1.0,No,http://ec.europa.eu/idabc/eupl,Non-free due to Article 13.
+Frameworx License,No,http://opensource.org/licenses/frameworx.php,"Non-free due to the limitation on charging for ""Value-Added Services"""
+Frontier Artistic License,No,http://www.spinwardstars.com/frontier/fal.html,Non-free for the same reasons as regular Artistic 1.0 License
+GPL for Computer Programs of the Public Administration,No,http://www.celepar.pr.gov.br/modules/conteudo/conteudo.php?conteudo=69,
+gSOAP Public License,No,http://www.cs.fsu.edu/~engelen/license.html,"Please note that while the ""gSOAP Public License"" is non-free, the ""gSOAP Toolkit"" is dual licensed as GPLv2 or gSOAP Public License."
+Hacktivismo Enhanced-Source Software License Agreement,No,http://www.hacktivismo.com/about/hessla.php,
+Helix DNA Technology Binary Research Use License,No,https://helixcommunity.org/beula/,"No source permissions, binary EULA"
+HP Software License Terms,No,http://h30097.www3.hp.com/hp_sw_license.html,"No source permissions, binary EULA"
+IBM Sample Code License,No,https://fedoraproject.org/wiki/Licensing/IBM_Sample_Code_License,Use restrictions
+Intel IPW3945 Daemon License,No,https://fedoraproject.org/wiki/Licensing/Intel_IPW3945_Daemon_License,"No source permissions, binary EULA"
+Intel Open Source License,Yes,http://opensource.org/licenses/intel-open-source-license.php,Deprecated license
+Jahia Community Source License,No,http://www.jahia.org/jahia/Jahia/pid/145,
+JSON License,No,http://www.json.org/license.html,"The clause ""The Software shall be used for Good, not Evil."" is impossible to parse or comply with."
+lha license,No,http://packages.debian.org/changelogs/pool/non-free/l/lha/current/copyright,
+License Agreement for Application Response Measurement (ARM) SDK,No,https://fedoraproject.org/wiki/Licensing/ApplicationResponseMeasurementSDKLicense,See Notes on license page
+Maia Mailguard License,No,http://www.maiamailguard.org/license.php,
+MAME License,No,http://mamedev.org/legal.html,Commercial use restrictions
+MeepZor Consulting Public Licence,No,http://meepzor.com/packages/autoresponder/LICENCE.txt,"Deprecated, upstream uses ASL 2.0 now"
+Metasploit Framework License (pre 2006),No,https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License,
+Microsoft's Shared Source CLI/C#/Jscript License,No,https://fedoraproject.org/wiki/Licensing/Microsoft_Shared_Source_License,
+MITRE Collaborative Virtual Workspace License (CVW),N/A,http://opensource.org/licenses/mitrepl.php,Deprecated license
+MSNTP License,No,https://fedoraproject.org/wiki/Licensing/MSNTP,Commercial use restrictions
+mrouted license (old),No,https://fedoraproject.org/wiki/Licensing/mrouted,
+NASA CDF License,No,https://fedoraproject.org/wiki/Licensing/NasaCDF,"Commercial use restrictions, poorly worded"
+NASA Open Source Agreement v1.3,No,https://fedoraproject.org/wiki/Licensing/NASA_Open_Source_Agreement,
+OCLC Public Research License 2.0,No,http://opensource.org/licenses/oclc2.php,"Appears to limit the price at which a copy can be charged, not just simply prohibiting imposition of royalties."
+Open CASCADE Technology Public License,No,https://fedoraproject.org/wiki/Licensing/Open_CASCADE_Technology_Public_License,
+Open Group Test Suite License,No,http://opensource.org/licenses/opengroup.php,Same flaws as Artistic 1.0
+Open Map License,No,http://openmap.bbn.com/license.html,"Derived from Artistic 1.0, has same flaws"
+Open Motif Public End User License,No,http://www.opengroup.org/openmotif/license/,Commercial use restrictions
+Open Public License,No,https://fedoraproject.org/wiki/Licensing/Open_Public_License,
+OSGi Specification License,No,http://www.osgi.org/Main/OSGiSpecificationLicense,Forbids modification
+Paul Hsieh Derivative License,No,http://www.azillionmonkeys.com/qed/license-derivative.html,
+Paul Hsieh Exposition License,No,http://www.azillionmonkeys.com/qed/license-exposition.html,
+Pine License,No,http://www.washington.edu/pine/overview/legal.html,
+qmail License,No,http://cr.yp.to/qmail/dist.html,"deprecated, qmail is now public domain"
+Reciprocal Public License,No,http://www.opensource.org/licenses/rpl.php,
+Ricoh Source Code Public License,No,http://opensource.org/licenses/ricohpl.php,
+Scilab License (OLD),No,https://fedoraproject.org/wiki/Licensing/Scilab_License_Old,Current versions of Scilab use the CeCILL license
+Server Side Public License v1 (SSPL),No,https://fedoraproject.org/wiki/Licensing/SSPL,
+SGI Free Software License B 1.1 or older,No,http://oss.sgi.com/projects/FreeB/,"Version 2.0 is MIT, free and GPL compat."
+SGI GLX Public License 1.0,No,https://fedoraproject.org/wiki/Licensing/GLX_Public_License,All GLX code now uses Free B 2.0
+Siren14 License Agreement,No,https://fedoraproject.org/wiki/Licensing/Siren14_Licensing_Agreement,
+Spin Commercial License,No,http://www.spinroot.com/spin/spin_license.html,
+Squeak License,No,http://squeak.org/SqueakLicense/,
+SystemC Open Source License,No,http://www.systemc.org/about/org_docs/license/,
+Sun Binary Code License Agreement,No,https://fedoraproject.org/wiki/Licensing/Sun_Binary_Code_License_Agreement,"Non-free, unless resolved with Supplemental License Terms"
+Sun Community Source License,No,http://www.sun.com/software/communitysource/,
+Sun RPC License,No,https://fedoraproject.org/wiki/Licensing/SunRPC,"Restrictions on modification, distribution"
+Sun Solaris Source Code (Foundation Release) License,No,http://www.mibsoftware.com/librock/librock/license/ssscfr.txt,
+Sybase Open Watcom Public License 1.0,No,http://opensource.org/licenses/sybase.php,
+Terracotta Public License 1.0,No,http://svn.terracotta.org/svn/ehcache/tags/ehcache-2.9.0/distribution/src/main/assembly/root/licenses/EHCACHE-TERRACOTTA-LICENSE.txt,"Attribution requirements are burdensome, unclear, and potentially impossible to comply with (Section 14)"
+TrueCrypt License,No,http://www.truecrypt.org/legal/license,
+TORQUE v2.5+ Software License v1.0,,No,Commercial use restriction
+University of Utah Public License,No,http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt,
+University of Washington Free Fork License,No,https://fedoraproject.org/wiki/Licensing/UofWFreeFork,No longer used
+unrar license,No,https://fedoraproject.org/wiki/Licensing/Unrar,"Use restrictions, forced removal clause, see license page for details"
+X.Net License,N/A,http://opensource.org/licenses/xnet.php,Deprecated license
+Yahoo Public License 1.0,No,http://www.zimbra.com/license/yahoo_public_license_1.0.html,
+Zimbra Public License 1.3,No,http://www.zimbra.com/license/zimbra-public-license-1-3.html,"Badgeware clause does not make allowances for modifications in which it is not technically possible to preserve a 'logo', we must assume this provision constitutes an undue burden on the right of modification."

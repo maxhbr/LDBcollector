@@ -1,0 +1,13 @@
+Full Name,Short Name,FSF Free?,Upstream URL
+"Apple's Common Documentation License, Version 1.0",CDL,Yes,https://fedoraproject.org/wiki/Licensing/Common_Documentation_License
+Creative Commons Attribution license,CC-BY,Yes,http://creativecommons.org/licenses/by/4.0/
+Creative Commons Attribution-ShareAlike,CC-BY-SA,Yes,http://creativecommons.org/licenses/by-sa/4.0/
+FreeBSD Documentation License,FBSDDL,Yes,http://www.freebsd.org/copyright/freebsd-doc-license.html
+GNU Free Documentation License,GFDL,Yes,http://www.fsf.org/licensing/licenses/fdl.html
+GNU General Public License,(See Note A),Yes,http://www.fsf.org/licensing/licenses/gpl.html
+IEEE and Open Group Documentation License,IEEE,Yes,https://fedoraproject.org/wiki/Licensing/IEEEDocLicense
+Linux Documentation Project License,LDPL,Yes,http://tldp.org/COPYRIGHT.html
+Old FSF Documentation License,OFSFDL,Yes,https://fedoraproject.org/wiki/Licensing/OldFSFDocLicense
+"Open Publication License, v1.0",Open Publication,"Yes, provided the copyright holder does not exercise any of the “LICENSE OPTIONS” listed in Section VI",http://opencontent.org/openpub/
+"Public Use License, v1.0",Public Use,Yes,https://fedoraproject.org/wiki/Licensing/PublicUseLicense
+Verbatim License,Verbatim,Yes,https://fedoraproject.org/wiki/Licensing/VerbatimLicense

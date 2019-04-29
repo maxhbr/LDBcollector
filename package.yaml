@@ -46,6 +46,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - LDBcollector
+    - containers
 
 tests:
   LDBcollector-test:

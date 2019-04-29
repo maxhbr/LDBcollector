@@ -8,8 +8,20 @@ import           Data.ByteString.Lazy (ByteString)
 import           System.Directory (createDirectory, removeDirectoryRecursive, doesDirectoryExist)
 import           System.FilePath
 import           Control.Monad
+import qualified Data.Map as M
+import           Data.Map (Map)
 
 import Lib
+
+additionalShortnames :: Map LicenseShortname [LicenseShortname]
+additionalShortnames = M.fromList
+  [ ("GPL-1.0-only", ["GPL-1.0", "GPL1.0", "GPL1"])
+  , ("GPL-2.0-only", ["GPL-2.0", "GPL2.0", "GPL2"])
+  , ("GPL-3.0-only", ["GPL-3.0", "GPL3.0", "GPL3"])
+  , ("GPL-1.0-or-later", ["GPL-1.0+", "GPL1.0+", "GPL1+"])
+  , ("GPL-2.0-or-later", ["GPL-2.0+", "GPL2.0+", "GPL2+"])
+  , ("GPL-3.0-or-later", ["GPL-3.0+", "GPL3.0+", "GPL3+"])
+  ]
 
 main :: IO ()
 main = do
@@ -30,6 +42,6 @@ main = do
   createDirectory outputFolder
   hPutStrLn stderr "... done with calculating licenses"
   mapM_ (\i -> do
-            let l = getLicenseFromFacts i [] facts
+            let l = getLicenseFromFacts i (M.findWithDefault [] i additionalShortnames) facts
             B.writeFile (outputFolder </> i ++ ".json") (encode l)
         ) ids

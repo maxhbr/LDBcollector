@@ -1,0 +1,285 @@
+Full Name,Short Name,FSF Free?,GPLv2 Compat?,GPLv3 Compat?,Upstream URL
+3dfx Glide License,Glide,Yes,NO,NO,http://www.users.on.net/~triforce/glidexp/COPYING.txt
+4Suite Copyright License,ASL 1.1,Yes,NO,NO,http://4suite.org/COPYRIGHT
+Abstyles License,Abstyles,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Abstyles
+Academic Free License,AFL,Yes,NO,NO,http://opensource.org/licenses/afl-3.0.php
+Academy of Motion Picture Arts and Sciences BSD,AMPAS BSD,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD
+Adobe Systems Incorporated Source Code License Agreement,Adobe,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/AdobeLicense
+Adobe Postscript AFM License,APAFML,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM
+Adobe Glyph List License,MIT,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
+Affero General Public License 1.0,AGPLv1,Yes,NO,,http://www.affero.org/oagpl.html
+Affero General Public License 3.0,AGPLv3,Yes,NO,Sortof,http://www.fsf.org/licensing/licenses/agpl-3.0.html
+Affero General Public License 3.0 or later,AGPLv3+,Yes,NO,Sortof,http://www.fsf.org/licensing/licenses/agpl-3.0.html
+Affero General Public License 3.0 with Zarafa trademark exceptions,AGPLv3 with exceptions,Yes,NO,Sortof,http://www.zarafa.com/content/affero-gplv3
+Afmparse License,Afmparse,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Afmparse
+Amazon Digital Services License,ADSL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense
+AMD's plpa_map.c License,AMDPLPA,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License
+ANTLR Software Rights Notice,ANTLR-PD,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/ANTLR-PD
+Apache Software License 1.0,ASL 1.0,Yes,NO,NO,http://www.apache.org/licenses/LICENSE-1.0
+Apache Software License 1.1,ASL 1.1,Yes,NO,NO,http://www.apache.org/licenses/LICENSE-1.1
+Apache Software License 2.0,ASL 2.0,Yes,NO,Yes,http://www.apache.org/licenses/LICENSE-2.0
+App::s2p License,App-s2p,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/App-s2p
+Apple MIT License,AML,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Apple_MIT_License
+Apple Public Source License 2.0,APSL 2.0,Yes,NO,,http://www.opensource.apple.com/apsl/2.0.txt
+Array Input Method Public License,Array,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Array
+Artistic (clarified),Artistic clarified,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/ArtisticClarified
+Artistic 2.0,Artistic 2.0,Yes,Yes,Yes,http://www.perlfoundation.org/artistic_license_2_0
+Aspell-ru License,ARL,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/AspellRu
+Attribution Assurance License,AAL,Yes,NO,NO,http://opensource.org/licenses/attribution.php
+Bahyph License,Bahyph,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Bahyph
+Barr License,Barr,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Barr
+Beerware License,Beerware,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Beerware
+BeOpen Open Source License Agreement Version 1,BeOpen,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/BeOpen
+Bibtex License,Bibtex,Yes (but only for tex),NO,NO,https://fedoraproject.org/wiki/Licensing/Bibtex
+BitTorrent License,BitTorrent,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License
+Boost Software License,Boost,Yes,Yes,Yes,http://www.boost.org/LICENSE_1_0.txt
+Borceux license,Borceux,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Borceux
+BSD + Patent,BSD-2-Clause-Patent,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/BSD-2-Clause-Patent
+BSD License (original),BSD with advertising,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/BSD#BSDwithAdvertising
+BSD with attribution,BSD with attribution,Yes,,,https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution
+BSD License (no advertising),BSD,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD
+BSD License (two clause),BSD,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD
+BSD Protection License,BSD Protection,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/BSD_Protection_License
+Computer Associates Trusted Open Source License 1.1,CATOSL,Yes,NO,NO,http://opensource.org/licenses/ca-tosl1.1.php
+CeCILL License v1.1,CeCILL,Yes,Yes,Yes,http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html
+CeCILL License v2,CeCILL,Yes,Yes,Yes,http://www.cecill.info/licences.en.html
+CeCILL-B License,CeCILL-B,Yes,NO,NO,http://www.cecill.info/licences.en.html
+CeCILL-C License,CeCILL-C,Yes,NO,NO,http://www.cecill.info/licences.en.html
+Celtx Public License (CePL),Netscape,Yes,NO,NO,http://www.celtx.com/CePL/
+CMU License (BSD like),MIT,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/MIT
+CNRI License (Old Python),CNRI,Yes,NO,NO,http://www.handle.net/python_licenses/python1.6_9-5-00.html
+Common Development Distribution License 1.0,CDDL-1.0,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.0
+Common Development Distribution License 1.1,CDDL-1.1,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.1
+Common Public License,CPL,Yes,NO,NO,http://www.eclipse.org/legal/cpl-v10.html
+Condor Public License,Condor,Yes,NO,,http://www.cs.wisc.edu/condor/condor-public-license.html
+Copyright Attribution Only,Copyright only,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/CopyrightOnly
+CPAL License 1.0,CPAL,Yes,NO,NO,https://www.socialtext.net/open/index.cgi?cpal_license_in_wikitext
+CP/M License,CPM,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/CPM
+CRC32 License,CRC32,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/CRC32
+Creative Commons BSD,BSD,Yes,Yes,Yes,http://creativecommons.org/licenses/BSD/
+Creative Commons GNU GPL,GPLv2+,Yes,N/A,See Matrix,http://creativecommons.org/choose/cc-gpl
+Creative Commons GNU LGPL,LGPLv2+,Yes,See Matrix,See Matrix,http://creativecommons.org/choose/cc-lgpl
+Creative Commons Zero 1.0 Universal,CC0,Yes,Yes,Yes,http://creativecommons.org/publicdomain/zero/1.0/legalcode
+Crossword License,Crossword,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Crossword
+Cryptix General License,BSD,Yes,Yes,Yes,http://www.cryptix.org/LICENSE.TXT
+Crystal Stacker License,Crystal Stacker,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/CrystalStacker
+CUA Office Public License Version 1.0,MPLv1.1,Yes,"Compatible if dual licensed with GPL, otherwise Incompatible",,http://opensource.org/licenses/cuaoffice.php
+Cube License,Cube,Yes,No,No,https://fedoraproject.org/wiki/Licensing/Cube
+diffmark license,diffmark,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/diffmark
+DO WHATEVER PUBLIC LICENSE,DWPL,Yes,No,No,https://fedoraproject.org/wiki/Licensing/DWPL
+Do What The F*ck You Want To Public License,WTFPL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/WTFPL
+DOC License,DOC,Yes,Yes,Yes,http://www.cs.wustl.edu/~schmidt/ACE-copying.html
+Docbook MIT License,DMIT,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/DMIT
+Dotseqn License,Dotseqn,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Dotseqn
+DSDP License,DSDP,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/DSDP
+dvipdfm License,dvipdfm,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/dvipdfm
+Eclipse Distribution License 1.0,BSD,Yes,Yes,Yes,http://www.eclipse.org/org/documents/edl-v10.php
+Eclipse Public License 1.0,EPL-1.0,Yes,NO,NO,http://www.eclipse.org/legal/epl-v10.html
+Eclipse Public License 2.0,EPL-2.0,Yes,NO,NO,http://www.eclipse.org/legal/epl-v20.html
+eCos License v2.0,eCos,Yes,Yes,Yes,http://www.fsf.org/licensing/licenses/ecos-license.html
+Educational Community License 1.0,ECL 1.0,Yes,Yes,Yes,http://opensource.org/licenses/ecl1.php
+Educational Community License 2.0,ECL 2.0,Yes,NO,Yes,http://www.osedu.org/licenses/ECL-2.0/
+eGenix.com Public License 1.1.0,eGenix,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0
+Eiffel Forum License 2.0,EFL 2.0,Yes,Yes,Yes,http://www.fsf.org/licensing/licenses/eiffel-forum-license-2.html
+enna License,MIT,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/MIT#enna
+Enlightenment License (e16),MIT with advertising,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising
+Entessa Public License,Entessa,Yes,NO,NO,http://opensource.org/licenses/entessa.php
+EPICS Open License,EPICS,Yes,Yes,Yes,http://www.aps.anl.gov/epics/license/open.php
+Erlang Public License 1.1,ERPL,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/ErlangPublicLicense
+EU Datagrid Software License,EU Datagrid,Yes,Yes,Yes,http://www.opensource.org/licenses/eudatagrid.php
+European Union Public License 1.1,EUPL 1.1,Yes,Yes,NO,http://ec.europa.eu/idabc/en/document/7774.html
+Eurosym License,Eurosym,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Eurosym
+Fedora Directory Server License,GPLv2 with exceptions,Yes,Yes,Yes,http://directory.fedoraproject.org/wiki/GPL_Exception_License_Text
+Fair License,Fair,Yes,Yes,Yes,http://opensource.org/licenses/fair.php
+feh License,MIT,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/MIT#feh
+FLTK License,LGPLv2 with exceptions,Yes,Yes,Yes,http://www.fltk.org/COPYING.php
+Fraunhofer FDK AAC License,FDK-AAC,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/FDK-AAC
+FreeImage Public License,MPLv1.0,Yes,NO,NO,http://freeimage.sourceforge.net/freeimage-license.txt
+Freetype License,FTL,Yes,NO,Yes,http://freetype.fis.uniroma2.it/FTL.TXT
+FSF All Permissive license,FSFAP,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/FSFAP
+FSF Unlimited License,FSFUL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License
+FSF Unlimited License (with License Retention),FSFULLR,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant
+Giftware License,Giftware,Yes,Yes,Yes,http://www.talula.demon.co.uk/allegro/license.html
+GL2PS License,GL2PS,Yes,Yes,Yes,http://www.geuz.org/gl2ps/COPYING.GL2PS
+Glulxe License,Glulxe,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Glulxe
+GNU General Public License (no version),GPL+,Yes,Yes,Yes,"A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include."
+"GNU General Public License (no version), with Classpath exception",GPL+ with exceptions,Yes,Yes,Yes,"A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include. And if they manage to grant the Classpath exception without specifying a version, you get this strange beast."
+"GNU General Public License (no version), with font embedding exception",GPL+ with exceptions,Yes,Yes,Yes,"A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include. And if they manage to grant the font embedding exception without specifying a version, you get this strange beast."
+GNU General Public License v1.0 only,GPLv1,Yes,NO,NO,http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt
+GNU General Public License v1.0 or later,GPL+,Yes,Yes,Yes,"Note that this is not GPLv1+, because 1+ is the same as any version."
+GNU General Public License v2.0 only,GPLv2,Yes,See Matrix,See Matrix,http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+"GNU General Public License v2.0 only, with Classpath exception",GPLv2 with exceptions,Yes,"Yes, if exception is used.","Yes, if exception is used.",https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
+"GNU General Public License v2.0 only, with font embedding exception",GPLv2 with exceptions,Yes,See Matrix,See Matrix,http://www.gnu.org/licenses/gpl-faq.html#FontException
+GNU General Public License v2.0 or later,GPLv2+,Yes,N/A,See Matrix,http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+"GNU General Public License v2.0 or later, with Classpath exception",GPLv2+ with exceptions,Yes,"Yes, if exception is used.","Yes, if exception is used.",https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
+"GNU General Public License v2.0 or later, with font embedding exception",GPLv2+ with exceptions,Yes,N/A,See Matrix,http://www.gnu.org/licenses/gpl-faq.html#FontException
+GNU General Public License v3.0 only,GPLv3,Yes,See Matrix,N/A,http://www.fsf.org/licensing/licenses/gpl.html
+"GNU General Public License v3.0 only, with Classpath exception",GPLv3 with exceptions,Yes,"Yes, if exception is used.",N/A,https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
+"GNU General Public License v3.0 only, with font embedding exception",GPLv3 with exceptions,Yes,See Matrix,N/A,http://www.gnu.org/licenses/gpl-faq.html#FontException
+GNU General Public License v3.0 or later,GPLv3+,Yes,See Matrix,N/A,http://www.fsf.org/licensing/licenses/gpl.html
+"GNU General Public License v3.0 or later, with Classpath exception",GPLv3+ with exceptions,Yes,"Yes, if exception is used.",N/A,https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
+"GNU General Public License v3.0 or later, with font embedding exception",GPLv3+ with exceptions,Yes,See Matrix,N/A,http://www.gnu.org/licenses/gpl-faq.html#FontException
+GNU Lesser General Public License (no version),LGPLv2+,Yes,Yes,Yes,"A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include. Note that this is LGPLv2+, not LGPL+, because version 2 was the first version of LGPL. Note that this license was originally referred to as the GNU Library General Public License v2, but all current versions (v2.1 or newer) of the license are correctly known as the GNU Lesser General Public License."
+GNU Lesser General Public License v2 (or 2.1) only,LGPLv2,Yes,See Matrix,See Matrix,"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html Note that this license was originally referred to as the GNU Library General Public License v2, but all current versions (v2.1 or newer) of the license are correctly known as the GNU Lesser General Public License."
+"GNU Lesser General Public License v2 (or 2.1), with exceptions",LGPLv2 with exceptions,Yes,See Matrix,See Matrix,Please be sure that any exceptions are approved by emailing them to legal@lists.fedoraproject.org first.
+GNU Lesser General Public License v2 (or 2.1) or later,LGPLv2+,Yes,See Matrix,See Matrix,http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+"GNU Lesser General Public License v2 (or 2.1) or later, with exceptions",LGPLv2+ with exceptions,Yes,See Matrix,See Matrix,Please be sure that any exceptions are approved by emailing them to legal@lists.fedoraproject.org first.
+GNU Lesser General Public License v3.0 only,LGPLv3,Yes,See Matrix,See Matrix,http://www.fsf.org/licensing/licenses/lgpl.html
+"GNU Lesser General Public License v3.0 only, with exceptions",LGPLv3 with exceptions,Yes,See Matrix,See Matrix,Please be sure that any exceptions are approved by emailing them to legal@lists.fedoraproject.org first.
+GNU Lesser General Public License v3.0 or later,LGPLv3+,Yes,See Matrix,See Matrix,http://www.fsf.org/licensing/licenses/lgpl.html
+"GNU Lesser General Public License v3.0 or later, with exceptions",LGPLv3+ with exceptions,Yes,See Matrix,See Matrix,Please be sure that any exceptions are approved by emailing them to legal@lists.fedoraproject.org first.
+gnuplot License,gnuplot,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Gnuplot
+Haskell Language Report License,HaskellReport,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License
+Henry Spencer Reg-Ex Library License,HSRL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
+Historical Permission Notice and Disclaimer,MIT,Yes,Yes,Yes,http://opensource.org/licenses/historical.php
+IBM Public License,IBM,Yes,NO,NO,http://www.opensource.org/licenses/ibmpl.php
+iMatix Standard Function Library Agreement,iMatix,Yes,Yes,Yes,http://legacy.imatix.com/html/sfl/sfl4.htm#license
+ImageMagick License,ImageMagick,Yes,Yes,Yes,http://www.imagemagick.org/script/license.php
+Imlib2 License,Imlib2,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Imlib2
+Independent JPEG Group License,IJG,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/IJG
+Inner Net License,Inner-Net,Yes,See notes,See notes,https://fedoraproject.org/wiki/Licensing/Inner_Net_License
+Intel ACPI Software License Agreement,Intel ACPI,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Intel_ACPI_Software_License_Agreement
+Interbase Public License,Interbase,Yes,NO,,http://www.borland.com/devsupport/interbase/opensource/IPL.html
+"ISC License (Bind, DHCP Server)",ISC,Yes,Yes,Yes,http://www.isc.org/downloads/software-support-policy/isc-license/
+Jabber Open Source License,Jabber,Yes,NO,,http://opensource.org/licenses/jabberpl.php
+JasPer License,JasPer,Yes,Yes,Yes,http://www.ece.uvic.ca/~mdadams/jasper/LICENSE
+JPython License (old),JPython,Yes,NO,NO,http://www.jython.org/license.html
+Julius License,Julius,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Julius
+Knuth License,Knuth,Yes,NO,NO,http://tug.org/TUGboat/Articles/tb11-4/tb30knut.pdf
+LaTeX Project Public License,LPPL,Yes,NO,,http://www.latex-project.org/lppl/lppl-1-3a.txt
+Latex2e License,Latex2e,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Latex2e
+Lawrence Berkeley National Labs BSD variant license,LBNL BSD,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/LBNLBSD
+LEGO Open Source License Agreement,LOSLA,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/LOSLA
+Leptonica License,Leptonica,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Leptonica
+Lhcyr License,Lhcyr,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Lhcyr
+libtiff License,libtiff,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/libtiff
+Lisp Library General Public License,LLGPL,Yes,Yes,Yes,http://opensource.franz.com/preamble.html
+Logica Open Source License,Logica,Yes,Yes,Yes,http://opensmpp.logica.com/CommonPart/Download/Download.htm
+Lucent Public License (Plan9),LPL,Yes,NO,NO,https://opensource.org/licenses/LPL-1.02
+MakeIndex License,MakeIndex,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/MakeIndex
+Matrix Template Library License,MTLL,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License
+mecab-ipadic license,mecab-ipadic,Yes,?,,http://www.icot.or.jp/ARCHIVE/terms-and-conditions-for-IFS-J.html
+Metasploit Framework License (post 2006),BSD,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License
+Microsoft Public License,MS-PL,Yes,NO,NO,http://www.microsoft.com/opensource/licenses.mspx#Ms-PL
+Microsoft Reciprocal License,MS-RL,Yes,NO,NO,http://www.microsoft.com/opensource/licenses.mspx#Ms-RL
+midnight License,midnight,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/midnight
+MirOS License,MirOS,Yes,Yes,Yes,http://mirbsd.de/MirOS-Licence
+MIT license (also X11),MIT,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/MIT
+MIT +no-false-attribs license,MITNFA,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/MITNFA
+mod_macro License,mod_macro,Yes,NO,NO,http://www.cri.ensmp.fr/~coelho/mod_macro/mod_macro/LICENSE
+Motosoto License,Motosoto,Yes,NO,NO,http://opensource.org/licenses/motosoto.php
+Mozilla Public License v1.0,MPLv1.0,Yes,NO,NO,http://opensource.org/licenses/mozilla1.0.php
+Mozilla Public License v1.1,MPLv1.1,Yes,"Compatible if dual licensed with GPL, otherwise Incompatible","Compatible if dual licensed with GPL, otherwise Incompatible",http://www.mozilla.org/MPL/MPL-1.1.html
+Mozilla Public License v2.0,MPLv2.0,Yes,Sometimes,Sometimes,https://fedoraproject.org/wiki/Licensing/MPLv2.0
+mpich2 License,MIT,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/MIT
+Mup License,Mup,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Mup
+MX4J License,ASL 1.1,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/MX4J
+MySQL License,GPLv2 with exceptions,Yes,?,,http://www.mysql.com/company/legal/licensing/foss-exception.html
+Naumen Public License,Naumen,Yes,Yes,Yes,http://opensource.org/licenses/naumen.php
+NCSA/University of Illinois Open Source License,NCSA,Yes,Yes,Yes,https://otm.illinois.edu/disclose-protect/illinois-open-source-license
+Neotonic Clearsilver License,ASL 1.1,Yes,NO,NO,http://www.clearsilver.net/license.hdf
+NetCDF license,NetCDF,Yes,Yes,Yes,http://www.unidata.ucar.edu/software/netcdf/copyright.html
+Nethack General Public License,NGPL,Yes,NO,,http://opensource.org/licenses/nethack.php
+Netizen Open Source License,NOSL,Yes,NO,,http://bits.netizen.com.au/licenses/NOSL/nosl.txt
+Netscape Public License,Netscape,Yes,NO,NO,http://www.mozilla.org/NPL/NPL-1.0.html
+Newmat License,Newmat,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Newmat_License
+Newsletr License,Newsletr,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Newsletr
+NIST Software License,NISTSL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/NISTSL
+Nmap License,Nmap,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Nmap
+Nokia Open Source License,Nokia,Yes,NO,,http://opensource.org/licenses/nokia.html
+No Limit Public License,NLPL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/NLPL
+Noweb License,Noweb,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Noweb
+NRL License,BSD with advertising,Yes,NO,,http://web.mit.edu/network/isakmp/nrllicense.html
+Nunit License,MIT with advertising,Yes,NO,,https://fedoraproject.org/wiki/Licensing/Nunit
+Open Government License,OGL,Yes,,,http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+OpenLDAP License,OpenLDAP,Yes,Yes,Yes,http://www.openldap.org/software/release/license.html
+Open Market License,OML,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Open_Market_License
+OpenPBS License,OpenPBS,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/OpenPBS
+Open Software License 1.0,OSL 1.0,Yes,NO,NO,http://www.opensource.org/licenses/osl-1.0.txt
+Open Software License 1.1,OSL 1.1,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/OSL1.1
+Open Software License 2.0,OSL 2.0,Yes,NO,NO,http://www.nexb.com/license/LICENSE-OSL-2.0.html
+Open Software License 2.1,OSL 2.1,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/OSL2.1
+Open Software License 3.0,OSL 3.0,Yes,NO,NO,http://opensource.org/licenses/osl-3.0.php
+OpenSSL License,OpenSSL,Yes,NO,NO,http://www.sdisw.com/openssl.htm
+OReilly License,OReilly,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/OReilly
+Par License,Par,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Par
+Perl License,GPL+ or Artistic,Yes,Yes,Yes,http://dev.perl.org/licenses/
+Perl License (variant),GPLv2 or Artistic,Yes,Yes,NO,"Some perl packages explicitly state GPLv2, only use this license for those cases"
+Perl License (variant),GPLv2+ or Artistic,Yes,Yes,Yes,"Some perl packages explicitly state GPLv2+, only use this license for those cases"
+Perl License (variant),LGPLv2+ or Artistic,Yes,Yes,Yes,"Some perl packages explicitly state LGPLv2+ (extremely uncommon), only use this license for those cases"
+Phorum License,Phorum,Yes,NO,,http://phorum.org/license.txt
+PHP License v3.0,PHP,Yes,NO,NO,http://www.php.net/license/3_01.txt
+PlainTeX License,PlainTeX,"Yes (only on TeX, see license page)",NO,NO,https://fedoraproject.org/wiki/Licensing/PlainTeX
+Plexus Classworlds License,Plexus,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License
+PostgreSQL License,PostgreSQL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/PostgreSQL_License
+psfrag License,psfrag,Yes (but only for tex),NO,NO,https://fedoraproject.org/wiki/Licensing/psfrag
+psutils License,psutils,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/psutils
+Public Domain,Public Domain,Yes,Yes,Yes,"Being in the public domain is not a license; rather, it means the material is not copyrighted and no license is needed."
+Python License,Python,Yes,Yes,Yes,https://docs.python.org/2/license.html
+Qhull License,Qhull,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Qhull
+Q Public License,QPL,Yes,NO,NO,http://doc.qt.digia.com/3.0/license.html
+Qwt License 1.0,LGPLv2+ with exceptions,Yes,Yes,Yes,http://qwt.sourceforge.net/qwtlicense.html
+QuickFix License,ASL 1.1,Yes,NO,NO,http://www.quickfixengine.org/quickfix/doc/html/license.html
+radvd License,radvd,Yes,See Notes,See Notes,https://fedoraproject.org/wiki/Licensing/radvd_License
+Rdisc License,Rdisc,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Rdisc_License
+RealNetworks Public Source License V1.0,RPSL,Yes,NO,,http://www.opensource.org/licenses/real.php
+REX License,REX,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/REX
+Rice BSD,RiceBSD,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Rice_BSD_License
+Romio License,Romio,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Romio_License
+RSA License,RSA,Yes,?,?,https://fedoraproject.org/wiki/Licensing/RSA
+Rsfs License,Rsfs,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Rsfs
+Ruby License,Ruby,Yes,"Compatible if dual licensed with GPL, otherwise Incompatible",,http://www.ruby-lang.org/en/LICENSE.txt
+Saxpath License,Saxpath,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Saxpath_License
+Sequence Library License,Sequence,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/SequenceLibraryLicense
+SCEA Shared Source License,SCEA,Yes,NO,NO,http://research.scea.com/scea_shared_source_license.html
+Scheme Widget Library (SWL) Software License Agreement,SWL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/SWL
+SciTech MGL Public License,STMPL,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/STMPL
+SCRIP License,SCRIP,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/SCRIP
+Sendmail License,Sendmail,Yes,"Compatible if Eric Allman, Sendmail Inc. or the University of California is the copyright holder","Compatible if Eric Allman, Sendmail Inc. or the University of California is the copyright holder",http://www.sendmail.com/pdfs/open_source/sendmail_license.pdf
+SGI Free Software License B 2.0,MIT,Yes,Yes,Yes,http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf
+Sleepycat Software Product License,Sleepycat,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Sleepycat
+SLIB License,SLIB,Yes,Yes,Yes,http://www-swiss.ai.mit.edu/~jaffer/SLIB_COPYING.txt
+softSurfer License,softSurfer,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/softSurfer
+SNIA Public License 1.1,SNIA,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/SNIA_Public_License
+Standard ML of New Jersey License,MIT,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/MIT
+Sun Industry Standards Source License,SISSL,Yes,NO,,http://www.openoffice.org/licenses/sissl_license.html
+Sun Public License,SPL,Yes,NO,,https://fedoraproject.org/wiki/Licensing/Sun_Public_License
+TCL/TK License,TCL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/TCL
+Teeworlds License,Teeworlds,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Teeworlds
+Text-Tabs+Wrap License,TTWL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/TTWL
+Thor Public License,TPL,Yes,"Compatible if dual licensed with GPL, otherwise Incompatible",,https://fedoraproject.org/wiki/Licensing/ThorPublicLicense
+Threeparttable License,Threeparttable,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Threeparttable
+Time::ParseDate License,TPDL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/TPDL
+TMate Open Source License,TMate,Yes,NO,NO,http://svnkit.com/license.html
+Tolua License,Tolua,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Tolua
+TORQUE v2.5+ Software License v1.1,TORQUEv1.1,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/TORQUEv1.1
+Transitive Grace Period Public Licence,TGPPL,Sortof,NO,NO,https://fedoraproject.org/wiki/Licensing/TGPPL
+Trusted Computing Group License,TCGL,Sortof,Sortof,Sortof,https://fedoraproject.org/wiki/Licensing/TCGL
+Trusster Open Source License,TOSL,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/TOSL
+Tumbolia Public License,Tumbolia,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Tumbolia
+UCAR License,UCAR,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/UCAR
+Unicode Character Database Terms Of Use,UCD,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/UCD
+Unicode License,Unicode,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Unicode
+Unlicense,Unlicense,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Unlicense
+Universal Permissive License,UPL,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/UPL
+Vim License,Vim,Yes,Yes,Yes,http://vimdoc.sourceforge.net/htmldoc/uganda.html
+Vita Nuova Liberal Source License,VNLSL,Yes,NO,,https://fedoraproject.org/wiki/Licensing/Vita_Nuova_Liberal_Source_License
+VOSTROM Public License for Open Source,VOSTROM,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/VOSTROM
+Vovida Software License v. 1.0,VSL,Yes,NO,,http://opensource.org/licenses/vovidapl.php
+W3C Software Notice and License,W3C,Yes,Yes,Yes,http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+Webmin License,Webmin,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Webmin
+Wsuipa License,Wsuipa,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Wsuipa
+wxWidgets Library License,wxWidgets,Yes,Yes,Yes,http://www.wxwidgets.org/manuals/stable/wx_wxlicense.html
+wxWindows Library License v 3.1,wxWindows,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/wxWindows.html
+xinetd License,xinetd,Yes,NO,,https://fedoraproject.org/wiki/Licensing/Xinetd_License
+Xerox License,Xerox,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/Xerox
+XPP License,xpp,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/xpp
+XSkat License,XSkat,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/XSkat_License
+Yahoo Public License v 1.1,YPLv1.1,Yes,NO,NO,http://www.zimbra.com/license/yahoo_public_license_1.1.html
+Zed License,Zed,Yes,Yes,Yes,https://fedoraproject.org/wiki/Licensing/Zed
+Zend License v2.0,Zend,Yes,NO,,http://www.zend.com/license/2_00.txt
+Zope Public License v 1.0,ZPLv1.0,Yes,NO,NO,http://old.zope.org/Resources/License/ZPL-1.1
+Zope Public License v 2.0,ZPLv2.0,Yes,Yes,Yes,http://old.zope.org/Resources/License/ZPL-2.0
+Zope Public License v 2.1,ZPLv2.1,Yes,Yes,Yes,http://old.zope.org/Resources/License/ZPL-2.1
+zlib/libpng License,zlib,Yes,Yes,Yes,http://www.gzip.org/zlib/zlib_license.html
+zlib/libpng License with Acknowledgement,zlib with acknowledgement,Yes,NO,NO,https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement

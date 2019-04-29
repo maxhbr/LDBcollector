@@ -73,7 +73,7 @@ instance FromJSON ScancodeData where
     <*> v .:? "etxt_urls"
     <*> v .:? "osi_url"
     <*> v .:? "other_urls"
-    <*> pure ""
+    <*> pure "" -- LicenseText is added later
 instance ToJSON ScancodeData
 instance LFRaw ScancodeData where
   getImpliedShortnames scd@ScancodeData{key=k, shortName=sn} = [k,sn] ++ (case spdxId scd of
