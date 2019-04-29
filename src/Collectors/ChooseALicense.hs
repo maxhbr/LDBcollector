@@ -27,16 +27,20 @@ data CALFactRaw
   { name :: LicenseShortname
   , title :: Maybe String
   , spdxId :: Maybe LicenseShortname
+  , featured :: Maybe String
+  , hidden :: Maybe String
+  , description :: Maybe String
+  , how :: Maybe String
   , content :: ByteString
   } deriving (Show, Generic)
 instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON CALFactRaw
 instance LFRaw CALFactRaw where
-  getImpliedShortnames (CALFactRaw sn _ sid _) = sn : (case sid of
-                                                         Just v  -> [v]
-                                                         Nothing -> [])
-  getType _                                    = "CALFact"
+  getImpliedShortnames CALFactRaw{name = sn, spdxId = sid} = sn : (case sid of
+                                                                     Just v  -> [v]
+                                                                     Nothing -> [])
+  getType _                                                = "CALFact"
 
 loadCalFactFromFile :: FilePath -> FilePath -> IO LicenseFact
 loadCalFactFromFile calFolder calFile = let
@@ -48,10 +52,17 @@ loadCalFactFromFile calFolder calFile = let
         ls = lines sCnt
         getValueFor key = let
             prefix = key ++ ": "
-          in stripPrefix prefix (head (filter (prefix `isPrefixOf`) ls))
-        t = getValueFor "title"
-        sid = getValueFor "spdx-id"
-    return (mkLicenseFact "choosealicense.com" (CALFactRaw n t sid cnt))
+          in case (filter (prefix `isPrefixOf`) ls) of
+            [l] -> stripPrefix prefix l
+            _   -> Nothing
+    return (mkLicenseFact "choosealicense.com" (CALFactRaw n
+                                                (getValueFor "title")
+                                                (getValueFor "spdx-id")
+                                                (getValueFor "featured")
+                                                (getValueFor "hidden")
+                                                (getValueFor "description")
+                                                (getValueFor "how")
+                                                cnt))
 
 loadChooseALicenseFacts :: FilePath -> IO Facts
 loadChooseALicenseFacts calFolder = do

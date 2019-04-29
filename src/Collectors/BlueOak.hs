@@ -75,7 +75,7 @@ loadBlueOakFactsFromString bs = let
     bod = decodeBlueOakData bs
     bodVersion = version bod
     bodRatings = ratings bod
-    ratingConverter (BlueOakRating r ls) = map (\l -> mkLicenseFact "BlueOak" $ BOEntry bodVersion r l) ls
+    ratingConverter (BlueOakRating r ls) = map (mkLicenseFact "BlueOak" . BOEntry bodVersion r) ls
     facts = concatMap ratingConverter bodRatings
   in trace ("INFO: the version of BlueOak is: " ++ bodVersion) $ V.fromList facts
 

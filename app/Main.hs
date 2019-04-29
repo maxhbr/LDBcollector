@@ -43,13 +43,18 @@ main = do
 
   let ids = concatMap (\(LicenseFact _ a _) -> getImpliedShortnames a) $ V.toList factsFromSPDX
 
-  let outputFolder = "_output/"
+  let outputFolder = "_generated/"
   dirExists <- doesDirectoryExist outputFolder
   when dirExists $ do
     removeDirectoryRecursive outputFolder
   createDirectory outputFolder
+
+  let licenses = map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i additionalShortnames) facts)) ids
   hPutStrLn stderr "... done with calculating licenses"
-  mapM_ (\i -> do
-            let l = getLicenseFromFacts i (M.findWithDefault [] i additionalShortnames) facts
-            B.writeFile (outputFolder </> i ++ ".json") (encode l)
-        ) ids
+
+  jsons <- mapM (\(i,l) -> let
+                    outputFile = i ++ ".json"
+                in do
+                   B.writeFile (outputFolder </> outputFile) (encode l)
+                   return outputFile) licenses
+  B.writeFile (outputFolder </> "_all.json") (encode jsons)
