@@ -10,7 +10,7 @@ module Model.License
   , LicenseTextFactRaw (..), mkLicenseTextFact
   , getLicenseFromFacts
   , containsFactOfType
-  , getFactData
+  , getFactJSON, getFactData
   , License (..)
   , Licenses
   ) where
@@ -21,7 +21,6 @@ import           Data.Text (Text)
 import           Data.Char (toUpper)
 import qualified Data.Vector as V
 import           Data.Vector (Vector)
-import           Text.JSON
 import           Data.Aeson
 import           GHC.Generics
 import qualified Data.ByteString.Lazy as B
@@ -96,6 +95,9 @@ getLicenseFromFacts shortname otherShortnames fs = let
 
 containsFactOfType :: License -> String -> Bool
 containsFactOfType (License fs) t = (\f -> getType f == t) `any` fs
+
+getFactJSON :: License -> LicenseFactClassifier -> Maybe ByteString
+getFactJSON (License fs) classifier = fmap encode (V.find (\f -> _licenseFactClassifier f == classifier) fs)
 
 getFactData :: License -> LicenseFactClassifier -> LFData
 getFactData (License fs) classifier = case V.find (\f -> _licenseFactClassifier f == classifier) fs of

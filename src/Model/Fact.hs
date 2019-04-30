@@ -18,14 +18,12 @@ import qualified Data.Text as T
 import           Data.Text (Text)
 import qualified Data.Vector as V
 import           Data.Vector (Vector)
-import           Text.JSON hiding (encode)
 import           Data.Aeson
 import qualified Data.ByteString.Lazy as B
 import           Data.ByteString.Lazy (ByteString)
 
 data LFData
   = LFnone
-  | LFjson (JSObject JSValue)
   | LFtext Text
   | LFbytestring ByteString
   | LFstring String

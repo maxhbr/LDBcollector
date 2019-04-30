@@ -14,6 +14,8 @@ import           Data.Text (Text)
 import qualified Data.Vector as V
 import           Data.Vector (Vector)
 
+import qualified Data.Aeson.Lens as AL
+
 import           Lib
 
 
@@ -1182,6 +1184,12 @@ main = hspec $ do
         (mit `getFactData` (defaultLicenseFactScope, "LicenseFullname")) `shouldBe` (LFbytestring "[\"MIT\",\"MIT License\"]")
       it "the ABC FullnameFact is as expected" $ do
         (abc `getFactData` (defaultLicenseFactScope, "LicenseFullname")) `shouldBe` LFnone
+
+  describe "Model.Query" $ do
+    it "query from string" $ do
+       queryByteString AL._String "\"SomeString\"" `shouldBe` Just "SomeString"
+    it "query from matching json works" $ do
+       queryByteString (AL.key "licenseType" . AL._String) "{\"licenseType\": \"TheType\"}" `shouldBe` Just "TheType"
 
   describe "Collector.SPDX" $ let
       factsFromSPDX = loadSPDXFactsFromString spdxExample
