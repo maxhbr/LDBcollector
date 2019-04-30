@@ -4,7 +4,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Model.Fact
   ( LFData (..)
-  , LicenseShortname
+  , LicenseName
   , LFRaw (..)
   , LicenseFactClassifier
   , LicenseFact (..)
@@ -29,10 +29,10 @@ data LFData
   | LFstring String
   deriving (Show, Eq)
 
-type LicenseShortname
+type LicenseName
   = String
 class (Show a, ToJSON a) => LFRaw a where
-  getImpliedShortnames :: a -> [LicenseShortname]
+  getImpliedNames :: a -> [LicenseName]
   getParsedData        :: a -> LFData
   getParsedData = LFbytestring . encode
   getType              :: a -> String
@@ -56,7 +56,7 @@ instance ToJSON LicenseFact where
         else (c ++ ":" ++ t)
     in object [ key .= toJSON a ]
 instance LFRaw LicenseFact where
-  getImpliedShortnames (LicenseFact _ raw _) = getImpliedShortnames raw
+  getImpliedNames (LicenseFact _ raw _) = getImpliedNames raw
   getParsedData (LicenseFact _ _ parsed)     = parsed
   getType       (LicenseFact _ raw _)        = getType raw
 

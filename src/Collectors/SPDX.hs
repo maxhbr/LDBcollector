@@ -55,8 +55,8 @@ instance FromJSON SPDXEntry where
     <*> v .: "seeAlso"
     <*> v .: "isOsiApproved"
 instance LFRaw SPDXEntry where
-  getImpliedShortnames e        = [spdxLicenseId e]
-  getType _                     = "SPDXEntry"
+  getImpliedNames e        = [spdxLicenseId e, spdxFullName e]
+  getType _                = "SPDXEntry"
 
 data SPDXList
   = SPDXList String [SPDXEntry] String

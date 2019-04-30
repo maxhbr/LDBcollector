@@ -48,8 +48,8 @@ instance FromNamedRecord OSPTRow where
                                  <*> r C..: "Commercial Use"
 instance ToJSON OSPTRow
 instance LFRaw OSPTRow where
-  getImpliedShortnames (OSPTRow{spdxId = i}) = [i]
-  getType _                                  = "OCPTRow"
+  getImpliedNames (OSPTRow{spdxId = i}) = [i]
+  getType _                             = "OCPTRow"
 
 
 loadOSPTFactsFromString :: ByteString -> Facts

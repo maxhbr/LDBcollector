@@ -16,7 +16,7 @@ import Lib
 import Reports.PermissiveReport (mkPermissiveReport)
 import Reports.AlternativeNameReport (mkAlternativeNameReport)
 
-additionalShortnames :: Map LicenseShortname [LicenseShortname]
+additionalShortnames :: Map LicenseName [LicenseName]
 additionalShortnames = M.fromList
   [ ("GPL-1.0-only", ["GPL-1.0", "GPL1.0", "GPL1"])
   , ("GPL-2.0-only", ["GPL-2.0", "GPL2.0", "GPL2", "GPL (v2)"])
@@ -56,7 +56,7 @@ main = do
 
   hPutStrLn stderr "... done with collecting data"
 
-  let ids = concatMap (\(LicenseFact _ a _) -> getImpliedShortnames a) $ V.toList factsFromSPDX
+  let ids = concatMap (\(LicenseFact _ a _) -> getImpliedNames a) $ V.toList factsFromSPDX
 
   -- let allids = L.nub $ concatMap (\(LicenseFact _ a _) -> getImpliedShortnames a) $ V.toList facts
   -- print allids

@@ -30,18 +30,18 @@ getFromOCPT l = let
 
 data PRRow
   = PRRow
-  { spdxId :: LicenseShortname
+  { spdxId :: LicenseName
   , scancode :: Maybe Text
   , blueOak :: Maybe Text
   , ocpt :: Maybe Text
   } deriving (Show, Generic)
 instance ToNamedRecord PRRow
 
-convertToRow :: (LicenseShortname, License) -> PRRow
+convertToRow :: (LicenseName, License) -> PRRow
 convertToRow (sid, l) = PRRow sid
                               (getFromScancode l)
                               (getFromBlueOak l)
                               (getFromOCPT l)
 
-mkPermissiveReport :: [(LicenseShortname, License)] -> ByteString
+mkPermissiveReport :: [(LicenseName, License)] -> ByteString
 mkPermissiveReport input = C.encodeByName (V.fromList ["spdxId","scancode","blueOak","ocpt"]) (map convertToRow input)

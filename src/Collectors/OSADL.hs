@@ -24,15 +24,15 @@ import           Model.License
 
 data OSADLFactRaw
   = OSADLFactRaw
-  { spdxId :: LicenseShortname
+  { spdxId :: LicenseName
   , osadlRule :: ByteString
   } deriving (Show, Generic)
 instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON OSADLFactRaw
 instance LFRaw OSADLFactRaw where
-  getImpliedShortnames (OSADLFactRaw sn _) = [sn]
-  getType _                                = "OSADLFact"
+  getImpliedNames (OSADLFactRaw sn _) = [sn]
+  getType _                           = "OSADLFact"
 
 
 loadOsadlFactFromFile :: FilePath -> FilePath -> IO LicenseFact

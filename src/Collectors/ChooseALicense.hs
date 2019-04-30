@@ -24,9 +24,9 @@ import           Model.License
 
 data CALFactRaw
   = CALFactRaw
-  { name :: LicenseShortname
+  { name :: LicenseName
   , title :: Maybe String
-  , spdxId :: Maybe LicenseShortname
+  , spdxId :: Maybe LicenseName
   , featured :: Maybe String
   , hidden :: Maybe String
   , description :: Maybe String
@@ -37,10 +37,10 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON CALFactRaw
 instance LFRaw CALFactRaw where
-  getImpliedShortnames CALFactRaw{name = sn, spdxId = sid} = sn : (case sid of
-                                                                     Just v  -> [v]
-                                                                     Nothing -> [])
-  getType _                                                = "CALFact"
+  getImpliedNames CALFactRaw{name = sn, spdxId = sid} = sn : (case sid of
+                                                                Just v  -> [v]
+                                                                Nothing -> [])
+  getType _                                           = "CALFact"
 
 loadCalFactFromFile :: FilePath -> FilePath -> IO LicenseFact
 loadCalFactFromFile calFolder calFile = let

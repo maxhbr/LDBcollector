@@ -67,8 +67,8 @@ instance Show BOEntry where
   show (BOEntry _ _ j) = show j
 
 instance LFRaw BOEntry where
-  getImpliedShortnames (BOEntry _ _ bol) = [id bol]
-  getType _                                      = "BOEntry"
+  getImpliedNames (BOEntry _ _ bol) = [id bol]
+  getType _                         = "BOEntry"
 
 loadBlueOakFactsFromString :: ByteString -> Facts
 loadBlueOakFactsFromString bs = let

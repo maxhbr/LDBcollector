@@ -51,14 +51,14 @@ instance Show License where
 --------------------------------------------------------------------------------
 -- first basic facts
 data LicenseShortnameFactRaw =
-  LicenseShortnameFactRaw LicenseShortname [LicenseShortname]
+  LicenseShortnameFactRaw LicenseName [LicenseName]
   deriving (Show, Generic)
 instance ToJSON LicenseShortnameFactRaw
 instance LFRaw LicenseShortnameFactRaw where
-  getImpliedShortnames (LicenseShortnameFactRaw s os) = s : os
-  getType              _                              = "LicenseShortname"
+  getImpliedNames (LicenseShortnameFactRaw s os) = s : os
+  getType         _                              = "LicenseName"
 
-mkLicenseShortnameFact :: LicenseShortname -> [LicenseShortname] -> LicenseFact
+mkLicenseShortnameFact :: LicenseName -> [LicenseName] -> LicenseFact
 mkLicenseShortnameFact s os = mkLicenseFact defaultLicenseFactScope (LicenseShortnameFactRaw s os)
 
 data LicenseFullnameFactRaw =
@@ -66,8 +66,8 @@ data LicenseFullnameFactRaw =
   deriving (Show, Generic)
 instance ToJSON LicenseFullnameFactRaw
 instance LFRaw LicenseFullnameFactRaw where
-  getImpliedShortnames (LicenseFullnameFactRaw s _) = [s]
-  getType              _                            = "LicenseFullname"
+  getImpliedNames (LicenseFullnameFactRaw s _) = [s]
+  getType         _                            = "LicenseFullname"
 
 mkLicenseFullnameFact :: String -> String -> LicenseFact
 mkLicenseFullnameFact s f = mkLicenseFact defaultLicenseFactScope (LicenseFullnameFactRaw s f)
@@ -77,19 +77,19 @@ data LicenseTextFactRaw =
   deriving (Show, Generic)
 instance ToJSON LicenseTextFactRaw
 instance LFRaw LicenseTextFactRaw where
-  getImpliedShortnames (LicenseTextFactRaw s _) = [s]
-  getType              _                        = "LicenseText"
+  getImpliedNames (LicenseTextFactRaw s _) = [s]
+  getType         _                        = "LicenseText"
 
 mkLicenseTextFact :: String -> Text -> LicenseFact
 mkLicenseTextFact s t = mkLicenseFact defaultLicenseFactScope (LicenseTextFactRaw s t)
 
 --------------------------------------------------------------------------------
 -- get license from facts
-getLicenseFromFacts :: LicenseShortname -> [LicenseShortname] -> Facts -> License
+getLicenseFromFacts :: LicenseName -> [LicenseName] -> Facts -> License
 getLicenseFromFacts shortname otherShortnames fs = let
     allShortnames = map (map toUpper) $ shortname : otherShortnames
     shortnamefilter f = let
-        impliedShortnames = map (map toUpper) $ getImpliedShortnames f
+        impliedShortnames = map (map toUpper) $ getImpliedNames f
       in not (null (allShortnames `intersect` impliedShortnames))
   in License $ mkLicenseShortnameFact shortname otherShortnames `V.cons` V.filter shortnamefilter fs
 

@@ -16,7 +16,7 @@ import Lib
 
 data ANRRow
   = ANRRow
-  { shortname :: LicenseShortname
+  { shortname :: LicenseName
   , alternativeNames :: [String]
   } deriving (Show, Generic)
 instance ToRecord ANRRow where
@@ -24,8 +24,8 @@ instance ToRecord ANRRow where
       str = "[" ++ (intercalate "," (nub alternativeNames')) ++ "]"
     in record [toField shortname', toField str]
 
-convertToRow :: (LicenseShortname, License) -> ANRRow
-convertToRow (sid, (License fs)) = ANRRow sid (concatMap getImpliedShortnames (V.toList fs))
+convertToRow :: (LicenseName, License) -> ANRRow
+convertToRow (sid, (License fs)) = ANRRow sid (concatMap getImpliedNames (V.toList fs))
 
-mkAlternativeNameReport :: [(LicenseShortname, License)] -> ByteString
+mkAlternativeNameReport :: [(LicenseName, License)] -> ByteString
 mkAlternativeNameReport input = C.encode (map convertToRow input)
