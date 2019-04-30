@@ -38,6 +38,23 @@ additionalShortnames = M.fromList
   , ("BSD-3-Clause", ["BSD (3 clause)"])
   ]
 
+writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
+writeLicenseJSONs outputFolder licenses = do
+  jsons <- mapM (\(i,l) -> let
+                    outputFile = i ++ ".json"
+                in do
+                   B.writeFile (outputFolder </> outputFile) (encode l)
+                   return outputFile) licenses
+  B.writeFile (outputFolder </> "_all.json") (encode jsons)
+
+getLicensesFromFacts :: [LicenseName] -> Int -> Map LicenseName [LicenseName] -> Facts -> [(LicenseName, License)]
+getLicensesFromFacts ids 0 mapping facts = map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i additionalShortnames) facts)) ids
+getLicensesFromFacts ids i mapping facts = let
+    lics = getLicensesFromFacts ids 0 mapping facts
+    newMapping = M.fromList $ map (\(i,License fs) -> (i, (concatMap getImpliedNames (V.toList fs)))) lics
+  in getLicensesFromFacts ids (i - 1) newMapping facts
+
+
 main :: IO ()
 main = do
   factsFromSPDX <- loadSPDXFacts "./data/spdx-license-list-data/"
@@ -56,10 +73,10 @@ main = do
 
   hPutStrLn stderr "... done with collecting data"
 
-  let ids = concatMap (\(LicenseFact _ a _) -> getImpliedNames a) $ V.toList factsFromSPDX
+  let ids = map head . filter (/= []) . map (\(LicenseFact _ a _) -> getImpliedNames a) $ V.toList factsFromSPDX
 
-  -- let allids = L.nub $ concatMap (\(LicenseFact _ a _) -> getImpliedShortnames a) $ V.toList facts
-  -- print allids
+  let licenses = getLicensesFromFacts ids 1 additionalShortnames facts
+  hPutStrLn stderr "... done with calculating licenses"
 
   let outputFolder = "_generated/"
   dirExists <- doesDirectoryExist outputFolder
@@ -67,16 +84,7 @@ main = do
     removeDirectoryRecursive outputFolder
   createDirectory outputFolder
 
-  let licenses = map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i additionalShortnames) facts)) ids
-  hPutStrLn stderr "... done with calculating licenses"
-
-  jsons <- mapM (\(i,l) -> let
-                    outputFile = i ++ ".json"
-                in do
-                   B.writeFile (outputFolder </> outputFile) (encode l)
-                   return outputFile) licenses
-  B.writeFile (outputFolder </> "_all.json") (encode jsons)
-
+  writeLicenseJSONs outputFolder licenses
   let reportDirectory = outputFolder </> "reports"
   createDirectory reportDirectory
   B.writeFile (reportDirectory </> "PermissiveReport.csv") (mkPermissiveReport licenses)

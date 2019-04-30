@@ -1,4 +1,5 @@
 {-# LANGUAGE DeriveGeneric #-}
+{-# LANGUAGE OverloadedStrings #-}
 module Reports.AlternativeNameReport
   ( mkAlternativeNameReport
   ) where
@@ -19,13 +20,13 @@ data ANRRow
   { shortname :: LicenseName
   , alternativeNames :: [String]
   } deriving (Show, Generic)
-instance ToRecord ANRRow where
-  toRecord (ANRRow shortname' alternativeNames') = let
+instance ToNamedRecord ANRRow where
+  toNamedRecord (ANRRow shortname' alternativeNames') = let
       str = "[" ++ (intercalate "," (nub alternativeNames')) ++ "]"
-    in record [toField shortname', toField str]
+    in namedRecord ["shortname" C..= shortname', "other names" C..= str]
 
 convertToRow :: (LicenseName, License) -> ANRRow
 convertToRow (sid, (License fs)) = ANRRow sid (concatMap getImpliedNames (V.toList fs))
 
 mkAlternativeNameReport :: [(LicenseName, License)] -> ByteString
-mkAlternativeNameReport input = C.encode (map convertToRow input)
+mkAlternativeNameReport input = C.encodeByName (V.fromList ["shortname", "other names"]) (map convertToRow input)
