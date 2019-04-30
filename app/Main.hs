@@ -10,17 +10,32 @@ import           System.FilePath
 import           Control.Monad
 import qualified Data.Map as M
 import           Data.Map (Map)
+import qualified Data.List as L
 
 import Lib
+import Reports.PermissiveReport (mkPermissiveReport)
+import Reports.AlternativeNameReport (mkAlternativeNameReport)
 
 additionalShortnames :: Map LicenseShortname [LicenseShortname]
 additionalShortnames = M.fromList
   [ ("GPL-1.0-only", ["GPL-1.0", "GPL1.0", "GPL1"])
-  , ("GPL-2.0-only", ["GPL-2.0", "GPL2.0", "GPL2"])
-  , ("GPL-3.0-only", ["GPL-3.0", "GPL3.0", "GPL3"])
+  , ("GPL-2.0-only", ["GPL-2.0", "GPL2.0", "GPL2", "GPL (v2)"])
+  , ("GPL-3.0-only", ["GPL-3.0", "GPL3.0", "GPL3", "GPL (v3)"])
+  , ("LGPL-2.1-only", ["LGPL-2.1", "LGPL2.1", "LGPL2.1", "LGPL (v2.1)"])
+  , ("LGPL-3.0-only", ["LGPL-3.0", "LGPL-3", "LGPL3.0", "LGPL3", "LGPL (v3.0)", "LGPL (v3)"])
+  , ("AGPL-3.0-only", ["AGPL-3.0", "AGPL3.0", "AGPL3", "AGPL (v3)"])
   , ("GPL-1.0-or-later", ["GPL-1.0+", "GPL1.0+", "GPL1+"])
-  , ("GPL-2.0-or-later", ["GPL-2.0+", "GPL2.0+", "GPL2+"])
-  , ("GPL-3.0-or-later", ["GPL-3.0+", "GPL3.0+", "GPL3+"])
+  , ("GPL-2.0-or-later", ["GPL-2.0+", "GPL2.0+", "GPL2+", "GPL (v2 or later)"])
+  , ("GPL-3.0-or-later", ["GPL-3.0+", "GPL3.0+", "GPL3+", "GPL (v3 or later)"])
+  , ("LGPL-2.1-or-later", ["LGPL-2.1+", "LGPL2.1+", "LGPL2.1+", "LGPL (v2.1 or later)"])
+  , ("LGPL-3.0-or-later", ["LGPL-3.0+", "LGPL-3+", "LGPL3.0+", "LGPL3", "LGPL (v3.0)", "LGPL (v3 or later)"])
+  , ("AGPL-3.0-or-later", ["AGPL-3.0+", "AGPL3.0+", "AGPL3+", "AGPL (v3 or later)"])
+  , ("BSL-1.0", ["BSL (v1.0)"])
+  , ("Zlib", ["zlib/libpng"])
+  , ("Apache-2.0", ["Apache (v2.0)"])
+  , ("BSL-1.0", ["BSL (v1)"])
+  , ("BSD-2-Clause", ["BSD (2 clause)"])
+  , ("BSD-3-Clause", ["BSD (3 clause)"])
   ]
 
 main :: IO ()
@@ -43,6 +58,9 @@ main = do
 
   let ids = concatMap (\(LicenseFact _ a _) -> getImpliedShortnames a) $ V.toList factsFromSPDX
 
+  -- let allids = L.nub $ concatMap (\(LicenseFact _ a _) -> getImpliedShortnames a) $ V.toList facts
+  -- print allids
+
   let outputFolder = "_generated/"
   dirExists <- doesDirectoryExist outputFolder
   when dirExists $ do
@@ -58,3 +76,8 @@ main = do
                    B.writeFile (outputFolder </> outputFile) (encode l)
                    return outputFile) licenses
   B.writeFile (outputFolder </> "_all.json") (encode jsons)
+
+  let reportDirectory = outputFolder </> "reports"
+  createDirectory reportDirectory
+  B.writeFile (reportDirectory </> "PermissiveReport.csv") (mkPermissiveReport licenses)
+  B.writeFile (reportDirectory </> "AlternativeNameReport.csv") (mkAlternativeNameReport licenses)

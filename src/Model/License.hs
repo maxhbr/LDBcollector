@@ -11,6 +11,8 @@ module Model.License
   , getLicenseFromFacts
   , containsFactOfType
   , getFactData
+  , License (..)
+  , Licenses
   ) where
 
 import           Data.List (intersect)
@@ -33,6 +35,8 @@ import Model.Fact as X
 newtype License
   = License Facts
   deriving Generic
+type Licenses
+  = [License]
 
 instance ToJSON License where
   toJSON (License fs) = let
