@@ -51,16 +51,16 @@ instance Show License where
 
 --------------------------------------------------------------------------------
 -- first basic facts
-newtype LicenseShortnameFactRaw =
-  LicenseShortnameFactRaw String
+data LicenseShortnameFactRaw =
+  LicenseShortnameFactRaw LicenseShortname [LicenseShortname]
   deriving (Show, Generic)
 instance ToJSON LicenseShortnameFactRaw
 instance LFRaw LicenseShortnameFactRaw where
-  getImpliedShortnames (LicenseShortnameFactRaw s) = [s]
-  getType              _                           = "LicenseShortname"
+  getImpliedShortnames (LicenseShortnameFactRaw s os) = s : os
+  getType              _                              = "LicenseShortname"
 
-mkLicenseShortnameFact :: String -> LicenseFact
-mkLicenseShortnameFact s = mkLicenseFact defaultLicenseFactScope (LicenseShortnameFactRaw s)
+mkLicenseShortnameFact :: LicenseShortname -> [LicenseShortname] -> LicenseFact
+mkLicenseShortnameFact s os = mkLicenseFact defaultLicenseFactScope (LicenseShortnameFactRaw s os)
 
 data LicenseFullnameFactRaw =
   LicenseFullnameFactRaw String String
@@ -92,7 +92,7 @@ getLicenseFromFacts shortname otherShortnames fs = let
     shortnamefilter f = let
         impliedShortnames = map (map toUpper) $ getImpliedShortnames f
       in not (null (allShortnames `intersect` impliedShortnames))
-  in License $ mkLicenseShortnameFact shortname `V.cons` V.filter shortnamefilter fs
+  in License $ mkLicenseShortnameFact shortname otherShortnames `V.cons` V.filter shortnamefilter fs
 
 containsFactOfType :: License -> String -> Bool
 containsFactOfType (License fs) t = (\f -> getType f == t) `any` fs

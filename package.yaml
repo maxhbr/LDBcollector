@@ -25,7 +25,6 @@ dependencies:
 - aeson
 - text
 - vector
-- json
 - filepath
 # - strict
 - bytestring
