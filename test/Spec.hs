@@ -13,6 +13,7 @@ import           Debug.Trace (trace)
 import           Data.Text (Text)
 import qualified Data.Vector as V
 import           Data.Vector (Vector)
+import qualified Data.ByteString.Char8 as Char8
 
 import qualified Data.Aeson.Lens as AL
 
@@ -1160,6 +1161,20 @@ Apache License 2.0,Apache-2.0,permissive,no,no,yes,no,,,yes,,,,
 MIT License ,MIT,permissive,no,no,no,no,,,yes,,,,
 |]
 
+chooseALicenseExample = [r|permissions:
+  - commercial-use
+  - modifications
+  - distribution
+  - private-use
+
+conditions:
+  - include-copyright
+
+limitations:
+  - liability
+  - warranty
+|]
+
 main :: IO ()
 main = hspec $ do
   describe "Model.License" $ let
@@ -1231,3 +1246,9 @@ main = hspec $ do
         V.length factsFromOCPT `shouldBe` 5
       it "it contains a MIT line" $ do
         (mit `containsFactOfType` "OCPTRow") `shouldBe` (True :: Bool)
+
+  describe "Collectors.ChooseALicense" $ let
+      ls = lines (Char8.unpack chooseALicenseExample)
+    in do
+      it "it finds the condition" $ do
+        extractListFromText ls "conditions" `shouldBe` ["include-copyright"]

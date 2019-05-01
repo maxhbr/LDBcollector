@@ -90,7 +90,7 @@ instance ToJSON FedoraProjectWikiFact where
                                                                     , "Upstream URL" A..= url ]
       aesonFromDataShort :: FedoraProjectWikiFact_Short -> Value
       aesonFromDataShort (FedoraProjectWikiFact_Short c sn) = mergeAesonL [ aesonFromCore c
-                                                                          , object ["Shot Name" A..= sn] ]
+                                                                          , object ["Short Name" A..= sn] ]
       aesonFromDataBad :: FedoraProjectWikiFact_Bad -> Value
       aesonFromDataBad (FedoraProjectWikiFact_Bad c ns) = mergeAesonL [ aesonFromCore c
                                                                       , object ["Notes" A..= ns] ]

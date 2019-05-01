@@ -3,13 +3,15 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Collectors.ChooseALicense
   ( loadChooseALicenseFacts
+  , extractValueFromText
+  , extractListFromText
   ) where
 
 import Prelude hiding (id)
 
 import           System.FilePath
 import           System.Directory
-import           Data.List
+import           Data.List as L
 import qualified Data.Text as T
 import qualified Data.Vector as V
 import           Debug.Trace (trace)
@@ -31,6 +33,9 @@ data CALFactRaw
   , hidden :: Maybe String
   , description :: Maybe String
   , how :: Maybe String
+  , permissions :: [String]
+  , conditions :: [String]
+  , limitations :: [String]
   , content :: ByteString
   } deriving (Show, Generic)
 instance ToJSON ByteString where
@@ -42,26 +47,50 @@ instance LFRaw CALFactRaw where
                                                                 Nothing -> [])
   getType _                                           = "CALFact"
 
+extractValueFromText :: [String] -> String -> Maybe String
+extractValueFromText ls key = let
+    prefix = key ++ ": "
+  in case filter (prefix `isPrefixOf`) ls of
+       [l] -> stripPrefix prefix l
+       _   -> Nothing
+
+-- permissions:
+--   - commercial-use
+--   - modifications
+--   - distribution
+--   - private-use
+
+-- conditions:
+--   - include-copyright
+
+-- limitations:
+--   - liability
+--   - warranty
+extractListFromText :: [String] -> String -> [String]
+extractListFromText ls key = let
+    prefix = key ++ ":"
+    tailIfPresent []     = []
+    tailIfPresent (a:as) = as
+    lns = map (drop 4) . L.takeWhile (/= "") . tailIfPresent $ L.dropWhile (/= prefix) ls
+  in lns
+
 loadCalFactFromFile :: FilePath -> FilePath -> IO LicenseFact
 loadCalFactFromFile calFolder calFile = let
     fileWithPath = calFolder </> calFile
     n = dropExtension calFile
   in do
     cnt <- B.readFile fileWithPath
-    let sCnt = Char8.unpack cnt
-        ls = lines sCnt
-        getValueFor key = let
-            prefix = key ++ ": "
-          in case (filter (prefix `isPrefixOf`) ls) of
-            [l] -> stripPrefix prefix l
-            _   -> Nothing
+    let ls = lines (Char8.unpack cnt)
     return (mkLicenseFact "choosealicense.com" (CALFactRaw n
-                                                (getValueFor "title")
-                                                (getValueFor "spdx-id")
-                                                (getValueFor "featured")
-                                                (getValueFor "hidden")
-                                                (getValueFor "description")
-                                                (getValueFor "how")
+                                                (extractValueFromText ls "title")
+                                                (extractValueFromText ls "spdx-id")
+                                                (extractValueFromText ls "featured")
+                                                (extractValueFromText ls "hidden")
+                                                (extractValueFromText ls "description")
+                                                (extractValueFromText ls "how")
+                                                (extractListFromText ls "permissions")
+                                                (extractListFromText ls "conditions")
+                                                (extractListFromText ls "limitations")
                                                 cnt))
 
 loadChooseALicenseFacts :: FilePath -> IO Facts
