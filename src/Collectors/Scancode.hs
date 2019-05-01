@@ -49,7 +49,7 @@ data ScancodeData
   { key :: !String
   , shortName :: !String
   , name :: !String
-  , category :: !String
+  , category :: Maybe String
   , spdxId :: Maybe String
   , owner :: Maybe String
   , homepageUrl :: Maybe String
@@ -65,7 +65,7 @@ instance FromJSON ScancodeData where
     <$> v .: "key"
     <*> v .: "short_name"
     <*> v .: "name"
-    <*> v .: "category"
+    <*> v .:? "category"
     <*> v .:? "spdx_license_key"
     <*> v .:? "owner"
     <*> v .:? "homepage_url"

@@ -27,9 +27,9 @@ import qualified Data.ByteString.Lazy as B
 import           Data.ByteString.Lazy (ByteString)
 import qualified Data.ByteString.Lazy.Char8 as Char8
 import           Debug.Trace (trace)
-import qualified Data.HashMap.Lazy as HML
 
 import Model.Fact as X
+import Model.Utils
 
 newtype License
   = License Facts
@@ -38,13 +38,7 @@ type Licenses
   = [License]
 
 instance ToJSON License where
-  toJSON (License fs) = let
-      -- copied from: https://stackoverflow.com/a/44409320
-      -- answered by: Willem Van Onsem
-      -- cc-by-sa 3.0
-      mergeAeson :: ToJSON a => V.Vector a -> Value
-      mergeAeson = Object . HML.unions . map (\(Object x) -> x) . V.toList . V.map toJSON
-    in mergeAeson fs
+  toJSON (License fs) = mergeAeson fs
 instance Show License where
   show (License fs) = "\n" ++ unlines (map show (V.toList fs)) ++ "\n"
 
