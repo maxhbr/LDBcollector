@@ -11,13 +11,14 @@ import           Control.Monad
 import qualified Data.Map as M
 import           Data.Map (Map)
 import qualified Data.List as L
+import           Debug.Trace (trace)
 
 import Lib
 import Reports.PermissiveReport (mkPermissiveReport)
 import Reports.AlternativeNameReport (mkAlternativeNameReport)
 
-additionalShortnames :: Map LicenseName [LicenseName]
-additionalShortnames = M.fromList
+initialLicenseMapping :: Map LicenseName [LicenseName]
+initialLicenseMapping = M.fromList
   [ ("GPL-1.0-only", ["GPL-1.0", "GPL1.0", "GPL1"])
   , ("GPL-2.0-only", ["GPL-2.0", "GPL2.0", "GPL2", "GPL (v2)"])
   , ("GPL-3.0-only", ["GPL-3.0", "GPL3.0", "GPL3", "GPL (v3)"])
@@ -36,6 +37,7 @@ additionalShortnames = M.fromList
   , ("BSL-1.0", ["BSL (v1)"])
   , ("BSD-2-Clause", ["BSD (2 clause)"])
   , ("BSD-3-Clause", ["BSD (3 clause)"])
+  , ("MIT", ["MIT license (also X11)"])
   ]
 
 writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
@@ -45,13 +47,14 @@ writeLicenseJSONs outputFolder licenses = do
                 in do
                    B.writeFile (outputFolder </> outputFile) (encode l)
                    return outputFile) licenses
-  B.writeFile (outputFolder </> "_all.json") (encode jsons)
+  B.writeFile (outputFolder </> "_all.json") (encode licenses)
+  B.writeFile (outputFolder </> "_index.json") (encode jsons)
 
 getLicensesFromFacts :: [LicenseName] -> Int -> Map LicenseName [LicenseName] -> Facts -> [(LicenseName, License)]
-getLicensesFromFacts ids 0 mapping facts = map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i additionalShortnames) facts)) ids
+getLicensesFromFacts ids 0 mapping facts = map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i mapping) facts)) ids
 getLicensesFromFacts ids i mapping facts = let
     lics = getLicensesFromFacts ids 0 mapping facts
-    newMapping = M.fromList $ map (\(i,License fs) -> (i, (concatMap getImpliedNames (V.toList fs)))) lics
+    newMapping = M.fromList $ map (\(i,License fs) -> (i, L.nub (concatMap getImpliedNames (V.toList fs)))) lics
   in getLicensesFromFacts ids (i - 1) newMapping facts
 
 
@@ -63,19 +66,21 @@ main = do
   factsFromScancode <- loadScancodeFacts "./data/nexB_scancode-toolkit_license_list/"
   factsFromOsadl <- loadOsadlFacts "./data/OSADL/"
   factsFromChooseALicense <- loadChooseALicenseFacts "./data/choosealicense.com/"
+  factsFromFedora <- loadFedoraFacts "./data/Fedora_Project_Wiki/"
   let facts = V.concat [ factsFromSPDX
                        , factsFromBlueOak
                        , factsFromOCPT
                        , factsFromScancode
                        , factsFromOsadl
                        , factsFromChooseALicense
+                       , factsFromFedora
                        ]
 
   hPutStrLn stderr "... done with collecting data"
 
   let ids = map head . filter (/= []) . map (\(LicenseFact _ a _) -> getImpliedNames a) $ V.toList factsFromSPDX
 
-  let licenses = getLicensesFromFacts ids 1 additionalShortnames facts
+  let licenses = getLicensesFromFacts ids 1 initialLicenseMapping facts
   hPutStrLn stderr "... done with calculating licenses"
 
   let outputFolder = "_generated/"

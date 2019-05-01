@@ -28,6 +28,4 @@ queryLicense :: LicenseFactClassifier -> Traversal' Value o -> License -> Maybe 
 queryLicense (lfc@(n,t)) qry l = (getFactJSON l lfc) >>= (queryByteString (key (T.pack (n ++ ":" ++ t)) . qry))
 
 queryByteString :: Traversal' ByteString o -> ByteString -> Maybe o
-queryByteString qry jsonString = case decode jsonString :: Maybe Value of
-  Just v  -> jsonString ^? qry
-  Nothing -> trace ("parsing error: " ++ show jsonString) Nothing
+queryByteString qry jsonString = jsonString ^? qry

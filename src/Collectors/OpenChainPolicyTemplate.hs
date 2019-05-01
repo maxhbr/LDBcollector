@@ -8,14 +8,10 @@ module Collectors.OpenChainPolicyTemplate
 
 import Prelude hiding (id)
 
-import           System.FilePath
--- import           Text.JSON
-import qualified Data.Text as T
 import qualified Data.Vector as V
 import           Debug.Trace (trace)
 import qualified Data.ByteString.Lazy as B
 import           Data.ByteString.Lazy (ByteString)
-import Control.Applicative
 import           Data.Csv as C
 
 import Data.Aeson
