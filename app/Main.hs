@@ -1,6 +1,6 @@
 module Main where
 
-import System.IO (hPutStrLn, stderr)
+import           System.IO (hPutStrLn, stderr)
 import qualified Data.Vector as V
 import           Data.Aeson
 import qualified Data.ByteString.Lazy as B
@@ -69,6 +69,7 @@ main = do
   factsFromOsadl <- loadOsadlFacts "./data/OSADL/"
   factsFromChooseALicense <- loadChooseALicenseFacts "./data/choosealicense.com/"
   factsFromFedora <- loadFedoraFacts "./data/Fedora_Project_Wiki/"
+  factsFromOSI <- loadOSIFacts
   let facts = V.concat [ factsFromSPDX
                        , factsFromBlueOak
                        , factsFromOCPT
@@ -76,6 +77,7 @@ main = do
                        , factsFromOsadl
                        , factsFromChooseALicense
                        , factsFromFedora
+                       , factsFromOSI
                        ]
 
   hPutStrLn stderr "... done with collecting data"

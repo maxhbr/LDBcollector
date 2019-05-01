@@ -12,3 +12,4 @@ import Collectors.Scancode as X
 import Collectors.OSADL as X
 import Collectors.ChooseALicense as X
 import Collectors.FedoraProjectWiki as X
+import Collectors.OSI as X

@@ -60,5 +60,6 @@ Licensing is unclear
   - ...
   - FOSSology
     data-license: GPL-2.0-only
+  - https://www.kanzlei-jun.de/wuerzburger-taxonomie.pdf
   - ...
   - ~~tldrlegal.com~~

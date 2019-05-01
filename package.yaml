@@ -35,6 +35,8 @@ dependencies:
 - directory
 # - hjson
 # - hjpath
+- opensource
+- transformers
 
 library:
   source-dirs: src
