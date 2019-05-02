@@ -57,9 +57,13 @@ Licensing is unclear
   - [gnu.org](https://www.gnu.org/licenses/license-list.html)
   - ORT License highlighting
   - https://github.com/okfn/licenses
+  - Wikipedia: https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses
+  - debian: https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
+  - google: https://opensource.google.com/docs/thirdparty/licenses/
   - ...
   - FOSSology
     data-license: GPL-2.0-only
   - https://www.kanzlei-jun.de/wuerzburger-taxonomie.pdf
   - ...
   - ~~tldrlegal.com~~
+  - EUPL kompatible lizenzen: https://joinup.ec.europa.eu/collection/eupl/eupl-compatible-open-source-licences

@@ -1,0 +1,41 @@
+License,Author,Latest version,Publication date,Linking,Distribution,Modification,Patent grant,Private use,Sublicensing,TM grant
+Academic Free License,Lawrence E. Rosen,3.0,2002,Permissive,Permissive,Permissive,Yes,Yes,Permissive,No
+Affero General Public License,Affero Inc,2.0,2007,Copylefted,Copyleft except for the GNU AGPL,Copyleft,?,Yes,?,?
+Apache License,Apache Software Foundation,2.0,2004,Permissive,Permissive,Permissive,Yes,Yes,Permissive,No
+Apple Public Source License,Apple Computer,2.0,06.08.03,Permissive,?,Limited,?,?,?,?
+Artistic License,Larry Wall,2.0,2000,With restrictions,With restrictions,With restrictions,No,Permissive,With restrictions,No
+Beerware,Poul-Henning Kamp,42,1987,Permissive,Permissive,Permissive,No,Permissive,Permissive,No
+BSD License,Regents of the University of California,3.0,?,Permissive,Permissive,Permissive,Manually,Yes,Permissive,Manually
+Boost Software License,?,1.0,17.08.03,Permissive,?,Permissive,?,?,?,?
+Creative Commons Zero,Creative Commons,1.0,2009,Public Domain,Public Domain,Public Domain,No,Public Domain,Public Domain,No
+CC-BY,Creative Commons,4.0,2002,Permissive,Permissive,Permissive,No,Yes,Permissive,?
+CC-BY-SA,Creative Commons,4.0,2002,Copylefted,Copylefted,Copylefted,No,Yes,No,?
+CeCILL,CEA / CNRS / INRIA,2.1,"June 21, 2013",Permissive,Permissive,Permissive,No,Permissive,With restrictions,No
+Common Development and Distribution License,Sun Microsystems,1.0,"December 1, 2004",Permissive,?,Limited,?,?,?,?
+Common Public License,IBM,1.0,May 2001,Permissive,?,Copylefted,?,?,?,?
+Cryptix General License,Cryptix Foundation,N/A,1995,Permissive,Permissive,Permissive,Manually,Yes,?,Manually
+Eclipse Public License,Eclipse Foundation,2.0,24.08.17,Limited,Limited,Limited,Yes,Yes,Limited,Manually
+Educational Community License,Indiana University,1.0,2007,Permissive,?,Permissive,?,?,?,?
+European Union Public Licence,European Commission,1.2,May 2017,"Copylefted, with an explicit compatibility list","Copylefted, with an explicit compatibility list","Copylefted, with an explicit compatibility list",Yes,Yes,"Copylefted, with an explicit compatibility list",No
+GNU Affero General Public License,Free Software Foundation,3.0,2007,GNU GPLv3 only,Copylefted,Copylefted,Yes,Copylefted,Copylefted,Yes
+GNU General Public License,Free Software Foundation,3.0,June 2007,GPLv3 compatible only,Copylefted,Copylefted,Yes,Yes,Copylefted,Yes
+GNU Lesser General Public License,Free Software Foundation,3.0,June 2007,With restrictions,Copylefted,Copylefted,Yes,Yes,Copylefted,Yes
+IBM Public License,IBM,1.0,01.08.99,Copylefted,?,Copylefted,?,?,?,?
+ISC license,Internet Systems Consortium,N/A,June 2003,Permissive,Permissive,Permissive,?,?,?,?
+LaTeX Project Public License,LaTeX project,1.3c,?,Permissive,?,Permissive,?,?,?,?
+Microsoft Public License,Microsoft,N/A,?,Permissive,Permissive,Permissive,No,Permissive,?,No
+MIT license / X11 license,MIT,N/A,1988,Permissive,Permissive,Permissive,Manually,Yes,Permissive,Manually
+Mozilla Public License,Mozilla Foundation,2.0,"January 3, 2012",Permissive,Copylefted,Copylefted,Yes,Yes,Copylefted,No
+Netscape Public License,Netscape,1.1,?,Limited,?,Limited,?,?,?,?
+Open Software License,Lawrence Rosen,3.0,2005,Permissive,Copylefted,Copylefted,Yes,Yes,Copylefted,?
+OpenSSL license,OpenSSL Project,N/A,?,Permissive,?,Permissive,?,?,?,?
+Python Software Foundation License,Python Software Foundation,2,?,Permissive,?,Permissive,?,?,?,?
+Q Public License,Trolltech,?,?,Limited,?,Limited,?,?,?,?
+Sleepycat License,Sleepycat Software,N/A,1996,Permissive,With restrictions,Permissive,No,Yes,No,No
+Unlicense,unlicense.org,1,December 2010,Permissive/Public domain,Permissive/Public domain,Permissive/Public domain,?,Permissive/Public domain,Permissive/Public domain,?
+W3C Software Notice and License,W3C,20021231,"December 31, 2002",Permissive,?,Permissive,?,?,?,?
+Do What The Fuck You Want To Public License (WTFPL),"Banlu Kemiyatorn, Sam Hocevar",2,December 2004,Permissive/Public domain,Permissive/Public domain,Permissive/Public domain,No,Yes,Yes,No
+XCore Open Source License,,,,,,,,,,
+"also separate ""Hardware License Agreement""",XMOS,?,February 2011,Permissive,Permissive,Permissive,Manually,Yes,Permissive,?
+XFree86 1.1 License,"The XFree86 Project, Inc",?,?,Permissive,?,Permissive,?,?,?,?
+zlib/libpng license,Jean-Loup Gailly and Mark Adler,?,?,Permissive,?,Permissive,?,?,?,?

@@ -15,7 +15,8 @@ import           Model.License
 instance LFRaw OSILicense where
   getImpliedNames OSILicense{ olId = i
                             , olName = n
-                            , olIdentifiers = is } = map T.unpack $ [i,n] ++ (map (\(OSIIdentifier i _) -> i) is)
+                            , olIdentifiers = is
+                            , olOther_names = os } = map T.unpack $ [i,n] ++ (map oiIdentifier is) ++ (map oonName os)
   getType _                                        = "OSILicense"
 
 loadOSIFacts = do
