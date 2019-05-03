@@ -1,6 +1,6 @@
 module Lib
-    ( module X
-    ) where
+  ( module X
+  ) where
 
 import Model.License as X
 import Model.Query as X

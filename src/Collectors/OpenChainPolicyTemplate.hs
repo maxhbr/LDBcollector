@@ -6,12 +6,12 @@ module Collectors.OpenChainPolicyTemplate
   , loadOSPTFactsFromString
   ) where
 
-import Prelude hiding (id)
+import qualified Prelude as P
+import           MyPrelude hiding (id)
 
 import qualified Data.Vector as V
 import           Debug.Trace (trace)
 import qualified Data.ByteString.Lazy as B
-import           Data.ByteString.Lazy (ByteString)
 import           Data.Csv as C
 
 import Data.Aeson
@@ -44,13 +44,13 @@ instance FromNamedRecord OSPTRow where
                                  <*> r C..: "Commercial Use"
 instance ToJSON OSPTRow
 instance LFRaw OSPTRow where
-  getImpliedNames (OSPTRow{spdxId = i}) = [i]
-  getType _                             = "OCPTRow"
+  getLicenseFactClassifier _          = LFC ["OpenChainPolicyTemplate", "OCPTRow"]
+  getImpliedNames OSPTRow{spdxId = i} = [i]
 
 
 loadOSPTFactsFromString :: ByteString -> Facts
 loadOSPTFactsFromString s = case (decodeByName s :: Either String (Header, V.Vector OSPTRow)) of
-  Right (_, v) -> V.map (mkLicenseFact "OpenChainPolicyTemplate") v
+  Right (_, v) -> V.map LicenseFact v
   Left err     -> trace err V.empty
 
 loadOSPTFacts :: FilePath -> IO Facts

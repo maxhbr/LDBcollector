@@ -82,7 +82,7 @@ main = do
 
   hPutStrLn stderr "... done with collecting data"
 
-  let ids = map head . filter (/= []) . map (\(LicenseFact _ a _) -> getImpliedNames a) $ V.toList factsFromSPDX
+  let ids = map head . filter (/= []) . map getImpliedNames $ V.toList factsFromSPDX
 
   let licenses = getLicensesFromFacts ids 1 initialLicenseMapping facts
   hPutStrLn stderr "... done with calculating licenses"

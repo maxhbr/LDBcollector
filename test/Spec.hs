@@ -3,6 +3,10 @@
 {-# LANGUAGE GADTs #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes #-}
+
+import qualified Prelude as P
+import           MyPrelude
+
 import           Test.Hspec
 import           Test.QuickCheck
 import           Control.Exception (evaluate)
@@ -1196,9 +1200,9 @@ main = hspec $ do
         (gpl `containsFactOfType` "LicenseText") `shouldBe` (True :: Bool)
 
       it "the MIT FullnameFact is as expected" $ do
-        (mit `getFactData` (defaultLicenseFactScope, "LicenseFullname")) `shouldBe` (LFbytestring "[\"MIT\",\"MIT License\"]")
+        (mit `getFactData` (LFC ["LicenseFullname"])) `shouldBe` (object ["LicenseFullname" .= (toJSON ["MIT" :: String,"MIT License"] :: Value)])
       it "the ABC FullnameFact is as expected" $ do
-        (abc `getFactData` (defaultLicenseFactScope, "LicenseFullname")) `shouldBe` LFnone
+        (abc `getFactData` (LFC ["LicenseFullname"])) `shouldBe` (object [])
 
   describe "Model.Query" $ do
     it "query from string" $ do

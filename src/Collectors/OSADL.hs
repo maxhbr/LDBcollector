@@ -5,20 +5,14 @@ module Collectors.OSADL
   ( loadOsadlFacts
   ) where
 
-import Prelude hiding (id)
+import qualified Prelude as P
+import           MyPrelude hiding (id, ByteString)
 
-import           System.FilePath
-import           System.Directory
-import           Data.List
 import qualified Data.Text as T
 import qualified Data.Vector as V
-import           Debug.Trace (trace)
 import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as Char8
-
-import           Data.Aeson
-import           GHC.Generics
 
 import           Model.License
 
@@ -31,8 +25,8 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON OSADLFactRaw
 instance LFRaw OSADLFactRaw where
+  getLicenseFactClassifier _          = LFC ["OSADL", "OSADLFact"]
   getImpliedNames (OSADLFactRaw sn _) = [sn]
-  getType _                           = "OSADLFact"
 
 
 loadOsadlFactFromFile :: FilePath -> FilePath -> IO LicenseFact
@@ -41,7 +35,7 @@ loadOsadlFactFromFile osadlFolder osadlFile = let
     spdxId = dropExtension osadlFile
   in do
     content <- B.readFile fileWithPath
-    return (mkLicenseFact "OSADL" (OSADLFactRaw spdxId content))
+    return (LicenseFact (OSADLFactRaw spdxId content))
 
 loadOsadlFacts :: FilePath -> IO Facts
 loadOsadlFacts osadlFolder = do

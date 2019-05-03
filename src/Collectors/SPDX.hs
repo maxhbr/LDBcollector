@@ -6,17 +6,14 @@ module Collectors.SPDX
   , loadSPDXFactsFromString
   ) where
 
-import           System.FilePath
-import           System.IO
+import qualified Prelude as P
+import           MyPrelude hiding (id, ByteString)
+
 import qualified Data.Text as T
 import qualified Data.Vector as V
-import           Debug.Trace (trace)
 import qualified Data.ByteString.Char8 as C8
 import qualified Data.ByteString.Lazy as B
 import           Data.ByteString.Lazy (ByteString)
-
-import           Data.Aeson
-import           GHC.Generics
 
 import           Model.License
 
@@ -55,8 +52,8 @@ instance FromJSON SPDXEntry where
     <*> v .: "seeAlso"
     <*> v .: "isOsiApproved"
 instance LFRaw SPDXEntry where
-  getImpliedNames e        = [spdxLicenseId e, spdxFullName e]
-  getType _                = "SPDXEntry"
+  getLicenseFactClassifier _ = LFC ["SPDX", "SPDXEntry"]
+  getImpliedNames e          = [spdxLicenseId e, spdxFullName e]
 
 data SPDXList
   = SPDXList String [SPDXEntry] String
@@ -70,8 +67,8 @@ instance FromJSON SPDXList where
 loadSPDXFactsFromString :: ByteString -> Facts
 loadSPDXFactsFromString s = case (decode s :: Maybe SPDXList) of
   Just (SPDXList v es _)  -> trace ("INFO: SPDX License list version is: " ++ v) $ let
-      filteredEs = filter (\f -> not $ isSPDXLicenseDeprecated f) es
-    in V.fromList $ map (mkLicenseFact "SPDX") filteredEs
+      filteredEs = filter (not . isSPDXLicenseDeprecated) es
+    in V.fromList $ map LicenseFact filteredEs
   Nothing                 -> V.empty
 
 

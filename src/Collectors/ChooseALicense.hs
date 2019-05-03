@@ -6,18 +6,14 @@ module Collectors.ChooseALicense
   , extractListFromText
   ) where
 
-import Prelude hiding (id)
+import qualified Prelude as P
+import           MyPrelude hiding (ByteString)
 
-import           System.FilePath
-import           System.Directory
 import           Data.List as L
 import qualified Data.Vector as V
 import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as Char8
-
-import           Data.Aeson
-import           GHC.Generics
 
 import           Model.License
 
@@ -39,10 +35,10 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON CALFactRaw
 instance LFRaw CALFactRaw where
+  getLicenseFactClassifier _                          = LFC ["choosealicense.com", "CALFact"]
   getImpliedNames CALFactRaw{name = sn, spdxId = sid} = sn : (case sid of
                                                                 Just v  -> [v]
                                                                 Nothing -> [])
-  getType _                                           = "CALFact"
 
 extractValueFromText :: [String] -> String -> Maybe String
 extractValueFromText ls key = let
@@ -66,18 +62,17 @@ loadCalFactFromFile calFolder calFile = let
   in do
     cnt <- B.readFile fileWithPath
     let ls = lines (Char8.unpack cnt)
-    return (mkLicenseFact "choosealicense.com"
-                          (CALFactRaw n
-                                      (extractValueFromText ls "title")
-                                      (extractValueFromText ls "spdx-id")
-                                      (extractValueFromText ls "featured")
-                                      (extractValueFromText ls "hidden")
-                                      (extractValueFromText ls "description")
-                                      (extractValueFromText ls "how")
-                                      (extractListFromText ls "permissions")
-                                      (extractListFromText ls "conditions")
-                                      (extractListFromText ls "limitations")
-                                      cnt))
+    return (LicenseFact (CALFactRaw n
+                                    (extractValueFromText ls "title")
+                                    (extractValueFromText ls "spdx-id")
+                                    (extractValueFromText ls "featured")
+                                    (extractValueFromText ls "hidden")
+                                    (extractValueFromText ls "description")
+                                    (extractValueFromText ls "how")
+                                    (extractListFromText ls "permissions")
+                                    (extractListFromText ls "conditions")
+                                    (extractListFromText ls "limitations")
+                                    cnt))
 
 loadChooseALicenseFacts :: FilePath -> IO Facts
 loadChooseALicenseFacts calFolder = do

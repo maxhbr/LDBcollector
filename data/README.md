@@ -54,7 +54,7 @@ Licensing is unclear
 ## Other Sources
   - [OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src)
     data-license: CC-BY-SA-4.0
-  - [gnu.org](https://www.gnu.org/licenses/license-list.html)
+  - FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
   - ORT License highlighting
   - https://github.com/okfn/licenses
   - Wikipedia: https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses
