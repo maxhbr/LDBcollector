@@ -8,7 +8,7 @@ module Collectors.BlueOak
   ) where
 
 import qualified Prelude as P
-import           MyPrelude
+import           MyPrelude hiding (id)
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
@@ -20,7 +20,7 @@ import           Model.License
 data BlueOakLicense
  = BlueOakLicense
  { name :: String
- , boId :: String
+ , id :: String
  , url :: String
  } deriving (Show,Generic)
 instance FromJSON BlueOakLicense
@@ -57,13 +57,17 @@ data BOEntry
             BlueOakLicense -- data
   deriving Generic
 instance ToJSON BOEntry where
-  toJSON (BOEntry llv r l) = object [ "BlueOakRating" .= r, "name" .= (name l), "id" .= (boId l), "url" .= (url l), "isPermissive" .= True ]
+  toJSON (BOEntry _ r l) = object [ "BlueOakRating" .= r
+                                  , "name" .= name l
+                                  , "id" .= id l
+                                  , "url" .= url l
+                                  , "isPermissive" .= True ]
 instance Show BOEntry where
   show (BOEntry _ _ j) = show j
 
 instance LFRaw BOEntry where
   getLicenseFactClassifier _               = LFC ["BlueOak", "BOEntry"]
-  getImpliedNames (BOEntry _ _ bol)        = [boId bol]
+  getImpliedNames (BOEntry _ _ bol)        = [id bol]
   getImpliedStatements boe@(BOEntry _ r _) = V.singleton . FactStatement (getLicenseFactClassifier boe) $ IsPermissiveStatement True (Just ("rating is: " `T.append` (T.pack r)))
 
 loadBlueOakFactsFromString :: ByteString -> Facts
