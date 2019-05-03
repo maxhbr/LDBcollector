@@ -52,8 +52,10 @@ instance ToJSON FactStatement where
       lbl = getStatementLabel a
       desc = getStatementDescription a
       val = getStatementContent a
-    in object [ tShow lfc .= object [ lbl .= val
-                                    , "description" .= desc ] ]
+    in case desc of
+      Just d -> object [ tShow lfc .= object [ lbl .= val
+                                             , "description" .= d ] ]
+      Nothing -> object [ tShow lfc .= object [ lbl .= val ] ]
 
 type LicenseName
   = String
