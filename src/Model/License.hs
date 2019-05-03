@@ -53,7 +53,7 @@ instance ToJSON LicenseShortnameFactRaw
 instance LFRaw LicenseShortnameFactRaw where
   getLicenseFactClassifier _                     = LFC ["LicenseName"]
   getImpliedNames (LicenseShortnameFactRaw s os) = s : os
-  getImpliedStatements lsfr                      = V.singleton $ FactStatement (getLicenseFactClassifier lsfr) lsfr
+  getImpliedStatements lsfr                      = V.singleton $ FactStatement lsfr
 instance FSRaw LicenseShortnameFactRaw where
   getStatementLabel _ = "Shortname"
   getStatementContent (LicenseShortnameFactRaw sn _) = String $ T.pack sn
@@ -79,7 +79,7 @@ instance ToJSON LicenseTextFactRaw
 instance LFRaw LicenseTextFactRaw where
   getLicenseFactClassifier _                         = LFC ["LicenseText"]
   getImpliedNames (LicenseTextFactRaw s _)           = [s]
-  getImpliedStatements ltfr@(LicenseTextFactRaw _ t) = V.singleton . FactStatement (getLicenseFactClassifier ltfr) $ HasLicenseText t Nothing
+  getImpliedStatements ltfr@(LicenseTextFactRaw _ t) = V.singleton . FactStatement $ HasLicenseText t Nothing
 
 mkLicenseTextFact :: String -> Text -> LicenseFact
 mkLicenseTextFact s t = LicenseFact (LicenseTextFactRaw s t)
@@ -97,7 +97,8 @@ getLicenseFromFacts shortname otherShortnames fs = let
 containsFactOfClass :: License -> LicenseFactClassifier -> Bool
 containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
 containsFactOfType :: License -> Text -> Bool
-containsFactOfType (License fs) t = (\f -> case (getLicenseFactClassifier f) of
+containsFactOfType (License fs) t = (\f -> case getLicenseFactClassifier f of
+                                        LFC []  -> False
                                         LFC bcs -> last bcs == t) `any` fs
 
 getFactJSON :: License -> LicenseFactClassifier -> Maybe ByteString
@@ -109,5 +110,5 @@ getFactData (License fs) classifier = case V.find (\f -> getLicenseFactClassifie
   Nothing -> object []
 
 getStatementsFromLicense :: License -> Vector FactStatement
-getStatementsFromLicense (License fs) = V.concatMap getImpliedStatements fs
+getStatementsFromLicense (License fs) = V.concatMap computeImpliedStatements fs
 

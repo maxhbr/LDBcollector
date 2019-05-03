@@ -4,8 +4,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE DeriveGeneric #-}
 module Model.Fact
-  ( LFData (..)
-  , LicenseName
+  ( LicenseName
   , LicenseFactClassifier (..)
   , LFRaw (..)
   , LicenseFact (..)
@@ -29,47 +28,44 @@ type LicenseStatementType
   {-
     is permissive: yes (bla bla bla)
     ------+------  -+-  -----+-----
-          \         \        \
-           \         \        \---- description
-            \         \------------ value
-             \--------------------- label
+           \         \        \
+            \         \        \---- description
+             \         \------------ value
+              \--------------------- label
   -}
 class FSRaw a where
   getStatementLabel :: a -> Text
   getStatementContent :: a -> Value
   getStatementDescription :: a -> Maybe Text
   getStatementDescription _ = Nothing
-  unRawStatement :: LicenseFactClassifier -> a -> FactStatement
+  unRawStatement :: a -> LicenseFactClassifier -> FactStatement
   unRawStatement = FactStatement
 
 data FactStatement
   = forall a. (FSRaw a)
   => FactStatement
-  {_factSourceClassifier :: LicenseFactClassifier
-  , _rawFactStatement :: a
+  { _rawFactStatement :: a
+  , _factSourceClassifier :: LicenseFactClassifier
   }
 instance ToJSON FactStatement where
-  toJSON (FactStatement lfc a) = let
+  toJSON (FactStatement a lfc) = let
       lbl = getStatementLabel a
       desc = getStatementDescription a
       val = getStatementContent a
     in object [ tShow lfc .= object [ lbl .= val
                                     , "description" .= desc ] ]
 
-data LFData
-  = LFnone
-  | LFtext Text
-  | LFbytestring ByteString
-  | LFstring String
-  deriving (Show, Eq)
-
 type LicenseName
   = String
 class (Show a, ToJSON a) => LFRaw a where
   getLicenseFactClassifier :: a -> LicenseFactClassifier
   getImpliedNames          :: a -> [LicenseName]
-  getImpliedStatements     :: a -> Vector FactStatement
+  getImpliedStatements     :: a -> Vector (LicenseFactClassifier -> FactStatement)
   getImpliedStatements _ = V.empty
+  computeImpliedStatements :: a -> Vector FactStatement
+  computeImpliedStatements a = let
+      thunks = getImpliedStatements a
+    in V.map (\t -> t (getLicenseFactClassifier a)) thunks
 
 newtype LicenseFactClassifier
   = LFC [Text]

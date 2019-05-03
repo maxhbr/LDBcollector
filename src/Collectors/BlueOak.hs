@@ -66,9 +66,9 @@ instance Show BOEntry where
   show (BOEntry _ _ j) = show j
 
 instance LFRaw BOEntry where
-  getLicenseFactClassifier _               = LFC ["BlueOak", "BOEntry"]
-  getImpliedNames (BOEntry _ _ bol)        = [id bol]
-  getImpliedStatements boe@(BOEntry _ r _) = V.singleton . FactStatement (getLicenseFactClassifier boe) $ IsPermissiveStatement True (Just ("rating is: " `T.append` (T.pack r)))
+  getLicenseFactClassifier _           = LFC ["BlueOak", "BOEntry"]
+  getImpliedNames (BOEntry _ _ bol)    = [id bol]
+  getImpliedStatements (BOEntry _ r _) = V.singleton . FactStatement $ IsPermissiveStatement True (Just ("rating is: " `T.append` (T.pack r)))
 
 loadBlueOakFactsFromString :: ByteString -> Facts
 loadBlueOakFactsFromString bs = let
