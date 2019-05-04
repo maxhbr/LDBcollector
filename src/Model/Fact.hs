@@ -36,26 +36,23 @@ type LicenseStatementType
 class FSRaw a where
   getStatementLabel :: a -> Text
   getStatementContent :: a -> Value
-  getStatementDescription :: a -> Maybe Text
-  getStatementDescription _ = Nothing
-  unRawStatement :: a -> LicenseFactClassifier -> FactStatement
+  unRawStatement :: a -> Maybe Text -> LicenseFactClassifier -> FactStatement
   unRawStatement = FactStatement
 
 data FactStatement
   = forall a. (FSRaw a)
   => FactStatement
   { _rawFactStatement :: a
+  , _factDescription :: Maybe Text
   , _factSourceClassifier :: LicenseFactClassifier
   }
 instance ToJSON FactStatement where
-  toJSON (FactStatement a lfc) = let
+  toJSON (FactStatement a desc lfc) = let
       lbl = getStatementLabel a
-      desc = getStatementDescription a
       val = getStatementContent a
-    in case desc of
-      Just d -> object [ tShow lfc .= object [ lbl .= val
-                                             , "description" .= d ] ]
-      Nothing -> object [ tShow lfc .= object [ lbl .= val ] ]
+    in object [ lbl .= (case desc of
+                           Just d ->  object [ "value" .= val, "source" .= tShow lfc, "description" .= d ]
+                           Nothing -> object [ "value" .= val, "source" .= tShow lfc ])]
 
 type LicenseName
   = String

@@ -37,6 +37,8 @@ dependencies:
 # - hjpath
 - opensource
 - transformers
+- containers
+- raw-strings-qq
 
 library:
   source-dirs: src
@@ -51,7 +53,6 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - LDBcollector
-    - containers
 
 tests:
   LDBcollector-test:
@@ -65,4 +66,3 @@ tests:
     - LDBcollector
     - hspec
     - QuickCheck
-    - raw-strings-qq

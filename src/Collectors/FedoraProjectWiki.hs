@@ -18,7 +18,6 @@ import           Data.Aeson as A
 import           Model.License
 import           Model.Utils
 
-
 data FedoraProjectWikiFact_Core
   = FedoraProjectWikiFact_Core LicenseName
                                (Maybe String)
@@ -129,7 +128,7 @@ loadFedoraFactsFromByteString t "Good" s = case (decodeByName s :: Either String
                                                                 Left err2    -> trace (err1 ++ err2) V.empty
 loadFedoraFactsFromByteString t "Bad" s = case (decodeByName s :: Either String (Header, V.Vector FedoraProjectWikiFact_Bad)) of
                                             Right (_, v) -> V.map (LicenseFact . toFPWF_Bad t) v
-                                            Left err     -> trace (err) V.empty
+                                            Left err     -> trace err V.empty
 loadFedoraFactsFromByteString _ _ _ = undefined
 
 

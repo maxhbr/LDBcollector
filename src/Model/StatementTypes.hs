@@ -8,25 +8,25 @@ import           Data.Text (Text)
 import Model.Fact
 
 data IsPermissiveStatement
-  = IsPermissiveStatement Bool (Maybe Text)
-
+  = IsPermissiveStatement Bool
 instance FSRaw IsPermissiveStatement where
-  getStatementLabel _                                    = "isPermissive"
-  getStatementContent (IsPermissiveStatement v _)        = toJSON v
-  getStatementDescription (IsPermissiveStatement _ desc) = desc
+  getStatementLabel _                           = "isPermissive"
+  getStatementContent (IsPermissiveStatement v) = toJSON v
 
 data IsCopyleftStatement
-  = IsCopyleftStatement Bool (Maybe Text)
-
+  = IsCopyleftStatement Bool
 instance FSRaw IsCopyleftStatement where
-  getStatementLabel _                                  = "isCopyleft"
-  getStatementContent (IsCopyleftStatement v _)        = toJSON v
-  getStatementDescription (IsCopyleftStatement _ desc) = desc
+  getStatementLabel _                         = "isCopyleft"
+  getStatementContent (IsCopyleftStatement v) = toJSON v
 
 data HasLicenseText
-  = HasLicenseText Text (Maybe Text)
-
+  = HasLicenseText Text
 instance FSRaw HasLicenseText where
-  getStatementLabel _                             = "hasLicenseText"
-  getStatementContent (HasLicenseText v _)        = toJSON v
-  getStatementDescription (HasLicenseText _ desc) = desc
+  getStatementLabel _                    = "hasLicenseText"
+  getStatementContent (HasLicenseText v) = toJSON v
+
+data HasShortname
+  = HasShortname Text
+instance FSRaw HasShortname where
+  getStatementLabel _                   = "hasShortname"
+  getStatementContent (HasShortname sn) = String sn

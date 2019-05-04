@@ -29,10 +29,7 @@ extract from: https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing
 TODO: where is a better source?
 
 ## License lists from the OSI
-TODO: implement
-### How to update:
-extract from: https://opensource.org/licenses
-TODO: where is a better source?
+Implemented via haskell bindings.
 
 ## choosealicense.com
 ### How to update
@@ -49,7 +46,7 @@ TODO: where is a better source?
 - use the update script
 
 ## TLDRLegal
-Licensing is unclear
+Can not be used, licensing is unclear.
 
 ## Other Sources
   - [OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src)
