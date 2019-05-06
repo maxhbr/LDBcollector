@@ -49,7 +49,7 @@ getLicensesFromFacts ids i mapping facts = let
 readFacts :: IO Facts
 readFacts = do
   factsFromSPDX <- loadSPDXFacts "./data/spdx-license-list-data/"
-  factsFromBlueOak <- loadBlueOakFacts "./data/Blue_Oak_Council/blue-oak-council-license-list.json"
+  factsFromBlueOak <- loadBlueOakFacts "./data/blue-oak-council-license-list.json"
   factsFromOCPT <- loadOSPTFacts "./data/OpenChainPolicyTemplate/Table.csv"
   factsFromScancode <- loadScancodeFacts "./data/nexB_scancode-toolkit_license_list/"
   factsFromOsadl <- loadOsadlFacts "./data/OSADL/"
