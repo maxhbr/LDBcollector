@@ -2,7 +2,7 @@
 
 The generated output is pushed to the branch [`generated`](https://github.com/maxhbr/LDBcollector/tree/generated).
 
-## Consumed Data
+## Consumed Data (implemented)
 ### SPDX license List
 The data is placed in `/data/json/` and it contains the content of the folder `/json/` from [https://github.com/spdx/license-list-data].
 
@@ -10,10 +10,9 @@ The data is placed in `/data/json/` and it contains the content of the folder `/
 The OSI license list is imported via the `opensource` haskell package.
 
 ### Scancode license List
-The scancode data is placed in `/data/scancode/` and contains the content of the folder `/src/licensedcode/data/licenses/**` from [https://github.com/nexB/scancode-toolkit].
+The scancode data is placed in `/data/scancode/` and contains the content of the folder `/src/licensedcode/data/licenses/**` from [https://github.com/nexB/scancode-toolkit**.
 
-#### How it is licensed:
-- cc0-1.0
+**licensed under:** cc0-1.0
 
 ### Wikipedia comparison of licenses
 The table for general comparison of licenses is taken from https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses and is placed in the source file.
@@ -27,16 +26,14 @@ e.g.
 The complete list can be found at: https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html
 
 ### ChooseALicense.com licenses
-The folder `/data/choosalicense` contains the conten of the folder `/_licenses/` from [https://github.com/github/choosealicense.com].
+The folder `/data/choosalicense` contains the conten of the folder `/_licenses/` from [https://github.com/github/choosealicense.com**.
 
-#### How it is licensed:
-- MIT
+**licensed under:** MIT
 
 ### Blue Oak Council License List
-The license list can be pulled from https://blueoakcouncil.org/list.json, and is placed at `data/blue-oak-council-license-list.json`
+The license list can be pulled from https://blueoakcouncil.org/list.json, and is placed at `data/blue-oak-council-license-list.json**
 
-#### How it is licensed:
-- data-license: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+**licensed under:** CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
 ### Fedora Project Wiki
 The Fedora Project has in its wiki a list of licenses which are rated **good** or **bad** on [https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing].
@@ -46,9 +43,13 @@ These lists are extracted to csv files in `/data/Fedora_Project_Wiki/`.
 The open chain project published an example policy as a spreadsheet on [https://www.openchainproject.org/news/2019/01/17/openchain-open-source-policy-template-now-available].
 From the spreadsheet page "Example Appendix 1 - Unofficial License Grid used by UK Entity" one can extract the license list into a CSV file
 
-### Other Sources
-  - [OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src)
-    data-license: CC-BY-SA-4.0
+## Consumed Data (to be implemented)
+### OSLC-Handbook
+[OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src**
+
+**Licensed unnder:** CC-BY-SA-4.0
+
+## Other possible Sources for license Metadata
   - FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
   - ORT License highlighting
   - https://github.com/okfn/licenses
