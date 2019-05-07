@@ -18,7 +18,7 @@ ___
 
 Rechtsmissbräuchliche Durchsetzung von CC-Lizenzen
 
-Link: http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial, http://medien-internet-und-recht.de/pdf/VT-MIR-2014-Dok-121.pdf 
+Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_CC_2018.pdf
 
 #### LG Halle, Urteil v. 27.07.2015, 4 O 133/15
 
