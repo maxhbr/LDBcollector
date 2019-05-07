@@ -43,9 +43,10 @@ These lists are extracted to csv files in `/data/Fedora_Project_Wiki/`.
 The open chain project published an example policy as a spreadsheet on [https://www.openchainproject.org/news/2019/01/17/openchain-open-source-policy-template-now-available].
 From the spreadsheet page "Example Appendix 1 - Unofficial License Grid used by UK Entity" one can extract the license list into a CSV file
 
-## Consumed Data (to be implemented)
 ### OSLC-Handbook
 [OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src**
+
+The fixed data can be found at https://github.com/maxhbr/OSLC-handbook/
 
 **Licensed unnder:** CC-BY-SA-4.0
 

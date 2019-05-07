@@ -19,6 +19,7 @@ import Debug.Trace as X (trace)
 import System.FilePath as X
 import System.Directory as X
 import System.IO as X (hPutStrLn, stderr)
+import Control.Applicative as X ((<|>))
 
 tShow :: (Show a) => a -> Text
 tShow = T.pack . show

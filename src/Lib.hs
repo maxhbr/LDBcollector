@@ -14,3 +14,4 @@ import Collectors.ChooseALicense as X
 import Collectors.FedoraProjectWiki as X
 import Collectors.OSI as X
 import Collectors.Wikipedia as X
+import Collectors.OSLC as X

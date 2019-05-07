@@ -56,6 +56,7 @@ readFacts = do
   factsFromChooseALicense <- loadChooseALicenseFacts "./data/choosealicense.com/"
   factsFromFedora <- loadFedoraFacts "./data/Fedora_Project_Wiki/"
   factsFromOSI <- loadOSIFacts
+  factsFromOSLC <- loadOslcFacts "./data/OSLC-handbook"
   let factsFromWikipedia = loadWikipediaFacts
       facts = V.concat [ factsFromSPDX
                        , factsFromBlueOak
@@ -66,6 +67,7 @@ readFacts = do
                        , factsFromFedora
                        , factsFromOSI
                        , factsFromWikipedia
+                       , factsFromOSLC
                        ]
   hPutStrLn stderr "... done with collecting data"
   return facts
