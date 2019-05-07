@@ -13,6 +13,13 @@ ___
 ___
 ### Urheberrecht und Wettbewerbsrecht
 ___
+
+#### AG Würzburg, Urteil v. 18.12.2018, Az. 18 C 611/18
+
+Rechtsmissbräuchliche Durchsetzung von CC-Lizenzen
+
+Link: http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial, http://medien-internet-und-recht.de/pdf/VT-MIR-2014-Dok-121.pdf 
+
 #### LG Halle, Urteil v. 27.07.2015, 4 O 133/15
 
 Wiederholungsgefahr nachdem die Bedingungen der GPLv3 wieder eingehalten werden (Ziffer 8 Abs. 3 GPLv3); Abmahnung, strafbewehrte Unterlassungerklärung und einstweilige Verfügung  
