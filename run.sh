@@ -7,6 +7,9 @@ stack exec LDBcollector-exe
 if [[ -d "_generated" ]]; then
     cd _generated
     git init
+    cp ../data/OSLC-handbook/LICENSE ./
+    git add LICENSE
+    git commit -m "Add License file with CC-By-Sa 4.0"
     git add .
     git commit -m "Commit generated output"
     mkdir -p formatted
