@@ -7,6 +7,7 @@ module Collectors.FedoraProjectWiki
 
 import qualified Prelude as P
 import           MyPrelude
+import           Collectors.Common
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
@@ -16,7 +17,6 @@ import           Data.Csv as C
 import           Data.Aeson as A
 
 import           Model.License
-import           Model.Utils
 
 data FedoraProjectWikiFact_Core
   = FedoraProjectWikiFact_Core LicenseName
@@ -118,16 +118,19 @@ toFPWF_Short t short =  FedoraProjectWikiFact t (Left (Right short))
 toFPWF_Bad :: String -> FedoraProjectWikiFact_Bad -> FedoraProjectWikiFact
 toFPWF_Bad t bad =  FedoraProjectWikiFact t (Right bad)
 
+toFedoraLicenseFact :: LFRaw a => a -> LicenseFact
+toFedoraLicenseFact = LicenseFact "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing"
+
 -- TODO: replace Good/Baad by data
 -- TODO: replace type by data
 loadFedoraFactsFromByteString :: String -> String -> ByteString -> Facts
 loadFedoraFactsFromByteString t "Good" s = case (decodeByName s :: Either String (Header, V.Vector FedoraProjectWikiFact_Full)) of
-                                             Right (_, v) -> V.map (LicenseFact . toFPWF_Full t) v
+                                             Right (_, v) -> V.map (toFedoraLicenseFact . toFPWF_Full t) v
                                              Left err1    ->  case (decodeByName s :: Either String (Header, V.Vector FedoraProjectWikiFact_Short)) of
-                                                                Right (_, v) -> V.map (LicenseFact . toFPWF_Short t) v
+                                                                Right (_, v) -> V.map (toFedoraLicenseFact . toFPWF_Short t) v
                                                                 Left err2    -> trace (err1 ++ err2) V.empty
 loadFedoraFactsFromByteString t "Bad" s = case (decodeByName s :: Either String (Header, V.Vector FedoraProjectWikiFact_Bad)) of
-                                            Right (_, v) -> V.map (LicenseFact . toFPWF_Bad t) v
+                                            Right (_, v) -> V.map (toFedoraLicenseFact . toFPWF_Bad t) v
                                             Left err     -> trace err V.empty
 loadFedoraFactsFromByteString _ _ _ = undefined
 
@@ -139,6 +142,7 @@ loadFedoraFactsFromFile t r csv = do
 
 loadFedoraFacts :: FilePath -> IO Facts
 loadFedoraFacts fedoraFactsDir = do
+  logThatFactsAreLoadedFrom "Fedora Project Wiki"
   lgfs <- loadFedoraFactsFromFile "license" "Good" (fedoraFactsDir </> "Fedora_Project_Wiki-Good_Licenses.csv")
   lbfs <- loadFedoraFactsFromFile "license" "Bad" (fedoraFactsDir </> "Fedora_Project_Wiki-Bad_Licenses.csv")
   lfgfs <- loadFedoraFactsFromFile "font license" "Good" (fedoraFactsDir </> "Fedora_Project_Wiki-Good_Font_Licenses.csv")

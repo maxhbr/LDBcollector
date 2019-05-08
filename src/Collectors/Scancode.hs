@@ -8,6 +8,7 @@ module Collectors.Scancode
 
 import qualified Prelude as P
 import           MyPrelude hiding (id, ByteString)
+import           Collectors.Common
 
 import           System.FilePath
 import           System.Directory
@@ -91,10 +92,11 @@ loadScancodeFactsFromYml folder yml = let
       Left pe -> trace (show pe) V.empty
       Right scdFromRow -> let
           scd = scdFromRow{text = licenseText}
-        in V.singleton (LicenseFact scd)
+        in V.singleton (LicenseFact ("https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/" ++ yml) scd)
 
 loadScancodeFacts :: FilePath -> IO Facts
 loadScancodeFacts folder = do
+  logThatFactsAreLoadedFrom "Scancode License List"
   files <- getDirectoryContents folder
   let ymls = filter ("yml" `isSuffixOf`) files
   factss <- mapM (loadScancodeFactsFromYml folder) ymls

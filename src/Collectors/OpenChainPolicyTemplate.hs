@@ -8,6 +8,7 @@ module Collectors.OpenChainPolicyTemplate
 
 import qualified Prelude as P
 import           MyPrelude hiding (id)
+import           Collectors.Common
 
 import qualified Data.Vector as V
 import           Debug.Trace (trace)
@@ -50,10 +51,11 @@ instance LFRaw OSPTRow where
 
 loadOSPTFactsFromString :: ByteString -> Facts
 loadOSPTFactsFromString s = case (decodeByName s :: Either String (Header, V.Vector OSPTRow)) of
-  Right (_, v) -> V.map LicenseFact v
+  Right (_, v) -> V.map (LicenseFact "https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods") v
   Left err     -> trace err V.empty
 
 loadOSPTFacts :: FilePath -> IO Facts
 loadOSPTFacts osptFile = do
+  logThatFactsAreLoadedFrom "Open Chain Policy Template"
   s <- B.readFile osptFile
   return (loadOSPTFactsFromString s)

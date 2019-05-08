@@ -12,6 +12,7 @@ module Collectors.Wikipedia
 
 import qualified Prelude as P
 import           MyPrelude
+import           Collectors.Common
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
@@ -24,7 +25,6 @@ import qualified Data.Map as M
 import           Text.RawString.QQ
 
 import           Model.License
-import           Model.Utils
 
 {-
 The following table compares various features of each license and is a general guide to the terms and conditions of each license. The table lists the permissions and limitations regarding the following subjects:
@@ -206,8 +206,10 @@ instance LFRaw WikipediaFact where
 
 loadFactsFromComparisonByteString :: ByteString -> Facts
 loadFactsFromComparisonByteString s = case (decodeByName s :: Either String (Header, V.Vector WikipediaFact)) of
-                                        Right (_, v) -> V.map LicenseFact v
+                                        Right (_, v) -> V.map (LicenseFact "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses") v
                                         Left err     -> trace err V.empty
 
-loadWikipediaFacts :: Facts
-loadWikipediaFacts = loadFactsFromComparisonByteString wikipediaComparisonData
+loadWikipediaFacts :: IO Facts
+loadWikipediaFacts = do
+  logThatFactsAreLoadedFrom "Wikipedia License Comparison Table"
+  return $ loadFactsFromComparisonByteString wikipediaComparisonData

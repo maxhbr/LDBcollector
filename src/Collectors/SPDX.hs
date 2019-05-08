@@ -8,6 +8,7 @@ module Collectors.SPDX
 
 import qualified Prelude as P
 import           MyPrelude hiding (id, ByteString)
+import           Collectors.Common
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
@@ -68,7 +69,7 @@ loadSPDXFactsFromString :: ByteString -> Facts
 loadSPDXFactsFromString s = case (decode s :: Maybe SPDXList) of
   Just (SPDXList v es _)  -> trace ("INFO: SPDX License list version is: " ++ v) $ let
       filteredEs = filter (not . isSPDXLicenseDeprecated) es
-    in V.fromList $ map LicenseFact filteredEs
+    in V.fromList $ map (\f -> LicenseFact ("https://spdx.org/licenses/" ++ spdxLicenseId f ++ ".html") f) filteredEs
   Nothing                 -> V.empty
 
 
@@ -77,6 +78,7 @@ loadSPDXFacts :: FilePath -> IO Facts
 loadSPDXFacts basepath = let
     licensesJSONFile = basepath </> "licenses.json"
   in do
+    logThatFactsAreLoadedFrom "SPDX License List"
     hPutStrLn stderr $ "INFO: parse SPDX file: " ++ licensesJSONFile
     bs <- B.readFile licensesJSONFile
     return (loadSPDXFactsFromString bs)

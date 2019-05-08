@@ -57,8 +57,8 @@ readFacts = do
   factsFromFedora <- loadFedoraFacts "./data/Fedora_Project_Wiki/"
   factsFromOSI <- loadOSIFacts
   factsFromOSLC <- loadOslcFacts "./data/OSLC-handbook"
-  let factsFromWikipedia = loadWikipediaFacts
-      facts = V.concat [ factsFromSPDX
+  factsFromWikipedia <- loadWikipediaFacts
+  let facts = V.concat [ factsFromSPDX
                        , factsFromBlueOak
                        , factsFromOCPT
                        , factsFromScancode

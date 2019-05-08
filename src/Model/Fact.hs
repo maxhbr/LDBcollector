@@ -75,18 +75,26 @@ instance ToJSON LicenseFactClassifier where
   toJSON lfc = toJSON $ show lfc
 
 data LicenseFact
-  = forall a. (LFRaw a)
-  => LicenseFact a
+  = forall a. (LFRaw a) => LicenseFact String a
+  | forall a. (LFRaw a) => LicenseFactWithoutURL a
+
 instance Show LicenseFact where
-  show (LicenseFact a) = show a
+  show (LicenseFact _ a) = show a
+  show (LicenseFactWithoutURL a) = show a
 instance ToJSON LicenseFact where
-  toJSON (LicenseFact a) = let
+  toJSON (LicenseFact url a) = let
       lfc = getLicenseFactClassifier a
-    in object [ tShow lfc .= toJSON a ]
+    in object [ tShow lfc .= (mergeAesonL [toJSON a, object [ "_sourceURL" .= (toJSON url) ]]) ]
+  toJSON (LicenseFactWithoutURL a) = let
+      lfc = getLicenseFactClassifier a
+    in object [ tShow lfc .= (toJSON a) ]
 instance LFRaw LicenseFact where
-  getLicenseFactClassifier (LicenseFact raw) = getLicenseFactClassifier raw
-  getImpliedNames (LicenseFact raw)          = getImpliedNames raw
-  getImpliedStatements (LicenseFact raw)     = getImpliedStatements raw
+  getLicenseFactClassifier (LicenseFact _ raw)         = getLicenseFactClassifier raw
+  getLicenseFactClassifier (LicenseFactWithoutURL raw) = getLicenseFactClassifier raw
+  getImpliedNames (LicenseFact _ raw)                  = getImpliedNames raw
+  getImpliedNames (LicenseFactWithoutURL raw)          = getImpliedNames raw
+  getImpliedStatements (LicenseFact _ raw)             = getImpliedStatements raw
+  getImpliedStatements (LicenseFactWithoutURL raw)     = getImpliedStatements raw
 
 type Facts
   = Vector LicenseFact

@@ -8,6 +8,7 @@ module Collectors.ChooseALicense
 
 import qualified Prelude as P
 import           MyPrelude hiding (ByteString)
+import           Collectors.Common
 
 import           Data.List as L
 import qualified Data.Vector as V
@@ -62,7 +63,8 @@ loadCalFactFromFile calFolder calFile = let
   in do
     cnt <- B.readFile fileWithPath
     let ls = lines (Char8.unpack cnt)
-    return (LicenseFact (CALFactRaw n
+    return (LicenseFact ("https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/" ++ calFile)
+                        (CALFactRaw n
                                     (extractValueFromText ls "title")
                                     (extractValueFromText ls "spdx-id")
                                     (extractValueFromText ls "featured")
@@ -76,6 +78,7 @@ loadCalFactFromFile calFolder calFile = let
 
 loadChooseALicenseFacts :: FilePath -> IO Facts
 loadChooseALicenseFacts calFolder = do
+  logThatFactsAreLoadedFrom "choosealicense.com"
   files <- getDirectoryContents calFolder
   let cals = filter ("txt" `isSuffixOf`) files
   facts <- mapM (loadCalFactFromFile calFolder) cals

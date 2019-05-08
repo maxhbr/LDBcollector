@@ -28,7 +28,6 @@ import qualified Data.ByteString.Lazy.Char8 as Char8
 
 import Model.Fact as X
 import Model.StatementTypes as X
-import Model.Utils
 import Model.StatementTypes
 
 newtype License
@@ -50,14 +49,15 @@ instance Show License where
 data LicenseShortnameFactRaw =
   LicenseShortnameFactRaw LicenseName [LicenseName]
   deriving (Show, Generic)
-instance ToJSON LicenseShortnameFactRaw
+instance ToJSON LicenseShortnameFactRaw where
+  toJSON (LicenseShortnameFactRaw mainLicenseName otherNames) = object [ "shortname" .= mainLicenseName, "otherNames" .= (toJSON otherNames) ]
 instance LFRaw LicenseShortnameFactRaw where
   getLicenseFactClassifier _                         = LFC ["LicenseName"]
   getImpliedNames (LicenseShortnameFactRaw s os)     = s : os
   getImpliedStatements (LicenseShortnameFactRaw s _) = V.singleton $ FactStatement (HasShortname (T.pack s)) Nothing
 
 mkLicenseShortnameFact :: LicenseName -> [LicenseName] -> LicenseFact
-mkLicenseShortnameFact s os = LicenseFact (LicenseShortnameFactRaw s os)
+mkLicenseShortnameFact s os = LicenseFact "::1" (LicenseShortnameFactRaw s os)
 
 data LicenseFullnameFactRaw =
   LicenseFullnameFactRaw String String
@@ -68,7 +68,7 @@ instance LFRaw LicenseFullnameFactRaw where
   getImpliedNames (LicenseFullnameFactRaw s _) = [s]
 
 mkLicenseFullnameFact :: String -> String -> LicenseFact
-mkLicenseFullnameFact s f = LicenseFact (LicenseFullnameFactRaw s f)
+mkLicenseFullnameFact s f = LicenseFact "::1" (LicenseFullnameFactRaw s f)
 
 data LicenseTextFactRaw =
   LicenseTextFactRaw String Text
@@ -80,7 +80,7 @@ instance LFRaw LicenseTextFactRaw where
   getImpliedStatements ltfr@(LicenseTextFactRaw _ t) = V.singleton $ FactStatement (HasLicenseText t) Nothing
 
 mkLicenseTextFact :: String -> Text -> LicenseFact
-mkLicenseTextFact s t = LicenseFact (LicenseTextFactRaw s t)
+mkLicenseTextFact s t = LicenseFact "::1" (LicenseTextFactRaw s t)
 
 --------------------------------------------------------------------------------
 -- get license from facts

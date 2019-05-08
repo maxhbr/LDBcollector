@@ -56,6 +56,14 @@ The fixed data can be found at https://github.com/maxhbr/OSLC-handbook/
   - https://github.com/okfn/licenses
   - debian: https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
   - google: https://opensource.google.com/docs/thirdparty/licenses/
+
+    they classify licenses into: 
+    - restricted licenses
+    - restricted_if_statically_linked license
+    - reciprocal licenses
+    - notice licenses
+    - permissive licenses
+    - by_exception_only licenses
   - ...
   - FOSSology
     data-license: GPL-2.0-only

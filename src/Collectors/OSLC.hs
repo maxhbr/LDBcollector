@@ -7,6 +7,7 @@ module Collectors.OSLC
 
 import qualified Prelude as P
 import           MyPrelude hiding (id, ByteString)
+import           Collectors.Common
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
@@ -69,7 +70,7 @@ loadOslcFactFromFile oslcFolder oslcFile = let
     nmffn = dropExtension oslcFile
     convertOslcFromFile oslcdFromFile = let
         spdxIds = licenseId oslcdFromFile
-      in map (\spdxId -> LicenseFact oslcdFromFile{ nameFromFilename = nmffn, licenseId = [spdxId] }) spdxIds
+      in map (\spdxId -> LicenseFact ("https://github.com/finos-osr/OSLC-handbook/blob/master/src/" ++ oslcFile) oslcdFromFile{ nameFromFilename = nmffn, licenseId = [spdxId] }) spdxIds
   in do
     decoded <- decodeFileEither fileWithPath :: IO (Either ParseException [OSLCData])
     case decoded of
@@ -78,11 +79,12 @@ loadOslcFactFromFile oslcFolder oslcFile = let
         return V.empty
       Right oslcdFromFiles -> do
         let facts = V.fromList $ concatMap convertOslcFromFile oslcdFromFiles
-        mapM_ (\f -> hPutStrLn stderr $ "parsed " ++ fileWithPath ++ " and found: " ++ show (getImpliedNames f)) facts
+        mapM_ (logThatFileContainedFact fileWithPath) facts
         return facts
 
 loadOslcFacts :: FilePath -> IO Facts
 loadOslcFacts oslcFolder = do
+  logThatFactsAreLoadedFrom "OSLC-handbook"
   files <- getDirectoryContents oslcFolder
   let oslcs = filter ("yaml" `isSuffixOf`) files
   facts <- mapM (loadOslcFactFromFile oslcFolder) oslcs

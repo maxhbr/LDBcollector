@@ -7,6 +7,7 @@ module Collectors.OSADL
 
 import qualified Prelude as P
 import           MyPrelude hiding (id, ByteString)
+import           Collectors.Common
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
@@ -35,10 +36,11 @@ loadOsadlFactFromFile osadlFolder osadlFile = let
     spdxId = dropExtension osadlFile
   in do
     content <- B.readFile fileWithPath
-    return (LicenseFact (OSADLFactRaw spdxId content))
+    return (LicenseFact ("https://www.osadl.org/fileadmin/checklists/unreflicenses/" ++ spdxId ++ ".txt") (OSADLFactRaw spdxId content))
 
 loadOsadlFacts :: FilePath -> IO Facts
 loadOsadlFacts osadlFolder = do
+  logThatFactsAreLoadedFrom "OSADL License Checklist"
   files <- getDirectoryContents osadlFolder
   let osadls = filter ("osadl" `isSuffixOf`) files
   facts <- mapM (loadOsadlFactFromFile osadlFolder) osadls

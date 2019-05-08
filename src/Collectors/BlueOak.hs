@@ -16,6 +16,7 @@ import qualified Data.ByteString.Lazy as B
 import           Data.ByteString.Lazy (ByteString)
 
 import           Model.License
+import           Collectors.Common
 
 data BlueOakLicense
  = BlueOakLicense
@@ -75,12 +76,13 @@ loadBlueOakFactsFromString bs = let
     bod = decodeBlueOakData bs
     bodVersion = version bod
     bodRatings = ratings bod
-    ratingConverter (BlueOakRating r ls) = map (LicenseFact . BOEntry bodVersion r) ls
+    ratingConverter (BlueOakRating r ls) = map (LicenseFact "https://blueoakcouncil.org/list" . BOEntry bodVersion r) ls
     facts = concatMap ratingConverter bodRatings
   in trace ("INFO: the version of BlueOak is: " ++ bodVersion) $ V.fromList facts
 
 -- example filepath: ../data/Blue_Oak_Council/blue-oak-council-license-list.json
 loadBlueOakFacts :: FilePath -> IO Facts
 loadBlueOakFacts blueOakFile = do
+  logThatFactsAreLoadedFrom "Blue Oak Council License List"
   s <- B.readFile blueOakFile
   return (loadBlueOakFactsFromString s)
