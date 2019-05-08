@@ -50,14 +50,14 @@ data LicenseShortnameFactRaw =
   LicenseShortnameFactRaw LicenseName [LicenseName]
   deriving (Show, Generic)
 instance ToJSON LicenseShortnameFactRaw where
-  toJSON (LicenseShortnameFactRaw mainLicenseName otherNames) = object [ "shortname" .= mainLicenseName, "otherNames" .= (toJSON otherNames) ]
+  toJSON (LicenseShortnameFactRaw mainLicenseName otherNames) = object [ "shortname" .= mainLicenseName, "otherNames" .= toJSON otherNames ]
 instance LFRaw LicenseShortnameFactRaw where
   getLicenseFactClassifier _                         = LFC ["LicenseName"]
   getImpliedNames (LicenseShortnameFactRaw s os)     = s : os
   getImpliedStatements (LicenseShortnameFactRaw s _) = V.singleton $ FactStatement (HasShortname (T.pack s)) Nothing
 
 mkLicenseShortnameFact :: LicenseName -> [LicenseName] -> LicenseFact
-mkLicenseShortnameFact s os = LicenseFact "::1" (LicenseShortnameFactRaw s os)
+mkLicenseShortnameFact s os = LicenseFactWithoutURL (LicenseShortnameFactRaw s os)
 
 data LicenseFullnameFactRaw =
   LicenseFullnameFactRaw String String
@@ -68,19 +68,19 @@ instance LFRaw LicenseFullnameFactRaw where
   getImpliedNames (LicenseFullnameFactRaw s _) = [s]
 
 mkLicenseFullnameFact :: String -> String -> LicenseFact
-mkLicenseFullnameFact s f = LicenseFact "::1" (LicenseFullnameFactRaw s f)
+mkLicenseFullnameFact s f = LicenseFactWithoutURL (LicenseFullnameFactRaw s f)
 
 data LicenseTextFactRaw =
   LicenseTextFactRaw String Text
   deriving (Show, Generic)
 instance ToJSON LicenseTextFactRaw
 instance LFRaw LicenseTextFactRaw where
-  getLicenseFactClassifier _                         = LFC ["LicenseText"]
-  getImpliedNames (LicenseTextFactRaw s _)           = [s]
-  getImpliedStatements ltfr@(LicenseTextFactRaw _ t) = V.singleton $ FactStatement (HasLicenseText t) Nothing
+  getLicenseFactClassifier _                    = LFC ["LicenseText"]
+  getImpliedNames (LicenseTextFactRaw s _)      = [s]
+  getImpliedStatements (LicenseTextFactRaw _ t) = V.singleton $ FactStatement (HasLicenseText t) Nothing
 
 mkLicenseTextFact :: String -> Text -> LicenseFact
-mkLicenseTextFact s t = LicenseFact "::1" (LicenseTextFactRaw s t)
+mkLicenseTextFact s t = LicenseFactWithoutURL (LicenseTextFactRaw s t)
 
 --------------------------------------------------------------------------------
 -- get license from facts
