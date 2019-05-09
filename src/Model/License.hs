@@ -22,13 +22,10 @@ import           Data.List (intersect)
 import qualified Data.Text as T
 import           Data.Char (toUpper)
 import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as B
 import           Data.ByteString.Lazy (ByteString)
-import qualified Data.ByteString.Lazy.Char8 as Char8
 
 import Model.Fact as X
 import Model.StatementTypes as X
-import Model.StatementTypes
 
 newtype License
   = License Facts
@@ -50,7 +47,8 @@ data LicenseShortnameFactRaw =
   LicenseShortnameFactRaw LicenseName [LicenseName]
   deriving (Show, Generic)
 instance ToJSON LicenseShortnameFactRaw where
-  toJSON (LicenseShortnameFactRaw mainLicenseName otherNames) = object [ "shortname" .= mainLicenseName, "otherNames" .= toJSON otherNames ]
+  toJSON (LicenseShortnameFactRaw mainLicenseName otherNames) = object [ "shortname" .= mainLicenseName
+                                                                       , "otherNames" .= toJSON otherNames ]
 instance LFRaw LicenseShortnameFactRaw where
   getLicenseFactClassifier _                         = LFC ["LicenseName"]
   getImpliedNames (LicenseShortnameFactRaw s os)     = s : os

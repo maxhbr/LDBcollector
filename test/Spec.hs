@@ -1157,7 +1157,7 @@ blueOakMiniExample = [r|{
 
 blueOakEmptyExample = [r|{"version": "1", "ratings": []}|]
 
-osptExample = [r|Name,SPDX Identifier,Type,Copyleft,SaaS Deemed Distribution,Explicit Patent,Freedom or Death,Notice Requirements,Modification Requirements,Commercial Use,Provide Copy of licence ,Same licence,State Changes ,Provide Disclaimer
+ocptExample = [r|Name,SPDX Identifier,Type,Copyleft,SaaS Deemed Distribution,Explicit Patent,Freedom or Death,Notice Requirements,Modification Requirements,Commercial Use,Provide Copy of licence ,Same licence,State Changes ,Provide Disclaimer
 2-clause BSD License,BSD-2-Clause,permissive,no,no,no,no,,,yes,,,,
 3-clause BSD License,BSD-3-Clause,permissive,no,no,no,no,,,yes,,,,
 Academic Free License 3.0,AFL-3.0,SaaS,no,yes,yes,no,,,yes,,,,
@@ -1243,7 +1243,7 @@ main = hspec $ do
         (mit `containsFactOfType` "BOEntry") `shouldBe` (True :: Bool)
 
   describe "Collector.OpenChainPolicyTemplate" $ let
-      factsFromOCPT = loadOSPTFactsFromString osptExample
+      factsFromOCPT = loadOCPTFactsFromString ocptExample
       mit = getLicenseFromFacts "MIT" [] factsFromOCPT
     in do
       it "it is possible to parse the csv" $ do
@@ -1256,3 +1256,8 @@ main = hspec $ do
     in do
       it "it finds the condition" $ do
         extractListFromText ls "conditions" `shouldBe` ["include-copyright"]
+
+  describe "Lib" $ do
+    it "it finds some facts" $ do
+      fs <- readFacts "./data"
+      fs `shouldSatisfy` (\fs' -> (V.length fs') >= 2698)

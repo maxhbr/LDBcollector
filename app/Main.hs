@@ -39,53 +39,6 @@ initialLicenseMapping = M.fromList
   , ("MIT", ["MIT license (also X11)"])
   ]
 
-getLicensesFromFacts :: Vector LicenseName -> Int -> Map LicenseName [LicenseName] -> Facts -> Vector (LicenseName, License)
-getLicensesFromFacts ids 0 mapping facts = V.map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i mapping) facts)) ids
-getLicensesFromFacts ids i mapping facts = let
-    lics = getLicensesFromFacts ids 0 mapping facts
-    newMapping = M.fromList . V.toList $ V.map (\(name,License fs) -> (name, L.nub (concatMap getImpliedNames (V.toList fs)))) lics
-  in getLicensesFromFacts ids (i - 1) newMapping facts
-
-readFacts :: IO Facts
-readFacts = do
-  factsFromSPDX <- loadSPDXFacts "./data/spdx-license-list-data/"
-  factsFromBlueOak <- loadBlueOakFacts "./data/blue-oak-council-license-list.json"
-  factsFromOCPT <- loadOSPTFacts "./data/OpenChainPolicyTemplate/Table.csv"
-  factsFromScancode <- loadScancodeFacts "./data/nexB_scancode-toolkit_license_list/"
-  factsFromOsadl <- loadOsadlFacts "./data/OSADL/"
-  factsFromChooseALicense <- loadChooseALicenseFacts "./data/choosealicense.com/"
-  factsFromFedora <- loadFedoraFacts "./data/Fedora_Project_Wiki/"
-  factsFromOSI <- loadOSIFacts
-  factsFromOSLC <- loadOslcFacts "./data/OSLC-handbook"
-  factsFromWikipedia <- loadWikipediaFacts
-  let facts = V.concat [ factsFromSPDX
-                       , factsFromBlueOak
-                       , factsFromOCPT
-                       , factsFromScancode
-                       , factsFromOsadl
-                       , factsFromChooseALicense
-                       , factsFromFedora
-                       , factsFromOSI
-                       , factsFromWikipedia
-                       , factsFromOSLC
-                       ]
-  hPutStrLn stderr "... done with collecting data"
-  return facts
-
-calculateLicenses :: (LicenseFact -> Bool) -> Facts -> IO [(LicenseName, License)]
-calculateLicenses filterForIds facts = do
-
-  let factsToTakeIDsFrom = V.filter filterForIds facts
-      ids = V.map head . V.filter (/= []) . V.map getImpliedNames $ factsToTakeIDsFrom
-
-  let licenses = getLicensesFromFacts ids 1 initialLicenseMapping facts
-  hPutStrLn stderr "... done with calculating licenses"
-
-  return $ V.toList licenses
-
-calculateSPDXLicenses :: Facts -> IO [(LicenseName, License)]
-calculateSPDXLicenses = calculateLicenses (\f -> getLicenseFactClassifier f == (LFC ["SPDX", "SPDXEntry"]))
-
 cleanupAndMakeOutputFolder :: IO FilePath
 cleanupAndMakeOutputFolder = do
   let outputFolder = "_generated/"
@@ -115,8 +68,8 @@ writeReports outputFolder licenses = do
 
 main :: IO ()
 main = do
-  facts <- readFacts
-  licenses <- calculateSPDXLicenses facts
+  facts <- readFacts "./data"
+  licenses <- calculateSPDXLicenses initialLicenseMapping facts
 
   outputFolder <- cleanupAndMakeOutputFolder
 
