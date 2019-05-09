@@ -200,7 +200,7 @@ cannotBeUsedLicenses = let
     ]
     -- “Non-Commercial” licenses not allowed
     -- Everything that Google undertakes, including research, is considered a commercial endeavor, so no code released under a license that restricts it to non-commercial uses may be used at Google. For example, works under any Creative Commons licenses containing NC (CC BY-NC, CC BY-NC-SA, CC BY-NC-ND) may not be used at Google.
-    ++ (map (\id -> (id, "Everything that Google undertakes, including research, is considered a commercial endeavor, so no code released under a license that restricts it to non-commercial uses may be used at Google. For example, works under any Creative Commons licenses containing NC (CC BY-NC, CC BY-NC-SA, CC BY-NC-ND) may not be used at Google."))
+    ++ (map (\spdxId -> (spdxId, "Everything that Google undertakes, including research, is considered a commercial endeavor, so no code released under a license that restricts it to non-commercial uses may be used at Google. For example, works under any Creative Commons licenses containing NC (CC BY-NC, CC BY-NC-SA, CC BY-NC-ND) may not be used at Google."))
             [ "CC-BY-NC-1.0", "CC-BY-NC-2.0", "CC-BY-NC-2.5", "CC-BY-NC-3.0", "CC-BY-NC-4.0"
             , "CC-BY-NC-ND-1.0", "CC-BY-NC-ND-2.0", "CC-BY-NC-ND-2.5", "CC-BY-NC-ND-3.0", "CC-BY-NC-ND-4.0"
             , "CC-BY-NC-SA-1.0", "CC-BY-NC-SA-2.0", "CC-BY-NC-SA-2.5", "CC-BY-NC-SA-3.0", "CC-BY-NC-SA-4.0" ])

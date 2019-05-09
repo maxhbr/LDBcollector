@@ -24,6 +24,7 @@ import           Collectors.OSI as X
 import           Collectors.Wikipedia as X
 import           Collectors.OSLC as X
 import           Collectors.Google as X
+import           Collectors.OKFN as X
 
 readFacts :: FilePath -> IO Facts
 readFacts dataDir = let
@@ -40,6 +41,7 @@ readFacts dataDir = let
     factsFromOSLC <- loadOslcFacts $ prependDataDir "./OSLC-handbook"
     factsFromWikipedia <- loadWikipediaFacts
     factsFromGoogle <- loadGoogleFacts
+    factsFromOkfn <- loadOkfnFacts "data/blue-oak-council-license-list.json"
     let facts = V.concat [ factsFromSPDX
                          , factsFromBlueOak
                          , factsFromOCPT
@@ -51,6 +53,7 @@ readFacts dataDir = let
                          , factsFromWikipedia
                          , factsFromOSLC
                          , factsFromGoogle
+                         , factsFromOkfn
                          ]
     hPutStrLn stderr "... done with collecting data"
     return facts

@@ -37,6 +37,7 @@ initialLicenseMapping = M.fromList
   , ("BSD-2-Clause", ["BSD (2 clause)"])
   , ("BSD-3-Clause", ["BSD (3 clause)"])
   , ("MIT", ["MIT license (also X11)"])
+  , ("Sleepycat", ["Berkeley Database License", "Sleepycat Software Product License"])
   ]
 
 cleanupAndMakeOutputFolder :: IO FilePath

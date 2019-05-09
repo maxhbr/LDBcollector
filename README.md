@@ -50,20 +50,31 @@ The fixed data can be found at https://github.com/maxhbr/OSLC-handbook/
 
 **Licensed unnder:** CC-BY-SA-4.0
 
+### google:
+https://opensource.google.com/docs/thirdparty/licenses/
+
+they classify licenses into: 
+- restricted licenses
+- restricted_if_statically_linked license
+- reciprocal licenses
+- notice licenses
+- permissive licenses
+- by_exception_only licenses
+
+**licensed under:** CC-BY-4.0
+
+### Open Knowledge International
+https://github.com/okfn/licenses/blob/master/licenses.csv
+
+The corresponding raw data is placed under `./data/okfn-licenses.csv`
+
+**licensed under:** MIT
+
 ## Other possible Sources for license Metadata
   - FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
   - ORT License highlighting
   - https://github.com/okfn/licenses
   - debian: https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
-  - google: https://opensource.google.com/docs/thirdparty/licenses/
-
-    they classify licenses into: 
-    - restricted licenses
-    - restricted_if_statically_linked license
-    - reciprocal licenses
-    - notice licenses
-    - permissive licenses
-    - by_exception_only licenses
   - ...
   - FOSSology
     data-license: GPL-2.0-only
