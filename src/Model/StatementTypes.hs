@@ -30,3 +30,24 @@ data HasShortname
 instance FSRaw HasShortname where
   getStatementLabel _                   = "hasShortname"
   getStatementContent (HasShortname sn) = String sn
+
+data ObligationStatement
+  = ImpliesRight String
+  | ImpliesCondition String
+  | ImpliesLimitation String
+instance FSRaw ObligationStatement where
+  getStatementLabel (ImpliesRight _) = "impliesRight"
+  getStatementLabel (ImpliesCondition _) = "impliesCondition"
+  getStatementLabel (ImpliesLimitation _) = "impliesLimitation"
+  getStatementContent (ImpliesRight c) = toJSON c
+  getStatementContent (ImpliesCondition c) = toJSON c
+  getStatementContent (ImpliesLimitation c) = toJSON c
+
+data LicenseRating
+  = PossitiveLicenseRating Text
+  | NegativeLicenseRating Text
+instance FSRaw LicenseRating where
+  getStatementContent (PossitiveLicenseRating _) = "possitiveRating"
+  getStatementContent (NegativeLicenseRating _) = "negativeRating"
+  getStatementContent (PossitiveLicenseRating desc) = toJSON desc
+  getStatementContent (NegativeLicenseRating desc) = toJSON desc

@@ -14,6 +14,7 @@ import Text.RawString.QQ
 
 import           Debug.Trace (trace)
 
+import           Data.Either
 import           Data.Text (Text)
 import qualified Data.Vector as V
 import           Data.Vector (Vector)
@@ -1179,6 +1180,74 @@ limitations:
   - warranty
 |]
 
+gnuEmptyDocument = [r|<dl class="green">
+</dl> <!-- end class="green" -->
+|]
+
+gnuSingleDocument = [r|<dl class="green">
+
+<dt><a id="GNUGPL"></a>  <!-- both generic and version-specific anchors -->
+    <a id="GNUGPLv3" href="/licenses/gpl.html">
+    GNU General Public License (GPL) version 3</a>
+    <span class="anchor-reference-id">
+      (<a href="#GNUGPL">#GNUGPL</a>)
+      (<a href="#GNUGPLv3">#GNUGPLv3</a>)
+    </span></dt>
+<dd>
+<p>This is the latest version of the GNU GPL: a free software license, and
+a copyleft license.  We recommend it for most software packages.</p>
+
+<p>Please note that GPLv3 is not compatible with GPLv2 by itself.
+However, most software released under GPLv2 allows you to use the
+terms of later versions of the GPL as well.  When this is the case,
+you can use the code under GPLv3 to make the desired combination.  To
+learn more about compatibility between GNU licenses,
+please <a href="/licenses/gpl-faq.html#AllCompatibility">see our
+FAQ</a>.</p></dd>
+
+</dl> <!-- end class="green" -->
+|]
+
+gnuDoubleDocument = [r|<dl class="green">
+
+<dt><a id="GNUGPL"></a>  <!-- both generic and version-specific anchors -->
+    <a id="GNUGPLv3" href="/licenses/gpl.html">
+    GNU General Public License (GPL) version 3</a>
+    <span class="anchor-reference-id">
+      (<a href="#GNUGPL">#GNUGPL</a>)
+      (<a href="#GNUGPLv3">#GNUGPLv3</a>)
+    </span></dt>
+<dd>
+<p>This is the latest version of the GNU GPL: a free software license, and
+a copyleft license.  We recommend it for most software packages.</p>
+
+<p>Please note that GPLv3 is not compatible with GPLv2 by itself.
+However, most software released under GPLv2 allows you to use the
+terms of later versions of the GPL as well.  When this is the case,
+you can use the code under GPLv3 to make the desired combination.  To
+learn more about compatibility between GNU licenses,
+please <a href="/licenses/gpl-faq.html#AllCompatibility">see our
+FAQ</a>.</p></dd>
+
+<dt><a id="GPLv2" href="/licenses/old-licenses/gpl-2.0.html">
+    GNU General Public License (GPL) version 2</a>
+    <span class="anchor-reference-id">(<a href="#GPLv2">#GPLv2</a>)</span></dt>
+<dd>
+<p>This is the previous version of the GNU GPL: a free software license, and
+a copyleft license.  We recommend <a href="#GNUGPL">the latest version</a>
+for most software.</p>
+
+<p>Please note that GPLv2 is, by itself, not compatible with GPLv3.
+However, most software released under GPLv2 allows you to use the
+terms of later versions of the GPL as well.  When this is the case,
+you can use the code under GPLv3 to make the desired combination.  To
+learn more about compatibility between GNU licenses,
+please <a href="/licenses/gpl-faq.html#AllCompatibility">see our
+FAQ</a>.</p></dd>
+
+</dl> <!-- end class="green" -->
+|]
+
 main :: IO ()
 main = hspec $ do
   describe "Model.License" $ let
@@ -1256,6 +1325,24 @@ main = hspec $ do
     in do
       it "it finds the condition" $ do
         extractListFromText ls "conditions" `shouldBe` ["include-copyright"]
+
+  describe "Collectors.Gnu" $ let
+      parsedEmpty = loadGnuFactsFromByteString gnuEmptyDocument
+      parsedSingle = loadGnuFactsFromByteString gnuSingleDocument
+      parsedDouble = loadGnuFactsFromByteString gnuDoubleDocument
+      factsFromEmpty = fromRight undefined parsedEmpty
+      factsFromSingle = fromRight undefined parsedSingle
+      factsFromDouble = fromRight undefined parsedDouble
+    in do
+      it "can parse empty" $ do
+        parsedEmpty `shouldSatisfy` isRight
+        V.length factsFromEmpty `shouldBe` 0
+      it "can parse single" $ do
+        parsedSingle `shouldSatisfy` isRight
+        V.length factsFromSingle `shouldBe` 1
+      it "can parse double" $ do
+        parsedDouble `shouldSatisfy` isRight
+        V.length factsFromDouble `shouldBe` 2
 
   describe "Lib" $ do
     it "it finds some facts" $ do

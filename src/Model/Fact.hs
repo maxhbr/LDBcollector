@@ -19,9 +19,6 @@ import           MyPrelude
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as B
-
-
 
 type LicenseStatementType
   = String

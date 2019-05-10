@@ -110,6 +110,10 @@ instance LFRaw FedoraProjectWikiFact where
   getImpliedNames (FedoraProjectWikiFact _ (Left (Left full)))   = [getFullNameFromCore full]
   getImpliedNames (FedoraProjectWikiFact _ (Left (Right short))) = [getFullNameFromCore short]
   getImpliedNames (FedoraProjectWikiFact _ (Right bad))          = [getFullNameFromCore bad]
+  getImpliedStatements (FedoraProjectWikiFact _ (Right _))       = V.singleton $ FactStatement
+    (NegativeLicenseRating "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated.") Nothing
+  getImpliedStatements _                                         = V.singleton $ FactStatement
+    (PossitiveLicenseRating "This software Licenses is OK for Fedora") Nothing
 
 toFPWF_Full :: String -> FedoraProjectWikiFact_Full -> FedoraProjectWikiFact
 toFPWF_Full t full = FedoraProjectWikiFact t (Left (Left full))

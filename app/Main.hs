@@ -5,7 +5,7 @@ import qualified Prelude as P
 import           MyPrelude
 
 import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as B
+import qualified Data.ByteString.Lazy as BL
 import           Control.Monad
 import qualified Data.Map as M
 import qualified Data.List as L
@@ -50,22 +50,12 @@ cleanupAndMakeOutputFolder = do
 
   return outputFolder
 
-writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
-writeLicenseJSONs outputFolder licenses = do
-  jsons <- mapM (\(i,l) -> let
-                    outputFile = i ++ ".json"
-                in do
-                   B.writeFile (outputFolder </> outputFile) (encode l)
-                   return outputFile) licenses
-  B.writeFile (outputFolder </> "_all.json") (encode licenses)
-  B.writeFile (outputFolder </> "_index.json") (encode jsons)
-
 writeReports :: FilePath -> [(LicenseName, License)] -> IO ()
 writeReports outputFolder licenses = do
   let reportDirectory = outputFolder </> "reports"
   createDirectory reportDirectory
-  B.writeFile (reportDirectory </> "PermissiveReport.csv") (mkPermissiveReport licenses)
-  B.writeFile (reportDirectory </> "AlternativeNameReport.csv") (mkAlternativeNameReport licenses)
+  BL.writeFile (reportDirectory </> "PermissiveReport.csv") (mkPermissiveReport licenses)
+  BL.writeFile (reportDirectory </> "AlternativeNameReport.csv") (mkAlternativeNameReport licenses)
 
 main :: IO ()
 main = do

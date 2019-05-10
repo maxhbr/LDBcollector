@@ -3,13 +3,16 @@ module Lib
   ( module X
   , readFacts
   , calculateLicenses, calculateSPDXLicenses
+  , writeLicenseJSONs
   ) where
 
 import qualified Prelude as P
 import           MyPrelude
+
 import qualified Data.Vector as V
 import qualified Data.Map as M
 import qualified Data.List as L
+import qualified Data.ByteString.Lazy as BL
 
 import           Model.License as X
 import           Model.Query as X
@@ -25,6 +28,7 @@ import           Collectors.Wikipedia as X
 import           Collectors.OSLC as X
 import           Collectors.Google as X
 import           Collectors.OKFN as X
+import           Collectors.Gnu as X
 
 readFacts :: FilePath -> IO Facts
 readFacts dataDir = let
@@ -41,7 +45,8 @@ readFacts dataDir = let
     factsFromOSLC <- loadOslcFacts $ prependDataDir "./OSLC-handbook"
     factsFromWikipedia <- loadWikipediaFacts
     factsFromGoogle <- loadGoogleFacts
-    factsFromOkfn <- loadOkfnFacts "data/blue-oak-council-license-list.json"
+    factsFromOkfn <- loadOkfnFacts $ prependDataDir "./okfn-licenses.csv"
+    factsFromGnu <- loadGnuFacts $ prependDataDir "./gnu.org"
     let facts = V.concat [ factsFromSPDX
                          , factsFromBlueOak
                          , factsFromOCPT
@@ -50,10 +55,11 @@ readFacts dataDir = let
                          , factsFromChooseALicense
                          , factsFromFedora
                          , factsFromOSI
-                         , factsFromWikipedia
                          , factsFromOSLC
+                         , factsFromWikipedia
                          , factsFromGoogle
                          , factsFromOkfn
+                         , factsFromGnu
                          ]
     hPutStrLn stderr "... done with collecting data"
     return facts
@@ -78,3 +84,14 @@ calculateLicenses initialLicenseMapping filterForIds facts = do
 
 calculateSPDXLicenses :: Map LicenseName [LicenseName] -> Facts -> IO [(LicenseName, License)]
 calculateSPDXLicenses initialLicenseMapping = calculateLicenses initialLicenseMapping (\f -> getLicenseFactClassifier f == LFC ["SPDX", "SPDXEntry"])
+
+writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
+writeLicenseJSONs outputFolder licenses = do
+  jsons <- mapM (\(i,l) -> let
+                    outputFile = i ++ ".json"
+                in do
+                   BL.writeFile (outputFolder </> outputFile) (encode l)
+                   return outputFile) licenses
+  BL.writeFile (outputFolder </> "_all.json") (encode licenses)
+  BL.writeFile (outputFolder </> "_index.json") (encode jsons)
+

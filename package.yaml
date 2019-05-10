@@ -28,17 +28,15 @@ dependencies:
 - text
 - vector
 - filepath
-# - strict
 - bytestring
 - unordered-containers
 - cassava
 - directory
-# - hjson
-# - hjpath
 - opensource
 - transformers
 - containers
 - raw-strings-qq
+- hexml
 
 library:
   source-dirs: src

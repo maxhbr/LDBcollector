@@ -71,6 +71,7 @@ instance FromNamedRecord OkfnFact where
 
 loadOkfnFacts :: FilePath -> IO Facts
 loadOkfnFacts csvFile = do
+  logThatFactsAreLoadedFrom "Open Knowledge International"
   csvData <- BL.readFile csvFile
   case (C.decodeByName csvData :: Either String (Header, V.Vector OkfnFact)) of
         Left err -> do
