@@ -4,13 +4,15 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE DeriveGeneric #-}
 module Model.Fact
-  ( LicenseName
+  ( LicenseStatementType
+  , FSRaw (..)
+  , FactStatement (..), extractLicenseStatementLabel
+  , Statements
+  , LicenseName
   , LicenseFactClassifier (..)
   , LFRaw (..)
-  , LicenseFact (..)
+  , LicenseFact (..), extractLicenseFactClassifier
   , LicenseStatementType
-  , FSRaw (..)
-  , FactStatement (..)
   , Facts
   ) where
 
@@ -50,6 +52,11 @@ instance ToJSON FactStatement where
     in object [ lbl .= (case desc of
                            Just d ->  object [ "value" .= val, "source" .= tShow lfc, "description" .= d ]
                            Nothing -> object [ "value" .= val, "source" .= tShow lfc ])]
+extractLicenseStatementLabel :: FactStatement -> Text
+extractLicenseStatementLabel (FactStatement a _ _) = getStatementLabel a
+
+type Statements
+  = Vector FactStatement
 
 type LicenseName
   = String
@@ -74,6 +81,9 @@ instance ToJSON LicenseFactClassifier where
 data LicenseFact
   = forall a. (LFRaw a) => LicenseFact String a
   | forall a. (LFRaw a) => LicenseFactWithoutURL a
+extractLicenseFactClassifier :: LicenseFact -> LicenseFactClassifier
+extractLicenseFactClassifier (LicenseFact _ a)         = getLicenseFactClassifier a
+extractLicenseFactClassifier (LicenseFactWithoutURL a) = getLicenseFactClassifier a
 
 instance Show LicenseFact where
   show (LicenseFact _ a) = show a
@@ -81,7 +91,8 @@ instance Show LicenseFact where
 instance ToJSON LicenseFact where
   toJSON (LicenseFact url a) = let
       lfc = getLicenseFactClassifier a
-    in object [ tShow lfc .= (mergeAesonL [toJSON a, object [ "_sourceURL" .= (toJSON url) ]]) ]
+    in object [ tShow lfc .= (mergeAesonL [toJSON a
+                                          , object [ "_sourceURL" .= (toJSON url) ]]) ]
   toJSON (LicenseFactWithoutURL a) = let
       lfc = getLicenseFactClassifier a
     in object [ tShow lfc .= (toJSON a) ]

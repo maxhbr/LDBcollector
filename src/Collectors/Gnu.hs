@@ -19,36 +19,44 @@ import qualified Data.ByteString.Char8 as Char8
 import           Model.License
 
 data GnuFact
-  = GnuFact !ByteString !ByteString -- TODO: parse content and pack it into more useful data structures
-  deriving (Show, Generic)
+  = GnuFact
+  { isGnuFree :: Bool
+  , isGnuGplCompatible :: Bool
+  , gnuHeader :: !ByteString
+  , gnuBody :: !ByteString
+  } deriving (Show, Generic)
 instance ToJSON GnuFact where
-  toJSON (GnuFact a b) = object [ "header" .= (Char8.unpack a), "body" .= (Char8.unpack b) ]
+  toJSON (GnuFact isFree isGCompatible a b) = object [ "header" .= (Char8.unpack a)
+                                                     , "body" .= (Char8.unpack b)
+                                                     , "isFree" .= isFree
+                                                     , "isGPLComptible" .= isGCompatible
+                                                     ]
 instance LFRaw GnuFact where
   getLicenseFactClassifier _ = LFC ["gnu.org", "GnuFact"]
   getImpliedNames _          = [] -- TODO: extract names!
 
-reduceListOfChildren :: [Node]  -> Facts
-reduceListOfChildren (n1:(n2:ns)) = let
+reduceListOfChildren :: Bool -> Bool -> [Node]  -> Facts
+reduceListOfChildren isFree isGCompatible (n1:(n2:ns)) = let
     r1 = trace (show n1) $ render n1
     r2 = trace (show n2) $ render n2
-  in (LicenseFact "" (GnuFact r1 r2)) `V.cons` (reduceListOfChildren ns)
-reduceListOfChildren [n0]         = undefined
-reduceListOfChildren _            = V.empty
+  in (LicenseFact "" (GnuFact isFree isGCompatible r1 r2)) `V.cons` (reduceListOfChildren isFree isGCompatible ns)
+reduceListOfChildren _ _ [n0]                          = undefined
+reduceListOfChildren _ _ _                             = V.empty
 
-loadGnuFactsFromByteString :: ByteString -> Either ByteString Facts
-loadGnuFactsFromByteString content = let
+loadGnuFactsFromByteString :: Bool -> Bool -> ByteString -> Either ByteString Facts
+loadGnuFactsFromByteString isFree isGCompatible content = let
     splitNodes :: Node -> [Node]
     splitNodes dl = children $ children dl !! 0
     nodeToFacts :: Node -> Facts
-    nodeToFacts = reduceListOfChildren . splitNodes
+    nodeToFacts = (reduceListOfChildren isFree isGCompatible) . splitNodes
   in case (parse content :: Either ByteString Node) of
     Left err -> Left err
     Right n  -> Right (nodeToFacts n)
 
-loadGnuFactsFromFile :: FilePath -> IO Facts
-loadGnuFactsFromFile htmlFile = do
+loadGnuFactsFromFile :: Bool -> Bool -> FilePath -> IO Facts
+loadGnuFactsFromFile isFree isGCompatible htmlFile = do
   content <- B.readFile htmlFile
-  case (loadGnuFactsFromByteString content) of
+  case (loadGnuFactsFromByteString isFree isGCompatible content) of
     Left err -> do
           Char8.putStrLn err
           return V.empty
@@ -56,7 +64,7 @@ loadGnuFactsFromFile htmlFile = do
 
 loadGnuFacts :: FilePath -> IO Facts
 loadGnuFacts gnuDir = do
-  fs1 <- loadGnuFactsFromFile (gnuDir </> "GPL-Compatible_Free_Software_Licenses.html")
-  fs2 <- loadGnuFactsFromFile (gnuDir </> "GPL-Incompatible_Free_Software_Licenses.html")
-  fs3 <- loadGnuFactsFromFile (gnuDir </> "Nonfree_Software_Licenses.html")
+  fs1 <- loadGnuFactsFromFile True True (gnuDir </> "GPL-Compatible_Free_Software_Licenses.html")
+  fs2 <- loadGnuFactsFromFile True False (gnuDir </> "GPL-Incompatible_Free_Software_Licenses.html")
+  fs3 <- loadGnuFactsFromFile False False (gnuDir </> "Nonfree_Software_Licenses.html")
   return $ V.concat [fs1, fs2, fs3]

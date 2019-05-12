@@ -11,7 +11,7 @@ module Model.License
   , getLicenseFromFacts
   , containsFactOfClass, containsFactOfType
   , getFactJSON, getFactData
-  , License (..)
+  , License (..), getStatementsFromLicense
   , Licenses
   ) where
 

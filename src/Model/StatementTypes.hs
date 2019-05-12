@@ -47,7 +47,7 @@ data LicenseRating
   = PossitiveLicenseRating Text
   | NegativeLicenseRating Text
 instance FSRaw LicenseRating where
-  getStatementContent (PossitiveLicenseRating _) = "possitiveRating"
-  getStatementContent (NegativeLicenseRating _) = "negativeRating"
+  getStatementLabel (PossitiveLicenseRating _) = "possitiveRating"
+  getStatementLabel (NegativeLicenseRating _) = "negativeRating"
   getStatementContent (PossitiveLicenseRating desc) = toJSON desc
   getStatementContent (NegativeLicenseRating desc) = toJSON desc

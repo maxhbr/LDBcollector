@@ -1327,9 +1327,9 @@ main = hspec $ do
         extractListFromText ls "conditions" `shouldBe` ["include-copyright"]
 
   describe "Collectors.Gnu" $ let
-      parsedEmpty = loadGnuFactsFromByteString gnuEmptyDocument
-      parsedSingle = loadGnuFactsFromByteString gnuSingleDocument
-      parsedDouble = loadGnuFactsFromByteString gnuDoubleDocument
+      parsedEmpty = loadGnuFactsFromByteString True False gnuEmptyDocument
+      parsedSingle = loadGnuFactsFromByteString True False gnuSingleDocument
+      parsedDouble = loadGnuFactsFromByteString True False gnuDoubleDocument
       factsFromEmpty = fromRight undefined parsedEmpty
       factsFromSingle = fromRight undefined parsedSingle
       factsFromDouble = fromRight undefined parsedDouble

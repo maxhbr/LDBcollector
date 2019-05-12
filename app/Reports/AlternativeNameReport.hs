@@ -4,13 +4,13 @@ module Reports.AlternativeNameReport
   ( mkAlternativeNameReport
   ) where
 
-import           GHC.Generics
+import qualified Prelude as P
+import           MyPrelude
+
 import           Data.Csv as C
 import           Data.List (intercalate,nub)
 import qualified Data.Vector as V
-import           Data.Vector (Vector)
 import qualified Data.ByteString.Lazy as B
-import           Data.ByteString.Lazy (ByteString)
 import qualified Data.ByteString.Lazy.Char8 as Char8
 
 import Lib
