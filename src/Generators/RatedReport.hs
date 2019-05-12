@@ -19,36 +19,28 @@ import           Generators.Rating
 
 ratingRules :: [RatingRule]
 ratingRules = let
-    telli = tell . (:[])
+    telli desc fun = tell . (:[]) $ RatingRule desc fun
     countNumberOfStatementsWithLabel label stmts = V.length (V.filter (\stmt -> extractLicenseStatementLabel stmt == label) stmts)
     countNumberOfStatementsWithLabelFromSource label source stmts = V.length (V.filter (\stmt -> (extractLicenseStatementLabel stmt == label)
                                                                                               && (_factSourceClassifier stmt == source)) stmts)
   in execWriter $ do
-    telli $ let
-        fn = countNumberOfStatementsWithLabel "possitiveRating"
-      in RatingRule "should have at least one positive rating to be Go"
-                    (ruleFunctionFromCondition (\stmts -> fn stmts == 0)
-                                               (removeRatingFromState RGo))
-    telli $ let
-        fn = countNumberOfStatementsWithLabel "negativeRating"
-      in RatingRule "should have no negative ratings to be Go"
-                    (ruleFunctionFromCondition (\stmts -> fn stmts > 0)
-                                               (removeRatingFromState RGo))
-    telli $ let
-        fn = countNumberOfStatementsWithLabelFromSource "negativeFedoraRating" (LFC ["FedoraProjectWiki", "FPWFact"])
-      in RatingRule "Fedora bad Rating implies at least Stop"
-                    (ruleFunctionFromCondition (\stmts -> fn stmts > 0)
-                                               (removeRatingFromState RGo . removeRatingFromState RAtention))
-    telli $ let
-        fn = countNumberOfStatementsWithLabelFromSource "negativeFedoraRating" (LFC ["BlueOak", "BOEntry"])
-      in RatingRule "Fedora bad Rating implies at least Stop"
-                    (ruleFunctionFromCondition (\stmts -> fn stmts > 0)
-                                               (removeRatingFromState RGo . removeRatingFromState RAtention))
+    telli "should have at least one positive rating to be Go" $ let
+        fn = (== 0) . countNumberOfStatementsWithLabel "possitiveRating"
+      in ruleFunctionFromCondition fn (removeRatingFromState RGo)
+    telli "should have no negative ratings to be Go" $ let
+        fn = (> 0) . countNumberOfStatementsWithLabel "negativeRating"
+      in ruleFunctionFromCondition fn (removeRatingFromState RGo)
+    telli "Fedora bad Rating implies at least Stop" $ let
+        fn = (> 0) . countNumberOfStatementsWithLabelFromSource "negativeFedoraRating" (LFC ["FedoraProjectWiki", "FPWFact"])
+      in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
+    telli "Blue Oak Lead Rating implies at least Stop" $ let
+        fn = (> 0) . countNumberOfStatementsWithLabelFromSource "negativeFedoraRating" (LFC ["BlueOak", "BOEntry"])
+      in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
 
 data RatedReportEntry
   = RatedReportEntry
   { rrRating :: Rating
-  , rrSpdxId
+  , rrSpdxId :: Maybe LicenseName
   , rrLicenseName :: LicenseName
   , rrOtherLicenseNames :: [LicenseName]
   , rrLicenseText :: Maybe Text
@@ -61,7 +53,7 @@ mkRatedReportEntry (ln,l) = let
     spdxId = ln
     otherLicenseNames = []
     licenseText = Nothing
-  in (ln, RatedReportEntry r spdxId ln otherLicenseNames licenseText)
+  in (ln, RatedReportEntry r (Just spdxId) ln otherLicenseNames licenseText)
 
 mkRatedReport :: [(LicenseName, License)] -> [(LicenseName, RatedReportEntry)]
 mkRatedReport = map mkRatedReportEntry
