@@ -16,6 +16,7 @@ import qualified Data.ByteString.Lazy as BL
 
 import           Model.License as X
 import           Model.Query as X
+
 import           Collectors.SPDX as X
 import           Collectors.BlueOak as X
 import           Collectors.OpenChainPolicyTemplate as X
@@ -29,6 +30,8 @@ import           Collectors.OSLC as X
 import           Collectors.Google as X
 import           Collectors.OKFN as X
 import           Collectors.Gnu as X
+
+import           Generators.RatedReport as X
 
 readFacts :: FilePath -> IO Facts
 readFacts dataDir = let
