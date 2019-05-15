@@ -43,11 +43,19 @@ instance FSRaw ObligationStatement where
   getStatementContent (ImpliesCondition c) = toJSON c
   getStatementContent (ImpliesLimitation c) = toJSON c
 
+
+possitiveRatingLabel, neutracRatingLabel, negativeRatingLabel :: Text
+possitiveRatingLabel = "possitiveRating"
+neutracRatingLabel = "neutralRating"
+negativeRatingLabel = "negativeRating"
 data LicenseRating
   = PossitiveLicenseRating Text
+  | NeutralLicenseRating Text
   | NegativeLicenseRating Text
 instance FSRaw LicenseRating where
-  getStatementLabel (PossitiveLicenseRating _) = "possitiveRating"
-  getStatementLabel (NegativeLicenseRating _) = "negativeRating"
+  getStatementLabel (PossitiveLicenseRating _) = possitiveRatingLabel
+  getStatementLabel (NeutralLicenseRating _) = neutracRatingLabel
+  getStatementLabel (NegativeLicenseRating _) = negativeRatingLabel
   getStatementContent (PossitiveLicenseRating desc) = toJSON desc
+  getStatementContent (NeutralLicenseRating desc) = toJSON desc
   getStatementContent (NegativeLicenseRating desc) = toJSON desc

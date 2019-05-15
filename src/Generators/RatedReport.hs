@@ -19,22 +19,22 @@ import           Generators.Rating
 
 ratingRules :: [RatingRule]
 ratingRules = let
-    telli desc fun = tell . (:[]) $ RatingRule desc fun
-    countNumberOfStatementsWithLabel label stmts = V.length (V.filter (\stmt -> extractLicenseStatementLabel stmt == label) stmts)
-    countNumberOfStatementsWithLabelFromSource label source stmts = V.length (V.filter (\stmt -> (extractLicenseStatementLabel stmt == label)
-                                                                                              && (_factSourceClassifier stmt == source)) stmts)
+    addRule desc fun = tell . (:[]) $ RatingRule desc fun
+    getStatementsWithLabel label = V.filter (\stmt -> extractLicenseStatementLabel stmt == label)
+    getStatementsWithLabelFromSource label source = V.filter (\stmt -> (extractLicenseStatementLabel stmt == label)
+                                                                        && (_factSourceClassifier stmt == source))
   in execWriter $ do
-    telli "should have at least one positive rating to be Go" $ let
-        fn = (== 0) . countNumberOfStatementsWithLabel "possitiveRating"
+    addRule "should have at least one positive rating to be Go" $ let
+        fn = (== 0) . V.length . getStatementsWithLabel possitiveRatingLabel
       in ruleFunctionFromCondition fn (removeRatingFromState RGo)
-    telli "should have no negative ratings to be Go" $ let
-        fn = (> 0) . countNumberOfStatementsWithLabel "negativeRating"
+    addRule "should have no negative ratings to be Go" $ let
+        fn = (> 0) . V.length . getStatementsWithLabel negativeRatingLabel
       in ruleFunctionFromCondition fn (removeRatingFromState RGo)
-    telli "Fedora bad Rating implies at least Stop" $ let
-        fn = (> 0) . countNumberOfStatementsWithLabelFromSource "negativeFedoraRating" (LFC ["FedoraProjectWiki", "FPWFact"])
+    addRule "Fedora bad Rating implies at least Stop" $ let
+        fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["FedoraProjectWiki", "FPWFact"])
       in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
-    telli "Blue Oak Lead Rating implies at least Stop" $ let
-        fn = (> 0) . countNumberOfStatementsWithLabelFromSource "negativeFedoraRating" (LFC ["BlueOak", "BOEntry"])
+    addRule "Blue Oak Lead Rating implies at least Stop" $ let
+        fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["BlueOak", "BOEntry"])
       in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
 
 data RatedReportEntry
@@ -44,6 +44,8 @@ data RatedReportEntry
   , rrLicenseName :: LicenseName
   , rrOtherLicenseNames :: [LicenseName]
   , rrLicenseText :: Maybe Text
+  , rrLinks :: [(Text, Text)]
+  , rrOtherLinks :: [Text]
   } deriving (Show, Generic)
 instance ToJSON RatedReportEntry
 
@@ -53,7 +55,7 @@ mkRatedReportEntry (ln,l) = let
     spdxId = ln
     otherLicenseNames = []
     licenseText = Nothing
-  in (ln, RatedReportEntry r (Just spdxId) ln otherLicenseNames licenseText)
+  in (ln, RatedReportEntry r (Just spdxId) ln otherLicenseNames licenseText [] [])
 
 mkRatedReport :: [(LicenseName, License)] -> [(LicenseName, RatedReportEntry)]
 mkRatedReport = map mkRatedReportEntry

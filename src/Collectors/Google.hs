@@ -46,6 +46,17 @@ instance ToJSON GooglePolicyFact where
 instance LFRaw GooglePolicyFact where
   getLicenseFactClassifier _                  = LFC ["Google", "GoogleOSSPolicy"]
   getImpliedNames (GooglePolicyFact spdxId _) = [spdxId]
+  getImpliedStatements (GooglePolicyFact _ clss) = let
+      ratingFromClassification = case clss of
+        RESTRICTED -> NegativeLicenseRating (tShow clss)
+        RESTRICTED_IF_STATICALLY_LINKED -> NegativeLicenseRating (tShow clss)
+        (CANNOT_BE_USED _) -> NegativeLicenseRating (tShow clss)
+        BY_EXCEPTION_ONLY -> NegativeLicenseRating (tShow clss)
+        NOTICE -> PossitiveLicenseRating (tShow clss)
+        UNENCUMBERED -> PossitiveLicenseRating (tShow clss)
+        PERMISSIVE -> PossitiveLicenseRating (tShow clss)
+        _ -> NeutralLicenseRating (tShow clss)
+    in V.fromList [FactStatement ratingFromClassification Nothing]
 
 restrictedLicenses :: Vector GooglePolicyFact
 restrictedLicenses = let
