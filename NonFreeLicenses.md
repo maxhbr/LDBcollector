@@ -11,6 +11,7 @@ kommerzielle Weiterverbreitung verbieten.
 1. Aladdin Free Public License (v. 9.0): https://web.archive.org/web/20121218095513/http://www.artifex.com:80/downloads/doc/Public.htm
 1. "Anti 996" License (v. 1.0): https://github.com/996icu/996.ICU/blob/master/LICENSE
 1. AT&T Source Code Agreement (v. 1.2D): http://web.archive.org/web/20050424024245/http://www.research.att.com/sw/license/ast-open.html
+1. Business Source License 1.1: https://mariadb.com/bsl11/
 1. CrossPoint Quelltext Lizenz (alt): http://www.crosspoint.de/oldlicense.html
 1. Enhydra Public License (v. 1.1): http://ksoap.objectweb.org/software/license/index.html (Einordnung umstritten)
 1. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
