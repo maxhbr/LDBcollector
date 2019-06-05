@@ -23,6 +23,7 @@ kommerzielle Weiterverbreitung verbieten.
 1. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx
 1. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
 1. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
+1. Personal Public License (v. 3a): https://github.com/uboslinux/ubos-admin/blob/master/LICENSE
 1. PLS Free Software License Agreement (v. 1.0): http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm
 1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html (Einordnung umstritten)
 1. Scilab license: http://www.worldlii.org/int/other/PubRL/2009/51.html
