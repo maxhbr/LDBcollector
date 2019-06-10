@@ -6,12 +6,20 @@ module Generators.Rating
     , ruleFunctionFromCondition, negativeRuleFunctionFromCondition
     , RatingRule (..), RatingRuleFun
     , applyRatingRules
+    -- Rating Configuration
+    , mkRatingConfiguration
+    , applyRatingConfiguration
     ) where
 
 import qualified Prelude as P
 import           MyPrelude
 
 import qualified Data.Text as T
+import qualified Data.Vector as V
+import qualified Data.ByteString.Lazy as BL
+import           Control.Monad
+import           Control.Monad.Trans.Writer.Strict (execWriter, tell)
+import qualified Data.Map as M
 
 import           Model.License
 
@@ -93,3 +101,42 @@ applyRatingRules rrs stmts = let
     applyRatingRules' = foldr (`rrFunction` stmts) initialReportRatingState
   in ratingFromRatingState (applyRatingRules' rrs)
 
+
+
+data RatingConfiguration
+  = RatingConfiguration
+  { selectedLicenses :: [LicenseName]
+  , ratingOverwrites :: Map LicenseName Rating
+  , ratingRules :: [RatingRule]
+  }
+
+mkRatingConfiguration :: [LicenseName] -> (Map LicenseName Rating) -> RatingConfiguration
+mkRatingConfiguration ls rOs = let
+    actualRatingRules :: [RatingRule]
+    actualRatingRules = let
+        addRule desc fun = tell . (:[]) $ RatingRule desc fun
+        getStatementsWithLabel label = V.filter (\stmt -> extractLicenseStatementLabel stmt == label)
+        getStatementsWithLabelFromSource label source = V.filter (\stmt -> (extractLicenseStatementLabel stmt == label)
+                                                                            && (_factSourceClassifier stmt == source))
+
+      in execWriter $ do
+        addRule "should have at least one positive rating to be Go" $ let
+            fn = (== 0) . V.length . getStatementsWithLabel possitiveRatingLabel
+          in ruleFunctionFromCondition fn (removeRatingFromState RGo)
+        addRule "should have no negative ratings to be Go" $ let
+            fn = (> 0) . V.length . getStatementsWithLabel negativeRatingLabel
+          in ruleFunctionFromCondition fn (removeRatingFromState RGo)
+        addRule "Fedora bad Rating implies at least Stop" $ let
+            fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["FedoraProjectWiki", "FPWFact"])
+          in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
+        addRule "Blue Oak Lead Rating implies at least Stop" $ let
+            fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["BlueOak", "BOEntry"])
+          in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
+
+  in RatingConfiguration ls rOs actualRatingRules
+
+
+applyRatingConfiguration :: RatingConfiguration -> (LicenseName, License) -> Rating
+applyRatingConfiguration (RatingConfiguration _ rOs rrs) (ln,l) = let
+    calculatedR = applyRatingRules rrs (getStatementsFromLicense l)
+  in M.findWithDefault calculatedR ln rOs
