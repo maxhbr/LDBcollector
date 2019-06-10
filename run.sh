@@ -13,7 +13,11 @@ if [[ -d "_generated" ]]; then
     git add .
     git commit -m "Commit generated output"
     mkdir -p formatted
-    find . -iname '*.json' -type f -print0 | while IFS= read -d '' -r file; do
+    find . \
+         -maxdepth 1 \
+         -iname '*.json' \
+         -type f \
+         -print0 | while IFS= read -d '' -r file; do
         echo "reformat $file"
         cat "$file" | jq > "formatted/$file"
     done

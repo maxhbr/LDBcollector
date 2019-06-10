@@ -13,9 +13,16 @@ import qualified Data.Vector as V
 import qualified Data.ByteString.Lazy as BL
 import           Control.Monad
 import           Control.Monad.Trans.Writer.Strict (execWriter, tell)
+import qualified Data.Map as M
 
 import           Model.License
 import           Generators.Rating
+
+data RatedReportConfiguration
+  = RatedReportConfiguration
+  { selectedLicenses :: [LicenseName]
+  , ratingOverwrites :: Map LicenseName Rating
+  }
 
 ratingRules :: [RatingRule]
 ratingRules = let
@@ -49,21 +56,25 @@ data RatedReportEntry
   } deriving (Show, Generic)
 instance ToJSON RatedReportEntry
 
-mkRatedReportEntry :: (LicenseName, License) -> (LicenseName, RatedReportEntry)
-mkRatedReportEntry (ln,l) = let
-    r = applyRatingRules ratingRules (getStatementsFromLicense l)
+mkRatedReportEntry :: RatedReportConfiguration -> (LicenseName, License) -> (LicenseName, RatedReportEntry)
+mkRatedReportEntry (RatedReportConfiguration _ rOs) (ln,l) = let
+    r = let
+        calculatedR = applyRatingRules ratingRules (getStatementsFromLicense l)
+      in M.findWithDefault calculatedR ln rOs
     spdxId = ln
     otherLicenseNames = []
     licenseText = Nothing
   in (ln, RatedReportEntry r (Just spdxId) ln otherLicenseNames licenseText [] [])
 
-mkRatedReport :: [(LicenseName, License)] -> [(LicenseName, RatedReportEntry)]
-mkRatedReport = map mkRatedReportEntry
+mkRatedReport ::  RatedReportConfiguration -> [(LicenseName, License)] -> [(LicenseName, RatedReportEntry)]
+mkRatedReport conf@(RatedReportConfiguration sLSNs _) lics = let
+    selectedLics = filter (\(sn, _) -> sn `elem` sLSNs) lics
+  in map (mkRatedReportEntry conf) selectedLics
 
-writeRatedReport :: FilePath -> [(LicenseName, License)] -> IO ()
-writeRatedReport targetDir lics = do
-  let outputFolder = (targetDir </> "ratedReport")
-      rr = mkRatedReport lics
+writeRatedReport :: RatedReportConfiguration -> FilePath -> [(LicenseName, License)] -> IO ()
+writeRatedReport conf targetDir lics = do
+  let outputFolder = targetDir </> "ratedReport"
+      rr = mkRatedReport conf lics
   createDirectory outputFolder
   jsons <- mapM (\(i,rre) -> let
                     outputFile = i ++ ".json"
