@@ -12,8 +12,6 @@ import qualified Prelude as P
 import           MyPrelude
 
 import qualified Data.Text as T
-import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as BL
 
 import           Model.License
 
@@ -25,6 +23,9 @@ data Rating
   | RUnknown [Rating]
   deriving (Show, Generic, Eq)
 instance ToJSON Rating
+instance FSRaw Rating where
+  getStatementLabel _ = "hasCalculatedRating"
+  getStatementContent = toJSON
 
 -- to keep track of current possibilities
 data RatingState

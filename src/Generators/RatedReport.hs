@@ -1,8 +1,8 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Generators.RatedReport
-    ( mkRatedReport
-    , writeRatedReport
+    ( mkRatedReportConfiguration
+    , applyRatingConfiguration
     ) where
 
 import qualified Prelude as P
@@ -22,27 +22,39 @@ data RatedReportConfiguration
   = RatedReportConfiguration
   { selectedLicenses :: [LicenseName]
   , ratingOverwrites :: Map LicenseName Rating
+  , ratingRules :: [RatingRule]
   }
 
-ratingRules :: [RatingRule]
-ratingRules = let
-    addRule desc fun = tell . (:[]) $ RatingRule desc fun
-    getStatementsWithLabel label = V.filter (\stmt -> extractLicenseStatementLabel stmt == label)
-    getStatementsWithLabelFromSource label source = V.filter (\stmt -> (extractLicenseStatementLabel stmt == label)
-                                                                        && (_factSourceClassifier stmt == source))
-  in execWriter $ do
-    addRule "should have at least one positive rating to be Go" $ let
-        fn = (== 0) . V.length . getStatementsWithLabel possitiveRatingLabel
-      in ruleFunctionFromCondition fn (removeRatingFromState RGo)
-    addRule "should have no negative ratings to be Go" $ let
-        fn = (> 0) . V.length . getStatementsWithLabel negativeRatingLabel
-      in ruleFunctionFromCondition fn (removeRatingFromState RGo)
-    addRule "Fedora bad Rating implies at least Stop" $ let
-        fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["FedoraProjectWiki", "FPWFact"])
-      in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
-    addRule "Blue Oak Lead Rating implies at least Stop" $ let
-        fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["BlueOak", "BOEntry"])
-      in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
+mkRatedReportConfiguration :: [LicenseName] -> (Map LicenseName Rating) -> RatedReportConfiguration
+mkRatedReportConfiguration ls rOs = let
+    actualRatingRules :: [RatingRule]
+    actualRatingRules = let
+        addRule desc fun = tell . (:[]) $ RatingRule desc fun
+        getStatementsWithLabel label = V.filter (\stmt -> extractLicenseStatementLabel stmt == label)
+        getStatementsWithLabelFromSource label source = V.filter (\stmt -> (extractLicenseStatementLabel stmt == label)
+                                                                            && (_factSourceClassifier stmt == source))
+
+      in execWriter $ do
+        addRule "should have at least one positive rating to be Go" $ let
+            fn = (== 0) . V.length . getStatementsWithLabel possitiveRatingLabel
+          in ruleFunctionFromCondition fn (removeRatingFromState RGo)
+        addRule "should have no negative ratings to be Go" $ let
+            fn = (> 0) . V.length . getStatementsWithLabel negativeRatingLabel
+          in ruleFunctionFromCondition fn (removeRatingFromState RGo)
+        addRule "Fedora bad Rating implies at least Stop" $ let
+            fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["FedoraProjectWiki", "FPWFact"])
+          in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
+        addRule "Blue Oak Lead Rating implies at least Stop" $ let
+            fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["BlueOak", "BOEntry"])
+          in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
+
+  in RatedReportConfiguration ls rOs actualRatingRules
+
+
+applyRatingConfiguration :: RatedReportConfiguration -> (LicenseName, License) -> Rating
+applyRatingConfiguration (RatedReportConfiguration _ rOs rrs) (ln,l) = let
+    calculatedR = applyRatingRules rrs (getStatementsFromLicense l)
+  in M.findWithDefault calculatedR ln rOs
 
 data RatedReportEntry
   = RatedReportEntry
@@ -56,31 +68,31 @@ data RatedReportEntry
   } deriving (Show, Generic)
 instance ToJSON RatedReportEntry
 
-mkRatedReportEntry :: RatedReportConfiguration -> (LicenseName, License) -> (LicenseName, RatedReportEntry)
-mkRatedReportEntry (RatedReportConfiguration _ rOs) (ln,l) = let
-    r = let
-        calculatedR = applyRatingRules ratingRules (getStatementsFromLicense l)
-      in M.findWithDefault calculatedR ln rOs
-    spdxId = ln
-    otherLicenseNames = []
-    licenseText = Nothing
-  in (ln, RatedReportEntry r (Just spdxId) ln otherLicenseNames licenseText [] [])
+-- mkRatedReportEntry :: RatedReportConfiguration -> (LicenseName, License) -> (LicenseName, RatedReportEntry)
+-- mkRatedReportEntry (RatedReportConfiguration _ rOs) (ln,l) = let
+--     r = let
+--         calculatedR = applyRatingRules ratingRules (getStatementsFromLicense l)
+--       in M.findWithDefault calculatedR ln rOs
+--     spdxId = ln
+--     otherLicenseNames = []
+--     licenseText = Nothing
+--   in (ln, RatedReportEntry r (Just spdxId) ln otherLicenseNames licenseText [] [])
 
-mkRatedReport ::  RatedReportConfiguration -> [(LicenseName, License)] -> [(LicenseName, RatedReportEntry)]
-mkRatedReport conf@(RatedReportConfiguration sLSNs _) lics = let
-    selectedLics = filter (\(sn, _) -> sn `elem` sLSNs) lics
-  in map (mkRatedReportEntry conf) selectedLics
+-- mkRatedReport ::  RatedReportConfiguration -> [(LicenseName, License)] -> [(LicenseName, RatedReportEntry)]
+-- mkRatedReport conf@(RatedReportConfiguration sLSNs _) lics = let
+--     selectedLics = filter (\(sn, _) -> sn `elem` sLSNs) lics
+--   in map (mkRatedReportEntry conf) selectedLics
 
-writeRatedReport :: RatedReportConfiguration -> FilePath -> [(LicenseName, License)] -> IO ()
-writeRatedReport conf targetDir lics = do
-  let outputFolder = targetDir </> "ratedReport"
-      rr = mkRatedReport conf lics
-  createDirectory outputFolder
-  jsons <- mapM (\(i,rre) -> let
-                    outputFile = i ++ ".json"
-                in do
-                   BL.writeFile (outputFolder </> outputFile) (encode rre)
-                   return outputFile) rr
-  BL.writeFile (outputFolder </> "_index.json") (encode jsons)
+-- writeRatedReport :: RatedReportConfiguration -> FilePath -> [(LicenseName, License)] -> IO ()
+-- writeRatedReport conf targetDir lics = do
+--   let outputFolder = targetDir </> "ratedReport"
+--       rr = mkRatedReport conf lics
+--   createDirectory outputFolder
+--   jsons <- mapM (\(i,rre) -> let
+--                     outputFile = i ++ ".json"
+--                 in do
+--                    BL.writeFile (outputFolder </> outputFile) (encode rre)
+--                    return outputFile) rr
+--   BL.writeFile (outputFolder </> "_index.json") (encode jsons)
 
 
