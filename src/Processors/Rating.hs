@@ -1,6 +1,6 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
-module Generators.Rating
+module Processors.Rating
     ( Rating (..)
     , removeRatingFromState, setRatingOfState
     , ruleFunctionFromCondition, negativeRuleFunctionFromCondition
@@ -97,21 +97,19 @@ negativeRuleFunctionFromCondition condition = ruleFunctionFromCondition (not . c
 
 applyRatingRules :: [RatingRule] -> Statements -> Rating
 applyRatingRules rrs stmts = let
-    applyRatingRules' :: [RatingRule] -> RatingState
     applyRatingRules' = foldr (`rrFunction` stmts) initialReportRatingState
   in ratingFromRatingState (applyRatingRules' rrs)
 
-
+{-
+ - RatingConfiguration
+ -}
 
 data RatingConfiguration
-  = RatingConfiguration
-  { selectedLicenses :: [LicenseName]
-  , ratingOverwrites :: Map LicenseName Rating
-  , ratingRules :: [RatingRule]
-  }
+  = RatingConfiguration (Map LicenseName Rating) -- Overwrites
+                        [RatingRule] -- ratingRules
 
-mkRatingConfiguration :: [LicenseName] -> (Map LicenseName Rating) -> RatingConfiguration
-mkRatingConfiguration ls rOs = let
+mkRatingConfiguration :: (Map LicenseName Rating) -> RatingConfiguration
+mkRatingConfiguration rOs = let
     actualRatingRules :: [RatingRule]
     actualRatingRules = let
         addRule desc fun = tell . (:[]) $ RatingRule desc fun
@@ -133,10 +131,10 @@ mkRatingConfiguration ls rOs = let
             fn = (> 0) . V.length . getStatementsWithLabelFromSource negativeRatingLabel (LFC ["BlueOak", "BOEntry"])
           in ruleFunctionFromCondition fn (removeRatingFromState RGo . removeRatingFromState RAtention)
 
-  in RatingConfiguration ls rOs actualRatingRules
+  in RatingConfiguration rOs actualRatingRules
 
 
 applyRatingConfiguration :: RatingConfiguration -> (LicenseName, License) -> Rating
-applyRatingConfiguration (RatingConfiguration _ rOs rrs) (ln,l) = let
+applyRatingConfiguration (RatingConfiguration rOs rrs) (ln,l) = let
     calculatedR = applyRatingRules rrs (getStatementsFromLicense l)
   in M.findWithDefault calculatedR ln rOs

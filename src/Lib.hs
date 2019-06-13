@@ -31,7 +31,7 @@ import           Collectors.Google as X
 import           Collectors.OKFN as X
 import           Collectors.Gnu as X
 
-import           Generators.RatedReport as X
+import           Processors.Rating as X
 
 readFacts :: FilePath -> IO Facts
 readFacts dataDir = let

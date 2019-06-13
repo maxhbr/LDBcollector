@@ -67,4 +67,4 @@ main = do
   writeLicenseJSONs outputFolder licenses
   writeReports outputFolder licenses
 
-  writeRatedReport outputFolder licenses
+  -- writeRatedReport outputFolder licenses
