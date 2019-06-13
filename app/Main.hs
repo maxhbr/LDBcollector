@@ -57,6 +57,12 @@ writeReports outputFolder licenses = do
   BL.writeFile (reportDirectory </> "PermissiveReport.csv") (mkPermissiveReport licenses)
   BL.writeFile (reportDirectory </> "AlternativeNameReport.csv") (mkAlternativeNameReport licenses)
 
+writeMarkdowns :: FilePath -> [(LicenseName, License)] -> IO ()
+writeMarkdowns outputFolder licenses = do
+  let markdownsDirectory = outputFolder </> "reports"
+  createDirectory markdownsDirectory
+  mapM_ (writeMarkdown markdownsDirectory) licenses
+
 main :: IO ()
 main = do
   facts <- readFacts "./data"
@@ -66,5 +72,6 @@ main = do
 
   writeLicenseJSONs outputFolder licenses
   writeReports outputFolder licenses
+  writeMarkdowns outputFolder licenses
 
   -- writeRatedReport outputFolder licenses

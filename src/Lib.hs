@@ -33,6 +33,8 @@ import           Collectors.Gnu as X
 
 import           Processors.Rating as X
 
+import           Generators.MarkdownWriter as X
+
 readFacts :: FilePath -> IO Facts
 readFacts dataDir = let
     prependDataDir = (dataDir </>)

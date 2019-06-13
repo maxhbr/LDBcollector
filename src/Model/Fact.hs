@@ -12,7 +12,6 @@ module Model.Fact
   , LicenseFactClassifier (..)
   , LFRaw (..)
   , LicenseFact (..), extractLicenseFactClassifier
-  , LicenseStatementType
   , Facts
   ) where
 

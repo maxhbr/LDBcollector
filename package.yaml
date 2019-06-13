@@ -37,6 +37,7 @@ dependencies:
 - containers
 - raw-strings-qq
 - hexml
+- lucid
 
 library:
   source-dirs: src
