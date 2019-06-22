@@ -7,8 +7,8 @@ module Processors.Rating
     , RatingRule (..), RatingRuleFun
     , applyRatingRules
     -- Rating Configuration
-    , mkRatingConfiguration
-    , applyRatingConfiguration
+    , mkRatingConfiguration, emptyRatingConfiguration
+    , applyRatingConfiguration, applyEmptyRatingConfiguration
     ) where
 
 import qualified Prelude as P
@@ -133,8 +133,13 @@ mkRatingConfiguration rOs = let
 
   in RatingConfiguration rOs actualRatingRules
 
+emptyRatingConfiguration :: RatingConfiguration
+emptyRatingConfiguration = mkRatingConfiguration M.empty
 
 applyRatingConfiguration :: RatingConfiguration -> (LicenseName, License) -> Rating
 applyRatingConfiguration (RatingConfiguration rOs rrs) (ln,l) = let
     calculatedR = applyRatingRules rrs (getStatementsFromLicense l)
   in M.findWithDefault calculatedR ln rOs
+
+applyEmptyRatingConfiguration :: (LicenseName, License) -> Rating
+applyEmptyRatingConfiguration = applyRatingConfiguration emptyRatingConfiguration

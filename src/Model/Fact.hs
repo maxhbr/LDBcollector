@@ -90,8 +90,8 @@ instance Show LicenseFact where
 instance ToJSON LicenseFact where
   toJSON (LicenseFact url a) = let
       lfc = getLicenseFactClassifier a
-    in object [ tShow lfc .= (mergeAesonL [toJSON a
-                                          , object [ "_sourceURL" .= (toJSON url) ]]) ]
+    in object [ tShow lfc .= mergeAesonL [toJSON a
+                                         , object [ "_sourceURL" .= (toJSON url) ]] ]
   toJSON (LicenseFactWithoutURL a) = let
       lfc = getLicenseFactClassifier a
     in object [ tShow lfc .= (toJSON a) ]

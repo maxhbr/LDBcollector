@@ -1271,7 +1271,7 @@ main = hspec $ do
       -- it "the MIT FullnameFact is as expected" $ do
       --   (mit `getFactData` (LFC ["LicenseFullname"])) `shouldBe` (object ["LicenseFullname" .= (toJSON ["MIT" :: String,"MIT License"] :: Value)])
       it "the ABC FullnameFact is as expected" $ do
-        (abc `getFactData` (LFC ["LicenseFullname"])) `shouldBe` (object [])
+        (abc `getFactData` (LFC ["LicenseFullname"])) `shouldBe` Nothing
 
   describe "Model.Query" $ do
     it "query from string" $ do

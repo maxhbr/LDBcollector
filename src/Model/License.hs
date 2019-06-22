@@ -100,10 +100,10 @@ containsFactOfType (License fs) t = (\f -> case getLicenseFactClassifier f of
 getFactJSON :: License -> LicenseFactClassifier -> Maybe ByteString
 getFactJSON (License fs) classifier = fmap encode (V.find (\f -> getLicenseFactClassifier f == classifier) fs)
 
-getFactData :: License -> LicenseFactClassifier -> Value
+getFactData :: License -> LicenseFactClassifier -> Maybe Value
 getFactData (License fs) classifier = case V.find (\f -> getLicenseFactClassifier f == classifier) fs of
-  Just a  -> toJSON a
-  Nothing -> object []
+  Just a  -> Just $ toJSON a
+  Nothing -> Nothing
 
 getStatementsFromLicense :: License -> Vector FactStatement
 getStatementsFromLicense (License fs) = V.concatMap computeImpliedStatements fs

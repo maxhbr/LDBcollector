@@ -43,6 +43,11 @@ instance FSRaw ObligationStatement where
   getStatementContent (ImpliesCondition c) = toJSON c
   getStatementContent (ImpliesLimitation c) = toJSON c
 
+data ImpliesURL
+  = ImpliesURL String String
+instance FSRaw ImpliesURL where
+  getStatementLabel _ = "URL"
+  getStatementContent (ImpliesURL desc url) = object [ desc .= url ]
 
 possitiveRatingLabel, neutracRatingLabel, negativeRatingLabel :: Text
 possitiveRatingLabel = "possitiveRating"

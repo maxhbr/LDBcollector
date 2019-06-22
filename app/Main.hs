@@ -51,17 +51,19 @@ cleanupAndMakeOutputFolder = do
   return outputFolder
 
 writeReports :: FilePath -> [(LicenseName, License)] -> IO ()
-writeReports outputFolder licenses = do
-  let reportDirectory = outputFolder </> "reports"
-  createDirectory reportDirectory
-  BL.writeFile (reportDirectory </> "PermissiveReport.csv") (mkPermissiveReport licenses)
-  BL.writeFile (reportDirectory </> "AlternativeNameReport.csv") (mkAlternativeNameReport licenses)
+writeReports outputFolder licenses = let
+    reportDirectory = outputFolder </> "reports"
+  in do
+    createDirectory reportDirectory
+    BL.writeFile (reportDirectory </> "PermissiveReport.csv") (mkPermissiveReport licenses)
+    BL.writeFile (reportDirectory </> "AlternativeNameReport.csv") (mkAlternativeNameReport licenses)
 
 writeMarkdowns :: FilePath -> [(LicenseName, License)] -> IO ()
-writeMarkdowns outputFolder licenses = do
-  let markdownsDirectory = outputFolder </> "reports"
-  createDirectory markdownsDirectory
-  mapM_ (writeMarkdown markdownsDirectory) licenses
+writeMarkdowns outputFolder licenses = let
+    markdownsDirectory = outputFolder </> "markdowns"
+  in do
+    createDirectory markdownsDirectory
+    mapM_ (writeMarkdown markdownsDirectory) licenses
 
 main :: IO ()
 main = do
