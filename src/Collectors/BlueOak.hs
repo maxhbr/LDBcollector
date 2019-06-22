@@ -67,13 +67,12 @@ instance Show BOEntry where
   show (BOEntry _ _ j) = show j
 
 instance LFRaw BOEntry where
-  getLicenseFactClassifier _           = LFC ["BlueOak", "BOEntry"]
-  getImpliedNames (BOEntry _ _ bol)    = [id bol]
-  getImpliedStatements (BOEntry _ r _) = let
-      ratingFromRating = case r of
-        "Lead" -> NegativeLicenseRating "Rating is: Lead"
-        _      -> PossitiveLicenseRating ("Rating is: " `T.append` T.pack r)
-    in V.fromList [ FactStatement (IsPermissiveStatement True) Nothing, FactStatement ratingFromRating Nothing]
+  getLicenseFactClassifier _              = LFC ["BlueOak", "BOEntry"]
+  getImpliedNames (BOEntry _ _ bol)       = CLSR [id bol]
+  getImpliedJudgement boe@(BOEntry _ r _) = SLSR (getLicenseFactClassifier boe) $
+    case r of
+      "Lead" -> NegativeJudgement "Rating is: Lead"
+      _      -> PossitiveJudgement ("Rating is: " `T.append` T.pack r)
 
 loadBlueOakFactsFromString :: ByteString -> Facts
 loadBlueOakFactsFromString bs = let

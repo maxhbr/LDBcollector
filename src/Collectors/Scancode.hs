@@ -73,9 +73,23 @@ instance FromJSON ScancodeData where
 instance ToJSON ScancodeData
 instance LFRaw ScancodeData where
   getLicenseFactClassifier _                            = LFC ["ScancodeData"]
-  getImpliedNames scd@ScancodeData{key=k, shortName=sn} = [k,sn] ++ (case spdxId scd of
-                                                                       Just sid -> [sid]
-                                                                       Nothing  -> [])
+  getImpliedNames scd@ScancodeData{key=k, shortName=sn} = CLSR $ [k,sn] ++ (case spdxId scd of
+                                                                              Just sid -> [sid]
+                                                                              Nothing  -> [])
+  getImpliedId ScancodeData{spdxId=mi} = case mi of
+    Just i -> RLSR 90 i
+    Nothing -> NoRLSR
+  getImpliedText ScancodeData{text=t} = RLSR 50 t
+  getImpliedURLs scd@ScancodeData{textUrls=textUs, otherUrls=otherUs} = let
+      urlsFromHomepage = case homepageUrl scd of
+        Just homepageU -> [("Homepage", homepageU)]
+        Nothing -> []
+      urlsForText = map ("Text",) textUs
+      urlsFromOsi = case (osiUrl scd) of
+        Just osiU -> [("osi", osiU)]
+        Nothing -> []
+      urlsFromOther = map ("other",) otherUs
+    in CLSR $ urlsFromHomepage ++ urlsForText ++ urlsFromOsi ++ urlsFromOther
 
 loadScancodeFactsFromYml :: FilePath -> FilePath -> IO Facts
 loadScancodeFactsFromYml folder yml = let

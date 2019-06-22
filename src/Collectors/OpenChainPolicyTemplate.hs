@@ -43,7 +43,7 @@ instance FromNamedRecord OCPTRow where
 instance ToJSON OCPTRow
 instance LFRaw OCPTRow where
   getLicenseFactClassifier _          = LFC ["OpenChainPolicyTemplate", "OCPTRow"]
-  getImpliedNames OCPTRow{spdxId = i} = [i]
+  getImpliedNames OCPTRow{spdxId = i} = CLSR [i]
 
 
 loadOCPTFactsFromString :: ByteString -> Facts

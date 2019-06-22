@@ -6,10 +6,10 @@
 module Model.Fact
   ( module X
   , LicenseName
-  , LicenseFactClassifier (..)
   , LFRaw (..)
-  , LicenseFact (..), extractLicenseFactClassifier
+  , URL, LicenseFact (..), extractLicenseFactClassifier
   , Facts
+  , Judgement (..)
   ) where
 
 import qualified Prelude as P
@@ -20,8 +20,16 @@ import qualified Data.Vector as V
 
 import Model.Statement as X
 
+data Judgement
+  = PositiveJudgement String
+  | NegativeJudgement String
+  | NeutralJudgement String
+  deriving (Eq, Show, Generic)
+instance ToJSON Judgement
+
 type LicenseName
   = String
+
 class (Show a, ToJSON a) => LFRaw a where
   getLicenseFactClassifier :: a -> LicenseFactClassifier
   -- Statements:
@@ -33,14 +41,8 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedURLs _ = NoCLSR
   getImpliedText :: a -> RankedLicenseStatementResult Text
   getImpliedText _ = NoRLSR
-
-newtype LicenseFactClassifier
-  = LFC [Text]
-  deriving (Eq, Generic)
-instance Show LicenseFactClassifier where
-  show (LFC brc) = T.unpack $ T.intercalate "/" brc
-instance ToJSON LicenseFactClassifier where
-  toJSON lfc = toJSON $ show lfc
+  getImpliedJudgement :: a -> ScopedLicenseStatementResult Judgement
+  getImpliedJudgement _ = NoSLSR
 
 type URL
   = String

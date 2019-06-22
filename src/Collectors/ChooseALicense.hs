@@ -37,14 +37,14 @@ instance ToJSON ByteString where
 instance ToJSON CALFactRaw
 instance LFRaw CALFactRaw where
   getLicenseFactClassifier _                          = LFC ["choosealicense.com", "CALFact"]
-  getImpliedNames CALFactRaw{name = sn, spdxId = sid} = sn : (case sid of
-                                                                Just v  -> [v]
-                                                                Nothing -> [])
-  getImpliedStatements (CALFactRaw{permissions = perms, conditions = conds, limitations = limits}) =
-    V.concat $ map (V.fromList . map (\s -> FactStatement s Nothing))
-                   [ (map ImpliesRight perms)
-                   , (map ImpliesCondition conds)
-                   , (map ImpliesLimitation limits)]
+  getImpliedNames CALFactRaw{name = sn, spdxId = sid} = CLSR $ sn : (case sid of
+                                                                       Just v  -> [v]
+                                                                       Nothing -> [])
+  -- getImpliedStatements (CALFactRaw{permissions = perms, conditions = conds, limitations = limits}) =
+  --   V.concat $ map (V.fromList . map (\s -> FactStatement s Nothing))
+  --                  [ (map ImpliesRight perms)
+  --                  , (map ImpliesCondition conds)
+  --                  , (map ImpliesLimitation limits)]
 
 extractValueFromText :: [String] -> String -> Maybe String
 extractValueFromText ls key = let

@@ -33,7 +33,7 @@ instance ToJSON GnuFact where
                                                      ]
 instance LFRaw GnuFact where
   getLicenseFactClassifier _ = LFC ["gnu.org", "GnuFact"]
-  getImpliedNames _          = [] -- TODO: extract names!
+  getImpliedNames _          = CLSR [] -- TODO: extract names!
 
 reduceListOfChildren :: Bool -> Bool -> [Node]  -> Facts
 reduceListOfChildren isFree isGCompatible (n1:(n2:ns)) = let

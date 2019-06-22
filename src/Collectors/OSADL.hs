@@ -27,7 +27,7 @@ instance ToJSON ByteString where
 instance ToJSON OSADLFactRaw
 instance LFRaw OSADLFactRaw where
   getLicenseFactClassifier _          = LFC ["OSADL", "OSADLFact"]
-  getImpliedNames (OSADLFactRaw sn _) = [sn]
+  getImpliedNames (OSADLFactRaw sn _) = CLSR [sn]
 
 
 loadOsadlFactFromFile :: FilePath -> FilePath -> IO LicenseFact

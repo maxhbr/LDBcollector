@@ -61,8 +61,8 @@ instance FromJSON OSLCData where
     <*> v .:? "notes"
     <*> v .:? "terms"
 instance LFRaw OSLCData where
-  getLicenseFactClassifier _          = LFC ["OSLC", "OSLCFact"]
-  getImpliedNames (OSLCData n _ ids _ _) = n : ids
+  getLicenseFactClassifier _             = LFC ["OSLC", "OSLCFact"]
+  getImpliedNames (OSLCData n _ ids _ _) = CLSR $ n : ids
 
 loadOslcFactFromFile :: FilePath -> FilePath -> IO (Vector LicenseFact)
 loadOslcFactFromFile oslcFolder oslcFile = let

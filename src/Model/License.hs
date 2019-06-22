@@ -38,7 +38,10 @@ instance Show License where
   show (License fs) = "\n" ++ unlines (map show (V.toList fs)) ++ "\n"
 instance LFRaw License where
   getLicenseFactClassifier _ = LFC []
-  -- TODO
+  getImpliedNames (License fs) = mergeLicenseStatementResultList $ V.map getImpliedNames fs
+  getImpliedId (License fs) = mergeLicenseStatementResultList $ V.map getImpliedId fs
+  getImpliedURLs (License fs) = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
+  getImpliedText (License fs) = mergeLicenseStatementResultList $ V.map getImpliedText fs
 
 --------------------------------------------------------------------------------
 -- first basic facts

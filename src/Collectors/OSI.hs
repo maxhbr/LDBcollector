@@ -20,12 +20,13 @@ instance LFRaw OSILicense where
   getImpliedNames OSILicense{ olId = i
                             , olName = n
                             , olIdentifiers = is
-                            , olOther_names = os } = map T.unpack $ [i,n] ++ (map oiIdentifier is) ++ (map oonName os)
+                            , olOther_names = os } = CLSR $ map T.unpack $ [i,n] ++ (map oiIdentifier is) ++ (map oonName os)
+  getImpliedURLs OSILicense{ olLinks = links }     = CLSR $ map (\l -> (T.unpack $ olNote l, T.unpack $ olUrl l)) links
 
 loadOSIFacts :: IO Facts
 loadOSIFacts = do
   logThatFactsAreLoadedFrom "OSI License List"
-  els <- runExceptT $ allLicenses
+  els <- runExceptT allLicenses
   case els of
     Right ls -> return . V.fromList $ map (LicenseFact "https://opensource.org/licenses/") ls
     Left err -> do

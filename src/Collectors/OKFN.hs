@@ -46,7 +46,9 @@ instance ToJSON OkfnFact where
            , "url" .= url ]
 instance LFRaw OkfnFact where
   getLicenseFactClassifier _ = LFC ["OpenKnowledgeInternational", "OkfnFact"]
-  getImpliedNames (OkfnFact id _ _ _ _ _ _ _ _ title _) = [id, T.unpack title]
+  getImpliedNames (OkfnFact id _ _ _ _ _ _ _ _ title _) = CLSR [id, T.unpack title]
+  getImpliedId (OkfnFact id _ _ _ _ _ _ _ _ _ _) = RLSR 40 id
+  getImpliedURLs (OkfnFact _ _ _ _ _ _ _ _ _ _ url) = CLSR [("OKFN", T.unpack url)]
 instance FromNamedRecord OkfnFact where
   parseNamedRecord r = let
       handleBool :: Text -> Bool

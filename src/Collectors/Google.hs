@@ -44,19 +44,19 @@ instance ToJSON GooglePolicyFact where
   toJSON (GooglePolicyFact licenseName r@(CANNOT_BE_USED description)) = object [ "id" .= licenseName, "rating" .= toJSON r, "description" .= description ]
   toJSON (GooglePolicyFact licenseName r)                              = object [ "id" .= licenseName, "rating" .= toJSON r ]
 instance LFRaw GooglePolicyFact where
-  getLicenseFactClassifier _                  = LFC ["Google", "GoogleOSSPolicy"]
-  getImpliedNames (GooglePolicyFact spdxId _) = [spdxId]
-  getImpliedStatements (GooglePolicyFact _ clss) = let
+  getLicenseFactClassifier _                         = LFC ["Google", "GoogleOSSPolicy"]
+  getImpliedNames (GooglePolicyFact spdxId _)        = [spdxId]
+  getImpliedStatements gpf@(GooglePolicyFact _ clss) = let
       ratingFromClassification = case clss of
-        RESTRICTED -> NegativeLicenseRating (tShow clss)
-        RESTRICTED_IF_STATICALLY_LINKED -> NegativeLicenseRating (tShow clss)
-        (CANNOT_BE_USED _) -> NegativeLicenseRating (tShow clss)
-        BY_EXCEPTION_ONLY -> NegativeLicenseRating (tShow clss)
-        NOTICE -> PossitiveLicenseRating (tShow clss)
-        UNENCUMBERED -> PossitiveLicenseRating (tShow clss)
-        PERMISSIVE -> PossitiveLicenseRating (tShow clss)
-        _ -> NeutralLicenseRating (tShow clss)
-    in V.fromList [FactStatement ratingFromClassification Nothing]
+        RESTRICTED -> NegativeJudgement (tShow clss)
+        RESTRICTED_IF_STATICALLY_LINKED -> NegativeJudgement (tShow clss)
+        (CANNOT_BE_USED _) -> NegativeJudgement (tShow clss)
+        BY_EXCEPTION_ONLY -> NegativeJudgement (tShow clss)
+        NOTICE -> PositiveJudgement (tShow clss)
+        UNENCUMBERED -> PositiveJudgement (tShow clss)
+        PERMISSIVE -> PositiveJudgement (tShow clss)
+        _ -> NeutralJudgement (tShow clss)
+    in SLSR (getLicenseFactClassifier gpf)
 
 restrictedLicenses :: Vector GooglePolicyFact
 restrictedLicenses = let

@@ -201,12 +201,12 @@ instance LFRaw WikipediaFact where
         Nothing -> name
       nameInSPDXMap = getSPDXIdForWikipediaFact wpf
     in case nameInSPDXMap of
-      Just spdxId -> [spdxId, nameByWikipedia]
-      Nothing     -> [nameByWikipedia]
+      Just spdxId -> CLSR [spdxId, nameByWikipedia]
+      Nothing     -> CLSR [nameByWikipedia]
 
 loadFactsFromComparisonByteString :: ByteString -> Facts
 loadFactsFromComparisonByteString s = case (decodeByName s :: Either String (Header, V.Vector WikipediaFact)) of
-                                        Right (_, v) -> V.map (LicenseFact "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses") v
+                                        Right (_, v) -> V.map (LicenseFact (Just "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses")) v
                                         Left err     -> trace err V.empty
 
 loadWikipediaFacts :: IO Facts
