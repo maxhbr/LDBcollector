@@ -1248,8 +1248,31 @@ FAQ</a>.</p></dd>
 </dl> <!-- end class="green" -->
 |]
 
+containsFactOfClass :: License -> LicenseFactClassifier -> Bool
+containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
+containsFactOfType :: License -> Text -> Bool
+containsFactOfType (License fs) t = (\f -> case getLicenseFactClassifier f of
+                                        LFC []  -> False
+                                        LFC bcs -> last bcs == t) `any` fs
+
+getFactData :: License -> LicenseFactClassifier -> Maybe Value
+getFactData (License fs) classifier = case V.find (\f -> getLicenseFactClassifier f == classifier) fs of
+  Just a  -> Just $ toJSON a
+  Nothing -> Nothing
+
 main :: IO ()
 main = hspec $ do
+  describe "Model.Statements" $ do
+    it "merging two ranked works" $ do
+      mergeLicenseStatementResults (RLSR 40 ("40" :: String)) (RLSR 60 "60") `shouldBe` RLSR 60 "60"
+    it "merging a ranked vector works" $ do
+      mergeLicenseStatementResultList (V.fromList [RLSR 40 ("40" :: String), NoRLSR, RLSR 80 "80", RLSR 60 "60", NoRLSR]) `shouldBe` RLSR 80 "80"
+    it "merging two collected works" $ do
+      mergeLicenseStatementResults (CLSR [("40" :: String)]) (CLSR ["60"]) `shouldBe` CLSR ["40", "60"]
+    it "merging a collected vector works" $ do
+      mergeLicenseStatementResultList (V.fromList [CLSR [("40" :: String)], NoCLSR, CLSR ["60"], CLSR ["80"], NoCLSR]) `shouldBe` CLSR ["40", "60", "80"]
+      mergeLicenseStatementResultList (V.fromList [CLSR [("40" :: String, "v40" :: String)], NoCLSR, CLSR [("60", "v60")]]) `shouldBe` CLSR [("40", "v40"), ("60", "v60")]
+
   describe "Model.License" $ let
       abc = getLicenseFromFacts "ABC" [] facts
       mit = getLicenseFromFacts "MIT" [] facts

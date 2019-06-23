@@ -55,6 +55,7 @@ instance (Show a, ToJSON a) => LicenseStatementResult (RankedLicenseStatementRes
   getEmptyLicenseStatement                                   = NoRLSR
 instance (ToJSON a) => ToJSON (RankedLicenseStatementResult a) where
   toJSON = toJSON . unpackRLSR
+deriving instance (Eq a) => Eq (RankedLicenseStatementResult a)
 
 data CollectedLicenseStatementResult a where
   CLSR :: (Show a, ToJSON a, Eq a) => [a] -> CollectedLicenseStatementResult a
@@ -73,6 +74,12 @@ instance (Show a, ToJSON a, Eq a) => LicenseStatementResult (CollectedLicenseSta
   getEmptyLicenseStatement                           = NoCLSR
 instance (ToJSON a) => ToJSON (CollectedLicenseStatementResult a) where
   toJSON = toJSON . unpackCLSR
+instance (Eq a) => Eq (CollectedLicenseStatementResult a) where
+  NoCLSR == NoCLSR         = True
+  (CLSR []) == NoCLSR      = True
+  NoCLSR == (CLSR [])      = True
+  (CLSR vs1) == (CLSR vs2) = vs1 == vs2 -- TODO: up to order?
+  _ == _                   = False
 
 data ScopedLicenseStatementResult a where
   SLSR :: (Show a, ToJSON a) => LicenseFactClassifier -> a -> ScopedLicenseStatementResult a

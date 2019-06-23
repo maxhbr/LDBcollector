@@ -18,12 +18,14 @@ import           Model.Query
 licenseToMarkdown :: (LicenseName, License) -> String
 licenseToMarkdown (licName, lic) = let
     id = show $ getImpliedId lic
+    names = map show . unpackCLSR $ getImpliedNames lic
     urls = show $ getImpliedURLs lic
     text = show $ getImpliedText lic
     judgements = show $ getImpliedJudgement lic
   in concat
      [ "# ", licName, "\n\n"
      , "- id: ", id, "\n\n"
+     , "- other names:\n", concat (map (\n -> "  - " ++ n ++ "\n") names) , "\n"
      , "## Classification: ", "\n"
      -- , "## Rating: ", tShow rating, "\n"
      , "## Comments:\n", judgements, "\n"
