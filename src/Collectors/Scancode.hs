@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TupleSections #-}
 module Collectors.Scancode
   ( loadScancodeFacts
   -- , loadScancodeFactsFromString
@@ -18,6 +19,7 @@ import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as Char8
 import           Data.Yaml
+import           Data.Text.Encoding (decodeUtf8)
 
 import           Model.License
 
@@ -79,16 +81,20 @@ instance LFRaw ScancodeData where
   getImpliedId ScancodeData{spdxId=mi} = case mi of
     Just i -> RLSR 90 i
     Nothing -> NoRLSR
-  getImpliedText ScancodeData{text=t} = RLSR 50 t
-  getImpliedURLs scd@ScancodeData{textUrls=textUs, otherUrls=otherUs} = let
+  getImpliedText scd = RLSR 50 (decodeUtf8 $ text scd)
+  getImpliedURLs scd = let
       urlsFromHomepage = case homepageUrl scd of
         Just homepageU -> [("Homepage", homepageU)]
         Nothing -> []
-      urlsForText = map ("Text",) textUs
-      urlsFromOsi = case (osiUrl scd) of
+      urlsForText = case textUrls scd of
+        Just textUs -> map ("Text",) textUs
+        Nothing -> []
+      urlsFromOsi = case osiUrl scd of
         Just osiU -> [("osi", osiU)]
         Nothing -> []
-      urlsFromOther = map ("other",) otherUs
+      urlsFromOther = case otherUrls scd of
+        Just otherUs -> map ("other",) otherUs
+        Nothing -> []
     in CLSR $ urlsFromHomepage ++ urlsForText ++ urlsFromOsi ++ urlsFromOther
 
 loadScancodeFactsFromYml :: FilePath -> FilePath -> IO Facts
@@ -106,7 +112,7 @@ loadScancodeFactsFromYml folder yml = let
       Left pe -> trace (show pe) V.empty
       Right scdFromRow -> let
           scd = scdFromRow{text = licenseText}
-        in V.singleton (LicenseFact ("https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/" ++ yml) scd)
+        in V.singleton (LicenseFact (Just $ "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/" ++ yml) scd)
 
 loadScancodeFacts :: FilePath -> IO Facts
 loadScancodeFacts folder = do

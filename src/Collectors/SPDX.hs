@@ -1,6 +1,7 @@
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE DeriveGeneric #-}
+{-# LANGUAGE TupleSections #-}
 module Collectors.SPDX
   ( loadSPDXFacts
   , loadSPDXFactsFromString
@@ -71,7 +72,7 @@ loadSPDXFactsFromString :: ByteString -> Facts
 loadSPDXFactsFromString s = case (decode s :: Maybe SPDXList) of
   Just (SPDXList v es _)  -> trace ("INFO: SPDX License list version is: " ++ v) $ let
       filteredEs = filter (not . isSPDXLicenseDeprecated) es
-    in V.fromList $ map (\f -> LicenseFact ("https://spdx.org/licenses/" ++ spdxLicenseId f ++ ".html") f) filteredEs
+    in V.fromList $ map (\f -> LicenseFact (Just $ "https://spdx.org/licenses/" ++ spdxLicenseId f ++ ".html") f) filteredEs
   Nothing                 -> V.empty
 
 

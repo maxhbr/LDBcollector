@@ -33,7 +33,8 @@ type Licenses
   = [License]
 
 instance ToJSON License where
-  toJSON l@(License fs) = object [ "facts" .= mergeAeson fs ]
+  toJSON l@(License fs) = mergeAesonL [ object [ "facts" .= mergeAeson fs ]
+                                      , getImplicationJSONFromLFRaw l ]
 instance Show License where
   show (License fs) = "\n" ++ unlines (map show (V.toList fs)) ++ "\n"
 instance LFRaw License where

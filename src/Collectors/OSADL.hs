@@ -36,7 +36,7 @@ loadOsadlFactFromFile osadlFolder osadlFile = let
     spdxId = dropExtension osadlFile
   in do
     content <- B.readFile fileWithPath
-    return (LicenseFact ("https://www.osadl.org/fileadmin/checklists/unreflicenses/" ++ spdxId ++ ".txt") (OSADLFactRaw spdxId content))
+    return (LicenseFact (Just $ "https://www.osadl.org/fileadmin/checklists/unreflicenses/" ++ spdxId ++ ".txt") (OSADLFactRaw spdxId content))
 
 loadOsadlFacts :: FilePath -> IO Facts
 loadOsadlFacts osadlFolder = do

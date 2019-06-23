@@ -79,5 +79,5 @@ loadOkfnFacts csvFile = do
         Left err -> do
           putStrLn err
           return V.empty
-        Right (_, v) -> return $ V.map (LicenseFact "https://github.com/okfn/licenses/blob/master/licenses.csv") v
+        Right (_, v) -> return $ V.map (LicenseFact $ Just "https://github.com/okfn/licenses/blob/master/licenses.csv") v
 

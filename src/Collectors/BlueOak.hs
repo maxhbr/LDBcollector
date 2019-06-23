@@ -69,17 +69,19 @@ instance Show BOEntry where
 instance LFRaw BOEntry where
   getLicenseFactClassifier _              = LFC ["BlueOak", "BOEntry"]
   getImpliedNames (BOEntry _ _ bol)       = CLSR [id bol]
-  getImpliedJudgement boe@(BOEntry _ r _) = SLSR (getLicenseFactClassifier boe) $
-    case r of
-      "Lead" -> NegativeJudgement "Rating is: Lead"
-      _      -> PossitiveJudgement ("Rating is: " `T.append` T.pack r)
+  getImpliedJudgement boe@(BOEntry _ r _) = let
+      ratingText = "Rating is: " ++ r
+    in SLSR (getLicenseFactClassifier boe) $
+       case r of
+         "Lead" -> NegativeJudgement ratingText
+         _      -> PositiveJudgement ratingText
 
 loadBlueOakFactsFromString :: ByteString -> Facts
 loadBlueOakFactsFromString bs = let
     bod = decodeBlueOakData bs
     bodVersion = version bod
     bodRatings = ratings bod
-    ratingConverter (BlueOakRating r ls) = map (LicenseFact "https://blueoakcouncil.org/list" . BOEntry bodVersion r) ls
+    ratingConverter (BlueOakRating r ls) = map (LicenseFact (Just "https://blueoakcouncil.org/list") . BOEntry bodVersion r) ls
     facts = concatMap ratingConverter bodRatings
   in trace ("INFO: the version of BlueOak is: " ++ bodVersion) $ V.fromList facts
 

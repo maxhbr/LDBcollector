@@ -40,6 +40,10 @@ instance LFRaw CALFactRaw where
   getImpliedNames CALFactRaw{name = sn, spdxId = sid} = CLSR $ sn : (case sid of
                                                                        Just v  -> [v]
                                                                        Nothing -> [])
+  getImpliedJudgement cfr                             = SLSR (getLicenseFactClassifier cfr) $
+                                                        case featured cfr of
+                                                          Just "true" -> PositiveJudgement "This License is featured by choosealicense.com"
+                                                          _           -> NeutralJudgement ""
   -- getImpliedStatements (CALFactRaw{permissions = perms, conditions = conds, limitations = limits}) =
   --   V.concat $ map (V.fromList . map (\s -> FactStatement s Nothing))
   --                  [ (map ImpliesRight perms)
@@ -68,7 +72,7 @@ loadCalFactFromFile calFolder calFile = let
   in do
     cnt <- B.readFile fileWithPath
     let ls = lines (Char8.unpack cnt)
-    return (LicenseFact ("https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/" ++ calFile)
+    return (LicenseFact (Just $ "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/" ++ calFile)
                         (CALFactRaw n
                                     (extractValueFromText ls "title")
                                     (extractValueFromText ls "spdx-id")

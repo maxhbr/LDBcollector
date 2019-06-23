@@ -33,13 +33,17 @@ instance ToJSON GnuFact where
                                                      ]
 instance LFRaw GnuFact where
   getLicenseFactClassifier _ = LFC ["gnu.org", "GnuFact"]
-  getImpliedNames _          = CLSR [] -- TODO: extract names!
+  getImpliedNames _          = NoCLSR -- TODO: extract names!
+  getImpliedJudgement gf = SLSR (getLicenseFactClassifier gf) $
+                           if isGnuFree gf
+                           then PositiveJudgement "Is Gnu free"
+                           else NegativeJudgement "Is not Gnu free"
 
 reduceListOfChildren :: Bool -> Bool -> [Node]  -> Facts
 reduceListOfChildren isFree isGCompatible (n1:(n2:ns)) = let
     r1 = trace (show n1) $ render n1
     r2 = trace (show n2) $ render n2
-  in (LicenseFact "" (GnuFact isFree isGCompatible r1 r2)) `V.cons` (reduceListOfChildren isFree isGCompatible ns)
+  in (LicenseFact Nothing (GnuFact isFree isGCompatible r1 r2)) `V.cons` (reduceListOfChildren isFree isGCompatible ns)
 reduceListOfChildren _ _ [n0]                          = undefined
 reduceListOfChildren _ _ _                             = V.empty
 

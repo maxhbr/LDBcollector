@@ -70,7 +70,7 @@ loadOslcFactFromFile oslcFolder oslcFile = let
     nmffn = dropExtension oslcFile
     convertOslcFromFile oslcdFromFile = let
         spdxIds = licenseId oslcdFromFile
-      in map (\spdxId -> LicenseFact ("https://github.com/finos-osr/OSLC-handbook/blob/master/src/" ++ oslcFile) oslcdFromFile{ nameFromFilename = nmffn, licenseId = [spdxId] }) spdxIds
+      in map (\spdxId -> LicenseFact (Just $ "https://github.com/finos-osr/OSLC-handbook/blob/master/src/" ++ oslcFile) oslcdFromFile{ nameFromFilename = nmffn, licenseId = [spdxId] }) spdxIds
   in do
     decoded <- decodeFileEither fileWithPath :: IO (Either ParseException [OSLCData])
     case decoded of

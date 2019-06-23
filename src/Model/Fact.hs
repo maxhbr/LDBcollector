@@ -6,7 +6,7 @@
 module Model.Fact
   ( module X
   , LicenseName
-  , LFRaw (..)
+  , LFRaw (..), getImplicationJSONFromLFRaw
   , URL, LicenseFact (..), extractLicenseFactClassifier
   , Facts
   , Judgement (..)
@@ -44,6 +44,25 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedJudgement :: a -> ScopedLicenseStatementResult Judgement
   getImpliedJudgement _ = NoSLSR
 
+getImplicationJSONFromLFRaw :: (LFRaw a) => a -> Value
+getImplicationJSONFromLFRaw a = let
+    impliedNames = case getImpliedNames a of
+      NoCLSR -> []
+      ins    -> [ "impliedNames" .= ins ]
+    impliedId = case getImpliedId a of
+      NoRLSR -> []
+      iid    -> [ "impliedId" .= iid ]
+    impliedURLs = case getImpliedURLs a of
+      NoCLSR -> []
+      iurls  -> [ "impliedURLs" .= iurls ]
+    impliedText = case getImpliedText a of
+      NoRLSR -> []
+      itext  -> [ "impliedText" .= itext ]
+    impliedJudgement = case getImpliedJudgement a of
+      NoSLSR -> []
+      ijudge -> [ "impliedJudgement" .= ijudge ]
+  in object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement
+
 type URL
   = String
 data LicenseFact
@@ -57,11 +76,13 @@ instance Show LicenseFact where
 instance ToJSON LicenseFact where
   toJSON (LicenseFact (Just url) a) = let
       lfc = getLicenseFactClassifier a
-    in object [ tShow lfc .= mergeAesonL [toJSON a
-                                         , object [ "_sourceURL" .= toJSON url ]] ]
+    in object [ tShow lfc .= mergeAesonL [ toJSON a
+                                         , object [ "_sourceURL" .= toJSON url ]
+                                         , object [ "implications" .= getImplicationJSONFromLFRaw a ]]]
   toJSON (LicenseFact Nothing a) = let
       lfc = getLicenseFactClassifier a
-    in object [ tShow lfc .= toJSON a ]
+    in object [ tShow lfc .= mergeAesonL [ toJSON a
+                                         , object [ "implications" .= getImplicationJSONFromLFRaw a ]]]
 instance LFRaw LicenseFact where
   getLicenseFactClassifier (LicenseFact _ raw)         = getLicenseFactClassifier raw
   getImpliedNames (LicenseFact _ raw)                  = getImpliedNames raw

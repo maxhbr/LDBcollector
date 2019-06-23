@@ -11,8 +11,6 @@ import qualified Data.Map as M
 import qualified Data.List as L
 
 import Lib
-import Reports.PermissiveReport (mkPermissiveReport)
-import Reports.AlternativeNameReport (mkAlternativeNameReport)
 
 initialLicenseMapping :: Map LicenseName [LicenseName]
 initialLicenseMapping = M.fromList
@@ -50,14 +48,6 @@ cleanupAndMakeOutputFolder = do
 
   return outputFolder
 
-writeReports :: FilePath -> [(LicenseName, License)] -> IO ()
-writeReports outputFolder licenses = let
-    reportDirectory = outputFolder </> "reports"
-  in do
-    createDirectory reportDirectory
-    BL.writeFile (reportDirectory </> "PermissiveReport.csv") (mkPermissiveReport licenses)
-    BL.writeFile (reportDirectory </> "AlternativeNameReport.csv") (mkAlternativeNameReport licenses)
-
 writeMarkdowns :: FilePath -> [(LicenseName, License)] -> IO ()
 writeMarkdowns outputFolder licenses = let
     markdownsDirectory = outputFolder </> "markdowns"
@@ -73,7 +63,6 @@ main = do
   outputFolder <- cleanupAndMakeOutputFolder
 
   writeLicenseJSONs outputFolder licenses
-  writeReports outputFolder licenses
   writeMarkdowns outputFolder licenses
 
   -- writeRatedReport outputFolder licenses

@@ -28,7 +28,7 @@ loadOSIFacts = do
   logThatFactsAreLoadedFrom "OSI License List"
   els <- runExceptT allLicenses
   case els of
-    Right ls -> return . V.fromList $ map (LicenseFact "https://opensource.org/licenses/") ls
+    Right ls -> return . V.fromList $ map (LicenseFact (Just "https://opensource.org/licenses/")) ls
     Left err -> do
       hPutStrLn stderr err
       return V.empty

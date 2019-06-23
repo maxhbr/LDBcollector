@@ -110,8 +110,8 @@ instance LFRaw FedoraProjectWikiFact where
   getImpliedNames (FedoraProjectWikiFact _ (Left (Left full)))   = CLSR [getFullNameFromCore full]
   getImpliedNames (FedoraProjectWikiFact _ (Left (Right short))) = CLSR [getFullNameFromCore short]
   getImpliedNames (FedoraProjectWikiFact _ (Right bad))          = CLSR [getFullNameFromCore bad]
-  getImpliedStatements fpwf@(FedoraProjectWikiFact _ (Right _))  = SLSR (getLicenseFactClassifier fpwf) $ NegativeJudgement "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-  getImpliedStatements fpwf                                      = SLSR (getLicenseFactClassifier fpwf) $ PositiveJudgement "This software Licenses is OK for Fedora"
+  getImpliedJudgement fpwf@(FedoraProjectWikiFact _ (Right _))   = SLSR (getLicenseFactClassifier fpwf) $ NegativeJudgement "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+  getImpliedJudgement fpwf                                       = SLSR (getLicenseFactClassifier fpwf) $ PositiveJudgement "This software Licenses is OK for Fedora"
 
 toFPWF_Full :: String -> FedoraProjectWikiFact_Full -> FedoraProjectWikiFact
 toFPWF_Full t full = FedoraProjectWikiFact t (Left (Left full))
@@ -121,7 +121,7 @@ toFPWF_Bad :: String -> FedoraProjectWikiFact_Bad -> FedoraProjectWikiFact
 toFPWF_Bad t bad =  FedoraProjectWikiFact t (Right bad)
 
 toFedoraLicenseFact :: LFRaw a => a -> LicenseFact
-toFedoraLicenseFact = LicenseFact "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing"
+toFedoraLicenseFact = LicenseFact (Just "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing")
 
 -- TODO: replace Good/Baad by data
 -- TODO: replace type by data

@@ -73,14 +73,14 @@ getLicensesFromFacts :: Vector LicenseName -> Int -> Map LicenseName [LicenseNam
 getLicensesFromFacts ids 0 mapping facts = V.map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i mapping) facts)) ids
 getLicensesFromFacts ids i mapping facts = let
     lics = getLicensesFromFacts ids 0 mapping facts
-    newMapping = M.fromList . V.toList $ V.map (\(name,License fs) -> (name, L.nub (concatMap getImpliedNames (V.toList fs)))) lics
+    newMapping = M.fromList . V.toList $ V.map (\(name,License fs) -> (name, L.nub (concatMap (unpackCLSR . getImpliedNames) (V.toList fs)))) lics
   in getLicensesFromFacts ids (i - 1) newMapping facts
 
 calculateLicenses :: Map LicenseName [LicenseName] -> (LicenseFact -> Bool) -> Facts -> IO [(LicenseName, License)]
 calculateLicenses initialLicenseMapping filterForIds facts = do
 
   let factsToTakeIDsFrom = V.filter filterForIds facts
-      ids = V.map head . V.filter (/= []) . V.map getImpliedNames $ factsToTakeIDsFrom
+      ids = V.map head . V.filter (/= []) . V.map (unpackCLSR . getImpliedNames) $ factsToTakeIDsFrom
 
   let licenses = getLicensesFromFacts ids 1 initialLicenseMapping facts
   hPutStrLn stderr "... done with calculating licenses"
