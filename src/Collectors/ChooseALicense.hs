@@ -36,16 +36,17 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON CALFactRaw
 instance LFRaw CALFactRaw where
-  getLicenseFactClassifier _                             = LFC ["choosealicense.com", "CALFact"]
-  getImpliedNames CALFactRaw{name = sn, spdxId = sid}    = CLSR $ sn : (case sid of
-                                                                          Just v  -> [v]
-                                                                          Nothing -> [])
-  getImpliedJudgement cfr                                = SLSR (getLicenseFactClassifier cfr) $
-                                                           case featured cfr of
-                                                             Just "true" -> PositiveJudgement "This License is featured by choosealicense.com"
-                                                             _           -> NeutralJudgement ""
-  getImpliedObligations CALFactRaw{permissions = perms, conditions = conds, limitations = limits}
-    = RLSR 70 (LicenseObligations (map (`ImpliedRight` "") perms) (map (`ImpliedCondition` "") conds) (map (`ImpliedLimitation` "") limits))
+  getLicenseFactClassifier _                              = LFC ["choosealicense.com", "CALFact"]
+  getImpliedNames CALFactRaw{name = sn, spdxId = sid}     = CLSR $ sn : (case sid of
+                                                                           Just v  -> [v]
+                                                                           Nothing -> [])
+  getImpliedJudgement cfr                                 = SLSR (getLicenseFactClassifier cfr) $
+                                                            case featured cfr of
+                                                              Just "true" -> PositiveJudgement "This License is featured by choosealicense.com"
+                                                              _           -> NeutralJudgement ""
+  getImpliedObligations CALFactRaw{ permissions = perms
+                                  , conditions = conds
+                                  , limitations = limits} = RLSR 70 (LicenseObligations (map (`ImpliedRight` "") perms) (map (`ImpliedCondition` "") conds) (map (`ImpliedLimitation` "") limits))
 
 extractValueFromText :: [String] -> String -> Maybe String
 extractValueFromText ls key = let

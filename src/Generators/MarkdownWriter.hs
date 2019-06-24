@@ -10,8 +10,10 @@ import qualified Data.Map as M
 import qualified Data.Text as T
 import           Data.Aeson.Encode.Pretty (encodePretty)
 import           Data.ByteString.Lazy.Char8 (unpack)
+import qualified Data.Aeson.Lens as AL
 
 import           Model.License
+import           Model.Query
 import           Processors.Rating
 
 mkCodeBlock :: String -> String
@@ -49,6 +51,11 @@ renderURLs urls = let
     fun old (desc, url) = old ++ "\n - **" ++ desc ++ ":** " ++ url
   in foldl fun "## URLs:" list
 
+renderOSADLRule :: License -> String
+renderOSADLRule lic = case queryLicense (LFC ["OSADL", "OSADLFact"]) (AL.key "osadlRule" . AL._String) lic of
+  Just osadlRule -> "## OSADL Rule:\n" ++ mkCodeBlock (T.unpack osadlRule)
+  Nothing        -> ""
+
 renderText :: RankedLicenseStatementResult Text -> String
 renderText text = case unpackRLSR text of
   Just value -> "## Text:" ++ mkCodeBlock (T.unpack value)
@@ -67,6 +74,7 @@ licenseToMarkdown (licName, lic) = let
     judgements = getImpliedJudgement lic
 
     rating = applyDefaultRatingRules lic
+
   in concat
      [ "# ", fullname, "\n\n"
      , "- id: ", id, "\n\n"
@@ -75,6 +83,7 @@ licenseToMarkdown (licName, lic) = let
      , "## Rating: ", show rating, "\n"
      , renderJudgements judgements, "\n"
      , renderURLs urls, "\n"
+     , renderOSADLRule lic, "\n"
      , renderText text
      , renderRawData lic ]
 
