@@ -13,6 +13,7 @@ import qualified Data.Vector as V
 import qualified Data.Map as M
 import qualified Data.List as L
 import qualified Data.ByteString.Lazy as BL
+import           Data.Aeson.Encode.Pretty (encodePretty)
 
 import           Model.License as X
 import           Model.Query as X
@@ -94,9 +95,11 @@ writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
 writeLicenseJSONs outputFolder licenses = do
   jsons <- mapM (\(i,l) -> let
                     outputFile = i ++ ".json"
+                    pOutputFile = i ++ ".pretty.json"
                 in do
                    BL.writeFile (outputFolder </> outputFile) (encode l)
+                   BL.writeFile (outputFolder </> pOutputFile) (encodePretty l)
                    return outputFile) licenses
-  BL.writeFile (outputFolder </> "_all.json") (encode licenses)
-  BL.writeFile (outputFolder </> "_index.json") (encode jsons)
+  BL.writeFile (outputFolder </> "_all.json") (encodePretty licenses)
+  BL.writeFile (outputFolder </> "_index.json") (encodePretty jsons)
 

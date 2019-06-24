@@ -23,6 +23,7 @@ import           Data.Char (toUpper)
 import qualified Data.Vector as V
 import           Data.ByteString.Lazy (ByteString)
 import           Data.Typeable
+import           Debug.Trace (trace)
 
 import Model.Fact as X
 
@@ -40,10 +41,12 @@ instance Show License where
 instance LFRaw License where
   getLicenseFactClassifier _       = LFC []
   getImpliedNames (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedNames fs
+  getImpliedFullName (License fs)  = mergeLicenseStatementResultList $ V.map getImpliedFullName fs
   getImpliedId (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedId fs
   getImpliedURLs (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
   getImpliedText (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedText fs
   getImpliedJudgement (License fs) = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
+  getImpliedCopyleft (License fs) = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
 
 --------------------------------------------------------------------------------
 -- first basic facts
@@ -66,8 +69,10 @@ data LicenseFullnameFactRaw =
   deriving (Show, Generic)
 instance ToJSON LicenseFullnameFactRaw
 instance LFRaw LicenseFullnameFactRaw where
-  getLicenseFactClassifier _                   = LFC ["LicenseFullname"]
-  getImpliedNames (LicenseFullnameFactRaw s _) = CLSR [s]
+  getLicenseFactClassifier _                       = LFC ["LicenseFullname"]
+  getImpliedId (LicenseFullnameFactRaw s _)        = RLSR 50 s
+  getImpliedNames (LicenseFullnameFactRaw s fn)    = CLSR [s, fn]
+  getImpliedFullName (LicenseFullnameFactRaw _ fn) = RLSR 100 fn
 
 mkLicenseFullnameFact :: String -> String -> LicenseFact
 mkLicenseFullnameFact s f = LicenseFact Nothing (LicenseFullnameFactRaw s f)

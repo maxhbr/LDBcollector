@@ -9,6 +9,10 @@ import qualified Data.ByteString.Lazy as BL
 import           Control.Monad
 import qualified Data.Map as M
 import qualified Data.List as L
+import           GHC.IO.Encoding
+import qualified Text.Pandoc as P
+import qualified Text.Pandoc as P
+import qualified Data.Text.IO as T
 
 import Lib
 
@@ -53,10 +57,28 @@ writeMarkdowns outputFolder licenses = let
     markdownsDirectory = outputFolder </> "markdowns"
   in do
     createDirectory markdownsDirectory
-    mapM_ (writeMarkdown markdownsDirectory) licenses
+    markdownFiles <- mapM (writeMarkdown markdownsDirectory) licenses
+
+    --   htmlFiles <- mapM (\f -> do
+    --             mdText <- T.readFile f
+    --             pandocResult <- P.runIO $ P.readMarkdown P.def mdText >>= P.writeHtml5String P.def
+    --             return $ case pandocResult of
+    --               Right html -> do
+    --                 let outHTML = (f ++ ".html")
+    --                 T.writeFile outHTML html
+    --                 return $ Just outHTML
+    --               Left err -> do
+    --                 putStrLn (show err)
+    --                 return Nothing
+    --                     ) markdownFiles
+    -- -- TODO: write index.html
+
+    putStrLn "done writing markdowns"
 
 main :: IO ()
 main = do
+  setLocaleEncoding utf8
+
   facts <- readFacts "./data"
   licenses <- calculateSPDXLicenses initialLicenseMapping facts
 

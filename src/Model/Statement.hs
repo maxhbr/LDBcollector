@@ -30,11 +30,13 @@ instance ToJSON LicenseFactClassifier where
   toJSON lfc = toJSON $ show lfc
 instance ToJSONKey LicenseFactClassifier
 
-class LicenseStatementResult a where
+class (Eq a) => LicenseStatementResult a where
   mergeLicenseStatementResults :: a -> a -> a
   getEmptyLicenseStatement :: a
+  isEmptyLicenseStatement :: a -> Bool
+  isEmptyLicenseStatement = (getEmptyLicenseStatement ==)
   mergeLicenseStatementResultList :: Vector a -> a
-  mergeLicenseStatementResultList = V.foldl mergeLicenseStatementResults getEmptyLicenseStatement
+  mergeLicenseStatementResultList = V.foldl mergeLicenseStatementResults getEmptyLicenseStatement . V.filter (not . isEmptyLicenseStatement)
 
 type Rank
   = Int
@@ -44,9 +46,10 @@ data RankedLicenseStatementResult a where
 unpackRLSR :: RankedLicenseStatementResult a -> Maybe a
 unpackRLSR (RLSR _ a) = Just a
 unpackRLSR NoRLSR     = Nothing
+deriving instance (Eq a) => Eq (RankedLicenseStatementResult a)
 instance (Show a, ToJSON a) => Show (RankedLicenseStatementResult a) where
   show = show . unpackRLSR
-instance (Show a, ToJSON a) => LicenseStatementResult (RankedLicenseStatementResult a) where
+instance (Show a, ToJSON a, Eq a) => LicenseStatementResult (RankedLicenseStatementResult a) where
   mergeLicenseStatementResults NoRLSR s2                     = s2
   mergeLicenseStatementResults s1 NoRLSR                     = s1
   mergeLicenseStatementResults s1@(RLSR r1 _) s2@(RLSR r2 _) = if r1 > r2
@@ -55,7 +58,6 @@ instance (Show a, ToJSON a) => LicenseStatementResult (RankedLicenseStatementRes
   getEmptyLicenseStatement                                   = NoRLSR
 instance (ToJSON a) => ToJSON (RankedLicenseStatementResult a) where
   toJSON = toJSON . unpackRLSR
-deriving instance (Eq a) => Eq (RankedLicenseStatementResult a)
 
 data CollectedLicenseStatementResult a where
   CLSR :: (Show a, ToJSON a, Eq a) => [a] -> CollectedLicenseStatementResult a
@@ -63,6 +65,12 @@ data CollectedLicenseStatementResult a where
 unpackCLSR :: CollectedLicenseStatementResult a -> [a]
 unpackCLSR (CLSR as) = as
 unpackCLSR NoCLSR    = []
+instance (Eq a) => Eq (CollectedLicenseStatementResult a) where
+  NoCLSR == NoCLSR         = True
+  (CLSR []) == NoCLSR      = True
+  NoCLSR == (CLSR [])      = True
+  (CLSR vs1) == (CLSR vs2) = vs1 == vs2 -- TODO: up to order?
+  _ == _                   = False
 instance (Show a, ToJSON a) => Show (CollectedLicenseStatementResult a) where
   show = show . unpackCLSR
 instance (Show a, ToJSON a, Eq a) => LicenseStatementResult (CollectedLicenseStatementResult a) where
@@ -71,15 +79,14 @@ instance (Show a, ToJSON a, Eq a) => LicenseStatementResult (CollectedLicenseSta
   mergeLicenseStatementResults NoCLSR s2             = s2
   mergeLicenseStatementResults s1 NoCLSR             = s1
   mergeLicenseStatementResults (CLSR ss1) (CLSR ss2) = CLSR (nub (ss1 ++ ss2))
+
   getEmptyLicenseStatement                           = NoCLSR
+
+  isEmptyLicenseStatement NoCLSR                     = True
+  isEmptyLicenseStatement (CLSR [])                  = True
+  isEmptyLicenseStatement _                          = False
 instance (ToJSON a) => ToJSON (CollectedLicenseStatementResult a) where
   toJSON = toJSON . unpackCLSR
-instance (Eq a) => Eq (CollectedLicenseStatementResult a) where
-  NoCLSR == NoCLSR         = True
-  (CLSR []) == NoCLSR      = True
-  NoCLSR == (CLSR [])      = True
-  (CLSR vs1) == (CLSR vs2) = vs1 == vs2 -- TODO: up to order?
-  _ == _                   = False
 
 data ScopedLicenseStatementResult a where
   SLSR :: (Show a, ToJSON a) => LicenseFactClassifier -> a -> ScopedLicenseStatementResult a
@@ -89,9 +96,11 @@ unpackSLSR :: ScopedLicenseStatementResult a -> Map LicenseFactClassifier a
 unpackSLSR (SLSR lfc a) = M.singleton lfc a
 unpackSLSR (SLSRMap m)  = m
 unpackSLSR NoSLSR       = M.empty
+instance (Eq a) => Eq (ScopedLicenseStatementResult a) where
+  slsr1 == slsr2 = (unpackSLSR slsr1) == (unpackSLSR slsr2)
 instance (Show a, ToJSON a) => Show (ScopedLicenseStatementResult a) where
   show = show . unpackSLSR
-instance (Show a, ToJSON a) => LicenseStatementResult (ScopedLicenseStatementResult a) where
+instance (Show a, ToJSON a, Eq a) => LicenseStatementResult (ScopedLicenseStatementResult a) where
   mergeLicenseStatementResults NoSLSR s2 = s2
   mergeLicenseStatementResults s1 NoSLSR = s1
   mergeLicenseStatementResults s1 s2     = SLSRMap (M.union (unpackSLSR s1) (unpackSLSR s2))

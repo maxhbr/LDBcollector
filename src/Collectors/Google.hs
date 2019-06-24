@@ -48,15 +48,21 @@ instance LFRaw GooglePolicyFact where
   getImpliedNames (GooglePolicyFact spdxId _)       = CLSR [spdxId]
   getImpliedJudgement gpf@(GooglePolicyFact _ clss) = let
     judgementFromClassification = case clss of
-        RESTRICTED -> NegativeJudgement (show clss)
-        RESTRICTED_IF_STATICALLY_LINKED -> NegativeJudgement (show clss)
-        (CANNOT_BE_USED _) -> NegativeJudgement (show clss)
-        BY_EXCEPTION_ONLY -> NegativeJudgement (show clss)
-        NOTICE -> PositiveJudgement (show clss)
-        UNENCUMBERED -> PositiveJudgement (show clss)
-        PERMISSIVE -> PositiveJudgement (show clss)
-        _ -> NeutralJudgement (show clss)
+        RESTRICTED -> NegativeJudgement ("Google Classification is " ++ show clss)
+        RESTRICTED_IF_STATICALLY_LINKED -> NegativeJudgement ("Google Classification is " ++ show clss)
+        (CANNOT_BE_USED _) -> NegativeJudgement ("Google Classification is " ++ show clss)
+        BY_EXCEPTION_ONLY -> NegativeJudgement ("Google Classification is " ++ show clss)
+        NOTICE -> PositiveJudgement ("Google Classification is " ++ show clss)
+        UNENCUMBERED -> PositiveJudgement ("Google Classification is " ++ show clss)
+        PERMISSIVE -> PositiveJudgement ("Google Classification is " ++ show clss)
+        _ -> NeutralJudgement ("Google Classification is " ++ show clss)
     in SLSR (getLicenseFactClassifier gpf) judgementFromClassification
+  getImpliedCopyleft gpf@(GooglePolicyFact _ clss) = case clss of
+                                                        RESTRICTED_IF_STATICALLY_LINKED -> SLSR (getLicenseFactClassifier gpf) WeakCopyleft
+                                                        NOTICE -> SLSR (getLicenseFactClassifier gpf) NoCopyleft
+                                                        UNENCUMBERED -> SLSR (getLicenseFactClassifier gpf) NoCopyleft
+                                                        PERMISSIVE -> SLSR (getLicenseFactClassifier gpf) NoCopyleft
+                                                        _ -> NoSLSR
 
 restrictedLicenses :: Vector GooglePolicyFact
 restrictedLicenses = let

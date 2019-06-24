@@ -2,13 +2,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Processors.Rating
     ( Rating (..)
-    -- , removeRatingFromState, setRatingOfState
-    -- , ruleFunctionFromCondition, negativeRuleFunctionFromCondition
-    -- , RatingRule (..), RatingRuleFun
-    -- , applyRatingRules
-    -- -- Rating Configuration
-    -- , mkRatingConfiguration, emptyRatingConfiguration
-    -- , applyRatingConfiguration, applyEmptyRatingConfiguration
+    , ratingRules
+    , applyRatingRules, applyDefaultRatingRules
     ) where
 
 import qualified Prelude as P
@@ -39,50 +34,83 @@ data RatingState
   , rsStop :: Bool
   , rsNoGo :: Bool
   }
+ratingFromRatingState :: RatingState -> Rating
+ratingFromRatingState rs = let
+    mapFromState :: (RatingState -> Bool) -> Rating -> RatingState -> Maybe Rating
+    mapFromState getter result state = if getter state
+                                       then Just result
+                                       else Nothing
+    ratingFromSetOfRatings :: [Rating] -> Rating
+    ratingFromSetOfRatings [r] = r
+    ratingFromSetOfRatings rs' = RUnknown rs'
+  in ratingFromSetOfRatings . catMaybes $ map (\f -> f rs) [ mapFromState rsGo RGo
+                                                           , mapFromState rsAtention RAtention
+                                                           , mapFromState rsStop RStop
+                                                           , mapFromState rsNoGo RNoGo
+                                                           ]
+
 type RatingStateMutator
   = RatingState -> RatingState
 
--- initialReportRatingState :: RatingState
--- initialReportRatingState = RatingState True True True True -- everything is possible
+initialReportRatingState :: RatingState
+initialReportRatingState = RatingState True True True True -- everything is possible
 
--- removeRatingFromState :: Rating -> RatingStateMutator
--- removeRatingFromState RGo       rs = rs{rsGo = False}
--- removeRatingFromState RAtention rs = rs{rsAtention = False}
--- removeRatingFromState RStop     rs = rs{rsStop = False}
--- removeRatingFromState RNoGo     rs = rs{rsNoGo = False}
--- removeRatingFromState _         rs = rs -- TODO??
+removeRatingFromState :: Rating -> RatingStateMutator
+removeRatingFromState RGo       rs = rs{rsGo = False}
+removeRatingFromState RAtention rs = rs{rsAtention = False}
+removeRatingFromState RStop     rs = rs{rsStop = False}
+removeRatingFromState RNoGo     rs = rs{rsNoGo = False}
+removeRatingFromState _         rs = rs -- TODO??
 
--- setRatingOfState :: Rating -> RatingStateMutator
--- setRatingOfState RGo       = removeRatingFromState RAtention . removeRatingFromState RStop . removeRatingFromState RNoGo
--- setRatingOfState RAtention = removeRatingFromState RGo . removeRatingFromState RStop . removeRatingFromState RNoGo
--- setRatingOfState RStop     = removeRatingFromState RGo . removeRatingFromState RAtention . removeRatingFromState RNoGo
--- setRatingOfState RNoGo     = removeRatingFromState RGo . removeRatingFromState RAtention . removeRatingFromState RStop
--- setRatingOfState _         = removeRatingFromState RGo . removeRatingFromState RAtention . removeRatingFromState RStop . removeRatingFromState RNoGo -- TODO??
+setRatingOfState :: Rating -> RatingStateMutator
+setRatingOfState RGo       = removeRatingFromState RAtention . removeRatingFromState RStop . removeRatingFromState RNoGo
+setRatingOfState RAtention = removeRatingFromState RGo . removeRatingFromState RStop . removeRatingFromState RNoGo
+setRatingOfState RStop     = removeRatingFromState RGo . removeRatingFromState RAtention . removeRatingFromState RNoGo
+setRatingOfState RNoGo     = removeRatingFromState RGo . removeRatingFromState RAtention . removeRatingFromState RStop
+setRatingOfState _         = removeRatingFromState RGo . removeRatingFromState RAtention . removeRatingFromState RStop . removeRatingFromState RNoGo -- TODO??
 
--- ratingFromRatingState :: RatingState -> Rating
--- ratingFromRatingState rs = let
---     mapFromState :: (RatingState -> Bool) -> Rating -> RatingState -> Maybe Rating
---     mapFromState getter result state = if getter state
---                                        then Just result
---                                        else Nothing
---     ratingFromSetOfRatings :: [Rating] -> Rating
---     ratingFromSetOfRatings [r] = r
---     ratingFromSetOfRatings rs' = RUnknown rs'
---   in ratingFromSetOfRatings . catMaybes $ map (\f -> f rs) [ mapFromState rsGo RGo
---                                                            , mapFromState rsAtention RAtention
---                                                            , mapFromState rsStop RStop
---                                                            , mapFromState rsNoGo RNoGo
---                                                            ]
+type RatingRuleFun
+  = License -> RatingStateMutator
+data RatingRule
+  = RatingRule
+  { rrDescription :: Text
+  , rrFunction :: RatingRuleFun
+  }
+instance Show RatingRule where
+  show (RatingRule desc _) = T.unpack desc
 
--- type RatingRuleFun
---   = Map LicenseFactClassifier Judgement -> RatingStateMutator
--- data RatingRule
---   = RatingRule
---   { rrDescription :: Text
---   , rrFunction :: RatingRuleFun
---   }
--- instance Show RatingRule where
---   show (RatingRule desc _) = T.unpack desc
+applyRatingRules :: [RatingRule] -> License -> Rating
+applyRatingRules rrls l = ratingFromRatingState $ foldl' (\oldS rrf -> rrf l oldS) initialReportRatingState (map rrFunction rrls)
+
+applyDefaultRatingRules :: License -> Rating
+applyDefaultRatingRules = applyRatingRules ratingRules
+
+ratingRules :: [RatingRule]
+ratingRules = let
+    addRule desc fun = tell . (:[]) $ RatingRule desc fun
+  in execWriter $ do
+    addRule "should have at least one positive rating to be Go" $ let
+        fun b j = b || (case j of
+                           PositiveJudgement _ -> True
+                           _ -> False)
+        hasPossitiveJudgements l = M.foldl' fun False . unpackSLSR $ getImpliedJudgement l
+      in \l -> if hasPossitiveJudgements l
+               then id
+               else removeRatingFromState RGo
+    addRule "only known NonCopyleft Licenses can be go" $
+      \l -> case getCalculatedCopyleft l of
+              Just NoCopyleft -> id
+              _ -> removeRatingFromState RGo
+    addRule "possitive Rating by BlueOak helps" $ \l -> case M.lookup (LFC ["BlueOak", "BOEntry"])  (unpackSLSR $ getImpliedJudgement l) of
+                                                          Just (PositiveJudgement _) -> removeRatingFromState RNoGo . removeRatingFromState RStop -- TODO: remove RAt* if no negative Judgement?
+                                                          Just (NegativeJudgement _) -> removeRatingFromState RGo
+                                                          _                          -> id
+    addRule "Fedora bad Rating implies at least Stop" $ \l -> case M.lookup (LFC ["FedoraProjectWiki", "FPWFact"])  (unpackSLSR $ getImpliedJudgement l) of
+      Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAtention
+      _                          -> id
+--     addRule "should have no negative ratings to be Go" $ let
+
+  
 
 -- ruleFunctionFromCondition :: (Map LicenseFactClassifier Judgement -> Bool) -> RatingStateMutator -> RatingRuleFun
 -- ruleFunctionFromCondition condition fun l = if condition l

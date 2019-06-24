@@ -96,6 +96,19 @@ instance LFRaw ScancodeData where
         Just otherUs -> map ("other",) otherUs
         Nothing -> []
     in CLSR $ urlsFromHomepage ++ urlsForText ++ urlsFromOsi ++ urlsFromOther
+  getImpliedCopyleft scd@ScancodeData{category=Nothing} = NoSLSR
+  getImpliedCopyleft scd@ScancodeData{category=Just c}  = case c of
+    "Hardware License" -> NoSLSR
+    "Patent License" -> NoSLSR
+    "Unstated License" -> NoSLSR
+    "Free Restricted" -> NoSLSR
+    "Proprietary Free" -> NoSLSR
+    _ -> SLSR (getLicenseFactClassifier scd) $ case c of
+          "Copyleft" -> Copyleft
+          "Copyleft Limited" -> WeakCopyleft
+          "Permissive" -> NoCopyleft
+          "Commercial" -> NoCopyleft
+          "Public Domain" -> NoCopyleft
 
 loadScancodeFactsFromYml :: FilePath -> FilePath -> IO Facts
 loadScancodeFactsFromYml folder yml = let
