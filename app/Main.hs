@@ -54,7 +54,7 @@ cleanupAndMakeOutputFolder = do
 
 writeMarkdowns :: FilePath -> [(LicenseName, License)] -> IO ()
 writeMarkdowns outputFolder licenses = let
-    markdownsDirectory = outputFolder </> "markdowns"
+    markdownsDirectory = outputFolder </> "md"
   in do
     createDirectory markdownsDirectory
     markdownFiles <- mapM (writeMarkdown markdownsDirectory) licenses

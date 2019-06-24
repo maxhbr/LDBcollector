@@ -52,7 +52,7 @@ loadGnuFactsFromByteString isFree isGCompatible content = let
     splitNodes :: Node -> [Node]
     splitNodes dl = children $ children dl !! 0
     nodeToFacts :: Node -> Facts
-    nodeToFacts = (reduceListOfChildren isFree isGCompatible) . splitNodes
+    nodeToFacts = reduceListOfChildren isFree isGCompatible . splitNodes
   in case (parse content :: Either ByteString Node) of
     Left err -> Left err
     Right n  -> Right (nodeToFacts n)
@@ -60,7 +60,7 @@ loadGnuFactsFromByteString isFree isGCompatible content = let
 loadGnuFactsFromFile :: Bool -> Bool -> FilePath -> IO Facts
 loadGnuFactsFromFile isFree isGCompatible htmlFile = do
   content <- B.readFile htmlFile
-  case (loadGnuFactsFromByteString isFree isGCompatible content) of
+  case loadGnuFactsFromByteString isFree isGCompatible content of
     Left err -> do
           Char8.putStrLn err
           return V.empty

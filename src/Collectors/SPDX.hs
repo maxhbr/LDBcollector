@@ -54,11 +54,13 @@ instance FromJSON SPDXEntry where
     <*> v .: "seeAlso"
     <*> v .: "isOsiApproved"
 instance LFRaw SPDXEntry where
-  getLicenseFactClassifier _ = LFC ["SPDX", "SPDXEntry"]
-  getImpliedNames e          = CLSR [spdxLicenseId e, spdxFullName e]
-  getImpliedFullName e       = RLSR 90 (spdxFullName e)
-  getImpliedId e             = RLSR 100 (spdxLicenseId e)
-  getImpliedURLs e           = CLSR $ [("SPDX details", spdxDetailsURL e)] ++ (map ("see also",) (spdxSeeAlso e))
+  getLicenseFactClassifier _                                 = LFC ["SPDX", "SPDXEntry"]
+  getImpliedNames e                                          = CLSR [spdxLicenseId e, spdxFullName e]
+  getImpliedFullName e                                       = RLSR 90 (spdxFullName e)
+  getImpliedId e                                             = RLSR 100 (spdxLicenseId e)
+  getImpliedURLs e                                           = CLSR $ ("SPDX details", spdxDetailsURL e) : map ("see also",) (spdxSeeAlso e)
+  getImpliedJudgement e@SPDXEntry{spdxLicIsOSIApproved=True} = SLSR (getLicenseFactClassifier e) $ PositiveJudgement "Is OSI Approved"
+  getImpliedJudgement SPDXEntry{spdxLicIsOSIApproved=False}  = NoSLSR
 
 data SPDXList
   = SPDXList String [SPDXEntry] String

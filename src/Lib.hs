@@ -93,13 +93,15 @@ calculateSPDXLicenses initialLicenseMapping = calculateLicenses initialLicenseMa
 
 writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
 writeLicenseJSONs outputFolder licenses = do
+  let jsonOutputFolder = outputFolder </> "json"
+  createDirectory jsonOutputFolder
   jsons <- mapM (\(i,l) -> let
                     outputFile = i ++ ".json"
                     pOutputFile = i ++ ".pretty.json"
                 in do
-                   BL.writeFile (outputFolder </> outputFile) (encode l)
-                   BL.writeFile (outputFolder </> pOutputFile) (encodePretty l)
+                   BL.writeFile (jsonOutputFolder </> outputFile) (encode l)
+                   BL.writeFile (jsonOutputFolder </> pOutputFile) (encodePretty l)
                    return outputFile) licenses
-  BL.writeFile (outputFolder </> "_all.json") (encodePretty licenses)
-  BL.writeFile (outputFolder </> "_index.json") (encodePretty jsons)
+  BL.writeFile (jsonOutputFolder </> "_all.json") (encodePretty licenses)
+  BL.writeFile (jsonOutputFolder </> "_index.json") (encodePretty jsons)
 
