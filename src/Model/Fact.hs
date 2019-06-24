@@ -133,7 +133,7 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedFullName _ = getEmptyLicenseStatement
   getImpliedId :: a -> RankedLicenseStatementResult LicenseName
   getImpliedId _ = getEmptyLicenseStatement
-  getImpliedURLs :: a -> CollectedLicenseStatementResult (String, URL)
+  getImpliedURLs :: a -> CollectedLicenseStatementResult (Maybe String, URL)
   getImpliedURLs _ = getEmptyLicenseStatement
   getImpliedText :: a -> RankedLicenseStatementResult Text
   getImpliedText _ = getEmptyLicenseStatement

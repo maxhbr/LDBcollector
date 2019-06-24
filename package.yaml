@@ -39,6 +39,7 @@ dependencies:
 - raw-strings-qq
 - hexml
 - lucid
+- http-client
 
 library:
   source-dirs: src

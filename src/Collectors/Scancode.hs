@@ -84,16 +84,16 @@ instance LFRaw ScancodeData where
   getImpliedText scd = RLSR 50 (decodeUtf8 $ text scd)
   getImpliedURLs scd = let
       urlsFromHomepage = case homepageUrl scd of
-        Just homepageU -> [("Homepage", homepageU)]
+        Just homepageU -> [(Just "Homepage", homepageU)]
         Nothing -> []
       urlsForText = case textUrls scd of
-        Just textUs -> map ("Text",) textUs
+        Just textUs -> map (Just "Text",) textUs
         Nothing -> []
       urlsFromOsi = case osiUrl scd of
-        Just osiU -> [("osi", osiU)]
+        Just osiU -> [(Just "osi", osiU)]
         Nothing -> []
       urlsFromOther = case otherUrls scd of
-        Just otherUs -> map ("other",) otherUs
+        Just otherUs -> map (Nothing,) otherUs
         Nothing -> []
     in CLSR $ urlsFromHomepage ++ urlsForText ++ urlsFromOsi ++ urlsFromOther
   getImpliedCopyleft scd@ScancodeData{category=Nothing} = NoSLSR

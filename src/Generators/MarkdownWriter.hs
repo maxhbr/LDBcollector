@@ -19,7 +19,6 @@ import           Processors.Rating
 mkCodeBlock :: String -> String
 mkCodeBlock code = "\n```\n" ++ code ++ "\n```\n"
 
-
 renderNames :: CollectedLicenseStatementResult String -> String
 renderNames names = let
     list = unpackCLSR names
@@ -44,11 +43,12 @@ renderJudgements jdgs = let
       " (by " ++ show k ++ ")"
   in M.foldlWithKey fun "## Comments:" jdgsMap
 
-renderURLs :: CollectedLicenseStatementResult (String, String) -> String
+renderURLs :: CollectedLicenseStatementResult (Maybe String, String) -> String
 renderURLs urls = let
     list = unpackCLSR urls
-    fun :: String -> (String, String) -> String
-    fun old (desc, url) = old ++ "\n - **" ++ desc ++ ":** " ++ url
+    fun :: String -> (Maybe String, String) -> String
+    fun old (Just desc, url) = old ++ "\n - **" ++ desc ++ ":** " ++ url
+    fun old (Nothing, url) = old ++ "\n - " ++ url
   in foldl fun "## URLs:" list
 
 renderOSADLRule :: License -> String
