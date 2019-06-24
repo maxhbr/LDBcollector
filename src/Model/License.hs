@@ -39,14 +39,15 @@ instance ToJSON License where
 instance Show License where
   show (License fs) = "\n" ++ unlines (map show (V.toList fs)) ++ "\n"
 instance LFRaw License where
-  getLicenseFactClassifier _       = LFC []
-  getImpliedNames (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedNames fs
-  getImpliedFullName (License fs)  = mergeLicenseStatementResultList $ V.map getImpliedFullName fs
-  getImpliedId (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedId fs
-  getImpliedURLs (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
-  getImpliedText (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedText fs
-  getImpliedJudgement (License fs) = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
-  getImpliedCopyleft (License fs) = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
+  getLicenseFactClassifier _         = LFC []
+  getImpliedNames (License fs)       = mergeLicenseStatementResultList $ V.map getImpliedNames fs
+  getImpliedFullName (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedFullName fs
+  getImpliedId (License fs)          = mergeLicenseStatementResultList $ V.map getImpliedId fs
+  getImpliedURLs (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
+  getImpliedText (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedText fs
+  getImpliedJudgement (License fs)   = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
+  getImpliedCopyleft (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
+  getImpliedObligations (License fs) = mergeLicenseStatementResultList $ V.map getImpliedObligations fs
 
 --------------------------------------------------------------------------------
 -- first basic facts

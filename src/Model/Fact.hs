@@ -11,6 +11,7 @@ module Model.Fact
   , Facts
   , Judgement (..)
   , CopyleftKind (..), pessimisticMergeCopyleft --, LicenseTaxonomy (..)
+  , LicenseObligations (..), ImpliedRight (..), ImpliedCondition (..), ImpliedLimitation (..)
   ) where
 
 import qualified Prelude as P
@@ -99,11 +100,33 @@ pessimisticMergeCopyleft NoCopyleft NoCopyleft = NoCopyleft
 --   deriving (Eq, Show, Generic)
 -- instance ToJSON LicenseTaxonomy
 
+data ImpliedRight
+  = ImpliedRight String String
+  deriving (Eq, Show, Generic)
+instance ToJSON ImpliedRight
+data ImpliedCondition
+  = ImpliedCondition String String
+  deriving (Eq, Show, Generic)
+instance ToJSON ImpliedCondition
+data ImpliedLimitation
+  = ImpliedLimitation String String
+  deriving (Eq, Show, Generic)
+instance ToJSON ImpliedLimitation
+data LicenseObligations
+  = LicenseObligations [ImpliedRight] [ImpliedCondition] [ImpliedLimitation]
+  deriving (Eq, Show, Generic)
+instance ToJSON LicenseObligations where
+  toJSON (LicenseObligations irs ics ils) = object [ "obligations" .= object [ "rights" .= irs
+                                                                             , "conditions" .= ics
+                                                                             , "limitations" .= ils ] ]
+
 type LicenseName
   = String
 
 class (Show a, ToJSON a) => LFRaw a where
   getLicenseFactClassifier :: a -> LicenseFactClassifier
+  mkSLSR :: (Show b, ToJSON b) => a -> b -> ScopedLicenseStatementResult b
+  mkSLSR a = SLSR (getLicenseFactClassifier a)
   -- Statements:
   getImpliedNames :: a -> CollectedLicenseStatementResult LicenseName
   getImpliedFullName :: a -> RankedLicenseStatementResult LicenseName
@@ -125,6 +148,8 @@ class (Show a, ToJSON a) => LFRaw a where
       fun o Nothing = o
       fun (Just k1) (Just k2) = Just (pessimisticMergeCopyleft k1 k2)
     in foldl' fun Nothing . map Just . M.elems . unpackSLSR . getImpliedCopyleft
+  getImpliedObligations :: a -> RankedLicenseStatementResult LicenseObligations
+  getImpliedObligations _ = getEmptyLicenseStatement
 
 getImplicationJSONFromLFRaw :: (LFRaw a) => a -> Value
 getImplicationJSONFromLFRaw a = let
@@ -149,7 +174,11 @@ getImplicationJSONFromLFRaw a = let
         Nothing        -> []
         Just cCopyleft -> [ "calculatedCopyleft" .= cCopyleft
                           , "impliedCopyleft" .= iCopyleft ]
-  in object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement ++ copyleft
+    obligationsJ = case unpackRLSR (getImpliedObligations a) of
+      Just os -> toJSON os
+      Nothing -> object []
+  in mergeAesonL [ object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement ++ copyleft
+                 , obligationsJ ]
 
 type URL
   = String
@@ -180,6 +209,7 @@ instance LFRaw LicenseFact where
   getImpliedText (LicenseFact _ raw)           = getImpliedText raw
   getImpliedJudgement (LicenseFact _ raw)      = getImpliedJudgement raw
   getImpliedCopyleft (LicenseFact _ raw)       = getImpliedCopyleft raw
+  getImpliedObligations (LicenseFact _ raw)    = getImpliedObligations raw
 
 type Facts
   = Vector LicenseFact

@@ -31,7 +31,7 @@ instance ToJSON FedoraProjectWikiFact_Core
 class HasFedoraProjectWikiFactCore a where
   getFedoraProjectWikiCore :: a -> FedoraProjectWikiFact_Core
   getFullNameFromCore :: a -> LicenseName
-  getFullNameFromCore a = case (getFedoraProjectWikiCore a) of
+  getFullNameFromCore a = case getFedoraProjectWikiCore a of
     (FedoraProjectWikiFact_Core fn _ _) -> fn
 
 -- Full Name,FSF Free?,Upstream URL,Notes
@@ -55,7 +55,7 @@ data FedoraProjectWikiFact_Short
 instance ToJSON FedoraProjectWikiFact_Short
 instance FromNamedRecord FedoraProjectWikiFact_Short where
     parseNamedRecord r = FedoraProjectWikiFact_Short <$> (parseNamedRecord r :: C.Parser FedoraProjectWikiFact_Core)
-                                                     <*> r C..: "Short Name"
+                                                     <*> r C..: "Short Name" -- Short names are of bad quality here
 instance HasFedoraProjectWikiFactCore FedoraProjectWikiFact_Short where
   getFedoraProjectWikiCore (FedoraProjectWikiFact_Short c _) = c
 
@@ -105,21 +105,11 @@ instance ToJSON FedoraProjectWikiFact where
     in mergeAesonL [ object [ "licenseType" A..= t
                             , "rating" A..= rankingFromData ]
                    , aesonFromData ]
-
-getImpliedNamesFromShort :: FedoraProjectWikiFact_Short -> [LicenseName]
-getImpliedNamesFromShort short@(FedoraProjectWikiFact_Short _ sn) = case sn of
-  Just actualSN -> [getFullNameFromCore short, actualSN ]
-  Nothing       -> [getFullNameFromCore short]
-getImpliedNamesFromFull :: FedoraProjectWikiFact_Full -> [LicenseName]
-getImpliedNamesFromFull (FedoraProjectWikiFact_Full short _ _) = getImpliedNamesFromShort short
 instance LFRaw FedoraProjectWikiFact where
   getLicenseFactClassifier _                                     = LFC ["FedoraProjectWiki", "FPWFact"]
-  getImpliedNames (FedoraProjectWikiFact _ (Left (Left full)))   = CLSR (getImpliedNamesFromFull full)
-  getImpliedNames (FedoraProjectWikiFact _ (Left (Right short))) = CLSR (getImpliedNamesFromShort short)
+  getImpliedNames (FedoraProjectWikiFact _ (Left (Left full)))   = CLSR [getFullNameFromCore full]
+  getImpliedNames (FedoraProjectWikiFact _ (Left (Right short))) = CLSR [getFullNameFromCore short]
   getImpliedNames (FedoraProjectWikiFact _ (Right bad))          = CLSR [getFullNameFromCore bad]
-  getImpliedFullName (FedoraProjectWikiFact _ (Left (Left full)))   = RLSR 10 (getFullNameFromCore full)
-  getImpliedFullName (FedoraProjectWikiFact _ (Left (Right short))) = RLSR 10 (getFullNameFromCore short)
-  getImpliedFullName (FedoraProjectWikiFact _ (Right bad))          = RLSR 10 (getFullNameFromCore bad)
   getImpliedJudgement fpwf@(FedoraProjectWikiFact _ (Right _))   = SLSR (getLicenseFactClassifier fpwf) $ NegativeJudgement "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
   getImpliedJudgement fpwf                                       = SLSR (getLicenseFactClassifier fpwf) $ PositiveJudgement "This software Licenses is OK for Fedora"
 

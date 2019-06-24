@@ -2,10 +2,12 @@
 #! nix-shell -i bash -p glibcLocales
 set -e
 
+cd "$(dirname "$0")"
+
 stack build
 stack exec LDBcollector-exe
 
-if [[ "$#" -eq 0 ]] || [[ "$1" != "--fast" ]]; then
+if [[ "$1" == "--push" ]]; then
     if [[ -d "_generated" ]]; then
         cd _generated
         git init
@@ -15,8 +17,6 @@ if [[ "$#" -eq 0 ]] || [[ "$1" != "--fast" ]]; then
         git add .
         git commit -m "Commit generated output"
 
-        if [[ "$1" == "--push" ]]; then
-            git push --force "https://github.com/maxhbr/LDBcollector.git" master:generated
-        fi
+        git push --force "https://github.com/maxhbr/LDBcollector.git" master:generated
     fi
 fi
