@@ -76,7 +76,13 @@ instance LFRaw BOEntry where
        case r of
          "Lead" -> NegativeJudgement ratingText
          _      -> PositiveJudgement ratingText
-  getImpliedURLs (BOEntry _ _ bol)        = CLSR [(Just "BlueOak", url bol)]
+  getImpliedURLs (BOEntry _ _ bol)        = let
+      urlbol = url bol
+      isSPDX = ("spdx.org" `isInfixOf` urlbol)
+      urlClass = if isSPDX
+                 then Just "SPDX"
+                 else Nothing
+    in CLSR [(urlClass, urlbol)]
   getImpliedCopyleft boe                  = SLSR (getLicenseFactClassifier boe) NoCopyleft
 
 loadBlueOakFactsFromString :: ByteString -> Facts

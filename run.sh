@@ -4,8 +4,15 @@ set -e
 
 cd "$(dirname "$0")"
 
-stack build
-stack exec LDBcollector-exe
+
+if [[ "$1" != "--only" ]]; then
+    stack build
+    stack exec LDBcollector-exe
+fi
+
+if [[ "$1" == "--only" ]]; then
+    shift
+fi
 
 if [[ "$1" == "--push" ]]; then
     if [[ -d "_generated" ]]; then

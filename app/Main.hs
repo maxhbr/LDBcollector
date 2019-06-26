@@ -52,29 +52,6 @@ cleanupAndMakeOutputFolder = do
 
   return outputFolder
 
-writeMarkdowns :: FilePath -> [(LicenseName, License)] -> IO ()
-writeMarkdowns outputFolder licenses = let
-    markdownsDirectory = outputFolder </> "md"
-  in do
-    createDirectory markdownsDirectory
-    markdownFiles <- mapM (writeMarkdown markdownsDirectory) licenses
-
-    --   htmlFiles <- mapM (\f -> do
-    --             mdText <- T.readFile f
-    --             pandocResult <- P.runIO $ P.readMarkdown P.def mdText >>= P.writeHtml5String P.def
-    --             return $ case pandocResult of
-    --               Right html -> do
-    --                 let outHTML = (f ++ ".html")
-    --                 T.writeFile outHTML html
-    --                 return $ Just outHTML
-    --               Left err -> do
-    --                 putStrLn (show err)
-    --                 return Nothing
-    --                     ) markdownFiles
-    -- -- TODO: write index.html
-
-    putStrLn "done writing markdowns"
-
 main :: IO ()
 main = do
   setLocaleEncoding utf8
@@ -86,5 +63,3 @@ main = do
 
   writeLicenseJSONs outputFolder licenses
   writeMarkdowns outputFolder licenses
-
-  -- writeRatedReport outputFolder licenses

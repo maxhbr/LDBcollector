@@ -12,6 +12,7 @@ module Model.License
   , License (..)
   , getFactJSON
   , Licenses
+  , containsFactOfClass
   ) where
 
 import qualified Prelude as P
@@ -45,9 +46,11 @@ instance LFRaw License where
   getImpliedId (License fs)          = mergeLicenseStatementResultList $ V.map getImpliedId fs
   getImpliedURLs (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
   getImpliedText (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedText fs
+  getImpliedDescription (License fs) = mergeLicenseStatementResultList $ V.map getImpliedDescription fs
   getImpliedJudgement (License fs)   = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
   getImpliedCopyleft (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
   getImpliedObligations (License fs) = mergeLicenseStatementResultList $ V.map getImpliedObligations fs
+  getImpliedRatingState (License fs) = mergeLicenseStatementResultList $ V.map getImpliedRatingState fs
 
 --------------------------------------------------------------------------------
 -- first basic facts
@@ -100,8 +103,8 @@ getLicenseFromFacts shortname otherShortnames fs = let
       in not (null (allShortnames `intersect` impliedNames))
   in License $ mkLicenseShortnameFact shortname otherShortnames `V.cons` V.filter shortnamefilter fs
 
--- containsFactOfClass :: License -> LicenseFactClassifier -> Bool
--- containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
+containsFactOfClass :: License -> LicenseFactClassifier -> Bool
+containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
 -- containsFactOfType :: License -> Text -> Bool
 -- containsFactOfType (License fs) t = (\f -> case getLicenseFactClassifier f of
 --                                         LFC []  -> False

@@ -6,24 +6,25 @@ module MyPrelude
     , mergeAeson, mergeAesonL
     ) where
 
-import Prelude as X
-import GHC.Generics as X
-import Data.Maybe as X
-import Data.Text as T hiding (map)
-import Data.Text as X (Text)
-import qualified Data.Vector as V
-import Data.Vector as X (Vector)
-import Data.Map as X (Map)
-import Data.Aeson as X
-import Data.List as X
-import qualified Data.HashMap.Lazy as HML
+import           Prelude as X
+import           GHC.Generics as X
 -- import Data.ByteString.Lazy as B
-import Data.ByteString.Lazy as X (ByteString)
-import Debug.Trace as X (trace)
-import System.FilePath as X
-import System.Directory as X
-import System.IO as X (hPutStrLn, stderr)
-import Control.Applicative as X ((<|>))
+import           Control.Applicative as X
+import           Data.Aeson as X
+import           Data.ByteString.Lazy as X (ByteString)
+import qualified Data.HashMap.Lazy as HML
+import           Data.List as X
+import           Data.Map as X (Map)
+import           Data.Maybe as X
+import           Data.Monoid as X ((<>), mempty, mconcat)
+import           Data.Text as T hiding (map)
+import           Data.Text as X (Text)
+import           Data.Vector as X (Vector)
+import qualified Data.Vector as V
+import           Debug.Trace as X (trace)
+import           System.Directory as X
+import           System.FilePath as X
+import           System.IO as X (hPutStrLn, stderr)
 
 tShow :: (Show a) => a -> Text
 tShow = T.pack . show

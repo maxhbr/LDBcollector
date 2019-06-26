@@ -25,7 +25,9 @@ instance LFRaw OSILicense where
                             , olIdentifiers = is
                             , olOther_names = os } = CLSR $ map T.unpack $ [i,n] ++ map oiIdentifier is ++ map oonName os
   getImpliedURLs OSILicense{ olLinks = links }     = CLSR $ map (\l -> (Just . T.unpack $ olNote l, T.unpack $ olUrl l)) links
-  getImpliedJudgement osil@OSILicense{ olOther_names = os } = SLSR (getLicenseFactClassifier osil) . NeutralJudgement . unlines . nub . map T.unpack . catMaybes $ map oonNote os
+  getImpliedJudgement osil@OSILicense{ olOther_names = os } = case unlines . nub . map T.unpack . catMaybes $ map oonNote os of
+    ""       -> NoSLSR
+    comments -> SLSR (getLicenseFactClassifier osil) (NeutralJudgement comments)
 
 loadOSIFacts :: IO Facts
 loadOSIFacts = let

@@ -23,6 +23,7 @@ data CALFactRaw
   { name :: LicenseName
   , title :: Maybe String
   , spdxId :: Maybe LicenseName
+  , nickname :: Maybe LicenseName
   , featured :: Maybe String
   , hidden :: Maybe String
   , description :: Maybe String
@@ -37,16 +38,22 @@ instance ToJSON ByteString where
 instance ToJSON CALFactRaw
 instance LFRaw CALFactRaw where
   getLicenseFactClassifier _                              = LFC ["choosealicense.com", "CALFact"]
-  getImpliedNames CALFactRaw{name = sn, spdxId = sid}     = CLSR $ sn : (case sid of
+  getImpliedNames CALFactRaw{name = sn
+                            , spdxId = sid
+                            , nickname = nid}             = CLSR $ sn : (case sid of
                                                                            Just v  -> [v]
-                                                                           Nothing -> [])
-  getImpliedJudgement cfr                                 = SLSR (getLicenseFactClassifier cfr) $
-                                                            case featured cfr of
-                                                              Just "true" -> PositiveJudgement "This License is featured by choosealicense.com"
-                                                              _           -> NeutralJudgement ""
+                                                                           Nothing -> []) ++ (case nid of
+                                                                                                Just v  -> [v]
+                                                                                                Nothing -> [])
+  getImpliedDescription cfr                               = case description cfr of
+        Just cmt -> RLSR 70 cmt
+        Nothing  -> NoRLSR
+  getImpliedJudgement cfr                                 = case featured cfr of
+                                                              Just "true" -> mkSLSR cfr $ PositiveJudgement (" This License is featured by choosealicense.com")
+                                                              _           -> NoSLSR
   getImpliedObligations CALFactRaw{ permissions = perms
                                   , conditions = conds
-                                  , limitations = limits} = RLSR 70 (LicenseObligations (map (`ImpliedRight` "") perms) (map (`ImpliedCondition` "") conds) (map (`ImpliedLimitation` "") limits))
+                                  , limitations = limits} = RLSR 70 (LicenseObligations (map ImpliedRight perms) (map ImpliedCondition conds) (map ImpliedLimitation limits))
 
 extractValueFromText :: [String] -> String -> Maybe String
 extractValueFromText ls key = let
@@ -74,6 +81,7 @@ loadCalFactFromFile calFolder calFile = let
                         (CALFactRaw n
                                     (extractValueFromText ls "title")
                                     (extractValueFromText ls "spdx-id")
+                                    (extractValueFromText ls "nickname")
                                     (extractValueFromText ls "featured")
                                     (extractValueFromText ls "hidden")
                                     (extractValueFromText ls "description")

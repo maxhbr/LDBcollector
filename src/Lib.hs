@@ -31,6 +31,7 @@ import           Collectors.OSLC as X
 import           Collectors.Google as X
 import           Collectors.OKFN as X
 import           Collectors.Gnu as X
+import           Collectors.Override as X
 
 import           Processors.Rating as X
 
@@ -53,6 +54,7 @@ readFacts dataDir = let
     factsFromGoogle <- loadGoogleFacts
     factsFromOkfn <- loadOkfnFacts $ prependDataDir "./okfn-licenses.csv"
     factsFromGnu <- loadGnuFacts $ prependDataDir "./gnu.org"
+    factsFromOverride <- loadOverrideFacts
     let facts = V.concat [ factsFromSPDX
                          , factsFromBlueOak
                          , factsFromOCPT

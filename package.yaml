@@ -40,6 +40,8 @@ dependencies:
 - hexml
 - lucid
 - http-client
+- pandoc
+- pandoc-types
 
 library:
   source-dirs: src

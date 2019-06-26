@@ -1,5 +1,4 @@
 {-# LANGUAGE DeriveGeneric #-}
-{-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TupleSections #-}
 module Collectors.Scancode
@@ -11,9 +10,6 @@ import qualified Prelude as P
 import           MyPrelude hiding (id, ByteString)
 import           Collectors.Common
 
-import           System.FilePath
-import           System.Directory
-import           Data.List
 import qualified Data.Vector as V
 import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
@@ -90,7 +86,7 @@ instance LFRaw ScancodeData where
         Just textUs -> map (Just "Text",) textUs
         Nothing -> []
       urlsFromOsi = case osiUrl scd of
-        Just osiU -> [(Just "osi", osiU)]
+        Just osiU -> [(Just "OSI Page", osiU)]
         Nothing -> []
       urlsFromOther = case otherUrls scd of
         Just otherUs -> map (Nothing,) otherUs
@@ -109,6 +105,7 @@ instance LFRaw ScancodeData where
           "Permissive" -> NoCopyleft
           "Commercial" -> NoCopyleft
           "Public Domain" -> NoCopyleft
+          _ -> undefined -- TODO?
 
 loadScancodeFactsFromYml :: FilePath -> FilePath -> IO Facts
 loadScancodeFactsFromYml folder yml = let

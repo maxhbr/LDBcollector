@@ -22,6 +22,7 @@ import qualified Data.Vector as V
 import qualified Data.Map as M
 
 import Model.Statement as X
+import Model.LicenseProperties as X
 
 data Judgement
   = PositiveJudgement String
@@ -101,24 +102,36 @@ pessimisticMergeCopyleft NoCopyleft NoCopyleft = NoCopyleft
 -- instance ToJSON LicenseTaxonomy
 
 data ImpliedRight
-  = ImpliedRight String String
-  deriving (Eq, Show, Generic)
+  = ImpliedRight String
+  | ImpliedRightWithDesc String String
+  deriving (Eq, Generic)
+instance Show ImpliedRight where
+  show (ImpliedRight r) = r
+  show (ImpliedRightWithDesc r desc) = r ++ " (" ++ desc ++ ")"
 instance ToJSON ImpliedRight
 data ImpliedCondition
-  = ImpliedCondition String String
-  deriving (Eq, Show, Generic)
+  = ImpliedCondition String
+  | ImpliedConditionWithDesc String String
+  deriving (Eq, Generic)
+instance Show ImpliedCondition where
+  show (ImpliedCondition c) = c
+  show (ImpliedConditionWithDesc c desc) = c ++ " (" ++ desc ++ ")"
 instance ToJSON ImpliedCondition
 data ImpliedLimitation
-  = ImpliedLimitation String String
-  deriving (Eq, Show, Generic)
+  = ImpliedLimitation String
+  | ImpliedLimitationWithDesc String String
+  deriving (Eq, Generic)
+instance Show ImpliedLimitation where
+  show (ImpliedLimitation l) = l
+  show (ImpliedLimitationWithDesc l desc) = l ++ " (" ++ desc ++ ")"
 instance ToJSON ImpliedLimitation
 data LicenseObligations
   = LicenseObligations [ImpliedRight] [ImpliedCondition] [ImpliedLimitation]
   deriving (Eq, Show, Generic)
 instance ToJSON LicenseObligations where
-  toJSON (LicenseObligations irs ics ils) = object [ "obligations" .= object [ "rights" .= irs
-                                                                             , "conditions" .= ics
-                                                                             , "limitations" .= ils ] ]
+  toJSON (LicenseObligations irs ics ils) = object [ "rights" .= irs
+                                                   , "conditions" .= ics
+                                                   , "limitations" .= ils ]
 
 type LicenseName
   = String
@@ -137,6 +150,8 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedURLs _ = getEmptyLicenseStatement
   getImpliedText :: a -> RankedLicenseStatementResult Text
   getImpliedText _ = getEmptyLicenseStatement
+  getImpliedDescription :: a -> RankedLicenseStatementResult String
+  getImpliedDescription _ = getEmptyLicenseStatement
   getImpliedJudgement :: a -> ScopedLicenseStatementResult Judgement
   getImpliedJudgement _ = getEmptyLicenseStatement
   getImpliedCopyleft :: a -> ScopedLicenseStatementResult CopyleftKind
@@ -150,34 +165,39 @@ class (Show a, ToJSON a) => LFRaw a where
     in foldl' fun Nothing . map Just . M.elems . unpackSLSR . getImpliedCopyleft
   getImpliedObligations :: a -> RankedLicenseStatementResult LicenseObligations
   getImpliedObligations _ = getEmptyLicenseStatement
+  getImpliedRatingState :: a -> ScopedLicenseStatementResult RatingState
+  getImpliedRatingState _ = getEmptyLicenseStatement
 
 getImplicationJSONFromLFRaw :: (LFRaw a) => a -> Value
 getImplicationJSONFromLFRaw a = let
     impliedNames = case getImpliedNames a of
       NoCLSR -> []
-      ins    -> [ "impliedNames" .= ins ]
+      ins    -> [ "__impliedNames" .= ins ]
     impliedId = case getImpliedId a of
       NoRLSR -> []
-      iid    -> [ "impliedId" .= iid ]
+      iid    -> [ "__impliedId" .= iid ]
     impliedURLs = case getImpliedURLs a of
       NoCLSR -> []
-      iurls  -> [ "impliedURLs" .= iurls ]
+      iurls  -> [ "__impliedURLs" .= iurls ]
     impliedText = case getImpliedText a of
       NoRLSR -> []
-      itext  -> [ "impliedText" .= itext ]
+      itext  -> [ "__impliedText" .= itext ]
     impliedJudgement = case getImpliedJudgement a of
       NoSLSR -> []
-      ijudge -> [ "impliedJudgement" .= ijudge ]
+      ijudge -> [ "__impliedJudgement" .= ijudge ]
     copyleft = let
         iCopyleft = getImpliedCopyleft a
       in case getCalculatedCopyleft a of
         Nothing        -> []
-        Just cCopyleft -> [ "calculatedCopyleft" .= cCopyleft
-                          , "impliedCopyleft" .= iCopyleft ]
+        Just cCopyleft -> [ "__calculatedCopyleft" .= cCopyleft
+                          , "__impliedCopyleft" .= iCopyleft ]
     obligationsJ = case unpackRLSR (getImpliedObligations a) of
-      Just os -> toJSON os
+      Just os -> object [ "__obligations" .= toJSON os ]
       Nothing -> object []
-  in mergeAesonL [ object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement ++ copyleft
+    ratingState = case getImpliedRatingState a of
+      NoSLSR -> []
+      iRatingState -> [ "__impliedRatingState" .= iRatingState ]
+  in mergeAesonL [ object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement ++ copyleft ++ ratingState
                  , obligationsJ ]
 
 type URL
@@ -195,7 +215,7 @@ instance ToJSON LicenseFact where
       lfc = getLicenseFactClassifier a
     in object [ tShow lfc .= mergeAesonL [ toJSON a
                                          , object [ "_sourceURL" .= toJSON url ]
-                                         , object [ "implications" .= getImplicationJSONFromLFRaw a ]]]
+                                         , object [ "_implications" .= getImplicationJSONFromLFRaw a ]]]
   toJSON (LicenseFact Nothing a) = let
       lfc = getLicenseFactClassifier a
     in object [ tShow lfc .= mergeAesonL [ toJSON a
@@ -207,9 +227,12 @@ instance LFRaw LicenseFact where
   getImpliedId (LicenseFact _ raw)             = getImpliedId raw
   getImpliedURLs (LicenseFact _ raw)           = getImpliedURLs raw
   getImpliedText (LicenseFact _ raw)           = getImpliedText raw
+  getImpliedDescription (LicenseFact _ raw)    = getImpliedDescription raw
   getImpliedJudgement (LicenseFact _ raw)      = getImpliedJudgement raw
   getImpliedCopyleft (LicenseFact _ raw)       = getImpliedCopyleft raw
   getImpliedObligations (LicenseFact _ raw)    = getImpliedObligations raw
+  getImpliedRatingState (LicenseFact _ raw)    = getImpliedRatingState raw
+
 
 type Facts
   = Vector LicenseFact
