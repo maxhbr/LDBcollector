@@ -4,6 +4,7 @@ module MyPrelude
     ( module X
     , tShow
     , mergeAeson, mergeAesonL
+    , Inlineable (..), Blockable (..)
     ) where
 
 import           Prelude as X
@@ -22,6 +23,7 @@ import           Data.Text as X (Text)
 import           Data.Vector as X (Vector)
 import qualified Data.Vector as V
 import           Debug.Trace as X (trace)
+import           Text.Pandoc.Builder as X (Pandoc, Blocks, Inlines)
 import           System.Directory as X
 import           System.FilePath as X
 import           System.IO as X (hPutStrLn, stderr)
@@ -43,3 +45,9 @@ mergeAesonL = Object . HML.unions . map (\case
                                             (Object x) -> x
                                             v          -> "value" .= v
                                         ) . map toJSON
+
+class Inlineable a where
+  toInline :: a -> Inlines
+
+class Blockable a where
+  toBlock :: a -> Blocks

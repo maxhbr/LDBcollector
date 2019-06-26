@@ -20,7 +20,6 @@ import qualified Data.Aeson.Lens as AL
 import           Data.Char (toUpper)
 import qualified Text.Pandoc as P
 import qualified Text.Pandoc.Builder as P
-import           Text.Pandoc.Builder (Pandoc, Blocks, Inlines)
 import qualified Data.ByteString.Lazy as BL
 import           Control.Monad
 
@@ -28,12 +27,8 @@ import           Model.License
 import           Model.Query
 import           Processors.Rating
 
--- renderNames :: CollectedLicenseStatementResult String -> [LicenseName] -> String
--- renderNames names otherNames = let
---     list = unpackCLSR names
---     fun :: String -> String -> String
---     fun old n = old ++ "\n   - " ++ n
---   in foldl fun "- other names:" (filter (`isNotElemUpToCase` otherNames) list)
+renderSource :: LicenseFactClassifier -> Inlines
+renderSource lfc = P.space <> P.text "(source: " <> toInline lfc <> P.text ")"
 
 renderDetails :: License -> LicenseName -> LicenseName -> Blocks
 renderDetails lic shortname fullname = let
@@ -45,9 +40,8 @@ renderDetails lic shortname fullname = let
         isNotElemUpToCase :: String -> [String] -> Bool
         isNotElemUpToCase needle hay = let
           hAY = map (map toUpper) hay
-          in not (map toUpper needle `elem` hAY)
-      in case unpackCLSR (getImpliedNames lic) of
-        names -> (filter (`isNotElemUpToCase` [shortname, fullname]) names)
+          in map toUpper needle `notElem` hAY
+      in filter (`isNotElemUpToCase` [shortname, fullname]) (unpackCLSR (getImpliedNames lic))
   in P.simpleTable [P.para (P.text "Key"), P.para (P.text "Value")]
     (map (map (P.para . P.text))
       ([ ["Fullname", fullname]
@@ -56,11 +50,11 @@ renderDetails lic shortname fullname = let
        ] ++ copyleftRow))
     <> P.para (P.strong (P.text "Other Names:"))
     <> P.bulletList (map (P.para . P.code) otherNames)
-  
+
 renderDescription :: License -> Blocks
 renderDescription lic = case unpackRLSR (getImpliedDescription lic) of
   Just desc -> P.header 2 (P.text "Description")
-    <> P.para (P.text desc)
+    <> P.blockQuote (P.para (P.text desc))
   Nothing -> mempty
 
 renderJudgements :: License -> Blocks
@@ -68,23 +62,17 @@ renderJudgements lic = let
     jdgsMap = unpackSLSR (getImpliedJudgement lic)
     fun :: [Blocks] -> LicenseFactClassifier -> Judgement -> [Blocks]
     fun old k j = let
-        fun' d = P.space <> P.text d <> P.text (" (by " ++ show k ++ ")")
+        fun' d = P.space <> P.text d <> renderSource k
       in old ++ [P.para (case j of
-                           PositiveJudgement d -> P.strong (P.text "[possitive]") <> fun' d
-                           NeutralJudgement d  -> P.strong (P.text "[neutral]") <> fun' d
-                           NegativeJudgement d -> P.strong (P.text "[negative]") <> fun' d )]
+                           PositiveJudgement d -> P.strong (P.text "↑") <> fun' d
+                           NeutralJudgement d  -> fun' d
+                           NegativeJudgement d -> P.strong (P.text "↓") <> fun' d )]
   in P.header 2 (P.text "Comments")
     <> P.bulletList (M.foldlWithKey fun [] jdgsMap)
 
 renderObligations :: License -> Blocks
 renderObligations lic = case unpackRLSR (getImpliedObligations lic) of
-  Just (LicenseObligations rights conditions limitations) ->
-    P.header 2 (P.text "Obligations")
-    <> P.simpleTable (map (P.para . P.text)
-                      ["Rights:", "Conditions:", "Limitations:"])
-                     [[ P.bulletList (map (P.para . P.text . show) rights)
-                      ,  P.bulletList (map (P.para . P.text . show) conditions)
-                      , P.bulletList (map (P.para . P.text . show) limitations) ]]
+  Just licOs -> P.header 2 (P.text "Obligations") <> toBlock licOs
   Nothing -> mempty
 
 renderURLs :: License -> Blocks
@@ -124,7 +112,9 @@ licenseToPandoc (licName, lic) = let
           <> renderObligations lic
           <> renderOSADLRule lic
           <> renderURLs lic
+          <> P.horizontalRule
           <> renderText lic
+          <> P.horizontalRule
           <> renderRawData lic
 
 writeMarkdown :: FilePath -> (LicenseName, License) -> IO ()
@@ -136,7 +126,7 @@ writeMarkdown outDirectory (licName, lic) = let
         createDirectory folder
   in do
 
-    createDirectoryIfNotExists (outDirectory)
+    createDirectoryIfNotExists outDirectory
     case P.runPure (P.writeOrg P.def result) of
       Left err -> print err
       Right org -> T.writeFile (outDirectory </> licName ++ ".org") org

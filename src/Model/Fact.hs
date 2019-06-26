@@ -5,136 +5,18 @@
 {-# LANGUAGE DeriveGeneric #-}
 module Model.Fact
   ( module X
-  , LicenseName
   , LFRaw (..), getImplicationJSONFromLFRaw
-  , URL, LicenseFact (..), extractLicenseFactClassifier
+  , LicenseFact (..), extractLicenseFactClassifier
   , Facts
-  , Judgement (..)
-  , CopyleftKind (..), pessimisticMergeCopyleft --, LicenseTaxonomy (..)
-  , LicenseObligations (..), ImpliedRight (..), ImpliedCondition (..), ImpliedLimitation (..)
   ) where
 
 import qualified Prelude as P
 import           MyPrelude
 
-import qualified Data.Text as T
-import qualified Data.Vector as V
 import qualified Data.Map as M
 
 import Model.Statement as X
 import Model.LicenseProperties as X
-
-data Judgement
-  = PositiveJudgement String
-  | NegativeJudgement String
-  | NeutralJudgement String
-  deriving (Eq, Show, Generic)
-instance ToJSON Judgement
-
-
-{-
-    CopyleftKind
-     | \
-     |  - Copyleft
-     |     | \
-     |     |  - StrongCopyleft
-     |     |     \
-     |     |      - SaaSCopyleft
-     |     \
-     |       - WeakCopyleft
-     \
-      - NoCopyleft
- -}
-data CopyleftKind
-  = StrongCopyleft
-  | WeakCopyleft
-  | SaaSCopyleft
-  | Copyleft
-  | NoCopyleft
-  deriving (Eq, Show, Generic)
-instance ToJSON CopyleftKind
-instance Ord CopyleftKind where
-  compare k1 k2 = let
-      kOrder = M.fromList [ (StrongCopyleft, 5 :: Int)
-                          , (WeakCopyleft, 4)
-                          , (SaaSCopyleft, 3)
-                          , (Copyleft, 2)
-                          , (NoCopyleft, 1) ]
-    in if k1 == k2
-       then EQ
-       else compare (kOrder M.! k1)  (kOrder M.! k2)
-pessimisticMergeCopyleft :: CopyleftKind -> CopyleftKind -> CopyleftKind
--- pessimisticMergeCopyleft = max
-pessimisticMergeCopyleft SaaSCopyleft _        = SaaSCopyleft
-pessimisticMergeCopyleft _ SaaSCopyleft        = SaaSCopyleft
-pessimisticMergeCopyleft StrongCopyleft _      = StrongCopyleft
-pessimisticMergeCopyleft _ StrongCopyleft      = StrongCopyleft
-pessimisticMergeCopyleft WeakCopyleft _        = WeakCopyleft
-pessimisticMergeCopyleft _ WeakCopyleft        = WeakCopyleft
-pessimisticMergeCopyleft Copyleft _            = Copyleft
-pessimisticMergeCopyleft _ Copyleft            = Copyleft
-pessimisticMergeCopyleft NoCopyleft NoCopyleft = NoCopyleft
-
-{-
-     License_Unknown
-      | \
-      |  - OpenSourceLicense_Unknown
-      |     | \
-      |     \  - OpenSourceLicense_NoCopyleft
-      |      - OpenSourceLicense_Copyleft <CopyleftKind>
-      \
-       - NonOpenSourceLicense
-          | | \
-          | \  - PublicDomain
-          \  - ProprietaryFreeLicense
-           - CommercialLicense
--}
--- data LicenseTaxonomy
---   = License_Unknown
---   | OpenSourceLicense_Unknown
---   | OpenSourceLicense_Copyleft CopyleftKind
---   | OpenSourceLicense_NoCopyleft
---   | NonOpenSourceLicense
---   | PublicDomain
---   | ProprietaryFreeLicense
---   | CommercialLicense
---   deriving (Eq, Show, Generic)
--- instance ToJSON LicenseTaxonomy
-
-data ImpliedRight
-  = ImpliedRight String
-  | ImpliedRightWithDesc String String
-  deriving (Eq, Generic)
-instance Show ImpliedRight where
-  show (ImpliedRight r) = r
-  show (ImpliedRightWithDesc r desc) = r ++ " (" ++ desc ++ ")"
-instance ToJSON ImpliedRight
-data ImpliedCondition
-  = ImpliedCondition String
-  | ImpliedConditionWithDesc String String
-  deriving (Eq, Generic)
-instance Show ImpliedCondition where
-  show (ImpliedCondition c) = c
-  show (ImpliedConditionWithDesc c desc) = c ++ " (" ++ desc ++ ")"
-instance ToJSON ImpliedCondition
-data ImpliedLimitation
-  = ImpliedLimitation String
-  | ImpliedLimitationWithDesc String String
-  deriving (Eq, Generic)
-instance Show ImpliedLimitation where
-  show (ImpliedLimitation l) = l
-  show (ImpliedLimitationWithDesc l desc) = l ++ " (" ++ desc ++ ")"
-instance ToJSON ImpliedLimitation
-data LicenseObligations
-  = LicenseObligations [ImpliedRight] [ImpliedCondition] [ImpliedLimitation]
-  deriving (Eq, Show, Generic)
-instance ToJSON LicenseObligations where
-  toJSON (LicenseObligations irs ics ils) = object [ "rights" .= irs
-                                                   , "conditions" .= ics
-                                                   , "limitations" .= ils ]
-
-type LicenseName
-  = String
 
 class (Show a, ToJSON a) => LFRaw a where
   getLicenseFactClassifier :: a -> LicenseFactClassifier
@@ -200,8 +82,6 @@ getImplicationJSONFromLFRaw a = let
   in mergeAesonL [ object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement ++ copyleft ++ ratingState
                  , obligationsJ ]
 
-type URL
-  = String
 data LicenseFact
   = forall a. (LFRaw a)
   => LicenseFact (Maybe URL) a
@@ -221,17 +101,17 @@ instance ToJSON LicenseFact where
     in object [ tShow lfc .= mergeAesonL [ toJSON a
                                          , object [ "implications" .= getImplicationJSONFromLFRaw a ]]]
 instance LFRaw LicenseFact where
-  getLicenseFactClassifier (LicenseFact _ raw) = getLicenseFactClassifier raw
-  getImpliedNames (LicenseFact _ raw)          = getImpliedNames raw
-  getImpliedFullName (LicenseFact _ raw)       = getImpliedFullName raw
-  getImpliedId (LicenseFact _ raw)             = getImpliedId raw
-  getImpliedURLs (LicenseFact _ raw)           = getImpliedURLs raw
-  getImpliedText (LicenseFact _ raw)           = getImpliedText raw
-  getImpliedDescription (LicenseFact _ raw)    = getImpliedDescription raw
-  getImpliedJudgement (LicenseFact _ raw)      = getImpliedJudgement raw
-  getImpliedCopyleft (LicenseFact _ raw)       = getImpliedCopyleft raw
-  getImpliedObligations (LicenseFact _ raw)    = getImpliedObligations raw
-  getImpliedRatingState (LicenseFact _ raw)    = getImpliedRatingState raw
+  getLicenseFactClassifier (LicenseFact url raw) = maybeAddUrl url $ getLicenseFactClassifier raw
+  getImpliedNames (LicenseFact _ raw)            = getImpliedNames raw
+  getImpliedFullName (LicenseFact _ raw)         = getImpliedFullName raw
+  getImpliedId (LicenseFact _ raw)               = getImpliedId raw
+  getImpliedURLs (LicenseFact _ raw)             = getImpliedURLs raw
+  getImpliedText (LicenseFact _ raw)             = getImpliedText raw
+  getImpliedDescription (LicenseFact _ raw)      = getImpliedDescription raw
+  getImpliedJudgement lf@(LicenseFact _ raw)     = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedJudgement raw
+  getImpliedCopyleft (LicenseFact _ raw)         = getImpliedCopyleft raw
+  getImpliedObligations (LicenseFact _ raw)      = getImpliedObligations raw
+  getImpliedRatingState (LicenseFact _ raw)      = getImpliedRatingState raw
 
 
 type Facts

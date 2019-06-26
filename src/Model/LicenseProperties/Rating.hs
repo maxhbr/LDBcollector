@@ -6,6 +6,9 @@ module Model.LicenseProperties.Rating
 import qualified Prelude as P
 import           MyPrelude
 
+import qualified Text.Pandoc as P
+import qualified Text.Pandoc.Builder as P
+
 data Rating
   = RGo -- can be used
   | RAttention -- needs more attention
@@ -26,6 +29,8 @@ instance Show Rating where
   show (RUnknown [RGo, RAttention, RStop, RNoGo]) = "Unknown"
   show (RUnknown possibilities)                  = "Unknown, probably " ++ intercalate " or " (map show possibilities)
 instance ToJSON Rating
+instance Inlineable Rating where
+  toInline = P.text . show
 
 -- to keep track of current possibilities
 data RatingState

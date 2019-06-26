@@ -54,7 +54,7 @@ echoStatsOnLicenses lics = do
 
 echoStats :: Facts -> [(LicenseName, License)] -> IO ()
 echoStats fs lics = do
-  putStrLn "### Stats:"
+  putStrLn "## Stats:"
   putStrLn "### Stats on Facts:"
   echoStatsOnFacts (V.toList fs)
   putStrLn "### Stats on Licenses:"
@@ -76,14 +76,18 @@ main = do
 
   args <- getArgs
 
+  -- harvest facts
   facts <- readFacts "./data"
+
+  -- calculate licenses
   licenses <- case args of
     [] -> calculateSPDXLicenses initialLicenseMapping facts
-    ids -> calculateLicenses initialLicenseMapping (V.fromList args) facts
+    _  -> calculateLicenses initialLicenseMapping (V.fromList args) facts
 
+  -- write output
   outputFolder <- cleanupAndMakeOutputFolder
-
   writeLicenseJSONs outputFolder licenses
   writeMarkdowns outputFolder licenses
 
+  -- echo some stats
   echoStats facts licenses

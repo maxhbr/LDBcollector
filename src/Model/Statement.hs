@@ -8,7 +8,7 @@ module Model.Statement
   ( LicenseStatementResult (..)
   , Rank, RankedLicenseStatementResult (..), unpackRLSR
   , CollectedLicenseStatementResult (..), unpackCLSR
-  , ScopedLicenseStatementResult (..), unpackSLSR
+  , ScopedLicenseStatementResult (..), unpackSLSR, maybeUpdateClassifierInSLSR
   , LicenseFactClassifier (..)
   ) where
 
@@ -17,18 +17,8 @@ import           MyPrelude
 
 import qualified Data.Vector as V
 import qualified Data.Map as M
-import qualified Data.Text as T
 
-newtype LicenseFactClassifier
-  = LFC [Text]
-  deriving (Eq, Generic)
-instance Show LicenseFactClassifier where
-  show (LFC brc) = T.unpack $ T.intercalate "/" brc
-instance Ord LicenseFactClassifier where
-  compare lfc1 lfc2 = compare (show lfc1) (show lfc2)
-instance ToJSON LicenseFactClassifier where
-  toJSON lfc = toJSON $ show lfc
-instance ToJSONKey LicenseFactClassifier
+import Model.LicenseProperties
 
 class (Eq a) => LicenseStatementResult a where
   mergeLicenseStatementResults :: a -> a -> a
@@ -97,7 +87,7 @@ unpackSLSR (SLSR lfc a) = M.singleton lfc a
 unpackSLSR (SLSRMap m)  = m
 unpackSLSR NoSLSR       = M.empty
 instance (Eq a) => Eq (ScopedLicenseStatementResult a) where
-  slsr1 == slsr2 = (unpackSLSR slsr1) == (unpackSLSR slsr2)
+  slsr1 == slsr2 = unpackSLSR slsr1 == unpackSLSR slsr2
 instance (Show a, ToJSON a) => Show (ScopedLicenseStatementResult a) where
   show = show . unpackSLSR
 instance (Show a, ToJSON a, Eq a) => LicenseStatementResult (ScopedLicenseStatementResult a) where
@@ -107,5 +97,9 @@ instance (Show a, ToJSON a, Eq a) => LicenseStatementResult (ScopedLicenseStatem
   getEmptyLicenseStatement               = NoSLSR
 instance (ToJSON a) => ToJSON (ScopedLicenseStatementResult a) where
   toJSON = toJSON . unpackSLSR
+maybeUpdateClassifierInSLSR :: LicenseFactClassifier -> ScopedLicenseStatementResult a -> ScopedLicenseStatementResult a
+maybeUpdateClassifierInSLSR lfc slsr@(SLSR oldLfc a) | lfc == oldLfc = SLSR lfc a
+                                                     | otherwise     = slsr
+maybeUpdateClassifierInSLSR _ slsr                                   = slsr
 
 
