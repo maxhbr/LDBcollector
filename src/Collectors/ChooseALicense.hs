@@ -45,8 +45,8 @@ instance LFRaw CALFactRaw where
                                                                                Nothing -> []) ++ (case nid of
                                                                                                     Just v  -> [v]
                                                                                                     Nothing -> [])
-  getImpliedDescription cfr                                   = case description cfr of
-        Just cmt -> mkRLSR cfr 70 cmt
+  getImpliedDescription cal                                   = case description cal of
+        Just cmt -> mkRLSR cal 70 cmt
         Nothing  -> NoRLSR
   getImpliedJudgement cfr                                     = case featured cfr of
                                                                   Just "true" -> mkSLSR cfr $ PositiveJudgement " This License is featured by choosealicense.com"

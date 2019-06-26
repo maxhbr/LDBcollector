@@ -76,8 +76,14 @@ renderJudgements lic = let
     <> P.bulletList (M.foldlWithKey fun [] jdgsMap)
 
 renderObligations :: License -> Blocks
-renderObligations lic = case unpackRLSR (getImpliedObligations lic) of
-  Just licOs -> P.header 2 (P.text "Obligations") <> toBlock licOs
+renderObligations lic = let
+    impliedObligations = getImpliedObligations lic
+  in case unpackRLSR impliedObligations of
+  Just licOs -> P.header 2 (P.text "Obligations")
+                <> toBlock licOs
+                <> P.para (case unpackSourceFromRLSR impliedObligations of
+                             Just lfc -> renderSource  lfc
+                             Nothing -> mempty)
   Nothing -> mempty
 
 renderURLs :: License -> Blocks
@@ -102,8 +108,9 @@ renderText lic = case unpackRLSR (getImpliedText lic) of
   Nothing    -> mempty
 
 renderRawData :: License -> Blocks
-renderRawData lic = P.header 2 (P.text "Raw Data")
-  <> P.codeBlock (unpack (encodePretty lic))
+renderRawData lic = P.horizontalRule
+                    <> P.header 2 (P.text "Raw Data")
+                    <> P.codeBlock (unpack (encodePretty lic))
 
 licenseToPandoc :: (LicenseName, License) -> Pandoc
 licenseToPandoc (licName, lic) = let
@@ -117,9 +124,7 @@ licenseToPandoc (licName, lic) = let
           <> renderObligations lic
           <> renderOSADLRule lic
           <> renderURLs lic
-          <> P.horizontalRule
           <> renderText lic
-          <> P.horizontalRule
           <> renderRawData lic
 
 writeMarkdown :: FilePath -> (LicenseName, License) -> IO ()
