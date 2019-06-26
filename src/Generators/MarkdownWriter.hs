@@ -22,6 +22,7 @@ import qualified Text.Pandoc as P
 import qualified Text.Pandoc.Builder as P
 import           Text.Pandoc.Builder (Pandoc, Blocks, Inlines)
 import qualified Data.ByteString.Lazy as BL
+import           Control.Monad
 
 import           Model.License
 import           Model.Query
@@ -128,25 +129,32 @@ licenseToPandoc (licName, lic) = let
 
 writeMarkdown :: FilePath -> (LicenseName, License) -> IO ()
 writeMarkdown outDirectory (licName, lic) = let
-    outBase = outDirectory </> licName
-    -- mdOut = outBase ++ ".md"
-    -- htmlOut = outBase ++ ".html"
-    -- adocOut = outBase ++ ".adoc"
-    orgOut = outBase ++ ".org"
+    result = licenseToPandoc (licName, lic)
+    createDirectoryIfNotExists folder = do
+      dirExists <- doesDirectoryExist folder
+      unless dirExists $
+        createDirectory folder
   in do
-    let result = licenseToPandoc (licName, lic)
-    -- case P.runPure (P.writeMarkdown P.def result) of
-    --   Left err -> print err
-    --   Right md -> T.writeFile mdOut md
-    -- case P.runPure (P.writeHtml5String P.def result) of
-    --   Left err -> print err
-    --   Right html -> T.writeFile htmlOut html
-    -- case P.runPure (P.writeAsciiDoc P.def result) of
-    --   Left err -> print err
-    --   Right adoc -> T.writeFile adocOut adoc
+
+    createDirectoryIfNotExists (outDirectory)
     case P.runPure (P.writeOrg P.def result) of
       Left err -> print err
-      Right org -> T.writeFile orgOut org
+      Right org -> T.writeFile (outDirectory </> licName ++ ".org") org
+
+    createDirectoryIfNotExists (outDirectory </> "md")
+    case P.runPure (P.writeMarkdown P.def result) of
+      Left err -> print err
+      Right md -> T.writeFile (outDirectory </> "md" </> licName ++ ".md") md
+
+    createDirectoryIfNotExists (outDirectory </> "html")
+    case P.runPure (P.writeHtml5String P.def result) of
+      Left err -> print err
+      Right html -> T.writeFile (outDirectory </> "html" </> licName ++ ".html") html
+
+    createDirectoryIfNotExists (outDirectory </> "adoc")
+    case P.runPure (P.writeAsciiDoc P.def result) of
+      Left err -> print err
+      Right adoc -> T.writeFile (outDirectory </> "adoc" </> licName ++ ".adoc") adoc
 
 writeMarkdowns :: FilePath -> [(LicenseName, License)] -> IO ()
 writeMarkdowns outDirectory  = mapM_ (writeMarkdown outDirectory)

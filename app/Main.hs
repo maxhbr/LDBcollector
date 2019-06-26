@@ -4,15 +4,11 @@ module Main where
 import qualified Prelude as P
 import           MyPrelude
 
-import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as BL
 import           Control.Monad
 import qualified Data.Map as M
-import qualified Data.List as L
+import qualified Data.Vector as V
 import           GHC.IO.Encoding
-import qualified Text.Pandoc as P
-import qualified Text.Pandoc as P
-import qualified Data.Text.IO as T
+import           System.Environment
 
 import Lib
 
@@ -42,6 +38,28 @@ initialLicenseMapping = M.fromList
   , ("Sleepycat", ["Berkeley Database License", "Sleepycat Software Product License"])
   ]
 
+echoStatsOnFacts :: [LicenseFact] -> IO ()
+echoStatsOnFacts = let
+    counts :: [LicenseFactClassifier] -> Map LicenseFactClassifier Int
+    counts = let
+        countsFun :: Map LicenseFactClassifier Int -> LicenseFactClassifier -> Map LicenseFactClassifier Int
+        countsFun m lfc = M.insertWith (+) lfc 1 m
+      in foldl' countsFun M.empty
+  in mapM_ print . M.assocs . counts . map getLicenseFactClassifier
+
+echoStatsOnLicenses :: [(LicenseName, License)] -> IO ()
+echoStatsOnLicenses lics = do
+  putStrLn ("Number of Licenses: " ++ show (length lics))
+  echoStatsOnFacts (concatMap (\(_,License fs) ->  V.toList fs) lics)
+
+echoStats :: Facts -> [(LicenseName, License)] -> IO ()
+echoStats fs lics = do
+  putStrLn "### Stats:"
+  putStrLn "### Stats on Facts:"
+  echoStatsOnFacts (V.toList fs)
+  putStrLn "### Stats on Licenses:"
+  echoStatsOnLicenses lics
+
 cleanupAndMakeOutputFolder :: IO FilePath
 cleanupAndMakeOutputFolder = do
   let outputFolder = "_generated/"
@@ -56,10 +74,16 @@ main :: IO ()
 main = do
   setLocaleEncoding utf8
 
+  args <- getArgs
+
   facts <- readFacts "./data"
-  licenses <- calculateSPDXLicenses initialLicenseMapping facts
+  licenses <- case args of
+    [] -> calculateSPDXLicenses initialLicenseMapping facts
+    ids -> calculateLicenses initialLicenseMapping (V.fromList args) facts
 
   outputFolder <- cleanupAndMakeOutputFolder
 
   writeLicenseJSONs outputFolder licenses
   writeMarkdowns outputFolder licenses
+
+  echoStats facts licenses

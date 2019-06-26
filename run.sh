@@ -5,16 +5,16 @@ set -e
 cd "$(dirname "$0")"
 
 
-if [[ "$1" != "--only" ]]; then
-    stack build
-    stack exec LDBcollector-exe
-fi
-
-if [[ "$1" == "--only" ]]; then
+PUSH=false
+if [[ "$1" == "--push" ]]; then
+    PUSH=true
     shift
 fi
 
-if [[ "$1" == "--push" ]]; then
+stack build
+stack exec LDBcollector-exe $@
+
+if [[ "$PUSH" == "true" ]]; then
     if [[ -d "_generated" ]]; then
         cd _generated
         git init

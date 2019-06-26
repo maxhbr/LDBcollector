@@ -68,6 +68,7 @@ readFacts dataDir = let
                          , factsFromGoogle
                          , factsFromOkfn
                          , factsFromGnu
+                         , factsFromOverride
                          ]
     hPutStrLn stderr "... done with collecting data"
     return facts
@@ -79,19 +80,23 @@ getLicensesFromFacts ids i mapping facts = let
     newMapping = M.fromList . V.toList $ V.map (\(name,License fs) -> (name, L.nub (concatMap (unpackCLSR . getImpliedNames) (V.toList fs)))) lics
   in getLicensesFromFacts ids (i - 1) newMapping facts
 
-calculateLicenses :: Map LicenseName [LicenseName] -> (LicenseFact -> Bool) -> Facts -> IO [(LicenseName, License)]
-calculateLicenses initialLicenseMapping filterForIds facts = do
-
-  let factsToTakeIDsFrom = V.filter filterForIds facts
-      ids = V.map head . V.filter (/= []) . V.map (unpackCLSR . getImpliedNames) $ factsToTakeIDsFrom
-
+calculateLicenses :: Map LicenseName [LicenseName] -> (Vector LicenseName) -> Facts -> IO [(LicenseName, License)]
+calculateLicenses initialLicenseMapping ids facts = do
   let licenses = getLicensesFromFacts ids 1 initialLicenseMapping facts
   hPutStrLn stderr "... done with calculating licenses"
 
   return $ V.toList licenses
 
+calculateLicensesBySelector :: Map LicenseName [LicenseName] -> (LicenseFact -> Bool) -> Facts -> IO [(LicenseName, License)]
+calculateLicensesBySelector initialLicenseMapping filterForIds facts = do
+
+  let factsToTakeIDsFrom = V.filter filterForIds facts
+      ids = V.map head . V.filter (/= []) . V.map (unpackCLSR . getImpliedNames) $ factsToTakeIDsFrom
+
+  calculateLicenses initialLicenseMapping ids facts
+
 calculateSPDXLicenses :: Map LicenseName [LicenseName] -> Facts -> IO [(LicenseName, License)]
-calculateSPDXLicenses initialLicenseMapping = calculateLicenses initialLicenseMapping (\f -> getLicenseFactClassifier f == LFC ["SPDX", "SPDXEntry"])
+calculateSPDXLicenses initialLicenseMapping = calculateLicensesBySelector initialLicenseMapping (\f -> getLicenseFactClassifier f == LFC ["SPDX", "SPDXEntry"])
 
 writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
 writeLicenseJSONs outputFolder licenses = do
