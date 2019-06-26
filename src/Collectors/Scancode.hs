@@ -74,10 +74,10 @@ instance LFRaw ScancodeData where
   getImpliedNames scd@ScancodeData{key=k, shortName=sn} = CLSR $ [k,sn] ++ (case spdxId scd of
                                                                               Just sid -> [sid]
                                                                               Nothing  -> [])
-  getImpliedId ScancodeData{spdxId=mi} = case mi of
-    Just i -> RLSR 90 i
+  getImpliedId scd@ScancodeData{spdxId=mi} = case mi of
+    Just i -> mkRLSR scd 90 i
     Nothing -> NoRLSR
-  getImpliedText scd = RLSR 50 (decodeUtf8 $ text scd)
+  getImpliedText scd = mkRLSR scd 50 (decodeUtf8 $ text scd)
   getImpliedURLs scd = let
       urlsFromHomepage = case homepageUrl scd of
         Just homepageU -> [(Just "Homepage", homepageU)]

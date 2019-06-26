@@ -37,23 +37,23 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON CALFactRaw
 instance LFRaw CALFactRaw where
-  getLicenseFactClassifier _                              = LFC ["choosealicense.com", "CALFact"]
+  getLicenseFactClassifier _                                  = LFC ["choosealicense.com", "CALFact"]
   getImpliedNames CALFactRaw{name = sn
                             , spdxId = sid
-                            , nickname = nid}             = CLSR $ sn : (case sid of
-                                                                           Just v  -> [v]
-                                                                           Nothing -> []) ++ (case nid of
-                                                                                                Just v  -> [v]
-                                                                                                Nothing -> [])
-  getImpliedDescription cfr                               = case description cfr of
-        Just cmt -> RLSR 70 cmt
+                            , nickname = nid}                 = CLSR $ sn : (case sid of
+                                                                               Just v  -> [v]
+                                                                               Nothing -> []) ++ (case nid of
+                                                                                                    Just v  -> [v]
+                                                                                                    Nothing -> [])
+  getImpliedDescription cfr                                   = case description cfr of
+        Just cmt -> mkRLSR cfr 70 cmt
         Nothing  -> NoRLSR
-  getImpliedJudgement cfr                                 = case featured cfr of
-                                                              Just "true" -> mkSLSR cfr $ PositiveJudgement (" This License is featured by choosealicense.com")
-                                                              _           -> NoSLSR
-  getImpliedObligations CALFactRaw{ permissions = perms
-                                  , conditions = conds
-                                  , limitations = limits} = RLSR 70 (LicenseObligations (map ImpliedRight perms) (map ImpliedCondition conds) (map ImpliedLimitation limits))
+  getImpliedJudgement cfr                                     = case featured cfr of
+                                                                  Just "true" -> mkSLSR cfr $ PositiveJudgement " This License is featured by choosealicense.com"
+                                                                  _           -> NoSLSR
+  getImpliedObligations cal@CALFactRaw{ permissions = perms
+                                      , conditions = conds
+                                      , limitations = limits} = mkRLSR cal 70 (LicenseObligations (map ImpliedRight perms) (map ImpliedCondition conds) (map ImpliedLimitation limits))
 
 extractValueFromText :: [String] -> String -> Maybe String
 extractValueFromText ls key = let

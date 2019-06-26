@@ -63,7 +63,7 @@ instance ToJSON LicenseShortnameFactRaw where
 instance LFRaw LicenseShortnameFactRaw where
   getLicenseFactClassifier _                     = LFC ["LicenseName"]
   getImpliedNames (LicenseShortnameFactRaw s os) = CLSR (s : os)
-  getImpliedId (LicenseShortnameFactRaw s _)     = RLSR 30 s
+  getImpliedId f@(LicenseShortnameFactRaw s _)   = mkRLSR f 30 s
 
 mkLicenseShortnameFact :: LicenseName -> [LicenseName] -> LicenseFact
 mkLicenseShortnameFact s os = LicenseFact Nothing (LicenseShortnameFactRaw s os)
@@ -73,10 +73,10 @@ data LicenseFullnameFactRaw =
   deriving (Show, Generic)
 instance ToJSON LicenseFullnameFactRaw
 instance LFRaw LicenseFullnameFactRaw where
-  getLicenseFactClassifier _                       = LFC ["LicenseFullname"]
-  getImpliedId (LicenseFullnameFactRaw s _)        = RLSR 50 s
-  getImpliedNames (LicenseFullnameFactRaw s fn)    = CLSR [s, fn]
-  getImpliedFullName (LicenseFullnameFactRaw _ fn) = RLSR 100 fn
+  getLicenseFactClassifier _                         = LFC ["LicenseFullname"]
+  getImpliedId f@(LicenseFullnameFactRaw s _)        = mkRLSR f 50 s
+  getImpliedNames (LicenseFullnameFactRaw s fn)      = CLSR [s, fn]
+  getImpliedFullName f@(LicenseFullnameFactRaw _ fn) = mkRLSR f 100 fn
 
 mkLicenseFullnameFact :: String -> String -> LicenseFact
 mkLicenseFullnameFact s f = LicenseFact Nothing (LicenseFullnameFactRaw s f)
@@ -86,9 +86,9 @@ data LicenseTextFactRaw =
   deriving (Show, Generic)
 instance ToJSON LicenseTextFactRaw
 instance LFRaw LicenseTextFactRaw where
-  getLicenseFactClassifier _               = LFC ["LicenseText"]
-  getImpliedNames (LicenseTextFactRaw s _) = CLSR [s]
-  getImpliedText (LicenseTextFactRaw _ t)  = RLSR 70 t
+  getLicenseFactClassifier _                = LFC ["LicenseText"]
+  getImpliedNames (LicenseTextFactRaw s _)  = CLSR [s]
+  getImpliedText f@(LicenseTextFactRaw _ t) = mkRLSR f 70 t
 
 mkLicenseTextFact :: String -> Text -> LicenseFact
 mkLicenseTextFact s t = LicenseFact Nothing (LicenseTextFactRaw s t)

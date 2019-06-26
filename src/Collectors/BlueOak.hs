@@ -67,23 +67,23 @@ instance Show BOEntry where
   show (BOEntry _ _ j) = show j
 
 instance LFRaw BOEntry where
-  getLicenseFactClassifier _              = LFC ["BlueOak", "BOEntry"]
-  getImpliedFullName (BOEntry _ _ bol)    = RLSR 40 (name bol)
-  getImpliedNames (BOEntry _ _ bol)       = CLSR [id bol]
-  getImpliedJudgement boe@(BOEntry _ r _) = let
+  getLicenseFactClassifier _               = LFC ["BlueOak", "BOEntry"]
+  getImpliedFullName boe@(BOEntry _ _ bol) = mkRLSR boe 40 (name bol)
+  getImpliedNames (BOEntry _ _ bol)        = CLSR [id bol]
+  getImpliedJudgement boe@(BOEntry _ r _)  = let
       ratingText = "Rating is: " ++ r
     in SLSR (getLicenseFactClassifier boe) $
        case r of
          "Lead" -> NegativeJudgement ratingText
          _      -> PositiveJudgement ratingText
-  getImpliedURLs (BOEntry _ _ bol)        = let
+  getImpliedURLs (BOEntry _ _ bol)         = let
       urlbol = url bol
       isSPDX = ("spdx.org" `isInfixOf` urlbol)
       urlClass = if isSPDX
                  then Just "SPDX"
                  else Nothing
     in CLSR [(urlClass, urlbol)]
-  getImpliedCopyleft boe                  = SLSR (getLicenseFactClassifier boe) NoCopyleft
+  getImpliedCopyleft boe                   = mkSLSR boe NoCopyleft
 
 loadBlueOakFactsFromString :: ByteString -> Facts
 loadBlueOakFactsFromString bs = let

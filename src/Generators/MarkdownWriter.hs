@@ -52,10 +52,15 @@ renderDetails lic shortname fullname = let
     <> P.bulletList (map (P.para . P.code) otherNames)
 
 renderDescription :: License -> Blocks
-renderDescription lic = case unpackRLSR (getImpliedDescription lic) of
-  Just desc -> P.header 2 (P.text "Description")
-    <> P.blockQuote (P.para (P.text desc))
-  Nothing -> mempty
+renderDescription lic = let
+    impliedDesc = getImpliedDescription lic
+  in case unpackRLSR impliedDesc of
+    Just desc -> P.header 2 (P.text "Description")
+      <> P.blockQuote (P.para (P.text desc))
+      <> P.para (case unpackSourceFromRLSR impliedDesc of
+                   Just lfc -> renderSource  lfc
+                   Nothing -> mempty)
+    Nothing -> mempty
 
 renderJudgements :: License -> Blocks
 renderJudgements lic = let

@@ -26,9 +26,9 @@ emptyOverride ln = Override ln Nothing Nothing Nothing
 instance ToJSON Override
 instance LFRaw Override where
   getLicenseFactClassifier _                             = LFC ["Override"]
-  getImpliedId Override{oName=n}                         = RLSR 101 n
+  getImpliedId o@Override{oName=n}                       = mkRLSR o 101 n
   getImpliedNames                                        = CLSR . (:[]) . oName
-  getImpliedDescription Override{oDescription=Just d}    = RLSR 101 d
+  getImpliedDescription o@Override{oDescription=Just d}  = mkRLSR o 101 d
   getImpliedDescription _                                = NoRLSR
   getImpliedJudgement o@Override{oJudgement=Just j}      = mkSLSR o j
   getImpliedJudgement _                                  = NoSLSR

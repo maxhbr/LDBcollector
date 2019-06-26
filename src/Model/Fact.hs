@@ -22,6 +22,8 @@ class (Show a, ToJSON a) => LFRaw a where
   getLicenseFactClassifier :: a -> LicenseFactClassifier
   mkSLSR :: (Show b, ToJSON b) => a -> b -> ScopedLicenseStatementResult b
   mkSLSR a = SLSR (getLicenseFactClassifier a)
+  mkRLSR :: (Show b, ToJSON b) => a -> Rank -> b -> RankedLicenseStatementResult b
+  mkRLSR a = RLSR (getLicenseFactClassifier a)
   -- Statements:
   getImpliedNames :: a -> CollectedLicenseStatementResult LicenseName
   getImpliedFullName :: a -> RankedLicenseStatementResult LicenseName
@@ -102,16 +104,16 @@ instance ToJSON LicenseFact where
                                          , object [ "implications" .= getImplicationJSONFromLFRaw a ]]]
 instance LFRaw LicenseFact where
   getLicenseFactClassifier (LicenseFact url raw) = maybeAddUrl url $ getLicenseFactClassifier raw
-  getImpliedNames (LicenseFact _ raw)            = getImpliedNames raw
-  getImpliedFullName (LicenseFact _ raw)         = getImpliedFullName raw
-  getImpliedId (LicenseFact _ raw)               = getImpliedId raw
-  getImpliedURLs (LicenseFact _ raw)             = getImpliedURLs raw
-  getImpliedText (LicenseFact _ raw)             = getImpliedText raw
-  getImpliedDescription (LicenseFact _ raw)      = getImpliedDescription raw
+  getImpliedNames (LicenseFact _ raw)            =                                                             getImpliedNames raw
+  getImpliedFullName lf@(LicenseFact _ raw)      = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedFullName raw
+  getImpliedId lf@(LicenseFact _ raw)            = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedId raw
+  getImpliedURLs (LicenseFact _ raw)             =                                                             getImpliedURLs raw
+  getImpliedText lf@(LicenseFact _ raw)          = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedText raw
+  getImpliedDescription (LicenseFact _ raw)      =                                                             getImpliedDescription raw
   getImpliedJudgement lf@(LicenseFact _ raw)     = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedJudgement raw
-  getImpliedCopyleft (LicenseFact _ raw)         = getImpliedCopyleft raw
-  getImpliedObligations (LicenseFact _ raw)      = getImpliedObligations raw
-  getImpliedRatingState (LicenseFact _ raw)      = getImpliedRatingState raw
+  getImpliedCopyleft (LicenseFact _ raw)         =                                                             getImpliedCopyleft raw
+  getImpliedObligations lf@(LicenseFact _ raw)   = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedObligations raw
+  getImpliedRatingState (LicenseFact _ raw)      =                                                             getImpliedRatingState raw
 
 
 type Facts

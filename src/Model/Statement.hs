@@ -1,12 +1,9 @@
-{-# LANGUAGE ExistentialQuantification #-}
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE GADTs #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-#LANGUAGE DeriveGeneric #-}
 {-#LANGUAGE StandaloneDeriving #-}
 module Model.Statement
   ( LicenseStatementResult (..)
-  , Rank, RankedLicenseStatementResult (..), unpackRLSR
+  , Rank, RankedLicenseStatementResult (..), unpackRLSR, unpackSourceFromRLSR, maybeUpdateClassifierInRLSR
   , CollectedLicenseStatementResult (..), unpackCLSR
   , ScopedLicenseStatementResult (..), unpackSLSR, maybeUpdateClassifierInSLSR
   , LicenseFactClassifier (..)
@@ -31,23 +28,30 @@ class (Eq a) => LicenseStatementResult a where
 type Rank
   = Int
 data RankedLicenseStatementResult a where
-  RLSR :: (Show a, ToJSON a) => Rank -> a -> RankedLicenseStatementResult a
+  RLSR :: (Show a, ToJSON a) => LicenseFactClassifier -> Rank -> a -> RankedLicenseStatementResult a
   NoRLSR :: RankedLicenseStatementResult a
 unpackRLSR :: RankedLicenseStatementResult a -> Maybe a
-unpackRLSR (RLSR _ a) = Just a
-unpackRLSR NoRLSR     = Nothing
+unpackRLSR (RLSR _ _ a) = Just a
+unpackRLSR NoRLSR       = Nothing
+unpackSourceFromRLSR :: RankedLicenseStatementResult a -> Maybe LicenseFactClassifier
+unpackSourceFromRLSR (RLSR lfc _ _) = Just lfc
+unpackSourceFromRLSR _              = Nothing
 deriving instance (Eq a) => Eq (RankedLicenseStatementResult a)
 instance (Show a, ToJSON a) => Show (RankedLicenseStatementResult a) where
   show = show . unpackRLSR
 instance (Show a, ToJSON a, Eq a) => LicenseStatementResult (RankedLicenseStatementResult a) where
-  mergeLicenseStatementResults NoRLSR s2                     = s2
-  mergeLicenseStatementResults s1 NoRLSR                     = s1
-  mergeLicenseStatementResults s1@(RLSR r1 _) s2@(RLSR r2 _) = if r1 > r2
-                                                               then s1
-                                                               else s2
-  getEmptyLicenseStatement                                   = NoRLSR
+  mergeLicenseStatementResults NoRLSR s2                         = s2
+  mergeLicenseStatementResults s1 NoRLSR                         = s1
+  mergeLicenseStatementResults s1@(RLSR _ r1 _) s2@(RLSR _ r2 _) = if r2 > r1
+                                                                   then s2
+                                                                   else s1
+  getEmptyLicenseStatement                                       = NoRLSR
 instance (ToJSON a) => ToJSON (RankedLicenseStatementResult a) where
   toJSON = toJSON . unpackRLSR
+maybeUpdateClassifierInRLSR :: LicenseFactClassifier -> RankedLicenseStatementResult a -> RankedLicenseStatementResult a
+maybeUpdateClassifierInRLSR lfc rlsr@(RLSR oldLfc r a) | lfc == oldLfc = RLSR lfc r a
+                                                       | otherwise     = rlsr
+maybeUpdateClassifierInRLSR _ rlsr                                     = rlsr
 
 data CollectedLicenseStatementResult a where
   CLSR :: (Show a, ToJSON a, Eq a) => [a] -> CollectedLicenseStatementResult a

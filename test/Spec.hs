@@ -1248,12 +1248,13 @@ FAQ</a>.</p></dd>
 </dl> <!-- end class="green" -->
 |]
 
-containsFactOfClass :: License -> LicenseFactClassifier -> Bool
-containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
+-- containsFactOfClass :: License -> LicenseFactClassifier -> Bool
+-- containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
 containsFactOfType :: License -> Text -> Bool
 containsFactOfType (License fs) t = (\f -> case getLicenseFactClassifier f of
-                                        LFC []  -> False
-                                        LFC bcs -> last bcs == t) `any` fs
+                                        LFC []           -> False
+                                        LFC bcs          -> last bcs == t
+                                        LFCWithURL _ bcs -> last bcs == t) `any` fs
 
 getFactData :: License -> LicenseFactClassifier -> Maybe Value
 getFactData (License fs) classifier = case V.find (\f -> getLicenseFactClassifier f == classifier) fs of
@@ -1264,9 +1265,9 @@ main :: IO ()
 main = hspec $ do
   describe "Model.Statements" $ do
     it "merging two ranked works" $ do
-      mergeLicenseStatementResults (RLSR 40 ("40" :: String)) (RLSR 60 "60") `shouldBe` RLSR 60 "60"
+      mergeLicenseStatementResults (RLSR (LFC ["40"]) 40 ("40" :: String)) (RLSR (LFC ["60"]) 60 "60") `shouldBe` RLSR (LFC ["60"]) 60 "60"
     it "merging a ranked vector works" $ do
-      mergeLicenseStatementResultList (V.fromList [RLSR 40 ("40" :: String), NoRLSR, RLSR 80 "80", RLSR 60 "60", NoRLSR]) `shouldBe` RLSR 80 "80"
+      mergeLicenseStatementResultList (V.fromList [RLSR (LFC ["40"]) 40 ("40" :: String), NoRLSR, RLSR (LFC ["80"]) 80 "80", RLSR (LFC ["60"]) 60 "60", NoRLSR]) `shouldBe` RLSR (LFC ["80"]) 80 "80"
     it "merging two collected works" $ do
       mergeLicenseStatementResults (CLSR [("40" :: String)]) (CLSR ["60"]) `shouldBe` CLSR ["40", "60"]
     it "merging a collected vector works" $ do
