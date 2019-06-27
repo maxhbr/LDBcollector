@@ -57,6 +57,10 @@ setRatingOfState RAttention = removeRatingFromState RGo . removeRatingFromState 
 setRatingOfState RStop      = removeRatingFromState RGo . removeRatingFromState RAttention . removeRatingFromState RNoGo
 setRatingOfState RNoGo      = removeRatingFromState RGo . removeRatingFromState RAttention . removeRatingFromState RStop
 setRatingOfState _          = removeRatingFromState RGo . removeRatingFromState RAttention . removeRatingFromState RStop . removeRatingFromState RNoGo -- TODO??
+setRatingOfStateIfPossible :: Rating -> RatingStateMutator
+setRatingOfStateIfPossible r = \rs -> if ratingIsPossibleInRatingState r rs
+                                      then setRatingOfState r rs
+                                      else rs
 
 type RatingRuleFun
   = License -> RatingStateMutator
@@ -98,26 +102,32 @@ ratingRules = let
       in M.foldl' fun False . unpackSLSR $ getImpliedJudgement l
 
   in execWriter $ do
+
     addRule "should have at least one positive and no negative rating to be Go" $ \l ->
       if hasPossitiveJudgements l && not (hasNegativeJudgements l)
       then id
       else removeRatingFromState RGo
+
     addRule "only known NonCopyleft Licenses can be go" $ \l ->
       case getCalculatedCopyleft l of
         Just NoCopyleft -> id
         _ -> removeRatingFromState RGo
-    addRule "possitive Rating by BlueOak helps, and if no other rating is negative it implies Go" $ \l ->
-      case M.lookup (LFC ["BlueOak", "BOEntry"])  (unpackSLSR $ getImpliedJudgement l) of
-        Just (PositiveJudgement _) -> if hasNegativeJudgements l
-                                      then removeRatingFromState RNoGo . removeRatingFromState RStop
-                                      else setRatingOfState RGo
+
+    addRule "Fedora bad Rating implies at least Stop" $ \l ->
+      case M.lookup (LFC ["FedoraProjectWiki", "FPWFact"])  (unpackSLSR $ getImpliedJudgement l) of
         Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAttention
         _                          -> id
-    addRule "Fedora bad Rating implies at least Stop" $ \l -> case M.lookup (LFC ["FedoraProjectWiki", "FPWFact"])  (unpackSLSR $ getImpliedJudgement l) of
-      Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAttention
-      _                          -> id
+
     addRule "only SPDX licenses can be better than Stop" $ \l ->
       if l `containsFactOfClass` LFC ["SPDX", "SPDXEntry"]
       then id
       else removeRatingFromState RGo . removeRatingFromState RAttention
+
+    addRule "possitive Rating by BlueOak helps, and if no other rating is negative it implies Go" $ \l ->
+      case M.lookup (LFC ["BlueOak", "BOEntry"])  (unpackSLSR $ getImpliedJudgement l) of
+        Just (PositiveJudgement _) -> if hasNegativeJudgements l
+                                      then removeRatingFromState RNoGo . removeRatingFromState RStop
+                                      else setRatingOfStateIfPossible RGo
+        Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAttention
+        _                          -> id
 

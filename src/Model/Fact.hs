@@ -51,6 +51,8 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedObligations _ = getEmptyLicenseStatement
   getImpliedRatingState :: a -> ScopedLicenseStatementResult RatingState
   getImpliedRatingState _ = getEmptyLicenseStatement
+  getHasPatentnHint :: a -> RankedLicenseStatementResult Bool
+  getHasPatentnHint _ = getEmptyLicenseStatement
 
 getImplicationJSONFromLFRaw :: (LFRaw a) => a -> Value
 getImplicationJSONFromLFRaw a = let
@@ -81,7 +83,10 @@ getImplicationJSONFromLFRaw a = let
     ratingState = case getImpliedRatingState a of
       NoSLSR -> []
       iRatingState -> [ "__impliedRatingState" .= iRatingState ]
-  in mergeAesonL [ object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement ++ copyleft ++ ratingState
+    patentHint = case getHasPatentnHint a of
+      NoRLSR -> []
+      hPatentHint -> [ "__hasPatentHintn" .= hPatentHint ]
+  in mergeAesonL [ object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement ++ copyleft ++ ratingState ++ patentHint
                  , obligationsJ ]
 
 data LicenseFact
@@ -114,6 +119,7 @@ instance LFRaw LicenseFact where
   getImpliedCopyleft (LicenseFact _ raw)         =                                                             getImpliedCopyleft raw
   getImpliedObligations lf@(LicenseFact _ raw)   = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedObligations raw
   getImpliedRatingState (LicenseFact _ raw)      =                                                             getImpliedRatingState raw
+  getHasPatentnHint lf@(LicenseFact _ raw)       = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getHasPatentnHint raw
 
 
 type Facts

@@ -51,6 +51,7 @@ instance LFRaw License where
   getImpliedCopyleft (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
   getImpliedObligations (License fs) = mergeLicenseStatementResultList $ V.map getImpliedObligations fs
   getImpliedRatingState (License fs) = mergeLicenseStatementResultList $ V.map getImpliedRatingState fs
+  getHasPatentnHint (License fs)     = mergeLicenseStatementResultList $ V.map getHasPatentnHint fs
 
 --------------------------------------------------------------------------------
 -- first basic facts

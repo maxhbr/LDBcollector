@@ -29,6 +29,7 @@ data CopyleftKind
   | WeakCopyleft
   | SaaSCopyleft
   | Copyleft
+  | MaybeCopyleft
   | NoCopyleft
   deriving (Eq, Show, Generic)
 instance ToJSON CopyleftKind
@@ -38,7 +39,8 @@ instance Ord CopyleftKind where
                           , (WeakCopyleft, 4)
                           , (SaaSCopyleft, 3)
                           , (Copyleft, 2)
-                          , (NoCopyleft, 1) ]
+                          , (MaybeCopyleft, 1)
+                          , (NoCopyleft, 0) ]
     in if k1 == k2
        then EQ
        else compare (kOrder M.! k1)  (kOrder M.! k2)
@@ -52,6 +54,8 @@ pessimisticMergeCopyleft WeakCopyleft _        = WeakCopyleft
 pessimisticMergeCopyleft _ WeakCopyleft        = WeakCopyleft
 pessimisticMergeCopyleft Copyleft _            = Copyleft
 pessimisticMergeCopyleft _ Copyleft            = Copyleft
+pessimisticMergeCopyleft MaybeCopyleft _       = MaybeCopyleft
+pessimisticMergeCopyleft _ MaybeCopyleft       = MaybeCopyleft
 pessimisticMergeCopyleft NoCopyleft NoCopyleft = NoCopyleft
 
 

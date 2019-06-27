@@ -33,9 +33,12 @@ renderSource lfc = P.space <> P.text "(source: " <> toInline lfc <> P.text ")"
 renderDetails :: License -> LicenseName -> LicenseName -> Blocks
 renderDetails lic shortname fullname = let
     rating = applyDefaultRatingRules lic
-    copyleftRow =case getCalculatedCopyleft lic of
+    copyleftRow = case getCalculatedCopyleft lic of
                 Nothing       -> []
                 Just copyleft -> [["Classification", show copyleft]]
+    patentRow = case unpackRLSR (getHasPatentnHint lic) of
+      Nothing  -> []
+      Just val -> [["Has Patent Hint",  show val]]
     otherNames = let
         isNotElemUpToCase :: String -> [String] -> Bool
         isNotElemUpToCase needle hay = let
@@ -47,9 +50,11 @@ renderDetails lic shortname fullname = let
       ([ ["Fullname", fullname]
        , ["Shortname", shortname]
        , ["Rating", show rating]
-       ] ++ copyleftRow))
-    <> P.para (P.strong (P.text "Other Names:"))
-    <> P.bulletList (map (P.para . P.code) otherNames)
+       ] ++ copyleftRow ++ patentRow))
+    <> if length otherNames > 0
+       then P.para (P.strong (P.text "Other Names:"))
+            <> P.bulletList (map (P.para . P.code) otherNames)
+       else mempty
 
 renderDescription :: License -> Blocks
 renderDescription lic = let

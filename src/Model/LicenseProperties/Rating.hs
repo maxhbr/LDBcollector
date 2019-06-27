@@ -62,3 +62,6 @@ ratingFromRatingState s = let
     [r] -> r
     rs  -> RUnknown rs
 
+ratingIsPossibleInRatingState :: Rating -> RatingState -> Bool
+ratingIsPossibleInRatingState r rs = (ratingFromRatingState rs) `ratingMoreGeneralThan` r
+

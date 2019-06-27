@@ -26,8 +26,13 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON OSADLFactRaw
 instance LFRaw OSADLFactRaw where
-  getLicenseFactClassifier _          = LFC ["OSADL", "OSADLFact"]
-  getImpliedNames (OSADLFactRaw sn _) = CLSR [sn]
+  getLicenseFactClassifier _                                                               = LFC ["OSADL", "OSADLFact"]
+  getImpliedNames (OSADLFactRaw sn _)                                                      = CLSR [sn]
+  getImpliedCopyleft f@(OSADLFactRaw _ r) | "COPYLEFT CLAUSE Questionable" `B.isInfixOf` r = mkSLSR f MaybeCopyleft
+                                          | "COPYLEFT CLAUSE Yes"          `B.isInfixOf` r = mkSLSR f Copyleft
+                                          | otherwise                                      = NoSLSR
+  getHasPatentnHint f@(OSADLFactRaw _ r) | "PATENT HINTS Yes" `B.isInfixOf` r              = mkRLSR f 90 True
+                                         | otherwise                                       = NoRLSR
 
 
 loadOsadlFactFromFile :: FilePath -> FilePath -> IO LicenseFact
