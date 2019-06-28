@@ -17,21 +17,6 @@ import qualified Data.Map as M
 
 import           Model.License
 
--- ratingFromRatingState :: RatingState -> Rating
--- ratingFromRatingState rs = let
---     mapFromState :: (RatingState -> Bool) -> Rating -> RatingState -> Maybe Rating
---     mapFromState getter result state = if getter state
---                                        then Just result
---                                        else Nothing
---     ratingFromSetOfRatings :: [Rating] -> Rating
---     ratingFromSetOfRatings [r] = r
---     ratingFromSetOfRatings rs' = RUnknown rs'
---   in ratingFromSetOfRatings . catMaybes $ map (\f -> f rs) [ mapFromState rsGo RGo
---                                                            , mapFromState rsAttention RAttention
---                                                            , mapFromState rsStop RStop
---                                                            , mapFromState rsNoGo RNoGo
---                                                            ]
-
 mergeRaitingStates :: RatingState -> RatingState -> RatingState
 mergeRaitingStates rs1@(FinalRating fr1) (FinalRating fr2)             = if fr1 == fr2
                                                                          then rs1
@@ -103,6 +88,11 @@ ratingRules = let
 
   in execWriter $ do
 
+    addRule "NonComercial is a no-go" $ \l ->
+      case unpackRLSR (getImpliedNonCommercial l) of
+        Just True -> setRatingOfState RNoGo
+        _         -> id
+
     addRule "should have at least one positive and no negative rating to be Go" $ \l ->
       if hasPossitiveJudgements l && not (hasNegativeJudgements l)
       then id
@@ -114,7 +104,7 @@ ratingRules = let
         _ -> removeRatingFromState RGo
 
     addRule "Fedora bad Rating implies at least Stop" $ \l ->
-      case M.lookup (LFC ["FedoraProjectWiki", "FPWFact"])  (unpackSLSR $ getImpliedJudgement l) of
+      case M.lookup (LFC ["FedoraProjectWiki", "FPWFact"]) (unpackSLSR $ getImpliedJudgement l) of
         Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAttention
         _                          -> id
 

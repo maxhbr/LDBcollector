@@ -53,6 +53,8 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedRatingState _ = getEmptyLicenseStatement
   getHasPatentnHint :: a -> RankedLicenseStatementResult Bool
   getHasPatentnHint _ = getEmptyLicenseStatement
+  getImpliedNonCommercial :: a -> RankedLicenseStatementResult Bool
+  getImpliedNonCommercial _ = getEmptyLicenseStatement
 
 getImplicationJSONFromLFRaw :: (LFRaw a) => a -> Value
 getImplicationJSONFromLFRaw a = let
@@ -120,6 +122,7 @@ instance LFRaw LicenseFact where
   getImpliedObligations lf@(LicenseFact _ raw)   = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedObligations raw
   getImpliedRatingState (LicenseFact _ raw)      =                                                             getImpliedRatingState raw
   getHasPatentnHint lf@(LicenseFact _ raw)       = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getHasPatentnHint raw
+  getImpliedNonCommercial lf@(LicenseFact _ raw) = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedNonCommercial raw
 
 
 type Facts
