@@ -35,7 +35,7 @@ import           Collectors.Override as X
 
 import           Processors.Rating as X
 
-import           Generators.MarkdownWriter as X
+import           Generators.PandocWriter as X
 
 readFacts :: FilePath -> IO Facts
 readFacts dataDir = let

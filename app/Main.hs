@@ -45,7 +45,11 @@ echoStatsOnFacts = let
         countsFun :: Map LicenseFactClassifier Int -> LicenseFactClassifier -> Map LicenseFactClassifier Int
         countsFun m lfc = M.insertWith (+) lfc 1 m
       in foldl' countsFun M.empty
-  in mapM_ print . M.assocs . counts . map getLicenseFactClassifier
+  in mapM_ ( putStrLn
+             . (\(k,n) -> "    " ++ show k ++ ": " ++ show n))
+     . M.assocs
+     . counts
+     . map getLicenseFactClassifier
 
 echoStatsOnLicenses :: [(LicenseName, License)] -> IO ()
 echoStatsOnLicenses lics = do
@@ -87,7 +91,7 @@ main = do
   -- write output
   outputFolder <- cleanupAndMakeOutputFolder
   writeLicenseJSONs outputFolder licenses
-  writeMarkdowns outputFolder licenses
+  writePandocs outputFolder licenses
 
   -- echo some stats
   echoStats facts licenses

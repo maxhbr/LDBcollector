@@ -1,8 +1,8 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE LambdaCase #-}
-module Generators.MarkdownWriter
-  ( writeMarkdown, writeMarkdowns
+module Generators.PandocWriter
+  ( writePandoc, writePandocs
   , LicenseDetails (..)
   ) where
 {-
@@ -194,8 +194,8 @@ licenseToPandoc (licName, lic) = let
             <> renderRawData lic
      , details)
 
-writeMarkdown :: FilePath -> (LicenseName, License) -> IO LicenseDetails
-writeMarkdown outDirectory (licName, lic) = let
+writePandoc :: FilePath -> (LicenseName, License) -> IO LicenseDetails
+writePandoc outDirectory (licName, lic) = let
     (pandoc, details) = licenseToPandoc (licName, lic)
     createDirectoryIfNotExists folder = do
       dirExists <- doesDirectoryExist folder
@@ -225,7 +225,7 @@ writeMarkdown outDirectory (licName, lic) = let
 
     return details
 
-writeMarkdowns :: FilePath -> [(LicenseName, License)] -> IO ()
-writeMarkdowns outDirectory lics = do
-  detailss <- mapM (writeMarkdown outDirectory) lics
+writePandocs :: FilePath -> [(LicenseName, License)] -> IO ()
+writePandocs outDirectory lics = do
+  detailss <- mapM (writePandoc outDirectory) lics
   writeListOfDetailsToFile (outDirectory </> "index.csv") detailss
