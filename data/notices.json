@@ -4522,26 +4522,6 @@
   {
     "data": {
       "schemaVersion": 0.1,
-      "uri": "http://open-license.hitachi.com/notices/276",
-      "baseUri": "http://open-license.hitachi.com/",
-      "id": "notices/276",
-      "content": [
-        {
-          "language": "ja",
-          "text": "著作権者は、契約、不法行為、または他の訴えであろうと、当該フォントソフトウェアの使用もしくは使用できないこと、または、その他の扱いによって発生した請求、通常損害、特別損害、間接損害、付随的損害、または、派生的損害のいずれに対しても一切責任を負わないものとする。"
-        }
-      ],
-      "description": [
-        {
-          "language": "ja",
-          "text": ""
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/notices/277",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "notices/277",
@@ -6109,26 +6089,6 @@
         {
           "language": "ja",
           "text": "当該ソフトウェアを自身の製品であると示したり宣伝したりしないことに同意するものとする。"
-        }
-      ],
-      "description": [
-        {
-          "language": "ja",
-          "text": ""
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "schemaVersion": 0.1,
-      "uri": "http://open-license.hitachi.com/notices/360",
-      "baseUri": "http://open-license.hitachi.com/",
-      "id": "notices/360",
-      "content": [
-        {
-          "language": "ja",
-          "text": "著作者は、契約、不法行為、または他の訴えであるかを問わず、当該ソフトウェアの使用やその他の扱いによって発生した請求、損害などのいずれに対しても一切責任を負わないものとする。"
         }
       ],
       "description": [
@@ -10402,6 +10362,46 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/593",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/593",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに書かれている免責や無保証の内容に従う。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/594",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/594",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに書かれている特定の利用方法および利用条件、本ライセンスを遵守するために従う必要がある内容が書かれている場合、その内容に従う。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/notices/595",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "notices/595",
@@ -10782,6 +10782,46 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/620",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/620",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者は、明示であるか黙示であるかを問わず、当該ファイルに関する表明も保証もしない。ここでいう保証とは、商業的な使用可能性、特定の目的に対する適合性、権利非侵害に関する暗黙の保証を含むが、それに限定されるものではない。著作権者は、明示であるか黙示であるかを問わず、当該ファイルに関する正当性、精度、完全性、適時性、信頼性に関する明示の保証はしない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/622",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/622",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者は、当該ソフトウェアの目的適合性に関する表明をしない。当該ソフトウェアは、「現状のまま(as-is)」で提供されており、著作権者は、商業的な使用可能性や特定の目的に対する適合性に関する暗黙の保証を含めて、いかなる保証もしない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/notices/623",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "notices/623",
@@ -10809,6 +10849,126 @@
         {
           "language": "ja",
           "text": "著作権者は、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用や性能によって発生した特別損害、直接損害、間接損害、派生的損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/625",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/625",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該仕様書は、「現状のまま(as-is)」で提供されており、著作者は、明示であるか黙示であるかを問わず、いかなる表明も保証もしない。ここでいう保証とは、商業的な使用可能性、特定の目的に対する適合性、権利非侵害、権原、目的に対する当該仕様書の適用性、当該仕様書の内容の実装に伴う第三者の特許、著作権、商標などの権利非侵害についての保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/626",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/626",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、この仕様書の使用、あるいは、この仕様書の内容の履行や実装によって発生した直接損害、間接損害、特別損害、付随的損害、派生的損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/627",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/627",
+      "content": [
+        {
+          "language": "ja",
+          "text": "文書および本ライセンスに含まれる情報は、「現状のまま(as-is)」で提供されており、著作権者は、明示であるか黙示であるかを問わず、いかなる保証もしない。ここでいう保証とは、本ライセンスに含まれる情報の使用に伴う権利非侵害に関する保証、商業的な使用可能性および特定の目的に対する適合性についての暗黙の保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/634",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/634",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Apple OS用に開発されたソフトウェアを開発するためにCUPSと共に提供されているサンプルのフィルタおよびバックエンドを使用する際、Apple OS用に開発されたソフトウェアのソースコードを公開する必要はない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●Apple OS用に開発されたソフトウェアとは、AppleおよびサードパーティのAppleオペレーティング・システム用プリンタドライバ、フィルタ、バックエンドを含むが、それに限定されるものではない。\r\n\r\n●Appleオペレーティング・システムとは、Apple Inc.が開発や販売を行うオペレーティング・システム・ソフトウェアを意味し、\"Apple's Darwin\", \"iOS\", \"macOS\", \"macOS Server\", \"tvOS\"の全ての現存するリリースおよびバージョン、および全ての後続のリリース、将来のバージョンを含むが、それに限定されるものではない。\r\n\r\n●この例外規定が当てはまる全てのCUPSソフトウェアは、各ソースファイルの冒頭に以下のように記載する。\r\n\r\n  This file is subject to the Apple OS-Developed Software exception."
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/635",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/635",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Kerberosサポートコードは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/636",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/636",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者およびApple Inc.は、Kerberosサポートコードの使用によって発生した損害のいずれに対しても一切責任を負わないものとする。"
         }
       ],
       "description": [
@@ -10942,6 +11102,26 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/646",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/646",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、機能や目的に関するいかなる保証もしない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/notices/647",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "notices/647",
@@ -10949,6 +11129,46 @@
         {
           "language": "ja",
           "text": "著作権者は、契約、過失または他の不法行為上の訴訟かを問わず、当該ソフトウェアの使用やその他の扱いによって発生した請求、損害その他のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/649",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/649",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアには、明示であるか黙示であるかを問わず、いかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/650",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/650",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアの使用によって発生した損害に関する責任の全てはユーザが負う。"
         }
       ],
       "description": [
@@ -11042,6 +11262,146 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/659",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/659",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ライセンスのいずれかの条項が施行不能とみなされる場合、当該条項は施行可能にするために必要な範囲内でのみ改正されるものとする。当該ライセンスはオランダ法の規定に従う。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/660",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/660",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ライセンスに関係して訴訟が起こされた場合、オランダのアムステルダム裁判所の裁判権に従うものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/661",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/661",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Exhibit A - MonetDB Public License. \t\r\n\t\r\n\"The contents of this file are subject to the MonetDB Public License \t\r\nVersion 1.1 (the \"License\"); you may not use this file except in \t\r\ncompliance with the License. You may obtain a copy of the License at \t\r\nhttp://www.monetdb.org/Legal/MonetDBLicense \t\r\n\t\r\nSoftware distributed under the License is distributed on an \"AS IS\" \t\r\nbasis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the \t\r\nLicense for the specific language governing rights and limitations \t\r\nunder the License. \t\r\n\t\r\nThe Original Code is ______________________________________. \t\r\n\t\r\nThe Initial Developer of the Original Code is ________________________. \t\r\nPortions created by ______________________ are Copyright (C) ______ \t\r\n_______________________. All Rights Reserved. \t\r\n\t\r\nContributor(s): ______________________________________. \t\r\n\t\r\nAlternatively, the contents of this file may be used under the terms \t\r\nof the _____ license (the \"[___] License\"), in which case the \t\r\nprovisions of [______] License are applicable instead of those \t\r\nabove. If you wish to allow use of your version of this file only \t\r\nunder the terms of the [____] License and not to allow others to use \t\r\nyour version of this file under the MonetDB Public License, indicate \t\r\nyour decision by deleting the provisions above and replace them with \t\r\nthe notice and other provisions required by the [___] License. If you \t\r\ndo not delete the provisions above, a recipient may use your version \t\r\nof this file under either the MonetDB Public License or the [___] License.\"\r\n\r\n[注：上記Exhibit Aの告知文は、当該ソフトウェアのソースコードファイル内にある告知文とは若干異なる可能性がある。自身の修正コードについては、当該ソフトウェアのソースコードファイル内にある告知文ではなく、上記Exhibit Aの告知文を使用することとする。]"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/662",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/662",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、当該ソフトウェアの使用によって発生した直接損害、間接損害のいずれに対しても(データの消失や不正確な処理による損害を含めるが、それに限定されない損害を含め)一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/665",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/665",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本利用基準に従う。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/666",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/666",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該スクリプトを違法な目的、あるいは、違法なものが含まれるページで使わないことに同意するものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/667",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/667",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Dynamic Driveは、Dynamic Driveから取得したスクリプトの適切または不適切な使用によって発生した損害のいずれに対しても一切責任を負わないものとする。使用に関するリスクは自身で負うことになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/notices/670",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "notices/670",
@@ -11049,6 +11409,66 @@
         {
           "language": "ja",
           "text": "ライセンシは、当該ソフトウェアを、著作権者によってバインディングが提供されているCやC++ライブラリに対するPythonバインディングを生成するために使用しない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/671",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/671",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者も著作権者も、当該ソフトウェアの使用によって生じる結果に対して責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/672",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/672",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアや関連文書は、「現状のまま(as-is)」で提供されており、著作権者も著作者も、明示であるか黙示であるかを問わず、いかなる表明も保証もしない。ここでいう表明や保証は、商業的な使用可能性、特定の目的に対する適合性、および、当該ソフトウェアや関連文書の使用による第三者の特許、著作権、商標などの権利非侵害についての保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/673",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/673",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者も著作者も、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアや関連文書の使用によって発生した直接損害、間接損害、特別損害、派生的損害のいずれに対しても一切責任を負わないものとする。"
         }
       ],
       "description": [
@@ -11075,6 +11495,2546 @@
         {
           "language": "ja",
           "text": "新たな条件を適用する場合、適用するファイルの先頭にその条件を明示する。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/675",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/675",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者も供給者も、契約、過失または他の不法行為上の訴訟かを問わず、当該ソフトウェアの使用やその他の扱いによって発生した請求、損害その他のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/677",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/677",
+      "content": [
+        {
+          "language": "ja",
+          "text": "他のプログラムとコンパイルした当該ライブラリとをリンクして生成される実行形式は、当該ライブラリによってGNU General Public Licenseが適用されることなく頒布してもよい。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/678",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/678",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該著作物をFreeBSDに含めずに使用する場合、当該著作物はFreeBSDに含めるために作成されたことを明示する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/679",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/679",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Exhibit A - Form of Secondary Licenses Notice\r\n\r\n\"This Source Code may also be made available under the following \r\nSecondary Licenses when the conditions for such availability set forth \r\nin the Eclipse Public License, v. 2.0 are satisfied: {name license(s),\r\nversion(s), and exceptions or additional permissions here}.\"\r\n\r\n  Simply including a copy of this Agreement, including this Exhibit A\r\n  is not sufficient to license the Source Code under Secondary Licenses.\r\n\r\n  If it is not possible or desirable to put the notice in a particular\r\n  file, then You may include the notice in a location (such as a LICENSE\r\n  file in a relevant directory) where a recipient would be likely to\r\n  look for such a notice.\r\n\r\n  You may add additional accurate notices of copyright ownership."
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/680",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/680",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに明記されているものを除き、準拠法で許諾される範囲において、本ライセンスに基づいて当該ソフトウェアを受け取る全ての者もコントリビュータも、事由の如何を問わず、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか厳格責任であるか(過失を含む)不法行為であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用または頒布、あるいは、本ライセンスで付与された権利の行使によって発生した直接損害、間接損害、特別損害、付随的損害、懲罰的損害、または、派生的損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "コントリビュータは、当該ソフトウェアを頒布する個人または団体をさす。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/682",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/682",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、NETBSD FOUNDATION, INC.およびコントリビュータによって「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、商業的な使用可能性、および、特定の目的に対する適合性に関する暗黙の保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/683",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/683",
+      "content": [
+        {
+          "language": "ja",
+          "text": "NETBSD FOUNDATION, INC.もコントリビュータも、事由の如何を問わず、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか厳格責任であるか(過失を含む)不法行為であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した直接損害、間接損害、付随的損害、特別損害、懲罰的損害、または、派生的損害のいずれに対しても(代替品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償も含めるが、それに限定されない補償を含め)一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/684",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/684",
+      "content": [
+        {
+          "language": "ja",
+          "text": "RARアーカイバおよび当該ソフトウェアは、「現状のまま(as-is)」で頒布されており、明示であるか黙示であるかを問わず、いかなる保証もない。使用に関するリスクは自身で負うことになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/685",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/685",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、当該ソフトウェアの使用もしくは誤用から生じたデータの喪失、損害、利益の喪失、その他のいかなる喪失に対しても一切責任を負わない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/687",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/687",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、いかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/688",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/688",
+      "content": [
+        {
+          "language": "ja",
+          "text": "いかなる条件においても、著作者は、当該ソフトウェアの適切な機能に対して一切責任を負わないものとする。また、著作者は、当該ソフトウェアの使用によって発生した損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/689",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/689",
+      "content": [
+        {
+          "language": "ja",
+          "text": "第2のライセンスの内容に関わらず、コントリビュータは、本ライセンスに従って第2のライセンスの下で頒布される当該ソフトウェアに、本ライセンス以外の付加条項を加えないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●第2のライセンスは、初期コントリビュータが確認した例外条項や付加条項を含むGNU General Public License, Version 2.0、および、このライセンスの以降のバージョンをさす。\r\n●コントリビュータは、当該ソフトウェアを頒布する個人または団体をさす。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/692",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/692",
+      "content": [
+        {
+          "language": "ja",
+          "text": "元々のソフトウェア、または派生物を頒布する際に本ライセンスを適用しなかった場合、本ライセンスに基づく全ての権利が直ちに終了するものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/694",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/694",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で使用可能であり、いかなる保証もない。使用に関するリスクは自身で負うことになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/695",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/695",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに明記されているものを除き、準拠法で許諾される範囲において、当該ソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証も条件もない。ここでいう保証もしくは条件とは、権原、非侵害性、商業的な使用可能性、および、特定の目的に対する適合性に関する保証もしくは条件を含むが、それに限定されるものではない。本ライセンスに基づいて当該ソフトウェアを受け取る全ての者は、当該ソフトウェアの使用や再頒布が適切かどうかを自身で判断する責任を持つと共に、本ライセンスの下で権利を行使することに伴う全てのリスク(プログラムエラー、適用される法律の準拠、データやプログラムや機器への被害、操作の中断に関するリスクを含むが、それに限らないリスク)を負うことになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/696",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/696",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、ライセンス供与の方法を問わず、著作権者によって「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、商業的な使用可能性、および、特定の目的に対する適合性に関する暗黙の保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/697",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/697",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、いかなる保証もない。準拠法が認める最大限の範囲において、著作権者は、明示であるか黙示であるかを問わず、商業的な使用可能性および特定の目的に対する適合性に関する暗黙の保証、権利非侵害に関する保証を含めて、当該ソフトウェア(改変物を含む)や関連文書に関するいかなる保証もしない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/698",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/698",
+      "content": [
+        {
+          "language": "ja",
+          "text": "準拠法が認める最大限の範囲において、著作権者は、当該ソフトウェアの使用もしくは使用できないことによって発生した損害のいずれに対しても(営業利益の喪失、業務の中断、業務に関する情報の喪失、その他の金銭的な喪失による損害を含むが、それに限定されない損害を含め)一切責任を負わないものとする。著作権者は、当該ソフトウェアのメンテナンスおよびサポートに関して一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/700",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/700",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者は、当該ソースコードの目的適合性に関する表明をしない。当該ソースコードは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず保証はない。著作権者は、明示であるか黙示であるかを問わず、当該ソースコードの商業的な使用可能性、権利非侵害、特定の目的に対する適合性に関するいかなる保証もしない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/701",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/701",
+      "content": [
+        {
+          "language": "ja",
+          "text": "訴因発生後1年を経過したら、当該ライセンスの当事者は誰も当該ライセンスに基づいて法的行動を起こすことができない。各当事者は、当該ライセンスに関する訴訟で陪審裁判の権利を放棄する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/702",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/702",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者は、当該ソフトウェアの目的適合性に関する表明をしない。当該ソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず保証はない。著作権者は、商業的な使用可能性、特定の目的に対する適合性、第三者の権利非侵害に関する暗黙の保証を含めて、当該ソフトウェアに関するいかなる保証もしない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/703",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/703",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者は、当該ライセンスに基づいて当該ソフトウェアを受け取る全ての者、またはその他の団体に対して、契約、過失、厳格責任または他の行為上の訴訟かを問わず、当該ソフトウェアの使用や性能によって発生した特別損害、間接損害、派生的損害、その他の損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/704",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/704",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Googleは、本ライセンスに従って、無制限で世界規模で非独占的で使用料無料で取り消し不能なGoogleの特許ライセンスを許諾する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "本ライセンスは、GoogleがgRPCプロジェクトの一部として頒布する著作物に適用される。ただし、Googleがライセンス可能な特許請求項のうち、GoogleがgRPCプロジェクトの一部として頒布する著作物を改変することなく用いることで、必然的に侵害されるものにのみ適用される。また、交差請求や反訴を含めて、GoogleがgRPCプロジェクトの一部として頒布する著作物が、直接または間接的な特許侵害にあたるとして、自身や自身の代理人、あるいは、独占的実施権者が、特許訴訟を起こす場合、特許訴訟を申し立てる場合、あるいは、特許訴訟を起こすことに同意した場合、自身に対する本ライセンスは特許訴訟を正式に起こした時点で終了する。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/705",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/705",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、商業的な使用可能性、特定の目的に対する適合性、および、権利非侵害についての暗黙の保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/706",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/706",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者は、いずれの損害に対しても一切責任を負わない。特に、損害が契約、過失、不法行為、制定法、エクイティ、コモンロー、その他のいずれに基づいて生じたものであれ、仮にそのような損害が発生する可能性を知らされていたとしても、特別損害、間接損害、派生的損害、付随的損害、および、利益の喪失、収入の喪失、使用の喪失によって発生した損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/710",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/710",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT A - Sun Standards   \r\n  \r\n\"The contents of this file are subject to the Sun Standards   \r\nLicense Version 1.0 the (the \"License\";) You may not use   \r\nthis file except in compliance with the License. You may   \r\nobtain a copy of the License at   \r\n_______________________________.   \r\n  \r\n    Software distributed under the License is distributed on   \r\nan \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, either   \r\nexpress or implied. See the License for the specific   \r\nlanguage governing rights and limitations under the License.   \r\n  \r\nThe Original Code is Copyright 1998 by Sun Microsystems, Inc   \r\n  \r\nThe Initial Developer of the Original Code is: Sun   \r\nMicrosystems, Inc.   \r\n  \r\nPortions created by _____________________________ are   \r\nCopyright ______________________________.   \r\n  \r\nAll Rights Reserved.   \r\n  \r\nContributors: ______________________________________. "
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/711",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/711",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT B - Sun Standards   \r\n  \r\nThe Standard is defined as the following IETF RFCs:   \r\n  \r\nRFC1831: RPC: Remote Procedure Call Protocol Specification   \r\nVersion 2 RFC1832: XDR: External Data REpresentation   \r\nStandard RFC1833: Binding Protocols for ONC RPC Version 2   \r\nRFC2078: Generic Security Service Application Program   \r\nInterface, Version 2 RFC2203: RPCSEC_GSS Protocol   \r\nSpecification RFC2695: Authentication Mechanisms for ONC RPC"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/712",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/712",
+      "content": [
+        {
+          "language": "ja",
+          "text": "いかなる条件においても、著作権者、プロモータ、コントリビュータ、会員、あるいは、それぞれのパートナー、役員、理事、従業員、代理人、代表者は、当該ファイルによって生じる収入の損失や利益の損失などに対する直接損害、間接損害、特別損害、派生的損害であれ、いかなる損害に対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/715",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/715",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、当該ソフトウェアの目的適合性に関する表明をしない。当該ソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず保証はない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/716",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/716",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、設計、商業的な使用可能性、特定の目的に対する適合性、一連の取引や使用、取引慣行によって生じる保証を含むいかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/717",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/717",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者は、当該ソフトウェアによる著作権、トレード・シークレット、特許の侵害に関する責任を一切負わないものとする。また、著作権者は、仮にそのような損害が発生する可能性を知らされていたとしても、収入の損失、利益の損失その他の特別損害、間接損害、派生的損害のいずれに対しても、一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、使用、修正、改変、エンハンスに関して、著作権者のサポートも義務も一切ない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/719",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/719",
+      "content": [
+        {
+          "language": "ja",
+          "text": "コントリビュータに対し、当該ライセンスに基づいて当該ソフトウェアを受け取る者が、交差請求や反訴を含めて、ソフトウェア(ソフトウェア全般を指す)に適用される特許に関する特許訴訟、または特許権を行使するための他の同様な公式の手続きを開始した場合、そのコントリビュータから訴訟を起こした者に当該ライセンスに従って付与された特許ライセンス(当該ソフトウェア以外に適用される特許ライセンスも含む)は、特許訴訟を正式に起こした時点で終了する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/720",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/720",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、特定のタスクに対する適合性に関するいかなる保証もない。本ライセンスに基づいて当該ソフトウェアを受け取る全ての者は、当該ソフトウェアの使用に関する全てのリスクを負うことになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/725",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/725",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、契約、過失または他の不法行為上の訴訟かを問わず、当該ソフトウェアの使用やその他の扱いによって発生した請求、損害その他のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/728",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/728",
+      "content": [
+        {
+          "language": "ja",
+          "text": "初期開発者も著作権者も、仮にそのような損害が発生する可能性を知らされていたとしても、不変の法があった場合にそれが別に定める範囲を除き、収入の損失、利益の損失、その他の直接損害、間接損害、特別損害、付随的損害、または、派生的損害を含むがそれに限らず、いかなる損害に対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/729",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/729",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアおよび本ライセンスは、「現状のまま(as-is)」で提供されており、設計、商業的な使用可能性、特定の目的に対する適合性に関する保証を含むいかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/730",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/730",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスはノルウェー法の規定に従う。係争は、オスロ市裁判所で解決されるものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/731",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/731",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアのファイルがBisonによってBisonの出力ファイルにコピーされる場合、その出力ファイルを制限無しに使用してもよい。 "
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/735",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/735",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、特定の目的に対する適合性や商業的な使用可能性に関する暗黙の保証を含め、いかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/738",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/738",
+      "content": [
+        {
+          "language": "ja",
+          "text": "VERIDIAN CORPORATIONも、その関連会社も、米国政府やその代理機関も、事由の如何を問わず、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか厳格責任であるか(過失を含む)不法行為であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した直接損害、間接損害、付随的損害、特別損害、懲罰的損害、または、派生的損害のいずれに対しても(代替品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償も含めるが、それに限定されない補償を含め)一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/739",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/739",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスは、法の抵触に関わらず、バージニア州法の規定に従う。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/742",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/742",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに基づいて当該ソフトウェアを受け取る者は、当該ソフトウェアの使用に関して、著作権者またはその関連会社に対する一切の請求権を放棄するものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/743",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/743",
+      "content": [
+        {
+          "language": "ja",
+          "text": "特定の埋め込みコードについては、頒布時にUniversity of Californiaが課す条件に従うものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "University of Californiaの著作権表示および条件はこちら。\r\n\r\n(a) Copyright (c) 1988, 1993 The Regents of the University of \r\n California. All rights reserved. \r\n\r\n(b) Redistribution and use in source and binary forms, with or without \r\n modification, are permitted provided that the following conditions \r\n are met: \r\n\r\n (i) Redistributions of source code must retain the above copyright \r\n notice, this list of conditions and the following disclaimer. \r\n\r\n (ii) Redistributions in binary form must reproduce the above \r\n copyright notice, this list of conditions and the following \r\n disclaimer in the documentation and/or other materials provided \r\n with the distribution. \r\n\r\n (iii) Neither the name of the University nor the names of its \r\n contributors may be used to endorse or promote products derived \r\n from this software without specific prior written permission."
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/744",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/744",
+      "content": [
+        {
+          "language": "ja",
+          "text": "特定の埋め込みコードについては、頒布時にUniversity of Californiaが課す条件に従うものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "University of Californiaの著作権表示および条件はこちら。\r\n\r\n(a) Copyright (c) 1988, 1993 The Regents of the University of \r\n California. All rights reserved. \r\n\r\n(b) Redistribution and use in source and binary forms, with or without \r\n modification, are permitted provided that the following conditions \r\n are met:\r\n\r\n(i) Redistributions of source code must retain the above copyright   \r\n      notice, this list of conditions and the following disclaimer.   \r\n\r\n(ii) Redistributions in binary form must reproduce the above   \r\n      copyright notice, this list of conditions and the following   \r\n      disclaimer in the documentation and/or other materials provided   \r\n      with the distribution.   \r\n\r\n(iii) All advertising materials mentioning features or use of this   \r\n      software must display the following acknowledgement: \"This   \r\n      product includes software developed by the University of   \r\n      California, Berkeley and its contributors.\"   \r\n\r\n(iv) Neither the name of the University nor the names of its   \r\n      contributors may be used to endorse or promote products derived   \r\n      from this software without specific prior written permission."
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/745",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/745",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、いかなる保証もアップグレードもサポートもない。著作権者およびライセンサは、明示であるか黙示であるかを問わず、いかなる保証も条件も明示的に否認する。ここでいう保証もしくは条件とは、商業的な使用可能性、満足すべき品質、特定の目的に対する適合性、および、第三者の権利非侵害に関する暗黙の保証もしくは条件を含むが、それに限定されるものではない。著作権者およびライセンサは、当該ソフトウェアの機能が本ライセンスに基づいて当該ソフトウェアを受け取る者の要求に適合すること、当該ソフトウェアの操作が中断やエラーを引き起こさないこと、当該ソフトウェアの欠陥が修正されることを保証しない。著作権者およびライセンサ、あるいは著作権者から認可された代表者から得られる、口頭または書面によるいかなる情報も、保証条項を形成せず、また、この保証条項の範囲を広げないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/746",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/746",
+      "content": [
+        {
+          "language": "ja",
+          "text": "いかなる条件においても、著作権者もライセンサも、責任の根拠が契約であるか保証であるか(過失を含む)不法行為であるか製造物責任その他であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、また、法的救済の本来の目的を達成できなかったとしても、本ライセンス、または当該ソフトウェアの使用によって発生した付随的損害、特別損害、間接損害、または、派生的損害のいずれに対しても一切責任を負わないものとする。本ライセンスの下での全ての損害に対する著作権者およびライセンサの責任総額は、50ドル($50.00)を超えないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/752",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/752",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Googleは、本ライセンスに従って、無制限で世界規模で非独占的で使用料無料で取り消し不能なGoogleの特許ライセンスを許諾する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "本ライセンスは、GoogleがWebMプロジェクトの一部として頒布する著作物に適用される。ただし、Googleがライセンス可能な特許請求項のうち、GoogleがWebMプロジェクトの一部として頒布する著作物を改変することなく用いることで、必然的に侵害されるものにのみ適用される。また、交差請求や反訴を含めて、GoogleがWebMプロジェクトの一部として頒布する著作物が、直接または間接的な特許侵害にあたるとして、自身や自身の代理人、あるいは、独占的実施権者が、特許訴訟を起こす場合、特許訴訟を申し立てる場合、特許訴訟を起こすことに同意した場合、あるいは、特許権を行使する場合、自身に対する本ライセンスは特許訴訟を正式に起こした時点で終了する。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/753",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/753",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、著作者は、商業的な使用可能性や目的適合性に関する暗黙の保証を含むいかなる保証もしない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/754",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/754",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、契約、過失または他の不法行為上の訴訟かを問わず、当該ソフトウェアの使用や性能によって発生した特別損害、直接損害、間接損害、派生的損害、および、使用の喪失、データの喪失、利益の喪失によって発生した損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/755",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/755",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者は、契約、過失または他の不法行為上の訴訟かを問わず、当該フォントソフトウェアの使用もしくは使用できないこと、または、その他の扱いによって発生した請求、通常損害、特別損害、間接損害、付随的損害、または、派生的損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/756",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/756",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、本ライセンスに従って、使用料無料か、そうでない場合は合理的で非差別的な特許ライセンスを許諾する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、当該仕様書を実装するために必要であるとみなされるものにのみ適用される。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/757",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/757",
+      "content": [
+        {
+          "language": "ja",
+          "text": "改変物において、著作権者に代わって全ての保証および責任を有効に否認できる場合、本ライセンスの免責事項を削除してもよい。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/758",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/758",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスの条項に対する違反に気づいてから30日以内に是正しなかった場合、自動的にライセンスが失効する。違反した者は、当該ソフトウェアの利用を直ちに中止し、所有または管理している当該ソフトウェアを全て破棄するものとする。失効後も効力を持ち続けるべき条項はライセンス失効後も有効である。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/759",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/759",
+      "content": [
+        {
+          "language": "ja",
+          "text": "準拠法によって本ライセンスの条項を遵守することが禁止または制限された場合、または本ライセンスの条項の施行可能性が妨げられた場合、直ちにライセンスが失効する。違反した者は、当該ソフトウェアの利用を直ちに中止し、所有または管理している当該ソフトウェアを全て破棄するものとする。失効後も効力を持ち続けるべき条項はライセンス失効後も有効である。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/760",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/760",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者に対し、本ライセンスに基づいて当該ソフトウェアを受け取る者が特許侵害訴訟を起こした場合、自動的にライセンスが失効する。違反した者は、当該ソフトウェアの利用を直ちに中止し、所有または管理している当該ソフトウェアを全て破棄するものとする。失効後も効力を持ち続けるべき条項はライセンス失効後も有効である。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/761",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/761",
+      "content": [
+        {
+          "language": "ja",
+          "text": "いずれの当事者も、他方当事者に対して、専ら本ライセンスがその条項に従って終了した結果として生じるいかなる補償、損害賠償や損害に対しても責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/762",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/762",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスの終了は、当事者の他の権利や法的救済には影響しないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/763",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/763",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者が本ライセンスの条項を施行しなかったとしても、その条項や他の条項について、将来の施行を放棄したものとはみなされない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/764",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/764",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスのいずれかの条項が施行不能とみなされる場合、当該条項は当事者の経済的利益および目的を達成するために最大限許諾される範囲内で施行されるものとする。なお、本ライセンスの残りの部分はその効力を維持する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/765",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/765",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに基づいて当該ソフトウェアを受け取る者と著作権者の間における、本ライセンスに関係する訴訟や他の係争の解決はカリフォルニア北部地区でおこなうものとする。当該ソフトウェアを受け取る者と著作権者は、当該地区の州裁判所および連邦裁判所が対人管轄権をもつこと、および、裁判地を当該裁判所とすることに同意するものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/766",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/766",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスは、カリフォルニア州法の抵触に関する条項を除いて、米国法、および、カリフォルニア州法によって定められている。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/767",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/767",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT A. \r\n\r\n\"Portions Copyright (c) 1999 Apple Computer, Inc. All Rights \r\nReserved. This file contains Original Code and/or Modifications of \r\nOriginal Code as defined in and that are subject to the Apple Public \r\nSource License Version 1.1 (the \"License\"). You may not use this file \r\nexcept in compliance with the License. Please obtain a copy of the \r\nLicense at http://www.apple.com/publicsource and read it before using \r\nthis file. \r\n\r\nThe Original Code and all software distributed under the License are \r\ndistributed on an \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, EITHER \r\nEXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES, \r\nINCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, \r\nFITNESS FOR A PARTICULAR PURPOSE OR NON- INFRINGEMENT. Please see the \r\nLicense for the specific language governing rights and limitations \r\nunder the License.\""
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/768",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/768",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本作品は、書面で同意している場合を除いて、ライセンサによって、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、特定の目的に対する適合性、第三者の権利非侵害、および、欠陥がないことに関する保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/776",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/776",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者、および、全ての第三者に対し、自身が所有または管理する特許権や他の知的財産権に基づき、著作権者のライセンスと同じ範囲で改変物を使用、複製、改変、頒布、デプロイする使用料無料で非独占的なライセンスを付与する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "デプロイは、当該ソフトウェアを社内での研究開発以外のために使用、サブライセンス、頒布することを指す。これは自身の会社または組織の内部における、当該ソフトウェアの研究開発での使用を除くあらゆる使用または頒布、および、第三者に対する、あらゆる形式による当該ソフトウェアの直接的もしくは間接的なサブライセンスまたは頒布を含むが、それに限定されるものではない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/777",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/777",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者、および、その子会社に対し、自身が所有または管理する特許権や他の知的財産権に基づき、あらゆる形式で、頒布の複数の階層を介し、改変物を使用、複製、コンパイル、表示、実行、改変、サブライセンス、頒布する永続的で世界規模で使用料無料で非独占的で取り消し不能なライセンスを付与する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/778",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/778",
+      "content": [
+        {
+          "language": "ja",
+          "text": "他のファイルが当該ソフトウェアのファイルに含まれるテンプレートを生成または当該ソフトウェアのファイルに含まれるマクロやインライン関数を使用する場合、あるいは、コンパイルした当該ソフトウェアのファイルと他のソフトウェアとをリンクしてソフトウェアを生成する場合、その結果としてできるソフトウェアは、当該ソフトウェアのファイルによってGNU General Public Licenseが適用されることはない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/780",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/780",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、目的適合性に関する保証を含むいかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/781",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/781",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作者は、当該仕様書の使用もしくは頒布によって発生した直接損害、間接損害、特別損害、付随的損害、または、派生的損害のいずれに対しても一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/782",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/782",
+      "content": [
+        {
+          "language": "ja",
+          "text": "ライセンサは、仮にそのような損害が発生する可能性を知らされていたとしても、ライセンサに故意または重大な過失がある場合を除き、本ライセンスまたは本作品の利用によって発生した損害のいずれに対しても一切責任を追わないものとする。ここでいう損害とは、ライセンサが、本作品にかかる著作権、著作隣接権、著作者人格権、実演家人格権、商標権、パブリシティ権、不正競争防止法その他関連法規上保護される利益を有する者からの許諾を得ることなく本作品の利用許諾を行ったことにより発生する損害、プライバシー侵害または名誉毀損から発生する損害等の通常損害、および、特別損害を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/783",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/783",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに違反すると、本ライセンスが自動的に終了するものとする。ただし、その違反した者が頒布した本作品、二次的著作物や編集著作物等を受け取った第三者に対するライセンスは引き続き効力を維持する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/784",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/784",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従っている限り、本ライセンスは、適用される著作権が存続する期間は継続する。前記に関わらず、ライセンサは、本ライセンスに基づく本作品の頒布を中止する権利を持つ。ライセンサがそのような権利を行使した場合でも、本ライセンスによって付与された権利は終了することはない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/785",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/785",
+      "content": [
+        {
+          "language": "ja",
+          "text": "準拠法の下で本ライセンスのいずれかの条項が無効または施行不可能であっても、それによって本ライセンスの他の部分の有効性や施行可能性は影響を受けないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/786",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/786",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスの条項の全部または一部の放棄、あるいは、その違反に関する承諾は、これが書面にされ、その放棄または承諾に責任を追う当事者による署名または記名押印がなされない限り、実施することができない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/787",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/787",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、著作権者やコントリビュータによって「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/788",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/788",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者もコントリビュータも、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生したユーザが受ける損害のいずれに対しても一切責任を負わないものとする。\r\n"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/795",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/795",
+      "content": [
+        {
+          "language": "ja",
+          "text": "ある法域において、法的あるいはライセンス制度を通じてロイヤルティを徴収する権利を放棄できるとみなせる場合、営利目的で利用する場合は、ライセンサは、このライセンスの下で権利を行使する者からそのようなロイヤルティを徴収する排他的な権利を留保する。営利目的で利用しない場合は、ライセンサは、そのような権利を放棄する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、著作物もしくは二次的著作物とその他の著作物とのデジタル・ファイル共有などの手段による交換は、その交換に対して金銭的報酬の支払いがない限り、営利目的とはみなさない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/796",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/796",
+      "content": [
+        {
+          "language": "ja",
+          "text": "営利目的で利用する場合、ライセンサは、個人であっても、自主的なライセンス制度に基づいてロイヤルティを徴収する著作権管理団体のメンバであっても、このライセンスの下で権利を行使する者からロイヤルティを徴収する権利を留保する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、著作物もしくは二次的著作物とその他の著作物とのデジタル・ファイル共有などの手段による交換は、その交換に対して金銭的報酬の支払いがない限り、営利目的とはみなさない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/797",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/797",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT A.\r\n\r\n\"Portions Copyright (c) 1999-2003 Apple Computer, Inc. All Rights\r\nReserved.\r\n\r\nThis file contains Original Code and/or Modifications of Original Code\r\nas defined in and that are subject to the Apple Public Source License\r\nVersion 2.0 (the 'License'). You may not use this file except in\r\ncompliance with the License. Please obtain a copy of the License at\r\nhttp://www.opensource.apple.com/apsl/ and read it before using this\r\nfile.\r\n\r\nThe Original Code and all software distributed under the License are\r\ndistributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER\r\nEXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,\r\nINCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.\r\nPlease see the License for the specific language governing rights and\r\nlimitations under the License.\""
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/798",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/798",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作物は、書面で同意している場合を除いて、「現状のまま(as-is)」で提供されており、明示であるか黙示であるか法定その他であるかを問わず、いかなる表明も保証もしない。ここでいう表明や保証とは、権原、商業的な使用可能性、特定の目的に対する適合性、権利非侵害、潜在的なものを含む欠陥、精度、発見可能か否かに関わらないエラーの有無に関する表明や保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/799",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/799",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Exhibit A - Source Code Form License Notice\r\n\r\nThis Source Code Form is subject to the terms of this License. If a copy of the License was not distributed with this file, You can obtain one at\r\nhttp://gis.foundationcenter.org/licenses/LICENSE-1.0.html\r\n\r\nNote: If it is not possible or desirable to put the notice in a particular file, then You may include the notice in a location (such as a LICENSE file in a relevant directory) where a recipient would be likely to look for such a notice."
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/800",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/800",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Exhibit B - \"Incompatible With Secondary Licenses\" Notice\r\n\r\nThis Source Code Form is \"Incompatible With Secondary Licenses\", as defined by this License."
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/801",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/801",
+      "content": [
+        {
+          "language": "ja",
+          "text": "フリーウェア、オープンソース・ソフトウェア以外の形態での頒布は、標準的な商用の取引条件に従ってそのような頒布を行うことを許可している、使用料無料である別の契約の下でのみ認められる。そのような契約書のコピーは、本ライセンスに住所およびメールアドレスが記載されているSendmail, Inc.から入手可能である。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/803",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/803",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアとOpenSSLライブラリとをリンクして生成したバイナリを頒布してもよい。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/804",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/804",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Abobeの商標\"Display PostScript\"(tm)の使用は、当該ソフトウェアがDisplay PostScriptシステムとともに動作することを述べるための使用に限定される。Display PostScriptシステムに言及する場合は、Abobeが商標を所有するという正しい帰属を含める。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/805",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/805",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスを適用するソフトウェアを改変する場合、新たなライセンスが明示されているファイルは、本ライセンスに従わなくてもよい。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/806",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/806",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスは日本法の規定に従う。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/807",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/807",
+      "content": [
+        {
+          "language": "ja",
+          "text": "vbAcceleratorもコントリビュータも、事由の如何を問わず、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか厳格責任であるか(過失を含む)不法行為であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した直接損害、間接損害、特別損害、付随的損害、懲罰的損害、または、派生的損害のいずれに対しても(代替品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償も含めるが、それに限定されない補償を含め)一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/808",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/808",
+      "content": [
+        {
+          "language": "ja",
+          "text": "いかなる条件および法理論においても、自身、初期開発者、コントリビュータ、元々のソフトウェアの頒布者やそれらの者への供給者も、(過失を含む)不法行為、契約、あるいはその他を問わず、仮にそのような損害が発生する可能性を知らされていたとしても、準拠法が責任制限を認めない当該当事者の過失から生じた死亡または人身障害に関する責任を除き、本ライセンスまたは元々のソフトウェアの使用によって発生した間接損害、特別損害、付随的損害、または、派生的損害のいずれに対しても(営業権の損失、業務の停止、コンピュータ障害または誤作動による損害や損失を含めるが、それに限定されない商業上の損害や損失を含め)一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/809",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/809",
+      "content": [
+        {
+          "language": "ja",
+          "text": "元々のソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、欠陥がないこと、商業的な使用可能性、特定の目的に対する適合性、および、権利非侵害に関する保証を含むが、それに限定されるものではない。本ライセンスに基づいて元々のソフトウェアを受け取る全ての者は、元々のソフトウェアの品質と性能に関する全てのリスクを負うことになる。元々のソフトウェアに欠陥があると判明した場合、本ライセンスに基づいて元々のソフトウェアを受け取る全ての者は、必要な保守点検や補償、修正に要するコストの全てを引き受けることになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/810",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/810",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT A - Sun Standards License\r\n\r\n\"The contents of this file are subject to the Sun Standards\r\nLicense Version 1.1 (the \"License\");\r\nYou may not use this file except in compliance with the\r\nLicense. You may obtain a copy of the\r\nLicense at _______________________________.\r\n\r\nSoftware distributed under the License is distributed on\r\nan \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, either\r\nexpress or implied. See the License for the specific\r\nlanguage governing rights and limitations under the License.\r\n\r\nThe Original Code is ______________________________________.\r\n\r\nThe Initial Developer of the Original Code is:\r\nSun Microsystems, Inc..\r\n\r\nPortions created by: _______________________________________\r\n\r\nare Copyright (C): _______________________________________\r\n\r\nAll Rights Reserved.\r\n\r\nContributor(s): _______________________________________ "
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/811",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/811",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT B - Standards\r\n\r\nThe Standard is defined as the following:\r\n\r\nOpenOffice.org XML File Format Specification, located at\r\nhttp://xml.openoffice.org\r\n\r\nOpenOffice.org Application Programming Interface Specification, located at\r\nhttp://api.openoffice.org"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/812",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/812",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該フォントを用いた表示用または印刷用のテキストを含む文書から成るPostscriptまたはPDFファイルに、その文書自体に適用される条件やライセンスにかかわらず、当該フォントプログラムを含めることができる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/813",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/813",
+      "content": [
+        {
+          "language": "ja",
+          "text": "OpenShot Video Editorプロジェクトは、本ライセンスに従って、GPLと互換性がないGStreamer、FFMPEG、およびlibopenshotを、GStreamer、FFMPEG、MLT、およびOpenShot Video Editorとともに使用、および頒布することを許諾する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/814",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/814",
+      "content": [
+        {
+          "language": "ja",
+          "text": "他のプログラムとコンパイルした当該ファイルとをリンクして生成される実行形式は、当該ファイルによってGNU General Public Licenseが適用されることなく頒布してもよい。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/815",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/815",
+      "content": [
+        {
+          "language": "ja",
+          "text": "ライセンサの要望を受けた場合、本ライセンスで必要な著作者などのクレジットを、編集著作物等や二次的著作物から実行可能な範囲で削除する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "編集著作物等に組み込まれた本作品またはその二次的著作物に対しても同様である。ただし、本ライセンスに従った本作品またはその二次的著作物のそのものとは違う編集著作物等には本ライセンスの影響は及ばない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/816",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/816",
+      "content": [
+        {
+          "language": "ja",
+          "text": "CUPSイメージングライブラリをApple OS用に開発されたソフトウェアとリンクさせて組み合わせたものを頒布する際、Apple OS用に開発されたソフトウェアのソースコードを公開する必要はない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●Apple OS用に開発されたソフトウェアとは、AppleおよびサードパーティのAppleオペレーティング・システム用プリンタドライバ、フィルタ、バックエンドを含むが、それに限定されるものではない。\r\n\r\n●Appleオペレーティング・システムとは、Apple Inc.が開発や販売を行うオペレーティング・システム・ソフトウェアを意味し、\"Apple's Darwin\", \"iOS\", \"macOS\", \"macOS Server\", \"tvOS\"の全ての現存するリリースおよびバージョン、および全ての後続のリリース、将来のバージョンを含むが、それに限定されるものではない。\r\n\r\n●この例外規定が当てはまる全てのCUPSソフトウェアは、各ソースファイルの冒頭に以下のように記載する。\r\n\r\nThis file is subject to the Apple OS-Developed Software exception."
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/817",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/817",
+      "content": [
+        {
+          "language": "ja",
+          "text": "公正取引、または、著作権法、著作者人格権法、その他の準拠法に基づく著作権者や原著作者の権利の制限などから生じる、著作物を使用する権利を、本ライセンスによって(削減や制限によるものを含め)除外したり改変したりすることはない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/818",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/818",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作物が楽曲であり、また営利目的の利用である場合、ライセンサは、(i)著作物を公に伝達、放送、公に実演、または、ウェブキャストのようにデジタル化して公に実演した際のロイヤルティの徴収の権利を留保する。(ii)著作物から作られた録音(いわゆるカバーバージョン)およびその頒布に対するロイヤルティを、米国著作権法の115条(もしくはオーストラリアの著作権法、あるいは他の法域における同等な法定のライセンス)に基づくライセンスに従って徴収する権利を留保する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/819",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/819",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作物が録音であり、また営利目的の利用である場合、ライセンサは、米国著作権法の114条(もしくは他の法域において同等なもの)に基づいたライセンスに従って、著作物をデジタル化して公に実演することに対するロイヤルティを徴収する権利を留保する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/820",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/820",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作物は、本ライセンスで明示的に述べている場合を除いて、または書面で同意している場合を除いて、準拠法で許諾される範囲において、ライセンサによって、「現状のまま(as-is)」で提供されており、明示であるか黙示であるか法定その他であるかを問わず、いかなる表明も保証も条件もない。ここでいう表明や保証や条件とは、著作物の内容や正確性、権原、商業的な使用可能性、特定の目的に対する適合性、非侵害性、潜在的か否かによらず欠陥が無いこと、エラーの有無に関する表明や保証や条件を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/821",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/821",
+      "content": [
+        {
+          "language": "ja",
+          "text": "準拠法で許諾される範囲において、また、本ライセンスの第5章で言及した同意によって生じた責任を除いて、(過失を含むがそれに限らない)いかなる法理論においても、ライセンサは、仮にそのような損害が発生する可能性を知らされていたとしても、いかなる損失や損害に対しても一切責任を負わないものとする。ここでいう損失や損害とは、生産や稼働時間の損失、データや記録の損失、損害や破損、予測された貯蓄や機会や収入や利益や営業権の損失、その他の経済的損失、本ライセンスまたは著作物の利用によって発生した特別損害、付随的損害、派生的損害、または、懲罰的損害を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "適用法令が保証や条件を示している場合、または本ライセンスに関して除外、制限、および改変できない責任をライセンサに対して課している場合、適用法令で許諾される範囲において、ライセンサの責任は、自身の選択に従って以下のように制限される。\r\n\r\n●商品の場合は次のうち一つ以上。\r\n  (1) 商品の交換、または同等の商品の供給\r\n  (2) 商品の修理\r\n  (3) 商品の交換や同等の商品の取得にかかるコストの支払い\r\n  (4) 商品を修理させるのにかかるコストの支払い\r\n\r\n●サービスの場合\r\n  (1) サービスを再度供給すること、または\r\n  (2) サービスを再度供給させるのにかかるコストの支払い"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/822",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/822",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスの解釈、有効性、および履行は、オーストラリアのニューサウスウェールズ州で有効な法律の規定に従う。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/823",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/823",
+      "content": [
+        {
+          "language": "ja",
+          "text": "ライセンサの要望を受けた場合、ライセンサや原著作者への言及を、集合著作物や二次的著作物から実行可能な範囲で削除する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/824",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/824",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権に縛られない利用、または、著作権法や適用される法律に基づく著作権保護に関連して規定されている制限事項や例外事項から生じる権利に縛られない利用を、本ライセンスによって削減したり制限したりすることはない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/831",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/831",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアの使用もしくは誤用から生じた、または、本ライセンスの条項に対する違反から生じた第三者の直接的、間接的、付随的、派生的な請求または訴訟、ならびに、それに関連した費用、責任、損害、和解、手数料のいずれに対しても、当該ソフトウェアの著作者およびコントリビュータに補償するものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/832",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/832",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、品質、性能、権利非侵害、商業的な使用可能性、特定の目的に対する適合性についての保証を含むが、それに限定されるものではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/833",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/833",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアのインストールや使用に関連するリスクは自身で負うことになる。\r\n当該ソフトウェアの著作者も著作権者も、事由の如何を問わず、当該ソフトウェアに起因または関連して生じる請求、損害その他のいずれに対しても一切責任を負わないものとする。ライセンス保持者は、当該ソフトウェアの使用が適切であるかどうかを判断することに対して単独で責任を持つと共に、当該ソフトウェアの使用に伴う全てのリスク(プログラムエラー、機器の被害、データやソフトウェアプログラムの消失、操作の中断に関するリスクを含むが、それに限らないリスク)を負うことになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/834",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/834",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに基づいて当該フォントを受け取る全ての者が当該フォントを再頒布するたびに、その受領者は元々のライセンス許可者から、本ライセンスで指定された条件と制約の下で当該ファイルを複製や頒布、もしくは改変する許可を自動的に得るものとする。本ライセンスに基づいて当該フォントを受け取る全ての者は、受領者がここで認められた権利を行使することに関してこれ以上他のいかなる制限も課してはならない。本ライセンスに基づいて当該フォントを受け取る全ての者には、第三者が本ライセンスに従うことを強制する責任はない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/835",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/835",
+      "content": [
+        {
+          "language": "ja",
+          "text": "特許侵害、あるいは、特許関係に限らないその他の理由から、裁判所の判決、あるいは、申し立ての結果として、本ライセンスに基づいて当該フォントを受け取る全ての者に(裁判所命令や契約などにより)本ライセンスの条件と矛盾する制約が課された場合でも、本ライセンスに基づいて当該フォントを受け取る全ての者が本ライセンスの条件を免除されるわけではない。\r\n本ライセンスの下で課された責任と他の関連する責任を同時に満たす形で当該フォントを頒布できない場合、結果として当該フォントを頒布できないことになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/836",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/836",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該フォントは代価なしで利用が許可されるため、適用する法が認める限りにおいて、当該フォントに関するいかなる保証も存在しない。当該フォントは、書面で別に述べる場合を除いて、著作権者、または、その他の団体によって、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証も条件もない。ここでいう保証もしくは条件とは、商業的な使用可能性、および、特定の目的に対する適合性に関する暗黙の保証を含むが、それに限定されるものではない。本ライセンスに基づいて当該フォントを受け取る全ての者は、当該フォントの品質と性能に関する全てのリスクを負うことになる。当該フォントに欠陥があると判明した場合、本ライセンスに基づいて当該フォントを受け取る全ての者は、必要な保守点検や補償、修正に要するコストの全てを引き受けることになる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/837",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/837",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者も、本ライセンスで許可されているとおりに当該フォントを複製、改変、または、再頒布したその他の団体も、本ライセンスに基づいて当該フォントを受け取る全ての者に対して、仮にそのような損害が発生する可能性を知らされていたとしても、適用される法律または書面での同意によって命じられない限り、当該フォントの利用によって発生した直接損害、間接障害、派生的損害、付随的損害、特別損害、懲罰的損害のいずれに対しても(代替品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償も含めるが、それに限定されない補償を含め)一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/840",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/840",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスの条項に対する違反に気づいてから相応の期間内に是正しなかった場合、自動的にライセンスが失効する。失効後も効力を持ち続けるべき条項はライセンス失効後も有効である。失効以前に違反している自身以外に付与されたエンドユーザライセンスはその効力を維持する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●自身は、本ライセンスの下で、本ライセンスの条項の全てに従って権利を行使する個人または法人を指す。 \r\n●法人の場合、自身には、自身を管理する者、自身によって管理される者、もしくは、自身と共通の管理下にある者の団体を含む。この定義における「管理」は次のいずれかを指す。 \r\n(1)契約などにより、直接または間接的にこの法人の指揮・経営を行なう権限を持つ \r\n(2)この法人の50％を超える発行済み株式または受益所有権を持つ"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/841",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/841",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT A - The SNIA Public License.\r\n\r\nThe contents of this file are subject to the SNIA Public License Version 1.1 (the\r\n\"License\"); you may not use this file except in compliance with the License. You\r\nmay obtain a copy of the License at\r\n\r\nThis file itself is the license.\r\n\r\nSoftware distributed under the License is distributed on an \"AS IS\" basis,\r\nWITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the\r\nspecific language governing rights and limitations under the License.\r\n\r\nThe Original Code is .\r\n\r\nThe Initial Developer of the Original Code is [COMPLETE THIS] .\r\n\r\nContributor(s): ______________________________________.\r\n\r\nRead more about this license at http://www.snia.org/smi/developers/open_source/"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/842",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/842",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT A - CUA Office Public License.\r\n\r\n``The contents of this file are subject to the CUA Office Public License Version\r\n1.0 (the \"License\"); you may not use this file except in compliance with the\r\nLicense. You may obtain a copy of the License at\r\nhttp://cuaoffice.sourceforge.net/\r\n\r\nSoftware distributed under the License is distributed on an \"AS IS\" basis,\r\nWITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the\r\nspecific language governing rights and limitations under the License.\r\n\r\nThe Original Code is ______________________________________.\r\n\r\nThe Initial Developer of the Original Code is ________________________. Portions\r\ncreated by ______________________ are Copyright (C) ______\r\n_______________________. All Rights Reserved.\r\n\r\nContributor(s): ______________________________________.\r\n\r\nAlternatively, the contents of this file may be used under the terms of the _____\r\nlicense (the \"[___] License\"), in which case the provisions of [______] License\r\nare applicable instead of those above. If you wish to allow use of your version\r\nof this file only under the terms of the [____] License and not to allow others\r\nto use your version of this file under the CUAPL, indicate your decision by\r\ndeleting the provisions above and replace them with the notice and other\r\nprovisions required by the [___] License. If you do not delete the provisions\r\nabove, a recipient may use your version of this file under either the CUAPL or\r\nthe [___] License.\"\r\n\r\n[NOTE: The text of this Exhibit A may differ slightly from the text of the\r\nnotices in the Source Code files of the Original Code. You should use the text of\r\nthis Exhibit A rather than the text found in the Original Code Source Code for\r\nYour Modifications.]"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/847",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/847",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者もコントリビュータも、事由の如何を問わず、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか厳格責任であるか(過失を含む)不法行為であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した、1,000米ドルを超える直接損害に対して、または、間接損害、付随的損害、特別損害、懲罰的損害、派生的損害のいずれに対しても(代替品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償も含めるが、それに限定されない補償を含め)一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/850",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/850",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスは、当該ソフトウェアにのみ適用され、当該ソフトウェアによって提供されるライブラリに（静的であるか動的であるかを問わず）リンクするソフトウェアには適用されない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/852",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/852",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに違反していたことを通知された後30日以内に是正しなかった場合、自動的にライセンスが失効する。失効以前に付与されたライセンスはその効力を維持する。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/854",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/854",
+      "content": [
+        {
+          "language": "ja",
+          "text": "ライセンサ、著作者、コントリビュータのいずれも、当該ソフトウェアの扱いによって発生した間接損害や直接損害などの損害、損失、その他の問題に対して、仮にそのような損害が発生する可能性、または、欠陥が存在する可能性を知らされていたとしても、一切責任を負わないものとする。ただし、その原因が、当該ソフトウェアを意図したとおりに使用している場合で、ライセンサ、著作者、もしくは、コントリビュータの直接的な過失である場合はその限りではない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/855",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/855",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、悪意または重大な過失がある場合を除いて、適用する法が認める限りにおいて、明示であるか黙示であるかを問わず、いかなる保証もない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/856",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/856",
+      "content": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアは、著作権者およびコントリビュータによって「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、商業的な使用可能性、満足すべき品質、特定の目的に対する適合性、あるいは、使用に関する暗黙の保証を含むが、それに限定されるものではない。著作権者もコントリビュータも、当該ソフトウェア、あるいは、当該ソフトウェアの改変物、拡張機能、派生物が、特許、著作権、トレードシークレットなどの知的財産権を侵害しないことを表明しない。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "無保証である。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/857",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/857",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者もコントリビュータも、ライセンシや第三者に対して、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか保証であるか(過失を含む)不法行為であるか製造物責任その他であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した直接損害、間接損害、特別損害、付随的損害、派生的損害、または、懲罰的損害のいずれに対しても、代用品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償を含めるが、それに限定されない補償を含め、一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/860",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/860",
+      "content": [
+        {
+          "language": "ja",
+          "text": "自身のソフトウェアに本ライセンスを適用するときは、次の定型文を、[]に囲まれた部分を自身の識別情報に置き換えて\"[]\"という記号を取り除いた上で添付する。その際、定型文は、ファイル形式に合ったコメント構文で囲むものとする。また、第三者アーカイブ内で容易に識別できるよう、ファイル名またはクラス名や趣旨説明が著作権表示と同じ「印刷ページ」に現れるようにすることを推奨する。 \r\n\r\nCopyright [yyyy] [name of copyright owner]\r\nLicensed under the Educational Community License, Version 2.0 (the \"License\");\r\nyou may not use this file except in compliance with the License. You may obtain\r\na copy of the License at\r\nhttp://www.osedu.org/licenses/ECL-2.0\r\n\r\nUnless required by applicable law or agreed to in writing, software distributed\r\nunder the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\r\nCONDITIONS OF ANY KIND, either express or implied. See the License for the\r\nspecific language governing permissions and limitations under the License."
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/861",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/861",
+      "content": [
+        {
+          "language": "ja",
+          "text": "本ライセンスはフランス法の規定に従う。本ライセンスの履行中に起こされた係争は、発生から2ヶ月以内に円満に解決できず、また、緊急の訴訟手続きが必要でない場合、管轄権をもつパリの裁判所で審理される。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/862",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/862",
+      "content": [
+        {
+          "language": "ja",
+          "text": "適用される法のもとでのGNU GPL Version 3の解釈によってKNIMEとECLIPSEが結合したプログラムとされた場合、ECLIPSEのライセンスがECLIPSEをKNIMEとともに使用および頒布することを許諾していれば、ECLIPSEのライセンスをECLIPSEに、GNU GPL Version 3をKNIMEに適用させて、KNIMEをECLIPSEとともに使用および頒布することができる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/863",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/863",
+      "content": [
+        {
+          "language": "ja",
+          "text": "Node Extensionを拡張するKNIMEのノード(および、特にNodeModel、NodeDialog、NodeViewのサブクラスに基づいたノード)で、かつ、標準APIによってのみKNIMEと相互運用するノードには、本ライセンスが適用されない。当該ノードの所有者は、当該ノードをKNIMEとともに頒布する場合や、KNIMEと相互運用する場合であっても、当該ノードに適用するライセンスを自由に選択できる。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/864",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/864",
+      "content": [
+        {
+          "language": "ja",
+          "text": "著作権者も、本ライセンスで許可されているとおりに当該ソフトウェアを改変、または、再頒布したその他の団体も、本ライセンスに基づいて当該ソフトウェアを受け取る全ての者に対して、仮にそのような損害が発生する可能性を知らされていたとしても、適用される法律または書面での同意によって命じられない限り、当該ソフトウェアの利用によって発生した直接損害、間接損害、通常損害、特別損害、付随的損害、または、派生的損害のいずれに対しても(データの消失や不正確な処理、本ライセンスに基づいて当該ソフトウェアを受け取る全ての者か第三者が被った損失、あるいは、当該ソフトウェアが他のソフトウェアと一緒に動作しないという不具合や損害や損失を含めるが、それに限定されない損害や損失を含め)一切責任を負わないものとする。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/notices/865",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "notices/865",
+      "content": [
+        {
+          "language": "ja",
+          "text": "EXHIBIT A.\r\n\r\n\"The contents of this file are subject to the FreeImage Public License Version 1.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://home.wxs.nl/~flvdberg/freeimage-license.txt\r\n\r\nSoftware distributed under the License is distributed on an \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License."
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
         }
       ]
     }

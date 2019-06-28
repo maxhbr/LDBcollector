@@ -3742,46 +3742,6 @@
   {
     "data": {
       "schemaVersion": 0.1,
-      "uri": "http://open-license.hitachi.com/actions/227",
-      "baseUri": "http://open-license.hitachi.com/",
-      "id": "actions/227",
-      "name": [
-        {
-          "language": "ja",
-          "text": "文書を複製する"
-        }
-      ],
-      "description": [
-        {
-          "language": "ja",
-          "text": ""
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "schemaVersion": 0.1,
-      "uri": "http://open-license.hitachi.com/actions/228",
-      "baseUri": "http://open-license.hitachi.com/",
-      "id": "actions/228",
-      "name": [
-        {
-          "language": "ja",
-          "text": "文書を頒布する"
-        }
-      ],
-      "description": [
-        {
-          "language": "ja",
-          "text": ""
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/actions/229",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "actions/229",
@@ -4649,26 +4609,6 @@
         {
           "language": "ja",
           "text": "派生した製品の推奨や販売促進に著作者やコントリビュータの名前を使う"
-        }
-      ],
-      "description": [
-        {
-          "language": "ja",
-          "text": ""
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "schemaVersion": 0.1,
-      "uri": "http://open-license.hitachi.com/actions/273",
-      "baseUri": "http://open-license.hitachi.com/",
-      "id": "actions/273",
-      "name": [
-        {
-          "language": "ja",
-          "text": "文書を使用する"
         }
       ],
       "description": [
@@ -5729,26 +5669,6 @@
         {
           "language": "ja",
           "text": "取得したリソースを改変せずに頒布する"
-        }
-      ],
-      "description": [
-        {
-          "language": "ja",
-          "text": ""
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "schemaVersion": 0.1,
-      "uri": "http://open-license.hitachi.com/actions/327",
-      "baseUri": "http://open-license.hitachi.com/",
-      "id": "actions/327",
-      "name": [
-        {
-          "language": "ja",
-          "text": "製品や営利主体の推奨や販売促進に著作権者の名前を使う"
         }
       ],
       "description": [
@@ -7082,6 +7002,66 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/398",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/398",
+      "name": [
+        {
+          "language": "ja",
+          "text": "派生した製品の推奨や販売促進に著作権者やコントリビュータの名前を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/400",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/400",
+      "name": [
+        {
+          "language": "ja",
+          "text": "コメント、説明、助言を加えた文書を複製する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/401",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/401",
+      "name": [
+        {
+          "language": "ja",
+          "text": "コメント、説明、助言を加えた文書を出版する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/actions/403",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "actions/403",
@@ -7115,6 +7095,26 @@
         {
           "language": "ja",
           "text": "取得したオブジェクトコードをそのまま発表する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/405",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/405",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得したバイナリを発表する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したバイナリをそのまま発表する"
         }
       ]
     }
@@ -7182,6 +7182,26 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/414",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/414",
+      "name": [
+        {
+          "language": "ja",
+          "text": "CUPSソフトウェアを組み込んだ直接ポートまたはバイナリ形式の頒布物、および販促資料にトレードマークを使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/actions/416",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "actions/416",
@@ -7202,6 +7222,166 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/417",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/417",
+      "name": [
+        {
+          "language": "ja",
+          "text": "仕様書を改変する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/418",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/418",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変した仕様書を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/421",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/421",
+      "name": [
+        {
+          "language": "ja",
+          "text": "仕様書を表示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/422",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/422",
+      "name": [
+        {
+          "language": "ja",
+          "text": "仕様書を実行する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/423",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/423",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変した仕様書を表示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/424",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/424",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変した仕様書を実行する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/425",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/425",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変した仕様書を複製する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/426",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/426",
+      "name": [
+        {
+          "language": "ja",
+          "text": "広告や販売促進に著作権者やコントリビュータの名前を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/actions/427",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "actions/427",
@@ -7209,6 +7389,2126 @@
         {
           "language": "ja",
           "text": "ファイルをTeXで処理し、成果物を印刷する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/428",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/428",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアを自身のソフトウェアと共に頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/429",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/429",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアとOpenSSLライブラリ、またはOpenSSLライブラリと同じライセンスを用いる改変物とをリンクし、実行形式として頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/431",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/431",
+      "name": [
+        {
+          "language": "ja",
+          "text": "文書を編集物に組み込む"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/432",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/432",
+      "name": [
+        {
+          "language": "ja",
+          "text": "特定のコードとOpenSSLライブラリ、またはOpenSSLライブラリと同じライセンスを用いる改変物とをリンクし、実行形式として頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/436",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/436",
+      "name": [
+        {
+          "language": "ja",
+          "text": "編集物に組み込んだ文書を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/437",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/437",
+      "name": [
+        {
+          "language": "ja",
+          "text": "編集物に組み込んだ文書を複製する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/438",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/438",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得したソースコードを改変せずに用いて生成した実行形式に自身の使用例やVimスクリプトを付加して頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/440",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/440",
+      "name": [
+        {
+          "language": "ja",
+          "text": "OPEN LOOKの商標を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/441",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/441",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得した書体を改変せずに使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得した書体をそのまま使う"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/442",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/442",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得した書体を表示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/443",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/443",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得した書体を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/445",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/445",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得したオブジェクトコードを表示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/447",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/447",
+      "name": [
+        {
+          "language": "ja",
+          "text": "文書を使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得した文書を改変せずにそのまま使用する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/449",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/449",
+      "name": [
+        {
+          "language": "ja",
+          "text": "文書を複製する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得した文書を改変せずにそのまま複製する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/451",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/451",
+      "name": [
+        {
+          "language": "ja",
+          "text": "文書を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得した文書を改変せずにそのまま頒布する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/453",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/453",
+      "name": [
+        {
+          "language": "ja",
+          "text": "派生した製品の推奨や販売促進に製品やコントリビュータの名前を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/454",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/454",
+      "name": [
+        {
+          "language": "ja",
+          "text": "派生した製品の推奨や販売促進に著作権者の名前、商標、ロゴを使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/462",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/462",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変したフォントソフトウェアに名称や名称と他の言葉との組み合わせを使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/463",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/463",
+      "name": [
+        {
+          "language": "ja",
+          "text": "派生した製品の推奨や販売促進に商標や商品名を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/473",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/473",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、取得したソースコードを改変せずに使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したコードをそのまま使う "
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/474",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/474",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、取得したオブジェクトコードを使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したコードをそのまま使う"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/475",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/475",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、取得したソースコードを改変する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/476",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/476",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、改変したソースコードを使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/477",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/477",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、改変したソースコードから生成したオブジェクトコードを使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/478",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/478",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、取得したソースコードを改変せずに頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したコードをそのまま再頒布する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/479",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/479",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、取得したオブジェクトコードを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したコードをそのまま再頒布する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/480",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/480",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、改変したソースコードを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/481",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/481",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発のため、改変したソースコードから生成したオブジェクトコードを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/482",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/482",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得したソースコードを改変せずに使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したコードをそのまま使う"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/483",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/483",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得したソースコードを改変せずに頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したコードをそのまま再頒布する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/484",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/484",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得したソースコードをサブライセンスする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "サブライセンスは、当該ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/485",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/485",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードを使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/486",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/486",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/487",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/487",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードをサブライセンスする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "サブライセンスは、当該ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/488",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/488",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得したオブジェクトコードを使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したコードをそのまま使う"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/489",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/489",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得したオブジェクトコードを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したコードをそのまま再頒布する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/490",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/490",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得したオブジェクトコードをサブライセンスする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "サブライセンスは、当該ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/491",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/491",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得した実行形式を使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得した実行形式をそのまま使う"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/492",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/492",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得した実行形式を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得した実行形式をそのまま再頒布する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/493",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/493",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、取得した実行形式をサブライセンスする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "サブライセンスは、当該ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/494",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/494",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードから生成したオブジェクトコードを使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/495",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/495",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードから生成したオブジェクトコードを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/496",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/496",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードから生成したオブジェクトコードをサブライセンスする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "サブライセンスは、当該ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/497",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/497",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードから生成した実行形式を使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/498",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/498",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードから生成した実行形式を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/499",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/499",
+      "name": [
+        {
+          "language": "ja",
+          "text": "社内での研究開発以外のため、改変したソースコードから生成した実行形式をサブライセンスする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "サブライセンスは、当該ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/500",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/500",
+      "name": [
+        {
+          "language": "ja",
+          "text": "仕様書の宣伝や広告に著作者の名前やトレードマークを使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/501",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/501",
+      "name": [
+        {
+          "language": "ja",
+          "text": "派生した製品の推奨や販売促進にソフトウェアやコントリビュータの名前を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/502",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/502",
+      "name": [
+        {
+          "language": "ja",
+          "text": "コメント、説明、助言を加えた文書を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/503",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/503",
+      "name": [
+        {
+          "language": "ja",
+          "text": "文書にコメント、説明、助言を追加する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/504",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/504",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソースコードを販売する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/505",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/505",
+      "name": [
+        {
+          "language": "ja",
+          "text": "1つ以上の編集著作物等に著作物を組み込む"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/506",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/506",
+      "name": [
+        {
+          "language": "ja",
+          "text": "編集著作物等に組み込まれた著作物を複製する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/507",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/507",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(編集著作物等に組み込まれた著作物を含む)のコピーを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/508",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/508",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(編集著作物等に組み込まれた著作物を含む)を公に展示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/509",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/509",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(編集著作物等に組み込まれた著作物を含む)を上演する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/510",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/510",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(編集著作物等に組み込まれた著作物を含む)を演奏する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/511",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/511",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(編集著作物等に組み込まれた著作物を含む)を上映する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/512",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/512",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(編集著作物等に組み込まれた著作物を含む)の公衆送信(送信可能化を含む)を行う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/513",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/513",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(編集著作物等に組み込まれた著作物を含む)を公に口述する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/514",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/514",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物を上演する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/515",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/515",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物を演奏する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/516",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/516",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物を上映する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/517",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/517",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物の公衆送信(送信可能化を含む)を行う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/518",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/518",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物を公に口述する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/519",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/519",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる実演を録音・録画する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "録音･録画物を増製することを含む。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/520",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/520",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる実演を録音・録画物により頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/521",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/521",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる実演の公衆送信(送信可能化を含む)を行う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/522",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/522",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれるレコードを複製する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/523",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/523",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれるレコードを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/524",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/524",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれるレコードの公衆送信(送信可能化を含む)を行う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/525",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/525",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる、放送にかかる音または影像を複製する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/526",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/526",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる、音または影像の放送を受信して再放送や有線放送する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/527",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/527",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる、音または影像の放送、またはこれを受信して行う有線放送を受信して送信可能化する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/528",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/528",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる、音または影像のテレビジョン放送、またはこれを受信して行う有線放送を受信して、影像を拡大する特別の装置を用いて公に伝達する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/529",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/529",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる、有線放送にかかる音または影像を複製する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/530",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/530",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる、音または影像の有線放送を受信して放送や再有線放送する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/531",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/531",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる、音または影像の有線放送を受信して送信可能化する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/532",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/532",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品に含まれる、音または影像の有線テレビジョン放送を受信して、影像を拡大する特別の装置を用いて公に伝達する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/533",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/533",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得したファイルを社内で頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "取得したファイルをそのまま再頒布する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/534",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/534",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得したソースコードをリパッケージする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/535",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/535",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変したソースコードをリパッケージする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/536",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/536",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得したオブジェクトコードをリパッケージする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/537",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/537",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変したソースコードから生成したオブジェクトコードをリパッケージする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/538",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/538",
+      "name": [
+        {
+          "language": "ja",
+          "text": "取得したオブジェクトコードを実行する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/539",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/539",
+      "name": [
+        {
+          "language": "ja",
+          "text": "製品や営利団体の推奨や販売促進に著作権者の名前を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/540",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/540",
+      "name": [
+        {
+          "language": "ja",
+          "text": "Lucidaの商標を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/541",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/541",
+      "name": [
+        {
+          "language": "ja",
+          "text": "元々のソフトウェアから切り離した形式で改変物を作成し、頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "パッチファイルなどの形式で作成する"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/542",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/542",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェア(改変物を含む)とリンクするアプリケーションプログラム、再使用可能なコンポーネント、その他のソフトウェアアイテムを開発し、頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/543",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/543",
+      "name": [
+        {
+          "language": "ja",
+          "text": "データベースの特徴や使用について述べる広告媒体を作る"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/544",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/544",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアの宣伝や広告に著作権者やコントリビュータの名前を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/545",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/545",
+      "name": [
+        {
+          "language": "ja",
+          "text": "翻訳した文書を発表する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/546",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/546",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変したソフトウェアを頒布するときに、サポート、保証、損害補償、そのほかの責任や、ライセンスに矛盾しない権利を提示し、有料にする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/547",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/547",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(集合著作物に組み込まれた著作物を含む)を出版する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/548",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/548",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作物(集合著作物に組み込まれた著作物を含む)を公に伝達する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/549",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/549",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物を出版する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/550",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/550",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物を公に伝達する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/551",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/551",
+      "name": [
+        {
+          "language": "ja",
+          "text": "派生した製品を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/554",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/554",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変したソフトウェアを関連モジュールと組み合わせて生成したソフトウェアを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/555",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/555",
+      "name": [
+        {
+          "language": "ja",
+          "text": "デジタル・ドキュメント・ファイルの中でフォントを表示するためのみに使用されているフォントを取り出して改変物を作成する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●デジタル・ドキュメント・ファイルは、そのファイルの中でフォントを表示するために、当該ソフトウェアの全部または一部が埋め込まれたデジタル・コンテンツのファイルをさす。\r\n●デジタル・コンテンツは、デジタル・データ形式によってエンド・ユーザに提供される制作物をさす。デジタル・コンテンツには、動画・静止画等の映像コンテンツ、および、テレビ番組等の放送コンテンツ、ならびに文字テキスト、画像、図形等を含んで構成された制作物を含む。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/556",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/556",
+      "name": [
+        {
+          "language": "ja",
+          "text": "デジタル・ドキュメント・ファイルの中でフォントを表示するためのみに使用されているフォントを取り出して作成した改変物を頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●デジタル・ドキュメント・ファイルは、そのファイルの中でフォントを表示するために、当該ソフトウェアの全部または一部が埋め込まれたデジタル・コンテンツのファイルをさす。\r\n●デジタル・コンテンツは、デジタル・データ形式によってエンド・ユーザに提供される制作物をさす。デジタル・コンテンツには、動画・静止画等の映像コンテンツ、および、テレビ番組等の放送コンテンツ、ならびに文字テキスト、画像、図形等を含んで構成された制作物を含む。 "
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/557",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/557",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアや派生した製品の推奨や販売促進に名称を使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/559",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/559",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ライブラリとOpenSSLライブラリとをリンクして頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/560",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/560",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアの派生物に関連する広告媒体を作る"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/561",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/561",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアを関連モジュールと組み合わせて生成したソフトウェアを頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/actions/562",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "actions/562",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアを用いて研究報告する"
         }
       ],
       "description": [

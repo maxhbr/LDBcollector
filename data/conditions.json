@@ -6743,6 +6743,27 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/407",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/407",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従って、世界規模で非独占的で使用料無料の初期開発者の著作権ライセンスが付与される"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/conditions/408",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "conditions/408",
@@ -6785,6 +6806,48 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/410",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/410",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従って、世界規模で非独占的で使用料無料の初期開発者の特許ライセンスが付与される"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、初期開発者がライセンス可能な特許請求項のうち、初期開発者のコントリビューションを単独又は当該ソフトウェアと組み合わせて用いることで、必然的に侵害されるものにのみ適用される"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/411",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/411",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "自身が提示するライセンスの条項に起因して、初期開発者にかかるあらゆる責任に対して補償をする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/conditions/412",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "conditions/412",
@@ -6793,6 +6856,69 @@
         {
           "language": "ja",
           "text": "改変物は、改変物を出荷する120日前に発行された規格に従う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/413",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/413",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変物を出荷する120日前に発行された規格に従わない場合、改変物の最初の出荷から30日以内に、本ライセンスに従って第三者が改変物の実装と規格プロトコルとの差分および改変物の参照実装を利用料無料で利用できることを公に知らせる"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/414",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/414",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変物を出荷する120日前に発行された規格に従わない場合、改変物の最初の出荷から30日以内に、本ライセンスに従って第三者が改変物のソースコードを利用料無料で利用できることを公に知らせる"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/415",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/415",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "元々のソフトウェアに対応するソースコードが本ライセンスの下で利用できることを知らせる告知を含める"
         }
       ],
       "description": [
@@ -7247,6 +7373,27 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/438",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/438",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本利用方法に適用される利用条件に従う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/conditions/439",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "conditions/439",
@@ -7255,6 +7402,48 @@
         {
           "language": "ja",
           "text": "著作権者は当該ソフトウェアに関して生じる請求に関して一切責任を負わないこと、および、明示であるか黙示であるかを問わず、著作権者は当該ソフトウェアに関して一切保証しないことを、ライセンシに十分に知らせる"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/446",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/446",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該仕様書へのリンク、あるいは、URLを含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/450",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/450",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "頒布に要する合理的なコストを上回らない程度の手数料で頒布する"
         }
       ],
       "description": [
@@ -7303,6 +7492,27 @@
         {
           "language": "ja",
           "text": "ただし、著作権者がライセンス可能な特許請求項のうち、当該ソフトウェアを単独又は該当する成果物と組み合わせて用いることで、必然的に侵害されるものにのみ適用される。また、当該ソフトウェア、あるいは、当該ソフトウェアに対する著作権者のコントリビューションが、直接または間接的な特許侵害にあたるとして、任意の組織が、交差請求や反訴を含めて特許訴訟を起こす場合、当該組織に対する本ライセンスは特許訴訟を正式に起こした時点で終了する。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/457",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/457",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアを自身のソリューションに含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
         }
       ]
     }
@@ -7457,6 +7667,69 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/469",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/469",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "自身のソフトウェアの頒布や使用によって生じる請求(弁護士費用の支払いを含む)からコントリビュータを弁護し、補償する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、改変が伴わないコントリビューションのみに基づいた請求を除く"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/470",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/470",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "新しい名前空間の下で頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/472",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/472",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ビルド可能なソースコードを購買者に提供する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/conditions/473",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "conditions/473",
@@ -7520,6 +7793,27 @@
   {
     "data": {
       "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/482",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/482",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソースコードに含まれている著作権表示を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
       "uri": "http://open-license.hitachi.com/conditions/483",
       "baseUri": "http://open-license.hitachi.com/",
       "id": "conditions/483",
@@ -7528,6 +7822,2085 @@
         {
           "language": "ja",
           "text": "公式な頒布物に対するパッチファイルとして頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/484",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/484",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ファイルに含まれている商標、著作権表示、その他の注記事項をそのまま含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/485",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/485",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "Khronosの仕様を実装するために使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/487",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/487",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ライセンスに含まれているコメントをそのまま含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/489",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/489",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作者と別の頒布方法を決める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/490",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/490",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "TekHVC色座標を表示する色処理アプリケーションは、TekHVC色座標を表示するインタフェースや付属文書において、TekHVC色座標を認識するものとする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/491",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/491",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "\"TekHVC\"の名称は常に、TekHVC色空間の数学的導出の関連についてのみ用いる"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "「TekHVC色空間の数学的導出」には、たとえば浮動小数や整数といったデジタル表現を問わず、当該ファイルに示されているTekHVC色空間の数学的導出、および、それと同等の経路と数学的導出を含む。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/492",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/492",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "商標を明記する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/494",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/494",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアに対応するソースコードが本ライセンスの下で利用できることを知らせる告知を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/497",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/497",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "フォントおよびビットマップ画像を特定する目的で商標を使用する非独占的で使用料無料のライセンスが付与される"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/498",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/498",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "フォントおよびビットマップ画像を改変しない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/499",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/499",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "アイコンやグリフの外観を変更しない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、画面や他の出力装置の標準解像度に適応するために確実に必要な場合は除く。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/500",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/500",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "コードおよび出力を変更しない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、本ライセンスで権限を与えられている場合は除く。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/501",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/501",
+      "conditionType": "REQUISITE",
+      "name": [
+        {
+          "language": "ja",
+          "text": "コードおよび出力がAT&Tによって認証されている"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/508",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/508",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "商標とその帰属の告知を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/509",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/509",
+      "conditionType": "REQUISITE",
+      "name": [
+        {
+          "language": "ja",
+          "text": "モジュールの改変していないテスト・スイートにパスする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "\"Text::Tabs\"の名前で頒布する場合。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/513",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/513",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "他者がスクリプトをダウンロードできないようにする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/514",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/514",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウエア以外の第2のライセンスの下で利用可能なファイルを用いて他のソフトウェアと結合、かつ、初期コントリビュータがソースコードに本ライセンスのExhibit Aを添付している場合、当該ソフトウェアは、第2のライセンスの下で利用できる"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●第2のライセンスは、初期コントリビュータが確認した例外条項や付加条項を含むGNU General Public License, Version 2.0、および、このライセンスの以降のバージョンをさす。\r\n●コントリビュータは、当該ソフトウェアを頒布する個人または団体をさす。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/515",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/515",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアの受領者は本ライセンスの頒布の条件を満たすライセンスの下で頒布する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/520",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/520",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "RARアーカイブを処理する目的で使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/522",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/522",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "バージョン番号を規則に従って改変する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "バージョン番号改変の規則は以下のとおり。\r\n●バージョン番号の初めの3コンポーネント(例: <number>.<number>.<number>)を改変しない。\r\n●改変のレベルを示すため、バージョン番号に任意の形式の新しいコンポーネントを付加する。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/523",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/523",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに、新しいバージョン番号と改変した人物の名前を追記する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/524",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/524",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "原著作者の名前を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/526",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/526",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアの元々の帰属を明示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/530",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/530",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "クレジットを含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/532",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/532",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアに含まれている著作権表示、商標表示、免責事項を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/534",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/534",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "受領者が、当該ソフトウェアに対応するソースコードを受領できるようにする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●データの譲渡に要するコストを上回る手数料は課さないものとする。\r\n●この条件に関する告知を目立つように含める。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/535",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/535",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変物全体に本ライセンスを適用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/537",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/537",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "受領者が、当該アイテムに対応するソースコードを受領し、使用できるようにする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "データの譲渡に要するコストを上回る手数料は課さないものとする。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/538",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/538",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該アイテムの受領者に、当該アイテム、およびその改変物を、実行形式とソースコードの両形式で使用および頒布するライセンスを明示的に付与する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/539",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/539",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "一般の人々が入手できないアイテムについて、ソフトウェアの初期開発者から要求があった場合、当該アイテムのコピーを初期開発者に供給する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/545",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/545",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアに含まれる所有権表示を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/548",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/548",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従って、世界規模で非独占的で使用料無料の著作権者の特許ライセンスが付与される"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/549",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/549",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従って、世界規模で非独占的で使用料無料の著作権者の著作権ライセンスが付与される"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/550",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/550",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアに含まれる著作権表示、所有権表示、免責事項を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/551",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/551",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "自身がおこなった変更、全ての変更の日付、元のバージョンを報告するファイル、および、Exhibit Aの告知文のコピーを含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/553",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/553",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変物のソースコードを、当該ソフトウェアをデプロイしている間、もしくは、初めてデプロイした日から12ヶ月間のいずれか長い方の期間、電子的形態で公に入手可能な状態にする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●デプロイは、当該ソフトウェアを社内での研究開発以外のために使用、サブライセンス、頒布することを指す。これは自身の会社または組織の内部における、当該ソフトウェアの研究開発での使用を除くあらゆる使用または頒布、および、第三者に対する、あらゆる形式による当該ソフトウェアの直接的もしくは間接的なサブライセンスまたは頒布を含むが、それに限定されるものではない。\r\n●ウェブサイトからのダウンロード等によって入手可能にする。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/558",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/558",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該仕様書を開発および評価する目的で利用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/559",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/559",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作権者が提示するガイドラインを厳守し、ガイドラインで許可された方法でのみ使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/560",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/560",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "適切な著作権表示、免責事項を目立つようにソフトウェアに含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/561",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/561",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアに含まれている本ライセンスに関する注記事項、無保証に関する注記事項をそのまま含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/562",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/562",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "適切な著作権表示、免責事項を目立つようにライブラリに含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/563",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/563",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ライブラリに含まれている本ライセンスに関する注記事項、無保証に関する注記事項をそのまま含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/566",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/566",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアに含まれている本ライセンスに関する注記事項、ソフトウェアに適用される本ライセンスのsection 7に従って追加された禁止事項に関する注記事項、無保証に関する注記事項をそのまま含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/567",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/567",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアに対話的なユーザ・インタフェースがある場合、適切な著作権表示、無保証であること(保証が提供される範囲を除く)、ユーザが当該ソフトウェアを本ライセンスの条件の下で頒布できること、本ライセンスのコピーを閲覧する方法を含む告知を目立つように表示する機能を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●当該ソフトウェアの対話的なユーザ・インタフェースがメニューのようなユーザ・コマンドやオプションのリストを提示する場合、告知を表示する機能がそのリストに明示されていれば条件を満たすものとする。\r\n●当該ソフトウェアの対話的なユーザ・インタフェースがそのような告知を表示しないインタフェースの場合、表示させる必要はない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/569",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/569",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変物の入手方法を知らせる"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/570",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/570",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアのソースコードが本ライセンスに従って入手可能であることを述べる告知文、および、ソースコードの入手方法と入手先の情報を、コードおよび関連文書の中に目立つように含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/571",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/571",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "指定するクレジットを合理的な方法で提供する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "二次的著作物や集合著作物の場合、少なくとも他の同様のクレジットが表示される箇所で当該クレジットを表示し、他の同様のクレジットと同程度に目立つ方法をとることとする。\r\n\r\n●原著作者の名前(ペンネームが当てはまればペンネーム)\r\n●著作物のタイトルがあれば、そのタイトル\r\n●ライセンサが著作物に関して記載したURIがあれば、そのURIを合理的に実行可能な範囲で表示する。ただし、著作権表示やライセンスに関する情報に言及していない場合はこの限りではない。\r\n●二次的著作物の場合、著作物の利用を示すクレジット"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/572",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/572",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンス、および、免責事項に関する記述をそのまま掲載する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "編集著作物等に組み込まれた本作品またはその二次的著作物に対しても同様である。ただし、本ライセンスに従った本作品またはその二次的著作物のそのものとは違う編集著作物等には本ライセンスの影響は及ばない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/577",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/577",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに関する注記事項をそのまま掲載する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/578",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/578",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "自身が追加条項を課すことについて、受領者の合意を得る"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/579",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/579",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従って、無制限で世界規模で非独占的で使用料無料で取り消し不能なGoogleの特許ライセンスが付与される。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、Googleが現在所有する、あるいは、将来獲得することによって、Googleがライセンス可能な特許請求項のうち、VP8を用いることで、必然的に侵害されるものにのみ適用される。また、交差請求や反訴を含めて、VP8、あるいは、VP8に組み込まれているコードが、直接または間接的な特許侵害にあたるとして、自身や自身の代理人、あるいは、独占的実施権者が、特許訴訟を起こす場合、特許訴訟を申し立てる場合、あるいは、特許訴訟を起こすことに同意した場合、自身に対する本ライセンスは特許訴訟を正式に起こした時点で終了する。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/580",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/580",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該仕様書に含まれている著作権表示を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/581",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/581",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作者のクレジットを含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/582",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/582",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ルーチンの名称を変更する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/583",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/583",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "変更したルーチンに対するサポートを提供する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/584",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/584",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "Unicodeをサポートする製品を作る"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/585",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/585",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "原著作者の名誉を毀損するようなことはしない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、書面によるライセンサの同意がある場合や法的に許される場合を除く。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/586",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/586",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物に表示・非営利・継承(BY-NC-SA)互換ライセンスを適用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "表示・非営利・継承(BY-NC-SA)互換ライセンスは、クリエイティブ・コモンズが本ライセンスと本質的に同等であると承認し、https://creativecommons.org/compatiblelicensesに挙げているライセンスをさす。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/588",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/588",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "元々のフォントの入手先を示す情報を渡す"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/589",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/589",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "コードおよび出力を\"OPEN LOOK\"準拠とする非独占的で使用料無料の商標ライセンスを使用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ライセンスはAT&Tから入手可能。 "
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/590",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/590",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "二次的著作物に本ライセンスと同じライセンス要素を持つクリエイティブ・コモンズのライセンスを適用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "集合著作物に組み込まれた二次的著作物に対しても同様である。ただし、二次的著作物に適用するライセンスに従った二次的著作物そのものとは違う集合著作物には二次的著作物に適用するライセンスの影響は及ばない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/592",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/592",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアに対応するソースコードを無償で提供する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/593",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/593",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "Xceive ICsと共に使う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/594",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/594",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "適切な著作権表示、免責事項を文書に含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/595",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/595",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "文書に含まれている本ライセンスに関する注記事項、無保証に関する注記事項をそのまま含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/596",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/596",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該文書やその一部を含んでいる文書、当該文書から派生した文書の全てに本ライセンスを適用して第三者へ無償で利用許諾する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/597",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/597",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変物を出荷する120日前に発行された規格に従わず、かつ、改変物の最初の出荷から30日以内に必要な情報を公に知らせない場合、元々のソフトウェアに自身の改変を加えて作成した改変物のパッケージ名称、public クラスの宣言やインタフェースの宣言を、java.*、javax.*、com.sun.*や同様の命名規則を使わないように変更する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/598",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/598",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "直接であれ間接であれ、自身の実装が規格に従っていると主張しない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/599",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/599",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに抵触するような方法で著作物へのアクセスや利用を制限する技術的な手段をとらない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "編集著作物等に組み込まれた本作品またはその二次的著作物に対しても同様である。ただし、本ライセンスに従った本作品またはその二次的著作物のそのものとは違う編集著作物等には本ライセンスの影響は及ばない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/600",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/600",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスのコピー、または、本ライセンスを示すURI(Uniform Resource Identifier)を含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "編集著作物等に組み込まれた本作品またはその二次的著作物に対しても同様である。ただし、本ライセンスに従った本作品またはその二次的著作物のそのものとは違う編集著作物等には本ライセンスの影響は及ばない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/601",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/601",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに基づいて受領者が行使できる権利を変更または制限する条件を提示したり課したりしない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "編集著作物等に組み込まれた本作品またはその二次的著作物に対しても同様である。ただし、本ライセンスに従った本作品またはその二次的著作物のそのものとは違う編集著作物等には本ライセンスの影響は及ばない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/602",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/602",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本作品をサブライセンスしない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。\r\n●編集著作物等に組み込まれた本作品またはその二次的著作物に対しても同様である。ただし、本ライセンスに従った本作品またはその二次的著作物のそのものとは違う編集著作物等には本ライセンスの影響は及ばない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/603",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/603",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "全ての著作権表示をそのまま掲載する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "編集著作物等に組み込まれた本作品またはその二次的著作物に対しても同様である。ただし、本ライセンスに従った本作品またはその二次的著作物のそのものとは違う編集著作物等には本ライセンスの影響は及ばない。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/604",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/604",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "指定するクレジットを合理的な方法で提供する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●編集著作物等に組み込まれた本作品またはその二次的著作物に対しても同様である。ただし、本ライセンスに従った本作品またはその二次的著作物のそのものとは違う編集著作物等には本ライセンスの影響は及ばない。\r\n●二次的著作物や編集著作物等の場合、少なくとも他の同様のクレジットが表示される箇所で当該クレジットを表示し、他の同様のクレジットと同程度に目立つ方法をとることとする。 \r\n\r\n指定するクレジットはこちら。\r\n●原著作者および実演家の名前(ペンネームが当てはまればペンネーム) \r\n●本作品のタイトルがあれば、そのタイトル \r\n●ライセンサが本作品に関して記載したURIがあれば、そのURIを合理的に実行可能な範囲で表示する。ただし、著作権表示やライセンスに関する情報に言及していない場合はこの限りではない。 \r\n●二次的著作物の場合、著作物の利用を示すクレジット"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/605",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/605",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "Appleの権利を妨げない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/606",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/606",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "原著作者以外への虚偽の帰属を示さない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、書面によるライセンサの同意がある場合を除く。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/607",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/607",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "原著作者の名誉を毀損するようなことはしない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、書面によるライセンサの同意がある場合を除く。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/608",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/608",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "自身が開発した製品やプログラムの一部として利用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/609",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/609",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "指定するクレジットを合理的な方法で提供する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "二次的著作物や集合著作物の場合、少なくとも他の同様のクレジットが表示される箇所で当該クレジットを表示し、他の同様のクレジットと同程度に目立つ方法をとることとする。 \r\n\r\n●原著作者の名前(ペンネームが当てはまればペンネーム) \r\n●著作物のタイトルがあれば、そのタイトル \r\n●二次的著作物の場合、著作物の利用を示すクレジット"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/612",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/612",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該フォントを実行する際にコマンドを対話的に読むようになっている場合、当該フォントを最も一般的な方法で対話的に実行する際に、適切な著作権表示、無保証であること(あるいは自身が保証を提供すること)、ユーザが当該フォントを本ライセンスの条件の下で頒布できること、本ライセンスのコピーを閲覧する方法を含む告知を全て、印刷、もしくは、画面に表示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/614",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/614",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "改変したフォントを次のいずれかの方法で自由に利用できるようにする。その方法とは、改変物を指定の場所にアクセスして複製できるようにする、あるいは、改変物をソフトウェア交換に一般的に使われるメディアで頒布することをさす。"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "自由に利用できるとは、当該フォントを複製または改変できること、また、当該フォントを取得したときと同じ条件で再頒布できることをさす。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/615",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/615",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該フォント、あるいは、その一部と、本ライセンス以外のライセンスが適用された著作物とを明示的に独立したものとして扱えない、または、扱わない場合、その著作物全てに本ライセンスを適用する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/616",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/616",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従って付与する著作権ライセンス、および、特許ライセンスを行使するにあたり、第三者の知的財産権に基づくライセンスが必要であることを当該コントリビュータが知っている場合、「LEGAL」と題したテキストファイルを含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "●本ライセンスにより著作権ライセンス、および、特許ライセンスを付与される者が連絡を取れるよう、権利、および、権利を主張する第三者について、十分に詳細に記述する。第三者の権利に関する新たな情報を得た場合は、それ以降に頒布する当該ソフトウェアに含まれる「LEGAL」を速やかに修正するものとする。\r\n●コントリビュータが改変したソースコードにアプリケーション・プログラミング・インタフェース(API)を含んでおり、当該APIを実装するために必要と合理的に考えられる特許ライセンスについての情報を得ている場合、その情報を「LEGAL」に含める。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/617",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/617",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "頒布するパッケージを改変しない"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/623",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/623",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "当該ソフトウェアに対応するソースコードを入手可能な状態にする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "データの転送に要するコストを上回る手数料は課さないものとする。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/624",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/624",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "要求に応じて、当該ソフトウェアに対応するソースコードを提供する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/625",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/625",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "コントリビュータによってソースコードに統合された改変、修正、翻訳、新しい機能を明確に特定し、文書に記録する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/626",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/626",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアを元々のソフトウエアに置き換える方法を知らせる"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/627",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/627",
+      "conditionType": "REQUISITE",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ファイルの名称を変更する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/628",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/628",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "オンラインで利用できるようにする"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/629",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/629",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "媒体で提供する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/630",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/630",
+      "conditionType": "RESTRICTION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従って、EU DataGridの参加者に対し、自身の改変物や派生物を使用、表示、改変、再頒布、サブライセンスできる、世界規模で非独占的で使用料無料で無制限のライセンスを付与する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": "ただし、ユーザーと書面による個別の使用許諾契約を締結する場合を除く。"
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/631",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/631",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "ソフトウェアに含まれている知的財産権に関する表示をそのまま含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/632",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/632",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "頒布物に付属する資料に、変更した内容、変更した理由、変更者の名前を明示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/633",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/633",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "頒布物に付属する資料に、当該ソフトウェアの出自を正しく表示する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/634",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/634",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "変更した部分のソースコードを公開する"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/635",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/635",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "本ライセンスに従う"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/636",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/636",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "著作権者の名前と当該ソフトウェアのウェブサイトのURLを含める"
+        }
+      ],
+      "description": [
+        {
+          "language": "ja",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "schemaVersion": 0.1,
+      "uri": "http://open-license.hitachi.com/conditions/637",
+      "baseUri": "http://open-license.hitachi.com/",
+      "id": "conditions/637",
+      "conditionType": "OBLIGATION",
+      "name": [
+        {
+          "language": "ja",
+          "text": "文献を引用する"
         }
       ],
       "description": [
