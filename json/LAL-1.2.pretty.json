@@ -106,7 +106,7 @@
                         "Debian Free Software Guidelines",
                         {
                             "tag": "NeutralJudgement",
-                            "contents": "This license is currently unstettled whether it is DFSG-free"
+                            "contents": "It is currently unstettled whether this license is DFSG-free"
                         }
                     ]
                 ]
@@ -120,7 +120,7 @@
             "Debian Free Software Guidelines",
             {
                 "tag": "NeutralJudgement",
-                "contents": "This license is currently unstettled whether it is DFSG-free"
+                "contents": "It is currently unstettled whether this license is DFSG-free"
             }
         ]
     ],

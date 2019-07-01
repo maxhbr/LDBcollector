@@ -6,7 +6,7 @@ Licence Art Libre 1.3 (LAL-1.3)
 Comments on (easy) usability
 ----------------------------
 
--   This license is currently unstettled whether it is DFSG-free
+-   It is currently unstettled whether this license is DFSG-free
     (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
@@ -229,7 +229,7 @@ Raw Data
                             "Debian Free Software Guidelines",
                             {
                                 "tag": "NeutralJudgement",
-                                "contents": "This license is currently unstettled whether it is DFSG-free"
+                                "contents": "It is currently unstettled whether this license is DFSG-free"
                             }
                         ]
                     ]
@@ -243,7 +243,7 @@ Raw Data
                 "Debian Free Software Guidelines",
                 {
                     "tag": "NeutralJudgement",
-                    "contents": "This license is currently unstettled whether it is DFSG-free"
+                    "contents": "It is currently unstettled whether this license is DFSG-free"
                 }
             ]
         ],

@@ -11,7 +11,7 @@
 
 === Comments on (easy) usability
 
-*  This license is currently unstettled whether it is DFSG-free (source:
+*  It is currently unstettled whether this license is DFSG-free (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
 === URLs
@@ -231,7 +231,7 @@ Cette licence est rédigée en référence au droit français et à la Conventio
                         "Debian Free Software Guidelines",
                         {
                             "tag": "NeutralJudgement",
-                            "contents": "This license is currently unstettled whether it is DFSG-free"
+                            "contents": "It is currently unstettled whether this license is DFSG-free"
                         }
                     ]
                 ]
@@ -245,7 +245,7 @@ Cette licence est rédigée en référence au droit français et à la Conventio
             "Debian Free Software Guidelines",
             {
                 "tag": "NeutralJudgement",
-                "contents": "This license is currently unstettled whether it is DFSG-free"
+                "contents": "It is currently unstettled whether this license is DFSG-free"
             }
         ]
     ],
