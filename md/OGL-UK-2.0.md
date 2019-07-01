@@ -1,0 +1,268 @@
+Open Government Licence v2.0 (OGL-UK-2.0)
+=========================================
+
+[TABLE]
+
+**Other Names:**
+
+-   `Open Government Licence 2.0 (United Kingdom)`
+
+Comments on (easy) usability
+----------------------------
+
+URLs
+----
+
+-   **Homepage:**
+    https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/
+
+-   **SPDX:** http://spdx.org/licenses/OGL-UK-2.0.json
+
+-   http://www.nationalarchives.gov.uk/doc/open-government-licence/
+
+Text
+----
+
+    You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.
+    Using Information under this licence
+
+    Use of copyright and database right material expressly made available under this licence (the ‘Information’) indicates your acceptance of the terms and conditions below.
+
+    The Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below.
+
+    This licence does not affect your freedom under fair dealing or fair use or any other copyright or database right exceptions and limitations.
+    You are free to:
+
+        copy, publish, distribute and transmit the Information;
+        adapt the Information;
+        exploit the Information commercially and non-commercially for example, by combining it with other Information, or by including it in your own product or application.
+
+    You must, where you do any of the above:
+
+        acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence;
+
+         If the Information Provider does not provide a specific attribution statement, or if you are using Information from several Information Providers and multiple attributions are not practical in your product or application, you may use the following:
+
+         Contains public sector information licensed under the Open Government Licence v2.0.
+
+    These are important conditions of this licence and if you fail to comply with them the rights granted to you under this licence, or any similar licence granted by the Licensor, will end automatically.
+    Exemptions
+
+    This licence does not cover:
+
+        personal data in the Information;
+        information that has neither been published nor disclosed under information access legislation (including the Freedom of Information Acts for the UK and Scotland) by or with the consent of the Information Provider;
+        departmental or public sector organisation logos, crests and the Royal Arms except where they form an integral part of a document or dataset;
+        military insignia;
+        third party rights the Information Provider is not authorised to license;
+        other intellectual property rights, including patents, trade marks, and design rights; and
+        identity documents such as the British Passport
+
+    Non-endorsement
+
+    This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.
+    Non warranty
+
+    The Information is licensed ‘as is’ and the Information Provider excludes all representations, warranties, obligations and liabilities in relation to the Information to the maximum extent permitted by law.
+
+    The Information Provider is not liable for any errors or omissions in the Information and shall not be liable for any loss, injury or damage of any kind caused by its use. The Information Provider does not guarantee the continued supply of the Information.
+    Governing Law
+
+    This licence is governed by the laws of the jurisdiction in which the Information Provider has its principal place of business, unless otherwise specified by the Information Provider.
+    Definitions
+
+    In this licence, the terms below have the following meanings:
+
+    ‘Information’
+    means information protected by copyright or by database right (for example, literary and artistic works, content, data and source code) offered for use under the terms of this licence.
+
+    ‘Information Provider’
+    means the person or organisation providing the Information under this licence.
+
+    ‘Licensor’
+    means any Information Provider who has the authority to offer Information under the terms of this licence. It includes the Controller of Her Majesty’s Stationery Office, who has the authority to offer Information subject to Crown copyright and Crown database rights, and Information subject to copyright and database rights which have been assigned to or acquired by the Crown, under the terms of this licence.
+
+    ‘Use’
+    means doing any act which is restricted by copyright or database right, whether in the original medium or in any other medium, and includes without limitation distributing, copying, adapting, modifying as may be technically necessary to use it in a different mode or format.
+
+    ‘You’
+    means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.
+    About the Open Government Licence
+
+    The Controller of Her Majesty’s Stationery Office (HMSO) has developed this licence as a tool to enable Information Providers in the public sector to license the use and re-use of their Information under a common open licence. The Controller invites public sector bodies owning their own copyright and database rights to permit the use of their Information under this licence.
+
+    The Controller of HMSO has authority to license Information subject to copyright and database right owned by the Crown. The extent of the Controller’s offer to license this Information under the terms of this licence is set out on The National Archives website.
+
+    This is version 2.0 of the Open Government Licence. The Controller of HMSO may, from time to time, issue new versions of the Open Government Licence. If you are already using Information under a previous version of the Open Government Licence, the terms of that licence will continue to apply.
+
+    These terms are compatible with the Creative Commons Attribution License 4.0 and the Open Data Commons Attribution License, both of which license copyright and database rights. This means that when the Information is adapted and licensed under either of those licences, you automatically satisfy the conditions of the OGL when you comply with the other licence. The OGLv2.0 is Open Definition compliant.
+
+    Further context, best practice and guidance can be found in the UK Government Licensing Framework section on The National Archives website.
+
+------------------------------------------------------------------------
+
+Raw Data
+--------
+
+    {
+        "__impliedNames": [
+            "OGL-UK-2.0",
+            "Open Government Licence v2.0",
+            "ogl-uk-2.0",
+            "Open Government Licence 2.0 (United Kingdom)"
+        ],
+        "__impliedId": "OGL-UK-2.0",
+        "facts": {
+            "Open Knowledge International": {
+                "is_generic": false,
+                "status": "superceded",
+                "domain_software": true,
+                "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
+                "maintainer": "UK Government",
+                "od_conformance": "approved",
+                "_sourceURL": "https://github.com/okfn/licenses/blob/master/licenses.csv",
+                "domain_data": true,
+                "osd_conformance": "not reviewed",
+                "id": "OGL-UK-2.0",
+                "title": "Open Government Licence 2.0 (United Kingdom)",
+                "_implications": {
+                    "__impliedNames": [
+                        "OGL-UK-2.0",
+                        "Open Government Licence 2.0 (United Kingdom)"
+                    ],
+                    "__impliedId": "OGL-UK-2.0",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+                        ]
+                    ]
+                },
+                "domain_content": true
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OGL-UK-2.0",
+                        "OGL-UK-2.0",
+                        "Open Government Licence v2.0",
+                        "ogl-uk-2.0",
+                        "Open Government Licence 2.0 (United Kingdom)"
+                    ],
+                    "__impliedId": "OGL-UK-2.0"
+                },
+                "shortname": "OGL-UK-2.0",
+                "otherNames": [
+                    "OGL-UK-2.0",
+                    "Open Government Licence v2.0",
+                    "ogl-uk-2.0",
+                    "Open Government Licence 2.0 (United Kingdom)"
+                ]
+            },
+            "SPDX": {
+                "isSPDXLicenseDeprecated": false,
+                "spdxFullName": "Open Government Licence v2.0",
+                "spdxDetailsURL": "http://spdx.org/licenses/OGL-UK-2.0.json",
+                "_sourceURL": "https://spdx.org/licenses/OGL-UK-2.0.html",
+                "spdxLicIsOSIApproved": false,
+                "spdxSeeAlso": [
+                    "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "OGL-UK-2.0",
+                        "Open Government Licence v2.0"
+                    ],
+                    "__impliedId": "OGL-UK-2.0",
+                    "__impliedURLs": [
+                        [
+                            "SPDX",
+                            "http://spdx.org/licenses/OGL-UK-2.0.json"
+                        ],
+                        [
+                            null,
+                            "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+                        ]
+                    ]
+                },
+                "spdxLicenseId": "OGL-UK-2.0"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.nationalarchives.gov.uk/doc/open-government-licence/",
+                    "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+                ],
+                "homepageUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
+                "shortName": "OGL-UK-2.0",
+                "textUrls": null,
+                "text": "You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.\nUsing Information under this licence\n\nUse of copyright and database right material expressly made available under this licence (the Ã¢ÂÂInformationÃ¢ÂÂ) indicates your acceptance of the terms and conditions below.\n\nThe Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below.\n\nThis licence does not affect your freedom under fair dealing or fair use or any other copyright or database right exceptions and limitations.\nYou are free to:\n\n    copy, publish, distribute and transmit the Information;\n    adapt the Information;\n    exploit the Information commercially and non-commercially for example, by combining it with other Information, or by including it in your own product or application.\n\nYou must, where you do any of the above:\n\n    acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence;\n\n     If the Information Provider does not provide a specific attribution statement, or if you are using Information from several Information Providers and multiple attributions are not practical in your product or application, you may use the following:\n\n     Contains public sector information licensed under the Open Government Licence v2.0.\n\nThese are important conditions of this licence and if you fail to comply with them the rights granted to you under this licence, or any similar licence granted by the Licensor, will end automatically.\nExemptions\n\nThis licence does not cover:\n\n    personal data in the Information;\n    information that has neither been published nor disclosed under information access legislation (including the Freedom of Information Acts for the UK and Scotland) by or with the consent of the Information Provider;\n    departmental or public sector organisation logos, crests and the Royal Arms except where they form an integral part of a document or dataset;\n    military insignia;\n    third party rights the Information Provider is not authorised to license;\n    other intellectual property rights, including patents, trade marks, and design rights; and\n    identity documents such as the British Passport\n\nNon-endorsement\n\nThis licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.\nNon warranty\n\nThe Information is licensed Ã¢ÂÂas isÃ¢ÂÂ and the Information Provider excludes all representations, warranties, obligations and liabilities in relation to the Information to the maximum extent permitted by law.\n\nThe Information Provider is not liable for any errors or omissions in the Information and shall not be liable for any loss, injury or damage of any kind caused by its use. The Information Provider does not guarantee the continued supply of the Information.\nGoverning Law\n\nThis licence is governed by the laws of the jurisdiction in which the Information Provider has its principal place of business, unless otherwise specified by the Information Provider.\nDefinitions\n\nIn this licence, the terms below have the following meanings:\n\nÃ¢ÂÂInformationÃ¢ÂÂ\nmeans information protected by copyright or by database right (for example, literary and artistic works, content, data and source code) offered for use under the terms of this licence.\n\nÃ¢ÂÂInformation ProviderÃ¢ÂÂ\nmeans the person or organisation providing the Information under this licence.\n\nÃ¢ÂÂLicensorÃ¢ÂÂ\nmeans any Information Provider who has the authority to offer Information under the terms of this licence. It includes the Controller of Her MajestyÃ¢ÂÂs Stationery Office, who has the authority to offer Information subject to Crown copyright and Crown database rights, and Information subject to copyright and database rights which have been assigned to or acquired by the Crown, under the terms of this licence.\n\nÃ¢ÂÂUseÃ¢ÂÂ\nmeans doing any act which is restricted by copyright or database right, whether in the original medium or in any other medium, and includes without limitation distributing, copying, adapting, modifying as may be technically necessary to use it in a different mode or format.\n\nÃ¢ÂÂYouÃ¢ÂÂ\nmeans the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.\nAbout the Open Government Licence\n\nThe Controller of Her MajestyÃ¢ÂÂs Stationery Office (HMSO) has developed this licence as a tool to enable Information Providers in the public sector to license the use and re-use of their Information under a common open licence. The Controller invites public sector bodies owning their own copyright and database rights to permit the use of their Information under this licence.\n\nThe Controller of HMSO has authority to license Information subject to copyright and database right owned by the Crown. The extent of the ControllerÃ¢ÂÂs offer to license this Information under the terms of this licence is set out on The National Archives website.\n\nThis is version 2.0 of the Open Government Licence. The Controller of HMSO may, from time to time, issue new versions of the Open Government Licence. If you are already using Information under a previous version of the Open Government Licence, the terms of that licence will continue to apply.\n\nThese terms are compatible with the Creative Commons Attribution License 4.0 and the Open Data Commons Attribution License, both of which license copyright and database rights. This means that when the Information is adapted and licensed under either of those licences, you automatically satisfy the conditions of the OGL when you comply with the other licence. The OGLv2.0 is Open Definition compliant.\n\nFurther context, best practice and guidance can be found in the UK Government Licensing Framework section on The National Archives website.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "U.K. National Archives",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ogl-uk-2.0.yml",
+                "key": "ogl-uk-2.0",
+                "name": "U.K. Open Government License for Public Sector Information v2.0",
+                "spdxId": "OGL-UK-2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "ogl-uk-2.0",
+                        "OGL-UK-2.0",
+                        "OGL-UK-2.0"
+                    ],
+                    "__impliedId": "OGL-UK-2.0",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.\nUsing Information under this licence\n\nUse of copyright and database right material expressly made available under this licence (the âInformationâ) indicates your acceptance of the terms and conditions below.\n\nThe Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below.\n\nThis licence does not affect your freedom under fair dealing or fair use or any other copyright or database right exceptions and limitations.\nYou are free to:\n\n    copy, publish, distribute and transmit the Information;\n    adapt the Information;\n    exploit the Information commercially and non-commercially for example, by combining it with other Information, or by including it in your own product or application.\n\nYou must, where you do any of the above:\n\n    acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence;\n\n     If the Information Provider does not provide a specific attribution statement, or if you are using Information from several Information Providers and multiple attributions are not practical in your product or application, you may use the following:\n\n     Contains public sector information licensed under the Open Government Licence v2.0.\n\nThese are important conditions of this licence and if you fail to comply with them the rights granted to you under this licence, or any similar licence granted by the Licensor, will end automatically.\nExemptions\n\nThis licence does not cover:\n\n    personal data in the Information;\n    information that has neither been published nor disclosed under information access legislation (including the Freedom of Information Acts for the UK and Scotland) by or with the consent of the Information Provider;\n    departmental or public sector organisation logos, crests and the Royal Arms except where they form an integral part of a document or dataset;\n    military insignia;\n    third party rights the Information Provider is not authorised to license;\n    other intellectual property rights, including patents, trade marks, and design rights; and\n    identity documents such as the British Passport\n\nNon-endorsement\n\nThis licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.\nNon warranty\n\nThe Information is licensed âas isâ and the Information Provider excludes all representations, warranties, obligations and liabilities in relation to the Information to the maximum extent permitted by law.\n\nThe Information Provider is not liable for any errors or omissions in the Information and shall not be liable for any loss, injury or damage of any kind caused by its use. The Information Provider does not guarantee the continued supply of the Information.\nGoverning Law\n\nThis licence is governed by the laws of the jurisdiction in which the Information Provider has its principal place of business, unless otherwise specified by the Information Provider.\nDefinitions\n\nIn this licence, the terms below have the following meanings:\n\nâInformationâ\nmeans information protected by copyright or by database right (for example, literary and artistic works, content, data and source code) offered for use under the terms of this licence.\n\nâInformation Providerâ\nmeans the person or organisation providing the Information under this licence.\n\nâLicensorâ\nmeans any Information Provider who has the authority to offer Information under the terms of this licence. It includes the Controller of Her Majestyâs Stationery Office, who has the authority to offer Information subject to Crown copyright and Crown database rights, and Information subject to copyright and database rights which have been assigned to or acquired by the Crown, under the terms of this licence.\n\nâUseâ\nmeans doing any act which is restricted by copyright or database right, whether in the original medium or in any other medium, and includes without limitation distributing, copying, adapting, modifying as may be technically necessary to use it in a different mode or format.\n\nâYouâ\nmeans the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.\nAbout the Open Government Licence\n\nThe Controller of Her Majestyâs Stationery Office (HMSO) has developed this licence as a tool to enable Information Providers in the public sector to license the use and re-use of their Information under a common open licence. The Controller invites public sector bodies owning their own copyright and database rights to permit the use of their Information under this licence.\n\nThe Controller of HMSO has authority to license Information subject to copyright and database right owned by the Crown. The extent of the Controllerâs offer to license this Information under the terms of this licence is set out on The National Archives website.\n\nThis is version 2.0 of the Open Government Licence. The Controller of HMSO may, from time to time, issue new versions of the Open Government Licence. If you are already using Information under a previous version of the Open Government Licence, the terms of that licence will continue to apply.\n\nThese terms are compatible with the Creative Commons Attribution License 4.0 and the Open Data Commons Attribution License, both of which license copyright and database rights. This means that when the Information is adapted and licensed under either of those licences, you automatically satisfy the conditions of the OGL when you comply with the other licence. The OGLv2.0 is Open Definition compliant.\n\nFurther context, best practice and guidance can be found in the UK Government Licensing Framework section on The National Archives website.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+                        ],
+                        [
+                            null,
+                            "http://www.nationalarchives.gov.uk/doc/open-government-licence/"
+                        ],
+                        [
+                            null,
+                            "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+                        ]
+                    ]
+                }
+            }
+        },
+        "__impliedCopyleft": [
+            [
+                "Scancode",
+                "NoCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "NoCopyleft",
+        "__impliedText": "You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.\nUsing Information under this licence\n\nUse of copyright and database right material expressly made available under this licence (the âInformationâ) indicates your acceptance of the terms and conditions below.\n\nThe Licensor grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information subject to the conditions below.\n\nThis licence does not affect your freedom under fair dealing or fair use or any other copyright or database right exceptions and limitations.\nYou are free to:\n\n    copy, publish, distribute and transmit the Information;\n    adapt the Information;\n    exploit the Information commercially and non-commercially for example, by combining it with other Information, or by including it in your own product or application.\n\nYou must, where you do any of the above:\n\n    acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence;\n\n     If the Information Provider does not provide a specific attribution statement, or if you are using Information from several Information Providers and multiple attributions are not practical in your product or application, you may use the following:\n\n     Contains public sector information licensed under the Open Government Licence v2.0.\n\nThese are important conditions of this licence and if you fail to comply with them the rights granted to you under this licence, or any similar licence granted by the Licensor, will end automatically.\nExemptions\n\nThis licence does not cover:\n\n    personal data in the Information;\n    information that has neither been published nor disclosed under information access legislation (including the Freedom of Information Acts for the UK and Scotland) by or with the consent of the Information Provider;\n    departmental or public sector organisation logos, crests and the Royal Arms except where they form an integral part of a document or dataset;\n    military insignia;\n    third party rights the Information Provider is not authorised to license;\n    other intellectual property rights, including patents, trade marks, and design rights; and\n    identity documents such as the British Passport\n\nNon-endorsement\n\nThis licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.\nNon warranty\n\nThe Information is licensed âas isâ and the Information Provider excludes all representations, warranties, obligations and liabilities in relation to the Information to the maximum extent permitted by law.\n\nThe Information Provider is not liable for any errors or omissions in the Information and shall not be liable for any loss, injury or damage of any kind caused by its use. The Information Provider does not guarantee the continued supply of the Information.\nGoverning Law\n\nThis licence is governed by the laws of the jurisdiction in which the Information Provider has its principal place of business, unless otherwise specified by the Information Provider.\nDefinitions\n\nIn this licence, the terms below have the following meanings:\n\nâInformationâ\nmeans information protected by copyright or by database right (for example, literary and artistic works, content, data and source code) offered for use under the terms of this licence.\n\nâInformation Providerâ\nmeans the person or organisation providing the Information under this licence.\n\nâLicensorâ\nmeans any Information Provider who has the authority to offer Information under the terms of this licence. It includes the Controller of Her Majestyâs Stationery Office, who has the authority to offer Information subject to Crown copyright and Crown database rights, and Information subject to copyright and database rights which have been assigned to or acquired by the Crown, under the terms of this licence.\n\nâUseâ\nmeans doing any act which is restricted by copyright or database right, whether in the original medium or in any other medium, and includes without limitation distributing, copying, adapting, modifying as may be technically necessary to use it in a different mode or format.\n\nâYouâ\nmeans the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.\nAbout the Open Government Licence\n\nThe Controller of Her Majestyâs Stationery Office (HMSO) has developed this licence as a tool to enable Information Providers in the public sector to license the use and re-use of their Information under a common open licence. The Controller invites public sector bodies owning their own copyright and database rights to permit the use of their Information under this licence.\n\nThe Controller of HMSO has authority to license Information subject to copyright and database right owned by the Crown. The extent of the Controllerâs offer to license this Information under the terms of this licence is set out on The National Archives website.\n\nThis is version 2.0 of the Open Government Licence. The Controller of HMSO may, from time to time, issue new versions of the Open Government Licence. If you are already using Information under a previous version of the Open Government Licence, the terms of that licence will continue to apply.\n\nThese terms are compatible with the Creative Commons Attribution License 4.0 and the Open Data Commons Attribution License, both of which license copyright and database rights. This means that when the Information is adapted and licensed under either of those licences, you automatically satisfy the conditions of the OGL when you comply with the other licence. The OGLv2.0 is Open Definition compliant.\n\nFurther context, best practice and guidance can be found in the UK Government Licensing Framework section on The National Archives website.",
+        "__impliedURLs": [
+            [
+                "SPDX",
+                "http://spdx.org/licenses/OGL-UK-2.0.json"
+            ],
+            [
+                null,
+                "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+            ],
+            [
+                "Homepage",
+                "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+            ],
+            [
+                null,
+                "http://www.nationalarchives.gov.uk/doc/open-government-licence/"
+            ],
+            [
+                null,
+                "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"
+            ]
+        ]
+    }

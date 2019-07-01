@@ -1,0 +1,203 @@
+{
+    "__impliedNames": [
+        "psutils",
+        "psutils License",
+        "PS Utilities License"
+    ],
+    "__impliedId": "psutils",
+    "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "psutils",
+                    "psutils",
+                    "psutils License",
+                    "PS Utilities License"
+                ],
+                "__impliedId": "psutils"
+            },
+            "shortname": "psutils",
+            "otherNames": [
+                "psutils",
+                "psutils License",
+                "PS Utilities License"
+            ]
+        },
+        "SPDX": {
+            "isSPDXLicenseDeprecated": false,
+            "spdxFullName": "psutils License",
+            "spdxDetailsURL": "http://spdx.org/licenses/psutils.json",
+            "_sourceURL": "https://spdx.org/licenses/psutils.html",
+            "spdxLicIsOSIApproved": false,
+            "spdxSeeAlso": [
+                "https://fedoraproject.org/wiki/Licensing/psutils"
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "psutils",
+                    "psutils License"
+                ],
+                "__impliedId": "psutils",
+                "__impliedURLs": [
+                    [
+                        "SPDX",
+                        "http://spdx.org/licenses/psutils.json"
+                    ],
+                    [
+                        null,
+                        "https://fedoraproject.org/wiki/Licensing/psutils"
+                    ]
+                ]
+            },
+            "spdxLicenseId": "psutils"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/psutils",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "psutils",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "psutils License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "psutils License"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
+        },
+        "Scancode": {
+            "otherUrls": [
+                "https://fedoraproject.org/wiki/Licensing/psutils"
+            ],
+            "homepageUrl": "https://fedoraproject.org/wiki/Licensing:Psutils?rd=Licensing/psutils",
+            "shortName": "PS Utilities License",
+            "textUrls": null,
+            "text": "PS Utilities Package\n\nThe constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE Makefile.msc Makefile.nt Makefile.os2\nMakefile.unix README config.h descrip.mms\nepsffit.c epsffit.man extractres.man extractres.pl\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\ngetafm getafm.man includeres.man includeres.pl\nmaketext patchlev.h psbook.c psbook.man\npserror.c pserror.h psmerge.man psmerge.pl\npsnup.c psnup.man psresize.c psresize.man\npsselect.c psselect.man psspec.c psspec.h\npstops.c pstops.man psutil.c psutil.h\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall's Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n3) These programs are provided \"as-is\". No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don't mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.",
+            "category": "Permissive",
+            "osiUrl": null,
+            "owner": "Angus J. C. Duggan",
+            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psutils.yml",
+            "key": "psutils",
+            "name": "PS Utilities License",
+            "spdxId": "psutils",
+            "_implications": {
+                "__impliedNames": [
+                    "psutils",
+                    "PS Utilities License",
+                    "psutils"
+                ],
+                "__impliedId": "psutils",
+                "__impliedCopyleft": [
+                    [
+                        "Scancode",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedText": "PS Utilities Package\n\nThe constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE Makefile.msc Makefile.nt Makefile.os2\nMakefile.unix README config.h descrip.mms\nepsffit.c epsffit.man extractres.man extractres.pl\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\ngetafm getafm.man includeres.man includeres.pl\nmaketext patchlev.h psbook.c psbook.man\npserror.c pserror.h psmerge.man psmerge.pl\npsnup.c psnup.man psresize.c psresize.man\npsselect.c psselect.man psspec.c psspec.h\npstops.c pstops.man psutil.c psutil.h\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall's Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n3) These programs are provided \"as-is\". No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don't mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.",
+                "__impliedURLs": [
+                    [
+                        "Homepage",
+                        "https://fedoraproject.org/wiki/Licensing:Psutils?rd=Licensing/psutils"
+                    ],
+                    [
+                        null,
+                        "https://fedoraproject.org/wiki/Licensing/psutils"
+                    ]
+                ]
+            }
+        },
+        "BlueOak License List": {
+            "BlueOakRating": "Lead",
+            "url": "https://spdx.org/licenses/psutils.html",
+            "isPermissive": true,
+            "_sourceURL": "https://blueoakcouncil.org/list",
+            "name": "psutils License",
+            "id": "psutils",
+            "_implications": {
+                "__impliedNames": [
+                    "psutils"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "BlueOak License List",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "Rating is: Lead"
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedURLs": [
+                    [
+                        "SPDX",
+                        "https://spdx.org/licenses/psutils.html"
+                    ]
+                ]
+            }
+        }
+    },
+    "__impliedJudgement": [
+        [
+            "BlueOak License List",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
+    "__impliedCopyleft": [
+        [
+            "BlueOak License List",
+            "NoCopyleft"
+        ],
+        [
+            "Scancode",
+            "NoCopyleft"
+        ]
+    ],
+    "__calculatedCopyleft": "NoCopyleft",
+    "__impliedText": "PS Utilities Package\n\nThe constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE Makefile.msc Makefile.nt Makefile.os2\nMakefile.unix README config.h descrip.mms\nepsffit.c epsffit.man extractres.man extractres.pl\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\ngetafm getafm.man includeres.man includeres.pl\nmaketext patchlev.h psbook.c psbook.man\npserror.c pserror.h psmerge.man psmerge.pl\npsnup.c psnup.man psresize.c psresize.man\npsselect.c psselect.man psspec.c psspec.h\npstops.c pstops.man psutil.c psutil.h\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall's Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n3) These programs are provided \"as-is\". No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don't mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.",
+    "__impliedURLs": [
+        [
+            "SPDX",
+            "http://spdx.org/licenses/psutils.json"
+        ],
+        [
+            null,
+            "https://fedoraproject.org/wiki/Licensing/psutils"
+        ],
+        [
+            "SPDX",
+            "https://spdx.org/licenses/psutils.html"
+        ],
+        [
+            "Homepage",
+            "https://fedoraproject.org/wiki/Licensing:Psutils?rd=Licensing/psutils"
+        ]
+    ]
+}
