@@ -9,13 +9,12 @@ import qualified Prelude as P
 import           MyPrelude
 
 import qualified Data.Text as T
-import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as BL
-import           Control.Monad
 import           Control.Monad.Trans.Writer.Strict (execWriter, tell)
 import qualified Data.Map as M
 
 import           Model.License
+import           Collectors.BlueOak (blueOakLFC)
+import           Collectors.SPDX (spdxLFC)
 
 mergeRaitingStates :: RatingState -> RatingState -> RatingState
 mergeRaitingStates rs1@(FinalRating fr1) (FinalRating fr2)             = if fr1 == fr2
@@ -104,17 +103,17 @@ ratingRules = let
         _ -> removeRatingFromState RGo
 
     addRule "Fedora bad Rating implies at least Stop" $ \l ->
-      case M.lookup (LFC ["FedoraProjectWiki", "FPWFact"]) (unpackSLSR $ getImpliedJudgement l) of
+      case M.lookup blueOakLFC (unpackSLSR $ getImpliedJudgement l) of
         Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAttention
         _                          -> id
 
     addRule "only SPDX licenses can be better than Stop" $ \l ->
-      if l `containsFactOfClass` LFC ["SPDX", "SPDXEntry"]
+      if l `containsFactOfClass` spdxLFC
       then id
       else removeRatingFromState RGo . removeRatingFromState RAttention
 
     addRule "possitive Rating by BlueOak helps, and if no other rating is negative it implies Go" $ \l ->
-      case M.lookup (LFC ["BlueOak", "BOEntry"])  (unpackSLSR $ getImpliedJudgement l) of
+      case M.lookup blueOakLFC (unpackSLSR $ getImpliedJudgement l) of
         Just (PositiveJudgement _) -> if hasNegativeJudgements l
                                       then removeRatingFromState RNoGo . removeRatingFromState RStop
                                       else setRatingOfStateIfPossible RGo

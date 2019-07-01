@@ -8,6 +8,7 @@
  -}
 module Collectors.Wikipedia
   ( loadWikipediaFacts
+  , wikipediaLFC
   ) where
 
 import qualified Prelude as P
@@ -193,8 +194,10 @@ instance ToJSON WikipediaFact where
                                  , mkSublicensingEntry
                                  , mkTMGrantEntry
                                  ])
+wikipediaLFC :: LicenseFactClassifier
+wikipediaLFC = LFC "Wikipedia"
 instance LFRaw WikipediaFact where
-  getLicenseFactClassifier _ = LFC ["Wikipedia", "WikipediaComparison"]
+  getLicenseFactClassifier _ = wikipediaLFC
   getImpliedNames wpf@(WikipediaFact name _ version _ _ _ _ _ _ _ _) = let
       nameByWikipedia = T.unpack $ case version of
         Just v  -> name `T.append` " " `T.append` v

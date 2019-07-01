@@ -3,7 +3,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Collectors.OpenChainPolicyTemplate
   ( loadOCPTFacts
-  , loadOCPTFactsFromString
+  , ocptLFC
+  , loadOCPTFactsFromString -- for testing
   ) where
 
 import qualified Prelude as P
@@ -41,8 +42,10 @@ instance FromNamedRecord OCPTRow where
                                  <*> r C..: "Freedom or Death"
                                  <*> r C..: "Commercial Use"
 instance ToJSON OCPTRow
+ocptLFC :: LicenseFactClassifier
+ocptLFC = LFC "OpenChainPolicyTemplate"
 instance LFRaw OCPTRow where
-  getLicenseFactClassifier _          = LFC ["OpenChainPolicyTemplate", "OCPTRow"]
+  getLicenseFactClassifier _          = ocptLFC
   getImpliedNames OCPTRow{spdxId = i} = CLSR [i]
 
 

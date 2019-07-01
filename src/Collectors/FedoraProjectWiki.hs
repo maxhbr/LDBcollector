@@ -3,6 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Collectors.FedoraProjectWiki
   ( loadFedoraFacts
+  , fedoraLFC
   ) where
 
 import qualified Prelude as P
@@ -105,8 +106,10 @@ instance ToJSON FedoraProjectWikiFact where
     in mergeAesonL [ object [ "licenseType" A..= t
                             , "rating" A..= rankingFromData ]
                    , aesonFromData ]
+fedoraLFC :: LicenseFactClassifier
+fedoraLFC = LFC "Fedora Project Wiki"
 instance LFRaw FedoraProjectWikiFact where
-  getLicenseFactClassifier _                                     = LFC ["FedoraProjectWiki", "FPWFact"]
+  getLicenseFactClassifier _                                     = fedoraLFC
   getImpliedNames (FedoraProjectWikiFact _ (Left (Left full)))   = CLSR [getFullNameFromCore full]
   getImpliedNames (FedoraProjectWikiFact _ (Left (Right short))) = CLSR [getFullNameFromCore short]
   getImpliedNames (FedoraProjectWikiFact _ (Right bad))          = CLSR [getFullNameFromCore bad]

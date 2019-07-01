@@ -3,6 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Collectors.OSLC
   ( loadOslcFacts
+  , oslcLFC
   ) where
 
 import qualified Prelude as P
@@ -60,8 +61,10 @@ instance FromJSON OSLCData where
     <*> ((v .: "licenseId") <|> fmap (:[]) (v .: "licenseId"))
     <*> v .:? "notes"
     <*> v .:? "terms"
+oslcLFC :: LicenseFactClassifier
+oslcLFC = LFC "finos-osr/OSLC-handbook"
 instance LFRaw OSLCData where
-  getLicenseFactClassifier _             = LFC ["OSLC", "OSLCFact"]
+  getLicenseFactClassifier _             = oslcLFC
   getImpliedNames (OSLCData n _ ids _ _) = CLSR $ n : ids
 
 loadOslcFactFromFile :: FilePath -> FilePath -> IO (Vector LicenseFact)

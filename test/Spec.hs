@@ -1252,9 +1252,9 @@ FAQ</a>.</p></dd>
 -- containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
 containsFactOfType :: License -> Text -> Bool
 containsFactOfType (License fs) t = (\f -> case getLicenseFactClassifier f of
-                                        LFC []           -> False
-                                        LFC bcs          -> last bcs == t
-                                        LFCWithURL _ bcs -> last bcs == t) `any` fs
+                                        EmptyLFC         -> False
+                                        LFC bcs          -> bcs == t
+                                        LFCWithURL _ bcs -> bcs == t) `any` fs
 
 getFactData :: License -> LicenseFactClassifier -> Maybe Value
 getFactData (License fs) classifier = case V.find (\f -> getLicenseFactClassifier f == classifier) fs of
@@ -1265,9 +1265,9 @@ main :: IO ()
 main = hspec $ do
   describe "Model.Statements" $ do
     it "merging two ranked works" $ do
-      mergeLicenseStatementResults (RLSR (LFC ["40"]) 40 ("40" :: String)) (RLSR (LFC ["60"]) 60 "60") `shouldBe` RLSR (LFC ["60"]) 60 "60"
+      mergeLicenseStatementResults (RLSR (LFC "40") 40 ("40" :: String)) (RLSR (LFC "60") 60 "60") `shouldBe` RLSR (LFC "60") 60 "60"
     it "merging a ranked vector works" $ do
-      mergeLicenseStatementResultList (V.fromList [RLSR (LFC ["40"]) 40 ("40" :: String), NoRLSR, RLSR (LFC ["80"]) 80 "80", RLSR (LFC ["60"]) 60 "60", NoRLSR]) `shouldBe` RLSR (LFC ["80"]) 80 "80"
+      mergeLicenseStatementResultList (V.fromList [RLSR (LFC "40") 40 ("40" :: String), NoRLSR, RLSR (LFC "80") 80 "80", RLSR (LFC "60") 60 "60", NoRLSR]) `shouldBe` RLSR (LFC "80") 80 "80"
     it "merging two collected works" $ do
       mergeLicenseStatementResults (CLSR [("40" :: String)]) (CLSR ["60"]) `shouldBe` CLSR ["40", "60"]
     it "merging a collected vector works" $ do
@@ -1293,9 +1293,9 @@ main = hspec $ do
         (gpl `containsFactOfType` "LicenseText") `shouldBe` (True :: Bool)
 
       -- it "the MIT FullnameFact is as expected" $ do
-      --   (mit `getFactData` (LFC ["LicenseFullname"])) `shouldBe` (object ["LicenseFullname" .= (toJSON ["MIT" :: String,"MIT License"] :: Value)])
+      --   (mit `getFactData` (LFC "LicenseFullname")) `shouldBe` (object ["LicenseFullname" .= (toJSON ["MIT" :: String,"MIT License"] :: Value)])
       it "the ABC FullnameFact is as expected" $ do
-        (abc `getFactData` (LFC ["LicenseFullname"])) `shouldBe` Nothing
+        (abc `getFactData` (LFC "LicenseFullname")) `shouldBe` Nothing
 
   describe "Model.Query" $ do
     it "query from string" $ do
@@ -1311,9 +1311,9 @@ main = hspec $ do
       it "is possible to parse the string and gets correct count" $ do
         V.length factsFromSPDX `shouldBe` 14
       it "there is a 0BSD SPDXFact" $ do
-        (nBSD `containsFactOfType` "SPDXEntry") `shouldBe` (True :: Bool)
+        (nBSD `containsFactOfType` "SPDX") `shouldBe` (True :: Bool)
       it "there is no ABC SPDXFact" $ do
-        (abc `containsFactOfType` "SPDXEntry") `shouldBe` (False :: Bool)
+        (abc `containsFactOfType` "SPDX") `shouldBe` (False :: Bool)
 
   describe "Collector.BlueOak" $ let
       factsFromEmptyBlueOak = loadBlueOakFactsFromString blueOakEmptyExample
@@ -1333,7 +1333,7 @@ main = hspec $ do
         V.length factsFromBlueOak `shouldBe` 169
 
       it "there is a MIT BlueOakEntryFact" $ do
-        (mit `containsFactOfType` "BOEntry") `shouldBe` (True :: Bool)
+        (mit `containsFactOfType` "BlueOak License List") `shouldBe` (True :: Bool)
 
   describe "Collector.OpenChainPolicyTemplate" $ let
       factsFromOCPT = loadOCPTFactsFromString ocptExample
@@ -1342,7 +1342,7 @@ main = hspec $ do
       it "it is possible to parse the csv" $ do
         V.length factsFromOCPT `shouldBe` 5
       it "it contains a MIT line" $ do
-        (mit `containsFactOfType` "OCPTRow") `shouldBe` (True :: Bool)
+        (mit `containsFactOfType` "OpenChainPolicyTemplate") `shouldBe` (True :: Bool)
 
   describe "Collectors.ChooseALicense" $ let
       ls = lines (Char8.unpack chooseALicenseExample)

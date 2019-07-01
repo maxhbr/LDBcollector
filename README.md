@@ -68,13 +68,16 @@ https://github.com/okfn/licenses/blob/master/licenses.csv
 
 The corresponding raw data is placed under `./data/okfn-licenses.csv`
 
+### DFSG License list
+https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
+
+### FSF / GNU License list
+FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
+
 **licensed under:** MIT
 
 ## Other possible Sources for license Metadata
-  - FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
   - ORT License highlighting
-  - https://github.com/okfn/licenses
-  - debian: https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
   - ...
   - FOSSology
     data-license: GPL-2.0-only

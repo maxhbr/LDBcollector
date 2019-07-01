@@ -5,6 +5,7 @@ module Collectors.BlueOak
   ( loadBlueOakFacts
   , loadBlueOakFactsFromString
   , decodeBlueOakData -- for testing
+  , blueOakLFC
   ) where
 
 import qualified Prelude as P
@@ -66,8 +67,11 @@ instance ToJSON BOEntry where
 instance Show BOEntry where
   show (BOEntry _ _ j) = show j
 
+blueOakLFC :: LicenseFactClassifier
+blueOakLFC = LFC "BlueOak License List"
+
 instance LFRaw BOEntry where
-  getLicenseFactClassifier _               = LFC ["BlueOak", "BOEntry"]
+  getLicenseFactClassifier _               = blueOakLFC
   getImpliedFullName boe@(BOEntry _ _ bol) = mkRLSR boe 40 (name bol)
   getImpliedNames (BOEntry _ _ bol)        = CLSR [id bol]
   getImpliedJudgement boe@(BOEntry _ r _)  = let

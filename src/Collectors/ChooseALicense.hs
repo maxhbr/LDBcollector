@@ -4,6 +4,7 @@ module Collectors.ChooseALicense
   ( loadChooseALicenseFacts
   , extractValueFromText
   , extractListFromText
+  , calLFC
   ) where
 
 import qualified Prelude as P
@@ -36,8 +37,10 @@ data CALFactRaw
 instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON CALFactRaw
+calLFC :: LicenseFactClassifier
+calLFC = LFC "choosealicense.com"
 instance LFRaw CALFactRaw where
-  getLicenseFactClassifier _                                  = LFC ["choosealicense.com", "CALFact"]
+  getLicenseFactClassifier _                                  = calLFC
   getImpliedNames CALFactRaw{name = sn
                             , spdxId = sid
                             , nickname = nid}                 = CLSR $ sn : (case sid of

@@ -40,19 +40,20 @@ instance ToJSON License where
 instance Show License where
   show (License fs) = "\n" ++ unlines (map show (V.toList fs)) ++ "\n"
 instance LFRaw License where
-  getLicenseFactClassifier _           = LFC []
-  getImpliedNames (License fs)         = mergeLicenseStatementResultList $ V.map getImpliedNames fs
-  getImpliedFullName (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedFullName fs
-  getImpliedId (License fs)            = mergeLicenseStatementResultList $ V.map getImpliedId fs
-  getImpliedURLs (License fs)          = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
-  getImpliedText (License fs)          = mergeLicenseStatementResultList $ V.map getImpliedText fs
-  getImpliedDescription (License fs)   = mergeLicenseStatementResultList $ V.map getImpliedDescription fs
-  getImpliedJudgement (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
-  getImpliedCopyleft (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
-  getImpliedObligations (License fs)   = mergeLicenseStatementResultList $ V.map getImpliedObligations fs
-  getImpliedRatingState (License fs)   = mergeLicenseStatementResultList $ V.map getImpliedRatingState fs
-  getHasPatentnHint (License fs)       = mergeLicenseStatementResultList $ V.map getHasPatentnHint fs
-  getImpliedNonCommercial (License fs) = mergeLicenseStatementResultList $ V.map getImpliedNonCommercial fs
+  getLicenseFactClassifier _            = EmptyLFC
+  getImpliedNames (License fs)          = mergeLicenseStatementResultList $ V.map getImpliedNames fs
+  getImpliedAmbiguousNames (License fs) = mergeLicenseStatementResultList $ V.map getImpliedAmbiguousNames fs
+  getImpliedFullName (License fs)       = mergeLicenseStatementResultList $ V.map getImpliedFullName fs
+  getImpliedId (License fs)             = mergeLicenseStatementResultList $ V.map getImpliedId fs
+  getImpliedURLs (License fs)           = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
+  getImpliedText (License fs)           = mergeLicenseStatementResultList $ V.map getImpliedText fs
+  getImpliedDescription (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedDescription fs
+  getImpliedJudgement (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
+  getImpliedCopyleft (License fs)       = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
+  getImpliedObligations (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedObligations fs
+  getImpliedRatingState (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedRatingState fs
+  getHasPatentnHint (License fs)        = mergeLicenseStatementResultList $ V.map getHasPatentnHint fs
+  getImpliedNonCommercial (License fs)  = mergeLicenseStatementResultList $ V.map getImpliedNonCommercial fs
 
 --------------------------------------------------------------------------------
 -- first basic facts
@@ -63,7 +64,7 @@ instance ToJSON LicenseShortnameFactRaw where
   toJSON (LicenseShortnameFactRaw mainLicenseName otherNames) = object [ "shortname" .= mainLicenseName
                                                                        , "otherNames" .= toJSON otherNames ]
 instance LFRaw LicenseShortnameFactRaw where
-  getLicenseFactClassifier _                     = LFC ["LicenseName"]
+  getLicenseFactClassifier _                     = LFC "LicenseName"
   getImpliedNames (LicenseShortnameFactRaw s os) = CLSR (s : os)
   getImpliedId f@(LicenseShortnameFactRaw s _)   = mkRLSR f 30 s
 
@@ -75,7 +76,7 @@ data LicenseFullnameFactRaw =
   deriving (Show, Generic)
 instance ToJSON LicenseFullnameFactRaw
 instance LFRaw LicenseFullnameFactRaw where
-  getLicenseFactClassifier _                         = LFC ["LicenseFullname"]
+  getLicenseFactClassifier _                         = LFC "LicenseFullname"
   getImpliedId f@(LicenseFullnameFactRaw s _)        = mkRLSR f 50 s
   getImpliedNames (LicenseFullnameFactRaw s fn)      = CLSR [s, fn]
   getImpliedFullName f@(LicenseFullnameFactRaw _ fn) = mkRLSR f 100 fn
@@ -88,7 +89,7 @@ data LicenseTextFactRaw =
   deriving (Show, Generic)
 instance ToJSON LicenseTextFactRaw
 instance LFRaw LicenseTextFactRaw where
-  getLicenseFactClassifier _                = LFC ["LicenseText"]
+  getLicenseFactClassifier _                = LFC "LicenseText"
   getImpliedNames (LicenseTextFactRaw s _)  = CLSR [s]
   getImpliedText f@(LicenseTextFactRaw _ t) = mkRLSR f 70 t
 
@@ -107,19 +108,7 @@ getLicenseFromFacts shortname otherShortnames fs = let
 
 containsFactOfClass :: License -> LicenseFactClassifier -> Bool
 containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
--- containsFactOfType :: License -> Text -> Bool
--- containsFactOfType (License fs) t = (\f -> case getLicenseFactClassifier f of
---                                         LFC []  -> False
---                                         LFC bcs -> last bcs == t) `any` fs
 
 getFactJSON :: License -> LicenseFactClassifier -> Maybe ByteString
 getFactJSON (License fs) classifier = fmap encode (V.find (\f -> getLicenseFactClassifier f == classifier) fs)
-
--- getFactData :: License -> LicenseFactClassifier -> Maybe Value
--- getFactData (License fs) classifier = case V.find (\f -> getLicenseFactClassifier f == classifier) fs of
---   Just a  -> Just $ toJSON a
---   Nothing -> Nothing
-
--- getStatementsFromLicense :: License -> Vector FactStatement
--- getStatementsFromLicense (License fs) = V.concatMap computeImpliedStatements fs
 

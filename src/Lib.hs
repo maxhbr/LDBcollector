@@ -99,7 +99,7 @@ calculateLicensesBySelector filterForIds facts = do
   calculateLicenses ids facts
 
 calculateSPDXLicenses :: Facts -> IO [(LicenseName, License)]
-calculateSPDXLicenses = calculateLicensesBySelector (\f -> getLicenseFactClassifier f == LFC ["SPDX", "SPDXEntry"])
+calculateSPDXLicenses = calculateLicensesBySelector (\f -> getLicenseFactClassifier f == LFC "SPDX")
 
 writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
 writeLicenseJSONs outputFolder licenses = do

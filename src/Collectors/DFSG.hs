@@ -7,6 +7,7 @@
  -}
 module Collectors.DFSG
   ( loadDFSGFacts
+  , dfsgLFC
   ) where
 
 import qualified Prelude as P
@@ -40,11 +41,14 @@ instance ToJSON DFSGEntry where
                                       , "Comment" .= c
                                       ]
 
+dfsgLFC :: LicenseFactClassifier
+dfsgLFC = LFC "Debian Free Software Guidelines"
 instance LFRaw DFSGEntry where
-  getLicenseFactClassifier _ = LFC ["DebianFreeSoftwareGuidelines"]
+  getLicenseFactClassifier _ = dfsgLFC
   getImpliedNames de         = case dfsgLicId de of
     Just i  -> CLSR [i]
     Nothing -> CLSR [dfsgLicName de]
+  getImpliedAmbiguousNames de = CLSR [dfsgLicName de]
   getImpliedJudgement e@(DFSGEntry _ _ s c) = let
       defaultMessage = case s of
                          DFSGCompatible -> "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"

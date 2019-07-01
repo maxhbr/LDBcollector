@@ -4,6 +4,7 @@
 {-# LANGUAGE TupleSections #-}
 module Collectors.SPDX
   ( loadSPDXFacts
+  , spdxLFC
   , loadSPDXFactsFromString
   ) where
 
@@ -53,8 +54,10 @@ instance FromJSON SPDXEntry where
     <*> v .: "detailsUrl"
     <*> v .: "seeAlso"
     <*> v .: "isOsiApproved"
+spdxLFC :: LicenseFactClassifier
+spdxLFC = LFC "SPDX"
 instance LFRaw SPDXEntry where
-  getLicenseFactClassifier _                                 = LFC ["SPDX", "SPDXEntry"]
+  getLicenseFactClassifier _                                 = spdxLFC
   getImpliedNames e                                          = CLSR [spdxLicenseId e, spdxFullName e]
   getImpliedFullName e                                       = mkRLSR e 90 (spdxFullName e)
   getImpliedId e                                             = mkRLSR e 100 (spdxLicenseId e)

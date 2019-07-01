@@ -3,7 +3,7 @@
 {-# LANGUAGE TupleSections #-}
 module Collectors.Scancode
   ( loadScancodeFacts
-  -- , loadScancodeFactsFromString
+  , scancodeLFC
   ) where
 
 import qualified Prelude as P
@@ -69,8 +69,10 @@ instance FromJSON ScancodeData where
     <*> v .:? "other_urls"
     <*> pure "" -- LicenseText is added later
 instance ToJSON ScancodeData
+scancodeLFC :: LicenseFactClassifier
+scancodeLFC = LFC "Scancode"
 instance LFRaw ScancodeData where
-  getLicenseFactClassifier _                            = LFC ["ScancodeData"]
+  getLicenseFactClassifier _                            = scancodeLFC
   getImpliedNames scd@ScancodeData{key=k, shortName=sn} = CLSR $ [k,sn] ++ (case spdxId scd of
                                                                               Just sid -> [sid]
                                                                               Nothing  -> [])

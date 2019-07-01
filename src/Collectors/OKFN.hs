@@ -3,6 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Collectors.OKFN
     ( loadOkfnFacts
+    , okfnLFC
     ) where
 
 import qualified Prelude as P
@@ -44,8 +45,10 @@ instance ToJSON OkfnFact where
            , "status" .= status
            , "title" .= title
            , "url" .= url ]
+okfnLFC :: LicenseFactClassifier
+okfnLFC = LFC "Open Knowledge International"
 instance LFRaw OkfnFact where
-  getLicenseFactClassifier _ = LFC ["OpenKnowledgeInternational", "OkfnFact"]
+  getLicenseFactClassifier _ = okfnLFC
   getImpliedNames (OkfnFact id _ _ _ _ _ _ _ _ title _) = CLSR [id, T.unpack title]
   getImpliedId o@(OkfnFact id _ _ _ _ _ _ _ _ _ _)      = mkRLSR o 40 id
   getImpliedURLs (OkfnFact _ _ _ _ _ _ _ _ _ _ url)     = CLSR [(Nothing, T.unpack url)]

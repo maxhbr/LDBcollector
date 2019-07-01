@@ -7,6 +7,7 @@
  -}
 module Collectors.Google
     ( loadGoogleFacts
+    , googleLFC
     ) where
 
 import qualified Prelude as P
@@ -43,8 +44,10 @@ data GooglePolicyFact
 instance ToJSON GooglePolicyFact where
   toJSON (GooglePolicyFact licenseName r@(CANNOT_BE_USED description)) = object [ "id" .= licenseName, "rating" .= toJSON r, "description" .= description ]
   toJSON (GooglePolicyFact licenseName r)                              = object [ "id" .= licenseName, "rating" .= toJSON r ]
+googleLFC :: LicenseFactClassifier
+googleLFC = LFC "Google OSS Policy"
 instance LFRaw GooglePolicyFact where
-  getLicenseFactClassifier _                        = LFC ["Google", "GoogleOSSPolicy"]
+  getLicenseFactClassifier _                        = googleLFC
   getImpliedNames (GooglePolicyFact spdxId _)       = CLSR [spdxId]
   getImpliedJudgement gpf@(GooglePolicyFact _ clss) = let
     judgementFromClassification = case clss of

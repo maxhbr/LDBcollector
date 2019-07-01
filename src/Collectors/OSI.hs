@@ -3,6 +3,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 module Collectors.OSI
   ( loadOSIFacts
+  , osiLFC
   ) where
 
 import qualified Prelude as P
@@ -18,8 +19,10 @@ import           Network.HTTP.Client (HttpException (..))
 
 import           Model.License
 
+osiLFC :: LicenseFactClassifier
+osiLFC = LFC "OpenSourceInitiative"
 instance LFRaw OSILicense where
-  getLicenseFactClassifier _                       = LFC ["OpenSourceInitiative", "OSILicense"]
+  getLicenseFactClassifier _                       = osiLFC
   getImpliedNames OSILicense{ olId = i
                             , olName = n
                             , olIdentifiers = is

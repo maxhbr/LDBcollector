@@ -3,6 +3,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Collectors.Gnu
   ( loadGnuFacts
+  , gnuLFC
   , loadGnuFactsFromByteString -- for Testing
   ) where
 
@@ -31,8 +32,10 @@ instance ToJSON GnuFact where
                                                      , "isFree" .= isFree
                                                      , "isGPLComptible" .= isGCompatible
                                                      ]
+gnuLFC :: LicenseFactClassifier
+gnuLFC = LFC "gnu.org"
 instance LFRaw GnuFact where
-  getLicenseFactClassifier _ = LFC ["gnu.org", "GnuFact"]
+  getLicenseFactClassifier _ = gnuLFC
   getImpliedNames _          = NoCLSR -- TODO: extract names!
   getImpliedJudgement gf = SLSR (getLicenseFactClassifier gf) $
                            if isGnuFree gf

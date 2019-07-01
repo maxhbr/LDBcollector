@@ -161,7 +161,7 @@ renderURLs lic = let
                              (Nothing, url)   -> P.para (P.text url)) urls)
 
 renderOSADLRule :: License -> Blocks
-renderOSADLRule lic = case queryLicense (LFC ["OSADL", "OSADLFact"]) (AL.key "osadlRule" . AL._String) lic of
+renderOSADLRule lic = case queryLicense (LFC "OSADL License Checklist") (AL.key "osadlRule" . AL._String) lic of
   Just osadlRule ->  P.header 2 (P.text "OSADL Rule")
     <> P.codeBlock (T.unpack osadlRule)
   Nothing        -> mempty

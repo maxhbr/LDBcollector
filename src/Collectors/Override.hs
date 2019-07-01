@@ -4,6 +4,7 @@
 module Collectors.Override
     ( Override (..)
     , loadOverrideFacts
+    , overrideLFC
     ) where
 
 import qualified Prelude as P
@@ -26,8 +27,10 @@ data Override
 emptyOverride :: LicenseName -> Override
 emptyOverride ln = Override ln [] Nothing Nothing Nothing Nothing
 instance ToJSON Override
+overrideLFC :: LicenseFactClassifier
+overrideLFC = LFC "Override"
 instance LFRaw Override where
-  getLicenseFactClassifier _                                 = LFC ["Override"]
+  getLicenseFactClassifier _                                 = overrideLFC
   getImpliedId o@Override{oName=n}                           = mkRLSR o 101 n
   getImpliedNames                                            = CLSR . (:[]) . oName
   getImpliedDescription o@Override{oDescription=Just d}      = mkRLSR o 101 d

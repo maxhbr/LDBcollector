@@ -26,6 +26,8 @@ class (Show a, ToJSON a) => LFRaw a where
   mkRLSR a = RLSR (getLicenseFactClassifier a)
   -- Statements:
   getImpliedNames :: a -> CollectedLicenseStatementResult LicenseName
+  getImpliedAmbiguousNames :: a -> CollectedLicenseStatementResult LicenseName
+  getImpliedAmbiguousNames _ = getEmptyLicenseStatement
   getImpliedFullName :: a -> RankedLicenseStatementResult LicenseName
   getImpliedFullName _ = getEmptyLicenseStatement
   getImpliedId :: a -> RankedLicenseStatementResult LicenseName
@@ -61,6 +63,9 @@ getImplicationJSONFromLFRaw a = let
     impliedNames = case getImpliedNames a of
       NoCLSR -> []
       ins    -> [ "__impliedNames" .= ins ]
+    impliedAmbiguousNames = case getImpliedAmbiguousNames a of
+      NoCLSR -> []
+      ins    -> [ "__impliedAmbiguousNames" .= ins ]
     impliedId = case getImpliedId a of
       NoRLSR -> []
       iid    -> [ "__impliedId" .= iid ]
@@ -87,8 +92,21 @@ getImplicationJSONFromLFRaw a = let
       iRatingState -> [ "__impliedRatingState" .= iRatingState ]
     patentHint = case getHasPatentnHint a of
       NoRLSR -> []
-      hPatentHint -> [ "__hasPatentHintn" .= hPatentHint ]
-  in mergeAesonL [ object $ impliedNames ++ impliedId ++ impliedURLs ++ impliedText ++ impliedJudgement ++ copyleft ++ ratingState ++ patentHint
+      hPatentHint -> [ "__hasPatentHint" .= hPatentHint ]
+    impliedNonCommercial = case getImpliedNonCommercial a of
+      NoRLSR -> []
+      nc     -> [ "__impliedNonCommercial" .= nc ]
+  in mergeAesonL [ object $
+                   impliedNames
+                   ++ impliedAmbiguousNames
+                   ++ impliedId
+                   ++ impliedURLs
+                   ++ impliedText
+                   ++ impliedJudgement
+                   ++ copyleft
+                   ++ ratingState
+                   ++ patentHint
+                   ++ impliedNonCommercial
                  , obligationsJ ]
 
 data LicenseFact
@@ -112,6 +130,7 @@ instance ToJSON LicenseFact where
 instance LFRaw LicenseFact where
   getLicenseFactClassifier (LicenseFact url raw) = maybeAddUrl url $ getLicenseFactClassifier raw
   getImpliedNames (LicenseFact _ raw)            =                                                             getImpliedNames raw
+  getImpliedAmbiguousNames (LicenseFact _ raw)   =                                                             getImpliedAmbiguousNames raw
   getImpliedFullName lf@(LicenseFact _ raw)      = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedFullName raw
   getImpliedId lf@(LicenseFact _ raw)            = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedId raw
   getImpliedURLs (LicenseFact _ raw)             =                                                             getImpliedURLs raw
