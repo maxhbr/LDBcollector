@@ -20,6 +20,7 @@ import           Model.Query as X
 
 import           Collectors.SPDX as X
 import           Collectors.BlueOak as X
+import           Collectors.DFSG as X
 import           Collectors.OpenChainPolicyTemplate as X
 import           Collectors.Scancode as X
 import           Collectors.OSADL as X
@@ -54,6 +55,7 @@ readFacts dataDir = let
     factsFromGoogle <- loadGoogleFacts
     factsFromOkfn <- loadOkfnFacts $ prependDataDir "./okfn-licenses.csv"
     factsFromGnu <- loadGnuFacts $ prependDataDir "./gnu.org"
+    factsFromDFSG <- loadDFSGFacts
     factsFromOverride <- loadOverrideFacts
     let facts = V.concat [ factsFromSPDX
                          , factsFromBlueOak
@@ -68,6 +70,7 @@ readFacts dataDir = let
                          , factsFromGoogle
                          , factsFromOkfn
                          , factsFromGnu
+                         , factsFromDFSG
                          , factsFromOverride
                          ]
     hPutStrLn stderr "... done with collecting data"
