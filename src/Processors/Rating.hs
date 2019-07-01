@@ -22,7 +22,10 @@ mergeRaitingStates rs1@(FinalRating fr1) (FinalRating fr2)             = if fr1 
                                                                          else undefined -- TODO
 mergeRaitingStates rs1@(FinalRating _) _                               = rs1
 mergeRaitingStates _ rs2@(FinalRating _)                               = rs2
-mergeRaitingStates (RatingState b1 b2 b3 b4) (RatingState c1 c2 c3 c4) = RatingState (b1 && c1) (b2 && c3) (b3 && c3) (b4 && c4)
+mergeRaitingStates (RatingState b1 b2 b3 b4) (RatingState c1 c2 c3 c4) = RatingState (b1 && c1)
+                                                                                     (b2 && c2)
+                                                                                     (b3 && c3)
+                                                                                     (b4 && c4)
 
 type RatingStateMutator
   = RatingState -> RatingState
