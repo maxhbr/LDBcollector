@@ -318,6 +318,7 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Jabber Open Source License: http://archive.jabber.org/core/JOSL.pdf
 1. Microsoft Reciprocal License (Ms-RL): https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx
 1. Motosoto Open Source License (v. 0.9.1): http://opensource.org/licenses/motosoto.php
+1. Open CASCADE Technology Public License (v. 6.6): https://www.opencascade.com/content/occt-public-license
 1. wxWindows License (v. 1.0): https://web.archive.org/web/20001121033400/http://www.wxwindows.org:80/licence.htm
 1. wxWindows Library License (v. 3.0): https://web.archive.org/web/20001121041000/http://www.wxwindows.org:80/licence3.txt
 1. wxWindows Library License (v. 3.1): https://www.wxwidgets.org/about/licence/
