@@ -11,6 +11,7 @@ import           GHC.IO.Encoding
 import           System.Environment
 
 import Lib
+import FindClusters (findClusters, writeClusters)
 
 echoStatsOnFacts :: [LicenseFact] -> IO ()
 echoStatsOnFacts = let
@@ -57,13 +58,14 @@ main = do
   -- harvest facts
   facts <- readFacts "./data"
 
+  -- write output
+  outputFolder <- cleanupAndMakeOutputFolder
+  writeClusters outputFolder facts
+
   -- calculate licenses
   licenses <- case args of
     [] -> calculateSPDXLicenses facts
     _  -> calculateLicenses (V.fromList args) facts
-
-  -- write output
-  outputFolder <- cleanupAndMakeOutputFolder
   writeLicenseJSONs outputFolder licenses
   writePandocs outputFolder licenses
 

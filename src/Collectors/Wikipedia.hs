@@ -174,7 +174,7 @@ instance ToJSON WikipediaFact where
                                             ]
       -- generateEntry :: Text -> (Maybe Text) -> Maybe a
       generateEntry _ Nothing = Nothing
-      generateEntry key (Just value) = Just $ key .= object [ "value" .= value, "description" .= (M.lookup key nameToDescriptionMapping)]
+      generateEntry key (Just value) = Just $ key .= object [ "value" .= value, "description" .= M.lookup key nameToDescriptionMapping]
       mkLinkingEntry = generateEntry "Linking"  (wpfLinking wf)
       mkDistributionEntry = generateEntry "Distribution" (wpfDistribution wf)
       mkModificationEntry = generateEntry "Modification" (wpfModification wf)
@@ -204,8 +204,9 @@ instance LFRaw WikipediaFact where
         Nothing -> name
       nameInSPDXMap = getSPDXIdForWikipediaFact wpf
     in case nameInSPDXMap of
-      Just spdxId -> CLSR [spdxId, nameByWikipedia]
       Nothing     -> CLSR [nameByWikipedia]
+      Just ""     -> CLSR [nameByWikipedia]
+      Just spdxId -> CLSR [spdxId, nameByWikipedia]
 
 loadFactsFromComparisonByteString :: ByteString -> Facts
 loadFactsFromComparisonByteString s = case (decodeByName s :: Either String (Header, V.Vector WikipediaFact)) of
