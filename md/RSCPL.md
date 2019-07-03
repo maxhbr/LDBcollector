@@ -19,6 +19,16 @@ Comments on (easy) usability
 -   **↑** Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/RSCPL.html "SPDX"))
 
+-   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+    Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten
+    Werke umfasst, sondern definierte Ausnahmen enthält. Sofern
+    Modifikationen der Software unter MPLartigen Lizenzen in eigenen
+    Dateien realisiert werden, können diese Dateien auch unter anderen,
+    z.B. proprietären Lizenzbedingungen weiterverbreitet werden. Damit
+    soll die Kombination von Software unter verschiedenen Lizenztypen
+    erleichtert werden. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 -   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
     in Fedora is permitted to use this license. It is either non-free or
     deprecated. (source: [Fedora Project
@@ -387,6 +397,22 @@ Raw Data
                     "__impliedNames": [
                         "Ricoh Source Code Public License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, kÃ¶nnen diese Dateien auch unter anderen, z.B. proprietÃ¤ren Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -459,11 +485,22 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, kÃ¶nnen diese Dateien auch unter anderen, z.B. proprietÃ¤ren Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
+                }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "Scancode",
+                "WeakCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "WeakCopyleft"
             ]
         ],

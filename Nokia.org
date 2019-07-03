@@ -26,6 +26,16 @@
 - *↑* Is OSI Approved (source:
   [[https://spdx.org/licenses/Nokia.html][SPDX]])
 
+- Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+  Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten
+  Werke umfasst, sondern definierte Ausnahmen enthält. Sofern
+  Modifikationen der Software unter MPLartigen Lizenzen in eigenen
+  Dateien realisiert werden, können diese Dateien auch unter anderen,
+  z.B. proprietären Lizenzbedingungen weiterverbreitet werden. Damit
+  soll die Kombination von Software unter verschiedenen Lizenztypen
+  erleichtert werden. (source:
+  [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
+
 ** URLs
 
 - *Homepage:* http://www.opensource.org/licenses/nokia.html
@@ -633,6 +643,22 @@
                     "__impliedNames": [
                         "Nokia Open Source License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, kÃ¶nnen diese Dateien auch unter anderen, z.B. proprietÃ¤ren Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -705,11 +731,22 @@
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, kÃ¶nnen diese Dateien auch unter anderen, z.B. proprietÃ¤ren Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
+                }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "Scancode",
+                "WeakCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "WeakCopyleft"
             ]
         ],

@@ -10,6 +10,12 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+-   Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
+    nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
+    Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
+    Weiterentwicklungen weiterverbreitet werden können. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 URLs
 ----
 
@@ -265,6 +271,22 @@ Raw Data
                     "__impliedNames": [
                         "Vim License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "MaybeCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "MaybeCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -281,12 +303,23 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "This software Licenses is OK for Fedora"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
+                }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "ifrOSS",
+                "MaybeCopyleft"
             ]
         ],
         "__calculatedCopyleft": "Copyleft",

@@ -46,6 +46,13 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[cho
 Foundation considers MIT License ambiguous. The MIT License published on
 the OSI site is the same as the Expat License. (source:
 https://opensource.org/licenses/[OpenSourceInitiative])
+*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
+Veränderungen der Software keine Bedingungen hinsichtlich des zu
+verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
+veränderte Versionen der Software unter beliebigen Lizenzbedingungen
+weiterverbreiten, also auch in proprietäre Software überführen. (source:
+https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 
 === Obligations
 
@@ -377,6 +384,22 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 "__impliedNames": [
                     "MIT License"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -709,6 +732,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 "tag": "PositiveJudgement",
                 "contents": " This License is featured by choosealicense.com"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+            }
         ]
     ],
     "__impliedCopyleft": [
@@ -722,6 +752,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         ],
         [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "ifrOSS",
             "NoCopyleft"
         ]
     ],

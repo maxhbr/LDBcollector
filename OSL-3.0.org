@@ -5,7 +5,7 @@
 | Fullname          | Open Software License 3.0                      |
 | Shortname         | OSL-3.0                                        |
 | Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | Copyleft                                       |
+| Classification    | StrongCopyleft                                 |
 | Has Patent Hint   | True                                           |
 
 *Other Names:*
@@ -35,6 +35,12 @@
 
 - *↑* Is OSI Approved (source:
   [[https://spdx.org/licenses/OSL-3.0.html][SPDX]])
+
+- Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer
+  verpflichtet von der ursprünglichen Software abgeleitete Werke
+  ebenfalls nur unter den Bedingungen der Ursprungslizenz
+  weiterzuverbreiten. (source:
+  [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
 - *↓* Google Classification is RESTRICTED (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
@@ -424,6 +430,22 @@
                     "__impliedNames": [
                         "Open Software License 3.0"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -652,6 +674,13 @@
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
+                }
             ]
         ],
         "__impliedCopyleft": [
@@ -662,9 +691,13 @@
             [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "ifrOSS",
+                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__obligations": {
             "limitations": [
                 {

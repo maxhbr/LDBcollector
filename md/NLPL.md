@@ -10,6 +10,12 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+-   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
+    Lizenznehmer verpflichtet von der ursprünglichen Software
+    abgeleitete Werke ebenfalls nur unter den Bedingungen der
+    Ursprungslizenz weiterzuverbreiten. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 -   **↓** Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -205,6 +211,22 @@ Raw Data
                     "__impliedNames": [
                         "No Limit Public License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -228,6 +250,13 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "This software Licenses is OK for Fedora"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
+                }
             ]
         ],
         "__impliedCopyleft": [
@@ -238,9 +267,13 @@ Raw Data
             [
                 "Scancode",
                 "NoCopyleft"
+            ],
+            [
+                "ifrOSS",
+                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "NoCopyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__impliedText": "NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.",
         "__impliedURLs": [
             [

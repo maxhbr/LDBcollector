@@ -48,6 +48,13 @@ https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 * *↑* Is OSI Approved (source:
 https://spdx.org/licenses/BSD-3-Clause.html[SPDX])
+*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
+Veränderungen der Software keine Bedingungen hinsichtlich des zu
+verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
+veränderte Versionen der Software unter beliebigen Lizenzbedingungen
+weiterverbreiten, also auch in proprietäre Software überführen. (source:
+https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 
 === Obligations
 
@@ -412,6 +419,22 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 "__impliedNames": [
                     "BSD 3-clause \"New\" or \"Revised\" License"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -661,6 +684,13 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+            }
         ]
     ],
     "__impliedCopyleft": [
@@ -674,6 +704,10 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         ],
         [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "ifrOSS",
             "NoCopyleft"
         ]
     ],

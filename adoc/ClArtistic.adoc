@@ -6,11 +6,16 @@
 |Fullname |Clarified Artistic License
 |Shortname |ClArtistic
 |Rating |Unknown, probably Stop or No-Go
-|Classification |NoCopyleft
+|Classification |MaybeCopyleft
 |=======================================
 
 === Comments on (easy) usability
 
+*  Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
+nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
+Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
+Weiterentwicklungen weiterverbreitet werden können. (source:
+https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 * *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
@@ -127,6 +132,22 @@ License List])
                 "__impliedNames": [
                     "Clarified Artistic License"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "MaybeCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "MaybeCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -143,15 +164,26 @@ License List])
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
+            }
         ]
     ],
     "__impliedCopyleft": [
         [
             "BlueOak License List",
             "NoCopyleft"
+        ],
+        [
+            "ifrOSS",
+            "MaybeCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "NoCopyleft",
+    "__calculatedCopyleft": "MaybeCopyleft",
     "__impliedURLs": [
         [
             "SPDX",

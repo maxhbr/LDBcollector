@@ -16,6 +16,15 @@ Comments on (easy) usability
 -   **↑** Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+-   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
+    und für Veränderungen der Software keine Bedingungen hinsichtlich
+    des zu verwendenden Lizenztyps enthalten. Damit kann der
+    Lizenznehmer veränderte Versionen der Software unter beliebigen
+    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
+    Software überführen. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 URLs
 ----
 
@@ -394,6 +403,22 @@ Raw Data
                     "__impliedNames": [
                         "FreeType Project License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -443,6 +468,13 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Google Classification is NOTICE"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                }
             ]
         ],
         "__impliedCopyleft": [
@@ -456,6 +488,10 @@ Raw Data
             ],
             [
                 "Scancode",
+                "NoCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "NoCopyleft"
             ]
         ],

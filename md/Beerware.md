@@ -14,6 +14,15 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+-   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
+    und für Veränderungen der Software keine Bedingungen hinsichtlich
+    des zu verwendenden Lizenztyps enthalten. Damit kann der
+    Lizenznehmer veränderte Versionen der Software unter beliebigen
+    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
+    Software überführen. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 -   **↓** Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -168,6 +177,22 @@ Raw Data
                     "__impliedNames": [
                         "Beerware License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -261,11 +286,22 @@ Raw Data
                     "tag": "NegativeJudgement",
                     "contents": "Google Classification is CANNOT_BE_USED \"The Beerware license has similar issues to the WTFPL on account of its vague grant of rights and likewise cannot be used at Google, nor can Beerware-licensed projects be patched by Googlers.\""
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "BlueOak License List",
+                "NoCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "NoCopyleft"
             ]
         ],

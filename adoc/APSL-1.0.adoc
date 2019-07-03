@@ -12,6 +12,12 @@
 
 * *↑* Is OSI Approved (source:
 https://spdx.org/licenses/APSL-1.0.html[SPDX])
+*  Die Lizenzen mit Sonderrechten gewähren den Lizenznehmern zwar alle
+diejenigen Rechte, die Freie Software ausmachen, sehen aber zugleich
+besondere Privilegien für den Lizenzgeber bei Weiterentwicklungen durch
+den Lizenznehmer vor. Diese Lizenzen werden zumeist bei Programmen
+verwendet, die ursprünglich proprietär vertrieben wurden. (source:
+https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 * *↓* This license is not compatible with the
 DebianFreeSoftwareGuidelines (DFSG-unfree) (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
@@ -151,6 +157,15 @@ Project Wiki])
                 "__impliedNames": [
                     "Apple Public Source License 1.0"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Die Lizenzen mit Sonderrechten gewÃ¤hren den Lizenznehmern zwar alle diejenigen Rechte, die Freie Software ausmachen, sehen aber zugleich besondere Privilegien fÃ¼r den Lizenzgeber bei Weiterentwicklungen durch den Lizenznehmer vor. Diese Lizenzen werden zumeist bei Programmen verwendet, die ursprÃ¼nglich proprietÃ¤r vertrieben wurden."
+                        }
+                    ]
+                ],
                 "__impliedURLs": [
                     [
                         null,
@@ -180,6 +195,13 @@ Project Wiki])
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Die Lizenzen mit Sonderrechten gewÃ¤hren den Lizenznehmern zwar alle diejenigen Rechte, die Freie Software ausmachen, sehen aber zugleich besondere Privilegien fÃ¼r den Lizenzgeber bei Weiterentwicklungen durch den Lizenznehmer vor. Diese Lizenzen werden zumeist bei Programmen verwendet, die ursprÃ¼nglich proprietÃ¤r vertrieben wurden."
             }
         ]
     ],

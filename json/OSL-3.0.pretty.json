@@ -234,6 +234,22 @@
                 "__impliedNames": [
                     "Open Software License 3.0"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -462,6 +478,13 @@
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
+            }
         ]
     ],
     "__impliedCopyleft": [
@@ -472,9 +495,13 @@
         [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "ifrOSS",
+            "StrongCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "Copyleft",
+    "__calculatedCopyleft": "StrongCopyleft",
     "__obligations": {
         "limitations": [
             {

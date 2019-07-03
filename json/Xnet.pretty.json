@@ -230,6 +230,22 @@
                 "__impliedNames": [
                     "X.Net License"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -342,6 +358,13 @@
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
+            }
         ]
     ],
     "__impliedCopyleft": [
@@ -355,6 +378,10 @@
         ],
         [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "ifrOSS",
             "NoCopyleft"
         ]
     ],

@@ -33,6 +33,10 @@ https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
 * *↑* Is OSI Approved (source:
 https://spdx.org/licenses/MS-RL.html[SPDX])
+*  Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke
+umfasst, sondern definierte Ausnahmen enthält. (source:
+https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 
 === Obligations
 
@@ -364,6 +368,22 @@ This license governs use of the accompanying software. If you use the software, 
                 "__impliedNames": [
                     "Microsoft Reciprocal License (Ms-RL)"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -511,6 +531,13 @@ This license governs use of the accompanying software. If you use the software, 
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
+            }
         ]
     ],
     "__impliedCopyleft": [
@@ -520,6 +547,10 @@ This license governs use of the accompanying software. If you use the software, 
         ],
         [
             "Scancode",
+            "WeakCopyleft"
+        ],
+        [
+            "ifrOSS",
             "WeakCopyleft"
         ]
     ],

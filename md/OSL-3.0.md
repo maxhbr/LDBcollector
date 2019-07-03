@@ -31,6 +31,12 @@ Comments on (easy) usability
 -   **↑** Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/OSL-3.0.html "SPDX"))
 
+-   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
+    Lizenznehmer verpflichtet von der ursprünglichen Software
+    abgeleitete Werke ebenfalls nur unter den Bedingungen der
+    Ursprungslizenz weiterzuverbreiten. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 -   **↓** Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -407,6 +413,22 @@ Raw Data
                     "__impliedNames": [
                         "Open Software License 3.0"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -635,6 +657,13 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
+                }
             ]
         ],
         "__impliedCopyleft": [
@@ -645,9 +674,13 @@ Raw Data
             [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "ifrOSS",
+                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__obligations": {
             "limitations": [
                 {

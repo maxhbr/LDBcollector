@@ -98,6 +98,22 @@
                 "__impliedNames": [
                     "Clarified Artistic License"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "MaybeCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "MaybeCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -114,15 +130,26 @@
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können."
+            }
         ]
     ],
     "__impliedCopyleft": [
         [
             "BlueOak License List",
             "NoCopyleft"
+        ],
+        [
+            "ifrOSS",
+            "MaybeCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "NoCopyleft",
+    "__calculatedCopyleft": "MaybeCopyleft",
     "__impliedURLs": [
         [
             "SPDX",

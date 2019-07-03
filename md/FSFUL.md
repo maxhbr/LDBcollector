@@ -16,6 +16,15 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+-   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
+    und für Veränderungen der Software keine Bedingungen hinsichtlich
+    des zu verwendenden Lizenztyps enthalten. Damit kann der
+    Lizenznehmer veränderte Versionen der Software unter beliebigen
+    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
+    Software überführen. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 URLs
 ----
 
@@ -163,6 +172,22 @@ Raw Data
                     "__impliedNames": [
                         "FSF Unlimited License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -179,11 +204,22 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "This software Licenses is OK for Fedora"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "Scancode",
+                "NoCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "NoCopyleft"
             ]
         ],

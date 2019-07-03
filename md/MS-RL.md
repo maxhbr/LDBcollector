@@ -29,6 +29,11 @@ Comments on (easy) usability
 -   **↑** Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX"))
 
+-   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+    Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten
+    Werke umfasst, sondern definierte Ausnahmen enthält. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 Obligations
 -----------
 
@@ -348,6 +353,22 @@ Raw Data
                     "__impliedNames": [
                         "Microsoft Reciprocal License (Ms-RL)"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -495,6 +516,13 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
+                }
             ]
         ],
         "__impliedCopyleft": [
@@ -504,6 +532,10 @@ Raw Data
             ],
             [
                 "Scancode",
+                "WeakCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "WeakCopyleft"
             ]
         ],

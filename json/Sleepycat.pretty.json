@@ -191,6 +191,22 @@
                 "__impliedNames": [
                     "Sleepycat License"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "MaybeCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "MaybeCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -325,12 +341,23 @@
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können."
+            }
         ]
     ],
     "__impliedCopyleft": [
         [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "ifrOSS",
+            "MaybeCopyleft"
         ]
     ],
     "__calculatedCopyleft": "Copyleft",

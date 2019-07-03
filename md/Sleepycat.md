@@ -15,6 +15,12 @@ Comments on (easy) usability
 -   **↑** Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX"))
 
+-   Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
+    nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
+    Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
+    Weiterentwicklungen weiterverbreitet werden können. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 -   **↓** Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -265,6 +271,22 @@ Raw Data
                     "__impliedNames": [
                         "Sleepycat License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "MaybeCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "MaybeCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -399,12 +421,23 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
+                }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "ifrOSS",
+                "MaybeCopyleft"
             ]
         ],
         "__calculatedCopyleft": "Copyleft",

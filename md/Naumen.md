@@ -16,6 +16,15 @@ Comments on (easy) usability
 -   **↑** Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Naumen.html "SPDX"))
 
+-   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
+    und für Veränderungen der Software keine Bedingungen hinsichtlich
+    des zu verwendenden Lizenztyps enthalten. Damit kann der
+    Lizenznehmer veränderte Versionen der Software unter beliebigen
+    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
+    Software überführen. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+
 URLs
 ----
 
@@ -289,6 +298,22 @@ Raw Data
                     "__impliedNames": [
                         "Naumen Public License"
                     ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
                     "__impliedURLs": [
                         [
                             null,
@@ -363,6 +388,13 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                }
             ]
         ],
         "__impliedCopyleft": [
@@ -372,6 +404,10 @@ Raw Data
             ],
             [
                 "Scancode",
+                "NoCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "NoCopyleft"
             ]
         ],

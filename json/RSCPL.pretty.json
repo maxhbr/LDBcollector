@@ -205,6 +205,22 @@
                 "__impliedNames": [
                     "Ricoh Source Code Public License"
                 ],
+                "__impliedJudgement": [
+                    [
+                        "ifrOSS",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, können diese Dateien auch unter anderen, z.B. proprietären Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
+                        }
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "ifrOSS",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft",
                 "__impliedURLs": [
                     [
                         null,
@@ -277,11 +293,22 @@
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
             }
+        ],
+        [
+            "ifrOSS",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, können diese Dateien auch unter anderen, z.B. proprietären Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
+            }
         ]
     ],
     "__impliedCopyleft": [
         [
             "Scancode",
+            "WeakCopyleft"
+        ],
+        [
+            "ifrOSS",
             "WeakCopyleft"
         ]
     ],
