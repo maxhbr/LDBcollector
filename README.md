@@ -39,6 +39,9 @@ The license list can be pulled from https://blueoakcouncil.org/list.json, and is
 The Fedora Project has in its wiki a list of licenses which are rated **good** or **bad** on [https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing].
 These lists are extracted to csv files in `/data/Fedora_Project_Wiki/`.
 
+#### TODO: the Fedora project also has notes regarding to licenses
+- e.g. https://fedoraproject.org/wiki/Licensing/Sleepycat
+
 ### Open Chain Policy Template
 The open chain project published an example policy as a spreadsheet on [https://www.openchainproject.org/news/2019/01/17/openchain-open-source-policy-template-now-available].
 From the spreadsheet page "Example Appendix 1 - Unofficial License Grid used by UK Entity" one can extract the license list into a CSV file
@@ -75,6 +78,12 @@ https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
 FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
 
 **licensed under:** MIT
+
+### ifrOSS
+- https://github.com/ifrOSS/ifrOSS
+- https://ifross.github.io/ifrOSS/Lizenzcenter
+
+**licensed under:** MIT / ODbL
 
 ## Other possible Sources for license Metadata
   - ORT License highlighting

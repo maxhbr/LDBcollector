@@ -52,7 +52,7 @@ instance LFRaw DFSGEntry where
   getImpliedJudgement e@(DFSGEntry _ _ s c) = let
       defaultMessage = case s of
                          DFSGCompatible -> "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
-                         DFSGStateUnsettled -> "This license is currently unstettled whether it is DFSG-free"
+                         DFSGStateUnsettled -> "It is currently unstettled whether this license is DFSG-free"
                          DFSGInCompatible -> "This license is not compatible with the DebianFreeSoftwareGuidelines (DFSG-unfree)"
       defaultJudgement m = mkSLSR e $ case s of
                                         DFSGCompatible -> PositiveJudgement m
