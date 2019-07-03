@@ -53,6 +53,22 @@
             },
             "spdxLicenseId": "ClArtistic"
         },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "ClArtistic"
+                ],
+                "__impliedId": "ClArtistic"
+            },
+            "oName": "ClArtistic",
+            "oOtherLicenseIds": [
+                "Artistic (clarified)"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oRatingState": null
+        },
         "BlueOak License List": {
             "BlueOakRating": "Lead",
             "url": "https://spdx.org/licenses/ClArtistic.html",

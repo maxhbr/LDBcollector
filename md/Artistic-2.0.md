@@ -203,6 +203,23 @@ Raw Data
                 "Comment": null,
                 "LicenseId": "Artistic-2.0"
             },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "Artistic-2.0"
+                    ],
+                    "__impliedId": "Artistic-2.0"
+                },
+                "oName": "Artistic-2.0",
+                "oOtherLicenseIds": [
+                    "Artistic 2.0",
+                    "Artistic License (v. 2.0)"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oRatingState": null
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/Artistic-2.0.html",

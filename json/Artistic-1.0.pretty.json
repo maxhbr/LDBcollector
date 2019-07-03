@@ -87,6 +87,22 @@
             "Comment": "Do note that the Artistic License is considered non-free by the FSF. They suggest to use the Clarified Artistic License (also called Artistic License 2.0) instead. However, the original Artistic License is still considered DFSG-free.",
             "LicenseId": "Artistic-1.0"
         },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-1.0"
+                ],
+                "__impliedId": "Artistic-1.0"
+            },
+            "oName": "Artistic-1.0",
+            "oOtherLicenseIds": [
+                "Artistic 1.0 (original)"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oRatingState": null
+        },
         "BlueOak License List": {
             "BlueOakRating": "Lead",
             "url": "https://spdx.org/licenses/Artistic-1.0.html",
