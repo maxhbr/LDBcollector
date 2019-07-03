@@ -9,8 +9,6 @@ Apple Public Source License 2.0 (APSL-2.0)
 
 -   `License :: OSI Approved :: Apple Public Source License`
 
--   ``
-
 Comments on (easy) usability
 ----------------------------
 
@@ -48,8 +46,7 @@ Raw Data
             "APSL-2.0",
             "Apple Public Source License 2.0",
             "Apple Public Source License, Version 2.0",
-            "License :: OSI Approved :: Apple Public Source License",
-            ""
+            "License :: OSI Approved :: Apple Public Source License"
         ],
         "__impliedId": "APSL-2.0",
         "__impliedAmbiguousNames": [
@@ -266,7 +263,6 @@ Raw Data
                 },
                 "_implications": {
                     "__impliedNames": [
-                        "",
                         "Apple Public Source License 2.0"
                     ]
                 },

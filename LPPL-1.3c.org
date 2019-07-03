@@ -15,8 +15,6 @@
 
 - =LaTeX Project Public License 1.3c=
 
-- ==
-
 ** Description
 
 #+BEGIN_QUOTE
@@ -495,8 +493,7 @@
             "lppl-1.3c",
             "LPPL 1.3c",
             "LaTeX Project Public License, Version 1.3c",
-            "LaTeX Project Public License 1.3c",
-            ""
+            "LaTeX Project Public License 1.3c"
         ],
         "__impliedId": "LPPL-1.3c",
         "facts": {
@@ -752,7 +749,6 @@
                 },
                 "_implications": {
                     "__impliedNames": [
-                        "",
                         "LaTeX Project Public License 1.3c"
                     ]
                 },

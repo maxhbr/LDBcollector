@@ -12,8 +12,6 @@
 
 - =License :: OSI Approved :: Apple Public Source License=
 
-- ==
-
 ** Comments on (easy) usability
 
 - *↑* This software Licenses is OK for Fedora (source:
@@ -50,8 +48,7 @@
             "APSL-2.0",
             "Apple Public Source License 2.0",
             "Apple Public Source License, Version 2.0",
-            "License :: OSI Approved :: Apple Public Source License",
-            ""
+            "License :: OSI Approved :: Apple Public Source License"
         ],
         "__impliedId": "APSL-2.0",
         "__impliedAmbiguousNames": [
@@ -268,7 +265,6 @@
                 },
                 "_implications": {
                     "__impliedNames": [
-                        "",
                         "Apple Public Source License 2.0"
                     ]
                 },

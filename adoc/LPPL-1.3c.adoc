@@ -14,7 +14,6 @@
 * `LPPL 1.3c`
 * `LaTeX Project Public License, Version 1.3c`
 * `LaTeX Project Public License 1.3c`
-* ``
 
 === Description
 
@@ -498,8 +497,7 @@ Important Recommendations
         "lppl-1.3c",
         "LPPL 1.3c",
         "LaTeX Project Public License, Version 1.3c",
-        "LaTeX Project Public License 1.3c",
-        ""
+        "LaTeX Project Public License 1.3c"
     ],
     "__impliedId": "LPPL-1.3c",
     "facts": {
@@ -755,7 +753,6 @@ Important Recommendations
             },
             "_implications": {
                 "__impliedNames": [
-                    "",
                     "LaTeX Project Public License 1.3c"
                 ]
             },

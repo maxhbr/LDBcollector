@@ -11,8 +11,6 @@ LaTeX Project Public License v1.3c (LPPL-1.3c)
 
 -   `LaTeX Project Public License 1.3c`
 
--   ``
-
 Description
 -----------
 
@@ -482,8 +480,7 @@ Raw Data
             "lppl-1.3c",
             "LPPL 1.3c",
             "LaTeX Project Public License, Version 1.3c",
-            "LaTeX Project Public License 1.3c",
-            ""
+            "LaTeX Project Public License 1.3c"
         ],
         "__impliedId": "LPPL-1.3c",
         "facts": {
@@ -739,7 +736,6 @@ Raw Data
                 },
                 "_implications": {
                     "__impliedNames": [
-                        "",
                         "LaTeX Project Public License 1.3c"
                     ]
                 },
