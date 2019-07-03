@@ -103,7 +103,7 @@ proprietäre Software überführen.
 1. Intel Open Source License for CDSA/CSSM Implementation: http://www.opensource.org/licenses/intel-open-source-license.php
 1. ISC License: https://www.isc.org/downloads/software-support-policy/isc-license/
 1. JasPer License Version 2.0: http://www.ece.uvic.ca/~frodo/jasper/LICENSE
-1. JSON License http://www.json.org/license.html
+1. JSON License: http://www.json.org/license.html
 1. Libpng License: http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 1. Lua Copyright notice: http://www.lua.org/copyright.html
 1. Lucent Public License Version (v. 1): https://web.archive.org/web/20030520193826/http://plan9.bell-labs.com/hidden/lpl4-2-03.html
