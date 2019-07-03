@@ -201,6 +201,24 @@ Raw Data
                 "Comment": "Infamous for the clause The Software shall be used for Good, not Evil.",
                 "LicenseId": "JSON"
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://www.json.org/license.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "JSON License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "JSON License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.json.org/license.html"
+                        ]
+                    ]
+                }
+            },
             "Google OSS Policy": {
                 "rating": "NOTICE",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",

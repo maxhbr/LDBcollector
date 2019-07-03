@@ -26,6 +26,8 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Apple\_Public\_Source\_License\_1.0
 
+-   https://www.apple.com/publicsource/license.html (Einordnung unklar)
+
 ------------------------------------------------------------------------
 
 Raw Data
@@ -139,6 +141,24 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "APSL-1.0"
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrLicenseWithSpecialRights",
+                "ifrURL": "https://www.apple.com/publicsource/license.html (Einordnung unklar)",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Apple Public Source License 1.0",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Apple Public Source License 1.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://www.apple.com/publicsource/license.html (Einordnung unklar)"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -172,6 +192,10 @@ Raw Data
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0"
+            ],
+            [
+                null,
+                "https://www.apple.com/publicsource/license.html (Einordnung unklar)"
             ]
         ]
     }

@@ -255,6 +255,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft_GPLlike",
+                "ifrURL": "http://www.nethack.org/common/license.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Nethack General Public License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Nethack General Public License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.nethack.org/common/license.html"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -349,6 +367,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/NGPL"
+            ],
+            [
+                null,
+                "http://www.nethack.org/common/license.html"
             ]
         ]
     }

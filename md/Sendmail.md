@@ -21,6 +21,8 @@ URLs
 
 -   https://web.archive.org/web/20160322142305/https://www.sendmail.com/pdfs/open\_source/sendmail\_license.pdf
 
+-   http://www.sendmail.org/ftp/LICENSE
+
 Text
 ----
 
@@ -233,6 +235,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://www.sendmail.org/ftp/LICENSE",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Sendmail License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Sendmail License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.sendmail.org/ftp/LICENSE"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -268,6 +288,10 @@ Raw Data
             [
                 "Homepage",
                 "http://www.sendmail.com/"
+            ],
+            [
+                null,
+                "http://www.sendmail.org/ftp/LICENSE"
             ]
         ]
     }

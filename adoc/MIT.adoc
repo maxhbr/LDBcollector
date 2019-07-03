@@ -79,6 +79,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[cho
 * *SPDX:* https://spdx.org/licenses/MIT.html
 * *Wikipedia page:* https://en.wikipedia.org/wiki/MIT_License
 * *tl;dr legal:* https://tldrlegal.com/license/mit-license
+* https://spdx.org/licenses/MIT.html#licenseText
 
 === OSADL Rule
 
@@ -362,6 +363,24 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     [
                         "SPDX",
                         "https://spdx.org/licenses/MIT.html"
+                    ]
+                ]
+            }
+        },
+        "ifrOSS": {
+            "ifrKind": "IfrNoCopyleft",
+            "ifrURL": "https://spdx.org/licenses/MIT.html#licenseText",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "MIT License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "MIT License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/MIT.html#licenseText"
                     ]
                 ]
             }
@@ -776,6 +795,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         [
             "OSI Page",
             "https://opensource.org/licenses/mit"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/MIT.html#licenseText"
         ]
     ]
 }

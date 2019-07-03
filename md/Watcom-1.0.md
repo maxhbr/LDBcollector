@@ -44,6 +44,8 @@ URLs
 
 -   http://www.opensource.org/licenses/Watcom-1.0
 
+-   ftp://ftp.openwatcom.org/install/license.txt
+
 Text
 ----
 
@@ -580,6 +582,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrWeakCopyleft_MPLlike",
+                "ifrURL": "ftp://ftp.openwatcom.org/install/license.txt",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Sybase Open Watcom Public License 1.0",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Sybase Open Watcom Public License 1.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "ftp://ftp.openwatcom.org/install/license.txt"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -693,6 +713,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Watcom-1.0"
+            ],
+            [
+                null,
+                "ftp://ftp.openwatcom.org/install/license.txt"
             ]
         ]
     }

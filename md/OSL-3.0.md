@@ -61,6 +61,8 @@ URLs
 
 -   http://www.rosenlaw.com/OSL3.0.htm
 
+-   https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm
+
 OSADL Rule
 ----------
 
@@ -395,6 +397,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft",
+                "ifrURL": "https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Open Software License 3.0",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Software License 3.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -725,6 +745,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/OSL-3.0"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm"
             ]
         ]
     }

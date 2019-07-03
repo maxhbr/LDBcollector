@@ -69,6 +69,8 @@ URLs
 
 -   https://www.isc.org/isc-license-1.0.html
 
+-   http://mirbsd.org/ISC-Licence
+
 OSADL Rule
 ----------
 
@@ -353,6 +355,24 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/ISC.html"
+                        ]
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://mirbsd.org/ISC-Licence",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "ISC License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "ISC License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://mirbsd.org/ISC-Licence"
                         ]
                     ]
                 }
@@ -709,6 +729,10 @@ Raw Data
             [
                 "Wikipedia page",
                 "https://en.wikipedia.org/wiki/ISC_license"
+            ],
+            [
+                null,
+                "http://mirbsd.org/ISC-Licence"
             ]
         ]
     }

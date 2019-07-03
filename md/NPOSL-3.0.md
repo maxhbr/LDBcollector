@@ -30,6 +30,8 @@ URLs
 
 -   http://www.opensource.org/licenses/NOSL3.0
 
+-   https://spdx.org/licenses/NPOSL-3.0.html
+
 Text
 ----
 
@@ -259,6 +261,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft",
+                "ifrURL": "https://spdx.org/licenses/NPOSL-3.0.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Non-Profit Open Software License 3.0",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Non-Profit Open Software License 3.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/NPOSL-3.0.html"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -347,6 +367,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/NPOSL-3.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/NPOSL-3.0.html"
             ]
         ]
     }

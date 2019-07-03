@@ -27,6 +27,8 @@ URLs
 
 -   http://www.imatix.com
 
+-   https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm
+
 Text
 ----
 
@@ -203,6 +205,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrLicenseWithChoice",
+                "ifrURL": "https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "SFL License Agreement",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "SFL License Agreement"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -238,6 +258,10 @@ Raw Data
             [
                 null,
                 "http://www.imatix.com"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20160416132210/http://legacy.imatix.com/html/sfl/sfl4.htm"
             ]
         ]
     }

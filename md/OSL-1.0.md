@@ -43,6 +43,10 @@ URLs
 
 -   http://www.gnu.org/licenses/license-list.html\#OSL
 
+-   http://web.archive.org/web/20021201193408/http://rosenlaw.com:80/osl.html
+
+-   https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm
+
 Text
 ----
 
@@ -396,6 +400,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft",
+                "ifrURL": "http://web.archive.org/web/20021201193408/http://rosenlaw.com:80/osl.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Open Software License 1.0",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Software License 1.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://web.archive.org/web/20021201193408/http://rosenlaw.com:80/osl.html"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -570,6 +592,14 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/OSL-1.0"
+            ],
+            [
+                null,
+                "http://web.archive.org/web/20021201193408/http://rosenlaw.com:80/osl.html"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm"
             ]
         ]
     }

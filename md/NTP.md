@@ -272,6 +272,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "NTP License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "NTP License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -379,6 +397,10 @@ Raw Data
             [
                 null,
                 "http://www.pgpool.net/mediawiki/index.php/pgpool-II_License"
+            ],
+            [
+                null,
+                "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html"
             ]
         ]
     }

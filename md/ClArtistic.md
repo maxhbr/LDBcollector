@@ -20,6 +20,8 @@ URLs
 
 -   http://www.ncftp.com/ncftp/doc/LICENSE.txt
 
+-   http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html
+
 ------------------------------------------------------------------------
 
 Raw Data
@@ -114,6 +116,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrLicenseWithChoice",
+                "ifrURL": "http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Clarified Artistic License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Clarified Artistic License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -148,6 +168,10 @@ Raw Data
             [
                 "SPDX",
                 "https://spdx.org/licenses/ClArtistic.html"
+            ],
+            [
+                null,
+                "http://www.statistica.unimib.it/utenti/dellavedova/software/artistic2.html"
             ]
         ]
     }

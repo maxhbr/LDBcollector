@@ -19,6 +19,8 @@ URLs
 
 -   http://www.vim.org/docs.php
 
+-   http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html\#license
+
 Text
 ----
 
@@ -252,6 +254,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrLicenseWithChoice",
+                "ifrURL": "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Vim License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Vim License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -287,6 +307,10 @@ Raw Data
             [
                 null,
                 "http://www.vim.org/docs.php"
+            ],
+            [
+                null,
+                "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license"
             ]
         ]
     }

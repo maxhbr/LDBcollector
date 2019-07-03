@@ -29,6 +29,8 @@ URLs
 
 -   http://www.opensource.org/licenses/Naumen
 
+-   http://www.worldlii.org/int/other/PubRL/2009/42.html
+
 Text
 ----
 
@@ -277,6 +279,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://www.worldlii.org/int/other/PubRL/2009/42.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Naumen Public License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Naumen Public License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.worldlii.org/int/other/PubRL/2009/42.html"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -385,6 +405,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Naumen"
+            ],
+            [
+                null,
+                "http://www.worldlii.org/int/other/PubRL/2009/42.html"
             ]
         ]
     }

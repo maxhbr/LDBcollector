@@ -450,6 +450,24 @@
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "CeCILL-B Free Software License Agreement",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "CeCILL-B Free Software License Agreement"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [

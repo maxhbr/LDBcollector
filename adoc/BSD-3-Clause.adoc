@@ -80,6 +80,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-claus
 * *SPDX:* https://spdx.org/licenses/BSD-3-Clause.html
 * *Wikipedia Page:* https://en.wikipedia.org/wiki/BSD_licenses#3-clause
 * http://framework.zend.com/license/new-bsd
+* https://spdx.org/licenses/BSD-3-Clause
 
 === OSADL Rule
 
@@ -143,7 +144,8 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         "Revised BSD License",
         "Modified BSD License",
         "New BSD License",
-        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
+        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+        "BSD 3-clause \"New\" or \"Revised\" License"
     ],
     "__impliedId": "BSD-3-Clause",
     "__impliedAmbiguousNames": [
@@ -396,6 +398,24 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     [
                         "SPDX",
                         "https://spdx.org/licenses/BSD-3-Clause.html"
+                    ]
+                ]
+            }
+        },
+        "ifrOSS": {
+            "ifrKind": "IfrNoCopyleft",
+            "ifrURL": "https://spdx.org/licenses/BSD-3-Clause",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "BSD 3-clause \"New\" or \"Revised\" License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "BSD 3-clause \"New\" or \"Revised\" License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/BSD-3-Clause"
                     ]
                 ]
             }
@@ -727,6 +747,10 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         [
             "OSI Page",
             "https://opensource.org/licenses/BSD-3-Clause"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/BSD-3-Clause"
         ]
     ]
 }

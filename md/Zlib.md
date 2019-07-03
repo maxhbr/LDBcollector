@@ -67,6 +67,8 @@ URLs
 
 -   http://www.opensource.org/licenses/Zlib
 
+-   http://www.gzip.org/zlib/zlib\_license.html
+
 OSADL Rule
 ----------
 
@@ -116,7 +118,8 @@ Raw Data
             "The zlib/libpng License (Zlib)",
             "License :: OSI Approved :: zlib/libpng License",
             "zlib/libpng license",
-            "zlib/libpng License"
+            "zlib/libpng License",
+            "Zlib license"
         ],
         "__impliedId": "Zlib",
         "__impliedAmbiguousNames": [
@@ -394,6 +397,24 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/Zlib.html"
+                        ]
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://www.gzip.org/zlib/zlib_license.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Zlib license",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Zlib license"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.gzip.org/zlib/zlib_license.html"
                         ]
                     ]
                 }
@@ -741,6 +762,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Zlib"
+            ],
+            [
+                null,
+                "http://www.gzip.org/zlib/zlib_license.html"
             ]
         ]
     }

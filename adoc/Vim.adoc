@@ -20,6 +20,7 @@ Project Wiki])
 * *Homepage:* http://vimdoc.sourceforge.net/htmldoc/uganda.html
 * *SPDX:* http://spdx.org/licenses/Vim.json
 * http://www.vim.org/docs.php
+* http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license
 
 === Text
 
@@ -255,6 +256,24 @@ Note:
                     ]
                 ]
             }
+        },
+        "ifrOSS": {
+            "ifrKind": "IfrLicenseWithChoice",
+            "ifrURL": "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "Vim License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "Vim License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license"
+                    ]
+                ]
+            }
         }
     },
     "__impliedJudgement": [
@@ -290,6 +309,10 @@ Note:
         [
             null,
             "http://www.vim.org/docs.php"
+        ],
+        [
+            null,
+            "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license"
         ]
     ]
 }

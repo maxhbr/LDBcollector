@@ -158,6 +158,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://people.freebsd.org/~phk/",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Beerware License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Beerware License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://people.freebsd.org/~phk/"
+                        ]
+                    ]
+                }
+            },
             "Wikipedia": {
                 "Distribution": {
                     "value": "Permissive",
@@ -268,6 +286,10 @@ Raw Data
             [
                 "SPDX",
                 "https://spdx.org/licenses/Beerware.html"
+            ],
+            [
+                null,
+                "http://people.freebsd.org/~phk/"
             ]
         ]
     }

@@ -37,6 +37,8 @@ URLs
 
 -   http://www.opensource.org/licenses/RSCPL
 
+-   http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml
+
 Text
 ----
 
@@ -375,6 +377,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrWeakCopyleft_MPLlike",
+                "ifrURL": "http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Ricoh Source Code Public License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Ricoh Source Code Public License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -477,6 +497,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/RSCPL"
+            ],
+            [
+                null,
+                "http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml"
             ]
         ]
     }

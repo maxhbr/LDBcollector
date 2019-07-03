@@ -22,6 +22,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/NLPL.html
 
+-   http://spdx.org/licenses/NLPL
+
 Text
 ----
 
@@ -192,6 +194,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft",
+                "ifrURL": "http://spdx.org/licenses/NLPL",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "No Limit Public License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "No Limit Public License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://spdx.org/licenses/NLPL"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -238,6 +258,10 @@ Raw Data
             [
                 "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/NLPL"
+            ],
+            [
+                null,
+                "http://spdx.org/licenses/NLPL"
             ]
         ]
     }

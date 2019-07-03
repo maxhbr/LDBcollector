@@ -404,6 +404,24 @@
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrWeakCopyleft",
+                "ifrURL": "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "CeCILL-C Free Software License Agreement",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "CeCILL-C Free Software License Agreement"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
+                        ]
+                    ]
+                }
+            },
             "Google OSS Policy": {
                 "rating": "RECIPROCAL",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",

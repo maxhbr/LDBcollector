@@ -30,6 +30,8 @@ URLs
 
 -   http://www.opensource.org/licenses/IPA
 
+-   https://ipafont.ipa.go.jp/old/ipafont/download.html\#en
+
 Text
 ----
 
@@ -304,6 +306,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft",
+                "ifrURL": "https://ipafont.ipa.go.jp/old/ipafont/download.html#en",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "IPA Font License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "IPA Font License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://ipafont.ipa.go.jp/old/ipafont/download.html#en"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -396,6 +416,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/IPA"
+            ],
+            [
+                null,
+                "https://ipafont.ipa.go.jp/old/ipafont/download.html#en"
             ]
         ]
     }

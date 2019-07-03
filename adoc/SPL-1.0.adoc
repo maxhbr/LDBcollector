@@ -29,6 +29,7 @@ https://spdx.org/licenses/SPL-1.0.html[SPDX])
 * *SPDX:* http://spdx.org/licenses/SPL-1.0.json
 * http://www.gnu.org/licenses/license-list.html#SPL
 * http://www.opensource.org/licenses/SPL-1.0
+* http://www.opensource.org/licenses/sunpublic.php
 
 === Text
 
@@ -716,6 +717,24 @@ https://spdx.org/licenses/SPL-1.0.html[SPDX])
                 ]
             }
         },
+        "ifrOSS": {
+            "ifrKind": "IfrWeakCopyleft_MPLlike",
+            "ifrURL": "http://www.opensource.org/licenses/sunpublic.php",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "Sun Public License v1.0",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "Sun Public License v1.0"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://www.opensource.org/licenses/sunpublic.php"
+                    ]
+                ]
+            }
+        },
         "OpenSourceInitiative": {
             "text": [
                 {
@@ -811,6 +830,10 @@ https://spdx.org/licenses/SPL-1.0.html[SPDX])
         [
             "OSI Page",
             "https://opensource.org/licenses/SPL-1.0"
+        ],
+        [
+            null,
+            "http://www.opensource.org/licenses/sunpublic.php"
         ]
     ]
 }

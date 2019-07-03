@@ -23,6 +23,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/xinetd.html
 
+-   https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain
+
 Text
 ----
 
@@ -224,6 +226,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "xinetd License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "xinetd License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -270,6 +290,10 @@ Raw Data
             [
                 "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Xinetd_License"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20080325072754/www.xinetd.org/cgi-bin/cvsweb.cgi/xinetd/COPYRIGHT?rev=1.1.1.1;content-type=text%2Fplain"
             ]
         ]
     }

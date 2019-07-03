@@ -273,6 +273,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://unlicense.org/",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Unlicense",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Unlicense"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://unlicense.org/"
+                        ]
+                    ]
+                }
+            },
             "Wikipedia": {
                 "Distribution": {
                     "value": "Permissive/Public domain",

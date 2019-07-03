@@ -122,6 +122,24 @@
                     ]
                 ]
             }
+        },
+        "ifrOSS": {
+            "ifrKind": "IfrNoCopyleft",
+            "ifrURL": "http://www.sendmail.org/ftp/LICENSE",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "Sendmail License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "Sendmail License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://www.sendmail.org/ftp/LICENSE"
+                    ]
+                ]
+            }
         }
     },
     "__impliedJudgement": [
@@ -157,6 +175,10 @@
         [
             "Homepage",
             "http://www.sendmail.com/"
+        ],
+        [
+            null,
+            "http://www.sendmail.org/ftp/LICENSE"
         ]
     ]
 }

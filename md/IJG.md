@@ -30,6 +30,8 @@ URLs
 
 -   http://www.gnu.org/licenses/license-list.html\#GPLCompatibleLicenses
 
+-   https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG
+
 OSADL Rule
 ----------
 
@@ -314,6 +316,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Independent JPEG Group License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Independent JPEG Group License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -364,6 +384,10 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses"
+            ],
+            [
+                null,
+                "https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG"
             ]
         ]
     }

@@ -227,6 +227,24 @@
                 ]
             }
         },
+        "ifrOSS": {
+            "ifrKind": "IfrNoCopyleft",
+            "ifrURL": "http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "Open Group Test Suite License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "Open Group Test Suite License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt"
+                    ]
+                ]
+            }
+        },
         "OpenSourceInitiative": {
             "text": [
                 {

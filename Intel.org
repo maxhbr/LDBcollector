@@ -317,6 +317,24 @@
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft",
+                "ifrURL": "https://opensource.org/licenses/intel-open-source-license.php",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Intel Open Source License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Intel Open Source License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://opensource.org/licenses/intel-open-source-license.php"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {

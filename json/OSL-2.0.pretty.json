@@ -139,6 +139,24 @@
                 ]
             }
         },
+        "ifrOSS": {
+            "ifrKind": "IfrStrongCopyleft",
+            "ifrURL": "http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "Open Software License 2.0",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "Open Software License 2.0"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html"
+                    ]
+                ]
+            }
+        },
         "Google OSS Policy": {
             "rating": "RESTRICTED",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",

@@ -291,6 +291,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Libpng License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Libpng License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
+                        ]
+                    ]
+                }
+            },
             "finos-osr/OSLC-handbook": {
                 "terms": [
                     {

@@ -30,6 +30,7 @@ https://spdx.org/licenses/Nokia.html[SPDX])
 * *OSI Page:* https://opensource.org/licenses/Nokia
 * *SPDX:* http://spdx.org/licenses/Nokia.json
 * http://www.opensource.org/licenses/nokia
+* http://www.opensource.org/licenses/nokia.php
 
 === Text
 
@@ -616,6 +617,24 @@ Copyright © <year> Nokia and others. All Rights Reserved.
                 ]
             }
         },
+        "ifrOSS": {
+            "ifrKind": "IfrWeakCopyleft_MPLlike",
+            "ifrURL": "http://www.opensource.org/licenses/nokia.php",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "Nokia Open Source License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "Nokia Open Source License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://www.opensource.org/licenses/nokia.php"
+                    ]
+                ]
+            }
+        },
         "OpenSourceInitiative": {
             "text": [
                 {
@@ -718,6 +737,10 @@ Copyright © <year> Nokia and others. All Rights Reserved.
         [
             null,
             "https://opensource.org/licenses/Nokia"
+        ],
+        [
+            null,
+            "http://www.opensource.org/licenses/nokia.php"
         ]
     ]
 }

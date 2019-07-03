@@ -24,6 +24,8 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/VOSTROM
 
+-   http://pwhois.org/license.who
+
 Text
 ----
 
@@ -214,6 +216,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft",
+                "ifrURL": "http://pwhois.org/license.who",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "VOSTROM Public License for Open Source",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "VOSTROM Public License for Open Source"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://pwhois.org/license.who"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -245,6 +265,10 @@ Raw Data
             [
                 "Homepage",
                 "https://fedoraproject.org/wiki/Licensing:VOSTROM?rd=Licensing/VOSTROM"
+            ],
+            [
+                null,
+                "http://pwhois.org/license.who"
             ]
         ]
     }

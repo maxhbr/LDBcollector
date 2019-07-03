@@ -35,6 +35,8 @@ URLs
 
 -   http://www.opensource.org/licenses/Fair
 
+-   https://web.archive.org/web/20040803105645/http://rhid.com/fair
+
 Text
 ----
 
@@ -281,6 +283,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://web.archive.org/web/20040803105645/http://rhid.com/fair",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Fair License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Fair License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20040803105645/http://rhid.com/fair"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -393,6 +413,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Fair"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20040803105645/http://rhid.com/fair"
             ]
         ]
     }

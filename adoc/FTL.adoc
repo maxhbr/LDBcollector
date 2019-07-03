@@ -384,6 +384,24 @@ Legal Terms
                 ]
             }
         },
+        "ifrOSS": {
+            "ifrKind": "IfrNoCopyleft",
+            "ifrURL": "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "FreeType Project License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "FreeType Project License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
+                    ]
+                ]
+            }
+        },
         "Google OSS Policy": {
             "rating": "NOTICE",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",

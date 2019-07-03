@@ -36,6 +36,7 @@ Project Wiki])
 * *OSI Page:* https://opensource.org/licenses/Xnet
 * *SPDX:* http://spdx.org/licenses/Xnet.json
 * *SPDX:* https://spdx.org/licenses/Xnet.html
+* http://www.xnetinc.com/xiua/copyright.htm
 
 === Text
 
@@ -289,6 +290,24 @@ California and by the laws of the United States of America.
                 ]
             }
         },
+        "ifrOSS": {
+            "ifrKind": "IfrNoCopyleft",
+            "ifrURL": "http://www.xnetinc.com/xiua/copyright.htm",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "X.Net License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "X.Net License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://www.xnetinc.com/xiua/copyright.htm"
+                    ]
+                ]
+            }
+        },
         "OpenSourceInitiative": {
             "text": [
                 {
@@ -439,6 +458,10 @@ California and by the laws of the United States of America.
         [
             "OSI Page",
             "https://opensource.org/licenses/Xnet"
+        ],
+        [
+            null,
+            "http://www.xnetinc.com/xiua/copyright.htm"
         ]
     ]
 }

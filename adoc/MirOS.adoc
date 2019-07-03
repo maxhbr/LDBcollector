@@ -36,6 +36,7 @@ License List])
 * *SPDX:* http://spdx.org/licenses/MirOS.json
 * *SPDX:* https://spdx.org/licenses/MirOS.html
 * http://www.opensource.org/licenses/MirOS
+* http://mirbsd.org/MirOS-Licence
 
 === Text
 
@@ -309,6 +310,24 @@ of said person's immediate fault when using the work as intended.
                 ]
             }
         },
+        "ifrOSS": {
+            "ifrKind": "IfrNoCopyleft",
+            "ifrURL": "http://mirbsd.org/MirOS-Licence",
+            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+            "ifrName": "MirOS License",
+            "ifrId": null,
+            "_implications": {
+                "__impliedNames": [
+                    "MirOS License"
+                ],
+                "__impliedURLs": [
+                    [
+                        null,
+                        "http://mirbsd.org/MirOS-Licence"
+                    ]
+                ]
+            }
+        },
         "OpenSourceInitiative": {
             "text": [
                 {
@@ -422,6 +441,10 @@ of said person's immediate fault when using the work as intended.
         [
             "OSI Page",
             "https://opensource.org/licenses/MirOS"
+        ],
+        [
+            null,
+            "http://mirbsd.org/MirOS-Licence"
         ]
     ]
 }

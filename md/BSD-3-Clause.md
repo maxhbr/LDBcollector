@@ -77,6 +77,8 @@ URLs
 
 -   http://framework.zend.com/license/new-bsd
 
+-   https://spdx.org/licenses/BSD-3-Clause
+
 OSADL Rule
 ----------
 
@@ -137,7 +139,8 @@ Raw Data
             "Revised BSD License",
             "Modified BSD License",
             "New BSD License",
-            "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
+            "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+            "BSD 3-clause \"New\" or \"Revised\" License"
         ],
         "__impliedId": "BSD-3-Clause",
         "__impliedAmbiguousNames": [
@@ -390,6 +393,24 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/BSD-3-Clause.html"
+                        ]
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://spdx.org/licenses/BSD-3-Clause",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "BSD 3-clause \"New\" or \"Revised\" License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 3-clause \"New\" or \"Revised\" License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/BSD-3-Clause"
                         ]
                     ]
                 }
@@ -721,6 +742,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/BSD-3-Clause"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/BSD-3-Clause"
             ]
         ]
     }

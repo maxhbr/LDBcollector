@@ -26,6 +26,9 @@ URLs
 
 -   http://www.opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE\_LICENSE
 
+-   https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE\_LICENSE
+    (Einordnung unklar)
+
 ------------------------------------------------------------------------
 
 Raw Data
@@ -139,6 +142,24 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "APSL-1.1"
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrLicenseWithSpecialRights",
+                "ifrURL": "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE (Einordnung unklar)",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Apple Public Source License 1.1",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Apple Public Source License 1.1"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE (Einordnung unklar)"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -172,6 +193,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE"
+            ],
+            [
+                null,
+                "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE (Einordnung unklar)"
             ]
         ]
     }

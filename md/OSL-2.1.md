@@ -248,6 +248,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft",
+                "ifrURL": "http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Open Software License 2.1",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Software License 2.1"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {

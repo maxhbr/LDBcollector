@@ -40,6 +40,8 @@ URLs
 
 -   http://www.xfree86.org/3.3.6/COPYRIGHT2.html\#3
 
+-   https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
+
 OSADL Rule
 ----------
 
@@ -235,6 +237,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "ICU License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "ICU License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -294,6 +314,10 @@ Raw Data
             [
                 "Homepage",
                 "http://www.xfree86.org/current/LICENSE5.html"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html"
             ]
         ]
     }

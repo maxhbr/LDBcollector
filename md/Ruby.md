@@ -27,6 +27,8 @@ URLs
 
 -   https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING
 
+-   http://www.ruby-lang.org/en/about/license.txt
+
 Text
 ----
 
@@ -244,6 +246,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://www.ruby-lang.org/en/LICENSE.txt",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Ruby License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Ruby License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.ruby-lang.org/en/LICENSE.txt"
+                        ]
+                    ]
+                }
+            },
             "Google OSS Policy": {
                 "rating": "RECIPROCAL",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -319,6 +339,10 @@ Raw Data
             [
                 null,
                 "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
+            ],
+            [
+                null,
+                "http://www.ruby-lang.org/en/about/license.txt"
             ]
         ]
     }

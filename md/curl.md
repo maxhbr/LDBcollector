@@ -22,6 +22,8 @@ URLs
 
 -   http://curl.haxx.se/legal/licmix.html
 
+-   https://github.com/curl/curl/blob/master/COPYING
+
 OSADL Rule
 ----------
 
@@ -60,7 +62,8 @@ Raw Data
         "__impliedNames": [
             "curl",
             "curl License",
-            "cURL License"
+            "cURL License",
+            "Curl License"
         ],
         "__impliedId": "curl",
         "facts": {
@@ -200,6 +203,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://github.com/curl/curl/blob/master/COPYING",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Curl License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Curl License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://github.com/curl/curl/blob/master/COPYING"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -243,6 +264,10 @@ Raw Data
             [
                 null,
                 "http://curl.haxx.se/legal/licmix.html"
+            ],
+            [
+                null,
+                "https://github.com/curl/curl/blob/master/COPYING"
             ]
         ]
     }

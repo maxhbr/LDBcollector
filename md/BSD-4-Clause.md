@@ -38,6 +38,8 @@ URLs
 
 -   http://www.gnu.org/philosophy/bsd.html
 
+-   https://www.freebsd.org/copyright/license.html
+
 OSADL Rule
 ----------
 
@@ -98,7 +100,8 @@ Raw Data
             "BSD-4-Clause",
             "BSD 4-Clause \"Original\" or \"Old\" License",
             "bsd-original",
-            "BSD-Original"
+            "BSD-Original",
+            "BSD 4-clause \"Original\" or \"Old\" License"
         ],
         "__impliedId": "BSD-4-Clause",
         "__impliedRatingState": [
@@ -312,6 +315,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://www.freebsd.org/copyright/license.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "BSD 4-clause \"Original\" or \"Old\" License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 4-clause \"Original\" or \"Old\" License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://www.freebsd.org/copyright/license.html"
+                        ]
+                    ]
+                }
+            },
             "finos-osr/OSLC-handbook": {
                 "terms": [
                     {
@@ -454,6 +475,10 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/philosophy/bsd.html"
+            ],
+            [
+                null,
+                "https://www.freebsd.org/copyright/license.html"
             ]
         ]
     }

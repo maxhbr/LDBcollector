@@ -34,6 +34,8 @@ URLs
 
 -   http://www.opensource.org/licenses/SPL-1.0
 
+-   http://www.opensource.org/licenses/sunpublic.php
+
 Text
 ----
 
@@ -719,6 +721,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrWeakCopyleft_MPLlike",
+                "ifrURL": "http://www.opensource.org/licenses/sunpublic.php",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Sun Public License v1.0",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Sun Public License v1.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/sunpublic.php"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -814,6 +834,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/SPL-1.0"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/sunpublic.php"
             ]
         ]
     }

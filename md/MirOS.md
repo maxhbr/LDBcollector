@@ -44,6 +44,8 @@ URLs
 
 -   http://www.opensource.org/licenses/MirOS
 
+-   http://mirbsd.org/MirOS-Licence
+
 Text
 ----
 
@@ -315,6 +317,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://mirbsd.org/MirOS-Licence",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "MirOS License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "MirOS License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://mirbsd.org/MirOS-Licence"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -428,6 +448,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/MirOS"
+            ],
+            [
+                null,
+                "http://mirbsd.org/MirOS-Licence"
             ]
         ]
     }

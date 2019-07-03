@@ -152,6 +152,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "FSF Unlimited License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "FSF Unlimited License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [

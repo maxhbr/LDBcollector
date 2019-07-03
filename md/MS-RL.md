@@ -7,6 +7,8 @@ Microsoft Reciprocal License (MS-RL)
 
 -   `Microsoft Reciprocal License (MS-RL)`
 
+-   `Microsoft Reciprocal License (Ms-RL)`
+
 Description
 -----------
 
@@ -52,6 +54,8 @@ URLs
 -   http://www.microsoft.com/en-us/openness/licenses.aspx\#MRL
 
 -   http://www.opensource.org/licenses/MS-RL
+
+-   https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx
 
 OSADL Rule
 ----------
@@ -121,7 +125,8 @@ Raw Data
             "MS-RL",
             "Microsoft Reciprocal License",
             "ms-rl",
-            "Microsoft Reciprocal License (MS-RL)"
+            "Microsoft Reciprocal License (MS-RL)",
+            "Microsoft Reciprocal License (Ms-RL)"
         ],
         "__impliedId": "MS-RL",
         "__hasPatentHint": true,
@@ -330,6 +335,24 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "MS-RL"
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrWeakCopyleft",
+                "ifrURL": "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Microsoft Reciprocal License (Ms-RL)",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Microsoft Reciprocal License (Ms-RL)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx"
+                        ]
                     ]
                 }
             },
@@ -566,6 +589,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/MS-RL"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx"
             ]
         ]
     }

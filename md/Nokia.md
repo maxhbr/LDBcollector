@@ -34,6 +34,8 @@ URLs
 
 -   http://www.opensource.org/licenses/nokia
 
+-   http://www.opensource.org/licenses/nokia.php
+
 Text
 ----
 
@@ -618,6 +620,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrWeakCopyleft_MPLlike",
+                "ifrURL": "http://www.opensource.org/licenses/nokia.php",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Nokia Open Source License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Nokia Open Source License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/nokia.php"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -720,6 +740,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/Nokia"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/nokia.php"
             ]
         ]
     }

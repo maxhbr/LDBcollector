@@ -74,6 +74,8 @@ URLs
 
 -   **tl;dr legal:** https://tldrlegal.com/license/mit-license
 
+-   https://spdx.org/licenses/MIT.html\#licenseText
+
 OSADL Rule
 ----------
 
@@ -354,6 +356,24 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/MIT.html"
+                        ]
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://spdx.org/licenses/MIT.html#licenseText",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "MIT License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/MIT.html#licenseText"
                         ]
                     ]
                 }
@@ -768,6 +788,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/mit"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/MIT.html#licenseText"
             ]
         ]
     }

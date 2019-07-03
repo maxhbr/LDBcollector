@@ -51,6 +51,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/PostgreSQL.html
 
+-   https://www.postgresql.org/about/licence/
+
 Text
 ----
 
@@ -293,6 +295,24 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/PostgreSQL.html"
+                        ]
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://www.postgresql.org/about/licence/",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "PostgreSQL License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "PostgreSQL License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://www.postgresql.org/about/licence/"
                         ]
                     ]
                 }
@@ -549,6 +569,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/PostgreSQL"
+            ],
+            [
+                null,
+                "https://www.postgresql.org/about/licence/"
             ]
         ]
     }

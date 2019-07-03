@@ -7,6 +7,8 @@ Microsoft Public License (MS-PL)
 
 -   `Microsoft Public License (MS-PL)`
 
+-   `Microsoft Public License (Ms-PL)`
+
 Description
 -----------
 
@@ -58,6 +60,9 @@ URLs
 
 -   http://www.opensource.org/licenses/MS-PL
 
+-   https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx
+    (Einordnung unklar)
+
 OSADL Rule
 ----------
 
@@ -107,7 +112,8 @@ Raw Data
             "Microsoft Public License",
             "ms-pl",
             "Microsoft Public License (MS-PL)",
-            "Ms-PL"
+            "Ms-PL",
+            "Microsoft Public License (Ms-PL)"
         ],
         "__impliedId": "MS-PL",
         "__hasPatentHint": true,
@@ -352,6 +358,24 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/MS-PL.html"
+                        ]
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Microsoft Public License (Ms-PL)",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Microsoft Public License (Ms-PL)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)"
                         ]
                     ]
                 }
@@ -728,6 +752,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/MS-PL"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)"
             ]
         ]
     }

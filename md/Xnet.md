@@ -39,6 +39,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/Xnet.html
 
+-   http://www.xnetinc.com/xiua/copyright.htm
+
 Text
 ----
 
@@ -290,6 +292,24 @@ Raw Data
                     ]
                 }
             },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "http://www.xnetinc.com/xiua/copyright.htm",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "X.Net License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "X.Net License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.xnetinc.com/xiua/copyright.htm"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -440,6 +460,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Xnet"
+            ],
+            [
+                null,
+                "http://www.xnetinc.com/xiua/copyright.htm"
             ]
         ]
     }

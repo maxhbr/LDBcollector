@@ -31,6 +31,8 @@ URLs
 
 -   http://www.opensource.org/licenses/sleepycat.php
 
+-   https://fedoraproject.org/wiki/Licensing/Sleepycat
+
 Text
 ----
 
@@ -253,6 +255,24 @@ Raw Data
                 "oJudgement": null,
                 "oRatingState": null
             },
+            "ifrOSS": {
+                "ifrKind": "IfrLicenseWithChoice",
+                "ifrURL": "https://fedoraproject.org/wiki/Licensing/Sleepycat",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Sleepycat License",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Sleepycat License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://fedoraproject.org/wiki/Licensing/Sleepycat"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -417,6 +437,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Sleepycat"
+            ],
+            [
+                null,
+                "https://fedoraproject.org/wiki/Licensing/Sleepycat"
             ]
         ]
     }
