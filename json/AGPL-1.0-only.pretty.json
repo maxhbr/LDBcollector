@@ -47,6 +47,23 @@
                 ]
             },
             "spdxLicenseId": "AGPL-1.0-only"
+        },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "AGPL-1.0-only"
+                ],
+                "__impliedId": "AGPL-1.0-only"
+            },
+            "oName": "AGPL-1.0-only",
+            "oOtherLicenseIds": [
+                "AGPL-1.0",
+                "Affero General Public License (v. 1)"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oRatingState": null
         }
     },
     "__impliedURLs": [

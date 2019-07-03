@@ -253,7 +253,9 @@ Raw Data
                     "AGPL-3.0+",
                     "AGPL3.0+",
                     "AGPL3+",
-                    "AGPL (v3 or later)"
+                    "AGPL (v3 or later)",
+                    "Affero General Public License 3.0 or later",
+                    "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
                 ],
                 "oDescription": null,
                 "oJudgement": null,
