@@ -14,13 +14,13 @@ The generated output is pushed to the branch [`generated`](https://github.com/ma
 
 ## Consumed Data (implemented)
 ### SPDX license List
-The data is placed in `/data/json/` and it contains the content of the folder `/json/` from [https://github.com/spdx/license-list-data].
+The data is placed in `/data/json/` and it contains the content of the folder `/json/` from https://github.com/spdx/license-list-data.
 
 ### OSI license List
 The OSI license list is imported via the `opensource` haskell package.
 
 ### Scancode license List
-The scancode data is placed in `/data/scancode/` and contains the content of the folder `/src/licensedcode/data/licenses/**` from [https://github.com/nexB/scancode-toolkit**.
+The scancode data is placed in `/data/scancode/` and contains the content of the folder `/src/licensedcode/data/licenses/**` from https://github.com/nexB/scancode-toolkit.
 
 **licensed under:** cc0-1.0
 
@@ -35,10 +35,10 @@ e.g.
 - https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-2.0-only.txt
 - https://www.osadl.org/fileadmin/checklists/actions/Forward.txt
 - https://www.osadl.org/fileadmin/checklists/actions/ACTION.txt
-The complete list can be found at: https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html
+The complete list can be found at: [https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html]
 
 ### ChooseALicense.com licenses
-The folder `/data/choosalicense` contains the conten of the folder `/_licenses/` from [https://github.com/github/choosealicense.com**.
+The folder `/data/choosalicense` contains the conten of the folder `/_licenses/` from https://github.com/github/choosealicense.com.
 
 **licensed under:** MIT
 
@@ -48,18 +48,18 @@ The license list can be pulled from https://blueoakcouncil.org/list.json, and is
 **licensed under:** CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
 ### Fedora Project Wiki
-The Fedora Project has in its wiki a list of licenses which are rated **good** or **bad** on [https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing].
+The Fedora Project has in its wiki a list of licenses which are rated **good** or **bad** on https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing.
 These lists are extracted to csv files in `/data/Fedora_Project_Wiki/`.
 
 #### TODO: the Fedora project also has notes regarding to licenses
 - e.g. https://fedoraproject.org/wiki/Licensing/Sleepycat
 
 ### Open Chain Policy Template
-The open chain project published an example policy as a spreadsheet on [https://www.openchainproject.org/news/2019/01/17/openchain-open-source-policy-template-now-available].
+The open chain project published an example policy as a spreadsheet on [openchain-open-source-policy-template-now-available](https://www.openchainproject.org/news/2019/01/17/openchain-open-source-policy-template-now-available).
 From the spreadsheet page "Example Appendix 1 - Unofficial License Grid used by UK Entity" one can extract the license list into a CSV file
 
 ### OSLC-Handbook
-[OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src**
+[OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src)
 
 The fixed data can be found at https://github.com/maxhbr/OSLC-handbook/
 
