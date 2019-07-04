@@ -65,9 +65,9 @@ writeListOfDetailsToFile csv detailss = let
     bs = C.encodeByName (V.fromList ["Fullname","Shortname","Rating","Copyleft","HasPatentHint", "IsNonCommercial"]) detailss
   in BL.writeFile csv bs
 
-calculateDetails :: License -> LicenseName -> LicenseName -> LicenseDetails
-calculateDetails lic shortname fullname = let
-    rating = applyDefaultRatingRules lic
+calculateDetails :: RatingRules -> License -> LicenseName -> LicenseName -> LicenseDetails
+calculateDetails ratingRules lic shortname fullname = let
+    rating = applyRatingRules ratingRules lic
     copyleft = getCalculatedCopyleft lic
     patent = unpackRLSR (getHasPatentnHint lic)
     nonCommercial = unpackRLSR (getImpliedNonCommercial lic)
@@ -177,12 +177,12 @@ renderRawData lic = P.horizontalRule
                     <> P.header 2 (P.text "Raw Data")
                     <> P.codeBlock (unpack (encodePretty lic))
 
-licenseToPandoc :: (LicenseName, License) -> (Pandoc, LicenseDetails)
-licenseToPandoc (licName, lic) = let
+licenseToPandoc :: RatingRules -> (LicenseName, License) -> (Pandoc, LicenseDetails)
+licenseToPandoc ratingRules (licName, lic) = let
     shortname = fromMaybe "" . unpackRLSR $ getImpliedId lic
     fullname = fromMaybe licName . unpackRLSR $ getImpliedFullName lic
     headerLine = fullname ++ " (" ++ shortname ++ ")"
-    details = calculateDetails lic shortname fullname
+    details = calculateDetails ratingRules lic shortname fullname
   in ( P.doc $ P.header 1 (P.text headerLine)
             <> renderDetails details
             <> renderDescription lic
@@ -194,9 +194,9 @@ licenseToPandoc (licName, lic) = let
             <> renderRawData lic
      , details)
 
-writePandoc :: FilePath -> (LicenseName, License) -> IO LicenseDetails
-writePandoc outDirectory (licName, lic) = let
-    (pandoc, details) = licenseToPandoc (licName, lic)
+writePandoc :: RatingRules -> FilePath -> (LicenseName, License) -> IO LicenseDetails
+writePandoc ratingRules outDirectory (licName, lic) = let
+    (pandoc, details) = licenseToPandoc ratingRules (licName, lic)
     createDirectoryIfNotExists folder = do
       dirExists <- doesDirectoryExist folder
       unless dirExists $
@@ -226,7 +226,7 @@ writePandoc outDirectory (licName, lic) = let
 
     return details
 
-writePandocs :: FilePath -> [(LicenseName, License)] -> IO ()
-writePandocs outDirectory lics = do
-  detailss <- mapM (writePandoc outDirectory) lics
+writePandocs :: RatingRules -> FilePath -> [(LicenseName, License)] -> IO ()
+writePandocs ratingRules outDirectory lics = do
+  detailss <- mapM (writePandoc ratingRules outDirectory) lics
   writeListOfDetailsToFile (outDirectory </> "index.csv") detailss

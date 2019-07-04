@@ -1,8 +1,9 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
 module Processors.Rating
-    ( ratingRules
-    , applyRatingRules, applyDefaultRatingRules
+    ( applyRatingRules
+    , RatingRule(..), RatingRules
+    , removeRatingFromState, setRatingOfState, setRatingOfStateIfPossible
     ) where
 
 import qualified Prelude as P
@@ -58,8 +59,9 @@ data RatingRule
   }
 instance Show RatingRule where
   show (RatingRule desc _) = T.unpack desc
+type RatingRules = [RatingRule]
 
-applyRatingRules :: [RatingRule] -> License -> Rating
+applyRatingRules :: RatingRules -> License -> Rating
 applyRatingRules rrls l = let
 
     initialReportRatingState :: RatingState
@@ -69,57 +71,3 @@ applyRatingRules rrls l = let
       m -> M.foldr mergeRaitingStates initialReportRatingState m -- pessimistic merging
 
   in ratingFromRatingState $ foldl' (\oldS rrf -> rrf l oldS) initialImpliedRatingState (map rrFunction rrls)
-
-applyDefaultRatingRules :: License -> Rating
-applyDefaultRatingRules = applyRatingRules ratingRules
-
-ratingRules :: [RatingRule]
-ratingRules = let
-    addRule desc fun = tell . (:[]) $ RatingRule desc fun
-
-    hasPossitiveJudgements l = let
-        fun b j = b || (case j of
-                          PositiveJudgement _ -> True
-                          _ -> False)
-      in M.foldl' fun False . unpackSLSR $ getImpliedJudgement l
-    hasNegativeJudgements l = let
-        fun b j = b || (case j of
-                          NegativeJudgement _ -> True
-                          _ -> False)
-      in M.foldl' fun False . unpackSLSR $ getImpliedJudgement l
-
-  in execWriter $ do
-
-    addRule "NonComercial is a no-go" $ \l ->
-      case unpackRLSR (getImpliedNonCommercial l) of
-        Just True -> setRatingOfState RNoGo
-        _         -> id
-
-    addRule "should have at least one positive and no negative rating to be Go" $ \l ->
-      if hasPossitiveJudgements l && not (hasNegativeJudgements l)
-      then id
-      else removeRatingFromState RGo
-
-    addRule "only known NonCopyleft Licenses can be go" $ \l ->
-      case getCalculatedCopyleft l of
-        Just NoCopyleft -> id
-        _ -> removeRatingFromState RGo
-
-    addRule "Fedora bad Rating implies at least Stop" $ \l ->
-      case M.lookup blueOakLFC (unpackSLSR $ getImpliedJudgement l) of
-        Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAttention
-        _                          -> id
-
-    addRule "only SPDX licenses can be better than Stop" $ \l ->
-      if l `containsFactOfClass` spdxLFC
-      then id
-      else removeRatingFromState RGo . removeRatingFromState RAttention
-
-    addRule "possitive Rating by BlueOak helps, and if no other rating is negative it implies Go" $ \l ->
-      case M.lookup blueOakLFC (unpackSLSR $ getImpliedJudgement l) of
-        Just (PositiveJudgement _) -> if hasNegativeJudgements l
-                                      then removeRatingFromState RNoGo . removeRatingFromState RStop
-                                      else setRatingOfStateIfPossible RGo
-        Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAttention
-        _                          -> id
-

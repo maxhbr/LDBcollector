@@ -4,6 +4,7 @@ module Lib
   , readFacts
   , calculateLicenses, calculateSPDXLicenses
   , writeLicenseJSONs
+  , Configuration (..)
   ) where
 
 import qualified Prelude as P
@@ -39,8 +40,16 @@ import           Processors.Rating as X
 
 import           Generators.PandocWriter as X
 
-readFacts :: FilePath -> IO Facts
-readFacts dataDir = let
+data Configuration
+  = Configuration
+  { cRatingRules  :: RatingRules
+  , cOverrides    :: [Override]
+  , cBaseDataPath :: FilePath
+  }
+
+readFacts :: Configuration -> IO Facts
+readFacts conf = let
+    dataDir = cBaseDataPath conf
     prependDataDir = (dataDir </>)
   in do
     factsFromSPDX <- loadSPDXFacts $ prependDataDir "./spdx-license-list-data/"
@@ -58,7 +67,7 @@ readFacts dataDir = let
     factsFromGnu <- loadGnuFacts $ prependDataDir "./gnu.org"
     factsFromDFSG <- loadDFSGFacts
     factsFromIfrOSS <- loadIfrOSSFacts
-    factsFromOverride <- loadOverrideFacts
+    factsFromOverride <- loadOverrideFacts (cOverrides conf)
     let facts = V.concat [ factsFromSPDX
                          , factsFromBlueOak
                          , factsFromOCPT
