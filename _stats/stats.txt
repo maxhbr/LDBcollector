@@ -38,3 +38,4 @@ Number of facts: 2121
     finos-osr/OSLC-handbook: 55
     ifrOSS: 57
 Number of clusters: 362
+Number of clusters: 360
