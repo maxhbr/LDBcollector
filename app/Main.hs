@@ -34,7 +34,9 @@ echoStatsOnLicenses handle statsFolder lics = do
   hPutStrLn handle ("Number of Licenses: " ++ show (length lics))
   let fsOfLics = (concatMap (\(_,License fs) ->  V.toList fs) lics)
   echoStatsOnFacts handle fsOfLics
+  hPutStrLn handle "#### based on facts from licenses"
   writeClusters handle (statsFolder </> "clusters_from_fatcs_from_lics.csv") (V.fromList fsOfLics)
+  hPutStrLn handle "#### based on licenses"
   writeClustersFromLicenses handle (statsFolder </> "clusters_from_lics.csv") lics
 
 writeStats :: FilePath -> Facts -> [(LicenseName, License)] -> IO ()

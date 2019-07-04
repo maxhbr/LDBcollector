@@ -65,7 +65,7 @@ The fixed data can be found at https://github.com/maxhbr/OSLC-handbook/
 
 **Licensed unnder:** CC-BY-SA-4.0
 
-### google:
+### Google Open Source Policy:
 https://opensource.google.com/docs/thirdparty/licenses/
 
 they classify licenses into: 
