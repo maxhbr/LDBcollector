@@ -9,6 +9,12 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 -   `GPL 1.0 or later`
 
+-   `GPL-1.0+`
+
+-   `GPL1.0+`
+
+-   `GPL1+`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -52,7 +58,10 @@ Raw Data
             "GPL-1.0-or-later",
             "GNU General Public License v1.0 or later",
             "gpl-1.0-plus",
-            "GPL 1.0 or later"
+            "GPL 1.0 or later",
+            "GPL-1.0+",
+            "GPL1.0+",
+            "GPL1+"
         ],
         "__impliedId": "GPL-1.0-or-later",
         "__impliedAmbiguousNames": [
@@ -66,7 +75,10 @@ Raw Data
                         "GPL-1.0-or-later",
                         "GNU General Public License v1.0 or later",
                         "gpl-1.0-plus",
-                        "GPL 1.0 or later"
+                        "GPL 1.0 or later",
+                        "GPL-1.0+",
+                        "GPL1.0+",
+                        "GPL1+"
                     ],
                     "__impliedId": "GPL-1.0-or-later"
                 },
@@ -75,7 +87,10 @@ Raw Data
                     "GPL-1.0-or-later",
                     "GNU General Public License v1.0 or later",
                     "gpl-1.0-plus",
-                    "GPL 1.0 or later"
+                    "GPL 1.0 or later",
+                    "GPL-1.0+",
+                    "GPL1.0+",
+                    "GPL1+"
                 ]
             },
             "SPDX": {
@@ -201,7 +216,10 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "GPL-1.0-or-later"
+                        "GPL-1.0-or-later",
+                        "GPL-1.0+",
+                        "GPL1.0+",
+                        "GPL1+"
                     ],
                     "__impliedId": "GPL-1.0-or-later"
                 },

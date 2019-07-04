@@ -7,10 +7,10 @@ Academic Free License v1.2,AFL-1.2,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Academic Free License v2.0,AFL-2.0,Go,NoCopyleft,True,UNDEFINED
 Academic Free License v2.1,AFL-2.1,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Academic Free License v3.0,AFL-3.0,Go,NoCopyleft,UNDEFINED,UNDEFINED
-Affero General Public License v1.0 only,AGPL-1.0-only,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
+Affero General Public License v1.0 only,AGPL-1.0-only,"Unknown, probably Attention or Stop or No-Go",StrongCopyleft,UNDEFINED,UNDEFINED
 Affero General Public License v1.0 or later,AGPL-1.0-or-later,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
 GNU Affero General Public License v3.0 only,AGPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
-GNU Affero General Public License v3.0 or later,AGPL-3.0-or-later,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
+GNU Affero General Public License v3.0 or later,AGPL-3.0-or-later,"Unknown, probably Attention or Stop or No-Go",StrongCopyleft,True,UNDEFINED
 AMD's plpa_map.c License,AMDPLPA,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Apple MIT License,AML,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Academy of Motion Picture Arts and Sciences BSD,AMPAS,Go,NoCopyleft,UNDEFINED,UNDEFINED
@@ -32,7 +32,7 @@ Apache License 2.0,Apache-2.0,Go,NoCopyleft,True,UNDEFINED
 Artistic License 1.0,Artistic-1.0,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Artistic License 1.0 (Perl),Artistic-1.0-Perl,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Artistic License 1.0 w/clause 8,Artistic-1.0-cl8,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
-Artistic License 2.0,Artistic-2.0,Go,NoCopyleft,UNDEFINED,UNDEFINED
+Artistic License 2.0,Artistic-2.0,"Unknown, probably Attention or Stop or No-Go",MaybeCopyleft,UNDEFINED,UNDEFINED
 BSD 1-Clause License,BSD-1-Clause,Go,NoCopyleft,UNDEFINED,UNDEFINED
 "BSD 2-Clause ""Simplified"" License",BSD-2-Clause,Go,NoCopyleft,UNDEFINED,UNDEFINED
 BSD 2-Clause FreeBSD License,BSD-2-Clause-FreeBSD,Go,NoCopyleft,UNDEFINED,UNDEFINED
@@ -178,7 +178,7 @@ GNU Library General Public License v2 or later,LGPL-2.0-or-later,"Unknown, proba
 GNU Lesser General Public License v2.1 only,LGPL-2.1-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
 GNU Lesser General Public License v2.1 or later,LGPL-2.1-or-later,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
 GNU Lesser General Public License v3.0 only,LGPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
-GNU Lesser General Public License v3.0 or later,LGPL-3.0-or-later,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
+GNU Lesser General Public License v3.0 or later,LGPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
 Lesser General Public License For Linguistic Resources,LGPLLR,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Lucent Public License Version 1.0,LPL-1.0,"Unknown, probably Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Lucent Public License v1.02,LPL-1.02,"Unknown, probably Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED

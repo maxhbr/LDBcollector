@@ -9,11 +9,17 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 -   `BSD-Original`
 
+-   `BSD License (original)`
+
 Comments on (easy) usability
 ----------------------------
 
 -   **↑** Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑** This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   **↑** Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
@@ -110,6 +116,7 @@ Raw Data
             "BSD 4-Clause \"Original\" or \"Old\" License",
             "bsd-original",
             "BSD-Original",
+            "BSD License (original)",
             "BSD 4-clause \"Original\" or \"Old\" License"
         ],
         "__impliedId": "BSD-4-Clause",
@@ -135,7 +142,8 @@ Raw Data
                         "BSD-4-Clause",
                         "BSD 4-Clause \"Original\" or \"Old\" License",
                         "bsd-original",
-                        "BSD-Original"
+                        "BSD-Original",
+                        "BSD License (original)"
                     ],
                     "__impliedId": "BSD-4-Clause"
                 },
@@ -144,7 +152,8 @@ Raw Data
                     "BSD-4-Clause",
                     "BSD 4-Clause \"Original\" or \"Old\" License",
                     "bsd-original",
-                    "BSD-Original"
+                    "BSD-Original",
+                    "BSD License (original)"
                 ]
             },
             "SPDX": {
@@ -182,6 +191,31 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "BSD-4-Clause"
+                    ]
+                }
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#BSDwithAdvertising",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "BSD with advertising",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "BSD License (original)",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD License (original)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
                     ]
                 }
             },
@@ -439,6 +473,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

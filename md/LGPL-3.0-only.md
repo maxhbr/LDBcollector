@@ -13,6 +13,16 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 
 -   `LGPL-3.0`
 
+-   `LGPL-3`
+
+-   `LGPL3.0`
+
+-   `LGPL3`
+
+-   `LGPL (v3.0)`
+
+-   `LGPL (v3)`
+
 -   `GNU LGPLv3`
 
 -   `GNU Lesser General Public License, Version 3.0`
@@ -22,6 +32,14 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 -   `License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)`
 
 -   `LGPL-3.0-or-later`
+
+-   `LGPL-3.0+`
+
+-   `LGPL-3+`
+
+-   `LGPL3.0+`
+
+-   `LGPL (v3 or later)`
 
 Description
 -----------
@@ -351,11 +369,20 @@ Raw Data
             "LGPL 3.0",
             "GNU Lesser General Public License 3.0",
             "LGPL-3.0",
+            "LGPL-3",
+            "LGPL3.0",
+            "LGPL3",
+            "LGPL (v3.0)",
+            "LGPL (v3)",
             "GNU LGPLv3",
             "GNU Lesser General Public License, Version 3.0",
             "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
             "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
-            "LGPL-3.0-or-later"
+            "LGPL-3.0-or-later",
+            "LGPL-3.0+",
+            "LGPL-3+",
+            "LGPL3.0+",
+            "LGPL (v3 or later)"
         ],
         "__impliedId": "LGPL-3.0-only",
         "__impliedAmbiguousNames": [
@@ -398,7 +425,13 @@ Raw Data
                         "GNU Lesser General Public License v3.0 only",
                         "lgpl-3.0",
                         "LGPL 3.0",
-                        "GNU Lesser General Public License 3.0"
+                        "GNU Lesser General Public License 3.0",
+                        "LGPL-3.0",
+                        "LGPL-3",
+                        "LGPL3.0",
+                        "LGPL3",
+                        "LGPL (v3.0)",
+                        "LGPL (v3)"
                     ],
                     "__impliedId": "LGPL-3.0-only"
                 },
@@ -408,7 +441,13 @@ Raw Data
                     "GNU Lesser General Public License v3.0 only",
                     "lgpl-3.0",
                     "LGPL 3.0",
-                    "GNU Lesser General Public License 3.0"
+                    "GNU Lesser General Public License 3.0",
+                    "LGPL-3.0",
+                    "LGPL-3",
+                    "LGPL3.0",
+                    "LGPL3",
+                    "LGPL (v3.0)",
+                    "LGPL (v3)"
                 ]
             },
             "SPDX": {
@@ -605,7 +644,13 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "LGPL-3.0-only"
+                        "LGPL-3.0-only",
+                        "LGPL-3.0",
+                        "LGPL-3",
+                        "LGPL3.0",
+                        "LGPL3",
+                        "LGPL (v3.0)",
+                        "LGPL (v3)"
                     ],
                     "__impliedId": "LGPL-3.0-only"
                 },

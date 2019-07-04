@@ -13,6 +13,8 @@
 
 * `Business Source License 1.0`
 * `Boost Software License 1.0 (BSL-1.0)`
+* `BSL (v1.0)`
+* `BSL (v1)`
 
 === Description
 
@@ -129,7 +131,9 @@ TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE AND ALL SERVICES PROVIDE
         "Boost Software License 1.0",
         "bsl-1.0",
         "Business Source License 1.0",
-        "Boost Software License 1.0 (BSL-1.0)"
+        "Boost Software License 1.0 (BSL-1.0)",
+        "BSL (v1.0)",
+        "BSL (v1)"
     ],
     "__impliedId": "BSL-1.0",
     "facts": {
@@ -168,7 +172,9 @@ TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE AND ALL SERVICES PROVIDE
                     "Boost Software License 1.0",
                     "bsl-1.0",
                     "Business Source License 1.0",
-                    "Boost Software License 1.0 (BSL-1.0)"
+                    "Boost Software License 1.0 (BSL-1.0)",
+                    "BSL (v1.0)",
+                    "BSL (v1)"
                 ],
                 "__impliedId": "BSL-1.0"
             },
@@ -178,7 +184,9 @@ TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE AND ALL SERVICES PROVIDE
                 "Boost Software License 1.0",
                 "bsl-1.0",
                 "Business Source License 1.0",
-                "Boost Software License 1.0 (BSL-1.0)"
+                "Boost Software License 1.0 (BSL-1.0)",
+                "BSL (v1.0)",
+                "BSL (v1)"
             ]
         },
         "SPDX": {
@@ -297,7 +305,8 @@ TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE AND ALL SERVICES PROVIDE
             "oNonCommecrial": null,
             "implications": {
                 "__impliedNames": [
-                    "BSL-1.0"
+                    "BSL-1.0",
+                    "BSL (v1.0)"
                 ],
                 "__impliedId": "BSL-1.0"
             },

@@ -13,6 +13,8 @@ MIT License (MIT)
 
 -   `MIT license / X11 license`
 
+-   `MIT license (also X11)`
+
 Description
 -----------
 
@@ -34,6 +36,10 @@ Comments on (easy) usability
     client, does not follow the DFSG. See the
     DebianFreeSoftwareGuidelinesDraftFAQ. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+-   **↑** This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   **↑** Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
@@ -127,7 +133,8 @@ Raw Data
             "MIT/Expat License",
             "Expat",
             "License :: OSI Approved :: MIT License",
-            "MIT license / X11 license"
+            "MIT license / X11 license",
+            "MIT license (also X11)"
         ],
         "__impliedId": "MIT",
         "__impliedAmbiguousNames": [
@@ -171,7 +178,8 @@ Raw Data
                         "MIT/Expat License",
                         "Expat",
                         "License :: OSI Approved :: MIT License",
-                        "MIT license / X11 license"
+                        "MIT license / X11 license",
+                        "MIT license (also X11)"
                     ],
                     "__impliedId": "MIT"
                 },
@@ -183,7 +191,8 @@ Raw Data
                     "MIT/Expat License",
                     "Expat",
                     "License :: OSI Approved :: MIT License",
-                    "MIT license / X11 license"
+                    "MIT license / X11 license",
+                    "MIT license (also X11)"
                 ]
             },
             "SPDX": {
@@ -230,6 +239,31 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "MIT"
+                    ]
+                }
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "MIT",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "MIT license (also X11)",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT license (also X11)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
                     ]
                 }
             },
@@ -322,7 +356,8 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "MIT"
+                        "MIT",
+                        "MIT license (also X11)"
                     ],
                     "__impliedId": "MIT"
                 },
@@ -698,6 +733,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Exception : The University of Washington's interpretation of the MIT License, as the University interprets it for the pine email client, does not follow the DFSG. See the DebianFreeSoftwareGuidelinesDraftFAQ."
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

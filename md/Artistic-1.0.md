@@ -7,6 +7,8 @@ Artistic License 1.0 (Artistic-1.0)
 
 -   `Artistic License, Version 1.0`
 
+-   `Artistic 1.0 (original)`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -26,6 +28,11 @@ Comments on (easy) usability
 -   **↓** Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
+    in Fedora is permitted to use this license. It is either non-free or
+    deprecated. (source: [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+
 URLs
 ----
 
@@ -44,7 +51,8 @@ Raw Data
         "__impliedNames": [
             "Artistic-1.0",
             "Artistic License 1.0",
-            "Artistic License, Version 1.0"
+            "Artistic License, Version 1.0",
+            "Artistic 1.0 (original)"
         ],
         "__impliedId": "Artistic-1.0",
         "__impliedAmbiguousNames": [
@@ -57,7 +65,8 @@ Raw Data
                         "Artistic-1.0",
                         "Artistic-1.0",
                         "Artistic License 1.0",
-                        "Artistic License, Version 1.0"
+                        "Artistic License, Version 1.0",
+                        "Artistic 1.0 (original)"
                     ],
                     "__impliedId": "Artistic-1.0"
                 },
@@ -65,7 +74,8 @@ Raw Data
                 "otherNames": [
                     "Artistic-1.0",
                     "Artistic License 1.0",
-                    "Artistic License, Version 1.0"
+                    "Artistic License, Version 1.0",
+                    "Artistic 1.0 (original)"
                 ]
             },
             "SPDX": {
@@ -105,6 +115,29 @@ Raw Data
                 },
                 "spdxLicenseId": "Artistic-1.0"
             },
+            "Fedora Project Wiki": {
+                "rating": "Bad",
+                "Upstream URL": "http://www.perl.com/pub/a/language/misc/Artistic.html",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Artistic 1.0 (original)",
+                "FSF Free?": "No",
+                "_implications": {
+                    "__impliedNames": [
+                        "Artistic 1.0 (original)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                            }
+                        ]
+                    ]
+                },
+                "Notes": "See: http://www.gnu.org/licenses/license-list.html#ArtisticLicense"
+            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Artistic License",
                 "State": "DFSGCompatible",
@@ -133,7 +166,8 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "Artistic-1.0"
+                        "Artistic-1.0",
+                        "Artistic 1.0 (original)"
                     ],
                     "__impliedId": "Artistic-1.0"
                 },
@@ -269,6 +303,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Do note that the Artistic License is considered non-free by the FSF. They suggest to use the Clarified Artistic License (also called Artistic License 2.0) instead. However, the original Artistic License is still considered DFSG-free."
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
                 }
             ],
             [

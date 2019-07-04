@@ -13,6 +13,9 @@
 
 * `gpl-1.0-plus`
 * `GPL 1.0 or later`
+* `GPL-1.0+`
+* `GPL1.0+`
+* `GPL1+`
 
 === Comments on (easy) usability
 
@@ -53,7 +56,10 @@ You should have received a copy of the GNU General Public License along with thi
         "GPL-1.0-or-later",
         "GNU General Public License v1.0 or later",
         "gpl-1.0-plus",
-        "GPL 1.0 or later"
+        "GPL 1.0 or later",
+        "GPL-1.0+",
+        "GPL1.0+",
+        "GPL1+"
     ],
     "__impliedId": "GPL-1.0-or-later",
     "__impliedAmbiguousNames": [
@@ -67,7 +73,10 @@ You should have received a copy of the GNU General Public License along with thi
                     "GPL-1.0-or-later",
                     "GNU General Public License v1.0 or later",
                     "gpl-1.0-plus",
-                    "GPL 1.0 or later"
+                    "GPL 1.0 or later",
+                    "GPL-1.0+",
+                    "GPL1.0+",
+                    "GPL1+"
                 ],
                 "__impliedId": "GPL-1.0-or-later"
             },
@@ -76,7 +85,10 @@ You should have received a copy of the GNU General Public License along with thi
                 "GPL-1.0-or-later",
                 "GNU General Public License v1.0 or later",
                 "gpl-1.0-plus",
-                "GPL 1.0 or later"
+                "GPL 1.0 or later",
+                "GPL-1.0+",
+                "GPL1.0+",
+                "GPL1+"
             ]
         },
         "SPDX": {
@@ -202,7 +214,10 @@ You should have received a copy of the GNU General Public License along with thi
             "oNonCommecrial": null,
             "implications": {
                 "__impliedNames": [
-                    "GPL-1.0-or-later"
+                    "GPL-1.0-or-later",
+                    "GPL-1.0+",
+                    "GPL1.0+",
+                    "GPL1+"
                 ],
                 "__impliedId": "GPL-1.0-or-later"
             },

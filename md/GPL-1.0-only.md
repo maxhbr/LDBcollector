@@ -9,6 +9,12 @@ GNU General Public License v1.0 only (GPL-1.0-only)
 
 -   `GPL 1.0`
 
+-   `GPL-1.0`
+
+-   `GPL1.0`
+
+-   `GPL1`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -302,7 +308,10 @@ Raw Data
             "GPL-1.0-only",
             "GNU General Public License v1.0 only",
             "gpl-1.0",
-            "GPL 1.0"
+            "GPL 1.0",
+            "GPL-1.0",
+            "GPL1.0",
+            "GPL1"
         ],
         "__impliedId": "GPL-1.0-only",
         "__impliedAmbiguousNames": [
@@ -316,7 +325,10 @@ Raw Data
                         "GPL-1.0-only",
                         "GNU General Public License v1.0 only",
                         "gpl-1.0",
-                        "GPL 1.0"
+                        "GPL 1.0",
+                        "GPL-1.0",
+                        "GPL1.0",
+                        "GPL1"
                     ],
                     "__impliedId": "GPL-1.0-only"
                 },
@@ -325,7 +337,10 @@ Raw Data
                     "GPL-1.0-only",
                     "GNU General Public License v1.0 only",
                     "gpl-1.0",
-                    "GPL 1.0"
+                    "GPL 1.0",
+                    "GPL-1.0",
+                    "GPL1.0",
+                    "GPL1"
                 ]
             },
             "SPDX": {
@@ -456,7 +471,10 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "GPL-1.0-only"
+                        "GPL-1.0-only",
+                        "GPL-1.0",
+                        "GPL1.0",
+                        "GPL1"
                     ],
                     "__impliedId": "GPL-1.0-only"
                 },

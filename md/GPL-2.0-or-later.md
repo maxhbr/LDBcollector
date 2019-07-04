@@ -11,6 +11,14 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 -   `GNU General Public License 2.0`
 
+-   `GPL-2.0+`
+
+-   `GPL2.0+`
+
+-   `GPL2+`
+
+-   `GPL (v2 or later)`
+
 -   `GPL-2.0-only`
 
 -   `GPL-2.0`
@@ -172,6 +180,10 @@ Raw Data
             "gpl-2.0-plus",
             "GPL 2.0 or later",
             "GNU General Public License 2.0",
+            "GPL-2.0+",
+            "GPL2.0+",
+            "GPL2+",
+            "GPL (v2 or later)",
             "GPL-2.0-only",
             "GPL-2.0"
         ],
@@ -216,7 +228,11 @@ Raw Data
                         "GNU General Public License v2.0 or later",
                         "gpl-2.0-plus",
                         "GPL 2.0 or later",
-                        "GNU General Public License 2.0"
+                        "GNU General Public License 2.0",
+                        "GPL-2.0+",
+                        "GPL2.0+",
+                        "GPL2+",
+                        "GPL (v2 or later)"
                     ],
                     "__impliedId": "GPL-2.0-or-later"
                 },
@@ -226,7 +242,11 @@ Raw Data
                     "GNU General Public License v2.0 or later",
                     "gpl-2.0-plus",
                     "GPL 2.0 or later",
-                    "GNU General Public License 2.0"
+                    "GNU General Public License 2.0",
+                    "GPL-2.0+",
+                    "GPL2.0+",
+                    "GPL2+",
+                    "GPL (v2 or later)"
                 ]
             },
             "SPDX": {
@@ -394,7 +414,11 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "GPL-2.0-or-later"
+                        "GPL-2.0-or-later",
+                        "GPL-2.0+",
+                        "GPL2.0+",
+                        "GPL2+",
+                        "GPL (v2 or later)"
                     ],
                     "__impliedId": "GPL-2.0-or-later"
                 },

@@ -9,8 +9,16 @@ Sleepycat License (Sleepycat)
 
 -   `License :: OSI Approved :: Sleepycat License`
 
+-   `Berkeley Database License`
+
+-   `Sleepycat Software Product License`
+
 Comments on (easy) usability
 ----------------------------
+
+-   **↑** This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   **↑** Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX"))
@@ -38,6 +46,8 @@ URLs
 -   http://www.opensource.org/licenses/sleepycat.php
 
 -   https://fedoraproject.org/wiki/Licensing/Sleepycat
+
+-   http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html
 
 Text
 ----
@@ -84,7 +94,9 @@ Raw Data
             "Sleepycat License",
             "sleepycat",
             "The Sleepycat License",
-            "License :: OSI Approved :: Sleepycat License"
+            "License :: OSI Approved :: Sleepycat License",
+            "Berkeley Database License",
+            "Sleepycat Software Product License"
         ],
         "__impliedId": "Sleepycat",
         "facts": {
@@ -123,7 +135,9 @@ Raw Data
                         "Sleepycat License",
                         "sleepycat",
                         "The Sleepycat License",
-                        "License :: OSI Approved :: Sleepycat License"
+                        "License :: OSI Approved :: Sleepycat License",
+                        "Berkeley Database License",
+                        "Sleepycat Software Product License"
                     ],
                     "__impliedId": "Sleepycat"
                 },
@@ -133,7 +147,9 @@ Raw Data
                     "Sleepycat License",
                     "sleepycat",
                     "The Sleepycat License",
-                    "License :: OSI Approved :: Sleepycat License"
+                    "License :: OSI Approved :: Sleepycat License",
+                    "Berkeley Database License",
+                    "Sleepycat Software Product License"
                 ]
             },
             "SPDX": {
@@ -172,6 +188,31 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Sleepycat"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Sleepycat",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "Sleepycat",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Sleepycat Software Product License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Sleepycat Software Product License"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -248,7 +289,9 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "Sleepycat"
+                        "Sleepycat",
+                        "Berkeley Database License",
+                        "Sleepycat Software Product License"
                     ],
                     "__impliedId": "Sleepycat"
                 },
@@ -409,6 +452,13 @@ Raw Data
         },
         "__impliedJudgement": [
             [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ],
+            [
                 "Google OSS Policy",
                 {
                     "tag": "NegativeJudgement",
@@ -474,6 +524,10 @@ Raw Data
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/Sleepycat"
+            ],
+            [
+                null,
+                "http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html"
             ]
         ]
     }

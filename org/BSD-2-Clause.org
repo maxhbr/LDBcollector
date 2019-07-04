@@ -21,6 +21,10 @@
 
 - =BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)=
 
+- =BSD (2 clause)=
+
+- =BSD License (two clause)=
+
 ** Description
 
 #+BEGIN_QUOTE
@@ -36,6 +40,10 @@
 
 - *↑* Rating is: Silver (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
+
+- *↑* This software Licenses is OK for Fedora (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]])
 
 - *↑* Is OSI Approved (source:
   [[https://spdx.org/licenses/BSD-2-Clause.html][SPDX]])
@@ -128,7 +136,9 @@
             "BSD-2-clause",
             "Simplified BSD License",
             "FreeBSD License",
-            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
+            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
+            "BSD (2 clause)",
+            "BSD License (two clause)"
         ],
         "__impliedId": "BSD-2-Clause",
         "facts": {
@@ -172,7 +182,9 @@
                         "BSD-2-clause",
                         "Simplified BSD License",
                         "FreeBSD License",
-                        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
+                        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
+                        "BSD (2 clause)",
+                        "BSD License (two clause)"
                     ],
                     "__impliedId": "BSD-2-Clause"
                 },
@@ -187,7 +199,9 @@
                     "BSD-2-clause",
                     "Simplified BSD License",
                     "FreeBSD License",
-                    "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
+                    "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
+                    "BSD (2 clause)",
+                    "BSD License (two clause)"
                 ]
             },
             "SPDX": {
@@ -234,6 +248,31 @@
                 "_implications": {
                     "__impliedNames": [
                         "BSD-2-Clause"
+                    ]
+                }
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "BSD",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "BSD License (two clause)",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD License (two clause)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
                     ]
                 }
             },
@@ -312,7 +351,9 @@
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "BSD-2-Clause"
+                        "BSD-2-Clause",
+                        "BSD (2 clause)",
+                        "BSD License (two clause)"
                     ],
                     "__impliedId": "BSD-2-Clause"
                 },
@@ -543,6 +584,13 @@
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

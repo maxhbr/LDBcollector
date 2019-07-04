@@ -15,6 +15,10 @@
 * `gpl-3.0-plus`
 * `GPL 3.0 or later`
 * `GNU General Public License 3.0`
+* `GPL-3.0+`
+* `GPL3.0+`
+* `GPL3+`
+* `GPL (v3 or later)`
 * `GPL-3.0-only`
 * `GPL-3.0`
 
@@ -212,6 +216,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         "gpl-3.0-plus",
         "GPL 3.0 or later",
         "GNU General Public License 3.0",
+        "GPL-3.0+",
+        "GPL3.0+",
+        "GPL3+",
+        "GPL (v3 or later)",
         "GPL-3.0-only",
         "GPL-3.0"
     ],
@@ -257,7 +265,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     "GNU General Public License v3.0 or later",
                     "gpl-3.0-plus",
                     "GPL 3.0 or later",
-                    "GNU General Public License 3.0"
+                    "GNU General Public License 3.0",
+                    "GPL-3.0+",
+                    "GPL3.0+",
+                    "GPL3+",
+                    "GPL (v3 or later)"
                 ],
                 "__impliedId": "GPL-3.0-or-later"
             },
@@ -267,7 +279,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 "GNU General Public License v3.0 or later",
                 "gpl-3.0-plus",
                 "GPL 3.0 or later",
-                "GNU General Public License 3.0"
+                "GNU General Public License 3.0",
+                "GPL-3.0+",
+                "GPL3.0+",
+                "GPL3+",
+                "GPL (v3 or later)"
             ]
         },
         "SPDX": {
@@ -435,7 +451,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             "oNonCommecrial": null,
             "implications": {
                 "__impliedNames": [
-                    "GPL-3.0-or-later"
+                    "GPL-3.0-or-later",
+                    "GPL-3.0+",
+                    "GPL3.0+",
+                    "GPL3+",
+                    "GPL (v3 or later)"
                 ],
                 "__impliedId": "GPL-3.0-or-later"
             },

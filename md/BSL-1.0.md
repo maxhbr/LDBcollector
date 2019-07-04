@@ -9,6 +9,10 @@ Boost Software License 1.0 (BSL-1.0)
 
 -   `Boost Software License 1.0 (BSL-1.0)`
 
+-   `BSL (v1.0)`
+
+-   `BSL (v1)`
+
 Description
 -----------
 
@@ -115,7 +119,9 @@ Raw Data
             "Boost Software License 1.0",
             "bsl-1.0",
             "Business Source License 1.0",
-            "Boost Software License 1.0 (BSL-1.0)"
+            "Boost Software License 1.0 (BSL-1.0)",
+            "BSL (v1.0)",
+            "BSL (v1)"
         ],
         "__impliedId": "BSL-1.0",
         "facts": {
@@ -154,7 +160,9 @@ Raw Data
                         "Boost Software License 1.0",
                         "bsl-1.0",
                         "Business Source License 1.0",
-                        "Boost Software License 1.0 (BSL-1.0)"
+                        "Boost Software License 1.0 (BSL-1.0)",
+                        "BSL (v1.0)",
+                        "BSL (v1)"
                     ],
                     "__impliedId": "BSL-1.0"
                 },
@@ -164,7 +172,9 @@ Raw Data
                     "Boost Software License 1.0",
                     "bsl-1.0",
                     "Business Source License 1.0",
-                    "Boost Software License 1.0 (BSL-1.0)"
+                    "Boost Software License 1.0 (BSL-1.0)",
+                    "BSL (v1.0)",
+                    "BSL (v1)"
                 ]
             },
             "SPDX": {
@@ -283,7 +293,8 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "BSL-1.0"
+                        "BSL-1.0",
+                        "BSL (v1.0)"
                     ],
                     "__impliedId": "BSL-1.0"
                 },

@@ -13,6 +13,10 @@ GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 -   `LGPL-2.1`
 
+-   `LGPL2.1`
+
+-   `LGPL (v2.1)`
+
 -   `GNU LGPLv2.1`
 
 -   `GNU Lesser General Public License, Version 2.1`
@@ -759,6 +763,8 @@ Raw Data
             "LGPL 2.1",
             "GNU Lesser General Public License 2.1",
             "LGPL-2.1",
+            "LGPL2.1",
+            "LGPL (v2.1)",
             "GNU LGPLv2.1",
             "GNU Lesser General Public License, Version 2.1",
             "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
@@ -805,7 +811,10 @@ Raw Data
                         "GNU Lesser General Public License v2.1 only",
                         "lgpl-2.1",
                         "LGPL 2.1",
-                        "GNU Lesser General Public License 2.1"
+                        "GNU Lesser General Public License 2.1",
+                        "LGPL-2.1",
+                        "LGPL2.1",
+                        "LGPL (v2.1)"
                     ],
                     "__impliedId": "LGPL-2.1-only"
                 },
@@ -815,7 +824,10 @@ Raw Data
                     "GNU Lesser General Public License v2.1 only",
                     "lgpl-2.1",
                     "LGPL 2.1",
-                    "GNU Lesser General Public License 2.1"
+                    "GNU Lesser General Public License 2.1",
+                    "LGPL-2.1",
+                    "LGPL2.1",
+                    "LGPL (v2.1)"
                 ]
             },
             "SPDX": {
@@ -1012,7 +1024,11 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "LGPL-2.1-only"
+                        "LGPL-2.1-only",
+                        "LGPL-2.1",
+                        "LGPL2.1",
+                        "LGPL2.1",
+                        "LGPL (v2.1)"
                     ],
                     "__impliedId": "LGPL-2.1-only"
                 },

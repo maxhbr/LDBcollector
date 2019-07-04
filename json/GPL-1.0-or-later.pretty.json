@@ -3,7 +3,10 @@
         "GPL-1.0-or-later",
         "GNU General Public License v1.0 or later",
         "gpl-1.0-plus",
-        "GPL 1.0 or later"
+        "GPL 1.0 or later",
+        "GPL-1.0+",
+        "GPL1.0+",
+        "GPL1+"
     ],
     "__impliedId": "GPL-1.0-or-later",
     "__impliedAmbiguousNames": [
@@ -17,7 +20,10 @@
                     "GPL-1.0-or-later",
                     "GNU General Public License v1.0 or later",
                     "gpl-1.0-plus",
-                    "GPL 1.0 or later"
+                    "GPL 1.0 or later",
+                    "GPL-1.0+",
+                    "GPL1.0+",
+                    "GPL1+"
                 ],
                 "__impliedId": "GPL-1.0-or-later"
             },
@@ -26,7 +32,10 @@
                 "GPL-1.0-or-later",
                 "GNU General Public License v1.0 or later",
                 "gpl-1.0-plus",
-                "GPL 1.0 or later"
+                "GPL 1.0 or later",
+                "GPL-1.0+",
+                "GPL1.0+",
+                "GPL1+"
             ]
         },
         "SPDX": {
@@ -152,7 +161,10 @@
             "oNonCommecrial": null,
             "implications": {
                 "__impliedNames": [
-                    "GPL-1.0-or-later"
+                    "GPL-1.0-or-later",
+                    "GPL-1.0+",
+                    "GPL1.0+",
+                    "GPL1+"
                 ],
                 "__impliedId": "GPL-1.0-or-later"
             },

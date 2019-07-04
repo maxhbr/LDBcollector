@@ -3,8 +3,16 @@ Clarified Artistic License (ClArtistic)
 
 [TABLE]
 
+**Other Names:**
+
+-   `Artistic (clarified)`
+
 Comments on (easy) usability
 ----------------------------
+
+-   **↑** This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
     nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
@@ -36,7 +44,8 @@ Raw Data
     {
         "__impliedNames": [
             "ClArtistic",
-            "Clarified Artistic License"
+            "Clarified Artistic License",
+            "Artistic (clarified)"
         ],
         "__impliedId": "ClArtistic",
         "facts": {
@@ -45,14 +54,16 @@ Raw Data
                     "__impliedNames": [
                         "ClArtistic",
                         "ClArtistic",
-                        "Clarified Artistic License"
+                        "Clarified Artistic License",
+                        "Artistic (clarified)"
                     ],
                     "__impliedId": "ClArtistic"
                 },
                 "shortname": "ClArtistic",
                 "otherNames": [
                     "ClArtistic",
-                    "Clarified Artistic License"
+                    "Clarified Artistic License",
+                    "Artistic (clarified)"
                 ]
             },
             "SPDX": {
@@ -88,11 +99,37 @@ Raw Data
                 },
                 "spdxLicenseId": "ClArtistic"
             },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ArtisticClarified",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "Artistic clarified",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Artistic (clarified)",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Artistic (clarified)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
+            },
             "Override": {
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "ClArtistic"
+                        "ClArtistic",
+                        "Artistic (clarified)"
                     ],
                     "__impliedId": "ClArtistic"
                 },
@@ -180,6 +217,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

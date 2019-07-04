@@ -9,6 +9,10 @@ Artistic License 2.0 (Artistic-2.0)
 
 -   `License :: OSI Approved :: Artistic License`
 
+-   `Artistic 2.0`
+
+-   `Artistic License (v. 2.0)`
+
 Description
 -----------
 
@@ -29,11 +33,21 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+-   **↑** This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+
 -   **↑** Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 -   **↑** Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Artistic-2.0.html "SPDX"))
+
+-   Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
+    nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
+    Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
+    Weiterentwicklungen weiterverbreitet werden können. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
 Obligations
 -----------
@@ -67,7 +81,9 @@ Raw Data
             "Artistic License 2.0",
             "artistic-2.0",
             "Artistic License, Version 2.0",
-            "License :: OSI Approved :: Artistic License"
+            "License :: OSI Approved :: Artistic License",
+            "Artistic 2.0",
+            "Artistic License (v. 2.0)"
         ],
         "__impliedId": "Artistic-2.0",
         "__impliedAmbiguousNames": [
@@ -109,7 +125,9 @@ Raw Data
                         "Artistic License 2.0",
                         "artistic-2.0",
                         "Artistic License, Version 2.0",
-                        "License :: OSI Approved :: Artistic License"
+                        "License :: OSI Approved :: Artistic License",
+                        "Artistic 2.0",
+                        "Artistic License (v. 2.0)"
                     ],
                     "__impliedId": "Artistic-2.0"
                 },
@@ -119,7 +137,9 @@ Raw Data
                     "Artistic License 2.0",
                     "artistic-2.0",
                     "Artistic License, Version 2.0",
-                    "License :: OSI Approved :: Artistic License"
+                    "License :: OSI Approved :: Artistic License",
+                    "Artistic 2.0",
+                    "Artistic License (v. 2.0)"
                 ]
             },
             "SPDX": {
@@ -164,6 +184,31 @@ Raw Data
                 },
                 "spdxLicenseId": "Artistic-2.0"
             },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "http://www.perlfoundation.org/artistic_license_2_0",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "Artistic 2.0",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Artistic 2.0",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Artistic 2.0"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",
@@ -207,7 +252,9 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "Artistic-2.0"
+                        "Artistic-2.0",
+                        "Artistic 2.0",
+                        "Artistic License (v. 2.0)"
                     ],
                     "__impliedId": "Artistic-2.0"
                 },
@@ -251,6 +298,40 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/Artistic-2.0.html"
+                        ]
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrLicenseWithChoice",
+                "ifrURL": "http://www.perlfoundation.org/artistic_license_2_0",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Artistic License (v. 2.0)",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Artistic License (v. 2.0)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "MaybeCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "MaybeCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.perlfoundation.org/artistic_license_2_0"
                         ]
                     ]
                 }
@@ -565,6 +646,13 @@ Raw Data
                 }
             ],
             [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ],
+            [
                 "Google OSS Policy",
                 {
                     "tag": "PositiveJudgement",
@@ -577,6 +665,13 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
+                }
             ]
         ],
         "__impliedCopyleft": [
@@ -587,9 +682,13 @@ Raw Data
             [
                 "Google OSS Policy",
                 "NoCopyleft"
+            ],
+            [
+                "ifrOSS",
+                "MaybeCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "NoCopyleft",
+        "__calculatedCopyleft": "MaybeCopyleft",
         "__obligations": {
             "limitations": [
                 {

@@ -13,6 +13,12 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 
 -   `GPL-2.0`
 
+-   `GPL2.0`
+
+-   `GPL2`
+
+-   `GPL (v2)`
+
 -   `GNU GPLv2`
 
 -   `GNU General Public License, Version 2.0`
@@ -542,6 +548,9 @@ Raw Data
             "GPL 2.0",
             "GNU General Public License 2.0",
             "GPL-2.0",
+            "GPL2.0",
+            "GPL2",
+            "GPL (v2)",
             "GNU GPLv2",
             "GNU General Public License, Version 2.0",
             "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
@@ -588,7 +597,11 @@ Raw Data
                         "GNU General Public License v2.0 only",
                         "gpl-2.0",
                         "GPL 2.0",
-                        "GNU General Public License 2.0"
+                        "GNU General Public License 2.0",
+                        "GPL-2.0",
+                        "GPL2.0",
+                        "GPL2",
+                        "GPL (v2)"
                     ],
                     "__impliedId": "GPL-2.0-only"
                 },
@@ -598,7 +611,11 @@ Raw Data
                     "GNU General Public License v2.0 only",
                     "gpl-2.0",
                     "GPL 2.0",
-                    "GNU General Public License 2.0"
+                    "GNU General Public License 2.0",
+                    "GPL-2.0",
+                    "GPL2.0",
+                    "GPL2",
+                    "GPL (v2)"
                 ]
             },
             "SPDX": {
@@ -810,7 +827,11 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "GPL-2.0-only"
+                        "GPL-2.0-only",
+                        "GPL-2.0",
+                        "GPL2.0",
+                        "GPL2",
+                        "GPL (v2)"
                     ],
                     "__impliedId": "GPL-2.0-only"
                 },

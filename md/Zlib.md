@@ -11,6 +11,8 @@ zlib License (Zlib)
 
 -   `zlib/libpng license`
 
+-   `zlib/libpng`
+
 -   `zlib/libpng License`
 
 Description
@@ -127,6 +129,7 @@ Raw Data
             "The zlib/libpng License (Zlib)",
             "License :: OSI Approved :: zlib/libpng License",
             "zlib/libpng license",
+            "zlib/libpng",
             "zlib/libpng License",
             "Zlib license"
         ],
@@ -172,7 +175,8 @@ Raw Data
                         "ZLIB License",
                         "The zlib/libpng License (Zlib)",
                         "License :: OSI Approved :: zlib/libpng License",
-                        "zlib/libpng license"
+                        "zlib/libpng license",
+                        "zlib/libpng"
                     ],
                     "__impliedId": "Zlib"
                 },
@@ -184,7 +188,8 @@ Raw Data
                     "ZLIB License",
                     "The zlib/libpng License (Zlib)",
                     "License :: OSI Approved :: zlib/libpng License",
-                    "zlib/libpng license"
+                    "zlib/libpng license",
+                    "zlib/libpng"
                 ]
             },
             "SPDX": {
@@ -363,7 +368,8 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "Zlib"
+                        "Zlib",
+                        "zlib/libpng"
                     ],
                     "__impliedId": "Zlib"
                 },

@@ -7,13 +7,40 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 -   `GNU Affero General Public License 3.0`
 
+-   `AGPL-3.0+`
+
+-   `AGPL3.0+`
+
+-   `AGPL3+`
+
+-   `AGPL (v3 or later)`
+
+-   `Affero General Public License 3.0 or later`
+
+-   `GNU Affero General Public License (AGPL-3.0) (v. 3.0)`
+
 -   `AGPL-3.0-only`
 
 Comments on (easy) usability
 ----------------------------
 
+-   **↑** This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+
 -   **↑** Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX"))
+
+-   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
+    Lizenznehmer verpflichtet von der ursprünglichen Software
+    abgeleitete Werke ebenfalls nur unter den Bedingungen der
+    Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten Lizenzen
+    enthalten die verschiedenen GPL-Versionen und davon abgeleitete
+    Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit
+    Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit
+    Ausnahmen können auch als beschränktes Copyleft verstanden werden.
+    (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
 URLs
 ----
@@ -23,6 +50,8 @@ URLs
 -   https://www.gnu.org/licenses/agpl.txt
 
 -   https://opensource.org/licenses/AGPL-3.0
+
+-   http://www.fsf.org/licensing/licenses/agpl-3.0.html
 
 OSADL Rule
 ----------
@@ -158,6 +187,12 @@ Raw Data
             "AGPL-3.0-or-later",
             "GNU Affero General Public License v3.0 or later",
             "GNU Affero General Public License 3.0",
+            "AGPL-3.0+",
+            "AGPL3.0+",
+            "AGPL3+",
+            "AGPL (v3 or later)",
+            "Affero General Public License 3.0 or later",
+            "GNU Affero General Public License (AGPL-3.0) (v. 3.0)",
             "AGPL-3.0-only"
         ],
         "__impliedId": "AGPL-3.0-or-later",
@@ -169,7 +204,13 @@ Raw Data
                         "AGPL-3.0-or-later",
                         "AGPL-3.0-or-later",
                         "GNU Affero General Public License v3.0 or later",
-                        "GNU Affero General Public License 3.0"
+                        "GNU Affero General Public License 3.0",
+                        "AGPL-3.0+",
+                        "AGPL3.0+",
+                        "AGPL3+",
+                        "AGPL (v3 or later)",
+                        "Affero General Public License 3.0 or later",
+                        "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
                     ],
                     "__impliedId": "AGPL-3.0-or-later"
                 },
@@ -177,7 +218,13 @@ Raw Data
                 "otherNames": [
                     "AGPL-3.0-or-later",
                     "GNU Affero General Public License v3.0 or later",
-                    "GNU Affero General Public License 3.0"
+                    "GNU Affero General Public License 3.0",
+                    "AGPL-3.0+",
+                    "AGPL3.0+",
+                    "AGPL3+",
+                    "AGPL (v3 or later)",
+                    "Affero General Public License 3.0 or later",
+                    "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
                 ]
             },
             "SPDX": {
@@ -240,11 +287,42 @@ Raw Data
                     "__calculatedCopyleft": "Copyleft"
                 }
             },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "http://www.fsf.org/licensing/licenses/agpl-3.0.html",
+                "GPLv3 Compat?": "Sortof",
+                "Short Name": "AGPLv3+",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Affero General Public License 3.0 or later",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Affero General Public License 3.0 or later"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
+            },
             "Override": {
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "AGPL-3.0-or-later"
+                        "AGPL-3.0-or-later",
+                        "AGPL-3.0+",
+                        "AGPL3.0+",
+                        "AGPL3+",
+                        "AGPL (v3 or later)",
+                        "Affero General Public License 3.0 or later",
+                        "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
                     ],
                     "__impliedId": "AGPL-3.0-or-later"
                 },
@@ -260,6 +338,40 @@ Raw Data
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrStrongCopyleft_GPLlike",
+                "ifrURL": "http://www.fsf.org/licensing/licenses/agpl-3.0.html",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "GNU Affero General Public License (AGPL-3.0) (v. 3.0)",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgefÃ¼hrten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit Ausnahmen kÃ¶nnen auch als beschrÃ¤nktes Copyleft verstanden werden."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "http://www.fsf.org/licensing/licenses/agpl-3.0.html"
+                        ]
+                    ]
+                }
             },
             "Wikipedia": {
                 "Distribution": {
@@ -439,10 +551,24 @@ Raw Data
         },
         "__impliedJudgement": [
             [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ],
+            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgefÃ¼hrten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit Ausnahmen kÃ¶nnen auch als beschrÃ¤nktes Copyleft verstanden werden."
                 }
             ]
         ],
@@ -450,9 +576,13 @@ Raw Data
             [
                 "OSADL License Checklist",
                 "Copyleft"
+            ],
+            [
+                "ifrOSS",
+                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -465,6 +595,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/AGPL-3.0"
+            ],
+            [
+                null,
+                "http://www.fsf.org/licensing/licenses/agpl-3.0.html"
             ]
         ]
     }

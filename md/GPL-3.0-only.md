@@ -13,6 +13,12 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 -   `GPL-3.0`
 
+-   `GPL3.0`
+
+-   `GPL3`
+
+-   `GPL (v3)`
+
 -   `GNU GPLv3`
 
 -   `GNU General Public License, Version 3.0`
@@ -844,6 +850,9 @@ Raw Data
             "GPL 3.0",
             "GNU General Public License 3.0",
             "GPL-3.0",
+            "GPL3.0",
+            "GPL3",
+            "GPL (v3)",
             "GNU GPLv3",
             "GNU General Public License, Version 3.0",
             "License :: OSI Approved :: GNU General Public License (GPL)",
@@ -891,7 +900,11 @@ Raw Data
                         "GNU General Public License v3.0 only",
                         "gpl-3.0",
                         "GPL 3.0",
-                        "GNU General Public License 3.0"
+                        "GNU General Public License 3.0",
+                        "GPL-3.0",
+                        "GPL3.0",
+                        "GPL3",
+                        "GPL (v3)"
                     ],
                     "__impliedId": "GPL-3.0-only"
                 },
@@ -901,7 +914,11 @@ Raw Data
                     "GNU General Public License v3.0 only",
                     "gpl-3.0",
                     "GPL 3.0",
-                    "GNU General Public License 3.0"
+                    "GNU General Public License 3.0",
+                    "GPL-3.0",
+                    "GPL3.0",
+                    "GPL3",
+                    "GPL (v3)"
                 ]
             },
             "SPDX": {
@@ -1093,7 +1110,11 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "GPL-3.0-only"
+                        "GPL-3.0-only",
+                        "GPL-3.0",
+                        "GPL3.0",
+                        "GPL3",
+                        "GPL (v3)"
                     ],
                     "__impliedId": "GPL-3.0-only"
                 },

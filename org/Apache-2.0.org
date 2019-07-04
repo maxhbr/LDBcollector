@@ -16,6 +16,10 @@
 
 - =Apache Software License 2.0=
 
+- =Apache (v2.0)=
+
+- =ASL 2.0=
+
 ** Description
 
 #+BEGIN_QUOTE
@@ -138,7 +142,9 @@
             "apache-2.0",
             "Apache License, Version 2.0",
             "License :: OSI Approved :: Apache Software License",
-            "Apache Software License 2.0"
+            "Apache Software License 2.0",
+            "Apache (v2.0)",
+            "ASL 2.0"
         ],
         "__impliedId": "Apache-2.0",
         "__impliedAmbiguousNames": [
@@ -182,7 +188,9 @@
                         "apache-2.0",
                         "Apache License, Version 2.0",
                         "License :: OSI Approved :: Apache Software License",
-                        "Apache Software License 2.0"
+                        "Apache Software License 2.0",
+                        "Apache (v2.0)",
+                        "ASL 2.0"
                     ],
                     "__impliedId": "Apache-2.0"
                 },
@@ -193,7 +201,9 @@
                     "apache-2.0",
                     "Apache License, Version 2.0",
                     "License :: OSI Approved :: Apache Software License",
-                    "Apache Software License 2.0"
+                    "Apache Software License 2.0",
+                    "Apache (v2.0)",
+                    "ASL 2.0"
                 ]
             },
             "SPDX": {
@@ -317,7 +327,10 @@
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "Apache-2.0"
+                        "Apache-2.0",
+                        "Apache (v2.0)",
+                        "Apache Software License 2.0",
+                        "ASL 2.0"
                     ],
                     "__impliedId": "Apache-2.0"
                 },

@@ -21,6 +21,10 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 -   `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
 
+-   `BSD (3 clause)`
+
+-   `BSD License (no advertising)`
+
 Description
 -----------
 
@@ -46,6 +50,10 @@ Comments on (easy) usability
     endorses or promotes your work, the law generally does. We're not
     aware of any exceptions. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+-   **↑** This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   **↑** Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
@@ -149,6 +157,8 @@ Raw Data
             "Modified BSD License",
             "New BSD License",
             "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+            "BSD (3 clause)",
+            "BSD License (no advertising)",
             "BSD 3-clause \"New\" or \"Revised\" License"
         ],
         "__impliedId": "BSD-3-Clause",
@@ -198,7 +208,9 @@ Raw Data
                         "Revised BSD License",
                         "Modified BSD License",
                         "New BSD License",
-                        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
+                        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+                        "BSD (3 clause)",
+                        "BSD License (no advertising)"
                     ],
                     "__impliedId": "BSD-3-Clause"
                 },
@@ -215,7 +227,9 @@ Raw Data
                     "Revised BSD License",
                     "Modified BSD License",
                     "New BSD License",
-                    "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
+                    "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
+                    "BSD (3 clause)",
+                    "BSD License (no advertising)"
                 ]
             },
             "SPDX": {
@@ -262,6 +276,31 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "BSD-3-Clause"
+                    ]
+                }
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "BSD",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "BSD License (no advertising)",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD License (no advertising)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
                     ]
                 }
             },
@@ -359,7 +398,9 @@ Raw Data
                 "oNonCommecrial": null,
                 "implications": {
                     "__impliedNames": [
-                        "BSD-3-Clause"
+                        "BSD-3-Clause",
+                        "BSD (3 clause)",
+                        "BSD License (no advertising)"
                     ],
                     "__impliedId": "BSD-3-Clause"
                 },
@@ -667,6 +708,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Note that a 2-clause form of the BSD license, removing the third condition, is also in use. This is because even a generous copyright license does not implicitly forfeit the copyright holder's \"right of publicity\". In other words, even if a license does not forbid you from claiming that the copyright holder or other parties endorses or promotes your work, the law generally does. We're not aware of any exceptions."
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [
