@@ -37,5 +37,7 @@ Number of facts: 2121
     choosealicense.com: 35
     finos-osr/OSLC-handbook: 55
     ifrOSS: 57
+#### based on facts from licenses
 Number of clusters: 362
+#### based on licenses
 Number of clusters: 360
