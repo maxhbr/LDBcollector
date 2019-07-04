@@ -306,7 +306,8 @@ Raw Data
                 },
                 "oName": "BSD-2-Clause",
                 "oOtherLicenseIds": [
-                    "BSD (2 clause)"
+                    "BSD (2 clause)",
+                    "BSD License (two clause)"
                 ],
                 "oDescription": null,
                 "oJudgement": null,

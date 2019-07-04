@@ -228,7 +228,8 @@
             },
             "oName": "BSD-3-Clause",
             "oOtherLicenseIds": [
-                "BSD (3 clause)"
+                "BSD (3 clause)",
+                "BSD License (no advertising)"
             ],
             "oDescription": null,
             "oJudgement": null,
