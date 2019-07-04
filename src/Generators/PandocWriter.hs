@@ -204,9 +204,10 @@ writePandoc outDirectory (licName, lic) = let
   in do
 
     createDirectoryIfNotExists outDirectory
+    createDirectoryIfNotExists (outDirectory </> "org")
     case P.runPure (P.writeOrg P.def pandoc) of
       Left err -> print err
-      Right org -> T.writeFile (outDirectory </> licName ++ ".org") org
+      Right org -> T.writeFile (outDirectory </> "org" </> licName ++ ".org") org
 
     createDirectoryIfNotExists (outDirectory </> "md")
     case P.runPure (P.writeMarkdown P.def pandoc) of

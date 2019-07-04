@@ -2,6 +2,16 @@
 
 The generated output is pushed to the branch [`generated`](https://github.com/maxhbr/LDBcollector/tree/generated).
 
+## Produced Output:
+- JSON
+- Markdown
+- Org-Mode
+- AsciiDoc
+- HTML
+
+### Other endpoints:
+- sync to Confluence (planned)
+
 ## Consumed Data (implemented)
 ### SPDX license List
 The data is placed in `/data/json/` and it contains the content of the folder `/json/` from [https://github.com/spdx/license-list-data].
@@ -16,6 +26,8 @@ The scancode data is placed in `/data/scancode/` and contains the content of the
 
 ### Wikipedia comparison of licenses
 The table for general comparison of licenses is taken from https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses and is placed in the source file.
+
+The corresponding data is hardcoded in source code, right now.
 
 ### OSADL license checklist
 The folder `/data/OSADL/` contains a script `dump.sh` which pulls the checklist stuff. The sources for that are for example
@@ -71,6 +83,8 @@ https://github.com/okfn/licenses/blob/master/licenses.csv
 
 The corresponding raw data is placed under `./data/okfn-licenses.csv`
 
+**licensed under:** ODC Public Domain Dedication and Licence (PDDL) / MIT
+
 ### DFSG License list
 https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
 
@@ -82,6 +96,8 @@ FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
 ### ifrOSS
 - https://github.com/ifrOSS/ifrOSS
 - https://ifross.github.io/ifrOSS/Lizenzcenter
+
+The corresponding data is hardcoded in source code, right now.
 
 **licensed under:** MIT / ODbL
 
