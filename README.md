@@ -20,7 +20,7 @@ The data is placed in `/data/json/` and it contains the content of the folder `/
 The OSI license list is imported via the `opensource` haskell package.
 
 ### Scancode license List
-The scancode data is placed in `/data/scancode/` and contains the content of the folder `/src/licensedcode/data/licenses/**` from https://github.com/nexB/scancode-toolkit.
+The scancode data is placed in `/data/scancode/` and contains the content of the folder `/src/licensedcode/data/licenses/` from https://github.com/nexB/scancode-toolkit.
 
 **licensed under:** cc0-1.0
 
@@ -43,7 +43,7 @@ The folder `/data/choosalicense` contains the conten of the folder `/_licenses/`
 **licensed under:** MIT
 
 ### Blue Oak Council License List
-The license list can be pulled from https://blueoakcouncil.org/list.json, and is placed at `data/blue-oak-council-license-list.json**
+The license list can be pulled from https://blueoakcouncil.org/list.json, and is placed at `data/blue-oak-council-license-list.json`
 
 **licensed under:** CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 

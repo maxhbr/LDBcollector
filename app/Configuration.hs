@@ -72,21 +72,9 @@ overrides =
   , (emptyOverride "BSD-4-Clause-UC") { oRatingState = Just (RatingState False True True True)
                                       , oJudgement = Just (NegativeJudgement "Advertisement clause (3.) is complicated and prone to conflicts") }
   ] ++ map (\ sn -> (emptyOverride sn) { oRatingState = Just (FinalRating RNoGo)
-                                       , oNonCommecrial = Just True }) [ "CC-BY-NC-1.0"
-                                                                       , "CC-BY-NC-2.0"
-                                                                       , "CC-BY-NC-2.5"
-                                                                       , "CC-BY-NC-3.0"
-                                                                       , "CC-BY-NC-4.0"
-                                                                       , "CC-BY-NC-ND-1.0"
-                                                                       , "CC-BY-NC-ND-2.0"
-                                                                       , "CC-BY-NC-ND-2.5"
-                                                                       , "CC-BY-NC-ND-3.0"
-                                                                       , "CC-BY-NC-ND-4.0"
-                                                                       , "CC-BY-NC-SA-1.0"
-                                                                       , "CC-BY-NC-SA-2.0"
-                                                                       , "CC-BY-NC-SA-2.5"
-                                                                       , "CC-BY-NC-SA-3.0"
-                                                                       , "CC-BY-NC-SA-4.0" ]
+                                       , oNonCommecrial = Just True }) [ "CC-BY-NC-1.0", "CC-BY-NC-2.0", "CC-BY-NC-2.5", "CC-BY-NC-3.0", "CC-BY-NC-4.0"
+                                                                       , "CC-BY-NC-ND-1.0", "CC-BY-NC-ND-2.0", "CC-BY-NC-ND-2.5", "CC-BY-NC-ND-3.0", "CC-BY-NC-ND-4.0"
+                                                                       , "CC-BY-NC-SA-1.0", "CC-BY-NC-SA-2.0", "CC-BY-NC-SA-2.5", "CC-BY-NC-SA-3.0", "CC-BY-NC-SA-4.0" ]
     -- support other IDs
     ++ map (\(sn,oIds) -> (emptyOverride sn) { oOtherLicenseIds = oIds})
            [ ("GPL-1.0-only", [ "GPL-1.0"
