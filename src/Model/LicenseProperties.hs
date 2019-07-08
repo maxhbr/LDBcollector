@@ -8,3 +8,4 @@ import Model.LicenseProperties.Judgement as X
 import Model.LicenseProperties.LicenseFactClassifier as X
 import Model.LicenseProperties.LicenseObligations as X
 import Model.LicenseProperties.Rating as X
+import Model.LicenseProperties.Compatibility as X
