@@ -23,11 +23,12 @@ data Override
   , oRatingState :: Maybe RatingState
   , oJudgement :: Maybe Judgement
   , oNonCommecrial :: Maybe Bool
+  , oCompatibiliets :: Maybe LicenseCompatibility
   } deriving (Eq, Show, Generic)
 type Overrides
   = [Override]
 emptyOverride :: LicenseName -> Override
-emptyOverride ln = Override ln [] Nothing Nothing Nothing Nothing
+emptyOverride ln = Override ln [] Nothing Nothing Nothing Nothing Nothing
 instance ToJSON Override
 overrideLFC :: LicenseFactClassifier
 overrideLFC = LFC "Override"

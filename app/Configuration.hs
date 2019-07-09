@@ -71,6 +71,11 @@ overrides =
                                    , oJudgement = Just (NegativeJudgement "Advertisement clause (3.) is complicated and prone to conflicts") }
   , (emptyOverride "BSD-4-Clause-UC") { oRatingState = Just (RatingState False True True True)
                                       , oJudgement = Just (NegativeJudgement "Advertisement clause (3.) is complicated and prone to conflicts") }
+  ] ++
+  [ (emptyOverride "GPL-2.0-only") { oCompatibiliets = Just (isIncompatibleBothWays "Apache-2.0"
+                                                              <> isIncompatibleBothWays "GPL-3.0-only"
+                                                              <> isCompatibleToWhenDistributedUnderSelf "GPL-2.0-or-later"
+                                                            ) }
   ] ++ map (\ sn -> (emptyOverride sn) { oRatingState = Just (FinalRating RNoGo)
                                        , oNonCommecrial = Just True }) [ "CC-BY-NC-1.0", "CC-BY-NC-2.0", "CC-BY-NC-2.5", "CC-BY-NC-3.0", "CC-BY-NC-4.0"
                                                                        , "CC-BY-NC-ND-1.0", "CC-BY-NC-ND-2.0", "CC-BY-NC-ND-2.5", "CC-BY-NC-ND-3.0", "CC-BY-NC-ND-4.0"
