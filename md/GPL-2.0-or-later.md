@@ -429,6 +429,7 @@ Raw Data
                     "GPL2+",
                     "GPL (v2 or later)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

@@ -409,6 +409,7 @@ Raw Data
                     "BSD (3 clause)",
                     "BSD License (no advertising)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

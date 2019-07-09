@@ -546,6 +546,7 @@ Raw Data
                 },
                 "oName": "CC-BY-NC-SA-3.0",
                 "oOtherLicenseIds": [],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": {

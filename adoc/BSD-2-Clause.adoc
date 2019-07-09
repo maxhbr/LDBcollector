@@ -355,6 +355,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 "BSD (2 clause)",
                 "BSD License (two clause)"
             ],
+            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
             "oRatingState": null

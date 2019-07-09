@@ -308,6 +308,7 @@ Raw Data
                 },
                 "oName": "BSD-4-Clause",
                 "oOtherLicenseIds": [],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": {
                     "tag": "NegativeJudgement",

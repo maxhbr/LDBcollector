@@ -365,6 +365,7 @@ Raw Data
                 "oOtherLicenseIds": [
                     "MIT license (also X11)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

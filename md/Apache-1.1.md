@@ -254,6 +254,7 @@ Raw Data
                     "Apache Software License 1.1",
                     "ASL 1.1"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

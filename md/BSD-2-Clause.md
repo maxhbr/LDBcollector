@@ -350,6 +350,7 @@ Raw Data
                     "BSD (2 clause)",
                     "BSD License (two clause)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

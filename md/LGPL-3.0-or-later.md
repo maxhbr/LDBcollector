@@ -518,6 +518,7 @@ Raw Data
                     "LGPL (v3.0)",
                     "LGPL (v3)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

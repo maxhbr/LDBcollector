@@ -1,6 +1,6 @@
 ## Stats:
 ### Stats on Facts:
-Number of facts: 3458
+Number of facts: 3459
     BlueOak License List: 169
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 430
@@ -9,7 +9,7 @@ Number of facts: 3458
     Open Knowledge International: 117
     OpenChainPolicyTemplate: 92
     OpenSourceInitiative: 89
-    Override: 44
+    Override: 45
     SPDX: 360
     Scancode: 1376
     Wikipedia: 38
@@ -20,7 +20,7 @@ Number of facts: 3458
 Number of clusters: 1915
 ### Stats on Licenses:
 Number of Licenses: 360
-Number of facts: 2121
+Number of facts: 2122
     BlueOak License List: 169
     Debian Free Software Guidelines: 77
     Fedora Project Wiki: 159
@@ -30,7 +30,7 @@ Number of facts: 2121
     Open Knowledge International: 95
     OpenChainPolicyTemplate: 81
     OpenSourceInitiative: 83
-    Override: 46
+    Override: 47
     SPDX: 363
     Scancode: 324
     Wikipedia: 39

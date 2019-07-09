@@ -335,6 +335,7 @@ Raw Data
                     "Affero General Public License 3.0 or later",
                     "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

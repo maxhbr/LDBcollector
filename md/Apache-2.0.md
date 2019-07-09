@@ -323,6 +323,7 @@ Raw Data
                     "Apache Software License 2.0",
                     "ASL 2.0"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

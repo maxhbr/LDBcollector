@@ -242,6 +242,7 @@ Raw Data
                 },
                 "oName": "CC-BY-NC-ND-2.5",
                 "oOtherLicenseIds": [],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": {

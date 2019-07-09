@@ -274,6 +274,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/artistic-2.
                 "Artistic 2.0",
                 "Artistic License (v. 2.0)"
             ],
+            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
             "oRatingState": null

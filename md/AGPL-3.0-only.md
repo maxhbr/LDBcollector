@@ -430,6 +430,7 @@ Raw Data
                     "AGPL (v3)",
                     "Affero General Public License 3.0"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

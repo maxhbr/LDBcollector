@@ -300,6 +300,7 @@ Raw Data
                     "Berkeley Database License",
                     "Sleepycat Software Product License"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

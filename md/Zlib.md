@@ -377,6 +377,7 @@ Raw Data
                 "oOtherLicenseIds": [
                     "zlib/libpng"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

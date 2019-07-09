@@ -481,6 +481,7 @@ That's all there is to it!
                 "GPL1.0",
                 "GPL1"
             ],
+            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
             "oRatingState": null

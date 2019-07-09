@@ -436,6 +436,7 @@ Raw Data
                     "LGPL2.1+",
                     "LGPL (v2.1 or later)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

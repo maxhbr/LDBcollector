@@ -285,21 +285,26 @@
             "oNonCommecrial": null,
             "implications": {
                 "__impliedNames": [
-                    "GPL-2.0-only",
-                    "GPL-2.0",
-                    "GPL2.0",
-                    "GPL2",
-                    "GPL (v2)"
+                    "GPL-2.0-only"
                 ],
                 "__impliedId": "GPL-2.0-only"
             },
             "oName": "GPL-2.0-only",
-            "oOtherLicenseIds": [
-                "GPL-2.0",
-                "GPL2.0",
-                "GPL2",
-                "GPL (v2)"
-            ],
+            "oOtherLicenseIds": [],
+            "oCompatibiliets": {
+                "Apache-2.0": {
+                    "_isCompatibleToWhenDistributedUnderSelf": false,
+                    "_isCompatibleToWhenDistributedUnderOther": false
+                },
+                "GPL-3.0-only": {
+                    "_isCompatibleToWhenDistributedUnderSelf": false,
+                    "_isCompatibleToWhenDistributedUnderOther": false
+                },
+                "GPL-2.0-or-later": {
+                    "_isCompatibleToWhenDistributedUnderSelf": true,
+                    "_isCompatibleToWhenDistributedUnderOther": null
+                }
+            },
             "oDescription": null,
             "oJudgement": null,
             "oRatingState": null

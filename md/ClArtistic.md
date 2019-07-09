@@ -137,6 +137,7 @@ Raw Data
                 "oOtherLicenseIds": [
                     "Artistic (clarified)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

@@ -175,6 +175,7 @@ Raw Data
                 "oOtherLicenseIds": [
                     "Artistic 1.0 (original)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null

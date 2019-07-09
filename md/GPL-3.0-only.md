@@ -1125,6 +1125,7 @@ Raw Data
                     "GPL3",
                     "GPL (v3)"
                 ],
+                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
                 "oRatingState": null
