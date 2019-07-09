@@ -1,23 +1,19 @@
 name:                LDBcollector
 version:             0.1.0.0
-github:              "githubuser/LDBcollector"
+github:              "maxhbr/LDBcollector"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2019 Author name here"
+author:              "Maximilian Huber"
+maintainer:          "gh@maximilian-huber.com"
+copyright:           "2019 Maximilian Huber"
 
 extra-source-files:
 - README.md
 - ChangeLog.md
 
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+synopsis:            A smal tool to collect license metadata, process it and render it in different ways
+category:            Development
 
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/LDBcollector#readme>
+description:         Please see the README on GitHub at <https://github.com/maxhbr/LDBcollector#readme>
 
 dependencies:
 - base >= 4.7 && < 5
