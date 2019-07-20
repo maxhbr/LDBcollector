@@ -6,7 +6,7 @@
 module Model.Fact
   ( module X
   , LFRaw (..), getImplicationJSONFromLFRaw
-  , LicenseFact (..), extractLicenseFactClassifier
+  , LicenseFact (..)
   , Facts
   ) where
 
@@ -114,8 +114,6 @@ getImplicationJSONFromLFRaw a = let
 data LicenseFact
   = forall a. (LFRaw a)
   => LicenseFact (Maybe URL) a
-extractLicenseFactClassifier :: LicenseFact -> LicenseFactClassifier
-extractLicenseFactClassifier (LicenseFact _ a)         = getLicenseFactClassifier a
 
 instance Show LicenseFact where
   show (LicenseFact _ a) = show a
