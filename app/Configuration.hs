@@ -13,7 +13,7 @@ import qualified Data.Map as M
 import Lib
 
 configuration :: Configuration
-configuration = Configuration ratingRules overrides "./data"
+configuration = Configuration ratingRules overrides
 
 ratingRules :: RatingRules
 ratingRules = let

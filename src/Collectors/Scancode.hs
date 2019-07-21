@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TupleSections #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.Scancode
   ( loadScancodeFacts
   , scancodeLFC
@@ -11,11 +12,13 @@ import           MyPrelude hiding (id, ByteString)
 import           Collectors.Common
 
 import qualified Data.Vector as V
+import qualified Data.Map as Map
 import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as Char8
 import           Data.Yaml
 import           Data.Text.Encoding (decodeUtf8)
+import           Data.FileEmbed (embedDir)
 
 import           Model.License
 
@@ -51,7 +54,7 @@ data ScancodeData
   , textUrls :: Maybe [String]
   , osiUrl :: Maybe String
   , otherUrls :: Maybe [String]
-  , text :: !ByteString
+  , text :: Maybe ByteString
   } deriving (Show, Generic)
 instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
@@ -67,7 +70,7 @@ instance FromJSON ScancodeData where
     <*> v .:? "etxt_urls"
     <*> v .:? "osi_url"
     <*> v .:? "other_urls"
-    <*> pure "" -- LicenseText is added later
+    <*> pure Nothing -- LicenseText is added later
 instance ToJSON ScancodeData
 scancodeLFC :: LicenseFactClassifier
 scancodeLFC = LFC "Scancode"
@@ -79,7 +82,9 @@ instance LFRaw ScancodeData where
   getImpliedId scd@ScancodeData{spdxId=mi} = case mi of
     Just i -> mkRLSR scd 90 i
     Nothing -> NoRLSR
-  getImpliedText scd = mkRLSR scd 50 (decodeUtf8 $ text scd)
+  getImpliedText scd = case text scd of
+    Just t  -> mkRLSR scd 50 (decodeUtf8 t)
+    Nothing -> NoRLSR
   getImpliedURLs scd = let
       urlsFromHomepage = case homepageUrl scd of
         Just homepageU -> [(Just "Homepage", homepageU)]
@@ -109,28 +114,28 @@ instance LFRaw ScancodeData where
           "Public Domain" -> NoCopyleft
           _ -> undefined -- TODO?
 
-loadScancodeFactsFromYml :: FilePath -> FilePath -> IO Facts
-loadScancodeFactsFromYml folder yml = let
-    ymlFile = folder </> yml
-    licenseFile = replaceExtension ymlFile "LICENSE"
-  in do
-    decoded <- decodeFileEither ymlFile :: IO (Either ParseException ScancodeData)
-
-    licenseTextExists <- doesFileExist licenseFile
-    licenseText <- if licenseTextExists
-      then B.readFile licenseFile
-      else return ""
-    return $ case decoded of
+loadScancodeFactsFromData :: (FilePath, ByteString, Maybe ByteString) -> Facts
+loadScancodeFactsFromData (fn, yml, licText) = let
+    decoded = decodeEither' yml :: (Either ParseException ScancodeData)
+  in case decoded of
       Left pe -> trace (show pe) V.empty
       Right scdFromRow -> let
-          scd = scdFromRow{text = licenseText}
-        in V.singleton (LicenseFact (Just $ "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/" ++ yml) scd)
+          scd = scdFromRow{text = licText}
+        in V.singleton (LicenseFact (Just $ "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/" ++ fn) scd)
 
-loadScancodeFacts :: FilePath -> IO Facts
-loadScancodeFacts folder = do
-  logThatFactsAreLoadedFrom "Scancode License List"
-  files <- getDirectoryContents folder
-  let ymls = filter ("yml" `isSuffixOf`) files
-  factss <- mapM (loadScancodeFactsFromYml folder) ymls
-  let facts = foldl (V.++) V.empty factss
-  return facts
+scancodeLicenseFolder :: [(FilePath, ByteString)]
+scancodeLicenseFolder = $(embedDir "data/nexB_scancode-toolkit_license_list/")
+
+loadScancodeFacts :: IO Facts
+loadScancodeFacts = let
+    scancodeLicenseFolderMap = Map.fromList scancodeLicenseFolder
+    knownLics = map (\yml -> (yml,
+                              scancodeLicenseFolderMap Map.! yml,
+                              replaceExtension yml "LICENSE" `Map.lookup` scancodeLicenseFolderMap)) .
+                filter ("yml" `isSuffixOf`) .
+                map fst $
+                scancodeLicenseFolder
+    facts = foldl (V.++) V.empty $ map loadScancodeFactsFromData knownLics
+  in do
+    logThatFactsAreLoadedFrom "Scancode License List"
+    return facts

@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.OSLC
   ( loadOslcFacts
   , oslcLFC
@@ -16,6 +17,7 @@ import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as Char8
 import           Data.Yaml
+import           Data.FileEmbed (embedDir)
 
 import           Model.License
 
@@ -67,28 +69,26 @@ instance LFRaw OSLCData where
   getLicenseFactClassifier _             = oslcLFC
   getImpliedNames (OSLCData n _ ids _ _) = CLSR $ n : ids
 
-loadOslcFactFromFile :: FilePath -> FilePath -> IO (Vector LicenseFact)
-loadOslcFactFromFile oslcFolder oslcFile = let
-    fileWithPath = oslcFolder </> oslcFile
-    nmffn = dropExtension oslcFile
+loadOslcFactFromFile :: (FilePath, ByteString) -> IO (Vector LicenseFact)
+loadOslcFactFromFile (oslcFile, content) = let
+    decoded = decodeEither' content :: Either ParseException [OSLCData]
     convertOslcFromFile oslcdFromFile = let
         spdxIds = licenseId oslcdFromFile
-      in map (\spdxId -> LicenseFact (Just $ "https://github.com/finos-osr/OSLC-handbook/blob/master/src/" ++ oslcFile) oslcdFromFile{ nameFromFilename = nmffn, licenseId = [spdxId] }) spdxIds
-  in do
-    decoded <- decodeFileEither fileWithPath :: IO (Either ParseException [OSLCData])
-    case decoded of
-      Left pe -> do
-        hPutStrLn stderr ("tried to parse " ++ fileWithPath ++ ":" ++ show pe)
-        return V.empty
-      Right oslcdFromFiles -> do
-        let facts = V.fromList $ concatMap convertOslcFromFile oslcdFromFiles
-        mapM_ (logThatFileContainedFact fileWithPath) facts
-        return facts
+      in map (\spdxId -> LicenseFact (Just $ "https://github.com/finos-osr/OSLC-handbook/blob/master/src/" ++ oslcFile) oslcdFromFile{ nameFromFilename = dropExtension oslcFile, licenseId = [spdxId] }) spdxIds
+  in case decoded of
+       Left pe -> do
+         hPutStrLn stderr ("tried to parse " ++ oslcFile ++ ":" ++ show pe)
+         return V.empty
+       Right oslcdFromBS -> do
+         let facts = V.fromList $ concatMap convertOslcFromFile oslcdFromBS
+         mapM_ (logThatFileContainedFact oslcFile) facts
+         return facts
 
-loadOslcFacts :: FilePath -> IO Facts
-loadOslcFacts oslcFolder = do
+oslcFolder :: [(FilePath, ByteString)]
+oslcFolder = $(embedDir "data/OSLC-handbook/")
+
+loadOslcFacts :: IO Facts
+loadOslcFacts = do
   logThatFactsAreLoadedFrom "OSLC-handbook"
-  files <- getDirectoryContents oslcFolder
-  let oslcs = filter ("yaml" `isSuffixOf`) files
-  facts <- mapM (loadOslcFactFromFile oslcFolder) oslcs
+  facts <- mapM loadOslcFactFromFile (filter (\(fp,_) -> "yaml" `isSuffixOf` fp) oslcFolder)
   return (V.concat facts)

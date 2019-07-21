@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.BlueOak
   ( loadBlueOakFacts
   , loadBlueOakFactsFromString
@@ -13,8 +14,10 @@ import           MyPrelude hiding (id)
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
+import qualified Data.ByteString
 import qualified Data.ByteString.Lazy as B
 import           Data.ByteString.Lazy (ByteString)
+import           Data.FileEmbed (embedFile)
 
 import           Model.License
 import           Collectors.Common
@@ -98,9 +101,13 @@ loadBlueOakFactsFromString bs = let
     facts = concatMap ratingConverter bodRatings
   in trace ("INFO: the version of BlueOak is: " ++ bodVersion) $ V.fromList facts
 
--- example filepath: ../data/Blue_Oak_Council/blue-oak-council-license-list.json
-loadBlueOakFacts :: FilePath -> IO Facts
-loadBlueOakFacts blueOakFile = do
-  logThatFactsAreLoadedFrom "Blue Oak Council License List"
-  s <- B.readFile blueOakFile
-  return (loadBlueOakFactsFromString s)
+blueOakFile :: Data.ByteString.ByteString
+blueOakFile = $(embedFile "data/blue-oak-council-license-list.json")
+
+loadBlueOakFacts :: IO Facts
+loadBlueOakFacts = let
+    blueOakFile :: Data.ByteString.ByteString
+    blueOakFile = $(embedFile "data/blue-oak-council-license-list.json")
+  in do
+    logThatFactsAreLoadedFrom "Blue Oak Council License List"
+    return (loadBlueOakFactsFromString (B.fromStrict blueOakFile))

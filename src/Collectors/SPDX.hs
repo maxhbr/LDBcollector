@@ -2,6 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE TupleSections #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.SPDX
   ( loadSPDXFacts
   , spdxLFC
@@ -14,9 +15,11 @@ import           Collectors.Common
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
+import qualified Data.ByteString
 import qualified Data.ByteString.Char8 as C8
 import qualified Data.ByteString.Lazy as B
 import           Data.ByteString.Lazy (ByteString)
+import           Data.FileEmbed (embedFile)
 
 import           Model.License
 
@@ -81,13 +84,10 @@ loadSPDXFactsFromString s = case (decode s :: Maybe SPDXList) of
     in V.fromList $ map (\f -> LicenseFact (Just $ "https://spdx.org/licenses/" ++ spdxLicenseId f ++ ".html") f) filteredEs
   Nothing                 -> V.empty
 
+spdxLicensesJSON :: Data.ByteString.ByteString
+spdxLicensesJSON = $(embedFile "data/spdx-license-list-data/licenses.json")
 
--- example filepath: ../data/spdx-license-list-data/json
-loadSPDXFacts :: FilePath -> IO Facts
-loadSPDXFacts basepath = let
-    licensesJSONFile = basepath </> "licenses.json"
-  in do
-    logThatFactsAreLoadedFrom "SPDX License List"
-    hPutStrLn stderr $ "INFO: parse SPDX file: " ++ licensesJSONFile
-    bs <- B.readFile licensesJSONFile
-    return (loadSPDXFactsFromString bs)
+loadSPDXFacts :: IO Facts
+loadSPDXFacts = do
+  logThatFactsAreLoadedFrom "SPDX License List"
+  return (loadSPDXFactsFromString (B.fromStrict spdxLicensesJSON))

@@ -1,5 +1,6 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.ChooseALicense
   ( loadChooseALicenseFacts
   , extractValueFromText
@@ -16,6 +17,7 @@ import qualified Data.Vector as V
 import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as Char8
+import           Data.FileEmbed (embedDir)
 
 import           Model.License
 
@@ -73,31 +75,29 @@ extractListFromText ls key = let
     lns = map (drop 4) . L.takeWhile (/= "") . tailIfPresent $ L.dropWhile (/= prefix) ls
   in lns
 
-loadCalFactFromFile :: FilePath -> FilePath -> IO LicenseFact
-loadCalFactFromFile calFolder calFile = let
-    fileWithPath = calFolder </> calFile
-    n = dropExtension calFile
-  in do
-    cnt <- B.readFile fileWithPath
-    let ls = lines (Char8.unpack cnt)
-    return (LicenseFact (Just $ "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/" ++ calFile)
-                        (CALFactRaw n
-                                    (extractValueFromText ls "title")
-                                    (extractValueFromText ls "spdx-id")
-                                    (extractValueFromText ls "nickname")
-                                    (extractValueFromText ls "featured")
-                                    (extractValueFromText ls "hidden")
-                                    (extractValueFromText ls "description")
-                                    (extractValueFromText ls "how")
-                                    (extractListFromText ls "permissions")
-                                    (extractListFromText ls "conditions")
-                                    (extractListFromText ls "limitations")
-                                    cnt))
+loadCalFactFromFile :: (FilePath, ByteString) -> LicenseFact
+loadCalFactFromFile (calFile, cnt) = let
+    ls = lines (Char8.unpack cnt)
+  in (LicenseFact (Just $ "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/" ++ calFile)
+       (CALFactRaw (dropExtension calFile)
+                   (extractValueFromText ls "title")
+                   (extractValueFromText ls "spdx-id")
+                   (extractValueFromText ls "nickname")
+                   (extractValueFromText ls "featured")
+                   (extractValueFromText ls "hidden")
+                   (extractValueFromText ls "description")
+                   (extractValueFromText ls "how")
+                   (extractListFromText ls "permissions")
+                   (extractListFromText ls "conditions")
+                   (extractListFromText ls "limitations")
+                   cnt))
 
-loadChooseALicenseFacts :: FilePath -> IO Facts
-loadChooseALicenseFacts calFolder = do
-  logThatFactsAreLoadedFrom "choosealicense.com"
-  files <- getDirectoryContents calFolder
-  let cals = filter ("txt" `isSuffixOf`) files
-  facts <- mapM (loadCalFactFromFile calFolder) cals
-  return (V.fromList facts)
+calFolder :: [(FilePath, ByteString)]
+calFolder = $(embedDir "data/choosealicense.com/")
+
+loadChooseALicenseFacts :: IO Facts
+loadChooseALicenseFacts = let
+    facts = map loadCalFactFromFile (filter (\(fp,_) -> "txt" `isSuffixOf` fp) calFolder)
+  in do
+    logThatFactsAreLoadedFrom "choosealicense.com"
+    return (V.fromList facts)

@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.Gnu
   ( loadGnuFacts
   , gnuLFC
@@ -13,9 +14,11 @@ import           Collectors.Common
 
 import qualified Data.Vector as V
 import           Text.XML.Hexml
+import qualified Data.Map as Map
 import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as Char8
+import           Data.FileEmbed (embedDir)
 
 import           Model.License
 
@@ -27,8 +30,8 @@ data GnuFact
   , gnuBody :: !ByteString
   } deriving (Show, Generic)
 instance ToJSON GnuFact where
-  toJSON (GnuFact isFree isGCompatible a b) = object [ "header" .= (Char8.unpack a)
-                                                     , "body" .= (Char8.unpack b)
+  toJSON (GnuFact isFree isGCompatible a b) = object [ "header" .= Char8.unpack a
+                                                     , "body" .= Char8.unpack b
                                                      , "isFree" .= isFree
                                                      , "isGPLComptible" .= isGCompatible
                                                      ]
@@ -69,9 +72,23 @@ loadGnuFactsFromFile isFree isGCompatible htmlFile = do
           return V.empty
     Right fs -> return fs
 
-loadGnuFacts :: FilePath -> IO Facts
-loadGnuFacts gnuDir = do
-  fs1 <- loadGnuFactsFromFile True True (gnuDir </> "GPL-Compatible_Free_Software_Licenses.html")
-  fs2 <- loadGnuFactsFromFile True False (gnuDir </> "GPL-Incompatible_Free_Software_Licenses.html")
-  fs3 <- loadGnuFactsFromFile False False (gnuDir </> "Nonfree_Software_Licenses.html")
-  return $ V.concat [fs1, fs2, fs3]
+gnuFolder :: Map FilePath ByteString
+gnuFolder = Map.fromList $(embedDir "data/gnu.org/")
+
+loadGnuFacts :: IO Facts
+loadGnuFacts = let
+    fs1E = loadGnuFactsFromByteString True True (gnuFolder Map.! "GPL-Compatible_Free_Software_Licenses.html")
+    fs2E = loadGnuFactsFromByteString True False (gnuFolder Map.! "GPL-Incompatible_Free_Software_Licenses.html")
+    fs3E = loadGnuFactsFromByteString False False (gnuFolder Map.! "Nonfree_Software_Licenses.html")
+    handleEither :: Either ByteString Facts -> IO Facts
+    handleEither res = case res of
+      Left err -> do
+            Char8.putStrLn err
+            return V.empty
+      Right fs -> return fs
+  in do
+    logThatFactsAreLoadedFrom "Gnu"
+    fs1 <- handleEither fs1E
+    fs2 <- handleEither fs2E
+    fs3 <- handleEither fs3E
+    return $ V.concat [fs1, fs2, fs3]

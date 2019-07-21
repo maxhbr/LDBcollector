@@ -44,49 +44,45 @@ data Configuration
   = Configuration
   { cRatingRules  :: RatingRules
   , cOverrides    :: [Override]
-  , cBaseDataPath :: FilePath
   }
 
 readFacts :: Configuration -> IO Facts
-readFacts conf = let
-    dataDir = cBaseDataPath conf
-    prependDataDir = (dataDir </>)
-  in do
-    factsFromSPDX <- loadSPDXFacts $ prependDataDir "./spdx-license-list-data/"
-    factsFromBlueOak <- loadBlueOakFacts $ prependDataDir "./blue-oak-council-license-list.json"
-    factsFromOCPT <- loadOCPTFacts $ prependDataDir "./OpenChainPolicyTemplate/Table.csv"
-    factsFromScancode <- loadScancodeFacts $ prependDataDir "./nexB_scancode-toolkit_license_list/"
-    factsFromOsadl <- loadOsadlFacts $ prependDataDir "./OSADL/"
-    factsFromChooseALicense <- loadChooseALicenseFacts $ prependDataDir "./choosealicense.com/"
-    factsFromFedora <- loadFedoraFacts $ prependDataDir "./Fedora_Project_Wiki/"
-    factsFromOSI <- loadOSIFacts
-    factsFromOSLC <- loadOslcFacts $ prependDataDir "./OSLC-handbook"
-    factsFromWikipedia <- loadWikipediaFacts
-    factsFromGoogle <- loadGoogleFacts
-    factsFromOkfn <- loadOkfnFacts $ prependDataDir "./okfn-licenses.csv"
-    factsFromGnu <- loadGnuFacts $ prependDataDir "./gnu.org"
-    factsFromDFSG <- loadDFSGFacts
-    factsFromIfrOSS <- loadIfrOSSFacts
-    factsFromOverride <- loadOverrideFacts (cOverrides conf)
-    let facts = V.concat [ factsFromSPDX
-                         , factsFromBlueOak
-                         , factsFromOCPT
-                         , factsFromScancode
-                         , factsFromOsadl
-                         , factsFromChooseALicense
-                         , factsFromFedora
-                         , factsFromOSI
-                         , factsFromOSLC
-                         , factsFromWikipedia
-                         , factsFromGoogle
-                         , factsFromOkfn
-                         , factsFromGnu
-                         , factsFromDFSG
-                         , factsFromIfrOSS
-                         , factsFromOverride
-                         ]
-    hPutStrLn stderr "... done with collecting data"
-    return facts
+readFacts conf = do
+  factsFromSPDX <- loadSPDXFacts
+  factsFromBlueOak <- loadBlueOakFacts
+  factsFromOCPT <- loadOCPTFacts
+  factsFromScancode <- loadScancodeFacts
+  factsFromOsadl <- loadOsadlFacts
+  factsFromChooseALicense <- loadChooseALicenseFacts
+  factsFromFedora <- loadFedoraFacts
+  factsFromOSI <- loadOSIFacts
+  factsFromOSLC <- loadOslcFacts
+  factsFromWikipedia <- loadWikipediaFacts
+  factsFromGoogle <- loadGoogleFacts
+  factsFromOkfn <- loadOkfnFacts
+  factsFromGnu <- loadGnuFacts
+  factsFromDFSG <- loadDFSGFacts
+  factsFromIfrOSS <- loadIfrOSSFacts
+  factsFromOverride <- loadOverrideFacts (cOverrides conf)
+  let facts = V.concat [ factsFromSPDX
+                       , factsFromBlueOak
+                       , factsFromOCPT
+                       , factsFromScancode
+                       , factsFromOsadl
+                       , factsFromChooseALicense
+                       , factsFromFedora
+                       , factsFromOSI
+                       , factsFromOSLC
+                       , factsFromWikipedia
+                       , factsFromGoogle
+                       , factsFromOkfn
+                       , factsFromGnu
+                       , factsFromDFSG
+                       , factsFromIfrOSS
+                       , factsFromOverride
+                       ]
+  hPutStrLn stderr "... done with collecting data"
+  return facts
 
 getLicensesFromFacts :: Vector LicenseName -> Int -> Map LicenseName [LicenseName] -> Facts -> Vector (LicenseName, License)
 getLicensesFromFacts ids 0 mapping facts = V.map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i mapping) facts)) ids

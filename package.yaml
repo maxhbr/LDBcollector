@@ -38,6 +38,7 @@ dependencies:
 - http-client
 - pandoc
 - pandoc-types
+- file-embed
 
 library:
   source-dirs: src

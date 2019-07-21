@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.OKFN
     ( loadOkfnFacts
     , okfnLFC
@@ -14,7 +15,9 @@ import qualified Data.Text as T
 import qualified Data.Vector as V
 import           Data.Csv hiding ((.=))
 import qualified Data.Csv as C
+import qualified Data.ByteString
 import qualified Data.ByteString.Lazy as BL
+import           Data.FileEmbed (embedFile)
 
 import           Model.License
 
@@ -74,11 +77,13 @@ instance FromNamedRecord OkfnFact where
                 <*> r C..: "title"
                 <*> r C..: "url"
 
-loadOkfnFacts :: FilePath -> IO Facts
-loadOkfnFacts csvFile = do
+okfnFile :: BL.ByteString
+okfnFile = BL.fromStrict $(embedFile "data/okfn-licenses.csv")
+
+loadOkfnFacts :: IO Facts
+loadOkfnFacts = do
   logThatFactsAreLoadedFrom "Open Knowledge International"
-  csvData <- BL.readFile csvFile
-  case (C.decodeByName csvData :: Either String (Header, V.Vector OkfnFact)) of
+  case (C.decodeByName okfnFile :: Either String (Header, V.Vector OkfnFact)) of
         Left err -> do
           putStrLn err
           return V.empty

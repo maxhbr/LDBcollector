@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.FedoraProjectWiki
   ( loadFedoraFacts
   , fedoraLFC
@@ -13,9 +14,11 @@ import           Collectors.Common
 import qualified Data.Text as T
 import qualified Data.Vector as V
 import qualified Data.ByteString.Lazy as B
+import qualified Data.Map as Map
 import           Control.Applicative
 import           Data.Csv as C
 import           Data.Aeson as A
+import           Data.FileEmbed (embedDir)
 
 import           Model.License
 
@@ -140,27 +143,26 @@ loadFedoraFactsFromByteString t "Bad" s = case (decodeByName s :: Either String 
 loadFedoraFactsFromByteString _ _ _ = undefined
 
 
-loadFedoraFactsFromFile :: String -> String -> FilePath -> IO Facts
-loadFedoraFactsFromFile t r csv = do
-  s <- B.readFile csv
-  return (loadFedoraFactsFromByteString t r s)
+fpwFolder :: Map.Map FilePath ByteString
+fpwFolder = Map.map (B.fromStrict) $ Map.fromList ( $(embedDir "data/Fedora_Project_Wiki/") )
 
-loadFedoraFacts :: FilePath -> IO Facts
-loadFedoraFacts fedoraFactsDir = do
-  logThatFactsAreLoadedFrom "Fedora Project Wiki"
-  lgfs <- loadFedoraFactsFromFile "license" "Good" (fedoraFactsDir </> "Fedora_Project_Wiki-Good_Licenses.csv")
-  lbfs <- loadFedoraFactsFromFile "license" "Bad" (fedoraFactsDir </> "Fedora_Project_Wiki-Bad_Licenses.csv")
-  lfgfs <- loadFedoraFactsFromFile "font license" "Good" (fedoraFactsDir </> "Fedora_Project_Wiki-Good_Font_Licenses.csv")
-  lfbfs <- loadFedoraFactsFromFile "font license" "Bad" (fedoraFactsDir </> "Fedora_Project_Wiki-Bad_Font_Licenses.csv")
-  lcgfs <- loadFedoraFactsFromFile "content license" "Good" (fedoraFactsDir </> "Fedora_Project_Wiki-Good_Content_Licenses.csv")
-  lcbfs <- loadFedoraFactsFromFile "content license" "Bad" (fedoraFactsDir </> "Fedora_Project_Wiki-Bad_Content_Licenses.csv")
-  ldgfs <- loadFedoraFactsFromFile "documentation license" "Good" (fedoraFactsDir </> "Fedora_Project_Wiki-Good_Documentation_Licenses.csv")
-  ldbfs <- loadFedoraFactsFromFile "documentation license" "Bad" (fedoraFactsDir </> "Fedora_Project_Wiki-Bad_Documentation_Licenses.csv")
-  return $ V.concat [ lgfs
-                    , lbfs
-                    , lfgfs
-                    , lfbfs
-                    , lcgfs
-                    , lcbfs
-                    , ldgfs
-                    , ldbfs ]
+loadFedoraFacts :: IO Facts
+loadFedoraFacts = let
+    lgfs = loadFedoraFactsFromByteString "license" "Good" (fpwFolder Map.! "Fedora_Project_Wiki-Good_Licenses.csv")
+    lbfs = loadFedoraFactsFromByteString "license" "Bad" (fpwFolder Map.! "Fedora_Project_Wiki-Bad_Licenses.csv")
+    lfgfs = loadFedoraFactsFromByteString "font license" "Good" (fpwFolder Map.! "Fedora_Project_Wiki-Good_Font_Licenses.csv")
+    lfbfs = loadFedoraFactsFromByteString "font license" "Bad" (fpwFolder Map.! "Fedora_Project_Wiki-Bad_Font_Licenses.csv")
+    lcgfs = loadFedoraFactsFromByteString "content license" "Good" (fpwFolder Map.! "Fedora_Project_Wiki-Good_Content_Licenses.csv")
+    lcbfs = loadFedoraFactsFromByteString "content license" "Bad" (fpwFolder Map.! "Fedora_Project_Wiki-Bad_Content_Licenses.csv")
+    ldgfs = loadFedoraFactsFromByteString "documentation license" "Good" (fpwFolder Map.! "Fedora_Project_Wiki-Good_Documentation_Licenses.csv")
+    ldbfs = loadFedoraFactsFromByteString "documentation license" "Bad" (fpwFolder Map.! "Fedora_Project_Wiki-Bad_Documentation_Licenses.csv")
+  in do
+    logThatFactsAreLoadedFrom "Fedora Project Wiki"
+    return $ V.concat [ lgfs
+                      , lbfs
+                      , lfgfs
+                      , lfbfs
+                      , lcgfs
+                      , lcbfs
+                      , ldgfs
+                      , ldbfs ]

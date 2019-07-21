@@ -1,6 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Collectors.OSADL
   ( loadOsadlFacts
   ) where
@@ -14,6 +15,7 @@ import qualified Data.Vector as V
 import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as Char8
+import           Data.FileEmbed (embedDir)
 
 import           Model.License
 
@@ -37,18 +39,17 @@ instance LFRaw OSADLFactRaw where
                                          | otherwise                                       = NoRLSR
 
 
-loadOsadlFactFromFile :: FilePath -> FilePath -> IO LicenseFact
-loadOsadlFactFromFile osadlFolder osadlFile = let
-    fileWithPath = osadlFolder </> osadlFile
+loadOsadlFactFromEntry :: (FilePath, ByteString) ->  LicenseFact
+loadOsadlFactFromEntry (osadlFile,content) = let
     spdxId = dropExtension osadlFile
-  in do
-    content <- B.readFile fileWithPath
-    return (LicenseFact (Just $ "https://www.osadl.org/fileadmin/checklists/unreflicenses/" ++ spdxId ++ ".txt") (OSADLFactRaw spdxId content))
+  in LicenseFact (Just $ "https://www.osadl.org/fileadmin/checklists/unreflicenses/" ++ spdxId ++ ".txt") (OSADLFactRaw spdxId content)
 
-loadOsadlFacts :: FilePath -> IO Facts
-loadOsadlFacts osadlFolder = do
-  logThatFactsAreLoadedFrom "OSADL License Checklist"
-  files <- getDirectoryContents osadlFolder
-  let osadls = filter ("osadl" `isSuffixOf`) files
-  facts <- mapM (loadOsadlFactFromFile osadlFolder) osadls
-  return (V.fromList facts)
+osadlFolder :: [(FilePath, ByteString)]
+osadlFolder = $(embedDir "data/OSADL/")
+
+loadOsadlFacts :: IO Facts
+loadOsadlFacts = let
+    facts = map loadOsadlFactFromEntry (filter (\(fp,_) -> "osadl" `isSuffixOf` fp) osadlFolder)
+  in do
+    logThatFactsAreLoadedFrom "OSADL License Checklist"
+    return (V.fromList facts)
