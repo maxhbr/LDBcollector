@@ -113,3 +113,4 @@ The corresponding data is hardcoded in source code, right now.
     - Can not be used, licensing is unclear.
   - EUPL kompatible lizenzen: https://joinup.ec.europa.eu/collection/eupl/eupl-compatible-open-source-licences
   - https://vvlibri.org/fr/guide-de-lauteur-libre-gerer-des-licences-differentes-compatibilites-de-licences/tableau-de
+  - https://github.com/openSUSE/cavil under GPL-2.0
