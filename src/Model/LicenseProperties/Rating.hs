@@ -63,5 +63,20 @@ ratingFromRatingState s = let
     rs  -> RUnknown rs
 
 ratingIsPossibleInRatingState :: Rating -> RatingState -> Bool
-ratingIsPossibleInRatingState r rs = (ratingFromRatingState rs) `ratingMoreGeneralThan` r
+ratingIsPossibleInRatingState r rs = ratingFromRatingState rs `ratingMoreGeneralThan` r
 
+minimalImpliedRating :: Rating -> Rating
+minimalImpliedRating (RUnknown [])                        = RUnknown []
+minimalImpliedRating (RUnknown rs) | RGo `elem` rs        = RGo
+                                   | RAttention `elem` rs = RAttention
+                                   | RStop `elem` rs      = RStop
+                                   | RNoGo `elem` rs      = RNoGo
+minimalImpliedRating r                                    = r
+
+maximalImpliedRating :: Rating -> Rating
+maximalImpliedRating (RUnknown [])                        = RUnknown []
+maximalImpliedRating (RUnknown rs) | RNoGo `elem` rs      = RNoGo
+                                   | RStop `elem` rs      = RStop
+                                   | RAttention `elem` rs = RAttention
+                                   | RGo `elem` rs        = RGo
+maximalImpliedRating r                                    = r

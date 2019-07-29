@@ -37,8 +37,10 @@ import           Collectors.IfrOSS as X
 import           Collectors.Override as X
 
 import           Processors.Rating as X
+import           Processors.ToPage as X
 
 import           Generators.PandocWriter as X
+import           Generators.DetailsWriter as X
 
 data Configuration
   = Configuration
@@ -93,7 +95,7 @@ getLicensesFromFacts ids i mapping facts = let
 
 calculateLicenses :: (Vector LicenseName) -> Facts -> IO [(LicenseName, License)]
 calculateLicenses ids facts = do
-  let licenses = getLicensesFromFacts ids 1 (M.empty) facts
+  let licenses = getLicensesFromFacts ids 1 M.empty facts
   hPutStrLn stderr "... done with calculating licenses"
 
   return $ V.toList licenses

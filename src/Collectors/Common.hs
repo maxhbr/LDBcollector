@@ -11,5 +11,8 @@ logThatFactsAreLoadedFrom name = hPutStrLn stderr $ "## Load facts from: " ++ na
 logThatOneHasFoundFact :: String -> LicenseFact -> IO ()
 logThatOneHasFoundFact name f = hPutStrLn stderr $ "### " ++ name ++ " has found a fact for: " ++ show (getImpliedNames f)
 
+logThatOneHasFoundFacts :: String -> [LicenseFact] -> IO ()
+logThatOneHasFoundFacts name fs = hPutStrLn stderr $ "### " ++ name ++ " has found a fact for: " ++ show (map getImpliedNames fs)
+
 logThatFileContainedFact :: FilePath -> LicenseFact -> IO ()
 logThatFileContainedFact file f = hPutStrLn stderr $ "### the file " ++ file ++ " contained fact for: " ++ show (getImpliedNames f)

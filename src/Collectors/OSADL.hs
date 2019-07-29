@@ -52,4 +52,5 @@ loadOsadlFacts = let
     facts = map loadOsadlFactFromEntry (filter (\(fp,_) -> "osadl" `isSuffixOf` fp) osadlFolder)
   in do
     logThatFactsAreLoadedFrom "OSADL License Checklist"
+    logThatOneHasFoundFacts "OSADL License Checklist" facts
     return (V.fromList facts)

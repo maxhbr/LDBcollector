@@ -31,39 +31,10 @@ import qualified Data.ByteString.Lazy as BL
 import           Model.License
 import           Model.Query
 import           Processors.Rating
+import           Processors.ToPage
 
 renderSource :: LicenseFactClassifier -> Inlines
 renderSource lfc = P.space <> P.text "(source: " <> toInline lfc <> P.text ")"
-
-data LicenseDetails
-  = LicenseDetails
-  { ldFullname :: LicenseName
-  , ldShortname :: LicenseName
-  , ldRating :: Rating
-  , ldCopyleft :: Maybe CopyleftKind
-  , ldHasPatentHint :: Maybe Bool
-  , ldNonCommercial :: Maybe Bool
-  , ldOtherNames :: [LicenseName]
-  } deriving (Show, Generic)
-instance ToNamedRecord LicenseDetails where
-  toNamedRecord details = namedRecord [ "Fullname"      C..= ldFullname details
-                                      , "Shortname"     C..= ldShortname details
-                                      , "Rating"        C..= show (ldRating details)
-                                      , "Copyleft"      C..= case ldCopyleft details of
-                                          Just copyleft -> show copyleft
-                                          Nothing       -> "UNDEFINED"
-                                      , "HasPatentHint" C..= case ldHasPatentHint details of
-                                          Just patentHint -> show patentHint
-                                          Nothing       -> "UNDEFINED"
-                                      , "IsNonCommercial" C..= case ldNonCommercial details of
-                                          Just nc -> show nc
-                                          Nothing -> "UNDEFINED"
-                                      ]
-
-writeListOfDetailsToFile :: FilePath -> [LicenseDetails] -> IO ()
-writeListOfDetailsToFile csv detailss = let
-    bs = C.encodeByName (V.fromList ["Fullname","Shortname","Rating","Copyleft","HasPatentHint", "IsNonCommercial"]) detailss
-  in BL.writeFile csv bs
 
 calculateDetails :: RatingRules -> License -> LicenseName -> LicenseName -> LicenseDetails
 calculateDetails ratingRules lic shortname fullname = let
@@ -101,102 +72,83 @@ renderDetails details = let
             <> P.bulletList (map (P.para . P.code) (ldOtherNames details))
        else mempty
 
-renderDescription :: License -> Blocks
-renderDescription lic = let
-    impliedDesc = getImpliedDescription lic
-  in case unpackRLSR impliedDesc of
-    Just desc -> P.header 2 (P.text "Description")
-      <> P.blockQuote (P.para (P.text desc))
-      <> P.para (case unpackSourceFromRLSR impliedDesc of
-                   Just lfc -> renderSource  lfc
-                   Nothing -> mempty)
-    Nothing -> mempty
+renderDescription :: Maybe (WithSource String) -> Blocks
+renderDescription Nothing = mempty
+renderDescription (Just desc) =
+  P.header 2 (P.text "Description")
+  <> P.blockQuote (P.para (P.text (unpackWithSource desc)))
+  <> case desc of
+       WithSource lfc _ -> P.para (renderSource  lfc)
+       WithoutSource _  -> mempty
 
-renderJudgements :: License -> Blocks
-renderJudgements lic = let
-    jdgsMap = unpackSLSR (getImpliedJudgement lic)
-    sortFun (_,PositiveJudgement _) (_,PositiveJudgement _) = EQ
-    sortFun (_,PositiveJudgement _) _                       = LT
-    sortFun (_,NeutralJudgement _) (_,PositiveJudgement _)  = GT
-    sortFun (_,NeutralJudgement _) (_,NeutralJudgement _)   = EQ
-    sortFun (_,NeutralJudgement _) _                        = LT
-    sortFun (_,NegativeJudgement _) (_,NegativeJudgement _) = EQ
-    sortFun (_,NegativeJudgement _) _                       = GT
-    fun :: [Blocks] -> (LicenseFactClassifier, Judgement) -> [Blocks]
-    fun old (k,j) = let
-        fun' d = P.space <> P.text d <> renderSource k
-      in old ++ [P.para (case j of
-                           PositiveJudgement d -> P.strong (P.text "↑") <> fun' d
-                           NeutralJudgement d  -> fun' d
-                           NegativeJudgement d -> P.strong (P.text "↓") <> fun' d )]
+renderJudgements :: [WithSource Judgement] -> Blocks
+renderJudgements jdgs = let
+    fun' :: Judgement -> Inlines -> Blocks
+    fun' j i = P.para (case j of
+                          PositiveJudgement d -> P.strong (P.text "↑") <> P.text d <> i
+                          NeutralJudgement d  -> P.text d <> i
+                          NegativeJudgement d -> P.strong (P.text "↓") <> P.text d <> i )
+    fun old (WithoutSource j) = old ++ [fun' j mempty]
+    fun old (WithSource k j) = old ++ [fun' j (renderSource k)]
   in P.header 2 (P.text "Comments on (easy) usability")
-    <> (P.bulletList . foldl fun [] . sortBy sortFun . M.assocs) jdgsMap
+    <> (P.bulletList . foldl fun []) jdgs
 
-renderObligations :: License -> Blocks
-renderObligations lic = let
-    impliedObligations = getImpliedObligations lic
-  in case unpackRLSR impliedObligations of
-  Just licOs -> P.header 2 (P.text "Obligations")
-                <> toBlock licOs
-                <> P.para (case unpackSourceFromRLSR impliedObligations of
-                             Just lfc -> renderSource  lfc
-                             Nothing -> mempty)
-  Nothing -> mempty
+renderObligations :: Maybe (WithSource LicenseObligations) -> Blocks
+renderObligations Nothing = mempty
+renderObligations (Just obs) =
+  P.header 2 (P.text "Obligations")
+  <> toBlock (unpackWithSource obs)
+  <> case obs of
+       WithSource lfc _ -> P.para (renderSource  lfc)
+       WithoutSource _  -> mempty
 
-renderURLs :: License -> Blocks
-renderURLs lic = let
-    urls :: [(Maybe String, String)]
-    urls = let
-        sortFun _ (Nothing,_)            = LT
-        sortFun (Nothing,_) _            = GT
-        sortFun (Just d1,_) (Just d2,_) = compare d1 d2
-        stripPref :: Eq a => [a] -> [a] -> [a]
-        stripPref pref act = fromMaybe act (stripPrefix pref act)
-        cleanupForNub = stripPref "www" . stripPref "http://" . stripPref "https://" . map toLower
-        nubFun (_,u1) (_,u2) = cleanupForNub u1 == cleanupForNub u2
-      in nubBy nubFun . sortBy sortFun $ unpackCLSR (getImpliedURLs lic)
+renderURLs :: [(Maybe String, URL)] -> Blocks
+renderURLs [] = mempty
+renderURLs urls = let
   in P.header 2 (P.text "URLs")
     <> P.bulletList (map (\case
                              (Just desc, url) -> P.para (P.strong (P.text (desc ++ ":")) <> P.space <> P.text url)
                              (Nothing, url)   -> P.para (P.text url)) urls)
 
-renderOSADLRule :: License -> Blocks
-renderOSADLRule lic = case queryLicense (LFC "OSADL License Checklist") (AL.key "osadlRule" . AL._String) lic of
-  Just osadlRule ->  P.header 2 (P.text "OSADL Rule")
-    <> P.codeBlock (T.unpack osadlRule)
-  Nothing        -> mempty
+renderOSADLRule :: Maybe (WithSource Text) -> Blocks
+renderOSADLRule Nothing          = mempty
+renderOSADLRule (Just osadlRule) =
+  P.header 2 (P.text "OSADL Rule")
+  <> P.codeBlock (T.unpack (unpackWithSource osadlRule))
+  <> case osadlRule of
+       WithSource lfc _ -> P.para (renderSource lfc)
+       WithoutSource _  -> mempty
 
-renderText :: License -> Blocks
-renderText lic = case unpackRLSR (getImpliedText lic) of
-  Just text -> P.header 2 (P.text "Text")
-    <> P.codeBlock (T.unpack text)
-  Nothing   -> mempty
+renderText :: Maybe (WithSource Text) -> Blocks
+renderText Nothing = mempty
+renderText (Just text) =
+  P.header 2 (P.text "Text")
+  <> P.codeBlock (T.unpack (unpackWithSource text))
+
 
 renderRawData :: License -> Blocks
 renderRawData lic = P.horizontalRule
                     <> P.header 2 (P.text "Raw Data")
                     <> P.codeBlock (unpack (encodePretty lic))
 
-licenseToPandoc :: RatingRules -> (LicenseName, License) -> (Pandoc, LicenseDetails)
-licenseToPandoc ratingRules (licName, lic) = let
-    shortname = fromMaybe "" . unpackRLSR $ getImpliedId lic
-    fullname = fromMaybe licName . unpackRLSR $ getImpliedFullName lic
+licenseToPandoc :: LicenseName -> Page -> Pandoc
+licenseToPandoc shortname page = let
+    fullname = (ldFullname . pLicenseDetails) page
     headerLine = fullname ++ " (" ++ shortname ++ ")"
-    details = calculateDetails ratingRules lic shortname fullname
-  in ( P.doc $ P.header 1 (P.text headerLine)
-            <> renderDetails details
-            <> renderDescription lic
-            <> renderJudgements lic
-            <> renderObligations lic
-            <> renderURLs lic
-            <> renderOSADLRule lic
-            <> renderText lic
-            <> renderRawData lic
-     , details)
+  in P.doc $ P.header 1 (P.text headerLine)
+          <> renderDetails (pLicenseDetails page)
+          <> renderDescription (pDescription page)
+          <> renderJudgements (pJudgements page)
+          <> renderObligations (pObligations page)
+          <> renderURLs (pURLs page)
+          <> renderOSADLRule (pOSADLRule page)
+          <> renderText (pText page)
+          <> renderRawData (pLicense page)
 
-writePandoc :: RatingRules -> FilePath -> (LicenseName, License) -> IO LicenseDetails
-writePandoc ratingRules outDirectory (licName, lic) = let
-    (pandoc, details) = licenseToPandoc ratingRules (licName, lic)
+writePandoc :: FilePath -> Page -> IO ()
+writePandoc outDirectory page = let
+    shortname = (ldShortname . pLicenseDetails) page
+    pandoc = licenseToPandoc shortname page
     createDirectoryIfNotExists folder = do
       dirExists <- doesDirectoryExist folder
       unless dirExists $
@@ -207,26 +159,23 @@ writePandoc ratingRules outDirectory (licName, lic) = let
     createDirectoryIfNotExists (outDirectory </> "org")
     case P.runPure (P.writeOrg P.def pandoc) of
       Left err -> print err
-      Right org -> T.writeFile (outDirectory </> "org" </> licName ++ ".org") org
+      Right org -> T.writeFile (outDirectory </> "org" </> shortname ++ ".org") org
 
     createDirectoryIfNotExists (outDirectory </> "md")
     case P.runPure (P.writeMarkdown P.def pandoc) of
       Left err -> print err
-      Right md -> T.writeFile (outDirectory </> "md" </> licName ++ ".md") md
+      Right md -> T.writeFile (outDirectory </> "md" </> shortname ++ ".md") md
 
     createDirectoryIfNotExists (outDirectory </> "html")
     case P.runPure (P.writeHtml5String P.def pandoc) of
       Left err -> print err
-      Right html -> T.writeFile (outDirectory </> "html" </> licName ++ ".html") html
+      Right html -> T.writeFile (outDirectory </> "html" </> shortname ++ ".html") html
 
     createDirectoryIfNotExists (outDirectory </> "adoc")
     case P.runPure (P.writeAsciiDoc P.def pandoc) of
       Left err -> print err
-      Right adoc -> T.writeFile (outDirectory </> "adoc" </> licName ++ ".adoc") adoc
+      Right adoc -> T.writeFile (outDirectory </> "adoc" </> shortname ++ ".adoc") adoc
 
-    return details
+writePandocs :: FilePath -> [Page] -> IO ()
+writePandocs outDirectory = mapM_ (writePandoc outDirectory)
 
-writePandocs :: RatingRules -> FilePath -> [(LicenseName, License)] -> IO ()
-writePandocs ratingRules outDirectory lics = do
-  detailss <- mapM (writePandoc ratingRules outDirectory) lics
-  writeListOfDetailsToFile (outDirectory </> "index.csv") detailss
