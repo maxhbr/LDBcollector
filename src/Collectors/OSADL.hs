@@ -35,8 +35,8 @@ instance LFRaw OSADLFactRaw where
   getImpliedCopyleft f@(OSADLFactRaw _ r) | "COPYLEFT CLAUSE Questionable" `B.isInfixOf` r = mkSLSR f MaybeCopyleft
                                           | "COPYLEFT CLAUSE Yes"          `B.isInfixOf` r = mkSLSR f Copyleft
                                           | otherwise                                      = NoSLSR
-  getHasPatentnHint f@(OSADLFactRaw _ r) | "PATENT HINTS Yes" `B.isInfixOf` r              = mkRLSR f 90 True
-                                         | otherwise                                       = NoRLSR
+  getHasPatentnHint f@(OSADLFactRaw _ r)  | "PATENT HINTS Yes" `B.isInfixOf` r             = mkRLSR f 90 True
+                                          | otherwise                                      = NoRLSR
 
 
 loadOsadlFactFromEntry :: (FilePath, ByteString) ->  LicenseFact
