@@ -1,4 +1,4 @@
-module FindClusters
+module Generators.FindClusters
   ( findClusters
   , writeClusters
   , writeClustersFromLicenses
@@ -13,7 +13,7 @@ import qualified Data.Vector as V
 import           Data.Ord
 import           System.IO
 
-import Lib
+import           Model.License
 
 getNamesFromFact f = maybeToList (unpackRLSR (getImpliedId f)) ++ unpackCLSR (getImpliedNames f)
 

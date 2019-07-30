@@ -99,7 +99,7 @@ data Page
   , pLicense        :: License
   } deriving (Show, Generic)
 
-toPage :: RatingRules -> (LicenseName, License) -> Page
+toPage :: RatingRules -> (LicenseName, License) -> (LicenseName, License, Page)
 toPage ratingRules (licName, lic) = let
 
     details = calculateDetails ratingRules (licName, lic)
@@ -154,15 +154,17 @@ toPage ratingRules (licName, lic) = let
         Just text' -> Just (sourcifyer text')
         Nothing    -> Nothing
 
-  in Page details
-          description
-          judgements
-          obligations
-          urls
-          osadlRule
-          text
-          lic
+    page = Page details
+                description
+                judgements
+                obligations
+                urls
+                osadlRule
+                text
+                lic
+
+  in (licName, lic, page)
 
 
-toPages :: RatingRules -> [(LicenseName, License)] -> [Page]
+toPages :: RatingRules -> [(LicenseName, License)] -> [(LicenseName, License, Page)]
 toPages ratingRules = map (toPage ratingRules)

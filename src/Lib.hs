@@ -4,7 +4,9 @@ module Lib
   , readFacts
   , calculateLicenses, calculateSPDXLicenses
   , writeLicenseJSONs
+  , cleanupAndMakeOutputFolder
   , Configuration (..)
+  , runLDBCore
   ) where
 
 import qualified Prelude as P
@@ -15,6 +17,9 @@ import qualified Data.Map as M
 import qualified Data.List as L
 import qualified Data.ByteString.Lazy as BL
 import           Data.Aeson.Encode.Pretty (encodePretty)
+import           Control.Monad
+import           GHC.IO.Encoding (setLocaleEncoding, utf8)
+import           System.Environment
 
 import           Model.License as X
 import           Model.Query as X
@@ -41,6 +46,28 @@ import           Processors.ToPage as X
 
 import           Generators.PandocWriter as X
 import           Generators.DetailsWriter as X
+import           Generators.Stats as X
+import           Generators.FindClusters as X
+
+runLDBCore :: Configuration -> ([(LicenseName, License, Page)] -> IO FilePath) -> IO ()
+runLDBCore configuration handler = do
+  setLocaleEncoding utf8
+  args <- getArgs
+
+  -- harvest facts
+  facts <- readFacts configuration
+
+  -- calculate licenses
+  licenses <- case args of
+    [] -> calculateSPDXLicenses facts
+    _  -> calculateLicenses (V.fromList args) facts
+
+  let pages = toPages (cRatingRules configuration) licenses
+
+  outputFolder <- handler pages
+
+  -- echo some stats
+  writeStats outputFolder facts licenses
 
 data Configuration
   = Configuration
@@ -124,4 +151,12 @@ writeLicenseJSONs outputFolder licenses = do
                    return outputFile) licenses
   BL.writeFile (jsonOutputFolder </> "_all.json") (encodePretty licenses)
   BL.writeFile (jsonOutputFolder </> "_index.json") (encodePretty jsons)
+
+cleanupAndMakeOutputFolder :: FilePath -> IO FilePath
+cleanupAndMakeOutputFolder outputFolder = do
+  dirExists <- doesDirectoryExist outputFolder
+  when dirExists $
+    removeDirectoryRecursive outputFolder
+  createDirectory outputFolder
+  return outputFolder
 

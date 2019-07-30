@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
-module Stats
+module Generators.Stats
     ( writeStats
     ) where
 
@@ -13,8 +13,8 @@ import           GHC.IO.Encoding
 import           System.Environment
 import           System.IO
 
-import Lib
-import FindClusters
+import           Model.License
+import           Generators.FindClusters
 
 writeStatsOnFacts :: Handle -> [LicenseFact] -> IO ()
 writeStatsOnFacts handle fs = let

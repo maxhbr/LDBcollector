@@ -11,39 +11,18 @@ import           System.Environment
 
 import Lib
 import Configuration (configuration)
-import Stats (writeStats)
-
-cleanupAndMakeOutputFolder :: FilePath -> IO FilePath
-cleanupAndMakeOutputFolder outputFolder = do
-  dirExists <- doesDirectoryExist outputFolder
-  when dirExists $
-    removeDirectoryRecursive outputFolder
-  createDirectory outputFolder
-  return outputFolder
 
 main :: IO ()
 main = do
-  setLocaleEncoding utf8
-
-  args <- getArgs
-
-  -- harvest facts
-  facts <- readFacts configuration
-
-  -- make folders
   outputFolder <- cleanupAndMakeOutputFolder "_generated/"
+  runLDBCore configuration
+    (\input ->
+        do
+          let licenses = map (\(ln, l, _) -> (ln, l)) input
+          let pages = map (\(_,_,p) -> p) input
 
-  -- calculate licenses
-  licenses <- case args of
-    [] -> calculateSPDXLicenses facts
-    _  -> calculateLicenses (V.fromList args) facts
+          writeLicenseJSONs outputFolder licenses
+          writeDetails outputFolder pages
+          writePandocs outputFolder pages
 
-  let pages = toPages (cRatingRules configuration) licenses
-
-  -- generate output
-  writeLicenseJSONs outputFolder licenses
-  writeDetails outputFolder pages
-  writePandocs outputFolder pages
-
-  -- echo some stats
-  writeStats outputFolder facts licenses
+          return outputFolder)
