@@ -3,14 +3,13 @@
 {-# LANGUAGE GADTs #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes #-}
-
 import qualified Prelude as P
 import           MyPrelude
 
 import           Test.Hspec
 import           Test.QuickCheck
 import           Control.Exception (evaluate)
-import Text.RawString.QQ
+import           Text.RawString.QQ
 
 import           Debug.Trace (trace)
 
