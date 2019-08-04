@@ -2,7 +2,7 @@
 
 set -e
 
-FILES=../spdx-license-list-data/json/details/*.json
+FILES=../spdx-license-list-data/details/*.json
 for f in $FILES; do
     echo "Processing $id file..."
     id=$(basename $f)
