@@ -48,7 +48,7 @@ ratingRules = let
         _ -> removeRatingFromState RGo
 
     addRule "Fedora bad Rating implies at least Stop" $ \l ->
-      case M.lookup blueOakLFC (unpackSLSR $ getImpliedJudgement l) of
+      case M.lookup fedoraLFC (unpackSLSR $ getImpliedJudgement l) of
         Just (NegativeJudgement _) -> removeRatingFromState RGo . removeRatingFromState RAttention
         _                          -> id
 
