@@ -113,6 +113,7 @@ proprietäre Software überführen.
 1. MirOS License: http://mirbsd.org/MirOS-Licence
 1. MIT License: https://spdx.org/licenses/MIT.html#licenseText
 1. Mozart License: http://mozart.github.io/license-info/license.html
+1. Mulan Permissive Software License，Version 1 (Mulan PSL v1): http://license.coscl.org.cn/MulanPSL/
 1. Naumen Public License: http://www.worldlii.org/int/other/PubRL/2009/42.html
 1. NTP License: https://www.eecis.udel.edu/~mills/ntp/html/copyright.html
 1. NUnit License: http://nunit.org/docs/2.4/license.html
