@@ -1369,5 +1369,5 @@ main = hspec $ do
 
   describe "Lib" $ do
     it "it finds some facts" $ do
-      fs <- readFacts (Configuration [] [] "./data")
+      fs <- readFacts (Configuration [] [])
       fs `shouldSatisfy` (\fs' -> (V.length fs') >= 2698)
