@@ -24,19 +24,19 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/ISC.html "SPDX"))
+
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This license is compatible with the
+-   **↑**This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/ISC.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -86,6 +86,8 @@ OSADL Rule
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
     	YOU MUST Forward License text
+
+(source: OSADL License Checklist)
 
 Text
 ----

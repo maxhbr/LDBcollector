@@ -6,14 +6,14 @@ Creative Commons Attribution Share Alike 3.0 Unported (CC-BY-SA-3.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** In contrast to the CC-SA 1.0 license, version 3.0 is
-    considered to be compatible to the DFSG. In addition, the version
-    2.0 and 2.5 are NOT transitively compatible because of clause 4b,
-    since that only allows redistribution of derivative works under
-    later versions of the license. (source: [Debian Free Software
+-   **↑**In contrast to the CC-SA 1.0 license, version 3.0 is considered
+    to be compatible to the DFSG. In addition, the version 2.0 and 2.5
+    are NOT transitively compatible because of clause 4b, since that
+    only allows redistribution of derivative works under later versions
+    of the license. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

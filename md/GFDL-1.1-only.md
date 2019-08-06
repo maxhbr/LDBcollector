@@ -12,7 +12,7 @@ GNU Free Documentation License v1.1 only (GFDL-1.1-only)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Exception: Data licensed under the FDL with no invariant
+-   **↓**Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
     http://www.debian.org/vote/2006/vote\_001\#outcome (source: [Debian
     Free Software

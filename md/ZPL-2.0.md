@@ -16,14 +16,14 @@ Zope Public License 2.0 (ZPL-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/ZPL-2.0.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----

@@ -10,7 +10,7 @@ PHP License v3.01 (PHP-3.01)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

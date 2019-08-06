@@ -1,13 +1,13 @@
 == Sybase Open Watcom Public License 1.0 (Watcom-1.0)
 
 [cols=",",options="header",]
-|====================================================
+|===============================================
 |Key |Value
 |Fullname |Sybase Open Watcom Public License 1.0
 |Shortname |Watcom-1.0
-|Rating |Unknown, probably Attention or Stop or No-Go
+|Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===============================================
 
 *Other Names:*
 
@@ -17,9 +17,9 @@
 
 === Comments on (easy) usability
 
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/Watcom-1.0.html[SPDX])
-*  Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+* Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
 Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke
 umfasst, sondern definierte Ausnahmen enthält. Sofern Modifikationen der
 Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden,
@@ -27,12 +27,7 @@ können diese Dateien auch unter anderen, z.B. proprietären
 Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination
 von Software unter verschiedenen Lizenztypen erleichtert werden.
 (source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
-* *↓* This software licenses which is NOT OKAY for Fedora. Nothing in
-Fedora is permitted to use this license. It is either non-free or
-deprecated. (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-* *↓* Google Classification is CANNOT_BE_USED "Code released under the
+* **↓**Google Classification is CANNOT_BE_USED "Code released under the
 Sybase Open Watcom Public License version 1.0 cannot be used at Google.
 Provision 12.1\169 terminates the license if any patent litigation is
 filed against Sybase or any contributor, including cross claims and
@@ -42,6 +37,11 @@ provision goes too far in restricting the exercise of Google\8217s
 patent rights and is therefore prohibited at Google." (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+* **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+Fedora is permitted to use this license. It is either non-free or
+deprecated. (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki])
 
 === URLs
 

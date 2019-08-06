@@ -17,16 +17,16 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
-
-- *↑* Older versions of the Apache License (1.0 and 1.1) are also DFSG
+- *↑*Older versions of the Apache License (1.0 and 1.1) are also DFSG
   free, but the Apache Software Foundation recommends using the Apache
   2.0 license instead. (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]])
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*Rating is: Bronze (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
+
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
@@ -62,6 +62,8 @@
     		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
     		YOU MUST NOT Use "Apache" in product name
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 --------------
 

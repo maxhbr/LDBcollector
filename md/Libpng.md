@@ -6,7 +6,7 @@ libpng License (Libpng)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
@@ -39,6 +39,8 @@ OSADL Rule
     		YOU MUST Mark
     		YOU MUST NOT Appropriate
     USE CASE Binary delivery
+
+(source: OSADL License Checklist)
 
 Text
 ----

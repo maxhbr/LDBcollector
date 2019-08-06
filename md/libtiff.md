@@ -12,15 +12,15 @@ libtiff License (libtiff)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
 ----
@@ -40,6 +40,8 @@ OSADL Rule
     	YOU MUST Provide Copyright notices In Documentation
     	YOU MUST Provide License text In Documentation
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----

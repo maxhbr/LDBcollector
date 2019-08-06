@@ -41,6 +41,8 @@ OSADL Rule
     PATENT HINTS Yes
     COPYLEFT CLAUSE Questionable
 
+(source: OSADL License Checklist)
+
 Text
 ----
 

@@ -16,7 +16,7 @@ Sun Public License v1.0 (SPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/SPL-1.0.html "SPDX"))
 
 -   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen

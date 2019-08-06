@@ -22,17 +22,17 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This license is compatible with the
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/EPL-1.0.html "SPDX"))
+
+-   **↑**This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/EPL-1.0.html "SPDX"))
 
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
@@ -111,6 +111,8 @@ OSADL Rule
     COMPATIBILITY Zlib
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----

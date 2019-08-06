@@ -23,12 +23,12 @@
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/AGPL-3.0-or-later.html[SPDX])
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/AGPL-3.0-or-later.html[SPDX])
-*  Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer
+* Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer
 verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls
 nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die
 hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und
@@ -168,6 +168,8 @@ INCOMPATIBILITY XFree86-1.1
 PATENT HINTS Yes
 COPYLEFT CLAUSE Yes
 ....
+
+(source: OSADL License Checklist)
 
 '''''
 

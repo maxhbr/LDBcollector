@@ -6,13 +6,13 @@ Creative Commons Attribution Share Alike 1.0 Generic (CC-BY-SA-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** This license is not compatible with the
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↓**This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
-
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
 ----

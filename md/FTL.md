@@ -10,11 +10,11 @@ Freetype Project License (FTL)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -56,6 +56,8 @@ OSADL Rule
     	YOU MUST Credit In Documentation FreeType Team
     	YOU MUST NOT Promote
     	YOU MUST Credit FreeType Team
+
+(source: OSADL License Checklist)
 
 Text
 ----

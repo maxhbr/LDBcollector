@@ -14,12 +14,12 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
-
-- *↑* Google Classification is NOTICE (source:
+- *↑*Google Classification is NOTICE (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
+
+- *↑*Rating is: Bronze (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs
 
@@ -38,6 +38,8 @@
     YOU MUST Provide License text In Documentation
     YOU MUST NOT Promote
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 ** Text
 

@@ -5,11 +5,11 @@ ICU License (ICU)
 
 **Other Names:**
 
--   `x11`
+-   `X11`
 
 -   `X11 License`
 
--   `X11`
+-   `x11`
 
 -   `x11-xconsortium`
 
@@ -18,7 +18,7 @@ ICU License (ICU)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
@@ -49,8 +49,6 @@ URLs
 
 -   http://www.xfree86.org/3.3.6/COPYRIGHT2.html\#3
 
--   https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
-
 OSADL Rule
 ----------
 
@@ -60,6 +58,8 @@ OSADL Rule
     	YOU MUST Provide Copyright notices In Documentation
     	YOU MUST Provide License text In Documentation
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -93,33 +93,37 @@ Raw Data
 
     {
         "__impliedNames": [
-            "ICU",
-            "ICU License",
-            "x11",
-            "X11 License",
             "X11",
+            "X11 License",
+            "x11",
+            "ICU",
             "x11-xconsortium",
-            "X11-Style (X Consortium)"
+            "X11-Style (X Consortium)",
+            "ICU License"
         ],
         "__impliedId": "ICU",
         "facts": {
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
-                        "ICU",
-                        "ICU",
-                        "ICU License",
+                        "X11",
+                        "X11",
+                        "X11 License",
                         "x11",
-                        "X11 License"
+                        "ICU",
+                        "x11-xconsortium",
+                        "X11-Style (X Consortium)"
                     ],
-                    "__impliedId": "ICU"
+                    "__impliedId": "X11"
                 },
-                "shortname": "ICU",
+                "shortname": "X11",
                 "otherNames": [
-                    "ICU",
-                    "ICU License",
+                    "X11",
+                    "X11 License",
                     "x11",
-                    "X11 License"
+                    "ICU",
+                    "x11-xconsortium",
+                    "X11-Style (X Consortium)"
                 ]
             },
             "SPDX": {
@@ -249,13 +253,13 @@ Raw Data
             },
             "ifrOSS": {
                 "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html",
+                "ifrURL": "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3",
                 "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "ICU License",
+                "ifrName": "X11 License",
                 "ifrId": null,
                 "_implications": {
                     "__impliedNames": [
-                        "ICU License"
+                        "X11 License"
                     ],
                     "__impliedJudgement": [
                         [
@@ -276,7 +280,7 @@ Raw Data
                     "__impliedURLs": [
                         [
                             null,
-                            "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html"
+                            "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
                         ]
                     ]
                 }
@@ -350,10 +354,6 @@ Raw Data
             [
                 "Homepage",
                 "http://www.xfree86.org/current/LICENSE5.html"
-            ],
-            [
-                null,
-                "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html"
             ]
         ]
     }

@@ -39,18 +39,18 @@ ________________________________________________________________________________
 
 === Comments on (easy) usability
 
-* *↑* This is the most popular free software license. Most of Linux (the
-kernel) is distributed under the GPL, as is most of the other basic
-software in the GNU operating system. (source:
-https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
-* *↑* This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/GPL-3.0-only.html[SPDX])
 * *↑* This License is featured by choosealicense.com (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt[choosealicense.com])
-* *↓* Google Classification is RESTRICTED (source:
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/GPL-3.0-only.html[SPDX])
+* **↑**This is the most popular free software license. Most of Linux
+(the kernel) is distributed under the GPL, as is most of the other basic
+software in the GNU operating system. (source:
+https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+* **↑**This software Licenses is OK for Fedora (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki])
+* **↓**Google Classification is RESTRICTED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 
@@ -161,6 +161,8 @@ INCOMPATIBILITY XFree86-1.1
 PATENT HINTS Yes
 COPYLEFT CLAUSE Yes
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

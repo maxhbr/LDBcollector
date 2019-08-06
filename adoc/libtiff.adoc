@@ -16,14 +16,14 @@
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This software Licenses is OK for Fedora (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki])
 
 === URLs
 
@@ -41,6 +41,8 @@ USE CASE Source code delivery
 	YOU MUST Provide License text In Documentation
 	YOU MUST NOT Promote
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

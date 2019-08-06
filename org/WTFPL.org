@@ -26,24 +26,24 @@
 
 ** Comments on (easy) usability
 
-- *↑* This license is compatible with the DebianFreeSoftwareGuidelines
+- *↑*This license is compatible with the DebianFreeSoftwareGuidelines
   (DFSG-free) (source: [[https://wiki.debian.org/DFSGLicenses][Debian
   Free Software Guidelines]])
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
-- *↓* Rating is: Lead (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
-
-- *↓* Google Classification is CANNOT_BE_USED "Code released under the
+- *↓*Google Classification is CANNOT_BE_USED "Code released under the
   WTFPL cannot be used at Google. This license has a large number of
   issues (lack of warranty disclaimer, very vague rights grant), and was
   also rejected as an open source license by OSI. We also do not allow
   contribution to projects under the WTFPL." (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
+
+- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
+  License List]])
 
 ** Obligations
 
@@ -78,6 +78,8 @@
 #+BEGIN_EXAMPLE
     USE CASE Source code delivery OR Binary delivery
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 ** Text
 

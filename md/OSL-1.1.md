@@ -10,17 +10,17 @@ Open Software License 1.1 (OSL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** This license is not compatible with the
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↓**This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
-
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
 ----

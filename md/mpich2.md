@@ -12,11 +12,11 @@ mpich2 License (mpich2)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

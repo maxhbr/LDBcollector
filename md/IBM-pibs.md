@@ -10,7 +10,7 @@ IBM PowerPC Initialization and Boot Software (IBM-pibs)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -30,6 +30,8 @@ OSADL Rule
     	YOU MUST Provide Copyright notice (Copyright notice)
     	YOU MUST Provide License text
     PATENT HINTS Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----

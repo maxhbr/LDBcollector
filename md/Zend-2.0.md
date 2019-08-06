@@ -10,14 +10,14 @@ Zend License v2.0 (Zend-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
-
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

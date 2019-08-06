@@ -6,7 +6,7 @@ Net Boolean Public License v1 (NBPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -44,6 +44,8 @@ OSADL Rule
     		YOU MUST Rename Source code
     	YOU MUST Provide Modification report
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----

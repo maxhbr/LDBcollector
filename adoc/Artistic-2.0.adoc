@@ -28,20 +28,20 @@ ________________________________________________________________________________
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* This license is compatible with the DebianFreeSoftwareGuidelines
-(DFSG-free) (source: https://wiki.debian.org/DFSGLicenses[Debian Free
-Software Guidelines])
-* *↑* This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/Artistic-2.0.html[SPDX])
-*  Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This license is compatible with the DebianFreeSoftwareGuidelines
+(DFSG-free) (source: https://wiki.debian.org/DFSGLicenses[Debian Free
+Software Guidelines])
+* **↑**This software Licenses is OK for Fedora (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki])
+* Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
 nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
 Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
 Weiterentwicklungen weiterverbreitet werden können. (source:

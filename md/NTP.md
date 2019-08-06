@@ -16,11 +16,11 @@ NTP License (NTP)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/NTP.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -60,6 +60,8 @@ OSADL Rule
     	YOU MUST NOT Promote
     	YOU MUST Forward Copyright notices In Documentation
     	YOU MUST Forward License text In Documentation
+
+(source: OSADL License Checklist)
 
 Text
 ----

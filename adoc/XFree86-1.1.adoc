@@ -15,8 +15,8 @@
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 
@@ -46,6 +46,8 @@ USE CASE Binary delivery
 	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
 	YOU MUST NOT Promote
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

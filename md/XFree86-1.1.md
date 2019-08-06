@@ -10,7 +10,7 @@ XFree86 License 1.1 (XFree86-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -43,6 +43,8 @@ OSADL Rule
     	YOU MUST Forward License text In Documentation OR Distribution material
     	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----

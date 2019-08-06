@@ -16,12 +16,12 @@ Nokia Open Source License (Nokia)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Nokia.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Nokia.html "SPDX"))
 
 -   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
     Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten

@@ -6,16 +6,16 @@ Apple Public Source License 1.2 (APSL-1.2)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/APSL-1.2.html "SPDX"))
 
--   **↓** This license is not compatible with the
+-   **↓**This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
-    in Fedora is permitted to use this license. It is either non-free or
+-   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+    Fedora is permitted to use this license. It is either non-free or
     deprecated. (source: [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 

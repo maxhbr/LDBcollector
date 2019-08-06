@@ -6,7 +6,7 @@ curl License (curl)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
@@ -40,6 +40,8 @@ OSADL Rule
     	YOU MUST Forward Copyright notices
     	YOU MUST Forward License text
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----

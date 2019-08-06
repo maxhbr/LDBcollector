@@ -6,7 +6,7 @@ BSD 3-Clause No Nuclear Warranty (BSD-3-Clause-No-Nuclear-Warranty)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

@@ -6,17 +6,17 @@ Artistic License 1.0 (Perl) (Artistic-1.0-Perl)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Do note that the Artistic License is considered non-free by
-    the FSF. They suggest to use the Clarified Artistic License (also
-    called Artistic License 2.0) instead. However, the original Artistic
+-   **↑**Do note that the Artistic License is considered non-free by the
+    FSF. They suggest to use the Clarified Artistic License (also called
+    Artistic License 2.0) instead. However, the original Artistic
     License is still considered DFSG-free. (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -62,6 +62,8 @@ OSADL Rule
     			YOU MUST Provide Modification report In Distribution material
     			YOU MUST Reference Original source code In Distribution material
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 ------------------------------------------------------------------------
 

@@ -12,7 +12,7 @@ GNU Free Documentation License v1.2 or later (GFDL-1.2-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Exception: Data licensed under the FDL with no invariant
+-   **↓**Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
     http://www.debian.org/vote/2006/vote\_001\#outcome (source: [Debian
     Free Software
@@ -24,9 +24,6 @@ URLs
 -   **Homepage:** http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt
 
 -   **SPDX:** http://spdx.org/licenses/GFDL-1.2-or-later.json
-
-Text
-----
 
 ------------------------------------------------------------------------
 
@@ -100,7 +97,7 @@ Raw Data
                 "homepageUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt",
                 "shortName": "GFDL 1.2 or later",
                 "textUrls": null,
-                "text": "",
+                "text": null,
                 "category": "Copyleft Limited",
                 "osiUrl": null,
                 "owner": "Free Software Foundation (FSF)",
@@ -122,7 +119,6 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedText": "",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -180,7 +176,6 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
-        "__impliedText": "",
         "__impliedURLs": [
             [
                 "SPDX",

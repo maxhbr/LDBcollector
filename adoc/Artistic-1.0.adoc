@@ -16,19 +16,19 @@
 
 === Comments on (easy) usability
 
-* *↑* Do note that the Artistic License is considered non-free by the
+* **↑**Do note that the Artistic License is considered non-free by the
 FSF. They suggest to use the Clarified Artistic License (also called
 Artistic License 2.0) instead. However, the original Artistic License is
 still considered DFSG-free. (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/Artistic-1.0.html[SPDX])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
-* *↓* This software licenses which is NOT OKAY for Fedora. Nothing in
+* **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
 Fedora is permitted to use this license. It is either non-free or
 deprecated. (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora

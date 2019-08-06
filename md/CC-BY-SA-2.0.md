@@ -6,7 +6,7 @@ Creative Commons Attribution Share Alike 2.0 Generic (CC-BY-SA-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

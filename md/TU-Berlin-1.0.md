@@ -12,7 +12,7 @@ Technische Universitaet Berlin License 1.0 (TU-Berlin-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

@@ -25,7 +25,7 @@
   beschränktes Copyleft verstanden werden. (source:
   [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
-- *↓* Google Classification is CANNOT_BE_USED "Code released under the
+- *↓*Google Classification is CANNOT_BE_USED "Code released under the
   GNU Affero General Public License (AGPL) cannot be used in google3
   under any circumstances, and only very rarely on workstations. Read
   more at go/agpl" (source:

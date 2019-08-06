@@ -26,10 +26,10 @@ ________________________________________________________________________________
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/LPPL-1.3c.html[SPDX])
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
 
 === Obligations
 

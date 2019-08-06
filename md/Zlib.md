@@ -26,23 +26,23 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Zlib.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This license is compatible with the
+-   **↑**This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Zlib.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -93,6 +93,8 @@ OSADL Rule
     	IF Software modification
     		YOU MUST Mark
     	YOU MUST NOT Appropriate
+
+(source: OSADL License Checklist)
 
 Text
 ----

@@ -39,10 +39,13 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Note that a 2-clause form of the BSD license, removing the
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX"))
+
+-   **↑**Note that a 2-clause form of the BSD license, removing the
     third condition, is also in use. This is because even a generous
     copyright license does not implicitly forfeit the copyright holder's
     "right of publicity". In other words, even if a license does not
@@ -51,15 +54,12 @@ Comments on (easy) usability
     aware of any exceptions. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -109,6 +109,8 @@ OSADL Rule
     	YOU MUST Provide License text In Documentation OR Distribution material
     	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----

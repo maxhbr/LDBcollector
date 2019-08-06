@@ -10,11 +10,11 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
-
-- *↑* Is OSI Approved (source:
+- *↑*Is OSI Approved (source:
   [[https://spdx.org/licenses/AFL-2.0.html][SPDX]])
+
+- *↑*Rating is: Bronze (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs
 
@@ -59,6 +59,8 @@
     			ATTRIBUTE Duration As long as distributed
     PATENT HINTS Yes
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 --------------
 

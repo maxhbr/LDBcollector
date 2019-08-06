@@ -15,13 +15,13 @@
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↑**This software Licenses is OK for Fedora (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki])
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs

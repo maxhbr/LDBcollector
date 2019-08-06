@@ -43,23 +43,23 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This is the most popular free software license. Most of Linux
+-   **↑** This License is featured by choosealicense.com (source:
+    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt "choosealicense.com"))
+
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX"))
+
+-   **↑**This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
     basic software in the GNU operating system. (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX"))
-
--   **↑** This License is featured by choosealicense.com (source:
-    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt "choosealicense.com"))
-
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations
@@ -158,6 +158,8 @@ OSADL Rule
     INCOMPATIBILITY XFree86-1.1
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----

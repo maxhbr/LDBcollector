@@ -17,7 +17,7 @@
 
 ** Comments on (easy) usability
 
-- *↑* Is OSI Approved (source:
+- *↑*Is OSI Approved (source:
   [[https://spdx.org/licenses/OGTSL.html][SPDX]])
 
 - Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
@@ -28,10 +28,10 @@
   weiterverbreiten, also auch in proprietäre Software überführen.
   (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
-- *↓* Rating is: Lead (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
+  License List]])
 
-- *↓* This software licenses which is NOT OKAY for Fedora. Nothing in
+- *↓*This software licenses which is NOT OKAY for Fedora. Nothing in
   Fedora is permitted to use this license. It is either non-free or
   deprecated. (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora

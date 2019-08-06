@@ -10,7 +10,7 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
+- *↑*Rating is: Bronze (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs
@@ -39,6 +39,8 @@
     		YOU MUST NOT Promote
     PATENT HINTS Yes
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 --------------
 

@@ -6,11 +6,11 @@ TCP Wrappers License (TCP-wrappers)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----

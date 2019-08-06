@@ -16,15 +16,15 @@ Entessa Public License v1.0 (Entessa)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Entessa.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Entessa.html "SPDX"))
 
 URLs
 ----

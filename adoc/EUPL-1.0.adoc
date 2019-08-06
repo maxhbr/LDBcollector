@@ -15,7 +15,7 @@
 
 === Comments on (easy) usability
 
-* *↓* Google Classification is CANNOT_BE_USED "The EUPL is very similar
+* **↓**Google Classification is CANNOT_BE_USED "The EUPL is very similar
 to the AGPL. For the same reasons that the AGPL is banned, the use of
 EUPL-licensed software is not allowed at Google." (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS

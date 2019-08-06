@@ -1,30 +1,30 @@
 == JSON License (JSON)
 
 [cols=",",options="header",]
-|====================================================
+|=======================================
 |Key |Value
 |Fullname |JSON License
 |Shortname |JSON
-|Rating |Unknown, probably Attention or Stop or No-Go
+|Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|====================================================
+|=======================================
 
 === Comments on (easy) usability
 
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
-* *↓* Infamous for the clause The Software shall be used for Good, not
+* **↓**Infamous for the clause The Software shall be used for Good, not
 Evil. (source: https://wiki.debian.org/DFSGLicenses[Debian Free Software
 Guidelines])
-* *↓* This software licenses which is NOT OKAY for Fedora. Nothing in
+* **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
 Fedora is permitted to use this license. It is either non-free or
 deprecated. (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora

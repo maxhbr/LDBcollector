@@ -27,15 +27,15 @@
 
 ** Comments on (easy) usability
 
-- *↑* The following restriction on distributions, which is part of OFL,
+- *↑*Is OSI Approved (source:
+  [[https://spdx.org/licenses/OFL-1.1.html][SPDX]])
+
+- *↑*The following restriction on distributions, which is part of OFL,
   has been widely accepted by open source projects when it is applied to
   fonts: 1) Neither the Font Software nor any of its individual
   components, in Original or Modified Versions, may be sold by itself.
   (source: [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]])
-
-- *↑* Is OSI Approved (source:
-  [[https://spdx.org/licenses/OFL-1.1.html][SPDX]])
 
 ** Obligations
 

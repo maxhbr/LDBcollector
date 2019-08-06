@@ -17,9 +17,9 @@
 
 === Comments on (easy) usability
 
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/NPOSL-3.0.html[SPDX])
-*  Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer
+* Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer
 verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls
 nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten.
 (source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])

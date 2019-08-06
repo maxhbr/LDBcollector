@@ -14,14 +14,14 @@ X.Net License (Xnet)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Xnet.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -32,8 +32,8 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
-    in Fedora is permitted to use this license. It is either non-free or
+-   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+    Fedora is permitted to use this license. It is either non-free or
     deprecated. (source: [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 

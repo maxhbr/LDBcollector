@@ -15,12 +15,12 @@
 
 ** Comments on (easy) usability
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*Is OSI Approved (source:
+  [[https://spdx.org/licenses/IPA.html][SPDX]])
+
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
-
-- *↑* Is OSI Approved (source:
-  [[https://spdx.org/licenses/IPA.html][SPDX]])
 
 - Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer
   verpflichtet von der ursprünglichen Software abgeleitete Werke

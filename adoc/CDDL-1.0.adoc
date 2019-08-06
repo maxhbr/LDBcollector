@@ -17,9 +17,9 @@
 
 === Comments on (easy) usability
 
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/CDDL-1.0.html[SPDX])
-*  Google Classification is RECIPROCAL (source:
+* Google Classification is RECIPROCAL (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 
@@ -66,8 +66,16 @@ USE CASE Binary delivery
 		YOU MUST Provide Copyright notice
 	YOU MUST NOT Restrict Granted rights
 COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
 COMPATIBILITY curl
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
 COMPATIBILITY ISC
+COMPATIBILITY Libpng
 COMPATIBILITY MIT
 COMPATIBILITY NTP
 COMPATIBILITY UPL-1.0
@@ -77,6 +85,8 @@ COMPATIBILITY Zlib
 PATENT HINTS Yes
 COPYLEFT CLAUSE Yes
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 
@@ -280,7 +290,7 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
         "OSADL License Checklist": {
             "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CDDL-1.0.txt",
             "spdxId": "CDDL-1.0",
-            "osadlRule": "USE CASE Source code delivery\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide Delayed source code delivery\n\tYOU MUST Provide Written offer\n\t\tATTRIBUTE Reasonable\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\r\n\t\t\tATTRIBUTE Via Internet\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+            "osadlRule": "USE CASE Source code delivery\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide Delayed source code delivery\n\tYOU MUST Provide Written offer\n\t\tATTRIBUTE Reasonable\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\r\n\t\t\tATTRIBUTE Via Internet\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
             "_implications": {
                 "__impliedNames": [
                     "CDDL-1.0"

@@ -12,17 +12,17 @@ Apple Public Source License 2.0 (APSL-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/APSL-2.0.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/APSL-2.0.html "SPDX"))
 
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↓** This license is not compatible with the
+-   **↓**This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))

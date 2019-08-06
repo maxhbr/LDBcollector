@@ -17,12 +17,12 @@
 
 === Comments on (easy) usability
 
-* *↑* This license is compatible with the DebianFreeSoftwareGuidelines
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/MPL-1.1.html[SPDX])
+* **↑**This license is compatible with the DebianFreeSoftwareGuidelines
 (DFSG-free) (source: https://wiki.debian.org/DFSGLicenses[Debian Free
 Software Guidelines])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/MPL-1.1.html[SPDX])
-*  Google Classification is RECIPROCAL (source:
+* Google Classification is RECIPROCAL (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 
@@ -114,6 +114,8 @@ COMPATIBILITY Zlib
 PATENT HINTS
 COPYLEFT CLAUSE Yes
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

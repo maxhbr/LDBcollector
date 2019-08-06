@@ -6,7 +6,7 @@ bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -35,6 +35,8 @@ OSADL Rule
     	IF Software modification
     		YOU MUST NOT Promote
     PATENT HINTS Yes
+
+(source: OSADL License Checklist)
 
 ------------------------------------------------------------------------
 

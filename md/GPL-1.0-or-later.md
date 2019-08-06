@@ -18,17 +18,17 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This is the most popular free software license. Most of Linux
+-   **↑**This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
     basic software in the GNU operating system. (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

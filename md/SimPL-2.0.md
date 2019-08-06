@@ -14,7 +14,7 @@ Simple Public License 2.0 (SimPL-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/SimPL-2.0.html "SPDX"))
 
 URLs

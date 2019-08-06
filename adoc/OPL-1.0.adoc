@@ -17,7 +17,7 @@
 
 === Comments on (easy) usability
 
-* *↓* This license is not compatible with the
+* **↓**This license is not compatible with the
 DebianFreeSoftwareGuidelines (DFSG-unfree) (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 

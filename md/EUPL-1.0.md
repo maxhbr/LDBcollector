@@ -10,7 +10,7 @@ European Union Public License 1.0 (EUPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Google Classification is CANNOT\_BE\_USED "The EUPL is very
+-   **↓**Google Classification is CANNOT\_BE\_USED "The EUPL is very
     similar to the AGPL. For the same reasons that the AGPL is banned,
     the use of EUPL-licensed software is not allowed at Google."
     (source: [Google OSS

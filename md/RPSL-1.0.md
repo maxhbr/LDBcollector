@@ -12,14 +12,14 @@ RealNetworks Public Source License v1.0 (RPSL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/RPSL-1.0.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/RPSL-1.0.html "SPDX"))
-
--   **↓** This license is not compatible with the
+-   **↓**This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))

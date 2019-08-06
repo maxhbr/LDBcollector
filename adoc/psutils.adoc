@@ -15,10 +15,10 @@
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs

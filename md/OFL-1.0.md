@@ -10,7 +10,7 @@ SIL Open Font License 1.0 (OFL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** The following restriction on distributions, which is part of
+-   **↑**The following restriction on distributions, which is part of
     OFL, has been widely accepted by open source projects when it is
     applied to fonts: 1) Neither the Font Software nor any of its
     individual components, in Original or Modified Versions, may be sold

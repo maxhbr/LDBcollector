@@ -15,11 +15,11 @@
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/EUDatagrid.html[SPDX])
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/EUDatagrid.html[SPDX])
 
 === URLs
 

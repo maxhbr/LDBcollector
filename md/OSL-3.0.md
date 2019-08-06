@@ -24,12 +24,12 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/OSL-3.0.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/OSL-3.0.html "SPDX"))
 
 -   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
     Lizenznehmer verpflichtet von der ursprünglichen Software
@@ -37,7 +37,7 @@ Comments on (easy) usability
     Ursprungslizenz weiterzuverbreiten. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations
@@ -120,6 +120,8 @@ OSADL Rule
     COMPATIBILITY Zlib
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----

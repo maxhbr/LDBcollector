@@ -14,7 +14,7 @@ Non-Profit Open Software License 3.0 (NPOSL-3.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/NPOSL-3.0.html "SPDX"))
 
 -   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der

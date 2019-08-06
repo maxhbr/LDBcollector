@@ -15,13 +15,13 @@
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-*  Google Classification is RECIPROCAL (source:
+* Google Classification is RECIPROCAL (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-*  Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+* Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
 Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke
 umfasst, sondern definierte Ausnahmen enthält. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])

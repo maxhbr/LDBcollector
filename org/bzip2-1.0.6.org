@@ -15,7 +15,7 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
+- *↑*Rating is: Bronze (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs
@@ -45,6 +45,8 @@
     	IF Software modification
     		YOU MUST NOT Promote
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 ** Text
 

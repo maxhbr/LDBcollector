@@ -12,14 +12,14 @@ BSD-4-Clause (University of California-Specific) (BSD-4-Clause-UC)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↓** Advertisement clause (3.) is complicated and prone to
-    conflicts (source: Override)
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↓**Advertisement clause (3.) is complicated and prone to conflicts
+    (source: Override)
 
 URLs
 ----
@@ -54,6 +54,8 @@ OSADL Rule
     	IF Advertisement
     		YOU MUST Credit In Advertisement Verbatim "This product includes software developed by the University of California, Berkeley and its contributors."
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----

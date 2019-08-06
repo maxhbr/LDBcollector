@@ -1,11 +1,11 @@
 ## Stats:
 ### Stats on Facts:
-Number of facts: 3459
+Number of facts: 3460
     BlueOak License List: 169
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 430
     Google OSS Policy: 112
-    OSADL License Checklist: 66
+    OSADL License Checklist: 67
     Open Knowledge International: 117
     OpenChainPolicyTemplate: 92
     OpenSourceInitiative: 89
@@ -20,13 +20,13 @@ Number of facts: 3459
 Number of clusters: 1915
 ### Stats on Licenses:
 Number of Licenses: 360
-Number of facts: 2122
+Number of facts: 2123
     BlueOak License List: 169
     Debian Free Software Guidelines: 77
     Fedora Project Wiki: 159
     Google OSS Policy: 110
     LicenseName: 360
-    OSADL License Checklist: 68
+    OSADL License Checklist: 69
     Open Knowledge International: 95
     OpenChainPolicyTemplate: 81
     OpenSourceInitiative: 83

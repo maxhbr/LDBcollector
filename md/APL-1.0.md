@@ -10,7 +10,7 @@ Adaptive Public License 1.0 (APL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/APL-1.0.html "SPDX"))
 
 URLs

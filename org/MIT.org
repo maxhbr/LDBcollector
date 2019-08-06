@@ -32,29 +32,29 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Silver (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+- *↑* This License is featured by choosealicense.com (source:
+  [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt][choosealicense.com]])
 
-- *↑* Exception : The University of Washington's interpretation of the
+- *↑*Exception : The University of Washington's interpretation of the
   MIT License, as the University interprets it for the pine email
   client, does not follow the DFSG. See the
   DebianFreeSoftwareGuidelinesDraftFAQ. (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]])
 
-- *↑* This software Licenses is OK for Fedora (source:
-  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]])
-
-- *↑* Google Classification is NOTICE (source:
+- *↑*Google Classification is NOTICE (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- *↑* Is OSI Approved (source:
+- *↑*Is OSI Approved (source:
   [[https://spdx.org/licenses/MIT.html][SPDX]])
 
-- *↑* This License is featured by choosealicense.com (source:
-  [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt][choosealicense.com]])
+- *↑*Rating is: Silver (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
+
+- *↑*This software Licenses is OK for Fedora (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]])
 
 - Because MIT has used many licenses for software, the Free Software
   Foundation considers MIT License ambiguous. The MIT License published
@@ -110,6 +110,8 @@
     	YOU MUST Forward Copyright notices
     	YOU MUST Forward License text
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 ** Text
 

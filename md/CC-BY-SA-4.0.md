@@ -25,13 +25,13 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Version 4.0 is considered to be compatible to the DFSG.
-    Changes from the previous version are discussed in a thread starting
-    at https://lists.debian.org/3172728.oiOx47Q9HF@debstor (source:
-    [Debian Free Software
+-   **↑**Version 4.0 is considered to be compatible to the DFSG. Changes
+    from the previous version are discussed in a thread starting at
+    https://lists.debian.org/3172728.oiOx47Q9HF@debstor (source: [Debian
+    Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations

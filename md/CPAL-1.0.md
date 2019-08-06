@@ -12,19 +12,19 @@ Common Public Attribution License 1.0 (CPAL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/CPAL-1.0.html "SPDX"))
 
--   **↓** Issue: Badgeware license (see:
-    https://lwn.net/Articles/243841/) (source: [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
-
--   **↓** Google Classification is CANNOT\_BE\_USED "Likewise, code
+-   **↓**Google Classification is CANNOT\_BE\_USED "Likewise, code
     released under the Common Public Attribution License (CPAL), notably
     the Mule ESB and most of the code that backs Reddit, cannot be used
     at Google; it is AGPL-like in crucial ways and is disallowed for the
     same reasons." (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↓**Issue: Badgeware license (see:
+    https://lwn.net/Articles/243841/) (source: [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
 URLs
 ----

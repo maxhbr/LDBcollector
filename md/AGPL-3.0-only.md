@@ -45,19 +45,19 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This license is compatible with the
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/AGPL-3.0-only.html "SPDX"))
+
+-   **↑**This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/AGPL-3.0-only.html "SPDX"))
-
--   **↓** Google Classification is CANNOT\_BE\_USED "Code released under
+-   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
     the GNU Affero General Public License (AGPL) cannot be used in
     google3 under any circumstances, and only very rarely on
     workstations. Read more at go/agpl" (source: [Google OSS
@@ -202,6 +202,8 @@ OSADL Rule
     INCOMPATIBILITY XFree86-1.1
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
 
 ------------------------------------------------------------------------
 

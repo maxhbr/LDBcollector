@@ -16,12 +16,12 @@ Q Public License 1.0 (QPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/QPL-1.0.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/QPL-1.0.html "SPDX"))
 
 -   The QPL is not GPL-compatible, which, regardless of one's opinion
     about the license's DFSG-freeness, poses a major practical problem
@@ -37,7 +37,7 @@ Comments on (easy) usability
     a dual-licensing policy? (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

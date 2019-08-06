@@ -24,14 +24,14 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX"))
-
--   **↓** Google Classification is CANNOT\_BE\_USED "The EUPL is very
+-   **↓**Google Classification is CANNOT\_BE\_USED "The EUPL is very
     similar to the AGPL. For the same reasons that the AGPL is banned,
     the use of EUPL-licensed software is not allowed at Google."
     (source: [Google OSS
@@ -126,6 +126,8 @@ OSADL Rule
     INCOMPATIBILITY XFree86-1.1
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----

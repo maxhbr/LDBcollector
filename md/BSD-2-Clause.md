@@ -34,15 +34,15 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX"))
+
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX"))
 
 Obligations
 -----------
@@ -83,6 +83,8 @@ OSADL Rule
     	YOU MUST Provide Copyright notices In Documentation OR Distribution material
     	YOU MUST Provide License text In Documentation OR Distribution material
     	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+
+(source: OSADL License Checklist)
 
 Text
 ----

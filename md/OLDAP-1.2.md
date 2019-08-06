@@ -12,7 +12,7 @@ Open LDAP Public License v1.2 (OLDAP-1.2)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

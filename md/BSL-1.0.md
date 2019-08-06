@@ -26,14 +26,14 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/BSL-1.0.html "SPDX"))
+
+-   **↑**Rating is: Silver (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 Obligations
 -----------
@@ -72,6 +72,8 @@ OSADL Rule
     			ATTRIBUTE Original license
     USE CASE Binary delivery
     COPYLEFT CLAUSE Questionable
+
+(source: OSADL License Checklist)
 
 Text
 ----

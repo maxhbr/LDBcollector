@@ -15,12 +15,12 @@
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/HPND.html[SPDX])
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/HPND.html[SPDX])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs
@@ -40,6 +40,8 @@ USE CASE Source code delivery OR Binary delivery
 	YOU MUST Forward License text In Documentation
 	YOU MUST NOT Promote
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

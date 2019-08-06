@@ -31,11 +31,11 @@ ________________________________________________________________________________
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* Google Classification is UNENCUMBERED (source:
+* **↑**Google Classification is UNENCUMBERED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
 
 === Obligations
 
@@ -74,6 +74,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc0-1.0.txt
 USE CASE Source code delivery OR Binary delivery
 PATENT HINTS Yes
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

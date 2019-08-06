@@ -65,7 +65,7 @@
             "homepageUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt",
             "shortName": "GFDL 1.2 or later",
             "textUrls": null,
-            "text": "",
+            "text": null,
             "category": "Copyleft Limited",
             "osiUrl": null,
             "owner": "Free Software Foundation (FSF)",
@@ -87,7 +87,6 @@
                     ]
                 ],
                 "__calculatedCopyleft": "WeakCopyleft",
-                "__impliedText": "",
                 "__impliedURLs": [
                     [
                         "Homepage",
@@ -145,7 +144,6 @@
         ]
     ],
     "__calculatedCopyleft": "WeakCopyleft",
-    "__impliedText": "",
     "__impliedURLs": [
         [
             "SPDX",

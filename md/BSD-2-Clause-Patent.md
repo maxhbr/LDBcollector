@@ -12,11 +12,11 @@ BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Gold (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/BSD-2-Clause-Patent.html "SPDX"))
+
+-   **↑**Rating is: Gold (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -39,6 +39,8 @@ OSADL Rule
     	YOU MUST Provide License text In Documentation OR Distribution material
     	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
     PATENT HINTS Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----

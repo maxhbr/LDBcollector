@@ -15,7 +15,7 @@
 
 === Comments on (easy) usability
 
-*  Google Classification is RECIPROCAL (source:
+* Google Classification is RECIPROCAL (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 

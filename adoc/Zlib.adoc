@@ -28,20 +28,20 @@ ________________________________________________________________________________
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* This license is compatible with the DebianFreeSoftwareGuidelines
-(DFSG-free) (source: https://wiki.debian.org/DFSGLicenses[Debian Free
-Software Guidelines])
-* *↑* This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/Zlib.html[SPDX])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This license is compatible with the DebianFreeSoftwareGuidelines
+(DFSG-free) (source: https://wiki.debian.org/DFSGLicenses[Debian Free
+Software Guidelines])
+* **↑**This software Licenses is OK for Fedora (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki])
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
@@ -98,6 +98,8 @@ USE CASE Binary delivery
 		YOU MUST Mark
 	YOU MUST NOT Appropriate
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

@@ -10,7 +10,7 @@ Netscape Public License v1.0 (NPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

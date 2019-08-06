@@ -6,10 +6,10 @@ Creative Commons Attribution 1.0 Generic (CC-BY-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↓** It is believed that 2.0 still has problems
+-   **↓**It is believed that 2.0 still has problems
     (http://evan.prodromou.name/ccsummary/ccsummary.html), but it is
     under discussion between debian-legal and cc-licenses. (source:
     [Debian Free Software

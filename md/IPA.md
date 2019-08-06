@@ -12,12 +12,12 @@ IPA Font License (IPA)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/IPA.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/IPA.html "SPDX"))
 
 -   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
     Lizenznehmer verpflichtet von der ursprünglichen Software

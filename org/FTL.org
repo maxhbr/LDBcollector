@@ -13,12 +13,12 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
-
-- *↑* Google Classification is NOTICE (source:
+- *↑*Google Classification is NOTICE (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
+
+- *↑*Rating is: Bronze (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 - Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
   Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und
@@ -59,6 +59,8 @@
     	YOU MUST NOT Promote
     	YOU MUST Credit FreeType Team
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 ** Text
 

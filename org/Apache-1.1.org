@@ -19,25 +19,25 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+- *↑*Google Classification is NOTICE (source:
+  [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
+  Policy]])
 
-- *↑* Older versions of the Apache License (1.0 and 1.1) are also DFSG
+- *↑*Is OSI Approved (source:
+  [[https://spdx.org/licenses/Apache-1.1.html][SPDX]])
+
+- *↑*Older versions of the Apache License (1.0 and 1.1) are also DFSG
   free, but the Apache Software Foundation recommends using the Apache
   2.0 license instead. (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]])
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*Rating is: Bronze (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
+
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
-
-- *↑* Google Classification is NOTICE (source:
-  [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
-
-- *↑* Is OSI Approved (source:
-  [[https://spdx.org/licenses/Apache-1.1.html][SPDX]])
 
 ** URLs
 
@@ -71,6 +71,8 @@
     		YOU MUST NOT Promote using "Apache" or "Apache Software Foundation"
     		YOU MUST NOT Use "Apache" [ex. "Jakarta," "Apache," or "Apache Commons,"] in product name
 #+END_EXAMPLE
+
+(source: OSADL License Checklist)
 
 --------------
 

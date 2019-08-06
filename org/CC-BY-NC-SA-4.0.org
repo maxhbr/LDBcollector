@@ -15,12 +15,7 @@ International (CC-BY-NC-SA-4.0)
 
 ** Comments on (easy) usability
 
-- *↓* This license is not compatible with the
-  DebianFreeSoftwareGuidelines (DFSG-unfree) (source:
-  [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]])
-
-- *↓* Google Classification is CANNOT_BE_USED "Everything that Google
+- *↓*Google Classification is CANNOT_BE_USED "Everything that Google
   undertakes, including research, is considered a commercial endeavor,
   so no code released under a license that restricts it to
   non-commercial uses may be used at Google. For example, works under
@@ -28,6 +23,11 @@ International (CC-BY-NC-SA-4.0)
   BY-NC-ND) may not be used at Google." (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
+
+- *↓*This license is not compatible with the
+  DebianFreeSoftwareGuidelines (DFSG-unfree) (source:
+  [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
+  Guidelines]])
 
 ** URLs
 

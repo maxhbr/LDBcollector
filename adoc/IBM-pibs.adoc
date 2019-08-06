@@ -16,8 +16,8 @@
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 
@@ -34,6 +34,8 @@ USE CASE Source code delivery OR Binary delivery
 	YOU MUST Provide License text
 PATENT HINTS Yes
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

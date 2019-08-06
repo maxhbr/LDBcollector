@@ -16,7 +16,7 @@
 
 === Comments on (easy) usability
 
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/RPL-1.1.html[SPDX])
 
 === URLs

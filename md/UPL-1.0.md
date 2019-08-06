@@ -23,11 +23,11 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/UPL-1.0.html "SPDX"))
+
+-   **↑**Rating is: Silver (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 Obligations
 -----------
@@ -61,6 +61,8 @@ OSADL Rule
     		YOU MUST Forward License text
     	OR
     		YOU MUST Reference License text
+
+(source: OSADL License Checklist)
 
 Text
 ----

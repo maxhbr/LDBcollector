@@ -13,12 +13,12 @@
 
 ** Comments on (easy) usability
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*Is OSI Approved (source:
+  [[https://spdx.org/licenses/Fair.html][SPDX]])
+
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
-
-- *↑* Is OSI Approved (source:
-  [[https://spdx.org/licenses/Fair.html][SPDX]])
 
 - Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
   Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und
@@ -28,8 +28,8 @@
   weiterverbreiten, also auch in proprietäre Software überführen.
   (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
-- *↓* Rating is: Lead (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
+  License List]])
 
 ** URLs
 

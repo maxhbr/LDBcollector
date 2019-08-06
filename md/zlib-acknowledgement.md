@@ -10,15 +10,15 @@ zlib/libpng License with Acknowledgement (zlib-acknowledgement)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This license is compatible with the
+-   **↑**This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -51,6 +51,8 @@ OSADL Rule
     
     USE CASE Commercial distribution
     	YOU MUST Credit Verbatim "Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig"
+
+(source: OSADL License Checklist)
 
 Text
 ----

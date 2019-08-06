@@ -14,7 +14,7 @@ CMU License (MIT-CMU)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -39,6 +39,8 @@ OSADL Rule
     	YOU MUST Provide Copyright notice In Documentation
     	YOU MUST Provide License text In Documentation
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----

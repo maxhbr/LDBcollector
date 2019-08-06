@@ -10,7 +10,7 @@ OCLC Research Public License 2.0 (OCLC-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/OCLC-2.0.html "SPDX"))
 
 URLs

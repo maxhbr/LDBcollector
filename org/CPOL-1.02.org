@@ -45,6 +45,8 @@
     COPYLEFT CLAUSE Questionable
 #+END_EXAMPLE
 
+(source: OSADL License Checklist)
+
 ** Text
 
 #+BEGIN_EXAMPLE

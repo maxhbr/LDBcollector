@@ -9,14 +9,14 @@
 
 ** Comments on (easy) usability
 
-- *↓* This license is not compatible with the
+- *↓*Google Classification is RESTRICTED (source:
+  [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
+  Policy]])
+
+- *↓*This license is not compatible with the
   DebianFreeSoftwareGuidelines (DFSG-unfree) (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]])
-
-- *↓* Google Classification is RESTRICTED (source:
-  [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
 
 ** URLs
 

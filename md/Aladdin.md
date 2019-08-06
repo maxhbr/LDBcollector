@@ -6,8 +6,8 @@ Aladdin Free Public License (Aladdin)
 Comments on (easy) usability
 ----------------------------
 
--   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
-    in Fedora is permitted to use this license. It is either non-free or
+-   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+    Fedora is permitted to use this license. It is either non-free or
     deprecated. (source: [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 

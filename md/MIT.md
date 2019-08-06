@@ -28,27 +28,27 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+-   **↑** This License is featured by choosealicense.com (source:
+    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com"))
 
--   **↑** Exception : The University of Washington's interpretation of
+-   **↑**Exception : The University of Washington's interpretation of
     the MIT License, as the University interprets it for the pine email
     client, does not follow the DFSG. See the
     DebianFreeSoftwareGuidelinesDraftFAQ. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/MIT.html "SPDX"))
 
--   **↑** This License is featured by choosealicense.com (source:
-    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com"))
+-   **↑**Rating is: Silver (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   Because MIT has used many licenses for software, the Free Software
     Foundation considers MIT License ambiguous. The MIT License
@@ -97,6 +97,8 @@ OSADL Rule
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
     	YOU MUST Forward License text
+
+(source: OSADL License Checklist)
 
 Text
 ----

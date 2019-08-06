@@ -10,11 +10,11 @@ Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -37,6 +37,8 @@ OSADL Rule
     	YOU MUST Provide Modification notice In Files
     	YOU MUST Provide Modification notice in Documentation
     YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----

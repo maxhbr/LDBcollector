@@ -1,11 +1,11 @@
 * Ricoh Source Code Public License (RSCPL)
 
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Ricoh Source Code Public License               |
-| Shortname        | RSCPL                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key              | Value                              |
+|------------------+------------------------------------|
+| Fullname         | Ricoh Source Code Public License   |
+| Shortname        | RSCPL                              |
+| Rating           | Unknown, probably Stop or No-Go    |
+| Classification   | WeakCopyleft                       |
 
 *Other Names:*
 
@@ -19,7 +19,7 @@
 
 ** Comments on (easy) usability
 
-- *↑* Is OSI Approved (source:
+- *↑*Is OSI Approved (source:
   [[https://spdx.org/licenses/RSCPL.html][SPDX]])
 
 - Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
@@ -32,7 +32,7 @@
   erleichtert werden. (source:
   [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
-- *↓* This software licenses which is NOT OKAY for Fedora. Nothing in
+- *↓*This software licenses which is NOT OKAY for Fedora. Nothing in
   Fedora is permitted to use this license. It is either non-free or
   deprecated. (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora

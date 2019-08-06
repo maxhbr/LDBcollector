@@ -13,12 +13,12 @@
 
 ** Comments on (easy) usability
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*Is OSI Approved (source:
+  [[https://spdx.org/licenses/OSL-2.0.html][SPDX]])
+
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
-
-- *↑* Is OSI Approved (source:
-  [[https://spdx.org/licenses/OSL-2.0.html][SPDX]])
 
 - Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer
   verpflichtet von der ursprünglichen Software abgeleitete Werke
@@ -26,7 +26,7 @@
   weiterzuverbreiten. (source:
   [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
-- *↓* Google Classification is RESTRICTED (source:
+- *↓*Google Classification is RESTRICTED (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 

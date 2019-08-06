@@ -38,15 +38,15 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Earlier called the "Library General Public License"; this name
+-   **↑**Earlier called the "Library General Public License"; this name
     is deprecated because it confuses the license's intent. (source:
     [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/LGPL-2.1-only.html "SPDX"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations
@@ -234,6 +234,8 @@ OSADL Rule
     INCOMPATIBILITY XFree86-1.1
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----

@@ -10,7 +10,7 @@ Independent JPEG Group License (IJG)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -23,7 +23,7 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -56,6 +56,8 @@ OSADL Rule
     USE CASE Binary delivery
     	YOU MUST Credit Verbatim "This software is based in part on the work of the Independent JPEG Group"
     PATENT HINTS Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----

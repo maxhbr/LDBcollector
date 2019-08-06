@@ -16,14 +16,14 @@ Eiffel Forum License v2.0 (EFL-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/EFL-2.0.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/EFL-2.0.html "SPDX"))
-
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -51,6 +51,8 @@ OSADL Rule
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
     	YOU MUST Forward License text
+
+(source: OSADL License Checklist)
 
 Text
 ----

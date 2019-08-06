@@ -18,12 +18,12 @@
 
 === Comments on (easy) usability
 
-* *↑* Earlier called the "Library General Public License"; this name is
+* **↑**Earlier called the "Library General Public License"; this name is
 deprecated because it confuses the license's intent. (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/LGPL-2.0-or-later.html[SPDX])
-* *↓* Google Classification is RESTRICTED (source:
+* **↓**Google Classification is RESTRICTED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 

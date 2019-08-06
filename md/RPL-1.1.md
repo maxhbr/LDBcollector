@@ -12,7 +12,7 @@ Reciprocal Public License 1.1 (RPL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX"))
 
 URLs

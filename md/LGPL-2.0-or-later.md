@@ -16,15 +16,15 @@ GNU Library General Public License v2 or later (LGPL-2.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Earlier called the "Library General Public License"; this name
+-   **↑**Earlier called the "Library General Public License"; this name
     is deprecated because it confuses the license's intent. (source:
     [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/LGPL-2.0-or-later.html "SPDX"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

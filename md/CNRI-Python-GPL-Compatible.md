@@ -12,7 +12,7 @@ CNRI Python Open Source GPL Compatible License Agreement (CNRI-Python-GPL-Compat
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

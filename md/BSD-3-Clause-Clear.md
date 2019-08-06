@@ -20,10 +20,7 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Note that a 2-clause form of the BSD license, removing the
+-   **↑**Note that a 2-clause form of the BSD license, removing the
     third condition, is also in use. This is because even a generous
     copyright license does not implicitly forfeit the copyright holder's
     "right of publicity". In other words, even if a license does not
@@ -31,6 +28,9 @@ Comments on (easy) usability
     endorses or promotes your work, the law generally does. We're not
     aware of any exceptions. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 Obligations
 -----------

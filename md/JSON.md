@@ -6,7 +6,7 @@ JSON License (JSON)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
@@ -18,12 +18,12 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Infamous for the clause The Software shall be used for Good,
+-   **↓**Infamous for the clause The Software shall be used for Good,
     not Evil. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
-    in Fedora is permitted to use this license. It is either non-free or
+-   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+    Fedora is permitted to use this license. It is either non-free or
     deprecated. (source: [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 

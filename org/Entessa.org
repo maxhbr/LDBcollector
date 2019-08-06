@@ -19,15 +19,15 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
+- *↑*Is OSI Approved (source:
+  [[https://spdx.org/licenses/Entessa.html][SPDX]])
+
+- *↑*Rating is: Bronze (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
-
-- *↑* Is OSI Approved (source:
-  [[https://spdx.org/licenses/Entessa.html][SPDX]])
 
 ** URLs
 

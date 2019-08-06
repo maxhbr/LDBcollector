@@ -16,12 +16,12 @@ Sleepycat License (Sleepycat)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX"))
 
 -   Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
     nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
@@ -29,7 +29,7 @@ Comments on (easy) usability
     Weiterentwicklungen weiterverbreitet werden können. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

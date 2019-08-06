@@ -15,10 +15,10 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
+- *↑*Rating is: Bronze (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 

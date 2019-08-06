@@ -28,26 +28,26 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+-   **↑** This License is featured by choosealicense.com (source:
+    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com"))
 
--   **↑** Older versions of the Apache License (1.0 and 1.1) are also
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Apache-2.0.html "SPDX"))
+
+-   **↑**Older versions of the Apache License (1.0 and 1.1) are also
     DFSG free, but the Apache Software Foundation recommends using the
     Apache 2.0 license instead. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Rating is: Silver (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Apache-2.0.html "SPDX"))
-
--   **↑** This License is featured by choosealicense.com (source:
-    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com"))
 
 Obligations
 -----------
@@ -112,6 +112,8 @@ OSADL Rule
     	IF Service offerings
     		YOU MUST Indemnify Other contributors
     PATENT HINTS Yes
+
+(source: OSADL License Checklist)
 
 ------------------------------------------------------------------------
 

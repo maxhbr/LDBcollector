@@ -16,7 +16,7 @@ Ricoh Source Code Public License (RSCPL)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/RSCPL.html "SPDX"))
 
 -   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
@@ -29,8 +29,8 @@ Comments on (easy) usability
     erleichtert werden. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
-    in Fedora is permitted to use this license. It is either non-free or
+-   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+    Fedora is permitted to use this license. It is either non-free or
     deprecated. (source: [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 

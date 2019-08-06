@@ -23,7 +23,7 @@ Comments on (easy) usability
     (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Google Classification is CANNOT\_BE\_USED "Code released under
+-   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
     the GNU Affero General Public License (AGPL) cannot be used in
     google3 under any circumstances, and only very rarely on
     workstations. Read more at go/agpl" (source: [Google OSS

@@ -16,14 +16,14 @@ Sun Industry Standards Source License v1.1 (SISSL)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/SISSL.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/SISSL.html "SPDX"))
-
--   **↓** Google Classification is CANNOT\_BE\_USED "Code released under
+-   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
     the Sun Industry Standards Source License (SISSL) cannot be used at
     Google. This license has terms that are very difficult to comply
     with (even Sun, before being acquired, ceased to use or recommend

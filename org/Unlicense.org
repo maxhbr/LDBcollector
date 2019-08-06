@@ -23,16 +23,16 @@
 
 ** Comments on (easy) usability
 
-- *↑* Rating is: Bronze (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
-
-- *↑* This software Licenses is OK for Fedora (source:
-  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]])
-
-- *↑* Google Classification is UNENCUMBERED (source:
+- *↑*Google Classification is UNENCUMBERED (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
+
+- *↑*Rating is: Bronze (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
+
+- *↑*This software Licenses is OK for Fedora (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]])
 
 - Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
   Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und

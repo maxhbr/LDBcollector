@@ -10,7 +10,7 @@ Beerware License (Beerware)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -23,15 +23,15 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↓** Google Classification is CANNOT\_BE\_USED "The Beerware
-    license has similar issues to the WTFPL on account of its vague
-    grant of rights and likewise cannot be used at Google, nor can
+-   **↓**Google Classification is CANNOT\_BE\_USED "The Beerware license
+    has similar issues to the WTFPL on account of its vague grant of
+    rights and likewise cannot be used at Google, nor can
     Beerware-licensed projects be patched by Googlers." (source: [Google
     OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↓**Rating is: Lead (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----

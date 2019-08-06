@@ -19,12 +19,12 @@
 
 ** Comments on (easy) usability
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*Is OSI Approved (source:
+  [[https://spdx.org/licenses/Sleepycat.html][SPDX]])
+
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
-
-- *↑* Is OSI Approved (source:
-  [[https://spdx.org/licenses/Sleepycat.html][SPDX]])
 
 - Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
   nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
@@ -32,7 +32,7 @@
   Weiterentwicklungen weiterverbreitet werden können. (source:
   [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
-- *↓* Google Classification is RESTRICTED (source:
+- *↓*Google Classification is RESTRICTED (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 

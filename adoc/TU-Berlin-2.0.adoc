@@ -15,7 +15,7 @@
 
 === Comments on (easy) usability
 
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs

@@ -16,7 +16,7 @@
 
 === Comments on (easy) usability
 
-* *↓* Exception: Data licensed under the FDL with no invariant sections
+* **↓**Exception: Data licensed under the FDL with no invariant sections
 are considered DFSG-free as of GR 2006-001:
 http://www.debian.org/vote/2006/vote_001#outcome (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
@@ -26,11 +26,6 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 * *Homepage:* http://www.gnu.org/licenses/old-licenses/fdl-1.1.txt
 * *SPDX:* http://spdx.org/licenses/GFDL-1.1-or-later.json
 * http://www.lysator.liu.se/~kjell-e/tekla/linux/security/fdl.html
-
-=== Text
-
-....
-....
 
 '''''
 
@@ -104,7 +99,7 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
             "homepageUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.1.txt",
             "shortName": "GFDL 1.1 or later",
             "textUrls": null,
-            "text": "",
+            "text": null,
             "category": "Copyleft Limited",
             "osiUrl": null,
             "owner": "Free Software Foundation (FSF)",
@@ -126,7 +121,6 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
                     ]
                 ],
                 "__calculatedCopyleft": "WeakCopyleft",
-                "__impliedText": "",
                 "__impliedURLs": [
                     [
                         "Homepage",
@@ -184,7 +178,6 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
         ]
     ],
     "__calculatedCopyleft": "WeakCopyleft",
-    "__impliedText": "",
     "__impliedURLs": [
         [
             "SPDX",

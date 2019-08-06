@@ -16,10 +16,10 @@
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-*  Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
+* Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
 nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
 Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
 Weiterentwicklungen weiterverbreitet werden können. (source:

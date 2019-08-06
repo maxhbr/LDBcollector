@@ -12,7 +12,7 @@ CUA Office Public License v1.0 (CUA-OPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/CUA-OPL-1.0.html "SPDX"))
 
 URLs

@@ -14,7 +14,7 @@ Sybase Open Watcom Public License 1.0 (Watcom-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Watcom-1.0.html "SPDX"))
 
 -   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
@@ -27,12 +27,7 @@ Comments on (easy) usability
     erleichtert werden. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
-    in Fedora is permitted to use this license. It is either non-free or
-    deprecated. (source: [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↓** Google Classification is CANNOT\_BE\_USED "Code released under
+-   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
     the Sybase Open Watcom Public License version 1.0 cannot be used at
     Google. Provision 12.1\\169 terminates the license if any patent
     litigation is filed against Sybase or any contributor, including
@@ -42,6 +37,11 @@ Comments on (easy) usability
     exercise of Google\\8217s patent rights and is therefore prohibited
     at Google." (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+    Fedora is permitted to use this license. It is either non-free or
+    deprecated. (source: [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 URLs
 ----

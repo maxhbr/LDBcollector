@@ -14,17 +14,16 @@ MirOS License (MirOS)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC
-    but applicable to more than just software (source: [Debian Free
-    Software
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/MirOS.html "SPDX"))
+
+-   **↑**Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC but
+    applicable to more than just software (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/MirOS.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -35,7 +34,7 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

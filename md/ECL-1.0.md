@@ -14,15 +14,15 @@ Educational Community License v1.0 (ECL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/ECL-1.0.html "SPDX"))
+
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/ECL-1.0.html "SPDX"))
 
 URLs
 ----

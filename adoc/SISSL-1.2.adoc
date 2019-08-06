@@ -15,7 +15,7 @@
 
 === Comments on (easy) usability
 
-* *↓* Google Classification is CANNOT_BE_USED "Code released under the
+* **↓**Google Classification is CANNOT_BE_USED "Code released under the
 Sun Industry Standards Source License (SISSL) cannot be used at Google.
 This license has terms that are very difficult to comply with (even Sun,
 before being acquired, ceased to use or recommend this license). Source

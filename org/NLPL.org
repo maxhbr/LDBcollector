@@ -9,7 +9,7 @@
 
 ** Comments on (easy) usability
 
-- *↑* This software Licenses is OK for Fedora (source:
+- *↑*This software Licenses is OK for Fedora (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
@@ -19,8 +19,8 @@
   weiterzuverbreiten. (source:
   [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
-- *↓* Rating is: Lead (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
+  License List]])
 
 ** URLs
 

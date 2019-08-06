@@ -30,27 +30,28 @@ ________________________________________________________________________________
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Silver (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* Exception : The University of Washington's interpretation of the
+* *↑* This License is featured by choosealicense.com (source:
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[choosealicense.com])
+* **↑**Exception : The University of Washington's interpretation of the
 MIT License, as the University interprets it for the pine email client,
 does not follow the DFSG. See the DebianFreeSoftwareGuidelinesDraftFAQ.
 (source: https://wiki.debian.org/DFSGLicenses[Debian Free Software
 Guidelines])
-* *↑* This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* *↑* Is OSI Approved (source: https://spdx.org/licenses/MIT.html[SPDX])
-* *↑* This License is featured by choosealicense.com (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[choosealicense.com])
-*  Because MIT has used many licenses for software, the Free Software
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/MIT.html[SPDX])
+* **↑**Rating is: Silver (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This software Licenses is OK for Fedora (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki])
+* Because MIT has used many licenses for software, the Free Software
 Foundation considers MIT License ambiguous. The MIT License published on
 the OSI site is the same as the Expat License. (source:
 https://opensource.org/licenses/[OpenSourceInitiative])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
@@ -99,6 +100,8 @@ USE CASE Source code delivery OR Binary delivery
 	YOU MUST Forward Copyright notices
 	YOU MUST Forward License text
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 

@@ -18,13 +18,13 @@ IBM Public License v1.0 (IPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This license was later renamed the Common Public License
-    (CPL). It is used for OpenAFS and Postfix and has been accepted in
-    Debian main since 2000. (source: [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
-
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/IPL-1.0.html "SPDX"))
+
+-   **↑**This license was later renamed the Common Public License (CPL).
+    It is used for OpenAFS and Postfix and has been accepted in Debian
+    main since 2000. (source: [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))

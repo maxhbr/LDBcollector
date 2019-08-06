@@ -24,12 +24,12 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX"))
 
 -   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
     Lizenznehmer verpflichtet von der ursprünglichen Software
@@ -176,6 +176,8 @@ OSADL Rule
     INCOMPATIBILITY XFree86-1.1
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
 
 ------------------------------------------------------------------------
 

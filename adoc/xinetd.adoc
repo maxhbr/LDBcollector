@@ -11,17 +11,17 @@
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs

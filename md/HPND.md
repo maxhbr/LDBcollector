@@ -10,14 +10,14 @@ Historical Permission Notice and Disclaimer (HPND)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/HPND.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/HPND.html "SPDX"))
-
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -41,6 +41,8 @@ OSADL Rule
     	YOU MUST Forward Copyright notices In Documentation
     	YOU MUST Forward License text In Documentation
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----
