@@ -1,5 +1,6 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE LambdaCase #-}
 module Processors.Rating
     ( applyRatingRules
     , RatingRule(..), RatingRules
@@ -70,4 +71,6 @@ applyRatingRules rrls l = let
     initialImpliedRatingState = case unpackSLSR (getImpliedRatingState l) of
       m -> M.foldr mergeRaitingStates initialReportRatingState m -- pessimistic merging
 
-  in ratingFromRatingState $ foldl' (\oldS rrf -> rrf l oldS) initialImpliedRatingState (map rrFunction rrls)
+  in ratingFromRatingState $ foldl' (\case
+                                        oldS@(FinalRating _) -> const oldS -- short circuit
+                                        oldS                 -> (\rrf -> rrf l oldS)) initialImpliedRatingState (map rrFunction rrls)

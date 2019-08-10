@@ -59,6 +59,10 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedNonCommercial _ = getEmptyLicenseStatement
   getImpliedCompatibiliets :: a -> ScopedLicenseStatementResult LicenseCompatibility
   getImpliedCompatibiliets _ = getEmptyLicenseStatement
+  getImpliedIsOSIApproved :: a -> RankedLicenseStatementResult Bool
+  getImpliedIsOSIApproved _ = getEmptyLicenseStatement
+  getImpliedIsFSFFree :: a -> RankedLicenseStatementResult Bool
+  getImpliedIsFSFFree _ = getEmptyLicenseStatement
 
 getImplicationJSONFromLFRaw :: (LFRaw a) => a -> Value
 getImplicationJSONFromLFRaw a = let
@@ -98,6 +102,15 @@ getImplicationJSONFromLFRaw a = let
     impliedNonCommercial = case getImpliedNonCommercial a of
       NoRLSR -> []
       nc     -> [ "__impliedNonCommercial" .= nc ]
+    impliedCompatibiliets = case getImpliedCompatibiliets a of
+      NoSLSR -> []
+      ics    -> [ "__impliedCompatibiliets" .= ics ]
+    impliedIsOSIApproved = case unpackRLSR (getImpliedIsOSIApproved a) of
+      Just ioa -> [ "__isOsiApproved" .= ioa ]
+      Nothing  -> []
+    impliedIsFSFFree = case unpackRLSR (getImpliedIsFSFFree a) of
+      Just iff -> [ "__isFsfFree" .= iff ]
+      Nothing  -> []
   in mergeAesonL [ object $
                    impliedNames
                    ++ impliedAmbiguousNames
@@ -109,6 +122,9 @@ getImplicationJSONFromLFRaw a = let
                    ++ ratingState
                    ++ patentHint
                    ++ impliedNonCommercial
+                   ++ impliedCompatibiliets
+                   ++ impliedIsOSIApproved
+                   ++ impliedIsFSFFree
                  , obligationsJ ]
 
 data LicenseFact
@@ -143,6 +159,8 @@ instance LFRaw LicenseFact where
   getHasPatentnHint lf@(LicenseFact _ raw)        = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getHasPatentnHint raw
   getImpliedNonCommercial lf@(LicenseFact _ raw)  = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedNonCommercial raw
   getImpliedCompatibiliets lf@(LicenseFact _ raw) = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedCompatibiliets raw
+  getImpliedIsOSIApproved (LicenseFact _ raw)     =                                                             getImpliedIsOSIApproved raw
+  getImpliedIsFSFFree (LicenseFact _ raw)         =                                                             getImpliedIsFSFFree raw
 
 
 type Facts

@@ -81,6 +81,10 @@ data FedoraProjectWikiFact
   = FedoraProjectWikiFact String
                           (Either (Either FedoraProjectWikiFact_Full FedoraProjectWikiFact_Short) FedoraProjectWikiFact_Bad)
   deriving (Show, Generic)
+instance HasFedoraProjectWikiFactCore FedoraProjectWikiFact where
+  getFedoraProjectWikiCore (FedoraProjectWikiFact _ (Left (Left full)))   = getFedoraProjectWikiCore full
+  getFedoraProjectWikiCore (FedoraProjectWikiFact _ (Left (Right short))) = getFedoraProjectWikiCore short
+  getFedoraProjectWikiCore (FedoraProjectWikiFact _ (Right bad))          = getFedoraProjectWikiCore bad
 instance ToJSON FedoraProjectWikiFact where
   toJSON (FedoraProjectWikiFact t d) = let
       aesonFromCore :: FedoraProjectWikiFact_Core -> Value
@@ -118,6 +122,10 @@ instance LFRaw FedoraProjectWikiFact where
   getImpliedNames (FedoraProjectWikiFact _ (Right bad))          = CLSR [getFullNameFromCore bad]
   getImpliedJudgement fpwf@(FedoraProjectWikiFact _ (Right _))   = SLSR (getLicenseFactClassifier fpwf) $ NegativeJudgement "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
   getImpliedJudgement fpwf                                       = SLSR (getLicenseFactClassifier fpwf) $ PositiveJudgement "This software Licenses is OK for Fedora"
+  getImpliedIsFSFFree fpwf                                       = case getFedoraProjectWikiCore fpwf of
+    (FedoraProjectWikiFact_Core _ (Just "Yes") _) -> mkRLSR fpwf 50 True
+    (FedoraProjectWikiFact_Core _ (Just "NO") _)  -> mkRLSR fpwf 50 False
+    _                                             -> NoRLSR
 
 toFPWF_Full :: String -> FedoraProjectWikiFact_Full -> FedoraProjectWikiFact
 toFPWF_Full t full = FedoraProjectWikiFact t (Left (Left full))

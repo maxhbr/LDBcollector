@@ -60,13 +60,14 @@ instance FromJSON SPDXEntry where
 spdxLFC :: LicenseFactClassifier
 spdxLFC = LFC "SPDX"
 instance LFRaw SPDXEntry where
-  getLicenseFactClassifier _                                 = spdxLFC
-  getImpliedNames e                                          = CLSR [spdxLicenseId e, spdxFullName e]
-  getImpliedFullName e                                       = mkRLSR e 90 (spdxFullName e)
-  getImpliedId e                                             = mkRLSR e 100 (spdxLicenseId e)
-  getImpliedURLs e                                           = CLSR $ (Just "SPDX", spdxDetailsURL e) : map (Nothing,) (spdxSeeAlso e)
-  getImpliedJudgement e@SPDXEntry{spdxLicIsOSIApproved=True} = SLSR (getLicenseFactClassifier e) $ PositiveJudgement "Is OSI Approved"
-  getImpliedJudgement SPDXEntry{spdxLicIsOSIApproved=False}  = NoSLSR
+  getLicenseFactClassifier _                                    = spdxLFC
+  getImpliedNames e                                             = CLSR [spdxLicenseId e, spdxFullName e]
+  getImpliedFullName e                                          = mkRLSR e 90 (spdxFullName e)
+  getImpliedId e                                                = mkRLSR e 100 (spdxLicenseId e)
+  getImpliedURLs e                                              = CLSR $ (Just "SPDX", spdxDetailsURL e) : map (Nothing,) (spdxSeeAlso e)
+  getImpliedJudgement e@SPDXEntry{spdxLicIsOSIApproved=True}    = SLSR (getLicenseFactClassifier e) $ PositiveJudgement "Is OSI Approved"
+  getImpliedJudgement SPDXEntry{spdxLicIsOSIApproved=False}     = NoSLSR
+  getImpliedIsOSIApproved e@SPDXEntry{spdxLicIsOSIApproved=ioa} = mkRLSR e 90 ioa
 
 data SPDXList
   = SPDXList String [SPDXEntry] String
