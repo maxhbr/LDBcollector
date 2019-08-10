@@ -182,18 +182,18 @@ instance ToJSON WikipediaFact where
       mkPrivateUseEntry = generateEntry "Private use" (wpfPrivateUse wf)
       mkSublicensingEntry = generateEntry "Sublicensing" (wpfSublicensing wf)
       mkTMGrantEntry = generateEntry "Trademark grant" (wpfTMGrant wf)
-    in object $ [ "Koordinaten" .= object [ "name" .= (wpfLicenseName wf)
-                                          , "version" .= (wpfLicenseVersion wf)
-                                          , "spdxId" .= (getSPDXIdForWikipediaFact wf)]
-                , "Publication date" .= (wpfPublicationDate wf)
-                ] ++ ( catMaybes [ mkLinkingEntry
-                                 , mkDistributionEntry
-                                 , mkModificationEntry
-                                 , mkPatentGrantEntry
-                                 , mkPrivateUseEntry
-                                 , mkSublicensingEntry
-                                 , mkTMGrantEntry
-                                 ])
+    in object $ [ "Koordinaten" .= object [ "name" .= wpfLicenseName wf
+                                          , "version" .= wpfLicenseVersion wf
+                                          , "spdxId" .= getSPDXIdForWikipediaFact wf ]
+                , "Publication date" .= wpfPublicationDate wf
+                ] ++ catMaybes [ mkLinkingEntry
+                               , mkDistributionEntry
+                               , mkModificationEntry
+                               , mkPatentGrantEntry
+                               , mkPrivateUseEntry
+                               , mkSublicensingEntry
+                               , mkTMGrantEntry
+                               ]
 wikipediaLFC :: LicenseFactClassifier
 wikipediaLFC = LFC "Wikipedia"
 instance LFRaw WikipediaFact where
@@ -207,6 +207,9 @@ instance LFRaw WikipediaFact where
       Nothing     -> CLSR [nameByWikipedia]
       Just ""     -> CLSR [nameByWikipedia]
       Just spdxId -> CLSR [spdxId, nameByWikipedia]
+  getHasPatentnHint wpf = case wpfPatentGrant wpf of
+    Just _  -> mkRLSR wpf 70 True
+    Nothing -> mkRLSR wpf 70 False
 
 loadFactsFromComparisonByteString :: ByteString -> Facts
 loadFactsFromComparisonByteString s = case (decodeByName s :: Either String (Header, V.Vector WikipediaFact)) of
