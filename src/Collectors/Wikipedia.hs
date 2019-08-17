@@ -208,8 +208,10 @@ instance LFRaw WikipediaFact where
       Just ""     -> CLSR [nameByWikipedia]
       Just spdxId -> CLSR [spdxId, nameByWikipedia]
   getHasPatentnHint wpf = case wpfPatentGrant wpf of
-    Just _  -> mkRLSR wpf 70 True
-    Nothing -> mkRLSR wpf 70 False
+    Just "No"       -> mkRLSR wpf 30 False
+    Just "Manually" -> mkRLSR wpf 30 False
+    Just _          -> mkRLSR wpf 30 True
+    Nothing         -> mkRLSR wpf 30 False
 
 loadFactsFromComparisonByteString :: ByteString -> Facts
 loadFactsFromComparisonByteString s = case (decodeByName s :: Either String (Header, V.Vector WikipediaFact)) of
