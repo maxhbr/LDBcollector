@@ -16,7 +16,7 @@ main :: IO ()
 main = do
   outputFolder <- cleanupAndMakeOutputFolder "_generated/"
   runLDBCore configuration
-    (\input ->
+    (\_ input ->
         do
           let licenses = map (\(ln, l, _) -> (ln, l)) input
           let pages = map (\(_,_,p) -> p) input

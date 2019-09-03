@@ -49,7 +49,7 @@ import           Generators.DetailsWriter as X
 import           Generators.Stats as X
 import           Generators.FindClusters as X
 
-runLDBCore :: Configuration -> ([(LicenseName, License, Page)] -> IO FilePath) -> IO ()
+runLDBCore :: Configuration -> (Facts -> [(LicenseName, License, Page)] -> IO FilePath) -> IO ()
 runLDBCore configuration handler = do
   setLocaleEncoding utf8
   args <- getArgs
@@ -64,7 +64,7 @@ runLDBCore configuration handler = do
 
   let pages = toPages (cRatingRules configuration) licenses
 
-  outputFolder <- handler pages
+  outputFolder <- handler facts pages
 
   -- echo some stats
   writeStats outputFolder facts licenses
