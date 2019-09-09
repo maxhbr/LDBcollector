@@ -9,3 +9,7 @@ text_urls:
     - http://creativecommons.org/licenses/by-sa/3.0/legalcode
 other_urls:
     - https://creativecommons.org/licenses/by-sa/3.0/legalcode
+minimum_coverage: 30
+ignorable_urls:
+    - https://creativecommons.org/
+    - https://creativecommons.org/compatiblelicenses
