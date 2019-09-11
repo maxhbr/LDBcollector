@@ -37,7 +37,7 @@ werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unter
 * [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
 * [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
 * [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
-* [Lizenzen mit Wahlmöglichkeiten](#Lizenzen mit Wahlmöglichkeiten)
+* [Lizenzen mit Wahlmöglichkeiten](#lizenzen-mit-wahlmöglichkeiten)
 * [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
 
 Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit "Einordnung unklar" gekennzeichnet.
