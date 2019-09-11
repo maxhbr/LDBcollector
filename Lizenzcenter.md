@@ -15,7 +15,7 @@ Dies ist eine offizielle Übernahme des
 ## Kategorien
 Im Lizenzcenter des ifrOSS werden die Lizenzen für freie Inhalte gesammelt und verschiedenen Lizenztypen zugeordnet. Dies betrifft folgende Kategorien:
 
-* [Freie Software und Open Source Lizenzen](##Open-Source-Lizenzen)
+* [Freie Software und Open Source Lizenzen](#Open-Source-Lizenzen)
 * [Open Content Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenContentLicenses.md)
 * [Open Data Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenDataLicenses.md)
 * [Open Hardware Lizenzen](https://github.com/ifrOSS/Lizenzcenter/blob/master/OpenHardwareLicenses.md)
@@ -34,11 +34,11 @@ dieser Liste willkommen.
 Die hier aufgeführten Lizenzen entsprechen den Voraussetzungen der Free Software Definition und Open Source Definition. Sie
 werden nach ihren lizenzrechtlichen Charakteristika in folgende Kategorien unterteilt:
 
-* [Lizenzen ohne Copyleft-Effekt](###Lizenzen-ohne-Copyleft-Effekt)
-* [Lizenzen mit strengem Copyleft-Effekt](###Lizenzen-mit-strengem-Copyleft-Effekt)
-* [Lizenzen mit beschränktem Copyleft-Effekt](###Lizenzen-mit-beschränktem-Copyleft-Effekt)
-* [Lizenzen mit Wahlmöglichkeiten](###Lizenzen-mit-Wahlmöglichkeiten)
-* [Lizenzen mit Sonderrechten](###Lizenzen-mit-Sonderrechten)
+* [Lizenzen ohne Copyleft-Effekt](#lizenzen-ohne-copyleft-effekt-permissive-licenses)
+* [Lizenzen mit strengem Copyleft-Effekt](#lizenzen-mit-strengem-copyleft-effekt)
+* [Lizenzen mit beschränktem Copyleft-Effekt](#lizenzen-mit-beschränktem-copyleft-effekt)
+* [Lizenzen mit Wahlmöglichkeiten](#Lizenzen mit Wahlmöglichkeiten)
+* [Lizenzen mit Sonderrechten](#lizenzen-mit-sonderrechten)
 
 Software unter solchen Lizenzen kann als Freie oder Open Source Software bezeichnet werden. Bei einigen der aufgeführten Lizenzen ist umstritten oder unklar, ob diese Anforderungen erfüllt sind, da die relevanten Definitionen, die Free Software Definition und die Open Source Definition nicht identisch sind und zudem Lizenztexte nicht immer eindeutig formuliert sind. Diese Lizenzen sind mit "Einordnung unklar" gekennzeichnet.
 
