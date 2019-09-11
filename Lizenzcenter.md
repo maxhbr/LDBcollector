@@ -189,19 +189,11 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. eCos License (v. 2.0): http://www.gnu.org/licenses/ecos-license.html
 1. FreeCard License: http://freecard.sourceforge.net/website/licence/license.php
 1. GNU Affero General Public License (AGPL-3.0) (v. 3.0): http://www.fsf.org/licensing/licenses/agpl-3.0.html
-1. GNU Classpath - GPL with special exception: http://www.gnu.org/software/classpath/license.html
 1. GNU Emacs General Public License: http://www.free-soft.org/gpl_history/emacs_gpl.html
 1. GNU General Public License (GPL) (v. 1.0): http://www.gnu.org/copyleft/copying-1.0.html
 1. GNU General Public License (GPL) (v. 2.0): http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 1. GNU General Public License (GPL) (v. 3.0): http://www.fsf.org/licensing/licenses/gpl.html
 1. GNU General Public License (GPL) (v. 3.0): http://www.gnu.de/gpl-ger.html (Inoffizielle deutsche Übersetzung)
-1. GNU General Public License v2.0 w/Bison exception: https://github.com/ifrOSS/Lizenzcenter/blob/Neue-Gliederung/Bison-exception-2.2
-1. GNU General Public License v2.0 w/Classpath exception: http://www.gnu.org/software/classpath/license.html
-1. GNU General Public License v2.0 w/Font exception: http://www.gnu.org/licenses/gpl-faq.html#FontException
-1. GNU General Public License v2.0 w/GCC Runtime Library exception: https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=gcc/libgcc1.c;h=762f5143fc6eed57b6797c82710f3538aa52b40b;hb=cb143a3ce4fb417c68f5fa2691a1b1b1053dfba9
-1. GNU General Public License v3.0 w/Autoconf exception: http://www.gnu.org/licenses/autoconf-exception-3.0.html
-1. GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.0): http://www.gnu.org/licenses/gcc-exception-3.0.html
-1. GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.1): http://www.gnu.org/licenses/gcc-exception-3.1.html
 1. Honest Public License (HPL) (v 1.0): https://web.archive.org/web/20080215154706/http://www.projectpier.org/manual/tour/licence
 1. Honest Public License (HPL) (v 1.1): https://web.archive.org/web/20150815003528/http://gnugeneration.com/licenses/HPLv1.1.txt
 1. Nethack General Public License: http://www.nethack.org/common/license.html
@@ -311,6 +303,13 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Contrat de License de Logiciel Libre CeCILL-C: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
 1. Cougaar Open Source License Agreement: https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html (Einordnung unklar)
 1. Eclipse Public License (v. 2.0): https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
+1. GNU General Public License v2.0 w/Bison exception: https://github.com/ifrOSS/Lizenzcenter/blob/Neue-Gliederung/Bison-exception-2.2
+1. GNU General Public License v2.0 w/Classpath exception: http://www.gnu.org/software/classpath/license.html
+1. GNU General Public License v2.0 w/Font exception: http://www.gnu.org/licenses/gpl-faq.html#FontException
+1. GNU General Public License v2.0 w/GCC Runtime Library exception: https://gcc.gnu.org/git/?p=gcc.git;a=blob;f=gcc/libgcc1.c;h=762f5143fc6eed57b6797c82710f3538aa52b40b;hb=cb143a3ce4fb417c68f5fa2691a1b1b1053dfba9
+1. GNU General Public License v3.0 w/Autoconf exception: http://www.gnu.org/licenses/autoconf-exception-3.0.html
+1. GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.0): http://www.gnu.org/licenses/gcc-exception-3.0.html
+1. GNU General Public License v3.0 w/GCC Runtime Library exception (RLE 3.1): http://www.gnu.org/licenses/gcc-exception-3.1.html
 1. GNU Library General Public License (LGPL) (v. 2.0): http://www.gnu.org/copyleft/library.html
 1. GNU Lesser General Public License (LGPL) (v. 2.1): http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
 1. GNU Lesser General Public License (LGPL) (v. 3.0): http://www.gnu.org/licenses/lgpl.html
