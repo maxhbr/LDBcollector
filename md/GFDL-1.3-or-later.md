@@ -76,6 +76,7 @@ Raw Data
                         "GNU Free Documentation License v1.3 or later"
                     ],
                     "__impliedId": "GFDL-1.3-or-later",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -171,6 +172,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
+        "__isOsiApproved": false,
         "__impliedURLs": [
             [
                 "SPDX",

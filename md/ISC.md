@@ -122,6 +122,7 @@ Raw Data
         "__impliedAmbiguousNames": [
             "ISC license"
         ],
+        "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -198,6 +199,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -484,7 +486,8 @@ Raw Data
                     "__impliedNames": [
                         "ISC",
                         "ISC license"
-                    ]
+                    ],
+                    "__hasPatentHint": false
                 },
                 "Modification": {
                     "value": "Permissive",
@@ -718,6 +721,7 @@ Raw Data
                 }
             ]
         },
+        "__isOsiApproved": true,
         "__impliedText": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n",
         "__impliedURLs": [
             [

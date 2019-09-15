@@ -53,6 +53,7 @@ Raw Data
             "eurosym"
         ],
         "__impliedId": "Eurosym",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -86,6 +87,7 @@ Raw Data
                         "Eurosym License"
                     ],
                     "__impliedId": "Eurosym",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -113,6 +115,7 @@ Raw Data
                     "__impliedNames": [
                         "Eurosym License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -183,6 +186,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Licence Version 2\n\nThis software is provided 'as-is', without warranty of any kind, express or implied. In no event will the authors or copyright holders be held liable for any damages arising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n\n     1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated.\n\n     2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.\n\n     3. You must not use any of the names of the authors or copyright holders of the original software for advertising or publicity pertaining to distribution without specific, written prior permission.\n\n     4. If you change this software and redistribute parts or all of it in any form, you must make the source code of the altered version of this software available.\n\n     5. This notice may not be removed or altered from any source distribution.\n\nThis licence is governed by the Laws of Germany. Disputes shall be settled by Saarbruecken City Court.\n",
         "__impliedURLs": [
             [

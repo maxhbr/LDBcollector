@@ -27,7 +27,6 @@ URLs
 Text
 ----
 
-    Copyright (c) 1995-2012 by Arkkra Enterprises. All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -53,6 +52,7 @@ Raw Data
             "mup"
         ],
         "__impliedId": "Mup",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -86,6 +86,7 @@ Raw Data
                         "Mup License"
                     ],
                     "__impliedId": "Mup",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -113,6 +114,7 @@ Raw Data
                     "__impliedNames": [
                         "Mup License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -129,7 +131,7 @@ Raw Data
                 "homepageUrl": "http://www.arkkra.com/doc/license.html",
                 "shortName": "Mup License",
                 "textUrls": null,
-                "text": "Copyright (c) 1995-2012 by Arkkra Enterprises. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following DISCLAIMER.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following DISCLAIMER in the documentation and/or other materials provided with the distribution.\n\n3. Any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation. including the reasons for the changes, and the names of those who made the modifications.\n\nDISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "text": "\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following DISCLAIMER.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following DISCLAIMER in the documentation and/or other materials provided with the distribution.\n\n3. Any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation. including the reasons for the changes, and the names of those who made the modifications.\n\nDISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Arkkra Enterprises",
@@ -151,7 +153,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (c) 1995-2012 by Arkkra Enterprises. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following DISCLAIMER.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following DISCLAIMER in the documentation and/or other materials provided with the distribution.\n\n3. Any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation. including the reasons for the changes, and the names of those who made the modifications.\n\nDISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                    "__impliedText": "\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following DISCLAIMER.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following DISCLAIMER in the documentation and/or other materials provided with the distribution.\n\n3. Any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation. including the reasons for the changes, and the names of those who made the modifications.\n\nDISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -223,7 +225,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Copyright (c) 1995-2012 by Arkkra Enterprises. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following DISCLAIMER.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following DISCLAIMER in the documentation and/or other materials provided with the distribution.\n\n3. Any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation. including the reasons for the changes, and the names of those who made the modifications.\n\nDISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "__isOsiApproved": false,
+        "__impliedText": "\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following DISCLAIMER.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following DISCLAIMER in the documentation and/or other materials provided with the distribution.\n\n3. Any additions, deletions, or changes to the original files must be clearly indicated in accompanying documentation. including the reasons for the changes, and the names of those who made the modifications.\n\nDISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [
                 "SPDX",

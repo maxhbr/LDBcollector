@@ -67,23 +67,40 @@ OSADL Rule
 Text
 ----
 
-    Copyright (c) {year} {copyright holders}
-
     The Universal Permissive License (UPL), Version 1.0
 
-    Subject to the condition set forth below, permission is hereby granted to any person obtaining a copy of this software, associated documentation and/or data (collectively the "Software"), free of charge and under any and all copyright rights in the Software, and any and all patent rights owned or freely licensable by each licensor hereunder covering either (i) the unmodified Software as contributed to or provided by such licensor, or (ii) the Larger Works (as defined below), to deal in both
+    Subject to the condition set forth below, permission is hereby granted to any
+    person obtaining a copy of this software, associated documentation and/or data
+    (collectively the "Software"), free of charge and under any and all copyright
+    rights in the Software, and any and all patent rights owned or freely licensable
+    by each licensor hereunder covering either
 
-    (a) the Software, and
+    (i) the unmodified Software as contributed to or provided by such licensor, or 
+    (ii) the Larger Works (as defined below), to deal in both
 
-    (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if one is included with the Software (each a "Larger Work" to which the Software is contributed by such licensors),
+     (a) the Software, and
+     (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if
+         one is included with the Software (each a "Larger Work" to which the
+         Software is contributed by such licensors),
 
-    without restriction, including without limitation the rights to copy, create derivative works of, display, perform, and distribute the Software and make, use, sell, offer for sale, import, export, have made, and have sold the Software and the Larger Work(s), and to sublicense the foregoing rights on either these or other terms.
+    without restriction, including without limitation the rights to copy, create
+    derivative works of, display, perform, and distribute the Software and make,
+    use, sell, offer for sale, import, export, have made, and have sold the Software
+    and the Larger Work(s), and to sublicense the foregoing rights on either these
+    or other terms.
 
     This license is subject to the following condition:
 
-    The above copyright notice and either this complete permission notice or at a minimum a reference to the UPL must be included in all copies or substantial portions of the Software.
+    The above copyright notice and either this complete permission notice or at a
+    minimum a reference to the UPL must be included in all copies or substantial
+    portions of the Software.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 
@@ -142,6 +159,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -175,7 +193,7 @@ Raw Data
                 "homepageUrl": "http://opensource.org/licenses/UPL",
                 "shortName": "UPL 1.0",
                 "textUrls": null,
-                "text": "Copyright (c) {year} {copyright holders}\n\nThe Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any person obtaining a copy of this software, associated documentation and/or data (collectively the \"Software\"), free of charge and under any and all copyright rights in the Software, and any and all patent rights owned or freely licensable by each licensor hereunder covering either (i) the unmodified Software as contributed to or provided by such licensor, or (ii) the Larger Works (as defined below), to deal in both\n\n(a) the Software, and\n\n(b) any piece of software and/or hardware listed in the lrgrwrks.txt file if one is included with the Software (each a \"Larger Work\" to which the Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create derivative works of, display, perform, and distribute the Software and make, use, sell, offer for sale, import, export, have made, and have sold the Software and the Larger Work(s), and to sublicense the foregoing rights on either these or other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a minimum a reference to the UPL must be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+                "text": "The Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any\nperson obtaining a copy of this software, associated documentation and/or data\n(collectively the \"Software\"), free of charge and under any and all copyright\nrights in the Software, and any and all patent rights owned or freely licensable\nby each licensor hereunder covering either\n\n(i) the unmodified Software as contributed to or provided by such licensor, or \n(ii) the Larger Works (as defined below), to deal in both\n\n (a) the Software, and\n (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if\n     one is included with the Software (each a \"Larger Work\" to which the\n     Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create\nderivative works of, display, perform, and distribute the Software and make,\nuse, sell, offer for sale, import, export, have made, and have sold the Software\nand the Larger Work(s), and to sublicense the foregoing rights on either these\nor other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a\nminimum a reference to the UPL must be included in all copies or substantial\nportions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
                 "category": "Permissive",
                 "osiUrl": "http://opensource.org/licenses/UPL",
                 "owner": "Oracle Corporation",
@@ -197,7 +215,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (c) {year} {copyright holders}\n\nThe Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any person obtaining a copy of this software, associated documentation and/or data (collectively the \"Software\"), free of charge and under any and all copyright rights in the Software, and any and all patent rights owned or freely licensable by each licensor hereunder covering either (i) the unmodified Software as contributed to or provided by such licensor, or (ii) the Larger Works (as defined below), to deal in both\n\n(a) the Software, and\n\n(b) any piece of software and/or hardware listed in the lrgrwrks.txt file if one is included with the Software (each a \"Larger Work\" to which the Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create derivative works of, display, perform, and distribute the Software and make, use, sell, offer for sale, import, export, have made, and have sold the Software and the Larger Work(s), and to sublicense the foregoing rights on either these or other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a minimum a reference to the UPL must be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+                    "__impliedText": "The Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any\nperson obtaining a copy of this software, associated documentation and/or data\n(collectively the \"Software\"), free of charge and under any and all copyright\nrights in the Software, and any and all patent rights owned or freely licensable\nby each licensor hereunder covering either\n\n(i) the unmodified Software as contributed to or provided by such licensor, or \n(ii) the Larger Works (as defined below), to deal in both\n\n (a) the Software, and\n (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if\n     one is included with the Software (each a \"Larger Work\" to which the\n     Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create\nderivative works of, display, perform, and distribute the Software and make,\nuse, sell, offer for sale, import, export, have made, and have sold the Software\nand the Larger Work(s), and to sublicense the foregoing rights on either these\nor other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a\nminimum a reference to the UPL must be included in all copies or substantial\nportions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -401,7 +419,8 @@ Raw Data
                 }
             ]
         },
-        "__impliedText": "Copyright (c) {year} {copyright holders}\n\nThe Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any person obtaining a copy of this software, associated documentation and/or data (collectively the \"Software\"), free of charge and under any and all copyright rights in the Software, and any and all patent rights owned or freely licensable by each licensor hereunder covering either (i) the unmodified Software as contributed to or provided by such licensor, or (ii) the Larger Works (as defined below), to deal in both\n\n(a) the Software, and\n\n(b) any piece of software and/or hardware listed in the lrgrwrks.txt file if one is included with the Software (each a \"Larger Work\" to which the Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create derivative works of, display, perform, and distribute the Software and make, use, sell, offer for sale, import, export, have made, and have sold the Software and the Larger Work(s), and to sublicense the foregoing rights on either these or other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a minimum a reference to the UPL must be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+        "__isOsiApproved": true,
+        "__impliedText": "The Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any\nperson obtaining a copy of this software, associated documentation and/or data\n(collectively the \"Software\"), free of charge and under any and all copyright\nrights in the Software, and any and all patent rights owned or freely licensable\nby each licensor hereunder covering either\n\n(i) the unmodified Software as contributed to or provided by such licensor, or \n(ii) the Larger Works (as defined below), to deal in both\n\n (a) the Software, and\n (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if\n     one is included with the Software (each a \"Larger Work\" to which the\n     Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create\nderivative works of, display, perform, and distribute the Software and make,\nuse, sell, offer for sale, import, export, have made, and have sold the Software\nand the Larger Work(s), and to sublicense the foregoing rights on either these\nor other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a\nminimum a reference to the UPL must be included in all copies or substantial\nportions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",

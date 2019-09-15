@@ -20,7 +20,9 @@ URLs
 Text
 ----
 
-    A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.
+    A modified version of this file may be distributed, but it should be distributed
+    with a *different* name. Changed files must be distributed *together with a
+    complete and unchanged* distribution of these files.
 
 ------------------------------------------------------------------------
 
@@ -33,6 +35,7 @@ Raw Data
             "dvipdfm License"
         ],
         "__impliedId": "dvipdfm",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -64,6 +67,7 @@ Raw Data
                         "dvipdfm License"
                     ],
                     "__impliedId": "dvipdfm",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -91,6 +95,7 @@ Raw Data
                     "__impliedNames": [
                         "dvipdfm License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -107,7 +112,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/dvipdfm",
                 "shortName": "dvipdfm License",
                 "textUrls": null,
-                "text": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+                "text": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Unspecified",
@@ -129,7 +134,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+                    "__impliedText": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -155,7 +160,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+        "__isOsiApproved": false,
+        "__impliedText": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
         "__impliedURLs": [
             [
                 "SPDX",

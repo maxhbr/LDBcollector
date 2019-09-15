@@ -26,8 +26,6 @@ License List])
 === Text
 
 ....
-Copyright (C) 2001 Leptonica.  All rights reserved.
-
 This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.
 
 No author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: 
@@ -49,6 +47,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
         "leptonica"
     ],
     "__impliedId": "Leptonica",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -82,6 +81,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
                     "Leptonica License"
                 ],
                 "__impliedId": "Leptonica",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -109,6 +109,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
                 "__impliedNames": [
                     "Leptonica License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -125,7 +126,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
             "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Leptonica",
             "shortName": "Leptonica License",
             "textUrls": null,
-            "text": "Copyright (C) 2001 Leptonica.  All rights reserved.\n\nThis software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
+            "text": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
             "category": "Permissive",
             "osiUrl": null,
             "owner": "Leptonica",
@@ -147,7 +148,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
                     ]
                 ],
                 "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "Copyright (C) 2001 Leptonica.  All rights reserved.\n\nThis software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
+                "__impliedText": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
                 "__impliedURLs": [
                     [
                         "Homepage",
@@ -219,7 +220,8 @@ No author or distributor accepts responsibility to anyone for the consequences o
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
-    "__impliedText": "Copyright (C) 2001 Leptonica.  All rights reserved.\n\nThis software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
+    "__isOsiApproved": false,
+    "__impliedText": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
     "__impliedURLs": [
         [
             "SPDX",

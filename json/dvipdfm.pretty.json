@@ -4,6 +4,7 @@
         "dvipdfm License"
     ],
     "__impliedId": "dvipdfm",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -35,6 +36,7 @@
                     "dvipdfm License"
                 ],
                 "__impliedId": "dvipdfm",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -62,6 +64,7 @@
                 "__impliedNames": [
                     "dvipdfm License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -78,7 +81,7 @@
             "homepageUrl": "https://fedoraproject.org/wiki/Licensing/dvipdfm",
             "shortName": "dvipdfm License",
             "textUrls": null,
-            "text": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+            "text": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
             "category": "Permissive",
             "osiUrl": null,
             "owner": "Unspecified",
@@ -100,7 +103,7 @@
                     ]
                 ],
                 "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+                "__impliedText": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
                 "__impliedURLs": [
                     [
                         "Homepage",
@@ -126,7 +129,8 @@
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
-    "__impliedText": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+    "__isOsiApproved": false,
+    "__impliedText": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
     "__impliedURLs": [
         [
             "SPDX",

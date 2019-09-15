@@ -90,6 +90,7 @@ Raw Data
             "ZLIB License with Acknowledgment"
         ],
         "__impliedId": "zlib-acknowledgement",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)"
         ],
@@ -126,6 +127,7 @@ Raw Data
                         "zlib/libpng License with Acknowledgement"
                     ],
                     "__impliedId": "zlib-acknowledgement",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -163,6 +165,7 @@ Raw Data
                     "__impliedNames": [
                         "zlib/libpng License with Acknowledgement"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -310,6 +313,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This software is provided 'as-is', without any express or implied warranty. In\nno event will the authors be held liable for any damages arising from the use of\nthis software.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim\nthat you wrote the original software. If you use this software in a product, an\nacknowledgment (see the following) in the product documentation is required.\n\nPortions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James\nW. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002\nPhilip A. Craig\n\n2. Altered source versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.",
         "__impliedURLs": [
             [

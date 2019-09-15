@@ -7,6 +7,7 @@
 |Shortname |MIT
 |Rating |Go
 |Classification |NoCopyleft
+|Has Patent Hint |False
 |==========================
 
 *Other Names:*
@@ -91,6 +92,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[cho
 * *SPDX:* https://spdx.org/licenses/MIT.html
 * *Wikipedia page:* https://en.wikipedia.org/wiki/MIT_License
 * *tl;dr legal:* https://tldrlegal.com/license/mit-license
+* https://opensource.com/article/19/4/history-mit-license
 * https://spdx.org/licenses/MIT.html#licenseText
 
 === OSADL Rule
@@ -143,9 +145,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         "MIT license (also X11)"
     ],
     "__impliedId": "MIT",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The MIT License"
     ],
+    "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -225,6 +229,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -262,6 +267,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 "__impliedNames": [
                     "MIT license (also X11)"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -275,6 +281,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         },
         "Scancode": {
             "otherUrls": [
+                "https://opensource.com/article/19/4/history-mit-license",
                 "https://opensource.org/licenses/MIT"
             ],
             "homepageUrl": "http://opensource.org/licenses/mit-license.php",
@@ -311,6 +318,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     [
                         "OSI Page",
                         "http://www.opensource.org/licenses/MIT"
+                    ],
+                    [
+                        null,
+                        "https://opensource.com/article/19/4/history-mit-license"
                     ],
                     [
                         null,
@@ -572,7 +583,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 "__impliedNames": [
                     "MIT",
                     "MIT license / X11 license"
-                ]
+                ],
+                "__hasPatentHint": false
             },
             "Private use": {
                 "value": "Yes",
@@ -840,6 +852,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             }
         ]
     },
+    "__isOsiApproved": true,
     "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
     "__impliedURLs": [
         [
@@ -861,6 +874,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         [
             "OSI Page",
             "http://www.opensource.org/licenses/MIT"
+        ],
+        [
+            null,
+            "https://opensource.com/article/19/4/history-mit-license"
         ],
         [
             "tl;dr legal",

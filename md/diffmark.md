@@ -40,6 +40,7 @@ Raw Data
             "diffmark License"
         ],
         "__impliedId": "diffmark",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -73,6 +74,7 @@ Raw Data
                         "diffmark license"
                     ],
                     "__impliedId": "diffmark",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -100,6 +102,7 @@ Raw Data
                     "__impliedNames": [
                         "diffmark license"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -210,6 +213,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "1. you can do what you want with it\n2. I refuse any responsibility for the consequences",
         "__impliedURLs": [
             [

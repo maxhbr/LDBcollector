@@ -20,11 +20,11 @@ URLs
 Text
 ----
 
-    psfrag.dtx
-    Copyright (C) 1996 Craig Barratt, Michael C. Grant, and David Carlisle.
-    All rights are reserved.
-
-    This system is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and it doesn't work! If this file is modified by anyone but the authors, those changes and their authors must be explicitly stated HERE.
+    This system is distributed in the hope that it will be useful, but WITHOUT ANY
+    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+    A PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and
+    it doesn't work! If this file is modified by anyone but the authors, those
+    changes and their authors must be explicitly stated HERE.
 
 ------------------------------------------------------------------------
 
@@ -68,6 +68,7 @@ Raw Data
                         "psfrag License"
                     ],
                     "__impliedId": "psfrag",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -111,7 +112,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/psfrag",
                 "shortName": "psfrag License",
                 "textUrls": null,
-                "text": "psfrag.dtx\nCopyright (C) 1996 Craig Barratt, Michael C. Grant, and David Carlisle.\nAll rights are reserved.\n\nThis system is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and it doesn't work! If this file is modified by anyone but the authors, those changes and their authors must be explicitly stated HERE.",
+                "text": "This system is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\nA PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and\nit doesn't work! If this file is modified by anyone but the authors, those\nchanges and their authors must be explicitly stated HERE.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Craig Barratt",
@@ -133,7 +134,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "psfrag.dtx\nCopyright (C) 1996 Craig Barratt, Michael C. Grant, and David Carlisle.\nAll rights are reserved.\n\nThis system is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and it doesn't work! If this file is modified by anyone but the authors, those changes and their authors must be explicitly stated HERE.",
+                    "__impliedText": "This system is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\nA PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and\nit doesn't work! If this file is modified by anyone but the authors, those\nchanges and their authors must be explicitly stated HERE.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -159,7 +160,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "psfrag.dtx\nCopyright (C) 1996 Craig Barratt, Michael C. Grant, and David Carlisle.\nAll rights are reserved.\n\nThis system is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and it doesn't work! If this file is modified by anyone but the authors, those changes and their authors must be explicitly stated HERE.",
+        "__isOsiApproved": false,
+        "__impliedText": "This system is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\nA PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and\nit doesn't work! If this file is modified by anyone but the authors, those\nchanges and their authors must be explicitly stated HERE.",
         "__impliedURLs": [
             [
                 "SPDX",

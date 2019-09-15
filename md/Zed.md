@@ -41,6 +41,7 @@ Raw Data
             "zed"
         ],
         "__impliedId": "Zed",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -74,6 +75,7 @@ Raw Data
                         "Zed License"
                     ],
                     "__impliedId": "Zed",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -101,6 +103,7 @@ Raw Data
                     "__impliedNames": [
                         "Zed License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -211,6 +214,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
         "__impliedURLs": [
             [

@@ -46,8 +46,6 @@ OSADL Rule
 Text
 ----
 
-    COPYRIGHT AND PERMISSION NOTICE
-      
     Permission to use, copy, modify, and distribute this software for any purpose
     with or without fee is hereby granted, provided that the above copyright
     notice and this permission notice appear in all copies.
@@ -110,6 +108,7 @@ Raw Data
                         "curl License"
                     ],
                     "__impliedId": "curl",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -141,7 +140,7 @@ Raw Data
                 "homepageUrl": "http://curl.haxx.se/",
                 "shortName": "cURL License",
                 "textUrls": null,
-                "text": "COPYRIGHT AND PERMISSION NOTICE\n  \nPermission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
+                "text": "Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "cURL",
@@ -163,7 +162,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "COPYRIGHT AND PERMISSION NOTICE\n  \nPermission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
+                    "__impliedText": "Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -281,7 +280,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "COPYRIGHT AND PERMISSION NOTICE\n  \nPermission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
+        "__isOsiApproved": false,
+        "__impliedText": "Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
         "__impliedURLs": [
             [
                 "SPDX",

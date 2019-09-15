@@ -43,6 +43,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
         "zed"
     ],
     "__impliedId": "Zed",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -76,6 +77,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
                     "Zed License"
                 ],
                 "__impliedId": "Zed",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -103,6 +105,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
                 "__impliedNames": [
                     "Zed License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -213,6 +216,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
     "__impliedURLs": [
         [

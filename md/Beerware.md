@@ -5,6 +5,8 @@ Beerware License (Beerware)
 
 **Other Names:**
 
+-   `Beer-Ware License`
+
 -   `Beerware 42`
 
 Comments on (easy) usability
@@ -36,13 +38,21 @@ Comments on (easy) usability
 URLs
 ----
 
+-   **Homepage:** http://people.freebsd.org/~phk/
+
 -   **SPDX:** http://spdx.org/licenses/Beerware.json
 
 -   **SPDX:** https://spdx.org/licenses/Beerware.html
 
 -   https://fedoraproject.org/wiki/Licensing/Beerware
 
--   https://people.freebsd.org/~phk/
+Text
+----
+
+    "THE BEER-WARE LICENSE" (Revision 42):
+    <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
+    can do whatever you want with this stuff. If we meet some day, and you think
+    this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
 
 ------------------------------------------------------------------------
 
@@ -53,9 +63,13 @@ Raw Data
         "__impliedNames": [
             "Beerware",
             "Beerware License",
+            "beerware",
+            "Beer-Ware License",
             "Beerware 42"
         ],
         "__impliedId": "Beerware",
+        "__isFsfFree": true,
+        "__hasPatentHint": false,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -63,6 +77,8 @@ Raw Data
                         "Beerware",
                         "Beerware",
                         "Beerware License",
+                        "beerware",
+                        "Beer-Ware License",
                         "Beerware 42"
                     ],
                     "__impliedId": "Beerware"
@@ -71,6 +87,8 @@ Raw Data
                 "otherNames": [
                     "Beerware",
                     "Beerware License",
+                    "beerware",
+                    "Beer-Ware License",
                     "Beerware 42"
                 ]
             },
@@ -90,6 +108,7 @@ Raw Data
                         "Beerware License"
                     ],
                     "__impliedId": "Beerware",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -121,6 +140,7 @@ Raw Data
                     "__impliedNames": [
                         "Beerware License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -128,6 +148,48 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "https://people.freebsd.org/~phk/"
+                ],
+                "homepageUrl": "http://people.freebsd.org/~phk/",
+                "shortName": "Beer-Ware License",
+                "textUrls": null,
+                "text": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "FreeBSD",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml",
+                "key": "beerware",
+                "name": "Beer-Ware License",
+                "spdxId": "Beerware",
+                "_implications": {
+                    "__impliedNames": [
+                        "beerware",
+                        "Beer-Ware License",
+                        "Beerware"
+                    ],
+                    "__impliedId": "Beerware",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://people.freebsd.org/~phk/"
+                        ],
+                        [
+                            null,
+                            "https://people.freebsd.org/~phk/"
                         ]
                     ]
                 }
@@ -233,7 +295,8 @@ Raw Data
                     "__impliedNames": [
                         "Beerware",
                         "Beerware 42"
-                    ]
+                    ],
+                    "__hasPatentHint": false
                 },
                 "Private use": {
                     "value": "Permissive",
@@ -301,11 +364,17 @@ Raw Data
                 "NoCopyleft"
             ],
             [
+                "Scancode",
+                "NoCopyleft"
+            ],
+            [
                 "ifrOSS",
                 "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
+        "__impliedText": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -322,6 +391,10 @@ Raw Data
             [
                 "SPDX",
                 "https://spdx.org/licenses/Beerware.html"
+            ],
+            [
+                "Homepage",
+                "http://people.freebsd.org/~phk/"
             ],
             [
                 null,

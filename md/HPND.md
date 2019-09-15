@@ -50,7 +50,7 @@ Text
     Permission to use, copy, modify and distribute this software and its
     documentation for any purpose and without fee is hereby granted,
     provided that the above copyright notice appear in all copies, and
-    that both that the copyright notice and this permission notice
+    that both that copyright notice and this permission notice
     appear in supporting documentation, and that the name of copyright
     holder or related entities not be used in advertising or publicity
     pertaining to distribution of the software without specific, written
@@ -78,6 +78,7 @@ Raw Data
             "historical"
         ],
         "__impliedId": "HPND",
+        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -147,6 +148,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -184,6 +186,7 @@ Raw Data
                     "__impliedNames": [
                         "Historical Permission Notice and Disclaimer"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -203,7 +206,7 @@ Raw Data
                 "homepageUrl": "http://www.opensource.org/licenses/historical.php",
                 "shortName": "Historical Permission Notice and Disclaimer",
                 "textUrls": null,
-                "text": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that the copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                "text": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
                 "category": "Permissive",
                 "osiUrl": "http://www.opensource.org/licenses/historical.php",
                 "owner": "OSI - Open Source Initiative",
@@ -225,7 +228,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that the copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                    "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -375,7 +378,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that the copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+        "__isOsiApproved": true,
+        "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",

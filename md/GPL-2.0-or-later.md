@@ -190,6 +190,7 @@ Raw Data
             "GPL-2.0"
         ],
         "__impliedId": "GPL-2.0-or-later",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The GNU General Public License (GPL)"
         ],
@@ -276,6 +277,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -325,6 +327,7 @@ Raw Data
                     "__impliedNames": [
                         "GNU General Public License v2.0 or later"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -604,6 +607,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "Copyleft",
+        "__isOsiApproved": true,
         "__impliedText": "This program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 2 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program; if not, write to the Free Software Foundation, Inc., 51 Franklin\nStreet, Fifth Floor, Boston, MA  02110-1301, USA.",
         "__impliedURLs": [
             [

@@ -47,6 +47,7 @@ Raw Data
             "crossword"
         ],
         "__impliedId": "Crossword",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -80,6 +81,7 @@ Raw Data
                         "Crossword License"
                     ],
                     "__impliedId": "Crossword",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -107,6 +109,7 @@ Raw Data
                     "__impliedNames": [
                         "Crossword License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -217,6 +220,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Copyright (C) 1995-2009 Gerd Neugebauer\n Â \ncwpuzzle.dtx is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY. No author or distributor  accepts responsibility to anyone for the\nconsequences of using it or for whether it serves any particular purpose  or\nworks at all, unless he says so in writing.\n\nEveryone is granted permission to copy, modify and redistribute cwpuzzle.dtx,\nprovided this copyright notice is preserved and any modifications are indicated.",
         "__impliedURLs": [
             [

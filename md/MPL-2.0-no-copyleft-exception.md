@@ -143,6 +143,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -275,6 +276,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "This Source Code Form is \"Incompatible With Secondary Licenses\", as\ndefined by the Mozilla Public License, v. 2.0.\n",
         "__impliedURLs": [
             [

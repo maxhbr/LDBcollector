@@ -53,6 +53,7 @@ Raw Data
             "Crystal Stacker License"
         ],
         "__impliedId": "CrystalStacker",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -88,6 +89,7 @@ Raw Data
                         "CrystalStacker License"
                     ],
                     "__impliedId": "CrystalStacker",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -115,6 +117,7 @@ Raw Data
                     "__impliedNames": [
                         "Crystal Stacker License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -225,6 +228,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it's original form in your distribution. Please see the \"Contacting Us\" section of this document if you need to contact us for any reason.\n\nDisclaimer\n\nNewCreature Design makes no guarantees regarding the Crystal Stacker software. We are not responsible for damages caused by it, though the software is not known to cause any problems. If you have trouble with the software, see the \"Contacting Us\" section of this document.\n\nThe source code is provided as-is and you may do with it whatsoever you please provided that you include this file in its unmodified form with any new distribution. NewCreature Design makes no gaurantees regarding the usability of the source but are willing to help with any problems you might run into. Please see the \"Contacting Us\" section of this document if you need to get in touch with us about any issues you have regarding the source.",
         "__impliedURLs": [
             [

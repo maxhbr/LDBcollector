@@ -77,6 +77,7 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
                     "GNU Free Documentation License v1.2 or later"
                 ],
                 "__impliedId": "GFDL-1.2-or-later",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -177,6 +178,7 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
         ]
     ],
     "__calculatedCopyleft": "WeakCopyleft",
+    "__isOsiApproved": false,
     "__impliedURLs": [
         [
             "SPDX",

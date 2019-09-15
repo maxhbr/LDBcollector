@@ -85,6 +85,7 @@ PATENT HINTS Yes
                     "bzip2 and libbzip2 License v1.0.5"
                 ],
                 "__impliedId": "bzip2-1.0.5",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -161,6 +162,7 @@ PATENT HINTS Yes
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedURLs": [
         [
             "SPDX",

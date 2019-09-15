@@ -3,6 +3,12 @@ Barr License (Barr)
 
 [TABLE]
 
+**Other Names:**
+
+-   `barr-tex`
+
+-   `Barr TeX License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -16,11 +22,23 @@ Comments on (easy) usability
 URLs
 ----
 
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/Barr
+
 -   **SPDX:** http://spdx.org/licenses/Barr.json
 
 -   **SPDX:** https://spdx.org/licenses/Barr.html
 
--   https://fedoraproject.org/wiki/Licensing/Barr
+Text
+----
+
+    This is a package of commutative diagram macros built on top of Xy-pic  by
+    Michael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely
+    distributed, unchanged, for non-commercial or commercial  use. If changed, it
+    must be renamed. Inclusion in a commercial  software package is also permitted,
+    but I would appreciate receiving a  free copy for my personal examination and
+    use. There are no guarantees  that this package is good for anything. I have
+    tested it with LaTeX 2e,  LaTeX 2.09 and Plain TeX. Although I know of no reason
+    it will not work  with AMSTeX, I have not tested it.
 
 ------------------------------------------------------------------------
 
@@ -30,23 +48,30 @@ Raw Data
     {
         "__impliedNames": [
             "Barr",
-            "Barr License"
+            "Barr License",
+            "barr-tex",
+            "Barr TeX License"
         ],
         "__impliedId": "Barr",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
                         "Barr",
                         "Barr",
-                        "Barr License"
+                        "Barr License",
+                        "barr-tex",
+                        "Barr TeX License"
                     ],
                     "__impliedId": "Barr"
                 },
                 "shortname": "Barr",
                 "otherNames": [
                     "Barr",
-                    "Barr License"
+                    "Barr License",
+                    "barr-tex",
+                    "Barr TeX License"
                 ]
             },
             "SPDX": {
@@ -64,6 +89,7 @@ Raw Data
                         "Barr License"
                     ],
                     "__impliedId": "Barr",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -91,6 +117,7 @@ Raw Data
                     "__impliedNames": [
                         "Barr License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -98,6 +125,42 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Barr",
+                "shortName": "Barr TeX License",
+                "textUrls": null,
+                "text": "This is a package of commutative diagram macros built on top of Xy-pic  by\nMichael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely\ndistributed, unchanged, for non-commercial or commercial  use. If changed, it\nmust be renamed. Inclusion in a commercial  software package is also permitted,\nbut I would appreciate receiving a  free copy for my personal examination and\nuse. There are no guarantees  that this package is good for anything. I have\ntested it with LaTeX 2e,  LaTeX 2.09 and Plain TeX. Although I know of no reason\nit will not work  with AMSTeX, I have not tested it.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Michael Barr",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/barr-tex.yml",
+                "key": "barr-tex",
+                "name": "Barr TeX License",
+                "spdxId": "Barr",
+                "_implications": {
+                    "__impliedNames": [
+                        "barr-tex",
+                        "Barr TeX License",
+                        "Barr"
+                    ],
+                    "__impliedId": "Barr",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "This is a package of commutative diagram macros built on top of Xy-pic  by\nMichael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely\ndistributed, unchanged, for non-commercial or commercial  use. If changed, it\nmust be renamed. Inclusion in a commercial  software package is also permitted,\nbut I would appreciate receiving a  free copy for my personal examination and\nuse. There are no guarantees  that this package is good for anything. I have\ntested it with LaTeX 2e,  LaTeX 2.09 and Plain TeX. Although I know of no reason\nit will not work  with AMSTeX, I have not tested it.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/Barr"
                         ]
                     ]
                 }
@@ -158,9 +221,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
+        "__impliedText": "This is a package of commutative diagram macros built on top of Xy-pic  by\nMichael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely\ndistributed, unchanged, for non-commercial or commercial  use. If changed, it\nmust be renamed. Inclusion in a commercial  software package is also permitted,\nbut I would appreciate receiving a  free copy for my personal examination and\nuse. There are no guarantees  that this package is good for anything. I have\ntested it with LaTeX 2e,  LaTeX 2.09 and Plain TeX. Although I know of no reason\nit will not work  with AMSTeX, I have not tested it.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -173,6 +242,10 @@ Raw Data
             [
                 "SPDX",
                 "https://spdx.org/licenses/Barr.html"
+            ],
+            [
+                "Homepage",
+                "https://fedoraproject.org/wiki/Licensing/Barr"
             ]
         ]
     }

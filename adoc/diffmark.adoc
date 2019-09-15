@@ -42,6 +42,7 @@ License List])
         "diffmark License"
     ],
     "__impliedId": "diffmark",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -75,6 +76,7 @@ License List])
                     "diffmark license"
                 ],
                 "__impliedId": "diffmark",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -102,6 +104,7 @@ License List])
                 "__impliedNames": [
                     "diffmark license"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -212,6 +215,7 @@ License List])
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "1. you can do what you want with it\n2. I refuse any responsibility for the consequences",
     "__impliedURLs": [
         [

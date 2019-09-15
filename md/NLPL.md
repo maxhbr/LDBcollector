@@ -59,6 +59,7 @@ Raw Data
             "nlpl"
         ],
         "__impliedId": "NLPL",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -92,6 +93,7 @@ Raw Data
                         "No Limit Public License"
                     ],
                     "__impliedId": "NLPL",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -119,6 +121,7 @@ Raw Data
                     "__impliedNames": [
                         "No Limit Public License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -274,6 +277,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "StrongCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.",
         "__impliedURLs": [
             [

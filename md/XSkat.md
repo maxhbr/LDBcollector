@@ -47,6 +47,7 @@ Raw Data
             "xskat"
         ],
         "__impliedId": "XSkat",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -80,6 +81,7 @@ Raw Data
                         "XSkat License"
                     ],
                     "__impliedId": "XSkat",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -107,6 +109,7 @@ Raw Data
                     "__impliedNames": [
                         "XSkat License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -171,6 +174,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This program is free software; you can redistribute it freely.\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following\nconditions are met:\n\n1. All copyright & permission notices are preserved.\n\n2.a) Only changes required for packaging or porting are made. \nor\n2.b) It is clearly stated who last changed the program. The program is renamed\nor the version number is of the form x.y.z, where x.y is the version of the\noriginal program and z is an arbitrary suffix.",
         "__impliedURLs": [
             [

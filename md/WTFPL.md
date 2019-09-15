@@ -102,9 +102,11 @@ Raw Data
             "Do What The Fuck You Want To Public License (WTFPL) 2"
         ],
         "__impliedId": "WTFPL",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE"
         ],
+        "__hasPatentHint": false,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -144,6 +146,7 @@ Raw Data
                         "Do What The F*ck You Want To Public License"
                     ],
                     "__impliedId": "WTFPL",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -181,6 +184,7 @@ Raw Data
                     "__impliedNames": [
                         "Do What The F*ck You Want To Public License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -340,7 +344,8 @@ Raw Data
                     "__impliedNames": [
                         "WTFPL",
                         "Do What The Fuck You Want To Public License (WTFPL) 2"
-                    ]
+                    ],
+                    "__hasPatentHint": false
                 },
                 "Private use": {
                     "value": "Yes",
@@ -483,6 +488,7 @@ Raw Data
             ],
             "conditions": []
         },
+        "__isOsiApproved": false,
         "__impliedText": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n                    Version 2, December 2004\n\n Copyright (C) 2004 Sam Hocevar\n  14 rue de Plaisance, 75014 Paris, France\n Everyone is permitted to copy and distribute verbatim or modified\n copies of this license document, and changing it is allowed as long\n as the name is changed.\n\n            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.",
         "__impliedURLs": [
             [

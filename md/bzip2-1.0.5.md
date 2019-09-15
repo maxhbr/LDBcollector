@@ -81,6 +81,7 @@ Raw Data
                         "bzip2 and libbzip2 License v1.0.5"
                     ],
                     "__impliedId": "bzip2-1.0.5",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -157,6 +158,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedURLs": [
             [
                 "SPDX",

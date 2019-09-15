@@ -47,6 +47,7 @@ Raw Data
             "FSF All Permissive license"
         ],
         "__impliedId": "FSFAP",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -80,6 +81,7 @@ Raw Data
                         "FSF All Permissive License"
                     ],
                     "__impliedId": "FSFAP",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -107,6 +109,7 @@ Raw Data
                     "__impliedNames": [
                         "FSF All Permissive license"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -192,6 +195,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Copying and distribution of this file, with or without modification, are\npermitted in any medium without royalty provided the copyright notice\nand this notice are preserved. This file is offered as-is, without any\nwarranty.\n",
         "__impliedURLs": [
             [

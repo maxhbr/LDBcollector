@@ -43,6 +43,7 @@
                     "CMU License"
                 ],
                 "__impliedId": "MIT-CMU",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -75,7 +76,7 @@
             "homepageUrl": "http://copyfree.org/licenses/cmu/license.txt",
             "shortName": "CMU License",
             "textUrls": null,
-            "text": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\n{copyright holder} ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\n{copyright holder} DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
+            "text": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
             "category": "Permissive",
             "osiUrl": null,
             "owner": "Carnegie Mellon University",
@@ -95,7 +96,7 @@
                     ]
                 ],
                 "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\n{copyright holder} ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\n{copyright holder} DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
+                "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
                 "__impliedURLs": [
                     [
                         "Homepage",
@@ -201,7 +202,8 @@
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
-    "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\n{copyright holder} ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\n{copyright holder} DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
+    "__isOsiApproved": false,
+    "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
     "__impliedURLs": [
         [
             "SPDX",

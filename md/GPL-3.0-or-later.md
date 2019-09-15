@@ -238,6 +238,7 @@ Raw Data
             "GPL-3.0"
         ],
         "__impliedId": "GPL-3.0-or-later",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
             "The GNU General Public License (GPL)"
@@ -325,6 +326,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -374,6 +376,7 @@ Raw Data
                     "__impliedNames": [
                         "GNU General Public License v3.0 or later"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -517,7 +520,8 @@ Raw Data
                     "__impliedNames": [
                         "GPL-3.0-or-later",
                         "GNU General Public License 3.0"
-                    ]
+                    ],
+                    "__hasPatentHint": true
                 },
                 "Private use": {
                     "value": "Yes",
@@ -745,6 +749,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "Copyleft",
+        "__isOsiApproved": true,
         "__impliedText": "This program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
         "__impliedURLs": [
             [

@@ -136,9 +136,11 @@ Raw Data
             "Zlib license"
         ],
         "__impliedId": "Zlib",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)"
         ],
+        "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -219,6 +221,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -260,6 +263,7 @@ Raw Data
                     "__impliedNames": [
                         "zlib/libpng License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -521,7 +525,8 @@ Raw Data
                     "__impliedNames": [
                         "Zlib",
                         "zlib/libpng license"
-                    ]
+                    ],
+                    "__hasPatentHint": false
                 },
                 "Modification": {
                     "value": "Permissive",
@@ -774,6 +779,7 @@ Raw Data
                 }
             ]
         },
+        "__isOsiApproved": true,
         "__impliedText": "This software is provided 'as-is', without any express or implied warranty. In no\nevent will the authors be held liable for any damages arising from the use of this\nsoftware.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim that\n   you wrote the original software. If you use this software in a product, an\n   acknowledgment in the product documentation would be appreciated but is not\n   required.\n\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.\n",
         "__impliedURLs": [
             [

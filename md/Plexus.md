@@ -90,6 +90,7 @@ Raw Data
             "Dom4j License"
         ],
         "__impliedId": "Plexus",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -125,6 +126,7 @@ Raw Data
                         "Plexus Classworlds License"
                     ],
                     "__impliedId": "Plexus",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -152,6 +154,7 @@ Raw Data
                     "__impliedNames": [
                         "Plexus Classworlds License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -344,6 +347,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use of this software and associated documentation\n(\"Software\"), with or without modification, are permitted provided that the\nfollowing conditions are met:\n\n1. Redistributions of source code must retain copyright statements and\nnotices. Redistributions must also contain a copy of this document.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. The name \"DOM4J\" must not be used to endorse or promote products derived\nfrom this Software without prior written permission of MetaStuff, Ltd. For\nwritten permission, please contact dom4j-info@metastuff.com.\n\n4. Products derived from this Software may not be called \"DOM4J\" nor may\n\"DOM4J\" appear in their names without prior written permission of MetaStuff, Ltd. DOM4J\nis a registered trademark of MetaStuff, Ltd.\n\n5. Due credit should be given to the DOM4J Project - http://www.dom4j.org\n\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS ``AS IS'' AND\nANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.\n\nIN NO EVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\nTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n",
         "__impliedURLs": [
             [

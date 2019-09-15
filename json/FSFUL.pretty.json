@@ -6,6 +6,7 @@
         "FSF Free Software License"
     ],
     "__impliedId": "FSFUL",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -41,6 +42,7 @@
                     "FSF Unlimited License"
                 ],
                 "__impliedId": "FSFUL",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -68,6 +70,7 @@
                 "__impliedNames": [
                     "FSF Unlimited License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -177,6 +180,7 @@
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "This configure script is free software; the Free Software Foundation gives\nunlimited permission to copy, distribute and modify it.",
     "__impliedURLs": [
         [

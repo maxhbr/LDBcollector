@@ -13,9 +13,23 @@ Comments on (easy) usability
 URLs
 ----
 
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/Abstyles
+
 -   **SPDX:** http://spdx.org/licenses/Abstyles.json
 
--   https://fedoraproject.org/wiki/Licensing/Abstyles
+Text
+----
+
+    This program is distributed WITHOUT ANY WARRANTY, express or implied.  
+
+    Permission is granted to make and distribute verbatim copies of this
+    document provided that the copyright notice and this permission notice are
+    preserved on all copies.
+
+    Permission is granted to copy and distribute modified versions of this
+    document under the conditions for verbatim copying, provided that the
+    entire resulting derived work is distributed under the terms of a
+    permission notice identical to this one.
 
 ------------------------------------------------------------------------
 
@@ -25,23 +39,27 @@ Raw Data
     {
         "__impliedNames": [
             "Abstyles",
-            "Abstyles License"
+            "Abstyles License",
+            "abstyles"
         ],
         "__impliedId": "Abstyles",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
                         "Abstyles",
                         "Abstyles",
-                        "Abstyles License"
+                        "Abstyles License",
+                        "abstyles"
                     ],
                     "__impliedId": "Abstyles"
                 },
                 "shortname": "Abstyles",
                 "otherNames": [
                     "Abstyles",
-                    "Abstyles License"
+                    "Abstyles License",
+                    "abstyles"
                 ]
             },
             "SPDX": {
@@ -59,6 +77,7 @@ Raw Data
                         "Abstyles License"
                     ],
                     "__impliedId": "Abstyles",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -86,6 +105,7 @@ Raw Data
                     "__impliedNames": [
                         "Abstyles License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -93,6 +113,42 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Abstyles",
+                "shortName": "Abstyles License",
+                "textUrls": null,
+                "text": "This program is distributed WITHOUT ANY WARRANTY, express or implied.  \n\nPermission is granted to make and distribute verbatim copies of this\ndocument provided that the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\ndocument under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "CTAN",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml",
+                "key": "abstyles",
+                "name": "Abstyles License",
+                "spdxId": "Abstyles",
+                "_implications": {
+                    "__impliedNames": [
+                        "abstyles",
+                        "Abstyles License",
+                        "Abstyles"
+                    ],
+                    "__impliedId": "Abstyles",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "This program is distributed WITHOUT ANY WARRANTY, express or implied.  \n\nPermission is granted to make and distribute verbatim copies of this\ndocument provided that the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\ndocument under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/Abstyles"
                         ]
                     ]
                 }
@@ -107,6 +163,15 @@ Raw Data
                 }
             ]
         ],
+        "__impliedCopyleft": [
+            [
+                "Scancode",
+                "NoCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
+        "__impliedText": "This program is distributed WITHOUT ANY WARRANTY, express or implied.  \n\nPermission is granted to make and distribute verbatim copies of this\ndocument provided that the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\ndocument under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -114,6 +179,10 @@ Raw Data
             ],
             [
                 null,
+                "https://fedoraproject.org/wiki/Licensing/Abstyles"
+            ],
+            [
+                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Abstyles"
             ]
         ]

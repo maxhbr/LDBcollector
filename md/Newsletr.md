@@ -43,6 +43,7 @@ Raw Data
             "newsletr"
         ],
         "__impliedId": "Newsletr",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -76,6 +77,7 @@ Raw Data
                         "Newsletr License"
                     ],
                     "__impliedId": "Newsletr",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -103,6 +105,7 @@ Raw Data
                     "__impliedNames": [
                         "Newsletr License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -213,6 +216,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:\n\n1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.",
         "__impliedURLs": [
             [

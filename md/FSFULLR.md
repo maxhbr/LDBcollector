@@ -44,6 +44,7 @@ Raw Data
             "FSF-Unlimited"
         ],
         "__impliedId": "FSFULLR",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -79,6 +80,7 @@ Raw Data
                         "FSF Unlimited License (with License Retention)"
                     ],
                     "__impliedId": "FSFULLR",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -106,6 +108,7 @@ Raw Data
                     "__impliedNames": [
                         "FSF Unlimited License (with License Retention)"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -170,6 +173,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This file is free software; the Free Software Foundation gives\nunlimited permission to copy and/or distribute it, with or without\nmodifications, as long as this notice is preserved.\n",
         "__impliedURLs": [
             [

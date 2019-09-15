@@ -45,15 +45,13 @@
 
 - http://www.opensource.org/licenses/Fair
 
+- http://rhid.com/fair
+
 - https://web.archive.org/web/20040803105645/http://rhid.com/fair
 
 ** Text
 
 #+BEGIN_EXAMPLE
-    Fair License
-
-    <Copyright Information>
-
     Usage of the works is permitted provided that this instrument is retained with
     the works, so that any entity that uses the works is notified of this
     instrument.
@@ -74,6 +72,7 @@
             "Fair License (Fair)"
         ],
         "__impliedId": "Fair",
+        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -146,6 +145,7 @@
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -177,6 +177,7 @@
                     "__impliedNames": [
                         "Fair License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -192,12 +193,13 @@
                 "otherUrls": [
                     "http://fairlicense.org/",
                     "http://www.opensource.org/licenses/Fair",
-                    "https://opensource.org/licenses/Fair"
+                    "https://opensource.org/licenses/Fair",
+                    "http://rhid.com/fair"
                 ],
                 "homepageUrl": "http://opensource.org/licenses/fair.php",
                 "shortName": "Fair License",
                 "textUrls": null,
-                "text": "Fair License\n\n<Copyright Information>\n\nUsage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.",
+                "text": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
                 "category": "Permissive",
                 "osiUrl": "http://opensource.org/licenses/fair.php",
                 "owner": "OSI - Open Source Initiative",
@@ -219,7 +221,7 @@
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Fair License\n\n<Copyright Information>\n\nUsage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.",
+                    "__impliedText": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -240,6 +242,10 @@
                         [
                             null,
                             "https://opensource.org/licenses/Fair"
+                        ],
+                        [
+                            null,
+                            "http://rhid.com/fair"
                         ]
                     ]
                 }
@@ -418,7 +424,8 @@
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Fair License\n\n<Copyright Information>\n\nUsage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.",
+        "__isOsiApproved": true,
+        "__impliedText": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -447,6 +454,10 @@
             [
                 null,
                 "http://www.opensource.org/licenses/Fair"
+            ],
+            [
+                null,
+                "http://rhid.com/fair"
             ],
             [
                 "OSI Page",
