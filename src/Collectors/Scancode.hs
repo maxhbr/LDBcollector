@@ -22,6 +22,8 @@ import           Data.FileEmbed (embedDir)
 
 import           Model.License
 
+import           Debug.Trace
+
 -- loadScancodeFactsFromString
 
 {-
@@ -106,13 +108,14 @@ instance LFRaw ScancodeData where
     "Unstated License" -> NoSLSR
     "Free Restricted" -> NoSLSR
     "Proprietary Free" -> NoSLSR
+    "Source-available" -> NoSLSR
     _ -> SLSR (getLicenseFactClassifier scd) $ case c of
           "Copyleft" -> Copyleft
           "Copyleft Limited" -> WeakCopyleft
           "Permissive" -> NoCopyleft
           "Commercial" -> NoCopyleft
           "Public Domain" -> NoCopyleft
-          _ -> undefined -- TODO?
+          f -> trace f $ undefined -- TODO?
 
 loadScancodeFactsFromData :: (FilePath, ByteString, Maybe ByteString) -> Facts
 loadScancodeFactsFromData (fn, yml, licText) = let

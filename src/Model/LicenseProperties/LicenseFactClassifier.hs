@@ -22,7 +22,7 @@ data LicenseFactClassifier
   | LFCWithURL URL Text
   deriving (Generic)
 extractBrc :: LicenseFactClassifier -> Text
-extractBrc (EmptyLFC)         = ""
+extractBrc EmptyLFC           = ""
 extractBrc (LFC brc)          = brc
 extractBrc (LFCWithURL _ brc) = brc
 instance Eq LicenseFactClassifier where
@@ -36,10 +36,12 @@ instance ToJSON LicenseFactClassifier where
 instance ToJSONKey LicenseFactClassifier
 
 instance Inlineable LicenseFactClassifier where
+  toInline EmptyLFC               = mempty
   toInline lfc@(LFC _)            = P.text (show lfc)
   toInline lfc@(LFCWithURL url _) = P.link url (show lfc) (P.text (show lfc))
 
 maybeAddUrl :: Maybe URL -> LicenseFactClassifier -> LicenseFactClassifier
+maybeAddUrl _ EmptyLFC             = EmptyLFC
 maybeAddUrl Nothing lfc            = lfc
 maybeAddUrl _ lfc@(LFCWithURL _ _) = lfc
 maybeAddUrl (Just url) (LFC brc)   = LFCWithURL url brc

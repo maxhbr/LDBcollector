@@ -27,6 +27,9 @@ import           Text.RawString.QQ
 
 import           Model.License
 
+wikipediaDataVersion :: LicenseFactVersion
+wikipediaDataVersion = LFVersion "2019-05-02"
+
 {-
 The following table compares various features of each license and is a general guide to the terms and conditions of each license. The table lists the permissions and limitations regarding the following subjects:
 
@@ -198,6 +201,7 @@ wikipediaLFC :: LicenseFactClassifier
 wikipediaLFC = LFC "Wikipedia"
 instance LFRaw WikipediaFact where
   getLicenseFactClassifier _ = wikipediaLFC
+  getLicenseFactVersion _    = wikipediaDataVersion
   getImpliedNames wpf@(WikipediaFact name _ version _ _ _ _ _ _ _ _) = let
       nameByWikipedia = T.unpack $ case version of
         Just v  -> name `T.append` " " `T.append` v

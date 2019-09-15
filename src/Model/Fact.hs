@@ -5,6 +5,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 module Model.Fact
   ( module X
+  , LicenseFactVersion (..)
   , LFRaw (..), getImplicationJSONFromLFRaw
   , LicenseFact (..)
   , Facts
@@ -18,8 +19,15 @@ import qualified Data.Map as M
 import Model.Statement as X
 import Model.LicenseProperties as X
 
+data LicenseFactVersion
+  = EmptyLFCVersion
+  | LFVersion String
+  deriving (Generic)
+
 class (Show a, ToJSON a) => LFRaw a where
   getLicenseFactClassifier :: a -> LicenseFactClassifier
+  getLicenseFactVersion :: a -> LicenseFactVersion
+  getLicenseFactVersion _ = EmptyLFCVersion
   mkSLSR :: (Show b, ToJSON b) => a -> b -> ScopedLicenseStatementResult b
   mkSLSR a = SLSR (getLicenseFactClassifier a)
   mkRLSR :: (Show b, ToJSON b) => a -> Rank -> b -> RankedLicenseStatementResult b
@@ -145,6 +153,7 @@ instance ToJSON LicenseFact where
                                          , object [ "implications" .= getImplicationJSONFromLFRaw a ]]]
 instance LFRaw LicenseFact where
   getLicenseFactClassifier (LicenseFact url raw)  = maybeAddUrl url $ getLicenseFactClassifier raw
+  getLicenseFactVersion (LicenseFact _ raw)       = getLicenseFactVersion raw
   getImpliedNames (LicenseFact _ raw)             =                                                             getImpliedNames raw
   getImpliedAmbiguousNames (LicenseFact _ raw)    =                                                             getImpliedAmbiguousNames raw
   getImpliedFullName lf@(LicenseFact _ raw)       = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedFullName raw
