@@ -3,7 +3,9 @@
 module Model.LicenseProperties.Compatibility
   ( LicenseCompatibilityStatement (..)
   , LicenseCompatibility (..), singletonLicenseCompatibility
-  , isCompatibleToWhenDistributedUnderOther, isCompatibleToWhenDistributedUnderSelf, isCompatibleBothWays, isIncompatibleBothWays
+  , isCompatibleToWhenDistributedUnderOther, isCompatibleToWhenDistributedUnderSelf
+  , isOnlyCompatibleToWhenDistributedUnderOther, isOnlyCompatibleToWhenDistributedUnderSelf
+  , isCompatibleBothWays, isIncompatibleBothWays
   ) where
 
 import qualified Prelude as P
@@ -41,8 +43,15 @@ instance Semigroup LicenseCompatibility where
 singletonLicenseCompatibility :: LicenseName -> LicenseCompatibilityStatement -> LicenseCompatibility
 singletonLicenseCompatibility ln lcs = LicenseCompatibility (M.fromList [(ln, lcs)])
 
-isCompatibleToWhenDistributedUnderOther, isCompatibleToWhenDistributedUnderSelf, isCompatibleBothWays, isIncompatibleBothWays :: LicenseName -> LicenseCompatibility
+isCompatibleToWhenDistributedUnderOther :: LicenseName -> LicenseCompatibility
 isCompatibleToWhenDistributedUnderOther ln = singletonLicenseCompatibility ln $ LicenseCompatibilityStatement Nothing (Just True)
+isCompatibleToWhenDistributedUnderSelf :: LicenseName -> LicenseCompatibility
 isCompatibleToWhenDistributedUnderSelf ln = singletonLicenseCompatibility ln $ LicenseCompatibilityStatement (Just True) Nothing
+isOnlyCompatibleToWhenDistributedUnderOther :: LicenseName -> LicenseCompatibility
+isOnlyCompatibleToWhenDistributedUnderOther ln = singletonLicenseCompatibility ln $ LicenseCompatibilityStatement (Just False) (Just True)
+isOnlyCompatibleToWhenDistributedUnderSelf :: LicenseName -> LicenseCompatibility
+isOnlyCompatibleToWhenDistributedUnderSelf ln = singletonLicenseCompatibility ln $ LicenseCompatibilityStatement (Just True) (Just False)
+isCompatibleBothWays :: LicenseName -> LicenseCompatibility
 isCompatibleBothWays ln = singletonLicenseCompatibility ln $ LicenseCompatibilityStatement (Just True) (Just True)
+isIncompatibleBothWays :: LicenseName -> LicenseCompatibility
 isIncompatibleBothWays ln = singletonLicenseCompatibility ln $ LicenseCompatibilityStatement (Just False) (Just False)
