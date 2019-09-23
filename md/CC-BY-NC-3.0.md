@@ -521,9 +521,9 @@ Raw Data
                 },
                 "oName": "CC-BY-NC-3.0",
                 "oOtherLicenseIds": [],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": {
                     "tag": "FinalRating",
                     "contents": {

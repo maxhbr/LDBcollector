@@ -487,9 +487,9 @@ Raw Data
                     "GPL1.0",
                     "GPL1"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "Google OSS Policy": {

@@ -1134,9 +1134,9 @@ Public License instead of this License.  But first, please read
                 "GPL3",
                 "GPL (v3)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "OpenSourceInitiative": {

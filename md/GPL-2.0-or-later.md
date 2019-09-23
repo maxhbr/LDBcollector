@@ -434,9 +434,9 @@ Raw Data
                     "GPL2+",
                     "GPL (v2 or later)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "finos-osr/OSLC-handbook": {

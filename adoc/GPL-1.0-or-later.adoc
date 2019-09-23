@@ -230,9 +230,9 @@ You should have received a copy of the GNU General Public License along with thi
                 "GPL1.0+",
                 "GPL1+"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "Google OSS Policy": {

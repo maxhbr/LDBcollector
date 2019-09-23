@@ -441,9 +441,9 @@ You should have received a copy of the GNU Lesser General Public License along w
                 "LGPL2.1+",
                 "LGPL (v2.1 or later)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "finos-osr/OSLC-handbook": {

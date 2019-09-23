@@ -483,9 +483,9 @@ Raw Data
                     "GPL3+",
                     "GPL (v3 or later)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "Wikipedia": {

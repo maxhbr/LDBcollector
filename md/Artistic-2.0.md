@@ -402,9 +402,9 @@ Raw Data
                     "Artistic 2.0",
                     "Artistic License (v. 2.0)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {

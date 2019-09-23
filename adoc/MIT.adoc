@@ -382,9 +382,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "oOtherLicenseIds": [
                 "MIT license (also X11)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "BlueOak License List": {

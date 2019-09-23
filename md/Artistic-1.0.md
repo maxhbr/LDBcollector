@@ -354,9 +354,9 @@ Raw Data
                 "oOtherLicenseIds": [
                     "Artistic 1.0 (original)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {

@@ -332,9 +332,9 @@ Raw Data
                 "oOtherLicenseIds": [
                     "BSL (v1.0)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {

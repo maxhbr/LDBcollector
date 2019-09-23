@@ -563,6 +563,25 @@ Raw Data
         "__impliedAmbiguousNames": [
             "The GNU General Public License (GPL)"
         ],
+        "__impliedCompatibilities": [
+            [
+                "Override",
+                {
+                    "Apache-2.0": {
+                        "_isCompatibleToWhenDistributedUnderSelf": false,
+                        "_isCompatibleToWhenDistributedUnderOther": false
+                    },
+                    "GPL-3.0-only": {
+                        "_isCompatibleToWhenDistributedUnderSelf": false,
+                        "_isCompatibleToWhenDistributedUnderOther": false
+                    },
+                    "GPL-2.0-or-later": {
+                        "_isCompatibleToWhenDistributedUnderSelf": true,
+                        "_isCompatibleToWhenDistributedUnderOther": false
+                    }
+                }
+            ]
+        ],
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -834,11 +853,32 @@ Raw Data
                     "__impliedNames": [
                         "GPL-2.0-only"
                     ],
-                    "__impliedId": "GPL-2.0-only"
+                    "__impliedId": "GPL-2.0-only",
+                    "__impliedCompatibilities": [
+                        [
+                            "Override",
+                            {
+                                "Apache-2.0": {
+                                    "_isCompatibleToWhenDistributedUnderSelf": false,
+                                    "_isCompatibleToWhenDistributedUnderOther": false
+                                },
+                                "GPL-3.0-only": {
+                                    "_isCompatibleToWhenDistributedUnderSelf": false,
+                                    "_isCompatibleToWhenDistributedUnderOther": false
+                                },
+                                "GPL-2.0-or-later": {
+                                    "_isCompatibleToWhenDistributedUnderSelf": true,
+                                    "_isCompatibleToWhenDistributedUnderOther": false
+                                }
+                            }
+                        ]
+                    ]
                 },
                 "oName": "GPL-2.0-only",
                 "oOtherLicenseIds": [],
-                "oCompatibiliets": {
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": {
                     "Apache-2.0": {
                         "_isCompatibleToWhenDistributedUnderSelf": false,
                         "_isCompatibleToWhenDistributedUnderOther": false
@@ -852,8 +892,6 @@ Raw Data
                         "_isCompatibleToWhenDistributedUnderOther": false
                     }
                 },
-                "oDescription": null,
-                "oJudgement": null,
                 "oRatingState": null
             },
             "OpenSourceInitiative": {

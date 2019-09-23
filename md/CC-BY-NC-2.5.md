@@ -246,9 +246,9 @@ Raw Data
                 },
                 "oName": "CC-BY-NC-2.5",
                 "oOtherLicenseIds": [],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": {
                     "tag": "FinalRating",
                     "contents": {

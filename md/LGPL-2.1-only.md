@@ -1042,9 +1042,9 @@ Raw Data
                     "LGPL2.1",
                     "LGPL (v2.1)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "OpenSourceInitiative": {

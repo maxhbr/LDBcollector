@@ -308,9 +308,9 @@ Raw Data
                     "Apache Software License 1.0",
                     "ASL 1.0"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {

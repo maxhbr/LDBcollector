@@ -259,9 +259,9 @@ Raw Data
                     "AGPL-1.0",
                     "Affero General Public License (v. 1)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "ifrOSS": {

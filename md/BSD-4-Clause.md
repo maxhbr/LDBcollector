@@ -313,12 +313,12 @@ Raw Data
                 },
                 "oName": "BSD-4-Clause",
                 "oOtherLicenseIds": [],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": {
                     "tag": "NegativeJudgement",
                     "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
                 },
+                "oCompatibilities": null,
                 "oRatingState": {
                     "tag": "RatingState",
                     "contents": [

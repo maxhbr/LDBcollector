@@ -476,9 +476,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 "GPL3+",
                 "GPL (v3 or later)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "Wikipedia": {
