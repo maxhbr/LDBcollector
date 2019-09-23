@@ -40,23 +40,23 @@ instance ToJSON License where
 instance Show License where
   show (License fs) = "\n" ++ unlines (map show (V.toList fs)) ++ "\n"
 instance LFRaw License where
-  getLicenseFactClassifier _            = EmptyLFC
-  getImpliedNames (License fs)          = mergeLicenseStatementResultList $ V.map getImpliedNames fs
-  getImpliedAmbiguousNames (License fs) = mergeLicenseStatementResultList $ V.map getImpliedAmbiguousNames fs
-  getImpliedFullName (License fs)       = mergeLicenseStatementResultList $ V.map getImpliedFullName fs
-  getImpliedId (License fs)             = mergeLicenseStatementResultList $ V.map getImpliedId fs
-  getImpliedURLs (License fs)           = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
-  getImpliedText (License fs)           = mergeLicenseStatementResultList $ V.map getImpliedText fs
-  getImpliedDescription (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedDescription fs
-  getImpliedJudgement (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
-  getImpliedCopyleft (License fs)       = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
-  getImpliedObligations (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedObligations fs
-  getImpliedRatingState (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedRatingState fs
-  getHasPatentnHint (License fs)        = mergeLicenseStatementResultList $ V.map getHasPatentnHint fs
-  getImpliedNonCommercial (License fs)  = mergeLicenseStatementResultList $ V.map getImpliedNonCommercial fs
+  getLicenseFactClassifier _             = EmptyLFC
+  getImpliedNames (License fs)           = mergeLicenseStatementResultList $ V.map getImpliedNames fs
+  getImpliedAmbiguousNames (License fs)  = mergeLicenseStatementResultList $ V.map getImpliedAmbiguousNames fs
+  getImpliedFullName (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedFullName fs
+  getImpliedId (License fs)              = mergeLicenseStatementResultList $ V.map getImpliedId fs
+  getImpliedURLs (License fs)            = mergeLicenseStatementResultList $ V.map getImpliedURLs fs
+  getImpliedText (License fs)            = mergeLicenseStatementResultList $ V.map getImpliedText fs
+  getImpliedDescription (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedDescription fs
+  getImpliedJudgement (License fs)       = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
+  getImpliedCopyleft (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
+  getImpliedObligations (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedObligations fs
+  getImpliedRatingState (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedRatingState fs
+  getHasPatentnHint (License fs)         = mergeLicenseStatementResultList $ V.map getHasPatentnHint fs
+  getImpliedNonCommercial (License fs)   = mergeLicenseStatementResultList $ V.map getImpliedNonCommercial fs
   getImpliedCompatibilities (License fs) = mergeLicenseStatementResultList $ V.map getImpliedCompatibilities fs
-  getImpliedIsOSIApproved (License fs)  = mergeLicenseStatementResultList $ V.map getImpliedIsOSIApproved fs
-  getImpliedIsFSFFree (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedIsFSFFree fs
+  getImpliedIsOSIApproved (License fs)   = mergeLicenseStatementResultList $ V.map getImpliedIsOSIApproved fs
+  getImpliedIsFSFFree (License fs)       = mergeLicenseStatementResultList $ V.map getImpliedIsFSFFree fs
 
 --------------------------------------------------------------------------------
 -- first basic facts

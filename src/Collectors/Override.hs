@@ -33,17 +33,19 @@ instance ToJSON Override
 overrideLFC :: LicenseFactClassifier
 overrideLFC = LFC "Override"
 instance LFRaw Override where
-  getLicenseFactClassifier _                                 = overrideLFC
-  getImpliedId o@Override{oName=n}                           = mkRLSR o 101 n
-  getImpliedNames o                                          = CLSR (oName o : oOtherLicenseIds o)
-  getImpliedDescription o@Override{oDescription=Just d}      = mkRLSR o 101 d
-  getImpliedDescription _                                    = NoRLSR
-  getImpliedJudgement o@Override{oJudgement=Just j}          = mkSLSR o j
-  getImpliedJudgement _                                      = NoSLSR
-  getImpliedRatingState o@Override{oRatingState=Just rs}     = mkSLSR o rs
-  getImpliedRatingState _                                    = NoSLSR
-  getImpliedNonCommercial o@Override{oNonCommecrial=Just nc} = mkRLSR o 101 nc
-  getImpliedNonCommercial _                                  = NoRLSR
+  getLicenseFactClassifier _                                      = overrideLFC
+  getImpliedId o@Override{oName=n}                                = mkRLSR o 101 n
+  getImpliedNames o                                               = CLSR (oName o : oOtherLicenseIds o)
+  getImpliedDescription o@Override{oDescription=Just d}           = mkRLSR o 101 d
+  getImpliedDescription _                                         = NoRLSR
+  getImpliedJudgement o@Override{oJudgement=Just j}               = mkSLSR o j
+  getImpliedJudgement _                                           = NoSLSR
+  getImpliedRatingState o@Override{oRatingState=Just rs}          = mkSLSR o rs
+  getImpliedRatingState _                                         = NoSLSR
+  getImpliedNonCommercial o@Override{oNonCommecrial=Just nc}      = mkRLSR o 101 nc
+  getImpliedNonCommercial _                                       = NoRLSR
+  getImpliedCompatibilities o@Override{oCompatibilities= Just cs} = mkSLSR o cs
+  getImpliedCompatibilities _                                     = NoSLSR
 
 loadOverrideFacts :: Overrides -> IO Facts
 loadOverrideFacts overrides = do
