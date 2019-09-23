@@ -23,7 +23,7 @@ data Override
   , oRatingState :: Maybe RatingState
   , oJudgement :: Maybe Judgement
   , oNonCommecrial :: Maybe Bool
-  , oCompatibiliets :: Maybe LicenseCompatibility
+  , oCompatibilities :: Maybe LicenseCompatibility
   } deriving (Eq, Show, Generic)
 type Overrides
   = [Override]

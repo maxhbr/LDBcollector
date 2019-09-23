@@ -54,7 +54,7 @@ instance LFRaw License where
   getImpliedRatingState (License fs)    = mergeLicenseStatementResultList $ V.map getImpliedRatingState fs
   getHasPatentnHint (License fs)        = mergeLicenseStatementResultList $ V.map getHasPatentnHint fs
   getImpliedNonCommercial (License fs)  = mergeLicenseStatementResultList $ V.map getImpliedNonCommercial fs
-  getImpliedCompatibiliets (License fs) = mergeLicenseStatementResultList $ V.map getImpliedCompatibiliets fs
+  getImpliedCompatibilities (License fs) = mergeLicenseStatementResultList $ V.map getImpliedCompatibilities fs
   getImpliedIsOSIApproved (License fs)  = mergeLicenseStatementResultList $ V.map getImpliedIsOSIApproved fs
   getImpliedIsFSFFree (License fs)      = mergeLicenseStatementResultList $ V.map getImpliedIsFSFFree fs
 

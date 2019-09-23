@@ -74,10 +74,10 @@ overrides =
                                       , oJudgement = Just (NegativeJudgement "Advertisement clause (3.) is complicated and prone to conflicts") }
   ] ++
   -- Compatibility
-  [ (emptyOverride "GPL-2.0-only") { oCompatibiliets = Just (isIncompatibleBothWays "Apache-2.0"
-                                                              <> isIncompatibleBothWays "GPL-3.0-only"
-                                                              <> isCompatibleToWhenDistributedUnderSelf "GPL-2.0-or-later"
-                                                            ) }
+  [ (emptyOverride "GPL-2.0-only") { oCompatibilities = Just (isIncompatibleBothWays "Apache-2.0"
+                                                               <> isIncompatibleBothWays "GPL-3.0-only"
+                                                               <> isOnlyCompatibleToWhenDistributedUnderSelf "GPL-2.0-or-later"
+                                                             ) }
   -- Non Commercial
   ] ++ map (\ sn -> (emptyOverride sn) { oRatingState = Just (FinalRating RNoGo)
                                        , oNonCommecrial = Just True }) [ "CC-BY-NC-1.0", "CC-BY-NC-2.0", "CC-BY-NC-2.5", "CC-BY-NC-3.0", "CC-BY-NC-4.0"
