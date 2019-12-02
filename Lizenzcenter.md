@@ -287,6 +287,8 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Sybase Open Watcom Public License 1.0: ftp://ftp.openwatcom.org/install/license.txt
 1. Zend Engine License (v. 2.0): https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt
 1. Zenplex Public License: http://web.archive.org/web/20041010201945/www.zenplex.org/zpl_txt.html
+1. Vtiger Public License (v. 1.2): https://github.com/vtigercrm-jp/vtigercrm-6.0.0-ja/blob/master/LICENSE.txt
+1. Vtiger Public License (deutsche Übersetzung): https://www.vtiger.com/de/open-source-crm/vtiger-public-license/
 1. Zimbra Public License (ZPL) (v. 1.2): https://web.archive.org/web/20080205064641/http://www.zimbra.com/license/zimbra_public_license_1.2.html
 1. Zimbra Publice License (v. 1.3): https://web.archive.org/web/20120617001845/http://www.zimbra.com/license/zimbra-public-license-1-3.html
 1. Zimbra Publice License (v. 1.4): https://www.zimbra.com/legal/zimbra-public-license-1-4/
