@@ -54,7 +54,7 @@ Link: http://www.ifross.org/sites/default/files/130618%20Urteil%20Fantec.pdf
 
 AVM ./. Cybits (Hauptsache)
 
-Link: http://www.ifross.org/sites/default/files/LG Berlin AVM v Cybits_0.pdf
+Link: http://www.ifross.org/sites/default/files/LG%20Berlin%20AVM%20v%20Cybits_0.pdf
 
 #### LG Bochum, Teilurteil v. 10.02.2011, Az. I-8 O 293/09
 
@@ -72,7 +72,7 @@ Link: http://openjur.de/u/69386.html
 
 Creative Commons-Lizenz „Attribution – ShareAlike 3.0 Unported“
 
-Link: http://www.ifross.org/Fremdartikel/LG%Berlin%CC-Lizenz.pdf
+Link: http://www.ifross.org/Fremdartikel/LG%20Berlin%20CC-Lizenz.pdf
 
 (English Translation, thanks to John Hendrik Weitzmann:
 
