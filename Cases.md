@@ -72,7 +72,7 @@ Link: http://openjur.de/u/69386.html
 
 Creative Commons-Lizenz „Attribution – ShareAlike 3.0 Unported“
 
-Link: http://www.ifross.org/Fremdartikel/LG Berlin CC-Lizenz.pdf
+Link: http://www.ifross.org/Fremdartikel/LG%Berlin%CC-Lizenz.pdf
 
 (English Translation, thanks to John Hendrik Weitzmann:
 
