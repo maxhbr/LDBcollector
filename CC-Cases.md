@@ -3,7 +3,7 @@ layout: default
 title: "Urteile Creative Commons Lizenzen - ifrOSS.org"
 ---
 
-<h1>Urteile Zu Creative Commons Lizenzen</h1>
+<h1>Urteile zu Creative Commons Lizenzen</h1>
 
 * TOC
 {:toc}
