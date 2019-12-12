@@ -38,7 +38,7 @@ Aktivlegitimation von Bearbeiterurhebern einer GPL-lizenzierten Software
 
 Link: https://dejure.org/ext/e28fb875fdc252254b3ae9b2f33e2fbd
 
-#### Bochum, Urteil v., Az. I-8 O 294/15
+#### LG Bochum, Urteil v., Az. I-8 O 294/15
 
 Schadensersatzpflicht bei GPL-Verletzung
 
