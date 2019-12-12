@@ -20,23 +20,41 @@ Aktivlegitimation von Bearbeiterurhebern einer GPL-lizenzierten Software
 
 Link: https://dejure.org/ext/59ddbf2dfc895af3f8e6b13d9cb65bf8
 
+#### LG Hamburg, Urteil v. 20.11.2017; Az. 308 O 343/15	 
+
+Vertragsstrafe bei GPL-Verletzung, Innenausgleich von Miturhebern, Unterlassungserklärung
+
+Link: https://dejure.org/ext/945f91adbb3ce04fcddbfa5d83994382
+
 #### OLG Hamm, Urteil v. 13.06.2017, Az. 4 U 72/16
 
 Schadensersatz bei Verletzung der GPL
 
 Link: https://www.justiz.nrw.de/nrwe/olgs/hamm/j2017/4_U_72_16_Urteil_20170613.html
 
-#### LG Hamburg, 08.07.2016, Az. 310 O 89/15
+#### LG Hamburg, Urteil v. 08.07.2016, Az. 310 O 89/15
 
 Aktivlegitimation von Bearbeiterurhebern einer GPL-lizenzierten Software
 
 Link: https://dejure.org/ext/e28fb875fdc252254b3ae9b2f33e2fbd
 
-#### LG Halle, Urteil v. 27.07.2015, 4 O 133/15
+#### Bochum, Urteil v., Az. I-8 O 294/15
+
+Schadensersatzpflicht bei GPL-Verletzung
+
+Link: https://www.justiz.nrw.de/nrwe/lgs/bochum/lg_bochum/j2016/I_8_O_294_15_Urteil_20160303.html
+
+#### LG Halle, Urteil v. 27.07.2015, Az. 4 O 133/15
 
 Wiederholungsgefahr nachdem die Bedingungen der GPLv3 wieder eingehalten werden (Ziffer 8 Abs. 3 GPLv3); Abmahnung, strafbewehrte Unterlassungerklärung und einstweilige Verfügung  
 
 Link: http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr, http://www.landesrecht.sachsen-anhalt.de/jportal/portal/t/1mr1/page/bssahprod.psml?doc.hl=1&doc.id=JURE150012453&documentnumber=1&showdoccase=1&doc.part=L
+
+#### LG Leipzig, Beschluss v. 02.06.2015, Az. 05 O 1531/15
+
+Unterlassungsverfügung wg. GPL-Berletzung
+
+Link: https://www.jurpc.de/jurpc/show?id=20160008
 
 #### LG Köln, Urteil v. 17.7.2014, Az. 14 O 463/13
 
