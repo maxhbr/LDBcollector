@@ -14,11 +14,23 @@ ___
 ### Urheberrecht und Wettbewerbsrecht
 ___
 
-#### AG Würzburg, Urteil v. 18.12.2018, Az. 18 C 611/18
+#### OLG Hamburg, Urteil v. 28.02.2019, Az. 5 U 146/16
 
-Rechtsmissbräuchliche Durchsetzung von CC-Lizenzen
+Aktivlegitimation von Bearbeiterurhebern einer GPL-lizenzierten Software
 
-Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_CC_2018.pdf
+Link: https://dejure.org/ext/59ddbf2dfc895af3f8e6b13d9cb65bf8
+
+#### OLG Hamm, Urteil v. 13.06.2017, Az. 4 U 72/16
+
+Schadensersatz bei Verletzung der GPL
+
+Link: https://www.justiz.nrw.de/nrwe/olgs/hamm/j2017/4_U_72_16_Urteil_20170613.html
+
+#### LG Hamburg, 08.07.2016, Az. 310 O 89/15
+
+Aktivlegitimation von Bearbeiterurhebern einer GPL-lizenzierten Software
+
+Link: https://dejure.org/ext/e28fb875fdc252254b3ae9b2f33e2fbd
 
 #### LG Halle, Urteil v. 27.07.2015, 4 O 133/15
 
@@ -26,23 +38,11 @@ Wiederholungsgefahr nachdem die Bedingungen der GPLv3 wieder eingehalten werden 
 
 Link: http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr, http://www.landesrecht.sachsen-anhalt.de/jportal/portal/t/1mr1/page/bssahprod.psml?doc.hl=1&doc.id=JURE150012453&documentnumber=1&showdoccase=1&doc.part=L
 
-#### OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14
-
-nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported); Schadensersatz für nicht-kommerziellen Nutzung
-
-Link: http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial, http://medien-internet-und-recht.de/pdf/VT-MIR-2014-Dok-121.pdf
-
 #### LG Köln, Urteil v. 17.7.2014, Az. 14 O 463/13
 
 GPL-Quellcode in LGPL übernommen; Verletzergewinn
 
 Link: http://dejure.org/2014,35553
-
-#### LG Köln, Urteil v. 05.03.2014, Az. 28 O 232/13
-
-nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported)
-
-Link: http://www.lhr-law.de/wp-content/uploads/2014/03/geschwärztes-Urteil-LG-Köln-2.pdf, http://www.ifross.org/artikel/lg-k-ln-beschr-nkt-cc-nc-rein-private-nutzungen
 
 #### LG Hamburg, Urteil v. 14.06.2013, Az. 308 O 10/13
 
@@ -67,16 +67,6 @@ Link: http://www.telemedicus.info/urteile/Urheberrecht/Open-Source/1148-LG-Bochu
 Abofalle
 
 Link: http://openjur.de/u/69386.html
-
-#### LG Berlin, Beschluss v. 08.10.2010, Az. 16 O 458/10
-
-Creative Commons-Lizenz „Attribution – ShareAlike 3.0 Unported“
-
-Link: http://www.ifross.org/Fremdartikel/LG%20Berlin%20CC-Lizenz.pdf
-
-(English Translation, thanks to John Hendrik Weitzmann:
-
-http://www.ifross.org/Fremdartikel/District%20Court%20Berlin%20CC%20License.txt)
 
 #### LG München I, Urteil v. 12.07.2007, Az. 7 O 5245/07
 
@@ -104,14 +94,13 @@ Welte ./. Sitecom Deutschland GmbH
 
 Link: http://www.ifross.de/Fremdartikel/urteil_lg_muenchen_gpl.pdf
 
-English translation: http://www.jbb.de/fileadmin/download/judgment_dc_munich_gpl.pdf
+English translation: http://www.ifross.de/Fremdartikel/judgment_dc_munich_gpl.pdf
 
 ___
 
 ### Sonstige Rechte
 ___
 
-#### OLG Köln, Urteil v. 30.9.2016 - 6 U 18/16
 
 #### OLG Düsseldorf, Urteil v. 24.04.2012, Az. 1-20 U 176/11
 
@@ -234,10 +223,3 @@ AFPA v. EDU 4
 
 Link: http://fsffrance.org/news/arret-ca-paris-16.09.2009.pdf
 
-#### Rechtbank Amsterdam, 2006-03-09, Case No. 334492 / KG 06-176 SR.
-
-Curry v. Audax
-
-Link: http://zoeken.rechtspraak.nl/resultpage.aspx?snelzoeken=true&searchtype=ljn&ljn=AV4204&u_ljn=AV4204
-
-English translation at http://mirrors.creativecommons.org/judgements/Curry-Audax-English.pdf
