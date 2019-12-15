@@ -32,6 +32,12 @@ Schadensersatz bei Verletzung der GPL
 
 Link: https://www.justiz.nrw.de/nrwe/olgs/hamm/j2017/4_U_72_16_Urteil_20170613.html
 
+#### LG Köln, Urteil v. 20.10.2017, Az. 14 O 188/17 (nicht rechtskräftig, im Berufungsverfaren erledigt)
+
+Unterlassungstenor bei GPL-Verletzung
+
+Link: https://dejure.org/ext/e1e72ac11731720ce18712f02d78b55a
+
 #### LG Hamburg, Urteil v. 08.07.2016, Az. 310 O 89/15
 
 Aktivlegitimation von Bearbeiterurhebern einer GPL-lizenzierten Software
@@ -46,13 +52,19 @@ Link: https://www.justiz.nrw.de/nrwe/lgs/bochum/lg_bochum/j2016/I_8_O_294_15_Urt
 
 #### LG Halle, Urteil v. 27.07.2015, Az. 4 O 133/15
 
-Wiederholungsgefahr nachdem die Bedingungen der GPLv3 wieder eingehalten werden (Ziffer 8 Abs. 3 GPLv3); Abmahnung, strafbewehrte Unterlassungerklärung und einstweilige Verfügung  
+Wiederholungsgefahr bei Verletzung der GPL-3.0 (Ziffer 8 Abs. 3 GPL-3.0)
 
 Link: http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr, http://www.landesrecht.sachsen-anhalt.de/jportal/portal/t/1mr1/page/bssahprod.psml?doc.hl=1&doc.id=JURE150012453&documentnumber=1&showdoccase=1&doc.part=L
 
+#### LG Hannover, Urteil v. 21.07.2015, Az. 18 O 159/15
+
+Unterlassungsanspruch bei GPL-Verletzung und unzureichende Unterlasungserklärung
+
+Link: https://www.jurpc.de/jurpc/show?id=20160009
+
 #### LG Leipzig, Beschluss v. 02.06.2015, Az. 05 O 1531/15
 
-Unterlassungsverfügung wg. GPL-Berletzung
+Unterlassungsverfügung wg. GPL-Verletzung 
 
 Link: https://www.jurpc.de/jurpc/show?id=20160008
 
