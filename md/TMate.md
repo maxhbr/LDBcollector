@@ -5,7 +5,7 @@ TMate Open Source License (TMate)
 
 **Other Names:**
 
--   `scancode:tmate`
+-   `scancode://tmate`
 
 Comments on (easy) usability
 ----------------------------
@@ -81,7 +81,7 @@ Raw Data
         "__impliedNames": [
             "TMate",
             "TMate Open Source License",
-            "scancode:tmate"
+            "scancode://tmate"
         ],
         "__impliedId": "TMate",
         "__isFsfFree": true,
@@ -92,7 +92,7 @@ Raw Data
                         "TMate",
                         "TMate",
                         "TMate Open Source License",
-                        "scancode:tmate"
+                        "scancode://tmate"
                     ],
                     "__impliedId": "TMate"
                 },
@@ -100,7 +100,7 @@ Raw Data
                 "otherNames": [
                     "TMate",
                     "TMate Open Source License",
-                    "scancode:tmate"
+                    "scancode://tmate"
                 ]
             },
             "SPDX": {
@@ -173,7 +173,7 @@ Raw Data
                 "spdxId": "TMate",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:tmate",
+                        "scancode://tmate",
                         "TMate Open Source License",
                         "TMate"
                     ],

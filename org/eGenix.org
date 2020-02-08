@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:egenix-1.1.0=
+- =scancode://egenix-1.1.0=
 
 - =eGenix Public License 1.1.0=
 
@@ -87,7 +87,7 @@
       "__impliedNames": [
           "eGenix",
           "eGenix.com Public License 1.1.0",
-          "scancode:egenix-1.1.0",
+          "scancode://egenix-1.1.0",
           "eGenix Public License 1.1.0"
       ],
       "__impliedId": "eGenix",
@@ -99,7 +99,7 @@
                       "eGenix",
                       "eGenix",
                       "eGenix.com Public License 1.1.0",
-                      "scancode:egenix-1.1.0",
+                      "scancode://egenix-1.1.0",
                       "eGenix Public License 1.1.0"
                   ],
                   "__impliedId": "eGenix"
@@ -108,7 +108,7 @@
               "otherNames": [
                   "eGenix",
                   "eGenix.com Public License 1.1.0",
-                  "scancode:egenix-1.1.0",
+                  "scancode://egenix-1.1.0",
                   "eGenix Public License 1.1.0"
               ]
           },
@@ -187,7 +187,7 @@
               "spdxId": "eGenix",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:egenix-1.1.0",
+                      "scancode://egenix-1.1.0",
                       "eGenix Public License 1.1.0",
                       "eGenix"
                   ],

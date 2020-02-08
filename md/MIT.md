@@ -5,7 +5,7 @@ MIT License (MIT)
 
 **Other Names:**
 
--   `scancode:mit`
+-   `scancode://mit`
 
 -   `MIT/Expat License`
 
@@ -135,7 +135,7 @@ Raw Data
         "__impliedNames": [
             "MIT",
             "MIT License",
-            "scancode:mit",
+            "scancode://mit",
             "mit",
             "MIT/Expat License",
             "Expat",
@@ -183,7 +183,7 @@ Raw Data
                         "MIT",
                         "MIT",
                         "MIT License",
-                        "scancode:mit",
+                        "scancode://mit",
                         "mit",
                         "MIT/Expat License",
                         "Expat",
@@ -197,7 +197,7 @@ Raw Data
                 "otherNames": [
                     "MIT",
                     "MIT License",
-                    "scancode:mit",
+                    "scancode://mit",
                     "mit",
                     "MIT/Expat License",
                     "Expat",
@@ -298,7 +298,7 @@ Raw Data
                 "spdxId": "MIT",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:mit",
+                        "scancode://mit",
                         "MIT License",
                         "MIT"
                     ],

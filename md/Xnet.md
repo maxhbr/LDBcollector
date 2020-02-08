@@ -5,7 +5,7 @@ X.Net License (Xnet)
 
 **Other Names:**
 
--   `scancode:xnet`
+-   `scancode://xnet`
 
 -   `Altera License`
 
@@ -85,7 +85,7 @@ Raw Data
         "__impliedNames": [
             "Xnet",
             "X.Net License",
-            "scancode:xnet",
+            "scancode://xnet",
             "Altera License",
             "The X.Net, Inc. License",
             "License :: OSI Approved :: X.Net License"
@@ -125,7 +125,7 @@ Raw Data
                         "Xnet",
                         "Xnet",
                         "X.Net License",
-                        "scancode:xnet",
+                        "scancode://xnet",
                         "Altera License",
                         "The X.Net, Inc. License",
                         "License :: OSI Approved :: X.Net License"
@@ -136,7 +136,7 @@ Raw Data
                 "otherNames": [
                     "Xnet",
                     "X.Net License",
-                    "scancode:xnet",
+                    "scancode://xnet",
                     "Altera License",
                     "The X.Net, Inc. License",
                     "License :: OSI Approved :: X.Net License"
@@ -221,7 +221,7 @@ Raw Data
                 "spdxId": "Xnet",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:xnet",
+                        "scancode://xnet",
                         "Altera License",
                         "Xnet"
                     ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "TCP-wrappers",
         "TCP Wrappers License",
-        "scancode:tcp-wrappers"
+        "scancode://tcp-wrappers"
     ],
     "__impliedId": "TCP-wrappers",
     "facts": {
@@ -12,7 +12,7 @@
                     "TCP-wrappers",
                     "TCP-wrappers",
                     "TCP Wrappers License",
-                    "scancode:tcp-wrappers"
+                    "scancode://tcp-wrappers"
                 ],
                 "__impliedId": "TCP-wrappers"
             },
@@ -20,7 +20,7 @@
             "otherNames": [
                 "TCP-wrappers",
                 "TCP Wrappers License",
-                "scancode:tcp-wrappers"
+                "scancode://tcp-wrappers"
             ]
         },
         "SPDX": {
@@ -69,7 +69,7 @@
             "spdxId": "TCP-wrappers",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:tcp-wrappers",
+                    "scancode://tcp-wrappers",
                     "TCP Wrappers License",
                     "TCP-wrappers"
                 ],

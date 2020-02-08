@@ -5,7 +5,7 @@ CrystalStacker License (CrystalStacker)
 
 **Other Names:**
 
--   `scancode:crystal-stacker`
+-   `scancode://crystal-stacker`
 
 -   `Crystal Stacker License`
 
@@ -49,7 +49,7 @@ Raw Data
         "__impliedNames": [
             "CrystalStacker",
             "CrystalStacker License",
-            "scancode:crystal-stacker",
+            "scancode://crystal-stacker",
             "Crystal Stacker License"
         ],
         "__impliedId": "CrystalStacker",
@@ -61,7 +61,7 @@ Raw Data
                         "CrystalStacker",
                         "CrystalStacker",
                         "CrystalStacker License",
-                        "scancode:crystal-stacker",
+                        "scancode://crystal-stacker",
                         "Crystal Stacker License"
                     ],
                     "__impliedId": "CrystalStacker"
@@ -70,7 +70,7 @@ Raw Data
                 "otherNames": [
                     "CrystalStacker",
                     "CrystalStacker License",
-                    "scancode:crystal-stacker",
+                    "scancode://crystal-stacker",
                     "Crystal Stacker License"
                 ]
             },
@@ -144,7 +144,7 @@ Raw Data
                 "spdxId": "CrystalStacker",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:crystal-stacker",
+                        "scancode://crystal-stacker",
                         "Crystal Stacker License",
                         "CrystalStacker"
                     ],

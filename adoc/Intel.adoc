@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:intel-bsd-export-control+`
+* `+scancode://intel-bsd-export-control+`
 * `+Intel BSD - Export Control+`
 * `+The Intel Open Source License+`
 * `+License :: OSI Approved :: Intel Open Source License+`
@@ -90,7 +90,7 @@ goods and services.
     "__impliedNames": [
         "Intel",
         "Intel Open Source License",
-        "scancode:intel-bsd-export-control",
+        "scancode://intel-bsd-export-control",
         "Intel BSD - Export Control",
         "The Intel Open Source License",
         "License :: OSI Approved :: Intel Open Source License"
@@ -131,7 +131,7 @@ goods and services.
                     "Intel",
                     "Intel",
                     "Intel Open Source License",
-                    "scancode:intel-bsd-export-control",
+                    "scancode://intel-bsd-export-control",
                     "Intel BSD - Export Control",
                     "The Intel Open Source License",
                     "License :: OSI Approved :: Intel Open Source License"
@@ -142,7 +142,7 @@ goods and services.
             "otherNames": [
                 "Intel",
                 "Intel Open Source License",
-                "scancode:intel-bsd-export-control",
+                "scancode://intel-bsd-export-control",
                 "Intel BSD - Export Control",
                 "The Intel Open Source License",
                 "License :: OSI Approved :: Intel Open Source License"
@@ -229,7 +229,7 @@ goods and services.
             "spdxId": "Intel",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:intel-bsd-export-control",
+                    "scancode://intel-bsd-export-control",
                     "Intel BSD - Export Control",
                     "Intel"
                 ],

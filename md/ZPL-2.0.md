@@ -5,7 +5,7 @@ Zope Public License 2.0 (ZPL-2.0)
 
 **Other Names:**
 
--   `scancode:zpl-2.0`
+-   `scancode://zpl-2.0`
 
 -   `ZPL 2.0`
 
@@ -97,7 +97,7 @@ Raw Data
         "__impliedNames": [
             "ZPL-2.0",
             "Zope Public License 2.0",
-            "scancode:zpl-2.0",
+            "scancode://zpl-2.0",
             "ZPL 2.0",
             "The Zope Public License, Version 2.0",
             "Zope-2.0",
@@ -138,7 +138,7 @@ Raw Data
                         "ZPL-2.0",
                         "ZPL-2.0",
                         "Zope Public License 2.0",
-                        "scancode:zpl-2.0",
+                        "scancode://zpl-2.0",
                         "ZPL 2.0",
                         "The Zope Public License, Version 2.0",
                         "Zope-2.0",
@@ -150,7 +150,7 @@ Raw Data
                 "otherNames": [
                     "ZPL-2.0",
                     "Zope Public License 2.0",
-                    "scancode:zpl-2.0",
+                    "scancode://zpl-2.0",
                     "ZPL 2.0",
                     "The Zope Public License, Version 2.0",
                     "Zope-2.0",
@@ -220,7 +220,7 @@ Raw Data
                 "spdxId": "ZPL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:zpl-2.0",
+                        "scancode://zpl-2.0",
                         "ZPL 2.0",
                         "ZPL-2.0"
                     ],

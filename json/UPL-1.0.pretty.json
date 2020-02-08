@@ -2,7 +2,7 @@
     "__impliedNames": [
         "UPL-1.0",
         "Universal Permissive License v1.0",
-        "scancode:upl-1.0",
+        "scancode://upl-1.0",
         "UPL 1.0",
         "upl-1.0"
     ],
@@ -14,7 +14,7 @@
                     "UPL-1.0",
                     "UPL-1.0",
                     "Universal Permissive License v1.0",
-                    "scancode:upl-1.0",
+                    "scancode://upl-1.0",
                     "UPL 1.0",
                     "upl-1.0"
                 ],
@@ -24,7 +24,7 @@
             "otherNames": [
                 "UPL-1.0",
                 "Universal Permissive License v1.0",
-                "scancode:upl-1.0",
+                "scancode://upl-1.0",
                 "UPL 1.0",
                 "upl-1.0"
             ]
@@ -97,7 +97,7 @@
             "spdxId": "UPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:upl-1.0",
+                    "scancode://upl-1.0",
                     "UPL 1.0",
                     "UPL-1.0"
                 ],

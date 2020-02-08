@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:ca-tosl-1.1+`
+* `+scancode://ca-tosl-1.1+`
 * `+CA Trusted Open Source License 1.1+`
 * `+Computer Associates Trusted Open Source License, Version 1.1+`
 * `+Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)+`
@@ -398,7 +398,7 @@ with respect to the subject matter hereof.
     "__impliedNames": [
         "CATOSL-1.1",
         "Computer Associates Trusted Open Source License 1.1",
-        "scancode:ca-tosl-1.1",
+        "scancode://ca-tosl-1.1",
         "CA Trusted Open Source License 1.1",
         "Computer Associates Trusted Open Source License, Version 1.1",
         "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
@@ -439,7 +439,7 @@ with respect to the subject matter hereof.
                     "CATOSL-1.1",
                     "CATOSL-1.1",
                     "Computer Associates Trusted Open Source License 1.1",
-                    "scancode:ca-tosl-1.1",
+                    "scancode://ca-tosl-1.1",
                     "CA Trusted Open Source License 1.1",
                     "Computer Associates Trusted Open Source License, Version 1.1",
                     "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
@@ -450,7 +450,7 @@ with respect to the subject matter hereof.
             "otherNames": [
                 "CATOSL-1.1",
                 "Computer Associates Trusted Open Source License 1.1",
-                "scancode:ca-tosl-1.1",
+                "scancode://ca-tosl-1.1",
                 "CA Trusted Open Source License 1.1",
                 "Computer Associates Trusted Open Source License, Version 1.1",
                 "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
@@ -538,7 +538,7 @@ with respect to the subject matter hereof.
             "spdxId": "CATOSL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:ca-tosl-1.1",
+                    "scancode://ca-tosl-1.1",
                     "CA Trusted Open Source License 1.1",
                     "CATOSL-1.1"
                 ],

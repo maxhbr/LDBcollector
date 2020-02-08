@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:netcdf=
+- =scancode://netcdf=
 
 ** Comments on (easy) usability
 
@@ -69,7 +69,7 @@
       "__impliedNames": [
           "NetCDF",
           "NetCDF license",
-          "scancode:netcdf",
+          "scancode://netcdf",
           "NetCDF License"
       ],
       "__impliedId": "NetCDF",
@@ -81,7 +81,7 @@
                       "NetCDF",
                       "NetCDF",
                       "NetCDF license",
-                      "scancode:netcdf",
+                      "scancode://netcdf",
                       "NetCDF License"
                   ],
                   "__impliedId": "NetCDF"
@@ -90,7 +90,7 @@
               "otherNames": [
                   "NetCDF",
                   "NetCDF license",
-                  "scancode:netcdf",
+                  "scancode://netcdf",
                   "NetCDF License"
               ]
           },
@@ -164,7 +164,7 @@
               "spdxId": "NetCDF",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:netcdf",
+                      "scancode://netcdf",
                       "NetCDF License",
                       "NetCDF"
                   ],

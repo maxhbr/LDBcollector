@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:liliq-r-1.1=
+- =scancode://liliq-r-1.1=
 
 - =Licence Libre du Québec – Réciprocité, Version 1.1=
 
@@ -133,7 +133,7 @@
       "__impliedNames": [
           "LiLiQ-R-1.1",
           "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-          "scancode:liliq-r-1.1",
+          "scancode://liliq-r-1.1",
           "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
       ],
       "__impliedId": "LiLiQ-R-1.1",
@@ -144,7 +144,7 @@
                       "LiLiQ-R-1.1",
                       "LiLiQ-R-1.1",
                       "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-                      "scancode:liliq-r-1.1",
+                      "scancode://liliq-r-1.1",
                       "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
                   ],
                   "__impliedId": "LiLiQ-R-1.1"
@@ -153,7 +153,7 @@
               "otherNames": [
                   "LiLiQ-R-1.1",
                   "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-                  "scancode:liliq-r-1.1",
+                  "scancode://liliq-r-1.1",
                   "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
               ]
           },
@@ -215,7 +215,7 @@
               "spdxId": "LiLiQ-R-1.1",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:liliq-r-1.1",
+                      "scancode://liliq-r-1.1",
                       "LiLiQ-R-1.1",
                       "LiLiQ-R-1.1"
                   ],

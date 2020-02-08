@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Artistic-2.0",
         "Artistic License 2.0",
-        "scancode:artistic-2.0",
+        "scancode://artistic-2.0",
         "Artistic 2.0",
         "artistic-2.0",
         "Artistic License, Version 2.0",
@@ -49,7 +49,7 @@
                     "Artistic-2.0",
                     "Artistic-2.0",
                     "Artistic License 2.0",
-                    "scancode:artistic-2.0",
+                    "scancode://artistic-2.0",
                     "Artistic 2.0",
                     "artistic-2.0",
                     "Artistic License, Version 2.0",
@@ -62,7 +62,7 @@
             "otherNames": [
                 "Artistic-2.0",
                 "Artistic License 2.0",
-                "scancode:artistic-2.0",
+                "scancode://artistic-2.0",
                 "Artistic 2.0",
                 "artistic-2.0",
                 "Artistic License, Version 2.0",
@@ -157,7 +157,7 @@
             "spdxId": "Artistic-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:artistic-2.0",
+                    "scancode://artistic-2.0",
                     "Artistic 2.0",
                     "Artistic-2.0"
                 ],

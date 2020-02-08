@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:adsl=
+- =scancode://adsl=
 
 ** Comments on (easy) usability
 
@@ -52,7 +52,7 @@
       "__impliedNames": [
           "ADSL",
           "Amazon Digital Services License",
-          "scancode:adsl"
+          "scancode://adsl"
       ],
       "__impliedId": "ADSL",
       "__isFsfFree": true,
@@ -63,7 +63,7 @@
                       "ADSL",
                       "ADSL",
                       "Amazon Digital Services License",
-                      "scancode:adsl"
+                      "scancode://adsl"
                   ],
                   "__impliedId": "ADSL"
               },
@@ -71,7 +71,7 @@
               "otherNames": [
                   "ADSL",
                   "Amazon Digital Services License",
-                  "scancode:adsl"
+                  "scancode://adsl"
               ]
           },
           "SPDX": {
@@ -144,7 +144,7 @@
               "spdxId": "ADSL",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:adsl",
+                      "scancode://adsl",
                       "Amazon Digital Services License",
                       "ADSL"
                   ],

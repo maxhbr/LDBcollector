@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:zpl-1.1+`
+* `+scancode://zpl-1.1+`
 * `+ZPL 1.1+`
 
 === Comments on (easy) usability
@@ -105,7 +105,7 @@ the accompanying credits file.
     "__impliedNames": [
         "ZPL-1.1",
         "Zope Public License 1.1",
-        "scancode:zpl-1.1",
+        "scancode://zpl-1.1",
         "ZPL 1.1"
     ],
     "__impliedId": "ZPL-1.1",
@@ -116,7 +116,7 @@ the accompanying credits file.
                     "ZPL-1.1",
                     "ZPL-1.1",
                     "Zope Public License 1.1",
-                    "scancode:zpl-1.1",
+                    "scancode://zpl-1.1",
                     "ZPL 1.1"
                 ],
                 "__impliedId": "ZPL-1.1"
@@ -125,7 +125,7 @@ the accompanying credits file.
             "otherNames": [
                 "ZPL-1.1",
                 "Zope Public License 1.1",
-                "scancode:zpl-1.1",
+                "scancode://zpl-1.1",
                 "ZPL 1.1"
             ]
         },
@@ -176,7 +176,7 @@ the accompanying credits file.
             "spdxId": "ZPL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:zpl-1.1",
+                    "scancode://zpl-1.1",
                     "ZPL 1.1",
                     "ZPL-1.1"
                 ],

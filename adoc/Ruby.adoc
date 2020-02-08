@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:ruby+`
+* `+scancode://ruby+`
 
 === Comments on (easy) usability
 
@@ -106,7 +106,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
     "__impliedNames": [
         "Ruby",
         "Ruby License",
-        "scancode:ruby"
+        "scancode://ruby"
     ],
     "__impliedId": "Ruby",
     "__isFsfFree": true,
@@ -117,7 +117,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
                     "Ruby",
                     "Ruby",
                     "Ruby License",
-                    "scancode:ruby"
+                    "scancode://ruby"
                 ],
                 "__impliedId": "Ruby"
             },
@@ -125,7 +125,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
             "otherNames": [
                 "Ruby",
                 "Ruby License",
-                "scancode:ruby"
+                "scancode://ruby"
             ]
         },
         "SPDX": {
@@ -200,7 +200,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
             "spdxId": "Ruby",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:ruby",
+                    "scancode://ruby",
                     "Ruby License",
                     "Ruby"
                 ],

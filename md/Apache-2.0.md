@@ -5,7 +5,7 @@ Apache License 2.0 (Apache-2.0)
 
 **Other Names:**
 
--   `scancode:apache-2.0`
+-   `scancode://apache-2.0`
 
 -   `Apache 2.0`
 
@@ -339,7 +339,7 @@ Raw Data
         "__impliedNames": [
             "Apache-2.0",
             "Apache License 2.0",
-            "scancode:apache-2.0",
+            "scancode://apache-2.0",
             "Apache 2.0",
             "apache-2.0",
             "Apache License, Version 2.0",
@@ -388,7 +388,7 @@ Raw Data
                         "Apache-2.0",
                         "Apache-2.0",
                         "Apache License 2.0",
-                        "scancode:apache-2.0",
+                        "scancode://apache-2.0",
                         "Apache 2.0",
                         "apache-2.0",
                         "Apache License, Version 2.0",
@@ -403,7 +403,7 @@ Raw Data
                 "otherNames": [
                     "Apache-2.0",
                     "Apache License 2.0",
-                    "scancode:apache-2.0",
+                    "scancode://apache-2.0",
                     "Apache 2.0",
                     "apache-2.0",
                     "Apache License, Version 2.0",
@@ -511,7 +511,7 @@ Raw Data
                 "spdxId": "Apache-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:apache-2.0",
+                        "scancode://apache-2.0",
                         "Apache 2.0",
                         "Apache-2.0"
                     ],

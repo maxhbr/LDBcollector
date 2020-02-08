@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:ofl-1.0=
+- =scancode://ofl-1.0=
 
 - =OFL 1.0=
 
@@ -130,7 +130,7 @@
       "__impliedNames": [
           "OFL-1.0",
           "SIL Open Font License 1.0",
-          "scancode:ofl-1.0",
+          "scancode://ofl-1.0",
           "OFL 1.0"
       ],
       "__impliedId": "OFL-1.0",
@@ -144,7 +144,7 @@
                       "OFL-1.0",
                       "OFL-1.0",
                       "SIL Open Font License 1.0",
-                      "scancode:ofl-1.0",
+                      "scancode://ofl-1.0",
                       "OFL 1.0"
                   ],
                   "__impliedId": "OFL-1.0"
@@ -153,7 +153,7 @@
               "otherNames": [
                   "OFL-1.0",
                   "SIL Open Font License 1.0",
-                  "scancode:ofl-1.0",
+                  "scancode://ofl-1.0",
                   "OFL 1.0"
               ]
           },
@@ -201,7 +201,7 @@
               "spdxId": "OFL-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:ofl-1.0",
+                      "scancode://ofl-1.0",
                       "OFL 1.0",
                       "OFL-1.0"
                   ],

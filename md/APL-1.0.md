@@ -5,7 +5,7 @@ Adaptive Public License 1.0 (APL-1.0)
 
 **Other Names:**
 
--   `scancode:adapt-1.0`
+-   `scancode://adapt-1.0`
 
 -   `APL 1.0`
 
@@ -384,7 +384,7 @@ Raw Data
         "__impliedNames": [
             "APL-1.0",
             "Adaptive Public License 1.0",
-            "scancode:adapt-1.0",
+            "scancode://adapt-1.0",
             "APL 1.0",
             "Adaptive Public License, Version 1.0"
         ],
@@ -423,7 +423,7 @@ Raw Data
                         "APL-1.0",
                         "APL-1.0",
                         "Adaptive Public License 1.0",
-                        "scancode:adapt-1.0",
+                        "scancode://adapt-1.0",
                         "APL 1.0",
                         "Adaptive Public License, Version 1.0"
                     ],
@@ -433,7 +433,7 @@ Raw Data
                 "otherNames": [
                     "APL-1.0",
                     "Adaptive Public License 1.0",
-                    "scancode:adapt-1.0",
+                    "scancode://adapt-1.0",
                     "APL 1.0",
                     "Adaptive Public License, Version 1.0"
                 ]
@@ -494,7 +494,7 @@ Raw Data
                 "spdxId": "APL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:adapt-1.0",
+                        "scancode://adapt-1.0",
                         "APL 1.0",
                         "APL-1.0"
                     ],

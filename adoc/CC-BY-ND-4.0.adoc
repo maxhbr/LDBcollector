@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-* `+scancode:cc-by-nd-4.0+`
+* `+scancode://cc-by-nd-4.0+`
 * `+Creative Commons Attribution No-Derivatives 4.0+`
 
 === Comments on (easy) usability
@@ -429,7 +429,7 @@ Creative Commons may be contacted at creativecommons.org.
     "__impliedNames": [
         "CC-BY-ND-4.0",
         "Creative Commons Attribution No Derivatives 4.0 International",
-        "scancode:cc-by-nd-4.0",
+        "scancode://cc-by-nd-4.0",
         "Creative Commons Attribution No-Derivatives 4.0"
     ],
     "__impliedId": "CC-BY-ND-4.0",
@@ -467,7 +467,7 @@ Creative Commons may be contacted at creativecommons.org.
                     "CC-BY-ND-4.0",
                     "CC-BY-ND-4.0",
                     "Creative Commons Attribution No Derivatives 4.0 International",
-                    "scancode:cc-by-nd-4.0",
+                    "scancode://cc-by-nd-4.0",
                     "Creative Commons Attribution No-Derivatives 4.0"
                 ],
                 "__impliedId": "CC-BY-ND-4.0"
@@ -476,7 +476,7 @@ Creative Commons may be contacted at creativecommons.org.
             "otherNames": [
                 "CC-BY-ND-4.0",
                 "Creative Commons Attribution No Derivatives 4.0 International",
-                "scancode:cc-by-nd-4.0",
+                "scancode://cc-by-nd-4.0",
                 "Creative Commons Attribution No-Derivatives 4.0"
             ]
         },
@@ -526,7 +526,7 @@ Creative Commons may be contacted at creativecommons.org.
             "spdxId": "CC-BY-ND-4.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:cc-by-nd-4.0",
+                    "scancode://cc-by-nd-4.0",
                     "CC-BY-ND-4.0",
                     "CC-BY-ND-4.0"
                 ],

@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:gpl-1.0-plus=
+- =scancode://gpl-1.0-plus=
 
 - =GPL 1.0 or later=
 
@@ -61,7 +61,7 @@
       "__impliedNames": [
           "GPL-1.0-or-later",
           "GNU General Public License v1.0 or later",
-          "scancode:gpl-1.0-plus",
+          "scancode://gpl-1.0-plus",
           "GPL 1.0 or later",
           "GPL-1.0+",
           "GPL1.0+",
@@ -79,7 +79,7 @@
                       "GPL-1.0-or-later",
                       "GPL-1.0-or-later",
                       "GNU General Public License v1.0 or later",
-                      "scancode:gpl-1.0-plus",
+                      "scancode://gpl-1.0-plus",
                       "GPL 1.0 or later",
                       "GPL-1.0+",
                       "GPL1.0+",
@@ -91,7 +91,7 @@
               "otherNames": [
                   "GPL-1.0-or-later",
                   "GNU General Public License v1.0 or later",
-                  "scancode:gpl-1.0-plus",
+                  "scancode://gpl-1.0-plus",
                   "GPL 1.0 or later",
                   "GPL-1.0+",
                   "GPL1.0+",
@@ -170,7 +170,7 @@
               "spdxId": "GPL-1.0-or-later",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:gpl-1.0-plus",
+                      "scancode://gpl-1.0-plus",
                       "GPL 1.0 or later",
                       "GPL-1.0-or-later"
                   ],

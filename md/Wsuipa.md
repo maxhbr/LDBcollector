@@ -5,7 +5,7 @@ Wsuipa License (Wsuipa)
 
 **Other Names:**
 
--   `scancode:wsuipa`
+-   `scancode://wsuipa`
 
 Comments on (easy) usability
 ----------------------------
@@ -48,7 +48,7 @@ Raw Data
         "__impliedNames": [
             "Wsuipa",
             "Wsuipa License",
-            "scancode:wsuipa"
+            "scancode://wsuipa"
         ],
         "__impliedId": "Wsuipa",
         "__isFsfFree": true,
@@ -59,7 +59,7 @@ Raw Data
                         "Wsuipa",
                         "Wsuipa",
                         "Wsuipa License",
-                        "scancode:wsuipa"
+                        "scancode://wsuipa"
                     ],
                     "__impliedId": "Wsuipa"
                 },
@@ -67,7 +67,7 @@ Raw Data
                 "otherNames": [
                     "Wsuipa",
                     "Wsuipa License",
-                    "scancode:wsuipa"
+                    "scancode://wsuipa"
                 ]
             },
             "SPDX": {
@@ -140,7 +140,7 @@ Raw Data
                 "spdxId": "Wsuipa",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:wsuipa",
+                        "scancode://wsuipa",
                         "Wsuipa License",
                         "Wsuipa"
                     ],

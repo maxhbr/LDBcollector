@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:condor-1.1+`
+* `+scancode://condor-1.1+`
 * `+Condor Public License 1.1+`
 
 === Comments on (easy) usability
@@ -160,7 +160,7 @@ The Condor Team may publish revised and/or new versions of this
     "__impliedNames": [
         "Condor-1.1",
         "Condor Public License v1.1",
-        "scancode:condor-1.1",
+        "scancode://condor-1.1",
         "Condor Public License 1.1"
     ],
     "__impliedId": "Condor-1.1",
@@ -171,7 +171,7 @@ The Condor Team may publish revised and/or new versions of this
                     "Condor-1.1",
                     "Condor-1.1",
                     "Condor Public License v1.1",
-                    "scancode:condor-1.1",
+                    "scancode://condor-1.1",
                     "Condor Public License 1.1"
                 ],
                 "__impliedId": "Condor-1.1"
@@ -180,7 +180,7 @@ The Condor Team may publish revised and/or new versions of this
             "otherNames": [
                 "Condor-1.1",
                 "Condor Public License v1.1",
-                "scancode:condor-1.1",
+                "scancode://condor-1.1",
                 "Condor Public License 1.1"
             ]
         },
@@ -236,7 +236,7 @@ The Condor Team may publish revised and/or new versions of this
             "spdxId": "Condor-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:condor-1.1",
+                    "scancode://condor-1.1",
                     "Condor Public License 1.1",
                     "Condor-1.1"
                 ],

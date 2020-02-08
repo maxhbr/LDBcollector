@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Libpng",
         "libpng License",
-        "scancode:libpng",
+        "scancode://libpng",
         "Libpng License"
     ],
     "__impliedId": "Libpng",
@@ -13,7 +13,7 @@
                     "Libpng",
                     "Libpng",
                     "libpng License",
-                    "scancode:libpng",
+                    "scancode://libpng",
                     "Libpng License"
                 ],
                 "__impliedId": "Libpng"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "Libpng",
                 "libpng License",
-                "scancode:libpng",
+                "scancode://libpng",
                 "Libpng License"
             ]
         },
@@ -82,7 +82,7 @@
             "spdxId": "Libpng",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:libpng",
+                    "scancode://libpng",
                     "Libpng License",
                     "Libpng"
                 ],

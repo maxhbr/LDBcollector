@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:imagemagick=
+- =scancode://imagemagick=
 
 ** Comments on (easy) usability
 
@@ -88,7 +88,7 @@
       "__impliedNames": [
           "ImageMagick",
           "ImageMagick License",
-          "scancode:imagemagick"
+          "scancode://imagemagick"
       ],
       "__impliedId": "ImageMagick",
       "__isFsfFree": true,
@@ -99,7 +99,7 @@
                       "ImageMagick",
                       "ImageMagick",
                       "ImageMagick License",
-                      "scancode:imagemagick"
+                      "scancode://imagemagick"
                   ],
                   "__impliedId": "ImageMagick"
               },
@@ -107,7 +107,7 @@
               "otherNames": [
                   "ImageMagick",
                   "ImageMagick License",
-                  "scancode:imagemagick"
+                  "scancode://imagemagick"
               ]
           },
           "SPDX": {
@@ -180,7 +180,7 @@
               "spdxId": "ImageMagick",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:imagemagick",
+                      "scancode://imagemagick",
                       "ImageMagick License",
                       "ImageMagick"
                   ],

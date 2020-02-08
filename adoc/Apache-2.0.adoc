@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:apache-2.0+`
+* `+scancode://apache-2.0+`
 * `+Apache 2.0+`
 * `+Apache License, Version 2.0+`
 * `+License :: OSI Approved :: Apache Software License+`
@@ -347,7 +347,7 @@ PATENT HINTS Yes
     "__impliedNames": [
         "Apache-2.0",
         "Apache License 2.0",
-        "scancode:apache-2.0",
+        "scancode://apache-2.0",
         "Apache 2.0",
         "apache-2.0",
         "Apache License, Version 2.0",
@@ -396,7 +396,7 @@ PATENT HINTS Yes
                     "Apache-2.0",
                     "Apache-2.0",
                     "Apache License 2.0",
-                    "scancode:apache-2.0",
+                    "scancode://apache-2.0",
                     "Apache 2.0",
                     "apache-2.0",
                     "Apache License, Version 2.0",
@@ -411,7 +411,7 @@ PATENT HINTS Yes
             "otherNames": [
                 "Apache-2.0",
                 "Apache License 2.0",
-                "scancode:apache-2.0",
+                "scancode://apache-2.0",
                 "Apache 2.0",
                 "apache-2.0",
                 "Apache License, Version 2.0",
@@ -519,7 +519,7 @@ PATENT HINTS Yes
             "spdxId": "Apache-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:apache-2.0",
+                    "scancode://apache-2.0",
                     "Apache 2.0",
                     "Apache-2.0"
                 ],

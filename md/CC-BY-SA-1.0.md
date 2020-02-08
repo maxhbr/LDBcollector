@@ -5,7 +5,7 @@ Creative Commons Attribution Share Alike 1.0 Generic (CC-BY-SA-1.0)
 
 **Other Names:**
 
--   `scancode:cc-by-sa-1.0`
+-   `scancode://cc-by-sa-1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -96,7 +96,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-SA-1.0",
             "Creative Commons Attribution Share Alike 1.0 Generic",
-            "scancode:cc-by-sa-1.0"
+            "scancode://cc-by-sa-1.0"
         ],
         "__impliedId": "CC-BY-SA-1.0",
         "__impliedAmbiguousNames": [
@@ -109,7 +109,7 @@ Raw Data
                         "CC-BY-SA-1.0",
                         "CC-BY-SA-1.0",
                         "Creative Commons Attribution Share Alike 1.0 Generic",
-                        "scancode:cc-by-sa-1.0"
+                        "scancode://cc-by-sa-1.0"
                     ],
                     "__impliedId": "CC-BY-SA-1.0"
                 },
@@ -117,7 +117,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-SA-1.0",
                     "Creative Commons Attribution Share Alike 1.0 Generic",
-                    "scancode:cc-by-sa-1.0"
+                    "scancode://cc-by-sa-1.0"
                 ]
             },
             "SPDX": {
@@ -166,7 +166,7 @@ Raw Data
                 "spdxId": "CC-BY-SA-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:cc-by-sa-1.0",
+                        "scancode://cc-by-sa-1.0",
                         "CC-BY-SA-1.0",
                         "CC-BY-SA-1.0"
                     ],

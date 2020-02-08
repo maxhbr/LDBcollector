@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:json=
+- =scancode://json=
 
 ** Comments on (easy) usability
 
@@ -77,7 +77,7 @@
       "__impliedNames": [
           "JSON",
           "JSON License",
-          "scancode:json"
+          "scancode://json"
       ],
       "__impliedId": "JSON",
       "__impliedAmbiguousNames": [
@@ -90,7 +90,7 @@
                       "JSON",
                       "JSON",
                       "JSON License",
-                      "scancode:json"
+                      "scancode://json"
                   ],
                   "__impliedId": "JSON"
               },
@@ -98,7 +98,7 @@
               "otherNames": [
                   "JSON",
                   "JSON License",
-                  "scancode:json"
+                  "scancode://json"
               ]
           },
           "SPDX": {
@@ -170,7 +170,7 @@
               "spdxId": "JSON",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:json",
+                      "scancode://json",
                       "JSON License",
                       "JSON"
                   ],

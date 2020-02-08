@@ -2,7 +2,7 @@
     "__impliedNames": [
         "CC-BY-2.5",
         "Creative Commons Attribution 2.5 Generic",
-        "scancode:cc-by-2.5"
+        "scancode://cc-by-2.5"
     ],
     "__impliedId": "CC-BY-2.5",
     "facts": {
@@ -12,7 +12,7 @@
                     "CC-BY-2.5",
                     "CC-BY-2.5",
                     "Creative Commons Attribution 2.5 Generic",
-                    "scancode:cc-by-2.5"
+                    "scancode://cc-by-2.5"
                 ],
                 "__impliedId": "CC-BY-2.5"
             },
@@ -20,7 +20,7 @@
             "otherNames": [
                 "CC-BY-2.5",
                 "Creative Commons Attribution 2.5 Generic",
-                "scancode:cc-by-2.5"
+                "scancode://cc-by-2.5"
             ]
         },
         "SPDX": {
@@ -69,7 +69,7 @@
             "spdxId": "CC-BY-2.5",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:cc-by-2.5",
+                    "scancode://cc-by-2.5",
                     "CC-BY-2.5",
                     "CC-BY-2.5"
                 ],

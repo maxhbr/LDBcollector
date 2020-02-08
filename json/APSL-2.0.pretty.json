@@ -2,7 +2,7 @@
     "__impliedNames": [
         "APSL-2.0",
         "Apple Public Source License 2.0",
-        "scancode:apsl-2.0",
+        "scancode://apsl-2.0",
         "APSL 2.0",
         "Apple Public Source License, Version 2.0",
         "License :: OSI Approved :: Apple Public Source License"
@@ -47,7 +47,7 @@
                     "APSL-2.0",
                     "APSL-2.0",
                     "Apple Public Source License 2.0",
-                    "scancode:apsl-2.0",
+                    "scancode://apsl-2.0",
                     "APSL 2.0",
                     "Apple Public Source License, Version 2.0",
                     "License :: OSI Approved :: Apple Public Source License"
@@ -58,7 +58,7 @@
             "otherNames": [
                 "APSL-2.0",
                 "Apple Public Source License 2.0",
-                "scancode:apsl-2.0",
+                "scancode://apsl-2.0",
                 "APSL 2.0",
                 "Apple Public Source License, Version 2.0",
                 "License :: OSI Approved :: Apple Public Source License"
@@ -143,7 +143,7 @@
             "spdxId": "APSL-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:apsl-2.0",
+                    "scancode://apsl-2.0",
                     "APSL 2.0",
                     "APSL-2.0"
                 ],

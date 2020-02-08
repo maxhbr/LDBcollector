@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:nasa-1.3+`
+* `+scancode://nasa-1.3+`
 * `+NASA 1.3+`
 * `+NASA Open Source Agreement, Version 1.3+`
 
@@ -151,7 +151,7 @@ F. Point of Contact: Any Recipient contact with Government Agency is to be direc
     "__impliedNames": [
         "NASA-1.3",
         "NASA Open Source Agreement 1.3",
-        "scancode:nasa-1.3",
+        "scancode://nasa-1.3",
         "NASA 1.3",
         "NASA Open Source Agreement, Version 1.3"
     ],
@@ -190,7 +190,7 @@ F. Point of Contact: Any Recipient contact with Government Agency is to be direc
                     "NASA-1.3",
                     "NASA-1.3",
                     "NASA Open Source Agreement 1.3",
-                    "scancode:nasa-1.3",
+                    "scancode://nasa-1.3",
                     "NASA 1.3",
                     "NASA Open Source Agreement, Version 1.3"
                 ],
@@ -200,7 +200,7 @@ F. Point of Contact: Any Recipient contact with Government Agency is to be direc
             "otherNames": [
                 "NASA-1.3",
                 "NASA Open Source Agreement 1.3",
-                "scancode:nasa-1.3",
+                "scancode://nasa-1.3",
                 "NASA 1.3",
                 "NASA Open Source Agreement, Version 1.3"
             ]
@@ -268,7 +268,7 @@ F. Point of Contact: Any Recipient contact with Government Agency is to be direc
             "spdxId": "NASA-1.3",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:nasa-1.3",
+                    "scancode://nasa-1.3",
                     "NASA 1.3",
                     "NASA-1.3"
                 ],

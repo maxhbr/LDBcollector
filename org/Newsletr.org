@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:newsletr=
+- =scancode://newsletr=
 
 ** Comments on (easy) usability
 
@@ -47,7 +47,7 @@
       "__impliedNames": [
           "Newsletr",
           "Newsletr License",
-          "scancode:newsletr"
+          "scancode://newsletr"
       ],
       "__impliedId": "Newsletr",
       "__isFsfFree": true,
@@ -58,7 +58,7 @@
                       "Newsletr",
                       "Newsletr",
                       "Newsletr License",
-                      "scancode:newsletr"
+                      "scancode://newsletr"
                   ],
                   "__impliedId": "Newsletr"
               },
@@ -66,7 +66,7 @@
               "otherNames": [
                   "Newsletr",
                   "Newsletr License",
-                  "scancode:newsletr"
+                  "scancode://newsletr"
               ]
           },
           "SPDX": {
@@ -139,7 +139,7 @@
               "spdxId": "Newsletr",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:newsletr",
+                      "scancode://newsletr",
                       "Newsletr License",
                       "Newsletr"
                   ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:fsf-unlimited+`
+* `+scancode://fsf-unlimited+`
 * `+FSF-Unlimited+`
 
 === Comments on (easy) usability
@@ -43,7 +43,7 @@ modifications, as long as this notice is preserved.
     "__impliedNames": [
         "FSFULLR",
         "FSF Unlimited License (with License Retention)",
-        "scancode:fsf-unlimited",
+        "scancode://fsf-unlimited",
         "FSF-Unlimited"
     ],
     "__impliedId": "FSFULLR",
@@ -55,7 +55,7 @@ modifications, as long as this notice is preserved.
                     "FSFULLR",
                     "FSFULLR",
                     "FSF Unlimited License (with License Retention)",
-                    "scancode:fsf-unlimited",
+                    "scancode://fsf-unlimited",
                     "FSF-Unlimited"
                 ],
                 "__impliedId": "FSFULLR"
@@ -64,7 +64,7 @@ modifications, as long as this notice is preserved.
             "otherNames": [
                 "FSFULLR",
                 "FSF Unlimited License (with License Retention)",
-                "scancode:fsf-unlimited",
+                "scancode://fsf-unlimited",
                 "FSF-Unlimited"
             ]
         },
@@ -138,7 +138,7 @@ modifications, as long as this notice is preserved.
             "spdxId": "FSFULLR",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:fsf-unlimited",
+                    "scancode://fsf-unlimited",
                     "FSF-Unlimited",
                     "FSFULLR"
                 ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:unicode-dfs-2016+`
+* `+scancode://unicode-dfs-2016+`
 * `+Unicode DFS 2016+`
 
 === Comments on (easy) usability
@@ -112,7 +112,7 @@ authorization of the copyright holder.
     "__impliedNames": [
         "Unicode-DFS-2016",
         "Unicode License Agreement - Data Files and Software (2016)",
-        "scancode:unicode-dfs-2016",
+        "scancode://unicode-dfs-2016",
         "Unicode DFS 2016"
     ],
     "__impliedId": "Unicode-DFS-2016",
@@ -123,7 +123,7 @@ authorization of the copyright holder.
                     "Unicode-DFS-2016",
                     "Unicode-DFS-2016",
                     "Unicode License Agreement - Data Files and Software (2016)",
-                    "scancode:unicode-dfs-2016",
+                    "scancode://unicode-dfs-2016",
                     "Unicode DFS 2016"
                 ],
                 "__impliedId": "Unicode-DFS-2016"
@@ -132,7 +132,7 @@ authorization of the copyright holder.
             "otherNames": [
                 "Unicode-DFS-2016",
                 "Unicode License Agreement - Data Files and Software (2016)",
-                "scancode:unicode-dfs-2016",
+                "scancode://unicode-dfs-2016",
                 "Unicode DFS 2016"
             ]
         },
@@ -192,7 +192,7 @@ authorization of the copyright holder.
             "spdxId": "Unicode-DFS-2016",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:unicode-dfs-2016",
+                    "scancode://unicode-dfs-2016",
                     "Unicode DFS 2016",
                     "Unicode-DFS-2016"
                 ],

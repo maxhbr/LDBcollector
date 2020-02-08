@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:psfrag=
+- =scancode://psfrag=
 
 ** Comments on (easy) usability
 
@@ -42,7 +42,7 @@
       "__impliedNames": [
           "psfrag",
           "psfrag License",
-          "scancode:psfrag"
+          "scancode://psfrag"
       ],
       "__impliedId": "psfrag",
       "facts": {
@@ -52,7 +52,7 @@
                       "psfrag",
                       "psfrag",
                       "psfrag License",
-                      "scancode:psfrag"
+                      "scancode://psfrag"
                   ],
                   "__impliedId": "psfrag"
               },
@@ -60,7 +60,7 @@
               "otherNames": [
                   "psfrag",
                   "psfrag License",
-                  "scancode:psfrag"
+                  "scancode://psfrag"
               ]
           },
           "SPDX": {
@@ -132,7 +132,7 @@
               "spdxId": "psfrag",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:psfrag",
+                      "scancode://psfrag",
                       "psfrag License",
                       "psfrag"
                   ],

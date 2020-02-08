@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:python+`
+* `+scancode://python+`
 * `+Python License, Version 2.0+`
 * `+License :: OSI Approved :: Python Software Foundation License+`
 * `+Python Software Foundation License 2+`
@@ -255,7 +255,7 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
     "__impliedNames": [
         "Python-2.0",
         "Python License 2.0",
-        "scancode:python",
+        "scancode://python",
         "Python License, Version 2.0",
         "License :: OSI Approved :: Python Software Foundation License",
         "Python Software Foundation License 2"
@@ -296,7 +296,7 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                     "Python-2.0",
                     "Python-2.0",
                     "Python License 2.0",
-                    "scancode:python",
+                    "scancode://python",
                     "Python License, Version 2.0",
                     "License :: OSI Approved :: Python Software Foundation License",
                     "Python Software Foundation License 2"
@@ -307,7 +307,7 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "otherNames": [
                 "Python-2.0",
                 "Python License 2.0",
-                "scancode:python",
+                "scancode://python",
                 "Python License, Version 2.0",
                 "License :: OSI Approved :: Python Software Foundation License",
                 "Python Software Foundation License 2"
@@ -380,7 +380,7 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "spdxId": "Python-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:python",
+                    "scancode://python",
                     "Python License 2.0",
                     "Python-2.0"
                 ],

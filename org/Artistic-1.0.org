@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:artistic-1.0=
+- =scancode://artistic-1.0=
 
 - =Artistic 1.0=
 
@@ -169,7 +169,7 @@
       "__impliedNames": [
           "Artistic-1.0",
           "Artistic License 1.0",
-          "scancode:artistic-1.0",
+          "scancode://artistic-1.0",
           "Artistic 1.0",
           "Artistic License, Version 1.0",
           "Artistic 1.0 (original)"
@@ -185,7 +185,7 @@
                       "Artistic-1.0",
                       "Artistic-1.0",
                       "Artistic License 1.0",
-                      "scancode:artistic-1.0",
+                      "scancode://artistic-1.0",
                       "Artistic 1.0",
                       "Artistic License, Version 1.0",
                       "Artistic 1.0 (original)"
@@ -196,7 +196,7 @@
               "otherNames": [
                   "Artistic-1.0",
                   "Artistic License 1.0",
-                  "scancode:artistic-1.0",
+                  "scancode://artistic-1.0",
                   "Artistic 1.0",
                   "Artistic License, Version 1.0",
                   "Artistic 1.0 (original)"
@@ -283,7 +283,7 @@
               "spdxId": "Artistic-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:artistic-1.0",
+                      "scancode://artistic-1.0",
                       "Artistic 1.0",
                       "Artistic-1.0"
                   ],

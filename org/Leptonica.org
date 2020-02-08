@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:leptonica=
+- =scancode://leptonica=
 
 ** Comments on (easy) usability
 
@@ -49,7 +49,7 @@
       "__impliedNames": [
           "Leptonica",
           "Leptonica License",
-          "scancode:leptonica"
+          "scancode://leptonica"
       ],
       "__impliedId": "Leptonica",
       "__isFsfFree": true,
@@ -60,7 +60,7 @@
                       "Leptonica",
                       "Leptonica",
                       "Leptonica License",
-                      "scancode:leptonica"
+                      "scancode://leptonica"
                   ],
                   "__impliedId": "Leptonica"
               },
@@ -68,7 +68,7 @@
               "otherNames": [
                   "Leptonica",
                   "Leptonica License",
-                  "scancode:leptonica"
+                  "scancode://leptonica"
               ]
           },
           "SPDX": {
@@ -141,7 +141,7 @@
               "spdxId": "Leptonica",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:leptonica",
+                      "scancode://leptonica",
                       "Leptonica License",
                       "Leptonica"
                   ],

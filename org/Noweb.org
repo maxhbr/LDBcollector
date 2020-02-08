@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:noweb=
+- =scancode://noweb=
 
 ** Comments on (easy) usability
 
@@ -60,7 +60,7 @@
       "__impliedNames": [
           "Noweb",
           "Noweb License",
-          "scancode:noweb"
+          "scancode://noweb"
       ],
       "__impliedId": "Noweb",
       "__isFsfFree": true,
@@ -71,7 +71,7 @@
                       "Noweb",
                       "Noweb",
                       "Noweb License",
-                      "scancode:noweb"
+                      "scancode://noweb"
                   ],
                   "__impliedId": "Noweb"
               },
@@ -79,7 +79,7 @@
               "otherNames": [
                   "Noweb",
                   "Noweb License",
-                  "scancode:noweb"
+                  "scancode://noweb"
               ]
           },
           "SPDX": {
@@ -154,7 +154,7 @@
               "spdxId": "Noweb",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:noweb",
+                      "scancode://noweb",
                       "Noweb License",
                       "Noweb"
                   ],

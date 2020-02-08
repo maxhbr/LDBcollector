@@ -2,7 +2,7 @@
     "__impliedNames": [
         "DSDP",
         "DSDP License",
-        "scancode:dsdp"
+        "scancode://dsdp"
     ],
     "__impliedId": "DSDP",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "DSDP",
                     "DSDP",
                     "DSDP License",
-                    "scancode:dsdp"
+                    "scancode://dsdp"
                 ],
                 "__impliedId": "DSDP"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "DSDP",
                 "DSDP License",
-                "scancode:dsdp"
+                "scancode://dsdp"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "DSDP",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:dsdp",
+                    "scancode://dsdp",
                     "DSDP License",
                     "DSDP"
                 ],

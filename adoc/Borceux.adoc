@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:borceux+`
+* `+scancode://borceux+`
 
 === Comments on (easy) usability
 
@@ -57,7 +57,7 @@ francis dot borceux at uclouvain dot be.
     "__impliedNames": [
         "Borceux",
         "Borceux license",
-        "scancode:borceux",
+        "scancode://borceux",
         "Borceux License"
     ],
     "__impliedId": "Borceux",
@@ -69,7 +69,7 @@ francis dot borceux at uclouvain dot be.
                     "Borceux",
                     "Borceux",
                     "Borceux license",
-                    "scancode:borceux",
+                    "scancode://borceux",
                     "Borceux License"
                 ],
                 "__impliedId": "Borceux"
@@ -78,7 +78,7 @@ francis dot borceux at uclouvain dot be.
             "otherNames": [
                 "Borceux",
                 "Borceux license",
-                "scancode:borceux",
+                "scancode://borceux",
                 "Borceux License"
             ]
         },
@@ -152,7 +152,7 @@ francis dot borceux at uclouvain dot be.
             "spdxId": "Borceux",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:borceux",
+                    "scancode://borceux",
                     "Borceux License",
                     "Borceux"
                 ],

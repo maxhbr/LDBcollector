@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:psutils=
+- =scancode://psutils=
 
 - =PS Utilities License=
 
@@ -76,7 +76,7 @@
       "__impliedNames": [
           "psutils",
           "psutils License",
-          "scancode:psutils",
+          "scancode://psutils",
           "PS Utilities License"
       ],
       "__impliedId": "psutils",
@@ -88,7 +88,7 @@
                       "psutils",
                       "psutils",
                       "psutils License",
-                      "scancode:psutils",
+                      "scancode://psutils",
                       "PS Utilities License"
                   ],
                   "__impliedId": "psutils"
@@ -97,7 +97,7 @@
               "otherNames": [
                   "psutils",
                   "psutils License",
-                  "scancode:psutils",
+                  "scancode://psutils",
                   "PS Utilities License"
               ]
           },
@@ -173,7 +173,7 @@
               "spdxId": "psutils",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:psutils",
+                      "scancode://psutils",
                       "PS Utilities License",
                       "psutils"
                   ],

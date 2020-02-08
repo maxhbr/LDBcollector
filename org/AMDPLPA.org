@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:amdplpa=
+- =scancode://amdplpa=
 
 - =AMD PLPA License=
 
@@ -125,7 +125,7 @@
       "__impliedNames": [
           "AMDPLPA",
           "AMD's plpa_map.c License",
-          "scancode:amdplpa",
+          "scancode://amdplpa",
           "AMD PLPA License"
       ],
       "__impliedId": "AMDPLPA",
@@ -137,7 +137,7 @@
                       "AMDPLPA",
                       "AMDPLPA",
                       "AMD's plpa_map.c License",
-                      "scancode:amdplpa",
+                      "scancode://amdplpa",
                       "AMD PLPA License"
                   ],
                   "__impliedId": "AMDPLPA"
@@ -146,7 +146,7 @@
               "otherNames": [
                   "AMDPLPA",
                   "AMD's plpa_map.c License",
-                  "scancode:amdplpa",
+                  "scancode://amdplpa",
                   "AMD PLPA License"
               ]
           },
@@ -220,7 +220,7 @@
               "spdxId": "AMDPLPA",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:amdplpa",
+                      "scancode://amdplpa",
                       "AMD PLPA License",
                       "AMDPLPA"
                   ],

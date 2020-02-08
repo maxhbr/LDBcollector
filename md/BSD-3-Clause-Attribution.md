@@ -5,7 +5,7 @@ BSD with attribution (BSD-3-Clause-Attribution)
 
 **Other Names:**
 
--   `scancode:bsd-ack`
+-   `scancode://bsd-ack`
 
 -   `BSD Acknowledgment License`
 
@@ -70,7 +70,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-Attribution",
             "BSD with attribution",
-            "scancode:bsd-ack",
+            "scancode://bsd-ack",
             "BSD Acknowledgment License"
         ],
         "__impliedId": "BSD-3-Clause-Attribution",
@@ -82,7 +82,7 @@ Raw Data
                         "BSD-3-Clause-Attribution",
                         "BSD-3-Clause-Attribution",
                         "BSD with attribution",
-                        "scancode:bsd-ack",
+                        "scancode://bsd-ack",
                         "BSD Acknowledgment License"
                     ],
                     "__impliedId": "BSD-3-Clause-Attribution"
@@ -91,7 +91,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause-Attribution",
                     "BSD with attribution",
-                    "scancode:bsd-ack",
+                    "scancode://bsd-ack",
                     "BSD Acknowledgment License"
                 ]
             },
@@ -165,7 +165,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause-Attribution",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:bsd-ack",
+                        "scancode://bsd-ack",
                         "BSD Acknowledgment License",
                         "BSD-3-Clause-Attribution"
                     ],

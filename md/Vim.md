@@ -5,7 +5,7 @@ Vim License (Vim)
 
 **Other Names:**
 
--   `scancode:vim`
+-   `scancode://vim`
 
 Comments on (easy) usability
 ----------------------------
@@ -146,7 +146,7 @@ Raw Data
         "__impliedNames": [
             "Vim",
             "Vim License",
-            "scancode:vim",
+            "scancode://vim",
             "VIM License"
         ],
         "__impliedId": "Vim",
@@ -158,7 +158,7 @@ Raw Data
                         "Vim",
                         "Vim",
                         "Vim License",
-                        "scancode:vim",
+                        "scancode://vim",
                         "VIM License"
                     ],
                     "__impliedId": "Vim"
@@ -167,7 +167,7 @@ Raw Data
                 "otherNames": [
                     "Vim",
                     "Vim License",
-                    "scancode:vim",
+                    "scancode://vim",
                     "VIM License"
                 ]
             },
@@ -243,7 +243,7 @@ Raw Data
                 "spdxId": "Vim",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:vim",
+                        "scancode://vim",
                         "VIM License",
                         "Vim"
                     ],

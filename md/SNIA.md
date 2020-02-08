@@ -5,7 +5,7 @@ SNIA Public License 1.1 (SNIA)
 
 **Other Names:**
 
--   `scancode:snia`
+-   `scancode://snia`
 
 Comments on (easy) usability
 ----------------------------
@@ -157,7 +157,7 @@ Raw Data
         "__impliedNames": [
             "SNIA",
             "SNIA Public License 1.1",
-            "scancode:snia"
+            "scancode://snia"
         ],
         "__impliedId": "SNIA",
         "__isFsfFree": true,
@@ -168,7 +168,7 @@ Raw Data
                         "SNIA",
                         "SNIA",
                         "SNIA Public License 1.1",
-                        "scancode:snia"
+                        "scancode://snia"
                     ],
                     "__impliedId": "SNIA"
                 },
@@ -176,7 +176,7 @@ Raw Data
                 "otherNames": [
                     "SNIA",
                     "SNIA Public License 1.1",
-                    "scancode:snia"
+                    "scancode://snia"
                 ]
             },
             "SPDX": {
@@ -249,7 +249,7 @@ Raw Data
                 "spdxId": "SNIA",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:snia",
+                        "scancode://snia",
                         "SNIA Public License 1.1",
                         "SNIA"
                     ],

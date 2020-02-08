@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:upl-1.0+`
+* `+scancode://upl-1.0+`
 * `+UPL 1.0+`
 
 === Description
@@ -129,7 +129,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "UPL-1.0",
         "Universal Permissive License v1.0",
-        "scancode:upl-1.0",
+        "scancode://upl-1.0",
         "UPL 1.0",
         "upl-1.0"
     ],
@@ -141,7 +141,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "UPL-1.0",
                     "UPL-1.0",
                     "Universal Permissive License v1.0",
-                    "scancode:upl-1.0",
+                    "scancode://upl-1.0",
                     "UPL 1.0",
                     "upl-1.0"
                 ],
@@ -151,7 +151,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "otherNames": [
                 "UPL-1.0",
                 "Universal Permissive License v1.0",
-                "scancode:upl-1.0",
+                "scancode://upl-1.0",
                 "UPL 1.0",
                 "upl-1.0"
             ]
@@ -224,7 +224,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "spdxId": "UPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:upl-1.0",
+                    "scancode://upl-1.0",
                     "UPL 1.0",
                     "UPL-1.0"
                 ],

@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:afl-1.1=
+- =scancode://afl-1.1=
 
 - =AFL 1.1=
 
@@ -137,7 +137,7 @@
       "__impliedNames": [
           "AFL-1.1",
           "Academic Free License v1.1",
-          "scancode:afl-1.1",
+          "scancode://afl-1.1",
           "AFL 1.1"
       ],
       "__impliedId": "AFL-1.1",
@@ -148,7 +148,7 @@
                       "AFL-1.1",
                       "AFL-1.1",
                       "Academic Free License v1.1",
-                      "scancode:afl-1.1",
+                      "scancode://afl-1.1",
                       "AFL 1.1"
                   ],
                   "__impliedId": "AFL-1.1"
@@ -157,7 +157,7 @@
               "otherNames": [
                   "AFL-1.1",
                   "Academic Free License v1.1",
-                  "scancode:afl-1.1",
+                  "scancode://afl-1.1",
                   "AFL 1.1"
               ]
           },
@@ -222,7 +222,7 @@
               "spdxId": "AFL-1.1",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:afl-1.1",
+                      "scancode://afl-1.1",
                       "AFL 1.1",
                       "AFL-1.1"
                   ],

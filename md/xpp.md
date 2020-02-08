@@ -5,7 +5,7 @@ XPP License (xpp)
 
 **Other Names:**
 
--   `scancode:indiana-extreme-1.2`
+-   `scancode://indiana-extreme-1.2`
 
 -   `Indiana Extreme License 1.2`
 
@@ -99,7 +99,7 @@ Raw Data
         "__impliedNames": [
             "xpp",
             "XPP License",
-            "scancode:indiana-extreme-1.2",
+            "scancode://indiana-extreme-1.2",
             "Indiana Extreme License 1.2"
         ],
         "__impliedId": "xpp",
@@ -111,7 +111,7 @@ Raw Data
                         "xpp",
                         "xpp",
                         "XPP License",
-                        "scancode:indiana-extreme-1.2",
+                        "scancode://indiana-extreme-1.2",
                         "Indiana Extreme License 1.2"
                     ],
                     "__impliedId": "xpp"
@@ -120,7 +120,7 @@ Raw Data
                 "otherNames": [
                     "xpp",
                     "XPP License",
-                    "scancode:indiana-extreme-1.2",
+                    "scancode://indiana-extreme-1.2",
                     "Indiana Extreme License 1.2"
                 ]
             },
@@ -194,7 +194,7 @@ Raw Data
                 "spdxId": "xpp",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:indiana-extreme-1.2",
+                        "scancode://indiana-extreme-1.2",
                         "Indiana Extreme License 1.2",
                         "xpp"
                     ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:apache-1.0+`
+* `+scancode://apache-1.0+`
 * `+Apache 1.0+`
 * `+Apache (v1.0)+`
 * `+Apache Software License 1.0+`
@@ -128,7 +128,7 @@ project, please see <http://www.apache.org/>.
     "__impliedNames": [
         "Apache-1.0",
         "Apache License 1.0",
-        "scancode:apache-1.0",
+        "scancode://apache-1.0",
         "Apache 1.0",
         "Apache (v1.0)",
         "Apache Software License 1.0",
@@ -146,7 +146,7 @@ project, please see <http://www.apache.org/>.
                     "Apache-1.0",
                     "Apache-1.0",
                     "Apache License 1.0",
-                    "scancode:apache-1.0",
+                    "scancode://apache-1.0",
                     "Apache 1.0",
                     "Apache (v1.0)",
                     "Apache Software License 1.0",
@@ -158,7 +158,7 @@ project, please see <http://www.apache.org/>.
             "otherNames": [
                 "Apache-1.0",
                 "Apache License 1.0",
-                "scancode:apache-1.0",
+                "scancode://apache-1.0",
                 "Apache 1.0",
                 "Apache (v1.0)",
                 "Apache Software License 1.0",
@@ -245,7 +245,7 @@ project, please see <http://www.apache.org/>.
             "spdxId": "Apache-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:apache-1.0",
+                    "scancode://apache-1.0",
                     "Apache 1.0",
                     "Apache-1.0"
                 ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:cern-ohl-1.2+`
+* `+scancode://cern-ohl-1.2+`
 
 === Comments on (easy) usability
 
@@ -118,7 +118,7 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
     "__impliedNames": [
         "CERN-OHL-1.2",
         "CERN Open Hardware Licence v1.2",
-        "scancode:cern-ohl-1.2"
+        "scancode://cern-ohl-1.2"
     ],
     "__impliedId": "CERN-OHL-1.2",
     "facts": {
@@ -128,7 +128,7 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
                     "CERN-OHL-1.2",
                     "CERN-OHL-1.2",
                     "CERN Open Hardware Licence v1.2",
-                    "scancode:cern-ohl-1.2"
+                    "scancode://cern-ohl-1.2"
                 ],
                 "__impliedId": "CERN-OHL-1.2"
             },
@@ -136,7 +136,7 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
             "otherNames": [
                 "CERN-OHL-1.2",
                 "CERN Open Hardware Licence v1.2",
-                "scancode:cern-ohl-1.2"
+                "scancode://cern-ohl-1.2"
             ]
         },
         "SPDX": {
@@ -185,7 +185,7 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
             "spdxId": "CERN-OHL-1.2",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:cern-ohl-1.2",
+                    "scancode://cern-ohl-1.2",
                     "CERN Open Hardware Licence v1.2",
                     "CERN-OHL-1.2"
                 ],

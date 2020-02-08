@@ -5,7 +5,7 @@ mpich2 License (mpich2)
 
 **Other Names:**
 
--   `scancode:mpich`
+-   `scancode://mpich`
 
 -   `MPICH License`
 
@@ -82,7 +82,7 @@ Raw Data
         "__impliedNames": [
             "mpich2",
             "mpich2 License",
-            "scancode:mpich",
+            "scancode://mpich",
             "MPICH License"
         ],
         "__impliedId": "mpich2",
@@ -94,7 +94,7 @@ Raw Data
                         "mpich2",
                         "mpich2",
                         "mpich2 License",
-                        "scancode:mpich",
+                        "scancode://mpich",
                         "MPICH License"
                     ],
                     "__impliedId": "mpich2"
@@ -103,7 +103,7 @@ Raw Data
                 "otherNames": [
                     "mpich2",
                     "mpich2 License",
-                    "scancode:mpich",
+                    "scancode://mpich",
                     "MPICH License"
                 ]
             },
@@ -179,7 +179,7 @@ Raw Data
                 "spdxId": "mpich2",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:mpich",
+                        "scancode://mpich",
                         "MPICH License",
                         "mpich2"
                     ],

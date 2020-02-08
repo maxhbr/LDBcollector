@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:scea-1.0+`
+* `+scancode://scea-1.0+`
 * `+SCEA Shared Source License 1.0+`
 
 === Comments on (easy) usability
@@ -99,7 +99,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     "__impliedNames": [
         "SCEA",
         "SCEA Shared Source License",
-        "scancode:scea-1.0",
+        "scancode://scea-1.0",
         "SCEA Shared Source License 1.0"
     ],
     "__impliedId": "SCEA",
@@ -111,7 +111,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
                     "SCEA",
                     "SCEA",
                     "SCEA Shared Source License",
-                    "scancode:scea-1.0",
+                    "scancode://scea-1.0",
                     "SCEA Shared Source License 1.0"
                 ],
                 "__impliedId": "SCEA"
@@ -120,7 +120,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
             "otherNames": [
                 "SCEA",
                 "SCEA Shared Source License",
-                "scancode:scea-1.0",
+                "scancode://scea-1.0",
                 "SCEA Shared Source License 1.0"
             ]
         },
@@ -194,7 +194,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
             "spdxId": "SCEA",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:scea-1.0",
+                    "scancode://scea-1.0",
                     "SCEA Shared Source License 1.0",
                     "SCEA"
                 ],

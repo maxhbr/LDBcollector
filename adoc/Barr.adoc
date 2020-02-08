@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:barr-tex+`
+* `+scancode://barr-tex+`
 * `+Barr TeX License+`
 
 === Comments on (easy) usability
@@ -50,7 +50,7 @@ it will not work  with AMSTeX, I have not tested it.
     "__impliedNames": [
         "Barr",
         "Barr License",
-        "scancode:barr-tex",
+        "scancode://barr-tex",
         "Barr TeX License"
     ],
     "__impliedId": "Barr",
@@ -62,7 +62,7 @@ it will not work  with AMSTeX, I have not tested it.
                     "Barr",
                     "Barr",
                     "Barr License",
-                    "scancode:barr-tex",
+                    "scancode://barr-tex",
                     "Barr TeX License"
                 ],
                 "__impliedId": "Barr"
@@ -71,7 +71,7 @@ it will not work  with AMSTeX, I have not tested it.
             "otherNames": [
                 "Barr",
                 "Barr License",
-                "scancode:barr-tex",
+                "scancode://barr-tex",
                 "Barr TeX License"
             ]
         },
@@ -145,7 +145,7 @@ it will not work  with AMSTeX, I have not tested it.
             "spdxId": "Barr",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:barr-tex",
+                    "scancode://barr-tex",
                     "Barr TeX License",
                     "Barr"
                 ],

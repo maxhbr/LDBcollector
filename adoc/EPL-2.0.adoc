@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:epl-2.0+`
+* `+scancode://epl-2.0+`
 * `+EPL 2.0+`
 
 === Description
@@ -435,7 +435,7 @@ and exceptions or additional permissions here}."
     "__impliedNames": [
         "EPL-2.0",
         "Eclipse Public License 2.0",
-        "scancode:epl-2.0",
+        "scancode://epl-2.0",
         "EPL 2.0",
         "epl-2.0"
     ],
@@ -476,7 +476,7 @@ and exceptions or additional permissions here}."
                     "EPL-2.0",
                     "EPL-2.0",
                     "Eclipse Public License 2.0",
-                    "scancode:epl-2.0",
+                    "scancode://epl-2.0",
                     "EPL 2.0",
                     "epl-2.0"
                 ],
@@ -486,7 +486,7 @@ and exceptions or additional permissions here}."
             "otherNames": [
                 "EPL-2.0",
                 "Eclipse Public License 2.0",
-                "scancode:epl-2.0",
+                "scancode://epl-2.0",
                 "EPL 2.0",
                 "epl-2.0"
             ]
@@ -596,7 +596,7 @@ and exceptions or additional permissions here}."
             "spdxId": "EPL-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:epl-2.0",
+                    "scancode://epl-2.0",
                     "EPL 2.0",
                     "EPL-2.0"
                 ],

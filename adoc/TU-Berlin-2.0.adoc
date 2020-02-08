@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:tu-berlin-2.0+`
+* `+scancode://tu-berlin-2.0+`
 * `+TU Berlin License 2.0+`
 
 === Comments on (easy) usability
@@ -63,7 +63,7 @@ WARRANTY FOR THIS SOFTWARE.
     "__impliedNames": [
         "TU-Berlin-2.0",
         "Technische Universitaet Berlin License 2.0",
-        "scancode:tu-berlin-2.0",
+        "scancode://tu-berlin-2.0",
         "TU Berlin License 2.0"
     ],
     "__impliedId": "TU-Berlin-2.0",
@@ -74,7 +74,7 @@ WARRANTY FOR THIS SOFTWARE.
                     "TU-Berlin-2.0",
                     "TU-Berlin-2.0",
                     "Technische Universitaet Berlin License 2.0",
-                    "scancode:tu-berlin-2.0",
+                    "scancode://tu-berlin-2.0",
                     "TU Berlin License 2.0"
                 ],
                 "__impliedId": "TU-Berlin-2.0"
@@ -83,7 +83,7 @@ WARRANTY FOR THIS SOFTWARE.
             "otherNames": [
                 "TU-Berlin-2.0",
                 "Technische Universitaet Berlin License 2.0",
-                "scancode:tu-berlin-2.0",
+                "scancode://tu-berlin-2.0",
                 "TU Berlin License 2.0"
             ]
         },
@@ -133,7 +133,7 @@ WARRANTY FOR THIS SOFTWARE.
             "spdxId": "TU-Berlin-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:tu-berlin-2.0",
+                    "scancode://tu-berlin-2.0",
                     "TU Berlin License 2.0",
                     "TU-Berlin-2.0"
                 ],

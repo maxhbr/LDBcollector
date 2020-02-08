@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:mtll=
+- =scancode://mtll=
 
 ** Comments on (easy) usability
 
@@ -64,7 +64,7 @@
       "__impliedNames": [
           "MTLL",
           "Matrix Template Library License",
-          "scancode:mtll"
+          "scancode://mtll"
       ],
       "__impliedId": "MTLL",
       "__isFsfFree": true,
@@ -75,7 +75,7 @@
                       "MTLL",
                       "MTLL",
                       "Matrix Template Library License",
-                      "scancode:mtll"
+                      "scancode://mtll"
                   ],
                   "__impliedId": "MTLL"
               },
@@ -83,7 +83,7 @@
               "otherNames": [
                   "MTLL",
                   "Matrix Template Library License",
-                  "scancode:mtll"
+                  "scancode://mtll"
               ]
           },
           "SPDX": {
@@ -156,7 +156,7 @@
               "spdxId": "MTLL",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:mtll",
+                      "scancode://mtll",
                       "Matrix Template Library License",
                       "MTLL"
                   ],

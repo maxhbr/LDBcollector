@@ -5,7 +5,7 @@ FSF Unlimited License (FSFUL)
 
 **Other Names:**
 
--   `scancode:fsf-free`
+-   `scancode://fsf-free`
 
 -   `FSF Free Software License`
 
@@ -49,7 +49,7 @@ Raw Data
         "__impliedNames": [
             "FSFUL",
             "FSF Unlimited License",
-            "scancode:fsf-free",
+            "scancode://fsf-free",
             "FSF Free Software License"
         ],
         "__impliedId": "FSFUL",
@@ -61,7 +61,7 @@ Raw Data
                         "FSFUL",
                         "FSFUL",
                         "FSF Unlimited License",
-                        "scancode:fsf-free",
+                        "scancode://fsf-free",
                         "FSF Free Software License"
                     ],
                     "__impliedId": "FSFUL"
@@ -70,7 +70,7 @@ Raw Data
                 "otherNames": [
                     "FSFUL",
                     "FSF Unlimited License",
-                    "scancode:fsf-free",
+                    "scancode://fsf-free",
                     "FSF Free Software License"
                 ]
             },
@@ -144,7 +144,7 @@ Raw Data
                 "spdxId": "FSFUL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:fsf-free",
+                        "scancode://fsf-free",
                         "FSF Free Software License",
                         "FSFUL"
                     ],

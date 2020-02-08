@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:nosl-3.0=
+- =scancode://nosl-3.0=
 
 - =Non-Profit OSL 3.0=
 
@@ -113,7 +113,7 @@
       "__impliedNames": [
           "NPOSL-3.0",
           "Non-Profit Open Software License 3.0",
-          "scancode:nosl-3.0",
+          "scancode://nosl-3.0",
           "Non-Profit OSL 3.0",
           "The Non-Profit Open Software License, Version 3.0"
       ],
@@ -152,7 +152,7 @@
                       "NPOSL-3.0",
                       "NPOSL-3.0",
                       "Non-Profit Open Software License 3.0",
-                      "scancode:nosl-3.0",
+                      "scancode://nosl-3.0",
                       "Non-Profit OSL 3.0",
                       "The Non-Profit Open Software License, Version 3.0"
                   ],
@@ -162,7 +162,7 @@
               "otherNames": [
                   "NPOSL-3.0",
                   "Non-Profit Open Software License 3.0",
-                  "scancode:nosl-3.0",
+                  "scancode://nosl-3.0",
                   "Non-Profit OSL 3.0",
                   "The Non-Profit Open Software License, Version 3.0"
               ]
@@ -223,7 +223,7 @@
               "spdxId": "NPOSL-3.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:nosl-3.0",
+                      "scancode://nosl-3.0",
                       "Non-Profit OSL 3.0",
                       "NPOSL-3.0"
                   ],

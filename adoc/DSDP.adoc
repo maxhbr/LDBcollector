@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:dsdp+`
+* `+scancode://dsdp+`
 
 === Comments on (easy) usability
 
@@ -84,7 +84,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
     "__impliedNames": [
         "DSDP",
         "DSDP License",
-        "scancode:dsdp"
+        "scancode://dsdp"
     ],
     "__impliedId": "DSDP",
     "__isFsfFree": true,
@@ -95,7 +95,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
                     "DSDP",
                     "DSDP",
                     "DSDP License",
-                    "scancode:dsdp"
+                    "scancode://dsdp"
                 ],
                 "__impliedId": "DSDP"
             },
@@ -103,7 +103,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
             "otherNames": [
                 "DSDP",
                 "DSDP License",
-                "scancode:dsdp"
+                "scancode://dsdp"
             ]
         },
         "SPDX": {
@@ -176,7 +176,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
             "spdxId": "DSDP",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:dsdp",
+                    "scancode://dsdp",
                     "DSDP License",
                     "DSDP"
                 ],

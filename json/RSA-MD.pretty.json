@@ -2,7 +2,7 @@
     "__impliedNames": [
         "RSA-MD",
         "RSA Message-Digest License ",
-        "scancode:rsa-md5",
+        "scancode://rsa-md5",
         "RSA-MD5 License"
     ],
     "__impliedId": "RSA-MD",
@@ -13,7 +13,7 @@
                     "RSA-MD",
                     "RSA-MD",
                     "RSA Message-Digest License ",
-                    "scancode:rsa-md5",
+                    "scancode://rsa-md5",
                     "RSA-MD5 License"
                 ],
                 "__impliedId": "RSA-MD"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "RSA-MD",
                 "RSA Message-Digest License ",
-                "scancode:rsa-md5",
+                "scancode://rsa-md5",
                 "RSA-MD5 License"
             ]
         },
@@ -72,7 +72,7 @@
             "spdxId": "RSA-MD",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:rsa-md5",
+                    "scancode://rsa-md5",
                     "RSA-MD5 License",
                     "RSA-MD"
                 ],

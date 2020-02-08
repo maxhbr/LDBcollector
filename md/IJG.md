@@ -5,7 +5,7 @@ Independent JPEG Group License (IJG)
 
 **Other Names:**
 
--   `scancode:ijg`
+-   `scancode://ijg`
 
 -   `JPEG License`
 
@@ -159,7 +159,7 @@ Raw Data
         "__impliedNames": [
             "IJG",
             "Independent JPEG Group License",
-            "scancode:ijg",
+            "scancode://ijg",
             "JPEG License"
         ],
         "__impliedId": "IJG",
@@ -172,7 +172,7 @@ Raw Data
                         "IJG",
                         "IJG",
                         "Independent JPEG Group License",
-                        "scancode:ijg",
+                        "scancode://ijg",
                         "JPEG License"
                     ],
                     "__impliedId": "IJG"
@@ -181,7 +181,7 @@ Raw Data
                 "otherNames": [
                     "IJG",
                     "Independent JPEG Group License",
-                    "scancode:ijg",
+                    "scancode://ijg",
                     "JPEG License"
                 ]
             },
@@ -269,7 +269,7 @@ Raw Data
                 "spdxId": "IJG",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:ijg",
+                        "scancode://ijg",
                         "JPEG License",
                         "IJG"
                     ],

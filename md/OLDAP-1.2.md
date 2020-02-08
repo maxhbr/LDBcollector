@@ -5,7 +5,7 @@ Open LDAP Public License v1.2 (OLDAP-1.2)
 
 **Other Names:**
 
--   `scancode:openldap-1.2`
+-   `scancode://openldap-1.2`
 
 -   `OpenLDAP Public License 1.2`
 
@@ -169,7 +169,7 @@ Raw Data
         "__impliedNames": [
             "OLDAP-1.2",
             "Open LDAP Public License v1.2",
-            "scancode:openldap-1.2",
+            "scancode://openldap-1.2",
             "OpenLDAP Public License 1.2"
         ],
         "__impliedId": "OLDAP-1.2",
@@ -180,7 +180,7 @@ Raw Data
                         "OLDAP-1.2",
                         "OLDAP-1.2",
                         "Open LDAP Public License v1.2",
-                        "scancode:openldap-1.2",
+                        "scancode://openldap-1.2",
                         "OpenLDAP Public License 1.2"
                     ],
                     "__impliedId": "OLDAP-1.2"
@@ -189,7 +189,7 @@ Raw Data
                 "otherNames": [
                     "OLDAP-1.2",
                     "Open LDAP Public License v1.2",
-                    "scancode:openldap-1.2",
+                    "scancode://openldap-1.2",
                     "OpenLDAP Public License 1.2"
                 ]
             },
@@ -237,7 +237,7 @@ Raw Data
                 "spdxId": "OLDAP-1.2",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:openldap-1.2",
+                        "scancode://openldap-1.2",
                         "OpenLDAP Public License 1.2",
                         "OLDAP-1.2"
                     ],

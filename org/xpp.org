@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:indiana-extreme-1.2=
+- =scancode://indiana-extreme-1.2=
 
 - =Indiana Extreme License 1.2=
 
@@ -102,7 +102,7 @@
       "__impliedNames": [
           "xpp",
           "XPP License",
-          "scancode:indiana-extreme-1.2",
+          "scancode://indiana-extreme-1.2",
           "Indiana Extreme License 1.2"
       ],
       "__impliedId": "xpp",
@@ -114,7 +114,7 @@
                       "xpp",
                       "xpp",
                       "XPP License",
-                      "scancode:indiana-extreme-1.2",
+                      "scancode://indiana-extreme-1.2",
                       "Indiana Extreme License 1.2"
                   ],
                   "__impliedId": "xpp"
@@ -123,7 +123,7 @@
               "otherNames": [
                   "xpp",
                   "XPP License",
-                  "scancode:indiana-extreme-1.2",
+                  "scancode://indiana-extreme-1.2",
                   "Indiana Extreme License 1.2"
               ]
           },
@@ -197,7 +197,7 @@
               "spdxId": "xpp",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:indiana-extreme-1.2",
+                      "scancode://indiana-extreme-1.2",
                       "Indiana Extreme License 1.2",
                       "xpp"
                   ],

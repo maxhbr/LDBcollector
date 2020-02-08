@@ -5,7 +5,7 @@ JSON License (JSON)
 
 **Other Names:**
 
--   `scancode:json`
+-   `scancode://json`
 
 Comments on (easy) usability
 ----------------------------
@@ -73,7 +73,7 @@ Raw Data
         "__impliedNames": [
             "JSON",
             "JSON License",
-            "scancode:json"
+            "scancode://json"
         ],
         "__impliedId": "JSON",
         "__impliedAmbiguousNames": [
@@ -86,7 +86,7 @@ Raw Data
                         "JSON",
                         "JSON",
                         "JSON License",
-                        "scancode:json"
+                        "scancode://json"
                     ],
                     "__impliedId": "JSON"
                 },
@@ -94,7 +94,7 @@ Raw Data
                 "otherNames": [
                     "JSON",
                     "JSON License",
-                    "scancode:json"
+                    "scancode://json"
                 ]
             },
             "SPDX": {
@@ -166,7 +166,7 @@ Raw Data
                 "spdxId": "JSON",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:json",
+                        "scancode://json",
                         "JSON License",
                         "JSON"
                     ],

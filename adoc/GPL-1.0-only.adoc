@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:gpl-1.0+`
+* `+scancode://gpl-1.0+`
 * `+GPL 1.0+`
 * `+GPL-1.0+`
 * `+GPL1.0+`
@@ -304,7 +304,7 @@ That's all there is to it!
     "__impliedNames": [
         "GPL-1.0-only",
         "GNU General Public License v1.0 only",
-        "scancode:gpl-1.0",
+        "scancode://gpl-1.0",
         "GPL 1.0",
         "GPL-1.0",
         "GPL1.0",
@@ -322,7 +322,7 @@ That's all there is to it!
                     "GPL-1.0-only",
                     "GPL-1.0-only",
                     "GNU General Public License v1.0 only",
-                    "scancode:gpl-1.0",
+                    "scancode://gpl-1.0",
                     "GPL 1.0",
                     "GPL-1.0",
                     "GPL1.0",
@@ -334,7 +334,7 @@ That's all there is to it!
             "otherNames": [
                 "GPL-1.0-only",
                 "GNU General Public License v1.0 only",
-                "scancode:gpl-1.0",
+                "scancode://gpl-1.0",
                 "GPL 1.0",
                 "GPL-1.0",
                 "GPL1.0",
@@ -414,7 +414,7 @@ That's all there is to it!
             "spdxId": "GPL-1.0-only",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:gpl-1.0",
+                    "scancode://gpl-1.0",
                     "GPL 1.0",
                     "GPL-1.0-only"
                 ],

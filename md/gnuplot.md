@@ -5,7 +5,7 @@ gnuplot License (gnuplot)
 
 **Other Names:**
 
--   `scancode:gnuplot`
+-   `scancode://gnuplot`
 
 Comments on (easy) usability
 ----------------------------
@@ -63,7 +63,7 @@ Raw Data
         "__impliedNames": [
             "gnuplot",
             "gnuplot License",
-            "scancode:gnuplot"
+            "scancode://gnuplot"
         ],
         "__impliedId": "gnuplot",
         "__isFsfFree": true,
@@ -74,7 +74,7 @@ Raw Data
                         "gnuplot",
                         "gnuplot",
                         "gnuplot License",
-                        "scancode:gnuplot"
+                        "scancode://gnuplot"
                     ],
                     "__impliedId": "gnuplot"
                 },
@@ -82,7 +82,7 @@ Raw Data
                 "otherNames": [
                     "gnuplot",
                     "gnuplot License",
-                    "scancode:gnuplot"
+                    "scancode://gnuplot"
                 ]
             },
             "SPDX": {
@@ -157,7 +157,7 @@ Raw Data
                 "spdxId": "gnuplot",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:gnuplot",
+                        "scancode://gnuplot",
                         "gnuplot License",
                         "gnuplot"
                     ],

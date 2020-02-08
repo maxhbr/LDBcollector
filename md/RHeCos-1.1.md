@@ -5,7 +5,7 @@ Red Hat eCos Public License v1.1 (RHeCos-1.1)
 
 **Other Names:**
 
--   `scancode:ecosrh-1.1`
+-   `scancode://ecosrh-1.1`
 
 -   `Red Hat eCos Public License 1.1`
 
@@ -471,7 +471,7 @@ Raw Data
         "__impliedNames": [
             "RHeCos-1.1",
             "Red Hat eCos Public License v1.1",
-            "scancode:ecosrh-1.1",
+            "scancode://ecosrh-1.1",
             "Red Hat eCos Public License 1.1"
         ],
         "__impliedId": "RHeCos-1.1",
@@ -482,7 +482,7 @@ Raw Data
                         "RHeCos-1.1",
                         "RHeCos-1.1",
                         "Red Hat eCos Public License v1.1",
-                        "scancode:ecosrh-1.1",
+                        "scancode://ecosrh-1.1",
                         "Red Hat eCos Public License 1.1"
                     ],
                     "__impliedId": "RHeCos-1.1"
@@ -491,7 +491,7 @@ Raw Data
                 "otherNames": [
                     "RHeCos-1.1",
                     "Red Hat eCos Public License v1.1",
-                    "scancode:ecosrh-1.1",
+                    "scancode://ecosrh-1.1",
                     "Red Hat eCos Public License 1.1"
                 ]
             },
@@ -539,7 +539,7 @@ Raw Data
                 "spdxId": "RHeCos-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:ecosrh-1.1",
+                        "scancode://ecosrh-1.1",
                         "Red Hat eCos Public License 1.1",
                         "RHeCos-1.1"
                     ],

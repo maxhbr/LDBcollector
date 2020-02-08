@@ -5,7 +5,7 @@ SCEA Shared Source License (SCEA)
 
 **Other Names:**
 
--   `scancode:scea-1.0`
+-   `scancode://scea-1.0`
 
 -   `SCEA Shared Source License 1.0`
 
@@ -97,7 +97,7 @@ Raw Data
         "__impliedNames": [
             "SCEA",
             "SCEA Shared Source License",
-            "scancode:scea-1.0",
+            "scancode://scea-1.0",
             "SCEA Shared Source License 1.0"
         ],
         "__impliedId": "SCEA",
@@ -109,7 +109,7 @@ Raw Data
                         "SCEA",
                         "SCEA",
                         "SCEA Shared Source License",
-                        "scancode:scea-1.0",
+                        "scancode://scea-1.0",
                         "SCEA Shared Source License 1.0"
                     ],
                     "__impliedId": "SCEA"
@@ -118,7 +118,7 @@ Raw Data
                 "otherNames": [
                     "SCEA",
                     "SCEA Shared Source License",
-                    "scancode:scea-1.0",
+                    "scancode://scea-1.0",
                     "SCEA Shared Source License 1.0"
                 ]
             },
@@ -192,7 +192,7 @@ Raw Data
                 "spdxId": "SCEA",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:scea-1.0",
+                        "scancode://scea-1.0",
                         "SCEA Shared Source License 1.0",
                         "SCEA"
                     ],

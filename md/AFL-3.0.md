@@ -5,7 +5,7 @@ Academic Free License v3.0 (AFL-3.0)
 
 **Other Names:**
 
--   `scancode:afl-3.0`
+-   `scancode://afl-3.0`
 
 -   `AFL 3.0`
 
@@ -120,7 +120,7 @@ Raw Data
         "__impliedNames": [
             "AFL-3.0",
             "Academic Free License v3.0",
-            "scancode:afl-3.0",
+            "scancode://afl-3.0",
             "AFL 3.0",
             "afl-3.0",
             "Academic Free License, Version 3.0",
@@ -163,7 +163,7 @@ Raw Data
                         "AFL-3.0",
                         "AFL-3.0",
                         "Academic Free License v3.0",
-                        "scancode:afl-3.0",
+                        "scancode://afl-3.0",
                         "AFL 3.0",
                         "afl-3.0",
                         "Academic Free License, Version 3.0",
@@ -176,7 +176,7 @@ Raw Data
                 "otherNames": [
                     "AFL-3.0",
                     "Academic Free License v3.0",
-                    "scancode:afl-3.0",
+                    "scancode://afl-3.0",
                     "AFL 3.0",
                     "afl-3.0",
                     "Academic Free License, Version 3.0",
@@ -246,7 +246,7 @@ Raw Data
                 "spdxId": "AFL-3.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:afl-3.0",
+                        "scancode://afl-3.0",
                         "AFL 3.0",
                         "AFL-3.0"
                     ],

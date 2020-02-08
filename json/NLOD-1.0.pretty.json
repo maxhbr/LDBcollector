@@ -2,7 +2,7 @@
     "__impliedNames": [
         "NLOD-1.0",
         "Norwegian Licence for Open Government Data",
-        "scancode:nlod-1.0"
+        "scancode://nlod-1.0"
     ],
     "__impliedId": "NLOD-1.0",
     "facts": {
@@ -12,7 +12,7 @@
                     "NLOD-1.0",
                     "NLOD-1.0",
                     "Norwegian Licence for Open Government Data",
-                    "scancode:nlod-1.0"
+                    "scancode://nlod-1.0"
                 ],
                 "__impliedId": "NLOD-1.0"
             },
@@ -20,7 +20,7 @@
             "otherNames": [
                 "NLOD-1.0",
                 "Norwegian Licence for Open Government Data",
-                "scancode:nlod-1.0"
+                "scancode://nlod-1.0"
             ]
         },
         "SPDX": {
@@ -69,7 +69,7 @@
             "spdxId": "NLOD-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:nlod-1.0",
+                    "scancode://nlod-1.0",
                     "NLOD-1.0",
                     "NLOD-1.0"
                 ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:cc-by-2.0+`
+* `+scancode://cc-by-2.0+`
 
 === Comments on (easy) usability
 
@@ -97,7 +97,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
     "__impliedNames": [
         "CC-BY-2.0",
         "Creative Commons Attribution 2.0 Generic",
-        "scancode:cc-by-2.0"
+        "scancode://cc-by-2.0"
     ],
     "__impliedId": "CC-BY-2.0",
     "facts": {
@@ -107,7 +107,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
                     "CC-BY-2.0",
                     "CC-BY-2.0",
                     "Creative Commons Attribution 2.0 Generic",
-                    "scancode:cc-by-2.0"
+                    "scancode://cc-by-2.0"
                 ],
                 "__impliedId": "CC-BY-2.0"
             },
@@ -115,7 +115,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
             "otherNames": [
                 "CC-BY-2.0",
                 "Creative Commons Attribution 2.0 Generic",
-                "scancode:cc-by-2.0"
+                "scancode://cc-by-2.0"
             ]
         },
         "SPDX": {
@@ -164,7 +164,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
             "spdxId": "CC-BY-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:cc-by-2.0",
+                    "scancode://cc-by-2.0",
                     "CC-BY-2.0",
                     "CC-BY-2.0"
                 ],

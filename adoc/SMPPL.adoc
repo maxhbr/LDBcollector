@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:smppl+`
+* `+scancode://smppl+`
 
 === Comments on (easy) usability
 
@@ -63,7 +63,7 @@ Copyright © 1997-2002 National Security Agency
     "__impliedNames": [
         "SMPPL",
         "Secure Messaging Protocol Public License",
-        "scancode:smppl"
+        "scancode://smppl"
     ],
     "__impliedId": "SMPPL",
     "facts": {
@@ -73,7 +73,7 @@ Copyright © 1997-2002 National Security Agency
                     "SMPPL",
                     "SMPPL",
                     "Secure Messaging Protocol Public License",
-                    "scancode:smppl"
+                    "scancode://smppl"
                 ],
                 "__impliedId": "SMPPL"
             },
@@ -81,7 +81,7 @@ Copyright © 1997-2002 National Security Agency
             "otherNames": [
                 "SMPPL",
                 "Secure Messaging Protocol Public License",
-                "scancode:smppl"
+                "scancode://smppl"
             ]
         },
         "SPDX": {
@@ -128,7 +128,7 @@ Copyright © 1997-2002 National Security Agency
             "spdxId": "SMPPL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:smppl",
+                    "scancode://smppl",
                     "SMPPL",
                     "SMPPL"
                 ],

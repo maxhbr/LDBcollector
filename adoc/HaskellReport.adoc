@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:haskell-report+`
+* `+scancode://haskell-report+`
 * `+Haskell Report License+`
 
 === Comments on (easy) usability
@@ -46,7 +46,7 @@ to be a definition of the Haskell 2010 Language.
     "__impliedNames": [
         "HaskellReport",
         "Haskell Language Report License",
-        "scancode:haskell-report",
+        "scancode://haskell-report",
         "Haskell Report License"
     ],
     "__impliedId": "HaskellReport",
@@ -58,7 +58,7 @@ to be a definition of the Haskell 2010 Language.
                     "HaskellReport",
                     "HaskellReport",
                     "Haskell Language Report License",
-                    "scancode:haskell-report",
+                    "scancode://haskell-report",
                     "Haskell Report License"
                 ],
                 "__impliedId": "HaskellReport"
@@ -67,7 +67,7 @@ to be a definition of the Haskell 2010 Language.
             "otherNames": [
                 "HaskellReport",
                 "Haskell Language Report License",
-                "scancode:haskell-report",
+                "scancode://haskell-report",
                 "Haskell Report License"
             ]
         },
@@ -141,7 +141,7 @@ to be a definition of the Haskell 2010 Language.
             "spdxId": "HaskellReport",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:haskell-report",
+                    "scancode://haskell-report",
                     "Haskell Report License",
                     "HaskellReport"
                 ],

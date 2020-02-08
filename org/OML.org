@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:fastcgi-devkit=
+- =scancode://fastcgi-devkit=
 
 - =FastCGI DevKit=
 
@@ -74,7 +74,7 @@
       "__impliedNames": [
           "OML",
           "Open Market License",
-          "scancode:fastcgi-devkit",
+          "scancode://fastcgi-devkit",
           "FastCGI DevKit"
       ],
       "__impliedId": "OML",
@@ -86,7 +86,7 @@
                       "OML",
                       "OML",
                       "Open Market License",
-                      "scancode:fastcgi-devkit",
+                      "scancode://fastcgi-devkit",
                       "FastCGI DevKit"
                   ],
                   "__impliedId": "OML"
@@ -95,7 +95,7 @@
               "otherNames": [
                   "OML",
                   "Open Market License",
-                  "scancode:fastcgi-devkit",
+                  "scancode://fastcgi-devkit",
                   "FastCGI DevKit"
               ]
           },
@@ -169,7 +169,7 @@
               "spdxId": "OML",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:fastcgi-devkit",
+                      "scancode://fastcgi-devkit",
                       "FastCGI DevKit",
                       "OML"
                   ],

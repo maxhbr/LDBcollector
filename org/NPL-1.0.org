@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:npl-1.0=
+- =scancode://npl-1.0=
 
 - =NPL 1.0=
 
@@ -180,7 +180,7 @@
       "__impliedNames": [
           "NPL-1.0",
           "Netscape Public License v1.0",
-          "scancode:npl-1.0",
+          "scancode://npl-1.0",
           "NPL 1.0"
       ],
       "__impliedId": "NPL-1.0",
@@ -191,7 +191,7 @@
                       "NPL-1.0",
                       "NPL-1.0",
                       "Netscape Public License v1.0",
-                      "scancode:npl-1.0",
+                      "scancode://npl-1.0",
                       "NPL 1.0"
                   ],
                   "__impliedId": "NPL-1.0"
@@ -200,7 +200,7 @@
               "otherNames": [
                   "NPL-1.0",
                   "Netscape Public License v1.0",
-                  "scancode:npl-1.0",
+                  "scancode://npl-1.0",
                   "NPL 1.0"
               ]
           },
@@ -251,7 +251,7 @@
               "spdxId": "NPL-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:npl-1.0",
+                      "scancode://npl-1.0",
                       "NPL 1.0",
                       "NPL-1.0"
                   ],

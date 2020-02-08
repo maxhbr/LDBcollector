@@ -5,7 +5,7 @@ CNRI Jython License (CNRI-Jython)
 
 **Other Names:**
 
--   `scancode:cnri-jython`
+-   `scancode://cnri-jython`
 
 Comments on (easy) usability
 ----------------------------
@@ -53,7 +53,7 @@ Raw Data
         "__impliedNames": [
             "CNRI-Jython",
             "CNRI Jython License",
-            "scancode:cnri-jython"
+            "scancode://cnri-jython"
         ],
         "__impliedId": "CNRI-Jython",
         "facts": {
@@ -63,7 +63,7 @@ Raw Data
                         "CNRI-Jython",
                         "CNRI-Jython",
                         "CNRI Jython License",
-                        "scancode:cnri-jython"
+                        "scancode://cnri-jython"
                     ],
                     "__impliedId": "CNRI-Jython"
                 },
@@ -71,7 +71,7 @@ Raw Data
                 "otherNames": [
                     "CNRI-Jython",
                     "CNRI Jython License",
-                    "scancode:cnri-jython"
+                    "scancode://cnri-jython"
                 ]
             },
             "SPDX": {
@@ -118,7 +118,7 @@ Raw Data
                 "spdxId": "CNRI-Jython",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:cnri-jython",
+                        "scancode://cnri-jython",
                         "CNRI Jython License",
                         "CNRI-Jython"
                     ],

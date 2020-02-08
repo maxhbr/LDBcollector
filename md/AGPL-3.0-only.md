@@ -5,7 +5,7 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 **Other Names:**
 
--   `scancode:agpl-3.0`
+-   `scancode://agpl-3.0`
 
 -   `AGPL 3.0`
 
@@ -442,7 +442,7 @@ Raw Data
         "__impliedNames": [
             "AGPL-3.0-only",
             "GNU Affero General Public License v3.0 only",
-            "scancode:agpl-3.0",
+            "scancode://agpl-3.0",
             "AGPL 3.0",
             "GNU Affero General Public License 3.0",
             "AGPL-3.0",
@@ -497,7 +497,7 @@ Raw Data
                         "AGPL-3.0-only",
                         "AGPL-3.0-only",
                         "GNU Affero General Public License v3.0 only",
-                        "scancode:agpl-3.0",
+                        "scancode://agpl-3.0",
                         "AGPL 3.0",
                         "GNU Affero General Public License 3.0",
                         "AGPL-3.0",
@@ -512,7 +512,7 @@ Raw Data
                 "otherNames": [
                     "AGPL-3.0-only",
                     "GNU Affero General Public License v3.0 only",
-                    "scancode:agpl-3.0",
+                    "scancode://agpl-3.0",
                     "AGPL 3.0",
                     "GNU Affero General Public License 3.0",
                     "AGPL-3.0",
@@ -630,7 +630,7 @@ Raw Data
                 "spdxId": "AGPL-3.0-only",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:agpl-3.0",
+                        "scancode://agpl-3.0",
                         "AGPL 3.0",
                         "AGPL-3.0-only"
                     ],

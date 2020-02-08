@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:mit-export-control=
+- =scancode://mit-export-control=
 
 - =MIT with Export Control=
 
@@ -62,7 +62,7 @@
       "__impliedNames": [
           "Xerox",
           "Xerox License",
-          "scancode:mit-export-control",
+          "scancode://mit-export-control",
           "MIT with Export Control"
       ],
       "__impliedId": "Xerox",
@@ -74,7 +74,7 @@
                       "Xerox",
                       "Xerox",
                       "Xerox License",
-                      "scancode:mit-export-control",
+                      "scancode://mit-export-control",
                       "MIT with Export Control"
                   ],
                   "__impliedId": "Xerox"
@@ -83,7 +83,7 @@
               "otherNames": [
                   "Xerox",
                   "Xerox License",
-                  "scancode:mit-export-control",
+                  "scancode://mit-export-control",
                   "MIT with Export Control"
               ]
           },
@@ -159,7 +159,7 @@
               "spdxId": "Xerox",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:mit-export-control",
+                      "scancode://mit-export-control",
                       "MIT with Export Control",
                       "Xerox"
                   ],

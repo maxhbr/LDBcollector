@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:adobe-glyph+`
+* `+scancode://adobe-glyph+`
 * `+Adobe Glyph License+`
 
 === Comments on (easy) usability
@@ -46,7 +46,7 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
     "__impliedNames": [
         "Adobe-Glyph",
         "Adobe Glyph List License",
-        "scancode:adobe-glyph",
+        "scancode://adobe-glyph",
         "Adobe Glyph License"
     ],
     "__impliedId": "Adobe-Glyph",
@@ -58,7 +58,7 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
                     "Adobe-Glyph",
                     "Adobe-Glyph",
                     "Adobe Glyph List License",
-                    "scancode:adobe-glyph",
+                    "scancode://adobe-glyph",
                     "Adobe Glyph License"
                 ],
                 "__impliedId": "Adobe-Glyph"
@@ -67,7 +67,7 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
             "otherNames": [
                 "Adobe-Glyph",
                 "Adobe Glyph List License",
-                "scancode:adobe-glyph",
+                "scancode://adobe-glyph",
                 "Adobe Glyph License"
             ]
         },
@@ -141,7 +141,7 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
             "spdxId": "Adobe-Glyph",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:adobe-glyph",
+                    "scancode://adobe-glyph",
                     "Adobe Glyph License",
                     "Adobe-Glyph"
                 ],

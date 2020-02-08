@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:efl-2.0+`
+* `+scancode://efl-2.0+`
 * `+EFL 2.0+`
 * `+Eiffel Forum License, Version 2+`
 * `+License :: OSI Approved :: Eiffel Forum License+`
@@ -84,7 +84,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
     "__impliedNames": [
         "EFL-2.0",
         "Eiffel Forum License v2.0",
-        "scancode:efl-2.0",
+        "scancode://efl-2.0",
         "EFL 2.0",
         "Eiffel Forum License, Version 2",
         "License :: OSI Approved :: Eiffel Forum License",
@@ -126,7 +126,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
                     "EFL-2.0",
                     "EFL-2.0",
                     "Eiffel Forum License v2.0",
-                    "scancode:efl-2.0",
+                    "scancode://efl-2.0",
                     "EFL 2.0",
                     "Eiffel Forum License, Version 2",
                     "License :: OSI Approved :: Eiffel Forum License",
@@ -138,7 +138,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
             "otherNames": [
                 "EFL-2.0",
                 "Eiffel Forum License v2.0",
-                "scancode:efl-2.0",
+                "scancode://efl-2.0",
                 "EFL 2.0",
                 "Eiffel Forum License, Version 2",
                 "License :: OSI Approved :: Eiffel Forum License",
@@ -245,7 +245,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
             "spdxId": "EFL-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:efl-2.0",
+                    "scancode://efl-2.0",
                     "EFL 2.0",
                     "EFL-2.0"
                 ],

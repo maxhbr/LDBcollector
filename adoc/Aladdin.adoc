@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:afpl-8.0+`
+* `+scancode://afpl-8.0+`
 * `+Aladdin FPL v8+`
 
 === Comments on (easy) usability
@@ -105,7 +105,7 @@ If the unit or agency is the Department of Defense ("DOD"), the Program and its 
     "__impliedNames": [
         "Aladdin",
         "Aladdin Free Public License",
-        "scancode:afpl-8.0",
+        "scancode://afpl-8.0",
         "Aladdin FPL v8"
     ],
     "__impliedId": "Aladdin",
@@ -116,7 +116,7 @@ If the unit or agency is the Department of Defense ("DOD"), the Program and its 
                     "Aladdin",
                     "Aladdin",
                     "Aladdin Free Public License",
-                    "scancode:afpl-8.0",
+                    "scancode://afpl-8.0",
                     "Aladdin FPL v8"
                 ],
                 "__impliedId": "Aladdin"
@@ -125,7 +125,7 @@ If the unit or agency is the Department of Defense ("DOD"), the Program and its 
             "otherNames": [
                 "Aladdin",
                 "Aladdin Free Public License",
-                "scancode:afpl-8.0",
+                "scancode://afpl-8.0",
                 "Aladdin FPL v8"
             ]
         },
@@ -196,7 +196,7 @@ If the unit or agency is the Department of Defense ("DOD"), the Program and its 
             "spdxId": "Aladdin",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:afpl-8.0",
+                    "scancode://afpl-8.0",
                     "Aladdin FPL v8",
                     "Aladdin"
                 ],

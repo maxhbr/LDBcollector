@@ -5,7 +5,7 @@ zlib License (Zlib)
 
 **Other Names:**
 
--   `scancode:zlib`
+-   `scancode://zlib`
 
 -   `The zlib/libpng License (Zlib)`
 
@@ -128,7 +128,7 @@ Raw Data
         "__impliedNames": [
             "Zlib",
             "zlib License",
-            "scancode:zlib",
+            "scancode://zlib",
             "ZLIB License",
             "zlib",
             "The zlib/libpng License (Zlib)",
@@ -178,7 +178,7 @@ Raw Data
                         "Zlib",
                         "Zlib",
                         "zlib License",
-                        "scancode:zlib",
+                        "scancode://zlib",
                         "ZLIB License",
                         "zlib",
                         "The zlib/libpng License (Zlib)",
@@ -192,7 +192,7 @@ Raw Data
                 "otherNames": [
                     "Zlib",
                     "zlib License",
-                    "scancode:zlib",
+                    "scancode://zlib",
                     "ZLIB License",
                     "zlib",
                     "The zlib/libpng License (Zlib)",
@@ -299,7 +299,7 @@ Raw Data
                 "spdxId": "Zlib",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:zlib",
+                        "scancode://zlib",
                         "ZLIB License",
                         "Zlib"
                     ],

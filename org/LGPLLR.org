@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:lgpllr=
+- =scancode://lgpllr=
 
 ** Comments on (easy) usability
 
@@ -263,7 +263,7 @@
       "__impliedNames": [
           "LGPLLR",
           "Lesser General Public License For Linguistic Resources",
-          "scancode:lgpllr"
+          "scancode://lgpllr"
       ],
       "__impliedId": "LGPLLR",
       "facts": {
@@ -273,7 +273,7 @@
                       "LGPLLR",
                       "LGPLLR",
                       "Lesser General Public License For Linguistic Resources",
-                      "scancode:lgpllr"
+                      "scancode://lgpllr"
                   ],
                   "__impliedId": "LGPLLR"
               },
@@ -281,7 +281,7 @@
               "otherNames": [
                   "LGPLLR",
                   "Lesser General Public License For Linguistic Resources",
-                  "scancode:lgpllr"
+                  "scancode://lgpllr"
               ]
           },
           "SPDX": {
@@ -328,7 +328,7 @@
               "spdxId": "LGPLLR",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:lgpllr",
+                      "scancode://lgpllr",
                       "LGPLLR",
                       "LGPLLR"
                   ],

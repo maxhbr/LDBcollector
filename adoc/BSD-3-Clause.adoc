@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:bsd-new+`
+* `+scancode://bsd-new+`
 * `+BSD-3+`
 * `+BSD 3-Clause License+`
 * `+License :: OSI Approved :: BSD License+`
@@ -149,7 +149,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "BSD-3-Clause",
         "BSD 3-Clause \"New\" or \"Revised\" License",
-        "scancode:bsd-new",
+        "scancode://bsd-new",
         "bsd-3-clause",
         "BSD-3",
         "BSD 3-Clause License",
@@ -202,7 +202,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "BSD-3-Clause",
                     "BSD-3-Clause",
                     "BSD 3-Clause \"New\" or \"Revised\" License",
-                    "scancode:bsd-new",
+                    "scancode://bsd-new",
                     "bsd-3-clause",
                     "BSD-3",
                     "BSD 3-Clause License",
@@ -221,7 +221,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "BSD-3-Clause",
                 "BSD 3-Clause \"New\" or \"Revised\" License",
-                "scancode:bsd-new",
+                "scancode://bsd-new",
                 "bsd-3-clause",
                 "BSD-3",
                 "BSD 3-Clause License",
@@ -327,7 +327,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "BSD-3-Clause",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:bsd-new",
+                    "scancode://bsd-new",
                     "BSD-3-Clause",
                     "BSD-3-Clause"
                 ],

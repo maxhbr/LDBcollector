@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:beerware+`
+* `+scancode://beerware+`
 * `+Beer-Ware License+`
 * `+Beerware 42+`
 
@@ -62,7 +62,7 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
     "__impliedNames": [
         "Beerware",
         "Beerware License",
-        "scancode:beerware",
+        "scancode://beerware",
         "Beer-Ware License",
         "Beerware 42"
     ],
@@ -76,7 +76,7 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
                     "Beerware",
                     "Beerware",
                     "Beerware License",
-                    "scancode:beerware",
+                    "scancode://beerware",
                     "Beer-Ware License",
                     "Beerware 42"
                 ],
@@ -86,7 +86,7 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
             "otherNames": [
                 "Beerware",
                 "Beerware License",
-                "scancode:beerware",
+                "scancode://beerware",
                 "Beer-Ware License",
                 "Beerware 42"
             ]
@@ -168,7 +168,7 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
             "spdxId": "Beerware",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:beerware",
+                    "scancode://beerware",
                     "Beer-Ware License",
                     "Beerware"
                 ],

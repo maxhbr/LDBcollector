@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:cdla-sharing-1.0=
+- =scancode://cdla-sharing-1.0=
 
 - =CDLA Sharing 1.0=
 
@@ -126,7 +126,7 @@
       "__impliedNames": [
           "CDLA-Sharing-1.0",
           "Community Data License Agreement Sharing 1.0",
-          "scancode:cdla-sharing-1.0",
+          "scancode://cdla-sharing-1.0",
           "CDLA Sharing 1.0"
       ],
       "__impliedId": "CDLA-Sharing-1.0",
@@ -137,7 +137,7 @@
                       "CDLA-Sharing-1.0",
                       "CDLA-Sharing-1.0",
                       "Community Data License Agreement Sharing 1.0",
-                      "scancode:cdla-sharing-1.0",
+                      "scancode://cdla-sharing-1.0",
                       "CDLA Sharing 1.0"
                   ],
                   "__impliedId": "CDLA-Sharing-1.0"
@@ -146,7 +146,7 @@
               "otherNames": [
                   "CDLA-Sharing-1.0",
                   "Community Data License Agreement Sharing 1.0",
-                  "scancode:cdla-sharing-1.0",
+                  "scancode://cdla-sharing-1.0",
                   "CDLA Sharing 1.0"
               ]
           },
@@ -196,7 +196,7 @@
               "spdxId": "CDLA-Sharing-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:cdla-sharing-1.0",
+                      "scancode://cdla-sharing-1.0",
                       "CDLA Sharing 1.0",
                       "CDLA-Sharing-1.0"
                   ],

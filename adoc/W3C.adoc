@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:w3c+`
+* `+scancode://w3c+`
 * `+W3C Software Notice and License+`
 * `+The W3C Software Notice and License+`
 * `+License :: OSI Approved :: W3C License+`
@@ -92,7 +92,7 @@ times remain with copyright holders.
     "__impliedNames": [
         "W3C",
         "W3C Software Notice and License (2002-12-31)",
-        "scancode:w3c",
+        "scancode://w3c",
         "W3C Software Notice and License",
         "The W3C Software Notice and License",
         "License :: OSI Approved :: W3C License",
@@ -136,7 +136,7 @@ times remain with copyright holders.
                     "W3C",
                     "W3C",
                     "W3C Software Notice and License (2002-12-31)",
-                    "scancode:w3c",
+                    "scancode://w3c",
                     "W3C Software Notice and License",
                     "The W3C Software Notice and License",
                     "License :: OSI Approved :: W3C License",
@@ -149,7 +149,7 @@ times remain with copyright holders.
             "otherNames": [
                 "W3C",
                 "W3C Software Notice and License (2002-12-31)",
-                "scancode:w3c",
+                "scancode://w3c",
                 "W3C Software Notice and License",
                 "The W3C Software Notice and License",
                 "License :: OSI Approved :: W3C License",
@@ -246,7 +246,7 @@ times remain with copyright holders.
             "spdxId": "W3C",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:w3c",
+                    "scancode://w3c",
                     "W3C Software Notice and License",
                     "W3C"
                 ],

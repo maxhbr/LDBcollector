@@ -5,7 +5,7 @@ XFree86 License 1.1 (XFree86-1.1)
 
 **Other Names:**
 
--   `scancode:xfree86-1.1`
+-   `scancode://xfree86-1.1`
 
 -   `XFree86 1.1 License`
 
@@ -98,7 +98,7 @@ Raw Data
         "__impliedNames": [
             "XFree86-1.1",
             "XFree86 License 1.1",
-            "scancode:xfree86-1.1",
+            "scancode://xfree86-1.1",
             "XFree86 1.1 License"
         ],
         "__impliedId": "XFree86-1.1",
@@ -110,7 +110,7 @@ Raw Data
                         "XFree86-1.1",
                         "XFree86-1.1",
                         "XFree86 License 1.1",
-                        "scancode:xfree86-1.1",
+                        "scancode://xfree86-1.1",
                         "XFree86 1.1 License"
                     ],
                     "__impliedId": "XFree86-1.1"
@@ -119,7 +119,7 @@ Raw Data
                 "otherNames": [
                     "XFree86-1.1",
                     "XFree86 License 1.1",
-                    "scancode:xfree86-1.1",
+                    "scancode://xfree86-1.1",
                     "XFree86 1.1 License"
                 ]
             },
@@ -177,7 +177,7 @@ Raw Data
                 "spdxId": "XFree86-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:xfree86-1.1",
+                        "scancode://xfree86-1.1",
                         "XFree86 License 1.1",
                         "XFree86-1.1"
                     ],

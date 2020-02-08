@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Beerware",
         "Beerware License",
-        "scancode:beerware",
+        "scancode://beerware",
         "Beer-Ware License",
         "Beerware 42"
     ],
@@ -16,7 +16,7 @@
                     "Beerware",
                     "Beerware",
                     "Beerware License",
-                    "scancode:beerware",
+                    "scancode://beerware",
                     "Beer-Ware License",
                     "Beerware 42"
                 ],
@@ -26,7 +26,7 @@
             "otherNames": [
                 "Beerware",
                 "Beerware License",
-                "scancode:beerware",
+                "scancode://beerware",
                 "Beer-Ware License",
                 "Beerware 42"
             ]
@@ -108,7 +108,7 @@
             "spdxId": "Beerware",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:beerware",
+                    "scancode://beerware",
                     "Beer-Ware License",
                     "Beerware"
                 ],

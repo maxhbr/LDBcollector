@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:mup+`
+* `+scancode://mup+`
 
 === Comments on (easy) usability
 
@@ -54,7 +54,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
     "__impliedNames": [
         "Mup",
         "Mup License",
-        "scancode:mup"
+        "scancode://mup"
     ],
     "__impliedId": "Mup",
     "__isFsfFree": true,
@@ -65,7 +65,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
                     "Mup",
                     "Mup",
                     "Mup License",
-                    "scancode:mup"
+                    "scancode://mup"
                 ],
                 "__impliedId": "Mup"
             },
@@ -73,7 +73,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
             "otherNames": [
                 "Mup",
                 "Mup License",
-                "scancode:mup"
+                "scancode://mup"
             ]
         },
         "SPDX": {
@@ -146,7 +146,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
             "spdxId": "Mup",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:mup",
+                    "scancode://mup",
                     "Mup License",
                     "Mup"
                 ],

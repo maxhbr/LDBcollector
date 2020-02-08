@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:w3c-software-19980720+`
+* `+scancode://w3c-software-19980720+`
 * `+W3C-SOFTWARE-19980720+`
 
 === Comments on (easy) usability
@@ -98,7 +98,7 @@ be directed to site-policy@w3.org.
     "__impliedNames": [
         "W3C-19980720",
         "W3C Software Notice and License (1998-07-20)",
-        "scancode:w3c-software-19980720",
+        "scancode://w3c-software-19980720",
         "W3C-SOFTWARE-19980720"
     ],
     "__impliedId": "W3C-19980720",
@@ -109,7 +109,7 @@ be directed to site-policy@w3.org.
                     "W3C-19980720",
                     "W3C-19980720",
                     "W3C Software Notice and License (1998-07-20)",
-                    "scancode:w3c-software-19980720",
+                    "scancode://w3c-software-19980720",
                     "W3C-SOFTWARE-19980720"
                 ],
                 "__impliedId": "W3C-19980720"
@@ -118,7 +118,7 @@ be directed to site-policy@w3.org.
             "otherNames": [
                 "W3C-19980720",
                 "W3C Software Notice and License (1998-07-20)",
-                "scancode:w3c-software-19980720",
+                "scancode://w3c-software-19980720",
                 "W3C-SOFTWARE-19980720"
             ]
         },
@@ -166,7 +166,7 @@ be directed to site-policy@w3.org.
             "spdxId": "W3C-19980720",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:w3c-software-19980720",
+                    "scancode://w3c-software-19980720",
                     "W3C-SOFTWARE-19980720",
                     "W3C-19980720"
                 ],
