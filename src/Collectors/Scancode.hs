@@ -78,9 +78,11 @@ scancodeLFC :: LicenseFactClassifier
 scancodeLFC = LFC "Scancode"
 instance LFRaw ScancodeData where
   getLicenseFactClassifier _                            = scancodeLFC
-  getImpliedNames scd@ScancodeData{key=k, shortName=sn} = CLSR $ [k,sn] ++ (case spdxId scd of
-                                                                              Just sid -> [sid]
-                                                                              Nothing  -> [])
+  getImpliedNames scd@ScancodeData{key=k, shortName=sn} = let
+      scancodeKey = "scancode:" ++ k
+    in CLSR $ [scancodeKey,sn] ++ (case spdxId scd of
+         Just sid -> [sid]
+         Nothing  -> [])
   getImpliedId scd@ScancodeData{spdxId=mi} = case mi of
     Just i -> mkRLSR scd 90 i
     Nothing -> NoRLSR
