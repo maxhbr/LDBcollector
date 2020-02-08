@@ -1,13 +1,13 @@
 == xinetd License (xinetd)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |xinetd License
 |Shortname |xinetd
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

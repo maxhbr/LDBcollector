@@ -1,18 +1,18 @@
 == BSD with attribution (BSD-3-Clause-Attribution)
 
 [cols=",",options="header",]
-|===================================
+|===
 |Key |Value
 |Fullname |BSD with attribution
 |Shortname |BSD-3-Clause-Attribution
 |Rating |Go
 |Classification |NoCopyleft
-|===================================
+|===
 
 *Other Names:*
 
-* `bsd-ack`
-* `BSD Acknowledgment License`
+* `+bsd-ack+`
+* `+BSD Acknowledgment License+`
 
 === Comments on (easy) usability
 

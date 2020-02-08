@@ -1,17 +1,17 @@
 == EU DataGrid Software License (EUDatagrid)
 
 [cols=",",options="header",]
-|======================================
+|===
 |Key |Value
 |Fullname |EU DataGrid Software License
 |Shortname |EUDatagrid
 |Rating |Unknown
 |Classification |NoCopyleft
-|======================================
+|===
 
 *Other Names:*
 
-* `eu-datagrid`
+* `+eu-datagrid+`
 
 === Comments on (easy) usability
 

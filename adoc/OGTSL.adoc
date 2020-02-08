@@ -1,19 +1,19 @@
 == Open Group Test Suite License (OGTSL)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Open Group Test Suite License
 |Shortname |OGTSL
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `opengroup`
-* `The Open Group Test Suite License (OGTSL)`
-* `License :: OSI Approved :: Open Group Test Suite License`
+* `+opengroup+`
+* `+The Open Group Test Suite License (OGTSL)+`
+* `+License :: OSI Approved :: Open Group Test Suite License+`
 
 === Comments on (easy) usability
 

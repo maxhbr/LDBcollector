@@ -34,48 +34,48 @@
 ** Text
 
 #+BEGIN_EXAMPLE
-    W3C Software and Document Notice and License
+  W3C Software and Document Notice and License
 
-    Status: This license takes effect 13 May, 2015.
+  Status: This license takes effect 13 May, 2015.
 
-    This work is being provided by the copyright holders under the following license.
-    License
+  This work is being provided by the copyright holders under the following license.
+  License
 
-    By obtaining and/or copying this work, you (the licensee) agree that you have
-    read, understood, and will comply with the following terms and conditions.
+  By obtaining and/or copying this work, you (the licensee) agree that you have
+  read, understood, and will comply with the following terms and conditions.
 
-    Permission to copy, modify, and distribute this work, with or without
-    modification, for any purpose and without fee or royalty is hereby granted,
-    provided that you include the following on ALL copies of the work or portions
-    thereof, including modifications:
+  Permission to copy, modify, and distribute this work, with or without
+  modification, for any purpose and without fee or royalty is hereby granted,
+  provided that you include the following on ALL copies of the work or portions
+  thereof, including modifications:
 
-        The full text of this NOTICE in a location viewable to users of the
-        redistributed or derivative work.
-        
-        Any pre-existing intellectual property disclaimers, notices, or terms and
-        conditions. If none exist, the W3C Software and Document Short Notice should
-        be included.
+      The full text of this NOTICE in a location viewable to users of the
+      redistributed or derivative work.
+      
+      Any pre-existing intellectual property disclaimers, notices, or terms and
+      conditions. If none exist, the W3C Software and Document Short Notice should
+      be included.
 
-        Notice of any changes or modifications, through a copyright statement on the
-        new code or document such as "This software or document includes material
-        copied from or derived from [title and URI of the W3C document]. Copyright ©
-        [YEAR] W3C® (MIT, ERCIM, Keio, Beihang)."
+      Notice of any changes or modifications, through a copyright statement on the
+      new code or document such as "This software or document includes material
+      copied from or derived from [title and URI of the W3C document]. Copyright ©
+      [YEAR] W3C® (MIT, ERCIM, Keio, Beihang)."
 
-    Disclaimers
+  Disclaimers
 
-    THIS WORK IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR
-    WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF
-    MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE
-    SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,
-    TRADEMARKS OR OTHER RIGHTS.
+  THIS WORK IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR
+  WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF
+  MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE
+  SOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,
+  TRADEMARKS OR OTHER RIGHTS.
 
-    COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR
-    CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.
+  COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR
+  CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.
 
-    The name and trademarks of copyright holders may NOT be used in advertising or
-    publicity pertaining to the work without specific, written prior permission.
-    Title to copyright in this work will at all times remain with copyright holders.
-    Notes
+  The name and trademarks of copyright holders may NOT be used in advertising or
+  publicity pertaining to the work without specific, written prior permission.
+  Title to copyright in this work will at all times remain with copyright holders.
+  Notes
 #+END_EXAMPLE
 
 --------------
@@ -83,211 +83,211 @@
 ** Raw Data
 
 #+BEGIN_EXAMPLE
-    {
-        "__impliedNames": [
-            "W3C-20150513",
-            "W3C Software Notice and Document License (2015-05-13)",
-            "w3c-software-doc-20150513",
-            "W3C-SOFTWARE-DOC-20150513"
-        ],
-        "__impliedId": "W3C-20150513",
-        "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "W3C-20150513",
-                        "W3C-20150513",
-                        "W3C Software Notice and Document License (2015-05-13)",
-                        "w3c-software-doc-20150513",
-                        "W3C-SOFTWARE-DOC-20150513"
-                    ],
-                    "__impliedId": "W3C-20150513"
-                },
-                "shortname": "W3C-20150513",
-                "otherNames": [
-                    "W3C-20150513",
-                    "W3C Software Notice and Document License (2015-05-13)",
-                    "w3c-software-doc-20150513",
-                    "W3C-SOFTWARE-DOC-20150513"
-                ]
-            },
-            "SPDX": {
-                "isSPDXLicenseDeprecated": false,
-                "spdxFullName": "W3C Software Notice and Document License (2015-05-13)",
-                "spdxDetailsURL": "http://spdx.org/licenses/W3C-20150513.json",
-                "_sourceURL": "https://spdx.org/licenses/W3C-20150513.html",
-                "spdxLicIsOSIApproved": false,
-                "spdxSeeAlso": [
-                    "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "W3C-20150513",
-                        "W3C Software Notice and Document License (2015-05-13)"
-                    ],
-                    "__impliedId": "W3C-20150513",
-                    "__isOsiApproved": false,
-                    "__impliedURLs": [
-                        [
-                            "SPDX",
-                            "http://spdx.org/licenses/W3C-20150513.json"
-                        ],
-                        [
-                            null,
-                            "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
-                        ]
-                    ]
-                },
-                "spdxLicenseId": "W3C-20150513"
-            },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
-                "shortName": "W3C-SOFTWARE-DOC-20150513",
-                "textUrls": null,
-                "text": "W3C Software and Document Notice and License\n\nStatus: This license takes effect 13 May, 2015.\n\nThis work is being provided by the copyright holders under the following license.\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have\nread, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without\nmodification, for any purpose and without fee or royalty is hereby granted,\nprovided that you include the following on ALL copies of the work or portions\nthereof, including modifications:\n\n    The full text of this NOTICE in a location viewable to users of the\n    redistributed or derivative work.\n    \n    Any pre-existing intellectual property disclaimers, notices, or terms and\n    conditions. If none exist, the W3C Software and Document Short Notice should\n    be included.\n\n    Notice of any changes or modifications, through a copyright statement on the\n    new code or document such as \"This software or document includes material\n    copied from or derived from [title and URI of the W3C document]. Copyright ÃÂ©\n    [YEAR] W3CÃÂ® (MIT, ERCIM, Keio, Beihang).\"\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF\nMERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE\nSOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,\nTRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the work without specific, written prior permission.\nTitle to copyright in this work will at all times remain with copyright holders.\nNotes\n",
-                "category": "Permissive",
-                "osiUrl": null,
-                "owner": "W3C - World Wide Web Consortium",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-doc-20150513.yml",
-                "key": "w3c-software-doc-20150513",
-                "name": "W3C Software and Document (2015-05-13)",
-                "spdxId": "W3C-20150513",
-                "_implications": {
-                    "__impliedNames": [
-                        "w3c-software-doc-20150513",
-                        "W3C-SOFTWARE-DOC-20150513",
-                        "W3C-20150513"
-                    ],
-                    "__impliedId": "W3C-20150513",
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "W3C Software and Document Notice and License\n\nStatus: This license takes effect 13 May, 2015.\n\nThis work is being provided by the copyright holders under the following license.\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have\nread, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without\nmodification, for any purpose and without fee or royalty is hereby granted,\nprovided that you include the following on ALL copies of the work or portions\nthereof, including modifications:\n\n    The full text of this NOTICE in a location viewable to users of the\n    redistributed or derivative work.\n    \n    Any pre-existing intellectual property disclaimers, notices, or terms and\n    conditions. If none exist, the W3C Software and Document Short Notice should\n    be included.\n\n    Notice of any changes or modifications, through a copyright statement on the\n    new code or document such as \"This software or document includes material\n    copied from or derived from [title and URI of the W3C document]. Copyright Â©\n    [YEAR] W3CÂ® (MIT, ERCIM, Keio, Beihang).\"\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF\nMERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE\nSOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,\nTRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the work without specific, written prior permission.\nTitle to copyright in this work will at all times remain with copyright holders.\nNotes\n",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
-                        ]
-                    ]
-                }
-            },
-            "BlueOak License List": {
-                "BlueOakRating": "Lead",
-                "url": "https://spdx.org/licenses/W3C-20150513.html",
-                "isPermissive": true,
-                "_sourceURL": "https://blueoakcouncil.org/list",
-                "name": "W3C Software Notice and Document License (2015-05-13)",
-                "id": "W3C-20150513",
-                "_implications": {
-                    "__impliedNames": [
-                        "W3C-20150513"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "BlueOak License List",
-                            {
-                                "tag": "NegativeJudgement",
-                                "contents": "Rating is: Lead"
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "BlueOak License List",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            "SPDX",
-                            "https://spdx.org/licenses/W3C-20150513.html"
-                        ]
-                    ]
-                }
-            },
-            "Google OSS Policy": {
-                "rating": "NOTICE",
-                "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
-                "id": "W3C-20150513",
-                "_implications": {
-                    "__impliedNames": [
-                        "W3C-20150513"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "Google OSS Policy",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "Google Classification is NOTICE"
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Google OSS Policy",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft"
-                }
-            }
-        },
-        "__impliedJudgement": [
-            [
-                "BlueOak License List",
-                {
-                    "tag": "NegativeJudgement",
-                    "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Google OSS Policy",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "Google Classification is NOTICE"
-                }
-            ]
-        ],
-        "__impliedCopyleft": [
-            [
-                "BlueOak License List",
-                "NoCopyleft"
-            ],
-            [
-                "Google OSS Policy",
-                "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
-            ]
-        ],
-        "__calculatedCopyleft": "NoCopyleft",
-        "__isOsiApproved": false,
-        "__impliedText": "W3C Software and Document Notice and License\n\nStatus: This license takes effect 13 May, 2015.\n\nThis work is being provided by the copyright holders under the following license.\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have\nread, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without\nmodification, for any purpose and without fee or royalty is hereby granted,\nprovided that you include the following on ALL copies of the work or portions\nthereof, including modifications:\n\n    The full text of this NOTICE in a location viewable to users of the\n    redistributed or derivative work.\n    \n    Any pre-existing intellectual property disclaimers, notices, or terms and\n    conditions. If none exist, the W3C Software and Document Short Notice should\n    be included.\n\n    Notice of any changes or modifications, through a copyright statement on the\n    new code or document such as \"This software or document includes material\n    copied from or derived from [title and URI of the W3C document]. Copyright Â©\n    [YEAR] W3CÂ® (MIT, ERCIM, Keio, Beihang).\"\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF\nMERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE\nSOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,\nTRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the work without specific, written prior permission.\nTitle to copyright in this work will at all times remain with copyright holders.\nNotes\n",
-        "__impliedURLs": [
-            [
-                "SPDX",
-                "http://spdx.org/licenses/W3C-20150513.json"
-            ],
-            [
-                null,
-                "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/W3C-20150513.html"
-            ],
-            [
-                "Homepage",
-                "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
-            ]
-        ]
-    }
+  {
+      "__impliedNames": [
+          "W3C-20150513",
+          "W3C Software Notice and Document License (2015-05-13)",
+          "w3c-software-doc-20150513",
+          "W3C-SOFTWARE-DOC-20150513"
+      ],
+      "__impliedId": "W3C-20150513",
+      "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "W3C-20150513",
+                      "W3C-20150513",
+                      "W3C Software Notice and Document License (2015-05-13)",
+                      "w3c-software-doc-20150513",
+                      "W3C-SOFTWARE-DOC-20150513"
+                  ],
+                  "__impliedId": "W3C-20150513"
+              },
+              "shortname": "W3C-20150513",
+              "otherNames": [
+                  "W3C-20150513",
+                  "W3C Software Notice and Document License (2015-05-13)",
+                  "w3c-software-doc-20150513",
+                  "W3C-SOFTWARE-DOC-20150513"
+              ]
+          },
+          "SPDX": {
+              "isSPDXLicenseDeprecated": false,
+              "spdxFullName": "W3C Software Notice and Document License (2015-05-13)",
+              "spdxDetailsURL": "http://spdx.org/licenses/W3C-20150513.json",
+              "_sourceURL": "https://spdx.org/licenses/W3C-20150513.html",
+              "spdxLicIsOSIApproved": false,
+              "spdxSeeAlso": [
+                  "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+              ],
+              "_implications": {
+                  "__impliedNames": [
+                      "W3C-20150513",
+                      "W3C Software Notice and Document License (2015-05-13)"
+                  ],
+                  "__impliedId": "W3C-20150513",
+                  "__isOsiApproved": false,
+                  "__impliedURLs": [
+                      [
+                          "SPDX",
+                          "http://spdx.org/licenses/W3C-20150513.json"
+                      ],
+                      [
+                          null,
+                          "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+                      ]
+                  ]
+              },
+              "spdxLicenseId": "W3C-20150513"
+          },
+          "Scancode": {
+              "otherUrls": null,
+              "homepageUrl": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
+              "shortName": "W3C-SOFTWARE-DOC-20150513",
+              "textUrls": null,
+              "text": "W3C Software and Document Notice and License\n\nStatus: This license takes effect 13 May, 2015.\n\nThis work is being provided by the copyright holders under the following license.\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have\nread, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without\nmodification, for any purpose and without fee or royalty is hereby granted,\nprovided that you include the following on ALL copies of the work or portions\nthereof, including modifications:\n\n    The full text of this NOTICE in a location viewable to users of the\n    redistributed or derivative work.\n    \n    Any pre-existing intellectual property disclaimers, notices, or terms and\n    conditions. If none exist, the W3C Software and Document Short Notice should\n    be included.\n\n    Notice of any changes or modifications, through a copyright statement on the\n    new code or document such as \"This software or document includes material\n    copied from or derived from [title and URI of the W3C document]. Copyright ÃÂ©\n    [YEAR] W3CÃÂ® (MIT, ERCIM, Keio, Beihang).\"\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF\nMERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE\nSOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,\nTRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the work without specific, written prior permission.\nTitle to copyright in this work will at all times remain with copyright holders.\nNotes\n",
+              "category": "Permissive",
+              "osiUrl": null,
+              "owner": "W3C - World Wide Web Consortium",
+              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-doc-20150513.yml",
+              "key": "w3c-software-doc-20150513",
+              "name": "W3C Software and Document (2015-05-13)",
+              "spdxId": "W3C-20150513",
+              "_implications": {
+                  "__impliedNames": [
+                      "w3c-software-doc-20150513",
+                      "W3C-SOFTWARE-DOC-20150513",
+                      "W3C-20150513"
+                  ],
+                  "__impliedId": "W3C-20150513",
+                  "__impliedCopyleft": [
+                      [
+                          "Scancode",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft",
+                  "__impliedText": "W3C Software and Document Notice and License\n\nStatus: This license takes effect 13 May, 2015.\n\nThis work is being provided by the copyright holders under the following license.\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have\nread, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without\nmodification, for any purpose and without fee or royalty is hereby granted,\nprovided that you include the following on ALL copies of the work or portions\nthereof, including modifications:\n\n    The full text of this NOTICE in a location viewable to users of the\n    redistributed or derivative work.\n    \n    Any pre-existing intellectual property disclaimers, notices, or terms and\n    conditions. If none exist, the W3C Software and Document Short Notice should\n    be included.\n\n    Notice of any changes or modifications, through a copyright statement on the\n    new code or document such as \"This software or document includes material\n    copied from or derived from [title and URI of the W3C document]. Copyright Â©\n    [YEAR] W3CÂ® (MIT, ERCIM, Keio, Beihang).\"\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF\nMERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE\nSOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,\nTRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the work without specific, written prior permission.\nTitle to copyright in this work will at all times remain with copyright holders.\nNotes\n",
+                  "__impliedURLs": [
+                      [
+                          "Homepage",
+                          "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+                      ]
+                  ]
+              }
+          },
+          "BlueOak License List": {
+              "BlueOakRating": "Lead",
+              "url": "https://spdx.org/licenses/W3C-20150513.html",
+              "isPermissive": true,
+              "_sourceURL": "https://blueoakcouncil.org/list",
+              "name": "W3C Software Notice and Document License (2015-05-13)",
+              "id": "W3C-20150513",
+              "_implications": {
+                  "__impliedNames": [
+                      "W3C-20150513"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "BlueOak License List",
+                          {
+                              "tag": "NegativeJudgement",
+                              "contents": "Rating is: Lead"
+                          }
+                      ]
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "BlueOak License List",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft",
+                  "__impliedURLs": [
+                      [
+                          "SPDX",
+                          "https://spdx.org/licenses/W3C-20150513.html"
+                      ]
+                  ]
+              }
+          },
+          "Google OSS Policy": {
+              "rating": "NOTICE",
+              "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
+              "id": "W3C-20150513",
+              "_implications": {
+                  "__impliedNames": [
+                      "W3C-20150513"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Google OSS Policy",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "Google Classification is NOTICE"
+                          }
+                      ]
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "Google OSS Policy",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              }
+          }
+      },
+      "__impliedJudgement": [
+          [
+              "BlueOak License List",
+              {
+                  "tag": "NegativeJudgement",
+                  "contents": "Rating is: Lead"
+              }
+          ],
+          [
+              "Google OSS Policy",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "Google Classification is NOTICE"
+              }
+          ]
+      ],
+      "__impliedCopyleft": [
+          [
+              "BlueOak License List",
+              "NoCopyleft"
+          ],
+          [
+              "Google OSS Policy",
+              "NoCopyleft"
+          ],
+          [
+              "Scancode",
+              "NoCopyleft"
+          ]
+      ],
+      "__calculatedCopyleft": "NoCopyleft",
+      "__isOsiApproved": false,
+      "__impliedText": "W3C Software and Document Notice and License\n\nStatus: This license takes effect 13 May, 2015.\n\nThis work is being provided by the copyright holders under the following license.\nLicense\n\nBy obtaining and/or copying this work, you (the licensee) agree that you have\nread, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this work, with or without\nmodification, for any purpose and without fee or royalty is hereby granted,\nprovided that you include the following on ALL copies of the work or portions\nthereof, including modifications:\n\n    The full text of this NOTICE in a location viewable to users of the\n    redistributed or derivative work.\n    \n    Any pre-existing intellectual property disclaimers, notices, or terms and\n    conditions. If none exist, the W3C Software and Document Short Notice should\n    be included.\n\n    Notice of any changes or modifications, through a copyright statement on the\n    new code or document such as \"This software or document includes material\n    copied from or derived from [title and URI of the W3C document]. Copyright Â©\n    [YEAR] W3CÂ® (MIT, ERCIM, Keio, Beihang).\"\n\nDisclaimers\n\nTHIS WORK IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR\nWARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF\nMERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE\nSOFTWARE OR DOCUMENT WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS,\nTRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENT.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the work without specific, written prior permission.\nTitle to copyright in this work will at all times remain with copyright holders.\nNotes\n",
+      "__impliedURLs": [
+          [
+              "SPDX",
+              "http://spdx.org/licenses/W3C-20150513.json"
+          ],
+          [
+              null,
+              "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/W3C-20150513.html"
+          ],
+          [
+              "Homepage",
+              "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
+          ]
+      ]
+  }
 #+END_EXAMPLE

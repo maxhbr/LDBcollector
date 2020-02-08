@@ -1,13 +1,13 @@
 == CNRI Jython License (CNRI-Jython)
 
 [cols=",",options="header",]
-|=============================
+|===
 |Key |Value
 |Fullname |CNRI Jython License
 |Shortname |CNRI-Jython
 |Rating |Go
 |Classification |NoCopyleft
-|=============================
+|===
 
 === Comments on (easy) usability
 

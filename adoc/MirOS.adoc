@@ -1,19 +1,19 @@
 == MirOS License (MirOS)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |MirOS License
 |Shortname |MirOS
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `mir-os`
-* `The MirOS Licence (MirOS)`
-* `MirOS Licence`
+* `+mir-os+`
+* `+The MirOS Licence (MirOS)+`
+* `+MirOS Licence+`
 
 === Comments on (easy) usability
 

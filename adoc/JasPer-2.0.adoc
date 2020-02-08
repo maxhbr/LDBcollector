@@ -1,17 +1,17 @@
 == JasPer License (JasPer-2.0)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |JasPer License
 |Shortname |JasPer-2.0
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `JasPer 2.0`
+* `+JasPer 2.0+`
 
 === Comments on (easy) usability
 

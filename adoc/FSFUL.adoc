@@ -1,18 +1,18 @@
 == FSF Unlimited License (FSFUL)
 
 [cols=",",options="header",]
-|===============================
+|===
 |Key |Value
 |Fullname |FSF Unlimited License
 |Shortname |FSFUL
 |Rating |Unknown
 |Classification |NoCopyleft
-|===============================
+|===
 
 *Other Names:*
 
-* `fsf-free`
-* `FSF Free Software License`
+* `+fsf-free+`
+* `+FSF Free Software License+`
 
 === Comments on (easy) usability
 

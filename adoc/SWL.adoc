@@ -1,17 +1,17 @@
 == Scheme Widget Library (SWL) Software License Agreement (SWL)
 
 [cols=",",options="header",]
-|================================================================
+|===
 |Key |Value
 |Fullname |Scheme Widget Library (SWL) Software License Agreement
 |Shortname |SWL
 |Rating |Go
 |Classification |NoCopyleft
-|================================================================
+|===
 
 *Other Names:*
 
-* `Scheme Widget Library (SWL) Software License`
+* `+Scheme Widget Library (SWL) Software License+`
 
 === Comments on (easy) usability
 

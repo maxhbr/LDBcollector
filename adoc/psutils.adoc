@@ -1,17 +1,17 @@
 == psutils License (psutils)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |psutils License
 |Shortname |psutils
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `PS Utilities License`
+* `+PS Utilities License+`
 
 === Comments on (easy) usability
 

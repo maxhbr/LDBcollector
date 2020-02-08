@@ -1,13 +1,13 @@
 == psfrag License (psfrag)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |psfrag License
 |Shortname |psfrag
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

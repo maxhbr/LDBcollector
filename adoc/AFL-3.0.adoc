@@ -1,30 +1,30 @@
 == Academic Free License v3.0 (AFL-3.0)
 
 [cols=",",options="header",]
-|====================================
+|===
 |Key |Value
 |Fullname |Academic Free License v3.0
 |Shortname |AFL-3.0
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|====================================
+|===
 
 *Other Names:*
 
-* `AFL 3.0`
-* `Academic Free License, Version 3.0`
-* `License :: OSI Approved :: Academic Free License (AFL)`
-* `Academic Free License 3.0`
+* `+AFL 3.0+`
+* `+Academic Free License, Version 3.0+`
+* `+License :: OSI Approved :: Academic Free License (AFL)+`
+* `+Academic Free License 3.0+`
 
 === Description
 
-______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 The Academic Free License is a variant of the Open Software License that
 does not require that the source code of derivative works be disclosed.
 It contains explicit copyright and patent grants and reserves trademark
 rights in the author.
-______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -41,7 +41,7 @@ https://blueoakcouncil.org/list[BlueOak License List])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -59,7 +59,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/afl-3.0.txt[choosealicense.com])

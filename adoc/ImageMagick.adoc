@@ -1,13 +1,13 @@
 == ImageMagick License (ImageMagick)
 
 [cols=",",options="header",]
-|=============================
+|===
 |Key |Value
 |Fullname |ImageMagick License
 |Shortname |ImageMagick
 |Rating |Go
 |Classification |NoCopyleft
-|=============================
+|===
 
 === Comments on (easy) usability
 

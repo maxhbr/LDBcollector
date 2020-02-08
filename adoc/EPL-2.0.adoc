@@ -1,27 +1,27 @@
 == Eclipse Public License 2.0 (EPL-2.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Eclipse Public License 2.0
 |Shortname |EPL-2.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `EPL 2.0`
+* `+EPL 2.0+`
 
 === Description
 
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 This commercially-friendly copyleft license provides the ability to
 commercially license binaries; a modern royalty-free patent license
 grant; and the ability for linked works to use other licenses, including
 commercial ones.
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -39,7 +39,7 @@ Policy])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -57,7 +57,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-2.0.txt[choosealicense.com])

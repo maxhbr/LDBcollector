@@ -1,17 +1,17 @@
 == Zope Public License 2.1 (ZPL-2.1)
 
 [cols=",",options="header",]
-|=================================
+|===
 |Key |Value
 |Fullname |Zope Public License 2.1
 |Shortname |ZPL-2.1
 |Rating |Go
 |Classification |NoCopyleft
-|=================================
+|===
 
 *Other Names:*
 
-* `ZPL 2.1`
+* `+ZPL 2.1+`
 
 === Comments on (easy) usability
 

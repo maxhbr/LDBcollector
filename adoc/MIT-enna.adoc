@@ -1,17 +1,17 @@
 == enna License (MIT-enna)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |enna License
 |Shortname |MIT-enna
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `enna`
+* `+enna+`
 
 === Comments on (easy) usability
 

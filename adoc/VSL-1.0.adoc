@@ -1,19 +1,19 @@
 == Vovida Software License v1.0 (VSL-1.0)
 
 [cols=",",options="header",]
-|======================================
+|===
 |Key |Value
 |Fullname |Vovida Software License v1.0
 |Shortname |VSL-1.0
 |Rating |Go
 |Classification |NoCopyleft
-|======================================
+|===
 
 *Other Names:*
 
-* `Vovida Software License 1.0`
-* `The Vovida Software License, Version 1.0`
-* `License :: OSI Approved :: Vovida Software License 1.0`
+* `+Vovida Software License 1.0+`
+* `+The Vovida Software License, Version 1.0+`
+* `+License :: OSI Approved :: Vovida Software License 1.0+`
 
 === Comments on (easy) usability
 

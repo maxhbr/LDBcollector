@@ -1,17 +1,17 @@
 == Community Data License Agreement Sharing 1.0 (CDLA-Sharing-1.0)
 
 [cols=",",options="header",]
-|======================================================
+|===
 |Key |Value
 |Fullname |Community Data License Agreement Sharing 1.0
 |Shortname |CDLA-Sharing-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|======================================================
+|===
 
 *Other Names:*
 
-* `CDLA Sharing 1.0`
+* `+CDLA Sharing 1.0+`
 
 === Comments on (easy) usability
 

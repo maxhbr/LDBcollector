@@ -1,17 +1,17 @@
 == Apple Public Source License 1.2 (APSL-1.2)
 
 [cols=",",options="header",]
-|=========================================
+|===
 |Key |Value
 |Fullname |Apple Public Source License 1.2
 |Shortname |APSL-1.2
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=========================================
+|===
 
 *Other Names:*
 
-* `APSL 1.2`
+* `+APSL 1.2+`
 
 === Comments on (easy) usability
 

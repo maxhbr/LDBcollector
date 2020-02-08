@@ -1,13 +1,13 @@
 == JSON License (JSON)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |JSON License
 |Shortname |JSON
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

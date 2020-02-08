@@ -1,13 +1,13 @@
 == Eurosym License (Eurosym)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Eurosym License
 |Shortname |Eurosym
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 === Comments on (easy) usability
 

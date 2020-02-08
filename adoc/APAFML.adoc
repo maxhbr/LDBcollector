@@ -1,13 +1,13 @@
 == Adobe Postscript AFM License (APAFML)
 
 [cols=",",options="header",]
-|======================================
+|===
 |Key |Value
 |Fullname |Adobe Postscript AFM License
 |Shortname |APAFML
 |Rating |Go
 |Classification |NoCopyleft
-|======================================
+|===
 
 === Comments on (easy) usability
 

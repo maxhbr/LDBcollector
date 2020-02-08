@@ -1,18 +1,18 @@
 == eGenix.com Public License 1.1.0 (eGenix)
 
 [cols=",",options="header",]
-|=========================================
+|===
 |Key |Value
 |Fullname |eGenix.com Public License 1.1.0
 |Shortname |eGenix
 |Rating |Go
 |Classification |NoCopyleft
-|=========================================
+|===
 
 *Other Names:*
 
-* `egenix-1.1.0`
-* `eGenix Public License 1.1.0`
+* `+egenix-1.1.0+`
+* `+eGenix Public License 1.1.0+`
 
 === Comments on (easy) usability
 

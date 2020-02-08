@@ -1,18 +1,18 @@
 == libtiff License (libtiff)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |libtiff License
 |Shortname |libtiff
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `x11-tiff`
-* `X11-Style (Tiff)`
+* `+x11-tiff+`
+* `+X11-Style (Tiff)+`
 
 === Comments on (easy) usability
 

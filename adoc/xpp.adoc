@@ -1,18 +1,18 @@
 == XPP License (xpp)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |XPP License
 |Shortname |xpp
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `indiana-extreme-1.2`
-* `Indiana Extreme License 1.2`
+* `+indiana-extreme-1.2+`
+* `+Indiana Extreme License 1.2+`
 
 === Comments on (easy) usability
 

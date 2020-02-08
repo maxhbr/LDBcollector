@@ -1,19 +1,19 @@
 == BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
 
 [cols=",",options="header",]
-|==========================================
+|===
 |Key |Value
 |Fullname |BSD-2-Clause Plus Patent License
 |Shortname |BSD-2-Clause-Patent
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|==========================================
+|===
 
 *Other Names:*
 
-* `bsd-plus-patent`
-* `BSD-2-Clause Plus Patent`
+* `+bsd-plus-patent+`
+* `+BSD-2-Clause Plus Patent+`
 
 === Comments on (easy) usability
 

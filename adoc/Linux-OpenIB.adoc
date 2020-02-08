@@ -1,13 +1,13 @@
 == Linux Kernel Variant of OpenIB.org license (Linux-OpenIB)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Linux Kernel Variant of OpenIB.org license
 |Shortname |Linux-OpenIB
 |Rating |Go
 |Classification |NoCopyleft
-|====================================================
+|===
 
 === Comments on (easy) usability
 

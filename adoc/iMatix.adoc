@@ -1,18 +1,18 @@
 == iMatix Standard Function Library Agreement (iMatix)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |iMatix Standard Function Library Agreement
 |Shortname |iMatix
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |MaybeCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `sfl-license`
-* `SFL License Agreement`
+* `+sfl-license+`
+* `+SFL License Agreement+`
 
 === Comments on (easy) usability
 

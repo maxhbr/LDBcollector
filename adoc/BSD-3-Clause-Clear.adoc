@@ -1,25 +1,25 @@
 == BSD 3-Clause Clear License (BSD-3-Clause-Clear)
 
 [cols=",",options="header",]
-|====================================
+|===
 |Key |Value
 |Fullname |BSD 3-Clause Clear License
 |Shortname |BSD-3-Clause-Clear
 |Rating |Go
 |Classification |NoCopyleft
-|====================================
+|===
 
 *Other Names:*
 
-* `clear-bsd`
-* `Clear BSD License`
+* `+clear-bsd+`
+* `+Clear BSD License+`
 
 === Description
 
-_____________________________________________________________________________________________________________________________
+____
 A variant of the <a href="/licenses/bsd-3-clause/">BSD 3-Clause
 License</a> that explicitly does not grant any patent rights.
-_____________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -39,7 +39,7 @@ https://blueoakcouncil.org/list[BlueOak License List])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -55,7 +55,7 @@ a|
 * patent-use
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause-clear.txt[choosealicense.com])

@@ -1,18 +1,18 @@
 == Adobe Systems Incorporated Source Code License Agreement (Adobe-2006)
 
 [cols=",",options="header",]
-|==================================================================
+|===
 |Key |Value
 |Fullname |Adobe Systems Incorporated Source Code License Agreement
 |Shortname |Adobe-2006
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|==================================================================
+|===
 
 *Other Names:*
 
-* `adobe-scl`
-* `Adobe Source Code License 2006`
+* `+adobe-scl+`
+* `+Adobe Source Code License 2006+`
 
 === Comments on (easy) usability
 

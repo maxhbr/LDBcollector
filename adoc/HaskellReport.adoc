@@ -1,18 +1,18 @@
 == Haskell Language Report License (HaskellReport)
 
 [cols=",",options="header",]
-|=========================================
+|===
 |Key |Value
 |Fullname |Haskell Language Report License
 |Shortname |HaskellReport
 |Rating |Unknown
 |Classification |NoCopyleft
-|=========================================
+|===
 
 *Other Names:*
 
-* `haskell-report`
-* `Haskell Report License`
+* `+haskell-report+`
+* `+Haskell Report License+`
 
 === Comments on (easy) usability
 

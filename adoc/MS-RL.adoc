@@ -1,28 +1,28 @@
 == Microsoft Reciprocal License (MS-RL)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Microsoft Reciprocal License
 |Shortname |MS-RL
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `Microsoft Reciprocal License (MS-RL)`
-* `Microsoft Reciprocal License (Ms-RL)`
+* `+Microsoft Reciprocal License (MS-RL)+`
+* `+Microsoft Reciprocal License (Ms-RL)+`
 
 === Description
 
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 An open source license with a patent grant similar to the <a
 href="/licenses/ms-pl/">Microsoft Public License</a>, with the
 additional condition that any source code for any derived file be
 provided under this license.
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -41,7 +41,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -59,7 +59,7 @@ a|
 * warranty
 * trademark-use
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt[choosealicense.com])

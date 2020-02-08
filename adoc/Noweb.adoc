@@ -1,13 +1,13 @@
 == Noweb License (Noweb)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Noweb License
 |Shortname |Noweb
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == FreeImage Public License v1.0 (FreeImage)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |FreeImage Public License v1.0
 |Shortname |FreeImage
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `freeimage-1.0`
-* `FreeImage Public License 1.0`
+* `+freeimage-1.0+`
+* `+FreeImage Public License 1.0+`
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == Imlib2 License (Imlib2)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Imlib2 License
 |Shortname |Imlib2
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 === Comments on (easy) usability
 

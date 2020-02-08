@@ -1,22 +1,22 @@
 == IBM Public License v1.0 (IPL-1.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |IBM Public License v1.0
 |Shortname |IPL-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |False
-|====================================================
+|===
 
 *Other Names:*
 
-* `ibmpl-1.0`
-* `IPL 1.0`
-* `IBM Public License, Version 1.0`
-* `License :: OSI Approved :: IBM Public License`
-* `IBM Public License 1.0`
+* `+ibmpl-1.0+`
+* `+IPL 1.0+`
+* `+IBM Public License, Version 1.0+`
+* `+License :: OSI Approved :: IBM Public License+`
+* `+IBM Public License 1.0+`
 
 === Comments on (easy) usability
 

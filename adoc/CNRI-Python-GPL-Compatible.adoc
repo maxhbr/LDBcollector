@@ -1,18 +1,18 @@
 == CNRI Python Open Source GPL Compatible License Agreement (CNRI-Python-GPL-Compatible)
 
 [cols=",",options="header",]
-|==================================================================
+|===
 |Key |Value
 |Fullname |CNRI Python Open Source GPL Compatible License Agreement
 |Shortname |CNRI-Python-GPL-Compatible
 |Rating |Go
 |Classification |NoCopyleft
-|==================================================================
+|===
 
 *Other Names:*
 
-* `cnri-python-1.6.1`
-* `CNRI Python 1.6.1`
+* `+cnri-python-1.6.1+`
+* `+CNRI Python 1.6.1+`
 
 === Comments on (easy) usability
 

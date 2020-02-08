@@ -1,21 +1,21 @@
 == Python License 2.0 (Python-2.0)
 
 [cols=",",options="header",]
-|============================
+|===
 |Key |Value
 |Fullname |Python License 2.0
 |Shortname |Python-2.0
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|============================
+|===
 
 *Other Names:*
 
-* `python`
-* `Python License, Version 2.0`
-* `License :: OSI Approved :: Python Software Foundation License`
-* `Python Software Foundation License 2`
+* `+python+`
+* `+Python License, Version 2.0+`
+* `+License :: OSI Approved :: Python Software Foundation License+`
+* `+Python Software Foundation License 2+`
 
 === Comments on (easy) usability
 

@@ -1,19 +1,19 @@
 == Mozilla Public License 1.1 (MPL-1.1)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Mozilla Public License 1.1
 |Shortname |MPL-1.1
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `MPL 1.1`
-* `Mozilla Public License, Version 1.1`
-* `License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)`
+* `+MPL 1.1+`
+* `+Mozilla Public License, Version 1.1+`
+* `+License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)+`
 
 === Comments on (easy) usability
 

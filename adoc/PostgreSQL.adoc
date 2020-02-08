@@ -1,23 +1,23 @@
 == PostgreSQL License (PostgreSQL)
 
 [cols=",",options="header",]
-|============================
+|===
 |Key |Value
 |Fullname |PostgreSQL License
 |Shortname |PostgreSQL
 |Rating |Go
 |Classification |NoCopyleft
-|============================
+|===
 
 *Other Names:*
 
-* `The PostgreSQL Licence`
+* `+The PostgreSQL Licence+`
 
 === Description
 
-__________________________________________________________________
+____
 A very short, BSD-style license, used specifically for PostgreSQL.
-__________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -44,7 +44,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -59,7 +59,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/postgresql.txt[choosealicense.com])

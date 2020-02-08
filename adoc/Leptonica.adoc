@@ -1,13 +1,13 @@
 == Leptonica License (Leptonica)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Leptonica License
 |Shortname |Leptonica
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

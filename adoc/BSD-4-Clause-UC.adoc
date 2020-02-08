@@ -1,18 +1,18 @@
 == BSD-4-Clause (University of California-Specific) (BSD-4-Clause-UC)
 
 [cols=",",options="header",]
-|==========================================================
+|===
 |Key |Value
 |Fullname |BSD-4-Clause (University of California-Specific)
 |Shortname |BSD-4-Clause-UC
 |Rating |Attention
 |Classification |NoCopyleft
-|==========================================================
+|===
 
 *Other Names:*
 
-* `bsd-original-uc`
-* `BSD-Original-UC`
+* `+bsd-original-uc+`
+* `+BSD-Original-UC+`
 
 === Comments on (easy) usability
 

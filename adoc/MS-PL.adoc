@@ -1,25 +1,25 @@
 == Microsoft Public License (MS-PL)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Microsoft Public License
 |Shortname |MS-PL
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |MaybeCopyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `Microsoft Public License (MS-PL)`
-* `Microsoft Public License (Ms-PL)`
+* `+Microsoft Public License (MS-PL)+`
+* `+Microsoft Public License (Ms-PL)+`
 
 === Description
 
-___________________________________________
+____
 An open source license with a patent grant.
-___________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -46,7 +46,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -62,7 +62,7 @@ a|
 * warranty
 * trademark-use
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt[choosealicense.com])

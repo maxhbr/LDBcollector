@@ -1,12 +1,12 @@
 == Unicode Terms of Use (Unicode-TOU)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Unicode Terms of Use
 |Shortname |Unicode-TOU
 |Rating |Unknown, probably Attention or Stop or No-Go
-|====================================================
+|===
 
 === Comments on (easy) usability
 

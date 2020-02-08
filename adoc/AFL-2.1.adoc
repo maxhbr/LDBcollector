@@ -1,18 +1,18 @@
 == Academic Free License v2.1 (AFL-2.1)
 
 [cols=",",options="header",]
-|====================================
+|===
 |Key |Value
 |Fullname |Academic Free License v2.1
 |Shortname |AFL-2.1
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|====================================
+|===
 
 *Other Names:*
 
-* `AFL 2.1`
+* `+AFL 2.1+`
 
 === Comments on (easy) usability
 

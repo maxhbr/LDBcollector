@@ -1,17 +1,17 @@
 == BSD 3-Clause No Nuclear License (BSD-3-Clause-No-Nuclear-License)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |BSD 3-Clause No Nuclear License
 |Shortname |BSD-3-Clause-No-Nuclear-License
 |Rating |Unknown, probably Attention or Stop or No-Go
-|====================================================
+|===
 
 *Other Names:*
 
-* `sun-bsd-no-nuclear`
-* `Sun BSD-Style with Nuclear Restrictions`
+* `+sun-bsd-no-nuclear+`
+* `+Sun BSD-Style with Nuclear Restrictions+`
 
 === Comments on (easy) usability
 

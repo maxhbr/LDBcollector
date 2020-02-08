@@ -1,17 +1,17 @@
 == Trusster Open Source License (TOSL)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Trusster Open Source License
 |Shortname |TOSL
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `TOSL 1.0a`
+* `+TOSL 1.0a+`
 
 === Comments on (easy) usability
 

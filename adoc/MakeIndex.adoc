@@ -1,17 +1,17 @@
 == MakeIndex License (MakeIndex)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |MakeIndex License
 |Shortname |MakeIndex
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `MakeIndex Distribution Notice`
+* `+MakeIndex Distribution Notice+`
 
 === Comments on (easy) usability
 

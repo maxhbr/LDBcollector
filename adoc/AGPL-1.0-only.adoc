@@ -1,20 +1,20 @@
 == Affero General Public License v1.0 only (AGPL-1.0-only)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Affero General Public License v1.0 only
 |Shortname |AGPL-1.0-only
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |StrongCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `agpl-1.0`
-* `AGPL 1.0`
-* `AGPL-1.0`
-* `Affero General Public License (v. 1)`
+* `+agpl-1.0+`
+* `+AGPL 1.0+`
+* `+AGPL-1.0+`
+* `+Affero General Public License (v. 1)+`
 
 === Comments on (easy) usability
 

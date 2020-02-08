@@ -1,12 +1,12 @@
 == Creative Commons Attribution No Derivatives 3.0 Unported (CC-BY-ND-3.0)
 
 [cols=",",options="header",]
-|==================================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution No Derivatives 3.0 Unported
 |Shortname |CC-BY-ND-3.0
 |Rating |Unknown, probably Attention or Stop or No-Go
-|==================================================================
+|===
 
 === Comments on (easy) usability
 

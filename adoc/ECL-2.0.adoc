@@ -1,28 +1,28 @@
 == Educational Community License v2.0 (ECL-2.0)
 
 [cols=",",options="header",]
-|============================================
+|===
 |Key |Value
 |Fullname |Educational Community License v2.0
 |Shortname |ECL-2.0
 |Rating |Go
 |Classification |NoCopyleft
-|============================================
+|===
 
 *Other Names:*
 
-* `ECL 2.0`
-* `Educational Community License, Version 2.0`
-* `Educational Community License 2.0`
+* `+ECL 2.0+`
+* `+Educational Community License, Version 2.0+`
+* `+Educational Community License 2.0+`
 
 === Description
 
-____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 The Educational Community License version 2.0 ("ECL") consists of the
 Apache 2.0 license, modified to change the scope of the patent grant in
 section 3 to be specific to the needs of the education communities using
 this license.
-____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -39,7 +39,7 @@ Project Wiki])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -57,7 +57,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ecl-2.0.txt[choosealicense.com])

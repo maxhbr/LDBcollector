@@ -1,17 +1,17 @@
 == Condor Public License v1.1 (Condor-1.1)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Condor Public License v1.1
 |Shortname |Condor-1.1
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `Condor Public License 1.1`
+* `+Condor Public License 1.1+`
 
 === Comments on (easy) usability
 

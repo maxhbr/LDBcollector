@@ -1,17 +1,17 @@
 == VOSTROM Public License for Open Source (VOSTROM)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |VOSTROM Public License for Open Source
 |Shortname |VOSTROM
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |StrongCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `VOSTROM Public License`
+* `+VOSTROM Public License+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == Xerox License (Xerox)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Xerox License
 |Shortname |Xerox
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `mit-export-control`
-* `MIT with Export Control`
+* `+mit-export-control+`
+* `+MIT with Export Control+`
 
 === Comments on (easy) usability
 

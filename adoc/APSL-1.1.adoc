@@ -1,17 +1,17 @@
 == Apple Public Source License 1.1 (APSL-1.1)
 
 [cols=",",options="header",]
-|=========================================
+|===
 |Key |Value
 |Fullname |Apple Public Source License 1.1
 |Shortname |APSL-1.1
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=========================================
+|===
 
 *Other Names:*
 
-* `APSL 1.1`
+* `+APSL 1.1+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == feh License (MIT-feh)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |feh License
 |Shortname |MIT-feh
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `mit-ack`
-* `MIT Acknowledgment License`
+* `+mit-ack+`
+* `+MIT Acknowledgment License+`
 
 === Comments on (easy) usability
 

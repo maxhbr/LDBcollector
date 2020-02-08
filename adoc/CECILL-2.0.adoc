@@ -1,17 +1,17 @@
 == CeCILL Free Software License Agreement v2.0 (CECILL-2.0)
 
 [cols=",",options="header",]
-|=====================================================
+|===
 |Key |Value
 |Fullname |CeCILL Free Software License Agreement v2.0
 |Shortname |CECILL-2.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|=====================================================
+|===
 
 *Other Names:*
 
-* `CeCILL 2.0`
+* `+CeCILL 2.0+`
 
 === Comments on (easy) usability
 

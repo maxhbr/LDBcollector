@@ -1,13 +1,13 @@
 == BSD 1-Clause License (BSD-1-Clause)
 
 [cols=",",options="header",]
-|==============================
+|===
 |Key |Value
 |Fullname |BSD 1-Clause License
 |Shortname |BSD-1-Clause
 |Rating |Go
 |Classification |NoCopyleft
-|==============================
+|===
 
 === Comments on (easy) usability
 

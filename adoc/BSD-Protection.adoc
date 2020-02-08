@@ -1,13 +1,13 @@
 == BSD Protection License (BSD-Protection)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |BSD Protection License
 |Shortname |BSD-Protection
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 === Comments on (easy) usability
 

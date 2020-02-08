@@ -1,18 +1,18 @@
 == Reciprocal Public License 1.1 (RPL-1.1)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Reciprocal Public License 1.1
 |Shortname |RPL-1.1
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `RPL 1.1`
-* `Reciprocal Public License, Version 1.1`
+* `+RPL 1.1+`
+* `+Reciprocal Public License, Version 1.1+`
 
 === Comments on (easy) usability
 

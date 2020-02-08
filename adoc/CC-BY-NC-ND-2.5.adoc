@@ -1,7 +1,7 @@
 == Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic (CC-BY-NC-ND-2.5)
 
 [cols=",",options="header",]
-|=======================================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution Non Commercial No Derivatives
 2.5 Generic
@@ -11,7 +11,7 @@
 |Rating |No-Go
 
 |Is Non-Commercial |True
-|=======================================================================
+|===
 
 === Comments on (easy) usability
 

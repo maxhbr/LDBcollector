@@ -1,18 +1,18 @@
 == Enlightenment License (e16) (MIT-advertising)
 
 [cols=",",options="header",]
-|=====================================
+|===
 |Key |Value
 |Fullname |Enlightenment License (e16)
 |Shortname |MIT-advertising
 |Rating |Go
 |Classification |NoCopyleft
-|=====================================
+|===
 
 *Other Names:*
 
-* `enlightenment`
-* `EFL MIT-Style License`
+* `+enlightenment+`
+* `+EFL MIT-Style License+`
 
 === Comments on (easy) usability
 

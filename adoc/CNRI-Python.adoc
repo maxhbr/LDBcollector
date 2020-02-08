@@ -1,20 +1,20 @@
 == CNRI Python License (CNRI-Python)
 
 [cols=",",options="header",]
-|=============================
+|===
 |Key |Value
 |Fullname |CNRI Python License
 |Shortname |CNRI-Python
 |Rating |Go
 |Classification |NoCopyleft
-|=============================
+|===
 
 *Other Names:*
 
-* `cnri-python-1.6`
-* `CNRI Python 1.6`
-* `CNRI portion of the multi-part Python License`
-* `License :: OSI Approved :: Python License (CNRI Python License)`
+* `+cnri-python-1.6+`
+* `+CNRI Python 1.6+`
+* `+CNRI portion of the multi-part Python License+`
+* `+License :: OSI Approved :: Python License (CNRI Python License)+`
 
 === Comments on (easy) usability
 

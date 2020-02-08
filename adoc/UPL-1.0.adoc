@@ -1,21 +1,21 @@
 == Universal Permissive License v1.0 (UPL-1.0)
 
 [cols=",",options="header",]
-|===========================================
+|===
 |Key |Value
 |Fullname |Universal Permissive License v1.0
 |Shortname |UPL-1.0
 |Rating |Go
 |Classification |NoCopyleft
-|===========================================
+|===
 
 *Other Names:*
 
-* `UPL 1.0`
+* `+UPL 1.0+`
 
 === Description
 
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A permissive, OSI and FSF approved, GPL compatible license, expressly
 allowing attribution with just a copyright notice and a short form link
 rather than the full text of the license. Includes an express grant of
@@ -23,7 +23,7 @@ patent rights. Licensed works and modifications may be distributed under
 different terms and without source code, and the patent grant may also
 optionally be expanded to larger works to permit use as a contributor
 license agreement.
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -37,7 +37,7 @@ https://blueoakcouncil.org/list[BlueOak License List])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -53,7 +53,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt[choosealicense.com])

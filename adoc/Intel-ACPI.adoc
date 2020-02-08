@@ -1,17 +1,17 @@
 == Intel ACPI Software License Agreement (Intel-ACPI)
 
 [cols=",",options="header",]
-|===============================================
+|===
 |Key |Value
 |Fullname |Intel ACPI Software License Agreement
 |Shortname |Intel-ACPI
 |Rating |Unknown
 |Classification |NoCopyleft
-|===============================================
+|===
 
 *Other Names:*
 
-* `Intel ACPI SLA`
+* `+Intel ACPI SLA+`
 
 === Comments on (easy) usability
 

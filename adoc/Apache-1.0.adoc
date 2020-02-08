@@ -1,20 +1,20 @@
 == Apache License 1.0 (Apache-1.0)
 
 [cols=",",options="header",]
-|============================
+|===
 |Key |Value
 |Fullname |Apache License 1.0
 |Shortname |Apache-1.0
 |Rating |Go
 |Classification |NoCopyleft
-|============================
+|===
 
 *Other Names:*
 
-* `Apache 1.0`
-* `Apache (v1.0)`
-* `Apache Software License 1.0`
-* `ASL 1.0`
+* `+Apache 1.0+`
+* `+Apache (v1.0)+`
+* `+Apache Software License 1.0+`
+* `+ASL 1.0+`
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == Newsletr License (Newsletr)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Newsletr License
 |Shortname |Newsletr
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

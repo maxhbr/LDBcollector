@@ -1,13 +1,13 @@
 == Afmparse License (Afmparse)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Afmparse License
 |Shortname |Afmparse
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

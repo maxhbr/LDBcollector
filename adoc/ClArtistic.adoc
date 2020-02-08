@@ -1,18 +1,18 @@
 == Clarified Artistic License (ClArtistic)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Clarified Artistic License
 |Shortname |ClArtistic
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `artistic-clarified`
-* `Artistic (clarified)`
+* `+artistic-clarified+`
+* `+Artistic (clarified)+`
 
 === Comments on (easy) usability
 

@@ -1,21 +1,21 @@
 == CeCILL Free Software License Agreement v2.1 (CECILL-2.1)
 
 [cols=",",options="header",]
-|=====================================================
+|===
 |Key |Value
 |Fullname |CeCILL Free Software License Agreement v2.1
 |Shortname |CECILL-2.1
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |False
-|=====================================================
+|===
 
 *Other Names:*
 
-* `CeCILL 2.1`
-* `Cea Cnrs Inria Logiciel Libre License, Version 2.1`
-* `License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)`
-* `CeCILL License 2.1`
+* `+CeCILL 2.1+`
+* `+Cea Cnrs Inria Logiciel Libre License, Version 2.1+`
+* `+License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)+`
+* `+CeCILL License 2.1+`
 
 === Comments on (easy) usability
 

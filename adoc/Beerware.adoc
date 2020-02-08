@@ -1,19 +1,19 @@
 == Beerware License (Beerware)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Beerware License
 |Shortname |Beerware
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|=======================================
+|===
 
 *Other Names:*
 
-* `Beer-Ware License`
-* `Beerware 42`
+* `+Beer-Ware License+`
+* `+Beerware 42+`
 
 === Comments on (easy) usability
 

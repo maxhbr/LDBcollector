@@ -1,13 +1,13 @@
 == Bahyph License (Bahyph)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Bahyph License
 |Shortname |Bahyph
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

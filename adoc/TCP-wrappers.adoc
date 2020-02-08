@@ -1,13 +1,13 @@
 == TCP Wrappers License (TCP-wrappers)
 
 [cols=",",options="header",]
-|==============================
+|===
 |Key |Value
 |Fullname |TCP Wrappers License
 |Shortname |TCP-wrappers
 |Rating |Go
 |Classification |NoCopyleft
-|==============================
+|===
 
 === Comments on (easy) usability
 

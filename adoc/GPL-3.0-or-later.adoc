@@ -1,26 +1,26 @@
 == GNU General Public License v3.0 or later (GPL-3.0-or-later)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |GNU General Public License v3.0 or later
 |Shortname |GPL-3.0-or-later
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `gpl-3.0-plus`
-* `GPL 3.0 or later`
-* `GNU General Public License 3.0`
-* `GPL-3.0+`
-* `GPL3.0+`
-* `GPL3+`
-* `GPL (v3 or later)`
-* `GPL-3.0-only`
-* `GPL-3.0`
+* `+gpl-3.0-plus+`
+* `+GPL 3.0 or later+`
+* `+GNU General Public License 3.0+`
+* `+GPL-3.0++`
+* `+GPL3.0++`
+* `+GPL3++`
+* `+GPL (v3 or later)+`
+* `+GPL-3.0-only+`
+* `+GPL-3.0+`
 
 === Comments on (easy) usability
 

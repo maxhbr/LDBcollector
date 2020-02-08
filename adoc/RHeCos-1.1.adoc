@@ -1,18 +1,18 @@
 == Red Hat eCos Public License v1.1 (RHeCos-1.1)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Red Hat eCos Public License v1.1
 |Shortname |RHeCos-1.1
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `ecosrh-1.1`
-* `Red Hat eCos Public License 1.1`
+* `+ecosrh-1.1+`
+* `+Red Hat eCos Public License 1.1+`
 
 === Comments on (easy) usability
 

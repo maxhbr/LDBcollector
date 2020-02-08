@@ -1,13 +1,13 @@
 == Creative Commons Attribution 2.0 Generic (CC-BY-2.0)
 
 [cols=",",options="header",]
-|==================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution 2.0 Generic
 |Shortname |CC-BY-2.0
 |Rating |Unknown
 |Classification |NoCopyleft
-|==================================================
+|===
 
 === Comments on (easy) usability
 

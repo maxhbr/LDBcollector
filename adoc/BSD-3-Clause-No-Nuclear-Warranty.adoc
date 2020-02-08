@@ -1,13 +1,13 @@
 == BSD 3-Clause No Nuclear Warranty (BSD-3-Clause-No-Nuclear-Warranty)
 
 [cols=",",options="header",]
-|===========================================
+|===
 |Key |Value
 |Fullname |BSD 3-Clause No Nuclear Warranty
 |Shortname |BSD-3-Clause-No-Nuclear-Warranty
 |Rating |Go
 |Classification |NoCopyleft
-|===========================================
+|===
 
 === Comments on (easy) usability
 

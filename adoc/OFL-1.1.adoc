@@ -1,28 +1,28 @@
 == SIL Open Font License 1.1 (OFL-1.1)
 
 [cols=",",options="header",]
-|===================================
+|===
 |Key |Value
 |Fullname |SIL Open Font License 1.1
 |Shortname |OFL-1.1
 |Rating |Unknown
 |Classification |NoCopyleft
-|===================================
+|===
 
 *Other Names:*
 
-* `OFL 1.1`
-* `SIL Open Font License, Version 1.1`
-* `Open Font License 1.1`
+* `+OFL 1.1+`
+* `+SIL Open Font License, Version 1.1+`
+* `+Open Font License 1.1+`
 
 === Description
 
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 The Open Font License (OFL) is maintained by SIL International. It
 attempts to be a compromise between the values of the free software and
 typeface design communities. It is used for almost all open source font
 projects, including those by Adobe, Google and Mozilla.
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -40,7 +40,7 @@ Guidelines])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * private-use
@@ -56,7 +56,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ofl-1.1.txt[choosealicense.com])

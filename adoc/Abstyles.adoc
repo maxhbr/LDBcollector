@@ -1,13 +1,13 @@
 == Abstyles License (Abstyles)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Abstyles License
 |Shortname |Abstyles
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

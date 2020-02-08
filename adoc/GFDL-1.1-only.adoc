@@ -1,18 +1,18 @@
 == GNU Free Documentation License v1.1 only (GFDL-1.1-only)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |GNU Free Documentation License v1.1 only
 |Shortname |GFDL-1.1-only
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `gfdl-1.1`
-* `GFDL 1.1`
+* `+gfdl-1.1+`
+* `+GFDL 1.1+`
 
 === Comments on (easy) usability
 

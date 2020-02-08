@@ -1,18 +1,18 @@
 == SGI Free Software License B v2.0 (SGI-B-2.0)
 
 [cols=",",options="header",]
-|==========================================
+|===
 |Key |Value
 |Fullname |SGI Free Software License B v2.0
 |Shortname |SGI-B-2.0
 |Rating |Go
 |Classification |NoCopyleft
-|==========================================
+|===
 
 *Other Names:*
 
-* `sgi-freeb-2.0`
-* `SGI Free Software License B 2.0`
+* `+sgi-freeb-2.0+`
+* `+SGI Free Software License B 2.0+`
 
 === Comments on (easy) usability
 

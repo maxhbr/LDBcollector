@@ -1,18 +1,18 @@
 == CrystalStacker License (CrystalStacker)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |CrystalStacker License
 |Shortname |CrystalStacker
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `crystal-stacker`
-* `Crystal Stacker License`
+* `+crystal-stacker+`
+* `+Crystal Stacker License+`
 
 === Comments on (easy) usability
 

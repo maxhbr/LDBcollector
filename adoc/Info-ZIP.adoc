@@ -1,13 +1,13 @@
 == Info-ZIP License (Info-ZIP)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Info-ZIP License
 |Shortname |Info-ZIP
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

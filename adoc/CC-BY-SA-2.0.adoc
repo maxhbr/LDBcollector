@@ -1,13 +1,13 @@
 == Creative Commons Attribution Share Alike 2.0 Generic (CC-BY-SA-2.0)
 
 [cols=",",options="header",]
-|==============================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution Share Alike 2.0 Generic
 |Shortname |CC-BY-SA-2.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|==============================================================
+|===
 
 === Comments on (easy) usability
 

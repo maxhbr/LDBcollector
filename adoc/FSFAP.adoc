@@ -1,17 +1,17 @@
 == FSF All Permissive License (FSFAP)
 
 [cols=",",options="header",]
-|====================================
+|===
 |Key |Value
 |Fullname |FSF All Permissive License
 |Shortname |FSFAP
 |Rating |Unknown
 |Classification |NoCopyleft
-|====================================
+|===
 
 *Other Names:*
 
-* `fsf-ap`
+* `+fsf-ap+`
 
 === Comments on (easy) usability
 

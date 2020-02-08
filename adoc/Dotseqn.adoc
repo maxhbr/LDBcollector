@@ -1,13 +1,13 @@
 == Dotseqn License (Dotseqn)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Dotseqn License
 |Shortname |Dotseqn
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

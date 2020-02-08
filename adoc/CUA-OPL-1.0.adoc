@@ -1,18 +1,18 @@
 == CUA Office Public License v1.0 (CUA-OPL-1.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |CUA Office Public License v1.0
 |Shortname |CUA-OPL-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `CUA Office Public License`
-* `CUA Office Public License 1.0`
+* `+CUA Office Public License+`
+* `+CUA Office Public License 1.0+`
 
 === Comments on (easy) usability
 

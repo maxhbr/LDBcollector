@@ -1,18 +1,18 @@
 == SCEA Shared Source License (SCEA)
 
 [cols=",",options="header",]
-|====================================
+|===
 |Key |Value
 |Fullname |SCEA Shared Source License
 |Shortname |SCEA
 |Rating |Unknown
 |Classification |NoCopyleft
-|====================================
+|===
 
 *Other Names:*
 
-* `scea-1.0`
-* `SCEA Shared Source License 1.0`
+* `+scea-1.0+`
+* `+SCEA Shared Source License 1.0+`
 
 === Comments on (easy) usability
 

@@ -1,20 +1,20 @@
 == Motosoto License (Motosoto)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Motosoto License
 |Shortname |Motosoto
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `motosoto-0.9.1`
-* `Motosoto 0.9.1`
-* `Motosoto Open Source License, Version 0.9.1`
-* `License :: OSI Approved :: Motosoto License`
+* `+motosoto-0.9.1+`
+* `+Motosoto 0.9.1+`
+* `+Motosoto Open Source License, Version 0.9.1+`
+* `+License :: OSI Approved :: Motosoto License+`
 
 === Comments on (easy) usability
 

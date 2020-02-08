@@ -1,17 +1,17 @@
 == zlib/libpng License with Acknowledgement (zlib-acknowledgement)
 
 [cols=",",options="header",]
-|==================================================
+|===
 |Key |Value
 |Fullname |zlib/libpng License with Acknowledgement
 |Shortname |zlib-acknowledgement
 |Rating |Go
 |Classification |NoCopyleft
-|==================================================
+|===
 
 *Other Names:*
 
-* `ZLIB License with Acknowledgment`
+* `+ZLIB License with Acknowledgment+`
 
 === Comments on (easy) usability
 

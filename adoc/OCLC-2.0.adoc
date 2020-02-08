@@ -1,17 +1,17 @@
 == OCLC Research Public License 2.0 (OCLC-2.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |OCLC Research Public License 2.0
 |Shortname |OCLC-2.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `The OCLC Research Public License, Version 2.0`
+* `+The OCLC Research Public License, Version 2.0+`
 
 === Comments on (easy) usability
 

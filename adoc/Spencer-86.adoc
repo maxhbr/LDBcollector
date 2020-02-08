@@ -1,18 +1,18 @@
 == Spencer License 86 (Spencer-86)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Spencer License 86
 |Shortname |Spencer-86
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `regexp`
-* `Regexp License`
+* `+regexp+`
+* `+Regexp License+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == Netizen Open Source License (NOSL)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Netizen Open Source License
 |Shortname |NOSL
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `nosl-1.0`
-* `NOSL 1.0`
+* `+nosl-1.0+`
+* `+NOSL 1.0+`
 
 === Comments on (easy) usability
 

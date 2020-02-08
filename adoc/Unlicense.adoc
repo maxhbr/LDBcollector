@@ -1,26 +1,26 @@
 == The Unlicense (Unlicense)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |The Unlicense
 |Shortname |Unlicense
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|==========================
+|===
 
 *Other Names:*
 
-* `Unlicense 1`
+* `+Unlicense 1+`
 
 === Description
 
-_______________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A license with no conditions whatsoever which dedicates works to the
 public domain. Unlicensed works, modifications, and larger works may be
 distributed under different terms and without source code.
-_______________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -45,7 +45,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * private-use
@@ -59,7 +59,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/unlicense.txt[choosealicense.com])

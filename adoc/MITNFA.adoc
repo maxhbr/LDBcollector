@@ -1,18 +1,18 @@
 == MIT +no-false-attribs license (MITNFA)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |MIT +no-false-attribs license
 |Shortname |MITNFA
 |Rating |Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `mit-no-false-attribs`
-* `MIT no false attribution License`
+* `+mit-no-false-attribs+`
+* `+MIT no false attribution License+`
 
 === Comments on (easy) usability
 

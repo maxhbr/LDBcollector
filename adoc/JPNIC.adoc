@@ -1,18 +1,18 @@
 == Japan Network Information Center License (JPNIC)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Japan Network Information Center License
 |Shortname |JPNIC
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `jpnic-idnkit`
-* `JPNIC idnkit License`
+* `+jpnic-idnkit+`
+* `+JPNIC idnkit License+`
 
 === Comments on (easy) usability
 

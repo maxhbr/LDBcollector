@@ -1,20 +1,20 @@
 == Eiffel Forum License v2.0 (EFL-2.0)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Eiffel Forum License v2.0
 |Shortname |EFL-2.0
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `EFL 2.0`
-* `Eiffel Forum License, Version 2`
-* `License :: OSI Approved :: Eiffel Forum License`
-* `Eiffel Forum License 2.0`
+* `+EFL 2.0+`
+* `+Eiffel Forum License, Version 2+`
+* `+License :: OSI Approved :: Eiffel Forum License+`
+* `+Eiffel Forum License 2.0+`
 
 === Comments on (easy) usability
 

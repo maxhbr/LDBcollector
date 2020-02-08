@@ -1,18 +1,18 @@
 == Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B) (OLDAP-2.0)
 
 [cols=",",options="header",]
-|===================================================================
+|===
 |Key |Value
 |Fullname |Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)
 |Shortname |OLDAP-2.0
 |Rating |Go
 |Classification |NoCopyleft
-|===================================================================
+|===
 
 *Other Names:*
 
-* `openldap-2.0`
-* `OpenLDAP Public License 2.0`
+* `+openldap-2.0+`
+* `+OpenLDAP Public License 2.0+`
 
 === Comments on (easy) usability
 

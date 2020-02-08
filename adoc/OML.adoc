@@ -1,18 +1,18 @@
 == Open Market License (OML)
 
 [cols=",",options="header",]
-|=============================
+|===
 |Key |Value
 |Fullname |Open Market License
 |Shortname |OML
 |Rating |Go
 |Classification |NoCopyleft
-|=============================
+|===
 
 *Other Names:*
 
-* `fastcgi-devkit`
-* `FastCGI DevKit`
+* `+fastcgi-devkit+`
+* `+FastCGI DevKit+`
 
 === Comments on (easy) usability
 

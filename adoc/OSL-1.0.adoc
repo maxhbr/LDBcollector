@@ -1,21 +1,21 @@
 == Open Software License 1.0 (OSL-1.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Open Software License 1.0
 |Shortname |OSL-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |StrongCopyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `OSL 1.0`
-* `Open Software License, Version 1.0`
-* `Open Software License 3.0`
-* `OSL-3.0`
+* `+OSL 1.0+`
+* `+Open Software License, Version 1.0+`
+* `+Open Software License 3.0+`
+* `+OSL-3.0+`
 
 === Comments on (easy) usability
 

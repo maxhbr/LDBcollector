@@ -1,18 +1,18 @@
 == Standard ML of New Jersey License (SMLNJ)
 
 [cols=",",options="header",]
-|===========================================
+|===
 |Key |Value
 |Fullname |Standard ML of New Jersey License
 |Shortname |SMLNJ
 |Rating |Go
 |Classification |NoCopyleft
-|===========================================
+|===
 
 *Other Names:*
 
-* `standard-ml-nj`
-* `Standard ML of New Jersey`
+* `+standard-ml-nj+`
+* `+Standard ML of New Jersey+`
 
 === Comments on (easy) usability
 

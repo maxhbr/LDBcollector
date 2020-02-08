@@ -1,17 +1,17 @@
 == Net-SNMP License (Net-SNMP)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Net-SNMP License
 |Shortname |Net-SNMP
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `Net SNMP License`
+* `+Net SNMP License+`
 
 === Comments on (easy) usability
 

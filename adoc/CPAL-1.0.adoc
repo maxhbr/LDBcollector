@@ -1,18 +1,18 @@
 == Common Public Attribution License 1.0 (CPAL-1.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Common Public Attribution License 1.0
 |Shortname |CPAL-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `CPAL 1.0`
-* `Common Public Attribution License Version 1.0 (CPAL-1.0)`
+* `+CPAL 1.0+`
+* `+Common Public Attribution License Version 1.0 (CPAL-1.0)+`
 
 === Comments on (easy) usability
 

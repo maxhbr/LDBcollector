@@ -1,18 +1,18 @@
 == XFree86 License 1.1 (XFree86-1.1)
 
 [cols=",",options="header",]
-|=============================
+|===
 |Key |Value
 |Fullname |XFree86 License 1.1
 |Shortname |XFree86-1.1
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|=============================
+|===
 
 *Other Names:*
 
-* `XFree86 1.1 License`
+* `+XFree86 1.1 License+`
 
 === Comments on (easy) usability
 

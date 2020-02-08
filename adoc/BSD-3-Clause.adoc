@@ -1,35 +1,35 @@
 == BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 [cols=",",options="header",]
-|=================================================
+|===
 |Key |Value
 |Fullname |BSD 3-Clause "New" or "Revised" License
 |Shortname |BSD-3-Clause
 |Rating |Go
 |Classification |NoCopyleft
-|=================================================
+|===
 
 *Other Names:*
 
-* `bsd-new`
-* `BSD-3`
-* `BSD 3-Clause License`
-* `License :: OSI Approved :: BSD License`
-* `Revised BSD License`
-* `Modified BSD License`
-* `New BSD License`
-* `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
-* `BSD (3 clause)`
-* `BSD License (no advertising)`
+* `+bsd-new+`
+* `+BSD-3+`
+* `+BSD 3-Clause License+`
+* `+License :: OSI Approved :: BSD License+`
+* `+Revised BSD License+`
+* `+Modified BSD License+`
+* `+New BSD License+`
+* `+BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)+`
+* `+BSD (3 clause)+`
+* `+BSD License (no advertising)+`
 
 === Description
 
-_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A permissive license similar to the <a
 href="/licenses/bsd-2-clause/">BSD 2-Clause License</a>, but with a 3rd
 clause that prohibits others from using the name of the project or its
 contributors to promote derived products without written consent.
-_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -64,7 +64,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -79,7 +79,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt[choosealicense.com])

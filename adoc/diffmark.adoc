@@ -1,13 +1,13 @@
 == diffmark license (diffmark)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |diffmark license
 |Shortname |diffmark
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == Code Project Open License 1.02 (CPOL-1.02)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Code Project Open License 1.02
 |Shortname |CPOL-1.02
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |MaybeCopyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `CPOL 1.02`
+* `+CPOL 1.02+`
 
 === Comments on (easy) usability
 

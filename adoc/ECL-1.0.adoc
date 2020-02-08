@@ -1,20 +1,20 @@
 == Educational Community License v1.0 (ECL-1.0)
 
 [cols=",",options="header",]
-|============================================
+|===
 |Key |Value
 |Fullname |Educational Community License v1.0
 |Shortname |ECL-1.0
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|============================================
+|===
 
 *Other Names:*
 
-* `ECL 1.0`
-* `Educational Community License, Version 1.0`
-* `Educational Community License 1.0`
+* `+ECL 1.0+`
+* `+Educational Community License, Version 1.0+`
+* `+Educational Community License 1.0+`
 
 === Comments on (easy) usability
 

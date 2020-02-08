@@ -1,20 +1,20 @@
 == Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)
 
 [cols=",",options="header",]
-|=============================================================
+|===
 |Key |Value
 |Fullname |Computer Associates Trusted Open Source License 1.1
 |Shortname |CATOSL-1.1
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|=============================================================
+|===
 
 *Other Names:*
 
-* `ca-tosl-1.1`
-* `CA Trusted Open Source License 1.1`
-* `Computer Associates Trusted Open Source License, Version 1.1`
-* `Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)`
+* `+ca-tosl-1.1+`
+* `+CA Trusted Open Source License 1.1+`
+* `+Computer Associates Trusted Open Source License, Version 1.1+`
+* `+Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)+`
 
 === Comments on (easy) usability
 

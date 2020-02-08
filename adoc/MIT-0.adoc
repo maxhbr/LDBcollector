@@ -1,17 +1,17 @@
 == MIT No Attribution (MIT-0)
 
 [cols=",",options="header",]
-|============================
+|===
 |Key |Value
 |Fullname |MIT No Attribution
 |Shortname |MIT-0
 |Rating |Go
 |Classification |NoCopyleft
-|============================
+|===
 
 *Other Names:*
 
-* `MIT-0-Clause`
+* `+MIT-0-Clause+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == Lawrence Berkeley National Labs BSD variant license (BSD-3-Clause-LBNL)
 
 [cols=",",options="header",]
-|=============================================================
+|===
 |Key |Value
 |Fullname |Lawrence Berkeley National Labs BSD variant license
 |Shortname |BSD-3-Clause-LBNL
 |Rating |Go
 |Classification |NoCopyleft
-|=============================================================
+|===
 
 *Other Names:*
 
-* `lbnl-bsd`
-* `LBNL BSD Variant`
+* `+lbnl-bsd+`
+* `+LBNL BSD Variant+`
 
 === Comments on (easy) usability
 

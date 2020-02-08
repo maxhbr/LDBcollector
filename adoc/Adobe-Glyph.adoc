@@ -1,17 +1,17 @@
 == Adobe Glyph List License (Adobe-Glyph)
 
 [cols=",",options="header",]
-|==================================
+|===
 |Key |Value
 |Fullname |Adobe Glyph List License
 |Shortname |Adobe-Glyph
 |Rating |Unknown
 |Classification |NoCopyleft
-|==================================
+|===
 
 *Other Names:*
 
-* `Adobe Glyph License`
+* `+Adobe Glyph License+`
 
 === Comments on (easy) usability
 

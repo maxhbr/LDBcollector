@@ -1,18 +1,18 @@
 == Independent JPEG Group License (IJG)
 
 [cols=",",options="header",]
-|========================================
+|===
 |Key |Value
 |Fullname |Independent JPEG Group License
 |Shortname |IJG
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|========================================
+|===
 
 *Other Names:*
 
-* `JPEG License`
+* `+JPEG License+`
 
 === Comments on (easy) usability
 

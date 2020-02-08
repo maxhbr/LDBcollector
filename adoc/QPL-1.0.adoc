@@ -1,21 +1,21 @@
 == Q Public License 1.0 (QPL-1.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Q Public License 1.0
 |Shortname |QPL-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |False
-|====================================================
+|===
 
 *Other Names:*
 
-* `QPL 1.0`
-* `The Q Public License Version (QPL-1.0)`
-* `License :: OSI Approved :: Qt Public License (QPL)`
-* `Q Public License`
+* `+QPL 1.0+`
+* `+The Q Public License Version (QPL-1.0)+`
+* `+License :: OSI Approved :: Qt Public License (QPL)+`
+* `+Q Public License+`
 
 === Comments on (easy) usability
 

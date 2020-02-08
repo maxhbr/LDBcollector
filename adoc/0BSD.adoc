@@ -1,26 +1,26 @@
 == BSD Zero Clause License (0BSD)
 
 [cols=",",options="header",]
-|=================================
+|===
 |Key |Value
 |Fullname |BSD Zero Clause License
 |Shortname |0BSD
 |Rating |Go
 |Classification |NoCopyleft
-|=================================
+|===
 
 *Other Names:*
 
-* `bsd-zero`
+* `+bsd-zero+`
 
 === Description
 
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 The BSD Zero Clause license goes further than the BSD 2-Clause license
 to allow you unlimited freedom with the software without requirements to
 include the copyright notice, license text, or disclaimer in either
 source or binary forms.
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -34,7 +34,7 @@ https://blueoakcouncil.org/list[BlueOak License List])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -48,7 +48,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/0bsd.txt[choosealicense.com])

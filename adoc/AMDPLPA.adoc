@@ -1,17 +1,17 @@
 == AMD's plpa_map.c License (AMDPLPA)
 
 [cols=",",options="header",]
-|==================================
+|===
 |Key |Value
 |Fullname |AMD's plpa_map.c License
 |Shortname |AMDPLPA
 |Rating |Go
 |Classification |NoCopyleft
-|==================================
+|===
 
 *Other Names:*
 
-* `AMD PLPA License`
+* `+AMD PLPA License+`
 
 === Comments on (easy) usability
 

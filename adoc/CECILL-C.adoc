@@ -1,17 +1,17 @@
 == CeCILL-C Free Software License Agreement (CECILL-C)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |CeCILL-C Free Software License Agreement
 |Shortname |CECILL-C
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `CeCILL-C License`
+* `+CeCILL-C License+`
 
 === Comments on (easy) usability
 

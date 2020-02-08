@@ -1,21 +1,21 @@
 == Sleepycat License (Sleepycat)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Sleepycat License
 |Shortname |Sleepycat
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
 |Has Patent Hint |False
-|====================================================
+|===
 
 *Other Names:*
 
-* `The Sleepycat License`
-* `License :: OSI Approved :: Sleepycat License`
-* `Berkeley Database License`
-* `Sleepycat Software Product License`
+* `+The Sleepycat License+`
+* `+License :: OSI Approved :: Sleepycat License+`
+* `+Berkeley Database License+`
+* `+Sleepycat Software Product License+`
 
 === Comments on (easy) usability
 

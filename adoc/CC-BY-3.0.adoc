@@ -1,13 +1,13 @@
 == Creative Commons Attribution 3.0 Unported (CC-BY-3.0)
 
 [cols=",",options="header",]
-|===================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution 3.0 Unported
 |Shortname |CC-BY-3.0
 |Rating |Unknown
 |Classification |NoCopyleft
-|===================================================
+|===
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == BSD Source Code Attribution (BSD-Source-Code)
 
 [cols=",",options="header",]
-|=====================================
+|===
 |Key |Value
 |Fullname |BSD Source Code Attribution
 |Shortname |BSD-Source-Code
 |Rating |Go
 |Classification |NoCopyleft
-|=====================================
+|===
 
 === Comments on (easy) usability
 

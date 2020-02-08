@@ -1,20 +1,20 @@
 == Nokia Open Source License (Nokia)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Nokia Open Source License
 |Shortname |Nokia
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `nokos-1.0a`
-* `NOKOS License 1.0a`
-* `Nokia Open Source License, Version 1.0a`
-* `License :: OSI Approved :: Nokia Open Source License`
+* `+nokos-1.0a+`
+* `+NOKOS License 1.0a+`
+* `+Nokia Open Source License, Version 1.0a+`
+* `+License :: OSI Approved :: Nokia Open Source License+`
 
 === Comments on (easy) usability
 

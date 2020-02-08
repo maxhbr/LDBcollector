@@ -1,13 +1,13 @@
 == Amazon Digital Services License (ADSL)
 
 [cols=",",options="header",]
-|=========================================
+|===
 |Key |Value
 |Fullname |Amazon Digital Services License
 |Shortname |ADSL
 |Rating |Go
 |Classification |NoCopyleft
-|=========================================
+|===
 
 === Comments on (easy) usability
 

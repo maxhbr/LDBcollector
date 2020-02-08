@@ -1,23 +1,23 @@
 == Creative Commons Zero v1.0 Universal (CC0-1.0)
 
 [cols=",",options="header",]
-|==============================================
+|===
 |Key |Value
 |Fullname |Creative Commons Zero v1.0 Universal
 |Shortname |CC0-1.0
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|==============================================
+|===
 
 *Other Names:*
 
-* `Creative Commons Zero 1.0`
-* `CC0 1.0`
+* `+Creative Commons Zero 1.0+`
+* `+CC0 1.0+`
 
 === Description
 
-________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 The <a
 href="https://creativecommons.org/publicdomain/zero/1.0/">Creative
 Commons CC0 Public Domain Dedication</a> waives copyright interest in a
@@ -25,7 +25,7 @@ work you've created and dedicates it to the world-wide public domain.
 Use CC0 to opt out of copyright entirely and ensure your work has the
 widest reach. As with the Unlicense and typical software licenses, CC0
 disclaims warranties. CC0 is very similar to the Unlicense.
-________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -40,7 +40,7 @@ https://blueoakcouncil.org/list[BlueOak License List])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -56,7 +56,7 @@ a|
 * patent-use
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc0-1.0.txt[choosealicense.com])

@@ -1,7 +1,7 @@
 == Creative Commons Attribution Non Commercial Share Alike 1.0 Generic (CC-BY-NC-SA-1.0)
 
 [cols=",",options="header",]
-|=======================================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution Non Commercial Share Alike 1.0
 Generic
@@ -11,7 +11,7 @@ Generic
 |Rating |No-Go
 
 |Is Non-Commercial |True
-|=======================================================================
+|===
 
 === Comments on (easy) usability
 

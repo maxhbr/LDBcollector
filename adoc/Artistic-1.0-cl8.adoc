@@ -1,17 +1,17 @@
 == Artistic License 1.0 w/clause 8 (Artistic-1.0-cl8)
 
 [cols=",",options="header",]
-|=========================================
+|===
 |Key |Value
 |Fullname |Artistic License 1.0 w/clause 8
 |Shortname |Artistic-1.0-cl8
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=========================================
+|===
 
 *Other Names:*
 
-* `Artistic 1.0 w/clause 8`
+* `+Artistic 1.0 w/clause 8+`
 
 === Comments on (easy) usability
 

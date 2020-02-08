@@ -1,13 +1,13 @@
 == Caldera License (Caldera)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Caldera License
 |Shortname |Caldera
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
-|====================================================
+|===
 
 === Comments on (easy) usability
 

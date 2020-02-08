@@ -1,17 +1,17 @@
 == Freetype Project License (FTL)
 
 [cols=",",options="header",]
-|==================================
+|===
 |Key |Value
 |Fullname |Freetype Project License
 |Shortname |FTL
 |Rating |Go
 |Classification |NoCopyleft
-|==================================
+|===
 
 *Other Names:*
 
-* `freetype`
+* `+freetype+`
 
 === Comments on (easy) usability
 

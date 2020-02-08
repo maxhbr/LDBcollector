@@ -1,18 +1,18 @@
 == PHP License v3.0 (PHP-3.0)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |PHP License v3.0
 |Shortname |PHP-3.0
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `PHP License 3.0`
-* `The PHP License, Version 3.0`
+* `+PHP License 3.0+`
+* `+The PHP License, Version 3.0+`
 
 === Comments on (easy) usability
 

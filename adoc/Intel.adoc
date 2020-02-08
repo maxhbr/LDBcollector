@@ -1,21 +1,21 @@
 == Intel Open Source License (Intel)
 
 [cols=",",options="header",]
-|===================================
+|===
 |Key |Value
 |Fullname |Intel Open Source License
 |Shortname |Intel
 |Rating |Unknown, no option left
 |Classification |StrongCopyleft
-|===================================
+|===
 
 *Other Names:*
 
-* `intel-bsd-export-control`
-* `Intel BSD - Export Control`
-* `Intel Limited Patent License`
-* `The Intel Open Source License`
-* `License :: OSI Approved :: Intel Open Source License`
+* `+intel-bsd-export-control+`
+* `+Intel BSD - Export Control+`
+* `+Intel Limited Patent License+`
+* `+The Intel Open Source License+`
+* `+License :: OSI Approved :: Intel Open Source License+`
 
 === Comments on (easy) usability
 

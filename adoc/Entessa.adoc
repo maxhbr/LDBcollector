@@ -1,20 +1,20 @@
 == Entessa Public License v1.0 (Entessa)
 
 [cols=",",options="header",]
-|=====================================
+|===
 |Key |Value
 |Fullname |Entessa Public License v1.0
 |Shortname |Entessa
 |Rating |Go
 |Classification |NoCopyleft
-|=====================================
+|===
 
 *Other Names:*
 
-* `entessa-1.0`
-* `Entessa 1.0`
-* `Entessa Public License`
-* `Entessa Public License 1.0`
+* `+entessa-1.0+`
+* `+Entessa 1.0+`
+* `+Entessa Public License+`
+* `+Entessa Public License 1.0+`
 
 === Comments on (easy) usability
 

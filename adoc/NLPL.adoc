@@ -1,13 +1,13 @@
 == No Limit Public License (NLPL)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |No Limit Public License
 |Shortname |NLPL
 |Rating |Unknown, probably Stop or No-Go
 |Classification |StrongCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

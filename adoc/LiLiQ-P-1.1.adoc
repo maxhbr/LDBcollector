@@ -1,17 +1,17 @@
 == Licence Libre du Québec – Permissive version 1.1 (LiLiQ-P-1.1)
 
 [cols=",",options="header",]
-|==========================================================
+|===
 |Key |Value
 |Fullname |Licence Libre du Québec – Permissive version 1.1
 |Shortname |LiLiQ-P-1.1
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|==========================================================
+|===
 
 *Other Names:*
 
-* `Licence Libre du Québec – Permissive, Version 1.1`
+* `+Licence Libre du Québec – Permissive, Version 1.1+`
 
 === Comments on (easy) usability
 

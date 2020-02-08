@@ -1,18 +1,18 @@
 == Open LDAP Public License v2.6 (OLDAP-2.6)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Open LDAP Public License v2.6
 |Shortname |OLDAP-2.6
 |Rating |Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `openldap-2.6`
-* `OpenLDAP Public License 2.6`
+* `+openldap-2.6+`
+* `+OpenLDAP Public License 2.6+`
 
 === Comments on (easy) usability
 

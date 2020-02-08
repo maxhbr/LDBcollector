@@ -1,13 +1,13 @@
 == XSkat License (XSkat)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |XSkat License
 |Shortname |XSkat
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

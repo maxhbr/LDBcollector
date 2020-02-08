@@ -1,13 +1,13 @@
 == Matrix Template Library License (MTLL)
 
 [cols=",",options="header",]
-|=========================================
+|===
 |Key |Value
 |Fullname |Matrix Template Library License
 |Shortname |MTLL
 |Rating |Go
 |Classification |NoCopyleft
-|=========================================
+|===
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == PNG Reference Library version 2 (libpng-2.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |PNG Reference Library version 2
 |Shortname |libpng-2.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `libpng-v2`
-* `LIbpng License v2`
+* `+libpng-v2+`
+* `+LIbpng License v2+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == GNU Free Documentation License v1.2 only (GFDL-1.2-only)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |GNU Free Documentation License v1.2 only
 |Shortname |GFDL-1.2-only
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `gfdl-1.2`
-* `GFDL 1.2`
+* `+gfdl-1.2+`
+* `+GFDL 1.2+`
 
 === Comments on (easy) usability
 

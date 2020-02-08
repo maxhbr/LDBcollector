@@ -1,17 +1,17 @@
 == Mozilla Public License 2.0 (no copyleft exception) (MPL-2.0-no-copyleft-exception)
 
 [cols=",",options="header",]
-|============================================================
+|===
 |Key |Value
 |Fullname |Mozilla Public License 2.0 (no copyleft exception)
 |Shortname |MPL-2.0-no-copyleft-exception
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|============================================================
+|===
 
 *Other Names:*
 
-* `MPL 2.0 with no copyleft exception`
+* `+MPL 2.0 with no copyleft exception+`
 
 === Comments on (easy) usability
 

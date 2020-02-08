@@ -1,13 +1,13 @@
 == Naumen Public License (Naumen)
 
 [cols=",",options="header",]
-|===============================
+|===
 |Key |Value
 |Fullname |Naumen Public License
 |Shortname |Naumen
 |Rating |Go
 |Classification |NoCopyleft
-|===============================
+|===
 
 === Comments on (easy) usability
 

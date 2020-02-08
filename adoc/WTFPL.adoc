@@ -1,27 +1,27 @@
 == Do What The F*ck You Want To Public License (WTFPL)
 
 [cols=",",options="header",]
-|=====================================================
+|===
 |Key |Value
 |Fullname |Do What The F*ck You Want To Public License
 |Shortname |WTFPL
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|=====================================================
+|===
 
 *Other Names:*
 
-* `wtfpl-2.0`
-* `WTFPL 2.0`
-* `Do What The Fuck You Want To Public License (WTFPL) 2`
+* `+wtfpl-2.0+`
+* `+WTFPL 2.0+`
+* `+Do What The Fuck You Want To Public License (WTFPL) 2+`
 
 === Description
 
-_____________________________________________________________________________________________________
+____
 The easiest license out there. It gives the user permissions to do
 whatever they want with your code.
-_____________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -46,7 +46,7 @@ License List])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -58,7 +58,7 @@ a|
 
 a|
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/wtfpl.txt[choosealicense.com])

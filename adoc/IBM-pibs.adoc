@@ -1,18 +1,18 @@
 == IBM PowerPC Initialization and Boot Software (IBM-pibs)
 
 [cols=",",options="header",]
-|======================================================
+|===
 |Key |Value
 |Fullname |IBM PowerPC Initialization and Boot Software
 |Shortname |IBM-pibs
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|======================================================
+|===
 
 *Other Names:*
 
-* `IBM PowerPC Software`
+* `+IBM PowerPC Software+`
 
 === Comments on (easy) usability
 

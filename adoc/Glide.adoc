@@ -1,17 +1,17 @@
 == 3dfx Glide License (Glide)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |3dfx Glide License
 |Shortname |Glide
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `3DFX GLIDE`
+* `+3DFX GLIDE+`
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == BSD 2-Clause FreeBSD License (BSD-2-Clause-FreeBSD)
 
 [cols=",",options="header",]
-|======================================
+|===
 |Key |Value
 |Fullname |BSD 2-Clause FreeBSD License
 |Shortname |BSD-2-Clause-FreeBSD
 |Rating |Go
 |Classification |NoCopyleft
-|======================================
+|===
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == Cube License (Cube)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Cube License
 |Shortname |Cube
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

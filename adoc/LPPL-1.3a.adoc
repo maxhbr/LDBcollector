@@ -1,17 +1,17 @@
 == LaTeX Project Public License v1.3a (LPPL-1.3a)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |LaTeX Project Public License v1.3a
 |Shortname |LPPL-1.3a
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `LPPL 1.3a`
+* `+LPPL 1.3a+`
 
 === Comments on (easy) usability
 

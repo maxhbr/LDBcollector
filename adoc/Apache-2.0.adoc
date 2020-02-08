@@ -1,32 +1,32 @@
 == Apache License 2.0 (Apache-2.0)
 
 [cols=",",options="header",]
-|============================
+|===
 |Key |Value
 |Fullname |Apache License 2.0
 |Shortname |Apache-2.0
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|============================
+|===
 
 *Other Names:*
 
-* `Apache 2.0`
-* `Apache License, Version 2.0`
-* `License :: OSI Approved :: Apache Software License`
-* `Apache Software License 2.0`
-* `Apache (v2.0)`
-* `ASL 2.0`
+* `+Apache 2.0+`
+* `+Apache License, Version 2.0+`
+* `+License :: OSI Approved :: Apache Software License+`
+* `+Apache Software License 2.0+`
+* `+Apache (v2.0)+`
+* `+ASL 2.0+`
 
 === Description
 
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A permissive license whose main conditions require preservation of
 copyright and license notices. Contributors provide an express grant of
 patent rights. Licensed works, modifications, and larger works may be
 distributed under different terms and without source code.
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -52,7 +52,7 @@ Project Wiki])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -70,7 +70,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt[choosealicense.com])

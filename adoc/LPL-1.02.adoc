@@ -1,19 +1,19 @@
 == Lucent Public License v1.02 (LPL-1.02)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Lucent Public License v1.02
 |Shortname |LPL-1.02
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `lucent-pl-1.02`
-* `Lucent Public License 1.02`
-* `Lucent Public License, Version 1.02`
+* `+lucent-pl-1.02+`
+* `+Lucent Public License 1.02+`
+* `+Lucent Public License, Version 1.02+`
 
 === Comments on (easy) usability
 

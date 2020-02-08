@@ -1,19 +1,19 @@
 == OpenSSL License (OpenSSL)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |OpenSSL License
 |Shortname |OpenSSL
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |MaybeCopyleft
 |Has Patent Hint |False
-|====================================================
+|===
 
 *Other Names:*
 
-* `openssl-ssleay`
-* `OpenSSL/SSLeay License`
+* `+openssl-ssleay+`
+* `+OpenSSL/SSLeay License+`
 
 === Comments on (easy) usability
 

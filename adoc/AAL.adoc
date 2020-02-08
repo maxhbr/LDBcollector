@@ -1,19 +1,19 @@
 == Attribution Assurance License (AAL)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Attribution Assurance License
 |Shortname |AAL
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `attribution`
-* `License :: OSI Approved :: Attribution Assurance License`
-* `Attribution Assurance Licenses`
+* `+attribution+`
+* `+License :: OSI Approved :: Attribution Assurance License+`
+* `+Attribution Assurance Licenses+`
 
 === Comments on (easy) usability
 

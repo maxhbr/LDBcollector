@@ -1,13 +1,13 @@
 == Sax Public Domain Notice (SAX-PD)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Sax Public Domain Notice
 |Shortname |SAX-PD
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
-|====================================================
+|===
 
 === Comments on (easy) usability
 

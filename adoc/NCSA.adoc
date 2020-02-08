@@ -1,25 +1,25 @@
 == University of Illinois/NCSA Open Source License (NCSA)
 
 [cols=",",options="header",]
-|=========================================================
+|===
 |Key |Value
 |Fullname |University of Illinois/NCSA Open Source License
 |Shortname |NCSA
 |Rating |Go
 |Classification |NoCopyleft
-|=========================================================
+|===
 
 *Other Names:*
 
-* `uoi-ncsa`
-* `NCSA Open Source License`
-* `UIUC/NCSA`
-* `The University of Illinois/NCSA Open Source License`
-* `License :: OSI Approved :: University of Illinois/NCSA Open Source License`
+* `+uoi-ncsa+`
+* `+NCSA Open Source License+`
+* `+UIUC/NCSA+`
+* `+The University of Illinois/NCSA Open Source License+`
+* `+License :: OSI Approved :: University of Illinois/NCSA Open Source License+`
 
 === Description
 
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 The University of Illinois/NCSA Open Source License, or UIUC license, is
 a permissive free software license, based on the <a
 href="/licenses/mit/">MIT/X11 license</a> and the <a
@@ -28,7 +28,7 @@ include requiring the preservation of copyright and license notices both
 in source and in binary distributions and the prohibition of using the
 names of the authors or the project organization to promote or endorse
 derived products.
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -45,7 +45,7 @@ https://blueoakcouncil.org/list[BlueOak License List])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -60,7 +60,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ncsa.txt[choosealicense.com])

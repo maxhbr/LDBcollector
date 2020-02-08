@@ -1,13 +1,13 @@
 == Crossword License (Crossword)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Crossword License
 |Shortname |Crossword
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

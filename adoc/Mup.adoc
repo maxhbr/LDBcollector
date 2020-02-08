@@ -1,13 +1,13 @@
 == Mup License (Mup)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Mup License
 |Shortname |Mup
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

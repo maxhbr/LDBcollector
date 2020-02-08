@@ -1,18 +1,18 @@
 == Technische Universitaet Berlin License 1.0 (TU-Berlin-1.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Technische Universitaet Berlin License 1.0
 |Shortname |TU-Berlin-1.0
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `tu-berlin`
-* `TU Berlin License 1.0`
+* `+tu-berlin+`
+* `+TU Berlin License 1.0+`
 
 === Comments on (easy) usability
 

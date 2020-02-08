@@ -1,18 +1,18 @@
 == Open LDAP Public License v2.0.1 (OLDAP-2.0.1)
 
 [cols=",",options="header",]
-|=========================================
+|===
 |Key |Value
 |Fullname |Open LDAP Public License v2.0.1
 |Shortname |OLDAP-2.0.1
 |Rating |Go
 |Classification |NoCopyleft
-|=========================================
+|===
 
 *Other Names:*
 
-* `openldap-2.0.1`
-* `OpenLDAP Public License 2.0.1`
+* `+openldap-2.0.1+`
+* `+OpenLDAP Public License 2.0.1+`
 
 === Comments on (easy) usability
 

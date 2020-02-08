@@ -1,18 +1,18 @@
 == Aladdin Free Public License (Aladdin)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Aladdin Free Public License
 |Shortname |Aladdin
 |Rating |Unknown, probably Stop or No-Go
 |Classification |Copyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `afpl-8.0`
-* `Aladdin FPL v8`
+* `+afpl-8.0+`
+* `+Aladdin FPL v8+`
 
 === Comments on (easy) usability
 

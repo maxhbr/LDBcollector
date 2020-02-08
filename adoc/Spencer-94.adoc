@@ -1,18 +1,18 @@
 == Spencer License 94 (Spencer-94)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Spencer License 94
 |Shortname |Spencer-94
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `hs-regexp`
-* `Henry Spencer Regexp License`
+* `+hs-regexp+`
+* `+Henry Spencer Regexp License+`
 
 === Comments on (easy) usability
 

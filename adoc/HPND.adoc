@@ -1,17 +1,17 @@
 == Historical Permission Notice and Disclaimer (HPND)
 
 [cols=",",options="header",]
-|=====================================================
+|===
 |Key |Value
 |Fullname |Historical Permission Notice and Disclaimer
 |Shortname |HPND
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=====================================================
+|===
 
 *Other Names:*
 
-* `historical`
+* `+historical+`
 
 === Comments on (easy) usability
 

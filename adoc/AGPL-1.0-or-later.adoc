@@ -1,18 +1,18 @@
 == Affero General Public License v1.0 or later (AGPL-1.0-or-later)
 
 [cols=",",options="header",]
-|=====================================================
+|===
 |Key |Value
 |Fullname |Affero General Public License v1.0 or later
 |Shortname |AGPL-1.0-or-later
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|=====================================================
+|===
 
 *Other Names:*
 
-* `agpl-1.0-plus`
-* `AGPL 1.0 or later`
+* `+agpl-1.0-plus+`
+* `+AGPL 1.0 or later+`
 
 === Comments on (easy) usability
 

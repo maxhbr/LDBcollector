@@ -1,17 +1,17 @@
 == PHP License v3.01 (PHP-3.01)
 
 [cols=",",options="header",]
-|===========================
+|===
 |Key |Value
 |Fullname |PHP License v3.01
 |Shortname |PHP-3.01
 |Rating |Go
 |Classification |NoCopyleft
-|===========================
+|===
 
 *Other Names:*
 
-* `PHP License 3.01`
+* `+PHP License 3.01+`
 
 === Comments on (easy) usability
 

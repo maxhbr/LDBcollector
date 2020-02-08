@@ -1,13 +1,13 @@
 == TCL/TK License (TCL)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |TCL/TK License
 |Shortname |TCL
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

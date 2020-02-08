@@ -1,13 +1,13 @@
 == Glulxe License (Glulxe)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Glulxe License
 |Shortname |Glulxe
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

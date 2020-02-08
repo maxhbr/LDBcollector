@@ -1,20 +1,20 @@
 == Ricoh Source Code Public License (RSCPL)
 
 [cols=",",options="header",]
-|==========================================
+|===
 |Key |Value
 |Fullname |Ricoh Source Code Public License
 |Shortname |RSCPL
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|==========================================
+|===
 
 *Other Names:*
 
-* `ricoh-1.0`
-* `Ricoh Source Code Public License 1.0`
-* `The Ricoh Source Code Public License`
-* `License :: OSI Approved :: Ricoh Source Code Public License`
+* `+ricoh-1.0+`
+* `+Ricoh Source Code Public License 1.0+`
+* `+The Ricoh Source Code Public License+`
+* `+License :: OSI Approved :: Ricoh Source Code Public License+`
 
 === Comments on (easy) usability
 

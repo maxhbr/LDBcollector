@@ -1,17 +1,17 @@
 == Zimbra Public License v1.4 (Zimbra-1.4)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Zimbra Public License v1.4
 |Shortname |Zimbra-1.4
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `ZPL 1.4`
+* `+ZPL 1.4+`
 
 === Comments on (easy) usability
 

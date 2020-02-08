@@ -1,18 +1,18 @@
 == Open LDAP Public License v2.7 (OLDAP-2.7)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Open LDAP Public License v2.7
 |Shortname |OLDAP-2.7
 |Rating |Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `openldap-2.7`
-* `OpenLDAP Public License 2.7`
+* `+openldap-2.7+`
+* `+OpenLDAP Public License 2.7+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == RSA Message-Digest License (RSA-MD)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |RSA Message-Digest License
 |Shortname |RSA-MD
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `rsa-md5`
-* `RSA-MD5 License`
+* `+rsa-md5+`
+* `+RSA-MD5 License+`
 
 === Comments on (easy) usability
 

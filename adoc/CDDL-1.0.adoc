@@ -1,19 +1,19 @@
 == Common Development and Distribution License 1.0 (CDDL-1.0)
 
 [cols=",",options="header",]
-|=========================================================
+|===
 |Key |Value
 |Fullname |Common Development and Distribution License 1.0
 |Shortname |CDDL-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |True
-|=========================================================
+|===
 
 *Other Names:*
 
-* `CDDL 1.0`
-* `Common Development and Distribution License, Version 1.0`
+* `+CDDL 1.0+`
+* `+Common Development and Distribution License, Version 1.0+`
 
 === Comments on (easy) usability
 

@@ -1,17 +1,17 @@
 == Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
 
 [cols=",",options="header",]
-|====================================================================
+|===
 |Key |Value
 |Fullname |Unicode License Agreement - Data Files and Software (2015)
 |Shortname |Unicode-DFS-2015
 |Rating |Go
 |Classification |NoCopyleft
-|====================================================================
+|===
 
 *Other Names:*
 
-* `Unicode DFS 2015`
+* `+Unicode DFS 2015+`
 
 === Comments on (easy) usability
 

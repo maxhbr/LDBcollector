@@ -1,17 +1,17 @@
 == Academic Free License v1.1 (AFL-1.1)
 
 [cols=",",options="header",]
-|====================================
+|===
 |Key |Value
 |Fullname |Academic Free License v1.1
 |Shortname |AFL-1.1
 |Rating |Go
 |Classification |NoCopyleft
-|====================================
+|===
 
 *Other Names:*
 
-* `AFL 1.1`
+* `+AFL 1.1+`
 
 === Comments on (easy) usability
 

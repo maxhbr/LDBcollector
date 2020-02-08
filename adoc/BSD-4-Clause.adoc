@@ -1,19 +1,19 @@
 == BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 [cols=",",options="header",]
-|==================================================
+|===
 |Key |Value
 |Fullname |BSD 4-Clause "Original" or "Old" License
 |Shortname |BSD-4-Clause
 |Rating |Attention
 |Classification |NoCopyleft
-|==================================================
+|===
 
 *Other Names:*
 
-* `bsd-original`
-* `BSD-Original`
-* `BSD License (original)`
+* `+bsd-original+`
+* `+BSD-Original+`
+* `+BSD License (original)+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == Open LDAP Public License v1.4 (OLDAP-1.4)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Open LDAP Public License v1.4
 |Shortname |OLDAP-1.4
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `openldap-1.4`
-* `OpenLDAP Public License 1.4`
+* `+openldap-1.4+`
+* `+OpenLDAP Public License 1.4+`
 
 === Comments on (easy) usability
 

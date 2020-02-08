@@ -1,13 +1,13 @@
 == DSDP License (DSDP)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |DSDP License
 |Shortname |DSDP
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

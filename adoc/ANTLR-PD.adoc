@@ -1,13 +1,13 @@
 == ANTLR Software Rights Notice (ANTLR-PD)
 
 [cols=",",options="header",]
-|======================================
+|===
 |Key |Value
 |Fullname |ANTLR Software Rights Notice
 |Shortname |ANTLR-PD
 |Rating |Go
 |Classification |NoCopyleft
-|======================================
+|===
 
 === Comments on (easy) usability
 

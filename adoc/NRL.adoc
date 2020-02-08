@@ -1,13 +1,13 @@
 == NRL License (NRL)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |NRL License
 |Shortname |NRL
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

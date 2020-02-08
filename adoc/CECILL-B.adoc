@@ -1,17 +1,17 @@
 == CeCILL-B Free Software License Agreement (CECILL-B)
 
 [cols=",",options="header",]
-|==================================================
+|===
 |Key |Value
 |Fullname |CeCILL-B Free Software License Agreement
 |Shortname |CECILL-B
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|==================================================
+|===
 
 *Other Names:*
 
-* `CeCILL-B License`
+* `+CeCILL-B License+`
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == Zed License (Zed)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Zed License
 |Shortname |Zed
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

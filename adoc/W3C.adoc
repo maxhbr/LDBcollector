@@ -1,22 +1,22 @@
 == W3C Software Notice and License (2002-12-31) (W3C)
 
 [cols=",",options="header",]
-|======================================================
+|===
 |Key |Value
 |Fullname |W3C Software Notice and License (2002-12-31)
 |Shortname |W3C
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|======================================================
+|===
 
 *Other Names:*
 
-* `W3C Software Notice and License`
-* `The W3C Software Notice and License`
-* `License :: OSI Approved :: W3C License`
-* `W3C Software Notice and License 20021231`
-* `W3C License`
+* `+W3C Software Notice and License+`
+* `+The W3C Software Notice and License+`
+* `+License :: OSI Approved :: W3C License+`
+* `+W3C Software Notice and License 20021231+`
+* `+W3C License+`
 
 === Comments on (easy) usability
 

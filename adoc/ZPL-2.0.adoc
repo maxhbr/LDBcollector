@@ -1,20 +1,20 @@
 == Zope Public License 2.0 (ZPL-2.0)
 
 [cols=",",options="header",]
-|=================================
+|===
 |Key |Value
 |Fullname |Zope Public License 2.0
 |Shortname |ZPL-2.0
 |Rating |Go
 |Classification |NoCopyleft
-|=================================
+|===
 
 *Other Names:*
 
-* `ZPL 2.0`
-* `The Zope Public License, Version 2.0`
-* `Zope-2.0`
-* `License :: OSI Approved :: Zope Public License`
+* `+ZPL 2.0+`
+* `+The Zope Public License, Version 2.0+`
+* `+Zope-2.0+`
+* `+License :: OSI Approved :: Zope Public License+`
 
 === Comments on (easy) usability
 

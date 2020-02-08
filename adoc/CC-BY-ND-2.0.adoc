@@ -1,12 +1,12 @@
 == Creative Commons Attribution No Derivatives 2.0 Generic (CC-BY-ND-2.0)
 
 [cols=",",options="header",]
-|=================================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution No Derivatives 2.0 Generic
 |Shortname |CC-BY-ND-2.0
 |Rating |Unknown, probably Attention or Stop or No-Go
-|=================================================================
+|===
 
 === Comments on (easy) usability
 

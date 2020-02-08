@@ -1,13 +1,13 @@
 == Borceux license (Borceux)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Borceux license
 |Shortname |Borceux
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

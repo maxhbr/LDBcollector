@@ -1,37 +1,37 @@
 == GNU General Public License v2.0 only (GPL-2.0-only)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |GNU General Public License v2.0 only
 |Shortname |GPL-2.0-only
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `gpl-2.0`
-* `GPL 2.0`
-* `GNU General Public License 2.0`
-* `GPL-2.0`
-* `GPL2.0`
-* `GPL2`
-* `GPL (v2)`
-* `GNU GPLv2`
-* `GNU General Public License, Version 2.0`
-* `License :: OSI Approved :: GNU General Public License v2 (GPLv2)`
-* `GPL-2.0-or-later`
+* `+gpl-2.0+`
+* `+GPL 2.0+`
+* `+GNU General Public License 2.0+`
+* `+GPL-2.0+`
+* `+GPL2.0+`
+* `+GPL2+`
+* `+GPL (v2)+`
+* `+GNU GPLv2+`
+* `+GNU General Public License, Version 2.0+`
+* `+License :: OSI Approved :: GNU General Public License v2 (GPLv2)+`
+* `+GPL-2.0-or-later+`
 
 === Description
 
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 The GNU GPL is the most widely used free software license and has a
 strong copyleft requirement. When distributing derived works, the source
 code of the work must be made available under the same license. There
 are multiple variants of the GNU GPL, each with different requirements.
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -53,7 +53,7 @@ Policy])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -71,7 +71,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-2.0.txt[choosealicense.com])

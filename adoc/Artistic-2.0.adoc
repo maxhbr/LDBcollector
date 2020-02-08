@@ -1,29 +1,29 @@
 == Artistic License 2.0 (Artistic-2.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Artistic License 2.0
 |Shortname |Artistic-2.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |False
-|====================================================
+|===
 
 *Other Names:*
 
-* `Artistic 2.0`
-* `Artistic License, Version 2.0`
-* `License :: OSI Approved :: Artistic License`
-* `Artistic License (v. 2.0)`
+* `+Artistic 2.0+`
+* `+Artistic License, Version 2.0+`
+* `+License :: OSI Approved :: Artistic License+`
+* `+Artistic License (v. 2.0)+`
 
 === Description
 
-___________________________________________________________________________________________________________________________________________________________________
+____
 Heavily favored by the Perl community, the Artistic license requires
 that modified versions of the software do not prevent users from running
 the standard version.
-___________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -51,7 +51,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -69,7 +69,7 @@ a|
 * trademark-use
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/artistic-2.0.txt[choosealicense.com])

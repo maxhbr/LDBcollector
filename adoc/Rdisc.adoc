@@ -1,13 +1,13 @@
 == Rdisc License (Rdisc)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Rdisc License
 |Shortname |Rdisc
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

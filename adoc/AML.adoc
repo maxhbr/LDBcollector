@@ -1,13 +1,13 @@
 == Apple MIT License (AML)
 
 [cols=",",options="header",]
-|===========================
+|===
 |Key |Value
 |Fullname |Apple MIT License
 |Shortname |AML
 |Rating |Go
 |Classification |NoCopyleft
-|===========================
+|===
 
 === Comments on (easy) usability
 

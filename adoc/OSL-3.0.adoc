@@ -1,29 +1,29 @@
 == Open Software License 3.0 (OSL-3.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Open Software License 3.0
 |Shortname |OSL-3.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |StrongCopyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `OSL 3.0`
-* `Open Software License, Version 3.0`
-* `OSL-1.0`
+* `+OSL 3.0+`
+* `+Open Software License, Version 3.0+`
+* `+OSL-1.0+`
 
 === Description
 
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 OSL 3.0 is a copyleft license that does not require reciprocal licensing
 on linked works. It also provides an express grant of patent rights from
 contributors to users, with a termination clause triggered if a user
 files a patent infringement lawsuit.
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -45,7 +45,7 @@ Policy])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -66,7 +66,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/osl-3.0.txt[choosealicense.com])

@@ -1,18 +1,18 @@
 == mpich2 License (mpich2)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |mpich2 License
 |Shortname |mpich2
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `mpich`
-* `MPICH License`
+* `+mpich+`
+* `+MPICH License+`
 
 === Comments on (easy) usability
 

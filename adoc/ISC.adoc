@@ -1,29 +1,29 @@
 == ISC License (ISC)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |ISC License
 |Shortname |ISC
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|==========================
+|===
 
 *Other Names:*
 
-* `ISC License (ISC)`
-* `License :: OSI Approved :: ISC License (ISCL)`
+* `+ISC License (ISC)+`
+* `+License :: OSI Approved :: ISC License (ISCL)+`
 
 === Description
 
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A permissive license lets people do anything with your code with proper
 attribution and without warranty. The ISC license is functionally
 equivalent to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause</a> and
 <a href="/licenses/mit/">MIT</a> licenses, removing some language that
 is no longer necessary.
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -50,7 +50,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -65,7 +65,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt[choosealicense.com])

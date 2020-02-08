@@ -1,30 +1,30 @@
 == Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)
 
 [cols=",",options="header",]
-|====================================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution Share Alike 4.0 International
 |Shortname |CC-BY-SA-4.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
 |Has Patent Hint |False
-|====================================================================
+|===
 
 *Other Names:*
 
-* `CC-BY-SA 4.0`
-* `Creative Commons Attribution Share-Alike 4.0`
+* `+CC-BY-SA 4.0+`
+* `+Creative Commons Attribution Share-Alike 4.0+`
 
 === Description
 
-______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 Similar to <a href='/licenses/cc-by-4.0/'>CC-BY-4.0</a> but requires
 derivatives be distributed under the same or a similar, <a
 href="https://creativecommons.org/compatiblelicenses/">compatible</a>
 license. Frequently used for media assets and educational materials. A
 previous version is the default license for Wikipedia and other
 Wikimedia projects. Not recommended for software.
-______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -41,7 +41,7 @@ Policy])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -60,7 +60,7 @@ a|
 * patent-use
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-sa-4.0.txt[choosealicense.com])

@@ -1,13 +1,13 @@
 == curl License (curl)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |curl License
 |Shortname |curl
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

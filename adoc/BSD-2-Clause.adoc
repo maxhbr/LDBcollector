@@ -1,33 +1,33 @@
 == BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 [cols=",",options="header",]
-|===========================================
+|===
 |Key |Value
 |Fullname |BSD 2-Clause "Simplified" License
 |Shortname |BSD-2-Clause
 |Rating |Go
 |Classification |NoCopyleft
-|===========================================
+|===
 
 *Other Names:*
 
-* `bsd-simplified`
-* `BSD-2`
-* `BSD 2-Clause License`
-* `Simplified BSD License`
-* `FreeBSD License`
-* `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
-* `BSD (2 clause)`
-* `BSD License (two clause)`
+* `+bsd-simplified+`
+* `+BSD-2+`
+* `+BSD 2-Clause License+`
+* `+Simplified BSD License+`
+* `+FreeBSD License+`
+* `+BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)+`
+* `+BSD (2 clause)+`
+* `+BSD License (two clause)+`
 
 === Description
 
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A permissive license that comes in two variants, the <a
 href="/licenses/bsd-2-clause/">BSD 2-Clause</a> and <a
 href="/licenses/bsd-3-clause/">BSD 3-Clause</a>. Both have very minute
 differences to the MIT license.
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -44,7 +44,7 @@ Project Wiki])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -59,7 +59,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt[choosealicense.com])

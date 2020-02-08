@@ -1,39 +1,39 @@
 == GNU General Public License v3.0 only (GPL-3.0-only)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |GNU General Public License v3.0 only
 |Shortname |GPL-3.0-only
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `gpl-3.0`
-* `GPL 3.0`
-* `GNU General Public License 3.0`
-* `GPL-3.0`
-* `GPL3.0`
-* `GPL3`
-* `GPL (v3)`
-* `GNU GPLv3`
-* `GNU General Public License, Version 3.0`
-* `License :: OSI Approved :: GNU General Public License (GPL)`
-* `License :: OSI Approved :: GNU General Public License v3 (GPLv3)`
-* `GPL-3.0-or-later`
+* `+gpl-3.0+`
+* `+GPL 3.0+`
+* `+GNU General Public License 3.0+`
+* `+GPL-3.0+`
+* `+GPL3.0+`
+* `+GPL3+`
+* `+GPL (v3)+`
+* `+GNU GPLv3+`
+* `+GNU General Public License, Version 3.0+`
+* `+License :: OSI Approved :: GNU General Public License (GPL)+`
+* `+License :: OSI Approved :: GNU General Public License v3 (GPLv3)+`
+* `+GPL-3.0-or-later+`
 
 === Description
 
-____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 Permissions of this strong copyleft license are conditioned on making
 available complete source code of licensed works and modifications,
 which include larger works using a licensed work, under the same
 license. Copyright and license notices must be preserved. Contributors
 provide an express grant of patent rights.
-____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -57,7 +57,7 @@ Policy])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -76,7 +76,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt[choosealicense.com])
@@ -99,63 +99,147 @@ https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29
 
 ....
 USE CASE Source code delivery
-	YOU MUST Highlight Copyright notices
-	YOU MUST NOT Modify Warranty disclaimer
-	YOU MUST Forward License text
-	IF Source code modification OR Combined work
-		YOU MUST Grant License
-			ATTRIBUTE Original license
-		YOU MUST Provide Modification notice
-		YOU MUST Provide Modification date
-		IF Interactive
-			YOU MUST Display Legal notices
-	IF Installed
-		YOU MUST Provide Installation scripts
-		YOU MUST Provide Installation information
-		YOU MUST NOT Impede Installation
-	YOU MUST NOT Impede Usage
-USE CASE Binary delivery
-	YOU MUST Highlight Copyright notices
+	YOU MUST Provide Copyright notice
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST NOT Modify License notices
 	YOU MUST NOT Modify Warranty disclaimer
 	YOU MUST Provide License text
-	EITHER
-		YOU MUST Include Source code
-			ATTRIBUTE Customary medium
-		IF Source code modification OR Combined work
-			YOU MUST Grant License
-				ATTRIBUTE Original license
-			YOU MUST Provide Modification notice
-			YOU MUST Provide Modification date
-			IF Interactive
-				YOU MUST Display Legal notices
-		IF Installed
-			YOU MUST Provide Installation scripts
-			YOU MUST Provide Installation information
-			YOU MUST NOT Impede Installation
-	OR
-		YOU MUST Provide Delayed source code delivery
-		YOU MUST Provide Written offer
-			ATTRIBUTE Duration At least 3 years
-			ATTRIBUTE Duration As long as product is supported
+		IF Non-permissive Additional terms
 			EITHER
-				ATTRIBUTE Customary medium
-				ATTRIBUTE No profit
+				YOU MUST Include Additional terms In Source code
 			OR
+				YOU MUST Reference Additional terms In Source code
+			YOU MUST Provide Additional terms
+			USE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later
+				YOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later
+	IF Software modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
+		YOU MUST Provide Modification date
+		YOU MUST Provide Legal notices
+			ATTRIBUTE Highlighted
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		IF Interactive AND Displayed License announcement
+			YOU MUST Display Appropriate legal notices
+				ATTRIBUTE Highlighted
+	YOU MUST NOT Restrict Granted rights
+		EXCEPT IF NOT Permitted By Additional terms
+	YOU MUST NOT Litigate Circumvention
+USE CASE Binary delivery
+	YOU MUST Provide Copyright notice
+		ATTRIBUTE Highlighted
+		ATTRIBUTE Appropriately
+	YOU MUST NOT Modify License notices
+	YOU MUST NOT Modify Warranty disclaimer
+	YOU MUST Provide License text
+		IF Non-permissive Additional terms
+			EITHER
+				YOU MUST Include Additional terms In Source code
+			OR
+				YOU MUST Reference Additional terms In Source code
+			YOU MUST Provide Additional terms
+			USE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later
+				YOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later
+	EITHER
+		IF Binary delivery On Customary medium OR Installed
+			EITHER
+				YOU MUST Provide Source code
+					ATTRIBUTE Machine-readable
+					ATTRIBUTE Customary medium
+					ATTRIBUTE Documented format
+					ATTRIBUTE Including Installation scripts
+					ATTRIBUTE Including Tool chain information
+			OR
+				YOU MUST Provide Written offer
+					ATTRIBUTE Duration At least 3 years
+					ATTRIBUTE Duration As long as product is supported
+					ATTRIBUTE Delayed source code delivery
+						ATTRIBUTE Machine-readable
+						ATTRIBUTE Documented format
+						ATTRIBUTE Including Installation scripts
+						ATTRIBUTE Including Tool chain information
+						EITHER
+							ATTRIBUTE Customary medium
+							ATTRIBUTE No profit
+						OR
+							ATTRIBUTE Via Internet
+							ATTRIBUTE No charge
+	OR
+		IF Binary delivery Via Internet
+			YOU MUST Provide Source code
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Documented format
+				ATTRIBUTE Including Installation scripts
+				ATTRIBUTE Including Tool chain information
 				ATTRIBUTE Via Internet
-				ATTRIBUTE No charges
-	YOU MUST NOT Impede Usage
-COMPATIBILITY AGPL-3.0
-INCOMPATIBILITY Apache-1.0
-INCOMPATIBILITY Apache-1.1
+				ATTRIBUTE Duration As long as needed
+				IF Source code On same server
+					ATTRIBUTE No charge
+					ATTRIBUTE Equivalent
+				IF Source code On other server
+					ATTRIBUTE No charge
+					ATTRIBUTE Equivalent
+					YOU MUST Reference Source code
+	OR
+		IF Binary delivery Via peer-to-peer transmission
+			YOU MUST Reference Source code
+				ATTRIBUTE No charge
+				ATTRIBUTE Machine-readable
+				ATTRIBUTE Documented format
+				ATTRIBUTE Including Installation scripts
+				ATTRIBUTE Including Tool chain information
+				ATTRIBUTE Via Internet
+				ATTRIBUTE Duration As long as needed
+	IF User product
+		YOU MUST Provide Installation information
+			EXCEPT IF Installation Is NOT Feasible
+	IF Software modification
+		YOU MUST Provide Modification notice
+			ATTRIBUTE Highlighted
+		YOU MUST Provide Modification date
+		YOU MUST Provide Legal notices
+			ATTRIBUTE Highlighted
+		YOU MUST Grant License
+			ATTRIBUTE Original license
+		IF Interactive AND Displayed License announcement
+			YOU MUST Display Appropriate legal notices
+				ATTRIBUTE Highlighted
+	YOU MUST NOT Restrict Granted rights
+		EXCEPT IF NOT Permitted By Additional terms
+	YOU MUST NOT Litigate Circumvention
+COMPATIBILITY AGPL-3.0-only
+COMPATIBILITY AGPL-3.0-or later
+COMPATIBILITY Apache-2.0
+COMPATIBILITY BSD-2-Clause
+COMPATIBILITY BSD-2-Clause-Patent
+COMPATIBILITY BSD-3-Clause
+COMPATIBILITY bzip2-1.0.5
+COMPATIBILITY bzip2-1.0.6
+COMPATIBILITY CC0-1.0
+COMPATIBILITY curl
+COMPATIBILITY GPL-2.0-or-later
+COMPATIBILITY GPL-3.0-or-later
+COMPATIBILITY IBM-pibs
+COMPATIBILITY ICU
+COMPATIBILITY ISC
+COMPATIBILITY LGPL-2.1-only
+COMPATIBILITY LGPL-2.1-or-later
+COMPATIBILITY LGPL-3.0-only
+COMPATIBILITY LGPL-3.0-or-later
+COMPATIBILITY Libpng
+COMPATIBILITY MIT
+COMPATIBILITY NTP
+COMPATIBILITY UPL-1.0
+COMPATIBILITY WTFPL
+COMPATIBILITY X11
+COMPATIBILITY Zlib
 INCOMPATIBILITY BSD-4-Clause
-INCOMPATIBILITY CPOL-1.02
-INCOMPATIBILITY EPL-1.0
-INCOMPATIBILITY EPL-2.0
 INCOMPATIBILITY FTL
 INCOMPATIBILITY IJG
-INCOMPATIBILITY MPL-1.1
 INCOMPATIBILITY OpenSSL
-INCOMPATIBILITY OSL-3.0
+INCOMPATIBILITY Python-2.0
 INCOMPATIBILITY zlib-acknowledgement
 INCOMPATIBILITY XFree86-1.1
 PATENT HINTS Yes
@@ -972,12 +1056,12 @@ Public License instead of this License.  But first, please read
             "spdxLicenseId": "GPL-3.0-only"
         },
         "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-3.0.txt",
-            "spdxId": "GPL-3.0",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Highlight Copyright notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Source code modification OR Combined work\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\t\tIF Interactive\n\t\t\tYOU MUST Display Legal notices\n\tIF Installed\n\t\tYOU MUST Provide Installation scripts\r\n\t\tYOU MUST Provide Installation information\n\t\tYOU MUST NOT Impede Installation\n\tYOU MUST NOT Impede Usage\nUSE CASE Binary delivery\n\tYOU MUST Highlight Copyright notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text\n\tEITHER\n\t\tYOU MUST Include Source code\n\t\t\tATTRIBUTE Customary medium\n\t\tIF Source code modification OR Combined work\n\t\t\tYOU MUST Grant License\n\t\t\t\tATTRIBUTE Original license\n\t\t\tYOU MUST Provide Modification notice\n\t\t\tYOU MUST Provide Modification date\n\t\t\tIF Interactive\n\t\t\t\tYOU MUST Display Legal notices\n\t\tIF Installed\n\t\t\tYOU MUST Provide Installation scripts\r\n\t\t\tYOU MUST Provide Installation information\n\t\t\tYOU MUST NOT Impede Installation\n\tOR\r\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Provide Written offer\n\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\tEITHER\r\n\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\tATTRIBUTE No profit\n\t\t\tOR\r\n\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\tATTRIBUTE No charges\n\tYOU MUST NOT Impede Usage\nCOMPATIBILITY AGPL-3.0\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY CPOL-1.02\nINCOMPATIBILITY EPL-1.0\nINCOMPATIBILITY EPL-2.0\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY MPL-1.1\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY OSL-3.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-3.0-only.txt",
+            "spdxId": "GPL-3.0-only",
+            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text\n\t\tIF Non-permissive Additional terms\n\t\t\tEITHER\r\n\t\t\t\tYOU MUST Include Additional terms In Source code\n\t\t\tOR\r\n\t\t\t\tYOU MUST Reference Additional terms In Source code\n\t\t\tYOU MUST Provide Additional terms\n\t\t\tUSE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later\n\t\t\t\tYOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Displayed License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text\n\t\tIF Non-permissive Additional terms\n\t\t\tEITHER\r\n\t\t\t\tYOU MUST Include Additional terms In Source code\n\t\t\tOR\r\n\t\t\t\tYOU MUST Reference Additional terms In Source code\n\t\t\tYOU MUST Provide Additional terms\n\t\t\tUSE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later\n\t\t\t\tYOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later\n\tEITHER\r\n\t\tIF Binary delivery On Customary medium OR Installed\n\t\t\tEITHER\n\t\t\t\tYOU MUST Provide Source code\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tOR\r\n\t\t\t\tYOU MUST Provide Written offer\n\t\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\t\tATTRIBUTE Delayed source code delivery\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\t\tEITHER\r\n\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\t\tOR\r\n\t\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\t\tATTRIBUTE No charge\n\tOR\r\n\t\tIF Binary delivery Via Internet\n\t\t\tYOU MUST Provide Source code\r\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Documented format\n\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\tIF Source code On same server\n\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\tIF Source code On other server\n\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\tYOU MUST Reference Source code\n\tOR\r\n\t\tIF Binary delivery Via peer-to-peer transmission\n\t\t\tYOU MUST Reference Source code\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Documented format\n\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\tATTRIBUTE Duration As long as needed\n\tIF User product\n\t\tYOU MUST Provide Installation information\n\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Displayed License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nCOMPATIBILITY AGPL-3.0-only\nCOMPATIBILITY AGPL-3.0-or later\nCOMPATIBILITY Apache-2.0\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY GPL-2.0-or-later\nCOMPATIBILITY GPL-3.0-or-later\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY LGPL-2.1-only\nCOMPATIBILITY LGPL-2.1-or-later\nCOMPATIBILITY LGPL-3.0-only\nCOMPATIBILITY LGPL-3.0-or-later\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
             "_implications": {
                 "__impliedNames": [
-                    "GPL-3.0"
+                    "GPL-3.0-only"
                 ],
                 "__hasPatentHint": true,
                 "__impliedCopyleft": [

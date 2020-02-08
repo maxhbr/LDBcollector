@@ -1,28 +1,28 @@
 == Creative Commons Attribution 4.0 International (CC-BY-4.0)
 
 [cols=",",options="header",]
-|========================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution 4.0 International
 |Shortname |CC-BY-4.0
 |Rating |Unknown
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|========================================================
+|===
 
 *Other Names:*
 
-* `CC-BY 4.0`
-* `Creative Commons Attribution 4.0`
+* `+CC-BY 4.0+`
+* `+Creative Commons Attribution 4.0+`
 
 === Description
 
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 Permits almost any use subject to providing credit and license notice.
 Frequently used for media assets and educational materials. The most
 common license for Open Access scientific publications. Not recommended
 for software.
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -38,7 +38,7 @@ Software Guidelines])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -56,7 +56,7 @@ a|
 * patent-use
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-4.0.txt[choosealicense.com])

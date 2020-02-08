@@ -1,18 +1,18 @@
 == Artistic License 1.0 (Perl) (Artistic-1.0-Perl)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Artistic License 1.0 (Perl)
 |Shortname |Artistic-1.0-Perl
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `artistic-perl-1.0`
-* `Artistic-Perl-1.0`
+* `+artistic-perl-1.0+`
+* `+Artistic-Perl-1.0+`
 
 === Comments on (easy) usability
 

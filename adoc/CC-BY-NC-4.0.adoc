@@ -1,17 +1,17 @@
 == Creative Commons Attribution Non Commercial 4.0 International (CC-BY-NC-4.0)
 
 [cols=",",options="header",]
-|=======================================================================
+|===
 |Key |Value
 |Fullname |Creative Commons Attribution Non Commercial 4.0 International
 |Shortname |CC-BY-NC-4.0
 |Rating |No-Go
 |Is Non-Commercial |True
-|=======================================================================
+|===
 
 *Other Names:*
 
-* `Creative Commons Attribution-NonCommercial 4.0`
+* `+Creative Commons Attribution-NonCommercial 4.0+`
 
 === Comments on (easy) usability
 

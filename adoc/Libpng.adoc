@@ -1,13 +1,13 @@
 == libpng License (Libpng)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |libpng License
 |Shortname |Libpng
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

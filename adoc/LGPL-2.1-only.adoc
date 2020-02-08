@@ -1,36 +1,36 @@
 == GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 [cols=",",options="header",]
-|=====================================================
+|===
 |Key |Value
 |Fullname |GNU Lesser General Public License v2.1 only
 |Shortname |LGPL-2.1-only
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |True
-|=====================================================
+|===
 
 *Other Names:*
 
-* `lgpl-2.1`
-* `LGPL 2.1`
-* `GNU Lesser General Public License 2.1`
-* `LGPL-2.1`
-* `LGPL2.1`
-* `LGPL (v2.1)`
-* `GNU LGPLv2.1`
-* `GNU Lesser General Public License, Version 2.1`
-* `License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)`
-* `LGPL-2.1-or-later`
+* `+lgpl-2.1+`
+* `+LGPL 2.1+`
+* `+GNU Lesser General Public License 2.1+`
+* `+LGPL-2.1+`
+* `+LGPL2.1+`
+* `+LGPL (v2.1)+`
+* `+GNU LGPLv2.1+`
+* `+GNU Lesser General Public License, Version 2.1+`
+* `+License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)+`
+* `+LGPL-2.1-or-later+`
 
 === Description
 
-____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 Primarily used for software libraries, the GNU LGPL requires that
 derived works be licensed under the same license, but works that only
 link to it do not fall under this restriction. There are two commonly
 used versions of the GNU LGPL.
-____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -48,7 +48,7 @@ Policy])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -66,7 +66,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-2.1.txt[choosealicense.com])

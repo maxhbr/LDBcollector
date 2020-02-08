@@ -1,18 +1,18 @@
 == W3C Software Notice and License (1998-07-20) (W3C-19980720)
 
 [cols=",",options="header",]
-|======================================================
+|===
 |Key |Value
 |Fullname |W3C Software Notice and License (1998-07-20)
 |Shortname |W3C-19980720
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|======================================================
+|===
 
 *Other Names:*
 
-* `w3c-software-19980720`
-* `W3C-SOFTWARE-19980720`
+* `+w3c-software-19980720+`
+* `+W3C-SOFTWARE-19980720+`
 
 === Comments on (easy) usability
 

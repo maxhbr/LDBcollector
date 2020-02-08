@@ -1,17 +1,17 @@
 == Academy of Motion Picture Arts and Sciences BSD (AMPAS)
 
 [cols=",",options="header",]
-|=========================================================
+|===
 |Key |Value
 |Fullname |Academy of Motion Picture Arts and Sciences BSD
 |Shortname |AMPAS
 |Rating |Go
 |Classification |NoCopyleft
-|=========================================================
+|===
 
 *Other Names:*
 
-* `AMPAS BSD-Style License`
+* `+AMPAS BSD-Style License+`
 
 === Comments on (easy) usability
 

@@ -1,17 +1,17 @@
 == Fair License (Fair)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Fair License
 |Shortname |Fair
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `Fair License (Fair)`
+* `+Fair License (Fair)+`
 
 === Comments on (easy) usability
 

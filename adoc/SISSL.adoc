@@ -1,19 +1,19 @@
 == Sun Industry Standards Source License v1.1 (SISSL)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Sun Industry Standards Source License v1.1
 |Shortname |SISSL
 |Rating |Unknown, probably Attention or Stop or No-Go
-|====================================================
+|===
 
 *Other Names:*
 
-* `sun-sissl-1.1`
-* `Sun Industry Standards Source License 1.1`
-* `Sun Industry Standards Source License`
-* `License :: OSI Approved :: Sun Industry Standards Source License (SISSL)`
+* `+sun-sissl-1.1+`
+* `+Sun Industry Standards Source License 1.1+`
+* `+Sun Industry Standards Source License+`
+* `+License :: OSI Approved :: Sun Industry Standards Source License (SISSL)+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == Plexus Classworlds License (Plexus)
 
 [cols=",",options="header",]
-|====================================
+|===
 |Key |Value
 |Fullname |Plexus Classworlds License
 |Shortname |Plexus
 |Rating |Go
 |Classification |NoCopyleft
-|====================================
+|===
 
 *Other Names:*
 
-* `dom4j`
-* `Dom4j License`
+* `+dom4j+`
+* `+Dom4j License+`
 
 === Comments on (easy) usability
 

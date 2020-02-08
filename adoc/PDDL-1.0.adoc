@@ -1,18 +1,18 @@
 == ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |ODC Public Domain Dedication & License 1.0
 |Shortname |PDDL-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `PDDL 1.0`
-* `Open Data Commons Public Domain Dedication and Licence 1.0`
+* `+PDDL 1.0+`
+* `+Open Data Commons Public Domain Dedication and Licence 1.0+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == FSF Unlimited License (with License Retention) (FSFULLR)
 
 [cols=",",options="header",]
-|========================================================
+|===
 |Key |Value
 |Fullname |FSF Unlimited License (with License Retention)
 |Shortname |FSFULLR
 |Rating |Unknown
 |Classification |NoCopyleft
-|========================================================
+|===
 
 *Other Names:*
 
-* `fsf-unlimited`
-* `FSF-Unlimited`
+* `+fsf-unlimited+`
+* `+FSF-Unlimited+`
 
 === Comments on (easy) usability
 

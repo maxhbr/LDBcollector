@@ -1,18 +1,18 @@
 == Nethack General Public License (NGPL)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Nethack General Public License
 |Shortname |NGPL
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |StrongCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `The Nethack General Public License`
-* `License :: OSI Approved :: Nethack General Public License`
+* `+The Nethack General Public License+`
+* `+License :: OSI Approved :: Nethack General Public License+`
 
 === Comments on (easy) usability
 

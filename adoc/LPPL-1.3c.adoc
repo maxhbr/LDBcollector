@@ -1,27 +1,27 @@
 == LaTeX Project Public License v1.3c (LPPL-1.3c)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |LaTeX Project Public License v1.3c
 |Shortname |LPPL-1.3c
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
 |Has Patent Hint |False
-|====================================================
+|===
 
 *Other Names:*
 
-* `LPPL 1.3c`
-* `LaTeX Project Public License, Version 1.3c`
-* `LaTeX Project Public License 1.3c`
+* `+LPPL 1.3c+`
+* `+LaTeX Project Public License, Version 1.3c+`
+* `+LaTeX Project Public License 1.3c+`
 
 === Description
 
-________________________________________________________________________________________________________________________________________
+____
 The LaTeX Project Public License (LPPL) is the primary license under
 which the LaTeX kernel and the base LaTeX packages are distributed.
-________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -35,7 +35,7 @@ https://blueoakcouncil.org/list[BlueOak License List])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -52,7 +52,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lppl-1.3c.txt[choosealicense.com])

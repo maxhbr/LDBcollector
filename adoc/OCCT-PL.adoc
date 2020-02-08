@@ -1,13 +1,13 @@
 == Open CASCADE Technology Public License (OCCT-PL)
 
 [cols=",",options="header",]
-|================================================
+|===
 |Key |Value
 |Fullname |Open CASCADE Technology Public License
 |Shortname |OCCT-PL
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|================================================
+|===
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == NetCDF license (NetCDF)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |NetCDF license
 |Shortname |NetCDF
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

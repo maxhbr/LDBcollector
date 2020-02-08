@@ -1,13 +1,13 @@
 == Sendmail License (Sendmail)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Sendmail License
 |Shortname |Sendmail
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == IPA Font License (IPA)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |IPA Font License
 |Shortname |IPA
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |StrongCopyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `ipa-font`
-* `IPA Font License 1.0`
+* `+ipa-font+`
+* `+IPA Font License 1.0+`
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == BSD 2-Clause NetBSD License (BSD-2-Clause-NetBSD)
 
 [cols=",",options="header",]
-|=====================================
+|===
 |Key |Value
 |Fullname |BSD 2-Clause NetBSD License
 |Shortname |BSD-2-Clause-NetBSD
 |Rating |Go
 |Classification |NoCopyleft
-|=====================================
+|===
 
 === Comments on (easy) usability
 

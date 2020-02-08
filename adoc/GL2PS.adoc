@@ -1,13 +1,13 @@
 == GL2PS License (GL2PS)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |GL2PS License
 |Shortname |GL2PS
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|====================================================
+|===
 
 === Comments on (easy) usability
 

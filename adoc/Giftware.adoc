@@ -1,18 +1,18 @@
 == Giftware License (Giftware)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Giftware License
 |Shortname |Giftware
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `allegro-4`
-* `Allegro 4 License`
+* `+allegro-4+`
+* `+Allegro 4 License+`
 
 === Comments on (easy) usability
 

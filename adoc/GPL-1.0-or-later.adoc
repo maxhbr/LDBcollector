@@ -1,21 +1,21 @@
 == GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |GNU General Public License v1.0 or later
 |Shortname |GPL-1.0-or-later
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
 
 *Other Names:*
 
-* `gpl-1.0-plus`
-* `GPL 1.0 or later`
-* `GPL-1.0+`
-* `GPL1.0+`
-* `GPL1+`
+* `+gpl-1.0-plus+`
+* `+GPL 1.0 or later+`
+* `+GPL-1.0++`
+* `+GPL1.0++`
+* `+GPL1++`
 
 === Comments on (easy) usability
 

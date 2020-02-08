@@ -1,18 +1,18 @@
 == DOC License (DOC)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |DOC License
 |Shortname |DOC
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `ace-tao`
-* `ACE TAO License`
+* `+ace-tao+`
+* `+ACE TAO License+`
 
 === Comments on (easy) usability
 

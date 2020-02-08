@@ -1,17 +1,17 @@
 == Zend License v2.0 (Zend-2.0)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Zend License v2.0
 |Shortname |Zend-2.0
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `Zend Engine License 2.0`
+* `+Zend Engine License 2.0+`
 
 === Comments on (easy) usability
 

@@ -1,18 +1,18 @@
 == Spencer License 99 (Spencer-99)
 
 [cols=",",options="header",]
-|============================
+|===
 |Key |Value
 |Fullname |Spencer License 99
 |Shortname |Spencer-99
 |Rating |Go
 |Classification |NoCopyleft
-|============================
+|===
 
 *Other Names:*
 
-* `henry-spencer-1999`
-* `Henry Spencer License 1999`
+* `+henry-spencer-1999+`
+* `+Henry Spencer License 1999+`
 
 === Comments on (easy) usability
 

@@ -1,13 +1,13 @@
 == Saxpath License (Saxpath)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Saxpath License
 |Shortname |Saxpath
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

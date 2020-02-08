@@ -1,13 +1,13 @@
 == dvipdfm License (dvipdfm)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |dvipdfm License
 |Shortname |dvipdfm
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

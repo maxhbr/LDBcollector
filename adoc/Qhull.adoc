@@ -1,13 +1,13 @@
 == Qhull License (Qhull)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Qhull License
 |Shortname |Qhull
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=======================================
+|===
 
 === Comments on (easy) usability
 

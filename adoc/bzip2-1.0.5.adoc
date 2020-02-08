@@ -1,14 +1,14 @@
 == bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
 
 [cols=",",options="header",]
-|===========================================
+|===
 |Key |Value
 |Fullname |bzip2 and libbzip2 License v1.0.5
 |Shortname |bzip2-1.0.5
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|===========================================
+|===
 
 === Comments on (easy) usability
 

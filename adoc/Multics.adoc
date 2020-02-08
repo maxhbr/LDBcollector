@@ -1,13 +1,13 @@
 == Multics License (Multics)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Multics License
 |Shortname |Multics
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 === Comments on (easy) usability
 

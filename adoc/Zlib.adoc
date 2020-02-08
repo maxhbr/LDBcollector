@@ -1,29 +1,29 @@
 == zlib License (Zlib)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |zlib License
 |Shortname |Zlib
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|==========================
+|===
 
 *Other Names:*
 
-* `The zlib/libpng License (Zlib)`
-* `License :: OSI Approved :: zlib/libpng License`
-* `zlib/libpng license`
-* `zlib/libpng`
-* `zlib/libpng License`
+* `+The zlib/libpng License (Zlib)+`
+* `+License :: OSI Approved :: zlib/libpng License+`
+* `+zlib/libpng license+`
+* `+zlib/libpng+`
+* `+zlib/libpng License+`
 
 === Description
 
-___________________________________________________________________________________________________________
+____
 A short permissive license, compatible with GPL. Requires altered source
 versions to be documented as such.
-___________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -53,7 +53,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -69,7 +69,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/zlib.txt[choosealicense.com])

@@ -1,20 +1,20 @@
 == GNU Library General Public License v2 or later (LGPL-2.0-or-later)
 
 [cols=",",options="header",]
-|========================================================
+|===
 |Key |Value
 |Fullname |GNU Library General Public License v2 or later
 |Shortname |LGPL-2.0-or-later
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|========================================================
+|===
 
 *Other Names:*
 
-* `lgpl-2.0-plus`
-* `LGPL 2.0 or later`
-* `GNU Library General Public License 2.0`
-* `LGPL-2.0-only`
+* `+lgpl-2.0-plus+`
+* `+LGPL 2.0 or later+`
+* `+GNU Library General Public License 2.0+`
+* `+LGPL-2.0-only+`
 
 === Comments on (easy) usability
 

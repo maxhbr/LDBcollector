@@ -1,18 +1,18 @@
 == Barr License (Barr)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |Barr License
 |Shortname |Barr
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `barr-tex`
-* `Barr TeX License`
+* `+barr-tex+`
+* `+Barr TeX License+`
 
 === Comments on (easy) usability
 

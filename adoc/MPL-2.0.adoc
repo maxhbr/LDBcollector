@@ -1,24 +1,24 @@
 == Mozilla Public License 2.0 (MPL-2.0)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Mozilla Public License 2.0
 |Shortname |MPL-2.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `MPL 2.0`
-* `Mozilla Public License, Version 2.0`
-* `License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)`
+* `+MPL 2.0+`
+* `+Mozilla Public License, Version 2.0+`
+* `+License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)+`
 
 === Description
 
-________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 Permissions of this weak copyleft license are conditioned on making
 available source code of licensed files and modifications of those files
 under the same license (or in certain cases, one of the GNU licenses).
@@ -26,7 +26,7 @@ Copyright and license notices must be preserved. Contributors provide an
 express grant of patent rights. However, a larger work using the
 licensed work may be distributed under different terms and without
 source code for files added in the larger work.
-________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -44,7 +44,7 @@ Policy])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -63,7 +63,7 @@ a|
 * trademark-use
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mpl-2.0.txt[choosealicense.com])

@@ -1,17 +1,17 @@
 == Community Data License Agreement Permissive 1.0 (CDLA-Permissive-1.0)
 
 [cols=",",options="header",]
-|=========================================================
+|===
 |Key |Value
 |Fullname |Community Data License Agreement Permissive 1.0
 |Shortname |CDLA-Permissive-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
-|=========================================================
+|===
 
 *Other Names:*
 
-* `CDLA Permissive 1.0`
+* `+CDLA Permissive 1.0+`
 
 === Comments on (easy) usability
 

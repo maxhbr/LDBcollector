@@ -1,18 +1,18 @@
 == Open LDAP Public License v1.3 (OLDAP-1.3)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Open LDAP Public License v1.3
 |Shortname |OLDAP-1.3
 |Rating |Unknown, probably Stop or No-Go
 |Classification |WeakCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `openldap-1.3`
-* `OpenLDAP Public License 1.3`
+* `+openldap-1.3+`
+* `+OpenLDAP Public License 1.3+`
 
 === Comments on (easy) usability
 

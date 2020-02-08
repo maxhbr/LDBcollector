@@ -1,31 +1,31 @@
 == MIT License (MIT)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |MIT License
 |Shortname |MIT
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |False
-|==========================
+|===
 
 *Other Names:*
 
-* `MIT/Expat License`
-* `Expat`
-* `License :: OSI Approved :: MIT License`
-* `MIT license / X11 license`
-* `MIT license (also X11)`
+* `+MIT/Expat License+`
+* `+Expat+`
+* `+License :: OSI Approved :: MIT License+`
+* `+MIT license / X11 license+`
+* `+MIT license (also X11)+`
 
 === Description
 
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A short and simple permissive license with conditions only requiring
 preservation of copyright and license notices. Licensed works,
 modifications, and larger works may be distributed under different terms
 and without source code.
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
@@ -63,7 +63,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -78,7 +78,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[choosealicense.com])

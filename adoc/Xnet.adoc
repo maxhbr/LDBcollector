@@ -1,19 +1,19 @@
 == X.Net License (Xnet)
 
 [cols=",",options="header",]
-|===============================
+|===
 |Key |Value
 |Fullname |X.Net License
 |Shortname |Xnet
 |Rating |Unknown, no option left
 |Classification |NoCopyleft
-|===============================
+|===
 
 *Other Names:*
 
-* `Altera License`
-* `The X.Net, Inc. License`
-* `License :: OSI Approved :: X.Net License`
+* `+Altera License+`
+* `+The X.Net, Inc. License+`
+* `+License :: OSI Approved :: X.Net License+`
 
 === Comments on (easy) usability
 
