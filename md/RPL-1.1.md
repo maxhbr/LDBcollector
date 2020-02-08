@@ -5,6 +5,8 @@ Reciprocal Public License 1.1 (RPL-1.1)
 
 **Other Names:**
 
+-   `scancode:rpl-1.1`
+
 -   `RPL 1.1`
 
 -   `Reciprocal Public License, Version 1.1`
@@ -197,7 +199,7 @@ Raw Data
         "__impliedNames": [
             "RPL-1.1",
             "Reciprocal Public License 1.1",
-            "rpl-1.1",
+            "scancode:rpl-1.1",
             "RPL 1.1",
             "Reciprocal Public License, Version 1.1"
         ],
@@ -209,7 +211,7 @@ Raw Data
                         "RPL-1.1",
                         "RPL-1.1",
                         "Reciprocal Public License 1.1",
-                        "rpl-1.1",
+                        "scancode:rpl-1.1",
                         "RPL 1.1",
                         "Reciprocal Public License, Version 1.1"
                     ],
@@ -219,7 +221,7 @@ Raw Data
                 "otherNames": [
                     "RPL-1.1",
                     "Reciprocal Public License 1.1",
-                    "rpl-1.1",
+                    "scancode:rpl-1.1",
                     "RPL 1.1",
                     "Reciprocal Public License, Version 1.1"
                 ]
@@ -280,7 +282,7 @@ Raw Data
                 "spdxId": "RPL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "rpl-1.1",
+                        "scancode:rpl-1.1",
                         "RPL 1.1",
                         "RPL-1.1"
                     ],

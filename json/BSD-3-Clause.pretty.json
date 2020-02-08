@@ -2,7 +2,7 @@
     "__impliedNames": [
         "BSD-3-Clause",
         "BSD 3-Clause \"New\" or \"Revised\" License",
-        "bsd-new",
+        "scancode:bsd-new",
         "bsd-3-clause",
         "BSD-3",
         "BSD 3-Clause License",
@@ -55,7 +55,7 @@
                     "BSD-3-Clause",
                     "BSD-3-Clause",
                     "BSD 3-Clause \"New\" or \"Revised\" License",
-                    "bsd-new",
+                    "scancode:bsd-new",
                     "bsd-3-clause",
                     "BSD-3",
                     "BSD 3-Clause License",
@@ -74,7 +74,7 @@
             "otherNames": [
                 "BSD-3-Clause",
                 "BSD 3-Clause \"New\" or \"Revised\" License",
-                "bsd-new",
+                "scancode:bsd-new",
                 "bsd-3-clause",
                 "BSD-3",
                 "BSD 3-Clause License",
@@ -180,7 +180,7 @@
             "spdxId": "BSD-3-Clause",
             "_implications": {
                 "__impliedNames": [
-                    "bsd-new",
+                    "scancode:bsd-new",
                     "BSD-3-Clause",
                     "BSD-3-Clause"
                 ],

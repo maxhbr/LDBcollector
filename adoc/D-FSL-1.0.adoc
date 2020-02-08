@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+d-fsl-1.0-de+`
+* `+scancode:d-fsl-1.0-de+`
 
 === Comments on (easy) usability
 
@@ -496,7 +496,7 @@ abgerufen werden."
     "__impliedNames": [
         "D-FSL-1.0",
         "Deutsche Freie Software Lizenz",
-        "d-fsl-1.0-de"
+        "scancode:d-fsl-1.0-de"
     ],
     "__impliedId": "D-FSL-1.0",
     "facts": {
@@ -506,7 +506,7 @@ abgerufen werden."
                     "D-FSL-1.0",
                     "D-FSL-1.0",
                     "Deutsche Freie Software Lizenz",
-                    "d-fsl-1.0-de"
+                    "scancode:d-fsl-1.0-de"
                 ],
                 "__impliedId": "D-FSL-1.0"
             },
@@ -514,7 +514,7 @@ abgerufen werden."
             "otherNames": [
                 "D-FSL-1.0",
                 "Deutsche Freie Software Lizenz",
-                "d-fsl-1.0-de"
+                "scancode:d-fsl-1.0-de"
             ]
         },
         "SPDX": {
@@ -605,7 +605,7 @@ abgerufen werden."
             "spdxId": "D-FSL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "d-fsl-1.0-de",
+                    "scancode:d-fsl-1.0-de",
                     "Deutsche Freie Software Lizenz",
                     "D-FSL-1.0"
                 ],

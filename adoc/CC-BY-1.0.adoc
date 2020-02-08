@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:cc-by-1.0+`
+
 === Comments on (easy) usability
 
 * **↑**Google Classification is NOTICE (source:
@@ -94,7 +98,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
     "__impliedNames": [
         "CC-BY-1.0",
         "Creative Commons Attribution 1.0 Generic",
-        "cc-by-1.0"
+        "scancode:cc-by-1.0"
     ],
     "__impliedId": "CC-BY-1.0",
     "__impliedAmbiguousNames": [
@@ -107,7 +111,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
                     "CC-BY-1.0",
                     "CC-BY-1.0",
                     "Creative Commons Attribution 1.0 Generic",
-                    "cc-by-1.0"
+                    "scancode:cc-by-1.0"
                 ],
                 "__impliedId": "CC-BY-1.0"
             },
@@ -115,7 +119,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
             "otherNames": [
                 "CC-BY-1.0",
                 "Creative Commons Attribution 1.0 Generic",
-                "cc-by-1.0"
+                "scancode:cc-by-1.0"
             ]
         },
         "SPDX": {
@@ -164,7 +168,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
             "spdxId": "CC-BY-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "cc-by-1.0",
+                    "scancode:cc-by-1.0",
                     "CC-BY-1.0",
                     "CC-BY-1.0"
                 ],

@@ -3,6 +3,10 @@ Matrix Template Library License (MTLL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:mtll`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -57,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "MTLL",
             "Matrix Template Library License",
-            "mtll"
+            "scancode:mtll"
         ],
         "__impliedId": "MTLL",
         "__isFsfFree": true,
@@ -68,7 +72,7 @@ Raw Data
                         "MTLL",
                         "MTLL",
                         "Matrix Template Library License",
-                        "mtll"
+                        "scancode:mtll"
                     ],
                     "__impliedId": "MTLL"
                 },
@@ -76,7 +80,7 @@ Raw Data
                 "otherNames": [
                     "MTLL",
                     "Matrix Template Library License",
-                    "mtll"
+                    "scancode:mtll"
                 ]
             },
             "SPDX": {
@@ -149,7 +153,7 @@ Raw Data
                 "spdxId": "MTLL",
                 "_implications": {
                     "__impliedNames": [
-                        "mtll",
+                        "scancode:mtll",
                         "Matrix Template Library License",
                         "MTLL"
                     ],

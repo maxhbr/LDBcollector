@@ -2,7 +2,7 @@
     "__impliedNames": [
         "ZPL-2.1",
         "Zope Public License 2.1",
-        "zpl-2.1",
+        "scancode:zpl-2.1",
         "ZPL 2.1"
     ],
     "__impliedId": "ZPL-2.1",
@@ -13,7 +13,7 @@
                     "ZPL-2.1",
                     "ZPL-2.1",
                     "Zope Public License 2.1",
-                    "zpl-2.1",
+                    "scancode:zpl-2.1",
                     "ZPL 2.1"
                 ],
                 "__impliedId": "ZPL-2.1"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "ZPL-2.1",
                 "Zope Public License 2.1",
-                "zpl-2.1",
+                "scancode:zpl-2.1",
                 "ZPL 2.1"
             ]
         },
@@ -74,7 +74,7 @@
             "spdxId": "ZPL-2.1",
             "_implications": {
                 "__impliedNames": [
-                    "zpl-2.1",
+                    "scancode:zpl-2.1",
                     "ZPL 2.1",
                     "ZPL-2.1"
                 ],

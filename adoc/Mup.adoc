@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:mup+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Silver (source:
@@ -50,7 +54,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
     "__impliedNames": [
         "Mup",
         "Mup License",
-        "mup"
+        "scancode:mup"
     ],
     "__impliedId": "Mup",
     "__isFsfFree": true,
@@ -61,7 +65,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
                     "Mup",
                     "Mup",
                     "Mup License",
-                    "mup"
+                    "scancode:mup"
                 ],
                 "__impliedId": "Mup"
             },
@@ -69,7 +73,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
             "otherNames": [
                 "Mup",
                 "Mup License",
-                "mup"
+                "scancode:mup"
             ]
         },
         "SPDX": {
@@ -142,7 +146,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
             "spdxId": "Mup",
             "_implications": {
                 "__impliedNames": [
-                    "mup",
+                    "scancode:mup",
                     "Mup License",
                     "Mup"
                 ],

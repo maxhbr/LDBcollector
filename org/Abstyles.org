@@ -7,6 +7,10 @@
 | Rating           | Unknown            |
 | Classification   | NoCopyleft         |
 
+*Other Names:*
+
+- =scancode:abstyles=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -43,7 +47,7 @@
       "__impliedNames": [
           "Abstyles",
           "Abstyles License",
-          "abstyles"
+          "scancode:abstyles"
       ],
       "__impliedId": "Abstyles",
       "__isFsfFree": true,
@@ -54,7 +58,7 @@
                       "Abstyles",
                       "Abstyles",
                       "Abstyles License",
-                      "abstyles"
+                      "scancode:abstyles"
                   ],
                   "__impliedId": "Abstyles"
               },
@@ -62,7 +66,7 @@
               "otherNames": [
                   "Abstyles",
                   "Abstyles License",
-                  "abstyles"
+                  "scancode:abstyles"
               ]
           },
           "SPDX": {
@@ -135,7 +139,7 @@
               "spdxId": "Abstyles",
               "_implications": {
                   "__impliedNames": [
-                      "abstyles",
+                      "scancode:abstyles",
                       "Abstyles License",
                       "Abstyles"
                   ],

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:adsl+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Silver (source:
@@ -47,7 +51,7 @@ of this software code.
     "__impliedNames": [
         "ADSL",
         "Amazon Digital Services License",
-        "adsl"
+        "scancode:adsl"
     ],
     "__impliedId": "ADSL",
     "__isFsfFree": true,
@@ -58,7 +62,7 @@ of this software code.
                     "ADSL",
                     "ADSL",
                     "Amazon Digital Services License",
-                    "adsl"
+                    "scancode:adsl"
                 ],
                 "__impliedId": "ADSL"
             },
@@ -66,7 +70,7 @@ of this software code.
             "otherNames": [
                 "ADSL",
                 "Amazon Digital Services License",
-                "adsl"
+                "scancode:adsl"
             ]
         },
         "SPDX": {
@@ -139,7 +143,7 @@ of this software code.
             "spdxId": "ADSL",
             "_implications": {
                 "__impliedNames": [
-                    "adsl",
+                    "scancode:adsl",
                     "Amazon Digital Services License",
                     "ADSL"
                 ],

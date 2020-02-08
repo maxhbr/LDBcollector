@@ -3,6 +3,10 @@ Abstyles License (Abstyles)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:abstyles`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -40,7 +44,7 @@ Raw Data
         "__impliedNames": [
             "Abstyles",
             "Abstyles License",
-            "abstyles"
+            "scancode:abstyles"
         ],
         "__impliedId": "Abstyles",
         "__isFsfFree": true,
@@ -51,7 +55,7 @@ Raw Data
                         "Abstyles",
                         "Abstyles",
                         "Abstyles License",
-                        "abstyles"
+                        "scancode:abstyles"
                     ],
                     "__impliedId": "Abstyles"
                 },
@@ -59,7 +63,7 @@ Raw Data
                 "otherNames": [
                     "Abstyles",
                     "Abstyles License",
-                    "abstyles"
+                    "scancode:abstyles"
                 ]
             },
             "SPDX": {
@@ -132,7 +136,7 @@ Raw Data
                 "spdxId": "Abstyles",
                 "_implications": {
                     "__impliedNames": [
-                        "abstyles",
+                        "scancode:abstyles",
                         "Abstyles License",
                         "Abstyles"
                     ],

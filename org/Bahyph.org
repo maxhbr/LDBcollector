@@ -7,6 +7,10 @@
 | Rating           | Go               |
 | Classification   | NoCopyleft       |
 
+*Other Names:*
+
+- =scancode:bahyph=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Bronze (source:
@@ -49,7 +53,7 @@
       "__impliedNames": [
           "Bahyph",
           "Bahyph License",
-          "bahyph"
+          "scancode:bahyph"
       ],
       "__impliedId": "Bahyph",
       "__isFsfFree": true,
@@ -60,7 +64,7 @@
                       "Bahyph",
                       "Bahyph",
                       "Bahyph License",
-                      "bahyph"
+                      "scancode:bahyph"
                   ],
                   "__impliedId": "Bahyph"
               },
@@ -68,7 +72,7 @@
               "otherNames": [
                   "Bahyph",
                   "Bahyph License",
-                  "bahyph"
+                  "scancode:bahyph"
               ]
           },
           "SPDX": {
@@ -141,7 +145,7 @@
               "spdxId": "Bahyph",
               "_implications": {
                   "__impliedNames": [
-                      "bahyph",
+                      "scancode:bahyph",
                       "Bahyph License",
                       "Bahyph"
                   ],

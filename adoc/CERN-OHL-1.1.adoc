@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:cern-ohl-1.1+`
+
 === Comments on (easy) usability
 
 === URLs
@@ -108,7 +112,7 @@ A Licensee may at the same time be a Licensor, and vice versa.
     "__impliedNames": [
         "CERN-OHL-1.1",
         "CERN Open Hardware License v1.1",
-        "cern-ohl-1.1"
+        "scancode:cern-ohl-1.1"
     ],
     "__impliedId": "CERN-OHL-1.1",
     "facts": {
@@ -118,7 +122,7 @@ A Licensee may at the same time be a Licensor, and vice versa.
                     "CERN-OHL-1.1",
                     "CERN-OHL-1.1",
                     "CERN Open Hardware License v1.1",
-                    "cern-ohl-1.1"
+                    "scancode:cern-ohl-1.1"
                 ],
                 "__impliedId": "CERN-OHL-1.1"
             },
@@ -126,7 +130,7 @@ A Licensee may at the same time be a Licensor, and vice versa.
             "otherNames": [
                 "CERN-OHL-1.1",
                 "CERN Open Hardware License v1.1",
-                "cern-ohl-1.1"
+                "scancode:cern-ohl-1.1"
             ]
         },
         "SPDX": {
@@ -175,7 +179,7 @@ A Licensee may at the same time be a Licensor, and vice versa.
             "spdxId": "CERN-OHL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "cern-ohl-1.1",
+                    "scancode:cern-ohl-1.1",
                     "CERN Open Hardware License v1.1",
                     "CERN-OHL-1.1"
                 ],

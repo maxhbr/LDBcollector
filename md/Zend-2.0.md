@@ -5,6 +5,8 @@ Zend License v2.0 (Zend-2.0)
 
 **Other Names:**
 
+-   `scancode:zend-2.0`
+
 -   `Zend Engine License 2.0`
 
 Comments on (easy) usability
@@ -98,7 +100,7 @@ Raw Data
         "__impliedNames": [
             "Zend-2.0",
             "Zend License v2.0",
-            "zend-2.0",
+            "scancode:zend-2.0",
             "Zend Engine License 2.0"
         ],
         "__impliedId": "Zend-2.0",
@@ -110,7 +112,7 @@ Raw Data
                         "Zend-2.0",
                         "Zend-2.0",
                         "Zend License v2.0",
-                        "zend-2.0",
+                        "scancode:zend-2.0",
                         "Zend Engine License 2.0"
                     ],
                     "__impliedId": "Zend-2.0"
@@ -119,7 +121,7 @@ Raw Data
                 "otherNames": [
                     "Zend-2.0",
                     "Zend License v2.0",
-                    "zend-2.0",
+                    "scancode:zend-2.0",
                     "Zend Engine License 2.0"
                 ]
             },
@@ -193,7 +195,7 @@ Raw Data
                 "spdxId": "Zend-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "zend-2.0",
+                        "scancode:zend-2.0",
                         "Zend Engine License 2.0",
                         "Zend-2.0"
                     ],

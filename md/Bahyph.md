@@ -3,6 +3,10 @@ Bahyph License (Bahyph)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:bahyph`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -46,7 +50,7 @@ Raw Data
         "__impliedNames": [
             "Bahyph",
             "Bahyph License",
-            "bahyph"
+            "scancode:bahyph"
         ],
         "__impliedId": "Bahyph",
         "__isFsfFree": true,
@@ -57,7 +61,7 @@ Raw Data
                         "Bahyph",
                         "Bahyph",
                         "Bahyph License",
-                        "bahyph"
+                        "scancode:bahyph"
                     ],
                     "__impliedId": "Bahyph"
                 },
@@ -65,7 +69,7 @@ Raw Data
                 "otherNames": [
                     "Bahyph",
                     "Bahyph License",
-                    "bahyph"
+                    "scancode:bahyph"
                 ]
             },
             "SPDX": {
@@ -138,7 +142,7 @@ Raw Data
                 "spdxId": "Bahyph",
                 "_implications": {
                     "__impliedNames": [
-                        "bahyph",
+                        "scancode:bahyph",
                         "Bahyph License",
                         "Bahyph"
                     ],

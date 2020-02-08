@@ -5,6 +5,8 @@ Vovida Software License v1.0 (VSL-1.0)
 
 **Other Names:**
 
+-   `scancode:vsl-1.0`
+
 -   `Vovida Software License 1.0`
 
 -   `The Vovida Software License, Version 1.0`
@@ -103,7 +105,7 @@ Raw Data
         "__impliedNames": [
             "VSL-1.0",
             "Vovida Software License v1.0",
-            "vsl-1.0",
+            "scancode:vsl-1.0",
             "Vovida Software License 1.0",
             "The Vovida Software License, Version 1.0",
             "License :: OSI Approved :: Vovida Software License 1.0"
@@ -143,7 +145,7 @@ Raw Data
                         "VSL-1.0",
                         "VSL-1.0",
                         "Vovida Software License v1.0",
-                        "vsl-1.0",
+                        "scancode:vsl-1.0",
                         "Vovida Software License 1.0",
                         "The Vovida Software License, Version 1.0",
                         "License :: OSI Approved :: Vovida Software License 1.0"
@@ -154,7 +156,7 @@ Raw Data
                 "otherNames": [
                     "VSL-1.0",
                     "Vovida Software License v1.0",
-                    "vsl-1.0",
+                    "scancode:vsl-1.0",
                     "Vovida Software License 1.0",
                     "The Vovida Software License, Version 1.0",
                     "License :: OSI Approved :: Vovida Software License 1.0"
@@ -217,7 +219,7 @@ Raw Data
                 "spdxId": "VSL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "vsl-1.0",
+                        "scancode:vsl-1.0",
                         "Vovida Software License 1.0",
                         "VSL-1.0"
                     ],

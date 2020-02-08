@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:intel-acpi=
+
 - =Intel ACPI SLA=
 
 ** Comments on (easy) usability
@@ -152,7 +154,7 @@
       "__impliedNames": [
           "Intel-ACPI",
           "Intel ACPI Software License Agreement",
-          "intel-acpi",
+          "scancode:intel-acpi",
           "Intel ACPI SLA"
       ],
       "__impliedId": "Intel-ACPI",
@@ -164,7 +166,7 @@
                       "Intel-ACPI",
                       "Intel-ACPI",
                       "Intel ACPI Software License Agreement",
-                      "intel-acpi",
+                      "scancode:intel-acpi",
                       "Intel ACPI SLA"
                   ],
                   "__impliedId": "Intel-ACPI"
@@ -173,7 +175,7 @@
               "otherNames": [
                   "Intel-ACPI",
                   "Intel ACPI Software License Agreement",
-                  "intel-acpi",
+                  "scancode:intel-acpi",
                   "Intel ACPI SLA"
               ]
           },
@@ -247,7 +249,7 @@
               "spdxId": "Intel-ACPI",
               "_implications": {
                   "__impliedNames": [
-                      "intel-acpi",
+                      "scancode:intel-acpi",
                       "Intel ACPI SLA",
                       "Intel-ACPI"
                   ],

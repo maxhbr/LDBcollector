@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+regexp+`
+* `+scancode:regexp+`
 * `+Regexp License+`
 
 === Comments on (easy) usability
@@ -59,7 +59,7 @@ regular-expression syntax might require a total rethink.
     "__impliedNames": [
         "Spencer-86",
         "Spencer License 86",
-        "regexp",
+        "scancode:regexp",
         "Regexp License"
     ],
     "__impliedId": "Spencer-86",
@@ -70,7 +70,7 @@ regular-expression syntax might require a total rethink.
                     "Spencer-86",
                     "Spencer-86",
                     "Spencer License 86",
-                    "regexp",
+                    "scancode:regexp",
                     "Regexp License"
                 ],
                 "__impliedId": "Spencer-86"
@@ -79,7 +79,7 @@ regular-expression syntax might require a total rethink.
             "otherNames": [
                 "Spencer-86",
                 "Spencer License 86",
-                "regexp",
+                "scancode:regexp",
                 "Regexp License"
             ]
         },
@@ -127,7 +127,7 @@ regular-expression syntax might require a total rethink.
             "spdxId": "Spencer-86",
             "_implications": {
                 "__impliedNames": [
-                    "regexp",
+                    "scancode:regexp",
                     "Regexp License",
                     "Spencer-86"
                 ],

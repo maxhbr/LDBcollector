@@ -5,6 +5,8 @@ MakeIndex License (MakeIndex)
 
 **Other Names:**
 
+-   `scancode:makeindex`
+
 -   `MakeIndex Distribution Notice`
 
 Comments on (easy) usability
@@ -60,7 +62,7 @@ Raw Data
         "__impliedNames": [
             "MakeIndex",
             "MakeIndex License",
-            "makeindex",
+            "scancode:makeindex",
             "MakeIndex Distribution Notice"
         ],
         "__impliedId": "MakeIndex",
@@ -72,7 +74,7 @@ Raw Data
                         "MakeIndex",
                         "MakeIndex",
                         "MakeIndex License",
-                        "makeindex",
+                        "scancode:makeindex",
                         "MakeIndex Distribution Notice"
                     ],
                     "__impliedId": "MakeIndex"
@@ -81,7 +83,7 @@ Raw Data
                 "otherNames": [
                     "MakeIndex",
                     "MakeIndex License",
-                    "makeindex",
+                    "scancode:makeindex",
                     "MakeIndex Distribution Notice"
                 ]
             },
@@ -155,7 +157,7 @@ Raw Data
                 "spdxId": "MakeIndex",
                 "_implications": {
                     "__impliedNames": [
-                        "makeindex",
+                        "scancode:makeindex",
                         "MakeIndex Distribution Notice",
                         "MakeIndex"
                     ],

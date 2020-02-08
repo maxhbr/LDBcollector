@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:cecill-1.0+`
 * `+CeCILL 1.0+`
 
 === Comments on (easy) usability
@@ -275,7 +276,7 @@ Version 1 du 21/06/2004
     "__impliedNames": [
         "CECILL-1.0",
         "CeCILL Free Software License Agreement v1.0",
-        "cecill-1.0",
+        "scancode:cecill-1.0",
         "CeCILL 1.0"
     ],
     "__impliedId": "CECILL-1.0",
@@ -286,7 +287,7 @@ Version 1 du 21/06/2004
                     "CECILL-1.0",
                     "CECILL-1.0",
                     "CeCILL Free Software License Agreement v1.0",
-                    "cecill-1.0",
+                    "scancode:cecill-1.0",
                     "CeCILL 1.0"
                 ],
                 "__impliedId": "CECILL-1.0"
@@ -295,7 +296,7 @@ Version 1 du 21/06/2004
             "otherNames": [
                 "CECILL-1.0",
                 "CeCILL Free Software License Agreement v1.0",
-                "cecill-1.0",
+                "scancode:cecill-1.0",
                 "CeCILL 1.0"
             ]
         },
@@ -345,7 +346,7 @@ Version 1 du 21/06/2004
             "spdxId": "CECILL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "cecill-1.0",
+                    "scancode:cecill-1.0",
                     "CeCILL 1.0",
                     "CECILL-1.0"
                 ],

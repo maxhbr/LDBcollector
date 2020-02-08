@@ -5,6 +5,8 @@ Mozilla Public License 2.0 (MPL-2.0)
 
 **Other Names:**
 
+-   `scancode:mpl-2.0`
+
 -   `MPL 2.0`
 
 -   `Mozilla Public License, Version 2.0`
@@ -494,8 +496,9 @@ Raw Data
         "__impliedNames": [
             "MPL-2.0",
             "Mozilla Public License 2.0",
-            "mpl-2.0",
+            "scancode:mpl-2.0",
             "MPL 2.0",
+            "mpl-2.0",
             "Mozilla Public License, Version 2.0",
             "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
         ],
@@ -538,8 +541,9 @@ Raw Data
                         "MPL-2.0",
                         "MPL-2.0",
                         "Mozilla Public License 2.0",
-                        "mpl-2.0",
+                        "scancode:mpl-2.0",
                         "MPL 2.0",
+                        "mpl-2.0",
                         "Mozilla Public License, Version 2.0",
                         "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
                     ],
@@ -549,8 +553,9 @@ Raw Data
                 "otherNames": [
                     "MPL-2.0",
                     "Mozilla Public License 2.0",
-                    "mpl-2.0",
+                    "scancode:mpl-2.0",
                     "MPL 2.0",
+                    "mpl-2.0",
                     "Mozilla Public License, Version 2.0",
                     "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
                 ]
@@ -632,7 +637,7 @@ Raw Data
                 "spdxId": "MPL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "mpl-2.0",
+                        "scancode:mpl-2.0",
                         "MPL 2.0",
                         "MPL-2.0"
                     ],

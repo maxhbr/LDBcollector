@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+dom4j+`
+* `+scancode:dom4j+`
 * `+Dom4j License+`
 
 === Comments on (easy) usability
@@ -82,7 +82,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "Plexus",
         "Plexus Classworlds License",
-        "dom4j",
+        "scancode:dom4j",
         "Dom4j License"
     ],
     "__impliedId": "Plexus",
@@ -94,7 +94,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "Plexus",
                     "Plexus",
                     "Plexus Classworlds License",
-                    "dom4j",
+                    "scancode:dom4j",
                     "Dom4j License"
                 ],
                 "__impliedId": "Plexus"
@@ -103,7 +103,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "Plexus",
                 "Plexus Classworlds License",
-                "dom4j",
+                "scancode:dom4j",
                 "Dom4j License"
             ]
         },
@@ -184,7 +184,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "Plexus",
             "_implications": {
                 "__impliedNames": [
-                    "dom4j",
+                    "scancode:dom4j",
                     "Dom4j License",
                     "Plexus"
                 ],

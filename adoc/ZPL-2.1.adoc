@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:zpl-2.1+`
 * `+ZPL 2.1+`
 
 === Comments on (easy) usability
@@ -82,7 +83,7 @@ OF SUCH DAMAGE.
     "__impliedNames": [
         "ZPL-2.1",
         "Zope Public License 2.1",
-        "zpl-2.1",
+        "scancode:zpl-2.1",
         "ZPL 2.1"
     ],
     "__impliedId": "ZPL-2.1",
@@ -93,7 +94,7 @@ OF SUCH DAMAGE.
                     "ZPL-2.1",
                     "ZPL-2.1",
                     "Zope Public License 2.1",
-                    "zpl-2.1",
+                    "scancode:zpl-2.1",
                     "ZPL 2.1"
                 ],
                 "__impliedId": "ZPL-2.1"
@@ -102,7 +103,7 @@ OF SUCH DAMAGE.
             "otherNames": [
                 "ZPL-2.1",
                 "Zope Public License 2.1",
-                "zpl-2.1",
+                "scancode:zpl-2.1",
                 "ZPL 2.1"
             ]
         },
@@ -154,7 +155,7 @@ OF SUCH DAMAGE.
             "spdxId": "ZPL-2.1",
             "_implications": {
                 "__impliedNames": [
-                    "zpl-2.1",
+                    "scancode:zpl-2.1",
                     "ZPL 2.1",
                     "ZPL-2.1"
                 ],

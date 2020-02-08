@@ -5,6 +5,8 @@ CeCILL Free Software License Agreement v2.1 (CECILL-2.1)
 
 **Other Names:**
 
+-   `scancode:cecill-2.1`
+
 -   `CeCILL 2.1`
 
 -   `Cea Cnrs Inria Logiciel Libre License, Version 2.1`
@@ -561,7 +563,7 @@ Raw Data
         "__impliedNames": [
             "CECILL-2.1",
             "CeCILL Free Software License Agreement v2.1",
-            "cecill-2.1",
+            "scancode:cecill-2.1",
             "CeCILL 2.1",
             "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
             "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
@@ -604,7 +606,7 @@ Raw Data
                         "CECILL-2.1",
                         "CECILL-2.1",
                         "CeCILL Free Software License Agreement v2.1",
-                        "cecill-2.1",
+                        "scancode:cecill-2.1",
                         "CeCILL 2.1",
                         "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
                         "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
@@ -617,7 +619,7 @@ Raw Data
                 "otherNames": [
                     "CECILL-2.1",
                     "CeCILL Free Software License Agreement v2.1",
-                    "cecill-2.1",
+                    "scancode:cecill-2.1",
                     "CeCILL 2.1",
                     "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
                     "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
@@ -680,7 +682,7 @@ Raw Data
                 "spdxId": "CECILL-2.1",
                 "_implications": {
                     "__impliedNames": [
-                        "cecill-2.1",
+                        "scancode:cecill-2.1",
                         "CeCILL 2.1",
                         "CECILL-2.1"
                     ],

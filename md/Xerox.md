@@ -5,7 +5,7 @@ Xerox License (Xerox)
 
 **Other Names:**
 
--   `mit-export-control`
+-   `scancode:mit-export-control`
 
 -   `MIT with Export Control`
 
@@ -59,7 +59,7 @@ Raw Data
         "__impliedNames": [
             "Xerox",
             "Xerox License",
-            "mit-export-control",
+            "scancode:mit-export-control",
             "MIT with Export Control"
         ],
         "__impliedId": "Xerox",
@@ -71,7 +71,7 @@ Raw Data
                         "Xerox",
                         "Xerox",
                         "Xerox License",
-                        "mit-export-control",
+                        "scancode:mit-export-control",
                         "MIT with Export Control"
                     ],
                     "__impliedId": "Xerox"
@@ -80,7 +80,7 @@ Raw Data
                 "otherNames": [
                     "Xerox",
                     "Xerox License",
-                    "mit-export-control",
+                    "scancode:mit-export-control",
                     "MIT with Export Control"
                 ]
             },
@@ -156,7 +156,7 @@ Raw Data
                 "spdxId": "Xerox",
                 "_implications": {
                     "__impliedNames": [
-                        "mit-export-control",
+                        "scancode:mit-export-control",
                         "MIT with Export Control",
                         "Xerox"
                     ],

@@ -3,6 +3,10 @@ Norwegian Licence for Open Government Data (NLOD-1.0)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:nlod-1.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -106,7 +110,7 @@ Raw Data
         "__impliedNames": [
             "NLOD-1.0",
             "Norwegian Licence for Open Government Data",
-            "nlod-1.0"
+            "scancode:nlod-1.0"
         ],
         "__impliedId": "NLOD-1.0",
         "facts": {
@@ -116,7 +120,7 @@ Raw Data
                         "NLOD-1.0",
                         "NLOD-1.0",
                         "Norwegian Licence for Open Government Data",
-                        "nlod-1.0"
+                        "scancode:nlod-1.0"
                     ],
                     "__impliedId": "NLOD-1.0"
                 },
@@ -124,7 +128,7 @@ Raw Data
                 "otherNames": [
                     "NLOD-1.0",
                     "Norwegian Licence for Open Government Data",
-                    "nlod-1.0"
+                    "scancode:nlod-1.0"
                 ]
             },
             "SPDX": {
@@ -173,7 +177,7 @@ Raw Data
                 "spdxId": "NLOD-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "nlod-1.0",
+                        "scancode:nlod-1.0",
                         "NLOD-1.0",
                         "NLOD-1.0"
                     ],

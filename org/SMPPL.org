@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | WeakCopyleft                                   |
 
+*Other Names:*
+
+- =scancode:smppl=
+
 ** Comments on (easy) usability
 
 ** URLs
@@ -58,7 +62,7 @@
       "__impliedNames": [
           "SMPPL",
           "Secure Messaging Protocol Public License",
-          "smppl"
+          "scancode:smppl"
       ],
       "__impliedId": "SMPPL",
       "facts": {
@@ -68,7 +72,7 @@
                       "SMPPL",
                       "SMPPL",
                       "Secure Messaging Protocol Public License",
-                      "smppl"
+                      "scancode:smppl"
                   ],
                   "__impliedId": "SMPPL"
               },
@@ -76,7 +80,7 @@
               "otherNames": [
                   "SMPPL",
                   "Secure Messaging Protocol Public License",
-                  "smppl"
+                  "scancode:smppl"
               ]
           },
           "SPDX": {
@@ -123,7 +127,7 @@
               "spdxId": "SMPPL",
               "_implications": {
                   "__impliedNames": [
-                      "smppl",
+                      "scancode:smppl",
                       "SMPPL",
                       "SMPPL"
                   ],

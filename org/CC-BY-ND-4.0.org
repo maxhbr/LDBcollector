@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:cc-by-nd-4.0=
+
 - =Creative Commons Attribution No-Derivatives 4.0=
 
 ** Comments on (easy) usability
@@ -429,7 +431,7 @@
       "__impliedNames": [
           "CC-BY-ND-4.0",
           "Creative Commons Attribution No Derivatives 4.0 International",
-          "cc-by-nd-4.0",
+          "scancode:cc-by-nd-4.0",
           "Creative Commons Attribution No-Derivatives 4.0"
       ],
       "__impliedId": "CC-BY-ND-4.0",
@@ -467,7 +469,7 @@
                       "CC-BY-ND-4.0",
                       "CC-BY-ND-4.0",
                       "Creative Commons Attribution No Derivatives 4.0 International",
-                      "cc-by-nd-4.0",
+                      "scancode:cc-by-nd-4.0",
                       "Creative Commons Attribution No-Derivatives 4.0"
                   ],
                   "__impliedId": "CC-BY-ND-4.0"
@@ -476,7 +478,7 @@
               "otherNames": [
                   "CC-BY-ND-4.0",
                   "Creative Commons Attribution No Derivatives 4.0 International",
-                  "cc-by-nd-4.0",
+                  "scancode:cc-by-nd-4.0",
                   "Creative Commons Attribution No-Derivatives 4.0"
               ]
           },
@@ -526,7 +528,7 @@
               "spdxId": "CC-BY-ND-4.0",
               "_implications": {
                   "__impliedNames": [
-                      "cc-by-nd-4.0",
+                      "scancode:cc-by-nd-4.0",
                       "CC-BY-ND-4.0",
                       "CC-BY-ND-4.0"
                   ],

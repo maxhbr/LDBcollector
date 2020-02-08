@@ -5,6 +5,8 @@ Microsoft Reciprocal License (MS-RL)
 
 **Other Names:**
 
+-   `scancode:ms-rl`
+
 -   `Microsoft Reciprocal License (MS-RL)`
 
 -   `Microsoft Reciprocal License (Ms-RL)`
@@ -131,6 +133,7 @@ Raw Data
         "__impliedNames": [
             "MS-RL",
             "Microsoft Reciprocal License",
+            "scancode:ms-rl",
             "ms-rl",
             "Microsoft Reciprocal License (MS-RL)",
             "Microsoft Reciprocal License (Ms-RL)"
@@ -172,6 +175,7 @@ Raw Data
                         "MS-RL",
                         "MS-RL",
                         "Microsoft Reciprocal License",
+                        "scancode:ms-rl",
                         "ms-rl",
                         "Microsoft Reciprocal License (MS-RL)"
                     ],
@@ -181,6 +185,7 @@ Raw Data
                 "otherNames": [
                     "MS-RL",
                     "Microsoft Reciprocal License",
+                    "scancode:ms-rl",
                     "ms-rl",
                     "Microsoft Reciprocal License (MS-RL)"
                 ]
@@ -292,7 +297,7 @@ Raw Data
                 "spdxId": "MS-RL",
                 "_implications": {
                     "__impliedNames": [
-                        "ms-rl",
+                        "scancode:ms-rl",
                         "MS-RL",
                         "MS-RL"
                     ],

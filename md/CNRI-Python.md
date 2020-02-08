@@ -5,7 +5,7 @@ CNRI Python License (CNRI-Python)
 
 **Other Names:**
 
--   `cnri-python-1.6`
+-   `scancode:cnri-python-1.6`
 
 -   `CNRI Python 1.6`
 
@@ -72,7 +72,7 @@ Raw Data
         "__impliedNames": [
             "CNRI-Python",
             "CNRI Python License",
-            "cnri-python-1.6",
+            "scancode:cnri-python-1.6",
             "CNRI Python 1.6",
             "CNRI portion of the multi-part Python License",
             "License :: OSI Approved :: Python License (CNRI Python License)"
@@ -112,7 +112,7 @@ Raw Data
                         "CNRI-Python",
                         "CNRI-Python",
                         "CNRI Python License",
-                        "cnri-python-1.6",
+                        "scancode:cnri-python-1.6",
                         "CNRI Python 1.6",
                         "CNRI portion of the multi-part Python License",
                         "License :: OSI Approved :: Python License (CNRI Python License)"
@@ -123,7 +123,7 @@ Raw Data
                 "otherNames": [
                     "CNRI-Python",
                     "CNRI Python License",
-                    "cnri-python-1.6",
+                    "scancode:cnri-python-1.6",
                     "CNRI Python 1.6",
                     "CNRI portion of the multi-part Python License",
                     "License :: OSI Approved :: Python License (CNRI Python License)"
@@ -186,7 +186,7 @@ Raw Data
                 "spdxId": "CNRI-Python",
                 "_implications": {
                     "__impliedNames": [
-                        "cnri-python-1.6",
+                        "scancode:cnri-python-1.6",
                         "CNRI Python 1.6",
                         "CNRI-Python"
                     ],

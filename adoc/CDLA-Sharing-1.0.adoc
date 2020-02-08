@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:cdla-sharing-1.0+`
 * `+CDLA Sharing 1.0+`
 
 === Comments on (easy) usability
@@ -124,7 +125,7 @@ Section 7.  Miscellaneous
     "__impliedNames": [
         "CDLA-Sharing-1.0",
         "Community Data License Agreement Sharing 1.0",
-        "cdla-sharing-1.0",
+        "scancode:cdla-sharing-1.0",
         "CDLA Sharing 1.0"
     ],
     "__impliedId": "CDLA-Sharing-1.0",
@@ -135,7 +136,7 @@ Section 7.  Miscellaneous
                     "CDLA-Sharing-1.0",
                     "CDLA-Sharing-1.0",
                     "Community Data License Agreement Sharing 1.0",
-                    "cdla-sharing-1.0",
+                    "scancode:cdla-sharing-1.0",
                     "CDLA Sharing 1.0"
                 ],
                 "__impliedId": "CDLA-Sharing-1.0"
@@ -144,7 +145,7 @@ Section 7.  Miscellaneous
             "otherNames": [
                 "CDLA-Sharing-1.0",
                 "Community Data License Agreement Sharing 1.0",
-                "cdla-sharing-1.0",
+                "scancode:cdla-sharing-1.0",
                 "CDLA Sharing 1.0"
             ]
         },
@@ -194,7 +195,7 @@ Section 7.  Miscellaneous
             "spdxId": "CDLA-Sharing-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "cdla-sharing-1.0",
+                    "scancode:cdla-sharing-1.0",
                     "CDLA Sharing 1.0",
                     "CDLA-Sharing-1.0"
                 ],

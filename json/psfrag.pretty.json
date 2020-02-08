@@ -1,7 +1,8 @@
 {
     "__impliedNames": [
         "psfrag",
-        "psfrag License"
+        "psfrag License",
+        "scancode:psfrag"
     ],
     "__impliedId": "psfrag",
     "facts": {
@@ -10,14 +11,16 @@
                 "__impliedNames": [
                     "psfrag",
                     "psfrag",
-                    "psfrag License"
+                    "psfrag License",
+                    "scancode:psfrag"
                 ],
                 "__impliedId": "psfrag"
             },
             "shortname": "psfrag",
             "otherNames": [
                 "psfrag",
-                "psfrag License"
+                "psfrag License",
+                "scancode:psfrag"
             ]
         },
         "SPDX": {
@@ -89,7 +92,7 @@
             "spdxId": "psfrag",
             "_implications": {
                 "__impliedNames": [
-                    "psfrag",
+                    "scancode:psfrag",
                     "psfrag License",
                     "psfrag"
                 ],

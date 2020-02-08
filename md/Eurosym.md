@@ -3,6 +3,10 @@ Eurosym License (Eurosym)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:eurosym`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -50,7 +54,7 @@ Raw Data
         "__impliedNames": [
             "Eurosym",
             "Eurosym License",
-            "eurosym"
+            "scancode:eurosym"
         ],
         "__impliedId": "Eurosym",
         "__isFsfFree": true,
@@ -61,7 +65,7 @@ Raw Data
                         "Eurosym",
                         "Eurosym",
                         "Eurosym License",
-                        "eurosym"
+                        "scancode:eurosym"
                     ],
                     "__impliedId": "Eurosym"
                 },
@@ -69,7 +73,7 @@ Raw Data
                 "otherNames": [
                     "Eurosym",
                     "Eurosym License",
-                    "eurosym"
+                    "scancode:eurosym"
                 ]
             },
             "SPDX": {
@@ -144,7 +148,7 @@ Raw Data
                 "spdxId": "Eurosym",
                 "_implications": {
                     "__impliedNames": [
-                        "eurosym",
+                        "scancode:eurosym",
                         "Eurosym License",
                         "Eurosym"
                     ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "TCL",
         "TCL/TK License",
-        "tcl"
+        "scancode:tcl"
     ],
     "__impliedId": "TCL",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "TCL",
                     "TCL",
                     "TCL/TK License",
-                    "tcl"
+                    "scancode:tcl"
                 ],
                 "__impliedId": "TCL"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "TCL",
                 "TCL/TK License",
-                "tcl"
+                "scancode:tcl"
             ]
         },
         "SPDX": {
@@ -102,7 +102,7 @@
             "spdxId": "TCL",
             "_implications": {
                 "__impliedNames": [
-                    "tcl",
+                    "scancode:tcl",
                     "TCL/TK License",
                     "TCL"
                 ],

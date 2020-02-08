@@ -7,6 +7,10 @@
 | Rating           | Go                      |
 | Classification   | NoCopyleft              |
 
+*Other Names:*
+
+- =scancode:naumen=
+
 ** Comments on (easy) usability
 
 - *↑*Is OSI Approved (source:
@@ -76,7 +80,7 @@
       "__impliedNames": [
           "Naumen",
           "Naumen Public License",
-          "naumen",
+          "scancode:naumen",
           "NAUMEN Public License"
       ],
       "__impliedId": "Naumen",
@@ -115,7 +119,7 @@
                       "Naumen",
                       "Naumen",
                       "Naumen Public License",
-                      "naumen",
+                      "scancode:naumen",
                       "NAUMEN Public License"
                   ],
                   "__impliedId": "Naumen"
@@ -124,7 +128,7 @@
               "otherNames": [
                   "Naumen",
                   "Naumen Public License",
-                  "naumen",
+                  "scancode:naumen",
                   "NAUMEN Public License"
               ]
           },
@@ -210,7 +214,7 @@
               "spdxId": "Naumen",
               "_implications": {
                   "__impliedNames": [
-                      "naumen",
+                      "scancode:naumen",
                       "NAUMEN Public License",
                       "Naumen"
                   ],

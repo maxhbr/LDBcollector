@@ -10,11 +10,11 @@
 
 *Other Names:*
 
-- =x11-keith-packard=
+- =scancode:x11-keith-packard=
 
 - =X11-Style (Keith Packard)=
 
-- =historical-sell-variant=
+- =scancode:historical-sell-variant=
 
 ** Comments on (easy) usability
 
@@ -57,9 +57,9 @@
       "__impliedNames": [
           "HPND-sell-variant",
           "Historical Permission Notice and Disclaimer - sell variant",
-          "x11-keith-packard",
+          "scancode:x11-keith-packard",
           "X11-Style (Keith Packard)",
-          "historical-sell-variant"
+          "scancode:historical-sell-variant"
       ],
       "__impliedId": "HPND-sell-variant",
       "facts": {
@@ -69,7 +69,7 @@
                       "HPND-sell-variant",
                       "HPND-sell-variant",
                       "Historical Permission Notice and Disclaimer - sell variant",
-                      "x11-keith-packard",
+                      "scancode:x11-keith-packard",
                       "X11-Style (Keith Packard)"
                   ],
                   "__impliedId": "HPND-sell-variant"
@@ -78,7 +78,7 @@
               "otherNames": [
                   "HPND-sell-variant",
                   "Historical Permission Notice and Disclaimer - sell variant",
-                  "x11-keith-packard",
+                  "scancode:x11-keith-packard",
                   "X11-Style (Keith Packard)"
               ]
           },
@@ -129,7 +129,7 @@
               "spdxId": "HPND-sell-variant",
               "_implications": {
                   "__impliedNames": [
-                      "x11-keith-packard",
+                      "scancode:x11-keith-packard",
                       "X11-Style (Keith Packard)",
                       "HPND-sell-variant"
                   ],

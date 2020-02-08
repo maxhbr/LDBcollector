@@ -5,7 +5,7 @@ bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
 
 **Other Names:**
 
--   `bzip2-libbzip-2010`
+-   `scancode:bzip2-libbzip-2010`
 
 -   `bzip2 License 2010`
 
@@ -89,7 +89,7 @@ Raw Data
         "__impliedNames": [
             "bzip2-1.0.6",
             "bzip2 and libbzip2 License v1.0.6",
-            "bzip2-libbzip-2010",
+            "scancode:bzip2-libbzip-2010",
             "bzip2 License 2010"
         ],
         "__impliedId": "bzip2-1.0.6",
@@ -100,7 +100,7 @@ Raw Data
                         "bzip2-1.0.6",
                         "bzip2-1.0.6",
                         "bzip2 and libbzip2 License v1.0.6",
-                        "bzip2-libbzip-2010",
+                        "scancode:bzip2-libbzip-2010",
                         "bzip2 License 2010"
                     ],
                     "__impliedId": "bzip2-1.0.6"
@@ -109,7 +109,7 @@ Raw Data
                 "otherNames": [
                     "bzip2-1.0.6",
                     "bzip2 and libbzip2 License v1.0.6",
-                    "bzip2-libbzip-2010",
+                    "scancode:bzip2-libbzip-2010",
                     "bzip2 License 2010"
                 ]
             },
@@ -169,7 +169,7 @@ Raw Data
                 "spdxId": "bzip2-1.0.6",
                 "_implications": {
                     "__impliedNames": [
-                        "bzip2-libbzip-2010",
+                        "scancode:bzip2-libbzip-2010",
                         "bzip2 License 2010",
                         "bzip2-1.0.6"
                     ],

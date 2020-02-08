@@ -5,7 +5,7 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 **Other Names:**
 
--   `bsd-new`
+-   `scancode:bsd-new`
 
 -   `BSD-3`
 
@@ -149,7 +149,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause",
             "BSD 3-Clause \"New\" or \"Revised\" License",
-            "bsd-new",
+            "scancode:bsd-new",
             "bsd-3-clause",
             "BSD-3",
             "BSD 3-Clause License",
@@ -202,7 +202,7 @@ Raw Data
                         "BSD-3-Clause",
                         "BSD-3-Clause",
                         "BSD 3-Clause \"New\" or \"Revised\" License",
-                        "bsd-new",
+                        "scancode:bsd-new",
                         "bsd-3-clause",
                         "BSD-3",
                         "BSD 3-Clause License",
@@ -221,7 +221,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause",
                     "BSD 3-Clause \"New\" or \"Revised\" License",
-                    "bsd-new",
+                    "scancode:bsd-new",
                     "bsd-3-clause",
                     "BSD-3",
                     "BSD 3-Clause License",
@@ -327,7 +327,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-new",
+                        "scancode:bsd-new",
                         "BSD-3-Clause",
                         "BSD-3-Clause"
                     ],

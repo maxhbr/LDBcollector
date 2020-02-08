@@ -3,6 +3,10 @@ diffmark license (diffmark)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:diffmark`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -37,6 +41,7 @@ Raw Data
         "__impliedNames": [
             "diffmark",
             "diffmark license",
+            "scancode:diffmark",
             "diffmark License"
         ],
         "__impliedId": "diffmark",
@@ -48,6 +53,7 @@ Raw Data
                         "diffmark",
                         "diffmark",
                         "diffmark license",
+                        "scancode:diffmark",
                         "diffmark License"
                     ],
                     "__impliedId": "diffmark"
@@ -56,6 +62,7 @@ Raw Data
                 "otherNames": [
                     "diffmark",
                     "diffmark license",
+                    "scancode:diffmark",
                     "diffmark License"
                 ]
             },
@@ -129,7 +136,7 @@ Raw Data
                 "spdxId": "diffmark",
                 "_implications": {
                     "__impliedNames": [
-                        "diffmark",
+                        "scancode:diffmark",
                         "diffmark License",
                         "diffmark"
                     ],

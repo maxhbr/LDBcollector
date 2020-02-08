@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+enlightenment+`
+* `+scancode:enlightenment+`
 * `+EFL MIT-Style License+`
 
 === Comments on (easy) usability
@@ -48,7 +48,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     "__impliedNames": [
         "MIT-advertising",
         "Enlightenment License (e16)",
-        "enlightenment",
+        "scancode:enlightenment",
         "EFL MIT-Style License"
     ],
     "__impliedId": "MIT-advertising",
@@ -60,7 +60,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                     "MIT-advertising",
                     "MIT-advertising",
                     "Enlightenment License (e16)",
-                    "enlightenment",
+                    "scancode:enlightenment",
                     "EFL MIT-Style License"
                 ],
                 "__impliedId": "MIT-advertising"
@@ -69,7 +69,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             "otherNames": [
                 "MIT-advertising",
                 "Enlightenment License (e16)",
-                "enlightenment",
+                "scancode:enlightenment",
                 "EFL MIT-Style License"
             ]
         },
@@ -143,7 +143,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             "spdxId": "MIT-advertising",
             "_implications": {
                 "__impliedNames": [
-                    "enlightenment",
+                    "scancode:enlightenment",
                     "EFL MIT-Style License",
                     "MIT-advertising"
                 ],

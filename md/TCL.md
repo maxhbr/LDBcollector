@@ -3,6 +3,10 @@ TCL/TK License (TCL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:tcl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -77,7 +81,7 @@ Raw Data
         "__impliedNames": [
             "TCL",
             "TCL/TK License",
-            "tcl"
+            "scancode:tcl"
         ],
         "__impliedId": "TCL",
         "__isFsfFree": true,
@@ -88,7 +92,7 @@ Raw Data
                         "TCL",
                         "TCL",
                         "TCL/TK License",
-                        "tcl"
+                        "scancode:tcl"
                     ],
                     "__impliedId": "TCL"
                 },
@@ -96,7 +100,7 @@ Raw Data
                 "otherNames": [
                     "TCL",
                     "TCL/TK License",
-                    "tcl"
+                    "scancode:tcl"
                 ]
             },
             "SPDX": {
@@ -177,7 +181,7 @@ Raw Data
                 "spdxId": "TCL",
                 "_implications": {
                     "__impliedNames": [
-                        "tcl",
+                        "scancode:tcl",
                         "TCL/TK License",
                         "TCL"
                     ],

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:abstyles+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -44,7 +48,7 @@ permission notice identical to this one.
     "__impliedNames": [
         "Abstyles",
         "Abstyles License",
-        "abstyles"
+        "scancode:abstyles"
     ],
     "__impliedId": "Abstyles",
     "__isFsfFree": true,
@@ -55,7 +59,7 @@ permission notice identical to this one.
                     "Abstyles",
                     "Abstyles",
                     "Abstyles License",
-                    "abstyles"
+                    "scancode:abstyles"
                 ],
                 "__impliedId": "Abstyles"
             },
@@ -63,7 +67,7 @@ permission notice identical to this one.
             "otherNames": [
                 "Abstyles",
                 "Abstyles License",
-                "abstyles"
+                "scancode:abstyles"
             ]
         },
         "SPDX": {
@@ -136,7 +140,7 @@ permission notice identical to this one.
             "spdxId": "Abstyles",
             "_implications": {
                 "__impliedNames": [
-                    "abstyles",
+                    "scancode:abstyles",
                     "Abstyles License",
                     "Abstyles"
                 ],

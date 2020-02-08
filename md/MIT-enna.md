@@ -5,7 +5,7 @@ enna License (MIT-enna)
 
 **Other Names:**
 
--   `enna`
+-   `scancode:enna`
 
 Comments on (easy) usability
 ----------------------------
@@ -65,7 +65,7 @@ Raw Data
         "__impliedNames": [
             "MIT-enna",
             "enna License",
-            "enna"
+            "scancode:enna"
         ],
         "__impliedId": "MIT-enna",
         "__isFsfFree": true,
@@ -76,7 +76,7 @@ Raw Data
                         "MIT-enna",
                         "MIT-enna",
                         "enna License",
-                        "enna"
+                        "scancode:enna"
                     ],
                     "__impliedId": "MIT-enna"
                 },
@@ -84,7 +84,7 @@ Raw Data
                 "otherNames": [
                     "MIT-enna",
                     "enna License",
-                    "enna"
+                    "scancode:enna"
                 ]
             },
             "SPDX": {
@@ -157,7 +157,7 @@ Raw Data
                 "spdxId": "MIT-enna",
                 "_implications": {
                     "__impliedNames": [
-                        "enna",
+                        "scancode:enna",
                         "enna License",
                         "MIT-enna"
                     ],

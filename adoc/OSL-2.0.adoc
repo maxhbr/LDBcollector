@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:osl-2.0+`
 * `+OSL 2.0+`
 
 === Comments on (easy) usability
@@ -95,7 +96,7 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
     "__impliedNames": [
         "OSL-2.0",
         "Open Software License 2.0",
-        "osl-2.0",
+        "scancode:osl-2.0",
         "OSL 2.0"
     ],
     "__impliedId": "OSL-2.0",
@@ -107,7 +108,7 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
                     "OSL-2.0",
                     "OSL-2.0",
                     "Open Software License 2.0",
-                    "osl-2.0",
+                    "scancode:osl-2.0",
                     "OSL 2.0"
                 ],
                 "__impliedId": "OSL-2.0"
@@ -116,7 +117,7 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
             "otherNames": [
                 "OSL-2.0",
                 "Open Software License 2.0",
-                "osl-2.0",
+                "scancode:osl-2.0",
                 "OSL 2.0"
             ]
         },
@@ -202,7 +203,7 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
             "spdxId": "OSL-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "osl-2.0",
+                    "scancode:osl-2.0",
                     "OSL 2.0",
                     "OSL-2.0"
                 ],

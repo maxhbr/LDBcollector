@@ -2,7 +2,7 @@
     "__impliedNames": [
         "LGPL-3.0-only",
         "GNU Lesser General Public License v3.0 only",
-        "lgpl-3.0",
+        "scancode:lgpl-3.0",
         "LGPL 3.0",
         "GNU Lesser General Public License 3.0",
         "LGPL-3.0",
@@ -11,6 +11,7 @@
         "LGPL3",
         "LGPL (v3.0)",
         "LGPL (v3)",
+        "lgpl-3.0",
         "GNU LGPLv3",
         "GNU Lesser General Public License, Version 3.0",
         "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
@@ -61,7 +62,7 @@
                     "LGPL-3.0-only",
                     "LGPL-3.0-only",
                     "GNU Lesser General Public License v3.0 only",
-                    "lgpl-3.0",
+                    "scancode:lgpl-3.0",
                     "LGPL 3.0",
                     "GNU Lesser General Public License 3.0",
                     "LGPL-3.0",
@@ -77,7 +78,7 @@
             "otherNames": [
                 "LGPL-3.0-only",
                 "GNU Lesser General Public License v3.0 only",
-                "lgpl-3.0",
+                "scancode:lgpl-3.0",
                 "LGPL 3.0",
                 "GNU Lesser General Public License 3.0",
                 "LGPL-3.0",
@@ -196,7 +197,7 @@
             "spdxId": "LGPL-3.0-only",
             "_implications": {
                 "__impliedNames": [
-                    "lgpl-3.0",
+                    "scancode:lgpl-3.0",
                     "LGPL 3.0",
                     "LGPL-3.0-only"
                 ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+x11-tiff+`
+* `+scancode:x11-tiff+`
 * `+X11-Style (Tiff)+`
 
 === Comments on (easy) usability
@@ -76,7 +76,7 @@ OF THIS SOFTWARE.
     "__impliedNames": [
         "libtiff",
         "libtiff License",
-        "x11-tiff",
+        "scancode:x11-tiff",
         "X11-Style (Tiff)"
     ],
     "__impliedId": "libtiff",
@@ -88,7 +88,7 @@ OF THIS SOFTWARE.
                     "libtiff",
                     "libtiff",
                     "libtiff License",
-                    "x11-tiff",
+                    "scancode:x11-tiff",
                     "X11-Style (Tiff)"
                 ],
                 "__impliedId": "libtiff"
@@ -97,7 +97,7 @@ OF THIS SOFTWARE.
             "otherNames": [
                 "libtiff",
                 "libtiff License",
-                "x11-tiff",
+                "scancode:x11-tiff",
                 "X11-Style (Tiff)"
             ]
         },
@@ -181,7 +181,7 @@ OF THIS SOFTWARE.
             "spdxId": "libtiff",
             "_implications": {
                 "__impliedNames": [
-                    "x11-tiff",
+                    "scancode:x11-tiff",
                     "X11-Style (Tiff)",
                     "libtiff"
                 ],

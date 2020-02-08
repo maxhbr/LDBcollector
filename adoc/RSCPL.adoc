@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+ricoh-1.0+`
+* `+scancode:ricoh-1.0+`
 * `+Ricoh Source Code Public License 1.0+`
 * `+The Ricoh Source Code Public License+`
 * `+License :: OSI Approved :: Ricoh Source Code Public License+`
@@ -189,7 +189,7 @@ Contributor(s):  ."
     "__impliedNames": [
         "RSCPL",
         "Ricoh Source Code Public License",
-        "ricoh-1.0",
+        "scancode:ricoh-1.0",
         "Ricoh Source Code Public License 1.0",
         "The Ricoh Source Code Public License",
         "License :: OSI Approved :: Ricoh Source Code Public License"
@@ -229,7 +229,7 @@ Contributor(s):  ."
                     "RSCPL",
                     "RSCPL",
                     "Ricoh Source Code Public License",
-                    "ricoh-1.0",
+                    "scancode:ricoh-1.0",
                     "Ricoh Source Code Public License 1.0",
                     "The Ricoh Source Code Public License",
                     "License :: OSI Approved :: Ricoh Source Code Public License"
@@ -240,7 +240,7 @@ Contributor(s):  ."
             "otherNames": [
                 "RSCPL",
                 "Ricoh Source Code Public License",
-                "ricoh-1.0",
+                "scancode:ricoh-1.0",
                 "Ricoh Source Code Public License 1.0",
                 "The Ricoh Source Code Public License",
                 "License :: OSI Approved :: Ricoh Source Code Public License"
@@ -331,7 +331,7 @@ Contributor(s):  ."
             "spdxId": "RSCPL",
             "_implications": {
                 "__impliedNames": [
-                    "ricoh-1.0",
+                    "scancode:ricoh-1.0",
                     "Ricoh Source Code Public License 1.0",
                     "RSCPL"
                 ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "NOSL",
         "Netizen Open Source License",
-        "nosl-1.0",
+        "scancode:nosl-1.0",
         "NOSL 1.0"
     ],
     "__impliedId": "NOSL",
@@ -14,7 +14,7 @@
                     "NOSL",
                     "NOSL",
                     "Netizen Open Source License",
-                    "nosl-1.0",
+                    "scancode:nosl-1.0",
                     "NOSL 1.0"
                 ],
                 "__impliedId": "NOSL"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "NOSL",
                 "Netizen Open Source License",
-                "nosl-1.0",
+                "scancode:nosl-1.0",
                 "NOSL 1.0"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "NOSL",
             "_implications": {
                 "__impliedNames": [
-                    "nosl-1.0",
+                    "scancode:nosl-1.0",
                     "NOSL 1.0",
                     "NOSL"
                 ],

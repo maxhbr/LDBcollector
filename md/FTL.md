@@ -5,7 +5,7 @@ Freetype Project License (FTL)
 
 **Other Names:**
 
--   `freetype`
+-   `scancode:freetype`
 
 Comments on (easy) usability
 ----------------------------
@@ -236,7 +236,7 @@ Raw Data
         "__impliedNames": [
             "FTL",
             "Freetype Project License",
-            "freetype",
+            "scancode:freetype",
             "FreeType Project License"
         ],
         "__impliedId": "FTL",
@@ -247,7 +247,7 @@ Raw Data
                         "FTL",
                         "FTL",
                         "Freetype Project License",
-                        "freetype",
+                        "scancode:freetype",
                         "FreeType Project License"
                     ],
                     "__impliedId": "FTL"
@@ -256,7 +256,7 @@ Raw Data
                 "otherNames": [
                     "FTL",
                     "Freetype Project License",
-                    "freetype",
+                    "scancode:freetype",
                     "FreeType Project License"
                 ]
             },
@@ -324,7 +324,7 @@ Raw Data
                 "spdxId": "FTL",
                 "_implications": {
                     "__impliedNames": [
-                        "freetype",
+                        "scancode:freetype",
                         "FreeType Project License",
                         "FTL"
                     ],

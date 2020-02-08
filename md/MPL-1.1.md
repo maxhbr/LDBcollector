@@ -5,6 +5,8 @@ Mozilla Public License 1.1 (MPL-1.1)
 
 **Other Names:**
 
+-   `scancode:mpl-1.1`
+
 -   `MPL 1.1`
 
 -   `Mozilla Public License, Version 1.1`
@@ -279,7 +281,7 @@ Raw Data
         "__impliedNames": [
             "MPL-1.1",
             "Mozilla Public License 1.1",
-            "mpl-1.1",
+            "scancode:mpl-1.1",
             "MPL 1.1",
             "Mozilla Public License, Version 1.1",
             "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
@@ -322,7 +324,7 @@ Raw Data
                         "MPL-1.1",
                         "MPL-1.1",
                         "Mozilla Public License 1.1",
-                        "mpl-1.1",
+                        "scancode:mpl-1.1",
                         "MPL 1.1",
                         "Mozilla Public License, Version 1.1",
                         "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
@@ -333,7 +335,7 @@ Raw Data
                 "otherNames": [
                     "MPL-1.1",
                     "Mozilla Public License 1.1",
-                    "mpl-1.1",
+                    "scancode:mpl-1.1",
                     "MPL 1.1",
                     "Mozilla Public License, Version 1.1",
                     "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
@@ -417,7 +419,7 @@ Raw Data
                 "spdxId": "MPL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "mpl-1.1",
+                        "scancode:mpl-1.1",
                         "MPL 1.1",
                         "MPL-1.1"
                     ],

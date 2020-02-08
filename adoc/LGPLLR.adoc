@@ -9,6 +9,10 @@
 |Classification |WeakCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:lgpllr+`
+
 === Comments on (easy) usability
 
 === URLs
@@ -260,7 +264,7 @@ END OF TERMS AND CONDITIONS
     "__impliedNames": [
         "LGPLLR",
         "Lesser General Public License For Linguistic Resources",
-        "lgpllr"
+        "scancode:lgpllr"
     ],
     "__impliedId": "LGPLLR",
     "facts": {
@@ -270,7 +274,7 @@ END OF TERMS AND CONDITIONS
                     "LGPLLR",
                     "LGPLLR",
                     "Lesser General Public License For Linguistic Resources",
-                    "lgpllr"
+                    "scancode:lgpllr"
                 ],
                 "__impliedId": "LGPLLR"
             },
@@ -278,7 +282,7 @@ END OF TERMS AND CONDITIONS
             "otherNames": [
                 "LGPLLR",
                 "Lesser General Public License For Linguistic Resources",
-                "lgpllr"
+                "scancode:lgpllr"
             ]
         },
         "SPDX": {
@@ -325,7 +329,7 @@ END OF TERMS AND CONDITIONS
             "spdxId": "LGPLLR",
             "_implications": {
                 "__impliedNames": [
-                    "lgpllr",
+                    "scancode:lgpllr",
                     "LGPLLR",
                     "LGPLLR"
                 ],

@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | WeakCopyleft                                   |
 
+*Other Names:*
+
+- =scancode:gl2ps=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -53,7 +57,7 @@
       "__impliedNames": [
           "GL2PS",
           "GL2PS License",
-          "gl2ps"
+          "scancode:gl2ps"
       ],
       "__impliedId": "GL2PS",
       "__isFsfFree": true,
@@ -64,7 +68,7 @@
                       "GL2PS",
                       "GL2PS",
                       "GL2PS License",
-                      "gl2ps"
+                      "scancode:gl2ps"
                   ],
                   "__impliedId": "GL2PS"
               },
@@ -72,7 +76,7 @@
               "otherNames": [
                   "GL2PS",
                   "GL2PS License",
-                  "gl2ps"
+                  "scancode:gl2ps"
               ]
           },
           "SPDX": {
@@ -145,7 +149,7 @@
               "spdxId": "GL2PS",
               "_implications": {
                   "__impliedNames": [
-                      "gl2ps",
+                      "scancode:gl2ps",
                       "GL2PS License",
                       "GL2PS"
                   ],

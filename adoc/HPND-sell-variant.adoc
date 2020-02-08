@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+x11-keith-packard+`
+* `+scancode:x11-keith-packard+`
 * `+X11-Style (Keith Packard)+`
-* `+historical-sell-variant+`
+* `+scancode:historical-sell-variant+`
 
 === Comments on (easy) usability
 
@@ -54,9 +54,9 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
     "__impliedNames": [
         "HPND-sell-variant",
         "Historical Permission Notice and Disclaimer - sell variant",
-        "x11-keith-packard",
+        "scancode:x11-keith-packard",
         "X11-Style (Keith Packard)",
-        "historical-sell-variant"
+        "scancode:historical-sell-variant"
     ],
     "__impliedId": "HPND-sell-variant",
     "facts": {
@@ -66,7 +66,7 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
                     "HPND-sell-variant",
                     "HPND-sell-variant",
                     "Historical Permission Notice and Disclaimer - sell variant",
-                    "x11-keith-packard",
+                    "scancode:x11-keith-packard",
                     "X11-Style (Keith Packard)"
                 ],
                 "__impliedId": "HPND-sell-variant"
@@ -75,7 +75,7 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
             "otherNames": [
                 "HPND-sell-variant",
                 "Historical Permission Notice and Disclaimer - sell variant",
-                "x11-keith-packard",
+                "scancode:x11-keith-packard",
                 "X11-Style (Keith Packard)"
             ]
         },
@@ -126,7 +126,7 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
             "spdxId": "HPND-sell-variant",
             "_implications": {
                 "__impliedNames": [
-                    "x11-keith-packard",
+                    "scancode:x11-keith-packard",
                     "X11-Style (Keith Packard)",
                     "HPND-sell-variant"
                 ],

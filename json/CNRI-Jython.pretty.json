@@ -2,7 +2,7 @@
     "__impliedNames": [
         "CNRI-Jython",
         "CNRI Jython License",
-        "cnri-jython"
+        "scancode:cnri-jython"
     ],
     "__impliedId": "CNRI-Jython",
     "facts": {
@@ -12,7 +12,7 @@
                     "CNRI-Jython",
                     "CNRI-Jython",
                     "CNRI Jython License",
-                    "cnri-jython"
+                    "scancode:cnri-jython"
                 ],
                 "__impliedId": "CNRI-Jython"
             },
@@ -20,7 +20,7 @@
             "otherNames": [
                 "CNRI-Jython",
                 "CNRI Jython License",
-                "cnri-jython"
+                "scancode:cnri-jython"
             ]
         },
         "SPDX": {
@@ -67,7 +67,7 @@
             "spdxId": "CNRI-Jython",
             "_implications": {
                 "__impliedNames": [
-                    "cnri-jython",
+                    "scancode:cnri-jython",
                     "CNRI Jython License",
                     "CNRI-Jython"
                 ],

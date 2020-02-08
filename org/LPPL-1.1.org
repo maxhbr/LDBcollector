@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:lppl-1.1=
+
 - =LPPL 1.1=
 
 ** Comments on (easy) usability
@@ -334,7 +336,7 @@
       "__impliedNames": [
           "LPPL-1.1",
           "LaTeX Project Public License v1.1",
-          "lppl-1.1",
+          "scancode:lppl-1.1",
           "LPPL 1.1"
       ],
       "__impliedId": "LPPL-1.1",
@@ -345,7 +347,7 @@
                       "LPPL-1.1",
                       "LPPL-1.1",
                       "LaTeX Project Public License v1.1",
-                      "lppl-1.1",
+                      "scancode:lppl-1.1",
                       "LPPL 1.1"
                   ],
                   "__impliedId": "LPPL-1.1"
@@ -354,7 +356,7 @@
               "otherNames": [
                   "LPPL-1.1",
                   "LaTeX Project Public License v1.1",
-                  "lppl-1.1",
+                  "scancode:lppl-1.1",
                   "LPPL 1.1"
               ]
           },
@@ -402,7 +404,7 @@
               "spdxId": "LPPL-1.1",
               "_implications": {
                   "__impliedNames": [
-                      "lppl-1.1",
+                      "scancode:lppl-1.1",
                       "LPPL 1.1",
                       "LPPL-1.1"
                   ],

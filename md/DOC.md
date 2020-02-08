@@ -5,7 +5,7 @@ DOC License (DOC)
 
 **Other Names:**
 
--   `ace-tao`
+-   `scancode:ace-tao`
 
 -   `ACE TAO License`
 
@@ -58,7 +58,7 @@ Raw Data
         "__impliedNames": [
             "DOC",
             "DOC License",
-            "ace-tao",
+            "scancode:ace-tao",
             "ACE TAO License"
         ],
         "__impliedId": "DOC",
@@ -70,7 +70,7 @@ Raw Data
                         "DOC",
                         "DOC",
                         "DOC License",
-                        "ace-tao",
+                        "scancode:ace-tao",
                         "ACE TAO License"
                     ],
                     "__impliedId": "DOC"
@@ -79,7 +79,7 @@ Raw Data
                 "otherNames": [
                     "DOC",
                     "DOC License",
-                    "ace-tao",
+                    "scancode:ace-tao",
                     "ACE TAO License"
                 ]
             },
@@ -153,7 +153,7 @@ Raw Data
                 "spdxId": "DOC",
                 "_implications": {
                     "__impliedNames": [
-                        "ace-tao",
+                        "scancode:ace-tao",
                         "ACE TAO License",
                         "DOC"
                     ],

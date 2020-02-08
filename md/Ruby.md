@@ -3,6 +3,10 @@ Ruby License (Ruby)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:ruby`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -104,7 +108,7 @@ Raw Data
         "__impliedNames": [
             "Ruby",
             "Ruby License",
-            "ruby"
+            "scancode:ruby"
         ],
         "__impliedId": "Ruby",
         "__isFsfFree": true,
@@ -115,7 +119,7 @@ Raw Data
                         "Ruby",
                         "Ruby",
                         "Ruby License",
-                        "ruby"
+                        "scancode:ruby"
                     ],
                     "__impliedId": "Ruby"
                 },
@@ -123,7 +127,7 @@ Raw Data
                 "otherNames": [
                     "Ruby",
                     "Ruby License",
-                    "ruby"
+                    "scancode:ruby"
                 ]
             },
             "SPDX": {
@@ -198,7 +202,7 @@ Raw Data
                 "spdxId": "Ruby",
                 "_implications": {
                     "__impliedNames": [
-                        "ruby",
+                        "scancode:ruby",
                         "Ruby License",
                         "Ruby"
                     ],

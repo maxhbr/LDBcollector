@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:nlod-1.0+`
+
 === Comments on (easy) usability
 
 === URLs
@@ -109,7 +113,7 @@ This licence, including its formation, and any disputes and claims arising in co
     "__impliedNames": [
         "NLOD-1.0",
         "Norwegian Licence for Open Government Data",
-        "nlod-1.0"
+        "scancode:nlod-1.0"
     ],
     "__impliedId": "NLOD-1.0",
     "facts": {
@@ -119,7 +123,7 @@ This licence, including its formation, and any disputes and claims arising in co
                     "NLOD-1.0",
                     "NLOD-1.0",
                     "Norwegian Licence for Open Government Data",
-                    "nlod-1.0"
+                    "scancode:nlod-1.0"
                 ],
                 "__impliedId": "NLOD-1.0"
             },
@@ -127,7 +131,7 @@ This licence, including its formation, and any disputes and claims arising in co
             "otherNames": [
                 "NLOD-1.0",
                 "Norwegian Licence for Open Government Data",
-                "nlod-1.0"
+                "scancode:nlod-1.0"
             ]
         },
         "SPDX": {
@@ -176,7 +180,7 @@ This licence, including its formation, and any disputes and claims arising in co
             "spdxId": "NLOD-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "nlod-1.0",
+                    "scancode:nlod-1.0",
                     "NLOD-1.0",
                     "NLOD-1.0"
                 ],

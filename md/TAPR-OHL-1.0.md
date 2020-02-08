@@ -3,6 +3,10 @@ TAPR Open Hardware License v1.0 (TAPR-OHL-1.0)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:tapr-ohl-1.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -163,7 +167,7 @@ Raw Data
         "__impliedNames": [
             "TAPR-OHL-1.0",
             "TAPR Open Hardware License v1.0",
-            "tapr-ohl-1.0"
+            "scancode:tapr-ohl-1.0"
         ],
         "__impliedId": "TAPR-OHL-1.0",
         "facts": {
@@ -173,7 +177,7 @@ Raw Data
                         "TAPR-OHL-1.0",
                         "TAPR-OHL-1.0",
                         "TAPR Open Hardware License v1.0",
-                        "tapr-ohl-1.0"
+                        "scancode:tapr-ohl-1.0"
                     ],
                     "__impliedId": "TAPR-OHL-1.0"
                 },
@@ -181,7 +185,7 @@ Raw Data
                 "otherNames": [
                     "TAPR-OHL-1.0",
                     "TAPR Open Hardware License v1.0",
-                    "tapr-ohl-1.0"
+                    "scancode:tapr-ohl-1.0"
                 ]
             },
             "SPDX": {
@@ -230,7 +234,7 @@ Raw Data
                 "spdxId": "TAPR-OHL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "tapr-ohl-1.0",
+                        "scancode:tapr-ohl-1.0",
                         "TAPR Open Hardware License v1.0",
                         "TAPR-OHL-1.0"
                     ],

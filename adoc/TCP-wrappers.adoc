@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:tcp-wrappers+`
+
 === Comments on (easy) usability
 
 * **↑**Google Classification is NOTICE (source:
@@ -69,7 +73,7 @@ v8BeBE0bdjeVmOQYRQfXgt3J2q0b8x8Q5a/LCLVLh8k6DFGg8AfEbLDQWhi1JiXC
     "__impliedNames": [
         "TCP-wrappers",
         "TCP Wrappers License",
-        "tcp-wrappers"
+        "scancode:tcp-wrappers"
     ],
     "__impliedId": "TCP-wrappers",
     "facts": {
@@ -79,7 +83,7 @@ v8BeBE0bdjeVmOQYRQfXgt3J2q0b8x8Q5a/LCLVLh8k6DFGg8AfEbLDQWhi1JiXC
                     "TCP-wrappers",
                     "TCP-wrappers",
                     "TCP Wrappers License",
-                    "tcp-wrappers"
+                    "scancode:tcp-wrappers"
                 ],
                 "__impliedId": "TCP-wrappers"
             },
@@ -87,7 +91,7 @@ v8BeBE0bdjeVmOQYRQfXgt3J2q0b8x8Q5a/LCLVLh8k6DFGg8AfEbLDQWhi1JiXC
             "otherNames": [
                 "TCP-wrappers",
                 "TCP Wrappers License",
-                "tcp-wrappers"
+                "scancode:tcp-wrappers"
             ]
         },
         "SPDX": {
@@ -136,7 +140,7 @@ v8BeBE0bdjeVmOQYRQfXgt3J2q0b8x8Q5a/LCLVLh8k6DFGg8AfEbLDQWhi1JiXC
             "spdxId": "TCP-wrappers",
             "_implications": {
                 "__impliedNames": [
-                    "tcp-wrappers",
+                    "scancode:tcp-wrappers",
                     "TCP Wrappers License",
                     "TCP-wrappers"
                 ],

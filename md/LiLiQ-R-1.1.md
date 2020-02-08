@@ -5,6 +5,8 @@ Licence Libre du Québec – Réciprocité version 1.1 (LiLiQ-R-1.1)
 
 **Other Names:**
 
+-   `scancode:liliq-r-1.1`
+
 -   `Licence Libre du Québec – Réciprocité, Version 1.1`
 
 Comments on (easy) usability
@@ -128,7 +130,7 @@ Raw Data
         "__impliedNames": [
             "LiLiQ-R-1.1",
             "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-            "liliq-r-1.1",
+            "scancode:liliq-r-1.1",
             "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
         ],
         "__impliedId": "LiLiQ-R-1.1",
@@ -139,7 +141,7 @@ Raw Data
                         "LiLiQ-R-1.1",
                         "LiLiQ-R-1.1",
                         "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-                        "liliq-r-1.1",
+                        "scancode:liliq-r-1.1",
                         "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
                     ],
                     "__impliedId": "LiLiQ-R-1.1"
@@ -148,7 +150,7 @@ Raw Data
                 "otherNames": [
                     "LiLiQ-R-1.1",
                     "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-                    "liliq-r-1.1",
+                    "scancode:liliq-r-1.1",
                     "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
                 ]
             },
@@ -210,7 +212,7 @@ Raw Data
                 "spdxId": "LiLiQ-R-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "liliq-r-1.1",
+                        "scancode:liliq-r-1.1",
                         "LiLiQ-R-1.1",
                         "LiLiQ-R-1.1"
                     ],

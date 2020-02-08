@@ -5,6 +5,8 @@ LaTeX Project Public License v1.3a (LPPL-1.3a)
 
 **Other Names:**
 
+-   `scancode:lppl-1.3a`
+
 -   `LPPL 1.3a`
 
 Comments on (easy) usability
@@ -424,7 +426,7 @@ Raw Data
         "__impliedNames": [
             "LPPL-1.3a",
             "LaTeX Project Public License v1.3a",
-            "lppl-1.3a",
+            "scancode:lppl-1.3a",
             "LPPL 1.3a"
         ],
         "__impliedId": "LPPL-1.3a",
@@ -435,7 +437,7 @@ Raw Data
                         "LPPL-1.3a",
                         "LPPL-1.3a",
                         "LaTeX Project Public License v1.3a",
-                        "lppl-1.3a",
+                        "scancode:lppl-1.3a",
                         "LPPL 1.3a"
                     ],
                     "__impliedId": "LPPL-1.3a"
@@ -444,7 +446,7 @@ Raw Data
                 "otherNames": [
                     "LPPL-1.3a",
                     "LaTeX Project Public License v1.3a",
-                    "lppl-1.3a",
+                    "scancode:lppl-1.3a",
                     "LPPL 1.3a"
                 ]
             },
@@ -492,7 +494,7 @@ Raw Data
                 "spdxId": "LPPL-1.3a",
                 "_implications": {
                     "__impliedNames": [
-                        "lppl-1.3a",
+                        "scancode:lppl-1.3a",
                         "LPPL 1.3a",
                         "LPPL-1.3a"
                     ],

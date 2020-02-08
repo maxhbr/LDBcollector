@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:borceux+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -53,7 +57,7 @@ francis dot borceux at uclouvain dot be.
     "__impliedNames": [
         "Borceux",
         "Borceux license",
-        "borceux",
+        "scancode:borceux",
         "Borceux License"
     ],
     "__impliedId": "Borceux",
@@ -65,7 +69,7 @@ francis dot borceux at uclouvain dot be.
                     "Borceux",
                     "Borceux",
                     "Borceux license",
-                    "borceux",
+                    "scancode:borceux",
                     "Borceux License"
                 ],
                 "__impliedId": "Borceux"
@@ -74,7 +78,7 @@ francis dot borceux at uclouvain dot be.
             "otherNames": [
                 "Borceux",
                 "Borceux license",
-                "borceux",
+                "scancode:borceux",
                 "Borceux License"
             ]
         },
@@ -148,7 +152,7 @@ francis dot borceux at uclouvain dot be.
             "spdxId": "Borceux",
             "_implications": {
                 "__impliedNames": [
-                    "borceux",
+                    "scancode:borceux",
                     "Borceux License",
                     "Borceux"
                 ],

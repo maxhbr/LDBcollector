@@ -5,6 +5,8 @@ European Union Public License 1.2 (EUPL-1.2)
 
 **Other Names:**
 
+-   `scancode:eupl-1.2`
+
 -   `EUPL 1.2`
 
 -   `European Union Public Licence 1.2`
@@ -184,8 +186,9 @@ Raw Data
         "__impliedNames": [
             "EUPL-1.2",
             "European Union Public License 1.2",
-            "eupl-1.2",
+            "scancode:eupl-1.2",
             "EUPL 1.2",
+            "eupl-1.2",
             "European Union Public Licence 1.2"
         ],
         "__impliedId": "EUPL-1.2",
@@ -197,8 +200,9 @@ Raw Data
                         "EUPL-1.2",
                         "EUPL-1.2",
                         "European Union Public License 1.2",
-                        "eupl-1.2",
+                        "scancode:eupl-1.2",
                         "EUPL 1.2",
+                        "eupl-1.2",
                         "European Union Public Licence 1.2"
                     ],
                     "__impliedId": "EUPL-1.2"
@@ -207,8 +211,9 @@ Raw Data
                 "otherNames": [
                     "EUPL-1.2",
                     "European Union Public License 1.2",
-                    "eupl-1.2",
+                    "scancode:eupl-1.2",
                     "EUPL 1.2",
+                    "eupl-1.2",
                     "European Union Public Licence 1.2"
                 ]
             },
@@ -292,7 +297,7 @@ Raw Data
                 "spdxId": "EUPL-1.2",
                 "_implications": {
                     "__impliedNames": [
-                        "eupl-1.2",
+                        "scancode:eupl-1.2",
                         "EUPL 1.2",
                         "EUPL-1.2"
                     ],

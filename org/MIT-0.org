@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:mit-0=
+
 - =MIT-0-Clause=
 
 ** Comments on (easy) usability
@@ -58,7 +60,7 @@
       "__impliedNames": [
           "MIT-0",
           "MIT No Attribution",
-          "mit-0",
+          "scancode:mit-0",
           "MIT-0-Clause"
       ],
       "__impliedId": "MIT-0",
@@ -69,7 +71,7 @@
                       "MIT-0",
                       "MIT-0",
                       "MIT No Attribution",
-                      "mit-0",
+                      "scancode:mit-0",
                       "MIT-0-Clause"
                   ],
                   "__impliedId": "MIT-0"
@@ -78,7 +80,7 @@
               "otherNames": [
                   "MIT-0",
                   "MIT No Attribution",
-                  "mit-0",
+                  "scancode:mit-0",
                   "MIT-0-Clause"
               ]
           },
@@ -148,7 +150,7 @@
               "spdxId": "MIT-0",
               "_implications": {
                   "__impliedNames": [
-                      "mit-0",
+                      "scancode:mit-0",
                       "MIT-0-Clause",
                       "MIT-0"
                   ],

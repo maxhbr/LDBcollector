@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:cecill-c=
+
 - =CeCILL-C License=
 
 ** Comments on (easy) usability
@@ -290,7 +292,7 @@
       "__impliedNames": [
           "CECILL-C",
           "CeCILL-C Free Software License Agreement",
-          "cecill-c",
+          "scancode:cecill-c",
           "CeCILL-C License"
       ],
       "__impliedId": "CECILL-C",
@@ -302,7 +304,7 @@
                       "CECILL-C",
                       "CECILL-C",
                       "CeCILL-C Free Software License Agreement",
-                      "cecill-c",
+                      "scancode:cecill-c",
                       "CeCILL-C License"
                   ],
                   "__impliedId": "CECILL-C"
@@ -311,7 +313,7 @@
               "otherNames": [
                   "CECILL-C",
                   "CeCILL-C Free Software License Agreement",
-                  "cecill-c",
+                  "scancode:cecill-c",
                   "CeCILL-C License"
               ]
           },
@@ -387,7 +389,7 @@
               "spdxId": "CECILL-C",
               "_implications": {
                   "__impliedNames": [
-                      "cecill-c",
+                      "scancode:cecill-c",
                       "CeCILL-C License",
                       "CECILL-C"
                   ],

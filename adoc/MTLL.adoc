@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:mtll+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -59,7 +63,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
     "__impliedNames": [
         "MTLL",
         "Matrix Template Library License",
-        "mtll"
+        "scancode:mtll"
     ],
     "__impliedId": "MTLL",
     "__isFsfFree": true,
@@ -70,7 +74,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
                     "MTLL",
                     "MTLL",
                     "Matrix Template Library License",
-                    "mtll"
+                    "scancode:mtll"
                 ],
                 "__impliedId": "MTLL"
             },
@@ -78,7 +82,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
             "otherNames": [
                 "MTLL",
                 "Matrix Template Library License",
-                "mtll"
+                "scancode:mtll"
             ]
         },
         "SPDX": {
@@ -151,7 +155,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
             "spdxId": "MTLL",
             "_implications": {
                 "__impliedNames": [
-                    "mtll",
+                    "scancode:mtll",
                     "Matrix Template Library License",
                     "MTLL"
                 ],

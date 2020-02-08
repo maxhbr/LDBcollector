@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+egenix-1.1.0+`
+* `+scancode:egenix-1.1.0+`
 * `+eGenix Public License 1.1.0+`
 
 === Comments on (easy) usability
@@ -84,7 +84,7 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
     "__impliedNames": [
         "eGenix",
         "eGenix.com Public License 1.1.0",
-        "egenix-1.1.0",
+        "scancode:egenix-1.1.0",
         "eGenix Public License 1.1.0"
     ],
     "__impliedId": "eGenix",
@@ -96,7 +96,7 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
                     "eGenix",
                     "eGenix",
                     "eGenix.com Public License 1.1.0",
-                    "egenix-1.1.0",
+                    "scancode:egenix-1.1.0",
                     "eGenix Public License 1.1.0"
                 ],
                 "__impliedId": "eGenix"
@@ -105,7 +105,7 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
             "otherNames": [
                 "eGenix",
                 "eGenix.com Public License 1.1.0",
-                "egenix-1.1.0",
+                "scancode:egenix-1.1.0",
                 "eGenix Public License 1.1.0"
             ]
         },
@@ -184,7 +184,7 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
             "spdxId": "eGenix",
             "_implications": {
                 "__impliedNames": [
-                    "egenix-1.1.0",
+                    "scancode:egenix-1.1.0",
                     "eGenix Public License 1.1.0",
                     "eGenix"
                 ],

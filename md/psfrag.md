@@ -3,6 +3,10 @@ psfrag License (psfrag)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:psfrag`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -34,7 +38,8 @@ Raw Data
     {
         "__impliedNames": [
             "psfrag",
-            "psfrag License"
+            "psfrag License",
+            "scancode:psfrag"
         ],
         "__impliedId": "psfrag",
         "facts": {
@@ -43,14 +48,16 @@ Raw Data
                     "__impliedNames": [
                         "psfrag",
                         "psfrag",
-                        "psfrag License"
+                        "psfrag License",
+                        "scancode:psfrag"
                     ],
                     "__impliedId": "psfrag"
                 },
                 "shortname": "psfrag",
                 "otherNames": [
                     "psfrag",
-                    "psfrag License"
+                    "psfrag License",
+                    "scancode:psfrag"
                 ]
             },
             "SPDX": {
@@ -122,7 +129,7 @@ Raw Data
                 "spdxId": "psfrag",
                 "_implications": {
                     "__impliedNames": [
-                        "psfrag",
+                        "scancode:psfrag",
                         "psfrag License",
                         "psfrag"
                     ],

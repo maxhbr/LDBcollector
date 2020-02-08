@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:afmparse=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -55,7 +59,7 @@
       "__impliedNames": [
           "Afmparse",
           "Afmparse License",
-          "afmparse",
+          "scancode:afmparse",
           "afmparse License"
       ],
       "__impliedId": "Afmparse",
@@ -67,7 +71,7 @@
                       "Afmparse",
                       "Afmparse",
                       "Afmparse License",
-                      "afmparse",
+                      "scancode:afmparse",
                       "afmparse License"
                   ],
                   "__impliedId": "Afmparse"
@@ -76,7 +80,7 @@
               "otherNames": [
                   "Afmparse",
                   "Afmparse License",
-                  "afmparse",
+                  "scancode:afmparse",
                   "afmparse License"
               ]
           },
@@ -150,7 +154,7 @@
               "spdxId": "Afmparse",
               "_implications": {
                   "__impliedNames": [
-                      "afmparse",
+                      "scancode:afmparse",
                       "afmparse License",
                       "Afmparse"
                   ],

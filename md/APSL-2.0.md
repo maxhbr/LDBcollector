@@ -5,6 +5,8 @@ Apple Public Source License 2.0 (APSL-2.0)
 
 **Other Names:**
 
+-   `scancode:apsl-2.0`
+
 -   `APSL 2.0`
 
 -   `Apple Public Source License, Version 2.0`
@@ -153,7 +155,7 @@ Raw Data
         "__impliedNames": [
             "APSL-2.0",
             "Apple Public Source License 2.0",
-            "apsl-2.0",
+            "scancode:apsl-2.0",
             "APSL 2.0",
             "Apple Public Source License, Version 2.0",
             "License :: OSI Approved :: Apple Public Source License"
@@ -198,7 +200,7 @@ Raw Data
                         "APSL-2.0",
                         "APSL-2.0",
                         "Apple Public Source License 2.0",
-                        "apsl-2.0",
+                        "scancode:apsl-2.0",
                         "APSL 2.0",
                         "Apple Public Source License, Version 2.0",
                         "License :: OSI Approved :: Apple Public Source License"
@@ -209,7 +211,7 @@ Raw Data
                 "otherNames": [
                     "APSL-2.0",
                     "Apple Public Source License 2.0",
-                    "apsl-2.0",
+                    "scancode:apsl-2.0",
                     "APSL 2.0",
                     "Apple Public Source License, Version 2.0",
                     "License :: OSI Approved :: Apple Public Source License"
@@ -294,7 +296,7 @@ Raw Data
                 "spdxId": "APSL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "apsl-2.0",
+                        "scancode:apsl-2.0",
                         "APSL 2.0",
                         "APSL-2.0"
                     ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Crossword",
         "Crossword License",
-        "crossword"
+        "scancode:crossword"
     ],
     "__impliedId": "Crossword",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "Crossword",
                     "Crossword",
                     "Crossword License",
-                    "crossword"
+                    "scancode:crossword"
                 ],
                 "__impliedId": "Crossword"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "Crossword",
                 "Crossword License",
-                "crossword"
+                "scancode:crossword"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "Crossword",
             "_implications": {
                 "__impliedNames": [
-                    "crossword",
+                    "scancode:crossword",
                     "Crossword License",
                     "Crossword"
                 ],

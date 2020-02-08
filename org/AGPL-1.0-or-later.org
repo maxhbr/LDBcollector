@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =agpl-1.0-plus=
+- =scancode:agpl-1.0-plus=
 
 - =AGPL 1.0 or later=
 
@@ -43,7 +43,7 @@
       "__impliedNames": [
           "AGPL-1.0-or-later",
           "Affero General Public License v1.0 or later",
-          "agpl-1.0-plus",
+          "scancode:agpl-1.0-plus",
           "AGPL 1.0 or later"
       ],
       "__impliedId": "AGPL-1.0-or-later",
@@ -54,7 +54,7 @@
                       "AGPL-1.0-or-later",
                       "AGPL-1.0-or-later",
                       "Affero General Public License v1.0 or later",
-                      "agpl-1.0-plus",
+                      "scancode:agpl-1.0-plus",
                       "AGPL 1.0 or later"
                   ],
                   "__impliedId": "AGPL-1.0-or-later"
@@ -63,7 +63,7 @@
               "otherNames": [
                   "AGPL-1.0-or-later",
                   "Affero General Public License v1.0 or later",
-                  "agpl-1.0-plus",
+                  "scancode:agpl-1.0-plus",
                   "AGPL 1.0 or later"
               ]
           },
@@ -111,7 +111,7 @@
               "spdxId": "AGPL-1.0-or-later",
               "_implications": {
                   "__impliedNames": [
-                      "agpl-1.0-plus",
+                      "scancode:agpl-1.0-plus",
                       "AGPL 1.0 or later",
                       "AGPL-1.0-or-later"
                   ],

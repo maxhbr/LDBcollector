@@ -5,6 +5,8 @@ Eiffel Forum License v2.0 (EFL-2.0)
 
 **Other Names:**
 
+-   `scancode:efl-2.0`
+
 -   `EFL 2.0`
 
 -   `Eiffel Forum License, Version 2`
@@ -89,7 +91,7 @@ Raw Data
         "__impliedNames": [
             "EFL-2.0",
             "Eiffel Forum License v2.0",
-            "efl-2.0",
+            "scancode:efl-2.0",
             "EFL 2.0",
             "Eiffel Forum License, Version 2",
             "License :: OSI Approved :: Eiffel Forum License",
@@ -131,7 +133,7 @@ Raw Data
                         "EFL-2.0",
                         "EFL-2.0",
                         "Eiffel Forum License v2.0",
-                        "efl-2.0",
+                        "scancode:efl-2.0",
                         "EFL 2.0",
                         "Eiffel Forum License, Version 2",
                         "License :: OSI Approved :: Eiffel Forum License",
@@ -143,7 +145,7 @@ Raw Data
                 "otherNames": [
                     "EFL-2.0",
                     "Eiffel Forum License v2.0",
-                    "efl-2.0",
+                    "scancode:efl-2.0",
                     "EFL 2.0",
                     "Eiffel Forum License, Version 2",
                     "License :: OSI Approved :: Eiffel Forum License",
@@ -250,7 +252,7 @@ Raw Data
                 "spdxId": "EFL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "efl-2.0",
+                        "scancode:efl-2.0",
                         "EFL 2.0",
                         "EFL-2.0"
                     ],

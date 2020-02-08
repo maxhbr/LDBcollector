@@ -5,6 +5,8 @@ CeCILL-B Free Software License Agreement (CECILL-B)
 
 **Other Names:**
 
+-   `scancode:cecill-b`
+
 -   `CeCILL-B License`
 
 Comments on (easy) usability
@@ -298,7 +300,7 @@ Raw Data
         "__impliedNames": [
             "CECILL-B",
             "CeCILL-B Free Software License Agreement",
-            "cecill-b",
+            "scancode:cecill-b",
             "CeCILL-B License"
         ],
         "__impliedId": "CECILL-B",
@@ -310,7 +312,7 @@ Raw Data
                         "CECILL-B",
                         "CECILL-B",
                         "CeCILL-B Free Software License Agreement",
-                        "cecill-b",
+                        "scancode:cecill-b",
                         "CeCILL-B License"
                     ],
                     "__impliedId": "CECILL-B"
@@ -319,7 +321,7 @@ Raw Data
                 "otherNames": [
                     "CECILL-B",
                     "CeCILL-B Free Software License Agreement",
-                    "cecill-b",
+                    "scancode:cecill-b",
                     "CeCILL-B License"
                 ]
             },
@@ -396,7 +398,7 @@ Raw Data
                 "spdxId": "CECILL-B",
                 "_implications": {
                     "__impliedNames": [
-                        "cecill-b",
+                        "scancode:cecill-b",
                         "CeCILL-B License",
                         "CECILL-B"
                     ],

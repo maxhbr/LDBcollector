@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:cecill-b=
+
 - =CeCILL-B License=
 
 ** Comments on (easy) usability
@@ -300,7 +302,7 @@
       "__impliedNames": [
           "CECILL-B",
           "CeCILL-B Free Software License Agreement",
-          "cecill-b",
+          "scancode:cecill-b",
           "CeCILL-B License"
       ],
       "__impliedId": "CECILL-B",
@@ -312,7 +314,7 @@
                       "CECILL-B",
                       "CECILL-B",
                       "CeCILL-B Free Software License Agreement",
-                      "cecill-b",
+                      "scancode:cecill-b",
                       "CeCILL-B License"
                   ],
                   "__impliedId": "CECILL-B"
@@ -321,7 +323,7 @@
               "otherNames": [
                   "CECILL-B",
                   "CeCILL-B Free Software License Agreement",
-                  "cecill-b",
+                  "scancode:cecill-b",
                   "CeCILL-B License"
               ]
           },
@@ -398,7 +400,7 @@
               "spdxId": "CECILL-B",
               "_implications": {
                   "__impliedNames": [
-                      "cecill-b",
+                      "scancode:cecill-b",
                       "CeCILL-B License",
                       "CECILL-B"
                   ],

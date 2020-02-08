@@ -5,7 +5,7 @@ RSA Message-Digest License (RSA-MD)
 
 **Other Names:**
 
--   `rsa-md5`
+-   `scancode:rsa-md5`
 
 -   `RSA-MD5 License`
 
@@ -54,7 +54,7 @@ Raw Data
         "__impliedNames": [
             "RSA-MD",
             "RSA Message-Digest License ",
-            "rsa-md5",
+            "scancode:rsa-md5",
             "RSA-MD5 License"
         ],
         "__impliedId": "RSA-MD",
@@ -65,7 +65,7 @@ Raw Data
                         "RSA-MD",
                         "RSA-MD",
                         "RSA Message-Digest License ",
-                        "rsa-md5",
+                        "scancode:rsa-md5",
                         "RSA-MD5 License"
                     ],
                     "__impliedId": "RSA-MD"
@@ -74,7 +74,7 @@ Raw Data
                 "otherNames": [
                     "RSA-MD",
                     "RSA Message-Digest License ",
-                    "rsa-md5",
+                    "scancode:rsa-md5",
                     "RSA-MD5 License"
                 ]
             },
@@ -124,7 +124,7 @@ Raw Data
                 "spdxId": "RSA-MD",
                 "_implications": {
                     "__impliedNames": [
-                        "rsa-md5",
+                        "scancode:rsa-md5",
                         "RSA-MD5 License",
                         "RSA-MD"
                     ],

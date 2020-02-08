@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:xnet=
+
 - =Altera License=
 
 - =The X.Net, Inc. License=
@@ -87,7 +89,7 @@
       "__impliedNames": [
           "Xnet",
           "X.Net License",
-          "xnet",
+          "scancode:xnet",
           "Altera License",
           "The X.Net, Inc. License",
           "License :: OSI Approved :: X.Net License"
@@ -127,7 +129,7 @@
                       "Xnet",
                       "Xnet",
                       "X.Net License",
-                      "xnet",
+                      "scancode:xnet",
                       "Altera License",
                       "The X.Net, Inc. License",
                       "License :: OSI Approved :: X.Net License"
@@ -138,7 +140,7 @@
               "otherNames": [
                   "Xnet",
                   "X.Net License",
-                  "xnet",
+                  "scancode:xnet",
                   "Altera License",
                   "The X.Net, Inc. License",
                   "License :: OSI Approved :: X.Net License"
@@ -223,7 +225,7 @@
               "spdxId": "Xnet",
               "_implications": {
                   "__impliedNames": [
-                      "xnet",
+                      "scancode:xnet",
                       "Altera License",
                       "Xnet"
                   ],

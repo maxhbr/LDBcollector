@@ -3,6 +3,10 @@ Creative Commons Attribution 2.0 Generic (CC-BY-2.0)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:cc-by-2.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -89,7 +93,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-2.0",
             "Creative Commons Attribution 2.0 Generic",
-            "cc-by-2.0"
+            "scancode:cc-by-2.0"
         ],
         "__impliedId": "CC-BY-2.0",
         "facts": {
@@ -99,7 +103,7 @@ Raw Data
                         "CC-BY-2.0",
                         "CC-BY-2.0",
                         "Creative Commons Attribution 2.0 Generic",
-                        "cc-by-2.0"
+                        "scancode:cc-by-2.0"
                     ],
                     "__impliedId": "CC-BY-2.0"
                 },
@@ -107,7 +111,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-2.0",
                     "Creative Commons Attribution 2.0 Generic",
-                    "cc-by-2.0"
+                    "scancode:cc-by-2.0"
                 ]
             },
             "SPDX": {
@@ -156,7 +160,7 @@ Raw Data
                 "spdxId": "CC-BY-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "cc-by-2.0",
+                        "scancode:cc-by-2.0",
                         "CC-BY-2.0",
                         "CC-BY-2.0"
                     ],

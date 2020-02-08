@@ -5,6 +5,8 @@ Open Software License 1.1 (OSL-1.1)
 
 **Other Names:**
 
+-   `scancode:osl-1.1`
+
 -   `OSL 1.1`
 
 Comments on (easy) usability
@@ -93,7 +95,7 @@ Raw Data
         "__impliedNames": [
             "OSL-1.1",
             "Open Software License 1.1",
-            "osl-1.1",
+            "scancode:osl-1.1",
             "OSL 1.1"
         ],
         "__impliedId": "OSL-1.1",
@@ -108,7 +110,7 @@ Raw Data
                         "OSL-1.1",
                         "OSL-1.1",
                         "Open Software License 1.1",
-                        "osl-1.1",
+                        "scancode:osl-1.1",
                         "OSL 1.1"
                     ],
                     "__impliedId": "OSL-1.1"
@@ -117,7 +119,7 @@ Raw Data
                 "otherNames": [
                     "OSL-1.1",
                     "Open Software License 1.1",
-                    "osl-1.1",
+                    "scancode:osl-1.1",
                     "OSL 1.1"
                 ]
             },
@@ -194,7 +196,7 @@ Raw Data
                 "spdxId": "OSL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "osl-1.1",
+                        "scancode:osl-1.1",
                         "OSL 1.1",
                         "OSL-1.1"
                     ],

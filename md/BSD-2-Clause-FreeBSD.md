@@ -3,6 +3,10 @@ BSD 2-Clause FreeBSD License (BSD-2-Clause-FreeBSD)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:bsd-2-clause-freebsd`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -59,7 +63,7 @@ Raw Data
         "__impliedNames": [
             "BSD-2-Clause-FreeBSD",
             "BSD 2-Clause FreeBSD License",
-            "bsd-2-clause-freebsd"
+            "scancode:bsd-2-clause-freebsd"
         ],
         "__impliedId": "BSD-2-Clause-FreeBSD",
         "facts": {
@@ -69,7 +73,7 @@ Raw Data
                         "BSD-2-Clause-FreeBSD",
                         "BSD-2-Clause-FreeBSD",
                         "BSD 2-Clause FreeBSD License",
-                        "bsd-2-clause-freebsd"
+                        "scancode:bsd-2-clause-freebsd"
                     ],
                     "__impliedId": "BSD-2-Clause-FreeBSD"
                 },
@@ -77,7 +81,7 @@ Raw Data
                 "otherNames": [
                     "BSD-2-Clause-FreeBSD",
                     "BSD 2-Clause FreeBSD License",
-                    "bsd-2-clause-freebsd"
+                    "scancode:bsd-2-clause-freebsd"
                 ]
             },
             "SPDX": {
@@ -124,7 +128,7 @@ Raw Data
                 "spdxId": "BSD-2-Clause-FreeBSD",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-2-clause-freebsd",
+                        "scancode:bsd-2-clause-freebsd",
                         "BSD-2-Clause-FreeBSD",
                         "BSD-2-Clause-FreeBSD"
                     ],

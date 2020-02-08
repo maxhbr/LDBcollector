@@ -2,6 +2,7 @@
     "__impliedNames": [
         "PostgreSQL",
         "PostgreSQL License",
+        "scancode:postgresql",
         "postgresql",
         "The PostgreSQL Licence"
     ],
@@ -41,6 +42,7 @@
                     "PostgreSQL",
                     "PostgreSQL",
                     "PostgreSQL License",
+                    "scancode:postgresql",
                     "postgresql",
                     "The PostgreSQL Licence"
                 ],
@@ -50,6 +52,7 @@
             "otherNames": [
                 "PostgreSQL",
                 "PostgreSQL License",
+                "scancode:postgresql",
                 "postgresql",
                 "The PostgreSQL Licence"
             ]
@@ -141,7 +144,7 @@
             "spdxId": "PostgreSQL",
             "_implications": {
                 "__impliedNames": [
-                    "postgresql",
+                    "scancode:postgresql",
                     "PostgreSQL License",
                     "PostgreSQL"
                 ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+standard-ml-nj+`
+* `+scancode:standard-ml-nj+`
 * `+Standard ML of New Jersey+`
 
 === Comments on (easy) usability
@@ -61,7 +61,7 @@ connection with the use or performance of this software.
     "__impliedNames": [
         "SMLNJ",
         "Standard ML of New Jersey License",
-        "standard-ml-nj",
+        "scancode:standard-ml-nj",
         "Standard ML of New Jersey"
     ],
     "__impliedId": "SMLNJ",
@@ -73,7 +73,7 @@ connection with the use or performance of this software.
                     "SMLNJ",
                     "SMLNJ",
                     "Standard ML of New Jersey License",
-                    "standard-ml-nj",
+                    "scancode:standard-ml-nj",
                     "Standard ML of New Jersey"
                 ],
                 "__impliedId": "SMLNJ"
@@ -82,7 +82,7 @@ connection with the use or performance of this software.
             "otherNames": [
                 "SMLNJ",
                 "Standard ML of New Jersey License",
-                "standard-ml-nj",
+                "scancode:standard-ml-nj",
                 "Standard ML of New Jersey"
             ]
         },
@@ -160,7 +160,7 @@ connection with the use or performance of this software.
             "spdxId": "SMLNJ",
             "_implications": {
                 "__impliedNames": [
-                    "standard-ml-nj",
+                    "scancode:standard-ml-nj",
                     "Standard ML of New Jersey",
                     "SMLNJ"
                 ],

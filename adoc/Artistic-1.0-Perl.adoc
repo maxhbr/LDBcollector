@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+artistic-perl-1.0+`
+* `+scancode:artistic-perl-1.0+`
 * `+Artistic-Perl-1.0+`
 
 === Comments on (easy) usability
@@ -211,7 +211,7 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
     "__impliedNames": [
         "Artistic-1.0-Perl",
         "Artistic License 1.0 (Perl)",
-        "artistic-perl-1.0",
+        "scancode:artistic-perl-1.0",
         "Artistic-Perl-1.0"
     ],
     "__impliedId": "Artistic-1.0-Perl",
@@ -225,7 +225,7 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
                     "Artistic-1.0-Perl",
                     "Artistic-1.0-Perl",
                     "Artistic License 1.0 (Perl)",
-                    "artistic-perl-1.0",
+                    "scancode:artistic-perl-1.0",
                     "Artistic-Perl-1.0"
                 ],
                 "__impliedId": "Artistic-1.0-Perl"
@@ -234,7 +234,7 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
             "otherNames": [
                 "Artistic-1.0-Perl",
                 "Artistic License 1.0 (Perl)",
-                "artistic-perl-1.0",
+                "scancode:artistic-perl-1.0",
                 "Artistic-Perl-1.0"
             ]
         },
@@ -301,7 +301,7 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
             "spdxId": "Artistic-1.0-Perl",
             "_implications": {
                 "__impliedNames": [
-                    "artistic-perl-1.0",
+                    "scancode:artistic-perl-1.0",
                     "Artistic-Perl-1.0",
                     "Artistic-1.0-Perl"
                 ],

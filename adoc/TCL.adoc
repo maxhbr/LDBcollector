@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:tcl+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -78,7 +82,7 @@ terms specified in this license.
     "__impliedNames": [
         "TCL",
         "TCL/TK License",
-        "tcl"
+        "scancode:tcl"
     ],
     "__impliedId": "TCL",
     "__isFsfFree": true,
@@ -89,7 +93,7 @@ terms specified in this license.
                     "TCL",
                     "TCL",
                     "TCL/TK License",
-                    "tcl"
+                    "scancode:tcl"
                 ],
                 "__impliedId": "TCL"
             },
@@ -97,7 +101,7 @@ terms specified in this license.
             "otherNames": [
                 "TCL",
                 "TCL/TK License",
-                "tcl"
+                "scancode:tcl"
             ]
         },
         "SPDX": {
@@ -178,7 +182,7 @@ terms specified in this license.
             "spdxId": "TCL",
             "_implications": {
                 "__impliedNames": [
-                    "tcl",
+                    "scancode:tcl",
                     "TCL/TK License",
                     "TCL"
                 ],

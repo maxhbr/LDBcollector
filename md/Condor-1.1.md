@@ -5,6 +5,8 @@ Condor Public License v1.1 (Condor-1.1)
 
 **Other Names:**
 
+-   `scancode:condor-1.1`
+
 -   `Condor Public License 1.1`
 
 Comments on (easy) usability
@@ -158,7 +160,7 @@ Raw Data
         "__impliedNames": [
             "Condor-1.1",
             "Condor Public License v1.1",
-            "condor-1.1",
+            "scancode:condor-1.1",
             "Condor Public License 1.1"
         ],
         "__impliedId": "Condor-1.1",
@@ -169,7 +171,7 @@ Raw Data
                         "Condor-1.1",
                         "Condor-1.1",
                         "Condor Public License v1.1",
-                        "condor-1.1",
+                        "scancode:condor-1.1",
                         "Condor Public License 1.1"
                     ],
                     "__impliedId": "Condor-1.1"
@@ -178,7 +180,7 @@ Raw Data
                 "otherNames": [
                     "Condor-1.1",
                     "Condor Public License v1.1",
-                    "condor-1.1",
+                    "scancode:condor-1.1",
                     "Condor Public License 1.1"
                 ]
             },
@@ -234,7 +236,7 @@ Raw Data
                 "spdxId": "Condor-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "condor-1.1",
+                        "scancode:condor-1.1",
                         "Condor Public License 1.1",
                         "Condor-1.1"
                     ],

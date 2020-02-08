@@ -9,6 +9,10 @@
 |Is Non-Commercial |True
 |===
 
+*Other Names:*
+
+* `+scancode:cc-by-nc-1.0+`
+
 === Comments on (easy) usability
 
 * **↓**Google Classification is CANNOT_BE_USED "Everything that Google
@@ -99,7 +103,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
     "__impliedNames": [
         "CC-BY-NC-1.0",
         "Creative Commons Attribution Non Commercial 1.0 Generic",
-        "cc-by-nc-1.0"
+        "scancode:cc-by-nc-1.0"
     ],
     "__impliedId": "CC-BY-NC-1.0",
     "__impliedAmbiguousNames": [
@@ -124,7 +128,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
                     "CC-BY-NC-1.0",
                     "CC-BY-NC-1.0",
                     "Creative Commons Attribution Non Commercial 1.0 Generic",
-                    "cc-by-nc-1.0"
+                    "scancode:cc-by-nc-1.0"
                 ],
                 "__impliedId": "CC-BY-NC-1.0"
             },
@@ -132,7 +136,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
             "otherNames": [
                 "CC-BY-NC-1.0",
                 "Creative Commons Attribution Non Commercial 1.0 Generic",
-                "cc-by-nc-1.0"
+                "scancode:cc-by-nc-1.0"
             ]
         },
         "SPDX": {
@@ -181,7 +185,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
             "spdxId": "CC-BY-NC-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "cc-by-nc-1.0",
+                    "scancode:cc-by-nc-1.0",
                     "CC-BY-NC-1.0",
                     "CC-BY-NC-1.0"
                 ],

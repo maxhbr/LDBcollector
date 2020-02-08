@@ -5,6 +5,8 @@ Open Software License 1.0 (OSL-1.0)
 
 **Other Names:**
 
+-   `scancode:osl-1.0`
+
 -   `OSL 1.0`
 
 -   `Open Software License, Version 1.0`
@@ -230,7 +232,7 @@ Raw Data
         "__impliedNames": [
             "OSL-1.0",
             "Open Software License 1.0",
-            "osl-1.0",
+            "scancode:osl-1.0",
             "OSL 1.0",
             "Open Software License, Version 1.0",
             "Open Software License 3.0",
@@ -273,7 +275,7 @@ Raw Data
                         "OSL-1.0",
                         "OSL-1.0",
                         "Open Software License 1.0",
-                        "osl-1.0",
+                        "scancode:osl-1.0",
                         "OSL 1.0",
                         "Open Software License, Version 1.0",
                         "Open Software License 3.0"
@@ -284,7 +286,7 @@ Raw Data
                 "otherNames": [
                     "OSL-1.0",
                     "Open Software License 1.0",
-                    "osl-1.0",
+                    "scancode:osl-1.0",
                     "OSL 1.0",
                     "Open Software License, Version 1.0",
                     "Open Software License 3.0"
@@ -373,7 +375,7 @@ Raw Data
                 "spdxId": "OSL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "osl-1.0",
+                        "scancode:osl-1.0",
                         "OSL 1.0",
                         "OSL-1.0"
                     ],

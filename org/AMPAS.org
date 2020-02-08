@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:ampas=
+
 - =AMPAS BSD-Style License=
 
 ** Comments on (easy) usability
@@ -53,7 +55,7 @@
       "__impliedNames": [
           "AMPAS",
           "Academy of Motion Picture Arts and Sciences BSD",
-          "ampas",
+          "scancode:ampas",
           "AMPAS BSD-Style License"
       ],
       "__impliedId": "AMPAS",
@@ -65,7 +67,7 @@
                       "AMPAS",
                       "AMPAS",
                       "Academy of Motion Picture Arts and Sciences BSD",
-                      "ampas",
+                      "scancode:ampas",
                       "AMPAS BSD-Style License"
                   ],
                   "__impliedId": "AMPAS"
@@ -74,7 +76,7 @@
               "otherNames": [
                   "AMPAS",
                   "Academy of Motion Picture Arts and Sciences BSD",
-                  "ampas",
+                  "scancode:ampas",
                   "AMPAS BSD-Style License"
               ]
           },
@@ -148,7 +150,7 @@
               "spdxId": "AMPAS",
               "_implications": {
                   "__impliedNames": [
-                      "ampas",
+                      "scancode:ampas",
                       "AMPAS BSD-Style License",
                       "AMPAS"
                   ],

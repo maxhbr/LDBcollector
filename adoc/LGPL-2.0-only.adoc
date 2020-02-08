@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+lgpl-2.0+`
+* `+scancode:lgpl-2.0+`
 * `+LGPL 2.0+`
 * `+GNU Library General Public License 2.0+`
 * `+LGPL-2.0-or-later+`
@@ -538,7 +538,7 @@ That's all there is to it!
     "__impliedNames": [
         "LGPL-2.0-only",
         "GNU Library General Public License v2 only",
-        "lgpl-2.0",
+        "scancode:lgpl-2.0",
         "LGPL 2.0",
         "GNU Library General Public License 2.0",
         "LGPL-2.0-or-later"
@@ -554,7 +554,7 @@ That's all there is to it!
                     "LGPL-2.0-only",
                     "LGPL-2.0-only",
                     "GNU Library General Public License v2 only",
-                    "lgpl-2.0",
+                    "scancode:lgpl-2.0",
                     "LGPL 2.0",
                     "GNU Library General Public License 2.0"
                 ],
@@ -564,7 +564,7 @@ That's all there is to it!
             "otherNames": [
                 "LGPL-2.0-only",
                 "GNU Library General Public License v2 only",
-                "lgpl-2.0",
+                "scancode:lgpl-2.0",
                 "LGPL 2.0",
                 "GNU Library General Public License 2.0"
             ]
@@ -626,7 +626,7 @@ That's all there is to it!
             "spdxId": "LGPL-2.0-only",
             "_implications": {
                 "__impliedNames": [
-                    "lgpl-2.0",
+                    "scancode:lgpl-2.0",
                     "LGPL 2.0",
                     "LGPL-2.0-only"
                 ],

@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:bittorrent-1.0+`
 * `+BitTorrent 1.0+`
 
 === Comments on (easy) usability
@@ -366,7 +367,7 @@ or implied.  See the License for the specific language governing rights and limi
     "__impliedNames": [
         "BitTorrent-1.0",
         "BitTorrent Open Source License v1.0",
-        "bittorrent-1.0",
+        "scancode:bittorrent-1.0",
         "BitTorrent 1.0"
     ],
     "__impliedId": "BitTorrent-1.0",
@@ -377,7 +378,7 @@ or implied.  See the License for the specific language governing rights and limi
                     "BitTorrent-1.0",
                     "BitTorrent-1.0",
                     "BitTorrent Open Source License v1.0",
-                    "bittorrent-1.0",
+                    "scancode:bittorrent-1.0",
                     "BitTorrent 1.0"
                 ],
                 "__impliedId": "BitTorrent-1.0"
@@ -386,7 +387,7 @@ or implied.  See the License for the specific language governing rights and limi
             "otherNames": [
                 "BitTorrent-1.0",
                 "BitTorrent Open Source License v1.0",
-                "bittorrent-1.0",
+                "scancode:bittorrent-1.0",
                 "BitTorrent 1.0"
             ]
         },
@@ -436,7 +437,7 @@ or implied.  See the License for the specific language governing rights and limi
             "spdxId": "BitTorrent-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "bittorrent-1.0",
+                    "scancode:bittorrent-1.0",
                     "BitTorrent 1.0",
                     "BitTorrent-1.0"
                 ],

@@ -13,7 +13,7 @@
 *Other Names:*
 
 * `+LGPL-3.0-or-later+`
-* `+lgpl-3.0-plus+`
+* `+scancode:lgpl-3.0-plus+`
 * `+LGPL 3.0 or later+`
 * `+GNU Lesser General Public License 3.0+`
 * `+LGPL-3.0++`
@@ -237,7 +237,7 @@ You should have received a copy of the GNU Lesser General Public License along w
     "__impliedNames": [
         "LGPL-3.0-or-later",
         "GNU Lesser General Public License v3.0 or later",
-        "lgpl-3.0-plus",
+        "scancode:lgpl-3.0-plus",
         "LGPL 3.0 or later",
         "GNU Lesser General Public License 3.0",
         "LGPL-3.0+",
@@ -292,7 +292,7 @@ You should have received a copy of the GNU Lesser General Public License along w
                     "LGPL-3.0-or-later",
                     "LGPL-3.0-or-later",
                     "GNU Lesser General Public License v3.0 or later",
-                    "lgpl-3.0-plus",
+                    "scancode:lgpl-3.0-plus",
                     "LGPL 3.0 or later",
                     "GNU Lesser General Public License 3.0",
                     "LGPL-3.0+",
@@ -308,7 +308,7 @@ You should have received a copy of the GNU Lesser General Public License along w
             "otherNames": [
                 "LGPL-3.0-or-later",
                 "GNU Lesser General Public License v3.0 or later",
-                "lgpl-3.0-plus",
+                "scancode:lgpl-3.0-plus",
                 "LGPL 3.0 or later",
                 "GNU Lesser General Public License 3.0",
                 "LGPL-3.0+",
@@ -426,7 +426,7 @@ You should have received a copy of the GNU Lesser General Public License along w
             "spdxId": "LGPL-3.0-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "lgpl-3.0-plus",
+                    "scancode:lgpl-3.0-plus",
                     "LGPL 3.0 or later",
                     "LGPL-3.0-or-later"
                 ],

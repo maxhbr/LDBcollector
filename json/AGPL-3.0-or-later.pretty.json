@@ -2,7 +2,7 @@
     "__impliedNames": [
         "AGPL-3.0-or-later",
         "GNU Affero General Public License v3.0 or later",
-        "agpl-3.0-plus",
+        "scancode:agpl-3.0-plus",
         "AGPL 3.0 or later",
         "GNU Affero General Public License 3.0",
         "AGPL-3.0+",
@@ -23,7 +23,7 @@
                     "AGPL-3.0-or-later",
                     "AGPL-3.0-or-later",
                     "GNU Affero General Public License v3.0 or later",
-                    "agpl-3.0-plus",
+                    "scancode:agpl-3.0-plus",
                     "AGPL 3.0 or later",
                     "GNU Affero General Public License 3.0",
                     "AGPL-3.0+",
@@ -39,7 +39,7 @@
             "otherNames": [
                 "AGPL-3.0-or-later",
                 "GNU Affero General Public License v3.0 or later",
-                "agpl-3.0-plus",
+                "scancode:agpl-3.0-plus",
                 "AGPL 3.0 or later",
                 "GNU Affero General Public License 3.0",
                 "AGPL-3.0+",
@@ -158,7 +158,7 @@
             "spdxId": "AGPL-3.0-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "agpl-3.0-plus",
+                    "scancode:agpl-3.0-plus",
                     "AGPL 3.0 or later",
                     "AGPL-3.0-or-later"
                 ],

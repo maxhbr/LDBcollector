@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | WeakCopyleft                                   |
 
+*Other Names:*
+
+- =scancode:eurosym=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -53,7 +57,7 @@
       "__impliedNames": [
           "Eurosym",
           "Eurosym License",
-          "eurosym"
+          "scancode:eurosym"
       ],
       "__impliedId": "Eurosym",
       "__isFsfFree": true,
@@ -64,7 +68,7 @@
                       "Eurosym",
                       "Eurosym",
                       "Eurosym License",
-                      "eurosym"
+                      "scancode:eurosym"
                   ],
                   "__impliedId": "Eurosym"
               },
@@ -72,7 +76,7 @@
               "otherNames": [
                   "Eurosym",
                   "Eurosym License",
-                  "eurosym"
+                  "scancode:eurosym"
               ]
           },
           "SPDX": {
@@ -147,7 +151,7 @@
               "spdxId": "Eurosym",
               "_implications": {
                   "__impliedNames": [
-                      "eurosym",
+                      "scancode:eurosym",
                       "Eurosym License",
                       "Eurosym"
                   ],

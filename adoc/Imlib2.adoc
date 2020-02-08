@@ -9,6 +9,10 @@
 |Classification |WeakCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:imlib2+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -69,7 +73,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "Imlib2",
         "Imlib2 License",
-        "imlib2"
+        "scancode:imlib2"
     ],
     "__impliedId": "Imlib2",
     "__isFsfFree": true,
@@ -80,7 +84,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "Imlib2",
                     "Imlib2",
                     "Imlib2 License",
-                    "imlib2"
+                    "scancode:imlib2"
                 ],
                 "__impliedId": "Imlib2"
             },
@@ -88,7 +92,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "otherNames": [
                 "Imlib2",
                 "Imlib2 License",
-                "imlib2"
+                "scancode:imlib2"
             ]
         },
         "SPDX": {
@@ -168,7 +172,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "spdxId": "Imlib2",
             "_implications": {
                 "__impliedNames": [
-                    "imlib2",
+                    "scancode:imlib2",
                     "Imlib2 License",
                     "Imlib2"
                 ],

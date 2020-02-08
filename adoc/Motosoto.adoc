@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+motosoto-0.9.1+`
+* `+scancode:motosoto-0.9.1+`
 * `+Motosoto 0.9.1+`
 * `+Motosoto Open Source License, Version 0.9.1+`
 * `+License :: OSI Approved :: Motosoto License+`
@@ -190,7 +190,7 @@ Source Code: The preferred form for making modifications to the Licensed Product
     "__impliedNames": [
         "Motosoto",
         "Motosoto License",
-        "motosoto-0.9.1",
+        "scancode:motosoto-0.9.1",
         "Motosoto 0.9.1",
         "Motosoto Open Source License, Version 0.9.1",
         "License :: OSI Approved :: Motosoto License"
@@ -231,7 +231,7 @@ Source Code: The preferred form for making modifications to the Licensed Product
                     "Motosoto",
                     "Motosoto",
                     "Motosoto License",
-                    "motosoto-0.9.1",
+                    "scancode:motosoto-0.9.1",
                     "Motosoto 0.9.1",
                     "Motosoto Open Source License, Version 0.9.1",
                     "License :: OSI Approved :: Motosoto License"
@@ -242,7 +242,7 @@ Source Code: The preferred form for making modifications to the Licensed Product
             "otherNames": [
                 "Motosoto",
                 "Motosoto License",
-                "motosoto-0.9.1",
+                "scancode:motosoto-0.9.1",
                 "Motosoto 0.9.1",
                 "Motosoto Open Source License, Version 0.9.1",
                 "License :: OSI Approved :: Motosoto License"
@@ -330,7 +330,7 @@ Source Code: The preferred form for making modifications to the Licensed Product
             "spdxId": "Motosoto",
             "_implications": {
                 "__impliedNames": [
-                    "motosoto-0.9.1",
+                    "scancode:motosoto-0.9.1",
                     "Motosoto 0.9.1",
                     "Motosoto"
                 ],

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:multics+`
+
 === Comments on (easy) usability
 
 * **↑**Is OSI Approved (source:
@@ -52,7 +56,7 @@ All Rights Reserved
     "__impliedNames": [
         "Multics",
         "Multics License",
-        "multics"
+        "scancode:multics"
     ],
     "__impliedId": "Multics",
     "facts": {
@@ -89,7 +93,7 @@ All Rights Reserved
                     "Multics",
                     "Multics",
                     "Multics License",
-                    "multics"
+                    "scancode:multics"
                 ],
                 "__impliedId": "Multics"
             },
@@ -97,7 +101,7 @@ All Rights Reserved
             "otherNames": [
                 "Multics",
                 "Multics License",
-                "multics"
+                "scancode:multics"
             ]
         },
         "SPDX": {
@@ -156,7 +160,7 @@ All Rights Reserved
             "spdxId": "Multics",
             "_implications": {
                 "__impliedNames": [
-                    "multics",
+                    "scancode:multics",
                     "Multics License",
                     "Multics"
                 ],

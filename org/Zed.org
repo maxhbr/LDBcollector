@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:zed=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -41,7 +45,7 @@
       "__impliedNames": [
           "Zed",
           "Zed License",
-          "zed"
+          "scancode:zed"
       ],
       "__impliedId": "Zed",
       "__isFsfFree": true,
@@ -52,7 +56,7 @@
                       "Zed",
                       "Zed",
                       "Zed License",
-                      "zed"
+                      "scancode:zed"
                   ],
                   "__impliedId": "Zed"
               },
@@ -60,7 +64,7 @@
               "otherNames": [
                   "Zed",
                   "Zed License",
-                  "zed"
+                  "scancode:zed"
               ]
           },
           "SPDX": {
@@ -133,7 +137,7 @@
               "spdxId": "Zed",
               "_implications": {
                   "__impliedNames": [
-                      "zed",
+                      "scancode:zed",
                       "Zed License",
                       "Zed"
                   ],

@@ -3,6 +3,10 @@ ANTLR Software Rights Notice (ANTLR-PD)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:antlr-pd`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -69,7 +73,7 @@ Raw Data
         "__impliedNames": [
             "ANTLR-PD",
             "ANTLR Software Rights Notice",
-            "antlr-pd"
+            "scancode:antlr-pd"
         ],
         "__impliedId": "ANTLR-PD",
         "__isFsfFree": true,
@@ -80,7 +84,7 @@ Raw Data
                         "ANTLR-PD",
                         "ANTLR-PD",
                         "ANTLR Software Rights Notice",
-                        "antlr-pd"
+                        "scancode:antlr-pd"
                     ],
                     "__impliedId": "ANTLR-PD"
                 },
@@ -88,7 +92,7 @@ Raw Data
                 "otherNames": [
                     "ANTLR-PD",
                     "ANTLR Software Rights Notice",
-                    "antlr-pd"
+                    "scancode:antlr-pd"
                 ]
             },
             "SPDX": {
@@ -164,7 +168,7 @@ Raw Data
                 "spdxId": "ANTLR-PD",
                 "_implications": {
                     "__impliedNames": [
-                        "antlr-pd",
+                        "scancode:antlr-pd",
                         "ANTLR-PD",
                         "ANTLR-PD"
                     ],

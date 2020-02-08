@@ -12,6 +12,7 @@
 
 *Other Names:*
 
+* `+scancode:cc-by-4.0+`
 * `+CC-BY 4.0+`
 * `+Creative Commons Attribution 4.0+`
 
@@ -476,6 +477,7 @@ Creative Commons may be contacted at creativecommons.org.
     "__impliedNames": [
         "CC-BY-4.0",
         "Creative Commons Attribution 4.0 International",
+        "scancode:cc-by-4.0",
         "cc-by-4.0",
         "CC-BY 4.0",
         "Creative Commons Attribution 4.0"
@@ -519,6 +521,7 @@ Creative Commons may be contacted at creativecommons.org.
                     "CC-BY-4.0",
                     "CC-BY-4.0",
                     "Creative Commons Attribution 4.0 International",
+                    "scancode:cc-by-4.0",
                     "cc-by-4.0",
                     "CC-BY 4.0",
                     "Creative Commons Attribution 4.0"
@@ -529,6 +532,7 @@ Creative Commons may be contacted at creativecommons.org.
             "otherNames": [
                 "CC-BY-4.0",
                 "Creative Commons Attribution 4.0 International",
+                "scancode:cc-by-4.0",
                 "cc-by-4.0",
                 "CC-BY 4.0",
                 "Creative Commons Attribution 4.0"
@@ -580,7 +584,7 @@ Creative Commons may be contacted at creativecommons.org.
             "spdxId": "CC-BY-4.0",
             "_implications": {
                 "__impliedNames": [
-                    "cc-by-4.0",
+                    "scancode:cc-by-4.0",
                     "CC-BY-4.0",
                     "CC-BY-4.0"
                 ],

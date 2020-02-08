@@ -10,6 +10,8 @@ International (CC-BY-NC-ND-4.0)
 
 *Other Names:*
 
+- =scancode:cc-by-nc-nd-4.0=
+
 - =Creative Commons Attribution NonCommercial No-Derivatives 4.0=
 
 ** Comments on (easy) usability
@@ -452,7 +454,7 @@ International (CC-BY-NC-ND-4.0)
       "__impliedNames": [
           "CC-BY-NC-ND-4.0",
           "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
-          "cc-by-nc-nd-4.0",
+          "scancode:cc-by-nc-nd-4.0",
           "Creative Commons Attribution NonCommercial No-Derivatives 4.0"
       ],
       "__impliedId": "CC-BY-NC-ND-4.0",
@@ -505,7 +507,7 @@ International (CC-BY-NC-ND-4.0)
                       "CC-BY-NC-ND-4.0",
                       "CC-BY-NC-ND-4.0",
                       "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
-                      "cc-by-nc-nd-4.0",
+                      "scancode:cc-by-nc-nd-4.0",
                       "Creative Commons Attribution NonCommercial No-Derivatives 4.0"
                   ],
                   "__impliedId": "CC-BY-NC-ND-4.0"
@@ -514,7 +516,7 @@ International (CC-BY-NC-ND-4.0)
               "otherNames": [
                   "CC-BY-NC-ND-4.0",
                   "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
-                  "cc-by-nc-nd-4.0",
+                  "scancode:cc-by-nc-nd-4.0",
                   "Creative Commons Attribution NonCommercial No-Derivatives 4.0"
               ]
           },
@@ -564,7 +566,7 @@ International (CC-BY-NC-ND-4.0)
               "spdxId": "CC-BY-NC-ND-4.0",
               "_implications": {
                   "__impliedNames": [
-                      "cc-by-nc-nd-4.0",
+                      "scancode:cc-by-nc-nd-4.0",
                       "CC-BY-NC-ND-4.0",
                       "CC-BY-NC-ND-4.0"
                   ],

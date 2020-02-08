@@ -3,6 +3,10 @@ Imlib2 License (Imlib2)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:imlib2`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -66,7 +70,7 @@ Raw Data
         "__impliedNames": [
             "Imlib2",
             "Imlib2 License",
-            "imlib2"
+            "scancode:imlib2"
         ],
         "__impliedId": "Imlib2",
         "__isFsfFree": true,
@@ -77,7 +81,7 @@ Raw Data
                         "Imlib2",
                         "Imlib2",
                         "Imlib2 License",
-                        "imlib2"
+                        "scancode:imlib2"
                     ],
                     "__impliedId": "Imlib2"
                 },
@@ -85,7 +89,7 @@ Raw Data
                 "otherNames": [
                     "Imlib2",
                     "Imlib2 License",
-                    "imlib2"
+                    "scancode:imlib2"
                 ]
             },
             "SPDX": {
@@ -165,7 +169,7 @@ Raw Data
                 "spdxId": "Imlib2",
                 "_implications": {
                     "__impliedNames": [
-                        "imlib2",
+                        "scancode:imlib2",
                         "Imlib2 License",
                         "Imlib2"
                     ],

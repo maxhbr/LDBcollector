@@ -2,7 +2,7 @@
     "__impliedNames": [
         "NLPL",
         "No Limit Public License",
-        "nlpl"
+        "scancode:nlpl"
     ],
     "__impliedId": "NLPL",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "NLPL",
                     "NLPL",
                     "No Limit Public License",
-                    "nlpl"
+                    "scancode:nlpl"
                 ],
                 "__impliedId": "NLPL"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "NLPL",
                 "No Limit Public License",
-                "nlpl"
+                "scancode:nlpl"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "NLPL",
             "_implications": {
                 "__impliedNames": [
-                    "nlpl",
+                    "scancode:nlpl",
                     "NLPL",
                     "NLPL"
                 ],

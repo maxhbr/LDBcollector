@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =afpl-8.0=
+- =scancode:afpl-8.0=
 
 - =Aladdin FPL v8=
 
@@ -105,7 +105,7 @@
       "__impliedNames": [
           "Aladdin",
           "Aladdin Free Public License",
-          "afpl-8.0",
+          "scancode:afpl-8.0",
           "Aladdin FPL v8"
       ],
       "__impliedId": "Aladdin",
@@ -116,7 +116,7 @@
                       "Aladdin",
                       "Aladdin",
                       "Aladdin Free Public License",
-                      "afpl-8.0",
+                      "scancode:afpl-8.0",
                       "Aladdin FPL v8"
                   ],
                   "__impliedId": "Aladdin"
@@ -125,7 +125,7 @@
               "otherNames": [
                   "Aladdin",
                   "Aladdin Free Public License",
-                  "afpl-8.0",
+                  "scancode:afpl-8.0",
                   "Aladdin FPL v8"
               ]
           },
@@ -196,7 +196,7 @@
               "spdxId": "Aladdin",
               "_implications": {
                   "__impliedNames": [
-                      "afpl-8.0",
+                      "scancode:afpl-8.0",
                       "Aladdin FPL v8",
                       "Aladdin"
                   ],

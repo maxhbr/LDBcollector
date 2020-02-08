@@ -3,6 +3,10 @@ NetCDF license (NetCDF)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:netcdf`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -63,7 +67,7 @@ Raw Data
         "__impliedNames": [
             "NetCDF",
             "NetCDF license",
-            "netcdf",
+            "scancode:netcdf",
             "NetCDF License"
         ],
         "__impliedId": "NetCDF",
@@ -75,7 +79,7 @@ Raw Data
                         "NetCDF",
                         "NetCDF",
                         "NetCDF license",
-                        "netcdf",
+                        "scancode:netcdf",
                         "NetCDF License"
                     ],
                     "__impliedId": "NetCDF"
@@ -84,7 +88,7 @@ Raw Data
                 "otherNames": [
                     "NetCDF",
                     "NetCDF license",
-                    "netcdf",
+                    "scancode:netcdf",
                     "NetCDF License"
                 ]
             },
@@ -158,7 +162,7 @@ Raw Data
                 "spdxId": "NetCDF",
                 "_implications": {
                     "__impliedNames": [
-                        "netcdf",
+                        "scancode:netcdf",
                         "NetCDF License",
                         "NetCDF"
                     ],

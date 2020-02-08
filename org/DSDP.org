@@ -7,6 +7,10 @@
 | Rating           | Go             |
 | Classification   | NoCopyleft     |
 
+*Other Names:*
+
+- =scancode:dsdp=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Silver (source:
@@ -81,7 +85,7 @@
       "__impliedNames": [
           "DSDP",
           "DSDP License",
-          "dsdp"
+          "scancode:dsdp"
       ],
       "__impliedId": "DSDP",
       "__isFsfFree": true,
@@ -92,7 +96,7 @@
                       "DSDP",
                       "DSDP",
                       "DSDP License",
-                      "dsdp"
+                      "scancode:dsdp"
                   ],
                   "__impliedId": "DSDP"
               },
@@ -100,7 +104,7 @@
               "otherNames": [
                   "DSDP",
                   "DSDP License",
-                  "dsdp"
+                  "scancode:dsdp"
               ]
           },
           "SPDX": {
@@ -173,7 +177,7 @@
               "spdxId": "DSDP",
               "_implications": {
                   "__impliedNames": [
-                      "dsdp",
+                      "scancode:dsdp",
                       "DSDP License",
                       "DSDP"
                   ],

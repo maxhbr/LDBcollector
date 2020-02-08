@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =jpnic-idnkit=
+- =scancode:jpnic-idnkit=
 
 - =JPNIC idnkit License=
 
@@ -78,7 +78,7 @@
       "__impliedNames": [
           "JPNIC",
           "Japan Network Information Center License",
-          "jpnic-idnkit",
+          "scancode:jpnic-idnkit",
           "JPNIC idnkit License"
       ],
       "__impliedId": "JPNIC",
@@ -89,7 +89,7 @@
                       "JPNIC",
                       "JPNIC",
                       "Japan Network Information Center License",
-                      "jpnic-idnkit",
+                      "scancode:jpnic-idnkit",
                       "JPNIC idnkit License"
                   ],
                   "__impliedId": "JPNIC"
@@ -98,7 +98,7 @@
               "otherNames": [
                   "JPNIC",
                   "Japan Network Information Center License",
-                  "jpnic-idnkit",
+                  "scancode:jpnic-idnkit",
                   "JPNIC idnkit License"
               ]
           },
@@ -149,7 +149,7 @@
               "spdxId": "JPNIC",
               "_implications": {
                   "__impliedNames": [
-                      "jpnic-idnkit",
+                      "scancode:jpnic-idnkit",
                       "JPNIC idnkit License",
                       "JPNIC"
                   ],

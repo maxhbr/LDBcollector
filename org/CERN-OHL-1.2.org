@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | NoCopyleft                                     |
 
+*Other Names:*
+
+- =scancode:cern-ohl-1.2=
+
 ** Comments on (easy) usability
 
 ** URLs
@@ -114,7 +118,7 @@
       "__impliedNames": [
           "CERN-OHL-1.2",
           "CERN Open Hardware Licence v1.2",
-          "cern-ohl-1.2"
+          "scancode:cern-ohl-1.2"
       ],
       "__impliedId": "CERN-OHL-1.2",
       "facts": {
@@ -124,7 +128,7 @@
                       "CERN-OHL-1.2",
                       "CERN-OHL-1.2",
                       "CERN Open Hardware Licence v1.2",
-                      "cern-ohl-1.2"
+                      "scancode:cern-ohl-1.2"
                   ],
                   "__impliedId": "CERN-OHL-1.2"
               },
@@ -132,7 +136,7 @@
               "otherNames": [
                   "CERN-OHL-1.2",
                   "CERN Open Hardware Licence v1.2",
-                  "cern-ohl-1.2"
+                  "scancode:cern-ohl-1.2"
               ]
           },
           "SPDX": {
@@ -181,7 +185,7 @@
               "spdxId": "CERN-OHL-1.2",
               "_implications": {
                   "__impliedNames": [
-                      "cern-ohl-1.2",
+                      "scancode:cern-ohl-1.2",
                       "CERN Open Hardware Licence v1.2",
                       "CERN-OHL-1.2"
                   ],

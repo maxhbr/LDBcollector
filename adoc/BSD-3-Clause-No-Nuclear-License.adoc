@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-* `+sun-bsd-no-nuclear+`
+* `+scancode:sun-bsd-no-nuclear+`
 * `+Sun BSD-Style with Nuclear Restrictions+`
 
 === Comments on (easy) usability
@@ -66,7 +66,7 @@ nuclear facility.
     "__impliedNames": [
         "BSD-3-Clause-No-Nuclear-License",
         "BSD 3-Clause No Nuclear License",
-        "sun-bsd-no-nuclear",
+        "scancode:sun-bsd-no-nuclear",
         "Sun BSD-Style with Nuclear Restrictions"
     ],
     "__impliedId": "BSD-3-Clause-No-Nuclear-License",
@@ -77,7 +77,7 @@ nuclear facility.
                     "BSD-3-Clause-No-Nuclear-License",
                     "BSD-3-Clause-No-Nuclear-License",
                     "BSD 3-Clause No Nuclear License",
-                    "sun-bsd-no-nuclear",
+                    "scancode:sun-bsd-no-nuclear",
                     "Sun BSD-Style with Nuclear Restrictions"
                 ],
                 "__impliedId": "BSD-3-Clause-No-Nuclear-License"
@@ -86,7 +86,7 @@ nuclear facility.
             "otherNames": [
                 "BSD-3-Clause-No-Nuclear-License",
                 "BSD 3-Clause No Nuclear License",
-                "sun-bsd-no-nuclear",
+                "scancode:sun-bsd-no-nuclear",
                 "Sun BSD-Style with Nuclear Restrictions"
             ]
         },
@@ -137,7 +137,7 @@ nuclear facility.
             "spdxId": "BSD-3-Clause-No-Nuclear-License",
             "_implications": {
                 "__impliedNames": [
-                    "sun-bsd-no-nuclear",
+                    "scancode:sun-bsd-no-nuclear",
                     "Sun BSD-Style with Nuclear Restrictions",
                     "BSD-3-Clause-No-Nuclear-License"
                 ],

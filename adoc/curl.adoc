@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:curl+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -70,6 +74,7 @@ in this Software without prior written authorization of the copyright holder.
     "__impliedNames": [
         "curl",
         "curl License",
+        "scancode:curl",
         "cURL License",
         "Curl License"
     ],
@@ -81,6 +86,7 @@ in this Software without prior written authorization of the copyright holder.
                     "curl",
                     "curl",
                     "curl License",
+                    "scancode:curl",
                     "cURL License"
                 ],
                 "__impliedId": "curl"
@@ -89,6 +95,7 @@ in this Software without prior written authorization of the copyright holder.
             "otherNames": [
                 "curl",
                 "curl License",
+                "scancode:curl",
                 "cURL License"
             ]
         },
@@ -149,7 +156,7 @@ in this Software without prior written authorization of the copyright holder.
             "spdxId": "curl",
             "_implications": {
                 "__impliedNames": [
-                    "curl",
+                    "scancode:curl",
                     "cURL License",
                     "curl"
                 ],

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:netcdf+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -64,7 +68,7 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
     "__impliedNames": [
         "NetCDF",
         "NetCDF license",
-        "netcdf",
+        "scancode:netcdf",
         "NetCDF License"
     ],
     "__impliedId": "NetCDF",
@@ -76,7 +80,7 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
                     "NetCDF",
                     "NetCDF",
                     "NetCDF license",
-                    "netcdf",
+                    "scancode:netcdf",
                     "NetCDF License"
                 ],
                 "__impliedId": "NetCDF"
@@ -85,7 +89,7 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
             "otherNames": [
                 "NetCDF",
                 "NetCDF license",
-                "netcdf",
+                "scancode:netcdf",
                 "NetCDF License"
             ]
         },
@@ -159,7 +163,7 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
             "spdxId": "NetCDF",
             "_implications": {
                 "__impliedNames": [
-                    "netcdf",
+                    "scancode:netcdf",
                     "NetCDF License",
                     "NetCDF"
                 ],

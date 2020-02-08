@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-* `+sun-sissl-1.2+`
+* `+scancode:sun-sissl-1.2+`
 * `+Sun Industry Standards Source License 1.2+`
 
 === Comments on (easy) usability
@@ -184,7 +184,7 @@ All Rights Reserved.
     "__impliedNames": [
         "SISSL-1.2",
         "Sun Industry Standards Source License v1.2",
-        "sun-sissl-1.2",
+        "scancode:sun-sissl-1.2",
         "Sun Industry Standards Source License 1.2"
     ],
     "__impliedId": "SISSL-1.2",
@@ -195,7 +195,7 @@ All Rights Reserved.
                     "SISSL-1.2",
                     "SISSL-1.2",
                     "Sun Industry Standards Source License v1.2",
-                    "sun-sissl-1.2",
+                    "scancode:sun-sissl-1.2",
                     "Sun Industry Standards Source License 1.2"
                 ],
                 "__impliedId": "SISSL-1.2"
@@ -204,7 +204,7 @@ All Rights Reserved.
             "otherNames": [
                 "SISSL-1.2",
                 "Sun Industry Standards Source License v1.2",
-                "sun-sissl-1.2",
+                "scancode:sun-sissl-1.2",
                 "Sun Industry Standards Source License 1.2"
             ]
         },
@@ -252,7 +252,7 @@ All Rights Reserved.
             "spdxId": "SISSL-1.2",
             "_implications": {
                 "__impliedNames": [
-                    "sun-sissl-1.2",
+                    "scancode:sun-sissl-1.2",
                     "Sun Industry Standards Source License 1.2",
                     "SISSL-1.2"
                 ],

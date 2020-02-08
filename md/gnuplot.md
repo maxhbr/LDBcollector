@@ -3,6 +3,10 @@ gnuplot License (gnuplot)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:gnuplot`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -58,7 +62,8 @@ Raw Data
     {
         "__impliedNames": [
             "gnuplot",
-            "gnuplot License"
+            "gnuplot License",
+            "scancode:gnuplot"
         ],
         "__impliedId": "gnuplot",
         "__isFsfFree": true,
@@ -68,14 +73,16 @@ Raw Data
                     "__impliedNames": [
                         "gnuplot",
                         "gnuplot",
-                        "gnuplot License"
+                        "gnuplot License",
+                        "scancode:gnuplot"
                     ],
                     "__impliedId": "gnuplot"
                 },
                 "shortname": "gnuplot",
                 "otherNames": [
                     "gnuplot",
-                    "gnuplot License"
+                    "gnuplot License",
+                    "scancode:gnuplot"
                 ]
             },
             "SPDX": {
@@ -150,7 +157,7 @@ Raw Data
                 "spdxId": "gnuplot",
                 "_implications": {
                     "__impliedNames": [
-                        "gnuplot",
+                        "scancode:gnuplot",
                         "gnuplot License",
                         "gnuplot"
                     ],

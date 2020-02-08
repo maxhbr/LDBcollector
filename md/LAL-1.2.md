@@ -3,6 +3,10 @@ Licence Art Libre 1.2 (LAL-1.2)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:lal-1.2`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -96,7 +100,7 @@ Raw Data
         "__impliedNames": [
             "LAL-1.2",
             "Licence Art Libre 1.2",
-            "lal-1.2"
+            "scancode:lal-1.2"
         ],
         "__impliedId": "LAL-1.2",
         "__impliedAmbiguousNames": [
@@ -109,7 +113,7 @@ Raw Data
                         "LAL-1.2",
                         "LAL-1.2",
                         "Licence Art Libre 1.2",
-                        "lal-1.2"
+                        "scancode:lal-1.2"
                     ],
                     "__impliedId": "LAL-1.2"
                 },
@@ -117,7 +121,7 @@ Raw Data
                 "otherNames": [
                     "LAL-1.2",
                     "Licence Art Libre 1.2",
-                    "lal-1.2"
+                    "scancode:lal-1.2"
                 ]
             },
             "SPDX": {
@@ -164,7 +168,7 @@ Raw Data
                 "spdxId": "LAL-1.2",
                 "_implications": {
                     "__impliedNames": [
-                        "lal-1.2",
+                        "scancode:lal-1.2",
                         "Licence Art Libre 1.2",
                         "LAL-1.2"
                     ],

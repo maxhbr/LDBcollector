@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:caldera+`
+
 === Comments on (easy) usability
 
 === URLs
@@ -78,7 +82,7 @@ OF SUCH DAMAGE.
     "__impliedNames": [
         "Caldera",
         "Caldera License",
-        "caldera"
+        "scancode:caldera"
     ],
     "__impliedId": "Caldera",
     "facts": {
@@ -88,7 +92,7 @@ OF SUCH DAMAGE.
                     "Caldera",
                     "Caldera",
                     "Caldera License",
-                    "caldera"
+                    "scancode:caldera"
                 ],
                 "__impliedId": "Caldera"
             },
@@ -96,7 +100,7 @@ OF SUCH DAMAGE.
             "otherNames": [
                 "Caldera",
                 "Caldera License",
-                "caldera"
+                "scancode:caldera"
             ]
         },
         "SPDX": {
@@ -143,7 +147,7 @@ OF SUCH DAMAGE.
             "spdxId": "Caldera",
             "_implications": {
                 "__impliedNames": [
-                    "caldera",
+                    "scancode:caldera",
                     "Caldera License",
                     "Caldera"
                 ],

@@ -5,7 +5,7 @@ BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
 
 **Other Names:**
 
--   `bsd-plus-patent`
+-   `scancode:bsd-plus-patent`
 
 -   `BSD-2-Clause Plus Patent`
 
@@ -104,7 +104,7 @@ Raw Data
         "__impliedNames": [
             "BSD-2-Clause-Patent",
             "BSD-2-Clause Plus Patent License",
-            "bsd-plus-patent",
+            "scancode:bsd-plus-patent",
             "BSD-2-Clause Plus Patent"
         ],
         "__impliedId": "BSD-2-Clause-Patent",
@@ -116,7 +116,7 @@ Raw Data
                         "BSD-2-Clause-Patent",
                         "BSD-2-Clause-Patent",
                         "BSD-2-Clause Plus Patent License",
-                        "bsd-plus-patent",
+                        "scancode:bsd-plus-patent",
                         "BSD-2-Clause Plus Patent"
                     ],
                     "__impliedId": "BSD-2-Clause-Patent"
@@ -125,7 +125,7 @@ Raw Data
                 "otherNames": [
                     "BSD-2-Clause-Patent",
                     "BSD-2-Clause Plus Patent License",
-                    "bsd-plus-patent",
+                    "scancode:bsd-plus-patent",
                     "BSD-2-Clause Plus Patent"
                 ]
             },
@@ -193,7 +193,7 @@ Raw Data
                 "spdxId": "BSD-2-Clause-Patent",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-plus-patent",
+                        "scancode:bsd-plus-patent",
                         "BSD-2-Clause Plus Patent",
                         "BSD-2-Clause-Patent"
                     ],

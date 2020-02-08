@@ -3,6 +3,10 @@ Unicode Terms of Use (Unicode-TOU)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:unicode-tou`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -153,7 +157,7 @@ Raw Data
         "__impliedNames": [
             "Unicode-TOU",
             "Unicode Terms of Use",
-            "unicode-tou"
+            "scancode:unicode-tou"
         ],
         "__impliedId": "Unicode-TOU",
         "facts": {
@@ -163,7 +167,7 @@ Raw Data
                         "Unicode-TOU",
                         "Unicode-TOU",
                         "Unicode Terms of Use",
-                        "unicode-tou"
+                        "scancode:unicode-tou"
                     ],
                     "__impliedId": "Unicode-TOU"
                 },
@@ -171,7 +175,7 @@ Raw Data
                 "otherNames": [
                     "Unicode-TOU",
                     "Unicode Terms of Use",
-                    "unicode-tou"
+                    "scancode:unicode-tou"
                 ]
             },
             "SPDX": {
@@ -218,7 +222,7 @@ Raw Data
                 "spdxId": "Unicode-TOU",
                 "_implications": {
                     "__impliedNames": [
-                        "unicode-tou",
+                        "scancode:unicode-tou",
                         "Unicode Terms of Use",
                         "Unicode-TOU"
                     ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+openldap-1.4+`
+* `+scancode:openldap-1.4+`
 * `+OpenLDAP Public License 1.4+`
 
 === Comments on (easy) usability
@@ -180,7 +180,7 @@ The End
     "__impliedNames": [
         "OLDAP-1.4",
         "Open LDAP Public License v1.4",
-        "openldap-1.4",
+        "scancode:openldap-1.4",
         "OpenLDAP Public License 1.4"
     ],
     "__impliedId": "OLDAP-1.4",
@@ -191,7 +191,7 @@ The End
                     "OLDAP-1.4",
                     "OLDAP-1.4",
                     "Open LDAP Public License v1.4",
-                    "openldap-1.4",
+                    "scancode:openldap-1.4",
                     "OpenLDAP Public License 1.4"
                 ],
                 "__impliedId": "OLDAP-1.4"
@@ -200,7 +200,7 @@ The End
             "otherNames": [
                 "OLDAP-1.4",
                 "Open LDAP Public License v1.4",
-                "openldap-1.4",
+                "scancode:openldap-1.4",
                 "OpenLDAP Public License 1.4"
             ]
         },
@@ -248,7 +248,7 @@ The End
             "spdxId": "OLDAP-1.4",
             "_implications": {
                 "__impliedNames": [
-                    "openldap-1.4",
+                    "scancode:openldap-1.4",
                     "OpenLDAP Public License 1.4",
                     "OLDAP-1.4"
                 ],

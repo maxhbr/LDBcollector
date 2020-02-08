@@ -3,6 +3,10 @@ Open CASCADE Technology Public License (OCCT-PL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:occt-pl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -142,7 +146,7 @@ Raw Data
         "__impliedNames": [
             "OCCT-PL",
             "Open CASCADE Technology Public License",
-            "occt-pl"
+            "scancode:occt-pl"
         ],
         "__impliedId": "OCCT-PL",
         "facts": {
@@ -152,7 +156,7 @@ Raw Data
                         "OCCT-PL",
                         "OCCT-PL",
                         "Open CASCADE Technology Public License",
-                        "occt-pl"
+                        "scancode:occt-pl"
                     ],
                     "__impliedId": "OCCT-PL"
                 },
@@ -160,7 +164,7 @@ Raw Data
                 "otherNames": [
                     "OCCT-PL",
                     "Open CASCADE Technology Public License",
-                    "occt-pl"
+                    "scancode:occt-pl"
                 ]
             },
             "SPDX": {
@@ -230,7 +234,7 @@ Raw Data
                 "spdxId": "OCCT-PL",
                 "_implications": {
                     "__impliedNames": [
-                        "occt-pl",
+                        "scancode:occt-pl",
                         "OCCT-PL",
                         "OCCT-PL"
                     ],

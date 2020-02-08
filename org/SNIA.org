@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | Copyleft                                       |
 
+*Other Names:*
+
+- =scancode:snia=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -156,7 +160,7 @@
       "__impliedNames": [
           "SNIA",
           "SNIA Public License 1.1",
-          "snia"
+          "scancode:snia"
       ],
       "__impliedId": "SNIA",
       "__isFsfFree": true,
@@ -167,7 +171,7 @@
                       "SNIA",
                       "SNIA",
                       "SNIA Public License 1.1",
-                      "snia"
+                      "scancode:snia"
                   ],
                   "__impliedId": "SNIA"
               },
@@ -175,7 +179,7 @@
               "otherNames": [
                   "SNIA",
                   "SNIA Public License 1.1",
-                  "snia"
+                  "scancode:snia"
               ]
           },
           "SPDX": {
@@ -248,7 +252,7 @@
               "spdxId": "SNIA",
               "_implications": {
                   "__impliedNames": [
-                      "snia",
+                      "scancode:snia",
                       "SNIA Public License 1.1",
                       "SNIA"
                   ],

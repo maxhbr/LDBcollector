@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:cecill-b+`
 * `+CeCILL-B License+`
 
 === Comments on (easy) usability
@@ -296,7 +297,7 @@ Version 1.0 du 2006-09-05."
     "__impliedNames": [
         "CECILL-B",
         "CeCILL-B Free Software License Agreement",
-        "cecill-b",
+        "scancode:cecill-b",
         "CeCILL-B License"
     ],
     "__impliedId": "CECILL-B",
@@ -308,7 +309,7 @@ Version 1.0 du 2006-09-05."
                     "CECILL-B",
                     "CECILL-B",
                     "CeCILL-B Free Software License Agreement",
-                    "cecill-b",
+                    "scancode:cecill-b",
                     "CeCILL-B License"
                 ],
                 "__impliedId": "CECILL-B"
@@ -317,7 +318,7 @@ Version 1.0 du 2006-09-05."
             "otherNames": [
                 "CECILL-B",
                 "CeCILL-B Free Software License Agreement",
-                "cecill-b",
+                "scancode:cecill-b",
                 "CeCILL-B License"
             ]
         },
@@ -394,7 +395,7 @@ Version 1.0 du 2006-09-05."
             "spdxId": "CECILL-B",
             "_implications": {
                 "__impliedNames": [
-                    "cecill-b",
+                    "scancode:cecill-b",
                     "CeCILL-B License",
                     "CECILL-B"
                 ],

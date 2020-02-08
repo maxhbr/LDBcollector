@@ -3,6 +3,10 @@ Zed License (Zed)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:zed`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -38,7 +42,7 @@ Raw Data
         "__impliedNames": [
             "Zed",
             "Zed License",
-            "zed"
+            "scancode:zed"
         ],
         "__impliedId": "Zed",
         "__isFsfFree": true,
@@ -49,7 +53,7 @@ Raw Data
                         "Zed",
                         "Zed",
                         "Zed License",
-                        "zed"
+                        "scancode:zed"
                     ],
                     "__impliedId": "Zed"
                 },
@@ -57,7 +61,7 @@ Raw Data
                 "otherNames": [
                     "Zed",
                     "Zed License",
-                    "zed"
+                    "scancode:zed"
                 ]
             },
             "SPDX": {
@@ -130,7 +134,7 @@ Raw Data
                 "spdxId": "Zed",
                 "_implications": {
                     "__impliedNames": [
-                        "zed",
+                        "scancode:zed",
                         "Zed License",
                         "Zed"
                     ],

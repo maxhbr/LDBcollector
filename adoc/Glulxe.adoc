@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:glulxe+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -39,7 +43,7 @@ program or documentation which mentions my name and the URL shown above.
     "__impliedNames": [
         "Glulxe",
         "Glulxe License",
-        "glulxe"
+        "scancode:glulxe"
     ],
     "__impliedId": "Glulxe",
     "__isFsfFree": true,
@@ -50,7 +54,7 @@ program or documentation which mentions my name and the URL shown above.
                     "Glulxe",
                     "Glulxe",
                     "Glulxe License",
-                    "glulxe"
+                    "scancode:glulxe"
                 ],
                 "__impliedId": "Glulxe"
             },
@@ -58,7 +62,7 @@ program or documentation which mentions my name and the URL shown above.
             "otherNames": [
                 "Glulxe",
                 "Glulxe License",
-                "glulxe"
+                "scancode:glulxe"
             ]
         },
         "SPDX": {
@@ -131,7 +135,7 @@ program or documentation which mentions my name and the URL shown above.
             "spdxId": "Glulxe",
             "_implications": {
                 "__impliedNames": [
-                    "glulxe",
+                    "scancode:glulxe",
                     "Glulxe License",
                     "Glulxe"
                 ],

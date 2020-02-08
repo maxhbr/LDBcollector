@@ -9,6 +9,10 @@
 |Classification |Copyleft
 |===
 
+*Other Names:*
+
+* `+scancode:lal-1.2+`
+
 === Comments on (easy) usability
 
 * It is currently unstettled whether this license is DFSG-free (source:
@@ -99,7 +103,7 @@ Cette licence est soumise au droit français.
     "__impliedNames": [
         "LAL-1.2",
         "Licence Art Libre 1.2",
-        "lal-1.2"
+        "scancode:lal-1.2"
     ],
     "__impliedId": "LAL-1.2",
     "__impliedAmbiguousNames": [
@@ -112,7 +116,7 @@ Cette licence est soumise au droit français.
                     "LAL-1.2",
                     "LAL-1.2",
                     "Licence Art Libre 1.2",
-                    "lal-1.2"
+                    "scancode:lal-1.2"
                 ],
                 "__impliedId": "LAL-1.2"
             },
@@ -120,7 +124,7 @@ Cette licence est soumise au droit français.
             "otherNames": [
                 "LAL-1.2",
                 "Licence Art Libre 1.2",
-                "lal-1.2"
+                "scancode:lal-1.2"
             ]
         },
         "SPDX": {
@@ -167,7 +171,7 @@ Cette licence est soumise au droit français.
             "spdxId": "LAL-1.2",
             "_implications": {
                 "__impliedNames": [
-                    "lal-1.2",
+                    "scancode:lal-1.2",
                     "Licence Art Libre 1.2",
                     "LAL-1.2"
                 ],

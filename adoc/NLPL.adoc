@@ -9,6 +9,10 @@
 |Classification |StrongCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:nlpl+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -55,7 +59,7 @@ or anything else.
     "__impliedNames": [
         "NLPL",
         "No Limit Public License",
-        "nlpl"
+        "scancode:nlpl"
     ],
     "__impliedId": "NLPL",
     "__isFsfFree": true,
@@ -66,7 +70,7 @@ or anything else.
                     "NLPL",
                     "NLPL",
                     "No Limit Public License",
-                    "nlpl"
+                    "scancode:nlpl"
                 ],
                 "__impliedId": "NLPL"
             },
@@ -74,7 +78,7 @@ or anything else.
             "otherNames": [
                 "NLPL",
                 "No Limit Public License",
-                "nlpl"
+                "scancode:nlpl"
             ]
         },
         "SPDX": {
@@ -147,7 +151,7 @@ or anything else.
             "spdxId": "NLPL",
             "_implications": {
                 "__impliedNames": [
-                    "nlpl",
+                    "scancode:nlpl",
                     "NLPL",
                     "NLPL"
                 ],

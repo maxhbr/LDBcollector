@@ -12,6 +12,7 @@
 
 *Other Names:*
 
+* `+scancode:afl-3.0+`
 * `+AFL 3.0+`
 * `+Academic Free License, Version 3.0+`
 * `+License :: OSI Approved :: Academic Free License (AFL)+`
@@ -133,8 +134,9 @@ e) to display the Original Work publicly.
     "__impliedNames": [
         "AFL-3.0",
         "Academic Free License v3.0",
-        "afl-3.0",
+        "scancode:afl-3.0",
         "AFL 3.0",
+        "afl-3.0",
         "Academic Free License, Version 3.0",
         "License :: OSI Approved :: Academic Free License (AFL)",
         "Academic Free License 3.0"
@@ -175,8 +177,9 @@ e) to display the Original Work publicly.
                     "AFL-3.0",
                     "AFL-3.0",
                     "Academic Free License v3.0",
-                    "afl-3.0",
+                    "scancode:afl-3.0",
                     "AFL 3.0",
+                    "afl-3.0",
                     "Academic Free License, Version 3.0",
                     "License :: OSI Approved :: Academic Free License (AFL)",
                     "Academic Free License 3.0"
@@ -187,8 +190,9 @@ e) to display the Original Work publicly.
             "otherNames": [
                 "AFL-3.0",
                 "Academic Free License v3.0",
-                "afl-3.0",
+                "scancode:afl-3.0",
                 "AFL 3.0",
+                "afl-3.0",
                 "Academic Free License, Version 3.0",
                 "License :: OSI Approved :: Academic Free License (AFL)",
                 "Academic Free License 3.0"
@@ -256,7 +260,7 @@ e) to display the Original Work publicly.
             "spdxId": "AFL-3.0",
             "_implications": {
                 "__impliedNames": [
-                    "afl-3.0",
+                    "scancode:afl-3.0",
                     "AFL 3.0",
                     "AFL-3.0"
                 ],

@@ -10,6 +10,8 @@
 
 *Other Names:*
 
+- =scancode:mit=
+
 - =MIT/Expat License=
 
 - =Expat=
@@ -148,6 +150,7 @@
       "__impliedNames": [
           "MIT",
           "MIT License",
+          "scancode:mit",
           "mit",
           "MIT/Expat License",
           "Expat",
@@ -195,6 +198,7 @@
                       "MIT",
                       "MIT",
                       "MIT License",
+                      "scancode:mit",
                       "mit",
                       "MIT/Expat License",
                       "Expat",
@@ -208,6 +212,7 @@
               "otherNames": [
                   "MIT",
                   "MIT License",
+                  "scancode:mit",
                   "mit",
                   "MIT/Expat License",
                   "Expat",
@@ -308,7 +313,7 @@
               "spdxId": "MIT",
               "_implications": {
                   "__impliedNames": [
-                      "mit",
+                      "scancode:mit",
                       "MIT License",
                       "MIT"
                   ],

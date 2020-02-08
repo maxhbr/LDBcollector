@@ -2,7 +2,7 @@
     "__impliedNames": [
         "CPAL-1.0",
         "Common Public Attribution License 1.0",
-        "cpal-1.0",
+        "scancode:cpal-1.0",
         "CPAL 1.0",
         "Common Public Attribution License Version 1.0 (CPAL-1.0)"
     ],
@@ -44,7 +44,7 @@
                     "CPAL-1.0",
                     "CPAL-1.0",
                     "Common Public Attribution License 1.0",
-                    "cpal-1.0",
+                    "scancode:cpal-1.0",
                     "CPAL 1.0",
                     "Common Public Attribution License Version 1.0 (CPAL-1.0)"
                 ],
@@ -54,7 +54,7 @@
             "otherNames": [
                 "CPAL-1.0",
                 "Common Public Attribution License 1.0",
-                "cpal-1.0",
+                "scancode:cpal-1.0",
                 "CPAL 1.0",
                 "Common Public Attribution License Version 1.0 (CPAL-1.0)"
             ]
@@ -115,7 +115,7 @@
             "spdxId": "CPAL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "cpal-1.0",
+                    "scancode:cpal-1.0",
                     "CPAL 1.0",
                     "CPAL-1.0"
                 ],

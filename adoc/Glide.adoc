@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:glide+`
 * `+3DFX GLIDE+`
 
 === Comments on (easy) usability
@@ -290,7 +291,7 @@ DAMAGES.
     "__impliedNames": [
         "Glide",
         "3dfx Glide License",
-        "glide",
+        "scancode:glide",
         "3DFX GLIDE"
     ],
     "__impliedId": "Glide",
@@ -302,7 +303,7 @@ DAMAGES.
                     "Glide",
                     "Glide",
                     "3dfx Glide License",
-                    "glide",
+                    "scancode:glide",
                     "3DFX GLIDE"
                 ],
                 "__impliedId": "Glide"
@@ -311,7 +312,7 @@ DAMAGES.
             "otherNames": [
                 "Glide",
                 "3dfx Glide License",
-                "glide",
+                "scancode:glide",
                 "3DFX GLIDE"
             ]
         },
@@ -385,7 +386,7 @@ DAMAGES.
             "spdxId": "Glide",
             "_implications": {
                 "__impliedNames": [
-                    "glide",
+                    "scancode:glide",
                     "3DFX GLIDE",
                     "Glide"
                 ],

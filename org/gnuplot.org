@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | WeakCopyleft                                   |
 
+*Other Names:*
+
+- =scancode:gnuplot=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -61,7 +65,8 @@
   {
       "__impliedNames": [
           "gnuplot",
-          "gnuplot License"
+          "gnuplot License",
+          "scancode:gnuplot"
       ],
       "__impliedId": "gnuplot",
       "__isFsfFree": true,
@@ -71,14 +76,16 @@
                   "__impliedNames": [
                       "gnuplot",
                       "gnuplot",
-                      "gnuplot License"
+                      "gnuplot License",
+                      "scancode:gnuplot"
                   ],
                   "__impliedId": "gnuplot"
               },
               "shortname": "gnuplot",
               "otherNames": [
                   "gnuplot",
-                  "gnuplot License"
+                  "gnuplot License",
+                  "scancode:gnuplot"
               ]
           },
           "SPDX": {
@@ -153,7 +160,7 @@
               "spdxId": "gnuplot",
               "_implications": {
                   "__impliedNames": [
-                      "gnuplot",
+                      "scancode:gnuplot",
                       "gnuplot License",
                       "gnuplot"
                   ],

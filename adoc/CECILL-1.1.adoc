@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:cecill-1.1+`
 * `+CeCILL 1.1 English+`
 
 === Comments on (easy) usability
@@ -535,7 +536,7 @@ jurisdiction, by the first Party to take action.
     "__impliedNames": [
         "CECILL-1.1",
         "CeCILL Free Software License Agreement v1.1",
-        "cecill-1.1",
+        "scancode:cecill-1.1",
         "CeCILL 1.1 English"
     ],
     "__impliedId": "CECILL-1.1",
@@ -546,7 +547,7 @@ jurisdiction, by the first Party to take action.
                     "CECILL-1.1",
                     "CECILL-1.1",
                     "CeCILL Free Software License Agreement v1.1",
-                    "cecill-1.1",
+                    "scancode:cecill-1.1",
                     "CeCILL 1.1 English"
                 ],
                 "__impliedId": "CECILL-1.1"
@@ -555,7 +556,7 @@ jurisdiction, by the first Party to take action.
             "otherNames": [
                 "CECILL-1.1",
                 "CeCILL Free Software License Agreement v1.1",
-                "cecill-1.1",
+                "scancode:cecill-1.1",
                 "CeCILL 1.1 English"
             ]
         },
@@ -605,7 +606,7 @@ jurisdiction, by the first Party to take action.
             "spdxId": "CECILL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "cecill-1.1",
+                    "scancode:cecill-1.1",
                     "CeCILL 1.1 English",
                     "CECILL-1.1"
                 ],

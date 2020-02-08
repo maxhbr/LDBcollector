@@ -3,6 +3,10 @@ Secure Messaging Protocol Public License (SMPPL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:smppl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -55,7 +59,7 @@ Raw Data
         "__impliedNames": [
             "SMPPL",
             "Secure Messaging Protocol Public License",
-            "smppl"
+            "scancode:smppl"
         ],
         "__impliedId": "SMPPL",
         "facts": {
@@ -65,7 +69,7 @@ Raw Data
                         "SMPPL",
                         "SMPPL",
                         "Secure Messaging Protocol Public License",
-                        "smppl"
+                        "scancode:smppl"
                     ],
                     "__impliedId": "SMPPL"
                 },
@@ -73,7 +77,7 @@ Raw Data
                 "otherNames": [
                     "SMPPL",
                     "Secure Messaging Protocol Public License",
-                    "smppl"
+                    "scancode:smppl"
                 ]
             },
             "SPDX": {
@@ -120,7 +124,7 @@ Raw Data
                 "spdxId": "SMPPL",
                 "_implications": {
                     "__impliedNames": [
-                        "smppl",
+                        "scancode:smppl",
                         "SMPPL",
                         "SMPPL"
                     ],

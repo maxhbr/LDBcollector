@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | WeakCopyleft                                   |
 
+*Other Names:*
+
+- =scancode:gsoap-1.3b=
+
 ** Comments on (easy) usability
 
 ** URLs
@@ -195,7 +199,7 @@
       "__impliedNames": [
           "gSOAP-1.3b",
           "gSOAP Public License v1.3b",
-          "gsoap-1.3b"
+          "scancode:gsoap-1.3b"
       ],
       "__impliedId": "gSOAP-1.3b",
       "facts": {
@@ -205,7 +209,7 @@
                       "gSOAP-1.3b",
                       "gSOAP-1.3b",
                       "gSOAP Public License v1.3b",
-                      "gsoap-1.3b"
+                      "scancode:gsoap-1.3b"
                   ],
                   "__impliedId": "gSOAP-1.3b"
               },
@@ -213,7 +217,7 @@
               "otherNames": [
                   "gSOAP-1.3b",
                   "gSOAP Public License v1.3b",
-                  "gsoap-1.3b"
+                  "scancode:gsoap-1.3b"
               ]
           },
           "SPDX": {
@@ -260,7 +264,7 @@
               "spdxId": "gSOAP-1.3b",
               "_implications": {
                   "__impliedNames": [
-                      "gsoap-1.3b",
+                      "scancode:gsoap-1.3b",
                       "gSOAP Public License v1.3b",
                       "gSOAP-1.3b"
                   ],

@@ -3,6 +3,10 @@ XSkat License (XSkat)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:xskat`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -44,7 +48,7 @@ Raw Data
         "__impliedNames": [
             "XSkat",
             "XSkat License",
-            "xskat"
+            "scancode:xskat"
         ],
         "__impliedId": "XSkat",
         "__isFsfFree": true,
@@ -55,7 +59,7 @@ Raw Data
                         "XSkat",
                         "XSkat",
                         "XSkat License",
-                        "xskat"
+                        "scancode:xskat"
                     ],
                     "__impliedId": "XSkat"
                 },
@@ -63,7 +67,7 @@ Raw Data
                 "otherNames": [
                     "XSkat",
                     "XSkat License",
-                    "xskat"
+                    "scancode:xskat"
                 ]
             },
             "SPDX": {
@@ -136,7 +140,7 @@ Raw Data
                 "spdxId": "XSkat",
                 "_implications": {
                     "__impliedNames": [
-                        "xskat",
+                        "scancode:xskat",
                         "XSkat License",
                         "XSkat"
                     ],

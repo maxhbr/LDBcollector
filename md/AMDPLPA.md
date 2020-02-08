@@ -5,6 +5,8 @@ AMD's plpa\_map.c License (AMDPLPA)
 
 **Other Names:**
 
+-   `scancode:amdplpa`
+
 -   `AMD PLPA License`
 
 Comments on (easy) usability
@@ -120,7 +122,7 @@ Raw Data
         "__impliedNames": [
             "AMDPLPA",
             "AMD's plpa_map.c License",
-            "amdplpa",
+            "scancode:amdplpa",
             "AMD PLPA License"
         ],
         "__impliedId": "AMDPLPA",
@@ -132,7 +134,7 @@ Raw Data
                         "AMDPLPA",
                         "AMDPLPA",
                         "AMD's plpa_map.c License",
-                        "amdplpa",
+                        "scancode:amdplpa",
                         "AMD PLPA License"
                     ],
                     "__impliedId": "AMDPLPA"
@@ -141,7 +143,7 @@ Raw Data
                 "otherNames": [
                     "AMDPLPA",
                     "AMD's plpa_map.c License",
-                    "amdplpa",
+                    "scancode:amdplpa",
                     "AMD PLPA License"
                 ]
             },
@@ -215,7 +217,7 @@ Raw Data
                 "spdxId": "AMDPLPA",
                 "_implications": {
                     "__impliedNames": [
-                        "amdplpa",
+                        "scancode:amdplpa",
                         "AMD PLPA License",
                         "AMDPLPA"
                     ],

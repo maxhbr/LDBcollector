@@ -3,6 +3,10 @@ Noweb License (Noweb)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:noweb`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -53,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "Noweb",
             "Noweb License",
-            "noweb"
+            "scancode:noweb"
         ],
         "__impliedId": "Noweb",
         "__isFsfFree": true,
@@ -64,7 +68,7 @@ Raw Data
                         "Noweb",
                         "Noweb",
                         "Noweb License",
-                        "noweb"
+                        "scancode:noweb"
                     ],
                     "__impliedId": "Noweb"
                 },
@@ -72,7 +76,7 @@ Raw Data
                 "otherNames": [
                     "Noweb",
                     "Noweb License",
-                    "noweb"
+                    "scancode:noweb"
                 ]
             },
             "SPDX": {
@@ -147,7 +151,7 @@ Raw Data
                 "spdxId": "Noweb",
                 "_implications": {
                     "__impliedNames": [
-                        "noweb",
+                        "scancode:noweb",
                         "Noweb License",
                         "Noweb"
                     ],

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:dsdp+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Silver (source:
@@ -80,7 +84,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
     "__impliedNames": [
         "DSDP",
         "DSDP License",
-        "dsdp"
+        "scancode:dsdp"
     ],
     "__impliedId": "DSDP",
     "__isFsfFree": true,
@@ -91,7 +95,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
                     "DSDP",
                     "DSDP",
                     "DSDP License",
-                    "dsdp"
+                    "scancode:dsdp"
                 ],
                 "__impliedId": "DSDP"
             },
@@ -99,7 +103,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
             "otherNames": [
                 "DSDP",
                 "DSDP License",
-                "dsdp"
+                "scancode:dsdp"
             ]
         },
         "SPDX": {
@@ -172,7 +176,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
             "spdxId": "DSDP",
             "_implications": {
                 "__impliedNames": [
-                    "dsdp",
+                    "scancode:dsdp",
                     "DSDP License",
                     "DSDP"
                 ],

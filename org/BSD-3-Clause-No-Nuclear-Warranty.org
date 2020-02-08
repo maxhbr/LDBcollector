@@ -7,6 +7,10 @@
 | Rating           | Go                                 |
 | Classification   | NoCopyleft                         |
 
+*Other Names:*
+
+- =scancode:bsd-3-clause-no-nuclear-warranty=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Bronze (source:
@@ -67,7 +71,7 @@
       "__impliedNames": [
           "BSD-3-Clause-No-Nuclear-Warranty",
           "BSD 3-Clause No Nuclear Warranty",
-          "bsd-3-clause-no-nuclear-warranty"
+          "scancode:bsd-3-clause-no-nuclear-warranty"
       ],
       "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
       "facts": {
@@ -77,7 +81,7 @@
                       "BSD-3-Clause-No-Nuclear-Warranty",
                       "BSD-3-Clause-No-Nuclear-Warranty",
                       "BSD 3-Clause No Nuclear Warranty",
-                      "bsd-3-clause-no-nuclear-warranty"
+                      "scancode:bsd-3-clause-no-nuclear-warranty"
                   ],
                   "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty"
               },
@@ -85,7 +89,7 @@
               "otherNames": [
                   "BSD-3-Clause-No-Nuclear-Warranty",
                   "BSD 3-Clause No Nuclear Warranty",
-                  "bsd-3-clause-no-nuclear-warranty"
+                  "scancode:bsd-3-clause-no-nuclear-warranty"
               ]
           },
           "SPDX": {
@@ -134,7 +138,7 @@
               "spdxId": "BSD-3-Clause-No-Nuclear-Warranty",
               "_implications": {
                   "__impliedNames": [
-                      "bsd-3-clause-no-nuclear-warranty",
+                      "scancode:bsd-3-clause-no-nuclear-warranty",
                       "BSD 3-Clause No Nuclear Warranty",
                       "BSD-3-Clause-No-Nuclear-Warranty"
                   ],

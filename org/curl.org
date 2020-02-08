@@ -7,6 +7,10 @@
 | Rating           | Go             |
 | Classification   | NoCopyleft     |
 
+*Other Names:*
+
+- =scancode:curl=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Bronze (source:
@@ -74,6 +78,7 @@
       "__impliedNames": [
           "curl",
           "curl License",
+          "scancode:curl",
           "cURL License",
           "Curl License"
       ],
@@ -85,6 +90,7 @@
                       "curl",
                       "curl",
                       "curl License",
+                      "scancode:curl",
                       "cURL License"
                   ],
                   "__impliedId": "curl"
@@ -93,6 +99,7 @@
               "otherNames": [
                   "curl",
                   "curl License",
+                  "scancode:curl",
                   "cURL License"
               ]
           },
@@ -153,7 +160,7 @@
               "spdxId": "curl",
               "_implications": {
                   "__impliedNames": [
-                      "curl",
+                      "scancode:curl",
                       "cURL License",
                       "curl"
                   ],

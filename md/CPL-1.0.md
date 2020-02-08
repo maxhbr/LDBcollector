@@ -5,6 +5,8 @@ Common Public License 1.0 (CPL-1.0)
 
 **Other Names:**
 
+-   `scancode:cpl-1.0`
+
 -   `CPL 1.0`
 
 -   `Common Public License, Version 1.0`
@@ -150,7 +152,7 @@ Raw Data
         "__impliedNames": [
             "CPL-1.0",
             "Common Public License 1.0",
-            "cpl-1.0",
+            "scancode:cpl-1.0",
             "CPL 1.0",
             "Common Public License, Version 1.0",
             "CPL",
@@ -168,7 +170,7 @@ Raw Data
                         "CPL-1.0",
                         "CPL-1.0",
                         "Common Public License 1.0",
-                        "cpl-1.0",
+                        "scancode:cpl-1.0",
                         "CPL 1.0",
                         "Common Public License, Version 1.0",
                         "CPL",
@@ -180,7 +182,7 @@ Raw Data
                 "otherNames": [
                     "CPL-1.0",
                     "Common Public License 1.0",
-                    "cpl-1.0",
+                    "scancode:cpl-1.0",
                     "CPL 1.0",
                     "Common Public License, Version 1.0",
                     "CPL",
@@ -247,7 +249,7 @@ Raw Data
                 "spdxId": "CPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "cpl-1.0",
+                        "scancode:cpl-1.0",
                         "CPL 1.0",
                         "CPL-1.0"
                     ],

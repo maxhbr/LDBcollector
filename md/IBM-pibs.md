@@ -5,6 +5,8 @@ IBM PowerPC Initialization and Boot Software (IBM-pibs)
 
 **Other Names:**
 
+-   `scancode:ibm-pibs`
+
 -   `IBM PowerPC Software`
 
 Comments on (easy) usability
@@ -63,7 +65,7 @@ Raw Data
         "__impliedNames": [
             "IBM-pibs",
             "IBM PowerPC Initialization and Boot Software",
-            "ibm-pibs",
+            "scancode:ibm-pibs",
             "IBM PowerPC Software"
         ],
         "__impliedId": "IBM-pibs",
@@ -75,7 +77,7 @@ Raw Data
                         "IBM-pibs",
                         "IBM-pibs",
                         "IBM PowerPC Initialization and Boot Software",
-                        "ibm-pibs",
+                        "scancode:ibm-pibs",
                         "IBM PowerPC Software"
                     ],
                     "__impliedId": "IBM-pibs"
@@ -84,7 +86,7 @@ Raw Data
                 "otherNames": [
                     "IBM-pibs",
                     "IBM PowerPC Initialization and Boot Software",
-                    "ibm-pibs",
+                    "scancode:ibm-pibs",
                     "IBM PowerPC Software"
                 ]
             },
@@ -143,7 +145,7 @@ Raw Data
                 "spdxId": "IBM-pibs",
                 "_implications": {
                     "__impliedNames": [
-                        "ibm-pibs",
+                        "scancode:ibm-pibs",
                         "IBM PowerPC Software",
                         "IBM-pibs"
                     ],

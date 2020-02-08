@@ -5,6 +5,8 @@ psutils License (psutils)
 
 **Other Names:**
 
+-   `scancode:psutils`
+
 -   `PS Utilities License`
 
 Comments on (easy) usability
@@ -71,6 +73,7 @@ Raw Data
         "__impliedNames": [
             "psutils",
             "psutils License",
+            "scancode:psutils",
             "PS Utilities License"
         ],
         "__impliedId": "psutils",
@@ -82,6 +85,7 @@ Raw Data
                         "psutils",
                         "psutils",
                         "psutils License",
+                        "scancode:psutils",
                         "PS Utilities License"
                     ],
                     "__impliedId": "psutils"
@@ -90,6 +94,7 @@ Raw Data
                 "otherNames": [
                     "psutils",
                     "psutils License",
+                    "scancode:psutils",
                     "PS Utilities License"
                 ]
             },
@@ -165,7 +170,7 @@ Raw Data
                 "spdxId": "psutils",
                 "_implications": {
                     "__impliedNames": [
-                        "psutils",
+                        "scancode:psutils",
                         "PS Utilities License",
                         "psutils"
                     ],

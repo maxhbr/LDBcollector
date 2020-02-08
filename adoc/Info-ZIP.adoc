@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:info-zip+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -56,7 +60,7 @@ Permission is granted to anyone to use this software for any purpose, including 
     "__impliedNames": [
         "Info-ZIP",
         "Info-ZIP License",
-        "info-zip",
+        "scancode:info-zip",
         "Info-Zip License"
     ],
     "__impliedId": "Info-ZIP",
@@ -67,7 +71,7 @@ Permission is granted to anyone to use this software for any purpose, including 
                     "Info-ZIP",
                     "Info-ZIP",
                     "Info-ZIP License",
-                    "info-zip",
+                    "scancode:info-zip",
                     "Info-Zip License"
                 ],
                 "__impliedId": "Info-ZIP"
@@ -76,7 +80,7 @@ Permission is granted to anyone to use this software for any purpose, including 
             "otherNames": [
                 "Info-ZIP",
                 "Info-ZIP License",
-                "info-zip",
+                "scancode:info-zip",
                 "Info-Zip License"
             ]
         },
@@ -124,7 +128,7 @@ Permission is granted to anyone to use this software for any purpose, including 
             "spdxId": "Info-ZIP",
             "_implications": {
                 "__impliedNames": [
-                    "info-zip",
+                    "scancode:info-zip",
                     "Info-Zip License",
                     "Info-ZIP"
                 ],

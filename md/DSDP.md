@@ -3,6 +3,10 @@ DSDP License (DSDP)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:dsdp`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -78,7 +82,7 @@ Raw Data
         "__impliedNames": [
             "DSDP",
             "DSDP License",
-            "dsdp"
+            "scancode:dsdp"
         ],
         "__impliedId": "DSDP",
         "__isFsfFree": true,
@@ -89,7 +93,7 @@ Raw Data
                         "DSDP",
                         "DSDP",
                         "DSDP License",
-                        "dsdp"
+                        "scancode:dsdp"
                     ],
                     "__impliedId": "DSDP"
                 },
@@ -97,7 +101,7 @@ Raw Data
                 "otherNames": [
                     "DSDP",
                     "DSDP License",
-                    "dsdp"
+                    "scancode:dsdp"
                 ]
             },
             "SPDX": {
@@ -170,7 +174,7 @@ Raw Data
                 "spdxId": "DSDP",
                 "_implications": {
                     "__impliedNames": [
-                        "dsdp",
+                        "scancode:dsdp",
                         "DSDP License",
                         "DSDP"
                     ],

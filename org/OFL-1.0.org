@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:ofl-1.0=
+
 - =OFL 1.0=
 
 ** Comments on (easy) usability
@@ -128,7 +130,7 @@
       "__impliedNames": [
           "OFL-1.0",
           "SIL Open Font License 1.0",
-          "ofl-1.0",
+          "scancode:ofl-1.0",
           "OFL 1.0"
       ],
       "__impliedId": "OFL-1.0",
@@ -142,7 +144,7 @@
                       "OFL-1.0",
                       "OFL-1.0",
                       "SIL Open Font License 1.0",
-                      "ofl-1.0",
+                      "scancode:ofl-1.0",
                       "OFL 1.0"
                   ],
                   "__impliedId": "OFL-1.0"
@@ -151,7 +153,7 @@
               "otherNames": [
                   "OFL-1.0",
                   "SIL Open Font License 1.0",
-                  "ofl-1.0",
+                  "scancode:ofl-1.0",
                   "OFL 1.0"
               ]
           },
@@ -199,7 +201,7 @@
               "spdxId": "OFL-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "ofl-1.0",
+                      "scancode:ofl-1.0",
                       "OFL 1.0",
                       "OFL-1.0"
                   ],

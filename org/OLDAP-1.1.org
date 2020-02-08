@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =openldap-1.1=
+- =scancode:openldap-1.1=
 
 - =OpenLDAP Public License 1.1=
 
@@ -163,7 +163,7 @@
       "__impliedNames": [
           "OLDAP-1.1",
           "Open LDAP Public License v1.1",
-          "openldap-1.1",
+          "scancode:openldap-1.1",
           "OpenLDAP Public License 1.1"
       ],
       "__impliedId": "OLDAP-1.1",
@@ -174,7 +174,7 @@
                       "OLDAP-1.1",
                       "OLDAP-1.1",
                       "Open LDAP Public License v1.1",
-                      "openldap-1.1",
+                      "scancode:openldap-1.1",
                       "OpenLDAP Public License 1.1"
                   ],
                   "__impliedId": "OLDAP-1.1"
@@ -183,7 +183,7 @@
               "otherNames": [
                   "OLDAP-1.1",
                   "Open LDAP Public License v1.1",
-                  "openldap-1.1",
+                  "scancode:openldap-1.1",
                   "OpenLDAP Public License 1.1"
               ]
           },
@@ -231,7 +231,7 @@
               "spdxId": "OLDAP-1.1",
               "_implications": {
                   "__impliedNames": [
-                      "openldap-1.1",
+                      "scancode:openldap-1.1",
                       "OpenLDAP Public License 1.1",
                       "OLDAP-1.1"
                   ],

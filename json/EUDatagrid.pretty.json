@@ -2,7 +2,7 @@
     "__impliedNames": [
         "EUDatagrid",
         "EU DataGrid Software License",
-        "eu-datagrid",
+        "scancode:eu-datagrid",
         "EU Datagrid Software License"
     ],
     "__impliedId": "EUDatagrid",
@@ -41,7 +41,7 @@
                     "EUDatagrid",
                     "EUDatagrid",
                     "EU DataGrid Software License",
-                    "eu-datagrid"
+                    "scancode:eu-datagrid"
                 ],
                 "__impliedId": "EUDatagrid"
             },
@@ -49,7 +49,7 @@
             "otherNames": [
                 "EUDatagrid",
                 "EU DataGrid Software License",
-                "eu-datagrid"
+                "scancode:eu-datagrid"
             ]
         },
         "SPDX": {
@@ -140,7 +140,7 @@
             "spdxId": "EUDatagrid",
             "_implications": {
                 "__impliedNames": [
-                    "eu-datagrid",
+                    "scancode:eu-datagrid",
                     "EU DataGrid Software License",
                     "EUDatagrid"
                 ],

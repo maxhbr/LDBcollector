@@ -5,6 +5,8 @@ Eiffel Forum License v1.0 (EFL-1.0)
 
 **Other Names:**
 
+-   `scancode:efl-1.0`
+
 -   `EFL 1.0`
 
 -   `The Eiffel Forum License, Version 1`
@@ -69,7 +71,7 @@ Raw Data
         "__impliedNames": [
             "EFL-1.0",
             "Eiffel Forum License v1.0",
-            "efl-1.0",
+            "scancode:efl-1.0",
             "EFL 1.0",
             "The Eiffel Forum License, Version 1"
         ],
@@ -81,7 +83,7 @@ Raw Data
                         "EFL-1.0",
                         "EFL-1.0",
                         "Eiffel Forum License v1.0",
-                        "efl-1.0",
+                        "scancode:efl-1.0",
                         "EFL 1.0",
                         "The Eiffel Forum License, Version 1"
                     ],
@@ -91,7 +93,7 @@ Raw Data
                 "otherNames": [
                     "EFL-1.0",
                     "Eiffel Forum License v1.0",
-                    "efl-1.0",
+                    "scancode:efl-1.0",
                     "EFL 1.0",
                     "The Eiffel Forum License, Version 1"
                 ]
@@ -157,7 +159,7 @@ Raw Data
                 "spdxId": "EFL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "efl-1.0",
+                        "scancode:efl-1.0",
                         "EFL 1.0",
                         "EFL-1.0"
                     ],

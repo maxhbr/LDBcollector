@@ -5,6 +5,8 @@ Artistic License 1.0 (Artistic-1.0)
 
 **Other Names:**
 
+-   `scancode:artistic-1.0`
+
 -   `Artistic 1.0`
 
 -   `Artistic License, Version 1.0`
@@ -162,7 +164,7 @@ Raw Data
         "__impliedNames": [
             "Artistic-1.0",
             "Artistic License 1.0",
-            "artistic-1.0",
+            "scancode:artistic-1.0",
             "Artistic 1.0",
             "Artistic License, Version 1.0",
             "Artistic 1.0 (original)"
@@ -178,7 +180,7 @@ Raw Data
                         "Artistic-1.0",
                         "Artistic-1.0",
                         "Artistic License 1.0",
-                        "artistic-1.0",
+                        "scancode:artistic-1.0",
                         "Artistic 1.0",
                         "Artistic License, Version 1.0",
                         "Artistic 1.0 (original)"
@@ -189,7 +191,7 @@ Raw Data
                 "otherNames": [
                     "Artistic-1.0",
                     "Artistic License 1.0",
-                    "artistic-1.0",
+                    "scancode:artistic-1.0",
                     "Artistic 1.0",
                     "Artistic License, Version 1.0",
                     "Artistic 1.0 (original)"
@@ -276,7 +278,7 @@ Raw Data
                 "spdxId": "Artistic-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "artistic-1.0",
+                        "scancode:artistic-1.0",
                         "Artistic 1.0",
                         "Artistic-1.0"
                     ],

@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | Copyleft                                       |
 
+*Other Names:*
+
+- =scancode:vim=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -145,7 +149,7 @@
       "__impliedNames": [
           "Vim",
           "Vim License",
-          "vim",
+          "scancode:vim",
           "VIM License"
       ],
       "__impliedId": "Vim",
@@ -157,7 +161,7 @@
                       "Vim",
                       "Vim",
                       "Vim License",
-                      "vim",
+                      "scancode:vim",
                       "VIM License"
                   ],
                   "__impliedId": "Vim"
@@ -166,7 +170,7 @@
               "otherNames": [
                   "Vim",
                   "Vim License",
-                  "vim",
+                  "scancode:vim",
                   "VIM License"
               ]
           },
@@ -242,7 +246,7 @@
               "spdxId": "Vim",
               "_implications": {
                   "__impliedNames": [
-                      "vim",
+                      "scancode:vim",
                       "VIM License",
                       "Vim"
                   ],

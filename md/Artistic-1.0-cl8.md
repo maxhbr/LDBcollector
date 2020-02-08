@@ -5,6 +5,8 @@ Artistic License 1.0 w/clause 8 (Artistic-1.0-cl8)
 
 **Other Names:**
 
+-   `scancode:artistic-1.0-cl8`
+
 -   `Artistic 1.0 w/clause 8`
 
 Comments on (easy) usability
@@ -152,7 +154,7 @@ Raw Data
         "__impliedNames": [
             "Artistic-1.0-cl8",
             "Artistic License 1.0 w/clause 8",
-            "artistic-1.0-cl8",
+            "scancode:artistic-1.0-cl8",
             "Artistic 1.0 w/clause 8"
         ],
         "__impliedId": "Artistic-1.0-cl8",
@@ -166,7 +168,7 @@ Raw Data
                         "Artistic-1.0-cl8",
                         "Artistic-1.0-cl8",
                         "Artistic License 1.0 w/clause 8",
-                        "artistic-1.0-cl8",
+                        "scancode:artistic-1.0-cl8",
                         "Artistic 1.0 w/clause 8"
                     ],
                     "__impliedId": "Artistic-1.0-cl8"
@@ -175,7 +177,7 @@ Raw Data
                 "otherNames": [
                     "Artistic-1.0-cl8",
                     "Artistic License 1.0 w/clause 8",
-                    "artistic-1.0-cl8",
+                    "scancode:artistic-1.0-cl8",
                     "Artistic 1.0 w/clause 8"
                 ]
             },
@@ -235,7 +237,7 @@ Raw Data
                 "spdxId": "Artistic-1.0-cl8",
                 "_implications": {
                     "__impliedNames": [
-                        "artistic-1.0-cl8",
+                        "scancode:artistic-1.0-cl8",
                         "Artistic 1.0 w/clause 8",
                         "Artistic-1.0-cl8"
                     ],

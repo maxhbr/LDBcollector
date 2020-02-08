@@ -5,6 +5,8 @@ Licence Libre du Québec – Permissive version 1.1 (LiLiQ-P-1.1)
 
 **Other Names:**
 
+-   `scancode:liliq-p-1.1`
+
 -   `Licence Libre du Québec – Permissive, Version 1.1`
 
 Comments on (easy) usability
@@ -104,7 +106,7 @@ Raw Data
         "__impliedNames": [
             "LiLiQ-P-1.1",
             "Licence Libre du QuÃ©bec â Permissive version 1.1",
-            "liliq-p-1.1",
+            "scancode:liliq-p-1.1",
             "Licence Libre du QuÃ©bec â Permissive, Version 1.1"
         ],
         "__impliedId": "LiLiQ-P-1.1",
@@ -115,7 +117,7 @@ Raw Data
                         "LiLiQ-P-1.1",
                         "LiLiQ-P-1.1",
                         "Licence Libre du QuÃ©bec â Permissive version 1.1",
-                        "liliq-p-1.1",
+                        "scancode:liliq-p-1.1",
                         "Licence Libre du QuÃ©bec â Permissive, Version 1.1"
                     ],
                     "__impliedId": "LiLiQ-P-1.1"
@@ -124,7 +126,7 @@ Raw Data
                 "otherNames": [
                     "LiLiQ-P-1.1",
                     "Licence Libre du QuÃ©bec â Permissive version 1.1",
-                    "liliq-p-1.1",
+                    "scancode:liliq-p-1.1",
                     "Licence Libre du QuÃ©bec â Permissive, Version 1.1"
                 ]
             },
@@ -186,7 +188,7 @@ Raw Data
                 "spdxId": "LiLiQ-P-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "liliq-p-1.1",
+                        "scancode:liliq-p-1.1",
                         "LiLiQ-P-1.1",
                         "LiLiQ-P-1.1"
                     ],

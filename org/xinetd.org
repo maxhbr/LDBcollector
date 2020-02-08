@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:xinetd=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -94,7 +98,8 @@
   {
       "__impliedNames": [
           "xinetd",
-          "xinetd License"
+          "xinetd License",
+          "scancode:xinetd"
       ],
       "__impliedId": "xinetd",
       "__isFsfFree": true,
@@ -104,14 +109,16 @@
                   "__impliedNames": [
                       "xinetd",
                       "xinetd",
-                      "xinetd License"
+                      "xinetd License",
+                      "scancode:xinetd"
                   ],
                   "__impliedId": "xinetd"
               },
               "shortname": "xinetd",
               "otherNames": [
                   "xinetd",
-                  "xinetd License"
+                  "xinetd License",
+                  "scancode:xinetd"
               ]
           },
           "SPDX": {
@@ -184,7 +191,7 @@
               "spdxId": "xinetd",
               "_implications": {
                   "__impliedNames": [
-                      "xinetd",
+                      "scancode:xinetd",
                       "xinetd License",
                       "xinetd"
                   ],

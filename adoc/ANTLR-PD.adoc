@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:antlr-pd+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -69,7 +73,7 @@ parrt@antlr.org
     "__impliedNames": [
         "ANTLR-PD",
         "ANTLR Software Rights Notice",
-        "antlr-pd"
+        "scancode:antlr-pd"
     ],
     "__impliedId": "ANTLR-PD",
     "__isFsfFree": true,
@@ -80,7 +84,7 @@ parrt@antlr.org
                     "ANTLR-PD",
                     "ANTLR-PD",
                     "ANTLR Software Rights Notice",
-                    "antlr-pd"
+                    "scancode:antlr-pd"
                 ],
                 "__impliedId": "ANTLR-PD"
             },
@@ -88,7 +92,7 @@ parrt@antlr.org
             "otherNames": [
                 "ANTLR-PD",
                 "ANTLR Software Rights Notice",
-                "antlr-pd"
+                "scancode:antlr-pd"
             ]
         },
         "SPDX": {
@@ -164,7 +168,7 @@ parrt@antlr.org
             "spdxId": "ANTLR-PD",
             "_implications": {
                 "__impliedNames": [
-                    "antlr-pd",
+                    "scancode:antlr-pd",
                     "ANTLR-PD",
                     "ANTLR-PD"
                 ],

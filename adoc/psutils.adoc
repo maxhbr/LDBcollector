@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:psutils+`
 * `+PS Utilities License+`
 
 === Comments on (easy) usability
@@ -72,6 +73,7 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
     "__impliedNames": [
         "psutils",
         "psutils License",
+        "scancode:psutils",
         "PS Utilities License"
     ],
     "__impliedId": "psutils",
@@ -83,6 +85,7 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
                     "psutils",
                     "psutils",
                     "psutils License",
+                    "scancode:psutils",
                     "PS Utilities License"
                 ],
                 "__impliedId": "psutils"
@@ -91,6 +94,7 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
             "otherNames": [
                 "psutils",
                 "psutils License",
+                "scancode:psutils",
                 "PS Utilities License"
             ]
         },
@@ -166,7 +170,7 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
             "spdxId": "psutils",
             "_implications": {
                 "__impliedNames": [
-                    "psutils",
+                    "scancode:psutils",
                     "PS Utilities License",
                     "psutils"
                 ],

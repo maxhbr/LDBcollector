@@ -5,6 +5,8 @@ Microsoft Public License (MS-PL)
 
 **Other Names:**
 
+-   `scancode:ms-pl`
+
 -   `Microsoft Public License (MS-PL)`
 
 -   `Microsoft Public License (Ms-PL)`
@@ -166,6 +168,7 @@ Raw Data
         "__impliedNames": [
             "MS-PL",
             "Microsoft Public License",
+            "scancode:ms-pl",
             "ms-pl",
             "Microsoft Public License (MS-PL)",
             "Ms-PL",
@@ -208,6 +211,7 @@ Raw Data
                         "MS-PL",
                         "MS-PL",
                         "Microsoft Public License",
+                        "scancode:ms-pl",
                         "ms-pl",
                         "Microsoft Public License (MS-PL)",
                         "Ms-PL"
@@ -218,6 +222,7 @@ Raw Data
                 "otherNames": [
                     "MS-PL",
                     "Microsoft Public License",
+                    "scancode:ms-pl",
                     "ms-pl",
                     "Microsoft Public License (MS-PL)",
                     "Ms-PL"
@@ -330,7 +335,7 @@ Raw Data
                 "spdxId": "MS-PL",
                 "_implications": {
                     "__impliedNames": [
-                        "ms-pl",
+                        "scancode:ms-pl",
                         "MS-PL",
                         "MS-PL"
                     ],

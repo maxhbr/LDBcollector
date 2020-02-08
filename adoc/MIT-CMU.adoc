@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+cmu-uc+`
+* `+scancode:cmu-uc+`
 * `+CMU UC Regents License+`
-* `+cmu-template+`
+* `+scancode:cmu-template+`
 
 === Comments on (easy) usability
 
@@ -70,9 +70,9 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
     "__impliedNames": [
         "MIT-CMU",
         "CMU License",
-        "cmu-uc",
+        "scancode:cmu-uc",
         "CMU UC Regents License",
-        "cmu-template"
+        "scancode:cmu-template"
     ],
     "__impliedId": "MIT-CMU",
     "facts": {
@@ -82,7 +82,7 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                     "MIT-CMU",
                     "MIT-CMU",
                     "CMU License",
-                    "cmu-uc",
+                    "scancode:cmu-uc",
                     "CMU UC Regents License"
                 ],
                 "__impliedId": "MIT-CMU"
@@ -91,7 +91,7 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "otherNames": [
                 "MIT-CMU",
                 "CMU License",
-                "cmu-uc",
+                "scancode:cmu-uc",
                 "CMU UC Regents License"
             ]
         },
@@ -156,7 +156,7 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "spdxId": "MIT-CMU",
             "_implications": {
                 "__impliedNames": [
-                    "cmu-uc",
+                    "scancode:cmu-uc",
                     "CMU UC Regents License",
                     "MIT-CMU"
                 ],

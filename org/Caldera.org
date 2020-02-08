@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | NoCopyleft                                     |
 
+*Other Names:*
+
+- =scancode:caldera=
+
 ** Comments on (easy) usability
 
 ** URLs
@@ -77,7 +81,7 @@
       "__impliedNames": [
           "Caldera",
           "Caldera License",
-          "caldera"
+          "scancode:caldera"
       ],
       "__impliedId": "Caldera",
       "facts": {
@@ -87,7 +91,7 @@
                       "Caldera",
                       "Caldera",
                       "Caldera License",
-                      "caldera"
+                      "scancode:caldera"
                   ],
                   "__impliedId": "Caldera"
               },
@@ -95,7 +99,7 @@
               "otherNames": [
                   "Caldera",
                   "Caldera License",
-                  "caldera"
+                  "scancode:caldera"
               ]
           },
           "SPDX": {
@@ -142,7 +146,7 @@
               "spdxId": "Caldera",
               "_implications": {
                   "__impliedNames": [
-                      "caldera",
+                      "scancode:caldera",
                       "Caldera License",
                       "Caldera"
                   ],

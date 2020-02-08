@@ -5,7 +5,7 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 
 **Other Names:**
 
--   `gpl-2.0`
+-   `scancode:gpl-2.0`
 
 -   `GPL 2.0`
 
@@ -18,6 +18,8 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 -   `GPL2`
 
 -   `GPL (v2)`
+
+-   `gpl-2.0`
 
 -   `GNU GPLv2`
 
@@ -546,13 +548,14 @@ Raw Data
         "__impliedNames": [
             "GPL-2.0-only",
             "GNU General Public License v2.0 only",
-            "gpl-2.0",
+            "scancode:gpl-2.0",
             "GPL 2.0",
             "GNU General Public License 2.0",
             "GPL-2.0",
             "GPL2.0",
             "GPL2",
             "GPL (v2)",
+            "gpl-2.0",
             "GNU GPLv2",
             "GNU General Public License, Version 2.0",
             "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
@@ -617,7 +620,7 @@ Raw Data
                         "GPL-2.0-only",
                         "GPL-2.0-only",
                         "GNU General Public License v2.0 only",
-                        "gpl-2.0",
+                        "scancode:gpl-2.0",
                         "GPL 2.0",
                         "GNU General Public License 2.0",
                         "GPL-2.0",
@@ -631,7 +634,7 @@ Raw Data
                 "otherNames": [
                     "GPL-2.0-only",
                     "GNU General Public License v2.0 only",
-                    "gpl-2.0",
+                    "scancode:gpl-2.0",
                     "GPL 2.0",
                     "GNU General Public License 2.0",
                     "GPL-2.0",
@@ -751,7 +754,7 @@ Raw Data
                 "spdxId": "GPL-2.0-only",
                 "_implications": {
                     "__impliedNames": [
-                        "gpl-2.0",
+                        "scancode:gpl-2.0",
                         "GPL 2.0",
                         "GPL-2.0-only"
                     ],

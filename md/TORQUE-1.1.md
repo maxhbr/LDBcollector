@@ -5,6 +5,8 @@ TORQUE v2.5+ Software License v1.1 (TORQUE-1.1)
 
 **Other Names:**
 
+-   `scancode:torque-1.1`
+
 -   `TORQUE 1.1`
 
 Comments on (easy) usability
@@ -59,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "TORQUE-1.1",
             "TORQUE v2.5+ Software License v1.1",
-            "torque-1.1",
+            "scancode:torque-1.1",
             "TORQUE 1.1"
         ],
         "__impliedId": "TORQUE-1.1",
@@ -71,7 +73,7 @@ Raw Data
                         "TORQUE-1.1",
                         "TORQUE-1.1",
                         "TORQUE v2.5+ Software License v1.1",
-                        "torque-1.1",
+                        "scancode:torque-1.1",
                         "TORQUE 1.1"
                     ],
                     "__impliedId": "TORQUE-1.1"
@@ -80,7 +82,7 @@ Raw Data
                 "otherNames": [
                     "TORQUE-1.1",
                     "TORQUE v2.5+ Software License v1.1",
-                    "torque-1.1",
+                    "scancode:torque-1.1",
                     "TORQUE 1.1"
                 ]
             },
@@ -154,7 +156,7 @@ Raw Data
                 "spdxId": "TORQUE-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "torque-1.1",
+                        "scancode:torque-1.1",
                         "TORQUE 1.1",
                         "TORQUE-1.1"
                     ],

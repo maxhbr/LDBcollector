@@ -5,6 +5,8 @@ Common Development and Distribution License 1.1 (CDDL-1.1)
 
 **Other Names:**
 
+-   `scancode:cddl-1.1`
+
 -   `CDDL 1.1`
 
 Comments on (easy) usability
@@ -120,7 +122,7 @@ Raw Data
         "__impliedNames": [
             "CDDL-1.1",
             "Common Development and Distribution License 1.1",
-            "cddl-1.1",
+            "scancode:cddl-1.1",
             "CDDL 1.1"
         ],
         "__impliedId": "CDDL-1.1",
@@ -131,7 +133,7 @@ Raw Data
                         "CDDL-1.1",
                         "CDDL-1.1",
                         "Common Development and Distribution License 1.1",
-                        "cddl-1.1",
+                        "scancode:cddl-1.1",
                         "CDDL 1.1"
                     ],
                     "__impliedId": "CDDL-1.1"
@@ -140,7 +142,7 @@ Raw Data
                 "otherNames": [
                     "CDDL-1.1",
                     "Common Development and Distribution License 1.1",
-                    "cddl-1.1",
+                    "scancode:cddl-1.1",
                     "CDDL 1.1"
                 ]
             },
@@ -195,7 +197,7 @@ Raw Data
                 "spdxId": "CDDL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "cddl-1.1",
+                        "scancode:cddl-1.1",
                         "CDDL 1.1",
                         "CDDL-1.1"
                     ],

@@ -5,7 +5,7 @@ Entessa Public License v1.0 (Entessa)
 
 **Other Names:**
 
--   `entessa-1.0`
+-   `scancode:entessa-1.0`
 
 -   `Entessa 1.0`
 
@@ -100,7 +100,7 @@ Raw Data
         "__impliedNames": [
             "Entessa",
             "Entessa Public License v1.0",
-            "entessa-1.0",
+            "scancode:entessa-1.0",
             "Entessa 1.0",
             "Entessa Public License",
             "Entessa Public License 1.0"
@@ -141,7 +141,7 @@ Raw Data
                         "Entessa",
                         "Entessa",
                         "Entessa Public License v1.0",
-                        "entessa-1.0",
+                        "scancode:entessa-1.0",
                         "Entessa 1.0",
                         "Entessa Public License",
                         "Entessa Public License 1.0"
@@ -152,7 +152,7 @@ Raw Data
                 "otherNames": [
                     "Entessa",
                     "Entessa Public License v1.0",
-                    "entessa-1.0",
+                    "scancode:entessa-1.0",
                     "Entessa 1.0",
                     "Entessa Public License",
                     "Entessa Public License 1.0"
@@ -241,7 +241,7 @@ Raw Data
                 "spdxId": "Entessa",
                 "_implications": {
                     "__impliedNames": [
-                        "entessa-1.0",
+                        "scancode:entessa-1.0",
                         "Entessa 1.0",
                         "Entessa"
                     ],

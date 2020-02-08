@@ -5,6 +5,8 @@ Trusster Open Source License (TOSL)
 
 **Other Names:**
 
+-   `scancode:tosl`
+
 -   `TOSL 1.0a`
 
 Comments on (easy) usability
@@ -68,7 +70,7 @@ Raw Data
         "__impliedNames": [
             "TOSL",
             "Trusster Open Source License",
-            "tosl",
+            "scancode:tosl",
             "TOSL 1.0a"
         ],
         "__impliedId": "TOSL",
@@ -80,7 +82,7 @@ Raw Data
                         "TOSL",
                         "TOSL",
                         "Trusster Open Source License",
-                        "tosl",
+                        "scancode:tosl",
                         "TOSL 1.0a"
                     ],
                     "__impliedId": "TOSL"
@@ -89,7 +91,7 @@ Raw Data
                 "otherNames": [
                     "TOSL",
                     "Trusster Open Source License",
-                    "tosl",
+                    "scancode:tosl",
                     "TOSL 1.0a"
                 ]
             },
@@ -163,7 +165,7 @@ Raw Data
                 "spdxId": "TOSL",
                 "_implications": {
                     "__impliedNames": [
-                        "tosl",
+                        "scancode:tosl",
                         "TOSL 1.0a",
                         "TOSL"
                     ],

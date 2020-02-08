@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | NoCopyleft                                     |
 
+*Other Names:*
+
+- =scancode:cc-by-1.0=
+
 ** Comments on (easy) usability
 
 - *↑*Google Classification is NOTICE (source:
@@ -96,7 +100,7 @@
       "__impliedNames": [
           "CC-BY-1.0",
           "Creative Commons Attribution 1.0 Generic",
-          "cc-by-1.0"
+          "scancode:cc-by-1.0"
       ],
       "__impliedId": "CC-BY-1.0",
       "__impliedAmbiguousNames": [
@@ -109,7 +113,7 @@
                       "CC-BY-1.0",
                       "CC-BY-1.0",
                       "Creative Commons Attribution 1.0 Generic",
-                      "cc-by-1.0"
+                      "scancode:cc-by-1.0"
                   ],
                   "__impliedId": "CC-BY-1.0"
               },
@@ -117,7 +121,7 @@
               "otherNames": [
                   "CC-BY-1.0",
                   "Creative Commons Attribution 1.0 Generic",
-                  "cc-by-1.0"
+                  "scancode:cc-by-1.0"
               ]
           },
           "SPDX": {
@@ -166,7 +170,7 @@
               "spdxId": "CC-BY-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "cc-by-1.0",
+                      "scancode:cc-by-1.0",
                       "CC-BY-1.0",
                       "CC-BY-1.0"
                   ],

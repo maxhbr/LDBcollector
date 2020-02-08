@@ -2,7 +2,7 @@
     "__impliedNames": [
         "TU-Berlin-1.0",
         "Technische Universitaet Berlin License 1.0",
-        "tu-berlin",
+        "scancode:tu-berlin",
         "TU Berlin License 1.0"
     ],
     "__impliedId": "TU-Berlin-1.0",
@@ -13,7 +13,7 @@
                     "TU-Berlin-1.0",
                     "TU-Berlin-1.0",
                     "Technische Universitaet Berlin License 1.0",
-                    "tu-berlin",
+                    "scancode:tu-berlin",
                     "TU Berlin License 1.0"
                 ],
                 "__impliedId": "TU-Berlin-1.0"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "TU-Berlin-1.0",
                 "Technische Universitaet Berlin License 1.0",
-                "tu-berlin",
+                "scancode:tu-berlin",
                 "TU Berlin License 1.0"
             ]
         },
@@ -73,7 +73,7 @@
             "spdxId": "TU-Berlin-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "tu-berlin",
+                    "scancode:tu-berlin",
                     "TU Berlin License 1.0",
                     "TU-Berlin-1.0"
                 ],

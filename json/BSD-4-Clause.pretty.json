@@ -2,7 +2,7 @@
     "__impliedNames": [
         "BSD-4-Clause",
         "BSD 4-Clause \"Original\" or \"Old\" License",
-        "bsd-original",
+        "scancode:bsd-original",
         "BSD-Original",
         "BSD License (original)",
         "BSD 4-clause \"Original\" or \"Old\" License"
@@ -30,7 +30,7 @@
                     "BSD-4-Clause",
                     "BSD-4-Clause",
                     "BSD 4-Clause \"Original\" or \"Old\" License",
-                    "bsd-original",
+                    "scancode:bsd-original",
                     "BSD-Original",
                     "BSD License (original)"
                 ],
@@ -40,7 +40,7 @@
             "otherNames": [
                 "BSD-4-Clause",
                 "BSD 4-Clause \"Original\" or \"Old\" License",
-                "bsd-original",
+                "scancode:bsd-original",
                 "BSD-Original",
                 "BSD License (original)"
             ]
@@ -129,7 +129,7 @@
             "spdxId": "BSD-4-Clause",
             "_implications": {
                 "__impliedNames": [
-                    "bsd-original",
+                    "scancode:bsd-original",
                     "BSD-Original",
                     "BSD-4-Clause"
                 ],

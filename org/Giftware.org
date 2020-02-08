@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =allegro-4=
+- =scancode:allegro-4=
 
 - =Allegro 4 License=
 
@@ -55,7 +55,7 @@
       "__impliedNames": [
           "Giftware",
           "Giftware License",
-          "allegro-4",
+          "scancode:allegro-4",
           "Allegro 4 License"
       ],
       "__impliedId": "Giftware",
@@ -67,7 +67,7 @@
                       "Giftware",
                       "Giftware",
                       "Giftware License",
-                      "allegro-4",
+                      "scancode:allegro-4",
                       "Allegro 4 License"
                   ],
                   "__impliedId": "Giftware"
@@ -76,7 +76,7 @@
               "otherNames": [
                   "Giftware",
                   "Giftware License",
-                  "allegro-4",
+                  "scancode:allegro-4",
                   "Allegro 4 License"
               ]
           },
@@ -152,7 +152,7 @@
               "spdxId": "Giftware",
               "_implications": {
                   "__impliedNames": [
-                      "allegro-4",
+                      "scancode:allegro-4",
                       "Allegro 4 License",
                       "Giftware"
                   ],

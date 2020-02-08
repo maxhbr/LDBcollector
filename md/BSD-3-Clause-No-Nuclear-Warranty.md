@@ -3,6 +3,10 @@ BSD 3-Clause No Nuclear Warranty (BSD-3-Clause-No-Nuclear-Warranty)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:bsd-3-clause-no-nuclear-warranty`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -65,7 +69,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-No-Nuclear-Warranty",
             "BSD 3-Clause No Nuclear Warranty",
-            "bsd-3-clause-no-nuclear-warranty"
+            "scancode:bsd-3-clause-no-nuclear-warranty"
         ],
         "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
         "facts": {
@@ -75,7 +79,7 @@ Raw Data
                         "BSD-3-Clause-No-Nuclear-Warranty",
                         "BSD-3-Clause-No-Nuclear-Warranty",
                         "BSD 3-Clause No Nuclear Warranty",
-                        "bsd-3-clause-no-nuclear-warranty"
+                        "scancode:bsd-3-clause-no-nuclear-warranty"
                     ],
                     "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty"
                 },
@@ -83,7 +87,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause-No-Nuclear-Warranty",
                     "BSD 3-Clause No Nuclear Warranty",
-                    "bsd-3-clause-no-nuclear-warranty"
+                    "scancode:bsd-3-clause-no-nuclear-warranty"
                 ]
             },
             "SPDX": {
@@ -132,7 +136,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause-No-Nuclear-Warranty",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-3-clause-no-nuclear-warranty",
+                        "scancode:bsd-3-clause-no-nuclear-warranty",
                         "BSD 3-Clause No Nuclear Warranty",
                         "BSD-3-Clause-No-Nuclear-Warranty"
                     ],

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:libpng+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -164,7 +168,7 @@ October 31, 2008
     "__impliedNames": [
         "Libpng",
         "libpng License",
-        "libpng",
+        "scancode:libpng",
         "Libpng License"
     ],
     "__impliedId": "Libpng",
@@ -175,7 +179,7 @@ October 31, 2008
                     "Libpng",
                     "Libpng",
                     "libpng License",
-                    "libpng",
+                    "scancode:libpng",
                     "Libpng License"
                 ],
                 "__impliedId": "Libpng"
@@ -184,7 +188,7 @@ October 31, 2008
             "otherNames": [
                 "Libpng",
                 "libpng License",
-                "libpng",
+                "scancode:libpng",
                 "Libpng License"
             ]
         },
@@ -244,7 +248,7 @@ October 31, 2008
             "spdxId": "Libpng",
             "_implications": {
                 "__impliedNames": [
-                    "libpng",
+                    "scancode:libpng",
                     "Libpng License",
                     "Libpng"
                 ],

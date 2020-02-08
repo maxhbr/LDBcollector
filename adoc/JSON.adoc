@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:json+`
+
 === Comments on (easy) usability
 
 * **↑**Google Classification is NOTICE (source:
@@ -70,7 +74,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "JSON",
         "JSON License",
-        "json"
+        "scancode:json"
     ],
     "__impliedId": "JSON",
     "__impliedAmbiguousNames": [
@@ -83,7 +87,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "JSON",
                     "JSON",
                     "JSON License",
-                    "json"
+                    "scancode:json"
                 ],
                 "__impliedId": "JSON"
             },
@@ -91,7 +95,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "otherNames": [
                 "JSON",
                 "JSON License",
-                "json"
+                "scancode:json"
             ]
         },
         "SPDX": {
@@ -163,7 +167,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "spdxId": "JSON",
             "_implications": {
                 "__impliedNames": [
-                    "json",
+                    "scancode:json",
                     "JSON License",
                     "JSON"
                 ],

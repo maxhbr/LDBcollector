@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:json=
+
 ** Comments on (easy) usability
 
 - *↑*Google Classification is NOTICE (source:
@@ -73,7 +77,7 @@
       "__impliedNames": [
           "JSON",
           "JSON License",
-          "json"
+          "scancode:json"
       ],
       "__impliedId": "JSON",
       "__impliedAmbiguousNames": [
@@ -86,7 +90,7 @@
                       "JSON",
                       "JSON",
                       "JSON License",
-                      "json"
+                      "scancode:json"
                   ],
                   "__impliedId": "JSON"
               },
@@ -94,7 +98,7 @@
               "otherNames": [
                   "JSON",
                   "JSON License",
-                  "json"
+                  "scancode:json"
               ]
           },
           "SPDX": {
@@ -166,7 +170,7 @@
               "spdxId": "JSON",
               "_implications": {
                   "__impliedNames": [
-                      "json",
+                      "scancode:json",
                       "JSON License",
                       "JSON"
                   ],

@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:interbase-1.0+`
 * `+Interbase Public License 1.0+`
 
 === Comments on (easy) usability
@@ -231,7 +232,7 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
     "__impliedNames": [
         "Interbase-1.0",
         "Interbase Public License v1.0",
-        "interbase-1.0",
+        "scancode:interbase-1.0",
         "Interbase Public License 1.0"
     ],
     "__impliedId": "Interbase-1.0",
@@ -242,7 +243,7 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
                     "Interbase-1.0",
                     "Interbase-1.0",
                     "Interbase Public License v1.0",
-                    "interbase-1.0",
+                    "scancode:interbase-1.0",
                     "Interbase Public License 1.0"
                 ],
                 "__impliedId": "Interbase-1.0"
@@ -251,7 +252,7 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
             "otherNames": [
                 "Interbase-1.0",
                 "Interbase Public License v1.0",
-                "interbase-1.0",
+                "scancode:interbase-1.0",
                 "Interbase Public License 1.0"
             ]
         },
@@ -301,7 +302,7 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
             "spdxId": "Interbase-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "interbase-1.0",
+                    "scancode:interbase-1.0",
                     "Interbase Public License 1.0",
                     "Interbase-1.0"
                 ],

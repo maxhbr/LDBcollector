@@ -9,6 +9,10 @@
 |Classification |Copyleft
 |===
 
+*Other Names:*
+
+* `+scancode:bsd-protection+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -162,7 +166,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
     "__impliedNames": [
         "BSD-Protection",
         "BSD Protection License",
-        "bsd-protection"
+        "scancode:bsd-protection"
     ],
     "__impliedId": "BSD-Protection",
     "__isFsfFree": true,
@@ -173,7 +177,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
                     "BSD-Protection",
                     "BSD-Protection",
                     "BSD Protection License",
-                    "bsd-protection"
+                    "scancode:bsd-protection"
                 ],
                 "__impliedId": "BSD-Protection"
             },
@@ -181,7 +185,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
             "otherNames": [
                 "BSD-Protection",
                 "BSD Protection License",
-                "bsd-protection"
+                "scancode:bsd-protection"
             ]
         },
         "SPDX": {
@@ -254,7 +258,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
             "spdxId": "BSD-Protection",
             "_implications": {
                 "__impliedNames": [
-                    "bsd-protection",
+                    "scancode:bsd-protection",
                     "BSD Protection License",
                     "BSD-Protection"
                 ],

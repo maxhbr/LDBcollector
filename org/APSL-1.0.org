@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:apsl-1.0=
+
 - =APSL 1.0=
 
 ** Comments on (easy) usability
@@ -429,7 +431,7 @@
       "__impliedNames": [
           "APSL-1.0",
           "Apple Public Source License 1.0",
-          "apsl-1.0",
+          "scancode:apsl-1.0",
           "APSL 1.0"
       ],
       "__impliedId": "APSL-1.0",
@@ -443,7 +445,7 @@
                       "APSL-1.0",
                       "APSL-1.0",
                       "Apple Public Source License 1.0",
-                      "apsl-1.0",
+                      "scancode:apsl-1.0",
                       "APSL 1.0"
                   ],
                   "__impliedId": "APSL-1.0"
@@ -452,7 +454,7 @@
               "otherNames": [
                   "APSL-1.0",
                   "Apple Public Source License 1.0",
-                  "apsl-1.0",
+                  "scancode:apsl-1.0",
                   "APSL 1.0"
               ]
           },
@@ -534,7 +536,7 @@
               "spdxId": "APSL-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "apsl-1.0",
+                      "scancode:apsl-1.0",
                       "APSL 1.0",
                       "APSL-1.0"
                   ],

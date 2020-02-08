@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+ipa-font+`
+* `+scancode:ipa-font+`
 * `+IPA Font License 1.0+`
 
 === Comments on (easy) usability
@@ -132,7 +132,7 @@ Article 5 (Governing Law)
     "__impliedNames": [
         "IPA",
         "IPA Font License",
-        "ipa-font",
+        "scancode:ipa-font",
         "IPA Font License 1.0"
     ],
     "__impliedId": "IPA",
@@ -171,7 +171,7 @@ Article 5 (Governing Law)
                     "IPA",
                     "IPA",
                     "IPA Font License",
-                    "ipa-font",
+                    "scancode:ipa-font",
                     "IPA Font License 1.0"
                 ],
                 "__impliedId": "IPA"
@@ -180,7 +180,7 @@ Article 5 (Governing Law)
             "otherNames": [
                 "IPA",
                 "IPA Font License",
-                "ipa-font",
+                "scancode:ipa-font",
                 "IPA Font License 1.0"
             ]
         },
@@ -264,7 +264,7 @@ Article 5 (Governing Law)
             "spdxId": "IPA",
             "_implications": {
                 "__impliedNames": [
-                    "ipa-font",
+                    "scancode:ipa-font",
                     "IPA Font License 1.0",
                     "IPA"
                 ],

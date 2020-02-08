@@ -3,6 +3,10 @@ libpng License (Libpng)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:libpng`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -163,7 +167,7 @@ Raw Data
         "__impliedNames": [
             "Libpng",
             "libpng License",
-            "libpng",
+            "scancode:libpng",
             "Libpng License"
         ],
         "__impliedId": "Libpng",
@@ -174,7 +178,7 @@ Raw Data
                         "Libpng",
                         "Libpng",
                         "libpng License",
-                        "libpng",
+                        "scancode:libpng",
                         "Libpng License"
                     ],
                     "__impliedId": "Libpng"
@@ -183,7 +187,7 @@ Raw Data
                 "otherNames": [
                     "Libpng",
                     "libpng License",
-                    "libpng",
+                    "scancode:libpng",
                     "Libpng License"
                 ]
             },
@@ -243,7 +247,7 @@ Raw Data
                 "spdxId": "Libpng",
                 "_implications": {
                     "__impliedNames": [
-                        "libpng",
+                        "scancode:libpng",
                         "Libpng License",
                         "Libpng"
                     ],

@@ -5,7 +5,7 @@ FreeImage Public License v1.0 (FreeImage)
 
 **Other Names:**
 
--   `freeimage-1.0`
+-   `scancode:freeimage-1.0`
 
 -   `FreeImage Public License 1.0`
 
@@ -174,7 +174,7 @@ Raw Data
         "__impliedNames": [
             "FreeImage",
             "FreeImage Public License v1.0",
-            "freeimage-1.0",
+            "scancode:freeimage-1.0",
             "FreeImage Public License 1.0"
         ],
         "__impliedId": "FreeImage",
@@ -185,7 +185,7 @@ Raw Data
                         "FreeImage",
                         "FreeImage",
                         "FreeImage Public License v1.0",
-                        "freeimage-1.0",
+                        "scancode:freeimage-1.0",
                         "FreeImage Public License 1.0"
                     ],
                     "__impliedId": "FreeImage"
@@ -194,7 +194,7 @@ Raw Data
                 "otherNames": [
                     "FreeImage",
                     "FreeImage Public License v1.0",
-                    "freeimage-1.0",
+                    "scancode:freeimage-1.0",
                     "FreeImage Public License 1.0"
                 ]
             },
@@ -242,7 +242,7 @@ Raw Data
                 "spdxId": "FreeImage",
                 "_implications": {
                     "__impliedNames": [
-                        "freeimage-1.0",
+                        "scancode:freeimage-1.0",
                         "FreeImage Public License 1.0",
                         "FreeImage"
                     ],

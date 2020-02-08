@@ -3,6 +3,10 @@ gSOAP Public License v1.3b (gSOAP-1.3b)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:gsoap-1.3b`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -192,7 +196,7 @@ Raw Data
         "__impliedNames": [
             "gSOAP-1.3b",
             "gSOAP Public License v1.3b",
-            "gsoap-1.3b"
+            "scancode:gsoap-1.3b"
         ],
         "__impliedId": "gSOAP-1.3b",
         "facts": {
@@ -202,7 +206,7 @@ Raw Data
                         "gSOAP-1.3b",
                         "gSOAP-1.3b",
                         "gSOAP Public License v1.3b",
-                        "gsoap-1.3b"
+                        "scancode:gsoap-1.3b"
                     ],
                     "__impliedId": "gSOAP-1.3b"
                 },
@@ -210,7 +214,7 @@ Raw Data
                 "otherNames": [
                     "gSOAP-1.3b",
                     "gSOAP Public License v1.3b",
-                    "gsoap-1.3b"
+                    "scancode:gsoap-1.3b"
                 ]
             },
             "SPDX": {
@@ -257,7 +261,7 @@ Raw Data
                 "spdxId": "gSOAP-1.3b",
                 "_implications": {
                     "__impliedNames": [
-                        "gsoap-1.3b",
+                        "scancode:gsoap-1.3b",
                         "gSOAP Public License v1.3b",
                         "gSOAP-1.3b"
                     ],

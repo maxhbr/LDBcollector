@@ -3,6 +3,10 @@ Dotseqn License (Dotseqn)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:dotseqn`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -33,7 +37,7 @@ Raw Data
         "__impliedNames": [
             "Dotseqn",
             "Dotseqn License",
-            "dotseqn"
+            "scancode:dotseqn"
         ],
         "__impliedId": "Dotseqn",
         "__isFsfFree": true,
@@ -44,7 +48,7 @@ Raw Data
                         "Dotseqn",
                         "Dotseqn",
                         "Dotseqn License",
-                        "dotseqn"
+                        "scancode:dotseqn"
                     ],
                     "__impliedId": "Dotseqn"
                 },
@@ -52,7 +56,7 @@ Raw Data
                 "otherNames": [
                     "Dotseqn",
                     "Dotseqn License",
-                    "dotseqn"
+                    "scancode:dotseqn"
                 ]
             },
             "SPDX": {
@@ -125,7 +129,7 @@ Raw Data
                 "spdxId": "Dotseqn",
                 "_implications": {
                     "__impliedNames": [
-                        "dotseqn",
+                        "scancode:dotseqn",
                         "Dotseqn License",
                         "Dotseqn"
                     ],

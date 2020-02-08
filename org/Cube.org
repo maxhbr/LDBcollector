@@ -7,6 +7,10 @@
 | Rating           | Go             |
 | Classification   | NoCopyleft     |
 
+*Other Names:*
+
+- =scancode:cube=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Bronze (source:
@@ -64,7 +68,7 @@
       "__impliedNames": [
           "Cube",
           "Cube License",
-          "cube"
+          "scancode:cube"
       ],
       "__impliedId": "Cube",
       "__isFsfFree": true,
@@ -75,7 +79,7 @@
                       "Cube",
                       "Cube",
                       "Cube License",
-                      "cube"
+                      "scancode:cube"
                   ],
                   "__impliedId": "Cube"
               },
@@ -83,7 +87,7 @@
               "otherNames": [
                   "Cube",
                   "Cube License",
-                  "cube"
+                  "scancode:cube"
               ]
           },
           "SPDX": {
@@ -156,7 +160,7 @@
               "spdxId": "Cube",
               "_implications": {
                   "__impliedNames": [
-                      "cube",
+                      "scancode:cube",
                       "Cube License",
                       "Cube"
                   ],

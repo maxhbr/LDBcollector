@@ -3,6 +3,10 @@ Mup License (Mup)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:mup`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -49,7 +53,7 @@ Raw Data
         "__impliedNames": [
             "Mup",
             "Mup License",
-            "mup"
+            "scancode:mup"
         ],
         "__impliedId": "Mup",
         "__isFsfFree": true,
@@ -60,7 +64,7 @@ Raw Data
                         "Mup",
                         "Mup",
                         "Mup License",
-                        "mup"
+                        "scancode:mup"
                     ],
                     "__impliedId": "Mup"
                 },
@@ -68,7 +72,7 @@ Raw Data
                 "otherNames": [
                     "Mup",
                     "Mup License",
-                    "mup"
+                    "scancode:mup"
                 ]
             },
             "SPDX": {
@@ -141,7 +145,7 @@ Raw Data
                 "spdxId": "Mup",
                 "_implications": {
                     "__impliedNames": [
-                        "mup",
+                        "scancode:mup",
                         "Mup License",
                         "Mup"
                     ],

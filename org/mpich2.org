@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =mpich=
+- =scancode:mpich=
 
 - =MPICH License=
 
@@ -84,7 +84,7 @@
       "__impliedNames": [
           "mpich2",
           "mpich2 License",
-          "mpich",
+          "scancode:mpich",
           "MPICH License"
       ],
       "__impliedId": "mpich2",
@@ -96,7 +96,7 @@
                       "mpich2",
                       "mpich2",
                       "mpich2 License",
-                      "mpich",
+                      "scancode:mpich",
                       "MPICH License"
                   ],
                   "__impliedId": "mpich2"
@@ -105,7 +105,7 @@
               "otherNames": [
                   "mpich2",
                   "mpich2 License",
-                  "mpich",
+                  "scancode:mpich",
                   "MPICH License"
               ]
           },
@@ -181,7 +181,7 @@
               "spdxId": "mpich2",
               "_implications": {
                   "__impliedNames": [
-                      "mpich",
+                      "scancode:mpich",
                       "MPICH License",
                       "mpich2"
                   ],

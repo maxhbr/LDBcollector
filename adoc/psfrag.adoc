@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:psfrag+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -38,7 +42,8 @@ changes and their authors must be explicitly stated HERE.
 {
     "__impliedNames": [
         "psfrag",
-        "psfrag License"
+        "psfrag License",
+        "scancode:psfrag"
     ],
     "__impliedId": "psfrag",
     "facts": {
@@ -47,14 +52,16 @@ changes and their authors must be explicitly stated HERE.
                 "__impliedNames": [
                     "psfrag",
                     "psfrag",
-                    "psfrag License"
+                    "psfrag License",
+                    "scancode:psfrag"
                 ],
                 "__impliedId": "psfrag"
             },
             "shortname": "psfrag",
             "otherNames": [
                 "psfrag",
-                "psfrag License"
+                "psfrag License",
+                "scancode:psfrag"
             ]
         },
         "SPDX": {
@@ -126,7 +133,7 @@ changes and their authors must be explicitly stated HERE.
             "spdxId": "psfrag",
             "_implications": {
                 "__impliedNames": [
-                    "psfrag",
+                    "scancode:psfrag",
                     "psfrag License",
                     "psfrag"
                 ],

@@ -3,6 +3,10 @@ Info-ZIP License (Info-ZIP)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:info-zip`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -54,7 +58,7 @@ Raw Data
         "__impliedNames": [
             "Info-ZIP",
             "Info-ZIP License",
-            "info-zip",
+            "scancode:info-zip",
             "Info-Zip License"
         ],
         "__impliedId": "Info-ZIP",
@@ -65,7 +69,7 @@ Raw Data
                         "Info-ZIP",
                         "Info-ZIP",
                         "Info-ZIP License",
-                        "info-zip",
+                        "scancode:info-zip",
                         "Info-Zip License"
                     ],
                     "__impliedId": "Info-ZIP"
@@ -74,7 +78,7 @@ Raw Data
                 "otherNames": [
                     "Info-ZIP",
                     "Info-ZIP License",
-                    "info-zip",
+                    "scancode:info-zip",
                     "Info-Zip License"
                 ]
             },
@@ -122,7 +126,7 @@ Raw Data
                 "spdxId": "Info-ZIP",
                 "_implications": {
                     "__impliedNames": [
-                        "info-zip",
+                        "scancode:info-zip",
                         "Info-Zip License",
                         "Info-ZIP"
                     ],

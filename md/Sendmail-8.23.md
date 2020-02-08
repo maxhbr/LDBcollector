@@ -3,6 +3,10 @@ Sendmail License 8.23 (Sendmail-8.23)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:sendmail-8.23`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -64,7 +68,7 @@ Raw Data
         "__impliedNames": [
             "Sendmail-8.23",
             "Sendmail License 8.23",
-            "sendmail-8.23"
+            "scancode:sendmail-8.23"
         ],
         "__impliedId": "Sendmail-8.23",
         "facts": {
@@ -74,7 +78,7 @@ Raw Data
                         "Sendmail-8.23",
                         "Sendmail-8.23",
                         "Sendmail License 8.23",
-                        "sendmail-8.23"
+                        "scancode:sendmail-8.23"
                     ],
                     "__impliedId": "Sendmail-8.23"
                 },
@@ -82,7 +86,7 @@ Raw Data
                 "otherNames": [
                     "Sendmail-8.23",
                     "Sendmail License 8.23",
-                    "sendmail-8.23"
+                    "scancode:sendmail-8.23"
                 ]
             },
             "SPDX": {
@@ -137,7 +141,7 @@ Raw Data
                 "spdxId": "Sendmail-8.23",
                 "_implications": {
                     "__impliedNames": [
-                        "sendmail-8.23",
+                        "scancode:sendmail-8.23",
                         "Sendmail License 8.23",
                         "Sendmail-8.23"
                     ],

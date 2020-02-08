@@ -3,6 +3,10 @@ Lesser General Public License For Linguistic Resources (LGPLLR)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:lgpllr`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -256,7 +260,7 @@ Raw Data
         "__impliedNames": [
             "LGPLLR",
             "Lesser General Public License For Linguistic Resources",
-            "lgpllr"
+            "scancode:lgpllr"
         ],
         "__impliedId": "LGPLLR",
         "facts": {
@@ -266,7 +270,7 @@ Raw Data
                         "LGPLLR",
                         "LGPLLR",
                         "Lesser General Public License For Linguistic Resources",
-                        "lgpllr"
+                        "scancode:lgpllr"
                     ],
                     "__impliedId": "LGPLLR"
                 },
@@ -274,7 +278,7 @@ Raw Data
                 "otherNames": [
                     "LGPLLR",
                     "Lesser General Public License For Linguistic Resources",
-                    "lgpllr"
+                    "scancode:lgpllr"
                 ]
             },
             "SPDX": {
@@ -321,7 +325,7 @@ Raw Data
                 "spdxId": "LGPLLR",
                 "_implications": {
                     "__impliedNames": [
-                        "lgpllr",
+                        "scancode:lgpllr",
                         "LGPLLR",
                         "LGPLLR"
                     ],

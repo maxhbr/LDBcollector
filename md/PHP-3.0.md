@@ -5,6 +5,8 @@ PHP License v3.0 (PHP-3.0)
 
 **Other Names:**
 
+-   `scancode:php-3.0`
+
 -   `PHP License 3.0`
 
 -   `The PHP License, Version 3.0`
@@ -123,7 +125,7 @@ Raw Data
         "__impliedNames": [
             "PHP-3.0",
             "PHP License v3.0",
-            "php-3.0",
+            "scancode:php-3.0",
             "PHP License 3.0",
             "The PHP License, Version 3.0"
         ],
@@ -163,7 +165,7 @@ Raw Data
                         "PHP-3.0",
                         "PHP-3.0",
                         "PHP License v3.0",
-                        "php-3.0",
+                        "scancode:php-3.0",
                         "PHP License 3.0",
                         "The PHP License, Version 3.0"
                     ],
@@ -173,7 +175,7 @@ Raw Data
                 "otherNames": [
                     "PHP-3.0",
                     "PHP License v3.0",
-                    "php-3.0",
+                    "scancode:php-3.0",
                     "PHP License 3.0",
                     "The PHP License, Version 3.0"
                 ]
@@ -266,7 +268,7 @@ Raw Data
                 "spdxId": "PHP-3.0",
                 "_implications": {
                     "__impliedNames": [
-                        "php-3.0",
+                        "scancode:php-3.0",
                         "PHP License 3.0",
                         "PHP-3.0"
                     ],

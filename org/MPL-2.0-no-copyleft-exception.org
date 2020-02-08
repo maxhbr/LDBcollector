@@ -10,6 +10,8 @@
 
 *Other Names:*
 
+- =scancode:mpl-2.0-no-copyleft-exception=
+
 - =MPL 2.0 with no copyleft exception=
 
 ** Comments on (easy) usability
@@ -94,7 +96,7 @@
       "__impliedNames": [
           "MPL-2.0-no-copyleft-exception",
           "Mozilla Public License 2.0 (no copyleft exception)",
-          "mpl-2.0-no-copyleft-exception",
+          "scancode:mpl-2.0-no-copyleft-exception",
           "MPL 2.0 with no copyleft exception"
       ],
       "__impliedId": "MPL-2.0-no-copyleft-exception",
@@ -108,7 +110,7 @@
                       "MPL-2.0-no-copyleft-exception",
                       "MPL-2.0-no-copyleft-exception",
                       "Mozilla Public License 2.0 (no copyleft exception)",
-                      "mpl-2.0-no-copyleft-exception",
+                      "scancode:mpl-2.0-no-copyleft-exception",
                       "MPL 2.0 with no copyleft exception"
                   ],
                   "__impliedId": "MPL-2.0-no-copyleft-exception"
@@ -117,7 +119,7 @@
               "otherNames": [
                   "MPL-2.0-no-copyleft-exception",
                   "Mozilla Public License 2.0 (no copyleft exception)",
-                  "mpl-2.0-no-copyleft-exception",
+                  "scancode:mpl-2.0-no-copyleft-exception",
                   "MPL 2.0 with no copyleft exception"
               ]
           },
@@ -198,7 +200,7 @@
               "spdxId": "MPL-2.0-no-copyleft-exception",
               "_implications": {
                   "__impliedNames": [
-                      "mpl-2.0-no-copyleft-exception",
+                      "scancode:mpl-2.0-no-copyleft-exception",
                       "MPL 2.0 with no copyleft exception",
                       "MPL-2.0-no-copyleft-exception"
                   ],

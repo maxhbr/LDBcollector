@@ -7,6 +7,10 @@
 | Rating           | Unknown            |
 | Classification   | NoCopyleft         |
 
+*Other Names:*
+
+- =scancode:sendmail=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -126,7 +130,7 @@
       "__impliedNames": [
           "Sendmail",
           "Sendmail License",
-          "sendmail"
+          "scancode:sendmail"
       ],
       "__impliedId": "Sendmail",
       "__isFsfFree": true,
@@ -137,7 +141,7 @@
                       "Sendmail",
                       "Sendmail",
                       "Sendmail License",
-                      "sendmail"
+                      "scancode:sendmail"
                   ],
                   "__impliedId": "Sendmail"
               },
@@ -145,7 +149,7 @@
               "otherNames": [
                   "Sendmail",
                   "Sendmail License",
-                  "sendmail"
+                  "scancode:sendmail"
               ]
           },
           "SPDX": {
@@ -225,7 +229,7 @@
               "spdxId": "Sendmail",
               "_implications": {
                   "__impliedNames": [
-                      "sendmail",
+                      "scancode:sendmail",
                       "Sendmail License",
                       "Sendmail"
                   ],

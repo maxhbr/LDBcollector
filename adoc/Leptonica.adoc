@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:leptonica+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -44,7 +48,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
     "__impliedNames": [
         "Leptonica",
         "Leptonica License",
-        "leptonica"
+        "scancode:leptonica"
     ],
     "__impliedId": "Leptonica",
     "__isFsfFree": true,
@@ -55,7 +59,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
                     "Leptonica",
                     "Leptonica",
                     "Leptonica License",
-                    "leptonica"
+                    "scancode:leptonica"
                 ],
                 "__impliedId": "Leptonica"
             },
@@ -63,7 +67,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
             "otherNames": [
                 "Leptonica",
                 "Leptonica License",
-                "leptonica"
+                "scancode:leptonica"
             ]
         },
         "SPDX": {
@@ -136,7 +140,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
             "spdxId": "Leptonica",
             "_implications": {
                 "__impliedNames": [
-                    "leptonica",
+                    "scancode:leptonica",
                     "Leptonica License",
                     "Leptonica"
                 ],

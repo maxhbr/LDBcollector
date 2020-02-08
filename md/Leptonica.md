@@ -3,6 +3,10 @@ Leptonica License (Leptonica)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:leptonica`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -42,7 +46,7 @@ Raw Data
         "__impliedNames": [
             "Leptonica",
             "Leptonica License",
-            "leptonica"
+            "scancode:leptonica"
         ],
         "__impliedId": "Leptonica",
         "__isFsfFree": true,
@@ -53,7 +57,7 @@ Raw Data
                         "Leptonica",
                         "Leptonica",
                         "Leptonica License",
-                        "leptonica"
+                        "scancode:leptonica"
                     ],
                     "__impliedId": "Leptonica"
                 },
@@ -61,7 +65,7 @@ Raw Data
                 "otherNames": [
                     "Leptonica",
                     "Leptonica License",
-                    "leptonica"
+                    "scancode:leptonica"
                 ]
             },
             "SPDX": {
@@ -134,7 +138,7 @@ Raw Data
                 "spdxId": "Leptonica",
                 "_implications": {
                     "__impliedNames": [
-                        "leptonica",
+                        "scancode:leptonica",
                         "Leptonica License",
                         "Leptonica"
                     ],

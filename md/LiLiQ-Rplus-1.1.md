@@ -3,6 +3,10 @@ Licence Libre du Québec – Réciprocité forte version 1.1 (LiLiQ-Rplus-1.1)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:liliq-rplus-1.1`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -118,7 +122,7 @@ Raw Data
         "__impliedNames": [
             "LiLiQ-Rplus-1.1",
             "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte version 1.1",
-            "liliq-rplus-1.1"
+            "scancode:liliq-rplus-1.1"
         ],
         "__impliedId": "LiLiQ-Rplus-1.1",
         "facts": {
@@ -128,7 +132,7 @@ Raw Data
                         "LiLiQ-Rplus-1.1",
                         "LiLiQ-Rplus-1.1",
                         "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte version 1.1",
-                        "liliq-rplus-1.1"
+                        "scancode:liliq-rplus-1.1"
                     ],
                     "__impliedId": "LiLiQ-Rplus-1.1"
                 },
@@ -136,7 +140,7 @@ Raw Data
                 "otherNames": [
                     "LiLiQ-Rplus-1.1",
                     "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte version 1.1",
-                    "liliq-rplus-1.1"
+                    "scancode:liliq-rplus-1.1"
                 ]
             },
             "SPDX": {
@@ -197,7 +201,7 @@ Raw Data
                 "spdxId": "LiLiQ-Rplus-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "liliq-rplus-1.1",
+                        "scancode:liliq-rplus-1.1",
                         "LiLiQ-Rplus-1.1",
                         "LiLiQ-Rplus-1.1"
                     ],

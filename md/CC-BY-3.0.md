@@ -3,6 +3,10 @@ Creative Commons Attribution 3.0 Unported (CC-BY-3.0)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:cc-by-3.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -355,7 +359,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-3.0",
             "Creative Commons Attribution 3.0 Unported",
-            "cc-by-3.0"
+            "scancode:cc-by-3.0"
         ],
         "__impliedId": "CC-BY-3.0",
         "__impliedAmbiguousNames": [
@@ -368,7 +372,7 @@ Raw Data
                         "CC-BY-3.0",
                         "CC-BY-3.0",
                         "Creative Commons Attribution 3.0 Unported",
-                        "cc-by-3.0"
+                        "scancode:cc-by-3.0"
                     ],
                     "__impliedId": "CC-BY-3.0"
                 },
@@ -376,7 +380,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-3.0",
                     "Creative Commons Attribution 3.0 Unported",
-                    "cc-by-3.0"
+                    "scancode:cc-by-3.0"
                 ]
             },
             "SPDX": {
@@ -425,7 +429,7 @@ Raw Data
                 "spdxId": "CC-BY-3.0",
                 "_implications": {
                     "__impliedNames": [
-                        "cc-by-3.0",
+                        "scancode:cc-by-3.0",
                         "CC-BY-3.0",
                         "CC-BY-3.0"
                     ],

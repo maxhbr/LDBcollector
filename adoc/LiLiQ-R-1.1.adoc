@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:liliq-r-1.1+`
 * `+Licence Libre du Québec – Réciprocité, Version 1.1+`
 
 === Comments on (easy) usability
@@ -131,7 +132,7 @@ La présente licence peut être distribuée sans conditions particulières. Tout
     "__impliedNames": [
         "LiLiQ-R-1.1",
         "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-        "liliq-r-1.1",
+        "scancode:liliq-r-1.1",
         "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
     ],
     "__impliedId": "LiLiQ-R-1.1",
@@ -142,7 +143,7 @@ La présente licence peut être distribuée sans conditions particulières. Tout
                     "LiLiQ-R-1.1",
                     "LiLiQ-R-1.1",
                     "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-                    "liliq-r-1.1",
+                    "scancode:liliq-r-1.1",
                     "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
                 ],
                 "__impliedId": "LiLiQ-R-1.1"
@@ -151,7 +152,7 @@ La présente licence peut être distribuée sans conditions particulières. Tout
             "otherNames": [
                 "LiLiQ-R-1.1",
                 "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
-                "liliq-r-1.1",
+                "scancode:liliq-r-1.1",
                 "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
             ]
         },
@@ -213,7 +214,7 @@ La présente licence peut être distribuée sans conditions particulières. Tout
             "spdxId": "LiLiQ-R-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "liliq-r-1.1",
+                    "scancode:liliq-r-1.1",
                     "LiLiQ-R-1.1",
                     "LiLiQ-R-1.1"
                 ],

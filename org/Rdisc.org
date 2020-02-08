@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:rdisc=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -47,7 +51,7 @@
       "__impliedNames": [
           "Rdisc",
           "Rdisc License",
-          "rdisc"
+          "scancode:rdisc"
       ],
       "__impliedId": "Rdisc",
       "__isFsfFree": true,
@@ -58,7 +62,7 @@
                       "Rdisc",
                       "Rdisc",
                       "Rdisc License",
-                      "rdisc"
+                      "scancode:rdisc"
                   ],
                   "__impliedId": "Rdisc"
               },
@@ -66,7 +70,7 @@
               "otherNames": [
                   "Rdisc",
                   "Rdisc License",
-                  "rdisc"
+                  "scancode:rdisc"
               ]
           },
           "SPDX": {
@@ -139,7 +143,7 @@
               "spdxId": "Rdisc",
               "_implications": {
                   "__impliedNames": [
-                      "rdisc",
+                      "scancode:rdisc",
                       "Rdisc License",
                       "Rdisc"
                   ],

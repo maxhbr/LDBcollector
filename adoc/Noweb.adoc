@@ -9,6 +9,10 @@
 |Classification |WeakCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:noweb+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -56,7 +60,7 @@ bug reports on your work be reported to you.
     "__impliedNames": [
         "Noweb",
         "Noweb License",
-        "noweb"
+        "scancode:noweb"
     ],
     "__impliedId": "Noweb",
     "__isFsfFree": true,
@@ -67,7 +71,7 @@ bug reports on your work be reported to you.
                     "Noweb",
                     "Noweb",
                     "Noweb License",
-                    "noweb"
+                    "scancode:noweb"
                 ],
                 "__impliedId": "Noweb"
             },
@@ -75,7 +79,7 @@ bug reports on your work be reported to you.
             "otherNames": [
                 "Noweb",
                 "Noweb License",
-                "noweb"
+                "scancode:noweb"
             ]
         },
         "SPDX": {
@@ -150,7 +154,7 @@ bug reports on your work be reported to you.
             "spdxId": "Noweb",
             "_implications": {
                 "__impliedNames": [
-                    "noweb",
+                    "scancode:noweb",
                     "Noweb License",
                     "Noweb"
                 ],

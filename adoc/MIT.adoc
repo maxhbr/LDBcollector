@@ -12,6 +12,7 @@
 
 *Other Names:*
 
+* `+scancode:mit+`
 * `+MIT/Expat License+`
 * `+Expat+`
 * `+License :: OSI Approved :: MIT License+`
@@ -137,6 +138,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "MIT",
         "MIT License",
+        "scancode:mit",
         "mit",
         "MIT/Expat License",
         "Expat",
@@ -184,6 +186,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "MIT",
                     "MIT",
                     "MIT License",
+                    "scancode:mit",
                     "mit",
                     "MIT/Expat License",
                     "Expat",
@@ -197,6 +200,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "otherNames": [
                 "MIT",
                 "MIT License",
+                "scancode:mit",
                 "mit",
                 "MIT/Expat License",
                 "Expat",
@@ -297,7 +301,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "spdxId": "MIT",
             "_implications": {
                 "__impliedNames": [
-                    "mit",
+                    "scancode:mit",
                     "MIT License",
                     "MIT"
                 ],

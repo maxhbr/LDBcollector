@@ -5,7 +5,7 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 **Other Names:**
 
--   `gpl-1.0-plus`
+-   `scancode:gpl-1.0-plus`
 
 -   `GPL 1.0 or later`
 
@@ -57,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "GPL-1.0-or-later",
             "GNU General Public License v1.0 or later",
-            "gpl-1.0-plus",
+            "scancode:gpl-1.0-plus",
             "GPL 1.0 or later",
             "GPL-1.0+",
             "GPL1.0+",
@@ -75,7 +75,7 @@ Raw Data
                         "GPL-1.0-or-later",
                         "GPL-1.0-or-later",
                         "GNU General Public License v1.0 or later",
-                        "gpl-1.0-plus",
+                        "scancode:gpl-1.0-plus",
                         "GPL 1.0 or later",
                         "GPL-1.0+",
                         "GPL1.0+",
@@ -87,7 +87,7 @@ Raw Data
                 "otherNames": [
                     "GPL-1.0-or-later",
                     "GNU General Public License v1.0 or later",
-                    "gpl-1.0-plus",
+                    "scancode:gpl-1.0-plus",
                     "GPL 1.0 or later",
                     "GPL-1.0+",
                     "GPL1.0+",
@@ -166,7 +166,7 @@ Raw Data
                 "spdxId": "GPL-1.0-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "gpl-1.0-plus",
+                        "scancode:gpl-1.0-plus",
                         "GPL 1.0 or later",
                         "GPL-1.0-or-later"
                     ],

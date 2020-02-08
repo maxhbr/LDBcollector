@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+bsd-zero+`
+* `+scancode:bsd-zero+`
 
 === Description
 
@@ -83,7 +83,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
     "__impliedNames": [
         "0BSD",
         "BSD Zero Clause License",
-        "bsd-zero",
+        "scancode:bsd-zero",
         "0bsd"
     ],
     "__impliedId": "0BSD",
@@ -94,7 +94,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                     "0BSD",
                     "0BSD",
                     "BSD Zero Clause License",
-                    "bsd-zero",
+                    "scancode:bsd-zero",
                     "0bsd"
                 ],
                 "__impliedId": "0BSD"
@@ -103,7 +103,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "otherNames": [
                 "0BSD",
                 "BSD Zero Clause License",
-                "bsd-zero",
+                "scancode:bsd-zero",
                 "0bsd"
             ]
         },
@@ -160,7 +160,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "spdxId": "0BSD",
             "_implications": {
                 "__impliedNames": [
-                    "bsd-zero",
+                    "scancode:bsd-zero",
                     "BSD Zero Clause License",
                     "0BSD"
                 ],

@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =fsf-unlimited=
+- =scancode:fsf-unlimited=
 
 - =FSF-Unlimited=
 
@@ -43,7 +43,7 @@
       "__impliedNames": [
           "FSFULLR",
           "FSF Unlimited License (with License Retention)",
-          "fsf-unlimited",
+          "scancode:fsf-unlimited",
           "FSF-Unlimited"
       ],
       "__impliedId": "FSFULLR",
@@ -55,7 +55,7 @@
                       "FSFULLR",
                       "FSFULLR",
                       "FSF Unlimited License (with License Retention)",
-                      "fsf-unlimited",
+                      "scancode:fsf-unlimited",
                       "FSF-Unlimited"
                   ],
                   "__impliedId": "FSFULLR"
@@ -64,7 +64,7 @@
               "otherNames": [
                   "FSFULLR",
                   "FSF Unlimited License (with License Retention)",
-                  "fsf-unlimited",
+                  "scancode:fsf-unlimited",
                   "FSF-Unlimited"
               ]
           },
@@ -138,7 +138,7 @@
               "spdxId": "FSFULLR",
               "_implications": {
                   "__impliedNames": [
-                      "fsf-unlimited",
+                      "scancode:fsf-unlimited",
                       "FSF-Unlimited",
                       "FSFULLR"
                   ],

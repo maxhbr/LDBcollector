@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+lgpl-2.0-plus+`
+* `+scancode:lgpl-2.0-plus+`
 * `+LGPL 2.0 or later+`
 * `+GNU Library General Public License 2.0+`
 * `+LGPL-2.0-only+`
@@ -59,7 +59,7 @@ Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
     "__impliedNames": [
         "LGPL-2.0-or-later",
         "GNU Library General Public License v2 or later",
-        "lgpl-2.0-plus",
+        "scancode:lgpl-2.0-plus",
         "LGPL 2.0 or later",
         "GNU Library General Public License 2.0",
         "LGPL-2.0-only"
@@ -75,7 +75,7 @@ Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
                     "LGPL-2.0-or-later",
                     "LGPL-2.0-or-later",
                     "GNU Library General Public License v2 or later",
-                    "lgpl-2.0-plus",
+                    "scancode:lgpl-2.0-plus",
                     "LGPL 2.0 or later",
                     "GNU Library General Public License 2.0"
                 ],
@@ -85,7 +85,7 @@ Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
             "otherNames": [
                 "LGPL-2.0-or-later",
                 "GNU Library General Public License v2 or later",
-                "lgpl-2.0-plus",
+                "scancode:lgpl-2.0-plus",
                 "LGPL 2.0 or later",
                 "GNU Library General Public License 2.0"
             ]
@@ -145,7 +145,7 @@ Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
             "spdxId": "LGPL-2.0-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "lgpl-2.0-plus",
+                    "scancode:lgpl-2.0-plus",
                     "LGPL 2.0 or later",
                     "LGPL-2.0-or-later"
                 ],

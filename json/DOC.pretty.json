@@ -2,7 +2,7 @@
     "__impliedNames": [
         "DOC",
         "DOC License",
-        "ace-tao",
+        "scancode:ace-tao",
         "ACE TAO License"
     ],
     "__impliedId": "DOC",
@@ -14,7 +14,7 @@
                     "DOC",
                     "DOC",
                     "DOC License",
-                    "ace-tao",
+                    "scancode:ace-tao",
                     "ACE TAO License"
                 ],
                 "__impliedId": "DOC"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "DOC",
                 "DOC License",
-                "ace-tao",
+                "scancode:ace-tao",
                 "ACE TAO License"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "DOC",
             "_implications": {
                 "__impliedNames": [
-                    "ace-tao",
+                    "scancode:ace-tao",
                     "ACE TAO License",
                     "DOC"
                 ],

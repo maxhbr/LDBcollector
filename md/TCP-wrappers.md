@@ -3,6 +3,10 @@ TCP Wrappers License (TCP-wrappers)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:tcp-wrappers`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -68,7 +72,7 @@ Raw Data
         "__impliedNames": [
             "TCP-wrappers",
             "TCP Wrappers License",
-            "tcp-wrappers"
+            "scancode:tcp-wrappers"
         ],
         "__impliedId": "TCP-wrappers",
         "facts": {
@@ -78,7 +82,7 @@ Raw Data
                         "TCP-wrappers",
                         "TCP-wrappers",
                         "TCP Wrappers License",
-                        "tcp-wrappers"
+                        "scancode:tcp-wrappers"
                     ],
                     "__impliedId": "TCP-wrappers"
                 },
@@ -86,7 +90,7 @@ Raw Data
                 "otherNames": [
                     "TCP-wrappers",
                     "TCP Wrappers License",
-                    "tcp-wrappers"
+                    "scancode:tcp-wrappers"
                 ]
             },
             "SPDX": {
@@ -135,7 +139,7 @@ Raw Data
                 "spdxId": "TCP-wrappers",
                 "_implications": {
                     "__impliedNames": [
-                        "tcp-wrappers",
+                        "scancode:tcp-wrappers",
                         "TCP Wrappers License",
                         "TCP-wrappers"
                     ],

@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+scancode:rpl-1.1+`
 * `+RPL 1.1+`
 * `+Reciprocal Public License, Version 1.1+`
 
@@ -199,7 +200,7 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
     "__impliedNames": [
         "RPL-1.1",
         "Reciprocal Public License 1.1",
-        "rpl-1.1",
+        "scancode:rpl-1.1",
         "RPL 1.1",
         "Reciprocal Public License, Version 1.1"
     ],
@@ -211,7 +212,7 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
                     "RPL-1.1",
                     "RPL-1.1",
                     "Reciprocal Public License 1.1",
-                    "rpl-1.1",
+                    "scancode:rpl-1.1",
                     "RPL 1.1",
                     "Reciprocal Public License, Version 1.1"
                 ],
@@ -221,7 +222,7 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
             "otherNames": [
                 "RPL-1.1",
                 "Reciprocal Public License 1.1",
-                "rpl-1.1",
+                "scancode:rpl-1.1",
                 "RPL 1.1",
                 "Reciprocal Public License, Version 1.1"
             ]
@@ -282,7 +283,7 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
             "spdxId": "RPL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "rpl-1.1",
+                    "scancode:rpl-1.1",
                     "RPL 1.1",
                     "RPL-1.1"
                 ],

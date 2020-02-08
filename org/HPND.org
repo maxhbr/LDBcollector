@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =historical=
+- =scancode:historical=
 
 ** Comments on (easy) usability
 
@@ -79,7 +79,7 @@
       "__impliedNames": [
           "HPND",
           "Historical Permission Notice and Disclaimer",
-          "historical"
+          "scancode:historical"
       ],
       "__impliedId": "HPND",
       "__isFsfFree": true,
@@ -117,7 +117,7 @@
                       "HPND",
                       "HPND",
                       "Historical Permission Notice and Disclaimer",
-                      "historical"
+                      "scancode:historical"
                   ],
                   "__impliedId": "HPND"
               },
@@ -125,7 +125,7 @@
               "otherNames": [
                   "HPND",
                   "Historical Permission Notice and Disclaimer",
-                  "historical"
+                  "scancode:historical"
               ]
           },
           "SPDX": {
@@ -220,7 +220,7 @@
               "spdxId": "HPND",
               "_implications": {
                   "__impliedNames": [
-                      "historical",
+                      "scancode:historical",
                       "Historical Permission Notice and Disclaimer",
                       "HPND"
                   ],

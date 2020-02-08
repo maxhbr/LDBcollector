@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:nrl=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -65,7 +69,7 @@
       "__impliedNames": [
           "NRL",
           "NRL License",
-          "nrl"
+          "scancode:nrl"
       ],
       "__impliedId": "NRL",
       "__isFsfFree": true,
@@ -76,7 +80,7 @@
                       "NRL",
                       "NRL",
                       "NRL License",
-                      "nrl"
+                      "scancode:nrl"
                   ],
                   "__impliedId": "NRL"
               },
@@ -84,7 +88,7 @@
               "otherNames": [
                   "NRL",
                   "NRL License",
-                  "nrl"
+                  "scancode:nrl"
               ]
           },
           "SPDX": {
@@ -157,7 +161,7 @@
               "spdxId": "NRL",
               "_implications": {
                   "__impliedNames": [
-                      "nrl",
+                      "scancode:nrl",
                       "NRL License",
                       "NRL"
                   ],

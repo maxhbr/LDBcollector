@@ -2,8 +2,9 @@
     "__impliedNames": [
         "Zlib",
         "zlib License",
-        "zlib",
+        "scancode:zlib",
         "ZLIB License",
+        "zlib",
         "The zlib/libpng License (Zlib)",
         "License :: OSI Approved :: zlib/libpng License",
         "zlib/libpng license",
@@ -51,8 +52,9 @@
                     "Zlib",
                     "Zlib",
                     "zlib License",
-                    "zlib",
+                    "scancode:zlib",
                     "ZLIB License",
+                    "zlib",
                     "The zlib/libpng License (Zlib)",
                     "License :: OSI Approved :: zlib/libpng License",
                     "zlib/libpng license",
@@ -64,8 +66,9 @@
             "otherNames": [
                 "Zlib",
                 "zlib License",
-                "zlib",
+                "scancode:zlib",
                 "ZLIB License",
+                "zlib",
                 "The zlib/libpng License (Zlib)",
                 "License :: OSI Approved :: zlib/libpng License",
                 "zlib/libpng license",
@@ -170,7 +173,7 @@
             "spdxId": "Zlib",
             "_implications": {
                 "__impliedNames": [
-                    "zlib",
+                    "scancode:zlib",
                     "ZLIB License",
                     "Zlib"
                 ],

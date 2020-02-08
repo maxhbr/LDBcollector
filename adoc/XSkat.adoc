@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:xskat+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -47,7 +51,7 @@ original program and z is an arbitrary suffix.
     "__impliedNames": [
         "XSkat",
         "XSkat License",
-        "xskat"
+        "scancode:xskat"
     ],
     "__impliedId": "XSkat",
     "__isFsfFree": true,
@@ -58,7 +62,7 @@ original program and z is an arbitrary suffix.
                     "XSkat",
                     "XSkat",
                     "XSkat License",
-                    "xskat"
+                    "scancode:xskat"
                 ],
                 "__impliedId": "XSkat"
             },
@@ -66,7 +70,7 @@ original program and z is an arbitrary suffix.
             "otherNames": [
                 "XSkat",
                 "XSkat License",
-                "xskat"
+                "scancode:xskat"
             ]
         },
         "SPDX": {
@@ -139,7 +143,7 @@ original program and z is an arbitrary suffix.
             "spdxId": "XSkat",
             "_implications": {
                 "__impliedNames": [
-                    "xskat",
+                    "scancode:xskat",
                     "XSkat License",
                     "XSkat"
                 ],

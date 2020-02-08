@@ -3,6 +3,10 @@ Borceux license (Borceux)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:borceux`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -49,7 +53,7 @@ Raw Data
         "__impliedNames": [
             "Borceux",
             "Borceux license",
-            "borceux",
+            "scancode:borceux",
             "Borceux License"
         ],
         "__impliedId": "Borceux",
@@ -61,7 +65,7 @@ Raw Data
                         "Borceux",
                         "Borceux",
                         "Borceux license",
-                        "borceux",
+                        "scancode:borceux",
                         "Borceux License"
                     ],
                     "__impliedId": "Borceux"
@@ -70,7 +74,7 @@ Raw Data
                 "otherNames": [
                     "Borceux",
                     "Borceux license",
-                    "borceux",
+                    "scancode:borceux",
                     "Borceux License"
                 ]
             },
@@ -144,7 +148,7 @@ Raw Data
                 "spdxId": "Borceux",
                 "_implications": {
                     "__impliedNames": [
-                        "borceux",
+                        "scancode:borceux",
                         "Borceux License",
                         "Borceux"
                     ],

@@ -2,10 +2,10 @@
     "__impliedNames": [
         "OpenSSL",
         "OpenSSL License",
-        "openssl",
-        "openssl-ssleay",
+        "scancode:openssl-ssleay",
         "OpenSSL/SSLeay License",
-        "OpenSSL license"
+        "OpenSSL license",
+        "scancode:openssl"
     ],
     "__impliedId": "OpenSSL",
     "__isFsfFree": true,
@@ -17,8 +17,7 @@
                     "OpenSSL",
                     "OpenSSL",
                     "OpenSSL License",
-                    "openssl",
-                    "openssl-ssleay",
+                    "scancode:openssl-ssleay",
                     "OpenSSL/SSLeay License",
                     "OpenSSL license"
                 ],
@@ -28,8 +27,7 @@
             "otherNames": [
                 "OpenSSL",
                 "OpenSSL License",
-                "openssl",
-                "openssl-ssleay",
+                "scancode:openssl-ssleay",
                 "OpenSSL/SSLeay License",
                 "OpenSSL license"
             ]
@@ -123,7 +121,7 @@
             "spdxId": null,
             "_implications": {
                 "__impliedNames": [
-                    "openssl",
+                    "scancode:openssl",
                     "OpenSSL License"
                 ],
                 "__impliedCopyleft": [

@@ -9,6 +9,10 @@
 |Classification |WeakCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:ruby+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -102,7 +106,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
     "__impliedNames": [
         "Ruby",
         "Ruby License",
-        "ruby"
+        "scancode:ruby"
     ],
     "__impliedId": "Ruby",
     "__isFsfFree": true,
@@ -113,7 +117,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
                     "Ruby",
                     "Ruby",
                     "Ruby License",
-                    "ruby"
+                    "scancode:ruby"
                 ],
                 "__impliedId": "Ruby"
             },
@@ -121,7 +125,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
             "otherNames": [
                 "Ruby",
                 "Ruby License",
-                "ruby"
+                "scancode:ruby"
             ]
         },
         "SPDX": {
@@ -196,7 +200,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
             "spdxId": "Ruby",
             "_implications": {
                 "__impliedNames": [
-                    "ruby",
+                    "scancode:ruby",
                     "Ruby License",
                     "Ruby"
                 ],

@@ -2,8 +2,9 @@
     "__impliedNames": [
         "EPL-1.0",
         "Eclipse Public License 1.0",
-        "epl-1.0",
+        "scancode:epl-1.0",
         "EPL 1.0",
+        "epl-1.0",
         "Eclipse Public License, Version 1.0"
     ],
     "__impliedId": "EPL-1.0",
@@ -46,8 +47,9 @@
                     "EPL-1.0",
                     "EPL-1.0",
                     "Eclipse Public License 1.0",
-                    "epl-1.0",
+                    "scancode:epl-1.0",
                     "EPL 1.0",
+                    "epl-1.0",
                     "Eclipse Public License, Version 1.0"
                 ],
                 "__impliedId": "EPL-1.0"
@@ -56,8 +58,9 @@
             "otherNames": [
                 "EPL-1.0",
                 "Eclipse Public License 1.0",
-                "epl-1.0",
+                "scancode:epl-1.0",
                 "EPL 1.0",
+                "epl-1.0",
                 "Eclipse Public License, Version 1.0"
             ]
         },
@@ -166,7 +169,7 @@
             "spdxId": "EPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "epl-1.0",
+                    "scancode:epl-1.0",
                     "EPL 1.0",
                     "EPL-1.0"
                 ],

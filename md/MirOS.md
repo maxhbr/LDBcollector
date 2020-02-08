@@ -5,7 +5,7 @@ MirOS License (MirOS)
 
 **Other Names:**
 
--   `mir-os`
+-   `scancode:mir-os`
 
 -   `The MirOS Licence (MirOS)`
 
@@ -81,7 +81,7 @@ Raw Data
         "__impliedNames": [
             "MirOS",
             "MirOS License",
-            "mir-os",
+            "scancode:mir-os",
             "The MirOS Licence (MirOS)",
             "MirOS Licence"
         ],
@@ -124,7 +124,7 @@ Raw Data
                         "MirOS",
                         "MirOS",
                         "MirOS License",
-                        "mir-os",
+                        "scancode:mir-os",
                         "The MirOS Licence (MirOS)",
                         "MirOS Licence"
                     ],
@@ -134,7 +134,7 @@ Raw Data
                 "otherNames": [
                     "MirOS",
                     "MirOS License",
-                    "mir-os",
+                    "scancode:mir-os",
                     "The MirOS Licence (MirOS)",
                     "MirOS Licence"
                 ]
@@ -221,7 +221,7 @@ Raw Data
                 "spdxId": "MirOS",
                 "_implications": {
                     "__impliedNames": [
-                        "mir-os",
+                        "scancode:mir-os",
                         "MirOS License",
                         "MirOS"
                     ],

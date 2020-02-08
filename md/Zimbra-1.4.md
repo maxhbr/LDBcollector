@@ -5,6 +5,8 @@ Zimbra Public License v1.4 (Zimbra-1.4)
 
 **Other Names:**
 
+-   `scancode:zimbra-1.4`
+
 -   `ZPL 1.4`
 
 Comments on (easy) usability
@@ -76,7 +78,7 @@ Raw Data
         "__impliedNames": [
             "Zimbra-1.4",
             "Zimbra Public License v1.4",
-            "zimbra-1.4",
+            "scancode:zimbra-1.4",
             "ZPL 1.4"
         ],
         "__impliedId": "Zimbra-1.4",
@@ -87,7 +89,7 @@ Raw Data
                         "Zimbra-1.4",
                         "Zimbra-1.4",
                         "Zimbra Public License v1.4",
-                        "zimbra-1.4",
+                        "scancode:zimbra-1.4",
                         "ZPL 1.4"
                     ],
                     "__impliedId": "Zimbra-1.4"
@@ -96,7 +98,7 @@ Raw Data
                 "otherNames": [
                     "Zimbra-1.4",
                     "Zimbra Public License v1.4",
-                    "zimbra-1.4",
+                    "scancode:zimbra-1.4",
                     "ZPL 1.4"
                 ]
             },
@@ -144,7 +146,7 @@ Raw Data
                 "spdxId": "Zimbra-1.4",
                 "_implications": {
                     "__impliedNames": [
-                        "zimbra-1.4",
+                        "scancode:zimbra-1.4",
                         "ZPL 1.4",
                         "Zimbra-1.4"
                     ],

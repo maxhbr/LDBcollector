@@ -7,6 +7,10 @@
 | Rating           | Go                             |
 | Classification   | NoCopyleft                     |
 
+*Other Names:*
+
+- =scancode:bsd-2-clause-freebsd=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Silver (source:
@@ -62,7 +66,7 @@
       "__impliedNames": [
           "BSD-2-Clause-FreeBSD",
           "BSD 2-Clause FreeBSD License",
-          "bsd-2-clause-freebsd"
+          "scancode:bsd-2-clause-freebsd"
       ],
       "__impliedId": "BSD-2-Clause-FreeBSD",
       "facts": {
@@ -72,7 +76,7 @@
                       "BSD-2-Clause-FreeBSD",
                       "BSD-2-Clause-FreeBSD",
                       "BSD 2-Clause FreeBSD License",
-                      "bsd-2-clause-freebsd"
+                      "scancode:bsd-2-clause-freebsd"
                   ],
                   "__impliedId": "BSD-2-Clause-FreeBSD"
               },
@@ -80,7 +84,7 @@
               "otherNames": [
                   "BSD-2-Clause-FreeBSD",
                   "BSD 2-Clause FreeBSD License",
-                  "bsd-2-clause-freebsd"
+                  "scancode:bsd-2-clause-freebsd"
               ]
           },
           "SPDX": {
@@ -127,7 +131,7 @@
               "spdxId": "BSD-2-Clause-FreeBSD",
               "_implications": {
                   "__impliedNames": [
-                      "bsd-2-clause-freebsd",
+                      "scancode:bsd-2-clause-freebsd",
                       "BSD-2-Clause-FreeBSD",
                       "BSD-2-Clause-FreeBSD"
                   ],

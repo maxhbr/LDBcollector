@@ -5,6 +5,8 @@ Creative Commons Attribution Non Commercial Share Alike 4.0 International (CC-BY
 
 **Other Names:**
 
+-   `scancode:cc-by-nc-sa-4.0`
+
 -   `Creative Commons Attribution NonCommercial Share-Alike 4.0`
 
 Comments on (easy) usability
@@ -482,7 +484,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-NC-SA-4.0",
             "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
-            "cc-by-nc-sa-4.0",
+            "scancode:cc-by-nc-sa-4.0",
             "Creative Commons Attribution NonCommercial Share-Alike 4.0"
         ],
         "__impliedId": "CC-BY-NC-SA-4.0",
@@ -535,7 +537,7 @@ Raw Data
                         "CC-BY-NC-SA-4.0",
                         "CC-BY-NC-SA-4.0",
                         "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
-                        "cc-by-nc-sa-4.0",
+                        "scancode:cc-by-nc-sa-4.0",
                         "Creative Commons Attribution NonCommercial Share-Alike 4.0"
                     ],
                     "__impliedId": "CC-BY-NC-SA-4.0"
@@ -544,7 +546,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-NC-SA-4.0",
                     "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
-                    "cc-by-nc-sa-4.0",
+                    "scancode:cc-by-nc-sa-4.0",
                     "Creative Commons Attribution NonCommercial Share-Alike 4.0"
                 ]
             },
@@ -594,7 +596,7 @@ Raw Data
                 "spdxId": "CC-BY-NC-SA-4.0",
                 "_implications": {
                     "__impliedNames": [
-                        "cc-by-nc-sa-4.0",
+                        "scancode:cc-by-nc-sa-4.0",
                         "CC-BY-NC-SA-4.0",
                         "CC-BY-NC-SA-4.0"
                     ],

@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =sfl-license=
+- =scancode:sfl-license=
 
 - =SFL License Agreement=
 
@@ -91,7 +91,7 @@
       "__impliedNames": [
           "iMatix",
           "iMatix Standard Function Library Agreement",
-          "sfl-license",
+          "scancode:sfl-license",
           "SFL License Agreement"
       ],
       "__impliedId": "iMatix",
@@ -103,7 +103,7 @@
                       "iMatix",
                       "iMatix",
                       "iMatix Standard Function Library Agreement",
-                      "sfl-license",
+                      "scancode:sfl-license",
                       "SFL License Agreement"
                   ],
                   "__impliedId": "iMatix"
@@ -112,7 +112,7 @@
               "otherNames": [
                   "iMatix",
                   "iMatix Standard Function Library Agreement",
-                  "sfl-license",
+                  "scancode:sfl-license",
                   "SFL License Agreement"
               ]
           },
@@ -189,7 +189,7 @@
               "spdxId": "iMatix",
               "_implications": {
                   "__impliedNames": [
-                      "sfl-license",
+                      "scancode:sfl-license",
                       "SFL License Agreement",
                       "iMatix"
                   ],

@@ -3,6 +3,10 @@ Adobe Postscript AFM License (APAFML)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:apafml`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -43,7 +47,7 @@ Raw Data
         "__impliedNames": [
             "APAFML",
             "Adobe Postscript AFM License",
-            "apafml"
+            "scancode:apafml"
         ],
         "__impliedId": "APAFML",
         "__isFsfFree": true,
@@ -54,7 +58,7 @@ Raw Data
                         "APAFML",
                         "APAFML",
                         "Adobe Postscript AFM License",
-                        "apafml"
+                        "scancode:apafml"
                     ],
                     "__impliedId": "APAFML"
                 },
@@ -62,7 +66,7 @@ Raw Data
                 "otherNames": [
                     "APAFML",
                     "Adobe Postscript AFM License",
-                    "apafml"
+                    "scancode:apafml"
                 ]
             },
             "SPDX": {
@@ -135,7 +139,7 @@ Raw Data
                 "spdxId": "APAFML",
                 "_implications": {
                     "__impliedNames": [
-                        "apafml",
+                        "scancode:apafml",
                         "Adobe Postscript AFM License",
                         "APAFML"
                     ],

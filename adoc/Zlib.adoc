@@ -12,6 +12,7 @@
 
 *Other Names:*
 
+* `+scancode:zlib+`
 * `+The zlib/libpng License (Zlib)+`
 * `+License :: OSI Approved :: zlib/libpng License+`
 * `+zlib/libpng license+`
@@ -133,8 +134,9 @@ the following restrictions:
     "__impliedNames": [
         "Zlib",
         "zlib License",
-        "zlib",
+        "scancode:zlib",
         "ZLIB License",
+        "zlib",
         "The zlib/libpng License (Zlib)",
         "License :: OSI Approved :: zlib/libpng License",
         "zlib/libpng license",
@@ -182,8 +184,9 @@ the following restrictions:
                     "Zlib",
                     "Zlib",
                     "zlib License",
-                    "zlib",
+                    "scancode:zlib",
                     "ZLIB License",
+                    "zlib",
                     "The zlib/libpng License (Zlib)",
                     "License :: OSI Approved :: zlib/libpng License",
                     "zlib/libpng license",
@@ -195,8 +198,9 @@ the following restrictions:
             "otherNames": [
                 "Zlib",
                 "zlib License",
-                "zlib",
+                "scancode:zlib",
                 "ZLIB License",
+                "zlib",
                 "The zlib/libpng License (Zlib)",
                 "License :: OSI Approved :: zlib/libpng License",
                 "zlib/libpng license",
@@ -301,7 +305,7 @@ the following restrictions:
             "spdxId": "Zlib",
             "_implications": {
                 "__impliedNames": [
-                    "zlib",
+                    "scancode:zlib",
                     "ZLIB License",
                     "Zlib"
                 ],

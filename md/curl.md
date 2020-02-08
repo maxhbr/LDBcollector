@@ -3,6 +3,10 @@ curl License (curl)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:curl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -71,6 +75,7 @@ Raw Data
         "__impliedNames": [
             "curl",
             "curl License",
+            "scancode:curl",
             "cURL License",
             "Curl License"
         ],
@@ -82,6 +87,7 @@ Raw Data
                         "curl",
                         "curl",
                         "curl License",
+                        "scancode:curl",
                         "cURL License"
                     ],
                     "__impliedId": "curl"
@@ -90,6 +96,7 @@ Raw Data
                 "otherNames": [
                     "curl",
                     "curl License",
+                    "scancode:curl",
                     "cURL License"
                 ]
             },
@@ -150,7 +157,7 @@ Raw Data
                 "spdxId": "curl",
                 "_implications": {
                     "__impliedNames": [
-                        "curl",
+                        "scancode:curl",
                         "cURL License",
                         "curl"
                     ],

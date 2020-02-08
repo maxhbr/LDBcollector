@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go             |
 | Classification   | WeakCopyleft                                             |
 
+*Other Names:*
+
+- =scancode:lgpllr=
+
 ** Comments on (easy) usability
 
 ** URLs
@@ -259,7 +263,7 @@
       "__impliedNames": [
           "LGPLLR",
           "Lesser General Public License For Linguistic Resources",
-          "lgpllr"
+          "scancode:lgpllr"
       ],
       "__impliedId": "LGPLLR",
       "facts": {
@@ -269,7 +273,7 @@
                       "LGPLLR",
                       "LGPLLR",
                       "Lesser General Public License For Linguistic Resources",
-                      "lgpllr"
+                      "scancode:lgpllr"
                   ],
                   "__impliedId": "LGPLLR"
               },
@@ -277,7 +281,7 @@
               "otherNames": [
                   "LGPLLR",
                   "Lesser General Public License For Linguistic Resources",
-                  "lgpllr"
+                  "scancode:lgpllr"
               ]
           },
           "SPDX": {
@@ -324,7 +328,7 @@
               "spdxId": "LGPLLR",
               "_implications": {
                   "__impliedNames": [
-                      "lgpllr",
+                      "scancode:lgpllr",
                       "LGPLLR",
                       "LGPLLR"
                   ],

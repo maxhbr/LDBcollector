@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | Copyleft                                       |
 
+*Other Names:*
+
+- =scancode:tmate=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -80,7 +84,7 @@
       "__impliedNames": [
           "TMate",
           "TMate Open Source License",
-          "tmate"
+          "scancode:tmate"
       ],
       "__impliedId": "TMate",
       "__isFsfFree": true,
@@ -91,7 +95,7 @@
                       "TMate",
                       "TMate",
                       "TMate Open Source License",
-                      "tmate"
+                      "scancode:tmate"
                   ],
                   "__impliedId": "TMate"
               },
@@ -99,7 +103,7 @@
               "otherNames": [
                   "TMate",
                   "TMate Open Source License",
-                  "tmate"
+                  "scancode:tmate"
               ]
           },
           "SPDX": {
@@ -172,7 +176,7 @@
               "spdxId": "TMate",
               "_implications": {
                   "__impliedNames": [
-                      "tmate",
+                      "scancode:tmate",
                       "TMate Open Source License",
                       "TMate"
                   ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Nokia",
         "Nokia Open Source License",
-        "nokos-1.0a",
+        "scancode:nokos-1.0a",
         "NOKOS License 1.0a",
         "Nokia Open Source License, Version 1.0a",
         "License :: OSI Approved :: Nokia Open Source License"
@@ -43,7 +43,7 @@
                     "Nokia",
                     "Nokia",
                     "Nokia Open Source License",
-                    "nokos-1.0a",
+                    "scancode:nokos-1.0a",
                     "NOKOS License 1.0a",
                     "Nokia Open Source License, Version 1.0a",
                     "License :: OSI Approved :: Nokia Open Source License"
@@ -54,7 +54,7 @@
             "otherNames": [
                 "Nokia",
                 "Nokia Open Source License",
-                "nokos-1.0a",
+                "scancode:nokos-1.0a",
                 "NOKOS License 1.0a",
                 "Nokia Open Source License, Version 1.0a",
                 "License :: OSI Approved :: Nokia Open Source License"
@@ -142,7 +142,7 @@
             "spdxId": "Nokia",
             "_implications": {
                 "__impliedNames": [
-                    "nokos-1.0a",
+                    "scancode:nokos-1.0a",
                     "NOKOS License 1.0a",
                     "Nokia"
                 ],

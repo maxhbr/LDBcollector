@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+ecosrh-1.1+`
+* `+scancode:ecosrh-1.1+`
 * `+Red Hat eCos Public License 1.1+`
 
 === Comments on (easy) usability
@@ -474,7 +474,7 @@ eCos and the eCos logo are registered trademarks of eCosCentric Limited.
     "__impliedNames": [
         "RHeCos-1.1",
         "Red Hat eCos Public License v1.1",
-        "ecosrh-1.1",
+        "scancode:ecosrh-1.1",
         "Red Hat eCos Public License 1.1"
     ],
     "__impliedId": "RHeCos-1.1",
@@ -485,7 +485,7 @@ eCos and the eCos logo are registered trademarks of eCosCentric Limited.
                     "RHeCos-1.1",
                     "RHeCos-1.1",
                     "Red Hat eCos Public License v1.1",
-                    "ecosrh-1.1",
+                    "scancode:ecosrh-1.1",
                     "Red Hat eCos Public License 1.1"
                 ],
                 "__impliedId": "RHeCos-1.1"
@@ -494,7 +494,7 @@ eCos and the eCos logo are registered trademarks of eCosCentric Limited.
             "otherNames": [
                 "RHeCos-1.1",
                 "Red Hat eCos Public License v1.1",
-                "ecosrh-1.1",
+                "scancode:ecosrh-1.1",
                 "Red Hat eCos Public License 1.1"
             ]
         },
@@ -542,7 +542,7 @@ eCos and the eCos logo are registered trademarks of eCosCentric Limited.
             "spdxId": "RHeCos-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "ecosrh-1.1",
+                    "scancode:ecosrh-1.1",
                     "Red Hat eCos Public License 1.1",
                     "RHeCos-1.1"
                 ],

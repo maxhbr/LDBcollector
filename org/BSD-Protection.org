@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | Copyleft                                       |
 
+*Other Names:*
+
+- =scancode:bsd-protection=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -161,7 +165,7 @@
       "__impliedNames": [
           "BSD-Protection",
           "BSD Protection License",
-          "bsd-protection"
+          "scancode:bsd-protection"
       ],
       "__impliedId": "BSD-Protection",
       "__isFsfFree": true,
@@ -172,7 +176,7 @@
                       "BSD-Protection",
                       "BSD-Protection",
                       "BSD Protection License",
-                      "bsd-protection"
+                      "scancode:bsd-protection"
                   ],
                   "__impliedId": "BSD-Protection"
               },
@@ -180,7 +184,7 @@
               "otherNames": [
                   "BSD-Protection",
                   "BSD Protection License",
-                  "bsd-protection"
+                  "scancode:bsd-protection"
               ]
           },
           "SPDX": {
@@ -253,7 +257,7 @@
               "spdxId": "BSD-Protection",
               "_implications": {
                   "__impliedNames": [
-                      "bsd-protection",
+                      "scancode:bsd-protection",
                       "BSD Protection License",
                       "BSD-Protection"
                   ],

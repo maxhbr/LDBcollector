@@ -8,6 +8,10 @@
 |Rating |Unknown, probably Attention or Stop or No-Go
 |===
 
+*Other Names:*
+
+* `+scancode:cc-by-nd-2.5+`
+
 === Comments on (easy) usability
 
 * **↓**Google Classification is RESTRICTED (source:
@@ -89,7 +93,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
     "__impliedNames": [
         "CC-BY-ND-2.5",
         "Creative Commons Attribution No Derivatives 2.5 Generic",
-        "cc-by-nd-2.5"
+        "scancode:cc-by-nd-2.5"
     ],
     "__impliedId": "CC-BY-ND-2.5",
     "facts": {
@@ -99,7 +103,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
                     "CC-BY-ND-2.5",
                     "CC-BY-ND-2.5",
                     "Creative Commons Attribution No Derivatives 2.5 Generic",
-                    "cc-by-nd-2.5"
+                    "scancode:cc-by-nd-2.5"
                 ],
                 "__impliedId": "CC-BY-ND-2.5"
             },
@@ -107,7 +111,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
             "otherNames": [
                 "CC-BY-ND-2.5",
                 "Creative Commons Attribution No Derivatives 2.5 Generic",
-                "cc-by-nd-2.5"
+                "scancode:cc-by-nd-2.5"
             ]
         },
         "SPDX": {
@@ -156,7 +160,7 @@ Creative Commons may be contacted at http://creativecommons.org/.
             "spdxId": "CC-BY-ND-2.5",
             "_implications": {
                 "__impliedNames": [
-                    "cc-by-nd-2.5",
+                    "scancode:cc-by-nd-2.5",
                     "CC-BY-ND-2.5",
                     "CC-BY-ND-2.5"
                 ],

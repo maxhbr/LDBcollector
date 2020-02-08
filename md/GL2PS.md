@@ -3,6 +3,10 @@ GL2PS License (GL2PS)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:gl2ps`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -50,7 +54,7 @@ Raw Data
         "__impliedNames": [
             "GL2PS",
             "GL2PS License",
-            "gl2ps"
+            "scancode:gl2ps"
         ],
         "__impliedId": "GL2PS",
         "__isFsfFree": true,
@@ -61,7 +65,7 @@ Raw Data
                         "GL2PS",
                         "GL2PS",
                         "GL2PS License",
-                        "gl2ps"
+                        "scancode:gl2ps"
                     ],
                     "__impliedId": "GL2PS"
                 },
@@ -69,7 +73,7 @@ Raw Data
                 "otherNames": [
                     "GL2PS",
                     "GL2PS License",
-                    "gl2ps"
+                    "scancode:gl2ps"
                 ]
             },
             "SPDX": {
@@ -142,7 +146,7 @@ Raw Data
                 "spdxId": "GL2PS",
                 "_implications": {
                     "__impliedNames": [
-                        "gl2ps",
+                        "scancode:gl2ps",
                         "GL2PS License",
                         "GL2PS"
                     ],

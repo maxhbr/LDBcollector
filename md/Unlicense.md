@@ -5,6 +5,8 @@ The Unlicense (Unlicense)
 
 **Other Names:**
 
+-   `scancode:unlicense`
+
 -   `Unlicense 1`
 
 Description
@@ -92,6 +94,7 @@ Raw Data
         "__impliedNames": [
             "Unlicense",
             "The Unlicense",
+            "scancode:unlicense",
             "unlicense",
             "Unlicense 1"
         ],
@@ -132,6 +135,7 @@ Raw Data
                         "Unlicense",
                         "Unlicense",
                         "The Unlicense",
+                        "scancode:unlicense",
                         "unlicense",
                         "Unlicense 1"
                     ],
@@ -141,6 +145,7 @@ Raw Data
                 "otherNames": [
                     "Unlicense",
                     "The Unlicense",
+                    "scancode:unlicense",
                     "unlicense",
                     "Unlicense 1"
                 ]
@@ -215,7 +220,7 @@ Raw Data
                 "spdxId": "Unlicense",
                 "_implications": {
                     "__impliedNames": [
-                        "unlicense",
+                        "scancode:unlicense",
                         "Unlicense",
                         "Unlicense"
                     ],

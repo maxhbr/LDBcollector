@@ -5,6 +5,8 @@ LaTeX Project Public License v1.2 (LPPL-1.2)
 
 **Other Names:**
 
+-   `scancode:lppl-1.2`
+
 -   `LPPL 1.2`
 
 Comments on (easy) usability
@@ -332,7 +334,7 @@ Raw Data
         "__impliedNames": [
             "LPPL-1.2",
             "LaTeX Project Public License v1.2",
-            "lppl-1.2",
+            "scancode:lppl-1.2",
             "LPPL 1.2"
         ],
         "__impliedId": "LPPL-1.2",
@@ -343,7 +345,7 @@ Raw Data
                         "LPPL-1.2",
                         "LPPL-1.2",
                         "LaTeX Project Public License v1.2",
-                        "lppl-1.2",
+                        "scancode:lppl-1.2",
                         "LPPL 1.2"
                     ],
                     "__impliedId": "LPPL-1.2"
@@ -352,7 +354,7 @@ Raw Data
                 "otherNames": [
                     "LPPL-1.2",
                     "LaTeX Project Public License v1.2",
-                    "lppl-1.2",
+                    "scancode:lppl-1.2",
                     "LPPL 1.2"
                 ]
             },
@@ -400,7 +402,7 @@ Raw Data
                 "spdxId": "LPPL-1.2",
                 "_implications": {
                     "__impliedNames": [
-                        "lppl-1.2",
+                        "scancode:lppl-1.2",
                         "LPPL 1.2",
                         "LPPL-1.2"
                     ],

@@ -3,6 +3,10 @@ Naumen Public License (Naumen)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:naumen`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -74,7 +78,7 @@ Raw Data
         "__impliedNames": [
             "Naumen",
             "Naumen Public License",
-            "naumen",
+            "scancode:naumen",
             "NAUMEN Public License"
         ],
         "__impliedId": "Naumen",
@@ -113,7 +117,7 @@ Raw Data
                         "Naumen",
                         "Naumen",
                         "Naumen Public License",
-                        "naumen",
+                        "scancode:naumen",
                         "NAUMEN Public License"
                     ],
                     "__impliedId": "Naumen"
@@ -122,7 +126,7 @@ Raw Data
                 "otherNames": [
                     "Naumen",
                     "Naumen Public License",
-                    "naumen",
+                    "scancode:naumen",
                     "NAUMEN Public License"
                 ]
             },
@@ -208,7 +212,7 @@ Raw Data
                 "spdxId": "Naumen",
                 "_implications": {
                     "__impliedNames": [
-                        "naumen",
+                        "scancode:naumen",
                         "NAUMEN Public License",
                         "Naumen"
                     ],

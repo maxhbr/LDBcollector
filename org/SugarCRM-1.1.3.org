@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:sugarcrm-1.1.3=
+
 - =SugarCRM Public License 1.1.3=
 
 ** Comments on (easy) usability
@@ -190,7 +192,7 @@
       "__impliedNames": [
           "SugarCRM-1.1.3",
           "SugarCRM Public License v1.1.3",
-          "sugarcrm-1.1.3",
+          "scancode:sugarcrm-1.1.3",
           "SugarCRM Public License 1.1.3"
       ],
       "__impliedId": "SugarCRM-1.1.3",
@@ -201,7 +203,7 @@
                       "SugarCRM-1.1.3",
                       "SugarCRM-1.1.3",
                       "SugarCRM Public License v1.1.3",
-                      "sugarcrm-1.1.3",
+                      "scancode:sugarcrm-1.1.3",
                       "SugarCRM Public License 1.1.3"
                   ],
                   "__impliedId": "SugarCRM-1.1.3"
@@ -210,7 +212,7 @@
               "otherNames": [
                   "SugarCRM-1.1.3",
                   "SugarCRM Public License v1.1.3",
-                  "sugarcrm-1.1.3",
+                  "scancode:sugarcrm-1.1.3",
                   "SugarCRM Public License 1.1.3"
               ]
           },
@@ -260,7 +262,7 @@
               "spdxId": "SugarCRM-1.1.3",
               "_implications": {
                   "__impliedNames": [
-                      "sugarcrm-1.1.3",
+                      "scancode:sugarcrm-1.1.3",
                       "SugarCRM Public License 1.1.3",
                       "SugarCRM-1.1.3"
                   ],

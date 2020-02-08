@@ -6,6 +6,10 @@
 | Shortname   | Unicode-TOU                                    |
 | Rating      | Unknown, probably Attention or Stop or No-Go   |
 
+*Other Names:*
+
+- =scancode:unicode-tou=
+
 ** Comments on (easy) usability
 
 ** URLs
@@ -155,7 +159,7 @@
       "__impliedNames": [
           "Unicode-TOU",
           "Unicode Terms of Use",
-          "unicode-tou"
+          "scancode:unicode-tou"
       ],
       "__impliedId": "Unicode-TOU",
       "facts": {
@@ -165,7 +169,7 @@
                       "Unicode-TOU",
                       "Unicode-TOU",
                       "Unicode Terms of Use",
-                      "unicode-tou"
+                      "scancode:unicode-tou"
                   ],
                   "__impliedId": "Unicode-TOU"
               },
@@ -173,7 +177,7 @@
               "otherNames": [
                   "Unicode-TOU",
                   "Unicode Terms of Use",
-                  "unicode-tou"
+                  "scancode:unicode-tou"
               ]
           },
           "SPDX": {
@@ -220,7 +224,7 @@
               "spdxId": "Unicode-TOU",
               "_implications": {
                   "__impliedNames": [
-                      "unicode-tou",
+                      "scancode:unicode-tou",
                       "Unicode Terms of Use",
                       "Unicode-TOU"
                   ],

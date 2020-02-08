@@ -3,6 +3,10 @@ Rdisc License (Rdisc)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:rdisc`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -45,7 +49,7 @@ Raw Data
         "__impliedNames": [
             "Rdisc",
             "Rdisc License",
-            "rdisc"
+            "scancode:rdisc"
         ],
         "__impliedId": "Rdisc",
         "__isFsfFree": true,
@@ -56,7 +60,7 @@ Raw Data
                         "Rdisc",
                         "Rdisc",
                         "Rdisc License",
-                        "rdisc"
+                        "scancode:rdisc"
                     ],
                     "__impliedId": "Rdisc"
                 },
@@ -64,7 +68,7 @@ Raw Data
                 "otherNames": [
                     "Rdisc",
                     "Rdisc License",
-                    "rdisc"
+                    "scancode:rdisc"
                 ]
             },
             "SPDX": {
@@ -137,7 +141,7 @@ Raw Data
                 "spdxId": "Rdisc",
                 "_implications": {
                     "__impliedNames": [
-                        "rdisc",
+                        "scancode:rdisc",
                         "Rdisc License",
                         "Rdisc"
                     ],

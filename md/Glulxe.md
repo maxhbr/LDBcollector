@@ -3,6 +3,10 @@ Glulxe License (Glulxe)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:glulxe`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -35,7 +39,7 @@ Raw Data
         "__impliedNames": [
             "Glulxe",
             "Glulxe License",
-            "glulxe"
+            "scancode:glulxe"
         ],
         "__impliedId": "Glulxe",
         "__isFsfFree": true,
@@ -46,7 +50,7 @@ Raw Data
                         "Glulxe",
                         "Glulxe",
                         "Glulxe License",
-                        "glulxe"
+                        "scancode:glulxe"
                     ],
                     "__impliedId": "Glulxe"
                 },
@@ -54,7 +58,7 @@ Raw Data
                 "otherNames": [
                     "Glulxe",
                     "Glulxe License",
-                    "glulxe"
+                    "scancode:glulxe"
                 ]
             },
             "SPDX": {
@@ -127,7 +131,7 @@ Raw Data
                 "spdxId": "Glulxe",
                 "_implications": {
                     "__impliedNames": [
-                        "glulxe",
+                        "scancode:glulxe",
                         "Glulxe License",
                         "Glulxe"
                     ],

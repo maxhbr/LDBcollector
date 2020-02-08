@@ -5,7 +5,7 @@ Deutsche Freie Software Lizenz (D-FSL-1.0)
 
 **Other Names:**
 
--   `d-fsl-1.0-de`
+-   `scancode:d-fsl-1.0-de`
 
 Comments on (easy) usability
 ----------------------------
@@ -500,7 +500,7 @@ Raw Data
         "__impliedNames": [
             "D-FSL-1.0",
             "Deutsche Freie Software Lizenz",
-            "d-fsl-1.0-de"
+            "scancode:d-fsl-1.0-de"
         ],
         "__impliedId": "D-FSL-1.0",
         "facts": {
@@ -510,7 +510,7 @@ Raw Data
                         "D-FSL-1.0",
                         "D-FSL-1.0",
                         "Deutsche Freie Software Lizenz",
-                        "d-fsl-1.0-de"
+                        "scancode:d-fsl-1.0-de"
                     ],
                     "__impliedId": "D-FSL-1.0"
                 },
@@ -518,7 +518,7 @@ Raw Data
                 "otherNames": [
                     "D-FSL-1.0",
                     "Deutsche Freie Software Lizenz",
-                    "d-fsl-1.0-de"
+                    "scancode:d-fsl-1.0-de"
                 ]
             },
             "SPDX": {
@@ -609,7 +609,7 @@ Raw Data
                 "spdxId": "D-FSL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "d-fsl-1.0-de",
+                        "scancode:d-fsl-1.0-de",
                         "Deutsche Freie Software Lizenz",
                         "D-FSL-1.0"
                     ],

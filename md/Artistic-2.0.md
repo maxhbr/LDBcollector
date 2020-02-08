@@ -5,6 +5,8 @@ Artistic License 2.0 (Artistic-2.0)
 
 **Other Names:**
 
+-   `scancode:artistic-2.0`
+
 -   `Artistic 2.0`
 
 -   `Artistic License, Version 2.0`
@@ -163,8 +165,9 @@ Raw Data
         "__impliedNames": [
             "Artistic-2.0",
             "Artistic License 2.0",
-            "artistic-2.0",
+            "scancode:artistic-2.0",
             "Artistic 2.0",
+            "artistic-2.0",
             "Artistic License, Version 2.0",
             "License :: OSI Approved :: Artistic License",
             "Artistic License (v. 2.0)"
@@ -209,8 +212,9 @@ Raw Data
                         "Artistic-2.0",
                         "Artistic-2.0",
                         "Artistic License 2.0",
-                        "artistic-2.0",
+                        "scancode:artistic-2.0",
                         "Artistic 2.0",
+                        "artistic-2.0",
                         "Artistic License, Version 2.0",
                         "License :: OSI Approved :: Artistic License",
                         "Artistic License (v. 2.0)"
@@ -221,8 +225,9 @@ Raw Data
                 "otherNames": [
                     "Artistic-2.0",
                     "Artistic License 2.0",
-                    "artistic-2.0",
+                    "scancode:artistic-2.0",
                     "Artistic 2.0",
+                    "artistic-2.0",
                     "Artistic License, Version 2.0",
                     "License :: OSI Approved :: Artistic License",
                     "Artistic License (v. 2.0)"
@@ -315,7 +320,7 @@ Raw Data
                 "spdxId": "Artistic-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "artistic-2.0",
+                        "scancode:artistic-2.0",
                         "Artistic 2.0",
                         "Artistic-2.0"
                     ],

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:wsuipa+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -46,7 +50,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
     "__impliedNames": [
         "Wsuipa",
         "Wsuipa License",
-        "wsuipa"
+        "scancode:wsuipa"
     ],
     "__impliedId": "Wsuipa",
     "__isFsfFree": true,
@@ -57,7 +61,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
                     "Wsuipa",
                     "Wsuipa",
                     "Wsuipa License",
-                    "wsuipa"
+                    "scancode:wsuipa"
                 ],
                 "__impliedId": "Wsuipa"
             },
@@ -65,7 +69,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
             "otherNames": [
                 "Wsuipa",
                 "Wsuipa License",
-                "wsuipa"
+                "scancode:wsuipa"
             ]
         },
         "SPDX": {
@@ -138,7 +142,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
             "spdxId": "Wsuipa",
             "_implications": {
                 "__impliedNames": [
-                    "wsuipa",
+                    "scancode:wsuipa",
                     "Wsuipa License",
                     "Wsuipa"
                 ],

@@ -3,6 +3,10 @@ Caldera License (Caldera)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:caldera`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -74,7 +78,7 @@ Raw Data
         "__impliedNames": [
             "Caldera",
             "Caldera License",
-            "caldera"
+            "scancode:caldera"
         ],
         "__impliedId": "Caldera",
         "facts": {
@@ -84,7 +88,7 @@ Raw Data
                         "Caldera",
                         "Caldera",
                         "Caldera License",
-                        "caldera"
+                        "scancode:caldera"
                     ],
                     "__impliedId": "Caldera"
                 },
@@ -92,7 +96,7 @@ Raw Data
                 "otherNames": [
                     "Caldera",
                     "Caldera License",
-                    "caldera"
+                    "scancode:caldera"
                 ]
             },
             "SPDX": {
@@ -139,7 +143,7 @@ Raw Data
                 "spdxId": "Caldera",
                 "_implications": {
                     "__impliedNames": [
-                        "caldera",
+                        "scancode:caldera",
                         "Caldera License",
                         "Caldera"
                     ],

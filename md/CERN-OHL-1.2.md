@@ -3,6 +3,10 @@ CERN Open Hardware Licence v1.2 (CERN-OHL-1.2)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:cern-ohl-1.2`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -112,7 +116,7 @@ Raw Data
         "__impliedNames": [
             "CERN-OHL-1.2",
             "CERN Open Hardware Licence v1.2",
-            "cern-ohl-1.2"
+            "scancode:cern-ohl-1.2"
         ],
         "__impliedId": "CERN-OHL-1.2",
         "facts": {
@@ -122,7 +126,7 @@ Raw Data
                         "CERN-OHL-1.2",
                         "CERN-OHL-1.2",
                         "CERN Open Hardware Licence v1.2",
-                        "cern-ohl-1.2"
+                        "scancode:cern-ohl-1.2"
                     ],
                     "__impliedId": "CERN-OHL-1.2"
                 },
@@ -130,7 +134,7 @@ Raw Data
                 "otherNames": [
                     "CERN-OHL-1.2",
                     "CERN Open Hardware Licence v1.2",
-                    "cern-ohl-1.2"
+                    "scancode:cern-ohl-1.2"
                 ]
             },
             "SPDX": {
@@ -179,7 +183,7 @@ Raw Data
                 "spdxId": "CERN-OHL-1.2",
                 "_implications": {
                     "__impliedNames": [
-                        "cern-ohl-1.2",
+                        "scancode:cern-ohl-1.2",
                         "CERN Open Hardware Licence v1.2",
                         "CERN-OHL-1.2"
                     ],

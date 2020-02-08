@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =fsf-ap=
+- =scancode:fsf-ap=
 
 ** Comments on (easy) usability
 
@@ -46,7 +46,7 @@
       "__impliedNames": [
           "FSFAP",
           "FSF All Permissive License",
-          "fsf-ap",
+          "scancode:fsf-ap",
           "FSF All Permissive license"
       ],
       "__impliedId": "FSFAP",
@@ -58,7 +58,7 @@
                       "FSFAP",
                       "FSFAP",
                       "FSF All Permissive License",
-                      "fsf-ap"
+                      "scancode:fsf-ap"
                   ],
                   "__impliedId": "FSFAP"
               },
@@ -66,7 +66,7 @@
               "otherNames": [
                   "FSFAP",
                   "FSF All Permissive License",
-                  "fsf-ap"
+                  "scancode:fsf-ap"
               ]
           },
           "SPDX": {
@@ -144,7 +144,7 @@
               "spdxId": "FSFAP",
               "_implications": {
                   "__impliedNames": [
-                      "fsf-ap",
+                      "scancode:fsf-ap",
                       "FSF All Permissive License",
                       "FSFAP"
                   ],

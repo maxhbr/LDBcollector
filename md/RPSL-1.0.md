@@ -5,6 +5,8 @@ RealNetworks Public Source License v1.0 (RPSL-1.0)
 
 **Other Names:**
 
+-   `scancode:rpsl-1.0`
+
 -   `RealNetworks Public Source License 1.0`
 
 -   `RealNetworks Public Source License, Version 1.0`
@@ -567,7 +569,7 @@ Raw Data
         "__impliedNames": [
             "RPSL-1.0",
             "RealNetworks Public Source License v1.0",
-            "rpsl-1.0",
+            "scancode:rpsl-1.0",
             "RealNetworks Public Source License 1.0",
             "RealNetworks Public Source License, Version 1.0",
             "RealNetworks Public Source License V1.0"
@@ -611,7 +613,7 @@ Raw Data
                         "RPSL-1.0",
                         "RPSL-1.0",
                         "RealNetworks Public Source License v1.0",
-                        "rpsl-1.0",
+                        "scancode:rpsl-1.0",
                         "RealNetworks Public Source License 1.0",
                         "RealNetworks Public Source License, Version 1.0"
                     ],
@@ -621,7 +623,7 @@ Raw Data
                 "otherNames": [
                     "RPSL-1.0",
                     "RealNetworks Public Source License v1.0",
-                    "rpsl-1.0",
+                    "scancode:rpsl-1.0",
                     "RealNetworks Public Source License 1.0",
                     "RealNetworks Public Source License, Version 1.0"
                 ]
@@ -714,7 +716,7 @@ Raw Data
                 "spdxId": "RPSL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "rpsl-1.0",
+                        "scancode:rpsl-1.0",
                         "RealNetworks Public Source License 1.0",
                         "RPSL-1.0"
                     ],

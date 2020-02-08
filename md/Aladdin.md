@@ -5,7 +5,7 @@ Aladdin Free Public License (Aladdin)
 
 **Other Names:**
 
--   `afpl-8.0`
+-   `scancode:afpl-8.0`
 
 -   `Aladdin FPL v8`
 
@@ -102,7 +102,7 @@ Raw Data
         "__impliedNames": [
             "Aladdin",
             "Aladdin Free Public License",
-            "afpl-8.0",
+            "scancode:afpl-8.0",
             "Aladdin FPL v8"
         ],
         "__impliedId": "Aladdin",
@@ -113,7 +113,7 @@ Raw Data
                         "Aladdin",
                         "Aladdin",
                         "Aladdin Free Public License",
-                        "afpl-8.0",
+                        "scancode:afpl-8.0",
                         "Aladdin FPL v8"
                     ],
                     "__impliedId": "Aladdin"
@@ -122,7 +122,7 @@ Raw Data
                 "otherNames": [
                     "Aladdin",
                     "Aladdin Free Public License",
-                    "afpl-8.0",
+                    "scancode:afpl-8.0",
                     "Aladdin FPL v8"
                 ]
             },
@@ -193,7 +193,7 @@ Raw Data
                 "spdxId": "Aladdin",
                 "_implications": {
                     "__impliedNames": [
-                        "afpl-8.0",
+                        "scancode:afpl-8.0",
                         "Aladdin FPL v8",
                         "Aladdin"
                     ],

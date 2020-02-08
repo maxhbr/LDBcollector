@@ -9,6 +9,10 @@
 |Classification |WeakCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:cc-by-sa-3.0+`
+
 === Comments on (easy) usability
 
 * **↑**In contrast to the CC-SA 1.0 license, version 3.0 is considered
@@ -400,7 +404,7 @@ Creative Commons Notice
     "__impliedNames": [
         "CC-BY-SA-3.0",
         "Creative Commons Attribution Share Alike 3.0 Unported",
-        "cc-by-sa-3.0"
+        "scancode:cc-by-sa-3.0"
     ],
     "__impliedId": "CC-BY-SA-3.0",
     "__impliedAmbiguousNames": [
@@ -413,7 +417,7 @@ Creative Commons Notice
                     "CC-BY-SA-3.0",
                     "CC-BY-SA-3.0",
                     "Creative Commons Attribution Share Alike 3.0 Unported",
-                    "cc-by-sa-3.0"
+                    "scancode:cc-by-sa-3.0"
                 ],
                 "__impliedId": "CC-BY-SA-3.0"
             },
@@ -421,7 +425,7 @@ Creative Commons Notice
             "otherNames": [
                 "CC-BY-SA-3.0",
                 "Creative Commons Attribution Share Alike 3.0 Unported",
-                "cc-by-sa-3.0"
+                "scancode:cc-by-sa-3.0"
             ]
         },
         "SPDX": {
@@ -470,7 +474,7 @@ Creative Commons Notice
             "spdxId": "CC-BY-SA-3.0",
             "_implications": {
                 "__impliedNames": [
-                    "cc-by-sa-3.0",
+                    "scancode:cc-by-sa-3.0",
                     "CC-BY-SA-3.0",
                     "CC-BY-SA-3.0"
                 ],

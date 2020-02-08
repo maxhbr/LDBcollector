@@ -5,6 +5,8 @@ Creative Commons Attribution Non Commercial No Derivatives 4.0 International (CC
 
 **Other Names:**
 
+-   `scancode:cc-by-nc-nd-4.0`
+
 -   `Creative Commons Attribution NonCommercial No-Derivatives 4.0`
 
 Comments on (easy) usability
@@ -447,7 +449,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-NC-ND-4.0",
             "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
-            "cc-by-nc-nd-4.0",
+            "scancode:cc-by-nc-nd-4.0",
             "Creative Commons Attribution NonCommercial No-Derivatives 4.0"
         ],
         "__impliedId": "CC-BY-NC-ND-4.0",
@@ -500,7 +502,7 @@ Raw Data
                         "CC-BY-NC-ND-4.0",
                         "CC-BY-NC-ND-4.0",
                         "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
-                        "cc-by-nc-nd-4.0",
+                        "scancode:cc-by-nc-nd-4.0",
                         "Creative Commons Attribution NonCommercial No-Derivatives 4.0"
                     ],
                     "__impliedId": "CC-BY-NC-ND-4.0"
@@ -509,7 +511,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-NC-ND-4.0",
                     "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
-                    "cc-by-nc-nd-4.0",
+                    "scancode:cc-by-nc-nd-4.0",
                     "Creative Commons Attribution NonCommercial No-Derivatives 4.0"
                 ]
             },
@@ -559,7 +561,7 @@ Raw Data
                 "spdxId": "CC-BY-NC-ND-4.0",
                 "_implications": {
                     "__impliedNames": [
-                        "cc-by-nc-nd-4.0",
+                        "scancode:cc-by-nc-nd-4.0",
                         "CC-BY-NC-ND-4.0",
                         "CC-BY-NC-ND-4.0"
                     ],

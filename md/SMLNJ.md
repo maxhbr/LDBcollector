@@ -5,7 +5,7 @@ Standard ML of New Jersey License (SMLNJ)
 
 **Other Names:**
 
--   `standard-ml-nj`
+-   `scancode:standard-ml-nj`
 
 -   `Standard ML of New Jersey`
 
@@ -63,7 +63,7 @@ Raw Data
         "__impliedNames": [
             "SMLNJ",
             "Standard ML of New Jersey License",
-            "standard-ml-nj",
+            "scancode:standard-ml-nj",
             "Standard ML of New Jersey"
         ],
         "__impliedId": "SMLNJ",
@@ -75,7 +75,7 @@ Raw Data
                         "SMLNJ",
                         "SMLNJ",
                         "Standard ML of New Jersey License",
-                        "standard-ml-nj",
+                        "scancode:standard-ml-nj",
                         "Standard ML of New Jersey"
                     ],
                     "__impliedId": "SMLNJ"
@@ -84,7 +84,7 @@ Raw Data
                 "otherNames": [
                     "SMLNJ",
                     "Standard ML of New Jersey License",
-                    "standard-ml-nj",
+                    "scancode:standard-ml-nj",
                     "Standard ML of New Jersey"
                 ]
             },
@@ -162,7 +162,7 @@ Raw Data
                 "spdxId": "SMLNJ",
                 "_implications": {
                     "__impliedNames": [
-                        "standard-ml-nj",
+                        "scancode:standard-ml-nj",
                         "Standard ML of New Jersey",
                         "SMLNJ"
                     ],

@@ -3,6 +3,10 @@ Saxpath License (Saxpath)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:saxpath`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -73,7 +77,7 @@ Raw Data
         "__impliedNames": [
             "Saxpath",
             "Saxpath License",
-            "saxpath"
+            "scancode:saxpath"
         ],
         "__impliedId": "Saxpath",
         "__isFsfFree": true,
@@ -84,7 +88,7 @@ Raw Data
                         "Saxpath",
                         "Saxpath",
                         "Saxpath License",
-                        "saxpath"
+                        "scancode:saxpath"
                     ],
                     "__impliedId": "Saxpath"
                 },
@@ -92,7 +96,7 @@ Raw Data
                 "otherNames": [
                     "Saxpath",
                     "Saxpath License",
-                    "saxpath"
+                    "scancode:saxpath"
                 ]
             },
             "SPDX": {
@@ -165,7 +169,7 @@ Raw Data
                 "spdxId": "Saxpath",
                 "_implications": {
                     "__impliedNames": [
-                        "saxpath",
+                        "scancode:saxpath",
                         "Saxpath License",
                         "Saxpath"
                     ],

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:imagemagick+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Silver (source:
@@ -83,7 +87,7 @@ under the License.
     "__impliedNames": [
         "ImageMagick",
         "ImageMagick License",
-        "imagemagick"
+        "scancode:imagemagick"
     ],
     "__impliedId": "ImageMagick",
     "__isFsfFree": true,
@@ -94,7 +98,7 @@ under the License.
                     "ImageMagick",
                     "ImageMagick",
                     "ImageMagick License",
-                    "imagemagick"
+                    "scancode:imagemagick"
                 ],
                 "__impliedId": "ImageMagick"
             },
@@ -102,7 +106,7 @@ under the License.
             "otherNames": [
                 "ImageMagick",
                 "ImageMagick License",
-                "imagemagick"
+                "scancode:imagemagick"
             ]
         },
         "SPDX": {
@@ -175,7 +179,7 @@ under the License.
             "spdxId": "ImageMagick",
             "_implications": {
                 "__impliedNames": [
-                    "imagemagick",
+                    "scancode:imagemagick",
                     "ImageMagick License",
                     "ImageMagick"
                 ],

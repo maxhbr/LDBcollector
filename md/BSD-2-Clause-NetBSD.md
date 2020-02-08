@@ -3,6 +3,10 @@ BSD 2-Clause NetBSD License (BSD-2-Clause-NetBSD)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:bsd-2-clause-netbsd`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -53,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "BSD-2-Clause-NetBSD",
             "BSD 2-Clause NetBSD License",
-            "bsd-2-clause-netbsd"
+            "scancode:bsd-2-clause-netbsd"
         ],
         "__impliedId": "BSD-2-Clause-NetBSD",
         "facts": {
@@ -63,7 +67,7 @@ Raw Data
                         "BSD-2-Clause-NetBSD",
                         "BSD-2-Clause-NetBSD",
                         "BSD 2-Clause NetBSD License",
-                        "bsd-2-clause-netbsd"
+                        "scancode:bsd-2-clause-netbsd"
                     ],
                     "__impliedId": "BSD-2-Clause-NetBSD"
                 },
@@ -71,7 +75,7 @@ Raw Data
                 "otherNames": [
                     "BSD-2-Clause-NetBSD",
                     "BSD 2-Clause NetBSD License",
-                    "bsd-2-clause-netbsd"
+                    "scancode:bsd-2-clause-netbsd"
                 ]
             },
             "SPDX": {
@@ -118,7 +122,7 @@ Raw Data
                 "spdxId": "BSD-2-Clause-NetBSD",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-2-clause-netbsd",
+                        "scancode:bsd-2-clause-netbsd",
                         "BSD-2-Clause-NetBSD",
                         "BSD-2-Clause-NetBSD"
                     ],

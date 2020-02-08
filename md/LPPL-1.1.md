@@ -5,6 +5,8 @@ LaTeX Project Public License v1.1 (LPPL-1.1)
 
 **Other Names:**
 
+-   `scancode:lppl-1.1`
+
 -   `LPPL 1.1`
 
 Comments on (easy) usability
@@ -331,7 +333,7 @@ Raw Data
         "__impliedNames": [
             "LPPL-1.1",
             "LaTeX Project Public License v1.1",
-            "lppl-1.1",
+            "scancode:lppl-1.1",
             "LPPL 1.1"
         ],
         "__impliedId": "LPPL-1.1",
@@ -342,7 +344,7 @@ Raw Data
                         "LPPL-1.1",
                         "LPPL-1.1",
                         "LaTeX Project Public License v1.1",
-                        "lppl-1.1",
+                        "scancode:lppl-1.1",
                         "LPPL 1.1"
                     ],
                     "__impliedId": "LPPL-1.1"
@@ -351,7 +353,7 @@ Raw Data
                 "otherNames": [
                     "LPPL-1.1",
                     "LaTeX Project Public License v1.1",
-                    "lppl-1.1",
+                    "scancode:lppl-1.1",
                     "LPPL 1.1"
                 ]
             },
@@ -399,7 +401,7 @@ Raw Data
                 "spdxId": "LPPL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "lppl-1.1",
+                        "scancode:lppl-1.1",
                         "LPPL 1.1",
                         "LPPL-1.1"
                     ],

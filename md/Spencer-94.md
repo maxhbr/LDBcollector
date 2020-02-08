@@ -5,7 +5,7 @@ Spencer License 94 (Spencer-94)
 
 **Other Names:**
 
--   `hs-regexp`
+-   `scancode:hs-regexp`
 
 -   `Henry Spencer Regexp License`
 
@@ -59,7 +59,7 @@ Raw Data
         "__impliedNames": [
             "Spencer-94",
             "Spencer License 94",
-            "hs-regexp",
+            "scancode:hs-regexp",
             "Henry Spencer Regexp License"
         ],
         "__impliedId": "Spencer-94",
@@ -70,7 +70,7 @@ Raw Data
                         "Spencer-94",
                         "Spencer-94",
                         "Spencer License 94",
-                        "hs-regexp",
+                        "scancode:hs-regexp",
                         "Henry Spencer Regexp License"
                     ],
                     "__impliedId": "Spencer-94"
@@ -79,7 +79,7 @@ Raw Data
                 "otherNames": [
                     "Spencer-94",
                     "Spencer License 94",
-                    "hs-regexp",
+                    "scancode:hs-regexp",
                     "Henry Spencer Regexp License"
                 ]
             },
@@ -129,7 +129,7 @@ Raw Data
                 "spdxId": "Spencer-94",
                 "_implications": {
                     "__impliedNames": [
-                        "hs-regexp",
+                        "scancode:hs-regexp",
                         "Henry Spencer Regexp License",
                         "Spencer-94"
                     ],

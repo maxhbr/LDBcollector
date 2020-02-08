@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+sfl-license+`
+* `+scancode:sfl-license+`
 * `+SFL License Agreement+`
 
 === Comments on (easy) usability
@@ -87,7 +87,7 @@ The Product is provided as free software, in the hope that it will be useful. It
     "__impliedNames": [
         "iMatix",
         "iMatix Standard Function Library Agreement",
-        "sfl-license",
+        "scancode:sfl-license",
         "SFL License Agreement"
     ],
     "__impliedId": "iMatix",
@@ -99,7 +99,7 @@ The Product is provided as free software, in the hope that it will be useful. It
                     "iMatix",
                     "iMatix",
                     "iMatix Standard Function Library Agreement",
-                    "sfl-license",
+                    "scancode:sfl-license",
                     "SFL License Agreement"
                 ],
                 "__impliedId": "iMatix"
@@ -108,7 +108,7 @@ The Product is provided as free software, in the hope that it will be useful. It
             "otherNames": [
                 "iMatix",
                 "iMatix Standard Function Library Agreement",
-                "sfl-license",
+                "scancode:sfl-license",
                 "SFL License Agreement"
             ]
         },
@@ -185,7 +185,7 @@ The Product is provided as free software, in the hope that it will be useful. It
             "spdxId": "iMatix",
             "_implications": {
                 "__impliedNames": [
-                    "sfl-license",
+                    "scancode:sfl-license",
                     "SFL License Agreement",
                     "iMatix"
                 ],

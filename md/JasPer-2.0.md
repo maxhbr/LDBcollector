@@ -5,6 +5,8 @@ JasPer License (JasPer-2.0)
 
 **Other Names:**
 
+-   `scancode:jasper-2.0`
+
 -   `JasPer 2.0`
 
 Comments on (easy) usability
@@ -95,7 +97,7 @@ Raw Data
         "__impliedNames": [
             "JasPer-2.0",
             "JasPer License",
-            "jasper-2.0",
+            "scancode:jasper-2.0",
             "JasPer 2.0"
         ],
         "__impliedId": "JasPer-2.0",
@@ -107,7 +109,7 @@ Raw Data
                         "JasPer-2.0",
                         "JasPer-2.0",
                         "JasPer License",
-                        "jasper-2.0",
+                        "scancode:jasper-2.0",
                         "JasPer 2.0"
                     ],
                     "__impliedId": "JasPer-2.0"
@@ -116,7 +118,7 @@ Raw Data
                 "otherNames": [
                     "JasPer-2.0",
                     "JasPer License",
-                    "jasper-2.0",
+                    "scancode:jasper-2.0",
                     "JasPer 2.0"
                 ]
             },
@@ -192,7 +194,7 @@ Raw Data
                 "spdxId": "JasPer-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "jasper-2.0",
+                        "scancode:jasper-2.0",
                         "JasPer 2.0",
                         "JasPer-2.0"
                     ],

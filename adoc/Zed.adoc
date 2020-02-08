@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:zed+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -40,7 +44,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
     "__impliedNames": [
         "Zed",
         "Zed License",
-        "zed"
+        "scancode:zed"
     ],
     "__impliedId": "Zed",
     "__isFsfFree": true,
@@ -51,7 +55,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
                     "Zed",
                     "Zed",
                     "Zed License",
-                    "zed"
+                    "scancode:zed"
                 ],
                 "__impliedId": "Zed"
             },
@@ -59,7 +63,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
             "otherNames": [
                 "Zed",
                 "Zed License",
-                "zed"
+                "scancode:zed"
             ]
         },
         "SPDX": {
@@ -132,7 +136,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
             "spdxId": "Zed",
             "_implications": {
                 "__impliedNames": [
-                    "zed",
+                    "scancode:zed",
                     "Zed License",
                     "Zed"
                 ],

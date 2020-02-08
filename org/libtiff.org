@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =x11-tiff=
+- =scancode:x11-tiff=
 
 - =X11-Style (Tiff)=
 
@@ -79,7 +79,7 @@
       "__impliedNames": [
           "libtiff",
           "libtiff License",
-          "x11-tiff",
+          "scancode:x11-tiff",
           "X11-Style (Tiff)"
       ],
       "__impliedId": "libtiff",
@@ -91,7 +91,7 @@
                       "libtiff",
                       "libtiff",
                       "libtiff License",
-                      "x11-tiff",
+                      "scancode:x11-tiff",
                       "X11-Style (Tiff)"
                   ],
                   "__impliedId": "libtiff"
@@ -100,7 +100,7 @@
               "otherNames": [
                   "libtiff",
                   "libtiff License",
-                  "x11-tiff",
+                  "scancode:x11-tiff",
                   "X11-Style (Tiff)"
               ]
           },
@@ -184,7 +184,7 @@
               "spdxId": "libtiff",
               "_implications": {
                   "__impliedNames": [
-                      "x11-tiff",
+                      "scancode:x11-tiff",
                       "X11-Style (Tiff)",
                       "libtiff"
                   ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+sybase+`
+* `+scancode:sybase+`
 * `+Open Watcom 1.0+`
 * `+The Sybase Open Source Licence+`
 
@@ -415,7 +415,7 @@ under the License."
     "__impliedNames": [
         "Watcom-1.0",
         "Sybase Open Watcom Public License 1.0",
-        "sybase",
+        "scancode:sybase",
         "Open Watcom 1.0",
         "The Sybase Open Source Licence"
     ],
@@ -454,7 +454,7 @@ under the License."
                     "Watcom-1.0",
                     "Watcom-1.0",
                     "Sybase Open Watcom Public License 1.0",
-                    "sybase",
+                    "scancode:sybase",
                     "Open Watcom 1.0",
                     "The Sybase Open Source Licence"
                 ],
@@ -464,7 +464,7 @@ under the License."
             "otherNames": [
                 "Watcom-1.0",
                 "Sybase Open Watcom Public License 1.0",
-                "sybase",
+                "scancode:sybase",
                 "Open Watcom 1.0",
                 "The Sybase Open Source Licence"
             ]
@@ -548,7 +548,7 @@ under the License."
             "spdxId": "Watcom-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "sybase",
+                    "scancode:sybase",
                     "Open Watcom 1.0",
                     "Watcom-1.0"
                 ],

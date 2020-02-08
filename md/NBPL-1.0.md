@@ -3,6 +3,10 @@ Net Boolean Public License v1 (NBPL-1.0)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:nbpl-1.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -182,7 +186,7 @@ Raw Data
         "__impliedNames": [
             "NBPL-1.0",
             "Net Boolean Public License v1",
-            "nbpl-1.0"
+            "scancode:nbpl-1.0"
         ],
         "__impliedId": "NBPL-1.0",
         "facts": {
@@ -192,7 +196,7 @@ Raw Data
                         "NBPL-1.0",
                         "NBPL-1.0",
                         "Net Boolean Public License v1",
-                        "nbpl-1.0"
+                        "scancode:nbpl-1.0"
                     ],
                     "__impliedId": "NBPL-1.0"
                 },
@@ -200,7 +204,7 @@ Raw Data
                 "otherNames": [
                     "NBPL-1.0",
                     "Net Boolean Public License v1",
-                    "nbpl-1.0"
+                    "scancode:nbpl-1.0"
                 ]
             },
             "SPDX": {
@@ -257,7 +261,7 @@ Raw Data
                 "spdxId": "NBPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "nbpl-1.0",
+                        "scancode:nbpl-1.0",
                         "NBPL-1.0",
                         "NBPL-1.0"
                     ],

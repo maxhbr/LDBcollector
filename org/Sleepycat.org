@@ -10,6 +10,8 @@
 
 *Other Names:*
 
+- =scancode:sleepycat=
+
 - =The Sleepycat License=
 
 - =License :: OSI Approved :: Sleepycat License=
@@ -97,7 +99,7 @@
       "__impliedNames": [
           "Sleepycat",
           "Sleepycat License",
-          "sleepycat",
+          "scancode:sleepycat",
           "The Sleepycat License",
           "License :: OSI Approved :: Sleepycat License",
           "Berkeley Database License",
@@ -140,7 +142,7 @@
                       "Sleepycat",
                       "Sleepycat",
                       "Sleepycat License",
-                      "sleepycat",
+                      "scancode:sleepycat",
                       "The Sleepycat License",
                       "License :: OSI Approved :: Sleepycat License",
                       "Berkeley Database License",
@@ -152,7 +154,7 @@
               "otherNames": [
                   "Sleepycat",
                   "Sleepycat License",
-                  "sleepycat",
+                  "scancode:sleepycat",
                   "The Sleepycat License",
                   "License :: OSI Approved :: Sleepycat License",
                   "Berkeley Database License",
@@ -242,7 +244,7 @@
               "spdxId": "Sleepycat",
               "_implications": {
                   "__impliedNames": [
-                      "sleepycat",
+                      "scancode:sleepycat",
                       "Sleepycat License",
                       "Sleepycat"
                   ],

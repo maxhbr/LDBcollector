@@ -7,6 +7,10 @@
 | Rating           | Go                    |
 | Classification   | NoCopyleft            |
 
+*Other Names:*
+
+- =scancode:imagemagick=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Silver (source:
@@ -84,7 +88,7 @@
       "__impliedNames": [
           "ImageMagick",
           "ImageMagick License",
-          "imagemagick"
+          "scancode:imagemagick"
       ],
       "__impliedId": "ImageMagick",
       "__isFsfFree": true,
@@ -95,7 +99,7 @@
                       "ImageMagick",
                       "ImageMagick",
                       "ImageMagick License",
-                      "imagemagick"
+                      "scancode:imagemagick"
                   ],
                   "__impliedId": "ImageMagick"
               },
@@ -103,7 +107,7 @@
               "otherNames": [
                   "ImageMagick",
                   "ImageMagick License",
-                  "imagemagick"
+                  "scancode:imagemagick"
               ]
           },
           "SPDX": {
@@ -176,7 +180,7 @@
               "spdxId": "ImageMagick",
               "_implications": {
                   "__impliedNames": [
-                      "imagemagick",
+                      "scancode:imagemagick",
                       "ImageMagick License",
                       "ImageMagick"
                   ],

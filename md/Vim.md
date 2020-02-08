@@ -3,6 +3,10 @@ Vim License (Vim)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:vim`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -142,7 +146,7 @@ Raw Data
         "__impliedNames": [
             "Vim",
             "Vim License",
-            "vim",
+            "scancode:vim",
             "VIM License"
         ],
         "__impliedId": "Vim",
@@ -154,7 +158,7 @@ Raw Data
                         "Vim",
                         "Vim",
                         "Vim License",
-                        "vim",
+                        "scancode:vim",
                         "VIM License"
                     ],
                     "__impliedId": "Vim"
@@ -163,7 +167,7 @@ Raw Data
                 "otherNames": [
                     "Vim",
                     "Vim License",
-                    "vim",
+                    "scancode:vim",
                     "VIM License"
                 ]
             },
@@ -239,7 +243,7 @@ Raw Data
                 "spdxId": "Vim",
                 "_implications": {
                     "__impliedNames": [
-                        "vim",
+                        "scancode:vim",
                         "VIM License",
                         "Vim"
                     ],

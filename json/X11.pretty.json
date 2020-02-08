@@ -2,13 +2,12 @@
     "__impliedNames": [
         "X11",
         "X11 License",
-        "x11-xconsortium",
+        "scancode:x11-xconsortium",
         "X11-Style (X Consortium)",
-        "x11",
-        "ICU",
-        "ICU License"
+        "scancode:x11",
+        "ICU"
     ],
-    "__impliedId": "ICU",
+    "__impliedId": "X11",
     "facts": {
         "LicenseName": {
             "implications": {
@@ -16,10 +15,8 @@
                     "X11",
                     "X11",
                     "X11 License",
-                    "x11-xconsortium",
-                    "X11-Style (X Consortium)",
-                    "x11",
-                    "ICU"
+                    "scancode:x11-xconsortium",
+                    "X11-Style (X Consortium)"
                 ],
                 "__impliedId": "X11"
             },
@@ -27,48 +24,46 @@
             "otherNames": [
                 "X11",
                 "X11 License",
-                "x11-xconsortium",
-                "X11-Style (X Consortium)",
-                "x11",
-                "ICU"
+                "scancode:x11-xconsortium",
+                "X11-Style (X Consortium)"
             ]
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
-            "spdxFullName": "ICU License",
-            "spdxDetailsURL": "http://spdx.org/licenses/ICU.json",
-            "_sourceURL": "https://spdx.org/licenses/ICU.html",
+            "spdxFullName": "X11 License",
+            "spdxDetailsURL": "http://spdx.org/licenses/X11.json",
+            "_sourceURL": "https://spdx.org/licenses/X11.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
-                "http://source.icu-project.org/repos/icu/icu/trunk/license.html"
+                "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
             ],
             "_implications": {
                 "__impliedNames": [
-                    "ICU",
-                    "ICU License"
+                    "X11",
+                    "X11 License"
                 ],
-                "__impliedId": "ICU",
+                "__impliedId": "X11",
                 "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/ICU.json"
+                        "http://spdx.org/licenses/X11.json"
                     ],
                     [
                         null,
-                        "http://source.icu-project.org/repos/icu/icu/trunk/license.html"
+                        "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
                     ]
                 ]
             },
-            "spdxLicenseId": "ICU"
+            "spdxLicenseId": "X11"
         },
         "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt",
-            "spdxId": "ICU",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/X11.txt",
+            "spdxId": "X11",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST NOT Promote\n",
             "_implications": {
                 "__impliedNames": [
-                    "ICU"
+                    "X11"
                 ]
             }
         },
@@ -89,7 +84,7 @@
             "spdxId": "X11",
             "_implications": {
                 "__impliedNames": [
-                    "x11-xconsortium",
+                    "scancode:x11-xconsortium",
                     "X11-Style (X Consortium)",
                     "X11"
                 ],
@@ -116,14 +111,14 @@
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
-            "url": "https://spdx.org/licenses/ICU.html",
+            "url": "https://spdx.org/licenses/X11.html",
             "isPermissive": true,
             "_sourceURL": "https://blueoakcouncil.org/list",
-            "name": "ICU License",
-            "id": "ICU",
+            "name": "X11 License",
+            "id": "X11",
             "_implications": {
                 "__impliedNames": [
-                    "ICU"
+                    "X11"
                 ],
                 "__impliedJudgement": [
                     [
@@ -144,7 +139,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "https://spdx.org/licenses/ICU.html"
+                        "https://spdx.org/licenses/X11.html"
                     ]
                 ]
             }
@@ -220,23 +215,11 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/ICU.json"
-        ],
-        [
-            null,
-            "http://source.icu-project.org/repos/icu/icu/trunk/license.html"
-        ],
-        [
-            "SPDX",
             "http://spdx.org/licenses/X11.json"
         ],
         [
             null,
             "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/ICU.html"
         ],
         [
             "SPDX",
@@ -249,6 +232,10 @@
         [
             "Homepage",
             "http://www.xfree86.org/3.3.6/COPYRIGHT2.html"
+        ],
+        [
+            null,
+            "http://source.icu-project.org/repos/icu/icu/trunk/license.html"
         ],
         [
             null,

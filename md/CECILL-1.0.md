@@ -5,6 +5,8 @@ CeCILL Free Software License Agreement v1.0 (CECILL-1.0)
 
 **Other Names:**
 
+-   `scancode:cecill-1.0`
+
 -   `CeCILL 1.0`
 
 Comments on (easy) usability
@@ -273,7 +275,7 @@ Raw Data
         "__impliedNames": [
             "CECILL-1.0",
             "CeCILL Free Software License Agreement v1.0",
-            "cecill-1.0",
+            "scancode:cecill-1.0",
             "CeCILL 1.0"
         ],
         "__impliedId": "CECILL-1.0",
@@ -284,7 +286,7 @@ Raw Data
                         "CECILL-1.0",
                         "CECILL-1.0",
                         "CeCILL Free Software License Agreement v1.0",
-                        "cecill-1.0",
+                        "scancode:cecill-1.0",
                         "CeCILL 1.0"
                     ],
                     "__impliedId": "CECILL-1.0"
@@ -293,7 +295,7 @@ Raw Data
                 "otherNames": [
                     "CECILL-1.0",
                     "CeCILL Free Software License Agreement v1.0",
-                    "cecill-1.0",
+                    "scancode:cecill-1.0",
                     "CeCILL 1.0"
                 ]
             },
@@ -343,7 +345,7 @@ Raw Data
                 "spdxId": "CECILL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "cecill-1.0",
+                        "scancode:cecill-1.0",
                         "CeCILL 1.0",
                         "CECILL-1.0"
                     ],

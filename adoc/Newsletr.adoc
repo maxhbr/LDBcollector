@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:newsletr+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -42,7 +46,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
     "__impliedNames": [
         "Newsletr",
         "Newsletr License",
-        "newsletr"
+        "scancode:newsletr"
     ],
     "__impliedId": "Newsletr",
     "__isFsfFree": true,
@@ -53,7 +57,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
                     "Newsletr",
                     "Newsletr",
                     "Newsletr License",
-                    "newsletr"
+                    "scancode:newsletr"
                 ],
                 "__impliedId": "Newsletr"
             },
@@ -61,7 +65,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
             "otherNames": [
                 "Newsletr",
                 "Newsletr License",
-                "newsletr"
+                "scancode:newsletr"
             ]
         },
         "SPDX": {
@@ -134,7 +138,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
             "spdxId": "Newsletr",
             "_implications": {
                 "__impliedNames": [
-                    "newsletr",
+                    "scancode:newsletr",
                     "Newsletr License",
                     "Newsletr"
                 ],

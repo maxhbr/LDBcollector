@@ -9,6 +9,10 @@
 |Classification |Copyleft
 |===
 
+*Other Names:*
+
+* `+scancode:vim+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -143,7 +147,7 @@ Note:
     "__impliedNames": [
         "Vim",
         "Vim License",
-        "vim",
+        "scancode:vim",
         "VIM License"
     ],
     "__impliedId": "Vim",
@@ -155,7 +159,7 @@ Note:
                     "Vim",
                     "Vim",
                     "Vim License",
-                    "vim",
+                    "scancode:vim",
                     "VIM License"
                 ],
                 "__impliedId": "Vim"
@@ -164,7 +168,7 @@ Note:
             "otherNames": [
                 "Vim",
                 "Vim License",
-                "vim",
+                "scancode:vim",
                 "VIM License"
             ]
         },
@@ -240,7 +244,7 @@ Note:
             "spdxId": "Vim",
             "_implications": {
                 "__impliedNames": [
-                    "vim",
+                    "scancode:vim",
                     "VIM License",
                     "Vim"
                 ],

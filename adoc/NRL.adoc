@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:nrl+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -64,7 +68,7 @@ The views and conclusions contained in the software and documentation are those 
     "__impliedNames": [
         "NRL",
         "NRL License",
-        "nrl"
+        "scancode:nrl"
     ],
     "__impliedId": "NRL",
     "__isFsfFree": true,
@@ -75,7 +79,7 @@ The views and conclusions contained in the software and documentation are those 
                     "NRL",
                     "NRL",
                     "NRL License",
-                    "nrl"
+                    "scancode:nrl"
                 ],
                 "__impliedId": "NRL"
             },
@@ -83,7 +87,7 @@ The views and conclusions contained in the software and documentation are those 
             "otherNames": [
                 "NRL",
                 "NRL License",
-                "nrl"
+                "scancode:nrl"
             ]
         },
         "SPDX": {
@@ -156,7 +160,7 @@ The views and conclusions contained in the software and documentation are those 
             "spdxId": "NRL",
             "_implications": {
                 "__impliedNames": [
-                    "nrl",
+                    "scancode:nrl",
                     "NRL License",
                     "NRL"
                 ],

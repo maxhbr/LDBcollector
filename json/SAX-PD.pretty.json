@@ -2,7 +2,7 @@
     "__impliedNames": [
         "SAX-PD",
         "Sax Public Domain Notice",
-        "sax-pd"
+        "scancode:sax-pd"
     ],
     "__impliedId": "SAX-PD",
     "facts": {
@@ -12,7 +12,7 @@
                     "SAX-PD",
                     "SAX-PD",
                     "Sax Public Domain Notice",
-                    "sax-pd"
+                    "scancode:sax-pd"
                 ],
                 "__impliedId": "SAX-PD"
             },
@@ -20,7 +20,7 @@
             "otherNames": [
                 "SAX-PD",
                 "Sax Public Domain Notice",
-                "sax-pd"
+                "scancode:sax-pd"
             ]
         },
         "SPDX": {
@@ -67,7 +67,7 @@
             "spdxId": "SAX-PD",
             "_implications": {
                 "__impliedNames": [
-                    "sax-pd",
+                    "scancode:sax-pd",
                     "SAX-PD",
                     "SAX-PD"
                 ],

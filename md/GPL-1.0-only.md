@@ -5,7 +5,7 @@ GNU General Public License v1.0 only (GPL-1.0-only)
 
 **Other Names:**
 
--   `gpl-1.0`
+-   `scancode:gpl-1.0`
 
 -   `GPL 1.0`
 
@@ -307,7 +307,7 @@ Raw Data
         "__impliedNames": [
             "GPL-1.0-only",
             "GNU General Public License v1.0 only",
-            "gpl-1.0",
+            "scancode:gpl-1.0",
             "GPL 1.0",
             "GPL-1.0",
             "GPL1.0",
@@ -325,7 +325,7 @@ Raw Data
                         "GPL-1.0-only",
                         "GPL-1.0-only",
                         "GNU General Public License v1.0 only",
-                        "gpl-1.0",
+                        "scancode:gpl-1.0",
                         "GPL 1.0",
                         "GPL-1.0",
                         "GPL1.0",
@@ -337,7 +337,7 @@ Raw Data
                 "otherNames": [
                     "GPL-1.0-only",
                     "GNU General Public License v1.0 only",
-                    "gpl-1.0",
+                    "scancode:gpl-1.0",
                     "GPL 1.0",
                     "GPL-1.0",
                     "GPL1.0",
@@ -417,7 +417,7 @@ Raw Data
                 "spdxId": "GPL-1.0-only",
                 "_implications": {
                     "__impliedNames": [
-                        "gpl-1.0",
+                        "scancode:gpl-1.0",
                         "GPL 1.0",
                         "GPL-1.0-only"
                     ],

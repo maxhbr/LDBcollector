@@ -5,6 +5,8 @@ Academic Free License v1.2 (AFL-1.2)
 
 **Other Names:**
 
+-   `scancode:afl-1.2`
+
 -   `AFL 1.2`
 
 Comments on (easy) usability
@@ -128,7 +130,7 @@ Raw Data
         "__impliedNames": [
             "AFL-1.2",
             "Academic Free License v1.2",
-            "afl-1.2",
+            "scancode:afl-1.2",
             "AFL 1.2"
         ],
         "__impliedId": "AFL-1.2",
@@ -139,7 +141,7 @@ Raw Data
                         "AFL-1.2",
                         "AFL-1.2",
                         "Academic Free License v1.2",
-                        "afl-1.2",
+                        "scancode:afl-1.2",
                         "AFL 1.2"
                     ],
                     "__impliedId": "AFL-1.2"
@@ -148,7 +150,7 @@ Raw Data
                 "otherNames": [
                     "AFL-1.2",
                     "Academic Free License v1.2",
-                    "afl-1.2",
+                    "scancode:afl-1.2",
                     "AFL 1.2"
                 ]
             },
@@ -213,7 +215,7 @@ Raw Data
                 "spdxId": "AFL-1.2",
                 "_implications": {
                     "__impliedNames": [
-                        "afl-1.2",
+                        "scancode:afl-1.2",
                         "AFL 1.2",
                         "AFL-1.2"
                     ],

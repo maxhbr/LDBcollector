@@ -5,6 +5,8 @@ Apple Public Source License 1.0 (APSL-1.0)
 
 **Other Names:**
 
+-   `scancode:apsl-1.0`
+
 -   `APSL 1.0`
 
 Comments on (easy) usability
@@ -426,7 +428,7 @@ Raw Data
         "__impliedNames": [
             "APSL-1.0",
             "Apple Public Source License 1.0",
-            "apsl-1.0",
+            "scancode:apsl-1.0",
             "APSL 1.0"
         ],
         "__impliedId": "APSL-1.0",
@@ -440,7 +442,7 @@ Raw Data
                         "APSL-1.0",
                         "APSL-1.0",
                         "Apple Public Source License 1.0",
-                        "apsl-1.0",
+                        "scancode:apsl-1.0",
                         "APSL 1.0"
                     ],
                     "__impliedId": "APSL-1.0"
@@ -449,7 +451,7 @@ Raw Data
                 "otherNames": [
                     "APSL-1.0",
                     "Apple Public Source License 1.0",
-                    "apsl-1.0",
+                    "scancode:apsl-1.0",
                     "APSL 1.0"
                 ]
             },
@@ -531,7 +533,7 @@ Raw Data
                 "spdxId": "APSL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "apsl-1.0",
+                        "scancode:apsl-1.0",
                         "APSL 1.0",
                         "APSL-1.0"
                     ],

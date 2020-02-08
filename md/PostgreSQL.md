@@ -5,6 +5,8 @@ PostgreSQL License (PostgreSQL)
 
 **Other Names:**
 
+-   `scancode:postgresql`
+
 -   `The PostgreSQL Licence`
 
 Description
@@ -89,6 +91,7 @@ Raw Data
         "__impliedNames": [
             "PostgreSQL",
             "PostgreSQL License",
+            "scancode:postgresql",
             "postgresql",
             "The PostgreSQL Licence"
         ],
@@ -128,6 +131,7 @@ Raw Data
                         "PostgreSQL",
                         "PostgreSQL",
                         "PostgreSQL License",
+                        "scancode:postgresql",
                         "postgresql",
                         "The PostgreSQL Licence"
                     ],
@@ -137,6 +141,7 @@ Raw Data
                 "otherNames": [
                     "PostgreSQL",
                     "PostgreSQL License",
+                    "scancode:postgresql",
                     "postgresql",
                     "The PostgreSQL Licence"
                 ]
@@ -228,7 +233,7 @@ Raw Data
                 "spdxId": "PostgreSQL",
                 "_implications": {
                     "__impliedNames": [
-                        "postgresql",
+                        "scancode:postgresql",
                         "PostgreSQL License",
                         "PostgreSQL"
                     ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "MIT-advertising",
         "Enlightenment License (e16)",
-        "enlightenment",
+        "scancode:enlightenment",
         "EFL MIT-Style License"
     ],
     "__impliedId": "MIT-advertising",
@@ -14,7 +14,7 @@
                     "MIT-advertising",
                     "MIT-advertising",
                     "Enlightenment License (e16)",
-                    "enlightenment",
+                    "scancode:enlightenment",
                     "EFL MIT-Style License"
                 ],
                 "__impliedId": "MIT-advertising"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "MIT-advertising",
                 "Enlightenment License (e16)",
-                "enlightenment",
+                "scancode:enlightenment",
                 "EFL MIT-Style License"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "MIT-advertising",
             "_implications": {
                 "__impliedNames": [
-                    "enlightenment",
+                    "scancode:enlightenment",
                     "EFL MIT-Style License",
                     "MIT-advertising"
                 ],

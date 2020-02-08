@@ -5,7 +5,7 @@ Non-Profit Open Software License 3.0 (NPOSL-3.0)
 
 **Other Names:**
 
--   `nosl-3.0`
+-   `scancode:nosl-3.0`
 
 -   `Non-Profit OSL 3.0`
 
@@ -110,7 +110,7 @@ Raw Data
         "__impliedNames": [
             "NPOSL-3.0",
             "Non-Profit Open Software License 3.0",
-            "nosl-3.0",
+            "scancode:nosl-3.0",
             "Non-Profit OSL 3.0",
             "The Non-Profit Open Software License, Version 3.0"
         ],
@@ -149,7 +149,7 @@ Raw Data
                         "NPOSL-3.0",
                         "NPOSL-3.0",
                         "Non-Profit Open Software License 3.0",
-                        "nosl-3.0",
+                        "scancode:nosl-3.0",
                         "Non-Profit OSL 3.0",
                         "The Non-Profit Open Software License, Version 3.0"
                     ],
@@ -159,7 +159,7 @@ Raw Data
                 "otherNames": [
                     "NPOSL-3.0",
                     "Non-Profit Open Software License 3.0",
-                    "nosl-3.0",
+                    "scancode:nosl-3.0",
                     "Non-Profit OSL 3.0",
                     "The Non-Profit Open Software License, Version 3.0"
                 ]
@@ -220,7 +220,7 @@ Raw Data
                 "spdxId": "NPOSL-3.0",
                 "_implications": {
                     "__impliedNames": [
-                        "nosl-3.0",
+                        "scancode:nosl-3.0",
                         "Non-Profit OSL 3.0",
                         "NPOSL-3.0"
                     ],

@@ -7,6 +7,10 @@
 | Rating           | Go                                |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:mtll=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Bronze (source:
@@ -60,7 +64,7 @@
       "__impliedNames": [
           "MTLL",
           "Matrix Template Library License",
-          "mtll"
+          "scancode:mtll"
       ],
       "__impliedId": "MTLL",
       "__isFsfFree": true,
@@ -71,7 +75,7 @@
                       "MTLL",
                       "MTLL",
                       "Matrix Template Library License",
-                      "mtll"
+                      "scancode:mtll"
                   ],
                   "__impliedId": "MTLL"
               },
@@ -79,7 +83,7 @@
               "otherNames": [
                   "MTLL",
                   "Matrix Template Library License",
-                  "mtll"
+                  "scancode:mtll"
               ]
           },
           "SPDX": {
@@ -152,7 +156,7 @@
               "spdxId": "MTLL",
               "_implications": {
                   "__impliedNames": [
-                      "mtll",
+                      "scancode:mtll",
                       "Matrix Template Library License",
                       "MTLL"
                   ],

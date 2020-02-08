@@ -7,6 +7,10 @@
 | Rating           | Go                |
 | Classification   | NoCopyleft        |
 
+*Other Names:*
+
+- =scancode:saxpath=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Bronze (source:
@@ -75,7 +79,7 @@
       "__impliedNames": [
           "Saxpath",
           "Saxpath License",
-          "saxpath"
+          "scancode:saxpath"
       ],
       "__impliedId": "Saxpath",
       "__isFsfFree": true,
@@ -86,7 +90,7 @@
                       "Saxpath",
                       "Saxpath",
                       "Saxpath License",
-                      "saxpath"
+                      "scancode:saxpath"
                   ],
                   "__impliedId": "Saxpath"
               },
@@ -94,7 +98,7 @@
               "otherNames": [
                   "Saxpath",
                   "Saxpath License",
-                  "saxpath"
+                  "scancode:saxpath"
               ]
           },
           "SPDX": {
@@ -167,7 +171,7 @@
               "spdxId": "Saxpath",
               "_implications": {
                   "__impliedNames": [
-                      "saxpath",
+                      "scancode:saxpath",
                       "Saxpath License",
                       "Saxpath"
                   ],

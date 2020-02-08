@@ -5,6 +5,8 @@ Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)
 
 **Other Names:**
 
+-   `scancode:cc-by-sa-4.0`
+
 -   `CC-BY-SA 4.0`
 
 -   `Creative Commons Attribution Share-Alike 4.0`
@@ -491,6 +493,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-SA-4.0",
             "Creative Commons Attribution Share Alike 4.0 International",
+            "scancode:cc-by-sa-4.0",
             "cc-by-sa-4.0",
             "CC-BY-SA 4.0",
             "Creative Commons Attribution Share-Alike 4.0"
@@ -534,6 +537,7 @@ Raw Data
                         "CC-BY-SA-4.0",
                         "CC-BY-SA-4.0",
                         "Creative Commons Attribution Share Alike 4.0 International",
+                        "scancode:cc-by-sa-4.0",
                         "cc-by-sa-4.0",
                         "CC-BY-SA 4.0",
                         "Creative Commons Attribution Share-Alike 4.0"
@@ -544,6 +548,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-SA-4.0",
                     "Creative Commons Attribution Share Alike 4.0 International",
+                    "scancode:cc-by-sa-4.0",
                     "cc-by-sa-4.0",
                     "CC-BY-SA 4.0",
                     "Creative Commons Attribution Share-Alike 4.0"
@@ -595,7 +600,7 @@ Raw Data
                 "spdxId": "CC-BY-SA-4.0",
                 "_implications": {
                     "__impliedNames": [
-                        "cc-by-sa-4.0",
+                        "scancode:cc-by-sa-4.0",
                         "CC-BY-SA-4.0",
                         "CC-BY-SA-4.0"
                     ],

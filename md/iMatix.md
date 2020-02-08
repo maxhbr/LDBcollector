@@ -5,7 +5,7 @@ iMatix Standard Function Library Agreement (iMatix)
 
 **Other Names:**
 
--   `sfl-license`
+-   `scancode:sfl-license`
 
 -   `SFL License Agreement`
 
@@ -88,7 +88,7 @@ Raw Data
         "__impliedNames": [
             "iMatix",
             "iMatix Standard Function Library Agreement",
-            "sfl-license",
+            "scancode:sfl-license",
             "SFL License Agreement"
         ],
         "__impliedId": "iMatix",
@@ -100,7 +100,7 @@ Raw Data
                         "iMatix",
                         "iMatix",
                         "iMatix Standard Function Library Agreement",
-                        "sfl-license",
+                        "scancode:sfl-license",
                         "SFL License Agreement"
                     ],
                     "__impliedId": "iMatix"
@@ -109,7 +109,7 @@ Raw Data
                 "otherNames": [
                     "iMatix",
                     "iMatix Standard Function Library Agreement",
-                    "sfl-license",
+                    "scancode:sfl-license",
                     "SFL License Agreement"
                 ]
             },
@@ -186,7 +186,7 @@ Raw Data
                 "spdxId": "iMatix",
                 "_implications": {
                     "__impliedNames": [
-                        "sfl-license",
+                        "scancode:sfl-license",
                         "SFL License Agreement",
                         "iMatix"
                     ],

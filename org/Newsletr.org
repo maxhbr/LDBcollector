@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:newsletr=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -43,7 +47,7 @@
       "__impliedNames": [
           "Newsletr",
           "Newsletr License",
-          "newsletr"
+          "scancode:newsletr"
       ],
       "__impliedId": "Newsletr",
       "__isFsfFree": true,
@@ -54,7 +58,7 @@
                       "Newsletr",
                       "Newsletr",
                       "Newsletr License",
-                      "newsletr"
+                      "scancode:newsletr"
                   ],
                   "__impliedId": "Newsletr"
               },
@@ -62,7 +66,7 @@
               "otherNames": [
                   "Newsletr",
                   "Newsletr License",
-                  "newsletr"
+                  "scancode:newsletr"
               ]
           },
           "SPDX": {
@@ -135,7 +139,7 @@
               "spdxId": "Newsletr",
               "_implications": {
                   "__impliedNames": [
-                      "newsletr",
+                      "scancode:newsletr",
                       "Newsletr License",
                       "Newsletr"
                   ],

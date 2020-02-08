@@ -7,6 +7,10 @@
 | Rating           | Go                                |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:adsl=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Silver (source:
@@ -48,7 +52,7 @@
       "__impliedNames": [
           "ADSL",
           "Amazon Digital Services License",
-          "adsl"
+          "scancode:adsl"
       ],
       "__impliedId": "ADSL",
       "__isFsfFree": true,
@@ -59,7 +63,7 @@
                       "ADSL",
                       "ADSL",
                       "Amazon Digital Services License",
-                      "adsl"
+                      "scancode:adsl"
                   ],
                   "__impliedId": "ADSL"
               },
@@ -67,7 +71,7 @@
               "otherNames": [
                   "ADSL",
                   "Amazon Digital Services License",
-                  "adsl"
+                  "scancode:adsl"
               ]
           },
           "SPDX": {
@@ -140,7 +144,7 @@
               "spdxId": "ADSL",
               "_implications": {
                   "__impliedNames": [
-                      "adsl",
+                      "scancode:adsl",
                       "Amazon Digital Services License",
                       "ADSL"
                   ],

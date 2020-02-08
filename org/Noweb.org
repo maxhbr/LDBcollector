@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | WeakCopyleft                                   |
 
+*Other Names:*
+
+- =scancode:noweb=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -56,7 +60,7 @@
       "__impliedNames": [
           "Noweb",
           "Noweb License",
-          "noweb"
+          "scancode:noweb"
       ],
       "__impliedId": "Noweb",
       "__isFsfFree": true,
@@ -67,7 +71,7 @@
                       "Noweb",
                       "Noweb",
                       "Noweb License",
-                      "noweb"
+                      "scancode:noweb"
                   ],
                   "__impliedId": "Noweb"
               },
@@ -75,7 +79,7 @@
               "otherNames": [
                   "Noweb",
                   "Noweb License",
-                  "noweb"
+                  "scancode:noweb"
               ]
           },
           "SPDX": {
@@ -150,7 +154,7 @@
               "spdxId": "Noweb",
               "_implications": {
                   "__impliedNames": [
-                      "noweb",
+                      "scancode:noweb",
                       "Noweb License",
                       "Noweb"
                   ],

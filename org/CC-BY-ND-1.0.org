@@ -6,6 +6,10 @@
 | Shortname   | CC-BY-ND-1.0                                              |
 | Rating      | Unknown, probably Attention or Stop or No-Go              |
 
+*Other Names:*
+
+- =scancode:cc-by-nd-1.0=
+
 ** Comments on (easy) usability
 
 - *↓*Google Classification is RESTRICTED (source:
@@ -84,7 +88,7 @@
       "__impliedNames": [
           "CC-BY-ND-1.0",
           "Creative Commons Attribution No Derivatives 1.0 Generic",
-          "cc-by-nd-1.0"
+          "scancode:cc-by-nd-1.0"
       ],
       "__impliedId": "CC-BY-ND-1.0",
       "facts": {
@@ -94,7 +98,7 @@
                       "CC-BY-ND-1.0",
                       "CC-BY-ND-1.0",
                       "Creative Commons Attribution No Derivatives 1.0 Generic",
-                      "cc-by-nd-1.0"
+                      "scancode:cc-by-nd-1.0"
                   ],
                   "__impliedId": "CC-BY-ND-1.0"
               },
@@ -102,7 +106,7 @@
               "otherNames": [
                   "CC-BY-ND-1.0",
                   "Creative Commons Attribution No Derivatives 1.0 Generic",
-                  "cc-by-nd-1.0"
+                  "scancode:cc-by-nd-1.0"
               ]
           },
           "SPDX": {
@@ -151,7 +155,7 @@
               "spdxId": "CC-BY-ND-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "cc-by-nd-1.0",
+                      "scancode:cc-by-nd-1.0",
                       "CC-BY-ND-1.0",
                       "CC-BY-ND-1.0"
                   ],

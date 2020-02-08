@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:xinetd+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -91,7 +95,8 @@ confusion about 2.2.1 and 2.1.8.*.
 {
     "__impliedNames": [
         "xinetd",
-        "xinetd License"
+        "xinetd License",
+        "scancode:xinetd"
     ],
     "__impliedId": "xinetd",
     "__isFsfFree": true,
@@ -101,14 +106,16 @@ confusion about 2.2.1 and 2.1.8.*.
                 "__impliedNames": [
                     "xinetd",
                     "xinetd",
-                    "xinetd License"
+                    "xinetd License",
+                    "scancode:xinetd"
                 ],
                 "__impliedId": "xinetd"
             },
             "shortname": "xinetd",
             "otherNames": [
                 "xinetd",
-                "xinetd License"
+                "xinetd License",
+                "scancode:xinetd"
             ]
         },
         "SPDX": {
@@ -181,7 +188,7 @@ confusion about 2.2.1 and 2.1.8.*.
             "spdxId": "xinetd",
             "_implications": {
                 "__impliedNames": [
-                    "xinetd",
+                    "scancode:xinetd",
                     "xinetd License",
                     "xinetd"
                 ],

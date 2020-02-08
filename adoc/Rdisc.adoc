@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:rdisc+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -46,7 +50,7 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
     "__impliedNames": [
         "Rdisc",
         "Rdisc License",
-        "rdisc"
+        "scancode:rdisc"
     ],
     "__impliedId": "Rdisc",
     "__isFsfFree": true,
@@ -57,7 +61,7 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
                     "Rdisc",
                     "Rdisc",
                     "Rdisc License",
-                    "rdisc"
+                    "scancode:rdisc"
                 ],
                 "__impliedId": "Rdisc"
             },
@@ -65,7 +69,7 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
             "otherNames": [
                 "Rdisc",
                 "Rdisc License",
-                "rdisc"
+                "scancode:rdisc"
             ]
         },
         "SPDX": {
@@ -138,7 +142,7 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
             "spdxId": "Rdisc",
             "_implications": {
                 "__impliedNames": [
-                    "rdisc",
+                    "scancode:rdisc",
                     "Rdisc License",
                     "Rdisc"
                 ],

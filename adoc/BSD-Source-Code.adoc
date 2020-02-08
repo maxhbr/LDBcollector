@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:bsd-source-code+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -58,7 +62,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "BSD-Source-Code",
         "BSD Source Code Attribution",
-        "bsd-source-code"
+        "scancode:bsd-source-code"
     ],
     "__impliedId": "BSD-Source-Code",
     "facts": {
@@ -68,7 +72,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "BSD-Source-Code",
                     "BSD-Source-Code",
                     "BSD Source Code Attribution",
-                    "bsd-source-code"
+                    "scancode:bsd-source-code"
                 ],
                 "__impliedId": "BSD-Source-Code"
             },
@@ -76,7 +80,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "BSD-Source-Code",
                 "BSD Source Code Attribution",
-                "bsd-source-code"
+                "scancode:bsd-source-code"
             ]
         },
         "SPDX": {
@@ -123,7 +127,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "BSD-Source-Code",
             "_implications": {
                 "__impliedNames": [
-                    "bsd-source-code",
+                    "scancode:bsd-source-code",
                     "BSD Source Code Attribution",
                     "BSD-Source-Code"
                 ],

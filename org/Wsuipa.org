@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:wsuipa=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -47,7 +51,7 @@
       "__impliedNames": [
           "Wsuipa",
           "Wsuipa License",
-          "wsuipa"
+          "scancode:wsuipa"
       ],
       "__impliedId": "Wsuipa",
       "__isFsfFree": true,
@@ -58,7 +62,7 @@
                       "Wsuipa",
                       "Wsuipa",
                       "Wsuipa License",
-                      "wsuipa"
+                      "scancode:wsuipa"
                   ],
                   "__impliedId": "Wsuipa"
               },
@@ -66,7 +70,7 @@
               "otherNames": [
                   "Wsuipa",
                   "Wsuipa License",
-                  "wsuipa"
+                  "scancode:wsuipa"
               ]
           },
           "SPDX": {
@@ -139,7 +143,7 @@
               "spdxId": "Wsuipa",
               "_implications": {
                   "__impliedNames": [
-                      "wsuipa",
+                      "scancode:wsuipa",
                       "Wsuipa License",
                       "Wsuipa"
                   ],

@@ -5,6 +5,8 @@ Community Data License Agreement Sharing 1.0 (CDLA-Sharing-1.0)
 
 **Other Names:**
 
+-   `scancode:cdla-sharing-1.0`
+
 -   `CDLA Sharing 1.0`
 
 Comments on (easy) usability
@@ -121,7 +123,7 @@ Raw Data
         "__impliedNames": [
             "CDLA-Sharing-1.0",
             "Community Data License Agreement Sharing 1.0",
-            "cdla-sharing-1.0",
+            "scancode:cdla-sharing-1.0",
             "CDLA Sharing 1.0"
         ],
         "__impliedId": "CDLA-Sharing-1.0",
@@ -132,7 +134,7 @@ Raw Data
                         "CDLA-Sharing-1.0",
                         "CDLA-Sharing-1.0",
                         "Community Data License Agreement Sharing 1.0",
-                        "cdla-sharing-1.0",
+                        "scancode:cdla-sharing-1.0",
                         "CDLA Sharing 1.0"
                     ],
                     "__impliedId": "CDLA-Sharing-1.0"
@@ -141,7 +143,7 @@ Raw Data
                 "otherNames": [
                     "CDLA-Sharing-1.0",
                     "Community Data License Agreement Sharing 1.0",
-                    "cdla-sharing-1.0",
+                    "scancode:cdla-sharing-1.0",
                     "CDLA Sharing 1.0"
                 ]
             },
@@ -191,7 +193,7 @@ Raw Data
                 "spdxId": "CDLA-Sharing-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "cdla-sharing-1.0",
+                        "scancode:cdla-sharing-1.0",
                         "CDLA Sharing 1.0",
                         "CDLA-Sharing-1.0"
                     ],

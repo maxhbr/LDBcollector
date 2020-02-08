@@ -8,6 +8,10 @@
 | Rating              | No-Go                                                                    |
 | Is Non-Commercial   | True                                                                     |
 
+*Other Names:*
+
+- =scancode:cc-by-nc-nd-2.5=
+
 ** Comments on (easy) usability
 
 - *↓*Google Classification is CANNOT_BE_USED "Everything that Google
@@ -102,7 +106,7 @@
       "__impliedNames": [
           "CC-BY-NC-ND-2.5",
           "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
-          "cc-by-nc-nd-2.5"
+          "scancode:cc-by-nc-nd-2.5"
       ],
       "__impliedId": "CC-BY-NC-ND-2.5",
       "__impliedAmbiguousNames": [
@@ -127,7 +131,7 @@
                       "CC-BY-NC-ND-2.5",
                       "CC-BY-NC-ND-2.5",
                       "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
-                      "cc-by-nc-nd-2.5"
+                      "scancode:cc-by-nc-nd-2.5"
                   ],
                   "__impliedId": "CC-BY-NC-ND-2.5"
               },
@@ -135,7 +139,7 @@
               "otherNames": [
                   "CC-BY-NC-ND-2.5",
                   "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
-                  "cc-by-nc-nd-2.5"
+                  "scancode:cc-by-nc-nd-2.5"
               ]
           },
           "SPDX": {
@@ -184,7 +188,7 @@
               "spdxId": "CC-BY-NC-ND-2.5",
               "_implications": {
                   "__impliedNames": [
-                      "cc-by-nc-nd-2.5",
+                      "scancode:cc-by-nc-nd-2.5",
                       "CC-BY-NC-ND-2.5",
                       "CC-BY-NC-ND-2.5"
                   ],

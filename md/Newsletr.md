@@ -3,6 +3,10 @@ Newsletr License (Newsletr)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:newsletr`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -40,7 +44,7 @@ Raw Data
         "__impliedNames": [
             "Newsletr",
             "Newsletr License",
-            "newsletr"
+            "scancode:newsletr"
         ],
         "__impliedId": "Newsletr",
         "__isFsfFree": true,
@@ -51,7 +55,7 @@ Raw Data
                         "Newsletr",
                         "Newsletr",
                         "Newsletr License",
-                        "newsletr"
+                        "scancode:newsletr"
                     ],
                     "__impliedId": "Newsletr"
                 },
@@ -59,7 +63,7 @@ Raw Data
                 "otherNames": [
                     "Newsletr",
                     "Newsletr License",
-                    "newsletr"
+                    "scancode:newsletr"
                 ]
             },
             "SPDX": {
@@ -132,7 +136,7 @@ Raw Data
                 "spdxId": "Newsletr",
                 "_implications": {
                     "__impliedNames": [
-                        "newsletr",
+                        "scancode:newsletr",
                         "Newsletr License",
                         "Newsletr"
                     ],

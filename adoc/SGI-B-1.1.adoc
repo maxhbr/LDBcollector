@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+sgi-freeb-1.1+`
+* `+scancode:sgi-freeb-1.1+`
 * `+SGI Free Software License B 1.1+`
 
 === Comments on (easy) usability
@@ -61,7 +61,7 @@ Additional Notice Provisions: [such additional provisions, if any, as appear in 
     "__impliedNames": [
         "SGI-B-1.1",
         "SGI Free Software License B v1.1",
-        "sgi-freeb-1.1",
+        "scancode:sgi-freeb-1.1",
         "SGI Free Software License B 1.1"
     ],
     "__impliedId": "SGI-B-1.1",
@@ -72,7 +72,7 @@ Additional Notice Provisions: [such additional provisions, if any, as appear in 
                     "SGI-B-1.1",
                     "SGI-B-1.1",
                     "SGI Free Software License B v1.1",
-                    "sgi-freeb-1.1",
+                    "scancode:sgi-freeb-1.1",
                     "SGI Free Software License B 1.1"
                 ],
                 "__impliedId": "SGI-B-1.1"
@@ -81,7 +81,7 @@ Additional Notice Provisions: [such additional provisions, if any, as appear in 
             "otherNames": [
                 "SGI-B-1.1",
                 "SGI Free Software License B v1.1",
-                "sgi-freeb-1.1",
+                "scancode:sgi-freeb-1.1",
                 "SGI Free Software License B 1.1"
             ]
         },
@@ -131,7 +131,7 @@ Additional Notice Provisions: [such additional provisions, if any, as appear in 
             "spdxId": "SGI-B-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "sgi-freeb-1.1",
+                    "scancode:sgi-freeb-1.1",
                     "SGI Free Software License B 1.1",
                     "SGI-B-1.1"
                 ],

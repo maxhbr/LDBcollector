@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+gpl-3.0-plus+`
+* `+scancode:gpl-3.0-plus+`
 * `+GPL 3.0 or later+`
 * `+GNU General Public License 3.0+`
 * `+GPL-3.0++`
@@ -220,7 +220,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     "__impliedNames": [
         "GPL-3.0-or-later",
         "GNU General Public License v3.0 or later",
-        "gpl-3.0-plus",
+        "scancode:gpl-3.0-plus",
         "GPL 3.0 or later",
         "GNU General Public License 3.0",
         "GPL-3.0+",
@@ -271,7 +271,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     "GPL-3.0-or-later",
                     "GPL-3.0-or-later",
                     "GNU General Public License v3.0 or later",
-                    "gpl-3.0-plus",
+                    "scancode:gpl-3.0-plus",
                     "GPL 3.0 or later",
                     "GNU General Public License 3.0",
                     "GPL-3.0+",
@@ -285,7 +285,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             "otherNames": [
                 "GPL-3.0-or-later",
                 "GNU General Public License v3.0 or later",
-                "gpl-3.0-plus",
+                "scancode:gpl-3.0-plus",
                 "GPL 3.0 or later",
                 "GNU General Public License 3.0",
                 "GPL-3.0+",
@@ -400,7 +400,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             "spdxId": "GPL-3.0-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "gpl-3.0-plus",
+                    "scancode:gpl-3.0-plus",
                     "GPL 3.0 or later",
                     "GPL-3.0-or-later"
                 ],

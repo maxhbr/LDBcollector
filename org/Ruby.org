@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | WeakCopyleft                                   |
 
+*Other Names:*
+
+- =scancode:ruby=
+
 ** Comments on (easy) usability
 
 - *↑*Rating is: Bronze (source:
@@ -107,7 +111,7 @@
       "__impliedNames": [
           "Ruby",
           "Ruby License",
-          "ruby"
+          "scancode:ruby"
       ],
       "__impliedId": "Ruby",
       "__isFsfFree": true,
@@ -118,7 +122,7 @@
                       "Ruby",
                       "Ruby",
                       "Ruby License",
-                      "ruby"
+                      "scancode:ruby"
                   ],
                   "__impliedId": "Ruby"
               },
@@ -126,7 +130,7 @@
               "otherNames": [
                   "Ruby",
                   "Ruby License",
-                  "ruby"
+                  "scancode:ruby"
               ]
           },
           "SPDX": {
@@ -201,7 +205,7 @@
               "spdxId": "Ruby",
               "_implications": {
                   "__impliedNames": [
-                      "ruby",
+                      "scancode:ruby",
                       "Ruby License",
                       "Ruby"
                   ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "OLDAP-2.5",
         "Open LDAP Public License v2.5",
-        "openldap-2.5",
+        "scancode:openldap-2.5",
         "OpenLDAP Public License 2.5"
     ],
     "__impliedId": "OLDAP-2.5",
@@ -13,7 +13,7 @@
                     "OLDAP-2.5",
                     "OLDAP-2.5",
                     "Open LDAP Public License v2.5",
-                    "openldap-2.5",
+                    "scancode:openldap-2.5",
                     "OpenLDAP Public License 2.5"
                 ],
                 "__impliedId": "OLDAP-2.5"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "OLDAP-2.5",
                 "Open LDAP Public License v2.5",
-                "openldap-2.5",
+                "scancode:openldap-2.5",
                 "OpenLDAP Public License 2.5"
             ]
         },
@@ -70,7 +70,7 @@
             "spdxId": "OLDAP-2.5",
             "_implications": {
                 "__impliedNames": [
-                    "openldap-2.5",
+                    "scancode:openldap-2.5",
                     "OpenLDAP Public License 2.5",
                     "OLDAP-2.5"
                 ],

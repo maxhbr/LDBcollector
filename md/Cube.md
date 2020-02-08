@@ -3,6 +3,10 @@ Cube License (Cube)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:cube`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -61,7 +65,7 @@ Raw Data
         "__impliedNames": [
             "Cube",
             "Cube License",
-            "cube"
+            "scancode:cube"
         ],
         "__impliedId": "Cube",
         "__isFsfFree": true,
@@ -72,7 +76,7 @@ Raw Data
                         "Cube",
                         "Cube",
                         "Cube License",
-                        "cube"
+                        "scancode:cube"
                     ],
                     "__impliedId": "Cube"
                 },
@@ -80,7 +84,7 @@ Raw Data
                 "otherNames": [
                     "Cube",
                     "Cube License",
-                    "cube"
+                    "scancode:cube"
                 ]
             },
             "SPDX": {
@@ -153,7 +157,7 @@ Raw Data
                 "spdxId": "Cube",
                 "_implications": {
                     "__impliedNames": [
-                        "cube",
+                        "scancode:cube",
                         "Cube License",
                         "Cube"
                     ],

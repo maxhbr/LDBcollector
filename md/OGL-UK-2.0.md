@@ -5,6 +5,8 @@ Open Government Licence v2.0 (OGL-UK-2.0)
 
 **Other Names:**
 
+-   `scancode:ogl-uk-2.0`
+
 -   `Open Government Licence 2.0 (United Kingdom)`
 
 Comments on (easy) usability
@@ -108,7 +110,7 @@ Raw Data
         "__impliedNames": [
             "OGL-UK-2.0",
             "Open Government Licence v2.0",
-            "ogl-uk-2.0",
+            "scancode:ogl-uk-2.0",
             "Open Government Licence 2.0 (United Kingdom)"
         ],
         "__impliedId": "OGL-UK-2.0",
@@ -146,7 +148,7 @@ Raw Data
                         "OGL-UK-2.0",
                         "OGL-UK-2.0",
                         "Open Government Licence v2.0",
-                        "ogl-uk-2.0",
+                        "scancode:ogl-uk-2.0",
                         "Open Government Licence 2.0 (United Kingdom)"
                     ],
                     "__impliedId": "OGL-UK-2.0"
@@ -155,7 +157,7 @@ Raw Data
                 "otherNames": [
                     "OGL-UK-2.0",
                     "Open Government Licence v2.0",
-                    "ogl-uk-2.0",
+                    "scancode:ogl-uk-2.0",
                     "Open Government Licence 2.0 (United Kingdom)"
                 ]
             },
@@ -206,7 +208,7 @@ Raw Data
                 "spdxId": "OGL-UK-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "ogl-uk-2.0",
+                        "scancode:ogl-uk-2.0",
                         "OGL-UK-2.0",
                         "OGL-UK-2.0"
                     ],

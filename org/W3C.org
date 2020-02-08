@@ -10,6 +10,8 @@
 
 *Other Names:*
 
+- =scancode:w3c=
+
 - =W3C Software Notice and License=
 
 - =The W3C Software Notice and License=
@@ -102,7 +104,7 @@
       "__impliedNames": [
           "W3C",
           "W3C Software Notice and License (2002-12-31)",
-          "w3c",
+          "scancode:w3c",
           "W3C Software Notice and License",
           "The W3C Software Notice and License",
           "License :: OSI Approved :: W3C License",
@@ -146,7 +148,7 @@
                       "W3C",
                       "W3C",
                       "W3C Software Notice and License (2002-12-31)",
-                      "w3c",
+                      "scancode:w3c",
                       "W3C Software Notice and License",
                       "The W3C Software Notice and License",
                       "License :: OSI Approved :: W3C License",
@@ -159,7 +161,7 @@
               "otherNames": [
                   "W3C",
                   "W3C Software Notice and License (2002-12-31)",
-                  "w3c",
+                  "scancode:w3c",
                   "W3C Software Notice and License",
                   "The W3C Software Notice and License",
                   "License :: OSI Approved :: W3C License",
@@ -256,7 +258,7 @@
               "spdxId": "W3C",
               "_implications": {
                   "__impliedNames": [
-                      "w3c",
+                      "scancode:w3c",
                       "W3C Software Notice and License",
                       "W3C"
                   ],

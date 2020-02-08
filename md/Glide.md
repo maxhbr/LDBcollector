@@ -5,6 +5,8 @@
 
 **Other Names:**
 
+-   `scancode:glide`
+
 -   `3DFX GLIDE`
 
 Comments on (easy) usability
@@ -286,7 +288,7 @@ Raw Data
         "__impliedNames": [
             "Glide",
             "3dfx Glide License",
-            "glide",
+            "scancode:glide",
             "3DFX GLIDE"
         ],
         "__impliedId": "Glide",
@@ -298,7 +300,7 @@ Raw Data
                         "Glide",
                         "Glide",
                         "3dfx Glide License",
-                        "glide",
+                        "scancode:glide",
                         "3DFX GLIDE"
                     ],
                     "__impliedId": "Glide"
@@ -307,7 +309,7 @@ Raw Data
                 "otherNames": [
                     "Glide",
                     "3dfx Glide License",
-                    "glide",
+                    "scancode:glide",
                     "3DFX GLIDE"
                 ]
             },
@@ -381,7 +383,7 @@ Raw Data
                 "spdxId": "Glide",
                 "_implications": {
                     "__impliedNames": [
-                        "glide",
+                        "scancode:glide",
                         "3DFX GLIDE",
                         "Glide"
                     ],

@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:interbase-1.0=
+
 - =Interbase Public License 1.0=
 
 ** Comments on (easy) usability
@@ -231,7 +233,7 @@
       "__impliedNames": [
           "Interbase-1.0",
           "Interbase Public License v1.0",
-          "interbase-1.0",
+          "scancode:interbase-1.0",
           "Interbase Public License 1.0"
       ],
       "__impliedId": "Interbase-1.0",
@@ -242,7 +244,7 @@
                       "Interbase-1.0",
                       "Interbase-1.0",
                       "Interbase Public License v1.0",
-                      "interbase-1.0",
+                      "scancode:interbase-1.0",
                       "Interbase Public License 1.0"
                   ],
                   "__impliedId": "Interbase-1.0"
@@ -251,7 +253,7 @@
               "otherNames": [
                   "Interbase-1.0",
                   "Interbase Public License v1.0",
-                  "interbase-1.0",
+                  "scancode:interbase-1.0",
                   "Interbase Public License 1.0"
               ]
           },
@@ -301,7 +303,7 @@
               "spdxId": "Interbase-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "interbase-1.0",
+                      "scancode:interbase-1.0",
                       "Interbase Public License 1.0",
                       "Interbase-1.0"
                   ],

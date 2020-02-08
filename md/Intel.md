@@ -5,11 +5,9 @@ Intel Open Source License (Intel)
 
 **Other Names:**
 
--   `intel-bsd-export-control`
+-   `scancode:intel-bsd-export-control`
 
 -   `Intel BSD - Export Control`
-
--   `Intel Limited Patent License`
 
 -   `The Intel Open Source License`
 
@@ -51,8 +49,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/Intel.html
 
 -   https://opensource.org/licenses/intel-open-source-license.php
-
--   http://web.archive.org/web/20060924155349/http://www.mepis.org/node/10358
 
 Text
 ----
@@ -100,10 +96,8 @@ Raw Data
         "__impliedNames": [
             "Intel",
             "Intel Open Source License",
-            "intel-bsd-export-control",
+            "scancode:intel-bsd-export-control",
             "Intel BSD - Export Control",
-            "intel",
-            "Intel Limited Patent License",
             "The Intel Open Source License",
             "License :: OSI Approved :: Intel Open Source License"
         ],
@@ -143,10 +137,8 @@ Raw Data
                         "Intel",
                         "Intel",
                         "Intel Open Source License",
-                        "intel-bsd-export-control",
+                        "scancode:intel-bsd-export-control",
                         "Intel BSD - Export Control",
-                        "intel",
-                        "Intel Limited Patent License",
                         "The Intel Open Source License",
                         "License :: OSI Approved :: Intel Open Source License"
                     ],
@@ -156,10 +148,8 @@ Raw Data
                 "otherNames": [
                     "Intel",
                     "Intel Open Source License",
-                    "intel-bsd-export-control",
+                    "scancode:intel-bsd-export-control",
                     "Intel BSD - Export Control",
-                    "intel",
-                    "Intel Limited Patent License",
                     "The Intel Open Source License",
                     "License :: OSI Approved :: Intel Open Source License"
                 ]
@@ -245,7 +235,7 @@ Raw Data
                 "spdxId": "Intel",
                 "_implications": {
                     "__impliedNames": [
-                        "intel-bsd-export-control",
+                        "scancode:intel-bsd-export-control",
                         "Intel BSD - Export Control",
                         "Intel"
                     ],
@@ -476,10 +466,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/intel-open-source-license.php"
-            ],
-            [
-                null,
-                "http://web.archive.org/web/20060924155349/http://www.mepis.org/node/10358"
             ],
             [
                 "OSI Page",

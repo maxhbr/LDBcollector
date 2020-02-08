@@ -5,6 +5,8 @@ OCLC Research Public License 2.0 (OCLC-2.0)
 
 **Other Names:**
 
+-   `scancode:oclc-2.0`
+
 -   `The OCLC Research Public License, Version 2.0`
 
 Comments on (easy) usability
@@ -224,7 +226,7 @@ Raw Data
         "__impliedNames": [
             "OCLC-2.0",
             "OCLC Research Public License 2.0",
-            "oclc-2.0",
+            "scancode:oclc-2.0",
             "The OCLC Research Public License, Version 2.0"
         ],
         "__impliedId": "OCLC-2.0",
@@ -262,7 +264,7 @@ Raw Data
                         "OCLC-2.0",
                         "OCLC-2.0",
                         "OCLC Research Public License 2.0",
-                        "oclc-2.0",
+                        "scancode:oclc-2.0",
                         "The OCLC Research Public License, Version 2.0"
                     ],
                     "__impliedId": "OCLC-2.0"
@@ -271,7 +273,7 @@ Raw Data
                 "otherNames": [
                     "OCLC-2.0",
                     "OCLC Research Public License 2.0",
-                    "oclc-2.0",
+                    "scancode:oclc-2.0",
                     "The OCLC Research Public License, Version 2.0"
                 ]
             },
@@ -337,7 +339,7 @@ Raw Data
                 "spdxId": "OCLC-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "oclc-2.0",
+                        "scancode:oclc-2.0",
                         "OCLC Research Public License 2.0",
                         "OCLC-2.0"
                     ],

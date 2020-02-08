@@ -5,7 +5,7 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 **Other Names:**
 
--   `agpl-3.0`
+-   `scancode:agpl-3.0`
 
 -   `AGPL 3.0`
 
@@ -20,6 +20,8 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 -   `AGPL (v3)`
 
 -   `Affero General Public License 3.0`
+
+-   `agpl-3.0`
 
 -   `GNU AGPLv3`
 
@@ -440,7 +442,7 @@ Raw Data
         "__impliedNames": [
             "AGPL-3.0-only",
             "GNU Affero General Public License v3.0 only",
-            "agpl-3.0",
+            "scancode:agpl-3.0",
             "AGPL 3.0",
             "GNU Affero General Public License 3.0",
             "AGPL-3.0",
@@ -448,6 +450,7 @@ Raw Data
             "AGPL3",
             "AGPL (v3)",
             "Affero General Public License 3.0",
+            "agpl-3.0",
             "GNU AGPLv3",
             "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
             "License :: OSI Approved :: GNU Affero General Public License v3",
@@ -494,7 +497,7 @@ Raw Data
                         "AGPL-3.0-only",
                         "AGPL-3.0-only",
                         "GNU Affero General Public License v3.0 only",
-                        "agpl-3.0",
+                        "scancode:agpl-3.0",
                         "AGPL 3.0",
                         "GNU Affero General Public License 3.0",
                         "AGPL-3.0",
@@ -509,7 +512,7 @@ Raw Data
                 "otherNames": [
                     "AGPL-3.0-only",
                     "GNU Affero General Public License v3.0 only",
-                    "agpl-3.0",
+                    "scancode:agpl-3.0",
                     "AGPL 3.0",
                     "GNU Affero General Public License 3.0",
                     "AGPL-3.0",
@@ -627,7 +630,7 @@ Raw Data
                 "spdxId": "AGPL-3.0-only",
                 "_implications": {
                     "__impliedNames": [
-                        "agpl-3.0",
+                        "scancode:agpl-3.0",
                         "AGPL 3.0",
                         "AGPL-3.0-only"
                     ],

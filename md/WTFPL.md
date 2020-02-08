@@ -5,7 +5,7 @@ Do What The F\*ck You Want To Public License (WTFPL)
 
 **Other Names:**
 
--   `wtfpl-2.0`
+-   `scancode:wtfpl-2.0`
 
 -   `WTFPL 2.0`
 
@@ -96,7 +96,7 @@ Raw Data
         "__impliedNames": [
             "WTFPL",
             "Do What The F*ck You Want To Public License",
-            "wtfpl-2.0",
+            "scancode:wtfpl-2.0",
             "WTFPL 2.0",
             "wtfpl",
             "Do What The Fuck You Want To Public License (WTFPL) 2"
@@ -114,7 +114,7 @@ Raw Data
                         "WTFPL",
                         "WTFPL",
                         "Do What The F*ck You Want To Public License",
-                        "wtfpl-2.0",
+                        "scancode:wtfpl-2.0",
                         "WTFPL 2.0",
                         "wtfpl",
                         "Do What The Fuck You Want To Public License (WTFPL) 2"
@@ -125,7 +125,7 @@ Raw Data
                 "otherNames": [
                     "WTFPL",
                     "Do What The F*ck You Want To Public License",
-                    "wtfpl-2.0",
+                    "scancode:wtfpl-2.0",
                     "WTFPL 2.0",
                     "wtfpl",
                     "Do What The Fuck You Want To Public License (WTFPL) 2"
@@ -213,7 +213,7 @@ Raw Data
                 "spdxId": "WTFPL",
                 "_implications": {
                     "__impliedNames": [
-                        "wtfpl-2.0",
+                        "scancode:wtfpl-2.0",
                         "WTFPL 2.0",
                         "WTFPL"
                     ],

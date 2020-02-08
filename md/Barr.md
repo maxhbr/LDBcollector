@@ -5,7 +5,7 @@ Barr License (Barr)
 
 **Other Names:**
 
--   `barr-tex`
+-   `scancode:barr-tex`
 
 -   `Barr TeX License`
 
@@ -49,7 +49,7 @@ Raw Data
         "__impliedNames": [
             "Barr",
             "Barr License",
-            "barr-tex",
+            "scancode:barr-tex",
             "Barr TeX License"
         ],
         "__impliedId": "Barr",
@@ -61,7 +61,7 @@ Raw Data
                         "Barr",
                         "Barr",
                         "Barr License",
-                        "barr-tex",
+                        "scancode:barr-tex",
                         "Barr TeX License"
                     ],
                     "__impliedId": "Barr"
@@ -70,7 +70,7 @@ Raw Data
                 "otherNames": [
                     "Barr",
                     "Barr License",
-                    "barr-tex",
+                    "scancode:barr-tex",
                     "Barr TeX License"
                 ]
             },
@@ -144,7 +144,7 @@ Raw Data
                 "spdxId": "Barr",
                 "_implications": {
                     "__impliedNames": [
-                        "barr-tex",
+                        "scancode:barr-tex",
                         "Barr TeX License",
                         "Barr"
                     ],

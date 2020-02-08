@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =scancode:jasper-2.0=
+
 - =JasPer 2.0=
 
 ** Comments on (easy) usability
@@ -98,7 +100,7 @@
       "__impliedNames": [
           "JasPer-2.0",
           "JasPer License",
-          "jasper-2.0",
+          "scancode:jasper-2.0",
           "JasPer 2.0"
       ],
       "__impliedId": "JasPer-2.0",
@@ -110,7 +112,7 @@
                       "JasPer-2.0",
                       "JasPer-2.0",
                       "JasPer License",
-                      "jasper-2.0",
+                      "scancode:jasper-2.0",
                       "JasPer 2.0"
                   ],
                   "__impliedId": "JasPer-2.0"
@@ -119,7 +121,7 @@
               "otherNames": [
                   "JasPer-2.0",
                   "JasPer License",
-                  "jasper-2.0",
+                  "scancode:jasper-2.0",
                   "JasPer 2.0"
               ]
           },
@@ -195,7 +197,7 @@
               "spdxId": "JasPer-2.0",
               "_implications": {
                   "__impliedNames": [
-                      "jasper-2.0",
+                      "scancode:jasper-2.0",
                       "JasPer 2.0",
                       "JasPer-2.0"
                   ],

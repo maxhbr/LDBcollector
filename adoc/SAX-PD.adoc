@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:sax-pd+`
+
 === Comments on (easy) usability
 
 === URLs
@@ -85,7 +89,7 @@ David Megginson, Megginson Technologies Ltd.
     "__impliedNames": [
         "SAX-PD",
         "Sax Public Domain Notice",
-        "sax-pd"
+        "scancode:sax-pd"
     ],
     "__impliedId": "SAX-PD",
     "facts": {
@@ -95,7 +99,7 @@ David Megginson, Megginson Technologies Ltd.
                     "SAX-PD",
                     "SAX-PD",
                     "Sax Public Domain Notice",
-                    "sax-pd"
+                    "scancode:sax-pd"
                 ],
                 "__impliedId": "SAX-PD"
             },
@@ -103,7 +107,7 @@ David Megginson, Megginson Technologies Ltd.
             "otherNames": [
                 "SAX-PD",
                 "Sax Public Domain Notice",
-                "sax-pd"
+                "scancode:sax-pd"
             ]
         },
         "SPDX": {
@@ -150,7 +154,7 @@ David Megginson, Megginson Technologies Ltd.
             "spdxId": "SAX-PD",
             "_implications": {
                 "__impliedNames": [
-                    "sax-pd",
+                    "scancode:sax-pd",
                     "SAX-PD",
                     "SAX-PD"
                 ],

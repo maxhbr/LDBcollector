@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+freetype+`
+* `+scancode:freetype+`
 
 === Comments on (easy) usability
 
@@ -234,7 +234,7 @@ Legal Terms
     "__impliedNames": [
         "FTL",
         "Freetype Project License",
-        "freetype",
+        "scancode:freetype",
         "FreeType Project License"
     ],
     "__impliedId": "FTL",
@@ -245,7 +245,7 @@ Legal Terms
                     "FTL",
                     "FTL",
                     "Freetype Project License",
-                    "freetype",
+                    "scancode:freetype",
                     "FreeType Project License"
                 ],
                 "__impliedId": "FTL"
@@ -254,7 +254,7 @@ Legal Terms
             "otherNames": [
                 "FTL",
                 "Freetype Project License",
-                "freetype",
+                "scancode:freetype",
                 "FreeType Project License"
             ]
         },
@@ -322,7 +322,7 @@ Legal Terms
             "spdxId": "FTL",
             "_implications": {
                 "__impliedNames": [
-                    "freetype",
+                    "scancode:freetype",
                     "FreeType Project License",
                     "FTL"
                 ],

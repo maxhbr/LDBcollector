@@ -7,6 +7,10 @@
 | Rating           | Unknown           |
 | Classification   | NoCopyleft        |
 
+*Other Names:*
+
+- =scancode:dotseqn=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -36,7 +40,7 @@
       "__impliedNames": [
           "Dotseqn",
           "Dotseqn License",
-          "dotseqn"
+          "scancode:dotseqn"
       ],
       "__impliedId": "Dotseqn",
       "__isFsfFree": true,
@@ -47,7 +51,7 @@
                       "Dotseqn",
                       "Dotseqn",
                       "Dotseqn License",
-                      "dotseqn"
+                      "scancode:dotseqn"
                   ],
                   "__impliedId": "Dotseqn"
               },
@@ -55,7 +59,7 @@
               "otherNames": [
                   "Dotseqn",
                   "Dotseqn License",
-                  "dotseqn"
+                  "scancode:dotseqn"
               ]
           },
           "SPDX": {
@@ -128,7 +132,7 @@
               "spdxId": "Dotseqn",
               "_implications": {
                   "__impliedNames": [
-                      "dotseqn",
+                      "scancode:dotseqn",
                       "Dotseqn License",
                       "Dotseqn"
                   ],

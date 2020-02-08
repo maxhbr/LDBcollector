@@ -5,7 +5,7 @@ Spencer License 99 (Spencer-99)
 
 **Other Names:**
 
--   `henry-spencer-1999`
+-   `scancode:henry-spencer-1999`
 
 -   `Henry Spencer License 1999`
 
@@ -61,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "Spencer-99",
             "Spencer License 99",
-            "henry-spencer-1999",
+            "scancode:henry-spencer-1999",
             "Henry Spencer License 1999"
         ],
         "__impliedId": "Spencer-99",
@@ -72,7 +72,7 @@ Raw Data
                         "Spencer-99",
                         "Spencer-99",
                         "Spencer License 99",
-                        "henry-spencer-1999",
+                        "scancode:henry-spencer-1999",
                         "Henry Spencer License 1999"
                     ],
                     "__impliedId": "Spencer-99"
@@ -81,7 +81,7 @@ Raw Data
                 "otherNames": [
                     "Spencer-99",
                     "Spencer License 99",
-                    "henry-spencer-1999",
+                    "scancode:henry-spencer-1999",
                     "Henry Spencer License 1999"
                 ]
             },
@@ -129,7 +129,7 @@ Raw Data
                 "spdxId": "Spencer-99",
                 "_implications": {
                     "__impliedNames": [
-                        "henry-spencer-1999",
+                        "scancode:henry-spencer-1999",
                         "Henry Spencer License 1999",
                         "Spencer-99"
                     ],

@@ -5,6 +5,8 @@ LaTeX Project Public License v1.3c (LPPL-1.3c)
 
 **Other Names:**
 
+-   `scancode:lppl-1.3c`
+
 -   `LPPL 1.3c`
 
 -   `LaTeX Project Public License, Version 1.3c`
@@ -477,8 +479,9 @@ Raw Data
         "__impliedNames": [
             "LPPL-1.3c",
             "LaTeX Project Public License v1.3c",
-            "lppl-1.3c",
+            "scancode:lppl-1.3c",
             "LPPL 1.3c",
+            "lppl-1.3c",
             "LaTeX Project Public License, Version 1.3c",
             "LaTeX Project Public License 1.3c"
         ],
@@ -518,8 +521,9 @@ Raw Data
                         "LPPL-1.3c",
                         "LPPL-1.3c",
                         "LaTeX Project Public License v1.3c",
-                        "lppl-1.3c",
+                        "scancode:lppl-1.3c",
                         "LPPL 1.3c",
+                        "lppl-1.3c",
                         "LaTeX Project Public License, Version 1.3c",
                         "LaTeX Project Public License 1.3c"
                     ],
@@ -529,8 +533,9 @@ Raw Data
                 "otherNames": [
                     "LPPL-1.3c",
                     "LaTeX Project Public License v1.3c",
-                    "lppl-1.3c",
+                    "scancode:lppl-1.3c",
                     "LPPL 1.3c",
+                    "lppl-1.3c",
                     "LaTeX Project Public License, Version 1.3c",
                     "LaTeX Project Public License 1.3c"
                 ]
@@ -596,7 +601,7 @@ Raw Data
                 "spdxId": "LPPL-1.3c",
                 "_implications": {
                     "__impliedNames": [
-                        "lppl-1.3c",
+                        "scancode:lppl-1.3c",
                         "LPPL 1.3c",
                         "LPPL-1.3c"
                     ],

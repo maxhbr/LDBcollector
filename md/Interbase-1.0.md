@@ -5,6 +5,8 @@ Interbase Public License v1.0 (Interbase-1.0)
 
 **Other Names:**
 
+-   `scancode:interbase-1.0`
+
 -   `Interbase Public License 1.0`
 
 Comments on (easy) usability
@@ -228,7 +230,7 @@ Raw Data
         "__impliedNames": [
             "Interbase-1.0",
             "Interbase Public License v1.0",
-            "interbase-1.0",
+            "scancode:interbase-1.0",
             "Interbase Public License 1.0"
         ],
         "__impliedId": "Interbase-1.0",
@@ -239,7 +241,7 @@ Raw Data
                         "Interbase-1.0",
                         "Interbase-1.0",
                         "Interbase Public License v1.0",
-                        "interbase-1.0",
+                        "scancode:interbase-1.0",
                         "Interbase Public License 1.0"
                     ],
                     "__impliedId": "Interbase-1.0"
@@ -248,7 +250,7 @@ Raw Data
                 "otherNames": [
                     "Interbase-1.0",
                     "Interbase Public License v1.0",
-                    "interbase-1.0",
+                    "scancode:interbase-1.0",
                     "Interbase Public License 1.0"
                 ]
             },
@@ -298,7 +300,7 @@ Raw Data
                 "spdxId": "Interbase-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "interbase-1.0",
+                        "scancode:interbase-1.0",
                         "Interbase Public License 1.0",
                         "Interbase-1.0"
                     ],

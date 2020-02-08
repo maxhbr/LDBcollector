@@ -2,7 +2,7 @@
     "__impliedNames": [
         "XSkat",
         "XSkat License",
-        "xskat"
+        "scancode:xskat"
     ],
     "__impliedId": "XSkat",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "XSkat",
                     "XSkat",
                     "XSkat License",
-                    "xskat"
+                    "scancode:xskat"
                 ],
                 "__impliedId": "XSkat"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "XSkat",
                 "XSkat License",
-                "xskat"
+                "scancode:xskat"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "XSkat",
             "_implications": {
                 "__impliedNames": [
-                    "xskat",
+                    "scancode:xskat",
                     "XSkat License",
                     "XSkat"
                 ],

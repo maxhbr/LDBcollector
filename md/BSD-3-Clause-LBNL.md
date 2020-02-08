@@ -5,7 +5,7 @@ Lawrence Berkeley National Labs BSD variant license (BSD-3-Clause-LBNL)
 
 **Other Names:**
 
--   `lbnl-bsd`
+-   `scancode:lbnl-bsd`
 
 -   `LBNL BSD Variant`
 
@@ -56,7 +56,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-LBNL",
             "Lawrence Berkeley National Labs BSD variant license",
-            "lbnl-bsd",
+            "scancode:lbnl-bsd",
             "LBNL BSD Variant"
         ],
         "__impliedId": "BSD-3-Clause-LBNL",
@@ -68,7 +68,7 @@ Raw Data
                         "BSD-3-Clause-LBNL",
                         "BSD-3-Clause-LBNL",
                         "Lawrence Berkeley National Labs BSD variant license",
-                        "lbnl-bsd",
+                        "scancode:lbnl-bsd",
                         "LBNL BSD Variant"
                     ],
                     "__impliedId": "BSD-3-Clause-LBNL"
@@ -77,7 +77,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause-LBNL",
                     "Lawrence Berkeley National Labs BSD variant license",
-                    "lbnl-bsd",
+                    "scancode:lbnl-bsd",
                     "LBNL BSD Variant"
                 ]
             },
@@ -153,7 +153,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause-LBNL",
                 "_implications": {
                     "__impliedNames": [
-                        "lbnl-bsd",
+                        "scancode:lbnl-bsd",
                         "LBNL BSD Variant",
                         "BSD-3-Clause-LBNL"
                     ],

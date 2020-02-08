@@ -12,6 +12,7 @@
 
 *Other Names:*
 
+* `+scancode:cpl-1.0+`
 * `+CPL 1.0+`
 * `+Common Public License, Version 1.0+`
 * `+CPL+`
@@ -144,7 +145,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
     "__impliedNames": [
         "CPL-1.0",
         "Common Public License 1.0",
-        "cpl-1.0",
+        "scancode:cpl-1.0",
         "CPL 1.0",
         "Common Public License, Version 1.0",
         "CPL",
@@ -162,7 +163,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
                     "CPL-1.0",
                     "CPL-1.0",
                     "Common Public License 1.0",
-                    "cpl-1.0",
+                    "scancode:cpl-1.0",
                     "CPL 1.0",
                     "Common Public License, Version 1.0",
                     "CPL",
@@ -174,7 +175,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "otherNames": [
                 "CPL-1.0",
                 "Common Public License 1.0",
-                "cpl-1.0",
+                "scancode:cpl-1.0",
                 "CPL 1.0",
                 "Common Public License, Version 1.0",
                 "CPL",
@@ -241,7 +242,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "spdxId": "CPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "cpl-1.0",
+                    "scancode:cpl-1.0",
                     "CPL 1.0",
                     "CPL-1.0"
                 ],

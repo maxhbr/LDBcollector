@@ -3,6 +3,10 @@ Amazon Digital Services License (ADSL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:adsl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -45,7 +49,7 @@ Raw Data
         "__impliedNames": [
             "ADSL",
             "Amazon Digital Services License",
-            "adsl"
+            "scancode:adsl"
         ],
         "__impliedId": "ADSL",
         "__isFsfFree": true,
@@ -56,7 +60,7 @@ Raw Data
                         "ADSL",
                         "ADSL",
                         "Amazon Digital Services License",
-                        "adsl"
+                        "scancode:adsl"
                     ],
                     "__impliedId": "ADSL"
                 },
@@ -64,7 +68,7 @@ Raw Data
                 "otherNames": [
                     "ADSL",
                     "Amazon Digital Services License",
-                    "adsl"
+                    "scancode:adsl"
                 ]
             },
             "SPDX": {
@@ -137,7 +141,7 @@ Raw Data
                 "spdxId": "ADSL",
                 "_implications": {
                     "__impliedNames": [
-                        "adsl",
+                        "scancode:adsl",
                         "Amazon Digital Services License",
                         "ADSL"
                     ],

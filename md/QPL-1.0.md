@@ -5,6 +5,8 @@ Q Public License 1.0 (QPL-1.0)
 
 **Other Names:**
 
+-   `scancode:qpl-1.0`
+
 -   `QPL 1.0`
 
 -   `The Q Public License Version (QPL-1.0)`
@@ -115,7 +117,7 @@ Raw Data
         "__impliedNames": [
             "QPL-1.0",
             "Q Public License 1.0",
-            "qpl-1.0",
+            "scancode:qpl-1.0",
             "QPL 1.0",
             "The Q Public License Version (QPL-1.0)",
             "License :: OSI Approved :: Qt Public License (QPL)",
@@ -161,7 +163,7 @@ Raw Data
                         "QPL-1.0",
                         "QPL-1.0",
                         "Q Public License 1.0",
-                        "qpl-1.0",
+                        "scancode:qpl-1.0",
                         "QPL 1.0",
                         "The Q Public License Version (QPL-1.0)",
                         "License :: OSI Approved :: Qt Public License (QPL)",
@@ -173,7 +175,7 @@ Raw Data
                 "otherNames": [
                     "QPL-1.0",
                     "Q Public License 1.0",
-                    "qpl-1.0",
+                    "scancode:qpl-1.0",
                     "QPL 1.0",
                     "The Q Public License Version (QPL-1.0)",
                     "License :: OSI Approved :: Qt Public License (QPL)",
@@ -269,7 +271,7 @@ Raw Data
                 "spdxId": "QPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "qpl-1.0",
+                        "scancode:qpl-1.0",
                         "QPL 1.0",
                         "QPL-1.0"
                     ],

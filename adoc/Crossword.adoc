@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:crossword+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -46,7 +50,7 @@ provided this copyright notice is preserved and any modifications are indicated.
     "__impliedNames": [
         "Crossword",
         "Crossword License",
-        "crossword"
+        "scancode:crossword"
     ],
     "__impliedId": "Crossword",
     "__isFsfFree": true,
@@ -57,7 +61,7 @@ provided this copyright notice is preserved and any modifications are indicated.
                     "Crossword",
                     "Crossword",
                     "Crossword License",
-                    "crossword"
+                    "scancode:crossword"
                 ],
                 "__impliedId": "Crossword"
             },
@@ -65,7 +69,7 @@ provided this copyright notice is preserved and any modifications are indicated.
             "otherNames": [
                 "Crossword",
                 "Crossword License",
-                "crossword"
+                "scancode:crossword"
             ]
         },
         "SPDX": {
@@ -138,7 +142,7 @@ provided this copyright notice is preserved and any modifications are indicated.
             "spdxId": "Crossword",
             "_implications": {
                 "__impliedNames": [
-                    "crossword",
+                    "scancode:crossword",
                     "Crossword License",
                     "Crossword"
                 ],

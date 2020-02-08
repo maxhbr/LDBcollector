@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+fsf-ap+`
+* `+scancode:fsf-ap+`
 
 === Comments on (easy) usability
 
@@ -45,7 +45,7 @@ warranty.
     "__impliedNames": [
         "FSFAP",
         "FSF All Permissive License",
-        "fsf-ap",
+        "scancode:fsf-ap",
         "FSF All Permissive license"
     ],
     "__impliedId": "FSFAP",
@@ -57,7 +57,7 @@ warranty.
                     "FSFAP",
                     "FSFAP",
                     "FSF All Permissive License",
-                    "fsf-ap"
+                    "scancode:fsf-ap"
                 ],
                 "__impliedId": "FSFAP"
             },
@@ -65,7 +65,7 @@ warranty.
             "otherNames": [
                 "FSFAP",
                 "FSF All Permissive License",
-                "fsf-ap"
+                "scancode:fsf-ap"
             ]
         },
         "SPDX": {
@@ -143,7 +143,7 @@ warranty.
             "spdxId": "FSFAP",
             "_implications": {
                 "__impliedNames": [
-                    "fsf-ap",
+                    "scancode:fsf-ap",
                     "FSF All Permissive License",
                     "FSFAP"
                 ],

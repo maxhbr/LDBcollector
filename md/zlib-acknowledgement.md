@@ -5,6 +5,8 @@ zlib/libpng License with Acknowledgement (zlib-acknowledgement)
 
 **Other Names:**
 
+-   `scancode:zlib-acknowledgement`
+
 -   `ZLIB License with Acknowledgment`
 
 Comments on (easy) usability
@@ -87,6 +89,7 @@ Raw Data
         "__impliedNames": [
             "zlib-acknowledgement",
             "zlib/libpng License with Acknowledgement",
+            "scancode:zlib-acknowledgement",
             "ZLIB License with Acknowledgment"
         ],
         "__impliedId": "zlib-acknowledgement",
@@ -101,6 +104,7 @@ Raw Data
                         "zlib-acknowledgement",
                         "zlib-acknowledgement",
                         "zlib/libpng License with Acknowledgement",
+                        "scancode:zlib-acknowledgement",
                         "ZLIB License with Acknowledgment"
                     ],
                     "__impliedId": "zlib-acknowledgement"
@@ -109,6 +113,7 @@ Raw Data
                 "otherNames": [
                     "zlib-acknowledgement",
                     "zlib/libpng License with Acknowledgement",
+                    "scancode:zlib-acknowledgement",
                     "ZLIB License with Acknowledgment"
                 ]
             },
@@ -194,7 +199,7 @@ Raw Data
                 "spdxId": "zlib-acknowledgement",
                 "_implications": {
                     "__impliedNames": [
-                        "zlib-acknowledgement",
+                        "scancode:zlib-acknowledgement",
                         "ZLIB License with Acknowledgment",
                         "zlib-acknowledgement"
                     ],

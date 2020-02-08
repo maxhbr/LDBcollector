@@ -5,6 +5,8 @@ Simple Public License 2.0 (SimPL-2.0)
 
 **Other Names:**
 
+-   `scancode:simpl-2.0`
+
 -   `SimPL 2.0`
 
 -   `Simple-2.0`
@@ -71,7 +73,7 @@ Raw Data
         "__impliedNames": [
             "SimPL-2.0",
             "Simple Public License 2.0",
-            "simpl-2.0",
+            "scancode:simpl-2.0",
             "SimPL 2.0",
             "Simple-2.0",
             "Simple Public License (SimPL-2.0)"
@@ -111,7 +113,7 @@ Raw Data
                         "SimPL-2.0",
                         "SimPL-2.0",
                         "Simple Public License 2.0",
-                        "simpl-2.0",
+                        "scancode:simpl-2.0",
                         "SimPL 2.0",
                         "Simple-2.0",
                         "Simple Public License (SimPL-2.0)"
@@ -122,7 +124,7 @@ Raw Data
                 "otherNames": [
                     "SimPL-2.0",
                     "Simple Public License 2.0",
-                    "simpl-2.0",
+                    "scancode:simpl-2.0",
                     "SimPL 2.0",
                     "Simple-2.0",
                     "Simple Public License (SimPL-2.0)"
@@ -184,7 +186,7 @@ Raw Data
                 "spdxId": "SimPL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "simpl-2.0",
+                        "scancode:simpl-2.0",
                         "SimPL 2.0",
                         "SimPL-2.0"
                     ],

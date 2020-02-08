@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =adapt-1.0=
+- =scancode:adapt-1.0=
 
 - =APL 1.0=
 
@@ -387,7 +387,7 @@
       "__impliedNames": [
           "APL-1.0",
           "Adaptive Public License 1.0",
-          "adapt-1.0",
+          "scancode:adapt-1.0",
           "APL 1.0",
           "Adaptive Public License, Version 1.0"
       ],
@@ -426,7 +426,7 @@
                       "APL-1.0",
                       "APL-1.0",
                       "Adaptive Public License 1.0",
-                      "adapt-1.0",
+                      "scancode:adapt-1.0",
                       "APL 1.0",
                       "Adaptive Public License, Version 1.0"
                   ],
@@ -436,7 +436,7 @@
               "otherNames": [
                   "APL-1.0",
                   "Adaptive Public License 1.0",
-                  "adapt-1.0",
+                  "scancode:adapt-1.0",
                   "APL 1.0",
                   "Adaptive Public License, Version 1.0"
               ]
@@ -497,7 +497,7 @@
               "spdxId": "APL-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "adapt-1.0",
+                      "scancode:adapt-1.0",
                       "APL 1.0",
                       "APL-1.0"
                   ],

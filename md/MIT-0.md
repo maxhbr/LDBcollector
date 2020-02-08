@@ -5,6 +5,8 @@ MIT No Attribution (MIT-0)
 
 **Other Names:**
 
+-   `scancode:mit-0`
+
 -   `MIT-0-Clause`
 
 Comments on (easy) usability
@@ -55,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "MIT-0",
             "MIT No Attribution",
-            "mit-0",
+            "scancode:mit-0",
             "MIT-0-Clause"
         ],
         "__impliedId": "MIT-0",
@@ -66,7 +68,7 @@ Raw Data
                         "MIT-0",
                         "MIT-0",
                         "MIT No Attribution",
-                        "mit-0",
+                        "scancode:mit-0",
                         "MIT-0-Clause"
                     ],
                     "__impliedId": "MIT-0"
@@ -75,7 +77,7 @@ Raw Data
                 "otherNames": [
                     "MIT-0",
                     "MIT No Attribution",
-                    "mit-0",
+                    "scancode:mit-0",
                     "MIT-0-Clause"
                 ]
             },
@@ -145,7 +147,7 @@ Raw Data
                 "spdxId": "MIT-0",
                 "_implications": {
                     "__impliedNames": [
-                        "mit-0",
+                        "scancode:mit-0",
                         "MIT-0-Clause",
                         "MIT-0"
                     ],

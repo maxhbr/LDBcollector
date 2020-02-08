@@ -5,7 +5,7 @@ Nokia Open Source License (Nokia)
 
 **Other Names:**
 
--   `nokos-1.0a`
+-   `scancode:nokos-1.0a`
 
 -   `NOKOS License 1.0a`
 
@@ -445,7 +445,7 @@ Raw Data
         "__impliedNames": [
             "Nokia",
             "Nokia Open Source License",
-            "nokos-1.0a",
+            "scancode:nokos-1.0a",
             "NOKOS License 1.0a",
             "Nokia Open Source License, Version 1.0a",
             "License :: OSI Approved :: Nokia Open Source License"
@@ -486,7 +486,7 @@ Raw Data
                         "Nokia",
                         "Nokia",
                         "Nokia Open Source License",
-                        "nokos-1.0a",
+                        "scancode:nokos-1.0a",
                         "NOKOS License 1.0a",
                         "Nokia Open Source License, Version 1.0a",
                         "License :: OSI Approved :: Nokia Open Source License"
@@ -497,7 +497,7 @@ Raw Data
                 "otherNames": [
                     "Nokia",
                     "Nokia Open Source License",
-                    "nokos-1.0a",
+                    "scancode:nokos-1.0a",
                     "NOKOS License 1.0a",
                     "Nokia Open Source License, Version 1.0a",
                     "License :: OSI Approved :: Nokia Open Source License"
@@ -585,7 +585,7 @@ Raw Data
                 "spdxId": "Nokia",
                 "_implications": {
                     "__impliedNames": [
-                        "nokos-1.0a",
+                        "scancode:nokos-1.0a",
                         "NOKOS License 1.0a",
                         "Nokia"
                     ],

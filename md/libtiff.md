@@ -5,7 +5,7 @@ libtiff License (libtiff)
 
 **Other Names:**
 
--   `x11-tiff`
+-   `scancode:x11-tiff`
 
 -   `X11-Style (Tiff)`
 
@@ -74,7 +74,7 @@ Raw Data
         "__impliedNames": [
             "libtiff",
             "libtiff License",
-            "x11-tiff",
+            "scancode:x11-tiff",
             "X11-Style (Tiff)"
         ],
         "__impliedId": "libtiff",
@@ -86,7 +86,7 @@ Raw Data
                         "libtiff",
                         "libtiff",
                         "libtiff License",
-                        "x11-tiff",
+                        "scancode:x11-tiff",
                         "X11-Style (Tiff)"
                     ],
                     "__impliedId": "libtiff"
@@ -95,7 +95,7 @@ Raw Data
                 "otherNames": [
                     "libtiff",
                     "libtiff License",
-                    "x11-tiff",
+                    "scancode:x11-tiff",
                     "X11-Style (Tiff)"
                 ]
             },
@@ -179,7 +179,7 @@ Raw Data
                 "spdxId": "libtiff",
                 "_implications": {
                     "__impliedNames": [
-                        "x11-tiff",
+                        "scancode:x11-tiff",
                         "X11-Style (Tiff)",
                         "libtiff"
                     ],

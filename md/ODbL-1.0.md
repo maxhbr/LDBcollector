@@ -5,6 +5,8 @@ ODC Open Database License v1.0 (ODbL-1.0)
 
 **Other Names:**
 
+-   `scancode:odbl-1.0`
+
 -   `ODbL 1.0`
 
 -   `Open Data Commons Open Database License 1.0`
@@ -574,7 +576,7 @@ Raw Data
         "__impliedNames": [
             "ODbL-1.0",
             "ODC Open Database License v1.0",
-            "odbl-1.0",
+            "scancode:odbl-1.0",
             "ODbL 1.0",
             "Open Data Commons Open Database License 1.0"
         ],
@@ -613,7 +615,7 @@ Raw Data
                         "ODbL-1.0",
                         "ODbL-1.0",
                         "ODC Open Database License v1.0",
-                        "odbl-1.0",
+                        "scancode:odbl-1.0",
                         "ODbL 1.0",
                         "Open Data Commons Open Database License 1.0"
                     ],
@@ -623,7 +625,7 @@ Raw Data
                 "otherNames": [
                     "ODbL-1.0",
                     "ODC Open Database License v1.0",
-                    "odbl-1.0",
+                    "scancode:odbl-1.0",
                     "ODbL 1.0",
                     "Open Data Commons Open Database License 1.0"
                 ]
@@ -672,7 +674,7 @@ Raw Data
                 "spdxId": "ODbL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "odbl-1.0",
+                        "scancode:odbl-1.0",
                         "ODbL 1.0",
                         "ODbL-1.0"
                     ],

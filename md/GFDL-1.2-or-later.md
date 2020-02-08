@@ -5,7 +5,7 @@ GNU Free Documentation License v1.2 or later (GFDL-1.2-or-later)
 
 **Other Names:**
 
--   `gfdl-1.2-plus`
+-   `scancode:gfdl-1.2-plus`
 
 -   `GFDL 1.2 or later`
 
@@ -34,7 +34,7 @@ Raw Data
         "__impliedNames": [
             "GFDL-1.2-or-later",
             "GNU Free Documentation License v1.2 or later",
-            "gfdl-1.2-plus",
+            "scancode:gfdl-1.2-plus",
             "GFDL 1.2 or later"
         ],
         "__impliedId": "GFDL-1.2-or-later",
@@ -48,7 +48,7 @@ Raw Data
                         "GFDL-1.2-or-later",
                         "GFDL-1.2-or-later",
                         "GNU Free Documentation License v1.2 or later",
-                        "gfdl-1.2-plus",
+                        "scancode:gfdl-1.2-plus",
                         "GFDL 1.2 or later"
                     ],
                     "__impliedId": "GFDL-1.2-or-later"
@@ -57,7 +57,7 @@ Raw Data
                 "otherNames": [
                     "GFDL-1.2-or-later",
                     "GNU Free Documentation License v1.2 or later",
-                    "gfdl-1.2-plus",
+                    "scancode:gfdl-1.2-plus",
                     "GFDL 1.2 or later"
                 ]
             },
@@ -108,7 +108,7 @@ Raw Data
                 "spdxId": "GFDL-1.2-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "gfdl-1.2-plus",
+                        "scancode:gfdl-1.2-plus",
                         "GFDL 1.2 or later",
                         "GFDL-1.2-or-later"
                     ],

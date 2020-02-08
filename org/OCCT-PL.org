@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go          |
 | Classification   | WeakCopyleft                             |
 
+*Other Names:*
+
+- =scancode:occt-pl=
+
 ** Comments on (easy) usability
 
 - *↓*This software licenses which is NOT OKAY for Fedora. Nothing in
@@ -146,7 +150,7 @@
       "__impliedNames": [
           "OCCT-PL",
           "Open CASCADE Technology Public License",
-          "occt-pl"
+          "scancode:occt-pl"
       ],
       "__impliedId": "OCCT-PL",
       "facts": {
@@ -156,7 +160,7 @@
                       "OCCT-PL",
                       "OCCT-PL",
                       "Open CASCADE Technology Public License",
-                      "occt-pl"
+                      "scancode:occt-pl"
                   ],
                   "__impliedId": "OCCT-PL"
               },
@@ -164,7 +168,7 @@
               "otherNames": [
                   "OCCT-PL",
                   "Open CASCADE Technology Public License",
-                  "occt-pl"
+                  "scancode:occt-pl"
               ]
           },
           "SPDX": {
@@ -234,7 +238,7 @@
               "spdxId": "OCCT-PL",
               "_implications": {
                   "__impliedNames": [
-                      "occt-pl",
+                      "scancode:occt-pl",
                       "OCCT-PL",
                       "OCCT-PL"
                   ],

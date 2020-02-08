@@ -3,6 +3,10 @@ Multics License (Multics)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:multics`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -53,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "Multics",
             "Multics License",
-            "multics"
+            "scancode:multics"
         ],
         "__impliedId": "Multics",
         "facts": {
@@ -90,7 +94,7 @@ Raw Data
                         "Multics",
                         "Multics",
                         "Multics License",
-                        "multics"
+                        "scancode:multics"
                     ],
                     "__impliedId": "Multics"
                 },
@@ -98,7 +102,7 @@ Raw Data
                 "otherNames": [
                     "Multics",
                     "Multics License",
-                    "multics"
+                    "scancode:multics"
                 ]
             },
             "SPDX": {
@@ -157,7 +161,7 @@ Raw Data
                 "spdxId": "Multics",
                 "_implications": {
                     "__impliedNames": [
-                        "multics",
+                        "scancode:multics",
                         "Multics License",
                         "Multics"
                     ],

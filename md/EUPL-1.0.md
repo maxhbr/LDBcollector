@@ -5,6 +5,8 @@ European Union Public License 1.0 (EUPL-1.0)
 
 **Other Names:**
 
+-   `scancode:eupl-1.0`
+
 -   `EUPL 1.0`
 
 Comments on (easy) usability
@@ -190,7 +192,7 @@ Raw Data
         "__impliedNames": [
             "EUPL-1.0",
             "European Union Public License 1.0",
-            "eupl-1.0",
+            "scancode:eupl-1.0",
             "EUPL 1.0"
         ],
         "__impliedId": "EUPL-1.0",
@@ -201,7 +203,7 @@ Raw Data
                         "EUPL-1.0",
                         "EUPL-1.0",
                         "European Union Public License 1.0",
-                        "eupl-1.0",
+                        "scancode:eupl-1.0",
                         "EUPL 1.0"
                     ],
                     "__impliedId": "EUPL-1.0"
@@ -210,7 +212,7 @@ Raw Data
                 "otherNames": [
                     "EUPL-1.0",
                     "European Union Public License 1.0",
-                    "eupl-1.0",
+                    "scancode:eupl-1.0",
                     "EUPL 1.0"
                 ]
             },
@@ -265,7 +267,7 @@ Raw Data
                 "spdxId": "EUPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "eupl-1.0",
+                        "scancode:eupl-1.0",
                         "EUPL 1.0",
                         "EUPL-1.0"
                     ],

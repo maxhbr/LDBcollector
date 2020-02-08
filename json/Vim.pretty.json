@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Vim",
         "Vim License",
-        "vim",
+        "scancode:vim",
         "VIM License"
     ],
     "__impliedId": "Vim",
@@ -14,7 +14,7 @@
                     "Vim",
                     "Vim",
                     "Vim License",
-                    "vim",
+                    "scancode:vim",
                     "VIM License"
                 ],
                 "__impliedId": "Vim"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "Vim",
                 "Vim License",
-                "vim",
+                "scancode:vim",
                 "VIM License"
             ]
         },
@@ -99,7 +99,7 @@
             "spdxId": "Vim",
             "_implications": {
                 "__impliedNames": [
-                    "vim",
+                    "scancode:vim",
                     "VIM License",
                     "Vim"
                 ],

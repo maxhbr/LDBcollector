@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =lbnl-bsd=
+- =scancode:lbnl-bsd=
 
 - =LBNL BSD Variant=
 
@@ -60,7 +60,7 @@
       "__impliedNames": [
           "BSD-3-Clause-LBNL",
           "Lawrence Berkeley National Labs BSD variant license",
-          "lbnl-bsd",
+          "scancode:lbnl-bsd",
           "LBNL BSD Variant"
       ],
       "__impliedId": "BSD-3-Clause-LBNL",
@@ -72,7 +72,7 @@
                       "BSD-3-Clause-LBNL",
                       "BSD-3-Clause-LBNL",
                       "Lawrence Berkeley National Labs BSD variant license",
-                      "lbnl-bsd",
+                      "scancode:lbnl-bsd",
                       "LBNL BSD Variant"
                   ],
                   "__impliedId": "BSD-3-Clause-LBNL"
@@ -81,7 +81,7 @@
               "otherNames": [
                   "BSD-3-Clause-LBNL",
                   "Lawrence Berkeley National Labs BSD variant license",
-                  "lbnl-bsd",
+                  "scancode:lbnl-bsd",
                   "LBNL BSD Variant"
               ]
           },
@@ -157,7 +157,7 @@
               "spdxId": "BSD-3-Clause-LBNL",
               "_implications": {
                   "__impliedNames": [
-                      "lbnl-bsd",
+                      "scancode:lbnl-bsd",
                       "LBNL BSD Variant",
                       "BSD-3-Clause-LBNL"
                   ],

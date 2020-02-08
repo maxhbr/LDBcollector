@@ -7,6 +7,10 @@
 | Rating           | Go                     |
 | Classification   | NoCopyleft             |
 
+*Other Names:*
+
+- =scancode:tcp-wrappers=
+
 ** Comments on (easy) usability
 
 - *↑*Google Classification is NOTICE (source:
@@ -71,7 +75,7 @@
       "__impliedNames": [
           "TCP-wrappers",
           "TCP Wrappers License",
-          "tcp-wrappers"
+          "scancode:tcp-wrappers"
       ],
       "__impliedId": "TCP-wrappers",
       "facts": {
@@ -81,7 +85,7 @@
                       "TCP-wrappers",
                       "TCP-wrappers",
                       "TCP Wrappers License",
-                      "tcp-wrappers"
+                      "scancode:tcp-wrappers"
                   ],
                   "__impliedId": "TCP-wrappers"
               },
@@ -89,7 +93,7 @@
               "otherNames": [
                   "TCP-wrappers",
                   "TCP Wrappers License",
-                  "tcp-wrappers"
+                  "scancode:tcp-wrappers"
               ]
           },
           "SPDX": {
@@ -138,7 +142,7 @@
               "spdxId": "TCP-wrappers",
               "_implications": {
                   "__impliedNames": [
-                      "tcp-wrappers",
+                      "scancode:tcp-wrappers",
                       "TCP Wrappers License",
                       "TCP-wrappers"
                   ],

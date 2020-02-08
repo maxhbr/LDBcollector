@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:saxpath+`
+
 === Comments on (easy) usability
 
 * **↑**Rating is: Bronze (source:
@@ -74,7 +78,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "Saxpath",
         "Saxpath License",
-        "saxpath"
+        "scancode:saxpath"
     ],
     "__impliedId": "Saxpath",
     "__isFsfFree": true,
@@ -85,7 +89,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "Saxpath",
                     "Saxpath",
                     "Saxpath License",
-                    "saxpath"
+                    "scancode:saxpath"
                 ],
                 "__impliedId": "Saxpath"
             },
@@ -93,7 +97,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "Saxpath",
                 "Saxpath License",
-                "saxpath"
+                "scancode:saxpath"
             ]
         },
         "SPDX": {
@@ -166,7 +170,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "Saxpath",
             "_implications": {
                 "__impliedNames": [
-                    "saxpath",
+                    "scancode:saxpath",
                     "Saxpath License",
                     "Saxpath"
                 ],

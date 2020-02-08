@@ -2,7 +2,7 @@
     "__impliedNames": [
         "BSD-3-Clause-No-Nuclear-License-2014",
         "BSD 3-Clause No Nuclear License 2014",
-        "oracle-bsd-no-nuclear",
+        "scancode:oracle-bsd-no-nuclear",
         "Oracle BSD-Style with Nuclear Restrictions"
     ],
     "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
@@ -13,7 +13,7 @@
                     "BSD-3-Clause-No-Nuclear-License-2014",
                     "BSD-3-Clause-No-Nuclear-License-2014",
                     "BSD 3-Clause No Nuclear License 2014",
-                    "oracle-bsd-no-nuclear",
+                    "scancode:oracle-bsd-no-nuclear",
                     "Oracle BSD-Style with Nuclear Restrictions"
                 ],
                 "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "BSD-3-Clause-No-Nuclear-License-2014",
                 "BSD 3-Clause No Nuclear License 2014",
-                "oracle-bsd-no-nuclear",
+                "scancode:oracle-bsd-no-nuclear",
                 "Oracle BSD-Style with Nuclear Restrictions"
             ]
         },
@@ -72,7 +72,7 @@
             "spdxId": "BSD-3-Clause-No-Nuclear-License-2014",
             "_implications": {
                 "__impliedNames": [
-                    "oracle-bsd-no-nuclear",
+                    "scancode:oracle-bsd-no-nuclear",
                     "Oracle BSD-Style with Nuclear Restrictions",
                     "BSD-3-Clause-No-Nuclear-License-2014"
                 ],

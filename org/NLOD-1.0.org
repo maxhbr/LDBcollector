@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Attention or Stop or No-Go   |
 | Classification   | NoCopyleft                                     |
 
+*Other Names:*
+
+- =scancode:nlod-1.0=
+
 ** Comments on (easy) usability
 
 ** URLs
@@ -109,7 +113,7 @@
       "__impliedNames": [
           "NLOD-1.0",
           "Norwegian Licence for Open Government Data",
-          "nlod-1.0"
+          "scancode:nlod-1.0"
       ],
       "__impliedId": "NLOD-1.0",
       "facts": {
@@ -119,7 +123,7 @@
                       "NLOD-1.0",
                       "NLOD-1.0",
                       "Norwegian Licence for Open Government Data",
-                      "nlod-1.0"
+                      "scancode:nlod-1.0"
                   ],
                   "__impliedId": "NLOD-1.0"
               },
@@ -127,7 +131,7 @@
               "otherNames": [
                   "NLOD-1.0",
                   "Norwegian Licence for Open Government Data",
-                  "nlod-1.0"
+                  "scancode:nlod-1.0"
               ]
           },
           "SPDX": {
@@ -176,7 +180,7 @@
               "spdxId": "NLOD-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "nlod-1.0",
+                      "scancode:nlod-1.0",
                       "NLOD-1.0",
                       "NLOD-1.0"
                   ],

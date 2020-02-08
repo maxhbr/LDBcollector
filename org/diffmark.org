@@ -7,6 +7,10 @@
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
+*Other Names:*
+
+- =scancode:diffmark=
+
 ** Comments on (easy) usability
 
 - *↑*This software Licenses is OK for Fedora (source:
@@ -40,6 +44,7 @@
       "__impliedNames": [
           "diffmark",
           "diffmark license",
+          "scancode:diffmark",
           "diffmark License"
       ],
       "__impliedId": "diffmark",
@@ -51,6 +56,7 @@
                       "diffmark",
                       "diffmark",
                       "diffmark license",
+                      "scancode:diffmark",
                       "diffmark License"
                   ],
                   "__impliedId": "diffmark"
@@ -59,6 +65,7 @@
               "otherNames": [
                   "diffmark",
                   "diffmark license",
+                  "scancode:diffmark",
                   "diffmark License"
               ]
           },
@@ -132,7 +139,7 @@
               "spdxId": "diffmark",
               "_implications": {
                   "__impliedNames": [
-                      "diffmark",
+                      "scancode:diffmark",
                       "diffmark License",
                       "diffmark"
                   ],

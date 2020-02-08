@@ -2,10 +2,10 @@
     "__impliedNames": [
         "NTP",
         "NTP License",
-        "mit-old-style-no-advert",
+        "scancode:mit-old-style-no-advert",
         "MIT Old Style no advertising",
         "NTP License (NTP)",
-        "ntpl"
+        "scancode:ntpl"
     ],
     "__impliedId": "NTP",
     "facts": {
@@ -42,7 +42,7 @@
                     "NTP",
                     "NTP",
                     "NTP License",
-                    "mit-old-style-no-advert",
+                    "scancode:mit-old-style-no-advert",
                     "MIT Old Style no advertising",
                     "NTP License (NTP)"
                 ],
@@ -52,7 +52,7 @@
             "otherNames": [
                 "NTP",
                 "NTP License",
-                "mit-old-style-no-advert",
+                "scancode:mit-old-style-no-advert",
                 "MIT Old Style no advertising",
                 "NTP License (NTP)"
             ]
@@ -123,7 +123,7 @@
             "spdxId": null,
             "_implications": {
                 "__impliedNames": [
-                    "ntpl",
+                    "scancode:ntpl",
                     "NTP License"
                 ],
                 "__impliedCopyleft": [

@@ -9,6 +9,10 @@
 |Classification |NoCopyleft
 |===
 
+*Other Names:*
+
+* `+scancode:dvipdfm+`
+
 === Comments on (easy) usability
 
 * **↑**This software Licenses is OK for Fedora (source:
@@ -36,7 +40,8 @@ complete and unchanged* distribution of these files.
 {
     "__impliedNames": [
         "dvipdfm",
-        "dvipdfm License"
+        "dvipdfm License",
+        "scancode:dvipdfm"
     ],
     "__impliedId": "dvipdfm",
     "__isFsfFree": true,
@@ -46,14 +51,16 @@ complete and unchanged* distribution of these files.
                 "__impliedNames": [
                     "dvipdfm",
                     "dvipdfm",
-                    "dvipdfm License"
+                    "dvipdfm License",
+                    "scancode:dvipdfm"
                 ],
                 "__impliedId": "dvipdfm"
             },
             "shortname": "dvipdfm",
             "otherNames": [
                 "dvipdfm",
-                "dvipdfm License"
+                "dvipdfm License",
+                "scancode:dvipdfm"
             ]
         },
         "SPDX": {
@@ -126,7 +133,7 @@ complete and unchanged* distribution of these files.
             "spdxId": "dvipdfm",
             "_implications": {
                 "__impliedNames": [
-                    "dvipdfm",
+                    "scancode:dvipdfm",
                     "dvipdfm License",
                     "dvipdfm"
                 ],

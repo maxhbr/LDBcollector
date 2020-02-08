@@ -2,7 +2,7 @@
     "__impliedNames": [
         "CECILL-2.1",
         "CeCILL Free Software License Agreement v2.1",
-        "cecill-2.1",
+        "scancode:cecill-2.1",
         "CeCILL 2.1",
         "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
         "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
@@ -45,7 +45,7 @@
                     "CECILL-2.1",
                     "CECILL-2.1",
                     "CeCILL Free Software License Agreement v2.1",
-                    "cecill-2.1",
+                    "scancode:cecill-2.1",
                     "CeCILL 2.1",
                     "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
                     "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
@@ -58,7 +58,7 @@
             "otherNames": [
                 "CECILL-2.1",
                 "CeCILL Free Software License Agreement v2.1",
-                "cecill-2.1",
+                "scancode:cecill-2.1",
                 "CeCILL 2.1",
                 "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
                 "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
@@ -121,7 +121,7 @@
             "spdxId": "CECILL-2.1",
             "_implications": {
                 "__impliedNames": [
-                    "cecill-2.1",
+                    "scancode:cecill-2.1",
                     "CeCILL 2.1",
                     "CECILL-2.1"
                 ],

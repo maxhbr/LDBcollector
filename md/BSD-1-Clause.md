@@ -3,6 +3,10 @@ BSD 1-Clause License (BSD-1-Clause)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode:bsd-1-clause`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -49,7 +53,7 @@ Raw Data
         "__impliedNames": [
             "BSD-1-Clause",
             "BSD 1-Clause License",
-            "bsd-1-clause"
+            "scancode:bsd-1-clause"
         ],
         "__impliedId": "BSD-1-Clause",
         "facts": {
@@ -59,7 +63,7 @@ Raw Data
                         "BSD-1-Clause",
                         "BSD-1-Clause",
                         "BSD 1-Clause License",
-                        "bsd-1-clause"
+                        "scancode:bsd-1-clause"
                     ],
                     "__impliedId": "BSD-1-Clause"
                 },
@@ -67,7 +71,7 @@ Raw Data
                 "otherNames": [
                     "BSD-1-Clause",
                     "BSD 1-Clause License",
-                    "bsd-1-clause"
+                    "scancode:bsd-1-clause"
                 ]
             },
             "SPDX": {
@@ -114,7 +118,7 @@ Raw Data
                 "spdxId": "BSD-1-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-1-clause",
+                        "scancode:bsd-1-clause",
                         "BSD-1-Clause",
                         "BSD-1-Clause"
                     ],
