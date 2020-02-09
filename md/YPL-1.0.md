@@ -5,7 +5,7 @@ Yahoo! Public License v1.0 (YPL-1.0)
 
 **Other Names:**
 
--   `scancode:ypl-1.0`
+-   `scancode://ypl-1.0`
 
 -   `YPL 1.0`
 
@@ -201,7 +201,7 @@ Raw Data
         "__impliedNames": [
             "YPL-1.0",
             "Yahoo! Public License v1.0",
-            "scancode:ypl-1.0",
+            "scancode://ypl-1.0",
             "YPL 1.0"
         ],
         "__impliedId": "YPL-1.0",
@@ -212,7 +212,7 @@ Raw Data
                         "YPL-1.0",
                         "YPL-1.0",
                         "Yahoo! Public License v1.0",
-                        "scancode:ypl-1.0",
+                        "scancode://ypl-1.0",
                         "YPL 1.0"
                     ],
                     "__impliedId": "YPL-1.0"
@@ -221,7 +221,7 @@ Raw Data
                 "otherNames": [
                     "YPL-1.0",
                     "Yahoo! Public License v1.0",
-                    "scancode:ypl-1.0",
+                    "scancode://ypl-1.0",
                     "YPL 1.0"
                 ]
             },
@@ -269,7 +269,7 @@ Raw Data
                 "spdxId": "YPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:ypl-1.0",
+                        "scancode://ypl-1.0",
                         "YPL 1.0",
                         "YPL-1.0"
                     ],

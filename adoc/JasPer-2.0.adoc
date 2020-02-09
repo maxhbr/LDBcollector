@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:jasper-2.0+`
+* `+scancode://jasper-2.0+`
 * `+JasPer 2.0+`
 
 === Comments on (easy) usability
@@ -97,7 +97,7 @@ EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
     "__impliedNames": [
         "JasPer-2.0",
         "JasPer License",
-        "scancode:jasper-2.0",
+        "scancode://jasper-2.0",
         "JasPer 2.0"
     ],
     "__impliedId": "JasPer-2.0",
@@ -109,7 +109,7 @@ EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
                     "JasPer-2.0",
                     "JasPer-2.0",
                     "JasPer License",
-                    "scancode:jasper-2.0",
+                    "scancode://jasper-2.0",
                     "JasPer 2.0"
                 ],
                 "__impliedId": "JasPer-2.0"
@@ -118,7 +118,7 @@ EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
             "otherNames": [
                 "JasPer-2.0",
                 "JasPer License",
-                "scancode:jasper-2.0",
+                "scancode://jasper-2.0",
                 "JasPer 2.0"
             ]
         },
@@ -194,7 +194,7 @@ EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
             "spdxId": "JasPer-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:jasper-2.0",
+                    "scancode://jasper-2.0",
                     "JasPer 2.0",
                     "JasPer-2.0"
                 ],

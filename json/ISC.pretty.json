@@ -2,7 +2,7 @@
     "__impliedNames": [
         "ISC",
         "ISC License",
-        "scancode:isc",
+        "scancode://isc",
         "isc",
         "ISC License (ISC)",
         "License :: OSI Approved :: ISC License (ISCL)",
@@ -47,7 +47,7 @@
                     "ISC",
                     "ISC",
                     "ISC License",
-                    "scancode:isc",
+                    "scancode://isc",
                     "isc",
                     "ISC License (ISC)",
                     "License :: OSI Approved :: ISC License (ISCL)",
@@ -59,7 +59,7 @@
             "otherNames": [
                 "ISC",
                 "ISC License",
-                "scancode:isc",
+                "scancode://isc",
                 "isc",
                 "ISC License (ISC)",
                 "License :: OSI Approved :: ISC License (ISCL)",
@@ -141,7 +141,7 @@
             "spdxId": "ISC",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:isc",
+                    "scancode://isc",
                     "ISC License",
                     "ISC"
                 ],

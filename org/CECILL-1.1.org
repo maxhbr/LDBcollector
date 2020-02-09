@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:cecill-1.1=
+- =scancode://cecill-1.1=
 
 - =CeCILL 1.1 English=
 
@@ -537,7 +537,7 @@
       "__impliedNames": [
           "CECILL-1.1",
           "CeCILL Free Software License Agreement v1.1",
-          "scancode:cecill-1.1",
+          "scancode://cecill-1.1",
           "CeCILL 1.1 English"
       ],
       "__impliedId": "CECILL-1.1",
@@ -548,7 +548,7 @@
                       "CECILL-1.1",
                       "CECILL-1.1",
                       "CeCILL Free Software License Agreement v1.1",
-                      "scancode:cecill-1.1",
+                      "scancode://cecill-1.1",
                       "CeCILL 1.1 English"
                   ],
                   "__impliedId": "CECILL-1.1"
@@ -557,7 +557,7 @@
               "otherNames": [
                   "CECILL-1.1",
                   "CeCILL Free Software License Agreement v1.1",
-                  "scancode:cecill-1.1",
+                  "scancode://cecill-1.1",
                   "CeCILL 1.1 English"
               ]
           },
@@ -607,7 +607,7 @@
               "spdxId": "CECILL-1.1",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:cecill-1.1",
+                      "scancode://cecill-1.1",
                       "CeCILL 1.1 English",
                       "CECILL-1.1"
                   ],

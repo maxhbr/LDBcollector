@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:npl-1.0+`
+* `+scancode://npl-1.0+`
 * `+NPL 1.0+`
 
 === Comments on (easy) usability
@@ -178,7 +178,7 @@ Contributor(s):  .''
     "__impliedNames": [
         "NPL-1.0",
         "Netscape Public License v1.0",
-        "scancode:npl-1.0",
+        "scancode://npl-1.0",
         "NPL 1.0"
     ],
     "__impliedId": "NPL-1.0",
@@ -189,7 +189,7 @@ Contributor(s):  .''
                     "NPL-1.0",
                     "NPL-1.0",
                     "Netscape Public License v1.0",
-                    "scancode:npl-1.0",
+                    "scancode://npl-1.0",
                     "NPL 1.0"
                 ],
                 "__impliedId": "NPL-1.0"
@@ -198,7 +198,7 @@ Contributor(s):  .''
             "otherNames": [
                 "NPL-1.0",
                 "Netscape Public License v1.0",
-                "scancode:npl-1.0",
+                "scancode://npl-1.0",
                 "NPL 1.0"
             ]
         },
@@ -249,7 +249,7 @@ Contributor(s):  .''
             "spdxId": "NPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:npl-1.0",
+                    "scancode://npl-1.0",
                     "NPL 1.0",
                     "NPL-1.0"
                 ],

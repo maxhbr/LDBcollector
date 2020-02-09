@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:bsd-plus-patent+`
+* `+scancode://bsd-plus-patent+`
 * `+BSD-2-Clause Plus Patent+`
 
 === Comments on (easy) usability
@@ -107,7 +107,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "BSD-2-Clause-Patent",
         "BSD-2-Clause Plus Patent License",
-        "scancode:bsd-plus-patent",
+        "scancode://bsd-plus-patent",
         "BSD-2-Clause Plus Patent"
     ],
     "__impliedId": "BSD-2-Clause-Patent",
@@ -119,7 +119,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "BSD-2-Clause-Patent",
                     "BSD-2-Clause-Patent",
                     "BSD-2-Clause Plus Patent License",
-                    "scancode:bsd-plus-patent",
+                    "scancode://bsd-plus-patent",
                     "BSD-2-Clause Plus Patent"
                 ],
                 "__impliedId": "BSD-2-Clause-Patent"
@@ -128,7 +128,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "BSD-2-Clause-Patent",
                 "BSD-2-Clause Plus Patent License",
-                "scancode:bsd-plus-patent",
+                "scancode://bsd-plus-patent",
                 "BSD-2-Clause Plus Patent"
             ]
         },
@@ -196,7 +196,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "BSD-2-Clause-Patent",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:bsd-plus-patent",
+                    "scancode://bsd-plus-patent",
                     "BSD-2-Clause Plus Patent",
                     "BSD-2-Clause-Patent"
                 ],

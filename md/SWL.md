@@ -5,7 +5,7 @@ Scheme Widget Library (SWL) Software License Agreement (SWL)
 
 **Other Names:**
 
--   `scancode:swl`
+-   `scancode://swl`
 
 -   `Scheme Widget Library (SWL) Software License`
 
@@ -52,7 +52,7 @@ Raw Data
         "__impliedNames": [
             "SWL",
             "Scheme Widget Library (SWL) Software License Agreement",
-            "scancode:swl",
+            "scancode://swl",
             "Scheme Widget Library (SWL) Software License"
         ],
         "__impliedId": "SWL",
@@ -64,7 +64,7 @@ Raw Data
                         "SWL",
                         "SWL",
                         "Scheme Widget Library (SWL) Software License Agreement",
-                        "scancode:swl",
+                        "scancode://swl",
                         "Scheme Widget Library (SWL) Software License"
                     ],
                     "__impliedId": "SWL"
@@ -73,7 +73,7 @@ Raw Data
                 "otherNames": [
                     "SWL",
                     "Scheme Widget Library (SWL) Software License Agreement",
-                    "scancode:swl",
+                    "scancode://swl",
                     "Scheme Widget Library (SWL) Software License"
                 ]
             },
@@ -149,7 +149,7 @@ Raw Data
                 "spdxId": "SWL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:swl",
+                        "scancode://swl",
                         "Scheme Widget Library (SWL) Software License",
                         "SWL"
                     ],

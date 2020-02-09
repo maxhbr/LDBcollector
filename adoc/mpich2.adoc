@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:mpich+`
+* `+scancode://mpich+`
 * `+MPICH License+`
 
 === Comments on (easy) usability
@@ -81,7 +81,7 @@ GOVERNMENT LICENSE
     "__impliedNames": [
         "mpich2",
         "mpich2 License",
-        "scancode:mpich",
+        "scancode://mpich",
         "MPICH License"
     ],
     "__impliedId": "mpich2",
@@ -93,7 +93,7 @@ GOVERNMENT LICENSE
                     "mpich2",
                     "mpich2",
                     "mpich2 License",
-                    "scancode:mpich",
+                    "scancode://mpich",
                     "MPICH License"
                 ],
                 "__impliedId": "mpich2"
@@ -102,7 +102,7 @@ GOVERNMENT LICENSE
             "otherNames": [
                 "mpich2",
                 "mpich2 License",
-                "scancode:mpich",
+                "scancode://mpich",
                 "MPICH License"
             ]
         },
@@ -178,7 +178,7 @@ GOVERNMENT LICENSE
             "spdxId": "mpich2",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:mpich",
+                    "scancode://mpich",
                     "MPICH License",
                     "mpich2"
                 ],

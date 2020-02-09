@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:ms-rl+`
+* `+scancode://ms-rl+`
 * `+Microsoft Reciprocal License (MS-RL)+`
 * `+Microsoft Reciprocal License (Ms-RL)+`
 
@@ -147,7 +147,7 @@ This license governs use of the accompanying software. If you use the software, 
     "__impliedNames": [
         "MS-RL",
         "Microsoft Reciprocal License",
-        "scancode:ms-rl",
+        "scancode://ms-rl",
         "ms-rl",
         "Microsoft Reciprocal License (MS-RL)",
         "Microsoft Reciprocal License (Ms-RL)"
@@ -189,7 +189,7 @@ This license governs use of the accompanying software. If you use the software, 
                     "MS-RL",
                     "MS-RL",
                     "Microsoft Reciprocal License",
-                    "scancode:ms-rl",
+                    "scancode://ms-rl",
                     "ms-rl",
                     "Microsoft Reciprocal License (MS-RL)"
                 ],
@@ -199,7 +199,7 @@ This license governs use of the accompanying software. If you use the software, 
             "otherNames": [
                 "MS-RL",
                 "Microsoft Reciprocal License",
-                "scancode:ms-rl",
+                "scancode://ms-rl",
                 "ms-rl",
                 "Microsoft Reciprocal License (MS-RL)"
             ]
@@ -311,7 +311,7 @@ This license governs use of the accompanying software. If you use the software, 
             "spdxId": "MS-RL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:ms-rl",
+                    "scancode://ms-rl",
                     "MS-RL",
                     "MS-RL"
                 ],

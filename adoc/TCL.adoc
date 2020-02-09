@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:tcl+`
+* `+scancode://tcl+`
 
 === Comments on (easy) usability
 
@@ -82,7 +82,7 @@ terms specified in this license.
     "__impliedNames": [
         "TCL",
         "TCL/TK License",
-        "scancode:tcl"
+        "scancode://tcl"
     ],
     "__impliedId": "TCL",
     "__isFsfFree": true,
@@ -93,7 +93,7 @@ terms specified in this license.
                     "TCL",
                     "TCL",
                     "TCL/TK License",
-                    "scancode:tcl"
+                    "scancode://tcl"
                 ],
                 "__impliedId": "TCL"
             },
@@ -101,7 +101,7 @@ terms specified in this license.
             "otherNames": [
                 "TCL",
                 "TCL/TK License",
-                "scancode:tcl"
+                "scancode://tcl"
             ]
         },
         "SPDX": {
@@ -182,7 +182,7 @@ terms specified in this license.
             "spdxId": "TCL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:tcl",
+                    "scancode://tcl",
                     "TCL/TK License",
                     "TCL"
                 ],

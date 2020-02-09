@@ -5,7 +5,7 @@ GNU Free Documentation License v1.3 only (GFDL-1.3-only)
 
 **Other Names:**
 
--   `scancode:gfdl-1.3`
+-   `scancode://gfdl-1.3`
 
 -   `GFDL 1.3`
 
@@ -487,7 +487,7 @@ Raw Data
         "__impliedNames": [
             "GFDL-1.3-only",
             "GNU Free Documentation License v1.3 only",
-            "scancode:gfdl-1.3",
+            "scancode://gfdl-1.3",
             "GFDL 1.3"
         ],
         "__impliedId": "GFDL-1.3-only",
@@ -501,7 +501,7 @@ Raw Data
                         "GFDL-1.3-only",
                         "GFDL-1.3-only",
                         "GNU Free Documentation License v1.3 only",
-                        "scancode:gfdl-1.3",
+                        "scancode://gfdl-1.3",
                         "GFDL 1.3"
                     ],
                     "__impliedId": "GFDL-1.3-only"
@@ -510,7 +510,7 @@ Raw Data
                 "otherNames": [
                     "GFDL-1.3-only",
                     "GNU Free Documentation License v1.3 only",
-                    "scancode:gfdl-1.3",
+                    "scancode://gfdl-1.3",
                     "GFDL 1.3"
                 ]
             },
@@ -560,7 +560,7 @@ Raw Data
                 "spdxId": "GFDL-1.3-only",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:gfdl-1.3",
+                        "scancode://gfdl-1.3",
                         "GFDL 1.3",
                         "GFDL-1.3-only"
                     ],

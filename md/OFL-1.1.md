@@ -5,7 +5,7 @@ SIL Open Font License 1.1 (OFL-1.1)
 
 **Other Names:**
 
--   `scancode:ofl-1.1`
+-   `scancode://ofl-1.1`
 
 -   `OFL 1.1`
 
@@ -163,7 +163,7 @@ Raw Data
         "__impliedNames": [
             "OFL-1.1",
             "SIL Open Font License 1.1",
-            "scancode:ofl-1.1",
+            "scancode://ofl-1.1",
             "OFL 1.1",
             "ofl-1.1",
             "SIL Open Font License, Version 1.1",
@@ -207,7 +207,7 @@ Raw Data
                         "OFL-1.1",
                         "OFL-1.1",
                         "SIL Open Font License 1.1",
-                        "scancode:ofl-1.1",
+                        "scancode://ofl-1.1",
                         "OFL 1.1",
                         "ofl-1.1",
                         "SIL Open Font License, Version 1.1",
@@ -219,7 +219,7 @@ Raw Data
                 "otherNames": [
                     "OFL-1.1",
                     "SIL Open Font License 1.1",
-                    "scancode:ofl-1.1",
+                    "scancode://ofl-1.1",
                     "OFL 1.1",
                     "ofl-1.1",
                     "SIL Open Font License, Version 1.1",
@@ -289,7 +289,7 @@ Raw Data
                 "spdxId": "OFL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:ofl-1.1",
+                        "scancode://ofl-1.1",
                         "OFL 1.1",
                         "OFL-1.1"
                     ],

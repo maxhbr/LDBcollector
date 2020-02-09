@@ -5,7 +5,7 @@ Giftware License (Giftware)
 
 **Other Names:**
 
--   `scancode:allegro-4`
+-   `scancode://allegro-4`
 
 -   `Allegro 4 License`
 
@@ -52,7 +52,7 @@ Raw Data
         "__impliedNames": [
             "Giftware",
             "Giftware License",
-            "scancode:allegro-4",
+            "scancode://allegro-4",
             "Allegro 4 License"
         ],
         "__impliedId": "Giftware",
@@ -64,7 +64,7 @@ Raw Data
                         "Giftware",
                         "Giftware",
                         "Giftware License",
-                        "scancode:allegro-4",
+                        "scancode://allegro-4",
                         "Allegro 4 License"
                     ],
                     "__impliedId": "Giftware"
@@ -73,7 +73,7 @@ Raw Data
                 "otherNames": [
                     "Giftware",
                     "Giftware License",
-                    "scancode:allegro-4",
+                    "scancode://allegro-4",
                     "Allegro 4 License"
                 ]
             },
@@ -149,7 +149,7 @@ Raw Data
                 "spdxId": "Giftware",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:allegro-4",
+                        "scancode://allegro-4",
                         "Allegro 4 License",
                         "Giftware"
                     ],

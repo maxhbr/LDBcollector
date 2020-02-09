@@ -5,7 +5,7 @@ European Union Public License 1.1 (EUPL-1.1)
 
 **Other Names:**
 
--   `scancode:eupl-1.1`
+-   `scancode://eupl-1.1`
 
 -   `EUPL 1.1`
 
@@ -404,7 +404,7 @@ Raw Data
         "__impliedNames": [
             "EUPL-1.1",
             "European Union Public License 1.1",
-            "scancode:eupl-1.1",
+            "scancode://eupl-1.1",
             "EUPL 1.1",
             "eupl-1.1",
             "European Union Public License, Version 1.1",
@@ -447,7 +447,7 @@ Raw Data
                         "EUPL-1.1",
                         "EUPL-1.1",
                         "European Union Public License 1.1",
-                        "scancode:eupl-1.1",
+                        "scancode://eupl-1.1",
                         "EUPL 1.1",
                         "eupl-1.1",
                         "European Union Public License, Version 1.1",
@@ -459,7 +459,7 @@ Raw Data
                 "otherNames": [
                     "EUPL-1.1",
                     "European Union Public License 1.1",
-                    "scancode:eupl-1.1",
+                    "scancode://eupl-1.1",
                     "EUPL 1.1",
                     "eupl-1.1",
                     "European Union Public License, Version 1.1",
@@ -581,7 +581,7 @@ Raw Data
                 "spdxId": "EUPL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:eupl-1.1",
+                        "scancode://eupl-1.1",
                         "EUPL 1.1",
                         "EUPL-1.1"
                     ],

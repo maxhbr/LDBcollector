@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Rdisc",
         "Rdisc License",
-        "scancode:rdisc"
+        "scancode://rdisc"
     ],
     "__impliedId": "Rdisc",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "Rdisc",
                     "Rdisc",
                     "Rdisc License",
-                    "scancode:rdisc"
+                    "scancode://rdisc"
                 ],
                 "__impliedId": "Rdisc"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "Rdisc",
                 "Rdisc License",
-                "scancode:rdisc"
+                "scancode://rdisc"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "Rdisc",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:rdisc",
+                    "scancode://rdisc",
                     "Rdisc License",
                     "Rdisc"
                 ],

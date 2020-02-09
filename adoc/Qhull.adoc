@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:qhull+`
+* `+scancode://qhull+`
 
 === Comments on (easy) usability
 
@@ -76,7 +76,7 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
     "__impliedNames": [
         "Qhull",
         "Qhull License",
-        "scancode:qhull"
+        "scancode://qhull"
     ],
     "__impliedId": "Qhull",
     "__isFsfFree": true,
@@ -87,7 +87,7 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
                     "Qhull",
                     "Qhull",
                     "Qhull License",
-                    "scancode:qhull"
+                    "scancode://qhull"
                 ],
                 "__impliedId": "Qhull"
             },
@@ -95,7 +95,7 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
             "otherNames": [
                 "Qhull",
                 "Qhull License",
-                "scancode:qhull"
+                "scancode://qhull"
             ]
         },
         "SPDX": {
@@ -180,7 +180,7 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
             "spdxId": "Qhull",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:qhull",
+                    "scancode://qhull",
                     "Qhull License",
                     "Qhull"
                 ],

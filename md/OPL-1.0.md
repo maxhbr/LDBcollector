@@ -5,7 +5,7 @@ Open Public License v1.0 (OPL-1.0)
 
 **Other Names:**
 
--   `scancode:open-public`
+-   `scancode://open-public`
 
 -   `Open Public License 1.0`
 
@@ -378,7 +378,7 @@ Raw Data
         "__impliedNames": [
             "OPL-1.0",
             "Open Public License v1.0",
-            "scancode:open-public",
+            "scancode://open-public",
             "Open Public License 1.0"
         ],
         "__impliedId": "OPL-1.0",
@@ -392,7 +392,7 @@ Raw Data
                         "OPL-1.0",
                         "OPL-1.0",
                         "Open Public License v1.0",
-                        "scancode:open-public",
+                        "scancode://open-public",
                         "Open Public License 1.0"
                     ],
                     "__impliedId": "OPL-1.0"
@@ -401,7 +401,7 @@ Raw Data
                 "otherNames": [
                     "OPL-1.0",
                     "Open Public License v1.0",
-                    "scancode:open-public",
+                    "scancode://open-public",
                     "Open Public License 1.0"
                 ]
             },
@@ -456,7 +456,7 @@ Raw Data
                 "spdxId": "OPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:open-public",
+                        "scancode://open-public",
                         "Open Public License 1.0",
                         "OPL-1.0"
                     ],

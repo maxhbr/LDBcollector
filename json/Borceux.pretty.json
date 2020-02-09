@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Borceux",
         "Borceux license",
-        "scancode:borceux",
+        "scancode://borceux",
         "Borceux License"
     ],
     "__impliedId": "Borceux",
@@ -14,7 +14,7 @@
                     "Borceux",
                     "Borceux",
                     "Borceux license",
-                    "scancode:borceux",
+                    "scancode://borceux",
                     "Borceux License"
                 ],
                 "__impliedId": "Borceux"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "Borceux",
                 "Borceux license",
-                "scancode:borceux",
+                "scancode://borceux",
                 "Borceux License"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "Borceux",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:borceux",
+                    "scancode://borceux",
                     "Borceux License",
                     "Borceux"
                 ],

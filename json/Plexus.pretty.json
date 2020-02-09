@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Plexus",
         "Plexus Classworlds License",
-        "scancode:dom4j",
+        "scancode://dom4j",
         "Dom4j License"
     ],
     "__impliedId": "Plexus",
@@ -14,7 +14,7 @@
                     "Plexus",
                     "Plexus",
                     "Plexus Classworlds License",
-                    "scancode:dom4j",
+                    "scancode://dom4j",
                     "Dom4j License"
                 ],
                 "__impliedId": "Plexus"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "Plexus",
                 "Plexus Classworlds License",
-                "scancode:dom4j",
+                "scancode://dom4j",
                 "Dom4j License"
             ]
         },
@@ -104,7 +104,7 @@
             "spdxId": "Plexus",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:dom4j",
+                    "scancode://dom4j",
                     "Dom4j License",
                     "Plexus"
                 ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:mir-os+`
+* `+scancode://mir-os+`
 * `+The MirOS Licence (MirOS)+`
 * `+MirOS Licence+`
 
@@ -73,7 +73,7 @@ of said person's immediate fault when using the work as intended.
     "__impliedNames": [
         "MirOS",
         "MirOS License",
-        "scancode:mir-os",
+        "scancode://mir-os",
         "The MirOS Licence (MirOS)",
         "MirOS Licence"
     ],
@@ -116,7 +116,7 @@ of said person's immediate fault when using the work as intended.
                     "MirOS",
                     "MirOS",
                     "MirOS License",
-                    "scancode:mir-os",
+                    "scancode://mir-os",
                     "The MirOS Licence (MirOS)",
                     "MirOS Licence"
                 ],
@@ -126,7 +126,7 @@ of said person's immediate fault when using the work as intended.
             "otherNames": [
                 "MirOS",
                 "MirOS License",
-                "scancode:mir-os",
+                "scancode://mir-os",
                 "The MirOS Licence (MirOS)",
                 "MirOS Licence"
             ]
@@ -213,7 +213,7 @@ of said person's immediate fault when using the work as intended.
             "spdxId": "MirOS",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:mir-os",
+                    "scancode://mir-os",
                     "MirOS License",
                     "MirOS"
                 ],

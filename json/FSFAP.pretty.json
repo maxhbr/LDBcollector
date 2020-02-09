@@ -2,7 +2,7 @@
     "__impliedNames": [
         "FSFAP",
         "FSF All Permissive License",
-        "scancode:fsf-ap",
+        "scancode://fsf-ap",
         "FSF All Permissive license"
     ],
     "__impliedId": "FSFAP",
@@ -14,7 +14,7 @@
                     "FSFAP",
                     "FSFAP",
                     "FSF All Permissive License",
-                    "scancode:fsf-ap"
+                    "scancode://fsf-ap"
                 ],
                 "__impliedId": "FSFAP"
             },
@@ -22,7 +22,7 @@
             "otherNames": [
                 "FSFAP",
                 "FSF All Permissive License",
-                "scancode:fsf-ap"
+                "scancode://fsf-ap"
             ]
         },
         "SPDX": {
@@ -100,7 +100,7 @@
             "spdxId": "FSFAP",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:fsf-ap",
+                    "scancode://fsf-ap",
                     "FSF All Permissive License",
                     "FSFAP"
                 ],

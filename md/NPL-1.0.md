@@ -5,7 +5,7 @@ Netscape Public License v1.0 (NPL-1.0)
 
 **Other Names:**
 
--   `scancode:npl-1.0`
+-   `scancode://npl-1.0`
 
 -   `NPL 1.0`
 
@@ -176,7 +176,7 @@ Raw Data
         "__impliedNames": [
             "NPL-1.0",
             "Netscape Public License v1.0",
-            "scancode:npl-1.0",
+            "scancode://npl-1.0",
             "NPL 1.0"
         ],
         "__impliedId": "NPL-1.0",
@@ -187,7 +187,7 @@ Raw Data
                         "NPL-1.0",
                         "NPL-1.0",
                         "Netscape Public License v1.0",
-                        "scancode:npl-1.0",
+                        "scancode://npl-1.0",
                         "NPL 1.0"
                     ],
                     "__impliedId": "NPL-1.0"
@@ -196,7 +196,7 @@ Raw Data
                 "otherNames": [
                     "NPL-1.0",
                     "Netscape Public License v1.0",
-                    "scancode:npl-1.0",
+                    "scancode://npl-1.0",
                     "NPL 1.0"
                 ]
             },
@@ -247,7 +247,7 @@ Raw Data
                 "spdxId": "NPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:npl-1.0",
+                        "scancode://npl-1.0",
                         "NPL 1.0",
                         "NPL-1.0"
                     ],

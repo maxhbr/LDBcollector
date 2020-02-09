@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:cpol-1.02+`
+* `+scancode://cpol-1.02+`
 * `+CPOL 1.02+`
 
 === Comments on (easy) usability
@@ -123,7 +123,7 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
     "__impliedNames": [
         "CPOL-1.02",
         "Code Project Open License 1.02",
-        "scancode:cpol-1.02",
+        "scancode://cpol-1.02",
         "CPOL 1.02"
     ],
     "__impliedId": "CPOL-1.02",
@@ -135,7 +135,7 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
                     "CPOL-1.02",
                     "CPOL-1.02",
                     "Code Project Open License 1.02",
-                    "scancode:cpol-1.02",
+                    "scancode://cpol-1.02",
                     "CPOL 1.02"
                 ],
                 "__impliedId": "CPOL-1.02"
@@ -144,7 +144,7 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
             "otherNames": [
                 "CPOL-1.02",
                 "Code Project Open License 1.02",
-                "scancode:cpol-1.02",
+                "scancode://cpol-1.02",
                 "CPOL 1.02"
             ]
         },
@@ -210,7 +210,7 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
             "spdxId": "CPOL-1.02",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:cpol-1.02",
+                    "scancode://cpol-1.02",
                     "CPOL 1.02",
                     "CPOL-1.02"
                 ],

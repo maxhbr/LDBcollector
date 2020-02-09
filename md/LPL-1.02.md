@@ -5,7 +5,7 @@ Lucent Public License v1.02 (LPL-1.02)
 
 **Other Names:**
 
--   `scancode:lucent-pl-1.02`
+-   `scancode://lucent-pl-1.02`
 
 -   `Lucent Public License 1.02`
 
@@ -128,7 +128,7 @@ Raw Data
         "__impliedNames": [
             "LPL-1.02",
             "Lucent Public License v1.02",
-            "scancode:lucent-pl-1.02",
+            "scancode://lucent-pl-1.02",
             "Lucent Public License 1.02",
             "Lucent Public License, Version 1.02"
         ],
@@ -167,7 +167,7 @@ Raw Data
                         "LPL-1.02",
                         "LPL-1.02",
                         "Lucent Public License v1.02",
-                        "scancode:lucent-pl-1.02",
+                        "scancode://lucent-pl-1.02",
                         "Lucent Public License 1.02",
                         "Lucent Public License, Version 1.02"
                     ],
@@ -177,7 +177,7 @@ Raw Data
                 "otherNames": [
                     "LPL-1.02",
                     "Lucent Public License v1.02",
-                    "scancode:lucent-pl-1.02",
+                    "scancode://lucent-pl-1.02",
                     "Lucent Public License 1.02",
                     "Lucent Public License, Version 1.02"
                 ]
@@ -243,7 +243,7 @@ Raw Data
                 "spdxId": "LPL-1.02",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:lucent-pl-1.02",
+                        "scancode://lucent-pl-1.02",
                         "Lucent Public License 1.02",
                         "LPL-1.02"
                     ],

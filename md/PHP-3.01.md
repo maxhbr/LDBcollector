@@ -5,7 +5,7 @@ PHP License v3.01 (PHP-3.01)
 
 **Other Names:**
 
--   `scancode:php-3.01`
+-   `scancode://php-3.01`
 
 -   `PHP License 3.01`
 
@@ -108,7 +108,7 @@ Raw Data
         "__impliedNames": [
             "PHP-3.01",
             "PHP License v3.01",
-            "scancode:php-3.01",
+            "scancode://php-3.01",
             "PHP License 3.01"
         ],
         "__impliedId": "PHP-3.01",
@@ -119,7 +119,7 @@ Raw Data
                         "PHP-3.01",
                         "PHP-3.01",
                         "PHP License v3.01",
-                        "scancode:php-3.01",
+                        "scancode://php-3.01",
                         "PHP License 3.01"
                     ],
                     "__impliedId": "PHP-3.01"
@@ -128,7 +128,7 @@ Raw Data
                 "otherNames": [
                     "PHP-3.01",
                     "PHP License v3.01",
-                    "scancode:php-3.01",
+                    "scancode://php-3.01",
                     "PHP License 3.01"
                 ]
             },
@@ -179,7 +179,7 @@ Raw Data
                 "spdxId": "PHP-3.01",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:php-3.01",
+                        "scancode://php-3.01",
                         "PHP License 3.01",
                         "PHP-3.01"
                     ],

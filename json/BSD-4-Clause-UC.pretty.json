@@ -2,7 +2,7 @@
     "__impliedNames": [
         "BSD-4-Clause-UC",
         "BSD-4-Clause (University of California-Specific)",
-        "scancode:bsd-original-uc",
+        "scancode://bsd-original-uc",
         "BSD-Original-UC"
     ],
     "__impliedId": "BSD-4-Clause-UC",
@@ -27,7 +27,7 @@
                     "BSD-4-Clause-UC",
                     "BSD-4-Clause-UC",
                     "BSD-4-Clause (University of California-Specific)",
-                    "scancode:bsd-original-uc",
+                    "scancode://bsd-original-uc",
                     "BSD-Original-UC"
                 ],
                 "__impliedId": "BSD-4-Clause-UC"
@@ -36,7 +36,7 @@
             "otherNames": [
                 "BSD-4-Clause-UC",
                 "BSD-4-Clause (University of California-Specific)",
-                "scancode:bsd-original-uc",
+                "scancode://bsd-original-uc",
                 "BSD-Original-UC"
             ]
         },
@@ -98,7 +98,7 @@
             "spdxId": "BSD-4-Clause-UC",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:bsd-original-uc",
+                    "scancode://bsd-original-uc",
                     "BSD-Original-UC",
                     "BSD-4-Clause-UC"
                 ],

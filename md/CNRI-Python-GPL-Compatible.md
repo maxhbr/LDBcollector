@@ -5,7 +5,7 @@ CNRI Python Open Source GPL Compatible License Agreement (CNRI-Python-GPL-Compat
 
 **Other Names:**
 
--   `scancode:cnri-python-1.6.1`
+-   `scancode://cnri-python-1.6.1`
 
 -   `CNRI Python 1.6.1`
 
@@ -61,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "CNRI-Python-GPL-Compatible",
             "CNRI Python Open Source GPL Compatible License Agreement",
-            "scancode:cnri-python-1.6.1",
+            "scancode://cnri-python-1.6.1",
             "CNRI Python 1.6.1"
         ],
         "__impliedId": "CNRI-Python-GPL-Compatible",
@@ -72,7 +72,7 @@ Raw Data
                         "CNRI-Python-GPL-Compatible",
                         "CNRI-Python-GPL-Compatible",
                         "CNRI Python Open Source GPL Compatible License Agreement",
-                        "scancode:cnri-python-1.6.1",
+                        "scancode://cnri-python-1.6.1",
                         "CNRI Python 1.6.1"
                     ],
                     "__impliedId": "CNRI-Python-GPL-Compatible"
@@ -81,7 +81,7 @@ Raw Data
                 "otherNames": [
                     "CNRI-Python-GPL-Compatible",
                     "CNRI Python Open Source GPL Compatible License Agreement",
-                    "scancode:cnri-python-1.6.1",
+                    "scancode://cnri-python-1.6.1",
                     "CNRI Python 1.6.1"
                 ]
             },
@@ -129,7 +129,7 @@ Raw Data
                 "spdxId": "CNRI-Python-GPL-Compatible",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:cnri-python-1.6.1",
+                        "scancode://cnri-python-1.6.1",
                         "CNRI Python 1.6.1",
                         "CNRI-Python-GPL-Compatible"
                     ],

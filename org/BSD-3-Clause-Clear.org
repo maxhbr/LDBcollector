@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:clear-bsd=
+- =scancode://clear-bsd=
 
 - =Clear BSD License=
 
@@ -105,7 +105,7 @@
       "__impliedNames": [
           "BSD-3-Clause-Clear",
           "BSD 3-Clause Clear License",
-          "scancode:clear-bsd",
+          "scancode://clear-bsd",
           "Clear BSD License",
           "bsd-3-clause-clear"
       ],
@@ -120,7 +120,7 @@
                       "BSD-3-Clause-Clear",
                       "BSD-3-Clause-Clear",
                       "BSD 3-Clause Clear License",
-                      "scancode:clear-bsd",
+                      "scancode://clear-bsd",
                       "Clear BSD License",
                       "bsd-3-clause-clear"
                   ],
@@ -130,7 +130,7 @@
               "otherNames": [
                   "BSD-3-Clause-Clear",
                   "BSD 3-Clause Clear License",
-                  "scancode:clear-bsd",
+                  "scancode://clear-bsd",
                   "Clear BSD License",
                   "bsd-3-clause-clear"
               ]
@@ -179,7 +179,7 @@
               "spdxId": "BSD-3-Clause-Clear",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:clear-bsd",
+                      "scancode://clear-bsd",
                       "Clear BSD License",
                       "BSD-3-Clause-Clear"
                   ],

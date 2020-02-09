@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:artistic-clarified+`
+* `+scancode://artistic-clarified+`
 * `+Artistic (clarified)+`
 
 === Comments on (easy) usability
@@ -190,7 +190,7 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
     "__impliedNames": [
         "ClArtistic",
         "Clarified Artistic License",
-        "scancode:artistic-clarified",
+        "scancode://artistic-clarified",
         "Artistic (clarified)"
     ],
     "__impliedId": "ClArtistic",
@@ -202,7 +202,7 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
                     "ClArtistic",
                     "ClArtistic",
                     "Clarified Artistic License",
-                    "scancode:artistic-clarified",
+                    "scancode://artistic-clarified",
                     "Artistic (clarified)"
                 ],
                 "__impliedId": "ClArtistic"
@@ -211,7 +211,7 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
             "otherNames": [
                 "ClArtistic",
                 "Clarified Artistic License",
-                "scancode:artistic-clarified",
+                "scancode://artistic-clarified",
                 "Artistic (clarified)"
             ]
         },
@@ -292,7 +292,7 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
             "spdxId": "ClArtistic",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:artistic-clarified",
+                    "scancode://artistic-clarified",
                     "Clarified Artistic License",
                     "ClArtistic"
                 ],

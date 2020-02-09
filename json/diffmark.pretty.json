@@ -2,7 +2,7 @@
     "__impliedNames": [
         "diffmark",
         "diffmark license",
-        "scancode:diffmark",
+        "scancode://diffmark",
         "diffmark License"
     ],
     "__impliedId": "diffmark",
@@ -14,7 +14,7 @@
                     "diffmark",
                     "diffmark",
                     "diffmark license",
-                    "scancode:diffmark",
+                    "scancode://diffmark",
                     "diffmark License"
                 ],
                 "__impliedId": "diffmark"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "diffmark",
                 "diffmark license",
-                "scancode:diffmark",
+                "scancode://diffmark",
                 "diffmark License"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "diffmark",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:diffmark",
+                    "scancode://diffmark",
                     "diffmark License",
                     "diffmark"
                 ],

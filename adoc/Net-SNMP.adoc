@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:net-snmp+`
+* `+scancode://net-snmp+`
 * `+Net SNMP License+`
 
 === Comments on (easy) usability
@@ -282,7 +282,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "Net-SNMP",
         "Net-SNMP License",
-        "scancode:net-snmp",
+        "scancode://net-snmp",
         "Net SNMP License"
     ],
     "__impliedId": "Net-SNMP",
@@ -293,7 +293,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "Net-SNMP",
                     "Net-SNMP",
                     "Net-SNMP License",
-                    "scancode:net-snmp",
+                    "scancode://net-snmp",
                     "Net SNMP License"
                 ],
                 "__impliedId": "Net-SNMP"
@@ -302,7 +302,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "Net-SNMP",
                 "Net-SNMP License",
-                "scancode:net-snmp",
+                "scancode://net-snmp",
                 "Net SNMP License"
             ]
         },
@@ -350,7 +350,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "Net-SNMP",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:net-snmp",
+                    "scancode://net-snmp",
                     "Net SNMP License",
                     "Net-SNMP"
                 ],

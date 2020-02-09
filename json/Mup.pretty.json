@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Mup",
         "Mup License",
-        "scancode:mup"
+        "scancode://mup"
     ],
     "__impliedId": "Mup",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "Mup",
                     "Mup",
                     "Mup License",
-                    "scancode:mup"
+                    "scancode://mup"
                 ],
                 "__impliedId": "Mup"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "Mup",
                 "Mup License",
-                "scancode:mup"
+                "scancode://mup"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "Mup",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:mup",
+                    "scancode://mup",
                     "Mup License",
                     "Mup"
                 ],

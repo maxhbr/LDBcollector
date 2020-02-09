@@ -5,7 +5,7 @@
 
 **Other Names:**
 
--   `scancode:glide`
+-   `scancode://glide`
 
 -   `3DFX GLIDE`
 
@@ -288,7 +288,7 @@ Raw Data
         "__impliedNames": [
             "Glide",
             "3dfx Glide License",
-            "scancode:glide",
+            "scancode://glide",
             "3DFX GLIDE"
         ],
         "__impliedId": "Glide",
@@ -300,7 +300,7 @@ Raw Data
                         "Glide",
                         "Glide",
                         "3dfx Glide License",
-                        "scancode:glide",
+                        "scancode://glide",
                         "3DFX GLIDE"
                     ],
                     "__impliedId": "Glide"
@@ -309,7 +309,7 @@ Raw Data
                 "otherNames": [
                     "Glide",
                     "3dfx Glide License",
-                    "scancode:glide",
+                    "scancode://glide",
                     "3DFX GLIDE"
                 ]
             },
@@ -383,7 +383,7 @@ Raw Data
                 "spdxId": "Glide",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:glide",
+                        "scancode://glide",
                         "3DFX GLIDE",
                         "Glide"
                     ],

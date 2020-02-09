@@ -5,7 +5,7 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 **Other Names:**
 
--   `scancode:bsd-simplified`
+-   `scancode://bsd-simplified`
 
 -   `BSD-2`
 
@@ -119,7 +119,7 @@ Raw Data
         "__impliedNames": [
             "BSD-2-Clause",
             "BSD 2-Clause \"Simplified\" License",
-            "scancode:bsd-simplified",
+            "scancode://bsd-simplified",
             "bsd-2-clause",
             "BSD-2",
             "BSD 2-Clause License",
@@ -166,7 +166,7 @@ Raw Data
                         "BSD-2-Clause",
                         "BSD-2-Clause",
                         "BSD 2-Clause \"Simplified\" License",
-                        "scancode:bsd-simplified",
+                        "scancode://bsd-simplified",
                         "bsd-2-clause",
                         "BSD-2",
                         "BSD 2-Clause License",
@@ -183,7 +183,7 @@ Raw Data
                 "otherNames": [
                     "BSD-2-Clause",
                     "BSD 2-Clause \"Simplified\" License",
-                    "scancode:bsd-simplified",
+                    "scancode://bsd-simplified",
                     "bsd-2-clause",
                     "BSD-2",
                     "BSD 2-Clause License",
@@ -288,7 +288,7 @@ Raw Data
                 "spdxId": "BSD-2-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:bsd-simplified",
+                        "scancode://bsd-simplified",
                         "BSD-2-Clause",
                         "BSD-2-Clause"
                     ],

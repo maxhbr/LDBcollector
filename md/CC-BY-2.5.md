@@ -5,7 +5,7 @@ Creative Commons Attribution 2.5 Generic (CC-BY-2.5)
 
 **Other Names:**
 
--   `scancode:cc-by-2.5`
+-   `scancode://cc-by-2.5`
 
 Comments on (easy) usability
 ----------------------------
@@ -93,7 +93,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-2.5",
             "Creative Commons Attribution 2.5 Generic",
-            "scancode:cc-by-2.5"
+            "scancode://cc-by-2.5"
         ],
         "__impliedId": "CC-BY-2.5",
         "facts": {
@@ -103,7 +103,7 @@ Raw Data
                         "CC-BY-2.5",
                         "CC-BY-2.5",
                         "Creative Commons Attribution 2.5 Generic",
-                        "scancode:cc-by-2.5"
+                        "scancode://cc-by-2.5"
                     ],
                     "__impliedId": "CC-BY-2.5"
                 },
@@ -111,7 +111,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-2.5",
                     "Creative Commons Attribution 2.5 Generic",
-                    "scancode:cc-by-2.5"
+                    "scancode://cc-by-2.5"
                 ]
             },
             "SPDX": {
@@ -160,7 +160,7 @@ Raw Data
                 "spdxId": "CC-BY-2.5",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:cc-by-2.5",
+                        "scancode://cc-by-2.5",
                         "CC-BY-2.5",
                         "CC-BY-2.5"
                     ],

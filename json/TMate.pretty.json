@@ -2,7 +2,7 @@
     "__impliedNames": [
         "TMate",
         "TMate Open Source License",
-        "scancode:tmate"
+        "scancode://tmate"
     ],
     "__impliedId": "TMate",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "TMate",
                     "TMate",
                     "TMate Open Source License",
-                    "scancode:tmate"
+                    "scancode://tmate"
                 ],
                 "__impliedId": "TMate"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "TMate",
                 "TMate Open Source License",
-                "scancode:tmate"
+                "scancode://tmate"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "TMate",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:tmate",
+                    "scancode://tmate",
                     "TMate Open Source License",
                     "TMate"
                 ],

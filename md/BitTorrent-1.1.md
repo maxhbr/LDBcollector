@@ -5,7 +5,7 @@ BitTorrent Open Source License v1.1 (BitTorrent-1.1)
 
 **Other Names:**
 
--   `scancode:bittorrent-1.1`
+-   `scancode://bittorrent-1.1`
 
 -   `BitTorrent 1.1`
 
@@ -178,7 +178,7 @@ Raw Data
         "__impliedNames": [
             "BitTorrent-1.1",
             "BitTorrent Open Source License v1.1",
-            "scancode:bittorrent-1.1",
+            "scancode://bittorrent-1.1",
             "BitTorrent 1.1",
             "BitTorrent Open Source License 1.1"
         ],
@@ -217,7 +217,7 @@ Raw Data
                         "BitTorrent-1.1",
                         "BitTorrent-1.1",
                         "BitTorrent Open Source License v1.1",
-                        "scancode:bittorrent-1.1",
+                        "scancode://bittorrent-1.1",
                         "BitTorrent 1.1",
                         "BitTorrent Open Source License 1.1"
                     ],
@@ -227,7 +227,7 @@ Raw Data
                 "otherNames": [
                     "BitTorrent-1.1",
                     "BitTorrent Open Source License v1.1",
-                    "scancode:bittorrent-1.1",
+                    "scancode://bittorrent-1.1",
                     "BitTorrent 1.1",
                     "BitTorrent Open Source License 1.1"
                 ]
@@ -278,7 +278,7 @@ Raw Data
                 "spdxId": "BitTorrent-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:bittorrent-1.1",
+                        "scancode://bittorrent-1.1",
                         "BitTorrent 1.1",
                         "BitTorrent-1.1"
                     ],

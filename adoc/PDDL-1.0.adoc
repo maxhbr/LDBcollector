@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:pddl-1.0+`
+* `+scancode://pddl-1.0+`
 * `+PDDL 1.0+`
 * `+Open Data Commons Public Domain Dedication and Licence 1.0+`
 
@@ -172,7 +172,7 @@ liable for, and expressly excludes, all liability for loss or damage however and
     "__impliedNames": [
         "PDDL-1.0",
         "ODC Public Domain Dedication & License 1.0",
-        "scancode:pddl-1.0",
+        "scancode://pddl-1.0",
         "PDDL 1.0",
         "Open Data Commons Public Domain Dedication and Licence 1.0"
     ],
@@ -211,7 +211,7 @@ liable for, and expressly excludes, all liability for loss or damage however and
                     "PDDL-1.0",
                     "PDDL-1.0",
                     "ODC Public Domain Dedication & License 1.0",
-                    "scancode:pddl-1.0",
+                    "scancode://pddl-1.0",
                     "PDDL 1.0",
                     "Open Data Commons Public Domain Dedication and Licence 1.0"
                 ],
@@ -221,7 +221,7 @@ liable for, and expressly excludes, all liability for loss or damage however and
             "otherNames": [
                 "PDDL-1.0",
                 "ODC Public Domain Dedication & License 1.0",
-                "scancode:pddl-1.0",
+                "scancode://pddl-1.0",
                 "PDDL 1.0",
                 "Open Data Commons Public Domain Dedication and Licence 1.0"
             ]
@@ -272,7 +272,7 @@ liable for, and expressly excludes, all liability for loss or damage however and
             "spdxId": "PDDL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:pddl-1.0",
+                    "scancode://pddl-1.0",
                     "PDDL 1.0",
                     "PDDL-1.0"
                 ],

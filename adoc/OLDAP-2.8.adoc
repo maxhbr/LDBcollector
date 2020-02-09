@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:openldap-2.8+`
+* `+scancode://openldap-2.8+`
 * `+OpenLDAP Public License 2.8+`
 
 === Comments on (easy) usability
@@ -86,7 +86,7 @@ distribute verbatim copies of this document is granted.
     "__impliedNames": [
         "OLDAP-2.8",
         "Open LDAP Public License v2.8",
-        "scancode:openldap-2.8",
+        "scancode://openldap-2.8",
         "OpenLDAP Public License 2.8"
     ],
     "__impliedId": "OLDAP-2.8",
@@ -97,7 +97,7 @@ distribute verbatim copies of this document is granted.
                     "OLDAP-2.8",
                     "OLDAP-2.8",
                     "Open LDAP Public License v2.8",
-                    "scancode:openldap-2.8",
+                    "scancode://openldap-2.8",
                     "OpenLDAP Public License 2.8"
                 ],
                 "__impliedId": "OLDAP-2.8"
@@ -106,7 +106,7 @@ distribute verbatim copies of this document is granted.
             "otherNames": [
                 "OLDAP-2.8",
                 "Open LDAP Public License v2.8",
-                "scancode:openldap-2.8",
+                "scancode://openldap-2.8",
                 "OpenLDAP Public License 2.8"
             ]
         },
@@ -154,7 +154,7 @@ distribute verbatim copies of this document is granted.
             "spdxId": "OLDAP-2.8",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:openldap-2.8",
+                    "scancode://openldap-2.8",
                     "OpenLDAP Public License 2.8",
                     "OLDAP-2.8"
                 ],

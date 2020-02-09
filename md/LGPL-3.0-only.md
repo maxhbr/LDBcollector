@@ -7,7 +7,7 @@ GNU Lesser General Public License v3.0 or later (LGPL-3.0-only)
 
 -   `LGPL-3.0-or-later`
 
--   `scancode:lgpl-3.0-plus`
+-   `scancode://lgpl-3.0-plus`
 
 -   `LGPL 3.0 or later`
 
@@ -250,7 +250,7 @@ Raw Data
         "__impliedNames": [
             "LGPL-3.0-or-later",
             "GNU Lesser General Public License v3.0 or later",
-            "scancode:lgpl-3.0-plus",
+            "scancode://lgpl-3.0-plus",
             "LGPL 3.0 or later",
             "GNU Lesser General Public License 3.0",
             "LGPL-3.0+",
@@ -305,7 +305,7 @@ Raw Data
                         "LGPL-3.0-or-later",
                         "LGPL-3.0-or-later",
                         "GNU Lesser General Public License v3.0 or later",
-                        "scancode:lgpl-3.0-plus",
+                        "scancode://lgpl-3.0-plus",
                         "LGPL 3.0 or later",
                         "GNU Lesser General Public License 3.0",
                         "LGPL-3.0+",
@@ -321,7 +321,7 @@ Raw Data
                 "otherNames": [
                     "LGPL-3.0-or-later",
                     "GNU Lesser General Public License v3.0 or later",
-                    "scancode:lgpl-3.0-plus",
+                    "scancode://lgpl-3.0-plus",
                     "LGPL 3.0 or later",
                     "GNU Lesser General Public License 3.0",
                     "LGPL-3.0+",
@@ -439,7 +439,7 @@ Raw Data
                 "spdxId": "LGPL-3.0-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:lgpl-3.0-plus",
+                        "scancode://lgpl-3.0-plus",
                         "LGPL 3.0 or later",
                         "LGPL-3.0-or-later"
                     ],

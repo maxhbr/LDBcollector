@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:zlib-acknowledgement+`
+* `+scancode://zlib-acknowledgement+`
 * `+ZLIB License with Acknowledgment+`
 
 === Comments on (easy) usability
@@ -88,7 +88,7 @@ misrepresented as being the original software.
     "__impliedNames": [
         "zlib-acknowledgement",
         "zlib/libpng License with Acknowledgement",
-        "scancode:zlib-acknowledgement",
+        "scancode://zlib-acknowledgement",
         "ZLIB License with Acknowledgment"
     ],
     "__impliedId": "zlib-acknowledgement",
@@ -103,7 +103,7 @@ misrepresented as being the original software.
                     "zlib-acknowledgement",
                     "zlib-acknowledgement",
                     "zlib/libpng License with Acknowledgement",
-                    "scancode:zlib-acknowledgement",
+                    "scancode://zlib-acknowledgement",
                     "ZLIB License with Acknowledgment"
                 ],
                 "__impliedId": "zlib-acknowledgement"
@@ -112,7 +112,7 @@ misrepresented as being the original software.
             "otherNames": [
                 "zlib-acknowledgement",
                 "zlib/libpng License with Acknowledgement",
-                "scancode:zlib-acknowledgement",
+                "scancode://zlib-acknowledgement",
                 "ZLIB License with Acknowledgment"
             ]
         },
@@ -198,7 +198,7 @@ misrepresented as being the original software.
             "spdxId": "zlib-acknowledgement",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:zlib-acknowledgement",
+                    "scancode://zlib-acknowledgement",
                     "ZLIB License with Acknowledgment",
                     "zlib-acknowledgement"
                 ],

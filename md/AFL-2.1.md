@@ -5,7 +5,7 @@ Academic Free License v2.1 (AFL-2.1)
 
 **Other Names:**
 
--   `scancode:afl-2.1`
+-   `scancode://afl-2.1`
 
 -   `AFL 2.1`
 
@@ -134,7 +134,7 @@ Raw Data
         "__impliedNames": [
             "AFL-2.1",
             "Academic Free License v2.1",
-            "scancode:afl-2.1",
+            "scancode://afl-2.1",
             "AFL 2.1"
         ],
         "__impliedId": "AFL-2.1",
@@ -146,7 +146,7 @@ Raw Data
                         "AFL-2.1",
                         "AFL-2.1",
                         "Academic Free License v2.1",
-                        "scancode:afl-2.1",
+                        "scancode://afl-2.1",
                         "AFL 2.1"
                     ],
                     "__impliedId": "AFL-2.1"
@@ -155,7 +155,7 @@ Raw Data
                 "otherNames": [
                     "AFL-2.1",
                     "Academic Free License v2.1",
-                    "scancode:afl-2.1",
+                    "scancode://afl-2.1",
                     "AFL 2.1"
                 ]
             },
@@ -225,7 +225,7 @@ Raw Data
                 "spdxId": "AFL-2.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:afl-2.1",
+                        "scancode://afl-2.1",
                         "AFL 2.1",
                         "AFL-2.1"
                     ],

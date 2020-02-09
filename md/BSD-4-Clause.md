@@ -5,7 +5,7 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 **Other Names:**
 
--   `scancode:bsd-original`
+-   `scancode://bsd-original`
 
 -   `BSD-Original`
 
@@ -116,7 +116,7 @@ Raw Data
         "__impliedNames": [
             "BSD-4-Clause",
             "BSD 4-Clause \"Original\" or \"Old\" License",
-            "scancode:bsd-original",
+            "scancode://bsd-original",
             "BSD-Original",
             "BSD License (original)",
             "BSD 4-clause \"Original\" or \"Old\" License"
@@ -144,7 +144,7 @@ Raw Data
                         "BSD-4-Clause",
                         "BSD-4-Clause",
                         "BSD 4-Clause \"Original\" or \"Old\" License",
-                        "scancode:bsd-original",
+                        "scancode://bsd-original",
                         "BSD-Original",
                         "BSD License (original)"
                     ],
@@ -154,7 +154,7 @@ Raw Data
                 "otherNames": [
                     "BSD-4-Clause",
                     "BSD 4-Clause \"Original\" or \"Old\" License",
-                    "scancode:bsd-original",
+                    "scancode://bsd-original",
                     "BSD-Original",
                     "BSD License (original)"
                 ]
@@ -243,7 +243,7 @@ Raw Data
                 "spdxId": "BSD-4-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:bsd-original",
+                        "scancode://bsd-original",
                         "BSD-Original",
                         "BSD-4-Clause"
                     ],

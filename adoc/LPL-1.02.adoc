@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:lucent-pl-1.02+`
+* `+scancode://lucent-pl-1.02+`
 * `+Lucent Public License 1.02+`
 * `+Lucent Public License, Version 1.02+`
 
@@ -126,7 +126,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
     "__impliedNames": [
         "LPL-1.02",
         "Lucent Public License v1.02",
-        "scancode:lucent-pl-1.02",
+        "scancode://lucent-pl-1.02",
         "Lucent Public License 1.02",
         "Lucent Public License, Version 1.02"
     ],
@@ -165,7 +165,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
                     "LPL-1.02",
                     "LPL-1.02",
                     "Lucent Public License v1.02",
-                    "scancode:lucent-pl-1.02",
+                    "scancode://lucent-pl-1.02",
                     "Lucent Public License 1.02",
                     "Lucent Public License, Version 1.02"
                 ],
@@ -175,7 +175,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "otherNames": [
                 "LPL-1.02",
                 "Lucent Public License v1.02",
-                "scancode:lucent-pl-1.02",
+                "scancode://lucent-pl-1.02",
                 "Lucent Public License 1.02",
                 "Lucent Public License, Version 1.02"
             ]
@@ -241,7 +241,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "spdxId": "LPL-1.02",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:lucent-pl-1.02",
+                    "scancode://lucent-pl-1.02",
                     "Lucent Public License 1.02",
                     "LPL-1.02"
                 ],

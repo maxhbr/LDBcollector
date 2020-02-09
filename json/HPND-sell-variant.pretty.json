@@ -2,9 +2,9 @@
     "__impliedNames": [
         "HPND-sell-variant",
         "Historical Permission Notice and Disclaimer - sell variant",
-        "scancode:x11-keith-packard",
+        "scancode://x11-keith-packard",
         "X11-Style (Keith Packard)",
-        "scancode:historical-sell-variant"
+        "scancode://historical-sell-variant"
     ],
     "__impliedId": "HPND-sell-variant",
     "facts": {
@@ -14,7 +14,7 @@
                     "HPND-sell-variant",
                     "HPND-sell-variant",
                     "Historical Permission Notice and Disclaimer - sell variant",
-                    "scancode:x11-keith-packard",
+                    "scancode://x11-keith-packard",
                     "X11-Style (Keith Packard)"
                 ],
                 "__impliedId": "HPND-sell-variant"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "HPND-sell-variant",
                 "Historical Permission Notice and Disclaimer - sell variant",
-                "scancode:x11-keith-packard",
+                "scancode://x11-keith-packard",
                 "X11-Style (Keith Packard)"
             ]
         },
@@ -74,7 +74,7 @@
             "spdxId": "HPND-sell-variant",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:x11-keith-packard",
+                    "scancode://x11-keith-packard",
                     "X11-Style (Keith Packard)",
                     "HPND-sell-variant"
                 ],

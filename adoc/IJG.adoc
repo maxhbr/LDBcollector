@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:ijg+`
+* `+scancode://ijg+`
 * `+JPEG License+`
 
 === Comments on (easy) usability
@@ -157,7 +157,7 @@ We are required to state that
     "__impliedNames": [
         "IJG",
         "Independent JPEG Group License",
-        "scancode:ijg",
+        "scancode://ijg",
         "JPEG License"
     ],
     "__impliedId": "IJG",
@@ -170,7 +170,7 @@ We are required to state that
                     "IJG",
                     "IJG",
                     "Independent JPEG Group License",
-                    "scancode:ijg",
+                    "scancode://ijg",
                     "JPEG License"
                 ],
                 "__impliedId": "IJG"
@@ -179,7 +179,7 @@ We are required to state that
             "otherNames": [
                 "IJG",
                 "Independent JPEG Group License",
-                "scancode:ijg",
+                "scancode://ijg",
                 "JPEG License"
             ]
         },
@@ -267,7 +267,7 @@ We are required to state that
             "spdxId": "IJG",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:ijg",
+                    "scancode://ijg",
                     "JPEG License",
                     "IJG"
                 ],

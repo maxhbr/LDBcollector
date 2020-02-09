@@ -5,7 +5,7 @@ Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic (CC-BY-NC
 
 **Other Names:**
 
--   `scancode:cc-by-nc-nd-2.5`
+-   `scancode://cc-by-nc-nd-2.5`
 
 Comments on (easy) usability
 ----------------------------
@@ -101,7 +101,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-NC-ND-2.5",
             "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
-            "scancode:cc-by-nc-nd-2.5"
+            "scancode://cc-by-nc-nd-2.5"
         ],
         "__impliedId": "CC-BY-NC-ND-2.5",
         "__impliedAmbiguousNames": [
@@ -126,7 +126,7 @@ Raw Data
                         "CC-BY-NC-ND-2.5",
                         "CC-BY-NC-ND-2.5",
                         "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
-                        "scancode:cc-by-nc-nd-2.5"
+                        "scancode://cc-by-nc-nd-2.5"
                     ],
                     "__impliedId": "CC-BY-NC-ND-2.5"
                 },
@@ -134,7 +134,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-NC-ND-2.5",
                     "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
-                    "scancode:cc-by-nc-nd-2.5"
+                    "scancode://cc-by-nc-nd-2.5"
                 ]
             },
             "SPDX": {
@@ -183,7 +183,7 @@ Raw Data
                 "spdxId": "CC-BY-NC-ND-2.5",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:cc-by-nc-nd-2.5",
+                        "scancode://cc-by-nc-nd-2.5",
                         "CC-BY-NC-ND-2.5",
                         "CC-BY-NC-ND-2.5"
                     ],

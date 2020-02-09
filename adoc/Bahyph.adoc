@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:bahyph+`
+* `+scancode://bahyph+`
 
 === Comments on (easy) usability
 
@@ -52,7 +52,7 @@ END OF COPYRIGHT NOTICE
     "__impliedNames": [
         "Bahyph",
         "Bahyph License",
-        "scancode:bahyph"
+        "scancode://bahyph"
     ],
     "__impliedId": "Bahyph",
     "__isFsfFree": true,
@@ -63,7 +63,7 @@ END OF COPYRIGHT NOTICE
                     "Bahyph",
                     "Bahyph",
                     "Bahyph License",
-                    "scancode:bahyph"
+                    "scancode://bahyph"
                 ],
                 "__impliedId": "Bahyph"
             },
@@ -71,7 +71,7 @@ END OF COPYRIGHT NOTICE
             "otherNames": [
                 "Bahyph",
                 "Bahyph License",
-                "scancode:bahyph"
+                "scancode://bahyph"
             ]
         },
         "SPDX": {
@@ -144,7 +144,7 @@ END OF COPYRIGHT NOTICE
             "spdxId": "Bahyph",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:bahyph",
+                    "scancode://bahyph",
                     "Bahyph License",
                     "Bahyph"
                 ],

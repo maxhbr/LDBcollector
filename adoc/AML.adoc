@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:aml+`
+* `+scancode://aml+`
 
 === Comments on (easy) usability
 
@@ -48,7 +48,7 @@ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSE
     "__impliedNames": [
         "AML",
         "Apple MIT License",
-        "scancode:aml"
+        "scancode://aml"
     ],
     "__impliedId": "AML",
     "__isFsfFree": true,
@@ -59,7 +59,7 @@ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSE
                     "AML",
                     "AML",
                     "Apple MIT License",
-                    "scancode:aml"
+                    "scancode://aml"
                 ],
                 "__impliedId": "AML"
             },
@@ -67,7 +67,7 @@ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSE
             "otherNames": [
                 "AML",
                 "Apple MIT License",
-                "scancode:aml"
+                "scancode://aml"
             ]
         },
         "SPDX": {
@@ -140,7 +140,7 @@ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSE
             "spdxId": "AML",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:aml",
+                    "scancode://aml",
                     "Apple MIT License",
                     "AML"
                 ],

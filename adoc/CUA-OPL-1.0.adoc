@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:cua-opl-1.0+`
+* `+scancode://cua-opl-1.0+`
 * `+CUA Office Public License+`
 * `+CUA Office Public License 1.0+`
 
@@ -509,7 +509,7 @@ Original Code Source Code for Your Modifications.]
     "__impliedNames": [
         "CUA-OPL-1.0",
         "CUA Office Public License v1.0",
-        "scancode:cua-opl-1.0",
+        "scancode://cua-opl-1.0",
         "CUA Office Public License",
         "CUA Office Public License 1.0"
     ],
@@ -548,7 +548,7 @@ Original Code Source Code for Your Modifications.]
                     "CUA-OPL-1.0",
                     "CUA-OPL-1.0",
                     "CUA Office Public License v1.0",
-                    "scancode:cua-opl-1.0",
+                    "scancode://cua-opl-1.0",
                     "CUA Office Public License",
                     "CUA Office Public License 1.0"
                 ],
@@ -558,7 +558,7 @@ Original Code Source Code for Your Modifications.]
             "otherNames": [
                 "CUA-OPL-1.0",
                 "CUA Office Public License v1.0",
-                "scancode:cua-opl-1.0",
+                "scancode://cua-opl-1.0",
                 "CUA Office Public License",
                 "CUA Office Public License 1.0"
             ]
@@ -619,7 +619,7 @@ Original Code Source Code for Your Modifications.]
             "spdxId": "CUA-OPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:cua-opl-1.0",
+                    "scancode://cua-opl-1.0",
                     "CUA-OPL-1.0",
                     "CUA-OPL-1.0"
                 ],

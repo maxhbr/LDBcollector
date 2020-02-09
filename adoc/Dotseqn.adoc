@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:dotseqn+`
+* `+scancode://dotseqn+`
 
 === Comments on (easy) usability
 
@@ -41,7 +41,7 @@ This notice must be left intact.
     "__impliedNames": [
         "Dotseqn",
         "Dotseqn License",
-        "scancode:dotseqn"
+        "scancode://dotseqn"
     ],
     "__impliedId": "Dotseqn",
     "__isFsfFree": true,
@@ -52,7 +52,7 @@ This notice must be left intact.
                     "Dotseqn",
                     "Dotseqn",
                     "Dotseqn License",
-                    "scancode:dotseqn"
+                    "scancode://dotseqn"
                 ],
                 "__impliedId": "Dotseqn"
             },
@@ -60,7 +60,7 @@ This notice must be left intact.
             "otherNames": [
                 "Dotseqn",
                 "Dotseqn License",
-                "scancode:dotseqn"
+                "scancode://dotseqn"
             ]
         },
         "SPDX": {
@@ -133,7 +133,7 @@ This notice must be left intact.
             "spdxId": "Dotseqn",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:dotseqn",
+                    "scancode://dotseqn",
                     "Dotseqn License",
                     "Dotseqn"
                 ],

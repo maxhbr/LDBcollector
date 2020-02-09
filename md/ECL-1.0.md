@@ -5,7 +5,7 @@ Educational Community License v1.0 (ECL-1.0)
 
 **Other Names:**
 
--   `scancode:ecl-1.0`
+-   `scancode://ecl-1.0`
 
 -   `ECL 1.0`
 
@@ -106,7 +106,7 @@ Raw Data
         "__impliedNames": [
             "ECL-1.0",
             "Educational Community License v1.0",
-            "scancode:ecl-1.0",
+            "scancode://ecl-1.0",
             "ECL 1.0",
             "Educational Community License, Version 1.0",
             "Educational Community License 1.0"
@@ -121,7 +121,7 @@ Raw Data
                         "ECL-1.0",
                         "ECL-1.0",
                         "Educational Community License v1.0",
-                        "scancode:ecl-1.0",
+                        "scancode://ecl-1.0",
                         "ECL 1.0",
                         "Educational Community License, Version 1.0",
                         "Educational Community License 1.0"
@@ -132,7 +132,7 @@ Raw Data
                 "otherNames": [
                     "ECL-1.0",
                     "Educational Community License v1.0",
-                    "scancode:ecl-1.0",
+                    "scancode://ecl-1.0",
                     "ECL 1.0",
                     "Educational Community License, Version 1.0",
                     "Educational Community License 1.0"
@@ -220,7 +220,7 @@ Raw Data
                 "spdxId": "ECL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:ecl-1.0",
+                        "scancode://ecl-1.0",
                         "ECL 1.0",
                         "ECL-1.0"
                     ],

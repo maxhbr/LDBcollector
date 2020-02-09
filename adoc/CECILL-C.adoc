@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:cecill-c+`
+* `+scancode://cecill-c+`
 * `+CeCILL-C License+`
 
 === Comments on (easy) usability
@@ -288,7 +288,7 @@ Version 1.0 du 2006-09-05."
     "__impliedNames": [
         "CECILL-C",
         "CeCILL-C Free Software License Agreement",
-        "scancode:cecill-c",
+        "scancode://cecill-c",
         "CeCILL-C License"
     ],
     "__impliedId": "CECILL-C",
@@ -300,7 +300,7 @@ Version 1.0 du 2006-09-05."
                     "CECILL-C",
                     "CECILL-C",
                     "CeCILL-C Free Software License Agreement",
-                    "scancode:cecill-c",
+                    "scancode://cecill-c",
                     "CeCILL-C License"
                 ],
                 "__impliedId": "CECILL-C"
@@ -309,7 +309,7 @@ Version 1.0 du 2006-09-05."
             "otherNames": [
                 "CECILL-C",
                 "CeCILL-C Free Software License Agreement",
-                "scancode:cecill-c",
+                "scancode://cecill-c",
                 "CeCILL-C License"
             ]
         },
@@ -385,7 +385,7 @@ Version 1.0 du 2006-09-05."
             "spdxId": "CECILL-C",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:cecill-c",
+                    "scancode://cecill-c",
                     "CeCILL-C License",
                     "CECILL-C"
                 ],

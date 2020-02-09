@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Net-SNMP",
         "Net-SNMP License",
-        "scancode:net-snmp",
+        "scancode://net-snmp",
         "Net SNMP License"
     ],
     "__impliedId": "Net-SNMP",
@@ -13,7 +13,7 @@
                     "Net-SNMP",
                     "Net-SNMP",
                     "Net-SNMP License",
-                    "scancode:net-snmp",
+                    "scancode://net-snmp",
                     "Net SNMP License"
                 ],
                 "__impliedId": "Net-SNMP"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "Net-SNMP",
                 "Net-SNMP License",
-                "scancode:net-snmp",
+                "scancode://net-snmp",
                 "Net SNMP License"
             ]
         },
@@ -70,7 +70,7 @@
             "spdxId": "Net-SNMP",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:net-snmp",
+                    "scancode://net-snmp",
                     "Net SNMP License",
                     "Net-SNMP"
                 ],

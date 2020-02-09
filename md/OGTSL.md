@@ -5,7 +5,7 @@ Open Group Test Suite License (OGTSL)
 
 **Other Names:**
 
--   `scancode:opengroup`
+-   `scancode://opengroup`
 
 -   `The Open Group Test Suite License (OGTSL)`
 
@@ -114,7 +114,7 @@ Raw Data
         "__impliedNames": [
             "OGTSL",
             "Open Group Test Suite License",
-            "scancode:opengroup",
+            "scancode://opengroup",
             "The Open Group Test Suite License (OGTSL)",
             "License :: OSI Approved :: Open Group Test Suite License"
         ],
@@ -153,7 +153,7 @@ Raw Data
                         "OGTSL",
                         "OGTSL",
                         "Open Group Test Suite License",
-                        "scancode:opengroup",
+                        "scancode://opengroup",
                         "The Open Group Test Suite License (OGTSL)",
                         "License :: OSI Approved :: Open Group Test Suite License"
                     ],
@@ -163,7 +163,7 @@ Raw Data
                 "otherNames": [
                     "OGTSL",
                     "Open Group Test Suite License",
-                    "scancode:opengroup",
+                    "scancode://opengroup",
                     "The Open Group Test Suite License (OGTSL)",
                     "License :: OSI Approved :: Open Group Test Suite License"
                 ]
@@ -253,7 +253,7 @@ Raw Data
                 "spdxId": "OGTSL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:opengroup",
+                        "scancode://opengroup",
                         "Open Group Test Suite License",
                         "OGTSL"
                     ],

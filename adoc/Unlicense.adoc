@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:unlicense+`
+* `+scancode://unlicense+`
 * `+Unlicense 1+`
 
 === Description
@@ -109,7 +109,7 @@ For more information, please refer to <http://unlicense.org/>
     "__impliedNames": [
         "Unlicense",
         "The Unlicense",
-        "scancode:unlicense",
+        "scancode://unlicense",
         "unlicense",
         "Unlicense 1"
     ],
@@ -150,7 +150,7 @@ For more information, please refer to <http://unlicense.org/>
                     "Unlicense",
                     "Unlicense",
                     "The Unlicense",
-                    "scancode:unlicense",
+                    "scancode://unlicense",
                     "unlicense",
                     "Unlicense 1"
                 ],
@@ -160,7 +160,7 @@ For more information, please refer to <http://unlicense.org/>
             "otherNames": [
                 "Unlicense",
                 "The Unlicense",
-                "scancode:unlicense",
+                "scancode://unlicense",
                 "unlicense",
                 "Unlicense 1"
             ]
@@ -235,7 +235,7 @@ For more information, please refer to <http://unlicense.org/>
             "spdxId": "Unlicense",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:unlicense",
+                    "scancode://unlicense",
                     "Unlicense",
                     "Unlicense"
                 ],

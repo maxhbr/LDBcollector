@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:vsl-1.0+`
+* `+scancode://vsl-1.0+`
 * `+Vovida Software License 1.0+`
 * `+The Vovida Software License, Version 1.0+`
 * `+License :: OSI Approved :: Vovida Software License 1.0+`
@@ -100,7 +100,7 @@ legends also need to be complied with as well.
     "__impliedNames": [
         "VSL-1.0",
         "Vovida Software License v1.0",
-        "scancode:vsl-1.0",
+        "scancode://vsl-1.0",
         "Vovida Software License 1.0",
         "The Vovida Software License, Version 1.0",
         "License :: OSI Approved :: Vovida Software License 1.0"
@@ -140,7 +140,7 @@ legends also need to be complied with as well.
                     "VSL-1.0",
                     "VSL-1.0",
                     "Vovida Software License v1.0",
-                    "scancode:vsl-1.0",
+                    "scancode://vsl-1.0",
                     "Vovida Software License 1.0",
                     "The Vovida Software License, Version 1.0",
                     "License :: OSI Approved :: Vovida Software License 1.0"
@@ -151,7 +151,7 @@ legends also need to be complied with as well.
             "otherNames": [
                 "VSL-1.0",
                 "Vovida Software License v1.0",
-                "scancode:vsl-1.0",
+                "scancode://vsl-1.0",
                 "Vovida Software License 1.0",
                 "The Vovida Software License, Version 1.0",
                 "License :: OSI Approved :: Vovida Software License 1.0"
@@ -214,7 +214,7 @@ legends also need to be complied with as well.
             "spdxId": "VSL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:vsl-1.0",
+                    "scancode://vsl-1.0",
                     "Vovida Software License 1.0",
                     "VSL-1.0"
                 ],

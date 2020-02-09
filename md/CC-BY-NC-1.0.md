@@ -5,7 +5,7 @@ Creative Commons Attribution Non Commercial 1.0 Generic (CC-BY-NC-1.0)
 
 **Other Names:**
 
--   `scancode:cc-by-nc-1.0`
+-   `scancode://cc-by-nc-1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -101,7 +101,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-NC-1.0",
             "Creative Commons Attribution Non Commercial 1.0 Generic",
-            "scancode:cc-by-nc-1.0"
+            "scancode://cc-by-nc-1.0"
         ],
         "__impliedId": "CC-BY-NC-1.0",
         "__impliedAmbiguousNames": [
@@ -126,7 +126,7 @@ Raw Data
                         "CC-BY-NC-1.0",
                         "CC-BY-NC-1.0",
                         "Creative Commons Attribution Non Commercial 1.0 Generic",
-                        "scancode:cc-by-nc-1.0"
+                        "scancode://cc-by-nc-1.0"
                     ],
                     "__impliedId": "CC-BY-NC-1.0"
                 },
@@ -134,7 +134,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-NC-1.0",
                     "Creative Commons Attribution Non Commercial 1.0 Generic",
-                    "scancode:cc-by-nc-1.0"
+                    "scancode://cc-by-nc-1.0"
                 ]
             },
             "SPDX": {
@@ -183,7 +183,7 @@ Raw Data
                 "spdxId": "CC-BY-NC-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:cc-by-nc-1.0",
+                        "scancode://cc-by-nc-1.0",
                         "CC-BY-NC-1.0",
                         "CC-BY-NC-1.0"
                     ],

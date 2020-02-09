@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:ogl-uk-1.0=
+- =scancode://ogl-uk-1.0=
 
 - =Open Government Licence 1.0 (United Kingdom)=
 
@@ -142,7 +142,7 @@
       "__impliedNames": [
           "OGL-UK-1.0",
           "Open Government Licence v1.0",
-          "scancode:ogl-uk-1.0",
+          "scancode://ogl-uk-1.0",
           "Open Government Licence 1.0 (United Kingdom)"
       ],
       "__impliedId": "OGL-UK-1.0",
@@ -180,7 +180,7 @@
                       "OGL-UK-1.0",
                       "OGL-UK-1.0",
                       "Open Government Licence v1.0",
-                      "scancode:ogl-uk-1.0",
+                      "scancode://ogl-uk-1.0",
                       "Open Government Licence 1.0 (United Kingdom)"
                   ],
                   "__impliedId": "OGL-UK-1.0"
@@ -189,7 +189,7 @@
               "otherNames": [
                   "OGL-UK-1.0",
                   "Open Government Licence v1.0",
-                  "scancode:ogl-uk-1.0",
+                  "scancode://ogl-uk-1.0",
                   "Open Government Licence 1.0 (United Kingdom)"
               ]
           },
@@ -239,7 +239,7 @@
               "spdxId": "OGL-UK-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:ogl-uk-1.0",
+                      "scancode://ogl-uk-1.0",
                       "OGL-UK-1.0",
                       "OGL-UK-1.0"
                   ],

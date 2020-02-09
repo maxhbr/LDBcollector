@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Adobe-Glyph",
         "Adobe Glyph List License",
-        "scancode:adobe-glyph",
+        "scancode://adobe-glyph",
         "Adobe Glyph License"
     ],
     "__impliedId": "Adobe-Glyph",
@@ -14,7 +14,7 @@
                     "Adobe-Glyph",
                     "Adobe-Glyph",
                     "Adobe Glyph List License",
-                    "scancode:adobe-glyph",
+                    "scancode://adobe-glyph",
                     "Adobe Glyph License"
                 ],
                 "__impliedId": "Adobe-Glyph"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "Adobe-Glyph",
                 "Adobe Glyph List License",
-                "scancode:adobe-glyph",
+                "scancode://adobe-glyph",
                 "Adobe Glyph License"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "Adobe-Glyph",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:adobe-glyph",
+                    "scancode://adobe-glyph",
                     "Adobe Glyph License",
                     "Adobe-Glyph"
                 ],

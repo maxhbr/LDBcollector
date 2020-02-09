@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:fsf-free+`
+* `+scancode://fsf-free+`
 * `+FSF Free Software License+`
 
 === Comments on (easy) usability
@@ -49,7 +49,7 @@ unlimited permission to copy, distribute and modify it.
     "__impliedNames": [
         "FSFUL",
         "FSF Unlimited License",
-        "scancode:fsf-free",
+        "scancode://fsf-free",
         "FSF Free Software License"
     ],
     "__impliedId": "FSFUL",
@@ -61,7 +61,7 @@ unlimited permission to copy, distribute and modify it.
                     "FSFUL",
                     "FSFUL",
                     "FSF Unlimited License",
-                    "scancode:fsf-free",
+                    "scancode://fsf-free",
                     "FSF Free Software License"
                 ],
                 "__impliedId": "FSFUL"
@@ -70,7 +70,7 @@ unlimited permission to copy, distribute and modify it.
             "otherNames": [
                 "FSFUL",
                 "FSF Unlimited License",
-                "scancode:fsf-free",
+                "scancode://fsf-free",
                 "FSF Free Software License"
             ]
         },
@@ -144,7 +144,7 @@ unlimited permission to copy, distribute and modify it.
             "spdxId": "FSFUL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:fsf-free",
+                    "scancode://fsf-free",
                     "FSF Free Software License",
                     "FSFUL"
                 ],

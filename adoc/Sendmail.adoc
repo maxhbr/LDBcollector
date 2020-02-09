@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:sendmail+`
+* `+scancode://sendmail+`
 
 === Comments on (easy) usability
 
@@ -127,7 +127,7 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
     "__impliedNames": [
         "Sendmail",
         "Sendmail License",
-        "scancode:sendmail"
+        "scancode://sendmail"
     ],
     "__impliedId": "Sendmail",
     "__isFsfFree": true,
@@ -138,7 +138,7 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
                     "Sendmail",
                     "Sendmail",
                     "Sendmail License",
-                    "scancode:sendmail"
+                    "scancode://sendmail"
                 ],
                 "__impliedId": "Sendmail"
             },
@@ -146,7 +146,7 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
             "otherNames": [
                 "Sendmail",
                 "Sendmail License",
-                "scancode:sendmail"
+                "scancode://sendmail"
             ]
         },
         "SPDX": {
@@ -226,7 +226,7 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
             "spdxId": "Sendmail",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:sendmail",
+                    "scancode://sendmail",
                     "Sendmail License",
                     "Sendmail"
                 ],

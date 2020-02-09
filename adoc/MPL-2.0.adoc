@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:mpl-2.0+`
+* `+scancode://mpl-2.0+`
 * `+MPL 2.0+`
 * `+Mozilla Public License, Version 2.0+`
 * `+License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)+`
@@ -513,7 +513,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
     "__impliedNames": [
         "MPL-2.0",
         "Mozilla Public License 2.0",
-        "scancode:mpl-2.0",
+        "scancode://mpl-2.0",
         "MPL 2.0",
         "mpl-2.0",
         "Mozilla Public License, Version 2.0",
@@ -558,7 +558,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
                     "MPL-2.0",
                     "MPL-2.0",
                     "Mozilla Public License 2.0",
-                    "scancode:mpl-2.0",
+                    "scancode://mpl-2.0",
                     "MPL 2.0",
                     "mpl-2.0",
                     "Mozilla Public License, Version 2.0",
@@ -570,7 +570,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
             "otherNames": [
                 "MPL-2.0",
                 "Mozilla Public License 2.0",
-                "scancode:mpl-2.0",
+                "scancode://mpl-2.0",
                 "MPL 2.0",
                 "mpl-2.0",
                 "Mozilla Public License, Version 2.0",
@@ -654,7 +654,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
             "spdxId": "MPL-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:mpl-2.0",
+                    "scancode://mpl-2.0",
                     "MPL 2.0",
                     "MPL-2.0"
                 ],

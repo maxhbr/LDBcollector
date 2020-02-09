@@ -5,7 +5,7 @@ Creative Commons Attribution Non Commercial Share Alike 3.0 Unported (CC-BY-NC-S
 
 **Other Names:**
 
--   `scancode:cc-by-nc-sa-3.0`
+-   `scancode://cc-by-nc-sa-3.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -405,7 +405,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-NC-SA-3.0",
             "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
-            "scancode:cc-by-nc-sa-3.0"
+            "scancode://cc-by-nc-sa-3.0"
         ],
         "__impliedId": "CC-BY-NC-SA-3.0",
         "__impliedAmbiguousNames": [
@@ -430,7 +430,7 @@ Raw Data
                         "CC-BY-NC-SA-3.0",
                         "CC-BY-NC-SA-3.0",
                         "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
-                        "scancode:cc-by-nc-sa-3.0"
+                        "scancode://cc-by-nc-sa-3.0"
                     ],
                     "__impliedId": "CC-BY-NC-SA-3.0"
                 },
@@ -438,7 +438,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-NC-SA-3.0",
                     "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
-                    "scancode:cc-by-nc-sa-3.0"
+                    "scancode://cc-by-nc-sa-3.0"
                 ]
             },
             "SPDX": {
@@ -487,7 +487,7 @@ Raw Data
                 "spdxId": "CC-BY-NC-SA-3.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:cc-by-nc-sa-3.0",
+                        "scancode://cc-by-nc-sa-3.0",
                         "CC-BY-NC-SA-3.0",
                         "CC-BY-NC-SA-3.0"
                     ],

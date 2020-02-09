@@ -5,7 +5,7 @@ Academy of Motion Picture Arts and Sciences BSD (AMPAS)
 
 **Other Names:**
 
--   `scancode:ampas`
+-   `scancode://ampas`
 
 -   `AMPAS BSD-Style License`
 
@@ -52,7 +52,7 @@ Raw Data
         "__impliedNames": [
             "AMPAS",
             "Academy of Motion Picture Arts and Sciences BSD",
-            "scancode:ampas",
+            "scancode://ampas",
             "AMPAS BSD-Style License"
         ],
         "__impliedId": "AMPAS",
@@ -64,7 +64,7 @@ Raw Data
                         "AMPAS",
                         "AMPAS",
                         "Academy of Motion Picture Arts and Sciences BSD",
-                        "scancode:ampas",
+                        "scancode://ampas",
                         "AMPAS BSD-Style License"
                     ],
                     "__impliedId": "AMPAS"
@@ -73,7 +73,7 @@ Raw Data
                 "otherNames": [
                     "AMPAS",
                     "Academy of Motion Picture Arts and Sciences BSD",
-                    "scancode:ampas",
+                    "scancode://ampas",
                     "AMPAS BSD-Style License"
                 ]
             },
@@ -147,7 +147,7 @@ Raw Data
                 "spdxId": "AMPAS",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:ampas",
+                        "scancode://ampas",
                         "AMPAS BSD-Style License",
                         "AMPAS"
                     ],

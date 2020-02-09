@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:multics+`
+* `+scancode://multics+`
 
 === Comments on (easy) usability
 
@@ -56,7 +56,7 @@ All Rights Reserved
     "__impliedNames": [
         "Multics",
         "Multics License",
-        "scancode:multics"
+        "scancode://multics"
     ],
     "__impliedId": "Multics",
     "facts": {
@@ -93,7 +93,7 @@ All Rights Reserved
                     "Multics",
                     "Multics",
                     "Multics License",
-                    "scancode:multics"
+                    "scancode://multics"
                 ],
                 "__impliedId": "Multics"
             },
@@ -101,7 +101,7 @@ All Rights Reserved
             "otherNames": [
                 "Multics",
                 "Multics License",
-                "scancode:multics"
+                "scancode://multics"
             ]
         },
         "SPDX": {
@@ -160,7 +160,7 @@ All Rights Reserved
             "spdxId": "Multics",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:multics",
+                    "scancode://multics",
                     "Multics License",
                     "Multics"
                 ],

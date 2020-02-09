@@ -5,7 +5,7 @@ Adobe Systems Incorporated Source Code License Agreement (Adobe-2006)
 
 **Other Names:**
 
--   `scancode:adobe-scl`
+-   `scancode://adobe-scl`
 
 -   `Adobe Source Code License 2006`
 
@@ -68,7 +68,7 @@ Raw Data
         "__impliedNames": [
             "Adobe-2006",
             "Adobe Systems Incorporated Source Code License Agreement",
-            "scancode:adobe-scl",
+            "scancode://adobe-scl",
             "Adobe Source Code License 2006"
         ],
         "__impliedId": "Adobe-2006",
@@ -80,7 +80,7 @@ Raw Data
                         "Adobe-2006",
                         "Adobe-2006",
                         "Adobe Systems Incorporated Source Code License Agreement",
-                        "scancode:adobe-scl",
+                        "scancode://adobe-scl",
                         "Adobe Source Code License 2006"
                     ],
                     "__impliedId": "Adobe-2006"
@@ -89,7 +89,7 @@ Raw Data
                 "otherNames": [
                     "Adobe-2006",
                     "Adobe Systems Incorporated Source Code License Agreement",
-                    "scancode:adobe-scl",
+                    "scancode://adobe-scl",
                     "Adobe Source Code License 2006"
                 ]
             },
@@ -165,7 +165,7 @@ Raw Data
                 "spdxId": "Adobe-2006",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:adobe-scl",
+                        "scancode://adobe-scl",
                         "Adobe Source Code License 2006",
                         "Adobe-2006"
                     ],

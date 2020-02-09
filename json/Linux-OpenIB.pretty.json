@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Linux-OpenIB",
         "Linux Kernel Variant of OpenIB.org license",
-        "scancode:linux-openib"
+        "scancode://linux-openib"
     ],
     "__impliedId": "Linux-OpenIB",
     "facts": {
@@ -12,7 +12,7 @@
                     "Linux-OpenIB",
                     "Linux-OpenIB",
                     "Linux Kernel Variant of OpenIB.org license",
-                    "scancode:linux-openib"
+                    "scancode://linux-openib"
                 ],
                 "__impliedId": "Linux-OpenIB"
             },
@@ -20,7 +20,7 @@
             "otherNames": [
                 "Linux-OpenIB",
                 "Linux Kernel Variant of OpenIB.org license",
-                "scancode:linux-openib"
+                "scancode://linux-openib"
             ]
         },
         "SPDX": {
@@ -70,7 +70,7 @@
             "spdxId": "Linux-OpenIB",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:linux-openib",
+                    "scancode://linux-openib",
                     "Linux-OpenIB",
                     "Linux-OpenIB"
                 ],

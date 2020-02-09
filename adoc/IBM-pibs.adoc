@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode:ibm-pibs+`
+* `+scancode://ibm-pibs+`
 * `+IBM PowerPC Software+`
 
 === Comments on (easy) usability
@@ -69,7 +69,7 @@ LICENSED MATERIAL  -  PROGRAM PROPERTY OF I B M
     "__impliedNames": [
         "IBM-pibs",
         "IBM PowerPC Initialization and Boot Software",
-        "scancode:ibm-pibs",
+        "scancode://ibm-pibs",
         "IBM PowerPC Software"
     ],
     "__impliedId": "IBM-pibs",
@@ -81,7 +81,7 @@ LICENSED MATERIAL  -  PROGRAM PROPERTY OF I B M
                     "IBM-pibs",
                     "IBM-pibs",
                     "IBM PowerPC Initialization and Boot Software",
-                    "scancode:ibm-pibs",
+                    "scancode://ibm-pibs",
                     "IBM PowerPC Software"
                 ],
                 "__impliedId": "IBM-pibs"
@@ -90,7 +90,7 @@ LICENSED MATERIAL  -  PROGRAM PROPERTY OF I B M
             "otherNames": [
                 "IBM-pibs",
                 "IBM PowerPC Initialization and Boot Software",
-                "scancode:ibm-pibs",
+                "scancode://ibm-pibs",
                 "IBM PowerPC Software"
             ]
         },
@@ -149,7 +149,7 @@ LICENSED MATERIAL  -  PROGRAM PROPERTY OF I B M
             "spdxId": "IBM-pibs",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:ibm-pibs",
+                    "scancode://ibm-pibs",
                     "IBM PowerPC Software",
                     "IBM-pibs"
                 ],

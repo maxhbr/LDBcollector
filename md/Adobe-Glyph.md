@@ -5,7 +5,7 @@ Adobe Glyph List License (Adobe-Glyph)
 
 **Other Names:**
 
--   `scancode:adobe-glyph`
+-   `scancode://adobe-glyph`
 
 -   `Adobe Glyph License`
 
@@ -44,7 +44,7 @@ Raw Data
         "__impliedNames": [
             "Adobe-Glyph",
             "Adobe Glyph List License",
-            "scancode:adobe-glyph",
+            "scancode://adobe-glyph",
             "Adobe Glyph License"
         ],
         "__impliedId": "Adobe-Glyph",
@@ -56,7 +56,7 @@ Raw Data
                         "Adobe-Glyph",
                         "Adobe-Glyph",
                         "Adobe Glyph List License",
-                        "scancode:adobe-glyph",
+                        "scancode://adobe-glyph",
                         "Adobe Glyph License"
                     ],
                     "__impliedId": "Adobe-Glyph"
@@ -65,7 +65,7 @@ Raw Data
                 "otherNames": [
                     "Adobe-Glyph",
                     "Adobe Glyph List License",
-                    "scancode:adobe-glyph",
+                    "scancode://adobe-glyph",
                     "Adobe Glyph License"
                 ]
             },
@@ -139,7 +139,7 @@ Raw Data
                 "spdxId": "Adobe-Glyph",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:adobe-glyph",
+                        "scancode://adobe-glyph",
                         "Adobe Glyph License",
                         "Adobe-Glyph"
                     ],

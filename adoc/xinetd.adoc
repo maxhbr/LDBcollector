@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:xinetd+`
+* `+scancode://xinetd+`
 
 === Comments on (easy) usability
 
@@ -96,7 +96,7 @@ confusion about 2.2.1 and 2.1.8.*.
     "__impliedNames": [
         "xinetd",
         "xinetd License",
-        "scancode:xinetd"
+        "scancode://xinetd"
     ],
     "__impliedId": "xinetd",
     "__isFsfFree": true,
@@ -107,7 +107,7 @@ confusion about 2.2.1 and 2.1.8.*.
                     "xinetd",
                     "xinetd",
                     "xinetd License",
-                    "scancode:xinetd"
+                    "scancode://xinetd"
                 ],
                 "__impliedId": "xinetd"
             },
@@ -115,7 +115,7 @@ confusion about 2.2.1 and 2.1.8.*.
             "otherNames": [
                 "xinetd",
                 "xinetd License",
-                "scancode:xinetd"
+                "scancode://xinetd"
             ]
         },
         "SPDX": {
@@ -188,7 +188,7 @@ confusion about 2.2.1 and 2.1.8.*.
             "spdxId": "xinetd",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:xinetd",
+                    "scancode://xinetd",
                     "xinetd License",
                     "xinetd"
                 ],

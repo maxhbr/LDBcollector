@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:tmate+`
+* `+scancode://tmate+`
 
 === Comments on (easy) usability
 
@@ -84,7 +84,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "TMate",
         "TMate Open Source License",
-        "scancode:tmate"
+        "scancode://tmate"
     ],
     "__impliedId": "TMate",
     "__isFsfFree": true,
@@ -95,7 +95,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "TMate",
                     "TMate",
                     "TMate Open Source License",
-                    "scancode:tmate"
+                    "scancode://tmate"
                 ],
                 "__impliedId": "TMate"
             },
@@ -103,7 +103,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "TMate",
                 "TMate Open Source License",
-                "scancode:tmate"
+                "scancode://tmate"
             ]
         },
         "SPDX": {
@@ -176,7 +176,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "TMate",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:tmate",
+                    "scancode://tmate",
                     "TMate Open Source License",
                     "TMate"
                 ],

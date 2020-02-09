@@ -5,7 +5,7 @@ Apache License 1.0 (Apache-1.0)
 
 **Other Names:**
 
--   `scancode:apache-1.0`
+-   `scancode://apache-1.0`
 
 -   `Apache 1.0`
 
@@ -131,7 +131,7 @@ Raw Data
         "__impliedNames": [
             "Apache-1.0",
             "Apache License 1.0",
-            "scancode:apache-1.0",
+            "scancode://apache-1.0",
             "Apache 1.0",
             "Apache (v1.0)",
             "Apache Software License 1.0",
@@ -149,7 +149,7 @@ Raw Data
                         "Apache-1.0",
                         "Apache-1.0",
                         "Apache License 1.0",
-                        "scancode:apache-1.0",
+                        "scancode://apache-1.0",
                         "Apache 1.0",
                         "Apache (v1.0)",
                         "Apache Software License 1.0",
@@ -161,7 +161,7 @@ Raw Data
                 "otherNames": [
                     "Apache-1.0",
                     "Apache License 1.0",
-                    "scancode:apache-1.0",
+                    "scancode://apache-1.0",
                     "Apache 1.0",
                     "Apache (v1.0)",
                     "Apache Software License 1.0",
@@ -248,7 +248,7 @@ Raw Data
                 "spdxId": "Apache-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:apache-1.0",
+                        "scancode://apache-1.0",
                         "Apache 1.0",
                         "Apache-1.0"
                     ],

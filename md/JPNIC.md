@@ -5,7 +5,7 @@ Japan Network Information Center License (JPNIC)
 
 **Other Names:**
 
--   `scancode:jpnic-idnkit`
+-   `scancode://jpnic-idnkit`
 
 -   `JPNIC idnkit License`
 
@@ -74,7 +74,7 @@ Raw Data
         "__impliedNames": [
             "JPNIC",
             "Japan Network Information Center License",
-            "scancode:jpnic-idnkit",
+            "scancode://jpnic-idnkit",
             "JPNIC idnkit License"
         ],
         "__impliedId": "JPNIC",
@@ -85,7 +85,7 @@ Raw Data
                         "JPNIC",
                         "JPNIC",
                         "Japan Network Information Center License",
-                        "scancode:jpnic-idnkit",
+                        "scancode://jpnic-idnkit",
                         "JPNIC idnkit License"
                     ],
                     "__impliedId": "JPNIC"
@@ -94,7 +94,7 @@ Raw Data
                 "otherNames": [
                     "JPNIC",
                     "Japan Network Information Center License",
-                    "scancode:jpnic-idnkit",
+                    "scancode://jpnic-idnkit",
                     "JPNIC idnkit License"
                 ]
             },
@@ -145,7 +145,7 @@ Raw Data
                 "spdxId": "JPNIC",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:jpnic-idnkit",
+                        "scancode://jpnic-idnkit",
                         "JPNIC idnkit License",
                         "JPNIC"
                     ],

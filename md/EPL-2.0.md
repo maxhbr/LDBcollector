@@ -5,7 +5,7 @@ Eclipse Public License 2.0 (EPL-2.0)
 
 **Other Names:**
 
--   `scancode:epl-2.0`
+-   `scancode://epl-2.0`
 
 -   `EPL 2.0`
 
@@ -415,7 +415,7 @@ Raw Data
         "__impliedNames": [
             "EPL-2.0",
             "Eclipse Public License 2.0",
-            "scancode:epl-2.0",
+            "scancode://epl-2.0",
             "EPL 2.0",
             "epl-2.0"
         ],
@@ -456,7 +456,7 @@ Raw Data
                         "EPL-2.0",
                         "EPL-2.0",
                         "Eclipse Public License 2.0",
-                        "scancode:epl-2.0",
+                        "scancode://epl-2.0",
                         "EPL 2.0",
                         "epl-2.0"
                     ],
@@ -466,7 +466,7 @@ Raw Data
                 "otherNames": [
                     "EPL-2.0",
                     "Eclipse Public License 2.0",
-                    "scancode:epl-2.0",
+                    "scancode://epl-2.0",
                     "EPL 2.0",
                     "epl-2.0"
                 ]
@@ -576,7 +576,7 @@ Raw Data
                 "spdxId": "EPL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:epl-2.0",
+                        "scancode://epl-2.0",
                         "EPL 2.0",
                         "EPL-2.0"
                     ],

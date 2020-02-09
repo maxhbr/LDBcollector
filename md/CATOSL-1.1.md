@@ -5,7 +5,7 @@ Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)
 
 **Other Names:**
 
--   `scancode:ca-tosl-1.1`
+-   `scancode://ca-tosl-1.1`
 
 -   `CA Trusted Open Source License 1.1`
 
@@ -400,7 +400,7 @@ Raw Data
         "__impliedNames": [
             "CATOSL-1.1",
             "Computer Associates Trusted Open Source License 1.1",
-            "scancode:ca-tosl-1.1",
+            "scancode://ca-tosl-1.1",
             "CA Trusted Open Source License 1.1",
             "Computer Associates Trusted Open Source License, Version 1.1",
             "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
@@ -441,7 +441,7 @@ Raw Data
                         "CATOSL-1.1",
                         "CATOSL-1.1",
                         "Computer Associates Trusted Open Source License 1.1",
-                        "scancode:ca-tosl-1.1",
+                        "scancode://ca-tosl-1.1",
                         "CA Trusted Open Source License 1.1",
                         "Computer Associates Trusted Open Source License, Version 1.1",
                         "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
@@ -452,7 +452,7 @@ Raw Data
                 "otherNames": [
                     "CATOSL-1.1",
                     "Computer Associates Trusted Open Source License 1.1",
-                    "scancode:ca-tosl-1.1",
+                    "scancode://ca-tosl-1.1",
                     "CA Trusted Open Source License 1.1",
                     "Computer Associates Trusted Open Source License, Version 1.1",
                     "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
@@ -540,7 +540,7 @@ Raw Data
                 "spdxId": "CATOSL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:ca-tosl-1.1",
+                        "scancode://ca-tosl-1.1",
                         "CA Trusted Open Source License 1.1",
                         "CATOSL-1.1"
                     ],

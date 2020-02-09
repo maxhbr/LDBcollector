@@ -5,7 +5,7 @@ No Limit Public License (NLPL)
 
 **Other Names:**
 
--   `scancode:nlpl`
+-   `scancode://nlpl`
 
 Comments on (easy) usability
 ----------------------------
@@ -60,7 +60,7 @@ Raw Data
         "__impliedNames": [
             "NLPL",
             "No Limit Public License",
-            "scancode:nlpl"
+            "scancode://nlpl"
         ],
         "__impliedId": "NLPL",
         "__isFsfFree": true,
@@ -71,7 +71,7 @@ Raw Data
                         "NLPL",
                         "NLPL",
                         "No Limit Public License",
-                        "scancode:nlpl"
+                        "scancode://nlpl"
                     ],
                     "__impliedId": "NLPL"
                 },
@@ -79,7 +79,7 @@ Raw Data
                 "otherNames": [
                     "NLPL",
                     "No Limit Public License",
-                    "scancode:nlpl"
+                    "scancode://nlpl"
                 ]
             },
             "SPDX": {
@@ -152,7 +152,7 @@ Raw Data
                 "spdxId": "NLPL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:nlpl",
+                        "scancode://nlpl",
                         "NLPL",
                         "NLPL"
                     ],

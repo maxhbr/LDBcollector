@@ -5,7 +5,7 @@ Artistic License 1.0 (Perl) (Artistic-1.0-Perl)
 
 **Other Names:**
 
--   `scancode:artistic-perl-1.0`
+-   `scancode://artistic-perl-1.0`
 
 -   `Artistic-Perl-1.0`
 
@@ -211,7 +211,7 @@ Raw Data
         "__impliedNames": [
             "Artistic-1.0-Perl",
             "Artistic License 1.0 (Perl)",
-            "scancode:artistic-perl-1.0",
+            "scancode://artistic-perl-1.0",
             "Artistic-Perl-1.0"
         ],
         "__impliedId": "Artistic-1.0-Perl",
@@ -225,7 +225,7 @@ Raw Data
                         "Artistic-1.0-Perl",
                         "Artistic-1.0-Perl",
                         "Artistic License 1.0 (Perl)",
-                        "scancode:artistic-perl-1.0",
+                        "scancode://artistic-perl-1.0",
                         "Artistic-Perl-1.0"
                     ],
                     "__impliedId": "Artistic-1.0-Perl"
@@ -234,7 +234,7 @@ Raw Data
                 "otherNames": [
                     "Artistic-1.0-Perl",
                     "Artistic License 1.0 (Perl)",
-                    "scancode:artistic-perl-1.0",
+                    "scancode://artistic-perl-1.0",
                     "Artistic-Perl-1.0"
                 ]
             },
@@ -301,7 +301,7 @@ Raw Data
                 "spdxId": "Artistic-1.0-Perl",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:artistic-perl-1.0",
+                        "scancode://artistic-perl-1.0",
                         "Artistic-Perl-1.0",
                         "Artistic-1.0-Perl"
                     ],

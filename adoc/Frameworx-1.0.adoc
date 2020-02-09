@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:frameworx-1.0+`
+* `+scancode://frameworx-1.0+`
 * `+Frameworx 1.0+`
 * `+Frameworx License, Version 1.0+`
 * `+Frameworx License 1.0+`
@@ -106,7 +106,7 @@ Your agreement to the foregoing as of the date hereof has been evidenced by your
     "__impliedNames": [
         "Frameworx-1.0",
         "Frameworx Open License 1.0",
-        "scancode:frameworx-1.0",
+        "scancode://frameworx-1.0",
         "Frameworx 1.0",
         "Frameworx License, Version 1.0",
         "Frameworx License 1.0"
@@ -146,7 +146,7 @@ Your agreement to the foregoing as of the date hereof has been evidenced by your
                     "Frameworx-1.0",
                     "Frameworx-1.0",
                     "Frameworx Open License 1.0",
-                    "scancode:frameworx-1.0",
+                    "scancode://frameworx-1.0",
                     "Frameworx 1.0",
                     "Frameworx License, Version 1.0",
                     "Frameworx License 1.0"
@@ -157,7 +157,7 @@ Your agreement to the foregoing as of the date hereof has been evidenced by your
             "otherNames": [
                 "Frameworx-1.0",
                 "Frameworx Open License 1.0",
-                "scancode:frameworx-1.0",
+                "scancode://frameworx-1.0",
                 "Frameworx 1.0",
                 "Frameworx License, Version 1.0",
                 "Frameworx License 1.0"
@@ -219,7 +219,7 @@ Your agreement to the foregoing as of the date hereof has been evidenced by your
             "spdxId": "Frameworx-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:frameworx-1.0",
+                    "scancode://frameworx-1.0",
                     "Frameworx 1.0",
                     "Frameworx-1.0"
                 ],

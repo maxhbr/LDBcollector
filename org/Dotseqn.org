@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:dotseqn=
+- =scancode://dotseqn=
 
 ** Comments on (easy) usability
 
@@ -40,7 +40,7 @@
       "__impliedNames": [
           "Dotseqn",
           "Dotseqn License",
-          "scancode:dotseqn"
+          "scancode://dotseqn"
       ],
       "__impliedId": "Dotseqn",
       "__isFsfFree": true,
@@ -51,7 +51,7 @@
                       "Dotseqn",
                       "Dotseqn",
                       "Dotseqn License",
-                      "scancode:dotseqn"
+                      "scancode://dotseqn"
                   ],
                   "__impliedId": "Dotseqn"
               },
@@ -59,7 +59,7 @@
               "otherNames": [
                   "Dotseqn",
                   "Dotseqn License",
-                  "scancode:dotseqn"
+                  "scancode://dotseqn"
               ]
           },
           "SPDX": {
@@ -132,7 +132,7 @@
               "spdxId": "Dotseqn",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:dotseqn",
+                      "scancode://dotseqn",
                       "Dotseqn License",
                       "Dotseqn"
                   ],

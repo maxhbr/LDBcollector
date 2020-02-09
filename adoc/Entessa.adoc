@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:entessa-1.0+`
+* `+scancode://entessa-1.0+`
 * `+Entessa 1.0+`
 * `+Entessa Public License+`
 * `+Entessa Public License 1.0+`
@@ -95,7 +95,7 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
     "__impliedNames": [
         "Entessa",
         "Entessa Public License v1.0",
-        "scancode:entessa-1.0",
+        "scancode://entessa-1.0",
         "Entessa 1.0",
         "Entessa Public License",
         "Entessa Public License 1.0"
@@ -136,7 +136,7 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
                     "Entessa",
                     "Entessa",
                     "Entessa Public License v1.0",
-                    "scancode:entessa-1.0",
+                    "scancode://entessa-1.0",
                     "Entessa 1.0",
                     "Entessa Public License",
                     "Entessa Public License 1.0"
@@ -147,7 +147,7 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
             "otherNames": [
                 "Entessa",
                 "Entessa Public License v1.0",
-                "scancode:entessa-1.0",
+                "scancode://entessa-1.0",
                 "Entessa 1.0",
                 "Entessa Public License",
                 "Entessa Public License 1.0"
@@ -236,7 +236,7 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
             "spdxId": "Entessa",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:entessa-1.0",
+                    "scancode://entessa-1.0",
                     "Entessa 1.0",
                     "Entessa"
                 ],

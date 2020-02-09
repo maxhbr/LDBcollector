@@ -5,7 +5,7 @@ CUA Office Public License v1.0 (CUA-OPL-1.0)
 
 **Other Names:**
 
--   `scancode:cua-opl-1.0`
+-   `scancode://cua-opl-1.0`
 
 -   `CUA Office Public License`
 
@@ -509,7 +509,7 @@ Raw Data
         "__impliedNames": [
             "CUA-OPL-1.0",
             "CUA Office Public License v1.0",
-            "scancode:cua-opl-1.0",
+            "scancode://cua-opl-1.0",
             "CUA Office Public License",
             "CUA Office Public License 1.0"
         ],
@@ -548,7 +548,7 @@ Raw Data
                         "CUA-OPL-1.0",
                         "CUA-OPL-1.0",
                         "CUA Office Public License v1.0",
-                        "scancode:cua-opl-1.0",
+                        "scancode://cua-opl-1.0",
                         "CUA Office Public License",
                         "CUA Office Public License 1.0"
                     ],
@@ -558,7 +558,7 @@ Raw Data
                 "otherNames": [
                     "CUA-OPL-1.0",
                     "CUA Office Public License v1.0",
-                    "scancode:cua-opl-1.0",
+                    "scancode://cua-opl-1.0",
                     "CUA Office Public License",
                     "CUA Office Public License 1.0"
                 ]
@@ -619,7 +619,7 @@ Raw Data
                 "spdxId": "CUA-OPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:cua-opl-1.0",
+                        "scancode://cua-opl-1.0",
                         "CUA-OPL-1.0",
                         "CUA-OPL-1.0"
                     ],

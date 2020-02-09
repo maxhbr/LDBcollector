@@ -5,7 +5,7 @@ Open Market License (OML)
 
 **Other Names:**
 
--   `scancode:fastcgi-devkit`
+-   `scancode://fastcgi-devkit`
 
 -   `FastCGI DevKit`
 
@@ -71,7 +71,7 @@ Raw Data
         "__impliedNames": [
             "OML",
             "Open Market License",
-            "scancode:fastcgi-devkit",
+            "scancode://fastcgi-devkit",
             "FastCGI DevKit"
         ],
         "__impliedId": "OML",
@@ -83,7 +83,7 @@ Raw Data
                         "OML",
                         "OML",
                         "Open Market License",
-                        "scancode:fastcgi-devkit",
+                        "scancode://fastcgi-devkit",
                         "FastCGI DevKit"
                     ],
                     "__impliedId": "OML"
@@ -92,7 +92,7 @@ Raw Data
                 "otherNames": [
                     "OML",
                     "Open Market License",
-                    "scancode:fastcgi-devkit",
+                    "scancode://fastcgi-devkit",
                     "FastCGI DevKit"
                 ]
             },
@@ -166,7 +166,7 @@ Raw Data
                 "spdxId": "OML",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:fastcgi-devkit",
+                        "scancode://fastcgi-devkit",
                         "FastCGI DevKit",
                         "OML"
                     ],

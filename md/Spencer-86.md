@@ -5,7 +5,7 @@ Spencer License 86 (Spencer-86)
 
 **Other Names:**
 
--   `scancode:regexp`
+-   `scancode://regexp`
 
 -   `Regexp License`
 
@@ -57,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "Spencer-86",
             "Spencer License 86",
-            "scancode:regexp",
+            "scancode://regexp",
             "Regexp License"
         ],
         "__impliedId": "Spencer-86",
@@ -68,7 +68,7 @@ Raw Data
                         "Spencer-86",
                         "Spencer-86",
                         "Spencer License 86",
-                        "scancode:regexp",
+                        "scancode://regexp",
                         "Regexp License"
                     ],
                     "__impliedId": "Spencer-86"
@@ -77,7 +77,7 @@ Raw Data
                 "otherNames": [
                     "Spencer-86",
                     "Spencer License 86",
-                    "scancode:regexp",
+                    "scancode://regexp",
                     "Regexp License"
                 ]
             },
@@ -125,7 +125,7 @@ Raw Data
                 "spdxId": "Spencer-86",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:regexp",
+                        "scancode://regexp",
                         "Regexp License",
                         "Spencer-86"
                     ],

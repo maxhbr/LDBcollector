@@ -5,7 +5,7 @@ Sax Public Domain Notice (SAX-PD)
 
 **Other Names:**
 
--   `scancode:sax-pd`
+-   `scancode://sax-pd`
 
 Comments on (easy) usability
 ----------------------------
@@ -85,7 +85,7 @@ Raw Data
         "__impliedNames": [
             "SAX-PD",
             "Sax Public Domain Notice",
-            "scancode:sax-pd"
+            "scancode://sax-pd"
         ],
         "__impliedId": "SAX-PD",
         "facts": {
@@ -95,7 +95,7 @@ Raw Data
                         "SAX-PD",
                         "SAX-PD",
                         "Sax Public Domain Notice",
-                        "scancode:sax-pd"
+                        "scancode://sax-pd"
                     ],
                     "__impliedId": "SAX-PD"
                 },
@@ -103,7 +103,7 @@ Raw Data
                 "otherNames": [
                     "SAX-PD",
                     "Sax Public Domain Notice",
-                    "scancode:sax-pd"
+                    "scancode://sax-pd"
                 ]
             },
             "SPDX": {
@@ -150,7 +150,7 @@ Raw Data
                 "spdxId": "SAX-PD",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:sax-pd",
+                        "scancode://sax-pd",
                         "SAX-PD",
                         "SAX-PD"
                     ],

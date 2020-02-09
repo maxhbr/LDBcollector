@@ -5,7 +5,7 @@ NASA Open Source Agreement 1.3 (NASA-1.3)
 
 **Other Names:**
 
--   `scancode:nasa-1.3`
+-   `scancode://nasa-1.3`
 
 -   `NASA 1.3`
 
@@ -155,7 +155,7 @@ Raw Data
         "__impliedNames": [
             "NASA-1.3",
             "NASA Open Source Agreement 1.3",
-            "scancode:nasa-1.3",
+            "scancode://nasa-1.3",
             "NASA 1.3",
             "NASA Open Source Agreement, Version 1.3"
         ],
@@ -194,7 +194,7 @@ Raw Data
                         "NASA-1.3",
                         "NASA-1.3",
                         "NASA Open Source Agreement 1.3",
-                        "scancode:nasa-1.3",
+                        "scancode://nasa-1.3",
                         "NASA 1.3",
                         "NASA Open Source Agreement, Version 1.3"
                     ],
@@ -204,7 +204,7 @@ Raw Data
                 "otherNames": [
                     "NASA-1.3",
                     "NASA Open Source Agreement 1.3",
-                    "scancode:nasa-1.3",
+                    "scancode://nasa-1.3",
                     "NASA 1.3",
                     "NASA Open Source Agreement, Version 1.3"
                 ]
@@ -272,7 +272,7 @@ Raw Data
                 "spdxId": "NASA-1.3",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:nasa-1.3",
+                        "scancode://nasa-1.3",
                         "NASA 1.3",
                         "NASA-1.3"
                     ],

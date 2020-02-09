@@ -5,7 +5,7 @@ Sun Industry Standards Source License v1.1 (SISSL)
 
 **Other Names:**
 
--   `scancode:sun-sissl-1.1`
+-   `scancode://sun-sissl-1.1`
 
 -   `Sun Industry Standards Source License 1.1`
 
@@ -356,7 +356,7 @@ Raw Data
         "__impliedNames": [
             "SISSL",
             "Sun Industry Standards Source License v1.1",
-            "scancode:sun-sissl-1.1",
+            "scancode://sun-sissl-1.1",
             "Sun Industry Standards Source License 1.1",
             "Sun Industry Standards Source License",
             "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
@@ -397,7 +397,7 @@ Raw Data
                         "SISSL",
                         "SISSL",
                         "Sun Industry Standards Source License v1.1",
-                        "scancode:sun-sissl-1.1",
+                        "scancode://sun-sissl-1.1",
                         "Sun Industry Standards Source License 1.1",
                         "Sun Industry Standards Source License",
                         "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
@@ -408,7 +408,7 @@ Raw Data
                 "otherNames": [
                     "SISSL",
                     "Sun Industry Standards Source License v1.1",
-                    "scancode:sun-sissl-1.1",
+                    "scancode://sun-sissl-1.1",
                     "Sun Industry Standards Source License 1.1",
                     "Sun Industry Standards Source License",
                     "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
@@ -501,7 +501,7 @@ Raw Data
                 "spdxId": "SISSL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:sun-sissl-1.1",
+                        "scancode://sun-sissl-1.1",
                         "Sun Industry Standards Source License 1.1",
                         "SISSL"
                     ],

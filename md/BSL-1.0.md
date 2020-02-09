@@ -5,7 +5,7 @@ Boost Software License 1.0 (BSL-1.0)
 
 **Other Names:**
 
--   `scancode:boost-1.0`
+-   `scancode://boost-1.0`
 
 -   `Boost 1.0`
 
@@ -113,7 +113,7 @@ Raw Data
         "__impliedNames": [
             "BSL-1.0",
             "Boost Software License 1.0",
-            "scancode:boost-1.0",
+            "scancode://boost-1.0",
             "Boost 1.0",
             "bsl-1.0",
             "Boost Software License 1.0 (BSL-1.0)",
@@ -156,7 +156,7 @@ Raw Data
                         "BSL-1.0",
                         "BSL-1.0",
                         "Boost Software License 1.0",
-                        "scancode:boost-1.0",
+                        "scancode://boost-1.0",
                         "Boost 1.0",
                         "bsl-1.0",
                         "Boost Software License 1.0 (BSL-1.0)",
@@ -169,7 +169,7 @@ Raw Data
                 "otherNames": [
                     "BSL-1.0",
                     "Boost Software License 1.0",
-                    "scancode:boost-1.0",
+                    "scancode://boost-1.0",
                     "Boost 1.0",
                     "bsl-1.0",
                     "Boost Software License 1.0 (BSL-1.0)",
@@ -256,7 +256,7 @@ Raw Data
                 "spdxId": "BSL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:boost-1.0",
+                        "scancode://boost-1.0",
                         "Boost 1.0",
                         "BSL-1.0"
                     ],

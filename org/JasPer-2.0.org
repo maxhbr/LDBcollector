@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:jasper-2.0=
+- =scancode://jasper-2.0=
 
 - =JasPer 2.0=
 
@@ -100,7 +100,7 @@
       "__impliedNames": [
           "JasPer-2.0",
           "JasPer License",
-          "scancode:jasper-2.0",
+          "scancode://jasper-2.0",
           "JasPer 2.0"
       ],
       "__impliedId": "JasPer-2.0",
@@ -112,7 +112,7 @@
                       "JasPer-2.0",
                       "JasPer-2.0",
                       "JasPer License",
-                      "scancode:jasper-2.0",
+                      "scancode://jasper-2.0",
                       "JasPer 2.0"
                   ],
                   "__impliedId": "JasPer-2.0"
@@ -121,7 +121,7 @@
               "otherNames": [
                   "JasPer-2.0",
                   "JasPer License",
-                  "scancode:jasper-2.0",
+                  "scancode://jasper-2.0",
                   "JasPer 2.0"
               ]
           },
@@ -197,7 +197,7 @@
               "spdxId": "JasPer-2.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:jasper-2.0",
+                      "scancode://jasper-2.0",
                       "JasPer 2.0",
                       "JasPer-2.0"
                   ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:afl-1.1+`
+* `+scancode://afl-1.1+`
 * `+AFL 1.1+`
 
 === Comments on (easy) usability
@@ -131,7 +131,7 @@ END OF LICENSE.
     "__impliedNames": [
         "AFL-1.1",
         "Academic Free License v1.1",
-        "scancode:afl-1.1",
+        "scancode://afl-1.1",
         "AFL 1.1"
     ],
     "__impliedId": "AFL-1.1",
@@ -142,7 +142,7 @@ END OF LICENSE.
                     "AFL-1.1",
                     "AFL-1.1",
                     "Academic Free License v1.1",
-                    "scancode:afl-1.1",
+                    "scancode://afl-1.1",
                     "AFL 1.1"
                 ],
                 "__impliedId": "AFL-1.1"
@@ -151,7 +151,7 @@ END OF LICENSE.
             "otherNames": [
                 "AFL-1.1",
                 "Academic Free License v1.1",
-                "scancode:afl-1.1",
+                "scancode://afl-1.1",
                 "AFL 1.1"
             ]
         },
@@ -216,7 +216,7 @@ END OF LICENSE.
             "spdxId": "AFL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:afl-1.1",
+                    "scancode://afl-1.1",
                     "AFL 1.1",
                     "AFL-1.1"
                 ],

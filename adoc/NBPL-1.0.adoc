@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:nbpl-1.0+`
+* `+scancode://nbpl-1.0+`
 
 === Comments on (easy) usability
 
@@ -190,7 +190,7 @@ The End
     "__impliedNames": [
         "NBPL-1.0",
         "Net Boolean Public License v1",
-        "scancode:nbpl-1.0"
+        "scancode://nbpl-1.0"
     ],
     "__impliedId": "NBPL-1.0",
     "facts": {
@@ -200,7 +200,7 @@ The End
                     "NBPL-1.0",
                     "NBPL-1.0",
                     "Net Boolean Public License v1",
-                    "scancode:nbpl-1.0"
+                    "scancode://nbpl-1.0"
                 ],
                 "__impliedId": "NBPL-1.0"
             },
@@ -208,7 +208,7 @@ The End
             "otherNames": [
                 "NBPL-1.0",
                 "Net Boolean Public License v1",
-                "scancode:nbpl-1.0"
+                "scancode://nbpl-1.0"
             ]
         },
         "SPDX": {
@@ -265,7 +265,7 @@ The End
             "spdxId": "NBPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:nbpl-1.0",
+                    "scancode://nbpl-1.0",
                     "NBPL-1.0",
                     "NBPL-1.0"
                 ],

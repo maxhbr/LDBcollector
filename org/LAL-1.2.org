@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode:lal-1.2=
+- =scancode://lal-1.2=
 
 ** Comments on (easy) usability
 
@@ -103,7 +103,7 @@
       "__impliedNames": [
           "LAL-1.2",
           "Licence Art Libre 1.2",
-          "scancode:lal-1.2"
+          "scancode://lal-1.2"
       ],
       "__impliedId": "LAL-1.2",
       "__impliedAmbiguousNames": [
@@ -116,7 +116,7 @@
                       "LAL-1.2",
                       "LAL-1.2",
                       "Licence Art Libre 1.2",
-                      "scancode:lal-1.2"
+                      "scancode://lal-1.2"
                   ],
                   "__impliedId": "LAL-1.2"
               },
@@ -124,7 +124,7 @@
               "otherNames": [
                   "LAL-1.2",
                   "Licence Art Libre 1.2",
-                  "scancode:lal-1.2"
+                  "scancode://lal-1.2"
               ]
           },
           "SPDX": {
@@ -171,7 +171,7 @@
               "spdxId": "LAL-1.2",
               "_implications": {
                   "__impliedNames": [
-                      "scancode:lal-1.2",
+                      "scancode://lal-1.2",
                       "Licence Art Libre 1.2",
                       "LAL-1.2"
                   ],

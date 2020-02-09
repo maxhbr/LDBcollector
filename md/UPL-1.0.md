@@ -5,7 +5,7 @@ Universal Permissive License v1.0 (UPL-1.0)
 
 **Other Names:**
 
--   `scancode:upl-1.0`
+-   `scancode://upl-1.0`
 
 -   `UPL 1.0`
 
@@ -113,7 +113,7 @@ Raw Data
         "__impliedNames": [
             "UPL-1.0",
             "Universal Permissive License v1.0",
-            "scancode:upl-1.0",
+            "scancode://upl-1.0",
             "UPL 1.0",
             "upl-1.0"
         ],
@@ -125,7 +125,7 @@ Raw Data
                         "UPL-1.0",
                         "UPL-1.0",
                         "Universal Permissive License v1.0",
-                        "scancode:upl-1.0",
+                        "scancode://upl-1.0",
                         "UPL 1.0",
                         "upl-1.0"
                     ],
@@ -135,7 +135,7 @@ Raw Data
                 "otherNames": [
                     "UPL-1.0",
                     "Universal Permissive License v1.0",
-                    "scancode:upl-1.0",
+                    "scancode://upl-1.0",
                     "UPL 1.0",
                     "upl-1.0"
                 ]
@@ -208,7 +208,7 @@ Raw Data
                 "spdxId": "UPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:upl-1.0",
+                        "scancode://upl-1.0",
                         "UPL 1.0",
                         "UPL-1.0"
                     ],

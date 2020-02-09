@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:snia+`
+* `+scancode://snia+`
 
 === Comments on (easy) usability
 
@@ -161,7 +161,7 @@ Read more about this license at http://www.snia.org/smi/developers/open_source/
     "__impliedNames": [
         "SNIA",
         "SNIA Public License 1.1",
-        "scancode:snia"
+        "scancode://snia"
     ],
     "__impliedId": "SNIA",
     "__isFsfFree": true,
@@ -172,7 +172,7 @@ Read more about this license at http://www.snia.org/smi/developers/open_source/
                     "SNIA",
                     "SNIA",
                     "SNIA Public License 1.1",
-                    "scancode:snia"
+                    "scancode://snia"
                 ],
                 "__impliedId": "SNIA"
             },
@@ -180,7 +180,7 @@ Read more about this license at http://www.snia.org/smi/developers/open_source/
             "otherNames": [
                 "SNIA",
                 "SNIA Public License 1.1",
-                "scancode:snia"
+                "scancode://snia"
             ]
         },
         "SPDX": {
@@ -253,7 +253,7 @@ Read more about this license at http://www.snia.org/smi/developers/open_source/
             "spdxId": "SNIA",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:snia",
+                    "scancode://snia",
                     "SNIA Public License 1.1",
                     "SNIA"
                 ],

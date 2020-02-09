@@ -5,7 +5,7 @@ eGenix.com Public License 1.1.0 (eGenix)
 
 **Other Names:**
 
--   `scancode:egenix-1.1.0`
+-   `scancode://egenix-1.1.0`
 
 -   `eGenix Public License 1.1.0`
 
@@ -84,7 +84,7 @@ Raw Data
         "__impliedNames": [
             "eGenix",
             "eGenix.com Public License 1.1.0",
-            "scancode:egenix-1.1.0",
+            "scancode://egenix-1.1.0",
             "eGenix Public License 1.1.0"
         ],
         "__impliedId": "eGenix",
@@ -96,7 +96,7 @@ Raw Data
                         "eGenix",
                         "eGenix",
                         "eGenix.com Public License 1.1.0",
-                        "scancode:egenix-1.1.0",
+                        "scancode://egenix-1.1.0",
                         "eGenix Public License 1.1.0"
                     ],
                     "__impliedId": "eGenix"
@@ -105,7 +105,7 @@ Raw Data
                 "otherNames": [
                     "eGenix",
                     "eGenix.com Public License 1.1.0",
-                    "scancode:egenix-1.1.0",
+                    "scancode://egenix-1.1.0",
                     "eGenix Public License 1.1.0"
                 ]
             },
@@ -184,7 +184,7 @@ Raw Data
                 "spdxId": "eGenix",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:egenix-1.1.0",
+                        "scancode://egenix-1.1.0",
                         "eGenix Public License 1.1.0",
                         "eGenix"
                     ],

@@ -5,7 +5,7 @@ Net-SNMP License (Net-SNMP)
 
 **Other Names:**
 
--   `scancode:net-snmp`
+-   `scancode://net-snmp`
 
 -   `Net SNMP License`
 
@@ -280,7 +280,7 @@ Raw Data
         "__impliedNames": [
             "Net-SNMP",
             "Net-SNMP License",
-            "scancode:net-snmp",
+            "scancode://net-snmp",
             "Net SNMP License"
         ],
         "__impliedId": "Net-SNMP",
@@ -291,7 +291,7 @@ Raw Data
                         "Net-SNMP",
                         "Net-SNMP",
                         "Net-SNMP License",
-                        "scancode:net-snmp",
+                        "scancode://net-snmp",
                         "Net SNMP License"
                     ],
                     "__impliedId": "Net-SNMP"
@@ -300,7 +300,7 @@ Raw Data
                 "otherNames": [
                     "Net-SNMP",
                     "Net-SNMP License",
-                    "scancode:net-snmp",
+                    "scancode://net-snmp",
                     "Net SNMP License"
                 ]
             },
@@ -348,7 +348,7 @@ Raw Data
                 "spdxId": "Net-SNMP",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:net-snmp",
+                        "scancode://net-snmp",
                         "Net SNMP License",
                         "Net-SNMP"
                     ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Bahyph",
         "Bahyph License",
-        "scancode:bahyph"
+        "scancode://bahyph"
     ],
     "__impliedId": "Bahyph",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "Bahyph",
                     "Bahyph",
                     "Bahyph License",
-                    "scancode:bahyph"
+                    "scancode://bahyph"
                 ],
                 "__impliedId": "Bahyph"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "Bahyph",
                 "Bahyph License",
-                "scancode:bahyph"
+                "scancode://bahyph"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "Bahyph",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:bahyph",
+                    "scancode://bahyph",
                     "Bahyph License",
                     "Bahyph"
                 ],

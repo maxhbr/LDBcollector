@@ -5,13 +5,13 @@ NTP License (NTP)
 
 **Other Names:**
 
--   `scancode:mit-old-style-no-advert`
+-   `scancode://mit-old-style-no-advert`
 
 -   `MIT Old Style no advertising`
 
 -   `NTP License (NTP)`
 
--   `scancode:ntpl`
+-   `scancode://ntpl`
 
 Comments on (easy) usability
 ----------------------------
@@ -85,10 +85,10 @@ Raw Data
         "__impliedNames": [
             "NTP",
             "NTP License",
-            "scancode:mit-old-style-no-advert",
+            "scancode://mit-old-style-no-advert",
             "MIT Old Style no advertising",
             "NTP License (NTP)",
-            "scancode:ntpl"
+            "scancode://ntpl"
         ],
         "__impliedId": "NTP",
         "facts": {
@@ -125,7 +125,7 @@ Raw Data
                         "NTP",
                         "NTP",
                         "NTP License",
-                        "scancode:mit-old-style-no-advert",
+                        "scancode://mit-old-style-no-advert",
                         "MIT Old Style no advertising",
                         "NTP License (NTP)"
                     ],
@@ -135,7 +135,7 @@ Raw Data
                 "otherNames": [
                     "NTP",
                     "NTP License",
-                    "scancode:mit-old-style-no-advert",
+                    "scancode://mit-old-style-no-advert",
                     "MIT Old Style no advertising",
                     "NTP License (NTP)"
                 ]
@@ -206,7 +206,7 @@ Raw Data
                 "spdxId": null,
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:ntpl",
+                        "scancode://ntpl",
                         "NTP License"
                     ],
                     "__impliedCopyleft": [

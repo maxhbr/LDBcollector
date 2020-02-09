@@ -5,7 +5,7 @@ xinetd License (xinetd)
 
 **Other Names:**
 
--   `scancode:xinetd`
+-   `scancode://xinetd`
 
 Comments on (easy) usability
 ----------------------------
@@ -98,7 +98,7 @@ Raw Data
         "__impliedNames": [
             "xinetd",
             "xinetd License",
-            "scancode:xinetd"
+            "scancode://xinetd"
         ],
         "__impliedId": "xinetd",
         "__isFsfFree": true,
@@ -109,7 +109,7 @@ Raw Data
                         "xinetd",
                         "xinetd",
                         "xinetd License",
-                        "scancode:xinetd"
+                        "scancode://xinetd"
                     ],
                     "__impliedId": "xinetd"
                 },
@@ -117,7 +117,7 @@ Raw Data
                 "otherNames": [
                     "xinetd",
                     "xinetd License",
-                    "scancode:xinetd"
+                    "scancode://xinetd"
                 ]
             },
             "SPDX": {
@@ -190,7 +190,7 @@ Raw Data
                 "spdxId": "xinetd",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode:xinetd",
+                        "scancode://xinetd",
                         "xinetd License",
                         "xinetd"
                     ],

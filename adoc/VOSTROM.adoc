@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:vostrom+`
+* `+scancode://vostrom+`
 * `+VOSTROM Public License+`
 
 === Comments on (easy) usability
@@ -105,7 +105,7 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
     "__impliedNames": [
         "VOSTROM",
         "VOSTROM Public License for Open Source",
-        "scancode:vostrom",
+        "scancode://vostrom",
         "VOSTROM Public License"
     ],
     "__impliedId": "VOSTROM",
@@ -117,7 +117,7 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                     "VOSTROM",
                     "VOSTROM",
                     "VOSTROM Public License for Open Source",
-                    "scancode:vostrom",
+                    "scancode://vostrom",
                     "VOSTROM Public License"
                 ],
                 "__impliedId": "VOSTROM"
@@ -126,7 +126,7 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "otherNames": [
                 "VOSTROM",
                 "VOSTROM Public License for Open Source",
-                "scancode:vostrom",
+                "scancode://vostrom",
                 "VOSTROM Public License"
             ]
         },
@@ -202,7 +202,7 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "spdxId": "VOSTROM",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:vostrom",
+                    "scancode://vostrom",
                     "VOSTROM Public License",
                     "VOSTROM"
                 ],

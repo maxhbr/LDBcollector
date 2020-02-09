@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode:occt-pl+`
+* `+scancode://occt-pl+`
 
 === Comments on (easy) usability
 
@@ -151,7 +151,7 @@ End of Schedule "B"
     "__impliedNames": [
         "OCCT-PL",
         "Open CASCADE Technology Public License",
-        "scancode:occt-pl"
+        "scancode://occt-pl"
     ],
     "__impliedId": "OCCT-PL",
     "facts": {
@@ -161,7 +161,7 @@ End of Schedule "B"
                     "OCCT-PL",
                     "OCCT-PL",
                     "Open CASCADE Technology Public License",
-                    "scancode:occt-pl"
+                    "scancode://occt-pl"
                 ],
                 "__impliedId": "OCCT-PL"
             },
@@ -169,7 +169,7 @@ End of Schedule "B"
             "otherNames": [
                 "OCCT-PL",
                 "Open CASCADE Technology Public License",
-                "scancode:occt-pl"
+                "scancode://occt-pl"
             ]
         },
         "SPDX": {
@@ -239,7 +239,7 @@ End of Schedule "B"
             "spdxId": "OCCT-PL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode:occt-pl",
+                    "scancode://occt-pl",
                     "OCCT-PL",
                     "OCCT-PL"
                 ],
