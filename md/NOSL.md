@@ -5,7 +5,7 @@ Netizen Open Source License (NOSL)
 
 **Other Names:**
 
--   `scancode://nosl-1.0`
+-   `scancode:nosl-1.0`
 
 -   `NOSL 1.0`
 
@@ -523,7 +523,7 @@ Raw Data
         "__impliedNames": [
             "NOSL",
             "Netizen Open Source License",
-            "scancode://nosl-1.0",
+            "scancode:nosl-1.0",
             "NOSL 1.0"
         ],
         "__impliedId": "NOSL",
@@ -535,7 +535,7 @@ Raw Data
                         "NOSL",
                         "NOSL",
                         "Netizen Open Source License",
-                        "scancode://nosl-1.0",
+                        "scancode:nosl-1.0",
                         "NOSL 1.0"
                     ],
                     "__impliedId": "NOSL"
@@ -544,7 +544,7 @@ Raw Data
                 "otherNames": [
                     "NOSL",
                     "Netizen Open Source License",
-                    "scancode://nosl-1.0",
+                    "scancode:nosl-1.0",
                     "NOSL 1.0"
                 ]
             },
@@ -618,7 +618,7 @@ Raw Data
                 "spdxId": "NOSL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://nosl-1.0",
+                        "scancode:nosl-1.0",
                         "NOSL 1.0",
                         "NOSL"
                     ],

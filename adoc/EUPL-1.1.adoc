@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode://eupl-1.1+`
+* `+scancode:eupl-1.1+`
 * `+EUPL 1.1+`
 * `+European Union Public License, Version 1.1+`
 * `+License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)+`
@@ -419,7 +419,7 @@ registered office inside a European Union country.
     "__impliedNames": [
         "EUPL-1.1",
         "European Union Public License 1.1",
-        "scancode://eupl-1.1",
+        "scancode:eupl-1.1",
         "EUPL 1.1",
         "eupl-1.1",
         "European Union Public License, Version 1.1",
@@ -462,7 +462,7 @@ registered office inside a European Union country.
                     "EUPL-1.1",
                     "EUPL-1.1",
                     "European Union Public License 1.1",
-                    "scancode://eupl-1.1",
+                    "scancode:eupl-1.1",
                     "EUPL 1.1",
                     "eupl-1.1",
                     "European Union Public License, Version 1.1",
@@ -474,7 +474,7 @@ registered office inside a European Union country.
             "otherNames": [
                 "EUPL-1.1",
                 "European Union Public License 1.1",
-                "scancode://eupl-1.1",
+                "scancode:eupl-1.1",
                 "EUPL 1.1",
                 "eupl-1.1",
                 "European Union Public License, Version 1.1",
@@ -596,7 +596,7 @@ registered office inside a European Union country.
             "spdxId": "EUPL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://eupl-1.1",
+                    "scancode:eupl-1.1",
                     "EUPL 1.1",
                     "EUPL-1.1"
                 ],

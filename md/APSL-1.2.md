@@ -5,7 +5,7 @@ Apple Public Source License 1.2 (APSL-1.2)
 
 **Other Names:**
 
--   `scancode://apsl-1.2`
+-   `scancode:apsl-1.2`
 
 -   `APSL 1.2`
 
@@ -311,7 +311,7 @@ Raw Data
         "__impliedNames": [
             "APSL-1.2",
             "Apple Public Source License 1.2",
-            "scancode://apsl-1.2",
+            "scancode:apsl-1.2",
             "APSL 1.2"
         ],
         "__impliedId": "APSL-1.2",
@@ -325,7 +325,7 @@ Raw Data
                         "APSL-1.2",
                         "APSL-1.2",
                         "Apple Public Source License 1.2",
-                        "scancode://apsl-1.2",
+                        "scancode:apsl-1.2",
                         "APSL 1.2"
                     ],
                     "__impliedId": "APSL-1.2"
@@ -334,7 +334,7 @@ Raw Data
                 "otherNames": [
                     "APSL-1.2",
                     "Apple Public Source License 1.2",
-                    "scancode://apsl-1.2",
+                    "scancode:apsl-1.2",
                     "APSL 1.2"
                 ]
             },
@@ -418,7 +418,7 @@ Raw Data
                 "spdxId": "APSL-1.2",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://apsl-1.2",
+                        "scancode:apsl-1.2",
                         "APSL 1.2",
                         "APSL-1.2"
                     ],

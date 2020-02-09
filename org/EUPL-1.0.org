@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://eupl-1.0=
+- =scancode:eupl-1.0=
 
 - =EUPL 1.0=
 
@@ -195,7 +195,7 @@
       "__impliedNames": [
           "EUPL-1.0",
           "European Union Public License 1.0",
-          "scancode://eupl-1.0",
+          "scancode:eupl-1.0",
           "EUPL 1.0"
       ],
       "__impliedId": "EUPL-1.0",
@@ -206,7 +206,7 @@
                       "EUPL-1.0",
                       "EUPL-1.0",
                       "European Union Public License 1.0",
-                      "scancode://eupl-1.0",
+                      "scancode:eupl-1.0",
                       "EUPL 1.0"
                   ],
                   "__impliedId": "EUPL-1.0"
@@ -215,7 +215,7 @@
               "otherNames": [
                   "EUPL-1.0",
                   "European Union Public License 1.0",
-                  "scancode://eupl-1.0",
+                  "scancode:eupl-1.0",
                   "EUPL 1.0"
               ]
           },
@@ -270,7 +270,7 @@
               "spdxId": "EUPL-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://eupl-1.0",
+                      "scancode:eupl-1.0",
                       "EUPL 1.0",
                       "EUPL-1.0"
                   ],

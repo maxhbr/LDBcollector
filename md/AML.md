@@ -5,7 +5,7 @@ Apple MIT License (AML)
 
 **Other Names:**
 
--   `scancode://aml`
+-   `scancode:aml`
 
 Comments on (easy) usability
 ----------------------------
@@ -47,7 +47,7 @@ Raw Data
         "__impliedNames": [
             "AML",
             "Apple MIT License",
-            "scancode://aml"
+            "scancode:aml"
         ],
         "__impliedId": "AML",
         "__isFsfFree": true,
@@ -58,7 +58,7 @@ Raw Data
                         "AML",
                         "AML",
                         "Apple MIT License",
-                        "scancode://aml"
+                        "scancode:aml"
                     ],
                     "__impliedId": "AML"
                 },
@@ -66,7 +66,7 @@ Raw Data
                 "otherNames": [
                     "AML",
                     "Apple MIT License",
-                    "scancode://aml"
+                    "scancode:aml"
                 ]
             },
             "SPDX": {
@@ -139,7 +139,7 @@ Raw Data
                 "spdxId": "AML",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://aml",
+                        "scancode:aml",
                         "Apple MIT License",
                         "AML"
                     ],

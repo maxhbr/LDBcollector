@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://xinetd=
+- =scancode:xinetd=
 
 ** Comments on (easy) usability
 
@@ -99,7 +99,7 @@
       "__impliedNames": [
           "xinetd",
           "xinetd License",
-          "scancode://xinetd"
+          "scancode:xinetd"
       ],
       "__impliedId": "xinetd",
       "__isFsfFree": true,
@@ -110,7 +110,7 @@
                       "xinetd",
                       "xinetd",
                       "xinetd License",
-                      "scancode://xinetd"
+                      "scancode:xinetd"
                   ],
                   "__impliedId": "xinetd"
               },
@@ -118,7 +118,7 @@
               "otherNames": [
                   "xinetd",
                   "xinetd License",
-                  "scancode://xinetd"
+                  "scancode:xinetd"
               ]
           },
           "SPDX": {
@@ -191,7 +191,7 @@
               "spdxId": "xinetd",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://xinetd",
+                      "scancode:xinetd",
                       "xinetd License",
                       "xinetd"
                   ],

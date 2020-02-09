@@ -5,7 +5,7 @@ GNU Library General Public License v2 only (LGPL-2.0-only)
 
 **Other Names:**
 
--   `scancode://lgpl-2.0`
+-   `scancode:lgpl-2.0`
 
 -   `LGPL 2.0`
 
@@ -541,7 +541,7 @@ Raw Data
         "__impliedNames": [
             "LGPL-2.0-only",
             "GNU Library General Public License v2 only",
-            "scancode://lgpl-2.0",
+            "scancode:lgpl-2.0",
             "LGPL 2.0",
             "GNU Library General Public License 2.0",
             "LGPL-2.0-or-later"
@@ -557,7 +557,7 @@ Raw Data
                         "LGPL-2.0-only",
                         "LGPL-2.0-only",
                         "GNU Library General Public License v2 only",
-                        "scancode://lgpl-2.0",
+                        "scancode:lgpl-2.0",
                         "LGPL 2.0",
                         "GNU Library General Public License 2.0"
                     ],
@@ -567,7 +567,7 @@ Raw Data
                 "otherNames": [
                     "LGPL-2.0-only",
                     "GNU Library General Public License v2 only",
-                    "scancode://lgpl-2.0",
+                    "scancode:lgpl-2.0",
                     "LGPL 2.0",
                     "GNU Library General Public License 2.0"
                 ]
@@ -629,7 +629,7 @@ Raw Data
                 "spdxId": "LGPL-2.0-only",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://lgpl-2.0",
+                        "scancode:lgpl-2.0",
                         "LGPL 2.0",
                         "LGPL-2.0-only"
                     ],

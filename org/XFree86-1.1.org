@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =scancode://xfree86-1.1=
+- =scancode:xfree86-1.1=
 
 - =XFree86 1.1 License=
 
@@ -103,7 +103,7 @@
       "__impliedNames": [
           "XFree86-1.1",
           "XFree86 License 1.1",
-          "scancode://xfree86-1.1",
+          "scancode:xfree86-1.1",
           "XFree86 1.1 License"
       ],
       "__impliedId": "XFree86-1.1",
@@ -115,7 +115,7 @@
                       "XFree86-1.1",
                       "XFree86-1.1",
                       "XFree86 License 1.1",
-                      "scancode://xfree86-1.1",
+                      "scancode:xfree86-1.1",
                       "XFree86 1.1 License"
                   ],
                   "__impliedId": "XFree86-1.1"
@@ -124,7 +124,7 @@
               "otherNames": [
                   "XFree86-1.1",
                   "XFree86 License 1.1",
-                  "scancode://xfree86-1.1",
+                  "scancode:xfree86-1.1",
                   "XFree86 1.1 License"
               ]
           },
@@ -182,7 +182,7 @@
               "spdxId": "XFree86-1.1",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://xfree86-1.1",
+                      "scancode:xfree86-1.1",
                       "XFree86 License 1.1",
                       "XFree86-1.1"
                   ],

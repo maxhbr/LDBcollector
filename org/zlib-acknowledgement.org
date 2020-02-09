@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://zlib-acknowledgement=
+- =scancode:zlib-acknowledgement=
 
 - =ZLIB License with Acknowledgment=
 
@@ -92,7 +92,7 @@
       "__impliedNames": [
           "zlib-acknowledgement",
           "zlib/libpng License with Acknowledgement",
-          "scancode://zlib-acknowledgement",
+          "scancode:zlib-acknowledgement",
           "ZLIB License with Acknowledgment"
       ],
       "__impliedId": "zlib-acknowledgement",
@@ -107,7 +107,7 @@
                       "zlib-acknowledgement",
                       "zlib-acknowledgement",
                       "zlib/libpng License with Acknowledgement",
-                      "scancode://zlib-acknowledgement",
+                      "scancode:zlib-acknowledgement",
                       "ZLIB License with Acknowledgment"
                   ],
                   "__impliedId": "zlib-acknowledgement"
@@ -116,7 +116,7 @@
               "otherNames": [
                   "zlib-acknowledgement",
                   "zlib/libpng License with Acknowledgement",
-                  "scancode://zlib-acknowledgement",
+                  "scancode:zlib-acknowledgement",
                   "ZLIB License with Acknowledgment"
               ]
           },
@@ -202,7 +202,7 @@
               "spdxId": "zlib-acknowledgement",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://zlib-acknowledgement",
+                      "scancode:zlib-acknowledgement",
                       "ZLIB License with Acknowledgment",
                       "zlib-acknowledgement"
                   ],

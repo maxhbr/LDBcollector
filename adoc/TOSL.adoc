@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://tosl+`
+* `+scancode:tosl+`
 * `+TOSL 1.0a+`
 
 === Comments on (easy) usability
@@ -73,7 +73,7 @@ OF SUCH DAMAGE.
     "__impliedNames": [
         "TOSL",
         "Trusster Open Source License",
-        "scancode://tosl",
+        "scancode:tosl",
         "TOSL 1.0a"
     ],
     "__impliedId": "TOSL",
@@ -85,7 +85,7 @@ OF SUCH DAMAGE.
                     "TOSL",
                     "TOSL",
                     "Trusster Open Source License",
-                    "scancode://tosl",
+                    "scancode:tosl",
                     "TOSL 1.0a"
                 ],
                 "__impliedId": "TOSL"
@@ -94,7 +94,7 @@ OF SUCH DAMAGE.
             "otherNames": [
                 "TOSL",
                 "Trusster Open Source License",
-                "scancode://tosl",
+                "scancode:tosl",
                 "TOSL 1.0a"
             ]
         },
@@ -168,7 +168,7 @@ OF SUCH DAMAGE.
             "spdxId": "TOSL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://tosl",
+                    "scancode:tosl",
                     "TOSL 1.0a",
                     "TOSL"
                 ],

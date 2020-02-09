@@ -5,7 +5,7 @@ SugarCRM Public License v1.1.3 (SugarCRM-1.1.3)
 
 **Other Names:**
 
--   `scancode://sugarcrm-1.1.3`
+-   `scancode:sugarcrm-1.1.3`
 
 -   `SugarCRM Public License 1.1.3`
 
@@ -189,7 +189,7 @@ Raw Data
         "__impliedNames": [
             "SugarCRM-1.1.3",
             "SugarCRM Public License v1.1.3",
-            "scancode://sugarcrm-1.1.3",
+            "scancode:sugarcrm-1.1.3",
             "SugarCRM Public License 1.1.3"
         ],
         "__impliedId": "SugarCRM-1.1.3",
@@ -200,7 +200,7 @@ Raw Data
                         "SugarCRM-1.1.3",
                         "SugarCRM-1.1.3",
                         "SugarCRM Public License v1.1.3",
-                        "scancode://sugarcrm-1.1.3",
+                        "scancode:sugarcrm-1.1.3",
                         "SugarCRM Public License 1.1.3"
                     ],
                     "__impliedId": "SugarCRM-1.1.3"
@@ -209,7 +209,7 @@ Raw Data
                 "otherNames": [
                     "SugarCRM-1.1.3",
                     "SugarCRM Public License v1.1.3",
-                    "scancode://sugarcrm-1.1.3",
+                    "scancode:sugarcrm-1.1.3",
                     "SugarCRM Public License 1.1.3"
                 ]
             },
@@ -259,7 +259,7 @@ Raw Data
                 "spdxId": "SugarCRM-1.1.3",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://sugarcrm-1.1.3",
+                        "scancode:sugarcrm-1.1.3",
                         "SugarCRM Public License 1.1.3",
                         "SugarCRM-1.1.3"
                     ],

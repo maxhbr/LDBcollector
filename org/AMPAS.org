@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://ampas=
+- =scancode:ampas=
 
 - =AMPAS BSD-Style License=
 
@@ -55,7 +55,7 @@
       "__impliedNames": [
           "AMPAS",
           "Academy of Motion Picture Arts and Sciences BSD",
-          "scancode://ampas",
+          "scancode:ampas",
           "AMPAS BSD-Style License"
       ],
       "__impliedId": "AMPAS",
@@ -67,7 +67,7 @@
                       "AMPAS",
                       "AMPAS",
                       "Academy of Motion Picture Arts and Sciences BSD",
-                      "scancode://ampas",
+                      "scancode:ampas",
                       "AMPAS BSD-Style License"
                   ],
                   "__impliedId": "AMPAS"
@@ -76,7 +76,7 @@
               "otherNames": [
                   "AMPAS",
                   "Academy of Motion Picture Arts and Sciences BSD",
-                  "scancode://ampas",
+                  "scancode:ampas",
                   "AMPAS BSD-Style License"
               ]
           },
@@ -150,7 +150,7 @@
               "spdxId": "AMPAS",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://ampas",
+                      "scancode:ampas",
                       "AMPAS BSD-Style License",
                       "AMPAS"
                   ],

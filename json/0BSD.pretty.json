@@ -2,7 +2,7 @@
     "__impliedNames": [
         "0BSD",
         "BSD Zero Clause License",
-        "scancode://bsd-zero",
+        "scancode:bsd-zero",
         "0bsd"
     ],
     "__impliedId": "0BSD",
@@ -13,7 +13,7 @@
                     "0BSD",
                     "0BSD",
                     "BSD Zero Clause License",
-                    "scancode://bsd-zero",
+                    "scancode:bsd-zero",
                     "0bsd"
                 ],
                 "__impliedId": "0BSD"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "0BSD",
                 "BSD Zero Clause License",
-                "scancode://bsd-zero",
+                "scancode:bsd-zero",
                 "0bsd"
             ]
         },
@@ -79,7 +79,7 @@
             "spdxId": "0BSD",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://bsd-zero",
+                    "scancode:bsd-zero",
                     "BSD Zero Clause License",
                     "0BSD"
                 ],

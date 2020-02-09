@@ -5,7 +5,7 @@ Afmparse License (Afmparse)
 
 **Other Names:**
 
--   `scancode://afmparse`
+-   `scancode:afmparse`
 
 Comments on (easy) usability
 ----------------------------
@@ -56,7 +56,7 @@ Raw Data
         "__impliedNames": [
             "Afmparse",
             "Afmparse License",
-            "scancode://afmparse",
+            "scancode:afmparse",
             "afmparse License"
         ],
         "__impliedId": "Afmparse",
@@ -68,7 +68,7 @@ Raw Data
                         "Afmparse",
                         "Afmparse",
                         "Afmparse License",
-                        "scancode://afmparse",
+                        "scancode:afmparse",
                         "afmparse License"
                     ],
                     "__impliedId": "Afmparse"
@@ -77,7 +77,7 @@ Raw Data
                 "otherNames": [
                     "Afmparse",
                     "Afmparse License",
-                    "scancode://afmparse",
+                    "scancode:afmparse",
                     "afmparse License"
                 ]
             },
@@ -151,7 +151,7 @@ Raw Data
                 "spdxId": "Afmparse",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://afmparse",
+                        "scancode:afmparse",
                         "afmparse License",
                         "Afmparse"
                     ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://osl-2.1+`
+* `+scancode:osl-2.1+`
 * `+OSL 2.1+`
 * `+Open Software License, Version 2.1+`
 
@@ -96,7 +96,7 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
     "__impliedNames": [
         "OSL-2.1",
         "Open Software License 2.1",
-        "scancode://osl-2.1",
+        "scancode:osl-2.1",
         "OSL 2.1",
         "Open Software License, Version 2.1"
     ],
@@ -109,7 +109,7 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
                     "OSL-2.1",
                     "OSL-2.1",
                     "Open Software License 2.1",
-                    "scancode://osl-2.1",
+                    "scancode:osl-2.1",
                     "OSL 2.1",
                     "Open Software License, Version 2.1"
                 ],
@@ -119,7 +119,7 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
             "otherNames": [
                 "OSL-2.1",
                 "Open Software License 2.1",
-                "scancode://osl-2.1",
+                "scancode:osl-2.1",
                 "OSL 2.1",
                 "Open Software License, Version 2.1"
             ]
@@ -213,7 +213,7 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
             "spdxId": "OSL-2.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://osl-2.1",
+                    "scancode:osl-2.1",
                     "OSL 2.1",
                     "OSL-2.1"
                 ],

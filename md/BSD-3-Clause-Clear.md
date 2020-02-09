@@ -5,7 +5,7 @@ BSD 3-Clause Clear License (BSD-3-Clause-Clear)
 
 **Other Names:**
 
--   `scancode://clear-bsd`
+-   `scancode:clear-bsd`
 
 -   `Clear BSD License`
 
@@ -93,7 +93,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-Clear",
             "BSD 3-Clause Clear License",
-            "scancode://clear-bsd",
+            "scancode:clear-bsd",
             "Clear BSD License",
             "bsd-3-clause-clear"
         ],
@@ -108,7 +108,7 @@ Raw Data
                         "BSD-3-Clause-Clear",
                         "BSD-3-Clause-Clear",
                         "BSD 3-Clause Clear License",
-                        "scancode://clear-bsd",
+                        "scancode:clear-bsd",
                         "Clear BSD License",
                         "bsd-3-clause-clear"
                     ],
@@ -118,7 +118,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause-Clear",
                     "BSD 3-Clause Clear License",
-                    "scancode://clear-bsd",
+                    "scancode:clear-bsd",
                     "Clear BSD License",
                     "bsd-3-clause-clear"
                 ]
@@ -167,7 +167,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause-Clear",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://clear-bsd",
+                        "scancode:clear-bsd",
                         "Clear BSD License",
                         "BSD-3-Clause-Clear"
                     ],

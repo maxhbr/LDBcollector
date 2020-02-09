@@ -5,7 +5,7 @@ Erlang Public License v1.1 (ErlPL-1.1)
 
 **Other Names:**
 
--   `scancode://erlangpl-1.1`
+-   `scancode:erlangpl-1.1`
 
 -   `Erlang Public License 1.1`
 
@@ -322,7 +322,7 @@ Raw Data
         "__impliedNames": [
             "ErlPL-1.1",
             "Erlang Public License v1.1",
-            "scancode://erlangpl-1.1",
+            "scancode:erlangpl-1.1",
             "Erlang Public License 1.1"
         ],
         "__impliedId": "ErlPL-1.1",
@@ -334,7 +334,7 @@ Raw Data
                         "ErlPL-1.1",
                         "ErlPL-1.1",
                         "Erlang Public License v1.1",
-                        "scancode://erlangpl-1.1",
+                        "scancode:erlangpl-1.1",
                         "Erlang Public License 1.1"
                     ],
                     "__impliedId": "ErlPL-1.1"
@@ -343,7 +343,7 @@ Raw Data
                 "otherNames": [
                     "ErlPL-1.1",
                     "Erlang Public License v1.1",
-                    "scancode://erlangpl-1.1",
+                    "scancode:erlangpl-1.1",
                     "Erlang Public License 1.1"
                 ]
             },
@@ -417,7 +417,7 @@ Raw Data
                 "spdxId": "ErlPL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://erlangpl-1.1",
+                        "scancode:erlangpl-1.1",
                         "Erlang Public License 1.1",
                         "ErlPL-1.1"
                     ],

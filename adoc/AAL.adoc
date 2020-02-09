@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://attribution+`
+* `+scancode:attribution+`
 * `+License :: OSI Approved :: Attribution Assurance License+`
 * `+Attribution Assurance Licenses+`
 
@@ -95,7 +95,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "AAL",
         "Attribution Assurance License",
-        "scancode://attribution",
+        "scancode:attribution",
         "License :: OSI Approved :: Attribution Assurance License",
         "Attribution Assurance Licenses"
     ],
@@ -135,7 +135,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "AAL",
                     "AAL",
                     "Attribution Assurance License",
-                    "scancode://attribution",
+                    "scancode:attribution",
                     "License :: OSI Approved :: Attribution Assurance License",
                     "Attribution Assurance Licenses"
                 ],
@@ -145,7 +145,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "AAL",
                 "Attribution Assurance License",
-                "scancode://attribution",
+                "scancode:attribution",
                 "License :: OSI Approved :: Attribution Assurance License",
                 "Attribution Assurance Licenses"
             ]
@@ -232,7 +232,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "AAL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://attribution",
+                    "scancode:attribution",
                     "AAL",
                     "AAL"
                 ],

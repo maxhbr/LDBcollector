@@ -5,7 +5,7 @@ ISC License (ISC)
 
 **Other Names:**
 
--   `scancode://isc`
+-   `scancode:isc`
 
 -   `ISC License (ISC)`
 
@@ -115,7 +115,7 @@ Raw Data
         "__impliedNames": [
             "ISC",
             "ISC License",
-            "scancode://isc",
+            "scancode:isc",
             "isc",
             "ISC License (ISC)",
             "License :: OSI Approved :: ISC License (ISCL)",
@@ -160,7 +160,7 @@ Raw Data
                         "ISC",
                         "ISC",
                         "ISC License",
-                        "scancode://isc",
+                        "scancode:isc",
                         "isc",
                         "ISC License (ISC)",
                         "License :: OSI Approved :: ISC License (ISCL)",
@@ -172,7 +172,7 @@ Raw Data
                 "otherNames": [
                     "ISC",
                     "ISC License",
-                    "scancode://isc",
+                    "scancode:isc",
                     "isc",
                     "ISC License (ISC)",
                     "License :: OSI Approved :: ISC License (ISCL)",
@@ -254,7 +254,7 @@ Raw Data
                 "spdxId": "ISC",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://isc",
+                        "scancode:isc",
                         "ISC License",
                         "ISC"
                     ],

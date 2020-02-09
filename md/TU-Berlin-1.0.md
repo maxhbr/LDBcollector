@@ -5,7 +5,7 @@ Technische Universitaet Berlin License 1.0 (TU-Berlin-1.0)
 
 **Other Names:**
 
--   `scancode://tu-berlin`
+-   `scancode:tu-berlin`
 
 -   `TU Berlin License 1.0`
 
@@ -49,7 +49,7 @@ Raw Data
         "__impliedNames": [
             "TU-Berlin-1.0",
             "Technische Universitaet Berlin License 1.0",
-            "scancode://tu-berlin",
+            "scancode:tu-berlin",
             "TU Berlin License 1.0"
         ],
         "__impliedId": "TU-Berlin-1.0",
@@ -60,7 +60,7 @@ Raw Data
                         "TU-Berlin-1.0",
                         "TU-Berlin-1.0",
                         "Technische Universitaet Berlin License 1.0",
-                        "scancode://tu-berlin",
+                        "scancode:tu-berlin",
                         "TU Berlin License 1.0"
                     ],
                     "__impliedId": "TU-Berlin-1.0"
@@ -69,7 +69,7 @@ Raw Data
                 "otherNames": [
                     "TU-Berlin-1.0",
                     "Technische Universitaet Berlin License 1.0",
-                    "scancode://tu-berlin",
+                    "scancode:tu-berlin",
                     "TU Berlin License 1.0"
                 ]
             },
@@ -120,7 +120,7 @@ Raw Data
                 "spdxId": "TU-Berlin-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://tu-berlin",
+                        "scancode:tu-berlin",
                         "TU Berlin License 1.0",
                         "TU-Berlin-1.0"
                     ],

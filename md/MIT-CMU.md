@@ -5,11 +5,11 @@ CMU License (MIT-CMU)
 
 **Other Names:**
 
--   `scancode://cmu-uc`
+-   `scancode:cmu-uc`
 
 -   `CMU UC Regents License`
 
--   `scancode://cmu-template`
+-   `scancode:cmu-template`
 
 Comments on (easy) usability
 ----------------------------
@@ -70,9 +70,9 @@ Raw Data
         "__impliedNames": [
             "MIT-CMU",
             "CMU License",
-            "scancode://cmu-uc",
+            "scancode:cmu-uc",
             "CMU UC Regents License",
-            "scancode://cmu-template"
+            "scancode:cmu-template"
         ],
         "__impliedId": "MIT-CMU",
         "facts": {
@@ -82,7 +82,7 @@ Raw Data
                         "MIT-CMU",
                         "MIT-CMU",
                         "CMU License",
-                        "scancode://cmu-uc",
+                        "scancode:cmu-uc",
                         "CMU UC Regents License"
                     ],
                     "__impliedId": "MIT-CMU"
@@ -91,7 +91,7 @@ Raw Data
                 "otherNames": [
                     "MIT-CMU",
                     "CMU License",
-                    "scancode://cmu-uc",
+                    "scancode:cmu-uc",
                     "CMU UC Regents License"
                 ]
             },
@@ -156,7 +156,7 @@ Raw Data
                 "spdxId": "MIT-CMU",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cmu-uc",
+                        "scancode:cmu-uc",
                         "CMU UC Regents License",
                         "MIT-CMU"
                     ],

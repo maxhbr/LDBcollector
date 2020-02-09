@@ -5,7 +5,7 @@ Lucent Public License Version 1.0 (LPL-1.0)
 
 **Other Names:**
 
--   `scancode://lucent-pl-1.0`
+-   `scancode:lucent-pl-1.0`
 
 -   `Lucent Public License 1.0`
 
@@ -263,7 +263,7 @@ Raw Data
         "__impliedNames": [
             "LPL-1.0",
             "Lucent Public License Version 1.0",
-            "scancode://lucent-pl-1.0",
+            "scancode:lucent-pl-1.0",
             "Lucent Public License 1.0",
             "Lucent Public License, Plan 9, Version 1.0",
             "Lucent Public License (\"Plan9\") 1.0"
@@ -303,7 +303,7 @@ Raw Data
                         "LPL-1.0",
                         "LPL-1.0",
                         "Lucent Public License Version 1.0",
-                        "scancode://lucent-pl-1.0",
+                        "scancode:lucent-pl-1.0",
                         "Lucent Public License 1.0",
                         "Lucent Public License, Plan 9, Version 1.0",
                         "Lucent Public License (\"Plan9\") 1.0"
@@ -314,7 +314,7 @@ Raw Data
                 "otherNames": [
                     "LPL-1.0",
                     "Lucent Public License Version 1.0",
-                    "scancode://lucent-pl-1.0",
+                    "scancode:lucent-pl-1.0",
                     "Lucent Public License 1.0",
                     "Lucent Public License, Plan 9, Version 1.0",
                     "Lucent Public License (\"Plan9\") 1.0"
@@ -376,7 +376,7 @@ Raw Data
                 "spdxId": "LPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://lucent-pl-1.0",
+                        "scancode:lucent-pl-1.0",
                         "Lucent Public License 1.0",
                         "LPL-1.0"
                     ],

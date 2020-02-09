@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Qhull",
         "Qhull License",
-        "scancode://qhull"
+        "scancode:qhull"
     ],
     "__impliedId": "Qhull",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "Qhull",
                     "Qhull",
                     "Qhull License",
-                    "scancode://qhull"
+                    "scancode:qhull"
                 ],
                 "__impliedId": "Qhull"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "Qhull",
                 "Qhull License",
-                "scancode://qhull"
+                "scancode:qhull"
             ]
         },
         "SPDX": {
@@ -106,7 +106,7 @@
             "spdxId": "Qhull",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://qhull",
+                    "scancode:qhull",
                     "Qhull License",
                     "Qhull"
                 ],

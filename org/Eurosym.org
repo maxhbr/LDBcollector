@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://eurosym=
+- =scancode:eurosym=
 
 ** Comments on (easy) usability
 
@@ -57,7 +57,7 @@
       "__impliedNames": [
           "Eurosym",
           "Eurosym License",
-          "scancode://eurosym"
+          "scancode:eurosym"
       ],
       "__impliedId": "Eurosym",
       "__isFsfFree": true,
@@ -68,7 +68,7 @@
                       "Eurosym",
                       "Eurosym",
                       "Eurosym License",
-                      "scancode://eurosym"
+                      "scancode:eurosym"
                   ],
                   "__impliedId": "Eurosym"
               },
@@ -76,7 +76,7 @@
               "otherNames": [
                   "Eurosym",
                   "Eurosym License",
-                  "scancode://eurosym"
+                  "scancode:eurosym"
               ]
           },
           "SPDX": {
@@ -151,7 +151,7 @@
               "spdxId": "Eurosym",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://eurosym",
+                      "scancode:eurosym",
                       "Eurosym License",
                       "Eurosym"
                   ],

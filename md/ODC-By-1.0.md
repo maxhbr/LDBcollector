@@ -5,7 +5,7 @@ Open Data Commons Attribution License v1.0 (ODC-By-1.0)
 
 **Other Names:**
 
--   `scancode://odc-by-1.0`
+-   `scancode:odc-by-1.0`
 
 -   `Open Data Commons Attribution License 1.0`
 
@@ -452,7 +452,7 @@ Raw Data
         "__impliedNames": [
             "ODC-By-1.0",
             "Open Data Commons Attribution License v1.0",
-            "scancode://odc-by-1.0",
+            "scancode:odc-by-1.0",
             "ODC-BY-1.0",
             "Open Data Commons Attribution License 1.0"
         ],
@@ -491,7 +491,7 @@ Raw Data
                         "ODC-By-1.0",
                         "ODC-By-1.0",
                         "Open Data Commons Attribution License v1.0",
-                        "scancode://odc-by-1.0",
+                        "scancode:odc-by-1.0",
                         "ODC-BY-1.0",
                         "Open Data Commons Attribution License 1.0"
                     ],
@@ -501,7 +501,7 @@ Raw Data
                 "otherNames": [
                     "ODC-By-1.0",
                     "Open Data Commons Attribution License v1.0",
-                    "scancode://odc-by-1.0",
+                    "scancode:odc-by-1.0",
                     "ODC-BY-1.0",
                     "Open Data Commons Attribution License 1.0"
                 ]
@@ -552,7 +552,7 @@ Raw Data
                 "spdxId": "ODC-By-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://odc-by-1.0",
+                        "scancode:odc-by-1.0",
                         "ODC-By-1.0",
                         "ODC-By-1.0"
                     ],

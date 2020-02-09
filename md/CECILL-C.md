@@ -5,7 +5,7 @@ CeCILL-C Free Software License Agreement (CECILL-C)
 
 **Other Names:**
 
--   `scancode://cecill-c`
+-   `scancode:cecill-c`
 
 -   `CeCILL-C License`
 
@@ -288,7 +288,7 @@ Raw Data
         "__impliedNames": [
             "CECILL-C",
             "CeCILL-C Free Software License Agreement",
-            "scancode://cecill-c",
+            "scancode:cecill-c",
             "CeCILL-C License"
         ],
         "__impliedId": "CECILL-C",
@@ -300,7 +300,7 @@ Raw Data
                         "CECILL-C",
                         "CECILL-C",
                         "CeCILL-C Free Software License Agreement",
-                        "scancode://cecill-c",
+                        "scancode:cecill-c",
                         "CeCILL-C License"
                     ],
                     "__impliedId": "CECILL-C"
@@ -309,7 +309,7 @@ Raw Data
                 "otherNames": [
                     "CECILL-C",
                     "CeCILL-C Free Software License Agreement",
-                    "scancode://cecill-c",
+                    "scancode:cecill-c",
                     "CeCILL-C License"
                 ]
             },
@@ -385,7 +385,7 @@ Raw Data
                 "spdxId": "CECILL-C",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cecill-c",
+                        "scancode:cecill-c",
                         "CeCILL-C License",
                         "CECILL-C"
                     ],

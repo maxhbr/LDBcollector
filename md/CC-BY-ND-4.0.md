@@ -5,7 +5,7 @@ Creative Commons Attribution No Derivatives 4.0 International (CC-BY-ND-4.0)
 
 **Other Names:**
 
--   `scancode://cc-by-nd-4.0`
+-   `scancode:cc-by-nd-4.0`
 
 -   `Creative Commons Attribution No-Derivatives 4.0`
 
@@ -427,7 +427,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-ND-4.0",
             "Creative Commons Attribution No Derivatives 4.0 International",
-            "scancode://cc-by-nd-4.0",
+            "scancode:cc-by-nd-4.0",
             "Creative Commons Attribution No-Derivatives 4.0"
         ],
         "__impliedId": "CC-BY-ND-4.0",
@@ -465,7 +465,7 @@ Raw Data
                         "CC-BY-ND-4.0",
                         "CC-BY-ND-4.0",
                         "Creative Commons Attribution No Derivatives 4.0 International",
-                        "scancode://cc-by-nd-4.0",
+                        "scancode:cc-by-nd-4.0",
                         "Creative Commons Attribution No-Derivatives 4.0"
                     ],
                     "__impliedId": "CC-BY-ND-4.0"
@@ -474,7 +474,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-ND-4.0",
                     "Creative Commons Attribution No Derivatives 4.0 International",
-                    "scancode://cc-by-nd-4.0",
+                    "scancode:cc-by-nd-4.0",
                     "Creative Commons Attribution No-Derivatives 4.0"
                 ]
             },
@@ -524,7 +524,7 @@ Raw Data
                 "spdxId": "CC-BY-ND-4.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cc-by-nd-4.0",
+                        "scancode:cc-by-nd-4.0",
                         "CC-BY-ND-4.0",
                         "CC-BY-ND-4.0"
                     ],

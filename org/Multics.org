@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://multics=
+- =scancode:multics=
 
 ** Comments on (easy) usability
 
@@ -60,7 +60,7 @@
       "__impliedNames": [
           "Multics",
           "Multics License",
-          "scancode://multics"
+          "scancode:multics"
       ],
       "__impliedId": "Multics",
       "facts": {
@@ -97,7 +97,7 @@
                       "Multics",
                       "Multics",
                       "Multics License",
-                      "scancode://multics"
+                      "scancode:multics"
                   ],
                   "__impliedId": "Multics"
               },
@@ -105,7 +105,7 @@
               "otherNames": [
                   "Multics",
                   "Multics License",
-                  "scancode://multics"
+                  "scancode:multics"
               ]
           },
           "SPDX": {
@@ -164,7 +164,7 @@
               "spdxId": "Multics",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://multics",
+                      "scancode:multics",
                       "Multics License",
                       "Multics"
                   ],

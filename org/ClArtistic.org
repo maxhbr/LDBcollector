@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://artistic-clarified=
+- =scancode:artistic-clarified=
 
 - =Artistic (clarified)=
 
@@ -196,7 +196,7 @@
       "__impliedNames": [
           "ClArtistic",
           "Clarified Artistic License",
-          "scancode://artistic-clarified",
+          "scancode:artistic-clarified",
           "Artistic (clarified)"
       ],
       "__impliedId": "ClArtistic",
@@ -208,7 +208,7 @@
                       "ClArtistic",
                       "ClArtistic",
                       "Clarified Artistic License",
-                      "scancode://artistic-clarified",
+                      "scancode:artistic-clarified",
                       "Artistic (clarified)"
                   ],
                   "__impliedId": "ClArtistic"
@@ -217,7 +217,7 @@
               "otherNames": [
                   "ClArtistic",
                   "Clarified Artistic License",
-                  "scancode://artistic-clarified",
+                  "scancode:artistic-clarified",
                   "Artistic (clarified)"
               ]
           },
@@ -298,7 +298,7 @@
               "spdxId": "ClArtistic",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://artistic-clarified",
+                      "scancode:artistic-clarified",
                       "Clarified Artistic License",
                       "ClArtistic"
                   ],

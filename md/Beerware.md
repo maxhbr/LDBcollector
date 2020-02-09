@@ -5,7 +5,7 @@ Beerware License (Beerware)
 
 **Other Names:**
 
--   `scancode://beerware`
+-   `scancode:beerware`
 
 -   `Beer-Ware License`
 
@@ -65,7 +65,7 @@ Raw Data
         "__impliedNames": [
             "Beerware",
             "Beerware License",
-            "scancode://beerware",
+            "scancode:beerware",
             "Beer-Ware License",
             "Beerware 42"
         ],
@@ -79,7 +79,7 @@ Raw Data
                         "Beerware",
                         "Beerware",
                         "Beerware License",
-                        "scancode://beerware",
+                        "scancode:beerware",
                         "Beer-Ware License",
                         "Beerware 42"
                     ],
@@ -89,7 +89,7 @@ Raw Data
                 "otherNames": [
                     "Beerware",
                     "Beerware License",
-                    "scancode://beerware",
+                    "scancode:beerware",
                     "Beer-Ware License",
                     "Beerware 42"
                 ]
@@ -171,7 +171,7 @@ Raw Data
                 "spdxId": "Beerware",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://beerware",
+                        "scancode:beerware",
                         "Beer-Ware License",
                         "Beerware"
                     ],

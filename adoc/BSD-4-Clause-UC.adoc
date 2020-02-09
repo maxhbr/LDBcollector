@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://bsd-original-uc+`
+* `+scancode:bsd-original-uc+`
 * `+BSD-Original-UC+`
 
 === Comments on (easy) usability
@@ -134,7 +134,7 @@ by "COPYRIGHT HOLDERS AND CONTRIBUTORS".
     "__impliedNames": [
         "BSD-4-Clause-UC",
         "BSD-4-Clause (University of California-Specific)",
-        "scancode://bsd-original-uc",
+        "scancode:bsd-original-uc",
         "BSD-Original-UC"
     ],
     "__impliedId": "BSD-4-Clause-UC",
@@ -159,7 +159,7 @@ by "COPYRIGHT HOLDERS AND CONTRIBUTORS".
                     "BSD-4-Clause-UC",
                     "BSD-4-Clause-UC",
                     "BSD-4-Clause (University of California-Specific)",
-                    "scancode://bsd-original-uc",
+                    "scancode:bsd-original-uc",
                     "BSD-Original-UC"
                 ],
                 "__impliedId": "BSD-4-Clause-UC"
@@ -168,7 +168,7 @@ by "COPYRIGHT HOLDERS AND CONTRIBUTORS".
             "otherNames": [
                 "BSD-4-Clause-UC",
                 "BSD-4-Clause (University of California-Specific)",
-                "scancode://bsd-original-uc",
+                "scancode:bsd-original-uc",
                 "BSD-Original-UC"
             ]
         },
@@ -230,7 +230,7 @@ by "COPYRIGHT HOLDERS AND CONTRIBUTORS".
             "spdxId": "BSD-4-Clause-UC",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://bsd-original-uc",
+                    "scancode:bsd-original-uc",
                     "BSD-Original-UC",
                     "BSD-4-Clause-UC"
                 ],

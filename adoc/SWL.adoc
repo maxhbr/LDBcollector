@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://swl+`
+* `+scancode:swl+`
 * `+Scheme Widget Library (SWL) Software License+`
 
 === Comments on (easy) usability
@@ -51,7 +51,7 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
     "__impliedNames": [
         "SWL",
         "Scheme Widget Library (SWL) Software License Agreement",
-        "scancode://swl",
+        "scancode:swl",
         "Scheme Widget Library (SWL) Software License"
     ],
     "__impliedId": "SWL",
@@ -63,7 +63,7 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
                     "SWL",
                     "SWL",
                     "Scheme Widget Library (SWL) Software License Agreement",
-                    "scancode://swl",
+                    "scancode:swl",
                     "Scheme Widget Library (SWL) Software License"
                 ],
                 "__impliedId": "SWL"
@@ -72,7 +72,7 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
             "otherNames": [
                 "SWL",
                 "Scheme Widget Library (SWL) Software License Agreement",
-                "scancode://swl",
+                "scancode:swl",
                 "Scheme Widget Library (SWL) Software License"
             ]
         },
@@ -148,7 +148,7 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
             "spdxId": "SWL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://swl",
+                    "scancode:swl",
                     "Scheme Widget Library (SWL) Software License",
                     "SWL"
                 ],

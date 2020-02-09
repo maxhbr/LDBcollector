@@ -5,7 +5,7 @@ Intel Open Source License (Intel)
 
 **Other Names:**
 
--   `scancode://intel-bsd-export-control`
+-   `scancode:intel-bsd-export-control`
 
 -   `Intel BSD - Export Control`
 
@@ -96,7 +96,7 @@ Raw Data
         "__impliedNames": [
             "Intel",
             "Intel Open Source License",
-            "scancode://intel-bsd-export-control",
+            "scancode:intel-bsd-export-control",
             "Intel BSD - Export Control",
             "The Intel Open Source License",
             "License :: OSI Approved :: Intel Open Source License"
@@ -137,7 +137,7 @@ Raw Data
                         "Intel",
                         "Intel",
                         "Intel Open Source License",
-                        "scancode://intel-bsd-export-control",
+                        "scancode:intel-bsd-export-control",
                         "Intel BSD - Export Control",
                         "The Intel Open Source License",
                         "License :: OSI Approved :: Intel Open Source License"
@@ -148,7 +148,7 @@ Raw Data
                 "otherNames": [
                     "Intel",
                     "Intel Open Source License",
-                    "scancode://intel-bsd-export-control",
+                    "scancode:intel-bsd-export-control",
                     "Intel BSD - Export Control",
                     "The Intel Open Source License",
                     "License :: OSI Approved :: Intel Open Source License"
@@ -235,7 +235,7 @@ Raw Data
                 "spdxId": "Intel",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://intel-bsd-export-control",
+                        "scancode:intel-bsd-export-control",
                         "Intel BSD - Export Control",
                         "Intel"
                     ],

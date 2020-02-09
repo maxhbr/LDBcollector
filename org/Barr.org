@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://barr-tex=
+- =scancode:barr-tex=
 
 - =Barr TeX License=
 
@@ -52,7 +52,7 @@
       "__impliedNames": [
           "Barr",
           "Barr License",
-          "scancode://barr-tex",
+          "scancode:barr-tex",
           "Barr TeX License"
       ],
       "__impliedId": "Barr",
@@ -64,7 +64,7 @@
                       "Barr",
                       "Barr",
                       "Barr License",
-                      "scancode://barr-tex",
+                      "scancode:barr-tex",
                       "Barr TeX License"
                   ],
                   "__impliedId": "Barr"
@@ -73,7 +73,7 @@
               "otherNames": [
                   "Barr",
                   "Barr License",
-                  "scancode://barr-tex",
+                  "scancode:barr-tex",
                   "Barr TeX License"
               ]
           },
@@ -147,7 +147,7 @@
               "spdxId": "Barr",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://barr-tex",
+                      "scancode:barr-tex",
                       "Barr TeX License",
                       "Barr"
                   ],

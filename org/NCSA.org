@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://uoi-ncsa=
+- =scancode:uoi-ncsa=
 
 - =NCSA Open Source License=
 
@@ -122,7 +122,7 @@
       "__impliedNames": [
           "NCSA",
           "University of Illinois/NCSA Open Source License",
-          "scancode://uoi-ncsa",
+          "scancode:uoi-ncsa",
           "NCSA Open Source License",
           "ncsa",
           "UIUC/NCSA",
@@ -164,7 +164,7 @@
                       "NCSA",
                       "NCSA",
                       "University of Illinois/NCSA Open Source License",
-                      "scancode://uoi-ncsa",
+                      "scancode:uoi-ncsa",
                       "NCSA Open Source License",
                       "ncsa",
                       "UIUC/NCSA",
@@ -177,7 +177,7 @@
               "otherNames": [
                   "NCSA",
                   "University of Illinois/NCSA Open Source License",
-                  "scancode://uoi-ncsa",
+                  "scancode:uoi-ncsa",
                   "NCSA Open Source License",
                   "ncsa",
                   "UIUC/NCSA",
@@ -249,7 +249,7 @@
               "spdxId": "NCSA",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://uoi-ncsa",
+                      "scancode:uoi-ncsa",
                       "NCSA Open Source License",
                       "NCSA"
                   ],

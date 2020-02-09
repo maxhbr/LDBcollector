@@ -5,7 +5,7 @@ NRL License (NRL)
 
 **Other Names:**
 
--   `scancode://nrl`
+-   `scancode:nrl`
 
 Comments on (easy) usability
 ----------------------------
@@ -66,7 +66,7 @@ Raw Data
         "__impliedNames": [
             "NRL",
             "NRL License",
-            "scancode://nrl"
+            "scancode:nrl"
         ],
         "__impliedId": "NRL",
         "__isFsfFree": true,
@@ -77,7 +77,7 @@ Raw Data
                         "NRL",
                         "NRL",
                         "NRL License",
-                        "scancode://nrl"
+                        "scancode:nrl"
                     ],
                     "__impliedId": "NRL"
                 },
@@ -85,7 +85,7 @@ Raw Data
                 "otherNames": [
                     "NRL",
                     "NRL License",
-                    "scancode://nrl"
+                    "scancode:nrl"
                 ]
             },
             "SPDX": {
@@ -158,7 +158,7 @@ Raw Data
                 "spdxId": "NRL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://nrl",
+                        "scancode:nrl",
                         "NRL License",
                         "NRL"
                     ],

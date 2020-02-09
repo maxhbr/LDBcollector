@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://libpng-v2=
+- =scancode:libpng-v2=
 
 - =LIbpng License v2=
 
@@ -74,7 +74,7 @@
       "__impliedNames": [
           "libpng-2.0",
           "PNG Reference Library version 2",
-          "scancode://libpng-v2",
+          "scancode:libpng-v2",
           "LIbpng License v2"
       ],
       "__impliedId": "libpng-2.0",
@@ -85,7 +85,7 @@
                       "libpng-2.0",
                       "libpng-2.0",
                       "PNG Reference Library version 2",
-                      "scancode://libpng-v2",
+                      "scancode:libpng-v2",
                       "LIbpng License v2"
                   ],
                   "__impliedId": "libpng-2.0"
@@ -94,7 +94,7 @@
               "otherNames": [
                   "libpng-2.0",
                   "PNG Reference Library version 2",
-                  "scancode://libpng-v2",
+                  "scancode:libpng-v2",
                   "LIbpng License v2"
               ]
           },
@@ -142,7 +142,7 @@
               "spdxId": "libpng-2.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://libpng-v2",
+                      "scancode:libpng-v2",
                       "LIbpng License v2",
                       "libpng-2.0"
                   ],

@@ -5,7 +5,7 @@ BSD 3-Clause No Nuclear License 2014 (BSD-3-Clause-No-Nuclear-License-2014)
 
 **Other Names:**
 
--   `scancode://oracle-bsd-no-nuclear`
+-   `scancode:oracle-bsd-no-nuclear`
 
 -   `Oracle BSD-Style with Nuclear Restrictions`
 
@@ -71,7 +71,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-No-Nuclear-License-2014",
             "BSD 3-Clause No Nuclear License 2014",
-            "scancode://oracle-bsd-no-nuclear",
+            "scancode:oracle-bsd-no-nuclear",
             "Oracle BSD-Style with Nuclear Restrictions"
         ],
         "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
@@ -82,7 +82,7 @@ Raw Data
                         "BSD-3-Clause-No-Nuclear-License-2014",
                         "BSD-3-Clause-No-Nuclear-License-2014",
                         "BSD 3-Clause No Nuclear License 2014",
-                        "scancode://oracle-bsd-no-nuclear",
+                        "scancode:oracle-bsd-no-nuclear",
                         "Oracle BSD-Style with Nuclear Restrictions"
                     ],
                     "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014"
@@ -91,7 +91,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause-No-Nuclear-License-2014",
                     "BSD 3-Clause No Nuclear License 2014",
-                    "scancode://oracle-bsd-no-nuclear",
+                    "scancode:oracle-bsd-no-nuclear",
                     "Oracle BSD-Style with Nuclear Restrictions"
                 ]
             },
@@ -141,7 +141,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause-No-Nuclear-License-2014",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://oracle-bsd-no-nuclear",
+                        "scancode:oracle-bsd-no-nuclear",
                         "Oracle BSD-Style with Nuclear Restrictions",
                         "BSD-3-Clause-No-Nuclear-License-2014"
                     ],

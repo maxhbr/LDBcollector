@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://caldera+`
+* `+scancode:caldera+`
 
 === Comments on (easy) usability
 
@@ -82,7 +82,7 @@ OF SUCH DAMAGE.
     "__impliedNames": [
         "Caldera",
         "Caldera License",
-        "scancode://caldera"
+        "scancode:caldera"
     ],
     "__impliedId": "Caldera",
     "facts": {
@@ -92,7 +92,7 @@ OF SUCH DAMAGE.
                     "Caldera",
                     "Caldera",
                     "Caldera License",
-                    "scancode://caldera"
+                    "scancode:caldera"
                 ],
                 "__impliedId": "Caldera"
             },
@@ -100,7 +100,7 @@ OF SUCH DAMAGE.
             "otherNames": [
                 "Caldera",
                 "Caldera License",
-                "scancode://caldera"
+                "scancode:caldera"
             ]
         },
         "SPDX": {
@@ -147,7 +147,7 @@ OF SUCH DAMAGE.
             "spdxId": "Caldera",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://caldera",
+                    "scancode:caldera",
                     "Caldera License",
                     "Caldera"
                 ],

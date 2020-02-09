@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://eurosym+`
+* `+scancode:eurosym+`
 
 === Comments on (easy) usability
 
@@ -57,7 +57,7 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
     "__impliedNames": [
         "Eurosym",
         "Eurosym License",
-        "scancode://eurosym"
+        "scancode:eurosym"
     ],
     "__impliedId": "Eurosym",
     "__isFsfFree": true,
@@ -68,7 +68,7 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
                     "Eurosym",
                     "Eurosym",
                     "Eurosym License",
-                    "scancode://eurosym"
+                    "scancode:eurosym"
                 ],
                 "__impliedId": "Eurosym"
             },
@@ -76,7 +76,7 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
             "otherNames": [
                 "Eurosym",
                 "Eurosym License",
-                "scancode://eurosym"
+                "scancode:eurosym"
             ]
         },
         "SPDX": {
@@ -151,7 +151,7 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
             "spdxId": "Eurosym",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://eurosym",
+                    "scancode:eurosym",
                     "Eurosym License",
                     "Eurosym"
                 ],

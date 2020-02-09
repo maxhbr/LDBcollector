@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://jpnic-idnkit+`
+* `+scancode:jpnic-idnkit+`
 * `+JPNIC idnkit License+`
 
 === Comments on (easy) usability
@@ -76,7 +76,7 @@ Chiyoda-ku, Tokyo 101-0047, Japan.
     "__impliedNames": [
         "JPNIC",
         "Japan Network Information Center License",
-        "scancode://jpnic-idnkit",
+        "scancode:jpnic-idnkit",
         "JPNIC idnkit License"
     ],
     "__impliedId": "JPNIC",
@@ -87,7 +87,7 @@ Chiyoda-ku, Tokyo 101-0047, Japan.
                     "JPNIC",
                     "JPNIC",
                     "Japan Network Information Center License",
-                    "scancode://jpnic-idnkit",
+                    "scancode:jpnic-idnkit",
                     "JPNIC idnkit License"
                 ],
                 "__impliedId": "JPNIC"
@@ -96,7 +96,7 @@ Chiyoda-ku, Tokyo 101-0047, Japan.
             "otherNames": [
                 "JPNIC",
                 "Japan Network Information Center License",
-                "scancode://jpnic-idnkit",
+                "scancode:jpnic-idnkit",
                 "JPNIC idnkit License"
             ]
         },
@@ -147,7 +147,7 @@ Chiyoda-ku, Tokyo 101-0047, Japan.
             "spdxId": "JPNIC",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://jpnic-idnkit",
+                    "scancode:jpnic-idnkit",
                     "JPNIC idnkit License",
                     "JPNIC"
                 ],

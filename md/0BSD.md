@@ -5,7 +5,7 @@ BSD Zero Clause License (0BSD)
 
 **Other Names:**
 
--   `scancode://bsd-zero`
+-   `scancode:bsd-zero`
 
 Description
 -----------
@@ -66,7 +66,7 @@ Raw Data
         "__impliedNames": [
             "0BSD",
             "BSD Zero Clause License",
-            "scancode://bsd-zero",
+            "scancode:bsd-zero",
             "0bsd"
         ],
         "__impliedId": "0BSD",
@@ -77,7 +77,7 @@ Raw Data
                         "0BSD",
                         "0BSD",
                         "BSD Zero Clause License",
-                        "scancode://bsd-zero",
+                        "scancode:bsd-zero",
                         "0bsd"
                     ],
                     "__impliedId": "0BSD"
@@ -86,7 +86,7 @@ Raw Data
                 "otherNames": [
                     "0BSD",
                     "BSD Zero Clause License",
-                    "scancode://bsd-zero",
+                    "scancode:bsd-zero",
                     "0bsd"
                 ]
             },
@@ -143,7 +143,7 @@ Raw Data
                 "spdxId": "0BSD",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://bsd-zero",
+                        "scancode:bsd-zero",
                         "BSD Zero Clause License",
                         "0BSD"
                     ],

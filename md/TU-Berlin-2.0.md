@@ -5,7 +5,7 @@ Technische Universitaet Berlin License 2.0 (TU-Berlin-2.0)
 
 **Other Names:**
 
--   `scancode://tu-berlin-2.0`
+-   `scancode:tu-berlin-2.0`
 
 -   `TU Berlin License 2.0`
 
@@ -61,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "TU-Berlin-2.0",
             "Technische Universitaet Berlin License 2.0",
-            "scancode://tu-berlin-2.0",
+            "scancode:tu-berlin-2.0",
             "TU Berlin License 2.0"
         ],
         "__impliedId": "TU-Berlin-2.0",
@@ -72,7 +72,7 @@ Raw Data
                         "TU-Berlin-2.0",
                         "TU-Berlin-2.0",
                         "Technische Universitaet Berlin License 2.0",
-                        "scancode://tu-berlin-2.0",
+                        "scancode:tu-berlin-2.0",
                         "TU Berlin License 2.0"
                     ],
                     "__impliedId": "TU-Berlin-2.0"
@@ -81,7 +81,7 @@ Raw Data
                 "otherNames": [
                     "TU-Berlin-2.0",
                     "Technische Universitaet Berlin License 2.0",
-                    "scancode://tu-berlin-2.0",
+                    "scancode:tu-berlin-2.0",
                     "TU Berlin License 2.0"
                 ]
             },
@@ -131,7 +131,7 @@ Raw Data
                 "spdxId": "TU-Berlin-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://tu-berlin-2.0",
+                        "scancode:tu-berlin-2.0",
                         "TU Berlin License 2.0",
                         "TU-Berlin-2.0"
                     ],

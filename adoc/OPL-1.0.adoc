@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://open-public+`
+* `+scancode:open-public+`
 * `+Open Public License 1.0+`
 
 === Comments on (easy) usability
@@ -378,7 +378,7 @@ complete with out that file.
     "__impliedNames": [
         "OPL-1.0",
         "Open Public License v1.0",
-        "scancode://open-public",
+        "scancode:open-public",
         "Open Public License 1.0"
     ],
     "__impliedId": "OPL-1.0",
@@ -392,7 +392,7 @@ complete with out that file.
                     "OPL-1.0",
                     "OPL-1.0",
                     "Open Public License v1.0",
-                    "scancode://open-public",
+                    "scancode:open-public",
                     "Open Public License 1.0"
                 ],
                 "__impliedId": "OPL-1.0"
@@ -401,7 +401,7 @@ complete with out that file.
             "otherNames": [
                 "OPL-1.0",
                 "Open Public License v1.0",
-                "scancode://open-public",
+                "scancode:open-public",
                 "Open Public License 1.0"
             ]
         },
@@ -456,7 +456,7 @@ complete with out that file.
             "spdxId": "OPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://open-public",
+                    "scancode:open-public",
                     "Open Public License 1.0",
                     "OPL-1.0"
                 ],

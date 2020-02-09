@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Unlicense",
         "The Unlicense",
-        "scancode://unlicense",
+        "scancode:unlicense",
         "unlicense",
         "Unlicense 1"
     ],
@@ -43,7 +43,7 @@
                     "Unlicense",
                     "Unlicense",
                     "The Unlicense",
-                    "scancode://unlicense",
+                    "scancode:unlicense",
                     "unlicense",
                     "Unlicense 1"
                 ],
@@ -53,7 +53,7 @@
             "otherNames": [
                 "Unlicense",
                 "The Unlicense",
-                "scancode://unlicense",
+                "scancode:unlicense",
                 "unlicense",
                 "Unlicense 1"
             ]
@@ -128,7 +128,7 @@
             "spdxId": "Unlicense",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://unlicense",
+                    "scancode:unlicense",
                     "Unlicense",
                     "Unlicense"
                 ],

@@ -5,7 +5,7 @@ LaTeX Project Public License v1.0 (LPPL-1.0)
 
 **Other Names:**
 
--   `scancode://lppl-1.0`
+-   `scancode:lppl-1.0`
 
 -   `LPPL 1.0`
 
@@ -235,7 +235,7 @@ Raw Data
         "__impliedNames": [
             "LPPL-1.0",
             "LaTeX Project Public License v1.0",
-            "scancode://lppl-1.0",
+            "scancode:lppl-1.0",
             "LPPL 1.0"
         ],
         "__impliedId": "LPPL-1.0",
@@ -246,7 +246,7 @@ Raw Data
                         "LPPL-1.0",
                         "LPPL-1.0",
                         "LaTeX Project Public License v1.0",
-                        "scancode://lppl-1.0",
+                        "scancode:lppl-1.0",
                         "LPPL 1.0"
                     ],
                     "__impliedId": "LPPL-1.0"
@@ -255,7 +255,7 @@ Raw Data
                 "otherNames": [
                     "LPPL-1.0",
                     "LaTeX Project Public License v1.0",
-                    "scancode://lppl-1.0",
+                    "scancode:lppl-1.0",
                     "LPPL 1.0"
                 ]
             },
@@ -303,7 +303,7 @@ Raw Data
                 "spdxId": "LPPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://lppl-1.0",
+                        "scancode:lppl-1.0",
                         "LPPL 1.0",
                         "LPPL-1.0"
                     ],

@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =scancode://ibmpl-1.0=
+- =scancode:ibmpl-1.0=
 
 - =IPL 1.0=
 
@@ -125,7 +125,7 @@
       "__impliedNames": [
           "IPL-1.0",
           "IBM Public License v1.0",
-          "scancode://ibmpl-1.0",
+          "scancode:ibmpl-1.0",
           "IPL 1.0",
           "IBM Public License, Version 1.0",
           "License :: OSI Approved :: IBM Public License",
@@ -170,7 +170,7 @@
                       "IPL-1.0",
                       "IPL-1.0",
                       "IBM Public License v1.0",
-                      "scancode://ibmpl-1.0",
+                      "scancode:ibmpl-1.0",
                       "IPL 1.0",
                       "IBM Public License, Version 1.0",
                       "License :: OSI Approved :: IBM Public License",
@@ -182,7 +182,7 @@
               "otherNames": [
                   "IPL-1.0",
                   "IBM Public License v1.0",
-                  "scancode://ibmpl-1.0",
+                  "scancode:ibmpl-1.0",
                   "IPL 1.0",
                   "IBM Public License, Version 1.0",
                   "License :: OSI Approved :: IBM Public License",
@@ -245,7 +245,7 @@
               "spdxId": "IPL-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://ibmpl-1.0",
+                      "scancode:ibmpl-1.0",
                       "IPL 1.0",
                       "IPL-1.0"
                   ],

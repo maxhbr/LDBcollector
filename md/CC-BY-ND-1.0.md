@@ -5,7 +5,7 @@ Creative Commons Attribution No Derivatives 1.0 Generic (CC-BY-ND-1.0)
 
 **Other Names:**
 
--   `scancode://cc-by-nd-1.0`
+-   `scancode:cc-by-nd-1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -85,7 +85,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-ND-1.0",
             "Creative Commons Attribution No Derivatives 1.0 Generic",
-            "scancode://cc-by-nd-1.0"
+            "scancode:cc-by-nd-1.0"
         ],
         "__impliedId": "CC-BY-ND-1.0",
         "facts": {
@@ -95,7 +95,7 @@ Raw Data
                         "CC-BY-ND-1.0",
                         "CC-BY-ND-1.0",
                         "Creative Commons Attribution No Derivatives 1.0 Generic",
-                        "scancode://cc-by-nd-1.0"
+                        "scancode:cc-by-nd-1.0"
                     ],
                     "__impliedId": "CC-BY-ND-1.0"
                 },
@@ -103,7 +103,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-ND-1.0",
                     "Creative Commons Attribution No Derivatives 1.0 Generic",
-                    "scancode://cc-by-nd-1.0"
+                    "scancode:cc-by-nd-1.0"
                 ]
             },
             "SPDX": {
@@ -152,7 +152,7 @@ Raw Data
                 "spdxId": "CC-BY-ND-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cc-by-nd-1.0",
+                        "scancode:cc-by-nd-1.0",
                         "CC-BY-ND-1.0",
                         "CC-BY-ND-1.0"
                     ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://freeimage-1.0+`
+* `+scancode:freeimage-1.0+`
 * `+FreeImage Public License 1.0+`
 
 === Comments on (easy) usability
@@ -177,7 +177,7 @@ Software distributed under the License is distributed on an "AS IS" basis, WITHO
     "__impliedNames": [
         "FreeImage",
         "FreeImage Public License v1.0",
-        "scancode://freeimage-1.0",
+        "scancode:freeimage-1.0",
         "FreeImage Public License 1.0"
     ],
     "__impliedId": "FreeImage",
@@ -188,7 +188,7 @@ Software distributed under the License is distributed on an "AS IS" basis, WITHO
                     "FreeImage",
                     "FreeImage",
                     "FreeImage Public License v1.0",
-                    "scancode://freeimage-1.0",
+                    "scancode:freeimage-1.0",
                     "FreeImage Public License 1.0"
                 ],
                 "__impliedId": "FreeImage"
@@ -197,7 +197,7 @@ Software distributed under the License is distributed on an "AS IS" basis, WITHO
             "otherNames": [
                 "FreeImage",
                 "FreeImage Public License v1.0",
-                "scancode://freeimage-1.0",
+                "scancode:freeimage-1.0",
                 "FreeImage Public License 1.0"
             ]
         },
@@ -245,7 +245,7 @@ Software distributed under the License is distributed on an "AS IS" basis, WITHO
             "spdxId": "FreeImage",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://freeimage-1.0",
+                    "scancode:freeimage-1.0",
                     "FreeImage Public License 1.0",
                     "FreeImage"
                 ],

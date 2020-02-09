@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://sendmail-8.23+`
+* `+scancode:sendmail-8.23+`
 
 === Comments on (easy) usability
 
@@ -71,7 +71,7 @@ $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1
     "__impliedNames": [
         "Sendmail-8.23",
         "Sendmail License 8.23",
-        "scancode://sendmail-8.23"
+        "scancode:sendmail-8.23"
     ],
     "__impliedId": "Sendmail-8.23",
     "facts": {
@@ -81,7 +81,7 @@ $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1
                     "Sendmail-8.23",
                     "Sendmail-8.23",
                     "Sendmail License 8.23",
-                    "scancode://sendmail-8.23"
+                    "scancode:sendmail-8.23"
                 ],
                 "__impliedId": "Sendmail-8.23"
             },
@@ -89,7 +89,7 @@ $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1
             "otherNames": [
                 "Sendmail-8.23",
                 "Sendmail License 8.23",
-                "scancode://sendmail-8.23"
+                "scancode:sendmail-8.23"
             ]
         },
         "SPDX": {
@@ -144,7 +144,7 @@ $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1
             "spdxId": "Sendmail-8.23",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://sendmail-8.23",
+                    "scancode:sendmail-8.23",
                     "Sendmail License 8.23",
                     "Sendmail-8.23"
                 ],

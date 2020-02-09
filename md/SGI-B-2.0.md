@@ -5,7 +5,7 @@ SGI Free Software License B v2.0 (SGI-B-2.0)
 
 **Other Names:**
 
--   `scancode://sgi-freeb-2.0`
+-   `scancode:sgi-freeb-2.0`
 
 -   `SGI Free Software License B 2.0`
 
@@ -69,7 +69,7 @@ Raw Data
         "__impliedNames": [
             "SGI-B-2.0",
             "SGI Free Software License B v2.0",
-            "scancode://sgi-freeb-2.0",
+            "scancode:sgi-freeb-2.0",
             "SGI Free Software License B 2.0"
         ],
         "__impliedId": "SGI-B-2.0",
@@ -81,7 +81,7 @@ Raw Data
                         "SGI-B-2.0",
                         "SGI-B-2.0",
                         "SGI Free Software License B v2.0",
-                        "scancode://sgi-freeb-2.0",
+                        "scancode:sgi-freeb-2.0",
                         "SGI Free Software License B 2.0"
                     ],
                     "__impliedId": "SGI-B-2.0"
@@ -90,7 +90,7 @@ Raw Data
                 "otherNames": [
                     "SGI-B-2.0",
                     "SGI Free Software License B v2.0",
-                    "scancode://sgi-freeb-2.0",
+                    "scancode:sgi-freeb-2.0",
                     "SGI Free Software License B 2.0"
                 ]
             },
@@ -166,7 +166,7 @@ Raw Data
                 "spdxId": "SGI-B-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://sgi-freeb-2.0",
+                        "scancode:sgi-freeb-2.0",
                         "SGI Free Software License B 2.0",
                         "SGI-B-2.0"
                     ],

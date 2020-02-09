@@ -2,7 +2,7 @@
     "__impliedNames": [
         "IBM-pibs",
         "IBM PowerPC Initialization and Boot Software",
-        "scancode://ibm-pibs",
+        "scancode:ibm-pibs",
         "IBM PowerPC Software"
     ],
     "__impliedId": "IBM-pibs",
@@ -14,7 +14,7 @@
                     "IBM-pibs",
                     "IBM-pibs",
                     "IBM PowerPC Initialization and Boot Software",
-                    "scancode://ibm-pibs",
+                    "scancode:ibm-pibs",
                     "IBM PowerPC Software"
                 ],
                 "__impliedId": "IBM-pibs"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "IBM-pibs",
                 "IBM PowerPC Initialization and Boot Software",
-                "scancode://ibm-pibs",
+                "scancode:ibm-pibs",
                 "IBM PowerPC Software"
             ]
         },
@@ -82,7 +82,7 @@
             "spdxId": "IBM-pibs",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://ibm-pibs",
+                    "scancode:ibm-pibs",
                     "IBM PowerPC Software",
                     "IBM-pibs"
                 ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://naumen+`
+* `+scancode:naumen+`
 
 === Comments on (easy) usability
 
@@ -74,7 +74,7 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
     "__impliedNames": [
         "Naumen",
         "Naumen Public License",
-        "scancode://naumen",
+        "scancode:naumen",
         "NAUMEN Public License"
     ],
     "__impliedId": "Naumen",
@@ -113,7 +113,7 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
                     "Naumen",
                     "Naumen",
                     "Naumen Public License",
-                    "scancode://naumen",
+                    "scancode:naumen",
                     "NAUMEN Public License"
                 ],
                 "__impliedId": "Naumen"
@@ -122,7 +122,7 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
             "otherNames": [
                 "Naumen",
                 "Naumen Public License",
-                "scancode://naumen",
+                "scancode:naumen",
                 "NAUMEN Public License"
             ]
         },
@@ -208,7 +208,7 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
             "spdxId": "Naumen",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://naumen",
+                    "scancode:naumen",
                     "NAUMEN Public License",
                     "Naumen"
                 ],

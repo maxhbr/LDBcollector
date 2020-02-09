@@ -5,7 +5,7 @@ Eclipse Public License 1.0 (EPL-1.0)
 
 **Other Names:**
 
--   `scancode://epl-1.0`
+-   `scancode:epl-1.0`
 
 -   `EPL 1.0`
 
@@ -215,7 +215,7 @@ Raw Data
         "__impliedNames": [
             "EPL-1.0",
             "Eclipse Public License 1.0",
-            "scancode://epl-1.0",
+            "scancode:epl-1.0",
             "EPL 1.0",
             "epl-1.0",
             "Eclipse Public License, Version 1.0"
@@ -260,7 +260,7 @@ Raw Data
                         "EPL-1.0",
                         "EPL-1.0",
                         "Eclipse Public License 1.0",
-                        "scancode://epl-1.0",
+                        "scancode:epl-1.0",
                         "EPL 1.0",
                         "epl-1.0",
                         "Eclipse Public License, Version 1.0"
@@ -271,7 +271,7 @@ Raw Data
                 "otherNames": [
                     "EPL-1.0",
                     "Eclipse Public License 1.0",
-                    "scancode://epl-1.0",
+                    "scancode:epl-1.0",
                     "EPL 1.0",
                     "epl-1.0",
                     "Eclipse Public License, Version 1.0"
@@ -382,7 +382,7 @@ Raw Data
                 "spdxId": "EPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://epl-1.0",
+                        "scancode:epl-1.0",
                         "EPL 1.0",
                         "EPL-1.0"
                     ],

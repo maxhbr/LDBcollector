@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://sax-pd=
+- =scancode:sax-pd=
 
 ** Comments on (easy) usability
 
@@ -88,7 +88,7 @@
       "__impliedNames": [
           "SAX-PD",
           "Sax Public Domain Notice",
-          "scancode://sax-pd"
+          "scancode:sax-pd"
       ],
       "__impliedId": "SAX-PD",
       "facts": {
@@ -98,7 +98,7 @@
                       "SAX-PD",
                       "SAX-PD",
                       "Sax Public Domain Notice",
-                      "scancode://sax-pd"
+                      "scancode:sax-pd"
                   ],
                   "__impliedId": "SAX-PD"
               },
@@ -106,7 +106,7 @@
               "otherNames": [
                   "SAX-PD",
                   "Sax Public Domain Notice",
-                  "scancode://sax-pd"
+                  "scancode:sax-pd"
               ]
           },
           "SPDX": {
@@ -153,7 +153,7 @@
               "spdxId": "SAX-PD",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://sax-pd",
+                      "scancode:sax-pd",
                       "SAX-PD",
                       "SAX-PD"
                   ],

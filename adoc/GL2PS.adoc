@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://gl2ps+`
+* `+scancode:gl2ps+`
 
 === Comments on (easy) usability
 
@@ -58,7 +58,7 @@ This software is provided "as is" without express or implied warranty.
     "__impliedNames": [
         "GL2PS",
         "GL2PS License",
-        "scancode://gl2ps"
+        "scancode:gl2ps"
     ],
     "__impliedId": "GL2PS",
     "__isFsfFree": true,
@@ -69,7 +69,7 @@ This software is provided "as is" without express or implied warranty.
                     "GL2PS",
                     "GL2PS",
                     "GL2PS License",
-                    "scancode://gl2ps"
+                    "scancode:gl2ps"
                 ],
                 "__impliedId": "GL2PS"
             },
@@ -77,7 +77,7 @@ This software is provided "as is" without express or implied warranty.
             "otherNames": [
                 "GL2PS",
                 "GL2PS License",
-                "scancode://gl2ps"
+                "scancode:gl2ps"
             ]
         },
         "SPDX": {
@@ -150,7 +150,7 @@ This software is provided "as is" without express or implied warranty.
             "spdxId": "GL2PS",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://gl2ps",
+                    "scancode:gl2ps",
                     "GL2PS License",
                     "GL2PS"
                 ],

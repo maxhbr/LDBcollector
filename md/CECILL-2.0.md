@@ -5,7 +5,7 @@ CeCILL Free Software License Agreement v2.0 (CECILL-2.0)
 
 **Other Names:**
 
--   `scancode://cecill-2.0`
+-   `scancode:cecill-2.0`
 
 -   `CeCILL 2.0`
 
@@ -538,7 +538,7 @@ Raw Data
         "__impliedNames": [
             "CECILL-2.0",
             "CeCILL Free Software License Agreement v2.0",
-            "scancode://cecill-2.0",
+            "scancode:cecill-2.0",
             "CeCILL 2.0"
         ],
         "__impliedId": "CECILL-2.0",
@@ -549,7 +549,7 @@ Raw Data
                         "CECILL-2.0",
                         "CECILL-2.0",
                         "CeCILL Free Software License Agreement v2.0",
-                        "scancode://cecill-2.0",
+                        "scancode:cecill-2.0",
                         "CeCILL 2.0"
                     ],
                     "__impliedId": "CECILL-2.0"
@@ -558,7 +558,7 @@ Raw Data
                 "otherNames": [
                     "CECILL-2.0",
                     "CeCILL Free Software License Agreement v2.0",
-                    "scancode://cecill-2.0",
+                    "scancode:cecill-2.0",
                     "CeCILL 2.0"
                 ]
             },
@@ -606,7 +606,7 @@ Raw Data
                 "spdxId": "CECILL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cecill-2.0",
+                        "scancode:cecill-2.0",
                         "CeCILL 2.0",
                         "CECILL-2.0"
                     ],

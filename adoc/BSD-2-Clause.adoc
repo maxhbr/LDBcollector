@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://bsd-simplified+`
+* `+scancode:bsd-simplified+`
 * `+BSD-2+`
 * `+BSD 2-Clause License+`
 * `+Simplified BSD License+`
@@ -124,7 +124,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "BSD-2-Clause",
         "BSD 2-Clause \"Simplified\" License",
-        "scancode://bsd-simplified",
+        "scancode:bsd-simplified",
         "bsd-2-clause",
         "BSD-2",
         "BSD 2-Clause License",
@@ -171,7 +171,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "BSD-2-Clause",
                     "BSD-2-Clause",
                     "BSD 2-Clause \"Simplified\" License",
-                    "scancode://bsd-simplified",
+                    "scancode:bsd-simplified",
                     "bsd-2-clause",
                     "BSD-2",
                     "BSD 2-Clause License",
@@ -188,7 +188,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "BSD-2-Clause",
                 "BSD 2-Clause \"Simplified\" License",
-                "scancode://bsd-simplified",
+                "scancode:bsd-simplified",
                 "bsd-2-clause",
                 "BSD-2",
                 "BSD 2-Clause License",
@@ -293,7 +293,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "BSD-2-Clause",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://bsd-simplified",
+                    "scancode:bsd-simplified",
                     "BSD-2-Clause",
                     "BSD-2-Clause"
                 ],

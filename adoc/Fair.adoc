@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://fair+`
+* `+scancode:fair+`
 * `+Fair License (Fair)+`
 
 === Comments on (easy) usability
@@ -61,7 +61,7 @@ DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
     "__impliedNames": [
         "Fair",
         "Fair License",
-        "scancode://fair",
+        "scancode:fair",
         "Fair License (Fair)"
     ],
     "__impliedId": "Fair",
@@ -100,7 +100,7 @@ DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
                     "Fair",
                     "Fair",
                     "Fair License",
-                    "scancode://fair",
+                    "scancode:fair",
                     "Fair License (Fair)"
                 ],
                 "__impliedId": "Fair"
@@ -109,7 +109,7 @@ DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
             "otherNames": [
                 "Fair",
                 "Fair License",
-                "scancode://fair",
+                "scancode:fair",
                 "Fair License (Fair)"
             ]
         },
@@ -202,7 +202,7 @@ DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
             "spdxId": "Fair",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://fair",
+                    "scancode:fair",
                     "Fair License",
                     "Fair"
                 ],

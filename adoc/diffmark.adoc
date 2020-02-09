@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://diffmark+`
+* `+scancode:diffmark+`
 
 === Comments on (easy) usability
 
@@ -43,7 +43,7 @@ License List])
     "__impliedNames": [
         "diffmark",
         "diffmark license",
-        "scancode://diffmark",
+        "scancode:diffmark",
         "diffmark License"
     ],
     "__impliedId": "diffmark",
@@ -55,7 +55,7 @@ License List])
                     "diffmark",
                     "diffmark",
                     "diffmark license",
-                    "scancode://diffmark",
+                    "scancode:diffmark",
                     "diffmark License"
                 ],
                 "__impliedId": "diffmark"
@@ -64,7 +64,7 @@ License List])
             "otherNames": [
                 "diffmark",
                 "diffmark license",
-                "scancode://diffmark",
+                "scancode:diffmark",
                 "diffmark License"
             ]
         },
@@ -138,7 +138,7 @@ License List])
             "spdxId": "diffmark",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://diffmark",
+                    "scancode:diffmark",
                     "diffmark License",
                     "diffmark"
                 ],

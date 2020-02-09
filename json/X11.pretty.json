@@ -2,9 +2,9 @@
     "__impliedNames": [
         "X11",
         "X11 License",
-        "scancode://x11-xconsortium",
+        "scancode:x11-xconsortium",
         "X11-Style (X Consortium)",
-        "scancode://x11",
+        "scancode:x11",
         "ICU"
     ],
     "__impliedId": "X11",
@@ -15,7 +15,7 @@
                     "X11",
                     "X11",
                     "X11 License",
-                    "scancode://x11-xconsortium",
+                    "scancode:x11-xconsortium",
                     "X11-Style (X Consortium)"
                 ],
                 "__impliedId": "X11"
@@ -24,7 +24,7 @@
             "otherNames": [
                 "X11",
                 "X11 License",
-                "scancode://x11-xconsortium",
+                "scancode:x11-xconsortium",
                 "X11-Style (X Consortium)"
             ]
         },
@@ -84,7 +84,7 @@
             "spdxId": "X11",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://x11-xconsortium",
+                    "scancode:x11-xconsortium",
                     "X11-Style (X Consortium)",
                     "X11"
                 ],

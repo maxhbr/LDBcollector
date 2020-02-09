@@ -5,7 +5,7 @@ MIT +no-false-attribs license (MITNFA)
 
 **Other Names:**
 
--   `scancode://mit-no-false-attribs`
+-   `scancode:mit-no-false-attribs`
 
 -   `MIT no false attribution License`
 
@@ -70,7 +70,7 @@ Raw Data
         "__impliedNames": [
             "MITNFA",
             "MIT +no-false-attribs license",
-            "scancode://mit-no-false-attribs",
+            "scancode:mit-no-false-attribs",
             "MIT no false attribution License"
         ],
         "__impliedId": "MITNFA",
@@ -82,7 +82,7 @@ Raw Data
                         "MITNFA",
                         "MITNFA",
                         "MIT +no-false-attribs license",
-                        "scancode://mit-no-false-attribs",
+                        "scancode:mit-no-false-attribs",
                         "MIT no false attribution License"
                     ],
                     "__impliedId": "MITNFA"
@@ -91,7 +91,7 @@ Raw Data
                 "otherNames": [
                     "MITNFA",
                     "MIT +no-false-attribs license",
-                    "scancode://mit-no-false-attribs",
+                    "scancode:mit-no-false-attribs",
                     "MIT no false attribution License"
                 ]
             },
@@ -165,7 +165,7 @@ Raw Data
                 "spdxId": "MITNFA",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://mit-no-false-attribs",
+                        "scancode:mit-no-false-attribs",
                         "MIT no false attribution License",
                         "MITNFA"
                     ],

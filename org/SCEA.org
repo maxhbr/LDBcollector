@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://scea-1.0=
+- =scancode:scea-1.0=
 
 - =SCEA Shared Source License 1.0=
 
@@ -99,7 +99,7 @@
       "__impliedNames": [
           "SCEA",
           "SCEA Shared Source License",
-          "scancode://scea-1.0",
+          "scancode:scea-1.0",
           "SCEA Shared Source License 1.0"
       ],
       "__impliedId": "SCEA",
@@ -111,7 +111,7 @@
                       "SCEA",
                       "SCEA",
                       "SCEA Shared Source License",
-                      "scancode://scea-1.0",
+                      "scancode:scea-1.0",
                       "SCEA Shared Source License 1.0"
                   ],
                   "__impliedId": "SCEA"
@@ -120,7 +120,7 @@
               "otherNames": [
                   "SCEA",
                   "SCEA Shared Source License",
-                  "scancode://scea-1.0",
+                  "scancode:scea-1.0",
                   "SCEA Shared Source License 1.0"
               ]
           },
@@ -194,7 +194,7 @@
               "spdxId": "SCEA",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://scea-1.0",
+                      "scancode:scea-1.0",
                       "SCEA Shared Source License 1.0",
                       "SCEA"
                   ],

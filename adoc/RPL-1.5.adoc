@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode://rpl-1.5+`
+* `+scancode:rpl-1.5+`
 * `+RPL 1.5+`
 * `+Reciprocal Public License, Version 1.5+`
 
@@ -269,7 +269,7 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
     "__impliedNames": [
         "RPL-1.5",
         "Reciprocal Public License 1.5",
-        "scancode://rpl-1.5",
+        "scancode:rpl-1.5",
         "RPL 1.5",
         "Reciprocal Public License, Version 1.5"
     ],
@@ -309,7 +309,7 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
                     "RPL-1.5",
                     "RPL-1.5",
                     "Reciprocal Public License 1.5",
-                    "scancode://rpl-1.5",
+                    "scancode:rpl-1.5",
                     "RPL 1.5",
                     "Reciprocal Public License, Version 1.5"
                 ],
@@ -319,7 +319,7 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
             "otherNames": [
                 "RPL-1.5",
                 "Reciprocal Public License 1.5",
-                "scancode://rpl-1.5",
+                "scancode:rpl-1.5",
                 "RPL 1.5",
                 "Reciprocal Public License, Version 1.5"
             ]
@@ -399,7 +399,7 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
             "spdxId": "RPL-1.5",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://rpl-1.5",
+                    "scancode:rpl-1.5",
                     "RPL 1.5",
                     "RPL-1.5"
                 ],

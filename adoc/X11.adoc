@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+scancode://x11-xconsortium+`
+* `+scancode:x11-xconsortium+`
 * `+X11-Style (X Consortium)+`
-* `+scancode://x11+`
+* `+scancode:x11+`
 * `+ICU+`
 
 === Comments on (easy) usability
@@ -84,9 +84,9 @@ X Window System is a trademark of X Consortium, Inc.
     "__impliedNames": [
         "X11",
         "X11 License",
-        "scancode://x11-xconsortium",
+        "scancode:x11-xconsortium",
         "X11-Style (X Consortium)",
-        "scancode://x11",
+        "scancode:x11",
         "ICU"
     ],
     "__impliedId": "X11",
@@ -97,7 +97,7 @@ X Window System is a trademark of X Consortium, Inc.
                     "X11",
                     "X11",
                     "X11 License",
-                    "scancode://x11-xconsortium",
+                    "scancode:x11-xconsortium",
                     "X11-Style (X Consortium)"
                 ],
                 "__impliedId": "X11"
@@ -106,7 +106,7 @@ X Window System is a trademark of X Consortium, Inc.
             "otherNames": [
                 "X11",
                 "X11 License",
-                "scancode://x11-xconsortium",
+                "scancode:x11-xconsortium",
                 "X11-Style (X Consortium)"
             ]
         },
@@ -166,7 +166,7 @@ X Window System is a trademark of X Consortium, Inc.
             "spdxId": "X11",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://x11-xconsortium",
+                    "scancode:x11-xconsortium",
                     "X11-Style (X Consortium)",
                     "X11"
                 ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "EFL-2.0",
         "Eiffel Forum License v2.0",
-        "scancode://efl-2.0",
+        "scancode:efl-2.0",
         "EFL 2.0",
         "Eiffel Forum License, Version 2",
         "License :: OSI Approved :: Eiffel Forum License",
@@ -44,7 +44,7 @@
                     "EFL-2.0",
                     "EFL-2.0",
                     "Eiffel Forum License v2.0",
-                    "scancode://efl-2.0",
+                    "scancode:efl-2.0",
                     "EFL 2.0",
                     "Eiffel Forum License, Version 2",
                     "License :: OSI Approved :: Eiffel Forum License",
@@ -56,7 +56,7 @@
             "otherNames": [
                 "EFL-2.0",
                 "Eiffel Forum License v2.0",
-                "scancode://efl-2.0",
+                "scancode:efl-2.0",
                 "EFL 2.0",
                 "Eiffel Forum License, Version 2",
                 "License :: OSI Approved :: Eiffel Forum License",
@@ -163,7 +163,7 @@
             "spdxId": "EFL-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://efl-2.0",
+                    "scancode:efl-2.0",
                     "EFL 2.0",
                     "EFL-2.0"
                 ],

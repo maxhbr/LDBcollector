@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://mtll+`
+* `+scancode:mtll+`
 
 === Comments on (easy) usability
 
@@ -63,7 +63,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
     "__impliedNames": [
         "MTLL",
         "Matrix Template Library License",
-        "scancode://mtll"
+        "scancode:mtll"
     ],
     "__impliedId": "MTLL",
     "__isFsfFree": true,
@@ -74,7 +74,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
                     "MTLL",
                     "MTLL",
                     "Matrix Template Library License",
-                    "scancode://mtll"
+                    "scancode:mtll"
                 ],
                 "__impliedId": "MTLL"
             },
@@ -82,7 +82,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
             "otherNames": [
                 "MTLL",
                 "Matrix Template Library License",
-                "scancode://mtll"
+                "scancode:mtll"
             ]
         },
         "SPDX": {
@@ -155,7 +155,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
             "spdxId": "MTLL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://mtll",
+                    "scancode:mtll",
                     "Matrix Template Library License",
                     "MTLL"
                 ],

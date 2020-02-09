@@ -5,7 +5,7 @@ Common Development and Distribution License 1.0 (CDDL-1.0)
 
 **Other Names:**
 
--   `scancode://cddl-1.0`
+-   `scancode:cddl-1.0`
 
 -   `CDDL 1.0`
 
@@ -200,7 +200,7 @@ Raw Data
         "__impliedNames": [
             "CDDL-1.0",
             "Common Development and Distribution License 1.0",
-            "scancode://cddl-1.0",
+            "scancode:cddl-1.0",
             "CDDL 1.0",
             "Common Development and Distribution License, Version 1.0"
         ],
@@ -240,7 +240,7 @@ Raw Data
                         "CDDL-1.0",
                         "CDDL-1.0",
                         "Common Development and Distribution License 1.0",
-                        "scancode://cddl-1.0",
+                        "scancode:cddl-1.0",
                         "CDDL 1.0",
                         "Common Development and Distribution License, Version 1.0"
                     ],
@@ -250,7 +250,7 @@ Raw Data
                 "otherNames": [
                     "CDDL-1.0",
                     "Common Development and Distribution License 1.0",
-                    "scancode://cddl-1.0",
+                    "scancode:cddl-1.0",
                     "CDDL 1.0",
                     "Common Development and Distribution License, Version 1.0"
                 ]
@@ -332,7 +332,7 @@ Raw Data
                 "spdxId": "CDDL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cddl-1.0",
+                        "scancode:cddl-1.0",
                         "CDDL 1.0",
                         "CDDL-1.0"
                     ],

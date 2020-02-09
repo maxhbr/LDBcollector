@@ -5,7 +5,7 @@ Historical Permission Notice and Disclaimer (HPND)
 
 **Other Names:**
 
--   `scancode://historical`
+-   `scancode:historical`
 
 Comments on (easy) usability
 ----------------------------
@@ -75,7 +75,7 @@ Raw Data
         "__impliedNames": [
             "HPND",
             "Historical Permission Notice and Disclaimer",
-            "scancode://historical"
+            "scancode:historical"
         ],
         "__impliedId": "HPND",
         "__isFsfFree": true,
@@ -113,7 +113,7 @@ Raw Data
                         "HPND",
                         "HPND",
                         "Historical Permission Notice and Disclaimer",
-                        "scancode://historical"
+                        "scancode:historical"
                     ],
                     "__impliedId": "HPND"
                 },
@@ -121,7 +121,7 @@ Raw Data
                 "otherNames": [
                     "HPND",
                     "Historical Permission Notice and Disclaimer",
-                    "scancode://historical"
+                    "scancode:historical"
                 ]
             },
             "SPDX": {
@@ -216,7 +216,7 @@ Raw Data
                 "spdxId": "HPND",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://historical",
+                        "scancode:historical",
                         "Historical Permission Notice and Disclaimer",
                         "HPND"
                     ],

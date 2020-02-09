@@ -5,7 +5,7 @@ copyleft-next 0.3.0 (copyleft-next-0.3.0)
 
 **Other Names:**
 
--   `scancode://copyleft-next-0.3.0`
+-   `scancode:copyleft-next-0.3.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -252,7 +252,7 @@ Raw Data
         "__impliedNames": [
             "copyleft-next-0.3.0",
             "copyleft-next 0.3.0",
-            "scancode://copyleft-next-0.3.0"
+            "scancode:copyleft-next-0.3.0"
         ],
         "__impliedId": "copyleft-next-0.3.0",
         "facts": {
@@ -262,7 +262,7 @@ Raw Data
                         "copyleft-next-0.3.0",
                         "copyleft-next-0.3.0",
                         "copyleft-next 0.3.0",
-                        "scancode://copyleft-next-0.3.0"
+                        "scancode:copyleft-next-0.3.0"
                     ],
                     "__impliedId": "copyleft-next-0.3.0"
                 },
@@ -270,7 +270,7 @@ Raw Data
                 "otherNames": [
                     "copyleft-next-0.3.0",
                     "copyleft-next 0.3.0",
-                    "scancode://copyleft-next-0.3.0"
+                    "scancode:copyleft-next-0.3.0"
                 ]
             },
             "SPDX": {
@@ -317,7 +317,7 @@ Raw Data
                 "spdxId": "copyleft-next-0.3.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://copyleft-next-0.3.0",
+                        "scancode:copyleft-next-0.3.0",
                         "copyleft-next 0.3.0",
                         "copyleft-next-0.3.0"
                     ],

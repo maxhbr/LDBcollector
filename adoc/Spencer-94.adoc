@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://hs-regexp+`
+* `+scancode:hs-regexp+`
 * `+Henry Spencer Regexp License+`
 
 === Comments on (easy) usability
@@ -59,7 +59,7 @@ sources, credits must appear in the documentation.
     "__impliedNames": [
         "Spencer-94",
         "Spencer License 94",
-        "scancode://hs-regexp",
+        "scancode:hs-regexp",
         "Henry Spencer Regexp License"
     ],
     "__impliedId": "Spencer-94",
@@ -70,7 +70,7 @@ sources, credits must appear in the documentation.
                     "Spencer-94",
                     "Spencer-94",
                     "Spencer License 94",
-                    "scancode://hs-regexp",
+                    "scancode:hs-regexp",
                     "Henry Spencer Regexp License"
                 ],
                 "__impliedId": "Spencer-94"
@@ -79,7 +79,7 @@ sources, credits must appear in the documentation.
             "otherNames": [
                 "Spencer-94",
                 "Spencer License 94",
-                "scancode://hs-regexp",
+                "scancode:hs-regexp",
                 "Henry Spencer Regexp License"
             ]
         },
@@ -129,7 +129,7 @@ sources, credits must appear in the documentation.
             "spdxId": "Spencer-94",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://hs-regexp",
+                    "scancode:hs-regexp",
                     "Henry Spencer Regexp License",
                     "Spencer-94"
                 ],

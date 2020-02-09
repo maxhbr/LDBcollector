@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://motosoto-0.9.1=
+- =scancode:motosoto-0.9.1=
 
 - =Motosoto 0.9.1=
 
@@ -195,7 +195,7 @@
       "__impliedNames": [
           "Motosoto",
           "Motosoto License",
-          "scancode://motosoto-0.9.1",
+          "scancode:motosoto-0.9.1",
           "Motosoto 0.9.1",
           "Motosoto Open Source License, Version 0.9.1",
           "License :: OSI Approved :: Motosoto License"
@@ -236,7 +236,7 @@
                       "Motosoto",
                       "Motosoto",
                       "Motosoto License",
-                      "scancode://motosoto-0.9.1",
+                      "scancode:motosoto-0.9.1",
                       "Motosoto 0.9.1",
                       "Motosoto Open Source License, Version 0.9.1",
                       "License :: OSI Approved :: Motosoto License"
@@ -247,7 +247,7 @@
               "otherNames": [
                   "Motosoto",
                   "Motosoto License",
-                  "scancode://motosoto-0.9.1",
+                  "scancode:motosoto-0.9.1",
                   "Motosoto 0.9.1",
                   "Motosoto Open Source License, Version 0.9.1",
                   "License :: OSI Approved :: Motosoto License"
@@ -335,7 +335,7 @@
               "spdxId": "Motosoto",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://motosoto-0.9.1",
+                      "scancode:motosoto-0.9.1",
                       "Motosoto 0.9.1",
                       "Motosoto"
                   ],

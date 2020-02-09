@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://ofl-1.1+`
+* `+scancode:ofl-1.1+`
 * `+OFL 1.1+`
 * `+SIL Open Font License, Version 1.1+`
 * `+Open Font License 1.1+`
@@ -176,7 +176,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     "__impliedNames": [
         "OFL-1.1",
         "SIL Open Font License 1.1",
-        "scancode://ofl-1.1",
+        "scancode:ofl-1.1",
         "OFL 1.1",
         "ofl-1.1",
         "SIL Open Font License, Version 1.1",
@@ -220,7 +220,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
                     "OFL-1.1",
                     "OFL-1.1",
                     "SIL Open Font License 1.1",
-                    "scancode://ofl-1.1",
+                    "scancode:ofl-1.1",
                     "OFL 1.1",
                     "ofl-1.1",
                     "SIL Open Font License, Version 1.1",
@@ -232,7 +232,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             "otherNames": [
                 "OFL-1.1",
                 "SIL Open Font License 1.1",
-                "scancode://ofl-1.1",
+                "scancode:ofl-1.1",
                 "OFL 1.1",
                 "ofl-1.1",
                 "SIL Open Font License, Version 1.1",
@@ -302,7 +302,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             "spdxId": "OFL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://ofl-1.1",
+                    "scancode:ofl-1.1",
                     "OFL 1.1",
                     "OFL-1.1"
                 ],

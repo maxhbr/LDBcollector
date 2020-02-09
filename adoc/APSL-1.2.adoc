@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://apsl-1.2+`
+* `+scancode:apsl-1.2+`
 * `+APSL 1.2+`
 
 === Comments on (easy) usability
@@ -308,7 +308,7 @@ License for the specific language governing rights and limitations under the Lic
     "__impliedNames": [
         "APSL-1.2",
         "Apple Public Source License 1.2",
-        "scancode://apsl-1.2",
+        "scancode:apsl-1.2",
         "APSL 1.2"
     ],
     "__impliedId": "APSL-1.2",
@@ -322,7 +322,7 @@ License for the specific language governing rights and limitations under the Lic
                     "APSL-1.2",
                     "APSL-1.2",
                     "Apple Public Source License 1.2",
-                    "scancode://apsl-1.2",
+                    "scancode:apsl-1.2",
                     "APSL 1.2"
                 ],
                 "__impliedId": "APSL-1.2"
@@ -331,7 +331,7 @@ License for the specific language governing rights and limitations under the Lic
             "otherNames": [
                 "APSL-1.2",
                 "Apple Public Source License 1.2",
-                "scancode://apsl-1.2",
+                "scancode:apsl-1.2",
                 "APSL 1.2"
             ]
         },
@@ -415,7 +415,7 @@ License for the specific language governing rights and limitations under the Lic
             "spdxId": "APSL-1.2",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://apsl-1.2",
+                    "scancode:apsl-1.2",
                     "APSL 1.2",
                     "APSL-1.2"
                 ],

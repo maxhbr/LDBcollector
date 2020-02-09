@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://cc-by-sa-3.0=
+- =scancode:cc-by-sa-3.0=
 
 ** Comments on (easy) usability
 
@@ -405,7 +405,7 @@
       "__impliedNames": [
           "CC-BY-SA-3.0",
           "Creative Commons Attribution Share Alike 3.0 Unported",
-          "scancode://cc-by-sa-3.0"
+          "scancode:cc-by-sa-3.0"
       ],
       "__impliedId": "CC-BY-SA-3.0",
       "__impliedAmbiguousNames": [
@@ -418,7 +418,7 @@
                       "CC-BY-SA-3.0",
                       "CC-BY-SA-3.0",
                       "Creative Commons Attribution Share Alike 3.0 Unported",
-                      "scancode://cc-by-sa-3.0"
+                      "scancode:cc-by-sa-3.0"
                   ],
                   "__impliedId": "CC-BY-SA-3.0"
               },
@@ -426,7 +426,7 @@
               "otherNames": [
                   "CC-BY-SA-3.0",
                   "Creative Commons Attribution Share Alike 3.0 Unported",
-                  "scancode://cc-by-sa-3.0"
+                  "scancode:cc-by-sa-3.0"
               ]
           },
           "SPDX": {
@@ -475,7 +475,7 @@
               "spdxId": "CC-BY-SA-3.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://cc-by-sa-3.0",
+                      "scancode:cc-by-sa-3.0",
                       "CC-BY-SA-3.0",
                       "CC-BY-SA-3.0"
                   ],

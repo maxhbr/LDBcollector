@@ -2,7 +2,7 @@
     "__impliedNames": [
         "CC-BY-NC-SA-2.5",
         "Creative Commons Attribution Non Commercial Share Alike 2.5 Generic",
-        "scancode://cc-by-nc-sa-2.5"
+        "scancode:cc-by-nc-sa-2.5"
     ],
     "__impliedId": "CC-BY-NC-SA-2.5",
     "__impliedAmbiguousNames": [
@@ -27,7 +27,7 @@
                     "CC-BY-NC-SA-2.5",
                     "CC-BY-NC-SA-2.5",
                     "Creative Commons Attribution Non Commercial Share Alike 2.5 Generic",
-                    "scancode://cc-by-nc-sa-2.5"
+                    "scancode:cc-by-nc-sa-2.5"
                 ],
                 "__impliedId": "CC-BY-NC-SA-2.5"
             },
@@ -35,7 +35,7 @@
             "otherNames": [
                 "CC-BY-NC-SA-2.5",
                 "Creative Commons Attribution Non Commercial Share Alike 2.5 Generic",
-                "scancode://cc-by-nc-sa-2.5"
+                "scancode:cc-by-nc-sa-2.5"
             ]
         },
         "SPDX": {
@@ -84,7 +84,7 @@
             "spdxId": "CC-BY-NC-SA-2.5",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://cc-by-nc-sa-2.5",
+                    "scancode:cc-by-nc-sa-2.5",
                     "CC-BY-NC-SA-2.5",
                     "CC-BY-NC-SA-2.5"
                 ],

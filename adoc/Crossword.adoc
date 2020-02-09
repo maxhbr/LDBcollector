@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://crossword+`
+* `+scancode:crossword+`
 
 === Comments on (easy) usability
 
@@ -50,7 +50,7 @@ provided this copyright notice is preserved and any modifications are indicated.
     "__impliedNames": [
         "Crossword",
         "Crossword License",
-        "scancode://crossword"
+        "scancode:crossword"
     ],
     "__impliedId": "Crossword",
     "__isFsfFree": true,
@@ -61,7 +61,7 @@ provided this copyright notice is preserved and any modifications are indicated.
                     "Crossword",
                     "Crossword",
                     "Crossword License",
-                    "scancode://crossword"
+                    "scancode:crossword"
                 ],
                 "__impliedId": "Crossword"
             },
@@ -69,7 +69,7 @@ provided this copyright notice is preserved and any modifications are indicated.
             "otherNames": [
                 "Crossword",
                 "Crossword License",
-                "scancode://crossword"
+                "scancode:crossword"
             ]
         },
         "SPDX": {
@@ -142,7 +142,7 @@ provided this copyright notice is preserved and any modifications are indicated.
             "spdxId": "Crossword",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://crossword",
+                    "scancode:crossword",
                     "Crossword License",
                     "Crossword"
                 ],

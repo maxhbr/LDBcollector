@@ -5,7 +5,7 @@ Motosoto License (Motosoto)
 
 **Other Names:**
 
--   `scancode://motosoto-0.9.1`
+-   `scancode:motosoto-0.9.1`
 
 -   `Motosoto 0.9.1`
 
@@ -192,7 +192,7 @@ Raw Data
         "__impliedNames": [
             "Motosoto",
             "Motosoto License",
-            "scancode://motosoto-0.9.1",
+            "scancode:motosoto-0.9.1",
             "Motosoto 0.9.1",
             "Motosoto Open Source License, Version 0.9.1",
             "License :: OSI Approved :: Motosoto License"
@@ -233,7 +233,7 @@ Raw Data
                         "Motosoto",
                         "Motosoto",
                         "Motosoto License",
-                        "scancode://motosoto-0.9.1",
+                        "scancode:motosoto-0.9.1",
                         "Motosoto 0.9.1",
                         "Motosoto Open Source License, Version 0.9.1",
                         "License :: OSI Approved :: Motosoto License"
@@ -244,7 +244,7 @@ Raw Data
                 "otherNames": [
                     "Motosoto",
                     "Motosoto License",
-                    "scancode://motosoto-0.9.1",
+                    "scancode:motosoto-0.9.1",
                     "Motosoto 0.9.1",
                     "Motosoto Open Source License, Version 0.9.1",
                     "License :: OSI Approved :: Motosoto License"
@@ -332,7 +332,7 @@ Raw Data
                 "spdxId": "Motosoto",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://motosoto-0.9.1",
+                        "scancode:motosoto-0.9.1",
                         "Motosoto 0.9.1",
                         "Motosoto"
                     ],

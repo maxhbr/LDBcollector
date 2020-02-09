@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://nrl=
+- =scancode:nrl=
 
 ** Comments on (easy) usability
 
@@ -69,7 +69,7 @@
       "__impliedNames": [
           "NRL",
           "NRL License",
-          "scancode://nrl"
+          "scancode:nrl"
       ],
       "__impliedId": "NRL",
       "__isFsfFree": true,
@@ -80,7 +80,7 @@
                       "NRL",
                       "NRL",
                       "NRL License",
-                      "scancode://nrl"
+                      "scancode:nrl"
                   ],
                   "__impliedId": "NRL"
               },
@@ -88,7 +88,7 @@
               "otherNames": [
                   "NRL",
                   "NRL License",
-                  "scancode://nrl"
+                  "scancode:nrl"
               ]
           },
           "SPDX": {
@@ -161,7 +161,7 @@
               "spdxId": "NRL",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://nrl",
+                      "scancode:nrl",
                       "NRL License",
                       "NRL"
                   ],

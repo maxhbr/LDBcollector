@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://noweb+`
+* `+scancode:noweb+`
 
 === Comments on (easy) usability
 
@@ -60,7 +60,7 @@ bug reports on your work be reported to you.
     "__impliedNames": [
         "Noweb",
         "Noweb License",
-        "scancode://noweb"
+        "scancode:noweb"
     ],
     "__impliedId": "Noweb",
     "__isFsfFree": true,
@@ -71,7 +71,7 @@ bug reports on your work be reported to you.
                     "Noweb",
                     "Noweb",
                     "Noweb License",
-                    "scancode://noweb"
+                    "scancode:noweb"
                 ],
                 "__impliedId": "Noweb"
             },
@@ -79,7 +79,7 @@ bug reports on your work be reported to you.
             "otherNames": [
                 "Noweb",
                 "Noweb License",
-                "scancode://noweb"
+                "scancode:noweb"
             ]
         },
         "SPDX": {
@@ -154,7 +154,7 @@ bug reports on your work be reported to you.
             "spdxId": "Noweb",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://noweb",
+                    "scancode:noweb",
                     "Noweb License",
                     "Noweb"
                 ],

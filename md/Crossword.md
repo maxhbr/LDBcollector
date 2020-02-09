@@ -5,7 +5,7 @@ Crossword License (Crossword)
 
 **Other Names:**
 
--   `scancode://crossword`
+-   `scancode:crossword`
 
 Comments on (easy) usability
 ----------------------------
@@ -48,7 +48,7 @@ Raw Data
         "__impliedNames": [
             "Crossword",
             "Crossword License",
-            "scancode://crossword"
+            "scancode:crossword"
         ],
         "__impliedId": "Crossword",
         "__isFsfFree": true,
@@ -59,7 +59,7 @@ Raw Data
                         "Crossword",
                         "Crossword",
                         "Crossword License",
-                        "scancode://crossword"
+                        "scancode:crossword"
                     ],
                     "__impliedId": "Crossword"
                 },
@@ -67,7 +67,7 @@ Raw Data
                 "otherNames": [
                     "Crossword",
                     "Crossword License",
-                    "scancode://crossword"
+                    "scancode:crossword"
                 ]
             },
             "SPDX": {
@@ -140,7 +140,7 @@ Raw Data
                 "spdxId": "Crossword",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://crossword",
+                        "scancode:crossword",
                         "Crossword License",
                         "Crossword"
                     ],

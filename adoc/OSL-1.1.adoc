@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://osl-1.1+`
+* `+scancode:osl-1.1+`
 * `+OSL 1.1+`
 
 === Comments on (easy) usability
@@ -94,7 +94,7 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
     "__impliedNames": [
         "OSL-1.1",
         "Open Software License 1.1",
-        "scancode://osl-1.1",
+        "scancode:osl-1.1",
         "OSL 1.1"
     ],
     "__impliedId": "OSL-1.1",
@@ -109,7 +109,7 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
                     "OSL-1.1",
                     "OSL-1.1",
                     "Open Software License 1.1",
-                    "scancode://osl-1.1",
+                    "scancode:osl-1.1",
                     "OSL 1.1"
                 ],
                 "__impliedId": "OSL-1.1"
@@ -118,7 +118,7 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
             "otherNames": [
                 "OSL-1.1",
                 "Open Software License 1.1",
-                "scancode://osl-1.1",
+                "scancode:osl-1.1",
                 "OSL 1.1"
             ]
         },
@@ -195,7 +195,7 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
             "spdxId": "OSL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://osl-1.1",
+                    "scancode:osl-1.1",
                     "OSL 1.1",
                     "OSL-1.1"
                 ],

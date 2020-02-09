@@ -5,7 +5,7 @@ FSF All Permissive License (FSFAP)
 
 **Other Names:**
 
--   `scancode://fsf-ap`
+-   `scancode:fsf-ap`
 
 Comments on (easy) usability
 ----------------------------
@@ -43,7 +43,7 @@ Raw Data
         "__impliedNames": [
             "FSFAP",
             "FSF All Permissive License",
-            "scancode://fsf-ap",
+            "scancode:fsf-ap",
             "FSF All Permissive license"
         ],
         "__impliedId": "FSFAP",
@@ -55,7 +55,7 @@ Raw Data
                         "FSFAP",
                         "FSFAP",
                         "FSF All Permissive License",
-                        "scancode://fsf-ap"
+                        "scancode:fsf-ap"
                     ],
                     "__impliedId": "FSFAP"
                 },
@@ -63,7 +63,7 @@ Raw Data
                 "otherNames": [
                     "FSFAP",
                     "FSF All Permissive License",
-                    "scancode://fsf-ap"
+                    "scancode:fsf-ap"
                 ]
             },
             "SPDX": {
@@ -141,7 +141,7 @@ Raw Data
                 "spdxId": "FSFAP",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://fsf-ap",
+                        "scancode:fsf-ap",
                         "FSF All Permissive License",
                         "FSFAP"
                     ],

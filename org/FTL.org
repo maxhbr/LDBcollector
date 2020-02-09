@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://freetype=
+- =scancode:freetype=
 
 ** Comments on (easy) usability
 
@@ -240,7 +240,7 @@
       "__impliedNames": [
           "FTL",
           "Freetype Project License",
-          "scancode://freetype",
+          "scancode:freetype",
           "FreeType Project License"
       ],
       "__impliedId": "FTL",
@@ -251,7 +251,7 @@
                       "FTL",
                       "FTL",
                       "Freetype Project License",
-                      "scancode://freetype",
+                      "scancode:freetype",
                       "FreeType Project License"
                   ],
                   "__impliedId": "FTL"
@@ -260,7 +260,7 @@
               "otherNames": [
                   "FTL",
                   "Freetype Project License",
-                  "scancode://freetype",
+                  "scancode:freetype",
                   "FreeType Project License"
               ]
           },
@@ -328,7 +328,7 @@
               "spdxId": "FTL",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://freetype",
+                      "scancode:freetype",
                       "FreeType Project License",
                       "FTL"
                   ],

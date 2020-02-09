@@ -2,7 +2,7 @@
     "__impliedNames": [
         "AFL-3.0",
         "Academic Free License v3.0",
-        "scancode://afl-3.0",
+        "scancode:afl-3.0",
         "AFL 3.0",
         "afl-3.0",
         "Academic Free License, Version 3.0",
@@ -45,7 +45,7 @@
                     "AFL-3.0",
                     "AFL-3.0",
                     "Academic Free License v3.0",
-                    "scancode://afl-3.0",
+                    "scancode:afl-3.0",
                     "AFL 3.0",
                     "afl-3.0",
                     "Academic Free License, Version 3.0",
@@ -58,7 +58,7 @@
             "otherNames": [
                 "AFL-3.0",
                 "Academic Free License v3.0",
-                "scancode://afl-3.0",
+                "scancode:afl-3.0",
                 "AFL 3.0",
                 "afl-3.0",
                 "Academic Free License, Version 3.0",
@@ -128,7 +128,7 @@
             "spdxId": "AFL-3.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://afl-3.0",
+                    "scancode:afl-3.0",
                     "AFL 3.0",
                     "AFL-3.0"
                 ],

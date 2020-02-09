@@ -2,7 +2,7 @@
     "__impliedNames": [
         "dvipdfm",
         "dvipdfm License",
-        "scancode://dvipdfm"
+        "scancode:dvipdfm"
     ],
     "__impliedId": "dvipdfm",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "dvipdfm",
                     "dvipdfm",
                     "dvipdfm License",
-                    "scancode://dvipdfm"
+                    "scancode:dvipdfm"
                 ],
                 "__impliedId": "dvipdfm"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "dvipdfm",
                 "dvipdfm License",
-                "scancode://dvipdfm"
+                "scancode:dvipdfm"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "dvipdfm",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://dvipdfm",
+                    "scancode:dvipdfm",
                     "dvipdfm License",
                     "dvipdfm"
                 ],

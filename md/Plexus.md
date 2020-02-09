@@ -5,7 +5,7 @@ Plexus Classworlds License (Plexus)
 
 **Other Names:**
 
--   `scancode://dom4j`
+-   `scancode:dom4j`
 
 -   `Dom4j License`
 
@@ -86,7 +86,7 @@ Raw Data
         "__impliedNames": [
             "Plexus",
             "Plexus Classworlds License",
-            "scancode://dom4j",
+            "scancode:dom4j",
             "Dom4j License"
         ],
         "__impliedId": "Plexus",
@@ -98,7 +98,7 @@ Raw Data
                         "Plexus",
                         "Plexus",
                         "Plexus Classworlds License",
-                        "scancode://dom4j",
+                        "scancode:dom4j",
                         "Dom4j License"
                     ],
                     "__impliedId": "Plexus"
@@ -107,7 +107,7 @@ Raw Data
                 "otherNames": [
                     "Plexus",
                     "Plexus Classworlds License",
-                    "scancode://dom4j",
+                    "scancode:dom4j",
                     "Dom4j License"
                 ]
             },
@@ -188,7 +188,7 @@ Raw Data
                 "spdxId": "Plexus",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://dom4j",
+                        "scancode:dom4j",
                         "Dom4j License",
                         "Plexus"
                     ],

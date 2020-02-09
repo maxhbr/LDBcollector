@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-* `+scancode://sgi-fslb-1.0+`
+* `+scancode:sgi-fslb-1.0+`
 * `+SGI Free Software License B 1.0+`
 
 === Comments on (easy) usability
@@ -73,7 +73,7 @@ SGI FREE SOFTWARE LICENSE B
     "__impliedNames": [
         "SGI-B-1.0",
         "SGI Free Software License B v1.0",
-        "scancode://sgi-fslb-1.0",
+        "scancode:sgi-fslb-1.0",
         "SGI Free Software License B 1.0"
     ],
     "__impliedId": "SGI-B-1.0",
@@ -84,7 +84,7 @@ SGI FREE SOFTWARE LICENSE B
                     "SGI-B-1.0",
                     "SGI-B-1.0",
                     "SGI Free Software License B v1.0",
-                    "scancode://sgi-fslb-1.0",
+                    "scancode:sgi-fslb-1.0",
                     "SGI Free Software License B 1.0"
                 ],
                 "__impliedId": "SGI-B-1.0"
@@ -93,7 +93,7 @@ SGI FREE SOFTWARE LICENSE B
             "otherNames": [
                 "SGI-B-1.0",
                 "SGI Free Software License B v1.0",
-                "scancode://sgi-fslb-1.0",
+                "scancode:sgi-fslb-1.0",
                 "SGI Free Software License B 1.0"
             ]
         },
@@ -141,7 +141,7 @@ SGI FREE SOFTWARE LICENSE B
             "spdxId": "SGI-B-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://sgi-fslb-1.0",
+                    "scancode:sgi-fslb-1.0",
                     "SGI Free Software License B 1.0",
                     "SGI-B-1.0"
                 ],

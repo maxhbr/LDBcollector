@@ -5,7 +5,7 @@ ICU License (ICU)
 
 **Other Names:**
 
--   `scancode://x11`
+-   `scancode:x11`
 
 -   `X11 License`
 
@@ -91,7 +91,7 @@ Raw Data
         "__impliedNames": [
             "ICU",
             "ICU License",
-            "scancode://x11",
+            "scancode:x11",
             "X11 License",
             "X11"
         ],
@@ -103,7 +103,7 @@ Raw Data
                         "ICU",
                         "ICU",
                         "ICU License",
-                        "scancode://x11",
+                        "scancode:x11",
                         "X11 License"
                     ],
                     "__impliedId": "ICU"
@@ -112,7 +112,7 @@ Raw Data
                 "otherNames": [
                     "ICU",
                     "ICU License",
-                    "scancode://x11",
+                    "scancode:x11",
                     "X11 License"
                 ]
             },
@@ -174,7 +174,7 @@ Raw Data
                 "spdxId": "ICU",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://x11",
+                        "scancode:x11",
                         "X11 License",
                         "ICU"
                     ],

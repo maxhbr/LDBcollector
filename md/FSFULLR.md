@@ -5,7 +5,7 @@ FSF Unlimited License (with License Retention) (FSFULLR)
 
 **Other Names:**
 
--   `scancode://fsf-unlimited`
+-   `scancode:fsf-unlimited`
 
 -   `FSF-Unlimited`
 
@@ -40,7 +40,7 @@ Raw Data
         "__impliedNames": [
             "FSFULLR",
             "FSF Unlimited License (with License Retention)",
-            "scancode://fsf-unlimited",
+            "scancode:fsf-unlimited",
             "FSF-Unlimited"
         ],
         "__impliedId": "FSFULLR",
@@ -52,7 +52,7 @@ Raw Data
                         "FSFULLR",
                         "FSFULLR",
                         "FSF Unlimited License (with License Retention)",
-                        "scancode://fsf-unlimited",
+                        "scancode:fsf-unlimited",
                         "FSF-Unlimited"
                     ],
                     "__impliedId": "FSFULLR"
@@ -61,7 +61,7 @@ Raw Data
                 "otherNames": [
                     "FSFULLR",
                     "FSF Unlimited License (with License Retention)",
-                    "scancode://fsf-unlimited",
+                    "scancode:fsf-unlimited",
                     "FSF-Unlimited"
                 ]
             },
@@ -135,7 +135,7 @@ Raw Data
                 "spdxId": "FSFULLR",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://fsf-unlimited",
+                        "scancode:fsf-unlimited",
                         "FSF-Unlimited",
                         "FSFULLR"
                     ],

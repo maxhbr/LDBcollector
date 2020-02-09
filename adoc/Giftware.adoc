@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://allegro-4+`
+* `+scancode:allegro-4+`
 * `+Allegro 4 License+`
 
 === Comments on (easy) usability
@@ -52,7 +52,7 @@ DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPR
     "__impliedNames": [
         "Giftware",
         "Giftware License",
-        "scancode://allegro-4",
+        "scancode:allegro-4",
         "Allegro 4 License"
     ],
     "__impliedId": "Giftware",
@@ -64,7 +64,7 @@ DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPR
                     "Giftware",
                     "Giftware",
                     "Giftware License",
-                    "scancode://allegro-4",
+                    "scancode:allegro-4",
                     "Allegro 4 License"
                 ],
                 "__impliedId": "Giftware"
@@ -73,7 +73,7 @@ DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPR
             "otherNames": [
                 "Giftware",
                 "Giftware License",
-                "scancode://allegro-4",
+                "scancode:allegro-4",
                 "Allegro 4 License"
             ]
         },
@@ -149,7 +149,7 @@ DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPR
             "spdxId": "Giftware",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://allegro-4",
+                    "scancode:allegro-4",
                     "Allegro 4 License",
                     "Giftware"
                 ],

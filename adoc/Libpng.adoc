@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://libpng+`
+* `+scancode:libpng+`
 
 === Comments on (easy) usability
 
@@ -168,7 +168,7 @@ October 31, 2008
     "__impliedNames": [
         "Libpng",
         "libpng License",
-        "scancode://libpng",
+        "scancode:libpng",
         "Libpng License"
     ],
     "__impliedId": "Libpng",
@@ -179,7 +179,7 @@ October 31, 2008
                     "Libpng",
                     "Libpng",
                     "libpng License",
-                    "scancode://libpng",
+                    "scancode:libpng",
                     "Libpng License"
                 ],
                 "__impliedId": "Libpng"
@@ -188,7 +188,7 @@ October 31, 2008
             "otherNames": [
                 "Libpng",
                 "libpng License",
-                "scancode://libpng",
+                "scancode:libpng",
                 "Libpng License"
             ]
         },
@@ -248,7 +248,7 @@ October 31, 2008
             "spdxId": "Libpng",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://libpng",
+                    "scancode:libpng",
                     "Libpng License",
                     "Libpng"
                 ],

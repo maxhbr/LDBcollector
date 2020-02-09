@@ -2,7 +2,7 @@
     "__impliedNames": [
         "FSFUL",
         "FSF Unlimited License",
-        "scancode://fsf-free",
+        "scancode:fsf-free",
         "FSF Free Software License"
     ],
     "__impliedId": "FSFUL",
@@ -14,7 +14,7 @@
                     "FSFUL",
                     "FSFUL",
                     "FSF Unlimited License",
-                    "scancode://fsf-free",
+                    "scancode:fsf-free",
                     "FSF Free Software License"
                 ],
                 "__impliedId": "FSFUL"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "FSFUL",
                 "FSF Unlimited License",
-                "scancode://fsf-free",
+                "scancode:fsf-free",
                 "FSF Free Software License"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "FSFUL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://fsf-free",
+                    "scancode:fsf-free",
                     "FSF Free Software License",
                     "FSFUL"
                 ],

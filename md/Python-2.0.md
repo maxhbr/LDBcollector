@@ -5,7 +5,7 @@ Python License 2.0 (Python-2.0)
 
 **Other Names:**
 
--   `scancode://python`
+-   `scancode:python`
 
 -   `Python License, Version 2.0`
 
@@ -258,7 +258,7 @@ Raw Data
         "__impliedNames": [
             "Python-2.0",
             "Python License 2.0",
-            "scancode://python",
+            "scancode:python",
             "Python License, Version 2.0",
             "License :: OSI Approved :: Python Software Foundation License",
             "Python Software Foundation License 2"
@@ -299,7 +299,7 @@ Raw Data
                         "Python-2.0",
                         "Python-2.0",
                         "Python License 2.0",
-                        "scancode://python",
+                        "scancode:python",
                         "Python License, Version 2.0",
                         "License :: OSI Approved :: Python Software Foundation License",
                         "Python Software Foundation License 2"
@@ -310,7 +310,7 @@ Raw Data
                 "otherNames": [
                     "Python-2.0",
                     "Python License 2.0",
-                    "scancode://python",
+                    "scancode:python",
                     "Python License, Version 2.0",
                     "License :: OSI Approved :: Python Software Foundation License",
                     "Python Software Foundation License 2"
@@ -383,7 +383,7 @@ Raw Data
                 "spdxId": "Python-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://python",
+                        "scancode:python",
                         "Python License 2.0",
                         "Python-2.0"
                     ],

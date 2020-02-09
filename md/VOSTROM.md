@@ -5,7 +5,7 @@ VOSTROM Public License for Open Source (VOSTROM)
 
 **Other Names:**
 
--   `scancode://vostrom`
+-   `scancode:vostrom`
 
 -   `VOSTROM Public License`
 
@@ -106,7 +106,7 @@ Raw Data
         "__impliedNames": [
             "VOSTROM",
             "VOSTROM Public License for Open Source",
-            "scancode://vostrom",
+            "scancode:vostrom",
             "VOSTROM Public License"
         ],
         "__impliedId": "VOSTROM",
@@ -118,7 +118,7 @@ Raw Data
                         "VOSTROM",
                         "VOSTROM",
                         "VOSTROM Public License for Open Source",
-                        "scancode://vostrom",
+                        "scancode:vostrom",
                         "VOSTROM Public License"
                     ],
                     "__impliedId": "VOSTROM"
@@ -127,7 +127,7 @@ Raw Data
                 "otherNames": [
                     "VOSTROM",
                     "VOSTROM Public License for Open Source",
-                    "scancode://vostrom",
+                    "scancode:vostrom",
                     "VOSTROM Public License"
                 ]
             },
@@ -203,7 +203,7 @@ Raw Data
                 "spdxId": "VOSTROM",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://vostrom",
+                        "scancode:vostrom",
                         "VOSTROM Public License",
                         "VOSTROM"
                     ],

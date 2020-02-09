@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://lppl-1.3a=
+- =scancode:lppl-1.3a=
 
 - =LPPL 1.3a=
 
@@ -429,7 +429,7 @@
       "__impliedNames": [
           "LPPL-1.3a",
           "LaTeX Project Public License v1.3a",
-          "scancode://lppl-1.3a",
+          "scancode:lppl-1.3a",
           "LPPL 1.3a"
       ],
       "__impliedId": "LPPL-1.3a",
@@ -440,7 +440,7 @@
                       "LPPL-1.3a",
                       "LPPL-1.3a",
                       "LaTeX Project Public License v1.3a",
-                      "scancode://lppl-1.3a",
+                      "scancode:lppl-1.3a",
                       "LPPL 1.3a"
                   ],
                   "__impliedId": "LPPL-1.3a"
@@ -449,7 +449,7 @@
               "otherNames": [
                   "LPPL-1.3a",
                   "LaTeX Project Public License v1.3a",
-                  "scancode://lppl-1.3a",
+                  "scancode:lppl-1.3a",
                   "LPPL 1.3a"
               ]
           },
@@ -497,7 +497,7 @@
               "spdxId": "LPPL-1.3a",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://lppl-1.3a",
+                      "scancode:lppl-1.3a",
                       "LPPL 1.3a",
                       "LPPL-1.3a"
                   ],

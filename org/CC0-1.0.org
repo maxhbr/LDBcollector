@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =scancode://cc0-1.0=
+- =scancode:cc0-1.0=
 
 - =Creative Commons Zero 1.0=
 
@@ -210,7 +210,7 @@
       "__impliedNames": [
           "CC0-1.0",
           "Creative Commons Zero v1.0 Universal",
-          "scancode://cc0-1.0",
+          "scancode:cc0-1.0",
           "cc0-1.0",
           "Creative Commons Zero 1.0",
           "CC0 1.0"
@@ -251,7 +251,7 @@
                       "CC0-1.0",
                       "CC0-1.0",
                       "Creative Commons Zero v1.0 Universal",
-                      "scancode://cc0-1.0",
+                      "scancode:cc0-1.0",
                       "cc0-1.0",
                       "Creative Commons Zero 1.0",
                       "CC0 1.0"
@@ -262,7 +262,7 @@
               "otherNames": [
                   "CC0-1.0",
                   "Creative Commons Zero v1.0 Universal",
-                  "scancode://cc0-1.0",
+                  "scancode:cc0-1.0",
                   "cc0-1.0",
                   "Creative Commons Zero 1.0",
                   "CC0 1.0"
@@ -325,7 +325,7 @@
               "spdxId": "CC0-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://cc0-1.0",
+                      "scancode:cc0-1.0",
                       "CC0-1.0",
                       "CC0-1.0"
                   ],

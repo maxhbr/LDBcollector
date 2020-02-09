@@ -2,7 +2,7 @@
     "__impliedNames": [
         "SMPPL",
         "Secure Messaging Protocol Public License",
-        "scancode://smppl"
+        "scancode:smppl"
     ],
     "__impliedId": "SMPPL",
     "facts": {
@@ -12,7 +12,7 @@
                     "SMPPL",
                     "SMPPL",
                     "Secure Messaging Protocol Public License",
-                    "scancode://smppl"
+                    "scancode:smppl"
                 ],
                 "__impliedId": "SMPPL"
             },
@@ -20,7 +20,7 @@
             "otherNames": [
                 "SMPPL",
                 "Secure Messaging Protocol Public License",
-                "scancode://smppl"
+                "scancode:smppl"
             ]
         },
         "SPDX": {
@@ -67,7 +67,7 @@
             "spdxId": "SMPPL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://smppl",
+                    "scancode:smppl",
                     "SMPPL",
                     "SMPPL"
                 ],

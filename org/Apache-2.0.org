@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =scancode://apache-2.0=
+- =scancode:apache-2.0=
 
 - =Apache 2.0=
 
@@ -357,7 +357,7 @@
       "__impliedNames": [
           "Apache-2.0",
           "Apache License 2.0",
-          "scancode://apache-2.0",
+          "scancode:apache-2.0",
           "Apache 2.0",
           "apache-2.0",
           "Apache License, Version 2.0",
@@ -406,7 +406,7 @@
                       "Apache-2.0",
                       "Apache-2.0",
                       "Apache License 2.0",
-                      "scancode://apache-2.0",
+                      "scancode:apache-2.0",
                       "Apache 2.0",
                       "apache-2.0",
                       "Apache License, Version 2.0",
@@ -421,7 +421,7 @@
               "otherNames": [
                   "Apache-2.0",
                   "Apache License 2.0",
-                  "scancode://apache-2.0",
+                  "scancode:apache-2.0",
                   "Apache 2.0",
                   "apache-2.0",
                   "Apache License, Version 2.0",
@@ -529,7 +529,7 @@
               "spdxId": "Apache-2.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://apache-2.0",
+                      "scancode:apache-2.0",
                       "Apache 2.0",
                       "Apache-2.0"
                   ],

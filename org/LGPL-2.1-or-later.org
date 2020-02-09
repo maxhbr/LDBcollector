@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =scancode://lgpl-2.1-plus=
+- =scancode:lgpl-2.1-plus=
 
 - =LGPL 2.1 or later=
 
@@ -223,7 +223,7 @@
       "__impliedNames": [
           "LGPL-2.1-or-later",
           "GNU Lesser General Public License v2.1 or later",
-          "scancode://lgpl-2.1-plus",
+          "scancode:lgpl-2.1-plus",
           "LGPL 2.1 or later",
           "GNU Lesser General Public License 2.1",
           "LGPL-2.1+",
@@ -271,7 +271,7 @@
                       "LGPL-2.1-or-later",
                       "LGPL-2.1-or-later",
                       "GNU Lesser General Public License v2.1 or later",
-                      "scancode://lgpl-2.1-plus",
+                      "scancode:lgpl-2.1-plus",
                       "LGPL 2.1 or later",
                       "GNU Lesser General Public License 2.1",
                       "LGPL-2.1+",
@@ -284,7 +284,7 @@
               "otherNames": [
                   "LGPL-2.1-or-later",
                   "GNU Lesser General Public License v2.1 or later",
-                  "scancode://lgpl-2.1-plus",
+                  "scancode:lgpl-2.1-plus",
                   "LGPL 2.1 or later",
                   "GNU Lesser General Public License 2.1",
                   "LGPL-2.1+",
@@ -373,7 +373,7 @@
               "spdxId": "LGPL-2.1-or-later",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://lgpl-2.1-plus",
+                      "scancode:lgpl-2.1-plus",
                       "LGPL 2.1 or later",
                       "LGPL-2.1-or-later"
                   ],

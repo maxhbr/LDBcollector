@@ -5,7 +5,7 @@ BSD Protection License (BSD-Protection)
 
 **Other Names:**
 
--   `scancode://bsd-protection`
+-   `scancode:bsd-protection`
 
 Comments on (easy) usability
 ----------------------------
@@ -162,7 +162,7 @@ Raw Data
         "__impliedNames": [
             "BSD-Protection",
             "BSD Protection License",
-            "scancode://bsd-protection"
+            "scancode:bsd-protection"
         ],
         "__impliedId": "BSD-Protection",
         "__isFsfFree": true,
@@ -173,7 +173,7 @@ Raw Data
                         "BSD-Protection",
                         "BSD-Protection",
                         "BSD Protection License",
-                        "scancode://bsd-protection"
+                        "scancode:bsd-protection"
                     ],
                     "__impliedId": "BSD-Protection"
                 },
@@ -181,7 +181,7 @@ Raw Data
                 "otherNames": [
                     "BSD-Protection",
                     "BSD Protection License",
-                    "scancode://bsd-protection"
+                    "scancode:bsd-protection"
                 ]
             },
             "SPDX": {
@@ -254,7 +254,7 @@ Raw Data
                 "spdxId": "BSD-Protection",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://bsd-protection",
+                        "scancode:bsd-protection",
                         "BSD Protection License",
                         "BSD-Protection"
                     ],

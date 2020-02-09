@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://linux-openib+`
+* `+scancode:linux-openib+`
 
 === Comments on (easy) usability
 
@@ -57,7 +57,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "Linux-OpenIB",
         "Linux Kernel Variant of OpenIB.org license",
-        "scancode://linux-openib"
+        "scancode:linux-openib"
     ],
     "__impliedId": "Linux-OpenIB",
     "facts": {
@@ -67,7 +67,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "Linux-OpenIB",
                     "Linux-OpenIB",
                     "Linux Kernel Variant of OpenIB.org license",
-                    "scancode://linux-openib"
+                    "scancode:linux-openib"
                 ],
                 "__impliedId": "Linux-OpenIB"
             },
@@ -75,7 +75,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "otherNames": [
                 "Linux-OpenIB",
                 "Linux Kernel Variant of OpenIB.org license",
-                "scancode://linux-openib"
+                "scancode:linux-openib"
             ]
         },
         "SPDX": {
@@ -125,7 +125,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "spdxId": "Linux-OpenIB",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://linux-openib",
+                    "scancode:linux-openib",
                     "Linux-OpenIB",
                     "Linux-OpenIB"
                 ],

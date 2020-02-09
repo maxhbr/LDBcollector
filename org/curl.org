@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://curl=
+- =scancode:curl=
 
 ** Comments on (easy) usability
 
@@ -78,7 +78,7 @@
       "__impliedNames": [
           "curl",
           "curl License",
-          "scancode://curl",
+          "scancode:curl",
           "cURL License",
           "Curl License"
       ],
@@ -90,7 +90,7 @@
                       "curl",
                       "curl",
                       "curl License",
-                      "scancode://curl",
+                      "scancode:curl",
                       "cURL License"
                   ],
                   "__impliedId": "curl"
@@ -99,7 +99,7 @@
               "otherNames": [
                   "curl",
                   "curl License",
-                  "scancode://curl",
+                  "scancode:curl",
                   "cURL License"
               ]
           },
@@ -160,7 +160,7 @@
               "spdxId": "curl",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://curl",
+                      "scancode:curl",
                       "cURL License",
                       "curl"
                   ],

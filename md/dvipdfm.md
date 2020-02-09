@@ -5,7 +5,7 @@ dvipdfm License (dvipdfm)
 
 **Other Names:**
 
--   `scancode://dvipdfm`
+-   `scancode:dvipdfm`
 
 Comments on (easy) usability
 ----------------------------
@@ -37,7 +37,7 @@ Raw Data
         "__impliedNames": [
             "dvipdfm",
             "dvipdfm License",
-            "scancode://dvipdfm"
+            "scancode:dvipdfm"
         ],
         "__impliedId": "dvipdfm",
         "__isFsfFree": true,
@@ -48,7 +48,7 @@ Raw Data
                         "dvipdfm",
                         "dvipdfm",
                         "dvipdfm License",
-                        "scancode://dvipdfm"
+                        "scancode:dvipdfm"
                     ],
                     "__impliedId": "dvipdfm"
                 },
@@ -56,7 +56,7 @@ Raw Data
                 "otherNames": [
                     "dvipdfm",
                     "dvipdfm License",
-                    "scancode://dvipdfm"
+                    "scancode:dvipdfm"
                 ]
             },
             "SPDX": {
@@ -129,7 +129,7 @@ Raw Data
                 "spdxId": "dvipdfm",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://dvipdfm",
+                        "scancode:dvipdfm",
                         "dvipdfm License",
                         "dvipdfm"
                     ],

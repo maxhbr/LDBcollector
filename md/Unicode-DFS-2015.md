@@ -5,7 +5,7 @@ Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
 
 **Other Names:**
 
--   `scancode://unicode-dfs-2015`
+-   `scancode:unicode-dfs-2015`
 
 -   `Unicode DFS 2015`
 
@@ -110,7 +110,7 @@ Raw Data
         "__impliedNames": [
             "Unicode-DFS-2015",
             "Unicode License Agreement - Data Files and Software (2015)",
-            "scancode://unicode-dfs-2015",
+            "scancode:unicode-dfs-2015",
             "Unicode DFS 2015"
         ],
         "__impliedId": "Unicode-DFS-2015",
@@ -121,7 +121,7 @@ Raw Data
                         "Unicode-DFS-2015",
                         "Unicode-DFS-2015",
                         "Unicode License Agreement - Data Files and Software (2015)",
-                        "scancode://unicode-dfs-2015",
+                        "scancode:unicode-dfs-2015",
                         "Unicode DFS 2015"
                     ],
                     "__impliedId": "Unicode-DFS-2015"
@@ -130,7 +130,7 @@ Raw Data
                 "otherNames": [
                     "Unicode-DFS-2015",
                     "Unicode License Agreement - Data Files and Software (2015)",
-                    "scancode://unicode-dfs-2015",
+                    "scancode:unicode-dfs-2015",
                     "Unicode DFS 2015"
                 ]
             },
@@ -190,7 +190,7 @@ Raw Data
                 "spdxId": "Unicode-DFS-2015",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://unicode-dfs-2015",
+                        "scancode:unicode-dfs-2015",
                         "Unicode DFS 2015",
                         "Unicode-DFS-2015"
                     ],

@@ -5,7 +5,7 @@ Attribution Assurance License (AAL)
 
 **Other Names:**
 
--   `scancode://attribution`
+-   `scancode:attribution`
 
 -   `License :: OSI Approved :: Attribution Assurance License`
 
@@ -99,7 +99,7 @@ Raw Data
         "__impliedNames": [
             "AAL",
             "Attribution Assurance License",
-            "scancode://attribution",
+            "scancode:attribution",
             "License :: OSI Approved :: Attribution Assurance License",
             "Attribution Assurance Licenses"
         ],
@@ -139,7 +139,7 @@ Raw Data
                         "AAL",
                         "AAL",
                         "Attribution Assurance License",
-                        "scancode://attribution",
+                        "scancode:attribution",
                         "License :: OSI Approved :: Attribution Assurance License",
                         "Attribution Assurance Licenses"
                     ],
@@ -149,7 +149,7 @@ Raw Data
                 "otherNames": [
                     "AAL",
                     "Attribution Assurance License",
-                    "scancode://attribution",
+                    "scancode:attribution",
                     "License :: OSI Approved :: Attribution Assurance License",
                     "Attribution Assurance Licenses"
                 ]
@@ -236,7 +236,7 @@ Raw Data
                 "spdxId": "AAL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://attribution",
+                        "scancode:attribution",
                         "AAL",
                         "AAL"
                     ],

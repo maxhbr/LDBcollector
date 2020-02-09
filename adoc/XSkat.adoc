@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://xskat+`
+* `+scancode:xskat+`
 
 === Comments on (easy) usability
 
@@ -51,7 +51,7 @@ original program and z is an arbitrary suffix.
     "__impliedNames": [
         "XSkat",
         "XSkat License",
-        "scancode://xskat"
+        "scancode:xskat"
     ],
     "__impliedId": "XSkat",
     "__isFsfFree": true,
@@ -62,7 +62,7 @@ original program and z is an arbitrary suffix.
                     "XSkat",
                     "XSkat",
                     "XSkat License",
-                    "scancode://xskat"
+                    "scancode:xskat"
                 ],
                 "__impliedId": "XSkat"
             },
@@ -70,7 +70,7 @@ original program and z is an arbitrary suffix.
             "otherNames": [
                 "XSkat",
                 "XSkat License",
-                "scancode://xskat"
+                "scancode:xskat"
             ]
         },
         "SPDX": {
@@ -143,7 +143,7 @@ original program and z is an arbitrary suffix.
             "spdxId": "XSkat",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://xskat",
+                    "scancode:xskat",
                     "XSkat License",
                     "XSkat"
                 ],

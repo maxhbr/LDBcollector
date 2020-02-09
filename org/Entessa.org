@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://entessa-1.0=
+- =scancode:entessa-1.0=
 
 - =Entessa 1.0=
 
@@ -103,7 +103,7 @@
       "__impliedNames": [
           "Entessa",
           "Entessa Public License v1.0",
-          "scancode://entessa-1.0",
+          "scancode:entessa-1.0",
           "Entessa 1.0",
           "Entessa Public License",
           "Entessa Public License 1.0"
@@ -144,7 +144,7 @@
                       "Entessa",
                       "Entessa",
                       "Entessa Public License v1.0",
-                      "scancode://entessa-1.0",
+                      "scancode:entessa-1.0",
                       "Entessa 1.0",
                       "Entessa Public License",
                       "Entessa Public License 1.0"
@@ -155,7 +155,7 @@
               "otherNames": [
                   "Entessa",
                   "Entessa Public License v1.0",
-                  "scancode://entessa-1.0",
+                  "scancode:entessa-1.0",
                   "Entessa 1.0",
                   "Entessa Public License",
                   "Entessa Public License 1.0"
@@ -244,7 +244,7 @@
               "spdxId": "Entessa",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://entessa-1.0",
+                      "scancode:entessa-1.0",
                       "Entessa 1.0",
                       "Entessa"
                   ],

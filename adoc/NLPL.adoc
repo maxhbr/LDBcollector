@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://nlpl+`
+* `+scancode:nlpl+`
 
 === Comments on (easy) usability
 
@@ -59,7 +59,7 @@ or anything else.
     "__impliedNames": [
         "NLPL",
         "No Limit Public License",
-        "scancode://nlpl"
+        "scancode:nlpl"
     ],
     "__impliedId": "NLPL",
     "__isFsfFree": true,
@@ -70,7 +70,7 @@ or anything else.
                     "NLPL",
                     "NLPL",
                     "No Limit Public License",
-                    "scancode://nlpl"
+                    "scancode:nlpl"
                 ],
                 "__impliedId": "NLPL"
             },
@@ -78,7 +78,7 @@ or anything else.
             "otherNames": [
                 "NLPL",
                 "No Limit Public License",
-                "scancode://nlpl"
+                "scancode:nlpl"
             ]
         },
         "SPDX": {
@@ -151,7 +151,7 @@ or anything else.
             "spdxId": "NLPL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://nlpl",
+                    "scancode:nlpl",
                     "NLPL",
                     "NLPL"
                 ],

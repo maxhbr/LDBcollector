@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =scancode://mpl-2.0=
+- =scancode:mpl-2.0=
 
 - =MPL 2.0=
 
@@ -512,7 +512,7 @@
       "__impliedNames": [
           "MPL-2.0",
           "Mozilla Public License 2.0",
-          "scancode://mpl-2.0",
+          "scancode:mpl-2.0",
           "MPL 2.0",
           "mpl-2.0",
           "Mozilla Public License, Version 2.0",
@@ -557,7 +557,7 @@
                       "MPL-2.0",
                       "MPL-2.0",
                       "Mozilla Public License 2.0",
-                      "scancode://mpl-2.0",
+                      "scancode:mpl-2.0",
                       "MPL 2.0",
                       "mpl-2.0",
                       "Mozilla Public License, Version 2.0",
@@ -569,7 +569,7 @@
               "otherNames": [
                   "MPL-2.0",
                   "Mozilla Public License 2.0",
-                  "scancode://mpl-2.0",
+                  "scancode:mpl-2.0",
                   "MPL 2.0",
                   "mpl-2.0",
                   "Mozilla Public License, Version 2.0",
@@ -653,7 +653,7 @@
               "spdxId": "MPL-2.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://mpl-2.0",
+                      "scancode:mpl-2.0",
                       "MPL 2.0",
                       "MPL-2.0"
                   ],

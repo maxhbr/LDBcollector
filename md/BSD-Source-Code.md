@@ -5,7 +5,7 @@ BSD Source Code Attribution (BSD-Source-Code)
 
 **Other Names:**
 
--   `scancode://bsd-source-code`
+-   `scancode:bsd-source-code`
 
 Comments on (easy) usability
 ----------------------------
@@ -61,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "BSD-Source-Code",
             "BSD Source Code Attribution",
-            "scancode://bsd-source-code"
+            "scancode:bsd-source-code"
         ],
         "__impliedId": "BSD-Source-Code",
         "facts": {
@@ -71,7 +71,7 @@ Raw Data
                         "BSD-Source-Code",
                         "BSD-Source-Code",
                         "BSD Source Code Attribution",
-                        "scancode://bsd-source-code"
+                        "scancode:bsd-source-code"
                     ],
                     "__impliedId": "BSD-Source-Code"
                 },
@@ -79,7 +79,7 @@ Raw Data
                 "otherNames": [
                     "BSD-Source-Code",
                     "BSD Source Code Attribution",
-                    "scancode://bsd-source-code"
+                    "scancode:bsd-source-code"
                 ]
             },
             "SPDX": {
@@ -126,7 +126,7 @@ Raw Data
                 "spdxId": "BSD-Source-Code",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://bsd-source-code",
+                        "scancode:bsd-source-code",
                         "BSD Source Code Attribution",
                         "BSD-Source-Code"
                     ],

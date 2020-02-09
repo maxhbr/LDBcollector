@@ -5,7 +5,7 @@ Clarified Artistic License (ClArtistic)
 
 **Other Names:**
 
--   `scancode://artistic-clarified`
+-   `scancode:artistic-clarified`
 
 -   `Artistic (clarified)`
 
@@ -194,7 +194,7 @@ Raw Data
         "__impliedNames": [
             "ClArtistic",
             "Clarified Artistic License",
-            "scancode://artistic-clarified",
+            "scancode:artistic-clarified",
             "Artistic (clarified)"
         ],
         "__impliedId": "ClArtistic",
@@ -206,7 +206,7 @@ Raw Data
                         "ClArtistic",
                         "ClArtistic",
                         "Clarified Artistic License",
-                        "scancode://artistic-clarified",
+                        "scancode:artistic-clarified",
                         "Artistic (clarified)"
                     ],
                     "__impliedId": "ClArtistic"
@@ -215,7 +215,7 @@ Raw Data
                 "otherNames": [
                     "ClArtistic",
                     "Clarified Artistic License",
-                    "scancode://artistic-clarified",
+                    "scancode:artistic-clarified",
                     "Artistic (clarified)"
                 ]
             },
@@ -296,7 +296,7 @@ Raw Data
                 "spdxId": "ClArtistic",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://artistic-clarified",
+                        "scancode:artistic-clarified",
                         "Clarified Artistic License",
                         "ClArtistic"
                     ],

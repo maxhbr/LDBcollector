@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://afmparse+`
+* `+scancode:afmparse+`
 
 === Comments on (easy) usability
 
@@ -58,7 +58,7 @@ PARTY RIGHTS.
     "__impliedNames": [
         "Afmparse",
         "Afmparse License",
-        "scancode://afmparse",
+        "scancode:afmparse",
         "afmparse License"
     ],
     "__impliedId": "Afmparse",
@@ -70,7 +70,7 @@ PARTY RIGHTS.
                     "Afmparse",
                     "Afmparse",
                     "Afmparse License",
-                    "scancode://afmparse",
+                    "scancode:afmparse",
                     "afmparse License"
                 ],
                 "__impliedId": "Afmparse"
@@ -79,7 +79,7 @@ PARTY RIGHTS.
             "otherNames": [
                 "Afmparse",
                 "Afmparse License",
-                "scancode://afmparse",
+                "scancode:afmparse",
                 "afmparse License"
             ]
         },
@@ -153,7 +153,7 @@ PARTY RIGHTS.
             "spdxId": "Afmparse",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://afmparse",
+                    "scancode:afmparse",
                     "afmparse License",
                     "Afmparse"
                 ],

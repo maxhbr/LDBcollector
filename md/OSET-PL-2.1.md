@@ -5,7 +5,7 @@ OSET Public License version 2.1 (OSET-PL-2.1)
 
 **Other Names:**
 
--   `scancode://oset-pl-2.1`
+-   `scancode:oset-pl-2.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -150,7 +150,7 @@ Raw Data
         "__impliedNames": [
             "OSET-PL-2.1",
             "OSET Public License version 2.1",
-            "scancode://oset-pl-2.1"
+            "scancode:oset-pl-2.1"
         ],
         "__impliedId": "OSET-PL-2.1",
         "facts": {
@@ -160,7 +160,7 @@ Raw Data
                         "OSET-PL-2.1",
                         "OSET-PL-2.1",
                         "OSET Public License version 2.1",
-                        "scancode://oset-pl-2.1"
+                        "scancode:oset-pl-2.1"
                     ],
                     "__impliedId": "OSET-PL-2.1"
                 },
@@ -168,7 +168,7 @@ Raw Data
                 "otherNames": [
                     "OSET-PL-2.1",
                     "OSET Public License version 2.1",
-                    "scancode://oset-pl-2.1"
+                    "scancode:oset-pl-2.1"
                 ]
             },
             "SPDX": {
@@ -232,7 +232,7 @@ Raw Data
                 "spdxId": "OSET-PL-2.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://oset-pl-2.1",
+                        "scancode:oset-pl-2.1",
                         "OSET-PL-2.1",
                         "OSET-PL-2.1"
                     ],

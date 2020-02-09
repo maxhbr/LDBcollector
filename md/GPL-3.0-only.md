@@ -5,7 +5,7 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 **Other Names:**
 
--   `scancode://gpl-3.0`
+-   `scancode:gpl-3.0`
 
 -   `GPL 3.0`
 
@@ -934,7 +934,7 @@ Raw Data
         "__impliedNames": [
             "GPL-3.0-only",
             "GNU General Public License v3.0 only",
-            "scancode://gpl-3.0",
+            "scancode:gpl-3.0",
             "GPL 3.0",
             "GNU General Public License 3.0",
             "GPL-3.0",
@@ -988,7 +988,7 @@ Raw Data
                         "GPL-3.0-only",
                         "GPL-3.0-only",
                         "GNU General Public License v3.0 only",
-                        "scancode://gpl-3.0",
+                        "scancode:gpl-3.0",
                         "GPL 3.0",
                         "GNU General Public License 3.0",
                         "GPL-3.0",
@@ -1002,7 +1002,7 @@ Raw Data
                 "otherNames": [
                     "GPL-3.0-only",
                     "GNU General Public License v3.0 only",
-                    "scancode://gpl-3.0",
+                    "scancode:gpl-3.0",
                     "GPL 3.0",
                     "GNU General Public License 3.0",
                     "GPL-3.0",
@@ -1118,7 +1118,7 @@ Raw Data
                 "spdxId": "GPL-3.0-only",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://gpl-3.0",
+                        "scancode:gpl-3.0",
                         "GPL 3.0",
                         "GPL-3.0-only"
                     ],

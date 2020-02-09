@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =scancode://ms-pl=
+- =scancode:ms-pl=
 
 - =Microsoft Public License (MS-PL)=
 
@@ -183,7 +183,7 @@
       "__impliedNames": [
           "MS-PL",
           "Microsoft Public License",
-          "scancode://ms-pl",
+          "scancode:ms-pl",
           "ms-pl",
           "Microsoft Public License (MS-PL)",
           "Ms-PL",
@@ -226,7 +226,7 @@
                       "MS-PL",
                       "MS-PL",
                       "Microsoft Public License",
-                      "scancode://ms-pl",
+                      "scancode:ms-pl",
                       "ms-pl",
                       "Microsoft Public License (MS-PL)",
                       "Ms-PL"
@@ -237,7 +237,7 @@
               "otherNames": [
                   "MS-PL",
                   "Microsoft Public License",
-                  "scancode://ms-pl",
+                  "scancode:ms-pl",
                   "ms-pl",
                   "Microsoft Public License (MS-PL)",
                   "Ms-PL"
@@ -350,7 +350,7 @@
               "spdxId": "MS-PL",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://ms-pl",
+                      "scancode:ms-pl",
                       "MS-PL",
                       "MS-PL"
                   ],

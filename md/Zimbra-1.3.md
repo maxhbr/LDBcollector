@@ -5,7 +5,7 @@ Zimbra Public License v1.3 (Zimbra-1.3)
 
 **Other Names:**
 
--   `scancode://zimbra-1.3`
+-   `scancode:zimbra-1.3`
 
 -   `ZPL 1.3`
 
@@ -187,7 +187,7 @@ Raw Data
         "__impliedNames": [
             "Zimbra-1.3",
             "Zimbra Public License v1.3",
-            "scancode://zimbra-1.3",
+            "scancode:zimbra-1.3",
             "ZPL 1.3"
         ],
         "__impliedId": "Zimbra-1.3",
@@ -198,7 +198,7 @@ Raw Data
                         "Zimbra-1.3",
                         "Zimbra-1.3",
                         "Zimbra Public License v1.3",
-                        "scancode://zimbra-1.3",
+                        "scancode:zimbra-1.3",
                         "ZPL 1.3"
                     ],
                     "__impliedId": "Zimbra-1.3"
@@ -207,7 +207,7 @@ Raw Data
                 "otherNames": [
                     "Zimbra-1.3",
                     "Zimbra Public License v1.3",
-                    "scancode://zimbra-1.3",
+                    "scancode:zimbra-1.3",
                     "ZPL 1.3"
                 ]
             },
@@ -257,7 +257,7 @@ Raw Data
                 "spdxId": "Zimbra-1.3",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://zimbra-1.3",
+                        "scancode:zimbra-1.3",
                         "ZPL 1.3",
                         "Zimbra-1.3"
                     ],

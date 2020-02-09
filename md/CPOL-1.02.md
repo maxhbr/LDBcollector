@@ -5,7 +5,7 @@ Code Project Open License 1.02 (CPOL-1.02)
 
 **Other Names:**
 
--   `scancode://cpol-1.02`
+-   `scancode:cpol-1.02`
 
 -   `CPOL 1.02`
 
@@ -118,7 +118,7 @@ Raw Data
         "__impliedNames": [
             "CPOL-1.02",
             "Code Project Open License 1.02",
-            "scancode://cpol-1.02",
+            "scancode:cpol-1.02",
             "CPOL 1.02"
         ],
         "__impliedId": "CPOL-1.02",
@@ -130,7 +130,7 @@ Raw Data
                         "CPOL-1.02",
                         "CPOL-1.02",
                         "Code Project Open License 1.02",
-                        "scancode://cpol-1.02",
+                        "scancode:cpol-1.02",
                         "CPOL 1.02"
                     ],
                     "__impliedId": "CPOL-1.02"
@@ -139,7 +139,7 @@ Raw Data
                 "otherNames": [
                     "CPOL-1.02",
                     "Code Project Open License 1.02",
-                    "scancode://cpol-1.02",
+                    "scancode:cpol-1.02",
                     "CPOL 1.02"
                 ]
             },
@@ -205,7 +205,7 @@ Raw Data
                 "spdxId": "CPOL-1.02",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cpol-1.02",
+                        "scancode:cpol-1.02",
                         "CPOL 1.02",
                         "CPOL-1.02"
                     ],

@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://d-fsl-1.0-de=
+- =scancode:d-fsl-1.0-de=
 
 ** Comments on (easy) usability
 
@@ -503,7 +503,7 @@
       "__impliedNames": [
           "D-FSL-1.0",
           "Deutsche Freie Software Lizenz",
-          "scancode://d-fsl-1.0-de"
+          "scancode:d-fsl-1.0-de"
       ],
       "__impliedId": "D-FSL-1.0",
       "facts": {
@@ -513,7 +513,7 @@
                       "D-FSL-1.0",
                       "D-FSL-1.0",
                       "Deutsche Freie Software Lizenz",
-                      "scancode://d-fsl-1.0-de"
+                      "scancode:d-fsl-1.0-de"
                   ],
                   "__impliedId": "D-FSL-1.0"
               },
@@ -521,7 +521,7 @@
               "otherNames": [
                   "D-FSL-1.0",
                   "Deutsche Freie Software Lizenz",
-                  "scancode://d-fsl-1.0-de"
+                  "scancode:d-fsl-1.0-de"
               ]
           },
           "SPDX": {
@@ -612,7 +612,7 @@
               "spdxId": "D-FSL-1.0",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://d-fsl-1.0-de",
+                      "scancode:d-fsl-1.0-de",
                       "Deutsche Freie Software Lizenz",
                       "D-FSL-1.0"
                   ],

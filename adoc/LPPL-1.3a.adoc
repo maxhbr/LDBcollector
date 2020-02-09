@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://lppl-1.3a+`
+* `+scancode:lppl-1.3a+`
 * `+LPPL 1.3a+`
 
 === Comments on (easy) usability
@@ -429,7 +429,7 @@ Defining What Constitutes the Work
     "__impliedNames": [
         "LPPL-1.3a",
         "LaTeX Project Public License v1.3a",
-        "scancode://lppl-1.3a",
+        "scancode:lppl-1.3a",
         "LPPL 1.3a"
     ],
     "__impliedId": "LPPL-1.3a",
@@ -440,7 +440,7 @@ Defining What Constitutes the Work
                     "LPPL-1.3a",
                     "LPPL-1.3a",
                     "LaTeX Project Public License v1.3a",
-                    "scancode://lppl-1.3a",
+                    "scancode:lppl-1.3a",
                     "LPPL 1.3a"
                 ],
                 "__impliedId": "LPPL-1.3a"
@@ -449,7 +449,7 @@ Defining What Constitutes the Work
             "otherNames": [
                 "LPPL-1.3a",
                 "LaTeX Project Public License v1.3a",
-                "scancode://lppl-1.3a",
+                "scancode:lppl-1.3a",
                 "LPPL 1.3a"
             ]
         },
@@ -497,7 +497,7 @@ Defining What Constitutes the Work
             "spdxId": "LPPL-1.3a",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://lppl-1.3a",
+                    "scancode:lppl-1.3a",
                     "LPPL 1.3a",
                     "LPPL-1.3a"
                 ],

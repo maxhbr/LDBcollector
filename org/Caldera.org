@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://caldera=
+- =scancode:caldera=
 
 ** Comments on (easy) usability
 
@@ -81,7 +81,7 @@
       "__impliedNames": [
           "Caldera",
           "Caldera License",
-          "scancode://caldera"
+          "scancode:caldera"
       ],
       "__impliedId": "Caldera",
       "facts": {
@@ -91,7 +91,7 @@
                       "Caldera",
                       "Caldera",
                       "Caldera License",
-                      "scancode://caldera"
+                      "scancode:caldera"
                   ],
                   "__impliedId": "Caldera"
               },
@@ -99,7 +99,7 @@
               "otherNames": [
                   "Caldera",
                   "Caldera License",
-                  "scancode://caldera"
+                  "scancode:caldera"
               ]
           },
           "SPDX": {
@@ -146,7 +146,7 @@
               "spdxId": "Caldera",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://caldera",
+                      "scancode:caldera",
                       "Caldera License",
                       "Caldera"
                   ],

@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://enna=
+- =scancode:enna=
 
 ** Comments on (easy) usability
 
@@ -68,7 +68,7 @@
       "__impliedNames": [
           "MIT-enna",
           "enna License",
-          "scancode://enna"
+          "scancode:enna"
       ],
       "__impliedId": "MIT-enna",
       "__isFsfFree": true,
@@ -79,7 +79,7 @@
                       "MIT-enna",
                       "MIT-enna",
                       "enna License",
-                      "scancode://enna"
+                      "scancode:enna"
                   ],
                   "__impliedId": "MIT-enna"
               },
@@ -87,7 +87,7 @@
               "otherNames": [
                   "MIT-enna",
                   "enna License",
-                  "scancode://enna"
+                  "scancode:enna"
               ]
           },
           "SPDX": {
@@ -160,7 +160,7 @@
               "spdxId": "MIT-enna",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://enna",
+                      "scancode:enna",
                       "enna License",
                       "MIT-enna"
                   ],

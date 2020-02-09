@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode://osl-1.0+`
+* `+scancode:osl-1.0+`
 * `+OSL 1.0+`
 * `+Open Software License, Version 1.0+`
 * `+Open Software License 3.0+`
@@ -223,7 +223,7 @@ the express written permission of its copyright owner.
     "__impliedNames": [
         "OSL-1.0",
         "Open Software License 1.0",
-        "scancode://osl-1.0",
+        "scancode:osl-1.0",
         "OSL 1.0",
         "Open Software License, Version 1.0",
         "Open Software License 3.0",
@@ -266,7 +266,7 @@ the express written permission of its copyright owner.
                     "OSL-1.0",
                     "OSL-1.0",
                     "Open Software License 1.0",
-                    "scancode://osl-1.0",
+                    "scancode:osl-1.0",
                     "OSL 1.0",
                     "Open Software License, Version 1.0",
                     "Open Software License 3.0"
@@ -277,7 +277,7 @@ the express written permission of its copyright owner.
             "otherNames": [
                 "OSL-1.0",
                 "Open Software License 1.0",
-                "scancode://osl-1.0",
+                "scancode:osl-1.0",
                 "OSL 1.0",
                 "Open Software License, Version 1.0",
                 "Open Software License 3.0"
@@ -366,7 +366,7 @@ the express written permission of its copyright owner.
             "spdxId": "OSL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://osl-1.0",
+                    "scancode:osl-1.0",
                     "OSL 1.0",
                     "OSL-1.0"
                 ],

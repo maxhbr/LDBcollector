@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://mir-os=
+- =scancode:mir-os=
 
 - =The MirOS Licence (MirOS)=
 
@@ -84,7 +84,7 @@
       "__impliedNames": [
           "MirOS",
           "MirOS License",
-          "scancode://mir-os",
+          "scancode:mir-os",
           "The MirOS Licence (MirOS)",
           "MirOS Licence"
       ],
@@ -127,7 +127,7 @@
                       "MirOS",
                       "MirOS",
                       "MirOS License",
-                      "scancode://mir-os",
+                      "scancode:mir-os",
                       "The MirOS Licence (MirOS)",
                       "MirOS Licence"
                   ],
@@ -137,7 +137,7 @@
               "otherNames": [
                   "MirOS",
                   "MirOS License",
-                  "scancode://mir-os",
+                  "scancode:mir-os",
                   "The MirOS Licence (MirOS)",
                   "MirOS Licence"
               ]
@@ -224,7 +224,7 @@
               "spdxId": "MirOS",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://mir-os",
+                      "scancode:mir-os",
                       "MirOS License",
                       "MirOS"
                   ],

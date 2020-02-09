@@ -5,7 +5,7 @@ Open Software License 3.0 (OSL-3.0)
 
 **Other Names:**
 
--   `scancode://osl-3.0`
+-   `scancode:osl-3.0`
 
 -   `OSL 3.0`
 
@@ -185,7 +185,7 @@ Raw Data
         "__impliedNames": [
             "OSL-3.0",
             "Open Software License 3.0",
-            "scancode://osl-3.0",
+            "scancode:osl-3.0",
             "OSL 3.0",
             "osl-3.0",
             "Open Software License, Version 3.0",
@@ -228,7 +228,7 @@ Raw Data
                         "OSL-3.0",
                         "OSL-3.0",
                         "Open Software License 3.0",
-                        "scancode://osl-3.0",
+                        "scancode:osl-3.0",
                         "OSL 3.0",
                         "osl-3.0",
                         "Open Software License, Version 3.0"
@@ -239,7 +239,7 @@ Raw Data
                 "otherNames": [
                     "OSL-3.0",
                     "Open Software License 3.0",
-                    "scancode://osl-3.0",
+                    "scancode:osl-3.0",
                     "OSL 3.0",
                     "osl-3.0",
                     "Open Software License, Version 3.0"
@@ -353,7 +353,7 @@ Raw Data
                 "spdxId": "OSL-3.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://osl-3.0",
+                        "scancode:osl-3.0",
                         "OSL 3.0",
                         "OSL-3.0"
                     ],

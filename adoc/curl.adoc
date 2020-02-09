@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://curl+`
+* `+scancode:curl+`
 
 === Comments on (easy) usability
 
@@ -74,7 +74,7 @@ in this Software without prior written authorization of the copyright holder.
     "__impliedNames": [
         "curl",
         "curl License",
-        "scancode://curl",
+        "scancode:curl",
         "cURL License",
         "Curl License"
     ],
@@ -86,7 +86,7 @@ in this Software without prior written authorization of the copyright holder.
                     "curl",
                     "curl",
                     "curl License",
-                    "scancode://curl",
+                    "scancode:curl",
                     "cURL License"
                 ],
                 "__impliedId": "curl"
@@ -95,7 +95,7 @@ in this Software without prior written authorization of the copyright holder.
             "otherNames": [
                 "curl",
                 "curl License",
-                "scancode://curl",
+                "scancode:curl",
                 "cURL License"
             ]
         },
@@ -156,7 +156,7 @@ in this Software without prior written authorization of the copyright holder.
             "spdxId": "curl",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://curl",
+                    "scancode:curl",
                     "cURL License",
                     "curl"
                 ],

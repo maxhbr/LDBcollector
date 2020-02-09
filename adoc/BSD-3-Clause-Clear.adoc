@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://clear-bsd+`
+* `+scancode:clear-bsd+`
 * `+Clear BSD License+`
 
 === Description
@@ -110,7 +110,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "BSD-3-Clause-Clear",
         "BSD 3-Clause Clear License",
-        "scancode://clear-bsd",
+        "scancode:clear-bsd",
         "Clear BSD License",
         "bsd-3-clause-clear"
     ],
@@ -125,7 +125,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "BSD-3-Clause-Clear",
                     "BSD-3-Clause-Clear",
                     "BSD 3-Clause Clear License",
-                    "scancode://clear-bsd",
+                    "scancode:clear-bsd",
                     "Clear BSD License",
                     "bsd-3-clause-clear"
                 ],
@@ -135,7 +135,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "BSD-3-Clause-Clear",
                 "BSD 3-Clause Clear License",
-                "scancode://clear-bsd",
+                "scancode:clear-bsd",
                 "Clear BSD License",
                 "bsd-3-clause-clear"
             ]
@@ -184,7 +184,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "BSD-3-Clause-Clear",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://clear-bsd",
+                    "scancode:clear-bsd",
                     "Clear BSD License",
                     "BSD-3-Clause-Clear"
                 ],

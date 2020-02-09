@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode://agpl-3.0+`
+* `+scancode:agpl-3.0+`
 * `+AGPL 3.0+`
 * `+GNU Affero General Public License 3.0+`
 * `+AGPL-3.0+`
@@ -448,7 +448,7 @@ You should also get your employer (if you work as a programmer) or school, if an
     "__impliedNames": [
         "AGPL-3.0-only",
         "GNU Affero General Public License v3.0 only",
-        "scancode://agpl-3.0",
+        "scancode:agpl-3.0",
         "AGPL 3.0",
         "GNU Affero General Public License 3.0",
         "AGPL-3.0",
@@ -503,7 +503,7 @@ You should also get your employer (if you work as a programmer) or school, if an
                     "AGPL-3.0-only",
                     "AGPL-3.0-only",
                     "GNU Affero General Public License v3.0 only",
-                    "scancode://agpl-3.0",
+                    "scancode:agpl-3.0",
                     "AGPL 3.0",
                     "GNU Affero General Public License 3.0",
                     "AGPL-3.0",
@@ -518,7 +518,7 @@ You should also get your employer (if you work as a programmer) or school, if an
             "otherNames": [
                 "AGPL-3.0-only",
                 "GNU Affero General Public License v3.0 only",
-                "scancode://agpl-3.0",
+                "scancode:agpl-3.0",
                 "AGPL 3.0",
                 "GNU Affero General Public License 3.0",
                 "AGPL-3.0",
@@ -636,7 +636,7 @@ You should also get your employer (if you work as a programmer) or school, if an
             "spdxId": "AGPL-3.0-only",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://agpl-3.0",
+                    "scancode:agpl-3.0",
                     "AGPL 3.0",
                     "AGPL-3.0-only"
                 ],

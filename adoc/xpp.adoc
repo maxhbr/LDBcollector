@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://indiana-extreme-1.2+`
+* `+scancode:indiana-extreme-1.2+`
 * `+Indiana Extreme License 1.2+`
 
 === Comments on (easy) usability
@@ -99,7 +99,7 @@ SOFTWARE.
     "__impliedNames": [
         "xpp",
         "XPP License",
-        "scancode://indiana-extreme-1.2",
+        "scancode:indiana-extreme-1.2",
         "Indiana Extreme License 1.2"
     ],
     "__impliedId": "xpp",
@@ -111,7 +111,7 @@ SOFTWARE.
                     "xpp",
                     "xpp",
                     "XPP License",
-                    "scancode://indiana-extreme-1.2",
+                    "scancode:indiana-extreme-1.2",
                     "Indiana Extreme License 1.2"
                 ],
                 "__impliedId": "xpp"
@@ -120,7 +120,7 @@ SOFTWARE.
             "otherNames": [
                 "xpp",
                 "XPP License",
-                "scancode://indiana-extreme-1.2",
+                "scancode:indiana-extreme-1.2",
                 "Indiana Extreme License 1.2"
             ]
         },
@@ -194,7 +194,7 @@ SOFTWARE.
             "spdxId": "xpp",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://indiana-extreme-1.2",
+                    "scancode:indiana-extreme-1.2",
                     "Indiana Extreme License 1.2",
                     "xpp"
                 ],

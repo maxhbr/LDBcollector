@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://wsuipa=
+- =scancode:wsuipa=
 
 ** Comments on (easy) usability
 
@@ -51,7 +51,7 @@
       "__impliedNames": [
           "Wsuipa",
           "Wsuipa License",
-          "scancode://wsuipa"
+          "scancode:wsuipa"
       ],
       "__impliedId": "Wsuipa",
       "__isFsfFree": true,
@@ -62,7 +62,7 @@
                       "Wsuipa",
                       "Wsuipa",
                       "Wsuipa License",
-                      "scancode://wsuipa"
+                      "scancode:wsuipa"
                   ],
                   "__impliedId": "Wsuipa"
               },
@@ -70,7 +70,7 @@
               "otherNames": [
                   "Wsuipa",
                   "Wsuipa License",
-                  "scancode://wsuipa"
+                  "scancode:wsuipa"
               ]
           },
           "SPDX": {
@@ -143,7 +143,7 @@
               "spdxId": "Wsuipa",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://wsuipa",
+                      "scancode:wsuipa",
                       "Wsuipa License",
                       "Wsuipa"
                   ],

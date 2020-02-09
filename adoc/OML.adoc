@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://fastcgi-devkit+`
+* `+scancode:fastcgi-devkit+`
 * `+FastCGI DevKit+`
 
 === Comments on (easy) usability
@@ -71,7 +71,7 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
     "__impliedNames": [
         "OML",
         "Open Market License",
-        "scancode://fastcgi-devkit",
+        "scancode:fastcgi-devkit",
         "FastCGI DevKit"
     ],
     "__impliedId": "OML",
@@ -83,7 +83,7 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
                     "OML",
                     "OML",
                     "Open Market License",
-                    "scancode://fastcgi-devkit",
+                    "scancode:fastcgi-devkit",
                     "FastCGI DevKit"
                 ],
                 "__impliedId": "OML"
@@ -92,7 +92,7 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
             "otherNames": [
                 "OML",
                 "Open Market License",
-                "scancode://fastcgi-devkit",
+                "scancode:fastcgi-devkit",
                 "FastCGI DevKit"
             ]
         },
@@ -166,7 +166,7 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
             "spdxId": "OML",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://fastcgi-devkit",
+                    "scancode:fastcgi-devkit",
                     "FastCGI DevKit",
                     "OML"
                 ],

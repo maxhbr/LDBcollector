@@ -2,7 +2,7 @@
     "__impliedNames": [
         "NGPL",
         "Nethack General Public License",
-        "scancode://ngpl",
+        "scancode:ngpl",
         "The Nethack General Public License",
         "License :: OSI Approved :: Nethack General Public License"
     ],
@@ -42,7 +42,7 @@
                     "NGPL",
                     "NGPL",
                     "Nethack General Public License",
-                    "scancode://ngpl",
+                    "scancode:ngpl",
                     "The Nethack General Public License",
                     "License :: OSI Approved :: Nethack General Public License"
                 ],
@@ -52,7 +52,7 @@
             "otherNames": [
                 "NGPL",
                 "Nethack General Public License",
-                "scancode://ngpl",
+                "scancode:ngpl",
                 "The Nethack General Public License",
                 "License :: OSI Approved :: Nethack General Public License"
             ]
@@ -139,7 +139,7 @@
             "spdxId": "NGPL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://ngpl",
+                    "scancode:ngpl",
                     "Nethack General Public License",
                     "NGPL"
                 ],

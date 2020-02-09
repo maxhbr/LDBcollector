@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://ace-tao+`
+* `+scancode:ace-tao+`
 * `+ACE TAO License+`
 
 === Comments on (easy) usability
@@ -58,7 +58,7 @@ Back to the ACE home page.
     "__impliedNames": [
         "DOC",
         "DOC License",
-        "scancode://ace-tao",
+        "scancode:ace-tao",
         "ACE TAO License"
     ],
     "__impliedId": "DOC",
@@ -70,7 +70,7 @@ Back to the ACE home page.
                     "DOC",
                     "DOC",
                     "DOC License",
-                    "scancode://ace-tao",
+                    "scancode:ace-tao",
                     "ACE TAO License"
                 ],
                 "__impliedId": "DOC"
@@ -79,7 +79,7 @@ Back to the ACE home page.
             "otherNames": [
                 "DOC",
                 "DOC License",
-                "scancode://ace-tao",
+                "scancode:ace-tao",
                 "ACE TAO License"
             ]
         },
@@ -153,7 +153,7 @@ Back to the ACE home page.
             "spdxId": "DOC",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://ace-tao",
+                    "scancode:ace-tao",
                     "ACE TAO License",
                     "DOC"
                 ],

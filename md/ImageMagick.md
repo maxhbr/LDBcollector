@@ -5,7 +5,7 @@ ImageMagick License (ImageMagick)
 
 **Other Names:**
 
--   `scancode://imagemagick`
+-   `scancode:imagemagick`
 
 Comments on (easy) usability
 ----------------------------
@@ -85,7 +85,7 @@ Raw Data
         "__impliedNames": [
             "ImageMagick",
             "ImageMagick License",
-            "scancode://imagemagick"
+            "scancode:imagemagick"
         ],
         "__impliedId": "ImageMagick",
         "__isFsfFree": true,
@@ -96,7 +96,7 @@ Raw Data
                         "ImageMagick",
                         "ImageMagick",
                         "ImageMagick License",
-                        "scancode://imagemagick"
+                        "scancode:imagemagick"
                     ],
                     "__impliedId": "ImageMagick"
                 },
@@ -104,7 +104,7 @@ Raw Data
                 "otherNames": [
                     "ImageMagick",
                     "ImageMagick License",
-                    "scancode://imagemagick"
+                    "scancode:imagemagick"
                 ]
             },
             "SPDX": {
@@ -177,7 +177,7 @@ Raw Data
                 "spdxId": "ImageMagick",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://imagemagick",
+                        "scancode:imagemagick",
                         "ImageMagick License",
                         "ImageMagick"
                     ],

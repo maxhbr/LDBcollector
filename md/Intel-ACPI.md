@@ -5,7 +5,7 @@ Intel ACPI Software License Agreement (Intel-ACPI)
 
 **Other Names:**
 
--   `scancode://intel-acpi`
+-   `scancode:intel-acpi`
 
 -   `Intel ACPI SLA`
 
@@ -151,7 +151,7 @@ Raw Data
         "__impliedNames": [
             "Intel-ACPI",
             "Intel ACPI Software License Agreement",
-            "scancode://intel-acpi",
+            "scancode:intel-acpi",
             "Intel ACPI SLA"
         ],
         "__impliedId": "Intel-ACPI",
@@ -163,7 +163,7 @@ Raw Data
                         "Intel-ACPI",
                         "Intel-ACPI",
                         "Intel ACPI Software License Agreement",
-                        "scancode://intel-acpi",
+                        "scancode:intel-acpi",
                         "Intel ACPI SLA"
                     ],
                     "__impliedId": "Intel-ACPI"
@@ -172,7 +172,7 @@ Raw Data
                 "otherNames": [
                     "Intel-ACPI",
                     "Intel ACPI Software License Agreement",
-                    "scancode://intel-acpi",
+                    "scancode:intel-acpi",
                     "Intel ACPI SLA"
                 ]
             },
@@ -246,7 +246,7 @@ Raw Data
                 "spdxId": "Intel-ACPI",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://intel-acpi",
+                        "scancode:intel-acpi",
                         "Intel ACPI SLA",
                         "Intel-ACPI"
                     ],

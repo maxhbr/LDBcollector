@@ -5,7 +5,7 @@ Linux Kernel Variant of OpenIB.org license (Linux-OpenIB)
 
 **Other Names:**
 
--   `scancode://linux-openib`
+-   `scancode:linux-openib`
 
 Comments on (easy) usability
 ----------------------------
@@ -56,7 +56,7 @@ Raw Data
         "__impliedNames": [
             "Linux-OpenIB",
             "Linux Kernel Variant of OpenIB.org license",
-            "scancode://linux-openib"
+            "scancode:linux-openib"
         ],
         "__impliedId": "Linux-OpenIB",
         "facts": {
@@ -66,7 +66,7 @@ Raw Data
                         "Linux-OpenIB",
                         "Linux-OpenIB",
                         "Linux Kernel Variant of OpenIB.org license",
-                        "scancode://linux-openib"
+                        "scancode:linux-openib"
                     ],
                     "__impliedId": "Linux-OpenIB"
                 },
@@ -74,7 +74,7 @@ Raw Data
                 "otherNames": [
                     "Linux-OpenIB",
                     "Linux Kernel Variant of OpenIB.org license",
-                    "scancode://linux-openib"
+                    "scancode:linux-openib"
                 ]
             },
             "SPDX": {
@@ -124,7 +124,7 @@ Raw Data
                 "spdxId": "Linux-OpenIB",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://linux-openib",
+                        "scancode:linux-openib",
                         "Linux-OpenIB",
                         "Linux-OpenIB"
                     ],

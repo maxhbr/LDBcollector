@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://odc-by-1.0+`
+* `+scancode:odc-by-1.0+`
 * `+Open Data Commons Attribution License 1.0+`
 
 === Comments on (easy) usability
@@ -453,7 +453,7 @@ terms of this License.
     "__impliedNames": [
         "ODC-By-1.0",
         "Open Data Commons Attribution License v1.0",
-        "scancode://odc-by-1.0",
+        "scancode:odc-by-1.0",
         "ODC-BY-1.0",
         "Open Data Commons Attribution License 1.0"
     ],
@@ -492,7 +492,7 @@ terms of this License.
                     "ODC-By-1.0",
                     "ODC-By-1.0",
                     "Open Data Commons Attribution License v1.0",
-                    "scancode://odc-by-1.0",
+                    "scancode:odc-by-1.0",
                     "ODC-BY-1.0",
                     "Open Data Commons Attribution License 1.0"
                 ],
@@ -502,7 +502,7 @@ terms of this License.
             "otherNames": [
                 "ODC-By-1.0",
                 "Open Data Commons Attribution License v1.0",
-                "scancode://odc-by-1.0",
+                "scancode:odc-by-1.0",
                 "ODC-BY-1.0",
                 "Open Data Commons Attribution License 1.0"
             ]
@@ -553,7 +553,7 @@ terms of this License.
             "spdxId": "ODC-By-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://odc-by-1.0",
+                    "scancode:odc-by-1.0",
                     "ODC-By-1.0",
                     "ODC-By-1.0"
                 ],

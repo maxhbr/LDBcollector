@@ -5,7 +5,7 @@ Lesser General Public License For Linguistic Resources (LGPLLR)
 
 **Other Names:**
 
--   `scancode://lgpllr`
+-   `scancode:lgpllr`
 
 Comments on (easy) usability
 ----------------------------
@@ -260,7 +260,7 @@ Raw Data
         "__impliedNames": [
             "LGPLLR",
             "Lesser General Public License For Linguistic Resources",
-            "scancode://lgpllr"
+            "scancode:lgpllr"
         ],
         "__impliedId": "LGPLLR",
         "facts": {
@@ -270,7 +270,7 @@ Raw Data
                         "LGPLLR",
                         "LGPLLR",
                         "Lesser General Public License For Linguistic Resources",
-                        "scancode://lgpllr"
+                        "scancode:lgpllr"
                     ],
                     "__impliedId": "LGPLLR"
                 },
@@ -278,7 +278,7 @@ Raw Data
                 "otherNames": [
                     "LGPLLR",
                     "Lesser General Public License For Linguistic Resources",
-                    "scancode://lgpllr"
+                    "scancode:lgpllr"
                 ]
             },
             "SPDX": {
@@ -325,7 +325,7 @@ Raw Data
                 "spdxId": "LGPLLR",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://lgpllr",
+                        "scancode:lgpllr",
                         "LGPLLR",
                         "LGPLLR"
                     ],

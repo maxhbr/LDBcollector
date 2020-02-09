@@ -5,7 +5,7 @@ Fair License (Fair)
 
 **Other Names:**
 
--   `scancode://fair`
+-   `scancode:fair`
 
 -   `Fair License (Fair)`
 
@@ -68,7 +68,7 @@ Raw Data
         "__impliedNames": [
             "Fair",
             "Fair License",
-            "scancode://fair",
+            "scancode:fair",
             "Fair License (Fair)"
         ],
         "__impliedId": "Fair",
@@ -107,7 +107,7 @@ Raw Data
                         "Fair",
                         "Fair",
                         "Fair License",
-                        "scancode://fair",
+                        "scancode:fair",
                         "Fair License (Fair)"
                     ],
                     "__impliedId": "Fair"
@@ -116,7 +116,7 @@ Raw Data
                 "otherNames": [
                     "Fair",
                     "Fair License",
-                    "scancode://fair",
+                    "scancode:fair",
                     "Fair License (Fair)"
                 ]
             },
@@ -209,7 +209,7 @@ Raw Data
                 "spdxId": "Fair",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://fair",
+                        "scancode:fair",
                         "Fair License",
                         "Fair"
                     ],

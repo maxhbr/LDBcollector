@@ -5,7 +5,7 @@ Sun Public License v1.0 (SPL-1.0)
 
 **Other Names:**
 
--   `scancode://spl-1.0`
+-   `scancode:spl-1.0`
 
 -   `SPL 1.0`
 
@@ -565,7 +565,7 @@ Raw Data
         "__impliedNames": [
             "SPL-1.0",
             "Sun Public License v1.0",
-            "scancode://spl-1.0",
+            "scancode:spl-1.0",
             "SPL 1.0",
             "Sun Public License, Version 1.0",
             "License :: OSI Approved :: Sun Public License",
@@ -606,7 +606,7 @@ Raw Data
                         "SPL-1.0",
                         "SPL-1.0",
                         "Sun Public License v1.0",
-                        "scancode://spl-1.0",
+                        "scancode:spl-1.0",
                         "SPL 1.0",
                         "Sun Public License, Version 1.0",
                         "License :: OSI Approved :: Sun Public License",
@@ -618,7 +618,7 @@ Raw Data
                 "otherNames": [
                     "SPL-1.0",
                     "Sun Public License v1.0",
-                    "scancode://spl-1.0",
+                    "scancode:spl-1.0",
                     "SPL 1.0",
                     "Sun Public License, Version 1.0",
                     "License :: OSI Approved :: Sun Public License",
@@ -682,7 +682,7 @@ Raw Data
                 "spdxId": "SPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://spl-1.0",
+                        "scancode:spl-1.0",
                         "SPL 1.0",
                         "SPL-1.0"
                     ],

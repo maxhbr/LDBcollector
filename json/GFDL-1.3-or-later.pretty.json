@@ -2,7 +2,7 @@
     "__impliedNames": [
         "GFDL-1.3-or-later",
         "GNU Free Documentation License v1.3 or later",
-        "scancode://gfdl-1.3-plus",
+        "scancode:gfdl-1.3-plus",
         "GFDL 1.3 or later"
     ],
     "__impliedId": "GFDL-1.3-or-later",
@@ -16,7 +16,7 @@
                     "GFDL-1.3-or-later",
                     "GFDL-1.3-or-later",
                     "GNU Free Documentation License v1.3 or later",
-                    "scancode://gfdl-1.3-plus",
+                    "scancode:gfdl-1.3-plus",
                     "GFDL 1.3 or later"
                 ],
                 "__impliedId": "GFDL-1.3-or-later"
@@ -25,7 +25,7 @@
             "otherNames": [
                 "GFDL-1.3-or-later",
                 "GNU Free Documentation License v1.3 or later",
-                "scancode://gfdl-1.3-plus",
+                "scancode:gfdl-1.3-plus",
                 "GFDL 1.3 or later"
             ]
         },
@@ -75,7 +75,7 @@
             "spdxId": "GFDL-1.3-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://gfdl-1.3-plus",
+                    "scancode:gfdl-1.3-plus",
                     "GFDL 1.3 or later",
                     "GFDL-1.3-or-later"
                 ],

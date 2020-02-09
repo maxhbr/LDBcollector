@@ -2,7 +2,7 @@
     "__impliedNames": [
         "MakeIndex",
         "MakeIndex License",
-        "scancode://makeindex",
+        "scancode:makeindex",
         "MakeIndex Distribution Notice"
     ],
     "__impliedId": "MakeIndex",
@@ -14,7 +14,7 @@
                     "MakeIndex",
                     "MakeIndex",
                     "MakeIndex License",
-                    "scancode://makeindex",
+                    "scancode:makeindex",
                     "MakeIndex Distribution Notice"
                 ],
                 "__impliedId": "MakeIndex"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "MakeIndex",
                 "MakeIndex License",
-                "scancode://makeindex",
+                "scancode:makeindex",
                 "MakeIndex Distribution Notice"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "MakeIndex",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://makeindex",
+                    "scancode:makeindex",
                     "MakeIndex Distribution Notice",
                     "MakeIndex"
                 ],

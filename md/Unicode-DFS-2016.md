@@ -5,7 +5,7 @@ Unicode License Agreement - Data Files and Software (2016) (Unicode-DFS-2016)
 
 **Other Names:**
 
--   `scancode://unicode-dfs-2016`
+-   `scancode:unicode-dfs-2016`
 
 -   `Unicode DFS 2016`
 
@@ -109,7 +109,7 @@ Raw Data
         "__impliedNames": [
             "Unicode-DFS-2016",
             "Unicode License Agreement - Data Files and Software (2016)",
-            "scancode://unicode-dfs-2016",
+            "scancode:unicode-dfs-2016",
             "Unicode DFS 2016"
         ],
         "__impliedId": "Unicode-DFS-2016",
@@ -120,7 +120,7 @@ Raw Data
                         "Unicode-DFS-2016",
                         "Unicode-DFS-2016",
                         "Unicode License Agreement - Data Files and Software (2016)",
-                        "scancode://unicode-dfs-2016",
+                        "scancode:unicode-dfs-2016",
                         "Unicode DFS 2016"
                     ],
                     "__impliedId": "Unicode-DFS-2016"
@@ -129,7 +129,7 @@ Raw Data
                 "otherNames": [
                     "Unicode-DFS-2016",
                     "Unicode License Agreement - Data Files and Software (2016)",
-                    "scancode://unicode-dfs-2016",
+                    "scancode:unicode-dfs-2016",
                     "Unicode DFS 2016"
                 ]
             },
@@ -189,7 +189,7 @@ Raw Data
                 "spdxId": "Unicode-DFS-2016",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://unicode-dfs-2016",
+                        "scancode:unicode-dfs-2016",
                         "Unicode DFS 2016",
                         "Unicode-DFS-2016"
                     ],

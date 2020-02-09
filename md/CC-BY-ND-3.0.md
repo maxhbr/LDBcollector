@@ -5,7 +5,7 @@ Creative Commons Attribution No Derivatives 3.0 Unported (CC-BY-ND-3.0)
 
 **Other Names:**
 
--   `scancode://cc-by-nd-3.0`
+-   `scancode:cc-by-nd-3.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -328,7 +328,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-ND-3.0",
             "Creative Commons Attribution No Derivatives 3.0 Unported",
-            "scancode://cc-by-nd-3.0"
+            "scancode:cc-by-nd-3.0"
         ],
         "__impliedId": "CC-BY-ND-3.0",
         "facts": {
@@ -338,7 +338,7 @@ Raw Data
                         "CC-BY-ND-3.0",
                         "CC-BY-ND-3.0",
                         "Creative Commons Attribution No Derivatives 3.0 Unported",
-                        "scancode://cc-by-nd-3.0"
+                        "scancode:cc-by-nd-3.0"
                     ],
                     "__impliedId": "CC-BY-ND-3.0"
                 },
@@ -346,7 +346,7 @@ Raw Data
                 "otherNames": [
                     "CC-BY-ND-3.0",
                     "Creative Commons Attribution No Derivatives 3.0 Unported",
-                    "scancode://cc-by-nd-3.0"
+                    "scancode:cc-by-nd-3.0"
                 ]
             },
             "SPDX": {
@@ -395,7 +395,7 @@ Raw Data
                 "spdxId": "CC-BY-ND-3.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cc-by-nd-3.0",
+                        "scancode:cc-by-nd-3.0",
                         "CC-BY-ND-3.0",
                         "CC-BY-ND-3.0"
                     ],

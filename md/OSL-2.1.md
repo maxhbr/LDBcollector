@@ -5,7 +5,7 @@ Open Software License 2.1 (OSL-2.1)
 
 **Other Names:**
 
--   `scancode://osl-2.1`
+-   `scancode:osl-2.1`
 
 -   `OSL 2.1`
 
@@ -101,7 +101,7 @@ Raw Data
         "__impliedNames": [
             "OSL-2.1",
             "Open Software License 2.1",
-            "scancode://osl-2.1",
+            "scancode:osl-2.1",
             "OSL 2.1",
             "Open Software License, Version 2.1"
         ],
@@ -114,7 +114,7 @@ Raw Data
                         "OSL-2.1",
                         "OSL-2.1",
                         "Open Software License 2.1",
-                        "scancode://osl-2.1",
+                        "scancode:osl-2.1",
                         "OSL 2.1",
                         "Open Software License, Version 2.1"
                     ],
@@ -124,7 +124,7 @@ Raw Data
                 "otherNames": [
                     "OSL-2.1",
                     "Open Software License 2.1",
-                    "scancode://osl-2.1",
+                    "scancode:osl-2.1",
                     "OSL 2.1",
                     "Open Software License, Version 2.1"
                 ]
@@ -218,7 +218,7 @@ Raw Data
                 "spdxId": "OSL-2.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://osl-2.1",
+                        "scancode:osl-2.1",
                         "OSL 2.1",
                         "OSL-2.1"
                     ],

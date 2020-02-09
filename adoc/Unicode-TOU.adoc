@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-* `+scancode://unicode-tou+`
+* `+scancode:unicode-tou+`
 
 === Comments on (easy) usability
 
@@ -160,7 +160,7 @@ between the parties.
     "__impliedNames": [
         "Unicode-TOU",
         "Unicode Terms of Use",
-        "scancode://unicode-tou"
+        "scancode:unicode-tou"
     ],
     "__impliedId": "Unicode-TOU",
     "facts": {
@@ -170,7 +170,7 @@ between the parties.
                     "Unicode-TOU",
                     "Unicode-TOU",
                     "Unicode Terms of Use",
-                    "scancode://unicode-tou"
+                    "scancode:unicode-tou"
                 ],
                 "__impliedId": "Unicode-TOU"
             },
@@ -178,7 +178,7 @@ between the parties.
             "otherNames": [
                 "Unicode-TOU",
                 "Unicode Terms of Use",
-                "scancode://unicode-tou"
+                "scancode:unicode-tou"
             ]
         },
         "SPDX": {
@@ -225,7 +225,7 @@ between the parties.
             "spdxId": "Unicode-TOU",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://unicode-tou",
+                    "scancode:unicode-tou",
                     "Unicode Terms of Use",
                     "Unicode-TOU"
                 ],

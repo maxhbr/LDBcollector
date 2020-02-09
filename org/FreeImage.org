@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://freeimage-1.0=
+- =scancode:freeimage-1.0=
 
 - =FreeImage Public License 1.0=
 
@@ -177,7 +177,7 @@
       "__impliedNames": [
           "FreeImage",
           "FreeImage Public License v1.0",
-          "scancode://freeimage-1.0",
+          "scancode:freeimage-1.0",
           "FreeImage Public License 1.0"
       ],
       "__impliedId": "FreeImage",
@@ -188,7 +188,7 @@
                       "FreeImage",
                       "FreeImage",
                       "FreeImage Public License v1.0",
-                      "scancode://freeimage-1.0",
+                      "scancode:freeimage-1.0",
                       "FreeImage Public License 1.0"
                   ],
                   "__impliedId": "FreeImage"
@@ -197,7 +197,7 @@
               "otherNames": [
                   "FreeImage",
                   "FreeImage Public License v1.0",
-                  "scancode://freeimage-1.0",
+                  "scancode:freeimage-1.0",
                   "FreeImage Public License 1.0"
               ]
           },
@@ -245,7 +245,7 @@
               "spdxId": "FreeImage",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://freeimage-1.0",
+                      "scancode:freeimage-1.0",
                       "FreeImage Public License 1.0",
                       "FreeImage"
                   ],

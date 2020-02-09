@@ -5,7 +5,7 @@ feh License (MIT-feh)
 
 **Other Names:**
 
--   `scancode://mit-ack`
+-   `scancode:mit-ack`
 
 -   `MIT Acknowledgment License`
 
@@ -61,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "MIT-feh",
             "feh License",
-            "scancode://mit-ack",
+            "scancode:mit-ack",
             "MIT Acknowledgment License"
         ],
         "__impliedId": "MIT-feh",
@@ -73,7 +73,7 @@ Raw Data
                         "MIT-feh",
                         "MIT-feh",
                         "feh License",
-                        "scancode://mit-ack",
+                        "scancode:mit-ack",
                         "MIT Acknowledgment License"
                     ],
                     "__impliedId": "MIT-feh"
@@ -82,7 +82,7 @@ Raw Data
                 "otherNames": [
                     "MIT-feh",
                     "feh License",
-                    "scancode://mit-ack",
+                    "scancode:mit-ack",
                     "MIT Acknowledgment License"
                 ]
             },
@@ -158,7 +158,7 @@ Raw Data
                 "spdxId": "MIT-feh",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://mit-ack",
+                        "scancode:mit-ack",
                         "MIT Acknowledgment License",
                         "MIT-feh"
                     ],

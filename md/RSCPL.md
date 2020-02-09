@@ -5,7 +5,7 @@ Ricoh Source Code Public License (RSCPL)
 
 **Other Names:**
 
--   `scancode://ricoh-1.0`
+-   `scancode:ricoh-1.0`
 
 -   `Ricoh Source Code Public License 1.0`
 
@@ -194,7 +194,7 @@ Raw Data
         "__impliedNames": [
             "RSCPL",
             "Ricoh Source Code Public License",
-            "scancode://ricoh-1.0",
+            "scancode:ricoh-1.0",
             "Ricoh Source Code Public License 1.0",
             "The Ricoh Source Code Public License",
             "License :: OSI Approved :: Ricoh Source Code Public License"
@@ -234,7 +234,7 @@ Raw Data
                         "RSCPL",
                         "RSCPL",
                         "Ricoh Source Code Public License",
-                        "scancode://ricoh-1.0",
+                        "scancode:ricoh-1.0",
                         "Ricoh Source Code Public License 1.0",
                         "The Ricoh Source Code Public License",
                         "License :: OSI Approved :: Ricoh Source Code Public License"
@@ -245,7 +245,7 @@ Raw Data
                 "otherNames": [
                     "RSCPL",
                     "Ricoh Source Code Public License",
-                    "scancode://ricoh-1.0",
+                    "scancode:ricoh-1.0",
                     "Ricoh Source Code Public License 1.0",
                     "The Ricoh Source Code Public License",
                     "License :: OSI Approved :: Ricoh Source Code Public License"
@@ -336,7 +336,7 @@ Raw Data
                 "spdxId": "RSCPL",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://ricoh-1.0",
+                        "scancode:ricoh-1.0",
                         "Ricoh Source Code Public License 1.0",
                         "RSCPL"
                     ],

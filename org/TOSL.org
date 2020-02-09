@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://tosl=
+- =scancode:tosl=
 
 - =TOSL 1.0a=
 
@@ -73,7 +73,7 @@
       "__impliedNames": [
           "TOSL",
           "Trusster Open Source License",
-          "scancode://tosl",
+          "scancode:tosl",
           "TOSL 1.0a"
       ],
       "__impliedId": "TOSL",
@@ -85,7 +85,7 @@
                       "TOSL",
                       "TOSL",
                       "Trusster Open Source License",
-                      "scancode://tosl",
+                      "scancode:tosl",
                       "TOSL 1.0a"
                   ],
                   "__impliedId": "TOSL"
@@ -94,7 +94,7 @@
               "otherNames": [
                   "TOSL",
                   "Trusster Open Source License",
-                  "scancode://tosl",
+                  "scancode:tosl",
                   "TOSL 1.0a"
               ]
           },
@@ -168,7 +168,7 @@
               "spdxId": "TOSL",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://tosl",
+                      "scancode:tosl",
                       "TOSL 1.0a",
                       "TOSL"
                   ],

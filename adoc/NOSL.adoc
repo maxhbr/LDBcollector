@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://nosl-1.0+`
+* `+scancode:nosl-1.0+`
 * `+NOSL 1.0+`
 
 === Comments on (easy) usability
@@ -525,7 +525,7 @@ EXHIBIT A - Netizen Open Source License
     "__impliedNames": [
         "NOSL",
         "Netizen Open Source License",
-        "scancode://nosl-1.0",
+        "scancode:nosl-1.0",
         "NOSL 1.0"
     ],
     "__impliedId": "NOSL",
@@ -537,7 +537,7 @@ EXHIBIT A - Netizen Open Source License
                     "NOSL",
                     "NOSL",
                     "Netizen Open Source License",
-                    "scancode://nosl-1.0",
+                    "scancode:nosl-1.0",
                     "NOSL 1.0"
                 ],
                 "__impliedId": "NOSL"
@@ -546,7 +546,7 @@ EXHIBIT A - Netizen Open Source License
             "otherNames": [
                 "NOSL",
                 "Netizen Open Source License",
-                "scancode://nosl-1.0",
+                "scancode:nosl-1.0",
                 "NOSL 1.0"
             ]
         },
@@ -620,7 +620,7 @@ EXHIBIT A - Netizen Open Source License
             "spdxId": "NOSL",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://nosl-1.0",
+                    "scancode:nosl-1.0",
                     "NOSL 1.0",
                     "NOSL"
                 ],

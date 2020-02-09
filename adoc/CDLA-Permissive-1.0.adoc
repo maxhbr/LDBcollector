@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://cdla-permissive-1.0+`
+* `+scancode:cdla-permissive-1.0+`
 * `+CDLA Permissive 1.0+`
 
 === Comments on (easy) usability
@@ -121,7 +121,7 @@ Section 7.  Miscellaneous
     "__impliedNames": [
         "CDLA-Permissive-1.0",
         "Community Data License Agreement Permissive 1.0",
-        "scancode://cdla-permissive-1.0",
+        "scancode:cdla-permissive-1.0",
         "CDLA Permissive 1.0"
     ],
     "__impliedId": "CDLA-Permissive-1.0",
@@ -132,7 +132,7 @@ Section 7.  Miscellaneous
                     "CDLA-Permissive-1.0",
                     "CDLA-Permissive-1.0",
                     "Community Data License Agreement Permissive 1.0",
-                    "scancode://cdla-permissive-1.0",
+                    "scancode:cdla-permissive-1.0",
                     "CDLA Permissive 1.0"
                 ],
                 "__impliedId": "CDLA-Permissive-1.0"
@@ -141,7 +141,7 @@ Section 7.  Miscellaneous
             "otherNames": [
                 "CDLA-Permissive-1.0",
                 "Community Data License Agreement Permissive 1.0",
-                "scancode://cdla-permissive-1.0",
+                "scancode:cdla-permissive-1.0",
                 "CDLA Permissive 1.0"
             ]
         },
@@ -191,7 +191,7 @@ Section 7.  Miscellaneous
             "spdxId": "CDLA-Permissive-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://cdla-permissive-1.0",
+                    "scancode:cdla-permissive-1.0",
                     "CDLA Permissive 1.0",
                     "CDLA-Permissive-1.0"
                 ],

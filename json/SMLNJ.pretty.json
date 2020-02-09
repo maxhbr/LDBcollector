@@ -2,7 +2,7 @@
     "__impliedNames": [
         "SMLNJ",
         "Standard ML of New Jersey License",
-        "scancode://standard-ml-nj",
+        "scancode:standard-ml-nj",
         "Standard ML of New Jersey"
     ],
     "__impliedId": "SMLNJ",
@@ -14,7 +14,7 @@
                     "SMLNJ",
                     "SMLNJ",
                     "Standard ML of New Jersey License",
-                    "scancode://standard-ml-nj",
+                    "scancode:standard-ml-nj",
                     "Standard ML of New Jersey"
                 ],
                 "__impliedId": "SMLNJ"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "SMLNJ",
                 "Standard ML of New Jersey License",
-                "scancode://standard-ml-nj",
+                "scancode:standard-ml-nj",
                 "Standard ML of New Jersey"
             ]
         },
@@ -101,7 +101,7 @@
             "spdxId": "SMLNJ",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://standard-ml-nj",
+                    "scancode:standard-ml-nj",
                     "Standard ML of New Jersey",
                     "SMLNJ"
                 ],

@@ -2,7 +2,7 @@
     "__impliedNames": [
         "Condor-1.1",
         "Condor Public License v1.1",
-        "scancode://condor-1.1",
+        "scancode:condor-1.1",
         "Condor Public License 1.1"
     ],
     "__impliedId": "Condor-1.1",
@@ -13,7 +13,7 @@
                     "Condor-1.1",
                     "Condor-1.1",
                     "Condor Public License v1.1",
-                    "scancode://condor-1.1",
+                    "scancode:condor-1.1",
                     "Condor Public License 1.1"
                 ],
                 "__impliedId": "Condor-1.1"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "Condor-1.1",
                 "Condor Public License v1.1",
-                "scancode://condor-1.1",
+                "scancode:condor-1.1",
                 "Condor Public License 1.1"
             ]
         },
@@ -78,7 +78,7 @@
             "spdxId": "Condor-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://condor-1.1",
+                    "scancode:condor-1.1",
                     "Condor Public License 1.1",
                     "Condor-1.1"
                 ],

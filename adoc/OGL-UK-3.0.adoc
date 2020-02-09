@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://ogl-uk-3.0+`
+* `+scancode:ogl-uk-3.0+`
 * `+Open Government Licence 3.0 (United Kingdom)+`
 
 === Comments on (easy) usability
@@ -109,7 +109,7 @@ Further context, best practice and guidance can be found in the UK Government Li
     "__impliedNames": [
         "OGL-UK-3.0",
         "Open Government Licence v3.0",
-        "scancode://ogl-uk-3.0",
+        "scancode:ogl-uk-3.0",
         "Open Government Licence 3.0 (United Kingdom)"
     ],
     "__impliedId": "OGL-UK-3.0",
@@ -147,7 +147,7 @@ Further context, best practice and guidance can be found in the UK Government Li
                     "OGL-UK-3.0",
                     "OGL-UK-3.0",
                     "Open Government Licence v3.0",
-                    "scancode://ogl-uk-3.0",
+                    "scancode:ogl-uk-3.0",
                     "Open Government Licence 3.0 (United Kingdom)"
                 ],
                 "__impliedId": "OGL-UK-3.0"
@@ -156,7 +156,7 @@ Further context, best practice and guidance can be found in the UK Government Li
             "otherNames": [
                 "OGL-UK-3.0",
                 "Open Government Licence v3.0",
-                "scancode://ogl-uk-3.0",
+                "scancode:ogl-uk-3.0",
                 "Open Government Licence 3.0 (United Kingdom)"
             ]
         },
@@ -207,7 +207,7 @@ Further context, best practice and guidance can be found in the UK Government Li
             "spdxId": "OGL-UK-3.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://ogl-uk-3.0",
+                    "scancode:ogl-uk-3.0",
                     "OGL-UK-3.0",
                     "OGL-UK-3.0"
                 ],

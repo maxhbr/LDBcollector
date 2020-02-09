@@ -5,7 +5,7 @@ ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
 
 **Other Names:**
 
--   `scancode://pddl-1.0`
+-   `scancode:pddl-1.0`
 
 -   `PDDL 1.0`
 
@@ -172,7 +172,7 @@ Raw Data
         "__impliedNames": [
             "PDDL-1.0",
             "ODC Public Domain Dedication & License 1.0",
-            "scancode://pddl-1.0",
+            "scancode:pddl-1.0",
             "PDDL 1.0",
             "Open Data Commons Public Domain Dedication and Licence 1.0"
         ],
@@ -211,7 +211,7 @@ Raw Data
                         "PDDL-1.0",
                         "PDDL-1.0",
                         "ODC Public Domain Dedication & License 1.0",
-                        "scancode://pddl-1.0",
+                        "scancode:pddl-1.0",
                         "PDDL 1.0",
                         "Open Data Commons Public Domain Dedication and Licence 1.0"
                     ],
@@ -221,7 +221,7 @@ Raw Data
                 "otherNames": [
                     "PDDL-1.0",
                     "ODC Public Domain Dedication & License 1.0",
-                    "scancode://pddl-1.0",
+                    "scancode:pddl-1.0",
                     "PDDL 1.0",
                     "Open Data Commons Public Domain Dedication and Licence 1.0"
                 ]
@@ -272,7 +272,7 @@ Raw Data
                 "spdxId": "PDDL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://pddl-1.0",
+                        "scancode:pddl-1.0",
                         "PDDL 1.0",
                         "PDDL-1.0"
                     ],

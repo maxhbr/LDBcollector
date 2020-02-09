@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://glulxe+`
+* `+scancode:glulxe+`
 
 === Comments on (easy) usability
 
@@ -43,7 +43,7 @@ program or documentation which mentions my name and the URL shown above.
     "__impliedNames": [
         "Glulxe",
         "Glulxe License",
-        "scancode://glulxe"
+        "scancode:glulxe"
     ],
     "__impliedId": "Glulxe",
     "__isFsfFree": true,
@@ -54,7 +54,7 @@ program or documentation which mentions my name and the URL shown above.
                     "Glulxe",
                     "Glulxe",
                     "Glulxe License",
-                    "scancode://glulxe"
+                    "scancode:glulxe"
                 ],
                 "__impliedId": "Glulxe"
             },
@@ -62,7 +62,7 @@ program or documentation which mentions my name and the URL shown above.
             "otherNames": [
                 "Glulxe",
                 "Glulxe License",
-                "scancode://glulxe"
+                "scancode:glulxe"
             ]
         },
         "SPDX": {
@@ -135,7 +135,7 @@ program or documentation which mentions my name and the URL shown above.
             "spdxId": "Glulxe",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://glulxe",
+                    "scancode:glulxe",
                     "Glulxe License",
                     "Glulxe"
                 ],

@@ -5,7 +5,7 @@ IPA Font License (IPA)
 
 **Other Names:**
 
--   `scancode://ipa-font`
+-   `scancode:ipa-font`
 
 -   `IPA Font License 1.0`
 
@@ -135,7 +135,7 @@ Raw Data
         "__impliedNames": [
             "IPA",
             "IPA Font License",
-            "scancode://ipa-font",
+            "scancode:ipa-font",
             "IPA Font License 1.0"
         ],
         "__impliedId": "IPA",
@@ -174,7 +174,7 @@ Raw Data
                         "IPA",
                         "IPA",
                         "IPA Font License",
-                        "scancode://ipa-font",
+                        "scancode:ipa-font",
                         "IPA Font License 1.0"
                     ],
                     "__impliedId": "IPA"
@@ -183,7 +183,7 @@ Raw Data
                 "otherNames": [
                     "IPA",
                     "IPA Font License",
-                    "scancode://ipa-font",
+                    "scancode:ipa-font",
                     "IPA Font License 1.0"
                 ]
             },
@@ -267,7 +267,7 @@ Raw Data
                 "spdxId": "IPA",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://ipa-font",
+                        "scancode:ipa-font",
                         "IPA Font License 1.0",
                         "IPA"
                     ],

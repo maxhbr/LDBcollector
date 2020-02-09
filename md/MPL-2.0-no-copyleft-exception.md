@@ -5,7 +5,7 @@ Mozilla Public License 2.0 (no copyleft exception) (MPL-2.0-no-copyleft-exceptio
 
 **Other Names:**
 
--   `scancode://mpl-2.0-no-copyleft-exception`
+-   `scancode:mpl-2.0-no-copyleft-exception`
 
 -   `MPL 2.0 with no copyleft exception`
 
@@ -93,7 +93,7 @@ Raw Data
         "__impliedNames": [
             "MPL-2.0-no-copyleft-exception",
             "Mozilla Public License 2.0 (no copyleft exception)",
-            "scancode://mpl-2.0-no-copyleft-exception",
+            "scancode:mpl-2.0-no-copyleft-exception",
             "MPL 2.0 with no copyleft exception"
         ],
         "__impliedId": "MPL-2.0-no-copyleft-exception",
@@ -107,7 +107,7 @@ Raw Data
                         "MPL-2.0-no-copyleft-exception",
                         "MPL-2.0-no-copyleft-exception",
                         "Mozilla Public License 2.0 (no copyleft exception)",
-                        "scancode://mpl-2.0-no-copyleft-exception",
+                        "scancode:mpl-2.0-no-copyleft-exception",
                         "MPL 2.0 with no copyleft exception"
                     ],
                     "__impliedId": "MPL-2.0-no-copyleft-exception"
@@ -116,7 +116,7 @@ Raw Data
                 "otherNames": [
                     "MPL-2.0-no-copyleft-exception",
                     "Mozilla Public License 2.0 (no copyleft exception)",
-                    "scancode://mpl-2.0-no-copyleft-exception",
+                    "scancode:mpl-2.0-no-copyleft-exception",
                     "MPL 2.0 with no copyleft exception"
                 ]
             },
@@ -197,7 +197,7 @@ Raw Data
                 "spdxId": "MPL-2.0-no-copyleft-exception",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://mpl-2.0-no-copyleft-exception",
+                        "scancode:mpl-2.0-no-copyleft-exception",
                         "MPL 2.0 with no copyleft exception",
                         "MPL-2.0-no-copyleft-exception"
                     ],

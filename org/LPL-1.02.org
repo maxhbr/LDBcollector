@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://lucent-pl-1.02=
+- =scancode:lucent-pl-1.02=
 
 - =Lucent Public License 1.02=
 
@@ -132,7 +132,7 @@
       "__impliedNames": [
           "LPL-1.02",
           "Lucent Public License v1.02",
-          "scancode://lucent-pl-1.02",
+          "scancode:lucent-pl-1.02",
           "Lucent Public License 1.02",
           "Lucent Public License, Version 1.02"
       ],
@@ -171,7 +171,7 @@
                       "LPL-1.02",
                       "LPL-1.02",
                       "Lucent Public License v1.02",
-                      "scancode://lucent-pl-1.02",
+                      "scancode:lucent-pl-1.02",
                       "Lucent Public License 1.02",
                       "Lucent Public License, Version 1.02"
                   ],
@@ -181,7 +181,7 @@
               "otherNames": [
                   "LPL-1.02",
                   "Lucent Public License v1.02",
-                  "scancode://lucent-pl-1.02",
+                  "scancode:lucent-pl-1.02",
                   "Lucent Public License 1.02",
                   "Lucent Public License, Version 1.02"
               ]
@@ -247,7 +247,7 @@
               "spdxId": "LPL-1.02",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://lucent-pl-1.02",
+                      "scancode:lucent-pl-1.02",
                       "Lucent Public License 1.02",
                       "LPL-1.02"
                   ],

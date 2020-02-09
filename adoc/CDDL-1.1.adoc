@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://cddl-1.1+`
+* `+scancode:cddl-1.1+`
 * `+CDDL 1.1+`
 
 === Comments on (easy) usability
@@ -125,7 +125,7 @@ The code released under the CDDL shall be governed by the laws of the State of C
     "__impliedNames": [
         "CDDL-1.1",
         "Common Development and Distribution License 1.1",
-        "scancode://cddl-1.1",
+        "scancode:cddl-1.1",
         "CDDL 1.1"
     ],
     "__impliedId": "CDDL-1.1",
@@ -136,7 +136,7 @@ The code released under the CDDL shall be governed by the laws of the State of C
                     "CDDL-1.1",
                     "CDDL-1.1",
                     "Common Development and Distribution License 1.1",
-                    "scancode://cddl-1.1",
+                    "scancode:cddl-1.1",
                     "CDDL 1.1"
                 ],
                 "__impliedId": "CDDL-1.1"
@@ -145,7 +145,7 @@ The code released under the CDDL shall be governed by the laws of the State of C
             "otherNames": [
                 "CDDL-1.1",
                 "Common Development and Distribution License 1.1",
-                "scancode://cddl-1.1",
+                "scancode:cddl-1.1",
                 "CDDL 1.1"
             ]
         },
@@ -200,7 +200,7 @@ The code released under the CDDL shall be governed by the laws of the State of C
             "spdxId": "CDDL-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://cddl-1.1",
+                    "scancode:cddl-1.1",
                     "CDDL 1.1",
                     "CDDL-1.1"
                 ],

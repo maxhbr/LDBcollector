@@ -5,7 +5,7 @@ CERN Open Hardware License v1.1 (CERN-OHL-1.1)
 
 **Other Names:**
 
--   `scancode://cern-ohl-1.1`
+-   `scancode:cern-ohl-1.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -110,7 +110,7 @@ Raw Data
         "__impliedNames": [
             "CERN-OHL-1.1",
             "CERN Open Hardware License v1.1",
-            "scancode://cern-ohl-1.1"
+            "scancode:cern-ohl-1.1"
         ],
         "__impliedId": "CERN-OHL-1.1",
         "facts": {
@@ -120,7 +120,7 @@ Raw Data
                         "CERN-OHL-1.1",
                         "CERN-OHL-1.1",
                         "CERN Open Hardware License v1.1",
-                        "scancode://cern-ohl-1.1"
+                        "scancode:cern-ohl-1.1"
                     ],
                     "__impliedId": "CERN-OHL-1.1"
                 },
@@ -128,7 +128,7 @@ Raw Data
                 "otherNames": [
                     "CERN-OHL-1.1",
                     "CERN Open Hardware License v1.1",
-                    "scancode://cern-ohl-1.1"
+                    "scancode:cern-ohl-1.1"
                 ]
             },
             "SPDX": {
@@ -177,7 +177,7 @@ Raw Data
                 "spdxId": "CERN-OHL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cern-ohl-1.1",
+                        "scancode:cern-ohl-1.1",
                         "CERN Open Hardware License v1.1",
                         "CERN-OHL-1.1"
                     ],

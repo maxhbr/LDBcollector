@@ -5,7 +5,7 @@ Open Government Licence v1.0 (OGL-UK-1.0)
 
 **Other Names:**
 
--   `scancode://ogl-uk-1.0`
+-   `scancode:ogl-uk-1.0`
 
 -   `Open Government Licence 1.0 (United Kingdom)`
 
@@ -139,7 +139,7 @@ Raw Data
         "__impliedNames": [
             "OGL-UK-1.0",
             "Open Government Licence v1.0",
-            "scancode://ogl-uk-1.0",
+            "scancode:ogl-uk-1.0",
             "Open Government Licence 1.0 (United Kingdom)"
         ],
         "__impliedId": "OGL-UK-1.0",
@@ -177,7 +177,7 @@ Raw Data
                         "OGL-UK-1.0",
                         "OGL-UK-1.0",
                         "Open Government Licence v1.0",
-                        "scancode://ogl-uk-1.0",
+                        "scancode:ogl-uk-1.0",
                         "Open Government Licence 1.0 (United Kingdom)"
                     ],
                     "__impliedId": "OGL-UK-1.0"
@@ -186,7 +186,7 @@ Raw Data
                 "otherNames": [
                     "OGL-UK-1.0",
                     "Open Government Licence v1.0",
-                    "scancode://ogl-uk-1.0",
+                    "scancode:ogl-uk-1.0",
                     "Open Government Licence 1.0 (United Kingdom)"
                 ]
             },
@@ -236,7 +236,7 @@ Raw Data
                 "spdxId": "OGL-UK-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://ogl-uk-1.0",
+                        "scancode:ogl-uk-1.0",
                         "OGL-UK-1.0",
                         "OGL-UK-1.0"
                     ],

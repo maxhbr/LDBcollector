@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://rsa-md5+`
+* `+scancode:rsa-md5+`
 * `+RSA-MD5 License+`
 
 === Comments on (easy) usability
@@ -56,7 +56,7 @@ documentation and/or software.
     "__impliedNames": [
         "RSA-MD",
         "RSA Message-Digest License ",
-        "scancode://rsa-md5",
+        "scancode:rsa-md5",
         "RSA-MD5 License"
     ],
     "__impliedId": "RSA-MD",
@@ -67,7 +67,7 @@ documentation and/or software.
                     "RSA-MD",
                     "RSA-MD",
                     "RSA Message-Digest License ",
-                    "scancode://rsa-md5",
+                    "scancode:rsa-md5",
                     "RSA-MD5 License"
                 ],
                 "__impliedId": "RSA-MD"
@@ -76,7 +76,7 @@ documentation and/or software.
             "otherNames": [
                 "RSA-MD",
                 "RSA Message-Digest License ",
-                "scancode://rsa-md5",
+                "scancode:rsa-md5",
                 "RSA-MD5 License"
             ]
         },
@@ -126,7 +126,7 @@ documentation and/or software.
             "spdxId": "RSA-MD",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://rsa-md5",
+                    "scancode:rsa-md5",
                     "RSA-MD5 License",
                     "RSA-MD"
                 ],

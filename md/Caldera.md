@@ -5,7 +5,7 @@ Caldera License (Caldera)
 
 **Other Names:**
 
--   `scancode://caldera`
+-   `scancode:caldera`
 
 Comments on (easy) usability
 ----------------------------
@@ -78,7 +78,7 @@ Raw Data
         "__impliedNames": [
             "Caldera",
             "Caldera License",
-            "scancode://caldera"
+            "scancode:caldera"
         ],
         "__impliedId": "Caldera",
         "facts": {
@@ -88,7 +88,7 @@ Raw Data
                         "Caldera",
                         "Caldera",
                         "Caldera License",
-                        "scancode://caldera"
+                        "scancode:caldera"
                     ],
                     "__impliedId": "Caldera"
                 },
@@ -96,7 +96,7 @@ Raw Data
                 "otherNames": [
                     "Caldera",
                     "Caldera License",
-                    "scancode://caldera"
+                    "scancode:caldera"
                 ]
             },
             "SPDX": {
@@ -143,7 +143,7 @@ Raw Data
                 "spdxId": "Caldera",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://caldera",
+                        "scancode:caldera",
                         "Caldera License",
                         "Caldera"
                     ],

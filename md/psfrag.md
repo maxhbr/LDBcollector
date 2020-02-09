@@ -5,7 +5,7 @@ psfrag License (psfrag)
 
 **Other Names:**
 
--   `scancode://psfrag`
+-   `scancode:psfrag`
 
 Comments on (easy) usability
 ----------------------------
@@ -39,7 +39,7 @@ Raw Data
         "__impliedNames": [
             "psfrag",
             "psfrag License",
-            "scancode://psfrag"
+            "scancode:psfrag"
         ],
         "__impliedId": "psfrag",
         "facts": {
@@ -49,7 +49,7 @@ Raw Data
                         "psfrag",
                         "psfrag",
                         "psfrag License",
-                        "scancode://psfrag"
+                        "scancode:psfrag"
                     ],
                     "__impliedId": "psfrag"
                 },
@@ -57,7 +57,7 @@ Raw Data
                 "otherNames": [
                     "psfrag",
                     "psfrag License",
-                    "scancode://psfrag"
+                    "scancode:psfrag"
                 ]
             },
             "SPDX": {
@@ -129,7 +129,7 @@ Raw Data
                 "spdxId": "psfrag",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://psfrag",
+                        "scancode:psfrag",
                         "psfrag License",
                         "psfrag"
                     ],

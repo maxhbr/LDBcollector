@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://gfdl-1.1+`
+* `+scancode:gfdl-1.1+`
 * `+GFDL 1.1+`
 
 === Comments on (easy) usability
@@ -395,7 +395,7 @@ to permit their use in free software.
     "__impliedNames": [
         "GFDL-1.1-only",
         "GNU Free Documentation License v1.1 only",
-        "scancode://gfdl-1.1",
+        "scancode:gfdl-1.1",
         "GFDL 1.1"
     ],
     "__impliedId": "GFDL-1.1-only",
@@ -409,7 +409,7 @@ to permit their use in free software.
                     "GFDL-1.1-only",
                     "GFDL-1.1-only",
                     "GNU Free Documentation License v1.1 only",
-                    "scancode://gfdl-1.1",
+                    "scancode:gfdl-1.1",
                     "GFDL 1.1"
                 ],
                 "__impliedId": "GFDL-1.1-only"
@@ -418,7 +418,7 @@ to permit their use in free software.
             "otherNames": [
                 "GFDL-1.1-only",
                 "GNU Free Documentation License v1.1 only",
-                "scancode://gfdl-1.1",
+                "scancode:gfdl-1.1",
                 "GFDL 1.1"
             ]
         },
@@ -470,7 +470,7 @@ to permit their use in free software.
             "spdxId": "GFDL-1.1-only",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://gfdl-1.1",
+                    "scancode:gfdl-1.1",
                     "GFDL 1.1",
                     "GFDL-1.1-only"
                 ],

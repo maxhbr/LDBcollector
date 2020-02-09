@@ -2,7 +2,7 @@
     "__impliedNames": [
         "W3C-20150513",
         "W3C Software Notice and Document License (2015-05-13)",
-        "scancode://w3c-software-doc-20150513",
+        "scancode:w3c-software-doc-20150513",
         "W3C-SOFTWARE-DOC-20150513"
     ],
     "__impliedId": "W3C-20150513",
@@ -13,7 +13,7 @@
                     "W3C-20150513",
                     "W3C-20150513",
                     "W3C Software Notice and Document License (2015-05-13)",
-                    "scancode://w3c-software-doc-20150513",
+                    "scancode:w3c-software-doc-20150513",
                     "W3C-SOFTWARE-DOC-20150513"
                 ],
                 "__impliedId": "W3C-20150513"
@@ -22,7 +22,7 @@
             "otherNames": [
                 "W3C-20150513",
                 "W3C Software Notice and Document License (2015-05-13)",
-                "scancode://w3c-software-doc-20150513",
+                "scancode:w3c-software-doc-20150513",
                 "W3C-SOFTWARE-DOC-20150513"
             ]
         },
@@ -70,7 +70,7 @@
             "spdxId": "W3C-20150513",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://w3c-software-doc-20150513",
+                    "scancode:w3c-software-doc-20150513",
                     "W3C-SOFTWARE-DOC-20150513",
                     "W3C-20150513"
                 ],

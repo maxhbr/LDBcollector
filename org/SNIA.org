@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://snia=
+- =scancode:snia=
 
 ** Comments on (easy) usability
 
@@ -160,7 +160,7 @@
       "__impliedNames": [
           "SNIA",
           "SNIA Public License 1.1",
-          "scancode://snia"
+          "scancode:snia"
       ],
       "__impliedId": "SNIA",
       "__isFsfFree": true,
@@ -171,7 +171,7 @@
                       "SNIA",
                       "SNIA",
                       "SNIA Public License 1.1",
-                      "scancode://snia"
+                      "scancode:snia"
                   ],
                   "__impliedId": "SNIA"
               },
@@ -179,7 +179,7 @@
               "otherNames": [
                   "SNIA",
                   "SNIA Public License 1.1",
-                  "scancode://snia"
+                  "scancode:snia"
               ]
           },
           "SPDX": {
@@ -252,7 +252,7 @@
               "spdxId": "SNIA",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://snia",
+                      "scancode:snia",
                       "SNIA Public License 1.1",
                       "SNIA"
                   ],

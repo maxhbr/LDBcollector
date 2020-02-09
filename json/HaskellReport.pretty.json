@@ -2,7 +2,7 @@
     "__impliedNames": [
         "HaskellReport",
         "Haskell Language Report License",
-        "scancode://haskell-report",
+        "scancode:haskell-report",
         "Haskell Report License"
     ],
     "__impliedId": "HaskellReport",
@@ -14,7 +14,7 @@
                     "HaskellReport",
                     "HaskellReport",
                     "Haskell Language Report License",
-                    "scancode://haskell-report",
+                    "scancode:haskell-report",
                     "Haskell Report License"
                 ],
                 "__impliedId": "HaskellReport"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "HaskellReport",
                 "Haskell Language Report License",
-                "scancode://haskell-report",
+                "scancode:haskell-report",
                 "Haskell Report License"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "HaskellReport",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://haskell-report",
+                    "scancode:haskell-report",
                     "Haskell Report License",
                     "HaskellReport"
                 ],

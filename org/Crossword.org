@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://crossword=
+- =scancode:crossword=
 
 ** Comments on (easy) usability
 
@@ -51,7 +51,7 @@
       "__impliedNames": [
           "Crossword",
           "Crossword License",
-          "scancode://crossword"
+          "scancode:crossword"
       ],
       "__impliedId": "Crossword",
       "__isFsfFree": true,
@@ -62,7 +62,7 @@
                       "Crossword",
                       "Crossword",
                       "Crossword License",
-                      "scancode://crossword"
+                      "scancode:crossword"
                   ],
                   "__impliedId": "Crossword"
               },
@@ -70,7 +70,7 @@
               "otherNames": [
                   "Crossword",
                   "Crossword License",
-                  "scancode://crossword"
+                  "scancode:crossword"
               ]
           },
           "SPDX": {
@@ -143,7 +143,7 @@
               "spdxId": "Crossword",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://crossword",
+                      "scancode:crossword",
                       "Crossword License",
                       "Crossword"
                   ],

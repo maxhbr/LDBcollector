@@ -5,7 +5,7 @@ JasPer License (JasPer-2.0)
 
 **Other Names:**
 
--   `scancode://jasper-2.0`
+-   `scancode:jasper-2.0`
 
 -   `JasPer 2.0`
 
@@ -97,7 +97,7 @@ Raw Data
         "__impliedNames": [
             "JasPer-2.0",
             "JasPer License",
-            "scancode://jasper-2.0",
+            "scancode:jasper-2.0",
             "JasPer 2.0"
         ],
         "__impliedId": "JasPer-2.0",
@@ -109,7 +109,7 @@ Raw Data
                         "JasPer-2.0",
                         "JasPer-2.0",
                         "JasPer License",
-                        "scancode://jasper-2.0",
+                        "scancode:jasper-2.0",
                         "JasPer 2.0"
                     ],
                     "__impliedId": "JasPer-2.0"
@@ -118,7 +118,7 @@ Raw Data
                 "otherNames": [
                     "JasPer-2.0",
                     "JasPer License",
-                    "scancode://jasper-2.0",
+                    "scancode:jasper-2.0",
                     "JasPer 2.0"
                 ]
             },
@@ -194,7 +194,7 @@ Raw Data
                 "spdxId": "JasPer-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://jasper-2.0",
+                        "scancode:jasper-2.0",
                         "JasPer 2.0",
                         "JasPer-2.0"
                     ],

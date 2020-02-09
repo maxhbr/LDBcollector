@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://cube=
+- =scancode:cube=
 
 ** Comments on (easy) usability
 
@@ -68,7 +68,7 @@
       "__impliedNames": [
           "Cube",
           "Cube License",
-          "scancode://cube"
+          "scancode:cube"
       ],
       "__impliedId": "Cube",
       "__isFsfFree": true,
@@ -79,7 +79,7 @@
                       "Cube",
                       "Cube",
                       "Cube License",
-                      "scancode://cube"
+                      "scancode:cube"
                   ],
                   "__impliedId": "Cube"
               },
@@ -87,7 +87,7 @@
               "otherNames": [
                   "Cube",
                   "Cube License",
-                  "scancode://cube"
+                  "scancode:cube"
               ]
           },
           "SPDX": {
@@ -160,7 +160,7 @@
               "spdxId": "Cube",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://cube",
+                      "scancode:cube",
                       "Cube License",
                       "Cube"
                   ],

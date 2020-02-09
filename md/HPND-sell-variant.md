@@ -5,11 +5,11 @@ Historical Permission Notice and Disclaimer - sell variant (HPND-sell-variant)
 
 **Other Names:**
 
--   `scancode://x11-keith-packard`
+-   `scancode:x11-keith-packard`
 
 -   `X11-Style (Keith Packard)`
 
--   `scancode://historical-sell-variant`
+-   `scancode:historical-sell-variant`
 
 Comments on (easy) usability
 ----------------------------
@@ -53,9 +53,9 @@ Raw Data
         "__impliedNames": [
             "HPND-sell-variant",
             "Historical Permission Notice and Disclaimer - sell variant",
-            "scancode://x11-keith-packard",
+            "scancode:x11-keith-packard",
             "X11-Style (Keith Packard)",
-            "scancode://historical-sell-variant"
+            "scancode:historical-sell-variant"
         ],
         "__impliedId": "HPND-sell-variant",
         "facts": {
@@ -65,7 +65,7 @@ Raw Data
                         "HPND-sell-variant",
                         "HPND-sell-variant",
                         "Historical Permission Notice and Disclaimer - sell variant",
-                        "scancode://x11-keith-packard",
+                        "scancode:x11-keith-packard",
                         "X11-Style (Keith Packard)"
                     ],
                     "__impliedId": "HPND-sell-variant"
@@ -74,7 +74,7 @@ Raw Data
                 "otherNames": [
                     "HPND-sell-variant",
                     "Historical Permission Notice and Disclaimer - sell variant",
-                    "scancode://x11-keith-packard",
+                    "scancode:x11-keith-packard",
                     "X11-Style (Keith Packard)"
                 ]
             },
@@ -125,7 +125,7 @@ Raw Data
                 "spdxId": "HPND-sell-variant",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://x11-keith-packard",
+                        "scancode:x11-keith-packard",
                         "X11-Style (Keith Packard)",
                         "HPND-sell-variant"
                     ],

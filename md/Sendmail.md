@@ -5,7 +5,7 @@ Sendmail License (Sendmail)
 
 **Other Names:**
 
--   `scancode://sendmail`
+-   `scancode:sendmail`
 
 Comments on (easy) usability
 ----------------------------
@@ -128,7 +128,7 @@ Raw Data
         "__impliedNames": [
             "Sendmail",
             "Sendmail License",
-            "scancode://sendmail"
+            "scancode:sendmail"
         ],
         "__impliedId": "Sendmail",
         "__isFsfFree": true,
@@ -139,7 +139,7 @@ Raw Data
                         "Sendmail",
                         "Sendmail",
                         "Sendmail License",
-                        "scancode://sendmail"
+                        "scancode:sendmail"
                     ],
                     "__impliedId": "Sendmail"
                 },
@@ -147,7 +147,7 @@ Raw Data
                 "otherNames": [
                     "Sendmail",
                     "Sendmail License",
-                    "scancode://sendmail"
+                    "scancode:sendmail"
                 ]
             },
             "SPDX": {
@@ -227,7 +227,7 @@ Raw Data
                 "spdxId": "Sendmail",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://sendmail",
+                        "scancode:sendmail",
                         "Sendmail License",
                         "Sendmail"
                     ],

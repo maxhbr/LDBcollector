@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://abstyles+`
+* `+scancode:abstyles+`
 
 === Comments on (easy) usability
 
@@ -48,7 +48,7 @@ permission notice identical to this one.
     "__impliedNames": [
         "Abstyles",
         "Abstyles License",
-        "scancode://abstyles"
+        "scancode:abstyles"
     ],
     "__impliedId": "Abstyles",
     "__isFsfFree": true,
@@ -59,7 +59,7 @@ permission notice identical to this one.
                     "Abstyles",
                     "Abstyles",
                     "Abstyles License",
-                    "scancode://abstyles"
+                    "scancode:abstyles"
                 ],
                 "__impliedId": "Abstyles"
             },
@@ -67,7 +67,7 @@ permission notice identical to this one.
             "otherNames": [
                 "Abstyles",
                 "Abstyles License",
-                "scancode://abstyles"
+                "scancode:abstyles"
             ]
         },
         "SPDX": {
@@ -140,7 +140,7 @@ permission notice identical to this one.
             "spdxId": "Abstyles",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://abstyles",
+                    "scancode:abstyles",
                     "Abstyles License",
                     "Abstyles"
                 ],

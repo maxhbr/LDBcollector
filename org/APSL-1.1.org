@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://apsl-1.1=
+- =scancode:apsl-1.1=
 
 - =APSL 1.1=
 
@@ -436,7 +436,7 @@
       "__impliedNames": [
           "APSL-1.1",
           "Apple Public Source License 1.1",
-          "scancode://apsl-1.1",
+          "scancode:apsl-1.1",
           "APSL 1.1"
       ],
       "__impliedId": "APSL-1.1",
@@ -450,7 +450,7 @@
                       "APSL-1.1",
                       "APSL-1.1",
                       "Apple Public Source License 1.1",
-                      "scancode://apsl-1.1",
+                      "scancode:apsl-1.1",
                       "APSL 1.1"
                   ],
                   "__impliedId": "APSL-1.1"
@@ -459,7 +459,7 @@
               "otherNames": [
                   "APSL-1.1",
                   "Apple Public Source License 1.1",
-                  "scancode://apsl-1.1",
+                  "scancode:apsl-1.1",
                   "APSL 1.1"
               ]
           },
@@ -542,7 +542,7 @@
               "spdxId": "APSL-1.1",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://apsl-1.1",
+                      "scancode:apsl-1.1",
                       "APSL 1.1",
                       "APSL-1.1"
                   ],

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://tapr-ohl-1.0+`
+* `+scancode:tapr-ohl-1.0+`
 
 === Comments on (easy) usability
 
@@ -170,7 +170,7 @@ TAPR may publish updated versions of the OHL which retain the same general provi
     "__impliedNames": [
         "TAPR-OHL-1.0",
         "TAPR Open Hardware License v1.0",
-        "scancode://tapr-ohl-1.0"
+        "scancode:tapr-ohl-1.0"
     ],
     "__impliedId": "TAPR-OHL-1.0",
     "facts": {
@@ -180,7 +180,7 @@ TAPR may publish updated versions of the OHL which retain the same general provi
                     "TAPR-OHL-1.0",
                     "TAPR-OHL-1.0",
                     "TAPR Open Hardware License v1.0",
-                    "scancode://tapr-ohl-1.0"
+                    "scancode:tapr-ohl-1.0"
                 ],
                 "__impliedId": "TAPR-OHL-1.0"
             },
@@ -188,7 +188,7 @@ TAPR may publish updated versions of the OHL which retain the same general provi
             "otherNames": [
                 "TAPR-OHL-1.0",
                 "TAPR Open Hardware License v1.0",
-                "scancode://tapr-ohl-1.0"
+                "scancode:tapr-ohl-1.0"
             ]
         },
         "SPDX": {
@@ -237,7 +237,7 @@ TAPR may publish updated versions of the OHL which retain the same general provi
             "spdxId": "TAPR-OHL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://tapr-ohl-1.0",
+                    "scancode:tapr-ohl-1.0",
                     "TAPR Open Hardware License v1.0",
                     "TAPR-OHL-1.0"
                 ],

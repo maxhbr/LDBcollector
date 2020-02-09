@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://copyleft-next-0.3.0+`
+* `+scancode:copyleft-next-0.3.0+`
 
 === Comments on (easy) usability
 
@@ -255,7 +255,7 @@ Release date: 2013-05-16
     "__impliedNames": [
         "copyleft-next-0.3.0",
         "copyleft-next 0.3.0",
-        "scancode://copyleft-next-0.3.0"
+        "scancode:copyleft-next-0.3.0"
     ],
     "__impliedId": "copyleft-next-0.3.0",
     "facts": {
@@ -265,7 +265,7 @@ Release date: 2013-05-16
                     "copyleft-next-0.3.0",
                     "copyleft-next-0.3.0",
                     "copyleft-next 0.3.0",
-                    "scancode://copyleft-next-0.3.0"
+                    "scancode:copyleft-next-0.3.0"
                 ],
                 "__impliedId": "copyleft-next-0.3.0"
             },
@@ -273,7 +273,7 @@ Release date: 2013-05-16
             "otherNames": [
                 "copyleft-next-0.3.0",
                 "copyleft-next 0.3.0",
-                "scancode://copyleft-next-0.3.0"
+                "scancode:copyleft-next-0.3.0"
             ]
         },
         "SPDX": {
@@ -320,7 +320,7 @@ Release date: 2013-05-16
             "spdxId": "copyleft-next-0.3.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://copyleft-next-0.3.0",
+                    "scancode:copyleft-next-0.3.0",
                     "copyleft-next 0.3.0",
                     "copyleft-next-0.3.0"
                 ],

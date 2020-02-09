@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode://epl-1.0+`
+* `+scancode:epl-1.0+`
 * `+EPL 1.0+`
 * `+Eclipse Public License, Version 1.0+`
 
@@ -230,7 +230,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
     "__impliedNames": [
         "EPL-1.0",
         "Eclipse Public License 1.0",
-        "scancode://epl-1.0",
+        "scancode:epl-1.0",
         "EPL 1.0",
         "epl-1.0",
         "Eclipse Public License, Version 1.0"
@@ -275,7 +275,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
                     "EPL-1.0",
                     "EPL-1.0",
                     "Eclipse Public License 1.0",
-                    "scancode://epl-1.0",
+                    "scancode:epl-1.0",
                     "EPL 1.0",
                     "epl-1.0",
                     "Eclipse Public License, Version 1.0"
@@ -286,7 +286,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "otherNames": [
                 "EPL-1.0",
                 "Eclipse Public License 1.0",
-                "scancode://epl-1.0",
+                "scancode:epl-1.0",
                 "EPL 1.0",
                 "epl-1.0",
                 "Eclipse Public License, Version 1.0"
@@ -397,7 +397,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "spdxId": "EPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://epl-1.0",
+                    "scancode:epl-1.0",
                     "EPL 1.0",
                     "EPL-1.0"
                 ],

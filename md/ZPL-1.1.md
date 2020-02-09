@@ -5,7 +5,7 @@ Zope Public License 1.1 (ZPL-1.1)
 
 **Other Names:**
 
--   `scancode://zpl-1.1`
+-   `scancode:zpl-1.1`
 
 -   `ZPL 1.1`
 
@@ -105,7 +105,7 @@ Raw Data
         "__impliedNames": [
             "ZPL-1.1",
             "Zope Public License 1.1",
-            "scancode://zpl-1.1",
+            "scancode:zpl-1.1",
             "ZPL 1.1"
         ],
         "__impliedId": "ZPL-1.1",
@@ -116,7 +116,7 @@ Raw Data
                         "ZPL-1.1",
                         "ZPL-1.1",
                         "Zope Public License 1.1",
-                        "scancode://zpl-1.1",
+                        "scancode:zpl-1.1",
                         "ZPL 1.1"
                     ],
                     "__impliedId": "ZPL-1.1"
@@ -125,7 +125,7 @@ Raw Data
                 "otherNames": [
                     "ZPL-1.1",
                     "Zope Public License 1.1",
-                    "scancode://zpl-1.1",
+                    "scancode:zpl-1.1",
                     "ZPL 1.1"
                 ]
             },
@@ -176,7 +176,7 @@ Raw Data
                 "spdxId": "ZPL-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://zpl-1.1",
+                        "scancode:zpl-1.1",
                         "ZPL 1.1",
                         "ZPL-1.1"
                     ],

@@ -5,7 +5,7 @@ BSD 3-Clause No Nuclear License (BSD-3-Clause-No-Nuclear-License)
 
 **Other Names:**
 
--   `scancode://sun-bsd-no-nuclear`
+-   `scancode:sun-bsd-no-nuclear`
 
 -   `Sun BSD-Style with Nuclear Restrictions`
 
@@ -66,7 +66,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-No-Nuclear-License",
             "BSD 3-Clause No Nuclear License",
-            "scancode://sun-bsd-no-nuclear",
+            "scancode:sun-bsd-no-nuclear",
             "Sun BSD-Style with Nuclear Restrictions"
         ],
         "__impliedId": "BSD-3-Clause-No-Nuclear-License",
@@ -77,7 +77,7 @@ Raw Data
                         "BSD-3-Clause-No-Nuclear-License",
                         "BSD-3-Clause-No-Nuclear-License",
                         "BSD 3-Clause No Nuclear License",
-                        "scancode://sun-bsd-no-nuclear",
+                        "scancode:sun-bsd-no-nuclear",
                         "Sun BSD-Style with Nuclear Restrictions"
                     ],
                     "__impliedId": "BSD-3-Clause-No-Nuclear-License"
@@ -86,7 +86,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause-No-Nuclear-License",
                     "BSD 3-Clause No Nuclear License",
-                    "scancode://sun-bsd-no-nuclear",
+                    "scancode:sun-bsd-no-nuclear",
                     "Sun BSD-Style with Nuclear Restrictions"
                 ]
             },
@@ -137,7 +137,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause-No-Nuclear-License",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://sun-bsd-no-nuclear",
+                        "scancode:sun-bsd-no-nuclear",
                         "Sun BSD-Style with Nuclear Restrictions",
                         "BSD-3-Clause-No-Nuclear-License"
                     ],

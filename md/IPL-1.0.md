@@ -5,7 +5,7 @@ IBM Public License v1.0 (IPL-1.0)
 
 **Other Names:**
 
--   `scancode://ibmpl-1.0`
+-   `scancode:ibmpl-1.0`
 
 -   `IPL 1.0`
 
@@ -120,7 +120,7 @@ Raw Data
         "__impliedNames": [
             "IPL-1.0",
             "IBM Public License v1.0",
-            "scancode://ibmpl-1.0",
+            "scancode:ibmpl-1.0",
             "IPL 1.0",
             "IBM Public License, Version 1.0",
             "License :: OSI Approved :: IBM Public License",
@@ -165,7 +165,7 @@ Raw Data
                         "IPL-1.0",
                         "IPL-1.0",
                         "IBM Public License v1.0",
-                        "scancode://ibmpl-1.0",
+                        "scancode:ibmpl-1.0",
                         "IPL 1.0",
                         "IBM Public License, Version 1.0",
                         "License :: OSI Approved :: IBM Public License",
@@ -177,7 +177,7 @@ Raw Data
                 "otherNames": [
                     "IPL-1.0",
                     "IBM Public License v1.0",
-                    "scancode://ibmpl-1.0",
+                    "scancode:ibmpl-1.0",
                     "IPL 1.0",
                     "IBM Public License, Version 1.0",
                     "License :: OSI Approved :: IBM Public License",
@@ -240,7 +240,7 @@ Raw Data
                 "spdxId": "IPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://ibmpl-1.0",
+                        "scancode:ibmpl-1.0",
                         "IPL 1.0",
                         "IPL-1.0"
                     ],

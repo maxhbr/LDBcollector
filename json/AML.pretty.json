@@ -2,7 +2,7 @@
     "__impliedNames": [
         "AML",
         "Apple MIT License",
-        "scancode://aml"
+        "scancode:aml"
     ],
     "__impliedId": "AML",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "AML",
                     "AML",
                     "Apple MIT License",
-                    "scancode://aml"
+                    "scancode:aml"
                 ],
                 "__impliedId": "AML"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "AML",
                 "Apple MIT License",
-                "scancode://aml"
+                "scancode:aml"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "AML",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://aml",
+                    "scancode:aml",
                     "Apple MIT License",
                     "AML"
                 ],

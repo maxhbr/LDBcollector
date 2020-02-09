@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://xskat=
+- =scancode:xskat=
 
 ** Comments on (easy) usability
 
@@ -50,7 +50,7 @@
       "__impliedNames": [
           "XSkat",
           "XSkat License",
-          "scancode://xskat"
+          "scancode:xskat"
       ],
       "__impliedId": "XSkat",
       "__isFsfFree": true,
@@ -61,7 +61,7 @@
                       "XSkat",
                       "XSkat",
                       "XSkat License",
-                      "scancode://xskat"
+                      "scancode:xskat"
                   ],
                   "__impliedId": "XSkat"
               },
@@ -69,7 +69,7 @@
               "otherNames": [
                   "XSkat",
                   "XSkat License",
-                  "scancode://xskat"
+                  "scancode:xskat"
               ]
           },
           "SPDX": {
@@ -142,7 +142,7 @@
               "spdxId": "XSkat",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://xskat",
+                      "scancode:xskat",
                       "XSkat License",
                       "XSkat"
                   ],

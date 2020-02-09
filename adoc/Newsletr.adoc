@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://newsletr+`
+* `+scancode:newsletr+`
 
 === Comments on (easy) usability
 
@@ -46,7 +46,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
     "__impliedNames": [
         "Newsletr",
         "Newsletr License",
-        "scancode://newsletr"
+        "scancode:newsletr"
     ],
     "__impliedId": "Newsletr",
     "__isFsfFree": true,
@@ -57,7 +57,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
                     "Newsletr",
                     "Newsletr",
                     "Newsletr License",
-                    "scancode://newsletr"
+                    "scancode:newsletr"
                 ],
                 "__impliedId": "Newsletr"
             },
@@ -65,7 +65,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
             "otherNames": [
                 "Newsletr",
                 "Newsletr License",
-                "scancode://newsletr"
+                "scancode:newsletr"
             ]
         },
         "SPDX": {
@@ -138,7 +138,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
             "spdxId": "Newsletr",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://newsletr",
+                    "scancode:newsletr",
                     "Newsletr License",
                     "Newsletr"
                 ],

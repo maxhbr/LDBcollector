@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://json+`
+* `+scancode:json+`
 
 === Comments on (easy) usability
 
@@ -74,7 +74,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "JSON",
         "JSON License",
-        "scancode://json"
+        "scancode:json"
     ],
     "__impliedId": "JSON",
     "__impliedAmbiguousNames": [
@@ -87,7 +87,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "JSON",
                     "JSON",
                     "JSON License",
-                    "scancode://json"
+                    "scancode:json"
                 ],
                 "__impliedId": "JSON"
             },
@@ -95,7 +95,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "otherNames": [
                 "JSON",
                 "JSON License",
-                "scancode://json"
+                "scancode:json"
             ]
         },
         "SPDX": {
@@ -167,7 +167,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "spdxId": "JSON",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://json",
+                    "scancode:json",
                     "JSON License",
                     "JSON"
                 ],

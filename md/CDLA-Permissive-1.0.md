@@ -5,7 +5,7 @@ Community Data License Agreement Permissive 1.0 (CDLA-Permissive-1.0)
 
 **Other Names:**
 
--   `scancode://cdla-permissive-1.0`
+-   `scancode:cdla-permissive-1.0`
 
 -   `CDLA Permissive 1.0`
 
@@ -119,7 +119,7 @@ Raw Data
         "__impliedNames": [
             "CDLA-Permissive-1.0",
             "Community Data License Agreement Permissive 1.0",
-            "scancode://cdla-permissive-1.0",
+            "scancode:cdla-permissive-1.0",
             "CDLA Permissive 1.0"
         ],
         "__impliedId": "CDLA-Permissive-1.0",
@@ -130,7 +130,7 @@ Raw Data
                         "CDLA-Permissive-1.0",
                         "CDLA-Permissive-1.0",
                         "Community Data License Agreement Permissive 1.0",
-                        "scancode://cdla-permissive-1.0",
+                        "scancode:cdla-permissive-1.0",
                         "CDLA Permissive 1.0"
                     ],
                     "__impliedId": "CDLA-Permissive-1.0"
@@ -139,7 +139,7 @@ Raw Data
                 "otherNames": [
                     "CDLA-Permissive-1.0",
                     "Community Data License Agreement Permissive 1.0",
-                    "scancode://cdla-permissive-1.0",
+                    "scancode:cdla-permissive-1.0",
                     "CDLA Permissive 1.0"
                 ]
             },
@@ -189,7 +189,7 @@ Raw Data
                 "spdxId": "CDLA-Permissive-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://cdla-permissive-1.0",
+                        "scancode:cdla-permissive-1.0",
                         "CDLA Permissive 1.0",
                         "CDLA-Permissive-1.0"
                     ],

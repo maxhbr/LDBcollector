@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://openldap-2.1+`
+* `+scancode:openldap-2.1+`
 * `+OpenLDAP Public License 2.1+`
 
 === Comments on (easy) usability
@@ -89,7 +89,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "OLDAP-2.1",
         "Open LDAP Public License v2.1",
-        "scancode://openldap-2.1",
+        "scancode:openldap-2.1",
         "OpenLDAP Public License 2.1"
     ],
     "__impliedId": "OLDAP-2.1",
@@ -100,7 +100,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                     "OLDAP-2.1",
                     "OLDAP-2.1",
                     "Open LDAP Public License v2.1",
-                    "scancode://openldap-2.1",
+                    "scancode:openldap-2.1",
                     "OpenLDAP Public License 2.1"
                 ],
                 "__impliedId": "OLDAP-2.1"
@@ -109,7 +109,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "OLDAP-2.1",
                 "Open LDAP Public License v2.1",
-                "scancode://openldap-2.1",
+                "scancode:openldap-2.1",
                 "OpenLDAP Public License 2.1"
             ]
         },
@@ -157,7 +157,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "OLDAP-2.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://openldap-2.1",
+                    "scancode:openldap-2.1",
                     "OpenLDAP Public License 2.1",
                     "OLDAP-2.1"
                 ],

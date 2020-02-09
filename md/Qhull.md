@@ -5,7 +5,7 @@ Qhull License (Qhull)
 
 **Other Names:**
 
--   `scancode://qhull`
+-   `scancode:qhull`
 
 Comments on (easy) usability
 ----------------------------
@@ -74,7 +74,7 @@ Raw Data
         "__impliedNames": [
             "Qhull",
             "Qhull License",
-            "scancode://qhull"
+            "scancode:qhull"
         ],
         "__impliedId": "Qhull",
         "__isFsfFree": true,
@@ -85,7 +85,7 @@ Raw Data
                         "Qhull",
                         "Qhull",
                         "Qhull License",
-                        "scancode://qhull"
+                        "scancode:qhull"
                     ],
                     "__impliedId": "Qhull"
                 },
@@ -93,7 +93,7 @@ Raw Data
                 "otherNames": [
                     "Qhull",
                     "Qhull License",
-                    "scancode://qhull"
+                    "scancode:qhull"
                 ]
             },
             "SPDX": {
@@ -178,7 +178,7 @@ Raw Data
                 "spdxId": "Qhull",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://qhull",
+                        "scancode:qhull",
                         "Qhull License",
                         "Qhull"
                     ],

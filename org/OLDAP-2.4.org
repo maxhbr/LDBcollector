@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://openldap-2.4=
+- =scancode:openldap-2.4=
 
 - =OpenLDAP Public License 2.4=
 
@@ -88,7 +88,7 @@
       "__impliedNames": [
           "OLDAP-2.4",
           "Open LDAP Public License v2.4",
-          "scancode://openldap-2.4",
+          "scancode:openldap-2.4",
           "OpenLDAP Public License 2.4"
       ],
       "__impliedId": "OLDAP-2.4",
@@ -99,7 +99,7 @@
                       "OLDAP-2.4",
                       "OLDAP-2.4",
                       "Open LDAP Public License v2.4",
-                      "scancode://openldap-2.4",
+                      "scancode:openldap-2.4",
                       "OpenLDAP Public License 2.4"
                   ],
                   "__impliedId": "OLDAP-2.4"
@@ -108,7 +108,7 @@
               "otherNames": [
                   "OLDAP-2.4",
                   "Open LDAP Public License v2.4",
-                  "scancode://openldap-2.4",
+                  "scancode:openldap-2.4",
                   "OpenLDAP Public License 2.4"
               ]
           },
@@ -156,7 +156,7 @@
               "spdxId": "OLDAP-2.4",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://openldap-2.4",
+                      "scancode:openldap-2.4",
                       "OpenLDAP Public License 2.4",
                       "OLDAP-2.4"
                   ],

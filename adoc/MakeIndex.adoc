@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://makeindex+`
+* `+scancode:makeindex+`
 * `+MakeIndex Distribution Notice+`
 
 === Comments on (easy) usability
@@ -65,7 +65,7 @@ serves any particular purpose.
     "__impliedNames": [
         "MakeIndex",
         "MakeIndex License",
-        "scancode://makeindex",
+        "scancode:makeindex",
         "MakeIndex Distribution Notice"
     ],
     "__impliedId": "MakeIndex",
@@ -77,7 +77,7 @@ serves any particular purpose.
                     "MakeIndex",
                     "MakeIndex",
                     "MakeIndex License",
-                    "scancode://makeindex",
+                    "scancode:makeindex",
                     "MakeIndex Distribution Notice"
                 ],
                 "__impliedId": "MakeIndex"
@@ -86,7 +86,7 @@ serves any particular purpose.
             "otherNames": [
                 "MakeIndex",
                 "MakeIndex License",
-                "scancode://makeindex",
+                "scancode:makeindex",
                 "MakeIndex Distribution Notice"
             ]
         },
@@ -160,7 +160,7 @@ serves any particular purpose.
             "spdxId": "MakeIndex",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://makeindex",
+                    "scancode:makeindex",
                     "MakeIndex Distribution Notice",
                     "MakeIndex"
                 ],

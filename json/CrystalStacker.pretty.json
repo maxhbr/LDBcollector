@@ -2,7 +2,7 @@
     "__impliedNames": [
         "CrystalStacker",
         "CrystalStacker License",
-        "scancode://crystal-stacker",
+        "scancode:crystal-stacker",
         "Crystal Stacker License"
     ],
     "__impliedId": "CrystalStacker",
@@ -14,7 +14,7 @@
                     "CrystalStacker",
                     "CrystalStacker",
                     "CrystalStacker License",
-                    "scancode://crystal-stacker",
+                    "scancode:crystal-stacker",
                     "Crystal Stacker License"
                 ],
                 "__impliedId": "CrystalStacker"
@@ -23,7 +23,7 @@
             "otherNames": [
                 "CrystalStacker",
                 "CrystalStacker License",
-                "scancode://crystal-stacker",
+                "scancode:crystal-stacker",
                 "Crystal Stacker License"
             ]
         },
@@ -97,7 +97,7 @@
             "spdxId": "CrystalStacker",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://crystal-stacker",
+                    "scancode:crystal-stacker",
                     "Crystal Stacker License",
                     "CrystalStacker"
                 ],

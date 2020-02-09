@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://spl-1.0+`
+* `+scancode:spl-1.0+`
 * `+SPL 1.0+`
 * `+Sun Public License, Version 1.0+`
 * `+License :: OSI Approved :: Sun Public License+`
@@ -558,7 +558,7 @@ von Software unter verschiedenen Lizenztypen erleichtert werden.
     "__impliedNames": [
         "SPL-1.0",
         "Sun Public License v1.0",
-        "scancode://spl-1.0",
+        "scancode:spl-1.0",
         "SPL 1.0",
         "Sun Public License, Version 1.0",
         "License :: OSI Approved :: Sun Public License",
@@ -599,7 +599,7 @@ von Software unter verschiedenen Lizenztypen erleichtert werden.
                     "SPL-1.0",
                     "SPL-1.0",
                     "Sun Public License v1.0",
-                    "scancode://spl-1.0",
+                    "scancode:spl-1.0",
                     "SPL 1.0",
                     "Sun Public License, Version 1.0",
                     "License :: OSI Approved :: Sun Public License",
@@ -611,7 +611,7 @@ von Software unter verschiedenen Lizenztypen erleichtert werden.
             "otherNames": [
                 "SPL-1.0",
                 "Sun Public License v1.0",
-                "scancode://spl-1.0",
+                "scancode:spl-1.0",
                 "SPL 1.0",
                 "Sun Public License, Version 1.0",
                 "License :: OSI Approved :: Sun Public License",
@@ -675,7 +675,7 @@ von Software unter verschiedenen Lizenztypen erleichtert werden.
             "spdxId": "SPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://spl-1.0",
+                    "scancode:spl-1.0",
                     "SPL 1.0",
                     "SPL-1.0"
                 ],

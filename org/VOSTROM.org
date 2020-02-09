@@ -9,7 +9,7 @@
 
 *Other Names:*
 
-- =scancode://vostrom=
+- =scancode:vostrom=
 
 - =VOSTROM Public License=
 
@@ -109,7 +109,7 @@
       "__impliedNames": [
           "VOSTROM",
           "VOSTROM Public License for Open Source",
-          "scancode://vostrom",
+          "scancode:vostrom",
           "VOSTROM Public License"
       ],
       "__impliedId": "VOSTROM",
@@ -121,7 +121,7 @@
                       "VOSTROM",
                       "VOSTROM",
                       "VOSTROM Public License for Open Source",
-                      "scancode://vostrom",
+                      "scancode:vostrom",
                       "VOSTROM Public License"
                   ],
                   "__impliedId": "VOSTROM"
@@ -130,7 +130,7 @@
               "otherNames": [
                   "VOSTROM",
                   "VOSTROM Public License for Open Source",
-                  "scancode://vostrom",
+                  "scancode:vostrom",
                   "VOSTROM Public License"
               ]
           },
@@ -206,7 +206,7 @@
               "spdxId": "VOSTROM",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://vostrom",
+                      "scancode:vostrom",
                       "VOSTROM Public License",
                       "VOSTROM"
                   ],

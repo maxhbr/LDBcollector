@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode://agpl-3.0-plus+`
+* `+scancode:agpl-3.0-plus+`
 * `+AGPL 3.0 or later+`
 * `+GNU Affero General Public License 3.0+`
 * `+AGPL-3.0++`
@@ -203,7 +203,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     "__impliedNames": [
         "AGPL-3.0-or-later",
         "GNU Affero General Public License v3.0 or later",
-        "scancode://agpl-3.0-plus",
+        "scancode:agpl-3.0-plus",
         "AGPL 3.0 or later",
         "GNU Affero General Public License 3.0",
         "AGPL-3.0+",
@@ -224,7 +224,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     "AGPL-3.0-or-later",
                     "AGPL-3.0-or-later",
                     "GNU Affero General Public License v3.0 or later",
-                    "scancode://agpl-3.0-plus",
+                    "scancode:agpl-3.0-plus",
                     "AGPL 3.0 or later",
                     "GNU Affero General Public License 3.0",
                     "AGPL-3.0+",
@@ -240,7 +240,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             "otherNames": [
                 "AGPL-3.0-or-later",
                 "GNU Affero General Public License v3.0 or later",
-                "scancode://agpl-3.0-plus",
+                "scancode:agpl-3.0-plus",
                 "AGPL 3.0 or later",
                 "GNU Affero General Public License 3.0",
                 "AGPL-3.0+",
@@ -359,7 +359,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             "spdxId": "AGPL-3.0-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://agpl-3.0-plus",
+                    "scancode:agpl-3.0-plus",
                     "AGPL 3.0 or later",
                     "AGPL-3.0-or-later"
                 ],

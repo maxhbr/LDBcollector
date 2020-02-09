@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-- =scancode://zlib=
+- =scancode:zlib=
 
 - =The zlib/libpng License (Zlib)=
 
@@ -141,7 +141,7 @@
       "__impliedNames": [
           "Zlib",
           "zlib License",
-          "scancode://zlib",
+          "scancode:zlib",
           "ZLIB License",
           "zlib",
           "The zlib/libpng License (Zlib)",
@@ -191,7 +191,7 @@
                       "Zlib",
                       "Zlib",
                       "zlib License",
-                      "scancode://zlib",
+                      "scancode:zlib",
                       "ZLIB License",
                       "zlib",
                       "The zlib/libpng License (Zlib)",
@@ -205,7 +205,7 @@
               "otherNames": [
                   "Zlib",
                   "zlib License",
-                  "scancode://zlib",
+                  "scancode:zlib",
                   "ZLIB License",
                   "zlib",
                   "The zlib/libpng License (Zlib)",
@@ -312,7 +312,7 @@
               "spdxId": "Zlib",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://zlib",
+                      "scancode:zlib",
                       "ZLIB License",
                       "Zlib"
                   ],

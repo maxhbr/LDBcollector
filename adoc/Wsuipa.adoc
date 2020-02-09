@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://wsuipa+`
+* `+scancode:wsuipa+`
 
 === Comments on (easy) usability
 
@@ -50,7 +50,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
     "__impliedNames": [
         "Wsuipa",
         "Wsuipa License",
-        "scancode://wsuipa"
+        "scancode:wsuipa"
     ],
     "__impliedId": "Wsuipa",
     "__isFsfFree": true,
@@ -61,7 +61,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
                     "Wsuipa",
                     "Wsuipa",
                     "Wsuipa License",
-                    "scancode://wsuipa"
+                    "scancode:wsuipa"
                 ],
                 "__impliedId": "Wsuipa"
             },
@@ -69,7 +69,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
             "otherNames": [
                 "Wsuipa",
                 "Wsuipa License",
-                "scancode://wsuipa"
+                "scancode:wsuipa"
             ]
         },
         "SPDX": {
@@ -142,7 +142,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
             "spdxId": "Wsuipa",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://wsuipa",
+                    "scancode:wsuipa",
                     "Wsuipa License",
                     "Wsuipa"
                 ],

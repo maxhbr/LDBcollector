@@ -5,7 +5,7 @@ Educational Community License v2.0 (ECL-2.0)
 
 **Other Names:**
 
--   `scancode://ecl-2.0`
+-   `scancode:ecl-2.0`
 
 -   `ECL 2.0`
 
@@ -273,7 +273,7 @@ Raw Data
         "__impliedNames": [
             "ECL-2.0",
             "Educational Community License v2.0",
-            "scancode://ecl-2.0",
+            "scancode:ecl-2.0",
             "ECL 2.0",
             "ecl-2.0",
             "Educational Community License, Version 2.0",
@@ -315,7 +315,7 @@ Raw Data
                         "ECL-2.0",
                         "ECL-2.0",
                         "Educational Community License v2.0",
-                        "scancode://ecl-2.0",
+                        "scancode:ecl-2.0",
                         "ECL 2.0",
                         "ecl-2.0",
                         "Educational Community License, Version 2.0",
@@ -327,7 +327,7 @@ Raw Data
                 "otherNames": [
                     "ECL-2.0",
                     "Educational Community License v2.0",
-                    "scancode://ecl-2.0",
+                    "scancode:ecl-2.0",
                     "ECL 2.0",
                     "ecl-2.0",
                     "Educational Community License, Version 2.0",
@@ -416,7 +416,7 @@ Raw Data
                 "spdxId": "ECL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://ecl-2.0",
+                        "scancode:ecl-2.0",
                         "ECL 2.0",
                         "ECL-2.0"
                     ],

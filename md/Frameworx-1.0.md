@@ -5,7 +5,7 @@ Frameworx Open License 1.0 (Frameworx-1.0)
 
 **Other Names:**
 
--   `scancode://frameworx-1.0`
+-   `scancode:frameworx-1.0`
 
 -   `Frameworx 1.0`
 
@@ -107,7 +107,7 @@ Raw Data
         "__impliedNames": [
             "Frameworx-1.0",
             "Frameworx Open License 1.0",
-            "scancode://frameworx-1.0",
+            "scancode:frameworx-1.0",
             "Frameworx 1.0",
             "Frameworx License, Version 1.0",
             "Frameworx License 1.0"
@@ -147,7 +147,7 @@ Raw Data
                         "Frameworx-1.0",
                         "Frameworx-1.0",
                         "Frameworx Open License 1.0",
-                        "scancode://frameworx-1.0",
+                        "scancode:frameworx-1.0",
                         "Frameworx 1.0",
                         "Frameworx License, Version 1.0",
                         "Frameworx License 1.0"
@@ -158,7 +158,7 @@ Raw Data
                 "otherNames": [
                     "Frameworx-1.0",
                     "Frameworx Open License 1.0",
-                    "scancode://frameworx-1.0",
+                    "scancode:frameworx-1.0",
                     "Frameworx 1.0",
                     "Frameworx License, Version 1.0",
                     "Frameworx License 1.0"
@@ -220,7 +220,7 @@ Raw Data
                 "spdxId": "Frameworx-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://frameworx-1.0",
+                        "scancode:frameworx-1.0",
                         "Frameworx 1.0",
                         "Frameworx-1.0"
                     ],

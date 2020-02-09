@@ -12,7 +12,7 @@
 
 *Other Names:*
 
-* `+scancode://ibmpl-1.0+`
+* `+scancode:ibmpl-1.0+`
 * `+IPL 1.0+`
 * `+IBM Public License, Version 1.0+`
 * `+License :: OSI Approved :: IBM Public License+`
@@ -118,7 +118,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
     "__impliedNames": [
         "IPL-1.0",
         "IBM Public License v1.0",
-        "scancode://ibmpl-1.0",
+        "scancode:ibmpl-1.0",
         "IPL 1.0",
         "IBM Public License, Version 1.0",
         "License :: OSI Approved :: IBM Public License",
@@ -163,7 +163,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
                     "IPL-1.0",
                     "IPL-1.0",
                     "IBM Public License v1.0",
-                    "scancode://ibmpl-1.0",
+                    "scancode:ibmpl-1.0",
                     "IPL 1.0",
                     "IBM Public License, Version 1.0",
                     "License :: OSI Approved :: IBM Public License",
@@ -175,7 +175,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "otherNames": [
                 "IPL-1.0",
                 "IBM Public License v1.0",
-                "scancode://ibmpl-1.0",
+                "scancode:ibmpl-1.0",
                 "IPL 1.0",
                 "IBM Public License, Version 1.0",
                 "License :: OSI Approved :: IBM Public License",
@@ -238,7 +238,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "spdxId": "IPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://ibmpl-1.0",
+                    "scancode:ibmpl-1.0",
                     "IPL 1.0",
                     "IPL-1.0"
                 ],

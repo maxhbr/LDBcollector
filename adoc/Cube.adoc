@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://cube+`
+* `+scancode:cube+`
 
 === Comments on (easy) usability
 
@@ -67,7 +67,7 @@ additional clause specific to Cube:
     "__impliedNames": [
         "Cube",
         "Cube License",
-        "scancode://cube"
+        "scancode:cube"
     ],
     "__impliedId": "Cube",
     "__isFsfFree": true,
@@ -78,7 +78,7 @@ additional clause specific to Cube:
                     "Cube",
                     "Cube",
                     "Cube License",
-                    "scancode://cube"
+                    "scancode:cube"
                 ],
                 "__impliedId": "Cube"
             },
@@ -86,7 +86,7 @@ additional clause specific to Cube:
             "otherNames": [
                 "Cube",
                 "Cube License",
-                "scancode://cube"
+                "scancode:cube"
             ]
         },
         "SPDX": {
@@ -159,7 +159,7 @@ additional clause specific to Cube:
             "spdxId": "Cube",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://cube",
+                    "scancode:cube",
                     "Cube License",
                     "Cube"
                 ],

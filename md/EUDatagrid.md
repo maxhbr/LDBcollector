@@ -5,7 +5,7 @@ EU DataGrid Software License (EUDatagrid)
 
 **Other Names:**
 
--   `scancode://eu-datagrid`
+-   `scancode:eu-datagrid`
 
 Comments on (easy) usability
 ----------------------------
@@ -71,7 +71,7 @@ Raw Data
         "__impliedNames": [
             "EUDatagrid",
             "EU DataGrid Software License",
-            "scancode://eu-datagrid",
+            "scancode:eu-datagrid",
             "EU Datagrid Software License"
         ],
         "__impliedId": "EUDatagrid",
@@ -110,7 +110,7 @@ Raw Data
                         "EUDatagrid",
                         "EUDatagrid",
                         "EU DataGrid Software License",
-                        "scancode://eu-datagrid"
+                        "scancode:eu-datagrid"
                     ],
                     "__impliedId": "EUDatagrid"
                 },
@@ -118,7 +118,7 @@ Raw Data
                 "otherNames": [
                     "EUDatagrid",
                     "EU DataGrid Software License",
-                    "scancode://eu-datagrid"
+                    "scancode:eu-datagrid"
                 ]
             },
             "SPDX": {
@@ -209,7 +209,7 @@ Raw Data
                 "spdxId": "EUDatagrid",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://eu-datagrid",
+                        "scancode:eu-datagrid",
                         "EU DataGrid Software License",
                         "EUDatagrid"
                     ],

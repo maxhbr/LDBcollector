@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://sgi-freeb-2.0+`
+* `+scancode:sgi-freeb-2.0+`
 * `+SGI Free Software License B 2.0+`
 
 === Comments on (easy) usability
@@ -68,7 +68,7 @@ from Silicon Graphics, Inc.
     "__impliedNames": [
         "SGI-B-2.0",
         "SGI Free Software License B v2.0",
-        "scancode://sgi-freeb-2.0",
+        "scancode:sgi-freeb-2.0",
         "SGI Free Software License B 2.0"
     ],
     "__impliedId": "SGI-B-2.0",
@@ -80,7 +80,7 @@ from Silicon Graphics, Inc.
                     "SGI-B-2.0",
                     "SGI-B-2.0",
                     "SGI Free Software License B v2.0",
-                    "scancode://sgi-freeb-2.0",
+                    "scancode:sgi-freeb-2.0",
                     "SGI Free Software License B 2.0"
                 ],
                 "__impliedId": "SGI-B-2.0"
@@ -89,7 +89,7 @@ from Silicon Graphics, Inc.
             "otherNames": [
                 "SGI-B-2.0",
                 "SGI Free Software License B v2.0",
-                "scancode://sgi-freeb-2.0",
+                "scancode:sgi-freeb-2.0",
                 "SGI Free Software License B 2.0"
             ]
         },
@@ -165,7 +165,7 @@ from Silicon Graphics, Inc.
             "spdxId": "SGI-B-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://sgi-freeb-2.0",
+                    "scancode:sgi-freeb-2.0",
                     "SGI Free Software License B 2.0",
                     "SGI-B-2.0"
                 ],

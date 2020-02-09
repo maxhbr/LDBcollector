@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://gfdl-1.1-plus+`
+* `+scancode:gfdl-1.1-plus+`
 * `+GFDL 1.1 or later+`
 
 === Comments on (easy) usability
@@ -36,7 +36,7 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
     "__impliedNames": [
         "GFDL-1.1-or-later",
         "GNU Free Documentation License v1.1 or later",
-        "scancode://gfdl-1.1-plus",
+        "scancode:gfdl-1.1-plus",
         "GFDL 1.1 or later"
     ],
     "__impliedId": "GFDL-1.1-or-later",
@@ -50,7 +50,7 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
                     "GFDL-1.1-or-later",
                     "GFDL-1.1-or-later",
                     "GNU Free Documentation License v1.1 or later",
-                    "scancode://gfdl-1.1-plus",
+                    "scancode:gfdl-1.1-plus",
                     "GFDL 1.1 or later"
                 ],
                 "__impliedId": "GFDL-1.1-or-later"
@@ -59,7 +59,7 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
             "otherNames": [
                 "GFDL-1.1-or-later",
                 "GNU Free Documentation License v1.1 or later",
-                "scancode://gfdl-1.1-plus",
+                "scancode:gfdl-1.1-plus",
                 "GFDL 1.1 or later"
             ]
         },
@@ -110,7 +110,7 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
             "spdxId": "GFDL-1.1-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://gfdl-1.1-plus",
+                    "scancode:gfdl-1.1-plus",
                     "GFDL 1.1 or later",
                     "GFDL-1.1-or-later"
                 ],

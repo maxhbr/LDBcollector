@@ -2,7 +2,7 @@
     "__impliedNames": [
         "GL2PS",
         "GL2PS License",
-        "scancode://gl2ps"
+        "scancode:gl2ps"
     ],
     "__impliedId": "GL2PS",
     "__isFsfFree": true,
@@ -13,7 +13,7 @@
                     "GL2PS",
                     "GL2PS",
                     "GL2PS License",
-                    "scancode://gl2ps"
+                    "scancode:gl2ps"
                 ],
                 "__impliedId": "GL2PS"
             },
@@ -21,7 +21,7 @@
             "otherNames": [
                 "GL2PS",
                 "GL2PS License",
-                "scancode://gl2ps"
+                "scancode:gl2ps"
             ]
         },
         "SPDX": {
@@ -94,7 +94,7 @@
             "spdxId": "GL2PS",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://gl2ps",
+                    "scancode:gl2ps",
                     "GL2PS License",
                     "GL2PS"
                 ],

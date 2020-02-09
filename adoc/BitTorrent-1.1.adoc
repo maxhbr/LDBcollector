@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://bittorrent-1.1+`
+* `+scancode:bittorrent-1.1+`
 * `+BitTorrent 1.1+`
 * `+BitTorrent Open Source License 1.1+`
 
@@ -178,7 +178,7 @@ Software distributed under the License is distributed on an AS IS basis, WITHOUT
     "__impliedNames": [
         "BitTorrent-1.1",
         "BitTorrent Open Source License v1.1",
-        "scancode://bittorrent-1.1",
+        "scancode:bittorrent-1.1",
         "BitTorrent 1.1",
         "BitTorrent Open Source License 1.1"
     ],
@@ -217,7 +217,7 @@ Software distributed under the License is distributed on an AS IS basis, WITHOUT
                     "BitTorrent-1.1",
                     "BitTorrent-1.1",
                     "BitTorrent Open Source License v1.1",
-                    "scancode://bittorrent-1.1",
+                    "scancode:bittorrent-1.1",
                     "BitTorrent 1.1",
                     "BitTorrent Open Source License 1.1"
                 ],
@@ -227,7 +227,7 @@ Software distributed under the License is distributed on an AS IS basis, WITHOUT
             "otherNames": [
                 "BitTorrent-1.1",
                 "BitTorrent Open Source License v1.1",
-                "scancode://bittorrent-1.1",
+                "scancode:bittorrent-1.1",
                 "BitTorrent 1.1",
                 "BitTorrent Open Source License 1.1"
             ]
@@ -278,7 +278,7 @@ Software distributed under the License is distributed on an AS IS basis, WITHOUT
             "spdxId": "BitTorrent-1.1",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://bittorrent-1.1",
+                    "scancode:bittorrent-1.1",
                     "BitTorrent 1.1",
                     "BitTorrent-1.1"
                 ],

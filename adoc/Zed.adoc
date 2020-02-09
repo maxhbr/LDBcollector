@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://zed+`
+* `+scancode:zed+`
 
 === Comments on (easy) usability
 
@@ -44,7 +44,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
     "__impliedNames": [
         "Zed",
         "Zed License",
-        "scancode://zed"
+        "scancode:zed"
     ],
     "__impliedId": "Zed",
     "__isFsfFree": true,
@@ -55,7 +55,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
                     "Zed",
                     "Zed",
                     "Zed License",
-                    "scancode://zed"
+                    "scancode:zed"
                 ],
                 "__impliedId": "Zed"
             },
@@ -63,7 +63,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
             "otherNames": [
                 "Zed",
                 "Zed License",
-                "scancode://zed"
+                "scancode:zed"
             ]
         },
         "SPDX": {
@@ -136,7 +136,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
             "spdxId": "Zed",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://zed",
+                    "scancode:zed",
                     "Zed License",
                     "Zed"
                 ],
