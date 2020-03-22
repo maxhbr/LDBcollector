@@ -17,16 +17,17 @@ The licenses listed below seek to apply the basic idea underlying Free Software 
 1. Creative Commons Attribution Non Commercial 2.0: http://creativecommons.org/licenses/by-nc/2.0/legalcode
 1. Creative Commons Attribution Non Commercial 2.5: http://creativecommons.org/licenses/by-nc/2.5/legalcode
 1. Creative Commons Attribution Non Commercial 3.0: http://creativecommons.org/licenses/by-nc/3.0/legalcode
+1. Creative Commons Attribution Non Commercial 4.0 International: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 1. Creative Commons Attribution Non Commercial No Derivatives 1.0: http://creativecommons.org/licenses/by-nd-nc/1.0/legalcode
 1. Creative Commons Attribution Non Commercial No Derivatives 2.0: http://creativecommons.org/licenses/by-nc-nd/2.0/legalcode
 1. Creative Commons Attribution Non Commercial No Derivatives 2.5: http://creativecommons.org/licenses/by-nc-nd/2.5/legalcode
 1. Creative Commons Attribution Non Commercial No Derivatives 3.0: http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode
+1. Creative Commons Attribution Non Commercial No Derivatives 4.0 International: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 1. Creative Commons Attribution Non Commercial Share Alike 1.0: http://creativecommons.org/licenses/by-nc-sa/1.0/legalcode
 1. Creative Commons Attribution Non Commercial Share Alike 2.0: http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
 1. Creative Commons Attribution Non Commercial Share Alike 2.5: http://creativecommons.org/licenses/by-nc-sa/2.5/legalcode
 1. Creative Commons Attribution Non Commercial Share Alike 3.0: http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
-1. Creative Commons Attribution NonCommercial NoDerivatives 4.0 International: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-1. Creative Commons Attribution NonCommercial ShareAlike 4.0 International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+1. Creative Commons Attribution Non Commercial Share Alike 4.0 International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 1. Creative Commons Attribution Share Alike 1.0: http://creativecommons.org/licenses/by-sa/1.0/legalcode
 1. Creative Commons Attribution Share Alike 2.0: http://creativecommons.org/licenses/by-sa/2.0/legalcode
 1. Creative Commons Attribution Share Alike 2.5: http://creativecommons.org/licenses/by-sa/2.5/legalcode
