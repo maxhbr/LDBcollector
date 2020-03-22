@@ -1,11 +1,6 @@
-## Sonstige Software Lizenzen
+## Other (non-free) Software Licenses
 
-Die hier aufgeführten Lizenzen stammen aus dem Umfeld Freier
-Software oder geben sich den Anschein, Freie Software zu sein,
-ohne die Voraussetzungen der Free Software Definition oder der
-Open Source Definition zu erfüllen. Zum Teil handelt es sich um
-Non-Profit-Lizenzen, die anders als Open Source Lizenzen eine
-kommerzielle Weiterverbreitung verbieten.
+The licenses listed here originate from the Free Software environment or appear to be Free Software without fulfilling the requirements of the Free Software Definition or the Open Source Definition. Some of them are non-profit licenses, which, unlike Open Source licenses, prohibit commercial redistribution.
 
 1. Aladdin Free Public License (v. 8.0): http://www.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm
 1. Aladdin Free Public License (v. 9.0): https://web.archive.org/web/20121218095513/http://www.artifex.com:80/downloads/doc/Public.htm
