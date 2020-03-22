@@ -8,31 +8,31 @@ The licenses listed below seek to apply the basic idea underlying Free Software 
 1. Creative Commons Attribution 2.5: http://creativecommons.org/licenses/by/2.5/legalcode
 1. Creative Commons Attribution 3.0: http://creativecommons.org/licenses/by/3.0/legalcode
 1. Creative Commons Attribution 4.0 International: https://creativecommons.org/licenses/by/4.0/legalcode
-1. Creative Commons Attribution No Derivatives 1.0: http://creativecommons.org/licenses/by-nd/1.0/legalcode
-1. Creative Commons Attribution No Derivatives 2.0: http://creativecommons.org/licenses/by-nd/2.0/legalcode
-1. Creative Commons Attribution No Derivatives 2.5: http://creativecommons.org/licenses/by-nd/2.5/legalcode
-1. Creative Commons Attribution No Derivatives 3.0: http://creativecommons.org/licenses/by-nd/3.0/legalcode
+1. Creative Commons Attribution NoDerivatives 1.0: http://creativecommons.org/licenses/by-nd/1.0/legalcode
+1. Creative Commons Attribution NoDerivatives 2.0: http://creativecommons.org/licenses/by-nd/2.0/legalcode
+1. Creative Commons Attribution NoDerivatives 2.5: http://creativecommons.org/licenses/by-nd/2.5/legalcode
+1. Creative Commons Attribution NoDerivatives 3.0: http://creativecommons.org/licenses/by-nd/3.0/legalcode
 1. Creative Commons Attribution NoDerivatives 4.0 International: https://creativecommons.org/licenses/by-nd/4.0/legalcode
-1. Creative Commons Attribution Non Commercial 1.0: http://creativecommons.org/licenses/by-nc/1.0/legalcode
-1. Creative Commons Attribution Non Commercial 2.0: http://creativecommons.org/licenses/by-nc/2.0/legalcode
-1. Creative Commons Attribution Non Commercial 2.5: http://creativecommons.org/licenses/by-nc/2.5/legalcode
-1. Creative Commons Attribution Non Commercial 3.0: http://creativecommons.org/licenses/by-nc/3.0/legalcode
-1. Creative Commons Attribution Non Commercial 4.0 International: https://creativecommons.org/licenses/by-nc/4.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 1.0: http://creativecommons.org/licenses/by-nd-nc/1.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 2.0: http://creativecommons.org/licenses/by-nc-nd/2.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 2.5: http://creativecommons.org/licenses/by-nc-nd/2.5/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 3.0: http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode
-1. Creative Commons Attribution Non Commercial No Derivatives 4.0 International: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 1.0: http://creativecommons.org/licenses/by-nc-sa/1.0/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 2.0: http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 2.5: http://creativecommons.org/licenses/by-nc-sa/2.5/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 3.0: http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
-1. Creative Commons Attribution Non Commercial Share Alike 4.0 International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
-1. Creative Commons Attribution Share Alike 1.0: http://creativecommons.org/licenses/by-sa/1.0/legalcode
-1. Creative Commons Attribution Share Alike 2.0: http://creativecommons.org/licenses/by-sa/2.0/legalcode
-1. Creative Commons Attribution Share Alike 2.5: http://creativecommons.org/licenses/by-sa/2.5/legalcode
-1. Creative Commons Attribution Share Alike 3.0: http://creativecommons.org/licenses/by-sa/3.0/legalcode
-1. Creative Commons Attribution Share Alike 4.0 International: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+1. Creative Commons Attribution NonCommercial 1.0: http://creativecommons.org/licenses/by-nc/1.0/legalcode
+1. Creative Commons Attribution NonCommercial 2.0: http://creativecommons.org/licenses/by-nc/2.0/legalcode
+1. Creative Commons Attribution NonCommercial 2.5: http://creativecommons.org/licenses/by-nc/2.5/legalcode
+1. Creative Commons Attribution NonCommercial 3.0: http://creativecommons.org/licenses/by-nc/3.0/legalcode
+1. Creative Commons Attribution NonCommercial 4.0 International: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+1. Creative Commons Attribution NonCommercial NoDerivatives 1.0: http://creativecommons.org/licenses/by-nd-nc/1.0/legalcode
+1. Creative Commons Attribution NonCommercial NoDerivatives 2.0: http://creativecommons.org/licenses/by-nc-nd/2.0/legalcode
+1. Creative Commons Attribution NonCommercial NoDerivatives 2.5: http://creativecommons.org/licenses/by-nc-nd/2.5/legalcode
+1. Creative Commons Attribution NonCommercial NoDerivatives 3.0: http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode
+1. Creative Commons Attribution NonCommercial NoDerivatives 4.0 International: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+1. Creative Commons Attribution NonCommercial ShareAlike 1.0: http://creativecommons.org/licenses/by-nc-sa/1.0/legalcode
+1. Creative Commons Attribution NonCommercial ShareAlike 2.0: http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
+1. Creative Commons Attribution NonCommercial ShareAlike 2.5: http://creativecommons.org/licenses/by-nc-sa/2.5/legalcode
+1. Creative Commons Attribution NonCommercial ShareAlike 3.0: http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+1. Creative Commons Attribution NonCommercial ShareAlike 4.0 International: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+1. Creative Commons Attribution ShareAlike 1.0: http://creativecommons.org/licenses/by-sa/1.0/legalcode
+1. Creative Commons Attribution ShareAlike 2.0: http://creativecommons.org/licenses/by-sa/2.0/legalcode
+1. Creative Commons Attribution ShareAlike 2.5: http://creativecommons.org/licenses/by-sa/2.5/legalcode
+1. Creative Commons Attribution ShareAlike 3.0: http://creativecommons.org/licenses/by-sa/3.0/legalcode
+1. Creative Commons Attribution ShareAlike 4.0 International: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 1. Creative Commons Licenses: http://creativecommons.org/licenses
 1. Creative Commons Zero v1.0 Universal: http://creativecommons.org/publicdomain/zero/1.0/legalcode
 1. Digital Peer Publishing Lizenz 1.0 (DPPL): https://www.hbz-nrw.de/produkte/open-access/lizenzen/dppl/dppl/DPPL_v1_de_02-2004
