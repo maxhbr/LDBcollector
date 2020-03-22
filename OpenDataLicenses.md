@@ -1,6 +1,6 @@
-## Open Data Lizenzen
+## Open Data Licenses
 
-Dies ist eine Übersicht freier Lizenzen für Datenbanken. Einen Überblick zum Thema findet sich unter http://opendefinition.org/guide/data/. Zur speziellen Situation in Kanada: http://www.opennorth.ca/2012/09/19/lessons-from-represent-licenses.html. 
+This is an overview of free licenses for databases. An overview of the topic can be found at http://opendefinition.org/guide/data/. For the special situation in Canada: http://www.opennorth.ca/2012/09/19/lessons-from-represent-licenses.html.
 
 1. CC0 1.0 Universal (CC0 1.0) Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 1. City of Edmonton Open Data Terms of Use: https://data.edmonton.ca/stories/s/City-of-Edmonton-Open-Data-Terms-of-Use/msh8-if28/ 
