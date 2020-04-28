@@ -24,9 +24,10 @@ The licenses listed here originate from the Free Software environment or appear 
 1. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
 1. Personal Public License (v. 3a): https://github.com/uboslinux/ubos-admin/blob/master/LICENSE
 1. PLS Free Software License Agreement (v. 1.0): http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm
-1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html (Einordnung umstritten)
+1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html (disputed)
 1. Scilab license: http://www.worldlii.org/int/other/PubRL/2009/51.html
-1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (Einordnung umstritten)
+1. Server Side Public License (v. 1.0): https://www.mongodb.com/licensing/server-side-public-license (disputed)
+1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (disputed)
 1. ShippySoft Source Available License (SSSAL): http://www.shippysoft.com/license.shtml
 1. Squeak License (Apple): https://web.archive.org/web/20150308154920/http://www.squeak.org:80/SqueakLicense
 1. Sun Community Source License: http://www.sun.com/software/jini/licensing/SCSL3_JiniTSA1.html
