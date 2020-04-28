@@ -84,6 +84,14 @@ ___
 ## USA
 ___
 
+
+### United States District Court for the District of Columbia, 2015-08-18, Case No. 14-1043 (ABJ)
+
+Drauglis v. Kappa Map Group, LLC
+
+Link: https://cases.justia.com/federal/district-courts/district-of-columbia/dcdce/1:2014cv01043/166825/39/0.pdf?ts=1439987006
+
+
 ### US District Court, E.D. New York, 2017-02-24, Case No. 16-CV-1462 (DRH)(ARL)
 
 Great Minds v. Fedex Office and Print Services Inc.
@@ -137,3 +145,10 @@ Curry v. Audax
 Link: http://zoeken.rechtspraak.nl/resultpage.aspx?snelzoeken=true&searchtype=ljn&ljn=AV4204&u_ljn=AV4204
 
 English translation at http://mirrors.creativecommons.org/judgements/Curry-Audax-English.pdf
+
+### Tribunal de Premiere Instance de Nivelles, 2010-10-26, Case No. 09-1684-A.
+
+Allard et al. (Lichôdmapwa ) v.  Festival de théâtre de Spa
+
+Link: https://wiki.creativecommons.org/images/f/f6/2010-10-26_A%27cision-trib.-Nivelles-Lichodmapwa.pdf
+
