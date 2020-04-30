@@ -154,6 +154,16 @@ Verletzung von CC-BY-SA 3.0 wegen Mouseovers und Zusprechung von Schadensersatz
 Link: http://www.ifross.de/Fremdartikel/AG_Muenchen_Urteil_155C29842-12.pdf
 
 
+### LG Köln, 23.07.2013 - 28 O 325/13	
+
+Link: https://dejure.org/2013,35330
+
+
+### AG Düsseldorf, 06.11.2013 - 57 C 15202/13	 
+
+Link: https://dejure.org/2013,42561
+
+
 ### AG Frankfurt am Main, Urteil v. 27.08.2012, Az. 32 C 1286/12-48
 
 GEMA-Vermutung und Creative Commons 
