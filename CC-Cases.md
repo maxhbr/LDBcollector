@@ -27,6 +27,27 @@ Rechtsmissbräuchliche Durchsetzung von CC-Lizenzen
 Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_CC_2018.pdf
 
 
+### LG Köln, Urteil v. 08.11.2018, Az. 14 S 50/16
+
+Feststellungsklage abgewiesen wg Schadensersatz bei Verletzung von CC BY-SA 3.0
+
+Link: http://www.ifross.de/Fremdartikel/LG_Koeln_Urteil_14S50-16.pdf
+
+
+### LG Frankfurt, Urteil v. 16.08.2018, Az. 2-03 O 32/17
+
+Negative Fetstellungsklage bei Abmahnung durch Verein wg Verletzung von CC-BY-ND 2.0, keine Berechnung nach MFM
+
+Link: https://www.rv.hessenrecht.hessen.de/bshe/document/LARE190005779
+
+
+### OLG Köln, Urteil v. 13.04.2018, Az. 6 U 131/17
+
+Kein Schadensersatzanspruch bei Verletzung von CC-BY-SA 3.0
+
+Link: https://openjur.de/u/2153856.html
+
+
 ### AG Kiel, Urteil v. 31.05.2018, Az. 111 C 7/17
 
 Keine wirksame Abmahnung bei Geltendmachung einer Verletzung einer Creative Commons Lizenz durch "Verband zum Schutz geistigen Eigentums im Internet" 
@@ -41,11 +62,32 @@ Kommerzielle Nutzung von Werken unter CC-BY-NC 3.0 und Höhe Schadensersatz EUR 
 Link: www.ifross.de/Fremdartikel/AG_Bochum_Urteil_70C471-17.pdf
 
 
+### LG Köln, Urteil v. 08.06.2017, Az. 14 O 331/15
+
+Schadensersatz bei Verletzung von CC BY-SA 3.0, 50 EUR und weiterer 50 EUR mangels Urhebernennung bei Berufsfotograf
+
+Link: https://www.justiz.nrw.de/nrwe/lgs/koeln/lg_koeln/j2017/14_O_331_15_Schlussurteil_20170608.html
+
+
 ### LG Hamburg, Beschluss v. 18.11.2016, Az. 310 O 402/16
 
 Haftung für Link auf Creative Commons lizenziertes Werk
 
 Link: https://dejure.org/ext/f812818c4cb65cf07438646d5442c684
+
+
+### AG Köln, Urteil v. 17.11.2016, Az. 148 C 307/16
+
+Feststellungsklage stattgegeben wg Schadensersatz bei Verletzung von CC BY-SA 3.0
+
+Link: http://www.ifross.de/Fremdartikel/AG_Koeln_Urteil_148C307-16.pdf
+
+
+### OLG Köln, Urteil v. 29.06.2016, Az. 6 W 72/16
+
+Kein Schadensersatzanspruch bei Verletzung von Creative Commons Lizenz
+
+Link: https://www.telemedicus.info/urteile/Urheberrecht/1715-OLG-Koeln-Az-6-W-7216-Objektiver-Wert-von-Lichtbildern-Creative-Commons-Lizenz-ist-Null.html
 
 
 ### OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14
