@@ -111,6 +111,13 @@ Kein Schadensersatzanspruch bei Verletzung von Creative Commons Lizenz
 Link: https://www.telemedicus.info/urteile/Urheberrecht/1715-OLG-Koeln-Az-6-W-7216-Objektiver-Wert-von-Lichtbildern-Creative-Commons-Lizenz-ist-Null.html
 
 
+### LG München, Beschluss v. 17.12.2014, Az. 37 O 8778/14
+
+Mouseover nicht ausreichend für Namensnennung bei Nutzung unter CC-BY 3.0 Unported
+
+Link: http://tlmd.in/u/1603
+
+
 ### OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14
 
 nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported); Schadensersatz für nicht-kommerziellen Nutzung
