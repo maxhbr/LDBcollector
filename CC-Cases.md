@@ -13,6 +13,14 @@ ___
 ___
 
 
+### OLG Frankfurt, Urteil v. 22.10.2019, Az. 11 U 95/18
+
+Bestätigung Urteil des LG Frankfurt v. 16.08.2018, Az. 2-03 O 32/17
+
+Link: https://www.rv.hessenrecht.hessen.de/bshe/document/LARE200000593
+
+
+
 ### AG Aschaffenburg, Urteil v. 24.10.2019, Az. 126 C 837/19
 
 Kein Schadensersatz bei Verletzung von CC-BY 2.0
@@ -118,6 +126,13 @@ Mouseover nicht ausreichend für Namensnennung bei Nutzung unter CC-BY 3.0 Unpor
 Link: http://tlmd.in/u/1603
 
 
+### LG München, Urteil v. 10.12.2014 Az. 21 S 2269/14
+
+Verwirkung einer Vertragsstrafe wegen Verletzung von CC-Lizenz
+
+Link: http://ifross.de/Fremdartikel/LG_Muenchen_I_Urteil_21S2269-14.pdf
+
+
 ### OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14
 
 nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported); Schadensersatz für nicht-kommerziellen Nutzung
@@ -130,6 +145,13 @@ Link: http://www.ifross.org/artikel/olg-k-ln-ffentlicher-rundfunk-non-commercial
 Nicht-kommerzielle Nutzung unter CC-BY-NC 2.0 (unported)
 
 Link: http://www.lhr-law.de/wp-content/uploads/2014/03/geschwärztes-Urteil-LG-Köln-2.pdf, http://www.ifross.org/artikel/lg-k-ln-beschr-nkt-cc-nc-rein-private-nutzungen
+
+
+### AG München, Urteil v. 14.01.2014 Az. 155 C 29842/12
+
+Verletzung von CC-BY-SA 3.0 wegen Mouseovers und Zusprechung von Schadensersatz
+
+Link: http://www.ifross.de/Fremdartikel/AG_Muenchen_Urteil_155C29842-12.pdf
 
 
 ### AG Frankfurt am Main, Urteil v. 27.08.2012, Az. 32 C 1286/12-48
