@@ -13,6 +13,13 @@ ___
 ___
 
 
+### AG Aschaffenburg, Urteil v. 24.10.2019, Az. 126 C 837/19
+
+Kein Schadensersatz bei Verletzung von CC-BY 2.0
+
+Link: www.ifross.de/Fremdartikel/AG_Aschaffenburg_Urteil_126C837-19.pdf
+
+
 ### AG Hamburg, Urteil v. 24.05.2019, Az. 32 C 83/19
 
 Kein Schadensersatz bei Verletzung von CC-BY-SA 2.0
@@ -25,6 +32,13 @@ Link: www.ifross.de/Fremdartikel/AG_Hamburg_Urteil_32C83-19.pdf
 Rechtsmissbräuchliche Durchsetzung von CC-Lizenzen
 
 Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_CC_2018.pdf
+
+
+### AG Würzburg, Urteil v. 11.10.2018, Az. 17 C 1149/18
+
+Erfolgreiche Feststellungsklage bei Ansprüchen auf Schadensersatz wegen ..Verletzung von CC-BY-SA 3.0
+
+Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_17C1149-18.pdf
 
 
 ### LG Köln, Urteil v. 08.11.2018, Az. 14 S 50/16
@@ -60,6 +74,13 @@ Link: www.ifross.de/Fremdartikel/AG_Kiel_Urteil_111C7-17.pdf
 Kommerzielle Nutzung von Werken unter CC-BY-NC 3.0 und Höhe Schadensersatz EUR 100,- 
 
 Link: www.ifross.de/Fremdartikel/AG_Bochum_Urteil_70C471-17.pdf
+
+
+### AG Würzburg, Urteil v. 23.01.2018, Az. 34 C 1105/17
+
+Erfolgreiche Feststellungsklage nach Schadensersatzforderung wegen Verletzung von CC-BY-SA 3.0 
+
+Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_34C1105-17.pdf
 
 
 ### LG Köln, Urteil v. 08.06.2017, Az. 14 O 331/15
