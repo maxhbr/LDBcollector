@@ -164,6 +164,13 @@ Link: https://dejure.org/2013,35330
 Link: https://dejure.org/2013,42561
 
 
+### LG Frankfurt am Main, Urteil v. 05.09.2013, Az. 2-03 S 11/12
+
+GEMA-Vermutung und Creative Commons 
+
+Link: http://ifross.de/Fremdartikel/LG_Frankfurt_2-03S11-12.pdf
+
+
 ### AG Frankfurt am Main, Urteil v. 27.08.2012, Az. 32 C 1286/12-48
 
 GEMA-Vermutung und Creative Commons 
