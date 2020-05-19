@@ -235,6 +235,14 @@ Link: http://www.derecho-internet.org/node/359
 ___
 ## Andere Länder
 ___
+
+#### TGI de Paris, 2019-06-21
+
+Entr’ouvert v. Orange
+
+Link: https://www.legalis.net/jurisprudences/tgi-de-paris-3eme-ch-3eme-section-jugement-du-21-juin-2019/
+
+
 #### District Court of Jerusalem, 2011-01-06, Case No. CA 3560/09, CA 3561/09
 
 Link: http://www.law.co.il/media/computer-law/reuveni_rivlin.pdf
@@ -253,3 +261,8 @@ AFPA v. EDU 4
 
 Link: http://fsffrance.org/news/arret-ca-paris-16.09.2009.pdf
 
+
+#### TGI de Paris, 2007-03-28, Case No. 05/16916
+
+S.A. Educaffix v. CNRS
+Link: https://www.doctrine.fr/d/TGI/Paris/2007/KFV64D3F65FB87F53D68B40
