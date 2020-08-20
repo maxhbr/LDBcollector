@@ -96,6 +96,7 @@ proprietäre Software überführen.
 1. ImageMagick Terms and Conditions for Use, Reproduction, and Distribution: http://www.imagemagick.org/script/license.php
 1. Independent JPEG Group License: https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG
 1. ISC License: http://mirbsd.org/ISC-Licence
+1. JDOM License: https://github.com/hunterhacker/jdom/blob/master/LICENSE.txt
 1. Historical Permission Notice and Disclaimer (HPND): https://web.archive.org/web/20030923051149/http://www.geocities.com/brucedodson.rm/hist_pnd.htm
 1. Horde Apache-like License: http://www.horde.org/licenses/asl.php
 1. Horde BSD-like License: http://www.horde.org/licenses/bsdl.php
