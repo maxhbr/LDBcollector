@@ -22,6 +22,7 @@ The licenses listed here originate from the Free Software environment or appear 
 1. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx
 1. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
 1. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
+1. Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX: https://www.oracle.com/downloads/licenses/binary-code-license.html
 1. Personal Public License (v. 3a): https://github.com/uboslinux/ubos-admin/blob/master/LICENSE
 1. PLS Free Software License Agreement (v. 1.0): http://web.archive.org/web/20030603202719/http://www.pls.com/license.htm
 1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html (disputed)
@@ -30,6 +31,7 @@ The licenses listed here originate from the Free Software environment or appear 
 1. SGI Free Software License B (v. 1.0): http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.0.html (disputed)
 1. ShippySoft Source Available License (SSSAL): http://www.shippysoft.com/license.shtml
 1. Squeak License (Apple): https://web.archive.org/web/20150308154920/http://www.squeak.org:80/SqueakLicense
+1. Sun Microsystems, Inc. Binary Code License Agreement: https://download.java.net/media/jai/builds/release/1_1_3/LICENSE-jai.txt
 1. Sun Community Source License: http://www.sun.com/software/jini/licensing/SCSL3_JiniTSA1.html
 1. Sun Solaris Source Code (Foundation Release) License (v. 1.1): http://www.mibsoftware.com/librock/librock/license/ssscfr.txt
 1. The Code Project Open License (CPOL) 1.02: http://www.codeproject.com/info/cpol10.aspx
