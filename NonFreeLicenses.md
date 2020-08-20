@@ -35,6 +35,7 @@ The licenses listed here originate from the Free Software environment or appear 
 1. The Code Project Open License (CPOL) 1.02: http://www.codeproject.com/info/cpol10.aspx
 1. Truecrypt License v. 3: https://github.com/FreeApophis/TrueCrypt/blob/master/License.txt
 1. University of Utah Public License: http://www.cs.utah.edu/~gk/teem/txt/LICENSE.txt
+1. UnRAR License: https://github.com/junrar/junrar/blob/master/LICENSE
 1. YaST and SuSE Linux license terms: http://ftp2.de.freebsd.org/pub/linux/suse/5.3/i386.de/COPYRIGHT.yast
 1. YaST und SuSE Linux Lizenzbestimmungen: https://web.archive.org/web/20040407183411/http://www.suse.de/de/private/support/licenses/yast.html
 1. ZIB Academic License: https://web.archive.org/web/20090408081543/http://www.zib.de:80/Optimization/Software/ziblicense.html
