@@ -118,6 +118,7 @@ proprietäre Software überführen.
 1. Naumen Public License: http://www.worldlii.org/int/other/PubRL/2009/42.html
 1. NTP License: https://www.eecis.udel.edu/~mills/ntp/html/copyright.html
 1. NUnit License: http://nunit.org/docs/2.4/license.html
+1. OGC Software License, Version 1.0: https://www.ogc.org/ogc/software/1.0
 1. Open Group Test Suite License: http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt
 1. Open Media Group Open Source License: https://web.archive.org/web/20090213173457/http://www.openmediagroup.com/license.html
 1. OpenLDAP Public License (v. 1.1): http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=806557a5ad59804ef3a44d5abfbe91d706b0791f
