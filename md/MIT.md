@@ -5,6 +5,8 @@ MIT License (MIT)
 
 **Other Names:**
 
+-   `scancode://mit`
+
 -   `MIT/Expat License`
 
 -   `Expat`
@@ -28,27 +30,27 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+-   **↑** This License is featured by choosealicense.com (source:
+    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com"))
 
--   **↑** Exception : The University of Washington's interpretation of
+-   **↑**Exception : The University of Washington's interpretation of
     the MIT License, as the University interprets it for the pine email
     client, does not follow the DFSG. See the
     DebianFreeSoftwareGuidelinesDraftFAQ. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/MIT.html "SPDX"))
 
--   **↑** This License is featured by choosealicense.com (source:
-    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com"))
+-   **↑**Rating is: Silver (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   Because MIT has used many licenses for software, the Free Software
     Foundation considers MIT License ambiguous. The MIT License
@@ -89,6 +91,8 @@ URLs
 
 -   **tl;dr legal:** https://tldrlegal.com/license/mit-license
 
+-   https://opensource.com/article/19/4/history-mit-license
+
 -   https://spdx.org/licenses/MIT.html\#licenseText
 
 OSADL Rule
@@ -97,6 +101,8 @@ OSADL Rule
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
     	YOU MUST Forward License text
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -129,6 +135,7 @@ Raw Data
         "__impliedNames": [
             "MIT",
             "MIT License",
+            "scancode://mit",
             "mit",
             "MIT/Expat License",
             "Expat",
@@ -137,9 +144,11 @@ Raw Data
             "MIT license (also X11)"
         ],
         "__impliedId": "MIT",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The MIT License"
         ],
+        "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -174,6 +183,7 @@ Raw Data
                         "MIT",
                         "MIT",
                         "MIT License",
+                        "scancode://mit",
                         "mit",
                         "MIT/Expat License",
                         "Expat",
@@ -187,6 +197,7 @@ Raw Data
                 "otherNames": [
                     "MIT",
                     "MIT License",
+                    "scancode://mit",
                     "mit",
                     "MIT/Expat License",
                     "Expat",
@@ -219,6 +230,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -256,6 +268,7 @@ Raw Data
                     "__impliedNames": [
                         "MIT license (also X11)"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -269,6 +282,7 @@ Raw Data
             },
             "Scancode": {
                 "otherUrls": [
+                    "https://opensource.com/article/19/4/history-mit-license",
                     "https://opensource.org/licenses/MIT"
                 ],
                 "homepageUrl": "http://opensource.org/licenses/mit-license.php",
@@ -284,7 +298,7 @@ Raw Data
                 "spdxId": "MIT",
                 "_implications": {
                     "__impliedNames": [
-                        "mit",
+                        "scancode://mit",
                         "MIT License",
                         "MIT"
                     ],
@@ -305,6 +319,10 @@ Raw Data
                         [
                             "OSI Page",
                             "http://www.opensource.org/licenses/MIT"
+                        ],
+                        [
+                            null,
+                            "https://opensource.com/article/19/4/history-mit-license"
                         ],
                         [
                             null,
@@ -365,9 +383,9 @@ Raw Data
                 "oOtherLicenseIds": [
                     "MIT license (also X11)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {
@@ -566,7 +584,8 @@ Raw Data
                     "__impliedNames": [
                         "MIT",
                         "MIT license / X11 license"
-                    ]
+                    ],
+                    "__hasPatentHint": false
                 },
                 "Private use": {
                     "value": "Yes",
@@ -834,6 +853,7 @@ Raw Data
                 }
             ]
         },
+        "__isOsiApproved": true,
         "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "__impliedURLs": [
             [
@@ -855,6 +875,10 @@ Raw Data
             [
                 "OSI Page",
                 "http://www.opensource.org/licenses/MIT"
+            ],
+            [
+                null,
+                "https://opensource.com/article/19/4/history-mit-license"
             ],
             [
                 "tl;dr legal",

@@ -1,26 +1,27 @@
 == Vovida Software License v1.0 (VSL-1.0)
 
 [cols=",",options="header",]
-|======================================
+|===
 |Key |Value
 |Fullname |Vovida Software License v1.0
 |Shortname |VSL-1.0
 |Rating |Go
 |Classification |NoCopyleft
-|======================================
+|===
 
 *Other Names:*
 
-* `Vovida Software License 1.0`
-* `The Vovida Software License, Version 1.0`
-* `License :: OSI Approved :: Vovida Software License 1.0`
+* `+scancode://vsl-1.0+`
+* `+Vovida Software License 1.0+`
+* `+The Vovida Software License, Version 1.0+`
+* `+License :: OSI Approved :: Vovida Software License 1.0+`
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/VSL-1.0.html[SPDX])
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 
@@ -99,7 +100,7 @@ legends also need to be complied with as well.
     "__impliedNames": [
         "VSL-1.0",
         "Vovida Software License v1.0",
-        "vsl-1.0",
+        "scancode://vsl-1.0",
         "Vovida Software License 1.0",
         "The Vovida Software License, Version 1.0",
         "License :: OSI Approved :: Vovida Software License 1.0"
@@ -139,7 +140,7 @@ legends also need to be complied with as well.
                     "VSL-1.0",
                     "VSL-1.0",
                     "Vovida Software License v1.0",
-                    "vsl-1.0",
+                    "scancode://vsl-1.0",
                     "Vovida Software License 1.0",
                     "The Vovida Software License, Version 1.0",
                     "License :: OSI Approved :: Vovida Software License 1.0"
@@ -150,7 +151,7 @@ legends also need to be complied with as well.
             "otherNames": [
                 "VSL-1.0",
                 "Vovida Software License v1.0",
-                "vsl-1.0",
+                "scancode://vsl-1.0",
                 "Vovida Software License 1.0",
                 "The Vovida Software License, Version 1.0",
                 "License :: OSI Approved :: Vovida Software License 1.0"
@@ -180,6 +181,7 @@ legends also need to be complied with as well.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -212,7 +214,7 @@ legends also need to be complied with as well.
             "spdxId": "VSL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "vsl-1.0",
+                    "scancode://vsl-1.0",
                     "Vovida Software License 1.0",
                     "VSL-1.0"
                 ],
@@ -376,6 +378,7 @@ legends also need to be complied with as well.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": true,
     "__impliedText": "Vovida Software License v. 1.0\n\nThis license applies to all software incorporated in the \"Vovida\nOpen Communication Application Library\" except for those portions\nincorporating third party software specifically identified as being\nlicensed under separate license.\n\nThe Vovida Software License, Version 1.0\nCopyright (c) 2000 Vovida Networks, Inc. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in\nthe documentation and/or other materials provided with the\ndistribution.\n\n3. The names \"VOCAL\", \"Vovida Open Communication Application Library\",\nand \"Vovida Open Communication Application Library (VOCAL)\" must\nnot be used to endorse or promote products derived from this\nsoftware without prior written permission. For written\npermission, please contact vocal@vovida.org.\n\n4. Products derived from this software may not be called \"VOCAL\", nor\nmay \"VOCAL\" appear in their name, without prior written\npermission.\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESSED OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND\nNON-INFRINGEMENT ARE DISCLAIMED. IN NO EVENT SHALL VOVIDA\nNETWORKS, INC. OR ITS CONTRIBUTORS BE LIABLE FOR ANY DAMAGES\nIN EXCESS OF $1,000, NOR FOR ANY INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\nOF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\nUSE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\nDAMAGE.\n\nThis software consists of voluntary contributions made by Vovida\nNetworks, Inc. and many individuals on behalf of Vovida Networks,\nInc. For more information on Vovida Networks, Inc., please see\nhttp://www.vovida.org.\n\nAll third party licenses and copyright notices and other required\nlegends also need to be complied with as well.",
     "__impliedURLs": [
         [

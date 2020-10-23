@@ -5,7 +5,7 @@ BSD 3-Clause Clear License (BSD-3-Clause-Clear)
 
 **Other Names:**
 
--   `clear-bsd`
+-   `scancode://clear-bsd`
 
 -   `Clear BSD License`
 
@@ -20,10 +20,7 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Note that a 2-clause form of the BSD license, removing the
+-   **↑**Note that a 2-clause form of the BSD license, removing the
     third condition, is also in use. This is because even a generous
     copyright license does not implicitly forfeit the copyright holder's
     "right of publicity". In other words, even if a license does not
@@ -31,6 +28,9 @@ Comments on (easy) usability
     endorses or promotes your work, the law generally does. We're not
     aware of any exceptions. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 Obligations
 -----------
@@ -93,7 +93,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-Clear",
             "BSD 3-Clause Clear License",
-            "clear-bsd",
+            "scancode://clear-bsd",
             "Clear BSD License",
             "bsd-3-clause-clear"
         ],
@@ -108,7 +108,7 @@ Raw Data
                         "BSD-3-Clause-Clear",
                         "BSD-3-Clause-Clear",
                         "BSD 3-Clause Clear License",
-                        "clear-bsd",
+                        "scancode://clear-bsd",
                         "Clear BSD License",
                         "bsd-3-clause-clear"
                     ],
@@ -118,7 +118,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause-Clear",
                     "BSD 3-Clause Clear License",
-                    "clear-bsd",
+                    "scancode://clear-bsd",
                     "Clear BSD License",
                     "bsd-3-clause-clear"
                 ]
@@ -138,6 +138,7 @@ Raw Data
                         "BSD 3-Clause Clear License"
                     ],
                     "__impliedId": "BSD-3-Clause-Clear",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -166,7 +167,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause-Clear",
                 "_implications": {
                     "__impliedNames": [
-                        "clear-bsd",
+                        "scancode://clear-bsd",
                         "Clear BSD License",
                         "BSD-3-Clause-Clear"
                     ],
@@ -401,6 +402,7 @@ Raw Data
                 }
             ]
         },
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted (subject to the limitations in the\ndisclaimer below) provided that the following conditions are met:\n\n * Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n * Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the\n   distribution.\n\n * Neither the name of {Owner Organization} nor the names of its\n   contributors may be used to endorse or promote products derived\n   from this software without specific prior written permission.\n\nNO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE\nGRANTED BY THIS LICENSE.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT\nHOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN\nIF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [

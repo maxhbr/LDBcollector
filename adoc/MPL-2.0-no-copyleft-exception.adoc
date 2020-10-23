@@ -1,25 +1,26 @@
 == Mozilla Public License 2.0 (no copyleft exception) (MPL-2.0-no-copyleft-exception)
 
 [cols=",",options="header",]
-|============================================================
+|===
 |Key |Value
 |Fullname |Mozilla Public License 2.0 (no copyleft exception)
 |Shortname |MPL-2.0-no-copyleft-exception
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
-|============================================================
+|===
 
 *Other Names:*
 
-* `MPL 2.0 with no copyleft exception`
+* `+scancode://mpl-2.0-no-copyleft-exception+`
+* `+MPL 2.0 with no copyleft exception+`
 
 === Comments on (easy) usability
 
-* *↑* This license is compatible with the DebianFreeSoftwareGuidelines
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html[SPDX])
+* **↑**This license is compatible with the DebianFreeSoftwareGuidelines
 (DFSG-free) (source: https://wiki.debian.org/DFSGLicenses[Debian Free
 Software Guidelines])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html[SPDX])
 
 === URLs
 
@@ -73,6 +74,8 @@ COPYLEFT CLAUSE Yes
 PATENT HINTS
 ....
 
+(source: OSADL License Checklist)
+
 === Text
 
 ....
@@ -89,7 +92,7 @@ defined by the Mozilla Public License, v. 2.0.
     "__impliedNames": [
         "MPL-2.0-no-copyleft-exception",
         "Mozilla Public License 2.0 (no copyleft exception)",
-        "mpl-2.0-no-copyleft-exception",
+        "scancode://mpl-2.0-no-copyleft-exception",
         "MPL 2.0 with no copyleft exception"
     ],
     "__impliedId": "MPL-2.0-no-copyleft-exception",
@@ -103,7 +106,7 @@ defined by the Mozilla Public License, v. 2.0.
                     "MPL-2.0-no-copyleft-exception",
                     "MPL-2.0-no-copyleft-exception",
                     "Mozilla Public License 2.0 (no copyleft exception)",
-                    "mpl-2.0-no-copyleft-exception",
+                    "scancode://mpl-2.0-no-copyleft-exception",
                     "MPL 2.0 with no copyleft exception"
                 ],
                 "__impliedId": "MPL-2.0-no-copyleft-exception"
@@ -112,7 +115,7 @@ defined by the Mozilla Public License, v. 2.0.
             "otherNames": [
                 "MPL-2.0-no-copyleft-exception",
                 "Mozilla Public License 2.0 (no copyleft exception)",
-                "mpl-2.0-no-copyleft-exception",
+                "scancode://mpl-2.0-no-copyleft-exception",
                 "MPL 2.0 with no copyleft exception"
             ]
         },
@@ -141,6 +144,7 @@ defined by the Mozilla Public License, v. 2.0.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -192,7 +196,7 @@ defined by the Mozilla Public License, v. 2.0.
             "spdxId": "MPL-2.0-no-copyleft-exception",
             "_implications": {
                 "__impliedNames": [
-                    "mpl-2.0-no-copyleft-exception",
+                    "scancode://mpl-2.0-no-copyleft-exception",
                     "MPL 2.0 with no copyleft exception",
                     "MPL-2.0-no-copyleft-exception"
                 ],
@@ -273,6 +277,7 @@ defined by the Mozilla Public License, v. 2.0.
         ]
     ],
     "__calculatedCopyleft": "WeakCopyleft",
+    "__isOsiApproved": true,
     "__impliedText": "This Source Code Form is \"Incompatible With Secondary Licenses\", as\ndefined by the Mozilla Public License, v. 2.0.\n",
     "__impliedURLs": [
         [

@@ -3,14 +3,18 @@ Wsuipa License (Wsuipa)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://wsuipa`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -44,9 +48,10 @@ Raw Data
         "__impliedNames": [
             "Wsuipa",
             "Wsuipa License",
-            "wsuipa"
+            "scancode://wsuipa"
         ],
         "__impliedId": "Wsuipa",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -54,7 +59,7 @@ Raw Data
                         "Wsuipa",
                         "Wsuipa",
                         "Wsuipa License",
-                        "wsuipa"
+                        "scancode://wsuipa"
                     ],
                     "__impliedId": "Wsuipa"
                 },
@@ -62,7 +67,7 @@ Raw Data
                 "otherNames": [
                     "Wsuipa",
                     "Wsuipa License",
-                    "wsuipa"
+                    "scancode://wsuipa"
                 ]
             },
             "SPDX": {
@@ -80,6 +85,7 @@ Raw Data
                         "Wsuipa License"
                     ],
                     "__impliedId": "Wsuipa",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -107,6 +113,7 @@ Raw Data
                     "__impliedNames": [
                         "Wsuipa License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -133,7 +140,7 @@ Raw Data
                 "spdxId": "Wsuipa",
                 "_implications": {
                     "__impliedNames": [
-                        "wsuipa",
+                        "scancode://wsuipa",
                         "Wsuipa License",
                         "Wsuipa"
                     ],
@@ -217,6 +224,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean\nGuenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long\nas the file is not modified. Modifications, and redistribution of modified\nversions, are also permitted, but only if the resulting file is renamed.\n\nThe copyright holder is Washington State University. The original author of the\nfonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.",
         "__impliedURLs": [
             [

@@ -5,12 +5,12 @@ FSF All Permissive License (FSFAP)
 
 **Other Names:**
 
--   `fsf-ap`
+-   `scancode://fsf-ap`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -43,10 +43,11 @@ Raw Data
         "__impliedNames": [
             "FSFAP",
             "FSF All Permissive License",
-            "fsf-ap",
+            "scancode://fsf-ap",
             "FSF All Permissive license"
         ],
         "__impliedId": "FSFAP",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -54,7 +55,7 @@ Raw Data
                         "FSFAP",
                         "FSFAP",
                         "FSF All Permissive License",
-                        "fsf-ap"
+                        "scancode://fsf-ap"
                     ],
                     "__impliedId": "FSFAP"
                 },
@@ -62,7 +63,7 @@ Raw Data
                 "otherNames": [
                     "FSFAP",
                     "FSF All Permissive License",
-                    "fsf-ap"
+                    "scancode://fsf-ap"
                 ]
             },
             "SPDX": {
@@ -80,6 +81,7 @@ Raw Data
                         "FSF All Permissive License"
                     ],
                     "__impliedId": "FSFAP",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -107,6 +109,7 @@ Raw Data
                     "__impliedNames": [
                         "FSF All Permissive license"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -138,7 +141,7 @@ Raw Data
                 "spdxId": "FSFAP",
                 "_implications": {
                     "__impliedNames": [
-                        "fsf-ap",
+                        "scancode://fsf-ap",
                         "FSF All Permissive License",
                         "FSFAP"
                     ],
@@ -192,6 +195,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Copying and distribution of this file, with or without modification, are\npermitted in any medium without royalty provided the copyright notice\nand this notice are preserved. This file is offered as-is, without any\nwarranty.\n",
         "__impliedURLs": [
             [

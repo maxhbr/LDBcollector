@@ -5,20 +5,22 @@ zlib/libpng License with Acknowledgement (zlib-acknowledgement)
 
 **Other Names:**
 
+-   `scancode://zlib-acknowledgement`
+
 -   `ZLIB License with Acknowledgment`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This license is compatible with the
+-   **↑**This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -51,6 +53,8 @@ OSADL Rule
     
     USE CASE Commercial distribution
     	YOU MUST Credit Verbatim "Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig"
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -85,9 +89,11 @@ Raw Data
         "__impliedNames": [
             "zlib-acknowledgement",
             "zlib/libpng License with Acknowledgement",
+            "scancode://zlib-acknowledgement",
             "ZLIB License with Acknowledgment"
         ],
         "__impliedId": "zlib-acknowledgement",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)"
         ],
@@ -98,6 +104,7 @@ Raw Data
                         "zlib-acknowledgement",
                         "zlib-acknowledgement",
                         "zlib/libpng License with Acknowledgement",
+                        "scancode://zlib-acknowledgement",
                         "ZLIB License with Acknowledgment"
                     ],
                     "__impliedId": "zlib-acknowledgement"
@@ -106,6 +113,7 @@ Raw Data
                 "otherNames": [
                     "zlib-acknowledgement",
                     "zlib/libpng License with Acknowledgement",
+                    "scancode://zlib-acknowledgement",
                     "ZLIB License with Acknowledgment"
                 ]
             },
@@ -124,6 +132,7 @@ Raw Data
                         "zlib/libpng License with Acknowledgement"
                     ],
                     "__impliedId": "zlib-acknowledgement",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -161,6 +170,7 @@ Raw Data
                     "__impliedNames": [
                         "zlib/libpng License with Acknowledgement"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -189,7 +199,7 @@ Raw Data
                 "spdxId": "zlib-acknowledgement",
                 "_implications": {
                     "__impliedNames": [
-                        "zlib-acknowledgement",
+                        "scancode://zlib-acknowledgement",
                         "ZLIB License with Acknowledgment",
                         "zlib-acknowledgement"
                     ],
@@ -308,6 +318,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This software is provided 'as-is', without any express or implied warranty. In\nno event will the authors be held liable for any damages arising from the use of\nthis software.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim\nthat you wrote the original software. If you use this software in a product, an\nacknowledgment (see the following) in the product documentation is required.\n\nPortions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James\nW. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002\nPhilip A. Craig\n\n2. Altered source versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.",
         "__impliedURLs": [
             [

@@ -5,17 +5,17 @@ Xerox License (Xerox)
 
 **Other Names:**
 
--   `mit-export-control`
+-   `scancode://mit-export-control`
 
 -   `MIT with Export Control`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -33,8 +33,6 @@ URLs
 
 Text
 ----
-
-    Copyright (c) {year} {copyright-holder}. All Rights Reserved.
 
     Use and copying of this software and preparation of derivative works
     based upon this software are permitted. Any copy of this software or of
@@ -61,10 +59,11 @@ Raw Data
         "__impliedNames": [
             "Xerox",
             "Xerox License",
-            "mit-export-control",
+            "scancode://mit-export-control",
             "MIT with Export Control"
         ],
         "__impliedId": "Xerox",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -72,7 +71,7 @@ Raw Data
                         "Xerox",
                         "Xerox",
                         "Xerox License",
-                        "mit-export-control",
+                        "scancode://mit-export-control",
                         "MIT with Export Control"
                     ],
                     "__impliedId": "Xerox"
@@ -81,7 +80,7 @@ Raw Data
                 "otherNames": [
                     "Xerox",
                     "Xerox License",
-                    "mit-export-control",
+                    "scancode://mit-export-control",
                     "MIT with Export Control"
                 ]
             },
@@ -100,6 +99,7 @@ Raw Data
                         "Xerox License"
                     ],
                     "__impliedId": "Xerox",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -127,6 +127,7 @@ Raw Data
                     "__impliedNames": [
                         "Xerox License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -145,7 +146,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing:Xerox?rd=Licensing/Xerox",
                 "shortName": "MIT with Export Control",
                 "textUrls": null,
-                "text": "Copyright (c) {year} {copyright-holder}. All Rights Reserved.\n\nUse and copying of this software and preparation of derivative works\nbased upon this software are permitted. Any copy of this software or of\nany derivative work must include the above copyright notice of\n{copyright-holder}, this paragraph and the one after it. Any\ndistribution of this software or derivative works must comply with all\napplicable United States export control laws.\n\nThis software is made available AS IS, and {copyright-holder} DISCLAIMS\nALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE, AND NOTWITHSTANDING ANY OTHER PROVISION CONTAINED HEREIN, ANY\nLIABILITY FOR DAMAGES RESULTING FROM THE SOFTWARE OR ITS USE IS\nEXPRESSLY DISCLAIMED, WHETHER ARISING IN CONTRACT, TORT (INCLUDING\nNEGLIGENCE) OR STRICT LIABILITY, EVEN IF {copyright-holder} IS ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGES.",
+                "text": "Use and copying of this software and preparation of derivative works\nbased upon this software are permitted. Any copy of this software or of\nany derivative work must include the above copyright notice of\n{copyright-holder}, this paragraph and the one after it. Any\ndistribution of this software or derivative works must comply with all\napplicable United States export control laws.\n\nThis software is made available AS IS, and {copyright-holder} DISCLAIMS\nALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE, AND NOTWITHSTANDING ANY OTHER PROVISION CONTAINED HEREIN, ANY\nLIABILITY FOR DAMAGES RESULTING FROM THE SOFTWARE OR ITS USE IS\nEXPRESSLY DISCLAIMED, WHETHER ARISING IN CONTRACT, TORT (INCLUDING\nNEGLIGENCE) OR STRICT LIABILITY, EVEN IF {copyright-holder} IS ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGES.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Xerox PARC",
@@ -155,7 +156,7 @@ Raw Data
                 "spdxId": "Xerox",
                 "_implications": {
                     "__impliedNames": [
-                        "mit-export-control",
+                        "scancode://mit-export-control",
                         "MIT with Export Control",
                         "Xerox"
                     ],
@@ -167,7 +168,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (c) {year} {copyright-holder}. All Rights Reserved.\n\nUse and copying of this software and preparation of derivative works\nbased upon this software are permitted. Any copy of this software or of\nany derivative work must include the above copyright notice of\n{copyright-holder}, this paragraph and the one after it. Any\ndistribution of this software or derivative works must comply with all\napplicable United States export control laws.\n\nThis software is made available AS IS, and {copyright-holder} DISCLAIMS\nALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE, AND NOTWITHSTANDING ANY OTHER PROVISION CONTAINED HEREIN, ANY\nLIABILITY FOR DAMAGES RESULTING FROM THE SOFTWARE OR ITS USE IS\nEXPRESSLY DISCLAIMED, WHETHER ARISING IN CONTRACT, TORT (INCLUDING\nNEGLIGENCE) OR STRICT LIABILITY, EVEN IF {copyright-holder} IS ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGES.",
+                    "__impliedText": "Use and copying of this software and preparation of derivative works\nbased upon this software are permitted. Any copy of this software or of\nany derivative work must include the above copyright notice of\n{copyright-holder}, this paragraph and the one after it. Any\ndistribution of this software or derivative works must comply with all\napplicable United States export control laws.\n\nThis software is made available AS IS, and {copyright-holder} DISCLAIMS\nALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE, AND NOTWITHSTANDING ANY OTHER PROVISION CONTAINED HEREIN, ANY\nLIABILITY FOR DAMAGES RESULTING FROM THE SOFTWARE OR ITS USE IS\nEXPRESSLY DISCLAIMED, WHETHER ARISING IN CONTRACT, TORT (INCLUDING\nNEGLIGENCE) OR STRICT LIABILITY, EVEN IF {copyright-holder} IS ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGES.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -243,7 +244,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Copyright (c) {year} {copyright-holder}. All Rights Reserved.\n\nUse and copying of this software and preparation of derivative works\nbased upon this software are permitted. Any copy of this software or of\nany derivative work must include the above copyright notice of\n{copyright-holder}, this paragraph and the one after it. Any\ndistribution of this software or derivative works must comply with all\napplicable United States export control laws.\n\nThis software is made available AS IS, and {copyright-holder} DISCLAIMS\nALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE, AND NOTWITHSTANDING ANY OTHER PROVISION CONTAINED HEREIN, ANY\nLIABILITY FOR DAMAGES RESULTING FROM THE SOFTWARE OR ITS USE IS\nEXPRESSLY DISCLAIMED, WHETHER ARISING IN CONTRACT, TORT (INCLUDING\nNEGLIGENCE) OR STRICT LIABILITY, EVEN IF {copyright-holder} IS ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGES.",
+        "__isOsiApproved": false,
+        "__impliedText": "Use and copying of this software and preparation of derivative works\nbased upon this software are permitted. Any copy of this software or of\nany derivative work must include the above copyright notice of\n{copyright-holder}, this paragraph and the one after it. Any\ndistribution of this software or derivative works must comply with all\napplicable United States export control laws.\n\nThis software is made available AS IS, and {copyright-holder} DISCLAIMS\nALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE, AND NOTWITHSTANDING ANY OTHER PROVISION CONTAINED HEREIN, ANY\nLIABILITY FOR DAMAGES RESULTING FROM THE SOFTWARE OR ITS USE IS\nEXPRESSLY DISCLAIMED, WHETHER ARISING IN CONTRACT, TORT (INCLUDING\nNEGLIGENCE) OR STRICT LIABILITY, EVEN IF {copyright-holder} IS ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGES.",
         "__impliedURLs": [
             [
                 "SPDX",

@@ -3,10 +3,14 @@ JSON License (JSON)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://json`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
@@ -18,12 +22,12 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Infamous for the clause The Software shall be used for Good,
+-   **↓**Infamous for the clause The Software shall be used for Good,
     not Evil. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
-    in Fedora is permitted to use this license. It is either non-free or
+-   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+    Fedora is permitted to use this license. It is either non-free or
     deprecated. (source: [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -69,7 +73,7 @@ Raw Data
         "__impliedNames": [
             "JSON",
             "JSON License",
-            "json"
+            "scancode://json"
         ],
         "__impliedId": "JSON",
         "__impliedAmbiguousNames": [
@@ -82,7 +86,7 @@ Raw Data
                         "JSON",
                         "JSON",
                         "JSON License",
-                        "json"
+                        "scancode://json"
                     ],
                     "__impliedId": "JSON"
                 },
@@ -90,7 +94,7 @@ Raw Data
                 "otherNames": [
                     "JSON",
                     "JSON License",
-                    "json"
+                    "scancode://json"
                 ]
             },
             "SPDX": {
@@ -108,6 +112,7 @@ Raw Data
                         "JSON License"
                     ],
                     "__impliedId": "JSON",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -161,7 +166,7 @@ Raw Data
                 "spdxId": "JSON",
                 "_implications": {
                     "__impliedNames": [
-                        "json",
+                        "scancode://json",
                         "JSON License",
                         "JSON"
                     ],
@@ -316,6 +321,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nThe Software shall be used for Good, not Evil.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
         "__impliedURLs": [
             [

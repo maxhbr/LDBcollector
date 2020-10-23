@@ -5,18 +5,18 @@ mpich2 License (mpich2)
 
 **Other Names:**
 
--   `mpich`
+-   `scancode://mpich`
 
 -   `MPICH License`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -82,10 +82,11 @@ Raw Data
         "__impliedNames": [
             "mpich2",
             "mpich2 License",
-            "mpich",
+            "scancode://mpich",
             "MPICH License"
         ],
         "__impliedId": "mpich2",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -93,7 +94,7 @@ Raw Data
                         "mpich2",
                         "mpich2",
                         "mpich2 License",
-                        "mpich",
+                        "scancode://mpich",
                         "MPICH License"
                     ],
                     "__impliedId": "mpich2"
@@ -102,7 +103,7 @@ Raw Data
                 "otherNames": [
                     "mpich2",
                     "mpich2 License",
-                    "mpich",
+                    "scancode://mpich",
                     "MPICH License"
                 ]
             },
@@ -121,6 +122,7 @@ Raw Data
                         "mpich2 License"
                     ],
                     "__impliedId": "mpich2",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -148,6 +150,7 @@ Raw Data
                     "__impliedNames": [
                         "mpich2 License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -176,7 +179,7 @@ Raw Data
                 "spdxId": "mpich2",
                 "_implications": {
                     "__impliedNames": [
-                        "mpich",
+                        "scancode://mpich",
                         "MPICH License",
                         "mpich2"
                     ],
@@ -264,6 +267,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "COPYRIGHT\n\n    The following is a notice of limited availability of the code, and disclaimer\n    which must be included in the prologue of the code and in all source listings\n    of the code.\n\n    Copyright Notice\n     + 2002 University of Chicago\n\n    Permission is hereby granted to use, reproduce, prepare derivative works, and\n    to redistribute to others.  This software was authored by:\n\n    Mathematics and Computer Science Division\n    Argonne National Laboratory, Argonne IL 60439\n\n    (and)\n\n    Department of Computer Science\n    University of Illinois at Urbana-Champaign\n\n\nGOVERNMENT LICENSE\n\n    Portions of this material resulted from work developed under a U.S.\n    Government Contract and are subject to the following license: the Government\n    is granted for itself and others acting on its behalf a paid-up, nonexclusive,\n    irrevocable worldwide license in this computer software to reproduce, prepare\n    derivative works, and perform publicly and display publicly.\n\n    \t\t\t\t  DISCLAIMER\n\n    This computer code material was prepared, in part, as an account of work\n    sponsored by an agency of the United States Government.  Neither the United\n    States, nor the University of Chicago, nor any of their employees, makes any\n    warranty express or implied, or assumes any legal liability or responsibility\n    for the accuracy, completeness, or usefulness of any information, apparatus,\n    product, or process disclosed, or represents that its use would not infringe\n    privately owned rights.",
         "__impliedURLs": [
             [

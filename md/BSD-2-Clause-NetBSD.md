@@ -3,10 +3,14 @@ BSD 2-Clause NetBSD License (BSD-2-Clause-NetBSD)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://bsd-2-clause-netbsd`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -53,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "BSD-2-Clause-NetBSD",
             "BSD 2-Clause NetBSD License",
-            "bsd-2-clause-netbsd"
+            "scancode://bsd-2-clause-netbsd"
         ],
         "__impliedId": "BSD-2-Clause-NetBSD",
         "facts": {
@@ -63,7 +67,7 @@ Raw Data
                         "BSD-2-Clause-NetBSD",
                         "BSD-2-Clause-NetBSD",
                         "BSD 2-Clause NetBSD License",
-                        "bsd-2-clause-netbsd"
+                        "scancode://bsd-2-clause-netbsd"
                     ],
                     "__impliedId": "BSD-2-Clause-NetBSD"
                 },
@@ -71,7 +75,7 @@ Raw Data
                 "otherNames": [
                     "BSD-2-Clause-NetBSD",
                     "BSD 2-Clause NetBSD License",
-                    "bsd-2-clause-netbsd"
+                    "scancode://bsd-2-clause-netbsd"
                 ]
             },
             "SPDX": {
@@ -89,6 +93,7 @@ Raw Data
                         "BSD 2-Clause NetBSD License"
                     ],
                     "__impliedId": "BSD-2-Clause-NetBSD",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -117,7 +122,7 @@ Raw Data
                 "spdxId": "BSD-2-Clause-NetBSD",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-2-clause-netbsd",
+                        "scancode://bsd-2-clause-netbsd",
                         "BSD-2-Clause-NetBSD",
                         "BSD-2-Clause-NetBSD"
                     ],
@@ -194,6 +199,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE NETBSD FOUNDATION, INC. AND CONTRIBUTORS\n``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED\nTO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n",
         "__impliedURLs": [
             [

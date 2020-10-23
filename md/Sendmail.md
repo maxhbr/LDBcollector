@@ -3,10 +3,14 @@ Sendmail License (Sendmail)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://sendmail`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -124,9 +128,10 @@ Raw Data
         "__impliedNames": [
             "Sendmail",
             "Sendmail License",
-            "sendmail"
+            "scancode://sendmail"
         ],
         "__impliedId": "Sendmail",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -134,7 +139,7 @@ Raw Data
                         "Sendmail",
                         "Sendmail",
                         "Sendmail License",
-                        "sendmail"
+                        "scancode://sendmail"
                     ],
                     "__impliedId": "Sendmail"
                 },
@@ -142,7 +147,7 @@ Raw Data
                 "otherNames": [
                     "Sendmail",
                     "Sendmail License",
-                    "sendmail"
+                    "scancode://sendmail"
                 ]
             },
             "SPDX": {
@@ -161,6 +166,7 @@ Raw Data
                         "Sendmail License"
                     ],
                     "__impliedId": "Sendmail",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -192,6 +198,7 @@ Raw Data
                     "__impliedNames": [
                         "Sendmail License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -220,7 +227,7 @@ Raw Data
                 "spdxId": "Sendmail",
                 "_implications": {
                     "__impliedNames": [
-                        "sendmail",
+                        "scancode://sendmail",
                         "Sendmail License",
                         "Sendmail"
                     ],
@@ -307,6 +314,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "                 SENDMAIL LICENSE\n\nThe following license terms and conditions apply, unless a different\nlicense is obtained from Sendmail, Inc., 6425 Christie Ave, Fourth Floor,\nEmeryville, CA 94608, USA, or by electronic mail at license@sendmail.com.\n\nLicense Terms:\n\nUse, Modification and Redistribution (including distribution of any\nmodified or derived work) in source and binary forms is permitted only if\neach of the following conditions is met:\n\n1. Redistributions qualify as \"freeware\" or \"Open Source Software\" under\n   one of the following terms:\n\n   (a) Redistributions are made at no charge beyond the reasonable cost of\n       materials and delivery.\n\n   (b) Redistributions are accompanied by a copy of the Source Code or by an\n       irrevocable offer to provide a copy of the Source Code for up to three\n       years at the cost of materials and delivery.  Such redistributions\n       must allow further use, modification, and redistribution of the Source\n       Code under substantially the same terms as this license.  For the\n       purposes of redistribution \"Source Code\" means the complete compilable\n       and linkable source code of sendmail including all modifications.\n\n2. Redistributions of source code must retain the copyright notices as they\n   appear in each source code file, these license terms, and the\n   disclaimer/limitation of liability set forth as paragraph 6 below.\n\n3. Redistributions in binary form must reproduce the Copyright Notice,\n   these license terms, and the disclaimer/limitation of liability set\n   forth as paragraph 6 below, in the documentation and/or other materials\n   provided with the distribution.  For the purposes of binary distribution\n   the \"Copyright Notice\" refers to the following language:\n   \"Copyright (c) 1998-2004 Sendmail, Inc.  All rights reserved.\"\n\n4. Neither the name of Sendmail, Inc. nor the University of California nor\n   the names of their contributors may be used to endorse or promote\n   products derived from this software without specific prior written\n   permission.  The name \"sendmail\" is a trademark of Sendmail, Inc.\n\n5. All redistributions must comply with the conditions imposed by the\n   University of California on certain embedded code, whose copyright\n   notice and conditions for redistribution are as follows:\n\n   (a) Copyright (c) 1988, 1993 The Regents of the University of\n       California.  All rights reserved.\n\n   (b) Redistribution and use in source and binary forms, with or without\n       modification, are permitted provided that the following conditions\n       are met:\n\n      (i)   Redistributions of source code must retain the above copyright\n            notice, this list of conditions and the following disclaimer.\n\n      (ii)  Redistributions in binary form must reproduce the above\n            copyright notice, this list of conditions and the following\n            disclaimer in the documentation and/or other materials provided\n            with the distribution.\n\n      (iii) Neither the name of the University nor the names of its\n            contributors may be used to endorse or promote products derived\n            from this software without specific prior written permission.\n\n6. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY\n   SENDMAIL, INC. AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED\n   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n   MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN\n   NO EVENT SHALL SENDMAIL, INC., THE REGENTS OF THE UNIVERSITY OF\n   CALIFORNIA OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\n   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\n   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\n   USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\n   ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\n   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n$Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $",
         "__impliedURLs": [
             [

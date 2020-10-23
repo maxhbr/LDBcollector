@@ -3,10 +3,14 @@ dvipdfm License (dvipdfm)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://dvipdfm`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -20,7 +24,9 @@ URLs
 Text
 ----
 
-    A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.
+    A modified version of this file may be distributed, but it should be distributed
+    with a *different* name. Changed files must be distributed *together with a
+    complete and unchanged* distribution of these files.
 
 ------------------------------------------------------------------------
 
@@ -30,23 +36,27 @@ Raw Data
     {
         "__impliedNames": [
             "dvipdfm",
-            "dvipdfm License"
+            "dvipdfm License",
+            "scancode://dvipdfm"
         ],
         "__impliedId": "dvipdfm",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
                         "dvipdfm",
                         "dvipdfm",
-                        "dvipdfm License"
+                        "dvipdfm License",
+                        "scancode://dvipdfm"
                     ],
                     "__impliedId": "dvipdfm"
                 },
                 "shortname": "dvipdfm",
                 "otherNames": [
                     "dvipdfm",
-                    "dvipdfm License"
+                    "dvipdfm License",
+                    "scancode://dvipdfm"
                 ]
             },
             "SPDX": {
@@ -64,6 +74,7 @@ Raw Data
                         "dvipdfm License"
                     ],
                     "__impliedId": "dvipdfm",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -91,6 +102,7 @@ Raw Data
                     "__impliedNames": [
                         "dvipdfm License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -107,7 +119,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/dvipdfm",
                 "shortName": "dvipdfm License",
                 "textUrls": null,
-                "text": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+                "text": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Unspecified",
@@ -117,7 +129,7 @@ Raw Data
                 "spdxId": "dvipdfm",
                 "_implications": {
                     "__impliedNames": [
-                        "dvipdfm",
+                        "scancode://dvipdfm",
                         "dvipdfm License",
                         "dvipdfm"
                     ],
@@ -129,7 +141,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+                    "__impliedText": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -155,7 +167,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "A modified version of this file may be distributed, but it should be distributed with a *different* name. Changed files must be distributed *together with a complete and unchanged* distribution of these files.",
+        "__isOsiApproved": false,
+        "__impliedText": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
         "__impliedURLs": [
             [
                 "SPDX",

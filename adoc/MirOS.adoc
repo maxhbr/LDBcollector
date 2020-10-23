@@ -1,38 +1,38 @@
 == MirOS License (MirOS)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |MirOS License
 |Shortname |MirOS
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `mir-os`
-* `The MirOS Licence (MirOS)`
-* `MirOS Licence`
+* `+scancode://mir-os+`
+* `+The MirOS Licence (MirOS)+`
+* `+MirOS Licence+`
 
 === Comments on (easy) usability
 
-* *↑* Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC but
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/MirOS.html[SPDX])
+* **↑**Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC but
 applicable to more than just software (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/MirOS.html[SPDX])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs
@@ -73,11 +73,12 @@ of said person's immediate fault when using the work as intended.
     "__impliedNames": [
         "MirOS",
         "MirOS License",
-        "mir-os",
+        "scancode://mir-os",
         "The MirOS Licence (MirOS)",
         "MirOS Licence"
     ],
     "__impliedId": "MirOS",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The MirOS Licence"
     ],
@@ -115,7 +116,7 @@ of said person's immediate fault when using the work as intended.
                     "MirOS",
                     "MirOS",
                     "MirOS License",
-                    "mir-os",
+                    "scancode://mir-os",
                     "The MirOS Licence (MirOS)",
                     "MirOS Licence"
                 ],
@@ -125,7 +126,7 @@ of said person's immediate fault when using the work as intended.
             "otherNames": [
                 "MirOS",
                 "MirOS License",
-                "mir-os",
+                "scancode://mir-os",
                 "The MirOS Licence (MirOS)",
                 "MirOS Licence"
             ]
@@ -154,6 +155,7 @@ of said person's immediate fault when using the work as intended.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -181,6 +183,7 @@ of said person's immediate fault when using the work as intended.
                 "__impliedNames": [
                     "MirOS License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -210,7 +213,7 @@ of said person's immediate fault when using the work as intended.
             "spdxId": "MirOS",
             "_implications": {
                 "__impliedNames": [
-                    "mir-os",
+                    "scancode://mir-os",
                     "MirOS License",
                     "MirOS"
                 ],
@@ -446,6 +449,7 @@ of said person's immediate fault when using the work as intended.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": true,
     "__impliedText": "Provided that these terms and disclaimer and all copyright notices\nare retained or reproduced in an accompanying document, permission\nis granted to deal in this work without restriction, including unâ\nlimited rights to use, publicly perform, distribute, sell, modify,\nmerge, give away, or sublicence.\n\nThis work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\nthe utmost extent permitted by applicable law, neither express nor\nimplied; without malicious intent or gross negligence. In no event\nmay a licensor, author or contributor be held liable for indirect,\ndirect, other damage, loss, or other issues arising in any way out\nof dealing in the work, even if advised of the possibility of such\ndamage or existence of a defect, except proven that it results out\nof said person's immediate fault when using the work as intended.\n",
     "__impliedURLs": [
         [

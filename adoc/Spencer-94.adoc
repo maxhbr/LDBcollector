@@ -1,22 +1,22 @@
 == Spencer License 94 (Spencer-94)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Spencer License 94
 |Shortname |Spencer-94
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `hs-regexp`
-* `Henry Spencer Regexp License`
+* `+scancode://hs-regexp+`
+* `+Henry Spencer Regexp License+`
 
 === Comments on (easy) usability
 
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs
@@ -59,7 +59,7 @@ sources, credits must appear in the documentation.
     "__impliedNames": [
         "Spencer-94",
         "Spencer License 94",
-        "hs-regexp",
+        "scancode://hs-regexp",
         "Henry Spencer Regexp License"
     ],
     "__impliedId": "Spencer-94",
@@ -70,7 +70,7 @@ sources, credits must appear in the documentation.
                     "Spencer-94",
                     "Spencer-94",
                     "Spencer License 94",
-                    "hs-regexp",
+                    "scancode://hs-regexp",
                     "Henry Spencer Regexp License"
                 ],
                 "__impliedId": "Spencer-94"
@@ -79,7 +79,7 @@ sources, credits must appear in the documentation.
             "otherNames": [
                 "Spencer-94",
                 "Spencer License 94",
-                "hs-regexp",
+                "scancode://hs-regexp",
                 "Henry Spencer Regexp License"
             ]
         },
@@ -98,6 +98,7 @@ sources, credits must appear in the documentation.
                     "Spencer License 94"
                 ],
                 "__impliedId": "Spencer-94",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -128,7 +129,7 @@ sources, credits must appear in the documentation.
             "spdxId": "Spencer-94",
             "_implications": {
                 "__impliedNames": [
-                    "hs-regexp",
+                    "scancode://hs-regexp",
                     "Henry Spencer Regexp License",
                     "Spencer-94"
                 ],
@@ -209,6 +210,7 @@ sources, credits must appear in the documentation.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "This software is not subject to any license of the American Telephone and\nTelegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
     "__impliedURLs": [
         [

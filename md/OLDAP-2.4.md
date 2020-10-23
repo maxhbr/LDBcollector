@@ -5,14 +5,14 @@ Open LDAP Public License v2.4 (OLDAP-2.4)
 
 **Other Names:**
 
--   `openldap-2.4`
+-   `scancode://openldap-2.4`
 
 -   `OpenLDAP Public License 2.4`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -85,7 +85,7 @@ Raw Data
         "__impliedNames": [
             "OLDAP-2.4",
             "Open LDAP Public License v2.4",
-            "openldap-2.4",
+            "scancode://openldap-2.4",
             "OpenLDAP Public License 2.4"
         ],
         "__impliedId": "OLDAP-2.4",
@@ -96,7 +96,7 @@ Raw Data
                         "OLDAP-2.4",
                         "OLDAP-2.4",
                         "Open LDAP Public License v2.4",
-                        "openldap-2.4",
+                        "scancode://openldap-2.4",
                         "OpenLDAP Public License 2.4"
                     ],
                     "__impliedId": "OLDAP-2.4"
@@ -105,7 +105,7 @@ Raw Data
                 "otherNames": [
                     "OLDAP-2.4",
                     "Open LDAP Public License v2.4",
-                    "openldap-2.4",
+                    "scancode://openldap-2.4",
                     "OpenLDAP Public License 2.4"
                 ]
             },
@@ -124,6 +124,7 @@ Raw Data
                         "Open LDAP Public License v2.4"
                     ],
                     "__impliedId": "OLDAP-2.4",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -152,7 +153,7 @@ Raw Data
                 "spdxId": "OLDAP-2.4",
                 "_implications": {
                     "__impliedNames": [
-                        "openldap-2.4",
+                        "scancode://openldap-2.4",
                         "OpenLDAP Public License 2.4",
                         "OLDAP-2.4"
                     ],
@@ -229,6 +230,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "The OpenLDAP Public License \nVersion 2.4, 8 December 2000 \n\nRedistribution and use of this software and associated documentation \n(\"Software\"), with or without modification, are permitted provided \nthat the following conditions are met: \n\n1. Redistributions of source code must retain copyright statements \nand notices. \n\n2. Redistributions in binary form must reproduce applicable copyright \nstatements and notices, this list of conditions, and the following \ndisclaimer in the documentation and/or other materials provided \nwith the distribution. \n\n3. Redistributions must contain a verbatim copy of this document. \n\n4. The names and trademarks of the authors and copyright holders \nmust not be used in advertising or otherwise to promote the sale, \nuse or other dealing in this Software without specific, written \nprior permission. \n\n5. Due credit should be given to the OpenLDAP Project. \n\n6. The OpenLDAP Foundation may revise this license from time to \ntime. Each revision is distinguished by a version number. You \nmay use the Software under terms of this license revision or under \nthe terms of any subsequent revision of the license. \n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS \n``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT \nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND \nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL \nTHE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY \nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL \nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE \nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS \nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER \nIN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR \nOTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN \nIF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \n\nOpenLDAP is a trademark of the OpenLDAP Foundation. \n\nCopyright 1999-2000 The OpenLDAP Foundation, Redwood City, \nCalifornia, USA. All Rights Reserved. Permission to copy and \ndistributed verbatim copies of this document is granted.",
         "__impliedURLs": [
             [

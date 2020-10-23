@@ -5,12 +5,14 @@ Independent JPEG Group License (IJG)
 
 **Other Names:**
 
+-   `scancode://ijg`
+
 -   `JPEG License`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -23,7 +25,7 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -56,6 +58,8 @@ OSADL Rule
     USE CASE Binary delivery
     	YOU MUST Credit Verbatim "This software is based in part on the work of the Independent JPEG Group"
     PATENT HINTS Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -155,10 +159,11 @@ Raw Data
         "__impliedNames": [
             "IJG",
             "Independent JPEG Group License",
-            "ijg",
+            "scancode://ijg",
             "JPEG License"
         ],
         "__impliedId": "IJG",
+        "__isFsfFree": true,
         "__hasPatentHint": true,
         "facts": {
             "LicenseName": {
@@ -167,7 +172,7 @@ Raw Data
                         "IJG",
                         "IJG",
                         "Independent JPEG Group License",
-                        "ijg",
+                        "scancode://ijg",
                         "JPEG License"
                     ],
                     "__impliedId": "IJG"
@@ -176,7 +181,7 @@ Raw Data
                 "otherNames": [
                     "IJG",
                     "Independent JPEG Group License",
-                    "ijg",
+                    "scancode://ijg",
                     "JPEG License"
                 ]
             },
@@ -195,6 +200,7 @@ Raw Data
                         "Independent JPEG Group License"
                     ],
                     "__impliedId": "IJG",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -233,6 +239,7 @@ Raw Data
                     "__impliedNames": [
                         "Independent JPEG Group License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -262,7 +269,7 @@ Raw Data
                 "spdxId": "IJG",
                 "_implications": {
                     "__impliedNames": [
-                        "ijg",
+                        "scancode://ijg",
                         "JPEG License",
                         "IJG"
                     ],
@@ -399,6 +406,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "LEGAL ISSUES\n============\n\nIn plain English:\n\n1. We don't promise that this software works.  (But if you find any bugs,\n   please let us know!)\n2. You can use this software for whatever you want.  You don't have to pay us.\n3. You may not pretend that you wrote this software.  If you use it in a\n   program, you must acknowledge somewhere in your documentation that\n   you've used the IJG code.\n\nIn legalese:\n\nThe authors make NO WARRANTY or representation, either express or implied,\nwith respect to this software, its quality, accuracy, merchantability, or\nfitness for a particular purpose.  This software is provided \"AS IS\", and you,\nits user, assume the entire risk as to its quality and accuracy.\n\nThis software is copyright (C) 1991-1998, Thomas G. Lane.\nAll Rights Reserved except as specified below.\n\nPermission is hereby granted to use, copy, modify, and distribute this\nsoftware (or portions thereof) for any purpose, without fee, subject to these\nconditions:\n(1) If any part of the source code for this software is distributed, then this\nREADME file must be included, with this copyright and no-warranty notice\nunaltered; and any additions, deletions, or changes to the original files\nmust be clearly indicated in accompanying documentation.\n(2) If only executable code is distributed, then the accompanying\ndocumentation must state that \"this software is based in part on the work of\nthe Independent JPEG Group\".\n(3) Permission for use of this software is granted only if the user accepts\nfull responsibility for any undesirable consequences; the authors accept\nNO LIABILITY for damages of any kind.\n\nThese conditions apply to any software derived from or based on the IJG code,\nnot just to the unmodified library.  If you use our work, you ought to\nacknowledge us.\n\nPermission is NOT granted for the use of any IJG author's name or company name\nin advertising or publicity relating to this software or products derived from\nit.  This software may be referred to only as \"the Independent JPEG Group's\nsoftware\".\n\nWe specifically permit and encourage the use of this software as the basis of\ncommercial products, provided that all warranty or liability claims are\nassumed by the product vendor.\n\n\nansi2knr.c is included in this distribution by permission of L. Peter Deutsch,\nsole proprietor of its copyright holder, Aladdin Enterprises of Menlo Park, CA.\nansi2knr.c is NOT covered by the above copyright and conditions, but instead\nby the usual distribution terms of the Free Software Foundation; principally,\nthat you must include source code if you redistribute it.  (See the file\nansi2knr.c for full details.)  However, since ansi2knr.c is not needed as part\nof any program generated from the IJG code, this does not limit you more than\nthe foregoing paragraphs do.\n\nThe Unix configuration script \"configure\" was produced with GNU Autoconf.\nIt is copyright by the Free Software Foundation but is freely distributable.\nThe same holds for its supporting scripts (config.guess, config.sub,\nltconfig, ltmain.sh).  Another support script, install-sh, is copyright\nby M.I.T. but is also freely distributable.\n\nIt appears that the arithmetic coding option of the JPEG spec is covered by\npatents owned by IBM, AT&T, and Mitsubishi.  Hence arithmetic coding cannot\nlegally be used without obtaining one or more licenses.  For this reason,\nsupport for arithmetic coding has been removed from the free JPEG software.\n(Since arithmetic coding provides only a marginal gain over the unpatented\nHuffman mode, it is unlikely that very many implementations will support it.)\nSo far as we are aware, there are no patent restrictions on the remaining\ncode.\n\nThe IJG distribution formerly included code to read and write GIF files.\nTo avoid entanglement with the Unisys LZW patent, GIF reading support has\nbeen removed altogether, and the GIF writer has been simplified to produce\n\"uncompressed GIFs\".  This technique does not use the LZW algorithm; the\nresulting GIF files are larger than usual, but are readable by all standard\nGIF decoders.\n\nWe are required to state that\n    \"The Graphics Interchange Format(c) is the Copyright property of\n    CompuServe Incorporated.  GIF(sm) is a Service Mark property of\n    CompuServe Incorporated.\"",
         "__impliedURLs": [
             [

@@ -2,9 +2,11 @@
     "__impliedNames": [
         "diffmark",
         "diffmark license",
+        "scancode://diffmark",
         "diffmark License"
     ],
     "__impliedId": "diffmark",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -12,6 +14,7 @@
                     "diffmark",
                     "diffmark",
                     "diffmark license",
+                    "scancode://diffmark",
                     "diffmark License"
                 ],
                 "__impliedId": "diffmark"
@@ -20,6 +23,7 @@
             "otherNames": [
                 "diffmark",
                 "diffmark license",
+                "scancode://diffmark",
                 "diffmark License"
             ]
         },
@@ -38,6 +42,7 @@
                     "diffmark license"
                 ],
                 "__impliedId": "diffmark",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -65,6 +70,7 @@
                 "__impliedNames": [
                     "diffmark license"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -91,7 +97,7 @@
             "spdxId": "diffmark",
             "_implications": {
                 "__impliedNames": [
-                    "diffmark",
+                    "scancode://diffmark",
                     "diffmark License",
                     "diffmark"
                 ],
@@ -175,6 +181,7 @@
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "1. you can do what you want with it\n2. I refuse any responsibility for the consequences",
     "__impliedURLs": [
         [

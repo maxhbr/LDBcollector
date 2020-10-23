@@ -5,17 +5,17 @@ Standard ML of New Jersey License (SMLNJ)
 
 **Other Names:**
 
--   `standard-ml-nj`
+-   `scancode://standard-ml-nj`
 
 -   `Standard ML of New Jersey`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -63,10 +63,11 @@ Raw Data
         "__impliedNames": [
             "SMLNJ",
             "Standard ML of New Jersey License",
-            "standard-ml-nj",
+            "scancode://standard-ml-nj",
             "Standard ML of New Jersey"
         ],
         "__impliedId": "SMLNJ",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -74,7 +75,7 @@ Raw Data
                         "SMLNJ",
                         "SMLNJ",
                         "Standard ML of New Jersey License",
-                        "standard-ml-nj",
+                        "scancode://standard-ml-nj",
                         "Standard ML of New Jersey"
                     ],
                     "__impliedId": "SMLNJ"
@@ -83,7 +84,7 @@ Raw Data
                 "otherNames": [
                     "SMLNJ",
                     "Standard ML of New Jersey License",
-                    "standard-ml-nj",
+                    "scancode://standard-ml-nj",
                     "Standard ML of New Jersey"
                 ]
             },
@@ -102,6 +103,7 @@ Raw Data
                         "Standard ML of New Jersey License"
                     ],
                     "__impliedId": "SMLNJ",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -129,6 +131,7 @@ Raw Data
                     "__impliedNames": [
                         "Standard ML of New Jersey License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -159,7 +162,7 @@ Raw Data
                 "spdxId": "SMLNJ",
                 "_implications": {
                     "__impliedNames": [
-                        "standard-ml-nj",
+                        "scancode://standard-ml-nj",
                         "Standard ML of New Jersey",
                         "SMLNJ"
                     ],
@@ -255,6 +258,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies and that\nboth the copyright notice and this permission notice and warranty\ndisclaimer appear in supporting documentation, and that the names of the\nauthors or their employers not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.\n\nThe authors and their employers disclaim all warranties with regard to\nthis software, including all implied warranties of merchantability and\nfitness. In no event shall the authors or their employers be liable for\nany special, indirect or consequential damages or any damages whatsoever\nresulting from loss of use, data or profits, whether in an action of\ncontract, negligence or other tortious action, arising out of or in\nconnection with the use or performance of this software.",
         "__impliedURLs": [
             [

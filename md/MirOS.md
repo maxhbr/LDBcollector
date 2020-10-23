@@ -5,7 +5,7 @@ MirOS License (MirOS)
 
 **Other Names:**
 
--   `mir-os`
+-   `scancode://mir-os`
 
 -   `The MirOS Licence (MirOS)`
 
@@ -14,17 +14,16 @@ MirOS License (MirOS)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC
-    but applicable to more than just software (source: [Debian Free
-    Software
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/MirOS.html "SPDX"))
+
+-   **↑**Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC but
+    applicable to more than just software (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/MirOS.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -35,7 +34,7 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -82,11 +81,12 @@ Raw Data
         "__impliedNames": [
             "MirOS",
             "MirOS License",
-            "mir-os",
+            "scancode://mir-os",
             "The MirOS Licence (MirOS)",
             "MirOS Licence"
         ],
         "__impliedId": "MirOS",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The MirOS Licence"
         ],
@@ -124,7 +124,7 @@ Raw Data
                         "MirOS",
                         "MirOS",
                         "MirOS License",
-                        "mir-os",
+                        "scancode://mir-os",
                         "The MirOS Licence (MirOS)",
                         "MirOS Licence"
                     ],
@@ -134,7 +134,7 @@ Raw Data
                 "otherNames": [
                     "MirOS",
                     "MirOS License",
-                    "mir-os",
+                    "scancode://mir-os",
                     "The MirOS Licence (MirOS)",
                     "MirOS Licence"
                 ]
@@ -163,6 +163,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -190,6 +191,7 @@ Raw Data
                     "__impliedNames": [
                         "MirOS License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -219,7 +221,7 @@ Raw Data
                 "spdxId": "MirOS",
                 "_implications": {
                     "__impliedNames": [
-                        "mir-os",
+                        "scancode://mir-os",
                         "MirOS License",
                         "MirOS"
                     ],
@@ -455,6 +457,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "Provided that these terms and disclaimer and all copyright notices\nare retained or reproduced in an accompanying document, permission\nis granted to deal in this work without restriction, including unâ\nlimited rights to use, publicly perform, distribute, sell, modify,\nmerge, give away, or sublicence.\n\nThis work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\nthe utmost extent permitted by applicable law, neither express nor\nimplied; without malicious intent or gross negligence. In no event\nmay a licensor, author or contributor be held liable for indirect,\ndirect, other damage, loss, or other issues arising in any way out\nof dealing in the work, even if advised of the possibility of such\ndamage or existence of a defect, except proven that it results out\nof said person's immediate fault when using the work as intended.\n",
         "__impliedURLs": [
             [

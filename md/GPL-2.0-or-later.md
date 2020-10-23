@@ -5,7 +5,7 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 **Other Names:**
 
--   `gpl-2.0-plus`
+-   `scancode://gpl-2.0-plus`
 
 -   `GPL 2.0 or later`
 
@@ -26,20 +26,20 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This is the most popular free software license. Most of Linux
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX"))
+
+-   **↑**This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
     basic software in the GNU operating system. (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX"))
-
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
@@ -152,6 +152,8 @@ OSADL Rule
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
 
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -177,7 +179,7 @@ Raw Data
         "__impliedNames": [
             "GPL-2.0-or-later",
             "GNU General Public License v2.0 or later",
-            "gpl-2.0-plus",
+            "scancode://gpl-2.0-plus",
             "GPL 2.0 or later",
             "GNU General Public License 2.0",
             "GPL-2.0+",
@@ -188,6 +190,7 @@ Raw Data
             "GPL-2.0"
         ],
         "__impliedId": "GPL-2.0-or-later",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The GNU General Public License (GPL)"
         ],
@@ -226,7 +229,7 @@ Raw Data
                         "GPL-2.0-or-later",
                         "GPL-2.0-or-later",
                         "GNU General Public License v2.0 or later",
-                        "gpl-2.0-plus",
+                        "scancode://gpl-2.0-plus",
                         "GPL 2.0 or later",
                         "GNU General Public License 2.0",
                         "GPL-2.0+",
@@ -240,7 +243,7 @@ Raw Data
                 "otherNames": [
                     "GPL-2.0-or-later",
                     "GNU General Public License v2.0 or later",
-                    "gpl-2.0-plus",
+                    "scancode://gpl-2.0-plus",
                     "GPL 2.0 or later",
                     "GNU General Public License 2.0",
                     "GPL-2.0+",
@@ -274,6 +277,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -323,6 +327,7 @@ Raw Data
                     "__impliedNames": [
                         "GNU General Public License v2.0 or later"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -353,7 +358,7 @@ Raw Data
                 "spdxId": "GPL-2.0-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "gpl-2.0-plus",
+                        "scancode://gpl-2.0-plus",
                         "GPL 2.0 or later",
                         "GPL-2.0-or-later"
                     ],
@@ -429,9 +434,9 @@ Raw Data
                     "GPL2+",
                     "GPL (v2 or later)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "finos-osr/OSLC-handbook": {
@@ -602,6 +607,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "Copyleft",
+        "__isOsiApproved": true,
         "__impliedText": "This program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 2 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program; if not, write to the Free Software Foundation, Inc., 51 Franklin\nStreet, Fifth Floor, Boston, MA  02110-1301, USA.",
         "__impliedURLs": [
             [

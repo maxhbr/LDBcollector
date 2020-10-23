@@ -5,14 +5,14 @@ bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
 
 **Other Names:**
 
--   `bzip2-libbzip-2010`
+-   `scancode://bzip2-libbzip-2010`
 
 -   `bzip2 License 2010`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -43,6 +43,8 @@ OSADL Rule
     	YOU MUST NOT Appropriate
     	IF Software modification
     		YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -87,7 +89,7 @@ Raw Data
         "__impliedNames": [
             "bzip2-1.0.6",
             "bzip2 and libbzip2 License v1.0.6",
-            "bzip2-libbzip-2010",
+            "scancode://bzip2-libbzip-2010",
             "bzip2 License 2010"
         ],
         "__impliedId": "bzip2-1.0.6",
@@ -98,7 +100,7 @@ Raw Data
                         "bzip2-1.0.6",
                         "bzip2-1.0.6",
                         "bzip2 and libbzip2 License v1.0.6",
-                        "bzip2-libbzip-2010",
+                        "scancode://bzip2-libbzip-2010",
                         "bzip2 License 2010"
                     ],
                     "__impliedId": "bzip2-1.0.6"
@@ -107,7 +109,7 @@ Raw Data
                 "otherNames": [
                     "bzip2-1.0.6",
                     "bzip2 and libbzip2 License v1.0.6",
-                    "bzip2-libbzip-2010",
+                    "scancode://bzip2-libbzip-2010",
                     "bzip2 License 2010"
                 ]
             },
@@ -126,6 +128,7 @@ Raw Data
                         "bzip2 and libbzip2 License v1.0.6"
                     ],
                     "__impliedId": "bzip2-1.0.6",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -166,7 +169,7 @@ Raw Data
                 "spdxId": "bzip2-1.0.6",
                 "_implications": {
                     "__impliedNames": [
-                        "bzip2-libbzip-2010",
+                        "scancode://bzip2-libbzip-2010",
                         "bzip2 License 2010",
                         "bzip2-1.0.6"
                     ],
@@ -247,6 +250,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. The origin of this software must not be misrepresented; you must\n   not claim that you wrote the original software.  If you use this\n   software in a product, an acknowledgment in the product\n   documentation would be appreciated but is not required.\n\n3. Altered source versions must be plainly marked as such, and must\n   not be misrepresented as being the original software.\n\n4. The name of the author may not be used to endorse or promote\n   products derived from this software without specific prior written\n   permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
         "__impliedURLs": [
             [

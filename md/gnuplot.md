@@ -3,10 +3,14 @@ gnuplot License (gnuplot)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://gnuplot`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -23,20 +27,32 @@ URLs
 Text
 ----
 
-    Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley
+    Permission to use, copy, and distribute this software and its documentation for
+    any purpose with or without fee is hereby granted, provided that the above
+    copyright notice appear in all copies and that both that copyright notice and
+    this permission notice appear in supporting documentation.
 
-    Permission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.
+    Permission to modify the software is granted, but not the right to distribute
+    the complete modified source code. Modifications are to be distributed as
+    patches to the released version. 
 
-    Permission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you 
+    Permission to distribute binaries produced by compiling modified sources is
+    granted, provided you 
 
-         1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries, 
-         2. add special version identification to distinguish your version in addition to the base release version number, 
-         3. provide your name and address as the primary contact for the support of your modified version, and 
+         1. distribute the corresponding source modifications from the released
+            version in the form of a patch file along with the binaries, 
+         2. add special version identification to distinguish your version in
+            addition to the base release version number, 
+         3. provide your name and address as the primary contact for the support of
+            your modified version, and 
          4. retain our contact information in regard to use of the base software. 
 
-    Permission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.
+    Permission to distribute the released version of the source code along with
+    corresponding source modifications in the form of a patch file is granted with
+    same provisions 2 through 4 for binary distributions.
 
-    This software is provided "as is" without express or implied warranty to the extent permitted by applicable law.
+    This software is provided "as is" without express or implied warranty to the
+    extent permitted by applicable law.
 
 ------------------------------------------------------------------------
 
@@ -46,23 +62,27 @@ Raw Data
     {
         "__impliedNames": [
             "gnuplot",
-            "gnuplot License"
+            "gnuplot License",
+            "scancode://gnuplot"
         ],
         "__impliedId": "gnuplot",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
                         "gnuplot",
                         "gnuplot",
-                        "gnuplot License"
+                        "gnuplot License",
+                        "scancode://gnuplot"
                     ],
                     "__impliedId": "gnuplot"
                 },
                 "shortname": "gnuplot",
                 "otherNames": [
                     "gnuplot",
-                    "gnuplot License"
+                    "gnuplot License",
+                    "scancode://gnuplot"
                 ]
             },
             "SPDX": {
@@ -80,6 +100,7 @@ Raw Data
                         "gnuplot License"
                     ],
                     "__impliedId": "gnuplot",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -107,6 +128,7 @@ Raw Data
                     "__impliedNames": [
                         "gnuplot License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -125,7 +147,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing:Gnuplot?rd=Licensing/Gnuplot",
                 "shortName": "gnuplot License",
                 "textUrls": null,
-                "text": "Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you \n\n     1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries, \n     2. add special version identification to distinguish your version in addition to the base release version number, \n     3. provide your name and address as the primary contact for the support of your modified version, and \n     4. retain our contact information in regard to use of the base software. \n\nPermission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.\n\nThis software is provided \"as is\" without express or implied warranty to the extent permitted by applicable law.",
+                "text": "Permission to use, copy, and distribute this software and its documentation for\nany purpose with or without fee is hereby granted, provided that the above\ncopyright notice appear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute\nthe complete modified source code. Modifications are to be distributed as\npatches to the released version. \n\nPermission to distribute binaries produced by compiling modified sources is\ngranted, provided you \n\n     1. distribute the corresponding source modifications from the released\n        version in the form of a patch file along with the binaries, \n     2. add special version identification to distinguish your version in\n        addition to the base release version number, \n     3. provide your name and address as the primary contact for the support of\n        your modified version, and \n     4. retain our contact information in regard to use of the base software. \n\nPermission to distribute the released version of the source code along with\ncorresponding source modifications in the form of a patch file is granted with\nsame provisions 2 through 4 for binary distributions.\n\nThis software is provided \"as is\" without express or implied warranty to the\nextent permitted by applicable law.",
                 "category": "Copyleft Limited",
                 "osiUrl": null,
                 "owner": "GNU Project",
@@ -135,7 +157,7 @@ Raw Data
                 "spdxId": "gnuplot",
                 "_implications": {
                     "__impliedNames": [
-                        "gnuplot",
+                        "scancode://gnuplot",
                         "gnuplot License",
                         "gnuplot"
                     ],
@@ -147,7 +169,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedText": "Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you \n\n     1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries, \n     2. add special version identification to distinguish your version in addition to the base release version number, \n     3. provide your name and address as the primary contact for the support of your modified version, and \n     4. retain our contact information in regard to use of the base software. \n\nPermission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.\n\nThis software is provided \"as is\" without express or implied warranty to the extent permitted by applicable law.",
+                    "__impliedText": "Permission to use, copy, and distribute this software and its documentation for\nany purpose with or without fee is hereby granted, provided that the above\ncopyright notice appear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute\nthe complete modified source code. Modifications are to be distributed as\npatches to the released version. \n\nPermission to distribute binaries produced by compiling modified sources is\ngranted, provided you \n\n     1. distribute the corresponding source modifications from the released\n        version in the form of a patch file along with the binaries, \n     2. add special version identification to distinguish your version in\n        addition to the base release version number, \n     3. provide your name and address as the primary contact for the support of\n        your modified version, and \n     4. retain our contact information in regard to use of the base software. \n\nPermission to distribute the released version of the source code along with\ncorresponding source modifications in the form of a patch file is granted with\nsame provisions 2 through 4 for binary distributions.\n\nThis software is provided \"as is\" without express or implied warranty to the\nextent permitted by applicable law.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -177,7 +199,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
-        "__impliedText": "Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute the complete modified source code. Modifications are to be distributed as patches to the released version. Permission to distribute binaries produced by compiling modified sources is granted, provided you \n\n     1. distribute the corresponding source modifications from the released version in the form of a patch file along with the binaries, \n     2. add special version identification to distinguish your version in addition to the base release version number, \n     3. provide your name and address as the primary contact for the support of your modified version, and \n     4. retain our contact information in regard to use of the base software. \n\nPermission to distribute the released version of the source code along with corresponding source modifications in the form of a patch file is granted with same provisions 2 through 4 for binary distributions.\n\nThis software is provided \"as is\" without express or implied warranty to the extent permitted by applicable law.",
+        "__isOsiApproved": false,
+        "__impliedText": "Permission to use, copy, and distribute this software and its documentation for\nany purpose with or without fee is hereby granted, provided that the above\ncopyright notice appear in all copies and that both that copyright notice and\nthis permission notice appear in supporting documentation.\n\nPermission to modify the software is granted, but not the right to distribute\nthe complete modified source code. Modifications are to be distributed as\npatches to the released version. \n\nPermission to distribute binaries produced by compiling modified sources is\ngranted, provided you \n\n     1. distribute the corresponding source modifications from the released\n        version in the form of a patch file along with the binaries, \n     2. add special version identification to distinguish your version in\n        addition to the base release version number, \n     3. provide your name and address as the primary contact for the support of\n        your modified version, and \n     4. retain our contact information in regard to use of the base software. \n\nPermission to distribute the released version of the source code along with\ncorresponding source modifications in the form of a patch file is granted with\nsame provisions 2 through 4 for binary distributions.\n\nThis software is provided \"as is\" without express or implied warranty to the\nextent permitted by applicable law.",
         "__impliedURLs": [
             [
                 "SPDX",

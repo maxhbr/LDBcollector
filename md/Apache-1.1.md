@@ -5,6 +5,10 @@ Apache License 1.1 (Apache-1.1)
 
 **Other Names:**
 
+-   `scancode://apache-1.1`
+
+-   `Apache 1.1`
+
 -   `Apache Software License, Version 1.1`
 
 -   `Apache Software License 1.1`
@@ -16,26 +20,28 @@ Apache License 1.1 (Apache-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Older versions of the Apache License (1.0 and 1.1) are also
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Apache-1.1.html "SPDX"))
+
+-   **↑**Older versions of the Apache License (1.0 and 1.1) are also
     DFSG free, but the Apache Software Foundation recommends using the
     Apache 2.0 license instead. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Apache-1.1.html "SPDX"))
-
 URLs
 ----
+
+-   **Homepage:** http://www.apache.org/licenses/
 
 -   **OSI Page:** https://opensource.org/licenses/Apache-1.1
 
@@ -67,6 +73,57 @@ OSADL Rule
     		YOU MUST NOT Promote using "Apache" or "Apache Software Foundation"
     		YOU MUST NOT Use "Apache" [ex. "Jakarta," "Apache," or "Apache Commons,"] in product name
 
+(source: OSADL License Checklist)
+
+Text
+----
+
+    The Apache Software License, Version 1.1
+
+    Copyright (c) 2000 The Apache Software Foundation.  All rights
+    reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+
+    2. Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in
+       the documentation and/or other materials provided with the
+       distribution.
+
+    3. The end-user documentation included with the redistribution,
+       if any, must include the following acknowledgment:
+          "This product includes software developed by the
+           Apache Software Foundation (http://www.apache.org/)."
+       Alternately, this acknowledgment may appear in the software itself,
+       if and wherever such third-party acknowledgments normally appear.
+
+    4. The names "Apache" and "Apache Software Foundation" must
+       not be used to endorse or promote products derived from this
+       software without prior written permission. For written
+       permission, please contact apache@apache.org.
+
+    5. Products derived from this software may not be called "Apache",
+       nor may "Apache" appear in their name, without prior written
+       permission of the Apache Software Foundation.
+
+    THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
+    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+    OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR
+    ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+    LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+    USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+    OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+    SUCH DAMAGE.
+
 ------------------------------------------------------------------------
 
 Raw Data
@@ -76,12 +133,15 @@ Raw Data
         "__impliedNames": [
             "Apache-1.1",
             "Apache License 1.1",
+            "scancode://apache-1.1",
+            "Apache 1.1",
             "Apache Software License, Version 1.1",
             "Apache Software License 1.1",
             "Apache (v1.1)",
             "ASL 1.1"
         ],
         "__impliedId": "Apache-1.1",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The Apache Software License (ASL)"
         ],
@@ -119,6 +179,8 @@ Raw Data
                         "Apache-1.1",
                         "Apache-1.1",
                         "Apache License 1.1",
+                        "scancode://apache-1.1",
+                        "Apache 1.1",
                         "Apache Software License, Version 1.1",
                         "Apache Software License 1.1",
                         "Apache (v1.1)",
@@ -130,6 +192,8 @@ Raw Data
                 "otherNames": [
                     "Apache-1.1",
                     "Apache License 1.1",
+                    "scancode://apache-1.1",
+                    "Apache 1.1",
                     "Apache Software License, Version 1.1",
                     "Apache Software License 1.1",
                     "Apache (v1.1)",
@@ -161,6 +225,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -202,6 +267,7 @@ Raw Data
                     "__impliedNames": [
                         "Apache Software License 1.1"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -209,6 +275,53 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://opensource.org/licenses/Apache-1.1",
+                    "https://opensource.org/licenses/Apache-1.1"
+                ],
+                "homepageUrl": "http://www.apache.org/licenses/",
+                "shortName": "Apache 1.1",
+                "textUrls": null,
+                "text": "The Apache Software License, Version 1.1\n\nCopyright (c) 2000 The Apache Software Foundation.  All rights\nreserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. The end-user documentation included with the redistribution,\n   if any, must include the following acknowledgment:\n      \"This product includes software developed by the\n       Apache Software Foundation (http://www.apache.org/).\"\n   Alternately, this acknowledgment may appear in the software itself,\n   if and wherever such third-party acknowledgments normally appear.\n\n4. The names \"Apache\" and \"Apache Software Foundation\" must\n   not be used to endorse or promote products derived from this\n   software without prior written permission. For written\n   permission, please contact apache@apache.org.\n\n5. Products derived from this software may not be called \"Apache\",\n   nor may \"Apache\" appear in their name, without prior written\n   permission of the Apache Software Foundation.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\nUSE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Apache Software Foundation",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml",
+                "key": "apache-1.1",
+                "name": "Apache License 1.1",
+                "spdxId": "Apache-1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://apache-1.1",
+                        "Apache 1.1",
+                        "Apache-1.1"
+                    ],
+                    "__impliedId": "Apache-1.1",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "The Apache Software License, Version 1.1\n\nCopyright (c) 2000 The Apache Software Foundation.  All rights\nreserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. The end-user documentation included with the redistribution,\n   if any, must include the following acknowledgment:\n      \"This product includes software developed by the\n       Apache Software Foundation (http://www.apache.org/).\"\n   Alternately, this acknowledgment may appear in the software itself,\n   if and wherever such third-party acknowledgments normally appear.\n\n4. The names \"Apache\" and \"Apache Software Foundation\" must\n   not be used to endorse or promote products derived from this\n   software without prior written permission. For written\n   permission, please contact apache@apache.org.\n\n5. Products derived from this software may not be called \"Apache\",\n   nor may \"Apache\" appear in their name, without prior written\n   permission of the Apache Software Foundation.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\nUSE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.apache.org/licenses/"
+                        ],
+                        [
+                            null,
+                            "http://opensource.org/licenses/Apache-1.1"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/Apache-1.1"
                         ]
                     ]
                 }
@@ -254,9 +367,9 @@ Raw Data
                     "Apache Software License 1.1",
                     "ASL 1.1"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {
@@ -473,9 +586,15 @@ Raw Data
             [
                 "Google OSS Policy",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
+        "__impliedText": "The Apache Software License, Version 1.1\n\nCopyright (c) 2000 The Apache Software Foundation.  All rights\nreserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. The end-user documentation included with the redistribution,\n   if any, must include the following acknowledgment:\n      \"This product includes software developed by the\n       Apache Software Foundation (http://www.apache.org/).\"\n   Alternately, this acknowledgment may appear in the software itself,\n   if and wherever such third-party acknowledgments normally appear.\n\n4. The names \"Apache\" and \"Apache Software Foundation\" must\n   not be used to endorse or promote products derived from this\n   software without prior written permission. For written\n   permission, please contact apache@apache.org.\n\n5. Products derived from this software may not be called \"Apache\",\n   nor may \"Apache\" appear in their name, without prior written\n   permission of the Apache Software Foundation.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\nOF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\nUSE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -492,6 +611,14 @@ Raw Data
             [
                 "SPDX",
                 "https://spdx.org/licenses/Apache-1.1.html"
+            ],
+            [
+                "Homepage",
+                "http://www.apache.org/licenses/"
+            ],
+            [
+                null,
+                "http://opensource.org/licenses/Apache-1.1"
             ],
             [
                 "OSI Page",

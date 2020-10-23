@@ -5,7 +5,7 @@ PNG Reference Library version 2 (libpng-2.0)
 
 **Other Names:**
 
--   `libpng-v2`
+-   `scancode://libpng-v2`
 
 -   `LIbpng License v2`
 
@@ -70,7 +70,7 @@ Raw Data
         "__impliedNames": [
             "libpng-2.0",
             "PNG Reference Library version 2",
-            "libpng-v2",
+            "scancode://libpng-v2",
             "LIbpng License v2"
         ],
         "__impliedId": "libpng-2.0",
@@ -81,7 +81,7 @@ Raw Data
                         "libpng-2.0",
                         "libpng-2.0",
                         "PNG Reference Library version 2",
-                        "libpng-v2",
+                        "scancode://libpng-v2",
                         "LIbpng License v2"
                     ],
                     "__impliedId": "libpng-2.0"
@@ -90,7 +90,7 @@ Raw Data
                 "otherNames": [
                     "libpng-2.0",
                     "PNG Reference Library version 2",
-                    "libpng-v2",
+                    "scancode://libpng-v2",
                     "LIbpng License v2"
                 ]
             },
@@ -109,6 +109,7 @@ Raw Data
                         "PNG Reference Library version 2"
                     ],
                     "__impliedId": "libpng-2.0",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -137,7 +138,7 @@ Raw Data
                 "spdxId": "libpng-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "libpng-v2",
+                        "scancode://libpng-v2",
                         "LIbpng License v2",
                         "libpng-2.0"
                     ],
@@ -166,6 +167,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "COPYRIGHT NOTICE, DISCLAIMER, and LICENSE\n=========================================\n\nPNG Reference Library License version 2\n---------------------------------------\n\n * Copyright (c) 1995-2018 The PNG Reference Library Authors.\n * Copyright (c) 2018 Cosmin Truta.\n * Copyright (c) 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson.\n * Copyright (c) 1996-1997 Andreas Dilger.\n * Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.\n\nThe software is supplied \"as is\", without warranty of any kind,\nexpress or implied, including, without limitation, the warranties\nof merchantability, fitness for a particular purpose, title, and\nnon-infringement.  In no even shall the Copyright owners, or\nanyone distributing the software, be liable for any damages or\nother liability, whether in contract, tort or otherwise, arising\nfrom, out of, or in connection with the software, or the use or\nother dealings in the software, even if advised of the possibility\nof such damage.\n\nPermission is hereby granted to use, copy, modify, and distribute\nthis software, or portions hereof, for any purpose, without fee,\nsubject to the following restrictions:\n\n 1. The origin of this software must not be misrepresented; you\n    must not claim that you wrote the original software.  If you\n    use this software in a product, an acknowledgment in the product\n    documentation would be appreciated, but is not required.\n\n 2. Altered source versions must be plainly marked as such, and must\n    not be misrepresented as being the original software.\n\n 3. This Copyright notice may not be removed or altered from any\n    source or altered source distribution.\n\n",
         "__impliedURLs": [
             [

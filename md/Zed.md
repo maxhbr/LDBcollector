@@ -3,14 +3,18 @@ Zed License (Zed)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://zed`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -38,9 +42,10 @@ Raw Data
         "__impliedNames": [
             "Zed",
             "Zed License",
-            "zed"
+            "scancode://zed"
         ],
         "__impliedId": "Zed",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -48,7 +53,7 @@ Raw Data
                         "Zed",
                         "Zed",
                         "Zed License",
-                        "zed"
+                        "scancode://zed"
                     ],
                     "__impliedId": "Zed"
                 },
@@ -56,7 +61,7 @@ Raw Data
                 "otherNames": [
                     "Zed",
                     "Zed License",
-                    "zed"
+                    "scancode://zed"
                 ]
             },
             "SPDX": {
@@ -74,6 +79,7 @@ Raw Data
                         "Zed License"
                     ],
                     "__impliedId": "Zed",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -101,6 +107,7 @@ Raw Data
                     "__impliedNames": [
                         "Zed License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -127,7 +134,7 @@ Raw Data
                 "spdxId": "Zed",
                 "_implications": {
                     "__impliedNames": [
-                        "zed",
+                        "scancode://zed",
                         "Zed License",
                         "Zed"
                     ],
@@ -211,6 +218,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
         "__impliedURLs": [
             [

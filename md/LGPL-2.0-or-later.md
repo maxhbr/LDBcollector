@@ -5,7 +5,7 @@ GNU Library General Public License v2 or later (LGPL-2.0-or-later)
 
 **Other Names:**
 
--   `lgpl-2.0-plus`
+-   `scancode://lgpl-2.0-plus`
 
 -   `LGPL 2.0 or later`
 
@@ -16,15 +16,15 @@ GNU Library General Public License v2 or later (LGPL-2.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Earlier called the "Library General Public License"; this name
+-   **↑**Earlier called the "Library General Public License"; this name
     is deprecated because it confuses the license's intent. (source:
     [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/LGPL-2.0-or-later.html "SPDX"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
@@ -39,11 +39,18 @@ URLs
 Text
 ----
 
-    This library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+    This library is free software; you can redistribute it and/or modify it under
+    the terms of the GNU Library General Public License as published by the Free
+    Software Foundation; either version 2 of the License, or (at your option) any
+    later version.
 
-    This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.
+    This library is distributed in the hope that it will be useful, but WITHOUT ANY
+    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.
 
-    You should have received a copy of the GNU Library General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
+    You should have received a copy of the GNU Library General Public License along
+    with this library; if not, write to the Free Software Foundation, Inc., 51
+    Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
 
 ------------------------------------------------------------------------
 
@@ -54,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "LGPL-2.0-or-later",
             "GNU Library General Public License v2 or later",
-            "lgpl-2.0-plus",
+            "scancode://lgpl-2.0-plus",
             "LGPL 2.0 or later",
             "GNU Library General Public License 2.0",
             "LGPL-2.0-only"
@@ -70,7 +77,7 @@ Raw Data
                         "LGPL-2.0-or-later",
                         "LGPL-2.0-or-later",
                         "GNU Library General Public License v2 or later",
-                        "lgpl-2.0-plus",
+                        "scancode://lgpl-2.0-plus",
                         "LGPL 2.0 or later",
                         "GNU Library General Public License 2.0"
                     ],
@@ -80,7 +87,7 @@ Raw Data
                 "otherNames": [
                     "LGPL-2.0-or-later",
                     "GNU Library General Public License v2 or later",
-                    "lgpl-2.0-plus",
+                    "scancode://lgpl-2.0-plus",
                     "LGPL 2.0 or later",
                     "GNU Library General Public License 2.0"
                 ]
@@ -109,6 +116,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -129,7 +137,7 @@ Raw Data
                 "homepageUrl": "http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html",
                 "shortName": "LGPL 2.0 or later",
                 "textUrls": null,
-                "text": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
+                "text": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Library General Public License as published by the Free\nSoftware Foundation; either version 2 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
                 "category": "Copyleft Limited",
                 "osiUrl": null,
                 "owner": "Free Software Foundation (FSF)",
@@ -139,7 +147,7 @@ Raw Data
                 "spdxId": "LGPL-2.0-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "lgpl-2.0-plus",
+                        "scancode://lgpl-2.0-plus",
                         "LGPL 2.0 or later",
                         "LGPL-2.0-or-later"
                     ],
@@ -151,7 +159,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
+                    "__impliedText": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Library General Public License as published by the Free\nSoftware Foundation; either version 2 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -348,7 +356,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
-        "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
+        "__isOsiApproved": true,
+        "__impliedText": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Library General Public License as published by the Free\nSoftware Foundation; either version 2 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
         "__impliedURLs": [
             [
                 "SPDX",

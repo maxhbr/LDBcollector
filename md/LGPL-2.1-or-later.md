@@ -5,7 +5,7 @@ GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)
 
 **Other Names:**
 
--   `lgpl-2.1-plus`
+-   `scancode://lgpl-2.1-plus`
 
 -   `LGPL 2.1 or later`
 
@@ -24,15 +24,15 @@ GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Earlier called the "Library General Public License"; this name
+-   **↑**Earlier called the "Library General Public License"; this name
     is deprecated because it confuses the license's intent. (source:
     [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/LGPL-2.1-or-later.html "SPDX"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
@@ -189,6 +189,8 @@ OSADL Rule
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
 
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -207,7 +209,7 @@ Raw Data
         "__impliedNames": [
             "LGPL-2.1-or-later",
             "GNU Lesser General Public License v2.1 or later",
-            "lgpl-2.1-plus",
+            "scancode://lgpl-2.1-plus",
             "LGPL 2.1 or later",
             "GNU Lesser General Public License 2.1",
             "LGPL-2.1+",
@@ -255,7 +257,7 @@ Raw Data
                         "LGPL-2.1-or-later",
                         "LGPL-2.1-or-later",
                         "GNU Lesser General Public License v2.1 or later",
-                        "lgpl-2.1-plus",
+                        "scancode://lgpl-2.1-plus",
                         "LGPL 2.1 or later",
                         "GNU Lesser General Public License 2.1",
                         "LGPL-2.1+",
@@ -268,7 +270,7 @@ Raw Data
                 "otherNames": [
                     "LGPL-2.1-or-later",
                     "GNU Lesser General Public License v2.1 or later",
-                    "lgpl-2.1-plus",
+                    "scancode://lgpl-2.1-plus",
                     "LGPL 2.1 or later",
                     "GNU Lesser General Public License 2.1",
                     "LGPL-2.1+",
@@ -301,6 +303,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -356,7 +359,7 @@ Raw Data
                 "spdxId": "LGPL-2.1-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "lgpl-2.1-plus",
+                        "scancode://lgpl-2.1-plus",
                         "LGPL 2.1 or later",
                         "LGPL-2.1-or-later"
                     ],
@@ -436,9 +439,9 @@ Raw Data
                     "LGPL2.1+",
                     "LGPL (v2.1 or later)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "finos-osr/OSLC-handbook": {
@@ -605,6 +608,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
         "__impliedURLs": [
             [

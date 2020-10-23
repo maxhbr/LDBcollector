@@ -3,13 +3,17 @@ TCL/TK License (TCL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://tcl`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -77,9 +81,10 @@ Raw Data
         "__impliedNames": [
             "TCL",
             "TCL/TK License",
-            "tcl"
+            "scancode://tcl"
         ],
         "__impliedId": "TCL",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -87,7 +92,7 @@ Raw Data
                         "TCL",
                         "TCL",
                         "TCL/TK License",
-                        "tcl"
+                        "scancode://tcl"
                     ],
                     "__impliedId": "TCL"
                 },
@@ -95,7 +100,7 @@ Raw Data
                 "otherNames": [
                     "TCL",
                     "TCL/TK License",
-                    "tcl"
+                    "scancode://tcl"
                 ]
             },
             "SPDX": {
@@ -114,6 +119,7 @@ Raw Data
                         "TCL/TK License"
                     ],
                     "__impliedId": "TCL",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -145,6 +151,7 @@ Raw Data
                     "__impliedNames": [
                         "TCL/TK License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -174,7 +181,7 @@ Raw Data
                 "spdxId": "TCL",
                 "_implications": {
                     "__impliedNames": [
-                        "tcl",
+                        "scancode://tcl",
                         "TCL/TK License",
                         "TCL"
                     ],
@@ -317,6 +324,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This software is copyrighted by the Regents of the University of\nCalifornia, Sun Microsystems, Inc., Scriptics Corporation, ActiveState\nCorporation and other parties.  The following terms apply to all files\nassociated with the software unless explicitly disclaimed in\nindividual files.\n\nThe authors hereby grant permission to use, copy, modify, distribute,\nand license this software and its documentation for any purpose, provided\nthat existing copyright notices are retained in all copies and that this\nnotice is included verbatim in any distributions. No written agreement,\nlicense, or royalty fee is required for any of the authorized uses.\nModifications to this software may be copyrighted by their authors\nand need not follow the licensing terms described here, provided that\nthe new terms are clearly indicated on the first page of each file where\nthey apply.\n\nIN NO EVENT SHALL THE AUTHORS OR DISTRIBUTORS BE LIABLE TO ANY PARTY\nFOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES\nARISING OUT OF THE USE OF THIS SOFTWARE, ITS DOCUMENTATION, OR ANY\nDERIVATIVES THEREOF, EVEN IF THE AUTHORS HAVE BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n\nTHE AUTHORS AND DISTRIBUTORS SPECIFICALLY DISCLAIM ANY WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.\nTHIS SOFTWARE IS PROVIDED ON AN \"AS IS\" BASIS, AND THE AUTHORS AND\nDISTRIBUTORS HAVE NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT,\nUPDATES, ENHANCEMENTS, OR MODIFICATIONS.\n\nGOVERNMENT USE: If you are acquiring this software on behalf of the\nU.S. government, the Government shall have only \"Restricted Rights\"\nin the software and related documentation as defined in the Federal\nAcquisition Regulations (FARs) in Clause 52.227.19 (c) (2).  If you\nare acquiring the software on behalf of the Department of Defense, the\nsoftware shall be classified as \"Commercial Computer Software\" and the\nGovernment shall have only \"Restricted Rights\" as defined in Clause\n252.227-7013 (c) (1) of DFARs.  Notwithstanding the foregoing, the\nauthors grant the U.S. Government and others acting in its behalf\npermission to use and distribute the software in accordance with the\nterms specified in this license.",
         "__impliedURLs": [
             [

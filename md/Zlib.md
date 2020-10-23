@@ -5,6 +5,8 @@ zlib License (Zlib)
 
 **Other Names:**
 
+-   `scancode://zlib`
+
 -   `The zlib/libpng License (Zlib)`
 
 -   `License :: OSI Approved :: zlib/libpng License`
@@ -26,23 +28,23 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Zlib.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This license is compatible with the
+-   **↑**This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Zlib.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -94,6 +96,8 @@ OSADL Rule
     		YOU MUST Mark
     	YOU MUST NOT Appropriate
 
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -124,8 +128,9 @@ Raw Data
         "__impliedNames": [
             "Zlib",
             "zlib License",
-            "zlib",
+            "scancode://zlib",
             "ZLIB License",
+            "zlib",
             "The zlib/libpng License (Zlib)",
             "License :: OSI Approved :: zlib/libpng License",
             "zlib/libpng license",
@@ -134,9 +139,11 @@ Raw Data
             "Zlib license"
         ],
         "__impliedId": "Zlib",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)"
         ],
+        "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -171,8 +178,9 @@ Raw Data
                         "Zlib",
                         "Zlib",
                         "zlib License",
-                        "zlib",
+                        "scancode://zlib",
                         "ZLIB License",
+                        "zlib",
                         "The zlib/libpng License (Zlib)",
                         "License :: OSI Approved :: zlib/libpng License",
                         "zlib/libpng license",
@@ -184,8 +192,9 @@ Raw Data
                 "otherNames": [
                     "Zlib",
                     "zlib License",
-                    "zlib",
+                    "scancode://zlib",
                     "ZLIB License",
+                    "zlib",
                     "The zlib/libpng License (Zlib)",
                     "License :: OSI Approved :: zlib/libpng License",
                     "zlib/libpng license",
@@ -217,6 +226,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -258,6 +268,7 @@ Raw Data
                     "__impliedNames": [
                         "zlib/libpng License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -288,7 +299,7 @@ Raw Data
                 "spdxId": "Zlib",
                 "_implications": {
                     "__impliedNames": [
-                        "zlib",
+                        "scancode://zlib",
                         "ZLIB License",
                         "Zlib"
                     ],
@@ -377,9 +388,9 @@ Raw Data
                 "oOtherLicenseIds": [
                     "zlib/libpng"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {
@@ -519,7 +530,8 @@ Raw Data
                     "__impliedNames": [
                         "Zlib",
                         "zlib/libpng license"
-                    ]
+                    ],
+                    "__hasPatentHint": false
                 },
                 "Modification": {
                     "value": "Permissive",
@@ -772,6 +784,7 @@ Raw Data
                 }
             ]
         },
+        "__isOsiApproved": true,
         "__impliedText": "This software is provided 'as-is', without any express or implied warranty. In no\nevent will the authors be held liable for any damages arising from the use of this\nsoftware.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim that\n   you wrote the original software. If you use this software in a product, an\n   acknowledgment in the product documentation would be appreciated but is not\n   required.\n\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.\n",
         "__impliedURLs": [
             [

@@ -5,7 +5,7 @@ Entessa Public License v1.0 (Entessa)
 
 **Other Names:**
 
--   `entessa-1.0`
+-   `scancode://entessa-1.0`
 
 -   `Entessa 1.0`
 
@@ -16,15 +16,15 @@ Entessa Public License v1.0 (Entessa)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Entessa.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Entessa.html "SPDX"))
 
 URLs
 ----
@@ -100,12 +100,13 @@ Raw Data
         "__impliedNames": [
             "Entessa",
             "Entessa Public License v1.0",
-            "entessa-1.0",
+            "scancode://entessa-1.0",
             "Entessa 1.0",
             "Entessa Public License",
             "Entessa Public License 1.0"
         ],
         "__impliedId": "Entessa",
+        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -140,7 +141,7 @@ Raw Data
                         "Entessa",
                         "Entessa",
                         "Entessa Public License v1.0",
-                        "entessa-1.0",
+                        "scancode://entessa-1.0",
                         "Entessa 1.0",
                         "Entessa Public License",
                         "Entessa Public License 1.0"
@@ -151,7 +152,7 @@ Raw Data
                 "otherNames": [
                     "Entessa",
                     "Entessa Public License v1.0",
-                    "entessa-1.0",
+                    "scancode://entessa-1.0",
                     "Entessa 1.0",
                     "Entessa Public License",
                     "Entessa Public License 1.0"
@@ -181,6 +182,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -208,6 +210,7 @@ Raw Data
                     "__impliedNames": [
                         "Entessa Public License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -238,7 +241,7 @@ Raw Data
                 "spdxId": "Entessa",
                 "_implications": {
                     "__impliedNames": [
-                        "entessa-1.0",
+                        "scancode://entessa-1.0",
                         "Entessa 1.0",
                         "Entessa"
                     ],
@@ -467,6 +470,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "Entessa Public License Version. 1.0\n\nCopyright (c) 2003 Entessa, LLC. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain the above copyright notice,\n   this list of conditions and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n   \n   3. The end-user documentation included with the redistribution, if any, must\n   include the following acknowledgment:\n\n          \"This product includes open source software developed by openSEAL (http://www.openseal.org/).\"\n\n      Alternately, this acknowledgment may appear in the software itself, if and\n      wherever such third-party acknowledgments normally appear.\n\n   4. The names \"openSEAL\" and \"Entessa\" must not be used to endorse or promote\n   products derived from this software without prior written permission. For\n   written permission, please contact epl@entessa.com.\n\n   5. Products derived from this software may not be called \"openSEAL\", nor may\n   \"openSEAL\" appear in their name, without prior written permission of Entessa.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ENTESSA, LLC,\nOPENSEAL OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\nIN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY\nOF SUCH DAMAGE.\n\n============================================================\n\nThis software consists of voluntary contributions made by many individuals on\nbehalf of openSEAL and was originally based on software contributed by Entessa,\nLLC, http://www.entessa.com. For more information on the openSEAL, please see\n<http://www.openseal.org/>.",
         "__impliedURLs": [
             [

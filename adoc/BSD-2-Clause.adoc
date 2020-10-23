@@ -1,50 +1,50 @@
 == BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 [cols=",",options="header",]
-|===========================================
+|===
 |Key |Value
 |Fullname |BSD 2-Clause "Simplified" License
 |Shortname |BSD-2-Clause
 |Rating |Go
 |Classification |NoCopyleft
-|===========================================
+|===
 
 *Other Names:*
 
-* `bsd-simplified`
-* `BSD-2`
-* `BSD 2-Clause License`
-* `Simplified BSD License`
-* `FreeBSD License`
-* `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
-* `BSD (2 clause)`
-* `BSD License (two clause)`
+* `+scancode://bsd-simplified+`
+* `+BSD-2+`
+* `+BSD 2-Clause License+`
+* `+Simplified BSD License+`
+* `+FreeBSD License+`
+* `+BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)+`
+* `+BSD (2 clause)+`
+* `+BSD License (two clause)+`
 
 === Description
 
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A permissive license that comes in two variants, the <a
 href="/licenses/bsd-2-clause/">BSD 2-Clause</a> and <a
 href="/licenses/bsd-3-clause/">BSD 3-Clause</a>. Both have very minute
 differences to the MIT license.
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Silver (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/BSD-2-Clause.html[SPDX])
+* **↑**Rating is: Silver (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/BSD-2-Clause.html[SPDX])
 
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -59,7 +59,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt[choosealicense.com])
@@ -87,6 +87,8 @@ USE CASE Binary delivery
 	YOU MUST Provide License text In Documentation OR Distribution material
 	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 
@@ -122,7 +124,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "BSD-2-Clause",
         "BSD 2-Clause \"Simplified\" License",
-        "bsd-simplified",
+        "scancode://bsd-simplified",
         "bsd-2-clause",
         "BSD-2",
         "BSD 2-Clause License",
@@ -134,6 +136,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         "BSD License (two clause)"
     ],
     "__impliedId": "BSD-2-Clause",
+    "__isFsfFree": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -168,7 +171,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "BSD-2-Clause",
                     "BSD-2-Clause",
                     "BSD 2-Clause \"Simplified\" License",
-                    "bsd-simplified",
+                    "scancode://bsd-simplified",
                     "bsd-2-clause",
                     "BSD-2",
                     "BSD 2-Clause License",
@@ -185,7 +188,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "BSD-2-Clause",
                 "BSD 2-Clause \"Simplified\" License",
-                "bsd-simplified",
+                "scancode://bsd-simplified",
                 "bsd-2-clause",
                 "BSD-2",
                 "BSD 2-Clause License",
@@ -221,6 +224,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -258,6 +262,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 "__impliedNames": [
                     "BSD License (two clause)"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -288,7 +293,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "BSD-2-Clause",
             "_implications": {
                 "__impliedNames": [
-                    "bsd-simplified",
+                    "scancode://bsd-simplified",
                     "BSD-2-Clause",
                     "BSD-2-Clause"
                 ],
@@ -355,9 +360,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 "BSD (2 clause)",
                 "BSD License (two clause)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "BlueOak License List": {
@@ -642,6 +647,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             }
         ]
     },
+    "__isOsiApproved": true,
     "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
     "__impliedURLs": [
         [

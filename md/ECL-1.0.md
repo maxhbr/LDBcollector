@@ -5,6 +5,8 @@ Educational Community License v1.0 (ECL-1.0)
 
 **Other Names:**
 
+-   `scancode://ecl-1.0`
+
 -   `ECL 1.0`
 
 -   `Educational Community License, Version 1.0`
@@ -14,15 +16,15 @@ Educational Community License v1.0 (ECL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/ECL-1.0.html "SPDX"))
+
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/ECL-1.0.html "SPDX"))
 
 URLs
 ----
@@ -104,12 +106,14 @@ Raw Data
         "__impliedNames": [
             "ECL-1.0",
             "Educational Community License v1.0",
-            "ecl-1.0",
+            "scancode://ecl-1.0",
             "ECL 1.0",
             "Educational Community License, Version 1.0",
             "Educational Community License 1.0"
         ],
         "__impliedId": "ECL-1.0",
+        "__isFsfFree": true,
+        "__hasPatentHint": false,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -117,7 +121,7 @@ Raw Data
                         "ECL-1.0",
                         "ECL-1.0",
                         "Educational Community License v1.0",
-                        "ecl-1.0",
+                        "scancode://ecl-1.0",
                         "ECL 1.0",
                         "Educational Community License, Version 1.0",
                         "Educational Community License 1.0"
@@ -128,7 +132,7 @@ Raw Data
                 "otherNames": [
                     "ECL-1.0",
                     "Educational Community License v1.0",
-                    "ecl-1.0",
+                    "scancode://ecl-1.0",
                     "ECL 1.0",
                     "Educational Community License, Version 1.0",
                     "Educational Community License 1.0"
@@ -158,6 +162,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -185,6 +190,7 @@ Raw Data
                     "__impliedNames": [
                         "Educational Community License 1.0"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -214,7 +220,7 @@ Raw Data
                 "spdxId": "ECL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "ecl-1.0",
+                        "scancode://ecl-1.0",
                         "ECL 1.0",
                         "ECL-1.0"
                     ],
@@ -342,7 +348,8 @@ Raw Data
                     "__impliedNames": [
                         "ECL-1.0",
                         "Educational Community License 1.0"
-                    ]
+                    ],
+                    "__hasPatentHint": false
                 },
                 "Modification": {
                     "value": "Permissive",
@@ -384,6 +391,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "The Educational Community License 1.0\n\nThis Educational Community License (the \"License\") applies\nto any original work of authorship (the \"Original Work\") whose owner\n(the \"Licensor\") has placed the following notice immediately following\nthe copyright notice for the Original Work:\n\nCopyright (c) <year> <copyright holders>\n\nLicensed under the Educational Community License version 1.0\n\nThis Original Work, including software, source code, documents,\nor other related items, is being provided by the copyright holder(s)\nsubject to the terms of the Educational Community License. By\nobtaining, using and/or copying this Original Work, you agree that you\nhave read, understand, and will comply with the following terms and\nconditions of the Educational Community License:\n\nPermission to use, copy, modify, merge, publish, distribute, and\nsublicense this Original Work and its documentation, with or without\nmodification, for any purpose, and without fee or royalty to the\ncopyright holder(s) is hereby granted, provided that you include the\nfollowing on ALL copies of the Original Work or portions thereof,\nincluding modifications or derivatives, that you make:\n\n\nThe full text of the Educational Community License in a location viewable to\nusers of the redistributed or derivative work.\n\n\nAny pre-existing intellectual property disclaimers, notices, or terms and\nconditions.\n\n\nNotice of any changes or modifications to the Original Work, including the\ndate the changes were made.\n\n\nAny modifications of the Original Work must be distributed in such a manner as\nto avoid any confusion with the Original Work of the copyright holders.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nThe name and trademarks of copyright holder(s) may NOT be used\nin advertising or publicity pertaining to the Original or Derivative\nWorks without specific, written prior permission. Title to copyright in\nthe Original Work and any associated documentation will at all times\nremain with the copyright holders.",
         "__impliedURLs": [
             [

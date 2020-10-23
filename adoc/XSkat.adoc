@@ -1,17 +1,21 @@
 == XSkat License (XSkat)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |XSkat License
 |Shortname |XSkat
 |Rating |Unknown
 |Classification |NoCopyleft
-|==========================
+|===
+
+*Other Names:*
+
+* `+scancode://xskat+`
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
 
@@ -47,9 +51,10 @@ original program and z is an arbitrary suffix.
     "__impliedNames": [
         "XSkat",
         "XSkat License",
-        "xskat"
+        "scancode://xskat"
     ],
     "__impliedId": "XSkat",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -57,7 +62,7 @@ original program and z is an arbitrary suffix.
                     "XSkat",
                     "XSkat",
                     "XSkat License",
-                    "xskat"
+                    "scancode://xskat"
                 ],
                 "__impliedId": "XSkat"
             },
@@ -65,7 +70,7 @@ original program and z is an arbitrary suffix.
             "otherNames": [
                 "XSkat",
                 "XSkat License",
-                "xskat"
+                "scancode://xskat"
             ]
         },
         "SPDX": {
@@ -83,6 +88,7 @@ original program and z is an arbitrary suffix.
                     "XSkat License"
                 ],
                 "__impliedId": "XSkat",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -110,6 +116,7 @@ original program and z is an arbitrary suffix.
                 "__impliedNames": [
                     "XSkat License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -136,7 +143,7 @@ original program and z is an arbitrary suffix.
             "spdxId": "XSkat",
             "_implications": {
                 "__impliedNames": [
-                    "xskat",
+                    "scancode://xskat",
                     "XSkat License",
                     "XSkat"
                 ],
@@ -174,6 +181,7 @@ original program and z is an arbitrary suffix.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "This program is free software; you can redistribute it freely.\nUse it at your own risk; there is NO WARRANTY.\n\nRedistribution of modified versions is permitted provided that the following\nconditions are met:\n\n1. All copyright & permission notices are preserved.\n\n2.a) Only changes required for packaging or porting are made. \nor\n2.b) It is clearly stated who last changed the program. The program is renamed\nor the version number is of the form x.y.z, where x.y is the version of the\noriginal program and z is an arbitrary suffix.",
     "__impliedURLs": [
         [

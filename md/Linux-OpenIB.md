@@ -3,10 +3,14 @@ Linux Kernel Variant of OpenIB.org license (Linux-OpenIB)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://linux-openib`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -52,7 +56,7 @@ Raw Data
         "__impliedNames": [
             "Linux-OpenIB",
             "Linux Kernel Variant of OpenIB.org license",
-            "linux-openib"
+            "scancode://linux-openib"
         ],
         "__impliedId": "Linux-OpenIB",
         "facts": {
@@ -62,7 +66,7 @@ Raw Data
                         "Linux-OpenIB",
                         "Linux-OpenIB",
                         "Linux Kernel Variant of OpenIB.org license",
-                        "linux-openib"
+                        "scancode://linux-openib"
                     ],
                     "__impliedId": "Linux-OpenIB"
                 },
@@ -70,7 +74,7 @@ Raw Data
                 "otherNames": [
                     "Linux-OpenIB",
                     "Linux Kernel Variant of OpenIB.org license",
-                    "linux-openib"
+                    "scancode://linux-openib"
                 ]
             },
             "SPDX": {
@@ -88,6 +92,7 @@ Raw Data
                         "Linux Kernel Variant of OpenIB.org license"
                     ],
                     "__impliedId": "Linux-OpenIB",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -119,7 +124,7 @@ Raw Data
                 "spdxId": "Linux-OpenIB",
                 "_implications": {
                     "__impliedNames": [
-                        "linux-openib",
+                        "scancode://linux-openib",
                         "Linux-OpenIB",
                         "Linux-OpenIB"
                     ],
@@ -204,6 +209,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n- Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n- Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
         "__impliedURLs": [
             [

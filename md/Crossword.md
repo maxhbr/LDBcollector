@@ -3,14 +3,18 @@ Crossword License (Crossword)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://crossword`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -44,9 +48,10 @@ Raw Data
         "__impliedNames": [
             "Crossword",
             "Crossword License",
-            "crossword"
+            "scancode://crossword"
         ],
         "__impliedId": "Crossword",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -54,7 +59,7 @@ Raw Data
                         "Crossword",
                         "Crossword",
                         "Crossword License",
-                        "crossword"
+                        "scancode://crossword"
                     ],
                     "__impliedId": "Crossword"
                 },
@@ -62,7 +67,7 @@ Raw Data
                 "otherNames": [
                     "Crossword",
                     "Crossword License",
-                    "crossword"
+                    "scancode://crossword"
                 ]
             },
             "SPDX": {
@@ -80,6 +85,7 @@ Raw Data
                         "Crossword License"
                     ],
                     "__impliedId": "Crossword",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -107,6 +113,7 @@ Raw Data
                     "__impliedNames": [
                         "Crossword License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -133,7 +140,7 @@ Raw Data
                 "spdxId": "Crossword",
                 "_implications": {
                     "__impliedNames": [
-                        "crossword",
+                        "scancode://crossword",
                         "Crossword License",
                         "Crossword"
                     ],
@@ -217,6 +224,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Copyright (C) 1995-2009 Gerd Neugebauer\n Â \ncwpuzzle.dtx is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY. No author or distributor  accepts responsibility to anyone for the\nconsequences of using it or for whether it serves any particular purpose  or\nworks at all, unless he says so in writing.\n\nEveryone is granted permission to copy, modify and redistribute cwpuzzle.dtx,\nprovided this copyright notice is preserved and any modifications are indicated.",
         "__impliedURLs": [
             [

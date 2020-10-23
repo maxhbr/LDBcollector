@@ -3,10 +3,14 @@ GL2PS License (GL2PS)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://gl2ps`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -24,13 +28,20 @@ Text
 
     Copyright (C) 2003, Christophe Geuzaine
 
-    Permission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.
+    Permission to use, copy, and distribute this software and its documentation
+    for any purpose with or without fee is hereby granted, provided that the
+    copyright notice appear in all copies and that both that copyright notice and 
+    his permission notice appear in supporting documentation.
 
-    Permission to modify and distribute modified versions of this software is granted, provided that:
+    Permission to modify and distribute modified versions of this software is
+    granted, provided that:
 
     1) the modifications are licensed under the same terms as this software;
 
-    2) you make available the source code of any modifications that you distribute, either on the same media as you distribute any executable or other form of this software, or via a mechanism generally accepted in the software development community for the electronic transfer of data.
+    2) you make available the source code of any modifications that you distribute,
+    either on the same media as you distribute any executable or other form of this
+    software, or via a mechanism generally accepted in the software development
+    community for the electronic transfer of data.
 
     This software is provided "as is" without express or implied warranty.
 
@@ -43,9 +54,10 @@ Raw Data
         "__impliedNames": [
             "GL2PS",
             "GL2PS License",
-            "gl2ps"
+            "scancode://gl2ps"
         ],
         "__impliedId": "GL2PS",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -53,7 +65,7 @@ Raw Data
                         "GL2PS",
                         "GL2PS",
                         "GL2PS License",
-                        "gl2ps"
+                        "scancode://gl2ps"
                     ],
                     "__impliedId": "GL2PS"
                 },
@@ -61,7 +73,7 @@ Raw Data
                 "otherNames": [
                     "GL2PS",
                     "GL2PS License",
-                    "gl2ps"
+                    "scancode://gl2ps"
                 ]
             },
             "SPDX": {
@@ -79,6 +91,7 @@ Raw Data
                         "GL2PS License"
                     ],
                     "__impliedId": "GL2PS",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -106,6 +119,7 @@ Raw Data
                     "__impliedNames": [
                         "GL2PS License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -122,7 +136,7 @@ Raw Data
                 "homepageUrl": "http://www.geuz.org/gl2ps/COPYING.GL2PS",
                 "shortName": "GL2PS License",
                 "textUrls": null,
-                "text": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is granted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute, either on the same media as you distribute any executable or other form of this software, or via a mechanism generally accepted in the software development community for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
+                "text": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation\nfor any purpose with or without fee is hereby granted, provided that the\ncopyright notice appear in all copies and that both that copyright notice and \nhis permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is\ngranted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute,\neither on the same media as you distribute any executable or other form of this\nsoftware, or via a mechanism generally accepted in the software development\ncommunity for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
                 "category": "Copyleft Limited",
                 "osiUrl": null,
                 "owner": "Christophe Geuzaine",
@@ -132,7 +146,7 @@ Raw Data
                 "spdxId": "GL2PS",
                 "_implications": {
                     "__impliedNames": [
-                        "gl2ps",
+                        "scancode://gl2ps",
                         "GL2PS License",
                         "GL2PS"
                     ],
@@ -144,7 +158,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedText": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is granted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute, either on the same media as you distribute any executable or other form of this software, or via a mechanism generally accepted in the software development community for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
+                    "__impliedText": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation\nfor any purpose with or without fee is hereby granted, provided that the\ncopyright notice appear in all copies and that both that copyright notice and \nhis permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is\ngranted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute,\neither on the same media as you distribute any executable or other form of this\nsoftware, or via a mechanism generally accepted in the software development\ncommunity for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -170,7 +184,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
-        "__impliedText": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation for any purpose with or without fee is hereby granted, provided that the copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is granted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute, either on the same media as you distribute any executable or other form of this software, or via a mechanism generally accepted in the software development community for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
+        "__isOsiApproved": false,
+        "__impliedText": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation\nfor any purpose with or without fee is hereby granted, provided that the\ncopyright notice appear in all copies and that both that copyright notice and \nhis permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is\ngranted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute,\neither on the same media as you distribute any executable or other form of this\nsoftware, or via a mechanism generally accepted in the software development\ncommunity for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
         "__impliedURLs": [
             [
                 "SPDX",

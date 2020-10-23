@@ -2,7 +2,7 @@
     "__impliedNames": [
         "LGPL-3.0-or-later",
         "GNU Lesser General Public License v3.0 or later",
-        "lgpl-3.0-plus",
+        "scancode://lgpl-3.0-plus",
         "LGPL 3.0 or later",
         "GNU Lesser General Public License 3.0",
         "LGPL-3.0+",
@@ -18,6 +18,7 @@
         "LGPL (v3)"
     ],
     "__impliedId": "LGPL-3.0-only",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The GNU Lesser General Public License (LGPL)"
     ],
@@ -56,7 +57,7 @@
                     "LGPL-3.0-or-later",
                     "LGPL-3.0-or-later",
                     "GNU Lesser General Public License v3.0 or later",
-                    "lgpl-3.0-plus",
+                    "scancode://lgpl-3.0-plus",
                     "LGPL 3.0 or later",
                     "GNU Lesser General Public License 3.0",
                     "LGPL-3.0+",
@@ -72,7 +73,7 @@
             "otherNames": [
                 "LGPL-3.0-or-later",
                 "GNU Lesser General Public License v3.0 or later",
-                "lgpl-3.0-plus",
+                "scancode://lgpl-3.0-plus",
                 "LGPL 3.0 or later",
                 "GNU Lesser General Public License 3.0",
                 "LGPL-3.0+",
@@ -108,6 +109,7 @@
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -157,6 +159,7 @@
                 "__impliedNames": [
                     "GNU Lesser General Public License v3.0 or later"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -188,7 +191,7 @@
             "spdxId": "LGPL-3.0-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "lgpl-3.0-plus",
+                    "scancode://lgpl-3.0-plus",
                     "LGPL 3.0 or later",
                     "LGPL-3.0-or-later"
                 ],
@@ -272,9 +275,9 @@
                 "LGPL (v3.0)",
                 "LGPL (v3)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "Wikipedia": {
@@ -309,7 +312,8 @@
                 "__impliedNames": [
                     "LGPL-3.0-or-later",
                     "GNU Lesser General Public License 3.0"
-                ]
+                ],
+                "__hasPatentHint": true
             },
             "Private use": {
                 "value": "Yes",
@@ -437,6 +441,7 @@
         ]
     ],
     "__calculatedCopyleft": "WeakCopyleft",
+    "__isOsiApproved": true,
     "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
     "__impliedURLs": [
         [

@@ -5,22 +5,22 @@ libtiff License (libtiff)
 
 **Other Names:**
 
--   `x11-tiff`
+-   `scancode://x11-tiff`
 
 -   `X11-Style (Tiff)`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
 ----
@@ -41,11 +41,13 @@ OSADL Rule
     	YOU MUST Provide License text In Documentation
     	YOU MUST NOT Promote
 
+(source: OSADL License Checklist)
+
 Text
 ----
 
-    Permission to use, copy, modify, distribute, and sell this software and 
-    its documentation for any purpose is hereby granted without fee, provided
+    Permission to use, copy, modify, distribute, and sell this software and its
+    documentation for any purpose is hereby granted without fee, provided
     that (i) the above copyright notices and this permission notice appear in
     all copies of the software and related documentation, and (ii) the names of
     Sam Leffler and Silicon Graphics may not be used in any advertising or
@@ -72,10 +74,11 @@ Raw Data
         "__impliedNames": [
             "libtiff",
             "libtiff License",
-            "x11-tiff",
+            "scancode://x11-tiff",
             "X11-Style (Tiff)"
         ],
         "__impliedId": "libtiff",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -83,7 +86,7 @@ Raw Data
                         "libtiff",
                         "libtiff",
                         "libtiff License",
-                        "x11-tiff",
+                        "scancode://x11-tiff",
                         "X11-Style (Tiff)"
                     ],
                     "__impliedId": "libtiff"
@@ -92,7 +95,7 @@ Raw Data
                 "otherNames": [
                     "libtiff",
                     "libtiff License",
-                    "x11-tiff",
+                    "scancode://x11-tiff",
                     "X11-Style (Tiff)"
                 ]
             },
@@ -111,6 +114,7 @@ Raw Data
                         "libtiff License"
                     ],
                     "__impliedId": "libtiff",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -148,6 +152,7 @@ Raw Data
                     "__impliedNames": [
                         "libtiff License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -164,7 +169,7 @@ Raw Data
                 "homepageUrl": null,
                 "shortName": "X11-Style (Tiff)",
                 "textUrls": null,
-                "text": "Permission to use, copy, modify, distribute, and sell this software and \nits documentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
+                "text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "SGI - Silicon Graphics",
@@ -174,7 +179,7 @@ Raw Data
                 "spdxId": "libtiff",
                 "_implications": {
                     "__impliedNames": [
-                        "x11-tiff",
+                        "scancode://x11-tiff",
                         "X11-Style (Tiff)",
                         "libtiff"
                     ],
@@ -186,7 +191,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission to use, copy, modify, distribute, and sell this software and \nits documentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
+                    "__impliedText": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
                     "__impliedURLs": []
                 }
             },
@@ -290,7 +295,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Permission to use, copy, modify, distribute, and sell this software and \nits documentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
+        "__isOsiApproved": false,
+        "__impliedText": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",

@@ -5,7 +5,7 @@ BSD Zero Clause License (0BSD)
 
 **Other Names:**
 
--   `bsd-zero`
+-   `scancode://bsd-zero`
 
 Description
 -----------
@@ -20,11 +20,11 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/0BSD.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 Obligations
 -----------
@@ -66,7 +66,7 @@ Raw Data
         "__impliedNames": [
             "0BSD",
             "BSD Zero Clause License",
-            "bsd-zero",
+            "scancode://bsd-zero",
             "0bsd"
         ],
         "__impliedId": "0BSD",
@@ -77,7 +77,7 @@ Raw Data
                         "0BSD",
                         "0BSD",
                         "BSD Zero Clause License",
-                        "bsd-zero",
+                        "scancode://bsd-zero",
                         "0bsd"
                     ],
                     "__impliedId": "0BSD"
@@ -86,7 +86,7 @@ Raw Data
                 "otherNames": [
                     "0BSD",
                     "BSD Zero Clause License",
-                    "bsd-zero",
+                    "scancode://bsd-zero",
                     "0bsd"
                 ]
             },
@@ -114,6 +114,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -142,7 +143,7 @@ Raw Data
                 "spdxId": "0BSD",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-zero",
+                        "scancode://bsd-zero",
                         "BSD Zero Clause License",
                         "0BSD"
                     ],
@@ -356,6 +357,7 @@ Raw Data
             ],
             "conditions": []
         },
+        "__isOsiApproved": true,
         "__impliedText": "Permission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "__impliedURLs": [
             [

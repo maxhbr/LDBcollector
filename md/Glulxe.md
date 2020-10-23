@@ -3,10 +3,14 @@ Glulxe License (Glulxe)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://glulxe`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -20,9 +24,11 @@ URLs
 Text
 ----
 
-    The source code in this package is copyright 1999-2010 by Andrew Plotkin.
-
-    You may copy and distribute it freely, by any means and under any conditions, as long as the code and documentation is not changed. You may also incorporate this code into your own program and distribute that, or modify this code and use and distribute the modified version, as long as you retain a notice in your program or documentation which mentions my name and the URL shown above.
+    You may copy and distribute it freely, by any means and under any conditions,
+    as long as the code and documentation is not changed. You may also incorporate
+    this code into your own program and distribute that, or modify this code and
+    use and distribute the modified version, as long as you retain a notice in your
+    program or documentation which mentions my name and the URL shown above.
 
 ------------------------------------------------------------------------
 
@@ -33,9 +39,10 @@ Raw Data
         "__impliedNames": [
             "Glulxe",
             "Glulxe License",
-            "glulxe"
+            "scancode://glulxe"
         ],
         "__impliedId": "Glulxe",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -43,7 +50,7 @@ Raw Data
                         "Glulxe",
                         "Glulxe",
                         "Glulxe License",
-                        "glulxe"
+                        "scancode://glulxe"
                     ],
                     "__impliedId": "Glulxe"
                 },
@@ -51,7 +58,7 @@ Raw Data
                 "otherNames": [
                     "Glulxe",
                     "Glulxe License",
-                    "glulxe"
+                    "scancode://glulxe"
                 ]
             },
             "SPDX": {
@@ -69,6 +76,7 @@ Raw Data
                         "Glulxe License"
                     ],
                     "__impliedId": "Glulxe",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -96,6 +104,7 @@ Raw Data
                     "__impliedNames": [
                         "Glulxe License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -112,7 +121,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Glulxe",
                 "shortName": "Glulxe License",
                 "textUrls": null,
-                "text": "The source code in this package is copyright 1999-2010 by Andrew Plotkin.\n\nYou may copy and distribute it freely, by any means and under any conditions, as long as the code and documentation is not changed. You may also incorporate this code into your own program and distribute that, or modify this code and use and distribute the modified version, as long as you retain a notice in your program or documentation which mentions my name and the URL shown above.",
+                "text": "You may copy and distribute it freely, by any means and under any conditions,\nas long as the code and documentation is not changed. You may also incorporate\nthis code into your own program and distribute that, or modify this code and\nuse and distribute the modified version, as long as you retain a notice in your\nprogram or documentation which mentions my name and the URL shown above.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Andrew Plotkin",
@@ -122,7 +131,7 @@ Raw Data
                 "spdxId": "Glulxe",
                 "_implications": {
                     "__impliedNames": [
-                        "glulxe",
+                        "scancode://glulxe",
                         "Glulxe License",
                         "Glulxe"
                     ],
@@ -134,7 +143,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "The source code in this package is copyright 1999-2010 by Andrew Plotkin.\n\nYou may copy and distribute it freely, by any means and under any conditions, as long as the code and documentation is not changed. You may also incorporate this code into your own program and distribute that, or modify this code and use and distribute the modified version, as long as you retain a notice in your program or documentation which mentions my name and the URL shown above.",
+                    "__impliedText": "You may copy and distribute it freely, by any means and under any conditions,\nas long as the code and documentation is not changed. You may also incorporate\nthis code into your own program and distribute that, or modify this code and\nuse and distribute the modified version, as long as you retain a notice in your\nprogram or documentation which mentions my name and the URL shown above.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -160,7 +169,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "The source code in this package is copyright 1999-2010 by Andrew Plotkin.\n\nYou may copy and distribute it freely, by any means and under any conditions, as long as the code and documentation is not changed. You may also incorporate this code into your own program and distribute that, or modify this code and use and distribute the modified version, as long as you retain a notice in your program or documentation which mentions my name and the URL shown above.",
+        "__isOsiApproved": false,
+        "__impliedText": "You may copy and distribute it freely, by any means and under any conditions,\nas long as the code and documentation is not changed. You may also incorporate\nthis code into your own program and distribute that, or modify this code and\nuse and distribute the modified version, as long as you retain a notice in your\nprogram or documentation which mentions my name and the URL shown above.",
         "__impliedURLs": [
             [
                 "SPDX",

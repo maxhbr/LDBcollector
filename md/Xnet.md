@@ -5,6 +5,8 @@ X.Net License (Xnet)
 
 **Other Names:**
 
+-   `scancode://xnet`
+
 -   `Altera License`
 
 -   `The X.Net, Inc. License`
@@ -14,14 +16,14 @@ X.Net License (Xnet)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Xnet.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -32,8 +34,8 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** This software licenses which is NOT OKAY for Fedora. Nothing
-    in Fedora is permitted to use this license. It is either non-free or
+-   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
+    Fedora is permitted to use this license. It is either non-free or
     deprecated. (source: [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -83,7 +85,7 @@ Raw Data
         "__impliedNames": [
             "Xnet",
             "X.Net License",
-            "xnet",
+            "scancode://xnet",
             "Altera License",
             "The X.Net, Inc. License",
             "License :: OSI Approved :: X.Net License"
@@ -123,7 +125,7 @@ Raw Data
                         "Xnet",
                         "Xnet",
                         "X.Net License",
-                        "xnet",
+                        "scancode://xnet",
                         "Altera License",
                         "The X.Net, Inc. License",
                         "License :: OSI Approved :: X.Net License"
@@ -134,7 +136,7 @@ Raw Data
                 "otherNames": [
                     "Xnet",
                     "X.Net License",
-                    "xnet",
+                    "scancode://xnet",
                     "Altera License",
                     "The X.Net, Inc. License",
                     "License :: OSI Approved :: X.Net License"
@@ -164,6 +166,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -218,7 +221,7 @@ Raw Data
                 "spdxId": "Xnet",
                 "_implications": {
                     "__impliedNames": [
-                        "xnet",
+                        "scancode://xnet",
                         "Altera License",
                         "Xnet"
                     ],
@@ -467,6 +470,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\nThis agreement shall be governed in all respects by the laws of the State of\nCalifornia and by the laws of the United States of America.",
         "__impliedURLs": [
             [

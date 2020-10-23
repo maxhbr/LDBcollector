@@ -3,24 +3,40 @@ Adobe Postscript AFM License (APAFML)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://apafml`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 URLs
 ----
 
+-   **Homepage:**
+    https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM
+
 -   **SPDX:** http://spdx.org/licenses/APAFML.json
 
 -   **SPDX:** https://spdx.org/licenses/APAFML.html
 
--   https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM
+Text
+----
+
+    This file and the 14 PostScript(R) AFM files it accompanies may be used, copied,
+    and distributed for any purpose and without charge, with or without
+    modification, provided that all copyright notices are retained; that the AFM
+    files are not distributed without this file; that all modifications to this file
+    or any of the AFM files are prominently noted in the modified file(s); and that
+    this paragraph is not modified. Adobe Systems has no responsibility or
+    obligation to support the use of the AFM files.
 
 ------------------------------------------------------------------------
 
@@ -30,23 +46,27 @@ Raw Data
     {
         "__impliedNames": [
             "APAFML",
-            "Adobe Postscript AFM License"
+            "Adobe Postscript AFM License",
+            "scancode://apafml"
         ],
         "__impliedId": "APAFML",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
                         "APAFML",
                         "APAFML",
-                        "Adobe Postscript AFM License"
+                        "Adobe Postscript AFM License",
+                        "scancode://apafml"
                     ],
                     "__impliedId": "APAFML"
                 },
                 "shortname": "APAFML",
                 "otherNames": [
                     "APAFML",
-                    "Adobe Postscript AFM License"
+                    "Adobe Postscript AFM License",
+                    "scancode://apafml"
                 ]
             },
             "SPDX": {
@@ -64,6 +84,7 @@ Raw Data
                         "Adobe Postscript AFM License"
                     ],
                     "__impliedId": "APAFML",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -91,6 +112,7 @@ Raw Data
                     "__impliedNames": [
                         "Adobe Postscript AFM License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -98,6 +120,42 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM",
+                "shortName": "Adobe Postscript AFM License",
+                "textUrls": null,
+                "text": "This file and the 14 PostScript(R) AFM files it accompanies may be used, copied,\nand distributed for any purpose and without charge, with or without\nmodification, provided that all copyright notices are retained; that the AFM\nfiles are not distributed without this file; that all modifications to this file\nor any of the AFM files are prominently noted in the modified file(s); and that\nthis paragraph is not modified. Adobe Systems has no responsibility or\nobligation to support the use of the AFM files.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Adobe Systems",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apafml.yml",
+                "key": "apafml",
+                "name": "Adobe Postscript AFM License",
+                "spdxId": "APAFML",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://apafml",
+                        "Adobe Postscript AFM License",
+                        "APAFML"
+                    ],
+                    "__impliedId": "APAFML",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "This file and the 14 PostScript(R) AFM files it accompanies may be used, copied,\nand distributed for any purpose and without charge, with or without\nmodification, provided that all copyright notices are retained; that the AFM\nfiles are not distributed without this file; that all modifications to this file\nor any of the AFM files are prominently noted in the modified file(s); and that\nthis paragraph is not modified. Adobe Systems has no responsibility or\nobligation to support the use of the AFM files.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM"
                         ]
                     ]
                 }
@@ -158,9 +216,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
+        "__impliedText": "This file and the 14 PostScript(R) AFM files it accompanies may be used, copied,\nand distributed for any purpose and without charge, with or without\nmodification, provided that all copyright notices are retained; that the AFM\nfiles are not distributed without this file; that all modifications to this file\nor any of the AFM files are prominently noted in the modified file(s); and that\nthis paragraph is not modified. Adobe Systems has no responsibility or\nobligation to support the use of the AFM files.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -173,6 +237,10 @@ Raw Data
             [
                 "SPDX",
                 "https://spdx.org/licenses/APAFML.html"
+            ],
+            [
+                "Homepage",
+                "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM"
             ]
         ]
     }

@@ -3,10 +3,14 @@ BSD Source Code Attribution (BSD-Source-Code)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://bsd-source-code`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -57,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "BSD-Source-Code",
             "BSD Source Code Attribution",
-            "bsd-source-code"
+            "scancode://bsd-source-code"
         ],
         "__impliedId": "BSD-Source-Code",
         "facts": {
@@ -67,7 +71,7 @@ Raw Data
                         "BSD-Source-Code",
                         "BSD-Source-Code",
                         "BSD Source Code Attribution",
-                        "bsd-source-code"
+                        "scancode://bsd-source-code"
                     ],
                     "__impliedId": "BSD-Source-Code"
                 },
@@ -75,7 +79,7 @@ Raw Data
                 "otherNames": [
                     "BSD-Source-Code",
                     "BSD Source Code Attribution",
-                    "bsd-source-code"
+                    "scancode://bsd-source-code"
                 ]
             },
             "SPDX": {
@@ -93,6 +97,7 @@ Raw Data
                         "BSD Source Code Attribution"
                     ],
                     "__impliedId": "BSD-Source-Code",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -121,7 +126,7 @@ Raw Data
                 "spdxId": "BSD-Source-Code",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-source-code",
+                        "scancode://bsd-source-code",
                         "BSD Source Code Attribution",
                         "BSD-Source-Code"
                     ],
@@ -198,6 +203,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n- Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n- Neither name of the copyright holders nor the names of their contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS\nIS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [

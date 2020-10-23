@@ -5,14 +5,14 @@ Spencer License 86 (Spencer-86)
 
 **Other Names:**
 
--   `regexp`
+-   `scancode://regexp`
 
 -   `Regexp License`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -28,8 +28,7 @@ URLs
 Text
 ----
 
-    Copyright (c) 1986 by University of Toronto.
-    Written by Henry Spencer. Not derived from licensed software.
+    Not derived from licensed software.
 
     Permission is granted to anyone to use this software for any
     purpose on any computer system, and to redistribute it freely,
@@ -58,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "Spencer-86",
             "Spencer License 86",
-            "regexp",
+            "scancode://regexp",
             "Regexp License"
         ],
         "__impliedId": "Spencer-86",
@@ -69,7 +68,7 @@ Raw Data
                         "Spencer-86",
                         "Spencer-86",
                         "Spencer License 86",
-                        "regexp",
+                        "scancode://regexp",
                         "Regexp License"
                     ],
                     "__impliedId": "Spencer-86"
@@ -78,7 +77,7 @@ Raw Data
                 "otherNames": [
                     "Spencer-86",
                     "Spencer License 86",
-                    "regexp",
+                    "scancode://regexp",
                     "Regexp License"
                 ]
             },
@@ -97,6 +96,7 @@ Raw Data
                         "Spencer License 86"
                     ],
                     "__impliedId": "Spencer-86",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -115,7 +115,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License",
                 "shortName": "Regexp License",
                 "textUrls": null,
-                "text": "Copyright (c) 1986 by University of Toronto.\nWritten by Henry Spencer. Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
+                "text": "Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Henry Spencer",
@@ -125,7 +125,7 @@ Raw Data
                 "spdxId": "Spencer-86",
                 "_implications": {
                     "__impliedNames": [
-                        "regexp",
+                        "scancode://regexp",
                         "Regexp License",
                         "Spencer-86"
                     ],
@@ -137,7 +137,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (c) 1986 by University of Toronto.\nWritten by Henry Spencer. Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
+                    "__impliedText": "Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -202,7 +202,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Copyright (c) 1986 by University of Toronto.\nWritten by Henry Spencer. Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
+        "__isOsiApproved": false,
+        "__impliedText": "Not derived from licensed software.\n\nPermission is granted to anyone to use this software for any\npurpose on any computer system, and to redistribute it freely,\nsubject to the following restrictions:\n\n1. The author is not responsible for the consequences of use of\nthis software, no matter how awful, even if they arise\nfrom defects in it.\n\n2. The origin of this software must not be misrepresented, either\nby explicit claim or by omission.\n\n3. Altered versions must be plainly marked as such, and must not\nbe misrepresented as being the original software.\n\nBeware that some of this code is subtly aware of the way operator\nprecedence is structured in regular expressions. Serious changes in\nregular-expression syntax might require a total rethink.\n",
         "__impliedURLs": [
             [
                 "SPDX",

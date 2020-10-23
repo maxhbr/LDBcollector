@@ -5,7 +5,7 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 **Other Names:**
 
--   `bsd-original`
+-   `scancode://bsd-original`
 
 -   `BSD-Original`
 
@@ -14,15 +14,15 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -33,8 +33,8 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Advertisement clause (3.) is complicated and prone to
-    conflicts (source: Override)
+-   **↓**Advertisement clause (3.) is complicated and prone to conflicts
+    (source: Override)
 
 URLs
 ----
@@ -72,6 +72,8 @@ OSADL Rule
     	IF Advertisement
     		YOU MUST Credit In Advertisement Verbatim "This product includes software developed by the organization."
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -114,12 +116,13 @@ Raw Data
         "__impliedNames": [
             "BSD-4-Clause",
             "BSD 4-Clause \"Original\" or \"Old\" License",
-            "bsd-original",
+            "scancode://bsd-original",
             "BSD-Original",
             "BSD License (original)",
             "BSD 4-clause \"Original\" or \"Old\" License"
         ],
         "__impliedId": "BSD-4-Clause",
+        "__isFsfFree": true,
         "__impliedRatingState": [
             [
                 "Override",
@@ -141,7 +144,7 @@ Raw Data
                         "BSD-4-Clause",
                         "BSD-4-Clause",
                         "BSD 4-Clause \"Original\" or \"Old\" License",
-                        "bsd-original",
+                        "scancode://bsd-original",
                         "BSD-Original",
                         "BSD License (original)"
                     ],
@@ -151,7 +154,7 @@ Raw Data
                 "otherNames": [
                     "BSD-4-Clause",
                     "BSD 4-Clause \"Original\" or \"Old\" License",
-                    "bsd-original",
+                    "scancode://bsd-original",
                     "BSD-Original",
                     "BSD License (original)"
                 ]
@@ -171,6 +174,7 @@ Raw Data
                         "BSD 4-Clause \"Original\" or \"Old\" License"
                     ],
                     "__impliedId": "BSD-4-Clause",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -208,6 +212,7 @@ Raw Data
                     "__impliedNames": [
                         "BSD License (original)"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -238,7 +243,7 @@ Raw Data
                 "spdxId": "BSD-4-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-original",
+                        "scancode://bsd-original",
                         "BSD-Original",
                         "BSD-4-Clause"
                     ],
@@ -308,12 +313,12 @@ Raw Data
                 },
                 "oName": "BSD-4-Clause",
                 "oOtherLicenseIds": [],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": {
                     "tag": "NegativeJudgement",
                     "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
                 },
+                "oCompatibilities": null,
                 "oRatingState": {
                     "tag": "RatingState",
                     "contents": [
@@ -524,6 +529,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. All advertising materials mentioning features or use of this software\nmust display the following acknowledgement: This product includes software\ndeveloped by the <organization>.\n\n4. Neither the name of the <organization> nor the names of its contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ''AS IS'' AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO\nEVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [

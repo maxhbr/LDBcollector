@@ -5,17 +5,17 @@ feh License (MIT-feh)
 
 **Other Names:**
 
--   `mit-ack`
+-   `scancode://mit-ack`
 
 -   `MIT Acknowledgment License`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -61,10 +61,11 @@ Raw Data
         "__impliedNames": [
             "MIT-feh",
             "feh License",
-            "mit-ack",
+            "scancode://mit-ack",
             "MIT Acknowledgment License"
         ],
         "__impliedId": "MIT-feh",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -72,7 +73,7 @@ Raw Data
                         "MIT-feh",
                         "MIT-feh",
                         "feh License",
-                        "mit-ack",
+                        "scancode://mit-ack",
                         "MIT Acknowledgment License"
                     ],
                     "__impliedId": "MIT-feh"
@@ -81,7 +82,7 @@ Raw Data
                 "otherNames": [
                     "MIT-feh",
                     "feh License",
-                    "mit-ack",
+                    "scancode://mit-ack",
                     "MIT Acknowledgment License"
                 ]
             },
@@ -100,6 +101,7 @@ Raw Data
                         "feh License"
                     ],
                     "__impliedId": "MIT-feh",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -127,6 +129,7 @@ Raw Data
                     "__impliedNames": [
                         "feh License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -155,7 +158,7 @@ Raw Data
                 "spdxId": "MIT-feh",
                 "_implications": {
                     "__impliedNames": [
-                        "mit-ack",
+                        "scancode://mit-ack",
                         "MIT Acknowledgment License",
                         "MIT-feh"
                     ],
@@ -243,6 +246,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of this\nsoftware and associated documentation files (the \"Software\"), to deal in the Software\nwithout restriction, including without limitation the rights to use, copy, modify,\nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be included in all copies\nof the Software and its documentation and acknowledgment shall be given in the\ndocumentation and software packages that this Software was used.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR\nANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.",
         "__impliedURLs": [
             [

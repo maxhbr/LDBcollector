@@ -5,17 +5,17 @@ Open Market License (OML)
 
 **Other Names:**
 
--   `fastcgi-devkit`
+-   `scancode://fastcgi-devkit`
 
 -   `FastCGI DevKit`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -71,10 +71,11 @@ Raw Data
         "__impliedNames": [
             "OML",
             "Open Market License",
-            "fastcgi-devkit",
+            "scancode://fastcgi-devkit",
             "FastCGI DevKit"
         ],
         "__impliedId": "OML",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -82,7 +83,7 @@ Raw Data
                         "OML",
                         "OML",
                         "Open Market License",
-                        "fastcgi-devkit",
+                        "scancode://fastcgi-devkit",
                         "FastCGI DevKit"
                     ],
                     "__impliedId": "OML"
@@ -91,7 +92,7 @@ Raw Data
                 "otherNames": [
                     "OML",
                     "Open Market License",
-                    "fastcgi-devkit",
+                    "scancode://fastcgi-devkit",
                     "FastCGI DevKit"
                 ]
             },
@@ -110,6 +111,7 @@ Raw Data
                         "Open Market License"
                     ],
                     "__impliedId": "OML",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -137,6 +139,7 @@ Raw Data
                     "__impliedNames": [
                         "Open Market License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -163,7 +166,7 @@ Raw Data
                 "spdxId": "OML",
                 "_implications": {
                     "__impliedNames": [
-                        "fastcgi-devkit",
+                        "scancode://fastcgi-devkit",
                         "FastCGI DevKit",
                         "OML"
                     ],
@@ -247,6 +250,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This FastCGI application library source and object code (the\n\"Software\") and its documentation (the \"Documentation\") are\ncopyrighted by Open Market, Inc (\"Open Market\").  The following terms\napply to all files associated with the Software and Documentation\nunless explicitly disclaimed in individual files.\n\nOpen Market permits you to use, copy, modify, distribute, and license\nthis Software and the Documentation for any purpose, provided that\nexisting copyright notices are retained in all copies and that this\nnotice is included verbatim in any distributions.  No written\nagreement, license, or royalty fee is required for any of the\nauthorized uses.  Modifications to this Software and Documentation may\nbe copyrighted by their authors and need not follow the licensing\nterms described here.  If modifications to this Software and\nDocumentation have new licensing terms, the new terms must be clearly\nindicated on the first page of each file where they apply.\n\nOPEN MARKET MAKES NO EXPRESS OR IMPLIED WARRANTY WITH RESPECT TO THE\nSOFTWARE OR THE DOCUMENTATION, INCLUDING WITHOUT LIMITATION ANY\nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  IN\nNO EVENT SHALL OPEN MARKET BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY\nDAMAGES ARISING FROM OR RELATING TO THIS SOFTWARE OR THE\nDOCUMENTATION, INCLUDING, WITHOUT LIMITATION, ANY INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES OR SIMILAR DAMAGES, INCLUDING LOST PROFITS OR\nLOST DATA, EVEN IF OPEN MARKET HAS BEEN ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGES.  THE SOFTWARE AND DOCUMENTATION ARE PROVIDED \"AS IS\".\nOPEN MARKET HAS NO LIABILITY IN CONTRACT, TORT, NEGLIGENCE OR\nOTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.",
         "__impliedURLs": [
             [

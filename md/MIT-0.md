@@ -5,16 +5,18 @@ MIT No Attribution (MIT-0)
 
 **Other Names:**
 
+-   `scancode://mit-0`
+
 -   `MIT-0-Clause`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/MIT-0.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -55,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "MIT-0",
             "MIT No Attribution",
-            "mit-0",
+            "scancode://mit-0",
             "MIT-0-Clause"
         ],
         "__impliedId": "MIT-0",
@@ -66,7 +68,7 @@ Raw Data
                         "MIT-0",
                         "MIT-0",
                         "MIT No Attribution",
-                        "mit-0",
+                        "scancode://mit-0",
                         "MIT-0-Clause"
                     ],
                     "__impliedId": "MIT-0"
@@ -75,7 +77,7 @@ Raw Data
                 "otherNames": [
                     "MIT-0",
                     "MIT No Attribution",
-                    "mit-0",
+                    "scancode://mit-0",
                     "MIT-0-Clause"
                 ]
             },
@@ -105,6 +107,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -144,7 +147,7 @@ Raw Data
                 "spdxId": "MIT-0",
                 "_implications": {
                     "__impliedNames": [
-                        "mit-0",
+                        "scancode://mit-0",
                         "MIT-0-Clause",
                         "MIT-0"
                     ],
@@ -236,6 +239,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of this\nsoftware and associated documentation files (the \"Software\"), to deal in the Software\nwithout restriction, including without limitation the rights to use, copy, modify,\nmerge, publish, distribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "__impliedURLs": [
             [

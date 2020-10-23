@@ -3,10 +3,14 @@ Dotseqn License (Dotseqn)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://dotseqn`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -19,8 +23,6 @@ URLs
 
 Text
 ----
-
-    Copyright (C) 1995 by Donald Arseneau
 
     This file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \documentclass).
 
@@ -35,9 +37,10 @@ Raw Data
         "__impliedNames": [
             "Dotseqn",
             "Dotseqn License",
-            "dotseqn"
+            "scancode://dotseqn"
         ],
         "__impliedId": "Dotseqn",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -45,7 +48,7 @@ Raw Data
                         "Dotseqn",
                         "Dotseqn",
                         "Dotseqn License",
-                        "dotseqn"
+                        "scancode://dotseqn"
                     ],
                     "__impliedId": "Dotseqn"
                 },
@@ -53,7 +56,7 @@ Raw Data
                 "otherNames": [
                     "Dotseqn",
                     "Dotseqn License",
-                    "dotseqn"
+                    "scancode://dotseqn"
                 ]
             },
             "SPDX": {
@@ -71,6 +74,7 @@ Raw Data
                         "Dotseqn License"
                     ],
                     "__impliedId": "Dotseqn",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -98,6 +102,7 @@ Raw Data
                     "__impliedNames": [
                         "Dotseqn License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -114,7 +119,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Dotseqn",
                 "shortName": "Dotseqn License",
                 "textUrls": null,
-                "text": "Copyright (C) 1995 by Donald Arseneau\n\nThis file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \\documentclass).\n\nThis notice must be left intact.",
+                "text": "This file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \\documentclass).\n\nThis notice must be left intact.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Donald Arsenau",
@@ -124,7 +129,7 @@ Raw Data
                 "spdxId": "Dotseqn",
                 "_implications": {
                     "__impliedNames": [
-                        "dotseqn",
+                        "scancode://dotseqn",
                         "Dotseqn License",
                         "Dotseqn"
                     ],
@@ -136,7 +141,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (C) 1995 by Donald Arseneau\n\nThis file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \\documentclass).\n\nThis notice must be left intact.",
+                    "__impliedText": "This file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \\documentclass).\n\nThis notice must be left intact.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -162,7 +167,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Copyright (C) 1995 by Donald Arseneau\n\nThis file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \\documentclass).\n\nThis notice must be left intact.",
+        "__isOsiApproved": false,
+        "__impliedText": "This file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \\documentclass).\n\nThis notice must be left intact.",
         "__impliedURLs": [
             [
                 "SPDX",

@@ -5,6 +5,10 @@ Apache License 1.0 (Apache-1.0)
 
 **Other Names:**
 
+-   `scancode://apache-1.0`
+
+-   `Apache 1.0`
+
 -   `Apache (v1.0)`
 
 -   `Apache Software License 1.0`
@@ -14,20 +18,22 @@ Apache License 1.0 (Apache-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Older versions of the Apache License (1.0 and 1.1) are also
+-   **↑**Older versions of the Apache License (1.0 and 1.1) are also
     DFSG free, but the Apache Software Foundation recommends using the
     Apache 2.0 license instead. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 URLs
 ----
+
+-   **Homepage:** http://www.apache.org/licenses/
 
 -   **SPDX:** http://spdx.org/licenses/Apache-1.0.json
 
@@ -59,6 +65,63 @@ OSADL Rule
     		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
     		YOU MUST NOT Use "Apache" in product name
 
+(source: OSADL License Checklist)
+
+Text
+----
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer. 
+
+    2. Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in
+       the documentation and/or other materials provided with the
+       distribution.
+
+    3. All advertising materials mentioning features or use of this
+       software must display the following acknowledgment:
+       "This product includes software developed by the Apache Group
+       for use in the Apache HTTP server project (http://www.apache.org/)."
+
+    4. The names "Apache Server" and "Apache Group" must not be used to
+       endorse or promote products derived from this software without
+       prior written permission. For written permission, please contact
+       apache@apache.org.
+
+    5. Products derived from this software may not be called "Apache"
+       nor may "Apache" appear in their names without prior written
+       permission of the Apache Group.
+
+    6. Redistributions of any form whatsoever must retain the following
+       acknowledgment:
+       "This product includes software developed by the Apache Group
+       for use in the Apache HTTP server project (http://www.apache.org/)."
+
+    THIS SOFTWARE IS PROVIDED BY THE APACHE GROUP ``AS IS'' AND ANY
+    EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+    PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE APACHE GROUP OR
+    ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+    NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+    HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+    STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+    OF THE POSSIBILITY OF SUCH DAMAGE.
+    ====================================================================
+
+    This software consists of voluntary contributions made by many
+    individuals on behalf of the Apache Group and was originally based
+    on public domain software written at the National Center for
+    Supercomputing Applications, University of Illinois, Urbana-Champaign.
+    For more information on the Apache Group and the Apache HTTP server
+    project, please see <http://www.apache.org/>.
+
 ------------------------------------------------------------------------
 
 Raw Data
@@ -68,11 +131,14 @@ Raw Data
         "__impliedNames": [
             "Apache-1.0",
             "Apache License 1.0",
+            "scancode://apache-1.0",
+            "Apache 1.0",
             "Apache (v1.0)",
             "Apache Software License 1.0",
             "ASL 1.0"
         ],
         "__impliedId": "Apache-1.0",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The Apache Software License (ASL)"
         ],
@@ -83,6 +149,8 @@ Raw Data
                         "Apache-1.0",
                         "Apache-1.0",
                         "Apache License 1.0",
+                        "scancode://apache-1.0",
+                        "Apache 1.0",
                         "Apache (v1.0)",
                         "Apache Software License 1.0",
                         "ASL 1.0"
@@ -93,6 +161,8 @@ Raw Data
                 "otherNames": [
                     "Apache-1.0",
                     "Apache License 1.0",
+                    "scancode://apache-1.0",
+                    "Apache 1.0",
                     "Apache (v1.0)",
                     "Apache Software License 1.0",
                     "ASL 1.0"
@@ -113,6 +183,7 @@ Raw Data
                         "Apache License 1.0"
                     ],
                     "__impliedId": "Apache-1.0",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -150,6 +221,7 @@ Raw Data
                     "__impliedNames": [
                         "Apache Software License 1.0"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -157,6 +229,42 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "http://www.apache.org/licenses/",
+                "shortName": "Apache 1.0",
+                "textUrls": null,
+                "text": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer. \n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \"This product includes software developed by the Apache Group\n   for use in the Apache HTTP server project (http://www.apache.org/).\"\n\n4. The names \"Apache Server\" and \"Apache Group\" must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   apache@apache.org.\n\n5. Products derived from this software may not be called \"Apache\"\n   nor may \"Apache\" appear in their names without prior written\n   permission of the Apache Group.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \"This product includes software developed by the Apache Group\n   for use in the Apache HTTP server project (http://www.apache.org/).\"\n\nTHIS SOFTWARE IS PROVIDED BY THE APACHE GROUP ``AS IS'' AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE APACHE GROUP OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n====================================================================\n\nThis software consists of voluntary contributions made by many\nindividuals on behalf of the Apache Group and was originally based\non public domain software written at the National Center for\nSupercomputing Applications, University of Illinois, Urbana-Champaign.\nFor more information on the Apache Group and the Apache HTTP server\nproject, please see <http://www.apache.org/>.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Apache Software Foundation",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.0.yml",
+                "key": "apache-1.0",
+                "name": "Apache License 1.0",
+                "spdxId": "Apache-1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://apache-1.0",
+                        "Apache 1.0",
+                        "Apache-1.0"
+                    ],
+                    "__impliedId": "Apache-1.0",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer. \n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \"This product includes software developed by the Apache Group\n   for use in the Apache HTTP server project (http://www.apache.org/).\"\n\n4. The names \"Apache Server\" and \"Apache Group\" must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   apache@apache.org.\n\n5. Products derived from this software may not be called \"Apache\"\n   nor may \"Apache\" appear in their names without prior written\n   permission of the Apache Group.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \"This product includes software developed by the Apache Group\n   for use in the Apache HTTP server project (http://www.apache.org/).\"\n\nTHIS SOFTWARE IS PROVIDED BY THE APACHE GROUP ``AS IS'' AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE APACHE GROUP OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n====================================================================\n\nThis software consists of voluntary contributions made by many\nindividuals on behalf of the Apache Group and was originally based\non public domain software written at the National Center for\nSupercomputing Applications, University of Illinois, Urbana-Champaign.\nFor more information on the Apache Group and the Apache HTTP server\nproject, please see <http://www.apache.org/>.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.apache.org/licenses/"
                         ]
                     ]
                 }
@@ -202,9 +310,9 @@ Raw Data
                     "Apache Software License 1.0",
                     "ASL 1.0"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {
@@ -270,9 +378,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
+        "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer. \n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \"This product includes software developed by the Apache Group\n   for use in the Apache HTTP server project (http://www.apache.org/).\"\n\n4. The names \"Apache Server\" and \"Apache Group\" must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   apache@apache.org.\n\n5. Products derived from this software may not be called \"Apache\"\n   nor may \"Apache\" appear in their names without prior written\n   permission of the Apache Group.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \"This product includes software developed by the Apache Group\n   for use in the Apache HTTP server project (http://www.apache.org/).\"\n\nTHIS SOFTWARE IS PROVIDED BY THE APACHE GROUP ``AS IS'' AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE APACHE GROUP OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n====================================================================\n\nThis software consists of voluntary contributions made by many\nindividuals on behalf of the Apache Group and was originally based\non public domain software written at the National Center for\nSupercomputing Applications, University of Illinois, Urbana-Champaign.\nFor more information on the Apache Group and the Apache HTTP server\nproject, please see <http://www.apache.org/>.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -285,6 +399,10 @@ Raw Data
             [
                 "SPDX",
                 "https://spdx.org/licenses/Apache-1.0.html"
+            ],
+            [
+                "Homepage",
+                "http://www.apache.org/licenses/"
             ]
         ]
     }

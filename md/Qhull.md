@@ -3,14 +3,18 @@ Qhull License (Qhull)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://qhull`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -37,6 +41,8 @@ OSADL Rule
     		YOU MUST Provide Modification reason
     		YOU MUST Reference Original source code
     			ATTRIBUTE http://www.qhull.org
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -68,9 +74,10 @@ Raw Data
         "__impliedNames": [
             "Qhull",
             "Qhull License",
-            "qhull"
+            "scancode://qhull"
         ],
         "__impliedId": "Qhull",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -78,7 +85,7 @@ Raw Data
                         "Qhull",
                         "Qhull",
                         "Qhull License",
-                        "qhull"
+                        "scancode://qhull"
                     ],
                     "__impliedId": "Qhull"
                 },
@@ -86,7 +93,7 @@ Raw Data
                 "otherNames": [
                     "Qhull",
                     "Qhull License",
-                    "qhull"
+                    "scancode://qhull"
                 ]
             },
             "SPDX": {
@@ -104,6 +111,7 @@ Raw Data
                         "Qhull License"
                     ],
                     "__impliedId": "Qhull",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -141,6 +149,7 @@ Raw Data
                     "__impliedNames": [
                         "Qhull License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -169,7 +178,7 @@ Raw Data
                 "spdxId": "Qhull",
                 "_implications": {
                     "__impliedNames": [
-                        "qhull",
+                        "scancode://qhull",
                         "Qhull License",
                         "Qhull"
                     ],
@@ -257,6 +266,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Qhull, Copyright (c) 1993-2003\n\nThe National Science and Technology Research Center for Computation and Visualization of Geometric Structures (The Geometry Center) University of Minnesota\n\nemail: qhull@qhull.org\n\nThis software includes Qhull from The Geometry Center. Qhull is copyrighted as noted above. Qhull is free software and may be obtained via http from www.qhull.org. It may be freely copied, modified, and redistributed under the following conditions:\n\n1. All copyright notices must remain intact in all files.\n\n2. A copy of this text file must be distributed along with any copies of Qhull that you redistribute; this includes copies that you have modified, or copies of programs or other software products that include Qhull.\n\n3. If you modify Qhull, you must include a notice giving the name of the person performing the modification, the date of modification, and the reason for such modification.\n\n4. When distributing modified versions of Qhull, or other software products that include Qhull, you must provide notice that the original source code may be obtained as noted above.\n\n5. There is no warranty or other guarantee of fitness for Qhull, it is provided solely \"as is\". Bug reports or fixes may be sent to qhull_bug@qhull.org; the authors may or may not act on them as they desire.",
         "__impliedURLs": [
             [

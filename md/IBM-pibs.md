@@ -5,12 +5,14 @@ IBM PowerPC Initialization and Boot Software (IBM-pibs)
 
 **Other Names:**
 
+-   `scancode://ibm-pibs`
+
 -   `IBM PowerPC Software`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -30,6 +32,8 @@ OSADL Rule
     	YOU MUST Provide Copyright notice (Copyright notice)
     	YOU MUST Provide License text
     PATENT HINTS Yes
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -61,7 +65,7 @@ Raw Data
         "__impliedNames": [
             "IBM-pibs",
             "IBM PowerPC Initialization and Boot Software",
-            "ibm-pibs",
+            "scancode://ibm-pibs",
             "IBM PowerPC Software"
         ],
         "__impliedId": "IBM-pibs",
@@ -73,7 +77,7 @@ Raw Data
                         "IBM-pibs",
                         "IBM-pibs",
                         "IBM PowerPC Initialization and Boot Software",
-                        "ibm-pibs",
+                        "scancode://ibm-pibs",
                         "IBM PowerPC Software"
                     ],
                     "__impliedId": "IBM-pibs"
@@ -82,7 +86,7 @@ Raw Data
                 "otherNames": [
                     "IBM-pibs",
                     "IBM PowerPC Initialization and Boot Software",
-                    "ibm-pibs",
+                    "scancode://ibm-pibs",
                     "IBM PowerPC Software"
                 ]
             },
@@ -101,6 +105,7 @@ Raw Data
                         "IBM PowerPC Initialization and Boot Software"
                     ],
                     "__impliedId": "IBM-pibs",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -140,7 +145,7 @@ Raw Data
                 "spdxId": "IBM-pibs",
                 "_implications": {
                     "__impliedNames": [
-                        "ibm-pibs",
+                        "scancode://ibm-pibs",
                         "IBM PowerPC Software",
                         "IBM-pibs"
                     ],
@@ -217,6 +222,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This source code has been made available to you by IBM on an AS-IS\nbasis.  Anyone receiving this source is licensed under IBM copyrights to\nuse it in any way he or she deems fit, including copying it, modifying\nit, compiling it, and redistributing it either with or without\nmodifications.  No license under IBM patents or patent applications is\nto be implied by the copyright license.\n\nAny user of this software should understand that IBM cannot provide\ntechnical support for this software and will not be responsible for any\nconsequences resulting from the use of this software.\n\nAny person who transfers this source code or any derivative work must\ninclude the IBM copyright notice, this paragraph, and the preceding two\nparagraphs in the transferred software.\n\nCOPYRIGHT   I B M   CORPORATION \nLICENSED MATERIAL  -  PROGRAM PROPERTY OF I B M\n",
         "__impliedURLs": [
             [

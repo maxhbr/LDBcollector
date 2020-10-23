@@ -1,17 +1,21 @@
 == Licence Art Libre 1.3 (LAL-1.3)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |Licence Art Libre 1.3
 |Shortname |LAL-1.3
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|====================================================
+|===
+
+*Other Names:*
+
+* `+scancode://lal-1.3+`
 
 === Comments on (easy) usability
 
-*  It is currently unstettled whether this license is DFSG-free (source:
+* It is currently unstettled whether this license is DFSG-free (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
 === URLs
@@ -121,7 +125,7 @@ Cette licence est rédigée en référence au droit français et à la Conventio
     "__impliedNames": [
         "LAL-1.3",
         "Licence Art Libre 1.3",
-        "lal-1.3"
+        "scancode://lal-1.3"
     ],
     "__impliedId": "LAL-1.3",
     "__impliedAmbiguousNames": [
@@ -134,7 +138,7 @@ Cette licence est rédigée en référence au droit français et à la Conventio
                     "LAL-1.3",
                     "LAL-1.3",
                     "Licence Art Libre 1.3",
-                    "lal-1.3"
+                    "scancode://lal-1.3"
                 ],
                 "__impliedId": "LAL-1.3"
             },
@@ -142,7 +146,7 @@ Cette licence est rédigée en référence au droit français et à la Conventio
             "otherNames": [
                 "LAL-1.3",
                 "Licence Art Libre 1.3",
-                "lal-1.3"
+                "scancode://lal-1.3"
             ]
         },
         "SPDX": {
@@ -160,6 +164,7 @@ Cette licence est rédigée en référence au droit français et à la Conventio
                     "Licence Art Libre 1.3"
                 ],
                 "__impliedId": "LAL-1.3",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -190,7 +195,7 @@ Cette licence est rédigée en référence au droit français et à la Conventio
             "spdxId": "LAL-1.3",
             "_implications": {
                 "__impliedNames": [
-                    "lal-1.3",
+                    "scancode://lal-1.3",
                     "Licence Art Libre 1.3",
                     "LAL-1.3"
                 ],
@@ -256,6 +261,7 @@ Cette licence est rédigée en référence au droit français et à la Conventio
         ]
     ],
     "__calculatedCopyleft": "Copyleft",
+    "__isOsiApproved": false,
     "__impliedText": "Licence Art Libre 1.3 (LAL 1.3)\nPrÃ©ambule :\n\nAvec la Licence Art Libre, lâautorisation est donnÃ©e de copier, de diffuser et de transformer librement les Åuvres dans le respect des droits de lâauteur.\n\nLoin dâignorer ces droits, la Licence Art Libre les reconnaÃ®t et les protÃ¨ge. Elle en reformule lâexercice en permettant Ã  tout un chacun de faire un usage crÃ©atif des productions de lâesprit quels que soient leur genre et leur forme dâexpression.\n\nSi, en rÃ¨gle gÃ©nÃ©rale, lâapplication du droit dâauteur conduit Ã  restreindre lâaccÃ¨s aux Åuvres de lâesprit, la Licence Art Libre, au contraire, le favorise. Lâintention est dâautoriser lâutilisation des ressources dâune Åuvre ; crÃ©er de nouvelles conditions de crÃ©ation pour amplifier les possibilitÃ©s de crÃ©ation. La Licence Art Libre permet dâavoir jouissance des Åuvres tout en reconnaissant les droits et les responsabilitÃ©s de chacun.\n\nAvec le dÃ©veloppement du numÃ©rique, lâinvention dâinternet et des logiciels libres, les modalitÃ©s de crÃ©ation ont Ã©voluÃ© : les productions de lâesprit sâoffrent naturellement Ã  la circulation, Ã  lâÃ©change et aux transformations. Elles se prÃªtent favorablement Ã  la rÃ©alisation dâÅuvres communes que chacun peut augmenter pour lâavantage de tous.\n\nCâest la raison essentielle de la Licence Art Libre : promouvoir et protÃ©ger ces productions de lâesprit selon les principes du copyleft : libertÃ© dâusage, de copie, de diffusion, de transformation et interdiction dâappropriation exclusive.\n\nDÃ©finitions :\n\nNous dÃ©signons par Â« Åuvre Â», autant lâÅuvre initiale, les Åuvres consÃ©quentes, que lâÅuvre commune telles que dÃ©finies ci-aprÃ¨s :\n\nLâÅuvre commune :â¨Il sâagit dâune Åuvre qui comprend lâÅuvre initiale ainsi que toutes les contributions postÃ©rieures (les originaux consÃ©quents et les copies). Elle est crÃ©Ã©e Ã  lâinitiative de lâauteur initial qui par cette licence dÃ©finit les conditions selon lesquelles les contributions sont faites.\n\nLâÅuvre initiale :â¨Câest-Ã -dire lâÅuvre crÃ©Ã©e par lâinitiateur de lâÅuvre commune dont les copies vont Ãªtre modifiÃ©es par qui le souhaite.\n\nLes Åuvres consÃ©quentes :â¨Câest-Ã -dire les contributions des auteurs qui participent Ã  la formation de lâÅuvre commune en faisant usage des droits de reproduction, de diffusion et de modification que leur confÃ¨re la licence.\n\nOriginaux (sources ou ressources de lâÅuvre) :â¨Chaque exemplaire datÃ© de lâÅuvre initiale ou consÃ©quente que leurs auteurs prÃ©sentent comme rÃ©fÃ©rence pour toutes actualisations, interprÃ©tations, copies ou reproductions ultÃ©rieures.\n\nCopie :â¨Toute reproduction dâun original au sens de cette licence.\n\n1- OBJET. \nCette licence a pour objet de dÃ©finir les conditions selon lesquelles vous pouvez jouir librement de lâÅuvre.\n\n2. LâÃTENDUE DE LA JOUISSANCE. \nCette Åuvre est soumise au droit dâauteur, et lâauteur par cette licence vous indique quelles sont vos libertÃ©s pour la copier, la diffuser et la modifier.\n\n2.1 LA LIBERTÃ DE COPIER (OU DE REPRODUCTION). \nVous avez la libertÃ© de copier cette Åuvre pour vous, vos amis ou toute autre personne, quelle que soit la technique employÃ©e.\n\n2.2 LA LIBERTÃ DE DIFFUSER (INTERPRÃTER, REPRÃSENTER, DISTRIBUER). \nVous pouvez diffuser librement les copies de ces Åuvres, modifiÃ©es ou non, quel que soit le support, quel que soit le lieu, Ã  titre onÃ©reux ou gratuit, si vous respectez toutes les conditions suivantes :\n\n1.\tjoindre aux copies cette licence Ã  lâidentique ou indiquer prÃ©cisÃ©ment oÃ¹ se trouve la licence ; \n2.\tindiquer au destinataire le nom de chaque auteur des originaux, y compris le vÃ´tre si vous avez modifiÃ© lâÅuvre ; \n3.\tindiquer au destinataire oÃ¹ il pourrait avoir accÃ¨s aux originaux (initiaux et/ou consÃ©quents).\n\nLes auteurs des originaux pourront, sâils le souhaitent, vous autoriser Ã  diffuser lâoriginal dans les mÃªmes conditions que les copies.\n\n2.3 LA LIBERTÃ DE MODIFIER. \nVous avez la libertÃ© de modifier les copies des originaux (initiaux et consÃ©quents) dans le respect des conditions suivantes :\n\n1.\tcelles prÃ©vues Ã  lâarticle 2.2 en cas de diffusion de la copie modifiÃ©e ; \n2.\tindiquer quâil sâagit dâune Åuvre modifiÃ©e et, si possible, la nature de la modification ; \n3.\tdiffuser cette Åuvre consÃ©quente avec la mÃªme licence ou avec toute licence compatible ; \n4.\tLes auteurs des originaux pourront, sâils le souhaitent, vous autoriser Ã  modifier lâoriginal dans les mÃªmes conditions que les copies.\n\n3. DROITS CONNEXES. \nLes actes donnant lieu Ã  des droits dâauteur ou des droits voisins ne doivent pas constituer un obstacle aux libertÃ©s confÃ©rÃ©es par cette licence.â¨Câest pourquoi, par exemple, les interprÃ©tations doivent Ãªtre soumises Ã  la mÃªme licence ou une licence compatible. De mÃªme, lâintÃ©gration de lâÅuvre Ã  une base de donnÃ©es, une compilation ou une anthologie ne doit pas faire obstacle Ã  la jouissance de lâÅuvre telle que dÃ©finie par cette licence.\n\n4. Lâ INTÃGRATION DE LâÅUVRE. \nToute intÃ©gration de cette Åuvre Ã  un ensemble non soumis Ã  la LAL doit assurer lâexercice des libertÃ©s confÃ©rÃ©es par cette licence. \nSi lâÅuvre nâest plus accessible indÃ©pendamment de lâensemble, alors lâintÃ©gration nâest possible quâÃ  condition que lâensemble soit soumis Ã  la LAL ou une licence compatible.\n\n5. CRITÃRES DE COMPATIBILITÃ. \nUne licence est compatible avec la LAL si et seulement si :\n\n1.\telle accorde lâautorisation de copier, diffuser et modifier des copies de lâÅuvre, y compris Ã  des fins lucratives, et sans autres restrictions que celles quâimpose le respect des autres critÃ¨res de compatibilitÃ© ; \n2.\telle garantit la paternitÃ© de lâÅuvre et lâaccÃ¨s aux versions antÃ©rieures de lâÅuvre quand cet accÃ¨s est possible ; \n3.\telle reconnaÃ®t la LAL Ã©galement compatible (rÃ©ciprocitÃ©) ; \n4.\telle impose que les modifications faites sur lâÅuvre soient soumises Ã  la mÃªme licence ou encore Ã  une licence rÃ©pondant aux critÃ¨res de compatibilitÃ© posÃ©s par la LAL.\n\n6. VOS DROITS INTELLECTUELS. \nLa LAL nâa pas pour objet de nier vos droits dâauteur sur votre contribution ni vos droits connexes. En choisissant de contribuer Ã  lâÃ©volution de cette Åuvre commune, vous acceptez seulement dâoffrir aux autres les mÃªmes autorisations sur votre contribution que celles qui vous ont Ã©tÃ© accordÃ©es par cette licence. Ces autorisations nâentraÃ®nent pas un dessaisissement de vos droits intellectuels.\n\n7. VOS RESPONSABILITÃS. \nLa libertÃ© de jouir de lâÅuvre tel que permis par la LAL (libertÃ© de copier, diffuser, modifier) implique pour chacun la responsabilitÃ© de ses propres faits.\n\n8. LA DURÃE DE LA LICENCE. \nCette licence prend effet dÃ¨s votre acceptation de ses dispositions. Le fait de copier, de diffuser, ou de modifier lâÅuvre constitue une acceptation tacite.â¨ \nCette licence a pour durÃ©e la durÃ©e des droits dâauteur attachÃ©s Ã  lâÅuvre. Si vous ne respectez pas les termes de cette licence, vous perdez automatiquement les droits quâelle vous confÃ¨re.â¨Si le rÃ©gime juridique auquel vous Ãªtes soumis ne vous permet pas de respecter les termes de cette licence, vous ne pouvez pas vous prÃ©valoir des libertÃ©s quâelle confÃ¨re.\n\n9. LES DIFFÃRENTES VERSIONS DE LA LICENCE. \nCette licence pourra Ãªtre modifiÃ©e rÃ©guliÃ¨rement, en vue de son amÃ©lioration, par ses auteurs (les acteurs du mouvement Copyleft Attitude) sous la forme de nouvelles versions numÃ©rotÃ©es.â¨ \nVous avez toujours le choix entre vous contenter des dispositions contenues dans la version de la LAL sous laquelle la copie vous a Ã©tÃ© communiquÃ©e ou alors, vous prÃ©valoir des dispositions dâune des versions ultÃ©rieures.\n\n10. LES SOUS-LICENCES. \nLes sous-licences ne sont pas autorisÃ©es par la prÃ©sente. Toute personne qui souhaite bÃ©nÃ©ficier des libertÃ©s quâelle confÃ¨re sera liÃ©e directement aux auteurs de lâÅuvre commune.\n\n11. LE CONTEXTE JURIDIQUE. \nCette licence est rÃ©digÃ©e en rÃ©fÃ©rence au droit franÃ§ais et Ã  la Convention de Berne relative au droit dâauteur.",
     "__impliedURLs": [
         [

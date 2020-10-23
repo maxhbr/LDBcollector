@@ -5,6 +5,8 @@ Eiffel Forum License v1.0 (EFL-1.0)
 
 **Other Names:**
 
+-   `scancode://efl-1.0`
+
 -   `EFL 1.0`
 
 -   `The Eiffel Forum License, Version 1`
@@ -12,10 +14,10 @@ Eiffel Forum License v1.0 (EFL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/EFL-1.0.html "SPDX"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -69,7 +71,7 @@ Raw Data
         "__impliedNames": [
             "EFL-1.0",
             "Eiffel Forum License v1.0",
-            "efl-1.0",
+            "scancode://efl-1.0",
             "EFL 1.0",
             "The Eiffel Forum License, Version 1"
         ],
@@ -81,7 +83,7 @@ Raw Data
                         "EFL-1.0",
                         "EFL-1.0",
                         "Eiffel Forum License v1.0",
-                        "efl-1.0",
+                        "scancode://efl-1.0",
                         "EFL 1.0",
                         "The Eiffel Forum License, Version 1"
                     ],
@@ -91,7 +93,7 @@ Raw Data
                 "otherNames": [
                     "EFL-1.0",
                     "Eiffel Forum License v1.0",
-                    "efl-1.0",
+                    "scancode://efl-1.0",
                     "EFL 1.0",
                     "The Eiffel Forum License, Version 1"
                 ]
@@ -121,6 +123,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -156,7 +159,7 @@ Raw Data
                 "spdxId": "EFL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "efl-1.0",
+                        "scancode://efl-1.0",
                         "EFL 1.0",
                         "EFL-1.0"
                     ],
@@ -301,6 +304,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "Eiffel Forum License, version 1\n\nPermission is hereby granted to use, copy, modify and/or distribute\nthis package, provided that:\n\n  - copyright notices are retained unchanged\n\n  - any distribution of this package, whether modified or not,\n    includes this file\n\nPermission is hereby also granted to distribute binary programs which\ndepend on this package, provided that:\n\n  - if the binary program depends on a modified version of this\n    package, you must publicly release the modified version of this\n    package\n\nTHIS PACKAGE IS PROVIDED \"AS IS\" AND WITHOUT WARRANTY. ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE TO ANY PARTY FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.",
         "__impliedURLs": [
             [

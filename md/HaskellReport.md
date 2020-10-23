@@ -5,14 +5,14 @@ Haskell Language Report License (HaskellReport)
 
 **Other Names:**
 
--   `haskell-report`
+-   `scancode://haskell-report`
 
 -   `Haskell Report License`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -27,12 +27,12 @@ URLs
 Text
 ----
 
-    Code derived from the document "Report on the Programming Language
-    Haskell 2010", is distributed under the following license:
-
-    Copyright (c) 2010 Simon Marlow
-
-    The authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice.  Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.
+    The authors intend this Report to belong to the entire Haskell community, and
+    so we grant permission to copy and distribute it for any purpose, provided that
+    it is reproduced in its entirety, including this Notice.  Modified versions of
+    this Report may also be copied and distributed for any purpose, provided that
+    the modified version is clearly presented as such, and that it does not claim
+    to be a definition of the Haskell 2010 Language.
 
 ------------------------------------------------------------------------
 
@@ -43,10 +43,11 @@ Raw Data
         "__impliedNames": [
             "HaskellReport",
             "Haskell Language Report License",
-            "haskell-report",
+            "scancode://haskell-report",
             "Haskell Report License"
         ],
         "__impliedId": "HaskellReport",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -54,7 +55,7 @@ Raw Data
                         "HaskellReport",
                         "HaskellReport",
                         "Haskell Language Report License",
-                        "haskell-report",
+                        "scancode://haskell-report",
                         "Haskell Report License"
                     ],
                     "__impliedId": "HaskellReport"
@@ -63,7 +64,7 @@ Raw Data
                 "otherNames": [
                     "HaskellReport",
                     "Haskell Language Report License",
-                    "haskell-report",
+                    "scancode://haskell-report",
                     "Haskell Report License"
                 ]
             },
@@ -82,6 +83,7 @@ Raw Data
                         "Haskell Language Report License"
                     ],
                     "__impliedId": "HaskellReport",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -109,6 +111,7 @@ Raw Data
                     "__impliedNames": [
                         "Haskell Language Report License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -125,7 +128,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License",
                 "shortName": "Haskell Report License",
                 "textUrls": null,
-                "text": "Code derived from the document \"Report on the Programming Language\nHaskell 2010\", is distributed under the following license:\n\nCopyright (c) 2010 Simon Marlow\n\nThe authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice.  Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.",
+                "text": "The authors intend this Report to belong to the entire Haskell community, and\nso we grant permission to copy and distribute it for any purpose, provided that\nit is reproduced in its entirety, including this Notice.  Modified versions of\nthis Report may also be copied and distributed for any purpose, provided that\nthe modified version is clearly presented as such, and that it does not claim\nto be a definition of the Haskell 2010 Language.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Simon Marlow",
@@ -135,7 +138,7 @@ Raw Data
                 "spdxId": "HaskellReport",
                 "_implications": {
                     "__impliedNames": [
-                        "haskell-report",
+                        "scancode://haskell-report",
                         "Haskell Report License",
                         "HaskellReport"
                     ],
@@ -147,7 +150,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Code derived from the document \"Report on the Programming Language\nHaskell 2010\", is distributed under the following license:\n\nCopyright (c) 2010 Simon Marlow\n\nThe authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice.  Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.",
+                    "__impliedText": "The authors intend this Report to belong to the entire Haskell community, and\nso we grant permission to copy and distribute it for any purpose, provided that\nit is reproduced in its entirety, including this Notice.  Modified versions of\nthis Report may also be copied and distributed for any purpose, provided that\nthe modified version is clearly presented as such, and that it does not claim\nto be a definition of the Haskell 2010 Language.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -173,7 +176,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Code derived from the document \"Report on the Programming Language\nHaskell 2010\", is distributed under the following license:\n\nCopyright (c) 2010 Simon Marlow\n\nThe authors intend this Report to belong to the entire Haskell community, and so we grant permission to copy and distribute it for any purpose, provided that it is reproduced in its entirety, including this Notice.  Modified versions of this Report may also be copied and distributed for any purpose, provided that the modified version is clearly presented as such, and that it does not claim to be a definition of the Haskell 2010 Language.",
+        "__isOsiApproved": false,
+        "__impliedText": "The authors intend this Report to belong to the entire Haskell community, and\nso we grant permission to copy and distribute it for any purpose, provided that\nit is reproduced in its entirety, including this Notice.  Modified versions of\nthis Report may also be copied and distributed for any purpose, provided that\nthe modified version is clearly presented as such, and that it does not claim\nto be a definition of the Haskell 2010 Language.",
         "__impliedURLs": [
             [
                 "SPDX",

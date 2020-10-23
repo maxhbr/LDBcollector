@@ -1,23 +1,23 @@
 == enna License (MIT-enna)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |enna License
 |Shortname |MIT-enna
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|===
 
 *Other Names:*
 
-* `enna`
+* `+scancode://enna+`
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
 
@@ -67,9 +67,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "MIT-enna",
         "enna License",
-        "enna"
+        "scancode://enna"
     ],
     "__impliedId": "MIT-enna",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -77,7 +78,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "MIT-enna",
                     "MIT-enna",
                     "enna License",
-                    "enna"
+                    "scancode://enna"
                 ],
                 "__impliedId": "MIT-enna"
             },
@@ -85,7 +86,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "otherNames": [
                 "MIT-enna",
                 "enna License",
-                "enna"
+                "scancode://enna"
             ]
         },
         "SPDX": {
@@ -103,6 +104,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "enna License"
                 ],
                 "__impliedId": "MIT-enna",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -130,6 +132,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 "__impliedNames": [
                     "enna License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -156,7 +159,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "spdxId": "MIT-enna",
             "_implications": {
                 "__impliedNames": [
-                    "enna",
+                    "scancode://enna",
                     "enna License",
                     "MIT-enna"
                 ],
@@ -240,6 +243,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies of the Software and its Copyright notices. In addition publicly\ndocumented acknowledgment must be given that this software has been used if no\nsource code of this software is made available publicly. This includes\nacknowledgments in either Copyright notices, Manuals, Publicity and Marketing\ndocuments or any documentation provided with any product containing this\nsoftware. This License does not apply to any software that links to the\nlibraries provided by this software (statically or dynamically), but only to the\nsoftware provided.\n\nPlease see the COPYING.PLAIN for a plain-english explanation of this notice and\nit's intent.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF\nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
     "__impliedURLs": [
         [

@@ -1,39 +1,41 @@
 == The Unlicense (Unlicense)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |The Unlicense
 |Shortname |Unlicense
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|Has Patent Hint |False
+|===
 
 *Other Names:*
 
-* `Unlicense 1`
+* `+scancode://unlicense+`
+* `+Unlicense 1+`
 
 === Description
 
-_______________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A license with no conditions whatsoever which dedicates works to the
 public domain. Unlicensed works, modifications, and larger works may be
 distributed under different terms and without source code.
-_______________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-* *↑* Google Classification is UNENCUMBERED (source:
+* **↑**Google Classification is UNENCUMBERED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This software Licenses is OK for Fedora (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki])
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
@@ -44,7 +46,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * private-use
@@ -58,7 +60,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/unlicense.txt[choosealicense.com])
@@ -107,10 +109,13 @@ For more information, please refer to <http://unlicense.org/>
     "__impliedNames": [
         "Unlicense",
         "The Unlicense",
+        "scancode://unlicense",
         "unlicense",
         "Unlicense 1"
     ],
     "__impliedId": "Unlicense",
+    "__isFsfFree": true,
+    "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -145,6 +150,7 @@ For more information, please refer to <http://unlicense.org/>
                     "Unlicense",
                     "Unlicense",
                     "The Unlicense",
+                    "scancode://unlicense",
                     "unlicense",
                     "Unlicense 1"
                 ],
@@ -154,6 +160,7 @@ For more information, please refer to <http://unlicense.org/>
             "otherNames": [
                 "Unlicense",
                 "The Unlicense",
+                "scancode://unlicense",
                 "unlicense",
                 "Unlicense 1"
             ]
@@ -173,6 +180,7 @@ For more information, please refer to <http://unlicense.org/>
                     "The Unlicense"
                 ],
                 "__impliedId": "Unlicense",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -200,6 +208,7 @@ For more information, please refer to <http://unlicense.org/>
                 "__impliedNames": [
                     "Unlicense"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -226,7 +235,7 @@ For more information, please refer to <http://unlicense.org/>
             "spdxId": "Unlicense",
             "_implications": {
                 "__impliedNames": [
-                    "unlicense",
+                    "scancode://unlicense",
                     "Unlicense",
                     "Unlicense"
                 ],
@@ -355,7 +364,8 @@ For more information, please refer to <http://unlicense.org/>
                 "__impliedNames": [
                     "Unlicense",
                     "Unlicense 1"
-                ]
+                ],
+                "__hasPatentHint": false
             },
             "Private use": {
                 "value": "Permissive/Public domain",
@@ -533,6 +543,7 @@ For more information, please refer to <http://unlicense.org/>
         ],
         "conditions": []
     },
+    "__isOsiApproved": false,
     "__impliedText": "This is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <http://unlicense.org/>",
     "__impliedURLs": [
         [

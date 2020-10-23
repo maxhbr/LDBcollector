@@ -1,30 +1,34 @@
 == JSON License (JSON)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |JSON License
 |Shortname |JSON
-|Rating |Unknown, probably Attention or Stop or No-Go
+|Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|====================================================
+|===
+
+*Other Names:*
+
+* `+scancode://json+`
 
 === Comments on (easy) usability
 
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
-* *↓* Infamous for the clause The Software shall be used for Good, not
+* **↓**Infamous for the clause The Software shall be used for Good, not
 Evil. (source: https://wiki.debian.org/DFSGLicenses[Debian Free Software
 Guidelines])
-* *↓* This software licenses which is NOT OKAY for Fedora. Nothing in
+* **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
 Fedora is permitted to use this license. It is either non-free or
 deprecated. (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
@@ -70,7 +74,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "JSON",
         "JSON License",
-        "json"
+        "scancode://json"
     ],
     "__impliedId": "JSON",
     "__impliedAmbiguousNames": [
@@ -83,7 +87,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "JSON",
                     "JSON",
                     "JSON License",
-                    "json"
+                    "scancode://json"
                 ],
                 "__impliedId": "JSON"
             },
@@ -91,7 +95,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "otherNames": [
                 "JSON",
                 "JSON License",
-                "json"
+                "scancode://json"
             ]
         },
         "SPDX": {
@@ -109,6 +113,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "JSON License"
                 ],
                 "__impliedId": "JSON",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -162,7 +167,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "spdxId": "JSON",
             "_implications": {
                 "__impliedNames": [
-                    "json",
+                    "scancode://json",
                     "JSON License",
                     "JSON"
                 ],
@@ -317,6 +322,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nThe Software shall be used for Good, not Evil.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
     "__impliedURLs": [
         [

@@ -5,6 +5,8 @@ Zope Public License 2.0 (ZPL-2.0)
 
 **Other Names:**
 
+-   `scancode://zpl-2.0`
+
 -   `ZPL 2.0`
 
 -   `The Zope Public License, Version 2.0`
@@ -16,14 +18,14 @@ Zope Public License 2.0 (ZPL-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/ZPL-2.0.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -95,7 +97,7 @@ Raw Data
         "__impliedNames": [
             "ZPL-2.0",
             "Zope Public License 2.0",
-            "zpl-2.0",
+            "scancode://zpl-2.0",
             "ZPL 2.0",
             "The Zope Public License, Version 2.0",
             "Zope-2.0",
@@ -136,7 +138,7 @@ Raw Data
                         "ZPL-2.0",
                         "ZPL-2.0",
                         "Zope Public License 2.0",
-                        "zpl-2.0",
+                        "scancode://zpl-2.0",
                         "ZPL 2.0",
                         "The Zope Public License, Version 2.0",
                         "Zope-2.0",
@@ -148,7 +150,7 @@ Raw Data
                 "otherNames": [
                     "ZPL-2.0",
                     "Zope Public License 2.0",
-                    "zpl-2.0",
+                    "scancode://zpl-2.0",
                     "ZPL 2.0",
                     "The Zope Public License, Version 2.0",
                     "Zope-2.0",
@@ -180,6 +182,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -217,7 +220,7 @@ Raw Data
                 "spdxId": "ZPL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "zpl-2.0",
+                        "scancode://zpl-2.0",
                         "ZPL 2.0",
                         "ZPL-2.0"
                     ],
@@ -423,6 +426,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "This license has been certified as open source. It has also been designated as\nGPL compatible by the Free Software Foundation (FSF).\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1. Redistributions in source code must retain the above copyright notice,\n   this list of conditions, and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions, and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n   3. The name Zope Corporation (tm) must not be used to endorse or promote\n   products derived from this software without prior written permission from\n   Zope Corporation.\n\n   4. The right to distribute this software or to use it for any purpose does\n   not give you the right to use Servicemarks (sm) or Trademarks (tm) of Zope\n   Corporation. Use of them is covered in a separate agreement (see\n   http://www.zope.com/Marks).\n\n   5. If any files are modified, you must cause the modified files to carry\n   prominent notices stating that you changed the files and the date of any\n   change.\n\nDisclaimer\n\nTHIS SOFTWARE IS PROVIDED BY ZOPE CORPORATION ``AS IS'' AND ANY EXPRESSED OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL ZOPE CORPORATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThis software consists of contributions made by Zope Corporation and many\nindividuals on behalf of Zope Corporation. Specific attributions are listed in\nthe accompanying credits file.",
         "__impliedURLs": [
             [

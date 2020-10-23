@@ -3,14 +3,18 @@ diffmark license (diffmark)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://diffmark`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -37,9 +41,11 @@ Raw Data
         "__impliedNames": [
             "diffmark",
             "diffmark license",
+            "scancode://diffmark",
             "diffmark License"
         ],
         "__impliedId": "diffmark",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -47,6 +53,7 @@ Raw Data
                         "diffmark",
                         "diffmark",
                         "diffmark license",
+                        "scancode://diffmark",
                         "diffmark License"
                     ],
                     "__impliedId": "diffmark"
@@ -55,6 +62,7 @@ Raw Data
                 "otherNames": [
                     "diffmark",
                     "diffmark license",
+                    "scancode://diffmark",
                     "diffmark License"
                 ]
             },
@@ -73,6 +81,7 @@ Raw Data
                         "diffmark license"
                     ],
                     "__impliedId": "diffmark",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -100,6 +109,7 @@ Raw Data
                     "__impliedNames": [
                         "diffmark license"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -126,7 +136,7 @@ Raw Data
                 "spdxId": "diffmark",
                 "_implications": {
                     "__impliedNames": [
-                        "diffmark",
+                        "scancode://diffmark",
                         "diffmark License",
                         "diffmark"
                     ],
@@ -210,6 +220,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "1. you can do what you want with it\n2. I refuse any responsibility for the consequences",
         "__impliedURLs": [
             [

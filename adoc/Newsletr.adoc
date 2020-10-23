@@ -1,20 +1,24 @@
 == Newsletr License (Newsletr)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Newsletr License
 |Shortname |Newsletr
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
+
+*Other Names:*
+
+* `+scancode://newsletr+`
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs
@@ -42,9 +46,10 @@ Permission is granted to anyone to use this software for any purpose on any comp
     "__impliedNames": [
         "Newsletr",
         "Newsletr License",
-        "newsletr"
+        "scancode://newsletr"
     ],
     "__impliedId": "Newsletr",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -52,7 +57,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
                     "Newsletr",
                     "Newsletr",
                     "Newsletr License",
-                    "newsletr"
+                    "scancode://newsletr"
                 ],
                 "__impliedId": "Newsletr"
             },
@@ -60,7 +65,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
             "otherNames": [
                 "Newsletr",
                 "Newsletr License",
-                "newsletr"
+                "scancode://newsletr"
             ]
         },
         "SPDX": {
@@ -78,6 +83,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
                     "Newsletr License"
                 ],
                 "__impliedId": "Newsletr",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -105,6 +111,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
                 "__impliedNames": [
                     "Newsletr License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -131,7 +138,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
             "spdxId": "Newsletr",
             "_implications": {
                 "__impliedNames": [
-                    "newsletr",
+                    "scancode://newsletr",
                     "Newsletr License",
                     "Newsletr"
                 ],
@@ -215,6 +222,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:\n\n1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.",
     "__impliedURLs": [
         [

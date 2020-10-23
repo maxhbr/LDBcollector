@@ -5,6 +5,8 @@ Eiffel Forum License v2.0 (EFL-2.0)
 
 **Other Names:**
 
+-   `scancode://efl-2.0`
+
 -   `EFL 2.0`
 
 -   `Eiffel Forum License, Version 2`
@@ -16,14 +18,14 @@ Eiffel Forum License v2.0 (EFL-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/EFL-2.0.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/EFL-2.0.html "SPDX"))
-
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -51,6 +53,8 @@ OSADL Rule
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
     	YOU MUST Forward License text
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -87,13 +91,14 @@ Raw Data
         "__impliedNames": [
             "EFL-2.0",
             "Eiffel Forum License v2.0",
-            "efl-2.0",
+            "scancode://efl-2.0",
             "EFL 2.0",
             "Eiffel Forum License, Version 2",
             "License :: OSI Approved :: Eiffel Forum License",
             "Eiffel Forum License 2.0"
         ],
         "__impliedId": "EFL-2.0",
+        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -128,7 +133,7 @@ Raw Data
                         "EFL-2.0",
                         "EFL-2.0",
                         "Eiffel Forum License v2.0",
-                        "efl-2.0",
+                        "scancode://efl-2.0",
                         "EFL 2.0",
                         "Eiffel Forum License, Version 2",
                         "License :: OSI Approved :: Eiffel Forum License",
@@ -140,7 +145,7 @@ Raw Data
                 "otherNames": [
                     "EFL-2.0",
                     "Eiffel Forum License v2.0",
-                    "efl-2.0",
+                    "scancode://efl-2.0",
                     "EFL 2.0",
                     "Eiffel Forum License, Version 2",
                     "License :: OSI Approved :: Eiffel Forum License",
@@ -172,6 +177,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -213,6 +219,7 @@ Raw Data
                     "__impliedNames": [
                         "Eiffel Forum License 2.0"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -245,7 +252,7 @@ Raw Data
                 "spdxId": "EFL-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "efl-2.0",
+                        "scancode://efl-2.0",
                         "EFL 2.0",
                         "EFL-2.0"
                     ],
@@ -429,6 +436,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "Eiffel Forum License, version 2\n\n   1. Permission is hereby granted to use, copy, modify and/or\n      distribute this package, provided that:\n          * copyright notices are retained unchanged,\n          * any distribution of this package, whether modified or not,\n      includes this license text.\n   2. Permission is hereby also granted to distribute binary programs\n      which depend on this package. If the binary program depends on a\n      modified version of this package, you are encouraged to publicly\n      release the modified version of this package.\n\n***********************\n\nTHIS PACKAGE IS PROVIDED \"AS IS\" AND WITHOUT WARRANTY. ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE TO ANY PARTY FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.\n\n***********************",
         "__impliedURLs": [
             [

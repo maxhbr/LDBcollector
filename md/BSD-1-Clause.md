@@ -3,10 +3,14 @@ BSD 1-Clause License (BSD-1-Clause)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://bsd-1-clause`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -49,7 +53,7 @@ Raw Data
         "__impliedNames": [
             "BSD-1-Clause",
             "BSD 1-Clause License",
-            "bsd-1-clause"
+            "scancode://bsd-1-clause"
         ],
         "__impliedId": "BSD-1-Clause",
         "facts": {
@@ -59,7 +63,7 @@ Raw Data
                         "BSD-1-Clause",
                         "BSD-1-Clause",
                         "BSD 1-Clause License",
-                        "bsd-1-clause"
+                        "scancode://bsd-1-clause"
                     ],
                     "__impliedId": "BSD-1-Clause"
                 },
@@ -67,7 +71,7 @@ Raw Data
                 "otherNames": [
                     "BSD-1-Clause",
                     "BSD 1-Clause License",
-                    "bsd-1-clause"
+                    "scancode://bsd-1-clause"
                 ]
             },
             "SPDX": {
@@ -85,6 +89,7 @@ Raw Data
                         "BSD 1-Clause License"
                     ],
                     "__impliedId": "BSD-1-Clause",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -113,7 +118,7 @@ Raw Data
                 "spdxId": "BSD-1-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-1-clause",
+                        "scancode://bsd-1-clause",
                         "BSD-1-Clause",
                         "BSD-1-Clause"
                     ],
@@ -190,6 +195,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR AND CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n",
         "__impliedURLs": [
             [

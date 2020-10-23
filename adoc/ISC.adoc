@@ -1,43 +1,46 @@
 == ISC License (ISC)
 
 [cols=",",options="header",]
-|==========================
+|===
 |Key |Value
 |Fullname |ISC License
 |Shortname |ISC
 |Rating |Go
 |Classification |NoCopyleft
-|==========================
+|Has Patent Hint |False
+|===
 
 *Other Names:*
 
-* `ISC License (ISC)`
-* `License :: OSI Approved :: ISC License (ISCL)`
+* `+scancode://isc+`
+* `+ISC License (ISC)+`
+* `+License :: OSI Approved :: ISC License (ISCL)+`
 
 === Description
 
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A permissive license lets people do anything with your code with proper
 attribution and without warranty. The ISC license is functionally
 equivalent to the <a href="/licenses/bsd-2-clause/">BSD 2-Clause</a> and
 <a href="/licenses/mit/">MIT</a> licenses, removing some language that
 is no longer necessary.
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Silver (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* This license is compatible with the DebianFreeSoftwareGuidelines
-(DFSG-free) (source: https://wiki.debian.org/DFSGLicenses[Debian Free
-Software Guidelines])
-* *↑* Google Classification is NOTICE (source:
+* **↑**Google Classification is NOTICE (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* *↑* Is OSI Approved (source: https://spdx.org/licenses/ISC.html[SPDX])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/ISC.html[SPDX])
+* **↑**Rating is: Silver (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This license is compatible with the DebianFreeSoftwareGuidelines
+(DFSG-free) (source: https://wiki.debian.org/DFSGLicenses[Debian Free
+Software Guidelines])
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
@@ -48,7 +51,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -63,7 +66,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt[choosealicense.com])
@@ -90,6 +93,8 @@ USE CASE Source code delivery OR Binary delivery
 	YOU MUST Forward License text
 ....
 
+(source: OSADL License Checklist)
+
 === Text
 
 ....
@@ -115,6 +120,7 @@ THIS SOFTWARE.
     "__impliedNames": [
         "ISC",
         "ISC License",
+        "scancode://isc",
         "isc",
         "ISC License (ISC)",
         "License :: OSI Approved :: ISC License (ISCL)",
@@ -124,6 +130,7 @@ THIS SOFTWARE.
     "__impliedAmbiguousNames": [
         "ISC license"
     ],
+    "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -158,6 +165,7 @@ THIS SOFTWARE.
                     "ISC",
                     "ISC",
                     "ISC License",
+                    "scancode://isc",
                     "isc",
                     "ISC License (ISC)",
                     "License :: OSI Approved :: ISC License (ISCL)",
@@ -169,6 +177,7 @@ THIS SOFTWARE.
             "otherNames": [
                 "ISC",
                 "ISC License",
+                "scancode://isc",
                 "isc",
                 "ISC License (ISC)",
                 "License :: OSI Approved :: ISC License (ISCL)",
@@ -200,6 +209,7 @@ THIS SOFTWARE.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -249,7 +259,7 @@ THIS SOFTWARE.
             "spdxId": "ISC",
             "_implications": {
                 "__impliedNames": [
-                    "isc",
+                    "scancode://isc",
                     "ISC License",
                     "ISC"
                 ],
@@ -486,7 +496,8 @@ THIS SOFTWARE.
                 "__impliedNames": [
                     "ISC",
                     "ISC license"
-                ]
+                ],
+                "__hasPatentHint": false
             },
             "Modification": {
                 "value": "Permissive",
@@ -720,6 +731,7 @@ THIS SOFTWARE.
             }
         ]
     },
+    "__isOsiApproved": true,
     "__impliedText": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n",
     "__impliedURLs": [
         [

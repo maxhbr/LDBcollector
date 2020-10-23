@@ -1,24 +1,25 @@
 == Eiffel Forum License v1.0 (EFL-1.0)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Eiffel Forum License v1.0
 |Shortname |EFL-1.0
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|===
 
 *Other Names:*
 
-* `EFL 1.0`
-* `The Eiffel Forum License, Version 1`
+* `+scancode://efl-1.0+`
+* `+EFL 1.0+`
+* `+The Eiffel Forum License, Version 1+`
 
 === Comments on (easy) usability
 
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/EFL-1.0.html[SPDX])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
 === URLs
@@ -67,7 +68,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
     "__impliedNames": [
         "EFL-1.0",
         "Eiffel Forum License v1.0",
-        "efl-1.0",
+        "scancode://efl-1.0",
         "EFL 1.0",
         "The Eiffel Forum License, Version 1"
     ],
@@ -79,7 +80,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
                     "EFL-1.0",
                     "EFL-1.0",
                     "Eiffel Forum License v1.0",
-                    "efl-1.0",
+                    "scancode://efl-1.0",
                     "EFL 1.0",
                     "The Eiffel Forum License, Version 1"
                 ],
@@ -89,7 +90,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
             "otherNames": [
                 "EFL-1.0",
                 "Eiffel Forum License v1.0",
-                "efl-1.0",
+                "scancode://efl-1.0",
                 "EFL 1.0",
                 "The Eiffel Forum License, Version 1"
             ]
@@ -119,6 +120,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -154,7 +156,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
             "spdxId": "EFL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "efl-1.0",
+                    "scancode://efl-1.0",
                     "EFL 1.0",
                     "EFL-1.0"
                 ],
@@ -299,6 +301,7 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": true,
     "__impliedText": "Eiffel Forum License, version 1\n\nPermission is hereby granted to use, copy, modify and/or distribute\nthis package, provided that:\n\n  - copyright notices are retained unchanged\n\n  - any distribution of this package, whether modified or not,\n    includes this file\n\nPermission is hereby also granted to distribute binary programs which\ndepend on this package, provided that:\n\n  - if the binary program depends on a modified version of this\n    package, you must publicly release the modified version of this\n    package\n\nTHIS PACKAGE IS PROVIDED \"AS IS\" AND WITHOUT WARRANTY. ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE TO ANY PARTY FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.",
     "__impliedURLs": [
         [

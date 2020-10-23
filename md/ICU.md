@@ -5,20 +5,16 @@ ICU License (ICU)
 
 **Other Names:**
 
--   `x11`
+-   `scancode://x11`
 
 -   `X11 License`
 
 -   `X11`
 
--   `x11-xconsortium`
-
--   `X11-Style (X Consortium)`
-
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
@@ -35,19 +31,17 @@ URLs
 
 -   **Homepage:** http://www.xfree86.org/3.3.6/COPYRIGHT2.html
 
--   **Homepage:** http://www.xfree86.org/current/LICENSE5.html
-
 -   **SPDX:** http://spdx.org/licenses/ICU.json
 
 -   **SPDX:** http://spdx.org/licenses/X11.json
 
 -   **SPDX:** https://spdx.org/licenses/ICU.html
 
--   **SPDX:** https://spdx.org/licenses/X11.html
-
 -   http://source.icu-project.org/repos/icu/icu/trunk/license.html
 
 -   http://www.xfree86.org/3.3.6/COPYRIGHT2.html\#3
+
+-   http://www.xfree86.org/current/LICENSE5.html
 
 -   https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
 
@@ -60,6 +54,8 @@ OSADL Rule
     	YOU MUST Provide Copyright notices In Documentation
     	YOU MUST Provide License text In Documentation
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -95,11 +91,9 @@ Raw Data
         "__impliedNames": [
             "ICU",
             "ICU License",
-            "x11",
+            "scancode://x11",
             "X11 License",
-            "X11",
-            "x11-xconsortium",
-            "X11-Style (X Consortium)"
+            "X11"
         ],
         "__impliedId": "ICU",
         "facts": {
@@ -109,7 +103,7 @@ Raw Data
                         "ICU",
                         "ICU",
                         "ICU License",
-                        "x11",
+                        "scancode://x11",
                         "X11 License"
                     ],
                     "__impliedId": "ICU"
@@ -118,7 +112,7 @@ Raw Data
                 "otherNames": [
                     "ICU",
                     "ICU License",
-                    "x11",
+                    "scancode://x11",
                     "X11 License"
                 ]
             },
@@ -137,6 +131,7 @@ Raw Data
                         "ICU License"
                     ],
                     "__impliedId": "ICU",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -179,7 +174,7 @@ Raw Data
                 "spdxId": "ICU",
                 "_implications": {
                     "__impliedNames": [
-                        "x11",
+                        "scancode://x11",
                         "X11 License",
                         "ICU"
                     ],
@@ -313,6 +308,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of this\nsoftware and associated documentation files (the \"Software\"), to deal in the Software\nwithout restriction, including without limitation the rights to use, copy, modify,\nmerge, publish, distribute, and/or sell copies of the Software, and to permit persons\nto whom the Software is furnished to do so, provided that the above copyright\nnotice(s) and this permission notice appear in all copies of the Software and that\nboth the above copyright notice(s) and this permission notice appear in supporting\ndocumentation.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY\nSPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM\nLOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS\nSOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used\nin advertising or otherwise to promote the sale, use or other dealings in this\nSoftware without prior written authorization of the copyright holder.",
         "__impliedURLs": [
             [
@@ -336,19 +332,11 @@ Raw Data
                 "https://spdx.org/licenses/ICU.html"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/X11.html"
-            ],
-            [
                 "Homepage",
                 "http://www.xfree86.org/3.3.6/COPYRIGHT2.html"
             ],
             [
                 null,
-                "http://www.xfree86.org/current/LICENSE5.html"
-            ],
-            [
-                "Homepage",
                 "http://www.xfree86.org/current/LICENSE5.html"
             ],
             [

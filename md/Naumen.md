@@ -3,18 +3,22 @@ Naumen Public License (Naumen)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://naumen`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Naumen.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Naumen.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -74,10 +78,11 @@ Raw Data
         "__impliedNames": [
             "Naumen",
             "Naumen Public License",
-            "naumen",
+            "scancode://naumen",
             "NAUMEN Public License"
         ],
         "__impliedId": "Naumen",
+        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -112,7 +117,7 @@ Raw Data
                         "Naumen",
                         "Naumen",
                         "Naumen Public License",
-                        "naumen",
+                        "scancode://naumen",
                         "NAUMEN Public License"
                     ],
                     "__impliedId": "Naumen"
@@ -121,7 +126,7 @@ Raw Data
                 "otherNames": [
                     "Naumen",
                     "Naumen Public License",
-                    "naumen",
+                    "scancode://naumen",
                     "NAUMEN Public License"
                 ]
             },
@@ -149,6 +154,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -176,6 +182,7 @@ Raw Data
                     "__impliedNames": [
                         "Naumen Public License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -205,7 +212,7 @@ Raw Data
                 "spdxId": "Naumen",
                 "_implications": {
                     "__impliedNames": [
-                        "naumen",
+                        "scancode://naumen",
                         "NAUMEN Public License",
                         "Naumen"
                     ],
@@ -412,6 +419,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "NAUMEN Public License\n\nThis software is Copyright (c) NAUMEN (tm) and Contributors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions in source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. The name NAUMEN (tm) must not be used to endorse or promote products derived from this software without prior written permission from NAUMEN.\n\n4. The right to distribute this software or to use it for any purpose does not give you the right to use Servicemarks (sm) or Trademarks (tm) of NAUMEN.\n\n5. If any files originating from NAUMEN or Contributors are modified, you must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.\n\nDisclaimer:\n\n    THIS SOFTWARE IS PROVIDED BY NAUMEN \"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NAUMEN OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \n\nThis software consists of contributions made by NAUMEN and Contributors. Specific attributions are listed in the accompanying credits file.",
         "__impliedURLs": [
             [

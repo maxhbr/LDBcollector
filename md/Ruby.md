@@ -3,13 +3,17 @@ Ruby License (Ruby)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://ruby`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -104,9 +108,10 @@ Raw Data
         "__impliedNames": [
             "Ruby",
             "Ruby License",
-            "ruby"
+            "scancode://ruby"
         ],
         "__impliedId": "Ruby",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -114,7 +119,7 @@ Raw Data
                         "Ruby",
                         "Ruby",
                         "Ruby License",
-                        "ruby"
+                        "scancode://ruby"
                     ],
                     "__impliedId": "Ruby"
                 },
@@ -122,7 +127,7 @@ Raw Data
                 "otherNames": [
                     "Ruby",
                     "Ruby License",
-                    "ruby"
+                    "scancode://ruby"
                 ]
             },
             "SPDX": {
@@ -140,6 +145,7 @@ Raw Data
                         "Ruby License"
                     ],
                     "__impliedId": "Ruby",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -167,6 +173,7 @@ Raw Data
                     "__impliedNames": [
                         "Ruby License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -195,7 +202,7 @@ Raw Data
                 "spdxId": "Ruby",
                 "_implications": {
                     "__impliedNames": [
-                        "ruby",
+                        "scancode://ruby",
                         "Ruby License",
                         "Ruby"
                     ],
@@ -354,6 +361,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "\n  1. You may make and give away verbatim copies of the source form of the\n     software without restriction, provided that you duplicate all of the\n     original copyright notices and associated disclaimers.\n\n  2. You may modify your copy of the software in any way, provided that\n     you do at least ONE of the following:\n\n       a) place your modifications in the Public Domain or otherwise\n          make them Freely Available, such as by posting said\n          modifications to Usenet or an equivalent medium, or by allowing\n          the author to include your modifications in the software.\n\n       b) use the modified software only within your corporation or\n          organization.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  3. You may distribute the software in object code or binary form,\n     provided that you do at least ONE of the following:\n\n       a) distribute the binaries and library files of the software,\n          together with instructions (in the manual page or equivalent)\n          on where to get the original distribution.\n\n       b) accompany the distribution with the machine-readable source of\n          the software.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  4. You may modify and include the part of the software into any other\n     software (possibly commercial).  But some files in the distribution\n     are not written by the author, so that they are not under these terms.\n\n     For the list of those files and their copying conditions, see the\n     file LEGAL.\n\n  5. The scripts and library files supplied as input to or produced as\n     output from the software do not automatically fall under the\n     copyright of the software, but belong to whomever generated them,\n     and may be sold commercially, and may be aggregated with this\n     software.\n\n  6. THIS SOFTWARE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n     PURPOSE.",
         "__impliedURLs": [
             [

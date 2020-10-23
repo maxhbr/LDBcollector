@@ -1,45 +1,57 @@
 == Beerware License (Beerware)
 
 [cols=",",options="header",]
-|=======================================
+|===
 |Key |Value
 |Fullname |Beerware License
 |Shortname |Beerware
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
-|=======================================
+|Has Patent Hint |False
+|===
 
 *Other Names:*
 
-* `Beerware 42`
+* `+scancode://beerware+`
+* `+Beer-Ware License+`
+* `+Beerware 42+`
 
 === Comments on (easy) usability
 
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
-* *↓* Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↓* Google Classification is CANNOT_BE_USED "The Beerware license has
+* **↓**Google Classification is CANNOT_BE_USED "The Beerware license has
 similar issues to the WTFPL on account of its vague grant of rights and
 likewise cannot be used at Google, nor can Beerware-licensed projects be
 patched by Googlers." (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
+License List])
 
 === URLs
 
+* *Homepage:* http://people.freebsd.org/~phk/
 * *SPDX:* http://spdx.org/licenses/Beerware.json
 * *SPDX:* https://spdx.org/licenses/Beerware.html
 * https://fedoraproject.org/wiki/Licensing/Beerware
-* https://people.freebsd.org/~phk/
+
+=== Text
+
+....
+"THE BEER-WARE LICENSE" (Revision 42):
+<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
+can do whatever you want with this stuff. If we meet some day, and you think
+this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
+....
 
 '''''
 
@@ -50,9 +62,13 @@ Policy])
     "__impliedNames": [
         "Beerware",
         "Beerware License",
+        "scancode://beerware",
+        "Beer-Ware License",
         "Beerware 42"
     ],
     "__impliedId": "Beerware",
+    "__isFsfFree": true,
+    "__hasPatentHint": false,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -60,6 +76,8 @@ Policy])
                     "Beerware",
                     "Beerware",
                     "Beerware License",
+                    "scancode://beerware",
+                    "Beer-Ware License",
                     "Beerware 42"
                 ],
                 "__impliedId": "Beerware"
@@ -68,6 +86,8 @@ Policy])
             "otherNames": [
                 "Beerware",
                 "Beerware License",
+                "scancode://beerware",
+                "Beer-Ware License",
                 "Beerware 42"
             ]
         },
@@ -87,6 +107,7 @@ Policy])
                     "Beerware License"
                 ],
                 "__impliedId": "Beerware",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -118,6 +139,7 @@ Policy])
                 "__impliedNames": [
                     "Beerware License"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -125,6 +147,48 @@ Policy])
                             "tag": "PositiveJudgement",
                             "contents": "This software Licenses is OK for Fedora"
                         }
+                    ]
+                ]
+            }
+        },
+        "Scancode": {
+            "otherUrls": [
+                "https://people.freebsd.org/~phk/"
+            ],
+            "homepageUrl": "http://people.freebsd.org/~phk/",
+            "shortName": "Beer-Ware License",
+            "textUrls": null,
+            "text": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
+            "category": "Permissive",
+            "osiUrl": null,
+            "owner": "FreeBSD",
+            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml",
+            "key": "beerware",
+            "name": "Beer-Ware License",
+            "spdxId": "Beerware",
+            "_implications": {
+                "__impliedNames": [
+                    "scancode://beerware",
+                    "Beer-Ware License",
+                    "Beerware"
+                ],
+                "__impliedId": "Beerware",
+                "__impliedCopyleft": [
+                    [
+                        "Scancode",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedText": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
+                "__impliedURLs": [
+                    [
+                        "Homepage",
+                        "http://people.freebsd.org/~phk/"
+                    ],
+                    [
+                        null,
+                        "https://people.freebsd.org/~phk/"
                     ]
                 ]
             }
@@ -230,7 +294,8 @@ Policy])
                 "__impliedNames": [
                     "Beerware",
                     "Beerware 42"
-                ]
+                ],
+                "__hasPatentHint": false
             },
             "Private use": {
                 "value": "Permissive",
@@ -298,11 +363,17 @@ Policy])
             "NoCopyleft"
         ],
         [
+            "Scancode",
+            "NoCopyleft"
+        ],
+        [
             "ifrOSS",
             "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
+    "__impliedText": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
     "__impliedURLs": [
         [
             "SPDX",
@@ -319,6 +390,10 @@ Policy])
         [
             "SPDX",
             "https://spdx.org/licenses/Beerware.html"
+        ],
+        [
+            "Homepage",
+            "http://people.freebsd.org/~phk/"
         ],
         [
             null,

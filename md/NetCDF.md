@@ -3,13 +3,17 @@ NetCDF license (NetCDF)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://netcdf`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -26,7 +30,6 @@ URLs
 Text
 ----
 
-    Copyright 1993-2014 University Corporation for Atmospheric Research/Unidata
 
     Portions of this software were developed by the Unidata Program at the
     University Corporation for Atmospheric Research.
@@ -64,10 +67,11 @@ Raw Data
         "__impliedNames": [
             "NetCDF",
             "NetCDF license",
-            "netcdf",
+            "scancode://netcdf",
             "NetCDF License"
         ],
         "__impliedId": "NetCDF",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -75,7 +79,7 @@ Raw Data
                         "NetCDF",
                         "NetCDF",
                         "NetCDF license",
-                        "netcdf",
+                        "scancode://netcdf",
                         "NetCDF License"
                     ],
                     "__impliedId": "NetCDF"
@@ -84,7 +88,7 @@ Raw Data
                 "otherNames": [
                     "NetCDF",
                     "NetCDF license",
-                    "netcdf",
+                    "scancode://netcdf",
                     "NetCDF License"
                 ]
             },
@@ -103,6 +107,7 @@ Raw Data
                         "NetCDF license"
                     ],
                     "__impliedId": "NetCDF",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -130,6 +135,7 @@ Raw Data
                     "__impliedNames": [
                         "NetCDF license"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -146,7 +152,7 @@ Raw Data
                 "homepageUrl": "http://www.unidata.ucar.edu/software/netcdf/copyright.html",
                 "shortName": "NetCDF License",
                 "textUrls": null,
-                "text": "Copyright 1993-2014 University Corporation for Atmospheric Research/Unidata\n\nPortions of this software were developed by the Unidata Program at the\nUniversity Corporation for Atmospheric Research.\n\nAccess and use of this software shall impose the following obligations and\nunderstandings on the user. The user is granted the right, without any fee or\ncost, to use, copy, modify, alter, enhance and distribute this software, and any\nderivative works thereof, and its supporting documentation for any purpose\nwhatsoever, provided that this entire notice appears in all copies of the\nsoftware, derivative works and supporting documentation. Further, UCAR requests\nthat the user credit UCAR/Unidata in any publications that result from the use\nof this software or in any product that includes this software, although this is\nnot an obligation. The names UCAR and/or Unidata, however, may not be used in\nany advertising or publicity to endorse or promote any products or commercial\nentity unless specific written permission is obtained from UCAR/Unidata. The\nuser also understands that UCAR/Unidata is not obligated to provide the user\nwith any support, consulting, training or assistance of any kind with regard to\nthe use, operation and performance of this software nor to provide the user with\nany updates, revisions, new versions or \"bug fixes.\"\n\nTHIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER\nIN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
+                "text": "\nPortions of this software were developed by the Unidata Program at the\nUniversity Corporation for Atmospheric Research.\n\nAccess and use of this software shall impose the following obligations and\nunderstandings on the user. The user is granted the right, without any fee or\ncost, to use, copy, modify, alter, enhance and distribute this software, and any\nderivative works thereof, and its supporting documentation for any purpose\nwhatsoever, provided that this entire notice appears in all copies of the\nsoftware, derivative works and supporting documentation. Further, UCAR requests\nthat the user credit UCAR/Unidata in any publications that result from the use\nof this software or in any product that includes this software, although this is\nnot an obligation. The names UCAR and/or Unidata, however, may not be used in\nany advertising or publicity to endorse or promote any products or commercial\nentity unless specific written permission is obtained from UCAR/Unidata. The\nuser also understands that UCAR/Unidata is not obligated to provide the user\nwith any support, consulting, training or assistance of any kind with regard to\nthe use, operation and performance of this software nor to provide the user with\nany updates, revisions, new versions or \"bug fixes.\"\n\nTHIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER\nIN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Unidata",
@@ -156,7 +162,7 @@ Raw Data
                 "spdxId": "NetCDF",
                 "_implications": {
                     "__impliedNames": [
-                        "netcdf",
+                        "scancode://netcdf",
                         "NetCDF License",
                         "NetCDF"
                     ],
@@ -168,7 +174,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright 1993-2014 University Corporation for Atmospheric Research/Unidata\n\nPortions of this software were developed by the Unidata Program at the\nUniversity Corporation for Atmospheric Research.\n\nAccess and use of this software shall impose the following obligations and\nunderstandings on the user. The user is granted the right, without any fee or\ncost, to use, copy, modify, alter, enhance and distribute this software, and any\nderivative works thereof, and its supporting documentation for any purpose\nwhatsoever, provided that this entire notice appears in all copies of the\nsoftware, derivative works and supporting documentation. Further, UCAR requests\nthat the user credit UCAR/Unidata in any publications that result from the use\nof this software or in any product that includes this software, although this is\nnot an obligation. The names UCAR and/or Unidata, however, may not be used in\nany advertising or publicity to endorse or promote any products or commercial\nentity unless specific written permission is obtained from UCAR/Unidata. The\nuser also understands that UCAR/Unidata is not obligated to provide the user\nwith any support, consulting, training or assistance of any kind with regard to\nthe use, operation and performance of this software nor to provide the user with\nany updates, revisions, new versions or \"bug fixes.\"\n\nTHIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER\nIN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
+                    "__impliedText": "\nPortions of this software were developed by the Unidata Program at the\nUniversity Corporation for Atmospheric Research.\n\nAccess and use of this software shall impose the following obligations and\nunderstandings on the user. The user is granted the right, without any fee or\ncost, to use, copy, modify, alter, enhance and distribute this software, and any\nderivative works thereof, and its supporting documentation for any purpose\nwhatsoever, provided that this entire notice appears in all copies of the\nsoftware, derivative works and supporting documentation. Further, UCAR requests\nthat the user credit UCAR/Unidata in any publications that result from the use\nof this software or in any product that includes this software, although this is\nnot an obligation. The names UCAR and/or Unidata, however, may not be used in\nany advertising or publicity to endorse or promote any products or commercial\nentity unless specific written permission is obtained from UCAR/Unidata. The\nuser also understands that UCAR/Unidata is not obligated to provide the user\nwith any support, consulting, training or assistance of any kind with regard to\nthe use, operation and performance of this software nor to provide the user with\nany updates, revisions, new versions or \"bug fixes.\"\n\nTHIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER\nIN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -240,7 +246,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Copyright 1993-2014 University Corporation for Atmospheric Research/Unidata\n\nPortions of this software were developed by the Unidata Program at the\nUniversity Corporation for Atmospheric Research.\n\nAccess and use of this software shall impose the following obligations and\nunderstandings on the user. The user is granted the right, without any fee or\ncost, to use, copy, modify, alter, enhance and distribute this software, and any\nderivative works thereof, and its supporting documentation for any purpose\nwhatsoever, provided that this entire notice appears in all copies of the\nsoftware, derivative works and supporting documentation. Further, UCAR requests\nthat the user credit UCAR/Unidata in any publications that result from the use\nof this software or in any product that includes this software, although this is\nnot an obligation. The names UCAR and/or Unidata, however, may not be used in\nany advertising or publicity to endorse or promote any products or commercial\nentity unless specific written permission is obtained from UCAR/Unidata. The\nuser also understands that UCAR/Unidata is not obligated to provide the user\nwith any support, consulting, training or assistance of any kind with regard to\nthe use, operation and performance of this software nor to provide the user with\nany updates, revisions, new versions or \"bug fixes.\"\n\nTHIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER\nIN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
+        "__isOsiApproved": false,
+        "__impliedText": "\nPortions of this software were developed by the Unidata Program at the\nUniversity Corporation for Atmospheric Research.\n\nAccess and use of this software shall impose the following obligations and\nunderstandings on the user. The user is granted the right, without any fee or\ncost, to use, copy, modify, alter, enhance and distribute this software, and any\nderivative works thereof, and its supporting documentation for any purpose\nwhatsoever, provided that this entire notice appears in all copies of the\nsoftware, derivative works and supporting documentation. Further, UCAR requests\nthat the user credit UCAR/Unidata in any publications that result from the use\nof this software or in any product that includes this software, although this is\nnot an obligation. The names UCAR and/or Unidata, however, may not be used in\nany advertising or publicity to endorse or promote any products or commercial\nentity unless specific written permission is obtained from UCAR/Unidata. The\nuser also understands that UCAR/Unidata is not obligated to provide the user\nwith any support, consulting, training or assistance of any kind with regard to\nthe use, operation and performance of this software nor to provide the user with\nany updates, revisions, new versions or \"bug fixes.\"\n\nTHIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER\nIN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR\nIN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",

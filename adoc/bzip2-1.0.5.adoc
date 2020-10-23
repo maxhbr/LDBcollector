@@ -1,19 +1,19 @@
 == bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
 
 [cols=",",options="header",]
-|===========================================
+|===
 |Key |Value
 |Fullname |bzip2 and libbzip2 License v1.0.5
 |Shortname |bzip2-1.0.5
 |Rating |Go
 |Classification |NoCopyleft
 |Has Patent Hint |True
-|===========================================
+|===
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 
@@ -39,6 +39,8 @@ USE CASE Binary delivery
 		YOU MUST NOT Promote
 PATENT HINTS Yes
 ....
+
+(source: OSADL License Checklist)
 
 '''''
 
@@ -83,6 +85,7 @@ PATENT HINTS Yes
                     "bzip2 and libbzip2 License v1.0.5"
                 ],
                 "__impliedId": "bzip2-1.0.5",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -159,6 +162,7 @@ PATENT HINTS Yes
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedURLs": [
         [
             "SPDX",

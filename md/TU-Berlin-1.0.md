@@ -5,14 +5,14 @@ Technische Universitaet Berlin License 1.0 (TU-Berlin-1.0)
 
 **Other Names:**
 
--   `tu-berlin`
+-   `scancode://tu-berlin`
 
 -   `TU Berlin License 1.0`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -49,7 +49,7 @@ Raw Data
         "__impliedNames": [
             "TU-Berlin-1.0",
             "Technische Universitaet Berlin License 1.0",
-            "tu-berlin",
+            "scancode://tu-berlin",
             "TU Berlin License 1.0"
         ],
         "__impliedId": "TU-Berlin-1.0",
@@ -60,7 +60,7 @@ Raw Data
                         "TU-Berlin-1.0",
                         "TU-Berlin-1.0",
                         "Technische Universitaet Berlin License 1.0",
-                        "tu-berlin",
+                        "scancode://tu-berlin",
                         "TU Berlin License 1.0"
                     ],
                     "__impliedId": "TU-Berlin-1.0"
@@ -69,7 +69,7 @@ Raw Data
                 "otherNames": [
                     "TU-Berlin-1.0",
                     "Technische Universitaet Berlin License 1.0",
-                    "tu-berlin",
+                    "scancode://tu-berlin",
                     "TU Berlin License 1.0"
                 ]
             },
@@ -88,6 +88,7 @@ Raw Data
                         "Technische Universitaet Berlin License 1.0"
                     ],
                     "__impliedId": "TU-Berlin-1.0",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -119,7 +120,7 @@ Raw Data
                 "spdxId": "TU-Berlin-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "tu-berlin",
+                        "scancode://tu-berlin",
                         "TU Berlin License 1.0",
                         "TU-Berlin-1.0"
                     ],
@@ -204,6 +205,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Any use of this software is permitted provided that this notice is not\nremoved and that neither the authors nor the Technische Universitaet Berlin\nare deemed to have made any representations as to the suitability of this\nsoftware for any purpose nor are held responsible for any defects of\nthis software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.\n\nAs a matter of courtesy, the authors request to be informed about uses\nthis software has found, about bugs in this software, and about any\nimprovements that may be of general interest.\n",
         "__impliedURLs": [
             [

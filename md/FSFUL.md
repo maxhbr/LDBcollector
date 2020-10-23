@@ -5,14 +5,14 @@ FSF Unlimited License (FSFUL)
 
 **Other Names:**
 
--   `fsf-free`
+-   `scancode://fsf-free`
 
 -   `FSF Free Software License`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -49,10 +49,11 @@ Raw Data
         "__impliedNames": [
             "FSFUL",
             "FSF Unlimited License",
-            "fsf-free",
+            "scancode://fsf-free",
             "FSF Free Software License"
         ],
         "__impliedId": "FSFUL",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -60,7 +61,7 @@ Raw Data
                         "FSFUL",
                         "FSFUL",
                         "FSF Unlimited License",
-                        "fsf-free",
+                        "scancode://fsf-free",
                         "FSF Free Software License"
                     ],
                     "__impliedId": "FSFUL"
@@ -69,7 +70,7 @@ Raw Data
                 "otherNames": [
                     "FSFUL",
                     "FSF Unlimited License",
-                    "fsf-free",
+                    "scancode://fsf-free",
                     "FSF Free Software License"
                 ]
             },
@@ -88,6 +89,7 @@ Raw Data
                         "FSF Unlimited License"
                     ],
                     "__impliedId": "FSFUL",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -115,6 +117,7 @@ Raw Data
                     "__impliedNames": [
                         "FSF Unlimited License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -141,7 +144,7 @@ Raw Data
                 "spdxId": "FSFUL",
                 "_implications": {
                     "__impliedNames": [
-                        "fsf-free",
+                        "scancode://fsf-free",
                         "FSF Free Software License",
                         "FSFUL"
                     ],
@@ -224,6 +227,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This configure script is free software; the Free Software Foundation gives\nunlimited permission to copy, distribute and modify it.",
         "__impliedURLs": [
             [

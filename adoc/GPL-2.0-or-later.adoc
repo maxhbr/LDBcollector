@@ -1,39 +1,39 @@
 == GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 [cols=",",options="header",]
-|====================================================
+|===
 |Key |Value
 |Fullname |GNU General Public License v2.0 or later
 |Shortname |GPL-2.0-or-later
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
 |Has Patent Hint |True
-|====================================================
+|===
 
 *Other Names:*
 
-* `gpl-2.0-plus`
-* `GPL 2.0 or later`
-* `GNU General Public License 2.0`
-* `GPL-2.0+`
-* `GPL2.0+`
-* `GPL2+`
-* `GPL (v2 or later)`
-* `GPL-2.0-only`
-* `GPL-2.0`
+* `+scancode://gpl-2.0-plus+`
+* `+GPL 2.0 or later+`
+* `+GNU General Public License 2.0+`
+* `+GPL-2.0++`
+* `+GPL2.0++`
+* `+GPL2++`
+* `+GPL (v2 or later)+`
+* `+GPL-2.0-only+`
+* `+GPL-2.0+`
 
 === Comments on (easy) usability
 
-* *↑* This is the most popular free software license. Most of Linux (the
-kernel) is distributed under the GPL, as is most of the other basic
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/GPL-2.0-or-later.html[SPDX])
+* **↑**This is the most popular free software license. Most of Linux
+(the kernel) is distributed under the GPL, as is most of the other basic
 software in the GNU operating system. (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/GPL-2.0-or-later.html[SPDX])
-* *↓* Google Classification is RESTRICTED (source:
+* **↓**Google Classification is RESTRICTED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 
@@ -144,6 +144,8 @@ PATENT HINTS Yes
 COPYLEFT CLAUSE Yes
 ....
 
+(source: OSADL License Checklist)
+
 === Text
 
 ....
@@ -170,7 +172,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
     "__impliedNames": [
         "GPL-2.0-or-later",
         "GNU General Public License v2.0 or later",
-        "gpl-2.0-plus",
+        "scancode://gpl-2.0-plus",
         "GPL 2.0 or later",
         "GNU General Public License 2.0",
         "GPL-2.0+",
@@ -181,6 +183,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
         "GPL-2.0"
     ],
     "__impliedId": "GPL-2.0-or-later",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The GNU General Public License (GPL)"
     ],
@@ -219,7 +222,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
                     "GPL-2.0-or-later",
                     "GPL-2.0-or-later",
                     "GNU General Public License v2.0 or later",
-                    "gpl-2.0-plus",
+                    "scancode://gpl-2.0-plus",
                     "GPL 2.0 or later",
                     "GNU General Public License 2.0",
                     "GPL-2.0+",
@@ -233,7 +236,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
             "otherNames": [
                 "GPL-2.0-or-later",
                 "GNU General Public License v2.0 or later",
-                "gpl-2.0-plus",
+                "scancode://gpl-2.0-plus",
                 "GPL 2.0 or later",
                 "GNU General Public License 2.0",
                 "GPL-2.0+",
@@ -267,6 +270,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -316,6 +320,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
                 "__impliedNames": [
                     "GNU General Public License v2.0 or later"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -346,7 +351,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
             "spdxId": "GPL-2.0-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "gpl-2.0-plus",
+                    "scancode://gpl-2.0-plus",
                     "GPL 2.0 or later",
                     "GPL-2.0-or-later"
                 ],
@@ -422,9 +427,9 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
                 "GPL2+",
                 "GPL (v2 or later)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "finos-osr/OSLC-handbook": {
@@ -595,6 +600,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
         ]
     ],
     "__calculatedCopyleft": "Copyleft",
+    "__isOsiApproved": true,
     "__impliedText": "This program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 2 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program; if not, write to the Free Software Foundation, Inc., 51 Franklin\nStreet, Fifth Floor, Boston, MA  02110-1301, USA.",
     "__impliedURLs": [
         [

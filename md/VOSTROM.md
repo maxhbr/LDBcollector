@@ -5,12 +5,14 @@ VOSTROM Public License for Open Source (VOSTROM)
 
 **Other Names:**
 
+-   `scancode://vostrom`
+
 -   `VOSTROM Public License`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -104,10 +106,11 @@ Raw Data
         "__impliedNames": [
             "VOSTROM",
             "VOSTROM Public License for Open Source",
-            "vostrom",
+            "scancode://vostrom",
             "VOSTROM Public License"
         ],
         "__impliedId": "VOSTROM",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -115,7 +118,7 @@ Raw Data
                         "VOSTROM",
                         "VOSTROM",
                         "VOSTROM Public License for Open Source",
-                        "vostrom",
+                        "scancode://vostrom",
                         "VOSTROM Public License"
                     ],
                     "__impliedId": "VOSTROM"
@@ -124,7 +127,7 @@ Raw Data
                 "otherNames": [
                     "VOSTROM",
                     "VOSTROM Public License for Open Source",
-                    "vostrom",
+                    "scancode://vostrom",
                     "VOSTROM Public License"
                 ]
             },
@@ -143,6 +146,7 @@ Raw Data
                         "VOSTROM Public License for Open Source"
                     ],
                     "__impliedId": "VOSTROM",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -170,6 +174,7 @@ Raw Data
                     "__impliedNames": [
                         "VOSTROM Public License for Open Source"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -198,7 +203,7 @@ Raw Data
                 "spdxId": "VOSTROM",
                 "_implications": {
                     "__impliedNames": [
-                        "vostrom",
+                        "scancode://vostrom",
                         "VOSTROM Public License",
                         "VOSTROM"
                     ],
@@ -285,6 +290,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "StrongCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "VOSTROM Public License for Open Source\n----------\nCopyright (c) 2007 VOSTROM Holdings, Inc.\n\nThis VOSTROM Holdings, Inc. (VOSTROM) Distribution (code and documentation)\nis made available to the open source community as a public service by VOSTROM.\nContact VOSTROM at license@vostrom.com for information on other licensing\narrangements (e.g. for use in proprietary applications).\n\nUnder this license, this Distribution may be modified and the original\nversion and modified versions may be copied, distributed, publicly displayed\nand performed provided that the following conditions are met:\n\n1.  Modified versions are distributed with source code and documentation and\nwith permission for others to use any code and documentation (whether in\noriginal or modified versions) as granted under this license;\n\n2.  if modified, the source code, documentation, and user run-time elements\nshould be clearly labeled by placing an identifier of origin (such as a name,\ninitial, or other tag) after the version number;\n\n3.  users, modifiers, distributors, and others coming into possession or\nusing the Distribution in original or modified form accept the entire risk\nas to the possession, use, and performance of the Distribution;\n\n4.  this copyright management information (software identifier and version\nnumber, copyright notice and license) shall be retained in all versions of\nthe Distribution;\n\n5.  VOSTROM may make modifications to the Distribution that are\nsubstantially similar to modified versions of the Distribution, and may\nmake, use, sell, copy, distribute, publicly display, and perform such\nmodifications, including making such modifications available under this or\nother licenses, without obligation or restriction;\n\n6.  modifications incorporating code, libraries, and/or documentation subject\nto any other open source license may be made, and the resulting work may be\ndistributed under the terms of such open source license if required by that\nopen source license, but doing so will not affect this Distribution, other\nmodifications made under this license or modifications made under other\nVOSTROM licensing arrangements;\n\n7.  no permission is granted to distribute, publicly display, or publicly\nperform modifications to the Distribution made using proprietary materials\nthat cannot be released in source format under conditions of this license;\n\n8.  the name of VOSTROM may not be used in advertising or publicity\npertaining to Distribution of the software without specific, prior written\npermission.\n\nThis software is made available \"as is\", and\n\nVOSTROM DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, WITH REGARD TO THIS\nSOFTWARE, INCLUDING WITHOUT LIMITATION ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, AND IN NO EVENT SHALL\nVOSTROM BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY\nDAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, TORT (INCLUDING NEGLIGENCE) OR STRICT LIABILITY, ARISING\nOUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "__impliedURLs": [
             [

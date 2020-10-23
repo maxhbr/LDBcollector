@@ -3,14 +3,18 @@ Multics License (Multics)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://multics`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Multics.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -53,7 +57,7 @@ Raw Data
         "__impliedNames": [
             "Multics",
             "Multics License",
-            "multics"
+            "scancode://multics"
         ],
         "__impliedId": "Multics",
         "facts": {
@@ -90,7 +94,7 @@ Raw Data
                         "Multics",
                         "Multics",
                         "Multics License",
-                        "multics"
+                        "scancode://multics"
                     ],
                     "__impliedId": "Multics"
                 },
@@ -98,7 +102,7 @@ Raw Data
                 "otherNames": [
                     "Multics",
                     "Multics License",
-                    "multics"
+                    "scancode://multics"
                 ]
             },
             "SPDX": {
@@ -125,6 +129,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -156,7 +161,7 @@ Raw Data
                 "spdxId": "Multics",
                 "_implications": {
                     "__impliedNames": [
-                        "multics",
+                        "scancode://multics",
                         "Multics License",
                         "Multics"
                     ],
@@ -311,6 +316,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": true,
         "__impliedText": "Permission to use, copy, modify, and distribute these programs and their\ndocumentation for any purpose and without fee is hereby granted,provided\nthat the below copyright notice and historical background appear in all\ncopies and that both the copyright notice and historical background and\nthis permission notice appear in supporting documentation, and that\nthe names of MIT, HIS, BULL or BULL HN not be used in advertising or\npublicity pertaining to distribution of the programs without specific\nprior written permission.\nCopyright 1972 by Massachusetts Institute of Technology and Honeywell Information\nSystems Inc.\nCopyright 2006 by BULL HN Information Systems Inc.\nCopyright 2006 by Bull SAS\nAll Rights Reserved",
         "__impliedURLs": [
             [

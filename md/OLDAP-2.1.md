@@ -5,14 +5,14 @@ Open LDAP Public License v2.1 (OLDAP-2.1)
 
 **Other Names:**
 
--   `openldap-2.1`
+-   `scancode://openldap-2.1`
 
 -   `OpenLDAP Public License 2.1`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -87,7 +87,7 @@ Raw Data
         "__impliedNames": [
             "OLDAP-2.1",
             "Open LDAP Public License v2.1",
-            "openldap-2.1",
+            "scancode://openldap-2.1",
             "OpenLDAP Public License 2.1"
         ],
         "__impliedId": "OLDAP-2.1",
@@ -98,7 +98,7 @@ Raw Data
                         "OLDAP-2.1",
                         "OLDAP-2.1",
                         "Open LDAP Public License v2.1",
-                        "openldap-2.1",
+                        "scancode://openldap-2.1",
                         "OpenLDAP Public License 2.1"
                     ],
                     "__impliedId": "OLDAP-2.1"
@@ -107,7 +107,7 @@ Raw Data
                 "otherNames": [
                     "OLDAP-2.1",
                     "Open LDAP Public License v2.1",
-                    "openldap-2.1",
+                    "scancode://openldap-2.1",
                     "OpenLDAP Public License 2.1"
                 ]
             },
@@ -126,6 +126,7 @@ Raw Data
                         "Open LDAP Public License v2.1"
                     ],
                     "__impliedId": "OLDAP-2.1",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -154,7 +155,7 @@ Raw Data
                 "spdxId": "OLDAP-2.1",
                 "_implications": {
                     "__impliedNames": [
-                        "openldap-2.1",
+                        "scancode://openldap-2.1",
                         "OpenLDAP Public License 2.1",
                         "OLDAP-2.1"
                     ],
@@ -231,6 +232,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "The OpenLDAP Public License \n\nVersion 2.1, 29 February 2000 \nCopyright 1999-2000, The OpenLDAP Foundation, Redwood City, California, USA. \nAll Rights Reserved. \n\nRedistribution and use of this software and associated documentation \n(\"Software\"), with or without modification, are permitted provided \nthat the following conditions are met: \n\n1. Redistributions of source code must retain copyright \nstatements and notices. Redistributions must also contain a \ncopy of this document. \n\n2. Redistributions in binary form must reproduce the \nabove copyright notice, this list of conditions and the \nfollowing disclaimer in the documentation and/or other \nmaterials provided with the distribution. \n\n3. The name \"OpenLDAP\" must not be used to endorse or promote \nproducts derived from this Software without prior written \npermission of the OpenLDAP Foundation. For written permission, \nplease contact foundation@openldap.org. \n\n4. Products derived from this Software may not be called \"OpenLDAP\" \nnor may \"OpenLDAP\" appear in their names without prior written \npermission of the OpenLDAP Foundation. OpenLDAP is a trademark \nof the OpenLDAP Foundation. \n\n5. Due credit should be given to the OpenLDAP Project \n(http://www.openldap.org/). \n\n6. The OpenLDAP Foundation may revise this license from time to \ntime. Each revision is distinguished by a version number. You \nmay use the Software under terms of this license revision or under \nthe terms of any subsequent license revision. \n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS \n``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT \nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND \nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL \nTHE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, \nINDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR \nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) \nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, \nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) \nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED \nOF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [

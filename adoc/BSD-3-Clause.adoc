@@ -1,43 +1,46 @@
 == BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 [cols=",",options="header",]
-|=================================================
+|===
 |Key |Value
 |Fullname |BSD 3-Clause "New" or "Revised" License
 |Shortname |BSD-3-Clause
 |Rating |Go
 |Classification |NoCopyleft
-|=================================================
+|===
 
 *Other Names:*
 
-* `bsd-new`
-* `BSD-3`
-* `BSD 3-Clause License`
-* `License :: OSI Approved :: BSD License`
-* `Revised BSD License`
-* `Modified BSD License`
-* `New BSD License`
-* `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
-* `BSD (3 clause)`
-* `BSD License (no advertising)`
+* `+scancode://bsd-new+`
+* `+BSD-3+`
+* `+BSD 3-Clause License+`
+* `+License :: OSI Approved :: BSD License+`
+* `+Revised BSD License+`
+* `+Modified BSD License+`
+* `+New BSD License+`
+* `+BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)+`
+* `+BSD (3 clause)+`
+* `+BSD License (no advertising)+`
 
 === Description
 
-_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 A permissive license similar to the <a
 href="/licenses/bsd-2-clause/">BSD 2-Clause License</a>, but with a 3rd
 clause that prohibits others from using the name of the project or its
 contributors to promote derived products without written consent.
-_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+____
 
 (source: choosealicense.com)
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
-* *↑* Note that a 2-clause form of the BSD license, removing the third
+* **↑**Google Classification is NOTICE (source:
+https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy])
+* **↑**Is OSI Approved (source:
+https://spdx.org/licenses/BSD-3-Clause.html[SPDX])
+* **↑**Note that a 2-clause form of the BSD license, removing the third
 condition, is also in use. This is because even a generous copyright
 license does not implicitly forfeit the copyright holder's "right of
 publicity". In other words, even if a license does not forbid you from
@@ -45,15 +48,12 @@ claiming that the copyright holder or other parties endorses or promotes
 your work, the law generally does. We're not aware of any exceptions.
 (source: https://wiki.debian.org/DFSGLicenses[Debian Free Software
 Guidelines])
-* *↑* This software Licenses is OK for Fedora (source:
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+* **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* *↑* Google Classification is NOTICE (source:
-https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy])
-* *↑* Is OSI Approved (source:
-https://spdx.org/licenses/BSD-3-Clause.html[SPDX])
-*  Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+* Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
 Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für
 Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
@@ -64,7 +64,7 @@ https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 === Obligations
 
 [cols=",,",options="header",]
-|==================================
+|===
 |Rights: |Conditions: |Limitations:
 a|
 * commercial-use
@@ -79,7 +79,7 @@ a|
 * liability
 * warranty
 
-|==================================
+|===
 
 (source:
 https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt[choosealicense.com])
@@ -108,6 +108,8 @@ USE CASE Binary delivery
 	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
 	YOU MUST NOT Promote
 ....
+
+(source: OSADL License Checklist)
 
 === Text
 
@@ -147,7 +149,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "BSD-3-Clause",
         "BSD 3-Clause \"New\" or \"Revised\" License",
-        "bsd-new",
+        "scancode://bsd-new",
         "bsd-3-clause",
         "BSD-3",
         "BSD 3-Clause License",
@@ -162,6 +164,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         "BSD 3-clause \"New\" or \"Revised\" License"
     ],
     "__impliedId": "BSD-3-Clause",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The BSD-3-clause License"
     ],
@@ -199,7 +202,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "BSD-3-Clause",
                     "BSD-3-Clause",
                     "BSD 3-Clause \"New\" or \"Revised\" License",
-                    "bsd-new",
+                    "scancode://bsd-new",
                     "bsd-3-clause",
                     "BSD-3",
                     "BSD 3-Clause License",
@@ -218,7 +221,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "otherNames": [
                 "BSD-3-Clause",
                 "BSD 3-Clause \"New\" or \"Revised\" License",
-                "bsd-new",
+                "scancode://bsd-new",
                 "bsd-3-clause",
                 "BSD-3",
                 "BSD 3-Clause License",
@@ -256,6 +259,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -293,6 +297,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 "__impliedNames": [
                     "BSD License (no advertising)"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -322,7 +327,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "spdxId": "BSD-3-Clause",
             "_implications": {
                 "__impliedNames": [
-                    "bsd-new",
+                    "scancode://bsd-new",
                     "BSD-3-Clause",
                     "BSD-3-Clause"
                 ],
@@ -409,9 +414,9 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 "BSD (3 clause)",
                 "BSD License (no advertising)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "BlueOak License List": {
@@ -795,6 +800,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             }
         ]
     },
+    "__isOsiApproved": true,
     "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the ORGANIZATION nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
     "__impliedURLs": [
         [

@@ -5,14 +5,14 @@ Open LDAP Public License v2.2 (OLDAP-2.2)
 
 **Other Names:**
 
--   `openldap-2.2`
+-   `scancode://openldap-2.2`
 
 -   `OpenLDAP Public License 2.2`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -88,7 +88,7 @@ Raw Data
         "__impliedNames": [
             "OLDAP-2.2",
             "Open LDAP Public License v2.2",
-            "openldap-2.2",
+            "scancode://openldap-2.2",
             "OpenLDAP Public License 2.2"
         ],
         "__impliedId": "OLDAP-2.2",
@@ -99,7 +99,7 @@ Raw Data
                         "OLDAP-2.2",
                         "OLDAP-2.2",
                         "Open LDAP Public License v2.2",
-                        "openldap-2.2",
+                        "scancode://openldap-2.2",
                         "OpenLDAP Public License 2.2"
                     ],
                     "__impliedId": "OLDAP-2.2"
@@ -108,7 +108,7 @@ Raw Data
                 "otherNames": [
                     "OLDAP-2.2",
                     "Open LDAP Public License v2.2",
-                    "openldap-2.2",
+                    "scancode://openldap-2.2",
                     "OpenLDAP Public License 2.2"
                 ]
             },
@@ -127,6 +127,7 @@ Raw Data
                         "Open LDAP Public License v2.2"
                     ],
                     "__impliedId": "OLDAP-2.2",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -155,7 +156,7 @@ Raw Data
                 "spdxId": "OLDAP-2.2",
                 "_implications": {
                     "__impliedNames": [
-                        "openldap-2.2",
+                        "scancode://openldap-2.2",
                         "OpenLDAP Public License 2.2",
                         "OLDAP-2.2"
                     ],
@@ -232,6 +233,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "The OpenLDAP Public License \nVersion 2.2, 1 March 2000 \n\nRedistribution and use of this software and associated documentation \n(\"Software\"), with or without modification, are permitted provided \nthat the following conditions are met: \n\n1. Redistributions of source code must retain copyright statements \nand notices. Redistributions must also contain a copy of this \ndocument. \n\n2. Redistributions in binary form must reproduce the above copyright \nnotice, this list of conditions and the following disclaimer in \nthe documentation and/or other materials provided with the \ndistribution. \n\n3. The name \"OpenLDAP\" must not be used to endorse or promote \nproducts derived from this Software without prior written permission \nof the OpenLDAP Foundation. \n\n4. Products derived from this Software may not be called \"OpenLDAP\" \nnor may \"OpenLDAP\" appear in their names without prior written \npermission of the OpenLDAP Foundation. \n\n5. Due credit should be given to the OpenLDAP Project \n(http://www.openldap.org/). \n\n6. The OpenLDAP Foundation may revise this license from time to \ntime. Each revision is distinguished by a version number. You \nmay use the Software under terms of this license revision or under \nthe terms of any subsequent the license. \n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND CONTRIBUTORS \n``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT \nNOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND \nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL \nTHE OPENLDAP FOUNDATION OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, \nINDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR \nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) \nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, \nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) \nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED \nOF THE POSSIBILITY OF SUCH DAMAGE. \n\nOpenLDAP is a trademark of the OpenLDAP Foundation. \n\nCopyright 1999-2000, The OpenLDAP Foundation, Redwood City, \nCalifornia, USA. All Rights Reserved. Permission to copy and \ndistributed verbatim copies of this document is granted.",
         "__impliedURLs": [
             [

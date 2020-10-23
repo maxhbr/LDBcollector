@@ -3,10 +3,14 @@ Imlib2 License (Imlib2)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://imlib2`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -66,9 +70,10 @@ Raw Data
         "__impliedNames": [
             "Imlib2",
             "Imlib2 License",
-            "imlib2"
+            "scancode://imlib2"
         ],
         "__impliedId": "Imlib2",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -76,7 +81,7 @@ Raw Data
                         "Imlib2",
                         "Imlib2",
                         "Imlib2 License",
-                        "imlib2"
+                        "scancode://imlib2"
                     ],
                     "__impliedId": "Imlib2"
                 },
@@ -84,7 +89,7 @@ Raw Data
                 "otherNames": [
                     "Imlib2",
                     "Imlib2 License",
-                    "imlib2"
+                    "scancode://imlib2"
                 ]
             },
             "SPDX": {
@@ -103,6 +108,7 @@ Raw Data
                         "Imlib2 License"
                     ],
                     "__impliedId": "Imlib2",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -134,6 +140,7 @@ Raw Data
                     "__impliedNames": [
                         "Imlib2 License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -162,7 +169,7 @@ Raw Data
                 "spdxId": "Imlib2",
                 "_implications": {
                     "__impliedNames": [
-                        "imlib2",
+                        "scancode://imlib2",
                         "Imlib2 License",
                         "Imlib2"
                     ],
@@ -204,6 +211,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Imlib2 License \n\nPermission is hereby granted, free of charge, to any person obtaining a copy \nof this software and associated documentation files (the \"Software\"), to \ndeal in the Software without restriction, including without limitation the \nrights to use, copy, modify, merge, publish, distribute, sublicense, and/or \nsell copies of the Software, and to permit persons to whom the Software is \nfurnished to do so, subject to the following conditions: \n\nThe above copyright notice and this permission notice shall be included in \nall copies of the Software and its Copyright notices. In addition publicly \ndocumented acknowledgment must be given that this software has been used if no \nsource code of this software is made available publicly. Making the source \navailable publicly means including the source for this software with the \ndistribution, or a method to get this software via some reasonable mechanism \n(electronic transfer via a network or media) as well as making an offer to \nsupply the source on request. This Copyright notice serves as an offer to \nsupply the source on on request as well. Instead of this, supplying \nacknowledgments of use of this software in either Copyright notices, Manuals, \nPublicity and Marketing documents or any documentation provided with any \nproduct containing this software. This License does not apply to any software \nthat links to the libraries provided by this software (statically or \ndynamically), but only to the software provided. \n\nPlease see the COPYING-PLAIN for a plain-english explanation of this notice \nand its intent. \n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL \nTHE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER \nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN \nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "__impliedURLs": [
             [

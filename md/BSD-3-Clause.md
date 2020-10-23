@@ -5,7 +5,7 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 **Other Names:**
 
--   `bsd-new`
+-   `scancode://bsd-new`
 
 -   `BSD-3`
 
@@ -39,10 +39,13 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+-   **↑**Google Classification is NOTICE (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑** Note that a 2-clause form of the BSD license, removing the
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX"))
+
+-   **↑**Note that a 2-clause form of the BSD license, removing the
     third condition, is also in use. This is because even a generous
     copyright license does not implicitly forfeit the copyright holder's
     "right of publicity". In other words, even if a license does not
@@ -51,15 +54,12 @@ Comments on (easy) usability
     aware of any exceptions. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -110,6 +110,8 @@ OSADL Rule
     	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
     	YOU MUST NOT Promote
 
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -147,7 +149,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause",
             "BSD 3-Clause \"New\" or \"Revised\" License",
-            "bsd-new",
+            "scancode://bsd-new",
             "bsd-3-clause",
             "BSD-3",
             "BSD 3-Clause License",
@@ -162,6 +164,7 @@ Raw Data
             "BSD 3-clause \"New\" or \"Revised\" License"
         ],
         "__impliedId": "BSD-3-Clause",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The BSD-3-clause License"
         ],
@@ -199,7 +202,7 @@ Raw Data
                         "BSD-3-Clause",
                         "BSD-3-Clause",
                         "BSD 3-Clause \"New\" or \"Revised\" License",
-                        "bsd-new",
+                        "scancode://bsd-new",
                         "bsd-3-clause",
                         "BSD-3",
                         "BSD 3-Clause License",
@@ -218,7 +221,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause",
                     "BSD 3-Clause \"New\" or \"Revised\" License",
-                    "bsd-new",
+                    "scancode://bsd-new",
                     "bsd-3-clause",
                     "BSD-3",
                     "BSD 3-Clause License",
@@ -256,6 +259,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -293,6 +297,7 @@ Raw Data
                     "__impliedNames": [
                         "BSD License (no advertising)"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -322,7 +327,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-new",
+                        "scancode://bsd-new",
                         "BSD-3-Clause",
                         "BSD-3-Clause"
                     ],
@@ -409,9 +414,9 @@ Raw Data
                     "BSD (3 clause)",
                     "BSD License (no advertising)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "BlueOak License List": {
@@ -795,6 +800,7 @@ Raw Data
                 }
             ]
         },
+        "__isOsiApproved": true,
         "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the ORGANIZATION nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [

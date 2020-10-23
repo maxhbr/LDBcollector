@@ -3,13 +3,17 @@ Cube License (Cube)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://cube`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -61,9 +65,10 @@ Raw Data
         "__impliedNames": [
             "Cube",
             "Cube License",
-            "cube"
+            "scancode://cube"
         ],
         "__impliedId": "Cube",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -71,7 +76,7 @@ Raw Data
                         "Cube",
                         "Cube",
                         "Cube License",
-                        "cube"
+                        "scancode://cube"
                     ],
                     "__impliedId": "Cube"
                 },
@@ -79,7 +84,7 @@ Raw Data
                 "otherNames": [
                     "Cube",
                     "Cube License",
-                    "cube"
+                    "scancode://cube"
                 ]
             },
             "SPDX": {
@@ -97,6 +102,7 @@ Raw Data
                         "Cube License"
                     ],
                     "__impliedId": "Cube",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -124,6 +130,7 @@ Raw Data
                     "__impliedNames": [
                         "Cube License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -150,7 +157,7 @@ Raw Data
                 "spdxId": "Cube",
                 "_implications": {
                     "__impliedNames": [
-                        "cube",
+                        "scancode://cube",
                         "Cube License",
                         "Cube"
                     ],
@@ -234,6 +241,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Cube game engine source code, 20 dec 2003 release.\n\nCopyright (C) 2001-2003 Wouter van Oortmerssen.\n\nThis software is provided 'as-is', without any express or implied warranty. In\nno event will the authors be held liable for any damages arising from the use of\nthis software.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n     1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software in a\n     product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n\n     2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n\n     3. This notice may not be removed or altered from any source distribution.\n\nadditional clause specific to Cube:\n\n     4. Source versions may not be \"relicensed\" under a different license\n     without my explicitly written permission.",
         "__impliedURLs": [
             [

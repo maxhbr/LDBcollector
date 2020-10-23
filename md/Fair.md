@@ -5,17 +5,19 @@ Fair License (Fair)
 
 **Other Names:**
 
+-   `scancode://fair`
+
 -   `Fair License (Fair)`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Fair.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Fair.html "SPDX"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -26,7 +28,7 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -44,14 +46,12 @@ URLs
 
 -   http://www.opensource.org/licenses/Fair
 
+-   http://rhid.com/fair
+
 -   https://web.archive.org/web/20040803105645/http://rhid.com/fair
 
 Text
 ----
-
-    Fair License
-
-    <Copyright Information>
 
     Usage of the works is permitted provided that this instrument is retained with
     the works, so that any entity that uses the works is notified of this
@@ -68,10 +68,11 @@ Raw Data
         "__impliedNames": [
             "Fair",
             "Fair License",
-            "fair",
+            "scancode://fair",
             "Fair License (Fair)"
         ],
         "__impliedId": "Fair",
+        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -106,7 +107,7 @@ Raw Data
                         "Fair",
                         "Fair",
                         "Fair License",
-                        "fair",
+                        "scancode://fair",
                         "Fair License (Fair)"
                     ],
                     "__impliedId": "Fair"
@@ -115,7 +116,7 @@ Raw Data
                 "otherNames": [
                     "Fair",
                     "Fair License",
-                    "fair",
+                    "scancode://fair",
                     "Fair License (Fair)"
                 ]
             },
@@ -144,6 +145,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -175,6 +177,7 @@ Raw Data
                     "__impliedNames": [
                         "Fair License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -190,12 +193,13 @@ Raw Data
                 "otherUrls": [
                     "http://fairlicense.org/",
                     "http://www.opensource.org/licenses/Fair",
-                    "https://opensource.org/licenses/Fair"
+                    "https://opensource.org/licenses/Fair",
+                    "http://rhid.com/fair"
                 ],
                 "homepageUrl": "http://opensource.org/licenses/fair.php",
                 "shortName": "Fair License",
                 "textUrls": null,
-                "text": "Fair License\n\n<Copyright Information>\n\nUsage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.",
+                "text": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
                 "category": "Permissive",
                 "osiUrl": "http://opensource.org/licenses/fair.php",
                 "owner": "OSI - Open Source Initiative",
@@ -205,7 +209,7 @@ Raw Data
                 "spdxId": "Fair",
                 "_implications": {
                     "__impliedNames": [
-                        "fair",
+                        "scancode://fair",
                         "Fair License",
                         "Fair"
                     ],
@@ -217,7 +221,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Fair License\n\n<Copyright Information>\n\nUsage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.",
+                    "__impliedText": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -238,6 +242,10 @@ Raw Data
                         [
                             null,
                             "https://opensource.org/licenses/Fair"
+                        ],
+                        [
+                            null,
+                            "http://rhid.com/fair"
                         ]
                     ]
                 }
@@ -416,7 +424,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Fair License\n\n<Copyright Information>\n\nUsage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.",
+        "__isOsiApproved": true,
+        "__impliedText": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -445,6 +454,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/Fair"
+            ],
+            [
+                null,
+                "http://rhid.com/fair"
             ],
             [
                 "OSI Page",

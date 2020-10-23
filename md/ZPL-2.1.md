@@ -5,16 +5,18 @@ Zope Public License 2.1 (ZPL-2.1)
 
 **Other Names:**
 
+-   `scancode://zpl-2.1`
+
 -   `ZPL 2.1`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -82,7 +84,7 @@ Raw Data
         "__impliedNames": [
             "ZPL-2.1",
             "Zope Public License 2.1",
-            "zpl-2.1",
+            "scancode://zpl-2.1",
             "ZPL 2.1"
         ],
         "__impliedId": "ZPL-2.1",
@@ -93,7 +95,7 @@ Raw Data
                         "ZPL-2.1",
                         "ZPL-2.1",
                         "Zope Public License 2.1",
-                        "zpl-2.1",
+                        "scancode://zpl-2.1",
                         "ZPL 2.1"
                     ],
                     "__impliedId": "ZPL-2.1"
@@ -102,7 +104,7 @@ Raw Data
                 "otherNames": [
                     "ZPL-2.1",
                     "Zope Public License 2.1",
-                    "zpl-2.1",
+                    "scancode://zpl-2.1",
                     "ZPL 2.1"
                 ]
             },
@@ -121,6 +123,7 @@ Raw Data
                         "Zope Public License 2.1"
                     ],
                     "__impliedId": "ZPL-2.1",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -153,7 +156,7 @@ Raw Data
                 "spdxId": "ZPL-2.1",
                 "_implications": {
                     "__impliedNames": [
-                        "zpl-2.1",
+                        "scancode://zpl-2.1",
                         "ZPL 2.1",
                         "ZPL-2.1"
                     ],
@@ -279,6 +282,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This license has been certified as open source. It has also been designated as\nGPL compatible by the Free Software Foundation (FSF).\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1. Redistributions in source code must retain the accompanying copyright\n   notice, this list of conditions, and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the accompanying copyright\n   notice, this list of conditions, and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n\n   3. Names of the copyright holders must not be used to endorse or promote\n   products derived from this software without prior written permission from the\n   copyright holders.\n\n   4. The right to distribute this software or to use it for any purpose does\n   not give you the right to use Servicemarks (sm) or Trademarks (tm) of the\n   copyright holders. Use of them is covered by separate agreement with the\n   copyright holders.\n\n   5. If any files are modified, you must cause the modified files to carry\n   prominent notices stating that you changed the files and the date of any\n   change.\n\nDisclaimer\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY EXPRESSED\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT\nSHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\nIN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY\nOF SUCH DAMAGE.",
         "__impliedURLs": [
             [

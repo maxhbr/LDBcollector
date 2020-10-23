@@ -5,7 +5,7 @@ GNU General Public License v3.0 or later (GPL-3.0-or-later)
 
 **Other Names:**
 
--   `gpl-3.0-plus`
+-   `scancode://gpl-3.0-plus`
 
 -   `GPL 3.0 or later`
 
@@ -26,19 +26,19 @@ GNU General Public License v3.0 or later (GPL-3.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This license is compatible with the
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/GPL-3.0-or-later.html "SPDX"))
+
+-   **↑**This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/GPL-3.0-or-later.html "SPDX"))
-
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
@@ -195,6 +195,8 @@ OSADL Rule
     PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
 
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -220,7 +222,7 @@ Raw Data
         "__impliedNames": [
             "GPL-3.0-or-later",
             "GNU General Public License v3.0 or later",
-            "gpl-3.0-plus",
+            "scancode://gpl-3.0-plus",
             "GPL 3.0 or later",
             "GNU General Public License 3.0",
             "GPL-3.0+",
@@ -231,6 +233,7 @@ Raw Data
             "GPL-3.0"
         ],
         "__impliedId": "GPL-3.0-or-later",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
             "The GNU General Public License (GPL)"
@@ -270,7 +273,7 @@ Raw Data
                         "GPL-3.0-or-later",
                         "GPL-3.0-or-later",
                         "GNU General Public License v3.0 or later",
-                        "gpl-3.0-plus",
+                        "scancode://gpl-3.0-plus",
                         "GPL 3.0 or later",
                         "GNU General Public License 3.0",
                         "GPL-3.0+",
@@ -284,7 +287,7 @@ Raw Data
                 "otherNames": [
                     "GPL-3.0-or-later",
                     "GNU General Public License v3.0 or later",
-                    "gpl-3.0-plus",
+                    "scancode://gpl-3.0-plus",
                     "GPL 3.0 or later",
                     "GNU General Public License 3.0",
                     "GPL-3.0+",
@@ -318,6 +321,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -367,6 +371,7 @@ Raw Data
                     "__impliedNames": [
                         "GNU General Public License v3.0 or later"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -397,7 +402,7 @@ Raw Data
                 "spdxId": "GPL-3.0-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "gpl-3.0-plus",
+                        "scancode://gpl-3.0-plus",
                         "GPL 3.0 or later",
                         "GPL-3.0-or-later"
                     ],
@@ -473,9 +478,9 @@ Raw Data
                     "GPL3+",
                     "GPL (v3 or later)"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "Wikipedia": {
@@ -510,7 +515,8 @@ Raw Data
                     "__impliedNames": [
                         "GPL-3.0-or-later",
                         "GNU General Public License 3.0"
-                    ]
+                    ],
+                    "__hasPatentHint": true
                 },
                 "Private use": {
                     "value": "Yes",
@@ -738,6 +744,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "Copyleft",
+        "__isOsiApproved": true,
         "__impliedText": "This program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
         "__impliedURLs": [
             [

@@ -3,13 +3,17 @@ Saxpath License (Saxpath)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://saxpath`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -26,25 +30,43 @@ URLs
 Text
 ----
 
-    Copyright (C) 2000-2002 werken digital.
-    All rights reserved.
+    Redistribution and use in source and binary forms, with or without modification,
+    re permitted provided that the following conditions are met:
 
-    Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+    1. Redistributions of source code must retain the above copyright notice, this
+    list of conditions, and the following disclaimer.
 
-    1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions, and the disclaimer that follows these conditions in
+    the documentation and/or other materials provided with the distribution.
 
-    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the disclaimer that follows these conditions in the documentation and/or other materials provided with the distribution.
+    3. The name "SAXPath" must not be used to endorse or promote products derived
+    from this software without prior written permission. For written permission,
+    please contact license@saxpath.org.
 
-    3. The name "SAXPath" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact license@saxpath.org.
+    4. Products derived from this software may not be called "SAXPath", nor may
+    "SAXPath" appear in their name, without prior written permission from the
+    SAXPath Project Management (pm@saxpath.org).
 
-    4. Products derived from this software may not be called "SAXPath", nor may "SAXPath" appear in their name, without prior written permission from the SAXPath Project Management (pm@saxpath.org).
+    In addition, we request (but do not require) that you include in the end-user
+    documentation provided with the redistribution and/or in the software itself
+    an acknowledgement equivalent to the following:
+    "This product includes software developed by the SAXPath Project
+    (http://www.saxpath.org/)."
 
-    In addition, we request (but do not require) that you include in the end-user documentation provided with the redistribution and/or in the software itself an acknowledgement equivalent to the following:
-    "This product includes software developed by the SAXPath Project (http://www.saxpath.org/)."
+    Alternatively, the acknowledgment may be graphical using the logos available
+    at http://www.saxpath.org/
 
-    Alternatively, the acknowledgment may be graphical using the logos available at http://www.saxpath.org/
-
-    THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE SAXPath AUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,
+    INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+    FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE SAXPath
+    AUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+    LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+    PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+    LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+    OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+    ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------
 
@@ -55,9 +77,10 @@ Raw Data
         "__impliedNames": [
             "Saxpath",
             "Saxpath License",
-            "saxpath"
+            "scancode://saxpath"
         ],
         "__impliedId": "Saxpath",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -65,7 +88,7 @@ Raw Data
                         "Saxpath",
                         "Saxpath",
                         "Saxpath License",
-                        "saxpath"
+                        "scancode://saxpath"
                     ],
                     "__impliedId": "Saxpath"
                 },
@@ -73,7 +96,7 @@ Raw Data
                 "otherNames": [
                     "Saxpath",
                     "Saxpath License",
-                    "saxpath"
+                    "scancode://saxpath"
                 ]
             },
             "SPDX": {
@@ -91,6 +114,7 @@ Raw Data
                         "Saxpath License"
                     ],
                     "__impliedId": "Saxpath",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -118,6 +142,7 @@ Raw Data
                     "__impliedNames": [
                         "Saxpath License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -134,7 +159,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Saxpath_License",
                 "shortName": "Saxpath License",
                 "textUrls": null,
-                "text": "Copyright (C) 2000-2002 werken digital.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the disclaimer that follows these conditions in the documentation and/or other materials provided with the distribution.\n\n3. The name \"SAXPath\" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact license@saxpath.org.\n\n4. Products derived from this software may not be called \"SAXPath\", nor may \"SAXPath\" appear in their name, without prior written permission from the SAXPath Project Management (pm@saxpath.org).\n\nIn addition, we request (but do not require) that you include in the end-user documentation provided with the redistribution and/or in the software itself an acknowledgement equivalent to the following:\n\"This product includes software developed by the SAXPath Project (http://www.saxpath.org/).\"\n\nAlternatively, the acknowledgment may be graphical using the logos available at http://www.saxpath.org/\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE SAXPath AUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "text": "Redistribution and use in source and binary forms, with or without modification,\nre permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\nlist of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions, and the disclaimer that follows these conditions in\nthe documentation and/or other materials provided with the distribution.\n\n3. The name \"SAXPath\" must not be used to endorse or promote products derived\nfrom this software without prior written permission. For written permission,\nplease contact license@saxpath.org.\n\n4. Products derived from this software may not be called \"SAXPath\", nor may\n\"SAXPath\" appear in their name, without prior written permission from the\nSAXPath Project Management (pm@saxpath.org).\n\nIn addition, we request (but do not require) that you include in the end-user\ndocumentation provided with the redistribution and/or in the software itself\nan acknowledgement equivalent to the following:\n\"This product includes software developed by the SAXPath Project\n(http://www.saxpath.org/).\"\n\nAlternatively, the acknowledgment may be graphical using the logos available\nat http://www.saxpath.org/\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE SAXPath\nAUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Codehaus",
@@ -144,7 +169,7 @@ Raw Data
                 "spdxId": "Saxpath",
                 "_implications": {
                     "__impliedNames": [
-                        "saxpath",
+                        "scancode://saxpath",
                         "Saxpath License",
                         "Saxpath"
                     ],
@@ -156,7 +181,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (C) 2000-2002 werken digital.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the disclaimer that follows these conditions in the documentation and/or other materials provided with the distribution.\n\n3. The name \"SAXPath\" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact license@saxpath.org.\n\n4. Products derived from this software may not be called \"SAXPath\", nor may \"SAXPath\" appear in their name, without prior written permission from the SAXPath Project Management (pm@saxpath.org).\n\nIn addition, we request (but do not require) that you include in the end-user documentation provided with the redistribution and/or in the software itself an acknowledgement equivalent to the following:\n\"This product includes software developed by the SAXPath Project (http://www.saxpath.org/).\"\n\nAlternatively, the acknowledgment may be graphical using the logos available at http://www.saxpath.org/\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE SAXPath AUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                    "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nre permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\nlist of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions, and the disclaimer that follows these conditions in\nthe documentation and/or other materials provided with the distribution.\n\n3. The name \"SAXPath\" must not be used to endorse or promote products derived\nfrom this software without prior written permission. For written permission,\nplease contact license@saxpath.org.\n\n4. Products derived from this software may not be called \"SAXPath\", nor may\n\"SAXPath\" appear in their name, without prior written permission from the\nSAXPath Project Management (pm@saxpath.org).\n\nIn addition, we request (but do not require) that you include in the end-user\ndocumentation provided with the redistribution and/or in the software itself\nan acknowledgement equivalent to the following:\n\"This product includes software developed by the SAXPath Project\n(http://www.saxpath.org/).\"\n\nAlternatively, the acknowledgment may be graphical using the logos available\nat http://www.saxpath.org/\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE SAXPath\nAUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -228,7 +253,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Copyright (C) 2000-2002 werken digital.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the disclaimer that follows these conditions in the documentation and/or other materials provided with the distribution.\n\n3. The name \"SAXPath\" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact license@saxpath.org.\n\n4. Products derived from this software may not be called \"SAXPath\", nor may \"SAXPath\" appear in their name, without prior written permission from the SAXPath Project Management (pm@saxpath.org).\n\nIn addition, we request (but do not require) that you include in the end-user documentation provided with the redistribution and/or in the software itself an acknowledgement equivalent to the following:\n\"This product includes software developed by the SAXPath Project (http://www.saxpath.org/).\"\n\nAlternatively, the acknowledgment may be graphical using the logos available at http://www.saxpath.org/\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE SAXPath AUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "__isOsiApproved": false,
+        "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nre permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\nlist of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions, and the disclaimer that follows these conditions in\nthe documentation and/or other materials provided with the distribution.\n\n3. The name \"SAXPath\" must not be used to endorse or promote products derived\nfrom this software without prior written permission. For written permission,\nplease contact license@saxpath.org.\n\n4. Products derived from this software may not be called \"SAXPath\", nor may\n\"SAXPath\" appear in their name, without prior written permission from the\nSAXPath Project Management (pm@saxpath.org).\n\nIn addition, we request (but do not require) that you include in the end-user\ndocumentation provided with the redistribution and/or in the software itself\nan acknowledgement equivalent to the following:\n\"This product includes software developed by the SAXPath Project\n(http://www.saxpath.org/).\"\n\nAlternatively, the acknowledgment may be graphical using the logos available\nat http://www.saxpath.org/\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE SAXPath\nAUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
         "__impliedURLs": [
             [
                 "SPDX",

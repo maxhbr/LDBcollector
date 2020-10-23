@@ -5,7 +5,7 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 **Other Names:**
 
--   `gpl-1.0-plus`
+-   `scancode://gpl-1.0-plus`
 
 -   `GPL 1.0 or later`
 
@@ -18,17 +18,17 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This is the most popular free software license. Most of Linux
+-   **↑**This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
     basic software in the GNU operating system. (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
@@ -57,13 +57,14 @@ Raw Data
         "__impliedNames": [
             "GPL-1.0-or-later",
             "GNU General Public License v1.0 or later",
-            "gpl-1.0-plus",
+            "scancode://gpl-1.0-plus",
             "GPL 1.0 or later",
             "GPL-1.0+",
             "GPL1.0+",
             "GPL1+"
         ],
         "__impliedId": "GPL-1.0-or-later",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The GNU General Public License (GPL)"
         ],
@@ -74,7 +75,7 @@ Raw Data
                         "GPL-1.0-or-later",
                         "GPL-1.0-or-later",
                         "GNU General Public License v1.0 or later",
-                        "gpl-1.0-plus",
+                        "scancode://gpl-1.0-plus",
                         "GPL 1.0 or later",
                         "GPL-1.0+",
                         "GPL1.0+",
@@ -86,7 +87,7 @@ Raw Data
                 "otherNames": [
                     "GPL-1.0-or-later",
                     "GNU General Public License v1.0 or later",
-                    "gpl-1.0-plus",
+                    "scancode://gpl-1.0-plus",
                     "GPL 1.0 or later",
                     "GPL-1.0+",
                     "GPL1.0+",
@@ -108,6 +109,7 @@ Raw Data
                         "GNU General Public License v1.0 or later"
                     ],
                     "__impliedId": "GPL-1.0-or-later",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -135,6 +137,7 @@ Raw Data
                     "__impliedNames": [
                         "GNU General Public License v1.0 or later"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -163,7 +166,7 @@ Raw Data
                 "spdxId": "GPL-1.0-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "gpl-1.0-plus",
+                        "scancode://gpl-1.0-plus",
                         "GPL 1.0 or later",
                         "GPL-1.0-or-later"
                     ],
@@ -229,9 +232,9 @@ Raw Data
                     "GPL1.0+",
                     "GPL1+"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "Google OSS Policy": {
@@ -284,6 +287,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "Copyleft",
+        "__isOsiApproved": false,
         "__impliedText": "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
         "__impliedURLs": [
             [

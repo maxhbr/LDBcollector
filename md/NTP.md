@@ -5,22 +5,22 @@ NTP License (NTP)
 
 **Other Names:**
 
--   `mit-old-style-no-advert`
+-   `scancode://mit-old-style-no-advert`
 
 -   `MIT Old Style no advertising`
 
 -   `NTP License (NTP)`
 
--   `ntpl`
+-   `scancode://ntpl`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Is OSI Approved (source:
+-   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/NTP.html "SPDX"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 -   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
@@ -35,14 +35,14 @@ URLs
 ----
 
 -   **Homepage:**
-    http://fedoraproject.org/wiki/Licensing:MIT\#Old\_Style\_.28no\_advertising\_without\_permission.29
-
--   **Homepage:**
     https://www.eecis.udel.edu/~mills/ntp/html/copyright.html
 
--   **OSI Page:** https://opensource.org/licenses/NTP
+-   **Homepage:**
+    http://fedoraproject.org/wiki/Licensing:MIT\#Old\_Style\_.28no\_advertising\_without\_permission.29
 
 -   **OSI Page:** http://www.opensource.org/licenses/ntp-license.php
+
+-   **OSI Page:** https://opensource.org/licenses/NTP
 
 -   **SPDX:** http://spdx.org/licenses/NTP.json
 
@@ -61,17 +61,19 @@ OSADL Rule
     	YOU MUST Forward Copyright notices In Documentation
     	YOU MUST Forward License text In Documentation
 
+(source: OSADL License Checklist)
+
 Text
 ----
 
     Permission to use, copy, modify, and distribute this software and its
-    documentation for any purpose and without fee is hereby granted,
-    provided that the above copyright notice appear in all copies and
-    that both that copyright notice and this permission notice appear in
+    documentation for any purpose with or without fee is hereby granted,
+    provided that the above copyright notice appears in all copies and
+    that both the copyright notice and this permission notice appear in
     supporting documentation, and that the name of the authors not be
     used in advertising or publicity pertaining to distribution of the
     software without specific, written prior permission. The authors
-    makes no representations about the suitability of this software for any
+    makes no representations about the suitability this software for any
     purpose. It is provided "as is" without express or implied warranty.
 
 ------------------------------------------------------------------------
@@ -83,10 +85,10 @@ Raw Data
         "__impliedNames": [
             "NTP",
             "NTP License",
-            "mit-old-style-no-advert",
+            "scancode://mit-old-style-no-advert",
             "MIT Old Style no advertising",
             "NTP License (NTP)",
-            "ntpl"
+            "scancode://ntpl"
         ],
         "__impliedId": "NTP",
         "facts": {
@@ -123,7 +125,7 @@ Raw Data
                         "NTP",
                         "NTP",
                         "NTP License",
-                        "mit-old-style-no-advert",
+                        "scancode://mit-old-style-no-advert",
                         "MIT Old Style no advertising",
                         "NTP License (NTP)"
                     ],
@@ -133,7 +135,7 @@ Raw Data
                 "otherNames": [
                     "NTP",
                     "NTP License",
-                    "mit-old-style-no-advert",
+                    "scancode://mit-old-style-no-advert",
                     "MIT Old Style no advertising",
                     "NTP License (NTP)"
                 ]
@@ -162,6 +164,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -187,26 +190,25 @@ Raw Data
             },
             "Scancode": {
                 "otherUrls": [
-                    "http://www.opensource.org/licenses/NTP"
+                    "http://www.opensource.org/licenses/NTP",
+                    "http://www.pgpool.net/mediawiki/index.php/pgpool-II_License"
                 ],
-                "homepageUrl": "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style_.28no_advertising_without_permission.29",
-                "shortName": "MIT Old Style no advertising",
+                "homepageUrl": "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html",
+                "shortName": "NTP License",
                 "textUrls": null,
-                "text": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation, and that the name of the authors not be\nused in advertising or publicity pertaining to distribution of the\nsoftware without specific, written prior permission. The authors\nmakes no representations about the suitability of this software for any\npurpose. It is provided \"as is\" without express or implied warranty.",
+                "text": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose with or without fee is hereby granted,\nprovided that the above copyright notice appears in all copies and\nthat both the copyright notice and this permission notice appear in\nsupporting documentation, and that the name of the authors not be\nused in advertising or publicity pertaining to distribution of the\nsoftware without specific, written prior permission. The authors\nmakes no representations about the suitability this software for any\npurpose. It is provided \"as is\" without express or implied warranty.",
                 "category": "Permissive",
-                "osiUrl": "https://opensource.org/licenses/NTP",
-                "owner": "MIT",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-old-style-no-advert.yml",
-                "key": "mit-old-style-no-advert",
-                "name": "MIT Old Style no advertising",
-                "spdxId": "NTP",
+                "osiUrl": "http://www.opensource.org/licenses/ntp-license.php",
+                "owner": "University of Delaware",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntpl.yml",
+                "key": "ntpl",
+                "name": "Network Time Protocol License",
+                "spdxId": null,
                 "_implications": {
                     "__impliedNames": [
-                        "mit-old-style-no-advert",
-                        "MIT Old Style no advertising",
-                        "NTP"
+                        "scancode://ntpl",
+                        "NTP License"
                     ],
-                    "__impliedId": "NTP",
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -214,19 +216,23 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation, and that the name of the authors not be\nused in advertising or publicity pertaining to distribution of the\nsoftware without specific, written prior permission. The authors\nmakes no representations about the suitability of this software for any\npurpose. It is provided \"as is\" without express or implied warranty.",
+                    "__impliedText": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose with or without fee is hereby granted,\nprovided that the above copyright notice appears in all copies and\nthat both the copyright notice and this permission notice appear in\nsupporting documentation, and that the name of the authors not be\nused in advertising or publicity pertaining to distribution of the\nsoftware without specific, written prior permission. The authors\nmakes no representations about the suitability this software for any\npurpose. It is provided \"as is\" without express or implied warranty.",
                     "__impliedURLs": [
                         [
                             "Homepage",
-                            "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style_.28no_advertising_without_permission.29"
+                            "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html"
                         ],
                         [
                             "OSI Page",
-                            "https://opensource.org/licenses/NTP"
+                            "http://www.opensource.org/licenses/ntp-license.php"
                         ],
                         [
                             null,
                             "http://www.opensource.org/licenses/NTP"
+                        ],
+                        [
+                            null,
+                            "http://www.pgpool.net/mediawiki/index.php/pgpool-II_License"
                         ]
                     ]
                 }
@@ -396,7 +402,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies and\nthat both that copyright notice and this permission notice appear in\nsupporting documentation, and that the name of the authors not be\nused in advertising or publicity pertaining to distribution of the\nsoftware without specific, written prior permission. The authors\nmakes no representations about the suitability of this software for any\npurpose. It is provided \"as is\" without express or implied warranty.",
+        "__isOsiApproved": true,
+        "__impliedText": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose with or without fee is hereby granted,\nprovided that the above copyright notice appears in all copies and\nthat both the copyright notice and this permission notice appear in\nsupporting documentation, and that the name of the authors not be\nused in advertising or publicity pertaining to distribution of the\nsoftware without specific, written prior permission. The authors\nmakes no representations about the suitability this software for any\npurpose. It is provided \"as is\" without express or implied warranty.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -412,18 +419,6 @@ Raw Data
             ],
             [
                 "Homepage",
-                "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style_.28no_advertising_without_permission.29"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/NTP"
-            ],
-            [
-                null,
-                "http://www.opensource.org/licenses/NTP"
-            ],
-            [
-                "Homepage",
                 "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html"
             ],
             [
@@ -432,7 +427,19 @@ Raw Data
             ],
             [
                 null,
+                "http://www.opensource.org/licenses/NTP"
+            ],
+            [
+                null,
                 "http://www.pgpool.net/mediawiki/index.php/pgpool-II_License"
+            ],
+            [
+                "Homepage",
+                "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style_.28no_advertising_without_permission.29"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/NTP"
             ],
             [
                 null,

@@ -3,10 +3,14 @@ Latex2e License (Latex2e)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://latex2e`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -20,15 +24,17 @@ URLs
 Text
 ----
 
-    Copyright (C) 2007, 2008, 2009, 2010 Karl Berry.
-    Copyright (C) 1988, 1994, 2007 Stephen Gilmore.
-    Copyright (C) 1994, 1995, 1996 Torsten Martinsen.
-         
-    Permission is granted to make and distribute verbatim copies of this manual provided the copyright notice and this permission notice are preserved on all copies.
-         
-    Permission is granted to copy and distribute modified versions of this manual under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
-         
-    Permission is granted to copy and distribute translations of this manual into another language, under the above conditions for modified versions.
+    Permission is granted to make and distribute verbatim copies of this
+    manual provided the copyright notice and this permission notice are
+    preserved on all copies.
+
+    Permission is granted to copy and distribute modified versions of this
+    manual under the conditions for verbatim copying, provided that the
+    entire resulting derived work is distributed under the terms of a
+    permission notice identical to this one.
+
+    Permission is granted to copy and distribute translations of this manual
+    into another language, under the above conditions for modified versions.
 
 ------------------------------------------------------------------------
 
@@ -39,9 +45,10 @@ Raw Data
         "__impliedNames": [
             "Latex2e",
             "Latex2e License",
-            "latex2e"
+            "scancode://latex2e"
         ],
         "__impliedId": "Latex2e",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -49,7 +56,7 @@ Raw Data
                         "Latex2e",
                         "Latex2e",
                         "Latex2e License",
-                        "latex2e"
+                        "scancode://latex2e"
                     ],
                     "__impliedId": "Latex2e"
                 },
@@ -57,7 +64,7 @@ Raw Data
                 "otherNames": [
                     "Latex2e",
                     "Latex2e License",
-                    "latex2e"
+                    "scancode://latex2e"
                 ]
             },
             "SPDX": {
@@ -75,6 +82,7 @@ Raw Data
                         "Latex2e License"
                     ],
                     "__impliedId": "Latex2e",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -102,6 +110,7 @@ Raw Data
                     "__impliedNames": [
                         "Latex2e License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -118,7 +127,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Latex2e",
                 "shortName": "Latex2e License",
                 "textUrls": null,
-                "text": "Copyright (C) 2007, 2008, 2009, 2010 Karl Berry.\nCopyright (C) 1988, 1994, 2007 Stephen Gilmore.\nCopyright (C) 1994, 1995, 1996 Torsten Martinsen.\n     \nPermission is granted to make and distribute verbatim copies of this manual provided the copyright notice and this permission notice are preserved on all copies.\n     \nPermission is granted to copy and distribute modified versions of this manual under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.\n     \nPermission is granted to copy and distribute translations of this manual into another language, under the above conditions for modified versions.",
+                "text": "Permission is granted to make and distribute verbatim copies of this\nmanual provided the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\nmanual under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n\nPermission is granted to copy and distribute translations of this manual\ninto another language, under the above conditions for modified versions.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "LaTeX",
@@ -128,7 +137,7 @@ Raw Data
                 "spdxId": "Latex2e",
                 "_implications": {
                     "__impliedNames": [
-                        "latex2e",
+                        "scancode://latex2e",
                         "Latex2e License",
                         "Latex2e"
                     ],
@@ -140,7 +149,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (C) 2007, 2008, 2009, 2010 Karl Berry.\nCopyright (C) 1988, 1994, 2007 Stephen Gilmore.\nCopyright (C) 1994, 1995, 1996 Torsten Martinsen.\n     \nPermission is granted to make and distribute verbatim copies of this manual provided the copyright notice and this permission notice are preserved on all copies.\n     \nPermission is granted to copy and distribute modified versions of this manual under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.\n     \nPermission is granted to copy and distribute translations of this manual into another language, under the above conditions for modified versions.",
+                    "__impliedText": "Permission is granted to make and distribute verbatim copies of this\nmanual provided the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\nmanual under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n\nPermission is granted to copy and distribute translations of this manual\ninto another language, under the above conditions for modified versions.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -166,7 +175,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Copyright (C) 2007, 2008, 2009, 2010 Karl Berry.\nCopyright (C) 1988, 1994, 2007 Stephen Gilmore.\nCopyright (C) 1994, 1995, 1996 Torsten Martinsen.\n     \nPermission is granted to make and distribute verbatim copies of this manual provided the copyright notice and this permission notice are preserved on all copies.\n     \nPermission is granted to copy and distribute modified versions of this manual under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.\n     \nPermission is granted to copy and distribute translations of this manual into another language, under the above conditions for modified versions.",
+        "__isOsiApproved": false,
+        "__impliedText": "Permission is granted to make and distribute verbatim copies of this\nmanual provided the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\nmanual under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n\nPermission is granted to copy and distribute translations of this manual\ninto another language, under the above conditions for modified versions.",
         "__impliedURLs": [
             [
                 "SPDX",

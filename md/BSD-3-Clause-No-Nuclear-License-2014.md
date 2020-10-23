@@ -5,14 +5,14 @@ BSD 3-Clause No Nuclear License 2014 (BSD-3-Clause-No-Nuclear-License-2014)
 
 **Other Names:**
 
--   `oracle-bsd-no-nuclear`
+-   `scancode://oracle-bsd-no-nuclear`
 
 -   `Oracle BSD-Style with Nuclear Restrictions`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -71,7 +71,7 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-No-Nuclear-License-2014",
             "BSD 3-Clause No Nuclear License 2014",
-            "oracle-bsd-no-nuclear",
+            "scancode://oracle-bsd-no-nuclear",
             "Oracle BSD-Style with Nuclear Restrictions"
         ],
         "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
@@ -82,7 +82,7 @@ Raw Data
                         "BSD-3-Clause-No-Nuclear-License-2014",
                         "BSD-3-Clause-No-Nuclear-License-2014",
                         "BSD 3-Clause No Nuclear License 2014",
-                        "oracle-bsd-no-nuclear",
+                        "scancode://oracle-bsd-no-nuclear",
                         "Oracle BSD-Style with Nuclear Restrictions"
                     ],
                     "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014"
@@ -91,7 +91,7 @@ Raw Data
                 "otherNames": [
                     "BSD-3-Clause-No-Nuclear-License-2014",
                     "BSD 3-Clause No Nuclear License 2014",
-                    "oracle-bsd-no-nuclear",
+                    "scancode://oracle-bsd-no-nuclear",
                     "Oracle BSD-Style with Nuclear Restrictions"
                 ]
             },
@@ -110,6 +110,7 @@ Raw Data
                         "BSD 3-Clause No Nuclear License 2014"
                     ],
                     "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -140,7 +141,7 @@ Raw Data
                 "spdxId": "BSD-3-Clause-No-Nuclear-License-2014",
                 "_implications": {
                     "__impliedNames": [
-                        "oracle-bsd-no-nuclear",
+                        "scancode://oracle-bsd-no-nuclear",
                         "Oracle BSD-Style with Nuclear Restrictions",
                         "BSD-3-Clause-No-Nuclear-License-2014"
                     ],
@@ -210,6 +211,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Use is subject to license terms.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of Oracle Corporation nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nYou acknowledge that this software is not designed, licensed or intended for use\nin the design, construction, operation or maintenance of any nuclear facility.",
         "__impliedURLs": [
             [

@@ -5,6 +5,8 @@ Sleepycat License (Sleepycat)
 
 **Other Names:**
 
+-   `scancode://sleepycat`
+
 -   `The Sleepycat License`
 
 -   `License :: OSI Approved :: Sleepycat License`
@@ -16,12 +18,12 @@ Sleepycat License (Sleepycat)
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**Is OSI Approved (source:
+    [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   **↑** Is OSI Approved (source:
-    [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX"))
 
 -   Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
     nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
@@ -29,7 +31,7 @@ Comments on (easy) usability
     Weiterentwicklungen weiterverbreitet werden können. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
@@ -92,13 +94,15 @@ Raw Data
         "__impliedNames": [
             "Sleepycat",
             "Sleepycat License",
-            "sleepycat",
+            "scancode://sleepycat",
             "The Sleepycat License",
             "License :: OSI Approved :: Sleepycat License",
             "Berkeley Database License",
             "Sleepycat Software Product License"
         ],
         "__impliedId": "Sleepycat",
+        "__isFsfFree": true,
+        "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -133,7 +137,7 @@ Raw Data
                         "Sleepycat",
                         "Sleepycat",
                         "Sleepycat License",
-                        "sleepycat",
+                        "scancode://sleepycat",
                         "The Sleepycat License",
                         "License :: OSI Approved :: Sleepycat License",
                         "Berkeley Database License",
@@ -145,7 +149,7 @@ Raw Data
                 "otherNames": [
                     "Sleepycat",
                     "Sleepycat License",
-                    "sleepycat",
+                    "scancode://sleepycat",
                     "The Sleepycat License",
                     "License :: OSI Approved :: Sleepycat License",
                     "Berkeley Database License",
@@ -176,6 +180,7 @@ Raw Data
                             }
                         ]
                     ],
+                    "__isOsiApproved": true,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -203,6 +208,7 @@ Raw Data
                     "__impliedNames": [
                         "Sleepycat Software Product License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -233,7 +239,7 @@ Raw Data
                 "spdxId": "Sleepycat",
                 "_implications": {
                     "__impliedNames": [
-                        "sleepycat",
+                        "scancode://sleepycat",
                         "Sleepycat License",
                         "Sleepycat"
                     ],
@@ -300,9 +306,9 @@ Raw Data
                     "Berkeley Database License",
                     "Sleepycat Software Product License"
                 ],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": null,
+                "oCompatibilities": null,
                 "oRatingState": null
             },
             "ifrOSS": {
@@ -420,7 +426,8 @@ Raw Data
                     "__impliedNames": [
                         "Sleepycat",
                         "Sleepycat License"
-                    ]
+                    ],
+                    "__hasPatentHint": false
                 },
                 "Private use": {
                     "value": "Yes",
@@ -492,6 +499,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "Copyleft",
+        "__isOsiApproved": true,
         "__impliedText": " Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n 2. Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n 3. Redistributions in any form must be accompanied by information on\n    how to obtain complete source code for the DB software and any\n    accompanying software that uses the DB software.  The source code\n    must either be included in the distribution or be available for no\n    more than the cost of distribution plus a nominal fee, and must be\n    freely redistributable under reasonable conditions.  For an\n    executable file, complete source code means the source code for all\n    modules it contains.  It does not include source code for modules or\n    files that typically accompany the major components of the operating\n    system on which the executable file runs.\n\n THIS SOFTWARE IS PROVIDED BY ORACLE CORPORATION ``AS IS'' AND ANY EXPRESS\n OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR\n NON-INFRINGEMENT, ARE DISCLAIMED.  IN NO EVENT SHALL ORACLE CORPORATION\n BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF\n THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [

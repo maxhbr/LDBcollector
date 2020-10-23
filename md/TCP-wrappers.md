@@ -3,14 +3,18 @@ TCP Wrappers License (TCP-wrappers)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://tcp-wrappers`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -68,7 +72,7 @@ Raw Data
         "__impliedNames": [
             "TCP-wrappers",
             "TCP Wrappers License",
-            "tcp-wrappers"
+            "scancode://tcp-wrappers"
         ],
         "__impliedId": "TCP-wrappers",
         "facts": {
@@ -78,7 +82,7 @@ Raw Data
                         "TCP-wrappers",
                         "TCP-wrappers",
                         "TCP Wrappers License",
-                        "tcp-wrappers"
+                        "scancode://tcp-wrappers"
                     ],
                     "__impliedId": "TCP-wrappers"
                 },
@@ -86,7 +90,7 @@ Raw Data
                 "otherNames": [
                     "TCP-wrappers",
                     "TCP Wrappers License",
-                    "tcp-wrappers"
+                    "scancode://tcp-wrappers"
                 ]
             },
             "SPDX": {
@@ -104,6 +108,7 @@ Raw Data
                         "TCP Wrappers License"
                     ],
                     "__impliedId": "TCP-wrappers",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -134,7 +139,7 @@ Raw Data
                 "spdxId": "TCP-wrappers",
                 "_implications": {
                     "__impliedNames": [
-                        "tcp-wrappers",
+                        "scancode://tcp-wrappers",
                         "TCP Wrappers License",
                         "TCP-wrappers"
                     ],
@@ -252,6 +257,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "-----BEGIN PGP SIGNED MESSAGE-----\n\nAs of June 1, 2001, the text below constitutes the TCP Wrappers license.\n\n/************************************************************************\n* Copyright 1995 by Wietse Venema.  All rights reserved.  Some individual\n* files may be covered by other copyrights.\n*\n* This material was originally written and compiled by Wietse Venema at\n* Eindhoven University of Technology, The Netherlands, in 1990, 1991,\n* 1992, 1993, 1994 and 1995.\n*\n* Redistribution and use in source and binary forms, with or without\n* modification, are permitted provided that this entire copyright notice\n* is duplicated in all such copies.\n*\n* This software is provided \"as is\" and without any expressed or implied\n* warranties, including, without limitation, the implied warranties of\n* merchantibility and fitness for any particular purpose.\n************************************************************************/\n\n-----BEGIN PGP SIGNATURE-----\nVersion: 2.6.3i\nCharset: noconv\n\niQCVAwUBOxo3X9yA8qbVMny5AQHT8wP9FZOtWxEM4SMj4Sj9QezMERz31n5fd0pC\njUDnyzmosOudM/iFlv6YfyR820aNvNNI+AdtgWYRPVHocVNOrZcmu7IADO8hlU//\nv8BeBE0bdjeVmOQYRQfXgt3J2q0b8x8Q5a/LCLVLh8k6DFGg8AfEbLDQWhi1JiXC\n0JsaB8crR3M=\n=0AMW\n-----END PGP SIGNATURE-----",
         "__impliedURLs": [
             [

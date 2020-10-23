@@ -3,10 +3,14 @@ No Limit Public License (NLPL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://nlpl`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
@@ -16,7 +20,7 @@ Comments on (easy) usability
     Ursprungslizenz weiterzuverbreiten. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -56,9 +60,10 @@ Raw Data
         "__impliedNames": [
             "NLPL",
             "No Limit Public License",
-            "nlpl"
+            "scancode://nlpl"
         ],
         "__impliedId": "NLPL",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -66,7 +71,7 @@ Raw Data
                         "NLPL",
                         "NLPL",
                         "No Limit Public License",
-                        "nlpl"
+                        "scancode://nlpl"
                     ],
                     "__impliedId": "NLPL"
                 },
@@ -74,7 +79,7 @@ Raw Data
                 "otherNames": [
                     "NLPL",
                     "No Limit Public License",
-                    "nlpl"
+                    "scancode://nlpl"
                 ]
             },
             "SPDX": {
@@ -92,6 +97,7 @@ Raw Data
                         "No Limit Public License"
                     ],
                     "__impliedId": "NLPL",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -119,6 +125,7 @@ Raw Data
                     "__impliedNames": [
                         "No Limit Public License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -145,7 +152,7 @@ Raw Data
                 "spdxId": "NLPL",
                 "_implications": {
                     "__impliedNames": [
-                        "nlpl",
+                        "scancode://nlpl",
                         "NLPL",
                         "NLPL"
                     ],
@@ -274,6 +281,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "StrongCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.",
         "__impliedURLs": [
             [

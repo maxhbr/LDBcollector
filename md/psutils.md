@@ -5,16 +5,18 @@ psutils License (psutils)
 
 **Other Names:**
 
+-   `scancode://psutils`
+
 -   `PS Utilities License`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -71,9 +73,11 @@ Raw Data
         "__impliedNames": [
             "psutils",
             "psutils License",
+            "scancode://psutils",
             "PS Utilities License"
         ],
         "__impliedId": "psutils",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -81,6 +85,7 @@ Raw Data
                         "psutils",
                         "psutils",
                         "psutils License",
+                        "scancode://psutils",
                         "PS Utilities License"
                     ],
                     "__impliedId": "psutils"
@@ -89,6 +94,7 @@ Raw Data
                 "otherNames": [
                     "psutils",
                     "psutils License",
+                    "scancode://psutils",
                     "PS Utilities License"
                 ]
             },
@@ -107,6 +113,7 @@ Raw Data
                         "psutils License"
                     ],
                     "__impliedId": "psutils",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -134,6 +141,7 @@ Raw Data
                     "__impliedNames": [
                         "psutils License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -162,7 +170,7 @@ Raw Data
                 "spdxId": "psutils",
                 "_implications": {
                     "__impliedNames": [
-                        "psutils",
+                        "scancode://psutils",
                         "PS Utilities License",
                         "psutils"
                     ],
@@ -250,6 +258,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "PS Utilities Package\n\nThe constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.\n\nLICENSE Makefile.msc Makefile.nt Makefile.os2\nMakefile.unix README config.h descrip.mms\nepsffit.c epsffit.man extractres.man extractres.pl\nfixdlsrps.man fixdlsrps.pl fixfmps.man fixfmps.pl\nfixmacps.man fixmacps.pl fixpsditps.man fixpsditps.pl\nfixpspps.man fixpspps.pl fixscribeps.man fixscribeps.pl\nfixtpps.man fixtpps.pl fixwfwps.man fixwfwps.pl\nfixwpps.man fixwpps.pl fixwwps.man fixwwps.pl\ngetafm getafm.man includeres.man includeres.pl\nmaketext patchlev.h psbook.c psbook.man\npserror.c pserror.h psmerge.man psmerge.pl\npsnup.c psnup.man psresize.c psresize.man\npsselect.c psselect.man psspec.c psspec.h\npstops.c pstops.man psutil.c psutil.h\nshowchar\n\nThey may be copied and used for any purpose (including distribution as part of a for-profit product), provided:\n\n1) The original attribution of the programs is clearly displayed in the product and/or documentation, even if the programs are modified and/or renamed as part of the product.\n\n2) The original source code of the programs is provided free of charge (except for reasonable distribution costs). For a definition of reasonable distribution costs, see the Gnu General Public License or Larry Wall's Artistic License (provided with the Perl 4 kit). The GPL and Artistic License in NO WAY affect this license; they are merely used as examples of the spirit in which it is intended.\n\n3) These programs are provided \"as-is\". No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.\n\nBasically, I don't mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.",
         "__impliedURLs": [
             [

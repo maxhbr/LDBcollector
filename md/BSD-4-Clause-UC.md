@@ -5,21 +5,21 @@ BSD-4-Clause (University of California-Specific) (BSD-4-Clause-UC)
 
 **Other Names:**
 
--   `bsd-original-uc`
+-   `scancode://bsd-original-uc`
 
 -   `BSD-Original-UC`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑** Google Classification is NOTICE (source: [Google OSS
+-   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↓** Advertisement clause (3.) is complicated and prone to
-    conflicts (source: Override)
+-   **↑**Rating is: Bronze (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↓**Advertisement clause (3.) is complicated and prone to conflicts
+    (source: Override)
 
 URLs
 ----
@@ -54,6 +54,8 @@ OSADL Rule
     	IF Advertisement
     		YOU MUST Credit In Advertisement Verbatim "This product includes software developed by the University of California, Berkeley and its contributors."
     	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
 
 Text
 ----
@@ -133,7 +135,7 @@ Raw Data
         "__impliedNames": [
             "BSD-4-Clause-UC",
             "BSD-4-Clause (University of California-Specific)",
-            "bsd-original-uc",
+            "scancode://bsd-original-uc",
             "BSD-Original-UC"
         ],
         "__impliedId": "BSD-4-Clause-UC",
@@ -158,7 +160,7 @@ Raw Data
                         "BSD-4-Clause-UC",
                         "BSD-4-Clause-UC",
                         "BSD-4-Clause (University of California-Specific)",
-                        "bsd-original-uc",
+                        "scancode://bsd-original-uc",
                         "BSD-Original-UC"
                     ],
                     "__impliedId": "BSD-4-Clause-UC"
@@ -167,7 +169,7 @@ Raw Data
                 "otherNames": [
                     "BSD-4-Clause-UC",
                     "BSD-4-Clause (University of California-Specific)",
-                    "bsd-original-uc",
+                    "scancode://bsd-original-uc",
                     "BSD-Original-UC"
                 ]
             },
@@ -186,6 +188,7 @@ Raw Data
                         "BSD-4-Clause (University of California-Specific)"
                     ],
                     "__impliedId": "BSD-4-Clause-UC",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -228,7 +231,7 @@ Raw Data
                 "spdxId": "BSD-4-Clause-UC",
                 "_implications": {
                     "__impliedNames": [
-                        "bsd-original-uc",
+                        "scancode://bsd-original-uc",
                         "BSD-Original-UC",
                         "BSD-4-Clause-UC"
                     ],
@@ -294,12 +297,12 @@ Raw Data
                 },
                 "oName": "BSD-4-Clause-UC",
                 "oOtherLicenseIds": [],
-                "oCompatibiliets": null,
                 "oDescription": null,
                 "oJudgement": {
                     "tag": "NegativeJudgement",
                     "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
                 },
+                "oCompatibilities": null,
                 "oRatingState": {
                     "tag": "RatingState",
                     "contents": [
@@ -451,6 +454,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain the above copyright notice,\n      this list of conditions and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice,\n      this list of conditions and the following disclaimer in the documentation\n      and/or other materials provided with the distribution.\n\n   3. <deleted>\n\n   4. Neither the name of the University nor the names of its contributors may\n      be used to endorse or promote products derived from this software without\n      specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND ANY\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nOn on July 22 1999, per notice reproduced below, the advertising clause (clause\n3) of this license was officially rescinded by the Director of the Office of\nTechnology Licensing of the University of California.\n\nThis applies only to BSD Unix files copyrighted by the Regents of the University\nof California under this license.\n\nFrom: ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change :\n\n\"July 22, 1999\n\nTo All Licensees, Distributors of Any Version of BSD:\n\nAs you know, certain of the Berkeley Software Distribution (\"BSD\") source\ncode files require that further distributions of products containing all or\nportions of the software, acknowledge within their advertising materials\nthat such products contain software developed by UC Berkeley and its\ncontributors.\n\nSpecifically, the provision reads:\n\n\"     * 3. All advertising materials mentioning features or use of this software\n      *    must display the following acknowledgement:\n      *    This product includes software developed by the University of\n      *    California, Berkeley and its contributors.\"\n\nEffective immediately, licensees and distributors are no longer required to\ninclude the acknowledgement within advertising materials.  Accordingly, the\nforegoing paragraph of those BSD Unix files containing it is hereby deleted\nin its entirety.\n\nWilliam Hoskins\nDirector, Office of Technology Licensing\nUniversity of California, Berkeley\"\n\nNote also that in many variants of this original BSD license, both occurrences\nof the phrase \"REGENTS AND CONTRIBUTORS\" is replaced in the disclaimer section\nby \"COPYRIGHT HOLDERS AND CONTRIBUTORS\".",
         "__impliedURLs": [
             [

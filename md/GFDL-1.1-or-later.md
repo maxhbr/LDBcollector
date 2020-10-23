@@ -5,14 +5,14 @@ GNU Free Documentation License v1.1 or later (GFDL-1.1-or-later)
 
 **Other Names:**
 
--   `gfdl-1.1-plus`
+-   `scancode://gfdl-1.1-plus`
 
 -   `GFDL 1.1 or later`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↓** Exception: Data licensed under the FDL with no invariant
+-   **↓**Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
     http://www.debian.org/vote/2006/vote\_001\#outcome (source: [Debian
     Free Software
@@ -27,9 +27,6 @@ URLs
 
 -   http://www.lysator.liu.se/~kjell-e/tekla/linux/security/fdl.html
 
-Text
-----
-
 ------------------------------------------------------------------------
 
 Raw Data
@@ -39,7 +36,7 @@ Raw Data
         "__impliedNames": [
             "GFDL-1.1-or-later",
             "GNU Free Documentation License v1.1 or later",
-            "gfdl-1.1-plus",
+            "scancode://gfdl-1.1-plus",
             "GFDL 1.1 or later"
         ],
         "__impliedId": "GFDL-1.1-or-later",
@@ -53,7 +50,7 @@ Raw Data
                         "GFDL-1.1-or-later",
                         "GFDL-1.1-or-later",
                         "GNU Free Documentation License v1.1 or later",
-                        "gfdl-1.1-plus",
+                        "scancode://gfdl-1.1-plus",
                         "GFDL 1.1 or later"
                     ],
                     "__impliedId": "GFDL-1.1-or-later"
@@ -62,7 +59,7 @@ Raw Data
                 "otherNames": [
                     "GFDL-1.1-or-later",
                     "GNU Free Documentation License v1.1 or later",
-                    "gfdl-1.1-plus",
+                    "scancode://gfdl-1.1-plus",
                     "GFDL 1.1 or later"
                 ]
             },
@@ -81,6 +78,7 @@ Raw Data
                         "GNU Free Documentation License v1.1 or later"
                     ],
                     "__impliedId": "GFDL-1.1-or-later",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -102,7 +100,7 @@ Raw Data
                 "homepageUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.1.txt",
                 "shortName": "GFDL 1.1 or later",
                 "textUrls": null,
-                "text": "",
+                "text": null,
                 "category": "Copyleft Limited",
                 "osiUrl": null,
                 "owner": "Free Software Foundation (FSF)",
@@ -112,7 +110,7 @@ Raw Data
                 "spdxId": "GFDL-1.1-or-later",
                 "_implications": {
                     "__impliedNames": [
-                        "gfdl-1.1-plus",
+                        "scancode://gfdl-1.1-plus",
                         "GFDL 1.1 or later",
                         "GFDL-1.1-or-later"
                     ],
@@ -124,7 +122,6 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedText": "",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -182,7 +179,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
-        "__impliedText": "",
+        "__isOsiApproved": false,
         "__impliedURLs": [
             [
                 "SPDX",

@@ -3,14 +3,18 @@ NRL License (NRL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://nrl`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -62,9 +66,10 @@ Raw Data
         "__impliedNames": [
             "NRL",
             "NRL License",
-            "nrl"
+            "scancode://nrl"
         ],
         "__impliedId": "NRL",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -72,7 +77,7 @@ Raw Data
                         "NRL",
                         "NRL",
                         "NRL License",
-                        "nrl"
+                        "scancode://nrl"
                     ],
                     "__impliedId": "NRL"
                 },
@@ -80,7 +85,7 @@ Raw Data
                 "otherNames": [
                     "NRL",
                     "NRL License",
-                    "nrl"
+                    "scancode://nrl"
                 ]
             },
             "SPDX": {
@@ -98,6 +103,7 @@ Raw Data
                         "NRL License"
                     ],
                     "__impliedId": "NRL",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -125,6 +131,7 @@ Raw Data
                     "__impliedNames": [
                         "NRL License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -151,7 +158,7 @@ Raw Data
                 "spdxId": "NRL",
                 "_implications": {
                     "__impliedNames": [
-                        "nrl",
+                        "scancode://nrl",
                         "NRL License",
                         "NRL"
                     ],
@@ -235,6 +242,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "NRL License\nCOPYRIGHT NOTICE\n\nAll of the documentation and software included in this software distribution from the US Naval Research Laboratory (NRL) are copyrighted by their respective developers.\n\nPortions of the software are derived from the Net/2 and 4.4-Lite Berkeley Software Distributions (BSD) of the University of California at Berkeley and those portions are copyright by The Regents of the University of California. All Rights Reserved. The UC Berkeley Copyright and License agreement is binding on those portions of the software. In all cases, the NRL developers have retained the original UC Berkeley copyright and license notices in the respective files in accordance with the UC Berkeley copyrights and license.\n\nPortions of this software and documentation were developed at NRL by various people. Those developers have each copyrighted the portions that they developed at NRL and have assigned All Rights for those portions to NRL. Outside the USA, NRL has copyright on some of the software developed at NRL. The affected files all contain specific copyright notices and those notices must be retained in any derived work.\n\nNRL LICENSE\n\nNRL grants permission for redistribution and use in source and binary forms, with or without modification, of the software and documentation created at NRL provided that the following conditions are met:\n\n1. All terms of the UC Berkeley copyright and license must be followed. \n2. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. \n3. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. \n4. All advertising materials mentioning features or use of this software must display the following acknowledgements:\n\nThis product includes software developed by the University of California, Berkeley and its contributors.\n\nThis product includes software developed at the Information Technology Division, US Naval Research Laboratory.\n\n5. Neither the name of the NRL nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHE SOFTWARE PROVIDED BY NRL IS PROVIDED BY NRL AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NRL OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the US Naval Research Laboratory (NRL).",
         "__impliedURLs": [
             [

@@ -2,10 +2,11 @@
     "__impliedNames": [
         "FSFAP",
         "FSF All Permissive License",
-        "fsf-ap",
+        "scancode://fsf-ap",
         "FSF All Permissive license"
     ],
     "__impliedId": "FSFAP",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -13,7 +14,7 @@
                     "FSFAP",
                     "FSFAP",
                     "FSF All Permissive License",
-                    "fsf-ap"
+                    "scancode://fsf-ap"
                 ],
                 "__impliedId": "FSFAP"
             },
@@ -21,7 +22,7 @@
             "otherNames": [
                 "FSFAP",
                 "FSF All Permissive License",
-                "fsf-ap"
+                "scancode://fsf-ap"
             ]
         },
         "SPDX": {
@@ -39,6 +40,7 @@
                     "FSF All Permissive License"
                 ],
                 "__impliedId": "FSFAP",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -66,6 +68,7 @@
                 "__impliedNames": [
                     "FSF All Permissive license"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -97,7 +100,7 @@
             "spdxId": "FSFAP",
             "_implications": {
                 "__impliedNames": [
-                    "fsf-ap",
+                    "scancode://fsf-ap",
                     "FSF All Permissive License",
                     "FSFAP"
                 ],
@@ -151,6 +154,7 @@
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "Copying and distribution of this file, with or without modification, are\npermitted in any medium without royalty provided the copyright notice\nand this notice are preserved. This file is offered as-is, without any\nwarranty.\n",
     "__impliedURLs": [
         [

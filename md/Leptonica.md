@@ -3,14 +3,18 @@ Leptonica License (Leptonica)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://leptonica`
+
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   **↓** Rating is: Lead (source: [BlueOak License
+-   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -24,8 +28,6 @@ URLs
 
 Text
 ----
-
-    Copyright (C) 2001 Leptonica.  All rights reserved.
 
     This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.
 
@@ -44,9 +46,10 @@ Raw Data
         "__impliedNames": [
             "Leptonica",
             "Leptonica License",
-            "leptonica"
+            "scancode://leptonica"
         ],
         "__impliedId": "Leptonica",
+        "__isFsfFree": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -54,7 +57,7 @@ Raw Data
                         "Leptonica",
                         "Leptonica",
                         "Leptonica License",
-                        "leptonica"
+                        "scancode://leptonica"
                     ],
                     "__impliedId": "Leptonica"
                 },
@@ -62,7 +65,7 @@ Raw Data
                 "otherNames": [
                     "Leptonica",
                     "Leptonica License",
-                    "leptonica"
+                    "scancode://leptonica"
                 ]
             },
             "SPDX": {
@@ -80,6 +83,7 @@ Raw Data
                         "Leptonica License"
                     ],
                     "__impliedId": "Leptonica",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -107,6 +111,7 @@ Raw Data
                     "__impliedNames": [
                         "Leptonica License"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
@@ -123,7 +128,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Leptonica",
                 "shortName": "Leptonica License",
                 "textUrls": null,
-                "text": "Copyright (C) 2001 Leptonica.  All rights reserved.\n\nThis software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
+                "text": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Leptonica",
@@ -133,7 +138,7 @@ Raw Data
                 "spdxId": "Leptonica",
                 "_implications": {
                     "__impliedNames": [
-                        "leptonica",
+                        "scancode://leptonica",
                         "Leptonica License",
                         "Leptonica"
                     ],
@@ -145,7 +150,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (C) 2001 Leptonica.  All rights reserved.\n\nThis software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
+                    "__impliedText": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -217,7 +222,8 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
-        "__impliedText": "Copyright (C) 2001 Leptonica.  All rights reserved.\n\nThis software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
+        "__isOsiApproved": false,
+        "__impliedText": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
         "__impliedURLs": [
             [
                 "SPDX",

@@ -1,34 +1,34 @@
 == GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)
 
 [cols=",",options="header",]
-|=========================================================
+|===
 |Key |Value
 |Fullname |GNU Lesser General Public License v2.1 or later
 |Shortname |LGPL-2.1-or-later
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |WeakCopyleft
 |Has Patent Hint |True
-|=========================================================
+|===
 
 *Other Names:*
 
-* `lgpl-2.1-plus`
-* `LGPL 2.1 or later`
-* `GNU Lesser General Public License 2.1`
-* `LGPL-2.1+`
-* `LGPL2.1+`
-* `LGPL (v2.1 or later)`
-* `LGPL-2.1-only`
-* `LGPL-2.1`
+* `+scancode://lgpl-2.1-plus+`
+* `+LGPL 2.1 or later+`
+* `+GNU Lesser General Public License 2.1+`
+* `+LGPL-2.1++`
+* `+LGPL2.1++`
+* `+LGPL (v2.1 or later)+`
+* `+LGPL-2.1-only+`
+* `+LGPL-2.1+`
 
 === Comments on (easy) usability
 
-* *↑* Earlier called the "Library General Public License"; this name is
+* **↑**Earlier called the "Library General Public License"; this name is
 deprecated because it confuses the license's intent. (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
-* *↑* Is OSI Approved (source:
+* **↑**Is OSI Approved (source:
 https://spdx.org/licenses/LGPL-2.1-or-later.html[SPDX])
-* *↓* Google Classification is RESTRICTED (source:
+* **↓**Google Classification is RESTRICTED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 
@@ -182,6 +182,8 @@ PATENT HINTS Yes
 COPYLEFT CLAUSE Yes
 ....
 
+(source: OSADL License Checklist)
+
 === Text
 
 ....
@@ -201,7 +203,7 @@ You should have received a copy of the GNU Lesser General Public License along w
     "__impliedNames": [
         "LGPL-2.1-or-later",
         "GNU Lesser General Public License v2.1 or later",
-        "lgpl-2.1-plus",
+        "scancode://lgpl-2.1-plus",
         "LGPL 2.1 or later",
         "GNU Lesser General Public License 2.1",
         "LGPL-2.1+",
@@ -249,7 +251,7 @@ You should have received a copy of the GNU Lesser General Public License along w
                     "LGPL-2.1-or-later",
                     "LGPL-2.1-or-later",
                     "GNU Lesser General Public License v2.1 or later",
-                    "lgpl-2.1-plus",
+                    "scancode://lgpl-2.1-plus",
                     "LGPL 2.1 or later",
                     "GNU Lesser General Public License 2.1",
                     "LGPL-2.1+",
@@ -262,7 +264,7 @@ You should have received a copy of the GNU Lesser General Public License along w
             "otherNames": [
                 "LGPL-2.1-or-later",
                 "GNU Lesser General Public License v2.1 or later",
-                "lgpl-2.1-plus",
+                "scancode://lgpl-2.1-plus",
                 "LGPL 2.1 or later",
                 "GNU Lesser General Public License 2.1",
                 "LGPL-2.1+",
@@ -295,6 +297,7 @@ You should have received a copy of the GNU Lesser General Public License along w
                         }
                     ]
                 ],
+                "__isOsiApproved": true,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -350,7 +353,7 @@ You should have received a copy of the GNU Lesser General Public License along w
             "spdxId": "LGPL-2.1-or-later",
             "_implications": {
                 "__impliedNames": [
-                    "lgpl-2.1-plus",
+                    "scancode://lgpl-2.1-plus",
                     "LGPL 2.1 or later",
                     "LGPL-2.1-or-later"
                 ],
@@ -430,9 +433,9 @@ You should have received a copy of the GNU Lesser General Public License along w
                 "LGPL2.1+",
                 "LGPL (v2.1 or later)"
             ],
-            "oCompatibiliets": null,
             "oDescription": null,
             "oJudgement": null,
+            "oCompatibilities": null,
             "oRatingState": null
         },
         "finos-osr/OSLC-handbook": {
@@ -599,6 +602,7 @@ You should have received a copy of the GNU Lesser General Public License along w
         ]
     ],
     "__calculatedCopyleft": "WeakCopyleft",
+    "__isOsiApproved": true,
     "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
     "__impliedURLs": [
         [

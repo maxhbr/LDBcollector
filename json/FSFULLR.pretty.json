@@ -2,10 +2,11 @@
     "__impliedNames": [
         "FSFULLR",
         "FSF Unlimited License (with License Retention)",
-        "fsf-unlimited",
+        "scancode://fsf-unlimited",
         "FSF-Unlimited"
     ],
     "__impliedId": "FSFULLR",
+    "__isFsfFree": true,
     "facts": {
         "LicenseName": {
             "implications": {
@@ -13,7 +14,7 @@
                     "FSFULLR",
                     "FSFULLR",
                     "FSF Unlimited License (with License Retention)",
-                    "fsf-unlimited",
+                    "scancode://fsf-unlimited",
                     "FSF-Unlimited"
                 ],
                 "__impliedId": "FSFULLR"
@@ -22,7 +23,7 @@
             "otherNames": [
                 "FSFULLR",
                 "FSF Unlimited License (with License Retention)",
-                "fsf-unlimited",
+                "scancode://fsf-unlimited",
                 "FSF-Unlimited"
             ]
         },
@@ -41,6 +42,7 @@
                     "FSF Unlimited License (with License Retention)"
                 ],
                 "__impliedId": "FSFULLR",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -68,6 +70,7 @@
                 "__impliedNames": [
                     "FSF Unlimited License (with License Retention)"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
@@ -94,7 +97,7 @@
             "spdxId": "FSFULLR",
             "_implications": {
                 "__impliedNames": [
-                    "fsf-unlimited",
+                    "scancode://fsf-unlimited",
                     "FSF-Unlimited",
                     "FSFULLR"
                 ],
@@ -132,6 +135,7 @@
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "This file is free software; the Free Software Foundation gives\nunlimited permission to copy and/or distribute it, with or without\nmodifications, as long as this notice is preserved.\n",
     "__impliedURLs": [
         [

@@ -5,14 +5,14 @@ Spencer License 99 (Spencer-99)
 
 **Other Names:**
 
--   `henry-spencer-1999`
+-   `scancode://henry-spencer-1999`
 
 -   `Henry Spencer License 1999`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Silver (source: [BlueOak License
+-   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -61,7 +61,7 @@ Raw Data
         "__impliedNames": [
             "Spencer-99",
             "Spencer License 99",
-            "henry-spencer-1999",
+            "scancode://henry-spencer-1999",
             "Henry Spencer License 1999"
         ],
         "__impliedId": "Spencer-99",
@@ -72,7 +72,7 @@ Raw Data
                         "Spencer-99",
                         "Spencer-99",
                         "Spencer License 99",
-                        "henry-spencer-1999",
+                        "scancode://henry-spencer-1999",
                         "Henry Spencer License 1999"
                     ],
                     "__impliedId": "Spencer-99"
@@ -81,7 +81,7 @@ Raw Data
                 "otherNames": [
                     "Spencer-99",
                     "Spencer License 99",
-                    "henry-spencer-1999",
+                    "scancode://henry-spencer-1999",
                     "Henry Spencer License 1999"
                 ]
             },
@@ -100,6 +100,7 @@ Raw Data
                         "Spencer License 99"
                     ],
                     "__impliedId": "Spencer-99",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -128,7 +129,7 @@ Raw Data
                 "spdxId": "Spencer-99",
                 "_implications": {
                     "__impliedNames": [
-                        "henry-spencer-1999",
+                        "scancode://henry-spencer-1999",
                         "Henry Spencer License 1999",
                         "Spencer-99"
                     ],
@@ -205,6 +206,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "Development of this software was funded, in part, by Cray Research Inc.,\nUUNET Communications Services Inc., Sun Microsystems Inc., and Scriptics\nCorporation, none of whom are responsible for the results. The author\nthanks all of them.\n\nRedistribution and use in source and binary forms - with or without\nmodification - are permitted for any purpose, provided that redistributions\nin source form retain this entire copyright notice and indicate the origin\nand nature of any modifications.\n\nI'd appreciate being given credit for this package in the documentation of\nsoftware which uses it, but that is not a requirement.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL\nHENRY SPENCER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;\nOR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR\nOTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
         "__impliedURLs": [
             [

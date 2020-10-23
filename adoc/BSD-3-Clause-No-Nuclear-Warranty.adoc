@@ -1,18 +1,22 @@
 == BSD 3-Clause No Nuclear Warranty (BSD-3-Clause-No-Nuclear-Warranty)
 
 [cols=",",options="header",]
-|===========================================
+|===
 |Key |Value
 |Fullname |BSD 3-Clause No Nuclear Warranty
 |Shortname |BSD-3-Clause-No-Nuclear-Warranty
 |Rating |Go
 |Classification |NoCopyleft
-|===========================================
+|===
+
+*Other Names:*
+
+* `+scancode://bsd-3-clause-no-nuclear-warranty+`
 
 === Comments on (easy) usability
 
-* *↑* Rating is: Bronze (source: https://blueoakcouncil.org/list[BlueOak
-License List])
+* **↑**Rating is: Bronze (source:
+https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 
@@ -67,7 +71,7 @@ facility.
     "__impliedNames": [
         "BSD-3-Clause-No-Nuclear-Warranty",
         "BSD 3-Clause No Nuclear Warranty",
-        "bsd-3-clause-no-nuclear-warranty"
+        "scancode://bsd-3-clause-no-nuclear-warranty"
     ],
     "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
     "facts": {
@@ -77,7 +81,7 @@ facility.
                     "BSD-3-Clause-No-Nuclear-Warranty",
                     "BSD-3-Clause-No-Nuclear-Warranty",
                     "BSD 3-Clause No Nuclear Warranty",
-                    "bsd-3-clause-no-nuclear-warranty"
+                    "scancode://bsd-3-clause-no-nuclear-warranty"
                 ],
                 "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty"
             },
@@ -85,7 +89,7 @@ facility.
             "otherNames": [
                 "BSD-3-Clause-No-Nuclear-Warranty",
                 "BSD 3-Clause No Nuclear Warranty",
-                "bsd-3-clause-no-nuclear-warranty"
+                "scancode://bsd-3-clause-no-nuclear-warranty"
             ]
         },
         "SPDX": {
@@ -103,6 +107,7 @@ facility.
                     "BSD 3-Clause No Nuclear Warranty"
                 ],
                 "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
+                "__isOsiApproved": false,
                 "__impliedURLs": [
                     [
                         "SPDX",
@@ -133,7 +138,7 @@ facility.
             "spdxId": "BSD-3-Clause-No-Nuclear-Warranty",
             "_implications": {
                 "__impliedNames": [
-                    "bsd-3-clause-no-nuclear-warranty",
+                    "scancode://bsd-3-clause-no-nuclear-warranty",
                     "BSD 3-Clause No Nuclear Warranty",
                     "BSD-3-Clause-No-Nuclear-Warranty"
                 ],
@@ -203,6 +208,7 @@ facility.
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
+    "__isOsiApproved": false,
     "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\nRedistribution of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\nRedistribution in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\nNeither the name of Sun Microsystems, Inc. or the names of contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\", WITHOUT A WARRANTY OF ANY KIND. ALL\nEXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING\nANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR\nPURPOSE OR NON-INFRINGEMENT, ARE HEREBY EXCLUDED. SUN MICROSYSTEMS, INC.\n(\"SUN\") AND ITS LICENSORS SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED\nBY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THIS\nSOFTWARE OR ITS DERIVATIVES. IN NO EVENT WILL SUN OR ITS LICENSORS BE\nLIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT,\nSPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED\nAND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR\nINABILITY TO USE THIS SOFTWARE, EVEN IF SUN HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n\nYou acknowledge that this software is not designed or intended for use\nin the design, construction, operation or maintenance of any nuclear\nfacility.",
     "__impliedURLs": [
         [

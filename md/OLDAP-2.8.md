@@ -5,14 +5,14 @@ Open LDAP Public License v2.8 (OLDAP-2.8)
 
 **Other Names:**
 
--   `openldap-2.8`
+-   `scancode://openldap-2.8`
 
 -   `OpenLDAP Public License 2.8`
 
 Comments on (easy) usability
 ----------------------------
 
--   **↑** Rating is: Bronze (source: [BlueOak License
+-   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
@@ -84,7 +84,7 @@ Raw Data
         "__impliedNames": [
             "OLDAP-2.8",
             "Open LDAP Public License v2.8",
-            "openldap-2.8",
+            "scancode://openldap-2.8",
             "OpenLDAP Public License 2.8"
         ],
         "__impliedId": "OLDAP-2.8",
@@ -95,7 +95,7 @@ Raw Data
                         "OLDAP-2.8",
                         "OLDAP-2.8",
                         "Open LDAP Public License v2.8",
-                        "openldap-2.8",
+                        "scancode://openldap-2.8",
                         "OpenLDAP Public License 2.8"
                     ],
                     "__impliedId": "OLDAP-2.8"
@@ -104,7 +104,7 @@ Raw Data
                 "otherNames": [
                     "OLDAP-2.8",
                     "Open LDAP Public License v2.8",
-                    "openldap-2.8",
+                    "scancode://openldap-2.8",
                     "OpenLDAP Public License 2.8"
                 ]
             },
@@ -123,6 +123,7 @@ Raw Data
                         "Open LDAP Public License v2.8"
                     ],
                     "__impliedId": "OLDAP-2.8",
+                    "__isOsiApproved": false,
                     "__impliedURLs": [
                         [
                             "SPDX",
@@ -151,7 +152,7 @@ Raw Data
                 "spdxId": "OLDAP-2.8",
                 "_implications": {
                     "__impliedNames": [
-                        "openldap-2.8",
+                        "scancode://openldap-2.8",
                         "OpenLDAP Public License 2.8",
                         "OLDAP-2.8"
                     ],
@@ -228,6 +229,7 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
         "__impliedText": "The OpenLDAP Public License\n  Version 2.8, 17 August 2003\n\nRedistribution and use of this software and associated documentation\n(\"Software\"), with or without modification, are permitted provided\nthat the following conditions are met:\n\n1. Redistributions in source form must retain copyright statements\n   and notices,\n\n2. Redistributions in binary form must reproduce applicable copyright\n   statements and notices, this list of conditions, and the following\n   disclaimer in the documentation and/or other materials provided\n   with the distribution, and\n\n3. Redistributions must contain a verbatim copy of this document.\n\nThe OpenLDAP Foundation may revise this license from time to time.\nEach revision is distinguished by a version number.  You may use\nthis Software under terms of this license revision or under the\nterms of any subsequent revision of the license.\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND ITS\nCONTRIBUTORS ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT\nSHALL THE OPENLDAP FOUNDATION, ITS CONTRIBUTORS, OR THE AUTHOR(S)\nOR OWNER(S) OF THE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\nBUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN\nANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n\nThe names of the authors and copyright holders must not be used in\nadvertising or otherwise to promote the sale, use or other dealing\nin this Software without specific, written prior permission.  Title\nto copyright in this Software shall at all times remain with copyright\nholders.\n\nOpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\nCopyright 1999-2003 The OpenLDAP Foundation, Redwood City,\nCalifornia, USA.  All Rights Reserved.  Permission to copy and\ndistribute verbatim copies of this document is granted.",
         "__impliedURLs": [
             [
