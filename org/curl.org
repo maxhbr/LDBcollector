@@ -91,7 +91,8 @@
                       "curl",
                       "curl License",
                       "scancode://curl",
-                      "cURL License"
+                      "cURL License",
+                      "Curl License"
                   ],
                   "__impliedId": "curl"
               },
@@ -100,7 +101,8 @@
                   "curl",
                   "curl License",
                   "scancode://curl",
-                  "cURL License"
+                  "cURL License",
+                  "Curl License"
               ]
           },
           "SPDX": {

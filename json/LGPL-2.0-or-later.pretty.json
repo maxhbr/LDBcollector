@@ -5,9 +5,12 @@
         "scancode://lgpl-2.0-plus",
         "LGPL 2.0 or later",
         "GNU Library General Public License 2.0",
-        "LGPL-2.0-only"
+        "LGPL-2.0-only",
+        "GNU Library General Public License v2 only",
+        "scancode://lgpl-2.0",
+        "LGPL 2.0"
     ],
-    "__impliedId": "LGPL-2.0-or-later",
+    "__impliedId": "LGPL-2.0-only",
     "__impliedAmbiguousNames": [
         "The GNU Lesser General Public License (LGPL)"
     ],
@@ -20,7 +23,8 @@
                     "GNU Library General Public License v2 or later",
                     "scancode://lgpl-2.0-plus",
                     "LGPL 2.0 or later",
-                    "GNU Library General Public License 2.0"
+                    "GNU Library General Public License 2.0",
+                    "LGPL-2.0-only"
                 ],
                 "__impliedId": "LGPL-2.0-or-later"
             },
@@ -30,24 +34,25 @@
                 "GNU Library General Public License v2 or later",
                 "scancode://lgpl-2.0-plus",
                 "LGPL 2.0 or later",
-                "GNU Library General Public License 2.0"
+                "GNU Library General Public License 2.0",
+                "LGPL-2.0-only"
             ]
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
-            "spdxFullName": "GNU Library General Public License v2 or later",
-            "spdxDetailsURL": "http://spdx.org/licenses/LGPL-2.0-or-later.json",
-            "_sourceURL": "https://spdx.org/licenses/LGPL-2.0-or-later.html",
+            "spdxFullName": "GNU Library General Public License v2 only",
+            "spdxDetailsURL": "http://spdx.org/licenses/LGPL-2.0-only.json",
+            "_sourceURL": "https://spdx.org/licenses/LGPL-2.0-only.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
                 "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
             ],
             "_implications": {
                 "__impliedNames": [
-                    "LGPL-2.0-or-later",
-                    "GNU Library General Public License v2 or later"
+                    "LGPL-2.0-only",
+                    "GNU Library General Public License v2 only"
                 ],
-                "__impliedId": "LGPL-2.0-or-later",
+                "__impliedId": "LGPL-2.0-only",
                 "__impliedJudgement": [
                     [
                         "SPDX",
@@ -61,7 +66,7 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/LGPL-2.0-or-later.json"
+                        "http://spdx.org/licenses/LGPL-2.0-only.json"
                     ],
                     [
                         null,
@@ -69,7 +74,7 @@
                     ]
                 ]
             },
-            "spdxLicenseId": "LGPL-2.0-or-later"
+            "spdxLicenseId": "LGPL-2.0-only"
         },
         "Scancode": {
             "otherUrls": [
@@ -119,7 +124,7 @@
             "_sourceURL": "https://wiki.debian.org/DFSGLicenses",
             "_implications": {
                 "__impliedNames": [
-                    "LGPL-2.0-or-later"
+                    "LGPL-2.0-only"
                 ],
                 "__impliedAmbiguousNames": [
                     "The GNU Lesser General Public License (LGPL)"
@@ -135,7 +140,7 @@
                 ]
             },
             "Comment": "Earlier called the \"Library General Public License\"; this name is deprecated because it confuses the license's intent.",
-            "LicenseId": "LGPL-2.0-or-later"
+            "LicenseId": "LGPL-2.0-only"
         },
         "finos-osr/OSLC-handbook": {
             "terms": [
@@ -250,10 +255,10 @@
         "Google OSS Policy": {
             "rating": "RESTRICTED",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
-            "id": "LGPL-2.0-or-later",
+            "id": "LGPL-2.0-only",
             "_implications": {
                 "__impliedNames": [
-                    "LGPL-2.0-or-later"
+                    "LGPL-2.0-only"
                 ],
                 "__impliedJudgement": [
                     [
@@ -302,15 +307,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/LGPL-2.0-or-later.json"
+            "http://spdx.org/licenses/LGPL-2.0-only.json"
         ],
         [
             null,
             "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
         ],
         [
+            "SPDX",
+            "http://spdx.org/licenses/LGPL-2.0-or-later.json"
+        ],
+        [
             "Homepage",
             "http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html"
+        ],
+        [
+            null,
+            "http://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
+        ],
+        [
+            null,
+            "http://www.gnu.org/licenses/old-licenses/library.html"
         ]
     ]
 }

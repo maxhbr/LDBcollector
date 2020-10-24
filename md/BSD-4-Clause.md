@@ -146,7 +146,8 @@ Raw Data
                         "BSD 4-Clause \"Original\" or \"Old\" License",
                         "scancode://bsd-original",
                         "BSD-Original",
-                        "BSD License (original)"
+                        "BSD License (original)",
+                        "BSD 4-clause \"Original\" or \"Old\" License"
                     ],
                     "__impliedId": "BSD-4-Clause"
                 },
@@ -156,7 +157,8 @@ Raw Data
                     "BSD 4-Clause \"Original\" or \"Old\" License",
                     "scancode://bsd-original",
                     "BSD-Original",
-                    "BSD License (original)"
+                    "BSD License (original)",
+                    "BSD 4-clause \"Original\" or \"Old\" License"
                 ]
             },
             "SPDX": {

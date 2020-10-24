@@ -129,7 +129,8 @@ Raw Data
                         "OpenSSL License",
                         "scancode://openssl-ssleay",
                         "OpenSSL/SSLeay License",
-                        "OpenSSL license"
+                        "OpenSSL license",
+                        "scancode://openssl"
                     ],
                     "__impliedId": "OpenSSL"
                 },
@@ -139,7 +140,8 @@ Raw Data
                     "OpenSSL License",
                     "scancode://openssl-ssleay",
                     "OpenSSL/SSLeay License",
-                    "OpenSSL license"
+                    "OpenSSL license",
+                    "scancode://openssl"
                 ]
             },
             "SPDX": {

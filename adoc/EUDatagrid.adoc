@@ -108,7 +108,8 @@ THE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PE
                     "EUDatagrid",
                     "EUDatagrid",
                     "EU DataGrid Software License",
-                    "scancode://eu-datagrid"
+                    "scancode://eu-datagrid",
+                    "EU Datagrid Software License"
                 ],
                 "__impliedId": "EUDatagrid"
             },
@@ -116,7 +117,8 @@ THE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PE
             "otherNames": [
                 "EUDatagrid",
                 "EU DataGrid Software License",
-                "scancode://eu-datagrid"
+                "scancode://eu-datagrid",
+                "EU Datagrid Software License"
             ]
         },
         "SPDX": {

@@ -75,7 +75,8 @@ francis dot borceux at uclouvain dot be.
                     "Borceux",
                     "Borceux license",
                     "scancode://borceux",
-                    "Borceux License"
+                    "Borceux License",
+                    "Bourceux"
                 ],
                 "__impliedId": "Borceux"
             },
@@ -84,7 +85,8 @@ francis dot borceux at uclouvain dot be.
                 "Borceux",
                 "Borceux license",
                 "scancode://borceux",
-                "Borceux License"
+                "Borceux License",
+                "Bourceux"
             ]
         },
         "SPDX": {

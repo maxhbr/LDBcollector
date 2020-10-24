@@ -213,7 +213,8 @@ Raw Data
                         "New BSD License",
                         "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
                         "BSD (3 clause)",
-                        "BSD License (no advertising)"
+                        "BSD License (no advertising)",
+                        "BSD 3-clause \"New\" or \"Revised\" License"
                     ],
                     "__impliedId": "BSD-3-Clause"
                 },
@@ -232,7 +233,8 @@ Raw Data
                     "New BSD License",
                     "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
                     "BSD (3 clause)",
-                    "BSD License (no advertising)"
+                    "BSD License (no advertising)",
+                    "BSD 3-clause \"New\" or \"Revised\" License"
                 ]
             },
             "SPDX": {

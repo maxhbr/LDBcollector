@@ -184,7 +184,9 @@ Raw Data
                         "The zlib/libpng License (Zlib)",
                         "License :: OSI Approved :: zlib/libpng License",
                         "zlib/libpng license",
-                        "zlib/libpng"
+                        "zlib/libpng",
+                        "zlib/libpng License",
+                        "Zlib license"
                     ],
                     "__impliedId": "Zlib"
                 },
@@ -198,7 +200,9 @@ Raw Data
                     "The zlib/libpng License (Zlib)",
                     "License :: OSI Approved :: zlib/libpng License",
                     "zlib/libpng license",
-                    "zlib/libpng"
+                    "zlib/libpng",
+                    "zlib/libpng License",
+                    "Zlib license"
                 ]
             },
             "SPDX": {

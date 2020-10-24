@@ -66,7 +66,8 @@ Raw Data
                         "HPND-sell-variant",
                         "Historical Permission Notice and Disclaimer - sell variant",
                         "scancode://x11-keith-packard",
-                        "X11-Style (Keith Packard)"
+                        "X11-Style (Keith Packard)",
+                        "scancode://historical-sell-variant"
                     ],
                     "__impliedId": "HPND-sell-variant"
                 },
@@ -75,7 +76,8 @@ Raw Data
                     "HPND-sell-variant",
                     "Historical Permission Notice and Disclaimer - sell variant",
                     "scancode://x11-keith-packard",
-                    "X11-Style (Keith Packard)"
+                    "X11-Style (Keith Packard)",
+                    "scancode://historical-sell-variant"
                 ]
             },
             "SPDX": {

@@ -74,7 +74,8 @@ Raw Data
                         "Borceux",
                         "Borceux license",
                         "scancode://borceux",
-                        "Borceux License"
+                        "Borceux License",
+                        "Bourceux"
                     ],
                     "__impliedId": "Borceux"
                 },
@@ -83,7 +84,8 @@ Raw Data
                     "Borceux",
                     "Borceux license",
                     "scancode://borceux",
-                    "Borceux License"
+                    "Borceux License",
+                    "Bourceux"
                 ]
             },
             "SPDX": {

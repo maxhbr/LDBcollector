@@ -88,7 +88,8 @@ Raw Data
                         "curl",
                         "curl License",
                         "scancode://curl",
-                        "cURL License"
+                        "cURL License",
+                        "Curl License"
                     ],
                     "__impliedId": "curl"
                 },
@@ -97,7 +98,8 @@ Raw Data
                     "curl",
                     "curl License",
                     "scancode://curl",
-                    "cURL License"
+                    "cURL License",
+                    "Curl License"
                 ]
             },
             "SPDX": {

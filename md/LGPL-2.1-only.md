@@ -5,17 +5,27 @@ GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 **Other Names:**
 
--   `scancode://lgpl-2.1`
+-   `LGPL-2.1-or-later`
 
--   `LGPL 2.1`
+-   `GNU Lesser General Public License v2.1 or later`
+
+-   `scancode://lgpl-2.1-plus`
+
+-   `LGPL 2.1 or later`
 
 -   `GNU Lesser General Public License 2.1`
 
+-   `LGPL-2.1+`
+
+-   `LGPL2.1+`
+
+-   `LGPL (v2.1 or later)`
+
 -   `LGPL-2.1`
 
--   `LGPL2.1`
+-   `scancode://lgpl-2.1`
 
--   `LGPL (v2.1)`
+-   `LGPL 2.1`
 
 -   `lgpl-2.1`
 
@@ -25,7 +35,9 @@ GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 -   `License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)`
 
--   `LGPL-2.1-or-later`
+-   `LGPL2.1`
+
+-   `LGPL (v2.1)`
 
 Description
 -----------
@@ -64,16 +76,19 @@ URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/lgpl-2.1.html
 
+-   **Homepage:**
+    http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html
+
 -   **OSI Page:** http://opensource.org/licenses/lgpl-2.1.php
 
 -   **OSI Page:** https://opensource.org/licenses/LGPL-2.1
 
 -   **SPDX:** http://spdx.org/licenses/LGPL-2.1-only.json
 
+-   **SPDX:** http://spdx.org/licenses/LGPL-2.1-or-later.json
+
 -   **Wikipedia page:**
     https://en.wikipedia.org/wiki/GNU\_Lesser\_General\_Public\_License
-
--   https://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html
 
 -   http://creativecommons.org/choose/cc-lgpl
 
@@ -761,19 +776,25 @@ Raw Data
 
     {
         "__impliedNames": [
+            "LGPL-2.1-or-later",
+            "GNU Lesser General Public License v2.1 or later",
+            "scancode://lgpl-2.1-plus",
+            "LGPL 2.1 or later",
+            "GNU Lesser General Public License 2.1",
+            "LGPL-2.1+",
+            "LGPL2.1+",
+            "LGPL (v2.1 or later)",
             "LGPL-2.1-only",
+            "LGPL-2.1",
             "GNU Lesser General Public License v2.1 only",
             "scancode://lgpl-2.1",
             "LGPL 2.1",
-            "GNU Lesser General Public License 2.1",
-            "LGPL-2.1",
-            "LGPL2.1",
-            "LGPL (v2.1)",
             "lgpl-2.1",
             "GNU LGPLv2.1",
             "GNU Lesser General Public License, Version 2.1",
             "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
-            "LGPL-2.1-or-later"
+            "LGPL2.1",
+            "LGPL (v2.1)"
         ],
         "__impliedId": "LGPL-2.1-only",
         "__impliedAmbiguousNames": [
@@ -811,28 +832,32 @@ Raw Data
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
-                        "LGPL-2.1-only",
-                        "LGPL-2.1-only",
-                        "GNU Lesser General Public License v2.1 only",
-                        "scancode://lgpl-2.1",
-                        "LGPL 2.1",
+                        "LGPL-2.1-or-later",
+                        "LGPL-2.1-or-later",
+                        "GNU Lesser General Public License v2.1 or later",
+                        "scancode://lgpl-2.1-plus",
+                        "LGPL 2.1 or later",
                         "GNU Lesser General Public License 2.1",
-                        "LGPL-2.1",
-                        "LGPL2.1",
-                        "LGPL (v2.1)"
+                        "LGPL-2.1+",
+                        "LGPL2.1+",
+                        "LGPL (v2.1 or later)",
+                        "LGPL-2.1-only",
+                        "LGPL-2.1"
                     ],
-                    "__impliedId": "LGPL-2.1-only"
+                    "__impliedId": "LGPL-2.1-or-later"
                 },
-                "shortname": "LGPL-2.1-only",
+                "shortname": "LGPL-2.1-or-later",
                 "otherNames": [
-                    "LGPL-2.1-only",
-                    "GNU Lesser General Public License v2.1 only",
-                    "scancode://lgpl-2.1",
-                    "LGPL 2.1",
+                    "LGPL-2.1-or-later",
+                    "GNU Lesser General Public License v2.1 or later",
+                    "scancode://lgpl-2.1-plus",
+                    "LGPL 2.1 or later",
                     "GNU Lesser General Public License 2.1",
-                    "LGPL-2.1",
-                    "LGPL2.1",
-                    "LGPL (v2.1)"
+                    "LGPL-2.1+",
+                    "LGPL2.1+",
+                    "LGPL (v2.1 or later)",
+                    "LGPL-2.1-only",
+                    "LGPL-2.1"
                 ]
             },
             "SPDX": {
@@ -1428,6 +1453,10 @@ Raw Data
                 "https://opensource.org/licenses/LGPL-2.1"
             ],
             [
+                "SPDX",
+                "http://spdx.org/licenses/LGPL-2.1-or-later.json"
+            ],
+            [
                 "Homepage",
                 "http://www.gnu.org/licenses/lgpl-2.1.html"
             ],
@@ -1466,6 +1495,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/LGPL-2.1"
+            ],
+            [
+                "Homepage",
+                "http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html"
             ],
             [
                 "Wikipedia page",

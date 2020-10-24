@@ -110,7 +110,8 @@ Raw Data
                         "EUDatagrid",
                         "EUDatagrid",
                         "EU DataGrid Software License",
-                        "scancode://eu-datagrid"
+                        "scancode://eu-datagrid",
+                        "EU Datagrid Software License"
                     ],
                     "__impliedId": "EUDatagrid"
                 },
@@ -118,7 +119,8 @@ Raw Data
                 "otherNames": [
                     "EUDatagrid",
                     "EU DataGrid Software License",
-                    "scancode://eu-datagrid"
+                    "scancode://eu-datagrid",
+                    "EU Datagrid Software License"
                 ]
             },
             "SPDX": {

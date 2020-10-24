@@ -83,7 +83,8 @@ Raw Data
                         "MIT-CMU",
                         "CMU License",
                         "scancode://cmu-uc",
-                        "CMU UC Regents License"
+                        "CMU UC Regents License",
+                        "scancode://cmu-template"
                     ],
                     "__impliedId": "MIT-CMU"
                 },
@@ -92,7 +93,8 @@ Raw Data
                     "MIT-CMU",
                     "CMU License",
                     "scancode://cmu-uc",
-                    "CMU UC Regents License"
+                    "CMU UC Regents License",
+                    "scancode://cmu-template"
                 ]
             },
             "SPDX": {

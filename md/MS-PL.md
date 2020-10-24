@@ -214,7 +214,8 @@ Raw Data
                         "scancode://ms-pl",
                         "ms-pl",
                         "Microsoft Public License (MS-PL)",
-                        "Ms-PL"
+                        "Ms-PL",
+                        "Microsoft Public License (Ms-PL)"
                     ],
                     "__impliedId": "MS-PL"
                 },
@@ -225,7 +226,8 @@ Raw Data
                     "scancode://ms-pl",
                     "ms-pl",
                     "Microsoft Public License (MS-PL)",
-                    "Ms-PL"
+                    "Ms-PL",
+                    "Microsoft Public License (Ms-PL)"
                 ]
             },
             "SPDX": {

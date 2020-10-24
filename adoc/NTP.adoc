@@ -119,7 +119,8 @@ purpose. It is provided "as is" without express or implied warranty.
                     "NTP License",
                     "scancode://mit-old-style-no-advert",
                     "MIT Old Style no advertising",
-                    "NTP License (NTP)"
+                    "NTP License (NTP)",
+                    "scancode://ntpl"
                 ],
                 "__impliedId": "NTP"
             },
@@ -129,7 +130,8 @@ purpose. It is provided "as is" without express or implied warranty.
                 "NTP License",
                 "scancode://mit-old-style-no-advert",
                 "MIT Old Style no advertising",
-                "NTP License (NTP)"
+                "NTP License (NTP)",
+                "scancode://ntpl"
             ]
         },
         "SPDX": {

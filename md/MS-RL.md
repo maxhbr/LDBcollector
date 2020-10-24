@@ -177,7 +177,8 @@ Raw Data
                         "Microsoft Reciprocal License",
                         "scancode://ms-rl",
                         "ms-rl",
-                        "Microsoft Reciprocal License (MS-RL)"
+                        "Microsoft Reciprocal License (MS-RL)",
+                        "Microsoft Reciprocal License (Ms-RL)"
                     ],
                     "__impliedId": "MS-RL"
                 },
@@ -187,7 +188,8 @@ Raw Data
                     "Microsoft Reciprocal License",
                     "scancode://ms-rl",
                     "ms-rl",
-                    "Microsoft Reciprocal License (MS-RL)"
+                    "Microsoft Reciprocal License (MS-RL)",
+                    "Microsoft Reciprocal License (Ms-RL)"
                 ]
             },
             "SPDX": {

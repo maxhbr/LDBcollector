@@ -127,7 +127,8 @@ Raw Data
                         "NTP License",
                         "scancode://mit-old-style-no-advert",
                         "MIT Old Style no advertising",
-                        "NTP License (NTP)"
+                        "NTP License (NTP)",
+                        "scancode://ntpl"
                     ],
                     "__impliedId": "NTP"
                 },
@@ -137,7 +138,8 @@ Raw Data
                     "NTP License",
                     "scancode://mit-old-style-no-advert",
                     "MIT Old Style no advertising",
-                    "NTP License (NTP)"
+                    "NTP License (NTP)",
+                    "scancode://ntpl"
                 ]
             },
             "SPDX": {

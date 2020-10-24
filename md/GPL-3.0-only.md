@@ -5,19 +5,29 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 **Other Names:**
 
--   `scancode://gpl-3.0`
+-   `GPL-3.0-or-later`
 
--   `GPL 3.0`
+-   `GNU General Public License v3.0 or later`
+
+-   `scancode://gpl-3.0-plus`
+
+-   `GPL 3.0 or later`
 
 -   `GNU General Public License 3.0`
 
+-   `GPL-3.0+`
+
+-   `GPL3.0+`
+
+-   `GPL3+`
+
+-   `GPL (v3 or later)`
+
 -   `GPL-3.0`
 
--   `GPL3.0`
+-   `scancode://gpl-3.0`
 
--   `GPL3`
-
--   `GPL (v3)`
+-   `GPL 3.0`
 
 -   `gpl-3.0`
 
@@ -29,7 +39,11 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 -   `License :: OSI Approved :: GNU General Public License v3 (GPLv3)`
 
--   `GPL-3.0-or-later`
+-   `GPL3.0`
+
+-   `GPL3`
+
+-   `GPL (v3)`
 
 Description
 -----------
@@ -51,9 +65,8 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX"))
 
--   **↑**This is the most popular free software license. Most of Linux
-    (the kernel) is distributed under the GPL, as is most of the other
-    basic software in the GNU operating system. (source: [Debian Free
+-   **↑**This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
@@ -77,19 +90,21 @@ URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/gpl-3.0.html
 
+-   **Homepage:** http://www.gnu.org/licenses/gpl-3.0-standalone.html
+
 -   **OSI Page:** http://opensource.org/licenses/gpl-3.0.html
 
 -   **OSI Page:** https://opensource.org/licenses/GPL-3.0
 
 -   **SPDX:** http://spdx.org/licenses/GPL-3.0-only.json
 
+-   **SPDX:** http://spdx.org/licenses/GPL-3.0-or-later.json
+
 -   **Wikipedia page:**
     https://en.wikipedia.org/wiki/GNU\_General\_Public\_License
 
 -   **tl;dr legal:**
     https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29
-
--   https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
 -   http://www.gnu.org/licenses/quick-guide-gplv3.html
 
@@ -926,25 +941,33 @@ Raw Data
 
     {
         "__impliedNames": [
+            "GPL-3.0-or-later",
+            "GNU General Public License v3.0 or later",
+            "scancode://gpl-3.0-plus",
+            "GPL 3.0 or later",
+            "GNU General Public License 3.0",
+            "GPL-3.0+",
+            "GPL3.0+",
+            "GPL3+",
+            "GPL (v3 or later)",
             "GPL-3.0-only",
+            "GPL-3.0",
             "GNU General Public License v3.0 only",
             "scancode://gpl-3.0",
             "GPL 3.0",
-            "GNU General Public License 3.0",
-            "GPL-3.0",
-            "GPL3.0",
-            "GPL3",
-            "GPL (v3)",
             "gpl-3.0",
             "GNU GPLv3",
             "GNU General Public License, Version 3.0",
             "License :: OSI Approved :: GNU General Public License (GPL)",
             "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-            "GPL-3.0-or-later"
+            "GPL3.0",
+            "GPL3",
+            "GPL (v3)"
         ],
         "__impliedId": "GPL-3.0-only",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
+            "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
             "The GNU General Public License (GPL)"
         ],
         "__hasPatentHint": true,
@@ -979,30 +1002,34 @@ Raw Data
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
-                        "GPL-3.0-only",
-                        "GPL-3.0-only",
-                        "GNU General Public License v3.0 only",
-                        "scancode://gpl-3.0",
-                        "GPL 3.0",
+                        "GPL-3.0-or-later",
+                        "GPL-3.0-or-later",
+                        "GNU General Public License v3.0 or later",
+                        "scancode://gpl-3.0-plus",
+                        "GPL 3.0 or later",
                         "GNU General Public License 3.0",
-                        "GPL-3.0",
-                        "GPL3.0",
-                        "GPL3",
-                        "GPL (v3)"
+                        "GPL-3.0+",
+                        "GPL3.0+",
+                        "GPL3+",
+                        "GPL (v3 or later)",
+                        "GPL-3.0-only",
+                        "GPL-3.0"
                     ],
-                    "__impliedId": "GPL-3.0-only"
+                    "__impliedId": "GPL-3.0-or-later"
                 },
-                "shortname": "GPL-3.0-only",
+                "shortname": "GPL-3.0-or-later",
                 "otherNames": [
-                    "GPL-3.0-only",
-                    "GNU General Public License v3.0 only",
-                    "scancode://gpl-3.0",
-                    "GPL 3.0",
+                    "GPL-3.0-or-later",
+                    "GNU General Public License v3.0 or later",
+                    "scancode://gpl-3.0-plus",
+                    "GPL 3.0 or later",
                     "GNU General Public License 3.0",
-                    "GPL-3.0",
-                    "GPL3.0",
-                    "GPL3",
-                    "GPL (v3)"
+                    "GPL-3.0+",
+                    "GPL3.0+",
+                    "GPL3+",
+                    "GPL (v3 or later)",
+                    "GPL-3.0-only",
+                    "GPL-3.0"
                 ]
             },
             "SPDX": {
@@ -1071,14 +1098,14 @@ Raw Data
                 "rating": "Good",
                 "Upstream URL": "http://www.fsf.org/licensing/licenses/gpl.html",
                 "GPLv3 Compat?": "N/A",
-                "Short Name": "GPLv3",
+                "Short Name": "GPLv3+",
                 "licenseType": "license",
                 "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "GNU General Public License v3.0 only",
+                "Full Name": "GNU General Public License v3.0 or later",
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "GNU General Public License v3.0 only"
+                        "GNU General Public License v3.0 or later"
                     ],
                     "__isFsfFree": true,
                     "__impliedJudgement": [
@@ -1169,28 +1196,28 @@ Raw Data
                 }
             },
             "Debian Free Software Guidelines": {
-                "LicenseName": "The GNU General Public License (GPL)",
+                "LicenseName": "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
                 "State": "DFSGCompatible",
                 "_sourceURL": "https://wiki.debian.org/DFSGLicenses",
                 "_implications": {
                     "__impliedNames": [
-                        "GPL-3.0-only"
+                        "GPL-3.0-or-later"
                     ],
                     "__impliedAmbiguousNames": [
-                        "The GNU General Public License (GPL)"
+                        "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)"
                     ],
                     "__impliedJudgement": [
                         [
                             "Debian Free Software Guidelines",
                             {
                                 "tag": "PositiveJudgement",
-                                "contents": "This is the most popular free software license. Most of Linux (the kernel) is distributed under the GPL, as is most of the other basic software in the GNU operating system."
+                                "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
                             }
                         ]
                     ]
                 },
-                "Comment": "This is the most popular free software license. Most of Linux (the kernel) is distributed under the GPL, as is most of the other basic software in the GNU operating system.",
-                "LicenseId": "GPL-3.0-only"
+                "Comment": null,
+                "LicenseId": "GPL-3.0-or-later"
             },
             "Override": {
                 "oNonCommecrial": null,
@@ -1618,7 +1645,7 @@ Raw Data
                 "Debian Free Software Guidelines",
                 {
                     "tag": "PositiveJudgement",
-                    "contents": "This is the most popular free software license. Most of Linux (the kernel) is distributed under the GPL, as is most of the other basic software in the GNU operating system."
+                    "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
                 }
             ],
             [
@@ -1729,6 +1756,10 @@ Raw Data
                 "https://opensource.org/licenses/GPL-3.0"
             ],
             [
+                "SPDX",
+                "http://spdx.org/licenses/GPL-3.0-or-later.json"
+            ],
+            [
                 "Homepage",
                 "http://www.gnu.org/licenses/gpl-3.0.html"
             ],
@@ -1743,6 +1774,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/GPL-3.0"
+            ],
+            [
+                "Homepage",
+                "http://www.gnu.org/licenses/gpl-3.0-standalone.html"
             ],
             [
                 "tl;dr legal",

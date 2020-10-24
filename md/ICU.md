@@ -5,11 +5,15 @@ ICU License (ICU)
 
 **Other Names:**
 
--   `scancode://x11`
+-   `X11`
 
 -   `X11 License`
 
--   `X11`
+-   `scancode://x11-xconsortium`
+
+-   `X11-Style (X Consortium)`
+
+-   `scancode://x11`
 
 Comments on (easy) usability
 ----------------------------
@@ -29,6 +33,8 @@ Comments on (easy) usability
 URLs
 ----
 
+-   **Homepage:** http://www.xfree86.org/current/LICENSE5.html
+
 -   **Homepage:** http://www.xfree86.org/3.3.6/COPYRIGHT2.html
 
 -   **SPDX:** http://spdx.org/licenses/ICU.json
@@ -42,10 +48,6 @@ URLs
 -   http://source.icu-project.org/repos/icu/icu/trunk/license.html
 
 -   http://www.xfree86.org/3.3.6/COPYRIGHT2.html\#3
-
--   http://www.xfree86.org/current/LICENSE5.html
-
--   https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
 
 OSADL Rule
 ----------
@@ -62,27 +64,28 @@ OSADL Rule
 Text
 ----
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy of this
-    software and associated documentation files (the "Software"), to deal in the Software
-    without restriction, including without limitation the rights to use, copy, modify,
-    merge, publish, distribute, and/or sell copies of the Software, and to permit persons
-    to whom the Software is furnished to do so, provided that the above copyright
-    notice(s) and this permission notice appear in all copies of the Software and that
-    both the above copyright notice(s) and this permission notice appear in supporting
-    documentation.
+    Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the "Software"), to deal in
+    the Software without restriction, including without limitation the rights to
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+    the Software, and to permit persons to whom the Software is furnished to do so,
+    subject to the following conditions:
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
-    PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE
-    COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY
-    SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM
-    LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
-    TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
-    SOFTWARE.
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
 
-    Except as contained in this notice, the name of a copyright holder shall not be used
-    in advertising or otherwise to promote the sale, use or other dealings in this
-    Software without prior written authorization of the copyright holder.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM
+    BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+    CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+    Except as contained in this notice, the name of the X Consortium shall not be
+    used in advertising or otherwise to promote the sale, use or other dealings in
+    this Software without prior written authorization from the X Consortium.
+
+    X Window System is a trademark of X Consortium, Inc.
 
 ------------------------------------------------------------------------
 
@@ -91,31 +94,37 @@ Raw Data
 
     {
         "__impliedNames": [
-            "ICU",
-            "ICU License",
-            "scancode://x11",
+            "X11",
             "X11 License",
-            "X11"
+            "scancode://x11-xconsortium",
+            "X11-Style (X Consortium)",
+            "scancode://x11",
+            "ICU",
+            "ICU License"
         ],
         "__impliedId": "ICU",
         "facts": {
             "LicenseName": {
                 "implications": {
                     "__impliedNames": [
-                        "ICU",
-                        "ICU",
-                        "ICU License",
+                        "X11",
+                        "X11",
+                        "X11 License",
+                        "scancode://x11-xconsortium",
+                        "X11-Style (X Consortium)",
                         "scancode://x11",
-                        "X11 License"
+                        "ICU"
                     ],
-                    "__impliedId": "ICU"
+                    "__impliedId": "X11"
                 },
-                "shortname": "ICU",
+                "shortname": "X11",
                 "otherNames": [
-                    "ICU",
-                    "ICU License",
+                    "X11",
+                    "X11 License",
+                    "scancode://x11-xconsortium",
+                    "X11-Style (X Consortium)",
                     "scancode://x11",
-                    "X11 License"
+                    "ICU"
                 ]
             },
             "SPDX": {
@@ -159,28 +168,26 @@ Raw Data
             },
             "Scancode": {
                 "otherUrls": [
-                    "http://source.icu-project.org/repos/icu/icu/trunk/license.html",
-                    "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3",
-                    "http://www.xfree86.org/current/LICENSE5.html"
+                    "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
                 ],
-                "homepageUrl": "http://www.xfree86.org/3.3.6/COPYRIGHT2.html",
-                "shortName": "X11 License",
+                "homepageUrl": "http://www.xfree86.org/current/LICENSE5.html",
+                "shortName": "X11-Style (X Consortium)",
                 "textUrls": null,
-                "text": "Permission is hereby granted, free of charge, to any person obtaining a copy of this\nsoftware and associated documentation files (the \"Software\"), to deal in the Software\nwithout restriction, including without limitation the rights to use, copy, modify,\nmerge, publish, distribute, and/or sell copies of the Software, and to permit persons\nto whom the Software is furnished to do so, provided that the above copyright\nnotice(s) and this permission notice appear in all copies of the Software and that\nboth the above copyright notice(s) and this permission notice appear in supporting\ndocumentation.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY\nSPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM\nLOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS\nSOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used\nin advertising or otherwise to promote the sale, use or other dealings in this\nSoftware without prior written authorization of the copyright holder.",
+                "text": "Permission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM\nBE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF\nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of the X Consortium shall not be\nused in advertising or otherwise to promote the sale, use or other dealings in\nthis Software without prior written authorization from the X Consortium.\n\nX Window System is a trademark of X Consortium, Inc.",
                 "category": "Permissive",
                 "osiUrl": null,
-                "owner": "XFree86 Project, Inc",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11.yml",
-                "key": "x11",
-                "name": "X11 License",
-                "spdxId": "ICU",
+                "owner": "X Consortium",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.yml",
+                "key": "x11-xconsortium",
+                "name": "X11-Style (X Consortium)",
+                "spdxId": "X11",
                 "_implications": {
                     "__impliedNames": [
-                        "scancode://x11",
-                        "X11 License",
-                        "ICU"
+                        "scancode://x11-xconsortium",
+                        "X11-Style (X Consortium)",
+                        "X11"
                     ],
-                    "__impliedId": "ICU",
+                    "__impliedId": "X11",
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -188,23 +195,15 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of this\nsoftware and associated documentation files (the \"Software\"), to deal in the Software\nwithout restriction, including without limitation the rights to use, copy, modify,\nmerge, publish, distribute, and/or sell copies of the Software, and to permit persons\nto whom the Software is furnished to do so, provided that the above copyright\nnotice(s) and this permission notice appear in all copies of the Software and that\nboth the above copyright notice(s) and this permission notice appear in supporting\ndocumentation.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY\nSPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM\nLOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS\nSOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used\nin advertising or otherwise to promote the sale, use or other dealings in this\nSoftware without prior written authorization of the copyright holder.",
+                    "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM\nBE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF\nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of the X Consortium shall not be\nused in advertising or otherwise to promote the sale, use or other dealings in\nthis Software without prior written authorization from the X Consortium.\n\nX Window System is a trademark of X Consortium, Inc.",
                     "__impliedURLs": [
                         [
                             "Homepage",
-                            "http://www.xfree86.org/3.3.6/COPYRIGHT2.html"
-                        ],
-                        [
-                            null,
-                            "http://source.icu-project.org/repos/icu/icu/trunk/license.html"
+                            "http://www.xfree86.org/current/LICENSE5.html"
                         ],
                         [
                             null,
                             "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
-                        ],
-                        [
-                            null,
-                            "http://www.xfree86.org/current/LICENSE5.html"
                         ]
                     ]
                 }
@@ -246,13 +245,13 @@ Raw Data
             },
             "ifrOSS": {
                 "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html",
+                "ifrURL": "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3",
                 "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "ICU License",
+                "ifrName": "X11 License",
                 "ifrId": null,
                 "_implications": {
                     "__impliedNames": [
-                        "ICU License"
+                        "X11 License"
                     ],
                     "__impliedJudgement": [
                         [
@@ -273,7 +272,7 @@ Raw Data
                     "__impliedURLs": [
                         [
                             null,
-                            "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html"
+                            "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
                         ]
                     ]
                 }
@@ -311,7 +310,7 @@ Raw Data
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of this\nsoftware and associated documentation files (the \"Software\"), to deal in the Software\nwithout restriction, including without limitation the rights to use, copy, modify,\nmerge, publish, distribute, and/or sell copies of the Software, and to permit persons\nto whom the Software is furnished to do so, provided that the above copyright\nnotice(s) and this permission notice appear in all copies of the Software and that\nboth the above copyright notice(s) and this permission notice appear in supporting\ndocumentation.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY\nSPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM\nLOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS\nSOFTWARE.\n\nExcept as contained in this notice, the name of a copyright holder shall not be used\nin advertising or otherwise to promote the sale, use or other dealings in this\nSoftware without prior written authorization of the copyright holder.",
+        "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM\nBE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF\nCONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of the X Consortium shall not be\nused in advertising or otherwise to promote the sale, use or other dealings in\nthis Software without prior written authorization from the X Consortium.\n\nX Window System is a trademark of X Consortium, Inc.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -339,15 +338,15 @@ Raw Data
             ],
             [
                 "Homepage",
+                "http://www.xfree86.org/current/LICENSE5.html"
+            ],
+            [
+                "Homepage",
                 "http://www.xfree86.org/3.3.6/COPYRIGHT2.html"
             ],
             [
                 null,
                 "http://www.xfree86.org/current/LICENSE5.html"
-            ],
-            [
-                null,
-                "https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html"
             ]
         ]
     }

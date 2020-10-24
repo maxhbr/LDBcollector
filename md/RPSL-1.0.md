@@ -615,7 +615,8 @@ Raw Data
                         "RealNetworks Public Source License v1.0",
                         "scancode://rpsl-1.0",
                         "RealNetworks Public Source License 1.0",
-                        "RealNetworks Public Source License, Version 1.0"
+                        "RealNetworks Public Source License, Version 1.0",
+                        "RealNetworks Public Source License V1.0"
                     ],
                     "__impliedId": "RPSL-1.0"
                 },
@@ -625,7 +626,8 @@ Raw Data
                     "RealNetworks Public Source License v1.0",
                     "scancode://rpsl-1.0",
                     "RealNetworks Public Source License 1.0",
-                    "RealNetworks Public Source License, Version 1.0"
+                    "RealNetworks Public Source License, Version 1.0",
+                    "RealNetworks Public Source License V1.0"
                 ]
             },
             "SPDX": {

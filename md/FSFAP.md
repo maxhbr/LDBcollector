@@ -55,7 +55,8 @@ Raw Data
                         "FSFAP",
                         "FSFAP",
                         "FSF All Permissive License",
-                        "scancode://fsf-ap"
+                        "scancode://fsf-ap",
+                        "FSF All Permissive license"
                     ],
                     "__impliedId": "FSFAP"
                 },
@@ -63,7 +64,8 @@ Raw Data
                 "otherNames": [
                     "FSFAP",
                     "FSF All Permissive License",
-                    "scancode://fsf-ap"
+                    "scancode://fsf-ap",
+                    "FSF All Permissive license"
                 ]
             },
             "SPDX": {
