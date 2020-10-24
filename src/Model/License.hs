@@ -105,7 +105,7 @@ getLicenseFromFacts :: LicenseName -> [LicenseName] -> Facts -> License
 getLicenseFromFacts shortname otherShortnames fs = let
     allShortnames = map (map toUpper) $ shortname : otherShortnames
     shortnamefilter f = let
-        impliedNames = map (map toUpper) . unpackCLSR $ getImpliedNames f
+        impliedNames = map (map toUpper) $ getImpliedNonambiguousNames f
       in not (null (allShortnames `intersect` impliedNames))
   in License $ mkLicenseShortnameFact shortname otherShortnames `V.cons` V.filter shortnamefilter fs
 

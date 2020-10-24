@@ -23,7 +23,6 @@ import qualified Data.Aeson.Lens as AL
 import           Data.Char (toLower)
 import qualified Text.Pandoc as P
 import qualified Text.Pandoc.Builder as P
-import           Control.Monad
 import           Data.Csv as C
 import qualified Data.Vector as V
 import qualified Data.ByteString.Lazy as BL
@@ -149,10 +148,6 @@ writePandoc :: FilePath -> Page -> IO ()
 writePandoc outDirectory page = let
     shortname = (ldShortname . pLicenseDetails) page
     pandoc = licenseToPandoc shortname page
-    createDirectoryIfNotExists folder = do
-      dirExists <- doesDirectoryExist folder
-      unless dirExists $
-        createDirectory folder
   in do
 
     createDirectoryIfNotExists outDirectory

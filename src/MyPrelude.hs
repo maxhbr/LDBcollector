@@ -5,12 +5,14 @@ module MyPrelude
     , tShow
     , mergeAeson, mergeAesonL
     , Inlineable (..), Blockable (..)
+    , createDirectoryIfNotExists
     ) where
 
 import           Prelude as X
 import           GHC.Generics as X
 -- import Data.ByteString.Lazy as B
 import           Control.Applicative as X
+import           Control.Monad as X
 import           Data.Aeson as X
 import           Data.ByteString.Lazy as X (ByteString)
 import qualified Data.HashMap.Lazy as HML
@@ -51,3 +53,9 @@ class Inlineable a where
 
 class Blockable a where
   toBlock :: a -> Blocks
+
+createDirectoryIfNotExists :: FilePath -> IO ()
+createDirectoryIfNotExists folder = do
+  dirExists <- doesDirectoryExist folder
+  unless dirExists $
+    createDirectory folder

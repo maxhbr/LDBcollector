@@ -39,6 +39,7 @@ dependencies:
 - pandoc
 - pandoc-types
 - file-embed
+- graphviz
 
 library:
   source-dirs: src

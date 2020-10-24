@@ -24,6 +24,8 @@ import           System.Environment
 import           Model.License as X
 import           Model.Query as X
 
+import           LicenseClusterer as X
+
 import           Collectors.SPDX as X
 import           Collectors.BlueOak as X
 import           Collectors.DFSG as X
@@ -54,20 +56,16 @@ runLDBCore configuration handler = do
   setLocaleEncoding utf8
   args <- getArgs
 
-  -- harvest facts
   facts <- readFacts configuration
-
-  -- calculate licenses
-  licenses <- case args of
+  licensesByName <- case args of
     [] -> calculateSPDXLicenses facts
     _  -> calculateLicenses (V.fromList args) facts
 
-  let pages = toPages (cRatingRules configuration) licenses
+  let pages = toPages (cRatingRules configuration) licensesByName
 
   outputFolder <- handler facts pages
 
-  -- echo some stats
-  writeStats outputFolder facts licenses
+  writeStats outputFolder facts licensesByName
 
 data Configuration
   = Configuration
@@ -113,14 +111,7 @@ readFacts conf = do
   hPutStrLn stderr "... done with collecting data"
   return facts
 
-getLicensesFromFacts :: Vector LicenseName -> Int -> Map LicenseName [LicenseName] -> Facts -> Vector (LicenseName, License)
-getLicensesFromFacts ids 0 mapping facts = V.map (\i -> (i, getLicenseFromFacts i (M.findWithDefault [] i mapping) facts)) ids
-getLicensesFromFacts ids i mapping facts = let
-    lics = getLicensesFromFacts ids 0 mapping facts
-    newMapping = M.fromList . V.toList $ V.map (\(name,License fs) -> (name, L.nub (concatMap (unpackCLSR . getImpliedNames) (V.toList fs)))) lics
-  in getLicensesFromFacts ids (i - 1) newMapping facts
-
-calculateLicenses :: (Vector LicenseName) -> Facts -> IO [(LicenseName, License)]
+calculateLicenses :: Vector LicenseName -> Facts -> IO [(LicenseName, License)]
 calculateLicenses ids facts = do
   let licenses = getLicensesFromFacts ids 1 M.empty facts
   hPutStrLn stderr "... done with calculating licenses"

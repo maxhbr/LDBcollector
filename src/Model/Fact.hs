@@ -15,6 +15,7 @@ import qualified Prelude as P
 import           MyPrelude
 
 import qualified Data.Map as M
+import qualified Data.Maybe (maybeToList)
 
 import Model.Statement as X
 import Model.LicenseProperties as X
@@ -38,6 +39,15 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedAmbiguousNames _ = getEmptyLicenseStatement
   getImpliedFullName :: a -> RankedLicenseStatementResult LicenseName
   getImpliedFullName _ = getEmptyLicenseStatement
+  getImpliedNonambiguousNames :: a -> [LicenseName]
+  getImpliedNonambiguousNames a = let
+    names           = unpackCLSR $ getImpliedNames a
+    impliedFullName = maybeToList . unpackRLSR $ getImpliedFullName a
+    in names ++ impliedFullName
+  getAllImpliedNames :: a -> [LicenseName]
+  getAllImpliedNames a = let
+    ambiguousNames  = unpackCLSR $ getImpliedAmbiguousNames a
+    in getImpliedNonambiguousNames a ++ ambiguousNames
   getImpliedId :: a -> RankedLicenseStatementResult LicenseName
   getImpliedId _ = getEmptyLicenseStatement
   getImpliedURLs :: a -> CollectedLicenseStatementResult (Maybe String, URL)

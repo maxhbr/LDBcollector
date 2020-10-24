@@ -3,3 +3,4 @@ LDBcollector.cabal
 *~
 _*
 .#*
+*.dump-hi
