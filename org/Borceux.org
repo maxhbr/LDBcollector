@@ -1,15 +1,17 @@
 * Borceux license (Borceux)
 
-| Key              | Value             |
-|------------------+-------------------|
-| Fullname         | Borceux license   |
-| Shortname        | Borceux           |
-| Rating           | Unknown           |
-| Classification   | NoCopyleft        |
+| Key              | Value                             |
+|------------------+-----------------------------------|
+| Fullname         | Borceux license                   |
+| Shortname        | Borceux                           |
+| Rating           | Unknown, probably Stop or No-Go   |
+| Classification   | NoCopyleft                        |
 
 *Other Names:*
 
 - =scancode://borceux=
+
+- =Bourceux=
 
 ** Comments on (easy) usability
 
@@ -17,11 +19,16 @@
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
+- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
+  License List]])
+
 ** URLs
 
 - *Homepage:* https://fedoraproject.org/wiki/Licensing/Borceux
 
 - *SPDX:* http://spdx.org/licenses/Borceux.json
+
+- *SPDX:* https://spdx.org/licenses/Borceux.html
 
 ** Text
 
@@ -57,7 +64,8 @@
           "Borceux",
           "Borceux license",
           "scancode://borceux",
-          "Borceux License"
+          "Borceux License",
+          "Bourceux"
       ],
       "__impliedId": "Borceux",
       "__isFsfFree": true,
@@ -171,9 +179,51 @@
                       ]
                   ]
               }
+          },
+          "BlueOak License List": {
+              "BlueOakRating": "Lead",
+              "url": "https://spdx.org/licenses/Borceux.html",
+              "isPermissive": true,
+              "_sourceURL": "https://blueoakcouncil.org/list",
+              "name": "Borceux license",
+              "id": "Bourceux",
+              "_implications": {
+                  "__impliedNames": [
+                      "Bourceux"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "BlueOak License List",
+                          {
+                              "tag": "NegativeJudgement",
+                              "contents": "Rating is: Lead"
+                          }
+                      ]
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "BlueOak License List",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft",
+                  "__impliedURLs": [
+                      [
+                          "SPDX",
+                          "https://spdx.org/licenses/Borceux.html"
+                      ]
+                  ]
+              }
           }
       },
       "__impliedJudgement": [
+          [
+              "BlueOak License List",
+              {
+                  "tag": "NegativeJudgement",
+                  "contents": "Rating is: Lead"
+              }
+          ],
           [
               "Fedora Project Wiki",
               {
@@ -183,6 +233,10 @@
           ]
       ],
       "__impliedCopyleft": [
+          [
+              "BlueOak License List",
+              "NoCopyleft"
+          ],
           [
               "Scancode",
               "NoCopyleft"
@@ -199,6 +253,10 @@
           [
               null,
               "https://fedoraproject.org/wiki/Licensing/Borceux"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/Borceux.html"
           ],
           [
               "Homepage",

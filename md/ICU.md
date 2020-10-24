@@ -37,6 +37,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/ICU.html
 
+-   **SPDX:** https://spdx.org/licenses/X11.html
+
 -   http://source.icu-project.org/repos/icu/icu/trunk/license.html
 
 -   http://www.xfree86.org/3.3.6/COPYRIGHT2.html\#3
@@ -330,6 +332,10 @@ Raw Data
             [
                 "SPDX",
                 "https://spdx.org/licenses/ICU.html"
+            ],
+            [
+                "SPDX",
+                "https://spdx.org/licenses/X11.html"
             ],
             [
                 "Homepage",
