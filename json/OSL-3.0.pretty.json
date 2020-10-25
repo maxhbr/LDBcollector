@@ -1,19 +1,13 @@
 {
     "__impliedNames": [
-        "OSL-1.0",
-        "Open Software License 1.0",
         "OSL-3.0",
         "Open Software License 3.0",
         "scancode://osl-3.0",
         "OSL 3.0",
-        "scancode://osl-1.0",
-        "OSL 1.0",
         "osl-3.0",
-        "Open Software License, Version 1.0",
         "Open Software License, Version 3.0"
     ],
-    "__impliedId": "OSL-1.0",
-    "__isFsfFree": true,
+    "__impliedId": "OSL-3.0",
     "__hasPatentHint": true,
     "facts": {
         "Open Knowledge International": {
@@ -45,19 +39,20 @@
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
-            "spdxFullName": "Open Software License 1.0",
-            "spdxDetailsURL": "http://spdx.org/licenses/OSL-1.0.json",
-            "_sourceURL": "https://spdx.org/licenses/OSL-1.0.html",
+            "spdxFullName": "Open Software License 3.0",
+            "spdxDetailsURL": "http://spdx.org/licenses/OSL-3.0.json",
+            "_sourceURL": "https://spdx.org/licenses/OSL-3.0.html",
             "spdxLicIsOSIApproved": true,
             "spdxSeeAlso": [
-                "https://opensource.org/licenses/OSL-1.0"
+                "https://web.archive.org/web/20120101081418/http://rosenlaw.com:80/OSL3.0.htm",
+                "https://opensource.org/licenses/OSL-3.0"
             ],
             "_implications": {
                 "__impliedNames": [
-                    "OSL-1.0",
-                    "Open Software License 1.0"
+                    "OSL-3.0",
+                    "Open Software License 3.0"
                 ],
-                "__impliedId": "OSL-1.0",
+                "__impliedId": "OSL-3.0",
                 "__impliedJudgement": [
                     [
                         "SPDX",
@@ -71,15 +66,19 @@
                 "__impliedURLs": [
                     [
                         "SPDX",
-                        "http://spdx.org/licenses/OSL-1.0.json"
+                        "http://spdx.org/licenses/OSL-3.0.json"
                     ],
                     [
                         null,
-                        "https://opensource.org/licenses/OSL-1.0"
+                        "https://web.archive.org/web/20120101081418/http://rosenlaw.com:80/OSL3.0.htm"
+                    ],
+                    [
+                        null,
+                        "https://opensource.org/licenses/OSL-3.0"
                     ]
                 ]
             },
-            "spdxLicenseId": "OSL-1.0"
+            "spdxLicenseId": "OSL-3.0"
         },
         "OSADL License Checklist": {
             "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/OSL-3.0.txt",
@@ -97,32 +96,6 @@
                     ]
                 ],
                 "__calculatedCopyleft": "Copyleft"
-            }
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://opensource.org/licenses/osl-3.0.php",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "OSL 3.0",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Open Software License 3.0",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Open Software License 3.0"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
             }
         },
         "Scancode": {
@@ -206,80 +179,45 @@
                 ]
             }
         },
-        "ifrOSS": {
-            "ifrKind": "IfrStrongCopyleft",
-            "ifrURL": "https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm",
-            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-            "ifrName": "Open Software License 3.0",
-            "ifrId": null,
-            "_implications": {
-                "__impliedNames": [
-                    "Open Software License 3.0"
-                ],
-                "__impliedJudgement": [
-                    [
-                        "ifrOSS",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
-                        }
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "ifrOSS",
-                        "StrongCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "StrongCopyleft",
-                "__impliedURLs": [
-                    [
-                        null,
-                        "https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm"
-                    ]
-                ]
-            }
-        },
         "OpenSourceInitiative": {
             "text": [
                 {
-                    "url": "https://opensource.org/licenses/OSL-1.0",
+                    "url": "https://opensource.org/licenses/OSL-3.0",
                     "title": "HTML",
                     "media_type": "text/html"
                 }
             ],
             "identifiers": [
                 {
-                    "identifier": "OSL-1.0",
+                    "identifier": "OSL-3.0",
                     "scheme": "SPDX"
                 }
             ],
-            "superseded_by": "OLS-3.0",
+            "superseded_by": null,
             "_sourceURL": "https://opensource.org/licenses/",
-            "name": "Open Software License, Version 1.0",
+            "name": "Open Software License, Version 3.0",
             "other_names": [],
             "keywords": [
                 "osi-approved",
-                "discouraged",
-                "redundant"
+                "miscellaneous"
             ],
-            "id": "OSL-1.0",
+            "id": "OSL-3.0",
             "links": [
                 {
                     "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/OSL-1.0"
+                    "url": "https://opensource.org/licenses/OSL-3.0"
                 }
             ],
             "_implications": {
                 "__impliedNames": [
-                    "OSL-1.0",
-                    "Open Software License, Version 1.0",
-                    "OSL-1.0"
+                    "OSL-3.0",
+                    "Open Software License, Version 3.0",
+                    "OSL-3.0"
                 ],
                 "__impliedURLs": [
                     [
                         "OSI Page",
-                        "https://opensource.org/licenses/OSL-1.0"
+                        "https://opensource.org/licenses/OSL-3.0"
                     ]
                 ]
             }
@@ -302,7 +240,7 @@
             "Koordinaten": {
                 "name": "Open Software License",
                 "version": "3.0",
-                "spdxId": "OSL-1.0"
+                "spdxId": "OSL-3.0"
             },
             "Patent grant": {
                 "value": "Yes",
@@ -310,7 +248,7 @@
             },
             "_implications": {
                 "__impliedNames": [
-                    "OSL-1.0",
+                    "OSL-3.0",
                     "Open Software License 3.0"
                 ],
                 "__hasPatentHint": true
@@ -424,10 +362,10 @@
         "Google OSS Policy": {
             "rating": "RESTRICTED",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
-            "id": "OSL-1.0",
+            "id": "OSL-3.0",
             "_implications": {
                 "__impliedNames": [
-                    "OSL-1.0"
+                    "OSL-3.0"
                 ],
                 "__impliedJudgement": [
                     [
@@ -443,13 +381,6 @@
     },
     "__impliedJudgement": [
         [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ],
-        [
             "Google OSS Policy",
             {
                 "tag": "NegativeJudgement",
@@ -462,13 +393,6 @@
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
             }
-        ],
-        [
-            "ifrOSS",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
-            }
         ]
     ],
     "__impliedCopyleft": [
@@ -479,13 +403,9 @@
         [
             "Scancode",
             "Copyleft"
-        ],
-        [
-            "ifrOSS",
-            "StrongCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "StrongCopyleft",
+    "__calculatedCopyleft": "Copyleft",
     "__obligations": {
         "limitations": [
             {
@@ -551,14 +471,6 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/OSL-1.0.json"
-        ],
-        [
-            null,
-            "https://opensource.org/licenses/OSL-1.0"
-        ],
-        [
-            "SPDX",
             "http://spdx.org/licenses/OSL-3.0.json"
         ],
         [
@@ -590,28 +502,8 @@
             "http://www.rosenlaw.com/OSL3.0.htm"
         ],
         [
-            "Homepage",
-            "http://www.opensource.org/licenses/osl-1.0.txt"
-        ],
-        [
-            "OSI Page",
-            "http://www.opensource.org/licenses/osl-1.0.txt"
-        ],
-        [
-            null,
-            "http://opensource.org/licenses/OSL-1.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/OSL-1.0"
-        ],
-        [
             "OSI Page",
             "https://opensource.org/licenses/OSL-3.0"
-        ],
-        [
-            null,
-            "https://web.archive.org/web/20110721200508/http://www.rosenlaw.com:80/OSL3.0.htm"
         ]
     ]
 }
