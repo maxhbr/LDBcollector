@@ -106,7 +106,7 @@
 <!-- X11 License(7) -->
 <g id="node10" class="node">
 <title>X11 License(7)</title>
-<ellipse fill="gray" stroke="gray" cx="722" cy="-58" rx="65.79" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="722" cy="-58" rx="65.79" ry="18"/>
 <text text-anchor="middle" x="722" y="-54.3" font-family="Times-Roman" font-size="14.00">X11 License</text>
 </g>
 <!-- scancode://x11(7) -->

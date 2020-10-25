@@ -120,7 +120,7 @@
 <!-- OpenSSL License(8) -->
 <g id="node13" class="node">
 <title>OpenSSL License(8)</title>
-<ellipse fill="gray" stroke="gray" cx="324" cy="-50" rx="88.28" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="324" cy="-50" rx="88.28" ry="18"/>
 <text text-anchor="middle" x="324" y="-46.3" font-family="Times-Roman" font-size="14.00">OpenSSL License</text>
 </g>
 <!-- scancode://openssl(8) -->

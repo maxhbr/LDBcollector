@@ -106,7 +106,7 @@
 <!-- X11 License(7) -->
 <g id="node10" class="node">
 <title>X11 License(7)</title>
-<ellipse fill="gray" stroke="gray" cx="976" cy="-58" rx="65.79" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="976" cy="-58" rx="65.79" ry="18"/>
 <text text-anchor="middle" x="976" y="-54.3" font-family="Times-Roman" font-size="14.00">X11 License</text>
 </g>
 <!-- X11(8) -->
@@ -118,7 +118,7 @@
 <!-- X11 License(8) -->
 <g id="node12" class="node">
 <title>X11 License(8)</title>
-<ellipse fill="gray" stroke="gray" cx="745" cy="-58" rx="65.79" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="745" cy="-58" rx="65.79" ry="18"/>
 <text text-anchor="middle" x="745" y="-54.3" font-family="Times-Roman" font-size="14.00">X11 License</text>
 </g>
 <!-- X11(9) -->

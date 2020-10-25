@@ -152,7 +152,7 @@
 <!-- GPL&#45;2.0(8) -->
 <g id="node15" class="node">
 <title>GPL&#45;2.0(8)</title>
-<ellipse fill="gray" stroke="gray" cx="3773" cy="-58" rx="46.29" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="3773" cy="-58" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="3773" y="-54.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
 </g>
 <!-- gpl&#45;2.0(8) -->
@@ -170,7 +170,7 @@
 <!-- GPL&#45;2.0(9) -->
 <g id="node18" class="node">
 <title>GPL&#45;2.0(9)</title>
-<ellipse fill="gray" stroke="gray" cx="3150" cy="-58" rx="46.29" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="3150" cy="-58" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="3150" y="-54.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
 </g>
 <!-- License :: OSI Approved :: GNU General Public License v2 (GPLv2)(9) -->
@@ -182,7 +182,7 @@
 <!-- GNU General Public License 2.0(10) -->
 <g id="node20" class="node">
 <title>GNU General Public License 2.0(10)</title>
-<ellipse fill="gray" stroke="gray" cx="2294" cy="-58" rx="153.27" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="2294" cy="-58" rx="153.27" ry="18"/>
 <text text-anchor="middle" x="2294" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 2.0</text>
 </g>
 <!-- GPL&#45;2.0&#45;or&#45;later(10) -->

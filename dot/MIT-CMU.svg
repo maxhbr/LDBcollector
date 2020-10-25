@@ -104,7 +104,7 @@
 <!-- CMU License(7) -->
 <g id="node11" class="node">
 <title>CMU License(7)</title>
-<ellipse fill="gray" stroke="gray" cx="360" cy="-50" rx="68.49" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="360" cy="-50" rx="68.49" ry="18"/>
 <text text-anchor="middle" x="360" y="-46.3" font-family="Times-Roman" font-size="14.00">CMU License</text>
 </g>
 <!-- scancode://cmu&#45;template(7) -->

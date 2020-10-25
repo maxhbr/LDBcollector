@@ -150,7 +150,7 @@
 <!-- GNU General Public License 2.0(8) -->
 <g id="node14" class="node">
 <title>GNU General Public License 2.0(8)</title>
-<ellipse fill="gray" stroke="gray" cx="3885" cy="-58" rx="153.27" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="3885" cy="-58" rx="153.27" ry="18"/>
 <text text-anchor="middle" x="3885" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 2.0</text>
 </g>
 <!-- GPL&#45;2.0&#45;only(8) -->
@@ -162,7 +162,7 @@
 <!-- GNU General Public License 2.0(9) -->
 <g id="node16" class="node">
 <title>GNU General Public License 2.0(9)</title>
-<ellipse fill="gray" stroke="gray" cx="3400" cy="-58" rx="153.27" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="3400" cy="-58" rx="153.27" ry="18"/>
 <text text-anchor="middle" x="3400" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 2.0</text>
 </g>
 <!-- GPL&#45;2.0(9) -->
@@ -210,7 +210,7 @@
 <!-- GPL&#45;2.0(12) -->
 <g id="node24" class="node">
 <title>GPL&#45;2.0(12)</title>
-<ellipse fill="gray" stroke="gray" cx="1900" cy="-58" rx="46.29" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="1900" cy="-58" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="1900" y="-54.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
 </g>
 <!-- gpl&#45;2.0(12) -->
@@ -228,7 +228,7 @@
 <!-- GPL&#45;2.0(13) -->
 <g id="node27" class="node">
 <title>GPL&#45;2.0(13)</title>
-<ellipse fill="gray" stroke="gray" cx="1277" cy="-58" rx="46.29" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="1277" cy="-58" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="1277" y="-54.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
 </g>
 <!-- License :: OSI Approved :: GNU General Public License v2 (GPLv2)(13) -->
@@ -246,7 +246,7 @@
 <!-- GPL&#45;2.0(14) -->
 <g id="node30" class="node">
 <title>GPL&#45;2.0(14)</title>
-<ellipse fill="gray" stroke="gray" cx="412" cy="-58" rx="46.29" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="412" cy="-58" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="412" y="-54.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
 </g>
 <!-- GPL&#45;2.0&#45;only(14) -->

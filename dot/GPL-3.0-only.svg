@@ -156,7 +156,7 @@
 <!-- GPL&#45;3.0(8) -->
 <g id="node15" class="node">
 <title>GPL&#45;3.0(8)</title>
-<ellipse fill="gray" stroke="gray" cx="4865" cy="-58" rx="46.29" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="4865" cy="-58" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="4865" y="-54.3" font-family="Times-Roman" font-size="14.00">GPL&#45;3.0</text>
 </g>
 <!-- gpl&#45;3.0(8) -->
@@ -174,7 +174,7 @@
 <!-- GPL&#45;3.0(9) -->
 <g id="node18" class="node">
 <title>GPL&#45;3.0(9)</title>
-<ellipse fill="gray" stroke="gray" cx="4242" cy="-58" rx="46.29" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="4242" cy="-58" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="4242" y="-54.3" font-family="Times-Roman" font-size="14.00">GPL&#45;3.0</text>
 </g>
 <!-- License :: OSI Approved :: GNU General Public License (GPL)(9) -->
@@ -192,7 +192,7 @@
 <!-- GNU General Public License 3.0(10) -->
 <g id="node21" class="node">
 <title>GNU General Public License 3.0(10)</title>
-<ellipse fill="gray" stroke="gray" cx="2805" cy="-58" rx="153.27" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="2805" cy="-58" rx="153.27" ry="18"/>
 <text text-anchor="middle" x="2805" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 3.0</text>
 </g>
 <!-- GPL&#45;3.0&#45;or&#45;later(10) -->
@@ -204,7 +204,7 @@
 <!-- GNU General Public License 3.0(11) -->
 <g id="node23" class="node">
 <title>GNU General Public License 3.0(11)</title>
-<ellipse fill="gray" stroke="gray" cx="2294" cy="-58" rx="153.27" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="2294" cy="-58" rx="153.27" ry="18"/>
 <text text-anchor="middle" x="2294" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 3.0</text>
 </g>
 <!-- GPL&#45;3.0&#45;or&#45;later(11) -->

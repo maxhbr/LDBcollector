@@ -168,7 +168,7 @@
 <!-- LGPL&#45;3.0(8) -->
 <g id="node17" class="node">
 <title>LGPL&#45;3.0(8)</title>
-<ellipse fill="gray" stroke="gray" cx="5730" cy="-58" rx="50.89" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="5730" cy="-58" rx="50.89" ry="18"/>
 <text text-anchor="middle" x="5730" y="-54.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;3.0</text>
 </g>
 <!-- lgpl&#45;3.0(8) -->
@@ -186,7 +186,7 @@
 <!-- LGPL&#45;3.0(9) -->
 <g id="node20" class="node">
 <title>LGPL&#45;3.0(9)</title>
-<ellipse fill="gray" stroke="gray" cx="5030" cy="-58" rx="50.89" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="5030" cy="-58" rx="50.89" ry="18"/>
 <text text-anchor="middle" x="5030" y="-54.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;3.0</text>
 </g>
 <!-- License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)(9) -->
@@ -204,7 +204,7 @@
 <!-- GNU Lesser General Public License 3.0(10) -->
 <g id="node23" class="node">
 <title>GNU Lesser General Public License 3.0(10)</title>
-<ellipse fill="gray" stroke="gray" cx="3314" cy="-58" rx="185.47" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="3314" cy="-58" rx="185.47" ry="18"/>
 <text text-anchor="middle" x="3314" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU Lesser General Public License 3.0</text>
 </g>
 <!-- LGPL&#45;3.0&#45;or&#45;later(10) -->
@@ -216,7 +216,7 @@
 <!-- GNU Lesser General Public License 3.0(11) -->
 <g id="node25" class="node">
 <title>GNU Lesser General Public License 3.0(11)</title>
-<ellipse fill="gray" stroke="gray" cx="2729" cy="-58" rx="185.47" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="2729" cy="-58" rx="185.47" ry="18"/>
 <text text-anchor="middle" x="2729" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU Lesser General Public License 3.0</text>
 </g>
 <!-- LGPL&#45;3.0&#45;or&#45;later(11) -->
@@ -234,7 +234,7 @@
 <!-- LGPL (v3.0)(12) -->
 <g id="node28" class="node">
 <title>LGPL (v3.0)(12)</title>
-<ellipse fill="gray" stroke="gray" cx="2071" cy="-58" rx="62.29" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="2071" cy="-58" rx="62.29" ry="18"/>
 <text text-anchor="middle" x="2071" y="-54.3" font-family="Times-Roman" font-size="14.00">LGPL (v3.0)</text>
 </g>
 <!-- LGPL&#45;3+(12) -->
@@ -258,7 +258,7 @@
 <!-- LGPL3(12) -->
 <g id="node32" class="node">
 <title>LGPL3(12)</title>
-<ellipse fill="gray" stroke="gray" cx="1508" cy="-58" rx="38.19" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="1508" cy="-58" rx="38.19" ry="18"/>
 <text text-anchor="middle" x="1508" y="-54.3" font-family="Times-Roman" font-size="14.00">LGPL3</text>
 </g>
 <!-- LGPL3.0+(12) -->

@@ -160,7 +160,7 @@
 <!-- AGPL&#45;3.0(8) -->
 <g id="node15" class="node">
 <title>AGPL&#45;3.0(8)</title>
-<ellipse fill="gray" stroke="gray" cx="6387" cy="-58" rx="51.99" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="6387" cy="-58" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="6387" y="-54.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0</text>
 </g>
 <!-- GNU AGPLv3(8) -->
@@ -178,7 +178,7 @@
 <!-- AGPL&#45;3.0(9) -->
 <g id="node18" class="node">
 <title>AGPL&#45;3.0(9)</title>
-<ellipse fill="gray" stroke="gray" cx="5991" cy="-58" rx="51.99" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="5991" cy="-58" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="5991" y="-54.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0</text>
 </g>
 <!-- GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL&#45;3.0)(9) -->
@@ -202,7 +202,7 @@
 <!-- GNU Affero General Public License 3.0(10) -->
 <g id="node22" class="node">
 <title>GNU Affero General Public License 3.0(10)</title>
-<ellipse fill="gray" stroke="gray" cx="4322" cy="-58" rx="182.77" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="4322" cy="-58" rx="182.77" ry="18"/>
 <text text-anchor="middle" x="4322" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU Affero General Public License 3.0</text>
 </g>
 <!-- AGPL&#45;3.0&#45;or&#45;later(11) -->
@@ -214,13 +214,13 @@
 <!-- GNU Affero General Public License 3.0(11) -->
 <g id="node24" class="node">
 <title>GNU Affero General Public License 3.0(11)</title>
-<ellipse fill="gray" stroke="gray" cx="3740" cy="-58" rx="182.77" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="3740" cy="-58" rx="182.77" ry="18"/>
 <text text-anchor="middle" x="3740" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU Affero General Public License 3.0</text>
 </g>
 <!-- AGPL&#45;3.0(12) -->
 <g id="node25" class="node">
 <title>AGPL&#45;3.0(12)</title>
-<ellipse fill="gray" stroke="gray" cx="3481" cy="-58" rx="51.99" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="3481" cy="-58" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="3481" y="-54.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0</text>
 </g>
 <!-- GNU Affero General Public License v3(12) -->

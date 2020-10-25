@@ -146,7 +146,7 @@
 <!-- LGPL&#45;2.1(8) -->
 <g id="node14" class="node">
 <title>LGPL&#45;2.1(8)</title>
-<ellipse fill="gray" stroke="gray" cx="4058" cy="-58" rx="50.89" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="4058" cy="-58" rx="50.89" ry="18"/>
 <text text-anchor="middle" x="4058" y="-54.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1</text>
 </g>
 <!-- lgpl&#45;2.1(8) -->
@@ -164,7 +164,7 @@
 <!-- LGPL&#45;2.1(9) -->
 <g id="node17" class="node">
 <title>LGPL&#45;2.1(9)</title>
-<ellipse fill="gray" stroke="gray" cx="3358" cy="-58" rx="50.89" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="3358" cy="-58" rx="50.89" ry="18"/>
 <text text-anchor="middle" x="3358" y="-54.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1</text>
 </g>
 <!-- License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)(9) -->
@@ -176,7 +176,7 @@
 <!-- GNU Lesser General Public License 2.1(10) -->
 <g id="node19" class="node">
 <title>GNU Lesser General Public License 2.1(10)</title>
-<ellipse fill="gray" stroke="gray" cx="2392" cy="-58" rx="185.47" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="2392" cy="-58" rx="185.47" ry="18"/>
 <text text-anchor="middle" x="2392" y="-54.3" font-family="Times-Roman" font-size="14.00">GNU Lesser General Public License 2.1</text>
 </g>
 <!-- LGPL&#45;2.1&#45;or&#45;later(10) -->

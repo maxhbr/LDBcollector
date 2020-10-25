@@ -120,7 +120,7 @@
 <!-- NTP License(8) -->
 <g id="node13" class="node">
 <title>NTP License(8)</title>
-<ellipse fill="gray" stroke="gray" cx="265" cy="-50" rx="64.99" ry="18"/>
+<ellipse fill="lightgray" stroke="lightgray" cx="265" cy="-50" rx="64.99" ry="18"/>
 <text text-anchor="middle" x="265" y="-46.3" font-family="Times-Roman" font-size="14.00">NTP License</text>
 </g>
 <!-- scancode://ntpl(8) -->
