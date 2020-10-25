@@ -32,7 +32,7 @@
 <!-- Beerware -->
 <g id="node1" class="node">
 <title>Beerware</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="902" cy="-45.21" rx="77.56" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="902" cy="-45.21" rx="77.56" ry="21.43"/>
 <text text-anchor="middle" x="902" y="-40.21" font-family="Times-Roman" font-size="20.00">Beerware</text>
 </g>
 <!-- Beerware License -->

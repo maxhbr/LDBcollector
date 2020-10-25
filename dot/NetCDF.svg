@@ -28,7 +28,7 @@
 <!-- NetCDF -->
 <g id="node1" class="node">
 <title>NetCDF</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="657" cy="-45.21" rx="65.11" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="657" cy="-45.21" rx="65.11" ry="21.43"/>
 <text text-anchor="middle" x="657" y="-40.21" font-family="Times-Roman" font-size="20.00">NetCDF</text>
 </g>
 <!-- NetCDF license -->

@@ -28,7 +28,7 @@
 <!-- Plexus -->
 <g id="node1" class="node">
 <title>Plexus</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="747" cy="-45.21" rx="57.05" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="747" cy="-45.21" rx="57.05" ry="21.43"/>
 <text text-anchor="middle" x="747" y="-40.21" font-family="Times-Roman" font-size="20.00">Plexus</text>
 </g>
 <!-- Plexus Classworlds License -->

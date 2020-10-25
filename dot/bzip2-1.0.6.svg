@@ -28,7 +28,7 @@
 <!-- bzip2&#45;1.0.6 -->
 <g id="node1" class="node">
 <title>bzip2&#45;1.0.6</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="997" cy="-45.21" rx="90.52" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="997" cy="-45.21" rx="90.52" ry="21.43"/>
 <text text-anchor="middle" x="997" y="-40.21" font-family="Times-Roman" font-size="20.00">bzip2&#45;1.0.6</text>
 </g>
 <!-- bzip2 and libbzip2 License v1.0.6 -->

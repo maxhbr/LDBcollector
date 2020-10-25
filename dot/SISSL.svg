@@ -32,7 +32,7 @@
 <!-- SISSL -->
 <g id="node1" class="node">
 <title>SISSL</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="2319" cy="-45.21" rx="50.82" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="2319" cy="-45.21" rx="50.82" ry="21.43"/>
 <text text-anchor="middle" x="2319" y="-40.21" font-family="Times-Roman" font-size="20.00">SISSL</text>
 </g>
 <!-- Sun Industry Standards Source License v1.1 -->

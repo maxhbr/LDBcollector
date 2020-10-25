@@ -28,7 +28,7 @@
 <!-- Naumen -->
 <g id="node1" class="node">
 <title>Naumen</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="824" cy="-45.21" rx="71.34" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="824" cy="-45.21" rx="71.34" ry="21.43"/>
 <text text-anchor="middle" x="824" y="-40.21" font-family="Times-Roman" font-size="20.00">Naumen</text>
 </g>
 <!-- Naumen Public License -->

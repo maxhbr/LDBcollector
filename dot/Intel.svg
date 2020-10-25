@@ -32,7 +32,7 @@
 <!-- Intel -->
 <g id="node1" class="node">
 <title>Intel</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="1809" cy="-45.21" rx="42.35" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="1809" cy="-45.21" rx="42.35" ry="21.43"/>
 <text text-anchor="middle" x="1809" y="-40.21" font-family="Times-Roman" font-size="20.00">Intel</text>
 </g>
 <!-- Intel Open Source License -->

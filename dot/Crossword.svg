@@ -28,7 +28,7 @@
 <!-- Crossword -->
 <g id="node1" class="node">
 <title>Crossword</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="559" cy="-45.21" rx="84.71" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="559" cy="-45.21" rx="84.71" ry="21.43"/>
 <text text-anchor="middle" x="559" y="-40.21" font-family="Times-Roman" font-size="20.00">Crossword</text>
 </g>
 <!-- Crossword License -->

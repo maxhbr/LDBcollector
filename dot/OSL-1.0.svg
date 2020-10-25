@@ -60,7 +60,7 @@
 <!-- OSL&#45;1.0 -->
 <g id="node1" class="node">
 <title>OSL&#45;1.0</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="2313" cy="-61.21" rx="67.35" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="2313" cy="-61.21" rx="67.35" ry="21.43"/>
 <text text-anchor="middle" x="2313" y="-56.21" font-family="Times-Roman" font-size="20.00">OSL&#45;1.0</text>
 </g>
 <!-- Open Software License 1.0 -->
@@ -96,7 +96,7 @@
 <!-- OSL&#45;3.0 -->
 <g id="node7" class="node">
 <title>OSL&#45;3.0</title>
-<ellipse fill="red" stroke="red" cx="891" cy="-61.21" rx="67.35" ry="21.43"/>
+<ellipse fill="orange" stroke="orange" cx="891" cy="-61.21" rx="67.35" ry="21.43"/>
 <text text-anchor="middle" x="891" y="-56.21" font-family="Times-Roman" font-size="20.00">OSL&#45;3.0</text>
 </g>
 <!-- OSL 3.0 -->

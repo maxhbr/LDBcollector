@@ -28,7 +28,7 @@
 <!-- Glide -->
 <g id="node1" class="node">
 <title>Glide</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="625" cy="-45.21" rx="48.17" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="625" cy="-45.21" rx="48.17" ry="21.43"/>
 <text text-anchor="middle" x="625" y="-40.21" font-family="Times-Roman" font-size="20.00">Glide</text>
 </g>
 <!-- 3dfx Glide License -->

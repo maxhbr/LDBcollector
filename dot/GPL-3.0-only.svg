@@ -68,7 +68,7 @@
 <!-- GPL&#45;3.0&#45;only -->
 <g id="node1" class="node">
 <title>GPL&#45;3.0&#45;only</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="5127" cy="-61.21" rx="101.23" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="5127" cy="-61.21" rx="101.23" ry="21.43"/>
 <text text-anchor="middle" x="5127" y="-56.21" font-family="Times-Roman" font-size="20.00">GPL&#45;3.0&#45;only</text>
 </g>
 <!-- GNU General Public License v3.0 only -->
@@ -152,7 +152,7 @@
 <!-- GPL&#45;3.0&#45;or&#45;later -->
 <g id="node15" class="node">
 <title>GPL&#45;3.0&#45;or&#45;later</title>
-<ellipse fill="red" stroke="red" cx="1541" cy="-61.21" rx="122.16" ry="21.43"/>
+<ellipse fill="orange" stroke="orange" cx="1541" cy="-61.21" rx="122.16" ry="21.43"/>
 <text text-anchor="middle" x="1541" y="-56.21" font-family="Times-Roman" font-size="20.00">GPL&#45;3.0&#45;or&#45;later</text>
 </g>
 <!-- GNU General Public License v3.0 or later -->

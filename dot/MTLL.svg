@@ -28,7 +28,7 @@
 <!-- MTLL -->
 <g id="node1" class="node">
 <title>MTLL</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="584" cy="-45.21" rx="48.17" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="584" cy="-45.21" rx="48.17" ry="21.43"/>
 <text text-anchor="middle" x="584" y="-40.21" font-family="Times-Roman" font-size="20.00">MTLL</text>
 </g>
 <!-- Matrix Template Library License -->

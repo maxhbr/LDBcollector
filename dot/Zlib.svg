@@ -56,7 +56,7 @@
 <!-- Zlib -->
 <g id="node1" class="node">
 <title>Zlib</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="2087" cy="-53.21" rx="37.45" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="2087" cy="-53.21" rx="37.45" ry="21.43"/>
 <text text-anchor="middle" x="2087" y="-48.21" font-family="Times-Roman" font-size="20.00">Zlib</text>
 </g>
 <!-- zlib License -->

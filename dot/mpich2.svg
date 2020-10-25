@@ -28,7 +28,7 @@
 <!-- mpich2 -->
 <g id="node1" class="node">
 <title>mpich2</title>
-<ellipse fill="lightseagreen" stroke="lightseagreen" cx="649" cy="-45.21" rx="64.19" ry="21.43"/>
+<ellipse fill="springgreen" stroke="springgreen" cx="649" cy="-45.21" rx="64.19" ry="21.43"/>
 <text text-anchor="middle" x="649" y="-40.21" font-family="Times-Roman" font-size="20.00">mpich2</text>
 </g>
 <!-- mpich2 License -->
