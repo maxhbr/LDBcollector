@@ -26,9 +26,9 @@ ____
 
 === Comments on (easy) usability
 
-* **↑**Is OSI Approved (source:
+* **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/0BSD.html[SPDX])
-* **↑**Rating is: Bronze (source:
+* **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
 
 === Obligations

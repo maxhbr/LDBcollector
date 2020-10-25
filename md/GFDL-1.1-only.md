@@ -12,12 +12,12 @@ GNU Free Documentation License v1.1 only (GFDL-1.1-only)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license was released March 2000 (source:
+-   “Per SPDX.org, this license was released March 2000” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1.yml "Scancode"))
 
--   **↓**Exception: Data licensed under the FDL with no invariant
+-   **↓**“Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
-    http://www.debian.org/vote/2006/vote\_001\#outcome (source: [Debian
+    http://www.debian.org/vote/2006/vote\_001\#outcome” (source: [Debian
     Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 

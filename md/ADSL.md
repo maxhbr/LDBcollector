@@ -10,7 +10,7 @@ Amazon Digital Services License (ADSL)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

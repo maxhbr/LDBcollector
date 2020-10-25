@@ -10,11 +10,11 @@ Creative Commons Attribution 3.0 Unported (CC-BY-3.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 

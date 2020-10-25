@@ -10,13 +10,13 @@ Naumen Public License (Naumen)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Naumen.html "SPDX"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naumen.yml "Scancode"))
 
 URLs

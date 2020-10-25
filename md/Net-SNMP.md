@@ -12,10 +12,10 @@ Net-SNMP License (Net-SNMP)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   composite (source:
+-   “composite” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/net-snmp.yml "Scancode"))
 
 URLs

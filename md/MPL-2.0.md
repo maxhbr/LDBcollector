@@ -29,20 +29,20 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MPL-2.0.html "SPDX"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Google Classification is RECIPROCAL (source: [Google OSS
+-   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   Per SPDX.org, this license was released in January 2012. This
+-   “Per SPDX.org, this license was released in January 2012. This
     license list entry is for use when the standard MPL 2.0 is used, as
-    indicated by the standard header (Exhibit A but no Exhibit B).
+    indicated by the standard header (Exhibit A but no Exhibit B). ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0.yml "Scancode"))
 

@@ -20,7 +20,7 @@
 
 === Comments on (easy) usability
 
-* **↑**Is OSI Approved (source:
+* **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/CECILL-2.1.html[SPDX])
 
 === URLs

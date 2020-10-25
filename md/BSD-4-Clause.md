@@ -14,31 +14,31 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+-   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
     und für Veränderungen der Software keine Bedingungen hinsichtlich
     des zu verwendenden Lizenztyps enthalten. Damit kann der
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
+    Software überführen.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   Per SPDX.org, this license was rescinded by the author on 22
-    July 1999. (source:
+-   “Per SPDX.org, this license was rescinded by the author on 22
+    July 1999.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml "Scancode"))
 
--   **↓**Advertisement clause (3.) is complicated and prone to conflicts
-    (source: Override)
+-   **↓**“Advertisement clause (3.) is complicated and prone to
+    conflicts” (source: Override)
 
 URLs
 ----

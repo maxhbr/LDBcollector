@@ -17,15 +17,15 @@
 
 ** Comments on (easy) usability
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/AAL.html][SPDX]])
 
-- Per SPDX.org, this version was released 2002 This license is OSI
-  certifified. (source:
+- "Per SPDX.org, this version was released 2002 This license is OSI
+  certifified. " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/attribution.yml][Scancode]])
 
-- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
-  License List]])
+- *↓*"Rating is: Lead" (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs
 

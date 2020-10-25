@@ -59,26 +59,26 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This License is featured by choosealicense.com (source:
+-   **↑**“ This License is featured by choosealicense.com” (source:
     [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt "choosealicense.com"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Per SPDX.org, this license was released 29 June 2007 This license is
-    OSI certified. (source:
+-   “Per SPDX.org, this license was released 29 June 2007 This license
+    is OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations

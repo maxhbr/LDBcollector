@@ -14,14 +14,14 @@ Open Software License 2.1 (OSL-2.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSL-2.1.html "SPDX"))
 
--   Per SPDX.org, same as version 2.0 of this license except with
-    changes to section 10 (source:
+-   “Per SPDX.org, same as version 2.0 of this license except with
+    changes to section 10 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-2.1.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

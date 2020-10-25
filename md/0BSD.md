@@ -20,10 +20,10 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/0BSD.html "SPDX"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 Obligations

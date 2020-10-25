@@ -10,14 +10,14 @@ Historical Permission Notice and Disclaimer (HPND)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/HPND.html "SPDX"))
 
--   Per SPDX.org, this license is OSI certified. This license has been
-    voluntarily deprecated by its author. (source:
+-   “Per SPDX.org, this license is OSI certified. This license has been
+    voluntarily deprecated by its author. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

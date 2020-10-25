@@ -12,19 +12,19 @@ zlib/libpng License with Acknowledgement (zlib-acknowledgement)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Per Fedora, this license is the same as zlib, except that it
+-   “Per Fedora, this license is the same as zlib, except that it
     requires that an acknowledgement be made in the product
     documentation. For Fedora, this is our Release notes, so if you have
     any packages which use this license, you MUST be sure to have the
-    appropriate acknowledgement in the release notes. (source:
+    appropriate acknowledgement in the release notes. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml "Scancode"))
 
 URLs

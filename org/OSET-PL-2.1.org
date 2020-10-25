@@ -13,7 +13,7 @@
 
 ** Comments on (easy) usability
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/OSET-PL-2.1.html][SPDX]])
 
 ** URLs

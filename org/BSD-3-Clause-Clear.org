@@ -24,16 +24,16 @@
 
 ** Comments on (easy) usability
 
-- *↑*Note that a 2-clause form of the BSD license, removing the third
+- *↑*"Note that a 2-clause form of the BSD license, removing the third
   condition, is also in use. This is because even a generous copyright
   license does not implicitly forfeit the copyright holder's "right of
   publicity". In other words, even if a license does not forbid you from
   claiming that the copyright holder or other parties endorses or
   promotes your work, the law generally does. We're not aware of any
-  exceptions. (source: [[https://wiki.debian.org/DFSGLicenses][Debian
+  exceptions." (source: [[https://wiki.debian.org/DFSGLicenses][Debian
   Free Software Guidelines]])
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** Obligations

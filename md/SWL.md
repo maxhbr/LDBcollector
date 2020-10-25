@@ -12,14 +12,14 @@ Scheme Widget Library (SWL) Software License Agreement (SWL)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per Fedora, this permissive license is derived from MIT, however, it
-    has significant rewording and merits being considered as an
+-   “Per Fedora, this permissive license is derived from MIT, however,
+    it has significant rewording and merits being considered as an
     independent license. It is Free and GPL-Compatible. A copy of the
     license text was taken from
-    http://www.scheme.com/download/swl-lic.html on November 27, 2012.
+    http://www.scheme.com/download/swl-lic.html on November 27, 2012. ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/swl.yml "Scancode"))
 

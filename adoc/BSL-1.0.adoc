@@ -31,15 +31,15 @@ ____
 
 === Comments on (easy) usability
 
-* **↑**Google Classification is NOTICE (source:
+* **↑**``Google Classification is NOTICE'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* **↑**Is OSI Approved (source:
+* **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/BSL-1.0.html[SPDX])
-* **↑**Rating is: Silver (source:
+* **↑**``Rating is: Silver'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
-* Per SPDX.org, this version was released 17 August 2003 This license is
-OSI certifified. (source:
+* ``Per SPDX.org, this version was released 17 August 2003 This license
+is OSI certifified. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/boost-1.0.yml[Scancode])
 
 === Obligations

@@ -16,23 +16,23 @@ Artistic License 1.0 (Artistic-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Do note that the Artistic License is considered non-free by the
-    FSF. They suggest to use the Clarified Artistic License (also called
-    Artistic License 2.0) instead. However, the original Artistic
-    License is still considered DFSG-free. (source: [Debian Free
+-   **↑**“Do note that the Artistic License is considered non-free by
+    the FSF. They suggest to use the Clarified Artistic License (also
+    called Artistic License 2.0) instead. However, the original Artistic
+    License is still considered DFSG-free.” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Artistic-1.0.html "SPDX"))
 
--   Per SPDX.org, this license was superseded by v2.0 (source:
+-   “Per SPDX.org, this license was superseded by v2.0” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

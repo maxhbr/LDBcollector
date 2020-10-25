@@ -12,10 +12,10 @@ SGI Free Software License B v2.0 (SGI-B-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this license was released 18 Sept 2008 (source:
+-   “Per SPDX.org, this license was released 18 Sept 2008” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml "Scancode"))
 
 URLs

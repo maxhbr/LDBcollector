@@ -15,7 +15,7 @@
 
 ** Comments on (easy) usability
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/LiLiQ-P-1.1.html][SPDX]])
 
 ** URLs

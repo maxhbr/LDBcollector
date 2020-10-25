@@ -17,15 +17,15 @@
 
 === Comments on (easy) usability
 
-* **↑**Is OSI Approved (source:
+* **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/RPSL-1.0.html[SPDX])
-* **↑**This software Licenses is OK for Fedora (source:
+* **↑**``This software Licenses is OK for Fedora'' (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* This license is OSI certified (source:
+* ``This license is OSI certified'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpsl-1.0.yml[Scancode])
-* **↓**This license is not compatible with the
-DebianFreeSoftwareGuidelines (DFSG-unfree) (source:
+* **↓**``This license is not compatible with the
+DebianFreeSoftwareGuidelines (DFSG-unfree)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
 === URLs

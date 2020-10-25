@@ -12,7 +12,7 @@ LaTeX Project Public License v1.3a (LPPL-1.3a)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license was released 1 Oct 2004 (source:
+-   “Per SPDX.org, this license was released 1 Oct 2004” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml "Scancode"))
 
 URLs

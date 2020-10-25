@@ -16,13 +16,13 @@ Educational Community License v1.0 (ECL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/ECL-1.0.html "SPDX"))
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-1.0.yml "Scancode"))
 
 URLs

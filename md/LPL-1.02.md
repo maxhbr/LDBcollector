@@ -14,16 +14,16 @@ Lucent Public License v1.02 (LPL-1.02)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LPL-1.02.html "SPDX"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lucent-pl-1.02.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

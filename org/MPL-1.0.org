@@ -19,19 +19,19 @@
 
 ** Comments on (easy) usability
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/MPL-1.0.html][SPDX]])
 
-- *↑*This license is compatible with the DebianFreeSoftwareGuidelines
-  (DFSG-free) (source: [[https://wiki.debian.org/DFSGLicenses][Debian
+- *↑*"This license is compatible with the DebianFreeSoftwareGuidelines
+  (DFSG-free)" (source: [[https://wiki.debian.org/DFSGLicenses][Debian
   Free Software Guidelines]])
 
-- Google Classification is RECIPROCAL (source:
+- "Google Classification is RECIPROCAL" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- Per SPDX.org, this license was OSI certified. This license have been
-  superseded by v1.1 (source:
+- "Per SPDX.org, this license was OSI certified. This license have been
+  superseded by v1.1 " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-1.0.yml][Scancode]])
 
 ** URLs

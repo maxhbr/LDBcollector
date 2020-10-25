@@ -26,18 +26,18 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/ECL-2.0.html "SPDX"))
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this license is OSI certifified. The Educational
+-   “Per SPDX.org, this license is OSI certifified. The Educational
     Community License version 2.0 ("ECL") consists of the Apache 2.0
     license, modified to change the scope of the patent grant in section
     3 to be specific to the needs of the education communities using
     this license. The url included in the boilerplate notice does not
-    work. (15/10/10) (source:
+    work. (15/10/10) ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-2.0.yml "Scancode"))
 
 Obligations

@@ -24,14 +24,14 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LPPL-1.3c.html "SPDX"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this license was released 4 May 2008 This license is
-    OSI certified. (source:
+-   “Per SPDX.org, this license was released 4 May 2008 This license is
+    OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3c.yml "Scancode"))
 
 Obligations

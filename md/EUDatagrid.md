@@ -10,14 +10,14 @@ EU DataGrid Software License (EUDatagrid)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EUDatagrid.html "SPDX"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Per SPDX.org, this license is OSI certified (source:
+-   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eu-datagrid.yml "Scancode"))
 
 URLs

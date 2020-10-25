@@ -16,10 +16,10 @@
 
 === Comments on (easy) usability
 
-* The primary text is in French. (source:
+* ``The primary text is in French.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml[Scancode])
-* **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
-License List])
+* **↓**``Rating is: Lead'' (source:
+https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 

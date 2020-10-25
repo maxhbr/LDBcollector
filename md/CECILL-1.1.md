@@ -12,8 +12,8 @@ CeCILL Free Software License Agreement v1.1 (CECILL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, there is only an English version for 1.1, which
-    includes some wording changes from v1.0 (source:
+-   “Per SPDX.org, there is only an English version for 1.1, which
+    includes some wording changes from v1.0 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml "Scancode"))
 
 URLs

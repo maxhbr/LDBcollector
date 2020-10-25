@@ -10,7 +10,7 @@ Licence Libre du Québec – Réciprocité forte version 1.1 (LiLiQ-Rplus-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LiLiQ-Rplus-1.1.html "SPDX"))
 
 URLs

@@ -10,9 +10,9 @@ XSkat License (XSkat)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, this license is Free only when clause 2.b is used. It is
-    always GPL-incompatible. Packagers using code under this license in
-    Fedora should note that while the RPM changelog is sufficient to
+-   “Per Fedora, this license is Free only when clause 2.b is used. It
+    is always GPL-incompatible. Packagers using code under this license
+    in Fedora should note that while the RPM changelog is sufficient to
     meet one requirement of clause 2.b (to "clearly state who last
     changed the program"), the Release field in the RPM is not enough to
     meet the other requirement of clause 2.b. Packagers can meet the
@@ -21,7 +21,7 @@ Comments on (easy) usability
     the regular NVR to fulfill 2.b, because the license explicitly
     specifies the versioning schema x.y.z, which is different from how
     RPM displays it (x.y-z). Just add a dummy .0 to the end of the
-    version then increment the Release field like any other package.
+    version then increment the Release field like any other package. ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml "Scancode"))
 

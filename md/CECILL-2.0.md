@@ -12,8 +12,9 @@ CeCILL Free Software License Agreement v2.0 (CECILL-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   per SPDX.org, English translation can be found here
-    http://www.cecill.info/licences/Licence\_CeCILL\_V2-en.html (source:
+-   “per SPDX.org, English translation can be found here
+    http://www.cecill.info/licences/Licence\_CeCILL\_V2-en.html ”
+    (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-2.0.yml "Scancode"))
 
 URLs

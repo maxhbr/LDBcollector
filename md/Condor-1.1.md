@@ -12,10 +12,10 @@ Condor Public License v1.1 (Condor-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license was released 30 October 2003 (source:
+-   “Per SPDX.org, this license was released 30 October 2003” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/condor-1.1.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

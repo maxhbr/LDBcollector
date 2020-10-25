@@ -10,13 +10,13 @@ BSD 3-Clause No Nuclear Warranty (BSD-3-Clause-No-Nuclear-Warranty)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   per SPDX.org, it is the same license as
+-   “per SPDX.org, it is the same license as
     BSD-3-Clause-No-Nuclear-License, except it has a disclaimer for
     nuclear factility use, instead of the software not licensed for such
-    use. (source:
+    use. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode"))
 
 URLs

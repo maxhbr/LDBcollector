@@ -14,13 +14,13 @@ Sybase Open Watcom Public License 1.0 (Watcom-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Watcom-1.0.html "SPDX"))
 
--   Per SPDX.org, this license is OSI certified (source:
+-   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml "Scancode"))
 
--   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
+-   **↓**“Google Classification is CANNOT\_BE\_USED "Code released under
     the Sybase Open Watcom Public License version 1.0 cannot be used at
     Google. Provision 12.1\\169 terminates the license if any patent
     litigation is filed against Sybase or any contributor, including
@@ -28,7 +28,7 @@ Comments on (easy) usability
     provision to patent litigation concerning the specific software
     being licensed. This provision goes too far in restricting the
     exercise of Google\\8217s patent rights and is therefore prohibited
-    at Google." (source: [Google OSS
+    at Google."” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

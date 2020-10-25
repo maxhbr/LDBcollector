@@ -13,12 +13,12 @@
 
 ** Comments on (easy) usability
 
-- *↑*Rating is: Silver (source:
+- *↑*"Rating is: Silver" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- Except for the NetBSD Foundation name this license is identical to the
-  bsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license in
-  2008 for code contributed to NetBSD Foundation. (source:
+- "Except for the NetBSD Foundation name this license is identical to
+  the bsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license
+  in 2008 for code contributed to NetBSD Foundation. " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-2-clause-netbsd.yml][Scancode]])
 
 ** URLs

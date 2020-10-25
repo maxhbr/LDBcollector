@@ -12,10 +12,10 @@ BSD 3-Clause No Nuclear License 2014 (BSD-3-Clause-No-Nuclear-License-2014)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   this is a minor variation on similar licenses by Sun and Oracle.
+-   “this is a minor variation on similar licenses by Sun and Oracle.”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml "Scancode"))
 

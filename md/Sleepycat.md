@@ -18,13 +18,13 @@ Sleepycat License (Sleepycat)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX"))
 
--   Per SPDX.org, this license is OSI certified (source:
+-   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

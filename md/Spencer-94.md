@@ -12,7 +12,7 @@ Spencer License 94 (Spencer-94)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

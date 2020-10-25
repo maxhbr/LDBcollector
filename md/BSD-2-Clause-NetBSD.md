@@ -10,12 +10,13 @@ BSD 2-Clause NetBSD License (BSD-2-Clause-NetBSD)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Except for the NetBSD Foundation name this license is identical to
+-   “Except for the NetBSD Foundation name this license is identical to
     the bsd-simplified Per SPDX.org, NetBSD adopted this 2-clause
-    license in 2008 for code contributed to NetBSD Foundation. (source:
+    license in 2008 for code contributed to NetBSD Foundation. ”
+    (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-2-clause-netbsd.yml "Scancode"))
 
 URLs

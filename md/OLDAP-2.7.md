@@ -12,10 +12,10 @@ Open LDAP Public License v2.7 (OLDAP-2.7)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this license was released 7 September 2001. (source:
+-   “Per SPDX.org, this license was released 7 September 2001.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.7.yml "Scancode"))
 
 URLs

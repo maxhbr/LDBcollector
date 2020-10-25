@@ -15,14 +15,14 @@
 
 ** Comments on (easy) usability
 
-- *↑*Google Classification is NOTICE (source:
+- *↑*"Google Classification is NOTICE" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- Per SPDX.org, this is a generic version of the ZPL 2.0 license
+- "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
   (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml][Scancode]])
 

@@ -65,23 +65,23 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Earlier called the "Library General Public License"; this name
-    is deprecated because it confuses the license's intent. (source:
+-   **↑**“Earlier called the "Library General Public License"; this name
+    is deprecated because it confuses the license's intent.” (source:
     [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LGPL-3.0-only.html "SPDX"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Per SPDX.org, this license was released 29 June 2007. This license
-    is OSI Certified. (source:
+-   “Per SPDX.org, this license was released 29 June 2007. This license
+    is OSI Certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations

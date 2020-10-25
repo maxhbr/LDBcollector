@@ -10,9 +10,9 @@ dvipdfm License (dvipdfm)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, "should" does not mean "must", and there are implied
+-   “Per Fedora, "should" does not mean "must", and there are implied
     rights for unlimited copying and distribution rights for unmodified
-    versions. (source:
+    versions. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode"))
 
 URLs

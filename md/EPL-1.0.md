@@ -24,19 +24,19 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EPL-1.0.html "SPDX"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Google Classification is RECIPROCAL (source: [Google OSS
+-   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   Per SPDX.org, this license is OSI certifified EPL replaced the CPL
-    on 28 June 2005. (source:
+-   “Per SPDX.org, this license is OSI certifified EPL replaced the CPL
+    on 28 June 2005. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epl-1.0.yml "Scancode"))
 
 Obligations

@@ -16,22 +16,22 @@ NTP License (NTP)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/NTP.html "SPDX"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+-   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
     und für Veränderungen der Software keine Bedingungen hinsichtlich
     des zu verwendenden Lizenztyps enthalten. Damit kann der
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
+    Software überführen.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   replaced by mit-old-style-no-advert (source:
+-   “replaced by mit-old-style-no-advert” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntpl.yml "Scancode"))
 
 URLs

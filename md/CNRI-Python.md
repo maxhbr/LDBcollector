@@ -16,14 +16,14 @@ CNRI Python License (CNRI-Python)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CNRI-Python.html "SPDX"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   per SPDX.org, CNRI portion of the multi-part Python License
-    (Python-2.0) (source:
+-   “per SPDX.org, CNRI portion of the multi-part Python License
+    (Python-2.0)” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.yml "Scancode"))
 
 URLs

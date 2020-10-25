@@ -28,34 +28,34 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Zlib.html "SPDX"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+-   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
     und für Veränderungen der Software keine Bedingungen hinsichtlich
     des zu verwendenden Lizenztyps enthalten. Damit kann der
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
+    Software überführen.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   Per SPDX.org, this is OSI certified (source:
+-   “Per SPDX.org, this is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml "Scancode"))
 
 Obligations

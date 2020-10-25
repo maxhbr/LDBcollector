@@ -18,13 +18,13 @@ Q Public License 1.0 (QPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/QPL-1.0.html "SPDX"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml "Scancode"))
 
--   The QPL is not GPL-compatible, which, regardless of one's opinion
+-   “The QPL is not GPL-compatible, which, regardless of one's opinion
     about the license's DFSG-freeness, poses a major practical problem
     for any code licensed under the QPL that is reused elsewhere in
     conjunction with code under the GNU GPL. This makes the QPL alone a
@@ -35,10 +35,10 @@ Comments on (easy) usability
     approach is intended to be "open source-friendly" (see
     http://www.trolltech.com/company/model.html). If Trolltech felt that
     the QPL alone were friendly enough to open-source, why do they have
-    a dual-licensing policy? (source: [Debian Free Software
+    a dual-licensing policy?” (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

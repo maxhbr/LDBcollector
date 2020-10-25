@@ -10,11 +10,11 @@ Wsuipa License (Wsuipa)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, this license was found on the "wsuipa" component of
-    texlive 2010. It is Free, but GPL-incompatible. (source:
+-   “Per Fedora, this license was found on the "wsuipa" component of
+    texlive 2010. It is Free, but GPL-incompatible. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

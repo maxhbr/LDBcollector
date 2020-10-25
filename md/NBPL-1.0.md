@@ -10,11 +10,12 @@ Net Boolean Public License v1 (NBPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license was released 22 August 1998. This license
-    was issued twice, but only with formatting differences. (source:
+-   “Per SPDX.org, this license was released 22 August 1998. This
+    license was issued twice, but only with formatting differences. ”
+    (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nbpl-1.0.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

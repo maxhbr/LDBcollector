@@ -41,20 +41,20 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/GPL-2.0-only.html "SPDX"))
 
--   **↑**This is the most popular free software license. Most of Linux
+-   **↑**“This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
-    basic software in the GNU operating system. (source: [Debian Free
+    basic software in the GNU operating system.” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   This is the last version of the GPL text as published by the FSF.
+-   “This is the last version of the GPL text as published by the FSF.
     This variation was published around about the time of the FSF
     released the GPL 3 in July 2007.
     http://web.archive.org/web/20070716031727/http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
@@ -68,10 +68,10 @@ Comments on (easy) usability
     gpl-2.0\_102.RULE and gpl-2.0\_103.RULE. Their corresponding YAML
     data explains their history and provides archive.org pointer to
     their texts. Per SPDX.org, this license was released June 1991 This
-    license is OSI certified. (source:
+    license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations

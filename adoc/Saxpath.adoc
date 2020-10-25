@@ -15,12 +15,12 @@
 
 === Comments on (easy) usability
 
-* **↑**Rating is: Bronze (source:
+* **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
-* Per Fedora, this is a slightly modified version of Apache 1.1. The
+* ``Per Fedora, this is a slightly modified version of Apache 1.1. The
 documentation requirement in Apache 1.1 has been weakened to a
 suggestion, but clause 4 still makes this license Free but
-GPL-incompatible. (source:
+GPL-incompatible. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/saxpath.yml[Scancode])
 
 === URLs

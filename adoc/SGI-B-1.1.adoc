@@ -16,7 +16,7 @@
 
 === Comments on (easy) usability
 
-* Per SPDX.org, this license was released 22 February 2002 (source:
+* ``Per SPDX.org, this license was released 22 February 2002'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-1.1.yml[Scancode])
 
 === URLs

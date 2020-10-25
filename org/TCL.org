@@ -13,7 +13,7 @@
 
 ** Comments on (easy) usability
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs

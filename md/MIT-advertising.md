@@ -12,17 +12,17 @@ Enlightenment License (e16) (MIT-advertising)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per Fedora, this license is a modified version of the common MIT
+-   “Per Fedora, this license is a modified version of the common MIT
     license, with an additional advertising clause that makes it
     GPL-incompatible. It was originally found at
     http://www.enlightenment.org/viewvc/e16/e/COPYING?revision=1.10 ,
     but that URL is gone (they seem to have moved source control
     systems). The latest available copy from enlightment.org
     http://trac.enlightenment.org/e/browser/trunk/E16/e/COPYING has been
-    preserved here for reference. (source:
+    preserved here for reference. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enlightenment.yml "Scancode"))
 
 URLs

@@ -12,11 +12,11 @@ CeCILL-C Free Software License Agreement (CECILL-C)
 Comments on (easy) usability
 ----------------------------
 
--   Google Classification is RECIPROCAL (source: [Google OSS
+-   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   per SPDX.org, English translation can be found here
-    http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html
+-   “per SPDX.org, English translation can be found here
+    http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml "Scancode"))
 

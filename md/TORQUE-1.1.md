@@ -12,7 +12,7 @@ TORQUE v2.5+ Software License v1.1 (TORQUE-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE
+-   “Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE
     upstream drafted a new license with updated contact information. The
     intention was to have a lawyer retain the same functionality as the
     older licensing, but because part of it was misread or accidentally
@@ -26,7 +26,7 @@ Comments on (easy) usability
     derived from OpenPBS''s code, so the TORQUE v2.5+ software is
     properly dual licensed TORQUEv1.1 and OpenPBS. This also means that
     this license is not useful for other codebases without removing Note
-    1. (source:
+    1. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml "Scancode"))
 
 URLs

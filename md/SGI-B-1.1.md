@@ -12,7 +12,7 @@ SGI Free Software License B v1.1 (SGI-B-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license was released 22 February 2002 (source:
+-   “Per SPDX.org, this license was released 22 February 2002” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-1.1.yml "Scancode"))
 
 URLs

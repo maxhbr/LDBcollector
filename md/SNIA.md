@@ -10,30 +10,31 @@ SNIA Public License 1.1 (SNIA)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, MPL 1.1 derived license with a few distinct changes They
-    typoed the version number in Exhibit A (it says it is 1.0, which
-    confused me at first, when I came across code using that attribution
-    in its headers but could not find a 1.0 license text). Section
-    8.2 (b) has been removed entirely. The following text block has been
-    removed from Section 11 "With respect to disputes in which at least
-    one party is a citizen of, or an entity chartered or registered to
-    do business in the United States of America, any litigation relating
-    to this License shall be subject to the jurisdiction of the Federal
-    Courts of the Northern District of California, with venue lying in
-    Santa Clara County, California, with the losing party responsible
-    for costs, including without limitation, court costs and reasonable
-    attorneys' fees and expenses." The following text block has been
-    removed from Exhibit A "Alternatively, the contents of this file may
-    be used under the terms of the \_\_\_\_\_ license (the "\[\_\_\_\]
-    License"), in which case the provisions of \[\_\_\_\_\_\_\] License
-    are applicable instead of those above. If you wish to allow use of
-    your version of this file only under the terms of the \[\_\_\_\_\]
-    License and not to allow others to use your version of this file
-    under the MPL, indicate your decision by deleting the provisions
-    above and replace them with the notice and other provisions required
-    by the \[\_\_\_\] License. If you do not delete the provisions
-    above,a recipient may use your version of this file under either the
-    MPL or the \[\_\_\_\] License. (source:
+-   “Per Fedora, MPL 1.1 derived license with a few distinct changes
+    They typoed the version number in Exhibit A (it says it is 1.0,
+    which confused me at first, when I came across code using that
+    attribution in its headers but could not find a 1.0 license text).
+    Section 8.2 (b) has been removed entirely. The following text block
+    has been removed from Section 11 "With respect to disputes in which
+    at least one party is a citizen of, or an entity chartered or
+    registered to do business in the United States of America, any
+    litigation relating to this License shall be subject to the
+    jurisdiction of the Federal Courts of the Northern District of
+    California, with venue lying in Santa Clara County, California, with
+    the losing party responsible for costs, including without
+    limitation, court costs and reasonable attorneys' fees and
+    expenses." The following text block has been removed from Exhibit A
+    "Alternatively, the contents of this file may be used under the
+    terms of the \_\_\_\_\_ license (the "\[\_\_\_\] License"), in which
+    case the provisions of \[\_\_\_\_\_\_\] License are applicable
+    instead of those above. If you wish to allow use of your version of
+    this file only under the terms of the \[\_\_\_\_\] License and not
+    to allow others to use your version of this file under the MPL,
+    indicate your decision by deleting the provisions above and replace
+    them with the notice and other provisions required by the \[\_\_\_\]
+    License. If you do not delete the provisions above,a recipient may
+    use your version of this file under either the MPL or the \[\_\_\_\]
+    License. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/snia.yml "Scancode"))
 
 URLs

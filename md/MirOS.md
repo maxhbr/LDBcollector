@@ -14,17 +14,18 @@ MirOS License (MirOS)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MirOS.html "SPDX"))
 
--   **↑**Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC but
-    applicable to more than just software (source: [Debian Free Software
+-   **↑**“Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC
+    but applicable to more than just software” (source: [Debian Free
+    Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

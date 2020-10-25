@@ -12,23 +12,23 @@ BSD-4-Clause (University of California-Specific) (BSD-4-Clause-UC)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this is the same license as the BSD-4-Clause, but with
-    a copyright notice for the Regents of the University of California.
-    Captures the retroactive deletion of the third (advertising) clause
-    of the Original BSD license for BSD-licensed code developed by UC
-    Berkeley and its contributors (see
-    ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)
+-   “Per SPDX.org, this is the same license as the BSD-4-Clause, but
+    with a copyright notice for the Regents of the University of
+    California. Captures the retroactive deletion of the third
+    (advertising) clause of the Original BSD license for BSD-licensed
+    code developed by UC Berkeley and its contributors (see
+    ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change) ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml "Scancode"))
 
--   **↓**Advertisement clause (3.) is complicated and prone to conflicts
-    (source: Override)
+-   **↓**“Advertisement clause (3.) is complicated and prone to
+    conflicts” (source: Override)
 
 URLs
 ----

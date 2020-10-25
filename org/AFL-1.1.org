@@ -15,13 +15,13 @@
 
 ** Comments on (easy) usability
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/AFL-1.1.html][SPDX]])
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- Per SPDX.org, this license has been superseded by later versions.
+- "Per SPDX.org, this license has been superseded by later versions."
   (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.1.yml][Scancode]])
 

@@ -16,19 +16,19 @@ Mozilla Public License 1.0 (MPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MPL-1.0.html "SPDX"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Google Classification is RECIPROCAL (source: [Google OSS
+-   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   Per SPDX.org, this license was OSI certified. This license have been
-    superseded by v1.1 (source:
+-   “Per SPDX.org, this license was OSI certified. This license have
+    been superseded by v1.1 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-1.0.yml "Scancode"))
 
 URLs

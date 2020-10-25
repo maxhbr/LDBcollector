@@ -26,17 +26,18 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX"))
 
--   Per SPDX.org, this license was released 16 May 2008 This license is
+-   “Per SPDX.org, this license was released 16 May 2008 This license is
     OSI certified. This license is available in the 22 official
-    languages of the EU. The English version is included here. (source:
+    languages of the EU. The English version is included here. ”
+    (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eupl-1.1.yml "Scancode"))
 
--   **↓**Google Classification is CANNOT\_BE\_USED "The EUPL is very
+-   **↓**“Google Classification is CANNOT\_BE\_USED "The EUPL is very
     similar to the AGPL. For the same reasons that the AGPL is banned,
-    the use of EUPL-licensed software is not allowed at Google."
+    the use of EUPL-licensed software is not allowed at Google."”
     (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 

@@ -10,7 +10,7 @@ Creative Commons Attribution No Derivatives 2.0 Generic (CC-BY-ND-2.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

@@ -12,7 +12,7 @@ Trusster Open Source License (TOSL)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, the Trusster Open Source License (TOSL) is a derivation
+-   “Per Fedora, the Trusster Open Source License (TOSL) is a derivation
     of the Sleepycat License. The one significant difference is that
     where the Sleepycat License says The source code must either be
     included in the distribution or be available for no more than the
@@ -24,7 +24,7 @@ Comments on (easy) usability
     under reasonable and no more restrictive conditions. While the
     Sleepycat License is considered to be a free, GPL-compatible
     license, TOSL is GPL-incompatible because of the addition of the "no
-    more restrictive" language. (source:
+    more restrictive" language. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tosl.yml "Scancode"))
 
 URLs

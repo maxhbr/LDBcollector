@@ -12,12 +12,12 @@ Common Development and Distribution License 1.1 (CDDL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   Google Classification is RECIPROCAL (source: [Google OSS
+-   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   per SPDX.org, same as 1.0, but changes name from Sun to Oracle in
+-   “per SPDX.org, same as 1.0, but changes name from Sun to Oracle in
     section 4.1 and adds patent infringement termination clause (section
-    6.3) (source:
+    6.3) ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cddl-1.1.yml "Scancode"))
 
 URLs

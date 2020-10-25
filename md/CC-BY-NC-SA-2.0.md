@@ -10,16 +10,16 @@ Creative Commons Attribution Non Commercial Share Alike 2.0 Generic (CC-BY-NC-SA
 Comments on (easy) usability
 ----------------------------
 
--   **↓**Google Classification is CANNOT\_BE\_USED "Everything that
+-   **↓**“Google Classification is CANNOT\_BE\_USED "Everything that
     Google undertakes, including research, is considered a commercial
     endeavor, so no code released under a license that restricts it to
     non-commercial uses may be used at Google. For example, works under
     any Creative Commons licenses containing NC (CC BY-NC, CC BY-NC-SA,
-    CC BY-NC-ND) may not be used at Google." (source: [Google OSS
+    CC BY-NC-ND) may not be used at Google."” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↓**This license is not compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
+-   **↓**“This license is not compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 

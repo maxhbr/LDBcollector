@@ -10,12 +10,13 @@ Matrix Template Library License (MTLL)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per Fedora, this license was found in the Matrix Template Library.
+-   “Per Fedora, this license was found in the Matrix Template Library.
     It is derived from the Apache Software License v1.1, but it is
-    modified in several ways. It is Free, but GPL-incompatible. (source:
+    modified in several ways. It is Free, but GPL-incompatible. ”
+    (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mtll.yml "Scancode"))
 
 URLs

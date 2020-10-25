@@ -14,10 +14,10 @@ BitTorrent Open Source License v1.1 (BitTorrent-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   The link http://www.bittorrent.com/license/ is dead, so there is no
+-   “The link http://www.bittorrent.com/license/ is dead, so there is no
     live text containing the license terms except at
     http://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license
-    (source:
+    ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.1.yml "Scancode"))
 
 URLs

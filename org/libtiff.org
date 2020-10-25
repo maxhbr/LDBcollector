@@ -15,11 +15,11 @@
 
 ** Comments on (easy) usability
 
-- *↑*Google Classification is NOTICE (source:
+- *↑*"Google Classification is NOTICE" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs

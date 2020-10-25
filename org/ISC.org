@@ -30,21 +30,21 @@
 
 ** Comments on (easy) usability
 
-- *↑*Google Classification is NOTICE (source:
+- *↑*"Google Classification is NOTICE" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/ISC.html][SPDX]])
 
-- *↑*Rating is: Silver (source:
+- *↑*"Rating is: Silver" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- *↑*This license is compatible with the DebianFreeSoftwareGuidelines
-  (DFSG-free) (source: [[https://wiki.debian.org/DFSGLicenses][Debian
+- *↑*"This license is compatible with the DebianFreeSoftwareGuidelines
+  (DFSG-free)" (source: [[https://wiki.debian.org/DFSGLicenses][Debian
   Free Software Guidelines]])
 
-- Per SPDX.org, this license is OSI certified. (source:
+- "Per SPDX.org, this license is OSI certified." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml][Scancode]])
 
 ** Obligations

@@ -10,11 +10,11 @@ JSON License (JSON)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↓**Infamous for the clause The Software shall be used for Good,
-    not Evil. (source: [Debian Free Software
+-   **↓**“Infamous for the clause The Software shall be used for Good,
+    not Evil.” (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
 URLs

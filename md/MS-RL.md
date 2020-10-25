@@ -24,19 +24,19 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+-   “Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
     Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten
-    Werke umfasst, sondern definierte Ausnahmen enthält. (source:
+    Werke umfasst, sondern definierte Ausnahmen enthält.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml "Scancode"))
 
 Obligations

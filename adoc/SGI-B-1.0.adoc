@@ -15,7 +15,7 @@
 
 === Comments on (easy) usability
 
-* Per SPDX.org, this license was released 25 January 2000 (source:
+* ``Per SPDX.org, this license was released 25 January 2000'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-fslb-1.0.yml[Scancode])
 
 === URLs

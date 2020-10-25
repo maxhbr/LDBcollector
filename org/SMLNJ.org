@@ -15,16 +15,16 @@
 
 ** Comments on (easy) usability
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- per SPDX.org, SPDX ended up with this license on the license list
+- "per SPDX.org, SPDX ended up with this license on the license list
   twice once as of v1.17 with the short identifier SMLNJ and then added
   (again) as of v1.20 with the short identifier StandardML-NJ. The
   former list entry has been deprecated. Here, this license is not
   verbatim the SPDX SMLMJ, but instead the more generic variant as used
   in the Java CUP parser generator that has no specific references to
-  Lucent and Bell Labs and is therefore a better choice for reuse.
+  Lucent and Bell Labs and is therefore a better choice for reuse. "
   (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/standard-ml-nj.yml][Scancode]])
 

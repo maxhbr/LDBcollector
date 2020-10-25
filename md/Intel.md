@@ -16,15 +16,15 @@ Intel Open Source License (Intel)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Intel.html "SPDX"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   this has this title in SPDX and OSI text The Intel Open Source
+-   “this has this title in SPDX and OSI text The Intel Open Source
     License for CDSA/CSSM Implementation (BSD License with Export
-    Notice) (source:
+    Notice)” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode"))
 
 URLs

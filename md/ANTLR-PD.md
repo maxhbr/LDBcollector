@@ -10,11 +10,11 @@ ANTLR Software Rights Notice (ANTLR-PD)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, ANTLR used this public domain notice through version
-    2.7 and then switched to a BSD license for version 3.0 and later.
+-   “Per SPDX.org, ANTLR used this public domain notice through version
+    2.7 and then switched to a BSD license for version 3.0 and later. ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml "Scancode"))
 

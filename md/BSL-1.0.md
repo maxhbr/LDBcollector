@@ -28,17 +28,17 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/BSL-1.0.html "SPDX"))
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this version was released 17 August 2003 This license
-    is OSI certifified. (source:
+-   “Per SPDX.org, this version was released 17 August 2003 This license
+    is OSI certifified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/boost-1.0.yml "Scancode"))
 
 Obligations

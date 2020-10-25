@@ -10,11 +10,11 @@ Linux Kernel Variant of OpenIB.org license (Linux-OpenIB)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   This license is a hybrid of two common licenses the BSD-2-Clause
-    (bsd- simplified) and the MIT License (mit). (source:
+-   “This license is a hybrid of two common licenses the BSD-2-Clause
+    (bsd- simplified) and the MIT License (mit). ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/linux-openib.yml "Scancode"))
 
 URLs

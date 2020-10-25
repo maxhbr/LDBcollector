@@ -10,20 +10,20 @@ Ruby License (Ruby)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Google Classification is RECIPROCAL (source: [Google OSS
+-   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   This version of the Ruby license is the latest found in the dual
+-   “This version of the Ruby license is the latest found in the dual
     license COPYING dated from 2010-09-15 Per SPDX.org, Ruby is
     disjunctively licensed project that allows the choice of this
     license and another. The other license choice has changed over time
     (from GPL originally, to BSD-2-Clause currently), so one needs to be
     aware of that change. The Ruby License itself is un-versioned, but
     has varied a bit over the years, the last substantive variation
-    being in 2002. (source:
+    being in 2002. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml "Scancode"))
 
 URLs

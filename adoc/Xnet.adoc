@@ -18,15 +18,15 @@
 
 === Comments on (easy) usability
 
-* **↑**Google Classification is NOTICE (source:
+* **↑**``Google Classification is NOTICE'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* **↑**Is OSI Approved (source:
+* **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/Xnet.html[SPDX])
-* **↑**Rating is: Bronze (source:
+* **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
-* Per SPDX.org, this license is OSI certified. This License has been
-voluntarily deprecated by its author. (source:
+* ``Per SPDX.org, this license is OSI certified. This License has been
+voluntarily deprecated by its author. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml[Scancode])
 
 === URLs

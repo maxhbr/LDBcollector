@@ -10,9 +10,9 @@ psfrag License (psfrag)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, this license is considered Free, but GPL-incompatible
+-   “Per Fedora, this license is considered Free, but GPL-incompatible
     only when used for TeX files. In all other use cases, this may not
-    be true. (source:
+    be true. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psfrag.yml "Scancode"))
 
 URLs

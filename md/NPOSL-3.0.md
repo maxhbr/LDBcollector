@@ -14,10 +14,10 @@ Non-Profit Open Software License 3.0 (NPOSL-3.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/NPOSL-3.0.html "SPDX"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nosl-3.0.yml "Scancode"))
 
 URLs

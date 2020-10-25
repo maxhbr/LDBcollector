@@ -20,22 +20,22 @@ Apache License 1.1 (Apache-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Apache-1.1.html "SPDX"))
 
--   **↑**Older versions of the Apache License (1.0 and 1.1) are also
+-   **↑**“Older versions of the Apache License (1.0 and 1.1) are also
     DFSG free, but the Apache Software Foundation recommends using the
-    Apache 2.0 license instead. (source: [Debian Free Software
+    Apache 2.0 license instead.” (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this license is OSI certified. This license has been
-    superseded by Apache 2.0 (source:
+-   “Per SPDX.org, this license is OSI certified. This license has been
+    superseded by Apache 2.0 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml "Scancode"))
 
 URLs

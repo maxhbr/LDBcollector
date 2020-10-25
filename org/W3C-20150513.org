@@ -15,11 +15,11 @@
 
 ** Comments on (easy) usability
 
-- *↑*Google Classification is NOTICE (source:
+- *↑*"Google Classification is NOTICE" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- Previous version was
+- "Previous version was
   http://www.w3.org/Consortium/Legal/2002/copyright- software-20021231
   This version makes clear that the license is applicable to both
   software and text, by changing the name and substituting "work" for
@@ -28,11 +28,11 @@
   make clear that the license is compatible with other liberal licenses.
   There is also a short notice version at
   https://www.w3.org/Consortium/Legal/2015/copyright-
-  software-short-notice.html (source:
+  software-short-notice.html " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-doc-20150513.yml][Scancode]])
 
-- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
-  License List]])
+- *↓*"Rating is: Lead" (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs
 

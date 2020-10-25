@@ -18,16 +18,16 @@ GNU General Public License v1.0 only (GPL-1.0-only)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This is the most popular free software license. Most of Linux
+-   **↑**“This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
-    basic software in the GNU operating system. (source: [Debian Free
+    basic software in the GNU operating system.” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Per SPDX.org, this license was released February 1989. (source:
+-   “Per SPDX.org, this license was released February 1989.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

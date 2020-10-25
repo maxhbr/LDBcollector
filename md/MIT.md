@@ -30,30 +30,32 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This License is featured by choosealicense.com (source:
+-   **↑**“ This License is featured by choosealicense.com” (source:
     [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com"))
 
--   **↑**Exception : The University of Washington's interpretation of
+-   **↑**“Exception : The University of Washington's interpretation of
     the MIT License, as the University interprets it for the pine email
     client, does not follow the DFSG. See the
-    DebianFreeSoftwareGuidelinesDraftFAQ. (source: [Debian Free Software
+    DebianFreeSoftwareGuidelinesDraftFAQ.” (source: [Debian Free
+    Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MIT.html "SPDX"))
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Because MIT has used many licenses for software, the Free Software
+-   “Because MIT has used many licenses for software, the Free Software
     Foundation considers MIT License ambiguous. The MIT License
-    published on the OSI site is the same as the Expat License. (source:
+    published on the OSI site is the same as the Expat License. ”
+    (source:
     [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml "Scancode"))
 
 Obligations

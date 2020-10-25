@@ -14,11 +14,11 @@ Reciprocal Public License 1.1 (RPL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX"))
 
--   Per SPDX.org, this license has been superseded by the Reciprocal
-    Public License, version 1.5 (source:
+-   “Per SPDX.org, this license has been superseded by the Reciprocal
+    Public License, version 1.5 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml "Scancode"))
 
 URLs

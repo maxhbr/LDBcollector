@@ -38,19 +38,19 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Earlier called the "Library General Public License"; this name
-    is deprecated because it confuses the license's intent. (source:
+-   **↑**“Earlier called the "Library General Public License"; this name
+    is deprecated because it confuses the license's intent.” (source:
     [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LGPL-2.1-only.html "SPDX"))
 
--   Per SPDX.org, this license was released February 1999. This license
-    is OSI certified. (source:
+-   “Per SPDX.org, this license was released February 1999. This license
+    is OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations

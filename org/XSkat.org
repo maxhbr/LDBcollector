@@ -13,7 +13,7 @@
 
 ** Comments on (easy) usability
 
-- Per Fedora, this license is Free only when clause 2.b is used. It is
+- "Per Fedora, this license is Free only when clause 2.b is used. It is
   always GPL-incompatible. Packagers using code under this license in
   Fedora should note that while the RPM changelog is sufficient to meet
   one requirement of clause 2.b (to "clearly state who last changed the
@@ -24,7 +24,7 @@
   regular NVR to fulfill 2.b, because the license explicitly specifies
   the versioning schema x.y.z, which is different from how RPM displays
   it (x.y-z). Just add a dummy .0 to the end of the version then
-  increment the Release field like any other package. (source:
+  increment the Release field like any other package. " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml][Scancode]])
 
 ** URLs

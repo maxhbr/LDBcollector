@@ -14,14 +14,14 @@ Beerware License (Beerware)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**Google Classification is CANNOT\_BE\_USED "The Beerware license
-    has similar issues to the WTFPL on account of its vague grant of
-    rights and likewise cannot be used at Google, nor can
-    Beerware-licensed projects be patched by Googlers." (source: [Google
-    OSS
+-   **↓**“Google Classification is CANNOT\_BE\_USED "The Beerware
+    license has similar issues to the WTFPL on account of its vague
+    grant of rights and likewise cannot be used at Google, nor can
+    Beerware-licensed projects be patched by Googlers."” (source:
+    [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

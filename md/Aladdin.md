@@ -12,7 +12,7 @@ Aladdin Free Public License (Aladdin)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license was released 18 Nov 1999 (source:
+-   “Per SPDX.org, this license was released 18 Nov 1999” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afpl-8.0.yml "Scancode"))
 
 URLs

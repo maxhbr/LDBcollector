@@ -16,10 +16,10 @@ Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CATOSL-1.1.html "SPDX"))
 
--   Per SPDX.org, this license is OSI certifified. (source:
+-   “Per SPDX.org, this license is OSI certifified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ca-tosl-1.1.yml "Scancode"))
 
 URLs

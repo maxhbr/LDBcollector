@@ -13,11 +13,12 @@
 
 ** Comments on (easy) usability
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- Per SPDX.org, ANTLR used this public domain notice through version 2.7
-  and then switched to a BSD license for version 3.0 and later. (source:
+- "Per SPDX.org, ANTLR used this public domain notice through version
+  2.7 and then switched to a BSD license for version 3.0 and later. "
+  (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml][Scancode]])
 
 ** URLs

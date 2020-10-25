@@ -15,7 +15,7 @@
 
 === Comments on (easy) usability
 
-* **↑**Rating is: Silver (source:
+* **↑**``Rating is: Silver'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs

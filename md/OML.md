@@ -12,14 +12,14 @@ Open Market License (OML)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per Fedora, this license is based on MIT, but contains additional
+-   “Per Fedora, this license is based on MIT, but contains additional
     clauses which make it more than a simple MIT variant, notably, the
     requirement of statement of new terms of contributions under a
     different license. For that reason, this license is Free, but
-    GPL-incompatible. (source:
+    GPL-incompatible. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml "Scancode"))
 
 URLs

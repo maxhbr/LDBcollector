@@ -12,15 +12,15 @@ Apple Public Source License 1.2 (APSL-1.2)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/APSL-1.2.html "SPDX"))
 
--   Per SPDX.org, this license was released 4 Jan 2001. This license was
-    OSI certified (source:
+-   “Per SPDX.org, this license was released 4 Jan 2001. This license
+    was OSI certified ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml "Scancode"))
 
--   **↓**This license is not compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
+-   **↓**“This license is not compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 

@@ -15,12 +15,12 @@
 
 === Comments on (easy) usability
 
-* **↑**Google Classification is NOTICE (source:
+* **↑**``Google Classification is NOTICE'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* **↓**Infamous for the clause The Software shall be used for Good, not
-Evil. (source: https://wiki.debian.org/DFSGLicenses[Debian Free Software
-Guidelines])
+* **↓**``Infamous for the clause The Software shall be used for Good,
+not Evil.'' (source: https://wiki.debian.org/DFSGLicenses[Debian Free
+Software Guidelines])
 
 === URLs
 

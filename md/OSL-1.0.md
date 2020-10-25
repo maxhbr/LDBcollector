@@ -14,14 +14,14 @@ Open Software License 1.0 (OSL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSL-1.0.html "SPDX"))
 
--   Per SPDX.org, this license was OSI certified. This license has been
-    superseded. (source:
+-   “Per SPDX.org, this license was OSI certified. This license has been
+    superseded. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-1.0.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

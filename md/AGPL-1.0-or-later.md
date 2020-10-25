@@ -12,11 +12,11 @@ Affero General Public License v1.0 or later (AGPL-1.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   per SPDX.org Section 9 of this license allows content under this any
-    later version grant to be redistributed under the GPL-3.0-or-later.
-    Affero Inc. also released an AGPL-2.0
+-   “per SPDX.org Section 9 of this license allows content under this
+    any later version grant to be redistributed under the
+    GPL-3.0-or-later. Affero Inc. also released an AGPL-2.0
     (http://www.affero.org/agpl2.html) to allow AGPL-1.0-or-later work
-    to be distributed under the AGPL-3.0-or-later. (source:
+    to be distributed under the AGPL-3.0-or-later. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml "Scancode"))
 
 URLs

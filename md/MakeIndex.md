@@ -12,8 +12,8 @@ MakeIndex License (MakeIndex)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, this license is free but GPL-incompatible, and was found
-    in the MakeIndex component inside TeXLive. (source:
+-   “Per Fedora, this license is free but GPL-incompatible, and was
+    found in the MakeIndex component inside TeXLive. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/makeindex.yml "Scancode"))
 
 URLs

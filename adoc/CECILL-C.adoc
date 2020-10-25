@@ -16,11 +16,11 @@
 
 === Comments on (easy) usability
 
-* Google Classification is RECIPROCAL (source:
+* ``Google Classification is RECIPROCAL'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* per SPDX.org, English translation can be found here
-http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html (source:
+* ``per SPDX.org, English translation can be found here
+http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml[Scancode])
 
 === URLs

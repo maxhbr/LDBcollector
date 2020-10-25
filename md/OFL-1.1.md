@@ -26,18 +26,18 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OFL-1.1.html "SPDX"))
 
--   **↑**The following restriction on distributions, which is part of
+-   **↑**“The following restriction on distributions, which is part of
     OFL, has been widely accepted by open source projects when it is
     applied to fonts: 1) Neither the Font Software nor any of its
     individual components, in Original or Modified Versions, may be sold
-    by itself. (source: [Debian Free Software
+    by itself.” (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Per SPDX.org, this license was released 26 February 2007. This
-    license is OSI certified (source:
+-   “Per SPDX.org, this license was released 26 February 2007. This
+    license is OSI certified ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.1.yml "Scancode"))
 
 Obligations

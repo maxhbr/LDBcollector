@@ -26,11 +26,11 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX"))
 
--   Per SPDX.org, this version was released 19 November 2007 This
-    license is OSI certified (source:
+-   “Per SPDX.org, this version was released 19 November 2007 This
+    license is OSI certified ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode"))
 
 URLs

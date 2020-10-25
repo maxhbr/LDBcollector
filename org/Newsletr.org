@@ -13,12 +13,13 @@
 
 ** Comments on (easy) usability
 
-- Per Fedora, This is a zlib variant, less restrictive. It was found on
-  the component of texlive 2010. It is Free and GPL-compatible. (source:
+- "Per Fedora, This is a zlib variant, less restrictive. It was found on
+  the component of texlive 2010. It is Free and GPL-compatible. "
+  (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/newsletr.yml][Scancode]])
 
-- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
-  License List]])
+- *↓*"Rating is: Lead" (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs
 

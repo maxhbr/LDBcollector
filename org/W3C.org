@@ -24,18 +24,18 @@
 
 ** Comments on (easy) usability
 
-- *↑*Google Classification is NOTICE (source:
+- *↑*"Google Classification is NOTICE" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/W3C.html][SPDX]])
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- Per SPDX.org, this license was released 13 December 2002. This license
-  is OSI certified. (source:
+- "Per SPDX.org, this license was released 13 December 2002. This
+  license is OSI certified. " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml][Scancode]])
 
 ** URLs

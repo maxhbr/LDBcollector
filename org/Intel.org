@@ -19,14 +19,15 @@
 
 ** Comments on (easy) usability
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/Intel.html][SPDX]])
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- this has this title in SPDX and OSI text The Intel Open Source License
-  for CDSA/CSSM Implementation (BSD License with Export Notice) (source:
+- "this has this title in SPDX and OSI text The Intel Open Source
+  License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+  (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml][Scancode]])
 
 ** URLs

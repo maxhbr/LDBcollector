@@ -12,13 +12,13 @@ Sun Industry Standards Source License v1.2 (SISSL-1.2)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
+-   **↓**“Google Classification is CANNOT\_BE\_USED "Code released under
     the Sun Industry Standards Source License (SISSL) cannot be used at
     Google. This license has terms that are very difficult to comply
     with (even Sun, before being acquired, ceased to use or recommend
     this license). Source files related to sFlow sometimes are released
     under this license, but are typically also available under a
-    slightly less onerous sFlow License." (source: [Google OSS
+    slightly less onerous sFlow License."” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

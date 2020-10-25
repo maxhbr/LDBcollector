@@ -16,11 +16,11 @@ Frameworx Open License 1.0 (Frameworx-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Frameworx-1.0.html "SPDX"))
 
--   Per SPDX.org, this license is OSI certified. The url included in the
-    license does not work. (15/10/10) (source:
+-   “Per SPDX.org, this license is OSI certified. The url included in
+    the license does not work. (15/10/10) ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/frameworx-1.0.yml "Scancode"))
 
 URLs

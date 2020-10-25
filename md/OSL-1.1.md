@@ -12,11 +12,11 @@ Open Software License 1.1 (OSL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↓**This license is not compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
+-   **↓**“This license is not compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 

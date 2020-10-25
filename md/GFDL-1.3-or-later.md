@@ -12,12 +12,12 @@ GNU Free Documentation License v1.3 or later (GFDL-1.3-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   This license was released 3 November 2008. (source:
+-   “This license was released 3 November 2008.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3-plus.yml "Scancode"))
 
--   **↓**Exception: Data licensed under the FDL with no invariant
+-   **↓**“Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
-    http://www.debian.org/vote/2006/vote\_001\#outcome (source: [Debian
+    http://www.debian.org/vote/2006/vote\_001\#outcome” (source: [Debian
     Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 

@@ -10,11 +10,11 @@ Rdisc License (Rdisc)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, this is a permissive style license from Sun, Free and
-    GPL compatible. (source:
+-   “Per Fedora, this is a permissive style license from Sun, Free and
+    GPL compatible. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

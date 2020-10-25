@@ -32,25 +32,25 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑** This License is featured by choosealicense.com (source:
+-   **↑**“ This License is featured by choosealicense.com” (source:
     [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com"))
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Apache-2.0.html "SPDX"))
 
--   **↑**Older versions of the Apache License (1.0 and 1.1) are also
+-   **↑**“Older versions of the Apache License (1.0 and 1.1) are also
     DFSG free, but the Apache Software Foundation recommends using the
-    Apache 2.0 license instead. (source: [Debian Free Software
+    Apache 2.0 license instead.” (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per SPDX.org, this version was released January 2004 This license is
-    OSI certified (source:
+-   “Per SPDX.org, this version was released January 2004 This license
+    is OSI certified ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml "Scancode"))
 
 Obligations

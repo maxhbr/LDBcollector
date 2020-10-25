@@ -10,11 +10,11 @@ ImageMagick License (ImageMagick)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   this is very close to the Apache 2.0 licecnse that was used as a
-    base. (source:
+-   “this is very close to the Apache 2.0 licecnse that was used as a
+    base.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/imagemagick.yml "Scancode"))
 
 URLs

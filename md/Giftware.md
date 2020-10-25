@@ -12,12 +12,12 @@ Giftware License (Giftware)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license may also be known as Allegro 4. The
+-   “Per SPDX.org, this license may also be known as Allegro 4. The
     Allegro 5 license shown at the alleg.sourceforge.net URL is the same
-    as zlib. (source:
+    as zlib. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/allegro-4.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

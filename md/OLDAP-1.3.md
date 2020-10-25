@@ -12,12 +12,12 @@ Open LDAP Public License v1.3 (OLDAP-1.3)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license was released 17 January 1999. This
+-   “Per SPDX.org, this license was released 17 January 1999. This
     license was issued twice in the same day with a minor correction.
-    This is the corrected (second) version. (source:
+    This is the corrected (second) version. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

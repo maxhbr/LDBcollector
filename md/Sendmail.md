@@ -10,8 +10,8 @@ Sendmail License (Sendmail)
 Comments on (easy) usability
 ----------------------------
 
--   this version of the license dates from 2004. There several minor
-    variations publichsed since. (source:
+-   “this version of the license dates from 2004. There several minor
+    variations publichsed since.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml "Scancode"))
 
 URLs

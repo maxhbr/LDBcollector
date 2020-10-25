@@ -10,14 +10,14 @@ FSF All Permissive License (FSFAP)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Per Fedora, This is a simple permissive license, created by the FSF.
-    It is Free and GPL compatible. The FSF recommends it for "small
+-   “Per Fedora, This is a simple permissive license, created by the
+    FSF. It is Free and GPL compatible. The FSF recommends it for "small
     supporting files, short manuals (under 300 lines long) and rough
-    documentation (README files, INSTALL files, etc.)". (source:
+    documentation (README files, INSTALL files, etc.)". ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml "Scancode"))
 
 URLs

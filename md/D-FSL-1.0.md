@@ -10,10 +10,10 @@ Deutsche Freie Software Lizenz (D-FSL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   Per SPDX.org, this license was created for and is backed by the
+-   “Per SPDX.org, this license was created for and is backed by the
     German state. The English translation can be found here
     http://www.dipp.nrw.de/d-fsl/index\_html/lizenzen/en/D-FSL-1\_0\_en.txt
-    (source:
+    ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/d-fsl-1.0-de.yml "Scancode"))
 
 URLs

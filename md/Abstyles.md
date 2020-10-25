@@ -10,7 +10,7 @@ Abstyles License (Abstyles)
 Comments on (easy) usability
 ----------------------------
 
--   the latext2e, verbatim-manual and abstyles are similar licenses
+-   “the latext2e, verbatim-manual and abstyles are similar licenses”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode"))
 

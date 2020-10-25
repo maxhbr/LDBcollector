@@ -39,38 +39,38 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Google Classification is NOTICE (source: [Google OSS
+-   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX"))
 
--   **↑**Note that a 2-clause form of the BSD license, removing the
+-   **↑**“Note that a 2-clause form of the BSD license, removing the
     third condition, is also in use. This is because even a generous
     copyright license does not implicitly forfeit the copyright holder's
     "right of publicity". In other words, even if a license does not
     forbid you from claiming that the copyright holder or other parties
     endorses or promotes your work, the law generally does. We're not
-    aware of any exceptions. (source: [Debian Free Software
+    aware of any exceptions.” (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**Rating is: Bronze (source: [BlueOak License
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+-   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
     und für Veränderungen der Software keine Bedingungen hinsichtlich
     des zu verwendenden Lizenztyps enthalten. Damit kann der
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
+    Software überführen.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
--   Per SPDX.org, this license is OSI certified. (source:
+-   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml "Scancode"))
 
 Obligations

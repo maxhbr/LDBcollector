@@ -22,20 +22,20 @@
 
 ** Comments on (easy) usability
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/IPL-1.0.html][SPDX]])
 
-- *↑*This license was later renamed the Common Public License (CPL). It
+- *↑*"This license was later renamed the Common Public License (CPL). It
   is used for OpenAFS and Postfix and has been accepted in Debian main
-  since 2000. (source: [[https://wiki.debian.org/DFSGLicenses][Debian
+  since 2000." (source: [[https://wiki.debian.org/DFSGLicenses][Debian
   Free Software Guidelines]])
 
-- Google Classification is RECIPROCAL (source:
+- "Google Classification is RECIPROCAL" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- Per SPDX.org, this license is OSI certified. This license was
-  superseded by CPL. (source:
+- "Per SPDX.org, this license is OSI certified. This license was
+  superseded by CPL. " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ibmpl-1.0.yml][Scancode]])
 
 ** URLs

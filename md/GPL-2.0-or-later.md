@@ -20,20 +20,20 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX"))
 
--   **↑**This is the most popular free software license. Most of Linux
+-   **↑**“This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
-    basic software in the GNU operating system. (source: [Debian Free
+    basic software in the GNU operating system.” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Per SPDX.org, this license was released June 1991 This license is
-    OSI certified. (source:
+-   “Per SPDX.org, this license was released June 1991 This license is
+    OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml "Scancode"))
 
--   **↓**Google Classification is RESTRICTED (source: [Google OSS
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs

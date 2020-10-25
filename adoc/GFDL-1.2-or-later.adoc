@@ -16,11 +16,11 @@
 
 === Comments on (easy) usability
 
-* This license was released November 2002 (source:
+* ``This license was released November 2002'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.2-plus.yml[Scancode])
-* **↓**Exception: Data licensed under the FDL with no invariant sections
-are considered DFSG-free as of GR 2006-001:
-http://www.debian.org/vote/2006/vote_001#outcome (source:
+* **↓**``Exception: Data licensed under the FDL with no invariant
+sections are considered DFSG-free as of GR 2006-001:
+http://www.debian.org/vote/2006/vote_001#outcome'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
 === URLs

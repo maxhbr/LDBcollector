@@ -18,7 +18,7 @@ CeCILL Free Software License Agreement v2.1 (CECILL-2.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CECILL-2.1.html "SPDX"))
 
 URLs

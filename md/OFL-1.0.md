@@ -12,15 +12,15 @@ SIL Open Font License 1.0 (OFL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**The following restriction on distributions, which is part of
+-   **↑**“The following restriction on distributions, which is part of
     OFL, has been widely accepted by open source projects when it is
     applied to fonts: 1) Neither the Font Software nor any of its
     individual components, in Original or Modified Versions, may be sold
-    by itself. (source: [Debian Free Software
+    by itself.” (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Per SPDX.org, this license has been superseded. This license was
-    released in November 2005. (source:
+-   “Per SPDX.org, this license has been superseded. This license was
+    released in November 2005. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml "Scancode"))
 
 URLs

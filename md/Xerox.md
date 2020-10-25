@@ -12,12 +12,12 @@ Xerox License (Xerox)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per Fedora, this license is very similar to MIT, except that it
+-   “Per Fedora, this license is very similar to MIT, except that it
     requires that US Export Control laws be followed, which makes it
-    GPL-Incompatible. (source:
+    GPL-Incompatible. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml "Scancode"))
 
 URLs

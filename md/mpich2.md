@@ -12,12 +12,12 @@ mpich2 License (mpich2)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, this is missing the anti-publicity-use clause, and
+-   “Per Fedora, this is missing the anti-publicity-use clause, and
     doesn't mention sublicensing, but otherwise, it is functionally
-    identical to MIT. (source:
+    identical to MIT. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpich.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

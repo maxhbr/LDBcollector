@@ -12,7 +12,7 @@ Independent JPEG Group License (IJG)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

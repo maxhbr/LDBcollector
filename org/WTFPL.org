@@ -27,20 +27,20 @@
 
 ** Comments on (easy) usability
 
-- *↑*This license is compatible with the DebianFreeSoftwareGuidelines
-  (DFSG-free) (source: [[https://wiki.debian.org/DFSGLicenses][Debian
+- *↑*"This license is compatible with the DebianFreeSoftwareGuidelines
+  (DFSG-free)" (source: [[https://wiki.debian.org/DFSGLicenses][Debian
   Free Software Guidelines]])
 
-- *↓*Google Classification is CANNOT_BE_USED "Code released under the
+- *↓*"Google Classification is CANNOT_BE_USED "Code released under the
   WTFPL cannot be used at Google. This license has a large number of
   issues (lack of warranty disclaimer, very vague rights grant), and was
   also rejected as an open source license by OSI. We also do not allow
-  contribution to projects under the WTFPL." (source:
+  contribution to projects under the WTFPL."" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
-- *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
-  License List]])
+- *↓*"Rating is: Lead" (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** Obligations
 

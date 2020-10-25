@@ -10,7 +10,7 @@ OSET Public License version 2.1 (OSET-PL-2.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSET-PL-2.1.html "SPDX"))
 
 URLs

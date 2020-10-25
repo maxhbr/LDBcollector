@@ -12,7 +12,7 @@ Licence Libre du Québec – Réciprocité version 1.1 (LiLiQ-R-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LiLiQ-R-1.1.html "SPDX"))
 
 URLs

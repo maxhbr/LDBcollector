@@ -15,16 +15,16 @@
 
 === Comments on (easy) usability
 
-* **↓**Google Classification is CANNOT_BE_USED "Everything that Google
+* **↓**``Google Classification is CANNOT_BE_USED "Everything that Google
 undertakes, including research, is considered a commercial endeavor, so
 no code released under a license that restricts it to non-commercial
 uses may be used at Google. For example, works under any Creative
 Commons licenses containing NC (CC BY-NC, CC BY-NC-SA, CC BY-NC-ND) may
-not be used at Google." (source:
+not be used at Google."'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* **↓**This license is not compatible with the
-DebianFreeSoftwareGuidelines (DFSG-unfree) (source:
+* **↓**``This license is not compatible with the
+DebianFreeSoftwareGuidelines (DFSG-unfree)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
 === URLs

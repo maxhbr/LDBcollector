@@ -12,16 +12,16 @@ BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/BSD-2-Clause-Patent.html "SPDX"))
 
--   **↑**Rating is: Gold (source: [BlueOak License
+-   **↑**“Rating is: Gold” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per the OSI, this license is designed to provide a) a simple
+-   “Per the OSI, this license is designed to provide a) a simple
     permissive license; b) that is compatible with the GNU General
     Public License (GPL), version 2; and c) which also has an express
-    patent grant included. (source:
+    patent grant included. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-plus-patent.yml "Scancode"))
 
 URLs

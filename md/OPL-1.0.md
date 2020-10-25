@@ -12,8 +12,8 @@ Open Public License v1.0 (OPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**This license is not compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
+-   **↓**“This license is not compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 

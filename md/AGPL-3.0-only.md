@@ -45,26 +45,26 @@ Description
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AGPL-3.0-only.html "SPDX"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Per SPDX.org, this version was released 19 November 2007 This
-    license is OSI certified (source:
+-   “Per SPDX.org, this version was released 19 November 2007 This
+    license is OSI certified ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0.yml "Scancode"))
 
--   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
+-   **↓**“Google Classification is CANNOT\_BE\_USED "Code released under
     the GNU Affero General Public License (AGPL) cannot be used in
     google3 under any circumstances, and only very rarely on
-    workstations. Read more at go/agpl" (source: [Google OSS
+    workstations. Read more at go/agpl"” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations

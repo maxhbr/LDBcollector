@@ -21,13 +21,13 @@
 
 ** Comments on (easy) usability
 
-- *↑*Older versions of the Apache License (1.0 and 1.1) are also DFSG
+- *↑*"Older versions of the Apache License (1.0 and 1.1) are also DFSG
   free, but the Apache Software Foundation recommends using the Apache
-  2.0 license instead. (source:
+  2.0 license instead." (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]])
 
-- *↑*Rating is: Bronze (source:
+- *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
 ** URLs

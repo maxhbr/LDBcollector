@@ -10,12 +10,12 @@ Newsletr License (Newsletr)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, This is a zlib variant, less restrictive. It was found
-    on the component of texlive 2010. It is Free and GPL-compatible.
+-   “Per Fedora, This is a zlib variant, less restrictive. It was found
+    on the component of texlive 2010. It is Free and GPL-compatible. ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/newsletr.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

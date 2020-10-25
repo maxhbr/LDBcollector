@@ -16,16 +16,16 @@
 
 ** Comments on (easy) usability
 
-- *↑*Is OSI Approved (source:
+- *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/BSD-2-Clause-Patent.html][SPDX]])
 
-- *↑*Rating is: Gold (source: [[https://blueoakcouncil.org/list][BlueOak
-  License List]])
+- *↑*"Rating is: Gold" (source:
+  [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- Per the OSI, this license is designed to provide a) a simple
+- "Per the OSI, this license is designed to provide a) a simple
   permissive license; b) that is compatible with the GNU General Public
   License (GPL), version 2; and c) which also has an express patent
-  grant included. (source:
+  grant included. " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-plus-patent.yml][Scancode]])
 
 ** URLs

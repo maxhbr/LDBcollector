@@ -12,9 +12,9 @@ Intel ACPI Software License Agreement (Intel-ACPI)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, this license is no longer available at its original URL
+-   “Per Fedora, this license is no longer available at its original URL
     http://www.intel.com/technology/iapc/acpi/license2.htm. A copy was
-    taken from the last available version at archive.org. (source:
+    taken from the last available version at archive.org. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-acpi.yml "Scancode"))
 
 URLs

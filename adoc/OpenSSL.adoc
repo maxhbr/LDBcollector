@@ -18,17 +18,17 @@
 
 === Comments on (easy) usability
 
-* **↑**Google Classification is NOTICE (source:
+* **↑**``Google Classification is NOTICE'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
-* **↑**Rating is: Bronze (source:
+* **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
-* **↑**This software Licenses is OK for Fedora (source:
+* **↑**``This software Licenses is OK for Fedora'' (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* This is the OpenSSL license proper, without the SSLEay part. The SPDX
-OpenSSL identifier does not apply here. Instead it matches the openssl-
-ssleay license. (source:
+* ``This is the OpenSSL license proper, without the SSLEay part. The
+SPDX OpenSSL identifier does not apply here. Instead it matches the
+openssl- ssleay license. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml[Scancode])
 
 === URLs

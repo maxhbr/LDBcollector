@@ -12,17 +12,17 @@ Mozilla Public License 2.0 (no copyleft exception) (MPL-2.0-no-copyleft-exceptio
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Is OSI Approved (source:
+-   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html "SPDX"))
 
--   **↑**This license is compatible with the
-    DebianFreeSoftwareGuidelines (DFSG-free) (source: [Debian Free
+-   **↑**“This license is compatible with the
+    DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Per SPDX.org, this license was released in January 2012. This
+-   “Per SPDX.org, this license was released in January 2012. This
     license list entry is for use when the MPL's Exhibit B, which
-    removes the Sec 3.3 copyleft exception. (source:
+    removes the Sec 3.3 copyleft exception. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml "Scancode"))
 
 URLs

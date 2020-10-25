@@ -10,15 +10,15 @@ No Limit Public License (NLPL)
 Comments on (easy) usability
 ----------------------------
 
--   Per Fedora, there is a certain irony in a Frenchman writing a
+-   “Per Fedora, there is a certain irony in a Frenchman writing a
     license that isn't wholly applicable in France, due to Moral Rights.
     But I digress. This license is basically the same as the WTFPL (with
     slightly less profanity). It is Free and GPL-Compatible. A copy of
     the license text was taken from http://imapsync.lamiral.info/COPYING
-    on 2012-07-09. (source:
+    on 2012-07-09. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml "Scancode"))
 
--   **↓**Rating is: Lead (source: [BlueOak License
+-   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs

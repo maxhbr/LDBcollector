@@ -10,13 +10,13 @@ Mup License (Mup)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**Rating is: Silver (source: [BlueOak License
+-   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Per Fedora, this is a BSD derived Free license, but clause 3 makes
+-   “Per Fedora, this is a BSD derived Free license, but clause 3 makes
     it GPL- incompatible, due to the need to include the reasons for the
     changes. A copy of this license was taken from
-    http://www.arkkra.com/doc/license.html on 2013-02-15. (source:
+    http://www.arkkra.com/doc/license.html on 2013-02-15. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mup.yml "Scancode"))
 
 URLs
