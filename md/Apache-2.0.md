@@ -740,12 +740,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "Apache Software License 2.0",
-                        "Apache-2.0"
+                        "Apache-2.0",
+                        "Apache Software License 2.0"
                     ]
                 },
                 "licenseId": [
-                    "Apache-2.0"
+                    "Apache-2.0",
+                    "Apache Software License 2.0"
                 ]
             },
             "choosealicense.com": {

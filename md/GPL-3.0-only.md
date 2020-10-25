@@ -1482,7 +1482,6 @@ Raw Data
                 "notes": "GPL-3.0 provides the option to use either that version of the license only or to make it available under any later version of that license. This is denoted in the standard license header and by using GPL-3.0-only or GPL-3.0-or-later. For a comparison of GPL-3.0 to GPL-2.0, see http://copyleft.org/guide/comprehensive-gpl-guidech10.html#x13-660009.1[Copyleft Guide: Understanding GPLv3 As An Upgraded GPLv2]",
                 "_implications": {
                     "__impliedNames": [
-                        "GNU General Public License 3.0",
                         "GPL-3.0-only"
                     ]
                 },

@@ -531,12 +531,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "notes": null,
             "_implications": {
                 "__impliedNames": [
-                    "MIT License",
-                    "MIT"
+                    "MIT",
+                    "MIT License"
                 ]
             },
             "licenseId": [
-                "MIT"
+                "MIT",
+                "MIT License"
             ]
         },
         "choosealicense.com": {

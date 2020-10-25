@@ -577,12 +577,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "Microsoft Public License",
-                        "Ms-PL"
+                        "Ms-PL",
+                        "Microsoft Public License"
                     ]
                 },
                 "licenseId": [
-                    "Ms-PL"
+                    "Ms-PL",
+                    "Microsoft Public License"
                 ]
             },
             "choosealicense.com": {

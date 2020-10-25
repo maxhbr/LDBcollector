@@ -286,12 +286,13 @@ PHP includes the Zend Engine, freely available at
             "notes": "PHP-3.0 and PHP-3.01 are the same license, but for a slight variation in the acknowledment text.",
             "_implications": {
                 "__impliedNames": [
-                    "PHP License v3.01",
-                    "PHP-3.01"
+                    "PHP-3.01",
+                    "PHP License v3.01"
                 ]
             },
             "licenseId": [
-                "PHP-3.01"
+                "PHP-3.01",
+                "PHP License v3.01"
             ]
         }
     },

@@ -417,12 +417,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "BSD 4-Clause \"Original\" or \"Old\" License",
-                        "BSD-4-Clause"
+                        "BSD-4-Clause",
+                        "BSD 4-Clause \"Original\" or \"Old\" License"
                     ]
                 },
                 "licenseId": [
-                    "BSD-4-Clause"
+                    "BSD-4-Clause",
+                    "BSD 4-Clause \"Original\" or \"Old\" License"
                 ]
             },
             "Google OSS Policy": {

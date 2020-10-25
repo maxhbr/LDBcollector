@@ -443,12 +443,13 @@ SUCH DAMAGE.
             "notes": "Apache-1.1 and Entessa are essentially the same license (as per SPDX License List Matching Guidelines).  Because the OSI approved them separately, they are listed separately (here and on the SPDX License List).",
             "_implications": {
                 "__impliedNames": [
-                    "Apache Software License 1.1",
-                    "Apache-1.1"
+                    "Apache-1.1",
+                    "Apache Software License 1.1"
                 ]
             },
             "licenseId": [
-                "Apache-1.1"
+                "Apache-1.1",
+                "Apache Software License 1.1"
             ]
         },
         "Google OSS Policy": {

@@ -229,12 +229,13 @@
             "notes": "The advertising clause was rescinded by the University of California in 1999 for all material under BSD-4-Clause with University of California copyright notice. Thus, you do not need to comply with the advertising/acknowledgment requirement, which makes the license essentially BSD-3-Clause.",
             "_implications": {
                 "__impliedNames": [
-                    "BSD-4-Clause (University of California-Specific)",
-                    "BSD-4-Clause-UC"
+                    "BSD-4-Clause-UC",
+                    "BSD-4-Clause (University of California-Specific)"
                 ]
             },
             "licenseId": [
-                "BSD-4-Clause-UC"
+                "BSD-4-Clause-UC",
+                "BSD-4-Clause (University of California-Specific)"
             ]
         },
         "Google OSS Policy": {

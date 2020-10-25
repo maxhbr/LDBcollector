@@ -443,7 +443,6 @@
             "notes": "LGPL-3.0 incorporates the terms of GPL-3.0 and supplements the parent license with the terms listed here.",
             "_implications": {
                 "__impliedNames": [
-                    "GNU Lesser General Public License 3.0",
                     "LGPL-3.0-only"
                 ]
             },

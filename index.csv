@@ -10,7 +10,7 @@ Academic Free License v3.0,AFL-3.0,Go,NoCopyleft,True,UNDEFINED
 Affero General Public License v1.0 only,AGPL-1.0-only,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 Affero General Public License v1.0 or later,AGPL-1.0-or-later,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 GNU Affero General Public License v3.0 only,AGPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
-GNU Affero General Public License v3.0 only,AGPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",StrongCopyleft,True,UNDEFINED
+GNU Affero General Public License v3.0 or later,AGPL-3.0-or-later,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
 AMD's plpa_map.c License,AMDPLPA,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Apple MIT License,AML,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Academy of Motion Picture Arts and Sciences BSD,AMPAS,Go,NoCopyleft,UNDEFINED,UNDEFINED
@@ -147,7 +147,7 @@ GL2PS License,GL2PS,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,
 GNU General Public License v1.0 only,GPL-1.0-only,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 GNU General Public License v1.0 or later,GPL-1.0-or-later,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 GNU General Public License v2.0 only,GPL-2.0-only,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
-GNU General Public License v2.0 only,GPL-2.0-only,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
+GNU General Public License v2.0 or later,GPL-2.0-or-later,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
 GNU General Public License v3.0 only,GPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
 GNU General Public License v3.0 only,GPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",Copyleft,True,UNDEFINED
 Giftware License,Giftware,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
@@ -174,9 +174,9 @@ JasPer License,JasPer-2.0,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Licence Art Libre 1.2,LAL-1.2,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 Licence Art Libre 1.3,LAL-1.3,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 GNU Library General Public License v2 only,LGPL-2.0-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
-GNU Library General Public License v2 only,LGPL-2.0-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
+GNU Library General Public License v2 or later,LGPL-2.0-or-later,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 GNU Lesser General Public License v2.1 only,LGPL-2.1-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
-GNU Lesser General Public License v2.1 only,LGPL-2.1-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
+GNU Lesser General Public License v2.1 or later,LGPL-2.1-or-later,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
 GNU Lesser General Public License v3.0 only,LGPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
 GNU Lesser General Public License v3.0 only,LGPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
 Lesser General Public License For Linguistic Resources,LGPLLR,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED

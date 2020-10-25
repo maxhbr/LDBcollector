@@ -279,12 +279,13 @@
             "notes": "NCSA is essentially an MIT grant with BSD-3-Clause conditions, thus compliance is the same as BSD-3-Clause.",
             "_implications": {
                 "__impliedNames": [
-                    "University of Illinois/NCSA Open Source License",
-                    "NCSA"
+                    "NCSA",
+                    "University of Illinois/NCSA Open Source License"
                 ]
             },
             "licenseId": [
-                "NCSA"
+                "NCSA",
+                "University of Illinois/NCSA Open Source License"
             ]
         },
         "choosealicense.com": {

@@ -2,29 +2,18 @@
     "__impliedNames": [
         "AGPL-3.0-only",
         "GNU Affero General Public License v3.0 only",
-        "AGPL-3.0-or-later",
-        "GNU Affero General Public License v3.0 or later",
         "AGPL-3.0",
         "scancode://agpl-3.0",
         "AGPL 3.0",
-        "scancode://agpl-3.0-plus",
-        "AGPL 3.0 or later",
         "agpl-3.0",
         "GNU AGPLv3",
         "Affero General Public License 3.0",
         "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
         "License :: OSI Approved :: GNU Affero General Public License v3",
-        "GNU Affero General Public License 3.0",
         "GNU Affero General Public License v3",
         "AGPL3.0",
         "AGPL3",
-        "AGPL (v3)",
-        "AGPL-3.0+",
-        "AGPL3.0+",
-        "AGPL3+",
-        "AGPL (v3 or later)",
-        "Affero General Public License 3.0 or later",
-        "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
+        "AGPL (v3)"
     ],
     "__impliedId": "AGPL-3.0-only",
     "__isFsfFree": true,
@@ -325,50 +314,6 @@
                 ]
             }
         },
-        "Wikipedia": {
-            "Distribution": {
-                "value": "Copylefted",
-                "description": "distribution of the code to third parties"
-            },
-            "Sublicensing": {
-                "value": "Copylefted",
-                "description": "whether modified code may be licensed under a different license (for example a copyright) or must retain the same license under which it was provided"
-            },
-            "Linking": {
-                "value": "GNU GPLv3 only",
-                "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
-            },
-            "Publication date": "2007",
-            "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-            "Koordinaten": {
-                "name": "GNU Affero General Public License",
-                "version": "3.0",
-                "spdxId": "AGPL-3.0-or-later"
-            },
-            "Patent grant": {
-                "value": "Yes",
-                "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"
-            },
-            "Trademark grant": {
-                "value": "Yes",
-                "description": "use of trademarks associated with the licensed code or its contributors by a licensee"
-            },
-            "_implications": {
-                "__impliedNames": [
-                    "AGPL-3.0-or-later",
-                    "GNU Affero General Public License 3.0"
-                ],
-                "__hasPatentHint": true
-            },
-            "Private use": {
-                "value": "Copylefted",
-                "description": "whether modification to the code must be shared with the community or may be used privately (e.g. internal use by a corporation)"
-            },
-            "Modification": {
-                "value": "Copylefted",
-                "description": "modification of the code by a licensee"
-            }
-        },
         "finos-osr/OSLC-handbook": {
             "terms": [
                 {
@@ -493,7 +438,6 @@
             "notes": "AGPL-3.0 is the same license as GPL-3.0, but with an additional term in section 13 which imposes a requirement for a modified version accessed via remote computer network. AGPL-3.0 provides the option to use either that version of the license only or to make it available under any later version of that license. This is denoted in the standard license header and by using AGPL-3.0-only or AGPL-3.0-or-later.",
             "_implications": {
                 "__impliedNames": [
-                    "GNU Affero General Public License 3.0",
                     "AGPL-3.0-only"
                 ]
             },
@@ -728,10 +672,6 @@
             "https://opensource.org/licenses/AGPL-3.0"
         ],
         [
-            "SPDX",
-            "http://spdx.org/licenses/AGPL-3.0-or-later.json"
-        ],
-        [
             "Homepage",
             "http://www.gnu.org/licenses/agpl-3.0.html"
         ],
@@ -750,14 +690,6 @@
         [
             null,
             "https://opensource.google.com/docs/using/agpl-policy/"
-        ],
-        [
-            null,
-            "http://www.fsf.org/licensing/licenses/agpl-3.0.html"
-        ],
-        [
-            null,
-            "http://www.fsf.org/licensing/licenses/agpl-3.0.txt"
         ],
         [
             "OSI Page",

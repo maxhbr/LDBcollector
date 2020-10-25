@@ -211,12 +211,13 @@ Raw Data
                 "notes": "This is a blanket license with no conditions.",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD Zero Clause License",
-                        "0BSD"
+                        "0BSD",
+                        "BSD Zero Clause License"
                     ]
                 },
                 "licenseId": [
-                    "0BSD"
+                    "0BSD",
+                    "BSD Zero Clause License"
                 ]
             },
             "choosealicense.com": {

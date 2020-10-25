@@ -315,12 +315,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "libpng License",
-                        "Libpng"
+                        "Libpng",
+                        "libpng License"
                     ]
                 },
                 "licenseId": [
-                    "Libpng"
+                    "Libpng",
+                    "libpng License"
                 ]
             }
         },

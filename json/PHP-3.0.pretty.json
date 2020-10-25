@@ -290,12 +290,13 @@
             "notes": "PHP-3.0 and PHP-3.01 are the same license, but for a slight variation in the acknowledment text.",
             "_implications": {
                 "__impliedNames": [
-                    "PHP License v3.0",
-                    "PHP-3.0"
+                    "PHP-3.0",
+                    "PHP License v3.0"
                 ]
             },
             "licenseId": [
-                "PHP-3.0"
+                "PHP-3.0",
+                "PHP License v3.0"
             ]
         },
         "Google OSS Policy": {

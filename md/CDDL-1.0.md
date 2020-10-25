@@ -538,12 +538,13 @@ Raw Data
                 "notes": "Versions 1.0 and 1.1 are essentially the same, except v1.1 adds a patent infringement clause and choice of law.",
                 "_implications": {
                     "__impliedNames": [
-                        "Common Development and Distribution License 1.0",
-                        "CDDL-1.0"
+                        "CDDL-1.0",
+                        "Common Development and Distribution License 1.0"
                     ]
                 },
                 "licenseId": [
-                    "CDDL-1.0"
+                    "CDDL-1.0",
+                    "Common Development and Distribution License 1.0"
                 ]
             },
             "Google OSS Policy": {

@@ -462,12 +462,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "ISC License",
-                        "ISC"
+                        "ISC",
+                        "ISC License"
                     ]
                 },
                 "licenseId": [
-                    "ISC"
+                    "ISC",
+                    "ISC License"
                 ]
             },
             "choosealicense.com": {

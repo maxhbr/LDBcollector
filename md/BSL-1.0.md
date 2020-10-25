@@ -419,12 +419,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "Boost Software License 1.0",
-                        "BSL-1.0"
+                        "BSL-1.0",
+                        "Boost Software License 1.0"
                     ]
                 },
                 "licenseId": [
-                    "BSL-1.0"
+                    "BSL-1.0",
+                    "Boost Software License 1.0"
                 ]
             },
             "choosealicense.com": {

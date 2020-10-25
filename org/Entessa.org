@@ -376,12 +376,13 @@
               "notes": "Apache-1.1 and Entessa are essentially the same license (as per SPDX License List Matching Guidelines).  Because the OSI approved them separately, they are listed separately (here and on the SPDX License List).",
               "_implications": {
                   "__impliedNames": [
-                      "Entessa Public License 1.0",
-                      "Entessa"
+                      "Entessa",
+                      "Entessa Public License 1.0"
                   ]
               },
               "licenseId": [
-                  "Entessa"
+                  "Entessa",
+                  "Entessa Public License 1.0"
               ]
           }
       },

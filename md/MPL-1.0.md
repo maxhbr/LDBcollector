@@ -489,12 +489,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "Mozilla Public License 1.0",
-                        "MPL-1.0"
+                        "MPL-1.0",
+                        "Mozilla Public License 1.0"
                     ]
                 },
                 "licenseId": [
-                    "MPL-1.0"
+                    "MPL-1.0",
+                    "Mozilla Public License 1.0"
                 ]
             },
             "Google OSS Policy": {

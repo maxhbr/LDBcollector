@@ -5,19 +5,11 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 **Other Names:**
 
--   `AGPL-3.0-or-later`
-
--   `GNU Affero General Public License v3.0 or later`
-
 -   `AGPL-3.0`
 
 -   `scancode://agpl-3.0`
 
 -   `AGPL 3.0`
-
--   `scancode://agpl-3.0-plus`
-
--   `AGPL 3.0 or later`
 
 -   `agpl-3.0`
 
@@ -25,31 +17,17 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 -   `Affero General Public License 3.0`
 
--   `Affero General Public License 3.0 or later`
-
 -   `GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)`
 
 -   `License :: OSI Approved :: GNU Affero General Public License v3`
 
--   `GNU Affero General Public License 3.0`
-
 -   `GNU Affero General Public License v3`
-
--   `GNU Affero General Public License (AGPL-3.0) (v. 3.0)`
 
 -   `AGPL3.0`
 
 -   `AGPL3`
 
 -   `AGPL (v3)`
-
--   `AGPL-3.0+`
-
--   `AGPL3.0+`
-
--   `AGPL3+`
-
--   `AGPL (v3 or later)`
 
 Description
 -----------
@@ -79,17 +57,6 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
-    Lizenznehmer verpflichtet von der ursprünglichen Software
-    abgeleitete Werke ebenfalls nur unter den Bedingungen der
-    Ursprungslizenz weiterzuverbreiten. Die hier aufgeführten Lizenzen
-    enthalten die verschiedenen GPL-Versionen und davon abgeleitete
-    Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit
-    Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit
-    Ausnahmen können auch als beschränktes Copyleft verstanden werden.
-    (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 -   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
     the GNU Affero General Public License (AGPL) cannot be used in
     google3 under any circumstances, and only very rarely on
@@ -115,17 +82,11 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/AGPL-3.0-only.json
 
--   **SPDX:** http://spdx.org/licenses/AGPL-3.0-or-later.json
-
 -   https://www.gnu.org/licenses/agpl.txt
 
 -   http://www.opensource.org/licenses/AGPL-3.0
 
 -   https://opensource.google.com/docs/using/agpl-policy/
-
--   http://www.fsf.org/licensing/licenses/agpl-3.0.html
-
--   http://www.fsf.org/licensing/licenses/agpl-3.0.txt
 
 OSADL Rule
 ----------
@@ -477,29 +438,18 @@ Raw Data
         "__impliedNames": [
             "AGPL-3.0-only",
             "GNU Affero General Public License v3.0 only",
-            "AGPL-3.0-or-later",
-            "GNU Affero General Public License v3.0 or later",
             "AGPL-3.0",
             "scancode://agpl-3.0",
             "AGPL 3.0",
-            "scancode://agpl-3.0-plus",
-            "AGPL 3.0 or later",
             "agpl-3.0",
             "GNU AGPLv3",
             "Affero General Public License 3.0",
-            "Affero General Public License 3.0 or later",
             "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
             "License :: OSI Approved :: GNU Affero General Public License v3",
-            "GNU Affero General Public License 3.0",
             "GNU Affero General Public License v3",
-            "GNU Affero General Public License (AGPL-3.0) (v. 3.0)",
             "AGPL3.0",
             "AGPL3",
-            "AGPL (v3)",
-            "AGPL-3.0+",
-            "AGPL3.0+",
-            "AGPL3+",
-            "AGPL (v3 or later)"
+            "AGPL (v3)"
         ],
         "__impliedId": "AGPL-3.0-only",
         "__isFsfFree": true,
@@ -753,40 +703,6 @@ Raw Data
                 "oCompatibilities": null,
                 "oRatingState": null
             },
-            "ifrOSS": {
-                "ifrKind": "IfrStrongCopyleft_GPLlike",
-                "ifrURL": "http://www.fsf.org/licensing/licenses/agpl-3.0.html",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "GNU Affero General Public License (AGPL-3.0) (v. 3.0)",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgefÃ¼hrten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit Ausnahmen kÃ¶nnen auch als beschrÃ¤nktes Copyleft verstanden werden."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "StrongCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "StrongCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://www.fsf.org/licensing/licenses/agpl-3.0.html"
-                        ]
-                    ]
-                }
-            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -832,50 +748,6 @@ Raw Data
                             "https://opensource.org/licenses/AGPL-3.0"
                         ]
                     ]
-                }
-            },
-            "Wikipedia": {
-                "Distribution": {
-                    "value": "Copylefted",
-                    "description": "distribution of the code to third parties"
-                },
-                "Sublicensing": {
-                    "value": "Copylefted",
-                    "description": "whether modified code may be licensed under a different license (for example a copyright) or must retain the same license under which it was provided"
-                },
-                "Linking": {
-                    "value": "GNU GPLv3 only",
-                    "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
-                },
-                "Publication date": "2007",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
-                    "name": "GNU Affero General Public License",
-                    "version": "3.0",
-                    "spdxId": "AGPL-3.0-or-later"
-                },
-                "Patent grant": {
-                    "value": "Yes",
-                    "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"
-                },
-                "Trademark grant": {
-                    "value": "Yes",
-                    "description": "use of trademarks associated with the licensed code or its contributors by a licensee"
-                },
-                "_implications": {
-                    "__impliedNames": [
-                        "AGPL-3.0-or-later",
-                        "GNU Affero General Public License 3.0"
-                    ],
-                    "__hasPatentHint": true
-                },
-                "Private use": {
-                    "value": "Copylefted",
-                    "description": "whether modification to the code must be shared with the community or may be used privately (e.g. internal use by a corporation)"
-                },
-                "Modification": {
-                    "value": "Copylefted",
-                    "description": "modification of the code by a licensee"
                 }
             },
             "finos-osr/OSLC-handbook": {
@@ -1002,7 +874,6 @@ Raw Data
                 "notes": "AGPL-3.0 is the same license as GPL-3.0, but with an additional term in section 13 which imposes a requirement for a modified version accessed via remote computer network. AGPL-3.0 provides the option to use either that version of the license only or to make it available under any later version of that license. This is denoted in the standard license header and by using AGPL-3.0-only or AGPL-3.0-or-later.",
                 "_implications": {
                     "__impliedNames": [
-                        "GNU Affero General Public License 3.0",
                         "AGPL-3.0-only"
                     ]
                 },
@@ -1152,13 +1023,6 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten. Die hier aufgefÃ¼hrten Lizenzen enthalten die verschiedenen GPL-Versionen und davon abgeleitete Lizenztexte. Zudem finden sich hier einige GPL-Varianten mit Ausnahmeregelungen vom strengen Copyleft. Diese Lizenzen mit Ausnahmen kÃ¶nnen auch als beschrÃ¤nktes Copyleft verstanden werden."
-                }
             ]
         ],
         "__impliedCopyleft": [
@@ -1169,13 +1033,9 @@ Raw Data
             [
                 "Scancode",
                 "Copyleft"
-            ],
-            [
-                "ifrOSS",
-                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "StrongCopyleft",
+        "__calculatedCopyleft": "Copyleft",
         "__obligations": {
             "limitations": [
                 {
@@ -1248,10 +1108,6 @@ Raw Data
                 "https://opensource.org/licenses/AGPL-3.0"
             ],
             [
-                "SPDX",
-                "http://spdx.org/licenses/AGPL-3.0-or-later.json"
-            ],
-            [
                 "Homepage",
                 "http://www.gnu.org/licenses/agpl-3.0.html"
             ],
@@ -1270,14 +1126,6 @@ Raw Data
             [
                 null,
                 "https://opensource.google.com/docs/using/agpl-policy/"
-            ],
-            [
-                null,
-                "http://www.fsf.org/licensing/licenses/agpl-3.0.html"
-            ],
-            [
-                null,
-                "http://www.fsf.org/licensing/licenses/agpl-3.0.txt"
             ],
             [
                 "OSI Page",

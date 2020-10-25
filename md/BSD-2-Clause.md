@@ -430,12 +430,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "BSD 2-Clause \"Simplified\" License",
-                        "BSD-2-Clause"
+                        "BSD-2-Clause",
+                        "BSD 2-Clause \"Simplified\" License"
                     ]
                 },
                 "licenseId": [
-                    "BSD-2-Clause"
+                    "BSD-2-Clause",
+                    "BSD 2-Clause \"Simplified\" License"
                 ]
             },
             "choosealicense.com": {

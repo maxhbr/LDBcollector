@@ -524,12 +524,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "MIT License",
-                        "MIT"
+                        "MIT",
+                        "MIT License"
                     ]
                 },
                 "licenseId": [
-                    "MIT"
+                    "MIT",
+                    "MIT License"
                 ]
             },
             "choosealicense.com": {

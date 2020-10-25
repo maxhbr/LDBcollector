@@ -240,12 +240,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "TCL/TK License",
-                        "TCL"
+                        "TCL",
+                        "TCL/TK License"
                     ]
                 },
                 "licenseId": [
-                    "TCL"
+                    "TCL",
+                    "TCL/TK License"
                 ]
             }
         },

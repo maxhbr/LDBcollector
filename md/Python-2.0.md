@@ -575,12 +575,13 @@ Raw Data
                 "notes": "This is a license âstackâ comprised of various licenses that apply to Python as it has developed over the years.",
                 "_implications": {
                     "__impliedNames": [
-                        "Python License 2.0",
-                        "Python-2.0"
+                        "Python-2.0",
+                        "Python License 2.0"
                     ]
                 },
                 "licenseId": [
-                    "Python-2.0"
+                    "Python-2.0",
+                    "Python License 2.0"
                 ]
             },
             "Google OSS Policy": {

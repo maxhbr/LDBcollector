@@ -368,12 +368,13 @@ Raw Data
                 "notes": "This license is actually a set of two licenses, which have similar text and requirements but different copyright holders and therefore different acknowledgment text. Some requirements to include acknowledgements may only apply if you are using that part of the project written by a specific copyright holder.",
                 "_implications": {
                     "__impliedNames": [
-                        "OpenSSL License",
-                        "OpenSSL"
+                        "OpenSSL",
+                        "OpenSSL License"
                     ]
                 },
                 "licenseId": [
-                    "OpenSSL"
+                    "OpenSSL",
+                    "OpenSSL License"
                 ]
             },
             "Google OSS Policy": {

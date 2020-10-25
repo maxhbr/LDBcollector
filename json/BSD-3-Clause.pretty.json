@@ -413,12 +413,13 @@
             "notes": null,
             "_implications": {
                 "__impliedNames": [
-                    "BSD 3-Clause \"New\" or \"Revised\" License",
-                    "BSD-3-Clause"
+                    "BSD-3-Clause",
+                    "BSD 3-Clause \"New\" or \"Revised\" License"
                 ]
             },
             "licenseId": [
-                "BSD-3-Clause"
+                "BSD-3-Clause",
+                "BSD 3-Clause \"New\" or \"Revised\" License"
             ]
         },
         "choosealicense.com": {

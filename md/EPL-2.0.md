@@ -704,12 +704,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "Eclipse Public License 2.0",
-                        "EPL-2.0"
+                        "EPL-2.0",
+                        "Eclipse Public License 2.0"
                     ]
                 },
                 "licenseId": [
-                    "EPL-2.0"
+                    "EPL-2.0",
+                    "Eclipse Public License 2.0"
                 ]
             },
             "choosealicense.com": {

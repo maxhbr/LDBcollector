@@ -230,12 +230,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "CMU License",
-                        "MIT-CMU"
+                        "MIT-CMU",
+                        "CMU License"
                     ]
                 },
                 "licenseId": [
-                    "MIT-CMU"
+                    "MIT-CMU",
+                    "CMU License"
                 ]
             }
         },

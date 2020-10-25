@@ -556,12 +556,13 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "notes": null,
             "_implications": {
                 "__impliedNames": [
-                    "Eclipse Public License 1.0",
-                    "EPL-1.0"
+                    "EPL-1.0",
+                    "Eclipse Public License 1.0"
                 ]
             },
             "licenseId": [
-                "EPL-1.0"
+                "EPL-1.0",
+                "Eclipse Public License 1.0"
             ]
         },
         "choosealicense.com": {

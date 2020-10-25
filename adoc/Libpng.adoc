@@ -318,12 +318,13 @@ October 31, 2008
             "notes": null,
             "_implications": {
                 "__impliedNames": [
-                    "libpng License",
-                    "Libpng"
+                    "Libpng",
+                    "libpng License"
                 ]
             },
             "licenseId": [
-                "Libpng"
+                "Libpng",
+                "libpng License"
             ]
         }
     },

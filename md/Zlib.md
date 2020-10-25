@@ -545,12 +545,13 @@ Raw Data
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
-                        "zlib License",
-                        "zlib"
+                        "zlib",
+                        "zlib License"
                     ]
                 },
                 "licenseId": [
-                    "zlib"
+                    "zlib",
+                    "zlib License"
                 ]
             },
             "choosealicense.com": {
