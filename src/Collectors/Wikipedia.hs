@@ -115,7 +115,7 @@ tableToShortnameMapping = M.fromList $ map (\((s1, s2), s3) -> ((s1, handleField
   , (("MIT license / X11 license","N/A"), "MIT")
   , (("Mozilla Public License","2.0"), "MPL-2.0")
   , (("Netscape Public License","1.1"), "NPL-1.1")
-  , (("Open Software License","3.0"), "OSL-1.0")
+  , (("Open Software License","3.0"), "OSL-3.0")
   , (("OpenSSL license","N/A"), "OpenSSL")
   , (("Python Software Foundation License","2"), "Python-2.0")
   , (("Q Public License","?"), "QPL-1.0")

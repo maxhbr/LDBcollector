@@ -55,9 +55,9 @@ runLDBCore configuration handler = do
   args <- getArgs
 
   facts <- readFacts configuration
-  licensesByName <- case args of
-    [] -> calculateSPDXLicenses facts
-    _  -> calculateLicenses (V.fromList args) facts
+  licensesByName <- (case args of
+    [] -> calculateSPDXLicenses
+    _  -> calculateLicenses (V.fromList args)) facts
 
   let pages = toPages (cRatingRules configuration) licensesByName
 
@@ -117,12 +117,10 @@ calculateLicenses ids facts = do
   return $ V.toList licenses
 
 calculateLicensesBySelector :: (LicenseFact -> Bool) -> Facts -> IO [(LicenseName, (License, LicenseClusterTree))]
-calculateLicensesBySelector filterForIds facts = do
-
-  let factsToTakeIDsFrom = V.filter filterForIds facts
-      ids = V.map head . V.filter (/= []) . V.map (unpackCLSR . getImpliedNames) $ factsToTakeIDsFrom
-
-  calculateLicenses ids facts
+calculateLicensesBySelector filterForIds facts = let
+  factsToTakeIDsFrom = V.filter filterForIds facts
+  ids = V.map head . V.filter (/= []) . V.map (unpackCLSR . getImpliedNames) $ factsToTakeIDsFrom
+  in calculateLicenses ids facts
 
 calculateSPDXLicenses :: Facts -> IO [(LicenseName, (License, LicenseClusterTree))]
 calculateSPDXLicenses = calculateLicensesBySelector (\f -> getLicenseFactClassifier f == LFC "SPDX")

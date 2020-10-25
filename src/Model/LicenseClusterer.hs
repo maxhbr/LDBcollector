@@ -1,6 +1,6 @@
 module Model.LicenseClusterer
   ( getLicensesFromFacts
-  , LicenseClusterTree (..)
+  , LicenseClusterTree (..), lctToNames
   ) where
 
 import qualified Prelude as P

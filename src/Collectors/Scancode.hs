@@ -53,6 +53,7 @@ data ScancodeData
   , spdxId :: Maybe String
   , owner :: Maybe String
   , homepageUrl :: Maybe String
+  , notes :: Maybe String
   , textUrls :: Maybe [String]
   , osiUrl :: Maybe String
   , otherUrls :: Maybe [String]
@@ -69,6 +70,7 @@ instance FromJSON ScancodeData where
     <*> v .:? "spdx_license_key"
     <*> v .:? "owner"
     <*> v .:? "homepage_url"
+    <*> v .:? "notes"
     <*> v .:? "etxt_urls"
     <*> v .:? "osi_url"
     <*> v .:? "other_urls"
@@ -89,6 +91,9 @@ instance LFRaw ScancodeData where
   getImpliedText scd = case text scd of
     Just t  -> mkRLSR scd 50 (decodeUtf8 t)
     Nothing -> NoRLSR
+  getImpliedJudgement scd = case notes scd of
+    Just n -> mkSLSR scd $ NeutralJudgement n
+    Nothing -> getEmptyLicenseStatement
   getImpliedURLs scd = let
       urlsFromHomepage = case homepageUrl scd of
         Just homepageU -> [(Just "Homepage", homepageU)]

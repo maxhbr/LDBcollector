@@ -67,14 +67,20 @@ oslcLFC :: LicenseFactClassifier
 oslcLFC = LFC "finos-osr/OSLC-handbook"
 instance LFRaw OSLCData where
   getLicenseFactClassifier _             = oslcLFC
-  getImpliedNames (OSLCData n _ ids _ _) = CLSR $ n : ids
+  getImpliedNames (OSLCData _ _ ids _ _) = CLSR $ ids
 
 loadOslcFactFromFile :: (FilePath, ByteString) -> IO (Vector LicenseFact)
 loadOslcFactFromFile (oslcFile, content) = let
     decoded = decodeEither' content :: Either ParseException [OSLCData]
     convertOslcFromFile oslcdFromFile = let
         spdxIds = licenseId oslcdFromFile
-      in map (\spdxId -> LicenseFact (Just $ "https://github.com/finos-osr/OSLC-handbook/blob/master/src/" ++ oslcFile) oslcdFromFile{ nameFromFilename = dropExtension oslcFile, licenseId = [spdxId] }) spdxIds
+        idFromName = if length spdxIds == 1
+                     then [name oslcdFromFile]
+                     else []
+      in map (\i -> LicenseFact
+               (Just $ "https://github.com/finos-osr/OSLC-handbook/blob/master/src/" ++ oslcFile)
+               oslcdFromFile{ nameFromFilename = dropExtension oslcFile, licenseId = i : idFromName })
+             spdxIds
   in case decoded of
        Left pe -> do
          hPutStrLn stderr ("tried to parse " ++ oslcFile ++ ":" ++ show pe)

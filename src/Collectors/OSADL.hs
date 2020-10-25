@@ -10,7 +10,6 @@ import qualified Prelude as P
 import           MyPrelude hiding (id, ByteString)
 import           Collectors.Common
 
-import qualified Data.Text as T
 import qualified Data.Vector as V
 import qualified Data.ByteString as B
 import           Data.ByteString (ByteString)
@@ -35,7 +34,7 @@ instance LFRaw OSADLFactRaw where
   getImpliedCopyleft f@(OSADLFactRaw _ r) | "COPYLEFT CLAUSE Questionable" `B.isInfixOf` r = mkSLSR f MaybeCopyleft
                                           | "COPYLEFT CLAUSE Yes"          `B.isInfixOf` r = mkSLSR f Copyleft
                                           | otherwise                                      = NoSLSR
-  getHasPatentnHint f@(OSADLFactRaw _ r)  | "PATENT HINTS Yes" `B.isInfixOf` r             = mkRLSR f 90 True
+  getHasPatentnHint f@(OSADLFactRaw _ r)  | "PATENT HINTS Yes"             `B.isInfixOf` r = mkRLSR f 90 True
                                           | otherwise                                      = NoRLSR
 
 
