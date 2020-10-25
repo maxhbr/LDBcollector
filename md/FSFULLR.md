@@ -83,6 +83,7 @@ Raw Data
                 "key": "fsf-unlimited",
                 "name": "Free Software Foundation - Unlimited License",
                 "spdxId": "FSFULLR",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://fsf-unlimited",

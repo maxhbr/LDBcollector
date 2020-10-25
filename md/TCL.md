@@ -131,6 +131,7 @@ Raw Data
                 "key": "tcl",
                 "name": "TCL/TK License",
                 "spdxId": "TCL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://tcl",

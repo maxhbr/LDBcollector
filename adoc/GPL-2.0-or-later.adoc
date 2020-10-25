@@ -27,6 +27,9 @@ https://spdx.org/licenses/GPL-2.0-or-later.html[SPDX])
 (the kernel) is distributed under the GPL, as is most of the other basic
 software in the GNU operating system. (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+* Per SPDX.org, this license was released June 1991 This license is OSI
+certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml[Scancode])
 * **↓**Google Classification is RESTRICTED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
@@ -257,6 +260,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
             "key": "gpl-2.0-plus",
             "name": "GNU General Public License 2.0 or later",
             "spdxId": "GPL-2.0-or-later",
+            "notes": "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://gpl-2.0-plus",
@@ -264,6 +268,15 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
                     "GPL-2.0-or-later"
                 ],
                 "__impliedId": "GPL-2.0-or-later",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -486,6 +499,13 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n"
             }
         ]
     ],

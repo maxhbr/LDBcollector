@@ -236,6 +236,7 @@ Raw Data
                 "key": "artistic-clarified",
                 "name": "Clarified Artistic License",
                 "spdxId": "ClArtistic",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://artistic-clarified",

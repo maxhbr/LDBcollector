@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Fair.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -146,6 +149,7 @@ Raw Data
                 "key": "fair",
                 "name": "Fair License",
                 "spdxId": "Fair",
+                "notes": "Per SPDX.org, this license is OSI certified",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://fair",
@@ -153,6 +157,15 @@ Raw Data
                         "Fair"
                     ],
                     "__impliedId": "Fair",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -297,6 +310,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified"
                 }
             ]
         ],

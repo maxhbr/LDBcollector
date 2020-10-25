@@ -90,6 +90,7 @@
             "key": "frameworx-1.0",
             "name": "Frameworx Open License v1.0",
             "spdxId": "Frameworx-1.0",
+            "notes": "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://frameworx-1.0",
@@ -97,6 +98,15 @@
                     "Frameworx-1.0"
                 ],
                 "__impliedId": "Frameworx-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -191,6 +201,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n"
             }
         ]
     ],

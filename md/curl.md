@@ -136,6 +136,7 @@ Raw Data
                 "key": "curl",
                 "name": "cURL License",
                 "spdxId": "curl",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://curl",

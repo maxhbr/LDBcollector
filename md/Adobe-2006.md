@@ -113,6 +113,7 @@ Raw Data
                 "key": "adobe-scl",
                 "name": "Adobe Systems Incorporated Source Code License Agreement",
                 "spdxId": "Adobe-2006",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://adobe-scl",

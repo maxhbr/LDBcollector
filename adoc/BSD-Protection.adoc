@@ -208,6 +208,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
             "key": "bsd-protection",
             "name": "BSD Protection License",
             "spdxId": "BSD-Protection",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://bsd-protection",

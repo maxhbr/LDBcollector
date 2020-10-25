@@ -131,6 +131,7 @@ Raw Data
                 "key": "sax-pd",
                 "name": "SAX Public Domain Notice",
                 "spdxId": "SAX-PD",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sax-pd",

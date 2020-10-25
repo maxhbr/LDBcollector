@@ -445,6 +445,7 @@ Raw Data
                 "key": "sun-sissl-1.1",
                 "name": "Sun Industry Standards Source License 1.1",
                 "spdxId": "SISSL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sun-sissl-1.1",

@@ -81,6 +81,7 @@ Raw Data
                 "key": "glulxe",
                 "name": "Glulxe License",
                 "spdxId": "Glulxe",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://glulxe",

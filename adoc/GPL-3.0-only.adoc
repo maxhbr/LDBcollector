@@ -57,6 +57,9 @@ Software Guidelines])
 * **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
+* Per SPDX.org, this license was released 29 June 2007 This license is
+OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0.yml[Scancode])
 * **↓**Google Classification is RESTRICTED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
@@ -1099,6 +1102,7 @@ Public License instead of this License.  But first, please read
             "key": "gpl-3.0",
             "name": "GNU General Public License 3.0",
             "spdxId": "GPL-3.0-only",
+            "notes": "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://gpl-3.0",
@@ -1106,6 +1110,15 @@ Public License instead of this License.  But first, please read
                     "GPL-3.0-only"
                 ],
                 "__impliedId": "GPL-3.0-only",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -1628,6 +1641,13 @@ Public License instead of this License.  But first, please read
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
             }
         ],
         [

@@ -77,6 +77,7 @@
             "key": "bsd-original-uc",
             "name": "BSD-Original-UC",
             "spdxId": "BSD-4-Clause-UC",
+            "notes": "Per SPDX.org, this is the same license as the BSD-4-Clause, but with a\ncopyright notice for the Regents of the University of California. Captures\nthe retroactive deletion of the third (advertising) clause of the Original\nBSD license for BSD-licensed code developed by UC Berkeley and its\ncontributors (see\nftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://bsd-original-uc",
@@ -84,6 +85,15 @@
                     "BSD-4-Clause-UC"
                 ],
                 "__impliedId": "BSD-4-Clause-UC",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this is the same license as the BSD-4-Clause, but with a\ncopyright notice for the Regents of the University of California. Captures\nthe retroactive deletion of the third (advertising) clause of the Original\nBSD license for BSD-licensed code developed by UC Berkeley and its\ncontributors (see\nftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -285,6 +295,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this is the same license as the BSD-4-Clause, but with a\ncopyright notice for the Regents of the University of California. Captures\nthe retroactive deletion of the third (advertising) clause of the Original\nBSD license for BSD-licensed code developed by UC Berkeley and its\ncontributors (see\nftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)\n"
             }
         ]
     ],

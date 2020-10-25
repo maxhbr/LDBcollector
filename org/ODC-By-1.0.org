@@ -532,6 +532,7 @@
               "key": "odc-by-1.0",
               "name": "Open Data Commons Attribution License v1.0",
               "spdxId": "ODC-By-1.0",
+              "notes": null,
               "_implications": {
                   "__impliedNames": [
                       "scancode://odc-by-1.0",

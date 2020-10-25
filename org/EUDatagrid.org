@@ -20,6 +20,9 @@
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
+- Per SPDX.org, this license is OSI certified (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eu-datagrid.yml][Scancode]])
+
 ** URLs
 
 - *Homepage:* http://eu-datagrid.web.cern.ch/eu-datagrid/license.html
@@ -192,6 +195,7 @@
               "key": "eu-datagrid",
               "name": "EU DataGrid Software License",
               "spdxId": "EUDatagrid",
+              "notes": "Per SPDX.org, this license is OSI certified",
               "_implications": {
                   "__impliedNames": [
                       "scancode://eu-datagrid",
@@ -199,6 +203,15 @@
                       "EUDatagrid"
                   ],
                   "__impliedId": "EUDatagrid",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -304,6 +317,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified"
               }
           ]
       ],

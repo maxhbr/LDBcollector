@@ -165,6 +165,7 @@ Raw Data
                 "key": "amdplpa",
                 "name": "AMD PLPA License",
                 "spdxId": "AMDPLPA",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://amdplpa",

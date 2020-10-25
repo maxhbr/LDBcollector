@@ -30,6 +30,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license was released 4 May 2008 This license is
+    OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3c.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -573,6 +577,7 @@ Raw Data
                 "key": "lppl-1.3c",
                 "name": "LaTeX Project Public License v1.3c",
                 "spdxId": "LPPL-1.3c",
+                "notes": "Per SPDX.org, this license was released 4 May 2008 This license is OSI\ncertified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lppl-1.3c",
@@ -580,6 +585,15 @@ Raw Data
                         "LPPL-1.3c"
                     ],
                     "__impliedId": "LPPL-1.3c",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 4 May 2008 This license is OSI\ncertified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -794,6 +808,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 4 May 2008 This license is OSI\ncertified.\n"
                 }
             ]
         ],

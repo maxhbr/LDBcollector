@@ -164,6 +164,7 @@ Raw Data
                 "key": "cc-by-nc-nd-2.5",
                 "name": "Creative Commons Attribution Non-Commercial No Derivatives License 2.5",
                 "spdxId": "CC-BY-NC-ND-2.5",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cc-by-nc-nd-2.5",

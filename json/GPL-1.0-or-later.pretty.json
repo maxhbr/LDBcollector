@@ -57,6 +57,7 @@
             "key": "gpl-1.0-plus",
             "name": "GNU General Public License 1.0 or later",
             "spdxId": "GPL-1.0-or-later",
+            "notes": "Per SPDX.org, this license was released February 1989.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://gpl-1.0-plus",
@@ -64,6 +65,15 @@
                     "GPL-1.0-or-later"
                 ],
                 "__impliedId": "GPL-1.0-or-later",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released February 1989."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -163,6 +173,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Google Classification is RESTRICTED"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released February 1989."
             }
         ]
     ],

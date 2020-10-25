@@ -100,6 +100,7 @@
             "key": "w3c",
             "name": "W3C Software Notice and License",
             "spdxId": "W3C",
+            "notes": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://w3c",
@@ -107,6 +108,15 @@
                     "W3C"
                 ],
                 "__impliedId": "W3C",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -309,6 +319,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
             }
         ]
     ],

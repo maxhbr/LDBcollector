@@ -103,6 +103,7 @@ Raw Data
                 "key": "rsa-md5",
                 "name": "RSA Data Security MD5",
                 "spdxId": "RSA-MD",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://rsa-md5",

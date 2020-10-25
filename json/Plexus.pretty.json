@@ -56,6 +56,7 @@
             "key": "dom4j",
             "name": "Dom4j License",
             "spdxId": "Plexus",
+            "notes": "Per Fedora, this is an Apache 1.1 derived license. Unfortunately, clause 4\nis too broad, making it Free but GPL-incompatible. It does also replace the\ndeprecated keys classworlds and apache-due-credit that were the same licenses.\nPlexus Classworlds was started in 2002 and dom4j in 2000/2001 hence it has precedence.\nOther projects such as Exolab/Intalio/Castor and JCharts have used the same license.\nCastor is actually the first to use this but dom4j is still commonly used and castor less so.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://dom4j",
@@ -63,6 +64,15 @@
                     "Plexus"
                 ],
                 "__impliedId": "Plexus",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this is an Apache 1.1 derived license. Unfortunately, clause 4\nis too broad, making it Free but GPL-incompatible. It does also replace the\ndeprecated keys classworlds and apache-due-credit that were the same licenses.\nPlexus Classworlds was started in 2002 and dom4j in 2000/2001 hence it has precedence.\nOther projects such as Exolab/Intalio/Castor and JCharts have used the same license.\nCastor is actually the first to use this but dom4j is still commonly used and castor less so.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -197,6 +207,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this is an Apache 1.1 derived license. Unfortunately, clause 4\nis too broad, making it Free but GPL-incompatible. It does also replace the\ndeprecated keys classworlds and apache-due-credit that were the same licenses.\nPlexus Classworlds was started in 2002 and dom4j in 2000/2001 hence it has precedence.\nOther projects such as Exolab/Intalio/Castor and JCharts have used the same license.\nCastor is actually the first to use this but dom4j is still commonly used and castor less so.\n"
             }
         ]
     ],

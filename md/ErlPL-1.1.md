@@ -365,6 +365,7 @@ Raw Data
                 "key": "erlangpl-1.1",
                 "name": "Erlang Public License v1.1",
                 "spdxId": "ErlPL-1.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://erlangpl-1.1",

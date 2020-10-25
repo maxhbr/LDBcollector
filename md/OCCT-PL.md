@@ -187,6 +187,7 @@ Raw Data
                 "key": "occt-pl",
                 "name": "Open CASCADE Technology Public License",
                 "spdxId": "OCCT-PL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://occt-pl",

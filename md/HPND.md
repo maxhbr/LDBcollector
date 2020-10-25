@@ -13,6 +13,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/HPND.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified. This license has been
+    voluntarily deprecated by its author. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -166,6 +170,7 @@ Raw Data
                 "key": "historical",
                 "name": "Historical Permission Notice and Disclaimer",
                 "spdxId": "HPND",
+                "notes": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://historical",
@@ -173,6 +178,15 @@ Raw Data
                         "HPND"
                     ],
                     "__impliedId": "HPND",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -309,6 +323,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
                 }
             ]
         ],

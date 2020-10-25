@@ -46,6 +46,9 @@ license instead. (source: https://wiki.debian.org/DFSGLicenses[Debian
 Free Software Guidelines])
 * **↑**Rating is: Silver (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this version was released January 2004 This license is
+OSI certified (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml[Scancode])
 
 === Obligations
 
@@ -456,6 +459,7 @@ PATENT HINTS Yes
             "key": "apache-2.0",
             "name": "Apache License 2.0",
             "spdxId": "Apache-2.0",
+            "notes": "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://apache-2.0",
@@ -463,6 +467,15 @@ PATENT HINTS Yes
                     "Apache-2.0"
                 ],
                 "__impliedId": "Apache-2.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -903,6 +916,13 @@ PATENT HINTS Yes
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n"
             }
         ],
         [

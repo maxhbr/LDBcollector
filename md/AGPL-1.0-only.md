@@ -181,6 +181,7 @@ Raw Data
                 "key": "agpl-1.0",
                 "name": "Affero General Public License 1.0",
                 "spdxId": "AGPL-1.0-only",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://agpl-1.0",

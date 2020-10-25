@@ -148,6 +148,7 @@ Raw Data
                 "key": "osl-2.0",
                 "name": "Open Software License 2.0",
                 "spdxId": "OSL-2.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://osl-2.0",

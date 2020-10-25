@@ -101,6 +101,7 @@ Raw Data
                 "key": "lbnl-bsd",
                 "name": "Lawrence Berkeley National Labs BSD variant license",
                 "spdxId": "BSD-3-Clause-LBNL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lbnl-bsd",

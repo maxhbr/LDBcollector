@@ -19,6 +19,10 @@ Comments on (easy) usability
     by itself. (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+-   Per SPDX.org, this license has been superseded. This license was
+    released in November 2005. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -177,6 +181,7 @@ Raw Data
                 "key": "ofl-1.0",
                 "name": "SIL Open Font License 1.0",
                 "spdxId": "OFL-1.0",
+                "notes": "Per SPDX.org, this license has been superseded. This license was released\nin November 2005.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ofl-1.0",
@@ -184,6 +189,15 @@ Raw Data
                         "OFL-1.0"
                     ],
                     "__impliedId": "OFL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license has been superseded. This license was released\nin November 2005.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -231,6 +245,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "The following restriction on distributions, which is part of OFL, has been widely accepted by open source projects when it is applied to fonts: 1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself."
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license has been superseded. This license was released\nin November 2005.\n"
                 }
             ]
         ],

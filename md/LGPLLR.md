@@ -306,6 +306,7 @@ Raw Data
                 "key": "lgpllr",
                 "name": "Lesser General Public License For Linguistic Resources",
                 "spdxId": "LGPLLR",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lgpllr",

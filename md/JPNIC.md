@@ -124,6 +124,7 @@ Raw Data
                 "key": "jpnic-idnkit",
                 "name": "JPNIC idnkit License",
                 "spdxId": "JPNIC",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://jpnic-idnkit",

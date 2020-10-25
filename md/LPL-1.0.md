@@ -351,6 +351,7 @@ Raw Data
                 "key": "lucent-pl-1.0",
                 "name": "Lucent Public License 1.0",
                 "spdxId": "LPL-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lucent-pl-1.0",

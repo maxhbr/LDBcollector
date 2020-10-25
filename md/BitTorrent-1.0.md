@@ -413,6 +413,7 @@ Raw Data
                 "key": "bittorrent-1.0",
                 "name": "BitTorrent Open Source License 1.0",
                 "spdxId": "BitTorrent-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bittorrent-1.0",

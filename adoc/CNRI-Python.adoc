@@ -22,6 +22,9 @@
 https://spdx.org/licenses/CNRI-Python.html[SPDX])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* per SPDX.org, CNRI portion of the multi-part Python License
+(Python-2.0) (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.yml[Scancode])
 
 === URLs
 
@@ -157,6 +160,7 @@ Licensee. Alternately, in lieu of CNRI's License Agreement, Licensee may substit
             "key": "cnri-python-1.6",
             "name": "CNRI Open Source License Agreement for Python 1.6",
             "spdxId": "CNRI-Python",
+            "notes": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)",
             "_implications": {
                 "__impliedNames": [
                     "scancode://cnri-python-1.6",
@@ -164,6 +168,15 @@ Licensee. Alternately, in lieu of CNRI's License Agreement, Licensee may substit
                     "CNRI-Python"
                 ],
                 "__impliedId": "CNRI-Python",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -305,6 +318,13 @@ Licensee. Alternately, in lieu of CNRI's License Agreement, Licensee may substit
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
             }
         ]
     ],

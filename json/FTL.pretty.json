@@ -69,6 +69,7 @@
             "key": "freetype",
             "name": "FreeType Project License",
             "spdxId": "FTL",
+            "notes": "Per SPDX.org, this license was released 27 Jan 2006",
             "_implications": {
                 "__impliedNames": [
                     "scancode://freetype",
@@ -76,6 +77,15 @@
                     "FTL"
                 ],
                 "__impliedId": "FTL",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 27 Jan 2006"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -183,6 +193,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is NOTICE"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 27 Jan 2006"
             }
         ]
     ],

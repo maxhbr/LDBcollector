@@ -67,6 +67,7 @@
             "key": "efl-1.0",
             "name": "Eiffel Forum License 1.0",
             "spdxId": "EFL-1.0",
+            "notes": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://efl-1.0",
@@ -74,6 +75,15 @@
                     "EFL-1.0"
                 ],
                 "__impliedId": "EFL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -200,6 +210,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n"
             }
         ]
     ],

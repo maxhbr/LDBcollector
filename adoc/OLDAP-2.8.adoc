@@ -133,6 +133,7 @@ distribute verbatim copies of this document is granted.
             "key": "openldap-2.8",
             "name": "OpenLDAP Public License 2.8",
             "spdxId": "OLDAP-2.8",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://openldap-2.8",

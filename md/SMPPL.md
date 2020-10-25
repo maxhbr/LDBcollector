@@ -105,6 +105,7 @@ Raw Data
                 "key": "smppl",
                 "name": "Secure Messaging Protocol Public License",
                 "spdxId": "SMPPL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://smppl",

@@ -90,6 +90,7 @@
             "key": "ca-tosl-1.1",
             "name": "Computer Associates Trusted Open Source License 1.1",
             "spdxId": "CATOSL-1.1",
+            "notes": "Per SPDX.org, this license is OSI certifified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://ca-tosl-1.1",
@@ -97,6 +98,15 @@
                     "CATOSL-1.1"
                 ],
                 "__impliedId": "CATOSL-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certifified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -191,6 +201,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certifified."
             }
         ]
     ],

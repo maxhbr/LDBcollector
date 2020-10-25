@@ -35,6 +35,10 @@ Comments on (easy) usability
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+-   Per SPDX.org, this license is OSI certifified EPL replaced the CPL
+    on 28 June 2005. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epl-1.0.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -326,6 +330,7 @@ Raw Data
                 "key": "epl-1.0",
                 "name": "Eclipse Public License 1.0",
                 "spdxId": "EPL-1.0",
+                "notes": "Per SPDX.org, this license is OSI certifified EPL replaced the CPL on 28\nJune 2005.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://epl-1.0",
@@ -333,6 +338,15 @@ Raw Data
                         "EPL-1.0"
                     ],
                     "__impliedId": "EPL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certifified EPL replaced the CPL on 28\nJune 2005.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -671,6 +685,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certifified EPL replaced the CPL on 28\nJune 2005.\n"
                 }
             ]
         ],

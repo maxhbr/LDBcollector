@@ -13,6 +13,12 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per Fedora, this is a slightly modified version of Apache 1.1. The
+    documentation requirement in Apache 1.1 has been weakened to a
+    suggestion, but clause 4 still makes this license Free but
+    GPL-incompatible. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/saxpath.yml "Scancode"))
+
 URLs
 ----
 
@@ -119,6 +125,7 @@ Raw Data
                 "key": "saxpath",
                 "name": "Saxpath License",
                 "spdxId": "Saxpath",
+                "notes": "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://saxpath",
@@ -126,6 +133,15 @@ Raw Data
                         "Saxpath"
                     ],
                     "__impliedId": "Saxpath",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -184,6 +200,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n"
                 }
             ]
         ],

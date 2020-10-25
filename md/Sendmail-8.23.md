@@ -122,6 +122,7 @@ Raw Data
                 "key": "sendmail-8.23",
                 "name": "Sendmail License 8.23",
                 "spdxId": "Sendmail-8.23",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sendmail-8.23",

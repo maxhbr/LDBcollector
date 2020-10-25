@@ -217,6 +217,7 @@ Raw Data
                 "key": "libpng",
                 "name": "Libpng License",
                 "spdxId": "Libpng",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://libpng",

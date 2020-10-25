@@ -125,6 +125,7 @@
             "key": "eupl-1.1",
             "name": "European Union Public Licence 1.1",
             "spdxId": "EUPL-1.1",
+            "notes": "Per SPDX.org, this license was released 16 May 2008 This license is OSI\ncertified. This license is available in the 22 official languages of the\nEU. The English version is included here.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://eupl-1.1",
@@ -132,6 +133,15 @@
                     "EUPL-1.1"
                 ],
                 "__impliedId": "EUPL-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 16 May 2008 This license is OSI\ncertified. This license is available in the 22 official languages of the\nEU. The English version is included here.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -369,6 +379,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 16 May 2008 This license is OSI\ncertified. This license is available in the 22 official languages of the\nEU. The English version is included here.\n"
             }
         ]
     ],

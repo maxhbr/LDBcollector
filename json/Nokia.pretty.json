@@ -90,6 +90,7 @@
             "key": "nokos-1.0a",
             "name": "Nokia Open Source License 1.0a",
             "spdxId": "Nokia",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://nokos-1.0a",
@@ -97,6 +98,15 @@
                     "Nokia"
                 ],
                 "__impliedId": "Nokia",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -196,6 +206,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

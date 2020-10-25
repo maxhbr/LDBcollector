@@ -12,6 +12,9 @@ LaTeX Project Public License v1.1 (LPPL-1.1)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license was released 10 July 1999. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -380,6 +383,7 @@ Raw Data
                 "key": "lppl-1.1",
                 "name": "LaTeX Project Public License v1.1",
                 "spdxId": "LPPL-1.1",
+                "notes": "Per SPDX.org, this license was released 10 July 1999.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lppl-1.1",
@@ -387,6 +391,15 @@ Raw Data
                         "LPPL-1.1"
                     ],
                     "__impliedId": "LPPL-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 10 July 1999."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -404,6 +417,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 10 July 1999."
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

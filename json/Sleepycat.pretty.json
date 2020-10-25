@@ -93,6 +93,7 @@
             "key": "sleepycat",
             "name": "Sleepycat License (Berkeley Database License)",
             "spdxId": "Sleepycat",
+            "notes": "Per SPDX.org, this license is OSI certified",
             "_implications": {
                 "__impliedNames": [
                     "scancode://sleepycat",
@@ -100,6 +101,15 @@
                     "Sleepycat"
                 ],
                 "__impliedId": "Sleepycat",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -293,6 +303,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified"
             }
         ]
     ],

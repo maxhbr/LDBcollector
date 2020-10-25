@@ -90,6 +90,7 @@
             "key": "motosoto-0.9.1",
             "name": "Motosoto Open Source License v0.9.1",
             "spdxId": "Motosoto",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://motosoto-0.9.1",
@@ -97,6 +98,15 @@
                     "Motosoto"
                 ],
                 "__impliedId": "Motosoto",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -196,6 +206,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

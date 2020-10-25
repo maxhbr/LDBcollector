@@ -168,6 +168,7 @@ Raw Data
                 "key": "unicode-dfs-2016",
                 "name": "Unicode License Agreement - Data Files and Software (2016)",
                 "spdxId": "Unicode-DFS-2016",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://unicode-dfs-2016",

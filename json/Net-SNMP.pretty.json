@@ -49,6 +49,7 @@
             "key": "net-snmp",
             "name": "Net SNMP License",
             "spdxId": "Net-SNMP",
+            "notes": "composite",
             "_implications": {
                 "__impliedNames": [
                     "scancode://net-snmp",
@@ -56,6 +57,15 @@
                     "Net-SNMP"
                 ],
                 "__impliedId": "Net-SNMP",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "composite"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -114,6 +124,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "composite"
             }
         ]
     ],

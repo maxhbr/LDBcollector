@@ -15,6 +15,9 @@
 
 === Comments on (easy) usability
 
+* Per Fedora, this license was found on the "wsuipa" component of
+texlive 2010. It is Free, but GPL-incompatible. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml[Scancode])
 * **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
@@ -93,6 +96,7 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
             "key": "wsuipa",
             "name": "Wsuipa License",
             "spdxId": "Wsuipa",
+            "notes": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://wsuipa",
@@ -100,6 +104,15 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
                     "Wsuipa"
                 ],
                 "__impliedId": "Wsuipa",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -158,6 +171,13 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
             }
         ]
     ],

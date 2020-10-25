@@ -145,6 +145,7 @@ be directed to site-policy@w3.org.
             "key": "w3c-software-19980720",
             "name": "W3C Software Notice and License (1998-07-20)",
             "spdxId": "W3C-19980720",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://w3c-software-19980720",

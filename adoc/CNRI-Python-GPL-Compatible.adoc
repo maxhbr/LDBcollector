@@ -110,6 +110,7 @@ ACCEPT
             "key": "cnri-python-1.6.1",
             "name": "CNRI Open Source License Agreement for Python 1.6.1",
             "spdxId": "CNRI-Python-GPL-Compatible",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://cnri-python-1.6.1",

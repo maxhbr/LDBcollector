@@ -156,6 +156,7 @@ Raw Data
                 "key": "xfree86-1.1",
                 "name": "XFree86 License 1.1",
                 "spdxId": "XFree86-1.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://xfree86-1.1",

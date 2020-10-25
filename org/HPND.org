@@ -16,6 +16,10 @@
 - *↑*Is OSI Approved (source:
   [[https://spdx.org/licenses/HPND.html][SPDX]])
 
+- Per SPDX.org, this license is OSI certified. This license has been
+  voluntarily deprecated by its author. (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml][Scancode]])
+
 - *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
   License List]])
 
@@ -170,6 +174,7 @@
               "key": "historical",
               "name": "Historical Permission Notice and Disclaimer",
               "spdxId": "HPND",
+              "notes": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n",
               "_implications": {
                   "__impliedNames": [
                       "scancode://historical",
@@ -177,6 +182,15 @@
                       "HPND"
                   ],
                   "__impliedId": "HPND",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -313,6 +327,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
               }
           ]
       ],

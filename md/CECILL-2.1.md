@@ -653,6 +653,7 @@ Raw Data
                 "key": "cecill-2.1",
                 "name": "CeCILL Free Software License Agreement v2.1",
                 "spdxId": "CECILL-2.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cecill-2.1",

@@ -83,6 +83,7 @@ Raw Data
                 "key": "fsf-free",
                 "name": "Free Software Foundation - Free Software License",
                 "spdxId": "FSFUL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://fsf-free",

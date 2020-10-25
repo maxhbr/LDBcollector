@@ -129,6 +129,7 @@ Raw Data
                 "key": "xinetd",
                 "name": "xinetd License",
                 "spdxId": "xinetd",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://xinetd",

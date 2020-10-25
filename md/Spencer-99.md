@@ -108,6 +108,7 @@ Raw Data
                 "key": "henry-spencer-1999",
                 "name": "Henry Spencer License 1999",
                 "spdxId": "Spencer-99",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://henry-spencer-1999",

@@ -22,6 +22,9 @@
 https://spdx.org/licenses/Intel.html[SPDX])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* this has this title in SPDX and OSI text The Intel Open Source License
+for CDSA/CSSM Implementation (BSD License with Export Notice) (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml[Scancode])
 
 === URLs
 
@@ -170,6 +173,7 @@ goods and services.
             "key": "intel-bsd-export-control",
             "name": "Intel BSD - Export Control",
             "spdxId": "Intel",
+            "notes": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)",
             "_implications": {
                 "__impliedNames": [
                     "scancode://intel-bsd-export-control",
@@ -177,6 +181,15 @@ goods and services.
                     "Intel"
                 ],
                 "__impliedId": "Intel",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -307,6 +320,13 @@ goods and services.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
             }
         ]
     ],

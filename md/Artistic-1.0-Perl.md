@@ -22,6 +22,11 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX"))
 
+-   Per SPDX.org, this is the Artistic License 1.0 found on the Perl
+    site, which is different (particularly, clauses 5, 6, 7 and 8) than
+    the Artistic License 1.0 w/clause 8 found on the OSI site. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -280,6 +285,7 @@ Raw Data
                 "key": "artistic-perl-1.0",
                 "name": "Artistic License (Perl) 1.0",
                 "spdxId": "Artistic-1.0-Perl",
+                "notes": "Per SPDX.org, this is the Artistic License 1.0 found on the Perl site,\nwhich is different (particularly, clauses 5, 6, 7 and 8) than the Artistic\nLicense 1.0 w/clause 8 found on the OSI site.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://artistic-perl-1.0",
@@ -287,6 +293,15 @@ Raw Data
                         "Artistic-1.0-Perl"
                     ],
                     "__impliedId": "Artistic-1.0-Perl",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this is the Artistic License 1.0 found on the Perl site,\nwhich is different (particularly, clauses 5, 6, 7 and 8) than the Artistic\nLicense 1.0 w/clause 8 found on the OSI site.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -459,6 +474,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this is the Artistic License 1.0 found on the Perl site,\nwhich is different (particularly, clauses 5, 6, 7 and 8) than the Artistic\nLicense 1.0 w/clause 8 found on the OSI site.\n"
                 }
             ]
         ],

@@ -12,6 +12,9 @@ SGI Free Software License B v1.1 (SGI-B-1.1)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license was released 22 February 2002 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-1.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -109,6 +112,7 @@ Raw Data
                 "key": "sgi-freeb-1.1",
                 "name": "SGI Free Software License B v1.1",
                 "spdxId": "SGI-B-1.1",
+                "notes": "Per SPDX.org, this license was released 22 February 2002",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sgi-freeb-1.1",
@@ -116,6 +120,15 @@ Raw Data
                         "SGI-B-1.1"
                     ],
                     "__impliedId": "SGI-B-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 22 February 2002"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -137,6 +150,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 22 February 2002"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

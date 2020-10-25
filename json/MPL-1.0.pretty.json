@@ -98,6 +98,7 @@
             "key": "mpl-1.0",
             "name": "Mozilla Public License 1.0",
             "spdxId": "MPL-1.0",
+            "notes": "Per SPDX.org, this license was OSI certified. This license have been\nsuperseded by v1.1\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://mpl-1.0",
@@ -105,6 +106,15 @@
                     "MPL-1.0"
                 ],
                 "__impliedId": "MPL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was OSI certified. This license have been\nsuperseded by v1.1\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -371,6 +381,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was OSI certified. This license have been\nsuperseded by v1.1\n"
             }
         ]
     ],

@@ -17,6 +17,9 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/NASA-1.3.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -249,6 +252,7 @@ Raw Data
                 "key": "nasa-1.3",
                 "name": "NASA Open Source License v1.3",
                 "spdxId": "NASA-1.3",
+                "notes": "Per SPDX.org, this license is OSI certified.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://nasa-1.3",
@@ -256,6 +260,15 @@ Raw Data
                         "NASA-1.3"
                     ],
                     "__impliedId": "NASA-1.3",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -395,6 +408,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

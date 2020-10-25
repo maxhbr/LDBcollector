@@ -12,6 +12,11 @@ Open LDAP Public License v1.2 (OLDAP-1.2)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license was released 1 September 1998. This
+    license was issued four time, but only with formatting differences.
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.2.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -216,6 +221,7 @@ Raw Data
                 "key": "openldap-1.2",
                 "name": "OpenLDAP Public License 1.2",
                 "spdxId": "OLDAP-1.2",
+                "notes": "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://openldap-1.2",
@@ -223,6 +229,15 @@ Raw Data
                         "OLDAP-1.2"
                     ],
                     "__impliedId": "OLDAP-1.2",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -281,6 +296,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n"
                 }
             ]
         ],

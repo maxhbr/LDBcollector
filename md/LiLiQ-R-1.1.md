@@ -191,6 +191,7 @@ Raw Data
                 "key": "liliq-r-1.1",
                 "name": "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.",
                 "spdxId": "LiLiQ-R-1.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://liliq-r-1.1",

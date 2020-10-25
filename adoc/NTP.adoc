@@ -29,6 +29,8 @@ verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
+* replaced by mit-old-style-no-advert (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntpl.yml[Scancode])
 
 === URLs
 
@@ -175,10 +177,20 @@ purpose. It is provided "as is" without express or implied warranty.
             "key": "ntpl",
             "name": "Network Time Protocol License",
             "spdxId": null,
+            "notes": "replaced by mit-old-style-no-advert",
             "_implications": {
                 "__impliedNames": [
                     "scancode://ntpl",
                     "NTP License"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "replaced by mit-old-style-no-advert"
+                        }
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [
@@ -348,6 +360,13 @@ purpose. It is provided "as is" without express or implied warranty.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "replaced by mit-old-style-no-advert"
             }
         ],
         [

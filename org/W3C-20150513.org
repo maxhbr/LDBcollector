@@ -19,6 +19,18 @@
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
+- Previous version was
+  http://www.w3.org/Consortium/Legal/2002/copyright- software-20021231
+  This version makes clear that the license is applicable to both
+  software and text, by changing the name and substituting "work" for
+  instances of "software and its documentation." It moves "notice of
+  changes or modifications to the files" to the copyright notice, to
+  make clear that the license is compatible with other liberal licenses.
+  There is also a short notice version at
+  https://www.w3.org/Consortium/Legal/2015/copyright-
+  software-short-notice.html (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-doc-20150513.yml][Scancode]])
+
 - *↓*Rating is: Lead (source: [[https://blueoakcouncil.org/list][BlueOak
   License List]])
 
@@ -134,6 +146,7 @@
               "key": "w3c-software-doc-20150513",
               "name": "W3C Software and Document (2015-05-13)",
               "spdxId": "W3C-20150513",
+              "notes": "Previous version was http://www.w3.org/Consortium/Legal/2002/copyright-\nsoftware-20021231 This version makes clear that the license is applicable\nto both software and text, by changing the name and substituting \"work\" for\ninstances of \"software and its documentation.\" It moves \"notice of changes\nor modifications to the files\" to the copyright notice, to make clear that\nthe license is compatible with other liberal licenses. There is also a\nshort notice version at https://www.w3.org/Consortium/Legal/2015/copyright-\nsoftware-short-notice.html\n",
               "_implications": {
                   "__impliedNames": [
                       "scancode://w3c-software-doc-20150513",
@@ -141,6 +154,15 @@
                       "W3C-20150513"
                   ],
                   "__impliedId": "W3C-20150513",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Previous version was http://www.w3.org/Consortium/Legal/2002/copyright-\nsoftware-20021231 This version makes clear that the license is applicable\nto both software and text, by changing the name and substituting \"work\" for\ninstances of \"software and its documentation.\" It moves \"notice of changes\nor modifications to the files\" to the copyright notice, to make clear that\nthe license is compatible with other liberal licenses. There is also a\nshort notice version at https://www.w3.org/Consortium/Legal/2015/copyright-\nsoftware-short-notice.html\n"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -232,6 +254,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Google Classification is NOTICE"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Previous version was http://www.w3.org/Consortium/Legal/2002/copyright-\nsoftware-20021231 This version makes clear that the license is applicable\nto both software and text, by changing the name and substituting \"work\" for\ninstances of \"software and its documentation.\" It moves \"notice of changes\nor modifications to the files\" to the copyright notice, to make clear that\nthe license is compatible with other liberal licenses. There is also a\nshort notice version at https://www.w3.org/Consortium/Legal/2015/copyright-\nsoftware-short-notice.html\n"
               }
           ]
       ],

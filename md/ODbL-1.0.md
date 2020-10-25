@@ -651,6 +651,7 @@ Raw Data
                 "key": "odbl-1.0",
                 "name": "ODC Open Database License v1.0",
                 "spdxId": "ODbL-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://odbl-1.0",

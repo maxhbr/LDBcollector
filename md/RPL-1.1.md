@@ -17,6 +17,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX"))
 
+-   Per SPDX.org, this license has been superseded by the Reciprocal
+    Public License, version 1.5 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -259,6 +263,7 @@ Raw Data
                 "key": "rpl-1.1",
                 "name": "Reciprocal Public License 1.1",
                 "spdxId": "RPL-1.1",
+                "notes": "Per SPDX.org, this license has been superseded by the Reciprocal Public\nLicense, version 1.5\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://rpl-1.1",
@@ -266,6 +271,15 @@ Raw Data
                         "RPL-1.1"
                     ],
                     "__impliedId": "RPL-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license has been superseded by the Reciprocal Public\nLicense, version 1.5\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -345,6 +359,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license has been superseded by the Reciprocal Public\nLicense, version 1.5\n"
                 }
             ]
         ],

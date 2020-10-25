@@ -126,6 +126,7 @@
             "key": "rpsl-1.0",
             "name": "RealNetworks Public Source License v1.0",
             "spdxId": "RPSL-1.0",
+            "notes": "This license is OSI certified",
             "_implications": {
                 "__impliedNames": [
                     "scancode://rpsl-1.0",
@@ -133,6 +134,15 @@
                     "RPSL-1.0"
                 ],
                 "__impliedId": "RPSL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "This license is OSI certified"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -269,6 +279,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "This license is OSI certified"
             }
         ]
     ],

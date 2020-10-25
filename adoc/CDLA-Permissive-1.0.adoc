@@ -170,6 +170,7 @@ Section 7.  Miscellaneous
             "key": "cdla-permissive-1.0",
             "name": "Community Data License Agreement Permissive 1.0",
             "spdxId": "CDLA-Permissive-1.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://cdla-permissive-1.0",

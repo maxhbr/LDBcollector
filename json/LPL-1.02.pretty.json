@@ -94,6 +94,7 @@
             "key": "lucent-pl-1.02",
             "name": "Lucent Public License 1.02",
             "spdxId": "LPL-1.02",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://lucent-pl-1.02",
@@ -101,6 +102,15 @@
                     "LPL-1.02"
                 ],
                 "__impliedId": "LPL-1.02",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -266,6 +276,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

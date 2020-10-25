@@ -73,6 +73,9 @@
   weiterverbreiten, also auch in proprietäre Software überführen.
   (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
+- Per SPDX.org, this license is OSI certified. (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml][Scancode]])
+
 ** Obligations
 
 | Rights:            | Conditions:           | Limitations:   |
@@ -297,6 +300,7 @@
               "key": "bsd-new",
               "name": "BSD-3-Clause",
               "spdxId": "BSD-3-Clause",
+              "notes": "Per SPDX.org, this license is OSI certified.",
               "_implications": {
                   "__impliedNames": [
                       "scancode://bsd-new",
@@ -304,6 +308,15 @@
                       "BSD-3-Clause"
                   ],
                   "__impliedId": "BSD-3-Clause",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified."
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -708,6 +721,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified."
               }
           ],
           [

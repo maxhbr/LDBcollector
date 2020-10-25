@@ -107,6 +107,7 @@ Raw Data
                 "key": "enna",
                 "name": "enna License",
                 "spdxId": "MIT-enna",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://enna",

@@ -19,6 +19,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Frameworx-1.0.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified. The url included in the
+    license does not work. (15/10/10) (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/frameworx-1.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -195,6 +199,7 @@ Raw Data
                 "key": "frameworx-1.0",
                 "name": "Frameworx Open License v1.0",
                 "spdxId": "Frameworx-1.0",
+                "notes": "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://frameworx-1.0",
@@ -202,6 +207,15 @@ Raw Data
                         "Frameworx-1.0"
                     ],
                     "__impliedId": "Frameworx-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -296,6 +310,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n"
                 }
             ]
         ],

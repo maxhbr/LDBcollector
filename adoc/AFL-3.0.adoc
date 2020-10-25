@@ -38,6 +38,8 @@ Policy])
 https://spdx.org/licenses/AFL-3.0.html[SPDX])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this license is OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-3.0.yml[Scancode])
 
 === Obligations
 
@@ -231,6 +233,7 @@ e) to display the Original Work publicly.
             "key": "afl-3.0",
             "name": "Academic Free License 3.0",
             "spdxId": "AFL-3.0",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://afl-3.0",
@@ -238,6 +241,15 @@ e) to display the Original Work publicly.
                     "AFL-3.0"
                 ],
                 "__impliedId": "AFL-3.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -542,6 +554,13 @@ e) to display the Original Work publicly.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

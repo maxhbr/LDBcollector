@@ -108,6 +108,7 @@ Raw Data
                 "key": "beerware",
                 "name": "Beer-Ware License",
                 "spdxId": "Beerware",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://beerware",

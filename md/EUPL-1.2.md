@@ -272,6 +272,7 @@ Raw Data
                 "key": "eupl-1.2",
                 "name": "European Union Public Licence 1.2",
                 "spdxId": "EUPL-1.2",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://eupl-1.2",

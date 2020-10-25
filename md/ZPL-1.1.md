@@ -155,6 +155,7 @@ Raw Data
                 "key": "zpl-1.1",
                 "name": "Zope Public License 1.1",
                 "spdxId": "ZPL-1.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://zpl-1.1",

@@ -48,6 +48,7 @@
             "key": "abstyles",
             "name": "Abstyles License",
             "spdxId": "Abstyles",
+            "notes": "the latext2e, verbatim-manual and abstyles are similar licenses",
             "_implications": {
                 "__impliedNames": [
                     "scancode://abstyles",
@@ -55,6 +56,15 @@
                     "Abstyles"
                 ],
                 "__impliedId": "Abstyles",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -72,6 +82,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

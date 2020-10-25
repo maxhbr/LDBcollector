@@ -142,6 +142,7 @@ Raw Data
                 "key": "jasper-2.0",
                 "name": "JasPer License 2.0",
                 "spdxId": "JasPer-2.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://jasper-2.0",

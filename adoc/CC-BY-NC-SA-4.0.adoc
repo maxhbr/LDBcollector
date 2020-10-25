@@ -580,6 +580,7 @@ Creative Commons may be contacted at creativecommons.org.
             "key": "cc-by-nc-sa-4.0",
             "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License",
             "spdxId": "CC-BY-NC-SA-4.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://cc-by-nc-sa-4.0",

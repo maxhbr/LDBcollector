@@ -10,6 +10,10 @@ Net Boolean Public License v1 (NBPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license was released 22 August 1998. This license
+    was issued twice, but only with formatting differences. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nbpl-1.0.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -242,6 +246,7 @@ Raw Data
                 "key": "nbpl-1.0",
                 "name": "Net Boolean Public License 1.0",
                 "spdxId": "NBPL-1.0",
+                "notes": "Per SPDX.org, this license was released 22 August 1998. This license was\nissued twice, but only with formatting differences.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://nbpl-1.0",
@@ -249,6 +254,15 @@ Raw Data
                         "NBPL-1.0"
                     ],
                     "__impliedId": "NBPL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 22 August 1998. This license was\nissued twice, but only with formatting differences.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -307,6 +321,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 22 August 1998. This license was\nissued twice, but only with formatting differences.\n"
                 }
             ]
         ],

@@ -79,6 +79,7 @@ Raw Data
                 "key": "dotseqn",
                 "name": "Dotseqn License",
                 "spdxId": "Dotseqn",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://dotseqn",

@@ -15,6 +15,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/APSL-1.2.html "SPDX"))
 
+-   Per SPDX.org, this license was released 4 Jan 2001. This license was
+    OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml "Scancode"))
+
 -   **↓**This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree) (source: [Debian Free
     Software
@@ -369,6 +373,7 @@ Raw Data
                 "key": "apsl-1.2",
                 "name": "Apple Public Source License 1.2",
                 "spdxId": "APSL-1.2",
+                "notes": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://apsl-1.2",
@@ -376,6 +381,15 @@ Raw Data
                         "APSL-1.2"
                     ],
                     "__impliedId": "APSL-1.2",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -446,6 +460,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
                 }
             ]
         ],

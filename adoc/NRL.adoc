@@ -111,6 +111,7 @@ The views and conclusions contained in the software and documentation are those 
             "key": "nrl",
             "name": "NRL License",
             "spdxId": "NRL",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://nrl",

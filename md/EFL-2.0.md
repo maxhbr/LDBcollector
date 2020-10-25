@@ -21,6 +21,9 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/EFL-2.0.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-2.0.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -194,6 +197,7 @@ Raw Data
                 "key": "efl-2.0",
                 "name": "Eiffel Forum License 2.0",
                 "spdxId": "EFL-2.0",
+                "notes": "Per SPDX.org, this license is OSI certified",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://efl-2.0",
@@ -201,6 +205,15 @@ Raw Data
                         "EFL-2.0"
                     ],
                     "__impliedId": "EFL-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -359,6 +372,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified"
                 }
             ]
         ],

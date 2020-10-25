@@ -19,6 +19,8 @@
 
 * **↑**Is OSI Approved (source:
 https://spdx.org/licenses/CPAL-1.0.html[SPDX])
+* Per SPDX.org, this license is OSI certifified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml[Scancode])
 * **↓**Google Classification is CANNOT_BE_USED "Likewise, code released
 under the Common Public Attribution License (CPAL), notably the Mule ESB
 and most of the code that backs Reddit, cannot be used at Google; it is
@@ -250,6 +252,7 @@ Display of Attribution Information is [required/not required] in Larger Works wh
             "key": "cpal-1.0",
             "name": "Common Public Attribution License 1.0",
             "spdxId": "CPAL-1.0",
+            "notes": "Per SPDX.org, this license is OSI certifified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://cpal-1.0",
@@ -257,6 +260,15 @@ Display of Attribution Information is [required/not required] in Larger Works wh
                     "CPAL-1.0"
                 ],
                 "__impliedId": "CPAL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certifified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -407,6 +419,13 @@ Display of Attribution Information is [required/not required] in Larger Works wh
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certifified."
             }
         ]
     ],

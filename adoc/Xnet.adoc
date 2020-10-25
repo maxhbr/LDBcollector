@@ -25,6 +25,9 @@ Policy])
 https://spdx.org/licenses/Xnet.html[SPDX])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this license is OSI certified. This License has been
+voluntarily deprecated by its author. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml[Scancode])
 
 === URLs
 
@@ -155,6 +158,7 @@ California and by the laws of the United States of America.
             "key": "xnet",
             "name": "Altera License",
             "spdxId": "Xnet",
+            "notes": "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://xnet",
@@ -162,6 +166,15 @@ California and by the laws of the United States of America.
                     "Xnet"
                 ],
                 "__impliedId": "Xnet",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -336,6 +349,13 @@ California and by the laws of the United States of America.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n"
             }
         ]
     ],

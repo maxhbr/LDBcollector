@@ -104,6 +104,7 @@ Raw Data
                 "key": "regexp",
                 "name": "Regexp License",
                 "spdxId": "Spencer-86",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://regexp",

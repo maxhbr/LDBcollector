@@ -144,6 +144,7 @@ Raw Data
                 "key": "clear-bsd",
                 "name": "Clear BSD License",
                 "spdxId": "BSD-3-Clause-Clear",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://clear-bsd",

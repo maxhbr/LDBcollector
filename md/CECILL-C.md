@@ -15,6 +15,11 @@ Comments on (easy) usability
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+-   per SPDX.org, English translation can be found here
+    http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml "Scancode"))
+
 URLs
 ----
 
@@ -328,6 +333,7 @@ Raw Data
                 "key": "cecill-c",
                 "name": "CeCILL-C Free Software License Agreement",
                 "spdxId": "CECILL-C",
+                "notes": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cecill-c",
@@ -335,6 +341,15 @@ Raw Data
                         "CECILL-C"
                     ],
                     "__impliedId": "CECILL-C",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -381,6 +396,13 @@ Raw Data
                 {
                     "tag": "NeutralJudgement",
                     "contents": "Google Classification is RECIPROCAL"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n"
                 }
             ]
         ],

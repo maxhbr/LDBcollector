@@ -57,6 +57,10 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+-   Per SPDX.org, this version was released 19 November 2007 This
+    license is OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0.yml "Scancode"))
+
 -   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
     the GNU Affero General Public License (AGPL) cannot be used in
     google3 under any circumstances, and only very rarely on
@@ -591,6 +595,7 @@ Raw Data
                 "key": "agpl-3.0",
                 "name": "GNU Affero General Public License 3.0",
                 "spdxId": "AGPL-3.0-only",
+                "notes": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://agpl-3.0",
@@ -598,6 +603,15 @@ Raw Data
                         "AGPL-3.0-only"
                     ],
                     "__impliedId": "AGPL-3.0-only",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -1022,6 +1036,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
                 }
             ]
         ],

@@ -20,6 +20,9 @@
 - *↑*Is OSI Approved (source:
   [[https://spdx.org/licenses/NGPL.html][SPDX]])
 
+- Per SPDX.org, this license is OSI certified. (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ngpl.yml][Scancode]])
+
 ** URLs
 
 - *Homepage:* http://www.nethack.org/common/license.html
@@ -165,6 +168,7 @@
               "key": "ngpl",
               "name": "Nethack General Public License",
               "spdxId": "NGPL",
+              "notes": "Per SPDX.org, this license is OSI certified.",
               "_implications": {
                   "__impliedNames": [
                       "scancode://ngpl",
@@ -172,6 +176,15 @@
                       "NGPL"
                   ],
                   "__impliedId": "NGPL",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified."
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -267,6 +280,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified."
               }
           ]
       ],

@@ -20,6 +20,9 @@
 - *↑*Is OSI Approved (source:
   [[https://spdx.org/licenses/NPOSL-3.0.html][SPDX]])
 
+- Per SPDX.org, this license is OSI certified. (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nosl-3.0.yml][Scancode]])
+
 ** URLs
 
 - *Homepage:* http://www.opensource.org/licenses/NOSL3.0.html
@@ -192,6 +195,7 @@
               "key": "nosl-3.0",
               "name": "Non-Profit Open Software License 3.0",
               "spdxId": "NPOSL-3.0",
+              "notes": "Per SPDX.org, this license is OSI certified.",
               "_implications": {
                   "__impliedNames": [
                       "scancode://nosl-3.0",
@@ -199,6 +203,15 @@
                       "NPOSL-3.0"
                   ],
                   "__impliedId": "NPOSL-3.0",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified."
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -291,6 +304,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified."
               }
           ]
       ],

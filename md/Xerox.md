@@ -15,6 +15,11 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per Fedora, this license is very similar to MIT, except that it
+    requires that US Export Control laws be followed, which makes it
+    GPL-Incompatible. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml "Scancode"))
+
 URLs
 ----
 
@@ -104,6 +109,7 @@ Raw Data
                 "key": "mit-export-control",
                 "name": "MIT with Export Control",
                 "spdxId": "Xerox",
+                "notes": "Per Fedora, this license is very similar to MIT, except that it requires\nthat US Export Control laws be followed, which makes it GPL-Incompatible.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://mit-export-control",
@@ -111,6 +117,15 @@ Raw Data
                         "Xerox"
                     ],
                     "__impliedId": "Xerox",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, this license is very similar to MIT, except that it requires\nthat US Export Control laws be followed, which makes it GPL-Incompatible.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -173,6 +188,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, this license is very similar to MIT, except that it requires\nthat US Export Control laws be followed, which makes it GPL-Incompatible.\n"
                 }
             ]
         ],

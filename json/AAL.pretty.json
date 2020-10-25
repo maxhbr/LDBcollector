@@ -89,6 +89,7 @@
             "key": "attribution",
             "name": "Attribution Assurance License",
             "spdxId": "AAL",
+            "notes": "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://attribution",
@@ -96,6 +97,15 @@
                     "AAL"
                 ],
                 "__impliedId": "AAL",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -237,6 +247,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n"
             }
         ]
     ],

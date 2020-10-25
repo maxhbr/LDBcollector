@@ -20,6 +20,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/LGPL-2.0-only.html "SPDX"))
 
+-   Per SPDX.org, this license was released June 1991. This license has
+    been superseded by LGPL v2.1 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml "Scancode"))
+
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -600,6 +604,7 @@ Raw Data
                 "key": "lgpl-2.0",
                 "name": "GNU Library General Public License 2.0",
                 "spdxId": "LGPL-2.0-only",
+                "notes": "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lgpl-2.0",
@@ -607,6 +612,15 @@ Raw Data
                         "LGPL-2.0-only"
                     ],
                     "__impliedId": "LGPL-2.0-only",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -808,6 +822,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
                 }
             ]
         ],

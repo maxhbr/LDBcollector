@@ -29,6 +29,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license was released 13 December 2002. This
+    license is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml "Scancode"))
+
 URLs
 ----
 
@@ -193,6 +197,7 @@ Raw Data
                 "key": "w3c",
                 "name": "W3C Software Notice and License",
                 "spdxId": "W3C",
+                "notes": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://w3c",
@@ -200,6 +205,15 @@ Raw Data
                         "W3C"
                     ],
                     "__impliedId": "W3C",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -402,6 +416,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
                 }
             ]
         ],

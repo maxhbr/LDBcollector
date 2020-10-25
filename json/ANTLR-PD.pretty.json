@@ -51,6 +51,7 @@
             "key": "antlr-pd",
             "name": "ANTLR Software Rights Notice",
             "spdxId": "ANTLR-PD",
+            "notes": "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://antlr-pd",
@@ -58,6 +59,15 @@
                     "ANTLR-PD"
                 ],
                 "__impliedId": "ANTLR-PD",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -124,6 +134,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n"
             }
         ]
     ],

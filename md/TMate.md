@@ -123,6 +123,7 @@ Raw Data
                 "key": "tmate",
                 "name": "TMate Open Source License",
                 "spdxId": "TMate",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://tmate",

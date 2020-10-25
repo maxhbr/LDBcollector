@@ -135,6 +135,7 @@ Raw Data
                 "key": "borceux",
                 "name": "Borceux License",
                 "spdxId": "Borceux",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://borceux",

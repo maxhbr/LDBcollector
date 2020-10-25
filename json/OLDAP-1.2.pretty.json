@@ -49,6 +49,7 @@
             "key": "openldap-1.2",
             "name": "OpenLDAP Public License 1.2",
             "spdxId": "OLDAP-1.2",
+            "notes": "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://openldap-1.2",
@@ -56,6 +57,15 @@
                     "OLDAP-1.2"
                 ],
                 "__impliedId": "OLDAP-1.2",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -114,6 +124,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n"
             }
         ]
     ],

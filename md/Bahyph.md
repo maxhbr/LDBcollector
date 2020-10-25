@@ -92,6 +92,7 @@ Raw Data
                 "key": "bahyph",
                 "name": "Bahyph License",
                 "spdxId": "Bahyph",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bahyph",

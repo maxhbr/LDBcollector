@@ -40,6 +40,10 @@
   (source: [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]])
 
+- Per SPDX.org, this license was released 26 February 2007. This license
+  is OSI certified (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.1.yml][Scancode]])
+
 ** Obligations
 
 | Rights:            | Conditions:           | Limitations:   |
@@ -274,6 +278,7 @@
               "key": "ofl-1.1",
               "name": "SIL Open Font License 1.1",
               "spdxId": "OFL-1.1",
+              "notes": "Per SPDX.org, this license was released 26 February 2007. This license is\nOSI certified\n",
               "_implications": {
                   "__impliedNames": [
                       "scancode://ofl-1.1",
@@ -281,6 +286,15 @@
                       "OFL-1.1"
                   ],
                   "__impliedId": "OFL-1.1",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license was released 26 February 2007. This license is\nOSI certified\n"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -481,6 +495,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license was released 26 February 2007. This license is\nOSI certified\n"
               }
           ]
       ],

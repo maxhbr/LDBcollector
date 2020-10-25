@@ -201,6 +201,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "key": "upl-1.0",
             "name": "Universal Permissive License (UPL) v1.0",
             "spdxId": "UPL-1.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://upl-1.0",

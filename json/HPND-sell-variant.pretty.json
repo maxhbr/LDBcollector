@@ -53,6 +53,7 @@
             "key": "x11-keith-packard",
             "name": "X11-Style (Keith Packard)",
             "spdxId": "HPND-sell-variant",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://x11-keith-packard",
@@ -81,6 +82,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "this is actually the same as the x11-keith-packard"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -48,6 +48,7 @@
             "key": "imagemagick",
             "name": "ImageMagick License",
             "spdxId": "ImageMagick",
+            "notes": "this is very close to the Apache 2.0 licecnse that was used as a base.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://imagemagick",
@@ -55,6 +56,15 @@
                     "ImageMagick"
                 ],
                 "__impliedId": "ImageMagick",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "this is very close to the Apache 2.0 licecnse that was used as a base."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -113,6 +123,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Silver"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "this is very close to the Apache 2.0 licecnse that was used as a base."
             }
         ]
     ],

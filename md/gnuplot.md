@@ -107,6 +107,7 @@ Raw Data
                 "key": "gnuplot",
                 "name": "gnuplot License",
                 "spdxId": "gnuplot",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://gnuplot",

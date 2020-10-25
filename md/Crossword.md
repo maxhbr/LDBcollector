@@ -90,6 +90,7 @@ Raw Data
                 "key": "crossword",
                 "name": "Crossword License",
                 "spdxId": "Crossword",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://crossword",

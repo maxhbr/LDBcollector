@@ -48,6 +48,7 @@
             "key": "wsuipa",
             "name": "Wsuipa License",
             "spdxId": "Wsuipa",
+            "notes": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://wsuipa",
@@ -55,6 +56,15 @@
                     "Wsuipa"
                 ],
                 "__impliedId": "Wsuipa",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -113,6 +123,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
             }
         ]
     ],

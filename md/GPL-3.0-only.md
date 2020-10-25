@@ -74,6 +74,10 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+-   Per SPDX.org, this license was released 29 June 2007 This license is
+    OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0.yml "Scancode"))
+
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -1104,6 +1108,7 @@ Raw Data
                 "key": "gpl-3.0",
                 "name": "GNU General Public License 3.0",
                 "spdxId": "GPL-3.0-only",
+                "notes": "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://gpl-3.0",
@@ -1111,6 +1116,15 @@ Raw Data
                         "GPL-3.0-only"
                     ],
                     "__impliedId": "GPL-3.0-only",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -1633,6 +1647,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
                 }
             ],
             [

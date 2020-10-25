@@ -31,6 +31,9 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
+-   replaced by mit-old-style-no-advert (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntpl.yml "Scancode"))
+
 URLs
 ----
 
@@ -183,10 +186,20 @@ Raw Data
                 "key": "ntpl",
                 "name": "Network Time Protocol License",
                 "spdxId": null,
+                "notes": "replaced by mit-old-style-no-advert",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ntpl",
                         "NTP License"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "replaced by mit-old-style-no-advert"
+                            }
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [
@@ -356,6 +369,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "replaced by mit-old-style-no-advert"
                 }
             ],
             [

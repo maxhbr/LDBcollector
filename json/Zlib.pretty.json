@@ -142,6 +142,7 @@
             "key": "zlib",
             "name": "ZLIB License",
             "spdxId": "Zlib",
+            "notes": "Per SPDX.org, this is OSI certified",
             "_implications": {
                 "__impliedNames": [
                     "scancode://zlib",
@@ -149,6 +150,15 @@
                     "Zlib"
                 ],
                 "__impliedId": "Zlib",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this is OSI certified"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -561,6 +571,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this is OSI certified"
             }
         ],
         [

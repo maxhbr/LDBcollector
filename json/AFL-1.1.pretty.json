@@ -66,6 +66,7 @@
             "key": "afl-1.1",
             "name": "Academic Free License 1.1",
             "spdxId": "AFL-1.1",
+            "notes": "Per SPDX.org, this license has been superseded by later versions.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://afl-1.1",
@@ -73,6 +74,15 @@
                     "AFL-1.1"
                 ],
                 "__impliedId": "AFL-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license has been superseded by later versions."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -150,6 +160,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license has been superseded by later versions."
             }
         ]
     ],

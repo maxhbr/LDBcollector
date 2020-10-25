@@ -149,6 +149,7 @@ Raw Data
                 "key": "lal-1.2",
                 "name": "Licence Art Libre 1.2",
                 "spdxId": "LAL-1.2",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lal-1.2",

@@ -539,6 +539,7 @@ Raw Data
                 "key": "cc-by-4.0",
                 "name": "Creative Commons Attribution 4.0 International Public License",
                 "spdxId": "CC-BY-4.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cc-by-4.0",

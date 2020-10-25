@@ -190,6 +190,7 @@ Raw Data
                 "key": "apache-1.0",
                 "name": "Apache License 1.0",
                 "spdxId": "Apache-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://apache-1.0",

@@ -206,6 +206,7 @@ Raw Data
                 "key": "ijg",
                 "name": "Independent JPEG Group License",
                 "spdxId": "IJG",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ijg",

@@ -136,6 +136,7 @@ francis dot borceux at uclouvain dot be.
             "key": "borceux",
             "name": "Borceux License",
             "spdxId": "Borceux",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://borceux",

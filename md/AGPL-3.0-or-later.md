@@ -29,6 +29,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX"))
 
+-   Per SPDX.org, this version was released 19 November 2007 This
+    license is OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode"))
+
 URLs
 ----
 
@@ -292,6 +296,7 @@ Raw Data
                 "key": "agpl-3.0-plus",
                 "name": "GNU Affero General Public License 3.0 or later",
                 "spdxId": "AGPL-3.0-or-later",
+                "notes": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://agpl-3.0-plus",
@@ -299,6 +304,15 @@ Raw Data
                         "AGPL-3.0-or-later"
                     ],
                     "__impliedId": "AGPL-3.0-or-later",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -549,6 +563,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
                 }
             ]
         ],

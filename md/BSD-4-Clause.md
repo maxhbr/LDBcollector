@@ -33,6 +33,10 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
+-   Per SPDX.org, this license was rescinded by the author on 22
+    July 1999. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml "Scancode"))
+
 -   **↓**Advertisement clause (3.) is complicated and prone to conflicts
     (source: Override)
 
@@ -220,6 +224,7 @@ Raw Data
                 "key": "bsd-original",
                 "name": "BSD-Original",
                 "spdxId": "BSD-4-Clause",
+                "notes": "Per SPDX.org, this license was rescinded by the author on 22 July 1999.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bsd-original",
@@ -227,6 +232,15 @@ Raw Data
                         "BSD-4-Clause"
                     ],
                     "__impliedId": "BSD-4-Clause",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -480,6 +494,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
                 }
             ],
             [

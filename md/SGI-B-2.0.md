@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license was released 18 Sept 2008 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -114,6 +117,7 @@ Raw Data
                 "key": "sgi-freeb-2.0",
                 "name": "SGI Free Software License B v2.0",
                 "spdxId": "SGI-B-2.0",
+                "notes": "Per SPDX.org, this license was released 18 Sept 2008",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sgi-freeb-2.0",
@@ -121,6 +125,15 @@ Raw Data
                         "SGI-B-2.0"
                     ],
                     "__impliedId": "SGI-B-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 18 Sept 2008"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -183,6 +196,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 18 Sept 2008"
                 }
             ]
         ],

@@ -88,6 +88,7 @@ Raw Data
                 "key": "leptonica",
                 "name": "Leptonica License",
                 "spdxId": "Leptonica",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://leptonica",

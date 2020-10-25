@@ -40,6 +40,7 @@
 <li><p><strong>↑</strong>Google Classification is NOTICE (source: <a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a>)</p></li>
 <li><p><strong>↑</strong>Rating is: Bronze (source: <a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a>)</p></li>
 <li><p><strong>↑</strong>This software Licenses is OK for Fedora (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a>)</p></li>
+<li><p>This is the OpenSSL license proper, without the SSLEay part. The SPDX OpenSSL identifier does not apply here. Instead it matches the openssl- ssleay license. (source: <a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml" title="Scancode">Scancode</a>)</p></li>
 </ul>
 <h2>URLs</h2>
 <ul>
@@ -213,10 +214,20 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             &quot;key&quot;: &quot;openssl&quot;,
             &quot;name&quot;: &quot;OpenSSL License&quot;,
             &quot;spdxId&quot;: null,
+            &quot;notes&quot;: &quot;This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n&quot;,
             &quot;_implications&quot;: {
                 &quot;__impliedNames&quot;: [
                     &quot;scancode://openssl&quot;,
                     &quot;OpenSSL License&quot;
+                ],
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;Scancode&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NeutralJudgement&quot;,
+                            &quot;contents&quot;: &quot;This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n&quot;
+                        }
+                    ]
                 ],
                 &quot;__impliedCopyleft&quot;: [
                     [
@@ -429,6 +440,13 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             {
                 &quot;tag&quot;: &quot;PositiveJudgement&quot;,
                 &quot;contents&quot;: &quot;Google Classification is NOTICE&quot;
+            }
+        ],
+        [
+            &quot;Scancode&quot;,
+            {
+                &quot;tag&quot;: &quot;NeutralJudgement&quot;,
+                &quot;contents&quot;: &quot;This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n&quot;
             }
         ]
     ],

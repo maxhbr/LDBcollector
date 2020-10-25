@@ -136,6 +136,7 @@ Raw Data
                 "key": "npl-1.1",
                 "name": "Netscape Public License 1.1",
                 "spdxId": "NPL-1.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://npl-1.1",

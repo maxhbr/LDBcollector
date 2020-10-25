@@ -51,6 +51,7 @@
             "key": "mpich",
             "name": "MPICH License",
             "spdxId": "mpich2",
+            "notes": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://mpich",
@@ -58,6 +59,15 @@
                     "mpich2"
                 ],
                 "__impliedId": "mpich2",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -120,6 +130,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
             }
         ]
     ],

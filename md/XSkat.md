@@ -10,6 +10,21 @@ XSkat License (XSkat)
 Comments on (easy) usability
 ----------------------------
 
+-   Per Fedora, this license is Free only when clause 2.b is used. It is
+    always GPL-incompatible. Packagers using code under this license in
+    Fedora should note that while the RPM changelog is sufficient to
+    meet one requirement of clause 2.b (to "clearly state who last
+    changed the program"), the Release field in the RPM is not enough to
+    meet the other requirement of clause 2.b. Packagers can meet the
+    other requirement by simply adding a .0 to the end of the upstream
+    version in the RPM package. You need to do this, and not simply use
+    the regular NVR to fulfill 2.b, because the license explicitly
+    specifies the versioning schema x.y.z, which is different from how
+    RPM displays it (x.y-z). Just add a dummy .0 to the end of the
+    version then increment the Release field like any other package.
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml "Scancode"))
+
 URLs
 ----
 
@@ -90,6 +105,7 @@ Raw Data
                 "key": "xskat",
                 "name": "XSkat License",
                 "spdxId": "XSkat",
+                "notes": "Per Fedora, this license is Free only when clause 2.b is used. It is always\nGPL-incompatible. Packagers using code under this license in Fedora should\nnote that while the RPM changelog is sufficient to meet one requirement of\nclause 2.b (to \"clearly state who last changed the program\"), the Release\nfield in the RPM is not enough to meet the other requirement of clause 2.b.\nPackagers can meet the other requirement by simply adding a .0 to the end\nof the upstream version in the RPM package. You need to do this, and not\nsimply use the regular NVR to fulfill 2.b, because the license explicitly\nspecifies the versioning schema x.y.z, which is different from how RPM\ndisplays it (x.y-z). Just add a dummy .0 to the end of the version then\nincrement the Release field like any other package.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://xskat",
@@ -97,6 +113,15 @@ Raw Data
                         "XSkat"
                     ],
                     "__impliedId": "XSkat",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, this license is Free only when clause 2.b is used. It is always\nGPL-incompatible. Packagers using code under this license in Fedora should\nnote that while the RPM changelog is sufficient to meet one requirement of\nclause 2.b (to \"clearly state who last changed the program\"), the Release\nfield in the RPM is not enough to meet the other requirement of clause 2.b.\nPackagers can meet the other requirement by simply adding a .0 to the end\nof the upstream version in the RPM package. You need to do this, and not\nsimply use the regular NVR to fulfill 2.b, because the license explicitly\nspecifies the versioning schema x.y.z, which is different from how RPM\ndisplays it (x.y-z). Just add a dummy .0 to the end of the version then\nincrement the Release field like any other package.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -114,6 +139,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, this license is Free only when clause 2.b is used. It is always\nGPL-incompatible. Packagers using code under this license in Fedora should\nnote that while the RPM changelog is sufficient to meet one requirement of\nclause 2.b (to \"clearly state who last changed the program\"), the Release\nfield in the RPM is not enough to meet the other requirement of clause 2.b.\nPackagers can meet the other requirement by simply adding a .0 to the end\nof the upstream version in the RPM package. You need to do this, and not\nsimply use the regular NVR to fulfill 2.b, because the license explicitly\nspecifies the versioning schema x.y.z, which is different from how RPM\ndisplays it (x.y-z). Just add a dummy .0 to the end of the version then\nincrement the Release field like any other package.\n"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

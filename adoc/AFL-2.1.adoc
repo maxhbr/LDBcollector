@@ -23,6 +23,8 @@ Policy])
 https://spdx.org/licenses/AFL-2.1.html[SPDX])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this license was OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml[Scancode])
 
 === URLs
 
@@ -153,6 +155,7 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
             "key": "afl-2.1",
             "name": "Academic Free License 2.1",
             "spdxId": "AFL-2.1",
+            "notes": "Per SPDX.org, this license was OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://afl-2.1",
@@ -160,6 +163,15 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
                     "AFL-2.1"
                 ],
                 "__impliedId": "AFL-2.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -266,6 +278,13 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was OSI certified."
             }
         ]
     ],

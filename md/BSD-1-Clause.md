@@ -99,6 +99,7 @@ Raw Data
                 "key": "bsd-1-clause",
                 "name": "BSD-1-Clause",
                 "spdxId": "BSD-1-Clause",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bsd-1-clause",

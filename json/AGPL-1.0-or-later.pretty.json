@@ -49,6 +49,7 @@
             "key": "agpl-1.0-plus",
             "name": "Affero General Public License 1.0 or later",
             "spdxId": "AGPL-1.0-or-later",
+            "notes": "per SPDX.org Section 9 of this license allows content under this any later\nversion grant to be redistributed under the GPL-3.0-or-later. Affero Inc.\nalso released an AGPL-2.0 (http://www.affero.org/agpl2.html) to allow\nAGPL-1.0-or-later work to be distributed under the AGPL-3.0-or-later.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://agpl-1.0-plus",
@@ -56,6 +57,15 @@
                     "AGPL-1.0-or-later"
                 ],
                 "__impliedId": "AGPL-1.0-or-later",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "per SPDX.org Section 9 of this license allows content under this any later\nversion grant to be redistributed under the GPL-3.0-or-later. Affero Inc.\nalso released an AGPL-2.0 (http://www.affero.org/agpl2.html) to allow\nAGPL-1.0-or-later work to be distributed under the AGPL-3.0-or-later.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -73,6 +83,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "per SPDX.org Section 9 of this license allows content under this any later\nversion grant to be redistributed under the GPL-3.0-or-later. Affero Inc.\nalso released an AGPL-2.0 (http://www.affero.org/agpl2.html) to allow\nAGPL-1.0-or-later work to be distributed under the AGPL-3.0-or-later.\n"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -100,10 +100,20 @@
             "key": "ntpl",
             "name": "Network Time Protocol License",
             "spdxId": null,
+            "notes": "replaced by mit-old-style-no-advert",
             "_implications": {
                 "__impliedNames": [
                     "scancode://ntpl",
                     "NTP License"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "replaced by mit-old-style-no-advert"
+                        }
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [
@@ -273,6 +283,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "replaced by mit-old-style-no-advert"
             }
         ],
         [

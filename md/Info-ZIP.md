@@ -105,6 +105,7 @@ Raw Data
                 "key": "info-zip",
                 "name": "Info-Zip License",
                 "spdxId": "Info-ZIP",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://info-zip",

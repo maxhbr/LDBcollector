@@ -183,6 +183,7 @@ Raw Data
                 "key": "vim",
                 "name": "VIM License",
                 "spdxId": "Vim",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://vim",

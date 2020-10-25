@@ -95,6 +95,7 @@ Raw Data
                 "key": "ampas",
                 "name": "Academy of Motion Picture Arts and Sciences BSD-Style",
                 "spdxId": "AMPAS",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ampas",

@@ -144,6 +144,7 @@
             "key": "ms-pl",
             "name": "Microsoft Public License",
             "spdxId": "MS-PL",
+            "notes": "also known as Microsoft Permissive License (Ms-PL) v1.1",
             "_implications": {
                 "__impliedNames": [
                     "scancode://ms-pl",
@@ -151,6 +152,15 @@
                     "MS-PL"
                 ],
                 "__impliedId": "MS-PL",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "also known as Microsoft Permissive License (Ms-PL) v1.1"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -546,6 +556,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "also known as Microsoft Permissive License (Ms-PL) v1.1"
             }
         ],
         [

@@ -84,6 +84,7 @@ Raw Data
                 "key": "zed",
                 "name": "Zed License",
                 "spdxId": "Zed",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://zed",

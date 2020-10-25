@@ -12,6 +12,11 @@ Giftware License (Giftware)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license may also be known as Allegro 4. The
+    Allegro 5 license shown at the alleg.sourceforge.net URL is the same
+    as zlib. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/allegro-4.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -97,6 +102,7 @@ Raw Data
                 "key": "allegro-4",
                 "name": "Allegro 4 License",
                 "spdxId": "Giftware",
+                "notes": "Per SPDX.org, this license may also be known as Allegro 4. The Allegro 5\nlicense shown at the alleg.sourceforge.net URL is the same as zlib.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://allegro-4",
@@ -104,6 +110,15 @@ Raw Data
                         "Giftware"
                     ],
                     "__impliedId": "Giftware",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license may also be known as Allegro 4. The Allegro 5\nlicense shown at the alleg.sourceforge.net URL is the same as zlib.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -166,6 +181,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license may also be known as Allegro 4. The Allegro 5\nlicense shown at the alleg.sourceforge.net URL is the same as zlib.\n"
                 }
             ]
         ],

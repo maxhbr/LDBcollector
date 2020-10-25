@@ -49,6 +49,7 @@
             "key": "lppl-1.1",
             "name": "LaTeX Project Public License v1.1",
             "spdxId": "LPPL-1.1",
+            "notes": "Per SPDX.org, this license was released 10 July 1999.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://lppl-1.1",
@@ -56,6 +57,15 @@
                     "LPPL-1.1"
                 ],
                 "__impliedId": "LPPL-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 10 July 1999."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -73,6 +83,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 10 July 1999."
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

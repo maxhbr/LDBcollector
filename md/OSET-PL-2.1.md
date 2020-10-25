@@ -213,6 +213,7 @@ Raw Data
                 "key": "oset-pl-2.1",
                 "name": "OSET Public License version 2.1",
                 "spdxId": "OSET-PL-2.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://oset-pl-2.1",

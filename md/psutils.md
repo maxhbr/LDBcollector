@@ -118,6 +118,7 @@ Raw Data
                 "key": "psutils",
                 "name": "PS Utilities License",
                 "spdxId": "psutils",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://psutils",

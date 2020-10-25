@@ -566,6 +566,7 @@ Raw Data
                 "key": "nosl-1.0",
                 "name": "Netizen Open Source License 1.0",
                 "spdxId": "NOSL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://nosl-1.0",

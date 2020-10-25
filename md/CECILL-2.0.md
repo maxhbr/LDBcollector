@@ -12,6 +12,10 @@ CeCILL Free Software License Agreement v2.0 (CECILL-2.0)
 Comments on (easy) usability
 ----------------------------
 
+-   per SPDX.org, English translation can be found here
+    http://www.cecill.info/licences/Licence\_CeCILL\_V2-en.html (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-2.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -585,6 +589,7 @@ Raw Data
                 "key": "cecill-2.0",
                 "name": "CeCILL Free Software License Agreement v2.0",
                 "spdxId": "CECILL-2.0",
+                "notes": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cecill-2.0",
@@ -592,6 +597,15 @@ Raw Data
                         "CECILL-2.0"
                     ],
                     "__impliedId": "CECILL-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -609,6 +623,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

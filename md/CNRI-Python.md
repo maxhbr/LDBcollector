@@ -22,6 +22,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   per SPDX.org, CNRI portion of the multi-part Python License
+    (Python-2.0) (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.yml "Scancode"))
+
 URLs
 ----
 
@@ -161,6 +165,7 @@ Raw Data
                 "key": "cnri-python-1.6",
                 "name": "CNRI Open Source License Agreement for Python 1.6",
                 "spdxId": "CNRI-Python",
+                "notes": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cnri-python-1.6",
@@ -168,6 +173,15 @@ Raw Data
                         "CNRI-Python"
                     ],
                     "__impliedId": "CNRI-Python",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -309,6 +323,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
                 }
             ]
         ],

@@ -38,6 +38,9 @@ Policy])
 https://spdx.org/licenses/BSL-1.0.html[SPDX])
 * **↑**Rating is: Silver (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this version was released 17 August 2003 This license is
+OSI certifified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/boost-1.0.yml[Scancode])
 
 === Obligations
 
@@ -239,6 +242,7 @@ DEALINGS IN THE SOFTWARE.
             "key": "boost-1.0",
             "name": "Boost Software License 1.0",
             "spdxId": "BSL-1.0",
+            "notes": "Per SPDX.org, this version was released 17 August 2003 This license is OSI\ncertifified.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://boost-1.0",
@@ -246,6 +250,15 @@ DEALINGS IN THE SOFTWARE.
                     "BSL-1.0"
                 ],
                 "__impliedId": "BSL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this version was released 17 August 2003 This license is OSI\ncertifified.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -554,6 +567,13 @@ DEALINGS IN THE SOFTWARE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this version was released 17 August 2003 This license is OSI\ncertifified.\n"
             }
         ]
     ],

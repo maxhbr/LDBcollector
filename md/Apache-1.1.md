@@ -34,6 +34,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license is OSI certified. This license has been
+    superseded by Apache 2.0 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -237,6 +241,7 @@ Raw Data
                 "key": "apache-1.1",
                 "name": "Apache License 1.1",
                 "spdxId": "Apache-1.1",
+                "notes": "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://apache-1.1",
@@ -244,6 +249,15 @@ Raw Data
                         "Apache-1.1"
                     ],
                     "__impliedId": "Apache-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -511,6 +525,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n"
                 }
             ]
         ],

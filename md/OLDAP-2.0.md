@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license was released 7 June 1999. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -129,6 +132,7 @@ Raw Data
                 "key": "openldap-2.0",
                 "name": "OpenLDAP Public License 2.0",
                 "spdxId": "OLDAP-2.0",
+                "notes": "Per SPDX.org, this license was released 7 June 1999.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://openldap-2.0",
@@ -136,6 +140,15 @@ Raw Data
                         "OLDAP-2.0"
                     ],
                     "__impliedId": "OLDAP-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 7 June 1999."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -194,6 +207,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 7 June 1999."
                 }
             ]
         ],

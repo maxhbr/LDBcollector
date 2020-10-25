@@ -55,6 +55,9 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
+-   Per SPDX.org, this is OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -268,6 +271,7 @@ Raw Data
                 "key": "zlib",
                 "name": "ZLIB License",
                 "spdxId": "Zlib",
+                "notes": "Per SPDX.org, this is OSI certified",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://zlib",
@@ -275,6 +279,15 @@ Raw Data
                         "Zlib"
                     ],
                     "__impliedId": "Zlib",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this is OSI certified"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -687,6 +700,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this is OSI certified"
                 }
             ],
             [

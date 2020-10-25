@@ -65,6 +65,7 @@
             "key": "apsl-1.2",
             "name": "Apple Public Source License 1.2",
             "spdxId": "APSL-1.2",
+            "notes": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://apsl-1.2",
@@ -72,6 +73,15 @@
                     "APSL-1.2"
                 ],
                 "__impliedId": "APSL-1.2",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -142,6 +152,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
             }
         ]
     ],

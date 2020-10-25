@@ -279,6 +279,7 @@ Raw Data
                 "key": "interbase-1.0",
                 "name": "Interbase Public License 1.0",
                 "spdxId": "Interbase-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://interbase-1.0",

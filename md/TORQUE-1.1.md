@@ -12,6 +12,23 @@ TORQUE v2.5+ Software License v1.1 (TORQUE-1.1)
 Comments on (easy) usability
 ----------------------------
 
+-   Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE
+    upstream drafted a new license with updated contact information. The
+    intention was to have a lawyer retain the same functionality as the
+    older licensing, but because part of it was misread or accidentally
+    ignored, v1.0 of the TORQUE v2.5+ Software License contained
+    commercial use restrictions which made it non-free. After this issue
+    was raised on the TORQUE mailing lists, the TORQUE upstream revised
+    the license to remove the commercial use restrictions in v1.1. The
+    TORQUE v2.5+ Software License v1.1 is Free, but GPL incompatible
+    because of the advertising clause. Also noteworthy is that this
+    license references the fact that much of the TORQUE v2.5 code is
+    derived from OpenPBS''s code, so the TORQUE v2.5+ software is
+    properly dual licensed TORQUEv1.1 and OpenPBS. This also means that
+    this license is not useful for other codebases without removing Note
+    1. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -104,6 +121,7 @@ Raw Data
                 "key": "torque-1.1",
                 "name": "TORQUE v2.5+ Software License v1.1",
                 "spdxId": "TORQUE-1.1",
+                "notes": "Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE upstream\ndrafted a new license with updated contact information. The intention was\nto have a lawyer retain the same functionality as the older licensing, but\nbecause part of it was misread or accidentally ignored, v1.0 of the TORQUE\nv2.5+ Software License contained commercial use restrictions which made it\nnon-free. After this issue was raised on the TORQUE mailing lists, the\nTORQUE upstream revised the license to remove the commercial use\nrestrictions in v1.1. The TORQUE v2.5+ Software License v1.1 is Free, but\nGPL incompatible because of the advertising clause. Also noteworthy is that\nthis license references the fact that much of the TORQUE v2.5 code is\nderived from OpenPBS''s code, so the TORQUE v2.5+ software is properly dual\nlicensed TORQUEv1.1 and OpenPBS. This also means that this license is not\nuseful for other codebases without removing Note 1.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://torque-1.1",
@@ -111,6 +129,15 @@ Raw Data
                         "TORQUE-1.1"
                     ],
                     "__impliedId": "TORQUE-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE upstream\ndrafted a new license with updated contact information. The intention was\nto have a lawyer retain the same functionality as the older licensing, but\nbecause part of it was misread or accidentally ignored, v1.0 of the TORQUE\nv2.5+ Software License contained commercial use restrictions which made it\nnon-free. After this issue was raised on the TORQUE mailing lists, the\nTORQUE upstream revised the license to remove the commercial use\nrestrictions in v1.1. The TORQUE v2.5+ Software License v1.1 is Free, but\nGPL incompatible because of the advertising clause. Also noteworthy is that\nthis license references the fact that much of the TORQUE v2.5 code is\nderived from OpenPBS''s code, so the TORQUE v2.5+ software is properly dual\nlicensed TORQUEv1.1 and OpenPBS. This also means that this license is not\nuseful for other codebases without removing Note 1.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -128,6 +155,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE upstream\ndrafted a new license with updated contact information. The intention was\nto have a lawyer retain the same functionality as the older licensing, but\nbecause part of it was misread or accidentally ignored, v1.0 of the TORQUE\nv2.5+ Software License contained commercial use restrictions which made it\nnon-free. After this issue was raised on the TORQUE mailing lists, the\nTORQUE upstream revised the license to remove the commercial use\nrestrictions in v1.1. The TORQUE v2.5+ Software License v1.1 is Free, but\nGPL incompatible because of the advertising clause. Also noteworthy is that\nthis license references the fact that much of the TORQUE v2.5 code is\nderived from OpenPBS''s code, so the TORQUE v2.5+ software is properly dual\nlicensed TORQUEv1.1 and OpenPBS. This also means that this license is not\nuseful for other codebases without removing Note 1.\n"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

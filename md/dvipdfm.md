@@ -10,6 +10,11 @@ dvipdfm License (dvipdfm)
 Comments on (easy) usability
 ----------------------------
 
+-   Per Fedora, "should" does not mean "must", and there are implied
+    rights for unlimited copying and distribution rights for unmodified
+    versions. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode"))
+
 URLs
 ----
 
@@ -79,6 +84,7 @@ Raw Data
                 "key": "dvipdfm",
                 "name": "dvipdfm License",
                 "spdxId": "dvipdfm",
+                "notes": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://dvipdfm",
@@ -86,6 +92,15 @@ Raw Data
                         "dvipdfm"
                     ],
                     "__impliedId": "dvipdfm",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -103,6 +118,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

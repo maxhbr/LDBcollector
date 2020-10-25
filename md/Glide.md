@@ -331,6 +331,7 @@ Raw Data
                 "key": "glide",
                 "name": "3DFX GLIDE Source Code General Public License",
                 "spdxId": "Glide",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://glide",

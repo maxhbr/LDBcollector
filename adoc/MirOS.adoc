@@ -22,6 +22,8 @@ https://spdx.org/licenses/MirOS.html[SPDX])
 * **↑**Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC but
 applicable to more than just software (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+* Per SPDX.org, this license is OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml[Scancode])
 * **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
@@ -152,6 +154,7 @@ of said person's immediate fault when using the work as intended.
             "key": "mir-os",
             "name": "MirOS License",
             "spdxId": "MirOS",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://mir-os",
@@ -159,6 +162,15 @@ of said person's immediate fault when using the work as intended.
                     "MirOS"
                 ],
                 "__impliedId": "MirOS",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -324,6 +336,13 @@ of said person's immediate fault when using the work as intended.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

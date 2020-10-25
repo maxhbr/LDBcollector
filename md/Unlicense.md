@@ -40,6 +40,9 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
+-   Per SPDX.org, this is a public domain dedication (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -197,6 +200,7 @@ Raw Data
                 "key": "unlicense",
                 "name": "Unlicense",
                 "spdxId": "Unlicense",
+                "notes": "Per SPDX.org, this is a public domain dedication",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://unlicense",
@@ -204,6 +208,15 @@ Raw Data
                         "Unlicense"
                     ],
                     "__impliedId": "Unlicense",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this is a public domain dedication"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -447,6 +460,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Google Classification is UNENCUMBERED"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this is a public domain dedication"
                 }
             ],
             [

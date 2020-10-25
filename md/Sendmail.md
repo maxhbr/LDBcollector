@@ -10,6 +10,10 @@ Sendmail License (Sendmail)
 Comments on (easy) usability
 ----------------------------
 
+-   this version of the license dates from 2004. There several minor
+    variations publichsed since. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml "Scancode"))
+
 URLs
 ----
 
@@ -166,6 +170,7 @@ Raw Data
                 "key": "sendmail",
                 "name": "Sendmail License",
                 "spdxId": "Sendmail",
+                "notes": "this version of the license dates from 2004. There several minor variations publichsed since.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sendmail",
@@ -173,6 +178,15 @@ Raw Data
                         "Sendmail"
                     ],
                     "__impliedId": "Sendmail",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "this version of the license dates from 2004. There several minor variations publichsed since."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -194,6 +208,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "this version of the license dates from 2004. There several minor variations publichsed since."
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

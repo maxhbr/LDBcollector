@@ -15,6 +15,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   until bzip2 1.0.6 there is only one license and not two as listed in
+    SPDX (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode"))
+
 URLs
 ----
 
@@ -148,6 +152,7 @@ Raw Data
                 "key": "bzip2-libbzip-2010",
                 "name": "bzip2 License 2010",
                 "spdxId": "bzip2-1.0.6",
+                "notes": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bzip2-libbzip-2010",
@@ -155,6 +160,15 @@ Raw Data
                         "bzip2-1.0.6"
                     ],
                     "__impliedId": "bzip2-1.0.6",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -217,6 +231,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
                 }
             ]
         ],

@@ -127,6 +127,7 @@ Raw Data
                 "key": "x11-tiff",
                 "name": "X11-Style (Tiff)",
                 "spdxId": "libtiff",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://x11-tiff",

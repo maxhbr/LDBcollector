@@ -17,6 +17,9 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/OGTSL.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/opengroup.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -193,6 +196,7 @@ Raw Data
                 "key": "opengroup",
                 "name": "Open Group Test Suite License",
                 "spdxId": "OGTSL",
+                "notes": "Per SPDX.org, this license is OSI certified.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://opengroup",
@@ -200,6 +204,15 @@ Raw Data
                         "OGTSL"
                     ],
                     "__impliedId": "OGTSL",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -343,6 +356,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

@@ -117,6 +117,7 @@ Raw Data
                 "key": "libpng-v2",
                 "name": "PNG Reference Library License version 2",
                 "spdxId": "libpng-2.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://libpng-v2",

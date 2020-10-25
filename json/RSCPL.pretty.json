@@ -96,6 +96,7 @@
             "key": "ricoh-1.0",
             "name": "Ricoh Source Code Public License v1.0",
             "spdxId": "RSCPL",
+            "notes": "Per SPDX.org, this license is OSI certified",
             "_implications": {
                 "__impliedNames": [
                     "scancode://ricoh-1.0",
@@ -103,6 +104,15 @@
                     "RSCPL"
                 ],
                 "__impliedId": "RSCPL",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -206,6 +216,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified"
             }
         ]
     ],

@@ -358,6 +358,7 @@ Raw Data
                 "key": "python",
                 "name": "Python Software Foundation License v2",
                 "spdxId": "Python-2.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://python",

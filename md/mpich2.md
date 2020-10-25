@@ -12,6 +12,11 @@ mpich2 License (mpich2)
 Comments on (easy) usability
 ----------------------------
 
+-   Per Fedora, this is missing the anti-publicity-use clause, and
+    doesn't mention sublicensing, but otherwise, it is functionally
+    identical to MIT. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpich.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -127,6 +132,7 @@ Raw Data
                 "key": "mpich",
                 "name": "MPICH License",
                 "spdxId": "mpich2",
+                "notes": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://mpich",
@@ -134,6 +140,15 @@ Raw Data
                         "mpich2"
                     ],
                     "__impliedId": "mpich2",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -196,6 +211,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
                 }
             ]
         ],

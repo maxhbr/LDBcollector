@@ -92,6 +92,7 @@
             "key": "cpal-1.0",
             "name": "Common Public Attribution License 1.0",
             "spdxId": "CPAL-1.0",
+            "notes": "Per SPDX.org, this license is OSI certifified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://cpal-1.0",
@@ -99,6 +100,15 @@
                     "CPAL-1.0"
                 ],
                 "__impliedId": "CPAL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certifified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -249,6 +259,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certifified."
             }
         ]
     ],

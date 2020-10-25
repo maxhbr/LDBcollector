@@ -167,6 +167,7 @@ Raw Data
                 "key": "liliq-p-1.1",
                 "name": "Licence Libre du QuÃ©bec â Permissive version 1.1",
                 "spdxId": "LiLiQ-P-1.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://liliq-p-1.1",

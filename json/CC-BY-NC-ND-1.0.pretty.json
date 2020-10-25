@@ -66,6 +66,7 @@
             "key": "cc-by-nc-nd-1.0",
             "name": "Creative Commons Attribution Non-Commercial No Derivatives License 1.0",
             "spdxId": "CC-BY-NC-ND-1.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://cc-by-nc-nd-1.0",

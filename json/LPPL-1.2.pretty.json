@@ -49,6 +49,7 @@
             "key": "lppl-1.2",
             "name": "LaTeX Project Public License v1.2",
             "spdxId": "LPPL-1.2",
+            "notes": "Per SPDX.org, this license was released 3 Sept 1999.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://lppl-1.2",
@@ -56,6 +57,15 @@
                     "LPPL-1.2"
                 ],
                 "__impliedId": "LPPL-1.2",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 3 Sept 1999."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -73,6 +83,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 3 Sept 1999."
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

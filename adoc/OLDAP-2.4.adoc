@@ -18,6 +18,8 @@
 
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this license was released 8 December 2000. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.4.yml[Scancode])
 
 === URLs
 
@@ -134,6 +136,7 @@ distributed verbatim copies of this document is granted.
             "key": "openldap-2.4",
             "name": "OpenLDAP Public License 2.4",
             "spdxId": "OLDAP-2.4",
+            "notes": "Per SPDX.org, this license was released 8 December 2000.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://openldap-2.4",
@@ -141,6 +144,15 @@ distributed verbatim copies of this document is granted.
                     "OLDAP-2.4"
                 ],
                 "__impliedId": "OLDAP-2.4",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 8 December 2000."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -199,6 +211,13 @@ distributed verbatim copies of this document is granted.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 8 December 2000."
             }
         ]
     ],

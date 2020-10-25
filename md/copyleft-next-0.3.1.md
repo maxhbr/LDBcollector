@@ -301,6 +301,7 @@ Raw Data
                 "key": "copyleft-next-0.3.1",
                 "name": "copyleft-next 0.3.1",
                 "spdxId": "copyleft-next-0.3.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://copyleft-next-0.3.1",

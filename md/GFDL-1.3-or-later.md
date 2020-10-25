@@ -12,6 +12,9 @@ GNU Free Documentation License v1.3 or later (GFDL-1.3-or-later)
 Comments on (easy) usability
 ----------------------------
 
+-   This license was released 3 November 2008. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3-plus.yml "Scancode"))
+
 -   **↓**Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
     http://www.debian.org/vote/2006/vote\_001\#outcome (source: [Debian
@@ -86,6 +89,7 @@ Raw Data
                 "key": "gfdl-1.3-plus",
                 "name": "GNU Free Documentation License v1.3 or later",
                 "spdxId": "GFDL-1.3-or-later",
+                "notes": "This license was released 3 November 2008.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://gfdl-1.3-plus",
@@ -93,6 +97,15 @@ Raw Data
                         "GFDL-1.3-or-later"
                     ],
                     "__impliedId": "GFDL-1.3-or-later",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "This license was released 3 November 2008."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -143,6 +156,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Exception: Data licensed under the FDL with no invariant sections are considered DFSG-free as of GR 2006-001: http://www.debian.org/vote/2006/vote_001#outcome"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "This license was released 3 November 2008."
                 }
             ]
         ],

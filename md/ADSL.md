@@ -91,6 +91,7 @@ Raw Data
                 "key": "adsl",
                 "name": "Amazon Digital Services License",
                 "spdxId": "ADSL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://adsl",

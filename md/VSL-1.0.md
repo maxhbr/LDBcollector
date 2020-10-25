@@ -22,6 +22,9 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license is OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vsl-1.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -194,6 +197,7 @@ Raw Data
                 "key": "vsl-1.0",
                 "name": "Vovida Software License v. 1.0",
                 "spdxId": "VSL-1.0",
+                "notes": "Per SPDX.org, this license is OSI certified",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://vsl-1.0",
@@ -201,6 +205,15 @@ Raw Data
                         "VSL-1.0"
                     ],
                     "__impliedId": "VSL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -346,6 +359,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified"
                 }
             ]
         ],

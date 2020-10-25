@@ -12,6 +12,9 @@ LaTeX Project Public License v1.3a (LPPL-1.3a)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license was released 1 Oct 2004 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml "Scancode"))
+
 URLs
 ----
 
@@ -473,6 +476,7 @@ Raw Data
                 "key": "lppl-1.3a",
                 "name": "LaTeX Project Public License v1.3a",
                 "spdxId": "LPPL-1.3a",
+                "notes": "Per SPDX.org, this license was released 1 Oct 2004",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lppl-1.3a",
@@ -480,6 +484,15 @@ Raw Data
                         "LPPL-1.3a"
                     ],
                     "__impliedId": "LPPL-1.3a",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 1 Oct 2004"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -497,6 +510,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 1 Oct 2004"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

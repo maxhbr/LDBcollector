@@ -18,6 +18,8 @@
 
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* composite (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/net-snmp.yml[Scancode])
 
 === URLs
 
@@ -329,6 +331,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "key": "net-snmp",
             "name": "Net SNMP License",
             "spdxId": "Net-SNMP",
+            "notes": "composite",
             "_implications": {
                 "__impliedNames": [
                     "scancode://net-snmp",
@@ -336,6 +339,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "Net-SNMP"
                 ],
                 "__impliedId": "Net-SNMP",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "composite"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -394,6 +406,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "composite"
             }
         ]
     ],

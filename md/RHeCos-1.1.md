@@ -518,6 +518,7 @@ Raw Data
                 "key": "ecosrh-1.1",
                 "name": "Red Hat eCos Public License 1.1",
                 "spdxId": "RHeCos-1.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ecosrh-1.1",

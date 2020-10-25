@@ -21,6 +21,9 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml "Scancode"))
+
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -171,6 +174,7 @@ Raw Data
                 "key": "sleepycat",
                 "name": "Sleepycat License (Berkeley Database License)",
                 "spdxId": "Sleepycat",
+                "notes": "Per SPDX.org, this license is OSI certified",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sleepycat",
@@ -178,6 +182,15 @@ Raw Data
                         "Sleepycat"
                     ],
                     "__impliedId": "Sleepycat",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -371,6 +384,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified"
                 }
             ]
         ],

@@ -122,6 +122,7 @@ Raw Data
                 "key": "bsd-zero",
                 "name": "BSD Zero Clause License",
                 "spdxId": "0BSD",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bsd-zero",

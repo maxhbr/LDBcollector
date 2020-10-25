@@ -221,6 +221,7 @@ Raw Data
                 "key": "freeimage-1.0",
                 "name": "FreeImage Public License Version 1.0",
                 "spdxId": "FreeImage",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://freeimage-1.0",

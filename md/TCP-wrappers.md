@@ -120,6 +120,7 @@ Raw Data
                 "key": "tcp-wrappers",
                 "name": "TCP Wrappers License",
                 "spdxId": "TCP-wrappers",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://tcp-wrappers",

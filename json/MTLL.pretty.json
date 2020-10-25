@@ -48,6 +48,7 @@
             "key": "mtll",
             "name": "Matrix Template Library License",
             "spdxId": "MTLL",
+            "notes": "Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://mtll",
@@ -55,6 +56,15 @@
                     "MTLL"
                 ],
                 "__impliedId": "MTLL",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -113,6 +123,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n"
             }
         ]
     ],

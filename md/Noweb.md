@@ -101,6 +101,7 @@ Raw Data
                 "key": "noweb",
                 "name": "Noweb License",
                 "spdxId": "Noweb",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://noweb",

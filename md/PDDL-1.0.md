@@ -249,6 +249,7 @@ Raw Data
                 "key": "pddl-1.0",
                 "name": "Public Domain Dedication & Licence (PDDL)",
                 "spdxId": "PDDL-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://pddl-1.0",

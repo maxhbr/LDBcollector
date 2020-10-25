@@ -108,6 +108,7 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
             "key": "beerware",
             "name": "Beer-Ware License",
             "spdxId": "Beerware",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://beerware",

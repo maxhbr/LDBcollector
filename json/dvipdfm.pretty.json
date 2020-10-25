@@ -48,6 +48,7 @@
             "key": "dvipdfm",
             "name": "dvipdfm License",
             "spdxId": "dvipdfm",
+            "notes": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://dvipdfm",
@@ -55,6 +56,15 @@
                     "dvipdfm"
                 ],
                 "__impliedId": "dvipdfm",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -72,6 +82,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

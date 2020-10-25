@@ -16,6 +16,8 @@
 
 === Comments on (easy) usability
 
+* Per SPDX.org, this license was released 18 January 1999. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.4.yml[Scancode])
 * **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
@@ -227,6 +229,7 @@ The End
             "key": "openldap-1.4",
             "name": "OpenLDAP Public License 1.4",
             "spdxId": "OLDAP-1.4",
+            "notes": "Per SPDX.org, this license was released 18 January 1999.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://openldap-1.4",
@@ -234,6 +237,15 @@ The End
                     "OLDAP-1.4"
                 ],
                 "__impliedId": "OLDAP-1.4",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 18 January 1999."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -292,6 +304,13 @@ The End
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 18 January 1999."
             }
         ]
     ],

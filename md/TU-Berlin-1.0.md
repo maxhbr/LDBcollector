@@ -99,6 +99,7 @@ Raw Data
                 "key": "tu-berlin",
                 "name": "Technische Universitaet Berlin Attribution License 1.0",
                 "spdxId": "TU-Berlin-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://tu-berlin",

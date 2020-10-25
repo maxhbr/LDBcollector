@@ -92,6 +92,7 @@ Raw Data
                 "key": "crystal-stacker",
                 "name": "Crystal Stacker License",
                 "spdxId": "CrystalStacker",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://crystal-stacker",

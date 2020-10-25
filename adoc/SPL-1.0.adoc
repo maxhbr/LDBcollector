@@ -21,6 +21,8 @@
 
 * **↑**Is OSI Approved (source:
 https://spdx.org/licenses/SPL-1.0.html[SPDX])
+* Per SPDX.org, this license is OSI certified (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/spl-1.0.yml[Scancode])
 
 === URLs
 
@@ -639,6 +641,7 @@ https://spdx.org/licenses/SPL-1.0.html[SPDX])
             "key": "spl-1.0",
             "name": "Sun Public License 1.0",
             "spdxId": "SPL-1.0",
+            "notes": "Per SPDX.org, this license is OSI certified",
             "_implications": {
                 "__impliedNames": [
                     "scancode://spl-1.0",
@@ -646,6 +649,15 @@ https://spdx.org/licenses/SPL-1.0.html[SPDX])
                     "SPL-1.0"
                 ],
                 "__impliedId": "SPL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -749,6 +761,13 @@ https://spdx.org/licenses/SPL-1.0.html[SPDX])
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified"
             }
         ]
     ],

@@ -51,6 +51,7 @@
             "key": "cecill-c",
             "name": "CeCILL-C Free Software License Agreement",
             "spdxId": "CECILL-C",
+            "notes": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://cecill-c",
@@ -58,6 +59,15 @@
                     "CECILL-C"
                 ],
                 "__impliedId": "CECILL-C",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -104,6 +114,13 @@
             {
                 "tag": "NeutralJudgement",
                 "contents": "Google Classification is RECIPROCAL"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n"
             }
         ]
     ],

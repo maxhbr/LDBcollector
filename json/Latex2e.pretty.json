@@ -48,6 +48,7 @@
             "key": "latex2e",
             "name": "Latex2e License",
             "spdxId": "Latex2e",
+            "notes": "the latext2e, verbatim-manual and abstyles are similar licenses",
             "_implications": {
                 "__impliedNames": [
                     "scancode://latex2e",
@@ -55,6 +56,15 @@
                     "Latex2e"
                 ],
                 "__impliedId": "Latex2e",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -72,6 +82,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

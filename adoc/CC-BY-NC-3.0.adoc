@@ -444,6 +444,7 @@ Creative Commons Notice
             "key": "cc-by-nc-3.0",
             "name": "Creative Commons Attribution Non-Commercial 3.0",
             "spdxId": "CC-BY-NC-3.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://cc-by-nc-3.0",

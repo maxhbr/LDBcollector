@@ -126,6 +126,7 @@ Raw Data
                 "key": "mit-0",
                 "name": "MIT No Attribution",
                 "spdxId": "MIT-0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://mit-0",

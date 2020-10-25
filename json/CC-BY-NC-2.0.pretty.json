@@ -65,6 +65,7 @@
             "key": "cc-by-nc-2.0",
             "name": "Creative Commons Attribution Non-Commercial 2.0",
             "spdxId": "CC-BY-NC-2.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://cc-by-nc-2.0",

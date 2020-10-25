@@ -164,6 +164,7 @@ Raw Data
                 "key": "cern-ohl-1.2",
                 "name": "CERN Open Hardware Licence v1.2",
                 "spdxId": "CERN-OHL-1.2",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cern-ohl-1.2",

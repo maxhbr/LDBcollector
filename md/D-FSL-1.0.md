@@ -10,6 +10,12 @@ Deutsche Freie Software Lizenz (D-FSL-1.0)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license was created for and is backed by the
+    German state. The English translation can be found here
+    http://www.dipp.nrw.de/d-fsl/index\_html/lizenzen/en/D-FSL-1\_0\_en.txt
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/d-fsl-1.0-de.yml "Scancode"))
+
 URLs
 ----
 
@@ -590,6 +596,7 @@ Raw Data
                 "key": "d-fsl-1.0-de",
                 "name": "Deutsche Freie Software Lizenz",
                 "spdxId": "D-FSL-1.0",
+                "notes": "Per SPDX.org, this license was created for and is backed by the German\nstate. The English translation can be found here\nhttp://www.dipp.nrw.de/d-fsl/index_html/lizenzen/en/D-FSL-1_0_en.txt\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://d-fsl-1.0-de",
@@ -597,6 +604,15 @@ Raw Data
                         "D-FSL-1.0"
                     ],
                     "__impliedId": "D-FSL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was created for and is backed by the German\nstate. The English translation can be found here\nhttp://www.dipp.nrw.de/d-fsl/index_html/lizenzen/en/D-FSL-1_0_en.txt\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -646,6 +662,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was created for and is backed by the German\nstate. The English translation can be found here\nhttp://www.dipp.nrw.de/d-fsl/index_html/lizenzen/en/D-FSL-1_0_en.txt\n"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

@@ -126,6 +126,7 @@ Raw Data
                 "key": "sfl-license",
                 "name": "SFL License Agreement",
                 "spdxId": "iMatix",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sfl-license",

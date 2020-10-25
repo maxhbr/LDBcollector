@@ -29,6 +29,10 @@
 - *↑*Rating is: Bronze (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+- Per SPDX.org, this license is OSI certified. This License has been
+  voluntarily deprecated by its author. (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml][Scancode]])
+
 ** URLs
 
 - *Homepage:* http://www.opensource.org/licenses/xnet.php
@@ -161,6 +165,7 @@
               "key": "xnet",
               "name": "Altera License",
               "spdxId": "Xnet",
+              "notes": "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n",
               "_implications": {
                   "__impliedNames": [
                       "scancode://xnet",
@@ -168,6 +173,15 @@
                       "Xnet"
                   ],
                   "__impliedId": "Xnet",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -342,6 +356,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n"
               }
           ]
       ],

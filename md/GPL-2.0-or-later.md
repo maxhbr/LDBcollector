@@ -29,6 +29,10 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+-   Per SPDX.org, this license was released June 1991 This license is
+    OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml "Scancode"))
+
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -260,6 +264,7 @@ Raw Data
                 "key": "gpl-2.0-plus",
                 "name": "GNU General Public License 2.0 or later",
                 "spdxId": "GPL-2.0-or-later",
+                "notes": "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://gpl-2.0-plus",
@@ -267,6 +272,15 @@ Raw Data
                         "GPL-2.0-or-later"
                     ],
                     "__impliedId": "GPL-2.0-or-later",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -489,6 +503,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n"
                 }
             ]
         ],

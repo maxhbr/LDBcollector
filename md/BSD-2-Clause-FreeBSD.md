@@ -109,6 +109,7 @@ Raw Data
                 "key": "bsd-2-clause-freebsd",
                 "name": "BSD-2-Clause-FreeBSD License",
                 "spdxId": "BSD-2-Clause-FreeBSD",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bsd-2-clause-freebsd",

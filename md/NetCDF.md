@@ -110,6 +110,7 @@ Raw Data
                 "key": "netcdf",
                 "name": "NetCDF License",
                 "spdxId": "NetCDF",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://netcdf",

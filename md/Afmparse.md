@@ -99,6 +99,7 @@ Raw Data
                 "key": "afmparse",
                 "name": "afmparse License",
                 "spdxId": "Afmparse",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://afmparse",

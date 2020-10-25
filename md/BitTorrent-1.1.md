@@ -14,6 +14,12 @@ BitTorrent Open Source License v1.1 (BitTorrent-1.1)
 Comments on (easy) usability
 ----------------------------
 
+-   The link http://www.bittorrent.com/license/ is dead, so there is no
+    live text containing the license terms except at
+    http://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -255,6 +261,7 @@ Raw Data
                 "key": "bittorrent-1.1",
                 "name": "BitTorrent Open Source License 1.1",
                 "spdxId": "BitTorrent-1.1",
+                "notes": "The link http://www.bittorrent.com/license/ is dead, so there is no live\ntext containing the license terms except at\nhttp://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bittorrent-1.1",
@@ -262,6 +269,15 @@ Raw Data
                         "BitTorrent-1.1"
                     ],
                     "__impliedId": "BitTorrent-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "The link http://www.bittorrent.com/license/ is dead, so there is no live\ntext containing the license terms except at\nhttp://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -283,6 +299,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "The link http://www.bittorrent.com/license/ is dead, so there is no live\ntext containing the license terms except at\nhttp://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license\n"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

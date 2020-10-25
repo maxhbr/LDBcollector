@@ -545,6 +545,7 @@ Raw Data
                 "key": "cc-by-nc-4.0",
                 "name": "Creative Commons Attribution-NonCommercial 4.0 International Public License",
                 "spdxId": "CC-BY-NC-4.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cc-by-nc-4.0",

@@ -49,6 +49,9 @@ Software Guidelines])
 * **↑**This software Licenses is OK for Fedora (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
+* Per SPDX.org, this version was released 19 November 2007 This license
+is OSI certified (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0.yml[Scancode])
 * **↓**Google Classification is CANNOT_BE_USED "Code released under the
 GNU Affero General Public License (AGPL) cannot be used in google3 under
 any circumstances, and only very rarely on workstations. Read more at
@@ -599,6 +602,7 @@ You should also get your employer (if you work as a programmer) or school, if an
             "key": "agpl-3.0",
             "name": "GNU Affero General Public License 3.0",
             "spdxId": "AGPL-3.0-only",
+            "notes": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://agpl-3.0",
@@ -606,6 +610,15 @@ You should also get your employer (if you work as a programmer) or school, if an
                     "AGPL-3.0-only"
                 ],
                 "__impliedId": "AGPL-3.0-only",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -1030,6 +1043,13 @@ You should also get your employer (if you work as a programmer) or school, if an
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
             }
         ]
     ],

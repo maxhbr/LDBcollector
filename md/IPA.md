@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/IPA.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ipa-font.yml "Scancode"))
+
 URLs
 ----
 
@@ -209,6 +212,7 @@ Raw Data
                 "key": "ipa-font",
                 "name": "IPA Font License Agreement v1.0",
                 "spdxId": "IPA",
+                "notes": "Per SPDX.org, this license is OSI certified.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ipa-font",
@@ -216,6 +220,15 @@ Raw Data
                         "IPA"
                     ],
                     "__impliedId": "IPA",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -309,6 +322,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

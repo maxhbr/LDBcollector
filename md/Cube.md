@@ -107,6 +107,7 @@ Raw Data
                 "key": "cube",
                 "name": "Cube License",
                 "spdxId": "Cube",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cube",

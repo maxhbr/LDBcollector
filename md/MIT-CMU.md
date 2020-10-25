@@ -135,6 +135,7 @@ Raw Data
                 "key": "cmu-uc",
                 "name": "Carnegie Mellon UC Regents License",
                 "spdxId": "MIT-CMU",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cmu-uc",

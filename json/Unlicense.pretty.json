@@ -105,6 +105,7 @@
             "key": "unlicense",
             "name": "Unlicense",
             "spdxId": "Unlicense",
+            "notes": "Per SPDX.org, this is a public domain dedication",
             "_implications": {
                 "__impliedNames": [
                     "scancode://unlicense",
@@ -112,6 +113,15 @@
                     "Unlicense"
                 ],
                 "__impliedId": "Unlicense",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this is a public domain dedication"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -355,6 +365,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is UNENCUMBERED"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this is a public domain dedication"
             }
         ],
         [

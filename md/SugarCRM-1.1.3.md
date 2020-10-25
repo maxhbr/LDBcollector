@@ -238,6 +238,7 @@ Raw Data
                 "key": "sugarcrm-1.1.3",
                 "name": "SugarCRM Public License v1.1.3",
                 "spdxId": "SugarCRM-1.1.3",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sugarcrm-1.1.3",

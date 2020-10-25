@@ -17,6 +17,9 @@
 
 === Comments on (easy) usability
 
+* this is actually the same as the x11-keith-packard (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml[Scancode])
+
 === URLs
 
 * *SPDX:* http://spdx.org/licenses/HPND-sell-variant.json
@@ -105,6 +108,7 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
             "key": "x11-keith-packard",
             "name": "X11-Style (Keith Packard)",
             "spdxId": "HPND-sell-variant",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://x11-keith-packard",
@@ -133,6 +137,15 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "this is actually the same as the x11-keith-packard"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

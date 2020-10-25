@@ -132,6 +132,7 @@ Raw Data
                 "key": "egenix-1.1.0",
                 "name": "eGenix Public License 1.1.0",
                 "spdxId": "eGenix",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://egenix-1.1.0",

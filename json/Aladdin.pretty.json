@@ -49,6 +49,7 @@
             "key": "afpl-8.0",
             "name": "Aladdin Free Public License v8",
             "spdxId": "Aladdin",
+            "notes": "Per SPDX.org, this license was released 18 Nov 1999",
             "_implications": {
                 "__impliedNames": [
                     "scancode://afpl-8.0",
@@ -56,6 +57,15 @@
                     "Aladdin"
                 ],
                 "__impliedId": "Aladdin",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 18 Nov 1999"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -73,6 +83,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 18 Nov 1999"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

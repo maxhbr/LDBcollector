@@ -215,6 +215,7 @@ Raw Data
                 "key": "tapr-ohl-1.0",
                 "name": "TAPR Open Hardware License v1.0",
                 "spdxId": "TAPR-OHL-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://tapr-ohl-1.0",

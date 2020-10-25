@@ -145,6 +145,7 @@ SUCH DAMAGE.
             "key": "zend-2.0",
             "name": "Zend Engine License 2.0",
             "spdxId": "Zend-2.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://zend-2.0",

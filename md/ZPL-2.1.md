@@ -18,6 +18,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this is a generic version of the ZPL 2.0 license
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -135,6 +139,7 @@ Raw Data
                 "key": "zpl-2.1",
                 "name": "Zope Public License 2.1",
                 "spdxId": "ZPL-2.1",
+                "notes": "Per SPDX.org, this is a generic version of the ZPL 2.0 license",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://zpl-2.1",
@@ -142,6 +147,15 @@ Raw Data
                         "ZPL-2.1"
                     ],
                     "__impliedId": "ZPL-2.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -245,6 +259,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Google Classification is NOTICE"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
                 }
             ]
         ],

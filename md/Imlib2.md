@@ -119,6 +119,7 @@ Raw Data
                 "key": "imlib2",
                 "name": "Imlib2 License",
                 "spdxId": "Imlib2",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://imlib2",

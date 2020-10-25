@@ -96,6 +96,7 @@ Raw Data
                 "key": "gl2ps",
                 "name": "GL2PS License",
                 "spdxId": "GL2PS",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://gl2ps",

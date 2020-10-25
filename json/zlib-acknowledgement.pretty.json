@@ -64,6 +64,7 @@
             "key": "zlib-acknowledgement",
             "name": "ZLIB License with Acknowledgment",
             "spdxId": "zlib-acknowledgement",
+            "notes": "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://zlib-acknowledgement",
@@ -71,6 +72,15 @@
                     "zlib-acknowledgement"
                 ],
                 "__impliedId": "zlib-acknowledgement",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -164,6 +174,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n"
             }
         ]
     ],

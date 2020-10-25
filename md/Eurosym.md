@@ -98,6 +98,7 @@ Raw Data
                 "key": "eurosym",
                 "name": "Eurosym License",
                 "spdxId": "Eurosym",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://eurosym",

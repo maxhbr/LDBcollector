@@ -104,6 +104,7 @@ bug reports on your work be reported to you.
             "key": "noweb",
             "name": "Noweb License",
             "spdxId": "Noweb",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://noweb",

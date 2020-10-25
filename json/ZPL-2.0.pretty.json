@@ -98,6 +98,7 @@
             "key": "zpl-2.0",
             "name": "Zope Public License 2.0",
             "spdxId": "ZPL-2.0",
+            "notes": "Per SPDX.org, this license is OSI certified",
             "_implications": {
                 "__impliedNames": [
                     "scancode://zpl-2.0",
@@ -105,6 +106,15 @@
                     "ZPL-2.0"
                 ],
                 "__impliedId": "ZPL-2.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -288,6 +298,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified"
             }
         ]
     ],

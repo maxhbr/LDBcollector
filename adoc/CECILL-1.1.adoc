@@ -16,6 +16,10 @@
 
 === Comments on (easy) usability
 
+* Per SPDX.org, there is only an English version for 1.1, which includes
+some wording changes from v1.0 (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml[Scancode])
+
 === URLs
 
 * *Homepage:* http://www.cecill.info/licences.en.html
@@ -585,6 +589,7 @@ jurisdiction, by the first Party to take action.
             "key": "cecill-1.1",
             "name": "CeCILL Free Software License Agreement v1.1",
             "spdxId": "CECILL-1.1",
+            "notes": "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://cecill-1.1",
@@ -592,6 +597,15 @@ jurisdiction, by the first Party to take action.
                     "CECILL-1.1"
                 ],
                 "__impliedId": "CECILL-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -613,6 +627,15 @@ jurisdiction, by the first Party to take action.
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

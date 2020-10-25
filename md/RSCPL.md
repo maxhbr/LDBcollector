@@ -19,6 +19,9 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/RSCPL.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ricoh-1.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -271,6 +274,7 @@ Raw Data
                 "key": "ricoh-1.0",
                 "name": "Ricoh Source Code Public License v1.0",
                 "spdxId": "RSCPL",
+                "notes": "Per SPDX.org, this license is OSI certified",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ricoh-1.0",
@@ -278,6 +282,15 @@ Raw Data
                         "RSCPL"
                     ],
                     "__impliedId": "RSCPL",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -381,6 +394,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified"
                 }
             ]
         ],

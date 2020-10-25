@@ -22,6 +22,9 @@
 - *↑*Is OSI Approved (source:
   [[https://spdx.org/licenses/SimPL-2.0.html][SPDX]])
 
+- Per SPDX.org, this license is OSI certified (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/simpl-2.0.yml][Scancode]])
+
 ** URLs
 
 - *Homepage:* http://www.opensource.org/licenses/simpl-2.0.html
@@ -164,6 +167,7 @@
               "key": "simpl-2.0",
               "name": "Simple Public License Version 2.0",
               "spdxId": "SimPL-2.0",
+              "notes": "Per SPDX.org, this license is OSI certified",
               "_implications": {
                   "__impliedNames": [
                       "scancode://simpl-2.0",
@@ -171,6 +175,15 @@
                       "SimPL-2.0"
                   ],
                   "__impliedId": "SimPL-2.0",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -263,6 +276,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified"
               }
           ]
       ],

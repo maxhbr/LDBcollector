@@ -48,6 +48,7 @@
             "key": "psfrag",
             "name": "psfrag License",
             "spdxId": "psfrag",
+            "notes": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://psfrag",
@@ -55,6 +56,15 @@
                     "psfrag"
                 ],
                 "__impliedId": "psfrag",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -72,6 +82,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

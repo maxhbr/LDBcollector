@@ -77,6 +77,10 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+-   Per SPDX.org, this license was released 29 June 2007. This license
+    is OSI Certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml "Scancode"))
+
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -621,6 +625,7 @@ Raw Data
                 "key": "lgpl-3.0",
                 "name": "GNU Lesser General Public License 3.0",
                 "spdxId": "LGPL-3.0-only",
+                "notes": "Per SPDX.org, this license was released 29 June 2007. This license is OSI\nCertified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lgpl-3.0",
@@ -628,6 +633,15 @@ Raw Data
                         "LGPL-3.0-only"
                     ],
                     "__impliedId": "LGPL-3.0-only",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 29 June 2007. This license is OSI\nCertified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -1041,6 +1055,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 29 June 2007. This license is OSI\nCertified.\n"
                 }
             ]
         ],

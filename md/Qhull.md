@@ -128,6 +128,7 @@ Raw Data
                 "key": "qhull",
                 "name": "Qhull License",
                 "spdxId": "Qhull",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://qhull",

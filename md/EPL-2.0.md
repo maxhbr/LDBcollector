@@ -522,6 +522,7 @@ Raw Data
                 "key": "epl-2.0",
                 "name": "Eclipse Public License 2.0",
                 "spdxId": "EPL-2.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://epl-2.0",

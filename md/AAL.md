@@ -17,6 +17,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/AAL.html "SPDX"))
 
+-   Per SPDX.org, this version was released 2002 This license is OSI
+    certifified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/attribution.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -182,6 +186,7 @@ Raw Data
                 "key": "attribution",
                 "name": "Attribution Assurance License",
                 "spdxId": "AAL",
+                "notes": "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://attribution",
@@ -189,6 +194,15 @@ Raw Data
                         "AAL"
                     ],
                     "__impliedId": "AAL",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -330,6 +344,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n"
                 }
             ]
         ],

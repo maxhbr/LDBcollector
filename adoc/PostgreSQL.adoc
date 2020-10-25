@@ -31,6 +31,8 @@ Policy])
 https://spdx.org/licenses/PostgreSQL.html[SPDX])
 * **↑**Rating is: Silver (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this license is OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/postgresql.yml[Scancode])
 
 === Obligations
 
@@ -183,6 +185,7 @@ THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, B
             "key": "postgresql",
             "name": "PostgreSQL License",
             "spdxId": "PostgreSQL",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://postgresql",
@@ -190,6 +193,15 @@ THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, B
                     "PostgreSQL"
                 ],
                 "__impliedId": "PostgreSQL",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -426,6 +438,13 @@ THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, B
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

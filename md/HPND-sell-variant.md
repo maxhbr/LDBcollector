@@ -14,6 +14,9 @@ Historical Permission Notice and Disclaimer - sell variant (HPND-sell-variant)
 Comments on (easy) usability
 ----------------------------
 
+-   this is actually the same as the x11-keith-packard (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode"))
+
 URLs
 ----
 
@@ -104,6 +107,7 @@ Raw Data
                 "key": "x11-keith-packard",
                 "name": "X11-Style (Keith Packard)",
                 "spdxId": "HPND-sell-variant",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://x11-keith-packard",
@@ -132,6 +136,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "this is actually the same as the x11-keith-packard"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

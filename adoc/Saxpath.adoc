@@ -17,6 +17,11 @@
 
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per Fedora, this is a slightly modified version of Apache 1.1. The
+documentation requirement in Apache 1.1 has been weakened to a
+suggestion, but clause 4 still makes this license Free but
+GPL-incompatible. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/saxpath.yml[Scancode])
 
 === URLs
 
@@ -121,6 +126,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "key": "saxpath",
             "name": "Saxpath License",
             "spdxId": "Saxpath",
+            "notes": "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://saxpath",
@@ -128,6 +134,15 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "Saxpath"
                 ],
                 "__impliedId": "Saxpath",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -186,6 +201,13 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n"
             }
         ]
     ],

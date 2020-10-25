@@ -19,6 +19,8 @@
 https://spdx.org/licenses/Naumen.html[SPDX])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this license is OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naumen.yml[Scancode])
 
 === URLs
 
@@ -149,6 +151,7 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
             "key": "naumen",
             "name": "NAUMEN Public License",
             "spdxId": "Naumen",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://naumen",
@@ -156,6 +159,15 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
                     "Naumen"
                 ],
                 "__impliedId": "Naumen",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -292,6 +304,13 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

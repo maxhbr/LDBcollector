@@ -19,6 +19,8 @@
 
 * **↑**Is OSI Approved (source:
 https://spdx.org/licenses/APL-1.0.html[SPDX])
+* Per SPDX.org, this license is OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adapt-1.0.yml[Scancode])
 
 === URLs
 
@@ -471,6 +473,7 @@ Each Subsequent Contributor (including the Initial Contributor where the Initial
             "key": "adapt-1.0",
             "name": "Adaptive Public License",
             "spdxId": "APL-1.0",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://adapt-1.0",
@@ -478,6 +481,15 @@ Each Subsequent Contributor (including the Initial Contributor where the Initial
                     "APL-1.0"
                 ],
                 "__impliedId": "APL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -556,6 +568,13 @@ Each Subsequent Contributor (including the Initial Contributor where the Initial
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

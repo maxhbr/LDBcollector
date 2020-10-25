@@ -101,6 +101,7 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
             "key": "eurosym",
             "name": "Eurosym License",
             "spdxId": "Eurosym",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://eurosym",

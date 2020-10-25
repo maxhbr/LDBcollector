@@ -106,6 +106,7 @@ Raw Data
                 "key": "mit-ack",
                 "name": "MIT Acknowledgment License",
                 "spdxId": "MIT-feh",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://mit-ack",

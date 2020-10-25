@@ -468,6 +468,7 @@ Raw Data
                 "key": "cc-by-nc-sa-3.0",
                 "name": "Creative Commons Attribution Non-Commercial Share Alike License 3.0",
                 "spdxId": "CC-BY-NC-SA-3.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cc-by-nc-sa-3.0",

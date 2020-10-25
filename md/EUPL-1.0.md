@@ -246,6 +246,7 @@ Raw Data
                 "key": "eupl-1.0",
                 "name": "European Union Public Licence 1.0",
                 "spdxId": "EUPL-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://eupl-1.0",

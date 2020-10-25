@@ -21,6 +21,9 @@ Comments on (easy) usability
     applicable to more than just software (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+-   Per SPDX.org, this license is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -156,6 +159,7 @@ Raw Data
                 "key": "mir-os",
                 "name": "MirOS License",
                 "spdxId": "MirOS",
+                "notes": "Per SPDX.org, this license is OSI certified.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://mir-os",
@@ -163,6 +167,15 @@ Raw Data
                         "MirOS"
                     ],
                     "__impliedId": "MirOS",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -328,6 +341,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

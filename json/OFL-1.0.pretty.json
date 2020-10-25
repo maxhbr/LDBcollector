@@ -52,6 +52,7 @@
             "key": "ofl-1.0",
             "name": "SIL Open Font License 1.0",
             "spdxId": "OFL-1.0",
+            "notes": "Per SPDX.org, this license has been superseded. This license was released\nin November 2005.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://ofl-1.0",
@@ -59,6 +60,15 @@
                     "OFL-1.0"
                 ],
                 "__impliedId": "OFL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license has been superseded. This license was released\nin November 2005.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -106,6 +116,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "The following restriction on distributions, which is part of OFL, has been widely accepted by open source projects when it is applied to fonts: 1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself."
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license has been superseded. This license was released\nin November 2005.\n"
             }
         ]
     ],

@@ -10,6 +10,10 @@ Wsuipa License (Wsuipa)
 Comments on (easy) usability
 ----------------------------
 
+-   Per Fedora, this license was found on the "wsuipa" component of
+    texlive 2010. It is Free, but GPL-incompatible. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -90,6 +94,7 @@ Raw Data
                 "key": "wsuipa",
                 "name": "Wsuipa License",
                 "spdxId": "Wsuipa",
+                "notes": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://wsuipa",
@@ -97,6 +102,15 @@ Raw Data
                         "Wsuipa"
                     ],
                     "__impliedId": "Wsuipa",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -155,6 +169,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
                 }
             ]
         ],

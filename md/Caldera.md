@@ -124,6 +124,7 @@ Raw Data
                 "key": "caldera",
                 "name": "Caldera License",
                 "spdxId": "Caldera",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://caldera",

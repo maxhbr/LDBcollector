@@ -48,6 +48,7 @@
             "key": "rdisc",
             "name": "Rdisc License",
             "spdxId": "Rdisc",
+            "notes": "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://rdisc",
@@ -55,6 +56,15 @@
                     "Rdisc"
                 ],
                 "__impliedId": "Rdisc",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -113,6 +123,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n"
             }
         ]
     ],

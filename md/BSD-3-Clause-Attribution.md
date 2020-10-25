@@ -113,6 +113,7 @@ Raw Data
                 "key": "bsd-ack",
                 "name": "BSD Acknowledgment License",
                 "spdxId": "BSD-3-Clause-Attribution",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bsd-ack",

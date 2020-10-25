@@ -16,6 +16,10 @@
 
 === Comments on (easy) usability
 
+* Per Fedora, this is missing the anti-publicity-use clause, and doesn't
+mention sublicensing, but otherwise, it is functionally identical to
+MIT. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpich.yml[Scancode])
 * **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
@@ -127,6 +131,7 @@ GOVERNMENT LICENSE
             "key": "mpich",
             "name": "MPICH License",
             "spdxId": "mpich2",
+            "notes": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://mpich",
@@ -134,6 +139,15 @@ GOVERNMENT LICENSE
                     "mpich2"
                 ],
                 "__impliedId": "mpich2",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -196,6 +210,13 @@ GOVERNMENT LICENSE
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
             }
         ]
     ],

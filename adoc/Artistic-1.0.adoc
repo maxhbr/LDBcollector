@@ -28,6 +28,8 @@ https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 * **↑**Is OSI Approved (source:
 https://spdx.org/licenses/Artistic-1.0.html[SPDX])
+* Per SPDX.org, this license was superseded by v2.0 (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml[Scancode])
 * **↓**Rating is: Lead (source: https://blueoakcouncil.org/list[BlueOak
 License List])
 
@@ -218,6 +220,7 @@ The End
             "key": "artistic-1.0",
             "name": "Artistic License 1.0",
             "spdxId": "Artistic-1.0",
+            "notes": "Per SPDX.org, this license was superseded by v2.0",
             "_implications": {
                 "__impliedNames": [
                     "scancode://artistic-1.0",
@@ -225,6 +228,15 @@ The End
                     "Artistic-1.0"
                 ],
                 "__impliedId": "Artistic-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was superseded by v2.0"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -441,6 +453,13 @@ The End
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was superseded by v2.0"
             }
         ]
     ],

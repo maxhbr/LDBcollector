@@ -187,6 +187,7 @@
               "key": "ogl-uk-3.0",
               "name": "U.K. Open Government License for Public Sector Information v3.0",
               "spdxId": "OGL-UK-3.0",
+              "notes": null,
               "_implications": {
                   "__impliedNames": [
                       "scancode://ogl-uk-3.0",

@@ -20,6 +20,13 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+-   Per Fedora, this license is the same as zlib, except that it
+    requires that an acknowledgement be made in the product
+    documentation. For Fedora, this is our Release notes, so if you have
+    any packages which use this license, you MUST be sure to have the
+    appropriate acknowledgement in the release notes. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml "Scancode"))
+
 URLs
 ----
 
@@ -147,6 +154,7 @@ Raw Data
                 "key": "zlib-acknowledgement",
                 "name": "ZLIB License with Acknowledgment",
                 "spdxId": "zlib-acknowledgement",
+                "notes": "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://zlib-acknowledgement",
@@ -154,6 +162,15 @@ Raw Data
                         "zlib-acknowledgement"
                     ],
                     "__impliedId": "zlib-acknowledgement",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -247,6 +264,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n"
                 }
             ]
         ],

@@ -160,6 +160,7 @@
               "key": "cern-ohl-1.1",
               "name": "CERN Open Hardware License v1.1",
               "spdxId": "CERN-OHL-1.1",
+              "notes": null,
               "_implications": {
                   "__impliedNames": [
                       "scancode://cern-ohl-1.1",

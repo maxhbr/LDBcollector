@@ -91,6 +91,7 @@
             "key": "ecl-2.0",
             "name": "Educational Community License 2.0",
             "spdxId": "ECL-2.0",
+            "notes": "Per SPDX.org, this license is OSI certifified. The Educational Community\nLicense version 2.0 (\"ECL\") consists of the Apache 2.0 license, modified to\nchange the scope of the patent grant in section 3 to be specific to the\nneeds of the education communities using this license. The url included in\nthe boilerplate notice does not work. (15/10/10)\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://ecl-2.0",
@@ -98,6 +99,15 @@
                     "ECL-2.0"
                 ],
                 "__impliedId": "ECL-2.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certifified. The Educational Community\nLicense version 2.0 (\"ECL\") consists of the Apache 2.0 license, modified to\nchange the scope of the patent grant in section 3 to be specific to the\nneeds of the education communities using this license. The url included in\nthe boilerplate notice does not work. (15/10/10)\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -315,6 +325,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certifified. The Educational Community\nLicense version 2.0 (\"ECL\") consists of the Apache 2.0 license, modified to\nchange the scope of the patent grant in section 3 to be specific to the\nneeds of the education communities using this license. The url included in\nthe boilerplate notice does not work. (15/10/10)\n"
             }
         ]
     ],

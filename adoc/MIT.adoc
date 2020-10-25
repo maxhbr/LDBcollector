@@ -50,6 +50,8 @@ https://blueoakcouncil.org/list[BlueOak License List])
 Foundation considers MIT License ambiguous. The MIT License published on
 the OSI site is the same as the Expat License. (source:
 https://opensource.org/licenses/[OpenSourceInitiative])
+* Per SPDX.org, this license is OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml[Scancode])
 
 === Obligations
 
@@ -232,6 +234,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "key": "mit",
             "name": "MIT License",
             "spdxId": "MIT",
+            "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://mit",
@@ -239,6 +242,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     "MIT"
                 ],
                 "__impliedId": "MIT",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -677,6 +689,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ],
         [

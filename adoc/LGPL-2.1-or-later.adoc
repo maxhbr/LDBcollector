@@ -25,6 +25,9 @@ deprecated because it confuses the license's intent. (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 * **↑**Is OSI Approved (source:
 https://spdx.org/licenses/LGPL-2.1-or-later.html[SPDX])
+* Per SPDX.org, this license was released February 1999. This license is
+OSI certified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml[Scancode])
 * **↓**Google Classification is RESTRICTED (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
@@ -291,6 +294,7 @@ You should have received a copy of the GNU Lesser General Public License along w
             "key": "lgpl-2.1-plus",
             "name": "GNU Lesser General Public License 2.1 or later",
             "spdxId": "LGPL-2.1-or-later",
+            "notes": "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://lgpl-2.1-plus",
@@ -298,6 +302,15 @@ You should have received a copy of the GNU Lesser General Public License along w
                     "LGPL-2.1-or-later"
                 ],
                 "__impliedId": "LGPL-2.1-or-later",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -527,6 +540,13 @@ You should have received a copy of the GNU Lesser General Public License along w
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n"
             }
         ]
     ],

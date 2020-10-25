@@ -127,6 +127,7 @@ The Product is provided as free software, in the hope that it will be useful. It
             "key": "sfl-license",
             "name": "SFL License Agreement",
             "spdxId": "iMatix",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://sfl-license",

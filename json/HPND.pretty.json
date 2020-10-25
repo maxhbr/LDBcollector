@@ -97,6 +97,7 @@
             "key": "historical",
             "name": "Historical Permission Notice and Disclaimer",
             "spdxId": "HPND",
+            "notes": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://historical",
@@ -104,6 +105,15 @@
                     "HPND"
                 ],
                 "__impliedId": "HPND",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -240,6 +250,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
             }
         ]
     ],

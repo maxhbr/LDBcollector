@@ -20,6 +20,10 @@ Comments on (easy) usability
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+-   Per SPDX.org, this license was released 24 January 2004. This
+    license is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cddl-1.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -301,6 +305,7 @@ Raw Data
                 "key": "cddl-1.0",
                 "name": "Common Development and Distribution License 1.0",
                 "spdxId": "CDDL-1.0",
+                "notes": "Per SPDX.org, this license was released 24 January 2004. This license is\nOSI certified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cddl-1.0",
@@ -308,6 +313,15 @@ Raw Data
                         "CDDL-1.0"
                     ],
                     "__impliedId": "CDDL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 24 January 2004. This license is\nOSI certified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -580,6 +594,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 24 January 2004. This license is\nOSI certified.\n"
                 }
             ]
         ],

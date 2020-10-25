@@ -303,6 +303,7 @@ express Statement of Purpose.
             "key": "cc0-1.0",
             "name": "Creative Commons CC0 1.0 Universal",
             "spdxId": "CC0-1.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://cc0-1.0",

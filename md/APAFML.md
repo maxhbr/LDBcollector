@@ -89,6 +89,7 @@ Raw Data
                 "key": "apafml",
                 "name": "Adobe Postscript AFM License",
                 "spdxId": "APAFML",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://apafml",

@@ -155,6 +155,7 @@
             "key": "agpl-3.0",
             "name": "GNU Affero General Public License 3.0",
             "spdxId": "AGPL-3.0-only",
+            "notes": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://agpl-3.0",
@@ -162,6 +163,15 @@
                     "AGPL-3.0-only"
                 ],
                 "__impliedId": "AGPL-3.0-only",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -586,6 +596,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
             }
         ]
     ],

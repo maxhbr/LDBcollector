@@ -140,6 +140,7 @@ Raw Data
                 "key": "scea-1.0",
                 "name": "SCEA Shared Source License 1.0",
                 "spdxId": "SCEA",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://scea-1.0",

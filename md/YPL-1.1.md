@@ -236,6 +236,7 @@ Raw Data
                 "key": "ypl-1.1",
                 "name": "Yahoo! Public License v1.1",
                 "spdxId": "YPL-1.1",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ypl-1.1",

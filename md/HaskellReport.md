@@ -86,6 +86,7 @@ Raw Data
                 "key": "haskell-report",
                 "name": "Haskell Language Report License",
                 "spdxId": "HaskellReport",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://haskell-report",

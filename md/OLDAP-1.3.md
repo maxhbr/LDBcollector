@@ -12,6 +12,11 @@ Open LDAP Public License v1.3 (OLDAP-1.3)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license was released 17 January 1999. This
+    license was issued twice in the same day with a minor correction.
+    This is the corrected (second) version. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -223,6 +228,7 @@ Raw Data
                 "key": "openldap-1.3",
                 "name": "OpenLDAP Public License 1.3",
                 "spdxId": "OLDAP-1.3",
+                "notes": "Per SPDX.org, this license was released 17 January 1999. This license was\nissued twice in the same day with a minor correction. This is the corrected\n(second) version.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://openldap-1.3",
@@ -230,6 +236,15 @@ Raw Data
                         "OLDAP-1.3"
                     ],
                     "__impliedId": "OLDAP-1.3",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 17 January 1999. This license was\nissued twice in the same day with a minor correction. This is the corrected\n(second) version.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -288,6 +303,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 17 January 1999. This license was\nissued twice in the same day with a minor correction. This is the corrected\n(second) version.\n"
                 }
             ]
         ],

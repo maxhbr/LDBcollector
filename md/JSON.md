@@ -110,6 +110,7 @@ Raw Data
                 "key": "json",
                 "name": "JSON License",
                 "spdxId": "JSON",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://json",

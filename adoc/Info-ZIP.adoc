@@ -107,6 +107,7 @@ Permission is granted to anyone to use this software for any purpose, including 
             "key": "info-zip",
             "name": "Info-Zip License",
             "spdxId": "Info-ZIP",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://info-zip",

@@ -10,6 +10,11 @@ psfrag License (psfrag)
 Comments on (easy) usability
 ----------------------------
 
+-   Per Fedora, this license is considered Free, but GPL-incompatible
+    only when used for TeX files. In all other use cases, this may not
+    be true. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psfrag.yml "Scancode"))
+
 URLs
 ----
 
@@ -81,6 +86,7 @@ Raw Data
                 "key": "psfrag",
                 "name": "psfrag License",
                 "spdxId": "psfrag",
+                "notes": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://psfrag",
@@ -88,6 +94,15 @@ Raw Data
                         "psfrag"
                     ],
                     "__impliedId": "psfrag",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -105,6 +120,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

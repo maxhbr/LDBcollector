@@ -28,6 +28,9 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/postgresql.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -168,6 +171,7 @@ Raw Data
                 "key": "postgresql",
                 "name": "PostgreSQL License",
                 "spdxId": "PostgreSQL",
+                "notes": "Per SPDX.org, this license is OSI certified.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://postgresql",
@@ -175,6 +179,15 @@ Raw Data
                         "PostgreSQL"
                     ],
                     "__impliedId": "PostgreSQL",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -411,6 +424,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

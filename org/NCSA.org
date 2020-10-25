@@ -46,6 +46,9 @@
 - *↑*Rating is: Bronze (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+- Per SPDX.org, this license is OSI certified (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/uoi-ncsa.yml][Scancode]])
+
 ** Obligations
 
 | Rights:            | Conditions:           | Limitations:   |
@@ -220,6 +223,7 @@
               "key": "uoi-ncsa",
               "name": "University of Illinois/NCSA Open Source License",
               "spdxId": "NCSA",
+              "notes": "Per SPDX.org, this license is OSI certified",
               "_implications": {
                   "__impliedNames": [
                       "scancode://uoi-ncsa",
@@ -227,6 +231,15 @@
                       "NCSA"
                   ],
                   "__impliedId": "NCSA",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -523,6 +536,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified"
               }
           ]
       ],

@@ -325,6 +325,7 @@ Version 1 du 21/06/2004
             "key": "cecill-1.0",
             "name": "CeCILL Free Software License Agreement v1.0",
             "spdxId": "CECILL-1.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://cecill-1.0",

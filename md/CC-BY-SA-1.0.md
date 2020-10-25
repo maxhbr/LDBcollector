@@ -147,6 +147,7 @@ Raw Data
                 "key": "cc-by-sa-1.0",
                 "name": "Creative Commons Attribution Share Alike License 1.0",
                 "spdxId": "CC-BY-SA-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cc-by-sa-1.0",

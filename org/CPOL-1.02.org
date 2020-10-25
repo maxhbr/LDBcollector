@@ -189,6 +189,7 @@
               "key": "cpol-1.02",
               "name": "Code Project Open License (CPOL) 1.02",
               "spdxId": "CPOL-1.02",
+              "notes": null,
               "_implications": {
                   "__impliedNames": [
                       "scancode://cpol-1.02",

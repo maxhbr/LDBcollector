@@ -68,6 +68,7 @@
             "key": "artistic-1.0",
             "name": "Artistic License 1.0",
             "spdxId": "Artistic-1.0",
+            "notes": "Per SPDX.org, this license was superseded by v2.0",
             "_implications": {
                 "__impliedNames": [
                     "scancode://artistic-1.0",
@@ -75,6 +76,15 @@
                     "Artistic-1.0"
                 ],
                 "__impliedId": "Artistic-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was superseded by v2.0"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -291,6 +301,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was superseded by v2.0"
             }
         ]
     ],

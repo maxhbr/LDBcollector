@@ -17,6 +17,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/EFL-1.0.html "SPDX"))
 
+-   Per SPDX.org, this license was OSI certified. This license has been
+    superseded by v2.0 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-1.0.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -136,6 +140,7 @@ Raw Data
                 "key": "efl-1.0",
                 "name": "Eiffel Forum License 1.0",
                 "spdxId": "EFL-1.0",
+                "notes": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://efl-1.0",
@@ -143,6 +148,15 @@ Raw Data
                         "EFL-1.0"
                     ],
                     "__impliedId": "EFL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -269,6 +283,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n"
                 }
             ]
         ],

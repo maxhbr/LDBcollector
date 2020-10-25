@@ -29,6 +29,11 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX"))
 
+-   Per SPDX.org, this license was released 16 May 2008 This license is
+    OSI certified. This license is available in the 22 official
+    languages of the EU. The English version is included here. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eupl-1.1.yml "Scancode"))
+
 -   **↓**Google Classification is CANNOT\_BE\_USED "The EUPL is very
     similar to the AGPL. For the same reasons that the AGPL is banned,
     the use of EUPL-licensed software is not allowed at Google."
@@ -523,6 +528,7 @@ Raw Data
                 "key": "eupl-1.1",
                 "name": "European Union Public Licence 1.1",
                 "spdxId": "EUPL-1.1",
+                "notes": "Per SPDX.org, this license was released 16 May 2008 This license is OSI\ncertified. This license is available in the 22 official languages of the\nEU. The English version is included here.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://eupl-1.1",
@@ -530,6 +536,15 @@ Raw Data
                         "EUPL-1.1"
                     ],
                     "__impliedId": "EUPL-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 16 May 2008 This license is OSI\ncertified. This license is available in the 22 official languages of the\nEU. The English version is included here.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -767,6 +782,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 16 May 2008 This license is OSI\ncertified. This license is available in the 22 official languages of the\nEU. The English version is included here.\n"
                 }
             ]
         ],

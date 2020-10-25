@@ -40,6 +40,12 @@ Comments on (easy) usability
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+-   Per SPDX.org, this license was released in January 2012. This
+    license list entry is for use when the standard MPL 2.0 is used, as
+    indicated by the standard header (Exhibit A but no Exhibit B).
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -610,6 +616,7 @@ Raw Data
                 "key": "mpl-2.0",
                 "name": "Mozilla Public License 2.0",
                 "spdxId": "MPL-2.0",
+                "notes": "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the standard MPL 2.0 is used, as indicated by the\nstandard header (Exhibit A but no Exhibit B).\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://mpl-2.0",
@@ -617,6 +624,15 @@ Raw Data
                         "MPL-2.0"
                     ],
                     "__impliedId": "MPL-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the standard MPL 2.0 is used, as indicated by the\nstandard header (Exhibit A but no Exhibit B).\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -1015,6 +1031,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the standard MPL 2.0 is used, as indicated by the\nstandard header (Exhibit A but no Exhibit B).\n"
                 }
             ]
         ],

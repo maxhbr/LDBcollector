@@ -108,6 +108,7 @@ Raw Data
                 "key": "nrl",
                 "name": "NRL License",
                 "spdxId": "NRL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://nrl",

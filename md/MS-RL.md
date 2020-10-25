@@ -36,6 +36,9 @@ Comments on (easy) usability
     Werke umfasst, sondern definierte Ausnahmen enthält. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
+-   Per SPDX.org, this license is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -274,6 +277,7 @@ Raw Data
                 "key": "ms-rl",
                 "name": "Microsoft Reciprocal License",
                 "spdxId": "MS-RL",
+                "notes": "Per SPDX.org, this license is OSI certified.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ms-rl",
@@ -281,6 +285,15 @@ Raw Data
                         "MS-RL"
                     ],
                     "__impliedId": "MS-RL",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -504,6 +517,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ],
             [

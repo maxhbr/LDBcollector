@@ -12,6 +12,9 @@ CeCILL-B Free Software License Agreement (CECILL-B)
 Comments on (easy) usability
 ----------------------------
 
+-   The primary text is in French. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -337,6 +340,7 @@ Raw Data
                 "key": "cecill-b",
                 "name": "CeCILL-B Free Software License Agreement",
                 "spdxId": "CECILL-B",
+                "notes": "The primary text is in French.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cecill-b",
@@ -344,6 +348,15 @@ Raw Data
                         "CECILL-B"
                     ],
                     "__impliedId": "CECILL-B",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "The primary text is in French."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -410,6 +423,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "The primary text is in French."
                 }
             ]
         ],

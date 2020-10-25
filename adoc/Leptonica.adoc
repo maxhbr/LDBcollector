@@ -91,6 +91,7 @@ No author or distributor accepts responsibility to anyone for the consequences o
             "key": "leptonica",
             "name": "Leptonica License",
             "spdxId": "Leptonica",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://leptonica",

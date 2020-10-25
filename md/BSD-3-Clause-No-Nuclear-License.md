@@ -116,6 +116,7 @@ Raw Data
                 "key": "sun-bsd-no-nuclear",
                 "name": "Sun BSD-Style with Nuclear Restrictions",
                 "spdxId": "BSD-3-Clause-No-Nuclear-License",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://sun-bsd-no-nuclear",

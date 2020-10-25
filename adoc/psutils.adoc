@@ -119,6 +119,7 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
             "key": "psutils",
             "name": "PS Utilities License",
             "spdxId": "psutils",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://psutils",

@@ -242,6 +242,7 @@ Raw Data
                 "key": "gsoap-1.3b",
                 "name": "gSOAP Public License v1.3b",
                 "spdxId": "gSOAP-1.3b",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://gsoap-1.3b",

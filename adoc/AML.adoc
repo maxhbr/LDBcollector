@@ -91,6 +91,7 @@ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSE
             "key": "aml",
             "name": "Apple Sample Code License 2006",
             "spdxId": "AML",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://aml",

@@ -13,6 +13,11 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Except for the NetBSD Foundation name this license is identical to
+    the bsd-simplified Per SPDX.org, NetBSD adopted this 2-clause
+    license in 2008 for code contributed to NetBSD Foundation. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-2-clause-netbsd.yml "Scancode"))
+
 URLs
 ----
 
@@ -103,6 +108,7 @@ Raw Data
                 "key": "bsd-2-clause-netbsd",
                 "name": "BSD-2-Clause-NetBSD License",
                 "spdxId": "BSD-2-Clause-NetBSD",
+                "notes": "Except for the NetBSD Foundation name this license is identical to the\nbsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license in 2008\nfor code contributed to NetBSD Foundation.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bsd-2-clause-netbsd",
@@ -110,6 +116,15 @@ Raw Data
                         "BSD-2-Clause-NetBSD"
                     ],
                     "__impliedId": "BSD-2-Clause-NetBSD",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Except for the NetBSD Foundation name this license is identical to the\nbsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license in 2008\nfor code contributed to NetBSD Foundation.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -168,6 +183,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Except for the NetBSD Foundation name this license is identical to the\nbsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license in 2008\nfor code contributed to NetBSD Foundation.\n"
                 }
             ]
         ],

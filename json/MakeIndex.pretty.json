@@ -49,6 +49,7 @@
             "key": "makeindex",
             "name": "MakeIndex Distribution Notice",
             "spdxId": "MakeIndex",
+            "notes": "Per Fedora, this license is free but GPL-incompatible, and was found in the\nMakeIndex component inside TeXLive.\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://makeindex",
@@ -56,6 +57,15 @@
                     "MakeIndex"
                 ],
                 "__impliedId": "MakeIndex",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per Fedora, this license is free but GPL-incompatible, and was found in the\nMakeIndex component inside TeXLive.\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -73,6 +83,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per Fedora, this license is free but GPL-incompatible, and was found in the\nMakeIndex component inside TeXLive.\n"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

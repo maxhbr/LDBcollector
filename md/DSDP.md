@@ -124,6 +124,7 @@ Raw Data
                 "key": "dsdp",
                 "name": "DSDP License",
                 "spdxId": "DSDP",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://dsdp",

@@ -15,6 +15,11 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license was released 21 December 1999. This
+    license is the same as 2.0 with the word "registered" removed from
+    in front of "trademark." (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.0.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -129,6 +134,7 @@ Raw Data
                 "key": "openldap-2.0.1",
                 "name": "OpenLDAP Public License 2.0.1",
                 "spdxId": "OLDAP-2.0.1",
+                "notes": "Per SPDX.org, this license was released 21 December 1999. This license is\nthe same as 2.0 with the word \"registered\" removed from in front of\n\"trademark.\"\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://openldap-2.0.1",
@@ -136,6 +142,15 @@ Raw Data
                         "OLDAP-2.0.1"
                     ],
                     "__impliedId": "OLDAP-2.0.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 21 December 1999. This license is\nthe same as 2.0 with the word \"registered\" removed from in front of\n\"trademark.\"\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -194,6 +209,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 21 December 1999. This license is\nthe same as 2.0 with the word \"registered\" removed from in front of\n\"trademark.\"\n"
                 }
             ]
         ],

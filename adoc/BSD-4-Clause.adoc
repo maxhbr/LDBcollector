@@ -32,6 +32,9 @@ verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
+* Per SPDX.org, this license was rescinded by the author on 22 July
+1999. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml[Scancode])
 * **↓**Advertisement clause (3.) is complicated and prone to conflicts
 (source: Override)
 
@@ -213,6 +216,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "key": "bsd-original",
             "name": "BSD-Original",
             "spdxId": "BSD-4-Clause",
+            "notes": "Per SPDX.org, this license was rescinded by the author on 22 July 1999.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://bsd-original",
@@ -220,6 +224,15 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     "BSD-4-Clause"
                 ],
                 "__impliedId": "BSD-4-Clause",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -473,6 +486,13 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             {
                 "tag": "NegativeJudgement",
                 "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
             }
         ],
         [

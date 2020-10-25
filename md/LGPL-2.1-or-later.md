@@ -26,6 +26,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/LGPL-2.1-or-later.html "SPDX"))
 
+-   Per SPDX.org, this license was released February 1999. This license
+    is OSI certified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml "Scancode"))
+
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -294,6 +298,7 @@ Raw Data
                 "key": "lgpl-2.1-plus",
                 "name": "GNU Lesser General Public License 2.1 or later",
                 "spdxId": "LGPL-2.1-or-later",
+                "notes": "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://lgpl-2.1-plus",
@@ -301,6 +306,15 @@ Raw Data
                         "LGPL-2.1-or-later"
                     ],
                     "__impliedId": "LGPL-2.1-or-later",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -530,6 +544,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n"
                 }
             ]
         ],

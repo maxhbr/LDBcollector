@@ -20,6 +20,8 @@
 
 * **↑**Is OSI Approved (source:
 https://spdx.org/licenses/CATOSL-1.1.html[SPDX])
+* Per SPDX.org, this license is OSI certifified. (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ca-tosl-1.1.yml[Scancode])
 
 === URLs
 
@@ -483,6 +485,7 @@ with respect to the subject matter hereof.
             "key": "ca-tosl-1.1",
             "name": "Computer Associates Trusted Open Source License 1.1",
             "spdxId": "CATOSL-1.1",
+            "notes": "Per SPDX.org, this license is OSI certifified.",
             "_implications": {
                 "__impliedNames": [
                     "scancode://ca-tosl-1.1",
@@ -490,6 +493,15 @@ with respect to the subject matter hereof.
                     "CATOSL-1.1"
                 ],
                 "__impliedId": "CATOSL-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certifified."
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -584,6 +596,13 @@ with respect to the subject matter hereof.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certifified."
             }
         ]
     ],

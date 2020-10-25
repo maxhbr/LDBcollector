@@ -435,6 +435,7 @@ Raw Data
                 "key": "open-public",
                 "name": "Open Public License v1.0",
                 "spdxId": "OPL-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://open-public",

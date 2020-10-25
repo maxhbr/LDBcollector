@@ -220,6 +220,7 @@ October 31, 2008
             "key": "libpng",
             "name": "Libpng License",
             "spdxId": "Libpng",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://libpng",

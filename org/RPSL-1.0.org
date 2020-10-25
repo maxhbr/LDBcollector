@@ -24,6 +24,9 @@
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
+- This license is OSI certified (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpsl-1.0.yml][Scancode]])
+
 - *↓*This license is not compatible with the
   DebianFreeSoftwareGuidelines (DFSG-unfree) (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
@@ -696,6 +699,7 @@
               "key": "rpsl-1.0",
               "name": "RealNetworks Public Source License v1.0",
               "spdxId": "RPSL-1.0",
+              "notes": "This license is OSI certified",
               "_implications": {
                   "__impliedNames": [
                       "scancode://rpsl-1.0",
@@ -703,6 +707,15 @@
                       "RPSL-1.0"
                   ],
                   "__impliedId": "RPSL-1.0",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "This license is OSI certified"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -839,6 +852,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "This license is OSI certified"
               }
           ]
       ],

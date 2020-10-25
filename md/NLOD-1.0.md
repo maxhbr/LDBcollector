@@ -158,6 +158,7 @@ Raw Data
                 "key": "nlod-1.0",
                 "name": "Norwegian Licence for Open Government Data",
                 "spdxId": "NLOD-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://nlod-1.0",

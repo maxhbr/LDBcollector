@@ -24,6 +24,9 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+-   Per SPDX.org, this license was released February 1989. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0.yml "Scancode"))
+
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -359,6 +362,7 @@ Raw Data
                 "key": "gpl-1.0",
                 "name": "GNU General Public License 1.0",
                 "spdxId": "GPL-1.0-only",
+                "notes": "Per SPDX.org, this license was released February 1989.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://gpl-1.0",
@@ -366,6 +370,15 @@ Raw Data
                         "GPL-1.0-only"
                     ],
                     "__impliedId": "GPL-1.0-only",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released February 1989."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -469,6 +482,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Google Classification is RESTRICTED"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released February 1989."
                 }
             ]
         ],

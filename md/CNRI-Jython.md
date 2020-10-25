@@ -99,6 +99,7 @@ Raw Data
                 "key": "cnri-jython",
                 "name": "CNRI Jython License",
                 "spdxId": "CNRI-Jython",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cnri-jython",

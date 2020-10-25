@@ -203,6 +203,7 @@ Raw Data
                 "key": "unicode-tou",
                 "name": "Unicode Terms of Use",
                 "spdxId": "Unicode-TOU",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://unicode-tou",

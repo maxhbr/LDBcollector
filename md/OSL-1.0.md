@@ -17,6 +17,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/OSL-1.0.html "SPDX"))
 
+-   Per SPDX.org, this license was OSI certified. This license has been
+    superseded. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-1.0.yml "Scancode"))
+
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -269,6 +273,7 @@ Raw Data
                 "key": "osl-1.0",
                 "name": "Open Software License 1.0",
                 "spdxId": "OSL-1.0",
+                "notes": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://osl-1.0",
@@ -276,6 +281,15 @@ Raw Data
                         "OSL-1.0"
                     ],
                     "__impliedId": "OSL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -385,6 +399,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded.\n"
                 }
             ]
         ],

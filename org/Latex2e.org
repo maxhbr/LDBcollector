@@ -13,6 +13,10 @@
 
 ** Comments on (easy) usability
 
+- the latext2e, verbatim-manual and abstyles are similar licenses
+  (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml][Scancode]])
+
 ** URLs
 
 - *Homepage:* https://fedoraproject.org/wiki/Licensing/Latex2e
@@ -90,6 +94,7 @@
               "key": "latex2e",
               "name": "Latex2e License",
               "spdxId": "Latex2e",
+              "notes": "the latext2e, verbatim-manual and abstyles are similar licenses",
               "_implications": {
                   "__impliedNames": [
                       "scancode://latex2e",
@@ -97,6 +102,15 @@
                       "Latex2e"
                   ],
                   "__impliedId": "Latex2e",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -114,6 +128,15 @@
               }
           }
       },
+      "__impliedJudgement": [
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
+              }
+          ]
+      ],
       "__impliedCopyleft": [
           [
               "Scancode",

@@ -57,6 +57,7 @@
             "key": "condor-1.1",
             "name": "Condor Public License 1.1",
             "spdxId": "Condor-1.1",
+            "notes": "Per SPDX.org, this license was released 30 October 2003",
             "_implications": {
                 "__impliedNames": [
                     "scancode://condor-1.1",
@@ -64,6 +65,15 @@
                     "Condor-1.1"
                 ],
                 "__impliedId": "Condor-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license was released 30 October 2003"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -130,6 +140,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license was released 30 October 2003"
             }
         ]
     ],

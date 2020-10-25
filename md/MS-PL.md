@@ -43,6 +43,9 @@ Comments on (easy) usability
     Software überführen. (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
+-   also known as Microsoft Permissive License (Ms-PL) v1.1 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -310,6 +313,7 @@ Raw Data
                 "key": "ms-pl",
                 "name": "Microsoft Public License",
                 "spdxId": "MS-PL",
+                "notes": "also known as Microsoft Permissive License (Ms-PL) v1.1",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ms-pl",
@@ -317,6 +321,15 @@ Raw Data
                         "MS-PL"
                     ],
                     "__impliedId": "MS-PL",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "also known as Microsoft Permissive License (Ms-PL) v1.1"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -712,6 +725,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "also known as Microsoft Permissive License (Ms-PL) v1.1"
                 }
             ],
             [

@@ -143,6 +143,7 @@ Raw Data
                 "key": "vostrom",
                 "name": "VOSTROM Public License for Open Source",
                 "spdxId": "VOSTROM",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://vostrom",

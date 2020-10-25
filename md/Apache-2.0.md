@@ -49,6 +49,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this version was released January 2004 This license is
+    OSI certified (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -447,6 +451,7 @@ Raw Data
                 "key": "apache-2.0",
                 "name": "Apache License 2.0",
                 "spdxId": "Apache-2.0",
+                "notes": "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://apache-2.0",
@@ -454,6 +459,15 @@ Raw Data
                         "Apache-2.0"
                     ],
                     "__impliedId": "Apache-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -894,6 +908,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n"
                 }
             ],
             [

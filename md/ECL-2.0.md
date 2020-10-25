@@ -32,6 +32,14 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license is OSI certifified. The Educational
+    Community License version 2.0 ("ECL") consists of the Apache 2.0
+    license, modified to change the scope of the patent grant in section
+    3 to be specific to the needs of the education communities using
+    this license. The url included in the boilerplate notice does not
+    work. (15/10/10) (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-2.0.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -358,6 +366,7 @@ Raw Data
                 "key": "ecl-2.0",
                 "name": "Educational Community License 2.0",
                 "spdxId": "ECL-2.0",
+                "notes": "Per SPDX.org, this license is OSI certifified. The Educational Community\nLicense version 2.0 (\"ECL\") consists of the Apache 2.0 license, modified to\nchange the scope of the patent grant in section 3 to be specific to the\nneeds of the education communities using this license. The url included in\nthe boilerplate notice does not work. (15/10/10)\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ecl-2.0",
@@ -365,6 +374,15 @@ Raw Data
                         "ECL-2.0"
                     ],
                     "__impliedId": "ECL-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certifified. The Educational Community\nLicense version 2.0 (\"ECL\") consists of the Apache 2.0 license, modified to\nchange the scope of the patent grant in section 3 to be specific to the\nneeds of the education communities using this license. The url included in\nthe boilerplate notice does not work. (15/10/10)\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -582,6 +600,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certifified. The Educational Community\nLicense version 2.0 (\"ECL\") consists of the Apache 2.0 license, modified to\nchange the scope of the patent grant in section 3 to be specific to the\nneeds of the education communities using this license. The url included in\nthe boilerplate notice does not work. (15/10/10)\n"
                 }
             ]
         ],

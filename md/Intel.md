@@ -22,6 +22,11 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   this has this title in SPDX and OSI text The Intel Open Source
+    License for CDSA/CSSM Implementation (BSD License with Export
+    Notice) (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode"))
+
 URLs
 ----
 
@@ -174,6 +179,7 @@ Raw Data
                 "key": "intel-bsd-export-control",
                 "name": "Intel BSD - Export Control",
                 "spdxId": "Intel",
+                "notes": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://intel-bsd-export-control",
@@ -181,6 +187,15 @@ Raw Data
                         "Intel"
                     ],
                     "__impliedId": "Intel",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -311,6 +326,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
                 }
             ]
         ],

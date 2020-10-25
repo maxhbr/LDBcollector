@@ -110,6 +110,7 @@ Raw Data
                 "key": "tu-berlin-2.0",
                 "name": "Technische Universitaet Berlin License 2.0",
                 "spdxId": "TU-Berlin-2.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://tu-berlin-2.0",

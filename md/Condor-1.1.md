@@ -12,6 +12,9 @@ Condor Public License v1.1 (Condor-1.1)
 Comments on (easy) usability
 ----------------------------
 
+-   Per SPDX.org, this license was released 30 October 2003 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/condor-1.1.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -215,6 +218,7 @@ Raw Data
                 "key": "condor-1.1",
                 "name": "Condor Public License 1.1",
                 "spdxId": "Condor-1.1",
+                "notes": "Per SPDX.org, this license was released 30 October 2003",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://condor-1.1",
@@ -222,6 +226,15 @@ Raw Data
                         "Condor-1.1"
                     ],
                     "__impliedId": "Condor-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license was released 30 October 2003"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -288,6 +301,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license was released 30 October 2003"
                 }
             ]
         ],

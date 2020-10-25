@@ -44,6 +44,9 @@
   (DFSG-free) (source: [[https://wiki.debian.org/DFSGLicenses][Debian
   Free Software Guidelines]])
 
+- Per SPDX.org, this license is OSI certified. (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml][Scancode]])
+
 ** Obligations
 
 | Rights:            | Conditions:           | Limitations:   |
@@ -229,6 +232,7 @@
               "key": "isc",
               "name": "ISC License",
               "spdxId": "ISC",
+              "notes": "Per SPDX.org, this license is OSI certified.",
               "_implications": {
                   "__impliedNames": [
                       "scancode://isc",
@@ -236,6 +240,15 @@
                       "ISC"
                   ],
                   "__impliedId": "ISC",
+                  "__impliedJudgement": [
+                      [
+                          "Scancode",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Per SPDX.org, this license is OSI certified."
+                          }
+                      ]
+                  ],
                   "__impliedCopyleft": [
                       [
                           "Scancode",
@@ -605,6 +618,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "Scancode",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Per SPDX.org, this license is OSI certified."
               }
           ]
       ],

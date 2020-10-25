@@ -204,6 +204,7 @@ Raw Data
                 "key": "bsd-protection",
                 "name": "BSD Protection License",
                 "spdxId": "BSD-Protection",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bsd-protection",

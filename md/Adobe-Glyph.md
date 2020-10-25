@@ -87,6 +87,7 @@ Raw Data
                 "key": "adobe-glyph",
                 "name": "Adobe Glyph License",
                 "spdxId": "Adobe-Glyph",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://adobe-glyph",

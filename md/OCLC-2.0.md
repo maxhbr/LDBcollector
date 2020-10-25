@@ -15,6 +15,10 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/OCLC-2.0.html "SPDX"))
 
+-   Per SPDX.org, this license is OSI certified. This license was
+    released May 2002 (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oclc-2.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -318,6 +322,7 @@ Raw Data
                 "key": "oclc-2.0",
                 "name": "OCLC Research Public License 2.0",
                 "spdxId": "OCLC-2.0",
+                "notes": "Per SPDX.org, this license is OSI certified. This license was released May\n2002\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://oclc-2.0",
@@ -325,6 +330,15 @@ Raw Data
                         "OCLC-2.0"
                     ],
                     "__impliedId": "OCLC-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified. This license was released May\n2002\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -423,6 +437,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified. This license was released May\n2002\n"
                 }
             ]
         ],

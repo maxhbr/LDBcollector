@@ -49,6 +49,7 @@
             "key": "sun-sissl-1.2",
             "name": "Sun Industry Standards Source License 1.2",
             "spdxId": "SISSL-1.2",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://sun-sissl-1.2",

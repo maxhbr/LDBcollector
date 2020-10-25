@@ -41,6 +41,10 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+-   Per SPDX.org, this version was released 2006 This license is OSI
+    certifified. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-2.0.yml "Scancode"))
+
 Obligations
 -----------
 
@@ -254,6 +258,7 @@ Raw Data
                 "key": "artistic-2.0",
                 "name": "Artistic License 2.0",
                 "spdxId": "Artistic-2.0",
+                "notes": "Per SPDX.org, this version was released 2006 This license is OSI\ncertifified.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://artistic-2.0",
@@ -261,6 +266,15 @@ Raw Data
                         "Artistic-2.0"
                     ],
                     "__impliedId": "Artistic-2.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this version was released 2006 This license is OSI\ncertifified.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -706,6 +720,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this version was released 2006 This license is OSI\ncertifified.\n"
                 }
             ]
         ],

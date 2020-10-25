@@ -92,6 +92,7 @@ Raw Data
                 "key": "barr-tex",
                 "name": "Barr TeX License",
                 "spdxId": "Barr",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://barr-tex",

@@ -31,6 +31,9 @@ license instead. (source: https://wiki.debian.org/DFSGLicenses[Debian
 Free Software Guidelines])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+* Per SPDX.org, this license is OSI certified. This license has been
+superseded by Apache 2.0 (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml[Scancode])
 
 === URLs
 
@@ -232,6 +235,7 @@ SUCH DAMAGE.
             "key": "apache-1.1",
             "name": "Apache License 1.1",
             "spdxId": "Apache-1.1",
+            "notes": "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://apache-1.1",
@@ -239,6 +243,15 @@ SUCH DAMAGE.
                     "Apache-1.1"
                 ],
                 "__impliedId": "Apache-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -506,6 +519,13 @@ SUCH DAMAGE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n"
             }
         ]
     ],

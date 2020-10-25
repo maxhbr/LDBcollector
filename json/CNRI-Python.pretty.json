@@ -91,6 +91,7 @@
             "key": "cnri-python-1.6",
             "name": "CNRI Open Source License Agreement for Python 1.6",
             "spdxId": "CNRI-Python",
+            "notes": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)",
             "_implications": {
                 "__impliedNames": [
                     "scancode://cnri-python-1.6",
@@ -98,6 +99,15 @@
                     "CNRI-Python"
                 ],
                 "__impliedId": "CNRI-Python",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -239,6 +249,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
             }
         ]
     ],

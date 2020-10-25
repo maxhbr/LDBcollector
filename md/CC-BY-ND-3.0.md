@@ -376,6 +376,7 @@ Raw Data
                 "key": "cc-by-nd-3.0",
                 "name": "Creative Commons Attribution No Derivatives License 3.0",
                 "spdxId": "CC-BY-ND-3.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cc-by-nd-3.0",

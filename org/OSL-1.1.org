@@ -148,6 +148,7 @@
               "key": "osl-1.1",
               "name": "Open Software License 1.1",
               "spdxId": "OSL-1.1",
+              "notes": null,
               "_implications": {
                   "__impliedNames": [
                       "scancode://osl-1.1",

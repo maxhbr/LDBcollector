@@ -10,6 +10,10 @@ Abstyles License (Abstyles)
 Comments on (easy) usability
 ----------------------------
 
+-   the latext2e, verbatim-manual and abstyles are similar licenses
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode"))
+
 URLs
 ----
 
@@ -86,6 +90,7 @@ Raw Data
                 "key": "abstyles",
                 "name": "Abstyles License",
                 "spdxId": "Abstyles",
+                "notes": "the latext2e, verbatim-manual and abstyles are similar licenses",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://abstyles",
@@ -93,6 +98,15 @@ Raw Data
                         "Abstyles"
                     ],
                     "__impliedId": "Abstyles",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -110,6 +124,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

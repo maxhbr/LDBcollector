@@ -13,6 +13,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   this is very close to the Apache 2.0 licecnse that was used as a
+    base. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/imagemagick.yml "Scancode"))
+
 URLs
 ----
 
@@ -127,6 +131,7 @@ Raw Data
                 "key": "imagemagick",
                 "name": "ImageMagick License",
                 "spdxId": "ImageMagick",
+                "notes": "this is very close to the Apache 2.0 licecnse that was used as a base.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://imagemagick",
@@ -134,6 +139,15 @@ Raw Data
                         "ImageMagick"
                     ],
                     "__impliedId": "ImageMagick",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "this is very close to the Apache 2.0 licecnse that was used as a base."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -192,6 +206,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "this is very close to the Apache 2.0 licecnse that was used as a base."
                 }
             ]
         ],

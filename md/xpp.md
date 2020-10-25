@@ -142,6 +142,7 @@ Raw Data
                 "key": "indiana-extreme-1.2",
                 "name": "Indiana University Extreme! Lab Software License Version 1.2",
                 "spdxId": "xpp",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://indiana-extreme-1.2",

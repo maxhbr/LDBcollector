@@ -50,6 +50,8 @@ verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen. (source:
 https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
+* Per SPDX.org, this is OSI certified (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml[Scancode])
 
 === Obligations
 
@@ -274,6 +276,7 @@ the following restrictions:
             "key": "zlib",
             "name": "ZLIB License",
             "spdxId": "Zlib",
+            "notes": "Per SPDX.org, this is OSI certified",
             "_implications": {
                 "__impliedNames": [
                     "scancode://zlib",
@@ -281,6 +284,15 @@ the following restrictions:
                     "Zlib"
                 ],
                 "__impliedId": "Zlib",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this is OSI certified"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -693,6 +705,13 @@ the following restrictions:
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this is OSI certified"
             }
         ],
         [

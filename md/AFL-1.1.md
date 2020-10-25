@@ -18,6 +18,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, this license has been superseded by later versions.
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.1.yml "Scancode"))
+
 URLs
 ----
 
@@ -198,6 +202,7 @@ Raw Data
                 "key": "afl-1.1",
                 "name": "Academic Free License 1.1",
                 "spdxId": "AFL-1.1",
+                "notes": "Per SPDX.org, this license has been superseded by later versions.",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://afl-1.1",
@@ -205,6 +210,15 @@ Raw Data
                         "AFL-1.1"
                     ],
                     "__impliedId": "AFL-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license has been superseded by later versions."
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -282,6 +296,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license has been superseded by later versions."
                 }
             ]
         ],

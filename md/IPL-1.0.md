@@ -29,6 +29,10 @@ Comments on (easy) usability
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+-   Per SPDX.org, this license is OSI certified. This license was
+    superseded by CPL. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ibmpl-1.0.yml "Scancode"))
+
 URLs
 ----
 
@@ -213,6 +217,7 @@ Raw Data
                 "key": "ibmpl-1.0",
                 "name": "IBM Public License",
                 "spdxId": "IPL-1.0",
+                "notes": "Per SPDX.org, this license is OSI certified. This license was superseded by\nCPL.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ibmpl-1.0",
@@ -220,6 +225,15 @@ Raw Data
                         "IPL-1.0"
                     ],
                     "__impliedId": "IPL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, this license is OSI certified. This license was superseded by\nCPL.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -400,6 +414,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, this license is OSI certified. This license was superseded by\nCPL.\n"
                 }
             ]
         ],

@@ -125,6 +125,7 @@ Raw Data
                 "key": "zimbra-1.4",
                 "name": "Zimbra Public License v1.4",
                 "spdxId": "Zimbra-1.4",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://zimbra-1.4",

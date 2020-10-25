@@ -13,6 +13,12 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   per SPDX.org, it is the same license as
+    BSD-3-Clause-No-Nuclear-License, except it has a disclaimer for
+    nuclear factility use, instead of the software not licensed for such
+    use. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode"))
+
 URLs
 ----
 
@@ -117,6 +123,7 @@ Raw Data
                 "key": "bsd-3-clause-no-nuclear-warranty",
                 "name": "BSD 3-Clause No Nuclear Warranty",
                 "spdxId": "BSD-3-Clause-No-Nuclear-Warranty",
+                "notes": "per SPDX.org, it is the same license as BSD-3-Clause-No-Nuclear-License,\nexcept it has a disclaimer for nuclear factility use, instead of the\nsoftware not licensed for such use.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://bsd-3-clause-no-nuclear-warranty",
@@ -124,6 +131,15 @@ Raw Data
                         "BSD-3-Clause-No-Nuclear-Warranty"
                     ],
                     "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "per SPDX.org, it is the same license as BSD-3-Clause-No-Nuclear-License,\nexcept it has a disclaimer for nuclear factility use, instead of the\nsoftware not licensed for such use.\n"
+                            }
+                        ]
+                    ],
                     "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\nRedistribution of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\nRedistribution in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\nNeither the name of Sun Microsystems, Inc. or the names of contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\", WITHOUT A WARRANTY OF ANY KIND. ALL\nEXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING\nANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR\nPURPOSE OR NON-INFRINGEMENT, ARE HEREBY EXCLUDED. SUN MICROSYSTEMS, INC.\n(\"SUN\") AND ITS LICENSORS SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED\nBY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THIS\nSOFTWARE OR ITS DERIVATIVES. IN NO EVENT WILL SUN OR ITS LICENSORS BE\nLIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT,\nSPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED\nAND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR\nINABILITY TO USE THIS SOFTWARE, EVEN IF SUN HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n\nYou acknowledge that this software is not designed or intended for use\nin the design, construction, operation or maintenance of any nuclear\nfacility.",
                     "__impliedURLs": [
                         [
@@ -179,6 +195,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "per SPDX.org, it is the same license as BSD-3-Clause-No-Nuclear-License,\nexcept it has a disclaimer for nuclear factility use, instead of the\nsoftware not licensed for such use.\n"
                 }
             ]
         ],

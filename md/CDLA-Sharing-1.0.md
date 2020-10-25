@@ -172,6 +172,7 @@ Raw Data
                 "key": "cdla-sharing-1.0",
                 "name": "Community Data License Agreement Sharing 1.0",
                 "spdxId": "CDLA-Sharing-1.0",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://cdla-sharing-1.0",

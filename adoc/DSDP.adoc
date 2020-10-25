@@ -127,6 +127,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
             "key": "dsdp",
             "name": "DSDP License",
             "spdxId": "DSDP",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://dsdp",

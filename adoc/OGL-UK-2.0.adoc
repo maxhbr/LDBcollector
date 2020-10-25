@@ -189,6 +189,7 @@ Further context, best practice and guidance can be found in the UK Government Li
             "key": "ogl-uk-2.0",
             "name": "U.K. Open Government License for Public Sector Information v2.0",
             "spdxId": "OGL-UK-2.0",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://ogl-uk-2.0",

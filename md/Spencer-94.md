@@ -108,6 +108,7 @@ Raw Data
                 "key": "hs-regexp",
                 "name": "Henry Spencer Regexp License",
                 "spdxId": "Spencer-94",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://hs-regexp",

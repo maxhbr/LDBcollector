@@ -69,6 +69,7 @@
             "key": "osl-2.1",
             "name": "Open Software License 2.1",
             "spdxId": "OSL-2.1",
+            "notes": "Per SPDX.org, same as version 2.0 of this license except with changes to\nsection 10\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://osl-2.1",
@@ -76,6 +77,15 @@
                     "OSL-2.1"
                 ],
                 "__impliedId": "OSL-2.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, same as version 2.0 of this license except with changes to\nsection 10\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -189,6 +199,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, same as version 2.0 of this license except with changes to\nsection 10\n"
             }
         ]
     ],

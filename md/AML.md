@@ -89,6 +89,7 @@ Raw Data
                 "key": "aml",
                 "name": "Apple Sample Code License 2006",
                 "spdxId": "AML",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://aml",

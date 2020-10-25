@@ -101,6 +101,7 @@ Raw Data
                 "key": "ace-tao",
                 "name": "ACE TAO License",
                 "spdxId": "DOC",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://ace-tao",

@@ -112,6 +112,7 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
             "key": "netcdf",
             "name": "NetCDF License",
             "spdxId": "NetCDF",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://netcdf",

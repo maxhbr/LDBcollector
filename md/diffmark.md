@@ -10,6 +10,16 @@ diffmark license (diffmark)
 Comments on (easy) usability
 ----------------------------
 
+-   Per Fedora, this extremely minimal and permissive license was found
+    in diffmark (0.08). While poorly written, our interpretation of the
+    text permits use, modification, and distribution. It also permits
+    wearing it as a hat or eating it for lunch, although neither of
+    those cases are recommended. This would perhaps be considered
+    Copyright only, except that no requirement of retention of copyright
+    is present, and the copyright holder is disclaiming liability
+    (albeit, poorly). This license is Free, and GPL compatible. (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml "Scancode"))
+
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -84,6 +94,7 @@ Raw Data
                 "key": "diffmark",
                 "name": "diffmark License",
                 "spdxId": "diffmark",
+                "notes": "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://diffmark",
@@ -91,6 +102,15 @@ Raw Data
                         "diffmark"
                     ],
                     "__impliedId": "diffmark",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -149,6 +169,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n"
                 }
             ]
         ],

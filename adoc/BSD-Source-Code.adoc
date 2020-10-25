@@ -108,6 +108,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "key": "bsd-source-code",
             "name": "BSD Source Code Attribution",
             "spdxId": "BSD-Source-Code",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://bsd-source-code",

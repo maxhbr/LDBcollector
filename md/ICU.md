@@ -158,6 +158,7 @@ Raw Data
                 "key": "x11-xconsortium",
                 "name": "X11-Style (X Consortium)",
                 "spdxId": "X11",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://x11-xconsortium",

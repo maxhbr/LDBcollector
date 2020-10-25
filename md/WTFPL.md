@@ -157,6 +157,7 @@ Raw Data
                 "key": "wtfpl-2.0",
                 "name": "WTFPL 2.0",
                 "spdxId": "WTFPL",
+                "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://wtfpl-2.0",

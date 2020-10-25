@@ -13,6 +13,11 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   Per SPDX.org, ANTLR used this public domain notice through version
+    2.7 and then switched to a BSD license for version 3.0 and later.
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml "Scancode"))
+
 URLs
 ----
 
@@ -118,6 +123,7 @@ Raw Data
                 "key": "antlr-pd",
                 "name": "ANTLR Software Rights Notice",
                 "spdxId": "ANTLR-PD",
+                "notes": "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n",
                 "_implications": {
                     "__impliedNames": [
                         "scancode://antlr-pd",
@@ -125,6 +131,15 @@ Raw Data
                         "ANTLR-PD"
                     ],
                     "__impliedId": "ANTLR-PD",
+                    "__impliedJudgement": [
+                        [
+                            "Scancode",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n"
+                            }
+                        ]
+                    ],
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -191,6 +206,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Scancode",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n"
                 }
             ]
         ],

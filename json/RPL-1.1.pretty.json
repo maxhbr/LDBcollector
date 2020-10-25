@@ -62,6 +62,7 @@
             "key": "rpl-1.1",
             "name": "Reciprocal Public License 1.1",
             "spdxId": "RPL-1.1",
+            "notes": "Per SPDX.org, this license has been superseded by the Reciprocal Public\nLicense, version 1.5\n",
             "_implications": {
                 "__impliedNames": [
                     "scancode://rpl-1.1",
@@ -69,6 +70,15 @@
                     "RPL-1.1"
                 ],
                 "__impliedId": "RPL-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Scancode",
+                        {
+                            "tag": "NeutralJudgement",
+                            "contents": "Per SPDX.org, this license has been superseded by the Reciprocal Public\nLicense, version 1.5\n"
+                        }
+                    ]
+                ],
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -148,6 +158,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
+            }
+        ],
+        [
+            "Scancode",
+            {
+                "tag": "NeutralJudgement",
+                "contents": "Per SPDX.org, this license has been superseded by the Reciprocal Public\nLicense, version 1.5\n"
             }
         ]
     ],

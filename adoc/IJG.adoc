@@ -208,6 +208,7 @@ We are required to state that
             "key": "ijg",
             "name": "Independent JPEG Group License",
             "spdxId": "IJG",
+            "notes": null,
             "_implications": {
                 "__impliedNames": [
                     "scancode://ijg",
