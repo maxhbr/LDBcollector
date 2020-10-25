@@ -567,3 +567,9 @@ under the License."
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/APSL-1.0.svg[image,title="dot"]

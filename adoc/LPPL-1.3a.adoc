@@ -525,3 +525,9 @@ Defining What Constitutes the Work
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/LPPL-1.3a.svg[image,title="dot"]

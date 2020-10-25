@@ -656,3 +656,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/BSL-1.0.svg]]

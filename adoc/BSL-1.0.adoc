@@ -653,3 +653,9 @@ DEALINGS IN THE SOFTWARE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/BSL-1.0.svg[image,title="dot"]

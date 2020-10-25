@@ -371,3 +371,9 @@ Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/LGPL-2.0-only.svg[image,title="dot"]

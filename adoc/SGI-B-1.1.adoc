@@ -163,3 +163,9 @@ Additional Notice Provisions: [such additional provisions, if any, as appear in 
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SGI-B-1.1.svg[image,title="dot"]

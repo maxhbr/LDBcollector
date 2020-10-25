@@ -175,3 +175,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/TMate.svg[image,title="dot"]

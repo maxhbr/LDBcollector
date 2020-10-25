@@ -447,3 +447,9 @@ This license is governed by the Laws of Norway. Disputes shall be settled by Osl
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/QPL-1.0.svg[image,title="dot"]

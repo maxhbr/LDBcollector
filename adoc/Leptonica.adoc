@@ -192,3 +192,9 @@ No author or distributor accepts responsibility to anyone for the consequences o
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Leptonica.svg[image,title="dot"]

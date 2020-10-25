@@ -493,3 +493,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/APSL-1.2.svg]]

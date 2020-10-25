@@ -157,3 +157,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/SMPPL.svg]]

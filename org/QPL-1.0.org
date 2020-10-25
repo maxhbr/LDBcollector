@@ -457,3 +457,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/QPL-1.0.svg]]

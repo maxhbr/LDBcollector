@@ -327,3 +327,9 @@ This Academic Free License (the "License") applies to any original work of autho
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/AFL-2.0.svg[image,title="dot"]

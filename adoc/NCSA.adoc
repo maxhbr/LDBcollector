@@ -617,3 +617,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NCSA.svg[image,title="dot"]

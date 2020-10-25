@@ -246,3 +246,9 @@ such license, approval or letter.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Intel-ACPI.svg[image,title="dot"]

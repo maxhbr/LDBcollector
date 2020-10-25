@@ -972,3 +972,9 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/GPL-2.0-only.svg[image,title="dot"]

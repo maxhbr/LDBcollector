@@ -191,3 +191,9 @@ Unless required by applicable law or agreed to in writing, software distributed 
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SCEA.svg[image,title="dot"]

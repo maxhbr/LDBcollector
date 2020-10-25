@@ -342,3 +342,9 @@ project, please see <http://www.apache.org/>.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Apache-1.0.svg[image,title="dot"]

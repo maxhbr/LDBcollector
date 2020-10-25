@@ -300,3 +300,9 @@ Stated plainly: You are permitted to modify NetHack, or otherwise use parts of N
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NGPL.svg[image,title="dot"]

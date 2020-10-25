@@ -831,3 +831,9 @@ jurisdiction, by the more diligent Party.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CECILL-2.1.svg[image,title="dot"]

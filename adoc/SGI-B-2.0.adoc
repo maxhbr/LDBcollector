@@ -223,3 +223,9 @@ from Silicon Graphics, Inc.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SGI-B-2.0.svg[image,title="dot"]

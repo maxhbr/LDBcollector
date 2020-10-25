@@ -198,3 +198,9 @@ or anything else.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NLPL.svg[image,title="dot"]

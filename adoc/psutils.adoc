@@ -224,3 +224,9 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/psutils.svg[image,title="dot"]

@@ -321,3 +321,9 @@ We are required to state that
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/IJG.svg[image,title="dot"]

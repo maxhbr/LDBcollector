@@ -512,3 +512,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/Artistic-1.0.svg]]

@@ -231,3 +231,9 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CPOL-1.02.svg[image,title="dot"]

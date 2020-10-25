@@ -499,3 +499,9 @@ That's all there is to it!
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/GPL-1.0-only.svg[image,title="dot"]

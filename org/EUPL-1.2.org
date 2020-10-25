@@ -632,3 +632,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/EUPL-1.2.svg]]

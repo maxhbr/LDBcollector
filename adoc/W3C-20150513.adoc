@@ -270,3 +270,9 @@ Notes
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/W3C-20150513.svg[image,title="dot"]

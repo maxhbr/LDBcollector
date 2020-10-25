@@ -516,3 +516,9 @@ This product includes the Zend Engine, freely available at
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/PHP-3.0.svg[image,title="dot"]

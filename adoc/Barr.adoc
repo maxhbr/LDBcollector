@@ -195,3 +195,9 @@ it will not work  with AMSTeX, I have not tested it.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Barr.svg[image,title="dot"]

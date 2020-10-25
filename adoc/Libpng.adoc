@@ -369,3 +369,9 @@ October 31, 2008
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Libpng.svg[image,title="dot"]

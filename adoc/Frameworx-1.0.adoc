@@ -335,3 +335,9 @@ Your agreement to the foregoing as of the date hereof has been evidenced by your
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Frameworx-1.0.svg[image,title="dot"]

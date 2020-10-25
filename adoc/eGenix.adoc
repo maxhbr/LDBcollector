@@ -238,3 +238,9 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/eGenix.svg[image,title="dot"]

@@ -284,3 +284,9 @@ defined by the Mozilla Public License, v. 2.0.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/MPL-2.0-no-copyleft-exception.svg[image,title="dot"]

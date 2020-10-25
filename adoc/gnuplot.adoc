@@ -163,3 +163,9 @@ extent permitted by applicable law.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/gnuplot.svg[image,title="dot"]

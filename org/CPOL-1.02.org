@@ -231,3 +231,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CPOL-1.02.svg]]

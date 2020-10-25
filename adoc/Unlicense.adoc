@@ -548,3 +548,9 @@ For more information, please refer to <http://unlicense.org/>
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Unlicense.svg[image,title="dot"]

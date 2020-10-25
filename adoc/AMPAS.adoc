@@ -198,3 +198,9 @@ Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/AMPAS.svg[image,title="dot"]

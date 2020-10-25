@@ -1475,3 +1475,9 @@ That's all there is to it!
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/LGPL-2.1-only.svg[image,title="dot"]

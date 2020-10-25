@@ -700,3 +700,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CC-BY-NC-4.0.svg]]

@@ -393,3 +393,9 @@ legends also need to be complied with as well.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/VSL-1.0.svg[image,title="dot"]

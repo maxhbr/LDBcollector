@@ -244,3 +244,9 @@ francis dot borceux at uclouvain dot be.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Borceux.svg[image,title="dot"]

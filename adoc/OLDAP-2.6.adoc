@@ -234,3 +234,9 @@ distributed verbatim copies of this document is granted.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OLDAP-2.6.svg[image,title="dot"]

@@ -824,3 +824,9 @@ General Provisions
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Artistic-2.0.svg[image,title="dot"]

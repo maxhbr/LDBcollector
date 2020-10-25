@@ -856,3 +856,9 @@ Creative Commons may be contacted at creativecommons.org.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CC-BY-4.0.svg[image,title="dot"]

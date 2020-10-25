@@ -132,3 +132,9 @@ This notice must be left intact.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Dotseqn.svg[image,title="dot"]

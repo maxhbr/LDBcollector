@@ -358,3 +358,9 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/HPND.svg[image,title="dot"]

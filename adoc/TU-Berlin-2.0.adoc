@@ -217,3 +217,9 @@ WARRANTY FOR THIS SOFTWARE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/TU-Berlin-2.0.svg[image,title="dot"]

@@ -413,3 +413,9 @@ Policy])
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Sleepycat.svg[image,title="dot"]

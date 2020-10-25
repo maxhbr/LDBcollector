@@ -232,3 +232,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OLDAP-2.0.svg[image,title="dot"]

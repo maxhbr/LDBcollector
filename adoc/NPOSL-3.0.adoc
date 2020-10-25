@@ -331,3 +331,9 @@ e) to display the Original Work publicly.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NPOSL-3.0.svg[image,title="dot"]

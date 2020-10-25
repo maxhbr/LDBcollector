@@ -161,3 +161,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/HPND-sell-variant.svg]]

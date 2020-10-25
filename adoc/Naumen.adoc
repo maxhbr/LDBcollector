@@ -340,3 +340,9 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Naumen.svg[image,title="dot"]

@@ -309,3 +309,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/PDDL-1.0.svg]]

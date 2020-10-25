@@ -203,3 +203,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/BSD-1-Clause.svg]]

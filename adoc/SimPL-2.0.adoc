@@ -298,3 +298,9 @@ You may do anything that you want with the SimPL text; it's a license form to us
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SimPL-2.0.svg[image,title="dot"]

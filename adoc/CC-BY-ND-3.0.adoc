@@ -446,3 +446,9 @@ Creative Commons Notice
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CC-BY-ND-3.0.svg[image,title="dot"]

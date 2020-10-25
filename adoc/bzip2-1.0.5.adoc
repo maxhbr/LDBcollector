@@ -164,3 +164,9 @@ PATENT HINTS Yes
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/bzip2-1.0.5.svg[image,title="dot"]

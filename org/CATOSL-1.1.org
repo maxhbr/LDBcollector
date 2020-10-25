@@ -628,3 +628,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CATOSL-1.1.svg]]

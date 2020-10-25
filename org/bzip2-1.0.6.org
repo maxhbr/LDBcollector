@@ -260,3 +260,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/bzip2-1.0.6.svg]]

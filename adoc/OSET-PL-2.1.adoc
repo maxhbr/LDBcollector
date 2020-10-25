@@ -312,3 +312,9 @@ This Source Code Form is "Incompatible With Secondary Licenses", as defined by t
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OSET-PL-2.1.svg[image,title="dot"]

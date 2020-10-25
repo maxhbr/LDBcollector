@@ -345,3 +345,9 @@ PHP includes the Zend Engine, freely available at
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/PHP-3.01.svg[image,title="dot"]

@@ -266,3 +266,9 @@ Further context, best practice and guidance can be found in the UK Government Li
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OGL-UK-3.0.svg[image,title="dot"]

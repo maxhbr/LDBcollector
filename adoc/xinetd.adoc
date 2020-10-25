@@ -232,3 +232,9 @@ confusion about 2.2.1 and 2.1.8.*.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/xinetd.svg[image,title="dot"]

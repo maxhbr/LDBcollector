@@ -289,3 +289,9 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/MIT-CMU.svg[image,title="dot"]

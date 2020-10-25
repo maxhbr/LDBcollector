@@ -227,3 +227,9 @@ Section 7.  Miscellaneous
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CDLA-Sharing-1.0.svg[image,title="dot"]

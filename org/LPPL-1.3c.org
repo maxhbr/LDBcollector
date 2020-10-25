@@ -899,3 +899,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/LPPL-1.3c.svg]]

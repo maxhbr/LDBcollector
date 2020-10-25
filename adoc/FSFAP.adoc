@@ -210,3 +210,9 @@ warranty.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/FSFAP.svg[image,title="dot"]

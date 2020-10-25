@@ -1134,3 +1134,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/MPL-2.0.svg]]

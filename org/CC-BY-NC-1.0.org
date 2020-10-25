@@ -299,3 +299,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CC-BY-NC-1.0.svg]]

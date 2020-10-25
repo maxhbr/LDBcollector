@@ -257,3 +257,9 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/BSD-Protection.svg[image,title="dot"]

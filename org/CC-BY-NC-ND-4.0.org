@@ -680,3 +680,9 @@ International (CC-BY-NC-ND-4.0)
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CC-BY-NC-ND-4.0.svg]]

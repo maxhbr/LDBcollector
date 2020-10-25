@@ -213,3 +213,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/BSD-3-Clause-No-Nuclear-Warranty.svg]]

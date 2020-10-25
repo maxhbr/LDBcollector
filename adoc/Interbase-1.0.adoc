@@ -338,3 +338,9 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Interbase-1.0.svg[image,title="dot"]

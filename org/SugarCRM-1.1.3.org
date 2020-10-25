@@ -298,3 +298,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/SugarCRM-1.1.3.svg]]

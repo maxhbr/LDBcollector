@@ -210,3 +210,9 @@ documentation and/or software.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/RSA-MD.svg[image,title="dot"]

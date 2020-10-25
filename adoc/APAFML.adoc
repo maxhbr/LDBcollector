@@ -193,3 +193,9 @@ obligation to support the use of the AFM files.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/APAFML.svg[image,title="dot"]

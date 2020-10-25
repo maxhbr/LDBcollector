@@ -382,3 +382,9 @@ Version 1 du 21/06/2004
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CECILL-1.0.svg[image,title="dot"]

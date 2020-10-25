@@ -213,3 +213,9 @@ sources, credits must appear in the documentation.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Spencer-94.svg[image,title="dot"]

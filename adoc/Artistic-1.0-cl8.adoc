@@ -372,3 +372,9 @@ The End
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Artistic-1.0-cl8.svg[image,title="dot"]

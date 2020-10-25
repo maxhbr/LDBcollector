@@ -190,3 +190,9 @@ Permission is granted to anyone to use this software for any purpose on any comp
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Newsletr.svg[image,title="dot"]

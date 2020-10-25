@@ -359,3 +359,9 @@ goods and services.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Intel.svg[image,title="dot"]

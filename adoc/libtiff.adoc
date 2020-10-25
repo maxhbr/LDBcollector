@@ -259,3 +259,9 @@ OF THIS SOFTWARE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/libtiff.svg[image,title="dot"]

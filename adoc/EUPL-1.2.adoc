@@ -634,3 +634,9 @@ Without prejudice to specific agreement between parties,
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/EUPL-1.2.svg[image,title="dot"]

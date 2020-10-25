@@ -936,3 +936,9 @@ and exceptions or additional permissions here}."
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/EPL-2.0.svg[image,title="dot"]

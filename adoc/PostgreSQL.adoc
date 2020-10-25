@@ -518,3 +518,9 @@ THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, B
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/PostgreSQL.svg[image,title="dot"]

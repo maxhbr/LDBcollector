@@ -252,3 +252,9 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OSL-2.0.svg[image,title="dot"]

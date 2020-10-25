@@ -525,3 +525,9 @@ complete with out that file.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OPL-1.0.svg[image,title="dot"]

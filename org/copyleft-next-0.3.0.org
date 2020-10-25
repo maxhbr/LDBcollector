@@ -350,3 +350,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/copyleft-next-0.3.0.svg]]

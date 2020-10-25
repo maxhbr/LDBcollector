@@ -207,3 +207,9 @@ You are under no obligation whatsoever to provide any bug fixes, patches, or upg
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/BSD-3-Clause-LBNL.svg[image,title="dot"]

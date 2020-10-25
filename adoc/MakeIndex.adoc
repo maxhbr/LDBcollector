@@ -157,3 +157,9 @@ serves any particular purpose.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/MakeIndex.svg[image,title="dot"]

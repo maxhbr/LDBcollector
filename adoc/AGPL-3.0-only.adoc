@@ -1277,3 +1277,9 @@ You should also get your employer (if you work as a programmer) or school, if an
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/AGPL-3.0-only.svg[image,title="dot"]

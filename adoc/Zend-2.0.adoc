@@ -283,3 +283,9 @@ SUCH DAMAGE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Zend-2.0.svg[image,title="dot"]

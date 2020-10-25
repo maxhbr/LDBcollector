@@ -135,3 +135,9 @@ modifications, as long as this notice is preserved.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/FSFULLR.svg[image,title="dot"]

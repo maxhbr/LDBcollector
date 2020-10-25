@@ -553,3 +553,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/GFDL-1.1-only.svg]]

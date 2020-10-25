@@ -177,3 +177,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/Zimbra-1.4.svg]]

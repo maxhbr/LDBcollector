@@ -297,3 +297,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/ZPL-2.1.svg]]

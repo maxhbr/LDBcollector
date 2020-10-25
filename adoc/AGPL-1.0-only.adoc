@@ -251,3 +251,9 @@ NO WARRANTY
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/AGPL-1.0-only.svg[image,title="dot"]

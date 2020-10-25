@@ -194,3 +194,9 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Rdisc.svg[image,title="dot"]

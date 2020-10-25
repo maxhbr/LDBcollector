@@ -328,3 +328,9 @@ The Condor Team may publish revised and/or new versions of this
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Condor-1.1.svg[image,title="dot"]

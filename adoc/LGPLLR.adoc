@@ -359,3 +359,9 @@ END OF TERMS AND CONDITIONS
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/LGPLLR.svg[image,title="dot"]

@@ -164,3 +164,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/SGI-B-1.1.svg]]

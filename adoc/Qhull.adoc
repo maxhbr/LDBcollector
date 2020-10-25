@@ -236,3 +236,9 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Qhull.svg[image,title="dot"]

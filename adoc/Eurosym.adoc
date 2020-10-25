@@ -154,3 +154,9 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Eurosym.svg[image,title="dot"]

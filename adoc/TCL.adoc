@@ -301,3 +301,9 @@ terms specified in this license.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/TCL.svg[image,title="dot"]

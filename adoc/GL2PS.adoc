@@ -149,3 +149,9 @@ This software is provided "as is" without express or implied warranty.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/GL2PS.svg[image,title="dot"]

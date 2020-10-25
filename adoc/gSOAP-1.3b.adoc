@@ -295,3 +295,9 @@ THE SOFTWARE IN THIS PRODUCT WAS IN PART PROVIDED BY GENIVIA INC AND ANY EXPRESS
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/gSOAP-1.3b.svg[image,title="dot"]

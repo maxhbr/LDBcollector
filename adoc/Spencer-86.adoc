@@ -207,3 +207,9 @@ regular-expression syntax might require a total rethink.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Spencer-86.svg[image,title="dot"]

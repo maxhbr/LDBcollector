@@ -155,3 +155,9 @@ nuclear facility.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/BSD-3-Clause-No-Nuclear-License.svg[image,title="dot"]

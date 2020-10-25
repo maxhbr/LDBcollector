@@ -319,3 +319,9 @@ The End
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OLDAP-1.2.svg[image,title="dot"]

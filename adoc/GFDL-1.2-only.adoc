@@ -584,3 +584,9 @@ to permit their use in free software.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/GFDL-1.2-only.svg[image,title="dot"]

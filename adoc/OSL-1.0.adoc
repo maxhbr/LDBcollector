@@ -822,3 +822,9 @@ e) to display the Original Work publicly.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OSL-1.0.svg[image,title="dot"]

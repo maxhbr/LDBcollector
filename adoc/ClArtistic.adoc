@@ -362,3 +362,9 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/ClArtistic.svg[image,title="dot"]

@@ -211,3 +211,9 @@ additional clause specific to Cube:
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Cube.svg[image,title="dot"]

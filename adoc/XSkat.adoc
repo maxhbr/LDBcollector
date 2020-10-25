@@ -142,3 +142,9 @@ original program and z is an arbitrary suffix.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/XSkat.svg[image,title="dot"]

@@ -210,3 +210,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/BSD-Source-Code.svg]]

@@ -578,3 +578,9 @@ EXHIBIT A.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/MPL-1.0.svg[image,title="dot"]

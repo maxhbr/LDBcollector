@@ -505,3 +505,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/GPL-1.0-only.svg]]

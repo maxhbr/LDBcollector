@@ -306,3 +306,9 @@ liable for, and expressly excludes, all liability for loss or damage however and
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/PDDL-1.0.svg[image,title="dot"]

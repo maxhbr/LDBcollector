@@ -292,3 +292,9 @@ OF SUCH DAMAGE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/ZPL-2.1.svg[image,title="dot"]

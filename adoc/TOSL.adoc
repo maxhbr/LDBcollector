@@ -165,3 +165,9 @@ OF SUCH DAMAGE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/TOSL.svg[image,title="dot"]

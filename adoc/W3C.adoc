@@ -452,3 +452,9 @@ times remain with copyright holders.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/W3C.svg[image,title="dot"]

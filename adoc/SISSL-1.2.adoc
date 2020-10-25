@@ -295,3 +295,9 @@ All Rights Reserved.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SISSL-1.2.svg[image,title="dot"]

@@ -348,3 +348,9 @@ THE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PE
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/EUDatagrid.svg[image,title="dot"]

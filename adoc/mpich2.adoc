@@ -232,3 +232,9 @@ GOVERNMENT LICENSE
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/mpich2.svg[image,title="dot"]

@@ -134,3 +134,9 @@ program or documentation which mentions my name and the URL shown above.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Glulxe.svg[image,title="dot"]

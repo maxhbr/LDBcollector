@@ -243,3 +243,9 @@ Note:
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Vim.svg[image,title="dot"]

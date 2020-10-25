@@ -140,3 +140,9 @@ into another language, under the above conditions for modified versions.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Latex2e.svg[image,title="dot"]

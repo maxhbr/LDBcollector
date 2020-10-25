@@ -244,3 +244,9 @@ SOFTWARE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/xpp.svg[image,title="dot"]

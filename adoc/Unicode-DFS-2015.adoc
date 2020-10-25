@@ -314,3 +314,9 @@ authorization of the copyright holder.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Unicode-DFS-2015.svg[image,title="dot"]

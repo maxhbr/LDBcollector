@@ -234,3 +234,9 @@ Cette licence est soumise au droit français.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/LAL-1.2.svg[image,title="dot"]

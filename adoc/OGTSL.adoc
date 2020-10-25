@@ -392,3 +392,9 @@ The End
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OGTSL.svg[image,title="dot"]

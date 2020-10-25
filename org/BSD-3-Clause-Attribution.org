@@ -217,3 +217,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/BSD-3-Clause-Attribution.svg]]

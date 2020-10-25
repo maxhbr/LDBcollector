@@ -212,3 +212,9 @@ The views and conclusions contained in the software and documentation are those 
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NRL.svg[image,title="dot"]

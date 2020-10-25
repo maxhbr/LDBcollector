@@ -839,3 +839,9 @@ non-infringement.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/MS-PL.svg[image,title="dot"]

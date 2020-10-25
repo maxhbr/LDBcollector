@@ -203,3 +203,9 @@ PARTY RIGHTS.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Afmparse.svg[image,title="dot"]

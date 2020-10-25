@@ -286,3 +286,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/XFree86-1.1.svg]]

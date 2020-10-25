@@ -218,3 +218,9 @@ This licence, including its formation, and any disputes and claims arising in co
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NLOD-1.0.svg[image,title="dot"]

@@ -443,3 +443,9 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Entessa.svg[image,title="dot"]

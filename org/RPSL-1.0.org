@@ -883,3 +883,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/RPSL-1.0.svg]]

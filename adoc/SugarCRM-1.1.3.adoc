@@ -297,3 +297,9 @@ However, in addition to the other notice obligations, all copies of the Covered 
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SugarCRM-1.1.3.svg[image,title="dot"]

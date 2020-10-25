@@ -318,3 +318,9 @@ permission of its copyright owner.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/AFL-1.2.svg[image,title="dot"]

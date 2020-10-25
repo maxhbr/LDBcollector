@@ -196,3 +196,9 @@ END OF COPYRIGHT NOTICE
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Bahyph.svg[image,title="dot"]

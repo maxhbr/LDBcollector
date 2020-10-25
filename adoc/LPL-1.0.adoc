@@ -525,3 +525,9 @@ any resulting litigation.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/LPL-1.0.svg[image,title="dot"]

@@ -261,3 +261,9 @@ Creative Commons may be contacted at http://creativecommons.org/.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CC-BY-SA-1.0.svg[image,title="dot"]

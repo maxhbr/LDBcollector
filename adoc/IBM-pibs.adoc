@@ -229,3 +229,9 @@ LICENSED MATERIAL  -  PROGRAM PROPERTY OF I B M
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/IBM-pibs.svg[image,title="dot"]

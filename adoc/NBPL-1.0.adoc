@@ -347,3 +347,9 @@ The End
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NBPL-1.0.svg[image,title="dot"]

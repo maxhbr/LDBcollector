@@ -443,3 +443,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/ZPL-2.0.svg]]

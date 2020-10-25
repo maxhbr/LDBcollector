@@ -217,3 +217,9 @@ A Licensee may at the same time be a Licensor, and vice versa.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CERN-OHL-1.1.svg[image,title="dot"]

@@ -419,3 +419,9 @@ purpose. It is provided "as is" without express or implied warranty.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NTP.svg[image,title="dot"]

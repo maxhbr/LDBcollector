@@ -278,3 +278,9 @@ Policy])
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Ruby.svg[image,title="dot"]

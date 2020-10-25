@@ -216,3 +216,9 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OML.svg[image,title="dot"]

@@ -230,3 +230,9 @@ connection with the use or performance of this software.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SMLNJ.svg[image,title="dot"]

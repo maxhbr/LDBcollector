@@ -224,3 +224,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CDLA-Permissive-1.0.svg]]

@@ -570,3 +570,9 @@ eCos and the eCos logo are registered trademarks of eCosCentric Limited.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/RHeCos-1.1.svg[image,title="dot"]

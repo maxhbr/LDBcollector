@@ -302,3 +302,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/LiLiQ-R-1.1.svg]]

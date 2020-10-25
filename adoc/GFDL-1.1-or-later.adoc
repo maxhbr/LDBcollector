@@ -181,3 +181,9 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/GFDL-1.1-or-later.svg[image,title="dot"]

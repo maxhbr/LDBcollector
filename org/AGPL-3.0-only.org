@@ -1301,3 +1301,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/AGPL-3.0-only.svg]]

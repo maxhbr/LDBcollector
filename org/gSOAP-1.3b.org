@@ -294,3 +294,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/gSOAP-1.3b.svg]]

@@ -464,3 +464,9 @@ by "COPYRIGHT HOLDERS AND CONTRIBUTORS".
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/BSD-4-Clause-UC.svg[image,title="dot"]

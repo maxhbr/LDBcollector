@@ -231,3 +231,9 @@ under the License.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/ImageMagick.svg[image,title="dot"]

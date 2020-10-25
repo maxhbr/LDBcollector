@@ -327,3 +327,9 @@ END OF LICENSE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/AFL-1.1.svg[image,title="dot"]

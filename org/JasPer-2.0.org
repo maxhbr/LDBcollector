@@ -250,3 +250,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/JasPer-2.0.svg]]

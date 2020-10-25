@@ -194,3 +194,9 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Wsuipa.svg[image,title="dot"]

@@ -617,3 +617,9 @@ EXHIBIT A - Netizen Open Source License
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NOSL.svg[image,title="dot"]

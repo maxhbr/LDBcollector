@@ -903,3 +903,9 @@ registered office inside a European Union country.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/EUPL-1.1.svg[image,title="dot"]

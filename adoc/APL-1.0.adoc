@@ -596,3 +596,9 @@ Each Subsequent Contributor (including the Initial Contributor where the Initial
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/APL-1.0.svg[image,title="dot"]

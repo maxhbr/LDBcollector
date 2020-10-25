@@ -188,3 +188,9 @@ The Product is provided as free software, in the hope that it will be useful. It
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/iMatix.svg[image,title="dot"]

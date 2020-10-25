@@ -382,3 +382,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/LGPL-2.0-only.svg]]

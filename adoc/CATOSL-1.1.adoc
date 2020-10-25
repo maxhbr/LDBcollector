@@ -624,3 +624,9 @@ with respect to the subject matter hereof.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CATOSL-1.1.svg[image,title="dot"]

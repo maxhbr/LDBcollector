@@ -570,3 +570,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/RHeCos-1.1.svg]]

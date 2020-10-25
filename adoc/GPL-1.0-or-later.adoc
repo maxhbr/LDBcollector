@@ -241,3 +241,9 @@ You should have received a copy of the GNU General Public License along with thi
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/GPL-1.0-or-later.svg[image,title="dot"]

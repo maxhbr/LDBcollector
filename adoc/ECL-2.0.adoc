@@ -694,3 +694,9 @@ identification within third-party archives.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/ECL-2.0.svg[image,title="dot"]

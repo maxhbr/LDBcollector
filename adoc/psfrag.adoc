@@ -134,3 +134,9 @@ changes and their authors must be explicitly stated HERE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/psfrag.svg[image,title="dot"]

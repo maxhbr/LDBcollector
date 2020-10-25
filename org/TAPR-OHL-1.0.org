@@ -275,3 +275,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/TAPR-OHL-1.0.svg]]

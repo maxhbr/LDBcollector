@@ -208,3 +208,9 @@ Permission is granted to anyone to use this software for any purpose, including 
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Info-ZIP.svg[image,title="dot"]

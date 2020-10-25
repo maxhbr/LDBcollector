@@ -388,3 +388,9 @@ California and by the laws of the United States of America.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Xnet.svg[image,title="dot"]

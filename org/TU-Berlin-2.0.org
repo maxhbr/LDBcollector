@@ -218,3 +218,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/TU-Berlin-2.0.svg]]

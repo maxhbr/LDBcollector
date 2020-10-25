@@ -223,3 +223,9 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CERN-OHL-1.2.svg[image,title="dot"]

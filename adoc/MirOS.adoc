@@ -372,3 +372,9 @@ of said person's immediate fault when using the work as intended.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/MirOS.svg[image,title="dot"]

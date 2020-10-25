@@ -262,3 +262,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/OFL-1.0.svg[image,title="dot"]

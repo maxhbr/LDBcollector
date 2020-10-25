@@ -213,3 +213,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CNRI-Python-GPL-Compatible.svg]]

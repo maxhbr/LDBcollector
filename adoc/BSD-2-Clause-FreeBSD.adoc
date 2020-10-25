@@ -213,3 +213,9 @@ either expressed or implied, of the FreeBSD Project.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/BSD-2-Clause-FreeBSD.svg[image,title="dot"]

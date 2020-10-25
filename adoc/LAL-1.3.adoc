@@ -266,3 +266,9 @@ Cette licence est rédigée en référence au droit français et à la Conventio
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/LAL-1.3.svg[image,title="dot"]

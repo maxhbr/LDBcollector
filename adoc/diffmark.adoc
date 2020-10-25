@@ -188,3 +188,9 @@ License List])
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/diffmark.svg[image,title="dot"]

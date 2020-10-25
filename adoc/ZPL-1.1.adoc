@@ -305,3 +305,9 @@ the accompanying credits file.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/ZPL-1.1.svg[image,title="dot"]

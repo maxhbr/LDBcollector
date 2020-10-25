@@ -321,3 +321,9 @@ X Window System is a trademark of X Consortium, Inc.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/ICU.svg[image,title="dot"]

@@ -362,3 +362,9 @@ remain with the copyright holders.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/ECL-1.0.svg[image,title="dot"]

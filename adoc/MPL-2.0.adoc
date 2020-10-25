@@ -1135,3 +1135,9 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/MPL-2.0.svg[image,title="dot"]

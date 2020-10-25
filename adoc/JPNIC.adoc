@@ -187,3 +187,9 @@ Chiyoda-ku, Tokyo 101-0047, Japan.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/JPNIC.svg[image,title="dot"]

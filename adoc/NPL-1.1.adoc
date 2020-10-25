@@ -251,3 +251,9 @@ Alternatively, the contents of this file may be used under the terms of the   li
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/NPL-1.1.svg[image,title="dot"]

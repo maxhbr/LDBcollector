@@ -447,3 +447,9 @@ Display of Attribution Information is [required/not required] in Larger Works wh
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CPAL-1.0.svg[image,title="dot"]

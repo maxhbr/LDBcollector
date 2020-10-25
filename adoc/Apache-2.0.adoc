@@ -1021,3 +1021,9 @@ PATENT HINTS Yes
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Apache-2.0.svg[image,title="dot"]

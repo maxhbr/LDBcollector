@@ -786,3 +786,9 @@ This Agreement is governed by the laws of the State of New York and the intellec
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/EPL-1.0.svg[image,title="dot"]

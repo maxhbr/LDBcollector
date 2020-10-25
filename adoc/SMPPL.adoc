@@ -158,3 +158,9 @@ Copyright © 1997-2002 National Security Agency
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SMPPL.svg[image,title="dot"]

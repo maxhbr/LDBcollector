@@ -641,3 +641,9 @@ under the License."
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Watcom-1.0.svg[image,title="dot"]

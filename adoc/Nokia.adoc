@@ -666,3 +666,9 @@ Copyright © <year> Nokia and others. All Rights Reserved.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Nokia.svg[image,title="dot"]

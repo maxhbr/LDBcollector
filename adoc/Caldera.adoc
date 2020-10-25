@@ -177,3 +177,9 @@ OF SUCH DAMAGE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Caldera.svg[image,title="dot"]

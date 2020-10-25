@@ -157,3 +157,9 @@ bug reports on your work be reported to you.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Noweb.svg[image,title="dot"]

@@ -334,3 +334,9 @@ conditions would be files that contain the text of copyright notices.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/LPPL-1.0.svg[image,title="dot"]

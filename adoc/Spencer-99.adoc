@@ -211,3 +211,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Spencer-99.svg[image,title="dot"]

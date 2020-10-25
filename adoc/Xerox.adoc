@@ -210,3 +210,9 @@ OF THE POSSIBILITY OF SUCH DAMAGES.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Xerox.svg[image,title="dot"]

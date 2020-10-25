@@ -367,3 +367,9 @@ The code released under the CDDL shall be governed by the laws of the State of C
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CDDL-1.1.svg[image,title="dot"]

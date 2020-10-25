@@ -347,3 +347,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/NBPL-1.0.svg]]

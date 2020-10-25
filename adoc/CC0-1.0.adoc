@@ -602,3 +602,9 @@ express Statement of Purpose.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/CC0-1.0.svg[image,title="dot"]

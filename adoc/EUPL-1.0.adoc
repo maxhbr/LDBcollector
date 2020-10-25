@@ -334,3 +334,9 @@ This licence shall be governed by the Belgian law if:
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/EUPL-1.0.svg[image,title="dot"]

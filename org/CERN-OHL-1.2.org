@@ -223,3 +223,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CERN-OHL-1.2.svg]]

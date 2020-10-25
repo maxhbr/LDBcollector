@@ -421,3 +421,9 @@ Source Code: The preferred form for making modifications to the Licensed Product
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Motosoto.svg[image,title="dot"]

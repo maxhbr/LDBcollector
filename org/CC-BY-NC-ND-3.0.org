@@ -552,3 +552,9 @@ Unported (CC-BY-NC-ND-3.0)
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/CC-BY-NC-ND-3.0.svg]]

@@ -139,3 +139,9 @@ AFFERO GENERAL PUBLIC LICENSE for more details.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/AGPL-1.0-or-later.svg[image,title="dot"]

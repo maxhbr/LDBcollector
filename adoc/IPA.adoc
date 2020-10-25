@@ -350,3 +350,9 @@ Article 5 (Governing Law)
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/IPA.svg[image,title="dot"]

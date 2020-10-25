@@ -213,3 +213,9 @@ improvements that may be of general interest.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/TU-Berlin-1.0.svg[image,title="dot"]

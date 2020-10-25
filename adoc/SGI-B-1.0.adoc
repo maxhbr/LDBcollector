@@ -155,3 +155,9 @@ SGI FREE SOFTWARE LICENSE B
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SGI-B-1.0.svg[image,title="dot"]

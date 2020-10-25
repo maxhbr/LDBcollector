@@ -236,3 +236,9 @@
       ]
   }
 #+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/OLDAP-2.7.svg]]

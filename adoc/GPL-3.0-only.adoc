@@ -1756,3 +1756,9 @@ Public License instead of this License.  But first, please read
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/GPL-3.0-only.svg[image,title="dot"]

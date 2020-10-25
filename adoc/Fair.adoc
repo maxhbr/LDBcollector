@@ -350,3 +350,9 @@ DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/Fair.svg[image,title="dot"]

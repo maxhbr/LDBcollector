@@ -184,3 +184,9 @@ David Megginson, Megginson Technologies Ltd.
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SAX-PD.svg[image,title="dot"]

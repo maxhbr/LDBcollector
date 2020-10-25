@@ -464,3 +464,9 @@ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/WTFPL.svg[image,title="dot"]

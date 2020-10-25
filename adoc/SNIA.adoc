@@ -252,3 +252,9 @@ Read more about this license at http://www.snia.org/smi/developers/open_source/
     ]
 }
 ....
+
+'''''
+
+=== Dot Cluster Graph
+
+image:../dot/SNIA.svg[image,title="dot"]
