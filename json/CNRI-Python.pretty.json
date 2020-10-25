@@ -36,29 +36,6 @@
             },
             "domain_content": false
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "CNRI-Python",
-                    "CNRI-Python",
-                    "CNRI Python License",
-                    "scancode://cnri-python-1.6",
-                    "CNRI Python 1.6",
-                    "CNRI portion of the multi-part Python License",
-                    "License :: OSI Approved :: Python License (CNRI Python License)"
-                ],
-                "__impliedId": "CNRI-Python"
-            },
-            "shortname": "CNRI-Python",
-            "otherNames": [
-                "CNRI-Python",
-                "CNRI Python License",
-                "scancode://cnri-python-1.6",
-                "CNRI Python 1.6",
-                "CNRI portion of the multi-part Python License",
-                "License :: OSI Approved :: Python License (CNRI Python License)"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CNRI Python License",

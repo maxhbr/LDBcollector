@@ -17,22 +17,8 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/OGTSL.html "SPDX"))
 
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
-    Fedora is permitted to use this license. It is either non-free or
-    deprecated. (source: [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 URLs
 ----
@@ -147,27 +133,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OGTSL",
-                        "OGTSL",
-                        "Open Group Test Suite License",
-                        "scancode://opengroup",
-                        "The Open Group Test Suite License (OGTSL)",
-                        "License :: OSI Approved :: Open Group Test Suite License"
-                    ],
-                    "__impliedId": "OGTSL"
-                },
-                "shortname": "OGTSL",
-                "otherNames": [
-                    "OGTSL",
-                    "Open Group Test Suite License",
-                    "scancode://opengroup",
-                    "The Open Group Test Suite License (OGTSL)",
-                    "License :: OSI Approved :: Open Group Test Suite License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Group Test Suite License",
@@ -210,29 +175,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "OGTSL"
-            },
-            "Fedora Project Wiki": {
-                "rating": "Bad",
-                "Upstream URL": "http://opensource.org/licenses/opengroup.php",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Open Group Test Suite License",
-                "FSF Free?": "No",
-                "_implications": {
-                    "__impliedNames": [
-                        "Open Group Test Suite License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "NegativeJudgement",
-                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                            }
-                        ]
-                    ]
-                },
-                "Notes": "Same flaws as Artistic 1.0"
             },
             "Scancode": {
                 "otherUrls": [
@@ -340,40 +282,6 @@ Raw Data
                     ]
                 }
             },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Open Group Test Suite License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Open Group Test Suite License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt"
-                        ]
-                    ]
-                }
-            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -431,24 +339,10 @@ Raw Data
                 }
             ],
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "NegativeJudgement",
-                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                }
-            ],
-            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],
@@ -460,10 +354,6 @@ Raw Data
             [
                 "Scancode",
                 "WeakCopyleft"
-            ],
-            [
-                "ifrOSS",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",

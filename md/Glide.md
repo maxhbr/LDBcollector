@@ -12,10 +12,6 @@
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -292,27 +288,7 @@ Raw Data
             "3DFX GLIDE"
         ],
         "__impliedId": "Glide",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Glide",
-                        "Glide",
-                        "3dfx Glide License",
-                        "scancode://glide",
-                        "3DFX GLIDE"
-                    ],
-                    "__impliedId": "Glide"
-                },
-                "shortname": "Glide",
-                "otherNames": [
-                    "Glide",
-                    "3dfx Glide License",
-                    "scancode://glide",
-                    "3DFX GLIDE"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "3dfx Glide License",
@@ -341,32 +317,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Glide"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://www.users.on.net/~triforce/glidexp/COPYING.txt",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "Glide",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "3dfx Glide License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "3dfx Glide License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -405,15 +355,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

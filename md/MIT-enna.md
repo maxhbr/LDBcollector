@@ -13,10 +13,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -68,25 +64,7 @@ Raw Data
             "scancode://enna"
         ],
         "__impliedId": "MIT-enna",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "MIT-enna",
-                        "MIT-enna",
-                        "enna License",
-                        "scancode://enna"
-                    ],
-                    "__impliedId": "MIT-enna"
-                },
-                "shortname": "MIT-enna",
-                "otherNames": [
-                    "MIT-enna",
-                    "enna License",
-                    "scancode://enna"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "enna License",
@@ -115,32 +93,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MIT-enna"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT#enna",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MIT",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "enna License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "enna License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -220,13 +172,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

@@ -7,25 +7,6 @@
     ],
     "__impliedId": "LiLiQ-R-1.1",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "LiLiQ-R-1.1",
-                    "LiLiQ-R-1.1",
-                    "Licence Libre du Québec – Réciprocité version 1.1",
-                    "scancode://liliq-r-1.1",
-                    "Licence Libre du Québec – Réciprocité, Version 1.1"
-                ],
-                "__impliedId": "LiLiQ-R-1.1"
-            },
-            "shortname": "LiLiQ-R-1.1",
-            "otherNames": [
-                "LiLiQ-R-1.1",
-                "Licence Libre du Québec – Réciprocité version 1.1",
-                "scancode://liliq-r-1.1",
-                "Licence Libre du Québec – Réciprocité, Version 1.1"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Licence Libre du Québec – Réciprocité version 1.1",

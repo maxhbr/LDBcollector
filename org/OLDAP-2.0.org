@@ -90,25 +90,6 @@
       ],
       "__impliedId": "OLDAP-2.0",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "OLDAP-2.0",
-                      "OLDAP-2.0",
-                      "Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)",
-                      "scancode://openldap-2.0",
-                      "OpenLDAP Public License 2.0"
-                  ],
-                  "__impliedId": "OLDAP-2.0"
-              },
-              "shortname": "OLDAP-2.0",
-              "otherNames": [
-                  "OLDAP-2.0",
-                  "Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)",
-                  "scancode://openldap-2.0",
-                  "OpenLDAP Public License 2.0"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)",

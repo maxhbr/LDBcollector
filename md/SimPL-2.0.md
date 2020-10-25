@@ -107,29 +107,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SimPL-2.0",
-                        "SimPL-2.0",
-                        "Simple Public License 2.0",
-                        "scancode://simpl-2.0",
-                        "SimPL 2.0",
-                        "Simple-2.0",
-                        "Simple Public License (SimPL-2.0)"
-                    ],
-                    "__impliedId": "SimPL-2.0"
-                },
-                "shortname": "SimPL-2.0",
-                "otherNames": [
-                    "SimPL-2.0",
-                    "Simple Public License 2.0",
-                    "scancode://simpl-2.0",
-                    "SimPL 2.0",
-                    "Simple-2.0",
-                    "Simple Public License (SimPL-2.0)"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Simple Public License 2.0",

@@ -91,27 +91,6 @@ Raw Data
         "__impliedId": "NPL-1.1",
         "__hasPatentHint": false,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "NPL-1.1",
-                        "NPL-1.1",
-                        "Netscape Public License v1.1",
-                        "scancode://npl-1.1",
-                        "NPL 1.1",
-                        "Netscape Public License 1.1"
-                    ],
-                    "__impliedId": "NPL-1.1"
-                },
-                "shortname": "NPL-1.1",
-                "otherNames": [
-                    "NPL-1.1",
-                    "Netscape Public License v1.1",
-                    "scancode://npl-1.1",
-                    "NPL 1.1",
-                    "Netscape Public License 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Netscape Public License v1.1",

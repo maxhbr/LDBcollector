@@ -164,23 +164,6 @@ between the parties.
     ],
     "__impliedId": "Unicode-TOU",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Unicode-TOU",
-                    "Unicode-TOU",
-                    "Unicode Terms of Use",
-                    "scancode://unicode-tou"
-                ],
-                "__impliedId": "Unicode-TOU"
-            },
-            "shortname": "Unicode-TOU",
-            "otherNames": [
-                "Unicode-TOU",
-                "Unicode Terms of Use",
-                "scancode://unicode-tou"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Unicode Terms of Use",

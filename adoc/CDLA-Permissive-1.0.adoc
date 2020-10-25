@@ -126,25 +126,6 @@ Section 7.  Miscellaneous
     ],
     "__impliedId": "CDLA-Permissive-1.0",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "CDLA-Permissive-1.0",
-                    "CDLA-Permissive-1.0",
-                    "Community Data License Agreement Permissive 1.0",
-                    "scancode://cdla-permissive-1.0",
-                    "CDLA Permissive 1.0"
-                ],
-                "__impliedId": "CDLA-Permissive-1.0"
-            },
-            "shortname": "CDLA-Permissive-1.0",
-            "otherNames": [
-                "CDLA-Permissive-1.0",
-                "Community Data License Agreement Permissive 1.0",
-                "scancode://cdla-permissive-1.0",
-                "CDLA Permissive 1.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Community Data License Agreement Permissive 1.0",

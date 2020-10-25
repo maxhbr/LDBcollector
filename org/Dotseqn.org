@@ -1,21 +1,17 @@
 * Dotseqn License (Dotseqn)
 
-| Key              | Value             |
-|------------------+-------------------|
-| Fullname         | Dotseqn License   |
-| Shortname        | Dotseqn           |
-| Rating           | Unknown           |
-| Classification   | NoCopyleft        |
+| Key              | Value                                          |
+|------------------+------------------------------------------------|
+| Fullname         | Dotseqn License                                |
+| Shortname        | Dotseqn                                        |
+| Rating           | Unknown, probably Attention or Stop or No-Go   |
+| Classification   | NoCopyleft                                     |
 
 *Other Names:*
 
 - =scancode://dotseqn=
 
 ** Comments on (easy) usability
-
-- *↑*This software Licenses is OK for Fedora (source:
-  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]])
 
 ** URLs
 
@@ -43,25 +39,7 @@
           "scancode://dotseqn"
       ],
       "__impliedId": "Dotseqn",
-      "__isFsfFree": true,
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "Dotseqn",
-                      "Dotseqn",
-                      "Dotseqn License",
-                      "scancode://dotseqn"
-                  ],
-                  "__impliedId": "Dotseqn"
-              },
-              "shortname": "Dotseqn",
-              "otherNames": [
-                  "Dotseqn",
-                  "Dotseqn License",
-                  "scancode://dotseqn"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Dotseqn License",
@@ -90,32 +68,6 @@
                   ]
               },
               "spdxLicenseId": "Dotseqn"
-          },
-          "Fedora Project Wiki": {
-              "GPLv2 Compat?": "NO",
-              "rating": "Good",
-              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Dotseqn",
-              "GPLv3 Compat?": "NO",
-              "Short Name": "Dotseqn",
-              "licenseType": "license",
-              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-              "Full Name": "Dotseqn License",
-              "FSF Free?": "Yes",
-              "_implications": {
-                  "__impliedNames": [
-                      "Dotseqn License"
-                  ],
-                  "__isFsfFree": true,
-                  "__impliedJudgement": [
-                      [
-                          "Fedora Project Wiki",
-                          {
-                              "tag": "PositiveJudgement",
-                              "contents": "This software Licenses is OK for Fedora"
-                          }
-                      ]
-                  ]
-              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -154,15 +106,6 @@
               }
           }
       },
-      "__impliedJudgement": [
-          [
-              "Fedora Project Wiki",
-              {
-                  "tag": "PositiveJudgement",
-                  "contents": "This software Licenses is OK for Fedora"
-              }
-          ]
-      ],
       "__impliedCopyleft": [
           [
               "Scancode",

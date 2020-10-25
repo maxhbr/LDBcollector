@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -67,27 +63,7 @@ Raw Data
             "Standard ML of New Jersey"
         ],
         "__impliedId": "SMLNJ",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SMLNJ",
-                        "SMLNJ",
-                        "Standard ML of New Jersey License",
-                        "scancode://standard-ml-nj",
-                        "Standard ML of New Jersey"
-                    ],
-                    "__impliedId": "SMLNJ"
-                },
-                "shortname": "SMLNJ",
-                "otherNames": [
-                    "SMLNJ",
-                    "Standard ML of New Jersey License",
-                    "scancode://standard-ml-nj",
-                    "Standard ML of New Jersey"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Standard ML of New Jersey License",
@@ -116,32 +92,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "SMLNJ"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MIT",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Standard ML of New Jersey License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Standard ML of New Jersey License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -237,13 +187,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

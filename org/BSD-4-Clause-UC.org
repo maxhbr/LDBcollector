@@ -159,25 +159,6 @@
           ]
       ],
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "BSD-4-Clause-UC",
-                      "BSD-4-Clause-UC",
-                      "BSD-4-Clause (University of California-Specific)",
-                      "scancode://bsd-original-uc",
-                      "BSD-Original-UC"
-                  ],
-                  "__impliedId": "BSD-4-Clause-UC"
-              },
-              "shortname": "BSD-4-Clause-UC",
-              "otherNames": [
-                  "BSD-4-Clause-UC",
-                  "BSD-4-Clause (University of California-Specific)",
-                  "scancode://bsd-original-uc",
-                  "BSD-Original-UC"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "BSD-4-Clause (University of California-Specific)",

@@ -96,25 +96,6 @@
       ],
       "__impliedId": "OLDAP-2.2.1",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "OLDAP-2.2.1",
-                      "OLDAP-2.2.1",
-                      "Open LDAP Public License v2.2.1",
-                      "scancode://openldap-2.2.1",
-                      "OpenLDAP Public License 2.2.1"
-                  ],
-                  "__impliedId": "OLDAP-2.2.1"
-              },
-              "shortname": "OLDAP-2.2.1",
-              "otherNames": [
-                  "OLDAP-2.2.1",
-                  "Open LDAP Public License v2.2.1",
-                  "scancode://openldap-2.2.1",
-                  "OpenLDAP Public License 2.2.1"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Open LDAP Public License v2.2.1",

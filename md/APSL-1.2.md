@@ -20,11 +20,6 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
-    Fedora is permitted to use this license. It is either non-free or
-    deprecated. (source: [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -319,25 +314,6 @@ Raw Data
             "Apple Public Source License (APSL)"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "APSL-1.2",
-                        "APSL-1.2",
-                        "Apple Public Source License 1.2",
-                        "scancode://apsl-1.2",
-                        "APSL 1.2"
-                    ],
-                    "__impliedId": "APSL-1.2"
-                },
-                "shortname": "APSL-1.2",
-                "otherNames": [
-                    "APSL-1.2",
-                    "Apple Public Source License 1.2",
-                    "scancode://apsl-1.2",
-                    "APSL 1.2"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Apple Public Source License 1.2",
@@ -375,29 +351,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "APSL-1.2"
-            },
-            "Fedora Project Wiki": {
-                "rating": "Bad",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.2",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Apple Public Source License 1.2",
-                "FSF Free?": "No",
-                "_implications": {
-                    "__impliedNames": [
-                        "Apple Public Source License 1.2"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "NegativeJudgement",
-                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                            }
-                        ]
-                    ]
-                },
-                "Notes": null
             },
             "Scancode": {
                 "otherUrls": [
@@ -486,13 +439,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "This license is not compatible with the DebianFreeSoftwareGuidelines (DFSG-unfree)"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "NegativeJudgement",
-                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
                 }
             ],
             [

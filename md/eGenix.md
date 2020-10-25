@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -88,27 +84,7 @@ Raw Data
             "eGenix Public License 1.1.0"
         ],
         "__impliedId": "eGenix",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "eGenix",
-                        "eGenix",
-                        "eGenix.com Public License 1.1.0",
-                        "scancode://egenix-1.1.0",
-                        "eGenix Public License 1.1.0"
-                    ],
-                    "__impliedId": "eGenix"
-                },
-                "shortname": "eGenix",
-                "otherNames": [
-                    "eGenix",
-                    "eGenix.com Public License 1.1.0",
-                    "scancode://egenix-1.1.0",
-                    "eGenix Public License 1.1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "eGenix.com Public License 1.1.0",
@@ -142,32 +118,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "eGenix"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "eGenix",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "eGenix.com Public License 1.1.0",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "eGenix.com Public License 1.1.0"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -247,13 +197,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

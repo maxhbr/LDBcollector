@@ -12,10 +12,6 @@ CrystalStacker License (CrystalStacker)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -53,27 +49,7 @@ Raw Data
             "Crystal Stacker License"
         ],
         "__impliedId": "CrystalStacker",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CrystalStacker",
-                        "CrystalStacker",
-                        "CrystalStacker License",
-                        "scancode://crystal-stacker",
-                        "Crystal Stacker License"
-                    ],
-                    "__impliedId": "CrystalStacker"
-                },
-                "shortname": "CrystalStacker",
-                "otherNames": [
-                    "CrystalStacker",
-                    "CrystalStacker License",
-                    "scancode://crystal-stacker",
-                    "Crystal Stacker License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CrystalStacker License",
@@ -102,32 +78,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "CrystalStacker"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/CrystalStacker",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "Crystal Stacker",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Crystal Stacker License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Crystal Stacker License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -207,13 +157,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

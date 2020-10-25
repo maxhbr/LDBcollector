@@ -13,11 +13,11 @@ GNU Library General Public License v2 only (LGPL-2.0-only)
 
 -   `LGPL 2.0 or later`
 
--   `GNU Library General Public License 2.0`
-
 -   `scancode://lgpl-2.0`
 
 -   `LGPL 2.0`
+
+-   `GNU Library General Public License 2.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -69,44 +69,21 @@ Raw Data
 
     {
         "__impliedNames": [
+            "LGPL-2.0-only",
+            "GNU Library General Public License v2 only",
             "LGPL-2.0-or-later",
             "GNU Library General Public License v2 or later",
             "scancode://lgpl-2.0-plus",
             "LGPL 2.0 or later",
-            "GNU Library General Public License 2.0",
-            "LGPL-2.0-only",
-            "GNU Library General Public License v2 only",
             "scancode://lgpl-2.0",
-            "LGPL 2.0"
+            "LGPL 2.0",
+            "GNU Library General Public License 2.0"
         ],
         "__impliedId": "LGPL-2.0-only",
         "__impliedAmbiguousNames": [
             "The GNU Lesser General Public License (LGPL)"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "LGPL-2.0-or-later",
-                        "LGPL-2.0-or-later",
-                        "GNU Library General Public License v2 or later",
-                        "scancode://lgpl-2.0-plus",
-                        "LGPL 2.0 or later",
-                        "GNU Library General Public License 2.0",
-                        "LGPL-2.0-only"
-                    ],
-                    "__impliedId": "LGPL-2.0-or-later"
-                },
-                "shortname": "LGPL-2.0-or-later",
-                "otherNames": [
-                    "LGPL-2.0-or-later",
-                    "GNU Library General Public License v2 or later",
-                    "scancode://lgpl-2.0-plus",
-                    "LGPL 2.0 or later",
-                    "GNU Library General Public License 2.0",
-                    "LGPL-2.0-only"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Library General Public License v2 only",

@@ -56,10 +56,6 @@
 - *↑*Rating is: Silver (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- *↑*This software Licenses is OK for Fedora (source:
-  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]])
-
 ** Obligations
 
 | Rights:            | Conditions:           | Limitations:      |
@@ -367,7 +363,6 @@
           "ASL 2.0"
       ],
       "__impliedId": "Apache-2.0",
-      "__isFsfFree": true,
       "__impliedAmbiguousNames": [
           "The Apache Software License (ASL)"
       ],
@@ -399,37 +394,6 @@
                   ]
               },
               "domain_content": false
-          },
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "Apache-2.0",
-                      "Apache-2.0",
-                      "Apache License 2.0",
-                      "scancode://apache-2.0",
-                      "Apache 2.0",
-                      "apache-2.0",
-                      "Apache License, Version 2.0",
-                      "License :: OSI Approved :: Apache Software License",
-                      "Apache Software License 2.0",
-                      "Apache (v2.0)",
-                      "ASL 2.0"
-                  ],
-                  "__impliedId": "Apache-2.0"
-              },
-              "shortname": "Apache-2.0",
-              "otherNames": [
-                  "Apache-2.0",
-                  "Apache License 2.0",
-                  "scancode://apache-2.0",
-                  "Apache 2.0",
-                  "apache-2.0",
-                  "Apache License, Version 2.0",
-                  "License :: OSI Approved :: Apache Software License",
-                  "Apache Software License 2.0",
-                  "Apache (v2.0)",
-                  "ASL 2.0"
-              ]
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -483,32 +447,6 @@
                       "Apache-2.0"
                   ],
                   "__hasPatentHint": true
-              }
-          },
-          "Fedora Project Wiki": {
-              "GPLv2 Compat?": "NO",
-              "rating": "Good",
-              "Upstream URL": "http://www.apache.org/licenses/LICENSE-2.0",
-              "GPLv3 Compat?": "Yes",
-              "Short Name": "ASL 2.0",
-              "licenseType": "license",
-              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-              "Full Name": "Apache Software License 2.0",
-              "FSF Free?": "Yes",
-              "_implications": {
-                  "__impliedNames": [
-                      "Apache Software License 2.0"
-                  ],
-                  "__isFsfFree": true,
-                  "__impliedJudgement": [
-                      [
-                          "Fedora Project Wiki",
-                          {
-                              "tag": "PositiveJudgement",
-                              "contents": "This software Licenses is OK for Fedora"
-                          }
-                      ]
-                  ]
               }
           },
           "Scancode": {
@@ -959,13 +897,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Older versions of the Apache License (1.0 and 1.1) are also DFSG free, but the Apache Software Foundation recommends using the Apache 2.0 license instead."
-              }
-          ],
-          [
-              "Fedora Project Wiki",
-              {
-                  "tag": "PositiveJudgement",
-                  "contents": "This software Licenses is OK for Fedora"
               }
           ],
           [

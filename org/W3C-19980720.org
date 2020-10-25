@@ -105,25 +105,6 @@
       ],
       "__impliedId": "W3C-19980720",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "W3C-19980720",
-                      "W3C-19980720",
-                      "W3C Software Notice and License (1998-07-20)",
-                      "scancode://w3c-software-19980720",
-                      "W3C-SOFTWARE-19980720"
-                  ],
-                  "__impliedId": "W3C-19980720"
-              },
-              "shortname": "W3C-19980720",
-              "otherNames": [
-                  "W3C-19980720",
-                  "W3C Software Notice and License (1998-07-20)",
-                  "scancode://w3c-software-19980720",
-                  "W3C-SOFTWARE-19980720"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "W3C Software Notice and License (1998-07-20)",

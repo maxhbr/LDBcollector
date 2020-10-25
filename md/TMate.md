@@ -10,10 +10,6 @@ TMate Open Source License (TMate)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -84,25 +80,7 @@ Raw Data
             "scancode://tmate"
         ],
         "__impliedId": "TMate",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "TMate",
-                        "TMate",
-                        "TMate Open Source License",
-                        "scancode://tmate"
-                    ],
-                    "__impliedId": "TMate"
-                },
-                "shortname": "TMate",
-                "otherNames": [
-                    "TMate",
-                    "TMate Open Source License",
-                    "scancode://tmate"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TMate Open Source License",
@@ -131,32 +109,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "TMate"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://svnkit.com/license.html",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "TMate",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "TMate Open Source License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "TMate Open Source License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -195,15 +147,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

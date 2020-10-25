@@ -339,25 +339,6 @@ Raw Data
         ],
         "__impliedId": "LPPL-1.2",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "LPPL-1.2",
-                        "LPPL-1.2",
-                        "LaTeX Project Public License v1.2",
-                        "scancode://lppl-1.2",
-                        "LPPL 1.2"
-                    ],
-                    "__impliedId": "LPPL-1.2"
-                },
-                "shortname": "LPPL-1.2",
-                "otherNames": [
-                    "LPPL-1.2",
-                    "LaTeX Project Public License v1.2",
-                    "scancode://lppl-1.2",
-                    "LPPL 1.2"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "LaTeX Project Public License v1.2",

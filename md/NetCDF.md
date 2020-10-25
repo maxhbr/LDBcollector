@@ -13,10 +13,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -71,27 +67,7 @@ Raw Data
             "NetCDF License"
         ],
         "__impliedId": "NetCDF",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "NetCDF",
-                        "NetCDF",
-                        "NetCDF license",
-                        "scancode://netcdf",
-                        "NetCDF License"
-                    ],
-                    "__impliedId": "NetCDF"
-                },
-                "shortname": "NetCDF",
-                "otherNames": [
-                    "NetCDF",
-                    "NetCDF license",
-                    "scancode://netcdf",
-                    "NetCDF License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NetCDF license",
@@ -120,32 +96,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "NetCDF"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://www.unidata.ucar.edu/software/netcdf/copyright.html",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "NetCDF",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "NetCDF license",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "NetCDF license"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -225,13 +175,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

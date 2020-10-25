@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |psfrag License
 |Shortname |psfrag
-|Rating |Unknown
+|Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
 |===
 
@@ -14,10 +14,6 @@
 * `+scancode://psfrag+`
 
 === Comments on (easy) usability
-
-* **↑**This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
 
 === URLs
 
@@ -47,23 +43,6 @@ changes and their authors must be explicitly stated HERE.
     ],
     "__impliedId": "psfrag",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "psfrag",
-                    "psfrag",
-                    "psfrag License",
-                    "scancode://psfrag"
-                ],
-                "__impliedId": "psfrag"
-            },
-            "shortname": "psfrag",
-            "otherNames": [
-                "psfrag",
-                "psfrag License",
-                "scancode://psfrag"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "psfrag License",
@@ -92,31 +71,6 @@ changes and their authors must be explicitly stated HERE.
                 ]
             },
             "spdxLicenseId": "psfrag"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/psfrag",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "psfrag",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "psfrag License",
-            "FSF Free?": "Yes (but only for tex)",
-            "_implications": {
-                "__impliedNames": [
-                    "psfrag License"
-                ],
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -155,15 +109,6 @@ changes and their authors must be explicitly stated HERE.
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

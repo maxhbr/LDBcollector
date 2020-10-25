@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -103,27 +99,7 @@ Raw Data
             "Indiana Extreme License 1.2"
         ],
         "__impliedId": "xpp",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "xpp",
-                        "xpp",
-                        "XPP License",
-                        "scancode://indiana-extreme-1.2",
-                        "Indiana Extreme License 1.2"
-                    ],
-                    "__impliedId": "xpp"
-                },
-                "shortname": "xpp",
-                "otherNames": [
-                    "xpp",
-                    "XPP License",
-                    "scancode://indiana-extreme-1.2",
-                    "Indiana Extreme License 1.2"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "XPP License",
@@ -152,32 +128,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "xpp"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/xpp",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "xpp",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "XPP License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "XPP License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -257,13 +207,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

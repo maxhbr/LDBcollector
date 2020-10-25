@@ -240,25 +240,6 @@ Raw Data
         ],
         "__impliedId": "LPPL-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "LPPL-1.0",
-                        "LPPL-1.0",
-                        "LaTeX Project Public License v1.0",
-                        "scancode://lppl-1.0",
-                        "LPPL 1.0"
-                    ],
-                    "__impliedId": "LPPL-1.0"
-                },
-                "shortname": "LPPL-1.0",
-                "otherNames": [
-                    "LPPL-1.0",
-                    "LaTeX Project Public License v1.0",
-                    "scancode://lppl-1.0",
-                    "LPPL 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "LaTeX Project Public License v1.0",

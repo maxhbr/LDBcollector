@@ -110,25 +110,6 @@ Raw Data
         ],
         "__impliedId": "ZPL-1.1",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "ZPL-1.1",
-                        "ZPL-1.1",
-                        "Zope Public License 1.1",
-                        "scancode://zpl-1.1",
-                        "ZPL 1.1"
-                    ],
-                    "__impliedId": "ZPL-1.1"
-                },
-                "shortname": "ZPL-1.1",
-                "otherNames": [
-                    "ZPL-1.1",
-                    "Zope Public License 1.1",
-                    "scancode://zpl-1.1",
-                    "ZPL 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zope Public License 1.1",

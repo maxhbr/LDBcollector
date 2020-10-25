@@ -508,29 +508,6 @@
               },
               "domain_content": true
           },
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "CC-BY-4.0",
-                      "CC-BY-4.0",
-                      "Creative Commons Attribution 4.0 International",
-                      "scancode://cc-by-4.0",
-                      "cc-by-4.0",
-                      "CC-BY 4.0",
-                      "Creative Commons Attribution 4.0"
-                  ],
-                  "__impliedId": "CC-BY-4.0"
-              },
-              "shortname": "CC-BY-4.0",
-              "otherNames": [
-                  "CC-BY-4.0",
-                  "Creative Commons Attribution 4.0 International",
-                  "scancode://cc-by-4.0",
-                  "cc-by-4.0",
-                  "CC-BY 4.0",
-                  "Creative Commons Attribution 4.0"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Creative Commons Attribution 4.0 International",

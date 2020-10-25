@@ -129,27 +129,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Unlicense",
-                        "Unlicense",
-                        "The Unlicense",
-                        "scancode://unlicense",
-                        "unlicense",
-                        "Unlicense 1"
-                    ],
-                    "__impliedId": "Unlicense"
-                },
-                "shortname": "Unlicense",
-                "otherNames": [
-                    "Unlicense",
-                    "The Unlicense",
-                    "scancode://unlicense",
-                    "unlicense",
-                    "Unlicense 1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "The Unlicense",

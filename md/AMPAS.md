@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -56,27 +52,7 @@ Raw Data
             "AMPAS BSD-Style License"
         ],
         "__impliedId": "AMPAS",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "AMPAS",
-                        "AMPAS",
-                        "Academy of Motion Picture Arts and Sciences BSD",
-                        "scancode://ampas",
-                        "AMPAS BSD-Style License"
-                    ],
-                    "__impliedId": "AMPAS"
-                },
-                "shortname": "AMPAS",
-                "otherNames": [
-                    "AMPAS",
-                    "Academy of Motion Picture Arts and Sciences BSD",
-                    "scancode://ampas",
-                    "AMPAS BSD-Style License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Academy of Motion Picture Arts and Sciences BSD",
@@ -105,32 +81,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "AMPAS"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "AMPAS BSD",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Academy of Motion Picture Arts and Sciences BSD",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Academy of Motion Picture Arts and Sciences BSD"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -210,13 +160,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

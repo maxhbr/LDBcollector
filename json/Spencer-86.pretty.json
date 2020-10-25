@@ -7,25 +7,6 @@
     ],
     "__impliedId": "Spencer-86",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Spencer-86",
-                    "Spencer-86",
-                    "Spencer License 86",
-                    "scancode://regexp",
-                    "Regexp License"
-                ],
-                "__impliedId": "Spencer-86"
-            },
-            "shortname": "Spencer-86",
-            "otherNames": [
-                "Spencer-86",
-                "Spencer License 86",
-                "scancode://regexp",
-                "Regexp License"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Spencer License 86",

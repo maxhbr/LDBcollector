@@ -431,25 +431,6 @@ Raw Data
         ],
         "__impliedId": "LPPL-1.3a",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "LPPL-1.3a",
-                        "LPPL-1.3a",
-                        "LaTeX Project Public License v1.3a",
-                        "scancode://lppl-1.3a",
-                        "LPPL 1.3a"
-                    ],
-                    "__impliedId": "LPPL-1.3a"
-                },
-                "shortname": "LPPL-1.3a",
-                "otherNames": [
-                    "LPPL-1.3a",
-                    "LaTeX Project Public License v1.3a",
-                    "scancode://lppl-1.3a",
-                    "LPPL 1.3a"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "LaTeX Project Public License v1.3a",

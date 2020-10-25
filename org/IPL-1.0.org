@@ -164,31 +164,6 @@
               },
               "domain_content": false
           },
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "IPL-1.0",
-                      "IPL-1.0",
-                      "IBM Public License v1.0",
-                      "scancode://ibmpl-1.0",
-                      "IPL 1.0",
-                      "IBM Public License, Version 1.0",
-                      "License :: OSI Approved :: IBM Public License",
-                      "IBM Public License 1.0"
-                  ],
-                  "__impliedId": "IPL-1.0"
-              },
-              "shortname": "IPL-1.0",
-              "otherNames": [
-                  "IPL-1.0",
-                  "IBM Public License v1.0",
-                  "scancode://ibmpl-1.0",
-                  "IPL 1.0",
-                  "IBM Public License, Version 1.0",
-                  "License :: OSI Approved :: IBM Public License",
-                  "IBM Public License 1.0"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "IBM Public License v1.0",

@@ -501,25 +501,6 @@ Raw Data
                 },
                 "domain_content": true
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-NC-4.0",
-                        "CC-BY-NC-4.0",
-                        "Creative Commons Attribution Non Commercial 4.0 International",
-                        "scancode://cc-by-nc-4.0",
-                        "Creative Commons Attribution-NonCommercial 4.0"
-                    ],
-                    "__impliedId": "CC-BY-NC-4.0"
-                },
-                "shortname": "CC-BY-NC-4.0",
-                "otherNames": [
-                    "CC-BY-NC-4.0",
-                    "Creative Commons Attribution Non Commercial 4.0 International",
-                    "scancode://cc-by-nc-4.0",
-                    "Creative Commons Attribution-NonCommercial 4.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial 4.0 International",

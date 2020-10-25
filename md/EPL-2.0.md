@@ -25,10 +25,6 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/EPL-2.0.html "SPDX"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   Google Classification is RECIPROCAL (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -420,7 +416,6 @@ Raw Data
             "epl-2.0"
         ],
         "__impliedId": "EPL-2.0",
-        "__isFsfFree": true,
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -449,27 +444,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "EPL-2.0",
-                        "EPL-2.0",
-                        "Eclipse Public License 2.0",
-                        "scancode://epl-2.0",
-                        "EPL 2.0",
-                        "epl-2.0"
-                    ],
-                    "__impliedId": "EPL-2.0"
-                },
-                "shortname": "EPL-2.0",
-                "otherNames": [
-                    "EPL-2.0",
-                    "Eclipse Public License 2.0",
-                    "scancode://epl-2.0",
-                    "EPL 2.0",
-                    "epl-2.0"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -530,32 +504,6 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "Copyleft"
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://www.eclipse.org/legal/epl-v20.html",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "EPL-2.0",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Eclipse Public License 2.0",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Eclipse Public License 2.0"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
                 }
             },
             "Scancode": {
@@ -867,13 +815,6 @@ Raw Data
             }
         },
         "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
             [
                 "Google OSS Policy",
                 {

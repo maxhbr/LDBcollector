@@ -114,23 +114,6 @@ Raw Data
         ],
         "__impliedId": "NLOD-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "NLOD-1.0",
-                        "NLOD-1.0",
-                        "Norwegian Licence for Open Government Data",
-                        "scancode://nlod-1.0"
-                    ],
-                    "__impliedId": "NLOD-1.0"
-                },
-                "shortname": "NLOD-1.0",
-                "otherNames": [
-                    "NLOD-1.0",
-                    "Norwegian Licence for Open Government Data",
-                    "scancode://nlod-1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Norwegian Licence for Open Government Data",

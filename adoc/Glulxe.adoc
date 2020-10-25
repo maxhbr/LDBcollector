@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |Glulxe License
 |Shortname |Glulxe
-|Rating |Unknown
+|Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
 |===
 
@@ -14,10 +14,6 @@
 * `+scancode://glulxe+`
 
 === Comments on (easy) usability
-
-* **↑**This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
 
 === URLs
 
@@ -46,25 +42,7 @@ program or documentation which mentions my name and the URL shown above.
         "scancode://glulxe"
     ],
     "__impliedId": "Glulxe",
-    "__isFsfFree": true,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Glulxe",
-                    "Glulxe",
-                    "Glulxe License",
-                    "scancode://glulxe"
-                ],
-                "__impliedId": "Glulxe"
-            },
-            "shortname": "Glulxe",
-            "otherNames": [
-                "Glulxe",
-                "Glulxe License",
-                "scancode://glulxe"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Glulxe License",
@@ -93,32 +71,6 @@ program or documentation which mentions my name and the URL shown above.
                 ]
             },
             "spdxLicenseId": "Glulxe"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Glulxe",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "Glulxe",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Glulxe License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Glulxe License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -157,15 +109,6 @@ program or documentation which mentions my name and the URL shown above.
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

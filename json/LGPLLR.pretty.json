@@ -6,23 +6,6 @@
     ],
     "__impliedId": "LGPLLR",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "LGPLLR",
-                    "LGPLLR",
-                    "Lesser General Public License For Linguistic Resources",
-                    "scancode://lgpllr"
-                ],
-                "__impliedId": "LGPLLR"
-            },
-            "shortname": "LGPLLR",
-            "otherNames": [
-                "LGPLLR",
-                "Lesser General Public License For Linguistic Resources",
-                "scancode://lgpllr"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Lesser General Public License For Linguistic Resources",

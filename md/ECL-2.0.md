@@ -32,10 +32,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 Obligations
 -----------
 
@@ -280,7 +276,6 @@ Raw Data
             "Educational Community License 2.0"
         ],
         "__impliedId": "ECL-2.0",
-        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -308,31 +303,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "ECL-2.0",
-                        "ECL-2.0",
-                        "Educational Community License v2.0",
-                        "scancode://ecl-2.0",
-                        "ECL 2.0",
-                        "ecl-2.0",
-                        "Educational Community License, Version 2.0",
-                        "Educational Community License 2.0"
-                    ],
-                    "__impliedId": "ECL-2.0"
-                },
-                "shortname": "ECL-2.0",
-                "otherNames": [
-                    "ECL-2.0",
-                    "Educational Community License v2.0",
-                    "scancode://ecl-2.0",
-                    "ECL 2.0",
-                    "ecl-2.0",
-                    "Educational Community License, Version 2.0",
-                    "Educational Community License 2.0"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -371,32 +341,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "ECL-2.0"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://www.osedu.org/licenses/ECL-2.0/",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "ECL 2.0",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Educational Community License 2.0",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Educational Community License 2.0"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -631,13 +575,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

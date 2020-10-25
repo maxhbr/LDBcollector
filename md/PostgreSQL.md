@@ -28,19 +28,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 Obligations
 -----------
 
@@ -61,8 +48,6 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/PostgreSQL.json
 
 -   **SPDX:** https://spdx.org/licenses/PostgreSQL.html
-
--   https://www.postgresql.org/about/licence/
 
 Text
 ----
@@ -96,7 +81,6 @@ Raw Data
             "The PostgreSQL Licence"
         ],
         "__impliedId": "PostgreSQL",
-        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -124,27 +108,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "PostgreSQL",
-                        "PostgreSQL",
-                        "PostgreSQL License",
-                        "scancode://postgresql",
-                        "postgresql",
-                        "The PostgreSQL Licence"
-                    ],
-                    "__impliedId": "PostgreSQL"
-                },
-                "shortname": "PostgreSQL",
-                "otherNames": [
-                    "PostgreSQL",
-                    "PostgreSQL License",
-                    "scancode://postgresql",
-                    "postgresql",
-                    "The PostgreSQL Licence"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -188,32 +151,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "PostgreSQL"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/PostgreSQL_License",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "PostgreSQL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "PostgreSQL License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "PostgreSQL License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -312,40 +249,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/PostgreSQL.html"
-                        ]
-                    ]
-                }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "https://www.postgresql.org/about/licence/",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "PostgreSQL License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "PostgreSQL License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://www.postgresql.org/about/licence/"
                         ]
                     ]
                 }
@@ -497,13 +400,6 @@ Raw Data
                 }
             ],
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
                 "Google OSS Policy",
                 {
                     "tag": "PositiveJudgement",
@@ -515,13 +411,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],
@@ -536,10 +425,6 @@ Raw Data
             ],
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -614,10 +499,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/PostgreSQL"
-            ],
-            [
-                null,
-                "https://www.postgresql.org/about/licence/"
             ]
         ]
     }

@@ -12,19 +12,6 @@ Independent JPEG Group License (IJG)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -40,8 +27,6 @@ URLs
 -   http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2
 
 -   http://www.gnu.org/licenses/license-list.html\#GPLCompatibleLicenses
-
--   https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG
 
 OSADL Rule
 ----------
@@ -163,28 +148,8 @@ Raw Data
             "JPEG License"
         ],
         "__impliedId": "IJG",
-        "__isFsfFree": true,
         "__hasPatentHint": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "IJG",
-                        "IJG",
-                        "Independent JPEG Group License",
-                        "scancode://ijg",
-                        "JPEG License"
-                    ],
-                    "__impliedId": "IJG"
-                },
-                "shortname": "IJG",
-                "otherNames": [
-                    "IJG",
-                    "Independent JPEG Group License",
-                    "scancode://ijg",
-                    "JPEG License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Independent JPEG Group License",
@@ -223,32 +188,6 @@ Raw Data
                         "IJG"
                     ],
                     "__hasPatentHint": true
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/IJG",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "IJG",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Independent JPEG Group License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Independent JPEG Group License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
                 }
             },
             "Scancode": {
@@ -332,40 +271,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Independent JPEG Group License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Independent JPEG Group License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -374,20 +279,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],
@@ -398,10 +289,6 @@ Raw Data
             ],
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -428,10 +315,6 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses"
-            ],
-            [
-                null,
-                "https://fedoraproject.org/wiki/Licensing:IJG?rd=Licensing/IJG"
             ]
         ]
     }

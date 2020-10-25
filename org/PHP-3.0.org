@@ -27,10 +27,6 @@
 - *↑*Rating is: Bronze (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
-- *↑*This software Licenses is OK for Fedora (source:
-  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]])
-
 ** URLs
 
 - *Homepage:* http://www.php.net/license/
@@ -134,7 +130,6 @@
           "The PHP License, Version 3.0"
       ],
       "__impliedId": "PHP-3.0",
-      "__isFsfFree": true,
       "facts": {
           "Open Knowledge International": {
               "is_generic": null,
@@ -162,27 +157,6 @@
                   ]
               },
               "domain_content": false
-          },
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "PHP-3.0",
-                      "PHP-3.0",
-                      "PHP License v3.0",
-                      "scancode://php-3.0",
-                      "PHP License 3.0",
-                      "The PHP License, Version 3.0"
-                  ],
-                  "__impliedId": "PHP-3.0"
-              },
-              "shortname": "PHP-3.0",
-              "otherNames": [
-                  "PHP-3.0",
-                  "PHP License v3.0",
-                  "scancode://php-3.0",
-                  "PHP License 3.0",
-                  "The PHP License, Version 3.0"
-              ]
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -226,32 +200,6 @@
                   ]
               },
               "spdxLicenseId": "PHP-3.0"
-          },
-          "Fedora Project Wiki": {
-              "GPLv2 Compat?": "NO",
-              "rating": "Good",
-              "Upstream URL": "http://www.php.net/license/3_01.txt",
-              "GPLv3 Compat?": "NO",
-              "Short Name": "PHP",
-              "licenseType": "license",
-              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-              "Full Name": "PHP License v3.0",
-              "FSF Free?": "Yes",
-              "_implications": {
-                  "__impliedNames": [
-                      "PHP License v3.0"
-                  ],
-                  "__isFsfFree": true,
-                  "__impliedJudgement": [
-                      [
-                          "Fedora Project Wiki",
-                          {
-                              "tag": "PositiveJudgement",
-                              "contents": "This software Licenses is OK for Fedora"
-                          }
-                      ]
-                  ]
-              }
           },
           "Scancode": {
               "otherUrls": [
@@ -506,13 +454,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Rating is: Bronze"
-              }
-          ],
-          [
-              "Fedora Project Wiki",
-              {
-                  "tag": "PositiveJudgement",
-                  "contents": "This software Licenses is OK for Fedora"
               }
           ],
           [

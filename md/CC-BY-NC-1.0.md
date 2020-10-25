@@ -120,23 +120,6 @@ Raw Data
         ],
         "__impliedNonCommercial": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-NC-1.0",
-                        "CC-BY-NC-1.0",
-                        "Creative Commons Attribution Non Commercial 1.0 Generic",
-                        "scancode://cc-by-nc-1.0"
-                    ],
-                    "__impliedId": "CC-BY-NC-1.0"
-                },
-                "shortname": "CC-BY-NC-1.0",
-                "otherNames": [
-                    "CC-BY-NC-1.0",
-                    "Creative Commons Attribution Non Commercial 1.0 Generic",
-                    "scancode://cc-by-nc-1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial 1.0 Generic",

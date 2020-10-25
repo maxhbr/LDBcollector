@@ -120,23 +120,6 @@ Raw Data
         ],
         "__impliedId": "CERN-OHL-1.2",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CERN-OHL-1.2",
-                        "CERN-OHL-1.2",
-                        "CERN Open Hardware Licence v1.2",
-                        "scancode://cern-ohl-1.2"
-                    ],
-                    "__impliedId": "CERN-OHL-1.2"
-                },
-                "shortname": "CERN-OHL-1.2",
-                "otherNames": [
-                    "CERN-OHL-1.2",
-                    "CERN Open Hardware Licence v1.2",
-                    "scancode://cern-ohl-1.2"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CERN Open Hardware Licence v1.2",

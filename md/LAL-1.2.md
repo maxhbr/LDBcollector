@@ -107,23 +107,6 @@ Raw Data
             "Licence Art Libre (Free Art License)"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "LAL-1.2",
-                        "LAL-1.2",
-                        "Licence Art Libre 1.2",
-                        "scancode://lal-1.2"
-                    ],
-                    "__impliedId": "LAL-1.2"
-                },
-                "shortname": "LAL-1.2",
-                "otherNames": [
-                    "LAL-1.2",
-                    "Licence Art Libre 1.2",
-                    "scancode://lal-1.2"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Licence Art Libre 1.2",

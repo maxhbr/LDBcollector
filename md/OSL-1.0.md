@@ -13,15 +13,15 @@ Open Software License 1.0 (OSL-1.0)
 
 -   `OSL 3.0`
 
--   `osl-3.0`
-
--   `Open Software License, Version 3.0`
-
 -   `scancode://osl-1.0`
 
 -   `OSL 1.0`
 
+-   `osl-3.0`
+
 -   `Open Software License, Version 1.0`
+
+-   `Open Software License, Version 3.0`
 
 Description
 -----------
@@ -199,17 +199,17 @@ Raw Data
 
     {
         "__impliedNames": [
+            "OSL-1.0",
+            "Open Software License 1.0",
             "OSL-3.0",
             "Open Software License 3.0",
             "scancode://osl-3.0",
             "OSL 3.0",
-            "osl-3.0",
-            "Open Software License, Version 3.0",
-            "OSL-1.0",
-            "Open Software License 1.0",
             "scancode://osl-1.0",
             "OSL 1.0",
-            "Open Software License, Version 1.0"
+            "osl-3.0",
+            "Open Software License, Version 1.0",
+            "Open Software License, Version 3.0"
         ],
         "__impliedId": "OSL-1.0",
         "__isFsfFree": true,
@@ -241,31 +241,6 @@ Raw Data
                     ]
                 },
                 "domain_content": true
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OSL-3.0",
-                        "OSL-3.0",
-                        "Open Software License 3.0",
-                        "scancode://osl-3.0",
-                        "OSL 3.0",
-                        "osl-3.0",
-                        "Open Software License, Version 3.0",
-                        "OSL-1.0"
-                    ],
-                    "__impliedId": "OSL-3.0"
-                },
-                "shortname": "OSL-3.0",
-                "otherNames": [
-                    "OSL-3.0",
-                    "Open Software License 3.0",
-                    "scancode://osl-3.0",
-                    "OSL 3.0",
-                    "osl-3.0",
-                    "Open Software License, Version 3.0",
-                    "OSL-1.0"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

@@ -13,10 +13,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -88,25 +84,7 @@ Raw Data
             "scancode://imagemagick"
         ],
         "__impliedId": "ImageMagick",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "ImageMagick",
-                        "ImageMagick",
-                        "ImageMagick License",
-                        "scancode://imagemagick"
-                    ],
-                    "__impliedId": "ImageMagick"
-                },
-                "shortname": "ImageMagick",
-                "otherNames": [
-                    "ImageMagick",
-                    "ImageMagick License",
-                    "scancode://imagemagick"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "ImageMagick License",
@@ -135,32 +113,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "ImageMagick"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://www.imagemagick.org/script/license.php",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "ImageMagick",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "ImageMagick License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "ImageMagick License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -240,13 +192,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

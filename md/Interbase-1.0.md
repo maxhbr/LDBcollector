@@ -235,25 +235,6 @@ Raw Data
         ],
         "__impliedId": "Interbase-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Interbase-1.0",
-                        "Interbase-1.0",
-                        "Interbase Public License v1.0",
-                        "scancode://interbase-1.0",
-                        "Interbase Public License 1.0"
-                    ],
-                    "__impliedId": "Interbase-1.0"
-                },
-                "shortname": "Interbase-1.0",
-                "otherNames": [
-                    "Interbase-1.0",
-                    "Interbase Public License v1.0",
-                    "scancode://interbase-1.0",
-                    "Interbase Public License 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Interbase Public License v1.0",

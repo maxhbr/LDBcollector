@@ -61,23 +61,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     ],
     "__impliedId": "Linux-OpenIB",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Linux-OpenIB",
-                    "Linux-OpenIB",
-                    "Linux Kernel Variant of OpenIB.org license",
-                    "scancode://linux-openib"
-                ],
-                "__impliedId": "Linux-OpenIB"
-            },
-            "shortname": "Linux-OpenIB",
-            "otherNames": [
-                "Linux-OpenIB",
-                "Linux Kernel Variant of OpenIB.org license",
-                "scancode://linux-openib"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Linux Kernel Variant of OpenIB.org license",

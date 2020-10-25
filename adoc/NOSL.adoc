@@ -16,10 +16,6 @@
 
 === Comments on (easy) usability
 
-* **↑**This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-
 === URLs
 
 * *Homepage:* http://bits.netizen.com.au/licenses/NOSL/
@@ -529,27 +525,7 @@ EXHIBIT A - Netizen Open Source License
         "NOSL 1.0"
     ],
     "__impliedId": "NOSL",
-    "__isFsfFree": true,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "NOSL",
-                    "NOSL",
-                    "Netizen Open Source License",
-                    "scancode://nosl-1.0",
-                    "NOSL 1.0"
-                ],
-                "__impliedId": "NOSL"
-            },
-            "shortname": "NOSL",
-            "otherNames": [
-                "NOSL",
-                "Netizen Open Source License",
-                "scancode://nosl-1.0",
-                "NOSL 1.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Netizen Open Source License",
@@ -578,32 +554,6 @@ EXHIBIT A - Netizen Open Source License
                 ]
             },
             "spdxLicenseId": "NOSL"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://bits.netizen.com.au/licenses/NOSL/nosl.txt",
-            "GPLv3 Compat?": null,
-            "Short Name": "NOSL",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Netizen Open Source License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Netizen Open Source License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -642,15 +592,6 @@ EXHIBIT A - Netizen Open Source License
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -57,23 +57,6 @@ Raw Data
         ],
         "__impliedId": "CNRI-Jython",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CNRI-Jython",
-                        "CNRI-Jython",
-                        "CNRI Jython License",
-                        "scancode://cnri-jython"
-                    ],
-                    "__impliedId": "CNRI-Jython"
-                },
-                "shortname": "CNRI-Jython",
-                "otherNames": [
-                    "CNRI-Jython",
-                    "CNRI Jython License",
-                    "scancode://cnri-jython"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CNRI Jython License",

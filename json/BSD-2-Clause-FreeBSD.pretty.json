@@ -6,23 +6,6 @@
     ],
     "__impliedId": "BSD-2-Clause-FreeBSD",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "BSD-2-Clause-FreeBSD",
-                    "BSD-2-Clause-FreeBSD",
-                    "BSD 2-Clause FreeBSD License",
-                    "scancode://bsd-2-clause-freebsd"
-                ],
-                "__impliedId": "BSD-2-Clause-FreeBSD"
-            },
-            "shortname": "BSD-2-Clause-FreeBSD",
-            "otherNames": [
-                "BSD-2-Clause-FreeBSD",
-                "BSD 2-Clause FreeBSD License",
-                "scancode://bsd-2-clause-freebsd"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 2-Clause FreeBSD License",

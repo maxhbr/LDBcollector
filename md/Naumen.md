@@ -16,19 +16,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 URLs
 ----
 
@@ -41,8 +28,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/Naumen.html
 
 -   http://www.opensource.org/licenses/Naumen
-
--   http://www.worldlii.org/int/other/PubRL/2009/42.html
 
 Text
 ----
@@ -82,7 +67,6 @@ Raw Data
             "NAUMEN Public License"
         ],
         "__impliedId": "Naumen",
-        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -110,25 +94,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Naumen",
-                        "Naumen",
-                        "Naumen Public License",
-                        "scancode://naumen",
-                        "NAUMEN Public License"
-                    ],
-                    "__impliedId": "Naumen"
-                },
-                "shortname": "Naumen",
-                "otherNames": [
-                    "Naumen",
-                    "Naumen Public License",
-                    "scancode://naumen",
-                    "NAUMEN Public License"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -167,32 +132,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Naumen"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://opensource.org/licenses/naumen.php",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "Naumen",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Naumen Public License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Naumen Public License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -295,40 +234,6 @@ Raw Data
                     ]
                 }
             },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "http://www.worldlii.org/int/other/PubRL/2009/42.html",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Naumen Public License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Naumen Public License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://www.worldlii.org/int/other/PubRL/2009/42.html"
-                        ]
-                    ]
-                }
-            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -383,24 +288,10 @@ Raw Data
                 }
             ],
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],
@@ -411,10 +302,6 @@ Raw Data
             ],
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -449,10 +336,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Naumen"
-            ],
-            [
-                null,
-                "http://www.worldlii.org/int/other/PubRL/2009/42.html"
             ]
         ]
     }

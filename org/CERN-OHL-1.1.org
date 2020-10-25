@@ -116,23 +116,6 @@
       ],
       "__impliedId": "CERN-OHL-1.1",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "CERN-OHL-1.1",
-                      "CERN-OHL-1.1",
-                      "CERN Open Hardware License v1.1",
-                      "scancode://cern-ohl-1.1"
-                  ],
-                  "__impliedId": "CERN-OHL-1.1"
-              },
-              "shortname": "CERN-OHL-1.1",
-              "otherNames": [
-                  "CERN-OHL-1.1",
-                  "CERN Open Hardware License v1.1",
-                  "scancode://cern-ohl-1.1"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "CERN Open Hardware License v1.1",

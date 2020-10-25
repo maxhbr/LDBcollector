@@ -19,10 +19,6 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/Motosoto.html "SPDX"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -198,7 +194,6 @@ Raw Data
             "License :: OSI Approved :: Motosoto License"
         ],
         "__impliedId": "Motosoto",
-        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -226,29 +221,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Motosoto",
-                        "Motosoto",
-                        "Motosoto License",
-                        "scancode://motosoto-0.9.1",
-                        "Motosoto 0.9.1",
-                        "Motosoto Open Source License, Version 0.9.1",
-                        "License :: OSI Approved :: Motosoto License"
-                    ],
-                    "__impliedId": "Motosoto"
-                },
-                "shortname": "Motosoto",
-                "otherNames": [
-                    "Motosoto",
-                    "Motosoto License",
-                    "scancode://motosoto-0.9.1",
-                    "Motosoto 0.9.1",
-                    "Motosoto Open Source License, Version 0.9.1",
-                    "License :: OSI Approved :: Motosoto License"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -287,32 +259,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Motosoto"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://opensource.org/licenses/motosoto.php",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "Motosoto",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Motosoto License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Motosoto License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -431,13 +377,6 @@ Raw Data
             }
         },
         "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
             [
                 "SPDX",
                 {

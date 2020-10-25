@@ -13,10 +13,6 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/HPND.html "SPDX"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -78,7 +74,6 @@ Raw Data
             "scancode://historical"
         ],
         "__impliedId": "HPND",
-        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -106,23 +101,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "HPND",
-                        "HPND",
-                        "Historical Permission Notice and Disclaimer",
-                        "scancode://historical"
-                    ],
-                    "__impliedId": "HPND"
-                },
-                "shortname": "HPND",
-                "otherNames": [
-                    "HPND",
-                    "Historical Permission Notice and Disclaimer",
-                    "scancode://historical"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -169,32 +147,6 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "HPND"
-                    ]
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://opensource.org/licenses/historical.php",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MIT",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Historical Permission Notice and Disclaimer",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Historical Permission Notice and Disclaimer"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
                     ]
                 }
             },
@@ -350,13 +302,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

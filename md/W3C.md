@@ -29,10 +29,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -107,7 +103,6 @@ Raw Data
             "W3C License"
         ],
         "__impliedId": "W3C",
-        "__isFsfFree": true,
         "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
@@ -136,33 +131,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "W3C",
-                        "W3C",
-                        "W3C Software Notice and License (2002-12-31)",
-                        "scancode://w3c",
-                        "W3C Software Notice and License",
-                        "The W3C Software Notice and License",
-                        "License :: OSI Approved :: W3C License",
-                        "W3C Software Notice and License 20021231",
-                        "W3C License"
-                    ],
-                    "__impliedId": "W3C"
-                },
-                "shortname": "W3C",
-                "otherNames": [
-                    "W3C",
-                    "W3C Software Notice and License (2002-12-31)",
-                    "scancode://w3c",
-                    "W3C Software Notice and License",
-                    "The W3C Software Notice and License",
-                    "License :: OSI Approved :: W3C License",
-                    "W3C Software Notice and License 20021231",
-                    "W3C License"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -206,32 +174,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "W3C"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "W3C",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "W3C Software Notice and License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "W3C Software Notice and License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -446,13 +388,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

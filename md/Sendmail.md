@@ -10,19 +10,6 @@ Sendmail License (Sendmail)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 URLs
 ----
 
@@ -33,8 +20,6 @@ URLs
 -   http://www.sendmail.com/pdfs/open\_source/sendmail\_license.pdf
 
 -   https://web.archive.org/web/20160322142305/https://www.sendmail.com/pdfs/open\_source/sendmail\_license.pdf
-
--   http://www.sendmail.org/ftp/LICENSE
 
 Text
 ----
@@ -131,25 +116,7 @@ Raw Data
             "scancode://sendmail"
         ],
         "__impliedId": "Sendmail",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Sendmail",
-                        "Sendmail",
-                        "Sendmail License",
-                        "scancode://sendmail"
-                    ],
-                    "__impliedId": "Sendmail"
-                },
-                "shortname": "Sendmail",
-                "otherNames": [
-                    "Sendmail",
-                    "Sendmail License",
-                    "scancode://sendmail"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sendmail License",
@@ -183,32 +150,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Sendmail"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Compatible if Eric Allman, Sendmail Inc. or the University of California is the copyright holder",
-                "rating": "Good",
-                "Upstream URL": "http://www.sendmail.com/pdfs/open_source/sendmail_license.pdf",
-                "GPLv3 Compat?": "Compatible if Eric Allman, Sendmail Inc. or the University of California is the copyright holder",
-                "Short Name": "Sendmail",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Sendmail License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Sendmail License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -251,65 +192,11 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "http://www.sendmail.org/ftp/LICENSE",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Sendmail License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Sendmail License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://www.sendmail.org/ftp/LICENSE"
-                        ]
-                    ]
-                }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -332,10 +219,6 @@ Raw Data
             [
                 "Homepage",
                 "http://www.sendmail.com/"
-            ],
-            [
-                null,
-                "http://www.sendmail.org/ftp/LICENSE"
             ]
         ]
     }

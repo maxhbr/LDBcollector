@@ -10,10 +10,6 @@ Afmparse License (Afmparse)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -60,27 +56,7 @@ Raw Data
             "afmparse License"
         ],
         "__impliedId": "Afmparse",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Afmparse",
-                        "Afmparse",
-                        "Afmparse License",
-                        "scancode://afmparse",
-                        "afmparse License"
-                    ],
-                    "__impliedId": "Afmparse"
-                },
-                "shortname": "Afmparse",
-                "otherNames": [
-                    "Afmparse",
-                    "Afmparse License",
-                    "scancode://afmparse",
-                    "afmparse License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Afmparse License",
@@ -109,32 +85,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Afmparse"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Afmparse",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "Afmparse",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Afmparse License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Afmparse License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -214,13 +164,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

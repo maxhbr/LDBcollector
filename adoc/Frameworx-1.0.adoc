@@ -140,29 +140,6 @@ Your agreement to the foregoing as of the date hereof has been evidenced by your
             },
             "domain_content": false
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Frameworx-1.0",
-                    "Frameworx-1.0",
-                    "Frameworx Open License 1.0",
-                    "scancode://frameworx-1.0",
-                    "Frameworx 1.0",
-                    "Frameworx License, Version 1.0",
-                    "Frameworx License 1.0"
-                ],
-                "__impliedId": "Frameworx-1.0"
-            },
-            "shortname": "Frameworx-1.0",
-            "otherNames": [
-                "Frameworx-1.0",
-                "Frameworx Open License 1.0",
-                "scancode://frameworx-1.0",
-                "Frameworx 1.0",
-                "Frameworx License, Version 1.0",
-                "Frameworx License 1.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Frameworx Open License 1.0",

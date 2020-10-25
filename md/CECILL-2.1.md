@@ -600,33 +600,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CECILL-2.1",
-                        "CECILL-2.1",
-                        "CeCILL Free Software License Agreement v2.1",
-                        "scancode://cecill-2.1",
-                        "CeCILL 2.1",
-                        "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
-                        "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
-                        "CeCILL-2.1",
-                        "CeCILL License 2.1"
-                    ],
-                    "__impliedId": "CECILL-2.1"
-                },
-                "shortname": "CECILL-2.1",
-                "otherNames": [
-                    "CECILL-2.1",
-                    "CeCILL Free Software License Agreement v2.1",
-                    "scancode://cecill-2.1",
-                    "CeCILL 2.1",
-                    "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
-                    "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
-                    "CeCILL-2.1",
-                    "CeCILL License 2.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CeCILL Free Software License Agreement v2.1",

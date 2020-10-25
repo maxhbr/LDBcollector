@@ -303,23 +303,6 @@ Raw Data
         ],
         "__impliedNonCommercial": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-NC-ND-2.0",
-                        "CC-BY-NC-ND-2.0",
-                        "Creative Commons Attribution Non Commercial No Derivatives 2.0 Generic",
-                        "scancode://cc-by-nc-nd-2.0"
-                    ],
-                    "__impliedId": "CC-BY-NC-ND-2.0"
-                },
-                "shortname": "CC-BY-NC-ND-2.0",
-                "otherNames": [
-                    "CC-BY-NC-ND-2.0",
-                    "Creative Commons Attribution Non Commercial No Derivatives 2.0 Generic",
-                    "scancode://cc-by-nc-nd-2.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial No Derivatives 2.0 Generic",

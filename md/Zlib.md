@@ -15,8 +15,6 @@ zlib License (Zlib)
 
 -   `zlib/libpng`
 
--   `zlib/libpng License`
-
 Description
 -----------
 
@@ -42,19 +40,6 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 Obligations
 -----------
 
@@ -79,8 +64,6 @@ URLs
 -   http://www.zlib.net/zlib\_license.html
 
 -   http://www.opensource.org/licenses/Zlib
-
--   http://www.gzip.org/zlib/zlib\_license.html
 
 OSADL Rule
 ----------
@@ -134,12 +117,9 @@ Raw Data
             "The zlib/libpng License (Zlib)",
             "License :: OSI Approved :: zlib/libpng License",
             "zlib/libpng license",
-            "zlib/libpng",
-            "zlib/libpng License",
-            "Zlib license"
+            "zlib/libpng"
         ],
         "__impliedId": "Zlib",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)"
         ],
@@ -171,39 +151,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Zlib",
-                        "Zlib",
-                        "zlib License",
-                        "scancode://zlib",
-                        "ZLIB License",
-                        "zlib",
-                        "The zlib/libpng License (Zlib)",
-                        "License :: OSI Approved :: zlib/libpng License",
-                        "zlib/libpng license",
-                        "zlib/libpng",
-                        "zlib/libpng License",
-                        "Zlib license"
-                    ],
-                    "__impliedId": "Zlib"
-                },
-                "shortname": "Zlib",
-                "otherNames": [
-                    "Zlib",
-                    "zlib License",
-                    "scancode://zlib",
-                    "ZLIB License",
-                    "zlib",
-                    "The zlib/libpng License (Zlib)",
-                    "License :: OSI Approved :: zlib/libpng License",
-                    "zlib/libpng license",
-                    "zlib/libpng",
-                    "zlib/libpng License",
-                    "Zlib license"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -255,32 +202,6 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "Zlib"
-                    ]
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://www.gzip.org/zlib/zlib_license.html",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "zlib",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "zlib/libpng License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "zlib/libpng License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
                     ]
                 }
             },
@@ -428,40 +349,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/Zlib.html"
-                        ]
-                    ]
-                }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "http://www.gzip.org/zlib/zlib_license.html",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Zlib license",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Zlib license"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://www.gzip.org/zlib/zlib_license.html"
                         ]
                     ]
                 }
@@ -701,13 +588,6 @@ Raw Data
                 }
             ],
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
                 "Google OSS Policy",
                 {
                     "tag": "PositiveJudgement",
@@ -719,13 +599,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],
@@ -740,10 +613,6 @@ Raw Data
             ],
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -822,10 +691,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Zlib"
-            ],
-            [
-                null,
-                "http://www.gzip.org/zlib/zlib_license.html"
             ]
         ]
     }

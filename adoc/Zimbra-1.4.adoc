@@ -86,25 +86,6 @@ This Agreement contains the entire agreement of the parties with respect to the 
     ],
     "__impliedId": "Zimbra-1.4",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Zimbra-1.4",
-                    "Zimbra-1.4",
-                    "Zimbra Public License v1.4",
-                    "scancode://zimbra-1.4",
-                    "ZPL 1.4"
-                ],
-                "__impliedId": "Zimbra-1.4"
-            },
-            "shortname": "Zimbra-1.4",
-            "otherNames": [
-                "Zimbra-1.4",
-                "Zimbra Public License v1.4",
-                "scancode://zimbra-1.4",
-                "ZPL 1.4"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Zimbra Public License v1.4",

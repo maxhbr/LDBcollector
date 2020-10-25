@@ -154,23 +154,6 @@ Raw Data
         ],
         "__impliedId": "OSET-PL-2.1",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OSET-PL-2.1",
-                        "OSET-PL-2.1",
-                        "OSET Public License version 2.1",
-                        "scancode://oset-pl-2.1"
-                    ],
-                    "__impliedId": "OSET-PL-2.1"
-                },
-                "shortname": "OSET-PL-2.1",
-                "otherNames": [
-                    "OSET-PL-2.1",
-                    "OSET Public License version 2.1",
-                    "scancode://oset-pl-2.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "OSET Public License version 2.1",

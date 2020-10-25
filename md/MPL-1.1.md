@@ -318,29 +318,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "MPL-1.1",
-                        "MPL-1.1",
-                        "Mozilla Public License 1.1",
-                        "scancode://mpl-1.1",
-                        "MPL 1.1",
-                        "Mozilla Public License, Version 1.1",
-                        "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
-                    ],
-                    "__impliedId": "MPL-1.1"
-                },
-                "shortname": "MPL-1.1",
-                "otherNames": [
-                    "MPL-1.1",
-                    "Mozilla Public License 1.1",
-                    "scancode://mpl-1.1",
-                    "MPL 1.1",
-                    "Mozilla Public License, Version 1.1",
-                    "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Mozilla Public License 1.1",

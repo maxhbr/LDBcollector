@@ -99,23 +99,6 @@ Raw Data
         ],
         "__impliedId": "CC-BY-SA-2.5",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-SA-2.5",
-                        "CC-BY-SA-2.5",
-                        "Creative Commons Attribution Share Alike 2.5 Generic",
-                        "scancode://cc-by-sa-2.5"
-                    ],
-                    "__impliedId": "CC-BY-SA-2.5"
-                },
-                "shortname": "CC-BY-SA-2.5",
-                "otherNames": [
-                    "CC-BY-SA-2.5",
-                    "Creative Commons Attribution Share Alike 2.5 Generic",
-                    "scancode://cc-by-sa-2.5"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Share Alike 2.5 Generic",

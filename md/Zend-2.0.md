@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Google Classification is NOTICE (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -104,27 +100,7 @@ Raw Data
             "Zend Engine License 2.0"
         ],
         "__impliedId": "Zend-2.0",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Zend-2.0",
-                        "Zend-2.0",
-                        "Zend License v2.0",
-                        "scancode://zend-2.0",
-                        "Zend Engine License 2.0"
-                    ],
-                    "__impliedId": "Zend-2.0"
-                },
-                "shortname": "Zend-2.0",
-                "otherNames": [
-                    "Zend-2.0",
-                    "Zend License v2.0",
-                    "scancode://zend-2.0",
-                    "Zend Engine License 2.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zend License v2.0",
@@ -153,32 +129,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Zend-2.0"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://www.zend.com/license/2_00.txt",
-                "GPLv3 Compat?": null,
-                "Short Name": "Zend",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Zend License v2.0",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Zend License v2.0"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -284,13 +234,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

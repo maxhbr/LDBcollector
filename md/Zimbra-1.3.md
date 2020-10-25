@@ -192,25 +192,6 @@ Raw Data
         ],
         "__impliedId": "Zimbra-1.3",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Zimbra-1.3",
-                        "Zimbra-1.3",
-                        "Zimbra Public License v1.3",
-                        "scancode://zimbra-1.3",
-                        "ZPL 1.3"
-                    ],
-                    "__impliedId": "Zimbra-1.3"
-                },
-                "shortname": "Zimbra-1.3",
-                "otherNames": [
-                    "Zimbra-1.3",
-                    "Zimbra Public License v1.3",
-                    "scancode://zimbra-1.3",
-                    "ZPL 1.3"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zimbra Public License v1.3",

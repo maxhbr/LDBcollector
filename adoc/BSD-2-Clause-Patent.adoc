@@ -113,25 +113,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedId": "BSD-2-Clause-Patent",
     "__hasPatentHint": true,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "BSD-2-Clause-Patent",
-                    "BSD-2-Clause-Patent",
-                    "BSD-2-Clause Plus Patent License",
-                    "scancode://bsd-plus-patent",
-                    "BSD-2-Clause Plus Patent"
-                ],
-                "__impliedId": "BSD-2-Clause-Patent"
-            },
-            "shortname": "BSD-2-Clause-Patent",
-            "otherNames": [
-                "BSD-2-Clause-Patent",
-                "BSD-2-Clause Plus Patent License",
-                "scancode://bsd-plus-patent",
-                "BSD-2-Clause Plus Patent"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD-2-Clause Plus Patent License",

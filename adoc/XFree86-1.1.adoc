@@ -108,25 +108,6 @@ OF SUCH DAMAGE.
     "__impliedId": "XFree86-1.1",
     "__hasPatentHint": false,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "XFree86-1.1",
-                    "XFree86-1.1",
-                    "XFree86 License 1.1",
-                    "scancode://xfree86-1.1",
-                    "XFree86 1.1 License"
-                ],
-                "__impliedId": "XFree86-1.1"
-            },
-            "shortname": "XFree86-1.1",
-            "otherNames": [
-                "XFree86-1.1",
-                "XFree86 License 1.1",
-                "scancode://xfree86-1.1",
-                "XFree86 1.1 License"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "XFree86 License 1.1",

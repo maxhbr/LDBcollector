@@ -5,11 +5,11 @@ OpenSSL License (OpenSSL)
 
 **Other Names:**
 
+-   `scancode://openssl`
+
 -   `scancode://openssl-ssleay`
 
 -   `OpenSSL/SSLeay License`
-
--   `scancode://openssl`
 
 Comments on (easy) usability
 ----------------------------
@@ -112,38 +112,15 @@ Raw Data
         "__impliedNames": [
             "OpenSSL",
             "OpenSSL License",
+            "scancode://openssl",
             "scancode://openssl-ssleay",
             "OpenSSL/SSLeay License",
-            "OpenSSL license",
-            "scancode://openssl"
+            "OpenSSL license"
         ],
         "__impliedId": "OpenSSL",
         "__isFsfFree": true,
         "__hasPatentHint": false,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OpenSSL",
-                        "OpenSSL",
-                        "OpenSSL License",
-                        "scancode://openssl-ssleay",
-                        "OpenSSL/SSLeay License",
-                        "OpenSSL license",
-                        "scancode://openssl"
-                    ],
-                    "__impliedId": "OpenSSL"
-                },
-                "shortname": "OpenSSL",
-                "otherNames": [
-                    "OpenSSL",
-                    "OpenSSL License",
-                    "scancode://openssl-ssleay",
-                    "OpenSSL/SSLeay License",
-                    "OpenSSL license",
-                    "scancode://openssl"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "OpenSSL License",

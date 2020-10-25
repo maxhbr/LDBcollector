@@ -551,31 +551,6 @@
               },
               "domain_content": false
           },
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "MPL-2.0",
-                      "MPL-2.0",
-                      "Mozilla Public License 2.0",
-                      "scancode://mpl-2.0",
-                      "MPL 2.0",
-                      "mpl-2.0",
-                      "Mozilla Public License, Version 2.0",
-                      "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
-                  ],
-                  "__impliedId": "MPL-2.0"
-              },
-              "shortname": "MPL-2.0",
-              "otherNames": [
-                  "MPL-2.0",
-                  "Mozilla Public License 2.0",
-                  "scancode://mpl-2.0",
-                  "MPL 2.0",
-                  "mpl-2.0",
-                  "Mozilla Public License, Version 2.0",
-                  "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Mozilla Public License 2.0",

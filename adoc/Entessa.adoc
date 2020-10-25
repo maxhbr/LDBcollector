@@ -22,9 +22,6 @@
 https://spdx.org/licenses/Entessa.html[SPDX])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
-* **↑**This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
 
 === URLs
 
@@ -101,7 +98,6 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
         "Entessa Public License 1.0"
     ],
     "__impliedId": "Entessa",
-    "__isFsfFree": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -129,29 +125,6 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
                 ]
             },
             "domain_content": false
-        },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Entessa",
-                    "Entessa",
-                    "Entessa Public License v1.0",
-                    "scancode://entessa-1.0",
-                    "Entessa 1.0",
-                    "Entessa Public License",
-                    "Entessa Public License 1.0"
-                ],
-                "__impliedId": "Entessa"
-            },
-            "shortname": "Entessa",
-            "otherNames": [
-                "Entessa",
-                "Entessa Public License v1.0",
-                "scancode://entessa-1.0",
-                "Entessa 1.0",
-                "Entessa Public License",
-                "Entessa Public License 1.0"
-            ]
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -190,32 +163,6 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
                 ]
             },
             "spdxLicenseId": "Entessa"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://opensource.org/licenses/entessa.php",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "Entessa",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Entessa Public License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Entessa Public License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -437,13 +384,6 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

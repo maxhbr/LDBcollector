@@ -10,11 +10,6 @@ Open CASCADE Technology Public License (OCCT-PL)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
-    Fedora is permitted to use this license. It is either non-free or
-    deprecated. (source: [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -150,23 +145,6 @@ Raw Data
         ],
         "__impliedId": "OCCT-PL",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OCCT-PL",
-                        "OCCT-PL",
-                        "Open CASCADE Technology Public License",
-                        "scancode://occt-pl"
-                    ],
-                    "__impliedId": "OCCT-PL"
-                },
-                "shortname": "OCCT-PL",
-                "otherNames": [
-                    "OCCT-PL",
-                    "Open CASCADE Technology Public License",
-                    "scancode://occt-pl"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open CASCADE Technology Public License",
@@ -195,29 +173,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "OCCT-PL"
-            },
-            "Fedora Project Wiki": {
-                "rating": "Bad",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Open_CASCADE_Technology_Public_License",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Open CASCADE Technology Public License",
-                "FSF Free?": "No",
-                "_implications": {
-                    "__impliedNames": [
-                        "Open CASCADE Technology Public License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "NegativeJudgement",
-                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                            }
-                        ]
-                    ]
-                },
-                "Notes": null
             },
             "Scancode": {
                 "otherUrls": null,
@@ -256,15 +211,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "NegativeJudgement",
-                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

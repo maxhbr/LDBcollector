@@ -45,25 +45,6 @@ Raw Data
         ],
         "__impliedId": "AGPL-1.0-or-later",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "AGPL-1.0-or-later",
-                        "AGPL-1.0-or-later",
-                        "Affero General Public License v1.0 or later",
-                        "scancode://agpl-1.0-plus",
-                        "AGPL 1.0 or later"
-                    ],
-                    "__impliedId": "AGPL-1.0-or-later"
-                },
-                "shortname": "AGPL-1.0-or-later",
-                "otherNames": [
-                    "AGPL-1.0-or-later",
-                    "Affero General Public License v1.0 or later",
-                    "scancode://agpl-1.0-plus",
-                    "AGPL 1.0 or later"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Affero General Public License v1.0 or later",

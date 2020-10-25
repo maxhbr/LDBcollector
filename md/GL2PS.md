@@ -10,10 +10,6 @@ GL2PS License (GL2PS)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -57,25 +53,7 @@ Raw Data
             "scancode://gl2ps"
         ],
         "__impliedId": "GL2PS",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "GL2PS",
-                        "GL2PS",
-                        "GL2PS License",
-                        "scancode://gl2ps"
-                    ],
-                    "__impliedId": "GL2PS"
-                },
-                "shortname": "GL2PS",
-                "otherNames": [
-                    "GL2PS",
-                    "GL2PS License",
-                    "scancode://gl2ps"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GL2PS License",
@@ -104,32 +82,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "GL2PS"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://www.geuz.org/gl2ps/COPYING.GL2PS",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "GL2PS",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "GL2PS License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "GL2PS License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -168,15 +120,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

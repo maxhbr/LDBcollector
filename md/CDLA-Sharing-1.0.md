@@ -128,25 +128,6 @@ Raw Data
         ],
         "__impliedId": "CDLA-Sharing-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CDLA-Sharing-1.0",
-                        "CDLA-Sharing-1.0",
-                        "Community Data License Agreement Sharing 1.0",
-                        "scancode://cdla-sharing-1.0",
-                        "CDLA Sharing 1.0"
-                    ],
-                    "__impliedId": "CDLA-Sharing-1.0"
-                },
-                "shortname": "CDLA-Sharing-1.0",
-                "otherNames": [
-                    "CDLA-Sharing-1.0",
-                    "Community Data License Agreement Sharing 1.0",
-                    "scancode://cdla-sharing-1.0",
-                    "CDLA Sharing 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Community Data License Agreement Sharing 1.0",

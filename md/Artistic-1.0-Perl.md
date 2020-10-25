@@ -219,25 +219,6 @@ Raw Data
             "Artistic License"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Artistic-1.0-Perl",
-                        "Artistic-1.0-Perl",
-                        "Artistic License 1.0 (Perl)",
-                        "scancode://artistic-perl-1.0",
-                        "Artistic-Perl-1.0"
-                    ],
-                    "__impliedId": "Artistic-1.0-Perl"
-                },
-                "shortname": "Artistic-1.0-Perl",
-                "otherNames": [
-                    "Artistic-1.0-Perl",
-                    "Artistic License 1.0 (Perl)",
-                    "scancode://artistic-perl-1.0",
-                    "Artistic-Perl-1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Artistic License 1.0 (Perl)",

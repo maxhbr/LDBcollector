@@ -103,23 +103,6 @@ Raw Data
             "Creative Commons Attribution License (CC-by), v1.0"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-1.0",
-                        "CC-BY-1.0",
-                        "Creative Commons Attribution 1.0 Generic",
-                        "scancode://cc-by-1.0"
-                    ],
-                    "__impliedId": "CC-BY-1.0"
-                },
-                "shortname": "CC-BY-1.0",
-                "otherNames": [
-                    "CC-BY-1.0",
-                    "Creative Commons Attribution 1.0 Generic",
-                    "scancode://cc-by-1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution 1.0 Generic",

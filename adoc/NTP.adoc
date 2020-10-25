@@ -11,10 +11,10 @@
 
 *Other Names:*
 
+* `+scancode://ntpl+`
 * `+scancode://mit-old-style-no-advert+`
 * `+MIT Old Style no advertising+`
 * `+NTP License (NTP)+`
-* `+scancode://ntpl+`
 
 === Comments on (easy) usability
 
@@ -77,10 +77,10 @@ purpose. It is provided "as is" without express or implied warranty.
     "__impliedNames": [
         "NTP",
         "NTP License",
+        "scancode://ntpl",
         "scancode://mit-old-style-no-advert",
         "MIT Old Style no advertising",
-        "NTP License (NTP)",
-        "scancode://ntpl"
+        "NTP License (NTP)"
     ],
     "__impliedId": "NTP",
     "facts": {
@@ -110,29 +110,6 @@ purpose. It is provided "as is" without express or implied warranty.
                 ]
             },
             "domain_content": false
-        },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "NTP",
-                    "NTP",
-                    "NTP License",
-                    "scancode://mit-old-style-no-advert",
-                    "MIT Old Style no advertising",
-                    "NTP License (NTP)",
-                    "scancode://ntpl"
-                ],
-                "__impliedId": "NTP"
-            },
-            "shortname": "NTP",
-            "otherNames": [
-                "NTP",
-                "NTP License",
-                "scancode://mit-old-style-no-advert",
-                "MIT Old Style no advertising",
-                "NTP License (NTP)",
-                "scancode://ntpl"
-            ]
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

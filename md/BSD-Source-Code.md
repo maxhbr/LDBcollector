@@ -65,23 +65,6 @@ Raw Data
         ],
         "__impliedId": "BSD-Source-Code",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "BSD-Source-Code",
-                        "BSD-Source-Code",
-                        "BSD Source Code Attribution",
-                        "scancode://bsd-source-code"
-                    ],
-                    "__impliedId": "BSD-Source-Code"
-                },
-                "shortname": "BSD-Source-Code",
-                "otherNames": [
-                    "BSD-Source-Code",
-                    "BSD Source Code Attribution",
-                    "scancode://bsd-source-code"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD Source Code Attribution",

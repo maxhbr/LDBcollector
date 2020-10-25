@@ -10,10 +10,6 @@ diffmark license (diffmark)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -45,27 +41,7 @@ Raw Data
             "diffmark License"
         ],
         "__impliedId": "diffmark",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "diffmark",
-                        "diffmark",
-                        "diffmark license",
-                        "scancode://diffmark",
-                        "diffmark License"
-                    ],
-                    "__impliedId": "diffmark"
-                },
-                "shortname": "diffmark",
-                "otherNames": [
-                    "diffmark",
-                    "diffmark license",
-                    "scancode://diffmark",
-                    "diffmark License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "diffmark license",
@@ -94,32 +70,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "diffmark"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/diffmark",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "diffmark",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "diffmark license",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "diffmark license"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -199,13 +149,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

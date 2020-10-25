@@ -139,25 +139,6 @@ Raw Data
                 },
                 "domain_content": true
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OGL-UK-3.0",
-                        "OGL-UK-3.0",
-                        "Open Government Licence v3.0",
-                        "scancode://ogl-uk-3.0",
-                        "Open Government Licence 3.0 (United Kingdom)"
-                    ],
-                    "__impliedId": "OGL-UK-3.0"
-                },
-                "shortname": "OGL-UK-3.0",
-                "otherNames": [
-                    "OGL-UK-3.0",
-                    "Open Government Licence v3.0",
-                    "scancode://ogl-uk-3.0",
-                    "Open Government Licence 3.0 (United Kingdom)"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Government Licence v3.0",

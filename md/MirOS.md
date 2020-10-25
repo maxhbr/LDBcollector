@@ -21,19 +21,6 @@ Comments on (easy) usability
     applicable to more than just software (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -51,8 +38,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/MirOS.html
 
 -   http://www.opensource.org/licenses/MirOS
-
--   http://mirbsd.org/MirOS-Licence
 
 Text
 ----
@@ -86,7 +71,6 @@ Raw Data
             "MirOS Licence"
         ],
         "__impliedId": "MirOS",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The MirOS Licence"
         ],
@@ -117,27 +101,6 @@ Raw Data
                     ]
                 },
                 "domain_content": true
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "MirOS",
-                        "MirOS",
-                        "MirOS License",
-                        "scancode://mir-os",
-                        "The MirOS Licence (MirOS)",
-                        "MirOS Licence"
-                    ],
-                    "__impliedId": "MirOS"
-                },
-                "shortname": "MirOS",
-                "otherNames": [
-                    "MirOS",
-                    "MirOS License",
-                    "scancode://mir-os",
-                    "The MirOS Licence (MirOS)",
-                    "MirOS Licence"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -176,32 +139,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MirOS"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://mirbsd.de/MirOS-Licence",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MirOS",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "MirOS License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "MirOS License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -328,40 +265,6 @@ Raw Data
                     ]
                 }
             },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "http://mirbsd.org/MirOS-Licence",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "MirOS License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "MirOS License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://mirbsd.org/MirOS-Licence"
-                        ]
-                    ]
-                }
-            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -421,24 +324,10 @@ Raw Data
                 }
             ],
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],
@@ -449,10 +338,6 @@ Raw Data
             ],
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -487,10 +372,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/MirOS"
-            ],
-            [
-                null,
-                "http://mirbsd.org/MirOS-Licence"
             ]
         ]
     }

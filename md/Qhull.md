@@ -10,10 +10,6 @@ Qhull License (Qhull)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -77,25 +73,7 @@ Raw Data
             "scancode://qhull"
         ],
         "__impliedId": "Qhull",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Qhull",
-                        "Qhull",
-                        "Qhull License",
-                        "scancode://qhull"
-                    ],
-                    "__impliedId": "Qhull"
-                },
-                "shortname": "Qhull",
-                "otherNames": [
-                    "Qhull",
-                    "Qhull License",
-                    "scancode://qhull"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Qhull License",
@@ -132,32 +110,6 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "Qhull"
-                    ]
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Qhull",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "Qhull",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Qhull License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Qhull License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
                     ]
                 }
             },
@@ -245,13 +197,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

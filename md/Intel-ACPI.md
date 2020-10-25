@@ -12,10 +12,6 @@ Intel ACPI Software License Agreement (Intel-ACPI)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -155,27 +151,7 @@ Raw Data
             "Intel ACPI SLA"
         ],
         "__impliedId": "Intel-ACPI",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Intel-ACPI",
-                        "Intel-ACPI",
-                        "Intel ACPI Software License Agreement",
-                        "scancode://intel-acpi",
-                        "Intel ACPI SLA"
-                    ],
-                    "__impliedId": "Intel-ACPI"
-                },
-                "shortname": "Intel-ACPI",
-                "otherNames": [
-                    "Intel-ACPI",
-                    "Intel ACPI Software License Agreement",
-                    "scancode://intel-acpi",
-                    "Intel ACPI SLA"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Intel ACPI Software License Agreement",
@@ -204,32 +180,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Intel-ACPI"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Intel_ACPI_Software_License_Agreement",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "Intel ACPI",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Intel ACPI Software License Agreement",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Intel ACPI Software License Agreement"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -268,15 +218,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

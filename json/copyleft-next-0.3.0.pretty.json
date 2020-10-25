@@ -6,23 +6,6 @@
     ],
     "__impliedId": "copyleft-next-0.3.0",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "copyleft-next-0.3.0",
-                    "copyleft-next-0.3.0",
-                    "copyleft-next 0.3.0",
-                    "scancode://copyleft-next-0.3.0"
-                ],
-                "__impliedId": "copyleft-next-0.3.0"
-            },
-            "shortname": "copyleft-next-0.3.0",
-            "otherNames": [
-                "copyleft-next-0.3.0",
-                "copyleft-next 0.3.0",
-                "scancode://copyleft-next-0.3.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "copyleft-next 0.3.0",

@@ -157,33 +157,6 @@ Raw Data
                 },
                 "domain_content": true
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "AFL-3.0",
-                        "AFL-3.0",
-                        "Academic Free License v3.0",
-                        "scancode://afl-3.0",
-                        "AFL 3.0",
-                        "afl-3.0",
-                        "Academic Free License, Version 3.0",
-                        "License :: OSI Approved :: Academic Free License (AFL)",
-                        "Academic Free License 3.0"
-                    ],
-                    "__impliedId": "AFL-3.0"
-                },
-                "shortname": "AFL-3.0",
-                "otherNames": [
-                    "AFL-3.0",
-                    "Academic Free License v3.0",
-                    "scancode://afl-3.0",
-                    "AFL 3.0",
-                    "afl-3.0",
-                    "Academic Free License, Version 3.0",
-                    "License :: OSI Approved :: Academic Free License (AFL)",
-                    "Academic Free License 3.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Academic Free License v3.0",

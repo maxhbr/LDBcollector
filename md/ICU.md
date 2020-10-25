@@ -94,39 +94,16 @@ Raw Data
 
     {
         "__impliedNames": [
+            "ICU",
+            "ICU License",
             "X11",
             "X11 License",
             "scancode://x11-xconsortium",
             "X11-Style (X Consortium)",
-            "scancode://x11",
-            "ICU",
-            "ICU License"
+            "scancode://x11"
         ],
         "__impliedId": "ICU",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "X11",
-                        "X11",
-                        "X11 License",
-                        "scancode://x11-xconsortium",
-                        "X11-Style (X Consortium)",
-                        "scancode://x11",
-                        "ICU"
-                    ],
-                    "__impliedId": "X11"
-                },
-                "shortname": "X11",
-                "otherNames": [
-                    "X11",
-                    "X11 License",
-                    "scancode://x11-xconsortium",
-                    "X11-Style (X Consortium)",
-                    "scancode://x11",
-                    "ICU"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "ICU License",

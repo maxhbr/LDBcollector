@@ -12,10 +12,6 @@ SCEA Shared Source License (SCEA)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -101,27 +97,7 @@ Raw Data
             "SCEA Shared Source License 1.0"
         ],
         "__impliedId": "SCEA",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SCEA",
-                        "SCEA",
-                        "SCEA Shared Source License",
-                        "scancode://scea-1.0",
-                        "SCEA Shared Source License 1.0"
-                    ],
-                    "__impliedId": "SCEA"
-                },
-                "shortname": "SCEA",
-                "otherNames": [
-                    "SCEA",
-                    "SCEA Shared Source License",
-                    "scancode://scea-1.0",
-                    "SCEA Shared Source License 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SCEA Shared Source License",
@@ -150,32 +126,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "SCEA"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://research.scea.com/scea_shared_source_license.html",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "SCEA",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "SCEA Shared Source License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "SCEA Shared Source License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -214,15 +164,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

@@ -102,25 +102,6 @@ Raw Data
         ],
         "__impliedId": "AFL-2.1",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "AFL-2.1",
-                        "AFL-2.1",
-                        "Academic Free License v2.1",
-                        "scancode://afl-2.1",
-                        "AFL 2.1"
-                    ],
-                    "__impliedId": "AFL-2.1"
-                },
-                "shortname": "AFL-2.1",
-                "otherNames": [
-                    "AFL-2.1",
-                    "Academic Free License v2.1",
-                    "scancode://afl-2.1",
-                    "AFL 2.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Academic Free License v2.1",

@@ -420,27 +420,6 @@
               },
               "domain_content": false
           },
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "APL-1.0",
-                      "APL-1.0",
-                      "Adaptive Public License 1.0",
-                      "scancode://adapt-1.0",
-                      "APL 1.0",
-                      "Adaptive Public License, Version 1.0"
-                  ],
-                  "__impliedId": "APL-1.0"
-              },
-              "shortname": "APL-1.0",
-              "otherNames": [
-                  "APL-1.0",
-                  "Adaptive Public License 1.0",
-                  "scancode://adapt-1.0",
-                  "APL 1.0",
-                  "Adaptive Public License, Version 1.0"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Adaptive Public License 1.0",

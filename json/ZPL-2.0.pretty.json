@@ -37,31 +37,6 @@
             },
             "domain_content": false
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "ZPL-2.0",
-                    "ZPL-2.0",
-                    "Zope Public License 2.0",
-                    "scancode://zpl-2.0",
-                    "ZPL 2.0",
-                    "The Zope Public License, Version 2.0",
-                    "Zope-2.0",
-                    "License :: OSI Approved :: Zope Public License"
-                ],
-                "__impliedId": "ZPL-2.0"
-            },
-            "shortname": "ZPL-2.0",
-            "otherNames": [
-                "ZPL-2.0",
-                "Zope Public License 2.0",
-                "scancode://zpl-2.0",
-                "ZPL 2.0",
-                "The Zope Public License, Version 2.0",
-                "Zope-2.0",
-                "License :: OSI Approved :: Zope Public License"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Zope Public License 2.0",

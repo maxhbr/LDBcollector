@@ -226,27 +226,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CDDL-1.0",
-                        "CDDL-1.0",
-                        "Common Development and Distribution License 1.0",
-                        "scancode://cddl-1.0",
-                        "CDDL 1.0",
-                        "Common Development and Distribution License, Version 1.0"
-                    ],
-                    "__impliedId": "CDDL-1.0"
-                },
-                "shortname": "CDDL-1.0",
-                "otherNames": [
-                    "CDDL-1.0",
-                    "Common Development and Distribution License 1.0",
-                    "scancode://cddl-1.0",
-                    "CDDL 1.0",
-                    "Common Development and Distribution License, Version 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Common Development and Distribution License 1.0",

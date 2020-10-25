@@ -8,25 +8,6 @@
     "__impliedId": "AFL-2.0",
     "__hasPatentHint": true,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "AFL-2.0",
-                    "AFL-2.0",
-                    "Academic Free License v2.0",
-                    "scancode://afl-2.0",
-                    "AFL 2.0"
-                ],
-                "__impliedId": "AFL-2.0"
-            },
-            "shortname": "AFL-2.0",
-            "otherNames": [
-                "AFL-2.0",
-                "Academic Free License v2.0",
-                "scancode://afl-2.0",
-                "AFL 2.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Academic Free License v2.0",

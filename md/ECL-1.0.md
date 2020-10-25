@@ -22,10 +22,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -112,32 +108,8 @@ Raw Data
             "Educational Community License 1.0"
         ],
         "__impliedId": "ECL-1.0",
-        "__isFsfFree": true,
         "__hasPatentHint": false,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "ECL-1.0",
-                        "ECL-1.0",
-                        "Educational Community License v1.0",
-                        "scancode://ecl-1.0",
-                        "ECL 1.0",
-                        "Educational Community License, Version 1.0",
-                        "Educational Community License 1.0"
-                    ],
-                    "__impliedId": "ECL-1.0"
-                },
-                "shortname": "ECL-1.0",
-                "otherNames": [
-                    "ECL-1.0",
-                    "Educational Community License v1.0",
-                    "scancode://ecl-1.0",
-                    "ECL 1.0",
-                    "Educational Community License, Version 1.0",
-                    "Educational Community License 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Educational Community License v1.0",
@@ -175,32 +147,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "ECL-1.0"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://opensource.org/licenses/ecl1.php",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "ECL 1.0",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Educational Community License 1.0",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Educational Community License 1.0"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -363,13 +309,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

@@ -9,23 +9,6 @@
         "Creative Commons Attribution-Share Alike Generic (CC-BY-SA), v1.0"
     ],
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "CC-BY-SA-1.0",
-                    "CC-BY-SA-1.0",
-                    "Creative Commons Attribution Share Alike 1.0 Generic",
-                    "scancode://cc-by-sa-1.0"
-                ],
-                "__impliedId": "CC-BY-SA-1.0"
-            },
-            "shortname": "CC-BY-SA-1.0",
-            "otherNames": [
-                "CC-BY-SA-1.0",
-                "Creative Commons Attribution Share Alike 1.0 Generic",
-                "scancode://cc-by-sa-1.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Creative Commons Attribution Share Alike 1.0 Generic",

@@ -12,10 +12,6 @@ Erlang Public License v1.1 (ErlPL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -326,27 +322,7 @@ Raw Data
             "Erlang Public License 1.1"
         ],
         "__impliedId": "ErlPL-1.1",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "ErlPL-1.1",
-                        "ErlPL-1.1",
-                        "Erlang Public License v1.1",
-                        "scancode://erlangpl-1.1",
-                        "Erlang Public License 1.1"
-                    ],
-                    "__impliedId": "ErlPL-1.1"
-                },
-                "shortname": "ErlPL-1.1",
-                "otherNames": [
-                    "ErlPL-1.1",
-                    "Erlang Public License v1.1",
-                    "scancode://erlangpl-1.1",
-                    "Erlang Public License 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Erlang Public License v1.1",
@@ -375,32 +351,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "ErlPL-1.1"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ErlangPublicLicense",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "ERPL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Erlang Public License 1.1",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Erlang Public License 1.1"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -439,15 +389,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

@@ -366,23 +366,6 @@ Raw Data
             "Creative Commons Attribution unported (CC-BY) v3.0"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-3.0",
-                        "CC-BY-3.0",
-                        "Creative Commons Attribution 3.0 Unported",
-                        "scancode://cc-by-3.0"
-                    ],
-                    "__impliedId": "CC-BY-3.0"
-                },
-                "shortname": "CC-BY-3.0",
-                "otherNames": [
-                    "CC-BY-3.0",
-                    "Creative Commons Attribution 3.0 Unported",
-                    "scancode://cc-by-3.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution 3.0 Unported",

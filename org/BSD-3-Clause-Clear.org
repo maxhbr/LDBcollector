@@ -114,27 +114,6 @@
           "The BSD-3-clause License"
       ],
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "BSD-3-Clause-Clear",
-                      "BSD-3-Clause-Clear",
-                      "BSD 3-Clause Clear License",
-                      "scancode://clear-bsd",
-                      "Clear BSD License",
-                      "bsd-3-clause-clear"
-                  ],
-                  "__impliedId": "BSD-3-Clause-Clear"
-              },
-              "shortname": "BSD-3-Clause-Clear",
-              "otherNames": [
-                  "BSD-3-Clause-Clear",
-                  "BSD 3-Clause Clear License",
-                  "scancode://clear-bsd",
-                  "Clear BSD License",
-                  "bsd-3-clause-clear"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "BSD 3-Clause Clear License",

@@ -299,29 +299,6 @@
               },
               "domain_content": false
           },
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "Python-2.0",
-                      "Python-2.0",
-                      "Python License 2.0",
-                      "scancode://python",
-                      "Python License, Version 2.0",
-                      "License :: OSI Approved :: Python Software Foundation License",
-                      "Python Software Foundation License 2"
-                  ],
-                  "__impliedId": "Python-2.0"
-              },
-              "shortname": "Python-2.0",
-              "otherNames": [
-                  "Python-2.0",
-                  "Python License 2.0",
-                  "scancode://python",
-                  "Python License, Version 2.0",
-                  "License :: OSI Approved :: Python Software Foundation License",
-                  "Python Software Foundation License 2"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Python License 2.0",

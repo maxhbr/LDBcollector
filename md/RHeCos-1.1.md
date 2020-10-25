@@ -476,25 +476,6 @@ Raw Data
         ],
         "__impliedId": "RHeCos-1.1",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "RHeCos-1.1",
-                        "RHeCos-1.1",
-                        "Red Hat eCos Public License v1.1",
-                        "scancode://ecosrh-1.1",
-                        "Red Hat eCos Public License 1.1"
-                    ],
-                    "__impliedId": "RHeCos-1.1"
-                },
-                "shortname": "RHeCos-1.1",
-                "otherNames": [
-                    "RHeCos-1.1",
-                    "Red Hat eCos Public License v1.1",
-                    "scancode://ecosrh-1.1",
-                    "Red Hat eCos Public License 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Red Hat eCos Public License v1.1",

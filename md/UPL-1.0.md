@@ -119,27 +119,6 @@ Raw Data
         ],
         "__impliedId": "UPL-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "UPL-1.0",
-                        "UPL-1.0",
-                        "Universal Permissive License v1.0",
-                        "scancode://upl-1.0",
-                        "UPL 1.0",
-                        "upl-1.0"
-                    ],
-                    "__impliedId": "UPL-1.0"
-                },
-                "shortname": "UPL-1.0",
-                "otherNames": [
-                    "UPL-1.0",
-                    "Universal Permissive License v1.0",
-                    "scancode://upl-1.0",
-                    "UPL 1.0",
-                    "upl-1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Universal Permissive License v1.0",

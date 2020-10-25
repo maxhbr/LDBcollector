@@ -190,23 +190,6 @@ Raw Data
         ],
         "__impliedId": "NBPL-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "NBPL-1.0",
-                        "NBPL-1.0",
-                        "Net Boolean Public License v1",
-                        "scancode://nbpl-1.0"
-                    ],
-                    "__impliedId": "NBPL-1.0"
-                },
-                "shortname": "NBPL-1.0",
-                "otherNames": [
-                    "NBPL-1.0",
-                    "Net Boolean Public License v1",
-                    "scancode://nbpl-1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Net Boolean Public License v1",

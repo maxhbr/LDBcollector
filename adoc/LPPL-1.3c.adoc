@@ -7,7 +7,6 @@
 |Shortname |LPPL-1.3c
 |Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |Copyleft
-|Has Patent Hint |False
 |===
 
 *Other Names:*
@@ -503,7 +502,6 @@ Important Recommendations
         "LaTeX Project Public License 1.3c"
     ],
     "__impliedId": "LPPL-1.3c",
-    "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -531,31 +529,6 @@ Important Recommendations
                 ]
             },
             "domain_content": false
-        },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "LPPL-1.3c",
-                    "LPPL-1.3c",
-                    "LaTeX Project Public License v1.3c",
-                    "scancode://lppl-1.3c",
-                    "LPPL 1.3c",
-                    "lppl-1.3c",
-                    "LaTeX Project Public License, Version 1.3c",
-                    "LaTeX Project Public License 1.3c"
-                ],
-                "__impliedId": "LPPL-1.3c"
-            },
-            "shortname": "LPPL-1.3c",
-            "otherNames": [
-                "LPPL-1.3c",
-                "LaTeX Project Public License v1.3c",
-                "scancode://lppl-1.3c",
-                "LPPL 1.3c",
-                "lppl-1.3c",
-                "LaTeX Project Public License, Version 1.3c",
-                "LaTeX Project Public License 1.3c"
-            ]
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -744,29 +717,6 @@ Important Recommendations
                         "https://opensource.org/licenses/LPPL-1.3c"
                     ]
                 ]
-            }
-        },
-        "Wikipedia": {
-            "Linking": {
-                "value": "Permissive",
-                "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
-            },
-            "Publication date": null,
-            "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-            "Koordinaten": {
-                "name": "LaTeX Project Public License",
-                "version": "1.3c",
-                "spdxId": ""
-            },
-            "_implications": {
-                "__impliedNames": [
-                    "LaTeX Project Public License 1.3c"
-                ],
-                "__hasPatentHint": false
-            },
-            "Modification": {
-                "value": "Permissive",
-                "description": "modification of the code by a licensee"
             }
         },
         "choosealicense.com": {

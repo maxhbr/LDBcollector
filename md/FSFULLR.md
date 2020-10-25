@@ -12,10 +12,6 @@ FSF Unlimited License (with License Retention) (FSFULLR)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -44,27 +40,7 @@ Raw Data
             "FSF-Unlimited"
         ],
         "__impliedId": "FSFULLR",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "FSFULLR",
-                        "FSFULLR",
-                        "FSF Unlimited License (with License Retention)",
-                        "scancode://fsf-unlimited",
-                        "FSF-Unlimited"
-                    ],
-                    "__impliedId": "FSFULLR"
-                },
-                "shortname": "FSFULLR",
-                "otherNames": [
-                    "FSFULLR",
-                    "FSF Unlimited License (with License Retention)",
-                    "scancode://fsf-unlimited",
-                    "FSF-Unlimited"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "FSF Unlimited License (with License Retention)",
@@ -93,32 +69,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "FSFULLR"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "FSFULLR",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "FSF Unlimited License (with License Retention)",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "FSF Unlimited License (with License Retention)"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -157,15 +107,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

@@ -117,25 +117,6 @@ authorization of the copyright holder.
     ],
     "__impliedId": "Unicode-DFS-2016",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Unicode-DFS-2016",
-                    "Unicode-DFS-2016",
-                    "Unicode License Agreement - Data Files and Software (2016)",
-                    "scancode://unicode-dfs-2016",
-                    "Unicode DFS 2016"
-                ],
-                "__impliedId": "Unicode-DFS-2016"
-            },
-            "shortname": "Unicode-DFS-2016",
-            "otherNames": [
-                "Unicode-DFS-2016",
-                "Unicode License Agreement - Data Files and Software (2016)",
-                "scancode://unicode-dfs-2016",
-                "Unicode DFS 2016"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Unicode License Agreement - Data Files and Software (2016)",

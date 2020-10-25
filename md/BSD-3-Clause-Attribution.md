@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -74,27 +70,7 @@ Raw Data
             "BSD Acknowledgment License"
         ],
         "__impliedId": "BSD-3-Clause-Attribution",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "BSD-3-Clause-Attribution",
-                        "BSD-3-Clause-Attribution",
-                        "BSD with attribution",
-                        "scancode://bsd-ack",
-                        "BSD Acknowledgment License"
-                    ],
-                    "__impliedId": "BSD-3-Clause-Attribution"
-                },
-                "shortname": "BSD-3-Clause-Attribution",
-                "otherNames": [
-                    "BSD-3-Clause-Attribution",
-                    "BSD with attribution",
-                    "scancode://bsd-ack",
-                    "BSD Acknowledgment License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD with attribution",
@@ -123,32 +99,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "BSD-3-Clause-Attribution"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": null,
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution",
-                "GPLv3 Compat?": null,
-                "Short Name": "BSD with attribution",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "BSD with attribution",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "BSD with attribution"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -228,13 +178,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

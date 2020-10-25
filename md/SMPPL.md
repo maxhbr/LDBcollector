@@ -63,23 +63,6 @@ Raw Data
         ],
         "__impliedId": "SMPPL",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SMPPL",
-                        "SMPPL",
-                        "Secure Messaging Protocol Public License",
-                        "scancode://smppl"
-                    ],
-                    "__impliedId": "SMPPL"
-                },
-                "shortname": "SMPPL",
-                "otherNames": [
-                    "SMPPL",
-                    "Secure Messaging Protocol Public License",
-                    "scancode://smppl"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Secure Messaging Protocol Public License",

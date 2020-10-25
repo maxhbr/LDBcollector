@@ -44,25 +44,6 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
         "GNU Free Documentation License (GFDL)"
     ],
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "GFDL-1.1-or-later",
-                    "GFDL-1.1-or-later",
-                    "GNU Free Documentation License v1.1 or later",
-                    "scancode://gfdl-1.1-plus",
-                    "GFDL 1.1 or later"
-                ],
-                "__impliedId": "GFDL-1.1-or-later"
-            },
-            "shortname": "GFDL-1.1-or-later",
-            "otherNames": [
-                "GFDL-1.1-or-later",
-                "GNU Free Documentation License v1.1 or later",
-                "scancode://gfdl-1.1-plus",
-                "GFDL 1.1 or later"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "GNU Free Documentation License v1.1 or later",

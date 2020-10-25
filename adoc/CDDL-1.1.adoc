@@ -130,25 +130,6 @@ The code released under the CDDL shall be governed by the laws of the State of C
     ],
     "__impliedId": "CDDL-1.1",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "CDDL-1.1",
-                    "CDDL-1.1",
-                    "Common Development and Distribution License 1.1",
-                    "scancode://cddl-1.1",
-                    "CDDL 1.1"
-                ],
-                "__impliedId": "CDDL-1.1"
-            },
-            "shortname": "CDDL-1.1",
-            "otherNames": [
-                "CDDL-1.1",
-                "Common Development and Distribution License 1.1",
-                "scancode://cddl-1.1",
-                "CDDL 1.1"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Common Development and Distribution License 1.1",

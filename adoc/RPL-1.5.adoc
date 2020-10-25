@@ -295,27 +295,6 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
             },
             "domain_content": false
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "RPL-1.5",
-                    "RPL-1.5",
-                    "Reciprocal Public License 1.5",
-                    "scancode://rpl-1.5",
-                    "RPL 1.5",
-                    "Reciprocal Public License, Version 1.5"
-                ],
-                "__impliedId": "RPL-1.5"
-            },
-            "shortname": "RPL-1.5",
-            "otherNames": [
-                "RPL-1.5",
-                "Reciprocal Public License 1.5",
-                "scancode://rpl-1.5",
-                "RPL 1.5",
-                "Reciprocal Public License, Version 1.5"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Reciprocal Public License 1.5",

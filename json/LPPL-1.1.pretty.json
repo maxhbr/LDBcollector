@@ -7,25 +7,6 @@
     ],
     "__impliedId": "LPPL-1.1",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "LPPL-1.1",
-                    "LPPL-1.1",
-                    "LaTeX Project Public License v1.1",
-                    "scancode://lppl-1.1",
-                    "LPPL 1.1"
-                ],
-                "__impliedId": "LPPL-1.1"
-            },
-            "shortname": "LPPL-1.1",
-            "otherNames": [
-                "LPPL-1.1",
-                "LaTeX Project Public License v1.1",
-                "scancode://lppl-1.1",
-                "LPPL 1.1"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "LaTeX Project Public License v1.1",

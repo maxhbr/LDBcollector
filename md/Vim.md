@@ -10,16 +10,6 @@ Vim License (Vim)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je
-    nachdem wie umfangreich eine Modifikation ist. Zudem werden dem
-    Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie
-    Weiterentwicklungen weiterverbreitet werden können. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 URLs
 ----
 
@@ -28,8 +18,6 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/Vim.json
 
 -   http://www.vim.org/docs.php
-
--   http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html\#license
 
 Text
 ----
@@ -150,27 +138,7 @@ Raw Data
             "VIM License"
         ],
         "__impliedId": "Vim",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Vim",
-                        "Vim",
-                        "Vim License",
-                        "scancode://vim",
-                        "VIM License"
-                    ],
-                    "__impliedId": "Vim"
-                },
-                "shortname": "Vim",
-                "otherNames": [
-                    "Vim",
-                    "Vim License",
-                    "scancode://vim",
-                    "VIM License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Vim License",
@@ -199,32 +167,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Vim"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://vimdoc.sourceforge.net/htmldoc/uganda.html",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "Vim",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Vim License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Vim License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -267,66 +209,12 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrLicenseWithChoice",
-                "ifrURL": "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Vim License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Vim License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "MaybeCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "MaybeCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license"
-                        ]
-                    ]
-                }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene WahlmÃ¶glichkeiten eingerÃ¤umt, wie Weiterentwicklungen weiterverbreitet werden kÃ¶nnen."
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",
                 "Copyleft"
-            ],
-            [
-                "ifrOSS",
-                "MaybeCopyleft"
             ]
         ],
         "__calculatedCopyleft": "Copyleft",
@@ -348,10 +236,6 @@ Raw Data
             [
                 null,
                 "http://www.vim.org/docs.php"
-            ],
-            [
-                null,
-                "http://web.archive.org/web/20070207020422/https://www.vim.org/htmldoc/uganda.html#license"
             ]
         ]
     }

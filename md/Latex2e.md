@@ -10,10 +10,6 @@ Latex2e License (Latex2e)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -48,25 +44,7 @@ Raw Data
             "scancode://latex2e"
         ],
         "__impliedId": "Latex2e",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Latex2e",
-                        "Latex2e",
-                        "Latex2e License",
-                        "scancode://latex2e"
-                    ],
-                    "__impliedId": "Latex2e"
-                },
-                "shortname": "Latex2e",
-                "otherNames": [
-                    "Latex2e",
-                    "Latex2e License",
-                    "scancode://latex2e"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Latex2e License",
@@ -95,32 +73,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Latex2e"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Latex2e",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "Latex2e",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Latex2e License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Latex2e License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -159,15 +111,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

@@ -71,25 +71,6 @@ Raw Data
         "__impliedId": "IBM-pibs",
         "__hasPatentHint": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "IBM-pibs",
-                        "IBM-pibs",
-                        "IBM PowerPC Initialization and Boot Software",
-                        "scancode://ibm-pibs",
-                        "IBM PowerPC Software"
-                    ],
-                    "__impliedId": "IBM-pibs"
-                },
-                "shortname": "IBM-pibs",
-                "otherNames": [
-                    "IBM-pibs",
-                    "IBM PowerPC Initialization and Boot Software",
-                    "scancode://ibm-pibs",
-                    "IBM PowerPC Software"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "IBM PowerPC Initialization and Boot Software",

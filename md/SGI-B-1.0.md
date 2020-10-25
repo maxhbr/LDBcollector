@@ -77,25 +77,6 @@ Raw Data
         ],
         "__impliedId": "SGI-B-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SGI-B-1.0",
-                        "SGI-B-1.0",
-                        "SGI Free Software License B v1.0",
-                        "scancode://sgi-fslb-1.0",
-                        "SGI Free Software License B 1.0"
-                    ],
-                    "__impliedId": "SGI-B-1.0"
-                },
-                "shortname": "SGI-B-1.0",
-                "otherNames": [
-                    "SGI-B-1.0",
-                    "SGI Free Software License B v1.0",
-                    "scancode://sgi-fslb-1.0",
-                    "SGI Free Software License B 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SGI Free Software License B v1.0",

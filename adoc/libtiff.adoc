@@ -21,9 +21,6 @@ https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 * **↑**Rating is: Bronze (source:
 https://blueoakcouncil.org/list[BlueOak License List])
-* **↑**This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
 
 === URLs
 
@@ -80,27 +77,7 @@ OF THIS SOFTWARE.
         "X11-Style (Tiff)"
     ],
     "__impliedId": "libtiff",
-    "__isFsfFree": true,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "libtiff",
-                    "libtiff",
-                    "libtiff License",
-                    "scancode://x11-tiff",
-                    "X11-Style (Tiff)"
-                ],
-                "__impliedId": "libtiff"
-            },
-            "shortname": "libtiff",
-            "otherNames": [
-                "libtiff",
-                "libtiff License",
-                "scancode://x11-tiff",
-                "X11-Style (Tiff)"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "libtiff License",
@@ -137,32 +114,6 @@ OF THIS SOFTWARE.
             "_implications": {
                 "__impliedNames": [
                     "libtiff"
-                ]
-            }
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/libtiff",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "libtiff",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "libtiff License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "libtiff License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
                 ]
             }
         },
@@ -265,13 +216,6 @@ OF THIS SOFTWARE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

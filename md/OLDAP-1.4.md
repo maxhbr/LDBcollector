@@ -183,25 +183,6 @@ Raw Data
         ],
         "__impliedId": "OLDAP-1.4",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OLDAP-1.4",
-                        "OLDAP-1.4",
-                        "Open LDAP Public License v1.4",
-                        "scancode://openldap-1.4",
-                        "OpenLDAP Public License 1.4"
-                    ],
-                    "__impliedId": "OLDAP-1.4"
-                },
-                "shortname": "OLDAP-1.4",
-                "otherNames": [
-                    "OLDAP-1.4",
-                    "Open LDAP Public License v1.4",
-                    "scancode://openldap-1.4",
-                    "OpenLDAP Public License 1.4"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open LDAP Public License v1.4",

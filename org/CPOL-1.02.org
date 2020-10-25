@@ -129,25 +129,6 @@
       "__impliedId": "CPOL-1.02",
       "__hasPatentHint": true,
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "CPOL-1.02",
-                      "CPOL-1.02",
-                      "Code Project Open License 1.02",
-                      "scancode://cpol-1.02",
-                      "CPOL 1.02"
-                  ],
-                  "__impliedId": "CPOL-1.02"
-              },
-              "shortname": "CPOL-1.02",
-              "otherNames": [
-                  "CPOL-1.02",
-                  "Code Project Open License 1.02",
-                  "scancode://cpol-1.02",
-                  "CPOL 1.02"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Code Project Open License 1.02",

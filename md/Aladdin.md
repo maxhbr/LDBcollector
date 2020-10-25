@@ -12,11 +12,6 @@ Aladdin Free Public License (Aladdin)
 Comments on (easy) usability
 ----------------------------
 
--   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
-    Fedora is permitted to use this license. It is either non-free or
-    deprecated. (source: [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -107,25 +102,6 @@ Raw Data
         ],
         "__impliedId": "Aladdin",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Aladdin",
-                        "Aladdin",
-                        "Aladdin Free Public License",
-                        "scancode://afpl-8.0",
-                        "Aladdin FPL v8"
-                    ],
-                    "__impliedId": "Aladdin"
-                },
-                "shortname": "Aladdin",
-                "otherNames": [
-                    "Aladdin",
-                    "Aladdin Free Public License",
-                    "scancode://afpl-8.0",
-                    "Aladdin FPL v8"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Aladdin Free Public License",
@@ -154,29 +130,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Aladdin"
-            },
-            "Fedora Project Wiki": {
-                "rating": "Bad",
-                "Upstream URL": "http://www.artifex.com/downloads/doc/Public.htm",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Aladdin Free Public License",
-                "FSF Free?": "No",
-                "_implications": {
-                    "__impliedNames": [
-                        "Aladdin Free Public License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "NegativeJudgement",
-                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                            }
-                        ]
-                    ]
-                },
-                "Notes": null
             },
             "Scancode": {
                 "otherUrls": null,
@@ -215,15 +168,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "NegativeJudgement",
-                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

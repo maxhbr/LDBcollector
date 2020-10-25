@@ -38,27 +38,6 @@
             },
             "domain_content": false
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "CPAL-1.0",
-                    "CPAL-1.0",
-                    "Common Public Attribution License 1.0",
-                    "scancode://cpal-1.0",
-                    "CPAL 1.0",
-                    "Common Public Attribution License Version 1.0 (CPAL-1.0)"
-                ],
-                "__impliedId": "CPAL-1.0"
-            },
-            "shortname": "CPAL-1.0",
-            "otherNames": [
-                "CPAL-1.0",
-                "Common Public Attribution License 1.0",
-                "scancode://cpal-1.0",
-                "CPAL 1.0",
-                "Common Public Attribution License Version 1.0 (CPAL-1.0)"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Common Public Attribution License 1.0",

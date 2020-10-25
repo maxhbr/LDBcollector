@@ -10,16 +10,6 @@ No Limit Public License (NLPL)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
--   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
-    Lizenznehmer verpflichtet von der ursprünglichen Software
-    abgeleitete Werke ebenfalls nur unter den Bedingungen der
-    Ursprungslizenz weiterzuverbreiten. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -31,8 +21,6 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/NLPL.json
 
 -   **SPDX:** https://spdx.org/licenses/NLPL.html
-
--   http://spdx.org/licenses/NLPL
 
 Text
 ----
@@ -63,25 +51,7 @@ Raw Data
             "scancode://nlpl"
         ],
         "__impliedId": "NLPL",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "NLPL",
-                        "NLPL",
-                        "No Limit Public License",
-                        "scancode://nlpl"
-                    ],
-                    "__impliedId": "NLPL"
-                },
-                "shortname": "NLPL",
-                "otherNames": [
-                    "NLPL",
-                    "No Limit Public License",
-                    "scancode://nlpl"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "No Limit Public License",
@@ -110,32 +80,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "NLPL"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/NLPL",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "NLPL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "No Limit Public License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "No Limit Public License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -207,40 +151,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrStrongCopyleft",
-                "ifrURL": "http://spdx.org/licenses/NLPL",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "No Limit Public License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "No Limit Public License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "StrongCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "StrongCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://spdx.org/licenses/NLPL"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -249,20 +159,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
                 }
             ]
         ],
@@ -274,13 +170,9 @@ Raw Data
             [
                 "Scancode",
                 "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
-                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "StrongCopyleft",
+        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
         "__impliedText": "NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.",
         "__impliedURLs": [
@@ -299,10 +191,6 @@ Raw Data
             [
                 "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/NLPL"
-            ],
-            [
-                null,
-                "http://spdx.org/licenses/NLPL"
             ]
         ]
     }

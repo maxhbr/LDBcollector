@@ -13,10 +13,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -76,25 +72,7 @@ Raw Data
             "scancode://antlr-pd"
         ],
         "__impliedId": "ANTLR-PD",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "ANTLR-PD",
-                        "ANTLR-PD",
-                        "ANTLR Software Rights Notice",
-                        "scancode://antlr-pd"
-                    ],
-                    "__impliedId": "ANTLR-PD"
-                },
-                "shortname": "ANTLR-PD",
-                "otherNames": [
-                    "ANTLR-PD",
-                    "ANTLR Software Rights Notice",
-                    "scancode://antlr-pd"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "ANTLR Software Rights Notice",
@@ -123,32 +101,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "ANTLR-PD"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ANTLR-PD",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "ANTLR-PD",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "ANTLR Software Rights Notice",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "ANTLR Software Rights Notice"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -239,13 +191,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

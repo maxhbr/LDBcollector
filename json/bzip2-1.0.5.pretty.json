@@ -6,21 +6,6 @@
     "__impliedId": "bzip2-1.0.5",
     "__hasPatentHint": true,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "bzip2-1.0.5",
-                    "bzip2-1.0.5",
-                    "bzip2 and libbzip2 License v1.0.5"
-                ],
-                "__impliedId": "bzip2-1.0.5"
-            },
-            "shortname": "bzip2-1.0.5",
-            "otherNames": [
-                "bzip2-1.0.5",
-                "bzip2 and libbzip2 License v1.0.5"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "bzip2 and libbzip2 License v1.0.5",

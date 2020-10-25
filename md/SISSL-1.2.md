@@ -186,25 +186,6 @@ Raw Data
         ],
         "__impliedId": "SISSL-1.2",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SISSL-1.2",
-                        "SISSL-1.2",
-                        "Sun Industry Standards Source License v1.2",
-                        "scancode://sun-sissl-1.2",
-                        "Sun Industry Standards Source License 1.2"
-                    ],
-                    "__impliedId": "SISSL-1.2"
-                },
-                "shortname": "SISSL-1.2",
-                "otherNames": [
-                    "SISSL-1.2",
-                    "Sun Industry Standards Source License v1.2",
-                    "scancode://sun-sissl-1.2",
-                    "Sun Industry Standards Source License 1.2"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sun Industry Standards Source License v1.2",

@@ -144,25 +144,6 @@ Further context, best practice and guidance can be found in the UK Government Li
             },
             "domain_content": true
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "OGL-UK-2.0",
-                    "OGL-UK-2.0",
-                    "Open Government Licence v2.0",
-                    "scancode://ogl-uk-2.0",
-                    "Open Government Licence 2.0 (United Kingdom)"
-                ],
-                "__impliedId": "OGL-UK-2.0"
-            },
-            "shortname": "OGL-UK-2.0",
-            "otherNames": [
-                "OGL-UK-2.0",
-                "Open Government Licence v2.0",
-                "scancode://ogl-uk-2.0",
-                "Open Government Licence 2.0 (United Kingdom)"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Government Licence v2.0",

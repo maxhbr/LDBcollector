@@ -10,10 +10,6 @@ gnuplot License (gnuplot)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -66,25 +62,7 @@ Raw Data
             "scancode://gnuplot"
         ],
         "__impliedId": "gnuplot",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "gnuplot",
-                        "gnuplot",
-                        "gnuplot License",
-                        "scancode://gnuplot"
-                    ],
-                    "__impliedId": "gnuplot"
-                },
-                "shortname": "gnuplot",
-                "otherNames": [
-                    "gnuplot",
-                    "gnuplot License",
-                    "scancode://gnuplot"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "gnuplot License",
@@ -113,32 +91,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "gnuplot"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Gnuplot",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "gnuplot",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "gnuplot License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "gnuplot License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -183,15 +135,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

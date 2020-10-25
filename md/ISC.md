@@ -40,15 +40,6 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 Obligations
 -----------
 
@@ -79,8 +70,6 @@ URLs
 -   http://www.opensource.org/licenses/ISC
 
 -   https://www.isc.org/isc-license-1.0.html
-
--   http://mirbsd.org/ISC-Licence
 
 OSADL Rule
 ----------
@@ -153,31 +142,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "ISC",
-                        "ISC",
-                        "ISC License",
-                        "scancode://isc",
-                        "isc",
-                        "ISC License (ISC)",
-                        "License :: OSI Approved :: ISC License (ISCL)",
-                        "ISC license"
-                    ],
-                    "__impliedId": "ISC"
-                },
-                "shortname": "ISC",
-                "otherNames": [
-                    "ISC",
-                    "ISC License",
-                    "scancode://isc",
-                    "isc",
-                    "ISC License (ISC)",
-                    "License :: OSI Approved :: ISC License (ISCL)",
-                    "ISC license"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -373,40 +337,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/ISC.html"
-                        ]
-                    ]
-                }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "http://mirbsd.org/ISC-Licence",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "ISC License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "ISC License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://mirbsd.org/ISC-Licence"
                         ]
                     ]
                 }
@@ -662,13 +592,6 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                }
             ]
         ],
         "__impliedCopyleft": [
@@ -682,10 +605,6 @@ Raw Data
             ],
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -776,10 +695,6 @@ Raw Data
             [
                 "Wikipedia page",
                 "https://en.wikipedia.org/wiki/ISC_license"
-            ],
-            [
-                null,
-                "http://mirbsd.org/ISC-Licence"
             ]
         ]
     }

@@ -5,13 +5,13 @@ NTP License (NTP)
 
 **Other Names:**
 
+-   `scancode://ntpl`
+
 -   `scancode://mit-old-style-no-advert`
 
 -   `MIT Old Style no advertising`
 
 -   `NTP License (NTP)`
-
--   `scancode://ntpl`
 
 Comments on (easy) usability
 ----------------------------
@@ -85,10 +85,10 @@ Raw Data
         "__impliedNames": [
             "NTP",
             "NTP License",
+            "scancode://ntpl",
             "scancode://mit-old-style-no-advert",
             "MIT Old Style no advertising",
-            "NTP License (NTP)",
-            "scancode://ntpl"
+            "NTP License (NTP)"
         ],
         "__impliedId": "NTP",
         "facts": {
@@ -118,29 +118,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "NTP",
-                        "NTP",
-                        "NTP License",
-                        "scancode://mit-old-style-no-advert",
-                        "MIT Old Style no advertising",
-                        "NTP License (NTP)",
-                        "scancode://ntpl"
-                    ],
-                    "__impliedId": "NTP"
-                },
-                "shortname": "NTP",
-                "otherNames": [
-                    "NTP",
-                    "NTP License",
-                    "scancode://mit-old-style-no-advert",
-                    "MIT Old Style no advertising",
-                    "NTP License (NTP)",
-                    "scancode://ntpl"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

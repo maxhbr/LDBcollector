@@ -9,35 +9,15 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 
 -   `GNU Lesser General Public License v3.0 or later`
 
--   `scancode://lgpl-3.0-plus`
-
--   `LGPL 3.0 or later`
-
--   `GNU Lesser General Public License 3.0`
-
--   `LGPL-3.0+`
-
--   `LGPL-3+`
-
--   `LGPL3.0+`
-
--   `LGPL3`
-
--   `LGPL (v3.0)`
-
--   `LGPL (v3 or later)`
-
 -   `LGPL-3.0`
-
--   `LGPL-3`
-
--   `LGPL3.0`
-
--   `LGPL (v3)`
 
 -   `scancode://lgpl-3.0`
 
 -   `LGPL 3.0`
+
+-   `scancode://lgpl-3.0-plus`
+
+-   `LGPL 3.0 or later`
 
 -   `lgpl-3.0`
 
@@ -48,6 +28,26 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 -   `License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)`
 
 -   `License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)`
+
+-   `GNU Lesser General Public License 3.0`
+
+-   `LGPL-3`
+
+-   `LGPL3.0`
+
+-   `LGPL3`
+
+-   `LGPL (v3.0)`
+
+-   `LGPL (v3)`
+
+-   `LGPL-3.0+`
+
+-   `LGPL-3+`
+
+-   `LGPL3.0+`
+
+-   `LGPL (v3 or later)`
 
 Description
 -----------
@@ -456,30 +456,30 @@ Raw Data
 
     {
         "__impliedNames": [
+            "LGPL-3.0-only",
+            "GNU Lesser General Public License v3.0 only",
             "LGPL-3.0-or-later",
             "GNU Lesser General Public License v3.0 or later",
-            "scancode://lgpl-3.0-plus",
-            "LGPL 3.0 or later",
-            "GNU Lesser General Public License 3.0",
-            "LGPL-3.0+",
-            "LGPL-3+",
-            "LGPL3.0+",
-            "LGPL3",
-            "LGPL (v3.0)",
-            "LGPL (v3 or later)",
-            "LGPL-3.0-only",
             "LGPL-3.0",
-            "LGPL-3",
-            "LGPL3.0",
-            "LGPL (v3)",
-            "GNU Lesser General Public License v3.0 only",
             "scancode://lgpl-3.0",
             "LGPL 3.0",
+            "scancode://lgpl-3.0-plus",
+            "LGPL 3.0 or later",
             "lgpl-3.0",
             "GNU LGPLv3",
             "GNU Lesser General Public License, Version 3.0",
             "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
-            "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)"
+            "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+            "GNU Lesser General Public License 3.0",
+            "LGPL-3",
+            "LGPL3.0",
+            "LGPL3",
+            "LGPL (v3.0)",
+            "LGPL (v3)",
+            "LGPL-3.0+",
+            "LGPL-3+",
+            "LGPL3.0+",
+            "LGPL (v3 or later)"
         ],
         "__impliedId": "LGPL-3.0-only",
         "__isFsfFree": true,
@@ -514,49 +514,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "LGPL-3.0-or-later",
-                        "LGPL-3.0-or-later",
-                        "GNU Lesser General Public License v3.0 or later",
-                        "scancode://lgpl-3.0-plus",
-                        "LGPL 3.0 or later",
-                        "GNU Lesser General Public License 3.0",
-                        "LGPL-3.0+",
-                        "LGPL-3+",
-                        "LGPL3.0+",
-                        "LGPL3",
-                        "LGPL (v3.0)",
-                        "LGPL (v3 or later)",
-                        "LGPL-3.0-only",
-                        "LGPL-3.0",
-                        "LGPL-3",
-                        "LGPL3.0",
-                        "LGPL (v3)"
-                    ],
-                    "__impliedId": "LGPL-3.0-or-later"
-                },
-                "shortname": "LGPL-3.0-or-later",
-                "otherNames": [
-                    "LGPL-3.0-or-later",
-                    "GNU Lesser General Public License v3.0 or later",
-                    "scancode://lgpl-3.0-plus",
-                    "LGPL 3.0 or later",
-                    "GNU Lesser General Public License 3.0",
-                    "LGPL-3.0+",
-                    "LGPL-3+",
-                    "LGPL3.0+",
-                    "LGPL3",
-                    "LGPL (v3.0)",
-                    "LGPL (v3 or later)",
-                    "LGPL-3.0-only",
-                    "LGPL-3.0",
-                    "LGPL-3",
-                    "LGPL3.0",
-                    "LGPL (v3)"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

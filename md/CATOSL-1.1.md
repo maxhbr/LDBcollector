@@ -19,10 +19,6 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/CATOSL-1.1.html "SPDX"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -406,7 +402,6 @@ Raw Data
             "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
         ],
         "__impliedId": "CATOSL-1.1",
-        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -434,29 +429,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CATOSL-1.1",
-                        "CATOSL-1.1",
-                        "Computer Associates Trusted Open Source License 1.1",
-                        "scancode://ca-tosl-1.1",
-                        "CA Trusted Open Source License 1.1",
-                        "Computer Associates Trusted Open Source License, Version 1.1",
-                        "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
-                    ],
-                    "__impliedId": "CATOSL-1.1"
-                },
-                "shortname": "CATOSL-1.1",
-                "otherNames": [
-                    "CATOSL-1.1",
-                    "Computer Associates Trusted Open Source License 1.1",
-                    "scancode://ca-tosl-1.1",
-                    "CA Trusted Open Source License 1.1",
-                    "Computer Associates Trusted Open Source License, Version 1.1",
-                    "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -495,32 +467,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "CATOSL-1.1"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://opensource.org/licenses/ca-tosl1.1.php",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "CATOSL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Computer Associates Trusted Open Source License 1.1",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Computer Associates Trusted Open Source License 1.1"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -634,13 +580,6 @@ Raw Data
             }
         },
         "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
             [
                 "SPDX",
                 {

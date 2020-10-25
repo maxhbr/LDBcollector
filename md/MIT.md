@@ -48,23 +48,10 @@ Comments on (easy) usability
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   Because MIT has used many licenses for software, the Free Software
     Foundation considers MIT License ambiguous. The MIT License
     published on the OSI site is the same as the Expat License. (source:
     [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative"))
-
--   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
 Obligations
 -----------
@@ -92,8 +79,6 @@ URLs
 -   **tl;dr legal:** https://tldrlegal.com/license/mit-license
 
 -   https://opensource.com/article/19/4/history-mit-license
-
--   https://spdx.org/licenses/MIT.html\#licenseText
 
 OSADL Rule
 ----------
@@ -144,7 +129,6 @@ Raw Data
             "MIT license (also X11)"
         ],
         "__impliedId": "MIT",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The MIT License"
         ],
@@ -176,35 +160,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "MIT",
-                        "MIT",
-                        "MIT License",
-                        "scancode://mit",
-                        "mit",
-                        "MIT/Expat License",
-                        "Expat",
-                        "License :: OSI Approved :: MIT License",
-                        "MIT license / X11 license",
-                        "MIT license (also X11)"
-                    ],
-                    "__impliedId": "MIT"
-                },
-                "shortname": "MIT",
-                "otherNames": [
-                    "MIT",
-                    "MIT License",
-                    "scancode://mit",
-                    "mit",
-                    "MIT/Expat License",
-                    "Expat",
-                    "License :: OSI Approved :: MIT License",
-                    "MIT license / X11 license",
-                    "MIT license (also X11)"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -251,32 +206,6 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "MIT"
-                    ]
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MIT",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "MIT license (also X11)",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "MIT license (also X11)"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
                     ]
                 }
             },
@@ -419,40 +348,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/MIT.html"
-                        ]
-                    ]
-                }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "https://spdx.org/licenses/MIT.html#licenseText",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "MIT License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "MIT License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://spdx.org/licenses/MIT.html#licenseText"
                         ]
                     ]
                 }
@@ -756,13 +651,6 @@ Raw Data
                 }
             ],
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
                 "Google OSS Policy",
                 {
                     "tag": "PositiveJudgement",
@@ -789,13 +677,6 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": " This License is featured by choosealicense.com"
                 }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                }
             ]
         ],
         "__impliedCopyleft": [
@@ -809,10 +690,6 @@ Raw Data
             ],
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -891,10 +768,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/mit"
-            ],
-            [
-                null,
-                "https://spdx.org/licenses/MIT.html#licenseText"
             ]
         ]
     }

@@ -402,25 +402,6 @@ Raw Data
             "GNU Free Documentation License (GFDL)"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "GFDL-1.1-only",
-                        "GFDL-1.1-only",
-                        "GNU Free Documentation License v1.1 only",
-                        "scancode://gfdl-1.1",
-                        "GFDL 1.1"
-                    ],
-                    "__impliedId": "GFDL-1.1-only"
-                },
-                "shortname": "GFDL-1.1-only",
-                "otherNames": [
-                    "GFDL-1.1-only",
-                    "GNU Free Documentation License v1.1 only",
-                    "scancode://gfdl-1.1",
-                    "GFDL 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Free Documentation License v1.1 only",

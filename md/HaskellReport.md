@@ -12,10 +12,6 @@ Haskell Language Report License (HaskellReport)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -47,27 +43,7 @@ Raw Data
             "Haskell Report License"
         ],
         "__impliedId": "HaskellReport",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "HaskellReport",
-                        "HaskellReport",
-                        "Haskell Language Report License",
-                        "scancode://haskell-report",
-                        "Haskell Report License"
-                    ],
-                    "__impliedId": "HaskellReport"
-                },
-                "shortname": "HaskellReport",
-                "otherNames": [
-                    "HaskellReport",
-                    "Haskell Language Report License",
-                    "scancode://haskell-report",
-                    "Haskell Report License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Haskell Language Report License",
@@ -96,32 +72,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "HaskellReport"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "HaskellReport",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Haskell Language Report License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Haskell Language Report License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -160,15 +110,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

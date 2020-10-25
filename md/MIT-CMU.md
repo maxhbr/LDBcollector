@@ -76,27 +76,6 @@ Raw Data
         ],
         "__impliedId": "MIT-CMU",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "MIT-CMU",
-                        "MIT-CMU",
-                        "CMU License",
-                        "scancode://cmu-uc",
-                        "CMU UC Regents License",
-                        "scancode://cmu-template"
-                    ],
-                    "__impliedId": "MIT-CMU"
-                },
-                "shortname": "MIT-CMU",
-                "otherNames": [
-                    "MIT-CMU",
-                    "CMU License",
-                    "scancode://cmu-uc",
-                    "CMU UC Regents License",
-                    "scancode://cmu-template"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CMU License",

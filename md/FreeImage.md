@@ -179,25 +179,6 @@ Raw Data
         ],
         "__impliedId": "FreeImage",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "FreeImage",
-                        "FreeImage",
-                        "FreeImage Public License v1.0",
-                        "scancode://freeimage-1.0",
-                        "FreeImage Public License 1.0"
-                    ],
-                    "__impliedId": "FreeImage"
-                },
-                "shortname": "FreeImage",
-                "otherNames": [
-                    "FreeImage",
-                    "FreeImage Public License v1.0",
-                    "scancode://freeimage-1.0",
-                    "FreeImage Public License 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "FreeImage Public License v1.0",

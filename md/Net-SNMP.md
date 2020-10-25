@@ -285,25 +285,6 @@ Raw Data
         ],
         "__impliedId": "Net-SNMP",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Net-SNMP",
-                        "Net-SNMP",
-                        "Net-SNMP License",
-                        "scancode://net-snmp",
-                        "Net SNMP License"
-                    ],
-                    "__impliedId": "Net-SNMP"
-                },
-                "shortname": "Net-SNMP",
-                "otherNames": [
-                    "Net-SNMP",
-                    "Net-SNMP License",
-                    "scancode://net-snmp",
-                    "Net SNMP License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Net-SNMP License",

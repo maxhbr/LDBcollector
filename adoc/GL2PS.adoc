@@ -15,10 +15,6 @@
 
 === Comments on (easy) usability
 
-* **↑**This software Licenses is OK for Fedora (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
-
 === URLs
 
 * *Homepage:* http://www.geuz.org/gl2ps/COPYING.GL2PS
@@ -61,25 +57,7 @@ This software is provided "as is" without express or implied warranty.
         "scancode://gl2ps"
     ],
     "__impliedId": "GL2PS",
-    "__isFsfFree": true,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "GL2PS",
-                    "GL2PS",
-                    "GL2PS License",
-                    "scancode://gl2ps"
-                ],
-                "__impliedId": "GL2PS"
-            },
-            "shortname": "GL2PS",
-            "otherNames": [
-                "GL2PS",
-                "GL2PS License",
-                "scancode://gl2ps"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "GL2PS License",
@@ -108,32 +86,6 @@ This software is provided "as is" without express or implied warranty.
                 ]
             },
             "spdxLicenseId": "GL2PS"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "http://www.geuz.org/gl2ps/COPYING.GL2PS",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "GL2PS",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "GL2PS License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "GL2PS License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -172,15 +124,6 @@ This software is provided "as is" without express or implied warranty.
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

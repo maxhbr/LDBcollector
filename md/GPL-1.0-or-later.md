@@ -24,10 +24,6 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -64,36 +60,10 @@ Raw Data
             "GPL1+"
         ],
         "__impliedId": "GPL-1.0-or-later",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The GNU General Public License (GPL)"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "GPL-1.0-or-later",
-                        "GPL-1.0-or-later",
-                        "GNU General Public License v1.0 or later",
-                        "scancode://gpl-1.0-plus",
-                        "GPL 1.0 or later",
-                        "GPL-1.0+",
-                        "GPL1.0+",
-                        "GPL1+"
-                    ],
-                    "__impliedId": "GPL-1.0-or-later"
-                },
-                "shortname": "GPL-1.0-or-later",
-                "otherNames": [
-                    "GPL-1.0-or-later",
-                    "GNU General Public License v1.0 or later",
-                    "scancode://gpl-1.0-plus",
-                    "GPL 1.0 or later",
-                    "GPL-1.0+",
-                    "GPL1.0+",
-                    "GPL1+"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU General Public License v1.0 or later",
@@ -122,32 +92,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "GPL-1.0-or-later"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "Note that this is not GPLv1+, because 1+ is the same as any version.",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "GPL+",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "GNU General Public License v1.0 or later",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "GNU General Public License v1.0 or later"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -263,13 +207,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This is the most popular free software license. Most of Linux (the kernel) is distributed under the GPL, as is most of the other basic software in the GNU operating system."
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

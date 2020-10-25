@@ -61,23 +61,6 @@ Raw Data
         ],
         "__impliedId": "BSD-2-Clause-NetBSD",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "BSD-2-Clause-NetBSD",
-                        "BSD-2-Clause-NetBSD",
-                        "BSD 2-Clause NetBSD License",
-                        "scancode://bsd-2-clause-netbsd"
-                    ],
-                    "__impliedId": "BSD-2-Clause-NetBSD"
-                },
-                "shortname": "BSD-2-Clause-NetBSD",
-                "otherNames": [
-                    "BSD-2-Clause-NetBSD",
-                    "BSD 2-Clause NetBSD License",
-                    "scancode://bsd-2-clause-netbsd"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 2-Clause NetBSD License",

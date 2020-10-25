@@ -59,25 +59,6 @@ Raw Data
         ],
         "__impliedId": "RSA-MD",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "RSA-MD",
-                        "RSA-MD",
-                        "RSA Message-Digest License ",
-                        "scancode://rsa-md5",
-                        "RSA-MD5 License"
-                    ],
-                    "__impliedId": "RSA-MD"
-                },
-                "shortname": "RSA-MD",
-                "otherNames": [
-                    "RSA-MD",
-                    "RSA Message-Digest License ",
-                    "scancode://rsa-md5",
-                    "RSA-MD5 License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "RSA Message-Digest License ",

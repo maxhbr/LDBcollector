@@ -72,23 +72,6 @@ Raw Data
         ],
         "__impliedId": "Sendmail-8.23",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Sendmail-8.23",
-                        "Sendmail-8.23",
-                        "Sendmail License 8.23",
-                        "scancode://sendmail-8.23"
-                    ],
-                    "__impliedId": "Sendmail-8.23"
-                },
-                "shortname": "Sendmail-8.23",
-                "otherNames": [
-                    "Sendmail-8.23",
-                    "Sendmail License 8.23",
-                    "scancode://sendmail-8.23"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sendmail License 8.23",

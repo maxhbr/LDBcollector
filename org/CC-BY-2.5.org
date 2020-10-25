@@ -101,23 +101,6 @@
       ],
       "__impliedId": "CC-BY-2.5",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "CC-BY-2.5",
-                      "CC-BY-2.5",
-                      "Creative Commons Attribution 2.5 Generic",
-                      "scancode://cc-by-2.5"
-                  ],
-                  "__impliedId": "CC-BY-2.5"
-              },
-              "shortname": "CC-BY-2.5",
-              "otherNames": [
-                  "CC-BY-2.5",
-                  "Creative Commons Attribution 2.5 Generic",
-                  "scancode://cc-by-2.5"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Creative Commons Attribution 2.5 Generic",

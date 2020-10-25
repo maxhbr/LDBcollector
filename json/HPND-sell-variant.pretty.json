@@ -8,27 +8,6 @@
     ],
     "__impliedId": "HPND-sell-variant",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "HPND-sell-variant",
-                    "HPND-sell-variant",
-                    "Historical Permission Notice and Disclaimer - sell variant",
-                    "scancode://x11-keith-packard",
-                    "X11-Style (Keith Packard)",
-                    "scancode://historical-sell-variant"
-                ],
-                "__impliedId": "HPND-sell-variant"
-            },
-            "shortname": "HPND-sell-variant",
-            "otherNames": [
-                "HPND-sell-variant",
-                "Historical Permission Notice and Disclaimer - sell variant",
-                "scancode://x11-keith-packard",
-                "X11-Style (Keith Packard)",
-                "scancode://historical-sell-variant"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Historical Permission Notice and Disclaimer - sell variant",

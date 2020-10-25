@@ -542,27 +542,6 @@ Original Code Source Code for Your Modifications.]
             },
             "domain_content": false
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "CUA-OPL-1.0",
-                    "CUA-OPL-1.0",
-                    "CUA Office Public License v1.0",
-                    "scancode://cua-opl-1.0",
-                    "CUA Office Public License",
-                    "CUA Office Public License 1.0"
-                ],
-                "__impliedId": "CUA-OPL-1.0"
-            },
-            "shortname": "CUA-OPL-1.0",
-            "otherNames": [
-                "CUA-OPL-1.0",
-                "CUA Office Public License v1.0",
-                "scancode://cua-opl-1.0",
-                "CUA Office Public License",
-                "CUA Office Public License 1.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CUA Office Public License v1.0",

@@ -10,10 +10,6 @@ Wsuipa License (Wsuipa)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Rating is: Lead (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
@@ -51,25 +47,7 @@ Raw Data
             "scancode://wsuipa"
         ],
         "__impliedId": "Wsuipa",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Wsuipa",
-                        "Wsuipa",
-                        "Wsuipa License",
-                        "scancode://wsuipa"
-                    ],
-                    "__impliedId": "Wsuipa"
-                },
-                "shortname": "Wsuipa",
-                "otherNames": [
-                    "Wsuipa",
-                    "Wsuipa License",
-                    "scancode://wsuipa"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Wsuipa License",
@@ -98,32 +76,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Wsuipa"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Wsuipa",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "Wsuipa",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Wsuipa License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Wsuipa License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -203,13 +155,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

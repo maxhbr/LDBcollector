@@ -386,25 +386,6 @@ Raw Data
             "Open Publication License (OPL) v1.0"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OPL-1.0",
-                        "OPL-1.0",
-                        "Open Public License v1.0",
-                        "scancode://open-public",
-                        "Open Public License 1.0"
-                    ],
-                    "__impliedId": "OPL-1.0"
-                },
-                "shortname": "OPL-1.0",
-                "otherNames": [
-                    "OPL-1.0",
-                    "Open Public License v1.0",
-                    "scancode://open-public",
-                    "Open Public License 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Public License v1.0",

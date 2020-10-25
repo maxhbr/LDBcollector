@@ -97,23 +97,6 @@ Raw Data
         ],
         "__impliedId": "CC-BY-2.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-2.0",
-                        "CC-BY-2.0",
-                        "Creative Commons Attribution 2.0 Generic",
-                        "scancode://cc-by-2.0"
-                    ],
-                    "__impliedId": "CC-BY-2.0"
-                },
-                "shortname": "CC-BY-2.0",
-                "otherNames": [
-                    "CC-BY-2.0",
-                    "Creative Commons Attribution 2.0 Generic",
-                    "scancode://cc-by-2.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution 2.0 Generic",

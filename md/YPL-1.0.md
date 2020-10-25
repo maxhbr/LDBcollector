@@ -206,25 +206,6 @@ Raw Data
         ],
         "__impliedId": "YPL-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "YPL-1.0",
-                        "YPL-1.0",
-                        "Yahoo! Public License v1.0",
-                        "scancode://ypl-1.0",
-                        "YPL 1.0"
-                    ],
-                    "__impliedId": "YPL-1.0"
-                },
-                "shortname": "YPL-1.0",
-                "otherNames": [
-                    "YPL-1.0",
-                    "Yahoo! Public License v1.0",
-                    "scancode://ypl-1.0",
-                    "YPL 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Yahoo! Public License v1.0",

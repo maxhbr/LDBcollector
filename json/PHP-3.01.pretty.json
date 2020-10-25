@@ -7,25 +7,6 @@
     ],
     "__impliedId": "PHP-3.01",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "PHP-3.01",
-                    "PHP-3.01",
-                    "PHP License v3.01",
-                    "scancode://php-3.01",
-                    "PHP License 3.01"
-                ],
-                "__impliedId": "PHP-3.01"
-            },
-            "shortname": "PHP-3.01",
-            "otherNames": [
-                "PHP-3.01",
-                "PHP License v3.01",
-                "scancode://php-3.01",
-                "PHP License 3.01"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "PHP License v3.01",

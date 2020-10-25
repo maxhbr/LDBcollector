@@ -88,23 +88,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Multics",
-                        "Multics",
-                        "Multics License",
-                        "scancode://multics"
-                    ],
-                    "__impliedId": "Multics"
-                },
-                "shortname": "Multics",
-                "otherNames": [
-                    "Multics",
-                    "Multics License",
-                    "scancode://multics"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Multics License",

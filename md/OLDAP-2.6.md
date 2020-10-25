@@ -89,25 +89,6 @@ Raw Data
         ],
         "__impliedId": "OLDAP-2.6",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OLDAP-2.6",
-                        "OLDAP-2.6",
-                        "Open LDAP Public License v2.6",
-                        "scancode://openldap-2.6",
-                        "OpenLDAP Public License 2.6"
-                    ],
-                    "__impliedId": "OLDAP-2.6"
-                },
-                "shortname": "OLDAP-2.6",
-                "otherNames": [
-                    "OLDAP-2.6",
-                    "Open LDAP Public License v2.6",
-                    "scancode://openldap-2.6",
-                    "OpenLDAP Public License 2.6"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open LDAP Public License v2.6",

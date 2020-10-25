@@ -7,25 +7,6 @@
     ],
     "__impliedId": "bzip2-1.0.6",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "bzip2-1.0.6",
-                    "bzip2-1.0.6",
-                    "bzip2 and libbzip2 License v1.0.6",
-                    "scancode://bzip2-libbzip-2010",
-                    "bzip2 License 2010"
-                ],
-                "__impliedId": "bzip2-1.0.6"
-            },
-            "shortname": "bzip2-1.0.6",
-            "otherNames": [
-                "bzip2-1.0.6",
-                "bzip2 and libbzip2 License v1.0.6",
-                "scancode://bzip2-libbzip-2010",
-                "bzip2 License 2010"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "bzip2 and libbzip2 License v1.0.6",

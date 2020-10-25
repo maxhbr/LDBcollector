@@ -257,23 +257,6 @@ Raw Data
         ],
         "__impliedId": "copyleft-next-0.3.1",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "copyleft-next-0.3.1",
-                        "copyleft-next-0.3.1",
-                        "copyleft-next 0.3.1",
-                        "scancode://copyleft-next-0.3.1"
-                    ],
-                    "__impliedId": "copyleft-next-0.3.1"
-                },
-                "shortname": "copyleft-next-0.3.1",
-                "otherNames": [
-                    "copyleft-next-0.3.1",
-                    "copyleft-next 0.3.1",
-                    "scancode://copyleft-next-0.3.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "copyleft-next 0.3.1",

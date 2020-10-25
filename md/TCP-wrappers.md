@@ -76,23 +76,6 @@ Raw Data
         ],
         "__impliedId": "TCP-wrappers",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "TCP-wrappers",
-                        "TCP-wrappers",
-                        "TCP Wrappers License",
-                        "scancode://tcp-wrappers"
-                    ],
-                    "__impliedId": "TCP-wrappers"
-                },
-                "shortname": "TCP-wrappers",
-                "otherNames": [
-                    "TCP-wrappers",
-                    "TCP Wrappers License",
-                    "scancode://tcp-wrappers"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TCP Wrappers License",

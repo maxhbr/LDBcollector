@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -74,27 +70,7 @@ Raw Data
             "MIT no false attribution License"
         ],
         "__impliedId": "MITNFA",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "MITNFA",
-                        "MITNFA",
-                        "MIT +no-false-attribs license",
-                        "scancode://mit-no-false-attribs",
-                        "MIT no false attribution License"
-                    ],
-                    "__impliedId": "MITNFA"
-                },
-                "shortname": "MITNFA",
-                "otherNames": [
-                    "MITNFA",
-                    "MIT +no-false-attribs license",
-                    "scancode://mit-no-false-attribs",
-                    "MIT no false attribution License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "MIT +no-false-attribs license",
@@ -123,32 +99,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MITNFA"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MITNFA",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MITNFA",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "MIT +no-false-attribs license",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "MIT +no-false-attribs license"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -228,13 +178,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

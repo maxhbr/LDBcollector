@@ -21,16 +21,6 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/SPL-1.0.html "SPDX"))
 
--   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
-    Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten
-    Werke umfasst, sondern definierte Ausnahmen enthält. Sofern
-    Modifikationen der Software unter MPLartigen Lizenzen in eigenen
-    Dateien realisiert werden, können diese Dateien auch unter anderen,
-    z.B. proprietären Lizenzbedingungen weiterverbreitet werden. Damit
-    soll die Kombination von Software unter verschiedenen Lizenztypen
-    erleichtert werden. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 URLs
 ----
 
@@ -45,8 +35,6 @@ URLs
 -   http://www.gnu.org/licenses/license-list.html\#SPL
 
 -   http://www.opensource.org/licenses/SPL-1.0
-
--   http://www.opensource.org/licenses/sunpublic.php
 
 Text
 ----
@@ -600,31 +588,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SPL-1.0",
-                        "SPL-1.0",
-                        "Sun Public License v1.0",
-                        "scancode://spl-1.0",
-                        "SPL 1.0",
-                        "Sun Public License, Version 1.0",
-                        "License :: OSI Approved :: Sun Public License",
-                        "Sun Public License 1.0"
-                    ],
-                    "__impliedId": "SPL-1.0"
-                },
-                "shortname": "SPL-1.0",
-                "otherNames": [
-                    "SPL-1.0",
-                    "Sun Public License v1.0",
-                    "scancode://spl-1.0",
-                    "SPL 1.0",
-                    "Sun Public License, Version 1.0",
-                    "License :: OSI Approved :: Sun Public License",
-                    "Sun Public License 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sun Public License v1.0",
@@ -734,40 +697,6 @@ Raw Data
                     ]
                 }
             },
-            "ifrOSS": {
-                "ifrKind": "IfrWeakCopyleft_MPLlike",
-                "ifrURL": "http://www.opensource.org/licenses/sunpublic.php",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Sun Public License v1.0",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Sun Public License v1.0"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, kÃ¶nnen diese Dateien auch unter anderen, z.B. proprietÃ¤ren Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "WeakCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://www.opensource.org/licenses/sunpublic.php"
-                        ]
-                    ]
-                }
-            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -825,22 +754,11 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
                 }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, kÃ¶nnen diese Dateien auch unter anderen, z.B. proprietÃ¤ren Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
-                }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "Scancode",
-                "WeakCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "WeakCopyleft"
             ]
         ],
@@ -875,10 +793,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/SPL-1.0"
-            ],
-            [
-                null,
-                "http://www.opensource.org/licenses/sunpublic.php"
             ]
         ]
     }

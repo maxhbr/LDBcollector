@@ -94,25 +94,6 @@ Raw Data
         ],
         "__impliedId": "OLDAP-2.2.2",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OLDAP-2.2.2",
-                        "OLDAP-2.2.2",
-                        "Open LDAP Public License 2.2.2",
-                        "scancode://openldap-2.2.2",
-                        "OpenLDAP Public License 2.2.2"
-                    ],
-                    "__impliedId": "OLDAP-2.2.2"
-                },
-                "shortname": "OLDAP-2.2.2",
-                "otherNames": [
-                    "OLDAP-2.2.2",
-                    "Open LDAP Public License 2.2.2",
-                    "scancode://openldap-2.2.2",
-                    "OpenLDAP Public License 2.2.2"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open LDAP Public License 2.2.2",

@@ -18,10 +18,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -78,27 +74,7 @@ Raw Data
             "X11-Style (Tiff)"
         ],
         "__impliedId": "libtiff",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "libtiff",
-                        "libtiff",
-                        "libtiff License",
-                        "scancode://x11-tiff",
-                        "X11-Style (Tiff)"
-                    ],
-                    "__impliedId": "libtiff"
-                },
-                "shortname": "libtiff",
-                "otherNames": [
-                    "libtiff",
-                    "libtiff License",
-                    "scancode://x11-tiff",
-                    "X11-Style (Tiff)"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "libtiff License",
@@ -135,32 +111,6 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "libtiff"
-                    ]
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/libtiff",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "libtiff",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "libtiff License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "libtiff License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
                     ]
                 }
             },
@@ -263,13 +213,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

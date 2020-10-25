@@ -70,25 +70,6 @@
       ],
       "__impliedId": "CNRI-Python-GPL-Compatible",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "CNRI-Python-GPL-Compatible",
-                      "CNRI-Python-GPL-Compatible",
-                      "CNRI Python Open Source GPL Compatible License Agreement",
-                      "scancode://cnri-python-1.6.1",
-                      "CNRI Python 1.6.1"
-                  ],
-                  "__impliedId": "CNRI-Python-GPL-Compatible"
-              },
-              "shortname": "CNRI-Python-GPL-Compatible",
-              "otherNames": [
-                  "CNRI-Python-GPL-Compatible",
-                  "CNRI Python Open Source GPL Compatible License Agreement",
-                  "scancode://cnri-python-1.6.1",
-                  "CNRI Python 1.6.1"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "CNRI Python Open Source GPL Compatible License Agreement",

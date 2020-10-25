@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -56,27 +52,7 @@ Raw Data
             "Scheme Widget Library (SWL) Software License"
         ],
         "__impliedId": "SWL",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SWL",
-                        "SWL",
-                        "Scheme Widget Library (SWL) Software License Agreement",
-                        "scancode://swl",
-                        "Scheme Widget Library (SWL) Software License"
-                    ],
-                    "__impliedId": "SWL"
-                },
-                "shortname": "SWL",
-                "otherNames": [
-                    "SWL",
-                    "Scheme Widget Library (SWL) Software License Agreement",
-                    "scancode://swl",
-                    "Scheme Widget Library (SWL) Software License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Scheme Widget Library (SWL) Software License Agreement",
@@ -105,32 +81,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "SWL"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/SWL",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "SWL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Scheme Widget Library (SWL) Software License Agreement",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Scheme Widget Library (SWL) Software License Agreement"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -216,13 +166,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

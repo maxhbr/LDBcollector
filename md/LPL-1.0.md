@@ -297,29 +297,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "LPL-1.0",
-                        "LPL-1.0",
-                        "Lucent Public License Version 1.0",
-                        "scancode://lucent-pl-1.0",
-                        "Lucent Public License 1.0",
-                        "Lucent Public License, Plan 9, Version 1.0",
-                        "Lucent Public License (\"Plan9\") 1.0"
-                    ],
-                    "__impliedId": "LPL-1.0"
-                },
-                "shortname": "LPL-1.0",
-                "otherNames": [
-                    "LPL-1.0",
-                    "Lucent Public License Version 1.0",
-                    "scancode://lucent-pl-1.0",
-                    "Lucent Public License 1.0",
-                    "Lucent Public License, Plan 9, Version 1.0",
-                    "Lucent Public License (\"Plan9\") 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Lucent Public License Version 1.0",

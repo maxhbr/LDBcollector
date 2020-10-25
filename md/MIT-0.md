@@ -62,25 +62,6 @@ Raw Data
         ],
         "__impliedId": "MIT-0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "MIT-0",
-                        "MIT-0",
-                        "MIT No Attribution",
-                        "scancode://mit-0",
-                        "MIT-0-Clause"
-                    ],
-                    "__impliedId": "MIT-0"
-                },
-                "shortname": "MIT-0",
-                "otherNames": [
-                    "MIT-0",
-                    "MIT No Attribution",
-                    "scancode://mit-0",
-                    "MIT-0-Clause"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "MIT No Attribution",

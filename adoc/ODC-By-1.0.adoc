@@ -486,27 +486,6 @@ terms of this License.
             },
             "domain_content": false
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "ODC-By-1.0",
-                    "ODC-By-1.0",
-                    "Open Data Commons Attribution License v1.0",
-                    "scancode://odc-by-1.0",
-                    "ODC-BY-1.0",
-                    "Open Data Commons Attribution License 1.0"
-                ],
-                "__impliedId": "ODC-By-1.0"
-            },
-            "shortname": "ODC-By-1.0",
-            "otherNames": [
-                "ODC-By-1.0",
-                "Open Data Commons Attribution License v1.0",
-                "scancode://odc-by-1.0",
-                "ODC-BY-1.0",
-                "Open Data Commons Attribution License 1.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Data Commons Attribution License v1.0",

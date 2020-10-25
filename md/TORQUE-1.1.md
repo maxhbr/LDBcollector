@@ -12,10 +12,6 @@ TORQUE v2.5+ Software License v1.1 (TORQUE-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -65,27 +61,7 @@ Raw Data
             "TORQUE 1.1"
         ],
         "__impliedId": "TORQUE-1.1",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "TORQUE-1.1",
-                        "TORQUE-1.1",
-                        "TORQUE v2.5+ Software License v1.1",
-                        "scancode://torque-1.1",
-                        "TORQUE 1.1"
-                    ],
-                    "__impliedId": "TORQUE-1.1"
-                },
-                "shortname": "TORQUE-1.1",
-                "otherNames": [
-                    "TORQUE-1.1",
-                    "TORQUE v2.5+ Software License v1.1",
-                    "scancode://torque-1.1",
-                    "TORQUE 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TORQUE v2.5+ Software License v1.1",
@@ -114,32 +90,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "TORQUE-1.1"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/TORQUEv1.1",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "TORQUEv1.1",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "TORQUE v2.5+ Software License v1.1",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "TORQUE v2.5+ Software License v1.1"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -178,15 +128,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

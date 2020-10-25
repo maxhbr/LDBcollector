@@ -10,10 +10,6 @@ BSD Protection License (BSD-Protection)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -165,25 +161,7 @@ Raw Data
             "scancode://bsd-protection"
         ],
         "__impliedId": "BSD-Protection",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "BSD-Protection",
-                        "BSD-Protection",
-                        "BSD Protection License",
-                        "scancode://bsd-protection"
-                    ],
-                    "__impliedId": "BSD-Protection"
-                },
-                "shortname": "BSD-Protection",
-                "otherNames": [
-                    "BSD-Protection",
-                    "BSD Protection License",
-                    "scancode://bsd-protection"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD Protection License",
@@ -212,32 +190,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "BSD-Protection"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD_Protection_License",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "BSD Protection",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "BSD Protection License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "BSD Protection License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -276,15 +228,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

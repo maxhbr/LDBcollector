@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -73,27 +69,7 @@ Raw Data
             "SGI Free Software License B 2.0"
         ],
         "__impliedId": "SGI-B-2.0",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SGI-B-2.0",
-                        "SGI-B-2.0",
-                        "SGI Free Software License B v2.0",
-                        "scancode://sgi-freeb-2.0",
-                        "SGI Free Software License B 2.0"
-                    ],
-                    "__impliedId": "SGI-B-2.0"
-                },
-                "shortname": "SGI-B-2.0",
-                "otherNames": [
-                    "SGI-B-2.0",
-                    "SGI Free Software License B v2.0",
-                    "scancode://sgi-freeb-2.0",
-                    "SGI Free Software License B 2.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SGI Free Software License B v2.0",
@@ -122,32 +98,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "SGI-B-2.0"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MIT",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "SGI Free Software License B 2.0",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "SGI Free Software License B 2.0"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -233,13 +183,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

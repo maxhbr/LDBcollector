@@ -158,33 +158,6 @@
               },
               "domain_content": false
           },
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "NCSA",
-                      "NCSA",
-                      "University of Illinois/NCSA Open Source License",
-                      "scancode://uoi-ncsa",
-                      "NCSA Open Source License",
-                      "ncsa",
-                      "UIUC/NCSA",
-                      "The University of Illinois/NCSA Open Source License",
-                      "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
-                  ],
-                  "__impliedId": "NCSA"
-              },
-              "shortname": "NCSA",
-              "otherNames": [
-                  "NCSA",
-                  "University of Illinois/NCSA Open Source License",
-                  "scancode://uoi-ncsa",
-                  "NCSA Open Source License",
-                  "ncsa",
-                  "UIUC/NCSA",
-                  "The University of Illinois/NCSA Open Source License",
-                  "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "University of Illinois/NCSA Open Source License",

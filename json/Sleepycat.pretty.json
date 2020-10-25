@@ -9,7 +9,6 @@
         "Sleepycat Software Product License"
     ],
     "__impliedId": "Sleepycat",
-    "__isFsfFree": true,
     "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
@@ -38,31 +37,6 @@
                 ]
             },
             "domain_content": false
-        },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Sleepycat",
-                    "Sleepycat",
-                    "Sleepycat License",
-                    "scancode://sleepycat",
-                    "The Sleepycat License",
-                    "License :: OSI Approved :: Sleepycat License",
-                    "Berkeley Database License",
-                    "Sleepycat Software Product License"
-                ],
-                "__impliedId": "Sleepycat"
-            },
-            "shortname": "Sleepycat",
-            "otherNames": [
-                "Sleepycat",
-                "Sleepycat License",
-                "scancode://sleepycat",
-                "The Sleepycat License",
-                "License :: OSI Approved :: Sleepycat License",
-                "Berkeley Database License",
-                "Sleepycat Software Product License"
-            ]
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -101,32 +75,6 @@
                 ]
             },
             "spdxLicenseId": "Sleepycat"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Sleepycat",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "Sleepycat",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Sleepycat Software Product License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Sleepycat Software Product License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -218,40 +166,6 @@
             "oJudgement": null,
             "oCompatibilities": null,
             "oRatingState": null
-        },
-        "ifrOSS": {
-            "ifrKind": "IfrLicenseWithChoice",
-            "ifrURL": "https://fedoraproject.org/wiki/Licensing/Sleepycat",
-            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-            "ifrName": "Sleepycat License",
-            "ifrId": null,
-            "_implications": {
-                "__impliedNames": [
-                    "Sleepycat License"
-                ],
-                "__impliedJudgement": [
-                    [
-                        "ifrOSS",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können."
-                        }
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "ifrOSS",
-                        "MaybeCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "MaybeCopyleft",
-                "__impliedURLs": [
-                    [
-                        null,
-                        "https://fedoraproject.org/wiki/Licensing/Sleepycat"
-                    ]
-                ]
-            }
         },
         "OpenSourceInitiative": {
             "text": [
@@ -368,13 +282,6 @@
     },
     "__impliedJudgement": [
         [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ],
-        [
             "Google OSS Policy",
             {
                 "tag": "NegativeJudgement",
@@ -387,23 +294,12 @@
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
             }
-        ],
-        [
-            "ifrOSS",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Diese Lizenzen sehen unterschiedliche rechtliche Folgen vor, je nachdem wie umfangreich eine Modifikation ist. Zudem werden dem Lizenznehmer verschiedene Wahlmöglichkeiten eingeräumt, wie Weiterentwicklungen weiterverbreitet werden können."
-            }
         ]
     ],
     "__impliedCopyleft": [
         [
             "Scancode",
             "Copyleft"
-        ],
-        [
-            "ifrOSS",
-            "MaybeCopyleft"
         ]
     ],
     "__calculatedCopyleft": "Copyleft",
@@ -437,14 +333,6 @@
         [
             "OSI Page",
             "https://opensource.org/licenses/Sleepycat"
-        ],
-        [
-            null,
-            "https://fedoraproject.org/wiki/Licensing/Sleepycat"
-        ],
-        [
-            null,
-            "http://genome.jouy.inra.fr/doc/docs/sleepycat/license.html"
         ]
     ]
 }

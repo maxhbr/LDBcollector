@@ -211,27 +211,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "BitTorrent-1.1",
-                        "BitTorrent-1.1",
-                        "BitTorrent Open Source License v1.1",
-                        "scancode://bittorrent-1.1",
-                        "BitTorrent 1.1",
-                        "BitTorrent Open Source License 1.1"
-                    ],
-                    "__impliedId": "BitTorrent-1.1"
-                },
-                "shortname": "BitTorrent-1.1",
-                "otherNames": [
-                    "BitTorrent-1.1",
-                    "BitTorrent Open Source License v1.1",
-                    "scancode://bittorrent-1.1",
-                    "BitTorrent 1.1",
-                    "BitTorrent Open Source License 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BitTorrent Open Source License v1.1",

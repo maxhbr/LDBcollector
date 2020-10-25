@@ -539,25 +539,6 @@ Raw Data
         ],
         "__impliedId": "CECILL-1.1",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CECILL-1.1",
-                        "CECILL-1.1",
-                        "CeCILL Free Software License Agreement v1.1",
-                        "scancode://cecill-1.1",
-                        "CeCILL 1.1 English"
-                    ],
-                    "__impliedId": "CECILL-1.1"
-                },
-                "shortname": "CECILL-1.1",
-                "otherNames": [
-                    "CECILL-1.1",
-                    "CeCILL Free Software License Agreement v1.1",
-                    "scancode://cecill-1.1",
-                    "CeCILL 1.1 English"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CeCILL Free Software License Agreement v1.1",

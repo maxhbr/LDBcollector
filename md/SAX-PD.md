@@ -89,23 +89,6 @@ Raw Data
         ],
         "__impliedId": "SAX-PD",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "SAX-PD",
-                        "SAX-PD",
-                        "Sax Public Domain Notice",
-                        "scancode://sax-pd"
-                    ],
-                    "__impliedId": "SAX-PD"
-                },
-                "shortname": "SAX-PD",
-                "otherNames": [
-                    "SAX-PD",
-                    "Sax Public Domain Notice",
-                    "scancode://sax-pd"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sax Public Domain Notice",

@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -126,27 +122,7 @@ Raw Data
             "AMD PLPA License"
         ],
         "__impliedId": "AMDPLPA",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "AMDPLPA",
-                        "AMDPLPA",
-                        "AMD's plpa_map.c License",
-                        "scancode://amdplpa",
-                        "AMD PLPA License"
-                    ],
-                    "__impliedId": "AMDPLPA"
-                },
-                "shortname": "AMDPLPA",
-                "otherNames": [
-                    "AMDPLPA",
-                    "AMD's plpa_map.c License",
-                    "scancode://amdplpa",
-                    "AMD PLPA License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "AMD's plpa_map.c License",
@@ -175,32 +151,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "AMDPLPA"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "AMDPLPA",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "AMD's plpa_map.c License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "AMD's plpa_map.c License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -280,13 +230,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

@@ -12,10 +12,6 @@ Open Software License 1.1 (OSL-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Google Classification is RESTRICTED (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
@@ -99,30 +95,10 @@ Raw Data
             "OSL 1.1"
         ],
         "__impliedId": "OSL-1.1",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Open Software License (OSL) v1.1"
         ],
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "OSL-1.1",
-                        "OSL-1.1",
-                        "Open Software License 1.1",
-                        "scancode://osl-1.1",
-                        "OSL 1.1"
-                    ],
-                    "__impliedId": "OSL-1.1"
-                },
-                "shortname": "OSL-1.1",
-                "otherNames": [
-                    "OSL-1.1",
-                    "Open Software License 1.1",
-                    "scancode://osl-1.1",
-                    "OSL 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Software License 1.1",
@@ -151,32 +127,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "OSL-1.1"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/OSL1.1",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "OSL 1.1",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Open Software License 1.1",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Open Software License 1.1"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -275,13 +225,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "This license is not compatible with the DebianFreeSoftwareGuidelines (DFSG-unfree)"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

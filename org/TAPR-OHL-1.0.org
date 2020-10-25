@@ -174,23 +174,6 @@
       ],
       "__impliedId": "TAPR-OHL-1.0",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "TAPR-OHL-1.0",
-                      "TAPR-OHL-1.0",
-                      "TAPR Open Hardware License v1.0",
-                      "scancode://tapr-ohl-1.0"
-                  ],
-                  "__impliedId": "TAPR-OHL-1.0"
-              },
-              "shortname": "TAPR-OHL-1.0",
-              "otherNames": [
-                  "TAPR-OHL-1.0",
-                  "TAPR Open Hardware License v1.0",
-                  "scancode://tapr-ohl-1.0"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "TAPR Open Hardware License v1.0",

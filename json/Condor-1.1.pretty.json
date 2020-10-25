@@ -7,25 +7,6 @@
     ],
     "__impliedId": "Condor-1.1",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "Condor-1.1",
-                    "Condor-1.1",
-                    "Condor Public License v1.1",
-                    "scancode://condor-1.1",
-                    "Condor Public License 1.1"
-                ],
-                "__impliedId": "Condor-1.1"
-            },
-            "shortname": "Condor-1.1",
-            "otherNames": [
-                "Condor-1.1",
-                "Condor Public License v1.1",
-                "scancode://condor-1.1",
-                "Condor Public License 1.1"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Condor Public License v1.1",

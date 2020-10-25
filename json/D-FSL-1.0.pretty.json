@@ -6,23 +6,6 @@
     ],
     "__impliedId": "D-FSL-1.0",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "D-FSL-1.0",
-                    "D-FSL-1.0",
-                    "Deutsche Freie Software Lizenz",
-                    "scancode://d-fsl-1.0-de"
-                ],
-                "__impliedId": "D-FSL-1.0"
-            },
-            "shortname": "D-FSL-1.0",
-            "otherNames": [
-                "D-FSL-1.0",
-                "Deutsche Freie Software Lizenz",
-                "scancode://d-fsl-1.0-de"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Deutsche Freie Software Lizenz",

@@ -12,10 +12,6 @@ MakeIndex License (MakeIndex)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -66,27 +62,7 @@ Raw Data
             "MakeIndex Distribution Notice"
         ],
         "__impliedId": "MakeIndex",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "MakeIndex",
-                        "MakeIndex",
-                        "MakeIndex License",
-                        "scancode://makeindex",
-                        "MakeIndex Distribution Notice"
-                    ],
-                    "__impliedId": "MakeIndex"
-                },
-                "shortname": "MakeIndex",
-                "otherNames": [
-                    "MakeIndex",
-                    "MakeIndex License",
-                    "scancode://makeindex",
-                    "MakeIndex Distribution Notice"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "MakeIndex License",
@@ -115,32 +91,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MakeIndex"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MakeIndex",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "MakeIndex",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "MakeIndex License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "MakeIndex License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -179,15 +129,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

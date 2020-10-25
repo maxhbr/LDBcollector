@@ -27,10 +27,6 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 -   **↓**Google Classification is CANNOT\_BE\_USED "Code released under
     the WTFPL cannot be used at Google. This license has a large number
     of issues (lack of warranty disclaimer, very vague rights grant),
@@ -102,35 +98,11 @@ Raw Data
             "Do What The Fuck You Want To Public License (WTFPL) 2"
         ],
         "__impliedId": "WTFPL",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE"
         ],
         "__hasPatentHint": false,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "WTFPL",
-                        "WTFPL",
-                        "Do What The F*ck You Want To Public License",
-                        "scancode://wtfpl-2.0",
-                        "WTFPL 2.0",
-                        "wtfpl",
-                        "Do What The Fuck You Want To Public License (WTFPL) 2"
-                    ],
-                    "__impliedId": "WTFPL"
-                },
-                "shortname": "WTFPL",
-                "otherNames": [
-                    "WTFPL",
-                    "Do What The F*ck You Want To Public License",
-                    "scancode://wtfpl-2.0",
-                    "WTFPL 2.0",
-                    "wtfpl",
-                    "Do What The Fuck You Want To Public License (WTFPL) 2"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Do What The F*ck You Want To Public License",
@@ -167,32 +139,6 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "WTFPL"
-                    ]
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/WTFPL",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "WTFPL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Do What The F*ck You Want To Public License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Do What The F*ck You Want To Public License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
                     ]
                 }
             },
@@ -438,13 +384,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

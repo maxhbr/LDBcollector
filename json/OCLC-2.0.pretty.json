@@ -34,25 +34,6 @@
             },
             "domain_content": false
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "OCLC-2.0",
-                    "OCLC-2.0",
-                    "OCLC Research Public License 2.0",
-                    "scancode://oclc-2.0",
-                    "The OCLC Research Public License, Version 2.0"
-                ],
-                "__impliedId": "OCLC-2.0"
-            },
-            "shortname": "OCLC-2.0",
-            "otherNames": [
-                "OCLC-2.0",
-                "OCLC Research Public License 2.0",
-                "scancode://oclc-2.0",
-                "The OCLC Research Public License, Version 2.0"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "OCLC Research Public License 2.0",

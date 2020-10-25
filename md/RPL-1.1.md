@@ -205,27 +205,6 @@ Raw Data
         ],
         "__impliedId": "RPL-1.1",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "RPL-1.1",
-                        "RPL-1.1",
-                        "Reciprocal Public License 1.1",
-                        "scancode://rpl-1.1",
-                        "RPL 1.1",
-                        "Reciprocal Public License, Version 1.1"
-                    ],
-                    "__impliedId": "RPL-1.1"
-                },
-                "shortname": "RPL-1.1",
-                "otherNames": [
-                    "RPL-1.1",
-                    "Reciprocal Public License 1.1",
-                    "scancode://rpl-1.1",
-                    "RPL 1.1",
-                    "Reciprocal Public License, Version 1.1"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Reciprocal Public License 1.1",

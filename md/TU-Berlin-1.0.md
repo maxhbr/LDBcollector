@@ -54,25 +54,6 @@ Raw Data
         ],
         "__impliedId": "TU-Berlin-1.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "TU-Berlin-1.0",
-                        "TU-Berlin-1.0",
-                        "Technische Universitaet Berlin License 1.0",
-                        "scancode://tu-berlin",
-                        "TU Berlin License 1.0"
-                    ],
-                    "__impliedId": "TU-Berlin-1.0"
-                },
-                "shortname": "TU-Berlin-1.0",
-                "otherNames": [
-                    "TU-Berlin-1.0",
-                    "Technische Universitaet Berlin License 1.0",
-                    "scancode://tu-berlin",
-                    "TU Berlin License 1.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Technische Universitaet Berlin License 1.0",

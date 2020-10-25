@@ -72,25 +72,6 @@
       ],
       "__impliedId": "BSD-3-Clause-No-Nuclear-License",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "BSD-3-Clause-No-Nuclear-License",
-                      "BSD-3-Clause-No-Nuclear-License",
-                      "BSD 3-Clause No Nuclear License",
-                      "scancode://sun-bsd-no-nuclear",
-                      "Sun BSD-Style with Nuclear Restrictions"
-                  ],
-                  "__impliedId": "BSD-3-Clause-No-Nuclear-License"
-              },
-              "shortname": "BSD-3-Clause-No-Nuclear-License",
-              "otherNames": [
-                  "BSD-3-Clause-No-Nuclear-License",
-                  "BSD 3-Clause No Nuclear License",
-                  "scancode://sun-bsd-no-nuclear",
-                  "Sun BSD-Style with Nuclear Restrictions"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "BSD 3-Clause No Nuclear License",

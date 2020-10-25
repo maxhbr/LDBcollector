@@ -22,17 +22,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   Bei Lizenzen mit einem strengen Copyleft-Effekt wird der
-    Lizenznehmer verpflichtet von der ursprünglichen Software
-    abgeleitete Werke ebenfalls nur unter den Bedingungen der
-    Ursprungslizenz weiterzuverbreiten. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
--   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
-    Fedora is permitted to use this license. It is either non-free or
-    deprecated. (source: [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -102,7 +91,6 @@ Raw Data
             "License :: OSI Approved :: Intel Open Source License"
         ],
         "__impliedId": "Intel",
-        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -130,29 +118,6 @@ Raw Data
                     ]
                 },
                 "domain_content": false
-            },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Intel",
-                        "Intel",
-                        "Intel Open Source License",
-                        "scancode://intel-bsd-export-control",
-                        "Intel BSD - Export Control",
-                        "The Intel Open Source License",
-                        "License :: OSI Approved :: Intel Open Source License"
-                    ],
-                    "__impliedId": "Intel"
-                },
-                "shortname": "Intel",
-                "otherNames": [
-                    "Intel",
-                    "Intel Open Source License",
-                    "scancode://intel-bsd-export-control",
-                    "Intel BSD - Export Control",
-                    "The Intel Open Source License",
-                    "License :: OSI Approved :: Intel Open Source License"
-                ]
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -191,30 +156,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Intel"
-            },
-            "Fedora Project Wiki": {
-                "rating": "Bad",
-                "Upstream URL": "http://opensource.org/licenses/intel-open-source-license.php",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Intel Open Source License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Intel Open Source License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "NegativeJudgement",
-                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                            }
-                        ]
-                    ]
-                },
-                "Notes": "Deprecated license"
             },
             "Scancode": {
                 "otherUrls": [
@@ -307,40 +248,6 @@ Raw Data
                     ]
                 }
             },
-            "ifrOSS": {
-                "ifrKind": "IfrStrongCopyleft",
-                "ifrURL": "https://opensource.org/licenses/intel-open-source-license.php",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Intel Open Source License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Intel Open Source License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "StrongCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "StrongCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://opensource.org/licenses/intel-open-source-license.php"
-                        ]
-                    ]
-                }
-            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -400,24 +307,10 @@ Raw Data
                 }
             ],
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "NegativeJudgement",
-                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                }
-            ],
-            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprÃ¼nglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."
                 }
             ]
         ],
@@ -429,13 +322,9 @@ Raw Data
             [
                 "Scancode",
                 "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
-                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "StrongCopyleft",
+        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
         "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the Intel Corporation nor the names of its contributors may\nbe used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE INTEL OR CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nEXPORT LAWS: THIS LICENSE ADDS NO RESTRICTIONS TO THE EXPORT LAWS OF YOUR\nJURISDICTION. It is licensee's responsibility to comply with any export\nregulations applicable in licensee's jurisdiction. Under CURRENT (May 2000) U.S.\nexport regulations this software is eligible for export from the U.S. and can be\ndownloaded by or otherwise exported or reexported worldwide EXCEPT to U.S.\nembargoed destinations which include Cuba, Iraq, Libya, North Korea, Iran,\nSyria, Sudan, Afghanistan and any other country to which the U.S. has embargoed\ngoods and services.",
         "__impliedURLs": [

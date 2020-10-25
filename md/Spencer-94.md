@@ -64,25 +64,6 @@ Raw Data
         ],
         "__impliedId": "Spencer-94",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Spencer-94",
-                        "Spencer-94",
-                        "Spencer License 94",
-                        "scancode://hs-regexp",
-                        "Henry Spencer Regexp License"
-                    ],
-                    "__impliedId": "Spencer-94"
-                },
-                "shortname": "Spencer-94",
-                "otherNames": [
-                    "Spencer-94",
-                    "Spencer License 94",
-                    "scancode://hs-regexp",
-                    "Henry Spencer Regexp License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Spencer License 94",

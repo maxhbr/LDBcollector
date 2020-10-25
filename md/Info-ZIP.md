@@ -63,25 +63,6 @@ Raw Data
         ],
         "__impliedId": "Info-ZIP",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Info-ZIP",
-                        "Info-ZIP",
-                        "Info-ZIP License",
-                        "scancode://info-zip",
-                        "Info-Zip License"
-                    ],
-                    "__impliedId": "Info-ZIP"
-                },
-                "shortname": "Info-ZIP",
-                "otherNames": [
-                    "Info-ZIP",
-                    "Info-ZIP License",
-                    "scancode://info-zip",
-                    "Info-Zip License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Info-ZIP License",

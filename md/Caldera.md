@@ -82,23 +82,6 @@ Raw Data
         ],
         "__impliedId": "Caldera",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Caldera",
-                        "Caldera",
-                        "Caldera License",
-                        "scancode://caldera"
-                    ],
-                    "__impliedId": "Caldera"
-                },
-                "shortname": "Caldera",
-                "otherNames": [
-                    "Caldera",
-                    "Caldera License",
-                    "scancode://caldera"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Caldera License",

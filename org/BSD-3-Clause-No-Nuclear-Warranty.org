@@ -75,23 +75,6 @@
       ],
       "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty",
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "BSD-3-Clause-No-Nuclear-Warranty",
-                      "BSD-3-Clause-No-Nuclear-Warranty",
-                      "BSD 3-Clause No Nuclear Warranty",
-                      "scancode://bsd-3-clause-no-nuclear-warranty"
-                  ],
-                  "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty"
-              },
-              "shortname": "BSD-3-Clause-No-Nuclear-Warranty",
-              "otherNames": [
-                  "BSD-3-Clause-No-Nuclear-Warranty",
-                  "BSD 3-Clause No Nuclear Warranty",
-                  "scancode://bsd-3-clause-no-nuclear-warranty"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "BSD 3-Clause No Nuclear Warranty",

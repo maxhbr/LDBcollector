@@ -103,25 +103,6 @@
           "Mozilla Public License (MPL)"
       ],
       "facts": {
-          "LicenseName": {
-              "implications": {
-                  "__impliedNames": [
-                      "MPL-2.0-no-copyleft-exception",
-                      "MPL-2.0-no-copyleft-exception",
-                      "Mozilla Public License 2.0 (no copyleft exception)",
-                      "scancode://mpl-2.0-no-copyleft-exception",
-                      "MPL 2.0 with no copyleft exception"
-                  ],
-                  "__impliedId": "MPL-2.0-no-copyleft-exception"
-              },
-              "shortname": "MPL-2.0-no-copyleft-exception",
-              "otherNames": [
-                  "MPL-2.0-no-copyleft-exception",
-                  "Mozilla Public License 2.0 (no copyleft exception)",
-                  "scancode://mpl-2.0-no-copyleft-exception",
-                  "MPL 2.0 with no copyleft exception"
-              ]
-          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Mozilla Public License 2.0 (no copyleft exception)",

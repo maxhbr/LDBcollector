@@ -543,25 +543,6 @@ Raw Data
         ],
         "__impliedId": "CECILL-2.0",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "CECILL-2.0",
-                        "CECILL-2.0",
-                        "CeCILL Free Software License Agreement v2.0",
-                        "scancode://cecill-2.0",
-                        "CeCILL 2.0"
-                    ],
-                    "__impliedId": "CECILL-2.0"
-                },
-                "shortname": "CECILL-2.0",
-                "otherNames": [
-                    "CECILL-2.0",
-                    "CeCILL Free Software License Agreement v2.0",
-                    "scancode://cecill-2.0",
-                    "CeCILL 2.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CeCILL Free Software License Agreement v2.0",

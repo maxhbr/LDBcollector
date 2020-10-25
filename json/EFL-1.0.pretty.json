@@ -8,27 +8,6 @@
     ],
     "__impliedId": "EFL-1.0",
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "EFL-1.0",
-                    "EFL-1.0",
-                    "Eiffel Forum License v1.0",
-                    "scancode://efl-1.0",
-                    "EFL 1.0",
-                    "The Eiffel Forum License, Version 1"
-                ],
-                "__impliedId": "EFL-1.0"
-            },
-            "shortname": "EFL-1.0",
-            "otherNames": [
-                "EFL-1.0",
-                "Eiffel Forum License v1.0",
-                "scancode://efl-1.0",
-                "EFL 1.0",
-                "The Eiffel Forum License, Version 1"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Eiffel Forum License v1.0",

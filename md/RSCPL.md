@@ -19,21 +19,6 @@ Comments on (easy) usability
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/RSCPL.html "SPDX"))
 
--   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
-    Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten
-    Werke umfasst, sondern definierte Ausnahmen enthält. Sofern
-    Modifikationen der Software unter MPLartigen Lizenzen in eigenen
-    Dateien realisiert werden, können diese Dateien auch unter anderen,
-    z.B. proprietären Lizenzbedingungen weiterverbreitet werden. Damit
-    soll die Kombination von Software unter verschiedenen Lizenztypen
-    erleichtert werden. (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
--   **↓**This software licenses which is NOT OKAY for Fedora. Nothing in
-    Fedora is permitted to use this license. It is either non-free or
-    deprecated. (source: [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -46,8 +31,6 @@ URLs
 -   http://wayback.archive.org/web/20060715140826/http://www.risource.org/RPL/RPL-1.0A.shtml
 
 -   http://www.opensource.org/licenses/RSCPL
-
--   http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml
 
 Text
 ----
@@ -228,29 +211,6 @@ Raw Data
                 },
                 "domain_content": false
             },
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "RSCPL",
-                        "RSCPL",
-                        "Ricoh Source Code Public License",
-                        "scancode://ricoh-1.0",
-                        "Ricoh Source Code Public License 1.0",
-                        "The Ricoh Source Code Public License",
-                        "License :: OSI Approved :: Ricoh Source Code Public License"
-                    ],
-                    "__impliedId": "RSCPL"
-                },
-                "shortname": "RSCPL",
-                "otherNames": [
-                    "RSCPL",
-                    "Ricoh Source Code Public License",
-                    "scancode://ricoh-1.0",
-                    "Ricoh Source Code Public License 1.0",
-                    "The Ricoh Source Code Public License",
-                    "License :: OSI Approved :: Ricoh Source Code Public License"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Ricoh Source Code Public License",
@@ -293,29 +253,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "RSCPL"
-            },
-            "Fedora Project Wiki": {
-                "rating": "Bad",
-                "Upstream URL": "http://opensource.org/licenses/ricohpl.php",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Ricoh Source Code Public License",
-                "FSF Free?": "No",
-                "_implications": {
-                    "__impliedNames": [
-                        "Ricoh Source Code Public License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "NegativeJudgement",
-                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                            }
-                        ]
-                    ]
-                },
-                "Notes": null
             },
             "Scancode": {
                 "otherUrls": [
@@ -388,40 +325,6 @@ Raw Data
                     ]
                 }
             },
-            "ifrOSS": {
-                "ifrKind": "IfrWeakCopyleft_MPLlike",
-                "ifrURL": "http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Ricoh Source Code Public License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Ricoh Source Code Public License"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, kÃ¶nnen diese Dateien auch unter anderen, z.B. proprietÃ¤ren Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
-                            }
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "WeakCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml"
-                        ]
-                    ]
-                }
-            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -474,34 +377,16 @@ Raw Data
         },
         "__impliedJudgement": [
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "NegativeJudgement",
-                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
-                }
-            ],
-            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt. Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien realisiert werden, kÃ¶nnen diese Dateien auch unter anderen, z.B. proprietÃ¤ren Lizenzbedingungen weiterverbreitet werden. Damit soll die Kombination von Software unter verschiedenen Lizenztypen erleichtert werden."
                 }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "Scancode",
-                "WeakCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "WeakCopyleft"
             ]
         ],
@@ -536,10 +421,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/RSCPL"
-            ],
-            [
-                null,
-                "http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml"
             ]
         ]
     }

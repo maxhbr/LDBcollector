@@ -115,25 +115,6 @@ Raw Data
         ],
         "__impliedId": "Unicode-DFS-2015",
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "Unicode-DFS-2015",
-                        "Unicode-DFS-2015",
-                        "Unicode License Agreement - Data Files and Software (2015)",
-                        "scancode://unicode-dfs-2015",
-                        "Unicode DFS 2015"
-                    ],
-                    "__impliedId": "Unicode-DFS-2015"
-                },
-                "shortname": "Unicode-DFS-2015",
-                "otherNames": [
-                    "Unicode-DFS-2015",
-                    "Unicode License Agreement - Data Files and Software (2015)",
-                    "scancode://unicode-dfs-2015",
-                    "Unicode DFS 2015"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Unicode License Agreement - Data Files and Software (2015)",

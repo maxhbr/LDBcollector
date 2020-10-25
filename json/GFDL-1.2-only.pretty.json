@@ -10,25 +10,6 @@
         "GNU Free Documentation License (GFDL)"
     ],
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "GFDL-1.2-only",
-                    "GFDL-1.2-only",
-                    "GNU Free Documentation License v1.2 only",
-                    "scancode://gfdl-1.2",
-                    "GFDL 1.2"
-                ],
-                "__impliedId": "GFDL-1.2-only"
-            },
-            "shortname": "GFDL-1.2-only",
-            "otherNames": [
-                "GFDL-1.2-only",
-                "GNU Free Documentation License v1.2 only",
-                "scancode://gfdl-1.2",
-                "GFDL 1.2"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "GNU Free Documentation License v1.2 only",

@@ -15,10 +15,6 @@ Comments on (easy) usability
 -   **↑**Rating is: Bronze (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
--   **↑**This software Licenses is OK for Fedora (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 URLs
 ----
 
@@ -101,27 +97,7 @@ Raw Data
             "JasPer 2.0"
         ],
         "__impliedId": "JasPer-2.0",
-        "__isFsfFree": true,
         "facts": {
-            "LicenseName": {
-                "implications": {
-                    "__impliedNames": [
-                        "JasPer-2.0",
-                        "JasPer-2.0",
-                        "JasPer License",
-                        "scancode://jasper-2.0",
-                        "JasPer 2.0"
-                    ],
-                    "__impliedId": "JasPer-2.0"
-                },
-                "shortname": "JasPer-2.0",
-                "otherNames": [
-                    "JasPer-2.0",
-                    "JasPer License",
-                    "scancode://jasper-2.0",
-                    "JasPer 2.0"
-                ]
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "JasPer License",
@@ -150,32 +126,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "JasPer-2.0"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://www.ece.uvic.ca/~mdadams/jasper/LICENSE",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "JasPer",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "JasPer License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "JasPer License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -261,13 +211,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

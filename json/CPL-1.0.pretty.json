@@ -14,31 +14,6 @@
     ],
     "__hasPatentHint": false,
     "facts": {
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "CPL-1.0",
-                    "CPL-1.0",
-                    "Common Public License 1.0",
-                    "scancode://cpl-1.0",
-                    "CPL 1.0",
-                    "Common Public License, Version 1.0",
-                    "CPL",
-                    "License :: OSI Approved :: Common Public License"
-                ],
-                "__impliedId": "CPL-1.0"
-            },
-            "shortname": "CPL-1.0",
-            "otherNames": [
-                "CPL-1.0",
-                "Common Public License 1.0",
-                "scancode://cpl-1.0",
-                "CPL 1.0",
-                "Common Public License, Version 1.0",
-                "CPL",
-                "License :: OSI Approved :: Common Public License"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Common Public License 1.0",

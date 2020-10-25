@@ -34,25 +34,6 @@
             },
             "domain_content": true
         },
-        "LicenseName": {
-            "implications": {
-                "__impliedNames": [
-                    "OGL-UK-1.0",
-                    "OGL-UK-1.0",
-                    "Open Government Licence v1.0",
-                    "scancode://ogl-uk-1.0",
-                    "Open Government Licence 1.0 (United Kingdom)"
-                ],
-                "__impliedId": "OGL-UK-1.0"
-            },
-            "shortname": "OGL-UK-1.0",
-            "otherNames": [
-                "OGL-UK-1.0",
-                "Open Government Licence v1.0",
-                "scancode://ogl-uk-1.0",
-                "Open Government Licence 1.0 (United Kingdom)"
-            ]
-        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Government Licence v1.0",
