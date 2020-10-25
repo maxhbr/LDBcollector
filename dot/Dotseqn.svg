@@ -28,8 +28,8 @@
 <!-- Dotseqn -->
 <g id="node1" class="node">
 <title>Dotseqn</title>
-<ellipse fill="white" stroke="white" cx="511" cy="-45.21" rx="70.92" ry="21.43"/>
-<text text-anchor="middle" x="511" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Dotseqn</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="511" cy="-45.21" rx="70.92" ry="21.43"/>
+<text text-anchor="middle" x="511" y="-40.21" font-family="Times-Roman" font-size="20.00">Dotseqn</text>
 </g>
 <!-- Dotseqn License -->
 <g id="node2" class="node">

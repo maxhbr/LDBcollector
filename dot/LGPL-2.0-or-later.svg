@@ -52,8 +52,8 @@
 <!-- LGPL&#45;2.0&#45;or&#45;later -->
 <g id="node1" class="node">
 <title>LGPL&#45;2.0&#45;or&#45;later</title>
-<ellipse fill="white" stroke="white" cx="2502" cy="-61.21" rx="130.22" ry="21.43"/>
-<text text-anchor="middle" x="2502" y="-56.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">LGPL&#45;2.0&#45;or&#45;later</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="2502" cy="-61.21" rx="130.22" ry="21.43"/>
+<text text-anchor="middle" x="2502" y="-56.21" font-family="Times-Roman" font-size="20.00">LGPL&#45;2.0&#45;or&#45;later</text>
 </g>
 <!-- GNU Library General Public License v2 or later -->
 <g id="node2" class="node">
@@ -82,8 +82,8 @@
 <!-- LGPL&#45;2.0&#45;only -->
 <g id="node6" class="node">
 <title>LGPL&#45;2.0&#45;only</title>
-<ellipse fill="white" stroke="white" cx="914" cy="-61.21" rx="109.7" ry="21.43"/>
-<text text-anchor="middle" x="914" y="-56.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">LGPL&#45;2.0&#45;only</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="914" cy="-61.21" rx="109.7" ry="21.43"/>
+<text text-anchor="middle" x="914" y="-56.21" font-family="Times-Roman" font-size="20.00">LGPL&#45;2.0&#45;only</text>
 </g>
 <!-- GNU Library General Public License v2 only -->
 <g id="node7" class="node">

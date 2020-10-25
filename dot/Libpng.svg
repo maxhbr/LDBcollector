@@ -28,8 +28,8 @@
 <!-- Libpng -->
 <g id="node1" class="node">
 <title>Libpng</title>
-<ellipse fill="white" stroke="white" cx="635" cy="-45.21" rx="59.29" ry="21.43"/>
-<text text-anchor="middle" x="635" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Libpng</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="635" cy="-45.21" rx="59.29" ry="21.43"/>
+<text text-anchor="middle" x="635" y="-40.21" font-family="Times-Roman" font-size="20.00">Libpng</text>
 </g>
 <!-- libpng License -->
 <g id="node2" class="node">

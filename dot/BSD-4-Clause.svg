@@ -40,8 +40,8 @@
 <!-- BSD&#45;4&#45;Clause -->
 <g id="node1" class="node">
 <title>BSD&#45;4&#45;Clause</title>
-<ellipse fill="white" stroke="white" cx="1618" cy="-53.21" rx="108.38" ry="21.43"/>
-<text text-anchor="middle" x="1618" y="-48.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">BSD&#45;4&#45;Clause</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1618" cy="-53.21" rx="108.38" ry="21.43"/>
+<text text-anchor="middle" x="1618" y="-48.21" font-family="Times-Roman" font-size="20.00">BSD&#45;4&#45;Clause</text>
 </g>
 <!-- BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License -->
 <g id="node2" class="node">

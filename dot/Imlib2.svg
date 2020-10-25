@@ -28,8 +28,8 @@
 <!-- Imlib2 -->
 <g id="node1" class="node">
 <title>Imlib2</title>
-<ellipse fill="white" stroke="white" cx="457" cy="-45.21" rx="55.31" ry="21.43"/>
-<text text-anchor="middle" x="457" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Imlib2</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="457" cy="-45.21" rx="55.31" ry="21.43"/>
+<text text-anchor="middle" x="457" y="-40.21" font-family="Times-Roman" font-size="20.00">Imlib2</text>
 </g>
 <!-- Imlib2 License -->
 <g id="node2" class="node">

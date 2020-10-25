@@ -28,8 +28,8 @@
 <!-- Artistic&#45;1.0&#45;cl8 -->
 <g id="node1" class="node">
 <title>Artistic&#45;1.0&#45;cl8</title>
-<ellipse fill="white" stroke="white" cx="975" cy="-45.21" rx="113.69" ry="21.43"/>
-<text text-anchor="middle" x="975" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Artistic&#45;1.0&#45;cl8</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="975" cy="-45.21" rx="113.69" ry="21.43"/>
+<text text-anchor="middle" x="975" y="-40.21" font-family="Times-Roman" font-size="20.00">Artistic&#45;1.0&#45;cl8</text>
 </g>
 <!-- Artistic License 1.0 w/clause 8 -->
 <g id="node2" class="node">

@@ -36,8 +36,8 @@
 <!-- WTFPL -->
 <g id="node1" class="node">
 <title>WTFPL</title>
-<ellipse fill="white" stroke="white" cx="1541" cy="-45.21" rx="58.88" ry="21.43"/>
-<text text-anchor="middle" x="1541" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">WTFPL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1541" cy="-45.21" rx="58.88" ry="21.43"/>
+<text text-anchor="middle" x="1541" y="-40.21" font-family="Times-Roman" font-size="20.00">WTFPL</text>
 </g>
 <!-- Do What The F*ck You Want To Public License -->
 <g id="node2" class="node">

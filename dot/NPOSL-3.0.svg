@@ -32,8 +32,8 @@
 <!-- NPOSL&#45;3.0 -->
 <g id="node1" class="node">
 <title>NPOSL&#45;3.0</title>
-<ellipse fill="white" stroke="white" cx="1418" cy="-45.21" rx="86.03" ry="21.43"/>
-<text text-anchor="middle" x="1418" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">NPOSL&#45;3.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1418" cy="-45.21" rx="86.03" ry="21.43"/>
+<text text-anchor="middle" x="1418" y="-40.21" font-family="Times-Roman" font-size="20.00">NPOSL&#45;3.0</text>
 </g>
 <!-- Non&#45;Profit Open Software License 3.0 -->
 <g id="node2" class="node">

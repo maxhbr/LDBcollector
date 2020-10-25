@@ -32,8 +32,8 @@
 <!-- 0BSD -->
 <g id="node1" class="node">
 <title>0BSD</title>
-<ellipse fill="white" stroke="white" cx="658" cy="-45.21" rx="50.41" ry="21.43"/>
-<text text-anchor="middle" x="658" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">0BSD</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="658" cy="-45.21" rx="50.41" ry="21.43"/>
+<text text-anchor="middle" x="658" y="-40.21" font-family="Times-Roman" font-size="20.00">0BSD</text>
 </g>
 <!-- BSD Zero Clause License -->
 <g id="node2" class="node">

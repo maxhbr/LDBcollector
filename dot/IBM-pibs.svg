@@ -28,8 +28,8 @@
 <!-- IBM&#45;pibs -->
 <g id="node1" class="node">
 <title>IBM&#45;pibs</title>
-<ellipse fill="white" stroke="white" cx="1014" cy="-45.21" rx="72.25" ry="21.43"/>
-<text text-anchor="middle" x="1014" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">IBM&#45;pibs</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1014" cy="-45.21" rx="72.25" ry="21.43"/>
+<text text-anchor="middle" x="1014" y="-40.21" font-family="Times-Roman" font-size="20.00">IBM&#45;pibs</text>
 </g>
 <!-- IBM PowerPC Initialization and Boot Software -->
 <g id="node2" class="node">

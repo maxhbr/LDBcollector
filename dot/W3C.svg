@@ -40,8 +40,8 @@
 <!-- W3C -->
 <g id="node1" class="node">
 <title>W3C</title>
-<ellipse fill="white" stroke="white" cx="2453" cy="-45.21" rx="44.6" ry="21.43"/>
-<text text-anchor="middle" x="2453" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">W3C</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="2453" cy="-45.21" rx="44.6" ry="21.43"/>
+<text text-anchor="middle" x="2453" y="-40.21" font-family="Times-Roman" font-size="20.00">W3C</text>
 </g>
 <!-- W3C Software Notice and License (2002&#45;12&#45;31) -->
 <g id="node2" class="node">

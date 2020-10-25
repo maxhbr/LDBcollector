@@ -28,8 +28,8 @@
 <!-- SMLNJ -->
 <g id="node1" class="node">
 <title>SMLNJ</title>
-<ellipse fill="white" stroke="white" cx="1004" cy="-45.21" rx="55.72" ry="21.43"/>
-<text text-anchor="middle" x="1004" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">SMLNJ</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1004" cy="-45.21" rx="55.72" ry="21.43"/>
+<text text-anchor="middle" x="1004" y="-40.21" font-family="Times-Roman" font-size="20.00">SMLNJ</text>
 </g>
 <!-- Standard ML of New Jersey License -->
 <g id="node2" class="node">

@@ -32,8 +32,8 @@
 <!-- NGPL -->
 <g id="node1" class="node">
 <title>NGPL</title>
-<ellipse fill="white" stroke="white" cx="1519" cy="-45.21" rx="50.41" ry="21.43"/>
-<text text-anchor="middle" x="1519" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">NGPL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1519" cy="-45.21" rx="50.41" ry="21.43"/>
+<text text-anchor="middle" x="1519" y="-40.21" font-family="Times-Roman" font-size="20.00">NGPL</text>
 </g>
 <!-- Nethack General Public License -->
 <g id="node2" class="node">

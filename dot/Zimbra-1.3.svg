@@ -28,8 +28,8 @@
 <!-- Zimbra&#45;1.3 -->
 <g id="node1" class="node">
 <title>Zimbra&#45;1.3</title>
-<ellipse fill="white" stroke="white" cx="758" cy="-45.21" rx="89.61" ry="21.43"/>
-<text text-anchor="middle" x="758" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Zimbra&#45;1.3</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="758" cy="-45.21" rx="89.61" ry="21.43"/>
+<text text-anchor="middle" x="758" y="-40.21" font-family="Times-Roman" font-size="20.00">Zimbra&#45;1.3</text>
 </g>
 <!-- Zimbra Public License v1.3 -->
 <g id="node2" class="node">

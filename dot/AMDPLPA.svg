@@ -28,8 +28,8 @@
 <!-- AMDPLPA -->
 <g id="node1" class="node">
 <title>AMDPLPA</title>
-<ellipse fill="white" stroke="white" cx="816" cy="-45.21" rx="77.56" ry="21.43"/>
-<text text-anchor="middle" x="816" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">AMDPLPA</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="816" cy="-45.21" rx="77.56" ry="21.43"/>
+<text text-anchor="middle" x="816" y="-40.21" font-family="Times-Roman" font-size="20.00">AMDPLPA</text>
 </g>
 <!-- AMD&#39;s plpa_map.c License -->
 <g id="node2" class="node">

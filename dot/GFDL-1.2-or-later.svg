@@ -28,8 +28,8 @@
 <!-- GFDL&#45;1.2&#45;or&#45;later -->
 <g id="node1" class="node">
 <title>GFDL&#45;1.2&#45;or&#45;later</title>
-<ellipse fill="white" stroke="white" cx="1079" cy="-45.21" rx="132.87" ry="21.43"/>
-<text text-anchor="middle" x="1079" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">GFDL&#45;1.2&#45;or&#45;later</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1079" cy="-45.21" rx="132.87" ry="21.43"/>
+<text text-anchor="middle" x="1079" y="-40.21" font-family="Times-Roman" font-size="20.00">GFDL&#45;1.2&#45;or&#45;later</text>
 </g>
 <!-- GNU Free Documentation License v1.2 or later -->
 <g id="node2" class="node">

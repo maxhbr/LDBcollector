@@ -32,8 +32,8 @@
 <!-- Fair -->
 <g id="node1" class="node">
 <title>Fair</title>
-<ellipse fill="white" stroke="white" cx="593" cy="-45.21" rx="36.54" ry="21.43"/>
-<text text-anchor="middle" x="593" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Fair</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="593" cy="-45.21" rx="36.54" ry="21.43"/>
+<text text-anchor="middle" x="593" y="-40.21" font-family="Times-Roman" font-size="20.00">Fair</text>
 </g>
 <!-- Fair License -->
 <g id="node2" class="node">

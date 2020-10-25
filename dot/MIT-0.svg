@@ -28,8 +28,8 @@
 <!-- MIT&#45;0 -->
 <g id="node1" class="node">
 <title>MIT&#45;0</title>
-<ellipse fill="white" stroke="white" cx="637" cy="-45.21" rx="50.41" ry="21.43"/>
-<text text-anchor="middle" x="637" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">MIT&#45;0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="637" cy="-45.21" rx="50.41" ry="21.43"/>
+<text text-anchor="middle" x="637" y="-40.21" font-family="Times-Roman" font-size="20.00">MIT&#45;0</text>
 </g>
 <!-- MIT No Attribution -->
 <g id="node2" class="node">

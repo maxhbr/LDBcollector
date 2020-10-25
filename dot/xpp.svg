@@ -28,8 +28,8 @@
 <!-- xpp -->
 <g id="node1" class="node">
 <title>xpp</title>
-<ellipse fill="white" stroke="white" cx="840" cy="-45.21" rx="38.37" ry="21.43"/>
-<text text-anchor="middle" x="840" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">xpp</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="840" cy="-45.21" rx="38.37" ry="21.43"/>
+<text text-anchor="middle" x="840" y="-40.21" font-family="Times-Roman" font-size="20.00">xpp</text>
 </g>
 <!-- XPP License -->
 <g id="node2" class="node">

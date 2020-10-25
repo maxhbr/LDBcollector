@@ -28,8 +28,8 @@
 <!-- NOSL -->
 <g id="node1" class="node">
 <title>NOSL</title>
-<ellipse fill="white" stroke="white" cx="728" cy="-45.21" rx="50.41" ry="21.43"/>
-<text text-anchor="middle" x="728" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">NOSL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="728" cy="-45.21" rx="50.41" ry="21.43"/>
+<text text-anchor="middle" x="728" y="-40.21" font-family="Times-Roman" font-size="20.00">NOSL</text>
 </g>
 <!-- Netizen Open Source License -->
 <g id="node2" class="node">

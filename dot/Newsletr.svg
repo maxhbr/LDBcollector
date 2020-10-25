@@ -28,8 +28,8 @@
 <!-- Newsletr -->
 <g id="node1" class="node">
 <title>Newsletr</title>
-<ellipse fill="white" stroke="white" cx="522" cy="-45.21" rx="73.58" ry="21.43"/>
-<text text-anchor="middle" x="522" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Newsletr</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="522" cy="-45.21" rx="73.58" ry="21.43"/>
+<text text-anchor="middle" x="522" y="-40.21" font-family="Times-Roman" font-size="20.00">Newsletr</text>
 </g>
 <!-- Newsletr License -->
 <g id="node2" class="node">

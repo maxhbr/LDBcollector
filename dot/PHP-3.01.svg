@@ -28,8 +28,8 @@
 <!-- PHP&#45;3.01 -->
 <g id="node1" class="node">
 <title>PHP&#45;3.01</title>
-<ellipse fill="white" stroke="white" cx="737" cy="-45.21" rx="75.82" ry="21.43"/>
-<text text-anchor="middle" x="737" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">PHP&#45;3.01</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="737" cy="-45.21" rx="75.82" ry="21.43"/>
+<text text-anchor="middle" x="737" y="-40.21" font-family="Times-Roman" font-size="20.00">PHP&#45;3.01</text>
 </g>
 <!-- PHP License v3.01 -->
 <g id="node2" class="node">

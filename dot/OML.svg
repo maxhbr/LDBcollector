@@ -28,8 +28,8 @@
 <!-- OML -->
 <g id="node1" class="node">
 <title>OML</title>
-<ellipse fill="white" stroke="white" cx="744" cy="-45.21" rx="43.27" ry="21.43"/>
-<text text-anchor="middle" x="744" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">OML</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="744" cy="-45.21" rx="43.27" ry="21.43"/>
+<text text-anchor="middle" x="744" y="-40.21" font-family="Times-Roman" font-size="20.00">OML</text>
 </g>
 <!-- Open Market License -->
 <g id="node2" class="node">

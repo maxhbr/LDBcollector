@@ -28,8 +28,8 @@
 <!-- LPPL&#45;1.2 -->
 <g id="node1" class="node">
 <title>LPPL&#45;1.2</title>
-<ellipse fill="white" stroke="white" cx="771" cy="-45.21" rx="71.34" ry="21.43"/>
-<text text-anchor="middle" x="771" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">LPPL&#45;1.2</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="771" cy="-45.21" rx="71.34" ry="21.43"/>
+<text text-anchor="middle" x="771" y="-40.21" font-family="Times-Roman" font-size="20.00">LPPL&#45;1.2</text>
 </g>
 <!-- LaTeX Project Public License v1.2 -->
 <g id="node2" class="node">

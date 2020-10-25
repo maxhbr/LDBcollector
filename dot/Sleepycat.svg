@@ -36,8 +36,8 @@
 <!-- Sleepycat -->
 <g id="node1" class="node">
 <title>Sleepycat</title>
-<ellipse fill="white" stroke="white" cx="1875" cy="-45.21" rx="80.72" ry="21.43"/>
-<text text-anchor="middle" x="1875" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Sleepycat</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1875" cy="-45.21" rx="80.72" ry="21.43"/>
+<text text-anchor="middle" x="1875" y="-40.21" font-family="Times-Roman" font-size="20.00">Sleepycat</text>
 </g>
 <!-- Sleepycat License -->
 <g id="node2" class="node">

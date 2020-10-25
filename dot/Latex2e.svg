@@ -28,8 +28,8 @@
 <!-- Latex2e -->
 <g id="node1" class="node">
 <title>Latex2e</title>
-<ellipse fill="white" stroke="white" cx="496" cy="-45.21" rx="67.76" ry="21.43"/>
-<text text-anchor="middle" x="496" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Latex2e</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="496" cy="-45.21" rx="67.76" ry="21.43"/>
+<text text-anchor="middle" x="496" y="-40.21" font-family="Times-Roman" font-size="20.00">Latex2e</text>
 </g>
 <!-- Latex2e License -->
 <g id="node2" class="node">

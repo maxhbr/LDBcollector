@@ -28,8 +28,8 @@
 <!-- SWL -->
 <g id="node1" class="node">
 <title>SWL</title>
-<ellipse fill="white" stroke="white" cx="1285" cy="-45.21" rx="42.35" ry="21.43"/>
-<text text-anchor="middle" x="1285" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">SWL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1285" cy="-45.21" rx="42.35" ry="21.43"/>
+<text text-anchor="middle" x="1285" y="-40.21" font-family="Times-Roman" font-size="20.00">SWL</text>
 </g>
 <!-- Scheme Widget Library (SWL) Software License Agreement -->
 <g id="node2" class="node">

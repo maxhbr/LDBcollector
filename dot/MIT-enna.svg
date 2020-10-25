@@ -28,8 +28,8 @@
 <!-- MIT&#45;enna -->
 <g id="node1" class="node">
 <title>MIT&#45;enna</title>
-<ellipse fill="white" stroke="white" cx="456" cy="-45.21" rx="75.82" ry="21.43"/>
-<text text-anchor="middle" x="456" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">MIT&#45;enna</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="456" cy="-45.21" rx="75.82" ry="21.43"/>
+<text text-anchor="middle" x="456" y="-40.21" font-family="Times-Roman" font-size="20.00">MIT&#45;enna</text>
 </g>
 <!-- enna License -->
 <g id="node2" class="node">

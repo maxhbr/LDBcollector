@@ -28,8 +28,8 @@
 <!-- Afmparse -->
 <g id="node1" class="node">
 <title>Afmparse</title>
-<ellipse fill="white" stroke="white" cx="740" cy="-45.21" rx="78.48" ry="21.43"/>
-<text text-anchor="middle" x="740" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Afmparse</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="740" cy="-45.21" rx="78.48" ry="21.43"/>
+<text text-anchor="middle" x="740" y="-40.21" font-family="Times-Roman" font-size="20.00">Afmparse</text>
 </g>
 <!-- Afmparse License -->
 <g id="node2" class="node">

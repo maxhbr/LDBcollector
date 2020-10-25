@@ -40,8 +40,8 @@
 <!-- OpenSSL -->
 <g id="node1" class="node">
 <title>OpenSSL</title>
-<ellipse fill="white" stroke="white" cx="1268" cy="-53.21" rx="75.82" ry="21.43"/>
-<text text-anchor="middle" x="1268" y="-48.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">OpenSSL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1268" cy="-53.21" rx="75.82" ry="21.43"/>
+<text text-anchor="middle" x="1268" y="-48.21" font-family="Times-Roman" font-size="20.00">OpenSSL</text>
 </g>
 <!-- OpenSSL License -->
 <g id="node2" class="node">

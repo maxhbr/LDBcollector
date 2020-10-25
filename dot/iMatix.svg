@@ -28,8 +28,8 @@
 <!-- iMatix -->
 <g id="node1" class="node">
 <title>iMatix</title>
-<ellipse fill="white" stroke="white" cx="1011" cy="-45.21" rx="53.98" ry="21.43"/>
-<text text-anchor="middle" x="1011" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">iMatix</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1011" cy="-45.21" rx="53.98" ry="21.43"/>
+<text text-anchor="middle" x="1011" y="-40.21" font-family="Times-Roman" font-size="20.00">iMatix</text>
 </g>
 <!-- iMatix Standard Function Library Agreement -->
 <g id="node2" class="node">

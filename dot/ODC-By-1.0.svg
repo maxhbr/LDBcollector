@@ -32,8 +32,8 @@
 <!-- ODC&#45;By&#45;1.0 -->
 <g id="node1" class="node">
 <title>ODC&#45;By&#45;1.0</title>
-<ellipse fill="white" stroke="white" cx="1412" cy="-45.21" rx="94.09" ry="21.43"/>
-<text text-anchor="middle" x="1412" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">ODC&#45;By&#45;1.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1412" cy="-45.21" rx="94.09" ry="21.43"/>
+<text text-anchor="middle" x="1412" y="-40.21" font-family="Times-Roman" font-size="20.00">ODC&#45;By&#45;1.0</text>
 </g>
 <!-- Open Data Commons Attribution License v1.0 -->
 <g id="node2" class="node">

@@ -28,8 +28,8 @@
 <!-- psfrag -->
 <g id="node1" class="node">
 <title>psfrag</title>
-<ellipse fill="white" stroke="white" cx="465" cy="-45.21" rx="56.64" ry="21.43"/>
-<text text-anchor="middle" x="465" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">psfrag</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="465" cy="-45.21" rx="56.64" ry="21.43"/>
+<text text-anchor="middle" x="465" y="-40.21" font-family="Times-Roman" font-size="20.00">psfrag</text>
 </g>
 <!-- psfrag License -->
 <g id="node2" class="node">

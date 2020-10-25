@@ -28,8 +28,8 @@
 <!-- Artistic&#45;1.0&#45;Perl -->
 <g id="node1" class="node">
 <title>Artistic&#45;1.0&#45;Perl</title>
-<ellipse fill="white" stroke="white" cx="882" cy="-45.21" rx="119.5" ry="21.43"/>
-<text text-anchor="middle" x="882" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Artistic&#45;1.0&#45;Perl</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="882" cy="-45.21" rx="119.5" ry="21.43"/>
+<text text-anchor="middle" x="882" y="-40.21" font-family="Times-Roman" font-size="20.00">Artistic&#45;1.0&#45;Perl</text>
 </g>
 <!-- Artistic License 1.0 (Perl) -->
 <g id="node2" class="node">

@@ -40,8 +40,8 @@
 <!-- ISC -->
 <g id="node1" class="node">
 <title>ISC</title>
-<ellipse fill="white" stroke="white" cx="1241" cy="-45.21" rx="35.21" ry="21.43"/>
-<text text-anchor="middle" x="1241" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">ISC</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1241" cy="-45.21" rx="35.21" ry="21.43"/>
+<text text-anchor="middle" x="1241" y="-40.21" font-family="Times-Roman" font-size="20.00">ISC</text>
 </g>
 <!-- ISC License -->
 <g id="node2" class="node">

@@ -32,8 +32,8 @@
 <!-- MPL&#45;1.1 -->
 <g id="node1" class="node">
 <title>MPL&#45;1.1</title>
-<ellipse fill="white" stroke="white" cx="1643" cy="-45.21" rx="67.35" ry="21.43"/>
-<text text-anchor="middle" x="1643" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">MPL&#45;1.1</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1643" cy="-45.21" rx="67.35" ry="21.43"/>
+<text text-anchor="middle" x="1643" y="-40.21" font-family="Times-Roman" font-size="20.00">MPL&#45;1.1</text>
 </g>
 <!-- Mozilla Public License 1.1 -->
 <g id="node2" class="node">

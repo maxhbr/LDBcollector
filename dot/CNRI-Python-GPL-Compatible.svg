@@ -28,8 +28,8 @@
 <!-- CNRI&#45;Python&#45;GPL&#45;Compatible -->
 <g id="node1" class="node">
 <title>CNRI&#45;Python&#45;GPL&#45;Compatible</title>
-<ellipse fill="white" stroke="white" cx="1363" cy="-45.21" rx="219.41" ry="21.43"/>
-<text text-anchor="middle" x="1363" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">CNRI&#45;Python&#45;GPL&#45;Compatible</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1363" cy="-45.21" rx="219.41" ry="21.43"/>
+<text text-anchor="middle" x="1363" y="-40.21" font-family="Times-Roman" font-size="20.00">CNRI&#45;Python&#45;GPL&#45;Compatible</text>
 </g>
 <!-- CNRI Python Open Source GPL Compatible License Agreement -->
 <g id="node2" class="node">

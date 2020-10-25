@@ -28,8 +28,8 @@
 <!-- IJG -->
 <g id="node1" class="node">
 <title>IJG</title>
-<ellipse fill="white" stroke="white" cx="721" cy="-45.21" rx="31.23" ry="21.43"/>
-<text text-anchor="middle" x="721" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">IJG</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="721" cy="-45.21" rx="31.23" ry="21.43"/>
+<text text-anchor="middle" x="721" y="-40.21" font-family="Times-Roman" font-size="20.00">IJG</text>
 </g>
 <!-- Independent JPEG Group License -->
 <g id="node2" class="node">

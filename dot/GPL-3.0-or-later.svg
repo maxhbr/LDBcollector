@@ -72,8 +72,8 @@
 <!-- GPL&#45;3.0&#45;or&#45;later -->
 <g id="node1" class="node">
 <title>GPL&#45;3.0&#45;or&#45;later</title>
-<ellipse fill="white" stroke="white" cx="5112" cy="-61.21" rx="122.16" ry="21.43"/>
-<text text-anchor="middle" x="5112" y="-56.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">GPL&#45;3.0&#45;or&#45;later</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="5112" cy="-61.21" rx="122.16" ry="21.43"/>
+<text text-anchor="middle" x="5112" y="-56.21" font-family="Times-Roman" font-size="20.00">GPL&#45;3.0&#45;or&#45;later</text>
 </g>
 <!-- GNU General Public License v3.0 or later -->
 <g id="node2" class="node">
@@ -126,8 +126,8 @@
 <!-- GPL&#45;3.0&#45;only -->
 <g id="node10" class="node">
 <title>GPL&#45;3.0&#45;only</title>
-<ellipse fill="white" stroke="white" cx="3140" cy="-61.21" rx="101.23" ry="21.43"/>
-<text text-anchor="middle" x="3140" y="-56.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">GPL&#45;3.0&#45;only</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="3140" cy="-61.21" rx="101.23" ry="21.43"/>
+<text text-anchor="middle" x="3140" y="-56.21" font-family="Times-Roman" font-size="20.00">GPL&#45;3.0&#45;only</text>
 </g>
 <!-- GPL&#45;3.0 -->
 <g id="node11" class="node">

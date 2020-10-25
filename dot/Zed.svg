@@ -28,8 +28,8 @@
 <!-- Zed -->
 <g id="node1" class="node">
 <title>Zed</title>
-<ellipse fill="white" stroke="white" cx="397" cy="-45.21" rx="38.78" ry="21.43"/>
-<text text-anchor="middle" x="397" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Zed</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="397" cy="-45.21" rx="38.78" ry="21.43"/>
+<text text-anchor="middle" x="397" y="-40.21" font-family="Times-Roman" font-size="20.00">Zed</text>
 </g>
 <!-- Zed License -->
 <g id="node2" class="node">

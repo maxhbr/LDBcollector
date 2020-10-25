@@ -28,8 +28,8 @@
 <!-- Spencer&#45;86 -->
 <g id="node1" class="node">
 <title>Spencer&#45;86</title>
-<ellipse fill="white" stroke="white" cx="728" cy="-45.21" rx="91.85" ry="21.43"/>
-<text text-anchor="middle" x="728" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Spencer&#45;86</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="728" cy="-45.21" rx="91.85" ry="21.43"/>
+<text text-anchor="middle" x="728" y="-40.21" font-family="Times-Roman" font-size="20.00">Spencer&#45;86</text>
 </g>
 <!-- Spencer License 86 -->
 <g id="node2" class="node">

@@ -36,8 +36,8 @@
 <!-- ECL&#45;1.0 -->
 <g id="node1" class="node">
 <title>ECL&#45;1.0</title>
-<ellipse fill="white" stroke="white" cx="1606" cy="-45.21" rx="65.52" ry="21.43"/>
-<text text-anchor="middle" x="1606" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">ECL&#45;1.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1606" cy="-45.21" rx="65.52" ry="21.43"/>
+<text text-anchor="middle" x="1606" y="-40.21" font-family="Times-Roman" font-size="20.00">ECL&#45;1.0</text>
 </g>
 <!-- Educational Community License v1.0 -->
 <g id="node2" class="node">

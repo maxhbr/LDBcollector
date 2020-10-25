@@ -28,8 +28,8 @@
 <!-- Wsuipa -->
 <g id="node1" class="node">
 <title>Wsuipa</title>
-<ellipse fill="white" stroke="white" cx="485" cy="-45.21" rx="62.87" ry="21.43"/>
-<text text-anchor="middle" x="485" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Wsuipa</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="485" cy="-45.21" rx="62.87" ry="21.43"/>
+<text text-anchor="middle" x="485" y="-40.21" font-family="Times-Roman" font-size="20.00">Wsuipa</text>
 </g>
 <!-- Wsuipa License -->
 <g id="node2" class="node">

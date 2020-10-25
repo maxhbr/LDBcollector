@@ -36,8 +36,8 @@
 <!-- PostgreSQL -->
 <g id="node1" class="node">
 <title>PostgreSQL</title>
-<ellipse fill="white" stroke="white" cx="980" cy="-45.21" rx="91.85" ry="21.43"/>
-<text text-anchor="middle" x="980" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">PostgreSQL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="980" cy="-45.21" rx="91.85" ry="21.43"/>
+<text text-anchor="middle" x="980" y="-40.21" font-family="Times-Roman" font-size="20.00">PostgreSQL</text>
 </g>
 <!-- PostgreSQL License -->
 <g id="node2" class="node">

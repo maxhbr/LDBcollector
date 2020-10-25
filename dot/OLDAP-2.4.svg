@@ -28,8 +28,8 @@
 <!-- OLDAP&#45;2.4 -->
 <g id="node1" class="node">
 <title>OLDAP&#45;2.4</title>
-<ellipse fill="white" stroke="white" cx="1007" cy="-45.21" rx="86.03" ry="21.43"/>
-<text text-anchor="middle" x="1007" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">OLDAP&#45;2.4</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1007" cy="-45.21" rx="86.03" ry="21.43"/>
+<text text-anchor="middle" x="1007" y="-40.21" font-family="Times-Roman" font-size="20.00">OLDAP&#45;2.4</text>
 </g>
 <!-- Open LDAP Public License v2.4 -->
 <g id="node2" class="node">

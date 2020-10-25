@@ -28,8 +28,8 @@
 <!-- Sendmail -->
 <g id="node1" class="node">
 <title>Sendmail</title>
-<ellipse fill="white" stroke="white" cx="533" cy="-45.21" rx="77.15" ry="21.43"/>
-<text text-anchor="middle" x="533" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Sendmail</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="533" cy="-45.21" rx="77.15" ry="21.43"/>
+<text text-anchor="middle" x="533" y="-40.21" font-family="Times-Roman" font-size="20.00">Sendmail</text>
 </g>
 <!-- Sendmail License -->
 <g id="node2" class="node">

@@ -28,8 +28,8 @@
 <!-- Zend&#45;2.0 -->
 <g id="node1" class="node">
 <title>Zend&#45;2.0</title>
-<ellipse fill="white" stroke="white" cx="802" cy="-45.21" rx="75.82" ry="21.43"/>
-<text text-anchor="middle" x="802" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Zend&#45;2.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="802" cy="-45.21" rx="75.82" ry="21.43"/>
+<text text-anchor="middle" x="802" y="-40.21" font-family="Times-Roman" font-size="20.00">Zend&#45;2.0</text>
 </g>
 <!-- Zend License v2.0 -->
 <g id="node2" class="node">

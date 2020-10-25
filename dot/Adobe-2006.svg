@@ -28,8 +28,8 @@
 <!-- Adobe&#45;2006 -->
 <g id="node1" class="node">
 <title>Adobe&#45;2006</title>
-<ellipse fill="white" stroke="white" cx="1300" cy="-45.21" rx="97.66" ry="21.43"/>
-<text text-anchor="middle" x="1300" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Adobe&#45;2006</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1300" cy="-45.21" rx="97.66" ry="21.43"/>
+<text text-anchor="middle" x="1300" y="-40.21" font-family="Times-Roman" font-size="20.00">Adobe&#45;2006</text>
 </g>
 <!-- Adobe Systems Incorporated Source Code License Agreement -->
 <g id="node2" class="node">

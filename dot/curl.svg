@@ -36,8 +36,8 @@
 <!-- curl -->
 <g id="node1" class="node">
 <title>curl</title>
-<ellipse fill="white" stroke="white" cx="718" cy="-53.21" rx="38.37" ry="21.43"/>
-<text text-anchor="middle" x="718" y="-48.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">curl</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="718" cy="-53.21" rx="38.37" ry="21.43"/>
+<text text-anchor="middle" x="718" y="-48.21" font-family="Times-Roman" font-size="20.00">curl</text>
 </g>
 <!-- curl License -->
 <g id="node2" class="node">

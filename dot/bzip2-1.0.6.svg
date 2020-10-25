@@ -28,8 +28,8 @@
 <!-- bzip2&#45;1.0.6 -->
 <g id="node1" class="node">
 <title>bzip2&#45;1.0.6</title>
-<ellipse fill="white" stroke="white" cx="997" cy="-45.21" rx="90.52" ry="21.43"/>
-<text text-anchor="middle" x="997" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">bzip2&#45;1.0.6</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="997" cy="-45.21" rx="90.52" ry="21.43"/>
+<text text-anchor="middle" x="997" y="-40.21" font-family="Times-Roman" font-size="20.00">bzip2&#45;1.0.6</text>
 </g>
 <!-- bzip2 and libbzip2 License v1.0.6 -->
 <g id="node2" class="node">

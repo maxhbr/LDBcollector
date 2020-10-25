@@ -28,8 +28,8 @@
 <!-- JSON -->
 <g id="node1" class="node">
 <title>JSON</title>
-<ellipse fill="white" stroke="white" cx="421" cy="-45.21" rx="46.84" ry="21.43"/>
-<text text-anchor="middle" x="421" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">JSON</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="421" cy="-45.21" rx="46.84" ry="21.43"/>
+<text text-anchor="middle" x="421" y="-40.21" font-family="Times-Roman" font-size="20.00">JSON</text>
 </g>
 <!-- JSON License -->
 <g id="node2" class="node">

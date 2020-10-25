@@ -32,8 +32,8 @@
 <!-- SimPL&#45;2.0 -->
 <g id="node1" class="node">
 <title>SimPL&#45;2.0</title>
-<ellipse fill="white" stroke="white" cx="1232" cy="-45.21" rx="82.05" ry="21.43"/>
-<text text-anchor="middle" x="1232" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">SimPL&#45;2.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1232" cy="-45.21" rx="82.05" ry="21.43"/>
+<text text-anchor="middle" x="1232" y="-40.21" font-family="Times-Roman" font-size="20.00">SimPL&#45;2.0</text>
 </g>
 <!-- Simple Public License 2.0 -->
 <g id="node2" class="node">

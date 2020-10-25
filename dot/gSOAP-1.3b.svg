@@ -28,8 +28,8 @@
 <!-- gSOAP&#45;1.3b -->
 <g id="node1" class="node">
 <title>gSOAP&#45;1.3b</title>
-<ellipse fill="white" stroke="white" cx="665" cy="-45.21" rx="94.51" ry="21.43"/>
-<text text-anchor="middle" x="665" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">gSOAP&#45;1.3b</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="665" cy="-45.21" rx="94.51" ry="21.43"/>
+<text text-anchor="middle" x="665" y="-40.21" font-family="Times-Roman" font-size="20.00">gSOAP&#45;1.3b</text>
 </g>
 <!-- gSOAP Public License v1.3b -->
 <g id="node2" class="node">

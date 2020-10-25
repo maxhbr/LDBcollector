@@ -28,8 +28,8 @@
 <!-- Aladdin -->
 <g id="node1" class="node">
 <title>Aladdin</title>
-<ellipse fill="white" stroke="white" cx="768" cy="-45.21" rx="64.19" ry="21.43"/>
-<text text-anchor="middle" x="768" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Aladdin</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="768" cy="-45.21" rx="64.19" ry="21.43"/>
+<text text-anchor="middle" x="768" y="-40.21" font-family="Times-Roman" font-size="20.00">Aladdin</text>
 </g>
 <!-- Aladdin Free Public License -->
 <g id="node2" class="node">

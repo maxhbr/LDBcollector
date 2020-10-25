@@ -36,8 +36,8 @@
 <!-- IPL&#45;1.0 -->
 <g id="node1" class="node">
 <title>IPL&#45;1.0</title>
-<ellipse fill="white" stroke="white" cx="1697" cy="-45.21" rx="59.29" ry="21.43"/>
-<text text-anchor="middle" x="1697" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">IPL&#45;1.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1697" cy="-45.21" rx="59.29" ry="21.43"/>
+<text text-anchor="middle" x="1697" y="-40.21" font-family="Times-Roman" font-size="20.00">IPL&#45;1.0</text>
 </g>
 <!-- IBM Public License v1.0 -->
 <g id="node2" class="node">

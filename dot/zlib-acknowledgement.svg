@@ -28,8 +28,8 @@
 <!-- zlib&#45;acknowledgement -->
 <g id="node1" class="node">
 <title>zlib&#45;acknowledgement</title>
-<ellipse fill="white" stroke="white" cx="1330" cy="-45.21" rx="169.91" ry="21.43"/>
-<text text-anchor="middle" x="1330" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">zlib&#45;acknowledgement</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1330" cy="-45.21" rx="169.91" ry="21.43"/>
+<text text-anchor="middle" x="1330" y="-40.21" font-family="Times-Roman" font-size="20.00">zlib&#45;acknowledgement</text>
 </g>
 <!-- zlib/libpng License with Acknowledgement -->
 <g id="node2" class="node">

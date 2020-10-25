@@ -28,8 +28,8 @@
 <!-- CPOL&#45;1.02 -->
 <g id="node1" class="node">
 <title>CPOL&#45;1.02</title>
-<ellipse fill="white" stroke="white" cx="809" cy="-45.21" rx="85.62" ry="21.43"/>
-<text text-anchor="middle" x="809" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">CPOL&#45;1.02</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="809" cy="-45.21" rx="85.62" ry="21.43"/>
+<text text-anchor="middle" x="809" y="-40.21" font-family="Times-Roman" font-size="20.00">CPOL&#45;1.02</text>
 </g>
 <!-- Code Project Open License 1.02 -->
 <g id="node2" class="node">

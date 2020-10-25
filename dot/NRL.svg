@@ -28,8 +28,8 @@
 <!-- NRL -->
 <g id="node1" class="node">
 <title>NRL</title>
-<ellipse fill="white" stroke="white" cx="392" cy="-45.21" rx="40.11" ry="21.43"/>
-<text text-anchor="middle" x="392" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">NRL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="392" cy="-45.21" rx="40.11" ry="21.43"/>
+<text text-anchor="middle" x="392" y="-40.21" font-family="Times-Roman" font-size="20.00">NRL</text>
 </g>
 <!-- NRL License -->
 <g id="node2" class="node">

@@ -36,8 +36,8 @@
 <!-- FSFAP -->
 <g id="node1" class="node">
 <title>FSFAP</title>
-<ellipse fill="white" stroke="white" cx="844" cy="-53.21" rx="53.98" ry="21.43"/>
-<text text-anchor="middle" x="844" y="-48.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">FSFAP</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="844" cy="-53.21" rx="53.98" ry="21.43"/>
+<text text-anchor="middle" x="844" y="-48.21" font-family="Times-Roman" font-size="20.00">FSFAP</text>
 </g>
 <!-- FSF All Permissive License -->
 <g id="node2" class="node">

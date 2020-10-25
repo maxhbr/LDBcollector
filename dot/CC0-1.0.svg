@@ -40,8 +40,8 @@
 <!-- CC0&#45;1.0 -->
 <g id="node1" class="node">
 <title>CC0&#45;1.0</title>
-<ellipse fill="white" stroke="white" cx="1237" cy="-45.21" rx="68.68" ry="21.43"/>
-<text text-anchor="middle" x="1237" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">CC0&#45;1.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1237" cy="-45.21" rx="68.68" ry="21.43"/>
+<text text-anchor="middle" x="1237" y="-40.21" font-family="Times-Roman" font-size="20.00">CC0&#45;1.0</text>
 </g>
 <!-- Creative Commons Zero v1.0 Universal -->
 <g id="node2" class="node">

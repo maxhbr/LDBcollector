@@ -28,8 +28,8 @@
 <!-- Barr -->
 <g id="node1" class="node">
 <title>Barr</title>
-<ellipse fill="white" stroke="white" cx="627" cy="-45.21" rx="41.02" ry="21.43"/>
-<text text-anchor="middle" x="627" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Barr</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="627" cy="-45.21" rx="41.02" ry="21.43"/>
+<text text-anchor="middle" x="627" y="-40.21" font-family="Times-Roman" font-size="20.00">Barr</text>
 </g>
 <!-- Barr License -->
 <g id="node2" class="node">

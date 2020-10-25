@@ -28,8 +28,8 @@
 <!-- OFL&#45;1.0 -->
 <g id="node1" class="node">
 <title>OFL&#45;1.0</title>
-<ellipse fill="white" stroke="white" cx="686" cy="-45.21" rx="65.52" ry="21.43"/>
-<text text-anchor="middle" x="686" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">OFL&#45;1.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="686" cy="-45.21" rx="65.52" ry="21.43"/>
+<text text-anchor="middle" x="686" y="-40.21" font-family="Times-Roman" font-size="20.00">OFL&#45;1.0</text>
 </g>
 <!-- SIL Open Font License 1.0 -->
 <g id="node2" class="node">

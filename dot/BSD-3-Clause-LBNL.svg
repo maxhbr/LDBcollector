@@ -28,8 +28,8 @@
 <!-- BSD&#45;3&#45;Clause&#45;LBNL -->
 <g id="node1" class="node">
 <title>BSD&#45;3&#45;Clause&#45;LBNL</title>
-<ellipse fill="white" stroke="white" cx="1115" cy="-45.21" rx="149.81" ry="21.43"/>
-<text text-anchor="middle" x="1115" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">BSD&#45;3&#45;Clause&#45;LBNL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1115" cy="-45.21" rx="149.81" ry="21.43"/>
+<text text-anchor="middle" x="1115" y="-40.21" font-family="Times-Roman" font-size="20.00">BSD&#45;3&#45;Clause&#45;LBNL</text>
 </g>
 <!-- Lawrence Berkeley National Labs BSD variant license -->
 <g id="node2" class="node">

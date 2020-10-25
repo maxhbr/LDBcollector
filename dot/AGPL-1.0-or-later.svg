@@ -28,8 +28,8 @@
 <!-- AGPL&#45;1.0&#45;or&#45;later -->
 <g id="node1" class="node">
 <title>AGPL&#45;1.0&#45;or&#45;later</title>
-<ellipse fill="white" stroke="white" cx="1040" cy="-45.21" rx="131.54" ry="21.43"/>
-<text text-anchor="middle" x="1040" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">AGPL&#45;1.0&#45;or&#45;later</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1040" cy="-45.21" rx="131.54" ry="21.43"/>
+<text text-anchor="middle" x="1040" y="-40.21" font-family="Times-Roman" font-size="20.00">AGPL&#45;1.0&#45;or&#45;later</text>
 </g>
 <!-- Affero General Public License v1.0 or later -->
 <g id="node2" class="node">

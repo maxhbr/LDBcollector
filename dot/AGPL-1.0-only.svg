@@ -32,8 +32,8 @@
 <!-- AGPL&#45;1.0&#45;only -->
 <g id="node1" class="node">
 <title>AGPL&#45;1.0&#45;only</title>
-<ellipse fill="white" stroke="white" cx="1358" cy="-45.21" rx="111.03" ry="21.43"/>
-<text text-anchor="middle" x="1358" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">AGPL&#45;1.0&#45;only</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1358" cy="-45.21" rx="111.03" ry="21.43"/>
+<text text-anchor="middle" x="1358" y="-40.21" font-family="Times-Roman" font-size="20.00">AGPL&#45;1.0&#45;only</text>
 </g>
 <!-- Affero General Public License v1.0 only -->
 <g id="node2" class="node">

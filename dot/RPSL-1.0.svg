@@ -40,8 +40,8 @@
 <!-- RPSL&#45;1.0 -->
 <g id="node1" class="node">
 <title>RPSL&#45;1.0</title>
-<ellipse fill="white" stroke="white" cx="2034" cy="-53.21" rx="74.49" ry="21.43"/>
-<text text-anchor="middle" x="2034" y="-48.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">RPSL&#45;1.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="2034" cy="-53.21" rx="74.49" ry="21.43"/>
+<text text-anchor="middle" x="2034" y="-48.21" font-family="Times-Roman" font-size="20.00">RPSL&#45;1.0</text>
 </g>
 <!-- RealNetworks Public Source License v1.0 -->
 <g id="node2" class="node">

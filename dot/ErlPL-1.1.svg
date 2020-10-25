@@ -28,8 +28,8 @@
 <!-- ErlPL&#45;1.1 -->
 <g id="node1" class="node">
 <title>ErlPL&#45;1.1</title>
-<ellipse fill="white" stroke="white" cx="904" cy="-45.21" rx="73.58" ry="21.43"/>
-<text text-anchor="middle" x="904" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">ErlPL&#45;1.1</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="904" cy="-45.21" rx="73.58" ry="21.43"/>
+<text text-anchor="middle" x="904" y="-40.21" font-family="Times-Roman" font-size="20.00">ErlPL&#45;1.1</text>
 </g>
 <!-- Erlang Public License v1.1 -->
 <g id="node2" class="node">

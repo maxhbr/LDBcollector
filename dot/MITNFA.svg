@@ -28,8 +28,8 @@
 <!-- MITNFA -->
 <g id="node1" class="node">
 <title>MITNFA</title>
-<ellipse fill="white" stroke="white" cx="1039" cy="-45.21" rx="63.78" ry="21.43"/>
-<text text-anchor="middle" x="1039" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">MITNFA</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1039" cy="-45.21" rx="63.78" ry="21.43"/>
+<text text-anchor="middle" x="1039" y="-40.21" font-family="Times-Roman" font-size="20.00">MITNFA</text>
 </g>
 <!-- MIT +no&#45;false&#45;attribs license -->
 <g id="node2" class="node">

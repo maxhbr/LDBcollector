@@ -28,8 +28,8 @@
 <!-- CECILL&#45;C -->
 <g id="node1" class="node">
 <title>CECILL&#45;C</title>
-<ellipse fill="white" stroke="white" cx="936" cy="-45.21" rx="75.82" ry="21.43"/>
-<text text-anchor="middle" x="936" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">CECILL&#45;C</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="936" cy="-45.21" rx="75.82" ry="21.43"/>
+<text text-anchor="middle" x="936" y="-40.21" font-family="Times-Roman" font-size="20.00">CECILL&#45;C</text>
 </g>
 <!-- CeCILL&#45;C Free Software License Agreement -->
 <g id="node2" class="node">

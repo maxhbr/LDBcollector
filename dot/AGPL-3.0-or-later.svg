@@ -76,8 +76,8 @@
 <!-- AGPL&#45;3.0&#45;or&#45;later -->
 <g id="node1" class="node">
 <title>AGPL&#45;3.0&#45;or&#45;later</title>
-<ellipse fill="white" stroke="white" cx="6731" cy="-69.21" rx="131.54" ry="21.43"/>
-<text text-anchor="middle" x="6731" y="-64.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">AGPL&#45;3.0&#45;or&#45;later</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="6731" cy="-69.21" rx="131.54" ry="21.43"/>
+<text text-anchor="middle" x="6731" y="-64.21" font-family="Times-Roman" font-size="20.00">AGPL&#45;3.0&#45;or&#45;later</text>
 </g>
 <!-- GNU Affero General Public License v3.0 or later -->
 <g id="node2" class="node">
@@ -142,8 +142,8 @@
 <!-- AGPL&#45;3.0&#45;only -->
 <g id="node12" class="node">
 <title>AGPL&#45;3.0&#45;only</title>
-<ellipse fill="white" stroke="white" cx="3622" cy="-69.21" rx="111.03" ry="21.43"/>
-<text text-anchor="middle" x="3622" y="-64.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">AGPL&#45;3.0&#45;only</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="3622" cy="-69.21" rx="111.03" ry="21.43"/>
+<text text-anchor="middle" x="3622" y="-64.21" font-family="Times-Roman" font-size="20.00">AGPL&#45;3.0&#45;only</text>
 </g>
 <!-- GNU Affero General Public License v3.0 only -->
 <g id="node13" class="node">

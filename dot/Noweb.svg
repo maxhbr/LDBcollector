@@ -28,8 +28,8 @@
 <!-- Noweb -->
 <g id="node1" class="node">
 <title>Noweb</title>
-<ellipse fill="white" stroke="white" cx="472" cy="-45.21" rx="60.21" ry="21.43"/>
-<text text-anchor="middle" x="472" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Noweb</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="472" cy="-45.21" rx="60.21" ry="21.43"/>
+<text text-anchor="middle" x="472" y="-40.21" font-family="Times-Roman" font-size="20.00">Noweb</text>
 </g>
 <!-- Noweb License -->
 <g id="node2" class="node">

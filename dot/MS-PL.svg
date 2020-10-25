@@ -48,8 +48,8 @@
 <!-- MS&#45;PL -->
 <g id="node1" class="node">
 <title>MS&#45;PL</title>
-<ellipse fill="white" stroke="white" cx="1402" cy="-53.21" rx="54.39" ry="21.43"/>
-<text text-anchor="middle" x="1402" y="-48.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">MS&#45;PL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1402" cy="-53.21" rx="54.39" ry="21.43"/>
+<text text-anchor="middle" x="1402" y="-48.21" font-family="Times-Roman" font-size="20.00">MS&#45;PL</text>
 </g>
 <!-- Microsoft Public License -->
 <g id="node2" class="node">

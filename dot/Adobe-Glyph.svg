@@ -28,8 +28,8 @@
 <!-- Adobe&#45;Glyph -->
 <g id="node1" class="node">
 <title>Adobe&#45;Glyph</title>
-<ellipse fill="white" stroke="white" cx="885" cy="-45.21" rx="103.48" ry="21.43"/>
-<text text-anchor="middle" x="885" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Adobe&#45;Glyph</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="885" cy="-45.21" rx="103.48" ry="21.43"/>
+<text text-anchor="middle" x="885" y="-40.21" font-family="Times-Roman" font-size="20.00">Adobe&#45;Glyph</text>
 </g>
 <!-- Adobe Glyph List License -->
 <g id="node2" class="node">

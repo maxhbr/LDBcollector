@@ -28,8 +28,8 @@
 <!-- NetCDF -->
 <g id="node1" class="node">
 <title>NetCDF</title>
-<ellipse fill="white" stroke="white" cx="657" cy="-45.21" rx="65.11" ry="21.43"/>
-<text text-anchor="middle" x="657" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">NetCDF</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="657" cy="-45.21" rx="65.11" ry="21.43"/>
+<text text-anchor="middle" x="657" y="-40.21" font-family="Times-Roman" font-size="20.00">NetCDF</text>
 </g>
 <!-- NetCDF license -->
 <g id="node2" class="node">

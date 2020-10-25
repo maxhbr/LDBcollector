@@ -28,8 +28,8 @@
 <!-- CERN&#45;OHL&#45;1.2 -->
 <g id="node1" class="node">
 <title>CERN&#45;OHL&#45;1.2</title>
-<ellipse fill="white" stroke="white" cx="756" cy="-45.21" rx="113.69" ry="21.43"/>
-<text text-anchor="middle" x="756" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">CERN&#45;OHL&#45;1.2</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="756" cy="-45.21" rx="113.69" ry="21.43"/>
+<text text-anchor="middle" x="756" y="-40.21" font-family="Times-Roman" font-size="20.00">CERN&#45;OHL&#45;1.2</text>
 </g>
 <!-- CERN Open Hardware Licence v1.2 -->
 <g id="node2" class="node">

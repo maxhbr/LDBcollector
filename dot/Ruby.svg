@@ -28,8 +28,8 @@
 <!-- Ruby -->
 <g id="node1" class="node">
 <title>Ruby</title>
-<ellipse fill="white" stroke="white" cx="425" cy="-45.21" rx="47.25" ry="21.43"/>
-<text text-anchor="middle" x="425" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Ruby</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="425" cy="-45.21" rx="47.25" ry="21.43"/>
+<text text-anchor="middle" x="425" y="-40.21" font-family="Times-Roman" font-size="20.00">Ruby</text>
 </g>
 <!-- Ruby License -->
 <g id="node2" class="node">

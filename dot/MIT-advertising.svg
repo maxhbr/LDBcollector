@@ -28,8 +28,8 @@
 <!-- MIT&#45;advertising -->
 <g id="node1" class="node">
 <title>MIT&#45;advertising</title>
-<ellipse fill="white" stroke="white" cx="962" cy="-45.21" rx="119.5" ry="21.43"/>
-<text text-anchor="middle" x="962" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">MIT&#45;advertising</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="962" cy="-45.21" rx="119.5" ry="21.43"/>
+<text text-anchor="middle" x="962" y="-40.21" font-family="Times-Roman" font-size="20.00">MIT&#45;advertising</text>
 </g>
 <!-- Enlightenment License (e16) -->
 <g id="node2" class="node">

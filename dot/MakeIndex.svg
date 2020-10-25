@@ -28,8 +28,8 @@
 <!-- MakeIndex -->
 <g id="node1" class="node">
 <title>MakeIndex</title>
-<ellipse fill="white" stroke="white" cx="884" cy="-45.21" rx="87.86" ry="21.43"/>
-<text text-anchor="middle" x="884" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">MakeIndex</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="884" cy="-45.21" rx="87.86" ry="21.43"/>
+<text text-anchor="middle" x="884" y="-40.21" font-family="Times-Roman" font-size="20.00">MakeIndex</text>
 </g>
 <!-- MakeIndex License -->
 <g id="node2" class="node">

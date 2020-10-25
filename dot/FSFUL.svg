@@ -28,8 +28,8 @@
 <!-- FSFUL -->
 <g id="node1" class="node">
 <title>FSFUL</title>
-<ellipse fill="white" stroke="white" cx="807" cy="-45.21" rx="55.31" ry="21.43"/>
-<text text-anchor="middle" x="807" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">FSFUL</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="807" cy="-45.21" rx="55.31" ry="21.43"/>
+<text text-anchor="middle" x="807" y="-40.21" font-family="Times-Roman" font-size="20.00">FSFUL</text>
 </g>
 <!-- FSF Unlimited License -->
 <g id="node2" class="node">

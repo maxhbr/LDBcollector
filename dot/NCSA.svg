@@ -36,8 +36,8 @@
 <!-- NCSA -->
 <g id="node1" class="node">
 <title>NCSA</title>
-<ellipse fill="white" stroke="white" cx="2513" cy="-45.21" rx="50.82" ry="21.43"/>
-<text text-anchor="middle" x="2513" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">NCSA</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="2513" cy="-45.21" rx="50.82" ry="21.43"/>
+<text text-anchor="middle" x="2513" y="-40.21" font-family="Times-Roman" font-size="20.00">NCSA</text>
 </g>
 <!-- University of Illinois/NCSA Open Source License -->
 <g id="node2" class="node">

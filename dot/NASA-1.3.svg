@@ -32,8 +32,8 @@
 <!-- NASA&#45;1.3 -->
 <g id="node1" class="node">
 <title>NASA&#45;1.3</title>
-<ellipse fill="white" stroke="white" cx="1248" cy="-45.21" rx="77.56" ry="21.43"/>
-<text text-anchor="middle" x="1248" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">NASA&#45;1.3</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1248" cy="-45.21" rx="77.56" ry="21.43"/>
+<text text-anchor="middle" x="1248" y="-40.21" font-family="Times-Roman" font-size="20.00">NASA&#45;1.3</text>
 </g>
 <!-- NASA Open Source Agreement 1.3 -->
 <g id="node2" class="node">

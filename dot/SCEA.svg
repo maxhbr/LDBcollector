@@ -28,8 +28,8 @@
 <!-- SCEA -->
 <g id="node1" class="node">
 <title>SCEA</title>
-<ellipse fill="white" stroke="white" cx="935" cy="-45.21" rx="49.49" ry="21.43"/>
-<text text-anchor="middle" x="935" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">SCEA</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="935" cy="-45.21" rx="49.49" ry="21.43"/>
+<text text-anchor="middle" x="935" y="-40.21" font-family="Times-Roman" font-size="20.00">SCEA</text>
 </g>
 <!-- SCEA Shared Source License -->
 <g id="node2" class="node">

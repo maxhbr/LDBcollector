@@ -28,8 +28,8 @@
 <!-- BSD&#45;3&#45;Clause&#45;Attribution -->
 <g id="node1" class="node">
 <title>BSD&#45;3&#45;Clause&#45;Attribution</title>
-<ellipse fill="white" stroke="white" cx="966" cy="-45.21" rx="187.27" ry="21.43"/>
-<text text-anchor="middle" x="966" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">BSD&#45;3&#45;Clause&#45;Attribution</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="966" cy="-45.21" rx="187.27" ry="21.43"/>
+<text text-anchor="middle" x="966" y="-40.21" font-family="Times-Roman" font-size="20.00">BSD&#45;3&#45;Clause&#45;Attribution</text>
 </g>
 <!-- BSD with attribution -->
 <g id="node2" class="node">

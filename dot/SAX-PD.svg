@@ -28,8 +28,8 @@
 <!-- SAX&#45;PD -->
 <g id="node1" class="node">
 <title>SAX&#45;PD</title>
-<ellipse fill="white" stroke="white" cx="574" cy="-45.21" rx="64.19" ry="21.43"/>
-<text text-anchor="middle" x="574" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">SAX&#45;PD</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="574" cy="-45.21" rx="64.19" ry="21.43"/>
+<text text-anchor="middle" x="574" y="-40.21" font-family="Times-Roman" font-size="20.00">SAX&#45;PD</text>
 </g>
 <!-- Sax Public Domain Notice -->
 <g id="node2" class="node">

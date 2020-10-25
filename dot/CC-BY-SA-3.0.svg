@@ -28,8 +28,8 @@
 <!-- CC&#45;BY&#45;SA&#45;3.0 -->
 <g id="node1" class="node">
 <title>CC&#45;BY&#45;SA&#45;3.0</title>
-<ellipse fill="white" stroke="white" cx="938" cy="-45.21" rx="103.89" ry="21.43"/>
-<text text-anchor="middle" x="938" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">CC&#45;BY&#45;SA&#45;3.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="938" cy="-45.21" rx="103.89" ry="21.43"/>
+<text text-anchor="middle" x="938" y="-40.21" font-family="Times-Roman" font-size="20.00">CC&#45;BY&#45;SA&#45;3.0</text>
 </g>
 <!-- Creative Commons Attribution Share Alike 3.0 Unported -->
 <g id="node2" class="node">

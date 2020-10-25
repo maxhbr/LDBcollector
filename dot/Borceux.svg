@@ -36,8 +36,8 @@
 <!-- Borceux -->
 <g id="node1" class="node">
 <title>Borceux</title>
-<ellipse fill="white" stroke="white" cx="823" cy="-53.21" rx="69.09" ry="21.43"/>
-<text text-anchor="middle" x="823" y="-48.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Borceux</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="823" cy="-53.21" rx="69.09" ry="21.43"/>
+<text text-anchor="middle" x="823" y="-48.21" font-family="Times-Roman" font-size="20.00">Borceux</text>
 </g>
 <!-- Borceux license -->
 <g id="node2" class="node">

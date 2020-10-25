@@ -28,8 +28,8 @@
 <!-- SGI&#45;B&#45;1.0 -->
 <g id="node1" class="node">
 <title>SGI&#45;B&#45;1.0</title>
-<ellipse fill="white" stroke="white" cx="1018" cy="-45.21" rx="77.56" ry="21.43"/>
-<text text-anchor="middle" x="1018" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">SGI&#45;B&#45;1.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1018" cy="-45.21" rx="77.56" ry="21.43"/>
+<text text-anchor="middle" x="1018" y="-40.21" font-family="Times-Roman" font-size="20.00">SGI&#45;B&#45;1.0</text>
 </g>
 <!-- SGI Free Software License B v1.0 -->
 <g id="node2" class="node">

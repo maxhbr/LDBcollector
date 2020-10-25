@@ -28,8 +28,8 @@
 <!-- W3C&#45;20150513 -->
 <g id="node1" class="node">
 <title>W3C&#45;20150513</title>
-<ellipse fill="white" stroke="white" cx="1460" cy="-45.21" rx="122.16" ry="21.43"/>
-<text text-anchor="middle" x="1460" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">W3C&#45;20150513</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1460" cy="-45.21" rx="122.16" ry="21.43"/>
+<text text-anchor="middle" x="1460" y="-40.21" font-family="Times-Roman" font-size="20.00">W3C&#45;20150513</text>
 </g>
 <!-- W3C Software Notice and Document License (2015&#45;05&#45;13) -->
 <g id="node2" class="node">

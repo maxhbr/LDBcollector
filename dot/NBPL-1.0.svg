@@ -28,8 +28,8 @@
 <!-- NBPL&#45;1.0 -->
 <g id="node1" class="node">
 <title>NBPL&#45;1.0</title>
-<ellipse fill="white" stroke="white" cx="640" cy="-45.21" rx="75.82" ry="21.43"/>
-<text text-anchor="middle" x="640" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">NBPL&#45;1.0</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="640" cy="-45.21" rx="75.82" ry="21.43"/>
+<text text-anchor="middle" x="640" y="-40.21" font-family="Times-Roman" font-size="20.00">NBPL&#45;1.0</text>
 </g>
 <!-- Net Boolean Public License v1 -->
 <g id="node2" class="node">

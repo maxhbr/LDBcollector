@@ -44,8 +44,8 @@
 <!-- X11 -->
 <g id="node1" class="node">
 <title>X11</title>
-<ellipse fill="white" stroke="white" cx="1233" cy="-61.21" rx="39.7" ry="21.43"/>
-<text text-anchor="middle" x="1233" y="-56.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">X11</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1233" cy="-61.21" rx="39.7" ry="21.43"/>
+<text text-anchor="middle" x="1233" y="-56.21" font-family="Times-Roman" font-size="20.00">X11</text>
 </g>
 <!-- X11 License -->
 <g id="node2" class="node">
@@ -68,8 +68,8 @@
 <!-- ICU -->
 <g id="node5" class="node">
 <title>ICU</title>
-<ellipse fill="white" stroke="white" cx="397" cy="-61.21" rx="36.54" ry="21.43"/>
-<text text-anchor="middle" x="397" y="-56.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">ICU</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="397" cy="-61.21" rx="36.54" ry="21.43"/>
+<text text-anchor="middle" x="397" y="-56.21" font-family="Times-Roman" font-size="20.00">ICU</text>
 </g>
 <!-- scancode://x11 -->
 <g id="node6" class="node">

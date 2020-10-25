@@ -28,8 +28,8 @@
 <!-- TCP&#45;wrappers -->
 <g id="node1" class="node">
 <title>TCP&#45;wrappers</title>
-<ellipse fill="white" stroke="white" cx="645" cy="-45.21" rx="108.79" ry="21.43"/>
-<text text-anchor="middle" x="645" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">TCP&#45;wrappers</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="645" cy="-45.21" rx="108.79" ry="21.43"/>
+<text text-anchor="middle" x="645" y="-40.21" font-family="Times-Roman" font-size="20.00">TCP&#45;wrappers</text>
 </g>
 <!-- TCP Wrappers License -->
 <g id="node2" class="node">

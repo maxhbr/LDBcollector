@@ -28,8 +28,8 @@
 <!-- CDDL&#45;1.1 -->
 <g id="node1" class="node">
 <title>CDDL&#45;1.1</title>
-<ellipse fill="white" stroke="white" cx="961" cy="-45.21" rx="79.39" ry="21.43"/>
-<text text-anchor="middle" x="961" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">CDDL&#45;1.1</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="961" cy="-45.21" rx="79.39" ry="21.43"/>
+<text text-anchor="middle" x="961" y="-40.21" font-family="Times-Roman" font-size="20.00">CDDL&#45;1.1</text>
 </g>
 <!-- Common Development and Distribution License 1.1 -->
 <g id="node2" class="node">

@@ -28,8 +28,8 @@
 <!-- FreeImage -->
 <g id="node1" class="node">
 <title>FreeImage</title>
-<ellipse fill="white" stroke="white" cx="1003" cy="-45.21" rx="84.71" ry="21.43"/>
-<text text-anchor="middle" x="1003" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">FreeImage</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="1003" cy="-45.21" rx="84.71" ry="21.43"/>
+<text text-anchor="middle" x="1003" y="-40.21" font-family="Times-Roman" font-size="20.00">FreeImage</text>
 </g>
 <!-- FreeImage Public License v1.0 -->
 <g id="node2" class="node">

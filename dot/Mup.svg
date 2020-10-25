@@ -28,8 +28,8 @@
 <!-- Mup -->
 <g id="node1" class="node">
 <title>Mup</title>
-<ellipse fill="white" stroke="white" cx="414" cy="-45.21" rx="41.94" ry="21.43"/>
-<text text-anchor="middle" x="414" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">Mup</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="414" cy="-45.21" rx="41.94" ry="21.43"/>
+<text text-anchor="middle" x="414" y="-40.21" font-family="Times-Roman" font-size="20.00">Mup</text>
 </g>
 <!-- Mup License -->
 <g id="node2" class="node">

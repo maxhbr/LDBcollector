@@ -28,8 +28,8 @@
 <!-- CrystalStacker -->
 <g id="node1" class="node">
 <title>CrystalStacker</title>
-<ellipse fill="white" stroke="white" cx="916" cy="-45.21" rx="113.69" ry="21.43"/>
-<text text-anchor="middle" x="916" y="-40.21" font-family="Times-Roman" font-size="20.00" fill="#00ff00">CrystalStacker</text>
+<ellipse fill="darkgreen" stroke="darkgreen" cx="916" cy="-45.21" rx="113.69" ry="21.43"/>
+<text text-anchor="middle" x="916" y="-40.21" font-family="Times-Roman" font-size="20.00">CrystalStacker</text>
 </g>
 <!-- CrystalStacker License -->
 <g id="node2" class="node">
