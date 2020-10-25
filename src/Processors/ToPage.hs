@@ -100,7 +100,7 @@ data Page
   , pLicense        :: License
   } deriving (Show, Generic)
 
-toPage :: RatingRules -> (LicenseName, (License, LicenseClusterTree)) -> (LicenseName, License, Page)
+toPage :: RatingRules -> (LicenseName, (License, LicenseClusterTree)) -> (LicenseName, License, Page, LicenseClusterTree)
 toPage ratingRules (licName, (lic, lct)) = let
 
     details = calculateDetails ratingRules (licName, lic)
@@ -164,8 +164,8 @@ toPage ratingRules (licName, (lic, lct)) = let
                 text
                 lic
 
-  in (licName, lic, page)
+  in (licName, lic, page, lct)
 
 
-toPages :: RatingRules -> [(LicenseName, (License, LicenseClusterTree))] -> [(LicenseName, License, Page)]
+toPages :: RatingRules -> [(LicenseName, (License, LicenseClusterTree))] -> [(LicenseName, License, Page, LicenseClusterTree)]
 toPages ratingRules = map (toPage ratingRules)

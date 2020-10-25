@@ -18,11 +18,13 @@ main = do
   runLDBCore configuration
     (\_ input ->
         do
-          let licenses = map (\(ln, l, _) -> (ln, l)) input
-          let pages = map (\(_,_,p) -> p) input
+          let licenses = map (\(ln, l, _, _) -> (ln, l)) input
+          let pages = map (\(_,_,p, _) -> p) input
+          let trees = map (\(ln, _, _, t) -> (ln, t)) input
 
           writeLicenseJSONs outputFolder licenses
           writeDetails outputFolder pages
           writePandocs outputFolder pages
+          writeGraphizs outputFolder trees
 
           return outputFolder)

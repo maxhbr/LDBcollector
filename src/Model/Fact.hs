@@ -7,7 +7,7 @@ module Model.Fact
   ( module X
   , LicenseFactVersion (..)
   , LFRaw (..), getImplicationJSONFromLFRaw
-  , LicenseFact (..), getLfUUID
+  , LicenseFact (..)
   , Facts
   ) where
 
@@ -16,9 +16,6 @@ import           MyPrelude
 
 import qualified Data.Map as M
 import qualified Data.Maybe (maybeToList)
-import qualified Crypto.Hash.MD5 as MD5
-import qualified Data.ByteString.Lazy as BL
-import qualified Data.UUID as UUID
 
 import Model.Statement as X
 import Model.LicenseProperties as X
@@ -164,15 +161,6 @@ instance ToJSON LicenseFact where
       lfc = getLicenseFactClassifier a
     in object [ tShow lfc .= mergeAesonL [ toJSON a
                                          , object [ "implications" .= getImplicationJSONFromLFRaw a ]]]
-getLfUUID :: LicenseFact -> UUID.UUID
-getLfUUID lf = case UUID.fromASCIIBytes $ MD5.hashlazy (encode lf) of
-  Just uuid -> uuid
-  Nothing   -> UUID.nil
-instance Eq LicenseFact where
-  lf1 == lf2 = let
-    uuid1 = getLfUUID lf1
-    uuid2 = getLfUUID lf2
-    in uuid1 == uuid2
 instance LFRaw LicenseFact where
   getLicenseFactClassifier (LicenseFact url raw)  = maybeAddUrl url $ getLicenseFactClassifier raw
   getLicenseFactVersion (LicenseFact _ raw)       = getLicenseFactVersion raw

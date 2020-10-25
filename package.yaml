@@ -40,9 +40,7 @@ dependencies:
 - pandoc-types
 - file-embed
 - graphviz
-- partial-order
-- uuid
-- cryptohash-md5
+- mtl
 
 library:
   source-dirs: src

@@ -130,6 +130,11 @@ renderRawData lic = P.horizontalRule
                     <> P.header 2 (P.text "Raw Data")
                     <> P.codeBlock (unpack (encodePretty lic))
 
+renderDot :: LicenseName -> Blocks
+renderDot shortname = P.horizontalRule
+                      <> P.header 2 (P.text "Dot Cluster Graph")
+                      <> P.para (P.image ("../dot" </> shortname ++ ".svg") "dot" mempty)
+
 licenseToPandoc :: LicenseName -> Page -> Pandoc
 licenseToPandoc shortname page = let
     fullname = (ldFullname . pLicenseDetails) page
@@ -143,6 +148,7 @@ licenseToPandoc shortname page = let
           <> renderOSADLRule (pOSADLRule page)
           <> renderText (pText page)
           <> renderRawData (pLicense page)
+          <> renderDot (shortname)
 
 writePandoc :: FilePath -> Page -> IO ()
 writePandoc outDirectory page = let

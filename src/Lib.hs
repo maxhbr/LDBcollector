@@ -45,10 +45,11 @@ import           Processors.ToPage as X
 
 import           Generators.PandocWriter as X
 import           Generators.DetailsWriter as X
+import           Generators.GraphizWriter as X
 import           Generators.Stats as X
 import           Generators.FindClusters as X
 
-runLDBCore :: Configuration -> (Facts -> [(LicenseName, License, Page)] -> IO FilePath) -> IO ()
+runLDBCore :: Configuration -> (Facts -> [(LicenseName, License, Page, LicenseClusterTree)] -> IO FilePath) -> IO ()
 runLDBCore configuration handler = do
   setLocaleEncoding utf8
   args <- getArgs
@@ -57,8 +58,6 @@ runLDBCore configuration handler = do
   licensesByName <- case args of
     [] -> calculateSPDXLicenses facts
     _  -> calculateLicenses (V.fromList args) facts
-
-  mapM_ (\(n, (_, lct)) -> putStrLn (show n ++ " ---> " ++ show lct)) licensesByName
 
   let pages = toPages (cRatingRules configuration) licensesByName
 
