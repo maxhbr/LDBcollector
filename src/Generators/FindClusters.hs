@@ -36,8 +36,8 @@ findClusters = let
    . V.map S.fromList
    . V.map getNamesFromFact
 
-findClustersFromLicenses :: [(LicenseName, License)] -> [Set LicenseName]
-findClustersFromLicenses = map S.fromList . map (\(ln, License fs) -> ln : (concat . V.toList . V.map getNamesFromFact) fs)
+findClustersFromLicenses :: [(LicenseName, (License, a))] -> [Set LicenseName]
+findClustersFromLicenses = map (S.fromList . (\(ln, (License fs, _)) -> ln : (concat . V.toList . V.map getNamesFromFact) fs))
 
 
 -- based on: https://hackage.haskell.org/package/MissingH-1.4.2.1/docs/src/Data.CSV.html#genCsvFile (BSD-3-Clause)
@@ -67,5 +67,5 @@ writeClusters' handle outFile clusters = let
 writeClusters :: Handle -> FilePath -> Facts -> IO ()
 writeClusters handle outFile fs = writeClusters' handle outFile (findClusters fs)
 
-writeClustersFromLicenses :: Handle -> FilePath -> [(LicenseName, License)] -> IO ()
+writeClustersFromLicenses :: Handle -> FilePath -> [(LicenseName, (License, a))] -> IO ()
 writeClustersFromLicenses handle outFile lics = writeClusters' handle outFile (findClustersFromLicenses lics)

@@ -14,17 +14,14 @@ import           MyPrelude
 
 import qualified Data.Vector as V
 import qualified Data.Map as M
-import qualified Data.List as L
 import qualified Data.ByteString.Lazy as BL
 import           Data.Aeson.Encode.Pretty (encodePretty)
-import           Control.Monad
 import           GHC.IO.Encoding (setLocaleEncoding, utf8)
 import           System.Environment
 
 import           Model.License as X
 import           Model.Query as X
-
-import           LicenseClusterer as X
+import           Model.LicenseClusterer as X
 
 import           Collectors.SPDX as X
 import           Collectors.BlueOak as X
@@ -60,6 +57,8 @@ runLDBCore configuration handler = do
   licensesByName <- case args of
     [] -> calculateSPDXLicenses facts
     _  -> calculateLicenses (V.fromList args) facts
+
+  mapM_ (\(n, (_, lct)) -> putStrLn (show n ++ " ---> " ++ show lct)) licensesByName
 
   let pages = toPages (cRatingRules configuration) licensesByName
 
@@ -111,14 +110,14 @@ readFacts conf = do
   hPutStrLn stderr "... done with collecting data"
   return facts
 
-calculateLicenses :: Vector LicenseName -> Facts -> IO [(LicenseName, License)]
+calculateLicenses :: Vector LicenseName -> Facts -> IO [(LicenseName, (License, LicenseClusterTree))]
 calculateLicenses ids facts = do
-  let licenses = getLicensesFromFacts ids 1 M.empty facts
+  let licenses = getLicensesFromFacts ids 2 facts
   hPutStrLn stderr "... done with calculating licenses"
 
   return $ V.toList licenses
 
-calculateLicensesBySelector :: (LicenseFact -> Bool) -> Facts -> IO [(LicenseName, License)]
+calculateLicensesBySelector :: (LicenseFact -> Bool) -> Facts -> IO [(LicenseName, (License, LicenseClusterTree))]
 calculateLicensesBySelector filterForIds facts = do
 
   let factsToTakeIDsFrom = V.filter filterForIds facts
@@ -126,7 +125,7 @@ calculateLicensesBySelector filterForIds facts = do
 
   calculateLicenses ids facts
 
-calculateSPDXLicenses :: Facts -> IO [(LicenseName, License)]
+calculateSPDXLicenses :: Facts -> IO [(LicenseName, (License, LicenseClusterTree))]
 calculateSPDXLicenses = calculateLicensesBySelector (\f -> getLicenseFactClassifier f == LFC "SPDX")
 
 writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()

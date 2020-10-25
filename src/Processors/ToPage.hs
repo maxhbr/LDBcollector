@@ -28,6 +28,7 @@ import qualified Data.Vector as V
 import qualified Data.ByteString.Lazy as BL
 
 import           Model.License
+import           Model.LicenseClusterer
 import           Model.Query
 import           Processors.Rating
 
@@ -99,8 +100,8 @@ data Page
   , pLicense        :: License
   } deriving (Show, Generic)
 
-toPage :: RatingRules -> (LicenseName, License) -> (LicenseName, License, Page)
-toPage ratingRules (licName, lic) = let
+toPage :: RatingRules -> (LicenseName, (License, LicenseClusterTree)) -> (LicenseName, License, Page)
+toPage ratingRules (licName, (lic, lct)) = let
 
     details = calculateDetails ratingRules (licName, lic)
 
@@ -166,5 +167,5 @@ toPage ratingRules (licName, lic) = let
   in (licName, lic, page)
 
 
-toPages :: RatingRules -> [(LicenseName, License)] -> [(LicenseName, License, Page)]
+toPages :: RatingRules -> [(LicenseName, (License, LicenseClusterTree))] -> [(LicenseName, License, Page)]
 toPages ratingRules = map (toPage ratingRules)
