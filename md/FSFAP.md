@@ -10,6 +10,10 @@ FSF All Permissive License (FSFAP)
 Comments on (easy) usability
 ----------------------------
 
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+
 URLs
 ----
 
@@ -39,9 +43,11 @@ Raw Data
         "__impliedNames": [
             "FSFAP",
             "FSF All Permissive License",
-            "scancode://fsf-ap"
+            "scancode://fsf-ap",
+            "FSF All Permissive license"
         ],
         "__impliedId": "FSFAP",
+        "__isFsfFree": true,
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -71,6 +77,32 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "FSFAP"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/FSFAP",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "FSFAP",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "FSF All Permissive license",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "FSF All Permissive license"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -130,6 +162,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

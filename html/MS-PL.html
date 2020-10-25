@@ -33,6 +33,7 @@
 <ul>
 <li><p><code>scancode://ms-pl</code></p></li>
 <li><p><code>Microsoft Public License (MS-PL)</code></p></li>
+<li><p><code>Microsoft Public License (Ms-PL)</code></p></li>
 </ul>
 <h2>Description</h2>
 <blockquote>
@@ -44,6 +45,8 @@
 <li><p><strong>↑</strong>Google Classification is NOTICE (source: <a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a>)</p></li>
 <li><p><strong>↑</strong>Is OSI Approved (source: <a href="https://spdx.org/licenses/MS-PL.html" title="SPDX">SPDX</a>)</p></li>
 <li><p><strong>↑</strong>Rating is: Silver (source: <a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a>)</p></li>
+<li><p><strong>↑</strong>This software Licenses is OK for Fedora (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a>)</p></li>
+<li><p>Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen. (source: <a href="https://ifross.github.io/ifrOSS/Lizenzcenter" title="ifrOSS">ifrOSS</a>)</p></li>
 </ul>
 <h2>Obligations</h2>
 <table>
@@ -84,6 +87,7 @@
 <li><p>http://www.microsoft.com/opensource/licenses.mspx</p></li>
 <li><p>http://www.microsoft.com/en-us/openness/licenses.aspx#MPL</p></li>
 <li><p>http://www.opensource.org/licenses/MS-PL</p></li>
+<li><p>https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)</p></li>
 </ul>
 <h2>OSADL Rule</h2>
 <pre><code>USE CASE Source code delivery
@@ -173,9 +177,11 @@ non-infringement.</code></pre>
         &quot;scancode://ms-pl&quot;,
         &quot;ms-pl&quot;,
         &quot;Microsoft Public License (MS-PL)&quot;,
-        &quot;Ms-PL&quot;
+        &quot;Ms-PL&quot;,
+        &quot;Microsoft Public License (Ms-PL)&quot;
     ],
     &quot;__impliedId&quot;: &quot;MS-PL&quot;,
+    &quot;__isFsfFree&quot;: true,
     &quot;__hasPatentHint&quot;: true,
     &quot;facts&quot;: {
         &quot;Open Knowledge International&quot;: {
@@ -264,6 +270,32 @@ non-infringement.</code></pre>
                     ]
                 ],
                 &quot;__calculatedCopyleft&quot;: &quot;MaybeCopyleft&quot;
+            }
+        },
+        &quot;Fedora Project Wiki&quot;: {
+            &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,
+            &quot;rating&quot;: &quot;Good&quot;,
+            &quot;Upstream URL&quot;: &quot;http://www.microsoft.com/opensource/licenses.mspx#Ms-PL&quot;,
+            &quot;GPLv3 Compat?&quot;: &quot;NO&quot;,
+            &quot;Short Name&quot;: &quot;MS-PL&quot;,
+            &quot;licenseType&quot;: &quot;license&quot;,
+            &quot;_sourceURL&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing&quot;,
+            &quot;Full Name&quot;: &quot;Microsoft Public License&quot;,
+            &quot;FSF Free?&quot;: &quot;Yes&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Microsoft Public License&quot;
+                ],
+                &quot;__isFsfFree&quot;: true,
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;Fedora Project Wiki&quot;,
+                        {
+                            &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                            &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+                        }
+                    ]
+                ]
             }
         },
         &quot;Scancode&quot;: {
@@ -373,6 +405,40 @@ non-infringement.</code></pre>
                     [
                         &quot;SPDX&quot;,
                         &quot;https://spdx.org/licenses/MS-PL.html&quot;
+                    ]
+                ]
+            }
+        },
+        &quot;ifrOSS&quot;: {
+            &quot;ifrKind&quot;: &quot;IfrNoCopyleft&quot;,
+            &quot;ifrURL&quot;: &quot;https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)&quot;,
+            &quot;_sourceURL&quot;: &quot;https://ifross.github.io/ifrOSS/Lizenzcenter&quot;,
+            &quot;ifrName&quot;: &quot;Microsoft Public License (Ms-PL)&quot;,
+            &quot;ifrId&quot;: null,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Microsoft Public License (Ms-PL)&quot;
+                ],
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;ifrOSS&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NeutralJudgement&quot;,
+                            &quot;contents&quot;: &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren.&quot;
+                        }
+                    ]
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;ifrOSS&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;,
+                &quot;__impliedURLs&quot;: [
+                    [
+                        null,
+                        &quot;https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)&quot;
                     ]
                 ]
             }
@@ -633,6 +699,13 @@ non-infringement.</code></pre>
             }
         ],
         [
+            &quot;Fedora Project Wiki&quot;,
+            {
+                &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+            }
+        ],
+        [
             &quot;Google OSS Policy&quot;,
             {
                 &quot;tag&quot;: &quot;PositiveJudgement&quot;,
@@ -644,6 +717,13 @@ non-infringement.</code></pre>
             {
                 &quot;tag&quot;: &quot;PositiveJudgement&quot;,
                 &quot;contents&quot;: &quot;Is OSI Approved&quot;
+            }
+        ],
+        [
+            &quot;ifrOSS&quot;,
+            {
+                &quot;tag&quot;: &quot;NeutralJudgement&quot;,
+                &quot;contents&quot;: &quot;Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren.&quot;
             }
         ]
     ],
@@ -662,6 +742,10 @@ non-infringement.</code></pre>
         ],
         [
             &quot;Scancode&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;ifrOSS&quot;,
             &quot;NoCopyleft&quot;
         ]
     ],
@@ -744,6 +828,10 @@ non-infringement.</code></pre>
         [
             &quot;OSI Page&quot;,
             &quot;https://opensource.org/licenses/MS-PL&quot;
+        ],
+        [
+            null,
+            &quot;https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)&quot;
         ]
     ]
 }</code></pre>

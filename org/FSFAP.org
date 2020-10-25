@@ -1,17 +1,21 @@
 * FSF All Permissive License (FSFAP)
 
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | FSF All Permissive License                     |
-| Shortname        | FSFAP                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key              | Value                        |
+|------------------+------------------------------|
+| Fullname         | FSF All Permissive License   |
+| Shortname        | FSFAP                        |
+| Rating           | Unknown                      |
+| Classification   | NoCopyleft                   |
 
 *Other Names:*
 
 - =scancode://fsf-ap=
 
 ** Comments on (easy) usability
+
+- *↑*This software Licenses is OK for Fedora (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]])
 
 ** URLs
 
@@ -42,9 +46,11 @@
       "__impliedNames": [
           "FSFAP",
           "FSF All Permissive License",
-          "scancode://fsf-ap"
+          "scancode://fsf-ap",
+          "FSF All Permissive license"
       ],
       "__impliedId": "FSFAP",
+      "__isFsfFree": true,
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -74,6 +80,32 @@
                   ]
               },
               "spdxLicenseId": "FSFAP"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "Yes",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/FSFAP",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "FSFAP",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "FSF All Permissive license",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "FSF All Permissive license"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [
@@ -133,6 +165,15 @@
               }
           }
       },
+      "__impliedJudgement": [
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
+              }
+          ]
+      ],
       "__impliedCopyleft": [
           [
               "Scancode",

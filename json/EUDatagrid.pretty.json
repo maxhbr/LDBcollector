@@ -2,9 +2,11 @@
     "__impliedNames": [
         "EUDatagrid",
         "EU DataGrid Software License",
-        "scancode://eu-datagrid"
+        "scancode://eu-datagrid",
+        "EU Datagrid Software License"
     ],
     "__impliedId": "EUDatagrid",
+    "__isFsfFree": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -75,6 +77,32 @@
                 ]
             },
             "spdxLicenseId": "EUDatagrid"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://www.opensource.org/licenses/eudatagrid.php",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "EU Datagrid",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "EU Datagrid Software License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "EU Datagrid Software License"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -193,6 +221,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "SPDX",
             {

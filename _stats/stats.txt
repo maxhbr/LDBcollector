@@ -20,10 +20,10 @@ Number of facts: 3661
 Number of clusters: 2069
 ### Stats on Licenses:
 Number of Licenses: 360
-Number of facts: 1706
+Number of facts: 1720
     BlueOak License List: 170
     Debian Free Software Guidelines: 89
-    Fedora Project Wiki: 15
+    Fedora Project Wiki: 23
     Google OSS Policy: 122
     OSADL License Checklist: 84
     Open Knowledge International: 96
@@ -35,8 +35,8 @@ Number of facts: 1706
     Wikipedia: 37
     choosealicense.com: 41
     finos-osr/OSLC-handbook: 55
-    ifrOSS: 9
+    ifrOSS: 15
 #### based on facts from licenses
-Number of clusters: 354
+Number of clusters: 364
 #### based on licenses
 Number of clusters: 360

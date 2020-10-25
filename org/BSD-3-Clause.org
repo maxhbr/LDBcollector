@@ -11,6 +11,8 @@
 
 - =scancode://bsd-new=
 
+- =BSD License (no advertising)=
+
 - =BSD-3=
 
 - =BSD 3-Clause License=
@@ -26,8 +28,6 @@
 - =BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)=
 
 - =BSD (3 clause)=
-
-- =BSD License (no advertising)=
 
 ** Description
 
@@ -61,6 +61,18 @@
 - *↑*Rating is: Bronze (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+- *↑*This software Licenses is OK for Fedora (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]])
+
+- Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
+  Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und
+  für Veränderungen der Software keine Bedingungen hinsichtlich des zu
+  verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
+  veränderte Versionen der Software unter beliebigen Lizenzbedingungen
+  weiterverbreiten, also auch in proprietäre Software überführen.
+  (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
+
 ** Obligations
 
 | Rights:            | Conditions:           | Limitations:   |
@@ -90,6 +102,8 @@
 - *Wikipedia Page:* https://en.wikipedia.org/wiki/BSD_licenses#3-clause
 
 - http://framework.zend.com/license/new-bsd
+
+- https://spdx.org/licenses/BSD-3-Clause
 
 ** OSADL Rule
 
@@ -148,6 +162,7 @@
           "BSD 3-Clause \"New\" or \"Revised\" License",
           "scancode://bsd-new",
           "bsd-3-clause",
+          "BSD License (no advertising)",
           "BSD-3",
           "BSD 3-Clause License",
           "BSD-3-clause",
@@ -156,10 +171,11 @@
           "Modified BSD License",
           "New BSD License",
           "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
-          "BSD (3 clause)",
-          "BSD License (no advertising)"
+          "BSD 3-clause \"New\" or \"Revised\" License",
+          "BSD (3 clause)"
       ],
       "__impliedId": "BSD-3-Clause",
+      "__isFsfFree": true,
       "__impliedAmbiguousNames": [
           "The BSD-3-clause License"
       ],
@@ -236,6 +252,32 @@
               "_implications": {
                   "__impliedNames": [
                       "BSD-3-Clause"
+                  ]
+              }
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "Yes",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "BSD",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "BSD License (no advertising)",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "BSD License (no advertising)"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
                   ]
               }
           },
@@ -380,6 +422,40 @@
                       [
                           "SPDX",
                           "https://spdx.org/licenses/BSD-3-Clause.html"
+                      ]
+                  ]
+              }
+          },
+          "ifrOSS": {
+              "ifrKind": "IfrNoCopyleft",
+              "ifrURL": "https://spdx.org/licenses/BSD-3-Clause",
+              "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+              "ifrName": "BSD 3-clause \"New\" or \"Revised\" License",
+              "ifrId": null,
+              "_implications": {
+                  "__impliedNames": [
+                      "BSD 3-clause \"New\" or \"Revised\" License"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "ifrOSS",
+                          {
+                              "tag": "NeutralJudgement",
+                              "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                          }
+                      ]
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "ifrOSS",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft",
+                  "__impliedURLs": [
+                      [
+                          null,
+                          "https://spdx.org/licenses/BSD-3-Clause"
                       ]
                   ]
               }
@@ -613,6 +689,13 @@
               }
           ],
           [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
+              }
+          ],
+          [
               "Google OSS Policy",
               {
                   "tag": "PositiveJudgement",
@@ -624,6 +707,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
+              }
+          ],
+          [
+              "ifrOSS",
+              {
+                  "tag": "NeutralJudgement",
+                  "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
               }
           ]
       ],
@@ -638,6 +728,10 @@
           ],
           [
               "Scancode",
+              "NoCopyleft"
+          ],
+          [
+              "ifrOSS",
               "NoCopyleft"
           ]
       ],
@@ -712,6 +806,10 @@
           [
               "OSI Page",
               "https://opensource.org/licenses/BSD-3-Clause"
+          ],
+          [
+              null,
+              "https://spdx.org/licenses/BSD-3-Clause"
           ]
       ]
   }

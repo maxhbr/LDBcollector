@@ -9,6 +9,8 @@ Microsoft Reciprocal License (MS-RL)
 
 -   `Microsoft Reciprocal License (MS-RL)`
 
+-   `Microsoft Reciprocal License (Ms-RL)`
+
 Description
 -----------
 
@@ -24,6 +26,15 @@ Comments on (easy) usability
 
 -   **↑**Is OSI Approved (source:
     [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+
+-   Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+    Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten
+    Werke umfasst, sondern definierte Ausnahmen enthält. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
 Obligations
 -----------
@@ -50,6 +61,8 @@ URLs
 -   http://www.microsoft.com/en-us/openness/licenses.aspx\#MRL
 
 -   http://www.opensource.org/licenses/MS-RL
+
+-   https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx
 
 OSADL Rule
 ----------
@@ -122,9 +135,11 @@ Raw Data
             "Microsoft Reciprocal License",
             "scancode://ms-rl",
             "ms-rl",
-            "Microsoft Reciprocal License (MS-RL)"
+            "Microsoft Reciprocal License (MS-RL)",
+            "Microsoft Reciprocal License (Ms-RL)"
         ],
         "__impliedId": "MS-RL",
+        "__isFsfFree": true,
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -215,6 +230,32 @@ Raw Data
                     "__calculatedCopyleft": "Copyleft"
                 }
             },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "http://www.microsoft.com/opensource/licenses.mspx#Ms-RL",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "MS-RL",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Microsoft Reciprocal License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Microsoft Reciprocal License"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
+            },
             "Scancode": {
                 "otherUrls": [
                     "http://www.microsoft.com/en-us/openness/licenses.aspx#MRL",
@@ -288,6 +329,40 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "MS-RL"
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrWeakCopyleft",
+                "ifrURL": "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Microsoft Reciprocal License (Ms-RL)",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Microsoft Reciprocal License (Ms-RL)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx"
+                        ]
                     ]
                 }
             },
@@ -418,10 +493,24 @@ Raw Data
         },
         "__impliedJudgement": [
             [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ],
+            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
                 }
             ]
         ],
@@ -432,6 +521,10 @@ Raw Data
             ],
             [
                 "Scancode",
+                "WeakCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "WeakCopyleft"
             ]
         ],
@@ -518,6 +611,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/MS-RL"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx"
             ]
         ]
     }

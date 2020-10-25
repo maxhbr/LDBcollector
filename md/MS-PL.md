@@ -9,6 +9,8 @@ Microsoft Public License (MS-PL)
 
 -   `Microsoft Public License (MS-PL)`
 
+-   `Microsoft Public License (Ms-PL)`
+
 Description
 -----------
 
@@ -27,6 +29,19 @@ Comments on (easy) usability
 
 -   **↑**Rating is: Silver (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+-   **↑**This software Licenses is OK for Fedora (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+
+-   Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
+    und für Veränderungen der Software keine Bedingungen hinsichtlich
+    des zu verwendenden Lizenztyps enthalten. Damit kann der
+    Lizenznehmer veränderte Versionen der Software unter beliebigen
+    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
+    Software überführen. (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
 Obligations
 -----------
@@ -55,6 +70,9 @@ URLs
 -   http://www.microsoft.com/en-us/openness/licenses.aspx\#MPL
 
 -   http://www.opensource.org/licenses/MS-PL
+
+-   https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx
+    (Einordnung unklar)
 
 OSADL Rule
 ----------
@@ -153,9 +171,11 @@ Raw Data
             "scancode://ms-pl",
             "ms-pl",
             "Microsoft Public License (MS-PL)",
-            "Ms-PL"
+            "Ms-PL",
+            "Microsoft Public License (Ms-PL)"
         ],
         "__impliedId": "MS-PL",
+        "__isFsfFree": true,
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -244,6 +264,32 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "MaybeCopyleft"
+                }
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "http://www.microsoft.com/opensource/licenses.mspx#Ms-PL",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "MS-PL",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Microsoft Public License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Microsoft Public License"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
                 }
             },
             "Scancode": {
@@ -353,6 +399,40 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/MS-PL.html"
+                        ]
+                    ]
+                }
+            },
+            "ifrOSS": {
+                "ifrKind": "IfrNoCopyleft",
+                "ifrURL": "https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)",
+                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
+                "ifrName": "Microsoft Public License (Ms-PL)",
+                "ifrId": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "Microsoft Public License (Ms-PL)"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "ifrOSS",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "ifrOSS",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)"
                         ]
                     ]
                 }
@@ -613,6 +693,13 @@ Raw Data
                 }
             ],
             [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ],
+            [
                 "Google OSS Policy",
                 {
                     "tag": "PositiveJudgement",
@@ -624,6 +711,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
+                }
+            ],
+            [
+                "ifrOSS",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],
@@ -642,6 +736,10 @@ Raw Data
             ],
             [
                 "Scancode",
+                "NoCopyleft"
+            ],
+            [
+                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -724,6 +822,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/MS-PL"
+            ],
+            [
+                null,
+                "https://web.archive.org/web/20080104234143/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/publiclicense.mspx (Einordnung unklar)"
             ]
         ]
     }
