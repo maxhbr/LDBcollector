@@ -28,7 +28,7 @@
 <!-- Multics -->
 <g id="node1" class="node">
 <title>Multics</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="481" cy="-45.21" rx="60.62" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="481" cy="-45.21" rx="60.62" ry="21.43"/>
 <text text-anchor="middle" x="481" y="-40.21" font-family="Times-Roman" font-size="20.00">Multics</text>
 </g>
 <!-- Multics License -->

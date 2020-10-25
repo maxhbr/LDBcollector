@@ -28,7 +28,7 @@
 <!-- JPNIC -->
 <g id="node1" class="node">
 <title>JPNIC</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="966" cy="-45.21" rx="49.49" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="966" cy="-45.21" rx="49.49" ry="21.43"/>
 <text text-anchor="middle" x="966" y="-40.21" font-family="Times-Roman" font-size="20.00">JPNIC</text>
 </g>
 <!-- Japan Network Information Center License -->

@@ -28,7 +28,7 @@
 <!-- Xerox -->
 <g id="node1" class="node">
 <title>Xerox</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="807" cy="-45.21" rx="50.82" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="807" cy="-45.21" rx="50.82" ry="21.43"/>
 <text text-anchor="middle" x="807" y="-40.21" font-family="Times-Roman" font-size="20.00">Xerox</text>
 </g>
 <!-- Xerox License -->

@@ -28,7 +28,7 @@
 <!-- eGenix -->
 <g id="node1" class="node">
 <title>eGenix</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="972" cy="-45.21" rx="60.62" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="972" cy="-45.21" rx="60.62" ry="21.43"/>
 <text text-anchor="middle" x="972" y="-40.21" font-family="Times-Roman" font-size="20.00">eGenix</text>
 </g>
 <!-- eGenix.com Public License 1.1.0 -->

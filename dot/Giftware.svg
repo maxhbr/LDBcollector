@@ -28,7 +28,7 @@
 <!-- Giftware -->
 <g id="node1" class="node">
 <title>Giftware</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="707" cy="-45.21" rx="70.92" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="707" cy="-45.21" rx="70.92" ry="21.43"/>
 <text text-anchor="middle" x="707" y="-40.21" font-family="Times-Roman" font-size="20.00">Giftware</text>
 </g>
 <!-- Giftware License -->

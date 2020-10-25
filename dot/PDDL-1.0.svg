@@ -32,7 +32,7 @@
 <!-- PDDL&#45;1.0 -->
 <g id="node1" class="node">
 <title>PDDL&#45;1.0</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="1524" cy="-45.21" rx="77.56" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="1524" cy="-45.21" rx="77.56" ry="21.43"/>
 <text text-anchor="middle" x="1524" y="-40.21" font-family="Times-Roman" font-size="20.00">PDDL&#45;1.0</text>
 </g>
 <!-- ODC Public Domain Dedication &amp; License 1.0 -->

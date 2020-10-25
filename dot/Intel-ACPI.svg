@@ -28,7 +28,7 @@
 <!-- Intel&#45;ACPI -->
 <g id="node1" class="node">
 <title>Intel&#45;ACPI</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="896" cy="-45.21" rx="79.81" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="896" cy="-45.21" rx="79.81" ry="21.43"/>
 <text text-anchor="middle" x="896" y="-40.21" font-family="Times-Roman" font-size="20.00">Intel&#45;ACPI</text>
 </g>
 <!-- Intel ACPI Software License Agreement -->

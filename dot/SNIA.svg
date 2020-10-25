@@ -28,7 +28,7 @@
 <!-- SNIA -->
 <g id="node1" class="node">
 <title>SNIA</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="511" cy="-45.21" rx="45.01" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="511" cy="-45.21" rx="45.01" ry="21.43"/>
 <text text-anchor="middle" x="511" y="-40.21" font-family="Times-Roman" font-size="20.00">SNIA</text>
 </g>
 <!-- SNIA Public License 1.1 -->

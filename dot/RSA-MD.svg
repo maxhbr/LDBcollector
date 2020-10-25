@@ -28,7 +28,7 @@
 <!-- RSA&#45;MD -->
 <g id="node1" class="node">
 <title>RSA&#45;MD</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="825" cy="-45.21" rx="69.09" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="825" cy="-45.21" rx="69.09" ry="21.43"/>
 <text text-anchor="middle" x="825" y="-40.21" font-family="Times-Roman" font-size="20.00">RSA&#45;MD</text>
 </g>
 <!-- RSA Message&#45;Digest License  -->

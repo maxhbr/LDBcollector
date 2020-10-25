@@ -28,7 +28,7 @@
 <!-- Vim -->
 <g id="node1" class="node">
 <title>Vim</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="543" cy="-45.21" rx="38.78" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="543" cy="-45.21" rx="38.78" ry="21.43"/>
 <text text-anchor="middle" x="543" y="-40.21" font-family="Times-Roman" font-size="20.00">Vim</text>
 </g>
 <!-- Vim License -->

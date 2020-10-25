@@ -72,7 +72,7 @@
 <!-- LGPL&#45;2.1&#45;or&#45;later -->
 <g id="node1" class="node">
 <title>LGPL&#45;2.1&#45;or&#45;later</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="4857" cy="-61.21" rx="130.22" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="4857" cy="-61.21" rx="130.22" ry="21.43"/>
 <text text-anchor="middle" x="4857" y="-56.21" font-family="Times-Roman" font-size="20.00">LGPL&#45;2.1&#45;or&#45;later</text>
 </g>
 <!-- GNU Lesser General Public License v2.1 or later -->
@@ -120,7 +120,7 @@
 <!-- LGPL&#45;2.1&#45;only -->
 <g id="node9" class="node">
 <title>LGPL&#45;2.1&#45;only</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="2779" cy="-61.21" rx="109.7" ry="21.43"/>
+<ellipse fill="red" stroke="red" cx="2779" cy="-61.21" rx="109.7" ry="21.43"/>
 <text text-anchor="middle" x="2779" y="-56.21" font-family="Times-Roman" font-size="20.00">LGPL&#45;2.1&#45;only</text>
 </g>
 <!-- LGPL&#45;2.1 -->

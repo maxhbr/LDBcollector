@@ -28,7 +28,7 @@
 <!-- XSkat -->
 <g id="node1" class="node">
 <title>XSkat</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="442" cy="-45.21" rx="52.15" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="442" cy="-45.21" rx="52.15" ry="21.43"/>
 <text text-anchor="middle" x="442" y="-40.21" font-family="Times-Roman" font-size="20.00">XSkat</text>
 </g>
 <!-- XSkat License -->

@@ -44,7 +44,7 @@
 <!-- ICU -->
 <g id="node1" class="node">
 <title>ICU</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="1236" cy="-61.21" rx="36.54" ry="21.43"/>
+<ellipse fill="lightseagreen" stroke="lightseagreen" cx="1236" cy="-61.21" rx="36.54" ry="21.43"/>
 <text text-anchor="middle" x="1236" y="-56.21" font-family="Times-Roman" font-size="20.00">ICU</text>
 </g>
 <!-- ICU License -->
@@ -68,7 +68,7 @@
 <!-- X11 -->
 <g id="node5" class="node">
 <title>X11</title>
-<ellipse fill="darkgreen" stroke="darkgreen" cx="643" cy="-61.21" rx="39.7" ry="21.43"/>
+<ellipse fill="red" stroke="red" cx="643" cy="-61.21" rx="39.7" ry="21.43"/>
 <text text-anchor="middle" x="643" y="-56.21" font-family="Times-Roman" font-size="20.00">X11</text>
 </g>
 <!-- X11&#45;Style (X Consortium) -->
