@@ -41,6 +41,8 @@ dependencies:
 - file-embed
 - graphviz
 - partial-order
+- uuid
+- cryptohash-md5
 
 library:
   source-dirs: src

@@ -112,7 +112,7 @@ readFacts conf = do
 
 calculateLicenses :: Vector LicenseName -> Facts -> IO [(LicenseName, (License, LicenseClusterTree))]
 calculateLicenses ids facts = do
-  let licenses = getLicensesFromFacts ids 2 facts
+  let licenses = getLicensesFromFacts ids facts
   hPutStrLn stderr "... done with calculating licenses"
 
   return $ V.toList licenses
