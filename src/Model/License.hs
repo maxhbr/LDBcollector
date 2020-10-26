@@ -49,6 +49,7 @@ instance LFRaw License where
   getImpliedText (License fs)            = mergeLicenseStatementResultList $ V.map getImpliedText fs
   getImpliedDescription (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedDescription fs
   getImpliedJudgement (License fs)       = mergeLicenseStatementResultList $ V.map getImpliedJudgement fs
+  getImpliedComments (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedComments fs
   getImpliedCopyleft (License fs)        = mergeLicenseStatementResultList $ V.map getImpliedCopyleft fs
   getImpliedObligations (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedObligations fs
   getImpliedRatingState (License fs)     = mergeLicenseStatementResultList $ V.map getImpliedRatingState fs

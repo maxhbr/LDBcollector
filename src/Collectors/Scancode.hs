@@ -91,8 +91,8 @@ instance LFRaw ScancodeData where
   getImpliedText scd = case text scd of
     Just t  -> mkRLSR scd 50 (decodeUtf8 t)
     Nothing -> NoRLSR
-  getImpliedJudgement scd = case notes scd of
-    Just n -> mkSLSR scd $ NeutralJudgement n
+  getImpliedComments scd = case notes scd of
+    Just n -> mkSLSR scd [n]
     Nothing -> getEmptyLicenseStatement
   getImpliedURLs scd = let
       urlsFromHomepage = case homepageUrl scd of

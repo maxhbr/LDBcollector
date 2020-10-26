@@ -92,6 +92,7 @@ data Page
   { pLicenseDetails :: LicenseDetails
   , pDescription    :: Maybe (WithSource String)
   , pJudgements     :: [WithSource Judgement]
+  , pComments       :: [WithSource Text]
   , pObligations    :: Maybe (WithSource LicenseObligations)
   , pURLs           :: [(Maybe String, URL)]
   , pOSADLRule      :: Maybe (WithSource Text)
@@ -119,6 +120,11 @@ toPage ratingRules (licName, (lic, lct)) = let
         jdgsMap :: Map LicenseFactClassifier Judgement
         jdgsMap = unpackSLSR (getImpliedJudgement lic)
       in (map (uncurry WithSource) . sortOn snd . M.assocs) jdgsMap
+
+    comments = let
+        commentsMap :: Map LicenseFactClassifier [String]
+        commentsMap = unpackSLSR (getImpliedComments lic)
+      in (map (uncurry WithSource) . concatMap (\(lfc, cs) -> map (\c -> (lfc, T.pack c)) cs) . M.assocs) commentsMap
 
     obligations = let
         impliedObligations = getImpliedObligations lic
@@ -158,6 +164,7 @@ toPage ratingRules (licName, (lic, lct)) = let
     page = Page details
                 description
                 judgements
+                comments
                 obligations
                 urls
                 osadlRule

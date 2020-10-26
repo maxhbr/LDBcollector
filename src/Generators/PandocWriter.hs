@@ -35,20 +35,6 @@ import           Processors.ToPage
 renderSource :: LicenseFactClassifier -> Inlines
 renderSource lfc = P.space <> P.text "(source: " <> toInline lfc <> P.text ")"
 
-calculateDetails :: RatingRules -> License -> LicenseName -> LicenseName -> LicenseDetails
-calculateDetails ratingRules lic shortname fullname = let
-    rating = applyRatingRules ratingRules lic
-    copyleft = getCalculatedCopyleft lic
-    patent = unpackRLSR (getHasPatentnHint lic)
-    nonCommercial = unpackRLSR (getImpliedNonCommercial lic)
-    otherNames = let
-        isNotElemUpToCase :: String -> [String] -> Bool
-        isNotElemUpToCase needle hay = let
-          hAY = map (map toLower) hay
-          in map toLower needle `notElem` hAY
-      in filter (`isNotElemUpToCase` [shortname, fullname]) (unpackCLSR (getImpliedNames lic))
-  in LicenseDetails fullname shortname rating copyleft patent nonCommercial otherNames
-
 renderDetails :: LicenseDetails -> Blocks
 renderDetails details = let
     copyleftRow = case ldCopyleft details of
@@ -84,13 +70,22 @@ renderJudgements :: [WithSource Judgement] -> Blocks
 renderJudgements jdgs = let
     fun' :: Judgement -> Inlines -> Blocks
     fun' j i = P.para (case j of
-                          PositiveJudgement d -> P.strong (P.text "↑") <> P.text d <> i
-                          NeutralJudgement d  -> P.text d <> i
-                          NegativeJudgement d -> P.strong (P.text "↓") <> P.text d <> i )
+                          PositiveJudgement d -> P.strong (P.text "↑") <> P.doubleQuoted (P.text d) <> i
+                          NeutralJudgement d  -> P.doubleQuoted (P.text d) <> i
+                          NegativeJudgement d -> P.strong (P.text "↓") <> P.doubleQuoted (P.text d) <> i )
     fun old (WithoutSource j) = old ++ [fun' j mempty]
-    fun old (WithSource k j) = old ++ [fun' j (renderSource k)]
+    fun old (WithSource k j)  = old ++ [fun' j (renderSource k)]
   in P.header 2 (P.text "Comments on (easy) usability")
     <> (P.bulletList . foldl fun []) jdgs
+
+renderComments :: [WithSource Text] -> Blocks
+renderComments cs = let
+    fun' :: Text -> Inlines -> Blocks
+    fun' c i = P.para (P.doubleQuoted (P.text (T.unpack c)) <> i)
+    fun old (WithoutSource c) = old ++ [fun' c mempty]
+    fun old (WithSource k c)  = old ++ [fun' c (renderSource k)]
+  in P.header 2 (P.text "General Comments")
+    <> (P.bulletList . foldl fun []) cs
 
 renderObligations :: Maybe (WithSource LicenseObligations) -> Blocks
 renderObligations Nothing = mempty
@@ -143,6 +138,7 @@ licenseToPandoc shortname page = let
           <> renderDetails (pLicenseDetails page)
           <> renderDescription (pDescription page)
           <> renderJudgements (pJudgements page)
+          <> renderComments (pComments page)
           <> renderObligations (pObligations page)
           <> renderURLs (pURLs page)
           <> renderOSADLRule (pOSADLRule page)

@@ -58,6 +58,8 @@ class (Show a, ToJSON a) => LFRaw a where
   getImpliedDescription _ = getEmptyLicenseStatement
   getImpliedJudgement :: a -> ScopedLicenseStatementResult Judgement
   getImpliedJudgement _ = getEmptyLicenseStatement
+  getImpliedComments :: a -> ScopedLicenseStatementResult [String]
+  getImpliedComments _ = getEmptyLicenseStatement
   getImpliedCopyleft :: a -> ScopedLicenseStatementResult CopyleftKind
   getImpliedCopyleft _ = getEmptyLicenseStatement
   getCalculatedCopyleft :: a -> Maybe CopyleftKind
@@ -102,6 +104,9 @@ getImplicationJSONFromLFRaw a = let
     impliedJudgement = case getImpliedJudgement a of
       NoSLSR -> []
       ijudge -> [ "__impliedJudgement" .= ijudge ]
+    impliedComments = case getImpliedComments a of
+      NoSLSR -> []
+      icomments -> [ "__impliedComments" .= icomments ]
     copyleft = let
         iCopyleft = getImpliedCopyleft a
       in case getCalculatedCopyleft a of
@@ -136,6 +141,7 @@ getImplicationJSONFromLFRaw a = let
                    ++ impliedURLs
                    ++ impliedText
                    ++ impliedJudgement
+                   ++ impliedComments
                    ++ copyleft
                    ++ ratingState
                    ++ patentHint
@@ -172,6 +178,7 @@ instance LFRaw LicenseFact where
   getImpliedText lf@(LicenseFact _ raw)           = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedText raw
   getImpliedDescription (LicenseFact _ raw)       =                                                             getImpliedDescription raw
   getImpliedJudgement lf@(LicenseFact _ raw)      = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedJudgement raw
+  getImpliedComments lf@(LicenseFact _ raw)       = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedComments raw
   getImpliedCopyleft (LicenseFact _ raw)          =                                                             getImpliedCopyleft raw
   getImpliedObligations lf@(LicenseFact _ raw)    = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedObligations raw
   getImpliedRatingState (LicenseFact _ raw)       =                                                             getImpliedRatingState raw
