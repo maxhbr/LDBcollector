@@ -7,6 +7,14 @@
     ],
     "__impliedId": "EUDatagrid",
     "__isFsfFree": true,
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified"
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -129,13 +137,12 @@
                     "EUDatagrid"
                 ],
                 "__impliedId": "EUDatagrid",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified"
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -243,13 +250,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified"
             }
         ]
     ],

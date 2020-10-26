@@ -15,6 +15,8 @@
 
 ** Comments on (easy) usability
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* https://cdla.io/permissive-1-0/

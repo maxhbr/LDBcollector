@@ -20,6 +20,9 @@
 https://spdx.org/licenses/AFL-1.1.html[SPDX])
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
 * ``Per SPDX.org, this license has been superseded by later versions.''
 (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.1.yml[Scancode])
@@ -138,6 +141,14 @@ END OF LICENSE.
         "AFL 1.1"
     ],
     "__impliedId": "AFL-1.1",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license has been superseded by later versions."
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -206,13 +217,12 @@ END OF LICENSE.
                     "AFL-1.1"
                 ],
                 "__impliedId": "AFL-1.1",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license has been superseded by later versions."
-                        }
+                        [
+                            "Per SPDX.org, this license has been superseded by later versions."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -292,13 +302,6 @@ END OF LICENSE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license has been superseded by later versions."
             }
         ]
     ],

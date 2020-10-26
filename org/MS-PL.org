@@ -48,6 +48,8 @@
   weiterverbreiten, also auch in proprietäre Software überführen."
   (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
+** General Comments
+
 - "also known as Microsoft Permissive License (Ms-PL) v1.1" (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml][Scancode]])
 
@@ -194,6 +196,14 @@
       ],
       "__impliedId": "MS-PL",
       "__isFsfFree": true,
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "also known as Microsoft Permissive License (Ms-PL) v1.1"
+              ]
+          ]
+      ],
       "__hasPatentHint": true,
       "facts": {
           "Open Knowledge International": {
@@ -336,13 +346,12 @@
                       "MS-PL"
                   ],
                   "__impliedId": "MS-PL",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "also known as Microsoft Permissive License (Ms-PL) v1.1"
-                          }
+                          [
+                              "also known as Microsoft Permissive License (Ms-PL) v1.1"
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -740,13 +749,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
-              }
-          ],
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "also known as Microsoft Permissive License (Ms-PL) v1.1"
               }
           ],
           [

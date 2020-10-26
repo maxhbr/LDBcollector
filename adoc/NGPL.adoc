@@ -19,6 +19,9 @@
 
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/NGPL.html[SPDX])
+
+=== General Comments
+
 * ``Per SPDX.org, this license is OSI certified.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ngpl.yml[Scancode])
 
@@ -82,6 +85,14 @@ Stated plainly: You are permitted to modify NetHack, or otherwise use parts of N
         "License :: OSI Approved :: Nethack General Public License"
     ],
     "__impliedId": "NGPL",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified."
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -172,13 +183,12 @@ Stated plainly: You are permitted to modify NetHack, or otherwise use parts of N
                     "NGPL"
                 ],
                 "__impliedId": "NGPL",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified."
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -276,13 +286,6 @@ Stated plainly: You are permitted to modify NetHack, or otherwise use parts of N
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

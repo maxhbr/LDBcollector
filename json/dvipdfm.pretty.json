@@ -5,6 +5,14 @@
         "scancode://dvipdfm"
     ],
     "__impliedId": "dvipdfm",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -56,13 +64,12 @@
                     "dvipdfm"
                 ],
                 "__impliedId": "dvipdfm",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
-                        }
+                        [
+                            "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -82,15 +89,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

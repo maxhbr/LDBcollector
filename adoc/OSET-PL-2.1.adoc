@@ -18,6 +18,8 @@
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/OSET-PL-2.1.html[SPDX])
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* http://www.osetfoundation.org/public-license/

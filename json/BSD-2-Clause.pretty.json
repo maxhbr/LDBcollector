@@ -14,6 +14,14 @@
         "BSD License (two clause)"
     ],
     "__impliedId": "BSD-2-Clause",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified."
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -115,13 +123,12 @@
                     "BSD-2-Clause"
                 ],
                 "__impliedId": "BSD-2-Clause",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified."
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -417,13 +424,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

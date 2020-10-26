@@ -12,6 +12,9 @@ FreeImage Public License v1.0 (FreeImage)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “per SPDX.org, SPDX ended up with this license on the license list
     twice once as of v1.17 with the short identifier SMLNJ and then
     added (again) as of v1.20 with the short identifier StandardML-NJ.
@@ -73,6 +76,14 @@ Raw Data
             "Standard ML of New Jersey"
         ],
         "__impliedId": "SMLNJ",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "per SPDX.org, SPDX ended up with this license on the license list twice\nonce as of v1.17 with the short identifier SMLNJ and then added (again) as\nof v1.20 with the short identifier StandardML-NJ. The former list entry has\nbeen deprecated. Here, this license is not verbatim the SPDX SMLMJ, but\ninstead the more generic variant as used in the Java CUP parser generator\nthat has no specific references to Lucent and Bell Labs and is therefore a\nbetter choice for reuse.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -128,13 +139,12 @@ Raw Data
                         "SMLNJ"
                     ],
                     "__impliedId": "SMLNJ",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "per SPDX.org, SPDX ended up with this license on the license list twice\nonce as of v1.17 with the short identifier SMLNJ and then added (again) as\nof v1.20 with the short identifier StandardML-NJ. The former list entry has\nbeen deprecated. Here, this license is not verbatim the SPDX SMLMJ, but\ninstead the more generic variant as used in the Java CUP parser generator\nthat has no specific references to Lucent and Bell Labs and is therefore a\nbetter choice for reuse.\n"
-                            }
+                            [
+                                "per SPDX.org, SPDX ended up with this license on the license list twice\nonce as of v1.17 with the short identifier SMLNJ and then added (again) as\nof v1.20 with the short identifier StandardML-NJ. The former list entry has\nbeen deprecated. Here, this license is not verbatim the SPDX SMLMJ, but\ninstead the more generic variant as used in the Java CUP parser generator\nthat has no specific references to Lucent and Bell Labs and is therefore a\nbetter choice for reuse.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -207,13 +217,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "per SPDX.org, SPDX ended up with this license on the license list twice\nonce as of v1.17 with the short identifier SMLNJ and then added (again) as\nof v1.20 with the short identifier StandardML-NJ. The former list entry has\nbeen deprecated. Here, this license is not verbatim the SPDX SMLMJ, but\ninstead the more generic variant as used in the Java CUP parser generator\nthat has no specific references to Lucent and Bell Labs and is therefore a\nbetter choice for reuse.\n"
                 }
             ]
         ],

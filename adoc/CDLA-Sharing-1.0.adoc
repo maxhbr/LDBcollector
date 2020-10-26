@@ -16,6 +16,8 @@
 
 === Comments on (easy) usability
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* https://cdla.io/sharing-1-0/

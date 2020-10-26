@@ -12,6 +12,9 @@ Open Data Commons Attribution License v1.0 (ODC-By-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

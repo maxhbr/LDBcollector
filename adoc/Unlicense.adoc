@@ -42,6 +42,9 @@ verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen.''
 (source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
+
+=== General Comments
+
 * ``Per SPDX.org, this is a public domain dedication'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml[Scancode])
 
@@ -117,6 +120,14 @@ For more information, please refer to <http://unlicense.org/>
     ],
     "__impliedId": "Unlicense",
     "__isFsfFree": true,
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this is a public domain dedication"
+            ]
+        ]
+    ],
     "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
@@ -222,13 +233,12 @@ For more information, please refer to <http://unlicense.org/>
                     "Unlicense"
                 ],
                 "__impliedId": "Unlicense",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this is a public domain dedication"
-                        }
+                        [
+                            "Per SPDX.org, this is a public domain dedication"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -474,13 +484,6 @@ For more information, please refer to <http://unlicense.org/>
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is UNENCUMBERED"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this is a public domain dedication"
             }
         ],
         [

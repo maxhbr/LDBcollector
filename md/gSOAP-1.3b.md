@@ -10,6 +10,9 @@ gSOAP Public License v1.3b (gSOAP-1.3b)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

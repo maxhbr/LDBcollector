@@ -6,6 +6,14 @@
         "LPPL 1.0"
     ],
     "__impliedId": "LPPL-1.0",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released 1 Mar 1999"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -57,13 +65,12 @@
                     "LPPL-1.0"
                 ],
                 "__impliedId": "LPPL-1.0",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released 1 Mar 1999"
-                        }
+                        [
+                            "Per SPDX.org, this license was released 1 Mar 1999"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -83,15 +90,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released 1 Mar 1999"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

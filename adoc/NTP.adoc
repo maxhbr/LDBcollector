@@ -29,6 +29,9 @@ verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen.''
 (source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
+
+=== General Comments
+
 * ``replaced by mit-old-style-no-advert'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntpl.yml[Scancode])
 
@@ -85,6 +88,14 @@ purpose. It is provided "as is" without express or implied warranty.
         "NTP License (NTP)"
     ],
     "__impliedId": "NTP",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "replaced by mit-old-style-no-advert"
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -183,13 +194,12 @@ purpose. It is provided "as is" without express or implied warranty.
                     "scancode://ntpl",
                     "NTP License"
                 ],
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "replaced by mit-old-style-no-advert"
-                        }
+                        [
+                            "replaced by mit-old-style-no-advert"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -360,13 +370,6 @@ purpose. It is provided "as is" without express or implied warranty.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "replaced by mit-old-style-no-advert"
             }
         ],
         [

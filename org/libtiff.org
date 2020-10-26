@@ -22,6 +22,8 @@
 - *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+** General Comments
+
 ** URLs
 
 - *SPDX:* http://spdx.org/licenses/libtiff.json

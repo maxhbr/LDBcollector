@@ -9,6 +9,14 @@
     "__impliedAmbiguousNames": [
         "Artistic License"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -72,13 +80,12 @@
                     "Artistic-1.0-cl8"
                 ],
                 "__impliedId": "Artistic-1.0-cl8",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n"
-                        }
+                        [
+                            "Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -189,13 +196,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n"
             }
         ]
     ],

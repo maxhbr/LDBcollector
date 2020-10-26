@@ -17,9 +17,6 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CPAL-1.0.html "SPDX"))
 
--   “Per SPDX.org, this license is OSI certifified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml "Scancode"))
-
 -   **↓**“Google Classification is CANNOT\_BE\_USED "Likewise, code
     released under the Common Public Attribution License (CPAL), notably
     the Mule ESB and most of the code that backs Reddit, cannot be used
@@ -30,6 +27,12 @@ Comments on (easy) usability
 -   **↓**“Issue: Badgeware license (see:
     https://lwn.net/Articles/243841/)” (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license is OSI certifified.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml "Scancode"))
 
 URLs
 ----
@@ -174,6 +177,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Common Public Attribution License"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certifified."
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -264,13 +275,12 @@ Raw Data
                         "CPAL-1.0"
                     ],
                     "__impliedId": "CPAL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certifified."
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certifified."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -423,13 +433,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certifified."
                 }
             ]
         ],

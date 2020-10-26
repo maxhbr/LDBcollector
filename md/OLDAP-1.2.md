@@ -12,13 +12,16 @@ Open LDAP Public License v1.2 (OLDAP-1.2)
 Comments on (easy) usability
 ----------------------------
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 1 September 1998. This
     license was issued four time, but only with formatting differences.
     ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.2.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -178,6 +181,14 @@ Raw Data
             "OpenLDAP Public License 1.2"
         ],
         "__impliedId": "OLDAP-1.2",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -229,13 +240,12 @@ Raw Data
                         "OLDAP-1.2"
                     ],
                     "__impliedId": "OLDAP-1.2",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -296,13 +306,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 1 September 1998. This license was\nissued four time, but only with formatting differences.\n"
                 }
             ]
         ],

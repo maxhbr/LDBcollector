@@ -12,6 +12,9 @@ Aladdin Free Public License (Aladdin)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 18 Nov 1999” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afpl-8.0.yml "Scancode"))
 
@@ -104,6 +107,14 @@ Raw Data
             "Aladdin FPL v8"
         ],
         "__impliedId": "Aladdin",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 18 Nov 1999"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -155,13 +166,12 @@ Raw Data
                         "Aladdin"
                     ],
                     "__impliedId": "Aladdin",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 18 Nov 1999"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 18 Nov 1999"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -181,15 +191,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 18 Nov 1999"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

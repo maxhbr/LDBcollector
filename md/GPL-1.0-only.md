@@ -24,11 +24,14 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   “Per SPDX.org, this license was released February 1989.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0.yml "Scancode"))
-
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license was released February 1989.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0.yml "Scancode"))
 
 URLs
 ----
@@ -316,6 +319,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "The GNU General Public License (GPL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released February 1989."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -370,13 +381,12 @@ Raw Data
                         "GPL-1.0-only"
                     ],
                     "__impliedId": "GPL-1.0-only",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released February 1989."
-                            }
+                            [
+                                "Per SPDX.org, this license was released February 1989."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -482,13 +492,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Google Classification is RESTRICTED"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released February 1989."
                 }
             ]
         ],

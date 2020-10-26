@@ -10,6 +10,9 @@ GL2PS License (GL2PS)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

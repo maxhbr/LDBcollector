@@ -12,6 +12,14 @@
     "__impliedAmbiguousNames": [
         "The SIL Open Font License"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released 26 February 2007. This license is\nOSI certified\n"
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -109,13 +117,12 @@
                     "OFL-1.1"
                 ],
                 "__impliedId": "OFL-1.1",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released 26 February 2007. This license is\nOSI certified\n"
-                        }
+                        [
+                            "Per SPDX.org, this license was released 26 February 2007. This license is\nOSI certified\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -318,13 +325,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released 26 February 2007. This license is\nOSI certified\n"
             }
         ]
     ],

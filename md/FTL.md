@@ -16,6 +16,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 27 Jan 2006” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode"))
 
@@ -234,6 +237,14 @@ Raw Data
             "FreeType Project License"
         ],
         "__impliedId": "FTL",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 27 Jan 2006"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -305,13 +316,12 @@ Raw Data
                         "FTL"
                     ],
                     "__impliedId": "FTL",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 27 Jan 2006"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 27 Jan 2006"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -421,13 +431,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Google Classification is NOTICE"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 27 Jan 2006"
                 }
             ]
         ],

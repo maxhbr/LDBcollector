@@ -6,6 +6,14 @@
         "Net SNMP License"
     ],
     "__impliedId": "Net-SNMP",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "composite"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -57,13 +65,12 @@
                     "Net-SNMP"
                 ],
                 "__impliedId": "Net-SNMP",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "composite"
-                        }
+                        [
+                            "composite"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -124,13 +131,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "composite"
             }
         ]
     ],

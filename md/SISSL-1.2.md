@@ -21,6 +21,9 @@ Comments on (easy) usability
     slightly less onerous sFlow License."” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+General Comments
+----------------
+
 URLs
 ----
 

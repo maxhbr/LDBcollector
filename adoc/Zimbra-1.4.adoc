@@ -16,6 +16,8 @@
 
 === Comments on (easy) usability
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* http://www.zimbra.com/legal/zimbra-public-license-1-4

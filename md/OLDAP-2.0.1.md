@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 21 December 1999. This
     license is the same as 2.0 with the word "registered" removed from
     in front of "trademark." ” (source:
@@ -91,6 +94,14 @@ Raw Data
             "OpenLDAP Public License 2.0.1"
         ],
         "__impliedId": "OLDAP-2.0.1",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 21 December 1999. This license is\nthe same as 2.0 with the word \"registered\" removed from in front of\n\"trademark.\"\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -142,13 +153,12 @@ Raw Data
                         "OLDAP-2.0.1"
                     ],
                     "__impliedId": "OLDAP-2.0.1",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 21 December 1999. This license is\nthe same as 2.0 with the word \"registered\" removed from in front of\n\"trademark.\"\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 21 December 1999. This license is\nthe same as 2.0 with the word \"registered\" removed from in front of\n\"trademark.\"\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -209,13 +219,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 21 December 1999. This license is\nthe same as 2.0 with the word \"registered\" removed from in front of\n\"trademark.\"\n"
                 }
             ]
         ],

@@ -16,10 +16,13 @@
 
 === Comments on (easy) usability
 
-* ``Per SPDX.org, this license was released 25 August 1998.'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.1.yml[Scancode])
 * **↓**``Rating is: Lead'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
+* ``Per SPDX.org, this license was released 25 August 1998.'' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.1.yml[Scancode])
 
 === URLs
 
@@ -168,6 +171,14 @@ The End
         "OpenLDAP Public License 1.1"
     ],
     "__impliedId": "OLDAP-1.1",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released 25 August 1998."
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -219,13 +230,12 @@ The End
                     "OLDAP-1.1"
                 ],
                 "__impliedId": "OLDAP-1.1",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released 25 August 1998."
-                        }
+                        [
+                            "Per SPDX.org, this license was released 25 August 1998."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -286,13 +296,6 @@ The End
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released 25 August 1998."
             }
         ]
     ],

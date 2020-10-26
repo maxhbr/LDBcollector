@@ -17,6 +17,8 @@
 
 === Comments on (easy) usability
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* http://www.codeproject.com/info/cpol10.aspx

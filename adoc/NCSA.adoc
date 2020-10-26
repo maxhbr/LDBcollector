@@ -41,6 +41,9 @@ Policy])
 https://spdx.org/licenses/NCSA.html[SPDX])
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
 * ``Per SPDX.org, this license is OSI certified'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/uoi-ncsa.yml[Scancode])
 
@@ -127,6 +130,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
         "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
     ],
     "__impliedId": "NCSA",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified"
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -225,13 +236,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
                     "NCSA"
                 ],
                 "__impliedId": "NCSA",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified"
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -530,13 +540,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified"
             }
         ]
     ],

@@ -12,6 +12,9 @@ FSF Unlimited License (FSFUL)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

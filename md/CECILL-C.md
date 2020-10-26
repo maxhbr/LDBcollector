@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+General Comments
+----------------
+
 -   “per SPDX.org, English translation can be found here
     http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html ”
     (source:
@@ -288,6 +291,14 @@ Raw Data
             "CeCILL-C License"
         ],
         "__impliedId": "CECILL-C",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -341,13 +352,12 @@ Raw Data
                         "CECILL-C"
                     ],
                     "__impliedId": "CECILL-C",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n"
-                            }
+                            [
+                                "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -396,13 +406,6 @@ Raw Data
                 {
                     "tag": "NeutralJudgement",
                     "contents": "Google Classification is RECIPROCAL"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n"
                 }
             ]
         ],

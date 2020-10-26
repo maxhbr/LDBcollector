@@ -12,6 +12,9 @@ iMatix Standard Function Library Agreement (iMatix)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

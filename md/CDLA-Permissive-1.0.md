@@ -12,6 +12,9 @@ Community Data License Agreement Permissive 1.0 (CDLA-Permissive-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

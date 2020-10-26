@@ -18,6 +18,8 @@
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/LiLiQ-Rplus-1.1.html[SPDX])
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* http://opensource.org/licenses/LiLiQ-Rplus-1.1

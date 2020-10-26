@@ -12,6 +12,9 @@ Intel ACPI Software License Agreement (Intel-ACPI)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per Fedora, this license is no longer available at its original URL
     http://www.intel.com/technology/iapc/acpi/license2.htm. A copy was
     taken from the last available version at archive.org. ” (source:
@@ -156,6 +159,14 @@ Raw Data
             "Intel ACPI SLA"
         ],
         "__impliedId": "Intel-ACPI",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this license is no longer available at its original URL\nhttp://www.intel.com/technology/iapc/acpi/license2.htm. A copy was taken\nfrom the last available version at archive.org.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -207,13 +218,12 @@ Raw Data
                         "Intel-ACPI"
                     ],
                     "__impliedId": "Intel-ACPI",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this license is no longer available at its original URL\nhttp://www.intel.com/technology/iapc/acpi/license2.htm. A copy was taken\nfrom the last available version at archive.org.\n"
-                            }
+                            [
+                                "Per Fedora, this license is no longer available at its original URL\nhttp://www.intel.com/technology/iapc/acpi/license2.htm. A copy was taken\nfrom the last available version at archive.org.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -233,15 +243,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this license is no longer available at its original URL\nhttp://www.intel.com/technology/iapc/acpi/license2.htm. A copy was taken\nfrom the last available version at archive.org.\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

@@ -19,6 +19,8 @@
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Barr

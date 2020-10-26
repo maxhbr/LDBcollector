@@ -15,12 +15,15 @@
 
 === Comments on (easy) usability
 
+* **↓**``Rating is: Lead'' (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
 * ``Per Fedora, This is a zlib variant, less restrictive. It was found
 on the component of texlive 2010. It is Free and GPL-compatible. ''
 (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/newsletr.yml[Scancode])
-* **↓**``Rating is: Lead'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 
@@ -50,6 +53,14 @@ Permission is granted to anyone to use this software for any purpose on any comp
         "scancode://newsletr"
     ],
     "__impliedId": "Newsletr",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -101,13 +112,12 @@ Permission is granted to anyone to use this software for any purpose on any comp
                     "Newsletr"
                 ],
                 "__impliedId": "Newsletr",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
-                        }
+                        [
+                            "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -168,13 +178,6 @@ Permission is granted to anyone to use this software for any purpose on any comp
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
             }
         ]
     ],

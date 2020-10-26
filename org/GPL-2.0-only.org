@@ -59,6 +59,12 @@
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
+- *↓*"Google Classification is RESTRICTED" (source:
+  [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
+  Policy]])
+
+** General Comments
+
 - "This is the last version of the GPL text as published by the FSF.
   This variation was published around about the time of the FSF released
   the GPL 3 in July 2007.
@@ -75,10 +81,6 @@
   texts. Per SPDX.org, this license was released June 1991 This license
   is OSI certified." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0.yml][Scancode]])
-
-- *↓*"Google Classification is RESTRICTED" (source:
-  [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
 
 ** Obligations
 
@@ -595,6 +597,14 @@
       "__impliedAmbiguousNames": [
           "The GNU General Public License (GPL)"
       ],
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "This is the last version of the GPL text as published by the FSF. This\nvariation was published around about the time of the FSF released the GPL 3\nin July 2007.\nhttp://web.archive.org/web/20070716031727/http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt \nIt is found live here https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt\nand here https://www.gnu.org/licenses/old-licenses/gpl-2.0.html \nIt refers to the Franklin Street address and to the\nGNU Lesser General Public License everywhere both in the text and HTML\nformats. There are four other variations that were published over the\nyears. You can find these in the GPL rules as gpl-2.0_100.RULE,\ngpl-2.0_101.RULE, gpl-2.0_102.RULE and gpl-2.0_103.RULE. Their\ncorresponding YAML data explains their history and provides archive.org\npointer to their texts. Per SPDX.org, this license was released June 1991\nThis license is OSI certified."
+              ]
+          ]
+      ],
       "__impliedCompatibilities": [
           [
               "Override",
@@ -760,13 +770,12 @@
                       "GPL-2.0-only"
                   ],
                   "__impliedId": "GPL-2.0-only",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "This is the last version of the GPL text as published by the FSF. This\nvariation was published around about the time of the FSF released the GPL 3\nin July 2007.\nhttp://web.archive.org/web/20070716031727/http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt \nIt is found live here https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt\nand here https://www.gnu.org/licenses/old-licenses/gpl-2.0.html \nIt refers to the Franklin Street address and to the\nGNU Lesser General Public License everywhere both in the text and HTML\nformats. There are four other variations that were published over the\nyears. You can find these in the GPL rules as gpl-2.0_100.RULE,\ngpl-2.0_101.RULE, gpl-2.0_102.RULE and gpl-2.0_103.RULE. Their\ncorresponding YAML data explains their history and provides archive.org\npointer to their texts. Per SPDX.org, this license was released June 1991\nThis license is OSI certified."
-                          }
+                          [
+                              "This is the last version of the GPL text as published by the FSF. This\nvariation was published around about the time of the FSF released the GPL 3\nin July 2007.\nhttp://web.archive.org/web/20070716031727/http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt \nIt is found live here https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt\nand here https://www.gnu.org/licenses/old-licenses/gpl-2.0.html \nIt refers to the Franklin Street address and to the\nGNU Lesser General Public License everywhere both in the text and HTML\nformats. There are four other variations that were published over the\nyears. You can find these in the GPL rules as gpl-2.0_100.RULE,\ngpl-2.0_101.RULE, gpl-2.0_102.RULE and gpl-2.0_103.RULE. Their\ncorresponding YAML data explains their history and provides archive.org\npointer to their texts. Per SPDX.org, this license was released June 1991\nThis license is OSI certified."
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -1218,13 +1227,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
-              }
-          ],
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "This is the last version of the GPL text as published by the FSF. This\nvariation was published around about the time of the FSF released the GPL 3\nin July 2007.\nhttp://web.archive.org/web/20070716031727/http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt \nIt is found live here https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt\nand here https://www.gnu.org/licenses/old-licenses/gpl-2.0.html \nIt refers to the Franklin Street address and to the\nGNU Lesser General Public License everywhere both in the text and HTML\nformats. There are four other variations that were published over the\nyears. You can find these in the GPL rules as gpl-2.0_100.RULE,\ngpl-2.0_101.RULE, gpl-2.0_102.RULE and gpl-2.0_103.RULE. Their\ncorresponding YAML data explains their history and provides archive.org\npointer to their texts. Per SPDX.org, this license was released June 1991\nThis license is OSI certified."
               }
           ]
       ],

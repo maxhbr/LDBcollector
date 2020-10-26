@@ -22,11 +22,14 @@
 
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/Sleepycat.html[SPDX])
-* ``Per SPDX.org, this license is OSI certified'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml[Scancode])
 * **↓**``Google Classification is RESTRICTED'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+
+=== General Comments
+
+* ``Per SPDX.org, this license is OSI certified'' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml[Scancode])
 
 === URLs
 
@@ -87,6 +90,14 @@ Policy])
         "Sleepycat Software Product License"
     ],
     "__impliedId": "Sleepycat",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified"
+            ]
+        ]
+    ],
     "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
@@ -179,13 +190,12 @@ Policy])
                     "Sleepycat"
                 ],
                 "__impliedId": "Sleepycat",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified"
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -381,13 +391,6 @@ Policy])
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified"
             }
         ]
     ],

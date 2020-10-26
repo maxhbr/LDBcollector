@@ -10,6 +10,9 @@ TAPR Open Hardware License v1.0 (TAPR-OHL-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

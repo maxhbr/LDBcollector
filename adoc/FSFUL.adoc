@@ -16,6 +16,8 @@
 
 === Comments on (easy) usability
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* http://www.fsf.org/licensing/licenses/

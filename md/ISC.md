@@ -40,6 +40,9 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode"))
 
@@ -116,6 +119,14 @@ Raw Data
         "__impliedId": "ISC",
         "__impliedAmbiguousNames": [
             "ISC license"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
+                ]
+            ]
         ],
         "__hasPatentHint": false,
         "facts": {
@@ -227,13 +238,12 @@ Raw Data
                         "ISC"
                     ],
                     "__impliedId": "ISC",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certified."
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -605,13 +615,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

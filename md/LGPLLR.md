@@ -10,6 +10,9 @@ Lesser General Public License For Linguistic Resources (LGPLLR)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

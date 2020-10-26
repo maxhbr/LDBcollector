@@ -6,6 +6,14 @@
         "W3C-SOFTWARE-DOC-20150513"
     ],
     "__impliedId": "W3C-20150513",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Previous version was http://www.w3.org/Consortium/Legal/2002/copyright-\nsoftware-20021231 This version makes clear that the license is applicable\nto both software and text, by changing the name and substituting \"work\" for\ninstances of \"software and its documentation.\" It moves \"notice of changes\nor modifications to the files\" to the copyright notice, to make clear that\nthe license is compatible with other liberal licenses. There is also a\nshort notice version at https://www.w3.org/Consortium/Legal/2015/copyright-\nsoftware-short-notice.html\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -57,13 +65,12 @@
                     "W3C-20150513"
                 ],
                 "__impliedId": "W3C-20150513",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Previous version was http://www.w3.org/Consortium/Legal/2002/copyright-\nsoftware-20021231 This version makes clear that the license is applicable\nto both software and text, by changing the name and substituting \"work\" for\ninstances of \"software and its documentation.\" It moves \"notice of changes\nor modifications to the files\" to the copyright notice, to make clear that\nthe license is compatible with other liberal licenses. There is also a\nshort notice version at https://www.w3.org/Consortium/Legal/2015/copyright-\nsoftware-short-notice.html\n"
-                        }
+                        [
+                            "Previous version was http://www.w3.org/Consortium/Legal/2002/copyright-\nsoftware-20021231 This version makes clear that the license is applicable\nto both software and text, by changing the name and substituting \"work\" for\ninstances of \"software and its documentation.\" It moves \"notice of changes\nor modifications to the files\" to the copyright notice, to make clear that\nthe license is compatible with other liberal licenses. There is also a\nshort notice version at https://www.w3.org/Consortium/Legal/2015/copyright-\nsoftware-short-notice.html\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -157,13 +164,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is NOTICE"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Previous version was http://www.w3.org/Consortium/Legal/2002/copyright-\nsoftware-20021231 This version makes clear that the license is applicable\nto both software and text, by changing the name and substituting \"work\" for\ninstances of \"software and its documentation.\" It moves \"notice of changes\nor modifications to the files\" to the copyright notice, to make clear that\nthe license is compatible with other liberal licenses. There is also a\nshort notice version at https://www.w3.org/Consortium/Legal/2015/copyright-\nsoftware-short-notice.html\n"
             }
         ]
     ],

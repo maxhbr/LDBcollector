@@ -23,12 +23,15 @@ still considered DFSG-free.'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/Artistic-1.0-Perl.html[SPDX])
+* **↓**``Rating is: Lead'' (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
 * ``Per SPDX.org, this is the Artistic License 1.0 found on the Perl
 site, which is different (particularly, clauses 5, 6, 7 and 8) than the
 Artistic License 1.0 w/clause 8 found on the OSI site. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml[Scancode])
-* **↓**``Rating is: Lead'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 
@@ -222,6 +225,14 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
     "__impliedAmbiguousNames": [
         "Artistic License"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this is the Artistic License 1.0 found on the Perl site,\nwhich is different (particularly, clauses 5, 6, 7 and 8) than the Artistic\nLicense 1.0 w/clause 8 found on the OSI site.\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -292,13 +303,12 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
                     "Artistic-1.0-Perl"
                 ],
                 "__impliedId": "Artistic-1.0-Perl",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this is the Artistic License 1.0 found on the Perl site,\nwhich is different (particularly, clauses 5, 6, 7 and 8) than the Artistic\nLicense 1.0 w/clause 8 found on the OSI site.\n"
-                        }
+                        [
+                            "Per SPDX.org, this is the Artistic License 1.0 found on the Perl site,\nwhich is different (particularly, clauses 5, 6, 7 and 8) than the Artistic\nLicense 1.0 w/clause 8 found on the OSI site.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -473,13 +483,6 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this is the Artistic License 1.0 found on the Perl site,\nwhich is different (particularly, clauses 5, 6, 7 and 8) than the Artistic\nLicense 1.0 w/clause 8 found on the OSI site.\n"
             }
         ]
     ],

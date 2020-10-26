@@ -25,6 +25,9 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+General Comments
+----------------
+
 URLs
 ----
 

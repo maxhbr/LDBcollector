@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, the PHP License v3.01 is essentially the same as
     v3.0, with the exceoption of a couple word differences and updated
     url in section 6. v3.01 came into use with PHP version 4 and onward.
@@ -118,6 +121,14 @@ Raw Data
             "PHP License 3.01"
         ],
         "__impliedId": "PHP-3.01",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, the PHP License v3.01 is essentially the same as v3.0, with\nthe exceoption of a couple word differences and updated url in section 6.\nv3.01 came into use with PHP version 4 and onward.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -172,13 +183,12 @@ Raw Data
                         "PHP-3.01"
                     ],
                     "__impliedId": "PHP-3.01",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, the PHP License v3.01 is essentially the same as v3.0, with\nthe exceoption of a couple word differences and updated url in section 6.\nv3.01 came into use with PHP version 4 and onward.\n"
-                            }
+                            [
+                                "Per SPDX.org, the PHP License v3.01 is essentially the same as v3.0, with\nthe exceoption of a couple word differences and updated url in section 6.\nv3.01 came into use with PHP version 4 and onward.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -318,13 +328,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, the PHP License v3.01 is essentially the same as v3.0, with\nthe exceoption of a couple word differences and updated url in section 6.\nv3.01 came into use with PHP version 4 and onward.\n"
                 }
             ]
         ],

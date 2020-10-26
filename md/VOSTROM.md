@@ -12,6 +12,9 @@ VOSTROM Public License for Open Source (VOSTROM)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

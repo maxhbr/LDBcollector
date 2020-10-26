@@ -20,6 +20,9 @@ https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
 * ``Per SPDX.org, this license was released 27 Jan 2006'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml[Scancode])
 
@@ -233,6 +236,14 @@ Legal Terms
         "FreeType Project License"
     ],
     "__impliedId": "FTL",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released 27 Jan 2006"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -304,13 +315,12 @@ Legal Terms
                     "FTL"
                 ],
                 "__impliedId": "FTL",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released 27 Jan 2006"
-                        }
+                        [
+                            "Per SPDX.org, this license was released 27 Jan 2006"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -420,13 +430,6 @@ Legal Terms
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is NOTICE"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released 27 Jan 2006"
             }
         ]
     ],

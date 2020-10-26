@@ -12,6 +12,9 @@ PNG Reference Library version 2 (libpng-2.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

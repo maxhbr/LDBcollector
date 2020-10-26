@@ -10,6 +10,9 @@ Deutsche Freie Software Lizenz (D-FSL-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was created for and is backed by the
     German state. The English translation can be found here
     http://www.dipp.nrw.de/d-fsl/index\_html/lizenzen/en/D-FSL-1\_0\_en.txt
@@ -509,6 +512,14 @@ Raw Data
             "scancode://d-fsl-1.0-de"
         ],
         "__impliedId": "D-FSL-1.0",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was created for and is backed by the German\nstate. The English translation can be found here\nhttp://www.dipp.nrw.de/d-fsl/index_html/lizenzen/en/D-FSL-1_0_en.txt\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -604,13 +615,12 @@ Raw Data
                         "D-FSL-1.0"
                     ],
                     "__impliedId": "D-FSL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was created for and is backed by the German\nstate. The English translation can be found here\nhttp://www.dipp.nrw.de/d-fsl/index_html/lizenzen/en/D-FSL-1_0_en.txt\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was created for and is backed by the German\nstate. The English translation can be found here\nhttp://www.dipp.nrw.de/d-fsl/index_html/lizenzen/en/D-FSL-1_0_en.txt\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -662,15 +672,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was created for and is backed by the German\nstate. The English translation can be found here\nhttp://www.dipp.nrw.de/d-fsl/index_html/lizenzen/en/D-FSL-1_0_en.txt\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

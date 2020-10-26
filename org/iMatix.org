@@ -15,6 +15,8 @@
 
 ** Comments on (easy) usability
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://legacy.imatix.com/html/sfl/sfl4.htm

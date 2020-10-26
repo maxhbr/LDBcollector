@@ -27,6 +27,9 @@ Comments on (easy) usability
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was OSI certified. This license have
     been superseded by v1.1 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-1.0.yml "Scancode"))
@@ -182,6 +185,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Mozilla Public License (MPL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was OSI certified. This license have been\nsuperseded by v1.1\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -277,13 +288,12 @@ Raw Data
                         "MPL-1.0"
                     ],
                     "__impliedId": "MPL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was OSI certified. This license have been\nsuperseded by v1.1\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was OSI certified. This license have been\nsuperseded by v1.1\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -552,13 +562,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was OSI certified. This license have been\nsuperseded by v1.1\n"
                 }
             ]
         ],

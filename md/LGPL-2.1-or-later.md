@@ -26,12 +26,15 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LGPL-2.1-or-later.html "SPDX"))
 
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released February 1999. This license
     is OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml "Scancode"))
-
--   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
 ----
@@ -217,6 +220,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "The GNU Lesser General Public License (LGPL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n"
+                ]
+            ]
+        ],
         "__hasPatentHint": true,
         "facts": {
             "SPDX": {
@@ -306,13 +317,12 @@ Raw Data
                         "LGPL-2.1-or-later"
                     ],
                     "__impliedId": "LGPL-2.1-or-later",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -544,13 +554,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released February 1999. This license is OSI\ncertified.\n"
                 }
             ]
         ],

@@ -12,6 +12,9 @@ Community Data License Agreement Sharing 1.0 (CDLA-Sharing-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

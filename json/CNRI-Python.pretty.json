@@ -8,6 +8,14 @@
         "License :: OSI Approved :: Python License (CNRI Python License)"
     ],
     "__impliedId": "CNRI-Python",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -99,13 +107,12 @@
                     "CNRI-Python"
                 ],
                 "__impliedId": "CNRI-Python",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
-                        }
+                        [
+                            "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -249,13 +256,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
             }
         ]
     ],

@@ -34,6 +34,8 @@ https://spdx.org/licenses/EPL-2.0.html[SPDX])
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 
+=== General Comments
+
 === Obligations
 
 [cols=",,",options="header",]

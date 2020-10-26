@@ -46,6 +46,8 @@
   (DFSG-free)" (source: [[https://wiki.debian.org/DFSGLicenses][Debian
   Free Software Guidelines]])
 
+** General Comments
+
 - "Per SPDX.org, this version was released 2006 This license is OSI
   certifified. " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-2.0.yml][Scancode]])
@@ -185,6 +187,14 @@
       "__impliedAmbiguousNames": [
           "Artistic License"
       ],
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "Per SPDX.org, this version was released 2006 This license is OSI\ncertifified.\n"
+              ]
+          ]
+      ],
       "__hasPatentHint": false,
       "facts": {
           "Open Knowledge International": {
@@ -281,13 +291,12 @@
                       "Artistic-2.0"
                   ],
                   "__impliedId": "Artistic-2.0",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "Per SPDX.org, this version was released 2006 This license is OSI\ncertifified.\n"
-                          }
+                          [
+                              "Per SPDX.org, this version was released 2006 This license is OSI\ncertifified.\n"
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -735,13 +744,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
-              }
-          ],
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "Per SPDX.org, this version was released 2006 This license is OSI\ncertifified.\n"
               }
           ]
       ],

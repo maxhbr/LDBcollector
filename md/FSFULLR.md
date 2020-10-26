@@ -12,6 +12,9 @@ FSF Unlimited License (with License Retention) (FSFULLR)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

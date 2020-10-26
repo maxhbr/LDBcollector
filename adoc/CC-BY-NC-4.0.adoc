@@ -28,6 +28,8 @@ Policy])
 DebianFreeSoftwareGuidelines (DFSG-unfree)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* http://creativecommons.org/licenses/by-nc/4.0/

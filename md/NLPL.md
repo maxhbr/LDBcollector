@@ -10,6 +10,12 @@ No Limit Public License (NLPL)
 Comments on (easy) usability
 ----------------------------
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per Fedora, there is a certain irony in a Frenchman writing a
     license that isn't wholly applicable in France, due to Moral Rights.
     But I digress. This license is basically the same as the WTFPL (with
@@ -17,9 +23,6 @@ Comments on (easy) usability
     the license text was taken from http://imapsync.lamiral.info/COPYING
     on 2012-07-09. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -59,6 +62,14 @@ Raw Data
             "scancode://nlpl"
         ],
         "__impliedId": "NLPL",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn't wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -110,13 +121,12 @@ Raw Data
                         "NLPL"
                     ],
                     "__impliedId": "NLPL",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn't wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n"
-                            }
+                            [
+                                "Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn't wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -177,13 +187,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn't wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n"
                 }
             ]
         ],

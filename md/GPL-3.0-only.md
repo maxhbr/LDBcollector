@@ -74,12 +74,15 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 29 June 2007 This license
     is OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0.yml "Scancode"))
-
--   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 Obligations
 -----------
@@ -974,6 +977,14 @@ Raw Data
             "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
             "The GNU General Public License (GPL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
+                ]
+            ]
+        ],
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -1116,13 +1127,12 @@ Raw Data
                         "GPL-3.0-only"
                     ],
                     "__impliedId": "GPL-3.0-only",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -1647,13 +1657,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
                 }
             ],
             [

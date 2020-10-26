@@ -22,6 +22,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “this has this title in SPDX and OSI text The Intel Open Source
     License for CDSA/CSSM Implementation (BSD License with Export
     Notice)” (source:
@@ -96,6 +99,14 @@ Raw Data
             "License :: OSI Approved :: Intel Open Source License"
         ],
         "__impliedId": "Intel",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -187,13 +198,12 @@ Raw Data
                         "Intel"
                     ],
                     "__impliedId": "Intel",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
-                            }
+                            [
+                                "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -326,13 +336,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
                 }
             ]
         ],

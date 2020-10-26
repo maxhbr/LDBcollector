@@ -20,6 +20,9 @@
 
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/Nokia.html[SPDX])
+
+=== General Comments
+
 * ``Per SPDX.org, this license is OSI certified.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nokos-1.0a.yml[Scancode])
 
@@ -436,6 +439,14 @@ Copyright © <year> Nokia and others. All Rights Reserved.
         "License :: OSI Approved :: Nokia Open Source License"
     ],
     "__impliedId": "Nokia",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified."
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -526,13 +537,12 @@ Copyright © <year> Nokia and others. All Rights Reserved.
                     "Nokia"
                 ],
                 "__impliedId": "Nokia",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified."
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -634,13 +644,6 @@ Copyright © <year> Nokia and others. All Rights Reserved.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

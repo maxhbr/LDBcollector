@@ -22,11 +22,14 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
--   “Per SPDX.org, this license is OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode"))
-
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license is OSI certified.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode"))
 
 URLs
 ----
@@ -77,6 +80,14 @@ Raw Data
         "__impliedId": "MirOS",
         "__impliedAmbiguousNames": [
             "The MirOS Licence"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
+                ]
+            ]
         ],
         "facts": {
             "Open Knowledge International": {
@@ -168,13 +179,12 @@ Raw Data
                         "MirOS"
                     ],
                     "__impliedId": "MirOS",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certified."
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -342,13 +352,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

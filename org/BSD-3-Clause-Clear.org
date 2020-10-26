@@ -36,6 +36,8 @@
 - *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+** General Comments
+
 ** Obligations
 
 | Rights:            | Conditions:           | Limitations:   |

@@ -6,6 +6,14 @@
         "Condor Public License 1.1"
     ],
     "__impliedId": "Condor-1.1",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released 30 October 2003"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -65,13 +73,12 @@
                     "Condor-1.1"
                 ],
                 "__impliedId": "Condor-1.1",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released 30 October 2003"
-                        }
+                        [
+                            "Per SPDX.org, this license was released 30 October 2003"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -140,13 +147,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released 30 October 2003"
             }
         ]
     ],

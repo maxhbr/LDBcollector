@@ -12,6 +12,9 @@ Adobe Glyph List License (Adobe-Glyph)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

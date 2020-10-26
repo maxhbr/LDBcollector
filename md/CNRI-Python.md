@@ -22,6 +22,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “per SPDX.org, CNRI portion of the multi-part Python License
     (Python-2.0)” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.yml "Scancode"))
@@ -82,6 +85,14 @@ Raw Data
             "License :: OSI Approved :: Python License (CNRI Python License)"
         ],
         "__impliedId": "CNRI-Python",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -173,13 +184,12 @@ Raw Data
                         "CNRI-Python"
                     ],
                     "__impliedId": "CNRI-Python",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
-                            }
+                            [
+                                "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -323,13 +333,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "per SPDX.org, CNRI portion of the multi-part Python License (Python-2.0)"
                 }
             ]
         ],

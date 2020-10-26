@@ -12,6 +12,9 @@ CeCILL Free Software License Agreement v1.0 (CECILL-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

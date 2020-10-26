@@ -6,6 +6,14 @@
         "CeCILL 2.0"
     ],
     "__impliedId": "CECILL-2.0",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -57,13 +65,12 @@
                     "CECILL-2.0"
                 ],
                 "__impliedId": "CECILL-2.0",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
-                        }
+                        [
+                            "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -83,15 +90,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

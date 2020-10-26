@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+General Comments
+----------------
+
 -   “per SPDX.org, same as 1.0, but changes name from Sun to Oracle in
     section 4.1 and adds patent infringement termination clause (section
     6.3) ” (source:
@@ -131,6 +134,14 @@ Raw Data
             "CDDL 1.1"
         ],
         "__impliedId": "CDDL-1.1",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "per SPDX.org, same as 1.0, but changes name from Sun to Oracle in section\n4.1 and adds patent infringement termination clause (section 6.3)\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -189,13 +200,12 @@ Raw Data
                         "CDDL-1.1"
                     ],
                     "__impliedId": "CDDL-1.1",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "per SPDX.org, same as 1.0, but changes name from Sun to Oracle in section\n4.1 and adds patent infringement termination clause (section 6.3)\n"
-                            }
+                            [
+                                "per SPDX.org, same as 1.0, but changes name from Sun to Oracle in section\n4.1 and adds patent infringement termination clause (section 6.3)\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -348,13 +358,6 @@ Raw Data
                 {
                     "tag": "NeutralJudgement",
                     "contents": "Google Classification is RECIPROCAL"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "per SPDX.org, same as 1.0, but changes name from Sun to Oracle in section\n4.1 and adds patent infringement termination clause (section 6.3)\n"
                 }
             ]
         ],

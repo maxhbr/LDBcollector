@@ -12,6 +12,9 @@ Yahoo! Public License v1.1 (YPL-1.1)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

@@ -12,6 +12,9 @@ Zimbra Public License v1.3 (Zimbra-1.3)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

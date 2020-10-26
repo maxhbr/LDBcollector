@@ -7,6 +7,14 @@
         "scancode://historical-sell-variant"
     ],
     "__impliedId": "HPND-sell-variant",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "this is actually the same as the x11-keith-packard"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -82,15 +90,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "this is actually the same as the x11-keith-packard"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

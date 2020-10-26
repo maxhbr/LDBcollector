@@ -10,13 +10,16 @@ Net Boolean Public License v1 (NBPL-1.0)
 Comments on (easy) usability
 ----------------------------
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 22 August 1998. This
     license was issued twice, but only with formatting differences. ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nbpl-1.0.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -194,6 +197,14 @@ Raw Data
             "scancode://nbpl-1.0"
         ],
         "__impliedId": "NBPL-1.0",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 22 August 1998. This license was\nissued twice, but only with formatting differences.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -255,13 +266,12 @@ Raw Data
                         "NBPL-1.0"
                     ],
                     "__impliedId": "NBPL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 22 August 1998. This license was\nissued twice, but only with formatting differences.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 22 August 1998. This license was\nissued twice, but only with formatting differences.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -322,13 +332,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 22 August 1998. This license was\nissued twice, but only with formatting differences.\n"
                 }
             ]
         ],

@@ -21,13 +21,16 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   “This license is OSI certified” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpsl-1.0.yml "Scancode"))
-
 -   **↓**“This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+General Comments
+----------------
+
+-   “This license is OSI certified” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpsl-1.0.yml "Scancode"))
 
 URLs
 ----
@@ -582,6 +585,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "RealNetworks Public Source License (RPSL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "This license is OSI certified"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -704,13 +715,12 @@ Raw Data
                         "RPSL-1.0"
                     ],
                     "__impliedId": "RPSL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "This license is OSI certified"
-                            }
+                            [
+                                "This license is OSI certified"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -849,13 +859,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "This license is OSI certified"
                 }
             ]
         ],

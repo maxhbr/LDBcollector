@@ -22,12 +22,15 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Artistic-1.0-cl8.html "SPDX"))
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was superseded by v2.0 This is Artistic
     License 1.0 as found on OSI site, including clause 8. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0-cl8.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -165,6 +168,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Artistic License"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -228,13 +239,12 @@ Raw Data
                         "Artistic-1.0-cl8"
                     ],
                     "__impliedId": "Artistic-1.0-cl8",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -345,13 +355,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was superseded by v2.0 This is Artistic License\n1.0 as found on OSI site, including clause 8.\n"
                 }
             ]
         ],

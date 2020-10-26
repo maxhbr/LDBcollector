@@ -25,6 +25,8 @@
 - *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/CECILL-2.1.html][SPDX]])
 
+** General Comments
+
 ** URLs
 
 - *Homepage:*

@@ -17,12 +17,15 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AAL.html "SPDX"))
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this version was released 2002 This license is OSI
     certifified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/attribution.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -104,6 +107,14 @@ Raw Data
             "Attribution Assurance Licenses"
         ],
         "__impliedId": "AAL",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -194,13 +205,12 @@ Raw Data
                         "AAL"
                     ],
                     "__impliedId": "AAL",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n"
-                            }
+                            [
+                                "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -344,13 +354,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this version was released 2002 This license is OSI\ncertifified.\n"
                 }
             ]
         ],

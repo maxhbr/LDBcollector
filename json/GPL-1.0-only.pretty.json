@@ -12,6 +12,14 @@
     "__impliedAmbiguousNames": [
         "The GNU General Public License (GPL)"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released February 1989."
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -66,13 +74,12 @@
                     "GPL-1.0-only"
                 ],
                 "__impliedId": "GPL-1.0-only",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released February 1989."
-                        }
+                        [
+                            "Per SPDX.org, this license was released February 1989."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -178,13 +185,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Google Classification is RESTRICTED"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released February 1989."
             }
         ]
     ],

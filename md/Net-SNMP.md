@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “composite” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/net-snmp.yml "Scancode"))
 
@@ -287,6 +290,14 @@ Raw Data
             "Net SNMP License"
         ],
         "__impliedId": "Net-SNMP",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "composite"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -338,13 +349,12 @@ Raw Data
                         "Net-SNMP"
                     ],
                     "__impliedId": "Net-SNMP",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "composite"
-                            }
+                            [
+                                "composite"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -405,13 +415,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "composite"
                 }
             ]
         ],

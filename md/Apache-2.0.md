@@ -49,6 +49,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this version was released January 2004 This license
     is OSI certified ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml "Scancode"))
@@ -352,6 +355,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "The Apache Software License (ASL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n"
+                ]
+            ]
+        ],
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -459,13 +470,12 @@ Raw Data
                         "Apache-2.0"
                     ],
                     "__impliedId": "Apache-2.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n"
-                            }
+                            [
+                                "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -908,13 +918,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this version was released January 2004 This license is OSI\ncertified\n"
                 }
             ],
             [

@@ -9,6 +9,14 @@
     ],
     "__impliedId": "OpenSSL",
     "__isFsfFree": true,
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n"
+            ]
+        ]
+    ],
     "__hasPatentHint": false,
     "facts": {
         "SPDX": {
@@ -104,13 +112,12 @@
                     "scancode://openssl",
                     "OpenSSL License"
                 ],
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n"
-                        }
+                        [
+                            "This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -324,13 +331,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is NOTICE"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n"
             }
         ]
     ],

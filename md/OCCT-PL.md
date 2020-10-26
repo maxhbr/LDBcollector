@@ -10,6 +10,9 @@ Open CASCADE Technology Public License (OCCT-PL)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

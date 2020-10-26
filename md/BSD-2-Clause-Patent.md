@@ -18,6 +18,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Gold” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per the OSI, this license is designed to provide a) a simple
     permissive license; b) that is compatible with the GNU General
     Public License (GPL), version 2; and c) which also has an express
@@ -114,6 +117,14 @@ Raw Data
             "BSD-2-Clause Plus Patent"
         ],
         "__impliedId": "BSD-2-Clause-Patent",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per the OSI, this license is designed to provide a) a simple permissive\nlicense; b) that is compatible with the GNU General Public License (GPL),\nversion 2; and c) which also has an express patent grant included.\n"
+                ]
+            ]
+        ],
         "__hasPatentHint": true,
         "facts": {
             "SPDX": {
@@ -186,13 +197,12 @@ Raw Data
                         "BSD-2-Clause-Patent"
                     ],
                     "__impliedId": "BSD-2-Clause-Patent",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per the OSI, this license is designed to provide a) a simple permissive\nlicense; b) that is compatible with the GNU General Public License (GPL),\nversion 2; and c) which also has an express patent grant included.\n"
-                            }
+                            [
+                                "Per the OSI, this license is designed to provide a) a simple permissive\nlicense; b) that is compatible with the GNU General Public License (GPL),\nversion 2; and c) which also has an express patent grant included.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -279,13 +289,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per the OSI, this license is designed to provide a) a simple permissive\nlicense; b) that is compatible with the GNU General Public License (GPL),\nversion 2; and c) which also has an express patent grant included.\n"
                 }
             ]
         ],

@@ -10,6 +10,9 @@ Norwegian Licence for Open Government Data (NLOD-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

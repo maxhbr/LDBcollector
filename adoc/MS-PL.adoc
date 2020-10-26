@@ -43,6 +43,9 @@ verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen.''
 (source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
+
+=== General Comments
+
 * ``also known as Microsoft Permissive License (Ms-PL) v1.1'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml[Scancode])
 
@@ -187,6 +190,14 @@ non-infringement.
     ],
     "__impliedId": "MS-PL",
     "__isFsfFree": true,
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "also known as Microsoft Permissive License (Ms-PL) v1.1"
+            ]
+        ]
+    ],
     "__hasPatentHint": true,
     "facts": {
         "Open Knowledge International": {
@@ -329,13 +340,12 @@ non-infringement.
                     "MS-PL"
                 ],
                 "__impliedId": "MS-PL",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "also known as Microsoft Permissive License (Ms-PL) v1.1"
-                        }
+                        [
+                            "also known as Microsoft Permissive License (Ms-PL) v1.1"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -733,13 +743,6 @@ non-infringement.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "also known as Microsoft Permissive License (Ms-PL) v1.1"
             }
         ],
         [

@@ -12,6 +12,9 @@ Red Hat eCos Public License v1.1 (RHeCos-1.1)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

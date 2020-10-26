@@ -10,6 +10,9 @@ psfrag License (psfrag)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per Fedora, this license is considered Free, but GPL-incompatible
     only when used for TeX files. In all other use cases, this may not
     be true. ” (source:
@@ -43,6 +46,14 @@ Raw Data
             "scancode://psfrag"
         ],
         "__impliedId": "psfrag",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -94,13 +105,12 @@ Raw Data
                         "psfrag"
                     ],
                     "__impliedId": "psfrag",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
-                            }
+                            [
+                                "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -120,15 +130,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

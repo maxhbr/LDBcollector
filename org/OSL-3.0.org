@@ -32,12 +32,14 @@
 - *↑*"Is OSI Approved" (source:
   [[https://spdx.org/licenses/OSL-3.0.html][SPDX]])
 
-- "Per SPDX.org, this license is OSI certified." (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-3.0.yml][Scancode]])
-
 - *↓*"Google Classification is RESTRICTED" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
+
+** General Comments
+
+- "Per SPDX.org, this license is OSI certified." (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-3.0.yml][Scancode]])
 
 ** Obligations
 
@@ -197,6 +199,14 @@
           "Open Software License, Version 3.0"
       ],
       "__impliedId": "OSL-3.0",
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "Per SPDX.org, this license is OSI certified."
+              ]
+          ]
+      ],
       "__hasPatentHint": true,
       "facts": {
           "Open Knowledge International": {
@@ -314,13 +324,12 @@
                       "OSL-3.0"
                   ],
                   "__impliedId": "OSL-3.0",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "Per SPDX.org, this license is OSI certified."
-                          }
+                          [
+                              "Per SPDX.org, this license is OSI certified."
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -591,13 +600,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
-              }
-          ],
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "Per SPDX.org, this license is OSI certified."
               }
           ]
       ],

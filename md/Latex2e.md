@@ -10,6 +10,9 @@ Latex2e License (Latex2e)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “the latext2e, verbatim-manual and abstyles are similar licenses”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml "Scancode"))
@@ -48,6 +51,14 @@ Raw Data
             "scancode://latex2e"
         ],
         "__impliedId": "Latex2e",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "the latext2e, verbatim-manual and abstyles are similar licenses"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -99,13 +110,12 @@ Raw Data
                         "Latex2e"
                     ],
                     "__impliedId": "Latex2e",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
-                            }
+                            [
+                                "the latext2e, verbatim-manual and abstyles are similar licenses"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -125,15 +135,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

@@ -10,6 +10,9 @@ CERN Open Hardware License v1.1 (CERN-OHL-1.1)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

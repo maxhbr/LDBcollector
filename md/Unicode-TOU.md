@@ -10,6 +10,9 @@ Unicode Terms of Use (Unicode-TOU)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

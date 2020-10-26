@@ -6,6 +6,14 @@
         "bzip2 License 2010"
     ],
     "__impliedId": "bzip2-1.0.6",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -69,13 +77,12 @@
                     "bzip2-1.0.6"
                 ],
                 "__impliedId": "bzip2-1.0.6",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
-                        }
+                        [
+                            "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -140,13 +147,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
             }
         ]
     ],

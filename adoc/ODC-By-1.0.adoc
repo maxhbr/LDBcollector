@@ -16,6 +16,8 @@
 
 === Comments on (easy) usability
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* https://opendatacommons.org/licenses/by/

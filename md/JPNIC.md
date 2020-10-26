@@ -12,6 +12,9 @@ Japan Network Information Center License (JPNIC)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

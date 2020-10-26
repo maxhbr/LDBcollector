@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per Fedora, this license is based on MIT, but contains additional
     clauses which make it more than a simple MIT variant, notably, the
     requirement of statement of new terms of contributions under a
@@ -78,6 +81,14 @@ Raw Data
             "FastCGI DevKit"
         ],
         "__impliedId": "OML",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this license is based on MIT, but contains additional clauses\nwhich make it more than a simple MIT variant, notably, the requirement of\nstatement of new terms of contributions under a different license. For that\nreason, this license is Free, but GPL-incompatible.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -129,13 +140,12 @@ Raw Data
                         "OML"
                     ],
                     "__impliedId": "OML",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this license is based on MIT, but contains additional clauses\nwhich make it more than a simple MIT variant, notably, the requirement of\nstatement of new terms of contributions under a different license. For that\nreason, this license is Free, but GPL-incompatible.\n"
-                            }
+                            [
+                                "Per Fedora, this license is based on MIT, but contains additional clauses\nwhich make it more than a simple MIT variant, notably, the requirement of\nstatement of new terms of contributions under a different license. For that\nreason, this license is Free, but GPL-incompatible.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -196,13 +206,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this license is based on MIT, but contains additional clauses\nwhich make it more than a simple MIT variant, notably, the requirement of\nstatement of new terms of contributions under a different license. For that\nreason, this license is Free, but GPL-incompatible.\n"
                 }
             ]
         ],

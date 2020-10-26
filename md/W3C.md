@@ -29,6 +29,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 13 December 2002. This
     license is OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml "Scancode"))
@@ -107,6 +110,14 @@ Raw Data
             "W3C License"
         ],
         "__impliedId": "W3C",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
+                ]
+            ]
+        ],
         "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
@@ -205,13 +216,12 @@ Raw Data
                         "W3C"
                     ],
                     "__impliedId": "W3C",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -416,13 +426,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
                 }
             ]
         ],

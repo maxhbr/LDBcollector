@@ -17,11 +17,14 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/NASA-1.3.html "SPDX"))
 
--   “Per SPDX.org, this license is OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.yml "Scancode"))
-
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license is OSI certified.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.yml "Scancode"))
 
 URLs
 ----
@@ -163,6 +166,14 @@ Raw Data
             "NASA Open Source Agreement, Version 1.3"
         ],
         "__impliedId": "NASA-1.3",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -260,13 +271,12 @@ Raw Data
                         "NASA-1.3"
                     ],
                     "__impliedId": "NASA-1.3",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certified."
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -408,13 +418,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

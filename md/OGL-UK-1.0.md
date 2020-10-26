@@ -12,6 +12,9 @@ Open Government Licence v1.0 (OGL-UK-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

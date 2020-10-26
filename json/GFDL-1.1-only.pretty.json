@@ -9,6 +9,14 @@
     "__impliedAmbiguousNames": [
         "GNU Free Documentation License (GFDL)"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released March 2000"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -64,13 +72,12 @@
                     "GFDL-1.1-only"
                 ],
                 "__impliedId": "GFDL-1.1-only",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released March 2000"
-                        }
+                        [
+                            "Per SPDX.org, this license was released March 2000"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -132,13 +139,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Exception: Data licensed under the FDL with no invariant sections are considered DFSG-free as of GR 2006-001: http://www.debian.org/vote/2006/vote_001#outcome"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released March 2000"
             }
         ]
     ],

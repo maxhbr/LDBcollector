@@ -36,6 +36,8 @@ Policy])
 DebianFreeSoftwareGuidelines (DFSG-free)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
+=== General Comments
+
 === Obligations
 
 [cols=",,",options="header",]

@@ -10,6 +10,12 @@ diffmark license (diffmark)
 Comments on (easy) usability
 ----------------------------
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per Fedora, this extremely minimal and permissive license was found
     in diffmark (0.08). While poorly written, our interpretation of the
     text permits use, modification, and distribution. It also permits
@@ -20,9 +26,6 @@ Comments on (easy) usability
     (albeit, poorly). This license is Free, and GPL compatible. ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -52,6 +55,14 @@ Raw Data
             "diffmark License"
         ],
         "__impliedId": "diffmark",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -103,13 +114,12 @@ Raw Data
                         "diffmark"
                     ],
                     "__impliedId": "diffmark",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n"
-                            }
+                            [
+                                "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -170,13 +180,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n"
                 }
             ]
         ],

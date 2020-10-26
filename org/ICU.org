@@ -32,6 +32,8 @@
   weiterverbreiten, also auch in proprietäre Software überführen."
   (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://www.xfree86.org/current/LICENSE5.html

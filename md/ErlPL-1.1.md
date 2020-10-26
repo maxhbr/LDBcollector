@@ -12,6 +12,9 @@ Erlang Public License v1.1 (ErlPL-1.1)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

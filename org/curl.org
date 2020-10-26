@@ -24,6 +24,8 @@
   weiterverbreiten, also auch in proprietäre Software überführen."
   (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://curl.haxx.se/

@@ -12,6 +12,9 @@ CeCILL Free Software License Agreement v2.0 (CECILL-2.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “per SPDX.org, English translation can be found here
     http://www.cecill.info/licences/Licence\_CeCILL\_V2-en.html ”
     (source:
@@ -547,6 +550,14 @@ Raw Data
             "CeCILL 2.0"
         ],
         "__impliedId": "CECILL-2.0",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -598,13 +609,12 @@ Raw Data
                         "CECILL-2.0"
                     ],
                     "__impliedId": "CECILL-2.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
-                            }
+                            [
+                                "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -624,15 +634,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "per SPDX.org, English translation can be found here\nhttp://www.cecill.info/licences/Licence_CeCILL_V2-en.html\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

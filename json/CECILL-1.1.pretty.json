@@ -6,6 +6,14 @@
         "CeCILL 1.1 English"
     ],
     "__impliedId": "CECILL-1.1",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -59,13 +67,12 @@
                     "CECILL-1.1"
                 ],
                 "__impliedId": "CECILL-1.1",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
-                        }
+                        [
+                            "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -89,15 +96,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -12,6 +12,9 @@ Netizen Open Source License (NOSL)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

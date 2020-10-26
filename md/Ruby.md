@@ -16,6 +16,9 @@ Comments on (easy) usability
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+General Comments
+----------------
+
 -   “This version of the Ruby license is the latest found in the dual
     license COPYING dated from 2010-09-15 Per SPDX.org, Ruby is
     disjunctively licensed project that allows the choice of this
@@ -106,6 +109,14 @@ Raw Data
             "scancode://ruby"
         ],
         "__impliedId": "Ruby",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -159,13 +170,12 @@ Raw Data
                         "Ruby"
                     ],
                     "__impliedId": "Ruby",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n"
-                            }
+                            [
+                                "This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -256,13 +266,6 @@ Raw Data
                 {
                     "tag": "NeutralJudgement",
                     "contents": "Google Classification is RECIPROCAL"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n"
                 }
             ]
         ],

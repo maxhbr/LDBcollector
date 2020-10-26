@@ -14,6 +14,9 @@ BitTorrent Open Source License v1.1 (BitTorrent-1.1)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “The link http://www.bittorrent.com/license/ is dead, so there is no
     live text containing the license terms except at
     http://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license
@@ -189,6 +192,14 @@ Raw Data
             "BitTorrent Open Source License 1.1"
         ],
         "__impliedId": "BitTorrent-1.1",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "The link http://www.bittorrent.com/license/ is dead, so there is no live\ntext containing the license terms except at\nhttp://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -269,13 +280,12 @@ Raw Data
                         "BitTorrent-1.1"
                     ],
                     "__impliedId": "BitTorrent-1.1",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "The link http://www.bittorrent.com/license/ is dead, so there is no live\ntext containing the license terms except at\nhttp://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license\n"
-                            }
+                            [
+                                "The link http://www.bittorrent.com/license/ is dead, so there is no live\ntext containing the license terms except at\nhttp://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -299,15 +309,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "The link http://www.bittorrent.com/license/ is dead, so there is no live\ntext containing the license terms except at\nhttp://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

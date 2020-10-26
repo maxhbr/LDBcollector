@@ -30,6 +30,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 4 May 2008 This license is
     OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3c.yml "Scancode"))
@@ -490,6 +493,14 @@ Raw Data
             "LaTeX Project Public License 1.3c"
         ],
         "__impliedId": "LPPL-1.3c",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 4 May 2008 This license is OSI\ncertified.\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -585,13 +596,12 @@ Raw Data
                         "LPPL-1.3c"
                     ],
                     "__impliedId": "LPPL-1.3c",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 4 May 2008 This license is OSI\ncertified.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 4 May 2008 This license is OSI\ncertified.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -808,13 +818,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 4 May 2008 This license is OSI\ncertified.\n"
                 }
             ]
         ],

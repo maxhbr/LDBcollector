@@ -23,6 +23,14 @@
             }
         ]
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -114,13 +122,12 @@
                     "BSD-4-Clause"
                 ],
                 "__impliedId": "BSD-4-Clause",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
-                        }
+                        [
+                            "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -376,13 +383,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
             }
         ],
         [

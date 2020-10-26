@@ -9,6 +9,14 @@
     "__impliedAmbiguousNames": [
         "Apple Public Source License (APSL)"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -73,13 +81,12 @@
                     "APSL-1.2"
                 ],
                 "__impliedId": "APSL-1.2",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
-                        }
+                        [
+                            "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -152,13 +159,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
             }
         ]
     ],

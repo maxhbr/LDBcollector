@@ -20,6 +20,8 @@
 - *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* ftp://ftp.porcupine.org/pub/security/tcp_wrappers_license

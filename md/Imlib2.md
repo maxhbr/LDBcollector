@@ -10,6 +10,9 @@ Imlib2 License (Imlib2)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

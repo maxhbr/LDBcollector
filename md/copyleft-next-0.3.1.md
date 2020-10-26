@@ -10,6 +10,9 @@ copyleft-next 0.3.1 (copyleft-next-0.3.1)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

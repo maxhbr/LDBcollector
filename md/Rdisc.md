@@ -10,12 +10,15 @@ Rdisc License (Rdisc)
 Comments on (easy) usability
 ----------------------------
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per Fedora, this is a permissive style license from Sun, Free and
     GPL compatible. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -52,6 +55,14 @@ Raw Data
             "scancode://rdisc"
         ],
         "__impliedId": "Rdisc",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -103,13 +114,12 @@ Raw Data
                         "Rdisc"
                     ],
                     "__impliedId": "Rdisc",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n"
-                            }
+                            [
+                                "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -170,13 +180,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n"
                 }
             ]
         ],

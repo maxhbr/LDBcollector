@@ -12,6 +12,9 @@ LaTeX Project Public License v1.2 (LPPL-1.2)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 3 Sept 1999.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.2.yml "Scancode"))
 
@@ -341,6 +344,14 @@ Raw Data
             "LPPL 1.2"
         ],
         "__impliedId": "LPPL-1.2",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 3 Sept 1999."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -392,13 +403,12 @@ Raw Data
                         "LPPL-1.2"
                     ],
                     "__impliedId": "LPPL-1.2",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 3 Sept 1999."
-                            }
+                            [
+                                "Per SPDX.org, this license was released 3 Sept 1999."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -418,15 +428,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 3 Sept 1999."
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

@@ -12,6 +12,9 @@ BitTorrent Open Source License v1.0 (BitTorrent-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

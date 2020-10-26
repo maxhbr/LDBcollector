@@ -9,6 +9,14 @@
         "Sleepycat Software Product License"
     ],
     "__impliedId": "Sleepycat",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified"
+            ]
+        ]
+    ],
     "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
@@ -101,13 +109,12 @@
                     "Sleepycat"
                 ],
                 "__impliedId": "Sleepycat",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified"
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -303,13 +310,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified"
             }
         ]
     ],

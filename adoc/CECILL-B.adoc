@@ -16,10 +16,13 @@
 
 === Comments on (easy) usability
 
-* ``The primary text is in French.'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml[Scancode])
 * **↓**``Rating is: Lead'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
+* ``The primary text is in French.'' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml[Scancode])
 
 === URLs
 
@@ -293,6 +296,14 @@ Version 1.0 du 2006-09-05."
         "CeCILL-B License"
     ],
     "__impliedId": "CECILL-B",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "The primary text is in French."
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -347,13 +358,12 @@ Version 1.0 du 2006-09-05."
                     "CECILL-B"
                 ],
                 "__impliedId": "CECILL-B",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "The primary text is in French."
-                        }
+                        [
+                            "The primary text is in French."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -422,13 +432,6 @@ Version 1.0 du 2006-09-05."
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "The primary text is in French."
             }
         ]
     ],

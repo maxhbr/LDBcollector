@@ -17,12 +17,15 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EFL-1.0.html "SPDX"))
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was OSI certified. This license has been
     superseded by v2.0 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-1.0.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -80,6 +83,14 @@ Raw Data
             "The Eiffel Forum License, Version 1"
         ],
         "__impliedId": "EFL-1.0",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -148,13 +159,12 @@ Raw Data
                         "EFL-1.0"
                     ],
                     "__impliedId": "EFL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -283,13 +293,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was OSI certified. This license has been\nsuperseded by v2.0\n"
                 }
             ]
         ],

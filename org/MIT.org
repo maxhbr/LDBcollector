@@ -60,6 +60,8 @@
   on the OSI site is the same as the Expat License. " (source:
   [[https://opensource.org/licenses/][OpenSourceInitiative]])
 
+** General Comments
+
 - "Per SPDX.org, this license is OSI certified." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml][Scancode]])
 
@@ -150,6 +152,14 @@
       "__impliedId": "MIT",
       "__impliedAmbiguousNames": [
           "The MIT License"
+      ],
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "Per SPDX.org, this license is OSI certified."
+              ]
+          ]
       ],
       "__hasPatentHint": false,
       "facts": {
@@ -252,13 +262,12 @@
                       "MIT"
                   ],
                   "__impliedId": "MIT",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "Per SPDX.org, this license is OSI certified."
-                          }
+                          [
+                              "Per SPDX.org, this license is OSI certified."
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -699,13 +708,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
-              }
-          ],
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "Per SPDX.org, this license is OSI certified."
               }
           ],
           [

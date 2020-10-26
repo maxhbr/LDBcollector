@@ -17,6 +17,9 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/RPL-1.5.html "SPDX"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released 15 July 2007 This license
     is OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.5.yml "Scancode"))
@@ -269,6 +272,14 @@ Raw Data
             "Reciprocal Public License, Version 1.5"
         ],
         "__impliedId": "RPL-1.5",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 15 July 2007 This license is OSI\ncertified.\n"
+                ]
+            ]
+        ],
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -379,13 +390,12 @@ Raw Data
                         "RPL-1.5"
                     ],
                     "__impliedId": "RPL-1.5",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 15 July 2007 This license is OSI\ncertified.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 15 July 2007 This license is OSI\ncertified.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -484,13 +494,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 15 July 2007 This license is OSI\ncertified.\n"
                 }
             ]
         ],

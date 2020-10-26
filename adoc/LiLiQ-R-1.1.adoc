@@ -19,6 +19,8 @@
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/LiLiQ-R-1.1.html[SPDX])
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* https://opensource.org/licenses/LiLiQ-R-1.1

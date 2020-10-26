@@ -16,6 +16,8 @@
 - *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://www.info-zip.org/doc/

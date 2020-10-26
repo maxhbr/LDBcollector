@@ -6,6 +6,14 @@
         "Allegro 4 License"
     ],
     "__impliedId": "Giftware",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license may also be known as Allegro 4. The Allegro 5\nlicense shown at the alleg.sourceforge.net URL is the same as zlib.\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -59,13 +67,12 @@
                     "Giftware"
                 ],
                 "__impliedId": "Giftware",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license may also be known as Allegro 4. The Allegro 5\nlicense shown at the alleg.sourceforge.net URL is the same as zlib.\n"
-                        }
+                        [
+                            "Per SPDX.org, this license may also be known as Allegro 4. The Allegro 5\nlicense shown at the alleg.sourceforge.net URL is the same as zlib.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -130,13 +137,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license may also be known as Allegro 4. The Allegro 5\nlicense shown at the alleg.sourceforge.net URL is the same as zlib.\n"
             }
         ]
     ],

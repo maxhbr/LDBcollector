@@ -18,6 +18,9 @@ Comments on (easy) usability
     (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+General Comments
+----------------
+
 URLs
 ----
 

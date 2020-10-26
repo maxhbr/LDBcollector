@@ -5,6 +5,14 @@
         "scancode://multics"
     ],
     "__impliedId": "Multics",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified."
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -95,13 +103,12 @@
                     "Multics"
                 ],
                 "__impliedId": "Multics",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified."
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -240,13 +247,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

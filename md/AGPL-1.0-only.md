@@ -16,6 +16,9 @@ Affero General Public License v1.0 only (AGPL-1.0-only)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

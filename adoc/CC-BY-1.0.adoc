@@ -23,6 +23,8 @@ Policy])
 discussion between debian-legal and cc-licenses.'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* http://creativecommons.org/licenses/by/1.0/

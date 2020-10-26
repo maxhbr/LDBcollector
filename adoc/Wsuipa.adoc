@@ -15,11 +15,14 @@
 
 === Comments on (easy) usability
 
+* **↓**``Rating is: Lead'' (source:
+https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
 * ``Per Fedora, this license was found on the "wsuipa" component of
 texlive 2010. It is Free, but GPL-incompatible. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml[Scancode])
-* **↓**``Rating is: Lead'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
 
 === URLs
 
@@ -53,6 +56,14 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
         "scancode://wsuipa"
     ],
     "__impliedId": "Wsuipa",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -104,13 +115,12 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
                     "Wsuipa"
                 ],
                 "__impliedId": "Wsuipa",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
-                        }
+                        [
+                            "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -171,13 +181,6 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
             }
         ]
     ],

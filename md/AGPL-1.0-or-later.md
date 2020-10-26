@@ -12,6 +12,9 @@ Affero General Public License v1.0 or later (AGPL-1.0-or-later)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “per SPDX.org Section 9 of this license allows content under this
     any later version grant to be redistributed under the
     GPL-3.0-or-later. Affero Inc. also released an AGPL-2.0
@@ -51,6 +54,14 @@ Raw Data
             "AGPL 1.0 or later"
         ],
         "__impliedId": "AGPL-1.0-or-later",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "per SPDX.org Section 9 of this license allows content under this any later\nversion grant to be redistributed under the GPL-3.0-or-later. Affero Inc.\nalso released an AGPL-2.0 (http://www.affero.org/agpl2.html) to allow\nAGPL-1.0-or-later work to be distributed under the AGPL-3.0-or-later.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -102,13 +113,12 @@ Raw Data
                         "AGPL-1.0-or-later"
                     ],
                     "__impliedId": "AGPL-1.0-or-later",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "per SPDX.org Section 9 of this license allows content under this any later\nversion grant to be redistributed under the GPL-3.0-or-later. Affero Inc.\nalso released an AGPL-2.0 (http://www.affero.org/agpl2.html) to allow\nAGPL-1.0-or-later work to be distributed under the AGPL-3.0-or-later.\n"
-                            }
+                            [
+                                "per SPDX.org Section 9 of this license allows content under this any later\nversion grant to be redistributed under the GPL-3.0-or-later. Affero Inc.\nalso released an AGPL-2.0 (http://www.affero.org/agpl2.html) to allow\nAGPL-1.0-or-later work to be distributed under the AGPL-3.0-or-later.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -128,15 +138,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "per SPDX.org Section 9 of this license allows content under this any later\nversion grant to be redistributed under the GPL-3.0-or-later. Affero Inc.\nalso released an AGPL-2.0 (http://www.affero.org/agpl2.html) to allow\nAGPL-1.0-or-later work to be distributed under the AGPL-3.0-or-later.\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

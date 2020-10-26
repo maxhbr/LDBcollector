@@ -10,6 +10,9 @@ Sax Public Domain Notice (SAX-PD)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

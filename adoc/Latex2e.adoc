@@ -15,6 +15,8 @@
 
 === Comments on (easy) usability
 
+=== General Comments
+
 * ``the latext2e, verbatim-manual and abstyles are similar licenses''
 (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml[Scancode])
@@ -52,6 +54,14 @@ into another language, under the above conditions for modified versions.
         "scancode://latex2e"
     ],
     "__impliedId": "Latex2e",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "the latext2e, verbatim-manual and abstyles are similar licenses"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -103,13 +113,12 @@ into another language, under the above conditions for modified versions.
                     "Latex2e"
                 ],
                 "__impliedId": "Latex2e",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
-                        }
+                        [
+                            "the latext2e, verbatim-manual and abstyles are similar licenses"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -129,15 +138,6 @@ into another language, under the above conditions for modified versions.
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

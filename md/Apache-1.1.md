@@ -34,6 +34,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license is OSI certified. This license has been
     superseded by Apache 2.0 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml "Scancode"))
@@ -144,6 +147,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "The Apache Software License (ASL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -249,13 +260,12 @@ Raw Data
                         "Apache-1.1"
                     ],
                     "__impliedId": "Apache-1.1",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n"
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -525,13 +535,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certified. This license has been\nsuperseded by Apache 2.0\n"
                 }
             ]
         ],

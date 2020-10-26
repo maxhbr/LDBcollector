@@ -16,6 +16,8 @@
 - *↑*"Rating is: Silver" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://www.freebsd.org/copyright/freebsd-license.html

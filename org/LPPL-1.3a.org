@@ -15,6 +15,8 @@
 
 ** Comments on (easy) usability
 
+** General Comments
+
 - "Per SPDX.org, this license was released 1 Oct 2004" (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml][Scancode]])
 
@@ -436,6 +438,14 @@
           "LPPL 1.3a"
       ],
       "__impliedId": "LPPL-1.3a",
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "Per SPDX.org, this license was released 1 Oct 2004"
+              ]
+          ]
+      ],
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -487,13 +497,12 @@
                       "LPPL-1.3a"
                   ],
                   "__impliedId": "LPPL-1.3a",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "Per SPDX.org, this license was released 1 Oct 2004"
-                          }
+                          [
+                              "Per SPDX.org, this license was released 1 Oct 2004"
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -513,15 +522,6 @@
               }
           }
       },
-      "__impliedJudgement": [
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "Per SPDX.org, this license was released 1 Oct 2004"
-              }
-          ]
-      ],
       "__impliedCopyleft": [
           [
               "Scancode",

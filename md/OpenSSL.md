@@ -24,6 +24,9 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+General Comments
+----------------
+
 -   “This is the OpenSSL license proper, without the SSLEay part. The
     SPDX OpenSSL identifier does not apply here. Instead it matches the
     openssl- ssleay license. ” (source:
@@ -124,6 +127,14 @@ Raw Data
         ],
         "__impliedId": "OpenSSL",
         "__isFsfFree": true,
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n"
+                ]
+            ]
+        ],
         "__hasPatentHint": false,
         "facts": {
             "SPDX": {
@@ -219,13 +230,12 @@ Raw Data
                         "scancode://openssl",
                         "OpenSSL License"
                     ],
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n"
-                            }
+                            [
+                                "This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -439,13 +449,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Google Classification is NOTICE"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n"
                 }
             ]
         ],

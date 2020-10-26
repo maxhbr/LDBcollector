@@ -14,6 +14,9 @@ ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

@@ -10,6 +10,9 @@ dvipdfm License (dvipdfm)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per Fedora, "should" does not mean "must", and there are implied
     rights for unlimited copying and distribution rights for unmodified
     versions. ” (source:
@@ -41,6 +44,14 @@ Raw Data
             "scancode://dvipdfm"
         ],
         "__impliedId": "dvipdfm",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -92,13 +103,12 @@ Raw Data
                         "dvipdfm"
                     ],
                     "__impliedId": "dvipdfm",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
-                            }
+                            [
+                                "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -118,15 +128,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

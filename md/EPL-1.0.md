@@ -35,6 +35,9 @@ Comments on (easy) usability
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license is OSI certifified EPL replaced the CPL
     on 28 June 2005. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epl-1.0.yml "Scancode"))
@@ -224,6 +227,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Eclipse Public License - 1.0"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certifified EPL replaced the CPL on 28\nJune 2005.\n"
+                ]
+            ]
+        ],
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -338,13 +349,12 @@ Raw Data
                         "EPL-1.0"
                     ],
                     "__impliedId": "EPL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certifified EPL replaced the CPL on 28\nJune 2005.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certifified EPL replaced the CPL on 28\nJune 2005.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -685,13 +695,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certifified EPL replaced the CPL on 28\nJune 2005.\n"
                 }
             ]
         ],

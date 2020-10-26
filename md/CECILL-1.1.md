@@ -12,6 +12,9 @@ CeCILL Free Software License Agreement v1.1 (CECILL-1.1)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per SPDX.org, there is only an English version for 1.1, which
     includes some wording changes from v1.0 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml "Scancode"))
@@ -542,6 +545,14 @@ Raw Data
             "CeCILL 1.1 English"
         ],
         "__impliedId": "CECILL-1.1",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -595,13 +606,12 @@ Raw Data
                         "CECILL-1.1"
                     ],
                     "__impliedId": "CECILL-1.1",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
-                            }
+                            [
+                                "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -625,15 +635,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, there is only an English version for 1.1, which includes some\nwording changes from v1.0\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

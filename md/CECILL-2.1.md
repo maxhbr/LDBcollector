@@ -21,6 +21,9 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CECILL-2.1.html "SPDX"))
 
+General Comments
+----------------
+
 URLs
 ----
 

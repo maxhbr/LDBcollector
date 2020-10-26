@@ -13,12 +13,15 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/HPND.html "SPDX"))
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this license is OSI certified. This license has been
     voluntarily deprecated by its author. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -78,6 +81,14 @@ Raw Data
             "scancode://historical"
         ],
         "__impliedId": "HPND",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -178,13 +189,12 @@ Raw Data
                         "HPND"
                     ],
                     "__impliedId": "HPND",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -323,13 +333,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
                 }
             ]
         ],

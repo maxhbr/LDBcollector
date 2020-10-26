@@ -22,14 +22,17 @@ Comments on (easy) usability
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
--   “Per SPDX.org, this version was released 6 August 2003. This license
-    is OSI certifified. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-2.0.yml "Scancode"))
-
 -   **↓**“This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this version was released 6 August 2003. This license
+    is OSI certifified. ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-2.0.yml "Scancode"))
 
 URLs
 ----
@@ -164,6 +167,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Apple Public Source License (APSL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this version was released 6 August 2003. This license is OSI\ncertifified.\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -251,13 +262,12 @@ Raw Data
                         "APSL-2.0"
                     ],
                     "__impliedId": "APSL-2.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this version was released 6 August 2003. This license is OSI\ncertifified.\n"
-                            }
+                            [
+                                "Per SPDX.org, this version was released 6 August 2003. This license is OSI\ncertifified.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -408,13 +418,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this version was released 6 August 2003. This license is OSI\ncertifified.\n"
                 }
             ]
         ],

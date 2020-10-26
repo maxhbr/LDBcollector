@@ -19,6 +19,8 @@
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://www.mozilla.org/MPL/NPL-1.0.html

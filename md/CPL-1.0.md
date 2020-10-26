@@ -29,6 +29,9 @@ Comments on (easy) usability
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was superseded by Eclipse Public
     License” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml "Scancode"))
@@ -166,6 +169,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Common Public License (CPL), Version 1.0"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was superseded by Eclipse Public License"
+                ]
+            ]
+        ],
         "__hasPatentHint": false,
         "facts": {
             "SPDX": {
@@ -234,13 +245,12 @@ Raw Data
                         "CPL-1.0"
                     ],
                     "__impliedId": "CPL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was superseded by Eclipse Public License"
-                            }
+                            [
+                                "Per SPDX.org, this license was superseded by Eclipse Public License"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -429,13 +439,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was superseded by Eclipse Public License"
                 }
             ]
         ],

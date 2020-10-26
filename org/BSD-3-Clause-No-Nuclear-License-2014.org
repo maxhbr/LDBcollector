@@ -19,6 +19,8 @@
 - *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]])
 
+** General Comments
+
 - "this is a minor variation on similar licenses by Sun and Oracle."
   (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml][Scancode]])
@@ -83,6 +85,14 @@
           "Oracle BSD-Style with Nuclear Restrictions"
       ],
       "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "this is a minor variation on similar licenses by Sun and Oracle."
+              ]
+          ]
+      ],
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -136,13 +146,12 @@
                       "BSD-3-Clause-No-Nuclear-License-2014"
                   ],
                   "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "this is a minor variation on similar licenses by Sun and Oracle."
-                          }
+                          [
+                              "this is a minor variation on similar licenses by Sun and Oracle."
+                          ]
                       ]
                   ],
                   "__impliedText": "Use is subject to license terms.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of Oracle Corporation nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nYou acknowledge that this software is not designed, licensed or intended for use\nin the design, construction, operation or maintenance of any nuclear facility.",
@@ -200,13 +209,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Rating is: Bronze"
-              }
-          ],
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "this is a minor variation on similar licenses by Sun and Oracle."
               }
           ]
       ],

@@ -26,6 +26,8 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* http://www.apache.org/licenses/

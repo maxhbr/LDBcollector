@@ -5,6 +5,14 @@
         "scancode://newsletr"
     ],
     "__impliedId": "Newsletr",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -56,13 +64,12 @@
                     "Newsletr"
                 ],
                 "__impliedId": "Newsletr",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
-                        }
+                        [
+                            "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -123,13 +130,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
             }
         ]
     ],

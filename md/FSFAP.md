@@ -14,6 +14,9 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+General Comments
+----------------
+
 -   “Per Fedora, This is a simple permissive license, created by the
     FSF. It is Free and GPL compatible. The FSF recommends it for "small
     supporting files, short manuals (under 300 lines long) and rough
@@ -54,6 +57,14 @@ Raw Data
         ],
         "__impliedId": "FSFAP",
         "__isFsfFree": true,
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, This is a simple permissive license, created by the FSF. It is\nFree and GPL compatible. The FSF recommends it for \"small supporting files,\nshort manuals (under 300 lines long) and rough documentation (README files,\nINSTALL files, etc.)\".\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -136,13 +147,12 @@ Raw Data
                         "FSFAP"
                     ],
                     "__impliedId": "FSFAP",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, This is a simple permissive license, created by the FSF. It is\nFree and GPL compatible. The FSF recommends it for \"small supporting files,\nshort manuals (under 300 lines long) and rough documentation (README files,\nINSTALL files, etc.)\".\n"
-                            }
+                            [
+                                "Per Fedora, This is a simple permissive license, created by the FSF. It is\nFree and GPL compatible. The FSF recommends it for \"small supporting files,\nshort manuals (under 300 lines long) and rough documentation (README files,\nINSTALL files, etc.)\".\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -184,13 +194,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, This is a simple permissive license, created by the FSF. It is\nFree and GPL compatible. The FSF recommends it for \"small supporting files,\nshort manuals (under 300 lines long) and rough documentation (README files,\nINSTALL files, etc.)\".\n"
                 }
             ]
         ],

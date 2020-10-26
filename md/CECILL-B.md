@@ -12,11 +12,14 @@ CeCILL-B Free Software License Agreement (CECILL-B)
 Comments on (easy) usability
 ----------------------------
 
--   “The primary text is in French.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode"))
-
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
+-   “The primary text is in French.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode"))
 
 URLs
 ----
@@ -294,6 +297,14 @@ Raw Data
             "CeCILL-B License"
         ],
         "__impliedId": "CECILL-B",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "The primary text is in French."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -348,13 +359,12 @@ Raw Data
                         "CECILL-B"
                     ],
                     "__impliedId": "CECILL-B",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "The primary text is in French."
-                            }
+                            [
+                                "The primary text is in French."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -423,13 +433,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "The primary text is in French."
                 }
             ]
         ],

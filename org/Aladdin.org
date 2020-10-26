@@ -15,6 +15,8 @@
 
 ** Comments on (easy) usability
 
+** General Comments
+
 - "Per SPDX.org, this license was released 18 Nov 1999" (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afpl-8.0.yml][Scancode]])
 
@@ -106,6 +108,14 @@
           "Aladdin FPL v8"
       ],
       "__impliedId": "Aladdin",
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "Per SPDX.org, this license was released 18 Nov 1999"
+              ]
+          ]
+      ],
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -157,13 +167,12 @@
                       "Aladdin"
                   ],
                   "__impliedId": "Aladdin",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "Per SPDX.org, this license was released 18 Nov 1999"
-                          }
+                          [
+                              "Per SPDX.org, this license was released 18 Nov 1999"
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -183,15 +192,6 @@
               }
           }
       },
-      "__impliedJudgement": [
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "Per SPDX.org, this license was released 18 Nov 1999"
-              }
-          ]
-      ],
       "__impliedCopyleft": [
           [
               "Scancode",

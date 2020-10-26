@@ -12,6 +12,9 @@ Trusster Open Source License (TOSL)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per Fedora, the Trusster Open Source License (TOSL) is a derivation
     of the Sleepycat License. The one significant difference is that
     where the Sleepycat License says The source code must either be
@@ -85,6 +88,14 @@ Raw Data
             "TOSL 1.0a"
         ],
         "__impliedId": "TOSL",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, the Trusster Open Source License (TOSL) is a derivation of the\nSleepycat License. The one significant difference is that where the\nSleepycat License says The source code must either be included in the\ndistribution or be available for no more than the cost of distribution plus\na nominal fee, and must be freely redistributable under reasonable\nconditions. TOSL is somewhat more specific The source code must either be\nincluded in the distribution or be available in a timely fashion for no\nmore than the cost of distribution plus a nominal fee, and must be freely\nredistributable under reasonable and no more restrictive conditions. While\nthe Sleepycat License is considered to be a free, GPL-compatible license,\nTOSL is GPL-incompatible because of the addition of the \"no more\nrestrictive\" language.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -136,13 +147,12 @@ Raw Data
                         "TOSL"
                     ],
                     "__impliedId": "TOSL",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, the Trusster Open Source License (TOSL) is a derivation of the\nSleepycat License. The one significant difference is that where the\nSleepycat License says The source code must either be included in the\ndistribution or be available for no more than the cost of distribution plus\na nominal fee, and must be freely redistributable under reasonable\nconditions. TOSL is somewhat more specific The source code must either be\nincluded in the distribution or be available in a timely fashion for no\nmore than the cost of distribution plus a nominal fee, and must be freely\nredistributable under reasonable and no more restrictive conditions. While\nthe Sleepycat License is considered to be a free, GPL-compatible license,\nTOSL is GPL-incompatible because of the addition of the \"no more\nrestrictive\" language.\n"
-                            }
+                            [
+                                "Per Fedora, the Trusster Open Source License (TOSL) is a derivation of the\nSleepycat License. The one significant difference is that where the\nSleepycat License says The source code must either be included in the\ndistribution or be available for no more than the cost of distribution plus\na nominal fee, and must be freely redistributable under reasonable\nconditions. TOSL is somewhat more specific The source code must either be\nincluded in the distribution or be available in a timely fashion for no\nmore than the cost of distribution plus a nominal fee, and must be freely\nredistributable under reasonable and no more restrictive conditions. While\nthe Sleepycat License is considered to be a free, GPL-compatible license,\nTOSL is GPL-incompatible because of the addition of the \"no more\nrestrictive\" language.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -162,15 +172,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, the Trusster Open Source License (TOSL) is a derivation of the\nSleepycat License. The one significant difference is that where the\nSleepycat License says The source code must either be included in the\ndistribution or be available for no more than the cost of distribution plus\na nominal fee, and must be freely redistributable under reasonable\nconditions. TOSL is somewhat more specific The source code must either be\nincluded in the distribution or be available in a timely fashion for no\nmore than the cost of distribution plus a nominal fee, and must be freely\nredistributable under reasonable and no more restrictive conditions. While\nthe Sleepycat License is considered to be a free, GPL-compatible license,\nTOSL is GPL-incompatible because of the addition of the \"no more\nrestrictive\" language.\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

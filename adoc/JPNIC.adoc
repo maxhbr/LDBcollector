@@ -16,6 +16,8 @@
 
 === Comments on (easy) usability
 
+=== General Comments
+
 === URLs
 
 * *Homepage:* https://www.nic.ad.jp/ja/idn/idnkit/download/

@@ -5,6 +5,14 @@
         "scancode://latex2e"
     ],
     "__impliedId": "Latex2e",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "the latext2e, verbatim-manual and abstyles are similar licenses"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -56,13 +64,12 @@
                     "Latex2e"
                 ],
                 "__impliedId": "Latex2e",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
-                        }
+                        [
+                            "the latext2e, verbatim-manual and abstyles are similar licenses"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -82,15 +89,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "the latext2e, verbatim-manual and abstyles are similar licenses"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

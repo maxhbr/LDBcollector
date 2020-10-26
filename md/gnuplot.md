@@ -10,6 +10,9 @@ gnuplot License (gnuplot)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

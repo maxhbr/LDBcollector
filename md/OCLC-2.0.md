@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OCLC-2.0.html "SPDX"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license is OSI certified. This license was
     released May 2002 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oclc-2.0.yml "Scancode"))
@@ -234,6 +237,14 @@ Raw Data
             "The OCLC Research Public License, Version 2.0"
         ],
         "__impliedId": "OCLC-2.0",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified. This license was released May\n2002\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -330,13 +341,12 @@ Raw Data
                         "OCLC-2.0"
                     ],
                     "__impliedId": "OCLC-2.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certified. This license was released May\n2002\n"
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certified. This license was released May\n2002\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -437,13 +447,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certified. This license was released May\n2002\n"
                 }
             ]
         ],

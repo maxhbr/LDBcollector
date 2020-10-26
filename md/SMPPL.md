@@ -10,6 +10,9 @@ Secure Messaging Protocol Public License (SMPPL)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

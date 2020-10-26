@@ -13,6 +13,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Except for the NetBSD Foundation name this license is identical to
     the bsd-simplified Per SPDX.org, NetBSD adopted this 2-clause
     license in 2008 for code contributed to NetBSD Foundation. ”
@@ -66,6 +69,14 @@ Raw Data
             "scancode://bsd-2-clause-netbsd"
         ],
         "__impliedId": "BSD-2-Clause-NetBSD",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Except for the NetBSD Foundation name this license is identical to the\nbsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license in 2008\nfor code contributed to NetBSD Foundation.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -117,13 +128,12 @@ Raw Data
                         "BSD-2-Clause-NetBSD"
                     ],
                     "__impliedId": "BSD-2-Clause-NetBSD",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Except for the NetBSD Foundation name this license is identical to the\nbsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license in 2008\nfor code contributed to NetBSD Foundation.\n"
-                            }
+                            [
+                                "Except for the NetBSD Foundation name this license is identical to the\nbsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license in 2008\nfor code contributed to NetBSD Foundation.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -184,13 +194,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Except for the NetBSD Foundation name this license is identical to the\nbsd-simplified Per SPDX.org, NetBSD adopted this 2-clause license in 2008\nfor code contributed to NetBSD Foundation.\n"
                 }
             ]
         ],

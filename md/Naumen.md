@@ -16,6 +16,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naumen.yml "Scancode"))
 
@@ -70,6 +73,14 @@ Raw Data
             "NAUMEN Public License"
         ],
         "__impliedId": "Naumen",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -160,13 +171,12 @@ Raw Data
                         "Naumen"
                     ],
                     "__impliedId": "Naumen",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certified."
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -305,13 +315,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certified."
                 }
             ]
         ],

@@ -12,11 +12,14 @@ Open LDAP Public License v1.1 (OLDAP-1.1)
 Comments on (easy) usability
 ----------------------------
 
--   “Per SPDX.org, this license was released 25 August 1998.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.1.yml "Scancode"))
-
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license was released 25 August 1998.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.1.yml "Scancode"))
 
 URLs
 ----
@@ -167,6 +170,14 @@ Raw Data
             "OpenLDAP Public License 1.1"
         ],
         "__impliedId": "OLDAP-1.1",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 25 August 1998."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -218,13 +229,12 @@ Raw Data
                         "OLDAP-1.1"
                     ],
                     "__impliedId": "OLDAP-1.1",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 25 August 1998."
-                            }
+                            [
+                                "Per SPDX.org, this license was released 25 August 1998."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -285,13 +295,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 25 August 1998."
                 }
             ]
         ],

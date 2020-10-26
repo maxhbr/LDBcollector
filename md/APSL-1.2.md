@@ -15,14 +15,17 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/APSL-1.2.html "SPDX"))
 
--   “Per SPDX.org, this license was released 4 Jan 2001. This license
-    was OSI certified ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml "Scancode"))
-
 -   **↓**“This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license was released 4 Jan 2001. This license
+    was OSI certified ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml "Scancode"))
 
 URLs
 ----
@@ -317,6 +320,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Apple Public Source License (APSL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -381,13 +392,12 @@ Raw Data
                         "APSL-1.2"
                     ],
                     "__impliedId": "APSL-1.2",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -460,13 +470,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
                 }
             ]
         ],

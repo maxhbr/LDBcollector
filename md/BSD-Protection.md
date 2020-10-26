@@ -10,6 +10,9 @@ BSD Protection License (BSD-Protection)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

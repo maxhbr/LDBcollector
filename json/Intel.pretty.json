@@ -8,6 +8,14 @@
         "License :: OSI Approved :: Intel Open Source License"
     ],
     "__impliedId": "Intel",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -99,13 +107,12 @@
                     "Intel"
                 ],
                 "__impliedId": "Intel",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
-                        }
+                        [
+                            "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -238,13 +245,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
             }
         ]
     ],

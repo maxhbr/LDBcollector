@@ -13,6 +13,9 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSET-PL-2.1.html "SPDX"))
 
+General Comments
+----------------
+
 URLs
 ----
 

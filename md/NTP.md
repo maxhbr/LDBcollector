@@ -31,6 +31,9 @@ Comments on (easy) usability
     Software überführen.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
+General Comments
+----------------
+
 -   “replaced by mit-old-style-no-advert” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntpl.yml "Scancode"))
 
@@ -94,6 +97,14 @@ Raw Data
             "NTP License (NTP)"
         ],
         "__impliedId": "NTP",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "replaced by mit-old-style-no-advert"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -192,13 +203,12 @@ Raw Data
                         "scancode://ntpl",
                         "NTP License"
                     ],
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "replaced by mit-old-style-no-advert"
-                            }
+                            [
+                                "replaced by mit-old-style-no-advert"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -369,13 +379,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "replaced by mit-old-style-no-advert"
                 }
             ],
             [

@@ -33,6 +33,8 @@
   weiterverbreiten, also auch in proprietäre Software überführen."
   (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
 
+** General Comments
+
 - "replaced by mit-old-style-no-advert" (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntpl.yml][Scancode]])
 
@@ -96,6 +98,14 @@
           "NTP License (NTP)"
       ],
       "__impliedId": "NTP",
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "replaced by mit-old-style-no-advert"
+              ]
+          ]
+      ],
       "facts": {
           "Open Knowledge International": {
               "is_generic": null,
@@ -194,13 +204,12 @@
                       "scancode://ntpl",
                       "NTP License"
                   ],
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "replaced by mit-old-style-no-advert"
-                          }
+                          [
+                              "replaced by mit-old-style-no-advert"
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -371,13 +380,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
-              }
-          ],
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "replaced by mit-old-style-no-advert"
               }
           ],
           [

@@ -12,6 +12,14 @@
     "__impliedAmbiguousNames": [
         "RealNetworks Public Source License (RPSL)"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "This license is OSI certified"
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -134,13 +142,12 @@
                     "RPSL-1.0"
                 ],
                 "__impliedId": "RPSL-1.0",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "This license is OSI certified"
-                        }
+                        [
+                            "This license is OSI certified"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -279,13 +286,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "This license is OSI certified"
             }
         ]
     ],

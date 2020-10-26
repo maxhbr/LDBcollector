@@ -13,6 +13,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per Fedora, this is a slightly modified version of Apache 1.1. The
     documentation requirement in Apache 1.1 has been weakened to a
     suggestion, but clause 4 still makes this license Free but
@@ -82,6 +85,14 @@ Raw Data
             "scancode://saxpath"
         ],
         "__impliedId": "Saxpath",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -133,13 +144,12 @@ Raw Data
                         "Saxpath"
                     ],
                     "__impliedId": "Saxpath",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n"
-                            }
+                            [
+                                "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -200,13 +210,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this is a slightly modified version of Apache 1.1. The\ndocumentation requirement in Apache 1.1 has been weakened to a suggestion,\nbut clause 4 still makes this license Free but GPL-incompatible.\n"
                 }
             ]
         ],

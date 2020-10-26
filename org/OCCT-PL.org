@@ -13,6 +13,8 @@
 
 ** Comments on (easy) usability
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://www.opencascade.com/content/occt-public-license

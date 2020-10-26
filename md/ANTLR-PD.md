@@ -13,6 +13,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, ANTLR used this public domain notice through version
     2.7 and then switched to a BSD license for version 3.0 and later. ”
     (source:
@@ -77,6 +80,14 @@ Raw Data
             "scancode://antlr-pd"
         ],
         "__impliedId": "ANTLR-PD",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -131,13 +142,12 @@ Raw Data
                         "ANTLR-PD"
                     ],
                     "__impliedId": "ANTLR-PD",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n"
-                            }
+                            [
+                                "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -206,13 +216,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, ANTLR used this public domain notice through version 2.7 and\nthen switched to a BSD license for version 3.0 and later.\n"
                 }
             ]
         ],

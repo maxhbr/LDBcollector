@@ -40,6 +40,9 @@ https://blueoakcouncil.org/list[BlueOak License List])
 * **↑**``This license is compatible with the
 DebianFreeSoftwareGuidelines (DFSG-free)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+
+=== General Comments
+
 * ``Per SPDX.org, this license is OSI certified.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml[Scancode])
 
@@ -123,6 +126,14 @@ THIS SOFTWARE.
     "__impliedId": "ISC",
     "__impliedAmbiguousNames": [
         "ISC license"
+    ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified."
+            ]
+        ]
     ],
     "__hasPatentHint": false,
     "facts": {
@@ -234,13 +245,12 @@ THIS SOFTWARE.
                     "ISC"
                 ],
                 "__impliedId": "ISC",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified."
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -612,13 +622,6 @@ THIS SOFTWARE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

@@ -13,6 +13,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per Fedora, this license was found in the Matrix Template Library.
     It is derived from the Apache Software License v1.1, but it is
     modified in several ways. It is Free, but GPL-incompatible. ”
@@ -66,6 +69,14 @@ Raw Data
             "scancode://mtll"
         ],
         "__impliedId": "MTLL",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -117,13 +128,12 @@ Raw Data
                         "MTLL"
                     ],
                     "__impliedId": "MTLL",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n"
-                            }
+                            [
+                                "Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -184,13 +194,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this license was found in the Matrix Template Library. It is\nderived from the Apache Software License v1.1, but it is modified in\nseveral ways. It is Free, but GPL-incompatible.\n"
                 }
             ]
         ],

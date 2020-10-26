@@ -9,6 +9,14 @@
     "__impliedAmbiguousNames": [
         "The GNU Lesser General Public License (LGPL)"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -73,13 +81,12 @@
                     "LGPL-2.0-only"
                 ],
                 "__impliedId": "LGPL-2.0-only",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
-                        }
+                        [
+                            "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -283,13 +290,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
             }
         ]
     ],

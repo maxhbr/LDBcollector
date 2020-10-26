@@ -20,6 +20,9 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license was released in January 2012. This
     license list entry is for use when the MPL's Exhibit B, which
     removes the Sec 3.3 copyleft exception. ” (source:
@@ -103,6 +106,14 @@ Raw Data
         "__impliedId": "MPL-2.0-no-copyleft-exception",
         "__impliedAmbiguousNames": [
             "Mozilla Public License (MPL)"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the MPL's Exhibit B, which removes the Sec 3.3\ncopyleft exception.\n"
+                ]
+            ]
         ],
         "facts": {
             "SPDX": {
@@ -188,13 +199,12 @@ Raw Data
                         "MPL-2.0-no-copyleft-exception"
                     ],
                     "__impliedId": "MPL-2.0-no-copyleft-exception",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the MPL's Exhibit B, which removes the Sec 3.3\ncopyleft exception.\n"
-                            }
+                            [
+                                "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the MPL's Exhibit B, which removes the Sec 3.3\ncopyleft exception.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -259,13 +269,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the MPL's Exhibit B, which removes the Sec 3.3\ncopyleft exception.\n"
                 }
             ]
         ],

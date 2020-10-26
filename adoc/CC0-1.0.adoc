@@ -38,6 +38,8 @@ Policy])
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
 
+=== General Comments
+
 === Obligations
 
 [cols=",,",options="header",]

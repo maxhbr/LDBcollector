@@ -12,13 +12,16 @@ mpich2 License (mpich2)
 Comments on (easy) usability
 ----------------------------
 
+-   **↓**“Rating is: Lead” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
 -   “Per Fedora, this is missing the anti-publicity-use clause, and
     doesn't mention sublicensing, but otherwise, it is functionally
     identical to MIT. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpich.yml "Scancode"))
-
--   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
 
 URLs
 ----
@@ -87,6 +90,14 @@ Raw Data
             "MPICH License"
         ],
         "__impliedId": "mpich2",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -140,13 +151,12 @@ Raw Data
                         "mpich2"
                     ],
                     "__impliedId": "mpich2",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
-                            }
+                            [
+                                "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -211,13 +221,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this is missing the anti-publicity-use clause, and doesn't\nmention sublicensing, but otherwise, it is functionally identical to MIT.\n"
                 }
             ]
         ],

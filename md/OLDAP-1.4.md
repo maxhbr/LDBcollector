@@ -12,11 +12,14 @@ Open LDAP Public License v1.4 (OLDAP-1.4)
 Comments on (easy) usability
 ----------------------------
 
--   “Per SPDX.org, this license was released 18 January 1999.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.4.yml "Scancode"))
-
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license was released 18 January 1999.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.4.yml "Scancode"))
 
 URLs
 ----
@@ -185,6 +188,14 @@ Raw Data
             "OpenLDAP Public License 1.4"
         ],
         "__impliedId": "OLDAP-1.4",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 18 January 1999."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -236,13 +247,12 @@ Raw Data
                         "OLDAP-1.4"
                     ],
                     "__impliedId": "OLDAP-1.4",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 18 January 1999."
-                            }
+                            [
+                                "Per SPDX.org, this license was released 18 January 1999."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -303,13 +313,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 18 January 1999."
                 }
             ]
         ],

@@ -17,12 +17,15 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSL-2.1.html "SPDX"))
 
+-   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+
+General Comments
+----------------
+
 -   “Per SPDX.org, same as version 2.0 of this license except with
     changes to section 10 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-2.1.yml "Scancode"))
-
--   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
 
 URLs
 ----
@@ -100,6 +103,14 @@ Raw Data
             "Open Software License, Version 2.1"
         ],
         "__impliedId": "OSL-2.1",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, same as version 2.0 of this license except with changes to\nsection 10\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -170,13 +181,12 @@ Raw Data
                         "OSL-2.1"
                     ],
                     "__impliedId": "OSL-2.1",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, same as version 2.0 of this license except with changes to\nsection 10\n"
-                            }
+                            [
+                                "Per SPDX.org, same as version 2.0 of this license except with changes to\nsection 10\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -292,13 +302,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, same as version 2.0 of this license except with changes to\nsection 10\n"
                 }
             ]
         ],

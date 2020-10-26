@@ -12,6 +12,9 @@ MakeIndex License (MakeIndex)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “Per Fedora, this license is free but GPL-incompatible, and was
     found in the MakeIndex component inside TeXLive. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/makeindex.yml "Scancode"))
@@ -66,6 +69,14 @@ Raw Data
             "MakeIndex Distribution Notice"
         ],
         "__impliedId": "MakeIndex",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this license is free but GPL-incompatible, and was found in the\nMakeIndex component inside TeXLive.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -117,13 +128,12 @@ Raw Data
                         "MakeIndex"
                     ],
                     "__impliedId": "MakeIndex",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this license is free but GPL-incompatible, and was found in the\nMakeIndex component inside TeXLive.\n"
-                            }
+                            [
+                                "Per Fedora, this license is free but GPL-incompatible, and was found in the\nMakeIndex component inside TeXLive.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -143,15 +153,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this license is free but GPL-incompatible, and was found in the\nMakeIndex component inside TeXLive.\n"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

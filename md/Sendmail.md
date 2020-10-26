@@ -10,6 +10,9 @@ Sendmail License (Sendmail)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 -   “this version of the license dates from 2004. There several minor
     variations publichsed since.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml "Scancode"))
@@ -120,6 +123,14 @@ Raw Data
             "scancode://sendmail"
         ],
         "__impliedId": "Sendmail",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "this version of the license dates from 2004. There several minor variations publichsed since."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -178,13 +189,12 @@ Raw Data
                         "Sendmail"
                     ],
                     "__impliedId": "Sendmail",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "this version of the license dates from 2004. There several minor variations publichsed since."
-                            }
+                            [
+                                "this version of the license dates from 2004. There several minor variations publichsed since."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -208,15 +218,6 @@ Raw Data
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "this version of the license dates from 2004. There several minor variations publichsed since."
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

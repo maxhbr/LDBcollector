@@ -28,6 +28,8 @@
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]])
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://creativecommons.org/licenses/by-nc-nd/2.5/

@@ -18,6 +18,12 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+-   **↓**“Advertisement clause (3.) is complicated and prone to
+    conflicts” (source: Override)
+
+General Comments
+----------------
+
 -   “Per SPDX.org, this is the same license as the BSD-4-Clause, but
     with a copyright notice for the Regents of the University of
     California. Captures the retroactive deletion of the third
@@ -26,9 +32,6 @@ Comments on (easy) usability
     ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change) ”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml "Scancode"))
-
--   **↓**“Advertisement clause (3.) is complicated and prone to
-    conflicts” (source: Override)
 
 URLs
 ----
@@ -162,6 +165,14 @@ Raw Data
                 }
             ]
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this is the same license as the BSD-4-Clause, but with a\ncopyright notice for the Regents of the University of California. Captures\nthe retroactive deletion of the third (advertising) clause of the Original\nBSD license for BSD-licensed code developed by UC Berkeley and its\ncontributors (see\nftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -227,13 +238,12 @@ Raw Data
                         "BSD-4-Clause-UC"
                     ],
                     "__impliedId": "BSD-4-Clause-UC",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this is the same license as the BSD-4-Clause, but with a\ncopyright notice for the Regents of the University of California. Captures\nthe retroactive deletion of the third (advertising) clause of the Original\nBSD license for BSD-licensed code developed by UC Berkeley and its\ncontributors (see\nftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)\n"
-                            }
+                            [
+                                "Per SPDX.org, this is the same license as the BSD-4-Clause, but with a\ncopyright notice for the Regents of the University of California. Captures\nthe retroactive deletion of the third (advertising) clause of the Original\nBSD license for BSD-licensed code developed by UC Berkeley and its\ncontributors (see\nftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -437,13 +447,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this is the same license as the BSD-4-Clause, but with a\ncopyright notice for the Regents of the University of California. Captures\nthe retroactive deletion of the third (advertising) clause of the Original\nBSD license for BSD-licensed code developed by UC Berkeley and its\ncontributors (see\nftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change)\n"
                 }
             ]
         ],

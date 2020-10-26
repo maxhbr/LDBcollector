@@ -12,6 +12,9 @@ SCEA Shared Source License (SCEA)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

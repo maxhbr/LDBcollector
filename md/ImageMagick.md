@@ -13,6 +13,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “this is very close to the Apache 2.0 licecnse that was used as a
     base.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/imagemagick.yml "Scancode"))
@@ -88,6 +91,14 @@ Raw Data
             "scancode://imagemagick"
         ],
         "__impliedId": "ImageMagick",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "this is very close to the Apache 2.0 licecnse that was used as a base."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -139,13 +150,12 @@ Raw Data
                         "ImageMagick"
                     ],
                     "__impliedId": "ImageMagick",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "this is very close to the Apache 2.0 licecnse that was used as a base."
-                            }
+                            [
+                                "this is very close to the Apache 2.0 licecnse that was used as a base."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -206,13 +216,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "this is very close to the Apache 2.0 licecnse that was used as a base."
                 }
             ]
         ],

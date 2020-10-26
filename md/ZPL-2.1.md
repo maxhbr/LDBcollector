@@ -18,6 +18,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this is a generic version of the ZPL 2.0 license”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml "Scancode"))
@@ -92,6 +95,14 @@ Raw Data
             "ZPL 2.1"
         ],
         "__impliedId": "ZPL-2.1",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -147,13 +158,12 @@ Raw Data
                         "ZPL-2.1"
                     ],
                     "__impliedId": "ZPL-2.1",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
-                            }
+                            [
+                                "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -259,13 +269,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Google Classification is NOTICE"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
                 }
             ]
         ],

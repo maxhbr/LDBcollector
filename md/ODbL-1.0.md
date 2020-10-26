@@ -14,6 +14,9 @@ ODC Open Database License v1.0 (ODbL-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

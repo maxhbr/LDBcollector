@@ -31,6 +31,8 @@ https://spdx.org/licenses/0BSD.html[SPDX])
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
 
+=== General Comments
+
 === Obligations
 
 [cols=",,",options="header",]

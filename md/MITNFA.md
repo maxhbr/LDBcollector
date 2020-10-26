@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per Fedora, this license is based on the MIT license, but contains
     an additional section covering the removal of attributions in
     certain modification scenarios. It is Free and GPL-compatible. Use
@@ -76,6 +79,14 @@ Raw Data
             "MIT no false attribution License"
         ],
         "__impliedId": "MITNFA",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -127,13 +138,12 @@ Raw Data
                         "MITNFA"
                     ],
                     "__impliedId": "MITNFA",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n"
-                            }
+                            [
+                                "Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -194,13 +204,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n"
                 }
             ]
         ],

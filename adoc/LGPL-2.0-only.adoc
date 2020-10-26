@@ -21,12 +21,15 @@ is deprecated because it confuses the license's intent.'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/LGPL-2.0-only.html[SPDX])
-* ``Per SPDX.org, this license was released June 1991. This license has
-been superseded by LGPL v2.1 '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml[Scancode])
 * **↓**``Google Classification is RESTRICTED'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+
+=== General Comments
+
+* ``Per SPDX.org, this license was released June 1991. This license has
+been superseded by LGPL v2.1 '' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml[Scancode])
 
 === URLs
 
@@ -546,6 +549,14 @@ That's all there is to it!
     "__impliedAmbiguousNames": [
         "The GNU Lesser General Public License (LGPL)"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -610,13 +621,12 @@ That's all there is to it!
                     "LGPL-2.0-only"
                 ],
                 "__impliedId": "LGPL-2.0-only",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
-                        }
+                        [
+                            "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -820,13 +830,6 @@ That's all there is to it!
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
             }
         ]
     ],

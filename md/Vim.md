@@ -10,6 +10,9 @@ Vim License (Vim)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

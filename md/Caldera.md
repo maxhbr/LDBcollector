@@ -10,6 +10,9 @@ Caldera License (Caldera)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

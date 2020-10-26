@@ -23,6 +23,8 @@ Policy])
 DebianFreeSoftwareGuidelines (DFSG-unfree)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
+=== General Comments
+
 === URLs
 
 * *Homepage:*

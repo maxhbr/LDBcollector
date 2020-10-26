@@ -13,6 +13,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per Fedora, this is a BSD derived Free license, but clause 3 makes
     it GPL- incompatible, due to the need to include the reasons for the
     changes. A copy of this license was taken from
@@ -58,6 +61,14 @@ Raw Data
             "scancode://mup"
         ],
         "__impliedId": "Mup",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this is a BSD derived Free license, but clause 3 makes it GPL-\nincompatible, due to the need to include the reasons for the changes. A\ncopy of this license was taken from http://www.arkkra.com/doc/license.html\non 2013-02-15.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -109,13 +120,12 @@ Raw Data
                         "Mup"
                     ],
                     "__impliedId": "Mup",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this is a BSD derived Free license, but clause 3 makes it GPL-\nincompatible, due to the need to include the reasons for the changes. A\ncopy of this license was taken from http://www.arkkra.com/doc/license.html\non 2013-02-15.\n"
-                            }
+                            [
+                                "Per Fedora, this is a BSD derived Free license, but clause 3 makes it GPL-\nincompatible, due to the need to include the reasons for the changes. A\ncopy of this license was taken from http://www.arkkra.com/doc/license.html\non 2013-02-15.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -176,13 +186,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this is a BSD derived Free license, but clause 3 makes it GPL-\nincompatible, due to the need to include the reasons for the changes. A\ncopy of this license was taken from http://www.arkkra.com/doc/license.html\non 2013-02-15.\n"
                 }
             ]
         ],

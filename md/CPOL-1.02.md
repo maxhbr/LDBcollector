@@ -12,6 +12,9 @@ Code Project Open License 1.02 (CPOL-1.02)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

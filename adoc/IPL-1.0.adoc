@@ -29,6 +29,9 @@ Software Guidelines])
 * ``Google Classification is RECIPROCAL'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+
+=== General Comments
+
 * ``Per SPDX.org, this license is OSI certified. This license was
 superseded by CPL. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ibmpl-1.0.yml[Scancode])
@@ -131,6 +134,14 @@ This Agreement is governed by the laws of the State of New York and the intellec
     "__impliedAmbiguousNames": [
         "IBM Public License, Version 1.0"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified. This license was superseded by\nCPL.\n"
+            ]
+        ]
+    ],
     "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
@@ -222,13 +233,12 @@ This Agreement is governed by the laws of the State of New York and the intellec
                     "IPL-1.0"
                 ],
                 "__impliedId": "IPL-1.0",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified. This license was superseded by\nCPL.\n"
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified. This license was superseded by\nCPL.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -411,13 +421,6 @@ This Agreement is governed by the laws of the State of New York and the intellec
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified. This license was superseded by\nCPL.\n"
             }
         ]
     ],

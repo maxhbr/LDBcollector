@@ -18,12 +18,15 @@
 
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/APSL-1.2.html[SPDX])
-* ``Per SPDX.org, this license was released 4 Jan 2001. This license was
-OSI certified '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml[Scancode])
 * **↓**``This license is not compatible with the
 DebianFreeSoftwareGuidelines (DFSG-unfree)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+
+=== General Comments
+
+* ``Per SPDX.org, this license was released 4 Jan 2001. This license was
+OSI certified '' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml[Scancode])
 
 === URLs
 
@@ -313,6 +316,14 @@ License for the specific language governing rights and limitations under the Lic
     "__impliedAmbiguousNames": [
         "Apple Public Source License (APSL)"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -377,13 +388,12 @@ License for the specific language governing rights and limitations under the Lic
                     "APSL-1.2"
                 ],
                 "__impliedId": "APSL-1.2",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
-                        }
+                        [
+                            "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -456,13 +466,6 @@ License for the specific language governing rights and limitations under the Lic
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
             }
         ]
     ],

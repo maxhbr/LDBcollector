@@ -15,6 +15,8 @@
 
 === Comments on (easy) usability
 
+=== General Comments
+
 * ``Per Fedora, this license is considered Free, but GPL-incompatible
 only when used for TeX files. In all other use cases, this may not be
 true. '' (source:
@@ -47,6 +49,14 @@ changes and their authors must be explicitly stated HERE.
         "scancode://psfrag"
     ],
     "__impliedId": "psfrag",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -98,13 +108,12 @@ changes and their authors must be explicitly stated HERE.
                     "psfrag"
                 ],
                 "__impliedId": "psfrag",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
-                        }
+                        [
+                            "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -124,15 +133,6 @@ changes and their authors must be explicitly stated HERE.
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

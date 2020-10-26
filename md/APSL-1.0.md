@@ -15,13 +15,16 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/APSL-1.0.html "SPDX"))
 
--   “Per SPDX.org, this license was released 16 March 1999.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.0.yml "Scancode"))
-
 -   **↓**“This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license was released 16 March 1999.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.0.yml "Scancode"))
 
 URLs
 ----
@@ -423,6 +426,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Apple Public Source License (APSL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 16 March 1999."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -485,13 +496,12 @@ Raw Data
                         "APSL-1.0"
                     ],
                     "__impliedId": "APSL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 16 March 1999."
-                            }
+                            [
+                                "Per SPDX.org, this license was released 16 March 1999."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -552,13 +562,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 16 March 1999."
                 }
             ]
         ],

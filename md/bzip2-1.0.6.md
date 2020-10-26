@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “until bzip2 1.0.6 there is only one license and not two as listed
     in SPDX” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode"))
@@ -97,6 +100,14 @@ Raw Data
             "bzip2 License 2010"
         ],
         "__impliedId": "bzip2-1.0.6",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -160,13 +171,12 @@ Raw Data
                         "bzip2-1.0.6"
                     ],
                     "__impliedId": "bzip2-1.0.6",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
-                            }
+                            [
+                                "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -231,13 +241,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
                 }
             ]
         ],

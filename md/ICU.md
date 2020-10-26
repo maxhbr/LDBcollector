@@ -30,6 +30,9 @@ Comments on (easy) usability
     Software überführen.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
+General Comments
+----------------
+
 URLs
 ----
 

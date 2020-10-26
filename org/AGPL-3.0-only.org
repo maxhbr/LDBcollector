@@ -61,16 +61,18 @@
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
-- "Per SPDX.org, this version was released 19 November 2007 This license
-  is OSI certified " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0.yml][Scancode]])
-
 - *↓*"Google Classification is CANNOT_BE_USED "Code released under the
   GNU Affero General Public License (AGPL) cannot be used in google3
   under any circumstances, and only very rarely on workstations. Read
   more at go/agpl"" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]])
+
+** General Comments
+
+- "Per SPDX.org, this version was released 19 November 2007 This license
+  is OSI certified " (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0.yml][Scancode]])
 
 ** Obligations
 
@@ -476,6 +478,14 @@
       "__impliedAmbiguousNames": [
           "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)"
       ],
+      "__impliedComments": [
+          [
+              "Scancode",
+              [
+                  "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
+              ]
+          ]
+      ],
       "__hasPatentHint": true,
       "facts": {
           "Open Knowledge International": {
@@ -619,13 +629,12 @@
                       "AGPL-3.0-only"
                   ],
                   "__impliedId": "AGPL-3.0-only",
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "Scancode",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
-                          }
+                          [
+                              "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -1052,13 +1061,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
-              }
-          ],
-          [
-              "Scancode",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
               }
           ]
       ],

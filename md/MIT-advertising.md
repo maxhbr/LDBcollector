@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per Fedora, this license is a modified version of the common MIT
     license, with an additional advertising clause that makes it
     GPL-incompatible. It was originally found at
@@ -58,6 +61,14 @@ Raw Data
             "EFL MIT-Style License"
         ],
         "__impliedId": "MIT-advertising",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this license is a modified version of the common MIT license,\nwith an additional advertising clause that makes it GPL-incompatible. It\nwas originally found at\nhttp://www.enlightenment.org/viewvc/e16/e/COPYING?revision=1.10 , but that\nURL is gone (they seem to have moved source control systems). The latest\navailable copy from enlightment.org\nhttp://trac.enlightenment.org/e/browser/trunk/E16/e/COPYING has been\npreserved here for reference.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -109,13 +120,12 @@ Raw Data
                         "MIT-advertising"
                     ],
                     "__impliedId": "MIT-advertising",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this license is a modified version of the common MIT license,\nwith an additional advertising clause that makes it GPL-incompatible. It\nwas originally found at\nhttp://www.enlightenment.org/viewvc/e16/e/COPYING?revision=1.10 , but that\nURL is gone (they seem to have moved source control systems). The latest\navailable copy from enlightment.org\nhttp://trac.enlightenment.org/e/browser/trunk/E16/e/COPYING has been\npreserved here for reference.\n"
-                            }
+                            [
+                                "Per Fedora, this license is a modified version of the common MIT license,\nwith an additional advertising clause that makes it GPL-incompatible. It\nwas originally found at\nhttp://www.enlightenment.org/viewvc/e16/e/COPYING?revision=1.10 , but that\nURL is gone (they seem to have moved source control systems). The latest\navailable copy from enlightment.org\nhttp://trac.enlightenment.org/e/browser/trunk/E16/e/COPYING has been\npreserved here for reference.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -176,13 +186,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this license is a modified version of the common MIT license,\nwith an additional advertising clause that makes it GPL-incompatible. It\nwas originally found at\nhttp://www.enlightenment.org/viewvc/e16/e/COPYING?revision=1.10 , but that\nURL is gone (they seem to have moved source control systems). The latest\navailable copy from enlightment.org\nhttp://trac.enlightenment.org/e/browser/trunk/E16/e/COPYING has been\npreserved here for reference.\n"
                 }
             ]
         ],

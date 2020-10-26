@@ -19,8 +19,6 @@
 
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/CPAL-1.0.html[SPDX])
-* ``Per SPDX.org, this license is OSI certifified.'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml[Scancode])
 * **↓**``Google Classification is CANNOT_BE_USED "Likewise, code
 released under the Common Public Attribution License (CPAL), notably the
 Mule ESB and most of the code that backs Reddit, cannot be used at
@@ -31,6 +29,11 @@ Policy])
 * **↓**``Issue: Badgeware license (see:
 https://lwn.net/Articles/243841/)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+
+=== General Comments
+
+* ``Per SPDX.org, this license is OSI certifified.'' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml[Scancode])
 
 === URLs
 
@@ -171,6 +174,14 @@ Display of Attribution Information is [required/not required] in Larger Works wh
     "__impliedAmbiguousNames": [
         "Common Public Attribution License"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certifified."
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -261,13 +272,12 @@ Display of Attribution Information is [required/not required] in Larger Works wh
                     "CPAL-1.0"
                 ],
                 "__impliedId": "CPAL-1.0",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certifified."
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certifified."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -420,13 +430,6 @@ Display of Attribution Information is [required/not required] in Larger Works wh
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certifified."
             }
         ]
     ],

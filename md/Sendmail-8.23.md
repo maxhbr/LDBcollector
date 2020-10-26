@@ -10,6 +10,9 @@ Sendmail License 8.23 (Sendmail-8.23)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

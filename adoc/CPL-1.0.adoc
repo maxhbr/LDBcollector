@@ -28,6 +28,9 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 * ``Google Classification is RECIPROCAL'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+
+=== General Comments
+
 * ``Per SPDX.org, this license was superseded by Eclipse Public
 License'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml[Scancode])
@@ -158,6 +161,14 @@ This Agreement is governed by the laws of the State of New York and the intellec
     "__impliedAmbiguousNames": [
         "Common Public License (CPL), Version 1.0"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license was superseded by Eclipse Public License"
+            ]
+        ]
+    ],
     "__hasPatentHint": false,
     "facts": {
         "SPDX": {
@@ -226,13 +237,12 @@ This Agreement is governed by the laws of the State of New York and the intellec
                     "CPL-1.0"
                 ],
                 "__impliedId": "CPL-1.0",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license was superseded by Eclipse Public License"
-                        }
+                        [
+                            "Per SPDX.org, this license was superseded by Eclipse Public License"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -421,13 +431,6 @@ This Agreement is governed by the laws of the State of New York and the intellec
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license was superseded by Eclipse Public License"
             }
         ]
     ],

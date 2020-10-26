@@ -12,6 +12,8 @@
 
 ** Comments on (easy) usability
 
+** General Comments
+
 ** URLs
 
 - *Homepage:* http://www.unicode.org/copyright.html

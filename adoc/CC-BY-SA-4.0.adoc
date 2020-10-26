@@ -39,6 +39,8 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 
+=== General Comments
+
 === Obligations
 
 [cols=",,",options="header",]

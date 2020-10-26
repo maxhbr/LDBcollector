@@ -17,6 +17,9 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CUA-OPL-1.0.html "SPDX"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license is OSI certifified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cua-opl-1.0.yml "Scancode"))
 
@@ -517,6 +520,14 @@ Raw Data
             "CUA Office Public License 1.0"
         ],
         "__impliedId": "CUA-OPL-1.0",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certifified."
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -607,13 +618,12 @@ Raw Data
                         "CUA-OPL-1.0"
                     ],
                     "__impliedId": "CUA-OPL-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certifified."
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certifified."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -710,13 +720,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certifified."
                 }
             ]
         ],

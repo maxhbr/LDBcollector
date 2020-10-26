@@ -21,6 +21,9 @@ https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List])
+
+=== General Comments
+
 * ``Per SPDX.org, this is a generic version of the ZPL 2.0 license''
 (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml[Scancode])
@@ -90,6 +93,14 @@ OF SUCH DAMAGE.
         "ZPL 2.1"
     ],
     "__impliedId": "ZPL-2.1",
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -145,13 +156,12 @@ OF SUCH DAMAGE.
                     "ZPL-2.1"
                 ],
                 "__impliedId": "ZPL-2.1",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
-                        }
+                        [
+                            "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -257,13 +267,6 @@ OF SUCH DAMAGE.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is NOTICE"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this is a generic version of the ZPL 2.0 license"
             }
         ]
     ],

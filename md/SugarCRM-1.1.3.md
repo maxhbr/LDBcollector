@@ -12,6 +12,9 @@ SugarCRM Public License v1.1.3 (SugarCRM-1.1.3)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

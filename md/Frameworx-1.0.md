@@ -19,6 +19,9 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Frameworx-1.0.html "SPDX"))
 
+General Comments
+----------------
+
 -   “Per SPDX.org, this license is OSI certified. The url included in
     the license does not work. (15/10/10) ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/frameworx-1.0.yml "Scancode"))
@@ -117,6 +120,14 @@ Raw Data
             "Frameworx License 1.0"
         ],
         "__impliedId": "Frameworx-1.0",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -207,13 +218,12 @@ Raw Data
                         "Frameworx-1.0"
                     ],
                     "__impliedId": "Frameworx-1.0",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n"
-                            }
+                            [
+                                "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -310,13 +320,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license is OSI certified. The url included in the\nlicense does not work. (15/10/10)\n"
                 }
             ]
         ],

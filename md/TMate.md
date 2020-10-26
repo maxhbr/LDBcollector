@@ -10,6 +10,9 @@ TMate Open Source License (TMate)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

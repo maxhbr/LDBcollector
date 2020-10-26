@@ -10,6 +10,9 @@ Noweb License (Noweb)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

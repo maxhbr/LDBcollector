@@ -10,6 +10,14 @@
     "__impliedAmbiguousNames": [
         "Common Public Attribution License"
     ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certifified."
+            ]
+        ]
+    ],
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -100,13 +108,12 @@
                     "CPAL-1.0"
                 ],
                 "__impliedId": "CPAL-1.0",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certifified."
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certifified."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -259,13 +266,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certifified."
             }
         ]
     ],

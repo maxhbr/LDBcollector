@@ -12,14 +12,17 @@ GNU Free Documentation License v1.3 only (GFDL-1.3-only)
 Comments on (easy) usability
 ----------------------------
 
--   “Per SPDX.org, this license was released 3 November 2008.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3.yml "Scancode"))
-
 -   **↓**“Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
     http://www.debian.org/vote/2006/vote\_001\#outcome” (source: [Debian
     Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+
+General Comments
+----------------
+
+-   “Per SPDX.org, this license was released 3 November 2008.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3.yml "Scancode"))
 
 URLs
 ----
@@ -497,6 +500,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "GNU Free Documentation License (GFDL)"
         ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 3 November 2008."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -550,13 +561,12 @@ Raw Data
                         "GFDL-1.3-only"
                     ],
                     "__impliedId": "GFDL-1.3-only",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per SPDX.org, this license was released 3 November 2008."
-                            }
+                            [
+                                "Per SPDX.org, this license was released 3 November 2008."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -610,13 +620,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Exception: Data licensed under the FDL with no invariant sections are considered DFSG-free as of GR 2006-001: http://www.debian.org/vote/2006/vote_001#outcome"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per SPDX.org, this license was released 3 November 2008."
                 }
             ]
         ],

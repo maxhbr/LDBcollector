@@ -12,6 +12,9 @@ Haskell Language Report License (HaskellReport)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

@@ -15,6 +15,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Per Fedora, this license is very similar to MIT, except that it
     requires that US Export Control laws be followed, which makes it
     GPL-Incompatible. ” (source:
@@ -64,6 +67,14 @@ Raw Data
             "MIT with Export Control"
         ],
         "__impliedId": "Xerox",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this license is very similar to MIT, except that it requires\nthat US Export Control laws be followed, which makes it GPL-Incompatible.\n"
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -117,13 +128,12 @@ Raw Data
                         "Xerox"
                     ],
                     "__impliedId": "Xerox",
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "Scancode",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Per Fedora, this license is very similar to MIT, except that it requires\nthat US Export Control laws be followed, which makes it GPL-Incompatible.\n"
-                            }
+                            [
+                                "Per Fedora, this license is very similar to MIT, except that it requires\nthat US Export Control laws be followed, which makes it GPL-Incompatible.\n"
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -188,13 +198,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
-                }
-            ],
-            [
-                "Scancode",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Per Fedora, this license is very similar to MIT, except that it requires\nthat US Export Control laws be followed, which makes it GPL-Incompatible.\n"
                 }
             ]
         ],

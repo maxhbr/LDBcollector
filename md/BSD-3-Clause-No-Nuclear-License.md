@@ -12,6 +12,9 @@ BSD 3-Clause No Nuclear License (BSD-3-Clause-No-Nuclear-License)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 

@@ -22,8 +22,6 @@
 
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/QPL-1.0.html[SPDX])
-* ``Per SPDX.org, this license is OSI certified.'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml[Scancode])
 * ``The QPL is not GPL-compatible, which, regardless of one's opinion
 about the license's DFSG-freeness, poses a major practical problem for
 any code licensed under the QPL that is reused elsewhere in conjunction
@@ -40,6 +38,11 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 * **↓**``Google Classification is RESTRICTED'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy])
+
+=== General Comments
+
+* ``Per SPDX.org, this license is OSI certified.'' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml[Scancode])
 
 === URLs
 
@@ -120,6 +123,14 @@ This license is governed by the Laws of Norway. Disputes shall be settled by Osl
     "__impliedId": "QPL-1.0",
     "__impliedAmbiguousNames": [
         "Q Public License (QPL), Version 1.0"
+    ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per SPDX.org, this license is OSI certified."
+            ]
+        ]
     ],
     "__hasPatentHint": false,
     "facts": {
@@ -219,13 +230,12 @@ This license is governed by the Laws of Norway. Disputes shall be settled by Osl
                     "QPL-1.0"
                 ],
                 "__impliedId": "QPL-1.0",
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "Scancode",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Per SPDX.org, this license is OSI certified."
-                        }
+                        [
+                            "Per SPDX.org, this license is OSI certified."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -415,13 +425,6 @@ This license is governed by the Laws of Norway. Disputes shall be settled by Osl
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "Scancode",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Per SPDX.org, this license is OSI certified."
             }
         ]
     ],

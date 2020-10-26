@@ -12,6 +12,9 @@ Interbase Public License v1.0 (Interbase-1.0)
 Comments on (easy) usability
 ----------------------------
 
+General Comments
+----------------
+
 URLs
 ----
 
