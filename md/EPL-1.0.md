@@ -38,6 +38,11 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Weak copyleft licenses require sharing changes and additions to the
+    licensed software when you give copies to others.” (source: [BlueOak
+    License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “Per SPDX.org, this license is OSI certifified EPL replaced the CPL
     on 28 June 2005. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epl-1.0.yml "Scancode"))
@@ -231,6 +236,12 @@ Raw Data
             "Eclipse Public License - 1.0"
         ],
         "__impliedComments": [
+            [
+                "BlueOak License List",
+                [
+                    "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -440,6 +451,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "Eclipse Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

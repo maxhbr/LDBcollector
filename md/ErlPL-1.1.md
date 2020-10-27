@@ -15,6 +15,11 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Weak copyleft licenses require sharing changes and additions to the
+    licensed software when you give copies to others.” (source: [BlueOak
+    License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 URLs
 ----
 
@@ -330,6 +335,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "Erlang Public License"
         ],
+        "__impliedComments": [
+            [
+                "BlueOak License List",
+                [
+                    "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -410,6 +423,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "Erlang Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

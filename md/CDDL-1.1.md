@@ -18,6 +18,11 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Weak copyleft licenses require sharing changes and additions to the
+    licensed software when you give copies to others.” (source: [BlueOak
+    License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “per SPDX.org, same as 1.0, but changes name from Sun to Oracle in
     section 4.1 and adds patent infringement termination clause (section
     6.3) ” (source:
@@ -141,6 +146,12 @@ Raw Data
         ],
         "__impliedComments": [
             [
+                "BlueOak License List",
+                [
+                    "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ],
+            [
                 "Scancode",
                 [
                     "per SPDX.org, same as 1.0, but changes name from Sun to Oracle in section\n4.1 and adds patent infringement termination clause (section 6.3)\n"
@@ -246,6 +257,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "Common Development and Distribution License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

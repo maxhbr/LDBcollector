@@ -60,6 +60,12 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Strong copyleft licenses require you to share both the licensed
+    software (like the weak copyleft licenses, and larger programs that
+    you build with the licensed software, when you give copies to
+    others.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “This is the last version of the GPL text as published by the FSF.
     This variation was published around about the time of the FSF
     released the GPL 3 in July 2007.
@@ -588,6 +594,12 @@ Raw Data
         ],
         "__impliedComments": [
             [
+                "BlueOak License List",
+                [
+                    "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
                 "Scancode",
                 [
                     "This is the last version of the GPL text as published by the FSF. This\nvariation was published around about the time of the FSF released the GPL 3\nin July 2007.\nhttp://web.archive.org/web/20070716031727/http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt \nIt is found live here https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt\nand here https://www.gnu.org/licenses/old-licenses/gpl-2.0.html \nIt refers to the Franklin Street address and to the\nGNU Lesser General Public License everywhere both in the text and HTML\nformats. There are four other variations that were published over the\nyears. You can find these in the GPL rules as gpl-2.0_100.RULE,\ngpl-2.0_101.RULE, gpl-2.0_102.RULE and gpl-2.0_103.RULE. Their\ncorresponding YAML data explains their history and provides archive.org\npointer to their texts. Per SPDX.org, this license was released June 1991\nThis license is OSI certified."
@@ -918,6 +930,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "GNU General Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

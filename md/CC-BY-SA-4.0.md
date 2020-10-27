@@ -39,6 +39,12 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Strong copyleft licenses require you to share both the licensed
+    software (like the weak copyleft licenses, and larger programs that
+    you build with the licensed software, when you give copies to
+    others.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 Obligations
 -----------
 
@@ -508,6 +514,14 @@ Raw Data
             "Creative Commons Attribution Share Alike",
             "Creative Commons Attribution Share-Alike (CC-BY-SA) v4.0"
         ],
+        "__impliedComments": [
+            [
+                "BlueOak License List",
+                [
+                    "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ]
+        ],
         "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
@@ -646,6 +660,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "Creative Commons Attribution Share Alike"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

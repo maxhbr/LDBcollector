@@ -38,6 +38,19 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “In addition to the requirements of strong copyleft licenses,
+    network copyleft licenses require you to share larger programs that
+    you build with the licensed software not just when you give copies
+    to others, but also when you run the software for others to use over
+    the Internet or another network.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
+-   “Strong copyleft licenses require you to share both the licensed
+    software (like the weak copyleft licenses, and larger programs that
+    you build with the licensed software, when you give copies to
+    others.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “Per SPDX.org, this license was released 16 May 2008 This license is
     OSI certified. This license is available in the 22 official
     languages of the EU. The English version is included here. ”
@@ -423,6 +436,13 @@ Raw Data
         ],
         "__impliedComments": [
             [
+                "BlueOak License List",
+                [
+                    "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
+                    "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
                 "Scancode",
                 [
                     "Per SPDX.org, this license was released 16 May 2008 This license is OSI\ncertified. This license is available in the 22 official languages of the\nEU. The English version is included here.\n"
@@ -633,6 +653,15 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "European Union Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
+                                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

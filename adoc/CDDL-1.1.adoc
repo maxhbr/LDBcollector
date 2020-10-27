@@ -22,6 +22,9 @@ Policy])
 
 === General Comments
 
+* ``Weak copyleft licenses require sharing changes and additions to the
+licensed software when you give copies to others.'' (source:
+https://blueoakcouncil.org/copyleft[BlueOak License List])
 * ``per SPDX.org, same as 1.0, but changes name from Sun to Oracle in
 section 4.1 and adds patent infringement termination clause (section
 6.3) '' (source:
@@ -142,6 +145,12 @@ The code released under the CDDL shall be governed by the laws of the State of C
     ],
     "__impliedComments": [
         [
+            "BlueOak License List",
+            [
+                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+            ]
+        ],
+        [
             "Scancode",
             [
                 "per SPDX.org, same as 1.0, but changes name from Sun to Oracle in section\n4.1 and adds patent infringement termination clause (section 6.3)\n"
@@ -247,6 +256,14 @@ The code released under the CDDL shall be governed by the laws of the State of C
                 ],
                 "__impliedAmbiguousNames": [
                     "Common Development and Distribution License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

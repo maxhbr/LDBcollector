@@ -65,6 +65,9 @@ Policy])
 
 === General Comments
 
+* ``Weak copyleft licenses require sharing changes and additions to the
+licensed software when you give copies to others.'' (source:
+https://blueoakcouncil.org/copyleft[BlueOak License List])
 * ``Per SPDX.org, this license was released 29 June 2007. This license
 is OSI Certified. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml[Scancode])
@@ -491,6 +494,12 @@ Library.
     ],
     "__impliedComments": [
         [
+            "BlueOak License List",
+            [
+                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+            ]
+        ],
+        [
             "Scancode",
             [
                 "Per SPDX.org, this license was released 29 June 2007. This license is OSI\nCertified.\n"
@@ -768,6 +777,14 @@ Library.
                 ],
                 "__impliedAmbiguousNames": [
                     "GNU Library General Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

@@ -41,6 +41,12 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Strong copyleft licenses require you to share both the licensed
+    software (like the weak copyleft licenses, and larger programs that
+    you build with the licensed software, when you give copies to
+    others.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml "Scancode"))
 
@@ -133,6 +139,12 @@ Raw Data
             "Q Public License (QPL), Version 1.0"
         ],
         "__impliedComments": [
+            [
+                "BlueOak License List",
+                [
+                    "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -330,6 +342,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "Q Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

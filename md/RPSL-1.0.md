@@ -29,6 +29,19 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “In addition to the requirements of strong copyleft licenses,
+    network copyleft licenses require you to share larger programs that
+    you build with the licensed software not just when you give copies
+    to others, but also when you run the software for others to use over
+    the Internet or another network.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
+-   “Strong copyleft licenses require you to share both the licensed
+    software (like the weak copyleft licenses, and larger programs that
+    you build with the licensed software, when you give copies to
+    others.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “This license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpsl-1.0.yml "Scancode"))
 
@@ -590,6 +603,13 @@ Raw Data
         ],
         "__impliedComments": [
             [
+                "BlueOak License List",
+                [
+                    "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
+                    "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
                 "Scancode",
                 [
                     "This license is OSI certified"
@@ -810,6 +830,15 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "RealNetworks Public Source License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
+                                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

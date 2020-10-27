@@ -27,6 +27,11 @@ Policy])
 
 === General Comments
 
+* ``Strong copyleft licenses require you to share both the licensed
+software (like the weak copyleft licenses, and larger programs that you
+build with the licensed software, when you give copies to others.''
+(source: https://blueoakcouncil.org/copyleft[BlueOak License List])
+
 === URLs
 
 * *Homepage:* http://creativecommons.org/licenses/by-sa/3.0/
@@ -414,6 +419,14 @@ Creative Commons Notice
         "Creative Commons Attribution Share Alike",
         "Creative Commons Attribution Share-Alike (CC-BY-SA) v3.0"
     ],
+    "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -524,6 +537,14 @@ Creative Commons Notice
                 ],
                 "__impliedAmbiguousNames": [
                     "Creative Commons Attribution Share Alike"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

@@ -28,6 +28,10 @@ Policy])
 
 === General Comments
 
+* ``Strong copyleft licenses require you to share both the licensed
+software (like the weak copyleft licenses, and larger programs that you
+build with the licensed software, when you give copies to others.''
+(source: https://blueoakcouncil.org/copyleft[BlueOak License List])
 * ``Per SPDX.org, this license is OSI certified'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml[Scancode])
 
@@ -95,6 +99,12 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
         "Sleepycat License"
     ],
     "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
         [
             "Scancode",
             [
@@ -282,6 +292,14 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
                 ],
                 "__impliedAmbiguousNames": [
                     "Sleepycat License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

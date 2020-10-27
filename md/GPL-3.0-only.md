@@ -80,6 +80,12 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Strong copyleft licenses require you to share both the licensed
+    software (like the weak copyleft licenses, and larger programs that
+    you build with the licensed software, when you give copies to
+    others.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “Per SPDX.org, this license was released 29 June 2007 This license
     is OSI certified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0.yml "Scancode"))
@@ -984,6 +990,12 @@ Raw Data
         ],
         "__impliedComments": [
             [
+                "BlueOak License List",
+                [
+                    "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
                 "Scancode",
                 [
                     "Per SPDX.org, this license was released 29 June 2007 This license is OSI\ncertified.\n"
@@ -1252,6 +1264,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "GNU General Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

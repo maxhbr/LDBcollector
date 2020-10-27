@@ -7,6 +7,14 @@
     "__impliedAmbiguousNames": [
         "The Parity Public License"
     ],
+    "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -50,6 +58,14 @@
                 ],
                 "__impliedAmbiguousNames": [
                     "The Parity Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

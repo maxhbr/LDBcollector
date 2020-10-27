@@ -15,6 +15,12 @@
     ],
     "__impliedComments": [
         [
+            "BlueOak License List",
+            [
+                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+            ]
+        ],
+        [
             "Scancode",
             [
                 "Per SPDX.org, this license is OSI certified. This license was superseded by\nCPL.\n"
@@ -200,6 +206,14 @@
                 ],
                 "__impliedAmbiguousNames": [
                     "IBM Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

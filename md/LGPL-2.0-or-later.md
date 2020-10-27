@@ -26,6 +26,11 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Weak copyleft licenses require sharing changes and additions to the
+    licensed software when you give copies to others.” (source: [BlueOak
+    License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “Per SPDX.org, this license was released June 1991. This license has
     been superseded by LGPL v2.1 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0-plus.yml "Scancode"))
@@ -75,6 +80,12 @@ Raw Data
             "The GNU Lesser General Public License (LGPL)"
         ],
         "__impliedComments": [
+            [
+                "BlueOak License List",
+                [
+                    "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -209,6 +220,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "GNU Library General Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

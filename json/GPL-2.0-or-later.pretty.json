@@ -16,6 +16,12 @@
     ],
     "__impliedComments": [
         [
+            "BlueOak License List",
+            [
+                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
+        [
             "Scancode",
             [
                 "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n"
@@ -207,6 +213,14 @@
                 ],
                 "__impliedAmbiguousNames": [
                     "GNU General Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

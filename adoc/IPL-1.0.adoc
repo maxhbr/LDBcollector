@@ -32,6 +32,9 @@ Policy])
 
 === General Comments
 
+* ``Weak copyleft licenses require sharing changes and additions to the
+licensed software when you give copies to others.'' (source:
+https://blueoakcouncil.org/copyleft[BlueOak License List])
 * ``Per SPDX.org, this license is OSI certified. This license was
 superseded by CPL. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ibmpl-1.0.yml[Scancode])
@@ -137,6 +140,12 @@ This Agreement is governed by the laws of the State of New York and the intellec
         "IBM Public License, Version 1.0"
     ],
     "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+            ]
+        ],
         [
             "Scancode",
             [
@@ -323,6 +332,14 @@ This Agreement is governed by the laws of the State of New York and the intellec
                 ],
                 "__impliedAmbiguousNames": [
                     "IBM Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

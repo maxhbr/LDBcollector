@@ -41,6 +41,10 @@ Policy])
 
 === General Comments
 
+* ``Strong copyleft licenses require you to share both the licensed
+software (like the weak copyleft licenses, and larger programs that you
+build with the licensed software, when you give copies to others.''
+(source: https://blueoakcouncil.org/copyleft[BlueOak License List])
 * ``Per SPDX.org, this license is OSI certified.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml[Scancode])
 
@@ -127,6 +131,12 @@ This license is governed by the Laws of Norway. Disputes shall be settled by Osl
         "Q Public License (QPL), Version 1.0"
     ],
     "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
         [
             "Scancode",
             [
@@ -324,6 +334,14 @@ This license is governed by the Laws of Norway. Disputes shall be settled by Osl
                 ],
                 "__impliedAmbiguousNames": [
                     "Q Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

@@ -11,6 +11,12 @@
     ],
     "__impliedComments": [
         [
+            "BlueOak License List",
+            [
+                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+            ]
+        ],
+        [
             "Scancode",
             [
                 "per SPDX.org, same as 1.0, but changes name from Sun to Oracle in section\n4.1 and adds patent infringement termination clause (section 6.3)\n"
@@ -116,6 +122,14 @@
                 ],
                 "__impliedAmbiguousNames": [
                     "Common Development and Distribution License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

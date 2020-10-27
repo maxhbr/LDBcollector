@@ -38,6 +38,10 @@
 
 ** General Comments
 
+- "Weak copyleft licenses require sharing changes and additions to the
+  licensed software when you give copies to others." (source:
+  [[https://blueoakcouncil.org/copyleft][BlueOak License List]])
+
 - "Per SPDX.org, this license is OSI certified." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml][Scancode]])
 
@@ -166,6 +170,12 @@
           "Microsoft Reciprocal License"
       ],
       "__impliedComments": [
+          [
+              "BlueOak License List",
+              [
+                  "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+              ]
+          ],
           [
               "Scancode",
               [
@@ -393,6 +403,14 @@
                   ],
                   "__impliedAmbiguousNames": [
                       "Microsoft Reciprocal License"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "BlueOak License List",
+                          [
+                              "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                          ]
+                      ]
                   ],
                   "__impliedCopyleft": [
                       [

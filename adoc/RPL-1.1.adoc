@@ -22,6 +22,11 @@ https://spdx.org/licenses/RPL-1.1.html[SPDX])
 
 === General Comments
 
+* ``Maximal copyleft licenses answer the question “When does the license
+require you to share?” differently than other families. Maximal copyleft
+licenses require you to share software you make with others, and to
+license that software alike when you do.'' (source:
+https://blueoakcouncil.org/copyleft[BlueOak License List])
 * ``Per SPDX.org, this license has been superseded by the Reciprocal
 Public License, version 1.5 '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml[Scancode])
@@ -217,6 +222,12 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
     ],
     "__impliedComments": [
         [
+            "BlueOak License List",
+            [
+                "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+            ]
+        ],
+        [
             "Scancode",
             [
                 "Per SPDX.org, this license has been superseded by the Reciprocal Public\nLicense, version 1.5\n"
@@ -335,6 +346,14 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
                 ],
                 "__impliedAmbiguousNames": [
                     "Reciprocal Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

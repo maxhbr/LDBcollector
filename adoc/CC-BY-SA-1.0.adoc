@@ -24,6 +24,11 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
 === General Comments
 
+* ``Strong copyleft licenses require you to share both the licensed
+software (like the weak copyleft licenses, and larger programs that you
+build with the licensed software, when you give copies to others.''
+(source: https://blueoakcouncil.org/copyleft[BlueOak License List])
+
 === URLs
 
 * *Homepage:* http://creativecommons.org/licenses/by-sa/1.0/
@@ -107,6 +112,14 @@ Creative Commons may be contacted at http://creativecommons.org/.
     "__impliedAmbiguousNames": [
         "Creative Commons Attribution Share Alike",
         "Creative Commons Attribution-Share Alike Generic (CC-BY-SA), v1.0"
+    ],
+    "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ]
     ],
     "facts": {
         "SPDX": {
@@ -218,6 +231,14 @@ Creative Commons may be contacted at http://creativecommons.org/.
                 ],
                 "__impliedAmbiguousNames": [
                     "Creative Commons Attribution Share Alike"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

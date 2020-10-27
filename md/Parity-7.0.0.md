@@ -9,6 +9,13 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Maximal copyleft licenses answer the question “When does the
+    license require you to share?” differently than other families.
+    Maximal copyleft licenses require you to share software you make
+    with others, and to license that software alike when you do.”
+    (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 URLs
 ----
 
@@ -31,6 +38,14 @@ Raw Data
         "__impliedId": "Parity-7.0.0",
         "__impliedAmbiguousNames": [
             "The Parity Public License"
+        ],
+        "__impliedComments": [
+            [
+                "BlueOak License List",
+                [
+                    "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                ]
+            ]
         ],
         "facts": {
             "SPDX": {
@@ -75,6 +90,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "The Parity Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

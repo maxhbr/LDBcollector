@@ -16,6 +16,12 @@ https://spdx.org/licenses/CAL-1.0.html[SPDX])
 
 === General Comments
 
+* ``Maximal copyleft licenses answer the question “When does the license
+require you to share?” differently than other families. Maximal copyleft
+licenses require you to share software you make with others, and to
+license that software alike when you do.'' (source:
+https://blueoakcouncil.org/copyleft[BlueOak License List])
+
 === URLs
 
 * *SPDX:* http://spdx.org/licenses/CAL-1.0.json
@@ -36,6 +42,14 @@ https://spdx.org/licenses/CAL-1.0.html[SPDX])
     "__impliedId": "CAL-1.0",
     "__impliedAmbiguousNames": [
         "Cryptographic Autonomy License"
+    ],
+    "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+            ]
+        ]
     ],
     "facts": {
         "SPDX": {
@@ -94,6 +108,14 @@ https://spdx.org/licenses/CAL-1.0.html[SPDX])
                 ],
                 "__impliedAmbiguousNames": [
                     "Cryptographic Autonomy License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

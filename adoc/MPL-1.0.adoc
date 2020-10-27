@@ -29,6 +29,9 @@ Policy])
 
 === General Comments
 
+* ``Weak copyleft licenses require sharing changes and additions to the
+licensed software when you give copies to others.'' (source:
+https://blueoakcouncil.org/copyleft[BlueOak License List])
 * ``Per SPDX.org, this license was OSI certified. This license have been
 superseded by v1.1 '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-1.0.yml[Scancode])
@@ -184,6 +187,12 @@ EXHIBIT A.
         "Mozilla Public License (MPL)"
     ],
     "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+            ]
+        ],
         [
             "Scancode",
             [
@@ -374,6 +383,14 @@ EXHIBIT A.
                 ],
                 "__impliedAmbiguousNames": [
                     "Mozilla Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

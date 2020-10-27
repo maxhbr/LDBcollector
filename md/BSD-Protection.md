@@ -13,6 +13,12 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Strong copyleft licenses require you to share both the licensed
+    software (like the weak copyleft licenses, and larger programs that
+    you build with the licensed software, when you give copies to
+    others.” (source: [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 URLs
 ----
 
@@ -169,6 +175,14 @@ Raw Data
         "__impliedAmbiguousNames": [
             "BSD Protection License"
         ],
+        "__impliedComments": [
+            [
+                "BlueOak License List",
+                [
+                    "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -249,6 +263,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "BSD Protection License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

@@ -24,6 +24,17 @@ Policy])
 
 === General Comments
 
+* ``In addition to the requirements of strong copyleft licenses, network
+copyleft licenses require you to share larger programs that you build
+with the licensed software not just when you give copies to others, but
+also when you run the software for others to use over the Internet or
+another network.'' (source: https://blueoakcouncil.org/copyleft[BlueOak
+License List])
+* ``Strong copyleft licenses require you to share both the licensed
+software (like the weak copyleft licenses, and larger programs that you
+build with the licensed software, when you give copies to others.''
+(source: https://blueoakcouncil.org/copyleft[BlueOak License List])
+
 === URLs
 
 * *Homepage:* http://www.nexb.com/license/LICENSE-OSL-2.0.html
@@ -98,6 +109,15 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
     "__impliedId": "OSL-2.0",
     "__impliedAmbiguousNames": [
         "Open Software License"
+    ],
+    "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
+                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ]
     ],
     "facts": {
         "SPDX": {
@@ -203,6 +223,15 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
                 ],
                 "__impliedAmbiguousNames": [
                     "Open Software License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
+                            "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

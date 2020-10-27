@@ -24,6 +24,16 @@ https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
 
 === General Comments
 
+* ``In addition to the requirements of strong copyleft licenses, network
+copyleft licenses require you to share larger programs that you build
+with the licensed software not just when you give copies to others, but
+also when you run the software for others to use over the Internet or
+another network.'' (source: https://blueoakcouncil.org/copyleft[BlueOak
+License List])
+* ``Strong copyleft licenses require you to share both the licensed
+software (like the weak copyleft licenses, and larger programs that you
+build with the licensed software, when you give copies to others.''
+(source: https://blueoakcouncil.org/copyleft[BlueOak License List])
 * ``Per SPDX.org, this license was released 4 Jan 2001. This license was
 OSI certified '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml[Scancode])
@@ -320,6 +330,13 @@ License for the specific language governing rights and limitations under the Lic
     ],
     "__impliedComments": [
         [
+            "BlueOak License List",
+            [
+                "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
+                "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
+        [
             "Scancode",
             [
                 "Per SPDX.org, this license was released 4 Jan 2001. This license was OSI\ncertified\n"
@@ -467,6 +484,15 @@ License for the specific language governing rights and limitations under the Lic
                 ],
                 "__impliedAmbiguousNames": [
                     "Apple Public Source License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
+                            "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [

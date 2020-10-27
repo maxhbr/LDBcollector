@@ -43,6 +43,11 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Weak copyleft licenses require sharing changes and additions to the
+    licensed software when you give copies to others.” (source: [BlueOak
+    License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+
 -   “Per SPDX.org, this license was released in January 2012. This
     license list entry is for use when the standard MPL 2.0 is used, as
     indicated by the standard header (Exhibit A but no Exhibit B). ”
@@ -520,6 +525,12 @@ Raw Data
         ],
         "__impliedComments": [
             [
+                "BlueOak License List",
+                [
+                    "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ],
+            [
                 "Scancode",
                 [
                     "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the standard MPL 2.0 is used, as indicated by the\nstandard header (Exhibit A but no Exhibit B).\n"
@@ -722,6 +733,14 @@ Raw Data
                     ],
                     "__impliedAmbiguousNames": [
                         "Mozilla Public License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "BlueOak License List",
+                            [
+                                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                            ]
+                        ]
                     ],
                     "__impliedCopyleft": [
                         [

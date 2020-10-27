@@ -36,6 +36,10 @@
 
 ** General Comments
 
+- "Weak copyleft licenses require sharing changes and additions to the
+  licensed software when you give copies to others." (source:
+  [[https://blueoakcouncil.org/copyleft][BlueOak License List]])
+
 ** Obligations
 
 | Rights:            | Conditions:           | Limitations:   |
@@ -440,6 +444,14 @@
       "__impliedAmbiguousNames": [
           "Eclipse Public License"
       ],
+      "__impliedComments": [
+          [
+              "BlueOak License List",
+              [
+                  "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+              ]
+          ]
+      ],
       "__hasPatentHint": true,
       "facts": {
           "Open Knowledge International": {
@@ -606,6 +618,14 @@
                   ],
                   "__impliedAmbiguousNames": [
                       "Eclipse Public License"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "BlueOak License List",
+                          [
+                              "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                          ]
+                      ]
                   ],
                   "__impliedCopyleft": [
                       [

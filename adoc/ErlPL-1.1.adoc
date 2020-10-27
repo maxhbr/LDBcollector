@@ -18,6 +18,10 @@
 
 === General Comments
 
+* ``Weak copyleft licenses require sharing changes and additions to the
+licensed software when you give copies to others.'' (source:
+https://blueoakcouncil.org/copyleft[BlueOak License List])
+
 === URLs
 
 * *Homepage:* http://www.erlang.org/EPLICENSE
@@ -331,6 +335,14 @@ AB. All Rights Reserved.''
     "__impliedAmbiguousNames": [
         "Erlang Public License"
     ],
+    "__impliedComments": [
+        [
+            "BlueOak License List",
+            [
+                "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+            ]
+        ]
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -411,6 +423,14 @@ AB. All Rights Reserved.''
                 ],
                 "__impliedAmbiguousNames": [
                     "Erlang Public License"
+                ],
+                "__impliedComments": [
+                    [
+                        "BlueOak License List",
+                        [
+                            "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                        ]
+                    ]
                 ],
                 "__impliedCopyleft": [
                     [
