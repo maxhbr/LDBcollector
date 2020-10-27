@@ -13,6 +13,9 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
 
+General Comments
+----------------
+
 -   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
     und für Veränderungen der Software keine Bedingungen hinsichtlich
@@ -21,9 +24,6 @@ Comments on (easy) usability
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
     Software überführen.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
-General Comments
-----------------
 
 URLs
 ----
@@ -83,6 +83,14 @@ Raw Data
             "Curl License"
         ],
         "__impliedId": "curl",
+        "__impliedComments": [
+            [
+                "ifrOSS",
+                [
+                    "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                ]
+            ]
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -216,13 +224,12 @@ Raw Data
                     "__impliedNames": [
                         "Curl License"
                     ],
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
+                            [
+                                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -247,13 +254,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],

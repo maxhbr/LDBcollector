@@ -34,6 +34,12 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
+General Comments
+----------------
+
+-   “also known as Microsoft Permissive License (Ms-PL) v1.1” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml "Scancode"))
+
 -   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
     dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
     und für Veränderungen der Software keine Bedingungen hinsichtlich
@@ -42,12 +48,6 @@ Comments on (easy) usability
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
     Software überführen.” (source:
     [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
-General Comments
-----------------
-
--   “also known as Microsoft Permissive License (Ms-PL) v1.1” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml "Scancode"))
 
 Obligations
 -----------
@@ -187,6 +187,12 @@ Raw Data
                 "Scancode",
                 [
                     "also known as Microsoft Permissive License (Ms-PL) v1.1"
+                ]
+            ],
+            [
+                "ifrOSS",
+                [
+                    "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 ]
             ]
         ],
@@ -436,13 +442,12 @@ Raw Data
                     "__impliedNames": [
                         "Microsoft Public License (Ms-PL)"
                     ],
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
+                            [
+                                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -735,13 +740,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Is OSI Approved"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],

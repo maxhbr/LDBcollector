@@ -24,15 +24,6 @@ Comments on (easy) usability
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
--   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 -   **↓**“Advertisement clause (3.) is complicated and prone to
     conflicts” (source: Override)
 
@@ -42,6 +33,15 @@ General Comments
 -   “Per SPDX.org, this license was rescinded by the author on 22
     July 1999.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml "Scancode"))
+
+-   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
+    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
+    und für Veränderungen der Software keine Bedingungen hinsichtlich
+    des zu verwendenden Lizenztyps enthalten. Damit kann der
+    Lizenznehmer veränderte Versionen der Software unter beliebigen
+    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
+    Software überführen.” (source:
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
 
 URLs
 ----
@@ -149,6 +149,12 @@ Raw Data
                 "Scancode",
                 [
                     "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
+                ]
+            ],
+            [
+                "ifrOSS",
+                [
+                    "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 ]
             ]
         ],
@@ -377,13 +383,12 @@ Raw Data
                     "__impliedNames": [
                         "BSD 4-clause \"Original\" or \"Old\" License"
                     ],
-                    "__impliedJudgement": [
+                    "__impliedComments": [
                         [
                             "ifrOSS",
-                            {
-                                "tag": "NeutralJudgement",
-                                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            }
+                            [
+                                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                            ]
                         ]
                     ],
                     "__impliedCopyleft": [
@@ -504,13 +509,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Advertisement clause (3.) is complicated and prone to conflicts"
-                }
-            ],
-            [
-                "ifrOSS",
-                {
-                    "tag": "NeutralJudgement",
-                    "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 }
             ]
         ],

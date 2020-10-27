@@ -51,6 +51,11 @@
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]])
 
+** General Comments
+
+- "Per SPDX.org, this is OSI certified" (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml][Scancode]])
+
 - "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem
   Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und
   für Veränderungen der Software keine Bedingungen hinsichtlich des zu
@@ -58,11 +63,6 @@
   veränderte Versionen der Software unter beliebigen Lizenzbedingungen
   weiterverbreiten, also auch in proprietäre Software überführen."
   (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
-
-** General Comments
-
-- "Per SPDX.org, this is OSI certified" (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml][Scancode]])
 
 ** Obligations
 
@@ -166,6 +166,12 @@
               "Scancode",
               [
                   "Per SPDX.org, this is OSI certified"
+              ]
+          ],
+          [
+              "ifrOSS",
+              [
+                  "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
               ]
           ]
       ],
@@ -444,13 +450,12 @@
                   "__impliedNames": [
                       "Zlib license"
                   ],
-                  "__impliedJudgement": [
+                  "__impliedComments": [
                       [
                           "ifrOSS",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                          }
+                          [
+                              "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                          ]
                       ]
                   ],
                   "__impliedCopyleft": [
@@ -722,13 +727,6 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Is OSI Approved"
-              }
-          ],
-          [
-              "ifrOSS",
-              {
-                  "tag": "NeutralJudgement",
-                  "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
               }
           ]
       ],

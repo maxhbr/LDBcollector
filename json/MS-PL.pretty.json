@@ -16,6 +16,12 @@
             [
                 "also known as Microsoft Permissive License (Ms-PL) v1.1"
             ]
+        ],
+        [
+            "ifrOSS",
+            [
+                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
+            ]
         ]
     ],
     "__hasPatentHint": true,
@@ -264,13 +270,12 @@
                 "__impliedNames": [
                     "Microsoft Public License (Ms-PL)"
                 ],
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "ifrOSS",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
-                        }
+                        [
+                            "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -563,13 +568,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "ifrOSS",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
             }
         ]
     ],

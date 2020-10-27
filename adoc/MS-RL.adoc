@@ -34,15 +34,15 @@ https://spdx.org/licenses/MS-RL.html[SPDX])
 * **↑**``This software Licenses is OK for Fedora'' (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
-* ``Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
-Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke
-umfasst, sondern definierte Ausnahmen enthält.'' (source:
-https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 
 === General Comments
 
 * ``Per SPDX.org, this license is OSI certified.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml[Scancode])
+* ``Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
+Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke
+umfasst, sondern definierte Ausnahmen enthält.'' (source:
+https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
 
 === Obligations
 
@@ -164,6 +164,12 @@ This license governs use of the accompanying software. If you use the software, 
             "Scancode",
             [
                 "Per SPDX.org, this license is OSI certified."
+            ]
+        ],
+        [
+            "ifrOSS",
+            [
+                "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
             ]
         ]
     ],
@@ -378,13 +384,12 @@ This license governs use of the accompanying software. If you use the software, 
                 "__impliedNames": [
                     "Microsoft Reciprocal License (Ms-RL)"
                 ],
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "ifrOSS",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
-                        }
+                        [
+                            "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -540,13 +545,6 @@ This license governs use of the accompanying software. If you use the software, 
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "ifrOSS",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
             }
         ]
     ],

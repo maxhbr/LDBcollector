@@ -15,6 +15,12 @@
             [
                 "Per SPDX.org, this license is OSI certified."
             ]
+        ],
+        [
+            "ifrOSS",
+            [
+                "Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält."
+            ]
         ]
     ],
     "__hasPatentHint": true,
@@ -228,13 +234,12 @@
                 "__impliedNames": [
                     "Microsoft Reciprocal License (Ms-RL)"
                 ],
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "ifrOSS",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält."
-                        }
+                        [
+                            "Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -390,13 +395,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "ifrOSS",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält."
             }
         ]
     ],

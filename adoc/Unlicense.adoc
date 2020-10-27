@@ -35,6 +35,11 @@ https://blueoakcouncil.org/list[BlueOak License List])
 * **↑**``This software Licenses is OK for Fedora'' (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
+
+=== General Comments
+
+* ``Per SPDX.org, this is a public domain dedication'' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml[Scancode])
 * ``Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
 dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und
 für Veränderungen der Software keine Bedingungen hinsichtlich des zu
@@ -42,11 +47,6 @@ verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen.''
 (source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
-
-=== General Comments
-
-* ``Per SPDX.org, this is a public domain dedication'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml[Scancode])
 
 === Obligations
 
@@ -125,6 +125,12 @@ For more information, please refer to <http://unlicense.org/>
             "Scancode",
             [
                 "Per SPDX.org, this is a public domain dedication"
+            ]
+        ],
+        [
+            "ifrOSS",
+            [
+                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
             ]
         ]
     ],
@@ -317,13 +323,12 @@ For more information, please refer to <http://unlicense.org/>
                 "__impliedNames": [
                     "Unlicense"
                 ],
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "ifrOSS",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                        }
+                        [
+                            "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -484,13 +489,6 @@ For more information, please refer to <http://unlicense.org/>
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is UNENCUMBERED"
-            }
-        ],
-        [
-            "ifrOSS",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
             }
         ]
     ],

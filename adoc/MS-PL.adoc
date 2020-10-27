@@ -36,6 +36,11 @@ https://blueoakcouncil.org/list[BlueOak License List])
 * **↑**``This software Licenses is OK for Fedora'' (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki])
+
+=== General Comments
+
+* ``also known as Microsoft Permissive License (Ms-PL) v1.1'' (source:
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml[Scancode])
 * ``Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
 dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und
 für Veränderungen der Software keine Bedingungen hinsichtlich des zu
@@ -43,11 +48,6 @@ verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen.''
 (source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
-
-=== General Comments
-
-* ``also known as Microsoft Permissive License (Ms-PL) v1.1'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml[Scancode])
 
 === Obligations
 
@@ -195,6 +195,12 @@ non-infringement.
             "Scancode",
             [
                 "also known as Microsoft Permissive License (Ms-PL) v1.1"
+            ]
+        ],
+        [
+            "ifrOSS",
+            [
+                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
             ]
         ]
     ],
@@ -444,13 +450,12 @@ non-infringement.
                 "__impliedNames": [
                     "Microsoft Public License (Ms-PL)"
                 ],
-                "__impliedJudgement": [
+                "__impliedComments": [
                     [
                         "ifrOSS",
-                        {
-                            "tag": "NeutralJudgement",
-                            "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                        }
+                        [
+                            "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
+                        ]
                     ]
                 ],
                 "__impliedCopyleft": [
@@ -743,13 +748,6 @@ non-infringement.
             {
                 "tag": "PositiveJudgement",
                 "contents": "Is OSI Approved"
-            }
-        ],
-        [
-            "ifrOSS",
-            {
-                "tag": "NeutralJudgement",
-                "contents": "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
             }
         ]
     ],
