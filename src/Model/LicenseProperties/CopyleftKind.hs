@@ -12,13 +12,15 @@ import           MyPrelude
 import qualified Data.Map as M
 
 {-
-    CopyleftKind
+    MaybeCopyleft
      | \
      |  - Copyleft
      |     | \
      |     |  - StrongCopyleft
      |     |     \
      |     |      - SaaSCopyleft
+     |     |        \
+     |     |         - MaximalCopyleft
      |     \
      |       - WeakCopyleft
      \
@@ -28,6 +30,7 @@ data CopyleftKind
   = StrongCopyleft
   | WeakCopyleft
   | SaaSCopyleft
+  | MaximalCopyleft
   | Copyleft
   | MaybeCopyleft
   | NoCopyleft
@@ -35,9 +38,10 @@ data CopyleftKind
 instance ToJSON CopyleftKind
 instance Ord CopyleftKind where
   compare k1 k2 = let
-      kOrder = M.fromList [ (StrongCopyleft, 5 :: Int)
-                          , (WeakCopyleft, 4)
-                          , (SaaSCopyleft, 3)
+      kOrder = M.fromList [ (MaximalCopyleft, 6 :: Int)
+                          , (SaaSCopyleft, 5)
+                          , (StrongCopyleft, 4)
+                          , (WeakCopyleft, 3)
                           , (Copyleft, 2)
                           , (MaybeCopyleft, 1)
                           , (NoCopyleft, 0) ]
@@ -46,6 +50,8 @@ instance Ord CopyleftKind where
        else compare (kOrder M.! k1)  (kOrder M.! k2)
 pessimisticMergeCopyleft :: CopyleftKind -> CopyleftKind -> CopyleftKind
 -- pessimisticMergeCopyleft = max
+pessimisticMergeCopyleft MaximalCopyleft _     = MaximalCopyleft
+pessimisticMergeCopyleft _ MaximalCopyleft     = MaximalCopyleft
 pessimisticMergeCopyleft SaaSCopyleft _        = SaaSCopyleft
 pessimisticMergeCopyleft _ SaaSCopyleft        = SaaSCopyleft
 pessimisticMergeCopyleft StrongCopyleft _      = StrongCopyleft
