@@ -168,7 +168,8 @@ Raw Data
                 "id": "eGenix",
                 "_implications": {
                     "__impliedNames": [
-                        "eGenix"
+                        "eGenix",
+                        "eGenix.com Public License 1.1.0"
                     ],
                     "__impliedJudgement": [
                         [

@@ -147,7 +147,8 @@ Raw Data
                 "id": "Rdisc",
                 "_implications": {
                     "__impliedNames": [
-                        "Rdisc"
+                        "Rdisc",
+                        "Rdisc License"
                     ],
                     "__impliedJudgement": [
                         [

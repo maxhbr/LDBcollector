@@ -192,7 +192,8 @@ Raw Data
                 "id": "XFree86-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "XFree86-1.1"
+                        "XFree86-1.1",
+                        "XFree86 License 1.1"
                     ],
                     "__impliedJudgement": [
                         [

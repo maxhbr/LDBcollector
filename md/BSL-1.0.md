@@ -332,7 +332,8 @@ Raw Data
                 "id": "BSL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "BSL-1.0"
+                        "BSL-1.0",
+                        "Boost Software License 1.0"
                     ],
                     "__impliedJudgement": [
                         [

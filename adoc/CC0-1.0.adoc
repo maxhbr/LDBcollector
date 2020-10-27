@@ -342,7 +342,8 @@ express Statement of Purpose.
             "id": "CC0-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "CC0-1.0"
+                    "CC0-1.0",
+                    "Creative Commons Zero v1.0 Universal"
                 ],
                 "__impliedJudgement": [
                     [

@@ -125,7 +125,8 @@ Raw Data
                 "id": "AML",
                 "_implications": {
                     "__impliedNames": [
-                        "AML"
+                        "AML",
+                        "Apple MIT License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -298,7 +298,8 @@ Raw Data
                 "id": "LPL-1.02",
                 "_implications": {
                     "__impliedNames": [
-                        "LPL-1.02"
+                        "LPL-1.02",
+                        "Lucent Public License v1.02"
                     ],
                     "__impliedJudgement": [
                         [

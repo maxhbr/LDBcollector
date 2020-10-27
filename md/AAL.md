@@ -265,7 +265,8 @@ Raw Data
                 "id": "AAL",
                 "_implications": {
                     "__impliedNames": [
-                        "AAL"
+                        "AAL",
+                        "Attribution Assurance License"
                     ],
                     "__impliedJudgement": [
                         [

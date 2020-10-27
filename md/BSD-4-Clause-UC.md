@@ -332,7 +332,8 @@ Raw Data
                 "id": "BSD-4-Clause-UC",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-4-Clause-UC"
+                        "BSD-4-Clause-UC",
+                        "BSD-4-Clause (University of California-Specific)"
                     ],
                     "__impliedJudgement": [
                         [

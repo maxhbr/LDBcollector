@@ -249,7 +249,8 @@ Raw Data
                 "id": "BSD-2-Clause-Patent",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-2-Clause-Patent"
+                        "BSD-2-Clause-Patent",
+                        "BSD-2-Clause Plus Patent License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -308,7 +308,8 @@ Raw Data
                 "id": "Artistic-1.0-cl8",
                 "_implications": {
                     "__impliedNames": [
-                        "Artistic-1.0-cl8"
+                        "Artistic-1.0-cl8",
+                        "Artistic License 1.0 w/clause 8"
                     ],
                     "__impliedJudgement": [
                         [

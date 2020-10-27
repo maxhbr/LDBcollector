@@ -143,7 +143,8 @@ Raw Data
                 "id": "TU-Berlin-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "TU-Berlin-1.0"
+                        "TU-Berlin-1.0",
+                        "Technische Universitaet Berlin License 1.0"
                     ],
                     "__impliedJudgement": [
                         [

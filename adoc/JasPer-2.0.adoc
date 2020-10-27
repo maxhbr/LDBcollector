@@ -182,7 +182,8 @@ EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
             "id": "JasPer-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "JasPer-2.0"
+                    "JasPer-2.0",
+                    "JasPer License"
                 ],
                 "__impliedJudgement": [
                     [

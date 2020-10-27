@@ -263,7 +263,8 @@ Raw Data
                 "id": "MirOS",
                 "_implications": {
                     "__impliedNames": [
-                        "MirOS"
+                        "MirOS",
+                        "MirOS License"
                     ],
                     "__impliedJudgement": [
                         [

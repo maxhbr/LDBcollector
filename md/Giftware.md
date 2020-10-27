@@ -158,7 +158,8 @@ Raw Data
                 "id": "Giftware",
                 "_implications": {
                     "__impliedNames": [
-                        "Giftware"
+                        "Giftware",
+                        "Giftware License"
                     ],
                     "__impliedJudgement": [
                         [

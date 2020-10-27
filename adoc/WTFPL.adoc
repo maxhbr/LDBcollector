@@ -246,7 +246,8 @@ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
             "id": "WTFPL",
             "_implications": {
                 "__impliedNames": [
-                    "WTFPL"
+                    "WTFPL",
+                    "Do What The F*ck You Want To Public License"
                 ],
                 "__impliedJudgement": [
                     [

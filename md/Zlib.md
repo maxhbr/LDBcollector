@@ -402,7 +402,8 @@ Raw Data
                 "id": "Zlib",
                 "_implications": {
                     "__impliedNames": [
-                        "Zlib"
+                        "Zlib",
+                        "zlib License"
                     ],
                     "__impliedJudgement": [
                         [

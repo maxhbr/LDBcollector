@@ -166,7 +166,8 @@ confusion about 2.2.1 and 2.1.8.*.
             "id": "xinetd",
             "_implications": {
                 "__impliedNames": [
-                    "xinetd"
+                    "xinetd",
+                    "xinetd License"
                 ],
                 "__impliedJudgement": [
                     [

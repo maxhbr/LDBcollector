@@ -143,7 +143,8 @@ Raw Data
                 "id": "Newsletr",
                 "_implications": {
                     "__impliedNames": [
-                        "Newsletr"
+                        "Newsletr",
+                        "Newsletr License"
                     ],
                     "__impliedJudgement": [
                         [

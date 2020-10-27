@@ -143,7 +143,8 @@ Raw Data
                 "id": "BSD-Source-Code",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-Source-Code"
+                        "BSD-Source-Code",
+                        "BSD Source Code Attribution"
                     ],
                     "__impliedJudgement": [
                         [

@@ -168,7 +168,8 @@ Raw Data
                 "id": "Qhull",
                 "_implications": {
                     "__impliedNames": [
-                        "Qhull"
+                        "Qhull",
+                        "Qhull License"
                     ],
                     "__impliedJudgement": [
                         [

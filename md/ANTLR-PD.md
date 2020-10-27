@@ -183,7 +183,8 @@ Raw Data
                 "id": "ANTLR-PD",
                 "_implications": {
                     "__impliedNames": [
-                        "ANTLR-PD"
+                        "ANTLR-PD",
+                        "ANTLR Software Rights Notice"
                     ],
                     "__impliedJudgement": [
                         [

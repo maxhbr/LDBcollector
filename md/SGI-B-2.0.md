@@ -173,7 +173,8 @@ Raw Data
                 "id": "SGI-B-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "SGI-B-2.0"
+                        "SGI-B-2.0",
+                        "SGI Free Software License B v2.0"
                     ],
                     "__impliedJudgement": [
                         [

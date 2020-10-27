@@ -295,7 +295,8 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "id": "LPL-1.02",
             "_implications": {
                 "__impliedNames": [
-                    "LPL-1.02"
+                    "LPL-1.02",
+                    "Lucent Public License v1.02"
                 ],
                 "__impliedJudgement": [
                     [

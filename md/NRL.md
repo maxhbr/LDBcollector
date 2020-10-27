@@ -144,7 +144,8 @@ Raw Data
                 "id": "NRL",
                 "_implications": {
                     "__impliedNames": [
-                        "NRL"
+                        "NRL",
+                        "NRL License"
                     ],
                     "__impliedJudgement": [
                         [

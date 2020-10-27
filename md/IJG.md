@@ -250,7 +250,8 @@ Raw Data
                 "id": "IJG",
                 "_implications": {
                     "__impliedNames": [
-                        "IJG"
+                        "IJG",
+                        "Independent JPEG Group License"
                     ],
                     "__impliedJudgement": [
                         [

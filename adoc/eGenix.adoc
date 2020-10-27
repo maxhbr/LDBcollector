@@ -168,7 +168,8 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
             "id": "eGenix",
             "_implications": {
                 "__impliedNames": [
-                    "eGenix"
+                    "eGenix",
+                    "eGenix.com Public License 1.1.0"
                 ],
                 "__impliedJudgement": [
                     [

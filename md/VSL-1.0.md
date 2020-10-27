@@ -280,7 +280,8 @@ Raw Data
                 "id": "VSL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "VSL-1.0"
+                        "VSL-1.0",
+                        "Vovida Software License v1.0"
                     ],
                     "__impliedJudgement": [
                         [

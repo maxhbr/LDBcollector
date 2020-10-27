@@ -146,7 +146,8 @@ Raw Data
                 "id": "Wsuipa",
                 "_implications": {
                     "__impliedNames": [
-                        "Wsuipa"
+                        "Wsuipa",
+                        "Wsuipa License"
                     ],
                     "__impliedJudgement": [
                         [

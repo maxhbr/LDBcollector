@@ -135,7 +135,8 @@ Raw Data
                 "id": "Afmparse",
                 "_implications": {
                     "__impliedNames": [
-                        "Afmparse"
+                        "Afmparse",
+                        "Afmparse License"
                     ],
                     "__impliedJudgement": [
                         [

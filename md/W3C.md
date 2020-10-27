@@ -280,7 +280,8 @@ Raw Data
                 "id": "W3C",
                 "_implications": {
                     "__impliedNames": [
-                        "W3C"
+                        "W3C",
+                        "W3C Software Notice and License (2002-12-31)"
                     ],
                     "__impliedJudgement": [
                         [

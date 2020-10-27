@@ -234,7 +234,8 @@ Raw Data
                 "id": "zlib-acknowledgement",
                 "_implications": {
                     "__impliedNames": [
-                        "zlib-acknowledgement"
+                        "zlib-acknowledgement",
+                        "zlib/libpng License with Acknowledgement"
                     ],
                     "__impliedJudgement": [
                         [

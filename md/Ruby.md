@@ -207,7 +207,8 @@ Raw Data
                 "id": "Ruby",
                 "_implications": {
                     "__impliedNames": [
-                        "Ruby"
+                        "Ruby",
+                        "Ruby License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -383,7 +383,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "id": "Net-SNMP",
             "_implications": {
                 "__impliedNames": [
-                    "Net-SNMP"
+                    "Net-SNMP",
+                    "Net-SNMP License"
                 ],
                 "__impliedJudgement": [
                     [

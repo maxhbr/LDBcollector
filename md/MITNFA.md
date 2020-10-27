@@ -171,7 +171,8 @@ Raw Data
                 "id": "MITNFA",
                 "_implications": {
                     "__impliedNames": [
-                        "MITNFA"
+                        "MITNFA",
+                        "MIT +no-false-attribs license"
                     ],
                     "__impliedJudgement": [
                         [

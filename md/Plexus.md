@@ -222,7 +222,8 @@ Raw Data
                 "id": "Plexus",
                 "_implications": {
                     "__impliedNames": [
-                        "Plexus"
+                        "Plexus",
+                        "Plexus Classworlds License"
                     ],
                     "__impliedJudgement": [
                         [

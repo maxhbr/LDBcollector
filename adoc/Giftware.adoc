@@ -158,7 +158,8 @@ DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPR
             "id": "Giftware",
             "_implications": {
                 "__impliedNames": [
-                    "Giftware"
+                    "Giftware",
+                    "Giftware License"
                 ],
                 "__impliedJudgement": [
                     [

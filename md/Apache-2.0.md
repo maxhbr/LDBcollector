@@ -576,7 +576,8 @@ Raw Data
                 "id": "Apache-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "Apache-2.0"
+                        "Apache-2.0",
+                        "Apache License 2.0"
                     ],
                     "__impliedJudgement": [
                         [

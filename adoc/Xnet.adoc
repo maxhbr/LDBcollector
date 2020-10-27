@@ -237,7 +237,8 @@ California and by the laws of the United States of America.
             "id": "Xnet",
             "_implications": {
                 "__impliedNames": [
-                    "Xnet"
+                    "Xnet",
+                    "X.Net License"
                 ],
                 "__impliedJudgement": [
                     [

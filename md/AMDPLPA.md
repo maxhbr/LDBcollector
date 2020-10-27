@@ -201,7 +201,8 @@ Raw Data
                 "id": "AMDPLPA",
                 "_implications": {
                     "__impliedNames": [
-                        "AMDPLPA"
+                        "AMDPLPA",
+                        "AMD's plpa_map.c License"
                     ],
                     "__impliedJudgement": [
                         [

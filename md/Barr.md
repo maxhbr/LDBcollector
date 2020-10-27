@@ -128,7 +128,8 @@ Raw Data
                 "id": "Barr",
                 "_implications": {
                     "__impliedNames": [
-                        "Barr"
+                        "Barr",
+                        "Barr License"
                     ],
                     "__impliedJudgement": [
                         [

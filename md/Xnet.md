@@ -240,7 +240,8 @@ Raw Data
                 "id": "Xnet",
                 "_implications": {
                     "__impliedNames": [
-                        "Xnet"
+                        "Xnet",
+                        "X.Net License"
                     ],
                     "__impliedJudgement": [
                         [

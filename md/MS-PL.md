@@ -406,7 +406,8 @@ Raw Data
                 "id": "MS-PL",
                 "_implications": {
                     "__impliedNames": [
-                        "MS-PL"
+                        "MS-PL",
+                        "Microsoft Public License"
                     ],
                     "__impliedJudgement": [
                         [

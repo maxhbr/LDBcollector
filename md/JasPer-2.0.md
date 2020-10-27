@@ -182,7 +182,8 @@ Raw Data
                 "id": "JasPer-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "JasPer-2.0"
+                        "JasPer-2.0",
+                        "JasPer License"
                     ],
                     "__impliedJudgement": [
                         [

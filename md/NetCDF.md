@@ -146,7 +146,8 @@ Raw Data
                 "id": "NetCDF",
                 "_implications": {
                     "__impliedNames": [
-                        "NetCDF"
+                        "NetCDF",
+                        "NetCDF license"
                     ],
                     "__impliedJudgement": [
                         [

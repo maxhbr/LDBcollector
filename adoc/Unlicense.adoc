@@ -287,7 +287,8 @@ For more information, please refer to <http://unlicense.org/>
             "id": "Unlicense",
             "_implications": {
                 "__impliedNames": [
-                    "Unlicense"
+                    "Unlicense",
+                    "The Unlicense"
                 ],
                 "__impliedJudgement": [
                     [

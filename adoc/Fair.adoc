@@ -232,7 +232,8 @@ DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
             "id": "Fair",
             "_implications": {
                 "__impliedNames": [
-                    "Fair"
+                    "Fair",
+                    "Fair License"
                 ],
                 "__impliedJudgement": [
                     [

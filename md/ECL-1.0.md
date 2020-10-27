@@ -231,7 +231,8 @@ Raw Data
                 "id": "ECL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "ECL-1.0"
+                        "ECL-1.0",
+                        "Educational Community License v1.0"
                     ],
                     "__impliedJudgement": [
                         [

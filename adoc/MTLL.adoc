@@ -162,7 +162,8 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
             "id": "MTLL",
             "_implications": {
                 "__impliedNames": [
-                    "MTLL"
+                    "MTLL",
+                    "Matrix Template Library License"
                 ],
                 "__impliedJudgement": [
                     [

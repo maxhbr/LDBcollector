@@ -396,7 +396,8 @@ any resulting litigation.
             "id": "LPL-1.0",
             "_implications": {
                 "__impliedNames": [
-                    "LPL-1.0"
+                    "LPL-1.0",
+                    "Lucent Public License Version 1.0"
                 ],
                 "__impliedJudgement": [
                     [

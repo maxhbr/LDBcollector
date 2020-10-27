@@ -294,7 +294,8 @@ Raw Data
                 "id": "ClArtistic",
                 "_implications": {
                     "__impliedNames": [
-                        "ClArtistic"
+                        "ClArtistic",
+                        "Clarified Artistic License"
                     ],
                     "__impliedJudgement": [
                         [

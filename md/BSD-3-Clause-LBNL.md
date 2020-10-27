@@ -141,7 +141,8 @@ Raw Data
                 "id": "BSD-3-Clause-LBNL",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-3-Clause-LBNL"
+                        "BSD-3-Clause-LBNL",
+                        "Lawrence Berkeley National Labs BSD variant license"
                     ],
                     "__impliedJudgement": [
                         [

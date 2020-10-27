@@ -316,7 +316,8 @@ e) to display the Original Work publicly.
             "id": "AFL-3.0",
             "_implications": {
                 "__impliedNames": [
-                    "AFL-3.0"
+                    "AFL-3.0",
+                    "Academic Free License v3.0"
                 ],
                 "__impliedJudgement": [
                     [

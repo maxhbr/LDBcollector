@@ -250,7 +250,8 @@ Raw Data
                 "id": "PostgreSQL",
                 "_implications": {
                     "__impliedNames": [
-                        "PostgreSQL"
+                        "PostgreSQL",
+                        "PostgreSQL License"
                     ],
                     "__impliedJudgement": [
                         [

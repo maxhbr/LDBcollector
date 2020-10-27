@@ -215,7 +215,8 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
             "id": "AFL-2.1",
             "_implications": {
                 "__impliedNames": [
-                    "AFL-2.1"
+                    "AFL-2.1",
+                    "Academic Free License v2.1"
                 ],
                 "__impliedJudgement": [
                     [

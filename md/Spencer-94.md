@@ -148,7 +148,8 @@ Raw Data
                 "id": "Spencer-94",
                 "_implications": {
                     "__impliedNames": [
-                        "Spencer-94"
+                        "Spencer-94",
+                        "Spencer License 94"
                     ],
                     "__impliedJudgement": [
                         [

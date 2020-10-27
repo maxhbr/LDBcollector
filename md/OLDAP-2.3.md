@@ -191,7 +191,8 @@ Raw Data
                 "id": "OLDAP-2.3",
                 "_implications": {
                     "__impliedNames": [
-                        "OLDAP-2.3"
+                        "OLDAP-2.3",
+                        "Open LDAP Public License v2.3"
                     ],
                     "__impliedJudgement": [
                         [

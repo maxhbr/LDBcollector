@@ -269,7 +269,8 @@ Raw Data
                 "id": "NTP",
                 "_implications": {
                     "__impliedNames": [
-                        "NTP"
+                        "NTP",
+                        "NTP License"
                     ],
                     "__impliedJudgement": [
                         [

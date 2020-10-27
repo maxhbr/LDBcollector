@@ -135,7 +135,8 @@ Raw Data
                 "id": "CNRI-Jython",
                 "_implications": {
                     "__impliedNames": [
-                        "CNRI-Jython"
+                        "CNRI-Jython",
+                        "CNRI Jython License"
                     ],
                     "__impliedJudgement": [
                         [

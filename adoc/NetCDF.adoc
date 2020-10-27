@@ -147,7 +147,8 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
             "id": "NetCDF",
             "_implications": {
                 "__impliedNames": [
-                    "NetCDF"
+                    "NetCDF",
+                    "NetCDF license"
                 ],
                 "__impliedJudgement": [
                     [

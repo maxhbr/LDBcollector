@@ -159,7 +159,8 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
             "id": "SWL",
             "_implications": {
                 "__impliedNames": [
-                    "SWL"
+                    "SWL",
+                    "Scheme Widget Library (SWL) Software License Agreement"
                 ],
                 "__impliedJudgement": [
                     [

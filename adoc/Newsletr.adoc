@@ -145,7 +145,8 @@ Permission is granted to anyone to use this software for any purpose on any comp
             "id": "Newsletr",
             "_implications": {
                 "__impliedNames": [
-                    "Newsletr"
+                    "Newsletr",
+                    "Newsletr License"
                 ],
                 "__impliedJudgement": [
                     [

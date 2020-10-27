@@ -173,7 +173,8 @@ Raw Data
                 "id": "BSD-3-Clause-No-Nuclear-License-2014",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-3-Clause-No-Nuclear-License-2014"
+                        "BSD-3-Clause-No-Nuclear-License-2014",
+                        "BSD 3-Clause No Nuclear License 2014"
                     ],
                     "__impliedJudgement": [
                         [

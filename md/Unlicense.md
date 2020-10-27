@@ -273,7 +273,8 @@ Raw Data
                 "id": "Unlicense",
                 "_implications": {
                     "__impliedNames": [
-                        "Unlicense"
+                        "Unlicense",
+                        "The Unlicense"
                     ],
                     "__impliedJudgement": [
                         [

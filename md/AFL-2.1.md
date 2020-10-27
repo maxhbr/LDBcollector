@@ -218,7 +218,8 @@ Raw Data
                 "id": "AFL-2.1",
                 "_implications": {
                     "__impliedNames": [
-                        "AFL-2.1"
+                        "AFL-2.1",
+                        "Academic Free License v2.1"
                     ],
                     "__impliedJudgement": [
                         [

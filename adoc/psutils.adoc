@@ -158,7 +158,8 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
             "id": "psutils",
             "_implications": {
                 "__impliedNames": [
-                    "psutils"
+                    "psutils",
+                    "psutils License"
                 ],
                 "__impliedJudgement": [
                     [

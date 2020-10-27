@@ -244,7 +244,8 @@ Raw Data
                 "id": "CNRI-Python",
                 "_implications": {
                     "__impliedNames": [
-                        "CNRI-Python"
+                        "CNRI-Python",
+                        "CNRI Python License"
                     ],
                     "__impliedJudgement": [
                         [

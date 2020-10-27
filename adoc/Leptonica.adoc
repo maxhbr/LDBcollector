@@ -126,7 +126,8 @@ No author or distributor accepts responsibility to anyone for the consequences o
             "id": "Leptonica",
             "_implications": {
                 "__impliedNames": [
-                    "Leptonica"
+                    "Leptonica",
+                    "Leptonica License"
                 ],
                 "__impliedJudgement": [
                     [

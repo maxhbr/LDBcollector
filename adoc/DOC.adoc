@@ -137,7 +137,8 @@ Back to the ACE home page.
             "id": "DOC",
             "_implications": {
                 "__impliedNames": [
-                    "DOC"
+                    "DOC",
+                    "DOC License"
                 ],
                 "__impliedJudgement": [
                     [

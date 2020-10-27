@@ -128,7 +128,8 @@ Raw Data
                 "id": "CrystalStacker",
                 "_implications": {
                     "__impliedNames": [
-                        "CrystalStacker"
+                        "CrystalStacker",
+                        "CrystalStacker License"
                     ],
                     "__impliedJudgement": [
                         [

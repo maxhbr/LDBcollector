@@ -259,7 +259,8 @@ October 31, 2008
             "id": "Libpng",
             "_implications": {
                 "__impliedNames": [
-                    "Libpng"
+                    "Libpng",
+                    "libpng License"
                 ],
                 "__impliedJudgement": [
                     [

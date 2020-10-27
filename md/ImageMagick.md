@@ -183,7 +183,8 @@ Raw Data
                 "id": "ImageMagick",
                 "_implications": {
                     "__impliedNames": [
-                        "ImageMagick"
+                        "ImageMagick",
+                        "ImageMagick License"
                     ],
                     "__impliedJudgement": [
                         [

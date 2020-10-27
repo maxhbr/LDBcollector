@@ -153,7 +153,8 @@ Raw Data
                 "id": "MIT-advertising",
                 "_implications": {
                     "__impliedNames": [
-                        "MIT-advertising"
+                        "MIT-advertising",
+                        "Enlightenment License (e16)"
                     ],
                     "__impliedJudgement": [
                         [

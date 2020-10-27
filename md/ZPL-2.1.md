@@ -203,7 +203,8 @@ Raw Data
                 "id": "ZPL-2.1",
                 "_implications": {
                     "__impliedNames": [
-                        "ZPL-2.1"
+                        "ZPL-2.1",
+                        "Zope Public License 2.1"
                     ],
                     "__impliedJudgement": [
                         [

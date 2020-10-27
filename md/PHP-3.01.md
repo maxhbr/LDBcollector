@@ -224,7 +224,8 @@ Raw Data
                 "id": "PHP-3.01",
                 "_implications": {
                     "__impliedNames": [
-                        "PHP-3.01"
+                        "PHP-3.01",
+                        "PHP License v3.01"
                     ],
                     "__impliedJudgement": [
                         [

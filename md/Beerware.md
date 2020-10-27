@@ -148,7 +148,8 @@ Raw Data
                 "id": "Beerware",
                 "_implications": {
                     "__impliedNames": [
-                        "Beerware"
+                        "Beerware",
+                        "Beerware License"
                     ],
                     "__impliedJudgement": [
                         [

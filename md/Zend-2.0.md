@@ -179,7 +179,8 @@ Raw Data
                 "id": "Zend-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "Zend-2.0"
+                        "Zend-2.0",
+                        "Zend License v2.0"
                     ],
                     "__impliedJudgement": [
                         [

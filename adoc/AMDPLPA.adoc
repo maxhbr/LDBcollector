@@ -202,7 +202,8 @@ concerning personal jurisdiction and venue of these courts.
             "id": "AMDPLPA",
             "_implications": {
                 "__impliedNames": [
-                    "AMDPLPA"
+                    "AMDPLPA",
+                    "AMD's plpa_map.c License"
                 ],
                 "__impliedJudgement": [
                     [

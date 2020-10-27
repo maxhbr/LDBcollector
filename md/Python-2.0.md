@@ -425,7 +425,8 @@ Raw Data
                 "id": "Python-2.0",
                 "_implications": {
                     "__impliedNames": [
-                        "Python-2.0"
+                        "Python-2.0",
+                        "Python License 2.0"
                     ],
                     "__impliedJudgement": [
                         [

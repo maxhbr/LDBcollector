@@ -165,7 +165,8 @@ Raw Data
                 "id": "Xerox",
                 "_implications": {
                     "__impliedNames": [
-                        "Xerox"
+                        "Xerox",
+                        "Xerox License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -264,7 +264,8 @@ THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, B
             "id": "PostgreSQL",
             "_implications": {
                 "__impliedNames": [
-                    "PostgreSQL"
+                    "PostgreSQL",
+                    "PostgreSQL License"
                 ],
                 "__impliedJudgement": [
                     [

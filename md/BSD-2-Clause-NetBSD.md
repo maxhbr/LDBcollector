@@ -161,7 +161,8 @@ Raw Data
                 "id": "BSD-2-Clause-NetBSD",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-2-Clause-NetBSD"
+                        "BSD-2-Clause-NetBSD",
+                        "BSD 2-Clause NetBSD License"
                     ],
                     "__impliedJudgement": [
                         [

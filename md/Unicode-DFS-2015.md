@@ -209,7 +209,8 @@ Raw Data
                 "id": "Unicode-DFS-2015",
                 "_implications": {
                     "__impliedNames": [
-                        "Unicode-DFS-2015"
+                        "Unicode-DFS-2015",
+                        "Unicode License Agreement - Data Files and Software (2015)"
                     ],
                     "__impliedJudgement": [
                         [

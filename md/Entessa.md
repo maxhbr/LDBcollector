@@ -271,7 +271,8 @@ Raw Data
                 "id": "Entessa",
                 "_implications": {
                     "__impliedNames": [
-                        "Entessa"
+                        "Entessa",
+                        "Entessa Public License v1.0"
                     ],
                     "__impliedJudgement": [
                         [

@@ -160,7 +160,8 @@ Raw Data
                 "id": "DSDP",
                 "_implications": {
                     "__impliedNames": [
-                        "DSDP"
+                        "DSDP",
+                        "DSDP License"
                     ],
                     "__impliedJudgement": [
                         [

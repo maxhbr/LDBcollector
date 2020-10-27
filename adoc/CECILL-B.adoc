@@ -399,7 +399,8 @@ Version 1.0 du 2006-09-05."
             "id": "CECILL-B",
             "_implications": {
                 "__impliedNames": [
-                    "CECILL-B"
+                    "CECILL-B",
+                    "CeCILL-B Free Software License Agreement"
                 ],
                 "__impliedJudgement": [
                     [

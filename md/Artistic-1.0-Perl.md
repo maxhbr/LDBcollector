@@ -362,7 +362,8 @@ Raw Data
                 "id": "Artistic-1.0-Perl",
                 "_implications": {
                     "__impliedNames": [
-                        "Artistic-1.0-Perl"
+                        "Artistic-1.0-Perl",
+                        "Artistic License 1.0 (Perl)"
                     ],
                     "__impliedJudgement": [
                         [

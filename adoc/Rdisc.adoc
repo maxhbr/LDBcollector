@@ -148,7 +148,8 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
             "id": "Rdisc",
             "_implications": {
                 "__impliedNames": [
-                    "Rdisc"
+                    "Rdisc",
+                    "Rdisc License"
                 ],
                 "__impliedJudgement": [
                     [

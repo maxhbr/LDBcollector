@@ -153,7 +153,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             "id": "MIT-advertising",
             "_implications": {
                 "__impliedNames": [
-                    "MIT-advertising"
+                    "MIT-advertising",
+                    "Enlightenment License (e16)"
                 ],
                 "__impliedJudgement": [
                     [

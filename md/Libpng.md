@@ -257,7 +257,8 @@ Raw Data
                 "id": "Libpng",
                 "_implications": {
                     "__impliedNames": [
-                        "Libpng"
+                        "Libpng",
+                        "libpng License"
                     ],
                     "__impliedJudgement": [
                         [

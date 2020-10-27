@@ -267,7 +267,8 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             "id": "OpenSSL",
             "_implications": {
                 "__impliedNames": [
-                    "OpenSSL"
+                    "OpenSSL",
+                    "OpenSSL License"
                 ],
                 "__impliedJudgement": [
                     [

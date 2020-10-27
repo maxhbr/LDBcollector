@@ -188,7 +188,8 @@ Raw Data
                 "id": "curl",
                 "_implications": {
                     "__impliedNames": [
-                        "curl"
+                        "curl",
+                        "curl License"
                     ],
                     "__impliedJudgement": [
                         [

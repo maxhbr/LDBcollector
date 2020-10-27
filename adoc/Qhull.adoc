@@ -170,7 +170,8 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
             "id": "Qhull",
             "_implications": {
                 "__impliedNames": [
-                    "Qhull"
+                    "Qhull",
+                    "Qhull License"
                 ],
                 "__impliedJudgement": [
                     [

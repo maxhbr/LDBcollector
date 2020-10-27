@@ -165,7 +165,8 @@ Raw Data
                 "id": "xinetd",
                 "_implications": {
                     "__impliedNames": [
-                        "xinetd"
+                        "xinetd",
+                        "xinetd License"
                     ],
                     "__impliedJudgement": [
                         [

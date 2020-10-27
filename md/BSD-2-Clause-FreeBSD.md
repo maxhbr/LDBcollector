@@ -145,7 +145,8 @@ Raw Data
                 "id": "BSD-2-Clause-FreeBSD",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-2-Clause-FreeBSD"
+                        "BSD-2-Clause-FreeBSD",
+                        "BSD 2-Clause FreeBSD License"
                     ],
                     "__impliedJudgement": [
                         [

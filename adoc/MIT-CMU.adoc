@@ -174,7 +174,8 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "id": "MIT-CMU",
             "_implications": {
                 "__impliedNames": [
-                    "MIT-CMU"
+                    "MIT-CMU",
+                    "CMU License"
                 ],
                 "__impliedJudgement": [
                     [

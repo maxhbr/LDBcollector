@@ -267,7 +267,8 @@ Raw Data
                 "id": "OpenSSL",
                 "_implications": {
                     "__impliedNames": [
-                        "OpenSSL"
+                        "OpenSSL",
+                        "OpenSSL License"
                     ],
                     "__impliedJudgement": [
                         [

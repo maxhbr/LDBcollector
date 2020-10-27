@@ -172,7 +172,8 @@ Raw Data
                 "id": "BSD-3-Clause-No-Nuclear-Warranty",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-3-Clause-No-Nuclear-Warranty"
+                        "BSD-3-Clause-No-Nuclear-Warranty",
+                        "BSD 3-Clause No Nuclear Warranty"
                     ],
                     "__impliedJudgement": [
                         [

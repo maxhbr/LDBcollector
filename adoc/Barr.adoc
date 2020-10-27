@@ -129,7 +129,8 @@ it will not work  with AMSTeX, I have not tested it.
             "id": "Barr",
             "_implications": {
                 "__impliedNames": [
-                    "Barr"
+                    "Barr",
+                    "Barr License"
                 ],
                 "__impliedJudgement": [
                     [

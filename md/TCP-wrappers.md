@@ -160,7 +160,8 @@ Raw Data
                 "id": "TCP-wrappers",
                 "_implications": {
                     "__impliedNames": [
-                        "TCP-wrappers"
+                        "TCP-wrappers",
+                        "TCP Wrappers License"
                     ],
                     "__impliedJudgement": [
                         [

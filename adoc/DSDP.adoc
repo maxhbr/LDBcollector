@@ -162,7 +162,8 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
             "id": "DSDP",
             "_implications": {
                 "__impliedNames": [
-                    "DSDP"
+                    "DSDP",
+                    "DSDP License"
                 ],
                 "__impliedJudgement": [
                     [

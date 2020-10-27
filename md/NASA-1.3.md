@@ -335,7 +335,8 @@ Raw Data
                 "id": "NASA-1.3",
                 "_implications": {
                     "__impliedNames": [
-                        "NASA-1.3"
+                        "NASA-1.3",
+                        "NASA Open Source Agreement 1.3"
                     ],
                     "__impliedJudgement": [
                         [

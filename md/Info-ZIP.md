@@ -141,7 +141,8 @@ Raw Data
                 "id": "Info-ZIP",
                 "_implications": {
                     "__impliedNames": [
-                        "Info-ZIP"
+                        "Info-ZIP",
+                        "Info-ZIP License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -171,7 +171,8 @@ Raw Data
                 "id": "Bourceux",
                 "_implications": {
                     "__impliedNames": [
-                        "Bourceux"
+                        "Bourceux",
+                        "Borceux license"
                     ],
                     "__impliedJudgement": [
                         [

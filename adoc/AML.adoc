@@ -126,7 +126,8 @@ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSE
             "id": "AML",
             "_implications": {
                 "__impliedNames": [
-                    "AML"
+                    "AML",
+                    "Apple MIT License"
                 ],
                 "__impliedJudgement": [
                     [

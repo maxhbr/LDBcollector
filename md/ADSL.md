@@ -127,7 +127,8 @@ Raw Data
                 "id": "ADSL",
                 "_implications": {
                     "__impliedNames": [
-                        "ADSL"
+                        "ADSL",
+                        "Amazon Digital Services License"
                     ],
                     "__impliedJudgement": [
                         [

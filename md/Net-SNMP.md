@@ -382,7 +382,8 @@ Raw Data
                 "id": "Net-SNMP",
                 "_implications": {
                     "__impliedNames": [
-                        "Net-SNMP"
+                        "Net-SNMP",
+                        "Net-SNMP License"
                     ],
                     "__impliedJudgement": [
                         [

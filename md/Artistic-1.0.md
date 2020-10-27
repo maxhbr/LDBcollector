@@ -342,7 +342,8 @@ Raw Data
                 "id": "Artistic-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "Artistic-1.0"
+                        "Artistic-1.0",
+                        "Artistic License 1.0"
                     ],
                     "__impliedJudgement": [
                         [

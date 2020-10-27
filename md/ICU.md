@@ -206,7 +206,8 @@ Raw Data
                 "id": "ICU",
                 "_implications": {
                     "__impliedNames": [
-                        "ICU"
+                        "ICU",
+                        "ICU License"
                     ],
                     "__impliedJudgement": [
                         [

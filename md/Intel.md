@@ -247,7 +247,8 @@ Raw Data
                 "id": "Intel",
                 "_implications": {
                     "__impliedNames": [
-                        "Intel"
+                        "Intel",
+                        "Intel Open Source License"
                     ],
                     "__impliedJudgement": [
                         [

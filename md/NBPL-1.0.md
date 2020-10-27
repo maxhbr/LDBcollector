@@ -299,7 +299,8 @@ Raw Data
                 "id": "NBPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "NBPL-1.0"
+                        "NBPL-1.0",
+                        "Net Boolean Public License v1"
                     ],
                     "__impliedJudgement": [
                         [

@@ -400,7 +400,8 @@ Raw Data
                 "id": "CECILL-B",
                 "_implications": {
                     "__impliedNames": [
-                        "CECILL-B"
+                        "CECILL-B",
+                        "CeCILL-B Free Software License Agreement"
                     ],
                     "__impliedJudgement": [
                         [

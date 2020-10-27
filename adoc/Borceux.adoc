@@ -171,7 +171,8 @@ francis dot borceux at uclouvain dot be.
             "id": "Bourceux",
             "_implications": {
                 "__impliedNames": [
-                    "Bourceux"
+                    "Bourceux",
+                    "Borceux license"
                 ],
                 "__impliedJudgement": [
                     [

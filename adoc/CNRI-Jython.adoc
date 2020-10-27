@@ -137,7 +137,8 @@ https://blueoakcouncil.org/list[BlueOak License List])
             "id": "CNRI-Jython",
             "_implications": {
                 "__impliedNames": [
-                    "CNRI-Jython"
+                    "CNRI-Jython",
+                    "CNRI Jython License"
                 ],
                 "__impliedJudgement": [
                     [

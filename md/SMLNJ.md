@@ -184,7 +184,8 @@ Raw Data
                 "id": "SMLNJ",
                 "_implications": {
                     "__impliedNames": [
-                        "SMLNJ"
+                        "SMLNJ",
+                        "Standard ML of New Jersey License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -326,7 +326,8 @@ Raw Data
                 "id": "BSD-2-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-2-Clause"
+                        "BSD-2-Clause",
+                        "BSD 2-Clause \"Simplified\" License"
                     ],
                     "__impliedJudgement": [
                         [

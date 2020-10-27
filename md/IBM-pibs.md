@@ -160,7 +160,8 @@ Raw Data
                 "id": "IBM-pibs",
                 "_implications": {
                     "__impliedNames": [
-                        "IBM-pibs"
+                        "IBM-pibs",
+                        "IBM PowerPC Initialization and Boot Software"
                     ],
                     "__impliedJudgement": [
                         [

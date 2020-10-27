@@ -236,7 +236,8 @@ Raw Data
                 "id": "WTFPL",
                 "_implications": {
                     "__impliedNames": [
-                        "WTFPL"
+                        "WTFPL",
+                        "Do What The F*ck You Want To Public License"
                     ],
                     "__impliedJudgement": [
                         [

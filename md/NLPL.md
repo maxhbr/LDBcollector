@@ -154,7 +154,8 @@ Raw Data
                 "id": "NLPL",
                 "_implications": {
                     "__impliedNames": [
-                        "NLPL"
+                        "NLPL",
+                        "No Limit Public License"
                     ],
                     "__impliedJudgement": [
                         [

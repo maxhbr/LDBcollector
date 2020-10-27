@@ -142,7 +142,8 @@ Permission is granted to anyone to use this software for any purpose, including 
             "id": "Info-ZIP",
             "_implications": {
                 "__impliedNames": [
-                    "Info-ZIP"
+                    "Info-ZIP",
+                    "Info-ZIP License"
                 ],
                 "__impliedJudgement": [
                     [

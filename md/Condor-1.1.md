@@ -278,7 +278,8 @@ Raw Data
                 "id": "Condor-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "Condor-1.1"
+                        "Condor-1.1",
+                        "Condor Public License v1.1"
                     ],
                     "__impliedJudgement": [
                         [

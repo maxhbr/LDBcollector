@@ -124,7 +124,8 @@ Raw Data
                 "id": "Leptonica",
                 "_implications": {
                     "__impliedNames": [
-                        "Leptonica"
+                        "Leptonica",
+                        "Leptonica License"
                     ],
                     "__impliedJudgement": [
                         [

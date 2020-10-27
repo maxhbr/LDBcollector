@@ -154,7 +154,8 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
             "id": "Mup",
             "_implications": {
                 "__impliedNames": [
-                    "Mup"
+                    "Mup",
+                    "Mup License"
                 ],
                 "__impliedJudgement": [
                     [

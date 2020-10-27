@@ -146,7 +146,8 @@ Raw Data
                 "id": "MIT-feh",
                 "_implications": {
                     "__impliedNames": [
-                        "MIT-feh"
+                        "MIT-feh",
+                        "feh License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -137,7 +137,8 @@ Raw Data
                 "id": "DOC",
                 "_implications": {
                     "__impliedNames": [
-                        "DOC"
+                        "DOC",
+                        "DOC License"
                     ],
                     "__impliedJudgement": [
                         [

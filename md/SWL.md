@@ -161,7 +161,8 @@ Raw Data
                 "id": "SWL",
                 "_implications": {
                     "__impliedNames": [
-                        "SWL"
+                        "SWL",
+                        "Scheme Widget Library (SWL) Software License Agreement"
                     ],
                     "__impliedJudgement": [
                         [

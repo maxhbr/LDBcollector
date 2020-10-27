@@ -241,7 +241,8 @@ Raw Data
                 "id": "UPL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "UPL-1.0"
+                        "UPL-1.0",
+                        "Universal Permissive License v1.0"
                     ],
                     "__impliedJudgement": [
                         [

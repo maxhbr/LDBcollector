@@ -173,7 +173,8 @@ Raw Data
                 "id": "OML",
                 "_implications": {
                     "__impliedNames": [
-                        "OML"
+                        "OML",
+                        "Open Market License"
                     ],
                     "__impliedJudgement": [
                         [

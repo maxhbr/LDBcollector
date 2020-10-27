@@ -180,7 +180,8 @@ be directed to site-policy@w3.org.
             "id": "W3C-19980720",
             "_implications": {
                 "__impliedNames": [
-                    "W3C-19980720"
+                    "W3C-19980720",
+                    "W3C Software Notice and License (1998-07-20)"
                 ],
                 "__impliedJudgement": [
                     [

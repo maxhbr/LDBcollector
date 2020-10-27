@@ -173,7 +173,8 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
             "id": "OML",
             "_implications": {
                 "__impliedNames": [
-                    "OML"
+                    "OML",
+                    "Open Market License"
                 ],
                 "__impliedJudgement": [
                     [

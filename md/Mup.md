@@ -153,7 +153,8 @@ Raw Data
                 "id": "Mup",
                 "_implications": {
                     "__impliedNames": [
-                        "Mup"
+                        "Mup",
+                        "Mup License"
                     ],
                     "__impliedJudgement": [
                         [

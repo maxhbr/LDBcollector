@@ -175,7 +175,8 @@ Raw Data
                 "id": "MIT-CMU",
                 "_implications": {
                     "__impliedNames": [
-                        "MIT-CMU"
+                        "MIT-CMU",
+                        "CMU License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -144,7 +144,8 @@ Raw Data
                 "id": "CNRI-Python-GPL-Compatible",
                 "_implications": {
                     "__impliedNames": [
-                        "CNRI-Python-GPL-Compatible"
+                        "CNRI-Python-GPL-Compatible",
+                        "CNRI Python Open Source GPL Compatible License Agreement"
                     ],
                     "__impliedJudgement": [
                         [

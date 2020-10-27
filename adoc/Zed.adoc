@@ -122,7 +122,8 @@ file, please do not distribute the results under the name `zed-csp.sty'.
             "id": "Zed",
             "_implications": {
                 "__impliedNames": [
-                    "Zed"
+                    "Zed",
+                    "Zed License"
                 ],
                 "__impliedJudgement": [
                     [

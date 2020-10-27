@@ -421,7 +421,8 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
             "id": "Python-2.0",
             "_implications": {
                 "__impliedNames": [
-                    "Python-2.0"
+                    "Python-2.0",
+                    "Python License 2.0"
                 ],
                 "__impliedJudgement": [
                     [

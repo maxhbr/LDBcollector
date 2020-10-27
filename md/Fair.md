@@ -236,7 +236,8 @@ Raw Data
                 "id": "Fair",
                 "_implications": {
                     "__impliedNames": [
-                        "Fair"
+                        "Fair",
+                        "Fair License"
                     ],
                     "__impliedJudgement": [
                         [

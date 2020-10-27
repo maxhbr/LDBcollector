@@ -365,7 +365,8 @@ Raw Data
                 "id": "FTL",
                 "_implications": {
                     "__impliedNames": [
-                        "FTL"
+                        "FTL",
+                        "Freetype Project License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -224,7 +224,8 @@ Raw Data
                 "id": "Multics",
                 "_implications": {
                     "__impliedNames": [
-                        "Multics"
+                        "Multics",
+                        "Multics License"
                     ],
                     "__impliedJudgement": [
                         [

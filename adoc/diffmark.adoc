@@ -148,7 +148,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
             "id": "diffmark",
             "_implications": {
                 "__impliedNames": [
-                    "diffmark"
+                    "diffmark",
+                    "diffmark license"
                 ],
                 "__impliedJudgement": [
                     [

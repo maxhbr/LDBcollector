@@ -153,7 +153,8 @@ Raw Data
                 "id": "Adobe-2006",
                 "_implications": {
                     "__impliedNames": [
-                        "Adobe-2006"
+                        "Adobe-2006",
+                        "Adobe Systems Incorporated Source Code License Agreement"
                     ],
                     "__impliedJudgement": [
                         [

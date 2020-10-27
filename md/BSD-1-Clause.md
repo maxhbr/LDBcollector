@@ -135,7 +135,8 @@ Raw Data
                 "id": "BSD-1-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-1-Clause"
+                        "BSD-1-Clause",
+                        "BSD 1-Clause License"
                     ],
                     "__impliedJudgement": [
                         [

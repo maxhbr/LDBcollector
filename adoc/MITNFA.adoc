@@ -172,7 +172,8 @@ OTHER DEALINGS IN THE SOFTWARE.
             "id": "MITNFA",
             "_implications": {
                 "__impliedNames": [
-                    "MITNFA"
+                    "MITNFA",
+                    "MIT +no-false-attribs license"
                 ],
                 "__impliedJudgement": [
                     [

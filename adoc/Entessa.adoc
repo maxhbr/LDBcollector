@@ -266,7 +266,8 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
             "id": "Entessa",
             "_implications": {
                 "__impliedNames": [
-                    "Entessa"
+                    "Entessa",
+                    "Entessa Public License v1.0"
                 ],
                 "__impliedJudgement": [
                     [

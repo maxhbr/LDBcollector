@@ -652,7 +652,8 @@ Raw Data
                 "id": "LPPL-1.3c",
                 "_implications": {
                     "__impliedNames": [
-                        "LPPL-1.3c"
+                        "LPPL-1.3c",
+                        "LaTeX Project Public License v1.3c"
                     ],
                     "__impliedJudgement": [
                         [

@@ -170,7 +170,8 @@ Raw Data
                 "id": "MIT-0",
                 "_implications": {
                     "__impliedNames": [
-                        "MIT-0"
+                        "MIT-0",
+                        "MIT No Attribution"
                     ],
                     "__impliedJudgement": [
                         [

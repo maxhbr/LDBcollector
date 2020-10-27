@@ -146,7 +146,8 @@ The views and conclusions contained in the software and documentation are those 
             "id": "NRL",
             "_implications": {
                 "__impliedNames": [
-                    "NRL"
+                    "NRL",
+                    "NRL License"
                 ],
                 "__impliedJudgement": [
                     [

@@ -347,7 +347,8 @@ Raw Data
                 "id": "Apache-1.1",
                 "_implications": {
                     "__impliedNames": [
-                        "Apache-1.1"
+                        "Apache-1.1",
+                        "Apache License 1.1"
                     ],
                     "__impliedJudgement": [
                         [

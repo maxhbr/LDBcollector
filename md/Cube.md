@@ -143,7 +143,8 @@ Raw Data
                 "id": "Cube",
                 "_implications": {
                     "__impliedNames": [
-                        "Cube"
+                        "Cube",
+                        "Cube License"
                     ],
                     "__impliedJudgement": [
                         [

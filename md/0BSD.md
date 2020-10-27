@@ -173,7 +173,8 @@ Raw Data
                 "id": "0BSD",
                 "_implications": {
                     "__impliedNames": [
-                        "0BSD"
+                        "0BSD",
+                        "BSD Zero Clause License"
                     ],
                     "__impliedJudgement": [
                         [

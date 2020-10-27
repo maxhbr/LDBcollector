@@ -140,7 +140,8 @@ Raw Data
                 "id": "Spencer-86",
                 "_implications": {
                     "__impliedNames": [
-                        "Spencer-86"
+                        "Spencer-86",
+                        "Spencer License 86"
                     ],
                     "__impliedJudgement": [
                         [

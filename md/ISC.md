@@ -338,7 +338,8 @@ Raw Data
                 "id": "ISC",
                 "_implications": {
                     "__impliedNames": [
-                        "ISC"
+                        "ISC",
+                        "ISC License"
                     ],
                     "__impliedJudgement": [
                         [

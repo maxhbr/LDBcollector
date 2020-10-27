@@ -17,7 +17,7 @@ Number of facts: 3661
     finos-osr/OSLC-handbook: 43
     gnu.org: 134
     ifrOSS: 271
-Number of clusters: 2074
+Number of clusters: 2073
 ### Stats on Licenses:
 Number of Licenses: 360
 Number of facts: 1630
@@ -37,6 +37,6 @@ Number of facts: 1630
     finos-osr/OSLC-handbook: 47
     ifrOSS: 11
 #### based on facts from licenses
-Number of clusters: 369
+Number of clusters: 368
 #### based on licenses
 Number of clusters: 360

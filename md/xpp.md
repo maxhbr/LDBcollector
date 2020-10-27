@@ -178,7 +178,8 @@ Raw Data
                 "id": "xpp",
                 "_implications": {
                     "__impliedNames": [
-                        "xpp"
+                        "xpp",
+                        "XPP License"
                     ],
                     "__impliedJudgement": [
                         [

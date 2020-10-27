@@ -103,7 +103,8 @@ Raw Data
                 "id": "bzip2-1.0.5",
                 "_implications": {
                     "__impliedNames": [
-                        "bzip2-1.0.5"
+                        "bzip2-1.0.5",
+                        "bzip2 and libbzip2 License v1.0.5"
                     ],
                     "__impliedJudgement": [
                         [

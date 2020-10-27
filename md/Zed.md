@@ -120,7 +120,8 @@ Raw Data
                 "id": "Zed",
                 "_implications": {
                     "__impliedNames": [
-                        "Zed"
+                        "Zed",
+                        "Zed License"
                     ],
                     "__impliedJudgement": [
                         [

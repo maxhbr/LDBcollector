@@ -226,7 +226,8 @@
             "id": "BSD-4-Clause",
             "_implications": {
                 "__impliedNames": [
-                    "BSD-4-Clause"
+                    "BSD-4-Clause",
+                    "BSD 4-Clause \"Original\" or \"Old\" License"
                 ],
                 "__impliedJudgement": [
                     [

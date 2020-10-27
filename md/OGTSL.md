@@ -279,7 +279,8 @@ Raw Data
                 "id": "OGTSL",
                 "_implications": {
                     "__impliedNames": [
-                        "OGTSL"
+                        "OGTSL",
+                        "Open Group Test Suite License"
                     ],
                     "__impliedJudgement": [
                         [

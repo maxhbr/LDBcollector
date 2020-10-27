@@ -231,7 +231,8 @@ Raw Data
                 "id": "Naumen",
                 "_implications": {
                     "__impliedNames": [
-                        "Naumen"
+                        "Naumen",
+                        "Naumen Public License"
                     ],
                     "__impliedJudgement": [
                         [

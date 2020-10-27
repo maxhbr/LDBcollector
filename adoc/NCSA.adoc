@@ -308,7 +308,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
             "id": "NCSA",
             "_implications": {
                 "__impliedNames": [
-                    "NCSA"
+                    "NCSA",
+                    "University of Illinois/NCSA Open Source License"
                 ],
                 "__impliedJudgement": [
                     [

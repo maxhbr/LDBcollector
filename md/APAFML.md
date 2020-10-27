@@ -125,7 +125,8 @@ Raw Data
                 "id": "APAFML",
                 "_implications": {
                     "__impliedNames": [
-                        "APAFML"
+                        "APAFML",
+                        "Adobe Postscript AFM License"
                     ],
                     "__impliedJudgement": [
                         [

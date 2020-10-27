@@ -143,7 +143,8 @@ Raw Data
                 "id": "RSA-MD",
                 "_implications": {
                     "__impliedNames": [
-                        "RSA-MD"
+                        "RSA-MD",
+                        "RSA Message-Digest License "
                     ],
                     "__impliedJudgement": [
                         [

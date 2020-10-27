@@ -261,7 +261,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             "id": "AAL",
             "_implications": {
                 "__impliedNames": [
-                    "AAL"
+                    "AAL",
+                    "Attribution Assurance License"
                 ],
                 "__impliedJudgement": [
                     [

@@ -257,7 +257,8 @@ permission of its copyright owner.
             "id": "AFL-1.2",
             "_implications": {
                 "__impliedNames": [
-                    "AFL-1.2"
+                    "AFL-1.2",
+                    "Academic Free License v1.2"
                 ],
                 "__impliedJudgement": [
                     [

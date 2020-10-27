@@ -126,7 +126,8 @@ Raw Data
                 "id": "Crossword",
                 "_implications": {
                     "__impliedNames": [
-                        "Crossword"
+                        "Crossword",
+                        "Crossword License"
                     ],
                     "__impliedJudgement": [
                         [

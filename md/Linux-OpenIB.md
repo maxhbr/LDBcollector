@@ -169,7 +169,8 @@ Raw Data
                 "id": "Linux-OpenIB",
                 "_implications": {
                     "__impliedNames": [
-                        "Linux-OpenIB"
+                        "Linux-OpenIB",
+                        "Linux Kernel Variant of OpenIB.org license"
                     ],
                     "__impliedJudgement": [
                         [

@@ -230,7 +230,8 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
             "id": "Naumen",
             "_implications": {
                 "__impliedNames": [
-                    "Naumen"
+                    "Naumen",
+                    "Naumen Public License"
                 ],
                 "__impliedJudgement": [
                     [

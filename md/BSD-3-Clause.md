@@ -418,7 +418,8 @@ Raw Data
                 "id": "BSD-3-Clause",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-3-Clause"
+                        "BSD-3-Clause",
+                        "BSD 3-Clause \"New\" or \"Revised\" License"
                     ],
                     "__impliedJudgement": [
                         [

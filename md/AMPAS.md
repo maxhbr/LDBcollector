@@ -131,7 +131,8 @@ Raw Data
                 "id": "AMPAS",
                 "_implications": {
                     "__impliedNames": [
-                        "AMPAS"
+                        "AMPAS",
+                        "Academy of Motion Picture Arts and Sciences BSD"
                     ],
                     "__impliedJudgement": [
                         [

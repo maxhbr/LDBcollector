@@ -351,7 +351,8 @@ Raw Data
                 "id": "MIT",
                 "_implications": {
                     "__impliedNames": [
-                        "MIT"
+                        "MIT",
+                        "MIT License"
                     ],
                     "__impliedJudgement": [
                         [

@@ -158,7 +158,8 @@ Raw Data
                 "id": "libtiff",
                 "_implications": {
                     "__impliedNames": [
-                        "libtiff"
+                        "libtiff",
+                        "libtiff License"
                     ],
                     "__impliedJudgement": [
                         [

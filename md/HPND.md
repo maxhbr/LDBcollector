@@ -249,7 +249,8 @@ Raw Data
                 "id": "HPND",
                 "_implications": {
                     "__impliedNames": [
-                        "HPND"
+                        "HPND",
+                        "Historical Permission Notice and Disclaimer"
                     ],
                     "__impliedJudgement": [
                         [

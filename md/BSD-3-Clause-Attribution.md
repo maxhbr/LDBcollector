@@ -149,7 +149,8 @@ Raw Data
                 "id": "BSD-3-Clause-Attribution",
                 "_implications": {
                     "__impliedNames": [
-                        "BSD-3-Clause-Attribution"
+                        "BSD-3-Clause-Attribution",
+                        "BSD with attribution"
                     ],
                     "__impliedJudgement": [
                         [

@@ -204,7 +204,8 @@ Raw Data
                 "id": "EFL-1.0",
                 "_implications": {
                     "__impliedNames": [
-                        "EFL-1.0"
+                        "EFL-1.0",
+                        "Eiffel Forum License v1.0"
                     ],
                     "__impliedJudgement": [
                         [

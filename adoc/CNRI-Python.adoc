@@ -239,7 +239,8 @@ Licensee. Alternately, in lieu of CNRI's License Agreement, Licensee may substit
             "id": "CNRI-Python",
             "_implications": {
                 "__impliedNames": [
-                    "CNRI-Python"
+                    "CNRI-Python",
+                    "CNRI Python License"
                 ],
                 "__impliedJudgement": [
                     [

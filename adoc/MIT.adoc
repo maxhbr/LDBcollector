@@ -355,7 +355,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "id": "MIT",
             "_implications": {
                 "__impliedNames": [
-                    "MIT"
+                    "MIT",
+                    "MIT License"
                 ],
                 "__impliedJudgement": [
                     [

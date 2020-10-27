@@ -132,7 +132,8 @@ Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS
             "id": "AMPAS",
             "_implications": {
                 "__impliedNames": [
-                    "AMPAS"
+                    "AMPAS",
+                    "Academy of Motion Picture Arts and Sciences BSD"
                 ],
                 "__impliedJudgement": [
                     [
