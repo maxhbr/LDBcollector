@@ -74,7 +74,7 @@ instance LFRaw IfrOSSFact where
   getLicenseFactClassifier _ = ifrOSSLFC
   getImpliedNames i          = CLSR (ifrName i : maybeToList (ifrId i))
   getImpliedURLs i           = CLSR [(Nothing, ifrURL i)]
-  getImpliedJudgement i      = mkSLSR i (NeutralJudgement (ifrOSSIfrKindToText (ifrKind i)))
+  getImpliedComments i       = mkSLSR i [ifrOSSIfrKindToText (ifrKind i)]
   getImpliedCopyleft i       = case copyleftKindFromIfrOSSKind (ifrKind i) of
     Just c  -> mkSLSR i c
     Nothing -> NoSLSR

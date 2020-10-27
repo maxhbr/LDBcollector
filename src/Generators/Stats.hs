@@ -14,7 +14,6 @@ import           System.Environment
 import           System.IO
 
 import           Model.License
-import           Model.LicenseClusterer
 import           Generators.FindClusters
 
 writeStatsOnFacts :: Handle -> [LicenseFact] -> IO ()
