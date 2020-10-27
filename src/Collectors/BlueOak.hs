@@ -101,6 +101,14 @@ instance LFRaw BOEntry where
 -- #  copyleft  ################################################################
 -- #############################################################################
 
+getCommentForKind :: CopyleftKind -> [String]
+getCommentForKind WeakCopyleft    = ["Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."]
+getCommentForKind StrongCopyleft  = ["Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."]
+getCommentForKind SaaSCopyleft    =  ["In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network."]
+  ++ getCommentForKind StrongCopyleft
+getCommentForKind MaximalCopyleft = ["Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."]
+getCommentForKind _               = []
+
 data BlueOakCopyleftGroup
   = BlueOakCopyleftGroup
   { bocgName :: String
@@ -136,7 +144,7 @@ instance ToJSON BOCopyleftEntry where
                                              , "name" .= name l
                                              , "id" .= id l
                                              , "url" .= url l
-                                             , "familyName" .= lg ]
+                                             , "familyName" .= lg]
 
 instance Show BOCopyleftEntry where
   show (BOCopyleftEntry _ _ _ j) = show j
@@ -148,14 +156,7 @@ instance LFRaw BOCopyleftEntry where
   getImpliedAmbiguousNames (BOCopyleftEntry _ _ lg _) = CLSR [lg]
   getImpliedURLs (BOCopyleftEntry _ _ _ bol)          = CLSR [(Nothing, url bol)]
   getImpliedCopyleft boe@(BOCopyleftEntry _ k _ _)    = mkSLSR boe k
-
-getCommentForKind :: CopyleftKind -> [String]
-getCommentForKind WeakCopyleft    = ["Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."]
-getCommentForKind StrongCopyleft  = ["Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."]
-getCommentForKind SaaSCopyleft    =  ["In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network."]
-  ++ getCommentForKind StrongCopyleft
-getCommentForKind MaximalCopyleft = ["Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."]
-getCommentForKind _               = []
+  getImpliedComments boe@(BOCopyleftEntry _ k _ _)    = mkSLSR boe (getCommentForKind k)
 
 
 -- #############################################################################
@@ -167,7 +168,11 @@ loadBlueOakFactsFromString bs = let
     bod = decodeBlueOakData bs
     bodVersion = version bod
     ratingConverter (BlueOakRating r ls) = map (LicenseFact (Just "https://blueoakcouncil.org/list") . BOEntry bodVersion r) ls
+    facts = concatMap ratingConverter (ratings bod)
+  in trace ("INFO: the version of BlueOak is: " ++ bodVersion) $ V.fromList facts
 
+loadBlueOakCopyleftFactsFromString :: ByteString -> Facts
+loadBlueOakCopyleftFactsFromString bs = let
     bodc = decodeBlueOakCopyleftData bs
     bodcVersion = bocgVersion bodc
     copyleftConverter f gs = let
@@ -180,9 +185,8 @@ loadBlueOakFactsFromString bs = let
       copyleftConverter' :: BlueOakCopyleftGroup -> [BOCopyleftEntry]
       copyleftConverter' (BlueOakCopyleftGroup n vs) = map (BOCopyleftEntry bodcVersion kind n) vs
       in concatMap (map (LicenseFact (Just "https://blueoakcouncil.org/copyleft")) . copyleftConverter') gs
-
-    facts = concatMap ratingConverter (ratings bod) ++ concat (M.mapWithKey copyleftConverter (families bodc))
-  in trace ("INFO: the version of BlueOak is: " ++ bodVersion) $ V.fromList facts
+    facts = concat (M.mapWithKey copyleftConverter (families bodc))
+  in trace ("INFO: the version of BlueOak Copyleft is: " ++ bodcVersion) $ V.fromList facts
 
 blueOakFile :: Data.ByteString.ByteString
 blueOakFile = $(embedFile "data/blue-oak-council-license-list.json")
@@ -191,6 +195,8 @@ loadBlueOakFacts :: IO Facts
 loadBlueOakFacts = let
     blueOakFile :: Data.ByteString.ByteString
     blueOakFile = $(embedFile "data/blue-oak-council-license-list.json")
+    blueOakCopyleftFile :: Data.ByteString.ByteString
+    blueOakCopyleftFile = $(embedFile "data/blue-oak-council-copyleft-list.json")
   in do
     logThatFactsAreLoadedFrom "Blue Oak Council License List"
-    return (loadBlueOakFactsFromString (B.fromStrict blueOakFile))
+    return ((loadBlueOakFactsFromString (B.fromStrict blueOakFile)) V.++ (loadBlueOakCopyleftFactsFromString (B.fromStrict blueOakCopyleftFile)))
