@@ -60,9 +60,11 @@ URLs
 
 -   http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017D0863
 
--   https://opensource.org/licenses/EUPL-1.1
+-   https://opensource.org/licenses/EUPL-1.2
 
 -   http://www.opensource.org/licenses/EUPL-1.1
+
+-   https://opensource.org/licenses/EUPL-1.1
 
 Text
 ----
@@ -208,7 +210,7 @@ Raw Data
                     "https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_en.pdf",
                     "https://joinup.ec.europa.eu/sites/default/files/inline-files/EUPL%20v1_2%20EN(1).txt",
                     "http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017D0863",
-                    "https://opensource.org/licenses/EUPL-1.1"
+                    "https://opensource.org/licenses/EUPL-1.2"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -249,7 +251,7 @@ Raw Data
                         ],
                         [
                             null,
-                            "https://opensource.org/licenses/EUPL-1.1"
+                            "https://opensource.org/licenses/EUPL-1.2"
                         ]
                     ]
                 },
@@ -608,7 +610,7 @@ Raw Data
             ],
             [
                 null,
-                "https://opensource.org/licenses/EUPL-1.1"
+                "https://opensource.org/licenses/EUPL-1.2"
             ],
             [
                 "Homepage",
@@ -617,6 +619,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/EUPL-1.1"
+            ],
+            [
+                null,
+                "https://opensource.org/licenses/EUPL-1.1"
             ]
         ]
     }

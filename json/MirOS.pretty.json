@@ -1,6 +1,7 @@
 {
     "__impliedNames": [
         "MirOS",
+        "The MirOS Licence",
         "MirOS License",
         "scancode://mir-os",
         "The MirOS Licence (MirOS)",
@@ -48,7 +49,7 @@
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
-            "spdxFullName": "MirOS License",
+            "spdxFullName": "The MirOS Licence",
             "spdxDetailsURL": "http://spdx.org/licenses/MirOS.json",
             "_sourceURL": "https://spdx.org/licenses/MirOS.html",
             "spdxLicIsOSIApproved": true,
@@ -58,7 +59,7 @@
             "_implications": {
                 "__impliedNames": [
                     "MirOS",
-                    "MirOS License"
+                    "The MirOS Licence"
                 ],
                 "__impliedId": "MirOS",
                 "__impliedJudgement": [

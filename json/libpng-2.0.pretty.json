@@ -14,7 +14,7 @@
             "_sourceURL": "https://spdx.org/licenses/libpng-2.0.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
-                "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt\n         "
+                "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
             ],
             "_implications": {
                 "__impliedNames": [
@@ -30,7 +30,7 @@
                     ],
                     [
                         null,
-                        "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt\n         "
+                        "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
                     ]
                 ]
             },
@@ -90,7 +90,7 @@
         ],
         [
             null,
-            "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt\n         "
+            "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
         ],
         [
             "Homepage",

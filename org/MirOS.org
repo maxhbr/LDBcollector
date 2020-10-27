@@ -1,13 +1,15 @@
-* MirOS License (MirOS)
+* The MirOS Licence (MirOS)
 
 | Key              | Value                             |
 |------------------+-----------------------------------|
-| Fullname         | MirOS License                     |
+| Fullname         | The MirOS Licence                 |
 | Shortname        | MirOS                             |
 | Rating           | Unknown, probably Stop or No-Go   |
 | Classification   | NoCopyleft                        |
 
 *Other Names:*
+
+- =MirOS License=
 
 - =scancode://mir-os=
 
@@ -74,6 +76,7 @@
   {
       "__impliedNames": [
           "MirOS",
+          "The MirOS Licence",
           "MirOS License",
           "scancode://mir-os",
           "The MirOS Licence (MirOS)",
@@ -121,7 +124,7 @@
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
-              "spdxFullName": "MirOS License",
+              "spdxFullName": "The MirOS Licence",
               "spdxDetailsURL": "http://spdx.org/licenses/MirOS.json",
               "_sourceURL": "https://spdx.org/licenses/MirOS.html",
               "spdxLicIsOSIApproved": true,
@@ -131,7 +134,7 @@
               "_implications": {
                   "__impliedNames": [
                       "MirOS",
-                      "MirOS License"
+                      "The MirOS Licence"
                   ],
                   "__impliedId": "MirOS",
                   "__impliedJudgement": [

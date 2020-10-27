@@ -19,6 +19,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/bzip2-1.0.5.html
 
+-   https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html
+
 -   http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
 
 OSADL Rule
@@ -61,6 +63,7 @@ Raw Data
                 "_sourceURL": "https://spdx.org/licenses/bzip2-1.0.5.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
+                    "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html",
                     "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
                 ],
                 "_implications": {
@@ -74,6 +77,10 @@ Raw Data
                         [
                             "SPDX",
                             "http://spdx.org/licenses/bzip2-1.0.5.json"
+                        ],
+                        [
+                            null,
+                            "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html"
                         ],
                         [
                             null,
@@ -152,6 +159,10 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/bzip2-1.0.5.json"
+            ],
+            [
+                null,
+                "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html"
             ],
             [
                 null,

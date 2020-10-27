@@ -21,7 +21,6 @@
 
 * *Homepage:* https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2
 * *SPDX:* http://spdx.org/licenses/CERN-OHL-1.2.json
-*  https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2
 
 === Text
 
@@ -131,7 +130,7 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
             "_sourceURL": "https://spdx.org/licenses/CERN-OHL-1.2.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
-                "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
+                "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
             ],
             "_implications": {
                 "__impliedNames": [
@@ -147,7 +146,7 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
                     ],
                     [
                         null,
-                        "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
+                        "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
                     ]
                 ]
             },
@@ -213,14 +212,10 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
         ],
         [
             null,
-            "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
-        ],
-        [
-            "Homepage",
             "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
         ],
         [
-            null,
+            "Homepage",
             "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
         ]
     ]

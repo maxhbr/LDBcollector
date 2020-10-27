@@ -1,4 +1,4 @@
-CERN Open Hardware License v1.1 (CERN-OHL-1.1)
+CERN Open Hardware Licence v1.1 (CERN-OHL-1.1)
 ==============================================
 
 [TABLE]
@@ -6,6 +6,8 @@ CERN Open Hardware License v1.1 (CERN-OHL-1.1)
 **Other Names:**
 
 -   `scancode://cern-ohl-1.1`
+
+-   `CERN Open Hardware License v1.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -20,8 +22,6 @@ URLs
     https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1
 
 -   **SPDX:** http://spdx.org/licenses/CERN-OHL-1.1.json
-
--   https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1
 
 Text
 ----
@@ -112,24 +112,25 @@ Raw Data
     {
         "__impliedNames": [
             "CERN-OHL-1.1",
-            "CERN Open Hardware License v1.1",
-            "scancode://cern-ohl-1.1"
+            "CERN Open Hardware Licence v1.1",
+            "scancode://cern-ohl-1.1",
+            "CERN Open Hardware License v1.1"
         ],
         "__impliedId": "CERN-OHL-1.1",
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
-                "spdxFullName": "CERN Open Hardware License v1.1",
+                "spdxFullName": "CERN Open Hardware Licence v1.1",
                 "spdxDetailsURL": "http://spdx.org/licenses/CERN-OHL-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/CERN-OHL-1.1.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1"
+                    "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1"
                 ],
                 "_implications": {
                     "__impliedNames": [
                         "CERN-OHL-1.1",
-                        "CERN Open Hardware License v1.1"
+                        "CERN Open Hardware Licence v1.1"
                     ],
                     "__impliedId": "CERN-OHL-1.1",
                     "__isOsiApproved": false,
@@ -140,7 +141,7 @@ Raw Data
                         ],
                         [
                             null,
-                            "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1"
+                            "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1"
                         ]
                     ]
                 },
@@ -206,14 +207,10 @@ Raw Data
             ],
             [
                 null,
-                "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1"
-            ],
-            [
-                "Homepage",
                 "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1"
             ],
             [
-                null,
+                "Homepage",
                 "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1"
             ]
         ]

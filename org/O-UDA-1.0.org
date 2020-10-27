@@ -1,0 +1,79 @@
+* Open Use of Data Agreement v1.0 (O-UDA-1.0)
+
+| Key         | Value                                          |
+|-------------+------------------------------------------------|
+| Fullname    | Open Use of Data Agreement v1.0                |
+| Shortname   | O-UDA-1.0                                      |
+| Rating      | Unknown, probably Attention or Stop or No-Go   |
+
+** Comments on (easy) usability
+
+** General Comments
+
+** URLs
+
+- *SPDX:* http://spdx.org/licenses/O-UDA-1.0.json
+
+- https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md
+
+--------------
+
+** Raw Data
+
+#+BEGIN_EXAMPLE
+  {
+      "__impliedNames": [
+          "O-UDA-1.0",
+          "Open Use of Data Agreement v1.0"
+      ],
+      "__impliedId": "O-UDA-1.0",
+      "facts": {
+          "SPDX": {
+              "isSPDXLicenseDeprecated": false,
+              "spdxFullName": "Open Use of Data Agreement v1.0",
+              "spdxDetailsURL": "http://spdx.org/licenses/O-UDA-1.0.json",
+              "_sourceURL": "https://spdx.org/licenses/O-UDA-1.0.html",
+              "spdxLicIsOSIApproved": false,
+              "spdxSeeAlso": [
+                  "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md"
+              ],
+              "_implications": {
+                  "__impliedNames": [
+                      "O-UDA-1.0",
+                      "Open Use of Data Agreement v1.0"
+                  ],
+                  "__impliedId": "O-UDA-1.0",
+                  "__isOsiApproved": false,
+                  "__impliedURLs": [
+                      [
+                          "SPDX",
+                          "http://spdx.org/licenses/O-UDA-1.0.json"
+                      ],
+                      [
+                          null,
+                          "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md"
+                      ]
+                  ]
+              },
+              "spdxLicenseId": "O-UDA-1.0"
+          }
+      },
+      "__isOsiApproved": false,
+      "__impliedURLs": [
+          [
+              "SPDX",
+              "http://spdx.org/licenses/O-UDA-1.0.json"
+          ],
+          [
+              null,
+              "https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md"
+          ]
+      ]
+  }
+#+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/O-UDA-1.0.svg]]

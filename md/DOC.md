@@ -29,6 +29,8 @@ URLs
 
 -   http://www.cs.wustl.edu/~schmidt/ACE-copying.html
 
+-   https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html
+
 Text
 ----
 
@@ -69,7 +71,8 @@ Raw Data
                 "_sourceURL": "https://spdx.org/licenses/DOC.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "http://www.cs.wustl.edu/~schmidt/ACE-copying.html"
+                    "http://www.cs.wustl.edu/~schmidt/ACE-copying.html",
+                    "https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -86,6 +89,10 @@ Raw Data
                         [
                             null,
                             "http://www.cs.wustl.edu/~schmidt/ACE-copying.html"
+                        ],
+                        [
+                            null,
+                            "https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html"
                         ]
                     ]
                 },
@@ -195,6 +202,10 @@ Raw Data
             [
                 null,
                 "http://www.cs.wustl.edu/~schmidt/ACE-copying.html"
+            ],
+            [
+                null,
+                "https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html"
             ],
             [
                 "SPDX",

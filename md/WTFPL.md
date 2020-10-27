@@ -58,6 +58,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/WTFPL.html
 
+-   http://www.wtfpl.net/about/
+
 -   http://sam.zoy.org/wtfpl/COPYING
 
 -   http://fedoraproject.org/wiki/Licensing/WTFPL
@@ -113,6 +115,7 @@ Raw Data
                 "_sourceURL": "https://spdx.org/licenses/WTFPL.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
+                    "http://www.wtfpl.net/about/",
                     "http://sam.zoy.org/wtfpl/COPYING"
                 ],
                 "_implications": {
@@ -126,6 +129,10 @@ Raw Data
                         [
                             "SPDX",
                             "http://spdx.org/licenses/WTFPL.json"
+                        ],
+                        [
+                            null,
+                            "http://www.wtfpl.net/about/"
                         ],
                         [
                             null,
@@ -438,6 +445,10 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/WTFPL.json"
+            ],
+            [
+                null,
+                "http://www.wtfpl.net/about/"
             ],
             [
                 null,

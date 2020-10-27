@@ -32,7 +32,6 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
 * *SPDX:* http://spdx.org/licenses/CECILL-C.json
 * http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
-* http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
 
 === Text
 
@@ -307,7 +306,7 @@ Version 1.0 du 2006-09-05."
             "_sourceURL": "https://spdx.org/licenses/CECILL-C.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
-                "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+                "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
             ],
             "_implications": {
                 "__impliedNames": [
@@ -323,7 +322,7 @@ Version 1.0 du 2006-09-05."
                     ],
                     [
                         null,
-                        "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+                        "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
                     ]
                 ]
             },
@@ -425,15 +424,11 @@ Version 1.0 du 2006-09-05."
         ],
         [
             null,
-            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
         ],
         [
             "Homepage",
             "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html"
-        ],
-        [
-            null,
-            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
         ]
     ]
 }

@@ -32,6 +32,10 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/bzip2-1.0.6.html
 
+-   https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6
+
+-   http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
+
 -   http://www.bzip.org/
 
 OSADL Rule
@@ -116,7 +120,8 @@ Raw Data
                 "_sourceURL": "https://spdx.org/licenses/bzip2-1.0.6.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "https://github.com/asimonov-im/bzip2/blob/master/LICENSE"
+                    "https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6",
+                    "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -132,7 +137,11 @@ Raw Data
                         ],
                         [
                             null,
-                            "https://github.com/asimonov-im/bzip2/blob/master/LICENSE"
+                            "https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6"
+                        ],
+                        [
+                            null,
+                            "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
                         ]
                     ]
                 },
@@ -265,7 +274,11 @@ Raw Data
             ],
             [
                 null,
-                "https://github.com/asimonov-im/bzip2/blob/master/LICENSE"
+                "https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6"
+            ],
+            [
+                null,
+                "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
             ],
             [
                 "SPDX",

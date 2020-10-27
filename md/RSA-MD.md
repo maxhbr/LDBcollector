@@ -5,6 +5,8 @@ RSA Message-Digest License (RSA-MD)
 
 **Other Names:**
 
+-   `RSA Message-Digest License `
+
 -   `scancode://rsa-md5`
 
 -   `RSA-MD5 License`
@@ -56,6 +58,7 @@ Raw Data
     {
         "__impliedNames": [
             "RSA-MD",
+            "RSA Message-Digest License",
             "RSA Message-Digest License ",
             "scancode://rsa-md5",
             "RSA-MD5 License"
@@ -64,7 +67,7 @@ Raw Data
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
-                "spdxFullName": "RSA Message-Digest License ",
+                "spdxFullName": "RSA Message-Digest License",
                 "spdxDetailsURL": "http://spdx.org/licenses/RSA-MD.json",
                 "_sourceURL": "https://spdx.org/licenses/RSA-MD.html",
                 "spdxLicIsOSIApproved": false,
@@ -74,7 +77,7 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "RSA-MD",
-                        "RSA Message-Digest License "
+                        "RSA Message-Digest License"
                     ],
                     "__impliedId": "RSA-MD",
                     "__isOsiApproved": false,

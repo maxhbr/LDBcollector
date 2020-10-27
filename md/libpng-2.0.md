@@ -22,8 +22,6 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/libpng-2.0.json
 
--   http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
-
 Text
 ----
 
@@ -85,7 +83,7 @@ Raw Data
                 "_sourceURL": "https://spdx.org/licenses/libpng-2.0.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt\n         "
+                    "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -101,7 +99,7 @@ Raw Data
                         ],
                         [
                             null,
-                            "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt\n         "
+                            "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
                         ]
                     ]
                 },
@@ -161,7 +159,7 @@ Raw Data
             ],
             [
                 null,
-                "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt\n         "
+                "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
             ],
             [
                 "Homepage",

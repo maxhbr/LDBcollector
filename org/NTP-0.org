@@ -1,0 +1,79 @@
+* NTP No Attribution (NTP-0)
+
+| Key         | Value                                          |
+|-------------+------------------------------------------------|
+| Fullname    | NTP No Attribution                             |
+| Shortname   | NTP-0                                          |
+| Rating      | Unknown, probably Attention or Stop or No-Go   |
+
+** Comments on (easy) usability
+
+** General Comments
+
+** URLs
+
+- *SPDX:* http://spdx.org/licenses/NTP-0.json
+
+- https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c
+
+--------------
+
+** Raw Data
+
+#+BEGIN_EXAMPLE
+  {
+      "__impliedNames": [
+          "NTP-0",
+          "NTP No Attribution"
+      ],
+      "__impliedId": "NTP-0",
+      "facts": {
+          "SPDX": {
+              "isSPDXLicenseDeprecated": false,
+              "spdxFullName": "NTP No Attribution",
+              "spdxDetailsURL": "http://spdx.org/licenses/NTP-0.json",
+              "_sourceURL": "https://spdx.org/licenses/NTP-0.html",
+              "spdxLicIsOSIApproved": false,
+              "spdxSeeAlso": [
+                  "https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c"
+              ],
+              "_implications": {
+                  "__impliedNames": [
+                      "NTP-0",
+                      "NTP No Attribution"
+                  ],
+                  "__impliedId": "NTP-0",
+                  "__isOsiApproved": false,
+                  "__impliedURLs": [
+                      [
+                          "SPDX",
+                          "http://spdx.org/licenses/NTP-0.json"
+                      ],
+                      [
+                          null,
+                          "https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c"
+                      ]
+                  ]
+              },
+              "spdxLicenseId": "NTP-0"
+          }
+      },
+      "__isOsiApproved": false,
+      "__impliedURLs": [
+          [
+              "SPDX",
+              "http://spdx.org/licenses/NTP-0.json"
+          ],
+          [
+              null,
+              "https://github.com/tytso/e2fsprogs/blob/master/lib/et/et_name.c"
+          ]
+      ]
+  }
+#+END_EXAMPLE
+
+--------------
+
+** Dot Cluster Graph
+
+[[../dot/NTP-0.svg]]

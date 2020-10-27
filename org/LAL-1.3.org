@@ -142,7 +142,7 @@
               "_sourceURL": "https://spdx.org/licenses/LAL-1.3.html",
               "spdxLicIsOSIApproved": false,
               "spdxSeeAlso": [
-                  "http://artlibre.org/"
+                  "https://artlibre.org/"
               ],
               "_implications": {
                   "__impliedNames": [
@@ -158,7 +158,7 @@
                       ],
                       [
                           null,
-                          "http://artlibre.org/"
+                          "https://artlibre.org/"
                       ]
                   ]
               },
@@ -257,7 +257,7 @@
           ],
           [
               null,
-              "http://artlibre.org/"
+              "https://artlibre.org/"
           ],
           [
               "Homepage",

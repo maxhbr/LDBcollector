@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="72.54,-526 72.54,-632 238.03,-632 238.03,-526 72.54,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="53.05,-526 53.05,-632 257.53,-632 257.53,-526 53.05,-526"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -49,11 +49,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="155.29" cy="-606" rx="38.19" ry="18"/>
 <text text-anchor="middle" x="155.29" y="-602.3" font-family="Times-Roman" font-size="14.00">MirOS</text>
 </g>
-<!-- MirOS License(2) -->
+<!-- The MirOS Licence(2) -->
 <g id="node3" class="node">
-<title>MirOS License(2)</title>
-<ellipse fill="white" stroke="white" cx="155.29" cy="-552" rx="74.99" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-548.3" font-family="Times-Roman" font-size="14.00">MirOS License</text>
+<title>The MirOS Licence(2)</title>
+<ellipse fill="white" stroke="white" cx="155.29" cy="-552" rx="94.48" ry="18"/>
+<text text-anchor="middle" x="155.29" y="-548.3" font-family="Times-Roman" font-size="14.00">The MirOS Licence</text>
 </g>
 <!-- MirOS(3) -->
 <g id="node4" class="node">

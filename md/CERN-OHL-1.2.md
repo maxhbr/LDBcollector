@@ -21,8 +21,6 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/CERN-OHL-1.2.json
 
--   https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2
-
 Text
 ----
 
@@ -130,7 +128,7 @@ Raw Data
                 "_sourceURL": "https://spdx.org/licenses/CERN-OHL-1.2.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
+                    "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -146,7 +144,7 @@ Raw Data
                         ],
                         [
                             null,
-                            "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
+                            "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
                         ]
                     ]
                 },
@@ -212,14 +210,10 @@ Raw Data
             ],
             [
                 null,
-                "\nhttps://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
-            ],
-            [
-                "Homepage",
                 "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
             ],
             [
-                null,
+                "Homepage",
                 "https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.2"
             ]
         ]

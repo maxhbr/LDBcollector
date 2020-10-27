@@ -140,7 +140,7 @@ Raw Data
                 "_sourceURL": "https://spdx.org/licenses/LAL-1.3.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "http://artlibre.org/"
+                    "https://artlibre.org/"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -156,7 +156,7 @@ Raw Data
                         ],
                         [
                             null,
-                            "http://artlibre.org/"
+                            "https://artlibre.org/"
                         ]
                     ]
                 },
@@ -255,7 +255,7 @@ Raw Data
             ],
             [
                 null,
-                "http://artlibre.org/"
+                "https://artlibre.org/"
             ],
             [
                 "Homepage",

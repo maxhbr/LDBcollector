@@ -1,0 +1,79 @@
+The Parity Public License 7.0.0 (Parity-7.0.0)
+==============================================
+
+[TABLE]
+
+Comments on (easy) usability
+----------------------------
+
+General Comments
+----------------
+
+URLs
+----
+
+-   **SPDX:** http://spdx.org/licenses/Parity-7.0.0.json
+
+-   https://paritylicense.com/versions/7.0.0.html
+
+------------------------------------------------------------------------
+
+Raw Data
+--------
+
+    {
+        "__impliedNames": [
+            "Parity-7.0.0",
+            "The Parity Public License 7.0.0"
+        ],
+        "__impliedId": "Parity-7.0.0",
+        "facts": {
+            "SPDX": {
+                "isSPDXLicenseDeprecated": false,
+                "spdxFullName": "The Parity Public License 7.0.0",
+                "spdxDetailsURL": "http://spdx.org/licenses/Parity-7.0.0.json",
+                "_sourceURL": "https://spdx.org/licenses/Parity-7.0.0.html",
+                "spdxLicIsOSIApproved": false,
+                "spdxSeeAlso": [
+                    "https://paritylicense.com/versions/7.0.0.html"
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Parity-7.0.0",
+                        "The Parity Public License 7.0.0"
+                    ],
+                    "__impliedId": "Parity-7.0.0",
+                    "__isOsiApproved": false,
+                    "__impliedURLs": [
+                        [
+                            "SPDX",
+                            "http://spdx.org/licenses/Parity-7.0.0.json"
+                        ],
+                        [
+                            null,
+                            "https://paritylicense.com/versions/7.0.0.html"
+                        ]
+                    ]
+                },
+                "spdxLicenseId": "Parity-7.0.0"
+            }
+        },
+        "__isOsiApproved": false,
+        "__impliedURLs": [
+            [
+                "SPDX",
+                "http://spdx.org/licenses/Parity-7.0.0.json"
+            ],
+            [
+                null,
+                "https://paritylicense.com/versions/7.0.0.html"
+            ]
+        ]
+    }
+
+------------------------------------------------------------------------
+
+Dot Cluster Graph
+-----------------
+
+![](../dot/Parity-7.0.0.svg "dot")

@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 319.27,-404 319.27,-298 16,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="19.25,-298 19.25,-404 316.02,-404 316.02,-298 19.25,-298"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -35,11 +35,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="167.64" cy="-438" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="167.64" y="-434.3" font-family="Times-Roman" font-size="14.00">RSA&#45;MD</text>
 </g>
-<!-- RSA Message&#45;Digest License (2) -->
+<!-- RSA Message&#45;Digest License(2) -->
 <g id="node2" class="node">
-<title>RSA Message&#45;Digest License (2)</title>
-<ellipse fill="white" stroke="white" cx="167.64" cy="-378" rx="143.77" ry="18"/>
-<text text-anchor="middle" x="167.64" y="-374.3" font-family="Times-Roman" font-size="14.00">RSA Message&#45;Digest License </text>
+<title>RSA Message&#45;Digest License(2)</title>
+<ellipse fill="white" stroke="white" cx="167.64" cy="-378" rx="140.28" ry="18"/>
+<text text-anchor="middle" x="167.64" y="-374.3" font-family="Times-Roman" font-size="14.00">RSA Message&#45;Digest License</text>
 </g>
 <!-- RSA&#45;MD(2) -->
 <g id="node3" class="node">

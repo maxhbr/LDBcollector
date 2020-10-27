@@ -22,7 +22,7 @@
             "_sourceURL": "https://spdx.org/licenses/CECILL-C.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
-                "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+                "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
             ],
             "_implications": {
                 "__impliedNames": [
@@ -38,7 +38,7 @@
                     ],
                     [
                         null,
-                        "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+                        "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
                     ]
                 ]
             },
@@ -140,15 +140,11 @@
         ],
         [
             null,
-            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
         ],
         [
             "Homepage",
             "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html"
-        ],
-        [
-            null,
-            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
         ]
     ]
 }

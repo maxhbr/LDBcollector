@@ -21,6 +21,7 @@ https://blueoakcouncil.org/list[BlueOak License List])
 
 * *SPDX:* http://spdx.org/licenses/bzip2-1.0.5.json
 * *SPDX:* https://spdx.org/licenses/bzip2-1.0.5.html
+* https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html
 * http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
 
 === OSADL Rule
@@ -64,6 +65,7 @@ PATENT HINTS Yes
             "_sourceURL": "https://spdx.org/licenses/bzip2-1.0.5.html",
             "spdxLicIsOSIApproved": false,
             "spdxSeeAlso": [
+                "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html",
                 "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
             ],
             "_implications": {
@@ -77,6 +79,10 @@ PATENT HINTS Yes
                     [
                         "SPDX",
                         "http://spdx.org/licenses/bzip2-1.0.5.json"
+                    ],
+                    [
+                        null,
+                        "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html"
                     ],
                     [
                         null,
@@ -155,6 +161,10 @@ PATENT HINTS Yes
         [
             "SPDX",
             "http://spdx.org/licenses/bzip2-1.0.5.json"
+        ],
+        [
+            null,
+            "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html"
         ],
         [
             null,

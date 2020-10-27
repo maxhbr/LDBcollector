@@ -21,8 +21,6 @@
 
 - *SPDX:* http://spdx.org/licenses/TAPR-OHL-1.0.json
 
-- https://www.tapr.org/OHL
-
 ** Text
 
 #+BEGIN_EXAMPLE
@@ -183,7 +181,7 @@
               "_sourceURL": "https://spdx.org/licenses/TAPR-OHL-1.0.html",
               "spdxLicIsOSIApproved": false,
               "spdxSeeAlso": [
-                  "\nhttps://www.tapr.org/OHL"
+                  "https://www.tapr.org/OHL"
               ],
               "_implications": {
                   "__impliedNames": [
@@ -199,7 +197,7 @@
                       ],
                       [
                           null,
-                          "\nhttps://www.tapr.org/OHL"
+                          "https://www.tapr.org/OHL"
                       ]
                   ]
               },
@@ -265,14 +263,10 @@
           ],
           [
               null,
-              "\nhttps://www.tapr.org/OHL"
-          ],
-          [
-              "Homepage",
               "https://www.tapr.org/OHL"
           ],
           [
-              null,
+              "Homepage",
               "https://www.tapr.org/OHL"
           ]
       ]

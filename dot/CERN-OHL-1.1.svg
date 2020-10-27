@@ -31,11 +31,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-324" rx="76.89" ry="18"/>
 <text text-anchor="middle" x="192.99" y="-320.3" font-family="Times-Roman" font-size="14.00">CERN&#45;OHL&#45;1.1</text>
 </g>
-<!-- CERN Open Hardware License v1.1(2) -->
+<!-- CERN Open Hardware Licence v1.1(2) -->
 <g id="node2" class="node">
-<title>CERN Open Hardware License v1.1(2)</title>
+<title>CERN Open Hardware Licence v1.1(2)</title>
 <ellipse fill="white" stroke="white" cx="192.99" cy="-264" rx="168.97" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-260.3" font-family="Times-Roman" font-size="14.00">CERN Open Hardware License v1.1</text>
+<text text-anchor="middle" x="192.99" y="-260.3" font-family="Times-Roman" font-size="14.00">CERN Open Hardware Licence v1.1</text>
 </g>
 <!-- CERN&#45;OHL&#45;1.1(2) -->
 <g id="node3" class="node">

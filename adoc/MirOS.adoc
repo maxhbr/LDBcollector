@@ -1,9 +1,9 @@
-== MirOS License (MirOS)
+== The MirOS Licence (MirOS)
 
 [cols=",",options="header",]
 |===
 |Key |Value
-|Fullname |MirOS License
+|Fullname |The MirOS Licence
 |Shortname |MirOS
 |Rating |Unknown, probably Stop or No-Go
 |Classification |NoCopyleft
@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+MirOS License+`
 * `+scancode://mir-os+`
 * `+The MirOS Licence (MirOS)+`
 * `+MirOS Licence+`
@@ -66,6 +67,7 @@ of said person's immediate fault when using the work as intended.
 {
     "__impliedNames": [
         "MirOS",
+        "The MirOS Licence",
         "MirOS License",
         "scancode://mir-os",
         "The MirOS Licence (MirOS)",
@@ -113,7 +115,7 @@ of said person's immediate fault when using the work as intended.
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
-            "spdxFullName": "MirOS License",
+            "spdxFullName": "The MirOS Licence",
             "spdxDetailsURL": "http://spdx.org/licenses/MirOS.json",
             "_sourceURL": "https://spdx.org/licenses/MirOS.html",
             "spdxLicIsOSIApproved": true,
@@ -123,7 +125,7 @@ of said person's immediate fault when using the work as intended.
             "_implications": {
                 "__impliedNames": [
                     "MirOS",
-                    "MirOS License"
+                    "The MirOS Licence"
                 ],
                 "__impliedId": "MirOS",
                 "__impliedJudgement": [

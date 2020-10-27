@@ -33,8 +33,6 @@ URLs
 
 -   http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html
 
--   http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html
-
 Text
 ----
 
@@ -307,7 +305,7 @@ Raw Data
                 "_sourceURL": "https://spdx.org/licenses/CECILL-C.html",
                 "spdxLicIsOSIApproved": false,
                 "spdxSeeAlso": [
-                    "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+                    "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
                 ],
                 "_implications": {
                     "__impliedNames": [
@@ -323,7 +321,7 @@ Raw Data
                         ],
                         [
                             null,
-                            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+                            "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
                         ]
                     ]
                 },
@@ -425,15 +423,11 @@ Raw Data
             ],
             [
                 null,
-                "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html\n    "
+                "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
             ],
             [
                 "Homepage",
                 "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html"
-            ],
-            [
-                null,
-                "http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html"
             ]
         ]
     }
