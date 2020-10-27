@@ -15,6 +15,7 @@
     ],
     "__impliedId": "LGPL-2.1-only",
     "__impliedAmbiguousNames": [
+        "GNU Library General Public License",
         "The GNU Lesser General Public License (LGPL)"
     ],
     "__impliedComments": [
@@ -277,6 +278,36 @@
             "oJudgement": null,
             "oCompatibilities": null,
             "oRatingState": null
+        },
+        "BlueOak License List": {
+            "url": "https://spdx.org/licenses/LGPL-2.1-only.html",
+            "familyName": "GNU Library General Public License",
+            "_sourceURL": "https://blueoakcouncil.org/copyleft",
+            "name": "GNU Lesser General Public License v2.1 only",
+            "id": "LGPL-2.1-only",
+            "_implications": {
+                "__impliedNames": [
+                    "LGPL-2.1-only",
+                    "GNU Lesser General Public License v2.1 only"
+                ],
+                "__impliedAmbiguousNames": [
+                    "GNU Library General Public License"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft",
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/LGPL-2.1-only.html"
+                    ]
+                ]
+            },
+            "CopyleftKind": "WeakCopyleft"
         },
         "OpenSourceInitiative": {
             "text": [
@@ -582,6 +613,10 @@
     ],
     "__impliedCopyleft": [
         [
+            "BlueOak License List",
+            "WeakCopyleft"
+        ],
+        [
             "OSADL License Checklist",
             "Copyleft"
         ],
@@ -653,6 +688,10 @@
         [
             null,
             "https://opensource.org/licenses/LGPL-2.1"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/LGPL-2.1-only.html"
         ],
         [
             "Homepage",

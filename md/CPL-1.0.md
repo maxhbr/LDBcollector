@@ -47,6 +47,8 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/CPL-1.0.json
 
+-   https://spdx.org/licenses/CPL-1.0.html
+
 -   http://dev.eclipse.org/blogs/mike/2009/04/16/one-small-step-towards-reducing-license-proliferation/
 
 -   http://www.ibm.com/developerworks/library/os-cpl.html
@@ -167,6 +169,7 @@ Raw Data
         ],
         "__impliedId": "CPL-1.0",
         "__impliedAmbiguousNames": [
+            "Common Public License",
             "Common Public License (CPL), Version 1.0"
         ],
         "__impliedComments": [
@@ -321,6 +324,36 @@ Raw Data
                 "Comment": null,
                 "LicenseId": "CPL-1.0"
             },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/CPL-1.0.html",
+                "familyName": "Common Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Common Public License 1.0",
+                "id": "CPL-1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CPL-1.0",
+                        "Common Public License 1.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Common Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/CPL-1.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -444,6 +477,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "Scancode",
                 "WeakCopyleft"
             ]
@@ -459,6 +496,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/CPL-1.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/CPL-1.0.html"
             ],
             [
                 "Homepage",

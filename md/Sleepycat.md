@@ -39,6 +39,8 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Sleepycat.json
 
+-   https://spdx.org/licenses/Sleepycat.html
+
 -   http://www.opensource.org/licenses/Sleepycat
 
 -   http://www.opensource.org/licenses/sleepycat.php
@@ -93,6 +95,9 @@ Raw Data
             "Sleepycat Software Product License"
         ],
         "__impliedId": "Sleepycat",
+        "__impliedAmbiguousNames": [
+            "Sleepycat License"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -268,6 +273,36 @@ Raw Data
                 "oCompatibilities": null,
                 "oRatingState": null
             },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/Sleepycat.html",
+                "familyName": "Sleepycat License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Sleepycat License",
+                "id": "Sleepycat",
+                "_implications": {
+                    "__impliedNames": [
+                        "Sleepycat",
+                        "Sleepycat License"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Sleepycat License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/Sleepycat.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "StrongCopyleft"
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -399,11 +434,15 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "StrongCopyleft"
+            ],
+            [
                 "Scancode",
                 "Copyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__isOsiApproved": true,
         "__impliedText": " Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n 2. Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n 3. Redistributions in any form must be accompanied by information on\n    how to obtain complete source code for the DB software and any\n    accompanying software that uses the DB software.  The source code\n    must either be included in the distribution or be available for no\n    more than the cost of distribution plus a nominal fee, and must be\n    freely redistributable under reasonable conditions.  For an\n    executable file, complete source code means the source code for all\n    modules it contains.  It does not include source code for modules or\n    files that typically accompany the major components of the operating\n    system on which the executable file runs.\n\n THIS SOFTWARE IS PROVIDED BY ORACLE CORPORATION ``AS IS'' AND ANY EXPRESS\n OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR\n NON-INFRINGEMENT, ARE DISCLAIMED.  IN NO EVENT SHALL ORACLE CORPORATION\n BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF\n THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
@@ -414,6 +453,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/Sleepycat"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/Sleepycat.html"
             ],
             [
                 "Homepage",

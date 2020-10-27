@@ -32,6 +32,8 @@ URLs
 
 -   https://javaee.github.io/glassfish/LICENSE
 
+-   https://spdx.org/licenses/CDDL-1.1.html
+
 Text
 ----
 
@@ -134,6 +136,9 @@ Raw Data
             "CDDL 1.1"
         ],
         "__impliedId": "CDDL-1.1",
+        "__impliedAmbiguousNames": [
+            "Common Development and Distribution License"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -227,6 +232,36 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/CDDL-1.1.html",
+                "familyName": "Common Development and Distribution License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Common Development and Distribution License 1.1",
+                "id": "CDDL-1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "CDDL-1.1",
+                        "Common Development and Distribution License 1.1"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Common Development and Distribution License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/CDDL-1.1.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
             },
             "finos-osr/OSLC-handbook": {
                 "terms": [
@@ -363,6 +398,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "Scancode",
                 "WeakCopyleft"
             ]
@@ -382,6 +421,10 @@ Raw Data
             [
                 null,
                 "https://javaee.github.io/glassfish/LICENSE"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/CDDL-1.1.html"
             ],
             [
                 "Homepage",

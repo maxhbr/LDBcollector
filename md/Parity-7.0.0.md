@@ -16,6 +16,8 @@ URLs
 
 -   https://paritylicense.com/versions/7.0.0.html
 
+-   https://spdx.org/licenses/Parity-7.0.0.html
+
 ------------------------------------------------------------------------
 
 Raw Data
@@ -27,6 +29,9 @@ Raw Data
             "The Parity Public License 7.0.0"
         ],
         "__impliedId": "Parity-7.0.0",
+        "__impliedAmbiguousNames": [
+            "The Parity Public License"
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -56,8 +61,45 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Parity-7.0.0"
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/Parity-7.0.0.html",
+                "familyName": "The Parity Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "The Parity Public License 7.0.0",
+                "id": "Parity-7.0.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "Parity-7.0.0",
+                        "The Parity Public License 7.0.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "The Parity Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "MaximalCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "MaximalCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/Parity-7.0.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "MaximalCopyleft"
             }
         },
+        "__impliedCopyleft": [
+            [
+                "BlueOak License List",
+                "MaximalCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "MaximalCopyleft",
         "__isOsiApproved": false,
         "__impliedURLs": [
             [
@@ -67,6 +109,10 @@ Raw Data
             [
                 null,
                 "https://paritylicense.com/versions/7.0.0.html"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/Parity-7.0.0.html"
             ]
         ]
     }

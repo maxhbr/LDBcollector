@@ -26,6 +26,7 @@
     "__impliedId": "GPL-3.0-only",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
+        "GNU General Public License",
         "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
         "The GNU General Public License (GPL)"
     ],
@@ -285,6 +286,36 @@
             "oJudgement": null,
             "oCompatibilities": null,
             "oRatingState": null
+        },
+        "BlueOak License List": {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "familyName": "GNU General Public License",
+            "_sourceURL": "https://blueoakcouncil.org/copyleft",
+            "name": "GNU General Public License v3.0 only",
+            "id": "GPL-3.0-only",
+            "_implications": {
+                "__impliedNames": [
+                    "GPL-3.0-only",
+                    "GNU General Public License v3.0 only"
+                ],
+                "__impliedAmbiguousNames": [
+                    "GNU General Public License"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft",
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/GPL-3.0-only.html"
+                    ]
+                ]
+            },
+            "CopyleftKind": "StrongCopyleft"
         },
         "OpenSourceInitiative": {
             "text": [
@@ -721,6 +752,10 @@
     ],
     "__impliedCopyleft": [
         [
+            "BlueOak License List",
+            "StrongCopyleft"
+        ],
+        [
             "OSADL License Checklist",
             "Copyleft"
         ],
@@ -729,7 +764,7 @@
             "Copyleft"
         ]
     ],
-    "__calculatedCopyleft": "Copyleft",
+    "__calculatedCopyleft": "StrongCopyleft",
     "__obligations": {
         "limitations": [
             {
@@ -800,6 +835,14 @@
         [
             "SPDX",
             "http://spdx.org/licenses/GPL-3.0-or-later.json"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/GPL-3.0-only.html"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/GPL-3.0-or-later.html"
         ],
         [
             "Homepage",

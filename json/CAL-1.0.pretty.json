@@ -4,6 +4,9 @@
         "Cryptographic Autonomy License 1.0"
     ],
     "__impliedId": "CAL-1.0",
+    "__impliedAmbiguousNames": [
+        "Cryptographic Autonomy License"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -47,6 +50,36 @@
                 ]
             },
             "spdxLicenseId": "CAL-1.0"
+        },
+        "BlueOak License List": {
+            "url": "https://spdx.org/licenses/CAL-1.0.html",
+            "familyName": "Cryptographic Autonomy License",
+            "_sourceURL": "https://blueoakcouncil.org/copyleft",
+            "name": "Cryptographic Autonomy License 1.0",
+            "id": "CAL-1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "CAL-1.0",
+                    "Cryptographic Autonomy License 1.0"
+                ],
+                "__impliedAmbiguousNames": [
+                    "Cryptographic Autonomy License"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "MaximalCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "MaximalCopyleft",
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/CAL-1.0.html"
+                    ]
+                ]
+            },
+            "CopyleftKind": "MaximalCopyleft"
         }
     },
     "__impliedJudgement": [
@@ -58,6 +91,13 @@
             }
         ]
     ],
+    "__impliedCopyleft": [
+        [
+            "BlueOak License List",
+            "MaximalCopyleft"
+        ]
+    ],
+    "__calculatedCopyleft": "MaximalCopyleft",
     "__isOsiApproved": true,
     "__impliedURLs": [
         [
@@ -71,6 +111,10 @@
         [
             null,
             "https://opensource.org/licenses/CAL-1.0"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/CAL-1.0.html"
         ]
     ]
 }

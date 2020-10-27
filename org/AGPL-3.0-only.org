@@ -5,7 +5,7 @@
 | Fullname          | GNU Affero General Public License v3.0 only    |
 | Shortname         | AGPL-3.0-only                                  |
 | Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | Copyleft                                       |
+| Classification    | SaaSCopyleft                                   |
 | Has Patent Hint   | True                                           |
 
 *Other Names:*
@@ -103,6 +103,8 @@
 - *SPDX:* http://spdx.org/licenses/AGPL-3.0-only.json
 
 - https://www.gnu.org/licenses/agpl.txt
+
+- https://spdx.org/licenses/AGPL-3.0-only.html
 
 - http://www.opensource.org/licenses/AGPL-3.0
 
@@ -476,6 +478,7 @@
       "__impliedId": "AGPL-3.0-only",
       "__isFsfFree": true,
       "__impliedAmbiguousNames": [
+          "Affero General Public License",
           "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)"
       ],
       "__impliedComments": [
@@ -741,6 +744,36 @@
               "oJudgement": null,
               "oCompatibilities": null,
               "oRatingState": null
+          },
+          "BlueOak License List": {
+              "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+              "familyName": "Affero General Public License",
+              "_sourceURL": "https://blueoakcouncil.org/copyleft",
+              "name": "GNU Affero General Public License v3.0 only",
+              "id": "AGPL-3.0-only",
+              "_implications": {
+                  "__impliedNames": [
+                      "AGPL-3.0-only",
+                      "GNU Affero General Public License v3.0 only"
+                  ],
+                  "__impliedAmbiguousNames": [
+                      "Affero General Public License"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "BlueOak License List",
+                          "SaaSCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "SaaSCopyleft",
+                  "__impliedURLs": [
+                      [
+                          null,
+                          "https://spdx.org/licenses/AGPL-3.0-only.html"
+                      ]
+                  ]
+              },
+              "CopyleftKind": "SaaSCopyleft"
           },
           "OpenSourceInitiative": {
               "text": [
@@ -1066,6 +1099,10 @@
       ],
       "__impliedCopyleft": [
           [
+              "BlueOak License List",
+              "SaaSCopyleft"
+          ],
+          [
               "OSADL License Checklist",
               "Copyleft"
           ],
@@ -1074,7 +1111,7 @@
               "Copyleft"
           ]
       ],
-      "__calculatedCopyleft": "Copyleft",
+      "__calculatedCopyleft": "SaaSCopyleft",
       "__obligations": {
           "limitations": [
               {
@@ -1145,6 +1182,10 @@
           [
               null,
               "https://opensource.org/licenses/AGPL-3.0"
+          ],
+          [
+              null,
+              "https://spdx.org/licenses/AGPL-3.0-only.html"
           ],
           [
               "Homepage",

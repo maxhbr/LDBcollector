@@ -38,6 +38,8 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/SPL-1.0.json
 
+-   https://spdx.org/licenses/SPL-1.0.html
+
 -   http://www.gnu.org/licenses/license-list.html\#SPL
 
 -   http://www.opensource.org/licenses/SPL-1.0
@@ -566,6 +568,9 @@ Raw Data
             "Sun Public License 1.0"
         ],
         "__impliedId": "SPL-1.0",
+        "__impliedAmbiguousNames": [
+            "Sun Public License v1.0"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -720,6 +725,36 @@ Raw Data
                     ]
                 }
             },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/SPL-1.0.html",
+                "familyName": "Sun Public License v1.0",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Sun Public License v1.0",
+                "id": "SPL-1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "SPL-1.0",
+                        "Sun Public License v1.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Sun Public License v1.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/SPL-1.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -781,6 +816,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "Scancode",
                 "WeakCopyleft"
             ]
@@ -796,6 +835,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/SPL-1.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/SPL-1.0.html"
             ],
             [
                 "Homepage",

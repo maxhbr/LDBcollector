@@ -62,6 +62,8 @@ URLs
 
 -   https://opensource.org/licenses/EUPL-1.2
 
+-   https://spdx.org/licenses/EUPL-1.2.html
+
 -   http://www.opensource.org/licenses/EUPL-1.1
 
 -   https://opensource.org/licenses/EUPL-1.1
@@ -197,6 +199,9 @@ Raw Data
             "European Union Public Licence 1.2"
         ],
         "__impliedId": "EUPL-1.2",
+        "__impliedAmbiguousNames": [
+            "European Union Public License"
+        ],
         "__hasPatentHint": true,
         "facts": {
             "SPDX": {
@@ -339,6 +344,36 @@ Raw Data
                         "EUPL-1.2"
                     ]
                 }
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/EUPL-1.2.html",
+                "familyName": "European Union Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "European Union Public License 1.2",
+                "id": "EUPL-1.2",
+                "_implications": {
+                    "__impliedNames": [
+                        "EUPL-1.2",
+                        "European Union Public License 1.2"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "European Union Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "SaaSCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "SaaSCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/EUPL-1.2.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "SaaSCopyleft"
             },
             "Wikipedia": {
                 "Distribution": {
@@ -520,11 +555,15 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "SaaSCopyleft"
+            ],
+            [
                 "Scancode",
                 "WeakCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "WeakCopyleft",
+        "__calculatedCopyleft": "SaaSCopyleft",
         "__obligations": {
             "limitations": [
                 {
@@ -611,6 +650,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/EUPL-1.2"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/EUPL-1.2.html"
             ],
             [
                 "Homepage",

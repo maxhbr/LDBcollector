@@ -43,6 +43,8 @@ URLs
 
 -   https://opensource.org/licenses/cddl1
 
+-   https://spdx.org/licenses/CDDL-1.0.html
+
 -   http://www.gnu.org/licenses/license-list.html\#CDDL
 
 -   http://www.opensource.org/licenses/cddl1
@@ -204,6 +206,9 @@ Raw Data
             "Common Development and Distribution License, Version 1.0"
         ],
         "__impliedId": "CDDL-1.0",
+        "__impliedAmbiguousNames": [
+            "Common Development and Distribution License"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -386,6 +391,36 @@ Raw Data
                         "CDDL-1.0"
                     ]
                 }
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/CDDL-1.0.html",
+                "familyName": "Common Development and Distribution License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Common Development and Distribution License 1.0",
+                "id": "CDDL-1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CDDL-1.0",
+                        "Common Development and Distribution License 1.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Common Development and Distribution License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/CDDL-1.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
             },
             "OpenSourceInitiative": {
                 "text": [
@@ -609,6 +644,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -628,6 +667,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/cddl1"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/CDDL-1.0.html"
             ],
             [
                 "Homepage",

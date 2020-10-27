@@ -104,6 +104,8 @@ URLs
 
 -   https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 
+-   https://spdx.org/licenses/GPL-2.0-only.html
+
 -   http://creativecommons.org/choose/cc-gpl
 
 -   http://creativecommons.org/images/public/cc-GPL-a.png
@@ -581,6 +583,7 @@ Raw Data
         "__impliedId": "GPL-2.0-only",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
+            "GNU General Public License",
             "The GNU General Public License (GPL)"
         ],
         "__impliedComments": [
@@ -902,6 +905,36 @@ Raw Data
                 },
                 "oRatingState": null
             },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+                "familyName": "GNU General Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "GNU General Public License v2.0 only",
+                "id": "GPL-2.0-only",
+                "_implications": {
+                    "__impliedNames": [
+                        "GPL-2.0-only",
+                        "GNU General Public License v2.0 only"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "GNU General Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/GPL-2.0-only.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "StrongCopyleft"
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -1218,6 +1251,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "StrongCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -1226,7 +1263,7 @@ Raw Data
                 "Copyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__obligations": {
             "limitations": [
                 {
@@ -1289,6 +1326,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/GPL-2.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/GPL-2.0-only.html"
             ],
             [
                 "Homepage",

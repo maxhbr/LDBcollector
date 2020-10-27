@@ -49,6 +49,8 @@ URLs
 
 -   https://opensource.org/licenses/GPL-2.0
 
+-   https://spdx.org/licenses/GPL-2.0-or-later.html
+
 -   http://www.opensource.org/licenses/GPL-2.0
 
 OSADL Rule
@@ -185,6 +187,7 @@ Raw Data
         ],
         "__impliedId": "GPL-2.0-or-later",
         "__impliedAmbiguousNames": [
+            "GNU General Public License",
             "The GNU General Public License (GPL)"
         ],
         "__impliedComments": [
@@ -367,6 +370,36 @@ Raw Data
                 "oCompatibilities": null,
                 "oRatingState": null
             },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+                "familyName": "GNU General Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "GNU General Public License v2.0 or later",
+                "id": "GPL-2.0-or-later",
+                "_implications": {
+                    "__impliedNames": [
+                        "GPL-2.0-or-later",
+                        "GNU General Public License v2.0 or later"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "GNU General Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/GPL-2.0-or-later.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "StrongCopyleft"
+            },
             "finos-osr/OSLC-handbook": {
                 "terms": [
                     {
@@ -518,6 +551,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "StrongCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -526,7 +563,7 @@ Raw Data
                 "Copyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__isOsiApproved": true,
         "__impliedText": "This program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 2 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program; if not, write to the Free Software Foundation, Inc., 51 Franklin\nStreet, Fifth Floor, Boston, MA  02110-1301, USA.",
         "__impliedURLs": [
@@ -541,6 +578,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/GPL-2.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/GPL-2.0-or-later.html"
             ],
             [
                 "Homepage",

@@ -77,6 +77,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt[c
 * *OSI Page:* https://opensource.org/licenses/MS-RL
 * *SPDX:* http://spdx.org/licenses/MS-RL.json
 * http://www.microsoft.com/opensource/licenses.mspx
+* https://spdx.org/licenses/MS-RL.html
 * http://www.microsoft.com/en-us/openness/licenses.aspx#MRL
 * http://www.opensource.org/licenses/MS-RL
 * https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx
@@ -159,6 +160,9 @@ This license governs use of the accompanying software. If you use the software, 
     ],
     "__impliedId": "MS-RL",
     "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Microsoft Reciprocal License"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -374,6 +378,36 @@ This license governs use of the accompanying software. If you use the software, 
                 ]
             }
         },
+        "BlueOak License List": {
+            "url": "https://spdx.org/licenses/MS-RL.html",
+            "familyName": "Microsoft Reciprocal License",
+            "_sourceURL": "https://blueoakcouncil.org/copyleft",
+            "name": "Microsoft Reciprocal License",
+            "id": "MS-RL",
+            "_implications": {
+                "__impliedNames": [
+                    "MS-RL",
+                    "Microsoft Reciprocal License"
+                ],
+                "__impliedAmbiguousNames": [
+                    "Microsoft Reciprocal License"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft",
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/MS-RL.html"
+                    ]
+                ]
+            },
+            "CopyleftKind": "WeakCopyleft"
+        },
         "ifrOSS": {
             "ifrKind": "IfrWeakCopyleft",
             "ifrURL": "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx",
@@ -550,6 +584,10 @@ This license governs use of the accompanying software. If you use the software, 
     ],
     "__impliedCopyleft": [
         [
+            "BlueOak License List",
+            "WeakCopyleft"
+        ],
+        [
             "OSADL License Checklist",
             "Copyleft"
         ],
@@ -625,6 +663,10 @@ This license governs use of the accompanying software. If you use the software, 
         [
             null,
             "https://opensource.org/licenses/MS-RL"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/MS-RL.html"
         ],
         [
             "Homepage",

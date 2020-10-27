@@ -41,6 +41,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://www.opensource.org/licenses/ibmpl.php
 * *OSI Page:* https://opensource.org/licenses/IPL-1.0
 * *SPDX:* http://spdx.org/licenses/IPL-1.0.json
+* https://spdx.org/licenses/IPL-1.0.html
 * http://www.opensource.org/licenses/IPL-1.0
 
 === Text
@@ -132,6 +133,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
     ],
     "__impliedId": "IPL-1.0",
     "__impliedAmbiguousNames": [
+        "IBM Public License",
         "IBM Public License, Version 1.0"
     ],
     "__impliedComments": [
@@ -308,6 +310,36 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "Comment": "This license was later renamed the Common Public License (CPL). It is used for OpenAFS and Postfix and has been accepted in Debian main since 2000.",
             "LicenseId": "IPL-1.0"
         },
+        "BlueOak License List": {
+            "url": "https://spdx.org/licenses/IPL-1.0.html",
+            "familyName": "IBM Public License",
+            "_sourceURL": "https://blueoakcouncil.org/copyleft",
+            "name": "IBM Public License v1.0",
+            "id": "IPL-1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "IPL-1.0",
+                    "IBM Public License v1.0"
+                ],
+                "__impliedAmbiguousNames": [
+                    "IBM Public License"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft",
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/IPL-1.0.html"
+                    ]
+                ]
+            },
+            "CopyleftKind": "WeakCopyleft"
+        },
         "OpenSourceInitiative": {
             "text": [
                 {
@@ -426,6 +458,10 @@ This Agreement is governed by the laws of the State of New York and the intellec
     ],
     "__impliedCopyleft": [
         [
+            "BlueOak License List",
+            "WeakCopyleft"
+        ],
+        [
             "Scancode",
             "WeakCopyleft"
         ]
@@ -441,6 +477,10 @@ This Agreement is governed by the laws of the State of New York and the intellec
         [
             null,
             "https://opensource.org/licenses/IPL-1.0"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/IPL-1.0.html"
         ],
         [
             "Homepage",

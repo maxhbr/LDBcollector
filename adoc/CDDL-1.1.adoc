@@ -32,6 +32,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://glassfish.java.net/public/CDDL+GPL_1_1.html
 * *SPDX:* http://spdx.org/licenses/CDDL-1.1.json
 * https://javaee.github.io/glassfish/LICENSE
+* https://spdx.org/licenses/CDDL-1.1.html
 
 === Text
 
@@ -136,6 +137,9 @@ The code released under the CDDL shall be governed by the laws of the State of C
         "CDDL 1.1"
     ],
     "__impliedId": "CDDL-1.1",
+    "__impliedAmbiguousNames": [
+        "Common Development and Distribution License"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -229,6 +233,36 @@ The code released under the CDDL shall be governed by the laws of the State of C
                     ]
                 ]
             }
+        },
+        "BlueOak License List": {
+            "url": "https://spdx.org/licenses/CDDL-1.1.html",
+            "familyName": "Common Development and Distribution License",
+            "_sourceURL": "https://blueoakcouncil.org/copyleft",
+            "name": "Common Development and Distribution License 1.1",
+            "id": "CDDL-1.1",
+            "_implications": {
+                "__impliedNames": [
+                    "CDDL-1.1",
+                    "Common Development and Distribution License 1.1"
+                ],
+                "__impliedAmbiguousNames": [
+                    "Common Development and Distribution License"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft",
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/CDDL-1.1.html"
+                    ]
+                ]
+            },
+            "CopyleftKind": "WeakCopyleft"
         },
         "finos-osr/OSLC-handbook": {
             "terms": [
@@ -365,6 +399,10 @@ The code released under the CDDL shall be governed by the laws of the State of C
     ],
     "__impliedCopyleft": [
         [
+            "BlueOak License List",
+            "WeakCopyleft"
+        ],
+        [
             "Scancode",
             "WeakCopyleft"
         ]
@@ -384,6 +422,10 @@ The code released under the CDDL shall be governed by the laws of the State of C
         [
             null,
             "https://javaee.github.io/glassfish/LICENSE"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/CDDL-1.1.html"
         ],
         [
             "Homepage",

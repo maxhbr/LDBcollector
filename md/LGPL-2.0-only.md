@@ -39,6 +39,8 @@ URLs
 
 -   https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html
 
+-   https://spdx.org/licenses/LGPL-2.0-only.html
+
 -   http://www.gnu.org/licenses/old-licenses/library.html
 
 Text
@@ -549,6 +551,7 @@ Raw Data
         ],
         "__impliedId": "LGPL-2.0-only",
         "__impliedAmbiguousNames": [
+            "GNU Library General Public License",
             "The GNU Lesser General Public License (LGPL)"
         ],
         "__impliedComments": [
@@ -682,6 +685,36 @@ Raw Data
                 },
                 "Comment": "Earlier called the \"Library General Public License\"; this name is deprecated because it confuses the license's intent.",
                 "LicenseId": "LGPL-2.0-only"
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/LGPL-2.0-only.html",
+                "familyName": "GNU Library General Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "GNU Library General Public License v2 only",
+                "id": "LGPL-2.0-only",
+                "_implications": {
+                    "__impliedNames": [
+                        "LGPL-2.0-only",
+                        "GNU Library General Public License v2 only"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "GNU Library General Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/LGPL-2.0-only.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
             },
             "finos-osr/OSLC-handbook": {
                 "terms": [
@@ -837,6 +870,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "Scancode",
                 "WeakCopyleft"
             ]
@@ -852,6 +889,10 @@ Raw Data
             [
                 null,
                 "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/LGPL-2.0-only.html"
             ],
             [
                 "Homepage",

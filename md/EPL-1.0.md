@@ -64,6 +64,8 @@ URLs
 -   **Wikipedia page:**
     https://en.wikipedia.org/wiki/Eclipse\_Public\_License
 
+-   https://spdx.org/licenses/EPL-1.0.html
+
 -   http://www.opensource.org/licenses/EPL-1.0
 
 OSADL Rule
@@ -225,6 +227,7 @@ Raw Data
         ],
         "__impliedId": "EPL-1.0",
         "__impliedAmbiguousNames": [
+            "Eclipse Public License",
             "Eclipse Public License - 1.0"
         ],
         "__impliedComments": [
@@ -423,6 +426,36 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "EPL-1.0"
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/EPL-1.0.html",
+                "familyName": "Eclipse Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Eclipse Public License 1.0",
+                "id": "EPL-1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "EPL-1.0",
+                        "Eclipse Public License 1.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Eclipse Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/EPL-1.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
             },
             "OpenSourceInitiative": {
                 "text": [
@@ -700,6 +733,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -771,6 +808,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/EPL-1.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/EPL-1.0.html"
             ],
             [
                 "Homepage",

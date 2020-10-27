@@ -50,6 +50,8 @@ URLs
 
 -   https://www.opensource.org/licenses/EPL-2.0
 
+-   https://spdx.org/licenses/EPL-2.0.html
+
 -   https://opensource.org/licenses/EPL-2.0
 
 OSADL Rule
@@ -419,6 +421,9 @@ Raw Data
             "epl-2.0"
         ],
         "__impliedId": "EPL-2.0",
+        "__impliedAmbiguousNames": [
+            "Eclipse Public License"
+        ],
         "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
@@ -571,6 +576,36 @@ Raw Data
                         "EPL-2.0"
                     ]
                 }
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/EPL-2.0.html",
+                "familyName": "Eclipse Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Eclipse Public License 2.0",
+                "id": "EPL-2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "EPL-2.0",
+                        "Eclipse Public License 2.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Eclipse Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/EPL-2.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
             },
             "Wikipedia": {
                 "Distribution": {
@@ -837,6 +872,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -908,6 +947,10 @@ Raw Data
             [
                 null,
                 "https://www.opensource.org/licenses/EPL-2.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/EPL-2.0.html"
             ],
             [
                 "Homepage",

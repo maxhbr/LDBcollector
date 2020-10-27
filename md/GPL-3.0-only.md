@@ -113,6 +113,10 @@ URLs
 -   **tl;dr legal:**
     https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29
 
+-   https://spdx.org/licenses/GPL-3.0-only.html
+
+-   https://spdx.org/licenses/GPL-3.0-or-later.html
+
 -   http://www.gnu.org/licenses/quick-guide-gplv3.html
 
 -   http://www.opensource.org/licenses/GPL-3.0
@@ -974,6 +978,7 @@ Raw Data
         "__impliedId": "GPL-3.0-only",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
+            "GNU General Public License",
             "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
             "The GNU General Public License (GPL)"
         ],
@@ -1233,6 +1238,36 @@ Raw Data
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+                "familyName": "GNU General Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "GNU General Public License v3.0 only",
+                "id": "GPL-3.0-only",
+                "_implications": {
+                    "__impliedNames": [
+                        "GPL-3.0-only",
+                        "GNU General Public License v3.0 only"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "GNU General Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/GPL-3.0-only.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "StrongCopyleft"
             },
             "OpenSourceInitiative": {
                 "text": [
@@ -1669,6 +1704,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "StrongCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -1677,7 +1716,7 @@ Raw Data
                 "Copyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__obligations": {
             "limitations": [
                 {
@@ -1748,6 +1787,14 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/GPL-3.0-or-later.json"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/GPL-3.0-only.html"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/GPL-3.0-or-later.html"
             ],
             [
                 "Homepage",

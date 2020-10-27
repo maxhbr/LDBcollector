@@ -56,6 +56,8 @@ URLs
 
 -   https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
+-   https://spdx.org/licenses/CC-BY-SA-4.0.html
+
 Text
 ----
 
@@ -503,6 +505,7 @@ Raw Data
         ],
         "__impliedId": "CC-BY-SA-4.0",
         "__impliedAmbiguousNames": [
+            "Creative Commons Attribution Share Alike",
             "Creative Commons Attribution Share-Alike (CC-BY-SA) v4.0"
         ],
         "__hasPatentHint": false,
@@ -629,6 +632,36 @@ Raw Data
                 },
                 "Comment": "Version 4.0 is considered to be compatible to the DFSG. Changes from the previous version are discussed in a thread starting at https://lists.debian.org/3172728.oiOx47Q9HF@debstor",
                 "LicenseId": "CC-BY-SA-4.0"
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+                "familyName": "Creative Commons Attribution Share Alike",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Creative Commons Attribution Share Alike 4.0 International",
+                "id": "CC-BY-SA-4.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CC-BY-SA-4.0",
+                        "Creative Commons Attribution Share Alike 4.0 International"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Creative Commons Attribution Share Alike"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/CC-BY-SA-4.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "StrongCopyleft"
             },
             "Wikipedia": {
                 "Distribution": {
@@ -795,11 +828,15 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "StrongCopyleft"
+            ],
+            [
                 "Scancode",
                 "Copyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__obligations": {
             "limitations": [
                 {
@@ -862,6 +899,10 @@ Raw Data
             [
                 null,
                 "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/CC-BY-SA-4.0.html"
             ],
             [
                 "Homepage",

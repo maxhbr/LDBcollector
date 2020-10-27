@@ -1,7 +1,7 @@
 ## Stats:
 ### Stats on Facts:
-Number of facts: 3713
-    BlueOak License List: 169
+Number of facts: 3768
+    BlueOak License List: 224
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 430
     Google OSS Policy: 112
@@ -20,8 +20,8 @@ Number of facts: 3713
 Number of clusters: 2115
 ### Stats on Licenses:
 Number of Licenses: 412
-Number of facts: 1695
-    BlueOak License List: 169
+Number of facts: 1754
+    BlueOak License List: 228
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 18
     Google OSS Policy: 113

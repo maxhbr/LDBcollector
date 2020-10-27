@@ -113,6 +113,10 @@ URLs
 -   **Wikipedia page:**
     https://en.wikipedia.org/wiki/GNU\_Lesser\_General\_Public\_License
 
+-   https://spdx.org/licenses/LGPL-3.0-only.html
+
+-   https://spdx.org/licenses/LGPL-3.0-or-later.html
+
 -   http://www.gnu.org/copyleft/lesser.html
 
 -   http://www.gnu.org/licenses/why-not-lgpl.html
@@ -491,6 +495,7 @@ Raw Data
         "__impliedId": "LGPL-3.0-only",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
+            "GNU Library General Public License",
             "The GNU Lesser General Public License (LGPL)"
         ],
         "__impliedComments": [
@@ -758,6 +763,36 @@ Raw Data
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/LGPL-3.0-only.html",
+                "familyName": "GNU Library General Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "GNU Lesser General Public License v3.0 only",
+                "id": "LGPL-3.0-only",
+                "_implications": {
+                    "__impliedNames": [
+                        "LGPL-3.0-only",
+                        "GNU Lesser General Public License v3.0 only"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "GNU Library General Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/LGPL-3.0-only.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
             },
             "OpenSourceInitiative": {
                 "text": [
@@ -1070,6 +1105,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -1149,6 +1188,14 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/LGPL-3.0-or-later.json"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/LGPL-3.0-only.html"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/LGPL-3.0-or-later.html"
             ],
             [
                 "Homepage",

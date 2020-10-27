@@ -49,6 +49,8 @@ URLs
 
 -   https://opensource.org/licenses/AGPL-3.0
 
+-   https://spdx.org/licenses/AGPL-3.0-or-later.html
+
 -   http://www.fsf.org/licensing/licenses/agpl-3.0.html
 
 -   http://www.fsf.org/licensing/licenses/agpl-3.0.txt
@@ -217,6 +219,9 @@ Raw Data
             "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
         ],
         "__impliedId": "AGPL-3.0-or-later",
+        "__impliedAmbiguousNames": [
+            "Affero General Public License"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -390,6 +395,36 @@ Raw Data
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+                "familyName": "Affero General Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "GNU Affero General Public License v3.0 or later",
+                "id": "AGPL-3.0-or-later",
+                "_implications": {
+                    "__impliedNames": [
+                        "AGPL-3.0-or-later",
+                        "GNU Affero General Public License v3.0 or later"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Affero General Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "SaaSCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "SaaSCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/AGPL-3.0-or-later.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "SaaSCopyleft"
             },
             "Wikipedia": {
                 "Distribution": {
@@ -578,6 +613,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "SaaSCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -586,7 +625,7 @@ Raw Data
                 "Copyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "SaaSCopyleft",
         "__isOsiApproved": true,
         "__impliedText": "This program is free software: you can redistribute it and/or modify\nit under the terms of the GNU Affero General Public License as\npublished by the Free Software Foundation, either version 3 of the\nLicense, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Affero General Public License for more details.\n\nYou should have received a copy of the GNU Affero General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
         "__impliedURLs": [
@@ -601,6 +640,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/AGPL-3.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/AGPL-3.0-or-later.html"
             ],
             [
                 "Homepage",

@@ -5,7 +5,7 @@
 | Fullname          | Open Software License 3.0                      |
 | Shortname         | OSL-3.0                                        |
 | Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | Copyleft                                       |
+| Classification    | SaaSCopyleft                                   |
 | Has Patent Hint   | True                                           |
 
 *Other Names:*
@@ -70,6 +70,8 @@
 - *SPDX:* http://spdx.org/licenses/OSL-3.0.json
 
 - https://web.archive.org/web/20120101081418/http://rosenlaw.com:80/OSL3.0.htm
+
+- https://spdx.org/licenses/OSL-3.0.html
 
 - http://www.gnu.org/licenses/license-list.html#OSL
 
@@ -199,6 +201,9 @@
           "Open Software License, Version 3.0"
       ],
       "__impliedId": "OSL-3.0",
+      "__impliedAmbiguousNames": [
+          "Open Software License"
+      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -386,6 +391,36 @@
                       "OSL-3.0"
                   ]
               }
+          },
+          "BlueOak License List": {
+              "url": "https://spdx.org/licenses/OSL-3.0.html",
+              "familyName": "Open Software License",
+              "_sourceURL": "https://blueoakcouncil.org/copyleft",
+              "name": "Open Software License 3.0",
+              "id": "OSL-3.0",
+              "_implications": {
+                  "__impliedNames": [
+                      "OSL-3.0",
+                      "Open Software License 3.0"
+                  ],
+                  "__impliedAmbiguousNames": [
+                      "Open Software License"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "BlueOak License List",
+                          "SaaSCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "SaaSCopyleft",
+                  "__impliedURLs": [
+                      [
+                          null,
+                          "https://spdx.org/licenses/OSL-3.0.html"
+                      ]
+                  ]
+              },
+              "CopyleftKind": "SaaSCopyleft"
           },
           "OpenSourceInitiative": {
               "text": [
@@ -605,6 +640,10 @@
       ],
       "__impliedCopyleft": [
           [
+              "BlueOak License List",
+              "SaaSCopyleft"
+          ],
+          [
               "OSADL License Checklist",
               "Copyleft"
           ],
@@ -613,7 +652,7 @@
               "Copyleft"
           ]
       ],
-      "__calculatedCopyleft": "Copyleft",
+      "__calculatedCopyleft": "SaaSCopyleft",
       "__obligations": {
           "limitations": [
               {
@@ -688,6 +727,10 @@
           [
               null,
               "https://opensource.org/licenses/OSL-3.0"
+          ],
+          [
+              null,
+              "https://spdx.org/licenses/OSL-3.0.html"
           ],
           [
               "Homepage",

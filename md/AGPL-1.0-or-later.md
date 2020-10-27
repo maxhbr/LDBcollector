@@ -29,6 +29,8 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/AGPL-1.0-or-later.json
 
+-   https://spdx.org/licenses/AGPL-1.0-or-later.html
+
 Text
 ----
 
@@ -54,6 +56,9 @@ Raw Data
             "AGPL 1.0 or later"
         ],
         "__impliedId": "AGPL-1.0-or-later",
+        "__impliedAmbiguousNames": [
+            "Affero General Public License"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -136,15 +141,49 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/AGPL-1.0-or-later.html",
+                "familyName": "Affero General Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Affero General Public License v1.0 or later",
+                "id": "AGPL-1.0-or-later",
+                "_implications": {
+                    "__impliedNames": [
+                        "AGPL-1.0-or-later",
+                        "Affero General Public License v1.0 or later"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Affero General Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "SaaSCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "SaaSCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/AGPL-1.0-or-later.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "SaaSCopyleft"
             }
         },
         "__impliedCopyleft": [
+            [
+                "BlueOak License List",
+                "SaaSCopyleft"
+            ],
             [
                 "Scancode",
                 "Copyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "SaaSCopyleft",
         "__isOsiApproved": false,
         "__impliedText": "This is free software; you can redistribute it and/or modify\nit under the terms of the AFFERO GENERAL PUBLIC LICENSE as published by\nAffero Inc; either version 1, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but\nWITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the \nAFFERO GENERAL PUBLIC LICENSE for more details.\n",
         "__impliedURLs": [
@@ -155,6 +194,10 @@ Raw Data
             [
                 null,
                 "http://www.affero.org/oagpl.html"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/AGPL-1.0-or-later.html"
             ],
             [
                 "Homepage",

@@ -45,6 +45,8 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/IPL-1.0.json
 
+-   https://spdx.org/licenses/IPL-1.0.html
+
 -   http://www.opensource.org/licenses/IPL-1.0
 
 Text
@@ -135,6 +137,7 @@ Raw Data
         ],
         "__impliedId": "IPL-1.0",
         "__impliedAmbiguousNames": [
+            "IBM Public License",
             "IBM Public License, Version 1.0"
         ],
         "__impliedComments": [
@@ -311,6 +314,36 @@ Raw Data
                 "Comment": "This license was later renamed the Common Public License (CPL). It is used for OpenAFS and Postfix and has been accepted in Debian main since 2000.",
                 "LicenseId": "IPL-1.0"
             },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/IPL-1.0.html",
+                "familyName": "IBM Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "IBM Public License v1.0",
+                "id": "IPL-1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "IPL-1.0",
+                        "IBM Public License v1.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "IBM Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/IPL-1.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -429,6 +462,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "Scancode",
                 "WeakCopyleft"
             ]
@@ -444,6 +481,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/IPL-1.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/IPL-1.0.html"
             ],
             [
                 "Homepage",

@@ -65,6 +65,8 @@ URLs
 
 -   https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl1.1.-licence-en\_0.pdf
 
+-   https://spdx.org/licenses/EUPL-1.1.html
+
 -   http://www.gnu.org/licenses/license-list.html\#EUPL
 
 -   http://www.opensource.org/licenses/EUPL-1.1
@@ -416,6 +418,9 @@ Raw Data
             "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
         ],
         "__impliedId": "EUPL-1.1",
+        "__impliedAmbiguousNames": [
+            "European Union Public License"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -615,6 +620,36 @@ Raw Data
                     ]
                 }
             },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/EUPL-1.1.html",
+                "familyName": "European Union Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "European Union Public License 1.1",
+                "id": "EUPL-1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "EUPL-1.1",
+                        "European Union Public License 1.1"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "European Union Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "SaaSCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "SaaSCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/EUPL-1.1.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "SaaSCopyleft"
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -798,6 +833,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "SaaSCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -806,7 +845,7 @@ Raw Data
                 "WeakCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "WeakCopyleft",
+        "__calculatedCopyleft": "SaaSCopyleft",
         "__obligations": {
             "limitations": [
                 {
@@ -885,6 +924,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/EUPL-1.1"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/EUPL-1.1.html"
             ],
             [
                 "Homepage",

@@ -80,6 +80,8 @@ URLs
 
 -   https://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html
 
+-   https://spdx.org/licenses/LGPL-2.1-only.html
+
 -   http://creativecommons.org/choose/cc-lgpl
 
 -   http://creativecommons.org/images/public/cc-LGPL-a.png
@@ -781,6 +783,7 @@ Raw Data
         ],
         "__impliedId": "LGPL-2.1-only",
         "__impliedAmbiguousNames": [
+            "GNU Library General Public License",
             "The GNU Lesser General Public License (LGPL)"
         ],
         "__impliedComments": [
@@ -1043,6 +1046,36 @@ Raw Data
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/LGPL-2.1-only.html",
+                "familyName": "GNU Library General Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "GNU Lesser General Public License v2.1 only",
+                "id": "LGPL-2.1-only",
+                "_implications": {
+                    "__impliedNames": [
+                        "LGPL-2.1-only",
+                        "GNU Lesser General Public License v2.1 only"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "GNU Library General Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/LGPL-2.1-only.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
             },
             "OpenSourceInitiative": {
                 "text": [
@@ -1348,6 +1381,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -1419,6 +1456,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/LGPL-2.1"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/LGPL-2.1-only.html"
             ],
             [
                 "Homepage",

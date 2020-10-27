@@ -6,7 +6,7 @@
 |Fullname |GNU Affero General Public License v3.0 only
 |Shortname |AGPL-3.0-only
 |Rating |Unknown, probably Attention or Stop or No-Go
-|Classification |Copyleft
+|Classification |SaaSCopyleft
 |Has Patent Hint |True
 |===
 
@@ -97,6 +97,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/agpl-3.0.tx
 * *OSI Page:* https://opensource.org/licenses/AGPL-3.0
 * *SPDX:* http://spdx.org/licenses/AGPL-3.0-only.json
 * https://www.gnu.org/licenses/agpl.txt
+* https://spdx.org/licenses/AGPL-3.0-only.html
 * http://www.opensource.org/licenses/AGPL-3.0
 * https://opensource.google.com/docs/using/agpl-policy/
 
@@ -468,6 +469,7 @@ You should also get your employer (if you work as a programmer) or school, if an
     "__impliedId": "AGPL-3.0-only",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
+        "Affero General Public License",
         "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)"
     ],
     "__impliedComments": [
@@ -733,6 +735,36 @@ You should also get your employer (if you work as a programmer) or school, if an
             "oJudgement": null,
             "oCompatibilities": null,
             "oRatingState": null
+        },
+        "BlueOak License List": {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "familyName": "Affero General Public License",
+            "_sourceURL": "https://blueoakcouncil.org/copyleft",
+            "name": "GNU Affero General Public License v3.0 only",
+            "id": "AGPL-3.0-only",
+            "_implications": {
+                "__impliedNames": [
+                    "AGPL-3.0-only",
+                    "GNU Affero General Public License v3.0 only"
+                ],
+                "__impliedAmbiguousNames": [
+                    "Affero General Public License"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "SaaSCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "SaaSCopyleft",
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/AGPL-3.0-only.html"
+                    ]
+                ]
+            },
+            "CopyleftKind": "SaaSCopyleft"
         },
         "OpenSourceInitiative": {
             "text": [
@@ -1058,6 +1090,10 @@ You should also get your employer (if you work as a programmer) or school, if an
     ],
     "__impliedCopyleft": [
         [
+            "BlueOak License List",
+            "SaaSCopyleft"
+        ],
+        [
             "OSADL License Checklist",
             "Copyleft"
         ],
@@ -1066,7 +1102,7 @@ You should also get your employer (if you work as a programmer) or school, if an
             "Copyleft"
         ]
     ],
-    "__calculatedCopyleft": "Copyleft",
+    "__calculatedCopyleft": "SaaSCopyleft",
     "__obligations": {
         "limitations": [
             {
@@ -1137,6 +1173,10 @@ You should also get your employer (if you work as a programmer) or school, if an
         [
             null,
             "https://opensource.org/licenses/AGPL-3.0"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/AGPL-3.0-only.html"
         ],
         [
             "Homepage",

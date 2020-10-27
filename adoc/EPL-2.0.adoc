@@ -68,6 +68,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-2.0.txt
 * *SPDX:* http://spdx.org/licenses/EPL-2.0.json
 * https://www.eclipse.org/legal/epl-2.0
 * https://www.opensource.org/licenses/EPL-2.0
+* https://spdx.org/licenses/EPL-2.0.html
 * https://opensource.org/licenses/EPL-2.0
 
 === OSADL Rule
@@ -439,6 +440,9 @@ and exceptions or additional permissions here}."
         "epl-2.0"
     ],
     "__impliedId": "EPL-2.0",
+    "__impliedAmbiguousNames": [
+        "Eclipse Public License"
+    ],
     "__hasPatentHint": true,
     "facts": {
         "Open Knowledge International": {
@@ -591,6 +595,36 @@ and exceptions or additional permissions here}."
                     "EPL-2.0"
                 ]
             }
+        },
+        "BlueOak License List": {
+            "url": "https://spdx.org/licenses/EPL-2.0.html",
+            "familyName": "Eclipse Public License",
+            "_sourceURL": "https://blueoakcouncil.org/copyleft",
+            "name": "Eclipse Public License 2.0",
+            "id": "EPL-2.0",
+            "_implications": {
+                "__impliedNames": [
+                    "EPL-2.0",
+                    "Eclipse Public License 2.0"
+                ],
+                "__impliedAmbiguousNames": [
+                    "Eclipse Public License"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "BlueOak License List",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft",
+                "__impliedURLs": [
+                    [
+                        null,
+                        "https://spdx.org/licenses/EPL-2.0.html"
+                    ]
+                ]
+            },
+            "CopyleftKind": "WeakCopyleft"
         },
         "Wikipedia": {
             "Distribution": {
@@ -857,6 +891,10 @@ and exceptions or additional permissions here}."
     ],
     "__impliedCopyleft": [
         [
+            "BlueOak License List",
+            "WeakCopyleft"
+        ],
+        [
             "OSADL License Checklist",
             "Copyleft"
         ],
@@ -928,6 +966,10 @@ and exceptions or additional permissions here}."
         [
             null,
             "https://www.opensource.org/licenses/EPL-2.0"
+        ],
+        [
+            null,
+            "https://spdx.org/licenses/EPL-2.0.html"
         ],
         [
             "Homepage",

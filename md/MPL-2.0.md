@@ -72,6 +72,8 @@ URLs
 
 -   http://www.mozilla.org/MPL/2.0/
 
+-   https://spdx.org/licenses/MPL-2.0.html
+
 OSADL Rule
 ----------
 
@@ -513,6 +515,7 @@ Raw Data
         ],
         "__impliedId": "MPL-2.0",
         "__impliedAmbiguousNames": [
+            "Mozilla Public License",
             "Mozilla Public License (MPL)"
         ],
         "__impliedComments": [
@@ -705,6 +708,36 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "MPL-2.0"
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/MPL-2.0.html",
+                "familyName": "Mozilla Public License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Mozilla Public License 2.0",
+                "id": "MPL-2.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "MPL-2.0",
+                        "Mozilla Public License 2.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Mozilla Public License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/MPL-2.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
             },
             "OpenSourceInitiative": {
                 "text": [
@@ -1046,6 +1079,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -1121,6 +1158,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/MPL-2.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/MPL-2.0.html"
             ],
             [
                 "Homepage",

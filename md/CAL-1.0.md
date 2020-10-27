@@ -21,6 +21,8 @@ URLs
 
 -   https://opensource.org/licenses/CAL-1.0
 
+-   https://spdx.org/licenses/CAL-1.0.html
+
 ------------------------------------------------------------------------
 
 Raw Data
@@ -32,6 +34,9 @@ Raw Data
             "Cryptographic Autonomy License 1.0"
         ],
         "__impliedId": "CAL-1.0",
+        "__impliedAmbiguousNames": [
+            "Cryptographic Autonomy License"
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -75,6 +80,36 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "CAL-1.0"
+            },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/CAL-1.0.html",
+                "familyName": "Cryptographic Autonomy License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Cryptographic Autonomy License 1.0",
+                "id": "CAL-1.0",
+                "_implications": {
+                    "__impliedNames": [
+                        "CAL-1.0",
+                        "Cryptographic Autonomy License 1.0"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Cryptographic Autonomy License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "MaximalCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "MaximalCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/CAL-1.0.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "MaximalCopyleft"
             }
         },
         "__impliedJudgement": [
@@ -86,6 +121,13 @@ Raw Data
                 }
             ]
         ],
+        "__impliedCopyleft": [
+            [
+                "BlueOak License List",
+                "MaximalCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "MaximalCopyleft",
         "__isOsiApproved": true,
         "__impliedURLs": [
             [
@@ -99,6 +141,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/CAL-1.0"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/CAL-1.0.html"
             ]
         ]
     }

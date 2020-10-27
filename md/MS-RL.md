@@ -64,6 +64,8 @@ URLs
 
 -   http://www.microsoft.com/opensource/licenses.mspx
 
+-   https://spdx.org/licenses/MS-RL.html
+
 -   http://www.microsoft.com/en-us/openness/licenses.aspx\#MRL
 
 -   http://www.opensource.org/licenses/MS-RL
@@ -146,6 +148,9 @@ Raw Data
         ],
         "__impliedId": "MS-RL",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "Microsoft Reciprocal License"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -361,6 +366,36 @@ Raw Data
                     ]
                 }
             },
+            "BlueOak License List": {
+                "url": "https://spdx.org/licenses/MS-RL.html",
+                "familyName": "Microsoft Reciprocal License",
+                "_sourceURL": "https://blueoakcouncil.org/copyleft",
+                "name": "Microsoft Reciprocal License",
+                "id": "MS-RL",
+                "_implications": {
+                    "__impliedNames": [
+                        "MS-RL",
+                        "Microsoft Reciprocal License"
+                    ],
+                    "__impliedAmbiguousNames": [
+                        "Microsoft Reciprocal License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            null,
+                            "https://spdx.org/licenses/MS-RL.html"
+                        ]
+                    ]
+                },
+                "CopyleftKind": "WeakCopyleft"
+            },
             "ifrOSS": {
                 "ifrKind": "IfrWeakCopyleft",
                 "ifrURL": "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx",
@@ -537,6 +572,10 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
+                "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
                 "OSADL License Checklist",
                 "Copyleft"
             ],
@@ -612,6 +651,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/MS-RL"
+            ],
+            [
+                null,
+                "https://spdx.org/licenses/MS-RL.html"
             ],
             [
                 "Homepage",
