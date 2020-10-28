@@ -59,8 +59,9 @@ instance FromJSON SPDXEntry where
     <*> v .: "isOsiApproved"
 spdxLFC :: LicenseFactClassifier
 spdxLFC = LFC "SPDX"
+instance LicenseFactClassifiable SPDXEntry where
+  getLicenseFactClassifier _ = spdxLFC
 instance LFRaw SPDXEntry where
-  getLicenseFactClassifier _                                    = spdxLFC
   getImpliedNames e                                             = CLSR [spdxLicenseId e, spdxFullName e]
   getImpliedFullName e                                          = mkRLSR e 90 (spdxFullName e)
   getImpliedId e                                                = mkRLSR e 100 (spdxLicenseId e)

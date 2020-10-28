@@ -50,8 +50,9 @@ instance ToJSON OkfnFact where
            , "url" .= url ]
 okfnLFC :: LicenseFactClassifier
 okfnLFC = LFC "Open Knowledge International"
-instance LFRaw OkfnFact where
+instance LicenseFactClassifiable OkfnFact where
   getLicenseFactClassifier _ = okfnLFC
+instance LFRaw OkfnFact where
   getImpliedNames (OkfnFact id _ _ _ _ _ _ _ _ title _) = CLSR [id, T.unpack title]
   getImpliedId o@(OkfnFact id _ _ _ _ _ _ _ _ _ _)      = mkRLSR o 40 id
   getImpliedURLs (OkfnFact _ _ _ _ _ _ _ _ _ _ url)     = CLSR [(Nothing, T.unpack url)]

@@ -115,8 +115,9 @@ instance ToJSON FedoraProjectWikiFact where
                    , aesonFromData ]
 fedoraLFC :: LicenseFactClassifier
 fedoraLFC = LFC "Fedora Project Wiki"
+instance LicenseFactClassifiable FedoraProjectWikiFact where
+  getLicenseFactClassifier _ = fedoraLFC
 instance LFRaw FedoraProjectWikiFact where
-  getLicenseFactClassifier _                                     = fedoraLFC
   getImpliedNames (FedoraProjectWikiFact _ (Left (Left full)))   = CLSR [getFullNameFromCore full]
   getImpliedNames (FedoraProjectWikiFact _ (Left (Right short))) = CLSR [getFullNameFromCore short]
   getImpliedNames (FedoraProjectWikiFact _ (Right bad))          = CLSR [getFullNameFromCore bad]

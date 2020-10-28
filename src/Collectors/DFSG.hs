@@ -43,8 +43,9 @@ instance ToJSON DFSGEntry where
 
 dfsgLFC :: LicenseFactClassifier
 dfsgLFC = LFC "Debian Free Software Guidelines"
-instance LFRaw DFSGEntry where
+instance LicenseFactClassifiable DFSGEntry where
   getLicenseFactClassifier _ = dfsgLFC
+instance LFRaw DFSGEntry where
   getImpliedNames de         = case dfsgLicId de of
     Just i  -> CLSR [i]
     Nothing -> CLSR [dfsgLicName de]

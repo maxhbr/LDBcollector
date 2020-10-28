@@ -78,8 +78,9 @@ instance FromJSON ScancodeData where
 instance ToJSON ScancodeData
 scancodeLFC :: LicenseFactClassifier
 scancodeLFC = LFC "Scancode"
+instance LicenseFactClassifiable ScancodeData where
+  getLicenseFactClassifier _ = scancodeLFC
 instance LFRaw ScancodeData where
-  getLicenseFactClassifier _                            = scancodeLFC
   getImpliedNames scd@ScancodeData{key=k, shortName=sn} = let
       scancodeKey = "scancode://" ++ k
     in CLSR $ [scancodeKey,sn] ++ (case spdxId scd of

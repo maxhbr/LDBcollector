@@ -15,17 +15,9 @@ import           MyPrelude
 import qualified Data.Map as M
 import           Data.List (stripPrefix)
 import qualified Data.Text as T
-import qualified Data.Text.IO as T
-import           Data.Aeson.Encode.Pretty (encodePretty)
-import           Data.ByteString.Lazy.Char8 (unpack)
 import qualified Data.Aeson.Lens as AL
 import           Data.Char (toLower)
-import qualified Text.Pandoc as P
-import qualified Text.Pandoc.Builder as P
-import           Control.Monad
 import           Data.Csv as C
-import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as BL
 
 import           Model.License
 import           Model.LicenseClusterer
@@ -39,6 +31,9 @@ data WithSource a
 unpackWithSource :: WithSource a -> a
 unpackWithSource (WithSource _ a)  = a
 unpackWithSource (WithoutSource a) = a
+instance LicenseFactClassifiable (WithSource a) where
+  getLicenseFactClassifier (WithSource lfc _) = lfc
+  getLicenseFactClassifier (WithoutSource _)  = EmptyLFC
 
 data LicenseDetails
   = LicenseDetails

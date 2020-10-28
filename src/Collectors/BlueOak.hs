@@ -78,8 +78,9 @@ instance ToJSON BOEntry where
 instance Show BOEntry where
   show (BOEntry _ _ j) = show j
 
+instance LicenseFactClassifiable BOEntry where
+  getLicenseFactClassifier _ = blueOakLFC
 instance LFRaw BOEntry where
-  getLicenseFactClassifier _               = blueOakLFC
   getImpliedFullName boe@(BOEntry _ _ bol) = mkRLSR boe 40 (name bol)
   getImpliedNames (BOEntry _ _ bol)        = CLSR [id bol, name bol]
   getImpliedJudgement boe@(BOEntry _ r _)  = let
@@ -149,8 +150,9 @@ instance ToJSON BOCopyleftEntry where
 instance Show BOCopyleftEntry where
   show (BOCopyleftEntry _ _ _ j) = show j
 
+instance LicenseFactClassifiable BOCopyleftEntry where
+  getLicenseFactClassifier _ = blueOakLFC
 instance LFRaw BOCopyleftEntry where
-  getLicenseFactClassifier _                          = blueOakLFC
   getImpliedFullName boe@(BOCopyleftEntry _ _ _ bol)  = mkRLSR boe 40 (name bol)
   getImpliedNames (BOCopyleftEntry _ _ _ bol)         = CLSR [id bol, name bol]
   getImpliedAmbiguousNames (BOCopyleftEntry _ _ lg _) = CLSR [lg]
@@ -188,9 +190,6 @@ loadBlueOakCopyleftFactsFromString bs = let
     facts = concat (M.mapWithKey copyleftConverter (families bodc))
   in trace ("INFO: the version of BlueOak Copyleft is: " ++ bodcVersion) $ V.fromList facts
 
-blueOakFile :: Data.ByteString.ByteString
-blueOakFile = $(embedFile "data/blue-oak-council-license-list.json")
-
 loadBlueOakFacts :: IO Facts
 loadBlueOakFacts = let
     blueOakFile :: Data.ByteString.ByteString
@@ -199,4 +198,4 @@ loadBlueOakFacts = let
     blueOakCopyleftFile = $(embedFile "data/blue-oak-council-copyleft-list.json")
   in do
     logThatFactsAreLoadedFrom "Blue Oak Council License List"
-    return ((loadBlueOakFactsFromString (B.fromStrict blueOakFile)) V.++ (loadBlueOakCopyleftFactsFromString (B.fromStrict blueOakCopyleftFile)))
+    return (loadBlueOakFactsFromString (B.fromStrict blueOakFile) V.++ loadBlueOakCopyleftFactsFromString (B.fromStrict blueOakCopyleftFile))

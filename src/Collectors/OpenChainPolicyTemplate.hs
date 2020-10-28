@@ -47,8 +47,9 @@ instance FromNamedRecord OCPTRow where
 instance ToJSON OCPTRow
 ocptLFC :: LicenseFactClassifier
 ocptLFC = LFC "OpenChainPolicyTemplate"
+instance LicenseFactClassifiable OCPTRow where
+  getLicenseFactClassifier _ = ocptLFC
 instance LFRaw OCPTRow where
-  getLicenseFactClassifier _          = ocptLFC
   getImpliedNames OCPTRow{spdxId = i} = CLSR [i]
 
 

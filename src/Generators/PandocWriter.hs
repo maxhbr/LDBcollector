@@ -144,7 +144,7 @@ licenseToPandoc shortname page = let
           <> renderOSADLRule (pOSADLRule page)
           <> renderText (pText page)
           <> renderRawData (pLicense page)
-          <> renderDot (shortname)
+          <> renderDot shortname
 
 writePandoc :: FilePath -> Page -> IO ()
 writePandoc outDirectory page = let

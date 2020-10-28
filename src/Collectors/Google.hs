@@ -46,8 +46,9 @@ instance ToJSON GooglePolicyFact where
   toJSON (GooglePolicyFact licenseName r)                              = object [ "id" .= licenseName, "rating" .= toJSON r ]
 googleLFC :: LicenseFactClassifier
 googleLFC = LFC "Google OSS Policy"
+instance LicenseFactClassifiable GooglePolicyFact where
+  getLicenseFactClassifier _ = googleLFC
 instance LFRaw GooglePolicyFact where
-  getLicenseFactClassifier _                        = googleLFC
   getImpliedNames (GooglePolicyFact spdxId _)       = CLSR [spdxId]
   getImpliedJudgement gpf@(GooglePolicyFact _ clss) = let
     judgementFromClassification = case clss of

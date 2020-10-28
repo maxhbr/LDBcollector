@@ -70,8 +70,9 @@ data IfrOSSFact
   }
   deriving (Show, Generic)
 instance ToJSON IfrOSSFact
-instance LFRaw IfrOSSFact where
+instance LicenseFactClassifiable IfrOSSFact where
   getLicenseFactClassifier _ = ifrOSSLFC
+instance LFRaw IfrOSSFact where
   getImpliedNames i          = CLSR (ifrName i : maybeToList (ifrId i))
   getImpliedURLs i           = CLSR [(Nothing, ifrURL i)]
   getImpliedComments i       = mkSLSR i [ifrOSSIfrKindToText (ifrKind i)]

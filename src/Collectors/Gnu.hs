@@ -37,8 +37,9 @@ instance ToJSON GnuFact where
                                                      ]
 gnuLFC :: LicenseFactClassifier
 gnuLFC = LFC "gnu.org"
-instance LFRaw GnuFact where
+instance LicenseFactClassifiable GnuFact where
   getLicenseFactClassifier _ = gnuLFC
+instance LFRaw GnuFact where
   getImpliedNames _          = NoCLSR -- TODO: extract names!
   getImpliedJudgement gf = SLSR (getLicenseFactClassifier gf) $
                            if isGnuFree gf

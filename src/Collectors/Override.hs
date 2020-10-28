@@ -32,8 +32,9 @@ emptyOverride ln = Override ln [] Nothing Nothing Nothing Nothing Nothing
 instance ToJSON Override
 overrideLFC :: LicenseFactClassifier
 overrideLFC = LFC "Override"
+instance LicenseFactClassifiable Override where
+  getLicenseFactClassifier _ = overrideLFC
 instance LFRaw Override where
-  getLicenseFactClassifier _                                      = overrideLFC
   getImpliedId o@Override{oName=n}                                = mkRLSR o 101 n
   getImpliedNames o                                               = CLSR (oName o : oOtherLicenseIds o)
   getImpliedDescription o@Override{oDescription=Just d}           = mkRLSR o 101 d

@@ -40,9 +40,10 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON CALFactRaw
 calLFC :: LicenseFactClassifier
-calLFC = LFC "choosealicense.com"
+calLFC = LFCWithLicense (LFLWithURL "https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md" "MIT") "choosealicense.com"
+instance LicenseFactClassifiable CALFactRaw where
+  getLicenseFactClassifier _ = calLFC
 instance LFRaw CALFactRaw where
-  getLicenseFactClassifier _                                  = calLFC
   getImpliedNames CALFactRaw{name = sn
                             , spdxId = sid
                             , nickname = nid}                 = CLSR $ sn : (case sid of

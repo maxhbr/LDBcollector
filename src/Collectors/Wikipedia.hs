@@ -199,8 +199,9 @@ instance ToJSON WikipediaFact where
                                ]
 wikipediaLFC :: LicenseFactClassifier
 wikipediaLFC = LFC "Wikipedia"
-instance LFRaw WikipediaFact where
+instance LicenseFactClassifiable WikipediaFact where
   getLicenseFactClassifier _ = wikipediaLFC
+instance LFRaw WikipediaFact where
   getLicenseFactVersion _    = wikipediaDataVersion
   getImpliedNames wpf@(WikipediaFact name _ version _ _ _ _ _ _ _ _) = let
       nameByWikipedia = T.unpack $ case version of

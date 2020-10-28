@@ -21,8 +21,9 @@ import           Model.License
 
 osiLFC :: LicenseFactClassifier
 osiLFC = LFC "OpenSourceInitiative"
+instance LicenseFactClassifiable OSILicense where
+  getLicenseFactClassifier _ = osiLFC
 instance LFRaw OSILicense where
-  getLicenseFactClassifier _                       = osiLFC
   getImpliedNames OSILicense{ olId = i
                             , olName = n
                             , olIdentifiers = is

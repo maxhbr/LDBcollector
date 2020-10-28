@@ -25,8 +25,7 @@ data LicenseFactVersion
   | LFVersion String
   deriving (Generic)
 
-class (Show a, ToJSON a) => LFRaw a where
-  getLicenseFactClassifier :: a -> LicenseFactClassifier
+class (Show a, ToJSON a, LicenseFactClassifiable a) => LFRaw a where
   getLicenseFactVersion :: a -> LicenseFactVersion
   getLicenseFactVersion _ = EmptyLFCVersion
   mkSLSR :: (Show b, ToJSON b) => a -> b -> ScopedLicenseStatementResult b
@@ -167,26 +166,27 @@ instance ToJSON LicenseFact where
       lfc = getLicenseFactClassifier a
     in object [ tShow lfc .= mergeAesonL [ toJSON a
                                          , object [ "implications" .= getImplicationJSONFromLFRaw a ]]]
+instance LicenseFactClassifiable LicenseFact where
+  getLicenseFactClassifier (LicenseFact url raw)   = maybeAddUrl url $ getLicenseFactClassifier raw
 instance LFRaw LicenseFact where
-  getLicenseFactClassifier (LicenseFact url raw)  = maybeAddUrl url $ getLicenseFactClassifier raw
-  getLicenseFactVersion (LicenseFact _ raw)       = getLicenseFactVersion raw
-  getImpliedNames (LicenseFact _ raw)             =                                                             getImpliedNames raw
-  getImpliedAmbiguousNames (LicenseFact _ raw)    =                                                             getImpliedAmbiguousNames raw
-  getImpliedFullName lf@(LicenseFact _ raw)       = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedFullName raw
-  getImpliedId lf@(LicenseFact _ raw)             = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedId raw
-  getImpliedURLs (LicenseFact _ raw)              =                                                             getImpliedURLs raw
-  getImpliedText lf@(LicenseFact _ raw)           = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedText raw
-  getImpliedDescription (LicenseFact _ raw)       =                                                             getImpliedDescription raw
-  getImpliedJudgement lf@(LicenseFact _ raw)      = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedJudgement raw
-  getImpliedComments lf@(LicenseFact _ raw)       = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedComments raw
-  getImpliedCopyleft (LicenseFact _ raw)          =                                                             getImpliedCopyleft raw
-  getImpliedObligations lf@(LicenseFact _ raw)    = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedObligations raw
-  getImpliedRatingState (LicenseFact _ raw)       =                                                             getImpliedRatingState raw
-  getHasPatentnHint lf@(LicenseFact _ raw)        = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getHasPatentnHint raw
-  getImpliedNonCommercial lf@(LicenseFact _ raw)  = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedNonCommercial raw
+  getLicenseFactVersion (LicenseFact _ raw)        = getLicenseFactVersion raw
+  getImpliedNames (LicenseFact _ raw)              =                                                             getImpliedNames raw
+  getImpliedAmbiguousNames (LicenseFact _ raw)     =                                                             getImpliedAmbiguousNames raw
+  getImpliedFullName lf@(LicenseFact _ raw)        = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedFullName raw
+  getImpliedId lf@(LicenseFact _ raw)              = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedId raw
+  getImpliedURLs (LicenseFact _ raw)               =                                                             getImpliedURLs raw
+  getImpliedText lf@(LicenseFact _ raw)            = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedText raw
+  getImpliedDescription (LicenseFact _ raw)        =                                                             getImpliedDescription raw
+  getImpliedJudgement lf@(LicenseFact _ raw)       = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedJudgement raw
+  getImpliedComments lf@(LicenseFact _ raw)        = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedComments raw
+  getImpliedCopyleft (LicenseFact _ raw)           =                                                             getImpliedCopyleft raw
+  getImpliedObligations lf@(LicenseFact _ raw)     = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedObligations raw
+  getImpliedRatingState (LicenseFact _ raw)        =                                                             getImpliedRatingState raw
+  getHasPatentnHint lf@(LicenseFact _ raw)         = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getHasPatentnHint raw
+  getImpliedNonCommercial lf@(LicenseFact _ raw)   = maybeUpdateClassifierInRLSR (getLicenseFactClassifier lf) $ getImpliedNonCommercial raw
   getImpliedCompatibilities lf@(LicenseFact _ raw) = maybeUpdateClassifierInSLSR (getLicenseFactClassifier lf) $ getImpliedCompatibilities raw
-  getImpliedIsOSIApproved (LicenseFact _ raw)     =                                                             getImpliedIsOSIApproved raw
-  getImpliedIsFSFFree (LicenseFact _ raw)         =                                                             getImpliedIsFSFFree raw
+  getImpliedIsOSIApproved (LicenseFact _ raw)      =                                                             getImpliedIsOSIApproved raw
+  getImpliedIsFSFFree (LicenseFact _ raw)          =                                                             getImpliedIsFSFFree raw
 
 
 type Facts
