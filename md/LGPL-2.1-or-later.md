@@ -5,11 +5,13 @@ GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)
 
 **Other Names:**
 
+-   `LGPL-2.1+`
+
+-   `LGPl-2.1+`
+
 -   `scancode://lgpl-2.1-plus`
 
 -   `LGPL 2.1 or later`
-
--   `LGPL-2.1+`
 
 -   `LGPL2.1+`
 
@@ -217,9 +219,10 @@ Raw Data
         "__impliedNames": [
             "LGPL-2.1-or-later",
             "GNU Lesser General Public License v2.1 or later",
+            "LGPL-2.1+",
+            "LGPl-2.1+",
             "scancode://lgpl-2.1-plus",
             "LGPL 2.1 or later",
-            "LGPL-2.1+",
             "LGPL2.1+",
             "LGPL (v2.1 or later)"
         ],
@@ -370,6 +373,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.1+"
+                    ],
+                    "__impliedId": "LGPL-2.1+"
+                },
+                "shortname": "LGPL-2.1+",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "The GNU Lesser General Public License (LGPL)",

@@ -123,6 +123,7 @@ Raw Data
         "__impliedNames": [
             "BSD-4-Clause",
             "BSD 4-Clause \"Original\" or \"Old\" License",
+            "BSD-4-clause",
             "scancode://bsd-original",
             "BSD-Original",
             "BSD License (original)",
@@ -288,6 +289,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-4-Clause"
+                    ],
+                    "__impliedId": "BSD-4-Clause"
+                },
+                "shortname": "BSD-4-Clause",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             },
             "Override": {
                 "oNonCommecrial": null,

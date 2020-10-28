@@ -138,6 +138,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-1-Clause"
+                    ],
+                    "__impliedId": "BSD-1-Clause"
+                },
+                "shortname": "BSD-1-Clause",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",
                 "url": "https://spdx.org/licenses/BSD-1-Clause.html",

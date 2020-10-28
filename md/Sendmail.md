@@ -216,6 +216,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Sendmail"
+                    ],
+                    "__impliedId": "Sendmail"
+                },
+                "shortname": "Sendmail",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

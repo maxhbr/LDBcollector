@@ -357,6 +357,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Glide"
+                    ],
+                    "__impliedId": "Glide"
+                },
+                "shortname": "Glide",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

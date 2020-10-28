@@ -173,6 +173,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause-Clear"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Clear"
+                },
+                "shortname": "BSD-3-Clause-Clear",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",

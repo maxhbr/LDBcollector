@@ -473,6 +473,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "SISSL"
+                    ],
+                    "__impliedId": "SISSL"
+                },
+                "shortname": "SISSL",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {

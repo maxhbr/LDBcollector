@@ -11,6 +11,8 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 
 -   `LGPL-3.0`
 
+-   `LGPL-3.0+`
+
 -   `scancode://lgpl-3.0`
 
 -   `LGPL 3.0`
@@ -40,8 +42,6 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 -   `LGPL (v3.0)`
 
 -   `LGPL (v3)`
-
--   `LGPL-3.0+`
 
 -   `LGPL-3+`
 
@@ -479,6 +479,7 @@ Raw Data
             "LGPL-3.0-or-later",
             "GNU Lesser General Public License v3.0 or later",
             "LGPL-3.0",
+            "LGPL-3.0+",
             "scancode://lgpl-3.0",
             "LGPL 3.0",
             "scancode://lgpl-3.0-plus",
@@ -494,7 +495,6 @@ Raw Data
             "LGPL3",
             "LGPL (v3.0)",
             "LGPL (v3)",
-            "LGPL-3.0+",
             "LGPL-3+",
             "LGPL3.0+",
             "LGPL (v3 or later)"
@@ -709,6 +709,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-3.0"
+                    ],
+                    "__impliedId": "LGPL-3.0"
+                },
+                "shortname": "LGPL-3.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

@@ -542,6 +542,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "GFDL-1.2-only"
+                    ],
+                    "__impliedId": "GFDL-1.2-only"
+                },
+                "shortname": "GFDL-1.2-only",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "GNU Free Documentation License (GFDL)",
                 "State": "DFSGInCompatible",

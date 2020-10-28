@@ -137,6 +137,20 @@ documentation and/or software.
                 ]
             }
         },
+        "Cavil": {
+            "implications": {
+                "__impliedNames": [
+                    "RSA-MD"
+                ],
+                "__impliedId": "RSA-MD"
+            },
+            "shortname": "RSA-MD",
+            "riskInt": 5,
+            "trademarkInt": 0,
+            "opinionInt": 0,
+            "otherNames": [],
+            "patentInt": 0
+        },
         "BlueOak License List": {
             "BlueOakRating": "Lead",
             "url": "https://spdx.org/licenses/RSA-MD.html",

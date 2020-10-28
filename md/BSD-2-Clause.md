@@ -123,11 +123,11 @@ Raw Data
         "__impliedNames": [
             "BSD-2-Clause",
             "BSD 2-Clause \"Simplified\" License",
+            "BSD-2-clause",
             "scancode://bsd-simplified",
             "bsd-2-clause",
             "BSD-2",
             "BSD 2-Clause License",
-            "BSD-2-clause",
             "Simplified BSD License",
             "FreeBSD License",
             "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
@@ -283,6 +283,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-2-Clause"
+                    ],
+                    "__impliedId": "BSD-2-Clause"
+                },
+                "shortname": "BSD-2-Clause",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

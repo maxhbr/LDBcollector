@@ -156,12 +156,12 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     "__impliedNames": [
         "BSD-3-Clause",
         "BSD 3-Clause \"New\" or \"Revised\" License",
+        "BSD-3-clause",
         "scancode://bsd-new",
         "bsd-3-clause",
         "BSD License (no advertising)",
         "BSD-3",
         "BSD 3-Clause License",
-        "BSD-3-clause",
         "License :: OSI Approved :: BSD License",
         "Revised BSD License",
         "Modified BSD License",
@@ -350,6 +350,20 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     ]
                 ]
             }
+        },
+        "Cavil": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause"
+                ],
+                "__impliedId": "BSD-3-Clause"
+            },
+            "shortname": "BSD-3-Clause",
+            "riskInt": 5,
+            "trademarkInt": 0,
+            "opinionInt": 0,
+            "otherNames": [],
+            "patentInt": 0
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",

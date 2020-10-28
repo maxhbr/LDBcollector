@@ -673,6 +673,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.0-only"
+                    ],
+                    "__impliedId": "LGPL-2.0-only"
+                },
+                "shortname": "LGPL-2.0-only",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "The GNU Lesser General Public License (LGPL)",
                 "State": "DFSGCompatible",

@@ -157,6 +157,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "SGI-B-1.0"
+                    ],
+                    "__impliedId": "SGI-B-1.0"
+                },
+                "shortname": "SGI-B-1.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             }
         },
         "__isOsiApproved": false,

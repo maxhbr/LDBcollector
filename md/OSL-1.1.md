@@ -204,6 +204,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "OSL-1.1"
+                    ],
+                    "__impliedId": "OSL-1.1"
+                },
+                "shortname": "OSL-1.1",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Open Software License (OSL) v1.1",
                 "State": "DFSGInCompatible",

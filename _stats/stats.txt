@@ -1,7 +1,8 @@
 ## Stats:
 ### Stats on Facts:
-Number of facts: 3768
+Number of facts: 4931
     BlueOak License List: 224
+    Cavil: 1163
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 430
     Google OSS Policy: 112
@@ -17,13 +18,14 @@ Number of facts: 3768
     finos-osr/OSLC-handbook: 43
     gnu.org: 134
     ifrOSS: 271
-Number of clusters: 2115
+Number of clusters: 3089
 ### Stats on Licenses:
 Number of Licenses: 412
-Number of facts: 1754
+Number of facts: 1941
     BlueOak License List: 228
+    Cavil: 186
     Debian Free Software Guidelines: 82
-    Fedora Project Wiki: 18
+    Fedora Project Wiki: 19
     Google OSS Policy: 113
     OSADL License Checklist: 74
     Open Knowledge International: 93
@@ -37,6 +39,6 @@ Number of facts: 1754
     finos-osr/OSLC-handbook: 47
     ifrOSS: 11
 #### based on facts from licenses
-Number of clusters: 422
+Number of clusters: 428
 #### based on licenses
 Number of clusters: 412

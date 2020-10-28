@@ -15,6 +15,7 @@
 * `+GPL-3.0-or-later+`
 * `+GNU General Public License v3.0 or later+`
 * `+GPL-3.0+`
+* `+GPL-3.0++`
 * `+scancode://gpl-3.0+`
 * `+GPL 3.0+`
 * `+scancode://gpl-3.0-plus+`
@@ -28,7 +29,6 @@
 * `+GPL3.0+`
 * `+GPL3+`
 * `+GPL (v3)+`
-* `+GPL-3.0++`
 * `+GPL3.0++`
 * `+GPL3++`
 * `+GPL (v3 or later)+`
@@ -956,6 +956,7 @@ Public License instead of this License.  But first, please read
         "GPL-3.0-or-later",
         "GNU General Public License v3.0 or later",
         "GPL-3.0",
+        "GPL-3.0+",
         "scancode://gpl-3.0",
         "GPL 3.0",
         "scancode://gpl-3.0-plus",
@@ -969,7 +970,6 @@ Public License instead of this License.  But first, please read
         "GPL3.0",
         "GPL3",
         "GPL (v3)",
-        "GPL-3.0+",
         "GPL3.0+",
         "GPL3+",
         "GPL (v3 or later)"
@@ -1180,6 +1180,20 @@ Public License instead of this License.  But first, please read
                     ]
                 ]
             }
+        },
+        "Cavil": {
+            "implications": {
+                "__impliedNames": [
+                    "GPL-3.0"
+                ],
+                "__impliedId": "GPL-3.0"
+            },
+            "shortname": "GPL-3.0",
+            "riskInt": 5,
+            "trademarkInt": 0,
+            "opinionInt": 0,
+            "otherNames": [],
+            "patentInt": 0
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",

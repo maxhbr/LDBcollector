@@ -147,6 +147,7 @@ Raw Data
         "__impliedNames": [
             "BSD-4-Clause-UC",
             "BSD-4-Clause (University of California-Specific)",
+            "BSD-4-clause-UC",
             "scancode://bsd-original-uc",
             "BSD-Original-UC"
         ],
@@ -273,6 +274,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-4-Clause-UC"
+                    ],
+                    "__impliedId": "BSD-4-Clause-UC"
+                },
+                "shortname": "BSD-4-Clause-UC",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             },
             "Override": {
                 "oNonCommecrial": null,

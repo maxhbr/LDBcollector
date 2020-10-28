@@ -7,6 +7,8 @@ GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 -   `LGPL-2.1`
 
+-   `LGPl-2.1`
+
 -   `scancode://lgpl-2.1`
 
 -   `LGPL 2.1`
@@ -778,6 +780,7 @@ Raw Data
             "LGPL-2.1-only",
             "GNU Lesser General Public License v2.1 only",
             "LGPL-2.1",
+            "LGPl-2.1",
             "scancode://lgpl-2.1",
             "LGPL 2.1",
             "lgpl-2.1",
@@ -996,6 +999,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.1"
+                    ],
+                    "__impliedId": "LGPL-2.1"
+                },
+                "shortname": "LGPL-2.1",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

@@ -141,6 +141,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "JSON"
+                    ],
+                    "__impliedId": "JSON"
+                },
+                "shortname": "JSON",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "JSON evil license",
                 "State": "DFSGInCompatible",

@@ -329,6 +329,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Artistic-1.0-Perl"
+                    ],
+                    "__impliedId": "Artistic-1.0-Perl"
+                },
+                "shortname": "Artistic-1.0-Perl",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Artistic License",
                 "State": "DFSGCompatible",

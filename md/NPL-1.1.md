@@ -171,6 +171,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "NPL-1.1"
+                    ],
+                    "__impliedId": "NPL-1.1"
+                },
+                "shortname": "NPL-1.1",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "Wikipedia": {
                 "Linking": {
                     "value": "Limited",

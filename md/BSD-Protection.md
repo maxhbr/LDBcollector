@@ -10,6 +10,10 @@ BSD Protection License (BSD-Protection)
 Comments on (easy) usability
 ----------------------------
 
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+
 General Comments
 ----------------
 
@@ -169,9 +173,11 @@ Raw Data
         "__impliedNames": [
             "BSD-Protection",
             "BSD Protection License",
+            "BSD protection license",
             "scancode://bsd-protection"
         ],
         "__impliedId": "BSD-Protection",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "BSD Protection License"
         ],
@@ -213,6 +219,32 @@ Raw Data
                 },
                 "spdxLicenseId": "BSD-Protection"
             },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD_Protection_License",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "BSD Protection",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "BSD Protection License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD Protection License"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
+            },
             "Scancode": {
                 "otherUrls": null,
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/BSD_Protection_License",
@@ -249,6 +281,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD protection license"
+                    ],
+                    "__impliedId": "BSD protection license"
+                },
+                "shortname": "BSD protection license",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/BSD-Protection.html",
@@ -289,6 +335,15 @@ Raw Data
                 "CopyleftKind": "StrongCopyleft"
             }
         },
+        "__impliedJudgement": [
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "BlueOak License List",

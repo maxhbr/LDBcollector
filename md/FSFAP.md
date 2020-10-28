@@ -186,6 +186,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "FSFAP"
+                    ],
+                    "__impliedId": "FSFAP"
+                },
+                "shortname": "FSFAP",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             }
         },
         "__impliedJudgement": [

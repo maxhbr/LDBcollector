@@ -11,6 +11,8 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 -   `GPL-3.0`
 
+-   `GPL-3.0+`
+
 -   `scancode://gpl-3.0`
 
 -   `GPL 3.0`
@@ -36,8 +38,6 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 -   `GPL3`
 
 -   `GPL (v3)`
-
--   `GPL-3.0+`
 
 -   `GPL3.0+`
 
@@ -966,6 +966,7 @@ Raw Data
             "GPL-3.0-or-later",
             "GNU General Public License v3.0 or later",
             "GPL-3.0",
+            "GPL-3.0+",
             "scancode://gpl-3.0",
             "GPL 3.0",
             "scancode://gpl-3.0-plus",
@@ -979,7 +980,6 @@ Raw Data
             "GPL3.0",
             "GPL3",
             "GPL (v3)",
-            "GPL-3.0+",
             "GPL3.0+",
             "GPL3+",
             "GPL (v3 or later)"
@@ -1190,6 +1190,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-3.0"
+                    ],
+                    "__impliedId": "GPL-3.0"
+                },
+                "shortname": "GPL-3.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

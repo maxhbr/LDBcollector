@@ -687,6 +687,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "AGPL-3.0"
+                    ],
+                    "__impliedId": "AGPL-3.0"
+                },
+                "shortname": "AGPL-3.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "yes",
                 "licenseType": "SaaS",

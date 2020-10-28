@@ -466,6 +466,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "OPL-1.0"
+                    ],
+                    "__impliedId": "OPL-1.0"
+                },
+                "shortname": "OPL-1.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Open Publication License (OPL) v1.0",
                 "State": "DFSGInCompatible",

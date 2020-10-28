@@ -193,6 +193,20 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-SA-2.5"
+                    ],
+                    "__impliedId": "CC-BY-SA-2.5"
+                },
+                "shortname": "CC-BY-SA-2.5",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/CC-BY-SA-2.5.html",
                 "familyName": "Creative Commons Attribution Share Alike",

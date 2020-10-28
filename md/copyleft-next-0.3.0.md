@@ -255,6 +255,7 @@ Raw Data
         "__impliedNames": [
             "copyleft-next-0.3.0",
             "copyleft-next 0.3.0",
+            "Copyleft-Next-0.3.0",
             "scancode://copyleft-next-0.3.0"
         ],
         "__impliedId": "copyleft-next-0.3.0",
@@ -324,6 +325,20 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Copyleft-Next-0.3.0"
+                    ],
+                    "__impliedId": "Copyleft-Next-0.3.0"
+                },
+                "shortname": "Copyleft-Next-0.3.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [
