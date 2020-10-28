@@ -20,8 +20,8 @@ Description
 > patent grant may also optionally be expanded to larger works to permit
 > use as a contributor license agreement.
 
-(source:
-choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+(source: choosealicense.com
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 Comments on (easy) usability
 ----------------------------
@@ -41,7 +41,8 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt "choosealicense.com")
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 URLs
 ----

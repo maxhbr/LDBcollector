@@ -24,8 +24,8 @@ grant; and the ability for linked works to use other licenses, including
 commercial ones.
 ____
 
-(source:
-choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+(source: choosealicense.com
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === Comments on (easy) usability
 
@@ -65,7 +65,8 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-2.0.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-2.0.txt[choosealicense.com]
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === URLs
 

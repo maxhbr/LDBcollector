@@ -15,8 +15,8 @@ Description
 > to include the copyright notice, license text, or disclaimer in either
 > source or binary forms.
 
-(source:
-choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+(source: choosealicense.com
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 Comments on (easy) usability
 ----------------------------
@@ -36,7 +36,8 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/0bsd.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/0bsd.txt "choosealicense.com")
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 URLs
 ----

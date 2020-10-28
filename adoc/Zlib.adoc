@@ -26,8 +26,8 @@ A short permissive license, compatible with GPL. Requires altered source
 versions to be documented as such.
 ____
 
-(source:
-choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+(source: choosealicense.com
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === Comments on (easy) usability
 
@@ -79,7 +79,8 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/zlib.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/zlib.txt[choosealicense.com]
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === URLs
 

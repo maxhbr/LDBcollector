@@ -29,8 +29,8 @@ href="/licenses/bsd-3-clause/">BSD 3-Clause</a>. Both have very minute
 differences to the MIT license.
 ____
 
-(source:
-choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+(source: choosealicense.com
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === Comments on (easy) usability
 
@@ -65,7 +65,8 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt[choosealicense.com]
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === URLs
 

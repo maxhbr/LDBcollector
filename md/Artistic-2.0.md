@@ -22,8 +22,8 @@ Description
 > that modified versions of the software do not prevent users from
 > running the standard version.
 
-(source:
-choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+(source: choosealicense.com
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 Comments on (easy) usability
 ----------------------------
@@ -55,7 +55,8 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/artistic-2.0.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/artistic-2.0.txt "choosealicense.com")
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 URLs
 ----

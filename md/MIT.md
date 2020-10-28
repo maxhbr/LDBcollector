@@ -25,14 +25,15 @@ Description
 > modifications, and larger works may be distributed under different
 > terms and without source code.
 
-(source:
-choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+(source: choosealicense.com
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 Comments on (easy) usability
 ----------------------------
 
 -   **↑**“ This License is featured by choosealicense.com” (source:
-    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com")
+    ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 -   **↑**“Exception : The University of Washington's interpretation of
     the MIT License, as the University interprets it for the pine email
@@ -68,7 +69,8 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com")
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 URLs
 ----

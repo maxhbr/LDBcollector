@@ -23,8 +23,8 @@ The easiest license out there. It gives the user permissions to do
 whatever they want with your code.
 ____
 
-(source:
-choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+(source: choosealicense.com
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === Comments on (easy) usability
 
@@ -61,7 +61,8 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/wtfpl.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/wtfpl.txt[choosealicense.com]
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === URLs
 

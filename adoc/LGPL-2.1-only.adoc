@@ -32,8 +32,8 @@ link to it do not fall under this restriction. There are two commonly
 used versions of the GNU LGPL.
 ____
 
-(source:
-choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+(source: choosealicense.com
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === Comments on (easy) usability
 
@@ -79,7 +79,8 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-2.1.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-2.1.txt[choosealicense.com]
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT]))
 
 === URLs
 
