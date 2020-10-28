@@ -15,7 +15,8 @@ Description
 > A variant of the &lt;a href="/licenses/bsd-3-clause/"&gt;BSD 3-Clause
 > License&lt;/a&gt; that explicitly does not grant any patent rights.
 
-(source: choosealicense.com)
+(source:
+choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 Comments on (easy) usability
 ----------------------------
@@ -41,7 +42,7 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause-clear.txt "choosealicense.com"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause-clear.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 URLs
 ----

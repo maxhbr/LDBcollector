@@ -31,7 +31,8 @@ clause that prohibits others from using the name of the project or its
 contributors to promote derived products without written consent.
 ____
 
-(source: choosealicense.com)
+(source:
+choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === Comments on (easy) usability
 
@@ -87,7 +88,7 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt[choosealicense.com])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === URLs
 

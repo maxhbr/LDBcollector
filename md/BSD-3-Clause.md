@@ -34,7 +34,8 @@ Description
 > project or its contributors to promote derived products without
 > written consent.
 
-(source: choosealicense.com)
+(source:
+choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 Comments on (easy) usability
 ----------------------------
@@ -82,7 +83,7 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt "choosealicense.com"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 URLs
 ----

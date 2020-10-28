@@ -24,7 +24,8 @@ software license created on the initiative of and approved by the
 European Commission in 22 official languages of the European Union.
 ____
 
-(source: choosealicense.com)
+(source:
+choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === Comments on (easy) usability
 
@@ -76,7 +77,7 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/eupl-1.2.txt[choosealicense.com])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/eupl-1.2.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === URLs
 

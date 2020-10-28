@@ -25,7 +25,8 @@ typeface design communities. It is used for almost all open source font
 projects, including those by Adobe, Google and Mozilla.
 ____
 
-(source: choosealicense.com)
+(source:
+choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === Comments on (easy) usability
 
@@ -66,7 +67,7 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ofl-1.1.txt[choosealicense.com])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ofl-1.1.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === URLs
 

@@ -22,7 +22,8 @@
   An open source license with a patent grant.
 #+END_QUOTE
 
-(source: choosealicense.com)
+(source:
+choosealicense.com[[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
 ** Comments on (easy) usability
 
@@ -69,7 +70,7 @@
                                                                 
 
 (source:
-[[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt][choosealicense.com]])
+[[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt][choosealicense.com]][[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
 ** URLs
 

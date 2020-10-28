@@ -47,7 +47,8 @@ provided by the licensed work may be distributed under different terms
 and without source code for the larger work.
 ____
 
-(source: choosealicense.com)
+(source:
+choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === Comments on (easy) usability
 
@@ -97,7 +98,7 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-3.0.txt[choosealicense.com])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-3.0.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === URLs
 

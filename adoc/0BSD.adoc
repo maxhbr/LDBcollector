@@ -22,7 +22,8 @@ include the copyright notice, license text, or disclaimer in either
 source or binary forms.
 ____
 
-(source: choosealicense.com)
+(source:
+choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === Comments on (easy) usability
 
@@ -53,7 +54,7 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/0bsd.txt[choosealicense.com])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/0bsd.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === URLs
 

@@ -28,7 +28,8 @@ widest reach. As with the Unlicense and typical software licenses, CC0
 disclaims warranties. CC0 is very similar to the Unlicense.
 ____
 
-(source: choosealicense.com)
+(source:
+choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === Comments on (easy) usability
 
@@ -62,7 +63,7 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc0-1.0.txt[choosealicense.com])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc0-1.0.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === URLs
 

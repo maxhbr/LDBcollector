@@ -21,7 +21,8 @@ Description
 > href="/licenses/mit/"&gt;MIT&lt;/a&gt; licenses, removing some
 > language that is no longer necessary.
 
-(source: choosealicense.com)
+(source:
+choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 Comments on (easy) usability
 ----------------------------
@@ -52,7 +53,7 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt "choosealicense.com"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 URLs
 ----

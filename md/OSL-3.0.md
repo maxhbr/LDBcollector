@@ -19,7 +19,8 @@ Description
 > rights from contributors to users, with a termination clause triggered
 > if a user files a patent infringement lawsuit.
 
-(source: choosealicense.com)
+(source:
+choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 Comments on (easy) usability
 ----------------------------
@@ -55,7 +56,7 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/osl-3.0.txt "choosealicense.com"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/osl-3.0.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 URLs
 ----

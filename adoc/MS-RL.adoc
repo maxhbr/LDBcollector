@@ -25,7 +25,8 @@ additional condition that any source code for any derived file be
 provided under this license.
 ____
 
-(source: choosealicense.com)
+(source:
+choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === Comments on (easy) usability
 
@@ -71,7 +72,7 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt[choosealicense.com])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === URLs
 

@@ -23,7 +23,8 @@ The LaTeX Project Public License (LPPL) is the primary license under
 which the LaTeX kernel and the base LaTeX packages are distributed.
 ____
 
-(source: choosealicense.com)
+(source:
+choosealicense.comhttps://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === Comments on (easy) usability
 
@@ -61,7 +62,7 @@ a|
 |===
 
 (source:
-https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lppl-1.3c.txt[choosealicense.com])
+https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lppl-1.3c.txt[choosealicense.com]https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 === URLs
 

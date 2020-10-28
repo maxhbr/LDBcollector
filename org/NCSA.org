@@ -32,7 +32,8 @@
   promote or endorse derived products.
 #+END_QUOTE
 
-(source: choosealicense.com)
+(source:
+choosealicense.com[[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
 ** Comments on (easy) usability
 
@@ -65,7 +66,7 @@
                                                              
 
 (source:
-[[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ncsa.txt][choosealicense.com]])
+[[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ncsa.txt][choosealicense.com]][[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
 ** URLs
 

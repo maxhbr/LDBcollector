@@ -27,13 +27,14 @@ Description
 > of patent rights. Licensed works, modifications, and larger works may
 > be distributed under different terms and without source code.
 
-(source: choosealicense.com)
+(source:
+choosealicense.com[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 Comments on (easy) usability
 ----------------------------
 
 -   **↑**“ This License is featured by choosealicense.com” (source:
-    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com"))
+    [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
@@ -62,7 +63,7 @@ Obligations
 [TABLE]
 
 (source:
-[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com"))
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com")[MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 URLs
 ----
