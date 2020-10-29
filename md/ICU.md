@@ -9,6 +9,20 @@ ICU License (ICU)
 
 -   `X11 License`
 
+-   `X11/MIT`
+
+-   `X11 MIT`
+
+-   `X11 (BSD like)`
+
+-   `SUSE-XFree86-1.0`
+
+-   `MIT/X11`
+
+-   `MIT/X License`
+
+-   `MIT/X Consortium License`
+
 -   `scancode://x11-xconsortium`
 
 -   `X11-Style (X Consortium)`
@@ -101,6 +115,13 @@ Raw Data
             "ICU License",
             "X11",
             "X11 License",
+            "X11/MIT",
+            "X11 MIT",
+            "X11 (BSD like)",
+            "SUSE-XFree86-1.0",
+            "MIT/X11",
+            "MIT/X License",
+            "MIT/X Consortium License",
             "scancode://x11-xconsortium",
             "X11-Style (X Consortium)",
             "scancode://x11"
@@ -200,6 +221,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "ICU",
                         "ICU"
                     ],
                     "__impliedId": "ICU"
@@ -208,7 +230,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "ICU"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

@@ -5,6 +5,10 @@ Zope Public License 2.0 (ZPL-2.0)
 
 **Other Names:**
 
+-   `Zope Public License`
+
+-   `ZPL`
+
 -   `scancode://zpl-2.0`
 
 -   `ZPL 2.0`
@@ -103,6 +107,8 @@ Raw Data
         "__impliedNames": [
             "ZPL-2.0",
             "Zope Public License 2.0",
+            "Zope Public License",
+            "ZPL",
             "scancode://zpl-2.0",
             "ZPL 2.0",
             "The Zope Public License, Version 2.0",
@@ -258,7 +264,10 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "ZPL-2.0"
+                        "ZPL-2.0",
+                        "Zope Public License",
+                        "ZPL-2.0",
+                        "ZPL"
                     ],
                     "__impliedId": "ZPL-2.0"
                 },
@@ -266,7 +275,11 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Zope Public License",
+                    "ZPL-2.0",
+                    "ZPL"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

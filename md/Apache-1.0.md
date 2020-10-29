@@ -220,6 +220,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Apache-1.0",
                         "Apache-1.0"
                     ],
                     "__impliedId": "Apache-1.0"
@@ -228,7 +229,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Apache-1.0"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

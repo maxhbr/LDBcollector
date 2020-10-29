@@ -5,6 +5,8 @@ Erlang Public License v1.1 (ErlPL-1.1)
 
 **Other Names:**
 
+-   `Erlang Public License`
+
 -   `scancode://erlangpl-1.1`
 
 -   `Erlang Public License 1.1`
@@ -328,6 +330,7 @@ Raw Data
         "__impliedNames": [
             "ErlPL-1.1",
             "Erlang Public License v1.1",
+            "Erlang Public License",
             "scancode://erlangpl-1.1",
             "Erlang Public License 1.1"
         ],
@@ -413,6 +416,8 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "ErlPL-1.1",
+                        "Erlang Public License",
                         "ErlPL-1.1"
                     ],
                     "__impliedId": "ErlPL-1.1"
@@ -421,7 +426,10 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Erlang Public License",
+                    "ErlPL-1.1"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

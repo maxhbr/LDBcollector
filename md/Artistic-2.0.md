@@ -5,9 +5,9 @@ Artistic License 2.0 (Artistic-2.0)
 
 **Other Names:**
 
--   `scancode://artistic-2.0`
-
 -   `Artistic 2.0`
+
+-   `scancode://artistic-2.0`
 
 -   `Artistic License, Version 2.0`
 
@@ -164,8 +164,8 @@ Raw Data
         "__impliedNames": [
             "Artistic-2.0",
             "Artistic License 2.0",
-            "scancode://artistic-2.0",
             "Artistic 2.0",
+            "scancode://artistic-2.0",
             "artistic-2.0",
             "Artistic License, Version 2.0",
             "License :: OSI Approved :: Artistic License",
@@ -318,7 +318,9 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "Artistic-2.0"
+                        "Artistic-2.0",
+                        "Artistic-2.0",
+                        "Artistic 2.0"
                     ],
                     "__impliedId": "Artistic-2.0"
                 },
@@ -326,7 +328,10 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Artistic-2.0",
+                    "Artistic 2.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

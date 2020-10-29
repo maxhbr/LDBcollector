@@ -724,6 +724,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "SPL-1.0",
                         "SPL-1.0"
                     ],
                     "__impliedId": "SPL-1.0"
@@ -732,7 +733,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "SPL-1.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

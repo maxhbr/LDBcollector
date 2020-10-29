@@ -272,6 +272,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "SNIA",
                         "SNIA"
                     ],
                     "__impliedId": "SNIA"
@@ -280,7 +281,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "SNIA"
+                ],
                 "patentInt": 0
             }
         },

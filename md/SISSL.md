@@ -476,6 +476,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "SISSL",
                         "SISSL"
                     ],
                     "__impliedId": "SISSL"
@@ -484,7 +485,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "SISSL"
+                ],
                 "patentInt": 0
             },
             "OpenSourceInitiative": {

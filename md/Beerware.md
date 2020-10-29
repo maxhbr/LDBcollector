@@ -5,6 +5,8 @@ Beerware License (Beerware)
 
 **Other Names:**
 
+-   `SUSE-Beerware`
+
 -   `scancode://beerware`
 
 -   `Beer-Ware License`
@@ -55,6 +57,7 @@ Raw Data
         "__impliedNames": [
             "Beerware",
             "Beerware License",
+            "SUSE-Beerware",
             "scancode://beerware",
             "Beer-Ware License",
             "Beerware 42"
@@ -142,6 +145,8 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Beerware",
+                        "SUSE-Beerware",
                         "Beerware"
                     ],
                     "__impliedId": "Beerware"
@@ -150,7 +155,10 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "SUSE-Beerware",
+                    "Beerware"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

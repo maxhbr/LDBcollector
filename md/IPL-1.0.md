@@ -5,6 +5,12 @@ IBM Public License v1.0 (IPL-1.0)
 
 **Other Names:**
 
+-   `IBM Public License ..`
+
+-   `IBM Public License`
+
+-   `IBM PL`
+
 -   `scancode://ibmpl-1.0`
 
 -   `IPL 1.0`
@@ -134,6 +140,9 @@ Raw Data
         "__impliedNames": [
             "IPL-1.0",
             "IBM Public License v1.0",
+            "IBM Public License ..",
+            "IBM Public License",
+            "IBM PL",
             "scancode://ibmpl-1.0",
             "IPL 1.0",
             "IBM Public License, Version 1.0",
@@ -289,7 +298,11 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "IPL-1.0"
+                        "IPL-1.0",
+                        "IPL-1.0",
+                        "IBM Public License ..",
+                        "IBM Public License",
+                        "IBM PL"
                     ],
                     "__impliedId": "IPL-1.0"
                 },
@@ -297,7 +310,12 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "IPL-1.0",
+                    "IBM Public License ..",
+                    "IBM Public License",
+                    "IBM PL"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

@@ -256,6 +256,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "VSL-1.0",
+                        "VSL-1.0"
+                    ],
+                    "__impliedId": "VSL-1.0"
+                },
+                "shortname": "VSL-1.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "VSL-1.0"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",

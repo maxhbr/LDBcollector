@@ -149,6 +149,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Imlib2",
+                        "Imlib2"
+                    ],
+                    "__impliedId": "Imlib2"
+                },
+                "shortname": "Imlib2",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Imlib2"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

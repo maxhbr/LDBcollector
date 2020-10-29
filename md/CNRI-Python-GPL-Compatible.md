@@ -135,6 +135,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "CNRI-Python-GPL-Compatible",
+                        "CNRI-Python-GPL-Compatible"
+                    ],
+                    "__impliedId": "CNRI-Python-GPL-Compatible"
+                },
+                "shortname": "CNRI-Python-GPL-Compatible",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "CNRI-Python-GPL-Compatible"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/CNRI-Python-GPL-Compatible.html",

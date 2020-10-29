@@ -171,6 +171,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
         "Cavil": {
             "implications": {
                 "__impliedNames": [
+                    "SCEA",
                     "SCEA"
                 ],
                 "__impliedId": "SCEA"
@@ -179,7 +180,9 @@ Unless required by applicable law or agreed to in writing, software distributed 
             "riskInt": 3,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "SCEA"
+            ],
             "patentInt": 0
         }
     },

@@ -237,6 +237,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "UPL-1.0",
                         "UPL-1.0"
                     ],
                     "__impliedId": "UPL-1.0"
@@ -245,7 +246,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "UPL-1.0"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

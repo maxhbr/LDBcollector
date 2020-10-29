@@ -5,6 +5,14 @@ GNU Library General Public License v2 or later (LGPL-2.0-or-later)
 
 **Other Names:**
 
+-   `LGPLv2.0+`
+
+-   `LGPL-2.0+`
+
+-   `LGPL v2.0 or later`
+
+-   `LGPL v2 or later`
+
 -   `scancode://lgpl-2.0-plus`
 
 -   `LGPL 2.0 or later`
@@ -71,6 +79,10 @@ Raw Data
         "__impliedNames": [
             "LGPL-2.0-or-later",
             "GNU Library General Public License v2 or later",
+            "LGPLv2.0+",
+            "LGPL-2.0+",
+            "LGPL v2.0 or later",
+            "LGPL v2 or later",
             "scancode://lgpl-2.0-plus",
             "LGPL 2.0 or later"
         ],
@@ -186,7 +198,12 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "LGPL-2.0-or-later"
+                        "LGPL-2.0-or-later",
+                        "LGPLv2.0+",
+                        "LGPL-2.0-or-later",
+                        "LGPL-2.0+",
+                        "LGPL v2.0 or later",
+                        "LGPL v2 or later"
                     ],
                     "__impliedId": "LGPL-2.0-or-later"
                 },
@@ -194,7 +211,13 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "LGPLv2.0+",
+                    "LGPL-2.0-or-later",
+                    "LGPL-2.0+",
+                    "LGPL v2.0 or later",
+                    "LGPL v2 or later"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

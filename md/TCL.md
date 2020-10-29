@@ -5,6 +5,8 @@ TCL/TK License (TCL)
 
 **Other Names:**
 
+-   `SUSE-TCL`
+
 -   `scancode://tcl`
 
 Comments on (easy) usability
@@ -80,6 +82,7 @@ Raw Data
         "__impliedNames": [
             "TCL",
             "TCL/TK License",
+            "SUSE-TCL",
             "scancode://tcl"
         ],
         "__impliedId": "TCL",
@@ -169,7 +172,9 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "TCL"
+                        "TCL",
+                        "TCL",
+                        "SUSE-TCL"
                     ],
                     "__impliedId": "TCL"
                 },
@@ -177,7 +182,10 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "TCL",
+                    "SUSE-TCL"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

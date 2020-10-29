@@ -255,6 +255,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "OGTSL",
+                        "OGTSL"
+                    ],
+                    "__impliedId": "OGTSL"
+                },
+                "shortname": "OGTSL",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "OGTSL"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",

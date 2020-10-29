@@ -5,9 +5,17 @@ GNU Free Documentation License v1.2 only (GFDL-1.2-only)
 
 **Other Names:**
 
--   `scancode://gfdl-1.2`
+-   `GNU Free Documentation License, Version 1.2 (GFDL 1.2)`
+
+-   `GFDLv1.2`
+
+-   `GFDL-1.2`
+
+-   `GFDL v1.2`
 
 -   `GFDL 1.2`
+
+-   `scancode://gfdl-1.2`
 
 Comments on (easy) usability
 ----------------------------
@@ -441,8 +449,12 @@ Raw Data
         "__impliedNames": [
             "GFDL-1.2-only",
             "GNU Free Documentation License v1.2 only",
-            "scancode://gfdl-1.2",
-            "GFDL 1.2"
+            "GNU Free Documentation License, Version 1.2 (GFDL 1.2)",
+            "GFDLv1.2",
+            "GFDL-1.2",
+            "GFDL v1.2",
+            "GFDL 1.2",
+            "scancode://gfdl-1.2"
         ],
         "__impliedId": "GFDL-1.2-only",
         "__impliedAmbiguousNames": [
@@ -545,7 +557,13 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "GFDL-1.2-only"
+                        "GFDL-1.2-only",
+                        "GNU Free Documentation License, Version 1.2 (GFDL 1.2)",
+                        "GFDLv1.2",
+                        "GFDL-1.2-only",
+                        "GFDL-1.2",
+                        "GFDL v1.2",
+                        "GFDL 1.2"
                     ],
                     "__impliedId": "GFDL-1.2-only"
                 },
@@ -553,7 +571,14 @@ Raw Data
                 "riskInt": 0,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "GNU Free Documentation License, Version 1.2 (GFDL 1.2)",
+                    "GFDLv1.2",
+                    "GFDL-1.2-only",
+                    "GFDL-1.2",
+                    "GFDL v1.2",
+                    "GFDL 1.2"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

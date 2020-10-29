@@ -5,9 +5,9 @@ Zope Public License 2.1 (ZPL-2.1)
 
 **Other Names:**
 
--   `scancode://zpl-2.1`
-
 -   `ZPL 2.1`
+
+-   `scancode://zpl-2.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -91,8 +91,8 @@ Raw Data
         "__impliedNames": [
             "ZPL-2.1",
             "Zope Public License 2.1",
-            "scancode://zpl-2.1",
-            "ZPL 2.1"
+            "ZPL 2.1",
+            "scancode://zpl-2.1"
         ],
         "__impliedId": "ZPL-2.1",
         "__impliedComments": [
@@ -197,7 +197,9 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "ZPL-2.1"
+                        "ZPL-2.1",
+                        "ZPL-2.1",
+                        "ZPL 2.1"
                     ],
                     "__impliedId": "ZPL-2.1"
                 },
@@ -205,7 +207,10 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "ZPL-2.1",
+                    "ZPL 2.1"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

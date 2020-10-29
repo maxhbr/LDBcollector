@@ -228,6 +228,7 @@ between the parties.
         "Cavil": {
             "implications": {
                 "__impliedNames": [
+                    "Unicode-TOU",
                     "Unicode-TOU"
                 ],
                 "__impliedId": "Unicode-TOU"
@@ -236,7 +237,9 @@ between the parties.
             "riskInt": 2,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "Unicode-TOU"
+            ],
             "patentInt": 0
         }
     },

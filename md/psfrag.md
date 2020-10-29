@@ -128,6 +128,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "psfrag",
+                        "psfrag"
+                    ],
+                    "__impliedId": "psfrag"
+                },
+                "shortname": "psfrag",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "psfrag"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

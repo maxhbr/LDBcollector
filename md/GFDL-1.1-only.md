@@ -5,9 +5,17 @@ GNU Free Documentation License v1.1 only (GFDL-1.1-only)
 
 **Other Names:**
 
--   `scancode://gfdl-1.1`
+-   `GNU Free Documentation License, Version 1.1 (GFDL 1.1)`
+
+-   `GFDLv1.1`
+
+-   `GFDL-1.1`
+
+-   `GFDL v1.1`
 
 -   `GFDL 1.1`
+
+-   `scancode://gfdl-1.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -400,8 +408,12 @@ Raw Data
         "__impliedNames": [
             "GFDL-1.1-only",
             "GNU Free Documentation License v1.1 only",
-            "scancode://gfdl-1.1",
-            "GFDL 1.1"
+            "GNU Free Documentation License, Version 1.1 (GFDL 1.1)",
+            "GFDLv1.1",
+            "GFDL-1.1",
+            "GFDL v1.1",
+            "GFDL 1.1",
+            "scancode://gfdl-1.1"
         ],
         "__impliedId": "GFDL-1.1-only",
         "__impliedAmbiguousNames": [
@@ -505,6 +517,33 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "GFDL-1.1-only",
+                        "GNU Free Documentation License, Version 1.1 (GFDL 1.1)",
+                        "GFDLv1.1",
+                        "GFDL-1.1-only",
+                        "GFDL-1.1",
+                        "GFDL v1.1",
+                        "GFDL 1.1"
+                    ],
+                    "__impliedId": "GFDL-1.1-only"
+                },
+                "shortname": "GFDL-1.1-only",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "GNU Free Documentation License, Version 1.1 (GFDL 1.1)",
+                    "GFDLv1.1",
+                    "GFDL-1.1-only",
+                    "GFDL-1.1",
+                    "GFDL v1.1",
+                    "GFDL 1.1"
+                ],
+                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "GNU Free Documentation License (GFDL)",

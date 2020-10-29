@@ -176,6 +176,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "BSD-3-Clause-Clear",
                         "BSD-3-Clause-Clear"
                     ],
                     "__impliedId": "BSD-3-Clause-Clear"
@@ -184,7 +185,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "BSD-3-Clause-Clear"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

@@ -216,6 +216,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Xnet",
+                        "Xnet"
+                    ],
+                    "__impliedId": "Xnet"
+                },
+                "shortname": "Xnet",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Xnet"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",

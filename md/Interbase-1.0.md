@@ -313,6 +313,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Interbase-1.0",
                         "Interbase-1.0"
                     ],
                     "__impliedId": "Interbase-1.0"
@@ -321,7 +322,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Interbase-1.0"
+                ],
                 "patentInt": 0
             }
         },

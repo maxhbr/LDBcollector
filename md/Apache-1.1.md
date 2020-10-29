@@ -5,6 +5,10 @@ Apache License 1.1 (Apache-1.1)
 
 **Other Names:**
 
+-   `Apache 1.1 (Indiana University)`
+
+-   `ASL 1.1`
+
 -   `scancode://apache-1.1`
 
 -   `Apache 1.1`
@@ -14,8 +18,6 @@ Apache License 1.1 (Apache-1.1)
 -   `Apache Software License 1.1`
 
 -   `Apache (v1.1)`
-
--   `ASL 1.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -136,12 +138,13 @@ Raw Data
         "__impliedNames": [
             "Apache-1.1",
             "Apache License 1.1",
+            "Apache 1.1 (Indiana University)",
+            "ASL 1.1",
             "scancode://apache-1.1",
             "Apache 1.1",
             "Apache Software License, Version 1.1",
             "Apache Software License 1.1",
-            "Apache (v1.1)",
-            "ASL 1.1"
+            "Apache (v1.1)"
         ],
         "__impliedId": "Apache-1.1",
         "__impliedAmbiguousNames": [
@@ -295,7 +298,10 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "Apache-1.1"
+                        "Apache-1.1",
+                        "Apache-1.1",
+                        "Apache 1.1 (Indiana University)",
+                        "ASL 1.1"
                     ],
                     "__impliedId": "Apache-1.1"
                 },
@@ -303,7 +309,11 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Apache-1.1",
+                    "Apache 1.1 (Indiana University)",
+                    "ASL 1.1"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

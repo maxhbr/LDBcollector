@@ -212,6 +212,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "LiLiQ-Rplus-1.1",
+                        "LiLiQ-Rplus-1.1"
+                    ],
+                    "__impliedId": "LiLiQ-Rplus-1.1"
+                },
+                "shortname": "LiLiQ-Rplus-1.1",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "LiLiQ-Rplus-1.1"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedJudgement": [

@@ -252,6 +252,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "EUDatagrid",
+                        "EUDatagrid"
+                    ],
+                    "__impliedId": "EUDatagrid"
+                },
+                "shortname": "EUDatagrid",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "EUDatagrid"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "yes",
                 "licenseType": "SaaS",

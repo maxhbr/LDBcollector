@@ -336,6 +336,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "CPAL-1.0",
                         "CPAL-1.0"
                     ],
                     "__impliedId": "CPAL-1.0"
@@ -344,7 +345,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "CPAL-1.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

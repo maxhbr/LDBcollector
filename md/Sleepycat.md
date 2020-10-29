@@ -253,6 +253,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Sleepycat",
                         "Sleepycat"
                     ],
                     "__impliedId": "Sleepycat"
@@ -261,7 +262,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Sleepycat"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

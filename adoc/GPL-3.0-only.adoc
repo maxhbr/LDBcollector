@@ -16,6 +16,18 @@
 * `+GNU General Public License v3.0 or later+`
 * `+GPL-3.0+`
 * `+GPL-3.0++`
+* `+GPLv3+`
+* `+GPL3+`
+* `+GPL-3+`
+* `+GPL v3 only+`
+* `+GPL v3+`
+* `+GPL 3+`
+* `+GNU General Public License version 3 (GPLv3)+`
+* `+GNU GPL version 3+`
+* `+GPLv3++`
+* `+GPL-3++`
+* `+GPL v3 or later+`
+* `+GNU GPL v3 or later+`
 * `+scancode://gpl-3.0+`
 * `+GPL 3.0+`
 * `+scancode://gpl-3.0-plus+`
@@ -27,7 +39,6 @@
 * `+License :: OSI Approved :: GNU General Public License v3 (GPLv3)+`
 * `+GNU General Public License 3.0+`
 * `+GPL3.0+`
-* `+GPL3+`
 * `+GPL (v3)+`
 * `+GPL3.0++`
 * `+GPL3++`
@@ -957,6 +968,18 @@ Public License instead of this License.  But first, please read
         "GNU General Public License v3.0 or later",
         "GPL-3.0",
         "GPL-3.0+",
+        "GPLv3",
+        "GPL3",
+        "GPL-3",
+        "GPL v3 only",
+        "GPL v3",
+        "GPL 3",
+        "GNU General Public License version 3 (GPLv3)",
+        "GNU GPL version 3",
+        "GPLv3+",
+        "GPL-3+",
+        "GPL v3 or later",
+        "GNU GPL v3 or later",
         "scancode://gpl-3.0",
         "GPL 3.0",
         "scancode://gpl-3.0-plus",
@@ -968,7 +991,6 @@ Public License instead of this License.  But first, please read
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "GNU General Public License 3.0",
         "GPL3.0",
-        "GPL3",
         "GPL (v3)",
         "GPL3.0+",
         "GPL3+",

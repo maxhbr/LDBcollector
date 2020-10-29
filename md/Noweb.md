@@ -131,6 +131,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Noweb",
+                        "Noweb"
+                    ],
+                    "__impliedId": "Noweb"
+                },
+                "shortname": "Noweb",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Noweb"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

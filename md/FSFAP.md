@@ -190,6 +190,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "FSFAP",
                         "FSFAP"
                     ],
                     "__impliedId": "FSFAP"
@@ -198,7 +199,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "FSFAP"
+                ],
                 "patentInt": 0
             }
         },

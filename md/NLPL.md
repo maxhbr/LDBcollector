@@ -148,6 +148,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "NLPL",
                         "NLPL"
                     ],
                     "__impliedId": "NLPL"
@@ -156,7 +157,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "NLPL"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

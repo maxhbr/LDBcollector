@@ -5,13 +5,17 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 **Other Names:**
 
+-   `SUSE-AGPL-3.0+`
+
+-   `AGPLv3+`
+
+-   `AGPL-3.0+`
+
 -   `scancode://agpl-3.0-plus`
 
 -   `AGPL 3.0 or later`
 
 -   `GNU Affero General Public License 3.0`
-
--   `AGPL-3.0+`
 
 -   `AGPL3.0+`
 
@@ -221,10 +225,12 @@ Raw Data
         "__impliedNames": [
             "AGPL-3.0-or-later",
             "GNU Affero General Public License v3.0 or later",
+            "SUSE-AGPL-3.0+",
+            "AGPLv3+",
+            "AGPL-3.0+",
             "scancode://agpl-3.0-plus",
             "AGPL 3.0 or later",
             "GNU Affero General Public License 3.0",
-            "AGPL-3.0+",
             "AGPL3.0+",
             "AGPL3+",
             "AGPL (v3 or later)",
@@ -387,6 +393,29 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "AGPL-3.0-or-later",
+                        "SUSE-AGPL-3.0+",
+                        "AGPLv3+",
+                        "AGPL-3.0-or-later",
+                        "AGPL-3.0+"
+                    ],
+                    "__impliedId": "AGPL-3.0-or-later"
+                },
+                "shortname": "AGPL-3.0-or-later",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "SUSE-AGPL-3.0+",
+                    "AGPLv3+",
+                    "AGPL-3.0-or-later",
+                    "AGPL-3.0+"
+                ],
+                "patentInt": 0
             },
             "Override": {
                 "oNonCommecrial": null,

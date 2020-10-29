@@ -162,6 +162,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "eGenix",
                         "eGenix"
                     ],
                     "__impliedId": "eGenix"
@@ -170,7 +171,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "eGenix"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

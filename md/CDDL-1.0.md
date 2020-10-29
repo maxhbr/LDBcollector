@@ -5,9 +5,11 @@ Common Development and Distribution License 1.0 (CDDL-1.0)
 
 **Other Names:**
 
--   `scancode://cddl-1.0`
-
 -   `CDDL 1.0`
+
+-   `CDDL`
+
+-   `scancode://cddl-1.0`
 
 -   `Common Development and Distribution License, Version 1.0`
 
@@ -206,8 +208,9 @@ Raw Data
         "__impliedNames": [
             "CDDL-1.0",
             "Common Development and Distribution License 1.0",
-            "scancode://cddl-1.0",
             "CDDL 1.0",
+            "CDDL",
+            "scancode://cddl-1.0",
             "Common Development and Distribution License, Version 1.0"
         ],
         "__impliedId": "CDDL-1.0",
@@ -391,7 +394,10 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "CDDL-1.0"
+                        "CDDL-1.0",
+                        "CDDL-1.0",
+                        "CDDL 1.0",
+                        "CDDL"
                     ],
                     "__impliedId": "CDDL-1.0"
                 },
@@ -399,7 +405,11 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "CDDL-1.0",
+                    "CDDL 1.0",
+                    "CDDL"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

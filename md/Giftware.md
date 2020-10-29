@@ -149,6 +149,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Giftware",
+                        "Giftware"
+                    ],
+                    "__impliedId": "Giftware"
+                },
+                "shortname": "Giftware",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Giftware"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Giftware.html",

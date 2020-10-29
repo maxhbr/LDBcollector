@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+SUSE-JSON+`
 * `+scancode://json+`
 
 === Comments on (easy) usability
@@ -64,6 +65,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "__impliedNames": [
         "JSON",
         "JSON License",
+        "SUSE-JSON",
         "scancode://json"
     ],
     "__impliedId": "JSON",
@@ -146,6 +148,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         "Cavil": {
             "implications": {
                 "__impliedNames": [
+                    "JSON",
+                    "SUSE-JSON",
                     "JSON"
                 ],
                 "__impliedId": "JSON"
@@ -154,7 +158,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             "riskInt": 3,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "SUSE-JSON",
+                "JSON"
+            ],
             "patentInt": 0
         },
         "Debian Free Software Guidelines": {

@@ -5,6 +5,8 @@ IPA Font License (IPA)
 
 **Other Names:**
 
+-   `see IPA_Font_License_Agreement_v1.0.txt`
+
 -   `scancode://ipa-font`
 
 -   `IPA Font License 1.0`
@@ -129,6 +131,7 @@ Raw Data
         "__impliedNames": [
             "IPA",
             "IPA Font License",
+            "see IPA_Font_License_Agreement_v1.0.txt",
             "scancode://ipa-font",
             "IPA Font License 1.0"
         ],
@@ -270,6 +273,8 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "IPA",
+                        "see IPA_Font_License_Agreement_v1.0.txt",
                         "IPA"
                     ],
                     "__impliedId": "IPA"
@@ -278,7 +283,10 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "see IPA_Font_License_Agreement_v1.0.txt",
+                    "IPA"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

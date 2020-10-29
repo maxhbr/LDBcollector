@@ -122,6 +122,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "AMPAS",
+                        "AMPAS"
+                    ],
+                    "__impliedId": "AMPAS"
+                },
+                "shortname": "AMPAS",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "AMPAS"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/AMPAS.html",

@@ -283,6 +283,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "NCSA",
                         "NCSA"
                     ],
                     "__impliedId": "NCSA"
@@ -291,7 +292,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "NCSA"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

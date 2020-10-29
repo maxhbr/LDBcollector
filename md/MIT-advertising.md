@@ -147,6 +147,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "MIT-advertising",
                         "MIT-advertising"
                     ],
                     "__impliedId": "MIT-advertising"
@@ -155,7 +156,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "MIT-advertising"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

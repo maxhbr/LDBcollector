@@ -114,6 +114,23 @@ to be a definition of the Haskell 2010 Language.
                     ]
                 ]
             }
+        },
+        "Cavil": {
+            "implications": {
+                "__impliedNames": [
+                    "HaskellReport",
+                    "HaskellReport"
+                ],
+                "__impliedId": "HaskellReport"
+            },
+            "shortname": "HaskellReport",
+            "riskInt": 5,
+            "trademarkInt": 0,
+            "opinionInt": 0,
+            "otherNames": [
+                "HaskellReport"
+            ],
+            "patentInt": 0
         }
     },
     "__impliedCopyleft": [

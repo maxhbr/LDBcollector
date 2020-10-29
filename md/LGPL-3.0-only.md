@@ -13,6 +13,16 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 
 -   `LGPL-3.0+`
 
+-   `LGPLv3`
+
+-   `GNU Lesser General Public License version 3 (LGPL v3)`
+
+-   `GNU Lesser General Public License (LGPL), Version 3`
+
+-   `LGPLv3+`
+
+-   `LGPL v3 or later`
+
 -   `scancode://lgpl-3.0`
 
 -   `LGPL 3.0`
@@ -480,6 +490,11 @@ Raw Data
             "GNU Lesser General Public License v3.0 or later",
             "LGPL-3.0",
             "LGPL-3.0+",
+            "LGPLv3",
+            "GNU Lesser General Public License version 3 (LGPL v3)",
+            "GNU Lesser General Public License (LGPL), Version 3",
+            "LGPLv3+",
+            "LGPL v3 or later",
             "scancode://lgpl-3.0",
             "LGPL 3.0",
             "scancode://lgpl-3.0-plus",

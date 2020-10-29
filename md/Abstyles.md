@@ -132,6 +132,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Abstyles",
+                        "Abstyles"
+                    ],
+                    "__impliedId": "Abstyles"
+                },
+                "shortname": "Abstyles",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Abstyles"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

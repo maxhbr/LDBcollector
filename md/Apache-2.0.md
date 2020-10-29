@@ -5,19 +5,41 @@ Apache License 2.0 (Apache-2.0)
 
 **Other Names:**
 
--   `scancode://apache-2.0`
+-   `The Apache Software License`
+
+-   `Apache v2.0`
+
+-   `Apache Software License, Version 2.0`
+
+-   `Apache Software License ..`
+
+-   `Apache Software License`
+
+-   `Apache License, Version 2.0`
+
+-   `Apache License Version 2.0`
+
+-   `Apache License`
 
 -   `Apache 2.0`
 
--   `Apache License, Version 2.0`
+-   `ASLv2.0`
+
+-   `ASLv2`
+
+-   `ASLv..`
+
+-   `ASL2`
+
+-   `ASL 2.0`
+
+-   `scancode://apache-2.0`
 
 -   `License :: OSI Approved :: Apache Software License`
 
 -   `Apache Software License 2.0`
 
 -   `Apache (v2.0)`
-
--   `ASL 2.0`
 
 Description
 -----------
@@ -345,14 +367,25 @@ Raw Data
         "__impliedNames": [
             "Apache-2.0",
             "Apache License 2.0",
-            "scancode://apache-2.0",
-            "Apache 2.0",
-            "apache-2.0",
+            "The Apache Software License",
+            "Apache v2.0",
+            "Apache Software License, Version 2.0",
+            "Apache Software License ..",
+            "Apache Software License",
             "Apache License, Version 2.0",
+            "Apache License Version 2.0",
+            "Apache License",
+            "Apache 2.0",
+            "ASLv2.0",
+            "ASLv2",
+            "ASLv..",
+            "ASL2",
+            "ASL 2.0",
+            "scancode://apache-2.0",
+            "apache-2.0",
             "License :: OSI Approved :: Apache Software License",
             "Apache Software License 2.0",
-            "Apache (v2.0)",
-            "ASL 2.0"
+            "Apache (v2.0)"
         ],
         "__impliedId": "Apache-2.0",
         "__impliedAmbiguousNames": [
@@ -512,7 +545,23 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "Apache-2.0"
+                        "Apache-2.0",
+                        "The Apache Software License",
+                        "Apache-2.0",
+                        "Apache v2.0",
+                        "Apache Software License, Version 2.0",
+                        "Apache Software License ..",
+                        "Apache Software License",
+                        "Apache License, Version 2.0",
+                        "Apache License Version 2.0",
+                        "Apache License 2.0",
+                        "Apache License",
+                        "Apache 2.0",
+                        "ASLv2.0",
+                        "ASLv2",
+                        "ASLv..",
+                        "ASL2",
+                        "ASL 2.0"
                     ],
                     "__impliedId": "Apache-2.0"
                 },
@@ -520,7 +569,24 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "The Apache Software License",
+                    "Apache-2.0",
+                    "Apache v2.0",
+                    "Apache Software License, Version 2.0",
+                    "Apache Software License ..",
+                    "Apache Software License",
+                    "Apache License, Version 2.0",
+                    "Apache License Version 2.0",
+                    "Apache License 2.0",
+                    "Apache License",
+                    "Apache 2.0",
+                    "ASLv2.0",
+                    "ASLv2",
+                    "ASLv..",
+                    "ASL2",
+                    "ASL 2.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

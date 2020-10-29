@@ -329,6 +329,7 @@ Display of Attribution Information is [required/not required] in Larger Works wh
         "Cavil": {
             "implications": {
                 "__impliedNames": [
+                    "CPAL-1.0",
                     "CPAL-1.0"
                 ],
                 "__impliedId": "CPAL-1.0"
@@ -337,7 +338,9 @@ Display of Attribution Information is [required/not required] in Larger Works wh
             "riskInt": 3,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "CPAL-1.0"
+            ],
             "patentInt": 0
         },
         "OpenChainPolicyTemplate": {

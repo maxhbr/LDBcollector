@@ -177,6 +177,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "ImageMagick",
                         "ImageMagick"
                     ],
                     "__impliedId": "ImageMagick"
@@ -185,7 +186,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "ImageMagick"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+SUSE-Sendmail+`
 * `+scancode://sendmail+`
 
 === Comments on (easy) usability
@@ -121,6 +122,7 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
     "__impliedNames": [
         "Sendmail",
         "Sendmail License",
+        "SUSE-Sendmail",
         "scancode://sendmail"
     ],
     "__impliedId": "Sendmail",
@@ -221,7 +223,9 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
         "Cavil": {
             "implications": {
                 "__impliedNames": [
-                    "Sendmail"
+                    "Sendmail",
+                    "Sendmail",
+                    "SUSE-Sendmail"
                 ],
                 "__impliedId": "Sendmail"
             },
@@ -229,7 +233,10 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
             "riskInt": 2,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "Sendmail",
+                "SUSE-Sendmail"
+            ],
             "patentInt": 0
         }
     },

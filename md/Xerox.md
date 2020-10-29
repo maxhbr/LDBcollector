@@ -156,6 +156,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Xerox",
+                        "Xerox"
+                    ],
+                    "__impliedId": "Xerox"
+                },
+                "shortname": "Xerox",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Xerox"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",
                 "url": "https://spdx.org/licenses/Xerox.html",

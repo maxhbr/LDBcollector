@@ -150,6 +150,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Caldera",
+                        "Caldera"
+                    ],
+                    "__impliedId": "Caldera"
+                },
+                "shortname": "Caldera",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Caldera"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

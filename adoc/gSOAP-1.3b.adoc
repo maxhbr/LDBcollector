@@ -271,6 +271,23 @@ THE SOFTWARE IN THIS PRODUCT WAS IN PART PROVIDED BY GENIVIA INC AND ANY EXPRESS
                     ]
                 ]
             }
+        },
+        "Cavil": {
+            "implications": {
+                "__impliedNames": [
+                    "gSOAP-1.3b",
+                    "gSOAP-1.3b"
+                ],
+                "__impliedId": "gSOAP-1.3b"
+            },
+            "shortname": "gSOAP-1.3b",
+            "riskInt": 5,
+            "trademarkInt": 0,
+            "opinionInt": 0,
+            "otherNames": [
+                "gSOAP-1.3b"
+            ],
+            "patentInt": 0
         }
     },
     "__impliedCopyleft": [

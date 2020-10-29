@@ -277,6 +277,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "LPL-1.02",
                         "LPL-1.02"
                     ],
                     "__impliedId": "LPL-1.02"
@@ -285,7 +286,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "LPL-1.02"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

@@ -126,6 +126,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "dvipdfm",
+                        "dvipdfm"
+                    ],
+                    "__impliedId": "dvipdfm"
+                },
+                "shortname": "dvipdfm",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "dvipdfm"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

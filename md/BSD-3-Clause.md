@@ -5,11 +5,29 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 **Other Names:**
 
+-   `New BSD License`
+
+-   `BSD3c(or similar)`
+
+-   `BSD3c (or similar)`
+
+-   `BSD3c`
+
+-   `BSD3`
+
+-   `BSD-3-clause (or similar)`
+
+-   `BSD-3`
+
+-   `BSD 3-clause (or similar)`
+
+-   `BSD 3-Clause`
+
+-   `BSD (3-Clause)`
+
 -   `scancode://bsd-new`
 
 -   `BSD License (no advertising)`
-
--   `BSD-3`
 
 -   `BSD 3-Clause License`
 
@@ -18,8 +36,6 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 -   `Revised BSD License`
 
 -   `Modified BSD License`
-
--   `New BSD License`
 
 -   `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
 
@@ -157,16 +173,24 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause",
             "BSD 3-Clause \"New\" or \"Revised\" License",
+            "New BSD License",
+            "BSD3c(or similar)",
+            "BSD3c (or similar)",
+            "BSD3c",
+            "BSD3",
+            "BSD-3-clause (or similar)",
+            "BSD-3",
+            "BSD 3-clause (or similar)",
+            "BSD 3-Clause",
+            "BSD (3-Clause)",
             "BSD-3-clause",
             "scancode://bsd-new",
             "bsd-3-clause",
             "BSD License (no advertising)",
-            "BSD-3",
             "BSD 3-Clause License",
             "License :: OSI Approved :: BSD License",
             "Revised BSD License",
             "Modified BSD License",
-            "New BSD License",
             "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
             "BSD 3-clause \"New\" or \"Revised\" License",
             "BSD (3 clause)"
@@ -355,7 +379,18 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "BSD-3-Clause"
+                        "BSD-3-Clause",
+                        "New BSD License",
+                        "BSD3c(or similar)",
+                        "BSD3c (or similar)",
+                        "BSD3c",
+                        "BSD3",
+                        "BSD-3-clause (or similar)",
+                        "BSD-3-Clause",
+                        "BSD-3",
+                        "BSD 3-clause (or similar)",
+                        "BSD 3-Clause",
+                        "BSD (3-Clause)"
                     ],
                     "__impliedId": "BSD-3-Clause"
                 },
@@ -363,7 +398,19 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "New BSD License",
+                    "BSD3c(or similar)",
+                    "BSD3c (or similar)",
+                    "BSD3c",
+                    "BSD3",
+                    "BSD-3-clause (or similar)",
+                    "BSD-3-Clause",
+                    "BSD-3",
+                    "BSD 3-clause (or similar)",
+                    "BSD 3-Clause",
+                    "BSD (3-Clause)"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

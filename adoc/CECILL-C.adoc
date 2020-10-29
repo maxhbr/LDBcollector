@@ -382,6 +382,7 @@ Version 1.0 du 2006-09-05."
         "Cavil": {
             "implications": {
                 "__impliedNames": [
+                    "CECILL-C",
                     "CECILL-C"
                 ],
                 "__impliedId": "CECILL-C"
@@ -390,7 +391,9 @@ Version 1.0 du 2006-09-05."
             "riskInt": 2,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "CECILL-C"
+            ],
             "patentInt": 0
         },
         "Google OSS Policy": {

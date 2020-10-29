@@ -248,6 +248,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "NTP",
                         "NTP"
                     ],
                     "__impliedId": "NTP"
@@ -256,7 +257,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "NTP"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

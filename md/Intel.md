@@ -241,6 +241,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Intel",
                         "Intel"
                     ],
                     "__impliedId": "Intel"
@@ -249,7 +250,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Intel"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

@@ -141,6 +141,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "BSD-1-Clause",
                         "BSD-1-Clause"
                     ],
                     "__impliedId": "BSD-1-Clause"
@@ -149,7 +150,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "BSD-1-Clause"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

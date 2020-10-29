@@ -443,6 +443,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "BitTorrent-1.0",
+                        "BitTorrent-1.0"
+                    ],
+                    "__impliedId": "BitTorrent-1.0"
+                },
+                "shortname": "BitTorrent-1.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "BitTorrent-1.0"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

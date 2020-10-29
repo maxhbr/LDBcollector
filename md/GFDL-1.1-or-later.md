@@ -5,6 +5,12 @@ GNU Free Documentation License v1.1 or later (GFDL-1.1-or-later)
 
 **Other Names:**
 
+-   `SUSE-GFDL-1.1+`
+
+-   `GFDL-1.1+`
+
+-   `FDL v1.1 or later`
+
 -   `scancode://gfdl-1.1-plus`
 
 -   `GFDL 1.1 or later`
@@ -42,6 +48,9 @@ Raw Data
         "__impliedNames": [
             "GFDL-1.1-or-later",
             "GNU Free Documentation License v1.1 or later",
+            "SUSE-GFDL-1.1+",
+            "GFDL-1.1+",
+            "FDL v1.1 or later",
             "scancode://gfdl-1.1-plus",
             "GFDL 1.1 or later"
         ],
@@ -141,6 +150,29 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "GFDL-1.1-or-later",
+                        "SUSE-GFDL-1.1+",
+                        "GFDL-1.1-or-later",
+                        "GFDL-1.1+",
+                        "FDL v1.1 or later"
+                    ],
+                    "__impliedId": "GFDL-1.1-or-later"
+                },
+                "shortname": "GFDL-1.1-or-later",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "SUSE-GFDL-1.1+",
+                    "GFDL-1.1-or-later",
+                    "GFDL-1.1+",
+                    "FDL v1.1 or later"
+                ],
+                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "GNU Free Documentation License (GFDL)",

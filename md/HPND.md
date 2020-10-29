@@ -228,6 +228,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "HPND",
                         "HPND"
                     ],
                     "__impliedId": "HPND"
@@ -236,7 +237,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "HPND"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

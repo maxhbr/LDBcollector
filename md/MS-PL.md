@@ -176,6 +176,7 @@ Raw Data
         "__impliedNames": [
             "MS-PL",
             "Microsoft Public License",
+            "Ms-Pl",
             "Ms-PL",
             "scancode://ms-pl",
             "ms-pl",
@@ -387,15 +388,20 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "Microsoft Public License"
+                        "MS-PL",
+                        "Ms-Pl",
+                        "MS-PL"
                     ],
-                    "__impliedId": "Microsoft Public License"
+                    "__impliedId": "MS-PL"
                 },
-                "shortname": "Microsoft Public License",
-                "riskInt": 4,
+                "shortname": "MS-PL",
+                "riskInt": 5,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Ms-Pl",
+                    "MS-PL"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

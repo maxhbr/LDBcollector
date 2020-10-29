@@ -12,8 +12,9 @@
 
 *Other Names:*
 
-* `+scancode://cddl-1.0+`
 * `+CDDL 1.0+`
+* `+CDDL+`
+* `+scancode://cddl-1.0+`
 * `+Common Development and Distribution License, Version 1.0+`
 
 === Comments on (easy) usability
@@ -198,8 +199,9 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
     "__impliedNames": [
         "CDDL-1.0",
         "Common Development and Distribution License 1.0",
-        "scancode://cddl-1.0",
         "CDDL 1.0",
+        "CDDL",
+        "scancode://cddl-1.0",
         "Common Development and Distribution License, Version 1.0"
     ],
     "__impliedId": "CDDL-1.0",
@@ -383,7 +385,10 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
         "Cavil": {
             "implications": {
                 "__impliedNames": [
-                    "CDDL-1.0"
+                    "CDDL-1.0",
+                    "CDDL-1.0",
+                    "CDDL 1.0",
+                    "CDDL"
                 ],
                 "__impliedId": "CDDL-1.0"
             },
@@ -391,7 +396,11 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
             "riskInt": 4,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "CDDL-1.0",
+                "CDDL 1.0",
+                "CDDL"
+            ],
             "patentInt": 0
         },
         "OpenChainPolicyTemplate": {

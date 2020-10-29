@@ -181,6 +181,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "CC-BY-1.0",
                         "CC-BY-1.0"
                     ],
                     "__impliedId": "CC-BY-1.0"
@@ -189,7 +190,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "CC-BY-1.0"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

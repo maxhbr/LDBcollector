@@ -381,6 +381,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "CECILL-C",
                         "CECILL-C"
                     ],
                     "__impliedId": "CECILL-C"
@@ -389,7 +390,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "CECILL-C"
+                ],
                 "patentInt": 0
             },
             "Google OSS Policy": {

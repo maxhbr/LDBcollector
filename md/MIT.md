@@ -5,11 +5,19 @@ MIT License (MIT)
 
 **Other Names:**
 
+-   `MIT-Licence`
+
+-   `MIT licence`
+
+-   `MIT License (or similar)`
+
+-   `Expat License`
+
+-   `Expat`
+
 -   `scancode://mit`
 
 -   `MIT/Expat License`
-
--   `Expat`
 
 -   `License :: OSI Approved :: MIT License`
 
@@ -131,10 +139,15 @@ Raw Data
         "__impliedNames": [
             "MIT",
             "MIT License",
+            "MIT-Licence",
+            "MIT license",
+            "MIT licence",
+            "MIT License (or similar)",
+            "Expat License",
+            "Expat",
             "scancode://mit",
             "mit",
             "MIT/Expat License",
-            "Expat",
             "License :: OSI Approved :: MIT License",
             "MIT license / X11 license",
             "MIT license (also X11)"
@@ -291,7 +304,15 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "MIT"
+                        "MIT",
+                        "MIT-Licence",
+                        "MIT license",
+                        "MIT licence",
+                        "MIT License (or similar)",
+                        "MIT License",
+                        "MIT",
+                        "Expat License",
+                        "Expat"
                     ],
                     "__impliedId": "MIT"
                 },
@@ -299,7 +320,16 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "MIT-Licence",
+                    "MIT license",
+                    "MIT licence",
+                    "MIT License (or similar)",
+                    "MIT License",
+                    "MIT",
+                    "Expat License",
+                    "Expat"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

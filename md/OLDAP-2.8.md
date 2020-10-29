@@ -5,6 +5,8 @@ Open LDAP Public License v2.8 (OLDAP-2.8)
 
 **Other Names:**
 
+-   `openldap 2.8`
+
 -   `scancode://openldap-2.8`
 
 -   `OpenLDAP Public License 2.8`
@@ -90,6 +92,7 @@ Raw Data
         "__impliedNames": [
             "OLDAP-2.8",
             "Open LDAP Public License v2.8",
+            "openldap 2.8",
             "scancode://openldap-2.8",
             "OpenLDAP Public License 2.8"
         ],
@@ -173,6 +176,8 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "OLDAP-2.8",
+                        "openldap 2.8",
                         "OLDAP-2.8"
                     ],
                     "__impliedId": "OLDAP-2.8"
@@ -181,7 +186,10 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "openldap 2.8",
+                    "OLDAP-2.8"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

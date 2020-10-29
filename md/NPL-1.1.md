@@ -174,6 +174,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "NPL-1.1",
                         "NPL-1.1"
                     ],
                     "__impliedId": "NPL-1.1"
@@ -182,7 +183,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "NPL-1.1"
+                ],
                 "patentInt": 0
             },
             "Wikipedia": {

@@ -5,6 +5,8 @@ W3C Software Notice and License (2002-12-31) (W3C)
 
 **Other Names:**
 
+-   `W3C Software License`
+
 -   `scancode://w3c`
 
 -   `W3C Software Notice and License`
@@ -102,6 +104,7 @@ Raw Data
         "__impliedNames": [
             "W3C",
             "W3C Software Notice and License (2002-12-31)",
+            "W3C Software License",
             "scancode://w3c",
             "W3C Software Notice and License",
             "The W3C Software Notice and License",
@@ -259,6 +262,8 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "W3C",
+                        "W3C Software License",
                         "W3C"
                     ],
                     "__impliedId": "W3C"
@@ -267,7 +272,10 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "W3C Software License",
+                    "W3C"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

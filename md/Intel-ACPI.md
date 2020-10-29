@@ -241,6 +241,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Intel-ACPI",
+                        "Intel-ACPI"
+                    ],
+                    "__impliedId": "Intel-ACPI"
+                },
+                "shortname": "Intel-ACPI",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Intel-ACPI"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

@@ -559,6 +559,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "APSL-1.1",
                         "APSL-1.1"
                     ],
                     "__impliedId": "APSL-1.1"
@@ -567,7 +568,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "APSL-1.1"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

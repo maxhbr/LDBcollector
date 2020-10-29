@@ -218,6 +218,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "MirOS",
+                        "MirOS"
+                    ],
+                    "__impliedId": "MirOS"
+                },
+                "shortname": "MirOS",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "MirOS"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",

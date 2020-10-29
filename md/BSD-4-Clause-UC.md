@@ -278,6 +278,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "BSD-4-Clause-UC",
                         "BSD-4-Clause-UC"
                     ],
                     "__impliedId": "BSD-4-Clause-UC"
@@ -286,7 +287,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "BSD-4-Clause-UC"
+                ],
                 "patentInt": 0
             },
             "Override": {

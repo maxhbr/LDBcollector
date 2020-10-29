@@ -167,6 +167,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "SGI-B-2.0",
                         "SGI-B-2.0"
                     ],
                     "__impliedId": "SGI-B-2.0"
@@ -175,7 +176,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "SGI-B-2.0"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

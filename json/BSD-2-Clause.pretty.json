@@ -2,6 +2,12 @@
     "__impliedNames": [
         "BSD-2-Clause",
         "BSD 2-Clause \"Simplified\" License",
+        "BSD2c",
+        "BSD-2c",
+        "BSD 2-clause",
+        "BSD 2-Clause",
+        "BSD 2 clause",
+        "BSD 2 Clause",
         "BSD-2-clause",
         "scancode://bsd-simplified",
         "bsd-2-clause",
@@ -166,7 +172,14 @@
         "Cavil": {
             "implications": {
                 "__impliedNames": [
-                    "BSD-2-Clause"
+                    "BSD-2-Clause",
+                    "BSD2c",
+                    "BSD-2c",
+                    "BSD-2-Clause",
+                    "BSD 2-clause",
+                    "BSD 2-Clause",
+                    "BSD 2 clause",
+                    "BSD 2 Clause"
                 ],
                 "__impliedId": "BSD-2-Clause"
             },
@@ -174,7 +187,15 @@
             "riskInt": 1,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "BSD2c",
+                "BSD-2c",
+                "BSD-2-Clause",
+                "BSD 2-clause",
+                "BSD 2-Clause",
+                "BSD 2 clause",
+                "BSD 2 Clause"
+            ],
             "patentInt": 0
         },
         "OpenChainPolicyTemplate": {

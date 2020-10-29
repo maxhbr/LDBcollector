@@ -316,6 +316,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "APSL-2.0",
                         "APSL-2.0"
                     ],
                     "__impliedId": "APSL-2.0"
@@ -324,7 +325,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "APSL-2.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

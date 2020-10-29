@@ -580,6 +580,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "EPL-2.0",
                         "EPL-2.0"
                     ],
                     "__impliedId": "EPL-2.0"
@@ -588,7 +589,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "EPL-2.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

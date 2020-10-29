@@ -170,6 +170,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "SCEA",
                         "SCEA"
                     ],
                     "__impliedId": "SCEA"
@@ -178,7 +179,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "SCEA"
+                ],
                 "patentInt": 0
             }
         },

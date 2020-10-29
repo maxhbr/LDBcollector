@@ -261,6 +261,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "OpenSSL",
                         "OpenSSL"
                     ],
                     "__impliedId": "OpenSSL"
@@ -269,7 +270,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "OpenSSL"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

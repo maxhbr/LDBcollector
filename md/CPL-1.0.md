@@ -5,9 +5,23 @@ Common Public License 1.0 (CPL-1.0)
 
 **Other Names:**
 
--   `scancode://cpl-1.0`
+-   `Common Public License v1.0 (CPL)`
+
+-   `Common Public License v1.0`
+
+-   `Common Public License Version 1.0 (CPL1.0)`
+
+-   `Common Public License Version 1.0`
+
+-   `Common Public License - v 1.0`
+
+-   `CPL 1.0 ...`
 
 -   `CPL 1.0`
+
+-   `CPL (Common Public License) v1`
+
+-   `scancode://cpl-1.0`
 
 -   `Common Public License, Version 1.0`
 
@@ -166,8 +180,15 @@ Raw Data
         "__impliedNames": [
             "CPL-1.0",
             "Common Public License 1.0",
-            "scancode://cpl-1.0",
+            "Common Public License v1.0 (CPL)",
+            "Common Public License v1.0",
+            "Common Public License Version 1.0 (CPL1.0)",
+            "Common Public License Version 1.0",
+            "Common Public License - v 1.0",
+            "CPL 1.0 ...",
             "CPL 1.0",
+            "CPL (Common Public License) v1",
+            "scancode://cpl-1.0",
             "Common Public License, Version 1.0",
             "CPL",
             "License :: OSI Approved :: Common Public License"
@@ -314,7 +335,16 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "CPL-1.0"
+                        "CPL-1.0",
+                        "Common Public License v1.0 (CPL)",
+                        "Common Public License v1.0",
+                        "Common Public License Version 1.0 (CPL1.0)",
+                        "Common Public License Version 1.0",
+                        "Common Public License - v 1.0",
+                        "CPL-1.0",
+                        "CPL 1.0 ...",
+                        "CPL 1.0",
+                        "CPL (Common Public License) v1"
                     ],
                     "__impliedId": "CPL-1.0"
                 },
@@ -322,7 +352,17 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Common Public License v1.0 (CPL)",
+                    "Common Public License v1.0",
+                    "Common Public License Version 1.0 (CPL1.0)",
+                    "Common Public License Version 1.0",
+                    "Common Public License - v 1.0",
+                    "CPL-1.0",
+                    "CPL 1.0 ...",
+                    "CPL 1.0",
+                    "CPL (Common Public License) v1"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

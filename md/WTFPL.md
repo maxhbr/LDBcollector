@@ -5,6 +5,8 @@ Do What The F\*ck You Want To Public License (WTFPL)
 
 **Other Names:**
 
+-   `SUSE-WTFPL-2.0`
+
 -   `scancode://wtfpl-2.0`
 
 -   `WTFPL 2.0`
@@ -99,6 +101,7 @@ Raw Data
         "__impliedNames": [
             "WTFPL",
             "Do What The F*ck You Want To Public License",
+            "SUSE-WTFPL-2.0",
             "scancode://wtfpl-2.0",
             "WTFPL 2.0",
             "wtfpl",
@@ -200,7 +203,9 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "WTFPL"
+                        "WTFPL",
+                        "WTFPL",
+                        "SUSE-WTFPL-2.0"
                     ],
                     "__impliedId": "WTFPL"
                 },
@@ -208,7 +213,10 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "WTFPL",
+                    "SUSE-WTFPL-2.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

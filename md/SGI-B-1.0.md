@@ -161,6 +161,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "SGI-B-1.0",
                         "SGI-B-1.0"
                     ],
                     "__impliedId": "SGI-B-1.0"
@@ -169,7 +170,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "SGI-B-1.0"
+                ],
                 "patentInt": 0
             }
         },

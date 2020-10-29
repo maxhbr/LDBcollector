@@ -11,8 +11,9 @@
 
 *Other Names:*
 
-* `+scancode://afl-2.1+`
+* `+Academic Free License 2.1+`
 * `+AFL 2.1+`
+* `+scancode://afl-2.1+`
 
 === Comments on (easy) usability
 
@@ -100,8 +101,9 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
     "__impliedNames": [
         "AFL-2.1",
         "Academic Free License v2.1",
-        "scancode://afl-2.1",
-        "AFL 2.1"
+        "Academic Free License 2.1",
+        "AFL 2.1",
+        "scancode://afl-2.1"
     ],
     "__impliedId": "AFL-2.1",
     "__impliedComments": [
@@ -209,7 +211,10 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
         "Cavil": {
             "implications": {
                 "__impliedNames": [
-                    "AFL-2.1"
+                    "AFL-2.1",
+                    "Academic Free License 2.1",
+                    "AFL-2.1",
+                    "AFL 2.1"
                 ],
                 "__impliedId": "AFL-2.1"
             },
@@ -217,7 +222,11 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
             "riskInt": 3,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "Academic Free License 2.1",
+                "AFL-2.1",
+                "AFL 2.1"
+            ],
             "patentInt": 0
         },
         "BlueOak License List": {

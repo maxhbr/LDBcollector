@@ -176,6 +176,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "JasPer-2.0",
                         "JasPer-2.0"
                     ],
                     "__impliedId": "JasPer-2.0"
@@ -184,7 +185,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "JasPer-2.0"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

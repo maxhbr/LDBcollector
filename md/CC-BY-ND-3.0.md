@@ -403,6 +403,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "CC-BY-ND-3.0",
                         "CC-BY-ND-3.0"
                     ],
                     "__impliedId": "CC-BY-ND-3.0"
@@ -411,7 +412,9 @@ Raw Data
                 "riskInt": 5,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "CC-BY-ND-3.0"
+                ],
                 "patentInt": 0
             },
             "Google OSS Policy": {

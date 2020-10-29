@@ -112,6 +112,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "HaskellReport",
+                        "HaskellReport"
+                    ],
+                    "__impliedId": "HaskellReport"
+                },
+                "shortname": "HaskellReport",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "HaskellReport"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

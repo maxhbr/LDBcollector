@@ -284,6 +284,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "AFL-3.0",
                         "AFL-3.0"
                     ],
                     "__impliedId": "AFL-3.0"
@@ -292,7 +293,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "AFL-3.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

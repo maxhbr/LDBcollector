@@ -126,6 +126,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "GL2PS",
                         "GL2PS"
                     ],
                     "__impliedId": "GL2PS"
@@ -134,7 +135,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "GL2PS"
+                ],
                 "patentInt": 0
             }
         },

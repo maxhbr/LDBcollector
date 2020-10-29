@@ -202,6 +202,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Unicode-DFS-2016",
                         "Unicode-DFS-2016"
                     ],
                     "__impliedId": "Unicode-DFS-2016"
@@ -210,7 +211,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Unicode-DFS-2016"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

@@ -5,6 +5,8 @@ MakeIndex License (MakeIndex)
 
 **Other Names:**
 
+-   `SUSE-MakeIndex`
+
 -   `scancode://makeindex`
 
 -   `MakeIndex Distribution Notice`
@@ -65,6 +67,7 @@ Raw Data
         "__impliedNames": [
             "MakeIndex",
             "MakeIndex License",
+            "SUSE-MakeIndex",
             "scancode://makeindex",
             "MakeIndex Distribution Notice"
         ],
@@ -151,6 +154,25 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "MakeIndex",
+                        "SUSE-MakeIndex",
+                        "MakeIndex"
+                    ],
+                    "__impliedId": "MakeIndex"
+                },
+                "shortname": "MakeIndex",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "SUSE-MakeIndex",
+                    "MakeIndex"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

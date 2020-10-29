@@ -152,6 +152,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "SWL",
+                        "SWL"
+                    ],
+                    "__impliedId": "SWL"
+                },
+                "shortname": "SWL",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "SWL"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/SWL.html",

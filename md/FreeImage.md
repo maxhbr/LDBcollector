@@ -251,6 +251,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "FreeImage",
                         "FreeImage"
                     ],
                     "__impliedId": "FreeImage"
@@ -259,7 +260,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "FreeImage"
+                ],
                 "patentInt": 0
             }
         },

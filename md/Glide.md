@@ -361,6 +361,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Glide",
                         "Glide"
                     ],
                     "__impliedId": "Glide"
@@ -369,7 +370,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Glide"
+                ],
                 "patentInt": 0
             }
         },

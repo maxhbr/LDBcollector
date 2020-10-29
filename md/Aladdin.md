@@ -193,6 +193,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Aladdin",
                         "Aladdin"
                     ],
                     "__impliedId": "Aladdin"
@@ -201,7 +202,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Aladdin"
+                ],
                 "patentInt": 0
             }
         },

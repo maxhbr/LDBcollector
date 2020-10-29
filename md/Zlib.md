@@ -5,9 +5,9 @@ zlib License (Zlib)
 
 **Other Names:**
 
--   `scancode://zlib`
-
 -   `zlib/libpng License`
+
+-   `scancode://zlib`
 
 -   `The zlib/libpng License (Zlib)`
 
@@ -136,10 +136,11 @@ Raw Data
         "__impliedNames": [
             "Zlib",
             "zlib License",
+            "zlib/libpng License",
+            "zlib",
+            "Zlib License",
             "scancode://zlib",
             "ZLIB License",
-            "zlib",
-            "zlib/libpng License",
             "The zlib/libpng License (Zlib)",
             "License :: OSI Approved :: zlib/libpng License",
             "zlib/libpng license",
@@ -341,6 +342,10 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Zlib",
+                        "zlib/libpng License",
+                        "zlib",
+                        "Zlib License",
                         "Zlib"
                     ],
                     "__impliedId": "Zlib"
@@ -349,7 +354,12 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "zlib/libpng License",
+                    "zlib",
+                    "Zlib License",
+                    "Zlib"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

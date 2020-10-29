@@ -116,6 +116,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "AML",
+                        "AML"
+                    ],
+                    "__impliedId": "AML"
+                },
+                "shortname": "AML",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "AML"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/AML.html",

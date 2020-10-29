@@ -133,6 +133,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Latex2e",
+                        "Latex2e"
+                    ],
+                    "__impliedId": "Latex2e"
+                },
+                "shortname": "Latex2e",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Latex2e"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

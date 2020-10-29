@@ -5,6 +5,8 @@ Creative Commons Attribution Share Alike 2.5 Generic (CC-BY-SA-2.5)
 
 **Other Names:**
 
+-   `CC by-sa V2.5`
+
 -   `scancode://cc-by-sa-2.5`
 
 Comments on (easy) usability
@@ -106,6 +108,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-SA-2.5",
             "Creative Commons Attribution Share Alike 2.5 Generic",
+            "CC by-sa V2.5",
             "scancode://cc-by-sa-2.5"
         ],
         "__impliedId": "CC-BY-SA-2.5",
@@ -196,7 +199,9 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "CC-BY-SA-2.5"
+                        "CC-BY-SA-2.5",
+                        "CC-BY-SA-2.5",
+                        "CC by-sa V2.5"
                     ],
                     "__impliedId": "CC-BY-SA-2.5"
                 },
@@ -204,7 +209,10 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "CC-BY-SA-2.5",
+                    "CC by-sa V2.5"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

@@ -239,6 +239,7 @@ purpose. It is provided "as is" without express or implied warranty.
         "Cavil": {
             "implications": {
                 "__impliedNames": [
+                    "NTP",
                     "NTP"
                 ],
                 "__impliedId": "NTP"
@@ -247,7 +248,9 @@ purpose. It is provided "as is" without express or implied warranty.
             "riskInt": 1,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "NTP"
+            ],
             "patentInt": 0
         },
         "OpenChainPolicyTemplate": {

@@ -354,6 +354,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "EUPL-1.2",
+                        "EUPL-1.2"
+                    ],
+                    "__impliedId": "EUPL-1.2"
+                },
+                "shortname": "EUPL-1.2",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "EUPL-1.2"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",

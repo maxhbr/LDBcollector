@@ -5,6 +5,8 @@ Open Software License 1.1 (OSL-1.1)
 
 **Other Names:**
 
+-   `SUSE-OSL-1.1`
+
 -   `scancode://osl-1.1`
 
 -   `OSL 1.1`
@@ -109,6 +111,7 @@ Raw Data
         "__impliedNames": [
             "OSL-1.1",
             "Open Software License 1.1",
+            "SUSE-OSL-1.1",
             "scancode://osl-1.1",
             "OSL 1.1"
         ],
@@ -207,6 +210,8 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "OSL-1.1",
+                        "SUSE-OSL-1.1",
                         "OSL-1.1"
                     ],
                     "__impliedId": "OSL-1.1"
@@ -215,7 +220,10 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "SUSE-OSL-1.1",
+                    "OSL-1.1"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

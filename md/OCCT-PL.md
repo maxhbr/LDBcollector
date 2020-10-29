@@ -217,6 +217,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "OCCT-PL",
                         "OCCT-PL"
                     ],
                     "__impliedId": "OCCT-PL"
@@ -225,7 +226,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "OCCT-PL"
+                ],
                 "patentInt": 0
             }
         },

@@ -367,6 +367,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "MS-RL",
                         "MS-RL"
                     ],
                     "__impliedId": "MS-RL"
@@ -375,7 +376,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "MS-RL"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

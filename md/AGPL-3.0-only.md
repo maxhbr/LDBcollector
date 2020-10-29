@@ -7,6 +7,10 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 -   `AGPL-3.0`
 
+-   `Affero GPL`
+
+-   `AGPLv3`
+
 -   `scancode://agpl-3.0`
 
 -   `AGPL 3.0`
@@ -463,6 +467,8 @@ Raw Data
             "AGPL-3.0-only",
             "GNU Affero General Public License v3.0 only",
             "AGPL-3.0",
+            "Affero GPL",
+            "AGPLv3",
             "scancode://agpl-3.0",
             "AGPL 3.0",
             "agpl-3.0",

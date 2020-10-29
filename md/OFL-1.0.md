@@ -227,6 +227,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "OFL-1.0",
                         "OFL-1.0"
                     ],
                     "__impliedId": "OFL-1.0"
@@ -235,7 +236,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "OFL-1.0"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

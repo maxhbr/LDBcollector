@@ -137,6 +137,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Wsuipa",
+                        "Wsuipa"
+                    ],
+                    "__impliedId": "Wsuipa"
+                },
+                "shortname": "Wsuipa",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Wsuipa"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Wsuipa.html",

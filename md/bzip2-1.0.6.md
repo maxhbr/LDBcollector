@@ -211,6 +211,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "bzip2-1.0.6",
                         "bzip2-1.0.6"
                     ],
                     "__impliedId": "bzip2-1.0.6"
@@ -219,7 +220,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "bzip2-1.0.6"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

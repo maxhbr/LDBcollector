@@ -334,6 +334,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Motosoto",
+                        "Motosoto"
+                    ],
+                    "__impliedId": "Motosoto"
+                },
+                "shortname": "Motosoto",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Motosoto"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",

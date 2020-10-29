@@ -540,6 +540,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Watcom-1.0",
+                        "Watcom-1.0"
+                    ],
+                    "__impliedId": "Watcom-1.0"
+                },
+                "shortname": "Watcom-1.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Watcom-1.0"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",

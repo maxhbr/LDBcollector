@@ -254,6 +254,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Frameworx-1.0",
+                        "Frameworx-1.0"
+                    ],
+                    "__impliedId": "Frameworx-1.0"
+                },
+                "shortname": "Frameworx-1.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Frameworx-1.0"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",

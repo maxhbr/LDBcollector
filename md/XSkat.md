@@ -147,6 +147,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "XSkat",
+                        "XSkat"
+                    ],
+                    "__impliedId": "XSkat"
+                },
+                "shortname": "XSkat",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "XSkat"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

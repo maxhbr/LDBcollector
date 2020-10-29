@@ -113,6 +113,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "FSFULLR",
                         "FSFULLR"
                     ],
                     "__impliedId": "FSFULLR"
@@ -121,7 +122,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "FSFULLR"
+                ],
                 "patentInt": 0
             }
         },

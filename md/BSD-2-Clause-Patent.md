@@ -5,6 +5,8 @@ BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
 
 **Other Names:**
 
+-   `https://opensource.org/licenses/BSDplusPatent`
+
 -   `scancode://bsd-plus-patent`
 
 -   `BSD-2-Clause Plus Patent`
@@ -113,6 +115,7 @@ Raw Data
         "__impliedNames": [
             "BSD-2-Clause-Patent",
             "BSD-2-Clause Plus Patent License",
+            "https://opensource.org/licenses/BSDplusPatent",
             "scancode://bsd-plus-patent",
             "BSD-2-Clause Plus Patent"
         ],
@@ -228,6 +231,8 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "BSD-2-Clause-Patent",
+                        "https://opensource.org/licenses/BSDplusPatent",
                         "BSD-2-Clause-Patent"
                     ],
                     "__impliedId": "BSD-2-Clause-Patent"
@@ -236,7 +241,10 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "https://opensource.org/licenses/BSDplusPatent",
+                    "BSD-2-Clause-Patent"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

@@ -295,6 +295,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "BSL-1.0",
                         "BSL-1.0"
                     ],
                     "__impliedId": "BSL-1.0"
@@ -303,7 +304,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "BSL-1.0"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

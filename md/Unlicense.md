@@ -266,6 +266,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Unlicense",
                         "Unlicense"
                     ],
                     "__impliedId": "Unlicense"
@@ -274,7 +275,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Unlicense"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

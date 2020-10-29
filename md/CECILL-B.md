@@ -394,6 +394,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "CECILL-B",
                         "CECILL-B"
                     ],
                     "__impliedId": "CECILL-B"
@@ -402,7 +403,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "CECILL-B"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

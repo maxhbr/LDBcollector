@@ -331,6 +331,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "LPPL-1.0",
                         "LPPL-1.0"
                     ],
                     "__impliedId": "LPPL-1.0"
@@ -339,7 +340,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "LPPL-1.0"
+                ],
                 "patentInt": 0
             }
         },

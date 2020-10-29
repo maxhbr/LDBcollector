@@ -5,6 +5,18 @@ Python License 2.0 (Python-2.0)
 
 **Other Names:**
 
+-   `Python Software Foundation License`
+
+-   `Python License ..`
+
+-   `Python Copyright`
+
+-   `Python ..`
+
+-   `Python`
+
+-   `PSF`
+
 -   `scancode://python`
 
 -   `Python License, Version 2.0`
@@ -261,6 +273,12 @@ Raw Data
         "__impliedNames": [
             "Python-2.0",
             "Python License 2.0",
+            "Python Software Foundation License",
+            "Python License ..",
+            "Python Copyright",
+            "Python ..",
+            "Python",
+            "PSF",
             "scancode://python",
             "Python License, Version 2.0",
             "License :: OSI Approved :: Python Software Foundation License",
@@ -404,7 +422,14 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "Python-2.0"
+                        "Python-2.0",
+                        "Python-2.0",
+                        "Python Software Foundation License",
+                        "Python License ..",
+                        "Python Copyright",
+                        "Python ..",
+                        "Python",
+                        "PSF"
                     ],
                     "__impliedId": "Python-2.0"
                 },
@@ -412,7 +437,15 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Python-2.0",
+                    "Python Software Foundation License",
+                    "Python License ..",
+                    "Python Copyright",
+                    "Python ..",
+                    "Python",
+                    "PSF"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

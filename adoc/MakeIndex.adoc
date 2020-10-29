@@ -11,6 +11,7 @@
 
 *Other Names:*
 
+* `+SUSE-MakeIndex+`
 * `+scancode://makeindex+`
 * `+MakeIndex Distribution Notice+`
 
@@ -67,6 +68,7 @@ serves any particular purpose.
     "__impliedNames": [
         "MakeIndex",
         "MakeIndex License",
+        "SUSE-MakeIndex",
         "scancode://makeindex",
         "MakeIndex Distribution Notice"
     ],
@@ -153,6 +155,25 @@ serves any particular purpose.
                     ]
                 ]
             }
+        },
+        "Cavil": {
+            "implications": {
+                "__impliedNames": [
+                    "MakeIndex",
+                    "SUSE-MakeIndex",
+                    "MakeIndex"
+                ],
+                "__impliedId": "MakeIndex"
+            },
+            "shortname": "MakeIndex",
+            "riskInt": 5,
+            "trademarkInt": 0,
+            "opinionInt": 0,
+            "otherNames": [
+                "SUSE-MakeIndex",
+                "MakeIndex"
+            ],
+            "patentInt": 0
         }
     },
     "__impliedCopyleft": [

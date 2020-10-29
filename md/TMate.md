@@ -149,6 +149,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "TMate",
+                        "TMate"
+                    ],
+                    "__impliedId": "TMate"
+                },
+                "shortname": "TMate",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "TMate"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

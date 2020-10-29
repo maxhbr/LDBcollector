@@ -333,6 +333,7 @@ conditions would be files that contain the text of copyright notices.
         "Cavil": {
             "implications": {
                 "__impliedNames": [
+                    "LPPL-1.0",
                     "LPPL-1.0"
                 ],
                 "__impliedId": "LPPL-1.0"
@@ -341,7 +342,9 @@ conditions would be files that contain the text of copyright notices.
             "riskInt": 4,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "LPPL-1.0"
+            ],
             "patentInt": 0
         }
     },

@@ -268,6 +268,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "SugarCRM-1.1.3",
+                        "SugarCRM-1.1.3"
+                    ],
+                    "__impliedId": "SugarCRM-1.1.3"
+                },
+                "shortname": "SugarCRM-1.1.3",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "SugarCRM-1.1.3"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

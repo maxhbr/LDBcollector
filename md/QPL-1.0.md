@@ -5,6 +5,10 @@ Q Public License 1.0 (QPL-1.0)
 
 **Other Names:**
 
+-   `QPL ..`
+
+-   `QPL`
+
 -   `scancode://qpl-1.0`
 
 -   `QPL 1.0`
@@ -127,6 +131,8 @@ Raw Data
         "__impliedNames": [
             "QPL-1.0",
             "Q Public License 1.0",
+            "QPL ..",
+            "QPL",
             "scancode://qpl-1.0",
             "QPL 1.0",
             "The Q Public License Version (QPL-1.0)",
@@ -293,7 +299,10 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "QPL-1.0"
+                        "QPL-1.0",
+                        "QPL-1.0",
+                        "QPL ..",
+                        "QPL"
                     ],
                     "__impliedId": "QPL-1.0"
                 },
@@ -301,7 +310,11 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "QPL-1.0",
+                    "QPL ..",
+                    "QPL"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

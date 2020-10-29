@@ -95,6 +95,23 @@
                 ]
             }
         },
+        "Cavil": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-CMU",
+                    "MIT-CMU"
+                ],
+                "__impliedId": "MIT-CMU"
+            },
+            "shortname": "MIT-CMU",
+            "riskInt": 5,
+            "trademarkInt": 0,
+            "opinionInt": 0,
+            "otherNames": [
+                "MIT-CMU"
+            ],
+            "patentInt": 0
+        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/MIT-CMU.html",

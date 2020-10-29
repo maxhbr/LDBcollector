@@ -101,6 +101,23 @@ Raw Data
                     "__hasPatentHint": true
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "bzip2-1.0.5",
+                        "bzip2-1.0.5"
+                    ],
+                    "__impliedId": "bzip2-1.0.5"
+                },
+                "shortname": "bzip2-1.0.5",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "bzip2-1.0.5"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/bzip2-1.0.5.html",

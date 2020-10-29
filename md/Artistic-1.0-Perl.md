@@ -332,6 +332,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Artistic-1.0-Perl",
                         "Artistic-1.0-Perl"
                     ],
                     "__impliedId": "Artistic-1.0-Perl"
@@ -340,7 +341,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Artistic-1.0-Perl"
+                ],
                 "patentInt": 0
             },
             "Debian Free Software Guidelines": {

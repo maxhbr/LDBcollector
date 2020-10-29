@@ -128,6 +128,23 @@
                   ]
               }
           },
+          "Cavil": {
+              "implications": {
+                  "__impliedNames": [
+                      "CNRI-Jython",
+                      "CNRI-Jython"
+                  ],
+                  "__impliedId": "CNRI-Jython"
+              },
+              "shortname": "CNRI-Jython",
+              "riskInt": 5,
+              "trademarkInt": 0,
+              "opinionInt": 0,
+              "otherNames": [
+                  "CNRI-Jython"
+              ],
+              "patentInt": 0
+          },
           "BlueOak License List": {
               "BlueOakRating": "Bronze",
               "url": "https://spdx.org/licenses/CNRI-Jython.html",

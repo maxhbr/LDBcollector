@@ -162,6 +162,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "MITNFA",
+                        "MITNFA"
+                    ],
+                    "__impliedId": "MITNFA"
+                },
+                "shortname": "MITNFA",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "MITNFA"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/MITNFA.html",

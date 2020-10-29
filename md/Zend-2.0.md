@@ -173,6 +173,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Zend-2.0",
                         "Zend-2.0"
                     ],
                     "__impliedId": "Zend-2.0"
@@ -181,7 +182,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Zend-2.0"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

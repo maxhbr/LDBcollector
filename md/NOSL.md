@@ -592,6 +592,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "NOSL",
+                        "NOSL"
+                    ],
+                    "__impliedId": "NOSL"
+                },
+                "shortname": "NOSL",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "NOSL"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

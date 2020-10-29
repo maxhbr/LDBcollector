@@ -131,6 +131,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "SMPPL",
+                        "SMPPL"
+                    ],
+                    "__impliedId": "SMPPL"
+                },
+                "shortname": "SMPPL",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "SMPPL"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

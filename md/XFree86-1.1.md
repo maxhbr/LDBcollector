@@ -186,6 +186,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "XFree86-1.1",
                         "XFree86-1.1"
                     ],
                     "__impliedId": "XFree86-1.1"
@@ -194,7 +195,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "XFree86-1.1"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

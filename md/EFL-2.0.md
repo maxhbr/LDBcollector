@@ -264,6 +264,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "EFL-2.0",
+                        "EFL-2.0"
+                    ],
+                    "__impliedId": "EFL-2.0"
+                },
+                "shortname": "EFL-2.0",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "EFL-2.0"
+                ],
+                "patentInt": 0
+            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",

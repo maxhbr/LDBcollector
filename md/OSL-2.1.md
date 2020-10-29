@@ -253,6 +253,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "OSL-2.1",
                         "OSL-2.1"
                     ],
                     "__impliedId": "OSL-2.1"
@@ -261,7 +262,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "OSL-2.1"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

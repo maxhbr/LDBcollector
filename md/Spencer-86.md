@@ -131,6 +131,23 @@ Raw Data
                     ]
                 }
             },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Spencer-86",
+                        "Spencer-86"
+                    ],
+                    "__impliedId": "Spencer-86"
+                },
+                "shortname": "Spencer-86",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Spencer-86"
+                ],
+                "patentInt": 0
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Spencer-86.html",

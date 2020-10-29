@@ -107,6 +107,23 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Cavil": {
+                "implications": {
+                    "__impliedNames": [
+                        "Glulxe",
+                        "Glulxe"
+                    ],
+                    "__impliedId": "Glulxe"
+                },
+                "shortname": "Glulxe",
+                "riskInt": 5,
+                "trademarkInt": 0,
+                "opinionInt": 0,
+                "otherNames": [
+                    "Glulxe"
+                ],
+                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

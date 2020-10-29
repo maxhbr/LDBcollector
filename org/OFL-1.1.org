@@ -9,6 +9,12 @@
 
 *Other Names:*
 
+- =SIL Open Font License=
+
+- =Open Font License=
+
+- =OFL=
+
 - =scancode://ofl-1.1=
 
 - =OFL 1.1=
@@ -183,6 +189,9 @@
       "__impliedNames": [
           "OFL-1.1",
           "SIL Open Font License 1.1",
+          "SIL Open Font License",
+          "Open Font License",
+          "OFL",
           "scancode://ofl-1.1",
           "OFL 1.1",
           "ofl-1.1",
@@ -341,7 +350,12 @@
           "Cavil": {
               "implications": {
                   "__impliedNames": [
-                      "OFL-1.1"
+                      "OFL-1.1",
+                      "SIL Open Font License 1.1",
+                      "SIL Open Font License",
+                      "Open Font License",
+                      "OFL-1.1",
+                      "OFL"
                   ],
                   "__impliedId": "OFL-1.1"
               },
@@ -349,7 +363,13 @@
               "riskInt": 3,
               "trademarkInt": 0,
               "opinionInt": 0,
-              "otherNames": [],
+              "otherNames": [
+                  "SIL Open Font License 1.1",
+                  "SIL Open Font License",
+                  "Open Font License",
+                  "OFL-1.1",
+                  "OFL"
+              ],
               "patentInt": 0
           },
           "OpenChainPolicyTemplate": {

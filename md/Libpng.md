@@ -251,6 +251,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Libpng",
                         "Libpng"
                     ],
                     "__impliedId": "Libpng"
@@ -259,7 +260,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Libpng"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

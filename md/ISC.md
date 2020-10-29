@@ -295,6 +295,8 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "ISC",
+                        "ISC License",
                         "ISC"
                     ],
                     "__impliedId": "ISC"
@@ -303,7 +305,10 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "ISC License",
+                    "ISC"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

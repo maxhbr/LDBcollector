@@ -231,6 +231,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "PostgreSQL",
                         "PostgreSQL"
                     ],
                     "__impliedId": "PostgreSQL"
@@ -239,7 +240,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "PostgreSQL"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

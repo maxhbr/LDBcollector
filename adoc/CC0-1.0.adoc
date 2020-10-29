@@ -338,6 +338,7 @@ express Statement of Purpose.
         "Cavil": {
             "implications": {
                 "__impliedNames": [
+                    "CC0-1.0",
                     "CC0-1.0"
                 ],
                 "__impliedId": "CC0-1.0"
@@ -346,7 +347,9 @@ express Statement of Purpose.
             "riskInt": 1,
             "trademarkInt": 0,
             "opinionInt": 0,
-            "otherNames": [],
+            "otherNames": [
+                "CC0-1.0"
+            ],
             "patentInt": 0
         },
         "BlueOak License List": {

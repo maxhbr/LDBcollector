@@ -137,6 +137,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "BSD-Source-Code",
                         "BSD-Source-Code"
                     ],
                     "__impliedId": "BSD-Source-Code"
@@ -145,7 +146,9 @@ Raw Data
                 "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "BSD-Source-Code"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

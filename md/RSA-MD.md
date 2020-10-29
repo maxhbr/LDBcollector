@@ -140,6 +140,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "RSA-MD",
                         "RSA-MD"
                     ],
                     "__impliedId": "RSA-MD"
@@ -148,7 +149,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "RSA-MD"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

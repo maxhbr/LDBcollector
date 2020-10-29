@@ -226,6 +226,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "Unicode-TOU",
                         "Unicode-TOU"
                     ],
                     "__impliedId": "Unicode-TOU"
@@ -234,7 +235,9 @@ Raw Data
                 "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Unicode-TOU"
+                ],
                 "patentInt": 0
             }
         },

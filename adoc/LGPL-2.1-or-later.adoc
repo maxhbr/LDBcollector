@@ -13,6 +13,14 @@
 *Other Names:*
 
 * `+LGPL-2.1++`
+* `+LGPLv2.1++`
+* `+LGPLv2++`
+* `+LGPL-2.0.1 or later+`
+* `+LGPL v2.1++`
+* `+LGPL v2.1 or later+`
+* `+LGPL v2++`
+* `+LGPL V2++`
+* `+GNU LGPL v2.1 or later+`
 * `+LGPl-2.1++`
 * `+scancode://lgpl-2.1-plus+`
 * `+LGPL 2.1 or later+`
@@ -212,6 +220,14 @@ You should have received a copy of the GNU Lesser General Public License along w
         "LGPL-2.1-or-later",
         "GNU Lesser General Public License v2.1 or later",
         "LGPL-2.1+",
+        "LGPLv2.1+",
+        "LGPLv2+",
+        "LGPL-2.0.1 or later",
+        "LGPL v2.1+",
+        "LGPL v2.1 or later",
+        "LGPL v2+",
+        "LGPL V2+",
+        "GNU LGPL v2.1 or later",
         "LGPl-2.1+",
         "scancode://lgpl-2.1-plus",
         "LGPL 2.1 or later",

@@ -178,6 +178,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "OLDAP-2.0",
                         "OLDAP-2.0"
                     ],
                     "__impliedId": "OLDAP-2.0"
@@ -186,7 +187,9 @@ Raw Data
                 "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "OLDAP-2.0"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

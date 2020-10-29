@@ -5,9 +5,21 @@ Eclipse Public License 1.0 (EPL-1.0)
 
 **Other Names:**
 
--   `scancode://epl-1.0`
+-   `Eclipse-1.0`
+
+-   `Eclipse Public License`
+
+-   `EPL-1`
+
+-   `EPL v1.0`
+
+-   `EPL 1.0 ...`
 
 -   `EPL 1.0`
+
+-   `EPL`
+
+-   `scancode://epl-1.0`
 
 -   `Eclipse Public License, Version 1.0`
 
@@ -227,8 +239,14 @@ Raw Data
         "__impliedNames": [
             "EPL-1.0",
             "Eclipse Public License 1.0",
-            "scancode://epl-1.0",
+            "Eclipse-1.0",
+            "Eclipse Public License",
+            "EPL-1",
+            "EPL v1.0",
+            "EPL 1.0 ...",
             "EPL 1.0",
+            "EPL",
+            "scancode://epl-1.0",
             "epl-1.0",
             "Eclipse Public License, Version 1.0"
         ],
@@ -404,7 +422,16 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
-                        "EPL-1.0"
+                        "EPL-1.0",
+                        "Eclipse-1.0",
+                        "Eclipse Public License 1.0",
+                        "Eclipse Public License",
+                        "EPL-1.0",
+                        "EPL-1",
+                        "EPL v1.0",
+                        "EPL 1.0 ...",
+                        "EPL 1.0",
+                        "EPL"
                     ],
                     "__impliedId": "EPL-1.0"
                 },
@@ -412,7 +439,17 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "Eclipse-1.0",
+                    "Eclipse Public License 1.0",
+                    "Eclipse Public License",
+                    "EPL-1.0",
+                    "EPL-1",
+                    "EPL v1.0",
+                    "EPL 1.0 ...",
+                    "EPL 1.0",
+                    "EPL"
+                ],
                 "patentInt": 0
             },
             "OpenChainPolicyTemplate": {

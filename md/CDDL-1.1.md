@@ -247,6 +247,7 @@ Raw Data
             "Cavil": {
                 "implications": {
                     "__impliedNames": [
+                        "CDDL-1.1",
                         "CDDL-1.1"
                     ],
                     "__impliedId": "CDDL-1.1"
@@ -255,7 +256,9 @@ Raw Data
                 "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
-                "otherNames": [],
+                "otherNames": [
+                    "CDDL-1.1"
+                ],
                 "patentInt": 0
             },
             "BlueOak License List": {

@@ -199,6 +199,23 @@ La présente licence peut être distribuée sans conditions particulières. Tout
                 ]
             }
         },
+        "Cavil": {
+            "implications": {
+                "__impliedNames": [
+                    "LiLiQ-P-1.1",
+                    "LiLiQ-P-1.1"
+                ],
+                "__impliedId": "LiLiQ-P-1.1"
+            },
+            "shortname": "LiLiQ-P-1.1",
+            "riskInt": 5,
+            "trademarkInt": 0,
+            "opinionInt": 0,
+            "otherNames": [
+                "LiLiQ-P-1.1"
+            ],
+            "patentInt": 0
+        },
         "OpenSourceInitiative": {
             "text": [
                 {
