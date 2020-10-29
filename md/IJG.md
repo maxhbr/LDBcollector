@@ -249,7 +249,7 @@ Raw Data
                     "__impliedId": "IJG"
                 },
                 "shortname": "IJG",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

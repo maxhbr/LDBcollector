@@ -65,7 +65,7 @@ Raw Data
                     "__impliedId": "PSF-2.0"
                 },
                 "shortname": "PSF-2.0",
-                "riskInt": 5,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

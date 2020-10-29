@@ -277,7 +277,7 @@ Raw Data
                     "__impliedId": "SNIA"
                 },
                 "shortname": "SNIA",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

@@ -292,7 +292,7 @@ Raw Data
                     "__impliedId": "BSD-2-Clause"
                 },
                 "shortname": "BSD-2-Clause",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

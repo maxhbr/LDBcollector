@@ -718,7 +718,7 @@ Raw Data
                     "__impliedId": "LGPL-3.0"
                 },
                 "shortname": "LGPL-3.0",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

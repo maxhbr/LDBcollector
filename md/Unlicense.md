@@ -271,7 +271,7 @@ Raw Data
                     "__impliedId": "Unlicense"
                 },
                 "shortname": "Unlicense",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

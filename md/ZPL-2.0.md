@@ -263,7 +263,7 @@ Raw Data
                     "__impliedId": "ZPL-2.0"
                 },
                 "shortname": "ZPL-2.0",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

@@ -217,7 +217,7 @@ Raw Data
                     "__impliedId": "AFL-2.1"
                 },
                 "shortname": "AFL-2.1",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

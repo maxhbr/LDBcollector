@@ -360,7 +360,7 @@ Raw Data
                     "__impliedId": "BSD-3-Clause"
                 },
                 "shortname": "BSD-3-Clause",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

@@ -334,7 +334,7 @@ Raw Data
                     "__impliedId": "Copyleft-Next-0.3.0"
                 },
                 "shortname": "Copyleft-Next-0.3.0",
-                "riskInt": 5,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

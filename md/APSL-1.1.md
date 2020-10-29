@@ -564,7 +564,7 @@ Raw Data
                     "__impliedId": "APSL-1.1"
                 },
                 "shortname": "APSL-1.1",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

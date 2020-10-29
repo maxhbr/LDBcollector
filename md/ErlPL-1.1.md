@@ -418,7 +418,7 @@ Raw Data
                     "__impliedId": "ErlPL-1.1"
                 },
                 "shortname": "ErlPL-1.1",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

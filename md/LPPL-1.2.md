@@ -435,7 +435,7 @@ Raw Data
                     "__impliedId": "LPPL-1.2"
                 },
                 "shortname": "LPPL-1.2",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

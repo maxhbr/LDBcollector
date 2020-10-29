@@ -290,7 +290,7 @@ Raw Data
                     "__impliedId": "BSD protection license"
                 },
                 "shortname": "BSD protection license",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

@@ -294,7 +294,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
                 "__impliedId": "NCSA"
             },
             "shortname": "NCSA",
-            "riskInt": 5,
+            "riskInt": 1,
             "trademarkInt": 0,
             "opinionInt": 0,
             "otherNames": [],

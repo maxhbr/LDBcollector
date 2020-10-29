@@ -172,7 +172,7 @@ Raw Data
                     "__impliedId": "SGI-B-2.0"
                 },
                 "shortname": "SGI-B-2.0",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

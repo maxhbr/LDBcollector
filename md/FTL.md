@@ -364,7 +364,7 @@ Raw Data
                     "__impliedId": "FTL"
                 },
                 "shortname": "FTL",
-                "riskInt": 5,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

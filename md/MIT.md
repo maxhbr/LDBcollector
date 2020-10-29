@@ -296,7 +296,7 @@ Raw Data
                     "__impliedId": "MIT"
                 },
                 "shortname": "MIT",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

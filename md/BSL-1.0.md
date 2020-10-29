@@ -300,7 +300,7 @@ Raw Data
                     "__impliedId": "BSL-1.0"
                 },
                 "shortname": "BSL-1.0",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

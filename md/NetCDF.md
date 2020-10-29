@@ -145,7 +145,7 @@ Raw Data
                     "__impliedId": "NetCDF"
                 },
                 "shortname": "NetCDF",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

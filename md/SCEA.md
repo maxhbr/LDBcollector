@@ -175,7 +175,7 @@ Raw Data
                     "__impliedId": "SCEA"
                 },
                 "shortname": "SCEA",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

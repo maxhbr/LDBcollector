@@ -152,7 +152,7 @@ Raw Data
                     "__impliedId": "MIT-advertising"
                 },
                 "shortname": "MIT-advertising",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

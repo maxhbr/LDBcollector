@@ -195,7 +195,7 @@ Raw Data
                     "__impliedId": "FSFAP"
                 },
                 "shortname": "FSFAP",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

@@ -236,7 +236,7 @@ Raw Data
                     "__impliedId": "PostgreSQL"
                 },
                 "shortname": "PostgreSQL",
-                "riskInt": 5,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

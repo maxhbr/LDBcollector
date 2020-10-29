@@ -178,7 +178,7 @@ Raw Data
                     "__impliedId": "OLDAP-2.8"
                 },
                 "shortname": "OLDAP-2.8",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

@@ -298,7 +298,7 @@ Raw Data
                     "__impliedId": "QPL-1.0"
                 },
                 "shortname": "QPL-1.0",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

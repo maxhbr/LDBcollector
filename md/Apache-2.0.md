@@ -517,7 +517,7 @@ Raw Data
                     "__impliedId": "Apache-2.0"
                 },
                 "shortname": "Apache-2.0",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

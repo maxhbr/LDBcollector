@@ -205,7 +205,7 @@ Raw Data
                     "__impliedId": "ICU"
                 },
                 "shortname": "ICU",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

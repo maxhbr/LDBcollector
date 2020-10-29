@@ -550,7 +550,7 @@ Raw Data
                     "__impliedId": "GFDL-1.2-only"
                 },
                 "shortname": "GFDL-1.2-only",
-                "riskInt": 5,
+                "riskInt": 0,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

@@ -153,7 +153,7 @@ Raw Data
                     "__impliedId": "NLPL"
                 },
                 "shortname": "NLPL",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

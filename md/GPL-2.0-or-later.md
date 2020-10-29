@@ -342,7 +342,7 @@ Raw Data
                     "__impliedId": "GPL-2.0-or-later"
                 },
                 "shortname": "GPL-2.0-or-later",
-                "riskInt": 5,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

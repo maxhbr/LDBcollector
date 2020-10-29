@@ -201,7 +201,7 @@ Raw Data
                     "__impliedId": "CC-BY-NC-SA-2.5"
                 },
                 "shortname": "CC-BY-NC-SA-2.5",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

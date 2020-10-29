@@ -319,7 +319,7 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
                 "__impliedId": "Interbase-1.0"
             },
             "shortname": "Interbase-1.0",
-            "riskInt": 5,
+            "riskInt": 1,
             "trademarkInt": 0,
             "opinionInt": 0,
             "otherNames": [],

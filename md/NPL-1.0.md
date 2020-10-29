@@ -269,7 +269,7 @@ Raw Data
                     "__impliedId": "NPL-1.0"
                 },
                 "shortname": "NPL-1.0",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

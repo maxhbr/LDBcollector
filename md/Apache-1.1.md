@@ -300,7 +300,7 @@ Raw Data
                     "__impliedId": "Apache-1.1"
                 },
                 "shortname": "Apache-1.1",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

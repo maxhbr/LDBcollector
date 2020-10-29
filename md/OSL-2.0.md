@@ -222,7 +222,7 @@ Raw Data
                     "__impliedId": "OSL-2.0"
                 },
                 "shortname": "OSL-2.0",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

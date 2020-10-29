@@ -336,7 +336,7 @@ Raw Data
                     "__impliedId": "LPPL-1.0"
                 },
                 "shortname": "LPPL-1.0",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

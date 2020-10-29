@@ -233,7 +233,7 @@ Raw Data
                     "__impliedId": "BSD-2-Clause-Patent"
                 },
                 "shortname": "BSD-2-Clause-Patent",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

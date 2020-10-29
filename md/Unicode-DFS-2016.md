@@ -207,7 +207,7 @@ Raw Data
                     "__impliedId": "Unicode-DFS-2016"
                 },
                 "shortname": "Unicode-DFS-2016",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

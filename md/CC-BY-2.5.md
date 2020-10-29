@@ -180,7 +180,7 @@ Raw Data
                     "__impliedId": "CC-BY-2.5"
                 },
                 "shortname": "CC-BY-2.5",
-                "riskInt": 5,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

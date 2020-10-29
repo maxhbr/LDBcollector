@@ -266,7 +266,7 @@ Raw Data
                     "__impliedId": "OpenSSL"
                 },
                 "shortname": "OpenSSL",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

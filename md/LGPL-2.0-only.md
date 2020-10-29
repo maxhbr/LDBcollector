@@ -681,7 +681,7 @@ Raw Data
                     "__impliedId": "LGPL-2.0-only"
                 },
                 "shortname": "LGPL-2.0-only",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

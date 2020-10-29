@@ -235,7 +235,7 @@ Raw Data
                     "__impliedId": "PHP-3.01"
                 },
                 "shortname": "PHP-3.01",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

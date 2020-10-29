@@ -253,7 +253,7 @@ Raw Data
                     "__impliedId": "NTP"
                 },
                 "shortname": "NTP",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

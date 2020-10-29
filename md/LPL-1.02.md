@@ -282,7 +282,7 @@ Raw Data
                     "__impliedId": "LPL-1.02"
                 },
                 "shortname": "LPL-1.02",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

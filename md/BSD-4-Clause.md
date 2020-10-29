@@ -298,7 +298,7 @@ Raw Data
                     "__impliedId": "BSD-4-Clause"
                 },
                 "shortname": "BSD-4-Clause",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

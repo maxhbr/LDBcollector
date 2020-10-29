@@ -149,7 +149,7 @@ Raw Data
                     "__impliedId": "JSON"
                 },
                 "shortname": "JSON",
-                "riskInt": 5,
+                "riskInt": 3,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

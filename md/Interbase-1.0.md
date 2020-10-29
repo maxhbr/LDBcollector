@@ -318,7 +318,7 @@ Raw Data
                     "__impliedId": "Interbase-1.0"
                 },
                 "shortname": "Interbase-1.0",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],

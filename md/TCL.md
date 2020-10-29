@@ -174,7 +174,7 @@ Raw Data
                     "__impliedId": "TCL"
                 },
                 "shortname": "TCL",
-                "riskInt": 5,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [],
