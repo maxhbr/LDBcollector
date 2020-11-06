@@ -246,7 +246,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 "https://opensource.org/licenses/BSDplusPatent",
                 "BSD-2-Clause-Patent"
             ],
-            "patentInt": 0
+            "patentInt": 1
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",

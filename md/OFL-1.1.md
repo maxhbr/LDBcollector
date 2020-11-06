@@ -349,7 +349,7 @@ Raw Data
                     "__impliedId": "OFL-1.1"
                 },
                 "shortname": "OFL-1.1",
-                "riskInt": 3,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [

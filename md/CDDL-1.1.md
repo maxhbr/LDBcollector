@@ -253,7 +253,7 @@ Raw Data
                     "__impliedId": "CDDL-1.1"
                 },
                 "shortname": "CDDL-1.1",
-                "riskInt": 4,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [

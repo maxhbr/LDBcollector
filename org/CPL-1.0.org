@@ -351,8 +351,8 @@
                   "__impliedId": "CPL-1.0"
               },
               "shortname": "CPL-1.0",
-              "riskInt": 4,
-              "trademarkInt": 0,
+              "riskInt": 3,
+              "trademarkInt": 1,
               "opinionInt": 0,
               "otherNames": [
                   "Common Public License v1.0 (CPL)",

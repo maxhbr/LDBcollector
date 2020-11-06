@@ -307,7 +307,7 @@ Raw Data
                     "__impliedId": "IPL-1.0"
                 },
                 "shortname": "IPL-1.0",
-                "riskInt": 4,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [

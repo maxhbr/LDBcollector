@@ -225,7 +225,7 @@ Raw Data
                 "shortname": "AFL-2.1",
                 "riskInt": 3,
                 "trademarkInt": 0,
-                "opinionInt": 0,
+                "opinionInt": 1,
                 "otherNames": [
                     "Academic Free License 2.1",
                     "AFL-2.1",

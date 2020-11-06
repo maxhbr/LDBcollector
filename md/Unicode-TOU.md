@@ -232,13 +232,13 @@ Raw Data
                     "__impliedId": "Unicode-TOU"
                 },
                 "shortname": "Unicode-TOU",
-                "riskInt": 2,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [
                     "Unicode-TOU"
                 ],
-                "patentInt": 0
+                "patentInt": 1
             }
         },
         "__isOsiApproved": false,

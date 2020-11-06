@@ -327,7 +327,7 @@ Raw Data
                 "shortname": "Artistic-2.0",
                 "riskInt": 2,
                 "trademarkInt": 0,
-                "opinionInt": 0,
+                "opinionInt": 1,
                 "otherNames": [
                     "Artistic-2.0",
                     "Artistic 2.0"

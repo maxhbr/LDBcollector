@@ -276,7 +276,7 @@ Raw Data
                     "W3C Software License",
                     "W3C"
                 ],
-                "patentInt": 0
+                "patentInt": 1
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

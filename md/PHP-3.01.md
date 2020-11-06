@@ -250,7 +250,7 @@ Raw Data
                 "shortname": "PHP-3.01",
                 "riskInt": 3,
                 "trademarkInt": 0,
-                "opinionInt": 0,
+                "opinionInt": 1,
                 "otherNames": [
                     "The PHP License, version 3.01",
                     "PHP-3.01",

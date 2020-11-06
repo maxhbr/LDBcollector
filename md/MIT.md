@@ -318,8 +318,8 @@ Raw Data
                 },
                 "shortname": "MIT",
                 "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
+                "trademarkInt": 1,
+                "opinionInt": 1,
                 "otherNames": [
                     "MIT-Licence",
                     "MIT license",
@@ -330,7 +330,7 @@ Raw Data
                     "Expat License",
                     "Expat"
                 ],
-                "patentInt": 0
+                "patentInt": 1
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

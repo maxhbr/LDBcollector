@@ -307,8 +307,8 @@ Raw Data
                 },
                 "shortname": "Apache-1.1",
                 "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
+                "trademarkInt": 1,
+                "opinionInt": 1,
                 "otherNames": [
                     "Apache-1.1",
                     "Apache 1.1 (Indiana University)",

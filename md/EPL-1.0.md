@@ -436,9 +436,9 @@ Raw Data
                     "__impliedId": "EPL-1.0"
                 },
                 "shortname": "EPL-1.0",
-                "riskInt": 4,
+                "riskInt": 3,
                 "trademarkInt": 0,
-                "opinionInt": 0,
+                "opinionInt": 1,
                 "otherNames": [
                     "Eclipse-1.0",
                     "Eclipse Public License 1.0",

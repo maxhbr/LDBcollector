@@ -408,9 +408,9 @@ Raw Data
                 "shortname": "LGPL-2.1+",
                 "riskInt": 1,
                 "trademarkInt": 0,
-                "opinionInt": 0,
+                "opinionInt": 1,
                 "otherNames": [],
-                "patentInt": 0
+                "patentInt": 1
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "The GNU Lesser General Public License (LGPL)",

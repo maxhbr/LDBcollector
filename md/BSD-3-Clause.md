@@ -395,9 +395,9 @@ Raw Data
                     "__impliedId": "BSD-3-Clause"
                 },
                 "shortname": "BSD-3-Clause",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
+                "riskInt": 0,
+                "trademarkInt": 1,
+                "opinionInt": 1,
                 "otherNames": [
                     "New BSD License",
                     "BSD3c(or similar)",
@@ -411,7 +411,7 @@ Raw Data
                     "BSD 3-Clause",
                     "BSD (3-Clause)"
                 ],
-                "patentInt": 0
+                "patentInt": 1
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

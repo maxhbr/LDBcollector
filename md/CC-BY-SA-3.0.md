@@ -517,7 +517,7 @@ Raw Data
                     "__impliedId": "CC-BY-SA-3.0"
                 },
                 "shortname": "CC-BY-SA-3.0",
-                "riskInt": 3,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [

@@ -387,7 +387,7 @@ Raw Data
                     "__impliedId": "CECILL-C"
                 },
                 "shortname": "CECILL-C",
-                "riskInt": 2,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [

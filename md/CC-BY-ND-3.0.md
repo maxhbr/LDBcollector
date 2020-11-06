@@ -409,7 +409,7 @@ Raw Data
                     "__impliedId": "CC-BY-ND-3.0"
                 },
                 "shortname": "CC-BY-ND-3.0",
-                "riskInt": 5,
+                "riskInt": 4,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [

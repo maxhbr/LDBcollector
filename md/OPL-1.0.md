@@ -476,7 +476,7 @@ Raw Data
                     "__impliedId": "OPL-1.0"
                 },
                 "shortname": "OPL-1.0",
-                "riskInt": 3,
+                "riskInt": 2,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [

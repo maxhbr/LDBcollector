@@ -303,7 +303,7 @@ Raw Data
                 "shortname": "BSL-1.0",
                 "riskInt": 1,
                 "trademarkInt": 0,
-                "opinionInt": 0,
+                "opinionInt": 1,
                 "otherNames": [
                     "BSL-1.0"
                 ],

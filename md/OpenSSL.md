@@ -267,13 +267,13 @@ Raw Data
                     "__impliedId": "OpenSSL"
                 },
                 "shortname": "OpenSSL",
-                "riskInt": 3,
+                "riskInt": 1,
                 "trademarkInt": 0,
                 "opinionInt": 0,
                 "otherNames": [
                     "OpenSSL"
                 ],
-                "patentInt": 0
+                "patentInt": 1
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

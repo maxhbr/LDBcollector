@@ -245,7 +245,7 @@ Raw Data
                     "https://opensource.org/licenses/BSDplusPatent",
                     "BSD-2-Clause-Patent"
                 ],
-                "patentInt": 0
+                "patentInt": 1
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

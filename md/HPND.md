@@ -234,9 +234,9 @@ Raw Data
                     "__impliedId": "HPND"
                 },
                 "shortname": "HPND",
-                "riskInt": 1,
+                "riskInt": 0,
                 "trademarkInt": 0,
-                "opinionInt": 0,
+                "opinionInt": 1,
                 "otherNames": [
                     "HPND"
                 ],

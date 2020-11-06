@@ -702,7 +702,7 @@ Raw Data
                 },
                 "shortname": "AGPL-3.0",
                 "riskInt": 3,
-                "trademarkInt": 0,
+                "trademarkInt": 1,
                 "opinionInt": 0,
                 "otherNames": [],
                 "patentInt": 0

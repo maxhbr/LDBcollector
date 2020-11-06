@@ -692,8 +692,8 @@ Raw Data
                     "__impliedId": "MPL-2.0"
                 },
                 "shortname": "MPL-2.0",
-                "riskInt": 3,
-                "trademarkInt": 0,
+                "riskInt": 0,
+                "trademarkInt": 1,
                 "opinionInt": 0,
                 "otherNames": [
                     "MPL-2.0"
