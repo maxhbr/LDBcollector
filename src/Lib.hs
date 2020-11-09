@@ -25,6 +25,7 @@ import           Model.LicenseClusterer as X
 
 import           Collectors.SPDX as X
 import           Collectors.BlueOak as X
+import           Collectors.Cavil as X
 import           Collectors.DFSG as X
 import           Collectors.OpenChainPolicyTemplate as X
 import           Collectors.Scancode as X
@@ -75,6 +76,7 @@ readFacts :: Configuration -> IO Facts
 readFacts conf = do
   factsFromSPDX <- loadSPDXFacts
   factsFromBlueOak <- loadBlueOakFacts
+  factsFromCavil <- loadCavilFacts
   factsFromOCPT <- loadOCPTFacts
   factsFromScancode <- loadScancodeFacts
   factsFromOsadl <- loadOsadlFacts
@@ -91,6 +93,7 @@ readFacts conf = do
   factsFromOverride <- loadOverrideFacts (cOverrides conf)
   let facts = V.concat [ factsFromSPDX
                        , factsFromBlueOak
+                       , factsFromCavil
                        , factsFromOCPT
                        , factsFromScancode
                        , factsFromOsadl

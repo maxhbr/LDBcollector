@@ -3,10 +3,20 @@ module Collectors.Common
 
 import qualified Prelude as P
 import           MyPrelude
+
+import qualified Data.Vector as V
+
 import           Model.License
 
 logThatFactsAreLoadedFrom :: String -> IO ()
 logThatFactsAreLoadedFrom name = hPutStrLn stderr $ "## Load facts from: " ++ name
+
+logThatFactsWithNumberAreLoadedFrom :: String -> IO Facts -> IO Facts
+logThatFactsWithNumberAreLoadedFrom name getFacts = do
+  hPutStrLn stderr $ "## Load facts from: " ++ name
+  facts <- getFacts
+  hPutStrLn stderr $ "### " ++ name ++ " found " ++ show (V.length facts) ++ " facts"
+  return facts
 
 logThatOneHasFoundFact :: String -> LicenseFact -> IO ()
 logThatOneHasFoundFact name f = hPutStrLn stderr $ "### " ++ name ++ " has found a fact for: " ++ show (getImpliedNames f)

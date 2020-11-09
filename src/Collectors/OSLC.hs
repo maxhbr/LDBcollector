@@ -64,7 +64,7 @@ instance FromJSON OSLCData where
     <*> v .:? "notes"
     <*> v .:? "terms"
 oslcLFC :: LicenseFactClassifier
-oslcLFC = LFC "finos-osr/OSLC-handbook"
+oslcLFC = LFC "finos/OSLC-handbook"
 instance LicenseFactClassifiable OSLCData where
   getLicenseFactClassifier _ = oslcLFC
 instance LFRaw OSLCData where
@@ -79,7 +79,7 @@ loadOslcFactFromFile (oslcFile, content) = let
                      then [name oslcdFromFile]
                      else []
       in map (\i -> LicenseFact
-               (Just $ "https://github.com/finos-osr/OSLC-handbook/blob/master/src/" ++ oslcFile)
+               (Just $ "https://github.com/finos/OSLC-handbook/blob/master/src/" ++ oslcFile)
                oslcdFromFile{ nameFromFilename = dropExtension oslcFile, licenseId = i : idFromName })
              spdxIds
   in case decoded of

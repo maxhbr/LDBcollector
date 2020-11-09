@@ -17,11 +17,8 @@ import           Collectors.Common
 
 import qualified Data.Text as T
 import qualified Data.Vector as V
-import qualified Data.ByteString.Lazy as B
-import           Control.Applicative
 import           Data.Csv hiding ((.=))
 import qualified Data.Csv as C
-import           Data.Aeson as A
 import qualified Data.Map as M
 import           Text.RawString.QQ
 

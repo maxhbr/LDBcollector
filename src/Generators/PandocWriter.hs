@@ -173,6 +173,21 @@ writePandoc outDirectory page = let
       Left err -> print err
       Right adoc -> T.writeFile (outDirectory </> "adoc" </> shortname ++ ".adoc") adoc
 
-writePandocs :: FilePath -> [Page] -> IO ()
-writePandocs outDirectory = mapM_ (writePandoc outDirectory)
+writeHtmlIndex :: FilePath -> [Page] -> IO ()
+writeHtmlIndex index pages = let
+    renderFun :: Page -> Blocks
+    renderFun page = let
+        shortname = (ldShortname . pLicenseDetails) page
+        link = P.link (shortname ++ ".html") shortname (P.text shortname)
+      in P.para link
+    list :: Blocks
+    list = (P.bulletList . map renderFun) pages
+    pandoc = P.doc $ list
+  in case P.runPure (P.writeHtml5String P.def pandoc) of
+      Left err -> print err
+      Right html -> T.writeFile index html
 
+writePandocs :: FilePath -> [Page] -> IO ()
+writePandocs outDirectory pages = do
+  mapM_ (writePandoc outDirectory) pages
+  writeHtmlIndex (outDirectory </> "html" </> "index.html") pages
