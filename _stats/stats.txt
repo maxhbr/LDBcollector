@@ -15,7 +15,7 @@ Number of facts: 5610
     Scancode: 1578
     Wikipedia: 38
     choosealicense.com: 35
-    finos-osr/OSLC-handbook: 43
+    finos/OSLC-handbook: 43
     gnu.org: 134
     ifrOSS: 271
 Number of clusters: 3570
@@ -36,7 +36,7 @@ Number of facts: 2129
     Scancode: 380
     Wikipedia: 35
     choosealicense.com: 37
-    finos-osr/OSLC-handbook: 47
+    finos/OSLC-handbook: 47
     ifrOSS: 13
 #### based on facts from licenses
 Number of clusters: 429

@@ -219,7 +219,7 @@ Raw Data
                     ]
                 }
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -246,7 +246,7 @@ Raw Data
                         "termType": "condition"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/MIT-CMU.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml",
                 "name": "CMU License",
                 "nameFromFilename": "MIT-CMU",
                 "notes": null,

@@ -224,7 +224,7 @@ terms specified in this license.
                 ]
             }
         },
-        "finos-osr/OSLC-handbook": {
+        "finos/OSLC-handbook": {
             "terms": [
                 {
                     "termUseCases": [
@@ -261,7 +261,7 @@ terms specified in this license.
                     "termType": "other"
                 }
             ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/TCL.yaml",
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/TCL.yaml",
             "name": "TCL/TK License",
             "nameFromFilename": "TCL",
             "notes": null,

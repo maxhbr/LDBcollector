@@ -430,51 +430,6 @@
                 "description": "modification of the code by a licensee"
             }
         },
-        "finos-osr/OSLC-handbook": {
-            "terms": [
-                {
-                    "termUseCases": [
-                        "US",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Provide copy of license",
-                    "termComplianceNotes": "Retain copyright and license in any source distribution. However, you might consider the need to identify the presence of software under zlib for other reasons, especially if you have an agreement that wraps around this code/license.",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": [
-                        "MB",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "notice of modifications",
-                    "termComplianceNotes": "Modified verions must be \"plainly marked as such\" and not misrepresented as the original software",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": null,
-                    "termSeeAlso": null,
-                    "termDescription": "This license also includes a request, but not a requirement for acknowledgment of use in your product documentation.",
-                    "termComplianceNotes": null,
-                    "termType": "other"
-                }
-            ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/zlib.yaml",
-            "name": "zlib License",
-            "nameFromFilename": "zlib",
-            "notes": null,
-            "_implications": {
-                "__impliedNames": [
-                    "zlib",
-                    "zlib License"
-                ]
-            },
-            "licenseId": [
-                "zlib",
-                "zlib License"
-            ]
-        },
         "choosealicense.com": {
             "limitations": [
                 "liability",
@@ -546,6 +501,51 @@
                 }
             },
             "description": "A short permissive license, compatible with GPL. Requires altered source versions to be documented as such."
+        },
+        "finos/OSLC-handbook": {
+            "terms": [
+                {
+                    "termUseCases": [
+                        "US",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Provide copy of license",
+                    "termComplianceNotes": "Retain copyright and license in any source distribution. However, you might consider the need to identify the presence of software under zlib for other reasons, especially if you have an agreement that wraps around this code/license.",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": [
+                        "MB",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "notice of modifications",
+                    "termComplianceNotes": "Modified verions must be \"plainly marked as such\" and not misrepresented as the original software",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": null,
+                    "termSeeAlso": null,
+                    "termDescription": "This license also includes a request, but not a requirement for acknowledgment of use in your product documentation.",
+                    "termComplianceNotes": null,
+                    "termType": "other"
+                }
+            ],
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/zlib.yaml",
+            "name": "zlib License",
+            "nameFromFilename": "zlib",
+            "notes": null,
+            "_implications": {
+                "__impliedNames": [
+                    "zlib",
+                    "zlib License"
+                ]
+            },
+            "licenseId": [
+                "zlib",
+                "zlib License"
+            ]
         },
         "Google OSS Policy": {
             "rating": "NOTICE",

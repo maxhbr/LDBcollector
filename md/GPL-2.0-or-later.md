@@ -496,7 +496,7 @@ Raw Data
                 },
                 "CopyleftKind": "StrongCopyleft"
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -589,7 +589,7 @@ Raw Data
                         "termType": "license_versions"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/GPL-2.0.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml",
                 "name": "GNU General Public License 2.0",
                 "nameFromFilename": "GPL-2.0",
                 "notes": "GPL-2.0 provides the option to use either that version of the license only or to make it available under any later version of that license. This is denoted in the standard license header and by using GPL-2.0-only or GPL-2.0-or-later",

@@ -218,7 +218,7 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                 ]
             }
         },
-        "finos-osr/OSLC-handbook": {
+        "finos/OSLC-handbook": {
             "terms": [
                 {
                     "termUseCases": [
@@ -245,7 +245,7 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                     "termType": "condition"
                 }
             ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/MIT-CMU.yaml",
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml",
             "name": "CMU License",
             "nameFromFilename": "MIT-CMU",
             "notes": null,

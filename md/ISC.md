@@ -474,48 +474,6 @@ Raw Data
                     "description": "modification of the code by a licensee"
                 }
             },
-            "finos-osr/OSLC-handbook": {
-                "terms": [
-                    {
-                        "termUseCases": [
-                            "UB",
-                            "MB",
-                            "US",
-                            "MS"
-                        ],
-                        "termSeeAlso": null,
-                        "termDescription": "Provide copy of license",
-                        "termComplianceNotes": "This information must appear \"in all copies\"",
-                        "termType": "condition"
-                    },
-                    {
-                        "termUseCases": [
-                            "UB",
-                            "MB",
-                            "US",
-                            "MS"
-                        ],
-                        "termSeeAlso": null,
-                        "termDescription": "Provide copyright notice",
-                        "termComplianceNotes": "This information must appear \"in all copies\"",
-                        "termType": "condition"
-                    }
-                ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/ISC.yaml",
-                "name": "ISC License",
-                "nameFromFilename": "ISC",
-                "notes": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "ISC",
-                        "ISC License"
-                    ]
-                },
-                "licenseId": [
-                    "ISC",
-                    "ISC License"
-                ]
-            },
             "choosealicense.com": {
                 "limitations": [
                     "liability",
@@ -582,6 +540,48 @@ Raw Data
                     }
                 },
                 "description": "A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause</a> and <a href=\"/licenses/mit/\">MIT</a> licenses, removing some language that is no longer necessary."
+            },
+            "finos/OSLC-handbook": {
+                "terms": [
+                    {
+                        "termUseCases": [
+                            "UB",
+                            "MB",
+                            "US",
+                            "MS"
+                        ],
+                        "termSeeAlso": null,
+                        "termDescription": "Provide copy of license",
+                        "termComplianceNotes": "This information must appear \"in all copies\"",
+                        "termType": "condition"
+                    },
+                    {
+                        "termUseCases": [
+                            "UB",
+                            "MB",
+                            "US",
+                            "MS"
+                        ],
+                        "termSeeAlso": null,
+                        "termDescription": "Provide copyright notice",
+                        "termComplianceNotes": "This information must appear \"in all copies\"",
+                        "termType": "condition"
+                    }
+                ],
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/ISC.yaml",
+                "name": "ISC License",
+                "nameFromFilename": "ISC",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "ISC",
+                        "ISC License"
+                    ]
+                },
+                "licenseId": [
+                    "ISC",
+                    "ISC License"
+                ]
             },
             "Google OSS Policy": {
                 "rating": "NOTICE",

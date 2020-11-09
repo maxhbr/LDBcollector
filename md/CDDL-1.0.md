@@ -545,7 +545,7 @@ Raw Data
                     "description": "modification of the code by a licensee"
                 }
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -634,7 +634,7 @@ Raw Data
                         "termType": "license_versions"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/CDDL-1.0.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/CDDL-1.0.yaml",
                 "name": "Common Development and Distribution License 1.0",
                 "nameFromFilename": "CDDL-1.0",
                 "notes": "Versions 1.0 and 1.1 are essentially the same, except v1.1 adds a patent infringement clause and choice of law.",

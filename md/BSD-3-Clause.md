@@ -619,48 +619,6 @@ Raw Data
                     ]
                 }
             },
-            "finos-osr/OSLC-handbook": {
-                "terms": [
-                    {
-                        "termUseCases": [
-                            "UB",
-                            "MB",
-                            "US",
-                            "MS"
-                        ],
-                        "termSeeAlso": null,
-                        "termDescription": "Provide copy of license",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
-                        "termType": "condition"
-                    },
-                    {
-                        "termUseCases": [
-                            "UB",
-                            "MB",
-                            "US",
-                            "MS"
-                        ],
-                        "termSeeAlso": null,
-                        "termDescription": "Provide copyright notice",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
-                        "termType": "condition"
-                    }
-                ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml",
-                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-                "nameFromFilename": "BSD-3-Clause",
-                "notes": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "BSD-3-Clause",
-                        "BSD 3-Clause \"New\" or \"Revised\" License"
-                    ]
-                },
-                "licenseId": [
-                    "BSD-3-Clause",
-                    "BSD 3-Clause \"New\" or \"Revised\" License"
-                ]
-            },
             "choosealicense.com": {
                 "limitations": [
                     "liability",
@@ -727,6 +685,48 @@ Raw Data
                     }
                 },
                 "description": "A permissive license similar to the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the project or its contributors to promote derived products without written consent."
+            },
+            "finos/OSLC-handbook": {
+                "terms": [
+                    {
+                        "termUseCases": [
+                            "UB",
+                            "MB",
+                            "US",
+                            "MS"
+                        ],
+                        "termSeeAlso": null,
+                        "termDescription": "Provide copy of license",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termType": "condition"
+                    },
+                    {
+                        "termUseCases": [
+                            "UB",
+                            "MB",
+                            "US",
+                            "MS"
+                        ],
+                        "termSeeAlso": null,
+                        "termDescription": "Provide copyright notice",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termType": "condition"
+                    }
+                ],
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "nameFromFilename": "BSD-3-Clause",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause",
+                        "BSD 3-Clause \"New\" or \"Revised\" License"
+                    ]
+                },
+                "licenseId": [
+                    "BSD-3-Clause",
+                    "BSD 3-Clause \"New\" or \"Revised\" License"
+                ]
             },
             "Google OSS Policy": {
                 "rating": "NOTICE",

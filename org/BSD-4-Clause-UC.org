@@ -381,7 +381,7 @@
                   ]
               }
           },
-          "finos-osr/OSLC-handbook": {
+          "finos/OSLC-handbook": {
               "terms": [
                   {
                       "termUseCases": [
@@ -408,7 +408,7 @@
                       "termType": "condition"
                   }
               ],
-              "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/BSD-4-Clause-UC.yaml",
+              "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause-UC.yaml",
               "name": "BSD-4-Clause (University of California-Specific)",
               "nameFromFilename": "BSD-4-Clause-UC",
               "notes": "The advertising clause was rescinded by the University of California in 1999 for all material under BSD-4-Clause with University of California copyright notice. Thus, you do not need to comply with the advertising/acknowledgment requirement, which makes the license essentially BSD-3-Clause.",

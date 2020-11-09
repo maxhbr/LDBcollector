@@ -408,48 +408,6 @@
                   ]
               }
           },
-          "finos-osr/OSLC-handbook": {
-              "terms": [
-                  {
-                      "termUseCases": [
-                          "UB",
-                          "MB",
-                          "US",
-                          "MS"
-                      ],
-                      "termSeeAlso": null,
-                      "termDescription": "Provide copy of license",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
-                      "termType": "condition"
-                  },
-                  {
-                      "termUseCases": [
-                          "UB",
-                          "MB",
-                          "US",
-                          "MS"
-                      ],
-                      "termSeeAlso": null,
-                      "termDescription": "Provide copyright notice",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
-                      "termType": "condition"
-                  }
-              ],
-              "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/NCSA.yaml",
-              "name": "University of Illinois/NCSA Open Source License",
-              "nameFromFilename": "NCSA",
-              "notes": "NCSA is essentially an MIT grant with BSD-3-Clause conditions, thus compliance is the same as BSD-3-Clause.",
-              "_implications": {
-                  "__impliedNames": [
-                      "NCSA",
-                      "University of Illinois/NCSA Open Source License"
-                  ]
-              },
-              "licenseId": [
-                  "NCSA",
-                  "University of Illinois/NCSA Open Source License"
-              ]
-          },
           "choosealicense.com": {
               "limitations": [
                   "liability",
@@ -517,6 +475,48 @@
                   }
               },
               "description": "The University of Illinois/NCSA Open Source License, or UIUC license, is a permissive free software license, based on the <a href=\"/licenses/mit/\">MIT/X11 license</a>  and the <a href=\"/licenses/bsd-3-clause/\">BSD 3-clause License</a>. Its conditions include requiring the preservation of copyright and license notices both in source and in binary distributions and the prohibition of using the names of the authors or the project organization to promote or endorse derived products."
+          },
+          "finos/OSLC-handbook": {
+              "terms": [
+                  {
+                      "termUseCases": [
+                          "UB",
+                          "MB",
+                          "US",
+                          "MS"
+                      ],
+                      "termSeeAlso": null,
+                      "termDescription": "Provide copy of license",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termType": "condition"
+                  },
+                  {
+                      "termUseCases": [
+                          "UB",
+                          "MB",
+                          "US",
+                          "MS"
+                      ],
+                      "termSeeAlso": null,
+                      "termDescription": "Provide copyright notice",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termType": "condition"
+                  }
+              ],
+              "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/NCSA.yaml",
+              "name": "University of Illinois/NCSA Open Source License",
+              "nameFromFilename": "NCSA",
+              "notes": "NCSA is essentially an MIT grant with BSD-3-Clause conditions, thus compliance is the same as BSD-3-Clause.",
+              "_implications": {
+                  "__impliedNames": [
+                      "NCSA",
+                      "University of Illinois/NCSA Open Source License"
+                  ]
+              },
+              "licenseId": [
+                  "NCSA",
+                  "University of Illinois/NCSA Open Source License"
+              ]
           },
           "Google OSS Policy": {
               "rating": "NOTICE",

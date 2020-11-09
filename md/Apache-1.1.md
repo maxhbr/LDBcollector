@@ -442,7 +442,7 @@ Raw Data
                     ]
                 }
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -491,7 +491,7 @@ Raw Data
                         "termType": "condition"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/Apache-1.1.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml",
                 "name": "Apache Software License 1.1",
                 "nameFromFilename": "Apache-1.1",
                 "notes": "Apache-1.1 and Entessa are essentially the same license (as per SPDX License List Matching Guidelines).  Because the OSI approved them separately, they are listed separately (here and on the SPDX License List).",

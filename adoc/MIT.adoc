@@ -564,48 +564,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 "description": "modification of the code by a licensee"
             }
         },
-        "finos-osr/OSLC-handbook": {
-            "terms": [
-                {
-                    "termUseCases": [
-                        "UB",
-                        "MB",
-                        "US",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Provide copy of license",
-                    "termComplianceNotes": "This information \"shall be included in all copies or substantial portions of the Software\". Some people interpret MIT as not implicating these requirements for binary distribution (e.g., UB and MB), but this is not the prevailing view and best practice is to include it.",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": [
-                        "UB",
-                        "MB",
-                        "US",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Provide copyright notice",
-                    "termComplianceNotes": "This information \"shall be included in all copies or substantial portions of the Software\".Some people interpret MIT as not implicating these requirements for binary distribution (e.g., UB and MB), but this is not the prevailing view and best practice is to include it.",
-                    "termType": "condition"
-                }
-            ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/MIT.yaml",
-            "name": "MIT License",
-            "nameFromFilename": "MIT",
-            "notes": null,
-            "_implications": {
-                "__impliedNames": [
-                    "MIT",
-                    "MIT License"
-                ]
-            },
-            "licenseId": [
-                "MIT",
-                "MIT License"
-            ]
-        },
         "choosealicense.com": {
             "limitations": [
                 "liability",
@@ -681,6 +639,48 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                 }
             },
             "description": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
+        },
+        "finos/OSLC-handbook": {
+            "terms": [
+                {
+                    "termUseCases": [
+                        "UB",
+                        "MB",
+                        "US",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Provide copy of license",
+                    "termComplianceNotes": "This information \"shall be included in all copies or substantial portions of the Software\". Some people interpret MIT as not implicating these requirements for binary distribution (e.g., UB and MB), but this is not the prevailing view and best practice is to include it.",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": [
+                        "UB",
+                        "MB",
+                        "US",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Provide copyright notice",
+                    "termComplianceNotes": "This information \"shall be included in all copies or substantial portions of the Software\".Some people interpret MIT as not implicating these requirements for binary distribution (e.g., UB and MB), but this is not the prevailing view and best practice is to include it.",
+                    "termType": "condition"
+                }
+            ],
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/MIT.yaml",
+            "name": "MIT License",
+            "nameFromFilename": "MIT",
+            "notes": null,
+            "_implications": {
+                "__impliedNames": [
+                    "MIT",
+                    "MIT License"
+                ]
+            },
+            "licenseId": [
+                "MIT",
+                "MIT License"
+            ]
         },
         "Google OSS Policy": {
             "rating": "NOTICE",

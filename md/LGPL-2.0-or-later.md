@@ -282,7 +282,7 @@ Raw Data
                 },
                 "CopyleftKind": "WeakCopyleft"
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -378,7 +378,7 @@ Raw Data
                         "termType": "license_versions"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/LGPL-2.0.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.0.yaml",
                 "name": "GNU Library General Public License 2.0",
                 "nameFromFilename": "LGPL-2.0",
                 "notes": "LGPL-2.0 and LGPL-2.1 are the same substantive license except for the addition of section 6(b) in LGPL-2.1.",

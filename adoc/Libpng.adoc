@@ -303,7 +303,7 @@ October 31, 2008
                 ]
             }
         },
-        "finos-osr/OSLC-handbook": {
+        "finos/OSLC-handbook": {
             "terms": [
                 {
                     "termUseCases": [
@@ -333,7 +333,7 @@ October 31, 2008
                     "termType": "other"
                 }
             ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/libpng.yaml",
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml",
             "name": "libpng License",
             "nameFromFilename": "libpng",
             "notes": null,

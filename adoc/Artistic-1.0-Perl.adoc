@@ -404,7 +404,7 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
                 ]
             }
         },
-        "finos-osr/OSLC-handbook": {
+        "finos/OSLC-handbook": {
             "terms": [
                 {
                     "termUseCases": [
@@ -465,7 +465,7 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
                     "termType": "other"
                 }
             ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml",
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml",
             "name": "Artistic License 1.0 (Perl)",
             "nameFromFilename": "Artistic-1.0-Perl",
             "notes": "This is the Artistic License 1.0 found on the Perl site, which is different (particularly, clauses 5, 6, 7 and 8) than the Artistic License 1.0 w/clause 8 found on the OSI site. This license has specific use cases and conditions that are difficult to summarize; please see sections 5-8 and relevant definitions for more details.",

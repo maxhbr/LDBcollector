@@ -266,7 +266,7 @@ Raw Data
                     ]
                 }
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -303,7 +303,7 @@ Raw Data
                         "termType": "condition"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/Plexus.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml",
                 "name": "Plexus Classworlds License",
                 "nameFromFilename": "Plexus",
                 "notes": "This license also includes a clause that states, \"due credit should be given\" to the copyright holder, but given the non-obligatory nature of \"should\", this is not considered a requirement.",

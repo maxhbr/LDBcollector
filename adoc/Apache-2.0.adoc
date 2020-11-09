@@ -797,63 +797,6 @@ PATENT HINTS Yes
                 "description": "modification of the code by a licensee"
             }
         },
-        "finos-osr/OSLC-handbook": {
-            "terms": [
-                {
-                    "termUseCases": [
-                        "UB",
-                        "MB",
-                        "US",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Provide copy of license",
-                    "termComplianceNotes": "Does not specify format for providing copy of license",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": [
-                        "MB",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Notice of modifications",
-                    "termComplianceNotes": "Modified files must include \"prominent notices\" of the modifications",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": [
-                        "US",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Retain all notices",
-                    "termComplianceNotes": "Copyright notices and other notices do not have to be reproduced for binary distribution",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": null,
-                    "termSeeAlso": null,
-                    "termDescription": "Any patent claims accusing the work by a licensee results in termination of all patent licenses to the licensee.",
-                    "termComplianceNotes": null,
-                    "termType": "termination"
-                }
-            ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/Apache-2.0.yaml",
-            "name": "Apache Software License 2.0",
-            "nameFromFilename": "Apache-2.0",
-            "notes": null,
-            "_implications": {
-                "__impliedNames": [
-                    "Apache-2.0",
-                    "Apache Software License 2.0"
-                ]
-            },
-            "licenseId": [
-                "Apache-2.0",
-                "Apache Software License 2.0"
-            ]
-        },
         "choosealicense.com": {
             "limitations": [
                 "trademark-use",
@@ -944,6 +887,63 @@ PATENT HINTS Yes
                 }
             },
             "description": "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
+        },
+        "finos/OSLC-handbook": {
+            "terms": [
+                {
+                    "termUseCases": [
+                        "UB",
+                        "MB",
+                        "US",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Provide copy of license",
+                    "termComplianceNotes": "Does not specify format for providing copy of license",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": [
+                        "MB",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Notice of modifications",
+                    "termComplianceNotes": "Modified files must include \"prominent notices\" of the modifications",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": [
+                        "US",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Retain all notices",
+                    "termComplianceNotes": "Copyright notices and other notices do not have to be reproduced for binary distribution",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": null,
+                    "termSeeAlso": null,
+                    "termDescription": "Any patent claims accusing the work by a licensee results in termination of all patent licenses to the licensee.",
+                    "termComplianceNotes": null,
+                    "termType": "termination"
+                }
+            ],
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/Apache-2.0.yaml",
+            "name": "Apache Software License 2.0",
+            "nameFromFilename": "Apache-2.0",
+            "notes": null,
+            "_implications": {
+                "__impliedNames": [
+                    "Apache-2.0",
+                    "Apache Software License 2.0"
+                ]
+            },
+            "licenseId": [
+                "Apache-2.0",
+                "Apache Software License 2.0"
+            ]
         },
         "Google OSS Policy": {
             "rating": "NOTICE",

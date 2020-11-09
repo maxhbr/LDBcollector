@@ -335,7 +335,7 @@ Raw Data
                     "description": "modification of the code by a licensee"
                 }
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -405,7 +405,7 @@ Raw Data
                         "termType": "condition"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/OpenSSL.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/OpenSSL.yaml",
                 "name": "OpenSSL License",
                 "nameFromFilename": "OpenSSL",
                 "notes": "This license is actually a set of two licenses, which have similar text and requirements but different copyright holders and therefore different acknowledgment text. Some requirements to include acknowledgements may only apply if you are using that part of the project written by a specific copyright holder.",

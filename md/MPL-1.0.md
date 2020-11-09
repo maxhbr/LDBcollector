@@ -486,7 +486,7 @@ Raw Data
                     ]
                 }
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -581,7 +581,7 @@ Raw Data
                         "termType": "license_versions"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/MPL-1.0.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/MPL-1.0.yaml",
                 "name": "Mozilla Public License 1.0",
                 "nameFromFilename": "MPL-1.0",
                 "notes": null,

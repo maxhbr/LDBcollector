@@ -481,48 +481,6 @@
                   ]
               }
           },
-          "finos-osr/OSLC-handbook": {
-              "terms": [
-                  {
-                      "termUseCases": [
-                          "UB",
-                          "MB",
-                          "US",
-                          "MS"
-                      ],
-                      "termSeeAlso": null,
-                      "termDescription": "Provide copy of license",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
-                      "termType": "condition"
-                  },
-                  {
-                      "termUseCases": [
-                          "UB",
-                          "MB",
-                          "US",
-                          "MS"
-                      ],
-                      "termSeeAlso": null,
-                      "termDescription": "Provide copyright notice",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
-                      "termType": "condition"
-                  }
-              ],
-              "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/BSD-2-Clause.yaml",
-              "name": "BSD 2-Clause \"Simplified\" License",
-              "nameFromFilename": "BSD-2-Clause",
-              "notes": null,
-              "_implications": {
-                  "__impliedNames": [
-                      "BSD-2-Clause",
-                      "BSD 2-Clause \"Simplified\" License"
-                  ]
-              },
-              "licenseId": [
-                  "BSD-2-Clause",
-                  "BSD 2-Clause \"Simplified\" License"
-              ]
-          },
           "choosealicense.com": {
               "limitations": [
                   "liability",
@@ -589,6 +547,48 @@
                   }
               },
               "description": "A permissive license that comes in two variants, the <a href=\"/licenses/bsd-2-clause/\">BSD 2-Clause</a> and <a href=\"/licenses/bsd-3-clause/\">BSD 3-Clause</a>. Both have very minute differences to the MIT license."
+          },
+          "finos/OSLC-handbook": {
+              "terms": [
+                  {
+                      "termUseCases": [
+                          "UB",
+                          "MB",
+                          "US",
+                          "MS"
+                      ],
+                      "termSeeAlso": null,
+                      "termDescription": "Provide copy of license",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termType": "condition"
+                  },
+                  {
+                      "termUseCases": [
+                          "UB",
+                          "MB",
+                          "US",
+                          "MS"
+                      ],
+                      "termSeeAlso": null,
+                      "termDescription": "Provide copyright notice",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termType": "condition"
+                  }
+              ],
+              "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/BSD-2-Clause.yaml",
+              "name": "BSD 2-Clause \"Simplified\" License",
+              "nameFromFilename": "BSD-2-Clause",
+              "notes": null,
+              "_implications": {
+                  "__impliedNames": [
+                      "BSD-2-Clause",
+                      "BSD 2-Clause \"Simplified\" License"
+                  ]
+              },
+              "licenseId": [
+                  "BSD-2-Clause",
+                  "BSD 2-Clause \"Simplified\" License"
+              ]
           }
       },
       "__impliedJudgement": [

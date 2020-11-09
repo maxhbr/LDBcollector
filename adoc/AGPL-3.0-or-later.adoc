@@ -513,7 +513,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 "description": "modification of the code by a licensee"
             }
         },
-        "finos-osr/OSLC-handbook": {
+        "finos/OSLC-handbook": {
             "terms": [
                 {
                     "termUseCases": [
@@ -631,7 +631,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     "termType": "other"
                 }
             ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/AGPL-3.0.yaml",
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml",
             "name": "GNU Affero General Public License 3.0",
             "nameFromFilename": "AGPL-3.0",
             "notes": "AGPL-3.0 is the same license as GPL-3.0, but with an additional term in section 13 which imposes a requirement for a modified version accessed via remote computer network. AGPL-3.0 provides the option to use either that version of the license only or to make it available under any later version of that license. This is denoted in the standard license header and by using AGPL-3.0-only or AGPL-3.0-or-later.",

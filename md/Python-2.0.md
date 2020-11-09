@@ -577,7 +577,7 @@ Raw Data
                     "description": "modification of the code by a licensee"
                 }
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -621,7 +621,7 @@ Raw Data
                         "termType": "termination"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/Python-2.0.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/Python-2.0.yaml",
                 "name": "Python License 2.0",
                 "nameFromFilename": "Python-2.0",
                 "notes": "This is a license âstackâ comprised of various licenses that apply to Python as it has developed over the years.",

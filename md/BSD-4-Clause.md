@@ -435,7 +435,7 @@ Raw Data
                     ]
                 }
             },
-            "finos-osr/OSLC-handbook": {
+            "finos/OSLC-handbook": {
                 "terms": [
                     {
                         "termUseCases": [
@@ -469,7 +469,7 @@ Raw Data
                         "termType": "condition"
                     }
                 ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/BSD-4-Clause.yaml",
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause.yaml",
                 "name": "BSD 4-Clause \"Original\" or \"Old\" License",
                 "nameFromFilename": "BSD-4-Clause",
                 "notes": null,

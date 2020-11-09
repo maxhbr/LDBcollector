@@ -219,31 +219,6 @@ Raw Data
                     ]
                 }
             },
-            "finos-osr/OSLC-handbook": {
-                "terms": [
-                    {
-                        "termUseCases": null,
-                        "termSeeAlso": null,
-                        "termDescription": "This license places no conditions whatsoever on using, copyring, modifying or distributing the software for any purpose.",
-                        "termComplianceNotes": null,
-                        "termType": "other"
-                    }
-                ],
-                "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/0BSD.yaml",
-                "name": "BSD Zero Clause License",
-                "nameFromFilename": "0BSD",
-                "notes": "This is a blanket license with no conditions.",
-                "_implications": {
-                    "__impliedNames": [
-                        "0BSD",
-                        "BSD Zero Clause License"
-                    ]
-                },
-                "licenseId": [
-                    "0BSD",
-                    "BSD Zero Clause License"
-                ]
-            },
             "choosealicense.com": {
                 "limitations": [
                     "liability",
@@ -303,6 +278,31 @@ Raw Data
                     }
                 },
                 "description": "The BSD Zero Clause license goes further than the BSD 2-Clause license to allow you unlimited freedom with the software without requirements to include the copyright notice, license text, or disclaimer in either source or binary forms."
+            },
+            "finos/OSLC-handbook": {
+                "terms": [
+                    {
+                        "termUseCases": null,
+                        "termSeeAlso": null,
+                        "termDescription": "This license places no conditions whatsoever on using, copyring, modifying or distributing the software for any purpose.",
+                        "termComplianceNotes": null,
+                        "termType": "other"
+                    }
+                ],
+                "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/0BSD.yaml",
+                "name": "BSD Zero Clause License",
+                "nameFromFilename": "0BSD",
+                "notes": "This is a blanket license with no conditions.",
+                "_implications": {
+                    "__impliedNames": [
+                        "0BSD",
+                        "BSD Zero Clause License"
+                    ]
+                },
+                "licenseId": [
+                    "0BSD",
+                    "BSD Zero Clause License"
+                ]
             }
         },
         "__impliedJudgement": [

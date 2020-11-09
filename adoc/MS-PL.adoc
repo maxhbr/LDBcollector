@@ -578,73 +578,6 @@ non-infringement.
                 "description": "modification of the code by a licensee"
             }
         },
-        "finos-osr/OSLC-handbook": {
-            "terms": [
-                {
-                    "termUseCases": [
-                        "US",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Provide copy of license",
-                    "termComplianceNotes": "Include a complete copy of license with source code distributions",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": [
-                        "UB",
-                        "MB",
-                        "US",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Retain all notices",
-                    "termComplianceNotes": "Retain all notices present in software",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": [
-                        "US",
-                        "MS"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Source code under same license",
-                    "termComplianceNotes": "Distributions of \"any portion of the software in source code form\" must be under this license",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": [
-                        "UB",
-                        "MB"
-                    ],
-                    "termSeeAlso": null,
-                    "termDescription": "Comply with this license",
-                    "termComplianceNotes": "Object or compiled code distributions must be under a license that complies with this license",
-                    "termType": "condition"
-                },
-                {
-                    "termUseCases": null,
-                    "termSeeAlso": null,
-                    "termDescription": "Any patent claims by licensee against any contributor accusing the software result in termination of all patent licenses from that contributor",
-                    "termComplianceNotes": null,
-                    "termType": "termination"
-                }
-            ],
-            "_sourceURL": "https://github.com/finos-osr/OSLC-handbook/blob/master/src/Ms-PL.yaml",
-            "name": "Microsoft Public License",
-            "nameFromFilename": "Ms-PL",
-            "notes": null,
-            "_implications": {
-                "__impliedNames": [
-                    "Ms-PL",
-                    "Microsoft Public License"
-                ]
-            },
-            "licenseId": [
-                "Ms-PL",
-                "Microsoft Public License"
-            ]
-        },
         "choosealicense.com": {
             "limitations": [
                 "warranty",
@@ -716,6 +649,73 @@ non-infringement.
                 }
             },
             "description": "An open source license with a patent grant."
+        },
+        "finos/OSLC-handbook": {
+            "terms": [
+                {
+                    "termUseCases": [
+                        "US",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Provide copy of license",
+                    "termComplianceNotes": "Include a complete copy of license with source code distributions",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": [
+                        "UB",
+                        "MB",
+                        "US",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Retain all notices",
+                    "termComplianceNotes": "Retain all notices present in software",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": [
+                        "US",
+                        "MS"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Source code under same license",
+                    "termComplianceNotes": "Distributions of \"any portion of the software in source code form\" must be under this license",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": [
+                        "UB",
+                        "MB"
+                    ],
+                    "termSeeAlso": null,
+                    "termDescription": "Comply with this license",
+                    "termComplianceNotes": "Object or compiled code distributions must be under a license that complies with this license",
+                    "termType": "condition"
+                },
+                {
+                    "termUseCases": null,
+                    "termSeeAlso": null,
+                    "termDescription": "Any patent claims by licensee against any contributor accusing the software result in termination of all patent licenses from that contributor",
+                    "termComplianceNotes": null,
+                    "termType": "termination"
+                }
+            ],
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/Ms-PL.yaml",
+            "name": "Microsoft Public License",
+            "nameFromFilename": "Ms-PL",
+            "notes": null,
+            "_implications": {
+                "__impliedNames": [
+                    "Ms-PL",
+                    "Microsoft Public License"
+                ]
+            },
+            "licenseId": [
+                "Ms-PL",
+                "Microsoft Public License"
+            ]
         },
         "Google OSS Policy": {
             "rating": "NOTICE",
