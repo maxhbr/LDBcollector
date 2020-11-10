@@ -13,6 +13,14 @@ ___
 ___
 
 
+### AG Aschaffenburg, Urteil v. 23.07.2020, Az. 34 C 2436/19
+
+Negative Feststellungsklage bei Abmahnung wegen CC-BY-SA 3.0 DE, "Cityscape Berlin"
+
+Link: https://www.gesetze-bayern.de/Content/Document/Y-300-Z-BECKRS-B-2020-N-25945?AspxAutoDetectCookieSupport=1
+
+
+
 ### OLG Frankfurt, Urteil v. 22.10.2019, Az. 11 U 95/18
 
 Bestätigung Urteil des LG Frankfurt v. 16.08.2018, Az. 2-03 O 32/17
