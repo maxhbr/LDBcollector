@@ -182,7 +182,7 @@ instance ToJSON WikipediaFact where
       mkPrivateUseEntry = generateEntry "Private use" (wpfPrivateUse wf)
       mkSublicensingEntry = generateEntry "Sublicensing" (wpfSublicensing wf)
       mkTMGrantEntry = generateEntry "Trademark grant" (wpfTMGrant wf)
-    in object $ [ "Koordinaten" .= object [ "name" .= wpfLicenseName wf
+    in object $ [ "Coordinates" .= object [ "name" .= wpfLicenseName wf
                                           , "version" .= wpfLicenseVersion wf
                                           , "spdxId" .= getSPDXIdForWikipediaFact wf ]
                 , "Publication date" .= wpfPublicationDate wf

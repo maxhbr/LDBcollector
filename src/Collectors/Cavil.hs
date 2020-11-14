@@ -24,8 +24,6 @@ import           Collectors.CavilData
 
 import           Model.License
 
-import           Debug.Trace
-
 data CavilJSON =
   CavilJSON
   { license :: LicenseName

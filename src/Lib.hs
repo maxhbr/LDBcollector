@@ -76,7 +76,7 @@ readFacts :: Configuration -> IO Facts
 readFacts conf = do
   factsFromSPDX <- loadSPDXFacts
   factsFromBlueOak <- loadBlueOakFacts
-  factsFromCavil <- loadCavilFacts
+  -- factsFromCavil <- loadCavilFacts
   factsFromOCPT <- loadOCPTFacts
   factsFromScancode <- loadScancodeFacts
   factsFromOsadl <- loadOsadlFacts
@@ -93,7 +93,7 @@ readFacts conf = do
   factsFromOverride <- loadOverrideFacts (cOverrides conf)
   let facts = V.concat [ factsFromSPDX
                        , factsFromBlueOak
-                       , factsFromCavil
+                       -- , factsFromCavil
                        , factsFromOCPT
                        , factsFromScancode
                        , factsFromOsadl

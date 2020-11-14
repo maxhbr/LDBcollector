@@ -59,7 +59,7 @@ lctToGraph primaryNames shortname lct = let
 writeGraphizs :: FilePath -> [(LicenseName, LicenseClusterTree)] -> IO()
 writeGraphizs outBaseDirectory trees = let
     outDirectory = outBaseDirectory </> "dot"
-    primaryNames = map (\(ln,_) -> ln) trees
+    primaryNames = map P.fst trees
   in do
   isInstalled <- isGraphvizInstalled
   when isInstalled (do
