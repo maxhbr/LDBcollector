@@ -14,6 +14,7 @@ import           MyPrelude
 import qualified Data.Text as T
 import qualified Text.Pandoc as P
 import qualified Text.Pandoc.Builder as P
+import qualified Data.Hashable.Class.Hashable (Hashable)
 
 import           Model.LicenseProperties.Base
 
@@ -66,6 +67,7 @@ instance Ord LicenseFactClassifier where
 instance ToJSON LicenseFactClassifier where
   toJSON lfc = toJSON $ show lfc
 instance ToJSONKey LicenseFactClassifier
+instance Hashable LicenseFactClassifier
 
 urlify :: URL -> String -> Inlines
 urlify url text = P.link url text (P.text text)

@@ -11,6 +11,7 @@ import           System.Environment
 
 import Lib
 import Configuration (configuration)
+import Comparator
 
 main :: IO ()
 main = do
@@ -26,5 +27,7 @@ main = do
           writeDetails outputFolder pages
           writePandocs outputFolder pages
           writeGraphizs outputFolder trees
+
+          writeCopyleftTable outputFolder licenses
 
           return outputFolder)

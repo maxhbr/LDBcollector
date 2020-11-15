@@ -27,6 +27,7 @@ dependencies:
 - filepath
 - bytestring
 - unordered-containers
+- hashable
 - cassava
 - directory
 - opensource
