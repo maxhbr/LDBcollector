@@ -122,10 +122,12 @@ renderText (Just text) =
 
 renderRawData :: License -> Blocks
 renderRawData lic@(License facts) = let
-    lfcs = P.bulletList $ map (P.para . P.text . show . getLicenseFactClassifier) facts
+    lfcs = P.bulletList . V.toList $ V.map (P.para . toInline . getLicenseFactClassifier) facts
   in P.horizontalRule
      <> P.header 2 (P.text "Raw Data")
+     <> P.header 3 (P.text "Facts")
      <> lfcs
+     <> P.header 3 (P.text "Raw JSON")
      <> P.codeBlock (unpack (encodePretty lic))
 
 renderDot :: LicenseName -> Blocks

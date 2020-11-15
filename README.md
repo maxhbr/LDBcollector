@@ -14,20 +14,32 @@ The generated output is pushed to the branch [`generated`](https://github.com/ma
 
 ## Consumed Data (implemented)
 ### SPDX license List
-The data is placed in `/data/json/` and it contains the content of the folder `/json/` from https://github.com/spdx/license-list-data.
+The data is placed in `/data/json/` and it contains the content of the folder `/json/` from [https://github.com/spdx/license-list-data].
+
+| Kind of update: | ./data/spdx-license-list-data.update.sh |
+| Last update:    | 2020-11-15                              |
+| Version:        | 3.10-24-gd78ad74                        |
 
 ### OSI license List
 The OSI license list is imported via the `opensource` haskell package.
+
+| Kind of Update | pulled on runtime via `opensource` haskell package |
 
 ### Scancode license List
 The scancode data is placed in `/data/scancode/` and contains the content of the folder `/src/licensedcode/data/licenses/` from https://github.com/nexB/scancode-toolkit.
 
 **licensed under:** cc0-1.0
 
+| Kind of update: | ./data/nexB_scancode-toolkit_license_list.update.sh                                      |
+| Last update:    | 2020-11-15                                                                               |
+| Version:        | https://github.com/nexB/scancode-toolkit/commit/ba4bbf216c6f44572662d16c76214a08b0a69e7e |
+
 ### Wikipedia comparison of licenses
 The table for general comparison of licenses is taken from https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses and is placed in the source file.
 
 The corresponding data is hardcoded in source code, right now.
+
+| Kind of update: | manual labor |
 
 ### OSADL license checklist
 The folder `/data/OSADL/` contains a script `dump.sh` which pulls the checklist stuff. The sources for that are for example
@@ -36,6 +48,11 @@ e.g.
 - https://www.osadl.org/fileadmin/checklists/actions/Forward.txt
 - https://www.osadl.org/fileadmin/checklists/actions/ACTION.txt
 The complete list can be found at: [https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html]
+
+| Kind of update: | ./data/OSADL.update.sh |
+| Last update:    | 2020-11-15             |
+| Version:        |                        |
+
 
 ### ChooseALicense.com licenses
 The folder `/data/choosalicense` contains the conten of the folder `/_licenses/` from https://github.com/github/choosealicense.com.
