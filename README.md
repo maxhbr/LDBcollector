@@ -98,9 +98,11 @@ This template only contains 10 licenses...
 ### OSLC-Handbook
 [OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src)
 
-The fixed data can be found at https://github.com/maxhbr/OSLC-handbook/
-
 **Licensed unnder:** CC-BY-SA-4.0
+
+| Kind of update: | ./data/OSLC-handbook.update.sh                                                         |
+| Last update:    | 2020-11-15                                                                             |
+| Version:        | https://github.com/finos/OSLC-handbook/commit/eafdcdac855a0e1877606eb15eba561b2abf0dba |
 
 ### Google Open Source Policy:
 https://opensource.google.com/docs/thirdparty/licenses/
