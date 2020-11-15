@@ -55,9 +55,13 @@ The complete list can be found at: [https://www.osadl.org/Access-to-raw-data.oss
 
 
 ### ChooseALicense.com licenses
-The folder `/data/choosalicense` contains the conten of the folder `/_licenses/` from https://github.com/github/choosealicense.com.
+The folder `/data/choosealicense.com` contains the content of the folder `/_licenses/` from https://github.com/github/choosealicense.com.
 
 **licensed under:** MIT
+
+| Kind of update: | ./data/choosalicense.com.update.sh |
+| Last update:    | 2020-11-15             |
+| Version:        |                        |
 
 ### Blue Oak Council License List
 The license list can be pulled from https://blueoakcouncil.org/list.json, and is placed at `data/blue-oak-council-license-list.json`

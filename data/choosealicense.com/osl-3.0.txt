@@ -9,9 +9,9 @@ how: Create a text file (typically named LICENSE or LICENSE.txt) in the root of 
 note: OSL 3.0's author has <a href="https://rosenlaw.com/OSL3.0-explained.htm">provided an explanation</a> behind the creation of the license.
 
 using:
-  - appserver.io: https://github.com/appserver-io/appserver/blob/master/LICENSE.txt
-  - JsonMapper: https://github.com/cweiske/jsonmapper/blob/master/LICENSE
-  - Restyaboard: https://github.com/RestyaPlatform/board/blob/master/LICENSE.txt
+  appserver.io: https://github.com/appserver-io/appserver/blob/master/LICENSE.txt
+  JsonMapper: https://github.com/cweiske/jsonmapper/blob/master/LICENSE
+  Restyaboard: https://github.com/RestyaPlatform/board/blob/master/LICENSE.txt
 
 permissions:
   - commercial-use
@@ -34,7 +34,7 @@ limitations:
 
 ---
 
-Open Software License ("OSL") v 3.0
+Open Software License ("OSL") v. 3.0
 
 This Open Software License (the "License") applies to any original work of
 authorship (the "Original Work") whose owner (the "Licensor") has placed the
