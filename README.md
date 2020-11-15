@@ -117,12 +117,20 @@ they classify licenses into:
 
 **licensed under:** CC-BY-4.0
 
+| Kind of update: | manual labor |
+| Last update:    |              |
+| Version:        |              |
+
 ### Open Knowledge International
 https://github.com/okfn/licenses/blob/master/licenses.csv
 
 The corresponding raw data is placed under `./data/okfn-licenses.csv`
 
 **licensed under:** ODC Public Domain Dedication and Licence (PDDL) / MIT
+
+| Kind of update: | ./data/okfn-licenses.update.sh                                                   |
+| Last update:    | 2020-11-15                                                                       |
+| Version:        | https://github.com/okfn/licenses/commit/cc05e0a3be9490cfcb02fc664c46619846ee3752 |
 
 ### DFSG License list
 https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
