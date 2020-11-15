@@ -16,10 +16,10 @@ import qualified Data.Vector as V
 import           Model.License
 import           Collectors.Common
 
-ifrOSSLFC :: LicenseFactClassifier
-ifrOSSLFC = LFC "ifrOSS"
 ifrOSSURL :: URL
 ifrOSSURL = "https://ifross.github.io/ifrOSS/Lizenzcenter"
+ifrOSSLFC :: LicenseFactClassifier
+ifrOSSLFC = LFCWithURLAndLicense ifrOSSURL (LFLWithURL "https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md" "ODbL") "ifrOSS"
 
 ifrOSSKindToText :: CopyleftKind -> Maybe String
 ifrOSSKindToText StrongCopyleft = Just "Bei Lizenzen mit einem strengen Copyleft-Effekt wird der Lizenznehmer verpflichtet von der ursprünglichen Software abgeleitete Werke ebenfalls nur unter den Bedingungen der Ursprungslizenz weiterzuverbreiten."

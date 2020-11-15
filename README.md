@@ -135,10 +135,14 @@ The corresponding raw data is placed under `./data/okfn-licenses.csv`
 ### DFSG License list
 https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
 
+| Kind of update: | ? |
+
 ### FSF / GNU License list
 FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
 
 **licensed under:** MIT
+
+| Kind of update: | ? |
 
 ### ifrOSS
 - https://github.com/ifrOSS/ifrOSS
@@ -147,6 +151,8 @@ FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
 The corresponding data is hardcoded in source code, right now.
 
 **licensed under:** MIT / ODbL
+
+| Kind of update: | ? |
 
 ## Other possible Sources for license Metadata
   - ORT License highlighting
