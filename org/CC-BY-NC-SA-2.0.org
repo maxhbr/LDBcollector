@@ -108,13 +108,15 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/CC-BY-NC-SA-2.0.html][SPDX]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nc-sa-2.0.yml][Scancode]]
 
-- Google OSS Policy
+- [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
+  Policy]]
 
-- Debian Free Software Guidelines
+- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
+  Guidelines]]
 
 - Override
 

@@ -96,13 +96,14 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/W3C-20150513.html][SPDX]]
 
-- BlueOak License List
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-doc-20150513.yml][Scancode]]
 
-- Google OSS Policy
+- [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
+  Policy]]
 
 #+BEGIN_EXAMPLE
   {

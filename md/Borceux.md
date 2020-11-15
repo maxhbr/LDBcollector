@@ -59,13 +59,15 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/Borceux.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml "Scancode")
 
--   Fedora Project Wiki
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
 
 &nbsp;
 

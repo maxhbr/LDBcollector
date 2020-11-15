@@ -58,9 +58,9 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/XSkat.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml "Scancode")
 
 &nbsp;
 

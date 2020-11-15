@@ -505,9 +505,9 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/D-FSL-1.0.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/d-fsl-1.0-de.yml "Scancode")
 
 &nbsp;
 

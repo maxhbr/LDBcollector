@@ -21,7 +21,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html "SPDX")
 
 &nbsp;
 

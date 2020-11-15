@@ -24,7 +24,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/MulanPSL-2.0.html "SPDX")
 
 &nbsp;
 

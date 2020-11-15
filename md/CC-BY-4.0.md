@@ -458,19 +458,23 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/CC-BY-4.0.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-4.0.yml "Scancode")
 
--   choosealicense.com
+-   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-4.0.txt "choosealicense.com")
+    ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   Wikipedia
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
 
--   Google OSS Policy
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
--   Open Knowledge International
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
--   Debian Free Software Guidelines
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
 &nbsp;
 

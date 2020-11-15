@@ -426,13 +426,15 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/CC-BY-ND-4.0.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nd-4.0.yml "Scancode")
 
--   Google OSS Policy
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
--   Open Knowledge International
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
 &nbsp;
 

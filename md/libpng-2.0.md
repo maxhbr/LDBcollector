@@ -67,9 +67,9 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/libpng-2.0.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/libpng-v2.yml "Scancode")
 
 &nbsp;
 

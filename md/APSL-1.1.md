@@ -434,13 +434,15 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/APSL-1.1.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.1.yml "Scancode")
 
--   Debian Free Software Guidelines
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
 &nbsp;
 

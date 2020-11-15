@@ -161,17 +161,20 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/Artistic-1.0.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml "Scancode")
 
--   OpenSourceInitiative
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
--   Google OSS Policy
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
--   Debian Free Software Guidelines
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
 -   Override
 

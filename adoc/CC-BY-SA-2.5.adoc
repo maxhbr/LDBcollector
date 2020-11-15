@@ -102,10 +102,11 @@ Creative Commons may be contacted at http://creativecommons.org/.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* Google OSS Policy
+* https://spdx.org/licenses/CC-BY-SA-2.5.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-sa-2.5.yml[Scancode]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 
 ....
 {

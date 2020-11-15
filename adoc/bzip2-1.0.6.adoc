@@ -93,10 +93,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OSADL License Checklist
+* https://spdx.org/licenses/bzip2-1.0.6.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt[OSADL
+License Checklist]
 
 ....
 {

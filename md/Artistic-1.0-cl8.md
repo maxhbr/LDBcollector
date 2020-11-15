@@ -157,13 +157,15 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/Artistic-1.0-cl8.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0-cl8.yml "Scancode")
 
--   Debian Free Software Guidelines
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
 &nbsp;
 

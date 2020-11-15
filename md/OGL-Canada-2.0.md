@@ -25,9 +25,10 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/OGL-Canada-2.0.html "SPDX")
 
--   Open Knowledge International
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
 &nbsp;
 

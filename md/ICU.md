@@ -95,23 +95,27 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/ICU.html "SPDX")
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/X11.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.yml "Scancode")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11.yml "Scancode")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt "OSADL License Checklist")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/X11.txt "OSADL License Checklist")
 
--   ifrOSS
+-   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
 
 &nbsp;
 

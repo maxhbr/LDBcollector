@@ -262,15 +262,17 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/LPL-1.0.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lucent-pl-1.0.yml "Scancode")
 
--   OpenSourceInitiative
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
--   Open Knowledge International
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
 &nbsp;
 

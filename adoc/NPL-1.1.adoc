@@ -83,10 +83,11 @@ Alternatively, the contents of this file may be used under the terms of the   li
 
 === Raw Data
 
-* SPDX
-* Scancode
-* Wikipedia
-* Google OSS Policy
+* https://spdx.org/licenses/NPL-1.1.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/npl-1.1.yml[Scancode]
+* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 
 ....
 {

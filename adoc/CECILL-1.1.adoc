@@ -537,8 +537,8 @@ jurisdiction, by the first Party to take action.
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/CECILL-1.1.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml[Scancode]
 
 ....
 {

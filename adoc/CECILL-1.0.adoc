@@ -273,8 +273,8 @@ Version 1 du 21/06/2004
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/CECILL-1.0.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.0.yml[Scancode]
 
 ....
 {

@@ -38,11 +38,12 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/GFDL-1.1-or-later.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1-plus.yml "Scancode")
 
--   Debian Free Software Guidelines
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
 &nbsp;
 

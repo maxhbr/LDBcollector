@@ -23,7 +23,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/Hippocratic-2.1.html "SPDX")
 
 &nbsp;
 

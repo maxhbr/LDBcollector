@@ -48,9 +48,9 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/Rdisc.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml[Scancode]
 
 ....
 {

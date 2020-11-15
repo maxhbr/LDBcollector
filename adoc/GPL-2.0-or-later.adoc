@@ -172,13 +172,15 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OSADL License Checklist
-* finos/OSLC-handbook
-* Google OSS Policy
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/GPL-2.0-or-later.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-2.0-or-later.txt[OSADL
+License Checklist]
+* https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
 ....

@@ -136,23 +136,27 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/Apache-1.1.html][SPDX]]
 
-- BlueOak License List
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml][Scancode]]
 
-- OSADL License Checklist
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt][OSADL
+  License Checklist]]
 
-- OpenSourceInitiative
+- [[https://opensource.org/licenses/][OpenSourceInitiative]]
 
-- finos/OSLC-handbook
+- [[https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml][finos/OSLC-handbook]]
 
-- Google OSS Policy
+- [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
+  Policy]]
 
-- Open Knowledge International
+- [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
+  Knowledge International]]
 
-- Debian Free Software Guidelines
+- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
+  Guidelines]]
 
 - Override
 

@@ -46,8 +46,8 @@ into another language, under the above conditions for modified versions.
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/Latex2e.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml[Scancode]
 
 ....
 {

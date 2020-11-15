@@ -66,8 +66,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/BSD-3-Clause-Open-MPI.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-open-mpi.yml[Scancode]
 
 ....
 {

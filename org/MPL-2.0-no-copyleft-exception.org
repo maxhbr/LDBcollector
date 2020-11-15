@@ -103,15 +103,17 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html][SPDX]]
 
-- BlueOak License List
+- [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml][Scancode]]
 
-- OSADL License Checklist
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0-no-copyleft-exception.txt][OSADL
+  License Checklist]]
 
-- Debian Free Software Guidelines
+- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
+  Guidelines]]
 
 #+BEGIN_EXAMPLE
   {

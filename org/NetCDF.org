@@ -62,11 +62,11 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/NetCDF.html][SPDX]]
 
-- BlueOak License List
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/netcdf.yml][Scancode]]
 
 #+BEGIN_EXAMPLE
   {

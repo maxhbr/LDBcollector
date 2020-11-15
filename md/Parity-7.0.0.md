@@ -30,9 +30,10 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/Parity-7.0.0.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
 
 &nbsp;
 

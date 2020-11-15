@@ -72,9 +72,9 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/OML.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml[Scancode]
 
 ....
 {

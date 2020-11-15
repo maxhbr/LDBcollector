@@ -20,7 +20,7 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/OFL-1.0-no-RFN.html][SPDX]]
 
 #+BEGIN_EXAMPLE
   {

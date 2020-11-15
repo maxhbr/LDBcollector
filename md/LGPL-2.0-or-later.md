@@ -67,17 +67,20 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/LGPL-2.0-or-later.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0-plus.yml "Scancode")
 
--   finos/OSLC-handbook
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.0.yaml "finos/OSLC-handbook")
 
--   Google OSS Policy
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
--   Debian Free Software Guidelines
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
 &nbsp;
 

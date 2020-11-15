@@ -451,11 +451,13 @@ Creative Commons may be contacted at creativecommons.org.
 
 === Raw Data
 
-* SPDX
-* Scancode
-* Google OSS Policy
-* Open Knowledge International
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/CC-BY-NC-ND-4.0.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nc-nd-4.0.yml[Scancode]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://github.com/okfn/licenses/blob/master/licenses.csv[Open
+Knowledge International]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
 ....

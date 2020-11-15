@@ -69,17 +69,19 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/MIT-CMU.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-uc.yml "Scancode")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-template.yml "Scancode")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT-CMU.txt "OSADL License Checklist")
 
--   finos/OSLC-handbook
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml "finos/OSLC-handbook")
 
 &nbsp;
 

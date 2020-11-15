@@ -97,15 +97,17 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/XFree86-1.1.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xfree86-1.1.yml "Scancode")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/XFree86-1.1.txt "OSADL License Checklist")
 
--   Wikipedia
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
 
 &nbsp;
 

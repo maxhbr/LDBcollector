@@ -20,7 +20,7 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/libselinux-1.0.html][SPDX]]
 
 #+BEGIN_EXAMPLE
   {

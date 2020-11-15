@@ -351,15 +351,17 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/SISSL.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-sissl-1.1.yml "Scancode")
 
--   OpenSourceInitiative
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
--   Google OSS Policy
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
--   Open Knowledge International
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
 &nbsp;
 

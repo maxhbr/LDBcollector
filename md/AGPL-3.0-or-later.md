@@ -217,17 +217,19 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/AGPL-3.0-or-later.txt "OSADL License Checklist")
 
--   finos/OSLC-handbook
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml "finos/OSLC-handbook")
 
--   Wikipedia
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
 
 -   Override
 

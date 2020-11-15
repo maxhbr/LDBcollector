@@ -76,13 +76,14 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/TCL.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tcl.yml "Scancode")
 
--   finos/OSLC-handbook
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/TCL.yaml "finos/OSLC-handbook")
 
 &nbsp;
 

@@ -78,11 +78,11 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/DSDP.html][SPDX]]
 
-- BlueOak License List
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dsdp.yml][Scancode]]
 
 #+BEGIN_EXAMPLE
   {

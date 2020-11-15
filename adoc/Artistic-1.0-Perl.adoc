@@ -213,12 +213,13 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OSADL License Checklist
-* finos/OSLC-handbook
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/Artistic-1.0-Perl.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/Artistic-1.0-Perl.txt[OSADL
+License Checklist]
+* https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml[finos/OSLC-handbook]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
 ....
 {

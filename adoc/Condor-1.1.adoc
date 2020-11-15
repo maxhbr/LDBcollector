@@ -160,9 +160,9 @@ The Condor Team may publish revised and/or new versions of this
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/Condor-1.1.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/condor-1.1.yml[Scancode]
 
 ....
 {

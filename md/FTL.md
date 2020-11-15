@@ -229,15 +229,18 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/FTL.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt "OSADL License Checklist")
 
--   Google OSS Policy
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
 &nbsp;
 

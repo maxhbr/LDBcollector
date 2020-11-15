@@ -173,9 +173,9 @@ The End
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/OLDAP-1.2.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.2.yml[Scancode]
 
 ....
 {

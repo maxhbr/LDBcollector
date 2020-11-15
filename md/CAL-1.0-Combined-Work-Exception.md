@@ -27,7 +27,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html "SPDX")
 
 &nbsp;
 

@@ -29,8 +29,8 @@ https://blueoakcouncil.org/copyleft[BlueOak License List])
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
+* https://spdx.org/licenses/Parity-7.0.0.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
 
 ....
 {

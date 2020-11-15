@@ -131,11 +131,12 @@ The code released under the CDDL shall be governed by the laws of the State of C
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* finos/OSLC-handbook
-* Google OSS Policy
+* https://spdx.org/licenses/CDDL-1.1.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cddl-1.1.yml[Scancode]
+* https://github.com/finos/OSLC-handbook/blob/master/src/CDDL-1.1.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 
 ....
 {

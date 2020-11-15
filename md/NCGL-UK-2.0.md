@@ -21,7 +21,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/NCGL-UK-2.0.html "SPDX")
 
 &nbsp;
 

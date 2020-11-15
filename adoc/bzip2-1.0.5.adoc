@@ -49,9 +49,10 @@ PATENT HINTS Yes
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* OSADL License Checklist
+* https://spdx.org/licenses/bzip2-1.0.5.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.5.txt[OSADL
+License Checklist]
 
 ....
 {

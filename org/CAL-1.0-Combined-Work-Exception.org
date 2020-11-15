@@ -26,7 +26,7 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html][SPDX]]
 
 #+BEGIN_EXAMPLE
   {

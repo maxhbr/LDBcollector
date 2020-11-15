@@ -21,7 +21,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/PSF-2.0.html "SPDX")
 
 &nbsp;
 

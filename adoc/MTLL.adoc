@@ -62,9 +62,9 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/MTLL.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mtll.yml[Scancode]
 
 ....
 {

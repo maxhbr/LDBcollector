@@ -591,8 +591,8 @@ https://www.mongodb.com/licensing/server-side-public-license
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/SSPL-1.0.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mongodb-sspl-1.0.yml[Scancode]
 
 ....
 {

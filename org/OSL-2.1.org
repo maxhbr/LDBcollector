@@ -111,15 +111,16 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/OSL-2.1.html][SPDX]]
 
-- BlueOak License List
+- [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-2.1.yml][Scancode]]
 
-- OpenSourceInitiative
+- [[https://opensource.org/licenses/][OpenSourceInitiative]]
 
-- Google OSS Policy
+- [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
+  Policy]]
 
 #+BEGIN_EXAMPLE
   {

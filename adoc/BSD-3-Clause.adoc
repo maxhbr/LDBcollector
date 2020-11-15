@@ -151,19 +151,24 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* OpenChainPolicyTemplate
-* Scancode
-* OSADL License Checklist
-* choosealicense.com
-* Fedora Project Wiki
-* OpenSourceInitiative
-* finos/OSLC-handbook
-* Google OSS Policy
-* Open Knowledge International
-* Debian Free Software Guidelines
-* ifrOSS
+* https://spdx.org/licenses/BSD-3-Clause.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-3-Clause.txt[OSADL
+License Checklist]
+* https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt[choosealicense.com]
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+* https://opensource.org/licenses/[OpenSourceInitiative]
+* https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://github.com/okfn/licenses/blob/master/licenses.csv[Open
+Knowledge International]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+* https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
 * Override
 
 ....

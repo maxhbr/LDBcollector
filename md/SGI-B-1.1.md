@@ -62,9 +62,9 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/SGI-B-1.1.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-1.1.yml "Scancode")
 
 &nbsp;
 

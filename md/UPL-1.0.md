@@ -114,15 +114,18 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/UPL-1.0.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/upl-1.0.yml "Scancode")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt "OSADL License Checklist")
 
--   choosealicense.com
+-   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt "choosealicense.com")
+    ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 &nbsp;
 

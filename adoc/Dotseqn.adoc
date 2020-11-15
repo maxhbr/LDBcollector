@@ -34,8 +34,8 @@ This notice must be left intact.
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/Dotseqn.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dotseqn.yml[Scancode]
 
 ....
 {

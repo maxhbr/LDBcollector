@@ -110,14 +110,17 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OSADL License Checklist
-* Fedora Project Wiki
-* finos/OSLC-handbook
-* Google OSS Policy
-* ifrOSS
+* https://spdx.org/licenses/BSD-4-Clause.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause.txt[OSADL
+License Checklist]
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+* https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
 * Override
 * Override
 

@@ -38,9 +38,9 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/dvipdfm.html][SPDX]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml][Scancode]]
 
 #+BEGIN_EXAMPLE
   {

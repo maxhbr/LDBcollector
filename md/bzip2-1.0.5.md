@@ -48,11 +48,13 @@ OSADL Rule
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/bzip2-1.0.5.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.5.txt "OSADL License Checklist")
 
 &nbsp;
 

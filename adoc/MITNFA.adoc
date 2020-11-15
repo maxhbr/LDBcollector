@@ -71,9 +71,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/MITNFA.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml[Scancode]
 
 ....
 {

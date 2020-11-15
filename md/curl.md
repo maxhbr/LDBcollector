@@ -74,15 +74,17 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/curl.html "SPDX")
 
--   BlueOak License List
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/curl.yml "Scancode")
 
--   OSADL License Checklist
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt "OSADL License Checklist")
 
--   ifrOSS
+-   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
 
 &nbsp;
 

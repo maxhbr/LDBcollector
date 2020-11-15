@@ -386,13 +386,14 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/APL-1.0.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adapt-1.0.yml "Scancode")
 
--   OpenSourceInitiative
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
--   Open Knowledge International
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
 &nbsp;
 

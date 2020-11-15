@@ -47,9 +47,9 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/diffmark.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml[Scancode]
 
 ....
 {

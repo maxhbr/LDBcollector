@@ -102,10 +102,11 @@ the accompanying credits file.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* Google OSS Policy
+* https://spdx.org/licenses/ZPL-1.1.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-1.1.yml[Scancode]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 
 ....
 {

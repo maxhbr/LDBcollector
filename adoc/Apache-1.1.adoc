@@ -125,15 +125,18 @@ SUCH DAMAGE.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OSADL License Checklist
-* OpenSourceInitiative
-* finos/OSLC-handbook
-* Google OSS Policy
-* Open Knowledge International
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/Apache-1.1.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt[OSADL
+License Checklist]
+* https://opensource.org/licenses/[OpenSourceInitiative]
+* https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://github.com/okfn/licenses/blob/master/licenses.csv[Open
+Knowledge International]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
 ....

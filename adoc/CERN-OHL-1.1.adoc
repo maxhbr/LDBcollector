@@ -109,8 +109,8 @@ A Licensee may at the same time be a Licensor, and vice versa.
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/CERN-OHL-1.1.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cern-ohl-1.1.yml[Scancode]
 
 ....
 {

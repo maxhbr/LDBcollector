@@ -114,8 +114,8 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/CERN-OHL-1.2.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cern-ohl-1.2.yml[Scancode]
 
 ....
 {

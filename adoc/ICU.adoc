@@ -87,15 +87,17 @@ X Window System is a trademark of X Consortium, Inc.
 
 === Raw Data
 
-* SPDX
-* SPDX
-* BlueOak License List
-* BlueOak License List
-* Scancode
-* Scancode
-* OSADL License Checklist
-* OSADL License Checklist
-* ifrOSS
+* https://spdx.org/licenses/ICU.html[SPDX]
+* https://spdx.org/licenses/X11.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.yml[Scancode]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt[OSADL
+License Checklist]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/X11.txt[OSADL
+License Checklist]
+* https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
 
 ....
 {

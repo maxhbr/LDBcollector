@@ -100,11 +100,12 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* Google OSS Policy
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/OSL-1.1.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-1.1.yml[Scancode]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
 ....
 {

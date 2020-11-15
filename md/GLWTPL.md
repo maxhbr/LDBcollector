@@ -21,7 +21,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/GLWTPL.html "SPDX")
 
 &nbsp;
 

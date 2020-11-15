@@ -150,13 +150,14 @@ This Agreement is governed by the laws of the State of New York and the intellec
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OpenSourceInitiative
-* Wikipedia
-* Google OSS Policy
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/CPL-1.0.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml[Scancode]
+* https://opensource.org/licenses/[OpenSourceInitiative]
+* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
 ....
 {

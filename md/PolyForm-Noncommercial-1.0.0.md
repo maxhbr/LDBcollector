@@ -163,9 +163,9 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/polyform-noncommercial-1.0.0.yml "Scancode")
 
 &nbsp;
 

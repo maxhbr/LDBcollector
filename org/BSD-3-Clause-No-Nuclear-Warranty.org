@@ -74,11 +74,11 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html][SPDX]]
 
-- BlueOak License List
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
 
-- Scancode
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml][Scancode]]
 
 #+BEGIN_EXAMPLE
   {

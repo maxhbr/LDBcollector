@@ -21,7 +21,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/CC-BY-SA-3.0-AT.html "SPDX")
 
 &nbsp;
 

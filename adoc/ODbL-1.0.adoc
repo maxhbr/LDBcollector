@@ -574,9 +574,10 @@ terms of this License.
 
 === Raw Data
 
-* SPDX
-* Scancode
-* Open Knowledge International
+* https://spdx.org/licenses/ODbL-1.0.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/odbl-1.0.yml[Scancode]
+* https://github.com/okfn/licenses/blob/master/licenses.csv[Open
+Knowledge International]
 
 ....
 {

@@ -281,9 +281,10 @@ Version 1.0 du 2006-09-05."
 
 === Raw Data
 
-* SPDX
-* Scancode
-* Google OSS Policy
+* https://spdx.org/licenses/CECILL-C.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml[Scancode]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 
 ....
 {

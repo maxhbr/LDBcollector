@@ -25,8 +25,9 @@
 
 === Raw Data
 
-* SPDX
-* Open Knowledge International
+* https://spdx.org/licenses/OGL-Canada-2.0.html[SPDX]
+* https://github.com/okfn/licenses/blob/master/licenses.csv[Open
+Knowledge International]
 
 ....
 {

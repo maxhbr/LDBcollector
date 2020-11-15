@@ -21,7 +21,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/CERN-OHL-W-2.0.html "SPDX")
 
 &nbsp;
 

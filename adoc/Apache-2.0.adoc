@@ -348,18 +348,22 @@ PATENT HINTS Yes
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* OpenChainPolicyTemplate
-* Scancode
-* OSADL License Checklist
-* choosealicense.com
-* OpenSourceInitiative
-* finos/OSLC-handbook
-* Wikipedia
-* Google OSS Policy
-* Open Knowledge International
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/Apache-2.0.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-2.0.txt[OSADL
+License Checklist]
+* https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt[choosealicense.com]
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+* https://opensource.org/licenses/[OpenSourceInitiative]
+* https://github.com/finos/OSLC-handbook/blob/master/src/Apache-2.0.yaml[finos/OSLC-handbook]
+* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://github.com/okfn/licenses/blob/master/licenses.csv[Open
+Knowledge International]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
 ....

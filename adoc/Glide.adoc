@@ -284,8 +284,8 @@ DAMAGES.
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/Glide.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/glide.yml[Scancode]
 
 ....
 {

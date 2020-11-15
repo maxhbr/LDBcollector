@@ -21,7 +21,7 @@
 
 === Raw Data
 
-* SPDX
+* https://spdx.org/licenses/GFDL-1.1-invariants-only.html[SPDX]
 
 ....
 {

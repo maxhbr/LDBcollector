@@ -42,9 +42,9 @@ No author or distributor accepts responsibility to anyone for the consequences o
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/Leptonica.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/leptonica.yml[Scancode]
 
 ....
 {

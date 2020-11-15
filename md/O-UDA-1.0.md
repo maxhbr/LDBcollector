@@ -21,7 +21,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/O-UDA-1.0.html "SPDX")
 
 &nbsp;
 

@@ -157,8 +157,8 @@ between the parties.
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/Unicode-TOU.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unicode-tou.yml[Scancode]
 
 ....
 {

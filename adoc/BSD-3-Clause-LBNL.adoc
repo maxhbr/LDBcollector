@@ -52,9 +52,9 @@ You are under no obligation whatsoever to provide any bug fixes, patches, or upg
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/BSD-3-Clause-LBNL.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lbnl-bsd.yml[Scancode]
 
 ....
 {

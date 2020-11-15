@@ -20,7 +20,7 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/NCGL-UK-2.0.html][SPDX]]
 
 #+BEGIN_EXAMPLE
   {

@@ -152,12 +152,13 @@ The End
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OpenSourceInitiative
-* Google OSS Policy
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/Artistic-1.0.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml[Scancode]
+* https://opensource.org/licenses/[OpenSourceInitiative]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
 ....

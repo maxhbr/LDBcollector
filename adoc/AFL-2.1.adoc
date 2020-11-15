@@ -95,10 +95,11 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* Google OSS Policy
+* https://spdx.org/licenses/AFL-2.1.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml[Scancode]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 
 ....
 {

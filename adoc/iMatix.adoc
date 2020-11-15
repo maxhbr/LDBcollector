@@ -74,8 +74,8 @@ The Product is provided as free software, in the hope that it will be useful. It
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/iMatix.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sfl-license.yml[Scancode]
 
 ....
 {

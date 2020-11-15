@@ -88,9 +88,9 @@ distributed verbatim copies of this document is granted.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
+* https://spdx.org/licenses/OLDAP-2.5.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.5.yml[Scancode]
 
 ....
 {

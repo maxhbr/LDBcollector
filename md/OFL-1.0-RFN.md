@@ -21,7 +21,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/OFL-1.0-RFN.html "SPDX")
 
 &nbsp;
 

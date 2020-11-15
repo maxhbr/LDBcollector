@@ -23,7 +23,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/NIST-PD-fallback.html "SPDX")
 
 &nbsp;
 

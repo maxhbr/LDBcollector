@@ -25,7 +25,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/SSH-short.html "SPDX")
 
 &nbsp;
 

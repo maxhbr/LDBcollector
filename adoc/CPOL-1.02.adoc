@@ -120,9 +120,10 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
 
 === Raw Data
 
-* SPDX
-* Scancode
-* OSADL License Checklist
+* https://spdx.org/licenses/CPOL-1.02.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpol-1.02.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/CPOL-1.02.txt[OSADL
+License Checklist]
 
 ....
 {

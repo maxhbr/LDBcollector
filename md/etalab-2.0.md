@@ -23,7 +23,7 @@ URLs
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/etalab-2.0.html "SPDX")
 
 &nbsp;
 

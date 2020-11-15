@@ -205,13 +205,15 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OSADL License Checklist
-* finos/OSLC-handbook
-* Google OSS Policy
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/LGPL-2.1-or-later.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/LGPL-2.1-or-later.txt[OSADL
+License Checklist]
+* https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.1.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
 ....

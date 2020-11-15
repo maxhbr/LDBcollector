@@ -541,12 +541,13 @@ That's all there is to it!
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* finos/OSLC-handbook
-* Google OSS Policy
-* Debian Free Software Guidelines
+* https://spdx.org/licenses/LGPL-2.0-only.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml[Scancode]
+* https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.0.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
 ....
 {

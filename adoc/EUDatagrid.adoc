@@ -69,12 +69,14 @@ THE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PE
 
 === Raw Data
 
-* SPDX
-* OpenChainPolicyTemplate
-* Scancode
-* Fedora Project Wiki
-* OpenSourceInitiative
-* Open Knowledge International
+* https://spdx.org/licenses/EUDatagrid.html[SPDX]
+* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eu-datagrid.yml[Scancode]
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+* https://opensource.org/licenses/[OpenSourceInitiative]
+* https://github.com/okfn/licenses/blob/master/licenses.csv[Open
+Knowledge International]
 
 ....
 {

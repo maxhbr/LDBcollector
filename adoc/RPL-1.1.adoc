@@ -207,10 +207,10 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OpenSourceInitiative
+* https://spdx.org/licenses/RPL-1.1.html[SPDX]
+* https://blueoakcouncil.org/copyleft[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml[Scancode]
+* https://opensource.org/licenses/[OpenSourceInitiative]
 
 ....
 {

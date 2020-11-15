@@ -122,9 +122,9 @@ Text
 Raw Data
 --------
 
--   SPDX
+-   [SPDX](https://spdx.org/licenses/CDLA-Sharing-1.0.html "SPDX")
 
--   Scancode
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cdla-sharing-1.0.yml "Scancode")
 
 &nbsp;
 

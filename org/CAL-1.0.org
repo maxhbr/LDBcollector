@@ -34,9 +34,9 @@
 
 ** Raw Data
 
-- SPDX
+- [[https://spdx.org/licenses/CAL-1.0.html][SPDX]]
 
-- BlueOak License List
+- [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
 
 #+BEGIN_EXAMPLE
   {

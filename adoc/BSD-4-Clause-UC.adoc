@@ -140,12 +140,14 @@ by "COPYRIGHT HOLDERS AND CONTRIBUTORS".
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OSADL License Checklist
-* finos/OSLC-handbook
-* Google OSS Policy
+* https://spdx.org/licenses/BSD-4-Clause-UC.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause-UC.txt[OSADL
+License Checklist]
+* https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause-UC.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 * Override
 
 ....

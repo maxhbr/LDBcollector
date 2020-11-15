@@ -35,8 +35,8 @@ unlimited permission to copy, distribute and modify it.
 
 === Raw Data
 
-* SPDX
-* Scancode
+* https://spdx.org/licenses/FSFUL.html[SPDX]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-free.yml[Scancode]
 
 ....
 {

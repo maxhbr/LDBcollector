@@ -128,11 +128,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 === Raw Data
 
-* SPDX
-* BlueOak License List
-* Scancode
-* OSADL License Checklist
-* choosealicense.com
+* https://spdx.org/licenses/UPL-1.0.html[SPDX]
+* https://blueoakcouncil.org/list[BlueOak License List]
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/upl-1.0.yml[Scancode]
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt[OSADL
+License Checklist]
+* https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt[choosealicense.com]
+(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
 ....
 {
