@@ -21,7 +21,7 @@ import           Data.FileEmbed (embedFile)
 
 import           Model.License
 
--- id,domain_content,domain_data,domain_software,family,is_generic,maintainer,od_conformance,osd_conformance,status,title,url
+-- id,domain_content,domain_data,domain_software,family,is_generic,maintainer,od_conformance,osd_conformance,status,title,url,legacy_ids
 data OkfnFact
   = OkfnFact LicenseName -- id
              Bool -- domain_content
@@ -34,9 +34,10 @@ data OkfnFact
              Text -- status
              Text -- title
              Text -- url
+             [LicenseName] -- legacy_ids
   deriving (Show, Generic)
 instance ToJSON OkfnFact where
-  toJSON (OkfnFact id domain_content domain_data domain_software is_generic maintainer od_conformance osd_conformance status title url) =
+  toJSON (OkfnFact id domain_content domain_data domain_software is_generic maintainer od_conformance osd_conformance status title url legacy_ids) =
     object [ "id" .= id
            , "domain_content" .= domain_content
            , "domain_data" .= domain_data
@@ -47,25 +48,36 @@ instance ToJSON OkfnFact where
            , "osd_conformance" .= osd_conformance
            , "status" .= status
            , "title" .= title
-           , "url" .= url ]
+           , "url" .= url
+           , "legacy_ids" .= legacy_ids ]
 okfnLFC :: LicenseFactClassifier
 okfnLFC = LFC "Open Knowledge International"
 instance LicenseFactClassifiable OkfnFact where
   getLicenseFactClassifier _ = okfnLFC
 instance LFRaw OkfnFact where
-  getImpliedNames (OkfnFact id _ _ _ _ _ _ _ _ title _) = CLSR [id, T.unpack title]
-  getImpliedId o@(OkfnFact id _ _ _ _ _ _ _ _ _ _)      = mkRLSR o 40 id
-  getImpliedURLs (OkfnFact _ _ _ _ _ _ _ _ _ _ url)     = CLSR [(Nothing, T.unpack url)]
+  getImpliedNames (OkfnFact id _ _ _ _ _ _ _ _ title _ lIds) = CLSR (id : (T.unpack title : lIds))
+  getImpliedId o@(OkfnFact id _ _ _ _ _ _ _ _ _ _ _)      = mkRLSR o 40 id
+  getImpliedURLs (OkfnFact _ _ _ _ _ _ _ _ _ _ url _)     = CLSR [(Nothing, T.unpack url)]
 instance FromNamedRecord OkfnFact where
   parseNamedRecord r = let
       handleBool :: Text -> Bool
+      handleBool "True" = True
+      handleBool "False" = False
       handleBool "TRUE" = True
       handleBool "FALSE" = False
       handleBool _ = undefined -- TODO
       handleMaybeBool :: Text -> Maybe Bool
+      handleMaybeBool "True" = Just True
+      handleMaybeBool "False" = Just False
       handleMaybeBool "TRUE" = Just True
       handleMaybeBool "FALSE" = Just False
       handleMaybeBool _ = Nothing
+      handleList :: Text -> [LicenseName]
+                -- "[u'nasa1.3']" --> ["nasa1.3"]
+      handleList str =
+        if str == ""
+        then []
+        else (map T.unpack . T.splitOn ("',u'") . T.dropEnd 2 . T.drop 3) str
     in OkfnFact <$> r C..: "id"
                 <*> (fmap handleBool (r C..: "domain_content" :: Parser Text) :: Parser Bool)
                 <*> (fmap handleBool (r C..: "domain_data" :: Parser Text) :: Parser Bool)
@@ -77,6 +89,7 @@ instance FromNamedRecord OkfnFact where
                 <*> r C..: "status"
                 <*> r C..: "title"
                 <*> r C..: "url"
+                <*> (fmap handleList (r C..: "legacy_ids" :: Parser Text) :: Parser [LicenseName])
 
 okfnFile :: BL.ByteString
 okfnFile = BL.fromStrict $(embedFile "data/okfn-licenses.csv")

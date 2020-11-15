@@ -120,8 +120,8 @@ renderText (Just text) =
   <> P.codeBlock (T.unpack (unpackWithSource text))
 
 
-renderRawData :: License -> Blocks
-renderRawData lic@(License facts) = let
+renderRawData :: LicenseName -> License -> Blocks
+renderRawData shortname lic@(License facts) = let
     lfcs = P.bulletList . V.toList $ V.map (P.para . toInline . getLicenseFactClassifier) facts
   in P.horizontalRule
      <> P.header 2 (P.text "Raw Data")
@@ -129,11 +129,10 @@ renderRawData lic@(License facts) = let
      <> lfcs
      <> P.header 3 (P.text "Raw JSON")
      <> P.codeBlock (unpack (encodePretty lic))
-
-renderDot :: LicenseName -> Blocks
-renderDot shortname = P.horizontalRule
-                      <> P.header 2 (P.text "Dot Cluster Graph")
-                      <> P.para (P.image ("../dot" </> shortname ++ ".svg") "dot" mempty)
+     <> P.header 3 (P.text "Dot Cluster Graph")
+     <> P.para (let
+                   dotPath = "../dot" </> shortname ++ ".svg"
+                 in P.link dotPath dotPath (P.text dotPath))
 
 licenseToPandoc :: LicenseName -> Page -> Pandoc
 licenseToPandoc shortname page = let
@@ -148,8 +147,7 @@ licenseToPandoc shortname page = let
           <> renderURLs (pURLs page)
           <> renderOSADLRule (pOSADLRule page)
           <> renderText (pText page)
-          <> renderRawData (pLicense page)
-          <> renderDot shortname
+          <> renderRawData shortname (pLicense page)
 
 writePandoc :: FilePath -> Page -> IO ()
 writePandoc outDirectory page = let
