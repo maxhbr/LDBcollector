@@ -13,6 +13,8 @@ Sun Industry Standards Source License v1.1 (SISSL)
 
 -   `License :: OSI Approved :: Sun Industry Standards Source License (SISSL)`
 
+-   `sun-issl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -374,13 +376,16 @@ Raw Data
             "scancode://sun-sissl-1.1",
             "Sun Industry Standards Source License 1.1",
             "Sun Industry Standards Source License",
-            "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
+            "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
+            "sun-issl"
         ],
         "__impliedId": "SISSL",
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'sun-issl']",
+                "legacy_ids": [
+                    "sun-issl"
+                ],
                 "status": "retired",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/SISSL",
@@ -394,7 +399,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "SISSL",
-                        "Sun Industry Standards Source License 1.1"
+                        "Sun Industry Standards Source License 1.1",
+                        "sun-issl"
                     ],
                     "__impliedId": "SISSL",
                     "__impliedURLs": [

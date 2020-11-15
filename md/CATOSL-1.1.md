@@ -13,6 +13,8 @@ Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)
 
 -   `Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)`
 
+-   `ca-tosl1.1`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -420,7 +422,8 @@ Raw Data
             "scancode://ca-tosl-1.1",
             "CA Trusted Open Source License 1.1",
             "Computer Associates Trusted Open Source License, Version 1.1",
-            "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
+            "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)",
+            "ca-tosl1.1"
         ],
         "__impliedId": "CATOSL-1.1",
         "__impliedComments": [
@@ -434,7 +437,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'ca-tosl1.1']",
+                "legacy_ids": [
+                    "ca-tosl1.1"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/CATOSL-1.1",
@@ -448,7 +453,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "CATOSL-1.1",
-                        "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)"
+                        "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)",
+                        "ca-tosl1.1"
                     ],
                     "__impliedId": "CATOSL-1.1",
                     "__impliedURLs": [

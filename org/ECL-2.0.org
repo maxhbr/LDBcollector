@@ -17,6 +17,8 @@
 
 - =Educational Community License 2.0=
 
+- =ecl2=
+
 ** Description
 
 #+BEGIN_QUOTE
@@ -319,7 +321,8 @@
           "ECL 2.0",
           "ecl-2.0",
           "Educational Community License, Version 2.0",
-          "Educational Community License 2.0"
+          "Educational Community License 2.0",
+          "ecl2"
       ],
       "__impliedId": "ECL-2.0",
       "__impliedComments": [
@@ -333,7 +336,9 @@
       "facts": {
           "Open Knowledge International": {
               "is_generic": null,
-              "legacy_ids": "[u'ecl2']",
+              "legacy_ids": [
+                  "ecl2"
+              ],
               "status": "active",
               "domain_software": true,
               "url": "https://opensource.org/licenses/ECL-2.0",
@@ -347,7 +352,8 @@
               "_implications": {
                   "__impliedNames": [
                       "ECL-2.0",
-                      "Educational Community License 2.0"
+                      "Educational Community License 2.0",
+                      "ecl2"
                   ],
                   "__impliedId": "ECL-2.0",
                   "__impliedURLs": [

@@ -15,6 +15,8 @@ Apache License 2.0 (Apache-2.0)
 
 -   `Apache Software License 2.0`
 
+-   `apache2.0`
+
 -   `Apache (v2.0)`
 
 -   `ASL 2.0`
@@ -387,6 +389,7 @@ Raw Data
             "Apache License, Version 2.0",
             "License :: OSI Approved :: Apache Software License",
             "Apache Software License 2.0",
+            "apache2.0",
             "Apache (v2.0)",
             "ASL 2.0"
         ],
@@ -406,7 +409,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'apache2.0']",
+                "legacy_ids": [
+                    "apache2.0"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/Apache-2.0",
@@ -420,7 +425,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "Apache-2.0",
-                        "Apache Software License 2.0"
+                        "Apache Software License 2.0",
+                        "apache2.0"
                     ],
                     "__impliedId": "Apache-2.0",
                     "__impliedURLs": [

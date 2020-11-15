@@ -15,6 +15,8 @@ University of Illinois/NCSA Open Source License (NCSA)
 
 -   `License :: OSI Approved :: University of Illinois/NCSA Open Source License`
 
+-   `uoi-ncsa`
+
 Description
 -----------
 
@@ -149,7 +151,8 @@ Raw Data
             "ncsa",
             "UIUC/NCSA",
             "The University of Illinois/NCSA Open Source License",
-            "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
+            "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
+            "uoi-ncsa"
         ],
         "__impliedId": "NCSA",
         "__impliedComments": [
@@ -163,7 +166,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'uoi-ncsa']",
+                "legacy_ids": [
+                    "uoi-ncsa"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/NCSA",
@@ -177,7 +182,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "NCSA",
-                        "University of Illinois/NCSA Open Source License"
+                        "University of Illinois/NCSA Open Source License",
+                        "uoi-ncsa"
                     ],
                     "__impliedId": "NCSA",
                     "__impliedURLs": [

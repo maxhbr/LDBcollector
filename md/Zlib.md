@@ -15,6 +15,8 @@ zlib License (Zlib)
 
 -   `zlib/libpng license`
 
+-   `zlib-license`
+
 -   `zlib/libpng`
 
 Description
@@ -186,6 +188,7 @@ Raw Data
             "The zlib/libpng License (Zlib)",
             "License :: OSI Approved :: zlib/libpng License",
             "zlib/libpng license",
+            "zlib-license",
             "Zlib license",
             "zlib/libpng"
         ],
@@ -212,7 +215,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'zlib-license']",
+                "legacy_ids": [
+                    "zlib-license"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/Zlib",
@@ -226,7 +231,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "Zlib",
-                        "zlib/libpng license"
+                        "zlib/libpng license",
+                        "zlib-license"
                     ],
                     "__impliedId": "Zlib",
                     "__impliedURLs": [

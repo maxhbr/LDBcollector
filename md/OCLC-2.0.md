@@ -9,6 +9,8 @@ OCLC Research Public License 2.0 (OCLC-2.0)
 
 -   `The OCLC Research Public License, Version 2.0`
 
+-   `oclc2`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -249,7 +251,8 @@ Raw Data
             "OCLC-2.0",
             "OCLC Research Public License 2.0",
             "scancode://oclc-2.0",
-            "The OCLC Research Public License, Version 2.0"
+            "The OCLC Research Public License, Version 2.0",
+            "oclc2"
         ],
         "__impliedId": "OCLC-2.0",
         "__impliedComments": [
@@ -263,7 +266,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'oclc2']",
+                "legacy_ids": [
+                    "oclc2"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/OCLC-2.0",
@@ -277,7 +282,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "OCLC-2.0",
-                        "OCLC Research Public License 2.0"
+                        "OCLC Research Public License 2.0",
+                        "oclc2"
                     ],
                     "__impliedId": "OCLC-2.0",
                     "__impliedURLs": [

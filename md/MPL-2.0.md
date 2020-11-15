@@ -13,6 +13,8 @@ Mozilla Public License 2.0 (MPL-2.0)
 
 -   `License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)`
 
+-   `mozilla2.0`
+
 Description
 -----------
 
@@ -553,7 +555,8 @@ Raw Data
             "MPL 2.0",
             "mpl-2.0",
             "Mozilla Public License, Version 2.0",
-            "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+            "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+            "mozilla2.0"
         ],
         "__impliedId": "MPL-2.0",
         "__impliedAmbiguousNames": [
@@ -578,7 +581,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'mozilla2.0']",
+                "legacy_ids": [
+                    "mozilla2.0"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/MPL-2.0",
@@ -592,7 +597,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "MPL-2.0",
-                        "Mozilla Public License 2.0"
+                        "Mozilla Public License 2.0",
+                        "mozilla2.0"
                     ],
                     "__impliedId": "MPL-2.0",
                     "__impliedURLs": [

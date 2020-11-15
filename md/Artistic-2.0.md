@@ -13,6 +13,8 @@ Artistic License 2.0 (Artistic-2.0)
 
 -   `License :: OSI Approved :: Artistic License`
 
+-   `artistic-license-2.0`
+
 -   `Artistic License (v. 2.0)`
 
 Description
@@ -202,6 +204,7 @@ Raw Data
             "artistic-2.0",
             "Artistic License, Version 2.0",
             "License :: OSI Approved :: Artistic License",
+            "artistic-license-2.0",
             "Artistic License (v. 2.0)"
         ],
         "__impliedId": "Artistic-2.0",
@@ -220,7 +223,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'artistic-license-2.0']",
+                "legacy_ids": [
+                    "artistic-license-2.0"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/Artistic-2.0",
@@ -234,7 +239,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "Artistic-2.0",
-                        "Artistic License 2.0"
+                        "Artistic License 2.0",
+                        "artistic-license-2.0"
                     ],
                     "__impliedId": "Artistic-2.0",
                     "__impliedURLs": [

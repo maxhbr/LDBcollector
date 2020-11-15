@@ -11,6 +11,8 @@ Boost Software License 1.0 (BSL-1.0)
 
 -   `Boost Software License 1.0 (BSL-1.0)`
 
+-   `bsl1.0`
+
 -   `BSL (v1.0)`
 
 -   `BSL (v1)`
@@ -179,6 +181,7 @@ Raw Data
             "Boost 1.0",
             "bsl-1.0",
             "Boost Software License 1.0 (BSL-1.0)",
+            "bsl1.0",
             "BSL (v1.0)",
             "BSL (v1)"
         ],
@@ -195,7 +198,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'bsl1.0']",
+                "legacy_ids": [
+                    "bsl1.0"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/BSL-1.0",
@@ -209,7 +214,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "BSL-1.0",
-                        "Boost Software License 1.0"
+                        "Boost Software License 1.0",
+                        "bsl1.0"
                     ],
                     "__impliedId": "BSL-1.0",
                     "__impliedURLs": [

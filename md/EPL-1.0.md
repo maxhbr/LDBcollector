@@ -11,6 +11,8 @@ Eclipse Public License 1.0 (EPL-1.0)
 
 -   `Eclipse Public License, Version 1.0`
 
+-   `eclipse-1.0`
+
 Description
 -----------
 
@@ -268,7 +270,8 @@ Raw Data
             "scancode://epl-1.0",
             "EPL 1.0",
             "epl-1.0",
-            "Eclipse Public License, Version 1.0"
+            "Eclipse Public License, Version 1.0",
+            "eclipse-1.0"
         ],
         "__impliedId": "EPL-1.0",
         "__impliedAmbiguousNames": [
@@ -293,7 +296,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'eclipse-1.0']",
+                "legacy_ids": [
+                    "eclipse-1.0"
+                ],
                 "status": "retired",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/EPL-1.0",
@@ -307,7 +312,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "EPL-1.0",
-                        "Eclipse Public License 1.0"
+                        "Eclipse Public License 1.0",
+                        "eclipse-1.0"
                     ],
                     "__impliedId": "EPL-1.0",
                     "__impliedURLs": [

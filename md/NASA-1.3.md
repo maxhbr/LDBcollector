@@ -11,6 +11,8 @@ NASA Open Source Agreement 1.3 (NASA-1.3)
 
 -   `NASA Open Source Agreement, Version 1.3`
 
+-   `nasa1.3`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -181,7 +183,8 @@ Raw Data
             "NASA Open Source Agreement 1.3",
             "scancode://nasa-1.3",
             "NASA 1.3",
-            "NASA Open Source Agreement, Version 1.3"
+            "NASA Open Source Agreement, Version 1.3",
+            "nasa1.3"
         ],
         "__impliedId": "NASA-1.3",
         "__impliedComments": [
@@ -195,7 +198,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'nasa1.3']",
+                "legacy_ids": [
+                    "nasa1.3"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/NASA-1.3",
@@ -209,7 +214,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "NASA-1.3",
-                        "NASA Open Source Agreement 1.3"
+                        "NASA Open Source Agreement 1.3",
+                        "nasa1.3"
                     ],
                     "__impliedId": "NASA-1.3",
                     "__impliedURLs": [

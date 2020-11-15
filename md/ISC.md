@@ -11,6 +11,8 @@ ISC License (ISC)
 
 -   `License :: OSI Approved :: ISC License (ISCL)`
 
+-   `isc-license`
+
 Description
 -----------
 
@@ -150,7 +152,8 @@ Raw Data
             "isc",
             "ISC License (ISC)",
             "License :: OSI Approved :: ISC License (ISCL)",
-            "ISC license"
+            "ISC license",
+            "isc-license"
         ],
         "__impliedId": "ISC",
         "__impliedAmbiguousNames": [
@@ -168,7 +171,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'isc-license']",
+                "legacy_ids": [
+                    "isc-license"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/ISC",
@@ -182,7 +187,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "ISC",
-                        "ISC License"
+                        "ISC License",
+                        "isc-license"
                     ],
                     "__impliedId": "ISC",
                     "__impliedURLs": [

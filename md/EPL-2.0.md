@@ -9,6 +9,8 @@ Eclipse Public License 2.0 (EPL-2.0)
 
 -   `EPL 2.0`
 
+-   `eclipse-2.0`
+
 Description
 -----------
 
@@ -453,7 +455,8 @@ Raw Data
             "Eclipse Public License 2.0",
             "scancode://epl-2.0",
             "EPL 2.0",
-            "epl-2.0"
+            "epl-2.0",
+            "eclipse-2.0"
         ],
         "__impliedId": "EPL-2.0",
         "__impliedAmbiguousNames": [
@@ -471,7 +474,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'eclipse-2.0']",
+                "legacy_ids": [
+                    "eclipse-2.0"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/EPL-2.0",
@@ -485,7 +490,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "EPL-2.0",
-                        "Eclipse Public License 2.0"
+                        "Eclipse Public License 2.0",
+                        "eclipse-2.0"
                     ],
                     "__impliedId": "EPL-2.0",
                     "__impliedURLs": [

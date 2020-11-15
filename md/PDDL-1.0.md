@@ -11,6 +11,8 @@ ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
 
 -   `Open Data Commons Public Domain Dedication and Licence 1.0`
 
+-   `ODC-PDDL-1.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -188,13 +190,16 @@ Raw Data
             "ODC Public Domain Dedication & License 1.0",
             "scancode://pddl-1.0",
             "PDDL 1.0",
-            "Open Data Commons Public Domain Dedication and Licence 1.0"
+            "Open Data Commons Public Domain Dedication and Licence 1.0",
+            "ODC-PDDL-1.0"
         ],
         "__impliedId": "PDDL-1.0",
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'ODC-PDDL-1.0']",
+                "legacy_ids": [
+                    "ODC-PDDL-1.0"
+                ],
                 "status": "active",
                 "domain_software": false,
                 "url": "https://opendefinition.org/licenses/odc-pddl",
@@ -208,7 +213,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "PDDL-1.0",
-                        "Open Data Commons Public Domain Dedication and Licence 1.0"
+                        "Open Data Commons Public Domain Dedication and Licence 1.0",
+                        "ODC-PDDL-1.0"
                     ],
                     "__impliedId": "PDDL-1.0",
                     "__impliedURLs": [

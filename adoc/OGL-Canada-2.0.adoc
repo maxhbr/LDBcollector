@@ -14,6 +14,7 @@
 * `+scancode://can-ogl-2.0-en+`
 * `+OGL Canada 2.0+`
 * `+Open Government License 2.0 (Canada)+`
+* `+OGL-CA-2.0+`
 
 === Comments on (easy) usability
 
@@ -108,13 +109,16 @@ Knowledge International]
         "Open Government Licence - Canada",
         "scancode://can-ogl-2.0-en",
         "OGL Canada 2.0",
-        "Open Government License 2.0 (Canada)"
+        "Open Government License 2.0 (Canada)",
+        "OGL-CA-2.0"
     ],
     "__impliedId": "OGL-Canada-2.0",
     "facts": {
         "Open Knowledge International": {
             "is_generic": false,
-            "legacy_ids": "[u'OGL-CA-2.0']",
+            "legacy_ids": [
+                "OGL-CA-2.0"
+            ],
             "status": "active",
             "domain_software": false,
             "url": "https://open.canada.ca/en/open-government-licence-canada",
@@ -128,7 +132,8 @@ Knowledge International]
             "_implications": {
                 "__impliedNames": [
                     "OGL-Canada-2.0",
-                    "Open Government License 2.0 (Canada)"
+                    "Open Government License 2.0 (Canada)",
+                    "OGL-CA-2.0"
                 ],
                 "__impliedId": "OGL-Canada-2.0",
                 "__impliedURLs": [

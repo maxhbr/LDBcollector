@@ -15,6 +15,8 @@ MIT License (MIT)
 
 -   `MIT license / X11 license`
 
+-   `mit-license`
+
 -   `MIT license (also X11)`
 
 Description
@@ -175,6 +177,7 @@ Raw Data
             "Expat",
             "License :: OSI Approved :: MIT License",
             "MIT license / X11 license",
+            "mit-license",
             "MIT license (also X11)"
         ],
         "__impliedId": "MIT",
@@ -193,7 +196,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'mit-license']",
+                "legacy_ids": [
+                    "mit-license"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/MIT",
@@ -207,7 +212,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "MIT",
-                        "MIT License"
+                        "MIT License",
+                        "mit-license"
                     ],
                     "__impliedId": "MIT",
                     "__impliedURLs": [

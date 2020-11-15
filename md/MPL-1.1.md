@@ -13,6 +13,8 @@ Mozilla Public License 1.1 (MPL-1.1)
 
 -   `License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)`
 
+-   `mozilla1.1`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -334,7 +336,8 @@ Raw Data
             "scancode://mpl-1.1",
             "MPL 1.1",
             "Mozilla Public License, Version 1.1",
-            "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
+            "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
+            "mozilla1.1"
         ],
         "__impliedId": "MPL-1.1",
         "__impliedAmbiguousNames": [
@@ -359,7 +362,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'mozilla1.1']",
+                "legacy_ids": [
+                    "mozilla1.1"
+                ],
                 "status": "retired",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/MPL-1.1",
@@ -373,7 +378,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "MPL-1.1",
-                        "Mozilla Public License 1.1"
+                        "Mozilla Public License 1.1",
+                        "mozilla1.1"
                     ],
                     "__impliedId": "MPL-1.1",
                     "__impliedURLs": [

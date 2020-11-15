@@ -11,6 +11,8 @@ Non-Profit Open Software License 3.0 (NPOSL-3.0)
 
 -   `The Non-Profit Open Software License, Version 3.0`
 
+-   `nosl3.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -143,7 +145,8 @@ Raw Data
             "Non-Profit Open Software License 3.0",
             "scancode://nosl-3.0",
             "Non-Profit OSL 3.0",
-            "The Non-Profit Open Software License, Version 3.0"
+            "The Non-Profit Open Software License, Version 3.0",
+            "nosl3.0"
         ],
         "__impliedId": "NPOSL-3.0",
         "__impliedAmbiguousNames": [
@@ -167,7 +170,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'nosl3.0']",
+                "legacy_ids": [
+                    "nosl3.0"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/NPOSL-3.0",
@@ -181,7 +186,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "NPOSL-3.0",
-                        "Non-Profit Open Software License 3.0"
+                        "Non-Profit Open Software License 3.0",
+                        "nosl3.0"
                     ],
                     "__impliedId": "NPOSL-3.0",
                     "__impliedURLs": [

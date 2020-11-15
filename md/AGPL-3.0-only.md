@@ -23,6 +23,8 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 -   `GNU Affero General Public License v3`
 
+-   `agpl-v3`
+
 -   `AGPL3.0`
 
 -   `AGPL3`
@@ -964,6 +966,7 @@ Raw Data
             "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
             "License :: OSI Approved :: GNU Affero General Public License v3",
             "GNU Affero General Public License v3",
+            "agpl-v3",
             "AGPL3.0",
             "AGPL3",
             "AGPL (v3)"
@@ -993,7 +996,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'agpl-v3']",
+                "legacy_ids": [
+                    "agpl-v3"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/AGPL-3.0",
@@ -1007,7 +1012,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "AGPL-3.0",
-                        "GNU Affero General Public License v3"
+                        "GNU Affero General Public License v3",
+                        "agpl-v3"
                     ],
                     "__impliedId": "AGPL-3.0",
                     "__impliedURLs": [

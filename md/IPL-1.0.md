@@ -15,6 +15,8 @@ IBM Public License v1.0 (IPL-1.0)
 
 -   `IBM Public License 1.0`
 
+-   `ibmpl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -228,7 +230,8 @@ Raw Data
             "IPL 1.0",
             "IBM Public License, Version 1.0",
             "License :: OSI Approved :: IBM Public License",
-            "IBM Public License 1.0"
+            "IBM Public License 1.0",
+            "ibmpl"
         ],
         "__impliedId": "IPL-1.0",
         "__impliedAmbiguousNames": [
@@ -253,7 +256,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'ibmpl']",
+                "legacy_ids": [
+                    "ibmpl"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/IPL-1.0",
@@ -267,7 +272,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "IPL-1.0",
-                        "IBM Public License 1.0"
+                        "IBM Public License 1.0",
+                        "ibmpl"
                     ],
                     "__impliedId": "IPL-1.0",
                     "__impliedURLs": [

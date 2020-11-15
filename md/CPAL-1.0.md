@@ -11,6 +11,8 @@ Common Public Attribution License 1.0 (CPAL-1.0)
 
 -   `Common Public Attribution License Version 1.0 (CPAL-1.0)`
 
+-   `cpal_1.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -210,7 +212,8 @@ Raw Data
             "Common Public Attribution License 1.0",
             "scancode://cpal-1.0",
             "CPAL 1.0",
-            "Common Public Attribution License Version 1.0 (CPAL-1.0)"
+            "Common Public Attribution License Version 1.0 (CPAL-1.0)",
+            "cpal_1.0"
         ],
         "__impliedId": "CPAL-1.0",
         "__impliedAmbiguousNames": [
@@ -234,7 +237,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'cpal_1.0']",
+                "legacy_ids": [
+                    "cpal_1.0"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/CPAL-1.0",
@@ -248,7 +253,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "CPAL-1.0",
-                        "Common Public Attribution License 1.0"
+                        "Common Public Attribution License 1.0",
+                        "cpal_1.0"
                     ],
                     "__impliedId": "CPAL-1.0",
                     "__impliedURLs": [

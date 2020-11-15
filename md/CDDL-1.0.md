@@ -11,6 +11,8 @@ Common Development and Distribution License 1.0 (CDDL-1.0)
 
 -   `Common Development and Distribution License, Version 1.0`
 
+-   `cddl1`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -250,7 +252,8 @@ Raw Data
             "Common Development and Distribution License 1.0",
             "scancode://cddl-1.0",
             "CDDL 1.0",
-            "Common Development and Distribution License, Version 1.0"
+            "Common Development and Distribution License, Version 1.0",
+            "cddl1"
         ],
         "__impliedId": "CDDL-1.0",
         "__impliedAmbiguousNames": [
@@ -274,7 +277,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'cddl1']",
+                "legacy_ids": [
+                    "cddl1"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/CDDL-1.0",
@@ -288,7 +293,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "CDDL-1.0",
-                        "Common Development and Distribution License 1.0"
+                        "Common Development and Distribution License 1.0",
+                        "cddl1"
                     ],
                     "__impliedId": "CDDL-1.0",
                     "__impliedURLs": [

@@ -13,6 +13,8 @@ Intel Open Source License (Intel)
 
 -   `License :: OSI Approved :: Intel Open Source License`
 
+-   `intel-osl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -112,7 +114,8 @@ Raw Data
             "scancode://intel-bsd-export-control",
             "Intel BSD - Export Control",
             "The Intel Open Source License",
-            "License :: OSI Approved :: Intel Open Source License"
+            "License :: OSI Approved :: Intel Open Source License",
+            "intel-osl"
         ],
         "__impliedId": "Intel",
         "__impliedComments": [
@@ -126,7 +129,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'intel-osl']",
+                "legacy_ids": [
+                    "intel-osl"
+                ],
                 "status": "retired",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/Intel",
@@ -140,7 +145,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "Intel",
-                        "Intel Open Source License"
+                        "Intel Open Source License",
+                        "intel-osl"
                     ],
                     "__impliedId": "Intel",
                     "__impliedURLs": [

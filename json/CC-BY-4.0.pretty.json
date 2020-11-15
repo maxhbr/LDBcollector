@@ -15,7 +15,7 @@
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
-            "legacy_ids": "",
+            "legacy_ids": [],
             "status": "active",
             "domain_software": false,
             "url": "https://creativecommons.org/licenses/by/4.0/",

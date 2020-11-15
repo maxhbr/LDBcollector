@@ -145,7 +145,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "",
+                "legacy_ids": [],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/W3C",

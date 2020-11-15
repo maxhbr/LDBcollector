@@ -11,6 +11,8 @@ Adaptive Public License 1.0 (APL-1.0)
 
 -   `Adaptive Public License, Version 1.0`
 
+-   `apl1.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -405,7 +407,8 @@ Raw Data
             "Adaptive Public License 1.0",
             "scancode://adapt-1.0",
             "APL 1.0",
-            "Adaptive Public License, Version 1.0"
+            "Adaptive Public License, Version 1.0",
+            "apl1.0"
         ],
         "__impliedId": "APL-1.0",
         "__impliedComments": [
@@ -419,7 +422,9 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
-                "legacy_ids": "[u'apl1.0']",
+                "legacy_ids": [
+                    "apl1.0"
+                ],
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/APL-1.0",
@@ -433,7 +438,8 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "APL-1.0",
-                        "Adaptive Public License 1.0"
+                        "Adaptive Public License 1.0",
+                        "apl1.0"
                     ],
                     "__impliedId": "APL-1.0",
                     "__impliedURLs": [
