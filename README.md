@@ -59,14 +59,18 @@ The folder `/data/choosealicense.com` contains the content of the folder `/_lice
 
 **licensed under:** MIT
 
-| Kind of update: | ./data/choosalicense.com.update.sh |
-| Last update:    | 2020-11-15             |
-| Version:        |                        |
+| Kind of update: | ./data/choosalicense.com.update.sh                                                           |
+| Last update:    | 2020-11-15                                                                                   |
+| Version:        | https://github.com/github/choosealicense.com/commit/50e1c110548545b3ec5072442942be2548a76a48 |
 
 ### Blue Oak Council License List
-The license list can be pulled from https://blueoakcouncil.org/list.json, and is placed at `data/blue-oak-council-license-list.json`
+The license list can be pulled from https://blueoakcouncil.org/list.json, and is placed at `data/blue-oak-council-license-list.json`. The copyleft list is from https://blueoakcouncil.org/copyleft.json and placed at `data/blue-oak-council-copyleft-list.json`
 
 **licensed under:** CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+
+| Kind of update: | ./data/blue-oak-council.update.sh |
+| Last update:    | 2020-11-15                        |
+| Version:        |                                   |
 
 ### Fedora Project Wiki
 The Fedora Project has in its wiki a list of licenses which are rated **good** or **bad** on https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing.
