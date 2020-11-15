@@ -7,8 +7,6 @@ Creative Commons Attribution No Derivatives 4.0 International (CC-BY-ND-4.0)
 
 -   `scancode://cc-by-nd-4.0`
 
--   `Creative Commons Attribution No-Derivatives 4.0`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -435,47 +433,16 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
--   [Open Knowledge
-    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "CC-BY-ND-4.0",
             "Creative Commons Attribution No Derivatives 4.0 International",
-            "scancode://cc-by-nd-4.0",
-            "Creative Commons Attribution No-Derivatives 4.0"
+            "scancode://cc-by-nd-4.0"
         ],
         "__impliedId": "CC-BY-ND-4.0",
         "facts": {
-            "Open Knowledge International": {
-                "is_generic": null,
-                "status": "active",
-                "domain_software": false,
-                "url": "https://creativecommons.org/licenses/by-nd/4.0/",
-                "maintainer": "Creative Commons",
-                "od_conformance": "rejected",
-                "_sourceURL": "https://github.com/okfn/licenses/blob/master/licenses.csv",
-                "domain_data": true,
-                "osd_conformance": "not reviewed",
-                "id": "CC-BY-ND-4.0",
-                "title": "Creative Commons Attribution No-Derivatives 4.0",
-                "_implications": {
-                    "__impliedNames": [
-                        "CC-BY-ND-4.0",
-                        "Creative Commons Attribution No-Derivatives 4.0"
-                    ],
-                    "__impliedId": "CC-BY-ND-4.0",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://creativecommons.org/licenses/by-nd/4.0/"
-                        ]
-                    ]
-                },
-                "domain_content": true
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution No Derivatives 4.0 International",
@@ -584,10 +551,6 @@ Raw Data
             [
                 "Homepage",
                 "http://creativecommons.org/licenses/by-nd/4.0/"
-            ],
-            [
-                null,
-                "https://creativecommons.org/licenses/by-nd/4.0/"
             ]
         ]
     }

@@ -419,6 +419,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "[u'apl1.0']",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/APL-1.0",

@@ -5,16 +5,10 @@ Borceux license (Borceux)
 
 **Other Names:**
 
--   `Bourceux`
-
 -   `scancode://borceux`
 
 Comments on (easy) usability
 ----------------------------
-
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
@@ -68,21 +62,16 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml "Scancode")
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Borceux",
             "Borceux license",
-            "Bourceux",
             "scancode://borceux",
             "Borceux License"
         ],
         "__impliedId": "Borceux",
-        "__isFsfFree": true,
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -112,32 +101,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Borceux"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Borceux",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "Borceux",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Borceux license",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Borceux license"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -182,10 +145,10 @@ Raw Data
                 "isPermissive": true,
                 "_sourceURL": "https://blueoakcouncil.org/list",
                 "name": "Borceux license",
-                "id": "Bourceux",
+                "id": "Borceux",
                 "_implications": {
                     "__impliedNames": [
-                        "Bourceux",
+                        "Borceux",
                         "Borceux license"
                     ],
                     "__impliedJudgement": [
@@ -219,13 +182,6 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

@@ -131,7 +131,8 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": false,
-                "status": "superceded",
+                "legacy_ids": "",
+                "status": "active",
                 "domain_software": true,
                 "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
                 "maintainer": "UK Government",

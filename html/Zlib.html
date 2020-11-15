@@ -54,7 +54,7 @@
 <h2>General Comments</h2>
 <ul>
 <li><p>“Per SPDX.org, this is OSI certified” (source: <a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml" title="Scancode">Scancode</a>)</p></li>
-<li><p>“Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.” (source: <a href="https://ifross.github.io/ifrOSS/Lizenzcenter" title="ifrOSS">ifrOSS</a>)</p></li>
+<li><p>“Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen.” (source: <a href="https://ifross.github.io/ifrOSS/Lizenzcenter" title="ifrOSS">ifrOSS</a> (<a href="https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md" title="ODbL">ODbL</a>))</p></li>
 </ul>
 <h2>Obligations</h2>
 <table>
@@ -74,7 +74,7 @@
 <li><p>private-use</p></li>
 </ul></td>
 <td><ul>
-<li><p>include-copyright</p></li>
+<li><p>include-copyright--source</p></li>
 <li><p>document-changes</p></li>
 </ul></td>
 <td><ul>
@@ -145,7 +145,7 @@ the following restrictions:
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a></p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a></p></li>
 <li><p><a href="https://wiki.debian.org/DFSGLicenses" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a></p></li>
-<li><p><a href="https://ifross.github.io/ifrOSS/Lizenzcenter" title="ifrOSS">ifrOSS</a></p></li>
+<li><p><a href="https://ifross.github.io/ifrOSS/Lizenzcenter" title="ifrOSS">ifrOSS</a> (<a href="https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md" title="ODbL">ODbL</a>)</p></li>
 <li><p>Override</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -186,6 +186,7 @@ the following restrictions:
     &quot;facts&quot;: {
         &quot;Open Knowledge International&quot;: {
             &quot;is_generic&quot;: null,
+            &quot;legacy_ids&quot;: &quot;[u&#39;zlib-license&#39;]&quot;,
             &quot;status&quot;: &quot;active&quot;,
             &quot;domain_software&quot;: true,
             &quot;url&quot;: &quot;https://opensource.org/licenses/Zlib&quot;,
@@ -563,12 +564,12 @@ the following restrictions:
                 &quot;warranty&quot;
             ],
             &quot;_sourceURL&quot;: &quot;https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/zlib.txt&quot;,
-            &quot;content&quot;: &quot;---\ntitle: zlib License\nspdx-id: Zlib\n\ndescription: A short permissive license, compatible with GPL. Requires altered source versions to be documented as such.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright\n  - document-changes\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nzlib License\n\n(C) [year] [fullname]\n\nThis software is provided &#39;as-is&#39;, without any express or implied\nwarranty.  In no event will the authors be held liable for any damages\narising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose,\nincluding commercial applications, and to alter it and redistribute it\nfreely, subject to the following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not\n   claim that you wrote the original software. If you use this software\n   in a product, an acknowledgment in the product documentation would be\n   appreciated but is not required.\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n3. This notice may not be removed or altered from any source distribution.\n&quot;,
+            &quot;content&quot;: &quot;---\ntitle: zlib License\nspdx-id: Zlib\n\ndescription: A short permissive license, compatible with GPL. Requires altered source versions to be documented as such.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  GLFW: https://github.com/glfw/glfw/blob/master/LICENSE.md\n  Portainer: https://github.com/portainer/portainer/blob/develop/LICENSE\n  TinyXML-2: https://github.com/leethomason/tinyxml2/blob/master/LICENSE.txt\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright--source\n  - document-changes\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nzlib License\n\n(C) [year] [fullname]\n\nThis software is provided &#39;as-is&#39;, without any express or implied\nwarranty.  In no event will the authors be held liable for any damages\narising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose,\nincluding commercial applications, and to alter it and redistribute it\nfreely, subject to the following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not\n   claim that you wrote the original software. If you use this software\n   in a product, an acknowledgment in the product documentation would be\n   appreciated but is not required.\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n3. This notice may not be removed or altered from any source distribution.\n&quot;,
             &quot;name&quot;: &quot;zlib&quot;,
             &quot;hidden&quot;: null,
             &quot;spdxId&quot;: &quot;Zlib&quot;,
             &quot;conditions&quot;: [
-                &quot;include-copyright&quot;,
+                &quot;include-copyright--source&quot;,
                 &quot;document-changes&quot;
             ],
             &quot;permissions&quot;: [
@@ -618,7 +619,7 @@ the following restrictions:
                     &quot;conditions&quot;: [
                         {
                             &quot;tag&quot;: &quot;ImpliedCondition&quot;,
-                            &quot;contents&quot;: &quot;include-copyright&quot;
+                            &quot;contents&quot;: &quot;include-copyright--source&quot;
                         },
                         {
                             &quot;tag&quot;: &quot;ImpliedCondition&quot;,
@@ -789,7 +790,7 @@ the following restrictions:
         &quot;conditions&quot;: [
             {
                 &quot;tag&quot;: &quot;ImpliedCondition&quot;,
-                &quot;contents&quot;: &quot;include-copyright&quot;
+                &quot;contents&quot;: &quot;include-copyright--source&quot;
             },
             {
                 &quot;tag&quot;: &quot;ImpliedCondition&quot;,

@@ -17,7 +17,7 @@
 </tr>
 <tr class="odd">
 <td><p>Rating</p></td>
-<td><p>Unknown</p></td>
+<td><p>Unknown, probably Attention or Stop or No-Go</p></td>
 </tr>
 <tr class="even">
 <td><p>Classification</p></td>
@@ -31,7 +31,6 @@
 </ul>
 <h2>Comments on (easy) usability</h2>
 <ul>
-<li><p><strong>↑</strong>“This software Licenses is OK for Fedora” (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a>)</p></li>
 </ul>
 <h2>General Comments</h2>
 <ul>
@@ -80,7 +79,6 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
 <ul>
 <li><p><a href="https://spdx.org/licenses/EPICS.html" title="SPDX">SPDX</a></p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epics.yml" title="Scancode">Scancode</a></p></li>
-<li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a></p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -90,7 +88,6 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
         &quot;scancode://epics&quot;
     ],
     &quot;__impliedId&quot;: &quot;EPICS&quot;,
-    &quot;__isFsfFree&quot;: true,
     &quot;facts&quot;: {
         &quot;SPDX&quot;: {
             &quot;isSPDXLicenseDeprecated&quot;: false,
@@ -121,34 +118,10 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
             },
             &quot;spdxLicenseId&quot;: &quot;EPICS&quot;
         },
-        &quot;Fedora Project Wiki&quot;: {
-            &quot;GPLv2 Compat?&quot;: &quot;Yes&quot;,
-            &quot;rating&quot;: &quot;Good&quot;,
-            &quot;Upstream URL&quot;: &quot;http://www.aps.anl.gov/epics/license/open.php&quot;,
-            &quot;GPLv3 Compat?&quot;: &quot;Yes&quot;,
-            &quot;Short Name&quot;: &quot;EPICS&quot;,
-            &quot;licenseType&quot;: &quot;license&quot;,
-            &quot;_sourceURL&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing&quot;,
-            &quot;Full Name&quot;: &quot;EPICS Open License&quot;,
-            &quot;FSF Free?&quot;: &quot;Yes&quot;,
-            &quot;_implications&quot;: {
-                &quot;__impliedNames&quot;: [
-                    &quot;EPICS Open License&quot;
-                ],
-                &quot;__isFsfFree&quot;: true,
-                &quot;__impliedJudgement&quot;: [
-                    [
-                        &quot;Fedora Project Wiki&quot;,
-                        {
-                            &quot;tag&quot;: &quot;PositiveJudgement&quot;,
-                            &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
-                        }
-                    ]
-                ]
-            }
-        },
         &quot;Scancode&quot;: {
-            &quot;otherUrls&quot;: null,
+            &quot;otherUrls&quot;: [
+                &quot;https://epics.anl.gov/license/open.php&quot;
+            ],
             &quot;homepageUrl&quot;: &quot;http://www.aps.anl.gov/epics/license/open.php&quot;,
             &quot;shortName&quot;: &quot;EPICS Open License&quot;,
             &quot;textUrls&quot;: null,
@@ -159,13 +132,15 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
             &quot;_sourceURL&quot;: &quot;https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epics.yml&quot;,
             &quot;key&quot;: &quot;epics&quot;,
             &quot;name&quot;: &quot;EPICS Open License&quot;,
-            &quot;spdxId&quot;: null,
+            &quot;spdxId&quot;: &quot;EPICS&quot;,
             &quot;notes&quot;: null,
             &quot;_implications&quot;: {
                 &quot;__impliedNames&quot;: [
                     &quot;scancode://epics&quot;,
-                    &quot;EPICS Open License&quot;
+                    &quot;EPICS Open License&quot;,
+                    &quot;EPICS&quot;
                 ],
+                &quot;__impliedId&quot;: &quot;EPICS&quot;,
                 &quot;__impliedCopyleft&quot;: [
                     [
                         &quot;Scancode&quot;,
@@ -178,20 +153,15 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
                     [
                         &quot;Homepage&quot;,
                         &quot;http://www.aps.anl.gov/epics/license/open.php&quot;
+                    ],
+                    [
+                        null,
+                        &quot;https://epics.anl.gov/license/open.php&quot;
                     ]
                 ]
             }
         }
     },
-    &quot;__impliedJudgement&quot;: [
-        [
-            &quot;Fedora Project Wiki&quot;,
-            {
-                &quot;tag&quot;: &quot;PositiveJudgement&quot;,
-                &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
-            }
-        ]
-    ],
     &quot;__impliedCopyleft&quot;: [
         [
             &quot;Scancode&quot;,

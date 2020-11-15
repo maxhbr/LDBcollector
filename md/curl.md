@@ -23,7 +23,8 @@ General Comments
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
     Software überführen.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL")))
 
 URLs
 ----
@@ -87,6 +88,7 @@ Raw Data
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt "OSADL License Checklist")
 
 -   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL"))
 
 ### Raw JSON
 

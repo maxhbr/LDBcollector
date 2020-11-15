@@ -60,11 +60,11 @@ OSADL Rule
     			ATTRIBUTE Original license
     	YOU MUST NOT Restrict Granted rights
     USE CASE Binary delivery
-    	YOU MUST Provide Source code
-    		YOU MUST Reference Source code
-    		ATTRIBUTE Reasonable
-    		ATTRIBUTE Timely
-    		ATTRIBUTE No profit
+    	YOU MUST Inform Recipients
+    		ATTRIBUTE Delayed source code delivery
+    			ATTRIBUTE Reasonable
+    			ATTRIBUTE Timely
+    			ATTRIBUTE No profit
     	USE CASE License change
     		YOU MUST NOT Restrict Granted rights
     	IF Service offerings
@@ -77,6 +77,8 @@ OSADL Rule
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
     COMPATIBILITY curl
+    COMPATIBILITY EFL-2.0
+    COMPATIBILITY IBM-pibs
     COMPATIBILITY ICU
     COMPATIBILITY ISC
     COMPATIBILITY Libpng
@@ -193,7 +195,7 @@ Raw Data
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0-no-copyleft-exception.txt",
                 "spdxId": "MPL-2.0-no-copyleft-exception",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide Source code\n\t\tYOU MUST Reference Source code\n\t\tATTRIBUTE Reasonable\n\t\tATTRIBUTE Timely\n\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY MPL-2.0\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nCOPYLEFT CLAUSE Yes\nPATENT HINTS\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOPYLEFT CLAUSE Yes\nPATENT HINTS\n",
                 "_implications": {
                     "__impliedNames": [
                         "MPL-2.0-no-copyleft-exception"

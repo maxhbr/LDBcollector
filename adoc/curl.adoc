@@ -26,7 +26,8 @@ für Veränderungen der Software keine Bedingungen hinsichtlich des zu
 verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
 veränderte Versionen der Software unter beliebigen Lizenzbedingungen
 weiterverbreiten, also auch in proprietäre Software überführen.''
-(source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS])
+(source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
+(https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md[ODbL]))
 
 === URLs
 
@@ -80,6 +81,7 @@ in this Software without prior written authorization of the copyright holder.
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt[OSADL
 License Checklist]
 * https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
+(https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md[ODbL])
 
 ==== Raw JSON
 

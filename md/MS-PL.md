@@ -48,7 +48,8 @@ General Comments
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
     Software überführen.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL")))
 
 Obligations
 -----------
@@ -98,6 +99,26 @@ OSADL Rule
     	YOU MUST Forward Patent notices
     	YOU MUST Forward Trademark notices
     	YOU MUST Use Compatible license
+    COMPATIBILITY BSD-2-Clause
+    COMPATIBILITY BSD-2-Clause-Patent
+    COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSD-4-Clause
+    COMPATIBILITY BSD-4-Clause-UC
+    COMPATIBILITY bzip2-1.0.5
+    COMPATIBILITY bzip2-1.0.6
+    COMPATIBILITY CC0-1.0
+    COMPATIBILITY curl
+    COMPATIBILITY EFL-2.0
+    COMPATIBILITY IBM-pibs
+    COMPATIBILITY ICU
+    COMPATIBILITY ISC
+    COMPATIBILITY Libpng
+    COMPATIBILITY MIT
+    COMPATIBILITY NTP
+    COMPATIBILITY UPL-1.0
+    COMPATIBILITY WTFPL
+    COMPATIBILITY X11
+    COMPATIBILITY Zlib
     PATENT HINTS Yes
     COPYLEFT CLAUSE Questionable
 
@@ -205,6 +226,7 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
 -   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL"))
 
 ### Raw JSON
 
@@ -238,6 +260,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/MS-PL",
@@ -309,7 +332,7 @@ Raw Data
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MS-PL.txt",
                 "spdxId": "MS-PL",
-                "osadlRule": "USE CASE Source code delivery\r\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\nUSE CASE Binary delivery\r\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Questionable\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\nUSE CASE Binary delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Questionable\n",
                 "_implications": {
                     "__impliedNames": [
                         "MS-PL"

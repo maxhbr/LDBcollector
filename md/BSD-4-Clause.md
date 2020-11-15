@@ -11,6 +11,17 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 -   `BSD License (original)`
 
+Description
+-----------
+
+> A permissive license similar to the &lt;a
+> href="/licenses/bsd-3-clause/"&gt;BSD 3-Clause License&lt;/a&gt;, but
+> with an "advertising clause" that requires an acknowledgment of the
+> original source in all advertising material.
+
+(source: choosealicense.com
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
+
 Comments on (easy) usability
 ----------------------------
 
@@ -41,7 +52,17 @@ General Comments
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
     Software überführen.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL")))
+
+Obligations
+-----------
+
+[TABLE]
+
+(source:
+[choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-4-clause.txt "choosealicense.com")
+([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 URLs
 ----
@@ -131,6 +152,9 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause.txt "OSADL License Checklist")
 
+-   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-4-clause.txt "choosealicense.com")
+    ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
 
@@ -140,6 +164,7 @@ Raw Data
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
 -   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL"))
 
 -   Override
 
@@ -153,6 +178,7 @@ Raw Data
             "BSD 4-Clause \"Original\" or \"Old\" License",
             "scancode://bsd-original",
             "BSD-Original",
+            "bsd-4-clause",
             "BSD License (original)",
             "BSD 4-clause \"Original\" or \"Old\" License"
         ],
@@ -435,6 +461,73 @@ Raw Data
                     ]
                 }
             },
+            "choosealicense.com": {
+                "limitations": [
+                    "liability",
+                    "warranty"
+                ],
+                "_sourceURL": "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-4-clause.txt",
+                "content": "---\ntitle: BSD 4-Clause \"Original\" or \"Old\" License\nspdx-id: BSD-4-Clause\n\ndescription: A permissive license similar to the <a href=\"/licenses/bsd-3-clause/\">BSD 3-Clause License</a>, but with an \"advertising clause\" that requires an acknowledgment of the original source in all advertising material.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.\n\nusing:\n  Choco-solver: https://github.com/chocoteam/choco-solver/blob/master/LICENSE\n  PMSPAUR-public: https://github.com/ArthurGodet/PMSPAUR-public/blob/master/LICENSE\n  Switchblade: https://github.com/SwitchbladeBot/switchblade/blob/dev/LICENSE\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nBSD 4-Clause License\n\nCopyright (c) [year], [fullname]\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. All advertising materials mentioning features or use of this software must\n   display the following acknowledgement:\n     This product includes software developed by [project].\n\n4. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY COPYRIGHT HOLDER \"AS IS\" AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO\nEVENT SHALL COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;\nOR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR\nOTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "name": "bsd-4-clause",
+                "hidden": null,
+                "spdxId": "BSD-4-Clause",
+                "conditions": [
+                    "include-copyright"
+                ],
+                "permissions": [
+                    "commercial-use",
+                    "modifications",
+                    "distribution",
+                    "private-use"
+                ],
+                "featured": null,
+                "nickname": null,
+                "how": "Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work.",
+                "title": "BSD 4-Clause \"Original\" or \"Old\" License",
+                "_implications": {
+                    "__impliedNames": [
+                        "bsd-4-clause",
+                        "BSD-4-Clause"
+                    ],
+                    "__obligations": {
+                        "limitations": [
+                            {
+                                "tag": "ImpliedLimitation",
+                                "contents": "liability"
+                            },
+                            {
+                                "tag": "ImpliedLimitation",
+                                "contents": "warranty"
+                            }
+                        ],
+                        "rights": [
+                            {
+                                "tag": "ImpliedRight",
+                                "contents": "commercial-use"
+                            },
+                            {
+                                "tag": "ImpliedRight",
+                                "contents": "modifications"
+                            },
+                            {
+                                "tag": "ImpliedRight",
+                                "contents": "distribution"
+                            },
+                            {
+                                "tag": "ImpliedRight",
+                                "contents": "private-use"
+                            }
+                        ],
+                        "conditions": [
+                            {
+                                "tag": "ImpliedCondition",
+                                "contents": "include-copyright"
+                            }
+                        ]
+                    }
+                },
+                "description": "A permissive license similar to the <a href=\"/licenses/bsd-3-clause/\">BSD 3-Clause License</a>, but with an \"advertising clause\" that requires an acknowledgment of the original source in all advertising material."
+            },
             "finos/OSLC-handbook": {
                 "terms": [
                     {
@@ -560,6 +653,42 @@ Raw Data
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
+        "__obligations": {
+            "limitations": [
+                {
+                    "tag": "ImpliedLimitation",
+                    "contents": "liability"
+                },
+                {
+                    "tag": "ImpliedLimitation",
+                    "contents": "warranty"
+                }
+            ],
+            "rights": [
+                {
+                    "tag": "ImpliedRight",
+                    "contents": "commercial-use"
+                },
+                {
+                    "tag": "ImpliedRight",
+                    "contents": "modifications"
+                },
+                {
+                    "tag": "ImpliedRight",
+                    "contents": "distribution"
+                },
+                {
+                    "tag": "ImpliedRight",
+                    "contents": "private-use"
+                }
+            ],
+            "conditions": [
+                {
+                    "tag": "ImpliedCondition",
+                    "contents": "include-copyright"
+                }
+            ]
+        },
         "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. All advertising materials mentioning features or use of this software\nmust display the following acknowledgement: This product includes software\ndeveloped by the <organization>.\n\n4. Neither the name of the <organization> nor the names of its contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ''AS IS'' AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO\nEVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [

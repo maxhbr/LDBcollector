@@ -64,6 +64,7 @@
 
 #+BEGIN_EXAMPLE
   USE CASE Source code delivery
+  	YOU MUST Provide License text
   	IF Software modification
   		YOU MUST Forward Copyright notices
   		YOU MUST Forward Patent notices
@@ -73,6 +74,7 @@
   		YOU MUST Provide Copyright notice
   	YOU MUST NOT Restrict Granted rights
   USE CASE Binary delivery
+  	YOU MUST Provide License text
   	YOU MUST Provide Delayed source code delivery
   	YOU MUST Provide Written offer
   		ATTRIBUTE Reasonable
@@ -88,9 +90,21 @@
   			ATTRIBUTE Original license
   		YOU MUST Provide Copyright notice
   	YOU MUST NOT Restrict Granted rights
+  	USE CASE License change
+  		YOU MUST Use Compatible license
+  		YOU MUST Indemnify Other Contributors
   COMPATIBILITY BSD-2-Clause
+  COMPATIBILITY BSD-2-Clause-Patent
+  COMPATIBILITY BSD-3-Clause
+  COMPATIBILITY bzip2-1.0.5
+  COMPATIBILITY bzip2-1.0.6
+  COMPATIBILITY CC0-1.0
   COMPATIBILITY curl
+  COMPATIBILITY EFL-2.0
+  COMPATIBILITY IBM-pibs
+  COMPATIBILITY ICU
   COMPATIBILITY ISC
+  COMPATIBILITY Libpng
   COMPATIBILITY MIT
   COMPATIBILITY NTP
   COMPATIBILITY UPL-1.0
@@ -263,6 +277,7 @@
       "facts": {
           "Open Knowledge International": {
               "is_generic": null,
+              "legacy_ids": "[u'cddl1']",
               "status": "active",
               "domain_software": true,
               "url": "https://opensource.org/licenses/CDDL-1.0",
@@ -329,7 +344,7 @@
           "OSADL License Checklist": {
               "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CDDL-1.0.txt",
               "spdxId": "CDDL-1.0",
-              "osadlRule": "USE CASE Source code delivery\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide Delayed source code delivery\n\tYOU MUST Provide Written offer\n\t\tATTRIBUTE Reasonable\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\r\n\t\t\tATTRIBUTE Via Internet\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License text\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide License text\n\tYOU MUST Provide Delayed source code delivery\n\tYOU MUST Provide Written offer\n\t\tATTRIBUTE Reasonable\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Indemnify Other Contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
               "_implications": {
                   "__impliedNames": [
                       "CDDL-1.0"

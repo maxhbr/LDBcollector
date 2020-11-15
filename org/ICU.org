@@ -32,7 +32,8 @@
   verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
   veränderte Versionen der Software unter beliebigen Lizenzbedingungen
   weiterverbreiten, also auch in proprietäre Software überführen."
-  (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
+  (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
+  ([[https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md][ODbL]]))
 
 ** URLs
 
@@ -117,6 +118,7 @@
   License Checklist]]
 
 - [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
+  ([[https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md][ODbL]])
 
 *** Raw JSON
 

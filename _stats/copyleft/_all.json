@@ -47,6 +47,14 @@
             "Scancode"
         ]
     },
+    "CAL-1.0": {
+        "MaximalCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
     "OLDAP-1.3": {
         "NoCopyleft": [
             "BlueOak License List"
@@ -316,6 +324,15 @@
             "Scancode"
         ]
     },
+    "IPL-1.0": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
     "RPSL-1.0": {
         "WeakCopyleft": [
             "Scancode"
@@ -376,12 +393,29 @@
             "BlueOak License List"
         ]
     },
+    "Parity-7.0.0": {
+        "MaximalCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
     "OLDAP-1.1": {
         "NoCopyleft": [
             "BlueOak License List"
         ],
         "WeakCopyleft": [
             "Scancode"
+        ]
+    },
+    "CPL-1.0": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
         ]
     },
     "CC-BY-SA-2.5": {

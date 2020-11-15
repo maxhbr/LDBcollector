@@ -35,7 +35,8 @@ General Comments
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
     Software überführen.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL")))
 
 URLs
 ----
@@ -109,6 +110,7 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
 -   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL"))
 
 ### Raw JSON
 
@@ -139,6 +141,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/NTP",

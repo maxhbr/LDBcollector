@@ -89,6 +89,8 @@ URLs
 
 -   **tl;dr legal:** https://tldrlegal.com/license/mit-license
 
+-   https://opensource.com/article/18/3/patent-grant-mit-license
+
 -   https://opensource.com/article/19/4/history-mit-license
 
 OSADL Rule
@@ -191,6 +193,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "[u'mit-license']",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/MIT",
@@ -266,6 +269,7 @@ Raw Data
             },
             "Scancode": {
                 "otherUrls": [
+                    "https://opensource.com/article/18/3/patent-grant-mit-license",
                     "https://opensource.com/article/19/4/history-mit-license",
                     "https://opensource.org/licenses/MIT"
                 ],
@@ -312,6 +316,10 @@ Raw Data
                         [
                             "OSI Page",
                             "http://www.opensource.org/licenses/MIT"
+                        ],
+                        [
+                            null,
+                            "https://opensource.com/article/18/3/patent-grant-mit-license"
                         ],
                         [
                             null,
@@ -562,7 +570,7 @@ Raw Data
                     "warranty"
                 ],
                 "_sourceURL": "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt",
-                "content": "---\ntitle: MIT License\nspdx-id: MIT\nfeatured: true\nhidden: false\n\ndescription: A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  - Babel: https://github.com/babel/babel/blob/master/LICENSE\n  - .NET Core: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT\n  - Rails: https://github.com/rails/rails/blob/master/MIT-LICENSE\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nMIT License\n\nCopyright (c) [year] [fullname]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "content": "---\ntitle: MIT License\nspdx-id: MIT\nfeatured: true\nhidden: false\n\ndescription: A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  Babel: https://github.com/babel/babel/blob/master/LICENSE\n  .NET Core: https://github.com/dotnet/runtime/blob/master/LICENSE.TXT\n  Rails: https://github.com/rails/rails/blob/master/MIT-LICENSE\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nMIT License\n\nCopyright (c) [year] [fullname]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
                 "name": "mit",
                 "hidden": "false",
                 "spdxId": "MIT",
@@ -818,6 +826,10 @@ Raw Data
             [
                 "OSI Page",
                 "http://www.opensource.org/licenses/MIT"
+            ],
+            [
+                null,
+                "https://opensource.com/article/18/3/patent-grant-mit-license"
             ],
             [
                 null,

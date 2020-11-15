@@ -10,10 +10,6 @@ EPICS Open License (EPICS)
 Comments on (easy) usability
 ----------------------------
 
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
-
 General Comments
 ----------------
 
@@ -72,9 +68,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epics.yml "Scancode")
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-
 ### Raw JSON
 
     {
@@ -84,7 +77,6 @@ Raw Data
             "scancode://epics"
         ],
         "__impliedId": "EPICS",
-        "__isFsfFree": true,
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -115,34 +107,10 @@ Raw Data
                 },
                 "spdxLicenseId": "EPICS"
             },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://www.aps.anl.gov/epics/license/open.php",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "EPICS",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "EPICS Open License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "EPICS Open License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
-            },
             "Scancode": {
-                "otherUrls": null,
+                "otherUrls": [
+                    "https://epics.anl.gov/license/open.php"
+                ],
                 "homepageUrl": "http://www.aps.anl.gov/epics/license/open.php",
                 "shortName": "EPICS Open License",
                 "textUrls": null,
@@ -153,13 +121,15 @@ Raw Data
                 "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epics.yml",
                 "key": "epics",
                 "name": "EPICS Open License",
-                "spdxId": null,
+                "spdxId": "EPICS",
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://epics",
-                        "EPICS Open License"
+                        "EPICS Open License",
+                        "EPICS"
                     ],
+                    "__impliedId": "EPICS",
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -172,20 +142,15 @@ Raw Data
                         [
                             "Homepage",
                             "http://www.aps.anl.gov/epics/license/open.php"
+                        ],
+                        [
+                            null,
+                            "https://epics.anl.gov/license/open.php"
                         ]
                     ]
                 }
             }
         },
-        "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ]
-        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

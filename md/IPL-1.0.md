@@ -54,6 +54,67 @@ URLs
 
 -   http://www.opensource.org/licenses/IPL-1.0
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST Forward License text
+    	YOU MUST Provide Warranty disclaimer
+    	YOU MUST NOT Modify License text
+    	YOU MUST Credit Verbatim "Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved."
+    		ATTRIBUTE Highlighted
+    	IF Software modification
+    		YOU MUST Grant License
+    			ATTRIBUTE Original license
+    		YOU MUST Provide Copyright notice
+    USE CASE Binary delivery
+    	YOU MUST Credit Verbatim "Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved."
+    		ATTRIBUTE Highlighted
+    	EITHER
+    		YOU MUST Include Source code
+    	OR
+    		YOU MUST Provide Delayed source code delivery
+    		YOU MUST Provide Written offer
+    		EITHER
+    			ATTRIBUTE Customary medium
+    		OR
+    			ATTRIBUTE Via Internet
+    		ATTRIBUTE Reasonable
+    	USE CASE License change
+    		YOU MUST Use Equivalent License obligations
+    		YOU MUST Use Warranty disclaimer On behalf of Contributors
+    			ATTRIBUTE Effective
+    		YOU MUST Use Liability disclaimer On behalf of Contributors
+    			ATTRIBUTE Effective
+    		IF Service offerings
+    			ATTRIBUTE NOT Transferable
+    USE CASE Commercial distribution
+    	YOU MUST Indemnify Other contributors
+    COMPATIBILITY BSD-2-Clause
+    COMPATIBILITY BSD-2-Clause-Patent
+    COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY bzip2-1.0.5
+    COMPATIBILITY bzip2-1.0.6
+    COMPATIBILITY CC0-1.0
+    COMPATIBILITY CPL-1.0
+    COMPATIBILITY curl
+    COMPATIBILITY EFL-2.0
+    COMPATIBILITY EPL-1.0
+    COMPATIBILITY IBM-pibs
+    COMPATIBILITY ICU
+    COMPATIBILITY ISC
+    COMPATIBILITY Libpng
+    COMPATIBILITY MIT
+    COMPATIBILITY NTP
+    COMPATIBILITY UPL-1.0
+    COMPATIBILITY WTFPL
+    COMPATIBILITY X11
+    COMPATIBILITY Zlib
+    PATENT HINTS Yes
+    COPYLEFT CLAUSE Yes
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -141,6 +202,9 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ibmpl-1.0.yml "Scancode")
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IPL-1.0.txt "OSADL License Checklist")
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
@@ -185,10 +249,11 @@ Raw Data
                 ]
             ]
         ],
-        "__hasPatentHint": false,
+        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "[u'ibmpl']",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/IPL-1.0",
@@ -251,6 +316,24 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "IPL-1.0"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/IPL-1.0.txt",
+                "spdxId": "IPL-1.0",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tYOU MUST Provide Warranty disclaimer\n\tYOU MUST NOT Modify License text\n\tYOU MUST Credit Verbatim \"Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.\"\n\t\tATTRIBUTE Highlighted\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\nUSE CASE Binary delivery\n\tYOU MUST Credit Verbatim \"Copyright (C) 1996, 1999 International Business Machines Corporation and others. All Rights Reserved.\"\n\t\tATTRIBUTE Highlighted\n\tEITHER\n\t\tYOU MUST Include Source code\n\tOR\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Provide Written offer\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\t\tATTRIBUTE Reasonable\n\tUSE CASE License change\n\t\tYOU MUST Use Equivalent License obligations\n\t\tYOU MUST Use Warranty disclaimer On behalf of Contributors\n\t\t\tATTRIBUTE Effective\n\t\tYOU MUST Use Liability disclaimer On behalf of Contributors\n\t\t\tATTRIBUTE Effective\n\t\tIF Service offerings\n\t\t\tATTRIBUTE NOT Transferable\nUSE CASE Commercial distribution\n\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY CPL-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EPL-1.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "IPL-1.0"
+                    ],
+                    "__hasPatentHint": true,
+                    "__impliedCopyleft": [
+                        [
+                            "OSADL License Checklist",
+                            "Copyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "Copyleft"
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -509,6 +592,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "WeakCopyleft"
+            ],
+            [
+                "OSADL License Checklist",
+                "Copyleft"
             ],
             [
                 "Scancode",

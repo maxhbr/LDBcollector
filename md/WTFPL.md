@@ -183,7 +183,8 @@ Raw Data
             },
             "Scancode": {
                 "otherUrls": [
-                    "http://fedoraproject.org/wiki/Licensing/WTFPL"
+                    "http://fedoraproject.org/wiki/Licensing/WTFPL",
+                    "http://www.wtfpl.net/about/"
                 ],
                 "homepageUrl": "http://sam.zoy.org/wtfpl/",
                 "shortName": "WTFPL 2.0",
@@ -220,6 +221,10 @@ Raw Data
                         [
                             null,
                             "http://fedoraproject.org/wiki/Licensing/WTFPL"
+                        ],
+                        [
+                            null,
+                            "http://www.wtfpl.net/about/"
                         ]
                     ]
                 }

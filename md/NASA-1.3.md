@@ -195,6 +195,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "[u'nasa1.3']",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/NASA-1.3",

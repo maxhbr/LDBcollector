@@ -43,11 +43,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="156.59" cy="-210" rx="61.99" ry="18"/>
 <text text-anchor="middle" x="156.59" y="-206.3" font-family="Times-Roman" font-size="14.00">Zimbra&#45;1.4</text>
 </g>
-<!-- ZPL 1.4(3) -->
+<!-- Zimbra PL 1.4(3) -->
 <g id="node4" class="node">
-<title>ZPL 1.4(3)</title>
-<ellipse fill="white" stroke="white" cx="156.59" cy="-150" rx="44.69" ry="18"/>
-<text text-anchor="middle" x="156.59" y="-146.3" font-family="Times-Roman" font-size="14.00">ZPL 1.4</text>
+<title>Zimbra PL 1.4(3)</title>
+<ellipse fill="white" stroke="white" cx="156.59" cy="-150" rx="74.19" ry="18"/>
+<text text-anchor="middle" x="156.59" y="-146.3" font-family="Times-Roman" font-size="14.00">Zimbra PL 1.4</text>
 </g>
 <!-- Zimbra&#45;1.4(3) -->
 <g id="node5" class="node">

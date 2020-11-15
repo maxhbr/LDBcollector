@@ -234,6 +234,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "[u'cpal_1.0']",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/CPAL-1.0",

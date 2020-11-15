@@ -48,7 +48,8 @@ General Comments
     Lizenznehmer veränderte Versionen der Software unter beliebigen
     Lizenzbedingungen weiterverbreiten, also auch in proprietäre
     Software überführen.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
+    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL")))
 
 Obligations
 -----------
@@ -127,6 +128,7 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
 -   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
+    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL"))
 
 ### Raw JSON
 
@@ -158,6 +160,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://unlicense.org/",
@@ -418,7 +421,7 @@ Raw Data
                     "warranty"
                 ],
                 "_sourceURL": "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/unlicense.txt",
-                "content": "---\ntitle: The Unlicense\nspdx-id: Unlicense\nhidden: false\n\ndescription: A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.\n\nhow: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.\n\nusing:\n  - youtube-dl: https://github.com/rg3/youtube-dl/blob/master/LICENSE\n  - kakoune: https://github.com/mawww/kakoune/blob/master/UNLICENSE\n  - RDF.rb: https://github.com/ruby-rdf/rdf/blob/master/UNLICENSE\n\npermissions:\n  - private-use\n  - commercial-use\n  - modifications\n  - distribution\n\nconditions: []\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nThis is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <http://unlicense.org>\n",
+                "content": "---\ntitle: The Unlicense\nspdx-id: Unlicense\nhidden: false\n\ndescription: A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code.\n\nhow: Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file.\n\nusing:\n  scoop: https://github.com/lukesampson/scoop/blob/master/LICENSE\n  kakoune: https://github.com/mawww/kakoune/blob/master/UNLICENSE\n  RDF.rb: https://github.com/ruby-rdf/rdf/blob/master/UNLICENSE\n\npermissions:\n  - private-use\n  - commercial-use\n  - modifications\n  - distribution\n\nconditions: []\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nThis is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <https://unlicense.org>\n",
                 "name": "unlicense",
                 "hidden": "false",
                 "spdxId": "Unlicense",

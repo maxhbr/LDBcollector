@@ -194,10 +194,11 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "[u'ODC-PDDL-1.0']",
                 "status": "active",
                 "domain_software": false,
                 "url": "https://opendefinition.org/licenses/odc-pddl",
-                "maintainer": "Open Data Commons",
+                "maintainer": "",
                 "od_conformance": "approved",
                 "_sourceURL": "https://github.com/okfn/licenses/blob/master/licenses.csv",
                 "domain_data": true,

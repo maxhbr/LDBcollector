@@ -500,6 +500,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "",
                 "status": "active",
                 "domain_software": false,
                 "url": "https://creativecommons.org/licenses/by-nc/4.0/",

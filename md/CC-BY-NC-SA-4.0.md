@@ -7,8 +7,6 @@ Creative Commons Attribution Non Commercial Share Alike 4.0 International (CC-BY
 
 -   `scancode://cc-by-nc-sa-4.0`
 
--   `Creative Commons Attribution NonCommercial Share-Alike 4.0`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -492,9 +490,6 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
--   [Open Knowledge
-    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
@@ -506,8 +501,7 @@ Raw Data
         "__impliedNames": [
             "CC-BY-NC-SA-4.0",
             "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
-            "scancode://cc-by-nc-sa-4.0",
-            "Creative Commons Attribution NonCommercial Share-Alike 4.0"
+            "scancode://cc-by-nc-sa-4.0"
         ],
         "__impliedId": "CC-BY-NC-SA-4.0",
         "__impliedAmbiguousNames": [
@@ -526,33 +520,6 @@ Raw Data
         ],
         "__impliedNonCommercial": true,
         "facts": {
-            "Open Knowledge International": {
-                "is_generic": null,
-                "status": "active",
-                "domain_software": false,
-                "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                "maintainer": "Creative Commons",
-                "od_conformance": "rejected",
-                "_sourceURL": "https://github.com/okfn/licenses/blob/master/licenses.csv",
-                "domain_data": true,
-                "osd_conformance": "not reviewed",
-                "id": "CC-BY-NC-SA-4.0",
-                "title": "Creative Commons Attribution NonCommercial Share-Alike 4.0",
-                "_implications": {
-                    "__impliedNames": [
-                        "CC-BY-NC-SA-4.0",
-                        "Creative Commons Attribution NonCommercial Share-Alike 4.0"
-                    ],
-                    "__impliedId": "CC-BY-NC-SA-4.0",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-                        ]
-                    ]
-                },
-                "domain_content": true
-            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
@@ -725,10 +692,6 @@ Raw Data
             [
                 "Homepage",
                 "http://creativecommons.org/licenses/by-nc-sa/4.0/"
-            ],
-            [
-                null,
-                "https://creativecommons.org/licenses/by-nc-sa/4.0/"
             ]
         ]
     }

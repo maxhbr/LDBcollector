@@ -62,10 +62,11 @@ OSADL Rule
     	IF Documentation
     		YOU MUST Provide License text
     	IF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks
-    		YOU MUST Provide Information in file "LEGAL"
-    		IF ATTRIBUTE Dynamic
-    			YOU MUST Update File "LEGAL"
-    			YOU MUST Disseminate Patent notice AND Trademark notice
+    		YOU MUST Provide File "LEGAL"
+    			ATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks
+    			IF ATTRIBUTE Dynamic
+    				YOU MUST Update File "LEGAL"
+    				YOU MUST Disseminate Patent notice AND Trademark notice
     	IF Software modification
     		YOU MUST Grant License
     			ATTRIBUTE Original license
@@ -80,12 +81,18 @@ OSADL Rule
     	USE CASE Service offerings
     		YOU MUST Indemnify Other contributors
     USE CASE Binary delivery
+    	YOU MUST Include Notice
+    		YOU MUST Reference Source code
+    		ATTRIBUTE Highlighted
+    		ATTRIBUTE Included in Binary delivery OR Documentation
     	IF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks
-    		YOU MUST Provide Information in file "LEGAL"
+    		YOU MUST Provide File "LEGAL"
+    			ATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks
     			IF ATTRIBUTE Dynamic
     				YOU MUST Update File "LEGAL"
     				YOU MUST Disseminate Patent notice AND Trademark notice
     	IF Software modification
+    		YOU MUST Include Retrieval information of Source code in Notice
     		YOU MUST Provide Source code
     		EITHER	
     			ATTRIBUTE Same medium
@@ -120,6 +127,7 @@ OSADL Rule
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
     COMPATIBILITY curl
+    COMPATIBILITY EFL-2.0
     COMPATIBILITY IBM-pibs
     COMPATIBILITY ICU
     COMPATIBILITY ISC
@@ -130,7 +138,7 @@ OSADL Rule
     COMPATIBILITY WTFPL
     COMPATIBILITY X11
     COMPATIBILITY Zlib
-    PATENT HINTS
+    PATENT HINTS Yes
     COPYLEFT CLAUSE Yes
 
 (source: OSADL License Checklist)
@@ -347,9 +355,11 @@ Raw Data
                 ]
             ]
         ],
+        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "[u'mozilla1.1']",
                 "status": "retired",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/MPL-1.1",
@@ -421,11 +431,12 @@ Raw Data
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-1.1.txt",
                 "spdxId": "MPL-1.1",
-                "osadlRule": "USE CASE Source code delivery\r\n\tYOU MUST Provide Standard license notice (Exhibit A)\n\tYOU MUST Provide License text\n\tIF Documentation\n\t\tYOU MUST Provide License text\n\tIF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks\n\t\tYOU MUST Provide Information in file \"LEGAL\"\n\t\tIF ATTRIBUTE Dynamic\n\t\t\tYOU MUST Update File \"LEGAL\"\n\t\t\tYOU MUST Disseminate Patent notice AND Trademark notice\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\t\tATTRIBUTE Documentation of Software modifications\n\t\t\tATTRIBUTE Modification date\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Crediting Initial developer\n\t\t\tATTRIBUTE Included In Source code\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE Service offerings\n\t\tYOU MUST Indemnify Other contributors\nUSE CASE Binary delivery\n\tIF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks\n\t\tYOU MUST Provide Information in file \"LEGAL\"\n\t\t\tIF ATTRIBUTE Dynamic\n\t\t\t\tYOU MUST Update File \"LEGAL\"\n\t\t\t\tYOU MUST Disseminate Patent notice AND Trademark notice\n\tIF Software modification\n\t\tYOU MUST Provide Source code\n\t\tEITHER\t\r\n\t\t\tATTRIBUTE Same medium\n\t\tOR\r\n\t\t\tATTRIBUTE Via Internet\n\t\t\t\tATTRIBUTE Duration 12 months\n\t\t\t\tEXCEPT IF Software modification Was Updated\n\t\t\t\t\tATTRIBUTE Duration 6 months\n\t\tYOU MUST Provide Standard license notice (Exhibit A)\n\t\tYOU MUST Provide License text\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\t\tATTRIBUTE Documentation of Software modifications\n\t\t\tATTRIBUTE Modification date\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Crediting Initial developer\n\t\t\tATTRIBUTE Included In Source code\n\t\t\tIF Binary delivery Includes Copyright notice OR Documentation Includes Copyright notice\n\t\t\t\tATTRIBUTE Included in Binary delivery OR Documentation\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Indemnify Other Contributors\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE Service offerings\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nPATENT HINTS\nCOPYLEFT CLAUSE Yes\n",
+                "osadlRule": "USE CASE Source code delivery\r\n\tYOU MUST Provide Standard license notice (Exhibit A)\n\tYOU MUST Provide License text\n\tIF Documentation\n\t\tYOU MUST Provide License text\n\tIF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks\n\t\tYOU MUST Provide File \"LEGAL\"\n\t\t\tATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks\n\t\t\tIF ATTRIBUTE Dynamic\n\t\t\t\tYOU MUST Update File \"LEGAL\"\n\t\t\t\tYOU MUST Disseminate Patent notice AND Trademark notice\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\t\tATTRIBUTE Documentation of Software modifications\n\t\t\tATTRIBUTE Modification date\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Crediting Initial developer\n\t\t\tATTRIBUTE Included In Source code\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE Service offerings\n\t\tYOU MUST Indemnify Other contributors\nUSE CASE Binary delivery\n\tYOU MUST Include Notice\n\t\tYOU MUST Reference Source code\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Included in Binary delivery OR Documentation\n\tIF Patent holder OR Trademark holder OR Third-party patents OR Third-party trademarks\n\t\tYOU MUST Provide File \"LEGAL\"\n\t\t\tATTRIBUTE Crediting Patent holder AND Trademark holder AND Third-party patents AND Third-party trademarks\n\t\t\tIF ATTRIBUTE Dynamic\n\t\t\t\tYOU MUST Update File \"LEGAL\"\n\t\t\t\tYOU MUST Disseminate Patent notice AND Trademark notice\n\tIF Software modification\n\t\tYOU MUST Include Retrieval information of Source code in Notice\n\t\tYOU MUST Provide Source code\n\t\tEITHER\t\r\n\t\t\tATTRIBUTE Same medium\n\t\tOR\r\n\t\t\tATTRIBUTE Via Internet\n\t\t\t\tATTRIBUTE Duration 12 months\n\t\t\t\tEXCEPT IF Software modification Was Updated\n\t\t\t\t\tATTRIBUTE Duration 6 months\n\t\tYOU MUST Provide Standard license notice (Exhibit A)\n\t\tYOU MUST Provide License text\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\t\tATTRIBUTE Documentation of Software modifications\n\t\t\tATTRIBUTE Modification date\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\t\tATTRIBUTE Crediting Initial developer\n\t\t\tATTRIBUTE Included In Source code\n\t\t\tIF Binary delivery Includes Copyright notice OR Documentation Includes Copyright notice\n\t\t\t\tATTRIBUTE Included in Binary delivery OR Documentation\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Indemnify Other Contributors\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE Service offerings\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY EFL-2.0\r\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "MPL-1.1"
                     ],
+                    "__hasPatentHint": true,
                     "__impliedCopyleft": [
                         [
                             "OSADL License Checklist",

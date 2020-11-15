@@ -63,20 +63,21 @@
   verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
   veränderte Versionen der Software unter beliebigen Lizenzbedingungen
   weiterverbreiten, also auch in proprietäre Software überführen."
-  (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]])
+  (source: [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
+  ([[https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md][ODbL]]))
 
 ** Obligations
 
-| Rights:            | Conditions:           | Limitations:   |
-|--------------------+-----------------------+----------------|
-| - commercial-use   | - include-copyright   | - liability    |
-|                    |                       |                |
-| - modifications    | - document-changes    | - warranty     |
-|                    |                       |                |
-| - distribution     |                       |                |
-|                    |                       |                |
-| - private-use      |                       |                |
-                                                             
+| Rights:            | Conditions:                   | Limitations:   |
+|--------------------+-------------------------------+----------------|
+| - commercial-use   | - include-copyright--source   | - liability    |
+|                    |                               |                |
+| - modifications    | - document-changes            | - warranty     |
+|                    |                               |                |
+| - distribution     |                               |                |
+|                    |                               |                |
+| - private-use      |                               |                |
+                                                                     
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/zlib.txt][choosealicense.com]]
@@ -178,6 +179,7 @@
   Guidelines]]
 
 - [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
+  ([[https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md][ODbL]])
 
 - Override
 
@@ -221,6 +223,7 @@
       "facts": {
           "Open Knowledge International": {
               "is_generic": null,
+              "legacy_ids": "[u'zlib-license']",
               "status": "active",
               "domain_software": true,
               "url": "https://opensource.org/licenses/Zlib",
@@ -598,12 +601,12 @@
                   "warranty"
               ],
               "_sourceURL": "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/zlib.txt",
-              "content": "---\ntitle: zlib License\nspdx-id: Zlib\n\ndescription: A short permissive license, compatible with GPL. Requires altered source versions to be documented as such.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright\n  - document-changes\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nzlib License\n\n(C) [year] [fullname]\n\nThis software is provided 'as-is', without any express or implied\nwarranty.  In no event will the authors be held liable for any damages\narising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose,\nincluding commercial applications, and to alter it and redistribute it\nfreely, subject to the following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not\n   claim that you wrote the original software. If you use this software\n   in a product, an acknowledgment in the product documentation would be\n   appreciated but is not required.\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n3. This notice may not be removed or altered from any source distribution.\n",
+              "content": "---\ntitle: zlib License\nspdx-id: Zlib\n\ndescription: A short permissive license, compatible with GPL. Requires altered source versions to be documented as such.\n\nhow: Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\n\nusing:\n  GLFW: https://github.com/glfw/glfw/blob/master/LICENSE.md\n  Portainer: https://github.com/portainer/portainer/blob/develop/LICENSE\n  TinyXML-2: https://github.com/leethomason/tinyxml2/blob/master/LICENSE.txt\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - private-use\n\nconditions:\n  - include-copyright--source\n  - document-changes\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\nzlib License\n\n(C) [year] [fullname]\n\nThis software is provided 'as-is', without any express or implied\nwarranty.  In no event will the authors be held liable for any damages\narising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose,\nincluding commercial applications, and to alter it and redistribute it\nfreely, subject to the following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not\n   claim that you wrote the original software. If you use this software\n   in a product, an acknowledgment in the product documentation would be\n   appreciated but is not required.\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n3. This notice may not be removed or altered from any source distribution.\n",
               "name": "zlib",
               "hidden": null,
               "spdxId": "Zlib",
               "conditions": [
-                  "include-copyright",
+                  "include-copyright--source",
                   "document-changes"
               ],
               "permissions": [
@@ -653,7 +656,7 @@
                       "conditions": [
                           {
                               "tag": "ImpliedCondition",
-                              "contents": "include-copyright"
+                              "contents": "include-copyright--source"
                           },
                           {
                               "tag": "ImpliedCondition",
@@ -824,7 +827,7 @@
           "conditions": [
               {
                   "tag": "ImpliedCondition",
-                  "contents": "include-copyright"
+                  "contents": "include-copyright--source"
               },
               {
                   "tag": "ImpliedCondition",

@@ -174,7 +174,9 @@
           },
           "Scancode": {
               "otherUrls": [
-                  "http://www.bzip.org/"
+                  "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html",
+                  "http://www.bzip.org/",
+                  "https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6"
               ],
               "homepageUrl": "https://github.com/asimonov-im/bzip2/blob/master/LICENSE",
               "shortName": "bzip2 License 2010",
@@ -218,7 +220,15 @@
                       ],
                       [
                           null,
+                          "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
+                      ],
+                      [
+                          null,
                           "http://www.bzip.org/"
+                      ],
+                      [
+                          null,
+                          "https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6"
                       ]
                   ]
               }

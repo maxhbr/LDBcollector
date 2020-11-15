@@ -1,10 +1,17 @@
 * SSH short notice (SSH-short)
 
-| Key         | Value                                          |
-|-------------+------------------------------------------------|
-| Fullname    | SSH short notice                               |
-| Shortname   | SSH-short                                      |
-| Rating      | Unknown, probably Attention or Stop or No-Go   |
+| Key              | Value                                          |
+|------------------+------------------------------------------------|
+| Fullname         | SSH short notice                               |
+| Shortname        | SSH-short                                      |
+| Rating           | Unknown, probably Attention or Stop or No-Go   |
+| Classification   | NoCopyleft                                     |
+
+*Other Names:*
+
+- =scancode://tatu-ylonen=
+
+- =Tatu Ylonen License=
 
 ** Comments on (easy) usability
 
@@ -20,6 +27,16 @@
 
 - https://joinup.ec.europa.eu/svn/lesoll/trunk/italc/lib/src/dsa_key.cpp
 
+** Text
+
+#+BEGIN_EXAMPLE
+  As far as I am concerned, the code I have written for this software
+  can be used freely for any purpose.  Any derived versions of this
+  software must be clearly marked as such, and if the derived work is
+  incompatible with the protocol description in the RFC file, it must be
+  called by a name other than "ssh" or "Secure Shell".
+#+END_EXAMPLE
+
 --------------
 
 ** Raw Data
@@ -28,13 +45,17 @@
 
 - [[https://spdx.org/licenses/SSH-short.html][SPDX]]
 
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tatu-ylonen.yml][Scancode]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "SSH-short",
-          "SSH short notice"
+          "SSH short notice",
+          "scancode://tatu-ylonen",
+          "Tatu Ylonen License"
       ],
       "__impliedId": "SSH-short",
       "facts": {
@@ -76,9 +97,66 @@
                   ]
               },
               "spdxLicenseId": "SSH-short"
+          },
+          "Scancode": {
+              "otherUrls": [
+                  "https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/pathnames.h",
+                  "http://web.mit.edu/kolya/.f/root/athena.mit.edu/sipb.mit.edu/project/openssh/OldFiles/src/openssh-2.9.9p2/ssh-add.1",
+                  "https://joinup.ec.europa.eu/svn/lesoll/trunk/italc/lib/src/dsa_key.cpp"
+              ],
+              "homepageUrl": null,
+              "shortName": "Tatu Ylonen License",
+              "textUrls": null,
+              "text": "As far as I am concerned, the code I have written for this software\ncan be used freely for any purpose.  Any derived versions of this\nsoftware must be clearly marked as such, and if the derived work is\nincompatible with the protocol description in the RFC file, it must be\ncalled by a name other than \"ssh\" or \"Secure Shell\".\n",
+              "category": "Permissive",
+              "osiUrl": null,
+              "owner": "Secure Shell",
+              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tatu-ylonen.yml",
+              "key": "tatu-ylonen",
+              "name": "Tatu Ylonen License",
+              "spdxId": "SSH-short",
+              "notes": null,
+              "_implications": {
+                  "__impliedNames": [
+                      "scancode://tatu-ylonen",
+                      "Tatu Ylonen License",
+                      "SSH-short"
+                  ],
+                  "__impliedId": "SSH-short",
+                  "__impliedCopyleft": [
+                      [
+                          "Scancode",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft",
+                  "__impliedText": "As far as I am concerned, the code I have written for this software\ncan be used freely for any purpose.  Any derived versions of this\nsoftware must be clearly marked as such, and if the derived work is\nincompatible with the protocol description in the RFC file, it must be\ncalled by a name other than \"ssh\" or \"Secure Shell\".\n",
+                  "__impliedURLs": [
+                      [
+                          null,
+                          "https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/pathnames.h"
+                      ],
+                      [
+                          null,
+                          "http://web.mit.edu/kolya/.f/root/athena.mit.edu/sipb.mit.edu/project/openssh/OldFiles/src/openssh-2.9.9p2/ssh-add.1"
+                      ],
+                      [
+                          null,
+                          "https://joinup.ec.europa.eu/svn/lesoll/trunk/italc/lib/src/dsa_key.cpp"
+                      ]
+                  ]
+              }
           }
       },
+      "__impliedCopyleft": [
+          [
+              "Scancode",
+              "NoCopyleft"
+          ]
+      ],
+      "__calculatedCopyleft": "NoCopyleft",
       "__isOsiApproved": false,
+      "__impliedText": "As far as I am concerned, the code I have written for this software\ncan be used freely for any purpose.  Any derived versions of this\nsoftware must be clearly marked as such, and if the derived work is\nincompatible with the protocol description in the RFC file, it must be\ncalled by a name other than \"ssh\" or \"Secure Shell\".\n",
       "__impliedURLs": [
           [
               "SPDX",

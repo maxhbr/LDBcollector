@@ -108,6 +108,7 @@ Raw Data
             },
             "Scancode": {
                 "otherUrls": [
+                    "https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md",
                     "https://github.com/usnistgov/jsip"
                 ],
                 "homepageUrl": "https://github.com/usnistgov/jsip/blob/master/README#L122",
@@ -120,13 +121,15 @@ Raw Data
                 "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nist-pd.yml",
                 "key": "nist-pd",
                 "name": "NIST Public Domain Notice",
-                "spdxId": null,
+                "spdxId": "NIST-PD",
                 "notes": null,
                 "_implications": {
                     "__impliedNames": [
                         "scancode://nist-pd",
-                        "NIST Public Domain Notice"
+                        "NIST Public Domain Notice",
+                        "NIST-PD"
                     ],
+                    "__impliedId": "NIST-PD",
                     "__impliedCopyleft": [
                         [
                             "Scancode",
@@ -139,6 +142,10 @@ Raw Data
                         [
                             "Homepage",
                             "https://github.com/usnistgov/jsip/blob/master/README#L122"
+                        ],
+                        [
+                            null,
+                            "https://github.com/tcheneau/Routing/blob/f09f46fcfe636107f22f2c98348188a65a135d98/README.md"
                         ],
                         [
                             null,

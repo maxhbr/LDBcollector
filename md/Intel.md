@@ -126,6 +126,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "[u'intel-osl']",
                 "status": "retired",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/Intel",

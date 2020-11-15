@@ -132,6 +132,7 @@ OSADL Rule
     COMPATIBILITY bzip2-1.0.6
     COMPATIBILITY CC0-1.0
     COMPATIBILITY curl
+    COMPATIBILITY IBM-pibs
     COMPATIBILITY ICU
     COMPATIBILITY ISC
     COMPATIBILITY Libpng
@@ -141,7 +142,10 @@ OSADL Rule
     COMPATIBILITY WTFPL
     COMPATIBILITY X11
     COMPATIBILITY Zlib
+    INCOMPATIBILITY Apache-1.0
+    INCOMPATIBILITY Apache-1.1
     INCOMPATIBILITY BSD-4-Clause
+    INCOMPATIBILITY BSD-4-Clause-UC
     INCOMPATIBILITY FTL
     INCOMPATIBILITY IJG
     INCOMPATIBILITY OpenSSL
@@ -482,6 +486,7 @@ Raw Data
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
+                "legacy_ids": "",
                 "status": "active",
                 "domain_software": true,
                 "url": "https://opensource.org/licenses/EUPL-1.1",
@@ -558,7 +563,7 @@ Raw Data
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/EUPL-1.1.txt",
                 "spdxId": "EUPL-1.1",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST NOT Modify Copyright notice\n\tYOU MUST NOT Modify License notice\n\tYOU MUST NOT Modify Trademark notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tEITHER\n\t\tYOU MUST Include Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\tYOU MUST NOT Modify Copyright notice\n\t\tYOU MUST NOT Modify License notice\n\t\tYOU MUST NOT Modify Trademark notices\n\t\tYOU MUST NOT Modify Warranty disclaimer\n\t\tYOU MUST Forward License text\n\t\tIF Software modification\n\t\t\tYOU MUST Grant License\n\t\t\t\tATTRIBUTE Original license\n\t\t\tYOU MUST Provide Modification notice\n\t\t\tYOU MUST Provide Modification date\n\tOR\r\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charges\n\t\t\tATTRIBUTE Duration As long as distributed\n\tYOU MUST NOT Restrict Granted rights\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST NOT Modify Copyright notice\n\tYOU MUST NOT Modify License notice\n\tYOU MUST NOT Modify Trademark notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tEITHER\n\t\tYOU MUST Include Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\tYOU MUST NOT Modify Copyright notice\n\t\tYOU MUST NOT Modify License notice\n\t\tYOU MUST NOT Modify Trademark notices\n\t\tYOU MUST NOT Modify Warranty disclaimer\n\t\tYOU MUST Forward License text\n\t\tIF Software modification\n\t\t\tYOU MUST Grant License\n\t\t\t\tATTRIBUTE Original license\n\t\t\tYOU MUST Provide Modification notice\n\t\t\tYOU MUST Provide Modification date\n\tOR\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charges\n\t\t\tATTRIBUTE Duration As long as distributed\n\tYOU MUST NOT Restrict Granted rights\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
                 "_implications": {
                     "__impliedNames": [
                         "EUPL-1.1"

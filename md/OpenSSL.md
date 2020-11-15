@@ -60,6 +60,26 @@ OSADL Rule
     		YOU MUST NOT Promote Using "OpenSSL Toolkit" or "OpenSSL Project"
     		YOU MUST NOT Use "OpenSSL" in product name
     	YOU MUST NOT Modify License
+    COMPATIBILITY BSD-2-Clause
+    COMPATIBILITY BSD-2-Clause-Patent
+    COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY BSD-4-Clause
+    COMPATIBILITY BSD-4-Clause-UC
+    COMPATIBILITY bzip2-1.0.5
+    COMPATIBILITY bzip2-1.0.6
+    COMPATIBILITY CC0-1.0
+    COMPATIBILITY curl
+    COMPATIBILITY EFL-2.0
+    COMPATIBILITY IBM-pibs
+    COMPATIBILITY ICU
+    COMPATIBILITY ISC
+    COMPATIBILITY Libpng
+    COMPATIBILITY MIT
+    COMPATIBILITY NTP
+    COMPATIBILITY UPL-1.0
+    COMPATIBILITY WTFPL
+    COMPATIBILITY X11
+    COMPATIBILITY Zlib
     COPYLEFT CLAUSE Questionable
 
 (source: OSADL License Checklist)
@@ -195,7 +215,7 @@ Raw Data
             "OSADL License Checklist": {
                 "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/OpenSSL.txt",
                 "spdxId": "OpenSSL",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\t\tYOU MUST Credit Verbatim \"This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\"\n\tUSE CASE Include Windows code\n\t\tYOU MUST Credit Verbatim \"This product includes software written by Tim Hudson (tjh@cryptsoft.com)\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote Using \"OpenSSL Toolkit\" or \"OpenSSL Project\"\n\t\tYOU MUST NOT Use \"OpenSSL\" in product name\n\tYOU MUST NOT Modify License\nCOPYLEFT CLAUSE Questionable\n",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\t\tYOU MUST Credit Verbatim \"This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\"\n\tUSE CASE Include Windows code\n\t\tYOU MUST Credit Verbatim \"This product includes software written by Tim Hudson (tjh@cryptsoft.com)\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote Using \"OpenSSL Toolkit\" or \"OpenSSL Project\"\n\t\tYOU MUST NOT Use \"OpenSSL\" in product name\n\tYOU MUST NOT Modify License\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOPYLEFT CLAUSE Questionable\n",
                 "_implications": {
                     "__impliedNames": [
                         "OpenSSL"
