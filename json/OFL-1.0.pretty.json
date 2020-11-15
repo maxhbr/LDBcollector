@@ -92,23 +92,6 @@
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "OFL-1.0",
-                    "OFL-1.0"
-                ],
-                "__impliedId": "OFL-1.0"
-            },
-            "shortname": "OFL-1.0",
-            "riskInt": 3,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "OFL-1.0"
-            ],
-            "patentInt": 0
-        },
         "Debian Free Software Guidelines": {
             "LicenseName": "The SIL Open Font License",
             "State": "DFSGCompatible",

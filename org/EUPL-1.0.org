@@ -306,23 +306,6 @@
                   ]
               }
           },
-          "Cavil": {
-              "implications": {
-                  "__impliedNames": [
-                      "EUPL-1.0",
-                      "EUPL-1.0"
-                  ],
-                  "__impliedId": "EUPL-1.0"
-              },
-              "shortname": "EUPL-1.0",
-              "riskInt": 5,
-              "trademarkInt": 0,
-              "opinionInt": 0,
-              "otherNames": [
-                  "EUPL-1.0"
-              ],
-              "patentInt": 0
-          },
           "BlueOak License List": {
               "url": "https://spdx.org/licenses/EUPL-1.0.html",
               "familyName": "European Union Public License",

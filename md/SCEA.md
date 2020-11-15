@@ -166,23 +166,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "SCEA",
-                        "SCEA"
-                    ],
-                    "__impliedId": "SCEA"
-                },
-                "shortname": "SCEA",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SCEA"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

@@ -7,29 +7,9 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 
 -   `GPL-2.0`
 
--   `GPLv2`
-
--   `GPL2`
-
--   `GPL-2`
-
--   `GPL v2.0`
-
--   `GPL v2 only`
-
--   `GPL v2`
+-   `scancode://gpl-2.0`
 
 -   `GPL 2.0`
-
--   `GNU General Public License version 2 (GPL v2)`
-
--   `GNU General Public License (GPL) v2`
-
--   `GNU GPL v2`
-
--   `GLPv2`
-
--   `scancode://gpl-2.0`
 
 -   `gpl-2.0`
 
@@ -42,6 +22,8 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 -   `GNU General Public License 2.0`
 
 -   `GPL2.0`
+
+-   `GPL2`
 
 -   `GPL (v2)`
 
@@ -595,24 +577,15 @@ Raw Data
             "GPL-2.0-only",
             "GNU General Public License v2.0 only",
             "GPL-2.0",
-            "GPLv2",
-            "GPL2",
-            "GPL-2",
-            "GPL v2.0",
-            "GPL v2 only",
-            "GPL v2",
-            "GPL 2.0",
-            "GNU General Public License version 2 (GPL v2)",
-            "GNU General Public License (GPL) v2",
-            "GNU GPL v2",
-            "GLPv2",
             "scancode://gpl-2.0",
+            "GPL 2.0",
             "gpl-2.0",
             "GNU GPLv2",
             "GNU General Public License, Version 2.0",
             "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
             "GNU General Public License 2.0",
             "GPL2.0",
+            "GPL2",
             "GPL (v2)"
         ],
         "__impliedId": "GPL-2.0-only",
@@ -859,20 +832,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "GPL-2.0"
-                    ],
-                    "__impliedId": "GPL-2.0"
-                },
-                "shortname": "GPL-2.0",
-                "riskInt": 1,
-                "trademarkInt": 1,
-                "opinionInt": 1,
-                "otherNames": [],
-                "patentInt": 1
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

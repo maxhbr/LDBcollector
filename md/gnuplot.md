@@ -5,8 +5,6 @@ gnuplot License (gnuplot)
 
 **Other Names:**
 
--   `SUSE-Gnuplot`
-
 -   `scancode://gnuplot`
 
 Comments on (easy) usability
@@ -64,8 +62,6 @@ Raw Data
         "__impliedNames": [
             "gnuplot",
             "gnuplot License",
-            "SUSE-Gnuplot",
-            "Gnuplot",
             "scancode://gnuplot"
         ],
         "__impliedId": "gnuplot",
@@ -141,23 +137,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "SUSE-Gnuplot",
-                        "Gnuplot"
-                    ],
-                    "__impliedId": "SUSE-Gnuplot"
-                },
-                "shortname": "SUSE-Gnuplot",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Gnuplot"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

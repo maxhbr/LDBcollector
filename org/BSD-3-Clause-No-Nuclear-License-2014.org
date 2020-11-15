@@ -167,23 +167,6 @@
                   ]
               }
           },
-          "Cavil": {
-              "implications": {
-                  "__impliedNames": [
-                      "BSD-3-Clause-No-Nuclear-License-2014",
-                      "BSD-3-Clause-No-Nuclear-License-2014"
-                  ],
-                  "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014"
-              },
-              "shortname": "BSD-3-Clause-No-Nuclear-License-2014",
-              "riskInt": 5,
-              "trademarkInt": 0,
-              "opinionInt": 0,
-              "otherNames": [
-                  "BSD-3-Clause-No-Nuclear-License-2014"
-              ],
-              "patentInt": 0
-          },
           "BlueOak License List": {
               "BlueOakRating": "Bronze",
               "url": "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html",

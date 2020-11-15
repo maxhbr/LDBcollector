@@ -5,8 +5,6 @@ NetCDF license (NetCDF)
 
 **Other Names:**
 
--   `SUSE-NetCDF`
-
 -   `scancode://netcdf`
 
 Comments on (easy) usability
@@ -68,7 +66,6 @@ Raw Data
         "__impliedNames": [
             "NetCDF",
             "NetCDF license",
-            "SUSE-NetCDF",
             "scancode://netcdf",
             "NetCDF License"
         ],
@@ -139,25 +136,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "NetCDF",
-                        "SUSE-NetCDF",
-                        "NetCDF"
-                    ],
-                    "__impliedId": "NetCDF"
-                },
-                "shortname": "NetCDF",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SUSE-NetCDF",
-                    "NetCDF"
-                ],
-                "patentInt": 0
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

@@ -311,23 +311,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "NASA-1.3",
-                        "NASA-1.3"
-                    ],
-                    "__impliedId": "NASA-1.3"
-                },
-                "shortname": "NASA-1.3",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "NASA-1.3"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",

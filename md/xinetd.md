@@ -5,8 +5,6 @@ xinetd License (xinetd)
 
 **Other Names:**
 
--   `SUSE-xinetd`
-
 -   `scancode://xinetd`
 
 Comments on (easy) usability
@@ -88,7 +86,6 @@ Raw Data
         "__impliedNames": [
             "xinetd",
             "xinetd License",
-            "SUSE-xinetd",
             "scancode://xinetd"
         ],
         "__impliedId": "xinetd",
@@ -158,25 +155,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "xinetd",
-                        "xinetd",
-                        "SUSE-xinetd"
-                    ],
-                    "__impliedId": "xinetd"
-                },
-                "shortname": "xinetd",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "xinetd",
-                    "SUSE-xinetd"
-                ],
-                "patentInt": 0
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

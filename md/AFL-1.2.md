@@ -249,23 +249,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "AFL-1.2",
-                        "AFL-1.2"
-                    ],
-                    "__impliedId": "AFL-1.2"
-                },
-                "shortname": "AFL-1.2",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "AFL-1.2"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/AFL-1.2.html",

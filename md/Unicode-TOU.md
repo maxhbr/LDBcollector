@@ -222,23 +222,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Unicode-TOU",
-                        "Unicode-TOU"
-                    ],
-                    "__impliedId": "Unicode-TOU"
-                },
-                "shortname": "Unicode-TOU",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Unicode-TOU"
-                ],
-                "patentInt": 1
             }
         },
         "__isOsiApproved": false,

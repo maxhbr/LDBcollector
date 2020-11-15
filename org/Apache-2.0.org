@@ -10,41 +10,19 @@
 
 *Other Names:*
 
-- =The Apache Software License=
-
-- =Apache v2.0=
-
-- =Apache Software License, Version 2.0=
-
-- =Apache Software License ..=
-
-- =Apache Software License=
-
-- =Apache License, Version 2.0=
-
-- =Apache License Version 2.0=
-
-- =Apache License=
+- =scancode://apache-2.0=
 
 - =Apache 2.0=
 
-- =ASLv2.0=
-
-- =ASLv2=
-
-- =ASLv..=
-
-- =ASL2=
-
-- =ASL 2.0=
-
-- =scancode://apache-2.0=
+- =Apache License, Version 2.0=
 
 - =License :: OSI Approved :: Apache Software License=
 
 - =Apache Software License 2.0=
 
 - =Apache (v2.0)=
+
+- =ASL 2.0=
 
 ** Description
 
@@ -384,25 +362,14 @@
       "__impliedNames": [
           "Apache-2.0",
           "Apache License 2.0",
-          "The Apache Software License",
-          "Apache v2.0",
-          "Apache Software License, Version 2.0",
-          "Apache Software License ..",
-          "Apache Software License",
-          "Apache License, Version 2.0",
-          "Apache License Version 2.0",
-          "Apache License",
-          "Apache 2.0",
-          "ASLv2.0",
-          "ASLv2",
-          "ASLv..",
-          "ASL2",
-          "ASL 2.0",
           "scancode://apache-2.0",
+          "Apache 2.0",
           "apache-2.0",
+          "Apache License, Version 2.0",
           "License :: OSI Approved :: Apache Software License",
           "Apache Software License 2.0",
-          "Apache (v2.0)"
+          "Apache (v2.0)",
+          "ASL 2.0"
       ],
       "__impliedId": "Apache-2.0",
       "__impliedAmbiguousNames": [
@@ -558,53 +525,6 @@
                       ]
                   ]
               }
-          },
-          "Cavil": {
-              "implications": {
-                  "__impliedNames": [
-                      "Apache-2.0",
-                      "The Apache Software License",
-                      "Apache-2.0",
-                      "Apache v2.0",
-                      "Apache Software License, Version 2.0",
-                      "Apache Software License ..",
-                      "Apache Software License",
-                      "Apache License, Version 2.0",
-                      "Apache License Version 2.0",
-                      "Apache License 2.0",
-                      "Apache License",
-                      "Apache 2.0",
-                      "ASLv2.0",
-                      "ASLv2",
-                      "ASLv..",
-                      "ASL2",
-                      "ASL 2.0"
-                  ],
-                  "__impliedId": "Apache-2.0"
-              },
-              "shortname": "Apache-2.0",
-              "riskInt": 1,
-              "trademarkInt": 1,
-              "opinionInt": 1,
-              "otherNames": [
-                  "The Apache Software License",
-                  "Apache-2.0",
-                  "Apache v2.0",
-                  "Apache Software License, Version 2.0",
-                  "Apache Software License ..",
-                  "Apache Software License",
-                  "Apache License, Version 2.0",
-                  "Apache License Version 2.0",
-                  "Apache License 2.0",
-                  "Apache License",
-                  "Apache 2.0",
-                  "ASLv2.0",
-                  "ASLv2",
-                  "ASLv..",
-                  "ASL2",
-                  "ASL 2.0"
-              ],
-              "patentInt": 1
           },
           "OpenChainPolicyTemplate": {
               "isSaaSDeemed": "no",
@@ -787,12 +707,12 @@
                   "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
               },
               "Publication date": "2004",
-              "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-              "Koordinaten": {
+              "Coordinates": {
                   "name": "Apache License",
                   "version": "2.0",
                   "spdxId": "Apache-2.0"
               },
+              "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
               "Patent grant": {
                   "value": "Yes",
                   "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

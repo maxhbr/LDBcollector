@@ -228,23 +228,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "PostgreSQL",
-                        "PostgreSQL"
-                    ],
-                    "__impliedId": "PostgreSQL"
-                },
-                "shortname": "PostgreSQL",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "PostgreSQL"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",

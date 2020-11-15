@@ -5,8 +5,6 @@ Licence Art Libre 1.2 (LAL-1.2)
 
 **Other Names:**
 
--   `https://spdx.org/licenses/LAL-1.2.html`
-
 -   `scancode://lal-1.2`
 
 Comments on (easy) usability
@@ -105,7 +103,6 @@ Raw Data
         "__impliedNames": [
             "LAL-1.2",
             "Licence Art Libre 1.2",
-            "https://spdx.org/licenses/LAL-1.2.html",
             "scancode://lal-1.2"
         ],
         "__impliedId": "LAL-1.2",
@@ -178,25 +175,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "LAL-1.2",
-                        "https://spdx.org/licenses/LAL-1.2.html",
-                        "LAL-1.2"
-                    ],
-                    "__impliedId": "LAL-1.2"
-                },
-                "shortname": "LAL-1.2",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "https://spdx.org/licenses/LAL-1.2.html",
-                    "LAL-1.2"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Licence Art Libre (Free Art License)",

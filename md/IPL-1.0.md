@@ -5,12 +5,6 @@ IBM Public License v1.0 (IPL-1.0)
 
 **Other Names:**
 
--   `IBM Public License ..`
-
--   `IBM Public License`
-
--   `IBM PL`
-
 -   `scancode://ibmpl-1.0`
 
 -   `IPL 1.0`
@@ -140,9 +134,6 @@ Raw Data
         "__impliedNames": [
             "IPL-1.0",
             "IBM Public License v1.0",
-            "IBM Public License ..",
-            "IBM Public License",
-            "IBM PL",
             "scancode://ibmpl-1.0",
             "IPL 1.0",
             "IBM Public License, Version 1.0",
@@ -295,29 +286,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "IPL-1.0",
-                        "IPL-1.0",
-                        "IBM Public License ..",
-                        "IBM Public License",
-                        "IBM PL"
-                    ],
-                    "__impliedId": "IPL-1.0"
-                },
-                "shortname": "IPL-1.0",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "IPL-1.0",
-                    "IBM Public License ..",
-                    "IBM Public License",
-                    "IBM PL"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",
@@ -450,12 +418,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "01.08.99",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "IBM Public License",
                     "version": "1.0",
                     "spdxId": "IPL-1.0"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "_implications": {
                     "__impliedNames": [
                         "IPL-1.0",

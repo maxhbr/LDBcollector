@@ -179,23 +179,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "curl",
-                        "curl"
-                    ],
-                    "__impliedId": "curl"
-                },
-                "shortname": "curl",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "curl"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/curl.html",

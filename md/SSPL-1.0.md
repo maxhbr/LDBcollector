@@ -671,20 +671,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "SSPL-1.0"
-                    ],
-                    "__impliedId": "SSPL-1.0"
-                },
-                "shortname": "SSPL-1.0",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [],
-                "patentInt": 0
             }
         },
         "__isOsiApproved": false,

@@ -5,9 +5,9 @@ Artistic License 2.0 (Artistic-2.0)
 
 **Other Names:**
 
--   `Artistic 2.0`
-
 -   `scancode://artistic-2.0`
+
+-   `Artistic 2.0`
 
 -   `Artistic License, Version 2.0`
 
@@ -164,8 +164,8 @@ Raw Data
         "__impliedNames": [
             "Artistic-2.0",
             "Artistic License 2.0",
-            "Artistic 2.0",
             "scancode://artistic-2.0",
+            "Artistic 2.0",
             "artistic-2.0",
             "Artistic License, Version 2.0",
             "License :: OSI Approved :: Artistic License",
@@ -314,25 +314,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Artistic-2.0",
-                        "Artistic-2.0",
-                        "Artistic 2.0"
-                    ],
-                    "__impliedId": "Artistic-2.0"
-                },
-                "shortname": "Artistic-2.0",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 1,
-                "otherNames": [
-                    "Artistic-2.0",
-                    "Artistic 2.0"
-                ],
-                "patentInt": 0
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
@@ -496,12 +477,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "2000",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "Artistic License",
                     "version": "2.0",
                     "spdxId": "Artistic-2.0"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "Patent grant": {
                     "value": "No",
                     "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

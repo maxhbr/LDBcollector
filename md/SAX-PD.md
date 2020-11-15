@@ -157,23 +157,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "SAX-PD",
-                        "SAX-PD"
-                    ],
-                    "__impliedId": "SAX-PD"
-                },
-                "shortname": "SAX-PD",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SAX-PD"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

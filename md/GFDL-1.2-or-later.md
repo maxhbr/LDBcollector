@@ -5,16 +5,6 @@ GNU Free Documentation License v1.2 or later (GFDL-1.2-or-later)
 
 **Other Names:**
 
--   `SUSE-GFDL-1.2+`
-
--   `GFDLv1.2+`
-
--   `GFDL-1.2+`
-
--   `FDLv1.2+`
-
--   `FDL-1.2+`
-
 -   `scancode://gfdl-1.2-plus`
 
 -   `GFDL 1.2 or later`
@@ -50,11 +40,6 @@ Raw Data
         "__impliedNames": [
             "GFDL-1.2-or-later",
             "GNU Free Documentation License v1.2 or later",
-            "SUSE-GFDL-1.2+",
-            "GFDLv1.2+",
-            "GFDL-1.2+",
-            "FDLv1.2+",
-            "FDL-1.2+",
             "scancode://gfdl-1.2-plus",
             "GFDL 1.2 or later"
         ],
@@ -154,33 +139,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "GFDL-1.2-or-later",
-                        "SUSE-GFDL-1.2+",
-                        "GFDLv1.2+",
-                        "GFDL-1.2-or-later",
-                        "GFDL-1.2+",
-                        "FDLv1.2+",
-                        "FDL-1.2+"
-                    ],
-                    "__impliedId": "GFDL-1.2-or-later"
-                },
-                "shortname": "GFDL-1.2-or-later",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SUSE-GFDL-1.2+",
-                    "GFDLv1.2+",
-                    "GFDL-1.2-or-later",
-                    "GFDL-1.2+",
-                    "FDLv1.2+",
-                    "FDL-1.2+"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "GNU Free Documentation License (GFDL)",

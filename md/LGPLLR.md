@@ -332,23 +332,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "LGPLLR",
-                        "LGPLLR"
-                    ],
-                    "__impliedId": "LGPLLR"
-                },
-                "shortname": "LGPLLR",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "LGPLLR"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

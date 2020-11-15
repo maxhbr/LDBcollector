@@ -225,23 +225,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "HPND",
-                        "HPND"
-                    ],
-                    "__impliedId": "HPND"
-                },
-                "shortname": "HPND",
-                "riskInt": 0,
-                "trademarkInt": 0,
-                "opinionInt": 1,
-                "otherNames": [
-                    "HPND"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",

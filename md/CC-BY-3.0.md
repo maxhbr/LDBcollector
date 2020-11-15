@@ -441,23 +441,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-3.0",
-                        "CC-BY-3.0"
-                    ],
-                    "__impliedId": "CC-BY-3.0"
-                },
-                "shortname": "CC-BY-3.0",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "CC-BY-3.0"
-                ],
-                "patentInt": 0
-            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Creative Commons Attribution unported (CC-BY) v3.0",
                 "State": "DFSGCompatible",

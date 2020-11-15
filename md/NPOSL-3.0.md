@@ -272,23 +272,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "NPOSL-3.0",
-                        "NPOSL-3.0"
-                    ],
-                    "__impliedId": "NPOSL-3.0"
-                },
-                "shortname": "NPOSL-3.0",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "NPOSL-3.0"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",

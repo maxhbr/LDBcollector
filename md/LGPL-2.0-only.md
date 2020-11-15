@@ -5,16 +5,6 @@ GNU Library General Public License v2 only (LGPL-2.0-only)
 
 **Other Names:**
 
--   `LGPLv2.0`
-
--   `LGPLv2`
-
--   `LGPL-2.0`
-
--   `LGPL v2.0 only`
-
--   `LGPL v2`
-
 -   `scancode://lgpl-2.0`
 
 -   `LGPL 2.0`
@@ -561,11 +551,6 @@ Raw Data
         "__impliedNames": [
             "LGPL-2.0-only",
             "GNU Library General Public License v2 only",
-            "LGPLv2.0",
-            "LGPLv2",
-            "LGPL-2.0",
-            "LGPL v2.0 only",
-            "LGPL v2",
             "scancode://lgpl-2.0",
             "LGPL 2.0"
         ],
@@ -687,33 +672,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "LGPL-2.0-only",
-                        "LGPLv2.0",
-                        "LGPLv2",
-                        "LGPL-2.0-only",
-                        "LGPL-2.0",
-                        "LGPL v2.0 only",
-                        "LGPL v2"
-                    ],
-                    "__impliedId": "LGPL-2.0-only"
-                },
-                "shortname": "LGPL-2.0-only",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "LGPLv2.0",
-                    "LGPLv2",
-                    "LGPL-2.0-only",
-                    "LGPL-2.0",
-                    "LGPL v2.0 only",
-                    "LGPL v2"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "The GNU Lesser General Public License (LGPL)",

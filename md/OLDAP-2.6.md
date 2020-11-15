@@ -177,23 +177,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "OLDAP-2.6",
-                        "OLDAP-2.6"
-                    ],
-                    "__impliedId": "OLDAP-2.6"
-                },
-                "shortname": "OLDAP-2.6",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "OLDAP-2.6"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/OLDAP-2.6.html",

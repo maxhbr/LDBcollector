@@ -5,37 +5,15 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 **Other Names:**
 
--   `libGeoIPUpdate is GPLv2 or later`
-
--   `GPLv2+`
-
--   `GPLv2 or later`
-
--   `GPL2+`
-
--   `GPL-2.0+`
-
--   `GPL-2.0 or later`
-
--   `GPL-2+`
-
--   `GPL v2.0 or later`
-
--   `GPL v2+`
-
--   `GPL v2 or later`
-
--   `GNU General Public License version 2 or later (GPLv2 or later)`
-
--   `GNU General Public License version 2 or later (GPL v2 or later)`
-
--   `GNU General Public License version 2 or later`
-
 -   `scancode://gpl-2.0-plus`
 
 -   `GPL 2.0 or later`
 
+-   `GPL-2.0+`
+
 -   `GPL2.0+`
+
+-   `GPL2+`
 
 -   `GPL (v2 or later)`
 
@@ -206,22 +184,11 @@ Raw Data
         "__impliedNames": [
             "GPL-2.0-or-later",
             "GNU General Public License v2.0 or later",
-            "libGeoIPUpdate is GPLv2 or later",
-            "GPLv2+",
-            "GPLv2 or later",
-            "GPL2+",
-            "GPL-2.0+",
-            "GPL-2.0 or later",
-            "GPL-2+",
-            "GPL v2.0 or later",
-            "GPL v2+",
-            "GPL v2 or later",
-            "GNU General Public License version 2 or later (GPLv2 or later)",
-            "GNU General Public License version 2 or later (GPL v2 or later)",
-            "GNU General Public License version 2 or later",
             "scancode://gpl-2.0-plus",
             "GPL 2.0 or later",
+            "GPL-2.0+",
             "GPL2.0+",
+            "GPL2+",
             "GPL (v2 or later)"
         ],
         "__impliedId": "GPL-2.0-or-later",
@@ -366,49 +333,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "GPL-2.0-or-later",
-                        "libGeoIPUpdate is GPLv2 or later",
-                        "GPLv2+",
-                        "GPLv2 or later",
-                        "GPL2+",
-                        "GPL-2.0-or-later",
-                        "GPL-2.0+",
-                        "GPL-2.0 or later",
-                        "GPL-2+",
-                        "GPL v2.0 or later",
-                        "GPL v2+",
-                        "GPL v2 or later",
-                        "GNU General Public License version 2 or later (GPLv2 or later)",
-                        "GNU General Public License version 2 or later (GPL v2 or later)",
-                        "GNU General Public License version 2 or later"
-                    ],
-                    "__impliedId": "GPL-2.0-or-later"
-                },
-                "shortname": "GPL-2.0-or-later",
-                "riskInt": 0,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "libGeoIPUpdate is GPLv2 or later",
-                    "GPLv2+",
-                    "GPLv2 or later",
-                    "GPL2+",
-                    "GPL-2.0-or-later",
-                    "GPL-2.0+",
-                    "GPL-2.0 or later",
-                    "GPL-2+",
-                    "GPL v2.0 or later",
-                    "GPL v2+",
-                    "GPL v2 or later",
-                    "GNU General Public License version 2 or later (GPLv2 or later)",
-                    "GNU General Public License version 2 or later (GPL v2 or later)",
-                    "GNU General Public License version 2 or later"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "The GNU General Public License (GPL)",

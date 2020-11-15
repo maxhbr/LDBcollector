@@ -5,9 +5,9 @@ Open Public License v1.0 (OPL-1.0)
 
 **Other Names:**
 
--   `Open Public License 1.0`
-
 -   `scancode://open-public`
+
+-   `Open Public License 1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -381,8 +381,8 @@ Raw Data
         "__impliedNames": [
             "OPL-1.0",
             "Open Public License v1.0",
-            "Open Public License 1.0",
-            "scancode://open-public"
+            "scancode://open-public",
+            "Open Public License 1.0"
         ],
         "__impliedId": "OPL-1.0",
         "__impliedAmbiguousNames": [
@@ -465,25 +465,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "OPL-1.0",
-                        "Open Public License 1.0",
-                        "OPL-1.0"
-                    ],
-                    "__impliedId": "OPL-1.0"
-                },
-                "shortname": "OPL-1.0",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Open Public License 1.0",
-                    "OPL-1.0"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Open Publication License (OPL) v1.0",

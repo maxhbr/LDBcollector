@@ -109,23 +109,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "FSFULLR",
-                        "FSFULLR"
-                    ],
-                    "__impliedId": "FSFULLR"
-                },
-                "shortname": "FSFULLR",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "FSFULLR"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

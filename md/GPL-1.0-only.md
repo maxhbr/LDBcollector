@@ -5,11 +5,11 @@ GNU General Public License v1.0 only (GPL-1.0-only)
 
 **Other Names:**
 
--   `GPL-1.0`
-
 -   `scancode://gpl-1.0`
 
 -   `GPL 1.0`
+
+-   `GPL-1.0`
 
 -   `GPL1.0`
 
@@ -309,9 +309,9 @@ Raw Data
         "__impliedNames": [
             "GPL-1.0-only",
             "GNU General Public License v1.0 only",
-            "GPL-1.0",
             "scancode://gpl-1.0",
             "GPL 1.0",
+            "GPL-1.0",
             "GPL1.0",
             "GPL1"
         ],
@@ -412,25 +412,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "GPL-1.0-only",
-                        "GPL-1.0-only",
-                        "GPL-1.0"
-                    ],
-                    "__impliedId": "GPL-1.0-only"
-                },
-                "shortname": "GPL-1.0-only",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "GPL-1.0-only",
-                    "GPL-1.0"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "The GNU General Public License (GPL)",

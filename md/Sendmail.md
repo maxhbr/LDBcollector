@@ -5,8 +5,6 @@ Sendmail License (Sendmail)
 
 **Other Names:**
 
--   `SUSE-Sendmail`
-
 -   `scancode://sendmail`
 
 Comments on (easy) usability
@@ -122,7 +120,6 @@ Raw Data
         "__impliedNames": [
             "Sendmail",
             "Sendmail License",
-            "SUSE-Sendmail",
             "scancode://sendmail"
         ],
         "__impliedId": "Sendmail",
@@ -219,25 +216,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Sendmail",
-                        "Sendmail",
-                        "SUSE-Sendmail"
-                    ],
-                    "__impliedId": "Sendmail"
-                },
-                "shortname": "Sendmail",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Sendmail",
-                    "SUSE-Sendmail"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

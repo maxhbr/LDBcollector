@@ -182,23 +182,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "OLDAP-2.3",
-                        "OLDAP-2.3"
-                    ],
-                    "__impliedId": "OLDAP-2.3"
-                },
-                "shortname": "OLDAP-2.3",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "OLDAP-2.3"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/OLDAP-2.3.html",

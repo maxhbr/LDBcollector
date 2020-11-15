@@ -5,8 +5,6 @@ Do What The F\*ck You Want To Public License (WTFPL)
 
 **Other Names:**
 
--   `SUSE-WTFPL-2.0`
-
 -   `scancode://wtfpl-2.0`
 
 -   `WTFPL 2.0`
@@ -101,7 +99,6 @@ Raw Data
         "__impliedNames": [
             "WTFPL",
             "Do What The F*ck You Want To Public License",
-            "SUSE-WTFPL-2.0",
             "scancode://wtfpl-2.0",
             "WTFPL 2.0",
             "wtfpl",
@@ -200,25 +197,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "WTFPL",
-                        "WTFPL",
-                        "SUSE-WTFPL-2.0"
-                    ],
-                    "__impliedId": "WTFPL"
-                },
-                "shortname": "WTFPL",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "WTFPL",
-                    "SUSE-WTFPL-2.0"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",
@@ -308,12 +286,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "December 2004",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "Do What The Fuck You Want To Public License (WTFPL)",
                     "version": "2",
                     "spdxId": "WTFPL"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "Patent grant": {
                     "value": "No",
                     "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

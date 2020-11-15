@@ -105,23 +105,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Dotseqn",
-                        "Dotseqn"
-                    ],
-                    "__impliedId": "Dotseqn"
-                },
-                "shortname": "Dotseqn",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Dotseqn"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

@@ -670,23 +670,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "D-FSL-1.0",
-                        "D-FSL-1.0"
-                    ],
-                    "__impliedId": "D-FSL-1.0"
-                },
-                "shortname": "D-FSL-1.0",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "D-FSL-1.0"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

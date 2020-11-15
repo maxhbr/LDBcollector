@@ -207,23 +207,6 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
                     ]
                 ]
             }
-        },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "CPOL-1.02",
-                    "CPOL-1.02"
-                ],
-                "__impliedId": "CPOL-1.02"
-            },
-            "shortname": "CPOL-1.02",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "CPOL-1.02"
-            ],
-            "patentInt": 0
         }
     },
     "__impliedCopyleft": [

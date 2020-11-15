@@ -115,23 +115,6 @@
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "APSL-1.0",
-                    "APSL-1.0"
-                ],
-                "__impliedId": "APSL-1.0"
-            },
-            "shortname": "APSL-1.0",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "APSL-1.0"
-            ],
-            "patentInt": 0
-        },
         "Debian Free Software Guidelines": {
             "LicenseName": "Apple Public Source License (APSL)",
             "State": "DFSGInCompatible",

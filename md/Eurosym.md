@@ -128,23 +128,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Eurosym",
-                        "Eurosym"
-                    ],
-                    "__impliedId": "Eurosym"
-                },
-                "shortname": "Eurosym",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Eurosym"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

@@ -56,20 +56,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "PSF-2.0"
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "PSF-2.0"
-                    ],
-                    "__impliedId": "PSF-2.0"
-                },
-                "shortname": "PSF-2.0",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [],
-                "patentInt": 0
             }
         },
         "__isOsiApproved": false,

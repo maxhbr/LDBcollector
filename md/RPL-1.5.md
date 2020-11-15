@@ -448,23 +448,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "RPL-1.5",
-                        "RPL-1.5"
-                    ],
-                    "__impliedId": "RPL-1.5"
-                },
-                "shortname": "RPL-1.5",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "RPL-1.5"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",

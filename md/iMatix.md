@@ -160,23 +160,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "iMatix",
-                        "iMatix"
-                    ],
-                    "__impliedId": "iMatix"
-                },
-                "shortname": "iMatix",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "iMatix"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

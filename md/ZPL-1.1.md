@@ -190,23 +190,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "ZPL-1.1",
-                        "ZPL-1.1"
-                    ],
-                    "__impliedId": "ZPL-1.1"
-                },
-                "shortname": "ZPL-1.1",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "ZPL-1.1"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/ZPL-1.1.html",

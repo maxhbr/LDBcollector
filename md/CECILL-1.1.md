@@ -633,23 +633,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CECILL-1.1",
-                        "CECILL-1.1"
-                    ],
-                    "__impliedId": "CECILL-1.1"
-                },
-                "shortname": "CECILL-1.1",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "CECILL-1.1"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

@@ -178,23 +178,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "OLDAP-2.7",
-                        "OLDAP-2.7"
-                    ],
-                    "__impliedId": "OLDAP-2.7"
-                },
-                "shortname": "OLDAP-2.7",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "OLDAP-2.7"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/OLDAP-2.7.html",

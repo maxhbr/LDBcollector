@@ -144,23 +144,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "BSD-3-Clause-LBNL",
-                        "BSD-3-Clause-LBNL"
-                    ],
-                    "__impliedId": "BSD-3-Clause-LBNL"
-                },
-                "shortname": "BSD-3-Clause-LBNL",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "BSD-3-Clause-LBNL"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/BSD-3-Clause-LBNL.html",

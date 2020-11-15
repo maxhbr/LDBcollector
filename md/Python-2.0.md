@@ -5,18 +5,6 @@ Python License 2.0 (Python-2.0)
 
 **Other Names:**
 
--   `Python Software Foundation License`
-
--   `Python License ..`
-
--   `Python Copyright`
-
--   `Python ..`
-
--   `Python`
-
--   `PSF`
-
 -   `scancode://python`
 
 -   `Python License, Version 2.0`
@@ -273,12 +261,6 @@ Raw Data
         "__impliedNames": [
             "Python-2.0",
             "Python License 2.0",
-            "Python Software Foundation License",
-            "Python License ..",
-            "Python Copyright",
-            "Python ..",
-            "Python",
-            "PSF",
             "scancode://python",
             "Python License, Version 2.0",
             "License :: OSI Approved :: Python Software Foundation License",
@@ -419,35 +401,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Python-2.0",
-                        "Python-2.0",
-                        "Python Software Foundation License",
-                        "Python License ..",
-                        "Python Copyright",
-                        "Python ..",
-                        "Python",
-                        "PSF"
-                    ],
-                    "__impliedId": "Python-2.0"
-                },
-                "shortname": "Python-2.0",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Python-2.0",
-                    "Python Software Foundation License",
-                    "Python License ..",
-                    "Python Copyright",
-                    "Python ..",
-                    "Python",
-                    "PSF"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",
@@ -559,12 +512,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": null,
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "Python Software Foundation License",
                     "version": "2",
                     "spdxId": "Python-2.0"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "_implications": {
                     "__impliedNames": [
                         "Python-2.0",

@@ -114,23 +114,6 @@ Adobe shall not be liable to any party for any loss of revenue or profit or for 
                     ]
                 ]
             }
-        },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "Adobe-Glyph",
-                    "Adobe-Glyph"
-                ],
-                "__impliedId": "Adobe-Glyph"
-            },
-            "shortname": "Adobe-Glyph",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "Adobe-Glyph"
-            ],
-            "patentInt": 0
         }
     },
     "__impliedCopyleft": [

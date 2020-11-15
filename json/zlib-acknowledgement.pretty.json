@@ -108,23 +108,6 @@
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "zlib-acknowledgement",
-                    "zlib-acknowledgement"
-                ],
-                "__impliedId": "zlib-acknowledgement"
-            },
-            "shortname": "zlib-acknowledgement",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "zlib-acknowledgement"
-            ],
-            "patentInt": 0
-        },
         "Debian Free Software Guidelines": {
             "LicenseName": "The zlib/libpng License (Zlib)",
             "State": "DFSGCompatible",

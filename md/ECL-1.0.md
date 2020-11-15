@@ -222,23 +222,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "ECL-1.0",
-                        "ECL-1.0"
-                    ],
-                    "__impliedId": "ECL-1.0"
-                },
-                "shortname": "ECL-1.0",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "ECL-1.0"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",
                 "url": "https://spdx.org/licenses/ECL-1.0.html",
@@ -325,12 +308,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "2007",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "Educational Community License",
                     "version": "1.0",
                     "spdxId": "ECL-1.0"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "_implications": {
                     "__impliedNames": [
                         "ECL-1.0",

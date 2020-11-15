@@ -172,23 +172,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-2.0",
-                        "CC-BY-2.0"
-                    ],
-                    "__impliedId": "CC-BY-2.0"
-                },
-                "shortname": "CC-BY-2.0",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "CC-BY-2.0"
-                ],
-                "patentInt": 0
-            },
             "Google OSS Policy": {
                 "rating": "NOTICE",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",

@@ -426,23 +426,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "LPPL-1.2",
-                        "LPPL-1.2"
-                    ],
-                    "__impliedId": "LPPL-1.2"
-                },
-                "shortname": "LPPL-1.2",
-                "riskInt": 4,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "LPPL-1.2"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

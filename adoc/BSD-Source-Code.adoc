@@ -134,23 +134,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "BSD-Source-Code",
-                    "BSD-Source-Code"
-                ],
-                "__impliedId": "BSD-Source-Code"
-            },
-            "shortname": "BSD-Source-Code",
-            "riskInt": 1,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "BSD-Source-Code"
-            ],
-            "patentInt": 0
-        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/BSD-Source-Code.html",

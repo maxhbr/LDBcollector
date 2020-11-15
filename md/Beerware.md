@@ -5,8 +5,6 @@ Beerware License (Beerware)
 
 **Other Names:**
 
--   `SUSE-Beerware`
-
 -   `scancode://beerware`
 
 -   `Beer-Ware License`
@@ -57,7 +55,6 @@ Raw Data
         "__impliedNames": [
             "Beerware",
             "Beerware License",
-            "SUSE-Beerware",
             "scancode://beerware",
             "Beer-Ware License",
             "Beerware 42"
@@ -142,25 +139,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Beerware",
-                        "SUSE-Beerware",
-                        "Beerware"
-                    ],
-                    "__impliedId": "Beerware"
-                },
-                "shortname": "Beerware",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SUSE-Beerware",
-                    "Beerware"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Beerware.html",
@@ -211,12 +189,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "1987",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "Beerware",
                     "version": "42",
                     "spdxId": "Beerware"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "Patent grant": {
                     "value": "No",
                     "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

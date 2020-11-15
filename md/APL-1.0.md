@@ -5,8 +5,6 @@ Adaptive Public License 1.0 (APL-1.0)
 
 **Other Names:**
 
--   `APL-1.0 (spdx.org/licenses)`
-
 -   `scancode://adapt-1.0`
 
 -   `APL 1.0`
@@ -392,7 +390,6 @@ Raw Data
         "__impliedNames": [
             "APL-1.0",
             "Adaptive Public License 1.0",
-            "APL-1.0 (spdx.org/licenses)",
             "scancode://adapt-1.0",
             "APL 1.0",
             "Adaptive Public License, Version 1.0"
@@ -531,25 +528,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "APL-1.0",
-                        "APL-1.0 (spdx.org/licenses)",
-                        "APL-1.0"
-                    ],
-                    "__impliedId": "APL-1.0"
-                },
-                "shortname": "APL-1.0",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "APL-1.0 (spdx.org/licenses)",
-                    "APL-1.0"
-                ],
-                "patentInt": 0
             },
             "OpenSourceInitiative": {
                 "text": [

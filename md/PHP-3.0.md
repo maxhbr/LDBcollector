@@ -276,23 +276,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "PHP-3.0",
-                        "PHP-3.0"
-                    ],
-                    "__impliedId": "PHP-3.0"
-                },
-                "shortname": "PHP-3.0",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "PHP-3.0"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",

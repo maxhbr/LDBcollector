@@ -139,23 +139,6 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "diffmark",
-                    "diffmark"
-                ],
-                "__impliedId": "diffmark"
-            },
-            "shortname": "diffmark",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "diffmark"
-            ],
-            "patentInt": 0
-        },
         "BlueOak License List": {
             "BlueOakRating": "Lead",
             "url": "https://spdx.org/licenses/diffmark.html",

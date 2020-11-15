@@ -5,17 +5,9 @@ Artistic License 1.0 (Artistic-1.0)
 
 **Other Names:**
 
--   `Artistic license`
-
--   `Artistic License ..`
-
--   `Artistic License`
+-   `scancode://artistic-1.0`
 
 -   `Artistic 1.0`
-
--   `Artistic`
-
--   `scancode://artistic-1.0`
 
 -   `Artistic License, Version 1.0`
 
@@ -173,12 +165,8 @@ Raw Data
         "__impliedNames": [
             "Artistic-1.0",
             "Artistic License 1.0",
-            "Artistic license",
-            "Artistic License ..",
-            "Artistic License",
-            "Artistic 1.0",
-            "Artistic",
             "scancode://artistic-1.0",
+            "Artistic 1.0",
             "Artistic License, Version 1.0",
             "Artistic 1.0 (original)"
         ],
@@ -302,33 +290,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Artistic-1.0",
-                        "Artistic-1.0",
-                        "Artistic license",
-                        "Artistic License ..",
-                        "Artistic License",
-                        "Artistic 1.0",
-                        "Artistic"
-                    ],
-                    "__impliedId": "Artistic-1.0"
-                },
-                "shortname": "Artistic-1.0",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Artistic-1.0",
-                    "Artistic license",
-                    "Artistic License ..",
-                    "Artistic License",
-                    "Artistic 1.0",
-                    "Artistic"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Artistic License",

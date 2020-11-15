@@ -267,23 +267,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "ClArtistic",
-                        "ClArtistic"
-                    ],
-                    "__impliedId": "ClArtistic"
-                },
-                "shortname": "ClArtistic",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "ClArtistic"
-                ],
-                "patentInt": 0
-            },
             "Override": {
                 "oNonCommecrial": null,
                 "implications": {

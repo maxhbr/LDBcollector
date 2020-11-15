@@ -258,23 +258,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "OpenSSL",
-                        "OpenSSL"
-                    ],
-                    "__impliedId": "OpenSSL"
-                },
-                "shortname": "OpenSSL",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "OpenSSL"
-                ],
-                "patentInt": 1
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/OpenSSL.html",
@@ -317,12 +300,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": null,
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "OpenSSL license",
                     "version": null,
                     "spdxId": "OpenSSL"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "_implications": {
                     "__impliedNames": [
                         "OpenSSL",

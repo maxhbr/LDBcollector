@@ -171,23 +171,6 @@ be directed to site-policy@w3.org.
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "W3C-19980720",
-                    "W3C-19980720"
-                ],
-                "__impliedId": "W3C-19980720"
-            },
-            "shortname": "W3C-19980720",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "W3C-19980720"
-            ],
-            "patentInt": 0
-        },
         "BlueOak License List": {
             "BlueOakRating": "Lead",
             "url": "https://spdx.org/licenses/W3C-19980720.html",

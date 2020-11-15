@@ -5,12 +5,6 @@ PHP License v3.01 (PHP-3.01)
 
 **Other Names:**
 
--   `The PHP License, version 3.01`
-
--   `PHP-3.0.1`
-
--   `PHP License`
-
 -   `scancode://php-3.01`
 
 -   `PHP License 3.01`
@@ -126,9 +120,6 @@ Raw Data
         "__impliedNames": [
             "PHP-3.01",
             "PHP License v3.01",
-            "The PHP License, version 3.01",
-            "PHP-3.0.1",
-            "PHP License",
             "scancode://php-3.01",
             "PHP License 3.01"
         ],
@@ -235,29 +226,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "PHP-3.01",
-                        "The PHP License, version 3.01",
-                        "PHP-3.01",
-                        "PHP-3.0.1",
-                        "PHP License"
-                    ],
-                    "__impliedId": "PHP-3.01"
-                },
-                "shortname": "PHP-3.01",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 1,
-                "otherNames": [
-                    "The PHP License, version 3.01",
-                    "PHP-3.01",
-                    "PHP-3.0.1",
-                    "PHP License"
-                ],
-                "patentInt": 0
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

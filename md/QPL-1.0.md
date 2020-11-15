@@ -5,10 +5,6 @@ Q Public License 1.0 (QPL-1.0)
 
 **Other Names:**
 
--   `QPL ..`
-
--   `QPL`
-
 -   `scancode://qpl-1.0`
 
 -   `QPL 1.0`
@@ -131,8 +127,6 @@ Raw Data
         "__impliedNames": [
             "QPL-1.0",
             "Q Public License 1.0",
-            "QPL ..",
-            "QPL",
             "scancode://qpl-1.0",
             "QPL 1.0",
             "The Q Public License Version (QPL-1.0)",
@@ -296,27 +290,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "QPL-1.0",
-                        "QPL-1.0",
-                        "QPL ..",
-                        "QPL"
-                    ],
-                    "__impliedId": "QPL-1.0"
-                },
-                "shortname": "QPL-1.0",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "QPL-1.0",
-                    "QPL ..",
-                    "QPL"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",
@@ -452,12 +425,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": null,
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "Q Public License",
                     "version": null,
                     "spdxId": "QPL-1.0"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "_implications": {
                     "__impliedNames": [
                         "QPL-1.0",

@@ -5,8 +5,6 @@ Qhull License (Qhull)
 
 **Other Names:**
 
--   `SUSE-Qhull`
-
 -   `scancode://qhull`
 
 Comments on (easy) usability
@@ -75,7 +73,6 @@ Raw Data
         "__impliedNames": [
             "Qhull",
             "Qhull License",
-            "SUSE-Qhull",
             "scancode://qhull"
         ],
         "__impliedId": "Qhull",
@@ -161,25 +158,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Qhull",
-                        "SUSE-Qhull",
-                        "Qhull"
-                    ],
-                    "__impliedId": "Qhull"
-                },
-                "shortname": "Qhull",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SUSE-Qhull",
-                    "Qhull"
-                ],
-                "patentInt": 0
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

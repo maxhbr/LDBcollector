@@ -5,14 +5,6 @@ Ruby License (Ruby)
 
 **Other Names:**
 
--   `GPL-2.0+ OR Ruby`
-
--   `same as ruby's`
-
--   `GPLv2+ or Ruby`
-
--   `GPL-2.0+ or Ruby`
-
 -   `scancode://ruby`
 
 Comments on (easy) usability
@@ -20,10 +12,6 @@ Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List"))
-
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
 
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
@@ -41,15 +29,6 @@ General Comments
     being in 2002. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml "Scancode"))
 
--   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS"))
-
 URLs
 ----
 
@@ -60,8 +39,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/Ruby.html
 
 -   https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING
-
--   http://www.ruby-lang.org/en/about/license.txt
 
 Text
 ----
@@ -129,25 +106,14 @@ Raw Data
         "__impliedNames": [
             "Ruby",
             "Ruby License",
-            "GPL-2.0+ OR Ruby",
-            "same as ruby's",
-            "GPLv2+ or Ruby",
-            "GPL-2.0+ or Ruby",
             "scancode://ruby"
         ],
         "__impliedId": "Ruby",
-        "__isFsfFree": true,
         "__impliedComments": [
             [
                 "Scancode",
                 [
                     "This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n"
-                ]
-            ],
-            [
-                "ifrOSS",
-                [
-                    "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
                 ]
             ]
         ],
@@ -180,32 +146,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Ruby"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Compatible if dual licensed with GPL, otherwise Incompatible",
-                "rating": "Good",
-                "Upstream URL": "http://www.ruby-lang.org/en/LICENSE.txt",
-                "GPLv3 Compat?": null,
-                "Short Name": "Ruby",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Ruby License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Ruby License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -258,20 +198,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "GPL-2.0+ OR Ruby"
-                    ],
-                    "__impliedId": "GPL-2.0+ OR Ruby"
-                },
-                "shortname": "GPL-2.0+ OR Ruby",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/Ruby.html",
@@ -308,39 +234,6 @@ Raw Data
                     ]
                 }
             },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "http://www.ruby-lang.org/en/LICENSE.txt",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Ruby License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Ruby License"
-                    ],
-                    "__impliedComments": [
-                        [
-                            "ifrOSS",
-                            [
-                                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "http://www.ruby-lang.org/en/LICENSE.txt"
-                        ]
-                    ]
-                }
-            },
             "Google OSS Policy": {
                 "rating": "RECIPROCAL",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -370,13 +263,6 @@ Raw Data
                 }
             ],
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
                 "Google OSS Policy",
                 {
                     "tag": "NeutralJudgement",
@@ -392,10 +278,6 @@ Raw Data
             [
                 "Scancode",
                 "WeakCopyleft"
-            ],
-            [
-                "ifrOSS",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
@@ -421,10 +303,6 @@ Raw Data
             [
                 null,
                 "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
-            ],
-            [
-                null,
-                "http://www.ruby-lang.org/en/about/license.txt"
             ]
         ]
     }

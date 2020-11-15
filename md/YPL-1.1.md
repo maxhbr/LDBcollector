@@ -266,23 +266,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "YPL-1.1",
-                        "YPL-1.1"
-                    ],
-                    "__impliedId": "YPL-1.1"
-                },
-                "shortname": "YPL-1.1",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "YPL-1.1"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

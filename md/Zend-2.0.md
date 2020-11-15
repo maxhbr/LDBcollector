@@ -170,23 +170,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Zend-2.0",
-                        "Zend-2.0"
-                    ],
-                    "__impliedId": "Zend-2.0"
-                },
-                "shortname": "Zend-2.0",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Zend-2.0"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Zend-2.0.html",

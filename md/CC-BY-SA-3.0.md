@@ -5,10 +5,6 @@ Creative Commons Attribution Share Alike 3.0 Unported (CC-BY-SA-3.0)
 
 **Other Names:**
 
--   `CC BY-SA V3.0`
-
--   `CC BY-SA 3.0`
-
 -   `scancode://cc-by-sa-3.0`
 
 Comments on (easy) usability
@@ -416,8 +412,6 @@ Raw Data
         "__impliedNames": [
             "CC-BY-SA-3.0",
             "Creative Commons Attribution Share Alike 3.0 Unported",
-            "CC BY-SA V3.0",
-            "CC BY-SA 3.0",
             "scancode://cc-by-sa-3.0"
         ],
         "__impliedId": "CC-BY-SA-3.0",
@@ -505,27 +499,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-SA-3.0",
-                        "CC-BY-SA-3.0",
-                        "CC BY-SA V3.0",
-                        "CC BY-SA 3.0"
-                    ],
-                    "__impliedId": "CC-BY-SA-3.0"
-                },
-                "shortname": "CC-BY-SA-3.0",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "CC-BY-SA-3.0",
-                    "CC BY-SA V3.0",
-                    "CC BY-SA 3.0"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Creative Commons Attribution Share-Alike (CC-BY-SA) v3.0",

@@ -247,23 +247,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "FreeImage",
-                        "FreeImage"
-                    ],
-                    "__impliedId": "FreeImage"
-                },
-                "shortname": "FreeImage",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "FreeImage"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

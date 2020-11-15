@@ -174,23 +174,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "ImageMagick",
-                        "ImageMagick"
-                    ],
-                    "__impliedId": "ImageMagick"
-                },
-                "shortname": "ImageMagick",
-                "riskInt": 3,
-                "trademarkInt": 1,
-                "opinionInt": 0,
-                "otherNames": [
-                    "ImageMagick"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",
                 "url": "https://spdx.org/licenses/ImageMagick.html",

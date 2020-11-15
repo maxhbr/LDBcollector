@@ -5,10 +5,6 @@ LaTeX Project Public License v1.3c (LPPL-1.3c)
 
 **Other Names:**
 
--   `TeX-License ..`
-
--   `LPPL ..`
-
 -   `scancode://lppl-1.3c`
 
 -   `LPPL 1.3c`
@@ -492,8 +488,6 @@ Raw Data
         "__impliedNames": [
             "LPPL-1.3c",
             "LaTeX Project Public License v1.3c",
-            "TeX-License ..",
-            "LPPL ..",
             "scancode://lppl-1.3c",
             "LPPL 1.3c",
             "lppl-1.3c",
@@ -635,27 +629,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "LPPL-1.3c",
-                        "TeX-License ..",
-                        "LPPL-1.3c",
-                        "LPPL .."
-                    ],
-                    "__impliedId": "LPPL-1.3c"
-                },
-                "shortname": "LPPL-1.3c",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "TeX-License ..",
-                    "LPPL-1.3c",
-                    "LPPL .."
-                ],
-                "patentInt": 0
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

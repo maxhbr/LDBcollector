@@ -5,8 +5,6 @@ Open Market License (OML)
 
 **Other Names:**
 
--   `SUSE-OML`
-
 -   `scancode://fastcgi-devkit`
 
 -   `FastCGI DevKit`
@@ -79,7 +77,6 @@ Raw Data
         "__impliedNames": [
             "OML",
             "Open Market License",
-            "SUSE-OML",
             "scancode://fastcgi-devkit",
             "FastCGI DevKit"
         ],
@@ -166,25 +163,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "OML",
-                        "SUSE-OML",
-                        "OML"
-                    ],
-                    "__impliedId": "OML"
-                },
-                "shortname": "OML",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SUSE-OML",
-                    "OML"
-                ],
-                "patentInt": 0
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

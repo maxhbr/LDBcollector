@@ -134,23 +134,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Newsletr",
-                        "Newsletr"
-                    ],
-                    "__impliedId": "Newsletr"
-                },
-                "shortname": "Newsletr",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Newsletr"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Newsletr.html",

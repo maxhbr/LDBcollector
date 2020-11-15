@@ -3,19 +3,14 @@
         "LGPL-2.1-only",
         "GNU Lesser General Public License v2.1 only",
         "LGPL-2.1",
-        "LGPLv2.1",
-        "LGPL2.1",
-        "LGPL v2.1 only",
-        "LGPL v2.1",
-        "LGPL 2.1",
-        "GNU Lesser General Public License version 2.1 (LGPL v2.1)",
-        "GNU LGPLv2.1",
-        "LGPl-2.1",
         "scancode://lgpl-2.1",
+        "LGPL 2.1",
         "lgpl-2.1",
+        "GNU LGPLv2.1",
         "GNU Lesser General Public License, Version 2.1",
         "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
         "GNU Lesser General Public License 2.1",
+        "LGPL2.1",
         "LGPL (v2.1)"
     ],
     "__impliedId": "LGPL-2.1-only",
@@ -226,20 +221,6 @@
                     ]
                 ]
             }
-        },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "LGPL-2.1"
-                ],
-                "__impliedId": "LGPL-2.1"
-            },
-            "shortname": "LGPL-2.1",
-            "riskInt": 1,
-            "trademarkInt": 0,
-            "opinionInt": 1,
-            "otherNames": [],
-            "patentInt": 1
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",

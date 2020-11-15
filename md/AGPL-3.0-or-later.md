@@ -5,17 +5,13 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 **Other Names:**
 
--   `SUSE-AGPL-3.0+`
-
--   `AGPLv3+`
-
--   `AGPL-3.0+`
-
 -   `scancode://agpl-3.0-plus`
 
 -   `AGPL 3.0 or later`
 
 -   `GNU Affero General Public License 3.0`
+
+-   `AGPL-3.0+`
 
 -   `AGPL3.0+`
 
@@ -225,12 +221,10 @@ Raw Data
         "__impliedNames": [
             "AGPL-3.0-or-later",
             "GNU Affero General Public License v3.0 or later",
-            "SUSE-AGPL-3.0+",
-            "AGPLv3+",
-            "AGPL-3.0+",
             "scancode://agpl-3.0-plus",
             "AGPL 3.0 or later",
             "GNU Affero General Public License 3.0",
+            "AGPL-3.0+",
             "AGPL3.0+",
             "AGPL3+",
             "AGPL (v3 or later)",
@@ -394,29 +388,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "AGPL-3.0-or-later",
-                        "SUSE-AGPL-3.0+",
-                        "AGPLv3+",
-                        "AGPL-3.0-or-later",
-                        "AGPL-3.0+"
-                    ],
-                    "__impliedId": "AGPL-3.0-or-later"
-                },
-                "shortname": "AGPL-3.0-or-later",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SUSE-AGPL-3.0+",
-                    "AGPLv3+",
-                    "AGPL-3.0-or-later",
-                    "AGPL-3.0+"
-                ],
-                "patentInt": 0
-            },
             "Override": {
                 "oNonCommecrial": null,
                 "implications": {
@@ -498,12 +469,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "2007",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "GNU Affero General Public License",
                     "version": "3.0",
                     "spdxId": "AGPL-3.0-or-later"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "Patent grant": {
                     "value": "Yes",
                     "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

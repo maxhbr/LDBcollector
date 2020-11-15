@@ -5,15 +5,11 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 **Other Names:**
 
--   `GPLv1+`
-
--   `GPL-1.0+`
-
--   `GPL+`
-
 -   `scancode://gpl-1.0-plus`
 
 -   `GPL 1.0 or later`
+
+-   `GPL-1.0+`
 
 -   `GPL1.0+`
 
@@ -63,11 +59,9 @@ Raw Data
         "__impliedNames": [
             "GPL-1.0-or-later",
             "GNU General Public License v1.0 or later",
-            "GPLv1+",
-            "GPL-1.0+",
-            "GPL+",
             "scancode://gpl-1.0-plus",
             "GPL 1.0 or later",
+            "GPL-1.0+",
             "GPL1.0+",
             "GPL1+"
         ],
@@ -163,29 +157,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "GPL-1.0-or-later",
-                        "GPLv1+",
-                        "GPL-1.0-or-later",
-                        "GPL-1.0+",
-                        "GPL+"
-                    ],
-                    "__impliedId": "GPL-1.0-or-later"
-                },
-                "shortname": "GPL-1.0-or-later",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "GPLv1+",
-                    "GPL-1.0-or-later",
-                    "GPL-1.0+",
-                    "GPL+"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "The GNU General Public License (GPL)",

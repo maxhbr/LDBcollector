@@ -5,12 +5,6 @@ SIL Open Font License 1.1 (OFL-1.1)
 
 **Other Names:**
 
--   `SIL Open Font License`
-
--   `Open Font License`
-
--   `OFL`
-
 -   `scancode://ofl-1.1`
 
 -   `OFL 1.1`
@@ -178,9 +172,6 @@ Raw Data
         "__impliedNames": [
             "OFL-1.1",
             "SIL Open Font License 1.1",
-            "SIL Open Font License",
-            "Open Font License",
-            "OFL",
             "scancode://ofl-1.1",
             "OFL 1.1",
             "ofl-1.1",
@@ -335,31 +326,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "OFL-1.1",
-                        "SIL Open Font License 1.1",
-                        "SIL Open Font License",
-                        "Open Font License",
-                        "OFL-1.1",
-                        "OFL"
-                    ],
-                    "__impliedId": "OFL-1.1"
-                },
-                "shortname": "OFL-1.1",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SIL Open Font License 1.1",
-                    "SIL Open Font License",
-                    "Open Font License",
-                    "OFL-1.1",
-                    "OFL"
-                ],
-                "patentInt": 0
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

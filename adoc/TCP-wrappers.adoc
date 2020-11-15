@@ -151,23 +151,6 @@ v8BeBE0bdjeVmOQYRQfXgt3J2q0b8x8Q5a/LCLVLh8k6DFGg8AfEbLDQWhi1JiXC
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "TCP-wrappers",
-                    "TCP-wrappers"
-                ],
-                "__impliedId": "TCP-wrappers"
-            },
-            "shortname": "TCP-wrappers",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "TCP-wrappers"
-            ],
-            "patentInt": 0
-        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/TCP-wrappers.html",

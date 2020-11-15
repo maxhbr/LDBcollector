@@ -5,8 +5,6 @@ Vim License (Vim)
 
 **Other Names:**
 
--   `SUSE-Vim`
-
 -   `scancode://vim`
 
 Comments on (easy) usability
@@ -139,7 +137,6 @@ Raw Data
         "__impliedNames": [
             "Vim",
             "Vim License",
-            "SUSE-Vim",
             "scancode://vim",
             "VIM License"
         ],
@@ -216,25 +213,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Vim",
-                        "Vim",
-                        "SUSE-Vim"
-                    ],
-                    "__impliedId": "Vim"
-                },
-                "shortname": "Vim",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Vim",
-                    "SUSE-Vim"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

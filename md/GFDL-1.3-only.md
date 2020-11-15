@@ -5,10 +5,6 @@ GNU Free Documentation License v1.3 only (GFDL-1.3-only)
 
 **Other Names:**
 
--   `GNU Free Documentation License, Version 1.3 (GFDL 1.3)`
-
--   `GFDL-1.3`
-
 -   `scancode://gfdl-1.3`
 
 -   `GFDL 1.3`
@@ -497,8 +493,6 @@ Raw Data
         "__impliedNames": [
             "GFDL-1.3-only",
             "GNU Free Documentation License v1.3 only",
-            "GNU Free Documentation License, Version 1.3 (GFDL 1.3)",
-            "GFDL-1.3",
             "scancode://gfdl-1.3",
             "GFDL 1.3"
         ],
@@ -594,27 +588,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "GFDL-1.3-only",
-                        "GNU Free Documentation License, Version 1.3 (GFDL 1.3)",
-                        "GFDL-1.3-only",
-                        "GFDL-1.3"
-                    ],
-                    "__impliedId": "GFDL-1.3-only"
-                },
-                "shortname": "GFDL-1.3-only",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "GNU Free Documentation License, Version 1.3 (GFDL 1.3)",
-                    "GFDL-1.3-only",
-                    "GFDL-1.3"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "GNU Free Documentation License (GFDL)",

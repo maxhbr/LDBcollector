@@ -5,18 +5,6 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 **Other Names:**
 
--   `BSD2c`
-
--   `BSD-2c`
-
--   `BSD 2-clause`
-
--   `BSD 2-Clause`
-
--   `BSD 2 clause`
-
--   `BSD 2 Clause`
-
 -   `scancode://bsd-simplified`
 
 -   `BSD-2`
@@ -135,17 +123,11 @@ Raw Data
         "__impliedNames": [
             "BSD-2-Clause",
             "BSD 2-Clause \"Simplified\" License",
-            "BSD2c",
-            "BSD-2c",
-            "BSD 2-clause",
-            "BSD 2-Clause",
-            "BSD 2 clause",
-            "BSD 2 Clause",
-            "BSD-2-clause",
             "scancode://bsd-simplified",
             "bsd-2-clause",
             "BSD-2",
             "BSD 2-Clause License",
+            "BSD-2-clause",
             "Simplified BSD License",
             "FreeBSD License",
             "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
@@ -301,35 +283,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "BSD-2-Clause",
-                        "BSD2c",
-                        "BSD-2c",
-                        "BSD-2-Clause",
-                        "BSD 2-clause",
-                        "BSD 2-Clause",
-                        "BSD 2 clause",
-                        "BSD 2 Clause"
-                    ],
-                    "__impliedId": "BSD-2-Clause"
-                },
-                "shortname": "BSD-2-Clause",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "BSD2c",
-                    "BSD-2c",
-                    "BSD-2-Clause",
-                    "BSD 2-clause",
-                    "BSD 2-Clause",
-                    "BSD 2 clause",
-                    "BSD 2 Clause"
-                ],
-                "patentInt": 0
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",

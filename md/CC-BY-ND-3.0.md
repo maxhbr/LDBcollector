@@ -400,23 +400,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-ND-3.0",
-                        "CC-BY-ND-3.0"
-                    ],
-                    "__impliedId": "CC-BY-ND-3.0"
-                },
-                "shortname": "CC-BY-ND-3.0",
-                "riskInt": 4,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "CC-BY-ND-3.0"
-                ],
-                "patentInt": 0
-            },
             "Google OSS Policy": {
                 "rating": "RESTRICTED",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",

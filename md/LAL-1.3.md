@@ -205,23 +205,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "LAL-1.3",
-                        "LAL-1.3"
-                    ],
-                    "__impliedId": "LAL-1.3"
-                },
-                "shortname": "LAL-1.3",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "LAL-1.3"
-                ],
-                "patentInt": 0
-            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Licence Art Libre (Free Art License)",
                 "State": "DFSGStateUnsettled",

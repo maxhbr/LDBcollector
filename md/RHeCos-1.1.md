@@ -544,23 +544,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "RHeCos-1.1",
-                        "RHeCos-1.1"
-                    ],
-                    "__impliedId": "RHeCos-1.1"
-                },
-                "shortname": "RHeCos-1.1",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "RHeCos-1.1"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

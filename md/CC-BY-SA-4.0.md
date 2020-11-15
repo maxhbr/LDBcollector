@@ -5,8 +5,6 @@ Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)
 
 **Other Names:**
 
--   `http://creativecommons.org/licenses/by-sa/4.0/legalcode`
-
 -   `scancode://cc-by-sa-4.0`
 
 -   `CC-BY-SA 4.0`
@@ -508,7 +506,6 @@ Raw Data
         "__impliedNames": [
             "CC-BY-SA-4.0",
             "Creative Commons Attribution Share Alike 4.0 International",
-            "http://creativecommons.org/licenses/by-sa/4.0/legalcode",
             "scancode://cc-by-sa-4.0",
             "cc-by-sa-4.0",
             "CC-BY-SA 4.0",
@@ -628,25 +625,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-SA-4.0",
-                        "http://creativecommons.org/licenses/by-sa/4.0/legalcode",
-                        "CC-BY-SA-4.0"
-                    ],
-                    "__impliedId": "CC-BY-SA-4.0"
-                },
-                "shortname": "CC-BY-SA-4.0",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "http://creativecommons.org/licenses/by-sa/4.0/legalcode",
-                    "CC-BY-SA-4.0"
-                ],
-                "patentInt": 0
-            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Creative Commons Attribution Share-Alike (CC-BY-SA) v4.0",
                 "State": "DFSGCompatible",
@@ -723,12 +701,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "2002",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "CC-BY-SA",
                     "version": "4.0",
                     "spdxId": "CC-BY-SA-4.0"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "Patent grant": {
                     "value": "No",
                     "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

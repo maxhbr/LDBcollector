@@ -572,23 +572,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-4.0",
-                        "CC-BY-4.0"
-                    ],
-                    "__impliedId": "CC-BY-4.0"
-                },
-                "shortname": "CC-BY-4.0",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "CC-BY-4.0"
-                ],
-                "patentInt": 0
-            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Creative Commons Attribution unported (CC-BY) v4.0",
                 "State": "DFSGCompatible",
@@ -627,12 +610,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "2002",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "CC-BY",
                     "version": "4.0",
                     "spdxId": "CC-BY-4.0"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "Patent grant": {
                     "value": "No",
                     "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

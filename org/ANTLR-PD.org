@@ -176,23 +176,6 @@
                   ]
               }
           },
-          "Cavil": {
-              "implications": {
-                  "__impliedNames": [
-                      "ANTLR-PD",
-                      "ANTLR-PD"
-                  ],
-                  "__impliedId": "ANTLR-PD"
-              },
-              "shortname": "ANTLR-PD",
-              "riskInt": 5,
-              "trademarkInt": 0,
-              "opinionInt": 0,
-              "otherNames": [
-                  "ANTLR-PD"
-              ],
-              "patentInt": 0
-          },
           "BlueOak License List": {
               "BlueOakRating": "Bronze",
               "url": "https://spdx.org/licenses/ANTLR-PD.html",

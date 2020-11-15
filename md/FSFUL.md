@@ -109,23 +109,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "FSFUL",
-                        "FSFUL"
-                    ],
-                    "__impliedId": "FSFUL"
-                },
-                "shortname": "FSFUL",
-                "riskInt": 5,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "FSFUL"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

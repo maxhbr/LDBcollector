@@ -11,32 +11,6 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 -   `GPL-3.0`
 
--   `GPL-3.0+`
-
--   `GPLv3`
-
--   `GPL3`
-
--   `GPL-3`
-
--   `GPL v3 only`
-
--   `GPL v3`
-
--   `GPL 3`
-
--   `GNU General Public License version 3 (GPLv3)`
-
--   `GNU GPL version 3`
-
--   `GPLv3+`
-
--   `GPL-3+`
-
--   `GPL v3 or later`
-
--   `GNU GPL v3 or later`
-
 -   `scancode://gpl-3.0`
 
 -   `GPL 3.0`
@@ -59,7 +33,11 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 -   `GPL3.0`
 
+-   `GPL3`
+
 -   `GPL (v3)`
+
+-   `GPL-3.0+`
 
 -   `GPL3.0+`
 
@@ -988,19 +966,6 @@ Raw Data
             "GPL-3.0-or-later",
             "GNU General Public License v3.0 or later",
             "GPL-3.0",
-            "GPL-3.0+",
-            "GPLv3",
-            "GPL3",
-            "GPL-3",
-            "GPL v3 only",
-            "GPL v3",
-            "GPL 3",
-            "GNU General Public License version 3 (GPLv3)",
-            "GNU GPL version 3",
-            "GPLv3+",
-            "GPL-3+",
-            "GPL v3 or later",
-            "GNU GPL v3 or later",
             "scancode://gpl-3.0",
             "GPL 3.0",
             "scancode://gpl-3.0-plus",
@@ -1012,7 +977,9 @@ Raw Data
             "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
             "GNU General Public License 3.0",
             "GPL3.0",
+            "GPL3",
             "GPL (v3)",
+            "GPL-3.0+",
             "GPL3.0+",
             "GPL3+",
             "GPL (v3 or later)"
@@ -1224,20 +1191,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "GPL-3.0"
-                    ],
-                    "__impliedId": "GPL-3.0"
-                },
-                "shortname": "GPL-3.0",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "copyleft",
@@ -1433,12 +1386,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "June 2007",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "GNU General Public License",
                     "version": "3.0",
                     "spdxId": "GPL-3.0-or-later"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "Patent grant": {
                     "value": "Yes",
                     "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

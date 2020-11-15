@@ -144,23 +144,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "MIT-advertising",
-                        "MIT-advertising"
-                    ],
-                    "__impliedId": "MIT-advertising"
-                },
-                "shortname": "MIT-advertising",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "MIT-advertising"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/MIT-advertising.html",

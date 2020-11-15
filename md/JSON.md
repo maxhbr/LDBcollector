@@ -5,8 +5,6 @@ JSON License (JSON)
 
 **Other Names:**
 
--   `SUSE-JSON`
-
 -   `scancode://json`
 
 Comments on (easy) usability
@@ -64,7 +62,6 @@ Raw Data
         "__impliedNames": [
             "JSON",
             "JSON License",
-            "SUSE-JSON",
             "scancode://json"
         ],
         "__impliedId": "JSON",
@@ -143,25 +140,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "JSON",
-                        "SUSE-JSON",
-                        "JSON"
-                    ],
-                    "__impliedId": "JSON"
-                },
-                "shortname": "JSON",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SUSE-JSON",
-                    "JSON"
-                ],
-                "patentInt": 0
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "JSON evil license",

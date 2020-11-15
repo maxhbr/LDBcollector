@@ -189,23 +189,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Aladdin",
-                        "Aladdin"
-                    ],
-                    "__impliedId": "Aladdin"
-                },
-                "shortname": "Aladdin",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "Aladdin"
-                ],
-                "patentInt": 0
             }
         },
         "__impliedCopyleft": [

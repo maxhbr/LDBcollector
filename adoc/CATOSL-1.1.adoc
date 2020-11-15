@@ -540,23 +540,6 @@ with respect to the subject matter hereof.
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "CATOSL-1.1",
-                    "CATOSL-1.1"
-                ],
-                "__impliedId": "CATOSL-1.1"
-            },
-            "shortname": "CATOSL-1.1",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "CATOSL-1.1"
-            ],
-            "patentInt": 0
-        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "permissive",

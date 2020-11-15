@@ -244,23 +244,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CDDL-1.1",
-                        "CDDL-1.1"
-                    ],
-                    "__impliedId": "CDDL-1.1"
-                },
-                "shortname": "CDDL-1.1",
-                "riskInt": 2,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "CDDL-1.1"
-                ],
-                "patentInt": 0
-            },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/CDDL-1.1.html",
                 "familyName": "Common Development and Distribution License",

@@ -139,23 +139,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "BSD-3-Clause-No-Nuclear-License",
-                        "BSD-3-Clause-No-Nuclear-License"
-                    ],
-                    "__impliedId": "BSD-3-Clause-No-Nuclear-License"
-                },
-                "shortname": "BSD-3-Clause-No-Nuclear-License",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "BSD-3-Clause-No-Nuclear-License"
-                ],
-                "patentInt": 0
             }
         },
         "__isOsiApproved": false,

@@ -120,23 +120,6 @@ The source code is provided as-is and you may do with it whatsoever you please p
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "CrystalStacker",
-                    "CrystalStacker"
-                ],
-                "__impliedId": "CrystalStacker"
-            },
-            "shortname": "CrystalStacker",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "CrystalStacker"
-            ],
-            "patentInt": 0
-        },
         "BlueOak License List": {
             "BlueOakRating": "Lead",
             "url": "https://spdx.org/licenses/CrystalStacker.html",

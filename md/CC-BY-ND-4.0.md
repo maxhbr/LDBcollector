@@ -5,8 +5,6 @@ Creative Commons Attribution No Derivatives 4.0 International (CC-BY-ND-4.0)
 
 **Other Names:**
 
--   `http://spdx.org/licenses/CC-BY-ND-4.0.html#licenseText`
-
 -   `scancode://cc-by-nd-4.0`
 
 -   `Creative Commons Attribution No-Derivatives 4.0`
@@ -432,7 +430,6 @@ Raw Data
         "__impliedNames": [
             "CC-BY-ND-4.0",
             "Creative Commons Attribution No Derivatives 4.0 International",
-            "http://spdx.org/licenses/CC-BY-ND-4.0.html#licenseText",
             "scancode://cc-by-nd-4.0",
             "Creative Commons Attribution No-Derivatives 4.0"
         ],
@@ -529,25 +526,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-ND-4.0",
-                        "http://spdx.org/licenses/CC-BY-ND-4.0.html#licenseText",
-                        "CC-BY-ND-4.0"
-                    ],
-                    "__impliedId": "CC-BY-ND-4.0"
-                },
-                "shortname": "CC-BY-ND-4.0",
-                "riskInt": 4,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "http://spdx.org/licenses/CC-BY-ND-4.0.html#licenseText",
-                    "CC-BY-ND-4.0"
-                ],
-                "patentInt": 0
             },
             "Google OSS Policy": {
                 "rating": "RESTRICTED",

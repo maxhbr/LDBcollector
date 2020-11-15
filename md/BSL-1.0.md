@@ -292,23 +292,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "BSL-1.0",
-                        "BSL-1.0"
-                    ],
-                    "__impliedId": "BSL-1.0"
-                },
-                "shortname": "BSL-1.0",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 1,
-                "otherNames": [
-                    "BSL-1.0"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",
@@ -426,12 +409,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": "17.08.03",
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "Boost Software License",
                     "version": "1.0",
                     "spdxId": "BSL-1.0"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "_implications": {
                     "__impliedNames": [
                         "BSL-1.0",

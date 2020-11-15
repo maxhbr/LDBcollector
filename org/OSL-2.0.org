@@ -217,23 +217,6 @@
                   ]
               }
           },
-          "Cavil": {
-              "implications": {
-                  "__impliedNames": [
-                      "OSL-2.0",
-                      "OSL-2.0"
-                  ],
-                  "__impliedId": "OSL-2.0"
-              },
-              "shortname": "OSL-2.0",
-              "riskInt": 4,
-              "trademarkInt": 0,
-              "opinionInt": 0,
-              "otherNames": [
-                  "OSL-2.0"
-              ],
-              "patentInt": 0
-          },
           "BlueOak License List": {
               "url": "https://spdx.org/licenses/OSL-2.0.html",
               "familyName": "Open Software License",

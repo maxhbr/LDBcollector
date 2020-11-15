@@ -5,9 +5,9 @@ zlib License (Zlib)
 
 **Other Names:**
 
--   `zlib/libpng License`
-
 -   `scancode://zlib`
+
+-   `zlib/libpng License`
 
 -   `The zlib/libpng License (Zlib)`
 
@@ -136,11 +136,10 @@ Raw Data
         "__impliedNames": [
             "Zlib",
             "zlib License",
-            "zlib/libpng License",
-            "zlib",
-            "Zlib License",
             "scancode://zlib",
             "ZLIB License",
+            "zlib",
+            "zlib/libpng License",
             "The zlib/libpng License (Zlib)",
             "License :: OSI Approved :: zlib/libpng License",
             "zlib/libpng license",
@@ -339,29 +338,6 @@ Raw Data
                     ]
                 }
             },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "Zlib",
-                        "zlib/libpng License",
-                        "zlib",
-                        "Zlib License",
-                        "Zlib"
-                    ],
-                    "__impliedId": "Zlib"
-                },
-                "shortname": "Zlib",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "zlib/libpng License",
-                    "zlib",
-                    "Zlib License",
-                    "Zlib"
-                ],
-                "patentInt": 0
-            },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
                 "licenseType": "permissive",
@@ -546,12 +522,12 @@ Raw Data
                     "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
                 },
                 "Publication date": null,
-                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-                "Koordinaten": {
+                "Coordinates": {
                     "name": "zlib/libpng license",
                     "version": null,
                     "spdxId": "Zlib"
                 },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
                 "_implications": {
                     "__impliedNames": [
                         "Zlib",

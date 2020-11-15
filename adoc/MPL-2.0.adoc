@@ -696,23 +696,6 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "MPL-2.0",
-                    "MPL-2.0"
-                ],
-                "__impliedId": "MPL-2.0"
-            },
-            "shortname": "MPL-2.0",
-            "riskInt": 0,
-            "trademarkInt": 1,
-            "opinionInt": 0,
-            "otherNames": [
-                "MPL-2.0"
-            ],
-            "patentInt": 0
-        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "copyleft",
@@ -869,12 +852,12 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
                 "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
             },
             "Publication date": "January 3, 2012",
-            "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-            "Koordinaten": {
+            "Coordinates": {
                 "name": "Mozilla Public License",
                 "version": "2.0",
                 "spdxId": "MPL-2.0"
             },
+            "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
             "Patent grant": {
                 "value": "Yes",
                 "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

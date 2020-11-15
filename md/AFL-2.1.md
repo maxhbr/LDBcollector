@@ -5,11 +5,9 @@ Academic Free License v2.1 (AFL-2.1)
 
 **Other Names:**
 
--   `Academic Free License 2.1`
+-   `scancode://afl-2.1`
 
 -   `AFL 2.1`
-
--   `scancode://afl-2.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -105,9 +103,8 @@ Raw Data
         "__impliedNames": [
             "AFL-2.1",
             "Academic Free License v2.1",
-            "Academic Free License 2.1",
-            "AFL 2.1",
-            "scancode://afl-2.1"
+            "scancode://afl-2.1",
+            "AFL 2.1"
         ],
         "__impliedId": "AFL-2.1",
         "__impliedComments": [
@@ -211,27 +208,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "AFL-2.1",
-                        "Academic Free License 2.1",
-                        "AFL-2.1",
-                        "AFL 2.1"
-                    ],
-                    "__impliedId": "AFL-2.1"
-                },
-                "shortname": "AFL-2.1",
-                "riskInt": 3,
-                "trademarkInt": 0,
-                "opinionInt": 1,
-                "otherNames": [
-                    "Academic Free License 2.1",
-                    "AFL-2.1",
-                    "AFL 2.1"
-                ],
-                "patentInt": 0
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

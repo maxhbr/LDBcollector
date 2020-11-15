@@ -5,8 +5,6 @@ Independent JPEG Group License (IJG)
 
 **Other Names:**
 
--   `SUSE-IJG`
-
 -   `scancode://ijg`
 
 -   `JPEG License`
@@ -149,7 +147,6 @@ Raw Data
         "__impliedNames": [
             "IJG",
             "Independent JPEG Group License",
-            "SUSE-IJG",
             "scancode://ijg",
             "JPEG License"
         ],
@@ -243,25 +240,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Cavil": {
-                "implications": {
-                    "__impliedNames": [
-                        "IJG",
-                        "SUSE-IJG",
-                        "IJG"
-                    ],
-                    "__impliedId": "IJG"
-                },
-                "shortname": "IJG",
-                "riskInt": 1,
-                "trademarkInt": 0,
-                "opinionInt": 0,
-                "otherNames": [
-                    "SUSE-IJG",
-                    "IJG"
-                ],
-                "patentInt": 0
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

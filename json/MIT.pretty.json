@@ -2,15 +2,10 @@
     "__impliedNames": [
         "MIT",
         "MIT License",
-        "MIT-Licence",
-        "MIT license",
-        "MIT licence",
-        "MIT License (or similar)",
-        "Expat License",
-        "Expat",
         "scancode://mit",
         "mit",
         "MIT/Expat License",
+        "Expat",
         "License :: OSI Approved :: MIT License",
         "MIT license / X11 license",
         "MIT license (also X11)"
@@ -163,37 +158,6 @@
                     ]
                 ]
             }
-        },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "MIT",
-                    "MIT-Licence",
-                    "MIT license",
-                    "MIT licence",
-                    "MIT License (or similar)",
-                    "MIT License",
-                    "MIT",
-                    "Expat License",
-                    "Expat"
-                ],
-                "__impliedId": "MIT"
-            },
-            "shortname": "MIT",
-            "riskInt": 1,
-            "trademarkInt": 1,
-            "opinionInt": 1,
-            "otherNames": [
-                "MIT-Licence",
-                "MIT license",
-                "MIT licence",
-                "MIT License (or similar)",
-                "MIT License",
-                "MIT",
-                "Expat License",
-                "Expat"
-            ],
-            "patentInt": 1
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -397,12 +361,12 @@
                 "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
             },
             "Publication date": "1988",
-            "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-            "Koordinaten": {
+            "Coordinates": {
                 "name": "MIT license / X11 license",
                 "version": null,
                 "spdxId": "MIT"
             },
+            "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
             "Patent grant": {
                 "value": "Manually",
                 "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"

@@ -292,23 +292,6 @@ The End
                 ]
             }
         },
-        "Cavil": {
-            "implications": {
-                "__impliedNames": [
-                    "NBPL-1.0",
-                    "NBPL-1.0"
-                ],
-                "__impliedId": "NBPL-1.0"
-            },
-            "shortname": "NBPL-1.0",
-            "riskInt": 5,
-            "trademarkInt": 0,
-            "opinionInt": 0,
-            "otherNames": [
-                "NBPL-1.0"
-            ],
-            "patentInt": 0
-        },
         "BlueOak License List": {
             "BlueOakRating": "Lead",
             "url": "https://spdx.org/licenses/NBPL-1.0.html",
