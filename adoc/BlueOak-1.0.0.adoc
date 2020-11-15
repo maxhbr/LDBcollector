@@ -95,10 +95,6 @@ software or this license, under any kind of legal claim.***
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/blueoak-1.0.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/BlueOak-1.0.0.svg
-
 ==== Raw JSON
 
 ....
@@ -257,3 +253,7 @@ software or this license, under any kind of legal claim.***
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/BlueOak-1.0.0.svg

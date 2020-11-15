@@ -64,10 +64,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-1-clause.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/BSD-1-Clause.svg](../dot/BSD-1-Clause.svg "../dot/BSD-1-Clause.svg")
-
 ### Raw JSON
 
     {
@@ -238,3 +234,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/BSD-1-Clause.svg](../dot/BSD-1-Clause.svg "../dot/BSD-1-Clause.svg")

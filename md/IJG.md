@@ -155,10 +155,6 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt "OSADL License Checklist")
 
-### Dot Cluster Graph
-
-[../dot/IJG.svg](../dot/IJG.svg "../dot/IJG.svg")
-
 ### Raw JSON
 
     {
@@ -341,3 +337,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/IJG.svg](../dot/IJG.svg "../dot/IJG.svg")

@@ -83,10 +83,6 @@ License Checklist]
 * https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
 (https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md[ODbL])
 
-==== Dot Cluster Graph
-
-../dot/curl.svg
-
 ==== Raw JSON
 
 ....
@@ -319,3 +315,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/curl.svg

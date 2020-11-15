@@ -68,10 +68,6 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/netcdf.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/NetCDF.svg
-
 ==== Raw JSON
 
 ....
@@ -229,3 +225,7 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NetCDF.svg

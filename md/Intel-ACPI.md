@@ -157,10 +157,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-acpi.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Intel-ACPI.svg](../dot/Intel-ACPI.svg "../dot/Intel-ACPI.svg")
-
 ### Raw JSON
 
     {
@@ -279,3 +275,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Intel-ACPI.svg](../dot/Intel-ACPI.svg "../dot/Intel-ACPI.svg")

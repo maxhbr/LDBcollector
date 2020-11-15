@@ -167,10 +167,6 @@ Knowledge International]
 * Override
 * Override
 
-==== Dot Cluster Graph
-
-../dot/BSL-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -730,3 +726,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/BSL-1.0.svg

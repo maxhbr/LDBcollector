@@ -224,10 +224,6 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
-### Dot Cluster Graph
-
-[../dot/EUPL-1.2.svg](../dot/EUPL-1.2.svg "../dot/EUPL-1.2.svg")
-
 ### Raw JSON
 
     {
@@ -733,3 +729,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/EUPL-1.2.svg](../dot/EUPL-1.2.svg "../dot/EUPL-1.2.svg")

@@ -80,10 +80,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/MITNFA.svg](../dot/MITNFA.svg "../dot/MITNFA.svg")
-
 ### Raw JSON
 
     {
@@ -255,3 +251,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/MITNFA.svg](../dot/MITNFA.svg "../dot/MITNFA.svg")

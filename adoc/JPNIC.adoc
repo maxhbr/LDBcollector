@@ -78,10 +78,6 @@ Chiyoda-ku, Tokyo 101-0047, Japan.
 * https://spdx.org/licenses/JPNIC.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/jpnic-idnkit.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/JPNIC.svg
-
 ==== Raw JSON
 
 ....
@@ -201,3 +197,7 @@ Chiyoda-ku, Tokyo 101-0047, Japan.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/JPNIC.svg

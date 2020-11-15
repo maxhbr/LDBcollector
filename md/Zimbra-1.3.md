@@ -192,10 +192,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zimbra-1.3.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Zimbra-1.3.svg](../dot/Zimbra-1.3.svg "../dot/Zimbra-1.3.svg")
-
 ### Raw JSON
 
     {
@@ -304,3 +300,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Zimbra-1.3.svg](../dot/Zimbra-1.3.svg "../dot/Zimbra-1.3.svg")

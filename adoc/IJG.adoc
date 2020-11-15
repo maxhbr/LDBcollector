@@ -151,10 +151,6 @@ We are required to state that
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt[OSADL
 License Checklist]
 
-==== Dot Cluster Graph
-
-../dot/IJG.svg
-
 ==== Raw JSON
 
 ....
@@ -339,3 +335,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/IJG.svg

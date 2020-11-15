@@ -62,10 +62,6 @@ OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
 * https://spdx.org/licenses/NIST-PD-fallback.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nist-pd-fallback.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/NIST-PD-fallback.svg
-
 ==== Raw JSON
 
 ....
@@ -179,3 +175,7 @@ OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NIST-PD-fallback.svg

@@ -65,10 +65,6 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-ack.yml][Scancode]]
 
-*** Dot Cluster Graph
-
-[[../dot/MIT-feh.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -232,3 +228,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/MIT-feh.svg]]

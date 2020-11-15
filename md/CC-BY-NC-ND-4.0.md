@@ -460,10 +460,6 @@ Raw Data
 
 -   Override
 
-### Dot Cluster Graph
-
-[../dot/CC-BY-NC-ND-4.0.svg](../dot/CC-BY-NC-ND-4.0.svg "../dot/CC-BY-NC-ND-4.0.svg")
-
 ### Raw JSON
 
     {
@@ -664,3 +660,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/CC-BY-NC-ND-4.0.svg](../dot/CC-BY-NC-ND-4.0.svg "../dot/CC-BY-NC-ND-4.0.svg")

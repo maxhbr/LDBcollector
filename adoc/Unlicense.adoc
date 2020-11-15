@@ -132,10 +132,6 @@ Knowledge International]
 * https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
 (https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md[ODbL])
 
-==== Dot Cluster Graph
-
-../dot/Unlicense.svg
-
 ==== Raw JSON
 
 ....
@@ -615,3 +611,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Unlicense.svg

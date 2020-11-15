@@ -49,10 +49,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Abstyles.svg](../dot/Abstyles.svg "../dot/Abstyles.svg")
-
 ### Raw JSON
 
     {
@@ -170,3 +166,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Abstyles.svg](../dot/Abstyles.svg "../dot/Abstyles.svg")

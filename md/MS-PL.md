@@ -228,10 +228,6 @@ Raw Data
 -   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
     ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL"))
 
-### Dot Cluster Graph
-
-[../dot/MS-PL.svg](../dot/MS-PL.svg "../dot/MS-PL.svg")
-
 ### Raw JSON
 
     {
@@ -917,3 +913,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/MS-PL.svg](../dot/MS-PL.svg "../dot/MS-PL.svg")

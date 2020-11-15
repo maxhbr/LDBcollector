@@ -76,10 +76,6 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IBM-pibs.txt "OSADL License Checklist")
 
-### Dot Cluster Graph
-
-[../dot/IBM-pibs.svg](../dot/IBM-pibs.svg "../dot/IBM-pibs.svg")
-
 ### Raw JSON
 
     {
@@ -247,3 +243,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/IBM-pibs.svg](../dot/IBM-pibs.svg "../dot/IBM-pibs.svg")

@@ -48,10 +48,6 @@ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSE
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/aml.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/AML.svg
-
 ==== Raw JSON
 
 ....
@@ -208,3 +204,7 @@ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSE
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/AML.svg

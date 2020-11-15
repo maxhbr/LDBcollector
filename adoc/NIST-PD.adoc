@@ -59,10 +59,6 @@ of the terms of this agreement
 * https://spdx.org/licenses/NIST-PD.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nist-pd.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/NIST-PD.svg
-
 ==== Raw JSON
 
 ....
@@ -190,3 +186,7 @@ of the terms of this agreement
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NIST-PD.svg

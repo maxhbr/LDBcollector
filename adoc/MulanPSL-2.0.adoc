@@ -166,10 +166,6 @@ Copyright © 中国开源云联盟 京ICP备05013730号-37
 * https://spdx.org/licenses/MulanPSL-2.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mulanpsl-2.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/MulanPSL-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -292,3 +288,7 @@ Copyright © 中国开源云联盟 京ICP备05013730号-37
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/MulanPSL-2.0.svg

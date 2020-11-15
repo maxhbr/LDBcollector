@@ -51,10 +51,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apafml.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/APAFML.svg](../dot/APAFML.svg "../dot/APAFML.svg")
-
 ### Raw JSON
 
     {
@@ -209,3 +205,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/APAFML.svg](../dot/APAFML.svg "../dot/APAFML.svg")

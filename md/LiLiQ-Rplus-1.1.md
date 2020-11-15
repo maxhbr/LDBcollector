@@ -30,10 +30,6 @@ Raw Data
 
 -   [SPDX](https://spdx.org/licenses/LiLiQ-Rplus-1.1.html "SPDX")
 
-### Dot Cluster Graph
-
-[../dot/LiLiQ-Rplus-1.1.svg](../dot/LiLiQ-Rplus-1.1.svg "../dot/LiLiQ-Rplus-1.1.svg")
-
 ### Raw JSON
 
     {
@@ -112,3 +108,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/LiLiQ-Rplus-1.1.svg](../dot/LiLiQ-Rplus-1.1.svg "../dot/LiLiQ-Rplus-1.1.svg")

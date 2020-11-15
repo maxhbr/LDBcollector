@@ -548,10 +548,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-2.0.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/CECILL-2.0.svg](../dot/CECILL-2.0.svg "../dot/CECILL-2.0.svg")
-
 ### Raw JSON
 
     {
@@ -670,3 +666,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/CECILL-2.0.svg](../dot/CECILL-2.0.svg "../dot/CECILL-2.0.svg")

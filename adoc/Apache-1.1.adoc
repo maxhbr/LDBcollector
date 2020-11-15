@@ -141,10 +141,6 @@ Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
-==== Dot Cluster Graph
-
-../dot/Apache-1.1.svg
-
 ==== Raw JSON
 
 ....
@@ -605,3 +601,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Apache-1.1.svg

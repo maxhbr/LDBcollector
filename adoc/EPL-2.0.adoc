@@ -453,10 +453,6 @@ Policy]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/EPL-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -1032,3 +1028,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/EPL-2.0.svg

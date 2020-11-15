@@ -55,10 +55,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gl2ps.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/GL2PS.svg](../dot/GL2PS.svg "../dot/GL2PS.svg")
-
 ### Raw JSON
 
     {
@@ -160,3 +156,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/GL2PS.svg](../dot/GL2PS.svg "../dot/GL2PS.svg")

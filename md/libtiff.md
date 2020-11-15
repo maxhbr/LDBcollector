@@ -84,10 +84,6 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
-### Dot Cluster Graph
-
-[../dot/libtiff.svg](../dot/libtiff.svg "../dot/libtiff.svg")
-
 ### Raw JSON
 
     {
@@ -281,3 +277,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/libtiff.svg](../dot/libtiff.svg "../dot/libtiff.svg")

@@ -265,10 +265,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpllr.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/LGPLLR.svg](../dot/LGPLLR.svg "../dot/LGPLLR.svg")
-
 ### Raw JSON
 
     {
@@ -370,3 +366,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/LGPLLR.svg](../dot/LGPLLR.svg "../dot/LGPLLR.svg")

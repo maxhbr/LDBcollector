@@ -169,10 +169,6 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
 
-*** Dot Cluster Graph
-
-[[../dot/Artistic-1.0-cl8.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -419,3 +415,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/Artistic-1.0-cl8.svg]]

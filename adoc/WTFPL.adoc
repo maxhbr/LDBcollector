@@ -118,10 +118,6 @@ License Checklist]
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/WTFPL.svg
-
 ==== Raw JSON
 
 ....
@@ -506,3 +502,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/WTFPL.svg

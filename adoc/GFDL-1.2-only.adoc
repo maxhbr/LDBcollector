@@ -443,10 +443,6 @@ to permit their use in free software.
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.2.yml[Scancode]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/GFDL-1.2-only.svg
-
 ==== Raw JSON
 
 ....
@@ -618,3 +614,7 @@ to permit their use in free software.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/GFDL-1.2-only.svg

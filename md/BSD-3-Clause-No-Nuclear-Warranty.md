@@ -83,10 +83,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/BSD-3-Clause-No-Nuclear-Warranty.svg](../dot/BSD-3-Clause-No-Nuclear-Warranty.svg "../dot/BSD-3-Clause-No-Nuclear-Warranty.svg")
-
 ### Raw JSON
 
     {
@@ -252,3 +248,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/BSD-3-Clause-No-Nuclear-Warranty.svg](../dot/BSD-3-Clause-No-Nuclear-Warranty.svg "../dot/BSD-3-Clause-No-Nuclear-Warranty.svg")

@@ -188,10 +188,6 @@ Software distributed under the License is distributed on an AS IS basis, WITHOUT
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/BitTorrent-1.1.svg
-
 ==== Raw JSON
 
 ....
@@ -351,3 +347,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/BitTorrent-1.1.svg

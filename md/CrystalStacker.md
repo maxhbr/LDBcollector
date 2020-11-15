@@ -53,10 +53,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/crystal-stacker.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/CrystalStacker.svg](../dot/CrystalStacker.svg "../dot/CrystalStacker.svg")
-
 ### Raw JSON
 
     {
@@ -212,3 +208,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/CrystalStacker.svg](../dot/CrystalStacker.svg "../dot/CrystalStacker.svg")

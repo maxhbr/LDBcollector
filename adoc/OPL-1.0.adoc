@@ -381,10 +381,6 @@ complete with out that file.
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/open-public.yml[Scancode]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/OPL-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -540,3 +536,7 @@ complete with out that file.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OPL-1.0.svg

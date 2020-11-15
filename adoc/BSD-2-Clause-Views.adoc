@@ -47,10 +47,6 @@ The views and conclusions contained in the software and documentation are those 
 * https://spdx.org/licenses/BSD-2-Clause-Views.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-2-clause-views.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/BSD-2-Clause-Views.svg
-
 ==== Raw JSON
 
 ....
@@ -183,3 +179,7 @@ The views and conclusions contained in the software and documentation are those 
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/BSD-2-Clause-Views.svg

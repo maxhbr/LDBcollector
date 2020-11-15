@@ -152,10 +152,6 @@ License Checklist]
 Policy]
 * Override
 
-==== Dot Cluster Graph
-
-../dot/BSD-4-Clause-UC.svg
-
 ==== Raw JSON
 
 ....
@@ -512,3 +508,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/BSD-4-Clause-UC.svg

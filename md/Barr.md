@@ -53,10 +53,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/barr-tex.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Barr.svg](../dot/Barr.svg "../dot/Barr.svg")
-
 ### Raw JSON
 
     {
@@ -212,3 +208,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Barr.svg](../dot/Barr.svg "../dot/Barr.svg")

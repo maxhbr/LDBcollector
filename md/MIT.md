@@ -165,10 +165,6 @@ Raw Data
 
 -   Override
 
-### Dot Cluster Graph
-
-[../dot/MIT.svg](../dot/MIT.svg "../dot/MIT.svg")
-
 ### Raw JSON
 
     {
@@ -859,3 +855,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/MIT.svg](../dot/MIT.svg "../dot/MIT.svg")

@@ -293,10 +293,6 @@ Version 1.0 du 2006-09-05."
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/CECILL-B.svg
-
 ==== Raw JSON
 
 ....
@@ -485,3 +481,7 @@ Version 1.0 du 2006-09-05."
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CECILL-B.svg

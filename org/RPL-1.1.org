@@ -221,10 +221,6 @@
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
 
-*** Dot Cluster Graph
-
-[[../dot/RPL-1.1.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -490,3 +486,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/RPL-1.1.svg]]

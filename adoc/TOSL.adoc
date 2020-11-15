@@ -85,10 +85,6 @@ OF SUCH DAMAGE.
 * https://spdx.org/licenses/TOSL.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tosl.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/TOSL.svg
-
 ==== Raw JSON
 
 ....
@@ -209,3 +205,7 @@ OF SUCH DAMAGE.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/TOSL.svg

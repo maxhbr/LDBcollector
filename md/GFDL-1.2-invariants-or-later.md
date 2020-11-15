@@ -25,10 +25,6 @@ Raw Data
 
 -   [SPDX](https://spdx.org/licenses/GFDL-1.2-invariants-or-later.html "SPDX")
 
-### Dot Cluster Graph
-
-[../dot/GFDL-1.2-invariants-or-later.svg](../dot/GFDL-1.2-invariants-or-later.svg "../dot/GFDL-1.2-invariants-or-later.svg")
-
 ### Raw JSON
 
     {
@@ -80,3 +76,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/GFDL-1.2-invariants-or-later.svg](../dot/GFDL-1.2-invariants-or-later.svg "../dot/GFDL-1.2-invariants-or-later.svg")

@@ -123,10 +123,6 @@ e) to display the Original Work publicly.
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/NPOSL-3.0.svg
-
 ==== Raw JSON
 
 ....
@@ -443,3 +439,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NPOSL-3.0.svg

@@ -71,10 +71,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-ack.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/BSD-3-Clause-Attribution.svg
-
 ==== Raw JSON
 
 ....
@@ -232,3 +228,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/BSD-3-Clause-Attribution.svg

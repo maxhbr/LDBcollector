@@ -510,10 +510,6 @@ Important Recommendations
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/LPPL-1.3c.svg
-
 ==== Raw JSON
 
 ....
@@ -947,3 +943,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/LPPL-1.3c.svg

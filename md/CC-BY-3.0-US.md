@@ -25,10 +25,6 @@ Raw Data
 
 -   [SPDX](https://spdx.org/licenses/CC-BY-3.0-US.html "SPDX")
 
-### Dot Cluster Graph
-
-[../dot/CC-BY-3.0-US.svg](../dot/CC-BY-3.0-US.svg "../dot/CC-BY-3.0-US.svg")
-
 ### Raw JSON
 
     {
@@ -80,3 +76,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/CC-BY-3.0-US.svg](../dot/CC-BY-3.0-US.svg "../dot/CC-BY-3.0-US.svg")

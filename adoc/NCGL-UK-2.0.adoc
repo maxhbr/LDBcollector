@@ -112,10 +112,6 @@ means the natural or legal person, or body of persons corporate or incorporate, 
 * https://spdx.org/licenses/NCGL-UK-2.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ncgl-uk-2.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/NCGL-UK-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -220,3 +216,7 @@ means the natural or legal person, or body of persons corporate or incorporate, 
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NCGL-UK-2.0.svg

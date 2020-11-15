@@ -237,10 +237,6 @@ Ohio and the United States of America, without regard to principles of conflicts
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/OCLC-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -511,3 +507,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OCLC-2.0.svg

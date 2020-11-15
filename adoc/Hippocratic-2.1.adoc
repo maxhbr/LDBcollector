@@ -69,10 +69,6 @@ This Hippocratic License is an Ethical Source license (https://ethicalsource.dev
 * https://spdx.org/licenses/Hippocratic-2.1.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hippocratic-2.1.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Hippocratic-2.1.svg
-
 ==== Raw JSON
 
 ....
@@ -178,3 +174,7 @@ This Hippocratic License is an Ethical Source license (https://ethicalsource.dev
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Hippocratic-2.1.svg

@@ -123,10 +123,6 @@
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
 
-*** Dot Cluster Graph
-
-[[../dot/VSL-1.0.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -446,3 +442,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/VSL-1.0.svg]]

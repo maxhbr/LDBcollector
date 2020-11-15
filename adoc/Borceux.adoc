@@ -60,10 +60,6 @@ francis dot borceux at uclouvain dot be.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Borceux.svg
-
 ==== Raw JSON
 
 ....
@@ -221,3 +217,7 @@ francis dot borceux at uclouvain dot be.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Borceux.svg

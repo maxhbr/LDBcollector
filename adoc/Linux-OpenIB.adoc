@@ -64,10 +64,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/linux-openib.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Linux-OpenIB.svg
-
 ==== Raw JSON
 
 ....
@@ -259,3 +255,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Linux-OpenIB.svg

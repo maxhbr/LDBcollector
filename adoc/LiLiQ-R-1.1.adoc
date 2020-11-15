@@ -34,10 +34,6 @@ https://spdx.org/licenses/LiLiQ-R-1.1.html[SPDX])
 * https://spdx.org/licenses/LiLiQ-R-1.1.html[SPDX]
 * https://opensource.org/licenses/[OpenSourceInitiative]
 
-==== Dot Cluster Graph
-
-../dot/LiLiQ-R-1.1.svg
-
 ==== Raw JSON
 
 ....
@@ -161,3 +157,7 @@ https://spdx.org/licenses/LiLiQ-R-1.1.html[SPDX])
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/LiLiQ-R-1.1.svg

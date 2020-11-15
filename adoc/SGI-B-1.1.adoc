@@ -66,10 +66,6 @@ Additional Notice Provisions: [such additional provisions, if any, as appear in 
 * https://spdx.org/licenses/SGI-B-1.1.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-1.1.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/SGI-B-1.1.svg
-
 ==== Raw JSON
 
 ....
@@ -196,3 +192,7 @@ Additional Notice Provisions: [such additional provisions, if any, as appear in 
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/SGI-B-1.1.svg

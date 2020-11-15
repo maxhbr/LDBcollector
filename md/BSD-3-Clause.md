@@ -192,10 +192,6 @@ Raw Data
 
 -   Override
 
-### Dot Cluster Graph
-
-[../dot/BSD-3-Clause.svg](../dot/BSD-3-Clause.svg "../dot/BSD-3-Clause.svg")
-
 ### Raw JSON
 
     {
@@ -873,3 +869,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/BSD-3-Clause.svg](../dot/BSD-3-Clause.svg "../dot/BSD-3-Clause.svg")

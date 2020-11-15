@@ -70,10 +70,6 @@ connection with the use or performance of this software.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/standard-ml-nj.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/SMLNJ.svg
-
 ==== Raw JSON
 
 ....
@@ -271,3 +267,7 @@ connection with the use or performance of this software.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/SMLNJ.svg

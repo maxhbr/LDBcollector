@@ -25,10 +25,6 @@ Raw Data
 
 -   [SPDX](https://spdx.org/licenses/OFL-1.0-RFN.html "SPDX")
 
-### Dot Cluster Graph
-
-[../dot/OFL-1.0-RFN.svg](../dot/OFL-1.0-RFN.svg "../dot/OFL-1.0-RFN.svg")
-
 ### Raw JSON
 
     {
@@ -80,3 +76,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/OFL-1.0-RFN.svg](../dot/OFL-1.0-RFN.svg "../dot/OFL-1.0-RFN.svg")

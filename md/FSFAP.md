@@ -57,10 +57,6 @@ Raw Data
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
 
-### Dot Cluster Graph
-
-[../dot/FSFAP.svg](../dot/FSFAP.svg "../dot/FSFAP.svg")
-
 ### Raw JSON
 
     {
@@ -248,3 +244,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/FSFAP.svg](../dot/FSFAP.svg "../dot/FSFAP.svg")

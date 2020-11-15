@@ -69,10 +69,6 @@ You are excused for unknowingly breaking 1, 2, or 3 if you contribute as require
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/parity-6.0.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Parity-6.0.0.svg
-
 ==== Raw JSON
 
 ....
@@ -239,3 +235,7 @@ You are excused for unknowingly breaking 1, 2, or 3 if you contribute as require
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Parity-6.0.0.svg

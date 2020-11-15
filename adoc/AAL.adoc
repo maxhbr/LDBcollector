@@ -103,10 +103,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/AAL.svg
-
 ==== Raw JSON
 
 ....
@@ -420,3 +416,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/AAL.svg

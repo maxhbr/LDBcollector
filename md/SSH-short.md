@@ -46,10 +46,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tatu-ylonen.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/SSH-short.svg](../dot/SSH-short.svg "../dot/SSH-short.svg")
-
 ### Raw JSON
 
     {
@@ -178,3 +174,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/SSH-short.svg](../dot/SSH-short.svg "../dot/SSH-short.svg")

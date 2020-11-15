@@ -60,10 +60,6 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-keith-packard.yml[Scancode]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/HPND-sell-variant.svg
-
 ==== Raw JSON
 
 ....
@@ -184,3 +180,7 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/HPND-sell-variant.svg

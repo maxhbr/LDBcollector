@@ -91,10 +91,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xinetd.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/xinetd.svg](../dot/xinetd.svg "../dot/xinetd.svg")
-
 ### Raw JSON
 
     {
@@ -249,3 +245,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/xinetd.svg](../dot/xinetd.svg "../dot/xinetd.svg")

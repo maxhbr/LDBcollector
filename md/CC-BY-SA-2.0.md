@@ -114,10 +114,6 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
-### Dot Cluster Graph
-
-[../dot/CC-BY-SA-2.0.svg](../dot/CC-BY-SA-2.0.svg "../dot/CC-BY-SA-2.0.svg")
-
 ### Raw JSON
 
     {
@@ -310,3 +306,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/CC-BY-SA-2.0.svg](../dot/CC-BY-SA-2.0.svg "../dot/CC-BY-SA-2.0.svg")

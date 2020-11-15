@@ -135,10 +135,6 @@ Policy]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/NCSA.svg
-
 ==== Raw JSON
 
 ....
@@ -670,3 +666,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NCSA.svg

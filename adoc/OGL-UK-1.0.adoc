@@ -145,10 +145,6 @@ Further context, best practice and guidance can be found in the UK Government Li
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/OGL-UK-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -295,3 +291,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OGL-UK-1.0.svg

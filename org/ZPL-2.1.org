@@ -100,10 +100,6 @@
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
 
-*** Dot Cluster Graph
-
-[[../dot/ZPL-2.1.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -338,3 +334,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/ZPL-2.1.svg]]

@@ -67,10 +67,6 @@ serves any particular purpose.
 * https://spdx.org/licenses/MakeIndex.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/makeindex.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/MakeIndex.svg
-
 ==== Raw JSON
 
 ....
@@ -191,3 +187,7 @@ serves any particular purpose.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/MakeIndex.svg

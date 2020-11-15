@@ -288,10 +288,6 @@ Version 1.0 du 2006-09-05."
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
-==== Dot Cluster Graph
-
-../dot/CECILL-C.svg
-
 ==== Raw JSON
 
 ....
@@ -446,3 +442,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CECILL-C.svg

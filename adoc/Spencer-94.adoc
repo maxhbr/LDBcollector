@@ -62,10 +62,6 @@ sources, credits must appear in the documentation.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hs-regexp.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Spencer-94.svg
-
 ==== Raw JSON
 
 ....
@@ -229,3 +225,7 @@ sources, credits must appear in the documentation.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Spencer-94.svg

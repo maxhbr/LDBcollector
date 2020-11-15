@@ -191,10 +191,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/OFL-1.1.svg
-
 ==== Raw JSON
 
 ....
@@ -614,3 +610,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OFL-1.1.svg

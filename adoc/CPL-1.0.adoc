@@ -222,10 +222,6 @@ License Checklist]
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/CPL-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -644,3 +640,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CPL-1.0.svg

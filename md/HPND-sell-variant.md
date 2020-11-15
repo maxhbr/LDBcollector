@@ -63,10 +63,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/HPND-sell-variant.svg](../dot/HPND-sell-variant.svg "../dot/HPND-sell-variant.svg")
-
 ### Raw JSON
 
     {
@@ -185,3 +181,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/HPND-sell-variant.svg](../dot/HPND-sell-variant.svg "../dot/HPND-sell-variant.svg")

@@ -609,10 +609,6 @@ jurisdiction, by the more diligent Party.
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/CECILL-2.1.svg
-
 ==== Raw JSON
 
 ....
@@ -1022,3 +1018,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CECILL-2.1.svg

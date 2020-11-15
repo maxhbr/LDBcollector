@@ -173,10 +173,6 @@
 - [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt][choosealicense.com]]
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
-*** Dot Cluster Graph
-
-[[../dot/Vim.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -401,3 +397,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/Vim.svg]]

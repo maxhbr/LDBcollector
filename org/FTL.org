@@ -246,10 +246,6 @@
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
 
-*** Dot Cluster Graph
-
-[[../dot/FTL.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -508,3 +504,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/FTL.svg]]

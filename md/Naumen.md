@@ -81,10 +81,6 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
-### Dot Cluster Graph
-
-[../dot/Naumen.svg](../dot/Naumen.svg "../dot/Naumen.svg")
-
 ### Raw JSON
 
     {
@@ -386,3 +382,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Naumen.svg](../dot/Naumen.svg "../dot/Naumen.svg")

@@ -383,10 +383,6 @@ $OpenBSD: LICENCE,v 1.19 2004/08/30 09:18:08 markus Exp $
 * https://spdx.org/licenses/SSH-OpenSSH.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssh.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/SSH-OpenSSH.svg
-
 ==== Raw JSON
 
 ....
@@ -522,3 +518,7 @@ $OpenBSD: LICENCE,v 1.19 2004/08/30 09:18:08 markus Exp $
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/SSH-OpenSSH.svg

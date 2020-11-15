@@ -167,10 +167,6 @@ October 31, 2008
 License Checklist]
 * https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml[finos/OSLC-handbook]
 
-==== Dot Cluster Graph
-
-../dot/Libpng.svg
-
 ==== Raw JSON
 
 ....
@@ -389,3 +385,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Libpng.svg

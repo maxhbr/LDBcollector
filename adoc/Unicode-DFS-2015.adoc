@@ -120,10 +120,6 @@ License Checklist]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
-==== Dot Cluster Graph
-
-../dot/Unicode-DFS-2015.svg
-
 ==== Raw JSON
 
 ....
@@ -334,3 +330,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Unicode-DFS-2015.svg

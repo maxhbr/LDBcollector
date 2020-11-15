@@ -55,10 +55,6 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
 * https://spdx.org/licenses/Eurosym.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eurosym.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Eurosym.svg
-
 ==== Raw JSON
 
 ....
@@ -168,3 +164,7 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Eurosym.svg

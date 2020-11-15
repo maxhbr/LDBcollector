@@ -31,10 +31,6 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
 
-*** Dot Cluster Graph
-
-[[../dot/LAL-1.2.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -124,3 +120,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/LAL-1.2.svg]]

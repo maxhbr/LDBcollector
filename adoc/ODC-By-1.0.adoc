@@ -457,10 +457,6 @@ terms of this License.
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/ODC-By-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -604,3 +600,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/ODC-By-1.0.svg

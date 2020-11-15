@@ -45,10 +45,6 @@ express or implied warranty.
 * https://spdx.org/licenses/NTP-0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntp-0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/NTP-0.svg
-
 ==== Raw JSON
 
 ....
@@ -152,3 +148,7 @@ express or implied warranty.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NTP-0.svg

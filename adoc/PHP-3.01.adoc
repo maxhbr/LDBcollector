@@ -120,10 +120,6 @@ PHP includes the Zend Engine, freely available at
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml[Scancode]
 * https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml[finos/OSLC-handbook]
 
-==== Dot Cluster Graph
-
-../dot/PHP-3.01.svg
-
 ==== Raw JSON
 
 ....
@@ -403,3 +399,7 @@ PHP includes the Zend Engine, freely available at
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/PHP-3.01.svg

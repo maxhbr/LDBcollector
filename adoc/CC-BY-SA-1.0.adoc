@@ -110,10 +110,6 @@ Creative Commons may be contacted at http://creativecommons.org/.
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/CC-BY-SA-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -340,3 +336,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CC-BY-SA-1.0.svg

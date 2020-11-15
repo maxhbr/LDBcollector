@@ -188,10 +188,6 @@ All Rights Reserved.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
-==== Dot Cluster Graph
-
-../dot/SISSL-1.2.svg
-
 ==== Raw JSON
 
 ....
@@ -311,3 +307,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/SISSL-1.2.svg

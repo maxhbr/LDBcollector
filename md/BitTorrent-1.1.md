@@ -192,10 +192,6 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
-### Dot Cluster Graph
-
-[../dot/BitTorrent-1.1.svg](../dot/BitTorrent-1.1.svg "../dot/BitTorrent-1.1.svg")
-
 ### Raw JSON
 
     {
@@ -353,3 +349,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/BitTorrent-1.1.svg](../dot/BitTorrent-1.1.svg "../dot/BitTorrent-1.1.svg")

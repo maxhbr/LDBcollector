@@ -437,10 +437,6 @@ Copyright © <year> Nokia and others. All Rights Reserved.
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/Nokia.svg
-
 ==== Raw JSON
 
 ....
@@ -704,3 +700,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Nokia.svg

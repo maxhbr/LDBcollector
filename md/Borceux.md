@@ -62,10 +62,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Borceux.svg](../dot/Borceux.svg "../dot/Borceux.svg")
-
 ### Raw JSON
 
     {
@@ -221,3 +217,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Borceux.svg](../dot/Borceux.svg "../dot/Borceux.svg")

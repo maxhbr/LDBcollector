@@ -30,10 +30,6 @@ Guidelines])
 * https://spdx.org/licenses/LAL-1.2.html[SPDX]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/LAL-1.2.svg
-
 ==== Raw JSON
 
 ....
@@ -123,3 +119,7 @@ Guidelines])
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/LAL-1.2.svg

@@ -46,10 +46,6 @@ changes and their authors must be explicitly stated HERE.
 * https://spdx.org/licenses/psfrag.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psfrag.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/psfrag.svg
-
 ==== Raw JSON
 
 ....
@@ -169,3 +165,7 @@ changes and their authors must be explicitly stated HERE.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/psfrag.svg

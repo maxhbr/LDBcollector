@@ -106,10 +106,6 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
-==== Dot Cluster Graph
-
-../dot/OSL-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -340,3 +336,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OSL-2.0.svg

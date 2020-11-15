@@ -84,10 +84,6 @@ Stated plainly: You are permitted to modify NetHack, or otherwise use parts of N
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/NGPL.svg
-
 ==== Raw JSON
 
 ....
@@ -338,3 +334,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NGPL.svg

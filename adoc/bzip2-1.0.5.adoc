@@ -56,10 +56,6 @@ PATENT HINTS Yes
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.5.txt[OSADL
 License Checklist]
 
-==== Dot Cluster Graph
-
-../dot/bzip2-1.0.5.svg
-
 ==== Raw JSON
 
 ....
@@ -190,3 +186,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/bzip2-1.0.5.svg

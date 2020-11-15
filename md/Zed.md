@@ -46,10 +46,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zed.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Zed.svg](../dot/Zed.svg "../dot/Zed.svg")
-
 ### Raw JSON
 
     {
@@ -204,3 +200,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Zed.svg](../dot/Zed.svg "../dot/Zed.svg")

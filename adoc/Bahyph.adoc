@@ -52,10 +52,6 @@ END OF COPYRIGHT NOTICE
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bahyph.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Bahyph.svg
-
 ==== Raw JSON
 
 ....
@@ -212,3 +208,7 @@ END OF COPYRIGHT NOTICE
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Bahyph.svg

@@ -83,10 +83,6 @@ Definitions
 * https://spdx.org/licenses/O-UDA-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/o-uda-1.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/O-UDA-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -190,3 +186,7 @@ Definitions
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/O-UDA-1.0.svg

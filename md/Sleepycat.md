@@ -113,10 +113,6 @@ Raw Data
 
 -   Override
 
-### Dot Cluster Graph
-
-[../dot/Sleepycat.svg](../dot/Sleepycat.svg "../dot/Sleepycat.svg")
-
 ### Raw JSON
 
     {
@@ -530,3 +526,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Sleepycat.svg](../dot/Sleepycat.svg "../dot/Sleepycat.svg")

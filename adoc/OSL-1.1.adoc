@@ -109,10 +109,6 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/OSL-1.1.svg
-
 ==== Raw JSON
 
 ....
@@ -351,3 +347,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OSL-1.1.svg

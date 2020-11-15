@@ -58,10 +58,6 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/swl.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/SWL.svg
-
 ==== Raw JSON
 
 ....
@@ -245,3 +241,7 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/SWL.svg

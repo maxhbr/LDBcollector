@@ -58,10 +58,6 @@ PARTY RIGHTS.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afmparse.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Afmparse.svg
-
 ==== Raw JSON
 
 ....
@@ -219,3 +215,7 @@ PARTY RIGHTS.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Afmparse.svg

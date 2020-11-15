@@ -85,10 +85,6 @@
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
 
-*** Dot Cluster Graph
-
-[[../dot/EFL-1.0.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -364,3 +360,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/EFL-1.0.svg]]

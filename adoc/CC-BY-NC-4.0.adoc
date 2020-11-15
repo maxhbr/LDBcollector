@@ -464,10 +464,6 @@ Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
-==== Dot Cluster Graph
-
-../dot/CC-BY-NC-4.0.svg
-
 ==== Raw JSON
 
 ....
@@ -718,3 +714,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CC-BY-NC-4.0.svg

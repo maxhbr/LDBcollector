@@ -98,10 +98,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/scea-1.0.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/SCEA.svg](../dot/SCEA.svg "../dot/SCEA.svg")
-
 ### Raw JSON
 
     {
@@ -204,3 +200,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/SCEA.svg](../dot/SCEA.svg "../dot/SCEA.svg")

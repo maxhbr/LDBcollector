@@ -78,10 +78,6 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/OML.svg
-
 ==== Raw JSON
 
 ....
@@ -255,3 +251,7 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OML.svg

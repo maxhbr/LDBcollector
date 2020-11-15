@@ -103,10 +103,6 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/Entessa.svg
-
 ==== Raw JSON
 
 ....
@@ -485,3 +481,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Entessa.svg

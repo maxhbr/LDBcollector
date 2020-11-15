@@ -43,10 +43,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/dvipdfm.svg](../dot/dvipdfm.svg "../dot/dvipdfm.svg")
-
 ### Raw JSON
 
     {
@@ -164,3 +160,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/dvipdfm.svg](../dot/dvipdfm.svg "../dot/dvipdfm.svg")

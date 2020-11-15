@@ -65,10 +65,6 @@ Copyright © 1997-2002 National Security Agency
 * https://spdx.org/licenses/SMPPL.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/smppl.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/SMPPL.svg
-
 ==== Raw JSON
 
 ....
@@ -172,3 +168,7 @@ Copyright © 1997-2002 National Security Agency
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/SMPPL.svg

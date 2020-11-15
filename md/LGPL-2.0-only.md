@@ -555,10 +555,6 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-### Dot Cluster Graph
-
-[../dot/LGPL-2.0-only.svg](../dot/LGPL-2.0-only.svg "../dot/LGPL-2.0-only.svg")
-
 ### Raw JSON
 
     {
@@ -941,3 +937,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/LGPL-2.0-only.svg](../dot/LGPL-2.0-only.svg "../dot/LGPL-2.0-only.svg")

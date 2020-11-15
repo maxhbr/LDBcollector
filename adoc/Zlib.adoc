@@ -162,10 +162,6 @@ Knowledge International]
 (https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md[ODbL])
 * Override
 
-==== Dot Cluster Graph
-
-../dot/Zlib.svg
-
 ==== Raw JSON
 
 ....
@@ -864,3 +860,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Zlib.svg

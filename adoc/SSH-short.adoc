@@ -44,10 +44,6 @@ called by a name other than "ssh" or "Secure Shell".
 * https://spdx.org/licenses/SSH-short.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tatu-ylonen.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/SSH-short.svg
-
 ==== Raw JSON
 
 ....
@@ -178,3 +174,7 @@ called by a name other than "ssh" or "Secure Shell".
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/SSH-short.svg

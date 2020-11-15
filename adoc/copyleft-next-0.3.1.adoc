@@ -258,10 +258,6 @@ Release date: 2016-04-29
 * https://spdx.org/licenses/copyleft-next-0.3.1.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/copyleft-next-0.3.1.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/copyleft-next-0.3.1.svg
-
 ==== Raw JSON
 
 ....
@@ -371,3 +367,7 @@ Release date: 2016-04-29
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/copyleft-next-0.3.1.svg

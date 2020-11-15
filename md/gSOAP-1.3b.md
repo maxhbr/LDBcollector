@@ -201,10 +201,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gsoap-1.3b.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/gSOAP-1.3b.svg](../dot/gSOAP-1.3b.svg "../dot/gSOAP-1.3b.svg")
-
 ### Raw JSON
 
     {
@@ -306,3 +302,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/gSOAP-1.3b.svg](../dot/gSOAP-1.3b.svg "../dot/gSOAP-1.3b.svg")

@@ -234,10 +234,6 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
 * https://spdx.org/licenses/Interbase-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/interbase-1.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Interbase-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -352,3 +348,7 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Interbase-1.0.svg

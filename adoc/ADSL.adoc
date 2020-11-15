@@ -51,10 +51,6 @@ of this software code.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adsl.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/ADSL.svg
-
 ==== Raw JSON
 
 ....
@@ -211,3 +207,7 @@ of this software code.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/ADSL.svg

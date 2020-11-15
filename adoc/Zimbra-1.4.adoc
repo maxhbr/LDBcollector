@@ -83,10 +83,6 @@ This Agreement contains the entire agreement of the parties with respect to the 
 * https://spdx.org/licenses/Zimbra-1.4.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zimbra-1.4.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Zimbra-1.4.svg
-
 ==== Raw JSON
 
 ....
@@ -191,3 +187,7 @@ This Agreement contains the entire agreement of the parties with respect to the 
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Zimbra-1.4.svg

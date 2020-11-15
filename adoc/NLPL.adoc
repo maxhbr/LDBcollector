@@ -62,10 +62,6 @@ or anything else.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/NLPL.svg
-
 ==== Raw JSON
 
 ....
@@ -238,3 +234,7 @@ or anything else.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NLPL.svg

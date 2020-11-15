@@ -434,10 +434,6 @@ Defining What Constitutes the Work
 * https://spdx.org/licenses/LPPL-1.3a.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/LPPL-1.3a.svg
-
 ==== Raw JSON
 
 ....
@@ -558,3 +554,7 @@ Defining What Constitutes the Work
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/LPPL-1.3a.svg

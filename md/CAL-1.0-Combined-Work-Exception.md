@@ -166,10 +166,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cal-1.0-combined-work-exception.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/CAL-1.0-Combined-Work-Exception.svg](../dot/CAL-1.0-Combined-Work-Exception.svg "../dot/CAL-1.0-Combined-Work-Exception.svg")
-
 ### Raw JSON
 
     {
@@ -304,3 +300,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/CAL-1.0-Combined-Work-Exception.svg](../dot/CAL-1.0-Combined-Work-Exception.svg "../dot/CAL-1.0-Combined-Work-Exception.svg")

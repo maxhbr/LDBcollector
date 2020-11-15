@@ -142,10 +142,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.2.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/AFL-1.2.svg](../dot/AFL-1.2.svg "../dot/AFL-1.2.svg")
-
 ### Raw JSON
 
     {
@@ -357,3 +353,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/AFL-1.2.svg](../dot/AFL-1.2.svg "../dot/AFL-1.2.svg")

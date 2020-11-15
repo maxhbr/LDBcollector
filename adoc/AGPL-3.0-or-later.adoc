@@ -218,10 +218,6 @@ License Checklist]
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
 * Override
 
-==== Dot Cluster Graph
-
-../dot/AGPL-3.0-or-later.svg
-
 ==== Raw JSON
 
 ....
@@ -705,3 +701,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/AGPL-3.0-or-later.svg

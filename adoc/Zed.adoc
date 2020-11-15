@@ -44,10 +44,6 @@ file, please do not distribute the results under the name `zed-csp.sty'.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zed.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Zed.svg
-
 ==== Raw JSON
 
 ....
@@ -204,3 +200,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Zed.svg

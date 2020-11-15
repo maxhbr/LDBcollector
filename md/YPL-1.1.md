@@ -192,10 +192,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.1.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/YPL-1.1.svg](../dot/YPL-1.1.svg "../dot/YPL-1.1.svg")
-
 ### Raw JSON
 
     {
@@ -308,3 +304,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/YPL-1.1.svg](../dot/YPL-1.1.svg "../dot/YPL-1.1.svg")

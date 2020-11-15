@@ -76,10 +76,6 @@ times remain with copyright holders.
 * https://spdx.org/licenses/OGC-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ogc-1.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/OGC-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -184,3 +180,7 @@ times remain with copyright holders.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OGC-1.0.svg

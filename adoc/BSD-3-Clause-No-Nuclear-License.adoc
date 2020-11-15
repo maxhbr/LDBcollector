@@ -68,10 +68,6 @@ nuclear facility.
 * https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-bsd-no-nuclear.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/BSD-3-Clause-No-Nuclear-License.svg
-
 ==== Raw JSON
 
 ....
@@ -169,3 +165,7 @@ nuclear facility.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/BSD-3-Clause-No-Nuclear-License.svg

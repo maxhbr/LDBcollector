@@ -95,10 +95,6 @@ Creative Commons may be contacted at https://creativecommons.org/.
 * https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nc-nd-3.0-igo.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/CC-BY-NC-ND-3.0-IGO.svg
-
 ==== Raw JSON
 
 ....
@@ -188,3 +184,7 @@ Creative Commons may be contacted at https://creativecommons.org/.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CC-BY-NC-ND-3.0-IGO.svg

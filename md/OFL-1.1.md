@@ -187,10 +187,6 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-### Dot Cluster Graph
-
-[../dot/OFL-1.1.svg](../dot/OFL-1.1.svg "../dot/OFL-1.1.svg")
-
 ### Raw JSON
 
     {
@@ -608,3 +604,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/OFL-1.1.svg](../dot/OFL-1.1.svg "../dot/OFL-1.1.svg")

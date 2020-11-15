@@ -110,10 +110,6 @@ the accompanying credits file.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
-==== Dot Cluster Graph
-
-../dot/ZPL-1.1.svg
-
 ==== Raw JSON
 
 ....
@@ -323,3 +319,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/ZPL-1.1.svg

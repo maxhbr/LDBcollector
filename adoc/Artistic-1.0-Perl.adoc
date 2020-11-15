@@ -223,10 +223,6 @@ License Checklist]
 * https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml[finos/OSLC-handbook]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/Artistic-1.0-Perl.svg
-
 ==== Raw JSON
 
 ....
@@ -536,3 +532,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Artistic-1.0-Perl.svg

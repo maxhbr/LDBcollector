@@ -78,10 +78,6 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt[OSADL
 License Checklist]
 
-==== Dot Cluster Graph
-
-../dot/Qhull.svg
-
 ==== Raw JSON
 
 ....
@@ -254,3 +250,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Qhull.svg

@@ -77,10 +77,6 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 License Checklist]
 * https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml[finos/OSLC-handbook]
 
-==== Dot Cluster Graph
-
-../dot/MIT-CMU.svg
-
 ==== Raw JSON
 
 ....
@@ -310,3 +306,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/MIT-CMU.svg

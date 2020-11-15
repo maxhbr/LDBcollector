@@ -98,10 +98,6 @@ misrepresented as being the original software.
 License Checklist]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
-==== Dot Cluster Graph
-
-../dot/zlib-acknowledgement.svg
-
 ==== Raw JSON
 
 ....
@@ -325,3 +321,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/zlib-acknowledgement.svg

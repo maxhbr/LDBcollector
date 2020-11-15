@@ -103,10 +103,6 @@ SUCH DAMAGE.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
-==== Dot Cluster Graph
-
-../dot/Zend-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -301,3 +297,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Zend-2.0.svg

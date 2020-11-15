@@ -114,10 +114,6 @@ Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
-==== Dot Cluster Graph
-
-../dot/CC-BY-NC-ND-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -329,3 +325,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CC-BY-NC-ND-1.0.svg

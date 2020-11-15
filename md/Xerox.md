@@ -68,10 +68,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Xerox.svg](../dot/Xerox.svg "../dot/Xerox.svg")
-
 ### Raw JSON
 
     {
@@ -249,3 +245,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Xerox.svg](../dot/Xerox.svg "../dot/Xerox.svg")

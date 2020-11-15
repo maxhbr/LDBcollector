@@ -136,10 +136,6 @@ This Academic Free License (the "License") applies to any original work of autho
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.0.txt[OSADL
 License Checklist]
 
-==== Dot Cluster Graph
-
-../dot/AFL-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -364,3 +360,7 @@ License Checklist]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/AFL-2.0.svg

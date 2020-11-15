@@ -47,10 +47,6 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-### Dot Cluster Graph
-
-[../dot/GFDL-1.1-or-later.svg](../dot/GFDL-1.1-or-later.svg "../dot/GFDL-1.1-or-later.svg")
-
 ### Raw JSON
 
     {
@@ -218,3 +214,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/GFDL-1.1-or-later.svg](../dot/GFDL-1.1-or-later.svg "../dot/GFDL-1.1-or-later.svg")

@@ -71,10 +71,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 * https://spdx.org/licenses/Imlib2.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/imlib2.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Imlib2.svg
-
 ==== Raw JSON
 
 ....
@@ -193,3 +189,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Imlib2.svg

@@ -91,10 +91,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpich.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/mpich2.svg](../dot/mpich2.svg "../dot/mpich2.svg")
-
 ### Raw JSON
 
     {
@@ -272,3 +268,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/mpich2.svg](../dot/mpich2.svg "../dot/mpich2.svg")

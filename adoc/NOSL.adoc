@@ -523,10 +523,6 @@ EXHIBIT A - Netizen Open Source License
 * https://spdx.org/licenses/NOSL.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nosl-1.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/NOSL.svg
-
 ==== Raw JSON
 
 ....
@@ -631,3 +627,7 @@ EXHIBIT A - Netizen Open Source License
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/NOSL.svg

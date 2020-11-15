@@ -50,10 +50,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Latex2e.svg](../dot/Latex2e.svg "../dot/Latex2e.svg")
-
 ### Raw JSON
 
     {
@@ -171,3 +167,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Latex2e.svg](../dot/Latex2e.svg "../dot/Latex2e.svg")

@@ -179,10 +179,6 @@ Software distributed under the License is distributed on an "AS IS" basis, WITHO
 * https://spdx.org/licenses/FreeImage.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freeimage-1.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/FreeImage.svg
-
 ==== Raw JSON
 
 ....
@@ -287,3 +283,7 @@ Software distributed under the License is distributed on an "AS IS" basis, WITHO
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/FreeImage.svg

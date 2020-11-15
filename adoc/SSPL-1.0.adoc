@@ -596,10 +596,6 @@ https://www.mongodb.com/licensing/server-side-public-license
 * https://spdx.org/licenses/SSPL-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mongodb-sspl-1.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/SSPL-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -709,3 +705,7 @@ https://www.mongodb.com/licensing/server-side-public-license
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/SSPL-1.0.svg

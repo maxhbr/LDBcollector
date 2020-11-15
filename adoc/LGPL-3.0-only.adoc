@@ -591,10 +591,6 @@ Knowledge International]
 * Override
 * Override
 
-==== Dot Cluster Graph
-
-../dot/LGPL-3.0-only.svg
-
 ==== Raw JSON
 
 ....
@@ -1380,3 +1376,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/LGPL-3.0-only.svg

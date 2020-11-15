@@ -120,10 +120,6 @@
 - [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
   ([[https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md][ODbL]])
 
-*** Dot Cluster Graph
-
-[[../dot/ICU.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -365,3 +361,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/ICU.svg]]

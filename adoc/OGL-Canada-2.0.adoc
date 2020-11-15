@@ -100,10 +100,6 @@ This is version 2.0 of the Open Government Licence – Canada. The Information P
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
-==== Dot Cluster Graph
-
-../dot/OGL-Canada-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -247,3 +243,7 @@ Knowledge International]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/OGL-Canada-2.0.svg

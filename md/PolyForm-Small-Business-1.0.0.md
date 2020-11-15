@@ -160,10 +160,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/polyform-small-business-1.0.0.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/PolyForm-Small-Business-1.0.0.svg](../dot/PolyForm-Small-Business-1.0.0.svg "../dot/PolyForm-Small-Business-1.0.0.svg")
-
 ### Raw JSON
 
     {
@@ -258,3 +254,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/PolyForm-Small-Business-1.0.0.svg](../dot/PolyForm-Small-Business-1.0.0.svg "../dot/PolyForm-Small-Business-1.0.0.svg")

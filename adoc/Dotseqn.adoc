@@ -39,10 +39,6 @@ This notice must be left intact.
 * https://spdx.org/licenses/Dotseqn.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dotseqn.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Dotseqn.svg
-
 ==== Raw JSON
 
 ....
@@ -146,3 +142,7 @@ This notice must be left intact.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Dotseqn.svg

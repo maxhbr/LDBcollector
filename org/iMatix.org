@@ -82,10 +82,6 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sfl-license.yml][Scancode]]
 
-*** Dot Cluster Graph
-
-[[../dot/iMatix.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -205,3 +201,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/iMatix.svg]]

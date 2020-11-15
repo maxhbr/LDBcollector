@@ -108,10 +108,6 @@ remain with the copyright holders.
 * https://opensource.org/licenses/[OpenSourceInitiative]
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
 
-==== Dot Cluster Graph
-
-../dot/ECL-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -399,3 +395,7 @@ remain with the copyright holders.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/ECL-1.0.svg

@@ -70,10 +70,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/AGPL-1.0-or-later.svg](../dot/AGPL-1.0-or-later.svg "../dot/AGPL-1.0-or-later.svg")
-
 ### Raw JSON
 
     {
@@ -249,3 +245,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/AGPL-1.0-or-later.svg](../dot/AGPL-1.0-or-later.svg "../dot/AGPL-1.0-or-later.svg")

@@ -56,10 +56,6 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ampas.yml][Scancode]]
 
-*** Dot Cluster Graph
-
-[[../dot/AMPAS.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -217,3 +213,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/AMPAS.svg]]

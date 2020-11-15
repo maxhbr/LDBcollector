@@ -641,10 +641,6 @@
 
 - Override
 
-*** Dot Cluster Graph
-
-[[../dot/LGPL-3.0-only.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -1430,3 +1426,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/LGPL-3.0-only.svg]]

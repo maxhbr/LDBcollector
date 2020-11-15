@@ -113,10 +113,6 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-### Dot Cluster Graph
-
-[../dot/BSD-3-Clause-Clear.svg](../dot/BSD-3-Clause-Clear.svg "../dot/BSD-3-Clause-Clear.svg")
-
 ### Raw JSON
 
     {
@@ -436,3 +432,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/BSD-3-Clause-Clear.svg](../dot/BSD-3-Clause-Clear.svg "../dot/BSD-3-Clause-Clear.svg")

@@ -97,10 +97,6 @@ Creative Commons may be contacted at http://creativecommons.org/.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
-==== Dot Cluster Graph
-
-../dot/CC-BY-ND-2.0.svg
-
 ==== Raw JSON
 
 ....
@@ -224,3 +220,7 @@ Policy]
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/CC-BY-ND-2.0.svg

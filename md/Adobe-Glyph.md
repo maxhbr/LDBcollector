@@ -45,10 +45,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adobe-glyph.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Adobe-Glyph.svg](../dot/Adobe-Glyph.svg "../dot/Adobe-Glyph.svg")
-
 ### Raw JSON
 
     {
@@ -151,3 +147,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Adobe-Glyph.svg](../dot/Adobe-Glyph.svg "../dot/Adobe-Glyph.svg")

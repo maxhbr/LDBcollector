@@ -57,10 +57,6 @@ DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPR
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/allegro-4.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Giftware.svg
-
 ==== Raw JSON
 
 ....
@@ -240,3 +236,7 @@ DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPR
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Giftware.svg

@@ -53,10 +53,6 @@ improvements that may be of general interest.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/TU-Berlin-1.0.svg
-
 ==== Raw JSON
 
 ....
@@ -229,3 +225,7 @@ improvements that may be of general interest.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/TU-Berlin-1.0.svg

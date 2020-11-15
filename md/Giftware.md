@@ -61,10 +61,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/allegro-4.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Giftware.svg](../dot/Giftware.svg "../dot/Giftware.svg")
-
 ### Raw JSON
 
     {
@@ -242,3 +238,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Giftware.svg](../dot/Giftware.svg "../dot/Giftware.svg")

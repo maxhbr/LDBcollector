@@ -149,10 +149,6 @@ NO WARRANTY
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0.yml[Scancode]
 * Override
 
-==== Dot Cluster Graph
-
-../dot/AGPL-1.0-only.svg
-
 ==== Raw JSON
 
 ....
@@ -338,3 +334,7 @@ NO WARRANTY
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/AGPL-1.0-only.svg

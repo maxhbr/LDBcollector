@@ -193,10 +193,6 @@ Raw Data
 
 -   Override
 
-### Dot Cluster Graph
-
-[../dot/Artistic-2.0.svg](../dot/Artistic-2.0.svg "../dot/Artistic-2.0.svg")
-
 ### Raw JSON
 
     {
@@ -884,3 +880,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Artistic-2.0.svg](../dot/Artistic-2.0.svg "../dot/Artistic-2.0.svg")

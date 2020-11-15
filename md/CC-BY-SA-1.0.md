@@ -118,10 +118,6 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-### Dot Cluster Graph
-
-[../dot/CC-BY-SA-1.0.svg](../dot/CC-BY-SA-1.0.svg "../dot/CC-BY-SA-1.0.svg")
-
 ### Raw JSON
 
     {
@@ -346,3 +342,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/CC-BY-SA-1.0.svg](../dot/CC-BY-SA-1.0.svg "../dot/CC-BY-SA-1.0.svg")

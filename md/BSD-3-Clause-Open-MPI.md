@@ -71,10 +71,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-open-mpi.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/BSD-3-Clause-Open-MPI.svg](../dot/BSD-3-Clause-Open-MPI.svg "../dot/BSD-3-Clause-Open-MPI.svg")
-
 ### Raw JSON
 
     {
@@ -196,3 +192,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/BSD-3-Clause-Open-MPI.svg](../dot/BSD-3-Clause-Open-MPI.svg "../dot/BSD-3-Clause-Open-MPI.svg")

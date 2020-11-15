@@ -84,10 +84,6 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dsdp.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/DSDP.svg
-
 ==== Raw JSON
 
 ....
@@ -244,3 +240,7 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/DSDP.svg

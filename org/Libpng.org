@@ -172,10 +172,6 @@
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml][finos/OSLC-handbook]]
 
-*** Dot Cluster Graph
-
-[[../dot/Libpng.svg]]
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -394,3 +390,7 @@
       ]
   }
 #+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/Libpng.svg]]

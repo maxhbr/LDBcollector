@@ -88,10 +88,6 @@ confusion about 2.2.1 and 2.1.8.*.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xinetd.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/xinetd.svg
-
 ==== Raw JSON
 
 ....
@@ -248,3 +244,7 @@ confusion about 2.2.1 and 2.1.8.*.
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/xinetd.svg

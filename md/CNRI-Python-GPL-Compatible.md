@@ -69,10 +69,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.1.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/CNRI-Python-GPL-Compatible.svg](../dot/CNRI-Python-GPL-Compatible.svg "../dot/CNRI-Python-GPL-Compatible.svg")
-
 ### Raw JSON
 
     {
@@ -228,3 +224,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/CNRI-Python-GPL-Compatible.svg](../dot/CNRI-Python-GPL-Compatible.svg "../dot/CNRI-Python-GPL-Compatible.svg")

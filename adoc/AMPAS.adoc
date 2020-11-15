@@ -53,10 +53,6 @@ Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ampas.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/AMPAS.svg
-
 ==== Raw JSON
 
 ....
@@ -214,3 +210,7 @@ Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/AMPAS.svg

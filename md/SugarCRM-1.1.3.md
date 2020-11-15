@@ -194,10 +194,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sugarcrm-1.1.3.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/SugarCRM-1.1.3.svg](../dot/SugarCRM-1.1.3.svg "../dot/SugarCRM-1.1.3.svg")
-
 ### Raw JSON
 
     {
@@ -310,3 +306,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/SugarCRM-1.1.3.svg](../dot/SugarCRM-1.1.3.svg "../dot/SugarCRM-1.1.3.svg")

@@ -104,10 +104,6 @@ If the unit or agency is the Department of Defense ("DOD"), the Program and its 
 * https://spdx.org/licenses/Aladdin.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afpl-8.0.yml[Scancode]
 
-==== Dot Cluster Graph
-
-../dot/Aladdin.svg
-
 ==== Raw JSON
 
 ....
@@ -228,3 +224,7 @@ If the unit or agency is the Department of Defense ("DOD"), the Program and its 
     ]
 }
 ....
+
+==== Dot Cluster Graph
+
+../dot/Aladdin.svg

@@ -73,10 +73,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail-8.23.yml "Scancode")
 
-### Dot Cluster Graph
-
-[../dot/Sendmail-8.23.svg](../dot/Sendmail-8.23.svg "../dot/Sendmail-8.23.svg")
-
 ### Raw JSON
 
     {
@@ -198,3 +194,7 @@ Raw Data
             ]
         ]
     }
+
+### Dot Cluster Graph
+
+[../dot/Sendmail-8.23.svg](../dot/Sendmail-8.23.svg "../dot/Sendmail-8.23.svg")
