@@ -1,0 +1,565 @@
+{
+    "NASA-1.3": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "EUPL-1.2": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ]
+    },
+    "ErlPL-1.1": {
+        "WeakCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "ClArtistic": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "Qhull": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "Ruby": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "OLDAP-1.3": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "APSL-2.0": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ]
+    },
+    "MS-PL": {
+        "MaybeCopyleft": [
+            "OSADL License Checklist"
+        ],
+        "NoCopyleft": [
+            "BlueOak License List",
+            "Google OSS Policy",
+            "Scancode",
+            "ifrOSS"
+        ]
+    },
+    "QPL-1.0": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "NBPL-1.0": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "GPL-3.0-only": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist",
+            "Scancode"
+        ]
+    },
+    "LPL-1.0": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "MPL-1.1": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "CDDL-1.0": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "MPL-2.0-no-copyleft-exception": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "OLDAP-1.4": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "CC-BY-SA-2.0": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "EPL-2.0": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "OSL-2.1": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "OpenSSL": {
+        "MaybeCopyleft": [
+            "OSADL License Checklist"
+        ],
+        "NoCopyleft": [
+            "BlueOak License List",
+            "Google OSS Policy",
+            "Scancode"
+        ]
+    },
+    "OSL-3.0": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist",
+            "Scancode"
+        ]
+    },
+    "AGPL-3.0-only": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist",
+            "Scancode"
+        ]
+    },
+    "AGPL-1.0-or-later": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "EUPL-1.0": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "NPOSL-3.0": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "OSL-2.0": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "Artistic-1.0": {
+        "NoCopyleft": [
+            "BlueOak License List",
+            "Google OSS Policy"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "RPL-1.5": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "MaximalCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "GPL-2.0-or-later": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist",
+            "Scancode"
+        ]
+    },
+    "CC-BY-SA-3.0": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "LGPL-3.0-or-later": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "CPAL-1.0": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "APSL-1.0": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ]
+    },
+    "Parity-6.0.0": {
+        "MaximalCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "LGPL-2.1-or-later": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "BSL-1.0": {
+        "MaybeCopyleft": [
+            "OSADL License Checklist"
+        ],
+        "NoCopyleft": [
+            "BlueOak License List",
+            "Google OSS Policy",
+            "Scancode"
+        ]
+    },
+    "RPSL-1.0": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ]
+    },
+    "EUPL-1.1": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "Artistic-1.0-Perl": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "LPPL-1.3c": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "OSL-1.0": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "Artistic-2.0": {
+        "NoCopyleft": [
+            "BlueOak License List",
+            "Google OSS Policy"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "RPL-1.1": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "MaximalCopyleft": [
+            "BlueOak License List"
+        ]
+    },
+    "OLDAP-1.1": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "CC-BY-SA-2.5": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "APSL-1.1": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ]
+    },
+    "MS-RL": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode",
+            "ifrOSS"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "GPL-3.0-or-later": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist",
+            "Scancode"
+        ]
+    },
+    "LPL-1.02": {
+        "NoCopyleft": [
+            "BlueOak License List",
+            "Google OSS Policy"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "Sleepycat": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "MPL-2.0": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "BSD-Protection": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "Artistic-1.0-cl8": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "CC-BY-SA-1.0": {
+        "NoCopyleft": [
+            "Scancode"
+        ],
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ]
+    },
+    "OGTSL": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "GPL-2.0-only": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist",
+            "Scancode"
+        ]
+    },
+    "EPL-1.0": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "OSL-1.1": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "CC-BY-SA-4.0": {
+        "StrongCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "LGPL-2.1-only": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "APSL-1.2": {
+        "WeakCopyleft": [
+            "Scancode"
+        ],
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ]
+    },
+    "LGPL-3.0-only": {
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist"
+        ]
+    },
+    "OLDAP-1.2": {
+        "NoCopyleft": [
+            "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "AGPL-1.0-only": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "AGPL-3.0-or-later": {
+        "SaaSCopyleft": [
+            "BlueOak License List"
+        ],
+        "Copyleft": [
+            "OSADL License Checklist",
+            "Scancode"
+        ]
+    }
+}
