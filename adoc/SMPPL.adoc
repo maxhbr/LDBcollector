@@ -60,6 +60,9 @@ Copyright © 1997-2002 National Security Agency
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

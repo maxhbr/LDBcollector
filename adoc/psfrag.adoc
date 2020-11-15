@@ -41,6 +41,9 @@ changes and their authors must be explicitly stated HERE.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

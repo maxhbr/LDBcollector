@@ -452,6 +452,14 @@ Creative Commons may be contacted at creativecommons.org.
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* Google OSS Policy
+* Open Knowledge International
+* Debian Free Software Guidelines
+* Override
+
 ....
 {
     "__impliedNames": [

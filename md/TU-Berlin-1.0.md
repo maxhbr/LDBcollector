@@ -48,6 +48,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "TU-Berlin-1.0",

@@ -211,6 +211,14 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
+- OpenSourceInitiative
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

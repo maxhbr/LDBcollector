@@ -94,6 +94,20 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   choosealicense.com
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BSD-3-Clause-Clear",

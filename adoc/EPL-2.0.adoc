@@ -436,6 +436,17 @@ and exceptions or additional permissions here}."
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OSADL License Checklist
+* choosealicense.com
+* finos/OSLC-handbook
+* Wikipedia
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

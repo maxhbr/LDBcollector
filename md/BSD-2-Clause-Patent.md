@@ -109,6 +109,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BSD-2-Clause-Patent",

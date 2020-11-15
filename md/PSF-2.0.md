@@ -21,6 +21,10 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+&nbsp;
+
     {
         "__impliedNames": [
             "PSF-2.0",

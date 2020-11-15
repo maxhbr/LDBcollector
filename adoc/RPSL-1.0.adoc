@@ -576,6 +576,15 @@ http://www.realnetworks.com/info/helixlogo.html.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* Fedora Project Wiki
+* OpenSourceInitiative
+* Open Knowledge International
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

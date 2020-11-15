@@ -73,6 +73,9 @@ SGI FREE SOFTWARE LICENSE B
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

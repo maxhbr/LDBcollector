@@ -26,6 +26,10 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OFL-1.1-no-RFN",

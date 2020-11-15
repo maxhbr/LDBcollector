@@ -498,6 +498,14 @@ Important Recommendations
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* choosealicense.com
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

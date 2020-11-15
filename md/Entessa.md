@@ -98,6 +98,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Entessa",

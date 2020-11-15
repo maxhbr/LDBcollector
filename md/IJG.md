@@ -143,6 +143,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+&nbsp;
+
     {
         "__impliedNames": [
             "IJG",

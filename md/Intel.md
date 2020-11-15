@@ -89,6 +89,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Intel",

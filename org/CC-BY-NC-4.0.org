@@ -456,6 +456,20 @@
 
 ** Raw Data
 
+- SPDX
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
+- Google OSS Policy
+
+- Open Knowledge International
+
+- Debian Free Software Guidelines
+
+- Override
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

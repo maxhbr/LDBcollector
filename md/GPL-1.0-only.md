@@ -305,6 +305,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Google OSS Policy
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "GPL-1.0-only",

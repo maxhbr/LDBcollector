@@ -131,6 +131,10 @@ permission of its copyright owner.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

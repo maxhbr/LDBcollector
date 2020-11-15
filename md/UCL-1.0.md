@@ -240,6 +240,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "UCL-1.0",

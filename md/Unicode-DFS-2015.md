@@ -109,6 +109,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Unicode-DFS-2015",

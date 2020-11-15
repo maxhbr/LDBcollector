@@ -188,6 +188,9 @@ However, in addition to the other notice obligations, all copies of the Covered 
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

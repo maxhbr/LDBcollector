@@ -163,6 +163,20 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
+- OpenSourceInitiative
+
+- Wikipedia
+
+- Google OSS Policy
+
+- Debian Free Software Guidelines
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

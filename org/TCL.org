@@ -77,6 +77,14 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
+- finos/OSLC-handbook
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

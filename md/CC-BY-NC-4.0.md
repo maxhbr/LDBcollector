@@ -453,6 +453,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CC-BY-NC-4.0",

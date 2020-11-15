@@ -458,6 +458,36 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   Fedora Project Wiki
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "AGPL-3.0-only",

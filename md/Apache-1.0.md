@@ -126,6 +126,20 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Apache-1.0",

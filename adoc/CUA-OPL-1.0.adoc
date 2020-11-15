@@ -509,6 +509,12 @@ Original Code Source Code for Your Modifications.]
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

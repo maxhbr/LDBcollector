@@ -98,6 +98,24 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "W3C",

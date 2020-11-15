@@ -386,6 +386,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "APL-1.0",

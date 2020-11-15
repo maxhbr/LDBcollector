@@ -130,6 +130,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OFL-1.0",

@@ -73,6 +73,18 @@
 
 ** Raw Data
 
+- SPDX
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
+- Fedora Project Wiki
+
+- OpenSourceInitiative
+
+- Open Knowledge International
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

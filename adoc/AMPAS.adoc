@@ -47,6 +47,10 @@ Disclaimer of Warranty: THIS SOFTWARE IS PROVIDED BY A.M.P.A.S. AND CONTRIBUTORS
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

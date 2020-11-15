@@ -109,6 +109,12 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CERN-OHL-1.1",

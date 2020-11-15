@@ -73,6 +73,9 @@ Chiyoda-ku, Tokyo 101-0047, Japan.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

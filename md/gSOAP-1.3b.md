@@ -195,6 +195,12 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "gSOAP-1.3b",

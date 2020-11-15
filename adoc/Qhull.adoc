@@ -70,6 +70,11 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+
 ....
 {
     "__impliedNames": [

@@ -103,6 +103,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Google OSS Policy
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CC-BY-SA-1.0",

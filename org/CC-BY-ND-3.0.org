@@ -329,6 +329,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- Google OSS Policy
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

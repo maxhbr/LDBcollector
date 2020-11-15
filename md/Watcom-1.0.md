@@ -404,6 +404,20 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Watcom-1.0",

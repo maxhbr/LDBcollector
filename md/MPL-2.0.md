@@ -510,6 +510,32 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "MPL-2.0",

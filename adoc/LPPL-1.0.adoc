@@ -238,6 +238,9 @@ conditions would be files that contain the text of copyright notices.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

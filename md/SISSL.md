@@ -351,6 +351,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "SISSL",

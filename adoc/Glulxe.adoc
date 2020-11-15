@@ -36,6 +36,9 @@ program or documentation which mentions my name and the URL shown above.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

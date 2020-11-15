@@ -24,6 +24,10 @@
 
 ** Raw Data
 
+- SPDX
+
+- Open Knowledge International
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

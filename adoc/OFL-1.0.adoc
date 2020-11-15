@@ -131,6 +131,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

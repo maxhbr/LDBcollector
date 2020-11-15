@@ -99,6 +99,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "LAL-1.2",

@@ -160,6 +160,32 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   choosealicense.com
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Artistic-2.0",

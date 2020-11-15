@@ -229,6 +229,9 @@ II.3. Product Names. Contributor Versions and Larger Works may not be called "In
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

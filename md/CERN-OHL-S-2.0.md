@@ -21,6 +21,10 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CERN-OHL-S-2.0",

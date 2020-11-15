@@ -95,6 +95,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Zend-2.0",

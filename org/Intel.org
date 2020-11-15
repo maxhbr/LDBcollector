@@ -90,6 +90,16 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
+- OpenSourceInitiative
+
+- Open Knowledge International
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

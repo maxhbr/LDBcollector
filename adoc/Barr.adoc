@@ -44,6 +44,10 @@ it will not work  with AMSTeX, I have not tested it.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

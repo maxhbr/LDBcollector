@@ -959,6 +959,56 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   SPDX
+
+-   BlueOak License List
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   OSADL License Checklist
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   Fedora Project Wiki
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   finos/OSLC-handbook
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+-   Debian Free Software Guidelines
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "GPL-3.0-only",

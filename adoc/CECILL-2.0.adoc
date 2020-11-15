@@ -541,6 +541,9 @@ Version 2.0 dated 2006-09-05.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

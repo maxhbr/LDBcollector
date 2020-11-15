@@ -123,6 +123,24 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "PHP-3.0",

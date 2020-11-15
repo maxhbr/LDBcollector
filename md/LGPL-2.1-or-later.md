@@ -213,6 +213,24 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   finos/OSLC-handbook
+
+-   Google OSS Policy
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "LGPL-2.1-or-later",

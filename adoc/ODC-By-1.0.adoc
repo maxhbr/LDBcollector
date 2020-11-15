@@ -450,6 +450,10 @@ terms of this License.
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

@@ -46,6 +46,10 @@ END OF COPYRIGHT NOTICE
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

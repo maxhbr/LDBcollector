@@ -65,6 +65,12 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BSD-3-Clause-No-Nuclear-License",

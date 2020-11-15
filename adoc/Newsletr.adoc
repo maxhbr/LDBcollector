@@ -45,6 +45,10 @@ Permission is granted to anyone to use this software for any purpose on any comp
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

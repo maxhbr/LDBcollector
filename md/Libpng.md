@@ -157,6 +157,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   finos/OSLC-handbook
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Libpng",

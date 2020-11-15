@@ -143,6 +143,11 @@ We are required to state that
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+
 ....
 {
     "__impliedNames": [

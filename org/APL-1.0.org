@@ -387,6 +387,14 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- OpenSourceInitiative
+
+- Open Knowledge International
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

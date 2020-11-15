@@ -116,6 +116,26 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   Fedora Project Wiki
+
+-   finos/OSLC-handbook
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OpenSSL",

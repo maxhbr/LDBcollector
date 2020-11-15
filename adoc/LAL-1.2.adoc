@@ -101,6 +101,10 @@ Cette licence est soumise au droit français.
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

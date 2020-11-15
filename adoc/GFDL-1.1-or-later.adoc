@@ -36,6 +36,10 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

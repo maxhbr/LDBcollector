@@ -92,6 +92,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

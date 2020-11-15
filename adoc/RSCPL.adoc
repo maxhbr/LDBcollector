@@ -175,6 +175,12 @@ Contributor(s):  ."
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

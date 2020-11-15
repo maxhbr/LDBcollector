@@ -146,6 +146,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "AGPL-1.0-only",

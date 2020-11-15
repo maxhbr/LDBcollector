@@ -78,6 +78,10 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

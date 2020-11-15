@@ -21,6 +21,10 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CC-BY-3.0-AT",

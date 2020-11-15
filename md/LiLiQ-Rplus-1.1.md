@@ -121,6 +121,12 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "LiLiQ-Rplus-1.1",

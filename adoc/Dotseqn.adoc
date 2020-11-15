@@ -34,6 +34,9 @@ This notice must be left intact.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

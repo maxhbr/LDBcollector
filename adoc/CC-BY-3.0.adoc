@@ -358,6 +358,11 @@ Creative Commons Notice
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Google OSS Policy
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

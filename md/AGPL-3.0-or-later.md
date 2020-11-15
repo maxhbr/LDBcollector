@@ -217,6 +217,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   finos/OSLC-handbook
+
+-   Wikipedia
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "AGPL-3.0-or-later",

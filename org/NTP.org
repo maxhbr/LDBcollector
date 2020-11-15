@@ -87,6 +87,24 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
+- Scancode
+
+- OSADL License Checklist
+
+- OpenSourceInitiative
+
+- Open Knowledge International
+
+- ifrOSS
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

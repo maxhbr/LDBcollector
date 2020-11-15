@@ -132,6 +132,38 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   Fedora Project Wiki
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+-   ifrOSS
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Zlib",

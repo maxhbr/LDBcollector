@@ -407,6 +407,12 @@ Creative Commons Notice
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Google OSS Policy
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

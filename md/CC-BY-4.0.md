@@ -458,6 +458,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   choosealicense.com
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CC-BY-4.0",

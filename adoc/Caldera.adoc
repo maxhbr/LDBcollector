@@ -79,6 +79,9 @@ OF SUCH DAMAGE.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

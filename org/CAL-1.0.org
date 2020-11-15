@@ -34,6 +34,10 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

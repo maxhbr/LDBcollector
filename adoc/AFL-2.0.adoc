@@ -128,6 +128,11 @@ This Academic Free License (the "License") applies to any original work of autho
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+
 ....
 {
     "__impliedNames": [

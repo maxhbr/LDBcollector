@@ -35,6 +35,12 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CAL-1.0",

@@ -75,6 +75,12 @@ Stated plainly: You are permitted to modify NetHack, or otherwise use parts of N
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

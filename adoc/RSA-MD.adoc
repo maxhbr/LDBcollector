@@ -54,6 +54,10 @@ documentation and/or software.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

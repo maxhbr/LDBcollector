@@ -38,6 +38,10 @@ file, please do not distribute the results under the name `zed-csp.sty'.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

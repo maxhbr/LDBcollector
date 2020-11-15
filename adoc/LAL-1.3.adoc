@@ -123,6 +123,10 @@ Cette licence est rédigée en référence au droit français et à la Conventio
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

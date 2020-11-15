@@ -562,6 +562,20 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Wikipedia
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CECILL-2.1",

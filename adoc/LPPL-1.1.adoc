@@ -336,6 +336,9 @@ Defining What Constitutes The Program
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

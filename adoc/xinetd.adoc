@@ -82,6 +82,10 @@ confusion about 2.2.1 and 2.1.8.*.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

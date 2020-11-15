@@ -48,6 +48,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Fedora Project Wiki
+
+&nbsp;
+
     {
         "__impliedNames": [
             "FSFAP",

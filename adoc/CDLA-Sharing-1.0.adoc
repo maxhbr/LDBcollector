@@ -122,6 +122,9 @@ Section 7.  Miscellaneous
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

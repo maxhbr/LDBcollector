@@ -58,6 +58,11 @@ francis dot borceux at uclouvain dot be.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Fedora Project Wiki
+
 ....
 {
     "__impliedNames": [

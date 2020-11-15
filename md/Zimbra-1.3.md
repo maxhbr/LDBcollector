@@ -186,6 +186,12 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Zimbra-1.3",

@@ -142,6 +142,9 @@ End of Schedule "B"
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

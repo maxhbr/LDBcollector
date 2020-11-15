@@ -33,6 +33,9 @@ https://blueoakcouncil.org/copyleft[BlueOak License List])
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+
 ....
 {
     "__impliedNames": [

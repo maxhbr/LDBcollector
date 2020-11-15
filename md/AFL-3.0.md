@@ -124,6 +124,26 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   choosealicense.com
+
+-   OpenSourceInitiative
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "AFL-3.0",

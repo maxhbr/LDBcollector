@@ -96,6 +96,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+&nbsp;
+
     {
         "__impliedNames": [
             "bzip2-1.0.6",

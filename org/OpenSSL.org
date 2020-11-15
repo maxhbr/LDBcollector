@@ -120,6 +120,24 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
+- Scancode
+
+- OSADL License Checklist
+
+- Fedora Project Wiki
+
+- finos/OSLC-handbook
+
+- Wikipedia
+
+- Google OSS Policy
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

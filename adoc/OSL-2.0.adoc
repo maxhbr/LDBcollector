@@ -98,6 +98,11 @@ This license is Copyright (C) 2003 Lawrence E. Rosen.  All rights reserved.  Per
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

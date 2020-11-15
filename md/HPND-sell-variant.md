@@ -55,6 +55,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "HPND-sell-variant",

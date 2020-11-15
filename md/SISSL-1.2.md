@@ -180,6 +180,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "SISSL-1.2",

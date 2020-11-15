@@ -115,6 +115,16 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Scancode
+* OSADL License Checklist
+* Fedora Project Wiki
+* finos/OSLC-handbook
+* Wikipedia
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

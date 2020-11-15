@@ -56,6 +56,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "MIT-feh",

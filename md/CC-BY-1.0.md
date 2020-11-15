@@ -95,6 +95,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Google OSS Policy
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CC-BY-1.0",

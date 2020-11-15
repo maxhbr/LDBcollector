@@ -486,6 +486,18 @@ International (CC-BY-NC-SA-4.0)
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- Google OSS Policy
+
+- Open Knowledge International
+
+- Debian Free Software Guidelines
+
+- Override
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

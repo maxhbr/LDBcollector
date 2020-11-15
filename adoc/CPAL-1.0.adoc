@@ -172,6 +172,15 @@ Display of Attribution Information is [required/not required] in Larger Works wh
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Google OSS Policy
+* Open Knowledge International
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

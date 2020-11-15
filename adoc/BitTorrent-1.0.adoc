@@ -364,6 +364,9 @@ or implied.  See the License for the specific language governing rights and limi
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

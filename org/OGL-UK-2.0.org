@@ -110,6 +110,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- Open Knowledge International
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

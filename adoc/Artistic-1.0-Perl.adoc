@@ -213,6 +213,13 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* finos/OSLC-handbook
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

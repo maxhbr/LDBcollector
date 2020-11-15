@@ -292,6 +292,14 @@ identification within third-party archives.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* choosealicense.com
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

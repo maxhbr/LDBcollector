@@ -163,6 +163,12 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "PolyForm-Noncommercial-1.0.0",

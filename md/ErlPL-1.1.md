@@ -324,6 +324,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "ErlPL-1.1",

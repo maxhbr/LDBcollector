@@ -126,6 +126,14 @@ This Agreement is governed by the laws of the State of New York and the intellec
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

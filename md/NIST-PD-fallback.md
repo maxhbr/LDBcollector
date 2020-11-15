@@ -23,6 +23,10 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+&nbsp;
+
     {
         "__impliedNames": [
             "NIST-PD-fallback",

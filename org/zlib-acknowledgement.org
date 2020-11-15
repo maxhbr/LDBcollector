@@ -92,6 +92,16 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
+- OSADL License Checklist
+
+- Debian Free Software Guidelines
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

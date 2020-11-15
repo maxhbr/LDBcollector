@@ -54,6 +54,9 @@ of the terms of this agreement
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

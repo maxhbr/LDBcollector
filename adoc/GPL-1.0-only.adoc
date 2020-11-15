@@ -301,6 +301,12 @@ That's all there is to it!
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Google OSS Policy
+* Debian Free Software Guidelines
+* Override
+
 ....
 {
     "__impliedNames": [

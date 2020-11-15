@@ -190,6 +190,28 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   OpenSourceInitiative
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OSL-3.0",

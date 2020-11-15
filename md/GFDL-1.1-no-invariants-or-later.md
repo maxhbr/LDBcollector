@@ -22,6 +22,10 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+&nbsp;
+
     {
         "__impliedNames": [
             "GFDL-1.1-no-invariants-or-later",

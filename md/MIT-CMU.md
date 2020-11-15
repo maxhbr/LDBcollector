@@ -69,6 +69,20 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   finos/OSLC-handbook
+
+&nbsp;
+
     {
         "__impliedNames": [
             "MIT-CMU",

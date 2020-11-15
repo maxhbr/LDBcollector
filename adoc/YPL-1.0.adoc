@@ -201,6 +201,9 @@ forth below, the parties agree as follows:
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

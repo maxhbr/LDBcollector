@@ -77,6 +77,20 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- OpenChainPolicyTemplate
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
+- choosealicense.com
+
+- finos/OSLC-handbook
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

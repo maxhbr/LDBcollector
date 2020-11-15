@@ -89,6 +89,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "EFL-2.0",

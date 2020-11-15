@@ -119,6 +119,28 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   Fedora Project Wiki
+
+-   finos/OSLC-handbook
+
+-   Google OSS Policy
+
+-   ifrOSS
+
+-   Override
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BSD-4-Clause",

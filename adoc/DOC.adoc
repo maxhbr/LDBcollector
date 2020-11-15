@@ -53,6 +53,10 @@ Back to the ACE home page.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

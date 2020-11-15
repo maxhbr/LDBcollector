@@ -212,6 +212,15 @@ express Statement of Purpose.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* choosealicense.com
+* Wikipedia
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

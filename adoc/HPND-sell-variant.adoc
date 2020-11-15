@@ -54,6 +54,10 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFT
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Scancode
+
 ....
 {
     "__impliedNames": [

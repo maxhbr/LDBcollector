@@ -60,6 +60,14 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
+- Fedora Project Wiki
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

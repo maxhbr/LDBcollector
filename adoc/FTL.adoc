@@ -227,6 +227,12 @@ Legal Terms
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

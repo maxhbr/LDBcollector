@@ -72,6 +72,20 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
+- OpenSourceInitiative
+
+- Open Knowledge International
+
+- Debian Free Software Guidelines
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

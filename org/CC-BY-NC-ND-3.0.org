@@ -355,6 +355,16 @@ Unported (CC-BY-NC-ND-3.0)
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- Google OSS Policy
+
+- Debian Free Software Guidelines
+
+- Override
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

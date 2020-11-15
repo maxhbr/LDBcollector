@@ -97,6 +97,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   Wikipedia
+
+&nbsp;
+
     {
         "__impliedNames": [
             "XFree86-1.1",

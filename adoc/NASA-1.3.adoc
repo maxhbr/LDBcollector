@@ -151,6 +151,13 @@ F. Point of Contact: Any Recipient contact with Government Agency is to be direc
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

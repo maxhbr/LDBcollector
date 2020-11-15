@@ -203,6 +203,11 @@ This licence shall be governed by the Belgian law if:
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

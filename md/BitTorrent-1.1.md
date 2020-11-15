@@ -183,6 +183,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BitTorrent-1.1",

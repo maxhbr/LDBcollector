@@ -53,6 +53,10 @@ https://blueoakcouncil.org/list[BlueOak License List])
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -77,6 +77,16 @@ purpose. It is provided "as is" without express or implied warranty.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* Scancode
+* OSADL License Checklist
+* OpenSourceInitiative
+* Open Knowledge International
+* ifrOSS
+
 ....
 {
     "__impliedNames": [

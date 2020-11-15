@@ -83,6 +83,11 @@ Alternatively, the contents of this file may be used under the terms of the   li
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Wikipedia
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

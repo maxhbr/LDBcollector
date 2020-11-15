@@ -83,6 +83,12 @@ goods and services.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

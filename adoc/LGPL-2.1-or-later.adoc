@@ -205,6 +205,15 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* finos/OSLC-handbook
+* Google OSS Policy
+* Debian Free Software Guidelines
+* Override
+
 ....
 {
     "__impliedNames": [

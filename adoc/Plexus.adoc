@@ -86,6 +86,11 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* finos/OSLC-handbook
+
 ....
 {
     "__impliedNames": [

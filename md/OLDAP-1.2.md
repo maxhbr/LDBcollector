@@ -173,6 +173,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OLDAP-1.2",

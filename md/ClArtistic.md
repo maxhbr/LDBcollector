@@ -181,6 +181,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "ClArtistic",

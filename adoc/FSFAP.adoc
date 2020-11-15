@@ -48,6 +48,10 @@ warranty.
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Fedora Project Wiki
+
 ....
 {
     "__impliedNames": [

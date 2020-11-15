@@ -62,6 +62,13 @@ Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* finos/OSLC-handbook
+* Google OSS Policy
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

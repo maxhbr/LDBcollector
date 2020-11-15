@@ -122,6 +122,13 @@ project, please see <http://www.apache.org/>.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* Debian Free Software Guidelines
+* Override
+
 ....
 {
     "__impliedNames": [

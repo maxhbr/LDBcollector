@@ -84,6 +84,11 @@ OF SUCH DAMAGE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

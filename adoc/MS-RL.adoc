@@ -153,6 +153,17 @@ This license governs use of the accompanying software. If you use the software, 
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OSADL License Checklist
+* choosealicense.com
+* Fedora Project Wiki
+* OpenSourceInitiative
+* Open Knowledge International
+* ifrOSS
+
 ....
 {
     "__impliedNames": [

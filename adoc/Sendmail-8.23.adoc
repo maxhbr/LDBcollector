@@ -68,6 +68,9 @@ $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

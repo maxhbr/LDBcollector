@@ -72,6 +72,10 @@ parrt@antlr.org
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

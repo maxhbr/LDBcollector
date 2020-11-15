@@ -426,6 +426,11 @@ Creative Commons may be contacted at creativecommons.org.
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

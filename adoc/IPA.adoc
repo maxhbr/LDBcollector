@@ -124,6 +124,12 @@ Article 5 (Governing Law)
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

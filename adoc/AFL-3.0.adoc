@@ -136,6 +136,16 @@ e) to display the Original Work publicly.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* choosealicense.com
+* OpenSourceInitiative
+* Wikipedia
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

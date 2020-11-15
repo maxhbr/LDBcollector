@@ -133,6 +133,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   finos/OSLC-handbook
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CDDL-1.1",

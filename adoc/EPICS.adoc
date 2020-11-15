@@ -67,6 +67,10 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Fedora Project Wiki
+
 ....
 {
     "__impliedNames": [

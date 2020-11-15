@@ -70,6 +70,11 @@ v8BeBE0bdjeVmOQYRQfXgt3J2q0b8x8Q5a/LCLVLh8k6DFGg8AfEbLDQWhi1JiXC
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

@@ -187,6 +187,12 @@ Source Code: The preferred form for making modifications to the Licensed Product
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

@@ -75,6 +75,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "SimPL-2.0",

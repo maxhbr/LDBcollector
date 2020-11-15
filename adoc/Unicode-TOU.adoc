@@ -157,6 +157,9 @@ between the parties.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -64,6 +64,10 @@ connection with the use or performance of this software.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -39,6 +39,9 @@ Dedicator recognizes that, once placed in the public domain, the Work may be fre
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

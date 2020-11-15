@@ -166,6 +166,9 @@ TAPR may publish updated versions of the OHL which retain the same general provi
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -68,6 +68,14 @@ California and by the laws of the United States of America.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

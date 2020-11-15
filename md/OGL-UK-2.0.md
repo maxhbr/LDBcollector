@@ -109,6 +109,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OGL-UK-2.0",

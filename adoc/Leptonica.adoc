@@ -42,6 +42,10 @@ No author or distributor accepts responsibility to anyone for the consequences o
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

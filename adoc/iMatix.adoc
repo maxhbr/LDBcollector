@@ -74,6 +74,9 @@ The Product is provided as free software, in the hope that it will be useful. It
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

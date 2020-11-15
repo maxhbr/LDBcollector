@@ -400,6 +400,13 @@ under the License."
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

@@ -27,6 +27,10 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CAL-1.0-Combined-Work-Exception",

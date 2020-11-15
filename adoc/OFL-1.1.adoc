@@ -179,6 +179,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* choosealicense.com
+* OpenSourceInitiative
+* Open Knowledge International
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

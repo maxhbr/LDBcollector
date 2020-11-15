@@ -168,6 +168,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   choosealicense.com
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OFL-1.1",

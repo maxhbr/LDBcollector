@@ -103,6 +103,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OSL-2.0",

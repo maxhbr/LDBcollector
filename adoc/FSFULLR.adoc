@@ -36,6 +36,9 @@ modifications, as long as this notice is preserved.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

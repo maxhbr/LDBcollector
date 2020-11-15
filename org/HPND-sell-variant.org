@@ -57,6 +57,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- Scancode
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

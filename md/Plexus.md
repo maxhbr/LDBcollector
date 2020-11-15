@@ -91,6 +91,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   finos/OSLC-handbook
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Plexus",

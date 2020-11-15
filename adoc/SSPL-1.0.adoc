@@ -591,6 +591,9 @@ https://www.mongodb.com/licensing/server-side-public-license
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

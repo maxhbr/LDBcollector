@@ -107,6 +107,20 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "VSL-1.0",

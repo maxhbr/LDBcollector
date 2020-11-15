@@ -83,6 +83,16 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Wikipedia
+* Google OSS Policy
+* Open Knowledge International
+* Override
+
 ....
 {
     "__impliedNames": [

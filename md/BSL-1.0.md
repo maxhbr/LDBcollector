@@ -118,6 +118,34 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Override
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BSL-1.0",

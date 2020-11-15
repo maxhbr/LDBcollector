@@ -45,6 +45,9 @@ permission notice identical to this one.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

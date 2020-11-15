@@ -25,6 +25,8 @@
 
 ** Raw Data
 
+- SPDX
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

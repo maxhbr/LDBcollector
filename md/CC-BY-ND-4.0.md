@@ -426,6 +426,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CC-BY-ND-4.0",

@@ -230,6 +230,16 @@
 
 ** Raw Data
 
+- SPDX
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
+- OpenSourceInitiative
+
+- Open Knowledge International
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

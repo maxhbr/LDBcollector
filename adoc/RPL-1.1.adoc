@@ -207,6 +207,11 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OpenSourceInitiative
+
 ....
 {
     "__impliedNames": [

@@ -211,6 +211,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+&nbsp;
+
     {
         "__impliedNames": [
             "RPL-1.1",

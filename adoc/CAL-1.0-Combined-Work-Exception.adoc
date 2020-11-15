@@ -25,6 +25,8 @@ https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html[SPDX])
 
 === Raw Data
 
+* SPDX
+
 ....
 {
     "__impliedNames": [

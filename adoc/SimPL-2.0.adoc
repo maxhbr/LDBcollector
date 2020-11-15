@@ -71,6 +71,12 @@ You may do anything that you want with the SimPL text; it's a license form to us
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

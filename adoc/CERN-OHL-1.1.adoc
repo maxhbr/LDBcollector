@@ -109,6 +109,9 @@ A Licensee may at the same time be a Licensor, and vice versa.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

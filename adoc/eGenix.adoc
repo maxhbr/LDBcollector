@@ -78,6 +78,10 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

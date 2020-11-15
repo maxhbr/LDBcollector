@@ -117,6 +117,10 @@ concerning personal jurisdiction and venue of these courts.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -117,6 +117,15 @@ This product includes the Zend Engine, freely available at
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* finos/OSLC-handbook
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

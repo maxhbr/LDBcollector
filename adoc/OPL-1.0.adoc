@@ -375,6 +375,10 @@ complete with out that file.
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

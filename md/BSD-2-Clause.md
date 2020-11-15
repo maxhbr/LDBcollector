@@ -119,6 +119,30 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Open Knowledge International
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BSD-2-Clause",

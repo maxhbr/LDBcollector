@@ -129,6 +129,10 @@ La présente licence peut être distribuée sans conditions particulières. Tout
 
 === Raw Data
 
+* SPDX
+* Scancode
+* OpenSourceInitiative
+
 ....
 {
     "__impliedNames": [

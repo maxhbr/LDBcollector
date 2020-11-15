@@ -120,6 +120,10 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
 
 === Raw Data
 
+* SPDX
+* Scancode
+* OSADL License Checklist
+
 ....
 {
     "__impliedNames": [

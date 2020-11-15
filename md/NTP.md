@@ -87,6 +87,26 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+-   ifrOSS
+
+&nbsp;
+
     {
         "__impliedNames": [
             "NTP",

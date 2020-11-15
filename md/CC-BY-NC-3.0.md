@@ -378,6 +378,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Google OSS Policy
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CC-BY-NC-3.0",

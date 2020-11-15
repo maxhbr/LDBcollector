@@ -287,6 +287,10 @@ Version 1.0 du 2006-09-05."
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

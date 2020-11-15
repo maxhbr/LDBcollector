@@ -352,6 +352,16 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- OpenSourceInitiative
+
+- Google OSS Policy
+
+- Open Knowledge International
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

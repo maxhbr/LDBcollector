@@ -586,6 +586,24 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   Fedora Project Wiki
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "RPSL-1.0",

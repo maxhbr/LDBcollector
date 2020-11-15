@@ -169,6 +169,10 @@ liable for, and expressly excludes, all liability for loss or damage however and
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

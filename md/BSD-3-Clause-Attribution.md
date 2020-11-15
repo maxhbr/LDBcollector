@@ -65,6 +65,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BSD-3-Clause-Attribution",

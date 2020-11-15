@@ -110,6 +110,9 @@ This licence, including its formation, and any disputes and claims arising in co
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

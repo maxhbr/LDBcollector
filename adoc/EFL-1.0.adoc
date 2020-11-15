@@ -69,6 +69,11 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OpenSourceInitiative
+
 ....
 {
     "__impliedNames": [

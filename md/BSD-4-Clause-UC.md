@@ -143,6 +143,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   finos/OSLC-handbook
+
+-   Google OSS Policy
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "BSD-4-Clause-UC",

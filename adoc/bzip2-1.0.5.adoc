@@ -49,6 +49,10 @@ PATENT HINTS Yes
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OSADL License Checklist
+
 ....
 {
     "__impliedNames": [

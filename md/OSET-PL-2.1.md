@@ -149,6 +149,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OSET-PL-2.1",

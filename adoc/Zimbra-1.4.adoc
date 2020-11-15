@@ -78,6 +78,9 @@ This Agreement contains the entire agreement of the parties with respect to the 
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

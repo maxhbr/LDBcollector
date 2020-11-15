@@ -154,6 +154,12 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+&nbsp;
+
     {
         "__impliedNames": [
             "PolyForm-Small-Business-1.0.0",

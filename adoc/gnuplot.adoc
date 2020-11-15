@@ -59,6 +59,9 @@ extent permitted by applicable law.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

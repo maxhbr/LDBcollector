@@ -63,6 +63,14 @@ of said person's immediate fault when using the work as intended.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

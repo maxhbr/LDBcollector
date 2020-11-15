@@ -43,6 +43,10 @@ obligation to support the use of the AFM files.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

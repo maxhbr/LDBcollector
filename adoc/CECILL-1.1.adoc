@@ -537,6 +537,9 @@ jurisdiction, by the first Party to take action.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -162,6 +162,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Debian Free Software Guidelines
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CPL-1.0",

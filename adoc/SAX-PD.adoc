@@ -86,6 +86,9 @@ David Megginson, Megginson Technologies Ltd.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

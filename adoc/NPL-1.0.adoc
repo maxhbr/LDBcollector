@@ -175,6 +175,10 @@ Contributor(s):  .''
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

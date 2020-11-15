@@ -451,6 +451,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "ODC-By-1.0",

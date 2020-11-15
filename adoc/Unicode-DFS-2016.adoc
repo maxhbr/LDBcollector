@@ -109,6 +109,12 @@ authorization of the copyright holder.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

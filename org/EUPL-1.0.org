@@ -207,6 +207,14 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- Scancode
+
+- Google OSS Policy
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

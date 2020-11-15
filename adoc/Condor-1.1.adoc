@@ -160,6 +160,10 @@ The Condor Team may publish revised and/or new versions of this
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

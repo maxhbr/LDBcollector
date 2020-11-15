@@ -47,6 +47,10 @@ improvements that may be of general interest.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

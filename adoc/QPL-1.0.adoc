@@ -114,6 +114,16 @@ This license is governed by the Laws of Norway. Disputes shall be settled by Osl
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Wikipedia
+* Google OSS Policy
+* Open Knowledge International
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

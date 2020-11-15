@@ -431,6 +431,16 @@ registered office inside a European Union country.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OSADL License Checklist
+* choosealicense.com
+* OpenSourceInitiative
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

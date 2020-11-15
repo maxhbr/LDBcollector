@@ -25,6 +25,12 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "OGL-Canada-2.0",

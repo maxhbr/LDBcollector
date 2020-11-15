@@ -100,6 +100,12 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Google OSS Policy
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

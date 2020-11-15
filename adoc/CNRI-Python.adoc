@@ -69,6 +69,13 @@ Licensee. Alternately, in lieu of CNRI's License Agreement, Licensee may substit
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

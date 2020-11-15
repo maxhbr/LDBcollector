@@ -58,6 +58,9 @@ original program and z is an arbitrary suffix.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -172,6 +172,15 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* finos/OSLC-handbook
+* Google OSS Policy
+* Debian Free Software Guidelines
+* Override
+
 ....
 {
     "__impliedNames": [

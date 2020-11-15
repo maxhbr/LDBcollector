@@ -252,6 +252,17 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OSADL License Checklist
+* OpenSourceInitiative
+* finos/OSLC-handbook
+* Wikipedia
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

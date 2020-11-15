@@ -89,6 +89,10 @@ software or this license, under any kind of legal claim.***
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

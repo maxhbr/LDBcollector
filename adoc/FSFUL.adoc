@@ -35,6 +35,9 @@ unlimited permission to copy, distribute and modify it.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

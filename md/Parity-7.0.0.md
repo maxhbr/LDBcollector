@@ -30,6 +30,12 @@ URLs
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Parity-7.0.0",

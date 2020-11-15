@@ -429,6 +429,9 @@ Defining What Constitutes the Work
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

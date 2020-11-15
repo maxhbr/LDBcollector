@@ -572,6 +572,38 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   Fedora Project Wiki
+
+-   OpenSourceInitiative
+
+-   finos/OSLC-handbook
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   Debian Free Software Guidelines
+
+-   Override
+
+-   Override
+
+&nbsp;
+
     {
         "__impliedNames": [
             "GPL-2.0-only",

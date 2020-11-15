@@ -49,6 +49,12 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Wikipedia
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

@@ -152,6 +152,14 @@ The End
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OpenSourceInitiative
+* Google OSS Policy
+* Debian Free Software Guidelines
+* Override
+
 ....
 {
     "__impliedNames": [

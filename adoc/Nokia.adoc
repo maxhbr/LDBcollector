@@ -428,6 +428,12 @@ Copyright © <year> Nokia and others. All Rights Reserved.
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

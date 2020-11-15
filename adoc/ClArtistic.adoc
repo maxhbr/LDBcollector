@@ -178,6 +178,11 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Override
+
 ....
 {
     "__impliedNames": [

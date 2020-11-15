@@ -66,6 +66,11 @@ LICENSED MATERIAL  -  PROGRAM PROPERTY OF I B M
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+
 ....
 {
     "__impliedNames": [

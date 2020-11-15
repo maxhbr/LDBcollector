@@ -67,6 +67,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- Fedora Project Wiki
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

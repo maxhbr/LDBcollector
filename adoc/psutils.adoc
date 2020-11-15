@@ -67,6 +67,10 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -93,6 +93,15 @@ THE UNIVERSITY OF CALIFORNIA SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, B
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* choosealicense.com
+* OpenSourceInitiative
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

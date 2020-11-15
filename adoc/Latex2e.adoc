@@ -46,6 +46,9 @@ into another language, under the above conditions for modified versions.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -116,6 +116,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   finos/OSLC-handbook
+
+&nbsp;
+
     {
         "__impliedNames": [
             "PHP-3.01",

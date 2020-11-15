@@ -51,6 +51,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Beerware",

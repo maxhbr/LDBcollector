@@ -156,6 +156,9 @@ Copyright [yyyy] [name of copyright owner] Copyright and related rights are lice
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

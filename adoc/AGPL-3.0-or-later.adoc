@@ -203,6 +203,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* finos/OSLC-handbook
+* Wikipedia
+* Override
+
 ....
 {
     "__impliedNames": [

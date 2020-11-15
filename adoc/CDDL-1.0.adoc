@@ -193,6 +193,17 @@ NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* OSADL License Checklist
+* OpenSourceInitiative
+* finos/OSLC-handbook
+* Wikipedia
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

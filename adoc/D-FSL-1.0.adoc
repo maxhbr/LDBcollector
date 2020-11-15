@@ -499,6 +499,9 @@ abgerufen werden."
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

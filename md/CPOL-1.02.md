@@ -117,6 +117,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   OSADL License Checklist
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CPOL-1.02",

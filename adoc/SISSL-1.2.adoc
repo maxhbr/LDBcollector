@@ -181,6 +181,10 @@ All Rights Reserved.
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [

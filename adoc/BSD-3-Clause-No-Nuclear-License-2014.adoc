@@ -73,6 +73,10 @@ in the design, construction, operation or maintenance of any nuclear facility.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

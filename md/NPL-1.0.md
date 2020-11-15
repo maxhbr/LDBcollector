@@ -175,6 +175,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "NPL-1.0",

@@ -60,6 +60,10 @@ WARRANTY FOR THIS SOFTWARE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -284,6 +284,9 @@ DAMAGES.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

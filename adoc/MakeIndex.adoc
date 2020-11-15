@@ -62,6 +62,9 @@ serves any particular purpose.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

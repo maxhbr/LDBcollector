@@ -39,6 +39,9 @@ complete and unchanged* distribution of these files.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

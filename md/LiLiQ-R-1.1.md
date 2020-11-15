@@ -129,6 +129,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+&nbsp;
+
     {
         "__impliedNames": [
             "LiLiQ-R-1.1",

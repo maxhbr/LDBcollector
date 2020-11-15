@@ -89,6 +89,12 @@ misrepresented as being the original software.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

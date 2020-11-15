@@ -74,6 +74,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+&nbsp;
+
     {
         "__impliedNames": [
             "EFL-1.0",

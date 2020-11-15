@@ -384,6 +384,11 @@ Each Subsequent Contributor (including the Initial Contributor where the Initial
 
 === Raw Data
 
+* SPDX
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

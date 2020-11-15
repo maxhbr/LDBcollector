@@ -119,6 +119,16 @@ SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* choosealicense.com
+* OpenSourceInitiative
+* finos/OSLC-handbook
+* Google OSS Policy
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

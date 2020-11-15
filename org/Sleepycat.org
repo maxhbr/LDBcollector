@@ -93,6 +93,24 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
+- OpenSourceInitiative
+
+- Wikipedia
+
+- Google OSS Policy
+
+- Open Knowledge International
+
+- Override
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

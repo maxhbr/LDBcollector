@@ -186,6 +186,9 @@ prejudice such party's right to take subsequent action.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

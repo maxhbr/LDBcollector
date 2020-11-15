@@ -227,6 +227,12 @@ Ohio and the United States of America, without regard to principles of conflicts
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

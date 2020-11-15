@@ -58,6 +58,10 @@ AFFERO GENERAL PUBLIC LICENSE for more details.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

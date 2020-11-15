@@ -150,6 +150,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

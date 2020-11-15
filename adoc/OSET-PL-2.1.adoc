@@ -149,6 +149,10 @@ This Source Code Form is "Incompatible With Secondary Licenses", as defined by t
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+
 ....
 {
     "__impliedNames": [

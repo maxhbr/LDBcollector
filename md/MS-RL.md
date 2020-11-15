@@ -144,6 +144,28 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+-   Fedora Project Wiki
+
+-   OpenSourceInitiative
+
+-   Open Knowledge International
+
+-   ifrOSS
+
+&nbsp;
+
     {
         "__impliedNames": [
             "MS-RL",

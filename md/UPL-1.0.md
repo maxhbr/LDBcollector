@@ -114,6 +114,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   choosealicense.com
+
+&nbsp;
+
     {
         "__impliedNames": [
             "UPL-1.0",

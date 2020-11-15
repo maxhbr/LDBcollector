@@ -53,6 +53,9 @@ bug reports on your work be reported to you.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -106,6 +106,11 @@ Further context, best practice and guidance can be found in the UK Government Li
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

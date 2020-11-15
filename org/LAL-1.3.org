@@ -123,6 +123,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- Debian Free Software Guidelines
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

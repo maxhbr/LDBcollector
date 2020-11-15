@@ -25,6 +25,9 @@
 
 === Raw Data
 
+* SPDX
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

@@ -204,6 +204,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   choosealicense.com
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "EUPL-1.2",

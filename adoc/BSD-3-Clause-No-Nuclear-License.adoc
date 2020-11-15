@@ -63,6 +63,9 @@ nuclear facility.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

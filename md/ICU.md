@@ -95,6 +95,26 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   SPDX
+
+-   BlueOak License List
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Scancode
+
+-   OSADL License Checklist
+
+-   OSADL License Checklist
+
+-   ifrOSS
+
+&nbsp;
+
     {
         "__impliedNames": [
             "ICU",

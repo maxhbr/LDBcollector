@@ -37,6 +37,9 @@ In place of a legal notice, here is a blessing:
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -315,6 +315,11 @@ License for the specific language governing rights and limitations under the Lic
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

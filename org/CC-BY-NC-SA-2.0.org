@@ -108,6 +108,16 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- Google OSS Policy
+
+- Debian Free Software Guidelines
+
+- Override
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

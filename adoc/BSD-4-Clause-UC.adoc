@@ -140,6 +140,14 @@ by "COPYRIGHT HOLDERS AND CONTRIBUTORS".
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* finos/OSLC-handbook
+* Google OSS Policy
+* Override
+
 ....
 {
     "__impliedNames": [

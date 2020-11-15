@@ -113,6 +113,17 @@ For more information, please refer to <http://unlicense.org/>
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* choosealicense.com
+* Fedora Project Wiki
+* Wikipedia
+* Google OSS Policy
+* Open Knowledge International
+* ifrOSS
+
 ....
 {
     "__impliedNames": [

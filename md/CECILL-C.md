@@ -281,6 +281,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Google OSS Policy
+
+&nbsp;
+
     {
         "__impliedNames": [
             "CECILL-C",

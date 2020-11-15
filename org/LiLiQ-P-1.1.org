@@ -106,6 +106,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- OpenSourceInitiative
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

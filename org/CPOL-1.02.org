@@ -120,6 +120,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- Scancode
+
+- OSADL License Checklist
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

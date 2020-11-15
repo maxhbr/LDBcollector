@@ -98,6 +98,12 @@ defined by the Mozilla Public License, v. 2.0.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* OSADL License Checklist
+* Debian Free Software Guidelines
+
 ....
 {
     "__impliedNames": [

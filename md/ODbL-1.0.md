@@ -575,6 +575,14 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   Scancode
+
+-   Open Knowledge International
+
+&nbsp;
+
     {
         "__impliedNames": [
             "ODbL-1.0",

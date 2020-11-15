@@ -114,6 +114,9 @@ Use of the masculine gender includes the feminine and neuter genders and is empl
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

@@ -96,6 +96,24 @@
 
 ** Raw Data
 
+- SPDX
+
+- SPDX
+
+- BlueOak License List
+
+- BlueOak License List
+
+- Scancode
+
+- Scancode
+
+- OSADL License Checklist
+
+- OSADL License Checklist
+
+- ifrOSS
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

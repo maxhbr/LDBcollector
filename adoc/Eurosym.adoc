@@ -50,6 +50,9 @@ This licence is governed by the Laws of Germany. Disputes shall be settled by Sa
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

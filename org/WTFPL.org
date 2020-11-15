@@ -106,6 +106,24 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- OpenChainPolicyTemplate
+
+- Scancode
+
+- OSADL License Checklist
+
+- choosealicense.com
+
+- Wikipedia
+
+- Google OSS Policy
+
+- Debian Free Software Guidelines
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

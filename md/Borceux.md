@@ -59,6 +59,16 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   Fedora Project Wiki
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Borceux",

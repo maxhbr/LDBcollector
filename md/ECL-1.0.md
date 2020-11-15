@@ -104,6 +104,18 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   Scancode
+
+-   OpenSourceInitiative
+
+-   Wikipedia
+
+&nbsp;
+
     {
         "__impliedNames": [
             "ECL-1.0",

@@ -56,6 +56,10 @@ sources, credits must appear in the documentation.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

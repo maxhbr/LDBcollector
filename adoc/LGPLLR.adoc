@@ -261,6 +261,9 @@ END OF TERMS AND CONDITIONS
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

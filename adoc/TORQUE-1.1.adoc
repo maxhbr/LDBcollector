@@ -73,6 +73,9 @@ http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&industry=All&pr
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

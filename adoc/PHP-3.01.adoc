@@ -113,6 +113,11 @@ PHP includes the Zend Engine, freely available at
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* finos/OSLC-handbook
+
 ....
 {
     "__impliedNames": [

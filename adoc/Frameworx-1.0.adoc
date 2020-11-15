@@ -107,6 +107,12 @@ Your agreement to the foregoing as of the date hereof has been evidenced by your
 
 === Raw Data
 
+* SPDX
+* OpenChainPolicyTemplate
+* Scancode
+* OpenSourceInitiative
+* Open Knowledge International
+
 ....
 {
     "__impliedNames": [

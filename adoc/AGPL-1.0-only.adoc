@@ -142,6 +142,11 @@ NO WARRANTY
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+* Override
+
 ....
 {
     "__impliedNames": [

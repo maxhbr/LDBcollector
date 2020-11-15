@@ -67,6 +67,22 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   choosealicense.com
+
+-   finos/OSLC-handbook
+
+&nbsp;
+
     {
         "__impliedNames": [
             "0BSD",

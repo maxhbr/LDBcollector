@@ -50,6 +50,12 @@
 
 ** Raw Data
 
+- SPDX
+
+- BlueOak License List
+
+- OSADL License Checklist
+
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [

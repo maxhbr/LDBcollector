@@ -87,6 +87,16 @@ X Window System is a trademark of X Consortium, Inc.
 
 === Raw Data
 
+* SPDX
+* SPDX
+* BlueOak License List
+* BlueOak License List
+* Scancode
+* Scancode
+* OSADL License Checklist
+* OSADL License Checklist
+* ifrOSS
+
 ....
 {
     "__impliedNames": [

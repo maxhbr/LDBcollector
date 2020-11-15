@@ -132,6 +132,10 @@ END OF LICENSE.
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* Scancode
+
 ....
 {
     "__impliedNames": [

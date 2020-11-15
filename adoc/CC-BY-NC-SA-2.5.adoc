@@ -109,6 +109,12 @@ Creative Commons may be contacted at http://creativecommons.org/.
 
 === Raw Data
 
+* SPDX
+* Scancode
+* Google OSS Policy
+* Debian Free Software Guidelines
+* Override
+
 ....
 {
     "__impliedNames": [

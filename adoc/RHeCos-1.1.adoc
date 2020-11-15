@@ -471,6 +471,9 @@ eCos and the eCos logo are registered trademarks of eCosCentric Limited.
 
 === Raw Data
 
+* SPDX
+* Scancode
+
 ....
 {
     "__impliedNames": [

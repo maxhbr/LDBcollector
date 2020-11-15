@@ -101,6 +101,28 @@ Text
 Raw Data
 --------
 
+-   SPDX
+
+-   BlueOak License List
+
+-   OpenChainPolicyTemplate
+
+-   Scancode
+
+-   choosealicense.com
+
+-   Fedora Project Wiki
+
+-   Wikipedia
+
+-   Google OSS Policy
+
+-   Open Knowledge International
+
+-   ifrOSS
+
+&nbsp;
+
     {
         "__impliedNames": [
             "Unlicense",

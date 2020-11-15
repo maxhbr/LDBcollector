@@ -215,6 +215,14 @@ Without prejudice to specific agreement between parties,
 
 === Raw Data
 
+* SPDX
+* BlueOak License List
+* OpenChainPolicyTemplate
+* Scancode
+* choosealicense.com
+* Wikipedia
+* Google OSS Policy
+
 ....
 {
     "__impliedNames": [
