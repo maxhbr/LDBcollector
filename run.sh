@@ -4,7 +4,7 @@ set -e
 
 cd "$(dirname "$0")"
 
-stack build
+stack build --ghc-options -j
 if [[ "$1" == "--test" ]]; then
     shift
     yml=$(readlink -f stack.yaml)

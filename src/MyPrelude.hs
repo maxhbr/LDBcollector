@@ -43,10 +43,10 @@ mergeAeson = Object . HML.unions . map (\case
                                        ) . V.toList . V.map toJSON
 
 mergeAesonL :: ToJSON a => [a] -> Value
-mergeAesonL = Object . HML.unions . map (\case
+mergeAesonL = Object . HML.unions . map ((\case
                                             (Object x) -> x
-                                            v          -> "value" .= v
-                                        ) . map toJSON
+                                            v          -> "value" .= v)
+                                         . toJSON)
 
 class Inlineable a where
   toInline :: a -> Inlines
@@ -55,7 +55,4 @@ class Blockable a where
   toBlock :: a -> Blocks
 
 createDirectoryIfNotExists :: FilePath -> IO ()
-createDirectoryIfNotExists folder = do
-  dirExists <- doesDirectoryExist folder
-  unless dirExists $
-    createDirectory folder
+createDirectoryIfNotExists = createDirectoryIfMissing True

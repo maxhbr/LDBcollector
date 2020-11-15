@@ -17,31 +17,32 @@ description:         Please see the README on GitHub at <https://github.com/maxh
 
 dependencies:
 - base >= 4.7 && < 5
-- yaml
 - aeson
 - aeson-pretty
-- lens-aeson
-- lens
-- text
-- vector
-- filepath
 - bytestring
-- unordered-containers
-- hashable
 - cassava
-- directory
-- opensource
-- transformers
 - containers
-- raw-strings-qq
+- directory
+- extra
+- file-embed
+- filepath
+- graphviz
+- hashable
 - hexml
-- lucid
 - http-client
+- lens
+- lens-aeson
+- lucid
+- mtl
+- opensource
 - pandoc
 - pandoc-types
-- file-embed
-- graphviz
-- mtl
+- raw-strings-qq
+- text
+- transformers
+- unordered-containers
+- vector
+- yaml
 
 library:
   source-dirs: src

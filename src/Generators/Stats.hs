@@ -44,7 +44,7 @@ writeStatsOnLicenses handle statsFolder lics = do
 writeStats :: FilePath -> Facts -> [(LicenseName, (License, a))] -> IO ()
 writeStats outputFolder fs lics = do
   let statsFolder = outputFolder </> "_stats"
-  createDirectory statsFolder
+  createDirectoryIfNotExists statsFolder
 
   handle <- openFile (statsFolder </> "stats.txt") WriteMode
   hPutStrLn handle "## Stats:"

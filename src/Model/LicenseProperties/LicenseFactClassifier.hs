@@ -14,7 +14,7 @@ import           MyPrelude
 import qualified Data.Text as T
 import qualified Text.Pandoc as P
 import qualified Text.Pandoc.Builder as P
-import qualified Data.Hashable.Class.Hashable (Hashable)
+import           Data.Hashable (Hashable)
 
 import           Model.LicenseProperties.Base
 
@@ -32,6 +32,7 @@ instance Show LicenseFactLicense where
   show (LFLWithURL url name) = name ++ " (" ++ url ++ ")"
 instance ToJSON LicenseFactLicense
 instance ToJSONKey LicenseFactLicense
+instance Hashable LicenseFactLicense
 
 instance Inlineable LicenseFactLicense where
   toInline EmptyLFL              = mempty
