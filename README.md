@@ -76,12 +76,24 @@ The license list can be pulled from https://blueoakcouncil.org/list.json, and is
 The Fedora Project has in its wiki a list of licenses which are rated **good** or **bad** on https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing.
 These lists are extracted to csv files in `/data/Fedora_Project_Wiki/`.
 
+| Kind of update: | manual labor |
+
 #### TODO: the Fedora project also has notes regarding to licenses
 - e.g. https://fedoraproject.org/wiki/Licensing/Sleepycat
 
 ### Open Chain Policy Template
+
+| Kind of update: | manual labor |
+| Version:        | 1.2          |
+
+#### Version 1.2
 The open chain project published an example policy as a spreadsheet on [openchain-open-source-policy-template-now-available](https://www.openchainproject.org/news/2019/01/17/openchain-open-source-policy-template-now-available).
-From the spreadsheet page "Example Appendix 1 - Unofficial License Grid used by UK Entity" one can extract the license list into a CSV file
+From the spreadsheet page **"Example Appendix 1 - Unofficial License Grid used by UK Entity"** one can extract the license list into a CSV file
+
+#### Update: version 2.0
+https://www.openchainproject.org/news/2019/12/11/open-source-policy-template-2-0-in-chinese-traditional-and-english
+
+This template only contains 10 licenses...
 
 ### OSLC-Handbook
 [OSLC-handbook](https://github.com/finos-osr/OSLC-handbook/tree/master/src)
