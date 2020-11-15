@@ -80,6 +80,10 @@ Project Wiki]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/EUDatagrid.svg
+
 ==== Raw JSON
 
 ....
@@ -384,9 +388,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/EUDatagrid.svg[image,title="dot"]

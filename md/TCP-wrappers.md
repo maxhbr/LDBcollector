@@ -83,6 +83,10 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
+### Dot Cluster Graph
+
+[../dot/TCP-wrappers.svg](../dot/TCP-wrappers.svg "../dot/TCP-wrappers.svg")
+
 ### Raw JSON
 
     {
@@ -280,10 +284,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/TCP-wrappers.svg "dot")

@@ -64,6 +64,10 @@ OF THE POSSIBILITY OF SUCH DAMAGES.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Xerox.svg
+
 ==== Raw JSON
 
 ....
@@ -243,9 +247,3 @@ OF THE POSSIBILITY OF SUCH DAMAGES.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Xerox.svg[image,title="dot"]

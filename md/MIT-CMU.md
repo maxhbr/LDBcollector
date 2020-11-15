@@ -85,6 +85,10 @@ Raw Data
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml "finos/OSLC-handbook")
 
+### Dot Cluster Graph
+
+[../dot/MIT-CMU.svg](../dot/MIT-CMU.svg "../dot/MIT-CMU.svg")
+
 ### Raw JSON
 
     {
@@ -312,10 +316,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/MIT-CMU.svg "dot")

@@ -159,6 +159,10 @@ The End
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0-cl8.yml[Scancode]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/Artistic-1.0-cl8.svg
+
 ==== Raw JSON
 
 ....
@@ -405,9 +409,3 @@ The End
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Artistic-1.0-cl8.svg[image,title="dot"]

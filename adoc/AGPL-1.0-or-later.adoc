@@ -64,6 +64,10 @@ AFFERO GENERAL PUBLIC LICENSE for more details.
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/AGPL-1.0-or-later.svg
+
 ==== Raw JSON
 
 ....
@@ -241,9 +245,3 @@ AFFERO GENERAL PUBLIC LICENSE for more details.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/AGPL-1.0-or-later.svg[image,title="dot"]

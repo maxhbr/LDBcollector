@@ -70,6 +70,10 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/netcdf.yml][Scancode]]
 
+*** Dot Cluster Graph
+
+[[../dot/NetCDF.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -227,9 +231,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/NetCDF.svg]]

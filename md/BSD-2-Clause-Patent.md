@@ -123,6 +123,10 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt "OSADL License Checklist")
 
+### Dot Cluster Graph
+
+[../dot/BSD-2-Clause-Patent.svg](../dot/BSD-2-Clause-Patent.svg "../dot/BSD-2-Clause-Patent.svg")
+
 ### Raw JSON
 
     {
@@ -345,10 +349,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/BSD-2-Clause-Patent.svg "dot")

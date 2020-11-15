@@ -202,6 +202,10 @@ THE SOFTWARE IN THIS PRODUCT WAS IN PART PROVIDED BY GENIVIA INC AND ANY EXPRESS
 * https://spdx.org/licenses/gSOAP-1.3b.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gsoap-1.3b.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/gSOAP-1.3b.svg
+
 ==== Raw JSON
 
 ....
@@ -305,9 +309,3 @@ THE SOFTWARE IN THIS PRODUCT WAS IN PART PROVIDED BY GENIVIA INC AND ANY EXPRESS
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/gSOAP-1.3b.svg[image,title="dot"]

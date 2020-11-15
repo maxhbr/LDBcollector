@@ -163,6 +163,10 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+### Dot Cluster Graph
+
+[../dot/Vim.svg](../dot/Vim.svg "../dot/Vim.svg")
+
 ### Raw JSON
 
     {
@@ -385,10 +389,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Vim.svg "dot")

@@ -74,6 +74,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-ack.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/BSD-3-Clause-Attribution.svg](../dot/BSD-3-Clause-Attribution.svg "../dot/BSD-3-Clause-Attribution.svg")
+
 ### Raw JSON
 
     {
@@ -229,10 +233,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/BSD-3-Clause-Attribution.svg "dot")

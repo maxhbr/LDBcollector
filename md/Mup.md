@@ -63,6 +63,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mup.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/Mup.svg](../dot/Mup.svg "../dot/Mup.svg")
+
 ### Raw JSON
 
     {
@@ -233,10 +237,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Mup.svg "dot")

@@ -97,6 +97,10 @@ Policy]
 Knowledge International]
 * Override
 
+==== Dot Cluster Graph
+
+../dot/Sleepycat.svg
+
 ==== Raw JSON
 
 ....
@@ -512,9 +516,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Sleepycat.svg[image,title="dot"]

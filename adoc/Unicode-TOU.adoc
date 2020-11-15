@@ -162,6 +162,10 @@ between the parties.
 * https://spdx.org/licenses/Unicode-TOU.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unicode-tou.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Unicode-TOU.svg
+
 ==== Raw JSON
 
 ....
@@ -251,9 +255,3 @@ between the parties.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Unicode-TOU.svg[image,title="dot"]

@@ -29,6 +29,10 @@
 
 - [[https://spdx.org/licenses/OFL-1.1-no-RFN.html][SPDX]]
 
+*** Dot Cluster Graph
+
+[[../dot/OFL-1.1-no-RFN.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -109,9 +113,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/OFL-1.1-no-RFN.svg]]

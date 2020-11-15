@@ -100,6 +100,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.3.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/OLDAP-2.3.svg](../dot/OLDAP-2.3.svg "../dot/OLDAP-2.3.svg")
+
 ### Raw JSON
 
     {
@@ -271,10 +275,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/OLDAP-2.3.svg "dot")

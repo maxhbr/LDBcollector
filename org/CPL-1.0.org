@@ -243,6 +243,10 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
 
+*** Dot Cluster Graph
+
+[[../dot/CPL-1.0.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -661,9 +665,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/CPL-1.0.svg]]

@@ -56,6 +56,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/diffmark.svg](../dot/diffmark.svg "../dot/diffmark.svg")
+
 ### Raw JSON
 
     {
@@ -227,10 +231,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/diffmark.svg "dot")

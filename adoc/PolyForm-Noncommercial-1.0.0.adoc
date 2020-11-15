@@ -167,6 +167,10 @@ of your licenses.
 * https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/polyform-noncommercial-1.0.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/PolyForm-Noncommercial-1.0.0.svg
+
 ==== Raw JSON
 
 ....
@@ -263,9 +267,3 @@ of your licenses.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/PolyForm-Noncommercial-1.0.0.svg[image,title="dot"]

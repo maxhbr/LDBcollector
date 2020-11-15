@@ -59,6 +59,10 @@ Back to the ACE home page.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ace-tao.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/DOC.svg
+
 ==== Raw JSON
 
 ....
@@ -225,9 +229,3 @@ Back to the ACE home page.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/DOC.svg[image,title="dot"]

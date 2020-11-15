@@ -58,6 +58,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enlightenment.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/MIT-advertising.svg
+
 ==== Raw JSON
 
 ....
@@ -231,9 +235,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/MIT-advertising.svg[image,title="dot"]

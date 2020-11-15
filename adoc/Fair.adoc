@@ -60,6 +60,10 @@ DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/Fair.svg
+
 ==== Raw JSON
 
 ....
@@ -386,9 +390,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Fair.svg[image,title="dot"]

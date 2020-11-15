@@ -91,6 +91,10 @@ License Checklist]
 Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/MirOS.svg
+
 ==== Raw JSON
 
 ....
@@ -438,9 +442,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/MirOS.svg[image,title="dot"]

@@ -395,6 +395,10 @@
 
 - Override
 
+*** Dot Cluster Graph
+
+[[../dot/CC-BY-NC-3.0.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -597,9 +601,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/CC-BY-NC-3.0.svg]]

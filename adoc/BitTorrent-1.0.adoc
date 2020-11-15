@@ -369,6 +369,10 @@ or implied.  See the License for the specific language governing rights and limi
 * https://spdx.org/licenses/BitTorrent-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/BitTorrent-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -479,9 +483,3 @@ or implied.  See the License for the specific language governing rights and limi
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/BitTorrent-1.0.svg[image,title="dot"]

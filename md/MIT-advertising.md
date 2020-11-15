@@ -62,6 +62,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enlightenment.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/MIT-advertising.svg](../dot/MIT-advertising.svg "../dot/MIT-advertising.svg")
+
 ### Raw JSON
 
     {
@@ -233,10 +237,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/MIT-advertising.svg "dot")

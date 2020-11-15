@@ -51,6 +51,10 @@ into another language, under the above conditions for modified versions.
 * https://spdx.org/licenses/Latex2e.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Latex2e.svg
+
 ==== Raw JSON
 
 ....
@@ -170,9 +174,3 @@ into another language, under the above conditions for modified versions.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Latex2e.svg[image,title="dot"]

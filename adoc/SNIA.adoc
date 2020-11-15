@@ -184,6 +184,10 @@ Read more about this license at http://www.snia.org/smi/developers/open_source/
 * https://spdx.org/licenses/SNIA.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/snia.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/SNIA.svg
+
 ==== Raw JSON
 
 ....
@@ -303,9 +307,3 @@ Read more about this license at http://www.snia.org/smi/developers/open_source/
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/SNIA.svg[image,title="dot"]

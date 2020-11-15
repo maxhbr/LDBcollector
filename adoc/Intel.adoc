@@ -93,6 +93,10 @@ goods and services.
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/Intel.svg
+
 ==== Raw JSON
 
 ....
@@ -401,9 +405,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Intel.svg[image,title="dot"]

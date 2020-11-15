@@ -267,6 +267,10 @@ any resulting litigation.
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/LPL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -541,9 +545,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/LPL-1.0.svg[image,title="dot"]

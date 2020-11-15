@@ -196,6 +196,10 @@ Source Code: The preferred form for making modifications to the Licensed Product
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/Motosoto.svg
+
 ==== Raw JSON
 
 ....
@@ -455,9 +459,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Motosoto.svg[image,title="dot"]

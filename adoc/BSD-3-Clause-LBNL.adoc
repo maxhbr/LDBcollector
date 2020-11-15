@@ -58,6 +58,10 @@ You are under no obligation whatsoever to provide any bug fixes, patches, or upg
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lbnl-bsd.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/BSD-3-Clause-LBNL.svg
+
 ==== Raw JSON
 
 ....
@@ -237,9 +241,3 @@ You are under no obligation whatsoever to provide any bug fixes, patches, or upg
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/BSD-3-Clause-LBNL.svg[image,title="dot"]

@@ -84,6 +84,10 @@ OF SUCH DAMAGE.
 * https://spdx.org/licenses/Caldera.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/caldera.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Caldera.svg
+
 ==== Raw JSON
 
 ....
@@ -187,9 +191,3 @@ OF SUCH DAMAGE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Caldera.svg[image,title="dot"]

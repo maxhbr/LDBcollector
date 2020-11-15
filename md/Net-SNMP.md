@@ -291,6 +291,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/net-snmp.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/Net-SNMP.svg](../dot/Net-SNMP.svg "../dot/Net-SNMP.svg")
+
 ### Raw JSON
 
     {
@@ -462,10 +466,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Net-SNMP.svg "dot")

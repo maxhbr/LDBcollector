@@ -59,6 +59,10 @@ risk.
 * https://spdx.org/licenses/libselinux-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/selinux-nsa-declaration-1.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/libselinux-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -163,9 +167,3 @@ risk.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/libselinux-1.0.svg[image,title="dot"]

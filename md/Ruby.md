@@ -114,6 +114,10 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
+### Dot Cluster Graph
+
+[../dot/Ruby.svg](../dot/Ruby.svg "../dot/Ruby.svg")
+
 ### Raw JSON
 
     {
@@ -320,10 +324,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Ruby.svg "dot")

@@ -181,6 +181,10 @@ Knowledge International]
 * https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
 (https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md[ODbL])
 
+==== Dot Cluster Graph
+
+../dot/MS-RL.svg
+
 ==== Raw JSON
 
 ....
@@ -745,9 +749,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/MS-RL.svg[image,title="dot"]

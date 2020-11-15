@@ -25,6 +25,10 @@ Raw Data
 
 -   [SPDX](https://spdx.org/licenses/GFDL-1.1-no-invariants-only.html "SPDX")
 
+### Dot Cluster Graph
+
+[../dot/GFDL-1.1-no-invariants-only.svg](../dot/GFDL-1.1-no-invariants-only.svg "../dot/GFDL-1.1-no-invariants-only.svg")
+
 ### Raw JSON
 
     {
@@ -76,10 +80,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/GFDL-1.1-no-invariants-only.svg "dot")

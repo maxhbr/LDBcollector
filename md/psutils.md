@@ -77,6 +77,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psutils.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/psutils.svg](../dot/psutils.svg "../dot/psutils.svg")
+
 ### Raw JSON
 
     {
@@ -238,10 +242,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/psutils.svg "dot")

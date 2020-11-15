@@ -143,6 +143,10 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.0.txt "OSADL License Checklist")
 
+### Dot Cluster Graph
+
+[../dot/AFL-2.0.svg](../dot/AFL-2.0.svg "../dot/AFL-2.0.svg")
+
 ### Raw JSON
 
     {
@@ -365,10 +369,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/AFL-2.0.svg "dot")

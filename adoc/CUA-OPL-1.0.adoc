@@ -518,6 +518,10 @@ Original Code Source Code for Your Modifications.]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/CUA-OPL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -771,9 +775,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CUA-OPL-1.0.svg[image,title="dot"]

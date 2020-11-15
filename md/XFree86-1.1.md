@@ -111,6 +111,10 @@ Raw Data
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
 
+### Dot Cluster Graph
+
+[../dot/XFree86-1.1.svg](../dot/XFree86-1.1.svg "../dot/XFree86-1.1.svg")
+
 ### Raw JSON
 
     {
@@ -301,10 +305,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/XFree86-1.1.svg "dot")

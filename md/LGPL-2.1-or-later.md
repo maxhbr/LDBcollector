@@ -251,6 +251,10 @@ Raw Data
 
 -   Override
 
+### Dot Cluster Graph
+
+[../dot/LGPL-2.1-or-later.svg](../dot/LGPL-2.1-or-later.svg "../dot/LGPL-2.1-or-later.svg")
+
 ### Raw JSON
 
     {
@@ -697,10 +701,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/LGPL-2.1-or-later.svg "dot")

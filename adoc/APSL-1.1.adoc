@@ -434,6 +434,10 @@ under the License."
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.1.yml[Scancode]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/APSL-1.1.svg
+
 ==== Raw JSON
 
 ....
@@ -680,9 +684,3 @@ under the License."
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/APSL-1.1.svg[image,title="dot"]

@@ -78,6 +78,10 @@ http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&industry=All&pr
 * https://spdx.org/licenses/TORQUE-1.1.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/TORQUE-1.1.svg
+
 ==== Raw JSON
 
 ....
@@ -198,9 +202,3 @@ http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&industry=All&pr
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/TORQUE-1.1.svg[image,title="dot"]

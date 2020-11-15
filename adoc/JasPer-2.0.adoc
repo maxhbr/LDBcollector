@@ -97,6 +97,10 @@ EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/jasper-2.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/JasPer-2.0.svg
+
 ==== Raw JSON
 
 ....
@@ -260,9 +264,3 @@ EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/JasPer-2.0.svg[image,title="dot"]

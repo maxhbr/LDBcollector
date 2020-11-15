@@ -61,6 +61,10 @@ Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
+==== Dot Cluster Graph
+
+../dot/GPL-1.0-or-later.svg
+
 ==== Raw JSON
 
 ....
@@ -274,9 +278,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/GPL-1.0-or-later.svg[image,title="dot"]

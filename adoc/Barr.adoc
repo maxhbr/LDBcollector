@@ -50,6 +50,10 @@ it will not work  with AMSTeX, I have not tested it.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/barr-tex.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Barr.svg
+
 ==== Raw JSON
 
 ....
@@ -207,9 +211,3 @@ it will not work  with AMSTeX, I have not tested it.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Barr.svg[image,title="dot"]

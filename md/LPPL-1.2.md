@@ -342,6 +342,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.2.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/LPPL-1.2.svg](../dot/LPPL-1.2.svg "../dot/LPPL-1.2.svg")
+
 ### Raw JSON
 
     {
@@ -460,10 +464,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/LPPL-1.2.svg "dot")

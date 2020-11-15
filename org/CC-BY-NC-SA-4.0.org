@@ -498,6 +498,10 @@ International (CC-BY-NC-SA-4.0)
 
 - Override
 
+*** Dot Cluster Graph
+
+[[../dot/CC-BY-NC-SA-4.0.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -700,9 +704,3 @@ International (CC-BY-NC-SA-4.0)
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/CC-BY-NC-SA-4.0.svg]]

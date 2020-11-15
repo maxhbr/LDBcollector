@@ -87,6 +87,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/saxpath.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/Saxpath.svg](../dot/Saxpath.svg "../dot/Saxpath.svg")
+
 ### Raw JSON
 
     {
@@ -257,10 +261,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Saxpath.svg "dot")

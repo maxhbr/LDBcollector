@@ -84,6 +84,10 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/egenix-1.1.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/eGenix.svg
+
 ==== Raw JSON
 
 ....
@@ -250,9 +254,3 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/eGenix.svg[image,title="dot"]

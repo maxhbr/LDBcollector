@@ -150,6 +150,10 @@ Project Wiki]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
+==== Dot Cluster Graph
+
+../dot/OpenSSL.svg
+
 ==== Raw JSON
 
 ....
@@ -535,9 +539,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/OpenSSL.svg[image,title="dot"]

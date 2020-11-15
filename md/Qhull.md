@@ -81,6 +81,10 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt "OSADL License Checklist")
 
+### Dot Cluster Graph
+
+[../dot/Qhull.svg](../dot/Qhull.svg "../dot/Qhull.svg")
+
 ### Raw JSON
 
     {
@@ -251,10 +255,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Qhull.svg "dot")

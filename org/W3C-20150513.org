@@ -107,6 +107,10 @@
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
 
+*** Dot Cluster Graph
+
+[[../dot/W3C-20150513.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -317,9 +321,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/W3C-20150513.svg]]

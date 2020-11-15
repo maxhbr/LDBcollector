@@ -88,6 +88,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/egenix-1.1.0.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/eGenix.svg](../dot/eGenix.svg "../dot/eGenix.svg")
+
 ### Raw JSON
 
     {
@@ -252,10 +256,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/eGenix.svg "dot")

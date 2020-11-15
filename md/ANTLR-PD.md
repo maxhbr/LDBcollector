@@ -82,6 +82,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/ANTLR-PD.svg](../dot/ANTLR-PD.svg "../dot/ANTLR-PD.svg")
+
 ### Raw JSON
 
     {
@@ -267,10 +271,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/ANTLR-PD.svg "dot")

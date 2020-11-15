@@ -50,6 +50,10 @@ permission notice identical to this one.
 * https://spdx.org/licenses/Abstyles.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Abstyles.svg
+
 ==== Raw JSON
 
 ....
@@ -169,9 +173,3 @@ permission notice identical to this one.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Abstyles.svg[image,title="dot"]

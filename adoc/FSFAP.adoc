@@ -55,6 +55,10 @@ warranty.
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 
+==== Dot Cluster Graph
+
+../dot/FSFAP.svg
+
 ==== Raw JSON
 
 ....
@@ -244,9 +248,3 @@ Project Wiki]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/FSFAP.svg[image,title="dot"]

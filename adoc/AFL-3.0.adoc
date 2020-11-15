@@ -151,6 +151,10 @@ Policy]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/AFL-3.0.svg
+
 ==== Raw JSON
 
 ....
@@ -697,9 +701,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/AFL-3.0.svg[image,title="dot"]

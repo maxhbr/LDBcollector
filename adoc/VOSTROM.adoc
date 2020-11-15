@@ -98,6 +98,10 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 * https://spdx.org/licenses/VOSTROM.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vostrom.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/VOSTROM.svg
+
 ==== Raw JSON
 
 ....
@@ -208,9 +212,3 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/VOSTROM.svg[image,title="dot"]

@@ -63,6 +63,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nist-pd-fallback.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/NIST-PD-fallback.svg](../dot/NIST-PD-fallback.svg "../dot/NIST-PD-fallback.svg")
+
 ### Raw JSON
 
     {
@@ -174,10 +178,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/NIST-PD-fallback.svg "dot")

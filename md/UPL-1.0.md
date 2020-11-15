@@ -129,6 +129,10 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+### Dot Cluster Graph
+
+[../dot/UPL-1.0.svg](../dot/UPL-1.0.svg "../dot/UPL-1.0.svg")
+
 ### Raw JSON
 
     {
@@ -464,10 +468,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/UPL-1.0.svg "dot")

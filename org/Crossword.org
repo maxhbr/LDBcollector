@@ -52,6 +52,10 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/crossword.yml][Scancode]]
 
+*** Dot Cluster Graph
+
+[[../dot/Crossword.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -208,9 +212,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/Crossword.svg]]

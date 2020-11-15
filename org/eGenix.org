@@ -88,6 +88,10 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/egenix-1.1.0.yml][Scancode]]
 
+*** Dot Cluster Graph
+
+[[../dot/eGenix.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -254,9 +258,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/eGenix.svg]]

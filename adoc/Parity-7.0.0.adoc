@@ -102,6 +102,10 @@ As far as the law allows, this software comes as is, without any warranty or con
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/parity-7.0.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Parity-7.0.0.svg
+
 ==== Raw JSON
 
 ....
@@ -262,9 +266,3 @@ As far as the law allows, this software comes as is, without any warranty or con
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Parity-7.0.0.svg[image,title="dot"]

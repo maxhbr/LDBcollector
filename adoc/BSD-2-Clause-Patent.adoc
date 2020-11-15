@@ -119,6 +119,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt[OSADL
 License Checklist]
 
+==== Dot Cluster Graph
+
+../dot/BSD-2-Clause-Patent.svg
+
 ==== Raw JSON
 
 ....
@@ -343,9 +347,3 @@ License Checklist]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/BSD-2-Clause-Patent.svg[image,title="dot"]

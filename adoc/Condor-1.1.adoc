@@ -166,6 +166,10 @@ The Condor Team may publish revised and/or new versions of this
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/condor-1.1.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Condor-1.1.svg
+
 ==== Raw JSON
 
 ....
@@ -359,9 +363,3 @@ The Condor Team may publish revised and/or new versions of this
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Condor-1.1.svg[image,title="dot"]

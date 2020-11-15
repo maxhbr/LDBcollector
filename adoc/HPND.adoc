@@ -85,6 +85,10 @@ License Checklist]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/HPND.svg
+
 ==== Raw JSON
 
 ....
@@ -397,9 +401,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/HPND.svg[image,title="dot"]

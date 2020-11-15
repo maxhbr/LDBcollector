@@ -799,6 +799,10 @@ Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
+==== Dot Cluster Graph
+
+../dot/LGPL-2.1-only.svg
+
 ==== Raw JSON
 
 ....
@@ -1563,9 +1567,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/LGPL-2.1-only.svg[image,title="dot"]

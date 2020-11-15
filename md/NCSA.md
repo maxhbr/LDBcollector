@@ -140,6 +140,10 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
+### Dot Cluster Graph
+
+[../dot/NCSA.svg](../dot/NCSA.svg "../dot/NCSA.svg")
+
 ### Raw JSON
 
     {
@@ -669,10 +673,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/NCSA.svg "dot")

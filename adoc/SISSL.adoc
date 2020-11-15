@@ -359,6 +359,10 @@ Policy]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/SISSL.svg
+
 ==== Raw JSON
 
 ....
@@ -605,9 +609,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/SISSL.svg[image,title="dot"]

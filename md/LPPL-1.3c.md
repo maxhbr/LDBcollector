@@ -503,6 +503,10 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
+### Dot Cluster Graph
+
+[../dot/LPPL-1.3c.svg](../dot/LPPL-1.3c.svg "../dot/LPPL-1.3c.svg")
+
 ### Raw JSON
 
     {
@@ -934,10 +938,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/LPPL-1.3c.svg "dot")

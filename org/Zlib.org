@@ -185,6 +185,10 @@
 
 - Override
 
+*** Dot Cluster Graph
+
+[[../dot/Zlib.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -883,9 +887,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/Zlib.svg]]

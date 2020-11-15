@@ -80,6 +80,10 @@ You may do anything that you want with the SimPL text; it's a license form to us
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/SimPL-2.0.svg
+
 ==== Raw JSON
 
 ....
@@ -332,9 +336,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/SimPL-2.0.svg[image,title="dot"]

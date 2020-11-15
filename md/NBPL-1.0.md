@@ -202,6 +202,10 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/NBPL-1.0.txt "OSADL License Checklist")
 
+### Dot Cluster Graph
+
+[../dot/NBPL-1.0.svg](../dot/NBPL-1.0.svg "../dot/NBPL-1.0.svg")
+
 ### Raw JSON
 
     {
@@ -382,10 +386,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/NBPL-1.0.svg "dot")

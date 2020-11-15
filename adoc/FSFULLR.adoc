@@ -41,6 +41,10 @@ modifications, as long as this notice is preserved.
 * https://spdx.org/licenses/FSFULLR.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-unlimited.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/FSFULLR.svg
+
 ==== Raw JSON
 
 ....
@@ -145,9 +149,3 @@ modifications, as long as this notice is preserved.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/FSFULLR.svg[image,title="dot"]

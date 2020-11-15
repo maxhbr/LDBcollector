@@ -103,6 +103,10 @@
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml][finos/OSLC-handbook]]
 
+*** Dot Cluster Graph
+
+[[../dot/Plexus.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -379,9 +383,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/Plexus.svg]]

@@ -66,6 +66,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/info-zip.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/Info-ZIP.svg](../dot/Info-ZIP.svg "../dot/Info-ZIP.svg")
+
 ### Raw JSON
 
     {
@@ -221,10 +225,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Info-ZIP.svg "dot")

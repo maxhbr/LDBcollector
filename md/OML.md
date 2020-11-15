@@ -82,6 +82,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/OML.svg](../dot/OML.svg "../dot/OML.svg")
+
 ### Raw JSON
 
     {
@@ -253,10 +257,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/OML.svg "dot")

@@ -80,6 +80,10 @@ License Checklist]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
+==== Dot Cluster Graph
+
+../dot/libtiff.svg
+
 ==== Raw JSON
 
 ....
@@ -275,9 +279,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/libtiff.svg[image,title="dot"]

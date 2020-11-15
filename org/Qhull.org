@@ -82,6 +82,10 @@
 - [[https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt][OSADL
   License Checklist]]
 
+*** Dot Cluster Graph
+
+[[../dot/Qhull.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -254,9 +258,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/Qhull.svg]]

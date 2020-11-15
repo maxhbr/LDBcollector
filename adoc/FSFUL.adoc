@@ -40,6 +40,10 @@ unlimited permission to copy, distribute and modify it.
 * https://spdx.org/licenses/FSFUL.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-free.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/FSFUL.svg
+
 ==== Raw JSON
 
 ....
@@ -144,9 +148,3 @@ unlimited permission to copy, distribute and modify it.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/FSFUL.svg[image,title="dot"]

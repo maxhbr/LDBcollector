@@ -109,6 +109,10 @@ defined by the Mozilla Public License, v. 2.0.
 License Checklist]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/MPL-2.0-no-copyleft-exception.svg
+
 ==== Raw JSON
 
 ....
@@ -378,9 +382,3 @@ License Checklist]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/MPL-2.0-no-copyleft-exception.svg[image,title="dot"]

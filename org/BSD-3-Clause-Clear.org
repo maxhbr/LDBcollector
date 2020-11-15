@@ -122,6 +122,10 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
 
+*** Dot Cluster Graph
+
+[[../dot/BSD-3-Clause-Clear.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -443,9 +447,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/BSD-3-Clause-Clear.svg]]

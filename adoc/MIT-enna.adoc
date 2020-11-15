@@ -67,6 +67,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enna.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/MIT-enna.svg
+
 ==== Raw JSON
 
 ....
@@ -223,9 +227,3 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/MIT-enna.svg[image,title="dot"]

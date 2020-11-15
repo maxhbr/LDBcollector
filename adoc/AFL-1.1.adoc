@@ -138,6 +138,10 @@ END OF LICENSE.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.1.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/AFL-1.1.svg
+
 ==== Raw JSON
 
 ....
@@ -359,9 +363,3 @@ END OF LICENSE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/AFL-1.1.svg[image,title="dot"]

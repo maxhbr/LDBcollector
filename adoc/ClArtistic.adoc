@@ -185,6 +185,10 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-clarified.yml[Scancode]
 * Override
 
+==== Dot Cluster Graph
+
+../dot/ClArtistic.svg
+
 ==== Raw JSON
 
 ....
@@ -375,9 +379,3 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/ClArtistic.svg[image,title="dot"]

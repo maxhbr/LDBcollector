@@ -87,6 +87,10 @@
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/TCL.yaml][finos/OSLC-handbook]]
 
+*** Dot Cluster Graph
+
+[[../dot/TCL.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -319,9 +323,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/TCL.svg]]

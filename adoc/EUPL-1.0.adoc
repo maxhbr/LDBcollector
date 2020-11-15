@@ -211,6 +211,10 @@ This licence shall be governed by the Belgian law if:
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
+==== Dot Cluster Graph
+
+../dot/EUPL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -418,9 +422,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/EUPL-1.0.svg[image,title="dot"]

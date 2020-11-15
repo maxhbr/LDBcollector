@@ -185,6 +185,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/snia.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/SNIA.svg](../dot/SNIA.svg "../dot/SNIA.svg")
+
 ### Raw JSON
 
     {
@@ -302,10 +306,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/SNIA.svg "dot")

@@ -60,6 +60,10 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mup.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Mup.svg
+
 ==== Raw JSON
 
 ....
@@ -232,9 +236,3 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Mup.svg[image,title="dot"]

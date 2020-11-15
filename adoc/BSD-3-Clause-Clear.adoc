@@ -120,6 +120,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/BSD-3-Clause-Clear.svg
+
 ==== Raw JSON
 
 ....
@@ -441,9 +445,3 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/BSD-3-Clause-Clear.svg[image,title="dot"]

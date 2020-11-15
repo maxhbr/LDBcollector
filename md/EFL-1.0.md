@@ -85,6 +85,10 @@ Raw Data
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
+### Dot Cluster Graph
+
+[../dot/EFL-1.0.svg](../dot/EFL-1.0.svg "../dot/EFL-1.0.svg")
+
 ### Raw JSON
 
     {
@@ -358,10 +362,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/EFL-1.0.svg "dot")

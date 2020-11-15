@@ -351,6 +351,10 @@ subsection 3.2.
 * https://spdx.org/licenses/CERN-OHL-W-2.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cern-ohl-w-2.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/CERN-OHL-W-2.0.svg
+
 ==== Raw JSON
 
 ....
@@ -482,9 +486,3 @@ subsection 3.2.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CERN-OHL-W-2.0.svg[image,title="dot"]

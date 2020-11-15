@@ -170,6 +170,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tapr-ohl-1.0.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/TAPR-OHL-1.0.svg](../dot/TAPR-OHL-1.0.svg "../dot/TAPR-OHL-1.0.svg")
+
 ### Raw JSON
 
     {
@@ -277,10 +281,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/TAPR-OHL-1.0.svg "dot")

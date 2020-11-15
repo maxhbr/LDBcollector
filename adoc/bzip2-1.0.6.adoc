@@ -101,6 +101,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt[OSADL
 License Checklist]
 
+==== Dot Cluster Graph
+
+../dot/bzip2-1.0.6.svg
+
 ==== Raw JSON
 
 ....
@@ -313,9 +317,3 @@ License Checklist]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/bzip2-1.0.6.svg[image,title="dot"]

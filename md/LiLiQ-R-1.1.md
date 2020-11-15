@@ -36,6 +36,10 @@ Raw Data
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
+### Dot Cluster Graph
+
+[../dot/LiLiQ-R-1.1.svg](../dot/LiLiQ-R-1.1.svg "../dot/LiLiQ-R-1.1.svg")
+
 ### Raw JSON
 
     {
@@ -157,10 +161,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/LiLiQ-R-1.1.svg "dot")

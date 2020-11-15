@@ -127,6 +127,10 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/CPOL-1.02.txt[OSADL
 License Checklist]
 
+==== Dot Cluster Graph
+
+../dot/CPOL-1.02.svg
+
 ==== Raw JSON
 
 ....
@@ -243,9 +247,3 @@ License Checklist]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CPOL-1.02.svg[image,title="dot"]

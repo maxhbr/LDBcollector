@@ -72,6 +72,10 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adobe-scl.yml][Scancode]]
 
+*** Dot Cluster Graph
+
+[[../dot/Adobe-2006.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -235,9 +239,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/Adobe-2006.svg]]

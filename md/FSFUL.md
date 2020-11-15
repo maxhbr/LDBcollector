@@ -41,6 +41,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-free.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/FSFUL.svg](../dot/FSFUL.svg "../dot/FSFUL.svg")
+
 ### Raw JSON
 
     {
@@ -143,10 +147,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/FSFUL.svg "dot")

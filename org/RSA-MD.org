@@ -64,6 +64,10 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rsa-md5.yml][Scancode]]
 
+*** Dot Cluster Graph
+
+[[../dot/RSA-MD.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -228,9 +232,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/RSA-MD.svg]]

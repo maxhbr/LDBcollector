@@ -79,6 +79,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/jpnic-idnkit.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/JPNIC.svg](../dot/JPNIC.svg "../dot/JPNIC.svg")
+
 ### Raw JSON
 
     {
@@ -196,10 +200,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/JPNIC.svg "dot")

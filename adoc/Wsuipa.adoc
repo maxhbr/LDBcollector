@@ -54,6 +54,10 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Wsuipa.svg
+
 ==== Raw JSON
 
 ....
@@ -226,9 +230,3 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Wsuipa.svg[image,title="dot"]

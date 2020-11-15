@@ -214,6 +214,10 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml[Scancode]
 * https://opensource.org/licenses/[OpenSourceInitiative]
 
+==== Dot Cluster Graph
+
+../dot/RPL-1.1.svg
+
 ==== Raw JSON
 
 ....
@@ -479,9 +483,3 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/RPL-1.1.svg[image,title="dot"]

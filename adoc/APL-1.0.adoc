@@ -393,6 +393,10 @@ Each Subsequent Contributor (including the Initial Contributor where the Initial
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/APL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -634,9 +638,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/APL-1.0.svg[image,title="dot"]

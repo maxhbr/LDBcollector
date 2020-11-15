@@ -73,6 +73,10 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/Naumen.svg
+
 ==== Raw JSON
 
 ....
@@ -376,9 +380,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Naumen.svg[image,title="dot"]

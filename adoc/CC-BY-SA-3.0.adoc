@@ -416,6 +416,10 @@ Creative Commons Notice
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/CC-BY-SA-3.0.svg
+
 ==== Raw JSON
 
 ....
@@ -642,9 +646,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CC-BY-SA-3.0.svg[image,title="dot"]

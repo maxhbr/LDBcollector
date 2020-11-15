@@ -133,6 +133,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-sa-3.0-at.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/CC-BY-SA-3.0-AT.svg](../dot/CC-BY-SA-3.0-AT.svg "../dot/CC-BY-SA-3.0-AT.svg")
+
 ### Raw JSON
 
     {
@@ -234,10 +238,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/CC-BY-SA-3.0-AT.svg "dot")

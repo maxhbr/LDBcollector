@@ -68,6 +68,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/linux-openib.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/Linux-OpenIB.svg](../dot/Linux-OpenIB.svg "../dot/Linux-OpenIB.svg")
+
 ### Raw JSON
 
     {
@@ -257,10 +261,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Linux-OpenIB.svg "dot")

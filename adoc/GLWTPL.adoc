@@ -61,6 +61,10 @@ Good luck and Godspeed.
 * https://spdx.org/licenses/GLWTPL.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/glwtpl.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/GLWTPL.svg
+
 ==== Raw JSON
 
 ....
@@ -170,9 +174,3 @@ Good luck and Godspeed.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/GLWTPL.svg[image,title="dot"]

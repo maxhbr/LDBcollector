@@ -257,6 +257,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/copyleft-next-0.3.0.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/copyleft-next-0.3.0.svg](../dot/copyleft-next-0.3.0.svg "../dot/copyleft-next-0.3.0.svg")
+
 ### Raw JSON
 
     {
@@ -358,10 +362,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/copyleft-next-0.3.0.svg "dot")

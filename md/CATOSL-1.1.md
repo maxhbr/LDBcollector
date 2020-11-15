@@ -413,6 +413,10 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
+### Dot Cluster Graph
+
+[../dot/CATOSL-1.1.svg](../dot/CATOSL-1.1.svg "../dot/CATOSL-1.1.svg")
+
 ### Raw JSON
 
     {
@@ -669,10 +673,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/CATOSL-1.1.svg "dot")

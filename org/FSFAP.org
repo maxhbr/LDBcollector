@@ -58,6 +58,10 @@
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
 
+*** Dot Cluster Graph
+
+[[../dot/FSFAP.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -247,9 +251,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/FSFAP.svg]]

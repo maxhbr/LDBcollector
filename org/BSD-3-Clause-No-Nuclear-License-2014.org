@@ -84,6 +84,10 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml][Scancode]]
 
+*** Dot Cluster Graph
+
+[[../dot/BSD-3-Clause-No-Nuclear-License-2014.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -256,9 +260,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/BSD-3-Clause-No-Nuclear-License-2014.svg]]

@@ -68,6 +68,10 @@ The views and conclusions contained in the software and documentation are those 
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nrl.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/NRL.svg
+
 ==== Raw JSON
 
 ....
@@ -224,9 +228,3 @@ The views and conclusions contained in the software and documentation are those 
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/NRL.svg[image,title="dot"]

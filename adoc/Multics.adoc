@@ -66,6 +66,10 @@ All Rights Reserved
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/Multics.svg
+
 ==== Raw JSON
 
 ....
@@ -368,9 +372,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Multics.svg[image,title="dot"]

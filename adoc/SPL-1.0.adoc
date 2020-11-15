@@ -563,6 +563,10 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/SPL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -887,9 +891,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/SPL-1.0.svg[image,title="dot"]

@@ -53,6 +53,10 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/diffmark.svg
+
 ==== Raw JSON
 
 ....
@@ -226,9 +230,3 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/diffmark.svg[image,title="dot"]

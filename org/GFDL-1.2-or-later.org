@@ -45,6 +45,10 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
 
+*** Dot Cluster Graph
+
+[[../dot/GFDL-1.2-or-later.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -214,9 +218,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/GFDL-1.2-or-later.svg]]

@@ -103,6 +103,10 @@ be directed to site-policy@w3.org.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
+==== Dot Cluster Graph
+
+../dot/W3C-19980720.svg
+
 ==== Raw JSON
 
 ....
@@ -297,9 +301,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/W3C-19980720.svg[image,title="dot"]

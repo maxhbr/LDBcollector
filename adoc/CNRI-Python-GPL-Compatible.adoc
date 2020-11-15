@@ -66,6 +66,10 @@ ACCEPT
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.1.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/CNRI-Python-GPL-Compatible.svg
+
 ==== Raw JSON
 
 ....
@@ -223,9 +227,3 @@ ACCEPT
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CNRI-Python-GPL-Compatible.svg[image,title="dot"]

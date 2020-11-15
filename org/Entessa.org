@@ -116,6 +116,10 @@
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
 
+*** Dot Cluster Graph
+
+[[../dot/Entessa.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -494,9 +498,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/Entessa.svg]]

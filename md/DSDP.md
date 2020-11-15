@@ -86,6 +86,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dsdp.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/DSDP.svg](../dot/DSDP.svg "../dot/DSDP.svg")
+
 ### Raw JSON
 
     {
@@ -240,10 +244,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/DSDP.svg "dot")

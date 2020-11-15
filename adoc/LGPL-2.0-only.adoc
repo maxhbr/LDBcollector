@@ -542,6 +542,10 @@ That's all there is to it!
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/LGPL-2.0-only.svg
+
 ==== Raw JSON
 
 ....
@@ -926,9 +930,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/LGPL-2.0-only.svg[image,title="dot"]

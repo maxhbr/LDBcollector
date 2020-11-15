@@ -25,6 +25,10 @@
 
 - [[https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html][SPDX]]
 
+*** Dot Cluster Graph
+
+[[../dot/GFDL-1.1-no-invariants-or-later.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -78,9 +82,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/GFDL-1.1-no-invariants-or-later.svg]]

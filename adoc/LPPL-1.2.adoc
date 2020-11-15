@@ -342,6 +342,10 @@ Defining What Constitutes The Program
 * https://spdx.org/licenses/LPPL-1.2.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.2.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/LPPL-1.2.svg
+
 ==== Raw JSON
 
 ....
@@ -462,9 +466,3 @@ Defining What Constitutes The Program
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/LPPL-1.2.svg[image,title="dot"]

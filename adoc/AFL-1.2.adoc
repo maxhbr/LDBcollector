@@ -137,6 +137,10 @@ permission of its copyright owner.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.2.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/AFL-1.2.svg
+
 ==== Raw JSON
 
 ....
@@ -350,9 +354,3 @@ permission of its copyright owner.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/AFL-1.2.svg[image,title="dot"]

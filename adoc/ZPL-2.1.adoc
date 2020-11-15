@@ -92,6 +92,10 @@ OF SUCH DAMAGE.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
+==== Dot Cluster Graph
+
+../dot/ZPL-2.1.svg
+
 ==== Raw JSON
 
 ....
@@ -326,9 +330,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/ZPL-2.1.svg[image,title="dot"]

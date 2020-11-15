@@ -140,6 +140,10 @@ License Checklist]
 Knowledge International]
 * Override
 
+==== Dot Cluster Graph
+
+../dot/BSD-2-Clause.svg
+
 ==== Raw JSON
 
 ....
@@ -663,9 +667,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/BSD-2-Clause.svg[image,title="dot"]

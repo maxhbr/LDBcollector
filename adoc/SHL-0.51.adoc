@@ -119,6 +119,10 @@ Copyright [yyyy] [name of copyright owner] Copyright and related rights are lice
 * https://spdx.org/licenses/SHL-0.51.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/shl-0.51.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/SHL-0.51.svg
+
 ==== Raw JSON
 
 ....
@@ -229,9 +233,3 @@ Copyright [yyyy] [name of copyright owner] Copyright and related rights are lice
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/SHL-0.51.svg[image,title="dot"]

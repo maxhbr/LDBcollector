@@ -85,6 +85,10 @@ Raw Data
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/0BSD.yaml "finos/OSLC-handbook")
 
+### Dot Cluster Graph
+
+[../dot/0BSD.svg](../dot/0BSD.svg "../dot/0BSD.svg")
+
 ### Raw JSON
 
     {
@@ -387,10 +391,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/0BSD.svg "dot")

@@ -108,6 +108,10 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
+### Dot Cluster Graph
+
+[../dot/EFL-2.0.svg](../dot/EFL-2.0.svg "../dot/EFL-2.0.svg")
+
 ### Raw JSON
 
     {
@@ -464,10 +468,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/EFL-2.0.svg "dot")

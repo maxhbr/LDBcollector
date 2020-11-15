@@ -71,6 +71,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/netcdf.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/NetCDF.svg](../dot/NetCDF.svg "../dot/NetCDF.svg")
+
 ### Raw JSON
 
     {
@@ -226,10 +230,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/NetCDF.svg "dot")

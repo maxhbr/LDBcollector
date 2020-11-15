@@ -82,6 +82,10 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml][Scancode]]
 
+*** Dot Cluster Graph
+
+[[../dot/BSD-3-Clause-No-Nuclear-Warranty.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -249,9 +253,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/BSD-3-Clause-No-Nuclear-Warranty.svg]]

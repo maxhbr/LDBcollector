@@ -139,6 +139,10 @@
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
 
+*** Dot Cluster Graph
+
+[[../dot/IPA.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -390,9 +394,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/IPA.svg]]

@@ -206,6 +206,10 @@ forth below, the parties agree as follows:
 * https://spdx.org/licenses/YPL-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/YPL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -310,9 +314,3 @@ forth below, the parties agree as follows:
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/YPL-1.0.svg[image,title="dot"]

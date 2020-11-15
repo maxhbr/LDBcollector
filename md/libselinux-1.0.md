@@ -59,6 +59,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/selinux-nsa-declaration-1.0.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/libselinux-1.0.svg](../dot/libselinux-1.0.svg "../dot/libselinux-1.0.svg")
+
 ### Raw JSON
 
     {
@@ -161,10 +165,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/libselinux-1.0.svg "dot")

@@ -120,6 +120,10 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
+### Dot Cluster Graph
+
+[../dot/MPL-2.0-no-copyleft-exception.svg](../dot/MPL-2.0-no-copyleft-exception.svg "../dot/MPL-2.0-no-copyleft-exception.svg")
+
 ### Raw JSON
 
     {
@@ -387,10 +391,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/MPL-2.0-no-copyleft-exception.svg "dot")

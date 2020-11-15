@@ -51,6 +51,10 @@ Permission is granted to anyone to use this software for any purpose on any comp
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/newsletr.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Newsletr.svg
+
 ==== Raw JSON
 
 ....
@@ -223,9 +227,3 @@ Permission is granted to anyone to use this software for any purpose on any comp
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Newsletr.svg[image,title="dot"]

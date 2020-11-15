@@ -69,6 +69,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/henry-spencer-1999.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/Spencer-99.svg](../dot/Spencer-99.svg "../dot/Spencer-99.svg")
+
 ### Raw JSON
 
     {
@@ -224,10 +228,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/Spencer-99.svg "dot")

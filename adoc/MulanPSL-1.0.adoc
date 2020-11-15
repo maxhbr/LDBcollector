@@ -155,6 +155,10 @@ See the Mulan PSL v1 for more details.
 * https://spdx.org/licenses/MulanPSL-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mulanpsl-1.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/MulanPSL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -268,9 +272,3 @@ See the Mulan PSL v1 for more details.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/MulanPSL-1.0.svg[image,title="dot"]

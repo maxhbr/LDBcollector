@@ -127,6 +127,10 @@ Raw Data
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml "finos/OSLC-handbook")
 
+### Dot Cluster Graph
+
+[../dot/PHP-3.01.svg](../dot/PHP-3.01.svg "../dot/PHP-3.01.svg")
+
 ### Raw JSON
 
     {
@@ -404,10 +408,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/PHP-3.01.svg "dot")

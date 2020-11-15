@@ -99,6 +99,10 @@ SOFTWARE.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/indiana-extreme-1.2.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/xpp.svg
+
 ==== Raw JSON
 
 ....
@@ -256,9 +260,3 @@ SOFTWARE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/xpp.svg[image,title="dot"]

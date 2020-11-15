@@ -94,6 +94,10 @@ distributed verbatim copies of this document is granted.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.5.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/OLDAP-2.5.svg
+
 ==== Raw JSON
 
 ....
@@ -267,9 +271,3 @@ distributed verbatim copies of this document is granted.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/OLDAP-2.5.svg[image,title="dot"]

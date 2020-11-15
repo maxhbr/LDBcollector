@@ -56,6 +56,10 @@
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml][Scancode]]
 
+*** Dot Cluster Graph
+
+[[../dot/Wsuipa.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -228,9 +232,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/Wsuipa.svg]]

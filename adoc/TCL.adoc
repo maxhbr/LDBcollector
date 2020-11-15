@@ -83,6 +83,10 @@ terms specified in this license.
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tcl.yml[Scancode]
 * https://github.com/finos/OSLC-handbook/blob/master/src/TCL.yaml[finos/OSLC-handbook]
 
+==== Dot Cluster Graph
+
+../dot/TCL.svg
+
 ==== Raw JSON
 
 ....
@@ -315,9 +319,3 @@ terms specified in this license.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/TCL.svg[image,title="dot"]

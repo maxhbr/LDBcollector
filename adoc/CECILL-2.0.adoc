@@ -546,6 +546,10 @@ Version 2.0 dated 2006-09-05.
 * https://spdx.org/licenses/CECILL-2.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-2.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/CECILL-2.0.svg
+
 ==== Raw JSON
 
 ....
@@ -666,9 +670,3 @@ Version 2.0 dated 2006-09-05.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CECILL-2.0.svg[image,title="dot"]

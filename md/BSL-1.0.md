@@ -171,6 +171,10 @@ Raw Data
 
 -   Override
 
+### Dot Cluster Graph
+
+[../dot/BSL-1.0.svg](../dot/BSL-1.0.svg "../dot/BSL-1.0.svg")
+
 ### Raw JSON
 
     {
@@ -728,10 +732,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/BSL-1.0.svg "dot")

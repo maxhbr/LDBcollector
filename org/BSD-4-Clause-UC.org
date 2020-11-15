@@ -164,6 +164,10 @@
 
 - Override
 
+*** Dot Cluster Graph
+
+[[../dot/BSD-4-Clause-UC.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -520,9 +524,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/BSD-4-Clause-UC.svg]]

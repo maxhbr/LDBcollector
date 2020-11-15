@@ -117,6 +117,10 @@ Raw Data
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
 
+### Dot Cluster Graph
+
+[../dot/ECL-1.0.svg](../dot/ECL-1.0.svg "../dot/ECL-1.0.svg")
+
 ### Raw JSON
 
     {
@@ -402,10 +406,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/ECL-1.0.svg "dot")

@@ -289,6 +289,10 @@ DAMAGES.
 * https://spdx.org/licenses/Glide.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/glide.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Glide.svg
+
 ==== Raw JSON
 
 ....
@@ -393,9 +397,3 @@ DAMAGES.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Glide.svg[image,title="dot"]

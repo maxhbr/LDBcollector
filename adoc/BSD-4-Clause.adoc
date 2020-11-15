@@ -166,6 +166,10 @@ Policy]
 * Override
 * Override
 
+==== Dot Cluster Graph
+
+../dot/BSD-4-Clause.svg
+
 ==== Raw JSON
 
 ....
@@ -724,9 +728,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/BSD-4-Clause.svg[image,title="dot"]

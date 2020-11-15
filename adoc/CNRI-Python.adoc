@@ -79,6 +79,10 @@ Licensee. Alternately, in lieu of CNRI's License Agreement, Licensee may substit
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/CNRI-Python.svg
+
 ==== Raw JSON
 
 ....
@@ -390,9 +394,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CNRI-Python.svg[image,title="dot"]

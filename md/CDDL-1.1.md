@@ -147,6 +147,10 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
+### Dot Cluster Graph
+
+[../dot/CDDL-1.1.svg](../dot/CDDL-1.1.svg "../dot/CDDL-1.1.svg")
+
 ### Raw JSON
 
     {
@@ -467,10 +471,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/CDDL-1.1.svg "dot")

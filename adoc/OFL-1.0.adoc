@@ -137,6 +137,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml[Scancode]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/OFL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -293,9 +297,3 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/OFL-1.0.svg[image,title="dot"]

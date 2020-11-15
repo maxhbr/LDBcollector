@@ -147,6 +147,10 @@ End of Schedule "B"
 * https://spdx.org/licenses/OCCT-PL.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/occt-pl.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/OCCT-PL.svg
+
 ==== Raw JSON
 
 ....
@@ -250,9 +254,3 @@ End of Schedule "B"
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/OCCT-PL.svg[image,title="dot"]

@@ -86,6 +86,10 @@ GOVERNMENT LICENSE
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpich.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/mpich2.svg
+
 ==== Raw JSON
 
 ....
@@ -265,9 +269,3 @@ GOVERNMENT LICENSE
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/mpich2.svg[image,title="dot"]

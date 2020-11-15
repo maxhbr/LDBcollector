@@ -45,6 +45,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psf-2.0.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/PSF-2.0.svg](../dot/PSF-2.0.svg "../dot/PSF-2.0.svg")
+
 ### Raw JSON
 
     {
@@ -146,10 +150,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/PSF-2.0.svg "dot")

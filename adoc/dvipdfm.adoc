@@ -44,6 +44,10 @@ complete and unchanged* distribution of these files.
 * https://spdx.org/licenses/dvipdfm.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/dvipdfm.svg
+
 ==== Raw JSON
 
 ....
@@ -163,9 +167,3 @@ complete and unchanged* distribution of these files.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/dvipdfm.svg[image,title="dot"]

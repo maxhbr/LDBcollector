@@ -173,6 +173,10 @@ The text of this license is released under the Creative Commons Attribution-Shar
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cal-1.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/CAL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -366,9 +370,3 @@ The text of this license is released under the Creative Commons Attribution-Shar
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CAL-1.0.svg[image,title="dot"]

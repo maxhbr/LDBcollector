@@ -229,6 +229,10 @@ Without prejudice to specific agreement between parties,
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
+==== Dot Cluster Graph
+
+../dot/EUPL-1.2.svg
+
 ==== Raw JSON
 
 ....
@@ -736,9 +740,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/EUPL-1.2.svg[image,title="dot"]

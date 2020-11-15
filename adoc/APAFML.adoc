@@ -49,6 +49,10 @@ obligation to support the use of the AFM files.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apafml.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/APAFML.svg
+
 ==== Raw JSON
 
 ....
@@ -205,9 +209,3 @@ obligation to support the use of the AFM files.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/APAFML.svg[image,title="dot"]

@@ -133,6 +133,10 @@ Article 5 (Governing Law)
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/IPA.svg
+
 ==== Raw JSON
 
 ....
@@ -384,9 +388,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/IPA.svg[image,title="dot"]

@@ -184,6 +184,10 @@ Contributor(s):  ."
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/RSCPL.svg
+
 ==== Raw JSON
 
 ....
@@ -457,9 +461,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/RSCPL.svg[image,title="dot"]

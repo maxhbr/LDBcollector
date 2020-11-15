@@ -68,6 +68,10 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
 * https://spdx.org/licenses/EPICS.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epics.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/EPICS.svg
+
 ==== Raw JSON
 
 ....
@@ -177,9 +181,3 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/EPICS.svg[image,title="dot"]

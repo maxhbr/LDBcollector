@@ -93,6 +93,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml[Scancode]
 * https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml[finos/OSLC-handbook]
 
+==== Dot Cluster Graph
+
+../dot/Plexus.svg
+
 ==== Raw JSON
 
 ....
@@ -369,9 +373,3 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Plexus.svg[image,title="dot"]

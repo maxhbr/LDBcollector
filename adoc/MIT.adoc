@@ -152,6 +152,10 @@ Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
+==== Dot Cluster Graph
+
+../dot/MIT.svg
+
 ==== Raw JSON
 
 ....
@@ -844,9 +848,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/MIT.svg[image,title="dot"]

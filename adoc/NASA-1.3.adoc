@@ -162,6 +162,10 @@ F. Point of Contact: Any Recipient contact with Government Agency is to be direc
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 
+==== Dot Cluster Graph
+
+../dot/NASA-1.3.svg
+
 ==== Raw JSON
 
 ....
@@ -484,9 +488,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/NASA-1.3.svg[image,title="dot"]

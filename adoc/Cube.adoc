@@ -67,6 +67,10 @@ additional clause specific to Cube:
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cube.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Cube.svg
+
 ==== Raw JSON
 
 ....
@@ -223,9 +227,3 @@ additional clause specific to Cube:
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Cube.svg[image,title="dot"]

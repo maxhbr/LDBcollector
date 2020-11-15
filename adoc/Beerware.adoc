@@ -58,6 +58,10 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
+==== Dot Cluster Graph
+
+../dot/Beerware.svg
+
 ==== Raw JSON
 
 ....
@@ -303,9 +307,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Beerware.svg[image,title="dot"]

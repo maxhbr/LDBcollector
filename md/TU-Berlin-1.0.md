@@ -57,6 +57,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/TU-Berlin-1.0.svg](../dot/TU-Berlin-1.0.svg "../dot/TU-Berlin-1.0.svg")
+
 ### Raw JSON
 
     {
@@ -227,10 +231,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/TU-Berlin-1.0.svg "dot")

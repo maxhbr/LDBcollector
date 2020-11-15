@@ -129,6 +129,10 @@
 - [[https://www.osadl.org/fileadmin/checklists/unreflicenses/CPOL-1.02.txt][OSADL
   License Checklist]]
 
+*** Dot Cluster Graph
+
+[[../dot/CPOL-1.02.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -245,9 +249,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/CPOL-1.02.svg]]

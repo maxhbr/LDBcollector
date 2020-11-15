@@ -41,6 +41,10 @@ program or documentation which mentions my name and the URL shown above.
 * https://spdx.org/licenses/Glulxe.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/glulxe.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Glulxe.svg
+
 ==== Raw JSON
 
 ....
@@ -144,9 +148,3 @@ program or documentation which mentions my name and the URL shown above.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Glulxe.svg[image,title="dot"]

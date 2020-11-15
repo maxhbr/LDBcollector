@@ -66,6 +66,10 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/henry-spencer-1999.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Spencer-99.svg
+
 ==== Raw JSON
 
 ....
@@ -223,9 +227,3 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Spencer-99.svg[image,title="dot"]

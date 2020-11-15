@@ -30,6 +30,10 @@
 
 - [[https://spdx.org/licenses/LiLiQ-Rplus-1.1.html][SPDX]]
 
+*** Dot Cluster Graph
+
+[[../dot/LiLiQ-Rplus-1.1.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -110,9 +114,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/LiLiQ-Rplus-1.1.svg]]

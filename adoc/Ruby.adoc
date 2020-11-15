@@ -110,6 +110,10 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 
+==== Dot Cluster Graph
+
+../dot/Ruby.svg
+
 ==== Raw JSON
 
 ....
@@ -318,9 +322,3 @@ Policy]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Ruby.svg[image,title="dot"]

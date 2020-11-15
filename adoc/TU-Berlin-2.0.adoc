@@ -66,6 +66,10 @@ WARRANTY FOR THIS SOFTWARE.
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin-2.0.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/TU-Berlin-2.0.svg
+
 ==== Raw JSON
 
 ....
@@ -229,9 +233,3 @@ WARRANTY FOR THIS SOFTWARE.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/TU-Berlin-2.0.svg[image,title="dot"]

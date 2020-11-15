@@ -108,6 +108,10 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt "OSADL License Checklist")
 
+### Dot Cluster Graph
+
+[../dot/bzip2-1.0.6.svg](../dot/bzip2-1.0.6.svg "../dot/bzip2-1.0.6.svg")
+
 ### Raw JSON
 
     {
@@ -318,10 +322,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/bzip2-1.0.6.svg "dot")

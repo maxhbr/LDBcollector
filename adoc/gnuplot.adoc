@@ -64,6 +64,10 @@ extent permitted by applicable law.
 * https://spdx.org/licenses/gnuplot.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gnuplot.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/gnuplot.svg
+
 ==== Raw JSON
 
 ....
@@ -173,9 +177,3 @@ extent permitted by applicable law.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/gnuplot.svg[image,title="dot"]

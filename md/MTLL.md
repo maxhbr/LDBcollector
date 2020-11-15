@@ -71,6 +71,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mtll.yml "Scancode")
 
+### Dot Cluster Graph
+
+[../dot/MTLL.svg](../dot/MTLL.svg "../dot/MTLL.svg")
+
 ### Raw JSON
 
     {
@@ -241,10 +245,3 @@ Raw Data
             ]
         ]
     }
-
-------------------------------------------------------------------------
-
-Dot Cluster Graph
------------------
-
-![](../dot/MTLL.svg "dot")

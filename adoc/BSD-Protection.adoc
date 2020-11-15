@@ -171,6 +171,10 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-protection.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/BSD-Protection.svg
+
 ==== Raw JSON
 
 ....
@@ -331,9 +335,3 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/BSD-Protection.svg[image,title="dot"]

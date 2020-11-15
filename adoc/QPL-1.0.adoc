@@ -128,6 +128,10 @@ Policy]
 Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 
+==== Dot Cluster Graph
+
+../dot/QPL-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -544,9 +548,3 @@ Knowledge International]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/QPL-1.0.svg[image,title="dot"]

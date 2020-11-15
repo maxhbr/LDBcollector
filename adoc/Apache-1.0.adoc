@@ -132,6 +132,10 @@ License Checklist]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 
+==== Dot Cluster Graph
+
+../dot/Apache-1.0.svg
+
 ==== Raw JSON
 
 ....
@@ -358,9 +362,3 @@ License Checklist]
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Apache-1.0.svg[image,title="dot"]

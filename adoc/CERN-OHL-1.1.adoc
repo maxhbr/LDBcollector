@@ -114,6 +114,10 @@ A Licensee may at the same time be a Licensor, and vice versa.
 * https://spdx.org/licenses/CERN-OHL-1.1.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cern-ohl-1.1.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/CERN-OHL-1.1.svg
+
 ==== Raw JSON
 
 ....
@@ -224,9 +228,3 @@ A Licensee may at the same time be a Licensor, and vice versa.
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/CERN-OHL-1.1.svg[image,title="dot"]

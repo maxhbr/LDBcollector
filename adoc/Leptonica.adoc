@@ -48,6 +48,10 @@ No author or distributor accepts responsibility to anyone for the consequences o
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/leptonica.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Leptonica.svg
+
 ==== Raw JSON
 
 ....
@@ -204,9 +208,3 @@ No author or distributor accepts responsibility to anyone for the consequences o
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Leptonica.svg[image,title="dot"]

@@ -73,6 +73,10 @@ $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1
 * https://spdx.org/licenses/Sendmail-8.23.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail-8.23.yml[Scancode]
 
+==== Dot Cluster Graph
+
+../dot/Sendmail-8.23.svg
+
 ==== Raw JSON
 
 ....
@@ -196,9 +200,3 @@ $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1
     ]
 }
 ....
-
-'''''
-
-=== Dot Cluster Graph
-
-image:../dot/Sendmail-8.23.svg[image,title="dot"]

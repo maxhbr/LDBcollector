@@ -125,6 +125,10 @@
 - [[https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt][OSADL
   License Checklist]]
 
+*** Dot Cluster Graph
+
+[[../dot/BSD-2-Clause-Patent.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -349,9 +353,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/BSD-2-Clause-Patent.svg]]

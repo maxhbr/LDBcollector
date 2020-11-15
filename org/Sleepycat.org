@@ -115,6 +115,10 @@
 
 - Override
 
+*** Dot Cluster Graph
+
+[[../dot/Sleepycat.svg]]
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -530,9 +534,3 @@
       ]
   }
 #+END_EXAMPLE
-
---------------
-
-** Dot Cluster Graph
-
-[[../dot/Sleepycat.svg]]
