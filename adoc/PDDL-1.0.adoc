@@ -169,10 +169,14 @@ liable for, and expressly excludes, all liability for loss or damage however and
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/PDDL-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/pddl-1.0.yml[Scancode]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
+
+==== Raw JSON
 
 ....
 {

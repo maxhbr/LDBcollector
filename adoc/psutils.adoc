@@ -67,9 +67,13 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/psutils.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psutils.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

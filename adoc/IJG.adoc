@@ -143,11 +143,15 @@ We are required to state that
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/IJG.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ijg.yml[Scancode]
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt[OSADL
 License Checklist]
+
+==== Raw JSON
 
 ....
 {

@@ -74,6 +74,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/EFL-1.0.html "SPDX")
 
 -   [BlueOak License
@@ -83,7 +85,7 @@ Raw Data
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

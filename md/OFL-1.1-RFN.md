@@ -26,9 +26,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/OFL-1.1-RFN.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

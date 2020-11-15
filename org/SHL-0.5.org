@@ -155,9 +155,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/SHL-0.5.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/shl-0.5.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

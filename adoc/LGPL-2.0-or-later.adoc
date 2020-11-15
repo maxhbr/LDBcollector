@@ -62,6 +62,8 @@ Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/LGPL-2.0-or-later.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0-plus.yml[Scancode]
@@ -69,6 +71,8 @@ Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+
+==== Raw JSON
 
 ....
 {

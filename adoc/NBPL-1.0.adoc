@@ -191,11 +191,15 @@ The End
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/NBPL-1.0.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nbpl-1.0.yml[Scancode]
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/NBPL-1.0.txt[OSADL
 License Checklist]
+
+==== Raw JSON
 
 ....
 {

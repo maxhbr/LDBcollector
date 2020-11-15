@@ -67,11 +67,13 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/libpng-2.0.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/libpng-v2.yml "Scancode")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

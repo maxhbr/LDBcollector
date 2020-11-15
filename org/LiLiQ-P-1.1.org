@@ -106,11 +106,15 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/LiLiQ-P-1.1.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/liliq-p-1.1.yml][Scancode]]
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

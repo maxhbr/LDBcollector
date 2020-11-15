@@ -113,6 +113,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Unicode-DFS-2015.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -124,6 +126,8 @@
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

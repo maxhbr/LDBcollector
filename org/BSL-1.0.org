@@ -131,6 +131,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/BSL-1.0.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -160,6 +162,8 @@
 - Override
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

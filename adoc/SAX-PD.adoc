@@ -86,8 +86,12 @@ David Megginson, Megginson Technologies Ltd.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/SAX-PD.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sax-pd.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

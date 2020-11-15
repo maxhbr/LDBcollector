@@ -138,6 +138,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/OGL-UK-1.0.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ogl-uk-1.0.yml "Scancode")
@@ -145,7 +147,7 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

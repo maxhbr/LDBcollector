@@ -973,6 +973,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/GPL-3.0-only.html][SPDX]]
 
 - [[https://spdx.org/licenses/GPL-3.0-or-later.html][SPDX]]
@@ -1031,6 +1033,8 @@
 - Override
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

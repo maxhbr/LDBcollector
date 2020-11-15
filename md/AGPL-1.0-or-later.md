@@ -61,6 +61,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/AGPL-1.0-or-later.html "SPDX")
 
 -   [BlueOak License
@@ -68,7 +70,7 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml "Scancode")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

@@ -213,6 +213,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/LGPL-2.1-or-later.html "SPDX")
 
 -   [BlueOak License
@@ -233,7 +235,7 @@ Raw Data
 
 -   Override
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

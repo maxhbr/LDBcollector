@@ -57,6 +57,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/GPL-1.0-or-later.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml][Scancode]]
@@ -68,6 +70,8 @@
   Guidelines]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

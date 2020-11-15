@@ -64,11 +64,15 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Adobe-2006.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adobe-scl.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

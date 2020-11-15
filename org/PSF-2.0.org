@@ -20,7 +20,11 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/PSF-2.0.html][SPDX]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

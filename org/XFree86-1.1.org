@@ -100,6 +100,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/XFree86-1.1.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -110,6 +112,8 @@
   License Checklist]]
 
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

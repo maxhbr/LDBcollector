@@ -129,6 +129,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/BSD-2-Clause.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -153,6 +155,8 @@
   Knowledge International]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

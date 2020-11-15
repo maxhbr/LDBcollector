@@ -49,11 +49,13 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Eurosym.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eurosym.yml "Scancode")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

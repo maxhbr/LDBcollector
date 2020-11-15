@@ -51,8 +51,12 @@ This software is provided "as is" without express or implied warranty.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/GL2PS.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gl2ps.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

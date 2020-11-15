@@ -252,9 +252,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/copyleft-next-0.3.0.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/copyleft-next-0.3.0.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

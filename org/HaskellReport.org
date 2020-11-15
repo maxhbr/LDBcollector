@@ -39,9 +39,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/HaskellReport.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/haskell-report.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

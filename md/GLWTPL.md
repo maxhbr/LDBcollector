@@ -21,9 +21,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/GLWTPL.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

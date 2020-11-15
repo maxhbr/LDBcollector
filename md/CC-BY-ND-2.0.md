@@ -89,6 +89,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-ND-2.0.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nd-2.0.yml "Scancode")
@@ -96,7 +98,7 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

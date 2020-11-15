@@ -66,6 +66,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Naumen.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -78,6 +80,8 @@
 
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

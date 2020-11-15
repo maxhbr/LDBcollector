@@ -75,6 +75,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/curl.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -85,6 +87,8 @@
   License Checklist]]
 
 - [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

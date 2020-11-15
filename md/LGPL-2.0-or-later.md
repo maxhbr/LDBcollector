@@ -67,6 +67,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/LGPL-2.0-or-later.html "SPDX")
 
 -   [BlueOak License
@@ -82,7 +84,7 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

@@ -472,6 +472,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/AGPL-3.0-only.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -506,6 +508,8 @@
   Guidelines]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -83,12 +83,16 @@ goods and services.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Intel.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml[Scancode]
 * https://opensource.org/licenses/[OpenSourceInitiative]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
+
+==== Raw JSON
 
 ....
 {

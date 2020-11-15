@@ -143,6 +143,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/IJG.html "SPDX")
 
 -   [BlueOak License
@@ -153,7 +155,7 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt "OSADL License Checklist")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

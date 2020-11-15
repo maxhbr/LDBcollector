@@ -72,9 +72,13 @@ parrt@antlr.org
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/ANTLR-PD.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

@@ -89,12 +89,16 @@ misrepresented as being the original software.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/zlib-acknowledgement.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml[Scancode]
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/zlib-acknowledgement.txt[OSADL
 License Checklist]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+
+==== Raw JSON
 
 ....
 {

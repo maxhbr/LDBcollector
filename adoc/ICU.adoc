@@ -87,6 +87,8 @@ X Window System is a trademark of X Consortium, Inc.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/ICU.html[SPDX]
 * https://spdx.org/licenses/X11.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -98,6 +100,8 @@ License Checklist]
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/X11.txt[OSADL
 License Checklist]
 * https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
+
+==== Raw JSON
 
 ....
 {

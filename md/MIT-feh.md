@@ -56,6 +56,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/MIT-feh.html "SPDX")
 
 -   [BlueOak License
@@ -63,7 +65,7 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-ack.yml "Scancode")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

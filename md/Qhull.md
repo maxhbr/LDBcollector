@@ -69,6 +69,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Qhull.html "SPDX")
 
 -   [BlueOak License
@@ -79,7 +81,7 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt "OSADL License Checklist")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

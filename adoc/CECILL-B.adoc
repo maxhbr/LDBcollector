@@ -287,9 +287,13 @@ Version 1.0 du 2006-09-05."
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/CECILL-B.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

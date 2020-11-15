@@ -77,6 +77,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/0BSD.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -91,6 +93,8 @@
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/0BSD.yaml][finos/OSLC-handbook]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

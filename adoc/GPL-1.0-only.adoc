@@ -301,12 +301,16 @@ That's all there is to it!
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/GPL-1.0-only.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0.yml[Scancode]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
+
+==== Raw JSON
 
 ....
 {

@@ -207,6 +207,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/EUPL-1.0.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -215,6 +217,8 @@
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -123,9 +123,13 @@ Cette licence est rédigée en référence au droit français et à la Conventio
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/LAL-1.3.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lal-1.3.yml[Scancode]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+
+==== Raw JSON
 
 ....
 {

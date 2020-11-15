@@ -38,9 +38,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/dvipdfm.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

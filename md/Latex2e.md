@@ -44,11 +44,13 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Latex2e.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml "Scancode")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

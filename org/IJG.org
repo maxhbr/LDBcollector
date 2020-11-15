@@ -146,6 +146,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/IJG.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -154,6 +156,8 @@
 
 - [[https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt][OSADL
   License Checklist]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

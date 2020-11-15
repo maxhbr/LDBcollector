@@ -139,6 +139,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/MIT.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -169,6 +171,8 @@
   Guidelines]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

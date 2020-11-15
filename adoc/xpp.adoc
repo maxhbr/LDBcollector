@@ -93,9 +93,13 @@ SOFTWARE.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/xpp.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/indiana-extreme-1.2.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

@@ -159,6 +159,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Libpng.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -169,6 +171,8 @@
   License Checklist]]
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml][finos/OSLC-handbook]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

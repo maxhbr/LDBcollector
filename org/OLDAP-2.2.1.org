@@ -91,11 +91,15 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/OLDAP-2.2.1.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.2.1.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

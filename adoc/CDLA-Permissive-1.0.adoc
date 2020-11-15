@@ -118,8 +118,12 @@ Section 7.  Miscellaneous
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/CDLA-Permissive-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cdla-permissive-1.0.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

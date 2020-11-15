@@ -60,8 +60,12 @@ Copyright © 1997-2002 National Security Agency
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/SMPPL.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/smppl.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

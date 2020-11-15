@@ -125,6 +125,8 @@ SUCH DAMAGE.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Apache-1.1.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml[Scancode]
@@ -138,6 +140,8 @@ Policy]
 Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
+
+==== Raw JSON
 
 ....
 {

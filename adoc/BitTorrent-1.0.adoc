@@ -364,8 +364,12 @@ or implied.  See the License for the specific language governing rights and limi
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/BitTorrent-1.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.0.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

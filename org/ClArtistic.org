@@ -181,6 +181,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/ClArtistic.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -188,6 +190,8 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-clarified.yml][Scancode]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

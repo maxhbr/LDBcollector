@@ -165,9 +165,13 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/BSD-Protection.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-protection.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

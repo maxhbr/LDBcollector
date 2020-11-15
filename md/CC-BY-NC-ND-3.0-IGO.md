@@ -21,9 +21,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

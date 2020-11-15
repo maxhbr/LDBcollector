@@ -38,6 +38,8 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/GFDL-1.1-or-later.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1-plus.yml "Scancode")
@@ -45,7 +47,7 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

@@ -116,6 +116,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/PHP-3.01.html "SPDX")
 
 -   [BlueOak License
@@ -125,7 +127,7 @@ Raw Data
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml "finos/OSLC-handbook")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

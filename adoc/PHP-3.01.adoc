@@ -113,10 +113,14 @@ PHP includes the Zend Engine, freely available at
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/PHP-3.01.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml[Scancode]
 * https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml[finos/OSLC-handbook]
+
+==== Raw JSON
 
 ....
 {

@@ -56,9 +56,13 @@ sources, credits must appear in the documentation.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Spencer-94.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hs-regexp.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

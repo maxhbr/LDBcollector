@@ -134,6 +134,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/CDDL-1.1.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -144,6 +146,8 @@
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

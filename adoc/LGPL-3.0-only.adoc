@@ -460,6 +460,8 @@ Library.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/LGPL-3.0-only.html[SPDX]
 * https://spdx.org/licenses/LGPL-3.0-or-later.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -491,6 +493,8 @@ Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 * Override
+
+==== Raw JSON
 
 ....
 {

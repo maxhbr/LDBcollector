@@ -153,6 +153,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX")
 
 -   [BlueOak License
@@ -188,7 +190,7 @@ Raw Data
 
 -   Override
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

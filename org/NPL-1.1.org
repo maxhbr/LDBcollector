@@ -86,6 +86,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/NPL-1.1.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/npl-1.1.yml][Scancode]]
@@ -94,6 +96,8 @@
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

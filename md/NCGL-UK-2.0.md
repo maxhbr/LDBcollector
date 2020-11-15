@@ -21,9 +21,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/NCGL-UK-2.0.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

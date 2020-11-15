@@ -96,6 +96,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/ICU.html][SPDX]]
 
 - [[https://spdx.org/licenses/X11.html][SPDX]]
@@ -115,6 +117,8 @@
   License Checklist]]
 
 - [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

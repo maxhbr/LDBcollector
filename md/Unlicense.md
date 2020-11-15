@@ -101,6 +101,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Unlicense.html "SPDX")
 
 -   [BlueOak License
@@ -126,7 +128,7 @@ Raw Data
 
 -   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

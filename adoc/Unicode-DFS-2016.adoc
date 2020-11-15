@@ -109,6 +109,8 @@ authorization of the copyright holder.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Unicode-DFS-2016.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unicode-dfs-2016.yml[Scancode]
@@ -116,6 +118,8 @@ authorization of the copyright holder.
 License Checklist]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+
+==== Raw JSON
 
 ....
 {

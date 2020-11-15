@@ -48,6 +48,8 @@ OSADL Rule
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/bzip2-1.0.5.html "SPDX")
 
 -   [BlueOak License
@@ -56,7 +58,7 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.5.txt "OSADL License Checklist")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

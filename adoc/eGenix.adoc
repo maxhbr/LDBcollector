@@ -78,9 +78,13 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/eGenix.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/egenix-1.1.0.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

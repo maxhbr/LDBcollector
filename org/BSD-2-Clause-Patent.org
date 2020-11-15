@@ -112,6 +112,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/BSD-2-Clause-Patent.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -122,6 +124,8 @@
 
 - [[https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt][OSADL
   License Checklist]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

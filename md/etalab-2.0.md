@@ -23,9 +23,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/etalab-2.0.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

@@ -117,6 +117,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/CPOL-1.02.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpol-1.02.yml "Scancode")
@@ -124,7 +126,7 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/CPOL-1.02.txt "OSADL License Checklist")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

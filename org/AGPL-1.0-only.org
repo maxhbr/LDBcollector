@@ -147,6 +147,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/AGPL-1.0-only.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -154,6 +156,8 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0.yml][Scancode]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

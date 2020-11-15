@@ -104,6 +104,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/CC-BY-NC-ND-1.0.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nc-nd-1.0.yml][Scancode]]
@@ -115,6 +117,8 @@
   Guidelines]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

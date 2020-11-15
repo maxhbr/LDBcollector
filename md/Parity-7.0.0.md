@@ -30,12 +30,14 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Parity-7.0.0.html "SPDX")
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

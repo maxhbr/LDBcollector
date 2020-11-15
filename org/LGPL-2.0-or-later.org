@@ -68,6 +68,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/LGPL-2.0-or-later.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -81,6 +83,8 @@
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

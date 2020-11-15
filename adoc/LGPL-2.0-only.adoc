@@ -541,6 +541,8 @@ That's all there is to it!
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/LGPL-2.0-only.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml[Scancode]
@@ -548,6 +550,8 @@ That's all there is to it!
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+
+==== Raw JSON
 
 ....
 {

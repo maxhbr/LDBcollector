@@ -109,6 +109,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/BSD-2-Clause-Patent.html "SPDX")
 
 -   [BlueOak License
@@ -121,7 +123,7 @@ Raw Data
 -   [OSADL License
     Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt "OSADL License Checklist")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

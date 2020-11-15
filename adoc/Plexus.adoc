@@ -86,10 +86,14 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Plexus.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml[Scancode]
 * https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml[finos/OSLC-handbook]
+
+==== Raw JSON
 
 ....
 {

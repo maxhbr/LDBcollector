@@ -184,6 +184,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/GPL-2.0-or-later.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -202,6 +204,8 @@
   Guidelines]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

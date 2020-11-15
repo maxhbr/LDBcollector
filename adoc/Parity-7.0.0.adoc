@@ -29,8 +29,12 @@ https://blueoakcouncil.org/copyleft[BlueOak License List])
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Parity-7.0.0.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
+
+==== Raw JSON
 
 ....
 {

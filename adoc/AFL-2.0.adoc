@@ -128,11 +128,15 @@ This Academic Free License (the "License") applies to any original work of autho
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/AFL-2.0.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.0.yml[Scancode]
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.0.txt[OSADL
 License Checklist]
+
+==== Raw JSON
 
 ....
 {

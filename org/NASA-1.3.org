@@ -158,6 +158,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/NASA-1.3.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -170,6 +172,8 @@
 
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -49,12 +49,16 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/FSFAP.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml][Scancode]]
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

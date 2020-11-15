@@ -261,8 +261,12 @@ END OF TERMS AND CONDITIONS
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/LGPLLR.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpllr.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

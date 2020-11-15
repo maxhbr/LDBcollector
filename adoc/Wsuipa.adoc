@@ -48,9 +48,13 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Wsuipa.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

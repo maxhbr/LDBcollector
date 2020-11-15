@@ -46,9 +46,13 @@ END OF COPYRIGHT NOTICE
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Bahyph.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bahyph.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

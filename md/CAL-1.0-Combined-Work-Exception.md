@@ -27,9 +27,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

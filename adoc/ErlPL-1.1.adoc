@@ -323,9 +323,13 @@ AB. All Rights Reserved.''
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/ErlPL-1.1.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/erlangpl-1.1.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

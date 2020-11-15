@@ -22,7 +22,11 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/NIST-PD-fallback.html][SPDX]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

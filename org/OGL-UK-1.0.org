@@ -139,12 +139,16 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/OGL-UK-1.0.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ogl-uk-1.0.yml][Scancode]]
 
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

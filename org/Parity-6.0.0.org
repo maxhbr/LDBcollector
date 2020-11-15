@@ -63,11 +63,15 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Parity-6.0.0.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/parity-6.0.0.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

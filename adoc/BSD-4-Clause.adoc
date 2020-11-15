@@ -110,6 +110,8 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/BSD-4-Clause.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml[Scancode]
@@ -123,6 +125,8 @@ Policy]
 * https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
 * Override
 * Override
+
+==== Raw JSON
 
 ....
 {

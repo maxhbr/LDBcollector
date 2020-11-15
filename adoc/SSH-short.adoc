@@ -23,7 +23,11 @@
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/SSH-short.html[SPDX]
+
+==== Raw JSON
 
 ....
 {

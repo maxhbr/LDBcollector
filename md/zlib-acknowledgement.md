@@ -91,6 +91,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/zlib-acknowledgement.html "SPDX")
 
 -   [BlueOak License
@@ -104,7 +106,7 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

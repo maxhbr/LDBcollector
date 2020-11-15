@@ -53,9 +53,13 @@ https://blueoakcouncil.org/list[BlueOak License List])
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/CNRI-Jython.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-jython.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

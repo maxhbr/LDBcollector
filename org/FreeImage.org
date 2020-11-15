@@ -174,9 +174,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/FreeImage.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freeimage-1.0.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -23,9 +23,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Hippocratic-2.1.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

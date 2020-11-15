@@ -180,9 +180,13 @@ The End
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/OLDAP-1.3.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

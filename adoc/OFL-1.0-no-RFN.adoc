@@ -21,7 +21,11 @@
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/OFL-1.0-no-RFN.html[SPDX]
+
+==== Raw JSON
 
 ....
 {

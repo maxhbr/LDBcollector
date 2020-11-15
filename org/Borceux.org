@@ -60,6 +60,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Borceux.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -68,6 +70,8 @@
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

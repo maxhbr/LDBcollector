@@ -127,6 +127,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/QPL-1.0.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -147,6 +149,8 @@
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

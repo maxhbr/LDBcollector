@@ -23,9 +23,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/NIST-PD-fallback.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

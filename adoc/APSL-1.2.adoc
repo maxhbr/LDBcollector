@@ -315,10 +315,14 @@ License for the specific language governing rights and limitations under the Lic
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/APSL-1.2.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml[Scancode]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+
+==== Raw JSON
 
 ....
 {

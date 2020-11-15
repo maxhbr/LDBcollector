@@ -211,6 +211,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX")
 
 -   [BlueOak License
@@ -220,7 +222,7 @@ Raw Data
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

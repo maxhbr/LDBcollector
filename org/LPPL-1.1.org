@@ -336,9 +336,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/LPPL-1.1.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.1.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

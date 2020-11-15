@@ -95,6 +95,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/ICU.html "SPDX")
 
 -   [SPDX](https://spdx.org/licenses/X11.html "SPDX")
@@ -117,7 +119,7 @@ Raw Data
 
 -   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

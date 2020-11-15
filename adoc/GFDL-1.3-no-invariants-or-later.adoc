@@ -21,7 +21,11 @@
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/GFDL-1.3-no-invariants-or-later.html[SPDX]
+
+==== Raw JSON
 
 ....
 {

@@ -36,9 +36,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/FSFUL.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-free.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

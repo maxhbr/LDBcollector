@@ -140,6 +140,8 @@ by "COPYRIGHT HOLDERS AND CONTRIBUTORS".
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/BSD-4-Clause-UC.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml[Scancode]
@@ -149,6 +151,8 @@ License Checklist]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 * Override
+
+==== Raw JSON
 
 ....
 {

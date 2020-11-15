@@ -102,11 +102,15 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Ruby.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml[Scancode]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+
+==== Raw JSON
 
 ....
 {

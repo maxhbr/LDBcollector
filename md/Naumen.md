@@ -65,6 +65,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Naumen.html "SPDX")
 
 -   [BlueOak License
@@ -79,7 +81,7 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

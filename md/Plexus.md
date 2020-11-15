@@ -91,6 +91,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Plexus.html "SPDX")
 
 -   [BlueOak License
@@ -100,7 +102,7 @@ Raw Data
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml "finos/OSLC-handbook")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

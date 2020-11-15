@@ -107,6 +107,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/OSL-1.1.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -118,6 +120,8 @@
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

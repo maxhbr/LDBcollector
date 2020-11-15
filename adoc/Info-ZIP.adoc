@@ -57,9 +57,13 @@ Permission is granted to anyone to use this software for any purpose, including 
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Info-ZIP.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/info-zip.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

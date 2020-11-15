@@ -352,6 +352,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/SISSL.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-sissl-1.1.yml][Scancode]]
@@ -363,6 +365,8 @@
 
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -58,11 +58,15 @@ francis dot borceux at uclouvain dot be.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Borceux.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml[Scancode]
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
+
+==== Raw JSON
 
 ....
 {

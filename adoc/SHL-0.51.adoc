@@ -114,8 +114,12 @@ Copyright [yyyy] [name of copyright owner] Copyright and related rights are lice
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/SHL-0.51.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/shl-0.51.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

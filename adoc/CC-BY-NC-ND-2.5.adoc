@@ -104,12 +104,16 @@ Creative Commons may be contacted at http://creativecommons.org/.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/CC-BY-NC-ND-2.5.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nc-nd-2.5.yml[Scancode]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
+
+==== Raw JSON
 
 ....
 {

@@ -158,12 +158,16 @@ October 31, 2008
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Libpng.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/libpng.yml[Scancode]
 * https://www.osadl.org/fileadmin/checklists/unreflicenses/Libpng.txt[OSADL
 License Checklist]
 * https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml[finos/OSLC-handbook]
+
+==== Raw JSON
 
 ....
 {

@@ -88,11 +88,15 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/BlueOak-1.0.0.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/blueoak-1.0.0.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

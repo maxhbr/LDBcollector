@@ -21,7 +21,11 @@
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/GLWTPL.html[SPDX]
+
+==== Raw JSON
 
 ....
 {

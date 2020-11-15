@@ -25,7 +25,11 @@ https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html[SPDX])
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html[SPDX]
+
+==== Raw JSON
 
 ....
 {

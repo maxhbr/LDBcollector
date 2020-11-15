@@ -22,7 +22,11 @@
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Hippocratic-2.1.html[SPDX]
+
+==== Raw JSON
 
 ....
 {

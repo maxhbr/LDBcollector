@@ -101,12 +101,16 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved. 
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/OSL-2.1.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-2.1.yml[Scancode]
 * https://opensource.org/licenses/[OpenSourceInitiative]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+
+==== Raw JSON
 
 ....
 {

@@ -74,9 +74,13 @@ facility.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

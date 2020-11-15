@@ -34,9 +34,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/CAL-1.0.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -122,6 +122,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/LAL-1.3.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lal-1.3.yml "Scancode")
@@ -129,7 +131,7 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

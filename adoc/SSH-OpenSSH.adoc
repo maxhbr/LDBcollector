@@ -21,7 +21,11 @@
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/SSH-OpenSSH.html[SPDX]
+
+==== Raw JSON
 
 ....
 {

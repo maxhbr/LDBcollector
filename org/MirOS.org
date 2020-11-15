@@ -72,6 +72,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/MirOS.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -87,6 +89,8 @@
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

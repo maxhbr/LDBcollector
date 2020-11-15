@@ -58,8 +58,12 @@ original program and z is an arbitrary suffix.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/XSkat.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

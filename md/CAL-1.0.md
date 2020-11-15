@@ -35,12 +35,14 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/CAL-1.0.html "SPDX")
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

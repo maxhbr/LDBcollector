@@ -96,6 +96,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/W3C-20150513.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -104,6 +106,8 @@
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

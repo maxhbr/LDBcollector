@@ -25,9 +25,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/SSH-short.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

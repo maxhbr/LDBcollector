@@ -54,9 +54,13 @@ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDI
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Mup.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mup.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

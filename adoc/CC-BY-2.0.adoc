@@ -94,10 +94,14 @@ Creative Commons may be contacted at http://creativecommons.org/.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/CC-BY-2.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-2.0.yml[Scancode]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+
+==== Raw JSON
 
 ....
 {

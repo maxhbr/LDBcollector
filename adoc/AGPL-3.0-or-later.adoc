@@ -203,6 +203,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/AGPL-3.0-or-later.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml[Scancode]
@@ -211,6 +213,8 @@ License Checklist]
 * https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml[finos/OSLC-handbook]
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
 * Override
+
+==== Raw JSON
 
 ....
 {

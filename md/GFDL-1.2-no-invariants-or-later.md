@@ -22,9 +22,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/GFDL-1.2-no-invariants-or-later.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

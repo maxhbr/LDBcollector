@@ -69,6 +69,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/libtiff.html "SPDX")
 
 -   [BlueOak License
@@ -82,7 +84,7 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

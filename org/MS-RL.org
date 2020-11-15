@@ -156,6 +156,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/MS-RL.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -179,6 +181,8 @@
   Knowledge International]]
 
 - [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

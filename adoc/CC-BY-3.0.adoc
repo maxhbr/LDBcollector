@@ -358,11 +358,15 @@ Creative Commons Notice
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/CC-BY-3.0.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-3.0.yml[Scancode]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+
+==== Raw JSON
 
 ....
 {

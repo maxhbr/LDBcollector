@@ -71,6 +71,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Qhull.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -79,6 +81,8 @@
 
 - [[https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt][OSADL
   License Checklist]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

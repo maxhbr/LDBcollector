@@ -78,8 +78,12 @@ This Agreement contains the entire agreement of the parties with respect to the 
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Zimbra-1.4.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zimbra-1.4.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

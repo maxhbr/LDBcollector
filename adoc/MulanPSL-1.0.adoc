@@ -22,7 +22,11 @@
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/MulanPSL-1.0.html[SPDX]
+
+==== Raw JSON
 
 ....
 {

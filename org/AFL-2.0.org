@@ -133,6 +133,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/AFL-2.0.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -141,6 +143,8 @@
 
 - [[https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.0.txt][OSADL
   License Checklist]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

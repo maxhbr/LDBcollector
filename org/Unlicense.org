@@ -112,6 +112,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Unlicense.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -135,6 +137,8 @@
   Knowledge International]]
 
 - [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

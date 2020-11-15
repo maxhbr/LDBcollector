@@ -25,9 +25,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/BSD-2-Clause-Views.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

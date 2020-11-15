@@ -21,7 +21,11 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/GFDL-1.3-invariants-only.html][SPDX]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -95,11 +95,15 @@ be directed to site-policy@w3.org.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/W3C-19980720.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-19980720.yml[Scancode]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+
+==== Raw JSON
 
 ....
 {

@@ -227,6 +227,8 @@ Legal Terms
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/FTL.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml[Scancode]
@@ -234,6 +236,8 @@ Legal Terms
 License Checklist]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+
+==== Raw JSON
 
 ....
 {

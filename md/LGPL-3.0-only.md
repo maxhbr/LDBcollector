@@ -472,6 +472,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/LGPL-3.0-only.html "SPDX")
 
 -   [SPDX](https://spdx.org/licenses/LGPL-3.0-or-later.html "SPDX")
@@ -530,7 +532,7 @@ Raw Data
 
 -   Override
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

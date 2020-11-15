@@ -51,9 +51,13 @@ DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPR
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/Giftware.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/allegro-4.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

@@ -59,6 +59,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/Borceux.html "SPDX")
 
 -   [BlueOak License
@@ -69,7 +71,7 @@ Raw Data
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

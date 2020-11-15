@@ -21,9 +21,11 @@ URLs
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/CERN-OHL-P-2.0.html "SPDX")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

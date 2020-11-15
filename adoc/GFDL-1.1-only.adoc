@@ -395,9 +395,13 @@ to permit their use in free software.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/GFDL-1.1-only.html[SPDX]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1.yml[Scancode]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+
+==== Raw JSON
 
 ....
 {

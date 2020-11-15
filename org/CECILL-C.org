@@ -282,12 +282,16 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/CECILL-C.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml][Scancode]]
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -104,6 +104,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/ECL-1.0.html "SPDX")
 
 -   [BlueOak License
@@ -115,7 +117,7 @@ Raw Data
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

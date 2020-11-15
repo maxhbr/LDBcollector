@@ -948,6 +948,8 @@ Public License instead of this License.  But first, please read
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/GPL-3.0-only.html[SPDX]
 * https://spdx.org/licenses/GPL-3.0-or-later.html[SPDX]
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -980,6 +982,8 @@ Knowledge International]
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 * Override
 * Override
+
+==== Raw JSON
 
 ....
 {

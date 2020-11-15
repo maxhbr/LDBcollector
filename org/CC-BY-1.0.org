@@ -97,6 +97,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/CC-BY-1.0.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-1.0.yml][Scancode]]
@@ -106,6 +108,8 @@
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

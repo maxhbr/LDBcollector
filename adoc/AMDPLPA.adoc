@@ -117,9 +117,13 @@ concerning personal jurisdiction and venue of these courts.
 
 === Raw Data
 
+==== Facts
+
 * https://spdx.org/licenses/AMDPLPA.html[SPDX]
 * https://blueoakcouncil.org/list[BlueOak License List]
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/amdplpa.yml[Scancode]
+
+==== Raw JSON
 
 ....
 {

@@ -562,6 +562,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/SPL-1.0.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -574,6 +576,8 @@
 
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

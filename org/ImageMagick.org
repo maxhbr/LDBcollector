@@ -85,11 +85,15 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/ImageMagick.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/imagemagick.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

@@ -129,13 +129,15 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/LiLiQ-R-1.1.html "SPDX")
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/liliq-r-1.1.yml "Scancode")
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

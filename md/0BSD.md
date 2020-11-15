@@ -67,6 +67,8 @@ Text
 Raw Data
 --------
 
+### Facts
+
 -   [SPDX](https://spdx.org/licenses/0BSD.html "SPDX")
 
 -   [BlueOak License
@@ -83,7 +85,7 @@ Raw Data
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/0BSD.yaml "finos/OSLC-handbook")
 
-&nbsp;
+### Raw JSON
 
     {
         "__impliedNames": [

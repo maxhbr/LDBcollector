@@ -162,6 +162,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/BSD-3-Clause.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -195,6 +197,8 @@
 - [[https://ifross.github.io/ifrOSS/Lizenzcenter][ifrOSS]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

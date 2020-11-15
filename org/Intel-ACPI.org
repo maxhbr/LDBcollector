@@ -152,9 +152,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Intel-ACPI.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-acpi.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

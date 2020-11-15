@@ -93,6 +93,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Sleepycat.html][SPDX]]
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
@@ -112,6 +114,8 @@
   Knowledge International]]
 
 - Override
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

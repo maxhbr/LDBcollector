@@ -117,9 +117,13 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/Sendmail.html][SPDX]]
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml][Scancode]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {

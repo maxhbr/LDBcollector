@@ -67,6 +67,8 @@
 
 ** Raw Data
 
+*** Facts
+
 - [[https://spdx.org/licenses/IBM-pibs.html][SPDX]]
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -75,6 +77,8 @@
 
 - [[https://www.osadl.org/fileadmin/checklists/unreflicenses/IBM-pibs.txt][OSADL
   License Checklist]]
+
+*** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
