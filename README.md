@@ -16,8 +16,8 @@ The generated output is pushed to the branch [`generated`](https://github.com/ma
 ### SPDX license List
 The data is placed in `/data/json/` and it contains the content of the folder `/json/` from [https://github.com/spdx/license-list-data].
 
-| ----------------- | --- |
 | Kind of update: | ./data/spdx-license-list-data.update.sh |
+| ----------------- | --- |
 | Last update:    | 2020-11-15                              |
 | Version:        | 3.10-24-gd78ad74                        |
 
@@ -31,8 +31,8 @@ The scancode data is placed in `/data/scancode/` and contains the content of the
 
 **licensed under:** cc0-1.0
 
-| ----------------- | --- |
 | Kind of update: | ./data/nexB_scancode-toolkit_license_list.update.sh                                      |
+| ----------------- | --- |
 | Last update:    | 2020-11-15                                                                               |
 | Version:        | https://github.com/nexB/scancode-toolkit/commit/ba4bbf216c6f44572662d16c76214a08b0a69e7e |
 
@@ -41,8 +41,8 @@ The table for general comparison of licenses is taken from https://en.wikipedia.
 
 The corresponding data is hardcoded in source code, right now.
 
-| ----------------- | --- |
 | Kind of update: | manual labor |
+| ----------------- | --- |
 
 ### OSADL license checklist
 The folder `/data/OSADL/` contains a script `dump.sh` which pulls the checklist stuff. The sources for that are for example
@@ -52,8 +52,8 @@ e.g.
 - https://www.osadl.org/fileadmin/checklists/actions/ACTION.txt
 The complete list can be found at: [https://www.osadl.org/Access-to-raw-data.oss-compliance-raw-data-access.0.html]
 
-| ----------------- | --- |
 | Kind of update: | ./data/OSADL.update.sh |
+| ----------------- | --- |
 | Last update:    | 2020-11-15             |
 | Version:        |                        |
 
@@ -63,8 +63,8 @@ The folder `/data/choosealicense.com` contains the content of the folder `/_lice
 
 **licensed under:** MIT
 
-| ----------------- | --- |
 | Kind of update: | ./data/choosalicense.com.update.sh                                                           |
+| ----------------- | --- |
 | Last update:    | 2020-11-15                                                                                   |
 | Version:        | https://github.com/github/choosealicense.com/commit/50e1c110548545b3ec5072442942be2548a76a48 |
 
@@ -73,8 +73,8 @@ The license list can be pulled from https://blueoakcouncil.org/list.json, and is
 
 **licensed under:** CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
-| ----------------- | --- |
 | Kind of update: | ./data/blue-oak-council.update.sh |
+| ----------------- | --- |
 | Last update:    | 2020-11-15                        |
 | Version:        |                                   |
 
@@ -82,16 +82,16 @@ The license list can be pulled from https://blueoakcouncil.org/list.json, and is
 The Fedora Project has in its wiki a list of licenses which are rated **good** or **bad** on https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing.
 These lists are extracted to csv files in `/data/Fedora_Project_Wiki/`.
 
-| ----------------- | --- |
 | Kind of update: | manual labor |
+| ----------------- | --- |
 
 #### TODO: the Fedora project also has notes regarding to licenses
 - e.g. https://fedoraproject.org/wiki/Licensing/Sleepycat
 
 ### Open Chain Policy Template
 
-| ----------------- | --- |
 | Kind of update: | manual labor |
+| ----------------- | --- |
 | Version:        | 1.2          |
 
 #### Version 1.2
@@ -126,8 +126,8 @@ they classify licenses into:
 
 **licensed under:** CC-BY-4.0
 
-| ----------------- | --- |
 | Kind of update: | manual labor |
+| ----------------- | --- |
 | Last update:    |              |
 | Version:        |              |
 
@@ -138,24 +138,24 @@ The corresponding raw data is placed under `./data/okfn-licenses.csv`
 
 **licensed under:** ODC Public Domain Dedication and Licence (PDDL) / MIT
 
-| ----------------- | --- |
 | Kind of update: | ./data/okfn-licenses.update.sh                                                   |
+| ----------------- | --- |
 | Last update:    | 2020-11-15                                                                       |
 | Version:        | https://github.com/okfn/licenses/commit/cc05e0a3be9490cfcb02fc664c46619846ee3752 |
 
 ### DFSG License list
 https://wiki.debian.org/DFSGLicenses / https://www.debian.org/legal/licenses/
 
-| ----------------- | --- |
 | Kind of update: | ? |
+| ----------------- | --- |
 
 ### FSF / GNU License list
 FSF: [gnu.org](https://www.gnu.org/licenses/license-list.html)
 
 **licensed under:** MIT
 
-| ----------------- | --- |
 | Kind of update: | ? |
+| ----------------- | --- |
 
 ### ifrOSS
 - https://github.com/ifrOSS/ifrOSS
@@ -165,8 +165,8 @@ The corresponding data is hardcoded in source code, right now.
 
 **licensed under:** MIT / ODbL
 
-| ----------------- | --- |
 | Kind of update: | ? |
+| ----------------- | --- |
 
 ## Other possible Sources for license Metadata
   - ORT License highlighting
