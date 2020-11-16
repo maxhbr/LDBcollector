@@ -108,8 +108,8 @@ This template only contains 10 licenses...
 
 **Licensed unnder:** CC-BY-SA-4.0
 
-| ----------------- | --- |
 | Kind of update: | ./data/OSLC-handbook.update.sh                                                         |
+| ----------------- | --- |
 | Last update:    | 2020-11-15                                                                             |
 | Version:        | https://github.com/finos/OSLC-handbook/commit/eafdcdac855a0e1877606eb15eba561b2abf0dba |
 
