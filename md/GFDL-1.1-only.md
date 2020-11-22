@@ -16,13 +16,15 @@ Comments on (easy) usability
     sections are considered DFSG-free as of GR 2006-001:
     http://www.debian.org/vote/2006/vote\_001\#outcome” (source: [Debian
     Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license was released March 2000” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -398,12 +400,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/GFDL-1.1-only.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/GFDL-1.1-only.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1.yml "Scancode")
+    (CC0-1.0)
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 

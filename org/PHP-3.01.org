@@ -16,10 +16,12 @@
 ** Comments on (easy) usability
 
 - *↑*"Is OSI Approved" (source:
-  [[https://spdx.org/licenses/PHP-3.01.html][SPDX]])
+  [[https://spdx.org/licenses/PHP-3.01.html][SPDX]] (all data [in this
+  repository] is generated))
 
 - *↑*"Rating is: Bronze" (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+  [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** General Comments
 
@@ -27,7 +29,8 @@
   with the exceoption of a couple word differences and updated url in
   section 6. v3.01 came into use with PHP version 4 and onward. "
   (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml][Scancode]]
+  (CC0-1.0))
 
 ** URLs
 
@@ -119,13 +122,17 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/PHP-3.01.html][SPDX]]
+- [[https://spdx.org/licenses/PHP-3.01.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml][finos/OSLC-handbook]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 *** Raw JSON
 

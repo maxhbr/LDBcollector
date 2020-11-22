@@ -13,17 +13,20 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this is a generic version of the ZPL 2.0 license”
     (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -89,15 +92,19 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/ZPL-2.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/ZPL-2.1.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml "Scancode")
+    (CC0-1.0)
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 

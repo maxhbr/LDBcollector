@@ -69,9 +69,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Sendmail-8.23.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Sendmail-8.23.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail-8.23.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

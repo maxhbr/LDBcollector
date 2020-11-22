@@ -14,12 +14,6 @@
             [
                 "replaced by mit-old-style-no-advert"
             ]
-        ],
-        [
-            "ifrOSS",
-            [
-                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
-            ]
         ]
     ],
     "facts": {
@@ -88,16 +82,6 @@
                 ]
             },
             "spdxLicenseId": "NTP"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/NTP.txt",
-            "spdxId": "NTP",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST NOT Promote\n\tYOU MUST Forward Copyright notices In Documentation\n\tYOU MUST Forward License text In Documentation\n",
-            "_implications": {
-                "__impliedNames": [
-                    "NTP"
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -208,39 +192,6 @@
                 ]
             }
         },
-        "ifrOSS": {
-            "ifrKind": "IfrNoCopyleft",
-            "ifrURL": "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html",
-            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-            "ifrName": "NTP License",
-            "ifrId": null,
-            "_implications": {
-                "__impliedNames": [
-                    "NTP License"
-                ],
-                "__impliedComments": [
-                    [
-                        "ifrOSS",
-                        [
-                            "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
-                        ]
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "ifrOSS",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedURLs": [
-                    [
-                        null,
-                        "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html"
-                    ]
-                ]
-            }
-        },
         "OpenSourceInitiative": {
             "text": [
                 {
@@ -308,10 +259,6 @@
         [
             "Scancode",
             "NoCopyleft"
-        ],
-        [
-            "ifrOSS",
-            "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
@@ -353,10 +300,6 @@
         [
             "OSI Page",
             "https://opensource.org/licenses/NTP"
-        ],
-        [
-            null,
-            "https://www.eecis.udel.edu/~mills/ntp/html/copyright.html"
         ]
     ]
 }

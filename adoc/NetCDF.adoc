@@ -16,7 +16,8 @@
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -64,9 +65,12 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ==== Facts
 
-* https://spdx.org/licenses/NetCDF.html[SPDX]
+* https://spdx.org/licenses/NetCDF.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/netcdf.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

@@ -38,7 +38,8 @@ General Comments
     License. If you do not delete the provisions above,a recipient may
     use your version of this file under either the MPL or the \[\_\_\_\]
     License. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/snia.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/snia.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -181,9 +182,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/SNIA.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/SNIA.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/snia.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

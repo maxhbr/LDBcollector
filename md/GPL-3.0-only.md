@@ -65,19 +65,23 @@ Comments on (easy) usability
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 -   **↑**“This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 General Comments
 ----------------
@@ -86,11 +90,13 @@ General Comments
     software (like the weak copyleft licenses, and larger programs that
     you build with the licensed software, when you give copies to
     others.” (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Per SPDX.org, this license was released 29 June 2007 This license
     is OSI certified. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0.yml "Scancode")
+    (CC0-1.0))
 
 Obligations
 -----------
@@ -129,160 +135,6 @@ URLs
 -   http://www.gnu.org/licenses/quick-guide-gplv3.html
 
 -   http://www.opensource.org/licenses/GPL-3.0
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Provide Copyright notice
-    		ATTRIBUTE Highlighted
-    		ATTRIBUTE Appropriately
-    	YOU MUST NOT Modify License notices
-    	YOU MUST NOT Modify Warranty disclaimer
-    	YOU MUST Provide License text
-    	IF Non-permissive Additional terms
-    		EITHER
-    			YOU MUST Include Additional terms In Source code
-    		OR
-    			YOU MUST Reference Additional terms In Source code
-    		YOU MUST Provide Additional terms
-    	USE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later
-    		YOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later
-    	IF Software modification
-    		YOU MUST Provide Modification notice
-    			ATTRIBUTE Highlighted
-    		YOU MUST Provide Modification date
-    		YOU MUST Provide Legal notices
-    			ATTRIBUTE Highlighted
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		IF Interactive AND Displayed License announcement
-    			YOU MUST Display Appropriate legal notices
-    				ATTRIBUTE Highlighted
-    	YOU MUST NOT Restrict Granted rights
-    		EXCEPT IF NOT Permitted By Additional terms
-    	YOU MUST NOT Litigate Circumvention
-    USE CASE Binary delivery
-    	YOU MUST Provide Copyright notice
-    		ATTRIBUTE Highlighted
-    		ATTRIBUTE Appropriately
-    	YOU MUST NOT Modify License notices
-    	YOU MUST NOT Modify Warranty disclaimer
-    	YOU MUST Provide License text
-    	IF Non-permissive Additional terms
-    		EITHER
-    			YOU MUST Include Additional terms In Source code
-    		OR
-    			YOU MUST Reference Additional terms In Source code
-    		YOU MUST Provide Additional terms
-    	USE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later
-    		YOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later
-    	EITHER IF Binary delivery On Customary medium OR Installed
-    		EITHER
-    			YOU MUST Provide Source code
-    				ATTRIBUTE Machine-readable
-    				ATTRIBUTE Customary medium
-    				ATTRIBUTE Documented format
-    				ATTRIBUTE Including Installation scripts
-    				ATTRIBUTE Including Tool chain information
-    		OR
-    			YOU MUST Provide Written offer
-    				ATTRIBUTE Duration At least 3 years
-    				ATTRIBUTE Duration As long as product is supported
-    				ATTRIBUTE Delayed source code delivery
-    					ATTRIBUTE Machine-readable
-    					ATTRIBUTE Documented format
-    					ATTRIBUTE Including Installation scripts
-    					ATTRIBUTE Including Tool chain information
-    					EITHER
-    						ATTRIBUTE Customary medium
-    						ATTRIBUTE No profit
-    					OR
-    						ATTRIBUTE Via Internet
-    						ATTRIBUTE No charge
-    	OR IF Binary delivery Via Internet
-    		YOU MUST Provide Source code
-    			ATTRIBUTE Machine-readable
-    			ATTRIBUTE Documented format
-    			ATTRIBUTE Including Installation scripts
-    			ATTRIBUTE Including Tool chain information
-    			ATTRIBUTE Via Internet
-    			ATTRIBUTE Duration As long as needed
-    			EITHER IF Source code On same server
-    				ATTRIBUTE No charge
-    				ATTRIBUTE Equivalent
-    			OR IF Source code On other server
-    				ATTRIBUTE No charge
-    				ATTRIBUTE Equivalent
-    				YOU MUST Reference Source code
-    	OR IF Binary delivery Via peer-to-peer transmission
-    		YOU MUST Reference Source code
-    			ATTRIBUTE No charge
-    			ATTRIBUTE Machine-readable
-    			ATTRIBUTE Documented format
-    			ATTRIBUTE Including Installation scripts
-    			ATTRIBUTE Including Tool chain information
-    			ATTRIBUTE Via Internet
-    			ATTRIBUTE Duration As long as needed
-    	IF User product
-    		YOU MUST Provide Installation information
-    			EXCEPT IF Installation Is NOT Feasible
-    	IF Software modification
-    		YOU MUST Provide Modification notice
-    			ATTRIBUTE Highlighted
-    		YOU MUST Provide Modification date
-    		YOU MUST Provide Legal notices
-    			ATTRIBUTE Highlighted
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		IF Interactive AND Displayed License announcement
-    			YOU MUST Display Appropriate legal notices
-    				ATTRIBUTE Highlighted
-    	YOU MUST NOT Restrict Granted rights
-    		EXCEPT IF NOT Permitted By Additional terms
-    	YOU MUST NOT Litigate Circumvention
-    COMPATIBILITY AGPL-3.0-only
-    COMPATIBILITY AGPL-3.0-or later
-    COMPATIBILITY Apache-2.0
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY EFL-2.0
-    COMPATIBILITY GPL-2.0-or-later
-    COMPATIBILITY GPL-3.0-or-later
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY LGPL-2.1-only
-    COMPATIBILITY LGPL-2.1-or-later
-    COMPATIBILITY LGPL-3.0-only
-    COMPATIBILITY LGPL-3.0-or-later
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    DEPENDING COMPATIBILITY EPL-2.0
-    INCOMPATIBILITY Apache-1.0
-    INCOMPATIBILITY Apache-1.1
-    INCOMPATIBILITY BSD-4-Clause
-    INCOMPATIBILITY BSD-4-Clause-UC
-    INCOMPATIBILITY FTL
-    INCOMPATIBILITY IJG
-    INCOMPATIBILITY OpenSSL
-    INCOMPATIBILITY Python-2.0
-    INCOMPATIBILITY zlib-acknowledgement
-    INCOMPATIBILITY XFree86-1.1
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -969,62 +821,71 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX") (all data
+    \[in this repository\] is generated)
 
--   [SPDX](https://spdx.org/licenses/GPL-3.0-or-later.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/GPL-3.0-or-later.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0.yml "Scancode")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0-plus.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-3.0-only.txt "OSADL License Checklist")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-3.0-or-later.txt "OSADL License Checklist")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-3.0.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-3.0.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-3.0.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   Override
 
@@ -1150,24 +1011,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "GPL-3.0-only"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-3.0-only.txt",
-                "spdxId": "GPL-3.0-only",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text\n\tIF Non-permissive Additional terms\n\t\tEITHER\n\t\t\tYOU MUST Include Additional terms In Source code\n\t\tOR\n\t\t\tYOU MUST Reference Additional terms In Source code\n\t\tYOU MUST Provide Additional terms\n\tUSE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later\n\t\tYOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Displayed License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text\n\tIF Non-permissive Additional terms\n\t\tEITHER\n\t\t\tYOU MUST Include Additional terms In Source code\n\t\tOR\n\t\t\tYOU MUST Reference Additional terms In Source code\n\t\tYOU MUST Provide Additional terms\n\tUSE CASE Combined work With AGPL-3.0-only OR AGPL-3.0-or-later\n\t\tYOU MUST Fulfill License obligations Of AGPL-3.0-only OR AGPL-3.0-or-later\n\tEITHER IF Binary delivery On Customary medium OR Installed\n\t\tEITHER\n\t\t\tYOU MUST Provide Source code\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\tATTRIBUTE Documented format\n\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\tATTRIBUTE Including Tool chain information\n\t\tOR\n\t\t\tYOU MUST Provide Written offer\n\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\tATTRIBUTE Delayed source code delivery\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tEITHER\n\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tOR\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE No charge\n\tOR IF Binary delivery Via Internet\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Documented format\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\t\t\tEITHER IF Source code On same server\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\tOR IF Source code On other server\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\tYOU MUST Reference Source code\n\tOR IF Binary delivery Via peer-to-peer transmission\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charge\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Documented format\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\tIF User product\n\t\tYOU MUST Provide Installation information\n\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Displayed License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nCOMPATIBILITY AGPL-3.0-only\nCOMPATIBILITY AGPL-3.0-or later\nCOMPATIBILITY Apache-2.0\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY GPL-2.0-or-later\nCOMPATIBILITY GPL-3.0-or-later\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY LGPL-2.1-only\nCOMPATIBILITY LGPL-2.1-or-later\nCOMPATIBILITY LGPL-3.0-only\nCOMPATIBILITY LGPL-3.0-or-later\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nDEPENDING COMPATIBILITY EPL-2.0\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "GPL-3.0-only"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft"
-                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "See Matrix",
@@ -1803,10 +1646,6 @@ Raw Data
             [
                 "BlueOak License List",
                 "StrongCopyleft"
-            ],
-            [
-                "OSADL License Checklist",
-                "Copyleft"
             ],
             [
                 "Scancode",

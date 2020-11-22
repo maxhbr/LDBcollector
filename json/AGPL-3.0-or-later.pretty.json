@@ -76,24 +76,6 @@
             },
             "spdxLicenseId": "AGPL-3.0-or-later"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/AGPL-3.0-or-later.txt",
-            "spdxId": "AGPL-3.0-or-later",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Forward License text\n\t\tIF Non-permissive Additional terms\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Additional terms In Source code\n\t\t\tOR\n\t\t\t\tYOU MUST Reference Additional terms In Source code\n\t\t\tYOU MUST Forward Additional terms\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Display License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text\n\t\tIF Non-permissive Additional terms\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Additional terms In Source code\n\t\t\tOR\n\t\t\t\tYOU MUST Reference Additional terms In Source code\n\t\t\tYOU MUST Provide Additional terms\n\tYOU MUST Provide Source code\n\t\tATTRIBUTE Machine-readable\n\t\tATTRIBUTE Documented format\n\t\tATTRIBUTE Including Tool chain information\n\tIF Binary delivery On Customary medium OR Installed\n\t\tEITHER\n\t\t\tYOU MUST Include Source code\n\t\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tYOU MUST Provide Delayed source code delivery\n\t\t\tYOU MUST Provide Written offer\n\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\tATTRIBUTE Source code delivery\n\t\t\t\t\tEITHER\n\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tOR\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE No charge\n\tIF Binary delivery Via Internet\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\t\t\tIF Source code On same server\n\t\t\t\tATTRIBUTE No charge\n\t\t\tIF Source code On other server\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\tYOU MUST Reference Source code\n\tIF Binary delivery Via peer-to-peer transmission\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charge\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Display License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\tIF User product\n\t\tYOU MUST Provide Installation information\n\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nUSE CASE Network service\n\tIF Software modification\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE No charges\n\t\t\tATTRIBUTE Customary method\nCOMPATIBILITY AGPL-3.0-only\nCOMPATIBILITY Apache-2.0\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY GPL-3.0-only\nCOMPATIBILITY GPL-3.0-or-later\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY LGPL-3.0-only\nCOMPATIBILITY LGPL-3.0-or-later\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "AGPL-3.0-or-later"
-                ],
-                "__hasPatentHint": true,
-                "__impliedCopyleft": [
-                    [
-                        "OSADL License Checklist",
-                        "Copyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "Copyleft"
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://www.fsf.org/licensing/licenses/agpl-3.0.html",
@@ -425,10 +407,6 @@
         [
             "BlueOak License List",
             "SaaSCopyleft"
-        ],
-        [
-            "OSADL License Checklist",
-            "Copyleft"
         ],
         [
             "Scancode",

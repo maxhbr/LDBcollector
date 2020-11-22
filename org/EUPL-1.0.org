@@ -19,7 +19,8 @@
   to the AGPL. For the same reasons that the AGPL is banned, the use of
   EUPL-licensed software is not allowed at Google."" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
+  Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
 
 ** General Comments
 
@@ -28,13 +29,14 @@
   with the licensed software not just when you give copies to others,
   but also when you run the software for others to use over the Internet
   or another network." (source:
-  [[https://blueoakcouncil.org/copyleft][BlueOak License List]])
+  [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 - "Strong copyleft licenses require you to share both the licensed
   software (like the weak copyleft licenses, and larger programs that
   you build with the licensed software, when you give copies to others."
-  (source: [[https://blueoakcouncil.org/copyleft][BlueOak License
-  List]])
+  (source: [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** URLs
 
@@ -209,14 +211,18 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/EUPL-1.0.html][SPDX]]
+- [[https://spdx.org/licenses/EUPL-1.0.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eupl-1.0.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 *** Raw JSON
 

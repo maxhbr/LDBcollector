@@ -16,7 +16,8 @@
 ** Comments on (easy) usability
 
 - *↑*"Rating is: Bronze" (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+  [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** General Comments
 
@@ -28,7 +29,8 @@
   Exolab/Intalio/Castor and JCharts have used the same license. Castor
   is actually the first to use this but dom4j is still commonly used and
   castor less so. " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml][Scancode]]
+  (CC0-1.0))
 
 ** URLs
 
@@ -95,13 +97,17 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/Plexus.html][SPDX]]
+- [[https://spdx.org/licenses/Plexus.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml][finos/OSLC-handbook]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 *** Raw JSON
 

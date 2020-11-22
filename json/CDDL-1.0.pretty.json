@@ -25,7 +25,7 @@
             ]
         ]
     ],
-    "__hasPatentHint": true,
+    "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -95,24 +95,6 @@
                 ]
             },
             "spdxLicenseId": "CDDL-1.0"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CDDL-1.0.txt",
-            "spdxId": "CDDL-1.0",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License text\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide License text\n\tYOU MUST Provide Delayed source code delivery\n\tYOU MUST Provide Written offer\n\t\tATTRIBUTE Reasonable\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\n\tYOU MUST NOT Restrict Granted rights\n\tUSE CASE License change\n\t\tYOU MUST Use Compatible license\n\t\tYOU MUST Indemnify Other Contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "CDDL-1.0"
-                ],
-                "__hasPatentHint": true,
-                "__impliedCopyleft": [
-                    [
-                        "OSADL License Checklist",
-                        "Copyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "Copyleft"
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -466,10 +448,6 @@
         [
             "BlueOak License List",
             "WeakCopyleft"
-        ],
-        [
-            "OSADL License Checklist",
-            "Copyleft"
         ],
         [
             "Scancode",

@@ -19,15 +19,18 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/CPL-1.0.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/CPL-1.0.html "SPDX") (all data \[in
+    this repository\] is generated))
 
 -   **↑**“This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 General Comments
 ----------------
@@ -35,11 +38,13 @@ General Comments
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
     License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Per SPDX.org, this license was superseded by Eclipse Public
     License” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -61,64 +66,6 @@ URLs
 -   http://www.ibm.com/developerworks/library/os-cplfaq.html
 
 -   http://www.padsproj.org/License.html
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward License text
-    	YOU MUST Provide Warranty disclaimer
-    	YOU MUST NOT Modify Copyright notices
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Provide Copyright notice
-    USE CASE Binary delivery
-    	YOU MUST NOT Modify Copyright notices
-    	EITHER
-    		YOU MUST Include Source code
-    	OR
-    		YOU MUST Provide Delayed source code delivery
-    		YOU MUST Provide Written offer
-    		EITHER
-    			ATTRIBUTE Customary medium
-    		OR
-    			ATTRIBUTE Via Internet
-    		ATTRIBUTE Reasonable
-    	USE CASE License change
-    		YOU MUST Use Identical License obligations
-    		YOU MUST Use Warranty disclaimer On behalf of Other contributors
-    			ATTRIBUTE Effective
-    		YOU MUST Use Liability disclaimer On behalf of Other contributors
-    			ATTRIBUTE Effective
-    		IF Service offerings
-    			ATTRIBUTE NOT Transferable
-    USE CASE Commercial distribution
-    	YOU MUST Indemnify Other contributors
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY EFL-2.0
-    COMPATIBILITY EPL-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY IPL-1.0
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -222,25 +169,29 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/CPL-1.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/CPL-1.0.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/CPL-1.0.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 
@@ -273,7 +224,7 @@ Raw Data
                 ]
             ]
         ],
-        "__hasPatentHint": true,
+        "__hasPatentHint": false,
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -312,24 +263,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "CPL-1.0"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CPL-1.0.txt",
-                "spdxId": "CPL-1.0",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tYOU MUST Provide Warranty disclaimer\n\tYOU MUST NOT Modify Copyright notices\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Copyright notice\nUSE CASE Binary delivery\n\tYOU MUST NOT Modify Copyright notices\n\tEITHER\n\t\tYOU MUST Include Source code\n\tOR\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Provide Written offer\n\t\tEITHER\n\t\t\tATTRIBUTE Customary medium\n\t\tOR\n\t\t\tATTRIBUTE Via Internet\n\t\tATTRIBUTE Reasonable\n\tUSE CASE License change\n\t\tYOU MUST Use Identical License obligations\n\t\tYOU MUST Use Warranty disclaimer On behalf of Other contributors\n\t\t\tATTRIBUTE Effective\n\t\tYOU MUST Use Liability disclaimer On behalf of Other contributors\n\t\t\tATTRIBUTE Effective\n\t\tIF Service offerings\n\t\t\tATTRIBUTE NOT Transferable\nUSE CASE Commercial distribution\n\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EPL-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY IPL-1.0\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "CPL-1.0"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft"
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -598,10 +531,6 @@ Raw Data
             [
                 "BlueOak License List",
                 "WeakCopyleft"
-            ],
-            [
-                "OSADL License Checklist",
-                "Copyleft"
             ],
             [
                 "Scancode",

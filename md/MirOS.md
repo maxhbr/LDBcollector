@@ -17,21 +17,25 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/MirOS.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/MirOS.html "SPDX") (all data \[in
+    this repository\] is generated))
 
 -   **↑**“Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC
     but applicable to more than just software” (source: [Debian Free
     Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -47,20 +51,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/MirOS.html
 
 -   http://www.opensource.org/licenses/MirOS
-
-OSADL Rule
-----------
-
-    EITHER
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	YOU MUST Forward Copyright notices
-    OR
-    	YOU MUST Provide License text in Documentation
-    	YOU MUST Provide Warranty disclaimer in Documentation
-    	YOU MUST Provide Copyright notices in Documentation
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -87,25 +77,29 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/MirOS.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/MirOS.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MirOS.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 
@@ -196,16 +190,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MirOS"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MirOS.txt",
-                "spdxId": "MirOS",
-                "osadlRule": "EITHER\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Forward Copyright notices\nOR\n\tYOU MUST Provide License text in Documentation\n\tYOU MUST Provide Warranty disclaimer in Documentation\n\tYOU MUST Provide Copyright notices in Documentation\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "MirOS"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

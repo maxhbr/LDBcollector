@@ -30,24 +30,29 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/ISC.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/ISC.html "SPDX") (all data \[in
+    this repository\] is generated))
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   **↑**“This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
+    (CC0-1.0))
 
 Obligations
 -----------
@@ -81,15 +86,6 @@ URLs
 
 -   https://www.isc.org/isc-license-1.0.html
 
-OSADL Rule
-----------
-
-    USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-
-(source: OSADL License Checklist)
-
 Text
 ----
 
@@ -112,35 +108,42 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/ISC.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/ISC.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/ISC.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/ISC.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 
@@ -242,16 +245,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "ISC"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ISC.txt",
-                "spdxId": "ISC",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "ISC"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

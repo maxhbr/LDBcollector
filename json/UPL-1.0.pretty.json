@@ -46,16 +46,6 @@
             },
             "spdxLicenseId": "UPL-1.0"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt",
-            "spdxId": "UPL-1.0",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notice\n\tEITHER\n\t\tYOU MUST Forward License text\n\tOR\r\n\t\tYOU MUST Reference License text\n",
-            "_implications": {
-                "__impliedNames": [
-                    "UPL-1.0"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626#.VQsAeWTF8z0",

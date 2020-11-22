@@ -26,7 +26,8 @@ General Comments
     RPM displays it (x.y-z). Just add a dummy .0 to the end of the
     version then increment the Release field like any other package. ”
     (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -60,9 +61,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/XSkat.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/XSkat.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

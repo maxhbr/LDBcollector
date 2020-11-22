@@ -23,7 +23,8 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/CC-BY-SA-2.0-UK.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/CC-BY-SA-2.0-UK.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 ### Raw JSON
 

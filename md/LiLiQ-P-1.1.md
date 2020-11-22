@@ -11,7 +11,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/LiLiQ-P-1.1.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/LiLiQ-P-1.1.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 General Comments
 ----------------
@@ -32,9 +33,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/LiLiQ-P-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/LiLiQ-P-1.1.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 

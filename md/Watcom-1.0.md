@@ -15,7 +15,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/Watcom-1.0.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/Watcom-1.0.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 -   **↓**“Google Classification is CANNOT\_BE\_USED "Code released under
     the Sybase Open Watcom Public License version 1.0 cannot be used at
@@ -26,13 +27,15 @@ Comments on (easy) usability
     being licensed. This provision goes too far in restricting the
     exercise of Google\\8217s patent rights and is therefore prohibited
     at Google."” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license is OSI certified” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -406,19 +409,25 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Watcom-1.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Watcom-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml "Scancode")
+    (CC0-1.0)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 ### Raw JSON
 

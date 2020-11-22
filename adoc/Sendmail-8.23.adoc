@@ -70,8 +70,10 @@ $Revision: 8.23 $, Last updated $Date: 2014-01-26 20:10:01 $, Document139848.1
 
 ==== Facts
 
-* https://spdx.org/licenses/Sendmail-8.23.html[SPDX]
+* https://spdx.org/licenses/Sendmail-8.23.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail-8.23.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

@@ -37,8 +37,10 @@ unlimited permission to copy, distribute and modify it.
 
 ==== Facts
 
-* https://spdx.org/licenses/FSFUL.html[SPDX]
+* https://spdx.org/licenses/FSFUL.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-free.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

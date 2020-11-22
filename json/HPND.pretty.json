@@ -80,16 +80,6 @@
             },
             "spdxLicenseId": "HPND"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/HPND.txt",
-            "spdxId": "HPND",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Copyright notices In Documentation\n\tYOU MUST Forward License text In Documentation\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "HPND"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://www.opensource.org/licenses/HPND",

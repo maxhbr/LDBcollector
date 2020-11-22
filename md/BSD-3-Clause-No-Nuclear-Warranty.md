@@ -11,7 +11,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -20,7 +21,8 @@ General Comments
     BSD-3-Clause-No-Nuclear-License, except it has a disclaimer for
     nuclear factility use, instead of the software not licensed for such
     use. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -77,11 +79,14 @@ Raw Data
 ### Facts
 
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html "SPDX")
+    (all data \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

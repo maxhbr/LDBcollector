@@ -15,7 +15,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/RPL-1.5.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/RPL-1.5.html "SPDX") (all data \[in
+    this repository\] is generated))
 
 General Comments
 ----------------
@@ -25,11 +26,13 @@ General Comments
     Maximal copyleft licenses require you to share software you make
     with others, and to license that software alike when you do.”
     (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Per SPDX.org, this license was released 15 July 2007 This license
     is OSI certified. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.5.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.5.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -45,73 +48,6 @@ URLs
 -   http://www.gnu.org/licenses/license-list.html\#RPL
 
 -   http://www.opensource.org/licenses/RPL-1.5
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward License notice
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Provide Modification report
-    		YOU MUST Provide Modification notice
-    		YOU MUST Forward Copyright notice
-    		YOU MUST Forward License text
-    		YOU MUST Disseminate Software modification
-    			ATTRIBUTE Beginning At the most 1 month after beginning of deployment
-    			ATTRIBUTE Modification report
-    			ATTRIBUTE Retrieval information
-    	IF Combined work
-    		IF Documentation
-    			EITHER
-    				YOU MUST Forward License text
-    			OR
-    				YOU MUST Reference License text
-    USE CASE Binary delivery
-    	YOU MUST Forward License notice
-    	YOU MUST Provide Source code
-    		ATTRIBUTE Beginning At the most 1 month after beginning of deployment
-    		ATTRIBUTE End At least 12 months after end of deployment
-    		ATTRIBUTE No profit
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Provide Modification report
-    		YOU MUST Provide Modification notice
-    		YOU MUST Forward Copyright notice
-    		YOU MUST Forward License text
-    		YOU MUST Disseminate Software modification
-    			ATTRIBUTE Beginning At the most 1 month after beginning of deployment
-    			ATTRIBUTE Modification report
-    			ATTRIBUTE Retrieval information
-    	IF Combined work
-    		IF Documentation
-    			EITHER
-    				YOU MUST Forward License text
-    			OR
-    				YOU MUST Reference License text
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -282,22 +218,25 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/RPL-1.5.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/RPL-1.5.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.5.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/RPL-1.5.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 ### Raw JSON
 
@@ -327,7 +266,6 @@ Raw Data
                 ]
             ]
         ],
-        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -394,24 +332,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "RPL-1.5"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/RPL-1.5.txt",
-                "spdxId": "RPL-1.5",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License notice\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Forward Copyright notice\n\t\tYOU MUST Forward License text\n\t\tYOU MUST Disseminate Software modification\n\t\t\tATTRIBUTE Beginning At the most 1 month after beginning of deployment\n\t\t\tATTRIBUTE Modification report\n\t\t\tATTRIBUTE Retrieval information\n\tIF Combined work\n\t\tIF Documentation\n\t\t\tEITHER\r\n\t\t\t\tYOU MUST Forward License text\n\t\t\tOR\r\n\t\t\t\tYOU MUST Reference License text\nUSE CASE Binary delivery\n\tYOU MUST Forward License notice\n\tYOU MUST Provide Source code\n\t\tATTRIBUTE Beginning At the most 1 month after beginning of deployment\n\t\tATTRIBUTE End At least 12 months after end of deployment\n\t\tATTRIBUTE No profit\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification report\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Forward Copyright notice\n\t\tYOU MUST Forward License text\n\t\tYOU MUST Disseminate Software modification\n\t\t\tATTRIBUTE Beginning At the most 1 month after beginning of deployment\n\t\t\tATTRIBUTE Modification report\n\t\t\tATTRIBUTE Retrieval information\n\tIF Combined work\n\t\tIF Documentation\n\t\t\tEITHER\r\n\t\t\t\tYOU MUST Forward License text\n\t\t\tOR\r\n\t\t\t\tYOU MUST Reference License text\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "RPL-1.5"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft"
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -587,10 +507,6 @@ Raw Data
             [
                 "BlueOak License List",
                 "MaximalCopyleft"
-            ],
-            [
-                "OSADL License Checklist",
-                "Copyleft"
             ],
             [
                 "Scancode",

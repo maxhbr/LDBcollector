@@ -86,16 +86,6 @@
             },
             "spdxLicenseId": "MirOS"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MirOS.txt",
-            "spdxId": "MirOS",
-            "osadlRule": "EITHER\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Forward Copyright notices\nOR\n\tYOU MUST Provide License text in Documentation\n\tYOU MUST Provide Warranty disclaimer in Documentation\n\tYOU MUST Provide Copyright notices in Documentation\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MirOS"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://www.opensource.org/licenses/MirOS",

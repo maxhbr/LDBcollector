@@ -13,10 +13,12 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -30,20 +32,6 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/Unicode-DFS-2015.json
 
 -   **SPDX:** https://spdx.org/licenses/Unicode-DFS-2015.html
-
-OSADL Rule
-----------
-
-    YOU MUST Forward Copyright notices In Files
-    YOU MUST Forward License text In Files
-    YOU MUST Provide Copyright notices In Documentation
-    YOU MUST Provide License text In Documentation
-    IF Software modification
-    	YOU MUST Provide Modification notice In Files
-    	YOU MUST Provide Modification notice in Documentation
-    YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -111,18 +99,19 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Unicode-DFS-2015.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Unicode-DFS-2015.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unicode-dfs-2015.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2015.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 
@@ -163,16 +152,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Unicode-DFS-2015"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2015.txt",
-                "spdxId": "Unicode-DFS-2015",
-                "osadlRule": "YOU MUST Forward Copyright notices In Files\nYOU MUST Forward License text In Files\nYOU MUST Provide Copyright notices In Documentation\nYOU MUST Provide License text In Documentation\nIF Software modification\n\tYOU MUST Provide Modification notice In Files\n\tYOU MUST Provide Modification notice in Documentation\nYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "Unicode-DFS-2015"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

@@ -26,10 +26,12 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/OSL-3.0.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/OSL-3.0.html "SPDX") (all data \[in
+    this repository\] is generated))
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 General Comments
 ----------------
@@ -39,16 +41,19 @@ General Comments
     you build with the licensed software not just when you give copies
     to others, but also when you run the software for others to use over
     the Internet or another network.” (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
     you build with the licensed software, when you give copies to
     others.” (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-3.0.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-3.0.yml "Scancode")
+    (CC0-1.0))
 
 Obligations
 -----------
@@ -79,61 +84,6 @@ URLs
 -   http://www.opensource.org/licenses/OSL-3.0
 
 -   http://www.rosenlaw.com/OSL3.0.htm
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Forward Copyright notices
-    		YOU MUST Forward Patent notices
-    		YOU MUST Forward Trademark notices
-    		YOU MUST Provide Modification notice
-    	YOU MUST NOT Promote
-    	YOU MUST Search License acceptance
-    USE CASE Binary delivery
-    	EITHER
-    		YOU MUST Include Source code
-    			ATTRIBUTE Machine-readable
-    		IF Software modification
-    			YOU MUST Grant License
-    				ATTRIBUTE Original license
-    			YOU MUST Forward Copyright notices
-    			YOU MUST Forward Patent notices
-    			YOU MUST Forward Trademark notices
-    			YOU MUST Provide Modification notice
-    	OR
-    		YOU MUST Provide Delayed source code delivery
-    		YOU MUST Reference Source code
-    			ATTRIBUTE Machine-readable
-    			ATTRIBUTE No profit
-    			ATTRIBUTE Duration As long as distributed
-    	YOU MUST NOT Promote
-    	YOU MUST Search License acceptance
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY EUPL-1.1
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -193,30 +143,35 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/OSL-3.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/OSL-3.0.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-3.0.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/OSL-3.0.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/osl-3.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 ### Raw JSON
 
@@ -320,24 +275,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "OSL-3.0"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/OSL-3.0.txt",
-                "spdxId": "OSL-3.0",
-                "osadlRule": "USE CASE Source code delivery\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Provide Modification notice\n\tYOU MUST NOT Promote\n\tYOU MUST Search License acceptance\nUSE CASE Binary delivery\n\tEITHER\r\n\t\tYOU MUST Include Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\tIF Software modification\n\t\t\tYOU MUST Grant License\n\t\t\t\tATTRIBUTE Original license\n\t\t\tYOU MUST Forward Copyright notices\n\t\t\tYOU MUST Forward Patent notices\n\t\t\tYOU MUST Forward Trademark notices\n\t\t\tYOU MUST Provide Modification notice\n\tOR\r\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE No profit\n\t\t\tATTRIBUTE Duration As long as distributed\n\tYOU MUST NOT Promote\n\tYOU MUST Search License acceptance\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY EUPL-1.1\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "OSL-3.0"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft"
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -688,10 +625,6 @@ Raw Data
             [
                 "BlueOak License List",
                 "SaaSCopyleft"
-            ],
-            [
-                "OSADL License Checklist",
-                "Copyleft"
             ],
             [
                 "Scancode",

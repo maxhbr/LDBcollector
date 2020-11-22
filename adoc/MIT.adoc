@@ -41,23 +41,29 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[cho
 the MIT License, as the University interprets it for the pine email
 client, does not follow the DFSG. See the
 DebianFreeSoftwareGuidelinesDraftFAQ.'' (source:
-https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION))
 * **↑**``Google Classification is NOTICE'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy])
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 * **↑**``Is OSI Approved'' (source:
-https://spdx.org/licenses/MIT.html[SPDX])
+https://spdx.org/licenses/MIT.html[SPDX] (all data [in this repository]
+is generated))
 * **↑**``Rating is: Silver'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 * ``Because MIT has used many licenses for software, the Free Software
 Foundation considers MIT License ambiguous. The MIT License published on
 the OSI site is the same as the Expat License. '' (source:
-https://opensource.org/licenses/[OpenSourceInitiative])
+https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 
 === General Comments
 
 * ``Per SPDX.org, this license is OSI certified.'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml[Scancode]
+(CC0-1.0))
 
 === Obligations
 
@@ -95,16 +101,6 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[cho
 * https://opensource.com/article/18/3/patent-grant-mit-license
 * https://opensource.com/article/19/4/history-mit-license
 
-=== OSADL Rule
-
-....
-USE CASE Source code delivery OR Binary delivery
-	YOU MUST Forward Copyright notices
-	YOU MUST Forward License text
-....
-
-(source: OSADL License Checklist)
-
 === Text
 
 ....
@@ -134,22 +130,30 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ==== Facts
 
-* https://spdx.org/licenses/MIT.html[SPDX]
+* https://spdx.org/licenses/MIT.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+(CC0-1.0)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml[Scancode]
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt[OSADL
-License Checklist]
+(CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 * https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/MIT.yaml[finos/OSLC-handbook]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
+(https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION)
 * Override
 
 ==== Raw JSON
@@ -250,16 +254,6 @@ Knowledge International]
                 ]
             },
             "spdxLicenseId": "MIT"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt",
-            "spdxId": "MIT",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MIT"
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [

@@ -16,14 +16,16 @@
 ** Comments on (easy) usability
 
 - *↑*"Rating is: Silver" (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+  [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** General Comments
 
 - "Per Fedora, this license is very similar to MIT, except that it
   requires that US Export Control laws be followed, which makes it
   GPL-Incompatible. " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml][Scancode]]
+  (CC0-1.0))
 
 ** URLs
 
@@ -62,11 +64,14 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/Xerox.html][SPDX]]
+- [[https://spdx.org/licenses/Xerox.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 

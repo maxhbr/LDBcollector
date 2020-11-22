@@ -144,8 +144,10 @@ End of Schedule "B"
 
 ==== Facts
 
-* https://spdx.org/licenses/OCCT-PL.html[SPDX]
+* https://spdx.org/licenses/OCCT-PL.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/occt-pl.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

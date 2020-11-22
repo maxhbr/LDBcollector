@@ -11,7 +11,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -27,21 +28,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/Qhull.html
 
 -   https://fedoraproject.org/wiki/Licensing/Qhull
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	IF Software modification
-    		YOU MUST Provide Modification author
-    		YOU MUST Provide Modification date
-    		YOU MUST Provide Modification reason
-    		YOU MUST Reference Original source code
-    			ATTRIBUTE http://www.qhull.org
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -71,15 +57,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Qhull.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Qhull.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qhull.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -119,16 +105,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Qhull"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt",
-                "spdxId": "Qhull",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification author\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Modification reason\n\t\tYOU MUST Reference Original source code\n\t\t\tATTRIBUTE http://www.qhull.org\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "Qhull"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

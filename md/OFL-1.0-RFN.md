@@ -23,7 +23,8 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/OFL-1.0-RFN.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/OFL-1.0-RFN.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 ### Raw JSON
 

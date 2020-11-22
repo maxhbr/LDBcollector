@@ -16,7 +16,8 @@ General Comments
 -   “Per Fedora, "should" does not mean "must", and there are implied
     rights for unlimited copying and distribution rights for unmodified
     versions. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -39,9 +40,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/dvipdfm.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/dvipdfm.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

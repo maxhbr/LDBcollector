@@ -188,9 +188,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/YPL-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/YPL-1.1.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ypl-1.1.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

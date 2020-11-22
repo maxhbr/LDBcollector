@@ -17,18 +17,21 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/CPAL-1.0.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/CPAL-1.0.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 -   **↓**“Google Classification is CANNOT\_BE\_USED "Likewise, code
     released under the Common Public Attribution License (CPAL), notably
     the Mule ESB and most of the code that backs Reddit, cannot be used
     at Google; it is AGPL-like in crucial ways and is disallowed for the
     same reasons."” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↓**“Issue: Badgeware license (see:
     https://lwn.net/Articles/243841/)” (source: [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 General Comments
 ----------------
@@ -38,16 +41,19 @@ General Comments
     you build with the licensed software not just when you give copies
     to others, but also when you run the software for others to use over
     the Internet or another network.” (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
     you build with the licensed software, when you give copies to
     others.” (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Per SPDX.org, this license is OSI certifified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -184,25 +190,33 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/CPAL-1.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/CPAL-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml "Scancode")
+    (CC0-1.0)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 

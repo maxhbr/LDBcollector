@@ -16,7 +16,8 @@
 === Comments on (easy) usability
 
 * **↓**``Rating is: Lead'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -28,7 +29,8 @@ recommended. This would perhaps be considered Copyright only, except
 that no requirement of retention of copyright is present, and the
 copyright holder is disclaiming liability (albeit, poorly). This license
 is Free, and GPL compatible. '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -49,9 +51,12 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 ==== Facts
 
-* https://spdx.org/licenses/diffmark.html[SPDX]
+* https://spdx.org/licenses/diffmark.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

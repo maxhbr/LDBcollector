@@ -11,20 +11,11 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
-
--   “Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-    dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen
-    und für Veränderungen der Software keine Bedingungen hinsichtlich
-    des zu verwendenden Lizenztyps enthalten. Damit kann der
-    Lizenznehmer veränderte Versionen der Software unter beliebigen
-    Lizenzbedingungen weiterverbreiten, also auch in proprietäre
-    Software überführen.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
-    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL")))
 
 URLs
 ----
@@ -38,18 +29,6 @@ URLs
 -   https://github.com/bagder/curl/blob/master/COPYING
 
 -   http://curl.haxx.se/legal/licmix.html
-
--   https://github.com/curl/curl/blob/master/COPYING
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -77,18 +56,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/curl.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/curl.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/curl.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt "OSADL License Checklist")
-
--   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
-    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL"))
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -97,18 +73,9 @@ Raw Data
             "curl",
             "curl License",
             "scancode://curl",
-            "cURL License",
-            "Curl License"
+            "cURL License"
         ],
         "__impliedId": "curl",
-        "__impliedComments": [
-            [
-                "ifrOSS",
-                [
-                    "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                ]
-            ]
-        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -138,16 +105,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "curl"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt",
-                "spdxId": "curl",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "curl"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -232,39 +189,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrNoCopyleft",
-                "ifrURL": "https://github.com/curl/curl/blob/master/COPYING",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Curl License",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Curl License"
-                    ],
-                    "__impliedComments": [
-                        [
-                            "ifrOSS",
-                            [
-                                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://github.com/curl/curl/blob/master/COPYING"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -283,10 +207,6 @@ Raw Data
             ],
             [
                 "Scancode",
-                "NoCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "NoCopyleft"
             ]
         ],
@@ -313,10 +233,6 @@ Raw Data
             [
                 null,
                 "http://curl.haxx.se/legal/licmix.html"
-            ],
-            [
-                null,
-                "https://github.com/curl/curl/blob/master/COPYING"
             ]
         ]
     }

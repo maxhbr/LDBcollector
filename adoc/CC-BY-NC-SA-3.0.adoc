@@ -26,10 +26,12 @@ uses may be used at Google. For example, works under any Creative
 Commons licenses containing NC (CC BY-NC, CC BY-NC-SA, CC BY-NC-ND) may
 not be used at Google."'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy])
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 * **↓**``This license is not compatible with the
 DebianFreeSoftwareGuidelines (DFSG-unfree)'' (source:
-https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION))
 
 === General Comments
 
@@ -410,11 +412,15 @@ Creative Commons Notice
 
 ==== Facts
 
-* https://spdx.org/licenses/CC-BY-NC-SA-3.0.html[SPDX]
+* https://spdx.org/licenses/CC-BY-NC-SA-3.0.html[SPDX] (all data [in
+this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nc-sa-3.0.yml[Scancode]
+(CC0-1.0)
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION)
 * Override
 
 ==== Raw JSON

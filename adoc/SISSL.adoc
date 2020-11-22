@@ -19,7 +19,8 @@
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:
-https://spdx.org/licenses/SISSL.html[SPDX])
+https://spdx.org/licenses/SISSL.html[SPDX] (all data [in this
+repository] is generated))
 * **↓**``Google Classification is CANNOT_BE_USED "Code released under
 the Sun Industry Standards Source License (SISSL) cannot be used at
 Google. This license has terms that are very difficult to comply with
@@ -28,7 +29,8 @@ license). Source files related to sFlow sometimes are released under
 this license, but are typically also available under a slightly less
 onerous sFlow License."'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy])
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 
 === General Comments
 
@@ -351,13 +353,18 @@ Contributor(s):
 
 ==== Facts
 
-* https://spdx.org/licenses/SISSL.html[SPDX]
+* https://spdx.org/licenses/SISSL.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-sissl-1.1.yml[Scancode]
+(CC0-1.0)
 * https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
+(https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 
 ==== Raw JSON
 

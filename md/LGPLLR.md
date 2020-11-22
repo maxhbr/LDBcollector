@@ -261,9 +261,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/LGPLLR.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/LGPLLR.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpllr.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

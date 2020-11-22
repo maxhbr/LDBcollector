@@ -15,7 +15,8 @@ General Comments
 
 -   “this version of the license dates from 2004. There several minor
     variations publichsed since.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -118,9 +119,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Sendmail.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Sendmail.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

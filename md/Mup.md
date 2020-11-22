@@ -11,7 +11,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -20,7 +21,8 @@ General Comments
     it GPL- incompatible, due to the need to include the reasons for the
     changes. A copy of this license was taken from
     http://www.arkkra.com/doc/license.html on 2013-02-15. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mup.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mup.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -56,12 +58,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Mup.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Mup.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mup.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

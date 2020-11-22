@@ -13,7 +13,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -22,7 +23,8 @@ General Comments
     an additional section covering the removal of attributions in
     certain modification scenarios. It is Free and GPL-compatible. Use
     License MITNFA ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -73,12 +75,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/MITNFA.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/MITNFA.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

@@ -21,25 +21,30 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/Apache-1.1.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/Apache-1.1.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 -   **↑**“Older versions of the Apache License (1.0 and 1.1) are also
     DFSG free, but the Apache Software Foundation recommends using the
     Apache 2.0 license instead.” (source: [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license is OSI certified. This license has been
     superseded by Apache 2.0 ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -53,30 +58,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/Apache-1.1.html
 
 -   http://apache.org/licenses/LICENSE-1.1
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	IF Documentation
-    		YOU MUST Credit Verbatim In Documentation "This product includes software developed by the Apache Software Foundation (http://www.apache.org/)."
-    	IF Software modification
-    		YOU MUST NOT Promote using "Apache" or "Apache Software Foundation"
-    		YOU MUST NOT Use "Apache" [ex. "Jakarta," "Apache," or "Apache Commons,"] in product name
-    USE CASE Binary delivery
-    	IF Documentation
-    		YOU MUST Credit Verbatim In Documentation "This product includes software developed by the Apache Software Foundation (http://www.apache.org/)."
-    	YOU MUST Forward Copyright notices In Documentation OR Distribution material
-    	YOU MUST Forward License text In Documentation OR Distribution material
-    	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
-    	IF Software modification
-    		YOU MUST NOT Promote using "Apache" or "Apache Software Foundation"
-    		YOU MUST NOT Use "Apache" [ex. "Jakarta," "Apache," or "Apache Commons,"] in product name
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -134,28 +115,33 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Apache-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Apache-1.1.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   Override
 
@@ -255,16 +241,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Apache-1.1"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.1.txt",
-                "spdxId": "Apache-1.1",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim In Documentation \"This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache\" or \"Apache Software Foundation\"\n\t\tYOU MUST NOT Use \"Apache\" [ex. \"Jakarta,\" \"Apache,\" or \"Apache Commons,\"] in product name\nUSE CASE Binary delivery\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim In Documentation \"This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\"\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache\" or \"Apache Software Foundation\"\n\t\tYOU MUST NOT Use \"Apache\" [ex. \"Jakarta,\" \"Apache,\" or \"Apache Commons,\"] in product name\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "Apache-1.1"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

@@ -168,8 +168,10 @@ TAPR may publish updated versions of the OHL which retain the same general provi
 
 ==== Facts
 
-* https://spdx.org/licenses/TAPR-OHL-1.0.html[SPDX]
+* https://spdx.org/licenses/TAPR-OHL-1.0.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tapr-ohl-1.0.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

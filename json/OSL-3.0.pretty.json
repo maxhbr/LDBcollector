@@ -99,24 +99,6 @@
             },
             "spdxLicenseId": "OSL-3.0"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/OSL-3.0.txt",
-            "spdxId": "OSL-3.0",
-            "osadlRule": "USE CASE Source code delivery\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Provide Modification notice\n\tYOU MUST NOT Promote\n\tYOU MUST Search License acceptance\nUSE CASE Binary delivery\n\tEITHER\r\n\t\tYOU MUST Include Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\tIF Software modification\n\t\t\tYOU MUST Grant License\n\t\t\t\tATTRIBUTE Original license\n\t\t\tYOU MUST Forward Copyright notices\n\t\t\tYOU MUST Forward Patent notices\n\t\t\tYOU MUST Forward Trademark notices\n\t\t\tYOU MUST Provide Modification notice\n\tOR\r\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE No profit\n\t\t\tATTRIBUTE Duration As long as distributed\n\tYOU MUST NOT Promote\n\tYOU MUST Search License acceptance\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY EUPL-1.1\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "OSL-3.0"
-                ],
-                "__hasPatentHint": true,
-                "__impliedCopyleft": [
-                    [
-                        "OSADL License Checklist",
-                        "Copyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "Copyleft"
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://www.gnu.org/licenses/license-list.html#OSL",
@@ -466,10 +448,6 @@
         [
             "BlueOak License List",
             "SaaSCopyleft"
-        ],
-        [
-            "OSADL License Checklist",
-            "Copyleft"
         ],
         [
             "Scancode",

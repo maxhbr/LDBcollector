@@ -30,7 +30,8 @@ fee, and must be freely redistributable under reasonable and no more
 restrictive conditions. While the Sleepycat License is considered to be
 a free, GPL-compatible license, TOSL is GPL-incompatible because of the
 addition of the "no more restrictive" language. '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tosl.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tosl.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -82,8 +83,10 @@ OF SUCH DAMAGE.
 
 ==== Facts
 
-* https://spdx.org/licenses/TOSL.html[SPDX]
+* https://spdx.org/licenses/TOSL.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tosl.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

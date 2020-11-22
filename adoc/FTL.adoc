@@ -17,14 +17,17 @@
 
 * **↑**``Google Classification is NOTICE'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy])
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 * **↑**``Rating is: Bronze'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
 * ``Per SPDX.org, this license was released 27 Jan 2006'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -35,24 +38,6 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
 * http://freetype.org/patents.html
 * http://www.freetype.org/
-
-=== OSADL Rule
-
-....
-USE CASE Source code delivery
-	YOU MUST Forward License text
-	IF Software modification
-		YOU MUST Provide Modification report
-	YOU MUST Forward Copyright notices
-	YOU MUST NOT Promote
-	YOU MUST Credit FreeType Team
-USE CASE Binary delivery
-	YOU MUST Credit In Documentation FreeType Team
-	YOU MUST NOT Promote
-	YOU MUST Credit FreeType Team
-....
-
-(source: OSADL License Checklist)
 
 === Text
 
@@ -229,13 +214,15 @@ Legal Terms
 
 ==== Facts
 
-* https://spdx.org/licenses/FTL.html[SPDX]
+* https://spdx.org/licenses/FTL.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml[Scancode]
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt[OSADL
-License Checklist]
+(CC0-1.0)
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 
 ==== Raw JSON
 
@@ -290,16 +277,6 @@ Policy]
                 ]
             },
             "spdxLicenseId": "FTL"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt",
-            "spdxId": "FTL",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Forward Copyright notices\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\nUSE CASE Binary delivery\n\tYOU MUST Credit In Documentation FreeType Team\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\n",
-            "_implications": {
-                "__impliedNames": [
-                    "FTL"
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [

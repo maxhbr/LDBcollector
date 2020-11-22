@@ -199,8 +199,10 @@ THE SOFTWARE IN THIS PRODUCT WAS IN PART PROVIDED BY GENIVIA INC AND ANY EXPRESS
 
 ==== Facts
 
-* https://spdx.org/licenses/gSOAP-1.3b.html[SPDX]
+* https://spdx.org/licenses/gSOAP-1.3b.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gsoap-1.3b.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

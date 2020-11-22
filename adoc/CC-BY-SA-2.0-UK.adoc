@@ -26,7 +26,8 @@ Wales
 
 ==== Facts
 
-* https://spdx.org/licenses/CC-BY-SA-2.0-UK.html[SPDX]
+* https://spdx.org/licenses/CC-BY-SA-2.0-UK.html[SPDX] (all data [in
+this repository] is generated)
 
 ==== Raw JSON
 

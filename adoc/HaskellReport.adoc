@@ -41,8 +41,10 @@ to be a definition of the Haskell 2010 Language.
 
 ==== Facts
 
-* https://spdx.org/licenses/HaskellReport.html[SPDX]
+* https://spdx.org/licenses/HaskellReport.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/haskell-report.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

@@ -49,16 +49,6 @@
             },
             "spdxLicenseId": "bzip2-1.0.6"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt",
-            "spdxId": "bzip2-1.0.6",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\t\tYOU MUST NOT Appropriate\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "bzip2-1.0.6"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html",

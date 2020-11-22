@@ -18,7 +18,8 @@ General Comments
 ----------------
 
 -   “this is actually the same as the x11-keith-packard” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -57,11 +58,14 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/HPND-sell-variant.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/HPND-sell-variant.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-keith-packard.yml "Scancode")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

@@ -13,7 +13,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/MulanPSL-2.0.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/MulanPSL-2.0.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 General Comments
 ----------------
@@ -162,9 +163,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/MulanPSL-2.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/MulanPSL-2.0.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mulanpsl-2.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

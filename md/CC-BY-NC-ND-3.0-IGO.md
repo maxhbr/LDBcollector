@@ -90,8 +90,10 @@ Raw Data
 ### Facts
 
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html "SPDX")
+    (all data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nc-nd-3.0-igo.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

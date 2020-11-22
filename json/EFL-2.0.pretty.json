@@ -89,16 +89,6 @@
             },
             "spdxLicenseId": "EFL-2.0"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/EFL-2.0.txt",
-            "spdxId": "EFL-2.0",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
-            "_implications": {
-                "__impliedNames": [
-                    "EFL-2.0"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://amalasoft.com/downloads/ael/ds/LICENSE.txt",

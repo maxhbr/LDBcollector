@@ -11,7 +11,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -19,7 +20,8 @@ General Comments
 -   “Per SPDX.org, ANTLR used this public domain notice through version
     2.7 and then switched to a BSD license for version 3.0 and later. ”
     (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -75,12 +77,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/ANTLR-PD.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/ANTLR-PD.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

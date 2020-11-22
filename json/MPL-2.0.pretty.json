@@ -104,24 +104,6 @@
             },
             "spdxLicenseId": "MPL-2.0"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0.txt",
-            "spdxId": "MPL-2.0",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY EFL-2.0\r\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nCOPYLEFT CLAUSE Yes\nPATENT HINTS Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MPL-2.0"
-                ],
-                "__hasPatentHint": true,
-                "__impliedCopyleft": [
-                    [
-                        "OSADL License Checklist",
-                        "Copyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "Copyleft"
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "https://opensource.org/licenses/MPL-2.0"
@@ -596,10 +578,6 @@
         [
             "BlueOak License List",
             "WeakCopyleft"
-        ],
-        [
-            "OSADL License Checklist",
-            "Copyleft"
         ],
         [
             "Scancode",

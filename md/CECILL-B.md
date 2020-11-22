@@ -13,13 +13,15 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “The primary text is in French.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -291,12 +293,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/CECILL-B.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/CECILL-B.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

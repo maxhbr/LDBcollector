@@ -20,18 +20,10 @@
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
-
-* ``Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie
-dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und
-für Veränderungen der Software keine Bedingungen hinsichtlich des zu
-verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer
-veränderte Versionen der Software unter beliebigen Lizenzbedingungen
-weiterverbreiten, also auch in proprietäre Software überführen.''
-(source: https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
-(https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md[ODbL]))
 
 === URLs
 
@@ -43,19 +35,6 @@ weiterverbreiten, also auch in proprietäre Software überführen.''
 * *SPDX:* https://spdx.org/licenses/X11.html
 * http://source.icu-project.org/repos/icu/icu/trunk/license.html
 * http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3
-
-=== OSADL Rule
-
-....
-USE CASE Source code delivery OR Binary delivery
-	YOU MUST Forward Copyright notices
-	YOU MUST Forward License text
-	YOU MUST Provide Copyright notices In Documentation
-	YOU MUST Provide License text In Documentation
-	YOU MUST NOT Promote
-....
-
-(source: OSADL License Checklist)
 
 === Text
 
@@ -90,18 +69,18 @@ X Window System is a trademark of X Consortium, Inc.
 
 ==== Facts
 
-* https://spdx.org/licenses/ICU.html[SPDX]
-* https://spdx.org/licenses/X11.html[SPDX]
+* https://spdx.org/licenses/ICU.html[SPDX] (all data [in this
+repository] is generated)
+* https://spdx.org/licenses/X11.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.yml[Scancode]
+(CC0-1.0)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11.yml[Scancode]
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt[OSADL
-License Checklist]
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/X11.txt[OSADL
-License Checklist]
-* https://ifross.github.io/ifrOSS/Lizenzcenter[ifrOSS]
-(https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md[ODbL])
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -117,14 +96,6 @@ License Checklist]
         "scancode://x11"
     ],
     "__impliedId": "ICU",
-    "__impliedComments": [
-        [
-            "ifrOSS",
-            [
-                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-            ]
-        ]
-    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -154,16 +125,6 @@ License Checklist]
                 ]
             },
             "spdxLicenseId": "ICU"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt",
-            "spdxId": "ICU",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "ICU"
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -243,39 +204,6 @@ License Checklist]
                     ]
                 ]
             }
-        },
-        "ifrOSS": {
-            "ifrKind": "IfrNoCopyleft",
-            "ifrURL": "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3",
-            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-            "ifrName": "X11 License",
-            "ifrId": null,
-            "_implications": {
-                "__impliedNames": [
-                    "X11 License"
-                ],
-                "__impliedComments": [
-                    [
-                        "ifrOSS",
-                        [
-                            "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einrÃ¤umen und fÃ¼r VerÃ¤nderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer verÃ¤nderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietÃ¤re Software Ã¼berfÃ¼hren."
-                        ]
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "ifrOSS",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedURLs": [
-                    [
-                        null,
-                        "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
-                    ]
-                ]
-            }
         }
     },
     "__impliedJudgement": [
@@ -294,10 +222,6 @@ License Checklist]
         ],
         [
             "Scancode",
-            "NoCopyleft"
-        ],
-        [
-            "ifrOSS",
             "NoCopyleft"
         ]
     ],

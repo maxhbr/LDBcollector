@@ -3,18 +3,9 @@
         "curl",
         "curl License",
         "scancode://curl",
-        "cURL License",
-        "Curl License"
+        "cURL License"
     ],
     "__impliedId": "curl",
-    "__impliedComments": [
-        [
-            "ifrOSS",
-            [
-                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
-            ]
-        ]
-    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -44,16 +35,6 @@
                 ]
             },
             "spdxLicenseId": "curl"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt",
-            "spdxId": "curl",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "curl"
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -138,39 +119,6 @@
                     ]
                 ]
             }
-        },
-        "ifrOSS": {
-            "ifrKind": "IfrNoCopyleft",
-            "ifrURL": "https://github.com/curl/curl/blob/master/COPYING",
-            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-            "ifrName": "Curl License",
-            "ifrId": null,
-            "_implications": {
-                "__impliedNames": [
-                    "Curl License"
-                ],
-                "__impliedComments": [
-                    [
-                        "ifrOSS",
-                        [
-                            "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
-                        ]
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "ifrOSS",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedURLs": [
-                    [
-                        null,
-                        "https://github.com/curl/curl/blob/master/COPYING"
-                    ]
-                ]
-            }
         }
     },
     "__impliedJudgement": [
@@ -189,10 +137,6 @@
         ],
         [
             "Scancode",
-            "NoCopyleft"
-        ],
-        [
-            "ifrOSS",
             "NoCopyleft"
         ]
     ],
@@ -219,10 +163,6 @@
         [
             null,
             "http://curl.haxx.se/legal/licmix.html"
-        ],
-        [
-            null,
-            "https://github.com/curl/curl/blob/master/COPYING"
         ]
     ]
 }

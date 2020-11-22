@@ -15,7 +15,8 @@ General Comments
 
 -   “the latext2e, verbatim-manual and abstyles are similar licenses”
     (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -45,9 +46,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Abstyles.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Abstyles.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

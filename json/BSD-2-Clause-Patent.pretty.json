@@ -14,7 +14,6 @@
             ]
         ]
     ],
-    "__hasPatentHint": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -53,17 +52,6 @@
                 ]
             },
             "spdxLicenseId": "BSD-2-Clause-Patent"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt",
-            "spdxId": "BSD-2-Clause-Patent",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\nPATENT HINTS Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD-2-Clause-Patent"
-                ],
-                "__hasPatentHint": true
-            }
         },
         "Scancode": {
             "otherUrls": null,

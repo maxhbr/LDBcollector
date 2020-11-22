@@ -36,16 +36,19 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml "Scancode")
+    (CC0-1.0))
 
 Obligations
 -----------
@@ -75,20 +78,6 @@ URLs
 -   http://spdx.org/licenses/BSD-2-Clause
 
 -   http://www.freebsd.org/copyright/copyright.html
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    USE CASE Binary delivery
-    	YOU MUST Provide Copyright notices In Documentation OR Distribution material
-    	YOU MUST Provide License text In Documentation OR Distribution material
-    	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -121,29 +110,34 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-2-Clause.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   Override
 
@@ -239,16 +233,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "BSD-2-Clause"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause.txt",
-                "spdxId": "BSD-2-Clause",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "BSD-2-Clause"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

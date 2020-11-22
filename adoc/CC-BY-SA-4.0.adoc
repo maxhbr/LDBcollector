@@ -35,17 +35,20 @@ ____
 * **↑**``Version 4.0 is considered to be compatible to the DFSG. Changes
 from the previous version are discussed in a thread starting at
 https://lists.debian.org/3172728.oiOx47Q9HF@debstor'' (source:
-https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION))
 * **↓**``Google Classification is RESTRICTED'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy])
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 
 === General Comments
 
 * ``Strong copyleft licenses require you to share both the licensed
 software (like the weak copyleft licenses, and larger programs that you
 build with the licensed software, when you give copies to others.''
-(source: https://blueoakcouncil.org/copyleft[BlueOak License List])
+(source: https://blueoakcouncil.org/copyleft[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === Obligations
 
@@ -520,17 +523,24 @@ Creative Commons may be contacted at creativecommons.org.
 
 ==== Facts
 
-* https://spdx.org/licenses/CC-BY-SA-4.0.html[SPDX]
+* https://spdx.org/licenses/CC-BY-SA-4.0.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-sa-4.0.yml[Scancode]
+(CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-sa-4.0.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
+(https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION)
 
 ==== Raw JSON
 

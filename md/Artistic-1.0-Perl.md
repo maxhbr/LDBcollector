@@ -17,13 +17,16 @@ Comments on (easy) usability
     called Artistic License 2.0) instead. However, the original Artistic
     License is still considered DFSG-free.” (source: [Debian Free
     Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX") (all
+    data \[in this repository\] is generated))
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -32,7 +35,8 @@ General Comments
     site, which is different (particularly, clauses 5, 6, 7 and 8) than
     the Artistic License 1.0 w/clause 8 found on the OSI site. ”
     (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -42,43 +46,6 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/Artistic-1.0-Perl.json
 
 -   **SPDX:** https://spdx.org/licenses/Artistic-1.0-Perl.html
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward Warranty disclaimer
-    	IF Software modification
-    		YOU MUST Provide Modification notice
-    		YOU MUST Provide Modification report In Source code
-    		YOU MUST Provide Modification date In Source code
-    		EITHER
-    			YOU MUST Publish Source code
-    				ATTRIBUTE No charge
-    		OR
-    			YOU MUST Rename Source code
-    			YOU MUST Provide Original source code
-    			YOU MUST Provide Documentation
-    				YOU MUST Provide Modification report
-    	YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	EITHER
-    		YOU MUST Provide Original source code
-    		YOU MUST Reference Original source code
-    	OR
-    		IF Software modification
-    			YOU MUST Provide Source code
-    				ATTRIBUTE Machine-readable
-    			YOU MUST NOT Promote
-    	OR
-    		IF Software modification
-    			YOU MUST Rename Source code
-    			YOU MUST Provide Modification report In Distribution material
-    			YOU MUST Reference Original source code In Distribution material
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -218,20 +185,22 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Artistic-1.0-Perl.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 
@@ -292,16 +261,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Artistic-1.0-Perl"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Artistic-1.0-Perl.txt",
-                "spdxId": "Artistic-1.0-Perl",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Warranty disclaimer\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification report In Source code\n\t\tYOU MUST Provide Modification date In Source code\n\t\tEITHER\n\t\t\tYOU MUST Publish Source code\n\t\t\t\tATTRIBUTE No charge\r\n\t\tOR\r\n\t\t\tYOU MUST Rename Source code\n\t\t\tYOU MUST Provide Original source code\n\t\t\tYOU MUST Provide Documentation\n\t\t\t\tYOU MUST Provide Modification report\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tEITHER\n\t\tYOU MUST Provide Original source code\n\t\tYOU MUST Reference Original source code\n\tOR\r\n\t\tIF Software modification\n\t\t\tYOU MUST Provide Source code\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\tYOU MUST NOT Promote\n\tOR\r\n\t\tIF Software modification\n\t\t\tYOU MUST Rename Source code\n\t\t\tYOU MUST Provide Modification report In Distribution material\n\t\t\tYOU MUST Reference Original source code In Distribution material\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "Artistic-1.0-Perl"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,

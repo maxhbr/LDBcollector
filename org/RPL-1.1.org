@@ -18,7 +18,8 @@
 ** Comments on (easy) usability
 
 - *↑*"Is OSI Approved" (source:
-  [[https://spdx.org/licenses/RPL-1.1.html][SPDX]])
+  [[https://spdx.org/licenses/RPL-1.1.html][SPDX]] (all data [in this
+  repository] is generated))
 
 ** General Comments
 
@@ -26,11 +27,13 @@
   require you to share?” differently than other families. Maximal
   copyleft licenses require you to share software you make with others,
   and to license that software alike when you do." (source:
-  [[https://blueoakcouncil.org/copyleft][BlueOak License List]])
+  [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 - "Per SPDX.org, this license has been superseded by the Reciprocal
   Public License, version 1.5 " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml][Scancode]]
+  (CC0-1.0))
 
 ** URLs
 
@@ -213,13 +216,17 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/RPL-1.1.html][SPDX]]
+- [[https://spdx.org/licenses/RPL-1.1.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 *** Raw JSON
 

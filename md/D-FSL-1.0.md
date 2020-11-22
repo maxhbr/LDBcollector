@@ -17,7 +17,8 @@ General Comments
     German state. The English translation can be found here
     http://www.dipp.nrw.de/d-fsl/index\_html/lizenzen/en/D-FSL-1\_0\_en.txt
     ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/d-fsl-1.0-de.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/d-fsl-1.0-de.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -507,9 +508,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/D-FSL-1.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/D-FSL-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/d-fsl-1.0-de.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

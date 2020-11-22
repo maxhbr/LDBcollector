@@ -36,16 +36,6 @@
             },
             "spdxLicenseId": "Libpng"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Libpng.txt",
-            "spdxId": "Libpng",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST NOT Appropriate\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Mark\n\t\tYOU MUST NOT Appropriate\nUSE CASE Binary delivery\n",
-            "_implications": {
-                "__impliedNames": [
-                    "Libpng"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"

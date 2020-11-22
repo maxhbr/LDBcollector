@@ -15,7 +15,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -33,17 +34,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/MIT-CMU.html
 
 -   https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Provide Copyright notice In Documentation
-    	YOU MUST Provide License text In Documentation
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -71,19 +61,21 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/MIT-CMU.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/MIT-CMU.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-uc.yml "Scancode")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-template.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT-CMU.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 
@@ -130,16 +122,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MIT-CMU"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT-CMU.txt",
-                "spdxId": "MIT-CMU",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Provide Copyright notice In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "MIT-CMU"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

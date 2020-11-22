@@ -156,9 +156,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Vim.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Vim.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vim.yml "Scancode")
+    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))

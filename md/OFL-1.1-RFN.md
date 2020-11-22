@@ -7,7 +7,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/OFL-1.1-RFN.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/OFL-1.1-RFN.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 General Comments
 ----------------
@@ -28,7 +29,8 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/OFL-1.1-RFN.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/OFL-1.1-RFN.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 ### Raw JSON
 

@@ -30,7 +30,8 @@ General Comments
     properly dual licensed TORQUEv1.1 and OpenPBS. This also means that
     this license is not useful for other codebases without removing Note
     1. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -75,9 +76,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/TORQUE-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/TORQUE-1.1.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

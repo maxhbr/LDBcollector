@@ -11,7 +11,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html "SPDX")
+    (all data \[in this repository\] is generated))
 
 General Comments
 ----------------
@@ -163,8 +164,10 @@ Raw Data
 ### Facts
 
 -   [SPDX](https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html "SPDX")
+    (all data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cal-1.0-combined-work-exception.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

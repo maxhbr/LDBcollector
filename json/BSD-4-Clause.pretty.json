@@ -5,11 +5,9 @@
         "scancode://bsd-original",
         "BSD-Original",
         "bsd-4-clause",
-        "BSD License (original)",
-        "BSD 4-clause \"Original\" or \"Old\" License"
+        "BSD License (original)"
     ],
     "__impliedId": "BSD-4-Clause",
-    "__isFsfFree": true,
     "__impliedRatingState": [
         [
             "Override",
@@ -29,12 +27,6 @@
             "Scancode",
             [
                 "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
-            ]
-        ],
-        [
-            "ifrOSS",
-            [
-                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
             ]
         ]
     ],
@@ -67,42 +59,6 @@
                 ]
             },
             "spdxLicenseId": "BSD-4-Clause"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause.txt",
-            "spdxId": "BSD-4-Clause",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Advertisement\r\n\t\tYOU MUST Credit In Advertisement Verbatim \"This product includes software developed by the organization.\"\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n\tIF Advertisement\r\n\t\tYOU MUST Credit In Advertisement Verbatim \"This product includes software developed by the organization.\"\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD-4-Clause"
-                ]
-            }
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#BSDwithAdvertising",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "BSD with advertising",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "BSD License (original)",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD License (original)"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -250,39 +206,6 @@
                     [
                         "SPDX",
                         "https://spdx.org/licenses/BSD-4-Clause.html"
-                    ]
-                ]
-            }
-        },
-        "ifrOSS": {
-            "ifrKind": "IfrNoCopyleft",
-            "ifrURL": "https://www.freebsd.org/copyright/license.html",
-            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-            "ifrName": "BSD 4-clause \"Original\" or \"Old\" License",
-            "ifrId": null,
-            "_implications": {
-                "__impliedNames": [
-                    "BSD 4-clause \"Original\" or \"Old\" License"
-                ],
-                "__impliedComments": [
-                    [
-                        "ifrOSS",
-                        [
-                            "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
-                        ]
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "ifrOSS",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedURLs": [
-                    [
-                        null,
-                        "https://www.freebsd.org/copyright/license.html"
                     ]
                 ]
             }
@@ -439,13 +362,6 @@
             }
         ],
         [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ],
-        [
             "Google OSS Policy",
             {
                 "tag": "PositiveJudgement",
@@ -471,10 +387,6 @@
         ],
         [
             "Scancode",
-            "NoCopyleft"
-        ],
-        [
-            "ifrOSS",
             "NoCopyleft"
         ]
     ],
@@ -545,10 +457,6 @@
         [
             null,
             "http://www.gnu.org/philosophy/bsd.html"
-        ],
-        [
-            null,
-            "https://www.freebsd.org/copyright/license.html"
         ]
     ]
 }

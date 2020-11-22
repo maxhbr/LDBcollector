@@ -16,7 +16,8 @@ General Comments
 ----------------
 
 -   “Per SPDX.org, this license was released 25 January 2000” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-fslb-1.0.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-fslb-1.0.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -76,9 +77,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/SGI-B-1.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/SGI-B-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-fslb-1.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

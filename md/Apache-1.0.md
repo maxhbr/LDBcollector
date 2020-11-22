@@ -21,10 +21,12 @@ Comments on (easy) usability
 -   **↑**“Older versions of the Apache License (1.0 and 1.1) are also
     DFSG free, but the Apache Software Foundation recommends using the
     Apache 2.0 license instead.” (source: [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -39,32 +41,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/Apache-1.0.html
 
 -   http://www.apache.org/licenses/LICENSE-1.0
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
-    	IF Advertisement
-    		YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
-    	IF Software modification
-    		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
-    		YOU MUST NOT Use "Apache" in product name
-    USE CASE Binary delivery
-    	YOU MUST Forward Copyright notices In Documentation OR Distribution material
-    	YOU MUST Forward License text In Documentation OR Distribution material
-    	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
-    	YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
-    	IF Advertisement
-    		YOU MUST Credit Verbatim "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
-    	IF Software modification
-    		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
-    		YOU MUST NOT Use "Apache" in product name
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -128,18 +104,19 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Apache-1.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Apache-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.0.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   Override
 
@@ -188,16 +165,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Apache-1.0"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-1.0.txt",
-                "spdxId": "Apache-1.0",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache Server\" or \"Apache Group\"\n\t\tYOU MUST NOT Use \"Apache\" in product name\nUSE CASE Binary delivery\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote using \"Apache Server\" or \"Apache Group\"\n\t\tYOU MUST NOT Use \"Apache\" in product name\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "Apache-1.0"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,

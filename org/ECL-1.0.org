@@ -21,15 +21,18 @@
 ** Comments on (easy) usability
 
 - *↑*"Is OSI Approved" (source:
-  [[https://spdx.org/licenses/ECL-1.0.html][SPDX]])
+  [[https://spdx.org/licenses/ECL-1.0.html][SPDX]] (all data [in this
+  repository] is generated))
 
 - *↑*"Rating is: Silver" (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+  [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** General Comments
 
 - "Per SPDX.org, this license is OSI certified." (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-1.0.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-1.0.yml][Scancode]]
+  (CC0-1.0))
 
 ** URLs
 
@@ -108,15 +111,20 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/ECL-1.0.html][SPDX]]
+- [[https://spdx.org/licenses/ECL-1.0.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-1.0.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
 

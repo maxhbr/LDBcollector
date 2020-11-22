@@ -19,7 +19,8 @@
 
 - "Per SPDX.org, there is only an English version for 1.1, which
   includes some wording changes from v1.0 " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml][Scancode]]
+  (CC0-1.0))
 
 ** URLs
 
@@ -540,9 +541,11 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/CECILL-1.1.html][SPDX]]
+- [[https://spdx.org/licenses/CECILL-1.1.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 

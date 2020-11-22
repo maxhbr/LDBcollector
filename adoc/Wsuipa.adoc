@@ -16,13 +16,15 @@
 === Comments on (easy) usability
 
 * **↓**``Rating is: Lead'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
 * ``Per Fedora, this license was found on the "wsuipa" component of
 texlive 2010. It is Free, but GPL-incompatible. '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -50,9 +52,12 @@ fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
 
 ==== Facts
 
-* https://spdx.org/licenses/Wsuipa.html[SPDX]
+* https://spdx.org/licenses/Wsuipa.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

@@ -17,7 +17,8 @@
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -95,9 +96,12 @@ SOFTWARE.
 
 ==== Facts
 
-* https://spdx.org/licenses/xpp.html[SPDX]
+* https://spdx.org/licenses/xpp.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/indiana-extreme-1.2.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

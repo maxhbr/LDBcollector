@@ -15,14 +15,17 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 General Comments
 ----------------
@@ -30,7 +33,8 @@ General Comments
 -   “This is the OpenSSL license proper, without the SSLEay part. The
     SPDX OpenSSL identifier does not apply here. Instead it matches the
     openssl- ssleay license. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -42,47 +46,6 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/OpenSSL.json
 
 -   **SPDX:** https://spdx.org/licenses/OpenSSL.html
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery OR Binary delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	YOU MUST Credit Verbatim "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
-    	IF Advertisement
-    		YOU MUST Credit Verbatim "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
-    		YOU MUST Credit Verbatim "This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)"
-    	USE CASE Include Windows code
-    		YOU MUST Credit Verbatim "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
-    	IF Software modification
-    		YOU MUST NOT Promote Using "OpenSSL Toolkit" or "OpenSSL Project"
-    		YOU MUST NOT Use "OpenSSL" in product name
-    	YOU MUST NOT Modify License
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY BSD-4-Clause
-    COMPATIBILITY BSD-4-Clause-UC
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY EFL-2.0
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    COPYLEFT CLAUSE Questionable
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -138,27 +101,32 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/OpenSSL.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/OpenSSL.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml "Scancode")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl-ssleay.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/OpenSSL.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/OpenSSL.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 
@@ -211,23 +179,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "OpenSSL"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/OpenSSL.txt",
-                "spdxId": "OpenSSL",
-                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\tIF Advertisement\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\n\t\tYOU MUST Credit Verbatim \"This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\"\n\tUSE CASE Include Windows code\n\t\tYOU MUST Credit Verbatim \"This product includes software written by Tim Hudson (tjh@cryptsoft.com)\"\n\tIF Software modification\n\t\tYOU MUST NOT Promote Using \"OpenSSL Toolkit\" or \"OpenSSL Project\"\n\t\tYOU MUST NOT Use \"OpenSSL\" in product name\n\tYOU MUST NOT Modify License\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY BSD-4-Clause\nCOMPATIBILITY BSD-4-Clause-UC\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nCOPYLEFT CLAUSE Questionable\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "OpenSSL"
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "MaybeCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "MaybeCopyleft"
-                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "NO",
@@ -509,15 +460,11 @@ Raw Data
                 "NoCopyleft"
             ],
             [
-                "OSADL License Checklist",
-                "MaybeCopyleft"
-            ],
-            [
                 "Scancode",
                 "NoCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "MaybeCopyleft",
+        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \"This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit. (http://www.OpenSSL.org/)\"\n\n4. The names \"OpenSSL Toolkit\" and \"OpenSSL Project\" must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   licensing@OpenSSL.org.\n\n5. Products derived from this software may not be called \"OpenSSL\"\n   nor may \"OpenSSL\" appear in their names without prior written\n   permission of the OpenSSL Project.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \"This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit (http://www.OpenSSL.org/)\"\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n",
         "__impliedURLs": [

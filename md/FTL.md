@@ -11,16 +11,19 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license was released 27 Jan 2006” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -38,23 +41,6 @@ URLs
 -   http://freetype.org/patents.html
 
 -   http://www.freetype.org/
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward License text
-    	IF Software modification
-    		YOU MUST Provide Modification report
-    	YOU MUST Forward Copyright notices
-    	YOU MUST NOT Promote
-    	YOU MUST Credit FreeType Team
-    USE CASE Binary delivery
-    	YOU MUST Credit In Documentation FreeType Team
-    	YOU MUST NOT Promote
-    	YOU MUST Credit FreeType Team
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -231,18 +217,19 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/FTL.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/FTL.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 
@@ -296,16 +283,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "FTL"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt",
-                "spdxId": "FTL",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Forward Copyright notices\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\nUSE CASE Binary delivery\n\tYOU MUST Credit In Documentation FreeType Team\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "FTL"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

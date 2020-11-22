@@ -16,13 +16,15 @@
 === Comments on (easy) usability
 
 * **↓**``Rating is: Lead'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
 * ``Per Fedora, this is a permissive style license from Sun, Free and
 GPL compatible. '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -50,9 +52,12 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
 
 ==== Facts
 
-* https://spdx.org/licenses/Rdisc.html[SPDX]
+* https://spdx.org/licenses/Rdisc.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

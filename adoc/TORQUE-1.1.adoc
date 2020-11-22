@@ -32,7 +32,8 @@ fact that much of the TORQUE v2.5 code is derived from OpenPBS''s code,
 so the TORQUE v2.5+ software is properly dual licensed TORQUEv1.1 and
 OpenPBS. This also means that this license is not useful for other
 codebases without removing Note 1. '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -75,8 +76,10 @@ http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&industry=All&pr
 
 ==== Facts
 
-* https://spdx.org/licenses/TORQUE-1.1.html[SPDX]
+* https://spdx.org/licenses/TORQUE-1.1.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

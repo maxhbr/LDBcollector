@@ -4,7 +4,6 @@
         "BSD 3-Clause \"New\" or \"Revised\" License",
         "scancode://bsd-new",
         "bsd-3-clause",
-        "BSD License (no advertising)",
         "BSD-3",
         "BSD 3-Clause License",
         "BSD-3-clause",
@@ -13,11 +12,10 @@
         "Modified BSD License",
         "New BSD License",
         "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
-        "BSD 3-clause \"New\" or \"Revised\" License",
-        "BSD (3 clause)"
+        "BSD (3 clause)",
+        "BSD License (no advertising)"
     ],
     "__impliedId": "BSD-3-Clause",
-    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The BSD-3-clause License"
     ],
@@ -26,12 +24,6 @@
             "Scancode",
             [
                 "Per SPDX.org, this license is OSI certified."
-            ]
-        ],
-        [
-            "ifrOSS",
-            [
-                "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
             ]
         ]
     ],
@@ -101,42 +93,6 @@
                 ]
             },
             "spdxLicenseId": "BSD-3-Clause"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-3-Clause.txt",
-            "spdxId": "BSD-3-Clause",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD-3-Clause"
-                ]
-            }
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "BSD",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "BSD License (no advertising)",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD License (no advertising)"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -289,39 +245,6 @@
                     [
                         "SPDX",
                         "https://spdx.org/licenses/BSD-3-Clause.html"
-                    ]
-                ]
-            }
-        },
-        "ifrOSS": {
-            "ifrKind": "IfrNoCopyleft",
-            "ifrURL": "https://spdx.org/licenses/BSD-3-Clause",
-            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-            "ifrName": "BSD 3-clause \"New\" or \"Revised\" License",
-            "ifrId": null,
-            "_implications": {
-                "__impliedNames": [
-                    "BSD 3-clause \"New\" or \"Revised\" License"
-                ],
-                "__impliedComments": [
-                    [
-                        "ifrOSS",
-                        [
-                            "Lizenzen ohne Copyleft-Effekt zeichnen sich dadurch aus, dass sie dem Lizenznehmer alle Freiheiten einer Open Source Lizenz einräumen und für Veränderungen der Software keine Bedingungen hinsichtlich des zu verwendenden Lizenztyps enthalten. Damit kann der Lizenznehmer veränderte Versionen der Software unter beliebigen Lizenzbedingungen weiterverbreiten, also auch in proprietäre Software überführen."
-                        ]
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "ifrOSS",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedURLs": [
-                    [
-                        null,
-                        "https://spdx.org/licenses/BSD-3-Clause"
                     ]
                 ]
             }
@@ -556,13 +479,6 @@
             }
         ],
         [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ],
-        [
             "Google OSS Policy",
             {
                 "tag": "PositiveJudgement",
@@ -588,10 +504,6 @@
         ],
         [
             "Scancode",
-            "NoCopyleft"
-        ],
-        [
-            "ifrOSS",
             "NoCopyleft"
         ]
     ],
@@ -666,10 +578,6 @@
         [
             "OSI Page",
             "https://opensource.org/licenses/BSD-3-Clause"
-        ],
-        [
-            null,
-            "https://spdx.org/licenses/BSD-3-Clause"
         ]
     ]
 }

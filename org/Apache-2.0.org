@@ -46,25 +46,29 @@
 
 - *↑*"Google Classification is NOTICE" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
+  Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
 
 - *↑*"Is OSI Approved" (source:
-  [[https://spdx.org/licenses/Apache-2.0.html][SPDX]])
+  [[https://spdx.org/licenses/Apache-2.0.html][SPDX]] (all data [in this
+  repository] is generated))
 
 - *↑*"Older versions of the Apache License (1.0 and 1.1) are also DFSG
   free, but the Apache Software Foundation recommends using the Apache
   2.0 license instead." (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]])
+  Guidelines]] (NOASSERTION))
 
 - *↑*"Rating is: Silver" (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+  [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** General Comments
 
 - "Per SPDX.org, this version was released January 2004 This license is
   OSI certified " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml][Scancode]]
+  (CC0-1.0))
 
 ** Obligations
 
@@ -105,49 +109,6 @@
 - http://www.apache.org/licenses/LICENSE-2.0
 
 - http://www.opensource.org/licenses/Apache-2.0
-
-** OSADL Rule
-
-#+BEGIN_EXAMPLE
-  USE CASE Source code delivery
-  	YOU MUST Forward License text
-  	IF Software modification
-  		YOU MUST Provide Modification notices
-  		YOU MUST Forward Copyright notices
-  		YOU MUST Forward Patent notices
-  		YOU MUST Forward Trademark notices
-  		YOU MUST Forward Attribution notices
-  		IF Work Includes File "NOTICE"
-  			YOU MUST Delete Irrelevant parts
-  			EITHER
-  				YOU MUST Forward File "NOTICE"
-  			OR
-  				YOU MUST Forward File "NOTICE" In Source code
-  			OR
-  				YOU MUST Forward File "NOTICE" In Documentation
-  			OR
-  				YOU MUST Display File "NOTICE"
-  	IF Service offerings
-  		YOU MUST Indemnify Other contributors
-  USE CASE Binary delivery
-  	YOU MUST Provide License text
-  	IF Software modification
-  		IF Work Includes File "NOTICE"
-  			YOU MUST Delete Irrelevant parts
-  			EITHER
-  				YOU MUST Forward File "NOTICE"
-  			OR
-  				YOU MUST Forward File "NOTICE" In Source code
-  			OR
-  				YOU MUST Forward File "NOTICE" In Documentation
-  			OR
-  				YOU MUST Display File "NOTICE"
-  	IF Service offerings
-  		YOU MUST Indemnify Other contributors
-  PATENT HINTS Yes
-#+END_EXAMPLE
-
-(source: OSADL License Checklist)
 
 ** Text
 
@@ -361,34 +322,40 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/Apache-2.0.html][SPDX]]
+- [[https://spdx.org/licenses/Apache-2.0.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
+  (CC0-1.0)
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml][Scancode]]
-
-- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-2.0.txt][OSADL
-  License Checklist]]
+  (CC0-1.0)
 
 - [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt][choosealicense.com]]
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/Apache-2.0.yaml][finos/OSLC-handbook]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
+  ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]]
+  Guidelines]] (NOASSERTION)
 
 - Override
 
@@ -496,17 +463,6 @@
                   ]
               },
               "spdxLicenseId": "Apache-2.0"
-          },
-          "OSADL License Checklist": {
-              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-2.0.txt",
-              "spdxId": "Apache-2.0",
-              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification notices\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Forward Attribution notices\n\t\tIF Work Includes File \"NOTICE\"\n\t\t\tYOU MUST Delete Irrelevant parts\n\t\t\tEITHER\n\t\t\t\tYOU MUST Forward File \"NOTICE\"\n\t\t\tOR\n\t\t\t\tYOU MUST Forward File \"NOTICE\" In Source code\n\t\t\tOR\n\t\t\t\tYOU MUST Forward File \"NOTICE\" In Documentation\n\t\t\tOR\n\t\t\t\tYOU MUST Display File \"NOTICE\"\n\tIF Service offerings\n\t\tYOU MUST Indemnify Other contributors\nUSE CASE Binary delivery\n\tYOU MUST Provide License text\n\tIF Software modification\n\t\tIF Work Includes File \"NOTICE\"\n\t\t\tYOU MUST Delete Irrelevant parts\n\t\t\tEITHER\n\t\t\t\tYOU MUST Forward File \"NOTICE\"\n\t\t\tOR\n\t\t\t\tYOU MUST Forward File \"NOTICE\" In Source code\n\t\t\tOR\n\t\t\t\tYOU MUST Forward File \"NOTICE\" In Documentation\n\t\t\tOR\n\t\t\t\tYOU MUST Display File \"NOTICE\"\n\tIF Service offerings\n\t\tYOU MUST Indemnify Other contributors\nPATENT HINTS Yes\n",
-              "_implications": {
-                  "__impliedNames": [
-                      "Apache-2.0"
-                  ],
-                  "__hasPatentHint": true
-              }
           },
           "Scancode": {
               "otherUrls": [

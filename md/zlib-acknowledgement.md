@@ -13,12 +13,14 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   **↑**“This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
     Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 General Comments
 ----------------
@@ -28,7 +30,8 @@ General Comments
     documentation. For Fedora, this is our Release notes, so if you have
     any packages which use this license, you MUST be sure to have the
     appropriate acknowledgement in the release notes. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -41,26 +44,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/zlib-acknowledgement.html
 
 -   https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Warranty disclaimer
-    	YOU MUST Forward License text
-    	YOU MUST NOT Appropriate
-    	IF Software modification
-    		YOU MUST Mark
-    
-    USE CASE Binary delivery
-    	YOU MUST NOT Appropriate
-    	IF Software modification
-    		YOU MUST Mark
-    
-    USE CASE Commercial distribution
-    	YOU MUST Credit Verbatim "Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig"
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -94,17 +77,18 @@ Raw Data
 ### Facts
 
 -   [SPDX](https://spdx.org/licenses/zlib-acknowledgement.html "SPDX")
+    (all data \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/zlib-acknowledgement.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 
@@ -156,16 +140,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "zlib-acknowledgement"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/zlib-acknowledgement.txt",
-                "spdxId": "zlib-acknowledgement",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Forward License text\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\r\nUSE CASE Binary delivery\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\r\nUSE CASE Commercial distribution\n\tYOU MUST Credit Verbatim \"Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig\"\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "zlib-acknowledgement"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

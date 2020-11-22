@@ -17,13 +17,15 @@
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
 * ``this is a minor variation on similar licenses by Sun and Oracle.''
 (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -76,8 +78,11 @@ in the design, construction, operation or maintenance of any nuclear facility.
 ==== Facts
 
 * https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html[SPDX]
+(all data [in this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

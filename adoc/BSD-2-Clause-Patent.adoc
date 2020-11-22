@@ -7,7 +7,6 @@
 |Shortname |BSD-2-Clause-Patent
 |Rating |Go
 |Classification |NoCopyleft
-|Has Patent Hint |True
 |===
 
 *Other Names:*
@@ -18,9 +17,11 @@
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:
-https://spdx.org/licenses/BSD-2-Clause-Patent.html[SPDX])
+https://spdx.org/licenses/BSD-2-Clause-Patent.html[SPDX] (all data [in
+this repository] is generated))
 * **↑**``Rating is: Gold'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -28,29 +29,14 @@ https://blueoakcouncil.org/list[BlueOak License List])
 permissive license; b) that is compatible with the GNU General Public
 License (GPL), version 2; and c) which also has an express patent grant
 included. '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-plus-patent.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-plus-patent.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
 * *Homepage:* https://opensource.org/licenses/BSDplusPatent
 * *SPDX:* http://spdx.org/licenses/BSD-2-Clause-Patent.json
 * *SPDX:* https://spdx.org/licenses/BSD-2-Clause-Patent.html
-
-=== OSADL Rule
-
-....
-USE CASE Source code delivery
-	YOU MUST Forward Copyright notices
-	YOU MUST Forward License text
-	YOU MUST Forward Warranty disclaimer
-USE CASE Binary delivery
-	YOU MUST Provide Copyright notices In Documentation OR Distribution material
-	YOU MUST Provide License text In Documentation OR Distribution material
-	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
-PATENT HINTS Yes
-....
-
-(source: OSADL License Checklist)
 
 === Text
 
@@ -112,12 +98,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ==== Facts
 
-* https://spdx.org/licenses/BSD-2-Clause-Patent.html[SPDX]
+* https://spdx.org/licenses/BSD-2-Clause-Patent.html[SPDX] (all data [in
+this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+(CC0-1.0)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-plus-patent.yml[Scancode]
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt[OSADL
-License Checklist]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -138,7 +126,6 @@ License Checklist]
             ]
         ]
     ],
-    "__hasPatentHint": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -177,17 +164,6 @@ License Checklist]
                 ]
             },
             "spdxLicenseId": "BSD-2-Clause-Patent"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt",
-            "spdxId": "BSD-2-Clause-Patent",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\nPATENT HINTS Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD-2-Clause-Patent"
-                ],
-                "__hasPatentHint": true
-            }
         },
         "Scancode": {
             "otherUrls": null,

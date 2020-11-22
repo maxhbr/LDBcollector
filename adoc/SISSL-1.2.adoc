@@ -23,7 +23,8 @@ license). Source files related to sFlow sometimes are released under
 this license, but are typically also available under a slightly less
 onerous sFlow License."'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy])
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 
 === General Comments
 
@@ -183,10 +184,13 @@ All Rights Reserved.
 
 ==== Facts
 
-* https://spdx.org/licenses/SISSL-1.2.html[SPDX]
+* https://spdx.org/licenses/SISSL-1.2.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-sissl-1.2.yml[Scancode]
+(CC0-1.0)
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 
 ==== Raw JSON
 

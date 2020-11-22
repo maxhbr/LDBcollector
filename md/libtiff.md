@@ -13,10 +13,12 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -29,18 +31,6 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/libtiff.html
 
 -   https://fedoraproject.org/wiki/Licensing/libtiff
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Provide Copyright notices In Documentation
-    	YOU MUST Provide License text In Documentation
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -71,18 +61,19 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/libtiff.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/libtiff.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-tiff.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/libtiff.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 
@@ -123,16 +114,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "libtiff"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/libtiff.txt",
-                "spdxId": "libtiff",
-                "osadlRule": "USE CASE Source code delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "libtiff"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,

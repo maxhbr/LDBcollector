@@ -71,17 +71,6 @@
             "BlueOak License List"
         ]
     },
-    "MS-PL": {
-        "MaybeCopyleft": [
-            "OSADL License Checklist"
-        ],
-        "NoCopyleft": [
-            "BlueOak License List",
-            "Google OSS Policy",
-            "Scancode",
-            "ifrOSS"
-        ]
-    },
     "QPL-1.0": {
         "StrongCopyleft": [
             "BlueOak License List"
@@ -103,7 +92,6 @@
             "BlueOak License List"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -113,33 +101,6 @@
         ],
         "WeakCopyleft": [
             "Scancode"
-        ]
-    },
-    "MPL-1.1": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
-    "CDDL-1.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
-    "MPL-2.0-no-copyleft-exception": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "OLDAP-1.4": {
@@ -158,15 +119,6 @@
             "Scancode"
         ]
     },
-    "EPL-2.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "OSL-2.1": {
         "SaaSCopyleft": [
             "BlueOak License List"
@@ -175,22 +127,11 @@
             "Scancode"
         ]
     },
-    "OpenSSL": {
-        "MaybeCopyleft": [
-            "OSADL License Checklist"
-        ],
-        "NoCopyleft": [
-            "BlueOak License List",
-            "Google OSS Policy",
-            "Scancode"
-        ]
-    },
     "OSL-3.0": {
         "SaaSCopyleft": [
             "BlueOak License List"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -199,7 +140,6 @@
             "BlueOak License List"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -250,9 +190,6 @@
         ],
         "MaximalCopyleft": [
             "BlueOak License List"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "GPL-2.0-or-later": {
@@ -260,7 +197,6 @@
             "BlueOak License List"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -270,15 +206,6 @@
         ],
         "WeakCopyleft": [
             "Scancode"
-        ]
-    },
-    "LGPL-3.0-or-later": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "CPAL-1.0": {
@@ -305,34 +232,6 @@
             "Scancode"
         ]
     },
-    "LGPL-2.1-or-later": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
-    "BSL-1.0": {
-        "MaybeCopyleft": [
-            "OSADL License Checklist"
-        ],
-        "NoCopyleft": [
-            "BlueOak License List",
-            "Google OSS Policy",
-            "Scancode"
-        ]
-    },
-    "IPL-1.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "RPSL-1.0": {
         "WeakCopyleft": [
             "Scancode"
@@ -347,9 +246,6 @@
         ],
         "SaaSCopyleft": [
             "BlueOak License List"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "Artistic-1.0-Perl": {
@@ -409,15 +305,6 @@
             "Scancode"
         ]
     },
-    "CPL-1.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "CC-BY-SA-2.5": {
         "StrongCopyleft": [
             "BlueOak License List"
@@ -434,22 +321,11 @@
             "BlueOak License List"
         ]
     },
-    "MS-RL": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode",
-            "ifrOSS"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "GPL-3.0-or-later": {
         "StrongCopyleft": [
             "BlueOak License List"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     },
@@ -468,15 +344,6 @@
         ],
         "Copyleft": [
             "Scancode"
-        ]
-    },
-    "MPL-2.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "BSD-Protection": {
@@ -516,17 +383,7 @@
             "BlueOak License List"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
-        ]
-    },
-    "EPL-1.0": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "OSL-1.1": {
@@ -545,30 +402,12 @@
             "Scancode"
         ]
     },
-    "LGPL-2.1-only": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
-        ]
-    },
     "APSL-1.2": {
         "WeakCopyleft": [
             "Scancode"
         ],
         "SaaSCopyleft": [
             "BlueOak License List"
-        ]
-    },
-    "LGPL-3.0-only": {
-        "WeakCopyleft": [
-            "BlueOak License List",
-            "Scancode"
-        ],
-        "Copyleft": [
-            "OSADL License Checklist"
         ]
     },
     "OLDAP-1.2": {
@@ -592,7 +431,6 @@
             "BlueOak License List"
         ],
         "Copyleft": [
-            "OSADL License Checklist",
             "Scancode"
         ]
     }

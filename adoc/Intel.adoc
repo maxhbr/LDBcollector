@@ -20,16 +20,19 @@
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:
-https://spdx.org/licenses/Intel.html[SPDX])
+https://spdx.org/licenses/Intel.html[SPDX] (all data [in this
+repository] is generated))
 * **↑**``Rating is: Bronze'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
 * ``this has this title in SPDX and OSI text The Intel Open Source
 License for CDSA/CSSM Implementation (BSD License with Export Notice)''
 (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -86,12 +89,17 @@ goods and services.
 
 ==== Facts
 
-* https://spdx.org/licenses/Intel.html[SPDX]
+* https://spdx.org/licenses/Intel.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml[Scancode]
+(CC0-1.0)
 * https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
+(https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 
 ==== Raw JSON
 

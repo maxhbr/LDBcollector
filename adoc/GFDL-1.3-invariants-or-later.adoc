@@ -23,7 +23,8 @@
 
 ==== Facts
 
-* https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html[SPDX]
+* https://spdx.org/licenses/GFDL-1.3-invariants-or-later.html[SPDX] (all
+data [in this repository] is generated)
 
 ==== Raw JSON
 

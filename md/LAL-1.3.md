@@ -8,7 +8,8 @@ Comments on (easy) usability
 
 -   “It is currently unstettled whether this license is DFSG-free”
     (source: [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 General Comments
 ----------------
@@ -27,10 +28,12 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/LAL-1.3.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/LAL-1.3.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 

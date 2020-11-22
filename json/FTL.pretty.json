@@ -49,16 +49,6 @@
             },
             "spdxLicenseId": "FTL"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt",
-            "spdxId": "FTL",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Forward Copyright notices\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\nUSE CASE Binary delivery\n\tYOU MUST Credit In Documentation FreeType Team\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\n",
-            "_implications": {
-                "__impliedNames": [
-                    "FTL"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://freetype.fis.uniroma2.it/FTL.TXT",

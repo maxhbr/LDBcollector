@@ -43,20 +43,24 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/GPL-2.0-only.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/GPL-2.0-only.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 -   **↑**“This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
     basic software in the GNU operating system.” (source: [Debian Free
     Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 General Comments
 ----------------
@@ -65,7 +69,8 @@ General Comments
     software (like the weak copyleft licenses, and larger programs that
     you build with the licensed software, when you give copies to
     others.” (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “This is the last version of the GPL text as published by the FSF.
     This variation was published around about the time of the FSF
@@ -82,7 +87,8 @@ General Comments
     data explains their history and provides archive.org pointer to
     their texts. Per SPDX.org, this license was released June 1991 This
     license is OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0.yml "Scancode")
+    (CC0-1.0))
 
 Obligations
 -----------
@@ -123,112 +129,6 @@ URLs
 -   http://creativecommons.org/licenses/GPL/2.0/legalcode.pt
 
 -   http://www.opensource.org/licenses/GPL-2.0
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Provide Copyright notice
-    		ATTRIBUTE Highlighted
-    		ATTRIBUTE Appropriately
-    	YOU MUST Provide Warranty disclaimer (Warranty disclaimer)
-    		ATTRIBUTE Highlighted
-    		ATTRIBUTE Appropriately
-    	YOU MUST NOT Modify License notices
-    	YOU MUST NOT Modify Warranty disclaimer (Warranty disclaimer)
-    	YOU MUST Provide License text
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Provide Modification notice
-    		YOU MUST Provide Modification date
-    		IF Interactive AND Display License announcement
-    			YOU MUST Display License announcement
-    			YOU MUST Display Copyright notice
-    			YOU MUST Display Warranty disclaimer
-    			YOU MUST Reference License text
-    	YOU MUST NOT Restrict Granted rights
-    USE CASE Binary delivery
-    	YOU MUST Provide Copyright notice
-    		ATTRIBUTE Highlighted
-    		ATTRIBUTE Appropriately
-    	YOU MUST Provide Warranty disclaimer (Warranty disclaimer)
-    		ATTRIBUTE Highlighted
-    		ATTRIBUTE Appropriately
-    	YOU MUST NOT Modify License notices
-    	YOU MUST NOT Modify Warranty disclaimer (Warranty disclaimer)
-    	YOU MUST Provide License text
-    	EITHER
-    		YOU MUST Provide Source code
-    			ATTRIBUTE Machine-readable
-    			ATTRIBUTE Customary medium
-    			ATTRIBUTE Including Tool chain information
-    			ATTRIBUTE Including Installation scripts
-    			IF Binary delivery Via Internet
-    				ATTRIBUTE Source code delivery Via Internet
-    					ATTRIBUTE On same server
-    					ATTRIBUTE Equivalent
-    	OR
-    		YOU MUST Provide Written offer (Written offer)
-    			ATTRIBUTE Duration 3 years
-    			ATTRIBUTE To Any third party
-    			ATTRIBUTE No profit
-    			ATTRIBUTE Delayed source code delivery
-    				ATTRIBUTE Machine-readable
-    				ATTRIBUTE Customary medium
-    				ATTRIBUTE Including Tool chain information
-    				ATTRIBUTE Including Installation scripts
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Provide Modification notice
-    		YOU MUST Provide Modification date
-    		IF Interactive AND Display License announcement
-    			YOU MUST Display License announcement (Interactive announcement)
-    			YOU MUST Display Copyright notice
-    			YOU MUST Display Warranty disclaimer (Warranty disclaimer)
-    			YOU MUST Reference License text
-    	YOU MUST NOT Restrict Granted rights
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY EFL-2.0
-    COMPATIBILITY EUPL-1.1
-    COMPATIBILITY GPL-2.0-only WITH Classpath-exception-2.0
-    COMPATIBILITY GPL-2.0-or-later
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY LGPL-2.1-only
-    COMPATIBILITY LGPL-2.1-or-later
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY MPL-2.0
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    DEPENDING COMPATIBILITY EPL-2.0
-    INCOMPATIBILITY Apache-1.0
-    INCOMPATIBILITY Apache-1.1
-    INCOMPATIBILITY Apache-2.0
-    INCOMPATIBILITY BSD-4-Clause
-    INCOMPATIBILITY BSD-4-Clause-UC
-    INCOMPATIBILITY FTL
-    INCOMPATIBILITY IJG
-    INCOMPATIBILITY OpenSSL
-    INCOMPATIBILITY Python-2.0
-    INCOMPATIBILITY zlib-acknowledgement
-    INCOMPATIBILITY XFree86-1.1
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -580,39 +480,43 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/GPL-2.0-only.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/GPL-2.0-only.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-2.0-only.txt "OSADL License Checklist")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-2.0.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-2.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   Override
 
@@ -675,7 +579,6 @@ Raw Data
                 }
             ]
         ],
-        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -747,24 +650,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "GPL-2.0-only"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-2.0-only.txt",
-                "spdxId": "GPL-2.0-only",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST Provide Warranty disclaimer (Warranty disclaimer)\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer (Warranty disclaimer)\n\tYOU MUST Provide License text\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\t\tIF Interactive AND Display License announcement\n\t\t\tYOU MUST Display License announcement\n\t\t\tYOU MUST Display Copyright notice\n\t\t\tYOU MUST Display Warranty disclaimer\n\t\t\tYOU MUST Reference License text\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST Provide Warranty disclaimer (Warranty disclaimer)\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer (Warranty disclaimer)\n\tYOU MUST Provide License text\n\tEITHER\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Customary medium\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tIF Binary delivery Via Internet\n\t\t\t\tATTRIBUTE Source code delivery Via Internet\n\t\t\t\t\tATTRIBUTE On same server\n\t\t\t\t\tATTRIBUTE Equivalent\n\tOR\n\t\tYOU MUST Provide Written offer (Written offer)\n\t\t\tATTRIBUTE Duration 3 years\n\t\t\tATTRIBUTE To Any third party\n\t\t\tATTRIBUTE No profit\n\t\t\tATTRIBUTE Delayed source code delivery\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\tATTRIBUTE Including Installation scripts\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\t\tIF Interactive AND Display License announcement\n\t\t\tYOU MUST Display License announcement (Interactive announcement)\n\t\t\tYOU MUST Display Copyright notice\n\t\t\tYOU MUST Display Warranty disclaimer (Warranty disclaimer)\n\t\t\tYOU MUST Reference License text\n\tYOU MUST NOT Restrict Granted rights\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY EUPL-1.1\nCOMPATIBILITY GPL-2.0-only WITH Classpath-exception-2.0\nCOMPATIBILITY GPL-2.0-or-later\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY LGPL-2.1-only\nCOMPATIBILITY LGPL-2.1-or-later\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nDEPENDING COMPATIBILITY EPL-2.0\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY Apache-2.0\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "GPL-2.0-only"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft"
-                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "See Matrix",
@@ -1324,10 +1209,6 @@ Raw Data
             [
                 "BlueOak License List",
                 "StrongCopyleft"
-            ],
-            [
-                "OSADL License Checklist",
-                "Copyleft"
             ],
             [
                 "Scancode",

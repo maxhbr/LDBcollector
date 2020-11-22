@@ -15,7 +15,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX") (all data \[in
+    this repository\] is generated))
 
 General Comments
 ----------------
@@ -25,11 +26,13 @@ General Comments
     Maximal copyleft licenses require you to share software you make
     with others, and to license that software alike when you do.”
     (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Per SPDX.org, this license has been superseded by the Reciprocal
     Public License, version 1.5 ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -213,14 +216,18 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml "Scancode")
+    (CC0-1.0)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 

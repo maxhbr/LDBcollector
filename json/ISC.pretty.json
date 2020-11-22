@@ -97,16 +97,6 @@
             },
             "spdxLicenseId": "ISC"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ISC.txt",
-            "spdxId": "ISC",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
-            "_implications": {
-                "__impliedNames": [
-                    "ISC"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://openbsd.wikia.com/wiki/OpenBSD%27s_BSD_license",

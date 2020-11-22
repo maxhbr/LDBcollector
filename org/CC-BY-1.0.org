@@ -15,13 +15,14 @@
 
 - *↑*"Google Classification is NOTICE" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
+  Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
 
 - *↓*"It is believed that 2.0 still has problems
   (http://evan.prodromou.name/ccsummary/ccsummary.html), but it is under
   discussion between debian-legal and cc-licenses." (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]])
+  Guidelines]] (NOASSERTION))
 
 ** General Comments
 
@@ -99,15 +100,18 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/CC-BY-1.0.html][SPDX]]
+- [[https://spdx.org/licenses/CC-BY-1.0.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-1.0.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]]
+  Guidelines]] (NOASSERTION)
 
 *** Raw JSON
 

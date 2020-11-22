@@ -7,7 +7,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/LiLiQ-Rplus-1.1.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/LiLiQ-Rplus-1.1.html "SPDX") (all
+    data \[in this repository\] is generated))
 
 General Comments
 ----------------
@@ -28,7 +29,8 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/LiLiQ-Rplus-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/LiLiQ-Rplus-1.1.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 ### Raw JSON
 

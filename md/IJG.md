@@ -13,7 +13,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -30,24 +31,6 @@ URLs
 -   http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2
 
 -   http://www.gnu.org/licenses/license-list.html\#GPLCompatibleLicenses
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	YOU MUST NOT Appropriate
-    	IF Software modification
-    		YOU MUST Provide Modification report
-    	YOU MUST Indemnify Original authors
-    	YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	YOU MUST Credit Verbatim "This software is based in part on the work of the Independent JPEG Group"
-    PATENT HINTS Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -145,15 +128,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/IJG.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/IJG.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ijg.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -165,7 +148,6 @@ Raw Data
             "JPEG License"
         ],
         "__impliedId": "IJG",
-        "__hasPatentHint": true,
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -195,17 +177,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "IJG"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt",
-                "spdxId": "IJG",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Indemnify Original authors\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST Credit Verbatim \"This software is based in part on the work of the Independent JPEG Group\"\nPATENT HINTS Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "IJG"
-                    ],
-                    "__hasPatentHint": true
-                }
             },
             "Scancode": {
                 "otherUrls": [

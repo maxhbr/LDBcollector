@@ -13,7 +13,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -21,7 +22,8 @@ General Comments
 -   “Per Fedora, this license is very similar to MIT, except that it
     requires that US Export Control laws be followed, which makes it
     GPL-Incompatible. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -61,12 +63,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Xerox.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Xerox.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

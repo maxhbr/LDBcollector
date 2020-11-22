@@ -11,14 +11,16 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “This license is a hybrid of two common licenses the BSD-2-Clause
     (bsd- simplified) and the MIT License (mit). ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/linux-openib.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/linux-openib.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -61,12 +63,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/Linux-OpenIB.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/Linux-OpenIB.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/linux-openib.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

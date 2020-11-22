@@ -36,16 +36,6 @@
             },
             "spdxLicenseId": "libtiff"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/libtiff.txt",
-            "spdxId": "libtiff",
-            "osadlRule": "USE CASE Source code delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "libtiff"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": null,
             "homepageUrl": null,

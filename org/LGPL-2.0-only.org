@@ -18,24 +18,28 @@
 - *↑*"Earlier called the "Library General Public License"; this name is
   deprecated because it confuses the license's intent." (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]])
+  Guidelines]] (NOASSERTION))
 
 - *↑*"Is OSI Approved" (source:
-  [[https://spdx.org/licenses/LGPL-2.0-only.html][SPDX]])
+  [[https://spdx.org/licenses/LGPL-2.0-only.html][SPDX]] (all data [in
+  this repository] is generated))
 
 - *↓*"Google Classification is RESTRICTED" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
+  Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
 
 ** General Comments
 
 - "Weak copyleft licenses require sharing changes and additions to the
   licensed software when you give copies to others." (source:
-  [[https://blueoakcouncil.org/copyleft][BlueOak License List]])
+  [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 - "Per SPDX.org, this license was released June 1991. This license has
   been superseded by LGPL v2.1 " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml][Scancode]]
+  (CC0-1.0))
 
 ** URLs
 
@@ -541,19 +545,24 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/LGPL-2.0-only.html][SPDX]]
+- [[https://spdx.org/licenses/LGPL-2.0-only.html][SPDX]] (all data [in
+  this repository] is generated)
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.0.yaml][finos/OSLC-handbook]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]]
+  Guidelines]] (NOASSERTION)
 
 *** Raw JSON
 

@@ -22,7 +22,8 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/OFL-1.0-no-RFN.html][SPDX]]
+- [[https://spdx.org/licenses/OFL-1.0-no-RFN.html][SPDX]] (all data [in
+  this repository] is generated)
 
 *** Raw JSON
 

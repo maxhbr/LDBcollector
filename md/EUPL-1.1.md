@@ -28,13 +28,15 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX") (all data
+    \[in this repository\] is generated))
 
 -   **↓**“Google Classification is CANNOT\_BE\_USED "The EUPL is very
     similar to the AGPL. For the same reasons that the AGPL is banned,
     the use of EUPL-licensed software is not allowed at Google."”
     (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 General Comments
 ----------------
@@ -44,19 +46,22 @@ General Comments
     you build with the licensed software not just when you give copies
     to others, but also when you run the software for others to use over
     the Internet or another network.” (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
     you build with the licensed software, when you give copies to
     others.” (source: [BlueOak License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Per SPDX.org, this license was released 16 May 2008 This license is
     OSI certified. This license is available in the 22 official
     languages of the EU. The English version is included here. ”
     (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eupl-1.1.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eupl-1.1.yml "Scancode")
+    (CC0-1.0))
 
 Obligations
 -----------
@@ -89,73 +94,6 @@ URLs
 -   http://www.osor.eu/eupl/european-union-public-licence-eupl-v.1.1
 
 -   https://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST NOT Modify Copyright notice
-    	YOU MUST NOT Modify License notice
-    	YOU MUST NOT Modify Trademark notices
-    	YOU MUST NOT Modify Warranty disclaimer
-    	YOU MUST Forward License text
-    	IF Software modification
-    		YOU MUST Grant License
-    			ATTRIBUTE Original license
-    		YOU MUST Provide Modification notice
-    		YOU MUST Provide Modification date
-    	YOU MUST NOT Restrict Granted rights
-    USE CASE Binary delivery
-    	EITHER
-    		YOU MUST Include Source code
-    			ATTRIBUTE Machine-readable
-    		YOU MUST NOT Modify Copyright notice
-    		YOU MUST NOT Modify License notice
-    		YOU MUST NOT Modify Trademark notices
-    		YOU MUST NOT Modify Warranty disclaimer
-    		YOU MUST Forward License text
-    		IF Software modification
-    			YOU MUST Grant License
-    				ATTRIBUTE Original license
-    			YOU MUST Provide Modification notice
-    			YOU MUST Provide Modification date
-    	OR
-    		YOU MUST Provide Delayed source code delivery
-    		YOU MUST Reference Source code
-    			ATTRIBUTE No charges
-    			ATTRIBUTE Duration As long as distributed
-    	YOU MUST NOT Restrict Granted rights
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    INCOMPATIBILITY Apache-1.0
-    INCOMPATIBILITY Apache-1.1
-    INCOMPATIBILITY BSD-4-Clause
-    INCOMPATIBILITY BSD-4-Clause-UC
-    INCOMPATIBILITY FTL
-    INCOMPATIBILITY IJG
-    INCOMPATIBILITY OpenSSL
-    INCOMPATIBILITY Python-2.0
-    INCOMPATIBILITY zlib-acknowledgement
-    INCOMPATIBILITY XFree86-1.1
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -428,28 +366,32 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eupl-1.1.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/EUPL-1.1.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/eupl-1.1.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 ### Raw JSON
 
@@ -482,7 +424,6 @@ Raw Data
                 ]
             ]
         ],
-        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -559,24 +500,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "EUPL-1.1"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/EUPL-1.1.txt",
-                "spdxId": "EUPL-1.1",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST NOT Modify Copyright notice\n\tYOU MUST NOT Modify License notice\n\tYOU MUST NOT Modify Trademark notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification date\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tEITHER\n\t\tYOU MUST Include Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\tYOU MUST NOT Modify Copyright notice\n\t\tYOU MUST NOT Modify License notice\n\t\tYOU MUST NOT Modify Trademark notices\n\t\tYOU MUST NOT Modify Warranty disclaimer\n\t\tYOU MUST Forward License text\n\t\tIF Software modification\n\t\t\tYOU MUST Grant License\n\t\t\t\tATTRIBUTE Original license\n\t\t\tYOU MUST Provide Modification notice\n\t\t\tYOU MUST Provide Modification date\n\tOR\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charges\n\t\t\tATTRIBUTE Duration As long as distributed\n\tYOU MUST NOT Restrict Granted rights\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "EUPL-1.1"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft"
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -898,10 +821,6 @@ Raw Data
             [
                 "BlueOak License List",
                 "SaaSCopyleft"
-            ],
-            [
-                "OSADL License Checklist",
-                "Copyleft"
             ],
             [
                 "Scancode",

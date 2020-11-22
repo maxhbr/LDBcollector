@@ -45,16 +45,6 @@
             },
             "spdxLicenseId": "Unicode-DFS-2016"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2016.txt",
-            "spdxId": "Unicode-DFS-2016",
-            "osadlRule": "YOU MUST Forward Copyright notices In Files\nYOU MUST Forward License text In Files\nYOU MUST Provide Copyright notices In Documentation\nYOU MUST Provide License text In Documentation\nYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "Unicode-DFS-2016"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://www.unicode.org/copyright.html"

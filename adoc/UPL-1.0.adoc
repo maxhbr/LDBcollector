@@ -32,9 +32,11 @@ ____
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:
-https://spdx.org/licenses/UPL-1.0.html[SPDX])
+https://spdx.org/licenses/UPL-1.0.html[SPDX] (all data [in this
+repository] is generated))
 * **↑**``Rating is: Silver'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -71,19 +73,6 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt
 * http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626#.VQsAeWTF8z0
 * https://oss.oracle.com/licenses/upl/index.html
 * https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf
-
-=== OSADL Rule
-
-....
-USE CASE Source code delivery OR Binary delivery
-	YOU MUST Forward Copyright notice
-	EITHER
-		YOU MUST Forward License text
-	OR
-		YOU MUST Reference License text
-....
-
-(source: OSADL License Checklist)
 
 === Text
 
@@ -130,11 +119,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ==== Facts
 
-* https://spdx.org/licenses/UPL-1.0.html[SPDX]
+* https://spdx.org/licenses/UPL-1.0.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/upl-1.0.yml[Scancode]
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt[OSADL
-License Checklist]
+(CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 
@@ -188,16 +178,6 @@ License Checklist]
                 ]
             },
             "spdxLicenseId": "UPL-1.0"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt",
-            "spdxId": "UPL-1.0",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notice\n\tEITHER\n\t\tYOU MUST Forward License text\n\tOR\r\n\t\tYOU MUST Reference License text\n",
-            "_implications": {
-                "__impliedNames": [
-                    "UPL-1.0"
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [

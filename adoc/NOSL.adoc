@@ -520,8 +520,10 @@ EXHIBIT A - Netizen Open Source License
 
 ==== Facts
 
-* https://spdx.org/licenses/NOSL.html[SPDX]
+* https://spdx.org/licenses/NOSL.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nosl-1.0.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

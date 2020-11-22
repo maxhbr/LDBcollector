@@ -16,7 +16,8 @@ General Comments
 ----------------
 
 -   “Per SPDX.org, this license was released 1 Oct 2004” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -430,9 +431,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/LPPL-1.3a.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/LPPL-1.3a.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

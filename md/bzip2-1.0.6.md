@@ -13,14 +13,16 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “until bzip2 1.0.6 there is only one license and not two as listed
     in SPDX” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -37,25 +39,6 @@ URLs
 -   http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
 
 -   http://www.bzip.org/
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	YOU MUST NOT Appropriate
-    	IF Software modification
-    		YOU MUST Mark
-    		YOU MUST NOT Appropriate
-    		YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	YOU MUST NOT Appropriate
-    	IF Software modification
-    		YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -98,15 +81,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/bzip2-1.0.6.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/bzip2-1.0.6.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -160,16 +143,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "bzip2-1.0.6"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt",
-                "spdxId": "bzip2-1.0.6",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\t\tYOU MUST NOT Appropriate\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "bzip2-1.0.6"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

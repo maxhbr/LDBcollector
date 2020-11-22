@@ -47,16 +47,6 @@
             },
             "spdxLicenseId": "WTFPL"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/WTFPL.txt",
-            "spdxId": "WTFPL",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\n",
-            "_implications": {
-                "__impliedNames": [
-                    "WTFPL"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://fedoraproject.org/wiki/Licensing/WTFPL",

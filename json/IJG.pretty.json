@@ -6,7 +6,6 @@
         "JPEG License"
     ],
     "__impliedId": "IJG",
-    "__hasPatentHint": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -36,17 +35,6 @@
                 ]
             },
             "spdxLicenseId": "IJG"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/IJG.txt",
-            "spdxId": "IJG",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Indemnify Original authors\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST Credit Verbatim \"This software is based in part on the work of the Independent JPEG Group\"\nPATENT HINTS Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "IJG"
-                ],
-                "__hasPatentHint": true
-            }
         },
         "Scancode": {
             "otherUrls": [

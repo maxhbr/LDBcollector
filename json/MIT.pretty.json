@@ -94,16 +94,6 @@
             },
             "spdxLicenseId": "MIT"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt",
-            "spdxId": "MIT",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MIT"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "https://opensource.com/article/18/3/patent-grant-mit-license",

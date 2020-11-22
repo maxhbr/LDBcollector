@@ -74,28 +74,33 @@
 - *↑*"Earlier called the "Library General Public License"; this name is
   deprecated because it confuses the license's intent." (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]])
+  Guidelines]] (NOASSERTION))
 
 - *↑*"Is OSI Approved" (source:
-  [[https://spdx.org/licenses/LGPL-3.0-only.html][SPDX]])
+  [[https://spdx.org/licenses/LGPL-3.0-only.html][SPDX]] (all data [in
+  this repository] is generated))
 
 - *↑*"This software Licenses is OK for Fedora" (source:
   [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]])
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 - *↓*"Google Classification is RESTRICTED" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
+  Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
 
 ** General Comments
 
 - "Weak copyleft licenses require sharing changes and additions to the
   licensed software when you give copies to others." (source:
-  [[https://blueoakcouncil.org/copyleft][BlueOak License List]])
+  [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 - "Per SPDX.org, this license was released 29 June 2007. This license is
   OSI Certified. " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml][Scancode]]
+  (CC0-1.0))
 
 ** Obligations
 
@@ -142,272 +147,6 @@
 - http://www.gnu.org/licenses/why-not-lgpl.html
 
 - http://www.opensource.org/licenses/LGPL-3.0
-
-** OSADL Rule
-
-#+BEGIN_EXAMPLE
-  USE CASE Source code delivery
-  	YOU MUST Provide Copyright notice
-  		ATTRIBUTE Highlighted
-  		ATTRIBUTE Appropriately
-  	YOU MUST NOT Modify License notices
-  	YOU MUST NOT Modify Warranty disclaimer
-  	YOU MUST Provide License text GPL-3.0 AND LGPL-3.0
-  		IF Non-permissive Additional terms
-  			YOU MUST Forward Additional terms
-  			EITHER
-  				YOU MUST Include Additional terms In Source code
-  			OR
-  				YOU MUST Reference Additional terms In Source code
-  	IF Software modification
-  		YOU MUST Provide Modification notice
-  			ATTRIBUTE Highlighted
-  		YOU MUST Provide Modification date
-  		YOU MUST Provide Legal notices
-  			ATTRIBUTE Highlighted
-  		YOU MUST Grant License
-  			ATTRIBUTE Original license
-  		IF Interactive AND Displayed License announcement
-  			YOU MUST Display Appropriate legal notices
-  				ATTRIBUTE Highlighted
-  		EITHER
-  			YOU MUST Ensure Interoperability
-  		OR
-  			YOU MUST Use GPL-3.0
-  	YOU MUST NOT Restrict Granted rights
-  		EXCEPT IF NOT Permitted By Additional terms
-  	YOU MUST NOT Litigate Circumvention
-  USE CASE Binary delivery
-  	YOU MUST Provide Copyright notice
-  		ATTRIBUTE Highlighted
-  		ATTRIBUTE Appropriately
-  	YOU MUST NOT Modify License notices
-  	YOU MUST NOT Modify Warranty disclaimer
-  	YOU MUST Provide License text GPL-3.0 AND LGPL-3.0
-  		IF Non-permissive Additional terms
-  			EITHER
-  				YOU MUST Include Additional terms In Source code
-  			OR
-  				YOU MUST Reference Additional terms In Source code
-  			YOU MUST Provide Additional terms
-  	EITHER IF Binary delivery On Customary medium OR Installed
-  		EITHER
-  			YOU MUST Provide Source code
-  				ATTRIBUTE Machine-readable
-  				ATTRIBUTE Customary medium
-  				ATTRIBUTE Documented format
-  				ATTRIBUTE Including Installation scripts
-  				ATTRIBUTE Including Tool chain information
-  		OR
-  			YOU MUST Provide Written offer
-  				ATTRIBUTE Duration At least 3 years
-  				ATTRIBUTE Duration As long as product is supported
-  				ATTRIBUTE Delayed source code delivery
-  					ATTRIBUTE Machine-readable
-  					ATTRIBUTE Documented format
-  					ATTRIBUTE Including Installation scripts
-  					ATTRIBUTE Including Tool chain information
-  					EITHER
-  						ATTRIBUTE Customary medium
-  						ATTRIBUTE No profit
-  					OR
-  						ATTRIBUTE Via Internet
-  						ATTRIBUTE No charge
-  	OR IF Binary delivery Via Internet
-  		YOU MUST Provide Source code
-  			ATTRIBUTE Machine-readable
-  			ATTRIBUTE Documented format
-  			ATTRIBUTE Including Installation scripts
-  			ATTRIBUTE Including Tool chain information
-  			ATTRIBUTE Via Internet
-  			ATTRIBUTE Duration As long as needed
-  			EITHER IF Source code On same server
-  				ATTRIBUTE No charge
-  				ATTRIBUTE Equivalent
-  			OR IF Source code On other server
-  				ATTRIBUTE No charge
-  				ATTRIBUTE Equivalent
-  				YOU MUST Reference Source code
-  	OR IF Binary delivery Via peer-to-peer transmission
-  		YOU MUST Reference Source code
-  			ATTRIBUTE No charge
-  			ATTRIBUTE Machine-readable
-  			ATTRIBUTE Documented format
-  			ATTRIBUTE Including Installation scripts
-  			ATTRIBUTE Including Tool chain information
-  			ATTRIBUTE Via Internet
-  			ATTRIBUTE Duration As long as needed
-  	IF User product
-  		YOU MUST Provide Installation information
-  			EXCEPT IF Installation Is NOT Feasible
-  	IF Software modification
-  		YOU MUST Provide Modification notice
-  			ATTRIBUTE Highlighted
-  		YOU MUST Provide Modification date
-  		YOU MUST Provide Legal notices
-  			ATTRIBUTE Highlighted
-  		YOU MUST Grant License
-  			ATTRIBUTE Original license
-  		IF Interactive AND Displayed License announcement
-  			YOU MUST Display Appropriate legal notices
-  				ATTRIBUTE Highlighted
-  		EITHER
-  			YOU MUST Ensure Interoperability
-  		OR
-  			YOU MUST Use GPL-3.0
-  	YOU MUST NOT Restrict Granted rights
-  		EXCEPT IF NOT Permitted By Additional terms
-  USE CASE Binary delivery Of Combined work
-  	YOU MUST NOT Impede Modification Of the Library
-  	YOU MUST NOT Impede Reverse engineering
-  		ATTRIBUTE For Debugging Of Modification
-  	YOU MUST Provide License notices
-  		ATTRIBUTE Highlighted
-  	YOU MUST Provide License text GPL-3.0 AND LGPL-3.0
-  	IF Displayed Copyright notices
-  		YOU MUST Display Copyright notices Of the Library
-  		YOU MUST Reference License text GPL-3.0 AND LGPL-3.0
-  	EITHER
-  		YOU MUST Provide Linkable work
-  		YOU MUST Permit Relinking
-  		YOU MUST Provide Source code Of the Library
-  			EITHER IF Binary delivery On Customary medium OR Installed
-  				EITHER
-  					YOU MUST Provide Source code Of the Library
-  						ATTRIBUTE Machine-readable
-  						ATTRIBUTE Customary medium
-  						ATTRIBUTE Documented format
-  						ATTRIBUTE Including Installation scripts
-  						ATTRIBUTE Including Tool chain information
-  				OR
-  					YOU MUST Provide Written offer
-  						ATTRIBUTE Duration At least 3 years
-  						ATTRIBUTE Duration As long as product is supported
-  						ATTRIBUTE Delayed source code delivery Of the Library
-  							ATTRIBUTE Machine-readable
-  							ATTRIBUTE Documented format
-  							ATTRIBUTE Including Installation scripts
-  							ATTRIBUTE Including Tool chain information
-  							EITHER
-  								ATTRIBUTE Customary medium
-  								ATTRIBUTE No profit
-  							OR
-  								ATTRIBUTE Via Internet
-  								ATTRIBUTE No charge
-  			OR IF Binary delivery Via Internet
-  				YOU MUST Provide Source code Of the Library
-  					ATTRIBUTE Machine-readable
-  					ATTRIBUTE Documented format
-  					ATTRIBUTE Including Installation scripts
-  					ATTRIBUTE Including Tool chain information
-  					ATTRIBUTE Via Internet
-  					ATTRIBUTE Duration As long as needed
-  					EITHER IF Source code On same server
-  						ATTRIBUTE No charge
-  						ATTRIBUTE Equivalent
-  					OR IF Source code On other server
-  						ATTRIBUTE No charge
-  						ATTRIBUTE Equivalent
-  						YOU MUST Reference Source code
-  			OR IF Binary delivery Via peer-to-peer transmission
-  				YOU MUST Reference Source code Of the Library
-  					ATTRIBUTE No charge
-  					ATTRIBUTE Machine-readable
-  					ATTRIBUTE Documented format
-  					ATTRIBUTE Including Installation scripts
-  					ATTRIBUTE Including Tool chain information
-  					ATTRIBUTE Via Internet
-  					ATTRIBUTE Duration As long as needed
-  		IF Installed AND User product
-  			YOU MUST Provide Installation information
-  				ATTRIBUTE Included in Source code delivery Of the Library
-  				EXCEPT IF Installation Is NOT Feasible
-  	OR
-  		YOU MUST Use Shared library
-  		IF Installed AND User product
-  			YOU MUST Provide Installation information
-  				EITHER IF Binary delivery On Customary medium OR Installed
-  					EITHER
-  						YOU MUST Provide Installation information
-  							ATTRIBUTE Machine-readable
-  							ATTRIBUTE Customary medium
-  							ATTRIBUTE Documented format
-  					OR
-  						YOU MUST Provide Written offer For Installation information
-  							ATTRIBUTE Duration At least 3 years
-  							ATTRIBUTE Duration As long as product is supported
-  							ATTRIBUTE Installation Information
-  								ATTRIBUTE Machine-readable
-  								ATTRIBUTE Documented format
-  								EITHER
-  									ATTRIBUTE Customary medium
-  									ATTRIBUTE No profit
-  								OR
-  									ATTRIBUTE Via Internet
-  									ATTRIBUTE No charge
-  				OR IF Binary delivery Via Internet
-  					YOU MUST Provide Installation information
-  						ATTRIBUTE Machine-readable
-  						ATTRIBUTE Documented format
-  						ATTRIBUTE Via Internet
-  						ATTRIBUTE Duration As long as needed
-  						EITHER IF Installation information On same server
-  							ATTRIBUTE No charge
-  							ATTRIBUTE Equivalent
-  						OR IF Installation information On other server
-  							ATTRIBUTE No charge
-  							ATTRIBUTE Equivalent
-  							YOU MUST Reference Installation information
-  				OR IF Binary delivery Via peer-to-peer transmission
-  					YOU MUST Reference Installation information
-  						ATTRIBUTE No charge
-  						ATTRIBUTE Machine-readable
-  						ATTRIBUTE Documented format
-  						ATTRIBUTE Via Internet
-  						ATTRIBUTE Duration As long as needed
-  				EXCEPT IF Installation Is NOT Feasible
-  	IF Combined library
-  		YOU MUST Provide Library
-  			ATTRIBUTE Original license
-  			ATTRIBUTE Uncombined
-  		YOU MUST Provide License notices
-  		YOU MUST Reference Library
-  			ATTRIBUTE Uncombined
-  COMPATIBILITY Apache-2.0
-  COMPATIBILITY BSD-2-Clause
-  COMPATIBILITY BSD-3-Clause
-  COMPATIBILITY bzip2-1.0.5
-  COMPATIBILITY bzip2-1.0.6
-  COMPATIBILITY CC0-1.0
-  COMPATIBILITY curl
-  COMPATIBILITY EFL-2.0
-  COMPATIBILITY IBM-pibs
-  COMPATIBILITY ICU
-  COMPATIBILITY ISC
-  COMPATIBILITY Libpng
-  COMPATIBILITY MIT
-  COMPATIBILITY MPL-2.0
-  COMPATIBILITY NTP
-  COMPATIBILITY UPL-1.0
-  COMPATIBILITY WTFPL
-  COMPATIBILITY X11
-  COMPATIBILITY Zlib
-  DEPENDING COMPATIBILITY EPL-2.0
-  INCOMPATIBILITY Apache-1.0
-  INCOMPATIBILITY Apache-1.1
-  INCOMPATIBILITY BSD-4-Clause
-  INCOMPATIBILITY BSD-4-Clause-UC
-  INCOMPATIBILITY FTL
-  INCOMPATIBILITY IJG
-  INCOMPATIBILITY OpenSSL
-  INCOMPATIBILITY Python-2.0
-  INCOMPATIBILITY zlib-acknowledgement
-  INCOMPATIBILITY XFree86-1.1
-  PATENT HINTS Yes
-  COPYLEFT CLAUSE Yes
-#+END_EXAMPLE
-
-(source: OSADL License Checklist)
 
 ** Text
 
@@ -585,57 +324,63 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/LGPL-3.0-only.html][SPDX]]
+- [[https://spdx.org/licenses/LGPL-3.0-only.html][SPDX]] (all data [in
+  this repository] is generated)
 
-- [[https://spdx.org/licenses/LGPL-3.0-or-later.html][SPDX]]
+- [[https://spdx.org/licenses/LGPL-3.0-or-later.html][SPDX]] (all data
+  [in this repository] is generated)
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
+  (CC0-1.0)
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0-plus.yml][Scancode]]
-
-- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/LGPL-3.0-or-later.txt][OSADL
-  License Checklist]]
-
-- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/LGPL-3.0-only.txt][OSADL
-  License Checklist]]
-
-- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/LGPL-3.0.txt][OSADL
-  License Checklist]]
+  (CC0-1.0)
 
 - [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-3.0.txt][choosealicense.com]]
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-3.0.yaml][finos/OSLC-handbook]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-3.0.yaml][finos/OSLC-handbook]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
+  ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]]
+  Guidelines]] (NOASSERTION)
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]]
+  Guidelines]] (NOASSERTION)
 
 - Override
 
@@ -763,24 +508,6 @@
                   ]
               },
               "spdxLicenseId": "LGPL-3.0-only"
-          },
-          "OSADL License Checklist": {
-              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/LGPL-3.0-or-later.txt",
-              "spdxId": "LGPL-3.0-or-later",
-              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text GPL-3.0 AND LGPL-3.0\n\t\tIF Non-permissive Additional terms\n\t\t\tYOU MUST Forward Additional terms\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Additional terms In Source code\n\t\t\tOR\n\t\t\t\tYOU MUST Reference Additional terms In Source code\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Displayed License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\t\tEITHER\n\t\t\tYOU MUST Ensure Interoperability\n\t\tOR\n\t\t\tYOU MUST Use GPL-3.0\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\n\tYOU MUST NOT Litigate Circumvention\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notice\n\t\tATTRIBUTE Highlighted\n\t\tATTRIBUTE Appropriately\n\tYOU MUST NOT Modify License notices\n\tYOU MUST NOT Modify Warranty disclaimer\n\tYOU MUST Provide License text GPL-3.0 AND LGPL-3.0\n\t\tIF Non-permissive Additional terms\n\t\t\tEITHER\n\t\t\t\tYOU MUST Include Additional terms In Source code\n\t\t\tOR\n\t\t\t\tYOU MUST Reference Additional terms In Source code\n\t\t\tYOU MUST Provide Additional terms\n\tEITHER IF Binary delivery On Customary medium OR Installed\n\t\tEITHER\n\t\t\tYOU MUST Provide Source code\n\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\tATTRIBUTE Documented format\n\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\tATTRIBUTE Including Tool chain information\n\t\tOR\n\t\t\tYOU MUST Provide Written offer\n\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\tATTRIBUTE Delayed source code delivery\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tEITHER\n\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\tOR\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE No charge\n\tOR IF Binary delivery Via Internet\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Documented format\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\t\t\tEITHER IF Source code On same server\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\tOR IF Source code On other server\n\t\t\t\tATTRIBUTE No charge\n\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\tYOU MUST Reference Source code\n\tOR IF Binary delivery Via peer-to-peer transmission\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE No charge\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Documented format\n\t\t\tATTRIBUTE Including Installation scripts\n\t\t\tATTRIBUTE Including Tool chain information\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE Duration As long as needed\n\tIF User product\n\t\tYOU MUST Provide Installation information\n\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Legal notices\n\t\t\tATTRIBUTE Highlighted\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\t\tIF Interactive AND Displayed License announcement\n\t\t\tYOU MUST Display Appropriate legal notices\n\t\t\t\tATTRIBUTE Highlighted\n\t\tEITHER\n\t\t\tYOU MUST Ensure Interoperability\n\t\tOR\n\t\t\tYOU MUST Use GPL-3.0\n\tYOU MUST NOT Restrict Granted rights\n\t\tEXCEPT IF NOT Permitted By Additional terms\nUSE CASE Binary delivery Of Combined work\n\tYOU MUST NOT Impede Modification Of the Library\n\tYOU MUST NOT Impede Reverse engineering\n\t\tATTRIBUTE For Debugging Of Modification\n\tYOU MUST Provide License notices\n\t\tATTRIBUTE Highlighted\n\tYOU MUST Provide License text GPL-3.0 AND LGPL-3.0\n\tIF Displayed Copyright notices\n\t\tYOU MUST Display Copyright notices Of the Library\n\t\tYOU MUST Reference License text GPL-3.0 AND LGPL-3.0\n\tEITHER\n\t\tYOU MUST Provide Linkable work\n\t\tYOU MUST Permit Relinking\n\t\tYOU MUST Provide Source code Of the Library\n\t\t\tEITHER IF Binary delivery On Customary medium OR Installed\n\t\t\t\tEITHER\n\t\t\t\t\tYOU MUST Provide Source code Of the Library\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\tOR\n\t\t\t\t\tYOU MUST Provide Written offer\n\t\t\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\t\t\tATTRIBUTE Delayed source code delivery Of the Library\n\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\t\t\tEITHER\n\t\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\t\t\tOR\n\t\t\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\tOR IF Binary delivery Via Internet\n\t\t\t\tYOU MUST Provide Source code Of the Library\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\t\tEITHER IF Source code On same server\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\tOR IF Source code On other server\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\tYOU MUST Reference Source code\n\t\t\tOR IF Binary delivery Via peer-to-peer transmission\n\t\t\t\tYOU MUST Reference Source code Of the Library\n\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tATTRIBUTE Including Installation scripts\n\t\t\t\t\tATTRIBUTE Including Tool chain information\n\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\tIF Installed AND User product\n\t\t\tYOU MUST Provide Installation information\n\t\t\t\tATTRIBUTE Included in Source code delivery Of the Library\n\t\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tOR\n\t\tYOU MUST Use Shared library\n\t\tIF Installed AND User product\n\t\t\tYOU MUST Provide Installation information\n\t\t\t\tEITHER IF Binary delivery On Customary medium OR Installed\n\t\t\t\t\tEITHER\n\t\t\t\t\t\tYOU MUST Provide Installation information\n\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\tOR\n\t\t\t\t\t\tYOU MUST Provide Written offer For Installation information\n\t\t\t\t\t\t\tATTRIBUTE Duration At least 3 years\n\t\t\t\t\t\t\tATTRIBUTE Duration As long as product is supported\n\t\t\t\t\t\t\tATTRIBUTE Installation Information\n\t\t\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\t\t\tEITHER\n\t\t\t\t\t\t\t\t\tATTRIBUTE Customary medium\n\t\t\t\t\t\t\t\t\tATTRIBUTE No profit\n\t\t\t\t\t\t\t\tOR\n\t\t\t\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\tOR IF Binary delivery Via Internet\n\t\t\t\t\tYOU MUST Provide Installation information\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\t\t\tEITHER IF Installation information On same server\n\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\tOR IF Installation information On other server\n\t\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\t\tATTRIBUTE Equivalent\n\t\t\t\t\t\t\tYOU MUST Reference Installation information\n\t\t\t\tOR IF Binary delivery Via peer-to-peer transmission\n\t\t\t\t\tYOU MUST Reference Installation information\n\t\t\t\t\t\tATTRIBUTE No charge\n\t\t\t\t\t\tATTRIBUTE Machine-readable\n\t\t\t\t\t\tATTRIBUTE Documented format\n\t\t\t\t\t\tATTRIBUTE Via Internet\n\t\t\t\t\t\tATTRIBUTE Duration As long as needed\n\t\t\t\tEXCEPT IF Installation Is NOT Feasible\n\tIF Combined library\n\t\tYOU MUST Provide Library\n\t\t\tATTRIBUTE Original license\n\t\t\tATTRIBUTE Uncombined\n\t\tYOU MUST Provide License notices\n\t\tYOU MUST Reference Library\n\t\t\tATTRIBUTE Uncombined\nCOMPATIBILITY Apache-2.0\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY MPL-2.0\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nDEPENDING COMPATIBILITY EPL-2.0\nINCOMPATIBILITY Apache-1.0\nINCOMPATIBILITY Apache-1.1\nINCOMPATIBILITY BSD-4-Clause\nINCOMPATIBILITY BSD-4-Clause-UC\nINCOMPATIBILITY FTL\nINCOMPATIBILITY IJG\nINCOMPATIBILITY OpenSSL\nINCOMPATIBILITY Python-2.0\nINCOMPATIBILITY zlib-acknowledgement\nINCOMPATIBILITY XFree86-1.1\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-              "_implications": {
-                  "__impliedNames": [
-                      "LGPL-3.0-or-later"
-                  ],
-                  "__hasPatentHint": true,
-                  "__impliedCopyleft": [
-                      [
-                          "OSADL License Checklist",
-                          "Copyleft"
-                      ]
-                  ],
-                  "__calculatedCopyleft": "Copyleft"
-              }
           },
           "Fedora Project Wiki": {
               "GPLv2 Compat?": "See Matrix",
@@ -1301,10 +1028,6 @@
           [
               "BlueOak License List",
               "WeakCopyleft"
-          ],
-          [
-              "OSADL License Checklist",
-              "Copyleft"
           ],
           [
               "Scancode",

@@ -19,12 +19,14 @@
 * **↓**``Exception: Data licensed under the FDL with no invariant
 sections are considered DFSG-free as of GR 2006-001:
 http://www.debian.org/vote/2006/vote_001#outcome'' (source:
-https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION))
 
 === General Comments
 
 * ``Per SPDX.org, this license was released 3 November 2008.'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -491,9 +493,12 @@ to permit their use in free software.
 
 ==== Facts
 
-* https://spdx.org/licenses/GFDL-1.3-only.html[SPDX]
+* https://spdx.org/licenses/GFDL-1.3-only.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3.yml[Scancode]
+(CC0-1.0)
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION)
 
 ==== Raw JSON
 

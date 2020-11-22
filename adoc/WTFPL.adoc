@@ -30,16 +30,19 @@ ____
 
 * **↑**``This license is compatible with the
 DebianFreeSoftwareGuidelines (DFSG-free)'' (source:
-https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines])
+https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION))
 * **↓**``Google Classification is CANNOT_BE_USED "Code released under
 the WTFPL cannot be used at Google. This license has a large number of
 issues (lack of warranty disclaimer, very vague rights grant), and was
 also rejected as an open source license by OSI. We also do not allow
 contribution to projects under the WTFPL."'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy])
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 * **↓**``Rating is: Lead'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -73,14 +76,6 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/wtfpl.txt[c
 * http://sam.zoy.org/wtfpl/COPYING
 * http://fedoraproject.org/wiki/Licensing/WTFPL
 
-=== OSADL Rule
-
-....
-USE CASE Source code delivery OR Binary delivery
-....
-
-(source: OSADL License Checklist)
-
 === Text
 
 ....
@@ -105,18 +100,23 @@ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 
 ==== Facts
 
-* https://spdx.org/licenses/WTFPL.html[SPDX]
+* https://spdx.org/licenses/WTFPL.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+(CC0-1.0)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wtfpl-2.0.yml[Scancode]
-* https://www.osadl.org/fileadmin/checklists/unreflicenses/WTFPL.txt[OSADL
-License Checklist]
+(CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/wtfpl.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION)
 
 ==== Raw JSON
 
@@ -169,16 +169,6 @@ Policy]
                 ]
             },
             "spdxLicenseId": "WTFPL"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/WTFPL.txt",
-            "spdxId": "WTFPL",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\n",
-            "_implications": {
-                "__impliedNames": [
-                    "WTFPL"
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [

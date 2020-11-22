@@ -42,16 +42,6 @@
             },
             "spdxLicenseId": "MIT-CMU"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT-CMU.txt",
-            "spdxId": "MIT-CMU",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Provide Copyright notice In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MIT-CMU"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE"

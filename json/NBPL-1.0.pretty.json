@@ -43,16 +43,6 @@
             },
             "spdxLicenseId": "NBPL-1.0"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/NBPL-1.0.txt",
-            "spdxId": "NBPL-1.0",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Warranty disclaimer\n\tIF Software modification\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Provide Modification report\n\t\tYOU MUST Provide Modification date\n\t\tEITHER\r\n\t\t\tYOU MUST Publish Source code\n\t\tOR\r\n\t\t\tYOU MUST Rename Source code\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tEITHER\r\n\t\tYOU MUST Provide Retrieval information\n\tOR\r\n\t\tYOU MUST Provide Source code\n\t\t\tATTRIBUTE Machine-readable\n\tOR\r\n\t\tYOU MUST Rename Source code\n\tYOU MUST Provide Modification report\n\tYOU MUST NOT Promote\n",
-            "_implications": {
-                "__impliedNames": [
-                    "NBPL-1.0"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": null,
             "homepageUrl": "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=37b4b3f6cc4bf34e1d3dec61e69914b9819d8894",

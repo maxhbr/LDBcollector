@@ -47,16 +47,6 @@
             },
             "spdxLicenseId": "zlib-acknowledgement"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/zlib-acknowledgement.txt",
-            "spdxId": "zlib-acknowledgement",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Forward License text\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\r\nUSE CASE Binary delivery\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\r\nUSE CASE Commercial distribution\n\tYOU MUST Credit Verbatim \"Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig\"\n",
-            "_implications": {
-                "__impliedNames": [
-                    "zlib-acknowledgement"
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement"

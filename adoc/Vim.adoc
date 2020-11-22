@@ -174,8 +174,10 @@ Note:
 
 ==== Facts
 
-* https://spdx.org/licenses/Vim.html[SPDX]
+* https://spdx.org/licenses/Vim.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vim.yml[Scancode]
+(CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 

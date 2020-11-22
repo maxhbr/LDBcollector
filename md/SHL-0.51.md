@@ -114,9 +114,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/SHL-0.51.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/SHL-0.51.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/shl-0.51.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

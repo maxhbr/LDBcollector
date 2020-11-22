@@ -17,7 +17,8 @@
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -26,7 +27,8 @@ clauses which make it more than a simple MIT variant, notably, the
 requirement of statement of new terms of contributions under a different
 license. For that reason, this license is Free, but GPL-incompatible. ''
 (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -74,9 +76,12 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
 
 ==== Facts
 
-* https://spdx.org/licenses/OML.html[SPDX]
+* https://spdx.org/licenses/OML.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

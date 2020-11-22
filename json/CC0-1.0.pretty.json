@@ -8,7 +8,7 @@
         "CC0 1.0"
     ],
     "__impliedId": "CC0-1.0",
-    "__hasPatentHint": true,
+    "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -66,17 +66,6 @@
                 ]
             },
             "spdxLicenseId": "CC0-1.0"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CC0-1.0.txt",
-            "spdxId": "CC0-1.0",
-            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\nPATENT HINTS Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "CC0-1.0"
-                ],
-                "__hasPatentHint": true
-            }
         },
         "Scancode": {
             "otherUrls": [

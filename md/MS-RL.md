@@ -9,8 +9,6 @@ Microsoft Reciprocal License (MS-RL)
 
 -   `Microsoft Reciprocal License (MS-RL)`
 
--   `Microsoft Reciprocal License (Ms-RL)`
-
 Description
 -----------
 
@@ -26,11 +24,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX"))
-
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki"))
+    [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX") (all data \[in
+    this repository\] is generated))
 
 General Comments
 ----------------
@@ -38,16 +33,12 @@ General Comments
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
     License
-    List](https://blueoakcouncil.org/copyleft "BlueOak License List"))
+    List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml "Scancode"))
-
--   “Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen
-    Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten
-    Werke umfasst, sondern definierte Ausnahmen enthält.” (source:
-    [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
-    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL")))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml "Scancode")
+    (CC0-1.0))
 
 Obligations
 -----------
@@ -77,52 +68,6 @@ URLs
 -   http://www.microsoft.com/en-us/openness/licenses.aspx\#MRL
 
 -   http://www.opensource.org/licenses/MS-RL
-
--   https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Grant License
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward Patent notices
-    	YOU MUST Forward Trademark notices
-    	YOU MUST Forward License text
-    	YOU MUST Use Original license
-    	IF Software modification
-    		YOU MUST Provide Source code
-    		YOU MUST Forward License text
-    USE CASE Binary delivery
-    	YOU MUST Provide Source code
-    	YOU MUST Forward License text
-    	YOU MUST Grant License
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward Patent notices
-    	YOU MUST Forward Trademark notices
-    	YOU MUST Use Compatible license
-    COMPATIBILITY BSD-2-Clause
-    COMPATIBILITY BSD-2-Clause-Patent
-    COMPATIBILITY BSD-3-Clause
-    COMPATIBILITY bzip2-1.0.5
-    COMPATIBILITY bzip2-1.0.6
-    COMPATIBILITY CC0-1.0
-    COMPATIBILITY curl
-    COMPATIBILITY EFL-2.0
-    COMPATIBILITY IBM-pibs
-    COMPATIBILITY ICU
-    COMPATIBILITY ISC
-    COMPATIBILITY Libpng
-    COMPATIBILITY MIT
-    COMPATIBILITY NTP
-    COMPATIBILITY UPL-1.0
-    COMPATIBILITY WTFPL
-    COMPATIBILITY X11
-    COMPATIBILITY Zlib
-    PATENT HINTS Yes
-    COPYLEFT CLAUSE Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -156,31 +101,28 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MS-RL.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-
--   [ifrOSS](https://ifross.github.io/ifrOSS/Lizenzcenter "ifrOSS")
-    ([ODbL](https://github.com/ifrOSS/ifrOSS/blob/master/LICENSE.md "ODbL"))
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 ### Raw JSON
 
@@ -190,11 +132,9 @@ Raw Data
             "Microsoft Reciprocal License",
             "scancode://ms-rl",
             "ms-rl",
-            "Microsoft Reciprocal License (MS-RL)",
-            "Microsoft Reciprocal License (Ms-RL)"
+            "Microsoft Reciprocal License (MS-RL)"
         ],
         "__impliedId": "MS-RL",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Microsoft Reciprocal License"
         ],
@@ -210,15 +150,8 @@ Raw Data
                 [
                     "Per SPDX.org, this license is OSI certified."
                 ]
-            ],
-            [
-                "ifrOSS",
-                [
-                    "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
-                ]
             ]
         ],
-        "__hasPatentHint": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -290,50 +223,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MS-RL"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MS-RL.txt",
-                "spdxId": "MS-RL",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\n\tIF Software modification\n\t\tYOU MUST Provide Source code\n\t\tYOU MUST Forward License text\nUSE CASE Binary delivery\n\tYOU MUST Provide Source code\n\tYOU MUST Forward License text\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "MS-RL"
-                    ],
-                    "__hasPatentHint": true,
-                    "__impliedCopyleft": [
-                        [
-                            "OSADL License Checklist",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft"
-                }
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://www.microsoft.com/opensource/licenses.mspx#Ms-RL",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "MS-RL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Microsoft Reciprocal License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Microsoft Reciprocal License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -457,39 +346,6 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "WeakCopyleft"
-            },
-            "ifrOSS": {
-                "ifrKind": "IfrWeakCopyleft",
-                "ifrURL": "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx",
-                "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-                "ifrName": "Microsoft Reciprocal License (Ms-RL)",
-                "ifrId": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "Microsoft Reciprocal License (Ms-RL)"
-                    ],
-                    "__impliedComments": [
-                        [
-                            "ifrOSS",
-                            [
-                                "Lizenzen mit beschrÃ¤nktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthÃ¤lt."
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "ifrOSS",
-                            "WeakCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx"
-                        ]
-                    ]
-                }
             },
             "OpenSourceInitiative": {
                 "text": [
@@ -618,13 +474,6 @@ Raw Data
         },
         "__impliedJudgement": [
             [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
-            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
@@ -638,15 +487,7 @@ Raw Data
                 "WeakCopyleft"
             ],
             [
-                "OSADL License Checklist",
-                "Copyleft"
-            ],
-            [
                 "Scancode",
-                "WeakCopyleft"
-            ],
-            [
-                "ifrOSS",
                 "WeakCopyleft"
             ]
         ],
@@ -737,10 +578,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/MS-RL"
-            ],
-            [
-                null,
-                "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx"
             ]
         ]
     }

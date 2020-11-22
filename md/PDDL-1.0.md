@@ -175,12 +175,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/PDDL-1.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/PDDL-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/pddl-1.0.yml "Scancode")
+    (CC0-1.0)
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 ### Raw JSON
 

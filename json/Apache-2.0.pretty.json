@@ -100,17 +100,6 @@
             },
             "spdxLicenseId": "Apache-2.0"
         },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Apache-2.0.txt",
-            "spdxId": "Apache-2.0",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification notices\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notices\n\t\tYOU MUST Forward Trademark notices\n\t\tYOU MUST Forward Attribution notices\n\t\tIF Work Includes File \"NOTICE\"\n\t\t\tYOU MUST Delete Irrelevant parts\n\t\t\tEITHER\n\t\t\t\tYOU MUST Forward File \"NOTICE\"\n\t\t\tOR\n\t\t\t\tYOU MUST Forward File \"NOTICE\" In Source code\n\t\t\tOR\n\t\t\t\tYOU MUST Forward File \"NOTICE\" In Documentation\n\t\t\tOR\n\t\t\t\tYOU MUST Display File \"NOTICE\"\n\tIF Service offerings\n\t\tYOU MUST Indemnify Other contributors\nUSE CASE Binary delivery\n\tYOU MUST Provide License text\n\tIF Software modification\n\t\tIF Work Includes File \"NOTICE\"\n\t\t\tYOU MUST Delete Irrelevant parts\n\t\t\tEITHER\n\t\t\t\tYOU MUST Forward File \"NOTICE\"\n\t\t\tOR\n\t\t\t\tYOU MUST Forward File \"NOTICE\" In Source code\n\t\t\tOR\n\t\t\t\tYOU MUST Forward File \"NOTICE\" In Documentation\n\t\t\tOR\n\t\t\t\tYOU MUST Display File \"NOTICE\"\n\tIF Service offerings\n\t\tYOU MUST Indemnify Other contributors\nPATENT HINTS Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "Apache-2.0"
-                ],
-                "__hasPatentHint": true
-            }
-        },
         "Scancode": {
             "otherUrls": [
                 "http://www.opensource.org/licenses/Apache-2.0",

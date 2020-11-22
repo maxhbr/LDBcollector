@@ -17,14 +17,16 @@ Comments on (easy) usability
     applied to fonts: 1) Neither the Font Software nor any of its
     individual components, in Original or Modified Versions, may be sold
     by itself.” (source: [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines"))
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license has been superseded. This license was
     released in November 2005. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -132,12 +134,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/OFL-1.0.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/OFL-1.0.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml "Scancode")
+    (CC0-1.0)
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 ### Raw JSON
 

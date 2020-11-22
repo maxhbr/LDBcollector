@@ -13,7 +13,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -21,7 +22,8 @@ General Comments
 -   “Per SPDX.org, this license was released 17 January 1999. This
     license was issued twice in the same day with a minor correction.
     This is the corrected (second) version. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -182,12 +184,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/OLDAP-1.3.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/OLDAP-1.3.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

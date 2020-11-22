@@ -4,11 +4,9 @@
         "Microsoft Reciprocal License",
         "scancode://ms-rl",
         "ms-rl",
-        "Microsoft Reciprocal License (MS-RL)",
-        "Microsoft Reciprocal License (Ms-RL)"
+        "Microsoft Reciprocal License (MS-RL)"
     ],
     "__impliedId": "MS-RL",
-    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Microsoft Reciprocal License"
     ],
@@ -24,15 +22,8 @@
             [
                 "Per SPDX.org, this license is OSI certified."
             ]
-        ],
-        [
-            "ifrOSS",
-            [
-                "Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält."
-            ]
         ]
     ],
-    "__hasPatentHint": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -104,50 +95,6 @@
                 ]
             },
             "spdxLicenseId": "MS-RL"
-        },
-        "OSADL License Checklist": {
-            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MS-RL.txt",
-            "spdxId": "MS-RL",
-            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Forward License text\n\tYOU MUST Use Original license\n\tIF Software modification\n\t\tYOU MUST Provide Source code\n\t\tYOU MUST Forward License text\nUSE CASE Binary delivery\n\tYOU MUST Provide Source code\n\tYOU MUST Forward License text\n\tYOU MUST Grant License\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Patent notices\n\tYOU MUST Forward Trademark notices\n\tYOU MUST Use Compatible license\nCOMPATIBILITY BSD-2-Clause\nCOMPATIBILITY BSD-2-Clause-Patent\nCOMPATIBILITY BSD-3-Clause\nCOMPATIBILITY bzip2-1.0.5\nCOMPATIBILITY bzip2-1.0.6\nCOMPATIBILITY CC0-1.0\nCOMPATIBILITY curl\nCOMPATIBILITY EFL-2.0\nCOMPATIBILITY IBM-pibs\nCOMPATIBILITY ICU\nCOMPATIBILITY ISC\nCOMPATIBILITY Libpng\nCOMPATIBILITY MIT\nCOMPATIBILITY NTP\nCOMPATIBILITY UPL-1.0\nCOMPATIBILITY WTFPL\nCOMPATIBILITY X11\nCOMPATIBILITY Zlib\nPATENT HINTS Yes\nCOPYLEFT CLAUSE Yes\n",
-            "_implications": {
-                "__impliedNames": [
-                    "MS-RL"
-                ],
-                "__hasPatentHint": true,
-                "__impliedCopyleft": [
-                    [
-                        "OSADL License Checklist",
-                        "Copyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "Copyleft"
-            }
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://www.microsoft.com/opensource/licenses.mspx#Ms-RL",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "MS-RL",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Microsoft Reciprocal License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Microsoft Reciprocal License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -271,39 +218,6 @@
                 ]
             },
             "CopyleftKind": "WeakCopyleft"
-        },
-        "ifrOSS": {
-            "ifrKind": "IfrWeakCopyleft",
-            "ifrURL": "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx",
-            "_sourceURL": "https://ifross.github.io/ifrOSS/Lizenzcenter",
-            "ifrName": "Microsoft Reciprocal License (Ms-RL)",
-            "ifrId": null,
-            "_implications": {
-                "__impliedNames": [
-                    "Microsoft Reciprocal License (Ms-RL)"
-                ],
-                "__impliedComments": [
-                    [
-                        "ifrOSS",
-                        [
-                            "Lizenzen mit beschränktem Copyleft-Effekt haben ebenfalls einen Copyleft-Effekt, der aber nicht alle Berbeitungen und abgeleiteten Werke umfasst, sondern definierte Ausnahmen enthält."
-                        ]
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "ifrOSS",
-                        "WeakCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "WeakCopyleft",
-                "__impliedURLs": [
-                    [
-                        null,
-                        "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx"
-                    ]
-                ]
-            }
         },
         "OpenSourceInitiative": {
             "text": [
@@ -432,13 +346,6 @@
     },
     "__impliedJudgement": [
         [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ],
-        [
             "SPDX",
             {
                 "tag": "PositiveJudgement",
@@ -452,15 +359,7 @@
             "WeakCopyleft"
         ],
         [
-            "OSADL License Checklist",
-            "Copyleft"
-        ],
-        [
             "Scancode",
-            "WeakCopyleft"
-        ],
-        [
-            "ifrOSS",
             "WeakCopyleft"
         ]
     ],
@@ -551,10 +450,6 @@
         [
             "OSI Page",
             "https://opensource.org/licenses/MS-RL"
-        ],
-        [
-            null,
-            "https://web.archive.org/web/20080105011633/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/reciprocallicense.mspx"
         ]
     ]
 }

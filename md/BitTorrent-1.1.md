@@ -21,7 +21,8 @@ General Comments
     live text containing the license terms except at
     http://web.archive.org/web/20090609222926/http://www.bittorrent.com/legal/bittorrent-open-source-license
     ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.1.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.1.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -185,12 +186,15 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/BitTorrent-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/BitTorrent-1.1.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.1.yml "Scancode")
+    (CC0-1.0)
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 ### Raw JSON
 

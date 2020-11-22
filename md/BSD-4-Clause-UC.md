@@ -13,10 +13,12 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 -   **↓**“Advertisement clause (3.) is complicated and prone to
     conflicts” (source: Override)
@@ -31,7 +33,8 @@ General Comments
     code developed by UC Berkeley and its contributors (see
     ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change) ”
     (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -48,26 +51,6 @@ URLs
 -   http://www.fsf.org/licensing/essays/bsd.html
 
 -   http://www.gnu.org/philosophy/bsd.html
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	IF Advertisement
-    		YOU MUST Credit In Advertisement Verbatim "This product includes software developed by the University of California, Berkeley and its contributors."
-    	YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	YOU MUST Provide Copyright notices In Documentation OR Distribution material
-    	YOU MUST Provide License text In Documentation OR Distribution material
-    	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
-    	IF Advertisement
-    		YOU MUST Credit In Advertisement Verbatim "This product includes software developed by the University of California, Berkeley and its contributors."
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -145,20 +128,22 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/BSD-4-Clause-UC.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/BSD-4-Clause-UC.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause-UC.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause-UC.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   Override
 
@@ -223,16 +208,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "BSD-4-Clause-UC"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-4-Clause-UC.txt",
-                "spdxId": "BSD-4-Clause-UC",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Advertisement\r\n\t\tYOU MUST Credit In Advertisement Verbatim \"This product includes software developed by the University of California, Berkeley and its contributors.\"\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n\tIF Advertisement\r\n\t\tYOU MUST Credit In Advertisement Verbatim \"This product includes software developed by the University of California, Berkeley and its contributors.\"\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "BSD-4-Clause-UC"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [

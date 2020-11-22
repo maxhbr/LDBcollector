@@ -13,7 +13,8 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
@@ -26,30 +27,6 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/XFree86-1.1.json
 
 -   **SPDX:** https://spdx.org/licenses/XFree86-1.1.html
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	YOU MUST Forward Copyright notices
-    	YOU MUST Forward License text
-    	YOU MUST Forward Warranty disclaimer
-    	IF Documentation
-    		YOU MUST Credit Verbatim "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors." in Documentation
-    	IF NOT Documentation
-    		YOU MUST Credit Verbatim "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors." In Source code delivery
-    	YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	IF Documentation
-    		YOU MUST Credit Verbatim "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors." in Documentation
-    	IF NOT Documentation
-    		YOU MUST Credit Verbatim "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors." In Binary delivery
-    	YOU MUST Forward Copyright notices In Documentation OR Distribution material
-    	YOU MUST Forward License text In Documentation OR Distribution material
-    	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
-    	YOU MUST NOT Promote
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -99,17 +76,18 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/XFree86-1.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/XFree86-1.1.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xfree86-1.1.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/XFree86-1.1.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -151,16 +129,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "XFree86-1.1"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/XFree86-1.1.txt",
-                "spdxId": "XFree86-1.1",
-                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\" in Documentation\n\tIF NOT Documentation\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\" In Source code delivery\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\" in Documentation\n\tIF NOT Documentation\n\t\tYOU MUST Credit Verbatim \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\" In Binary delivery\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST NOT Promote\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "XFree86-1.1"
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,

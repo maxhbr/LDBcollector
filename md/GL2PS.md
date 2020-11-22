@@ -51,9 +51,11 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/GL2PS.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/GL2PS.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gl2ps.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

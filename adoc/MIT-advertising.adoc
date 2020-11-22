@@ -17,7 +17,8 @@
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -29,7 +30,8 @@ that URL is gone (they seem to have moved source control systems). The
 latest available copy from enlightment.org
 http://trac.enlightenment.org/e/browser/trunk/E16/e/COPYING has been
 preserved here for reference. '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enlightenment.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enlightenment.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -54,9 +56,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ==== Facts
 
-* https://spdx.org/licenses/MIT-advertising.html[SPDX]
+* https://spdx.org/licenses/MIT-advertising.html[SPDX] (all data [in
+this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enlightenment.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

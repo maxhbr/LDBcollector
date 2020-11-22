@@ -13,19 +13,23 @@ Comments on (easy) usability
 ----------------------------
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy"))
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
 -   **↑**“Is OSI Approved” (source:
-    [SPDX](https://spdx.org/licenses/AFL-2.1.html "SPDX"))
+    [SPDX](https://spdx.org/licenses/AFL-2.1.html "SPDX") (all data \[in
+    this repository\] is generated))
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
-    List](https://blueoakcouncil.org/list "BlueOak License List"))
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
 General Comments
 ----------------
 
 -   “Per SPDX.org, this license was OSI certified.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml "Scancode"))
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml "Scancode")
+    (CC0-1.0))
 
 URLs
 ----
@@ -41,43 +45,6 @@ URLs
 -   http://opensource.linux-mirror.org/licenses/afl-2.1.txt
 
 -   http://www.gnu.org/licenses/license-list.html\#AcademicFreeLicense
-
-OSADL Rule
-----------
-
-    USE CASE Source code delivery
-    	IF Software modification
-    		YOU MUST Forward Copyright notices
-    		YOU MUST Forward Patent notice
-    		YOU MUST Forward Trademark notice
-    		YOU MUST Forward License notice
-    		YOU MUST Provide Copyright notices
-    		YOU MUST Provide Modification notice
-    		YOU MUST Forward Warranty disclaimer
-    		YOU MUST NOT Promote
-    USE CASE Binary delivery
-    	EITHER
-    		YOU MUST Include Original source code
-    			ATTRIBUTE Machine-readable
-    		IF Software modification
-    			YOU MUST Forward Copyright notices
-    			YOU MUST Forward Patent notice
-    			YOU MUST Forward Trademark notice
-    			YOU MUST Forward License notice
-    			YOU MUST Provide Copyright notices
-    			YOU MUST Provide Modification notice
-    			YOU MUST Forward Warranty disclaimer
-    			YOU MUST NOT Promote
-    	OR
-    		YOU MUST Provide Delayed source code delivery
-    		YOU MUST Reference Source code
-    			ATTRIBUTE Machine-readable
-    			ATTRIBUTE Via Internet
-    			ATTRIBUTE No profit
-    			ATTRIBUTE Duration As long as distributed
-    PATENT HINTS Yes
-
-(source: OSADL License Checklist)
 
 Text
 ----
@@ -138,18 +105,19 @@ Raw Data
 
 ### Facts
 
--   [SPDX](https://spdx.org/licenses/AFL-2.1.html "SPDX")
+-   [SPDX](https://spdx.org/licenses/AFL-2.1.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml "Scancode")
-
--   [OSADL License
-    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.1.txt "OSADL License Checklist")
+    (CC0-1.0)
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 
@@ -169,7 +137,6 @@ Raw Data
                 ]
             ]
         ],
-        "__hasPatentHint": true,
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -208,17 +175,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "AFL-2.1"
-            },
-            "OSADL License Checklist": {
-                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/AFL-2.1.txt",
-                "spdxId": "AFL-2.1",
-                "osadlRule": "USE CASE Source code delivery\r\n\tIF Software modification\n\t\tYOU MUST Forward Copyright notices\n\t\tYOU MUST Forward Patent notice\n\t\tYOU MUST Forward Trademark notice\n\t\tYOU MUST Forward License notice\n\t\tYOU MUST Provide Copyright notices\n\t\tYOU MUST Provide Modification notice\n\t\tYOU MUST Forward Warranty disclaimer\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\r\n\tEITHER\r\n\t\tYOU MUST Include Original source code\n\t\t\tATTRIBUTE Machine-readable\n\t\tIF Software modification\n\t\t\tYOU MUST Forward Copyright notices\n\t\t\tYOU MUST Forward Patent notice\n\t\t\tYOU MUST Forward Trademark notice\n\t\t\tYOU MUST Forward License notice\n\t\t\tYOU MUST Provide Copyright notices\n\t\t\tYOU MUST Provide Modification notice\n\t\t\tYOU MUST Forward Warranty disclaimer\n\t\t\tYOU MUST NOT Promote\n\tOR\r\n\t\tYOU MUST Provide Delayed source code delivery\n\t\tYOU MUST Reference Source code\n\t\t\tATTRIBUTE Machine-readable\n\t\t\tATTRIBUTE Via Internet\n\t\t\tATTRIBUTE No profit\n\t\t\tATTRIBUTE Duration As long as distributed\nPATENT HINTS Yes\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "AFL-2.1"
-                    ],
-                    "__hasPatentHint": true
-                }
             },
             "Scancode": {
                 "otherUrls": [

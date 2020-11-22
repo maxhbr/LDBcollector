@@ -25,6 +25,7 @@ Raw Data
 ### Facts
 
 -   [SPDX](https://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.html "SPDX")
+    (all data \[in this repository\] is generated)
 
 ### Raw JSON
 

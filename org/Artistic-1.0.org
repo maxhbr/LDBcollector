@@ -24,22 +24,26 @@
   Artistic License 2.0) instead. However, the original Artistic License
   is still considered DFSG-free." (source:
   [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]])
+  Guidelines]] (NOASSERTION))
 
 - *↑*"Google Classification is NOTICE" (source:
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]])
+  Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
 
 - *↑*"Is OSI Approved" (source:
-  [[https://spdx.org/licenses/Artistic-1.0.html][SPDX]])
+  [[https://spdx.org/licenses/Artistic-1.0.html][SPDX]] (all data [in
+  this repository] is generated))
 
 - *↓*"Rating is: Lead" (source:
-  [[https://blueoakcouncil.org/list][BlueOak License List]])
+  [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** General Comments
 
 - "Per SPDX.org, this license was superseded by v2.0" (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml][Scancode]])
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml][Scancode]]
+  (CC0-1.0))
 
 ** URLs
 
@@ -165,19 +169,24 @@
 
 *** Facts
 
-- [[https://spdx.org/licenses/Artistic-1.0.html][SPDX]]
+- [[https://spdx.org/licenses/Artistic-1.0.html][SPDX]] (all data [in
+  this repository] is generated)
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml][Scancode]]
+  (CC0-1.0)
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]]
+  Guidelines]] (NOASSERTION)
 
 - Override
 

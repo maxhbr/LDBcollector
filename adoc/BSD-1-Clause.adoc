@@ -16,9 +16,11 @@
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:
-https://spdx.org/licenses/BSD-1-Clause.html[SPDX])
+https://spdx.org/licenses/BSD-1-Clause.html[SPDX] (all data [in this
+repository] is generated))
 * **↑**``Rating is: Silver'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -57,9 +59,12 @@ SUCH DAMAGE.
 
 ==== Facts
 
-* https://spdx.org/licenses/BSD-1-Clause.html[SPDX]
+* https://spdx.org/licenses/BSD-1-Clause.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-1-clause.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

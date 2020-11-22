@@ -17,7 +17,8 @@
 === Comments on (easy) usability
 
 * **↓**``Rating is: Lead'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -69,9 +70,12 @@ Basically, I don't mind how you use the programs so long as you acknowledge the 
 
 ==== Facts
 
-* https://spdx.org/licenses/psutils.html[SPDX]
+* https://spdx.org/licenses/psutils.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psutils.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

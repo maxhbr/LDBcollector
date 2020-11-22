@@ -16,7 +16,8 @@
 === Comments on (easy) usability
 
 * **↑**``Rating is: Silver'' (source:
-https://blueoakcouncil.org/list[BlueOak License List])
+https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
 
 === General Comments
 
@@ -80,9 +81,12 @@ STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
 
 ==== Facts
 
-* https://spdx.org/licenses/DSDP.html[SPDX]
+* https://spdx.org/licenses/DSDP.html[SPDX] (all data [in this
+repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
+(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dsdp.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 

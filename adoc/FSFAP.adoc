@@ -17,7 +17,8 @@
 
 * **↑**``This software Licenses is OK for Fedora'' (source:
 https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki])
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -25,7 +26,8 @@ Project Wiki])
 It is Free and GPL compatible. The FSF recommends it for "small
 supporting files, short manuals (under 300 lines long) and rough
 documentation (README files, INSTALL files, etc.)". '' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml[Scancode])
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml[Scancode]
+(CC0-1.0))
 
 === URLs
 
@@ -50,10 +52,13 @@ warranty.
 
 ==== Facts
 
-* https://spdx.org/licenses/FSFAP.html[SPDX]
+* https://spdx.org/licenses/FSFAP.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml[Scancode]
+(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
