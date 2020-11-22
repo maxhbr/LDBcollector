@@ -1,6 +1,6 @@
 ## Stats:
 ### Stats on Facts:
-Number of facts: 3550
+Number of facts: 3416
     BlueOak License List: 224
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 430
@@ -14,7 +14,6 @@ Number of facts: 3550
     Wikipedia: 38
     choosealicense.com: 39
     finos/OSLC-handbook: 43
-    gnu.org: 134
 Number of clusters: 2003
 ### Stats on Licenses:
 Number of Licenses: 414
