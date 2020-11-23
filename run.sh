@@ -28,13 +28,11 @@ else
 
     if [[ -d "$out" ]]; then
         cd "$out"
-        if [[ ! -f "LICENSE" ]]; then
-            cp ../data/OSLC-handbook/LICENSE ./
-        fi
         if [[ ! -d "$outGit" ]]; then
+            touch README
             git init --separate-git-dir="$outGit" .
-            git --git-dir="$outGit" add LICENSE
-            git --git-dir="$outGit" commit -m "Add License file with CC-By-Sa 4.0"
+            git --git-dir="$outGit" add README
+            git --git-dir="$outGit" commit -m "initial commit"
         fi
 
         git --git-dir="$outGit" add .

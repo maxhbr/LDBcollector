@@ -24,6 +24,8 @@ The data is placed in `/data/json/` and it contains the content of the folder `/
 ### OSI license List
 The OSI license list is imported via the `opensource` haskell package.
 
+**licensed under:** Creative Commons Attribution 4.0 International License
+
 | Kind of Update | pulled on runtime via `opensource` haskell package |
 
 ### Scancode license List
@@ -81,6 +83,8 @@ The license list can be pulled from https://blueoakcouncil.org/list.json, and is
 ### Fedora Project Wiki
 The Fedora Project has in its wiki a list of licenses which are rated **good** or **bad** on https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing.
 These lists are extracted to csv files in `/data/Fedora_Project_Wiki/`.
+
+**licensed under:** Attribution-Share Alike 3.0 Unported
 
 | Kind of update: | manual labor |
 | ----------------- | --- |

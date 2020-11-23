@@ -25,19 +25,28 @@ data LicenseFactLicense
   = EmptyLFL
   | LFL LicenseName
   | LFLWithURL URL LicenseName
-  deriving (Generic)
+  | LFLWithText Text LicenseName
+  deriving (Generic, Eq)
 instance Show LicenseFactLicense where
   show EmptyLFL = ""
   show (LFL name) = name
   show (LFLWithURL url name) = name ++ " (" ++ url ++ ")"
+  show (LFLWithText _ name) = name
 instance ToJSON LicenseFactLicense
 instance ToJSONKey LicenseFactLicense
 instance Hashable LicenseFactLicense
+
+extractLFLName :: LicenseFactLicense -> LicenseName
+extractLFLName EmptyLFL             = ""
+extractLFLName (LFL name)           = name
+extractLFLName (LFLWithURL _ name)  = name
+extractLFLName (LFLWithText _ name) = name
 
 instance Inlineable LicenseFactLicense where
   toInline EmptyLFL              = mempty
   toInline (LFL name)            = P.text name
   toInline (LFLWithURL url name) = P.link url name (P.text name)
+  toInline (LFLWithText _ name)  = P.text name
 
 {- #############################################################################
  - LicenseFactClassifier

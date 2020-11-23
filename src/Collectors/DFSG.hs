@@ -42,7 +42,7 @@ instance ToJSON DFSGEntry where
                                       ]
 
 dfsgLFC :: LicenseFactClassifier
-dfsgLFC = LFC "Debian Free Software Guidelines"
+dfsgLFC = LFCWithLicense (LFL "NOASSERTION") "Debian Free Software Guidelines"
 instance LicenseFactClassifiable DFSGEntry where
   getLicenseFactClassifier _ = dfsgLFC
 instance LFRaw DFSGEntry where

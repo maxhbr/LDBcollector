@@ -50,8 +50,12 @@ instance ToJSON OkfnFact where
            , "title" .= title
            , "url" .= url
            , "legacy_ids" .= legacy_ids ]
+okfnURL :: URL
+okfnURL = "https://github.com/okfn/licenses/blob/master/licenses.csv"
+okfnLICENSE :: LicenseFactLicense
+okfnLICENSE = LFLWithURL "https://opendatacommons.org/licenses/pddl/1-0/" "PDDL-1.0"
 okfnLFC :: LicenseFactClassifier
-okfnLFC = LFC "Open Knowledge International"
+okfnLFC = LFCWithURLAndLicense okfnURL okfnLICENSE "Open Knowledge International"
 instance LicenseFactClassifiable OkfnFact where
   getLicenseFactClassifier _ = okfnLFC
 instance LFRaw OkfnFact where
@@ -101,5 +105,4 @@ loadOkfnFacts = do
         Left err -> do
           putStrLn err
           return V.empty
-        Right (_, v) -> return $ V.map (LicenseFact $ Just "https://github.com/okfn/licenses/blob/master/licenses.csv") v
-
+        Right (_, v) -> return $ V.map (LicenseFact $ Just okfnURL) v

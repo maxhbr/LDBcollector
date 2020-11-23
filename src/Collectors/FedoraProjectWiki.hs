@@ -114,7 +114,7 @@ instance ToJSON FedoraProjectWikiFact where
                             , "rating" A..= rankingFromData ]
                    , aesonFromData ]
 fedoraLFC :: LicenseFactClassifier
-fedoraLFC = LFC "Fedora Project Wiki"
+fedoraLFC = LFCWithLicense (LFLWithURL "https://creativecommons.org/licenses/by-sa/3.0/legalcode" "CC-BY-SA-3.0") "Fedora Project Wiki"
 instance LicenseFactClassifiable FedoraProjectWikiFact where
   getLicenseFactClassifier _ = fedoraLFC
 instance LFRaw FedoraProjectWikiFact where

@@ -4,6 +4,7 @@ module Lib
   , readFacts
   , calculateLicenses, calculateSPDXLicenses
   , writeLicenseJSONs
+  , writeFactsLicenses
   , cleanupAndMakeOutputFolder
   , Configuration (..)
   , runLDBCore
@@ -14,10 +15,14 @@ import           MyPrelude
 
 import qualified Data.Vector as V
 import qualified Data.Map as M
+import qualified Data.ByteString as B
 import qualified Data.ByteString.Lazy as BL
+import qualified Data.Text as T
+import qualified Data.Text.IO as T
 import           Data.Aeson.Encode.Pretty (encodePretty)
 import           GHC.IO.Encoding (setLocaleEncoding, utf8)
 import           System.Environment
+import           Network.Download (openURI)
 
 import           Model.License as X
 import           Model.Query as X
@@ -72,43 +77,34 @@ data Configuration
   , cOverrides    :: [Override]
   }
 
+mkCollectors :: Configuration -> [(LicenseFactClassifier, IO Facts)]
+mkCollectors conf =
+  [ (spdxLFC, loadSPDXFacts)
+  , (blueOakLFC, loadBlueOakFacts)
+  -- , (cavilLFC, loadCavilFacts)
+  , (ocptLFC, loadOCPTFacts)
+  , (scancodeLFC, loadScancodeFacts)
+  -- , (osadlLFC, loadOsadlFacts)
+  , (calLFC, loadChooseALicenseFacts)
+  , (fedoraLFC, loadFedoraFacts)
+  , (osiLFC, loadOSIFacts)
+  , (oslcLFC, loadOslcFacts)
+  , (wikipediaLFC, loadWikipediaFacts)
+  , (googleLFC, loadGoogleFacts)
+  , (okfnLFC, loadOkfnFacts)
+  -- , (gnuLFC, loadGnuFacts)
+  , (dfsgLFC, loadDFSGFacts)
+  -- , (ifrOSSLFC, loadIfrOSSFacts)
+  , (overrideLFC, loadOverrideFacts (cOverrides conf))
+  ]
+
 readFacts :: Configuration -> IO Facts
 readFacts conf = do
-  factsFromSPDX <- loadSPDXFacts
-  factsFromBlueOak <- loadBlueOakFacts
-  -- factsFromCavil <- loadCavilFacts
-  factsFromOCPT <- loadOCPTFacts
-  factsFromScancode <- loadScancodeFacts
-  factsFromOsadl <- loadOsadlFacts
-  factsFromChooseALicense <- loadChooseALicenseFacts
-  factsFromFedora <- loadFedoraFacts
-  factsFromOSI <- loadOSIFacts
-  factsFromOSLC <- loadOslcFacts
-  factsFromWikipedia <- loadWikipediaFacts
-  factsFromGoogle <- loadGoogleFacts
-  factsFromOkfn <- loadOkfnFacts
-  factsFromGnu <- loadGnuFacts
-  factsFromDFSG <- loadDFSGFacts
-  factsFromIfrOSS <- loadIfrOSSFacts
-  factsFromOverride <- loadOverrideFacts (cOverrides conf)
-  let facts = V.concat [ factsFromSPDX
-                       , factsFromBlueOak
-                       -- , factsFromCavil
-                       , factsFromOCPT
-                       , factsFromScancode
-                       , factsFromOsadl
-                       , factsFromChooseALicense
-                       , factsFromFedora
-                       , factsFromOSI
-                       , factsFromOSLC
-                       , factsFromWikipedia
-                       , factsFromGoogle
-                       , factsFromOkfn
-                       , factsFromGnu
-                       , factsFromDFSG
-                       , factsFromIfrOSS
-                       , factsFromOverride
-                       ]
+  let collectors = mkCollectors conf
+  hPutStrLn stderr "chosen collectors:"
+  mapM_ (hPutStrLn stderr . show . fst) collectors
+  hPutStrLn stderr "start collecting data ..."
+  facts <- fmap V.concat $ mapM P.snd collectors
   hPutStrLn stderr "... done with collecting data"
   return facts
 
@@ -141,6 +137,24 @@ writeLicenseJSONs outputFolder licenses = do
                    return outputFile) licenses
   BL.writeFile (jsonOutputFolder </> "_all.json") (encodePretty licenses)
   BL.writeFile (jsonOutputFolder </> "_index.json") (encodePretty jsons)
+
+writeFactsLicenses :: FilePath -> Facts -> [(LicenseName, License)] -> IO ()
+writeFactsLicenses outputFolder facts licenses = let
+    lfls :: [(Text, LicenseFactLicense)]
+    lfls = (V.toList . V.uniq . V.map (\lfc -> (extractBrc lfc, extractLFL lfc)) . V.map getLicenseFactClassifier) facts
+    licenseMap = M.fromList licenses
+  in do
+  mapM_ (\tpl@(_, lfl) ->let
+            licensename = extractLFLName lfl
+            outfile = outputFolder </> "LICENSE." ++ licensename
+            in do
+            print tpl
+            case licensename `M.lookup` licenseMap of
+              Just lic -> case unpackRLSR (getImpliedText lic) of
+                Just text -> T.writeFile outfile text
+                _         -> hPutStrLn stderr ("... found no text for: " ++ licensename)
+              _         -> hPutStrLn stderr ("... found no license for: " ++ licensename)
+           ) lfls
 
 cleanupAndMakeOutputFolder :: FilePath -> IO FilePath
 cleanupAndMakeOutputFolder outputFolder = do

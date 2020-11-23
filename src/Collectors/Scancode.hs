@@ -77,7 +77,7 @@ instance FromJSON ScancodeData where
     <*> pure Nothing -- LicenseText is added later
 instance ToJSON ScancodeData
 scancodeLFC :: LicenseFactClassifier
-scancodeLFC = LFC "Scancode"
+scancodeLFC = LFCWithLicense (LFL "CC0-1.0") "Scancode"
 instance LicenseFactClassifiable ScancodeData where
   getLicenseFactClassifier _ = scancodeLFC
 instance LFRaw ScancodeData where

@@ -17,13 +17,14 @@ main :: IO ()
 main = do
   outputFolder <- cleanupAndMakeOutputFolder "_generated/"
   runLDBCore configuration
-    (\_ input ->
+    (\facts input ->
         do
           let licenses = map (\(ln, l, _, _) -> (ln, l)) input
           let pages = map (\(_,_,p, _) -> p) input
           let trees = map (\(ln, _, _, t) -> (ln, t)) input
 
           writeLicenseJSONs outputFolder licenses
+          writeFactsLicenses outputFolder facts licenses
           writeDetails outputFolder pages
           writePandocs outputFolder pages
           writeGraphizs outputFolder trees

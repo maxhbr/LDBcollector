@@ -58,7 +58,7 @@ instance FromJSON SPDXEntry where
     <*> v .: "seeAlso"
     <*> v .: "isOsiApproved"
 spdxLFC :: LicenseFactClassifier
-spdxLFC = LFC "SPDX"
+spdxLFC = LFCWithLicense (LFL "all data [in this repository] is generated") "SPDX"
 instance LicenseFactClassifiable SPDXEntry where
   getLicenseFactClassifier _ = spdxLFC
 instance LFRaw SPDXEntry where

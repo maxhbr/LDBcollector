@@ -195,7 +195,7 @@ instance ToJSON WikipediaFact where
                                , mkTMGrantEntry
                                ]
 wikipediaLFC :: LicenseFactClassifier
-wikipediaLFC = LFC "Wikipedia"
+wikipediaLFC = LFCWithLicense (LFLWithURL "https://creativecommons.org/licenses/by-sa/3.0/legalcode" "CC-BY-SA-3.0") "Wikipedia"
 instance LicenseFactClassifiable WikipediaFact where
   getLicenseFactClassifier _ = wikipediaLFC
 instance LFRaw WikipediaFact where

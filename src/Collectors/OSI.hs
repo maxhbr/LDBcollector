@@ -20,7 +20,7 @@ import           Network.HTTP.Client (HttpException (..))
 import           Model.License
 
 osiLFC :: LicenseFactClassifier
-osiLFC = LFC "OpenSourceInitiative"
+osiLFC = LFCWithLicense (LFLWithURL "https://creativecommons.org/licenses/by/4.0/legalcode" "CC-BY-4.0") "OpenSourceInitiative"
 instance LicenseFactClassifiable OSILicense where
   getLicenseFactClassifier _ = osiLFC
 instance LFRaw OSILicense where

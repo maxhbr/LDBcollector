@@ -33,7 +33,7 @@ instance FromJSON BlueOakLicense
 instance ToJSON BlueOakLicense
 
 blueOakLFC :: LicenseFactClassifier
-blueOakLFC = LFC "BlueOak License List"
+blueOakLFC = LFCWithLicense (LFLWithURL "https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" "CC0-1.0") "BlueOak License List"
 
 -- #############################################################################
 -- #  permissive  ##############################################################

@@ -64,7 +64,7 @@ instance FromJSON OSLCData where
     <*> v .:? "notes"
     <*> v .:? "terms"
 oslcLFC :: LicenseFactClassifier
-oslcLFC = LFC "finos/OSLC-handbook"
+oslcLFC = LFCWithLicense (LFLWithURL "https://creativecommons.org/licenses/by/4.0/legalcode" "CC-BY-4.0") "finos/OSLC-handbook"
 instance LicenseFactClassifiable OSLCData where
   getLicenseFactClassifier _ = oslcLFC
 instance LFRaw OSLCData where

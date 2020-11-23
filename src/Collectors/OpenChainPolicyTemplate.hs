@@ -46,7 +46,7 @@ instance FromNamedRecord OCPTRow where
                                  <*> r C..: "Commercial Use"
 instance ToJSON OCPTRow
 ocptLFC :: LicenseFactClassifier
-ocptLFC = LFC "OpenChainPolicyTemplate"
+ocptLFC = LFCWithLicense (LFL "CC0-1.0") "OpenChainPolicyTemplate"
 instance LicenseFactClassifiable OCPTRow where
   getLicenseFactClassifier _ = ocptLFC
 instance LFRaw OCPTRow where

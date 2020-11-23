@@ -36,7 +36,7 @@ instance ToJSON GnuFact where
                                                      , "isGPLComptible" .= isGCompatible
                                                      ]
 gnuLFC :: LicenseFactClassifier
-gnuLFC = LFC "gnu.org"
+gnuLFC = LFCWithLicense (LFLWithURL "https://creativecommons.org/licenses/by-nd/4.0/" "CC-BY-ND-4.0") "gnu.org"
 instance LicenseFactClassifiable GnuFact where
   getLicenseFactClassifier _ = gnuLFC
 instance LFRaw GnuFact where

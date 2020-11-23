@@ -27,7 +27,7 @@ instance ToJSON ByteString where
   toJSON = toJSON . Char8.unpack
 instance ToJSON OSADLFactRaw
 osadlLFC :: LicenseFactClassifier
-osadlLFC = LFC "OSADL License Checklist"
+osadlLFC = LFCWithLicense (LFL "NOASSERTION") "OSADL License Checklist"
 instance LicenseFactClassifiable OSADLFactRaw where
   getLicenseFactClassifier _ = osadlLFC
 instance LFRaw OSADLFactRaw where
