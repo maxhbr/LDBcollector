@@ -13,7 +13,27 @@ import qualified Data.Map as M
 import Lib
 
 configuration :: Configuration
-configuration = Configuration ratingRules overrides
+configuration = let
+  chosenLFCs =
+    [ spdxLFC
+    , blueOakLFC
+    -- , cavilLFC
+    , ocptLFC
+    , scancodeLFC
+    -- , osadlLFC
+    , calLFC
+    , fedoraLFC
+    , osiLFC
+    , oslcLFC
+    , wikipediaLFC
+    , googleLFC
+    , okfnLFC
+    -- , gnuLFC
+    , dfsgLFC
+    -- , ifrOSSLFC
+    , overrideLFC
+    ]
+  in Configuration chosenLFCs ratingRules overrides
 
 ratingRules :: RatingRules
 ratingRules = let

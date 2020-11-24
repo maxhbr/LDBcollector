@@ -4,6 +4,7 @@
 {-# LANGUAGE TemplateHaskell #-}
 module Collectors.OSADL
   ( loadOsadlFacts
+  , osadlLFC
   ) where
 
 import qualified Prelude as P

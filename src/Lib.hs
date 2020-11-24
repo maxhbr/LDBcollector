@@ -73,18 +73,19 @@ runLDBCore configuration handler = do
 
 data Configuration
   = Configuration
-  { cRatingRules  :: RatingRules
-  , cOverrides    :: [Override]
+  { cLFCs        :: [LicenseFactClassifier]
+  , cRatingRules :: RatingRules
+  , cOverrides   :: [Override]
   }
 
 mkCollectors :: Configuration -> [(LicenseFactClassifier, IO Facts)]
-mkCollectors conf =
+mkCollectors conf = (overrideLFC, loadOverrideFacts (cOverrides conf)) : filter (\(lfc,_) -> lfc `elem` cLFCs conf)
   [ (spdxLFC, loadSPDXFacts)
   , (blueOakLFC, loadBlueOakFacts)
-  -- , (cavilLFC, loadCavilFacts)
+  , (cavilLFC, loadCavilFacts)
   , (ocptLFC, loadOCPTFacts)
   , (scancodeLFC, loadScancodeFacts)
-  -- , (osadlLFC, loadOsadlFacts)
+  , (osadlLFC, loadOsadlFacts)
   , (calLFC, loadChooseALicenseFacts)
   , (fedoraLFC, loadFedoraFacts)
   , (osiLFC, loadOSIFacts)
@@ -92,10 +93,9 @@ mkCollectors conf =
   , (wikipediaLFC, loadWikipediaFacts)
   , (googleLFC, loadGoogleFacts)
   , (okfnLFC, loadOkfnFacts)
-  -- , (gnuLFC, loadGnuFacts)
+  , (gnuLFC, loadGnuFacts)
   , (dfsgLFC, loadDFSGFacts)
-  -- , (ifrOSSLFC, loadIfrOSSFacts)
-  , (overrideLFC, loadOverrideFacts (cOverrides conf))
+  , (ifrOSSLFC, loadIfrOSSFacts)
   ]
 
 readFacts :: Configuration -> IO Facts
@@ -149,11 +149,12 @@ writeFactsLicenses outputFolder facts licenses = let
             outfile = outputFolder </> "LICENSE." ++ licensename
             in do
             print tpl
-            case licensename `M.lookup` licenseMap of
-              Just lic -> case unpackRLSR (getImpliedText lic) of
-                Just text -> T.writeFile outfile text
-                _         -> hPutStrLn stderr ("... found no text for: " ++ licensename)
-              _         -> hPutStrLn stderr ("... found no license for: " ++ licensename)
+            when (licensename /= "") $
+              case licensename `M.lookup` licenseMap of
+                Just lic -> case unpackRLSR (getImpliedText lic) of
+                  Just text -> T.writeFile outfile text
+                  _         -> hPutStrLn stderr ("... found no text for: " ++ licensename)
+                _         -> hPutStrLn stderr ("... found no license for: " ++ licensename)
            ) lfls
 
 cleanupAndMakeOutputFolder :: FilePath -> IO FilePath
