@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="142.74,-1032 142.74,-1138 520.11,-1138 520.11,-1032 142.74,-1032"/>
+<polygon fill="lightgray" stroke="lightgray" points="255.18,-870 255.18,-1138 407.67,-1138 407.67,-870 255.18,-870"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="142.74,-918 142.74,-1024 520.11,-1024 520.11,-918 142.74,-918"/>
+<polygon fill="lightgray" stroke="lightgray" points="142.74,-756 142.74,-862 520.11,-862 520.11,-756 142.74,-756"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="229.18,-750 229.18,-910 433.66,-910 433.66,-750 229.18,-750"/>
+<polygon fill="lightgray" stroke="lightgray" points="142.74,-642 142.74,-748 520.11,-748 520.11,-642 142.74,-642"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="255.18,-474 255.18,-742 407.67,-742 407.67,-474 255.18,-474"/>
+<polygon fill="lightgray" stroke="lightgray" points="229.18,-474 229.18,-634 433.66,-634 433.66,-474 229.18,-474"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -55,77 +55,77 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-1172" rx="68.49" ry="18"/>
 <text text-anchor="middle" x="331.42" y="-1168.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
 </g>
-<!-- GNU General Public License v2.0 only(3) -->
+<!-- GPL (v2)(3) -->
 <g id="node2" class="node">
-<title>GNU General Public License v2.0 only(3)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-1112" rx="180.87" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-1108.3" font-family="Times-Roman" font-size="14.00">GNU General Public License v2.0 only</text>
+<title>GPL (v2)(3)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-1112" rx="48.99" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-1108.3" font-family="Times-Roman" font-size="14.00">GPL (v2)</text>
+</g>
+<!-- GPL&#45;2.0(3) -->
+<g id="node3" class="node">
+<title>GPL&#45;2.0(3)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-1058" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-1054.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
 </g>
 <!-- GPL&#45;2.0&#45;only(3) -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>GPL&#45;2.0&#45;only(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-1058" rx="68.49" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-1054.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-1004" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-1000.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
+</g>
+<!-- GPL2(3) -->
+<g id="node5" class="node">
+<title>GPL2(3)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-950" rx="33.6" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-946.3" font-family="Times-Roman" font-size="14.00">GPL2</text>
+</g>
+<!-- GPL2.0(3) -->
+<g id="node6" class="node">
+<title>GPL2.0(3)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-896" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-892.3" font-family="Times-Roman" font-size="14.00">GPL2.0</text>
 </g>
 <!-- GNU General Public License v2.0 only(4) -->
-<g id="node4" class="node">
+<g id="node7" class="node">
 <title>GNU General Public License v2.0 only(4)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-998" rx="180.87" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-994.3" font-family="Times-Roman" font-size="14.00">GNU General Public License v2.0 only</text>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-836" rx="180.87" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-832.3" font-family="Times-Roman" font-size="14.00">GNU General Public License v2.0 only</text>
 </g>
 <!-- GPL&#45;2.0&#45;only(4) -->
-<g id="node5" class="node">
+<g id="node8" class="node">
 <title>GPL&#45;2.0&#45;only(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-944" rx="68.49" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-940.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-782" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-778.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
 </g>
-<!-- GPL 2.0(5) -->
-<g id="node6" class="node">
-<title>GPL 2.0(5)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-884" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-880.3" font-family="Times-Roman" font-size="14.00">GPL 2.0</text>
+<!-- GNU General Public License v2.0 only(5) -->
+<g id="node9" class="node">
+<title>GNU General Public License v2.0 only(5)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-722" rx="180.87" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-718.3" font-family="Times-Roman" font-size="14.00">GNU General Public License v2.0 only</text>
 </g>
 <!-- GPL&#45;2.0&#45;only(5) -->
-<g id="node7" class="node">
-<title>GPL&#45;2.0&#45;only(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-830" rx="68.49" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-826.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
-</g>
-<!-- scancode://gpl&#45;2.0(5) -->
-<g id="node8" class="node">
-<title>scancode://gpl&#45;2.0(5)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-776" rx="94.48" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-772.3" font-family="Times-Roman" font-size="14.00">scancode://gpl&#45;2.0</text>
-</g>
-<!-- GPL (v2)(6) -->
-<g id="node9" class="node">
-<title>GPL (v2)(6)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-716" rx="48.99" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-712.3" font-family="Times-Roman" font-size="14.00">GPL (v2)</text>
-</g>
-<!-- GPL&#45;2.0(6) -->
 <g id="node10" class="node">
-<title>GPL&#45;2.0(6)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-662" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-658.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
+<title>GPL&#45;2.0&#45;only(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-668" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-664.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
+</g>
+<!-- GPL 2.0(6) -->
+<g id="node11" class="node">
+<title>GPL 2.0(6)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-608" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-604.3" font-family="Times-Roman" font-size="14.00">GPL 2.0</text>
 </g>
 <!-- GPL&#45;2.0&#45;only(6) -->
-<g id="node11" class="node">
-<title>GPL&#45;2.0&#45;only(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-608" rx="68.49" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-604.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
-</g>
-<!-- GPL2(6) -->
 <g id="node12" class="node">
-<title>GPL2(6)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-554" rx="33.6" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-550.3" font-family="Times-Roman" font-size="14.00">GPL2</text>
+<title>GPL&#45;2.0&#45;only(6)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="331.42" cy="-554" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-550.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0&#45;only</text>
 </g>
-<!-- GPL2.0(6) -->
+<!-- scancode://gpl&#45;2.0(6) -->
 <g id="node13" class="node">
-<title>GPL2.0(6)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-500" rx="42.49" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-496.3" font-family="Times-Roman" font-size="14.00">GPL2.0</text>
+<title>scancode://gpl&#45;2.0(6)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-500" rx="94.48" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-496.3" font-family="Times-Roman" font-size="14.00">scancode://gpl&#45;2.0</text>
 </g>
 <!-- GNU GPLv2(7) -->
 <g id="node14" class="node">

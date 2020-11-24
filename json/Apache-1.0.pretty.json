@@ -1,12 +1,12 @@
 {
     "__impliedNames": [
         "Apache-1.0",
-        "Apache License 1.0",
-        "scancode://apache-1.0",
-        "Apache 1.0",
         "Apache (v1.0)",
         "Apache Software License 1.0",
-        "ASL 1.0"
+        "ASL 1.0",
+        "Apache License 1.0",
+        "scancode://apache-1.0",
+        "Apache 1.0"
     ],
     "__impliedId": "Apache-1.0",
     "__impliedAmbiguousNames": [

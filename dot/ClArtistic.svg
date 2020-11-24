@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="28.35,-412 28.35,-518 283.53,-518 283.53,-412 28.35,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="59.55,-412 59.55,-518 252.33,-518 252.33,-412 59.55,-412"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,11 +27,11 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 295.88,-290 295.88,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="28.35,-184 28.35,-290 283.53,-290 283.53,-184 28.35,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="59.55,-16 59.55,-122 252.33,-122 252.33,-16 59.55,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 295.88,-176 295.88,-16 16,-16"/>
 </g>
 <!-- ClArtistic(1) -->
 <g id="node1" class="node">
@@ -39,17 +39,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-552" rx="51.19" ry="18"/>
 <text text-anchor="middle" x="155.94" y="-548.3" font-family="Times-Roman" font-size="14.00">ClArtistic</text>
 </g>
-<!-- ClArtistic(2) -->
+<!-- Artistic (clarified)(2) -->
 <g id="node2" class="node">
-<title>ClArtistic(2)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-492" rx="51.19" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-488.3" font-family="Times-Roman" font-size="14.00">ClArtistic</text>
+<title>Artistic (clarified)(2)</title>
+<ellipse fill="white" stroke="white" cx="155.94" cy="-492" rx="88.28" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-488.3" font-family="Times-Roman" font-size="14.00">Artistic (clarified)</text>
 </g>
-<!-- Clarified Artistic License(2) -->
+<!-- ClArtistic(2) -->
 <g id="node3" class="node">
-<title>Clarified Artistic License(2)</title>
-<ellipse fill="white" stroke="white" cx="155.94" cy="-438" rx="119.68" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-434.3" font-family="Times-Roman" font-size="14.00">Clarified Artistic License</text>
+<title>ClArtistic(2)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-438" rx="51.19" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-434.3" font-family="Times-Roman" font-size="14.00">ClArtistic</text>
 </g>
 <!-- ClArtistic(3) -->
 <g id="node4" class="node">
@@ -75,23 +75,23 @@
 <ellipse fill="white" stroke="white" cx="155.94" cy="-210" rx="119.68" ry="18"/>
 <text text-anchor="middle" x="155.94" y="-206.3" font-family="Times-Roman" font-size="14.00">Clarified Artistic License</text>
 </g>
-<!-- scancode://artistic&#45;clarified(4) -->
-<g id="node8" class="node">
-<title>scancode://artistic&#45;clarified(4)</title>
-<ellipse fill="white" stroke="white" cx="155.94" cy="-156" rx="131.88" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://artistic&#45;clarified</text>
-</g>
-<!-- Artistic (clarified)(5) -->
-<g id="node9" class="node">
-<title>Artistic (clarified)(5)</title>
-<ellipse fill="white" stroke="white" cx="155.94" cy="-96" rx="88.28" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-92.3" font-family="Times-Roman" font-size="14.00">Artistic (clarified)</text>
-</g>
 <!-- ClArtistic(5) -->
-<g id="node10" class="node">
+<g id="node8" class="node">
 <title>ClArtistic(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-42" rx="51.19" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-38.3" font-family="Times-Roman" font-size="14.00">ClArtistic</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-150" rx="51.19" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-146.3" font-family="Times-Roman" font-size="14.00">ClArtistic</text>
+</g>
+<!-- Clarified Artistic License(5) -->
+<g id="node9" class="node">
+<title>Clarified Artistic License(5)</title>
+<ellipse fill="white" stroke="white" cx="155.94" cy="-96" rx="119.68" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-92.3" font-family="Times-Roman" font-size="14.00">Clarified Artistic License</text>
+</g>
+<!-- scancode://artistic&#45;clarified(5) -->
+<g id="node10" class="node">
+<title>scancode://artistic&#45;clarified(5)</title>
+<ellipse fill="white" stroke="white" cx="155.94" cy="-42" rx="131.88" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://artistic&#45;clarified</text>
 </g>
 </g>
 </svg>

@@ -1,12 +1,12 @@
 {
     "__impliedNames": [
         "GPL-1.0-only",
-        "GNU General Public License v1.0 only",
-        "scancode://gpl-1.0",
-        "GPL 1.0",
         "GPL-1.0",
         "GPL1.0",
-        "GPL1"
+        "GPL1",
+        "GNU General Public License v1.0 only",
+        "scancode://gpl-1.0",
+        "GPL 1.0"
     ],
     "__impliedId": "GPL-1.0-only",
     "__impliedAmbiguousNames": [

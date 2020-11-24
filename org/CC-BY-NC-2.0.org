@@ -108,6 +108,8 @@
 
 *** Facts
 
+- Override
+
 - [[https://spdx.org/licenses/CC-BY-NC-2.0.html][SPDX]] (all data [in
   this repository] is generated)
 
@@ -120,8 +122,6 @@
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]] (NOASSERTION)
-
-- Override
 
 *** Raw JSON
 

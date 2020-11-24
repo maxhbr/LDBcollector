@@ -5,6 +5,10 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 **Other Names:**
 
+-   `BSD (3 clause)`
+
+-   `BSD License (no advertising)`
+
 -   `scancode://bsd-new`
 
 -   `BSD-3`
@@ -20,10 +24,6 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 -   `New BSD License`
 
 -   `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
-
--   `BSD (3 clause)`
-
--   `BSD License (no advertising)`
 
 Description
 -----------
@@ -129,6 +129,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -163,13 +165,13 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "BSD-3-Clause",
+            "BSD (3 clause)",
+            "BSD License (no advertising)",
             "BSD 3-Clause \"New\" or \"Revised\" License",
             "scancode://bsd-new",
             "bsd-3-clause",
@@ -180,9 +182,7 @@ Raw Data
             "Revised BSD License",
             "Modified BSD License",
             "New BSD License",
-            "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
-            "BSD (3 clause)",
-            "BSD License (no advertising)"
+            "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
         ],
         "__impliedId": "BSD-3-Clause",
         "__impliedAmbiguousNames": [

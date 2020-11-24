@@ -5,15 +5,15 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 **Other Names:**
 
--   `scancode://gpl-1.0-plus`
-
--   `GPL 1.0 or later`
-
 -   `GPL-1.0+`
 
 -   `GPL1.0+`
 
 -   `GPL1+`
+
+-   `scancode://gpl-1.0-plus`
+
+-   `GPL 1.0 or later`
 
 Comments on (easy) usability
 ----------------------------
@@ -60,6 +60,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/GPL-1.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -74,19 +76,17 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "GPL-1.0-or-later",
-            "GNU General Public License v1.0 or later",
-            "scancode://gpl-1.0-plus",
-            "GPL 1.0 or later",
             "GPL-1.0+",
             "GPL1.0+",
-            "GPL1+"
+            "GPL1+",
+            "GNU General Public License v1.0 or later",
+            "scancode://gpl-1.0-plus",
+            "GPL 1.0 or later"
         ],
         "__impliedId": "GPL-1.0-or-later",
         "__impliedAmbiguousNames": [

@@ -11,6 +11,8 @@
 
 *Other Names:*
 
+* `+BSD (3 clause)+`
+* `+BSD License (no advertising)+`
 * `+scancode://bsd-new+`
 * `+BSD-3+`
 * `+BSD 3-Clause License+`
@@ -19,8 +21,6 @@
 * `+Modified BSD License+`
 * `+New BSD License+`
 * `+BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)+`
-* `+BSD (3 clause)+`
-* `+BSD License (no advertising)+`
 
 === Description
 
@@ -129,6 +129,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ==== Facts
 
+* Override
 * https://spdx.org/licenses/BSD-3-Clause.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -151,7 +152,6 @@ Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
-* Override
 
 ==== Raw JSON
 
@@ -159,6 +159,8 @@ Knowledge International]
 {
     "__impliedNames": [
         "BSD-3-Clause",
+        "BSD (3 clause)",
+        "BSD License (no advertising)",
         "BSD 3-Clause \"New\" or \"Revised\" License",
         "scancode://bsd-new",
         "bsd-3-clause",
@@ -169,9 +171,7 @@ Knowledge International]
         "Revised BSD License",
         "Modified BSD License",
         "New BSD License",
-        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
-        "BSD (3 clause)",
-        "BSD License (no advertising)"
+        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
     ],
     "__impliedId": "BSD-3-Clause",
     "__impliedAmbiguousNames": [

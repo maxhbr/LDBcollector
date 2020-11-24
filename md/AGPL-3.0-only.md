@@ -7,6 +7,14 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 -   `AGPL-3.0`
 
+-   `AGPL3.0`
+
+-   `AGPL3`
+
+-   `AGPL (v3)`
+
+-   `Affero General Public License 3.0`
+
 -   `scancode://agpl-3.0`
 
 -   `AGPL 3.0`
@@ -15,8 +23,6 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 -   `GNU AGPLv3`
 
--   `Affero General Public License 3.0`
-
 -   `GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)`
 
 -   `License :: OSI Approved :: GNU Affero General Public License v3`
@@ -24,12 +30,6 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 -   `GNU Affero General Public License v3`
 
 -   `agpl-v3`
-
--   `AGPL3.0`
-
--   `AGPL3`
-
--   `AGPL (v3)`
 
 Description
 -----------
@@ -793,6 +793,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/AGPL-3.0-only.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -831,27 +833,25 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "AGPL-3.0-only",
-            "GNU Affero General Public License v3.0 only",
             "AGPL-3.0",
+            "AGPL3.0",
+            "AGPL3",
+            "AGPL (v3)",
+            "Affero General Public License 3.0",
+            "GNU Affero General Public License v3.0 only",
             "scancode://agpl-3.0",
             "AGPL 3.0",
             "agpl-3.0",
             "GNU AGPLv3",
-            "Affero General Public License 3.0",
             "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
             "License :: OSI Approved :: GNU Affero General Public License v3",
             "GNU Affero General Public License v3",
-            "agpl-v3",
-            "AGPL3.0",
-            "AGPL3",
-            "AGPL (v3)"
+            "agpl-v3"
         ],
         "__impliedId": "AGPL-3.0-only",
         "__isFsfFree": true,

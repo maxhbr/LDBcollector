@@ -19,31 +19,31 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-862 135.59,-968 333.57,-968 333.57,-862 135.59,-862"/>
+<polygon fill="lightgray" stroke="lightgray" points="56.3,-808 56.3,-968 412.87,-968 412.87,-808 56.3,-808"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-748 135.59,-854 333.57,-854 333.57,-748 135.59,-748"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-694 135.59,-800 333.57,-800 333.57,-694 135.59,-694"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="121.94,-580 121.94,-740 347.22,-740 347.22,-580 121.94,-580"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-580 135.59,-686 333.57,-686 333.57,-580 135.59,-580"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-572 453.16,-572 453.16,-412 16,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="121.94,-412 121.94,-572 347.22,-572 347.22,-412 121.94,-412"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-298 135.59,-404 333.57,-404 333.57,-298 135.59,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-404 453.16,-404 453.16,-244 16,-244"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-184 135.59,-290 333.57,-290 333.57,-184 135.59,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-130 135.59,-236 333.57,-236 333.57,-130 135.59,-130"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="56.3,-16 56.3,-176 412.87,-176 412.87,-16 56.3,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-122 333.57,-122 333.57,-16 135.59,-16"/>
 </g>
 <!-- Sleepycat(1) -->
 <g id="node1" class="node">
@@ -51,95 +51,95 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-1002" rx="54.69" ry="18"/>
 <text text-anchor="middle" x="234.58" y="-998.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
 </g>
-<!-- Sleepycat(2) -->
+<!-- Berkeley Database License(2) -->
 <g id="node2" class="node">
-<title>Sleepycat(2)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-942" rx="54.69" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-938.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
+<title>Berkeley Database License(2)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-942" rx="131.88" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-938.3" font-family="Times-Roman" font-size="14.00">Berkeley Database License</text>
 </g>
-<!-- Sleepycat License(2) -->
+<!-- Sleepycat(2) -->
 <g id="node3" class="node">
-<title>Sleepycat License(2)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-888" rx="90.98" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-884.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
+<title>Sleepycat(2)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-888" rx="54.69" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-884.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
+</g>
+<!-- Sleepycat Software Product License(2) -->
+<g id="node4" class="node">
+<title>Sleepycat Software Product License(2)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-834" rx="170.07" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-830.3" font-family="Times-Roman" font-size="14.00">Sleepycat Software Product License</text>
 </g>
 <!-- Sleepycat(3) -->
-<g id="node4" class="node">
+<g id="node5" class="node">
 <title>Sleepycat(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-828" rx="54.69" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-824.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-774" rx="54.69" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-770.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
 </g>
 <!-- Sleepycat License(3) -->
-<g id="node5" class="node">
+<g id="node6" class="node">
 <title>Sleepycat License(3)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-774" rx="90.98" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-770.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-720" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-716.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
 </g>
 <!-- Sleepycat(4) -->
-<g id="node6" class="node">
+<g id="node7" class="node">
 <title>Sleepycat(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-714" rx="54.69" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-710.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-660" rx="54.69" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-656.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
 </g>
 <!-- Sleepycat License(4) -->
-<g id="node7" class="node">
-<title>Sleepycat License(4)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-660" rx="90.98" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-656.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
-</g>
-<!-- scancode://sleepycat(4) -->
 <g id="node8" class="node">
-<title>scancode://sleepycat(4)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-606" rx="104.78" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-602.3" font-family="Times-Roman" font-size="14.00">scancode://sleepycat</text>
-</g>
-<!-- License :: OSI Approved :: Sleepycat License(5) -->
-<g id="node9" class="node">
-<title>License :: OSI Approved :: Sleepycat License(5)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-546" rx="210.66" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-542.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Sleepycat License</text>
+<title>Sleepycat License(4)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-606" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-602.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
 </g>
 <!-- Sleepycat(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>Sleepycat(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-492" rx="54.69" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-488.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-546" rx="54.69" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-542.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
 </g>
-<!-- The Sleepycat License(5) -->
+<!-- Sleepycat License(5) -->
+<g id="node10" class="node">
+<title>Sleepycat License(5)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-492" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-488.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
+</g>
+<!-- scancode://sleepycat(5) -->
 <g id="node11" class="node">
-<title>The Sleepycat License(5)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-438" rx="110.48" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-434.3" font-family="Times-Roman" font-size="14.00">The Sleepycat License</text>
+<title>scancode://sleepycat(5)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-438" rx="104.78" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-434.3" font-family="Times-Roman" font-size="14.00">scancode://sleepycat</text>
+</g>
+<!-- License :: OSI Approved :: Sleepycat License(6) -->
+<g id="node12" class="node">
+<title>License :: OSI Approved :: Sleepycat License(6)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-378" rx="210.66" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-374.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Sleepycat License</text>
 </g>
 <!-- Sleepycat(6) -->
-<g id="node12" class="node">
-<title>Sleepycat(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-378" rx="54.69" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-374.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
-</g>
-<!-- Sleepycat License(6) -->
 <g id="node13" class="node">
-<title>Sleepycat License(6)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-324" rx="90.98" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-320.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
+<title>Sleepycat(6)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-324" rx="54.69" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-320.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
+</g>
+<!-- The Sleepycat License(6) -->
+<g id="node14" class="node">
+<title>The Sleepycat License(6)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-270" rx="110.48" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-266.3" font-family="Times-Roman" font-size="14.00">The Sleepycat License</text>
 </g>
 <!-- Sleepycat(7) -->
-<g id="node14" class="node">
+<g id="node15" class="node">
 <title>Sleepycat(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-264" rx="54.69" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-260.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-210" rx="54.69" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-206.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
 </g>
 <!-- Sleepycat License(7) -->
-<g id="node15" class="node">
-<title>Sleepycat License(7)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-210" rx="90.98" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-206.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
-</g>
-<!-- Berkeley Database License(8) -->
 <g id="node16" class="node">
-<title>Berkeley Database License(8)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-150" rx="131.88" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-146.3" font-family="Times-Roman" font-size="14.00">Berkeley Database License</text>
+<title>Sleepycat License(7)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-156" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-152.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
 </g>
 <!-- Sleepycat(8) -->
 <g id="node17" class="node">
@@ -147,11 +147,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="234.58" cy="-96" rx="54.69" ry="18"/>
 <text text-anchor="middle" x="234.58" y="-92.3" font-family="Times-Roman" font-size="14.00">Sleepycat</text>
 </g>
-<!-- Sleepycat Software Product License(8) -->
+<!-- Sleepycat License(8) -->
 <g id="node18" class="node">
-<title>Sleepycat Software Product License(8)</title>
-<ellipse fill="white" stroke="white" cx="234.58" cy="-42" rx="170.07" ry="18"/>
-<text text-anchor="middle" x="234.58" y="-38.3" font-family="Times-Roman" font-size="14.00">Sleepycat Software Product License</text>
+<title>Sleepycat License(8)</title>
+<ellipse fill="white" stroke="white" cx="234.58" cy="-42" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="234.58" y="-38.3" font-family="Times-Roman" font-size="14.00">Sleepycat License</text>
 </g>
 </g>
 </svg>

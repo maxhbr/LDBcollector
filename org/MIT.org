@@ -10,6 +10,8 @@
 
 *Other Names:*
 
+- =MIT license (also X11)=
+
 - =scancode://mit=
 
 - =MIT/Expat License=
@@ -21,8 +23,6 @@
 - =MIT license / X11 license=
 
 - =mit-license=
-
-- =MIT license (also X11)=
 
 ** Description
 
@@ -140,6 +140,8 @@
 
 *** Facts
 
+- Override
+
 - [[https://spdx.org/licenses/MIT.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -175,14 +177,13 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]] (NOASSERTION)
 
-- Override
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "MIT",
+          "MIT license (also X11)",
           "MIT License",
           "scancode://mit",
           "mit",
@@ -190,8 +191,7 @@
           "Expat",
           "License :: OSI Approved :: MIT License",
           "MIT license / X11 license",
-          "mit-license",
-          "MIT license (also X11)"
+          "mit-license"
       ],
       "__impliedId": "MIT",
       "__impliedAmbiguousNames": [

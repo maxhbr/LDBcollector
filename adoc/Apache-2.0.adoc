@@ -12,14 +12,14 @@
 
 *Other Names:*
 
+* `+Apache (v2.0)+`
+* `+Apache Software License 2.0+`
+* `+ASL 2.0+`
 * `+scancode://apache-2.0+`
 * `+Apache 2.0+`
 * `+Apache License, Version 2.0+`
 * `+License :: OSI Approved :: Apache Software License+`
-* `+Apache Software License 2.0+`
 * `+apache2.0+`
-* `+Apache (v2.0)+`
-* `+ASL 2.0+`
 
 === Description
 
@@ -313,6 +313,7 @@ https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29
 
 ==== Facts
 
+* Override
 * https://spdx.org/licenses/Apache-2.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -337,7 +338,6 @@ Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
-* Override
 
 ==== Raw JSON
 
@@ -345,16 +345,16 @@ Knowledge International]
 {
     "__impliedNames": [
         "Apache-2.0",
+        "Apache (v2.0)",
+        "Apache Software License 2.0",
+        "ASL 2.0",
         "Apache License 2.0",
         "scancode://apache-2.0",
         "Apache 2.0",
         "apache-2.0",
         "Apache License, Version 2.0",
         "License :: OSI Approved :: Apache Software License",
-        "Apache Software License 2.0",
-        "apache2.0",
-        "Apache (v2.0)",
-        "ASL 2.0"
+        "apache2.0"
     ],
     "__impliedId": "Apache-2.0",
     "__impliedAmbiguousNames": [

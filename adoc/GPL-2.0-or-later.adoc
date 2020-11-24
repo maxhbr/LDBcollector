@@ -11,12 +11,12 @@
 
 *Other Names:*
 
-* `+scancode://gpl-2.0-plus+`
-* `+GPL 2.0 or later+`
 * `+GPL-2.0++`
 * `+GPL2.0++`
 * `+GPL2++`
 * `+GPL (v2 or later)+`
+* `+scancode://gpl-2.0-plus+`
+* `+GPL 2.0 or later+`
 
 === Comments on (easy) usability
 
@@ -77,6 +77,7 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 ==== Facts
 
+* Override
 * https://spdx.org/licenses/GPL-2.0-or-later.html[SPDX] (all data [in
 this repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -90,7 +91,6 @@ Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
-* Override
 
 ==== Raw JSON
 
@@ -98,13 +98,13 @@ Policy]
 {
     "__impliedNames": [
         "GPL-2.0-or-later",
-        "GNU General Public License v2.0 or later",
-        "scancode://gpl-2.0-plus",
-        "GPL 2.0 or later",
         "GPL-2.0+",
         "GPL2.0+",
         "GPL2+",
-        "GPL (v2 or later)"
+        "GPL (v2 or later)",
+        "GNU General Public License v2.0 or later",
+        "scancode://gpl-2.0-plus",
+        "GPL 2.0 or later"
     ],
     "__impliedId": "GPL-2.0-or-later",
     "__impliedAmbiguousNames": [

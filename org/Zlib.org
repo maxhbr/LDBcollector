@@ -10,6 +10,8 @@
 
 *Other Names:*
 
+- =zlib/libpng=
+
 - =scancode://zlib=
 
 - =zlib/libpng License=
@@ -21,8 +23,6 @@
 - =zlib/libpng license=
 
 - =zlib-license=
-
-- =zlib/libpng=
 
 ** Description
 
@@ -125,6 +125,8 @@
 
 *** Facts
 
+- Override
+
 - [[https://spdx.org/licenses/Zlib.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -164,14 +166,13 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]] (NOASSERTION)
 
-- Override
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "Zlib",
+          "zlib/libpng",
           "zlib License",
           "scancode://zlib",
           "ZLIB License",
@@ -180,8 +181,7 @@
           "The zlib/libpng License (Zlib)",
           "License :: OSI Approved :: zlib/libpng License",
           "zlib/libpng license",
-          "zlib-license",
-          "zlib/libpng"
+          "zlib-license"
       ],
       "__impliedId": "Zlib",
       "__isFsfFree": true,

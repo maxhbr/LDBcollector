@@ -128,6 +128,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/BSD-4-Clause-UC.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -144,8 +146,6 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   Override
 
 ### Raw JSON
 

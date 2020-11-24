@@ -5,13 +5,13 @@ Artistic License 1.0 (Artistic-1.0)
 
 **Other Names:**
 
+-   `Artistic 1.0 (original)`
+
 -   `scancode://artistic-1.0`
 
 -   `Artistic 1.0`
 
 -   `Artistic License, Version 1.0`
-
--   `Artistic 1.0 (original)`
 
 Comments on (easy) usability
 ----------------------------
@@ -168,6 +168,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Artistic-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -189,18 +191,16 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Artistic-1.0",
+            "Artistic 1.0 (original)",
             "Artistic License 1.0",
             "scancode://artistic-1.0",
             "Artistic 1.0",
-            "Artistic License, Version 1.0",
-            "Artistic 1.0 (original)"
+            "Artistic License, Version 1.0"
         ],
         "__impliedId": "Artistic-1.0",
         "__impliedAmbiguousNames": [

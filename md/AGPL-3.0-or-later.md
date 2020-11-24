@@ -5,12 +5,6 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 **Other Names:**
 
--   `scancode://agpl-3.0-plus`
-
--   `AGPL 3.0 or later`
-
--   `GNU Affero General Public License 3.0`
-
 -   `AGPL-3.0+`
 
 -   `AGPL3.0+`
@@ -22,6 +16,12 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 -   `Affero General Public License 3.0 or later`
 
 -   `GNU Affero General Public License (AGPL-3.0) (v. 3.0)`
+
+-   `scancode://agpl-3.0-plus`
+
+-   `AGPL 3.0 or later`
+
+-   `GNU Affero General Public License 3.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -97,6 +97,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -113,23 +115,21 @@ Raw Data
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "AGPL-3.0-or-later",
-            "GNU Affero General Public License v3.0 or later",
-            "scancode://agpl-3.0-plus",
-            "AGPL 3.0 or later",
-            "GNU Affero General Public License 3.0",
             "AGPL-3.0+",
             "AGPL3.0+",
             "AGPL3+",
             "AGPL (v3 or later)",
             "Affero General Public License 3.0 or later",
-            "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
+            "GNU Affero General Public License (AGPL-3.0) (v. 3.0)",
+            "GNU Affero General Public License v3.0 or later",
+            "scancode://agpl-3.0-plus",
+            "AGPL 3.0 or later",
+            "GNU Affero General Public License 3.0"
         ],
         "__impliedId": "AGPL-3.0-or-later",
         "__impliedAmbiguousNames": [

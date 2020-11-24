@@ -5,15 +5,15 @@ Apache License 1.0 (Apache-1.0)
 
 **Other Names:**
 
--   `scancode://apache-1.0`
-
--   `Apache 1.0`
-
 -   `Apache (v1.0)`
 
 -   `Apache Software License 1.0`
 
 -   `ASL 1.0`
+
+-   `scancode://apache-1.0`
+
+-   `Apache 1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -104,6 +104,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Apache-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -118,19 +120,17 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Apache-1.0",
-            "Apache License 1.0",
-            "scancode://apache-1.0",
-            "Apache 1.0",
             "Apache (v1.0)",
             "Apache Software License 1.0",
-            "ASL 1.0"
+            "ASL 1.0",
+            "Apache License 1.0",
+            "scancode://apache-1.0",
+            "Apache 1.0"
         ],
         "__impliedId": "Apache-1.0",
         "__impliedAmbiguousNames": [

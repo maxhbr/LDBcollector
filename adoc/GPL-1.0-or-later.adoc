@@ -11,11 +11,11 @@
 
 *Other Names:*
 
-* `+scancode://gpl-1.0-plus+`
-* `+GPL 1.0 or later+`
 * `+GPL-1.0++`
 * `+GPL1.0++`
 * `+GPL1++`
+* `+scancode://gpl-1.0-plus+`
+* `+GPL 1.0 or later+`
 
 === Comments on (easy) usability
 
@@ -57,6 +57,7 @@ You should have received a copy of the GNU General Public License along with thi
 
 ==== Facts
 
+* Override
 * https://spdx.org/licenses/GPL-1.0-or-later.html[SPDX] (all data [in
 this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml[Scancode]
@@ -66,7 +67,6 @@ Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
-* Override
 
 ==== Raw JSON
 
@@ -74,12 +74,12 @@ Policy]
 {
     "__impliedNames": [
         "GPL-1.0-or-later",
-        "GNU General Public License v1.0 or later",
-        "scancode://gpl-1.0-plus",
-        "GPL 1.0 or later",
         "GPL-1.0+",
         "GPL1.0+",
-        "GPL1+"
+        "GPL1+",
+        "GNU General Public License v1.0 or later",
+        "scancode://gpl-1.0-plus",
+        "GPL 1.0 or later"
     ],
     "__impliedId": "GPL-1.0-or-later",
     "__impliedAmbiguousNames": [

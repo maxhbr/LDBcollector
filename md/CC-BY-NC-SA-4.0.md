@@ -485,6 +485,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -498,8 +500,6 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
-
--   Override
 
 ### Raw JSON
 

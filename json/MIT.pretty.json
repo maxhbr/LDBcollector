@@ -1,6 +1,7 @@
 {
     "__impliedNames": [
         "MIT",
+        "MIT license (also X11)",
         "MIT License",
         "scancode://mit",
         "mit",
@@ -8,8 +9,7 @@
         "Expat",
         "License :: OSI Approved :: MIT License",
         "MIT license / X11 license",
-        "mit-license",
-        "MIT license (also X11)"
+        "mit-license"
     ],
     "__impliedId": "MIT",
     "__impliedAmbiguousNames": [

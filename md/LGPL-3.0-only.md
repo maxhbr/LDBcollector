@@ -5,11 +5,29 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 
 **Other Names:**
 
+-   `LGPL-3.0`
+
+-   `LGPL-3`
+
+-   `LGPL3.0`
+
+-   `LGPL3`
+
+-   `LGPL (v3.0)`
+
+-   `LGPL (v3)`
+
 -   `LGPL-3.0-or-later`
 
--   `GNU Lesser General Public License v3.0 or later`
+-   `LGPL-3.0+`
 
--   `LGPL-3.0`
+-   `LGPL-3+`
+
+-   `LGPL3.0+`
+
+-   `LGPL (v3 or later)`
+
+-   `GNU Lesser General Public License v3.0 or later`
 
 -   `scancode://lgpl-3.0`
 
@@ -30,24 +48,6 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 -   `License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)`
 
 -   `GNU Lesser General Public License 3.0`
-
--   `LGPL-3`
-
--   `LGPL3.0`
-
--   `LGPL3`
-
--   `LGPL (v3.0)`
-
--   `LGPL (v3)`
-
--   `LGPL-3.0+`
-
--   `LGPL-3+`
-
--   `LGPL3.0+`
-
--   `LGPL (v3 or later)`
 
 Description
 -----------
@@ -312,6 +312,10 @@ Raw Data
 
 ### Facts
 
+-   Override
+
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/LGPL-3.0-only.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -374,19 +378,24 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "LGPL-3.0-only",
-            "GNU Lesser General Public License v3.0 only",
-            "LGPL-3.0-or-later",
-            "GNU Lesser General Public License v3.0 or later",
             "LGPL-3.0",
+            "LGPL-3",
+            "LGPL3.0",
+            "LGPL3",
+            "LGPL (v3.0)",
+            "LGPL (v3)",
+            "LGPL-3.0-or-later",
+            "LGPL-3.0+",
+            "LGPL-3+",
+            "LGPL3.0+",
+            "LGPL (v3 or later)",
+            "GNU Lesser General Public License v3.0 only",
+            "GNU Lesser General Public License v3.0 or later",
             "scancode://lgpl-3.0",
             "LGPL 3.0",
             "scancode://lgpl-3.0-plus",
@@ -396,16 +405,7 @@ Raw Data
             "GNU Lesser General Public License, Version 3.0",
             "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
             "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
-            "GNU Lesser General Public License 3.0",
-            "LGPL-3",
-            "LGPL3.0",
-            "LGPL3",
-            "LGPL (v3.0)",
-            "LGPL (v3)",
-            "LGPL-3.0+",
-            "LGPL-3+",
-            "LGPL3.0+",
-            "LGPL (v3 or later)"
+            "GNU Lesser General Public License 3.0"
         ],
         "__impliedId": "LGPL-3.0-only",
         "__isFsfFree": true,

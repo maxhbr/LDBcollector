@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-640 16,-746 421.97,-746 421.97,-640 16,-640"/>
+<polygon fill="lightgray" stroke="lightgray" points="101.79,-640 101.79,-746 336.17,-746 336.17,-640 101.79,-640"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,19 +27,19 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="95.29,-358 95.29,-518 342.67,-518 342.67,-358 95.29,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-518 421.97,-518 421.97,-412 16,-412"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="138.84,-244 138.84,-350 299.13,-350 299.13,-244 138.84,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="95.29,-244 95.29,-404 342.67,-404 342.67,-244 95.29,-244"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 421.97,-236 421.97,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="138.84,-130 138.84,-236 299.13,-236 299.13,-130 138.84,-130"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="101.79,-16 101.79,-122 336.17,-122 336.17,-16 101.79,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 421.97,-122 421.97,-16 16,-16"/>
 </g>
 <!-- BSD&#45;4&#45;Clause(1) -->
 <g id="node1" class="node">
@@ -47,11 +47,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="218.98" cy="-780" rx="72.29" ry="18"/>
 <text text-anchor="middle" x="218.98" y="-776.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause</text>
 </g>
-<!-- BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License(2) -->
+<!-- BSD License (original)(2) -->
 <g id="node2" class="node">
-<title>BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License(2)</title>
-<ellipse fill="white" stroke="white" cx="218.98" cy="-720" rx="194.97" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-716.3" font-family="Times-Roman" font-size="14.00">BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License</text>
+<title>BSD License (original)(2)</title>
+<ellipse fill="white" stroke="white" cx="218.98" cy="-720" rx="109.38" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-716.3" font-family="Times-Roman" font-size="14.00">BSD License (original)</text>
 </g>
 <!-- BSD&#45;4&#45;Clause(2) -->
 <g id="node3" class="node">
@@ -71,53 +71,53 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="218.98" cy="-552" rx="72.29" ry="18"/>
 <text text-anchor="middle" x="218.98" y="-548.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause</text>
 </g>
-<!-- BSD&#45;4&#45;Clause(4) -->
+<!-- BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License(4) -->
 <g id="node6" class="node">
-<title>BSD&#45;4&#45;Clause(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="218.98" cy="-492" rx="72.29" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-488.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause</text>
+<title>BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License(4)</title>
+<ellipse fill="white" stroke="white" cx="218.98" cy="-492" rx="194.97" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-488.3" font-family="Times-Roman" font-size="14.00">BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License</text>
 </g>
-<!-- BSD&#45;Original(4) -->
+<!-- BSD&#45;4&#45;Clause(4) -->
 <g id="node7" class="node">
-<title>BSD&#45;Original(4)</title>
-<ellipse fill="white" stroke="white" cx="218.98" cy="-438" rx="68.49" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-434.3" font-family="Times-Roman" font-size="14.00">BSD&#45;Original</text>
-</g>
-<!-- scancode://bsd&#45;original(4) -->
-<g id="node8" class="node">
-<title>scancode://bsd&#45;original(4)</title>
-<ellipse fill="white" stroke="white" cx="218.98" cy="-384" rx="115.88" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://bsd&#45;original</text>
+<title>BSD&#45;4&#45;Clause(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="218.98" cy="-438" rx="72.29" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-434.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause</text>
 </g>
 <!-- BSD&#45;4&#45;Clause(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>BSD&#45;4&#45;Clause(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="218.98" cy="-324" rx="72.29" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-320.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="218.98" cy="-378" rx="72.29" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-374.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause</text>
 </g>
-<!-- bsd&#45;4&#45;clause(5) -->
+<!-- BSD&#45;Original(5) -->
+<g id="node9" class="node">
+<title>BSD&#45;Original(5)</title>
+<ellipse fill="white" stroke="white" cx="218.98" cy="-324" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-320.3" font-family="Times-Roman" font-size="14.00">BSD&#45;Original</text>
+</g>
+<!-- scancode://bsd&#45;original(5) -->
 <g id="node10" class="node">
-<title>bsd&#45;4&#45;clause(5)</title>
-<ellipse fill="white" stroke="white" cx="218.98" cy="-270" rx="68.79" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-266.3" font-family="Times-Roman" font-size="14.00">bsd&#45;4&#45;clause</text>
-</g>
-<!-- BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License(6) -->
-<g id="node11" class="node">
-<title>BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License(6)</title>
-<ellipse fill="white" stroke="white" cx="218.98" cy="-210" rx="194.97" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-206.3" font-family="Times-Roman" font-size="14.00">BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License</text>
+<title>scancode://bsd&#45;original(5)</title>
+<ellipse fill="white" stroke="white" cx="218.98" cy="-270" rx="115.88" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://bsd&#45;original</text>
 </g>
 <!-- BSD&#45;4&#45;Clause(6) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>BSD&#45;4&#45;Clause(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="218.98" cy="-156" rx="72.29" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-152.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="218.98" cy="-210" rx="72.29" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-206.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause</text>
 </g>
-<!-- BSD License (original)(7) -->
+<!-- bsd&#45;4&#45;clause(6) -->
+<g id="node12" class="node">
+<title>bsd&#45;4&#45;clause(6)</title>
+<ellipse fill="white" stroke="white" cx="218.98" cy="-156" rx="68.79" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-152.3" font-family="Times-Roman" font-size="14.00">bsd&#45;4&#45;clause</text>
+</g>
+<!-- BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License(7) -->
 <g id="node13" class="node">
-<title>BSD License (original)(7)</title>
-<ellipse fill="white" stroke="white" cx="218.98" cy="-96" rx="109.38" ry="18"/>
-<text text-anchor="middle" x="218.98" y="-92.3" font-family="Times-Roman" font-size="14.00">BSD License (original)</text>
+<title>BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License(7)</title>
+<ellipse fill="white" stroke="white" cx="218.98" cy="-96" rx="194.97" ry="18"/>
+<text text-anchor="middle" x="218.98" y="-92.3" font-family="Times-Roman" font-size="14.00">BSD 4&#45;Clause &quot;Original&quot; or &quot;Old&quot; License</text>
 </g>
 <!-- BSD&#45;4&#45;Clause(7) -->
 <g id="node14" class="node">

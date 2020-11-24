@@ -5,17 +5,17 @@ Artistic License 2.0 (Artistic-2.0)
 
 **Other Names:**
 
--   `scancode://artistic-2.0`
-
 -   `Artistic 2.0`
+
+-   `Artistic License (v. 2.0)`
+
+-   `scancode://artistic-2.0`
 
 -   `Artistic License, Version 2.0`
 
 -   `License :: OSI Approved :: Artistic License`
 
 -   `artistic-license-2.0`
-
--   `Artistic License (v. 2.0)`
 
 Description
 -----------
@@ -169,6 +169,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Artistic-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -206,21 +208,19 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Artistic-2.0",
+            "Artistic 2.0",
+            "Artistic License (v. 2.0)",
             "Artistic License 2.0",
             "scancode://artistic-2.0",
-            "Artistic 2.0",
             "artistic-2.0",
             "Artistic License, Version 2.0",
             "License :: OSI Approved :: Artistic License",
-            "artistic-license-2.0",
-            "Artistic License (v. 2.0)"
+            "artistic-license-2.0"
         ],
         "__impliedId": "Artistic-2.0",
         "__impliedAmbiguousNames": [

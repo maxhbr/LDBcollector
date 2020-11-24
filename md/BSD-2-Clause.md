@@ -5,6 +5,10 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 **Other Names:**
 
+-   `BSD (2 clause)`
+
+-   `BSD License (two clause)`
+
 -   `scancode://bsd-simplified`
 
 -   `BSD-2`
@@ -16,10 +20,6 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 -   `FreeBSD License`
 
 -   `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
-
--   `BSD (2 clause)`
-
--   `BSD License (two clause)`
 
 Description
 -----------
@@ -110,6 +110,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -139,13 +141,13 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "BSD-2-Clause",
+            "BSD (2 clause)",
+            "BSD License (two clause)",
             "BSD 2-Clause \"Simplified\" License",
             "scancode://bsd-simplified",
             "bsd-2-clause",
@@ -154,9 +156,7 @@ Raw Data
             "BSD-2-clause",
             "Simplified BSD License",
             "FreeBSD License",
-            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
-            "BSD (2 clause)",
-            "BSD License (two clause)"
+            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
         ],
         "__impliedId": "BSD-2-Clause",
         "__impliedComments": [

@@ -5,13 +5,13 @@ Affero General Public License v1.0 only (AGPL-1.0-only)
 
 **Other Names:**
 
--   `scancode://agpl-1.0`
-
--   `AGPL 1.0`
-
 -   `AGPL-1.0`
 
 -   `Affero General Public License (v. 1)`
+
+-   `scancode://agpl-1.0`
+
+-   `AGPL 1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -150,6 +150,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/AGPL-1.0-only.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -160,18 +162,16 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0.yml "Scancode")
     (CC0-1.0)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "AGPL-1.0-only",
+            "AGPL-1.0",
+            "Affero General Public License (v. 1)",
             "Affero General Public License v1.0 only",
             "scancode://agpl-1.0",
-            "AGPL 1.0",
-            "AGPL-1.0",
-            "Affero General Public License (v. 1)"
+            "AGPL 1.0"
         ],
         "__impliedId": "AGPL-1.0-only",
         "__impliedAmbiguousNames": [

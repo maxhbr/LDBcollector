@@ -7,6 +7,10 @@ GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 -   `LGPL-2.1`
 
+-   `LGPL2.1`
+
+-   `LGPL (v2.1)`
+
 -   `scancode://lgpl-2.1`
 
 -   `LGPL 2.1`
@@ -20,10 +24,6 @@ GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 -   `License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)`
 
 -   `GNU Lesser General Public License 2.1`
-
--   `LGPL2.1`
-
--   `LGPL (v2.1)`
 
 Description
 -----------
@@ -630,6 +630,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/LGPL-2.1-only.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -664,24 +666,22 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "LGPL-2.1-only",
-            "GNU Lesser General Public License v2.1 only",
             "LGPL-2.1",
+            "LGPL2.1",
+            "LGPL (v2.1)",
+            "GNU Lesser General Public License v2.1 only",
             "scancode://lgpl-2.1",
             "LGPL 2.1",
             "lgpl-2.1",
             "GNU LGPLv2.1",
             "GNU Lesser General Public License, Version 2.1",
             "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
-            "GNU Lesser General Public License 2.1",
-            "LGPL2.1",
-            "LGPL (v2.1)"
+            "GNU Lesser General Public License 2.1"
         ],
         "__impliedId": "LGPL-2.1-only",
         "__impliedAmbiguousNames": [

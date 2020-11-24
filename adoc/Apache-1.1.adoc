@@ -11,12 +11,12 @@
 
 *Other Names:*
 
+* `+Apache (v1.1)+`
+* `+Apache Software License 1.1+`
+* `+ASL 1.1+`
 * `+scancode://apache-1.1+`
 * `+Apache 1.1+`
 * `+Apache Software License, Version 1.1+`
-* `+Apache Software License 1.1+`
-* `+Apache (v1.1)+`
-* `+ASL 1.1+`
 
 === Comments on (easy) usability
 
@@ -107,6 +107,7 @@ SUCH DAMAGE.
 
 ==== Facts
 
+* Override
 * https://spdx.org/licenses/Apache-1.1.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -125,7 +126,6 @@ Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
-* Override
 
 ==== Raw JSON
 
@@ -133,13 +133,13 @@ Knowledge International]
 {
     "__impliedNames": [
         "Apache-1.1",
+        "Apache (v1.1)",
+        "Apache Software License 1.1",
+        "ASL 1.1",
         "Apache License 1.1",
         "scancode://apache-1.1",
         "Apache 1.1",
-        "Apache Software License, Version 1.1",
-        "Apache Software License 1.1",
-        "Apache (v1.1)",
-        "ASL 1.1"
+        "Apache Software License, Version 1.1"
     ],
     "__impliedId": "Apache-1.1",
     "__impliedAmbiguousNames": [

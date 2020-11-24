@@ -1,6 +1,7 @@
 {
     "__impliedNames": [
         "Zlib",
+        "zlib/libpng",
         "zlib License",
         "scancode://zlib",
         "ZLIB License",
@@ -9,8 +10,7 @@
         "The zlib/libpng License (Zlib)",
         "License :: OSI Approved :: zlib/libpng License",
         "zlib/libpng license",
-        "zlib-license",
-        "zlib/libpng"
+        "zlib-license"
     ],
     "__impliedId": "Zlib",
     "__isFsfFree": true,

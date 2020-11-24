@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://artistic-clarified+`
 * `+Artistic (clarified)+`
+* `+scancode://artistic-clarified+`
 
 === Comments on (easy) usability
 
@@ -181,13 +181,13 @@ MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 ==== Facts
 
+* Override
 * https://spdx.org/licenses/ClArtistic.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-clarified.yml[Scancode]
 (CC0-1.0)
-* Override
 
 ==== Raw JSON
 
@@ -195,9 +195,9 @@ repository] is generated)
 {
     "__impliedNames": [
         "ClArtistic",
+        "Artistic (clarified)",
         "Clarified Artistic License",
-        "scancode://artistic-clarified",
-        "Artistic (clarified)"
+        "scancode://artistic-clarified"
     ],
     "__impliedId": "ClArtistic",
     "facts": {

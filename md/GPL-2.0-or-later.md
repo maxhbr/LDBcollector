@@ -5,10 +5,6 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 **Other Names:**
 
--   `scancode://gpl-2.0-plus`
-
--   `GPL 2.0 or later`
-
 -   `GPL-2.0+`
 
 -   `GPL2.0+`
@@ -16,6 +12,10 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 -   `GPL2+`
 
 -   `GPL (v2 or later)`
+
+-   `scancode://gpl-2.0-plus`
+
+-   `GPL 2.0 or later`
 
 Comments on (easy) usability
 ----------------------------
@@ -87,6 +87,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -108,20 +110,18 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "GPL-2.0-or-later",
-            "GNU General Public License v2.0 or later",
-            "scancode://gpl-2.0-plus",
-            "GPL 2.0 or later",
             "GPL-2.0+",
             "GPL2.0+",
             "GPL2+",
-            "GPL (v2 or later)"
+            "GPL (v2 or later)",
+            "GNU General Public License v2.0 or later",
+            "scancode://gpl-2.0-plus",
+            "GPL 2.0 or later"
         ],
         "__impliedId": "GPL-2.0-or-later",
         "__impliedAmbiguousNames": [

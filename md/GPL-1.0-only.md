@@ -5,15 +5,15 @@ GNU General Public License v1.0 only (GPL-1.0-only)
 
 **Other Names:**
 
--   `scancode://gpl-1.0`
-
--   `GPL 1.0`
-
 -   `GPL-1.0`
 
 -   `GPL1.0`
 
 -   `GPL1`
+
+-   `scancode://gpl-1.0`
+
+-   `GPL 1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -310,6 +310,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/GPL-1.0-only.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -324,19 +326,17 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "GPL-1.0-only",
-            "GNU General Public License v1.0 only",
-            "scancode://gpl-1.0",
-            "GPL 1.0",
             "GPL-1.0",
             "GPL1.0",
-            "GPL1"
+            "GPL1",
+            "GNU General Public License v1.0 only",
+            "scancode://gpl-1.0",
+            "GPL 1.0"
         ],
         "__impliedId": "GPL-1.0-only",
         "__impliedAmbiguousNames": [

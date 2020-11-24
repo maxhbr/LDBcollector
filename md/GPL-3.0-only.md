@@ -5,11 +5,25 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 **Other Names:**
 
+-   `GPL-3.0`
+
+-   `GPL3.0`
+
+-   `GPL3`
+
+-   `GPL (v3)`
+
 -   `GPL-3.0-or-later`
 
--   `GNU General Public License v3.0 or later`
+-   `GPL-3.0+`
 
--   `GPL-3.0`
+-   `GPL3.0+`
+
+-   `GPL3+`
+
+-   `GPL (v3 or later)`
+
+-   `GNU General Public License v3.0 or later`
 
 -   `scancode://gpl-3.0`
 
@@ -30,20 +44,6 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 -   `License :: OSI Approved :: GNU General Public License v3 (GPLv3)`
 
 -   `GNU General Public License 3.0`
-
--   `GPL3.0`
-
--   `GPL3`
-
--   `GPL (v3)`
-
--   `GPL-3.0+`
-
--   `GPL3.0+`
-
--   `GPL3+`
-
--   `GPL (v3 or later)`
 
 Description
 -----------
@@ -821,6 +821,10 @@ Raw Data
 
 ### Facts
 
+-   Override
+
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/GPL-3.0-only.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -887,19 +891,22 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "GPL-3.0-only",
-            "GNU General Public License v3.0 only",
-            "GPL-3.0-or-later",
-            "GNU General Public License v3.0 or later",
             "GPL-3.0",
+            "GPL3.0",
+            "GPL3",
+            "GPL (v3)",
+            "GPL-3.0-or-later",
+            "GPL-3.0+",
+            "GPL3.0+",
+            "GPL3+",
+            "GPL (v3 or later)",
+            "GNU General Public License v3.0 only",
+            "GNU General Public License v3.0 or later",
             "scancode://gpl-3.0",
             "GPL 3.0",
             "scancode://gpl-3.0-plus",
@@ -909,14 +916,7 @@ Raw Data
             "GNU General Public License, Version 3.0",
             "License :: OSI Approved :: GNU General Public License (GPL)",
             "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-            "GNU General Public License 3.0",
-            "GPL3.0",
-            "GPL3",
-            "GPL (v3)",
-            "GPL-3.0+",
-            "GPL3.0+",
-            "GPL3+",
-            "GPL (v3 or later)"
+            "GNU General Public License 3.0"
         ],
         "__impliedId": "GPL-3.0-only",
         "__isFsfFree": true,

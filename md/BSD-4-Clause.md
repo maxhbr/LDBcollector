@@ -5,11 +5,11 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 **Other Names:**
 
+-   `BSD License (original)`
+
 -   `scancode://bsd-original`
 
 -   `BSD-Original`
-
--   `BSD License (original)`
 
 Description
 -----------
@@ -109,6 +109,10 @@ Raw Data
 
 ### Facts
 
+-   Override
+
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/BSD-4-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -129,20 +133,16 @@ Raw Data
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   Override
-
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "BSD-4-Clause",
+            "BSD License (original)",
             "BSD 4-Clause \"Original\" or \"Old\" License",
             "scancode://bsd-original",
             "BSD-Original",
-            "bsd-4-clause",
-            "BSD License (original)"
+            "bsd-4-clause"
         ],
         "__impliedId": "BSD-4-Clause",
         "__impliedRatingState": [

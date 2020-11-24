@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="105.04,-1140 105.04,-1246 540.9,-1246 540.9,-1140 105.04,-1140"/>
+<polygon fill="lightgray" stroke="lightgray" points="155.74,-924 155.74,-1246 490.21,-1246 490.21,-924 155.74,-924"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="105.04,-1026 105.04,-1132 540.9,-1132 540.9,-1026 105.04,-1026"/>
+<polygon fill="lightgray" stroke="lightgray" points="105.04,-810 105.04,-916 540.9,-916 540.9,-810 105.04,-810"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="215.53,-858 215.53,-1018 430.41,-1018 430.41,-858 215.53,-858"/>
+<polygon fill="lightgray" stroke="lightgray" points="105.04,-696 105.04,-802 540.9,-802 540.9,-696 105.04,-696"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="155.74,-528 155.74,-850 490.21,-850 490.21,-528 155.74,-528"/>
+<polygon fill="lightgray" stroke="lightgray" points="215.53,-528 215.53,-688 430.41,-688 430.41,-528 215.53,-528"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -55,83 +55,83 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-1280" rx="74.19" ry="18"/>
 <text text-anchor="middle" x="322.97" y="-1276.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
 </g>
-<!-- AGPL&#45;3.0&#45;only(3) -->
+<!-- AGPL (v3)(3) -->
 <g id="node2" class="node">
-<title>AGPL&#45;3.0&#45;only(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-1220" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-1216.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
+<title>AGPL (v3)(3)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-1220" rx="54.69" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-1216.3" font-family="Times-Roman" font-size="14.00">AGPL (v3)</text>
 </g>
-<!-- GNU Affero General Public License v3.0 only(3) -->
+<!-- AGPL&#45;3.0(3) -->
 <g id="node3" class="node">
-<title>GNU Affero General Public License v3.0 only(3)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-1166" rx="209.86" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-1162.3" font-family="Times-Roman" font-size="14.00">GNU Affero General Public License v3.0 only</text>
+<title>AGPL&#45;3.0(3)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-1166" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-1162.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0</text>
+</g>
+<!-- AGPL&#45;3.0&#45;only(3) -->
+<g id="node4" class="node">
+<title>AGPL&#45;3.0&#45;only(3)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-1112" rx="74.19" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-1108.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
+</g>
+<!-- AGPL3(3) -->
+<g id="node5" class="node">
+<title>AGPL3(3)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-1058" rx="39.79" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-1054.3" font-family="Times-Roman" font-size="14.00">AGPL3</text>
+</g>
+<!-- AGPL3.0(3) -->
+<g id="node6" class="node">
+<title>AGPL3.0(3)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-1004" rx="48.19" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-1000.3" font-family="Times-Roman" font-size="14.00">AGPL3.0</text>
+</g>
+<!-- Affero General Public License 3.0(3) -->
+<g id="node7" class="node">
+<title>Affero General Public License 3.0(3)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-950" rx="159.47" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-946.3" font-family="Times-Roman" font-size="14.00">Affero General Public License 3.0</text>
 </g>
 <!-- AGPL&#45;3.0&#45;only(4) -->
-<g id="node4" class="node">
+<g id="node8" class="node">
 <title>AGPL&#45;3.0&#45;only(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-1106" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-1102.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-890" rx="74.19" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-886.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
 </g>
 <!-- GNU Affero General Public License v3.0 only(4) -->
-<g id="node5" class="node">
+<g id="node9" class="node">
 <title>GNU Affero General Public License v3.0 only(4)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-1052" rx="209.86" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-1048.3" font-family="Times-Roman" font-size="14.00">GNU Affero General Public License v3.0 only</text>
-</g>
-<!-- AGPL 3.0(5) -->
-<g id="node6" class="node">
-<title>AGPL 3.0(5)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-992" rx="51.19" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-988.3" font-family="Times-Roman" font-size="14.00">AGPL 3.0</text>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-836" rx="209.86" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-832.3" font-family="Times-Roman" font-size="14.00">GNU Affero General Public License v3.0 only</text>
 </g>
 <!-- AGPL&#45;3.0&#45;only(5) -->
-<g id="node7" class="node">
-<title>AGPL&#45;3.0&#45;only(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-938" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-934.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
-</g>
-<!-- scancode://agpl&#45;3.0(5) -->
-<g id="node8" class="node">
-<title>scancode://agpl&#45;3.0(5)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-884" rx="99.38" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-880.3" font-family="Times-Roman" font-size="14.00">scancode://agpl&#45;3.0</text>
-</g>
-<!-- AGPL (v3)(6) -->
-<g id="node9" class="node">
-<title>AGPL (v3)(6)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-824" rx="54.69" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-820.3" font-family="Times-Roman" font-size="14.00">AGPL (v3)</text>
-</g>
-<!-- AGPL&#45;3.0(6) -->
 <g id="node10" class="node">
-<title>AGPL&#45;3.0(6)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-770" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-766.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0</text>
+<title>AGPL&#45;3.0&#45;only(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-776" rx="74.19" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-772.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
+</g>
+<!-- GNU Affero General Public License v3.0 only(5) -->
+<g id="node11" class="node">
+<title>GNU Affero General Public License v3.0 only(5)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-722" rx="209.86" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-718.3" font-family="Times-Roman" font-size="14.00">GNU Affero General Public License v3.0 only</text>
+</g>
+<!-- AGPL 3.0(6) -->
+<g id="node12" class="node">
+<title>AGPL 3.0(6)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-662" rx="51.19" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-658.3" font-family="Times-Roman" font-size="14.00">AGPL 3.0</text>
 </g>
 <!-- AGPL&#45;3.0&#45;only(6) -->
-<g id="node11" class="node">
-<title>AGPL&#45;3.0&#45;only(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-716" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-712.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
-</g>
-<!-- AGPL3(6) -->
-<g id="node12" class="node">
-<title>AGPL3(6)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-662" rx="39.79" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-658.3" font-family="Times-Roman" font-size="14.00">AGPL3</text>
-</g>
-<!-- AGPL3.0(6) -->
 <g id="node13" class="node">
-<title>AGPL3.0(6)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-608" rx="48.19" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-604.3" font-family="Times-Roman" font-size="14.00">AGPL3.0</text>
+<title>AGPL&#45;3.0&#45;only(6)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="322.97" cy="-608" rx="74.19" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-604.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0&#45;only</text>
 </g>
-<!-- Affero General Public License 3.0(6) -->
+<!-- scancode://agpl&#45;3.0(6) -->
 <g id="node14" class="node">
-<title>Affero General Public License 3.0(6)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-554" rx="159.47" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-550.3" font-family="Times-Roman" font-size="14.00">Affero General Public License 3.0</text>
+<title>scancode://agpl&#45;3.0(6)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-554" rx="99.38" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-550.3" font-family="Times-Roman" font-size="14.00">scancode://agpl&#45;3.0</text>
 </g>
 <!-- AGPL&#45;3.0(7) -->
 <g id="node15" class="node">

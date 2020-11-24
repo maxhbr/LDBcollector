@@ -1,12 +1,12 @@
 {
     "__impliedNames": [
         "LGPL-2.1-or-later",
-        "GNU Lesser General Public License v2.1 or later",
-        "scancode://lgpl-2.1-plus",
-        "LGPL 2.1 or later",
         "LGPL-2.1+",
         "LGPL2.1+",
-        "LGPL (v2.1 or later)"
+        "LGPL (v2.1 or later)",
+        "GNU Lesser General Public License v2.1 or later",
+        "scancode://lgpl-2.1-plus",
+        "LGPL 2.1 or later"
     ],
     "__impliedId": "LGPL-2.1-or-later",
     "__impliedAmbiguousNames": [

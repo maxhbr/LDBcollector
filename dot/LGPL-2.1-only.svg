@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="147.94,-978 147.94,-1084 589,-1084 589,-978 147.94,-978"/>
+<polygon fill="lightgray" stroke="lightgray" points="287.03,-870 287.03,-1084 449.91,-1084 449.91,-870 287.03,-870"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="147.94,-864 147.94,-970 589,-970 589,-864 147.94,-864"/>
+<polygon fill="lightgray" stroke="lightgray" points="147.94,-756 147.94,-862 589,-862 589,-756 147.94,-756"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="263.63,-696 263.63,-856 473.31,-856 473.31,-696 263.63,-696"/>
+<polygon fill="lightgray" stroke="lightgray" points="147.94,-642 147.94,-748 589,-748 589,-642 147.94,-642"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="287.03,-474 287.03,-688 449.91,-688 449.91,-474 287.03,-474"/>
+<polygon fill="lightgray" stroke="lightgray" points="263.63,-474 263.63,-634 473.31,-634 473.31,-474 263.63,-474"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -55,59 +55,59 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="368.47" cy="-1118" rx="73.39" ry="18"/>
 <text text-anchor="middle" x="368.47" y="-1114.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1&#45;only</text>
 </g>
-<!-- GNU Lesser General Public License v2.1 only(3) -->
+<!-- LGPL (v2.1)(3) -->
 <g id="node2" class="node">
-<title>GNU Lesser General Public License v2.1 only(3)</title>
-<ellipse fill="white" stroke="white" cx="368.47" cy="-1058" rx="212.56" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-1054.3" font-family="Times-Roman" font-size="14.00">GNU Lesser General Public License v2.1 only</text>
+<title>LGPL (v2.1)(3)</title>
+<ellipse fill="white" stroke="white" cx="368.47" cy="-1058" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-1054.3" font-family="Times-Roman" font-size="14.00">LGPL (v2.1)</text>
+</g>
+<!-- LGPL&#45;2.1(3) -->
+<g id="node3" class="node">
+<title>LGPL&#45;2.1(3)</title>
+<ellipse fill="white" stroke="white" cx="368.47" cy="-1004" rx="50.89" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-1000.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1</text>
 </g>
 <!-- LGPL&#45;2.1&#45;only(3) -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>LGPL&#45;2.1&#45;only(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="368.47" cy="-1004" rx="73.39" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-1000.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1&#45;only</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="368.47" cy="-950" rx="73.39" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-946.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1&#45;only</text>
+</g>
+<!-- LGPL2.1(3) -->
+<g id="node5" class="node">
+<title>LGPL2.1(3)</title>
+<ellipse fill="white" stroke="white" cx="368.47" cy="-896" rx="47.39" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-892.3" font-family="Times-Roman" font-size="14.00">LGPL2.1</text>
 </g>
 <!-- GNU Lesser General Public License v2.1 only(4) -->
-<g id="node4" class="node">
+<g id="node6" class="node">
 <title>GNU Lesser General Public License v2.1 only(4)</title>
-<ellipse fill="white" stroke="white" cx="368.47" cy="-944" rx="212.56" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-940.3" font-family="Times-Roman" font-size="14.00">GNU Lesser General Public License v2.1 only</text>
+<ellipse fill="white" stroke="white" cx="368.47" cy="-836" rx="212.56" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-832.3" font-family="Times-Roman" font-size="14.00">GNU Lesser General Public License v2.1 only</text>
 </g>
 <!-- LGPL&#45;2.1&#45;only(4) -->
-<g id="node5" class="node">
+<g id="node7" class="node">
 <title>LGPL&#45;2.1&#45;only(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="368.47" cy="-890" rx="73.39" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-886.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1&#45;only</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="368.47" cy="-782" rx="73.39" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-778.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1&#45;only</text>
 </g>
-<!-- LGPL 2.1(5) -->
-<g id="node6" class="node">
-<title>LGPL 2.1(5)</title>
-<ellipse fill="white" stroke="white" cx="368.47" cy="-830" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-826.3" font-family="Times-Roman" font-size="14.00">LGPL 2.1</text>
+<!-- GNU Lesser General Public License v2.1 only(5) -->
+<g id="node8" class="node">
+<title>GNU Lesser General Public License v2.1 only(5)</title>
+<ellipse fill="white" stroke="white" cx="368.47" cy="-722" rx="212.56" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-718.3" font-family="Times-Roman" font-size="14.00">GNU Lesser General Public License v2.1 only</text>
 </g>
 <!-- LGPL&#45;2.1&#45;only(5) -->
-<g id="node7" class="node">
-<title>LGPL&#45;2.1&#45;only(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="368.47" cy="-776" rx="73.39" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-772.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1&#45;only</text>
-</g>
-<!-- scancode://lgpl&#45;2.1(5) -->
-<g id="node8" class="node">
-<title>scancode://lgpl&#45;2.1(5)</title>
-<ellipse fill="white" stroke="white" cx="368.47" cy="-722" rx="96.68" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-718.3" font-family="Times-Roman" font-size="14.00">scancode://lgpl&#45;2.1</text>
-</g>
-<!-- LGPL (v2.1)(6) -->
 <g id="node9" class="node">
-<title>LGPL (v2.1)(6)</title>
-<ellipse fill="white" stroke="white" cx="368.47" cy="-662" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-658.3" font-family="Times-Roman" font-size="14.00">LGPL (v2.1)</text>
+<title>LGPL&#45;2.1&#45;only(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="368.47" cy="-668" rx="73.39" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-664.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1&#45;only</text>
 </g>
-<!-- LGPL&#45;2.1(6) -->
+<!-- LGPL 2.1(6) -->
 <g id="node10" class="node">
-<title>LGPL&#45;2.1(6)</title>
-<ellipse fill="white" stroke="white" cx="368.47" cy="-608" rx="50.89" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-604.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1</text>
+<title>LGPL 2.1(6)</title>
+<ellipse fill="white" stroke="white" cx="368.47" cy="-608" rx="50.09" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-604.3" font-family="Times-Roman" font-size="14.00">LGPL 2.1</text>
 </g>
 <!-- LGPL&#45;2.1&#45;only(6) -->
 <g id="node11" class="node">
@@ -115,11 +115,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="368.47" cy="-554" rx="73.39" ry="18"/>
 <text text-anchor="middle" x="368.47" y="-550.3" font-family="Times-Roman" font-size="14.00">LGPL&#45;2.1&#45;only</text>
 </g>
-<!-- LGPL2.1(6) -->
+<!-- scancode://lgpl&#45;2.1(6) -->
 <g id="node12" class="node">
-<title>LGPL2.1(6)</title>
-<ellipse fill="white" stroke="white" cx="368.47" cy="-500" rx="47.39" ry="18"/>
-<text text-anchor="middle" x="368.47" y="-496.3" font-family="Times-Roman" font-size="14.00">LGPL2.1</text>
+<title>scancode://lgpl&#45;2.1(6)</title>
+<ellipse fill="white" stroke="white" cx="368.47" cy="-500" rx="96.68" ry="18"/>
+<text text-anchor="middle" x="368.47" y="-496.3" font-family="Times-Roman" font-size="14.00">scancode://lgpl&#45;2.1</text>
 </g>
 <!-- GNU LGPLv2.1(7) -->
 <g id="node13" class="node">

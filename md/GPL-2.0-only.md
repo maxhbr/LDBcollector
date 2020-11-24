@@ -7,6 +7,12 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 
 -   `GPL-2.0`
 
+-   `GPL2.0`
+
+-   `GPL2`
+
+-   `GPL (v2)`
+
 -   `scancode://gpl-2.0`
 
 -   `GPL 2.0`
@@ -20,12 +26,6 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 -   `License :: OSI Approved :: GNU General Public License v2 (GPLv2)`
 
 -   `GNU General Public License 2.0`
-
--   `GPL2.0`
-
--   `GPL2`
-
--   `GPL (v2)`
 
 Description
 -----------
@@ -480,6 +480,10 @@ Raw Data
 
 ### Facts
 
+-   Override
+
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/GPL-2.0-only.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -518,27 +522,23 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "GPL-2.0-only",
-            "GNU General Public License v2.0 only",
             "GPL-2.0",
+            "GPL2.0",
+            "GPL2",
+            "GPL (v2)",
+            "GNU General Public License v2.0 only",
             "scancode://gpl-2.0",
             "GPL 2.0",
             "gpl-2.0",
             "GNU GPLv2",
             "GNU General Public License, Version 2.0",
             "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
-            "GNU General Public License 2.0",
-            "GPL2.0",
-            "GPL2",
-            "GPL (v2)"
+            "GNU General Public License 2.0"
         ],
         "__impliedId": "GPL-2.0-only",
         "__isFsfFree": true,

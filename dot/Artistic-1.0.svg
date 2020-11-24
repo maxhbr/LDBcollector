@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-526 55,-632 264.68,-632 264.68,-526 55,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="48.5,-526 48.5,-632 271.18,-632 271.18,-526 48.5,-526"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="41.35,-244 41.35,-404 278.33,-404 278.33,-244 41.35,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-298 55,-404 264.68,-404 264.68,-298 55,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 303.68,-236 303.68,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="41.35,-130 41.35,-290 278.33,-290 278.33,-130 41.35,-130"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="48.5,-16 48.5,-122 271.18,-122 271.18,-16 48.5,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 303.68,-122 303.68,-16 16,-16"/>
 </g>
 <!-- Artistic&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -43,11 +43,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-666" rx="60.39" ry="18"/>
 <text text-anchor="middle" x="159.84" y="-662.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0</text>
 </g>
-<!-- Artistic License 1.0(2) -->
+<!-- Artistic 1.0 (original)(2) -->
 <g id="node2" class="node">
-<title>Artistic License 1.0(2)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-606" rx="96.68" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-602.3" font-family="Times-Roman" font-size="14.00">Artistic License 1.0</text>
+<title>Artistic 1.0 (original)(2)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-606" rx="103.18" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-602.3" font-family="Times-Roman" font-size="14.00">Artistic 1.0 (original)</text>
 </g>
 <!-- Artistic&#45;1.0(2) -->
 <g id="node3" class="node">
@@ -67,11 +67,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-438" rx="60.39" ry="18"/>
 <text text-anchor="middle" x="159.84" y="-434.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0</text>
 </g>
-<!-- Artistic 1.0(4) -->
+<!-- Artistic License 1.0(4) -->
 <g id="node6" class="node">
-<title>Artistic 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-378" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-374.3" font-family="Times-Roman" font-size="14.00">Artistic 1.0</text>
+<title>Artistic License 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-378" rx="96.68" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-374.3" font-family="Times-Roman" font-size="14.00">Artistic License 1.0</text>
 </g>
 <!-- Artistic&#45;1.0(4) -->
 <g id="node7" class="node">
@@ -79,29 +79,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-324" rx="60.39" ry="18"/>
 <text text-anchor="middle" x="159.84" y="-320.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0</text>
 </g>
-<!-- scancode://artistic&#45;1.0(4) -->
+<!-- Artistic 1.0(5) -->
 <g id="node8" class="node">
-<title>scancode://artistic&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-270" rx="110.48" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://artistic&#45;1.0</text>
-</g>
-<!-- Artistic License, Version 1.0(5) -->
-<g id="node9" class="node">
-<title>Artistic License, Version 1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-210" rx="135.68" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-206.3" font-family="Times-Roman" font-size="14.00">Artistic License, Version 1.0</text>
+<title>Artistic 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-264" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-260.3" font-family="Times-Roman" font-size="14.00">Artistic 1.0</text>
 </g>
 <!-- Artistic&#45;1.0(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>Artistic&#45;1.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-156" rx="60.39" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-152.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-210" rx="60.39" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-206.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0</text>
 </g>
-<!-- Artistic 1.0 (original)(6) -->
+<!-- scancode://artistic&#45;1.0(5) -->
+<g id="node10" class="node">
+<title>scancode://artistic&#45;1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-156" rx="110.48" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://artistic&#45;1.0</text>
+</g>
+<!-- Artistic License, Version 1.0(6) -->
 <g id="node11" class="node">
-<title>Artistic 1.0 (original)(6)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-96" rx="103.18" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-92.3" font-family="Times-Roman" font-size="14.00">Artistic 1.0 (original)</text>
+<title>Artistic License, Version 1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-96" rx="135.68" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-92.3" font-family="Times-Roman" font-size="14.00">Artistic License, Version 1.0</text>
 </g>
 <!-- Artistic&#45;1.0(6) -->
 <g id="node12" class="node">

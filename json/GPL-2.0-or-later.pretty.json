@@ -1,13 +1,13 @@
 {
     "__impliedNames": [
         "GPL-2.0-or-later",
-        "GNU General Public License v2.0 or later",
-        "scancode://gpl-2.0-plus",
-        "GPL 2.0 or later",
         "GPL-2.0+",
         "GPL2.0+",
         "GPL2+",
-        "GPL (v2 or later)"
+        "GPL (v2 or later)",
+        "GNU General Public License v2.0 or later",
+        "scancode://gpl-2.0-plus",
+        "GPL 2.0 or later"
     ],
     "__impliedId": "GPL-2.0-or-later",
     "__impliedAmbiguousNames": [

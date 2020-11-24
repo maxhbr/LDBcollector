@@ -452,6 +452,8 @@ International (CC-BY-NC-ND-4.0)
 
 *** Facts
 
+- Override
+
 - [[https://spdx.org/licenses/CC-BY-NC-ND-4.0.html][SPDX]] (all data [in
   this repository] is generated)
 
@@ -464,8 +466,6 @@ International (CC-BY-NC-ND-4.0)
 
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]] (NOASSERTION)
-
-- Override
 
 *** Raw JSON
 

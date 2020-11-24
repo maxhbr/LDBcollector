@@ -5,6 +5,12 @@ Apache License 2.0 (Apache-2.0)
 
 **Other Names:**
 
+-   `Apache (v2.0)`
+
+-   `Apache Software License 2.0`
+
+-   `ASL 2.0`
+
 -   `scancode://apache-2.0`
 
 -   `Apache 2.0`
@@ -13,13 +19,7 @@ Apache License 2.0 (Apache-2.0)
 
 -   `License :: OSI Approved :: Apache Software License`
 
--   `Apache Software License 2.0`
-
 -   `apache2.0`
-
--   `Apache (v2.0)`
-
--   `ASL 2.0`
 
 Description
 -----------
@@ -308,6 +308,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Apache-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -345,23 +347,21 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Apache-2.0",
+            "Apache (v2.0)",
+            "Apache Software License 2.0",
+            "ASL 2.0",
             "Apache License 2.0",
             "scancode://apache-2.0",
             "Apache 2.0",
             "apache-2.0",
             "Apache License, Version 2.0",
             "License :: OSI Approved :: Apache Software License",
-            "Apache Software License 2.0",
-            "apache2.0",
-            "Apache (v2.0)",
-            "ASL 2.0"
+            "apache2.0"
         ],
         "__impliedId": "Apache-2.0",
         "__impliedAmbiguousNames": [

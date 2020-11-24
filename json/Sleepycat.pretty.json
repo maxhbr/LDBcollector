@@ -1,12 +1,12 @@
 {
     "__impliedNames": [
         "Sleepycat",
+        "Berkeley Database License",
+        "Sleepycat Software Product License",
         "Sleepycat License",
         "scancode://sleepycat",
         "The Sleepycat License",
-        "License :: OSI Approved :: Sleepycat License",
-        "Berkeley Database License",
-        "Sleepycat Software Product License"
+        "License :: OSI Approved :: Sleepycat License"
     ],
     "__impliedId": "Sleepycat",
     "__impliedAmbiguousNames": [

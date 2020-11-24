@@ -130,6 +130,8 @@
 
 *** Facts
 
+- Override
+
 - [[https://spdx.org/licenses/BSD-4-Clause-UC.html][SPDX]] (all data [in
   this repository] is generated)
 
@@ -145,8 +147,6 @@
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
-
-- Override
 
 *** Raw JSON
 

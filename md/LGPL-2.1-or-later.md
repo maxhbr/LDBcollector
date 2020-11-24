@@ -5,15 +5,15 @@ GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)
 
 **Other Names:**
 
--   `scancode://lgpl-2.1-plus`
-
--   `LGPL 2.1 or later`
-
 -   `LGPL-2.1+`
 
 -   `LGPL2.1+`
 
 -   `LGPL (v2.1 or later)`
+
+-   `scancode://lgpl-2.1-plus`
+
+-   `LGPL 2.1 or later`
 
 Comments on (easy) usability
 ----------------------------
@@ -78,6 +78,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/LGPL-2.1-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -99,19 +101,17 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "LGPL-2.1-or-later",
-            "GNU Lesser General Public License v2.1 or later",
-            "scancode://lgpl-2.1-plus",
-            "LGPL 2.1 or later",
             "LGPL-2.1+",
             "LGPL2.1+",
-            "LGPL (v2.1 or later)"
+            "LGPL (v2.1 or later)",
+            "GNU Lesser General Public License v2.1 or later",
+            "scancode://lgpl-2.1-plus",
+            "LGPL 2.1 or later"
         ],
         "__impliedId": "LGPL-2.1-or-later",
         "__impliedAmbiguousNames": [

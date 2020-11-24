@@ -19,31 +19,31 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="96.59,-862 96.59,-968 310.18,-968 310.18,-862 96.59,-862"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-754 55,-968 351.77,-968 351.77,-754 55,-754"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="96.59,-748 96.59,-854 310.18,-854 310.18,-748 96.59,-748"/>
+<polygon fill="lightgray" stroke="lightgray" points="96.59,-640 96.59,-746 310.18,-746 310.18,-640 96.59,-640"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="82.94,-580 82.94,-740 323.82,-740 323.82,-580 82.94,-580"/>
+<polygon fill="lightgray" stroke="lightgray" points="96.59,-526 96.59,-632 310.18,-632 310.18,-526 96.59,-526"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-466 16,-572 390.77,-572 390.77,-466 16,-466"/>
+<polygon fill="lightgray" stroke="lightgray" points="82.94,-358 82.94,-518 323.82,-518 323.82,-358 82.94,-358"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-352 55,-458 351.77,-458 351.77,-352 55,-352"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 390.77,-350 390.77,-244 16,-244"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-238 55,-344 351.77,-344 351.77,-238 55,-238"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-130 55,-236 351.77,-236 351.77,-130 55,-130"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-16 55,-230 351.77,-230 351.77,-16 55,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-16 55,-122 351.77,-122 351.77,-16 55,-16"/>
 </g>
 <!-- Apache&#45;1.1(1) -->
 <g id="node1" class="node">
@@ -51,95 +51,95 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-1002" rx="62.29" ry="18"/>
 <text text-anchor="middle" x="203.38" y="-998.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
 </g>
-<!-- Apache License 1.1(2) -->
+<!-- ASL 1.1(2) -->
 <g id="node2" class="node">
-<title>Apache License 1.1(2)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-942" rx="98.58" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-938.3" font-family="Times-Roman" font-size="14.00">Apache License 1.1</text>
+<title>ASL 1.1(2)</title>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-942" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-938.3" font-family="Times-Roman" font-size="14.00">ASL 1.1</text>
+</g>
+<!-- Apache (v1.1)(2) -->
+<g id="node3" class="node">
+<title>Apache (v1.1)(2)</title>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-888" rx="74.19" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-884.3" font-family="Times-Roman" font-size="14.00">Apache (v1.1)</text>
+</g>
+<!-- Apache Software License 1.1(2) -->
+<g id="node4" class="node">
+<title>Apache Software License 1.1(2)</title>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-834" rx="140.28" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-830.3" font-family="Times-Roman" font-size="14.00">Apache Software License 1.1</text>
 </g>
 <!-- Apache&#45;1.1(2) -->
-<g id="node3" class="node">
+<g id="node5" class="node">
 <title>Apache&#45;1.1(2)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-888" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-884.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-780" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-776.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
 </g>
 <!-- Apache License 1.1(3) -->
-<g id="node4" class="node">
+<g id="node6" class="node">
 <title>Apache License 1.1(3)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-828" rx="98.58" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-824.3" font-family="Times-Roman" font-size="14.00">Apache License 1.1</text>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-720" rx="98.58" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-716.3" font-family="Times-Roman" font-size="14.00">Apache License 1.1</text>
 </g>
 <!-- Apache&#45;1.1(3) -->
-<g id="node5" class="node">
+<g id="node7" class="node">
 <title>Apache&#45;1.1(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-774" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-770.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-666" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-662.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
 </g>
-<!-- Apache 1.1(4) -->
-<g id="node6" class="node">
-<title>Apache 1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-714" rx="61.99" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-710.3" font-family="Times-Roman" font-size="14.00">Apache 1.1</text>
+<!-- Apache License 1.1(4) -->
+<g id="node8" class="node">
+<title>Apache License 1.1(4)</title>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-606" rx="98.58" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-602.3" font-family="Times-Roman" font-size="14.00">Apache License 1.1</text>
 </g>
 <!-- Apache&#45;1.1(4) -->
-<g id="node7" class="node">
-<title>Apache&#45;1.1(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-660" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-656.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
-</g>
-<!-- scancode://apache&#45;1.1(4) -->
-<g id="node8" class="node">
-<title>scancode://apache&#45;1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-606" rx="112.38" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-602.3" font-family="Times-Roman" font-size="14.00">scancode://apache&#45;1.1</text>
-</g>
-<!-- Apache Software License, Version 1.1(5) -->
 <g id="node9" class="node">
-<title>Apache Software License, Version 1.1(5)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-546" rx="179.27" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-542.3" font-family="Times-Roman" font-size="14.00">Apache Software License, Version 1.1</text>
+<title>Apache&#45;1.1(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-552" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-548.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
+</g>
+<!-- Apache 1.1(5) -->
+<g id="node10" class="node">
+<title>Apache 1.1(5)</title>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-492" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-488.3" font-family="Times-Roman" font-size="14.00">Apache 1.1</text>
 </g>
 <!-- Apache&#45;1.1(5) -->
-<g id="node10" class="node">
-<title>Apache&#45;1.1(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-492" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-488.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
-</g>
-<!-- Apache Software License 1.1(6) -->
 <g id="node11" class="node">
-<title>Apache Software License 1.1(6)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-432" rx="140.28" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-428.3" font-family="Times-Roman" font-size="14.00">Apache Software License 1.1</text>
+<title>Apache&#45;1.1(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-438" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-434.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
+</g>
+<!-- scancode://apache&#45;1.1(5) -->
+<g id="node12" class="node">
+<title>scancode://apache&#45;1.1(5)</title>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-384" rx="112.38" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://apache&#45;1.1</text>
+</g>
+<!-- Apache Software License, Version 1.1(6) -->
+<g id="node13" class="node">
+<title>Apache Software License, Version 1.1(6)</title>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-324" rx="179.27" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-320.3" font-family="Times-Roman" font-size="14.00">Apache Software License, Version 1.1</text>
 </g>
 <!-- Apache&#45;1.1(6) -->
-<g id="node12" class="node">
+<g id="node14" class="node">
 <title>Apache&#45;1.1(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-378" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-374.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-270" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-266.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
 </g>
 <!-- Apache Software License 1.1(7) -->
-<g id="node13" class="node">
+<g id="node15" class="node">
 <title>Apache Software License 1.1(7)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-318" rx="140.28" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-314.3" font-family="Times-Roman" font-size="14.00">Apache Software License 1.1</text>
+<ellipse fill="white" stroke="white" cx="203.38" cy="-210" rx="140.28" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-206.3" font-family="Times-Roman" font-size="14.00">Apache Software License 1.1</text>
 </g>
 <!-- Apache&#45;1.1(7) -->
-<g id="node14" class="node">
-<title>Apache&#45;1.1(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-264" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-260.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
-</g>
-<!-- ASL 1.1(8) -->
-<g id="node15" class="node">
-<title>ASL 1.1(8)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-204" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-200.3" font-family="Times-Roman" font-size="14.00">ASL 1.1</text>
-</g>
-<!-- Apache (v1.1)(8) -->
 <g id="node16" class="node">
-<title>Apache (v1.1)(8)</title>
-<ellipse fill="white" stroke="white" cx="203.38" cy="-150" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="203.38" y="-146.3" font-family="Times-Roman" font-size="14.00">Apache (v1.1)</text>
+<title>Apache&#45;1.1(7)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="203.38" cy="-156" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="203.38" y="-152.3" font-family="Times-Roman" font-size="14.00">Apache&#45;1.1</text>
 </g>
 <!-- Apache Software License 1.1(8) -->
 <g id="node17" class="node">

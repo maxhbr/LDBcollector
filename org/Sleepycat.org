@@ -10,15 +10,15 @@
 
 *Other Names:*
 
+- =Berkeley Database License=
+
+- =Sleepycat Software Product License=
+
 - =scancode://sleepycat=
 
 - =The Sleepycat License=
 
 - =License :: OSI Approved :: Sleepycat License=
-
-- =Berkeley Database License=
-
-- =Sleepycat Software Product License=
 
 ** Comments on (easy) usability
 
@@ -98,6 +98,8 @@
 
 *** Facts
 
+- Override
+
 - [[https://spdx.org/licenses/Sleepycat.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -124,20 +126,18 @@
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
-- Override
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "Sleepycat",
+          "Berkeley Database License",
+          "Sleepycat Software Product License",
           "Sleepycat License",
           "scancode://sleepycat",
           "The Sleepycat License",
-          "License :: OSI Approved :: Sleepycat License",
-          "Berkeley Database License",
-          "Sleepycat Software Product License"
+          "License :: OSI Approved :: Sleepycat License"
       ],
       "__impliedId": "Sleepycat",
       "__impliedAmbiguousNames": [

@@ -12,13 +12,13 @@
 
 *Other Names:*
 
+* `+zlib/libpng+`
 * `+scancode://zlib+`
 * `+zlib/libpng License+`
 * `+The zlib/libpng License (Zlib)+`
 * `+License :: OSI Approved :: zlib/libpng License+`
 * `+zlib/libpng license+`
 * `+zlib-license+`
-* `+zlib/libpng+`
 
 === Description
 
@@ -120,6 +120,7 @@ the following restrictions:
 
 ==== Facts
 
+* Override
 * https://spdx.org/licenses/Zlib.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -147,7 +148,6 @@ Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
-* Override
 
 ==== Raw JSON
 
@@ -155,6 +155,7 @@ Knowledge International]
 {
     "__impliedNames": [
         "Zlib",
+        "zlib/libpng",
         "zlib License",
         "scancode://zlib",
         "ZLIB License",
@@ -163,8 +164,7 @@ Knowledge International]
         "The zlib/libpng License (Zlib)",
         "License :: OSI Approved :: zlib/libpng License",
         "zlib/libpng license",
-        "zlib-license",
-        "zlib/libpng"
+        "zlib-license"
     ],
     "__impliedId": "Zlib",
     "__isFsfFree": true,

@@ -5,9 +5,9 @@ Clarified Artistic License (ClArtistic)
 
 **Other Names:**
 
--   `scancode://artistic-clarified`
-
 -   `Artistic (clarified)`
+
+-   `scancode://artistic-clarified`
 
 Comments on (easy) usability
 ----------------------------
@@ -184,6 +184,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/ClArtistic.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -194,16 +196,14 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-clarified.yml "Scancode")
     (CC0-1.0)
 
--   Override
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "ClArtistic",
+            "Artistic (clarified)",
             "Clarified Artistic License",
-            "scancode://artistic-clarified",
-            "Artistic (clarified)"
+            "scancode://artistic-clarified"
         ],
         "__impliedId": "ClArtistic",
         "facts": {
