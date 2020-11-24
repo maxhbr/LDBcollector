@@ -23,7 +23,6 @@ dependencies:
 - cassava
 - containers
 - directory
-- download
 - extra
 - file-embed
 - filepath

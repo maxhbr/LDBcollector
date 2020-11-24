@@ -15,14 +15,11 @@ import           MyPrelude
 
 import qualified Data.Vector as V
 import qualified Data.Map as M
-import qualified Data.ByteString as B
 import qualified Data.ByteString.Lazy as BL
-import qualified Data.Text as T
 import qualified Data.Text.IO as T
 import           Data.Aeson.Encode.Pretty (encodePretty)
 import           GHC.IO.Encoding (setLocaleEncoding, utf8)
 import           System.Environment
-import           Network.Download (openURI)
 
 import           Model.License as X
 import           Model.Query as X
@@ -79,7 +76,9 @@ data Configuration
   }
 
 mkCollectors :: Configuration -> [(LicenseFactClassifier, IO Facts)]
-mkCollectors conf = (overrideLFC, loadOverrideFacts (cOverrides conf)) : filter (\(lfc,_) -> lfc `elem` cLFCs conf)
+mkCollectors conf@Configuration{cLFCs = chosenLFCs} =
+  (overrideLFC, loadOverrideFacts (cOverrides conf)) :
+  filter (\(lfc,_) -> chosenLFCs == [] || lfc `elem` chosenLFCs)
   [ (spdxLFC, loadSPDXFacts)
   , (blueOakLFC, loadBlueOakFacts)
   , (cavilLFC, loadCavilFacts)
