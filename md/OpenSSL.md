@@ -47,6 +47,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/OpenSSL.html
 
+-   **open-license:** http://open-license.hitachi.com/licenses/279
+
 Text
 ----
 
@@ -127,6 +129,10 @@ Raw Data
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
 
 ### Raw JSON
 
@@ -251,6 +257,28 @@ Raw Data
                         [
                             null,
                             "http://www.openssl.org/source/license.html"
+                        ]
+                    ]
+                }
+            },
+            "Hitachi open-license": {
+                "_license_uri": "http://open-license.hitachi.com/licenses/279",
+                "_license_permissions": [],
+                "_license_id": "licenses/279",
+                "_sourceURL": "http://open-license.hitachi.com/licenses/279",
+                "_license_name": "OpenSSL License",
+                "_license_summary": {},
+                "_license_description": {},
+                "_license_baseUri": "http://open-license.hitachi.com/",
+                "_license_schemaVersion": "0.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "OpenSSL License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/279"
                         ]
                     ]
                 }
@@ -487,6 +515,10 @@ Raw Data
             [
                 "Homepage",
                 "http://www.openssl.org/source/license.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/279"
             ]
         ]
     }

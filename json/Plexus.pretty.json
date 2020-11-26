@@ -3,9 +3,11 @@
         "Plexus",
         "Plexus Classworlds License",
         "scancode://dom4j",
-        "Dom4j License"
+        "Dom4j License",
+        "DOM4J License"
     ],
     "__impliedId": "Plexus",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -43,6 +45,32 @@
                 ]
             },
             "spdxLicenseId": "Plexus"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Plexus",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Plexus Classworlds License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Plexus Classworlds License"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -116,6 +144,28 @@
                     [
                         null,
                         "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
+                    ]
+                ]
+            }
+        },
+        "Hitachi open-license": {
+            "_license_uri": "http://open-license.hitachi.com/licenses/288",
+            "_license_permissions": [],
+            "_license_id": "licenses/288",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/288",
+            "_license_name": "DOM4J License",
+            "_license_summary": {},
+            "_license_description": {},
+            "_license_baseUri": "http://open-license.hitachi.com/",
+            "_license_schemaVersion": "0.1",
+            "_implications": {
+                "__impliedNames": [
+                    "DOM4J License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/288"
                     ]
                 ]
             }
@@ -216,6 +266,13 @@
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
             }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
         ]
     ],
     "__impliedCopyleft": [
@@ -267,6 +324,10 @@
         [
             null,
             "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/288"
         ]
     ]
 }

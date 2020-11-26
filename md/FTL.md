@@ -34,6 +34,8 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/FTL.html
 
+-   **open-license:** http://open-license.hitachi.com/licenses/763
+
 -   http://freetype.fis.uniroma2.it/FTL.TXT
 
 -   http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
@@ -231,6 +233,10 @@ Raw Data
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
@@ -238,7 +244,8 @@ Raw Data
             "FTL",
             "Freetype Project License",
             "scancode://freetype",
-            "FreeType Project License"
+            "FreeType Project License",
+            "FreeType Project LICENSE"
         ],
         "__impliedId": "FTL",
         "__impliedComments": [
@@ -346,6 +353,28 @@ Raw Data
                         [
                             null,
                             "http://www.freetype.org/"
+                        ]
+                    ]
+                }
+            },
+            "Hitachi open-license": {
+                "_license_uri": "http://open-license.hitachi.com/licenses/763",
+                "_license_permissions": [],
+                "_license_id": "licenses/763",
+                "_sourceURL": "http://open-license.hitachi.com/licenses/763",
+                "_license_name": "FreeType Project LICENSE",
+                "_license_summary": {},
+                "_license_description": {},
+                "_license_baseUri": "http://open-license.hitachi.com/",
+                "_license_schemaVersion": "0.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "FreeType Project LICENSE"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/763"
                         ]
                     ]
                 }
@@ -474,6 +503,10 @@ Raw Data
             [
                 null,
                 "http://www.freetype.org/"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/763"
             ]
         ]
     }
