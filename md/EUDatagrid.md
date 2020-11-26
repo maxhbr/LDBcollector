@@ -307,7 +307,9 @@ Raw Data
                 "_license_id": "licenses/1546",
                 "_sourceURL": "http://open-license.hitachi.com/licenses/1546",
                 "_license_name": "EU DataGrid Software License",
-                "_license_summary": {},
+                "_license_summary": {
+                    "ja": "https://opensource.org/licenses/EUDatagrid"
+                },
                 "_license_description": {},
                 "_license_baseUri": "http://open-license.hitachi.com/",
                 "_license_schemaVersion": "0.1",

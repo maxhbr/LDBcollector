@@ -270,7 +270,9 @@ Project Wiki]
             "_sourceURL": "http://open-license.hitachi.com/licenses/288",
             "_license_name": "DOM4J License",
             "_license_summary": {},
-            "_license_description": {},
+            "_license_description": {
+                "ja": "\"DOM4J\"ã¯ãMetaStuff, Ltd.ã®ç»é²åæ¨ã§ããã\r\n\r\næ­£å½ãªã¯ã¬ã¸ããã¯\"DOM4J Project http://www.dom4j.org/\"ã«ããã\r\n"
+            },
             "_license_baseUri": "http://open-license.hitachi.com/",
             "_license_schemaVersion": "0.1",
             "_implications": {

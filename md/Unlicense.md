@@ -316,7 +316,9 @@ Raw Data
                 "_license_id": "licenses/844",
                 "_sourceURL": "http://open-license.hitachi.com/licenses/844",
                 "_license_name": "Unlicense",
-                "_license_summary": {},
+                "_license_summary": {
+                    "ja": "http://unlicense.org/"
+                },
                 "_license_description": {},
                 "_license_baseUri": "http://open-license.hitachi.com/",
                 "_license_schemaVersion": "0.1",
