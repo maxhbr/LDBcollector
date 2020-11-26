@@ -173,12 +173,8 @@
             "_license_id": "licenses/1084",
             "_sourceURL": "http://open-license.hitachi.com/licenses/1084",
             "_license_name": "Open Software License, version 2.1",
-            "_license_summary": {
-                "ja": "https://opensource.org/licenses/osl-2.1.php"
-            },
-            "_license_description": {
-                "ja": "ソースコードは、当該ソフトウェアの修正版を作成するのに適した形式、および、その変更方法を記した文書を指す。\r\n\r\n自身は、本ライセンスの下で、本ライセンスの条項の全てに従って権利を行使する個人または法人を指す。\r\n\r\n法人の場合、自身には、自身を管理する者、自身によって管理される者、もしくは、自身と共通の管理下にある者の団体を含む。この定義における「管理」は次のいずれかを指す。 (1)契約などにより、直接または間接的にこの法人の指揮・経営を行なう権限を持つ (2)この法人の50％を超える発行済み株式または受益所有権を持つ"
-            },
+            "_license_summary": "https://opensource.org/licenses/osl-2.1.php",
+            "_license_description": "ソースコードは、当該ソフトウェアの修正版を作成するのに適した形式、および、その変更方法を記した文書を指す。\r\n\r\n自身は、本ライセンスの下で、本ライセンスの条項の全てに従って権利を行使する個人または法人を指す。\r\n\r\n法人の場合、自身には、自身を管理する者、自身によって管理される者、もしくは、自身と共通の管理下にある者の団体を含む。この定義における「管理」は次のいずれかを指す。 (1)契約などにより、直接または間接的にこの法人の指揮・経営を行なう権限を持つ (2)この法人の50％を超える発行済み株式または受益所有権を持つ",
             "_license_baseUri": "http://open-license.hitachi.com/",
             "_license_schemaVersion": "0.1",
             "_implications": {

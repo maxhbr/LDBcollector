@@ -227,8 +227,8 @@
               "_license_id": "licenses/698",
               "_sourceURL": "http://open-license.hitachi.com/licenses/698",
               "_license_name": "MIT +no-false-attribs License",
-              "_license_summary": {},
-              "_license_description": {},
+              "_license_summary": "",
+              "_license_description": "",
               "_license_baseUri": "http://open-license.hitachi.com/",
               "_license_schemaVersion": "0.1",
               "_implications": {

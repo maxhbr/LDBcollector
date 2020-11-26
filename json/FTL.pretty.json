@@ -122,12 +122,8 @@
             "_license_id": "licenses/763",
             "_sourceURL": "http://open-license.hitachi.com/licenses/763",
             "_license_name": "FreeType Project LICENSE",
-            "_license_summary": {
-                "ja": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]"
-            },
-            "_license_description": {
-                "ja": "●\"package\"、\"FreeType Project\"、\"FreeType archive\"は、\"FreeType Project\"として著作者(David Turner, Robert Wilhelm, and Werner Lemberg)が頒布する元々のソースコード、バイナリ、関連文書の全てをさす。\r\n\r\n●サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。 "
-            },
+            "_license_summary": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]",
+            "_license_description": "●\"package\"、\"FreeType Project\"、\"FreeType archive\"は、\"FreeType Project\"として著作者(David Turner, Robert Wilhelm, and Werner Lemberg)が頒布する元々のソースコード、バイナリ、関連文書の全てをさす。\r\n\r\n●サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。 ",
             "_license_baseUri": "http://open-license.hitachi.com/",
             "_license_schemaVersion": "0.1",
             "_implications": {

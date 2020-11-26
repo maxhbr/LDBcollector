@@ -154,10 +154,8 @@
             "_license_id": "licenses/288",
             "_sourceURL": "http://open-license.hitachi.com/licenses/288",
             "_license_name": "DOM4J License",
-            "_license_summary": {},
-            "_license_description": {
-                "ja": "\"DOM4J\"は、MetaStuff, Ltd.の登録商標である。\r\n\r\n正当なクレジットは\"DOM4J Project http://www.dom4j.org/\"にある。\r\n"
-            },
+            "_license_summary": "",
+            "_license_description": "\"DOM4J\"は、MetaStuff, Ltd.の登録商標である。\r\n\r\n正当なクレジットは\"DOM4J Project http://www.dom4j.org/\"にある。\r\n",
             "_license_baseUri": "http://open-license.hitachi.com/",
             "_license_schemaVersion": "0.1",
             "_implications": {

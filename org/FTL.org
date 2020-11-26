@@ -364,12 +364,8 @@
               "_license_id": "licenses/763",
               "_sourceURL": "http://open-license.hitachi.com/licenses/763",
               "_license_name": "FreeType Project LICENSE",
-              "_license_summary": {
-                  "ja": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]"
-              },
-              "_license_description": {
-                  "ja": "â\"package\"ã\"FreeType Project\"ã\"FreeType archive\"ã¯ã\"FreeType Project\"ã¨ãã¦èä½è(David Turner, Robert Wilhelm, and Werner Lemberg)ãé å¸ããåãã®ã½ã¼ã¹ã³ã¼ãããã¤ããªãé¢é£ææ¸ã®å¨ã¦ãããã\r\n\r\nâãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã "
-              },
+              "_license_summary": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]",
+              "_license_description": "â\"package\"ã\"FreeType Project\"ã\"FreeType archive\"ã¯ã\"FreeType Project\"ã¨ãã¦èä½è(David Turner, Robert Wilhelm, and Werner Lemberg)ãé å¸ããåãã®ã½ã¼ã¹ã³ã¼ãããã¤ããªãé¢é£ææ¸ã®å¨ã¦ãããã\r\n\r\nâãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã ",
               "_license_baseUri": "http://open-license.hitachi.com/",
               "_license_schemaVersion": "0.1",
               "_implications": {

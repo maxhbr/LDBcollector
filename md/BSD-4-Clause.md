@@ -360,10 +360,8 @@ Raw Data
                 "_license_id": "licenses/277",
                 "_sourceURL": "http://open-license.hitachi.com/licenses/277",
                 "_license_name": "BSD 4-clause \"Original\" or \"Old\" License",
-                "_license_summary": {
-                    "ja": "BSD-4-Clause"
-                },
-                "_license_description": {},
+                "_license_summary": "BSD-4-Clause",
+                "_license_description": "",
                 "_license_baseUri": "http://open-license.hitachi.com/",
                 "_license_schemaVersion": "0.1",
                 "_implications": {
