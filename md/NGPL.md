@@ -7,6 +7,10 @@ Nethack General Public License (NGPL)
 
 -   `scancode://ngpl`
 
+-   `The Nethack General Public License`
+
+-   `License :: OSI Approved :: Nethack General Public License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -26,9 +30,9 @@ URLs
 
 -   **Homepage:** http://www.nethack.org/common/license.html
 
--   **SPDX:** http://spdx.org/licenses/NGPL.json
+-   **OSI Page:** https://opensource.org/licenses/NGPL
 
--   https://opensource.org/licenses/NGPL
+-   **SPDX:** http://spdx.org/licenses/NGPL.json
 
 -   http://www.opensource.org/licenses/NGPL
 
@@ -86,6 +90,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ngpl.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -96,7 +103,9 @@ Raw Data
         "__impliedNames": [
             "NGPL",
             "Nethack General Public License",
-            "scancode://ngpl"
+            "scancode://ngpl",
+            "The Nethack General Public License",
+            "License :: OSI Approved :: Nethack General Public License"
         ],
         "__impliedId": "NGPL",
         "__impliedComments": [
@@ -244,6 +253,55 @@ Raw Data
                         "NGPL"
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/NGPL",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "NGPL",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Nethack General Public License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "The Nethack General Public License",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "non-reusable",
+                    "osi-approved"
+                ],
+                "id": "NGPL",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/NGPL"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "NGPL",
+                        "The Nethack General Public License",
+                        "NGPL",
+                        "License :: OSI Approved :: Nethack General Public License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/NGPL"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -280,6 +338,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/NGPL"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/NGPL"
             ]
         ]
     }

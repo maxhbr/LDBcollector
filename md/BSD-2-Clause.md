@@ -11,6 +11,14 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 -   `scancode://bsd-simplified`
 
+-   `BSD-2`
+
+-   `BSD 2-Clause License`
+
+-   `Simplified BSD License`
+
+-   `FreeBSD License`
+
 -   `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
 
 Description
@@ -58,11 +66,14 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/bsd-license.php
 
+-   **OSI Page:** https://opensource.org/licenses/BSD-2-Clause
+
 -   **SPDX:** http://spdx.org/licenses/BSD-2-Clause.json
 
 -   **SPDX:** https://spdx.org/licenses/BSD-2-Clause.html
 
--   https://opensource.org/licenses/BSD-2-Clause
+-   **Wikipedia Page:**
+    https://en.wikipedia.org/wiki/BSD\_licenses\#2-clause
 
 -   http://spdx.org/licenses/BSD-2-Clause
 
@@ -120,6 +131,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-2-Clause.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -137,6 +151,11 @@ Raw Data
             "BSD 2-Clause \"Simplified\" License",
             "scancode://bsd-simplified",
             "bsd-2-clause",
+            "BSD-2",
+            "BSD 2-Clause License",
+            "BSD-2-clause",
+            "Simplified BSD License",
+            "FreeBSD License",
             "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
         ],
         "__impliedId": "BSD-2-Clause",
@@ -351,6 +370,74 @@ Raw Data
                     ]
                 }
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/BSD-2-Clause",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "BSD-2-clause",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "BSD-2-Clause",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "BSD 2-Clause License",
+                "other_names": [
+                    {
+                        "note": null,
+                        "name": "Simplified BSD License"
+                    },
+                    {
+                        "note": null,
+                        "name": "FreeBSD License"
+                    }
+                ],
+                "keywords": [
+                    "osi-approved",
+                    "popular",
+                    "permissive"
+                ],
+                "id": "BSD-2",
+                "links": [
+                    {
+                        "note": "Wikipedia Page",
+                        "url": "https://en.wikipedia.org/wiki/BSD_licenses#2-clause"
+                    },
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/BSD-2-Clause"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD-2",
+                        "BSD 2-Clause License",
+                        "BSD-2-clause",
+                        "BSD-2-Clause",
+                        "Simplified BSD License",
+                        "FreeBSD License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "Wikipedia Page",
+                            "https://en.wikipedia.org/wiki/BSD_licenses#2-clause"
+                        ],
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/BSD-2-Clause"
+                        ]
+                    ]
+                }
+            },
             "choosealicense.com": {
                 "limitations": [
                     "liability",
@@ -554,6 +641,14 @@ Raw Data
             [
                 null,
                 "http://www.freebsd.org/copyright/copyright.html"
+            ],
+            [
+                "Wikipedia Page",
+                "https://en.wikipedia.org/wiki/BSD_licenses#2-clause"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/BSD-2-Clause"
             ]
         ]
     }

@@ -37,6 +37,12 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 -   `GNU GPLv3`
 
+-   `GNU General Public License, Version 3.0`
+
+-   `License :: OSI Approved :: GNU General Public License (GPL)`
+
+-   `License :: OSI Approved :: GNU General Public License v3 (GPLv3)`
+
 -   `GNU General Public License 3.0`
 
 Description
@@ -110,11 +116,17 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/gpl-3.0.html
 
+-   **OSI Page:** https://opensource.org/licenses/GPL-3.0
+
 -   **SPDX:** http://spdx.org/licenses/GPL-3.0-only.json
 
 -   **SPDX:** http://spdx.org/licenses/GPL-3.0-or-later.json
 
--   https://opensource.org/licenses/GPL-3.0
+-   **Wikipedia page:**
+    https://en.wikipedia.org/wiki/GNU\_General\_Public\_License
+
+-   **tl;dr legal:**
+    https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29
 
 -   https://spdx.org/licenses/GPL-3.0-only.html
 
@@ -843,6 +855,9 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-3.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -898,6 +913,9 @@ Raw Data
             "GPL 3.0 or later",
             "gpl-3.0",
             "GNU GPLv3",
+            "GNU General Public License, Version 3.0",
+            "License :: OSI Approved :: GNU General Public License (GPL)",
+            "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
             "GNU General Public License 3.0"
         ],
         "__impliedId": "GPL-3.0-only",
@@ -1190,6 +1208,86 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "StrongCopyleft"
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://www.gnu.org/licenses/gpl-3.0.txt",
+                        "title": "Plain Text",
+                        "media_type": "text/plain"
+                    },
+                    {
+                        "url": "https://www.gnu.org/licenses/gpl-3.0-standalone.html",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "GPL-3.0",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "GPL-3.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: GNU General Public License (GPL)",
+                        "scheme": "Trove"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "GNU General Public License, Version 3.0",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "popular",
+                    "copyleft"
+                ],
+                "id": "GPL-3.0",
+                "links": [
+                    {
+                        "note": "tl;dr legal",
+                        "url": "https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29"
+                    },
+                    {
+                        "note": "Wikipedia page",
+                        "url": "https://en.wikipedia.org/wiki/GNU_General_Public_License"
+                    },
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/GPL-3.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "GPL-3.0",
+                        "GNU General Public License, Version 3.0",
+                        "GPL-3.0",
+                        "GPL-3.0",
+                        "License :: OSI Approved :: GNU General Public License (GPL)",
+                        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "tl;dr legal",
+                            "https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29"
+                        ],
+                        [
+                            "Wikipedia page",
+                            "https://en.wikipedia.org/wiki/GNU_General_Public_License"
+                        ],
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/GPL-3.0"
+                        ]
+                    ]
+                }
             },
             "Wikipedia": {
                 "Distribution": {
@@ -1653,6 +1751,18 @@ Raw Data
             [
                 "Homepage",
                 "http://www.gnu.org/licenses/gpl-3.0-standalone.html"
+            ],
+            [
+                "tl;dr legal",
+                "https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29"
+            ],
+            [
+                "Wikipedia page",
+                "https://en.wikipedia.org/wiki/GNU_General_Public_License"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/GPL-3.0"
             ]
         ]
     }

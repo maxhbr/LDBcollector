@@ -13,12 +13,18 @@
 
 * `+scancode://osl-2.1+`
 * `+OSL 2.1+`
+* `+Open Software License, Version 2.1+`
+* `+Open Software License, version 2.1+`
 
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/OSL-2.1.html[SPDX] (all data [in this
 repository] is generated))
+* **↑**``This software Licenses is OK for Fedora'' (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 * **↓**``Google Classification is RESTRICTED'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
@@ -47,9 +53,10 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.nexb.com/license/LICENSE-OSL-2.1.html
 * *OSI Page:* http://www.opensource.org/licenses/osl-2.1.php
+* *OSI Page:* https://opensource.org/licenses/OSL-2.1
 * *SPDX:* http://spdx.org/licenses/OSL-2.1.json
+* *open-license:* http://open-license.hitachi.com/licenses/1084
 * http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm
-* https://opensource.org/licenses/OSL-2.1
 * https://spdx.org/licenses/OSL-2.1.html
 * http://www.gnu.org/licenses/license-list.html#OSL
 
@@ -113,9 +120,16 @@ repository] is generated)
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-2.1.yml[Scancode]
 (CC0-1.0)
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -125,9 +139,12 @@ Policy]
         "OSL-2.1",
         "Open Software License 2.1",
         "scancode://osl-2.1",
-        "OSL 2.1"
+        "OSL 2.1",
+        "Open Software License, Version 2.1",
+        "Open Software License, version 2.1"
     ],
     "__impliedId": "OSL-2.1",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Open Software License"
     ],
@@ -189,6 +206,32 @@ Policy]
                 ]
             },
             "spdxLicenseId": "OSL-2.1"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/OSL2.1",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "OSL 2.1",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Open Software License 2.1",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Open Software License 2.1"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -260,6 +303,28 @@ Policy]
                 ]
             }
         },
+        "Hitachi open-license": {
+            "_license_uri": "http://open-license.hitachi.com/licenses/1084",
+            "_license_permissions": [],
+            "_license_id": "licenses/1084",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/1084",
+            "_license_name": "Open Software License, version 2.1",
+            "_license_summary": {},
+            "_license_description": {},
+            "_license_baseUri": "http://open-license.hitachi.com/",
+            "_license_schemaVersion": "0.1",
+            "_implications": {
+                "__impliedNames": [
+                    "Open Software License, version 2.1"
+                ],
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/1084"
+                    ]
+                ]
+            }
+        },
         "BlueOak License List": {
             "url": "https://spdx.org/licenses/OSL-2.1.html",
             "familyName": "Open Software License",
@@ -299,6 +364,50 @@ Policy]
             },
             "CopyleftKind": "SaaSCopyleft"
         },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/OSL-2.1",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "OSL-2.1",
+                    "scheme": "SPDX"
+                }
+            ],
+            "superseded_by": "OLS-3.0",
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "Open Software License, Version 2.1",
+            "other_names": [],
+            "keywords": [
+                "osi-approved",
+                "discouraged",
+                "redundant"
+            ],
+            "id": "OSL-2.1",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/OSL-2.1"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "OSL-2.1",
+                    "Open Software License, Version 2.1",
+                    "OSL-2.1"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/OSL-2.1"
+                    ]
+                ]
+            }
+        },
         "Google OSS Policy": {
             "rating": "RESTRICTED",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -320,6 +429,13 @@ Policy]
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "Google OSS Policy",
             {
@@ -384,6 +500,14 @@ Policy]
         [
             null,
             "http://www.nexb.com/license/LICENSE-OSL-2.1.html"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/OSL-2.1"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/1084"
         ]
     ]
 }

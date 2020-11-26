@@ -7,6 +7,8 @@ Microsoft Reciprocal License (MS-RL)
 
 -   `scancode://ms-rl`
 
+-   `Microsoft Reciprocal License (MS-RL)`
+
 Description
 -----------
 
@@ -55,11 +57,11 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/ms-rl.html
 
+-   **OSI Page:** https://opensource.org/licenses/MS-RL
+
 -   **SPDX:** http://spdx.org/licenses/MS-RL.json
 
 -   http://www.microsoft.com/opensource/licenses.mspx
-
--   https://opensource.org/licenses/MS-RL
 
 -   https://spdx.org/licenses/MS-RL.html
 
@@ -115,6 +117,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -126,7 +131,8 @@ Raw Data
             "MS-RL",
             "Microsoft Reciprocal License",
             "scancode://ms-rl",
-            "ms-rl"
+            "ms-rl",
+            "Microsoft Reciprocal License (MS-RL)"
         ],
         "__impliedId": "MS-RL",
         "__impliedAmbiguousNames": [
@@ -341,6 +347,48 @@ Raw Data
                 },
                 "CopyleftKind": "WeakCopyleft"
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/MS-RL",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "MS-RL",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Microsoft Reciprocal License (MS-RL)",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved"
+                ],
+                "id": "MS-RL",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/MS-RL"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "MS-RL",
+                        "Microsoft Reciprocal License (MS-RL)",
+                        "MS-RL"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/MS-RL"
+                        ]
+                    ]
+                }
+            },
             "choosealicense.com": {
                 "limitations": [
                     "warranty",
@@ -526,6 +574,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/MS-RL"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/MS-RL"
             ]
         ]
     }

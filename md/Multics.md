@@ -32,11 +32,11 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/multics.txt
 
+-   **OSI Page:** https://opensource.org/licenses/Multics
+
 -   **SPDX:** http://spdx.org/licenses/Multics.json
 
 -   **SPDX:** https://spdx.org/licenses/Multics.html
-
--   https://opensource.org/licenses/Multics
 
 -   http://www.opensource.org/licenses/Multics
 
@@ -76,6 +76,9 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/multics.yml "Scancode")
     (CC0-1.0)
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
@@ -275,6 +278,50 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/Multics",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "Multics",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Multics License",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "non-reusable",
+                    "osi-approved"
+                ],
+                "id": "Multics",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/Multics"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Multics",
+                        "Multics License",
+                        "Multics"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/Multics"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -330,6 +377,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/Multics"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Multics"
             ]
         ]
     }

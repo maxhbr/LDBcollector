@@ -9,6 +9,10 @@ Eiffel Forum License v2.0 (EFL-2.0)
 
 -   `EFL 2.0`
 
+-   `Eiffel Forum License, Version 2`
+
+-   `License :: OSI Approved :: Eiffel Forum License`
+
 -   `Eiffel Forum License 2.0`
 
 Comments on (easy) usability
@@ -36,13 +40,13 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/ver2\_eiffel.php
 
+-   **OSI Page:** https://opensource.org/licenses/EFL-2.0
+
 -   **SPDX:** http://spdx.org/licenses/EFL-2.0.json
 
 -   **SPDX:** https://spdx.org/licenses/EFL-2.0.html
 
 -   http://www.eiffel-nice.org/license/eiffel-forum-license-2.html
-
--   https://opensource.org/licenses/EFL-2.0
 
 -   http://amalasoft.com/downloads/ael/ds/LICENSE.txt
 
@@ -94,6 +98,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-2.0.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -106,6 +113,8 @@ Raw Data
             "Eiffel Forum License v2.0",
             "scancode://efl-2.0",
             "EFL 2.0",
+            "Eiffel Forum License, Version 2",
+            "License :: OSI Approved :: Eiffel Forum License",
             "Eiffel Forum License 2.0"
         ],
         "__impliedId": "EFL-2.0",
@@ -314,6 +323,60 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/EFL-2.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "EFL-2.0",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "EFL-2.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Eiffel Forum License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Eiffel Forum License, Version 2",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "discouraged",
+                    "redundant"
+                ],
+                "id": "EFL-2.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/EFL-2.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "EFL-2.0",
+                        "Eiffel Forum License, Version 2",
+                        "EFL-2.0",
+                        "EFL-2.0",
+                        "License :: OSI Approved :: Eiffel Forum License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/EFL-2.0"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -381,6 +444,10 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/EFL-2.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/EFL-2.0"
             ]
         ]
     }

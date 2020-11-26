@@ -7,6 +7,8 @@ Attribution Assurance License (AAL)
 
 -   `scancode://attribution`
 
+-   `License :: OSI Approved :: Attribution Assurance License`
+
 -   `Attribution Assurance Licenses`
 
 Comments on (easy) usability
@@ -33,6 +35,8 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/attribution.php
 
+-   **OSI Page:** https://opensource.org/licenses/AAL
+
 -   **SPDX:** http://spdx.org/licenses/AAL.json
 
 -   **SPDX:** https://spdx.org/licenses/AAL.html
@@ -40,8 +44,6 @@ URLs
 -   https://opensource.org/licenses/attribution
 
 -   http://www.opensource.org/licenses/attribution
-
--   https://opensource.org/licenses/AAL
 
 Text
 ----
@@ -114,6 +116,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/attribution.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -125,6 +130,7 @@ Raw Data
             "AAL",
             "Attribution Assurance License",
             "scancode://attribution",
+            "License :: OSI Approved :: Attribution Assurance License",
             "Attribution Assurance Licenses"
         ],
         "__impliedId": "AAL",
@@ -313,6 +319,55 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/AAL",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "AAL",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Attribution Assurance License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Attribution Assurance License",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "discouraged",
+                    "redundant"
+                ],
+                "id": "AAL",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/AAL"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "AAL",
+                        "Attribution Assurance License",
+                        "AAL",
+                        "License :: OSI Approved :: Attribution Assurance License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/AAL"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -368,6 +423,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/attribution"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/AAL"
             ],
             [
                 null,

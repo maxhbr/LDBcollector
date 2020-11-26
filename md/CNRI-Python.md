@@ -9,6 +9,10 @@ CNRI Python License (CNRI-Python)
 
 -   `CNRI Python 1.6`
 
+-   `CNRI portion of the multi-part Python License`
+
+-   `License :: OSI Approved :: Python License (CNRI Python License)`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -34,11 +38,11 @@ URLs
 -   **Homepage:**
     http://www.handle.net/python\_licenses/python1.6\_9-5-00.html
 
+-   **OSI Page:** https://opensource.org/licenses/CNRI-Python
+
 -   **SPDX:** http://spdx.org/licenses/CNRI-Python.json
 
 -   **SPDX:** https://spdx.org/licenses/CNRI-Python.html
-
--   https://opensource.org/licenses/CNRI-Python
 
 -   http://spdx.org/licenses/CNRI-Python
 
@@ -89,6 +93,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -100,7 +107,9 @@ Raw Data
             "CNRI-Python",
             "CNRI Python License",
             "scancode://cnri-python-1.6",
-            "CNRI Python 1.6"
+            "CNRI Python 1.6",
+            "CNRI portion of the multi-part Python License",
+            "License :: OSI Approved :: Python License (CNRI Python License)"
         ],
         "__impliedId": "CNRI-Python",
         "__impliedComments": [
@@ -289,6 +298,55 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/CNRI-Python",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "CNRI-Python",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Python License (CNRI Python License)",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "CNRI portion of the multi-part Python License",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "non-reusable",
+                    "osi-approved"
+                ],
+                "id": "CNRI-Python",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/CNRI-Python"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "CNRI-Python",
+                        "CNRI portion of the multi-part Python License",
+                        "CNRI-Python",
+                        "License :: OSI Approved :: Python License (CNRI Python License)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/CNRI-Python"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -344,6 +402,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/CNRI-Python"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/CNRI-Python"
             ]
         ]
     }

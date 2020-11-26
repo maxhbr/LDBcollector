@@ -3,7 +3,9 @@
         "RSCPL",
         "Ricoh Source Code Public License",
         "scancode://ricoh-1.0",
-        "Ricoh Source Code Public License 1.0"
+        "Ricoh Source Code Public License 1.0",
+        "The Ricoh Source Code Public License",
+        "License :: OSI Approved :: Ricoh Source Code Public License"
     ],
     "__impliedId": "RSCPL",
     "__impliedComments": [
@@ -165,6 +167,55 @@
                     "RSCPL"
                 ]
             }
+        },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/RSCPL",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "RSCPL",
+                    "scheme": "SPDX"
+                },
+                {
+                    "identifier": "License :: OSI Approved :: Ricoh Source Code Public License",
+                    "scheme": "Trove"
+                }
+            ],
+            "superseded_by": null,
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "The Ricoh Source Code Public License",
+            "other_names": [],
+            "keywords": [
+                "discouraged",
+                "non-reusable",
+                "osi-approved"
+            ],
+            "id": "RSCPL",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/RSCPL"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "RSCPL",
+                    "The Ricoh Source Code Public License",
+                    "RSCPL",
+                    "License :: OSI Approved :: Ricoh Source Code Public License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/RSCPL"
+                    ]
+                ]
+            }
         }
     },
     "__impliedJudgement": [
@@ -209,6 +260,10 @@
         [
             null,
             "http://www.opensource.org/licenses/RSCPL"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/RSCPL"
         ]
     ]
 }

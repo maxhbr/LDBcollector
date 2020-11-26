@@ -3,7 +3,10 @@
         "CPL-1.0",
         "Common Public License 1.0",
         "scancode://cpl-1.0",
-        "CPL 1.0"
+        "CPL 1.0",
+        "Common Public License, Version 1.0",
+        "CPL",
+        "License :: OSI Approved :: Common Public License"
     ],
     "__impliedId": "CPL-1.0",
     "__impliedAmbiguousNames": [
@@ -206,6 +209,60 @@
             },
             "CopyleftKind": "WeakCopyleft"
         },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/CPL-1.0",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "CPL",
+                    "scheme": "DEP5"
+                },
+                {
+                    "identifier": "CPL-1.0",
+                    "scheme": "SPDX"
+                },
+                {
+                    "identifier": "License :: OSI Approved :: Common Public License",
+                    "scheme": "Trove"
+                }
+            ],
+            "superseded_by": "EPL-1.0",
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "Common Public License, Version 1.0",
+            "other_names": [],
+            "keywords": [
+                "discouraged",
+                "obsolete",
+                "osi-approved"
+            ],
+            "id": "CPL-1.0",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/CPL-1.0"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "CPL-1.0",
+                    "Common Public License, Version 1.0",
+                    "CPL",
+                    "CPL-1.0",
+                    "License :: OSI Approved :: Common Public License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/CPL-1.0"
+                    ]
+                ]
+            }
+        },
         "Wikipedia": {
             "Linking": {
                 "value": "Permissive",
@@ -326,6 +383,10 @@
         [
             null,
             "http://www.padsproj.org/License.html"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/CPL-1.0"
         ]
     ]
 }

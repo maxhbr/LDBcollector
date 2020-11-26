@@ -9,6 +9,10 @@ X.Net License (Xnet)
 
 -   `Altera License`
 
+-   `The X.Net, Inc. License`
+
+-   `License :: OSI Approved :: X.Net License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -37,11 +41,11 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/xnet.php
 
+-   **OSI Page:** https://opensource.org/licenses/Xnet
+
 -   **SPDX:** http://spdx.org/licenses/Xnet.json
 
 -   **SPDX:** https://spdx.org/licenses/Xnet.html
-
--   https://opensource.org/licenses/Xnet
 
 Text
 ----
@@ -87,6 +91,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -102,7 +109,9 @@ Raw Data
             "Xnet",
             "X.Net License",
             "scancode://xnet",
-            "Altera License"
+            "Altera License",
+            "The X.Net, Inc. License",
+            "License :: OSI Approved :: X.Net License"
         ],
         "__impliedId": "Xnet",
         "__impliedComments": [
@@ -291,6 +300,55 @@ Raw Data
                     ]
                 }
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/Xnet",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "Xnet",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: X.Net License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "The X.Net, Inc. License",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "discouraged",
+                    "redundant"
+                ],
+                "id": "Xnet",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/Xnet"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Xnet",
+                        "The X.Net, Inc. License",
+                        "Xnet",
+                        "License :: OSI Approved :: X.Net License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/Xnet"
+                        ]
+                    ]
+                }
+            },
             "Google OSS Policy": {
                 "rating": "NOTICE",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -382,6 +440,10 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/Xnet"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Xnet"
             ]
         ]
     }

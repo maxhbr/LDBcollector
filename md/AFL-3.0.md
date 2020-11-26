@@ -9,6 +9,10 @@ Academic Free License v3.0 (AFL-3.0)
 
 -   `AFL 3.0`
 
+-   `Academic Free License, Version 3.0`
+
+-   `License :: OSI Approved :: Academic Free License (AFL)`
+
 -   `Academic Free License 3.0`
 
 Description
@@ -58,13 +62,13 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/afl-3.0.php
 
+-   **OSI Page:** https://opensource.org/licenses/AFL-3.0
+
 -   **SPDX:** http://spdx.org/licenses/AFL-3.0.json
 
 -   **SPDX:** https://spdx.org/licenses/AFL-3.0.html
 
 -   http://www.rosenlaw.com/AFL3.0.htm
-
--   https://opensource.org/licenses/afl-3.0
 
 -   http://www.gnu.org/licenses/license-list.html\#AcademicFreeLicense
 
@@ -142,6 +146,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/afl-3.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -162,6 +169,8 @@ Raw Data
             "scancode://afl-3.0",
             "AFL 3.0",
             "afl-3.0",
+            "Academic Free License, Version 3.0",
+            "License :: OSI Approved :: Academic Free License (AFL)",
             "Academic Free License 3.0"
         ],
         "__impliedId": "AFL-3.0",
@@ -358,6 +367,55 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/AFL-3.0.html"
+                        ]
+                    ]
+                }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/AFL-3.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "AFL-3.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Academic Free License (AFL)",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Academic Free License, Version 3.0",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "discouraged",
+                    "redundant"
+                ],
+                "id": "AFL-3.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/AFL-3.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "AFL-3.0",
+                        "Academic Free License, Version 3.0",
+                        "AFL-3.0",
+                        "License :: OSI Approved :: Academic Free License (AFL)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/AFL-3.0"
                         ]
                     ]
                 }
@@ -635,6 +693,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/afl-3.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/AFL-3.0"
             ],
             [
                 null,

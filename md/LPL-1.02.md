@@ -9,6 +9,8 @@ Lucent Public License v1.02 (LPL-1.02)
 
 -   `Lucent Public License 1.02`
 
+-   `Lucent Public License, Version 1.02`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -36,11 +38,11 @@ URLs
 
 -   **Homepage:** http://plan9.bell-labs.com/plan9/license.html
 
+-   **OSI Page:** https://opensource.org/licenses/LPL-1.02
+
 -   **SPDX:** http://spdx.org/licenses/LPL-1.02.json
 
 -   **SPDX:** https://spdx.org/licenses/LPL-1.0.html
-
--   https://opensource.org/licenses/LPL-1.02
 
 -   http://www.opensource.org/licenses/LPL-1.02
 
@@ -147,6 +149,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lucent-pl-1.02.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -162,7 +167,8 @@ Raw Data
             "LPL-1.02",
             "Lucent Public License v1.02",
             "scancode://lucent-pl-1.02",
-            "Lucent Public License 1.02"
+            "Lucent Public License 1.02",
+            "Lucent Public License, Version 1.02"
         ],
         "__impliedId": "LPL-1.02",
         "__impliedComments": [
@@ -352,6 +358,50 @@ Raw Data
                     ]
                 }
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/LPL-1.02",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "LPL-1.02",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Lucent Public License, Version 1.02",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "discouraged",
+                    "redundant"
+                ],
+                "id": "LPL-1.02",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/LPL-1.02"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "LPL-1.02",
+                        "Lucent Public License, Version 1.02",
+                        "LPL-1.02"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/LPL-1.02"
+                        ]
+                    ]
+                }
+            },
             "Google OSS Policy": {
                 "rating": "NOTICE",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -443,6 +493,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/LPL-1.02"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/LPL-1.02"
             ]
         ]
     }

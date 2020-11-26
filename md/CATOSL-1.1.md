@@ -9,6 +9,8 @@ Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)
 
 -   `CA Trusted Open Source License 1.1`
 
+-   `Computer Associates Trusted Open Source License, Version 1.1`
+
 -   `Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)`
 
 -   `ca-tosl1.1`
@@ -34,9 +36,9 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/ca-tosl1.1.php
 
--   **SPDX:** http://spdx.org/licenses/CATOSL-1.1.json
+-   **OSI Page:** https://opensource.org/licenses/CATOSL-1.1
 
--   https://opensource.org/licenses/CATOSL-1.1
+-   **SPDX:** http://spdx.org/licenses/CATOSL-1.1.json
 
 Text
 ----
@@ -411,6 +413,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ca-tosl-1.1.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -423,6 +428,7 @@ Raw Data
             "Computer Associates Trusted Open Source License 1.1",
             "scancode://ca-tosl-1.1",
             "CA Trusted Open Source License 1.1",
+            "Computer Associates Trusted Open Source License, Version 1.1",
             "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)",
             "ca-tosl1.1"
         ],
@@ -579,6 +585,50 @@ Raw Data
                         "CATOSL-1.1"
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/CATOSL-1.1",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "CATOSL-1.1",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Computer Associates Trusted Open Source License, Version 1.1",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "non-reusable",
+                    "osi-approved"
+                ],
+                "id": "CATOSL-1.1",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/CATOSL-1.1"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "CATOSL-1.1",
+                        "Computer Associates Trusted Open Source License, Version 1.1",
+                        "CATOSL-1.1"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/CATOSL-1.1"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -619,6 +669,10 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/CATOSL-1.1"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/CATOSL-1.1"
             ]
         ]
     }

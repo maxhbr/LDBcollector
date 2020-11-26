@@ -9,6 +9,8 @@ Open Software License 3.0 (OSL-3.0)
 
 -   `OSL 3.0`
 
+-   `Open Software License, Version 3.0`
+
 Description
 -----------
 
@@ -69,11 +71,11 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/osl-3.0.php
 
+-   **OSI Page:** https://opensource.org/licenses/OSL-3.0
+
 -   **SPDX:** http://spdx.org/licenses/OSL-3.0.json
 
 -   https://web.archive.org/web/20120101081418/http://rosenlaw.com:80/OSL3.0.htm
-
--   https://opensource.org/licenses/OSL-3.0
 
 -   https://spdx.org/licenses/OSL-3.0.html
 
@@ -157,6 +159,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/osl-3.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -176,7 +181,8 @@ Raw Data
             "Open Software License 3.0",
             "scancode://osl-3.0",
             "OSL 3.0",
-            "osl-3.0"
+            "osl-3.0",
+            "Open Software License, Version 3.0"
         ],
         "__impliedId": "OSL-3.0",
         "__impliedAmbiguousNames": [
@@ -398,6 +404,49 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "SaaSCopyleft"
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/OSL-3.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "OSL-3.0",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Open Software License, Version 3.0",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "miscellaneous"
+                ],
+                "id": "OSL-3.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/OSL-3.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "OSL-3.0",
+                        "Open Software License, Version 3.0",
+                        "OSL-3.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/OSL-3.0"
+                        ]
+                    ]
+                }
             },
             "Wikipedia": {
                 "Distribution": {
@@ -681,6 +730,10 @@ Raw Data
             [
                 null,
                 "http://www.rosenlaw.com/OSL3.0.htm"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/OSL-3.0"
             ]
         ]
     }

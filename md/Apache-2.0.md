@@ -15,6 +15,10 @@ Apache License 2.0 (Apache-2.0)
 
 -   `Apache 2.0`
 
+-   `Apache License, Version 2.0`
+
+-   `License :: OSI Approved :: Apache Software License`
+
 -   `apache2.0`
 
 Description
@@ -77,13 +81,18 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/apache2.0.php
 
+-   **OSI Page:** https://opensource.org/licenses/Apache-2.0
+
 -   **SPDX:** http://spdx.org/licenses/Apache-2.0.json
 
 -   **SPDX:** https://spdx.org/licenses/Apache-2.0.html
 
--   http://www.apache.org/licenses/LICENSE-2.0
+-   **Wikipedia page:** https://en.wikipedia.org/wiki/Apache\_License
 
--   https://opensource.org/licenses/Apache-2.0
+-   **tl;dr legal:**
+    https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29
+
+-   http://www.apache.org/licenses/LICENSE-2.0
 
 -   http://www.opensource.org/licenses/Apache-2.0
 
@@ -317,6 +326,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Apache-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -347,6 +359,8 @@ Raw Data
             "scancode://apache-2.0",
             "Apache 2.0",
             "apache-2.0",
+            "Apache License, Version 2.0",
+            "License :: OSI Approved :: Apache Software License",
             "apache2.0"
         ],
         "__impliedId": "Apache-2.0",
@@ -590,6 +604,76 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/Apache-2.0.html"
+                        ]
+                    ]
+                }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://www.apache.org/licenses/LICENSE-2.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "Apache-2.0",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "Apache-2.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Apache Software License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Apache License, Version 2.0",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "popular",
+                    "permissive"
+                ],
+                "id": "Apache-2.0",
+                "links": [
+                    {
+                        "note": "tl;dr legal",
+                        "url": "https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29"
+                    },
+                    {
+                        "note": "Wikipedia page",
+                        "url": "https://en.wikipedia.org/wiki/Apache_License"
+                    },
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/Apache-2.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Apache-2.0",
+                        "Apache License, Version 2.0",
+                        "Apache-2.0",
+                        "Apache-2.0",
+                        "License :: OSI Approved :: Apache Software License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "tl;dr legal",
+                            "https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29"
+                        ],
+                        [
+                            "Wikipedia page",
+                            "https://en.wikipedia.org/wiki/Apache_License"
+                        ],
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/Apache-2.0"
                         ]
                     ]
                 }
@@ -953,6 +1037,18 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/Apache-2.0"
+            ],
+            [
+                "tl;dr legal",
+                "https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29"
+            ],
+            [
+                "Wikipedia page",
+                "https://en.wikipedia.org/wiki/Apache_License"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Apache-2.0"
             ]
         ]
     }

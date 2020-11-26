@@ -4,6 +4,7 @@
         "Computer Associates Trusted Open Source License 1.1",
         "scancode://ca-tosl-1.1",
         "CA Trusted Open Source License 1.1",
+        "Computer Associates Trusted Open Source License, Version 1.1",
         "Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)",
         "ca-tosl1.1"
     ],
@@ -160,6 +161,50 @@
                     "CATOSL-1.1"
                 ]
             }
+        },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/CATOSL-1.1",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "CATOSL-1.1",
+                    "scheme": "SPDX"
+                }
+            ],
+            "superseded_by": null,
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "Computer Associates Trusted Open Source License, Version 1.1",
+            "other_names": [],
+            "keywords": [
+                "discouraged",
+                "non-reusable",
+                "osi-approved"
+            ],
+            "id": "CATOSL-1.1",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/CATOSL-1.1"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "CATOSL-1.1",
+                    "Computer Associates Trusted Open Source License, Version 1.1",
+                    "CATOSL-1.1"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/CATOSL-1.1"
+                    ]
+                ]
+            }
         }
     },
     "__impliedJudgement": [
@@ -200,6 +245,10 @@
         [
             null,
             "http://opensource.org/licenses/CATOSL-1.1"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/CATOSL-1.1"
         ]
     ]
 }

@@ -9,6 +9,8 @@ SIL Open Font License 1.1 (OFL-1.1)
 
 -   `OFL 1.1`
 
+-   `SIL Open Font License, Version 1.1`
+
 -   `Open Font License 1.1`
 
 Description
@@ -60,9 +62,9 @@ URLs
 -   **Homepage:**
     http://scripts.sil.org/cms/scripts/page.php?item\_id=OFL\_web
 
--   **SPDX:** http://spdx.org/licenses/OFL-1.1.json
+-   **OSI Page:** https://opensource.org/licenses/OFL-1.1
 
--   https://opensource.org/licenses/OFL-1.1
+-   **SPDX:** http://spdx.org/licenses/OFL-1.1.json
 
 -   http://scripts.sil.org/OFL
 
@@ -183,6 +185,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ofl-1.1.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -200,6 +205,7 @@ Raw Data
             "scancode://ofl-1.1",
             "OFL 1.1",
             "ofl-1.1",
+            "SIL Open Font License, Version 1.1",
             "Open Font License 1.1"
         ],
         "__impliedId": "OFL-1.1",
@@ -391,6 +397,49 @@ Raw Data
                 "Comment": "The following restriction on distributions, which is part of OFL, has been widely accepted by open source projects when it is applied to fonts: 1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.",
                 "LicenseId": "OFL-1.1"
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/OFL-1.1",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "OFL-1.1",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "SIL Open Font License, Version 1.1",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "special-purpose"
+                ],
+                "id": "OFL-1.1",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/OFL-1.1"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "OFL-1.1",
+                        "SIL Open Font License, Version 1.1",
+                        "OFL-1.1"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/OFL-1.1"
+                        ]
+                    ]
+                }
+            },
             "choosealicense.com": {
                 "limitations": [
                     "liability",
@@ -557,6 +606,10 @@ Raw Data
             [
                 null,
                 "https://github.com/adobe-fonts/source-code-pro/blob/master/LICENSE.txt"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/OFL-1.1"
             ]
         ]
     }

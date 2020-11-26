@@ -7,6 +7,10 @@ ISC License (ISC)
 
 -   `scancode://isc`
 
+-   `ISC License (ISC)`
+
+-   `License :: OSI Approved :: ISC License (ISCL)`
+
 -   `isc-license`
 
 Description
@@ -66,13 +70,15 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/isc-license.txt
 
+-   **OSI Page:** https://opensource.org/licenses/ISC
+
 -   **SPDX:** http://spdx.org/licenses/ISC.json
 
 -   **SPDX:** https://spdx.org/licenses/ISC.html
 
--   https://www.isc.org/downloads/software-support-policy/isc-license/
+-   **Wikipedia page:** https://en.wikipedia.org/wiki/ISC\_license
 
--   https://opensource.org/licenses/ISC
+-   https://www.isc.org/downloads/software-support-policy/isc-license/
 
 -   http://openbsd.wikia.com/wiki/OpenBSD%27s\_BSD\_license
 
@@ -118,6 +124,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/ISC.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -144,6 +153,8 @@ Raw Data
             "ISC License",
             "scancode://isc",
             "isc",
+            "ISC License (ISC)",
+            "License :: OSI Approved :: ISC License (ISCL)",
             "ISC license",
             "isc-license"
         ],
@@ -386,6 +397,66 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/ISC.html"
+                        ]
+                    ]
+                }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/ISC",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "ISC",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "ISC",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: ISC License (ISCL)",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "ISC License (ISC)",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved"
+                ],
+                "id": "ISC",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/ISC"
+                    },
+                    {
+                        "note": "Wikipedia page",
+                        "url": "https://en.wikipedia.org/wiki/ISC_license"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "ISC",
+                        "ISC License (ISC)",
+                        "ISC",
+                        "ISC",
+                        "License :: OSI Approved :: ISC License (ISCL)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/ISC"
+                        ],
+                        [
+                            "Wikipedia page",
+                            "https://en.wikipedia.org/wiki/ISC_license"
                         ]
                     ]
                 }
@@ -677,6 +748,14 @@ Raw Data
             [
                 null,
                 "https://www.isc.org/isc-license-1.0.html"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/ISC"
+            ],
+            [
+                "Wikipedia page",
+                "https://en.wikipedia.org/wiki/ISC_license"
             ]
         ]
     }

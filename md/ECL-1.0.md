@@ -9,6 +9,8 @@ Educational Community License v1.0 (ECL-1.0)
 
 -   `ECL 1.0`
 
+-   `Educational Community License, Version 1.0`
+
 -   `Educational Community License 1.0`
 
 Comments on (easy) usability
@@ -36,11 +38,11 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/ecl1.php
 
+-   **OSI Page:** https://opensource.org/licenses/ECL-1.0
+
 -   **SPDX:** http://spdx.org/licenses/ECL-1.0.json
 
 -   **SPDX:** https://spdx.org/licenses/ECL-1.0.html
-
--   https://opensource.org/licenses/ECL-1.0
 
 Text
 ----
@@ -117,6 +119,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -128,6 +133,7 @@ Raw Data
             "Educational Community License v1.0",
             "scancode://ecl-1.0",
             "ECL 1.0",
+            "Educational Community License, Version 1.0",
             "Educational Community License 1.0"
         ],
         "__impliedId": "ECL-1.0",
@@ -275,6 +281,50 @@ Raw Data
                     ]
                 }
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/ECL-1.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "ECL-1.0",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": "ECL-2.0",
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Educational Community License, Version 1.0",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "obsolete",
+                    "osi-approved"
+                ],
+                "id": "ECL-1.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/ECL-1.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "ECL-1.0",
+                        "Educational Community License, Version 1.0",
+                        "ECL-1.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/ECL-1.0"
+                        ]
+                    ]
+                }
+            },
             "Wikipedia": {
                 "Linking": {
                     "value": "Permissive",
@@ -353,6 +403,10 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/ECL-1.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/ECL-1.0"
             ]
         ]
     }

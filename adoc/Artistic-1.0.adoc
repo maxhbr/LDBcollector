@@ -14,6 +14,7 @@
 * `+Artistic 1.0 (original)+`
 * `+scancode://artistic-1.0+`
 * `+Artistic 1.0+`
+* `+Artistic License, Version 1.0+`
 
 === Comments on (easy) usability
 
@@ -44,9 +45,9 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.perlfoundation.org/
 * *OSI Page:* http://opensource.org/licenses/artistic-license-1.0
+* *OSI Page:* https://opensource.org/licenses/Artistic-1.0
 * *SPDX:* http://spdx.org/licenses/Artistic-1.0.json
 * *SPDX:* https://spdx.org/licenses/Artistic-1.0.html
-* https://opensource.org/licenses/Artistic-1.0
 * http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 * http://www.perlfoundation.org/artistic_license_1_0
 
@@ -165,6 +166,8 @@ repository] is generated)
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml[Scancode]
 (CC0-1.0)
+* https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
@@ -180,7 +183,8 @@ Policy]
         "Artistic 1.0 (original)",
         "Artistic License 1.0",
         "scancode://artistic-1.0",
-        "Artistic 1.0"
+        "Artistic 1.0",
+        "Artistic License, Version 1.0"
     ],
     "__impliedId": "Artistic-1.0",
     "__impliedAmbiguousNames": [
@@ -381,6 +385,55 @@ Policy]
                 ]
             }
         },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/Artistic-1.0",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "Artistic-1.0",
+                    "scheme": "DEP5"
+                },
+                {
+                    "identifier": "Artistic-1.0",
+                    "scheme": "SPDX"
+                }
+            ],
+            "superseded_by": "Artistic-2.0",
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "Artistic License, Version 1.0",
+            "other_names": [],
+            "keywords": [
+                "osi-approved",
+                "discouraged",
+                "obsolete"
+            ],
+            "id": "Artistic-1.0",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/Artistic-1.0"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "Artistic-1.0",
+                    "Artistic License, Version 1.0",
+                    "Artistic-1.0",
+                    "Artistic-1.0"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/Artistic-1.0"
+                    ]
+                ]
+            }
+        },
         "Google OSS Policy": {
             "rating": "NOTICE",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -487,6 +540,10 @@ Policy]
         [
             null,
             "http://www.perlfoundation.org/artistic_license_1_0"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/Artistic-1.0"
         ]
     ]
 }
