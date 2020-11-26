@@ -9,8 +9,6 @@ RealNetworks Public Source License v1.0 (RPSL-1.0)
 
 -   `RealNetworks Public Source License 1.0`
 
--   `RealNetworks Public Source License, Version 1.0`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -56,11 +54,11 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/real.php
 
--   **OSI Page:** https://opensource.org/licenses/RPSL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/RPSL-1.0.json
 
 -   https://helixcommunity.org/content/rpsl
+
+-   https://opensource.org/licenses/RPSL-1.0
 
 -   https://spdx.org/licenses/RPSL-1.0.html
 
@@ -611,9 +609,6 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -630,8 +625,7 @@ Raw Data
             "RealNetworks Public Source License v1.0",
             "scancode://rpsl-1.0",
             "RealNetworks Public Source License 1.0",
-            "RealNetworks Public Source License V1.0",
-            "RealNetworks Public Source License, Version 1.0"
+            "RealNetworks Public Source License V1.0"
         ],
         "__impliedId": "RPSL-1.0",
         "__isFsfFree": true,
@@ -894,50 +888,6 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "SaaSCopyleft"
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/RPSL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "RPSL-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "RealNetworks Public Source License, Version 1.0",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "RPSL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/RPSL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "RPSL-1.0",
-                        "RealNetworks Public Source License, Version 1.0",
-                        "RPSL-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/RPSL-1.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -1004,10 +954,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/RPSL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/RPSL-1.0"
             ]
         ]
     }

@@ -9,10 +9,6 @@ CeCILL Free Software License Agreement v2.1 (CECILL-2.1)
 
 -   `CeCILL 2.1`
 
--   `Cea Cnrs Inria Logiciel Libre License, Version 2.1`
-
--   `License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)`
-
 -   `CeCILL License 2.1`
 
 Description
@@ -596,9 +592,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cecill-2.1.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -615,8 +608,6 @@ Raw Data
             "scancode://cecill-2.1",
             "CeCILL 2.1",
             "cecill-2.1",
-            "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
-            "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
             "CeCILL-2.1",
             "CeCILL License 2.1"
         ],
@@ -748,48 +739,6 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "CECILL-2.1"
-                    ]
-                }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/CECILL-2.1",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved"
-                ],
-                "id": "CECILL-2.1",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/CECILL-2.1"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "CECILL-2.1",
-                        "Cea Cnrs Inria Logiciel Libre License, Version 2.1",
-                        "License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/CECILL-2.1"
-                        ]
                     ]
                 }
             },
@@ -1002,10 +951,6 @@ Raw Data
             [
                 "OSI Page",
                 "http://opensource.org/licenses/CECILL-2.1"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/CECILL-2.1"
             ],
             [
                 null,

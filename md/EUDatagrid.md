@@ -34,9 +34,9 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/eudatagrid.php
 
--   **OSI Page:** https://opensource.org/licenses/EUDatagrid
-
 -   **SPDX:** http://spdx.org/licenses/EUDatagrid.json
+
+-   https://opensource.org/licenses/EUDatagrid
 
 -   http://www.eu-egee.org/
 
@@ -90,9 +90,6 @@ Raw Data
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
@@ -294,50 +291,6 @@ Raw Data
                         "EUDatagrid"
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/EUDatagrid",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "EUDatagrid",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "EU DataGrid Software License",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "EUDatagrid",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/EUDatagrid"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "EUDatagrid",
-                        "EU DataGrid Software License",
-                        "EUDatagrid"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/EUDatagrid"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -393,10 +346,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/EUDatagrid"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/EUDatagrid"
             ]
         ]
     }

@@ -11,18 +11,6 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 -   `scancode://bsd-new`
 
--   `BSD-3`
-
--   `BSD 3-Clause License`
-
--   `License :: OSI Approved :: BSD License`
-
--   `Revised BSD License`
-
--   `Modified BSD License`
-
--   `New BSD License`
-
 -   `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
 
 Description
@@ -83,14 +71,11 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/BSD-3-Clause
 
--   **OSI Page:** https://opensource.org/licenses/BSD-3-Clause
-
 -   **SPDX:** http://spdx.org/licenses/BSD-3-Clause.json
 
 -   **SPDX:** https://spdx.org/licenses/BSD-3-Clause.html
 
--   **Wikipedia Page:**
-    https://en.wikipedia.org/wiki/BSD\_licenses\#3-clause
+-   https://opensource.org/licenses/BSD-3-Clause
 
 -   http://framework.zend.com/license/new-bsd
 
@@ -147,9 +132,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -175,13 +157,6 @@ Raw Data
             "BSD 3-Clause \"New\" or \"Revised\" License",
             "scancode://bsd-new",
             "bsd-3-clause",
-            "BSD-3",
-            "BSD 3-Clause License",
-            "BSD-3-clause",
-            "License :: OSI Approved :: BSD License",
-            "Revised BSD License",
-            "Modified BSD License",
-            "New BSD License",
             "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
         ],
         "__impliedId": "BSD-3-Clause",
@@ -414,84 +389,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/BSD-3-Clause.html"
-                        ]
-                    ]
-                }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/BSD-3-Clause",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "BSD-3-clause",
-                        "scheme": "DEP5"
-                    },
-                    {
-                        "identifier": "BSD-3-Clause",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: BSD License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "BSD 3-Clause License",
-                "other_names": [
-                    {
-                        "note": null,
-                        "name": "Revised BSD License"
-                    },
-                    {
-                        "note": null,
-                        "name": "Modified BSD License"
-                    },
-                    {
-                        "note": null,
-                        "name": "New BSD License"
-                    }
-                ],
-                "keywords": [
-                    "osi-approved",
-                    "popular",
-                    "permissive"
-                ],
-                "id": "BSD-3",
-                "links": [
-                    {
-                        "note": "Wikipedia Page",
-                        "url": "https://en.wikipedia.org/wiki/BSD_licenses#3-clause"
-                    },
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/BSD-3-Clause"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "BSD-3",
-                        "BSD 3-Clause License",
-                        "BSD-3-clause",
-                        "BSD-3-Clause",
-                        "License :: OSI Approved :: BSD License",
-                        "Revised BSD License",
-                        "Modified BSD License",
-                        "New BSD License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "Wikipedia Page",
-                            "https://en.wikipedia.org/wiki/BSD_licenses#3-clause"
-                        ],
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/BSD-3-Clause"
                         ]
                     ]
                 }
@@ -739,14 +636,6 @@ Raw Data
             [
                 null,
                 "http://framework.zend.com/license/new-bsd"
-            ],
-            [
-                "Wikipedia Page",
-                "https://en.wikipedia.org/wiki/BSD_licenses#3-clause"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/BSD-3-Clause"
             ]
         ]
     }

@@ -9,8 +9,6 @@ NASA Open Source Agreement 1.3 (NASA-1.3)
 
 -   `NASA 1.3`
 
--   `NASA Open Source Agreement, Version 1.3`
-
 -   `nasa1.3`
 
 Comments on (easy) usability
@@ -37,13 +35,13 @@ URLs
 -   **Homepage:**
     http://opensource.arc.nasa.gov/static/html/NASA\_Open\_Source\_Agreement\_1.3.txt
 
--   **OSI Page:** https://opensource.org/licenses/NASA-1.3
-
 -   **SPDX:** http://spdx.org/licenses/NASA-1.3.json
 
 -   **SPDX:** https://spdx.org/licenses/NASA-1.3.html
 
 -   http://ti.arc.nasa.gov/opensource/nosa/
+
+-   https://opensource.org/licenses/NASA-1.3
 
 -   http://www.gnu.org/licenses/license-list.html\#NASA
 
@@ -177,9 +175,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -192,7 +187,6 @@ Raw Data
             "NASA Open Source Agreement 1.3",
             "scancode://nasa-1.3",
             "NASA 1.3",
-            "NASA Open Source Agreement, Version 1.3",
             "nasa1.3"
         ],
         "__impliedId": "NASA-1.3",
@@ -395,49 +389,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/NASA-1.3",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "NASA-1.3",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "NASA Open Source Agreement, Version 1.3",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "special-purpose"
-                ],
-                "id": "NASA-1.3",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/NASA-1.3"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "NASA-1.3",
-                        "NASA Open Source Agreement, Version 1.3",
-                        "NASA-1.3"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/NASA-1.3"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -497,10 +448,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/NASA-1.3"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/NASA-1.3"
             ]
         ]
     }

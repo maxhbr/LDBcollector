@@ -9,10 +9,6 @@ Sun Public License v1.0 (SPL-1.0)
 
 -   `SPL 1.0`
 
--   `Sun Public License, Version 1.0`
-
--   `License :: OSI Approved :: Sun Public License`
-
 -   `Sun Public License 1.0`
 
 Comments on (easy) usability
@@ -42,9 +38,9 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/sunpublic.php
 
--   **OSI Page:** https://opensource.org/licenses/SPL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/SPL-1.0.json
+
+-   https://opensource.org/licenses/SPL-1.0
 
 -   https://spdx.org/licenses/SPL-1.0.html
 
@@ -580,9 +576,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/spl-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -595,8 +588,6 @@ Raw Data
             "Sun Public License v1.0",
             "scancode://spl-1.0",
             "SPL 1.0",
-            "Sun Public License, Version 1.0",
-            "License :: OSI Approved :: Sun Public License",
             "Sun Public License 1.0"
         ],
         "__impliedId": "SPL-1.0",
@@ -801,55 +792,6 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "WeakCopyleft"
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/SPL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "SPL-1.0",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Sun Public License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Sun Public License, Version 1.0",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "SPL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/SPL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "SPL-1.0",
-                        "Sun Public License, Version 1.0",
-                        "SPL-1.0",
-                        "License :: OSI Approved :: Sun Public License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/SPL-1.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -902,10 +844,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/SPL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/SPL-1.0"
             ]
         ]
     }

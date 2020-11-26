@@ -7,8 +7,6 @@ PostgreSQL License (PostgreSQL)
 
 -   `scancode://postgresql`
 
--   `The PostgreSQL Licence`
-
 Description
 -----------
 
@@ -55,11 +53,11 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/postgresql
 
--   **OSI Page:** https://opensource.org/licenses/PostgreSQL
-
 -   **SPDX:** http://spdx.org/licenses/PostgreSQL.json
 
 -   **SPDX:** https://spdx.org/licenses/PostgreSQL.html
+
+-   https://opensource.org/licenses/PostgreSQL
 
 Text
 ----
@@ -112,9 +110,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/postgresql.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -130,8 +125,7 @@ Raw Data
             "PostgreSQL",
             "PostgreSQL License",
             "scancode://postgresql",
-            "postgresql",
-            "The PostgreSQL Licence"
+            "postgresql"
         ],
         "__impliedId": "PostgreSQL",
         "__impliedComments": [
@@ -321,50 +315,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/PostgreSQL.html"
-                        ]
-                    ]
-                }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/PostgreSQL",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "PostgreSQL",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The PostgreSQL Licence",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "discouraged",
-                    "redundant"
-                ],
-                "id": "PostgreSQL",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/PostgreSQL"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "PostgreSQL",
-                        "The PostgreSQL Licence",
-                        "PostgreSQL"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/PostgreSQL"
                         ]
                     ]
                 }
@@ -567,10 +517,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/PostgreSQL"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/PostgreSQL"
             ]
         ]
     }

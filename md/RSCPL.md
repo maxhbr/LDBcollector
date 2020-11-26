@@ -9,10 +9,6 @@ Ricoh Source Code Public License (RSCPL)
 
 -   `Ricoh Source Code Public License 1.0`
 
--   `The Ricoh Source Code Public License`
-
--   `License :: OSI Approved :: Ricoh Source Code Public License`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -32,11 +28,11 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/ricohpl.php
 
--   **OSI Page:** https://opensource.org/licenses/RSCPL
-
 -   **SPDX:** http://spdx.org/licenses/RSCPL.json
 
 -   http://wayback.archive.org/web/20060715140826/http://www.risource.org/RPL/RPL-1.0A.shtml
+
+-   https://opensource.org/licenses/RSCPL
 
 -   http://www.opensource.org/licenses/RSCPL
 
@@ -192,9 +188,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ricoh-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -206,9 +199,7 @@ Raw Data
             "RSCPL",
             "Ricoh Source Code Public License",
             "scancode://ricoh-1.0",
-            "Ricoh Source Code Public License 1.0",
-            "The Ricoh Source Code Public License",
-            "License :: OSI Approved :: Ricoh Source Code Public License"
+            "Ricoh Source Code Public License 1.0"
         ],
         "__impliedId": "RSCPL",
         "__impliedComments": [
@@ -370,55 +361,6 @@ Raw Data
                         "RSCPL"
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/RSCPL",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "RSCPL",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Ricoh Source Code Public License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The Ricoh Source Code Public License",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "RSCPL",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/RSCPL"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "RSCPL",
-                        "The Ricoh Source Code Public License",
-                        "RSCPL",
-                        "License :: OSI Approved :: Ricoh Source Code Public License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/RSCPL"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -463,10 +405,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/RSCPL"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/RSCPL"
             ]
         ]
     }

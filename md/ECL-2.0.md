@@ -9,8 +9,6 @@ Educational Community License v2.0 (ECL-2.0)
 
 -   `ECL 2.0`
 
--   `Educational Community License, Version 2.0`
-
 -   `Educational Community License 2.0`
 
 -   `ecl2`
@@ -65,11 +63,11 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/ecl2.php
 
--   **OSI Page:** https://opensource.org/licenses/ECL-2.0
-
 -   **SPDX:** http://spdx.org/licenses/ECL-2.0.json
 
 -   **SPDX:** https://spdx.org/licenses/ECL-2.0.html
+
+-   https://opensource.org/licenses/ECL-2.0
 
 Text
 ----
@@ -301,9 +299,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ecl-2.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -317,7 +312,6 @@ Raw Data
             "scancode://ecl-2.0",
             "ECL 2.0",
             "ecl-2.0",
-            "Educational Community License, Version 2.0",
             "Educational Community License 2.0",
             "ecl2"
         ],
@@ -511,49 +505,6 @@ Raw Data
                     ]
                 }
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/ECL-2.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "ECL-2.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Educational Community License, Version 2.0",
-                "other_names": [],
-                "keywords": [
-                    "special-purpose",
-                    "osi-approved"
-                ],
-                "id": "ECL-2.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/ECL-2.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "ECL-2.0",
-                        "Educational Community License, Version 2.0",
-                        "ECL-2.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/ECL-2.0"
-                        ]
-                    ]
-                }
-            },
             "choosealicense.com": {
                 "limitations": [
                     "trademark-use",
@@ -738,10 +689,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/ECL-2.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/ECL-2.0"
             ]
         ]
     }

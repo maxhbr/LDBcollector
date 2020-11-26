@@ -4,7 +4,6 @@
         "Common Development and Distribution License 1.0",
         "scancode://cddl-1.0",
         "CDDL 1.0",
-        "Common Development and Distribution License, Version 1.0",
         "cddl1"
     ],
     "__impliedId": "CDDL-1.0",
@@ -224,62 +223,6 @@
             },
             "CopyleftKind": "WeakCopyleft"
         },
-        "OpenSourceInitiative": {
-            "text": [
-                {
-                    "url": "https://opensource.org/licenses/CDDL-1.0",
-                    "title": "HTML",
-                    "media_type": "text/html"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "CDDL-1.0",
-                    "scheme": "DEP5"
-                },
-                {
-                    "identifier": "CDDL-1.0",
-                    "scheme": "SPDX"
-                }
-            ],
-            "superseded_by": null,
-            "_sourceURL": "https://opensource.org/licenses/",
-            "name": "Common Development and Distribution License, Version 1.0",
-            "other_names": [],
-            "keywords": [
-                "osi-approved",
-                "popular"
-            ],
-            "id": "CDDL-1.0",
-            "links": [
-                {
-                    "note": "Wikipedia page",
-                    "url": "https://en.wikipedia.org/wiki/Common_Development_and_Distribution_License"
-                },
-                {
-                    "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/CDDL-1.0"
-                }
-            ],
-            "_implications": {
-                "__impliedNames": [
-                    "CDDL-1.0",
-                    "Common Development and Distribution License, Version 1.0",
-                    "CDDL-1.0",
-                    "CDDL-1.0"
-                ],
-                "__impliedURLs": [
-                    [
-                        "Wikipedia page",
-                        "https://en.wikipedia.org/wiki/Common_Development_and_Distribution_License"
-                    ],
-                    [
-                        "OSI Page",
-                        "https://opensource.org/licenses/CDDL-1.0"
-                    ]
-                ]
-            }
-        },
         "Wikipedia": {
             "Linking": {
                 "value": "Permissive",
@@ -493,14 +436,6 @@
         [
             null,
             "https://glassfish.dev.java.net/public/CDDLv1.0.html"
-        ],
-        [
-            "Wikipedia page",
-            "https://en.wikipedia.org/wiki/Common_Development_and_Distribution_License"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/CDDL-1.0"
         ],
         [
             null,

@@ -9,8 +9,6 @@ Adaptive Public License 1.0 (APL-1.0)
 
 -   `APL 1.0`
 
--   `Adaptive Public License, Version 1.0`
-
 -   `apl1.0`
 
 Comments on (easy) usability
@@ -32,9 +30,9 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/apl1.0.php
 
--   **OSI Page:** https://opensource.org/licenses/APL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/APL-1.0.json
+
+-   https://opensource.org/licenses/APL-1.0
 
 -   http://www.opensource.org/licenses/APL-1.0
 
@@ -398,9 +396,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adapt-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -413,7 +408,6 @@ Raw Data
             "Adaptive Public License 1.0",
             "scancode://adapt-1.0",
             "APL 1.0",
-            "Adaptive Public License, Version 1.0",
             "apl1.0"
         ],
         "__impliedId": "APL-1.0",
@@ -554,49 +548,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/APL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "APL-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Adaptive Public License, Version 1.0",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "miscellaneous"
-                ],
-                "id": "APL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/APL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "APL-1.0",
-                        "Adaptive Public License, Version 1.0",
-                        "APL-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/APL-1.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -637,10 +588,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/APL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/APL-1.0"
             ]
         ]
     }

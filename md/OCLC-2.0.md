@@ -7,8 +7,6 @@ OCLC Research Public License 2.0 (OCLC-2.0)
 
 -   `scancode://oclc-2.0`
 
--   `The OCLC Research Public License, Version 2.0`
-
 -   `oclc2`
 
 Comments on (easy) usability
@@ -31,11 +29,11 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/oclc2.php
 
--   **OSI Page:** https://opensource.org/licenses/OCLC-2.0
-
 -   **SPDX:** http://spdx.org/licenses/OCLC-2.0.json
 
 -   http://www.oclc.org/research/activities/software/license/v2final.htm
+
+-   https://opensource.org/licenses/OCLC-2.0
 
 -   http://www.opensource.org/licenses/OCLC-2.0
 
@@ -244,9 +242,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oclc-2.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -258,7 +253,6 @@ Raw Data
             "OCLC-2.0",
             "OCLC Research Public License 2.0",
             "scancode://oclc-2.0",
-            "The OCLC Research Public License, Version 2.0",
             "oclc2"
         ],
         "__impliedId": "OCLC-2.0",
@@ -424,50 +418,6 @@ Raw Data
                         "OCLC-2.0"
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/OCLC-2.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "OCLC-2.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The OCLC Research Public License, Version 2.0",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "OCLC-2.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/OCLC-2.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "OCLC-2.0",
-                        "The OCLC Research Public License, Version 2.0",
-                        "OCLC-2.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/OCLC-2.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -512,10 +462,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/OCLC-2.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/OCLC-2.0"
             ]
         ]
     }

@@ -4,8 +4,7 @@
         "RealNetworks Public Source License v1.0",
         "scancode://rpsl-1.0",
         "RealNetworks Public Source License 1.0",
-        "RealNetworks Public Source License V1.0",
-        "RealNetworks Public Source License, Version 1.0"
+        "RealNetworks Public Source License V1.0"
     ],
     "__impliedId": "RPSL-1.0",
     "__isFsfFree": true,
@@ -268,50 +267,6 @@
                 ]
             },
             "CopyleftKind": "SaaSCopyleft"
-        },
-        "OpenSourceInitiative": {
-            "text": [
-                {
-                    "url": "https://opensource.org/licenses/RPSL-1.0",
-                    "title": "HTML",
-                    "media_type": "text/html"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "RPSL-1.0",
-                    "scheme": "SPDX"
-                }
-            ],
-            "superseded_by": null,
-            "_sourceURL": "https://opensource.org/licenses/",
-            "name": "RealNetworks Public Source License, Version 1.0",
-            "other_names": [],
-            "keywords": [
-                "discouraged",
-                "non-reusable",
-                "osi-approved"
-            ],
-            "id": "RPSL-1.0",
-            "links": [
-                {
-                    "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/RPSL-1.0"
-                }
-            ],
-            "_implications": {
-                "__impliedNames": [
-                    "RPSL-1.0",
-                    "RealNetworks Public Source License, Version 1.0",
-                    "RPSL-1.0"
-                ],
-                "__impliedURLs": [
-                    [
-                        "OSI Page",
-                        "https://opensource.org/licenses/RPSL-1.0"
-                    ]
-                ]
-            }
         }
     },
     "__impliedJudgement": [
@@ -378,10 +333,6 @@
         [
             null,
             "http://www.opensource.org/licenses/RPSL-1.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/RPSL-1.0"
         ]
     ]
 }

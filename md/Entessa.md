@@ -9,9 +9,9 @@ Entessa Public License v1.0 (Entessa)
 
 -   `Entessa 1.0`
 
--   `Entessa Public License`
-
 -   `Entessa Public License 1.0`
+
+-   `Entessa Public License`
 
 Comments on (easy) usability
 ----------------------------
@@ -38,11 +38,11 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/entessa.php
 
--   **OSI Page:** https://opensource.org/licenses/Entessa
-
 -   **SPDX:** http://spdx.org/licenses/Entessa.json
 
 -   **SPDX:** https://spdx.org/licenses/Entessa.html
+
+-   https://opensource.org/licenses/Entessa
 
 -   http://sourceforge.net/softwaremap/?&fq\[\]=trove%3A397
 
@@ -116,9 +116,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/entessa-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Entessa.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -134,8 +131,8 @@ Raw Data
             "Entessa Public License v1.0",
             "scancode://entessa-1.0",
             "Entessa 1.0",
-            "Entessa Public License",
-            "Entessa Public License 1.0"
+            "Entessa Public License 1.0",
+            "Entessa Public License"
         ],
         "__impliedId": "Entessa",
         "__impliedComments": [
@@ -329,50 +326,6 @@ Raw Data
                     ]
                 }
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Entessa",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Entessa",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Entessa Public License",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "Entessa",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Entessa"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Entessa",
-                        "Entessa Public License",
-                        "Entessa"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Entessa"
-                        ]
-                    ]
-                }
-            },
             "finos/OSLC-handbook": {
                 "terms": [
                     {
@@ -495,10 +448,6 @@ Raw Data
             [
                 null,
                 "http://sourceforge.net/softwaremap/?&fq[]=trove%3A397"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Entessa"
             ]
         ]
     }

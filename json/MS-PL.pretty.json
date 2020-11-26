@@ -4,7 +4,6 @@
         "Microsoft Public License",
         "scancode://ms-pl",
         "ms-pl",
-        "Microsoft Public License (MS-PL)",
         "Ms-PL"
     ],
     "__impliedId": "MS-PL",
@@ -206,48 +205,6 @@
                     [
                         "SPDX",
                         "https://spdx.org/licenses/MS-PL.html"
-                    ]
-                ]
-            }
-        },
-        "OpenSourceInitiative": {
-            "text": [
-                {
-                    "url": "https://opensource.org/licenses/MS-PL",
-                    "title": "HTML",
-                    "media_type": "text/html"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "MS-PL",
-                    "scheme": "SPDX"
-                }
-            ],
-            "superseded_by": null,
-            "_sourceURL": "https://opensource.org/licenses/",
-            "name": "Microsoft Public License (MS-PL)",
-            "other_names": [],
-            "keywords": [
-                "osi-approved"
-            ],
-            "id": "MS-PL",
-            "links": [
-                {
-                    "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/MS-PL"
-                }
-            ],
-            "_implications": {
-                "__impliedNames": [
-                    "MS-PL",
-                    "Microsoft Public License (MS-PL)",
-                    "MS-PL"
-                ],
-                "__impliedURLs": [
-                    [
-                        "OSI Page",
-                        "https://opensource.org/licenses/MS-PL"
                     ]
                 ]
             }
@@ -570,10 +527,6 @@
         [
             null,
             "http://www.opensource.org/licenses/MS-PL"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/MS-PL"
         ]
     ]
 }

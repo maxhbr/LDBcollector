@@ -9,10 +9,6 @@ Sun Industry Standards Source License v1.1 (SISSL)
 
 -   `Sun Industry Standards Source License 1.1`
 
--   `Sun Industry Standards Source License`
-
--   `License :: OSI Approved :: Sun Industry Standards Source License (SISSL)`
-
 -   `sun-issl`
 
 Comments on (easy) usability
@@ -40,9 +36,9 @@ URLs
 
 -   **Homepage:** http://www.openoffice.org/licenses/sissl\_license.html
 
--   **OSI Page:** https://opensource.org/licenses/SISSL
-
 -   **SPDX:** http://spdx.org/licenses/SISSL.json
+
+-   https://opensource.org/licenses/SISSL
 
 Text
 ----
@@ -363,9 +359,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-sissl-1.1.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -382,8 +375,6 @@ Raw Data
             "Sun Industry Standards Source License v1.1",
             "scancode://sun-sissl-1.1",
             "Sun Industry Standards Source License 1.1",
-            "Sun Industry Standards Source License",
-            "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
             "sun-issl"
         ],
         "__impliedId": "SISSL",
@@ -503,55 +494,6 @@ Raw Data
                     ]
                 }
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/SISSL",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "SISSL",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Sun Industry Standards Source License",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "retired",
-                    "osi-approved"
-                ],
-                "id": "SISSL",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/SISSL"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "SISSL",
-                        "Sun Industry Standards Source License",
-                        "SISSL",
-                        "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/SISSL"
-                        ]
-                    ]
-                }
-            },
             "Google OSS Policy": {
                 "rating": "CANNOT_BE_USED",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -611,10 +553,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/SISSL"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/SISSL"
             ]
         ]
     }

@@ -9,12 +9,6 @@ Zope Public License 2.0 (ZPL-2.0)
 
 -   `ZPL 2.0`
 
--   `The Zope Public License, Version 2.0`
-
--   `Zope-2.0`
-
--   `License :: OSI Approved :: Zope Public License`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -42,13 +36,13 @@ URLs
 
 -   **Homepage:** http://www.zope.org/Resources/License/
 
--   **OSI Page:** https://opensource.org/licenses/ZPL-2.0
-
 -   **SPDX:** http://spdx.org/licenses/ZPL-2.0.json
 
 -   **SPDX:** https://spdx.org/licenses/ZPL-2.0.html
 
 -   http://old.zope.org/Resources/License/ZPL-2.0
+
+-   https://opensource.org/licenses/ZPL-2.0
 
 -   http://www.zope.com/Marks
 
@@ -118,9 +112,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -136,10 +127,7 @@ Raw Data
             "ZPL-2.0",
             "Zope Public License 2.0",
             "scancode://zpl-2.0",
-            "ZPL 2.0",
-            "The Zope Public License, Version 2.0",
-            "Zope-2.0",
-            "License :: OSI Approved :: Zope Public License"
+            "ZPL 2.0"
         ],
         "__impliedId": "ZPL-2.0",
         "__impliedComments": [
@@ -339,60 +327,6 @@ Raw Data
                     ]
                 }
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/ZPL-2.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Zope-2.0",
-                        "scheme": "DEP5"
-                    },
-                    {
-                        "identifier": "ZPL-2.0",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Zope Public License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The Zope Public License, Version 2.0",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "ZPL-2.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/ZPL-2.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "ZPL-2.0",
-                        "The Zope Public License, Version 2.0",
-                        "Zope-2.0",
-                        "ZPL-2.0",
-                        "License :: OSI Approved :: Zope Public License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/ZPL-2.0"
-                        ]
-                    ]
-                }
-            },
             "Google OSS Policy": {
                 "rating": "NOTICE",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -488,10 +422,6 @@ Raw Data
             [
                 null,
                 "http://www.zope.com/Marks"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/ZPL-2.0"
             ]
         ]
     }

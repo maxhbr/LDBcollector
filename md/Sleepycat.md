@@ -11,10 +11,6 @@ Sleepycat License (Sleepycat)
 
 -   `scancode://sleepycat`
 
--   `The Sleepycat License`
-
--   `License :: OSI Approved :: Sleepycat License`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -45,9 +41,9 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/sleepycat.html
 
--   **OSI Page:** https://opensource.org/licenses/Sleepycat
-
 -   **SPDX:** http://spdx.org/licenses/Sleepycat.json
+
+-   https://opensource.org/licenses/Sleepycat
 
 -   https://spdx.org/licenses/Sleepycat.html
 
@@ -111,9 +107,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -133,9 +126,7 @@ Raw Data
             "Berkeley Database License",
             "Sleepycat Software Product License",
             "Sleepycat License",
-            "scancode://sleepycat",
-            "The Sleepycat License",
-            "License :: OSI Approved :: Sleepycat License"
+            "scancode://sleepycat"
         ],
         "__impliedId": "Sleepycat",
         "__impliedAmbiguousNames": [
@@ -361,55 +352,6 @@ Raw Data
                 },
                 "CopyleftKind": "StrongCopyleft"
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Sleepycat",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Sleepycat",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Sleepycat License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The Sleepycat License",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "Sleepycat",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Sleepycat"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Sleepycat",
-                        "The Sleepycat License",
-                        "Sleepycat",
-                        "License :: OSI Approved :: Sleepycat License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Sleepycat"
-                        ]
-                    ]
-                }
-            },
             "Wikipedia": {
                 "Distribution": {
                     "value": "With restrictions",
@@ -531,10 +473,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/sleepycat.php"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Sleepycat"
             ]
         ]
     }

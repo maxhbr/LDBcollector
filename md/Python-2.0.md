@@ -7,10 +7,6 @@ Python License 2.0 (Python-2.0)
 
 -   `scancode://python`
 
--   `Python License, Version 2.0`
-
--   `License :: OSI Approved :: Python Software Foundation License`
-
 -   `Python Software Foundation License 2`
 
 Comments on (easy) usability
@@ -38,11 +34,11 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/Python-2.0
 
--   **OSI Page:** https://opensource.org/licenses/Python-2.0
-
 -   **SPDX:** http://spdx.org/licenses/Python-2.0.json
 
 -   **SPDX:** https://spdx.org/licenses/Python-2.0.html
+
+-   https://opensource.org/licenses/Python-2.0
 
 -   http://opensource.org/licenses/PythonSoftFoundation.php
 
@@ -264,9 +260,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/python.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Python-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -288,8 +281,6 @@ Raw Data
             "Python-2.0",
             "Python License 2.0",
             "scancode://python",
-            "Python License, Version 2.0",
-            "License :: OSI Approved :: Python Software Foundation License",
             "Python Software Foundation License 2"
         ],
         "__impliedId": "Python-2.0",
@@ -465,60 +456,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/Python-2.0.html"
-                        ]
-                    ]
-                }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Python-2.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Python-2.0",
-                        "scheme": "DEP5"
-                    },
-                    {
-                        "identifier": "Python-2.0",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Python Software Foundation License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Python License, Version 2.0",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "Python-2.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Python-2.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Python-2.0",
-                        "Python License, Version 2.0",
-                        "Python-2.0",
-                        "Python-2.0",
-                        "License :: OSI Approved :: Python Software Foundation License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Python-2.0"
                         ]
                     ]
                 }
@@ -701,10 +638,6 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/licenses/license-list.html#PythonOld"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Python-2.0"
             ]
         ]
     }

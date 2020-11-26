@@ -11,10 +11,6 @@ zlib License (Zlib)
 
 -   `zlib/libpng License`
 
--   `The zlib/libpng License (Zlib)`
-
--   `License :: OSI Approved :: zlib/libpng License`
-
 -   `zlib/libpng license`
 
 -   `zlib-license`
@@ -77,13 +73,13 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/zlib-license.php
 
--   **OSI Page:** https://opensource.org/licenses/Zlib
-
 -   **SPDX:** http://spdx.org/licenses/Zlib.json
 
 -   **SPDX:** https://spdx.org/licenses/Zlib.html
 
 -   http://www.zlib.net/zlib\_license.html
+
+-   https://opensource.org/licenses/Zlib
 
 -   http://www.opensource.org/licenses/Zlib
 
@@ -137,9 +133,6 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/zlib.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -169,8 +162,6 @@ Raw Data
             "ZLIB License",
             "zlib",
             "zlib/libpng License",
-            "The zlib/libpng License (Zlib)",
-            "License :: OSI Approved :: zlib/libpng License",
             "zlib/libpng license",
             "zlib-license"
         ],
@@ -443,58 +434,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/Zlib.html"
-                        ]
-                    ]
-                }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Zlib",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Zlib",
-                        "scheme": "DEP5"
-                    },
-                    {
-                        "identifier": "Zlib",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: zlib/libpng License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The zlib/libpng License (Zlib)",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved"
-                ],
-                "id": "Zlib",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Zlib"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Zlib",
-                        "The zlib/libpng License (Zlib)",
-                        "Zlib",
-                        "Zlib",
-                        "License :: OSI Approved :: zlib/libpng License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Zlib"
                         ]
                     ]
                 }
@@ -789,10 +728,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/Zlib"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Zlib"
             ]
         ]
     }

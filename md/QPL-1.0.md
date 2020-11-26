@@ -9,10 +9,6 @@ Q Public License 1.0 (QPL-1.0)
 
 -   `QPL 1.0`
 
--   `The Q Public License Version (QPL-1.0)`
-
--   `License :: OSI Approved :: Qt Public License (QPL)`
-
 -   `Q Public License`
 
 Comments on (easy) usability
@@ -60,11 +56,11 @@ URLs
 
 -   **Homepage:** http://doc.trolltech.com/4.0/qpl.html
 
--   **OSI Page:** https://opensource.org/licenses/QPL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/QPL-1.0.json
 
 -   http://doc.qt.nokia.com/3.3/license.html
+
+-   https://opensource.org/licenses/QPL-1.0
 
 -   https://spdx.org/licenses/QPL-1.0.html
 
@@ -143,9 +139,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -169,8 +162,6 @@ Raw Data
             "Q Public License 1.0",
             "scancode://qpl-1.0",
             "QPL 1.0",
-            "The Q Public License Version (QPL-1.0)",
-            "License :: OSI Approved :: Qt Public License (QPL)",
             "Q Public License"
         ],
         "__impliedId": "QPL-1.0",
@@ -408,58 +399,6 @@ Raw Data
                 },
                 "CopyleftKind": "StrongCopyleft"
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/QPL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "QPL-1.0",
-                        "scheme": "DEP5"
-                    },
-                    {
-                        "identifier": "QPL-1.0",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Qt Public License (QPL)",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The Q Public License Version (QPL-1.0)",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved"
-                ],
-                "id": "QPL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/QPL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "QPL-1.0",
-                        "The Q Public License Version (QPL-1.0)",
-                        "QPL-1.0",
-                        "QPL-1.0",
-                        "License :: OSI Approved :: Qt Public License (QPL)"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/QPL-1.0"
-                        ]
-                    ]
-                }
-            },
             "Wikipedia": {
                 "Linking": {
                     "value": "Limited",
@@ -568,10 +507,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/QPL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/QPL-1.0"
             ]
         ]
     }

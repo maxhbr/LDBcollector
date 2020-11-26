@@ -9,8 +9,6 @@ Frameworx Open License 1.0 (Frameworx-1.0)
 
 -   `Frameworx 1.0`
 
--   `Frameworx License, Version 1.0`
-
 -   `Frameworx License 1.0`
 
 Comments on (easy) usability
@@ -33,9 +31,9 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/frameworx.php
 
--   **OSI Page:** https://opensource.org/licenses/Frameworx-1.0
-
 -   **SPDX:** http://spdx.org/licenses/Frameworx-1.0.json
+
+-   https://opensource.org/licenses/Frameworx-1.0
 
 -   http://www.opensource.org/licenses/Frameworx-1.0
 
@@ -123,9 +121,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/frameworx-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -138,7 +133,6 @@ Raw Data
             "Frameworx Open License 1.0",
             "scancode://frameworx-1.0",
             "Frameworx 1.0",
-            "Frameworx License, Version 1.0",
             "Frameworx License 1.0"
         ],
         "__impliedId": "Frameworx-1.0",
@@ -291,50 +285,6 @@ Raw Data
                         "Frameworx-1.0"
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Frameworx-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Frameworx-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Frameworx License, Version 1.0",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "Frameworx-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Frameworx-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Frameworx-1.0",
-                        "Frameworx License, Version 1.0",
-                        "Frameworx-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Frameworx-1.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -375,10 +325,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/Frameworx-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Frameworx-1.0"
             ]
         ]
     }

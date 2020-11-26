@@ -23,10 +23,6 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 -   `GNU AGPLv3`
 
--   `GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)`
-
--   `License :: OSI Approved :: GNU Affero General Public License v3`
-
 -   `GNU Affero General Public License v3`
 
 -   `agpl-v3`
@@ -109,11 +105,11 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/agpl-v3.html
 
--   **OSI Page:** https://opensource.org/licenses/AGPL-3.0
-
 -   **SPDX:** http://spdx.org/licenses/AGPL-3.0-only.json
 
 -   https://www.gnu.org/licenses/agpl.txt
+
+-   https://opensource.org/licenses/AGPL-3.0
 
 -   https://spdx.org/licenses/AGPL-3.0-only.html
 
@@ -815,9 +811,6 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -848,8 +841,6 @@ Raw Data
             "AGPL 3.0",
             "agpl-3.0",
             "GNU AGPLv3",
-            "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
-            "License :: OSI Approved :: GNU Affero General Public License v3",
             "GNU Affero General Public License v3",
             "agpl-v3"
         ],
@@ -1153,53 +1144,6 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "SaaSCopyleft"
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/AGPL-3.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "AGPL-3.0",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: GNU Affero General Public License v3",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved"
-                ],
-                "id": "AGPL-3.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/AGPL-3.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "AGPL-3.0",
-                        "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
-                        "AGPL-3.0",
-                        "License :: OSI Approved :: GNU Affero General Public License v3"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/AGPL-3.0"
-                        ]
-                    ]
-                }
             },
             "choosealicense.com": {
                 "limitations": [
@@ -1581,10 +1525,6 @@ Raw Data
             [
                 null,
                 "https://opensource.google.com/docs/using/agpl-policy/"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/AGPL-3.0"
             ]
         ]
     }

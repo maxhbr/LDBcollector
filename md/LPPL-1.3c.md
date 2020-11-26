@@ -9,8 +9,6 @@ LaTeX Project Public License v1.3c (LPPL-1.3c)
 
 -   `LPPL 1.3c`
 
--   `LaTeX Project Public License, Version 1.3c`
-
 -   `LaTeX Project Public License 1.3c`
 
 Description
@@ -55,11 +53,11 @@ URLs
 
 -   **Homepage:** http://www.latex-project.org/lppl/lppl-1-3c.txt
 
--   **OSI Page:** https://opensource.org/licenses/LPPL-1.3c
-
 -   **SPDX:** http://spdx.org/licenses/LPPL-1.3c.json
 
 -   **SPDX:** https://spdx.org/licenses/LPPL-1.3c.html
+
+-   https://opensource.org/licenses/LPPL-1.3c
 
 -   http://www.opensource.org/licenses/LPPL-1.3c
 
@@ -505,9 +503,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lppl-1.3c.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -521,7 +516,6 @@ Raw Data
             "scancode://lppl-1.3c",
             "LPPL 1.3c",
             "lppl-1.3c",
-            "LaTeX Project Public License, Version 1.3c",
             "LaTeX Project Public License 1.3c"
         ],
         "__impliedId": "LPPL-1.3c",
@@ -712,55 +706,6 @@ Raw Data
                     ]
                 }
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/LPPL-1.3c",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "LPPL-1.3c",
-                        "scheme": "DEP5"
-                    },
-                    {
-                        "identifier": "LPPL-1.3c",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "LaTeX Project Public License, Version 1.3c",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "LPPL-1.3c",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/LPPL-1.3c"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "LPPL-1.3c",
-                        "LaTeX Project Public License, Version 1.3c",
-                        "LPPL-1.3c",
-                        "LPPL-1.3c"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/LPPL-1.3c"
-                        ]
-                    ]
-                }
-            },
             "choosealicense.com": {
                 "limitations": [
                     "liability",
@@ -936,10 +881,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/LPPL-1.3c"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/LPPL-1.3c"
             ]
         ]
     }

@@ -32,9 +32,9 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://www.multicians.org/
 * *OSI Page:* http://opensource.org/licenses/multics.txt
-* *OSI Page:* https://opensource.org/licenses/Multics
 * *SPDX:* http://spdx.org/licenses/Multics.json
 * *SPDX:* https://spdx.org/licenses/Multics.html
+* https://opensource.org/licenses/Multics
 * http://www.opensource.org/licenses/Multics
 
 === Text
@@ -69,8 +69,6 @@ repository] is generated)
 (CC0-1.0)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/multics.yml[Scancode]
 (CC0-1.0)
-* https://opensource.org/licenses/[OpenSourceInitiative]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -270,50 +268,6 @@ Knowledge International]
                     ]
                 ]
             }
-        },
-        "OpenSourceInitiative": {
-            "text": [
-                {
-                    "url": "https://opensource.org/licenses/Multics",
-                    "title": "HTML",
-                    "media_type": "text/html"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "Multics",
-                    "scheme": "SPDX"
-                }
-            ],
-            "superseded_by": null,
-            "_sourceURL": "https://opensource.org/licenses/",
-            "name": "Multics License",
-            "other_names": [],
-            "keywords": [
-                "discouraged",
-                "non-reusable",
-                "osi-approved"
-            ],
-            "id": "Multics",
-            "links": [
-                {
-                    "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/Multics"
-                }
-            ],
-            "_implications": {
-                "__impliedNames": [
-                    "Multics",
-                    "Multics License",
-                    "Multics"
-                ],
-                "__impliedURLs": [
-                    [
-                        "OSI Page",
-                        "https://opensource.org/licenses/Multics"
-                    ]
-                ]
-            }
         }
     },
     "__impliedJudgement": [
@@ -369,10 +323,6 @@ Knowledge International]
         [
             null,
             "http://www.opensource.org/licenses/Multics"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Multics"
         ]
     ]
 }
