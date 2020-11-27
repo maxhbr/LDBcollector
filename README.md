@@ -172,6 +172,12 @@ The corresponding data is hardcoded in source code, right now.
 | Kind of update: | ? |
 | ----------------- | --- |
 
+### Hitachi open-license
+
+https://github.com/Hitachi/open-license
+
+**licensed under:** CDLA-Permissive-1.0
+
 ## Other possible Sources for license Metadata
   - ORT License highlighting
   - ...

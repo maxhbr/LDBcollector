@@ -10,7 +10,7 @@ extra-source-files:
 - README.md
 - ChangeLog.md
 
-synopsis:            A smal tool to collect license metadata, process it and render it in different ways
+synopsis:            A small tool to collect license metadata, process it and render it in different ways
 category:            Development
 
 description:         Please see the README on GitHub at <https://github.com/maxhbr/LDBcollector#readme>
@@ -19,6 +19,7 @@ dependencies:
 - base >= 4.7 && < 5
 - aeson
 - aeson-pretty
+- attoparsec
 - bytestring
 - cassava
 - containers

@@ -25,6 +25,7 @@ configuration = let
     , fedoraLFC
     , osiLFC
     , oslcLFC
+    , olLFC
     , wikipediaLFC
     , googleLFC
     , okfnLFC
