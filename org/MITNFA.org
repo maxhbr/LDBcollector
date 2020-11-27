@@ -19,11 +19,6 @@
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
-- *↑*"This software Licenses is OK for Fedora" (source:
-  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]]
-  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
-
 ** General Comments
 
 - "Per Fedora, this license is based on the MIT license, but contains an
@@ -40,8 +35,6 @@
 - *SPDX:* http://spdx.org/licenses/MITNFA.json
 
 - *SPDX:* https://spdx.org/licenses/MITNFA.html
-
-- *open-license:* http://open-license.hitachi.com/licenses/698
 
 ** Text
 
@@ -92,13 +85,6 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml][Scancode]]
   (CC0-1.0)
 
-- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]]
-  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
-
-- [[https://github.com/Hitachi/open-license][Hitachi open-license]]
-  (CDLA-Permissive-1.0)
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -107,11 +93,9 @@
           "MITNFA",
           "MIT +no-false-attribs license",
           "scancode://mit-no-false-attribs",
-          "MIT no false attribution License",
-          "MIT +no-false-attribs License"
+          "MIT no false attribution License"
       ],
       "__impliedId": "MITNFA",
-      "__isFsfFree": true,
       "__impliedComments": [
           [
               "Scancode",
@@ -149,32 +133,6 @@
                   ]
               },
               "spdxLicenseId": "MITNFA"
-          },
-          "Fedora Project Wiki": {
-              "GPLv2 Compat?": "Yes",
-              "rating": "Good",
-              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MITNFA",
-              "GPLv3 Compat?": "Yes",
-              "Short Name": "MITNFA",
-              "licenseType": "license",
-              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-              "Full Name": "MIT +no-false-attribs license",
-              "FSF Free?": "Yes",
-              "_implications": {
-                  "__impliedNames": [
-                      "MIT +no-false-attribs license"
-                  ],
-                  "__isFsfFree": true,
-                  "__impliedJudgement": [
-                      [
-                          "Fedora Project Wiki",
-                          {
-                              "tag": "PositiveJudgement",
-                              "contents": "This software Licenses is OK for Fedora"
-                          }
-                      ]
-                  ]
-              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -217,219 +175,6 @@
                       [
                           "Homepage",
                           "https://fedoraproject.org/wiki/Licensing/MITNFA"
-                      ]
-                  ]
-              }
-          },
-          "Hitachi open-license": {
-              "_license_uri": "http://open-license.hitachi.com/licenses/698",
-              "_license_permissions": [
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/1",
-                              "_action_id": "actions/1",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/3",
-                              "_action_id": "actions/3",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/4",
-                              "_action_id": "actions/4",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/5",
-                              "_action_id": "actions/5",
-                              "_action_name": "åå¾ãããªãã¸ã§ã¯ãã³ã¼ããä½¿ç¨ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/7",
-                              "_action_id": "actions/7",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããªãã¸ã§ã¯ãã³ã¼ããä½¿ç¨ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ããå®è¡å½¢å¼ããã®ã¾ã¾ä½¿ã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/84",
-                              "_action_id": "actions/84",
-                              "_action_name": "åå¾ããå®è¡å½¢å¼ãä½¿ç¨ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/87",
-                              "_action_id": "actions/87",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæããå®è¡å½¢å¼ãä½¿ç¨ãã"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nã½ããã¦ã§ã¢ãæä¾ããç¸æã«ãåãæ¨©å©ãè¨±å¯ãããã¨ã«ãªãã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/9",
-                              "_action_id": "actions/9",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/10",
-                              "_action_id": "actions/10",
-                              "_action_name": "åå¾ãããªãã¸ã§ã¯ãã³ã¼ããé å¸ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/19",
-                              "_action_id": "actions/19",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/22",
-                              "_action_id": "actions/22",
-                              "_action_name": "åå¾ãããªãã¸ã§ã¯ãã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/35",
-                              "_action_id": "actions/35",
-                              "_action_name": "ã½ããã¦ã§ã¢ãè²©å£²ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ããå®è¡å½¢å¼ããã®ã¾ã¾åé å¸ãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/86",
-                              "_action_id": "actions/86",
-                              "_action_name": "åå¾ããå®è¡å½¢å¼ãé å¸ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/106",
-                              "_action_id": "actions/106",
-                              "_action_name": "åå¾ããå®è¡å½¢å¼ããµãã©ã¤ã»ã³ã¹ãã"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nã½ããã¦ã§ã¢ãæä¾ããç¸æã«ãåãæ¨©å©ãè¨±å¯ãããã¨ã«ãªãã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/12",
-                              "_action_id": "actions/12",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/13",
-                              "_action_id": "actions/13",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããªãã¸ã§ã¯ãã³ã¼ããé å¸ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/25",
-                              "_action_id": "actions/25",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/28",
-                              "_action_id": "actions/28",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããªãã¸ã§ã¯ãã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/89",
-                              "_action_id": "actions/89",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæããå®è¡å½¢å¼ãé å¸ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/109",
-                              "_action_id": "actions/109",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæããå®è¡å½¢å¼ããµãã©ã¤ã»ã³ã¹ãã"
-                          }
-                      ]
-                  }
-              ],
-              "_license_id": "licenses/698",
-              "_sourceURL": "http://open-license.hitachi.com/licenses/698",
-              "_license_name": "MIT +no-false-attribs License",
-              "_license_summary": "",
-              "_license_description": "",
-              "_license_baseUri": "http://open-license.hitachi.com/",
-              "_license_schemaVersion": "0.1",
-              "_implications": {
-                  "__impliedNames": [
-                      "MIT +no-false-attribs License"
-                  ],
-                  "__impliedURLs": [
-                      [
-                          "open-license",
-                          "http://open-license.hitachi.com/licenses/698"
                       ]
                   ]
               }
@@ -478,13 +223,6 @@
                   "tag": "PositiveJudgement",
                   "contents": "Rating is: Bronze"
               }
-          ],
-          [
-              "Fedora Project Wiki",
-              {
-                  "tag": "PositiveJudgement",
-                  "contents": "This software Licenses is OK for Fedora"
-              }
           ]
       ],
       "__impliedCopyleft": [
@@ -516,10 +254,6 @@
           [
               "Homepage",
               "https://fedoraproject.org/wiki/Licensing/MITNFA"
-          ],
-          [
-              "open-license",
-              "http://open-license.hitachi.com/licenses/698"
           ]
       ]
   }

@@ -13,17 +13,12 @@
 
 * `+scancode://dom4j+`
 * `+Dom4j License+`
-* `+DOM4J License+`
 
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
-* **↑**``This software Licenses is OK for Fedora'' (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -43,7 +38,6 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://www.dom4j.org/
 * *SPDX:* http://spdx.org/licenses/Plexus.json
 * *SPDX:* https://spdx.org/licenses/Plexus.html
-* *open-license:* http://open-license.hitachi.com/licenses/288
 * https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License
 * http://classworlds.codehaus.org/license.html
 * http://www.castor.org/license.txt
@@ -102,13 +96,8 @@ repository] is generated)
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml[Scancode]
 (CC0-1.0)
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
-* https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -118,11 +107,9 @@ Project Wiki]
         "Plexus",
         "Plexus Classworlds License",
         "scancode://dom4j",
-        "Dom4j License",
-        "DOM4J License"
+        "Dom4j License"
     ],
     "__impliedId": "Plexus",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -160,32 +147,6 @@ Project Wiki]
                 ]
             },
             "spdxLicenseId": "Plexus"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "Plexus",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Plexus Classworlds License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Plexus Classworlds License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -259,167 +220,6 @@ Project Wiki]
                     [
                         null,
                         "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
-                    ]
-                ]
-            }
-        },
-        "Hitachi open-license": {
-            "_license_uri": "http://open-license.hitachi.com/licenses/288",
-            "_license_permissions": [
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
-                            "_action_uri": "http://open-license.hitachi.com/actions/1",
-                            "_action_id": "actions/1",
-                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/3",
-                            "_action_id": "actions/3",
-                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/4",
-                            "_action_id": "actions/4",
-                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "åå¾ãããã¤ããªããã®ã¾ã¾ä½¿ã",
-                            "_action_uri": "http://open-license.hitachi.com/actions/6",
-                            "_action_id": "actions/6",
-                            "_action_name": "åå¾ãããã¤ããªãä½¿ç¨ãã"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/8",
-                            "_action_id": "actions/8",
-                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãä½¿ç¨ãã"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
-                            "_action_uri": "http://open-license.hitachi.com/actions/9",
-                            "_action_id": "actions/9",
-                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/12",
-                            "_action_id": "actions/12",
-                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "åå¾ãããã¤ããªããã®ã¾ã¾åé å¸ãã",
-                            "_action_uri": "http://open-license.hitachi.com/actions/11",
-                            "_action_id": "actions/11",
-                            "_action_name": "åå¾ãããã¤ããªãé å¸ãã"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/14",
-                            "_action_id": "actions/14",
-                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãé å¸ãã"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "\"DOM4J\"ã¨ããåç§°ãä½¿ãå ´åã\r\ndom4j-info@metastuff.comã«é£çµ¡ãã¦ãMetaStuff, Ltd.ã®è¨±å¯ãåãã",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/29",
-                            "_action_id": "actions/29",
-                            "_action_name": "æ´¾çããè£½åã®æ¨å¥¨ãè²©å£²ä¿é²ã«åç§°ãä½¿ã"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "\"DOM4J\"ã¨ããåç§°ãä½¿ãå ´åã\r\nMetaStuff, Ltd.ã®è¨±å¯ãåãã\r\n\"DOM4J\"ã¯ãMetaStuff, Ltd.ã®ç»é²åæ¨ã§ããã",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/30",
-                            "_action_id": "actions/30",
-                            "_action_name": "æ´¾çããè£½åã®è£½ååã¾ãã¯è£½ååã®ä¸é¨ã«åç§°ãä½¿ã"
-                        }
-                    ]
-                }
-            ],
-            "_license_id": "licenses/288",
-            "_sourceURL": "http://open-license.hitachi.com/licenses/288",
-            "_license_name": "DOM4J License",
-            "_license_summary": "",
-            "_license_description": "\"DOM4J\"ã¯ãMetaStuff, Ltd.ã®ç»é²åæ¨ã§ããã\r\n\r\næ­£å½ãªã¯ã¬ã¸ããã¯\"DOM4J Project http://www.dom4j.org/\"ã«ããã\r\n",
-            "_license_baseUri": "http://open-license.hitachi.com/",
-            "_license_schemaVersion": "0.1",
-            "_implications": {
-                "__impliedNames": [
-                    "DOM4J License"
-                ],
-                "__impliedURLs": [
-                    [
-                        "open-license",
-                        "http://open-license.hitachi.com/licenses/288"
                     ]
                 ]
             }
@@ -520,13 +320,6 @@ Project Wiki]
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
             }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
         ]
     ],
     "__impliedCopyleft": [
@@ -578,10 +371,6 @@ Project Wiki]
         [
             null,
             "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/288"
         ]
     ]
 }

@@ -36,8 +36,6 @@
 
 - *SPDX:* https://spdx.org/licenses/FTL.html
 
-- *open-license:* http://open-license.hitachi.com/licenses/763
-
 - http://freetype.fis.uniroma2.it/FTL.TXT
 
 - http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
@@ -234,9 +232,6 @@
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
-- [[https://github.com/Hitachi/open-license][Hitachi open-license]]
-  (CDLA-Permissive-1.0)
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -245,8 +240,7 @@
           "FTL",
           "Freetype Project License",
           "scancode://freetype",
-          "FreeType Project License",
-          "FreeType Project LICENSE"
+          "FreeType Project License"
       ],
       "__impliedId": "FTL",
       "__impliedComments": [
@@ -354,275 +348,6 @@
                       [
                           null,
                           "http://www.freetype.org/"
-                      ]
-                  ]
-              }
-          },
-          "Hitachi open-license": {
-              "_license_uri": "http://open-license.hitachi.com/licenses/763",
-              "_license_permissions": [
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/1",
-                              "_action_id": "actions/1",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/4",
-                              "_action_id": "actions/4",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ãããã¤ããªããã®ã¾ã¾ä½¿ã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/6",
-                              "_action_id": "actions/6",
-                              "_action_name": "åå¾ãããã¤ããªãä½¿ç¨ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/8",
-                              "_action_id": "actions/8",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãä½¿ç¨ãã"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/19",
-                              "_action_id": "actions/19",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/25",
-                              "_action_id": "actions/25",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/33",
-                              "_action_id": "actions/33",
-                              "_action_name": "åå¾ãããã¤ããªããµãã©ã¤ã»ã³ã¹ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/34",
-                              "_action_id": "actions/34",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªããµãã©ã¤ã»ã³ã¹ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/114",
-                              "_action_id": "actions/114",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããè¡¨ç¤ºãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/115",
-                              "_action_id": "actions/115",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããå®è¡ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/118",
-                              "_action_id": "actions/118",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããè¡¨ç¤ºãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/119",
-                              "_action_id": "actions/119",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããå®è¡ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/287",
-                              "_action_id": "actions/287",
-                              "_action_name": "åå¾ãããã¤ããªãè¡¨ç¤ºãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/288",
-                              "_action_id": "actions/288",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãè¡¨ç¤ºãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/289",
-                              "_action_id": "actions/289",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãå®è¡ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/290",
-                              "_action_id": "actions/290",
-                              "_action_name": "åå¾ãããã¤ããªãå®è¡ãã"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/9",
-                              "_action_id": "actions/9",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã \r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \" \r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/3",
-                              "_action_id": "actions/3",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/12",
-                              "_action_id": "actions/12",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâé¢é£ææ¸ã«FreeType web pageã¸ã®URL[http://www.freetype.org]ãå¥ãããã¨ãæ¨å¥¨ããã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "åå¾ãããã¤ããªããã®ã¾ã¾åé å¸ãã",
-                              "_action_uri": "http://open-license.hitachi.com/actions/11",
-                              "_action_id": "actions/11",
-                              "_action_name": "åå¾ãããã¤ããªãé å¸ãã"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/14",
-                              "_action_id": "actions/14",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãé å¸ãã"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâé å¸ç©ã«ä»å±ããè³æãåºåã«ãå½è©²ã½ããã¦ã§ã¢ãç¤ºã\"FreeType Project\"ã\"FreeType Engine\"ã\"FreeType library\"ã\"FreeType Distribution\"ã¨ãã£ããã¬ã¼ãºã1ã¤ä»¥ä¸ä½¿ããã¨ãæ¨å¥¨ããã",
-                      "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": []
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/291",
-                              "_action_id": "actions/291",
-                              "_action_name": "å®£ä¼ãåºåã«èä½èãã³ã³ããªãã¥ã¼ã¿ã®ååãä½¿ã"
-                          }
-                      ]
-                  }
-              ],
-              "_license_id": "licenses/763",
-              "_sourceURL": "http://open-license.hitachi.com/licenses/763",
-              "_license_name": "FreeType Project LICENSE",
-              "_license_summary": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]",
-              "_license_description": "â\"package\"ã\"FreeType Project\"ã\"FreeType archive\"ã¯ã\"FreeType Project\"ã¨ãã¦èä½è(David Turner, Robert Wilhelm, and Werner Lemberg)ãé å¸ããåãã®ã½ã¼ã¹ã³ã¼ãããã¤ããªãé¢é£ææ¸ã®å¨ã¦ãããã\r\n\r\nâãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã ",
-              "_license_baseUri": "http://open-license.hitachi.com/",
-              "_license_schemaVersion": "0.1",
-              "_implications": {
-                  "__impliedNames": [
-                      "FreeType Project LICENSE"
-                  ],
-                  "__impliedURLs": [
-                      [
-                          "open-license",
-                          "http://open-license.hitachi.com/licenses/763"
                       ]
                   ]
               }
@@ -751,10 +476,6 @@
           [
               null,
               "http://www.freetype.org/"
-          ],
-          [
-              "open-license",
-              "http://open-license.hitachi.com/licenses/763"
           ]
       ]
   }

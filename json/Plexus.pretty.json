@@ -3,11 +3,9 @@
         "Plexus",
         "Plexus Classworlds License",
         "scancode://dom4j",
-        "Dom4j License",
-        "DOM4J License"
+        "Dom4j License"
     ],
     "__impliedId": "Plexus",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -45,32 +43,6 @@
                 ]
             },
             "spdxLicenseId": "Plexus"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "Plexus",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Plexus Classworlds License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Plexus Classworlds License"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -144,167 +116,6 @@
                     [
                         null,
                         "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
-                    ]
-                ]
-            }
-        },
-        "Hitachi open-license": {
-            "_license_uri": "http://open-license.hitachi.com/licenses/288",
-            "_license_permissions": [
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "ソフトウェアの関連文書もソフトウェアと同様に扱う。",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "取得したコードをそのまま使う",
-                            "_action_uri": "http://open-license.hitachi.com/actions/1",
-                            "_action_id": "actions/1",
-                            "_action_name": "取得したソースコードを改変せずに使用する"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/3",
-                            "_action_id": "actions/3",
-                            "_action_name": "取得したソースコードを改変する"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/4",
-                            "_action_id": "actions/4",
-                            "_action_name": "改変したソースコードを使用する"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "取得したバイナリをそのまま使う",
-                            "_action_uri": "http://open-license.hitachi.com/actions/6",
-                            "_action_id": "actions/6",
-                            "_action_name": "取得したバイナリを使用する"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/8",
-                            "_action_id": "actions/8",
-                            "_action_name": "改変したソースコードから生成したバイナリを使用する"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "ソフトウェアの関連文書もソフトウェアと同様に扱う。",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "取得したコードをそのまま再頒布する",
-                            "_action_uri": "http://open-license.hitachi.com/actions/9",
-                            "_action_id": "actions/9",
-                            "_action_name": "取得したソースコードを改変せずに頒布する"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/12",
-                            "_action_id": "actions/12",
-                            "_action_name": "改変したソースコードを頒布する"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "ソフトウェアの関連文書もソフトウェアと同様に扱う。",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "取得したバイナリをそのまま再頒布する",
-                            "_action_uri": "http://open-license.hitachi.com/actions/11",
-                            "_action_id": "actions/11",
-                            "_action_name": "取得したバイナリを頒布する"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/14",
-                            "_action_id": "actions/14",
-                            "_action_name": "改変したソースコードから生成したバイナリを頒布する"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "\"DOM4J\"という名称を使う場合。\r\ndom4j-info@metastuff.comに連絡して、MetaStuff, Ltd.の許可を取る。",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/29",
-                            "_action_id": "actions/29",
-                            "_action_name": "派生した製品の推奨や販売促進に名称を使う"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "\"DOM4J\"という名称を使う場合。\r\nMetaStuff, Ltd.の許可を取る。\r\n\"DOM4J\"は、MetaStuff, Ltd.の登録商標である。",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/30",
-                            "_action_id": "actions/30",
-                            "_action_name": "派生した製品の製品名または製品名の一部に名称を使う"
-                        }
-                    ]
-                }
-            ],
-            "_license_id": "licenses/288",
-            "_sourceURL": "http://open-license.hitachi.com/licenses/288",
-            "_license_name": "DOM4J License",
-            "_license_summary": "",
-            "_license_description": "\"DOM4J\"は、MetaStuff, Ltd.の登録商標である。\r\n\r\n正当なクレジットは\"DOM4J Project http://www.dom4j.org/\"にある。\r\n",
-            "_license_baseUri": "http://open-license.hitachi.com/",
-            "_license_schemaVersion": "0.1",
-            "_implications": {
-                "__impliedNames": [
-                    "DOM4J License"
-                ],
-                "__impliedURLs": [
-                    [
-                        "open-license",
-                        "http://open-license.hitachi.com/licenses/288"
                     ]
                 ]
             }
@@ -405,13 +216,6 @@
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
             }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
         ]
     ],
     "__impliedCopyleft": [
@@ -463,10 +267,6 @@
         [
             null,
             "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/288"
         ]
     ]
 }
