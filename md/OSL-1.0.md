@@ -9,8 +9,6 @@ Open Software License 1.0 (OSL-1.0)
 
 -   `OSL 1.0`
 
--   `Open Software License, Version 1.0`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -50,9 +48,9 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/osl-1.0.txt
 
--   **OSI Page:** https://opensource.org/licenses/OSL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/OSL-1.0.json
+
+-   https://opensource.org/licenses/OSL-1.0
 
 -   https://spdx.org/licenses/OSL-1.0.html
 
@@ -243,9 +241,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -257,8 +252,7 @@ Raw Data
             "OSL-1.0",
             "Open Software License 1.0",
             "scancode://osl-1.0",
-            "OSL 1.0",
-            "Open Software License, Version 1.0"
+            "OSL 1.0"
         ],
         "__impliedId": "OSL-1.0",
         "__impliedAmbiguousNames": [
@@ -422,50 +416,6 @@ Raw Data
                 },
                 "CopyleftKind": "SaaSCopyleft"
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/OSL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "OSL-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": "OLS-3.0",
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Open Software License, Version 1.0",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "discouraged",
-                    "redundant"
-                ],
-                "id": "OSL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/OSL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "OSL-1.0",
-                        "Open Software License, Version 1.0",
-                        "OSL-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/OSL-1.0"
-                        ]
-                    ]
-                }
-            },
             "Google OSS Policy": {
                 "rating": "RESTRICTED",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -543,10 +493,6 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/licenses/license-list.html#OSL"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/OSL-1.0"
             ]
         ]
     }

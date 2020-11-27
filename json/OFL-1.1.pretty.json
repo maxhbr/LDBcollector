@@ -5,7 +5,6 @@
         "scancode://ofl-1.1",
         "OFL 1.1",
         "ofl-1.1",
-        "SIL Open Font License, Version 1.1",
         "Open Font License 1.1"
     ],
     "__impliedId": "OFL-1.1",
@@ -197,49 +196,6 @@
             "Comment": "The following restriction on distributions, which is part of OFL, has been widely accepted by open source projects when it is applied to fonts: 1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.",
             "LicenseId": "OFL-1.1"
         },
-        "OpenSourceInitiative": {
-            "text": [
-                {
-                    "url": "https://opensource.org/licenses/OFL-1.1",
-                    "title": "HTML",
-                    "media_type": "text/html"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "OFL-1.1",
-                    "scheme": "SPDX"
-                }
-            ],
-            "superseded_by": null,
-            "_sourceURL": "https://opensource.org/licenses/",
-            "name": "SIL Open Font License, Version 1.1",
-            "other_names": [],
-            "keywords": [
-                "osi-approved",
-                "special-purpose"
-            ],
-            "id": "OFL-1.1",
-            "links": [
-                {
-                    "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/OFL-1.1"
-                }
-            ],
-            "_implications": {
-                "__impliedNames": [
-                    "OFL-1.1",
-                    "SIL Open Font License, Version 1.1",
-                    "OFL-1.1"
-                ],
-                "__impliedURLs": [
-                    [
-                        "OSI Page",
-                        "https://opensource.org/licenses/OFL-1.1"
-                    ]
-                ]
-            }
-        },
         "choosealicense.com": {
             "limitations": [
                 "liability",
@@ -406,10 +362,6 @@
         [
             null,
             "https://github.com/adobe-fonts/source-code-pro/blob/master/LICENSE.txt"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/OFL-1.1"
         ]
     ]
 }

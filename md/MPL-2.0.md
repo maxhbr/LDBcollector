@@ -9,10 +9,6 @@ Mozilla Public License 2.0 (MPL-2.0)
 
 -   `MPL 2.0`
 
--   `Mozilla Public License, Version 2.0`
-
--   `License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)`
-
 -   `mozilla2.0`
 
 Description
@@ -76,13 +72,9 @@ URLs
 
 -   **Homepage:** http://mpl.mozilla.org/2012/01/03/announcing-mpl-2-0/
 
--   **Mozilla Page:** https://www.mozilla.org/en-US/MPL/
-
 -   **OSI Page:** http://opensource.org/licenses/MPL-2.0
 
 -   **SPDX:** http://spdx.org/licenses/MPL-2.0.json
-
--   **Wikipedia page:** https://en.wikipedia.org/wiki/MPL\_License
 
 -   http://www.mozilla.org/MPL/2.0/
 
@@ -488,9 +480,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mpl-2.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MPL-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -518,8 +507,6 @@ Raw Data
             "scancode://mpl-2.0",
             "MPL 2.0",
             "mpl-2.0",
-            "Mozilla Public License, Version 2.0",
-            "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
             "mozilla2.0"
         ],
         "__impliedId": "MPL-2.0",
@@ -748,71 +735,6 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "WeakCopyleft"
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://www.mozilla.org/en-US/MPL/2.0/",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "MPL-2.0",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Mozilla Public License, Version 2.0",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "popular",
-                    "copyleft"
-                ],
-                "id": "MPL-2.0",
-                "links": [
-                    {
-                        "note": "Wikipedia page",
-                        "url": "https://en.wikipedia.org/wiki/MPL_License"
-                    },
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/MPL-2.0"
-                    },
-                    {
-                        "note": "Mozilla Page",
-                        "url": "https://www.mozilla.org/en-US/MPL/"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "MPL-2.0",
-                        "Mozilla Public License, Version 2.0",
-                        "MPL-2.0",
-                        "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "Wikipedia page",
-                            "https://en.wikipedia.org/wiki/MPL_License"
-                        ],
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/MPL-2.0"
-                        ],
-                        [
-                            "Mozilla Page",
-                            "https://www.mozilla.org/en-US/MPL/"
-                        ]
-                    ]
-                }
             },
             "Wikipedia": {
                 "Distribution": {
@@ -1176,18 +1098,6 @@ Raw Data
             [
                 "OSI Page",
                 "http://opensource.org/licenses/MPL-2.0"
-            ],
-            [
-                "Wikipedia page",
-                "https://en.wikipedia.org/wiki/MPL_License"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/MPL-2.0"
-            ],
-            [
-                "Mozilla Page",
-                "https://www.mozilla.org/en-US/MPL/"
             ]
         ]
     }

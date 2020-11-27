@@ -11,10 +11,6 @@ University of Illinois/NCSA Open Source License (NCSA)
 
 -   `UIUC/NCSA`
 
--   `The University of Illinois/NCSA Open Source License`
-
--   `License :: OSI Approved :: University of Illinois/NCSA Open Source License`
-
 -   `uoi-ncsa`
 
 Description
@@ -71,13 +67,13 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/UoI-NCSA.php
 
--   **OSI Page:** https://opensource.org/licenses/NCSA
-
 -   **SPDX:** http://spdx.org/licenses/NCSA.json
 
 -   **SPDX:** https://spdx.org/licenses/NCSA.html
 
 -   http://otm.illinois.edu/uiuc\_openSource
+
+-   https://opensource.org/licenses/NCSA
 
 -   http://www.ncsa.uiuc.edu/
 
@@ -138,9 +134,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ncsa.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/NCSA.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -162,8 +155,6 @@ Raw Data
             "NCSA Open Source License",
             "ncsa",
             "UIUC/NCSA",
-            "The University of Illinois/NCSA Open Source License",
-            "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
             "uoi-ncsa"
         ],
         "__impliedId": "NCSA",
@@ -372,55 +363,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/NCSA.html"
-                        ]
-                    ]
-                }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/NCSA",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "NCSA",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The University of Illinois/NCSA Open Source License",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "discouraged",
-                    "redundant"
-                ],
-                "id": "NCSA",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/NCSA"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "NCSA",
-                        "The University of Illinois/NCSA Open Source License",
-                        "NCSA",
-                        "License :: OSI Approved :: University of Illinois/NCSA Open Source License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/NCSA"
                         ]
                     ]
                 }
@@ -674,10 +616,6 @@ Raw Data
             [
                 null,
                 "http://www.stlinux.com/node/140"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/NCSA"
             ]
         ]
     }

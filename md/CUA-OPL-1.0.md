@@ -7,8 +7,6 @@ CUA Office Public License v1.0 (CUA-OPL-1.0)
 
 -   `scancode://cua-opl-1.0`
 
--   `CUA Office Public License`
-
 -   `CUA Office Public License 1.0`
 
 Comments on (easy) usability
@@ -32,9 +30,9 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/cuaoffice.php
 
--   **OSI Page:** https://opensource.org/licenses/CUA-OPL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/CUA-OPL-1.0.json
+
+-   https://opensource.org/licenses/CUA-OPL-1.0
 
 Text
 ----
@@ -524,9 +522,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cua-opl-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -538,7 +533,6 @@ Raw Data
             "CUA-OPL-1.0",
             "CUA Office Public License v1.0",
             "scancode://cua-opl-1.0",
-            "CUA Office Public License",
             "CUA Office Public License 1.0"
         ],
         "__impliedId": "CUA-OPL-1.0",
@@ -691,50 +685,6 @@ Raw Data
                         "CUA-OPL-1.0"
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/CUA-OPL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "CUA-OPL-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "CUA Office Public License",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "CUA-OPL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/CUA-OPL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "CUA-OPL-1.0",
-                        "CUA Office Public License",
-                        "CUA-OPL-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/CUA-OPL-1.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -775,10 +725,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/CUA-OPL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/CUA-OPL-1.0"
             ]
         ]
     }

@@ -4,7 +4,6 @@
         "The MirOS Licence",
         "MirOS License",
         "scancode://mir-os",
-        "The MirOS Licence (MirOS)",
         "MirOS Licence"
     ],
     "__impliedId": "MirOS",
@@ -220,48 +219,6 @@
                     ]
                 ]
             }
-        },
-        "OpenSourceInitiative": {
-            "text": [
-                {
-                    "url": "https://opensource.org/licenses/MirOS",
-                    "title": "HTML",
-                    "media_type": "text/html"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "MirOS",
-                    "scheme": "SPDX"
-                }
-            ],
-            "superseded_by": null,
-            "_sourceURL": "https://opensource.org/licenses/",
-            "name": "The MirOS Licence (MirOS)",
-            "other_names": [],
-            "keywords": [
-                "osi-approved"
-            ],
-            "id": "MirOS",
-            "links": [
-                {
-                    "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/MirOS"
-                }
-            ],
-            "_implications": {
-                "__impliedNames": [
-                    "MirOS",
-                    "The MirOS Licence (MirOS)",
-                    "MirOS"
-                ],
-                "__impliedURLs": [
-                    [
-                        "OSI Page",
-                        "https://opensource.org/licenses/MirOS"
-                    ]
-                ]
-            }
         }
     },
     "__impliedJudgement": [
@@ -324,10 +281,6 @@
         [
             null,
             "http://www.opensource.org/licenses/MirOS"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/MirOS"
         ]
     ]
 }

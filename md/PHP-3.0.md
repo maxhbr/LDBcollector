@@ -9,8 +9,6 @@ PHP License v3.0 (PHP-3.0)
 
 -   `PHP License 3.0`
 
--   `The PHP License, Version 3.0`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -40,13 +38,13 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/php.html
 
--   **OSI Page:** https://opensource.org/licenses/PHP-3.0
-
 -   **SPDX:** http://spdx.org/licenses/PHP-3.0.json
 
 -   **SPDX:** https://spdx.org/licenses/PHP-3.0.html
 
 -   http://www.php.net/license/3\_0.txt
+
+-   https://opensource.org/licenses/PHP-3.0
 
 -   http://www.opensource.org/licenses/PHP-3.0
 
@@ -142,9 +140,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -163,8 +158,7 @@ Raw Data
             "PHP-3.0",
             "PHP License v3.0",
             "scancode://php-3.0",
-            "PHP License 3.0",
-            "The PHP License, Version 3.0"
+            "PHP License 3.0"
         ],
         "__impliedId": "PHP-3.0",
         "__impliedComments": [
@@ -363,50 +357,6 @@ Raw Data
                     ]
                 }
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/PHP-3.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "PHP-3.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The PHP License, Version 3.0",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "PHP-3.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/PHP-3.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "PHP-3.0",
-                        "The PHP License, Version 3.0",
-                        "PHP-3.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/PHP-3.0"
-                        ]
-                    ]
-                }
-            },
             "finos/OSLC-handbook": {
                 "terms": [
                     {
@@ -573,10 +523,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/PHP-3.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/PHP-3.0"
             ]
         ]
     }

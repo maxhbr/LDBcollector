@@ -16,6 +16,11 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 General Comments
 ----------------
 
@@ -34,6 +39,8 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/MITNFA.json
 
 -   **SPDX:** https://spdx.org/licenses/MITNFA.html
+
+-   **open-license:** http://open-license.hitachi.com/licenses/698
 
 Text
 ----
@@ -85,6 +92,14 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
@@ -92,9 +107,11 @@ Raw Data
             "MITNFA",
             "MIT +no-false-attribs license",
             "scancode://mit-no-false-attribs",
-            "MIT no false attribution License"
+            "MIT no false attribution License",
+            "MIT +no-false-attribs License"
         ],
         "__impliedId": "MITNFA",
+        "__isFsfFree": true,
         "__impliedComments": [
             [
                 "Scancode",
@@ -132,6 +149,32 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MITNFA"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MITNFA",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "MITNFA",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "MIT +no-false-attribs license",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT +no-false-attribs license"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -174,6 +217,56 @@ Raw Data
                         [
                             "Homepage",
                             "https://fedoraproject.org/wiki/Licensing/MITNFA"
+                        ]
+                    ]
+                }
+            },
+            "Hitachi open-license": {
+                "_license_uri": "http://open-license.hitachi.com/licenses/698",
+                "_license_permissions": [
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": []
+                        },
+                        "_permission_actions": []
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nã½ããã¦ã§ã¢ãæä¾ããç¸æã«ãåãæ¨©å©ãè¨±å¯ãããã¨ã«ãªãã",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": []
+                        },
+                        "_permission_actions": []
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nã½ããã¦ã§ã¢ãæä¾ããç¸æã«ãåãæ¨©å©ãè¨±å¯ãããã¨ã«ãªãã",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": []
+                        },
+                        "_permission_actions": []
+                    }
+                ],
+                "_license_id": "licenses/698",
+                "_sourceURL": "http://open-license.hitachi.com/licenses/698",
+                "_license_name": "MIT +no-false-attribs License",
+                "_license_summary": "",
+                "_license_description": "",
+                "_license_baseUri": "http://open-license.hitachi.com/",
+                "_license_schemaVersion": "0.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT +no-false-attribs License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/698"
                         ]
                     ]
                 }
@@ -222,6 +315,13 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
                 }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
             ]
         ],
         "__impliedCopyleft": [
@@ -253,6 +353,10 @@ Raw Data
             [
                 "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/MITNFA"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/698"
             ]
         ]
     }

@@ -30,11 +30,11 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/naumen.php
 
--   **OSI Page:** https://opensource.org/licenses/Naumen
-
 -   **SPDX:** http://spdx.org/licenses/Naumen.json
 
 -   **SPDX:** https://spdx.org/licenses/Naumen.html
+
+-   https://opensource.org/licenses/Naumen
 
 -   http://www.opensource.org/licenses/Naumen
 
@@ -82,9 +82,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naumen.yml "Scancode")
     (CC0-1.0)
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
@@ -285,50 +282,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Naumen",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Naumen",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "NAUMEN Public License",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "Naumen",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Naumen"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Naumen",
-                        "NAUMEN Public License",
-                        "Naumen"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Naumen"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -384,10 +337,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/Naumen"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Naumen"
             ]
         ]
     }

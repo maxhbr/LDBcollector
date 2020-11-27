@@ -9,10 +9,6 @@ Apple Public Source License 2.0 (APSL-2.0)
 
 -   `APSL 2.0`
 
--   `Apple Public Source License, Version 2.0`
-
--   `License :: OSI Approved :: Apple Public Source License`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -60,11 +56,11 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/apsl-2.0.php
 
--   **OSI Page:** https://opensource.org/licenses/APSL-2.0
-
 -   **SPDX:** http://spdx.org/licenses/APSL-2.0.json
 
 -   https://spdx.org/licenses/APSL-2.0.html
+
+-   https://opensource.org/licenses/APSL-2.0
 
 Text
 ----
@@ -190,9 +186,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-2.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -212,9 +205,7 @@ Raw Data
             "APSL-2.0",
             "Apple Public Source License 2.0",
             "scancode://apsl-2.0",
-            "APSL 2.0",
-            "Apple Public Source License, Version 2.0",
-            "License :: OSI Approved :: Apple Public Source License"
+            "APSL 2.0"
         ],
         "__impliedId": "APSL-2.0",
         "__impliedAmbiguousNames": [
@@ -430,55 +421,6 @@ Raw Data
                 },
                 "CopyleftKind": "SaaSCopyleft"
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/APSL-2.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "APSL-2.0",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Apple Public Source License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Apple Public Source License, Version 2.0",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "APSL-2.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/APSL-2.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "APSL-2.0",
-                        "Apple Public Source License, Version 2.0",
-                        "APSL-2.0",
-                        "License :: OSI Approved :: Apple Public Source License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/APSL-2.0"
-                        ]
-                    ]
-                }
-            },
             "Google OSS Policy": {
                 "rating": "RECIPROCAL",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -555,10 +497,6 @@ Raw Data
             [
                 "OSI Page",
                 "http://opensource.org/licenses/apsl-2.0.php"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/APSL-2.0"
             ],
             [
                 null,

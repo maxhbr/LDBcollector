@@ -123,6 +123,83 @@
                 ]
             }
         },
+        "Hitachi open-license": {
+            "_license_uri": "http://open-license.hitachi.com/licenses/279",
+            "_license_permissions": [
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "謝辞の内容はこちら\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "謝辞の内容はこちら\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "謝辞の内容はこちら\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "\"OpenSSL Toolkit\"および\"OpenSSL Project\"という名称を使用する場合。openssl-core@openssl.orgに連絡する。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "\"OpenSSL\"という名称を使用する場合。書面によるOpenSSL Projectの許可を取る。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                }
+            ],
+            "_license_id": "licenses/279",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/279",
+            "_license_name": "OpenSSL License",
+            "_license_summary": "",
+            "_license_description": "",
+            "_license_baseUri": "http://open-license.hitachi.com/",
+            "_license_schemaVersion": "0.1",
+            "_implications": {
+                "__impliedNames": [
+                    "OpenSSL License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/279"
+                    ]
+                ]
+            }
+        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/OpenSSL.html",
@@ -355,6 +432,10 @@
         [
             "Homepage",
             "http://www.openssl.org/source/license.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/279"
         ]
     ]
 }

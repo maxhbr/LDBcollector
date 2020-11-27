@@ -3,9 +3,7 @@
         "Xnet",
         "X.Net License",
         "scancode://xnet",
-        "Altera License",
-        "The X.Net, Inc. License",
-        "License :: OSI Approved :: X.Net License"
+        "Altera License"
     ],
     "__impliedId": "Xnet",
     "__impliedComments": [
@@ -194,55 +192,6 @@
                 ]
             }
         },
-        "OpenSourceInitiative": {
-            "text": [
-                {
-                    "url": "https://opensource.org/licenses/Xnet",
-                    "title": "HTML",
-                    "media_type": "text/html"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "Xnet",
-                    "scheme": "SPDX"
-                },
-                {
-                    "identifier": "License :: OSI Approved :: X.Net License",
-                    "scheme": "Trove"
-                }
-            ],
-            "superseded_by": null,
-            "_sourceURL": "https://opensource.org/licenses/",
-            "name": "The X.Net, Inc. License",
-            "other_names": [],
-            "keywords": [
-                "osi-approved",
-                "discouraged",
-                "redundant"
-            ],
-            "id": "Xnet",
-            "links": [
-                {
-                    "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/Xnet"
-                }
-            ],
-            "_implications": {
-                "__impliedNames": [
-                    "Xnet",
-                    "The X.Net, Inc. License",
-                    "Xnet",
-                    "License :: OSI Approved :: X.Net License"
-                ],
-                "__impliedURLs": [
-                    [
-                        "OSI Page",
-                        "https://opensource.org/licenses/Xnet"
-                    ]
-                ]
-            }
-        },
         "Google OSS Policy": {
             "rating": "NOTICE",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -334,10 +283,6 @@
         [
             null,
             "http://opensource.org/licenses/Xnet"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Xnet"
         ]
     ]
 }

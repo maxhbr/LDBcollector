@@ -9,10 +9,6 @@ Simple Public License 2.0 (SimPL-2.0)
 
 -   `SimPL 2.0`
 
--   `Simple-2.0`
-
--   `Simple Public License (SimPL-2.0)`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -31,8 +27,6 @@ URLs
 ----
 
 -   **Homepage:** http://www.opensource.org/licenses/simpl-2.0.html
-
--   **OSI Page:** https://opensource.org/licenses/Simple-2.0
 
 -   **SPDX:** http://spdx.org/licenses/SimPL-2.0.json
 
@@ -88,9 +82,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/simpl-2.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -102,9 +93,7 @@ Raw Data
             "SimPL-2.0",
             "Simple Public License 2.0",
             "scancode://simpl-2.0",
-            "SimPL 2.0",
-            "Simple-2.0",
-            "Simple Public License (SimPL-2.0)"
+            "SimPL 2.0"
         ],
         "__impliedId": "SimPL-2.0",
         "__impliedComments": [
@@ -256,48 +245,6 @@ Raw Data
                         "SimPL-2.0"
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Simple-2.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "SimPL-2.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Simple Public License (SimPL-2.0)",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved"
-                ],
-                "id": "Simple-2.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Simple-2.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Simple-2.0",
-                        "Simple Public License (SimPL-2.0)",
-                        "SimPL-2.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Simple-2.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -338,10 +285,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/SimPL-2.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Simple-2.0"
             ]
         ]
     }

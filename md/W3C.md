@@ -9,10 +9,6 @@ W3C Software Notice and License (2002-12-31) (W3C)
 
 -   `W3C Software Notice and License`
 
--   `The W3C Software Notice and License`
-
--   `License :: OSI Approved :: W3C License`
-
 -   `W3C Software Notice and License 20021231`
 
 -   `W3C License`
@@ -46,13 +42,13 @@ URLs
 -   **Homepage:**
     http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 
--   **OSI Page:** https://opensource.org/licenses/W3C
-
 -   **SPDX:** http://spdx.org/licenses/W3C.json
 
 -   **SPDX:** https://spdx.org/licenses/W3C.html
 
 -   http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
+
+-   https://opensource.org/licenses/W3C
 
 -   http://www.opensource.org/licenses/W3C
 
@@ -117,9 +113,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -139,8 +132,6 @@ Raw Data
             "W3C Software Notice and License (2002-12-31)",
             "scancode://w3c",
             "W3C Software Notice and License",
-            "The W3C Software Notice and License",
-            "License :: OSI Approved :: W3C License",
             "W3C Software Notice and License 20021231",
             "W3C License"
         ],
@@ -343,55 +334,6 @@ Raw Data
                     ]
                 }
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/W3C",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "W3C",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: W3C License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The W3C Software Notice and License",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "W3C",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/W3C"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "W3C",
-                        "The W3C Software Notice and License",
-                        "W3C",
-                        "License :: OSI Approved :: W3C License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/W3C"
-                        ]
-                    ]
-                }
-            },
             "Wikipedia": {
                 "Linking": {
                     "value": "Permissive",
@@ -511,10 +453,6 @@ Raw Data
             [
                 null,
                 "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html http://www.opensource.org/licenses/W3C.php"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/W3C"
             ]
         ]
     }

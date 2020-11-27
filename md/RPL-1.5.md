@@ -9,8 +9,6 @@ Reciprocal Public License 1.5 (RPL-1.5)
 
 -   `RPL 1.5`
 
--   `Reciprocal Public License, Version 1.5`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -39,9 +37,9 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/rpl1.5.txt
 
--   **OSI Page:** https://opensource.org/licenses/RPL-1.5
-
 -   **SPDX:** http://spdx.org/licenses/RPL-1.5.json
+
+-   https://opensource.org/licenses/RPL-1.5
 
 -   https://spdx.org/licenses/RPL-1.5.html
 
@@ -231,9 +229,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.5.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -245,8 +240,7 @@ Raw Data
             "RPL-1.5",
             "Reciprocal Public License 1.5",
             "scancode://rpl-1.5",
-            "RPL 1.5",
-            "Reciprocal Public License, Version 1.5"
+            "RPL 1.5"
         ],
         "__impliedId": "RPL-1.5",
         "__impliedAmbiguousNames": [
@@ -450,48 +444,6 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "MaximalCopyleft"
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/RPL-1.5",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "RPL-1.5",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Reciprocal Public License, Version 1.5",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved"
-                ],
-                "id": "RPL-1.5",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/RPL-1.5"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "RPL-1.5",
-                        "Reciprocal Public License, Version 1.5",
-                        "RPL-1.5"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/RPL-1.5"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -544,10 +496,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/RPL-1.5"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/RPL-1.5"
             ]
         ]
     }

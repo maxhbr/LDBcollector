@@ -9,8 +9,6 @@ Open Software License 2.1 (OSL-2.1)
 
 -   `OSL 2.1`
 
--   `Open Software License, Version 2.1`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -52,11 +50,11 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/osl-2.1.php
 
--   **OSI Page:** https://opensource.org/licenses/OSL-2.1
-
 -   **SPDX:** http://spdx.org/licenses/OSL-2.1.json
 
 -   http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm
+
+-   https://opensource.org/licenses/OSL-2.1
 
 -   https://spdx.org/licenses/OSL-2.1.html
 
@@ -126,9 +124,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-2.1.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -140,8 +135,7 @@ Raw Data
             "OSL-2.1",
             "Open Software License 2.1",
             "scancode://osl-2.1",
-            "OSL 2.1",
-            "Open Software License, Version 2.1"
+            "OSL 2.1"
         ],
         "__impliedId": "OSL-2.1",
         "__impliedAmbiguousNames": [
@@ -315,50 +309,6 @@ Raw Data
                 },
                 "CopyleftKind": "SaaSCopyleft"
             },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/OSL-2.1",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "OSL-2.1",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": "OLS-3.0",
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Open Software License, Version 2.1",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "discouraged",
-                    "redundant"
-                ],
-                "id": "OSL-2.1",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/OSL-2.1"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "OSL-2.1",
-                        "Open Software License, Version 2.1",
-                        "OSL-2.1"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/OSL-2.1"
-                        ]
-                    ]
-                }
-            },
             "Google OSS Policy": {
                 "rating": "RESTRICTED",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -444,10 +394,6 @@ Raw Data
             [
                 null,
                 "http://www.nexb.com/license/LICENSE-OSL-2.1.html"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/OSL-2.1"
             ]
         ]
     }

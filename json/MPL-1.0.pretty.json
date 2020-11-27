@@ -3,9 +3,7 @@
         "MPL-1.0",
         "Mozilla Public License 1.0",
         "scancode://mpl-1.0",
-        "MPL 1.0",
-        "Mozilla Public License, Version 1.0",
-        "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)"
+        "MPL 1.0"
     ],
     "__impliedId": "MPL-1.0",
     "__impliedAmbiguousNames": [
@@ -235,55 +233,6 @@
             },
             "CopyleftKind": "WeakCopyleft"
         },
-        "OpenSourceInitiative": {
-            "text": [
-                {
-                    "url": "https://opensource.org/licenses/MPL-1.0",
-                    "title": "HTML",
-                    "media_type": "text/html"
-                }
-            ],
-            "identifiers": [
-                {
-                    "identifier": "MPL-1.0",
-                    "scheme": "SPDX"
-                },
-                {
-                    "identifier": "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)",
-                    "scheme": "Trove"
-                }
-            ],
-            "superseded_by": "MPL-2.0",
-            "_sourceURL": "https://opensource.org/licenses/",
-            "name": "Mozilla Public License, Version 1.0",
-            "other_names": [],
-            "keywords": [
-                "osi-approved",
-                "discouraged",
-                "obsolete"
-            ],
-            "id": "MPL-1.0",
-            "links": [
-                {
-                    "note": "OSI Page",
-                    "url": "https://opensource.org/licenses/MPL-1.0"
-                }
-            ],
-            "_implications": {
-                "__impliedNames": [
-                    "MPL-1.0",
-                    "Mozilla Public License, Version 1.0",
-                    "MPL-1.0",
-                    "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)"
-                ],
-                "__impliedURLs": [
-                    [
-                        "OSI Page",
-                        "https://opensource.org/licenses/MPL-1.0"
-                    ]
-                ]
-            }
-        },
         "finos/OSLC-handbook": {
             "terms": [
                 {
@@ -478,10 +427,6 @@
         [
             null,
             "http://opensource.org/licenses/MPL-1.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/MPL-1.0"
         ]
     ]
 }

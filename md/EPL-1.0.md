@@ -9,8 +9,6 @@ Eclipse Public License 1.0 (EPL-1.0)
 
 -   `EPL 1.0`
 
--   `Eclipse Public License, Version 1.0`
-
 -   `eclipse-1.0`
 
 Description
@@ -71,12 +69,9 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/eclipse-1.0.php
 
--   **OSI Page:** https://opensource.org/licenses/EPL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/EPL-1.0.json
 
--   **Wikipedia page:**
-    https://en.wikipedia.org/wiki/Eclipse\_Public\_License
+-   https://opensource.org/licenses/EPL-1.0
 
 -   https://spdx.org/licenses/EPL-1.0.html
 
@@ -195,9 +190,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-1.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/EPL-1.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -222,7 +214,6 @@ Raw Data
             "scancode://epl-1.0",
             "EPL 1.0",
             "epl-1.0",
-            "Eclipse Public License, Version 1.0",
             "eclipse-1.0"
         ],
         "__impliedId": "EPL-1.0",
@@ -455,57 +446,6 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "WeakCopyleft"
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://www.eclipse.org/legal/epl-v10.html",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "EPL-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Eclipse Public License, Version 1.0",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "popular"
-                ],
-                "id": "EPL-1.0",
-                "links": [
-                    {
-                        "note": "Wikipedia page",
-                        "url": "https://en.wikipedia.org/wiki/Eclipse_Public_License"
-                    },
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/EPL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "EPL-1.0",
-                        "Eclipse Public License, Version 1.0",
-                        "EPL-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "Wikipedia page",
-                            "https://en.wikipedia.org/wiki/Eclipse_Public_License"
-                        ],
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/EPL-1.0"
-                        ]
-                    ]
-                }
             },
             "choosealicense.com": {
                 "limitations": [
@@ -819,14 +759,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/EPL-1.0"
-            ],
-            [
-                "Wikipedia page",
-                "https://en.wikipedia.org/wiki/Eclipse_Public_License"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/EPL-1.0"
             ]
         ]
     }

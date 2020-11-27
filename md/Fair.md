@@ -7,8 +7,6 @@ Fair License (Fair)
 
 -   `scancode://fair`
 
--   `Fair License (Fair)`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -32,13 +30,13 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/fair.php
 
--   **OSI Page:** https://opensource.org/licenses/Fair
-
 -   **SPDX:** http://spdx.org/licenses/Fair.json
 
 -   **SPDX:** https://spdx.org/licenses/Fair.html
 
 -   http://fairlicense.org/
+
+-   https://opensource.org/licenses/Fair
 
 -   http://www.opensource.org/licenses/Fair
 
@@ -73,9 +71,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -86,8 +81,7 @@ Raw Data
         "__impliedNames": [
             "Fair",
             "Fair License",
-            "scancode://fair",
-            "Fair License (Fair)"
+            "scancode://fair"
         ],
         "__impliedId": "Fair",
         "__impliedComments": [
@@ -290,50 +284,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Fair",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Fair",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Fair License (Fair)",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "discouraged",
-                    "redundant"
-                ],
-                "id": "Fair",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Fair"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Fair",
-                        "Fair License (Fair)",
-                        "Fair"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Fair"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -397,10 +347,6 @@ Raw Data
             [
                 null,
                 "http://rhid.com/fair"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Fair"
             ]
         ]
     }

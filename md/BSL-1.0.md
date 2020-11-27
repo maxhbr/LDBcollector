@@ -13,8 +13,6 @@ Boost Software License 1.0 (BSL-1.0)
 
 -   `Boost 1.0`
 
--   `Boost Software License 1.0 (BSL-1.0)`
-
 -   `bsl1.0`
 
 Description
@@ -67,13 +65,13 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/bsl1.0.html
 
--   **OSI Page:** https://opensource.org/licenses/BSL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/BSL-1.0.json
 
 -   **SPDX:** https://spdx.org/licenses/BSL-1.0.html
 
 -   http://www.boost.org/LICENSE\_1\_0.txt
+
+-   https://opensource.org/licenses/BSL-1.0
 
 -   http://www.opensource.org/licenses/BSL-1.0
 
@@ -131,9 +129,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsl-1.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSL-1.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -159,7 +154,6 @@ Raw Data
             "scancode://boost-1.0",
             "Boost 1.0",
             "bsl-1.0",
-            "Boost Software License 1.0 (BSL-1.0)",
             "bsl1.0"
         ],
         "__impliedId": "BSL-1.0",
@@ -377,48 +371,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/BSL-1.0.html"
-                        ]
-                    ]
-                }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/BSL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "BSL-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Boost Software License 1.0 (BSL-1.0)",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved"
-                ],
-                "id": "BSL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/BSL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "BSL-1.0",
-                        "Boost Software License 1.0 (BSL-1.0)",
-                        "BSL-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/BSL-1.0"
                         ]
                     ]
                 }
@@ -677,10 +629,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/BSL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/BSL-1.0"
             ]
         ]
     }

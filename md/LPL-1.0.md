@@ -9,8 +9,6 @@ Lucent Public License Version 1.0 (LPL-1.0)
 
 -   `Lucent Public License 1.0`
 
--   `Lucent Public License, Plan 9, Version 1.0`
-
 -   `Lucent Public License ("Plan9") 1.0`
 
 Comments on (easy) usability
@@ -32,11 +30,11 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/plan9.php
 
--   **OSI Page:** https://opensource.org/licenses/LPL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/LPL-1.0.json
 
 -   **SPDX:** https://spdx.org/licenses/LPL-1.0.html
+
+-   https://opensource.org/licenses/LPL-1.0
 
 Text
 ----
@@ -276,9 +274,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lucent-pl-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -291,7 +286,6 @@ Raw Data
             "Lucent Public License Version 1.0",
             "scancode://lucent-pl-1.0",
             "Lucent Public License 1.0",
-            "Lucent Public License, Plan 9, Version 1.0",
             "Lucent Public License (\"Plan9\") 1.0"
         ],
         "__impliedId": "LPL-1.0",
@@ -449,50 +443,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/LPL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "LPL-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": "LPL-1.02",
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Lucent Public License, Plan 9, Version 1.0",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "discouraged",
-                    "obsolete"
-                ],
-                "id": "LPL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/LPL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "LPL-1.0",
-                        "Lucent Public License, Plan 9, Version 1.0",
-                        "LPL-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/LPL-1.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -548,10 +498,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/LPL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/LPL-1.0"
             ]
         ]
     }

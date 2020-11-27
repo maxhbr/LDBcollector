@@ -9,8 +9,6 @@ Eiffel Forum License v1.0 (EFL-1.0)
 
 -   `EFL 1.0`
 
--   `The Eiffel Forum License, Version 1`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -37,13 +35,13 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/ver1\_eiffel.php
 
--   **OSI Page:** https://opensource.org/licenses/EFL-1.0
-
 -   **SPDX:** http://spdx.org/licenses/EFL-1.0.json
 
 -   **SPDX:** https://spdx.org/licenses/EFL-1.0.html
 
 -   http://www.eiffel-nice.org/license/forum.txt
+
+-   https://opensource.org/licenses/EFL-1.0
 
 Text
 ----
@@ -89,9 +87,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 ### Raw JSON
 
     {
@@ -99,8 +94,7 @@ Raw Data
             "EFL-1.0",
             "Eiffel Forum License v1.0",
             "scancode://efl-1.0",
-            "EFL 1.0",
-            "The Eiffel Forum License, Version 1"
+            "EFL 1.0"
         ],
         "__impliedId": "EFL-1.0",
         "__impliedComments": [
@@ -250,55 +244,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/EFL-1.0",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "EFL-1.0",
-                        "scheme": "DEP5"
-                    },
-                    {
-                        "identifier": "EFL-1.0",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": "EFL-2.0",
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "The Eiffel Forum License, Version 1",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "discouraged",
-                    "obsolete"
-                ],
-                "id": "EFL-1.0",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/EFL-1.0"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "EFL-1.0",
-                        "The Eiffel Forum License, Version 1",
-                        "EFL-1.0",
-                        "EFL-1.0"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/EFL-1.0"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -358,10 +303,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/EFL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/EFL-1.0"
             ]
         ]
     }

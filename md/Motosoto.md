@@ -9,10 +9,6 @@ Motosoto License (Motosoto)
 
 -   `Motosoto 0.9.1`
 
--   `Motosoto Open Source License, Version 0.9.1`
-
--   `License :: OSI Approved :: Motosoto License`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -32,9 +28,9 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/motosoto.php
 
--   **OSI Page:** https://opensource.org/licenses/Motosoto
-
 -   **SPDX:** http://spdx.org/licenses/Motosoto.json
+
+-   https://opensource.org/licenses/Motosoto
 
 -   http://www.opensource.org/licenses/Motosoto
 
@@ -203,9 +199,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/motosoto-0.9.1.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -217,9 +210,7 @@ Raw Data
             "Motosoto",
             "Motosoto License",
             "scancode://motosoto-0.9.1",
-            "Motosoto 0.9.1",
-            "Motosoto Open Source License, Version 0.9.1",
-            "License :: OSI Approved :: Motosoto License"
+            "Motosoto 0.9.1"
         ],
         "__impliedId": "Motosoto",
         "__impliedComments": [
@@ -371,55 +362,6 @@ Raw Data
                         "Motosoto"
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/Motosoto",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "Motosoto",
-                        "scheme": "SPDX"
-                    },
-                    {
-                        "identifier": "License :: OSI Approved :: Motosoto License",
-                        "scheme": "Trove"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Motosoto Open Source License, Version 0.9.1",
-                "other_names": [],
-                "keywords": [
-                    "discouraged",
-                    "non-reusable",
-                    "osi-approved"
-                ],
-                "id": "Motosoto",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/Motosoto"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "Motosoto",
-                        "Motosoto Open Source License, Version 0.9.1",
-                        "Motosoto",
-                        "License :: OSI Approved :: Motosoto License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/Motosoto"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -460,10 +402,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/Motosoto"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Motosoto"
             ]
         ]
     }

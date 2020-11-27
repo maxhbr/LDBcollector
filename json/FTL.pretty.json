@@ -3,7 +3,8 @@
         "FTL",
         "Freetype Project License",
         "scancode://freetype",
-        "FreeType Project License"
+        "FreeType Project License",
+        "FreeType Project LICENSE"
     ],
     "__impliedId": "FTL",
     "__impliedComments": [
@@ -111,6 +112,92 @@
                     [
                         null,
                         "http://www.freetype.org/"
+                    ]
+                ]
+            }
+        },
+        "Hitachi open-license": {
+            "_license_uri": "http://open-license.hitachi.com/licenses/763",
+            "_license_permissions": [
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "●関連文書もソフトウェアと同様に扱う。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "●関連文書もソフトウェアと同様に扱う。\r\n●謝辞の内容は、次の文章を推奨する。\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>は実際のバージョンに有効な年号に置き換える。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "●関連文書もソフトウェアと同様に扱う。\r\n●謝辞の内容は、次の文章を推奨する。\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>は実際のバージョンに有効な年号に置き換える。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "●関連文書もソフトウェアと同様に扱う。\r\n●謝辞の内容は、次の文章を推奨する。 \r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \" \r\n<year>は実際のバージョンに有効な年号に置き換える。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "●関連文書もソフトウェアと同様に扱う。\r\n●謝辞の内容は、次の文章を推奨する。\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>は実際のバージョンに有効な年号に置き換える。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "●関連文書もソフトウェアと同様に扱う。\r\n●関連文書にFreeType web pageへのURL[http://www.freetype.org]を入れることを推奨する。\r\n●謝辞の内容は、次の文章を推奨する。\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>は実際のバージョンに有効な年号に置き換える。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "●関連文書もソフトウェアと同様に扱う。\r\n●頒布物に付属する資料や広告に、当該ソフトウェアを示す\"FreeType Project\"、\"FreeType Engine\"、\"FreeType library\"、\"FreeType Distribution\"といったフレーズを1つ以上使うことを推奨する。",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": []
+                }
+            ],
+            "_license_id": "licenses/763",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/763",
+            "_license_name": "FreeType Project LICENSE",
+            "_license_summary": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]",
+            "_license_description": "●\"package\"、\"FreeType Project\"、\"FreeType archive\"は、\"FreeType Project\"として著作者(David Turner, Robert Wilhelm, and Werner Lemberg)が頒布する元々のソースコード、バイナリ、関連文書の全てをさす。\r\n\r\n●サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。 ",
+            "_license_baseUri": "http://open-license.hitachi.com/",
+            "_license_schemaVersion": "0.1",
+            "_implications": {
+                "__impliedNames": [
+                    "FreeType Project LICENSE"
+                ],
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/763"
                     ]
                 ]
             }
@@ -239,6 +326,10 @@
         [
             null,
             "http://www.freetype.org/"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/763"
         ]
     ]
 }

@@ -11,8 +11,6 @@ NTP License (NTP)
 
 -   `MIT Old Style no advertising`
 
--   `NTP License (NTP)`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -88,9 +86,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-old-style-no-advert.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -103,8 +98,7 @@ Raw Data
             "NTP License",
             "scancode://ntpl",
             "scancode://mit-old-style-no-advert",
-            "MIT Old Style no advertising",
-            "NTP License (NTP)"
+            "MIT Old Style no advertising"
         ],
         "__impliedId": "NTP",
         "__impliedComments": [
@@ -287,48 +281,6 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/NTP.html"
-                        ]
-                    ]
-                }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/NTP",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "NTP",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "NTP License (NTP)",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved"
-                ],
-                "id": "NTP",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/NTP"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "NTP",
-                        "NTP License (NTP)",
-                        "NTP"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/NTP"
                         ]
                     ]
                 }

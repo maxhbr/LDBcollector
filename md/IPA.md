@@ -28,9 +28,9 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/ipafont.html
 
--   **OSI Page:** https://opensource.org/licenses/IPA
-
 -   **SPDX:** http://spdx.org/licenses/IPA.json
+
+-   https://opensource.org/licenses/IPA
 
 -   http://www.opensource.org/licenses/IPA
 
@@ -137,9 +137,6 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ipa-font.yml "Scancode")
     (CC0-1.0)
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
@@ -304,49 +301,6 @@ Raw Data
                         "IPA"
                     ]
                 }
-            },
-            "OpenSourceInitiative": {
-                "text": [
-                    {
-                        "url": "https://opensource.org/licenses/IPA",
-                        "title": "HTML",
-                        "media_type": "text/html"
-                    }
-                ],
-                "identifiers": [
-                    {
-                        "identifier": "IPA",
-                        "scheme": "SPDX"
-                    }
-                ],
-                "superseded_by": null,
-                "_sourceURL": "https://opensource.org/licenses/",
-                "name": "IPA Font License",
-                "other_names": [],
-                "keywords": [
-                    "osi-approved",
-                    "special-purpose"
-                ],
-                "id": "IPA",
-                "links": [
-                    {
-                        "note": "OSI Page",
-                        "url": "https://opensource.org/licenses/IPA"
-                    }
-                ],
-                "_implications": {
-                    "__impliedNames": [
-                        "IPA",
-                        "IPA Font License",
-                        "IPA"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "OSI Page",
-                            "https://opensource.org/licenses/IPA"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -387,10 +341,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/IPA"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/IPA"
             ]
         ]
     }
