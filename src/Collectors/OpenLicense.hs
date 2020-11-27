@@ -6,7 +6,7 @@
 module Collectors.OpenLicense
   ( olLFC
   , loadOpenLicenseFacts
-  , loadOpenLicenseTranslateables
+  , loadOpenLicenseTranslateables, TranslationRow (..)
   )
   where
 
@@ -25,6 +25,7 @@ import qualified Data.Set as S
 import qualified Data.Map as M
 import           Data.Maybe (catMaybes)
 import qualified Data.Vector as V
+import           Network.URI (parseURI)
 
 import           Model.License
 import           Collectors.Common
@@ -60,14 +61,16 @@ class Translateable a where
   getTranslateables :: a -> Set String
   translate :: a -> a
   translate = P.id
+translateString :: String -> Maybe String
+translateString ja = case ja `M.lookup` translations of
+  Just v -> v
+  _      -> Nothing
+
 instance (Translateable a) => Translateable [a] where
   getTranslateables = S.unions . map getTranslateables
 instance (Translateable a) => Translateable (Maybe a) where
   getTranslateables (Just a) = getTranslateables a
   getTranslateables Nothing  = S.empty
-
-getCsvFromTranslateables :: Set String -> ByteString
-getCsvFromTranslateables = C.encodeDefaultOrderedByName . map (\ja -> TranslationRow ja "") . S.toList
 
 {- #############################################################################
    #### Text ###################################################################
@@ -394,12 +397,16 @@ licenses = case eitherDecode (B.fromStrict licensesFile) of
 loadOpenLicenseFacts :: IO Facts
 loadOpenLicenseFacts = let
     toFact lic = LicenseFact (Just (_license_uri lic)) lic
-  in logThatFactsWithNumberAreLoadedFrom "Hitachi open-license" $ do
-  ((mapM_ putStrLn) . getTranslateables) licenses
-  (return . V.map toFact . V.fromList) licenses
+  in logThatFactsWithNumberAreLoadedFrom "Hitachi open-license" $
+     (return . V.map toFact . V.fromList) licenses
 
-loadOpenLicenseTranslateables :: ByteString
-loadOpenLicenseTranslateables = (getCsvFromTranslateables . getTranslateables) licenses
+loadOpenLicenseTranslateables :: [TranslationRow]
+loadOpenLicenseTranslateables = (map (\t -> TranslationRow t (case translateString t of
+                                                                Nothing -> ""
+                                                                Just en -> en))
+                                  . filter (\s -> not ((length s < 100) && (isJust $ parseURI s)))
+                                  . S.toList
+                                  . getTranslateables) licenses
 
 {- #############################################################################
    #### files ##################################################################

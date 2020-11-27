@@ -23,6 +23,7 @@ dependencies:
 - bytestring
 - cassava
 - containers
+- curl
 - directory
 - extra
 - file-embed
@@ -35,6 +36,7 @@ dependencies:
 - lens-aeson
 - lucid
 - mtl
+- network-uri
 - opensource
 - pandoc
 - pandoc-types

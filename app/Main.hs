@@ -9,10 +9,12 @@ import qualified Data.Vector as V
 import           GHC.IO.Encoding
 import           System.Environment
 import qualified Data.ByteString.Lazy as BL
+import qualified Data.Csv as C
 
 import Lib
 import Configuration (configuration)
 import Comparator
+import OpenLicenseTranslator
 
 run :: IO()
 run = do
@@ -34,13 +36,9 @@ run = do
 
           return outputFolder)
 
-writeTranslate :: IO ()
-writeTranslate = do
-  BL.writeFile "data/hitachi-open-license/translations.csv" loadOpenLicenseTranslateables
-
 main :: IO ()
 main = do
   args <- getArgs
   case args of
-    ["translate"] -> writeTranslate
+    ["translate", apiKey] -> writeTranslate apiKey
     _             -> run
