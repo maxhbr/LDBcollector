@@ -64,8 +64,6 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/Unlicense.html
 
--   **open-license:** http://open-license.hitachi.com/licenses/844
-
 Text
 ----
 
@@ -131,10 +129,6 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
-
--   [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0)
 
 ### Raw JSON
 
@@ -307,28 +301,6 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "Unlicense"
-                    ]
-                }
-            },
-            "Hitachi open-license": {
-                "_license_uri": "http://open-license.hitachi.com/licenses/844",
-                "_license_permissions": [],
-                "_license_id": "licenses/844",
-                "_sourceURL": "http://open-license.hitachi.com/licenses/844",
-                "_license_name": "Unlicense",
-                "_license_summary": "http://unlicense.org/",
-                "_license_description": "",
-                "_license_baseUri": "http://open-license.hitachi.com/",
-                "_license_schemaVersion": "0.1",
-                "_implications": {
-                    "__impliedNames": [
-                        "Unlicense"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "open-license",
-                            "http://open-license.hitachi.com/licenses/844"
-                        ]
                     ]
                 }
             },
@@ -585,10 +557,6 @@ Raw Data
             [
                 "Homepage",
                 "http://unlicense.org/"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/844"
             ]
         ]
     }

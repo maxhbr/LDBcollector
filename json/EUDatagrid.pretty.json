@@ -193,28 +193,6 @@
                 ]
             }
         },
-        "Hitachi open-license": {
-            "_license_uri": "http://open-license.hitachi.com/licenses/1546",
-            "_license_permissions": [],
-            "_license_id": "licenses/1546",
-            "_sourceURL": "http://open-license.hitachi.com/licenses/1546",
-            "_license_name": "EU DataGrid Software License",
-            "_license_summary": "https://opensource.org/licenses/EUDatagrid",
-            "_license_description": "",
-            "_license_baseUri": "http://open-license.hitachi.com/",
-            "_license_schemaVersion": "0.1",
-            "_implications": {
-                "__impliedNames": [
-                    "EU DataGrid Software License"
-                ],
-                "__impliedURLs": [
-                    [
-                        "open-license",
-                        "http://open-license.hitachi.com/licenses/1546"
-                    ]
-                ]
-            }
-        },
         "OpenSourceInitiative": {
             "text": [
                 {
@@ -317,10 +295,6 @@
         [
             "OSI Page",
             "https://opensource.org/licenses/EUDatagrid"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/1546"
         ]
     ]
 }

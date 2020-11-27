@@ -83,8 +83,6 @@ URLs
 
 -   **SPDX:** https://spdx.org/licenses/Zlib.html
 
--   **open-license:** http://open-license.hitachi.com/licenses/16
-
 -   http://www.zlib.net/zlib\_license.html
 
 -   http://www.opensource.org/licenses/Zlib
@@ -159,10 +157,6 @@ Raw Data
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
-
--   [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0)
 
 ### Raw JSON
 
@@ -416,28 +410,6 @@ Raw Data
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
-            },
-            "Hitachi open-license": {
-                "_license_uri": "http://open-license.hitachi.com/licenses/16",
-                "_license_permissions": [],
-                "_license_id": "licenses/16",
-                "_sourceURL": "http://open-license.hitachi.com/licenses/16",
-                "_license_name": "zlib/libpng license",
-                "_license_summary": "",
-                "_license_description": "",
-                "_license_baseUri": "http://open-license.hitachi.com/",
-                "_license_schemaVersion": "0.1",
-                "_implications": {
-                    "__impliedNames": [
-                        "zlib/libpng license"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "open-license",
-                            "http://open-license.hitachi.com/licenses/16"
-                        ]
-                    ]
-                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
@@ -821,10 +793,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/Zlib"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/16"
             ]
         ]
     }

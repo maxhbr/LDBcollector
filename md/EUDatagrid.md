@@ -38,8 +38,6 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/EUDatagrid.json
 
--   **open-license:** http://open-license.hitachi.com/licenses/1546
-
 -   http://www.eu-egee.org/
 
 -   http://www.opensource.org/licenses/EUDatagrid
@@ -99,10 +97,6 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
-
--   [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0)
 
 ### Raw JSON
 
@@ -301,28 +295,6 @@ Raw Data
                     ]
                 }
             },
-            "Hitachi open-license": {
-                "_license_uri": "http://open-license.hitachi.com/licenses/1546",
-                "_license_permissions": [],
-                "_license_id": "licenses/1546",
-                "_sourceURL": "http://open-license.hitachi.com/licenses/1546",
-                "_license_name": "EU DataGrid Software License",
-                "_license_summary": "https://opensource.org/licenses/EUDatagrid",
-                "_license_description": "",
-                "_license_baseUri": "http://open-license.hitachi.com/",
-                "_license_schemaVersion": "0.1",
-                "_implications": {
-                    "__impliedNames": [
-                        "EU DataGrid Software License"
-                    ],
-                    "__impliedURLs": [
-                        [
-                            "open-license",
-                            "http://open-license.hitachi.com/licenses/1546"
-                        ]
-                    ]
-                }
-            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -425,10 +397,6 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/EUDatagrid"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/1546"
             ]
         ]
     }
