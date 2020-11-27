@@ -18,8 +18,8 @@
 ** Description
 
 #+BEGIN_QUOTE
-  "DOM4J"は、MetaStuff, Ltd.の登録商標である。 正当なクレジットは"DOM4J
-  Project http://www.dom4j.org/"にある。
+  "DOM4J" is a registered trademark of MetaStuff, Ltd. Legitimate credit
+  can be found at "DOM4J Project http://www.dom4j.org/".
 #+END_QUOTE
 
 (source: [[https://github.com/Hitachi/open-license][Hitachi
@@ -293,16 +293,16 @@ open-license]] (CDLA-Permissive-1.0))
               "_license_permissions": [
                   {
                       "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
+                      "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
                       "_permission_conditionHead": null,
                       "_permission_actions": [
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                              "_action_description": "Use the fetched code as it is.",
                               "_action_uri": "http://open-license.hitachi.com/actions/1",
                               "_action_id": "actions/1",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
+                              "_action_name": "Use the obtained source code without modification"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -310,7 +310,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/3",
                               "_action_id": "actions/3",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
+                              "_action_name": "Modify the obtained source code."
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -318,15 +318,15 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/4",
                               "_action_id": "actions/4",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
+                              "_action_name": "Using Modified Source Code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ãããã¤ããªããã®ã¾ã¾ä½¿ã",
+                              "_action_description": "Use the fetched binary as it is.",
                               "_action_uri": "http://open-license.hitachi.com/actions/6",
                               "_action_id": "actions/6",
-                              "_action_name": "åå¾ãããã¤ããªãä½¿ç¨ãã"
+                              "_action_name": "Use the retrieved binaries"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -334,13 +334,13 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/8",
                               "_action_id": "actions/8",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãä½¿ç¨ãã"
+                              "_action_name": "Use binaries generated from modified source code"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
+                      "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeAnd",
                           "contents": [
@@ -349,7 +349,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/68",
                                       "_condition_id": "conditions/68",
-                                      "_condition_name": "å½è©²ã½ããã¦ã§ã¢ã«å«ã¾ããèä½æ¨©è¡¨ç¤ºãå«ãã",
+                                      "_condition_name": "Include the copyright notice contained in the software",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -361,7 +361,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/8",
                                       "_condition_id": "conditions/8",
-                                      "_condition_name": "å½è©²ã©ã¤ã»ã³ã¹ã®ã³ãã¼ãæ¸¡ã",
+                                      "_condition_name": "Give you a copy of the relevant license.",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -374,10 +374,10 @@ open-license]] (CDLA-Permissive-1.0))
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                              "_action_description": "Redistribute the code as it was obtained",
                               "_action_uri": "http://open-license.hitachi.com/actions/9",
                               "_action_id": "actions/9",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
+                              "_action_name": "Distribute the obtained source code without modification"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -385,19 +385,19 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/12",
                               "_action_id": "actions/12",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
+                              "_action_name": "Distribution of Modified Source Code"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
+                      "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeLeaf",
                           "contents": {
                               "_condition_uri": "http://open-license.hitachi.com/conditions/2",
                               "_condition_id": "conditions/2",
-                              "_condition_name": "é å¸ç©ã«ä»å±ããè³æã«ãã©ã¤ã»ã³ã¹ã«å«ã¾ãã¦ããèä½æ¨©è¡¨ç¤ºãæ¡ä»¶ä¸è¦§ãåè²¬äºé ãå«ãã",
+                              "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                               "_condition_description": "",
                               "_condition_schemaVersion": "0.1",
                               "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -408,10 +408,10 @@ open-license]] (CDLA-Permissive-1.0))
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ãããã¤ããªããã®ã¾ã¾åé å¸ãã",
+                              "_action_description": "Redistribute the fetched binaries as they are",
                               "_action_uri": "http://open-license.hitachi.com/actions/11",
                               "_action_id": "actions/11",
-                              "_action_name": "åå¾ãããã¤ããªãé å¸ãã"
+                              "_action_name": "Distribute the fetched binaries"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -419,19 +419,19 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/14",
                               "_action_id": "actions/14",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãé å¸ãã"
+                              "_action_name": "Distribute the generated binaries from modified source code"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "\"DOM4J\"ã¨ããåç§°ãä½¿ãå ´åã\r\ndom4j-info@metastuff.comã«é£çµ¡ãã¦ãMetaStuff, Ltd.ã®è¨±å¯ãåãã",
+                      "_permission_description": "\"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from MetaStuff, Ltd.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeLeaf",
                           "contents": {
                               "_condition_uri": "http://open-license.hitachi.com/conditions/3",
                               "_condition_id": "conditions/3",
-                              "_condition_name": "æ¸é¢ã«ããç¹å¥ãªè¨±å¯ãåã",
+                              "_condition_name": "Get special permission in writing.",
                               "_condition_description": "",
                               "_condition_schemaVersion": "0.1",
                               "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -445,19 +445,19 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/29",
                               "_action_id": "actions/29",
-                              "_action_name": "æ´¾çããè£½åã®æ¨å¥¨ãè²©å£²ä¿é²ã«åç§°ãä½¿ã"
+                              "_action_name": "Use the name to endorse and promote derived products"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "\"DOM4J\"ã¨ããåç§°ãä½¿ãå ´åã\r\nMetaStuff, Ltd.ã®è¨±å¯ãåãã\r\n\"DOM4J\"ã¯ãMetaStuff, Ltd.ã®ç»é²åæ¨ã§ããã",
+                      "_permission_description": "\"If you use the name \"DOM4J\", you have the permission of MetaStuff, Ltd.\" DOM4J\" is a registered trademark of MetaStuff, Ltd.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeLeaf",
                           "contents": {
                               "_condition_uri": "http://open-license.hitachi.com/conditions/3",
                               "_condition_id": "conditions/3",
-                              "_condition_name": "æ¸é¢ã«ããç¹å¥ãªè¨±å¯ãåã",
+                              "_condition_name": "Get special permission in writing.",
                               "_condition_description": "",
                               "_condition_schemaVersion": "0.1",
                               "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -471,7 +471,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/30",
                               "_action_id": "actions/30",
-                              "_action_name": "æ´¾çããè£½åã®è£½ååã¾ãã¯è£½ååã®ä¸é¨ã«åç§°ãä½¿ã"
+                              "_action_name": "Use the name of the product or part of the name of the product from which it was derived"
                           }
                       ]
                   }
@@ -483,8 +483,8 @@ open-license]] (CDLA-Permissive-1.0))
               "_license_content": "Copyright 2001-2005 (C) MetaStuff, Ltd. \r\nAll Rights Reserved. \r\n\r\nRedistribution and use of this software and \r\nassociated documentation (\"Software\"), with \r\nor without modification, are permitted provided \r\nthat the following conditions are met: \r\n\r\n1. Redistributions of source code must retain \r\n   copyright statements and notices. Redistributions \r\n   must also contain a copy of this document. \r\n2. Redistributions in binary form must reproduce \r\n   the above copyright notice, this list of conditions \r\n   and the following disclaimer in the documentation \r\n   and/or other materials provided with the distribution. \r\n3. The name \"DOM4J\" must not be used to endorse or promote \r\n   products derived from this Software without prior written \r\n   permission of MetaStuff, Ltd. For written permission, \r\n   please contact dom4j-info@metastuff.com. \r\n4. Products derived from this Software may not be called \r\n   \"DOM4J\" nor may \"DOM4J\" appear in their names without \r\n   prior written permission of MetaStuff, Ltd. DOM4J is a \r\n   registered trademark of MetaStuff, Ltd. \r\n5. Due credit should be given to the DOM4J Project \r\n   http://www.dom4j.org/ \r\n\r\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS \r\n\"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, \r\nBUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY \r\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO \r\nEVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR \r\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR \r\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT \r\nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; \r\nOR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \r\n LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT \r\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY \r\nOF SUCH DAMAGE.",
               "_license_notices": [
                   {
-                      "_notice_description": "ç¡ä¿è¨¼ã§ãã",
-                      "_notice_content": "å½è©²ã½ããã¦ã§ã¢ã¯ãèä½æ¨©èããã³ã³ã³ããªãã¥ã¼ã¿ã«ãã£ã¦ãç¾ç¶ã®ã¾ã¾(as-is)ãã§æä¾ããã¦ãããæç¤ºã§ãããé»ç¤ºã§ããããåããããããªãä¿è¨¼ããªããããã§ããä¿è¨¼ã¨ã¯ãåæ¥­çãªä½¿ç¨å¯è½æ§ãããã³ãç¹å®ã®ç®çã«å¯¾ããé©åæ§ã«é¢ããæé»ã®ä¿è¨¼ãå«ãããããã«éå®ããããã®ã§ã¯ãªãã",
+                      "_notice_description": "There is no guarantee.",
+                      "_notice_content": "the software is provided by the copyright holders and contributors \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
                       "_notice_baseUri": "http://open-license.hitachi.com/",
                       "_notice_schemaVersion": "0.1",
                       "_notice_uri": "http://open-license.hitachi.com/notices/5",
@@ -492,14 +492,14 @@ open-license]] (CDLA-Permissive-1.0))
                   },
                   {
                       "_notice_description": "",
-                      "_notice_content": "èä½æ¨©èãã³ã³ããªãã¥ã¼ã¿ããäºç±ã®å¦ä½ãåãããæå®³çºçã®åå å¦ä½ãåããããã¤ãè²¬ä»»ã®æ ¹æ ãå¥ç´ã§ãããå³æ ¼è²¬ä»»ã§ããã(éå¤±ãå«ã)ä¸æ³è¡çºã§ããããåãããä»®ã«ãã®ãããªæå®³ãçºçããå¯è½æ§ãç¥ãããã¦ããã¨ãã¦ããå½è©²ã½ããã¦ã§ã¢ã®ä½¿ç¨ã«ãã£ã¦çºçããç´æ¥æå®³ãéæ¥æå®³ãä»éçæå®³ãç¹å¥æå®³ãæ²ç½°çæå®³ãã¾ãã¯ãæ´¾ççæå®³ã®ãããã«å¯¾ãã¦ã(ä»£æ¿åã¾ãã¯ä»£ç¨ãµã¼ãã¹ã®èª¿éãä½¿ç¨ã®åªå¤±ããã¼ã¿ã®åªå¤±ãå©çã®åªå¤±ã«å¯¾ããè£åãã¾ãã¯ãæ¥­åã®ä¸­æ­ã«å¯¾ããè£åãå«ããããããã«éå®ãããªãè£åãå«ã)ä¸åè²¬ä»»ãè² ããªããã®ã¨ããã",
+                      "_notice_content": "Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. for any direct, indirect, incidental, special, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or services, loss of use, loss of data, loss of profits, or business interruption). It shall not be defeated.",
                       "_notice_baseUri": "http://open-license.hitachi.com/",
                       "_notice_schemaVersion": "0.1",
                       "_notice_uri": "http://open-license.hitachi.com/notices/6",
                       "_notice_id": "notices/6"
                   }
               ],
-              "_license_description": "\"DOM4J\"ã¯ãMetaStuff, Ltd.ã®ç»é²åæ¨ã§ããã\r\n\r\næ­£å½ãªã¯ã¬ã¸ããã¯\"DOM4J Project http://www.dom4j.org/\"ã«ããã\r\n",
+              "_license_description": "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\".",
               "_license_baseUri": "http://open-license.hitachi.com/",
               "_license_schemaVersion": "0.1",
               "_implications": {

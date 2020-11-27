@@ -428,10 +428,10 @@ Raw Data
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
                                 "_action_schemaVersion": "0.1",
-                                "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                                "_action_description": "Use the fetched code as it is.",
                                 "_action_uri": "http://open-license.hitachi.com/actions/1",
                                 "_action_id": "actions/1",
-                                "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
+                                "_action_name": "Use the obtained source code without modification"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
@@ -439,23 +439,23 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/4",
                                 "_action_id": "actions/4",
-                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
+                                "_action_name": "Using Modified Source Code"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
                                 "_action_schemaVersion": "0.1",
-                                "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                                "_action_description": "Use the fetched code as it is.",
                                 "_action_uri": "http://open-license.hitachi.com/actions/5",
                                 "_action_id": "actions/5",
-                                "_action_name": "åå¾ãããªãã¸ã§ã¯ãã³ã¼ããä½¿ç¨ãã"
+                                "_action_name": "Use the retrieved object code"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
                                 "_action_schemaVersion": "0.1",
-                                "_action_description": "åå¾ãããã¤ããªããã®ã¾ã¾ä½¿ã",
+                                "_action_description": "Use the fetched binary as it is.",
                                 "_action_uri": "http://open-license.hitachi.com/actions/6",
                                 "_action_id": "actions/6",
-                                "_action_name": "åå¾ãããã¤ããªãä½¿ç¨ãã"
+                                "_action_name": "Use the retrieved binaries"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
@@ -463,7 +463,7 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/7",
                                 "_action_id": "actions/7",
-                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããªãã¸ã§ã¯ãã³ã¼ããä½¿ç¨ãã"
+                                "_action_name": "Use the object code generated from the modified source code"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
@@ -471,15 +471,15 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/8",
                                 "_action_id": "actions/8",
-                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãä½¿ç¨ãã"
+                                "_action_name": "Use binaries generated from modified source code"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
                                 "_action_schemaVersion": "0.1",
-                                "_action_description": "åå¾ããå®è¡å½¢å¼ããã®ã¾ã¾ä½¿ã",
+                                "_action_description": "Use the obtained executable as is.",
                                 "_action_uri": "http://open-license.hitachi.com/actions/84",
                                 "_action_id": "actions/84",
-                                "_action_name": "åå¾ããå®è¡å½¢å¼ãä½¿ç¨ãã"
+                                "_action_name": "Use the retrieved executable"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
@@ -487,13 +487,13 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/87",
                                 "_action_id": "actions/87",
-                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæããå®è¡å½¢å¼ãä½¿ç¨ãã"
+                                "_action_name": "Use the executable generated from the modified source code"
                             }
                         ]
                     },
                     {
                         "_permission_summary": "",
-                        "_permission_description": "è£½åã§ä½¿ç¨ããå ´åãè£½åã®ææ¸ã«è¬è¾ãå¥ãã¨å¹¸ãã ããå¿é ã§ã¯ãªãã",
+                        "_permission_description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.",
                         "_permission_conditionHead": {
                             "tag": "OlConditionTreeAnd",
                             "contents": [
@@ -502,7 +502,7 @@ Raw Data
                                     "contents": {
                                         "_condition_uri": "http://open-license.hitachi.com/conditions/55",
                                         "_condition_id": "conditions/55",
-                                        "_condition_name": "å½è©²ã½ããã¦ã§ã¢ã®åºèªãæ­£ããè¡¨ç¤ºãã",
+                                        "_condition_name": "Correctly indicate the origin of the software in question",
                                         "_condition_description": "",
                                         "_condition_schemaVersion": "0.1",
                                         "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -514,7 +514,7 @@ Raw Data
                                     "contents": {
                                         "_condition_uri": "http://open-license.hitachi.com/conditions/8",
                                         "_condition_id": "conditions/8",
-                                        "_condition_name": "å½è©²ã©ã¤ã»ã³ã¹ã®ã³ãã¼ãæ¸¡ã",
+                                        "_condition_name": "Give you a copy of the relevant license.",
                                         "_condition_description": "",
                                         "_condition_schemaVersion": "0.1",
                                         "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -527,22 +527,22 @@ Raw Data
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
                                 "_action_schemaVersion": "0.1",
-                                "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                                "_action_description": "Redistribute the code as it was obtained",
                                 "_action_uri": "http://open-license.hitachi.com/actions/9",
                                 "_action_id": "actions/9",
-                                "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
+                                "_action_name": "Distribute the obtained source code without modification"
                             }
                         ]
                     },
                     {
                         "_permission_summary": "",
-                        "_permission_description": "è£½åã§ä½¿ç¨ããå ´åãè£½åã®ææ¸ã«è¬è¾ãå¥ãã¨å¹¸ãã ããå¿é ã§ã¯ãªãã",
+                        "_permission_description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.",
                         "_permission_conditionHead": {
                             "tag": "OlConditionTreeLeaf",
                             "contents": {
                                 "_condition_uri": "http://open-license.hitachi.com/conditions/55",
                                 "_condition_id": "conditions/55",
-                                "_condition_name": "å½è©²ã½ããã¦ã§ã¢ã®åºèªãæ­£ããè¡¨ç¤ºãã",
+                                "_condition_name": "Correctly indicate the origin of the software in question",
                                 "_condition_description": "",
                                 "_condition_schemaVersion": "0.1",
                                 "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -553,32 +553,32 @@ Raw Data
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
                                 "_action_schemaVersion": "0.1",
-                                "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                                "_action_description": "Redistribute the code as it was obtained",
                                 "_action_uri": "http://open-license.hitachi.com/actions/10",
                                 "_action_id": "actions/10",
-                                "_action_name": "åå¾ãããªãã¸ã§ã¯ãã³ã¼ããé å¸ãã"
+                                "_action_name": "Distribute the obtained object code"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
                                 "_action_schemaVersion": "0.1",
-                                "_action_description": "åå¾ãããã¤ããªããã®ã¾ã¾åé å¸ãã",
+                                "_action_description": "Redistribute the fetched binaries as they are",
                                 "_action_uri": "http://open-license.hitachi.com/actions/11",
                                 "_action_id": "actions/11",
-                                "_action_name": "åå¾ãããã¤ããªãé å¸ãã"
+                                "_action_name": "Distribute the fetched binaries"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
                                 "_action_schemaVersion": "0.1",
-                                "_action_description": "åå¾ããå®è¡å½¢å¼ããã®ã¾ã¾åé å¸ãã",
+                                "_action_description": "Redistribute the obtained executable as-is",
                                 "_action_uri": "http://open-license.hitachi.com/actions/86",
                                 "_action_id": "actions/86",
-                                "_action_name": "åå¾ããå®è¡å½¢å¼ãé å¸ãã"
+                                "_action_name": "Distribute the obtained executable"
                             }
                         ]
                     },
                     {
                         "_permission_summary": "",
-                        "_permission_description": "è£½åã§ä½¿ç¨ããå ´åãè£½åã®ææ¸ã«è¬è¾ãå¥ãã¨å¹¸ãã ããå¿é ã§ã¯ãªãã",
+                        "_permission_description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.",
                         "_permission_conditionHead": {
                             "tag": "OlConditionTreeAnd",
                             "contents": [
@@ -587,7 +587,7 @@ Raw Data
                                     "contents": {
                                         "_condition_uri": "http://open-license.hitachi.com/conditions/55",
                                         "_condition_id": "conditions/55",
-                                        "_condition_name": "å½è©²ã½ããã¦ã§ã¢ã®åºèªãæ­£ããè¡¨ç¤ºãã",
+                                        "_condition_name": "Correctly indicate the origin of the software in question",
                                         "_condition_description": "",
                                         "_condition_schemaVersion": "0.1",
                                         "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -599,7 +599,7 @@ Raw Data
                                     "contents": {
                                         "_condition_uri": "http://open-license.hitachi.com/conditions/30",
                                         "_condition_id": "conditions/30",
-                                        "_condition_name": "èªèº«ãå¤æ´ãããã¨ãæç¤ºããã",
+                                        "_condition_name": "Indicate that you have made the change yourself.",
                                         "_condition_description": "",
                                         "_condition_schemaVersion": "0.1",
                                         "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -615,7 +615,7 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/3",
                                 "_action_id": "actions/3",
-                                "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
+                                "_action_name": "Modify the obtained source code."
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
@@ -623,7 +623,7 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/13",
                                 "_action_id": "actions/13",
-                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããªãã¸ã§ã¯ãã³ã¼ããé å¸ãã"
+                                "_action_name": "Distribute the object code generated from the modified source code"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
@@ -631,7 +631,7 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/14",
                                 "_action_id": "actions/14",
-                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãé å¸ãã"
+                                "_action_name": "Distribute the generated binaries from modified source code"
                             },
                             {
                                 "_action_baseUri": "http://open-license.hitachi.com/",
@@ -639,13 +639,13 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/89",
                                 "_action_id": "actions/89",
-                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæããå®è¡å½¢å¼ãé å¸ãã"
+                                "_action_name": "Distribute the executable generated from the modified source code"
                             }
                         ]
                     },
                     {
                         "_permission_summary": "",
-                        "_permission_description": "è£½åã§ä½¿ç¨ããå ´åãè£½åã®ææ¸ã«è¬è¾ãå¥ãã¨å¹¸ãã ããå¿é ã§ã¯ãªãã",
+                        "_permission_description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.",
                         "_permission_conditionHead": {
                             "tag": "OlConditionTreeAnd",
                             "contents": [
@@ -654,7 +654,7 @@ Raw Data
                                     "contents": {
                                         "_condition_uri": "http://open-license.hitachi.com/conditions/55",
                                         "_condition_id": "conditions/55",
-                                        "_condition_name": "å½è©²ã½ããã¦ã§ã¢ã®åºèªãæ­£ããè¡¨ç¤ºãã",
+                                        "_condition_name": "Correctly indicate the origin of the software in question",
                                         "_condition_description": "",
                                         "_condition_schemaVersion": "0.1",
                                         "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -666,7 +666,7 @@ Raw Data
                                     "contents": {
                                         "_condition_uri": "http://open-license.hitachi.com/conditions/30",
                                         "_condition_id": "conditions/30",
-                                        "_condition_name": "èªèº«ãå¤æ´ãããã¨ãæç¤ºããã",
+                                        "_condition_name": "Indicate that you have made the change yourself.",
                                         "_condition_description": "",
                                         "_condition_schemaVersion": "0.1",
                                         "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -678,7 +678,7 @@ Raw Data
                                     "contents": {
                                         "_condition_uri": "http://open-license.hitachi.com/conditions/8",
                                         "_condition_id": "conditions/8",
-                                        "_condition_name": "å½è©²ã©ã¤ã»ã³ã¹ã®ã³ãã¼ãæ¸¡ã",
+                                        "_condition_name": "Give you a copy of the relevant license.",
                                         "_condition_description": "",
                                         "_condition_schemaVersion": "0.1",
                                         "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -694,7 +694,7 @@ Raw Data
                                 "_action_description": "",
                                 "_action_uri": "http://open-license.hitachi.com/actions/12",
                                 "_action_id": "actions/12",
-                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
+                                "_action_name": "Distribution of Modified Source Code"
                             }
                         ]
                     }
@@ -706,8 +706,8 @@ Raw Data
                 "_license_content": "The zlib/libpng License\r\n\r\nCopyright (c) ï¼yearï¼ ï¼copyright holdersï¼\r\n\r\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\r\n\r\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\r\n\r\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \r\n        the original software. If you use this software in a product, an acknowledgment in the product \r\n        documentation  would be appreciated but is not required.\r\n\r\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \r\n         the original software.\r\n\r\n      3. This notice may not be removed or altered from any source distribution.",
                 "_license_notices": [
                     {
-                        "_notice_description": "ç¡ä¿è¨¼ã§ãã",
-                        "_notice_content": "å½è©²ã½ããã¦ã§ã¢ã¯ããç¾ç¶ã®ã¾ã¾(as-is)ãã§æä¾ããã¦ãããæç¤ºã§ãããé»ç¤ºã§ããããåããããããªãä¿è¨¼ããªãã",
+                        "_notice_description": "There is no guarantee.",
+                        "_notice_content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied.",
                         "_notice_baseUri": "http://open-license.hitachi.com/",
                         "_notice_schemaVersion": "0.1",
                         "_notice_uri": "http://open-license.hitachi.com/notices/1",
@@ -715,7 +715,7 @@ Raw Data
                     },
                     {
                         "_notice_description": "",
-                        "_notice_content": "èä½èã¯ãå½è©²ã½ããã¦ã§ã¢ã®ä½¿ç¨ã«ãã£ã¦çºçããæå®³ã®ãããã«å¯¾ãã¦ãä¸åè²¬ä»»ãè² ããªããã®ã¨ããã",
+                        "_notice_content": "The author shall not be liable for any damage caused by the use of such software.",
                         "_notice_baseUri": "http://open-license.hitachi.com/",
                         "_notice_schemaVersion": "0.1",
                         "_notice_uri": "http://open-license.hitachi.com/notices/132",

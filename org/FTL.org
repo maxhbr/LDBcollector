@@ -14,10 +14,12 @@
 ** Description
 
 #+BEGIN_QUOTE
-  ●"package"、"FreeType Project"、"FreeType archive"は、"FreeType
-  Project"として著作者(David Turner, Robert Wilhelm, and Werner
-  Lemberg)が頒布する元々のソースコード、バイナリ、関連文書の全てをさす。
-  ●サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することを指す。
+  package", "FreeType Project", and "FreeType archive" are the original
+  source code distributed by the authors (David Turner, Robert Wilhelm,
+  and Werner Lemberg) as "FreeType Project". Sublicense means all
+  binaries and related documentation. Sublicensing means that a person
+  who has been granted this license re-grants the license granted to a
+  third party.
 #+END_QUOTE
 
 (source: [[https://github.com/Hitachi/open-license][Hitachi
@@ -375,14 +377,14 @@ open-license]] (CDLA-Permissive-1.0))
               "_license_permissions": [
                   {
                       "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
+                      "_permission_description": "Related documents should be treated in the same way as software.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeLeaf",
                           "contents": {
                               "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                               "_condition_id": "conditions/246",
-                              "_condition_name": "æ¬ã©ã¤ã»ã³ã¹ã«å¾ã£ã¦ãç¡å¶éã§ä¸çè¦æ¨¡ã§ä½¿ç¨æç¡æã§ãµãã©ã¤ã»ã³ã¹å¯è½ãªèä½æ¨©ã©ã¤ã»ã³ã¹ãä»ä¸ããã",
-                              "_condition_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãããã",
+                              "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                              "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                               "_condition_schemaVersion": "0.1",
                               "_condition_baseUri": "http://open-license.hitachi.com/",
                               "_condition_conditionType": "RESTRICTION"
@@ -392,10 +394,10 @@ open-license]] (CDLA-Permissive-1.0))
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                              "_action_description": "Use the fetched code as it is.",
                               "_action_uri": "http://open-license.hitachi.com/actions/1",
                               "_action_id": "actions/1",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
+                              "_action_name": "Use the obtained source code without modification"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -403,15 +405,15 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/4",
                               "_action_id": "actions/4",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
+                              "_action_name": "Using Modified Source Code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ãããã¤ããªããã®ã¾ã¾ä½¿ã",
+                              "_action_description": "Use the fetched binary as it is.",
                               "_action_uri": "http://open-license.hitachi.com/actions/6",
                               "_action_id": "actions/6",
-                              "_action_name": "åå¾ãããã¤ããªãä½¿ç¨ãã"
+                              "_action_name": "Use the retrieved binaries"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -419,13 +421,13 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/8",
                               "_action_id": "actions/8",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãä½¿ç¨ãã"
+                              "_action_name": "Use binaries generated from modified source code"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
+                      "_permission_description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeAnd",
                           "contents": [
@@ -434,8 +436,8 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                                       "_condition_id": "conditions/246",
-                                      "_condition_name": "æ¬ã©ã¤ã»ã³ã¹ã«å¾ã£ã¦ãç¡å¶éã§ä¸çè¦æ¨¡ã§ä½¿ç¨æç¡æã§ãµãã©ã¤ã»ã³ã¹å¯è½ãªèä½æ¨©ã©ã¤ã»ã³ã¹ãä»ä¸ããã",
-                                      "_condition_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãããã",
+                                      "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                      "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
                                       "_condition_conditionType": "RESTRICTION"
@@ -446,7 +448,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                                       "_condition_id": "conditions/13",
-                                      "_condition_name": "è¬è¾ãå«ãã",
+                                      "_condition_name": "Acknowledgements",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -459,34 +461,34 @@ open-license]] (CDLA-Permissive-1.0))
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/19",
                               "_action_id": "actions/19",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicense the acquired source code."
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/25",
                               "_action_id": "actions/25",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicensing Modified Source Code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/33",
                               "_action_id": "actions/33",
-                              "_action_name": "åå¾ãããã¤ããªããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicense the acquired binaries"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/34",
                               "_action_id": "actions/34",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicense the generated binaries from modified source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -494,7 +496,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/114",
                               "_action_id": "actions/114",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããè¡¨ç¤ºãã"
+                              "_action_name": "Display the obtained source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -502,7 +504,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/115",
                               "_action_id": "actions/115",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããå®è¡ãã"
+                              "_action_name": "Execute the obtained source code."
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -510,7 +512,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/118",
                               "_action_id": "actions/118",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããè¡¨ç¤ºãã"
+                              "_action_name": "Display the modified source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -518,7 +520,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/119",
                               "_action_id": "actions/119",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããå®è¡ãã"
+                              "_action_name": "Executing Modified Source Code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -526,7 +528,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/287",
                               "_action_id": "actions/287",
-                              "_action_name": "åå¾ãããã¤ããªãè¡¨ç¤ºãã"
+                              "_action_name": "Display the retrieved binary"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -534,7 +536,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/288",
                               "_action_id": "actions/288",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãè¡¨ç¤ºãã"
+                              "_action_name": "Display the generated binary from the modified source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -542,7 +544,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/289",
                               "_action_id": "actions/289",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãå®è¡ãã"
+                              "_action_name": "Execute the generated binary from the modified source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -550,13 +552,13 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/290",
                               "_action_id": "actions/290",
-                              "_action_name": "åå¾ãããã¤ããªãå®è¡ãã"
+                              "_action_name": "Execute the obtained binary"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
+                      "_permission_description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeAnd",
                           "contents": [
@@ -565,8 +567,8 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                                       "_condition_id": "conditions/246",
-                                      "_condition_name": "æ¬ã©ã¤ã»ã³ã¹ã«å¾ã£ã¦ãç¡å¶éã§ä¸çè¦æ¨¡ã§ä½¿ç¨æç¡æã§ãµãã©ã¤ã»ã³ã¹å¯è½ãªèä½æ¨©ã©ã¤ã»ã³ã¹ãä»ä¸ããã",
-                                      "_condition_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãããã",
+                                      "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                      "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
                                       "_condition_conditionType": "RESTRICTION"
@@ -577,7 +579,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/8",
                                       "_condition_id": "conditions/8",
-                                      "_condition_name": "å½è©²ã©ã¤ã»ã³ã¹ã®ã³ãã¼ãæ¸¡ã",
+                                      "_condition_name": "Give you a copy of the relevant license.",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -589,7 +591,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/68",
                                       "_condition_id": "conditions/68",
-                                      "_condition_name": "å½è©²ã½ããã¦ã§ã¢ã«å«ã¾ããèä½æ¨©è¡¨ç¤ºãå«ãã",
+                                      "_condition_name": "Include the copyright notice contained in the software",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -601,7 +603,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                                       "_condition_id": "conditions/13",
-                                      "_condition_name": "è¬è¾ãå«ãã",
+                                      "_condition_name": "Acknowledgements",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -614,16 +616,16 @@ open-license]] (CDLA-Permissive-1.0))
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                              "_action_description": "Redistribute the code as it was obtained",
                               "_action_uri": "http://open-license.hitachi.com/actions/9",
                               "_action_id": "actions/9",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
+                              "_action_name": "Distribute the obtained source code without modification"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã \r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \" \r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
+                      "_permission_description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeAnd",
                           "contents": [
@@ -632,8 +634,8 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                                       "_condition_id": "conditions/246",
-                                      "_condition_name": "æ¬ã©ã¤ã»ã³ã¹ã«å¾ã£ã¦ãç¡å¶éã§ä¸çè¦æ¨¡ã§ä½¿ç¨æç¡æã§ãµãã©ã¤ã»ã³ã¹å¯è½ãªèä½æ¨©ã©ã¤ã»ã³ã¹ãä»ä¸ããã",
-                                      "_condition_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãããã",
+                                      "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                      "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
                                       "_condition_conditionType": "RESTRICTION"
@@ -644,7 +646,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/318",
                                       "_condition_id": "conditions/318",
-                                      "_condition_name": "é å¸ç©ã«ä»å±ããè³æã«ãèªèº«ãå¤æ´ãããã¨ãæç¤ºãã",
+                                      "_condition_name": "Indicate your changes in the materials that accompany the distribution.",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -656,7 +658,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/68",
                                       "_condition_id": "conditions/68",
-                                      "_condition_name": "å½è©²ã½ããã¦ã§ã¢ã«å«ã¾ããèä½æ¨©è¡¨ç¤ºãå«ãã",
+                                      "_condition_name": "Include the copyright notice contained in the software",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -668,7 +670,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                                       "_condition_id": "conditions/13",
-                                      "_condition_name": "è¬è¾ãå«ãã",
+                                      "_condition_name": "Acknowledgements",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -684,13 +686,13 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/3",
                               "_action_id": "actions/3",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
+                              "_action_name": "Modify the obtained source code."
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
+                      "_permission_description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeAnd",
                           "contents": [
@@ -699,8 +701,8 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                                       "_condition_id": "conditions/246",
-                                      "_condition_name": "æ¬ã©ã¤ã»ã³ã¹ã«å¾ã£ã¦ãç¡å¶éã§ä¸çè¦æ¨¡ã§ä½¿ç¨æç¡æã§ãµãã©ã¤ã»ã³ã¹å¯è½ãªèä½æ¨©ã©ã¤ã»ã³ã¹ãä»ä¸ããã",
-                                      "_condition_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãããã",
+                                      "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                      "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
                                       "_condition_conditionType": "RESTRICTION"
@@ -711,7 +713,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/8",
                                       "_condition_id": "conditions/8",
-                                      "_condition_name": "å½è©²ã©ã¤ã»ã³ã¹ã®ã³ãã¼ãæ¸¡ã",
+                                      "_condition_name": "Give you a copy of the relevant license.",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -723,7 +725,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/318",
                                       "_condition_id": "conditions/318",
-                                      "_condition_name": "é å¸ç©ã«ä»å±ããè³æã«ãèªèº«ãå¤æ´ãããã¨ãæç¤ºãã",
+                                      "_condition_name": "Indicate your changes in the materials that accompany the distribution.",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -735,7 +737,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/68",
                                       "_condition_id": "conditions/68",
-                                      "_condition_name": "å½è©²ã½ããã¦ã§ã¢ã«å«ã¾ããèä½æ¨©è¡¨ç¤ºãå«ãã",
+                                      "_condition_name": "Include the copyright notice contained in the software",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -747,7 +749,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                                       "_condition_id": "conditions/13",
-                                      "_condition_name": "è¬è¾ãå«ãã",
+                                      "_condition_name": "Acknowledgements",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -763,13 +765,13 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/12",
                               "_action_id": "actions/12",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
+                              "_action_name": "Distribution of Modified Source Code"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâé¢é£ææ¸ã«FreeType web pageã¸ã®URL[http://www.freetype.org]ãå¥ãããã¨ãæ¨å¥¨ããã\r\nâè¬è¾ã®åå®¹ã¯ãæ¬¡ã®æç« ãæ¨å¥¨ããã\r\n\"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). All rights reserved. \"\r\n<year>ã¯å®éã®ãã¼ã¸ã§ã³ã«æå¹ãªå¹´å·ã«ç½®ãæããã",
+                      "_permission_description": "The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements.\" Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeAnd",
                           "contents": [
@@ -778,8 +780,8 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                                       "_condition_id": "conditions/246",
-                                      "_condition_name": "æ¬ã©ã¤ã»ã³ã¹ã«å¾ã£ã¦ãç¡å¶éã§ä¸çè¦æ¨¡ã§ä½¿ç¨æç¡æã§ãµãã©ã¤ã»ã³ã¹å¯è½ãªèä½æ¨©ã©ã¤ã»ã³ã¹ãä»ä¸ããã",
-                                      "_condition_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãããã",
+                                      "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                      "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
                                       "_condition_conditionType": "RESTRICTION"
@@ -790,7 +792,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                                       "_condition_id": "conditions/13",
-                                      "_condition_name": "è¬è¾ãå«ãã",
+                                      "_condition_name": "Acknowledgements",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -803,10 +805,10 @@ open-license]] (CDLA-Permissive-1.0))
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ãããã¤ããªããã®ã¾ã¾åé å¸ãã",
+                              "_action_description": "Redistribute the fetched binaries as they are",
                               "_action_uri": "http://open-license.hitachi.com/actions/11",
                               "_action_id": "actions/11",
-                              "_action_name": "åå¾ãããã¤ããªãé å¸ãã"
+                              "_action_name": "Distribute the fetched binaries"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -814,19 +816,19 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/14",
                               "_action_id": "actions/14",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãé å¸ãã"
+                              "_action_name": "Distribute the generated binaries from modified source code"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "âé¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nâé å¸ç©ã«ä»å±ããè³æãåºåã«ãå½è©²ã½ããã¦ã§ã¢ãç¤ºã\"FreeType Project\"ã\"FreeType Engine\"ã\"FreeType library\"ã\"FreeType Distribution\"ã¨ãã£ããã¬ã¼ãºã1ã¤ä»¥ä¸ä½¿ããã¨ãæ¨å¥¨ããã",
+                      "_permission_description": "You must treat the documentation in the same way as the software. It is recommended that you use one or more of the following phrases to identify the software in any material or advertisement accompanying the distribution: \"FreeType Project\", \"FreeType Engine\", \"FreeType library\", or \"FreeType Distribution\".",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeLeaf",
                           "contents": {
                               "_condition_uri": "http://open-license.hitachi.com/conditions/3",
                               "_condition_id": "conditions/3",
-                              "_condition_name": "æ¸é¢ã«ããç¹å¥ãªè¨±å¯ãåã",
+                              "_condition_name": "Get special permission in writing.",
                               "_condition_description": "",
                               "_condition_schemaVersion": "0.1",
                               "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -840,7 +842,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/291",
                               "_action_id": "actions/291",
-                              "_action_name": "å®£ä¼ãåºåã«èä½èãã³ã³ããªãã¥ã¼ã¿ã®ååãä½¿ã"
+                              "_action_name": "Use the names of authors and contributors in publicity and advertising."
                           }
                       ]
                   }
@@ -852,8 +854,8 @@ open-license]] (CDLA-Permissive-1.0))
               "_license_content": "                    The FreeType Project LICENSE\r\n                    ----------------------------\r\n\r\n                            2006-Jan-27\r\n\r\n                    Copyright 1996-2002, 2006 by\r\n          David Turner, Robert Wilhelm, and Werner Lemberg\r\n\r\n\r\n\r\nIntroduction\r\n============\r\n\r\n  The FreeType  Project is distributed in  several archive packages;\r\n  some of them may contain, in addition to the FreeType font engine,\r\n  various tools and  contributions which rely on, or  relate to, the\r\n  FreeType Project.\r\n\r\n  This  license applies  to all  files found  in such  packages, and\r\n  which do not  fall under their own explicit  license.  The license\r\n  affects  thus  the  FreeType   font  engine,  the  test  programs,\r\n  documentation and makefiles, at the very least.\r\n\r\n  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG\r\n  (Independent JPEG  Group) licenses, which  all encourage inclusion\r\n  and  use of  free  software in  commercial  and freeware  products\r\n  alike.  As a consequence, its main points are that:\r\n\r\n    o We don't promise that this software works. However, we will be\r\n      interested in any kind of bug reports. (`as is' distribution)\r\n\r\n    o You can  use this software for whatever you  want, in parts or\r\n      full form, without having to pay us. (`royalty-free' usage)\r\n\r\n    o You may not pretend that  you wrote this software.  If you use\r\n      it, or  only parts of it,  in a program,  you must acknowledge\r\n      somewhere  in  your  documentation  that  you  have  used  the\r\n      FreeType code. (`credits')\r\n\r\n  We  specifically  permit  and  encourage  the  inclusion  of  this\r\n  software, with  or without modifications,  in commercial products.\r\n  We  disclaim  all warranties  covering  The  FreeType Project  and\r\n  assume no liability related to The FreeType Project.\r\n\r\n\r\n  Finally,  many  people  asked  us  for  a  preferred  form  for  a\r\n  credit/disclaimer to use in compliance with this license.  We thus\r\n  encourage you to use the following text:\r\n\r\n   \"\"\"\r\n    Portions of this software are copyright ï½© <year> The FreeType\r\n    Project (www.freetype.org).  All rights reserved.\r\n   \"\"\"\r\n\r\n  Please replace <year> with the value from the FreeType version you\r\n  actually use.\r\n\r\n\r\nLegal Terms\r\n===========\r\n\r\n0. Definitions\r\n--------------\r\n\r\n  Throughout this license,  the terms `package', `FreeType Project',\r\n  and  `FreeType  archive' refer  to  the  set  of files  originally\r\n  distributed  by the  authors  (David Turner,  Robert Wilhelm,  and\r\n  Werner Lemberg) as the `FreeType Project', be they named as alpha,\r\n  beta or final release.\r\n\r\n  `You' refers to  the licensee, or person using  the project, where\r\n  `using' is a generic term including compiling the project's source\r\n  code as  well as linking it  to form a  `program' or `executable'.\r\n  This  program is  referred to  as  `a program  using the  FreeType\r\n  engine'.\r\n\r\n  This  license applies  to all  files distributed  in  the original\r\n  FreeType  Project,   including  all  source   code,  binaries  and\r\n  documentation,  unless  otherwise  stated   in  the  file  in  its\r\n  original, unmodified form as  distributed in the original archive.\r\n  If you are  unsure whether or not a particular  file is covered by\r\n  this license, you must contact us to verify this.\r\n\r\n  The FreeType  Project is copyright (C) 1996-2000  by David Turner,\r\n  Robert Wilhelm, and Werner Lemberg.  All rights reserved except as\r\n  specified below.\r\n\r\n1. No Warranty\r\n--------------\r\n\r\n  THE FREETYPE PROJECT  IS PROVIDED `AS IS' WITHOUT  WARRANTY OF ANY\r\n  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,\r\n  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR\r\n  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS\r\n  BE LIABLE  FOR ANY DAMAGES CAUSED  BY THE USE OR  THE INABILITY TO\r\n  USE, OF THE FREETYPE PROJECT.\r\n\r\n2. Redistribution\r\n-----------------\r\n\r\n  This  license  grants  a  worldwide, royalty-free,  perpetual  and\r\n  irrevocable right  and license to use,  execute, perform, compile,\r\n  display,  copy,   create  derivative  works   of,  distribute  and\r\n  sublicense the  FreeType Project (in  both source and  object code\r\n  forms)  and  derivative works  thereof  for  any  purpose; and  to\r\n  authorize others  to exercise  some or all  of the  rights granted\r\n  herein, subject to the following conditions:\r\n\r\n    o Redistribution of  source code  must retain this  license file\r\n      (`FTL.TXT') unaltered; any  additions, deletions or changes to\r\n      the original  files must be clearly  indicated in accompanying\r\n      documentation.   The  copyright   notices  of  the  unaltered,\r\n      original  files must  be  preserved in  all  copies of  source\r\n      files.\r\n\r\n    o Redistribution in binary form must provide a  disclaimer  that\r\n      states  that  the software is based in part of the work of the\r\n      FreeType Team,  in  the  distribution  documentation.  We also\r\n      encourage you to put an URL to the FreeType web page  in  your\r\n      documentation, though this isn't mandatory.\r\n\r\n  These conditions  apply to any  software derived from or  based on\r\n  the FreeType Project,  not just the unmodified files.   If you use\r\n  our work, you  must acknowledge us.  However, no  fee need be paid\r\n  to us.\r\n\r\n3. Advertising\r\n--------------\r\n\r\n  Neither the  FreeType authors and  contributors nor you  shall use\r\n  the name of the  other for commercial, advertising, or promotional\r\n  purposes without specific prior written permission.\r\n\r\n  We suggest,  but do not require, that  you use one or  more of the\r\n  following phrases to refer  to this software in your documentation\r\n  or advertising  materials: `FreeType Project',  `FreeType Engine',\r\n  `FreeType library', or `FreeType Distribution'.\r\n\r\n  As  you have  not signed  this license,  you are  not  required to\r\n  accept  it.   However,  as  the FreeType  Project  is  copyrighted\r\n  material, only  this license, or  another one contracted  with the\r\n  authors, grants you  the right to use, distribute,  and modify it.\r\n  Therefore,  by  using,  distributing,  or modifying  the  FreeType\r\n  Project, you indicate that you understand and accept all the terms\r\n  of this license.\r\n\r\n4. Contacts\r\n-----------\r\n\r\n  There are two mailing lists related to FreeType:\r\n\r\n    o freetype@nongnu.org\r\n\r\n      Discusses general use and applications of FreeType, as well as\r\n      future and  wanted additions to the  library and distribution.\r\n      If  you are looking  for support,  start in  this list  if you\r\n      haven't found anything to help you in the documentation.\r\n\r\n    o freetype-devel@nongnu.org\r\n\r\n      Discusses bugs,  as well  as engine internals,  design issues,\r\n      specific licenses, porting, etc.\r\n\r\n  Our home page can be found at\r\n\r\n    http://www.freetype.org\r\n\r\n\r\n--- end of FTL.TXT ---",
               "_license_notices": [
                   {
-                      "_notice_description": "ç¡ä¿è¨¼ã§ããã",
-                      "_notice_content": "å½è©²ã½ããã¦ã§ã¢ã¯ããç¾ç¶ã®ã¾ã¾(as-is)ãã§æä¾ããã¦ãããæç¤ºã§ãããé»ç¤ºã§ããããåããããããªãä¿è¨¼ããªããããã§ããä¿è¨¼ã¨ã¯ãåæ¥­çãªä½¿ç¨å¯è½æ§ãããã³ãç¹å®ã®ç®çã«å¯¾ããé©åæ§ã«ã¤ãã¦ã®ä¿è¨¼ãå«ãããããã«éå®ããããã®ã§ã¯ãªãã",
+                      "_notice_description": "There is no guarantee.",
+                      "_notice_content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability and fitness for a particular purpose.",
                       "_notice_baseUri": "http://open-license.hitachi.com/",
                       "_notice_schemaVersion": "0.1",
                       "_notice_uri": "http://open-license.hitachi.com/notices/370",
@@ -861,14 +863,14 @@ open-license]] (CDLA-Permissive-1.0))
                   },
                   {
                       "_notice_description": "",
-                      "_notice_content": "èä½èãèä½æ¨©èããå½è©²ã½ããã¦ã§ã¢ã®ä½¿ç¨ãããã¯ä½¿ç¨ã§ããªããã¨ã«ãã£ã¦çºçããæå®³ã®ãããã«å¯¾ãã¦ãä¸åè²¬ä»»ãè² ããªããã®ã¨ããã",
+                      "_notice_content": "Neither the author nor the copyright holder shall be liable for any damage caused by the use or inability to use such software.",
                       "_notice_baseUri": "http://open-license.hitachi.com/",
                       "_notice_schemaVersion": "0.1",
                       "_notice_uri": "http://open-license.hitachi.com/notices/371",
                       "_notice_id": "notices/371"
                   }
               ],
-              "_license_description": "â\"package\"ã\"FreeType Project\"ã\"FreeType archive\"ã¯ã\"FreeType Project\"ã¨ãã¦èä½è(David Turner, Robert Wilhelm, and Werner Lemberg)ãé å¸ããåãã®ã½ã¼ã¹ã³ã¼ãããã¤ããªãé¢é£ææ¸ã®å¨ã¦ãããã\r\n\r\nâãµãã©ã¤ã»ã³ã¹ã¯ãæ¬ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã ",
+              "_license_description": "package\", \"FreeType Project\", and \"FreeType archive\" are the original source code distributed by the authors (David Turner, Robert Wilhelm, and Werner Lemberg) as \"FreeType Project\". Sublicense means all binaries and related documentation. Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
               "_license_baseUri": "http://open-license.hitachi.com/",
               "_license_schemaVersion": "0.1",
               "_implications": {

@@ -175,16 +175,16 @@
             "_license_permissions": [
                 {
                     "_permission_summary": "",
-                    "_permission_description": "著作権法を認める管轄権において、当該ソフトウェアの著作者は、当該ソフトウェアを公有に属するものとする。",
+                    "_permission_description": "In jurisdictions recognizing copyright law, the author of such software shall own the software in the public domain.",
                     "_permission_conditionHead": null,
                     "_permission_actions": [
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したコードをそのまま使う",
+                            "_action_description": "Use the fetched code as it is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/1",
                             "_action_id": "actions/1",
-                            "_action_name": "取得したソースコードを改変せずに使用する"
+                            "_action_name": "Use the obtained source code without modification"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -192,7 +192,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/3",
                             "_action_id": "actions/3",
-                            "_action_name": "取得したソースコードを改変する"
+                            "_action_name": "Modify the obtained source code."
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -200,15 +200,15 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/4",
                             "_action_id": "actions/4",
-                            "_action_name": "改変したソースコードを使用する"
+                            "_action_name": "Using Modified Source Code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したバイナリをそのまま使う",
+                            "_action_description": "Use the fetched binary as it is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/6",
                             "_action_id": "actions/6",
-                            "_action_name": "取得したバイナリを使用する"
+                            "_action_name": "Use the retrieved binaries"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -216,15 +216,15 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/8",
                             "_action_id": "actions/8",
-                            "_action_name": "改変したソースコードから生成したバイナリを使用する"
+                            "_action_name": "Use binaries generated from modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したバイナリをそのまま再頒布する",
+                            "_action_description": "Redistribute the fetched binaries as they are",
                             "_action_uri": "http://open-license.hitachi.com/actions/11",
                             "_action_id": "actions/11",
-                            "_action_name": "取得したバイナリを頒布する"
+                            "_action_name": "Distribute the fetched binaries"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -232,7 +232,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/14",
                             "_action_id": "actions/14",
-                            "_action_name": "改変したソースコードから生成したバイナリを頒布する"
+                            "_action_name": "Distribute the generated binaries from modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -240,7 +240,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/35",
                             "_action_id": "actions/35",
-                            "_action_name": "ソフトウェアを販売する"
+                            "_action_name": "Selling Software"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -248,7 +248,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/90",
                             "_action_id": "actions/90",
-                            "_action_name": "改変したソースコードを発表する"
+                            "_action_name": "Publish the modified source code."
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -256,7 +256,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/277",
                             "_action_id": "actions/277",
-                            "_action_name": "改変したソースコードから生成したバイナリを発表する"
+                            "_action_name": "Publish the binary generated from the modified source code"
                         }
                     ]
                 }
@@ -268,8 +268,8 @@
             "_license_content": "This is free and unencumbered software released into the public domain.\r\n\r\nAnyone is free to copy, modify, publish, use, compile, sell, or\r\ndistribute this software, either in source code form or as a compiled\r\nbinary, for any purpose, commercial or non-commercial, and by any\r\nmeans.\r\n\r\nIn jurisdictions that recognize copyright laws, the author or authors\r\nof this software dedicate any and all copyright interest in the\r\nsoftware to the public domain. We make this dedication for the benefit\r\nof the public at large and to the detriment of our heirs and\r\nsuccessors. We intend this dedication to be an overt act of\r\nrelinquishment in perpetuity of all present and future rights to this\r\nsoftware under copyright law.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\r\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\r\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\r\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\r\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\r\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\r\nOTHER DEALINGS IN THE SOFTWARE.\r\n\r\nFor more information, please refer to <http://unlicense.org/>",
             "_license_notices": [
                 {
-                    "_notice_description": "無保証である",
-                    "_notice_content": "当該ソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。\r\nここでいう保証とは、商業的な使用可能性、特定の目的に対する適合性、および、権利非侵害についての保証を含むが、それに限定されるものではない。",
+                    "_notice_description": "There is no guarantee.",
+                    "_notice_content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/3",

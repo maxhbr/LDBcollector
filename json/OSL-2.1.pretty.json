@@ -181,8 +181,8 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                                     "_condition_id": "conditions/246",
-                                    "_condition_name": "本ライセンスに従って、無制限で世界規模で使用料無料でサプライセンス可能な著作権ライセンスが付与される",
-                                    "_condition_description": "サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することをさす。",
+                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
                                     "_condition_conditionType": "RESTRICTION"
@@ -193,8 +193,8 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/245",
                                     "_condition_id": "conditions/245",
-                                    "_condition_name": "本ライセンスに従って、無制限で世界規模で使用料無料でサプライセンス可能な特許ライセンスが付与される",
-                                    "_condition_description": "サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することをさす。",
+                                    "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
                                     "_condition_conditionType": "RESTRICTION"
@@ -206,10 +206,10 @@
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したコードをそのまま使う",
+                            "_action_description": "Use the fetched code as it is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/1",
                             "_action_id": "actions/1",
-                            "_action_name": "取得したソースコードを改変せずに使用する"
+                            "_action_name": "Use the obtained source code without modification"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -217,15 +217,15 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/4",
                             "_action_id": "actions/4",
-                            "_action_name": "改変したソースコードを使用する"
+                            "_action_name": "Using Modified Source Code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したコードをそのまま使う",
+                            "_action_description": "Use the fetched code as it is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/5",
                             "_action_id": "actions/5",
-                            "_action_name": "取得したオブジェクトコードを使用する"
+                            "_action_name": "Use the retrieved object code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -233,15 +233,15 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/7",
                             "_action_id": "actions/7",
-                            "_action_name": "改変したソースコードから生成したオブジェクトコードを使用する"
+                            "_action_name": "Use the object code generated from the modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したコードをそのまま再頒布する",
+                            "_action_description": "Redistribute the code as it was obtained",
                             "_action_uri": "http://open-license.hitachi.com/actions/9",
                             "_action_id": "actions/9",
-                            "_action_name": "取得したソースコードを改変せずに頒布する"
+                            "_action_name": "Distribute the obtained source code without modification"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -249,7 +249,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/17",
                             "_action_id": "actions/17",
-                            "_action_name": "取得したソースコードを公に表示する"
+                            "_action_name": "Display the obtained source code publicly"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -257,7 +257,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/18",
                             "_action_id": "actions/18",
-                            "_action_name": "取得したソースコードを公に実行する"
+                            "_action_name": "Executing the fetched source code publicly"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -265,7 +265,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/20",
                             "_action_id": "actions/20",
-                            "_action_name": "取得したオブジェクトコードを公に表示する"
+                            "_action_name": "Display the retrieved object code publicly"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -273,7 +273,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/21",
                             "_action_id": "actions/21",
-                            "_action_name": "取得したオブジェクトコードを公に実行する"
+                            "_action_name": "Publicly execute the fetched object code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -281,7 +281,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/23",
                             "_action_id": "actions/23",
-                            "_action_name": "改変したソースコードを公に表示する"
+                            "_action_name": "Display modified source code publicly"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -289,7 +289,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/24",
                             "_action_id": "actions/24",
-                            "_action_name": "改変したソースコードを公に実行する"
+                            "_action_name": "Publicly execute the modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -297,7 +297,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/26",
                             "_action_id": "actions/26",
-                            "_action_name": "改変したソースコードから生成したオブジェクトコードを公に表示する"
+                            "_action_name": "Publicly display the object code generated from the modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -305,15 +305,15 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/27",
                             "_action_id": "actions/27",
-                            "_action_name": "改変したソースコードから生成したオブジェクトコードを公に実行する"
+                            "_action_name": "Publicly execute the object code generated from the modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得した実行形式をそのまま使う",
+                            "_action_description": "Use the obtained executable as is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/84",
                             "_action_id": "actions/84",
-                            "_action_name": "取得した実行形式を使用する"
+                            "_action_name": "Use the retrieved executable"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -321,7 +321,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/87",
                             "_action_id": "actions/87",
-                            "_action_name": "改変したソースコードから生成した実行形式を使用する"
+                            "_action_name": "Use the executable generated from the modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -329,7 +329,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/104",
                             "_action_id": "actions/104",
-                            "_action_name": "取得した実行形式を公に表示する"
+                            "_action_name": "Display the retrieved executable publicly"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -337,7 +337,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/105",
                             "_action_id": "actions/105",
-                            "_action_name": "取得した実行形式を公に実行する"
+                            "_action_name": "Publicly execute the retrieved executable"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -345,7 +345,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/107",
                             "_action_id": "actions/107",
-                            "_action_name": "改変したソースコードから生成した実行形式を公に表示する"
+                            "_action_name": "Publicly display the executable generated from modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -353,7 +353,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/108",
                             "_action_id": "actions/108",
-                            "_action_name": "改変したソースコードから生成した実行形式を公に実行する"
+                            "_action_name": "Publicly execute executables generated from modified source code"
                         }
                     ]
                 },
@@ -368,8 +368,8 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                                     "_condition_id": "conditions/246",
-                                    "_condition_name": "本ライセンスに従って、無制限で世界規模で使用料無料でサプライセンス可能な著作権ライセンスが付与される",
-                                    "_condition_description": "サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することをさす。",
+                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
                                     "_condition_conditionType": "RESTRICTION"
@@ -380,8 +380,8 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/245",
                                     "_condition_id": "conditions/245",
-                                    "_condition_name": "本ライセンスに従って、無制限で世界規模で使用料無料でサプライセンス可能な特許ライセンスが付与される",
-                                    "_condition_description": "サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することをさす。",
+                                    "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
                                     "_condition_conditionType": "RESTRICTION"
@@ -395,7 +395,7 @@
                                         "contents": {
                                             "_condition_uri": "http://open-license.hitachi.com/conditions/21",
                                             "_condition_id": "conditions/21",
-                                            "_condition_name": "当該ソフトウェアに対応するソースコードを添付する",
+                                            "_condition_name": "Attach the source code corresponding to the software in question.",
                                             "_condition_description": "",
                                             "_condition_schemaVersion": "0.1",
                                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -407,7 +407,7 @@
                                         "contents": {
                                             "_condition_uri": "http://open-license.hitachi.com/conditions/247",
                                             "_condition_id": "conditions/247",
-                                            "_condition_name": "元々のソフトウェアに対応するソースコードを安価で提供するリポジトリの場所を、元々のソフトウェアに適用される著作権表示の直後に記載する",
+                                            "_condition_name": "The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.",
                                             "_condition_description": "",
                                             "_condition_schemaVersion": "0.1",
                                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -422,24 +422,24 @@
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したコードをそのまま再頒布する",
+                            "_action_description": "Redistribute the code as it was obtained",
                             "_action_uri": "http://open-license.hitachi.com/actions/10",
                             "_action_id": "actions/10",
-                            "_action_name": "取得したオブジェクトコードを頒布する"
+                            "_action_name": "Distribute the obtained object code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得した実行形式をそのまま再頒布する",
+                            "_action_description": "Redistribute the obtained executable as-is",
                             "_action_uri": "http://open-license.hitachi.com/actions/86",
                             "_action_id": "actions/86",
-                            "_action_name": "取得した実行形式を頒布する"
+                            "_action_name": "Distribute the obtained executable"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "変更したことを受領者に分かるようにする。",
+                    "_permission_description": "Make sure the recipient knows that the change has been made.",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeAnd",
                         "contents": [
@@ -448,8 +448,8 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/246",
                                     "_condition_id": "conditions/246",
-                                    "_condition_name": "本ライセンスに従って、無制限で世界規模で使用料無料でサプライセンス可能な著作権ライセンスが付与される",
-                                    "_condition_description": "サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することをさす。",
+                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
                                     "_condition_conditionType": "RESTRICTION"
@@ -460,8 +460,8 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/245",
                                     "_condition_id": "conditions/245",
-                                    "_condition_name": "本ライセンスに従って、無制限で世界規模で使用料無料でサプライセンス可能な特許ライセンスが付与される",
-                                    "_condition_description": "サブライセンスは、本ライセンスを付与された者が、再度、第三者にその付与されたライセンスを供与することをさす。",
+                                    "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
                                     "_condition_conditionType": "RESTRICTION"
@@ -472,7 +472,7 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/72",
                                     "_condition_id": "conditions/72",
-                                    "_condition_name": "当該ソフトウェアに含まれている著作権、特許、および、商標の告知、ライセンス付与の告知、初期開発者、あるいは、コントリビュータへの帰属を示す記述を含める",
+                                    "_condition_name": "Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.",
                                     "_condition_description": "",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -488,7 +488,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/3",
                             "_action_id": "actions/3",
-                            "_action_name": "取得したソースコードを改変する"
+                            "_action_name": "Modify the obtained source code."
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -496,7 +496,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/12",
                             "_action_id": "actions/12",
-                            "_action_name": "改変したソースコードを頒布する"
+                            "_action_name": "Distribution of Modified Source Code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -504,7 +504,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/13",
                             "_action_id": "actions/13",
-                            "_action_name": "改変したソースコードから生成したオブジェクトコードを頒布する"
+                            "_action_name": "Distribute the object code generated from the modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -512,7 +512,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/89",
                             "_action_id": "actions/89",
-                            "_action_name": "改変したソースコードから生成した実行形式を頒布する"
+                            "_action_name": "Distribute the executable generated from the modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -520,7 +520,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/357",
                             "_action_id": "actions/357",
-                            "_action_name": "改変したソースコードから生成した実行形式をネットワーク越しの利用を意図したアプリケーションとして利用できるようにする"
+                            "_action_name": "To make the executable generated from the modified source code available as an application intended for use across the network."
                         }
                     ]
                 },
@@ -532,7 +532,7 @@
                         "contents": {
                             "_condition_uri": "http://open-license.hitachi.com/conditions/3",
                             "_condition_id": "conditions/3",
-                            "_condition_name": "書面による特別な許可を取る",
+                            "_condition_name": "Get special permission in writing.",
                             "_condition_description": "",
                             "_condition_schemaVersion": "0.1",
                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -546,7 +546,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/253",
                             "_action_id": "actions/253",
-                            "_action_name": "派生した製品の推奨や販売促進にコントリビュータの名前、商標、サービスマークを使う"
+                            "_action_name": "Use the contributor's name, trademark, or service mark to endorse or promote the derived product"
                         }
                     ]
                 }
@@ -559,7 +559,7 @@
             "_license_notices": [
                 {
                     "_notice_description": "",
-                    "_notice_content": "本ライセンスのいずれかの条項が実施不能とみなされる場合、その条項は実施可能にするために必要な範囲内でのみ改正されるものとする。",
+                    "_notice_content": "If any provision of this license is deemed unenforceable, that provision shall be amended only to the extent necessary to make it enforceable.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/259",
@@ -567,7 +567,7 @@
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "本ライセンスに関連して訴訟が起こされた場合、敗訴した側が訴訟費用や妥当な弁護人報酬などの費用を負担するものとする。",
+                    "_notice_content": "If a lawsuit is brought in connection with this license, the losing party shall bear the costs of the lawsuit and reasonable attorney's fees.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/260",
@@ -575,7 +575,7 @@
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "商品の国際取引に関する国連契約規定の適用は明確に除外される。",
+                    "_notice_content": "The application of the UN contractual provisions on international trade in goods is expressly excluded.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/16",
@@ -583,15 +583,15 @@
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "本ライセンスに関する訴訟は、ライセンサが居住、もしくは、主たる事業所を維持する管轄権の法廷でのみ申し立てるものとし、法の抵触に関する条項を除いて、その管轄権の法律が適用される。",
+                    "_notice_content": "Any action with respect to this License shall be filed only in the court of the jurisdiction in which Licensor resides or maintains its principal place of business, and the laws of that jurisdiction shall apply, except for the conflict of law provisions.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/261",
                     "_notice_id": "notices/261"
                 },
                 {
-                    "_notice_description": "無保証である。",
-                    "_notice_content": "元々のソフトウェアは、「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、権利非侵害、商業的な使用可能性、および、特定の目的に対する適合性についての保証を含むが、それに限定されるものではない。元々のソフトウェアの品質に対するリスクの全てを自身が負うことになる。",
+                    "_notice_description": "There is no guarantee.",
+                    "_notice_content": "the original software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of non-infringement, commercial usability, and fitness for a particular purpose. The warranties include, but are not limited to, the warranties of non-infringement, commercial usability, and fitness for a particular purpose. the entire risk to the quality of the original software is borne by you.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/263",
@@ -599,7 +599,7 @@
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "本ライセンスの範囲外、もしくは、本ライセンスの終了後の元々のソフトウェアの使用は、米国著作権法の101条以下、他の国々の同等の法律、および、国際条約の要求と罰則に従う。",
+                    "_notice_content": "Any use of the original Software outside of the scope of this license or after the termination of this license is subject to the requirements and penalties of Section 101 of the U.S. Copyright Act, equivalent laws of other countries, and international treaties.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/264",
@@ -607,7 +607,7 @@
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "いかなる条件および法理論においても、(過失を含む)不法行為、契約、あるいはその他を問わず、ライセンサは、本ライセンスまたは元々のソフトウェアの使用によって発生した直接損害、間接損害、特別損害、付随的損害、または、派生的損害のいずれに対しても(営業権の損失、業務の停止、コンピュータ障害または誤作動による損害や損失を含めるが、それに限定されない商業上の損害や損失を含め)一切責任を負わないものとする。適用される法の範囲で、著作権者の過失に起因する死亡または人身傷害に関する責任にそのような制限を設けることが認められていない場合には、当該責任にこの制限は適用されない。国や地域によっては付随的損害あるいは派生的損害の除外または制限が法律上認められない場合があるが、その場合にはこの除外および制限は適用されない。",
+                    "_notice_content": "Under no conditions and on no theory of law, whether in tort (including negligence), contract or otherwise, shall Licensor be liable for any direct, indirect, special, incidental or consequential damages (including loss of goodwill, loss of business (including but not limited to commercial damage or loss, including but not limited to damage or loss due to outages, computer failure or malfunction). To the extent that applicable law does not permit such a limitation on liability for death or personal injury caused by the negligence of the copyright holder, such limitation shall not apply to such liability. Some countries or jurisdictions do not allow the exclusion or limitation of incidental or consequential damages as a matter of law, in which case this exclusion and limitation will not apply.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/265",
@@ -615,7 +615,7 @@
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "元々のソフトウェア、または派生物を頒布する際に本ライセンスを適用しなかった場合、本ライセンスに基づく全ての権利が直ちに終了するものとする。",
+                    "_notice_content": "Failure to apply this license when distributing the original software or derivative works shall result in immediate termination of all rights under this license.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/692",
@@ -623,14 +623,14 @@
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "元々のソフトウェアが直接または間接に特許を侵害しているとして交差請求や反訴を含む特許訴訟を申し立てた場合、本ライセンスは特許訴訟を正式に起こした時点で終了する。ただし、元々のソフトウェアと他のソフトウェアまたはハードウェアとの組み合わせにより特許を侵害していると主張する場合は除く。",
+                    "_notice_content": "If you file a patent action, including cross-claims or counterclaims, alleging that the original Software directly or indirectly infringes a patent, this license will terminate upon formal filing of the patent action, unless you allege that the original Software infringes a patent by a combination of the original Software and other software or hardware. The license shall terminate upon formal filing of the patent action, unless the original software in combination with other software or hardware is alleged to infringe the patent.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/272",
                     "_notice_id": "notices/272"
                 }
             ],
-            "_license_description": "ソースコードは、当該ソフトウェアの修正版を作成するのに適した形式、および、その変更方法を記した文書を指す。\r\n\r\n自身は、本ライセンスの下で、本ライセンスの条項の全てに従って権利を行使する個人または法人を指す。\r\n\r\n法人の場合、自身には、自身を管理する者、自身によって管理される者、もしくは、自身と共通の管理下にある者の団体を含む。この定義における「管理」は次のいずれかを指す。 (1)契約などにより、直接または間接的にこの法人の指揮・経営を行なう権限を持つ (2)この法人の50％を超える発行済み株式または受益所有権を持つ",
+            "_license_description": "Source Code means the documentation that describes the appropriate format for making modifications to the Software and how to modify it. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation",
             "_license_baseUri": "http://open-license.hitachi.com/",
             "_license_schemaVersion": "0.1",
             "_implications": {

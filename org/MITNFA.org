@@ -234,16 +234,16 @@ open-license]] (CDLA-Permissive-1.0))
               "_license_permissions": [
                   {
                       "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã",
+                      "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
                       "_permission_conditionHead": null,
                       "_permission_actions": [
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                              "_action_description": "Use the fetched code as it is.",
                               "_action_uri": "http://open-license.hitachi.com/actions/1",
                               "_action_id": "actions/1",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
+                              "_action_name": "Use the obtained source code without modification"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -251,7 +251,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/3",
                               "_action_id": "actions/3",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
+                              "_action_name": "Modify the obtained source code."
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -259,15 +259,15 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/4",
                               "_action_id": "actions/4",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
+                              "_action_name": "Using Modified Source Code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                              "_action_description": "Use the fetched code as it is.",
                               "_action_uri": "http://open-license.hitachi.com/actions/5",
                               "_action_id": "actions/5",
-                              "_action_name": "åå¾ãããªãã¸ã§ã¯ãã³ã¼ããä½¿ç¨ãã"
+                              "_action_name": "Use the retrieved object code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -275,15 +275,15 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/7",
                               "_action_id": "actions/7",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããªãã¸ã§ã¯ãã³ã¼ããä½¿ç¨ãã"
+                              "_action_name": "Use the object code generated from the modified source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããå®è¡å½¢å¼ããã®ã¾ã¾ä½¿ã",
+                              "_action_description": "Use the obtained executable as is.",
                               "_action_uri": "http://open-license.hitachi.com/actions/84",
                               "_action_id": "actions/84",
-                              "_action_name": "åå¾ããå®è¡å½¢å¼ãä½¿ç¨ãã"
+                              "_action_name": "Use the retrieved executable"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -291,19 +291,19 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/87",
                               "_action_id": "actions/87",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæããå®è¡å½¢å¼ãä½¿ç¨ãã"
+                              "_action_name": "Use the executable generated from the modified source code"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nã½ããã¦ã§ã¢ãæä¾ããç¸æã«ãåãæ¨©å©ãè¨±å¯ãããã¨ã«ãªãã",
+                      "_permission_description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeLeaf",
                           "contents": {
                               "_condition_uri": "http://open-license.hitachi.com/conditions/1",
                               "_condition_id": "conditions/1",
-                              "_condition_name": "ã©ã¤ã»ã³ã¹ã«å«ã¾ãã¦ããèä½æ¨©è¡¨ç¤ºãæ¡ä»¶ä¸è¦§ãåè²¬äºé ãå«ãã",
+                              "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                               "_condition_description": "",
                               "_condition_schemaVersion": "0.1",
                               "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -314,34 +314,34 @@ open-license]] (CDLA-Permissive-1.0))
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                              "_action_description": "Redistribute the code as it was obtained",
                               "_action_uri": "http://open-license.hitachi.com/actions/9",
                               "_action_id": "actions/9",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
+                              "_action_name": "Distribute the obtained source code without modification"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                              "_action_description": "Redistribute the code as it was obtained",
                               "_action_uri": "http://open-license.hitachi.com/actions/10",
                               "_action_id": "actions/10",
-                              "_action_name": "åå¾ãããªãã¸ã§ã¯ãã³ã¼ããé å¸ãã"
+                              "_action_name": "Distribute the obtained object code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/19",
                               "_action_id": "actions/19",
-                              "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicense the acquired source code."
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/22",
                               "_action_id": "actions/22",
-                              "_action_name": "åå¾ãããªãã¸ã§ã¯ãã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicense the acquired object code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -349,29 +349,29 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/35",
                               "_action_id": "actions/35",
-                              "_action_name": "ã½ããã¦ã§ã¢ãè²©å£²ãã"
+                              "_action_name": "Selling Software"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "åå¾ããå®è¡å½¢å¼ããã®ã¾ã¾åé å¸ãã",
+                              "_action_description": "Redistribute the obtained executable as-is",
                               "_action_uri": "http://open-license.hitachi.com/actions/86",
                               "_action_id": "actions/86",
-                              "_action_name": "åå¾ããå®è¡å½¢å¼ãé å¸ãã"
+                              "_action_name": "Distribute the obtained executable"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/106",
                               "_action_id": "actions/106",
-                              "_action_name": "åå¾ããå®è¡å½¢å¼ããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicense the acquired executable"
                           }
                       ]
                   },
                   {
                       "_permission_summary": "",
-                      "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nã½ããã¦ã§ã¢ãæä¾ããç¸æã«ãåãæ¨©å©ãè¨±å¯ãããã¨ã«ãªãã",
+                      "_permission_description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.",
                       "_permission_conditionHead": {
                           "tag": "OlConditionTreeAnd",
                           "contents": [
@@ -380,7 +380,7 @@ open-license]] (CDLA-Permissive-1.0))
                                   "contents": {
                                       "_condition_uri": "http://open-license.hitachi.com/conditions/1",
                                       "_condition_id": "conditions/1",
-                                      "_condition_name": "ã©ã¤ã»ã³ã¹ã«å«ã¾ãã¦ããèä½æ¨©è¡¨ç¤ºãæ¡ä»¶ä¸è¦§ãåè²¬äºé ãå«ãã",
+                                      "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                       "_condition_description": "",
                                       "_condition_schemaVersion": "0.1",
                                       "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -395,7 +395,7 @@ open-license]] (CDLA-Permissive-1.0))
                                           "contents": {
                                               "_condition_uri": "http://open-license.hitachi.com/conditions/273",
                                               "_condition_id": "conditions/273",
-                                              "_condition_name": "åèä½èã®ãã°ã»ã¬ãã¼ãã®e-mailã¢ãã¬ã¹ãURLããæ¹å¤ã«è²¬ä»»ãæã¤å£ä½ã®é£çµ¡åã«å¤æ´ãã",
+                                              "_condition_name": "Change the e-mail address or URL of the original author's bug report to the contact information of the organization responsible for the modification.",
                                               "_condition_description": "",
                                               "_condition_schemaVersion": "0.1",
                                               "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -407,7 +407,7 @@ open-license]] (CDLA-Permissive-1.0))
                                           "contents": {
                                               "_condition_uri": "http://open-license.hitachi.com/conditions/274",
                                               "_condition_id": "conditions/274",
-                                              "_condition_name": "åèä½èã®ãã°ã»ã¬ãã¼ãã®e-mailã¢ãã¬ã¹ãURLãåé¤ãã",
+                                              "_condition_name": "Delete the e-mail address or URL of the original author's bug report",
                                               "_condition_description": "",
                                               "_condition_schemaVersion": "0.1",
                                               "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -425,7 +425,7 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/12",
                               "_action_id": "actions/12",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
+                              "_action_name": "Distribution of Modified Source Code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -433,23 +433,23 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/13",
                               "_action_id": "actions/13",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããªãã¸ã§ã¯ãã³ã¼ããé å¸ãã"
+                              "_action_name": "Distribute the object code generated from the modified source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/25",
                               "_action_id": "actions/25",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicensing Modified Source Code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/28",
                               "_action_id": "actions/28",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããªãã¸ã§ã¯ãã³ã¼ãããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicense the object code generated from the modified source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
@@ -457,15 +457,15 @@ open-license]] (CDLA-Permissive-1.0))
                               "_action_description": "",
                               "_action_uri": "http://open-license.hitachi.com/actions/89",
                               "_action_id": "actions/89",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæããå®è¡å½¢å¼ãé å¸ãã"
+                              "_action_name": "Distribute the executable generated from the modified source code"
                           },
                           {
                               "_action_baseUri": "http://open-license.hitachi.com/",
                               "_action_schemaVersion": "0.1",
-                              "_action_description": "ãµãã©ã¤ã»ã³ã¹ã¯ãå½è©²ã©ã¤ã»ã³ã¹ãä»ä¸ãããèããååº¦ãç¬¬ä¸èã«ãã®ä»ä¸ãããã©ã¤ã»ã³ã¹ãä¾ä¸ãããã¨ãæãã",
+                              "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
                               "_action_uri": "http://open-license.hitachi.com/actions/109",
                               "_action_id": "actions/109",
-                              "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæããå®è¡å½¢å¼ããµãã©ã¤ã»ã³ã¹ãã"
+                              "_action_name": "Sublicense the generated executable from modified source code"
                           }
                       ]
                   }
@@ -477,8 +477,8 @@ open-license]] (CDLA-Permissive-1.0))
               "_license_content": "Copyright 2013, NAN contributors:\r\n  - Rod Vagg <https://github.com/rvagg>\r\n  - Benjamin Byholm <https://github.com/kkoopa>\r\n  - Trevor Norris <https://github.com/trevnorris>\r\n  - Nathan Rajlich <https://github.com/TooTallNate>\r\n  - Brett Lawson <https://github.com/brett19>\r\n  - Ben Noordhuis <https://github.com/bnoordhuis>\r\n(the \"Original Author\")\r\nAll rights reserved.\r\n\r\nMIT +no-false-attribs License\r\n\r\nPermission is hereby granted, free of charge, to any person\r\nobtaining a copy of this software and associated documentation\r\nfiles (the \"Software\"), to deal in the Software without\r\nrestriction, including without limitation the rights to use,\r\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\r\ncopies of the Software, and to permit persons to whom the\r\nSoftware is furnished to do so, subject to the following\r\nconditions:\r\n\r\nThe above copyright notice and this permission notice shall be\r\nincluded in all copies or substantial portions of the Software.\r\n\r\nDistributions of all or part of the Software intended to be used\r\nby the recipients as they would use the unmodified Software,\r\ncontaining modifications that substantially alter, remove, or\r\ndisable functionality of the Software, outside of the documented\r\nconfiguration mechanisms provided by the Software, shall be\r\nmodified such that the Original Author's bug reporting email\r\naddresses and urls are either replaced with the contact information\r\nof the parties responsible for the changes, or removed entirely.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\r\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\r\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\r\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\r\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\r\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\r\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\r\nOTHER DEALINGS IN THE SOFTWARE.\r\n\r\n\r\nExcept where noted, this license applies to any and all software\r\nprograms and associated documentation files created by the\r\nOriginal Author, when distributed with the Software.",
               "_license_notices": [
                   {
-                      "_notice_description": "ç¡ä¿è¨¼ã§ãã",
-                      "_notice_content": "å½è©²ã½ããã¦ã§ã¢ã¯ããç¾ç¶ã®ã¾ã¾(as-is)ãã§æä¾ããã¦ãããæç¤ºã§ãããé»ç¤ºã§ããããåããããããªãä¿è¨¼ããªãã\r\nããã§ããä¿è¨¼ã¨ã¯ãåæ¥­çãªä½¿ç¨å¯è½æ§ãç¹å®ã®ç®çã«å¯¾ããé©åæ§ãããã³ãæ¨©å©éä¾µå®³ã«ã¤ãã¦ã®ä¿è¨¼ãå«ãããããã«éå®ããããã®ã§ã¯ãªãã",
+                      "_notice_description": "There is no guarantee.",
+                      "_notice_content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
                       "_notice_baseUri": "http://open-license.hitachi.com/",
                       "_notice_schemaVersion": "0.1",
                       "_notice_uri": "http://open-license.hitachi.com/notices/3",

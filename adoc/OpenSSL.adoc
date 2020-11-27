@@ -268,10 +268,10 @@ Policy]
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                            "_action_description": "Use the fetched code as it is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/1",
                             "_action_id": "actions/1",
-                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
+                            "_action_name": "Use the obtained source code without modification"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -279,7 +279,7 @@ Policy]
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/3",
                             "_action_id": "actions/3",
-                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
+                            "_action_name": "Modify the obtained source code."
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -287,15 +287,15 @@ Policy]
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/4",
                             "_action_id": "actions/4",
-                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
+                            "_action_name": "Using Modified Source Code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "åå¾ãããã¤ããªããã®ã¾ã¾ä½¿ã",
+                            "_action_description": "Use the fetched binary as it is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/6",
                             "_action_id": "actions/6",
-                            "_action_name": "åå¾ãããã¤ããªãä½¿ç¨ãã"
+                            "_action_name": "Use the retrieved binaries"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -303,13 +303,13 @@ Policy]
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/8",
                             "_action_id": "actions/8",
-                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãä½¿ç¨ãã"
+                            "_action_name": "Use binaries generated from modified source code"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "è¬è¾ã®åå®¹ã¯ãã¡ã\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_description": "Acknowledgements include \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/).\"",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeAnd",
                         "contents": [
@@ -318,7 +318,7 @@ Policy]
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/1",
                                     "_condition_id": "conditions/1",
-                                    "_condition_name": "ã©ã¤ã»ã³ã¹ã«å«ã¾ãã¦ããèä½æ¨©è¡¨ç¤ºãæ¡ä»¶ä¸è¦§ãåè²¬äºé ãå«ãã",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "_condition_description": "",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -330,7 +330,7 @@ Policy]
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                                     "_condition_id": "conditions/13",
-                                    "_condition_name": "è¬è¾ãå«ãã",
+                                    "_condition_name": "Acknowledgements",
                                     "_condition_description": "",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -343,10 +343,10 @@ Policy]
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                            "_action_description": "Redistribute the code as it was obtained",
                             "_action_uri": "http://open-license.hitachi.com/actions/9",
                             "_action_id": "actions/9",
-                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
+                            "_action_name": "Distribute the obtained source code without modification"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -354,13 +354,13 @@ Policy]
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/12",
                             "_action_id": "actions/12",
-                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
+                            "_action_name": "Distribution of Modified Source Code"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "è¬è¾ã®åå®¹ã¯ãã¡ã\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_description": "Acknowledgements include \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/).\"",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeAnd",
                         "contents": [
@@ -369,7 +369,7 @@ Policy]
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/2",
                                     "_condition_id": "conditions/2",
-                                    "_condition_name": "é å¸ç©ã«ä»å±ããè³æã«ãã©ã¤ã»ã³ã¹ã«å«ã¾ãã¦ããèä½æ¨©è¡¨ç¤ºãæ¡ä»¶ä¸è¦§ãåè²¬äºé ãå«ãã",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                                     "_condition_description": "",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -381,7 +381,7 @@ Policy]
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                                     "_condition_id": "conditions/13",
-                                    "_condition_name": "è¬è¾ãå«ãã",
+                                    "_condition_name": "Acknowledgements",
                                     "_condition_description": "",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -394,10 +394,10 @@ Policy]
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "åå¾ãããã¤ããªããã®ã¾ã¾åé å¸ãã",
+                            "_action_description": "Redistribute the fetched binaries as they are",
                             "_action_uri": "http://open-license.hitachi.com/actions/11",
                             "_action_id": "actions/11",
-                            "_action_name": "åå¾ãããã¤ããªãé å¸ãã"
+                            "_action_name": "Distribute the fetched binaries"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -405,19 +405,19 @@ Policy]
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/14",
                             "_action_id": "actions/14",
-                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãé å¸ãã"
+                            "_action_name": "Distribute the generated binaries from modified source code"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "è¬è¾ã®åå®¹ã¯ãã¡ã\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_description": "Acknowledgements include \"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/).\"",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeLeaf",
                         "contents": {
                             "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                             "_condition_id": "conditions/13",
-                            "_condition_name": "è¬è¾ãå«ãã",
+                            "_condition_name": "Acknowledgements",
                             "_condition_description": "",
                             "_condition_schemaVersion": "0.1",
                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -431,19 +431,19 @@ Policy]
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/31",
                             "_action_id": "actions/31",
-                            "_action_name": "ã½ããã¦ã§ã¢ã®ç¹å¾´ãä½¿ç¨ã«ã¤ãã¦è¿°ã¹ãåºååªä½ãä½ã"
+                            "_action_name": "Create an advertising medium that describes the features and use of the software"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "\"OpenSSL Toolkit\"ããã³\"OpenSSL Project\"ã¨ããåç§°ãä½¿ç¨ããå ´åãopenssl-core@openssl.orgã«é£çµ¡ããã",
+                    "_permission_description": "\"OpenSSL Toolkit\" and \"OpenSSL Project\". openssl-core@openssl.orgã«é£çµ¡ãã.",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeLeaf",
                         "contents": {
                             "_condition_uri": "http://open-license.hitachi.com/conditions/3",
                             "_condition_id": "conditions/3",
-                            "_condition_name": "æ¸é¢ã«ããç¹å¥ãªè¨±å¯ãåã",
+                            "_condition_name": "Get special permission in writing.",
                             "_condition_description": "",
                             "_condition_schemaVersion": "0.1",
                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -457,19 +457,19 @@ Policy]
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/29",
                             "_action_id": "actions/29",
-                            "_action_name": "æ´¾çããè£½åã®æ¨å¥¨ãè²©å£²ä¿é²ã«åç§°ãä½¿ã"
+                            "_action_name": "Use the name to endorse and promote derived products"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "\"OpenSSL\"ã¨ããåç§°ãä½¿ç¨ããå ´åãæ¸é¢ã«ããOpenSSL Projectã®è¨±å¯ãåãã",
+                    "_permission_description": "To use the name \"OpenSSL\". Get written permission from the OpenSSL Project.",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeLeaf",
                         "contents": {
                             "_condition_uri": "http://open-license.hitachi.com/conditions/3",
                             "_condition_id": "conditions/3",
-                            "_condition_name": "æ¸é¢ã«ããç¹å¥ãªè¨±å¯ãåã",
+                            "_condition_name": "Get special permission in writing.",
                             "_condition_description": "",
                             "_condition_schemaVersion": "0.1",
                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -483,7 +483,7 @@ Policy]
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/30",
                             "_action_id": "actions/30",
-                            "_action_name": "æ´¾çããè£½åã®è£½ååã¾ãã¯è£½ååã®ä¸é¨ã«åç§°ãä½¿ã"
+                            "_action_name": "Use the name of the product or part of the name of the product from which it was derived"
                         }
                     ]
                 }
@@ -495,8 +495,8 @@ Policy]
             "_license_content": " OpenSSL License\r\n  ---------------\r\n\r\n/* ====================================================================\r\n * Copyright (c) <year> The OpenSSL Project.  All rights reserved.\r\n *\r\n * Redistribution and use in source and binary forms, with or without\r\n * modification, are permitted provided that the following conditions\r\n * are met:\r\n *\r\n * 1. Redistributions of source code must retain the above copyright\r\n *    notice, this list of conditions and the following disclaimer.\r\n *\r\n * 2. Redistributions in binary form must reproduce the above copyright\r\n *    notice, this list of conditions and the following disclaimer in\r\n *    the documentation and/or other materials provided with the\r\n *    distribution.\r\n *\r\n * 3. All advertising materials mentioning features or use of this\r\n *    software must display the following acknowledgment:\r\n *    \"This product includes software developed by the OpenSSL Project\r\n *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)\"\r\n *\r\n * 4. The names \"OpenSSL Toolkit\" and \"OpenSSL Project\" must not be used to\r\n *    endorse or promote products derived from this software without\r\n *    prior written permission. For written permission, please contact\r\n *    openssl-core@openssl.org.\r\n *\r\n * 5. Products derived from this software may not be called \"OpenSSL\"\r\n *    nor may \"OpenSSL\" appear in their names without prior written\r\n *    permission of the OpenSSL Project.\r\n *\r\n * 6. Redistributions of any form whatsoever must retain the following\r\n *    acknowledgment:\r\n *    \"This product includes software developed by the OpenSSL Project\r\n *    for use in the OpenSSL Toolkit (http://www.openssl.org/)\"\r\n *\r\n * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY\r\n * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\r\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\r\n * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\r\n * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\r\n * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\r\n * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\r\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\r\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\r\n * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\r\n * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\r\n * OF THE POSSIBILITY OF SUCH DAMAGE.\r\n * ====================================================================\r\n *\r\n * This product includes cryptographic software written by Eric Young\r\n * (eay@cryptsoft.com).  This product includes software written by Tim\r\n * Hudson (tjh@cryptsoft.com).\r\n *\r\n */",
             "_license_notices": [
                 {
-                    "_notice_description": "ç¡ä¿è¨¼ã§ããã",
-                    "_notice_content": "å½è©²ã½ããã¦ã§ã¢ã¯ãOpenSSL Projectã«ãã£ã¦ãç¾ç¶ã®ã¾ã¾(as-is)ãã§æä¾ããã¦ãããæç¤ºã§ãããé»ç¤ºã§ããããåããããããªãä¿è¨¼ããªããããã§ããä¿è¨¼ã¨ã¯ãåæ¥­çãªä½¿ç¨å¯è½æ§ãããã³ãç¹å®ã®ç®çã«å¯¾ããé©åæ§ã«é¢ããæé»ã®ä¿è¨¼ãå«ãããããã«éå®ããããã®ã§ã¯ãªãã\r\n",
+                    "_notice_description": "There is no guarantee.",
+                    "_notice_content": "the software is provided by the openssl project \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/106",
@@ -504,7 +504,7 @@ Policy]
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "OpenSSL Projectãã³ã³ããªãã¥ã¼ã¿ããäºç±ã®å¦ä½ãåãããæå®³çºçã®åå å¦ä½ãåããããã¤ãè²¬ä»»ã®æ ¹æ ãå¥ç´ã§ãããå³æ ¼è²¬ä»»ã§ããã(éå¤±ãå«ã)ä¸æ³è¡çºã§ããããåãããä»®ã«ãã®ãããªæå®³ãçºçããå¯è½æ§ãç¥ãããã¦ããã¨ãã¦ããå½è©²ã½ããã¦ã§ã¢ã®ä½¿ç¨ã«ãã£ã¦çºçããç´æ¥æå®³ãéæ¥æå®³ãç¹å¥æå®³ãä»éçæå®³ãæ²ç½°çæå®³ãã¾ãã¯ãæ´¾ççæå®³ã®ãããã«å¯¾ãã¦ã(ä»£æ¿åã¾ãã¯ä»£ç¨ãµã¼ãã¹ã®èª¿éãä½¿ç¨ã®åªå¤±ããã¼ã¿ã®åªå¤±ãå©çã®åªå¤±ã«å¯¾ããè£åãã¾ãã¯ãæ¥­åã®ä¸­æ­ã«å¯¾ããè£åãå«ããããããã«éå®ãããªãè£åãå«ã)ä¸åè²¬ä»»ãè² ããªããã®ã¨ããã",
+                    "_notice_content": "Neither the OpenSSL Project nor any contributor, for any cause whatsoever, shall be liable for any damages, regardless of how caused, and regardless of whether the basis of liability is contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages, for the software For any direct, indirect, special, incidental, punitive or consequential damages (including, but not limited to, compensation for procurement of replacement or substitute services, loss of use, loss of data, loss of profits, or business interruption) arising out of the use of ) shall not be liable in any way (including",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/107",

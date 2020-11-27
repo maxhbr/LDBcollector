@@ -204,10 +204,10 @@
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したコードをそのまま使う",
+                            "_action_description": "Use the fetched code as it is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/1",
                             "_action_id": "actions/1",
-                            "_action_name": "取得したソースコードを改変せずに使用する"
+                            "_action_name": "Use the obtained source code without modification"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -215,15 +215,15 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/3",
                             "_action_id": "actions/3",
-                            "_action_name": "取得したソースコードを改変する"
+                            "_action_name": "Modify the obtained source code."
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したバイナリをそのまま使う",
+                            "_action_description": "Use the fetched binary as it is.",
                             "_action_uri": "http://open-license.hitachi.com/actions/6",
                             "_action_id": "actions/6",
-                            "_action_name": "取得したバイナリを使用する"
+                            "_action_name": "Use the retrieved binaries"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -231,7 +231,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/114",
                             "_action_id": "actions/114",
-                            "_action_name": "取得したソースコードを表示する"
+                            "_action_name": "Display the obtained source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -239,7 +239,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/118",
                             "_action_id": "actions/118",
-                            "_action_name": "改変したソースコードを表示する"
+                            "_action_name": "Display the modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -247,7 +247,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/287",
                             "_action_id": "actions/287",
-                            "_action_name": "取得したバイナリを表示する"
+                            "_action_name": "Display the retrieved binary"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -255,20 +255,20 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/288",
                             "_action_id": "actions/288",
-                            "_action_name": "改変したソースコードから生成したバイナリを表示する"
+                            "_action_name": "Display the generated binary from the modified source code"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "サブライセンシにも同じ権利を許可することになる。",
+                    "_permission_description": "The same rights would be granted to sub-licenses.",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeLeaf",
                         "contents": {
                             "_condition_uri": "http://open-license.hitachi.com/conditions/630",
                             "_condition_id": "conditions/630",
-                            "_condition_name": "本ライセンスに従って、EU DataGridの参加者に対し、自身の改変物や派生物を使用、表示、改変、再頒布、サブライセンスできる、世界規模で非独占的で使用料無料で無制限のライセンスを付与する",
-                            "_condition_description": "ただし、ユーザーと書面による個別の使用許諾契約を締結する場合を除く。",
+                            "_condition_name": "A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.",
+                            "_condition_description": "However, this does not include cases where a separate written license agreement is entered into with the User.",
                             "_condition_schemaVersion": "0.1",
                             "_condition_baseUri": "http://open-license.hitachi.com/",
                             "_condition_conditionType": "RESTRICTION"
@@ -281,7 +281,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/4",
                             "_action_id": "actions/4",
-                            "_action_name": "改変したソースコードを使用する"
+                            "_action_name": "Using Modified Source Code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -289,7 +289,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/8",
                             "_action_id": "actions/8",
-                            "_action_name": "改変したソースコードから生成したバイナリを使用する"
+                            "_action_name": "Use binaries generated from modified source code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -297,7 +297,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/90",
                             "_action_id": "actions/90",
-                            "_action_name": "改変したソースコードを発表する"
+                            "_action_name": "Publish the modified source code."
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -305,19 +305,19 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/277",
                             "_action_id": "actions/277",
-                            "_action_name": "改変したソースコードから生成したバイナリを発表する"
+                            "_action_name": "Publish the binary generated from the modified source code"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "ソフトウェアの関連文書もソフトウェアと同様に扱う。\r\nサブライセンシにも同じ権利を許可することになる。 ",
+                    "_permission_description": "Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeLeaf",
                         "contents": {
                             "_condition_uri": "http://open-license.hitachi.com/conditions/1",
                             "_condition_id": "conditions/1",
-                            "_condition_name": "ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "_condition_description": "",
                             "_condition_schemaVersion": "0.1",
                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -328,24 +328,24 @@
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したコードをそのまま再頒布する",
+                            "_action_description": "Redistribute the code as it was obtained",
                             "_action_uri": "http://open-license.hitachi.com/actions/9",
                             "_action_id": "actions/9",
-                            "_action_name": "取得したソースコードを改変せずに頒布する"
+                            "_action_name": "Distribute the obtained source code without modification"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
                             "_action_schemaVersion": "0.1",
-                            "_action_description": "取得したバイナリをそのまま再頒布する",
+                            "_action_description": "Redistribute the fetched binaries as they are",
                             "_action_uri": "http://open-license.hitachi.com/actions/11",
                             "_action_id": "actions/11",
-                            "_action_name": "取得したバイナリを頒布する"
+                            "_action_name": "Distribute the fetched binaries"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "ソフトウェアの関連文書もソフトウェアと同様に扱う。\r\nサブライセンシにも同じ権利を許可することになる。 ",
+                    "_permission_description": "Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeAnd",
                         "contents": [
@@ -354,7 +354,7 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/1",
                                     "_condition_id": "conditions/1",
-                                    "_condition_name": "ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "_condition_description": "",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -366,8 +366,8 @@
                                 "contents": {
                                     "_condition_uri": "http://open-license.hitachi.com/conditions/630",
                                     "_condition_id": "conditions/630",
-                                    "_condition_name": "本ライセンスに従って、EU DataGridの参加者に対し、自身の改変物や派生物を使用、表示、改変、再頒布、サブライセンスできる、世界規模で非独占的で使用料無料で無制限のライセンスを付与する",
-                                    "_condition_description": "ただし、ユーザーと書面による個別の使用許諾契約を締結する場合を除く。",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.",
+                                    "_condition_description": "However, this does not include cases where a separate written license agreement is entered into with the User.",
                                     "_condition_schemaVersion": "0.1",
                                     "_condition_baseUri": "http://open-license.hitachi.com/",
                                     "_condition_conditionType": "RESTRICTION"
@@ -382,7 +382,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/12",
                             "_action_id": "actions/12",
-                            "_action_name": "改変したソースコードを頒布する"
+                            "_action_name": "Distribution of Modified Source Code"
                         },
                         {
                             "_action_baseUri": "http://open-license.hitachi.com/",
@@ -390,19 +390,19 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/14",
                             "_action_id": "actions/14",
-                            "_action_name": "改変したソースコードから生成したバイナリを頒布する"
+                            "_action_name": "Distribute the generated binaries from modified source code"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "●謝辞の内容はこちら\r\n\"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\"\r\n第三者の謝辞がソフトウェアに表示される場合は、ソフトウェア自体に含める。\r\n●サブライセンシにも同じ権利を許可することになる。",
+                    "_permission_description": "Acknowledgements include \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\" If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeLeaf",
                         "contents": {
                             "_condition_uri": "http://open-license.hitachi.com/conditions/13",
                             "_condition_id": "conditions/13",
-                            "_condition_name": "謝辞を含める",
+                            "_condition_name": "Acknowledgements",
                             "_condition_description": "",
                             "_condition_schemaVersion": "0.1",
                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -416,19 +416,19 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/32",
                             "_action_id": "actions/32",
-                            "_action_name": "エンドユーザドキュメントを頒布物に含める"
+                            "_action_name": "Include end-user documentation in the distribution"
                         }
                     ]
                 },
                 {
                     "_permission_summary": "",
-                    "_permission_description": "●\"EDG\"、\"EDG Toolkit\"、\"EU DataGrid Project\"という名称を使う場合。\r\nhep-project-grid-edg-license@cern.chに連絡する。\r\n●サブライセンシにも同じ権利を許可することになる。",
+                    "_permission_description": "To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees.",
                     "_permission_conditionHead": {
                         "tag": "OlConditionTreeLeaf",
                         "contents": {
                             "_condition_uri": "http://open-license.hitachi.com/conditions/3",
                             "_condition_id": "conditions/3",
-                            "_condition_name": "書面による特別な許可を取る",
+                            "_condition_name": "Get special permission in writing.",
                             "_condition_description": "",
                             "_condition_schemaVersion": "0.1",
                             "_condition_baseUri": "http://open-license.hitachi.com/",
@@ -442,7 +442,7 @@
                             "_action_description": "",
                             "_action_uri": "http://open-license.hitachi.com/actions/557",
                             "_action_id": "actions/557",
-                            "_action_name": "ソフトウェアや派生した製品の推奨や販売促進に名称を使う"
+                            "_action_name": "Use the name to endorse and promote software and derivative products"
                         }
                     ]
                 }
@@ -454,8 +454,8 @@
             "_license_content": "EU DataGrid Software License\r\n\r\n\r\nCopyright (c) 2001 EU DataGrid. All rights reserved.\r\n\r\nThis software includes voluntary contributions made to the EU DataGrid. For more\r\ninformation on the EU DataGrid, please see http://www.eu-datagrid.org/.\r\n\r\nInstallation, use, reproduction, display, modification and redistribution of this\r\nsoftware, with or without modification, in source and binary forms, are\r\npermitted. Any exercise of rights under this license by you or your sub-licensees\r\nis subject to the following conditions:\r\n\r\n1. Redistributions of this software, with or without modification, must reproduce\r\nthe above copyright notice and the above license statement as well as this list\r\nof conditions, in the software, the user documentation and any other materials\r\nprovided with the software.\r\n\r\n2. The user documentation, if any, included with a redistribution, must include\r\nthe following notice: \"This product includes software developed by the EU\r\nDataGrid (http://www.eu-datagrid.org/).\"\r\n\r\nAlternatively, if that is where third-party acknowledgments normally appear, this\r\nacknowledgment must be reproduced in the software itself.\r\n\r\n3. The names \"EDG\", \"EDG Toolkit\", and \"EU DataGrid Project\" may not be used to\r\nendorse or promote software, or products derived therefrom, except with prior\r\nwritten permission by hep-project-grid-edg-license@cern.ch.\r\n\r\n4. You are under no obligation to provide anyone with any bug fixes, patches,\r\nupgrades or other modifications, enhancements or derivatives of the\r\nfeatures,functionality or performance of this software that you may develop.\r\nHowever, if you publish or distribute your modifications, enhancements or\r\nderivative works without contemporaneously requiring users to enter into a\r\nseparate written license agreement, then you are deemed to have granted\r\nparticipants in the EU DataGrid a worldwide, non-exclusive, royalty-free,\r\nperpetual license to install, use, reproduce, display, modify, redistribute and\r\nsub-license your modifications, enhancements or derivative works, whether in\r\nbinary or source code form, under the license conditions stated in this list of\r\nconditions.\r\n\r\n5. DISCLAIMER\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE EU DATAGRID AND CONTRIBUTORS \"AS IS\" AND ANY\r\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\r\nWARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND FITNESS FOR A\r\nPARTICULAR PURPOSE OR USE ARE DISCLAIMED. THE EU DATAGRID AND CONTRIBUTORS MAKE\r\nNO REPRESENTATION THAT THE SOFTWARE, MODIFICATIONS, ENHANCEMENTS OR DERIVATIVE\r\nWORKS THEREOF, WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADE SECRET OR OTHER\r\nPROPRIETARY RIGHT.\r\n\r\n6. LIMITATION OF LIABILITY\r\n\r\nTHE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER\r\nPERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR\r\nPUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF\r\nSUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS\r\nINTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT\r\n(INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF\r\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
             "_license_notices": [
                 {
-                    "_notice_description": "無保証である。",
-                    "_notice_content": "当該ソフトウェアは、著作権者およびコントリビュータによって「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、商業的な使用可能性、満足すべき品質、特定の目的に対する適合性、あるいは、使用に関する暗黙の保証を含むが、それに限定されるものではない。著作権者もコントリビュータも、当該ソフトウェア、あるいは、当該ソフトウェアの改変物、拡張機能、派生物が、特許、著作権、トレードシークレットなどの知的財産権を侵害しないことを表明しない。",
+                    "_notice_description": "There is no guarantee.",
+                    "_notice_content": "the software is provided by the copyright holders and contributors \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, satisfactory quality, fitness for a particular purpose, or use. The warranties herein include, but are not limited to, the implied warranties of commercial applicability, satisfactory quality, fitness for a particular purpose, or use. Neither the copyright owner nor any contributor represents that the Software, or any modification, extension, or derivative of the Software, does not infringe any intellectual property rights, including but not limited to patents, copyrights, and trade secrets.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/856",
@@ -463,7 +463,7 @@
                 },
                 {
                     "_notice_description": "",
-                    "_notice_content": "著作権者もコントリビュータも、ライセンシや第三者に対して、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか保証であるか(過失を含む)不法行為であるか製造物責任その他であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した直接損害、間接損害、特別損害、付随的損害、派生的損害、または、懲罰的損害のいずれに対しても、代用品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償を含めるが、それに限定されない補償を含め、一切責任を負わないものとする。",
+                    "_notice_content": "Neither the copyright owner nor any contributor shall be liable to the licensee or any third party for any damages, regardless of the cause of such damages, and regardless of whether the basis of liability is contract, warranty (including negligence), tort or product liability or otherwise, even if they have been advised of the possibility of such damages. for any direct, indirect, special, incidental, consequential, or punitive damages resulting from the use of the software, including, but not limited to, the procurement of substitute or substitute services, compensation for loss of use, loss of data, loss of profits, or for business interruption No liability shall be assumed, including compensation that is not made.",
                     "_notice_baseUri": "http://open-license.hitachi.com/",
                     "_notice_schemaVersion": "0.1",
                     "_notice_uri": "http://open-license.hitachi.com/notices/857",
