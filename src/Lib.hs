@@ -95,7 +95,7 @@ mkCollectors conf@Configuration{cLFCs = chosenLFCs} =
   , (okfnLFC, loadOkfnFacts)
   , (gnuLFC, loadGnuFacts)
   , (dfsgLFC, loadDFSGFacts)
-  , (olLFC, loadOpenLicenseFacts "English")
+  , (olLFC, loadOpenLicenseFacts)
   , (ifrOSSLFC, loadIfrOSSFacts)
   ]
 

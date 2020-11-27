@@ -6,6 +6,7 @@
 module Collectors.OpenLicense
   ( olLFC
   , loadOpenLicenseFacts
+  , loadOpenLicenseTranslateables
   )
   where
 
@@ -16,6 +17,7 @@ import           Data.Aeson.Types (Parser)
 import           Data.Aeson
 import qualified Data.ByteString
 import qualified Data.ByteString.Lazy as B
+import qualified Data.Csv as C
 import           Data.FileEmbed (embedFile)
 import           Data.Map (Map)
 import           Data.Set (Set)
@@ -30,8 +32,29 @@ import           Collectors.Common
 olLFC :: LicenseFactClassifier
 olLFC = LFCWithURLAndLicense "https://github.com/Hitachi/open-license" (LFL "CDLA-Permissive-1.0") "Hitachi open-license"
 
-translations :: Map String String
-translations = M.empty
+{- #############################################################################
+   #### Translatable ###########################################################
+   ########################################################################## -}
+
+data TranslationRow
+  = TranslationRow String String
+  deriving (Generic, Eq, Show)
+instance C.FromNamedRecord TranslationRow where
+  parseNamedRecord r = TranslationRow
+    <$> r C..: "ja"
+    <*> r C..: "en"
+instance C.ToNamedRecord TranslationRow where
+  toNamedRecord (TranslationRow ja en) = C.namedRecord  [ "ja" C..= ja, "en" C..= en ]
+instance C.DefaultOrdered TranslationRow where
+  headerOrder _ = V.fromList ["ja", "en"]
+
+translations :: Map String (Maybe String)
+translations = M.fromList . map (\(TranslationRow ja en) -> (ja, case en of
+                                                                ""  -> Nothing
+                                                                en' -> Just en')) . V.toList $
+  case (C.decodeByName (B.fromStrict translationsCSV) :: Either String (C.Header, V.Vector TranslationRow)) of
+        Right (_, rows) -> rows
+        Left err -> V.empty
 
 class Translateable a where
   getTranslateables :: a -> Set String
@@ -42,6 +65,13 @@ instance (Translateable a) => Translateable [a] where
 instance (Translateable a) => Translateable (Maybe a) where
   getTranslateables (Just a) = getTranslateables a
   getTranslateables Nothing  = S.empty
+
+getCsvFromTranslateables :: Set String -> ByteString
+getCsvFromTranslateables = C.encodeDefaultOrderedByName . map (\ja -> TranslationRow ja "") . S.toList
+
+{- #############################################################################
+   #### Text ###################################################################
+   ########################################################################## -}
 
 data OlTextEntry
   = OlTextEntry String String
@@ -73,6 +103,10 @@ instance FromJSON OlText where
 emptyOlText :: OlText
 emptyOlText = OlText M.empty
 
+{- #############################################################################
+   #### Wrapped ################################################################
+   ########################################################################## -}
+
 data DataWrapped a
   = DataWrapped { unwrap :: a }
   deriving (Generic)
@@ -86,6 +120,9 @@ instance (FromJSON a) => FromJSON (DataWrapped a) where
   parseJSON = withObject "DataWrapped" $ \v -> DataWrapped
     <$> v .: "data"
 
+{- #############################################################################
+   #### Ref ####################################################################
+   ########################################################################## -}
 
 data OlRef
   = OlRef String
@@ -354,24 +391,27 @@ licenses = case eitherDecode (B.fromStrict licensesFile) of
    #### general ################################################################
    ########################################################################## -}
 
-loadOpenLicenseFacts :: String -> IO Facts
-loadOpenLicenseFacts lang = let
+loadOpenLicenseFacts :: IO Facts
+loadOpenLicenseFacts = let
     toFact lic = LicenseFact (Just (_license_uri lic)) lic
   in logThatFactsWithNumberAreLoadedFrom "Hitachi open-license" $ do
   ((mapM_ putStrLn) . getTranslateables) licenses
   (return . V.map toFact . V.fromList) licenses
+
+loadOpenLicenseTranslateables :: ByteString
+loadOpenLicenseTranslateables = (getCsvFromTranslateables . getTranslateables) licenses
 
 {- #############################################################################
    #### files ##################################################################
    ########################################################################## -}
 
 actionsFile :: Data.ByteString.ByteString
-actionsFile = $(embedFile "data/hitachi/open-license/data/actions.json")
+actionsFile = $(embedFile "data/hitachi-open-license/actions.json")
 conditionsFile :: Data.ByteString.ByteString
-conditionsFile = $(embedFile "data/hitachi/open-license/data/conditions.json")
+conditionsFile = $(embedFile "data/hitachi-open-license/conditions.json")
 noticesFile :: Data.ByteString.ByteString
-noticesFile = $(embedFile "data/hitachi/open-license/data/notices.json")
+noticesFile = $(embedFile "data/hitachi-open-license/notices.json")
 licensesFile :: Data.ByteString.ByteString
-licensesFile = $(embedFile "data/hitachi/open-license/data/licenses.json")
+licensesFile = $(embedFile "data/hitachi-open-license/licenses.json")
 translationsCSV :: Data.ByteString.ByteString
-translationsCSV = $(embedFile "data/hitachi-open-license.translations.csv")
+translationsCSV = $(embedFile "data/hitachi-open-license/translations.csv")

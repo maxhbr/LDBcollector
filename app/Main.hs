@@ -8,13 +8,14 @@ import           Control.Monad
 import qualified Data.Vector as V
 import           GHC.IO.Encoding
 import           System.Environment
+import qualified Data.ByteString.Lazy as BL
 
 import Lib
 import Configuration (configuration)
 import Comparator
 
-main :: IO ()
-main = do
+run :: IO()
+run = do
   outputFolder <- cleanupAndMakeOutputFolder "_generated/"
   runLDBCore configuration
     (\facts input ->
@@ -32,3 +33,14 @@ main = do
           writeCopyleftTable outputFolder licenses
 
           return outputFolder)
+
+writeTranslate :: IO ()
+writeTranslate = do
+  BL.writeFile "data/hitachi-open-license/translations.csv" loadOpenLicenseTranslateables
+
+main :: IO ()
+main = do
+  args <- getArgs
+  case args of
+    ["translate"] -> writeTranslate
+    _             -> run
