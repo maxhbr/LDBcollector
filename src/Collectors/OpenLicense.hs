@@ -17,6 +17,7 @@ import           Data.Aeson.Types (Parser)
 import           Data.Aeson
 import qualified Data.ByteString
 import qualified Data.ByteString.Lazy as B
+import qualified Data.Char as Char
 import qualified Data.Csv as C
 import           Data.FileEmbed (embedFile)
 import           Data.Map (Map)
@@ -49,8 +50,12 @@ instance C.ToNamedRecord TranslationRow where
 instance C.DefaultOrdered TranslationRow where
   headerOrder _ = V.fromList ["ja", "en"]
 
+normalizeKey :: String -> String
+normalizeKey = filter (\c -> not (Char.isSpace c))
+
 translations :: Map String (Maybe String)
-translations = M.fromList . map (\(TranslationRow ja en) -> (ja, case en of
+translations = M.fromList . map (\(TranslationRow ja en) -> (normalizeKey ja
+                                                            , case en of
                                                                 ""  -> Nothing
                                                                 en' -> Just en')) . V.toList $
   case (C.decodeByName (B.fromStrict translationsCSV) :: Either String (C.Header, V.Vector TranslationRow)) of
@@ -60,17 +65,19 @@ translations = M.fromList . map (\(TranslationRow ja en) -> (ja, case en of
 class Translateable a where
   getTranslateables :: a -> Set String
   translate :: a -> a
-  translate = P.id
 translateString :: String -> Maybe String
-translateString ja = case ja `M.lookup` translations of
+translateString ja = case (normalizeKey ja) `M.lookup` translations of
   Just v -> v
-  _      -> Nothing
+  _      -> trace ("did not find: " ++ take 40 ja) Nothing
 
 instance (Translateable a) => Translateable [a] where
   getTranslateables = S.unions . map getTranslateables
+  translate = map translate
 instance (Translateable a) => Translateable (Maybe a) where
   getTranslateables (Just a) = getTranslateables a
   getTranslateables Nothing  = S.empty
+  translate (Just a) = Just (translate a)
+  translate Nothing  = Nothing
 
 {- #############################################################################
    #### Text ###################################################################
@@ -96,6 +103,16 @@ instance Translateable OlText where
   getTranslateables (OlText m) = case "ja" `M.lookup` m of
     Just v -> S.singleton v
     _      -> S.empty
+  translate t@(OlText m) = let
+      ja = M.findWithDefault "" "ja" m
+      en = case "en" `M.lookup` m of
+        Just "" -> Nothing
+        en'     -> en'
+    in case en of
+      Just _ -> t
+      _      -> case translateString ja of
+        Just en' -> OlText $ M.insert "en" en' m
+        Nothing  -> t
 instance ToJSON OlText where
   toJSON olt = toJSON (show olt)
 instance FromJSON OlText where
@@ -117,6 +134,7 @@ unwrapList :: [DataWrapped a] -> [a]
 unwrapList = map unwrap
 instance (Translateable a) => Translateable (DataWrapped a) where
   getTranslateables (DataWrapped a) = getTranslateables a
+  translate (DataWrapped a) = DataWrapped (translate a)
 instance (ToJSON a) => ToJSON (DataWrapped a) where
   toJSON (DataWrapped a) = toJSON a
 instance (FromJSON a) => FromJSON (DataWrapped a) where
@@ -160,6 +178,8 @@ data OlAction
   } deriving (Generic, Eq, Show)
 instance Translateable OlAction where
   getTranslateables a = getTranslateables (_action_name a) `S.union` getTranslateables (_action_description a)
+  translate a = a { _action_name = translate (_action_name a)
+                  , _action_description = translate (_action_description a)}
 instance ToJSON OlAction
 instance FromJSON OlAction where
   parseJSON = withObject "OlAction" $ \v -> OlAction
@@ -200,7 +220,9 @@ data OlCondition
   , _condition_description :: OlText
   } deriving (Generic, Eq, Show)
 instance Translateable OlCondition where
-  getTranslateables a = getTranslateables (_condition_name a) `S.union` getTranslateables (_condition_description a)
+  getTranslateables c = getTranslateables (_condition_name c) `S.union` getTranslateables (_condition_description c)
+  translate c = c { _condition_name = translate (_condition_name c)
+                  , _condition_description = translate (_condition_description c)}
 instance ToJSON OlCondition
 instance FromJSON OlCondition where
   parseJSON = withObject "OlCondition" $ \v -> OlCondition
@@ -232,6 +254,9 @@ instance Translateable OlConditionTree where
   getTranslateables (OlConditionTreeAnd as) = getTranslateables as
   getTranslateables (OlConditionTreeOr as)  = getTranslateables as
   getTranslateables (OlConditionTreeLeaf a) = getTranslateables a
+  translate (OlConditionTreeAnd as) = OlConditionTreeAnd (translate as)
+  translate (OlConditionTreeOr as)  = OlConditionTreeOr (translate as)
+  translate (OlConditionTreeLeaf a) = OlConditionTreeLeaf (translate a)
 instance ToJSON OlConditionTree
 instance FromJSON OlConditionTree where
   -- "conditionHead": {
@@ -299,7 +324,9 @@ data OlNotice
   , _notice_description :: OlText
   } deriving (Generic, Eq, Show)
 instance Translateable OlNotice where
-  getTranslateables a = getTranslateables (_notice_content a) `S.union` getTranslateables (_notice_description a)
+  getTranslateables n = getTranslateables (_notice_content n) `S.union` getTranslateables (_notice_description n)
+  translate n = n { _notice_content = translate (_notice_content n)
+                  , _notice_description = translate (_notice_description n)}
 instance ToJSON OlNotice
 instance FromJSON OlNotice where
   parseJSON = withObject "OlNotice" $ \v -> OlNotice
@@ -329,11 +356,15 @@ data OlPermission
   , _permission_conditionHead :: Maybe OlConditionTree
   } deriving (Generic, Eq, Show)
 instance Translateable OlPermission where
-  getTranslateables a =
-    getTranslateables (_permission_summary a)
-    `S.union` getTranslateables (_permission_description a)
-    `S.union` getTranslateables (_permission_actions a)
-    `S.union` getTranslateables (_permission_conditionHead a)
+  getTranslateables p =
+    getTranslateables (_permission_summary p)
+    `S.union` getTranslateables (_permission_description p)
+    `S.union` getTranslateables (_permission_actions p)
+    `S.union` getTranslateables (_permission_conditionHead p)
+  translate p = p { _permission_summary = translate (_permission_summary p)
+                  , _permission_description = translate (_permission_description p)
+                  , _permission_actions = translate (_permission_actions p)
+                  , _permission_conditionHead = translate (_permission_conditionHead p)}
 instance ToJSON OlPermission
 instance FromJSON OlPermission where
   parseJSON = withObject "OlPermission" $ \v -> OlPermission
@@ -356,11 +387,16 @@ data OlLicense
  , _license_content :: Text
  } deriving (Generic, Eq, Show)
 instance Translateable OlLicense where
-  getTranslateables a =
-    getTranslateables (_license_summary a)
-    `S.union` getTranslateables (_license_description a)
-    `S.union` getTranslateables (_license_permissions a)
-    `S.union` getTranslateables (_license_notices a)
+  getTranslateables l =
+    getTranslateables (_license_summary l)
+    `S.union` getTranslateables (_license_description l)
+    `S.union` getTranslateables (_license_permissions l)
+    `S.union` getTranslateables (_license_notices l)
+  translate l = l
+    { _license_summary = translate (_license_summary l)
+    , _license_description = translate (_license_description l)
+    , _license_permissions = translate (_license_permissions l)
+    , _license_notices = translate (_license_notices l) }
 instance ToJSON OlLicense
 instance FromJSON OlLicense where
   parseJSON = withObject "OlLicense" $ \v -> OlLicense
@@ -397,8 +433,8 @@ licenses = case eitherDecode (B.fromStrict licensesFile) of
 loadOpenLicenseFacts :: IO Facts
 loadOpenLicenseFacts = let
     toFact lic = LicenseFact (Just (_license_uri lic)) lic
-  in logThatFactsWithNumberAreLoadedFrom "Hitachi open-license" $
-     (return . V.map toFact . V.fromList) licenses
+  in logThatFactsWithNumberAreLoadedFrom "Hitachi open-license" $ do
+  (return . V.map toFact . V.map translate . V.fromList) licenses
 
 loadOpenLicenseTranslateables :: [TranslationRow]
 loadOpenLicenseTranslateables = (map (\t -> TranslationRow t (case translateString t of
