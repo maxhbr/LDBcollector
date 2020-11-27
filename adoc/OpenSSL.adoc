@@ -44,6 +44,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://www.openssl.org/source/license.html
 * *SPDX:* http://spdx.org/licenses/OpenSSL.json
 * *SPDX:* https://spdx.org/licenses/OpenSSL.html
+* *open-license:* http://open-license.hitachi.com/licenses/279
 
 === Text
 
@@ -117,6 +118,8 @@ Project Wiki]
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -242,6 +245,200 @@ Policy]
                     [
                         null,
                         "http://www.openssl.org/source/license.html"
+                    ]
+                ]
+            }
+        },
+        "Hitachi open-license": {
+            "_license_uri": "http://open-license.hitachi.com/licenses/279",
+            "_license_permissions": [
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": null,
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                            "_action_uri": "http://open-license.hitachi.com/actions/1",
+                            "_action_id": "actions/1",
+                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/3",
+                            "_action_id": "actions/3",
+                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/4",
+                            "_action_id": "actions/4",
+                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "åå¾ãããã¤ããªããã®ã¾ã¾ä½¿ã",
+                            "_action_uri": "http://open-license.hitachi.com/actions/6",
+                            "_action_id": "actions/6",
+                            "_action_name": "åå¾ãããã¤ããªãä½¿ç¨ãã"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/8",
+                            "_action_id": "actions/8",
+                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãä½¿ç¨ãã"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "è¬è¾ã®åå®¹ã¯ãã¡ã\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeAnd",
+                                "contents": []
+                            },
+                            {
+                                "tag": "OlConditionTreeAnd",
+                                "contents": []
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                            "_action_uri": "http://open-license.hitachi.com/actions/9",
+                            "_action_id": "actions/9",
+                            "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/12",
+                            "_action_id": "actions/12",
+                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "è¬è¾ã®åå®¹ã¯ãã¡ã\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeAnd",
+                                "contents": []
+                            },
+                            {
+                                "tag": "OlConditionTreeAnd",
+                                "contents": []
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "åå¾ãããã¤ããªããã®ã¾ã¾åé å¸ãã",
+                            "_action_uri": "http://open-license.hitachi.com/actions/11",
+                            "_action_id": "actions/11",
+                            "_action_name": "åå¾ãããã¤ããªãé å¸ãã"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/14",
+                            "_action_id": "actions/14",
+                            "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãé å¸ãã"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "è¬è¾ã®åå®¹ã¯ãã¡ã\"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)\"  \r\n",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/31",
+                            "_action_id": "actions/31",
+                            "_action_name": "ã½ããã¦ã§ã¢ã®ç¹å¾´ãä½¿ç¨ã«ã¤ãã¦è¿°ã¹ãåºååªä½ãä½ã"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "\"OpenSSL Toolkit\"ããã³\"OpenSSL Project\"ã¨ããåç§°ãä½¿ç¨ããå ´åãopenssl-core@openssl.orgã«é£çµ¡ããã",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/29",
+                            "_action_id": "actions/29",
+                            "_action_name": "æ´¾çããè£½åã®æ¨å¥¨ãè²©å£²ä¿é²ã«åç§°ãä½¿ã"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "\"OpenSSL\"ã¨ããåç§°ãä½¿ç¨ããå ´åãæ¸é¢ã«ããOpenSSL Projectã®è¨±å¯ãåãã",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": []
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/30",
+                            "_action_id": "actions/30",
+                            "_action_name": "æ´¾çããè£½åã®è£½ååã¾ãã¯è£½ååã®ä¸é¨ã«åç§°ãä½¿ã"
+                        }
+                    ]
+                }
+            ],
+            "_license_id": "licenses/279",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/279",
+            "_license_name": "OpenSSL License",
+            "_license_summary": "",
+            "_license_description": "",
+            "_license_baseUri": "http://open-license.hitachi.com/",
+            "_license_schemaVersion": "0.1",
+            "_implications": {
+                "__impliedNames": [
+                    "OpenSSL License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/279"
                     ]
                 ]
             }
@@ -478,6 +675,10 @@ Policy]
         [
             "Homepage",
             "http://www.openssl.org/source/license.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/279"
         ]
     ]
 }
