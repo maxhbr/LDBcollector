@@ -66,9 +66,10 @@ class Translateable a where
   getTranslateables :: a -> Set String
   translate :: a -> a
 translateString :: String -> Maybe String
+translateString "" = Just ""
 translateString ja = case (normalizeKey ja) `M.lookup` translations of
   Just v -> v
-  _      -> trace ("did not find: " ++ take 40 ja) Nothing
+  _      -> Nothing
 
 instance (Translateable a) => Translateable [a] where
   getTranslateables = S.unions . map getTranslateables
