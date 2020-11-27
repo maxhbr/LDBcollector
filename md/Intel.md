@@ -9,6 +9,10 @@ Intel Open Source License (Intel)
 
 -   `Intel BSD - Export Control`
 
+-   `The Intel Open Source License`
+
+-   `License :: OSI Approved :: Intel Open Source License`
+
 -   `intel-osl`
 
 Comments on (easy) usability
@@ -40,11 +44,11 @@ URLs
 -   **OSI Page:**
     http://www.opensource.org/licenses/intel-open-source-license.html
 
+-   **OSI Page:** https://opensource.org/licenses/Intel
+
 -   **SPDX:** http://spdx.org/licenses/Intel.json
 
 -   **SPDX:** https://spdx.org/licenses/Intel.html
-
--   https://opensource.org/licenses/Intel
 
 -   https://opensource.org/licenses/intel-open-source-license.php
 
@@ -102,6 +106,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -114,6 +121,8 @@ Raw Data
             "Intel Open Source License",
             "scancode://intel-bsd-export-control",
             "Intel BSD - Export Control",
+            "The Intel Open Source License",
+            "License :: OSI Approved :: Intel Open Source License",
             "intel-osl"
         ],
         "__impliedId": "Intel",
@@ -295,6 +304,55 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/Intel",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "Intel",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Intel Open Source License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "The Intel Open Source License",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "retired",
+                    "osi-approved"
+                ],
+                "id": "Intel",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/Intel"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Intel",
+                        "The Intel Open Source License",
+                        "Intel",
+                        "License :: OSI Approved :: Intel Open Source License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/Intel"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -354,6 +412,10 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/intel-open-source-license.php"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Intel"
             ]
         ]
     }

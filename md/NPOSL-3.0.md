@@ -9,6 +9,8 @@ Non-Profit Open Software License 3.0 (NPOSL-3.0)
 
 -   `Non-Profit OSL 3.0`
 
+-   `The Non-Profit Open Software License, Version 3.0`
+
 -   `nosl3.0`
 
 Comments on (easy) usability
@@ -45,6 +47,8 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/NOSL3.0.html
 
+-   **OSI Page:** https://opensource.org/licenses/NPOSL-3.0
+
 -   **SPDX:** http://spdx.org/licenses/NPOSL-3.0.json
 
 -   https://opensource.org/licenses/NOSL3.0
@@ -52,8 +56,6 @@ URLs
 -   https://spdx.org/licenses/NPOSL-3.0.html
 
 -   http://www.opensource.org/licenses/NOSL3.0
-
--   https://opensource.org/licenses/NPOSL-3.0
 
 Text
 ----
@@ -138,6 +140,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nosl-3.0.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -150,6 +155,7 @@ Raw Data
             "Non-Profit Open Software License 3.0",
             "scancode://nosl-3.0",
             "Non-Profit OSL 3.0",
+            "The Non-Profit Open Software License, Version 3.0",
             "nosl3.0"
         ],
         "__impliedId": "NPOSL-3.0",
@@ -354,6 +360,48 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "SaaSCopyleft"
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/NPOSL-3.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "NPOSL-3.0",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "The Non-Profit Open Software License, Version 3.0",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved"
+                ],
+                "id": "NPOSL-3.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/NPOSL-3.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "NPOSL-3.0",
+                        "The Non-Profit Open Software License, Version 3.0",
+                        "NPOSL-3.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/NPOSL-3.0"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -402,6 +450,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/NOSL3.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/NPOSL-3.0"
             ],
             [
                 null,

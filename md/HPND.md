@@ -31,11 +31,11 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/historical.php
 
+-   **OSI Page:** https://opensource.org/licenses/HPND
+
 -   **SPDX:** http://spdx.org/licenses/HPND.json
 
 -   **SPDX:** https://spdx.org/licenses/HPND.html
-
--   https://opensource.org/licenses/HPND
 
 -   http://www.opensource.org/licenses/HPND
 
@@ -80,6 +80,9 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml "Scancode")
     (CC0-1.0)
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
@@ -279,6 +282,50 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/HPND",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "HPND",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Historical Permission Notice and Disclaimer",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "discouraged",
+                    "redundant"
+                ],
+                "id": "HPND",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/HPND"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "HPND",
+                        "Historical Permission Notice and Disclaimer",
+                        "HPND"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/HPND"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -334,6 +381,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/HPND"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/HPND"
             ]
         ]
     }

@@ -7,6 +7,10 @@ Open Group Test Suite License (OGTSL)
 
 -   `scancode://opengroup`
 
+-   `The Open Group Test Suite License (OGTSL)`
+
+-   `License :: OSI Approved :: Open Group Test Suite License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -30,13 +34,13 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/opengroup.php
 
+-   **OSI Page:** https://opensource.org/licenses/OGTSL
+
 -   **SPDX:** http://spdx.org/licenses/OGTSL.json
 
 -   **SPDX:** https://spdx.org/licenses/OGTSL.html
 
 -   http://www.opengroup.org/testing/downloads/The\_Open\_Group\_TSL.txt
-
--   https://opensource.org/licenses/OGTSL
 
 -   http://www.opensource.org/licenses/OGTSL
 
@@ -116,6 +120,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/opengroup.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -126,7 +133,9 @@ Raw Data
         "__impliedNames": [
             "OGTSL",
             "Open Group Test Suite License",
-            "scancode://opengroup"
+            "scancode://opengroup",
+            "The Open Group Test Suite License (OGTSL)",
+            "License :: OSI Approved :: Open Group Test Suite License"
         ],
         "__impliedId": "OGTSL",
         "__impliedComments": [
@@ -324,6 +333,53 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/OGTSL",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "OGTSL",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Open Group Test Suite License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "The Open Group Test Suite License (OGTSL)",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved"
+                ],
+                "id": "OGTSL",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/OGTSL"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "OGTSL",
+                        "The Open Group Test Suite License (OGTSL)",
+                        "OGTSL",
+                        "License :: OSI Approved :: Open Group Test Suite License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/OGTSL"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -383,6 +439,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/OGTSL"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/OGTSL"
             ]
         ]
     }

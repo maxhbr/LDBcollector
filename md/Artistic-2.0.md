@@ -11,6 +11,10 @@ Artistic License 2.0 (Artistic-2.0)
 
 -   `scancode://artistic-2.0`
 
+-   `Artistic License, Version 2.0`
+
+-   `License :: OSI Approved :: Artistic License`
+
 -   `artistic-license-2.0`
 
 Description
@@ -69,6 +73,8 @@ URLs
 -   **OSI Page:**
     http://www.opensource.org/licenses/artistic-license-2.0.php
 
+-   **OSI Page:** https://opensource.org/licenses/Artistic-2.0
+
 -   **SPDX:** http://spdx.org/licenses/Artistic-2.0.json
 
 -   **SPDX:** https://spdx.org/licenses/Artistic-2.0.html
@@ -78,8 +84,6 @@ URLs
 -   https://opensource.org/licenses/artistic-license-2.0
 
 -   http://www.opensource.org/licenses/artistic-license-2.0
-
--   https://opensource.org/licenses/Artistic-2.0
 
 Text
 ----
@@ -183,6 +187,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/artistic-2.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -211,6 +218,8 @@ Raw Data
             "Artistic License 2.0",
             "scancode://artistic-2.0",
             "artistic-2.0",
+            "Artistic License, Version 2.0",
+            "License :: OSI Approved :: Artistic License",
             "artistic-license-2.0"
         ],
         "__impliedId": "Artistic-2.0",
@@ -452,6 +461,59 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/Artistic-2.0.html"
+                        ]
+                    ]
+                }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/Artistic-2.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "Artistic-2.0",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "Artistic-2.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Artistic License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Artistic License, Version 2.0",
+                "other_names": [],
+                "keywords": [
+                    "miscellaneous",
+                    "osi-approved"
+                ],
+                "id": "Artistic-2.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/Artistic-2.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Artistic-2.0",
+                        "Artistic License, Version 2.0",
+                        "Artistic-2.0",
+                        "Artistic-2.0",
+                        "License :: OSI Approved :: Artistic License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/Artistic-2.0"
                         ]
                     ]
                 }
@@ -822,6 +884,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/artistic-license-2.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Artistic-2.0"
             ],
             [
                 null,

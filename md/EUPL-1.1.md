@@ -9,6 +9,10 @@ European Union Public License 1.1 (EUPL-1.1)
 
 -   `EUPL 1.1`
 
+-   `European Union Public License, Version 1.1`
+
+-   `License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)`
+
 Description
 -----------
 
@@ -73,13 +77,13 @@ URLs
 
 -   **Homepage:** http://ec.europa.eu/idabc/eupl
 
+-   **OSI Page:** https://opensource.org/licenses/EUPL-1.1
+
 -   **SPDX:** http://spdx.org/licenses/EUPL-1.1.json
 
 -   https://joinup.ec.europa.eu/software/page/eupl/licence-eupl
 
 -   https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl1.1.-licence-en\_0.pdf
-
--   https://opensource.org/licenses/EUPL-1.1
 
 -   https://spdx.org/licenses/EUPL-1.1.html
 
@@ -378,6 +382,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/eupl-1.1.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -394,7 +401,9 @@ Raw Data
             "European Union Public License 1.1",
             "scancode://eupl-1.1",
             "EUPL 1.1",
-            "eupl-1.1"
+            "eupl-1.1",
+            "European Union Public License, Version 1.1",
+            "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
         ],
         "__impliedId": "EUPL-1.1",
         "__impliedAmbiguousNames": [
@@ -626,6 +635,53 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "SaaSCopyleft"
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/EUPL-1.1",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "EUPL-1.1",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "European Union Public License, Version 1.1",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved"
+                ],
+                "id": "EUPL-1.1",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/EUPL-1.1"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "EUPL-1.1",
+                        "European Union Public License, Version 1.1",
+                        "EUPL-1.1",
+                        "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/EUPL-1.1"
+                        ]
+                    ]
+                }
             },
             "choosealicense.com": {
                 "limitations": [
@@ -874,6 +930,10 @@ Raw Data
             [
                 null,
                 "https://joinup.ec.europa.eu/system/files/EN/EUPL%20v.1.1%20-%20Licence.pdf"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/EUPL-1.1"
             ]
         ]
     }

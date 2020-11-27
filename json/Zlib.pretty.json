@@ -7,6 +7,8 @@
         "ZLIB License",
         "zlib",
         "zlib/libpng License",
+        "The zlib/libpng License (Zlib)",
+        "License :: OSI Approved :: zlib/libpng License",
         "zlib/libpng license",
         "zlib-license"
     ],
@@ -257,7 +259,72 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": []
                     },
-                    "_permission_actions": []
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したコードをそのまま使う",
+                            "_action_uri": "http://open-license.hitachi.com/actions/1",
+                            "_action_id": "actions/1",
+                            "_action_name": "取得したソースコードを改変せずに使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/4",
+                            "_action_id": "actions/4",
+                            "_action_name": "改変したソースコードを使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したコードをそのまま使う",
+                            "_action_uri": "http://open-license.hitachi.com/actions/5",
+                            "_action_id": "actions/5",
+                            "_action_name": "取得したオブジェクトコードを使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したバイナリをそのまま使う",
+                            "_action_uri": "http://open-license.hitachi.com/actions/6",
+                            "_action_id": "actions/6",
+                            "_action_name": "取得したバイナリを使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/7",
+                            "_action_id": "actions/7",
+                            "_action_name": "改変したソースコードから生成したオブジェクトコードを使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/8",
+                            "_action_id": "actions/8",
+                            "_action_name": "改変したソースコードから生成したバイナリを使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得した実行形式をそのまま使う",
+                            "_action_uri": "http://open-license.hitachi.com/actions/84",
+                            "_action_id": "actions/84",
+                            "_action_name": "取得した実行形式を使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/87",
+                            "_action_id": "actions/87",
+                            "_action_name": "改変したソースコードから生成した実行形式を使用する"
+                        }
+                    ]
                 },
                 {
                     "_permission_summary": "",
@@ -266,7 +333,16 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": []
                     },
-                    "_permission_actions": []
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したコードをそのまま再頒布する",
+                            "_action_uri": "http://open-license.hitachi.com/actions/9",
+                            "_action_id": "actions/9",
+                            "_action_name": "取得したソースコードを改変せずに頒布する"
+                        }
+                    ]
                 },
                 {
                     "_permission_summary": "",
@@ -275,7 +351,32 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": []
                     },
-                    "_permission_actions": []
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したコードをそのまま再頒布する",
+                            "_action_uri": "http://open-license.hitachi.com/actions/10",
+                            "_action_id": "actions/10",
+                            "_action_name": "取得したオブジェクトコードを頒布する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したバイナリをそのまま再頒布する",
+                            "_action_uri": "http://open-license.hitachi.com/actions/11",
+                            "_action_id": "actions/11",
+                            "_action_name": "取得したバイナリを頒布する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得した実行形式をそのまま再頒布する",
+                            "_action_uri": "http://open-license.hitachi.com/actions/86",
+                            "_action_id": "actions/86",
+                            "_action_name": "取得した実行形式を頒布する"
+                        }
+                    ]
                 },
                 {
                     "_permission_summary": "",
@@ -284,7 +385,40 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": []
                     },
-                    "_permission_actions": []
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/3",
+                            "_action_id": "actions/3",
+                            "_action_name": "取得したソースコードを改変する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/13",
+                            "_action_id": "actions/13",
+                            "_action_name": "改変したソースコードから生成したオブジェクトコードを頒布する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/14",
+                            "_action_id": "actions/14",
+                            "_action_name": "改変したソースコードから生成したバイナリを頒布する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/89",
+                            "_action_id": "actions/89",
+                            "_action_name": "改変したソースコードから生成した実行形式を頒布する"
+                        }
+                    ]
                 },
                 {
                     "_permission_summary": "",
@@ -293,7 +427,16 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": []
                     },
-                    "_permission_actions": []
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/12",
+                            "_action_id": "actions/12",
+                            "_action_name": "改変したソースコードを頒布する"
+                        }
+                    ]
                 }
             ],
             "_license_id": "licenses/16",
@@ -347,6 +490,58 @@
                     [
                         "SPDX",
                         "https://spdx.org/licenses/Zlib.html"
+                    ]
+                ]
+            }
+        },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/Zlib",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "Zlib",
+                    "scheme": "DEP5"
+                },
+                {
+                    "identifier": "Zlib",
+                    "scheme": "SPDX"
+                },
+                {
+                    "identifier": "License :: OSI Approved :: zlib/libpng License",
+                    "scheme": "Trove"
+                }
+            ],
+            "superseded_by": null,
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "The zlib/libpng License (Zlib)",
+            "other_names": [],
+            "keywords": [
+                "osi-approved"
+            ],
+            "id": "Zlib",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/Zlib"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "Zlib",
+                    "The zlib/libpng License (Zlib)",
+                    "Zlib",
+                    "Zlib",
+                    "License :: OSI Approved :: zlib/libpng License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/Zlib"
                     ]
                 ]
             }
@@ -641,6 +836,10 @@
         [
             null,
             "http://www.opensource.org/licenses/Zlib"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/Zlib"
         ],
         [
             "open-license",

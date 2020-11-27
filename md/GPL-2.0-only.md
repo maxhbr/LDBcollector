@@ -21,6 +21,10 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 
 -   `GNU GPLv2`
 
+-   `GNU General Public License, Version 2.0`
+
+-   `License :: OSI Approved :: GNU General Public License v2 (GPLv2)`
+
 -   `GNU General Public License 2.0`
 
 Description
@@ -102,11 +106,17 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/gpl-license.php
 
+-   **OSI Page:** https://opensource.org/licenses/GPL-2.0
+
 -   **SPDX:** http://spdx.org/licenses/GPL-2.0-only.json
 
--   https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+-   **Wikipedia page:**
+    https://en.wikipedia.org/wiki/GNU\_General\_Public\_License
 
--   https://opensource.org/licenses/GPL-2.0
+-   **tl;dr legal:**
+    https://tldrlegal.com/license/gnu-general-public-license-v2
+
+-   https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 
 -   https://spdx.org/licenses/GPL-2.0-only.html
 
@@ -494,6 +504,9 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -523,6 +536,8 @@ Raw Data
             "GPL 2.0",
             "gpl-2.0",
             "GNU GPLv2",
+            "GNU General Public License, Version 2.0",
+            "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
             "GNU General Public License 2.0"
         ],
         "__impliedId": "GPL-2.0-only",
@@ -876,6 +891,81 @@ Raw Data
                 },
                 "CopyleftKind": "StrongCopyleft"
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://www.gnu.org/licenses/gpl-2.0.txt",
+                        "title": "Plain Text",
+                        "media_type": "text/plain"
+                    },
+                    {
+                        "url": "https://www.gnu.org/licenses/gpl-2.0-standalone.html",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "GPL-2.0",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "GPL-2.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": "GPL-3.0",
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "GNU General Public License, Version 2.0",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "popular",
+                    "copyleft"
+                ],
+                "id": "GPL-2.0",
+                "links": [
+                    {
+                        "note": "tl;dr legal",
+                        "url": "https://tldrlegal.com/license/gnu-general-public-license-v2"
+                    },
+                    {
+                        "note": "Wikipedia page",
+                        "url": "https://en.wikipedia.org/wiki/GNU_General_Public_License"
+                    },
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/GPL-2.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "GPL-2.0",
+                        "GNU General Public License, Version 2.0",
+                        "GPL-2.0",
+                        "GPL-2.0",
+                        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "tl;dr legal",
+                            "https://tldrlegal.com/license/gnu-general-public-license-v2"
+                        ],
+                        [
+                            "Wikipedia page",
+                            "https://en.wikipedia.org/wiki/GNU_General_Public_License"
+                        ],
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/GPL-2.0"
+                        ]
+                    ]
+                }
+            },
             "choosealicense.com": {
                 "limitations": [
                     "liability",
@@ -1224,6 +1314,18 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/GPL-2.0"
+            ],
+            [
+                "tl;dr legal",
+                "https://tldrlegal.com/license/gnu-general-public-license-v2"
+            ],
+            [
+                "Wikipedia page",
+                "https://en.wikipedia.org/wiki/GNU_General_Public_License"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/GPL-2.0"
             ]
         ]
     }

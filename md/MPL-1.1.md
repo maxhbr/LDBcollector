@@ -9,6 +9,10 @@ Mozilla Public License 1.1 (MPL-1.1)
 
 -   `MPL 1.1`
 
+-   `Mozilla Public License, Version 1.1`
+
+-   `License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)`
+
 -   `mozilla1.1`
 
 Comments on (easy) usability
@@ -48,9 +52,9 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/mozilla1.1.php
 
--   **SPDX:** http://spdx.org/licenses/MPL-1.1.json
+-   **OSI Page:** https://opensource.org/licenses/MPL-1.1
 
--   https://opensource.org/licenses/MPL-1.1
+-   **SPDX:** http://spdx.org/licenses/MPL-1.1.json
 
 -   https://spdx.org/licenses/MPL-1.1.html
 
@@ -226,6 +230,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-1.1.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MPL-1.1.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -249,6 +256,8 @@ Raw Data
             "Mozilla Public License 1.1",
             "scancode://mpl-1.1",
             "MPL 1.1",
+            "Mozilla Public License, Version 1.1",
+            "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
             "mozilla1.1"
         ],
         "__impliedId": "MPL-1.1",
@@ -482,6 +491,60 @@ Raw Data
                 },
                 "CopyleftKind": "WeakCopyleft"
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/MPL-1.1",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "MPL-1.1",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "MPL-1.1",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": "MPL-2.0",
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Mozilla Public License, Version 1.1",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "discouraged",
+                    "obsolete"
+                ],
+                "id": "MPL-1.1",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/MPL-1.1"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "MPL-1.1",
+                        "Mozilla Public License, Version 1.1",
+                        "MPL-1.1",
+                        "MPL-1.1",
+                        "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/MPL-1.1"
+                        ]
+                    ]
+                }
+            },
             "finos/OSLC-handbook": {
                 "terms": [
                     {
@@ -690,6 +753,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/MPL-1.1"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/MPL-1.1"
             ]
         ]
     }

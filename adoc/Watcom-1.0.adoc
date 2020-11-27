@@ -12,6 +12,7 @@
 
 * `+scancode://sybase+`
 * `+Open Watcom 1.0+`
+* `+The Sybase Open Source Licence+`
 
 === Comments on (easy) usability
 
@@ -39,8 +40,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://opensource.org/licenses/sybase.php
+* *OSI Page:* https://opensource.org/licenses/Watcom-1.0
 * *SPDX:* http://spdx.org/licenses/Watcom-1.0.json
-* https://opensource.org/licenses/Watcom-1.0
 * http://www.opensource.org/licenses/Watcom-1.0
 
 === Text
@@ -410,6 +411,8 @@ repository] is generated)
 (CC0-1.0)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml[Scancode]
 (CC0-1.0)
+* https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
@@ -425,7 +428,8 @@ Knowledge International]
         "Watcom-1.0",
         "Sybase Open Watcom Public License 1.0",
         "scancode://sybase",
-        "Open Watcom 1.0"
+        "Open Watcom 1.0",
+        "The Sybase Open Source Licence"
     ],
     "__impliedId": "Watcom-1.0",
     "__impliedComments": [
@@ -571,6 +575,50 @@ Knowledge International]
                 ]
             }
         },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/Watcom-1.0",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "Watcom-1.0",
+                    "scheme": "SPDX"
+                }
+            ],
+            "superseded_by": null,
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "The Sybase Open Source Licence",
+            "other_names": [],
+            "keywords": [
+                "discouraged",
+                "non-reusable",
+                "osi-approved"
+            ],
+            "id": "Watcom-1.0",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/Watcom-1.0"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "Watcom-1.0",
+                    "The Sybase Open Source Licence",
+                    "Watcom-1.0"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/Watcom-1.0"
+                    ]
+                ]
+            }
+        },
         "Google OSS Policy": {
             "rating": "CANNOT_BE_USED",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -630,6 +678,10 @@ Knowledge International]
         [
             null,
             "http://www.opensource.org/licenses/Watcom-1.0"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/Watcom-1.0"
         ]
     ]
 }

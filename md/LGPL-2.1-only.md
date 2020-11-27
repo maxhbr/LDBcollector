@@ -19,6 +19,10 @@ GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 -   `GNU LGPLv2.1`
 
+-   `GNU Lesser General Public License, Version 2.1`
+
+-   `License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)`
+
 -   `GNU Lesser General Public License 2.1`
 
 Description
@@ -79,11 +83,14 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/lgpl-2.1.php
 
+-   **OSI Page:** https://opensource.org/licenses/LGPL-2.1
+
 -   **SPDX:** http://spdx.org/licenses/LGPL-2.1-only.json
 
--   https://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html
+-   **Wikipedia page:**
+    https://en.wikipedia.org/wiki/GNU\_Lesser\_General\_Public\_License
 
--   https://opensource.org/licenses/LGPL-2.1
+-   https://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html
 
 -   https://spdx.org/licenses/LGPL-2.1-only.html
 
@@ -641,6 +648,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-2.1.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.1.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -669,6 +679,8 @@ Raw Data
             "LGPL 2.1",
             "lgpl-2.1",
             "GNU LGPLv2.1",
+            "GNU Lesser General Public License, Version 2.1",
+            "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
             "GNU Lesser General Public License 2.1"
         ],
         "__impliedId": "LGPL-2.1-only",
@@ -962,6 +974,73 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "WeakCopyleft"
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://www.gnu.org/licenses/lgpl-2.1.txt",
+                        "title": "Plain Text",
+                        "media_type": "text/plain"
+                    },
+                    {
+                        "url": "https://www.gnu.org/licenses/lgpl-2.1-standalone.html",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "LGPL-2.1",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "LGPL-2.1",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": "LGPL-3.0",
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "GNU Lesser General Public License, Version 2.1",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved",
+                    "popular",
+                    "copyleft"
+                ],
+                "id": "LGPL-2.1",
+                "links": [
+                    {
+                        "note": "Wikipedia page",
+                        "url": "https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License"
+                    },
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/LGPL-2.1"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "LGPL-2.1",
+                        "GNU Lesser General Public License, Version 2.1",
+                        "LGPL-2.1",
+                        "LGPL-2.1",
+                        "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "Wikipedia page",
+                            "https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License"
+                        ],
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/LGPL-2.1"
+                        ]
+                    ]
+                }
             },
             "choosealicense.com": {
                 "limitations": [
@@ -1315,6 +1394,14 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/LGPL-2.1"
+            ],
+            [
+                "Wikipedia page",
+                "https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/LGPL-2.1"
             ]
         ]
     }

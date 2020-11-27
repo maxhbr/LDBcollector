@@ -9,6 +9,10 @@ Nokia Open Source License (Nokia)
 
 -   `NOKOS License 1.0a`
 
+-   `Nokia Open Source License, Version 1.0a`
+
+-   `License :: OSI Approved :: Nokia Open Source License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -28,9 +32,9 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/nokia.html
 
--   **SPDX:** http://spdx.org/licenses/Nokia.json
+-   **OSI Page:** https://opensource.org/licenses/Nokia
 
--   https://opensource.org/licenses/nokia
+-   **SPDX:** http://spdx.org/licenses/Nokia.json
 
 -   http://www.opensource.org/licenses/nokia
 
@@ -440,6 +444,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nokos-1.0a.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -451,7 +458,9 @@ Raw Data
             "Nokia",
             "Nokia Open Source License",
             "scancode://nokos-1.0a",
-            "NOKOS License 1.0a"
+            "NOKOS License 1.0a",
+            "Nokia Open Source License, Version 1.0a",
+            "License :: OSI Approved :: Nokia Open Source License"
         ],
         "__impliedId": "Nokia",
         "__impliedComments": [
@@ -603,6 +612,55 @@ Raw Data
                         "Nokia"
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/Nokia",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "Nokia",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Nokia Open Source License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Nokia Open Source License, Version 1.0a",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "non-reusable",
+                    "osi-approved"
+                ],
+                "id": "Nokia",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/Nokia"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Nokia",
+                        "Nokia Open Source License, Version 1.0a",
+                        "Nokia",
+                        "License :: OSI Approved :: Nokia Open Source License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/Nokia"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -643,6 +701,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/nokia"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Nokia"
             ],
             [
                 null,

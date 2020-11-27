@@ -4,6 +4,8 @@
         "ISC License",
         "scancode://isc",
         "isc",
+        "ISC License (ISC)",
+        "License :: OSI Approved :: ISC License (ISCL)",
         "ISC license",
         "isc-license"
     ],
@@ -246,6 +248,66 @@
                     [
                         "SPDX",
                         "https://spdx.org/licenses/ISC.html"
+                    ]
+                ]
+            }
+        },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/ISC",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "ISC",
+                    "scheme": "DEP5"
+                },
+                {
+                    "identifier": "ISC",
+                    "scheme": "SPDX"
+                },
+                {
+                    "identifier": "License :: OSI Approved :: ISC License (ISCL)",
+                    "scheme": "Trove"
+                }
+            ],
+            "superseded_by": null,
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "ISC License (ISC)",
+            "other_names": [],
+            "keywords": [
+                "osi-approved"
+            ],
+            "id": "ISC",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/ISC"
+                },
+                {
+                    "note": "Wikipedia page",
+                    "url": "https://en.wikipedia.org/wiki/ISC_license"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "ISC",
+                    "ISC License (ISC)",
+                    "ISC",
+                    "ISC",
+                    "License :: OSI Approved :: ISC License (ISCL)"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/ISC"
+                    ],
+                    [
+                        "Wikipedia page",
+                        "https://en.wikipedia.org/wiki/ISC_license"
                     ]
                 ]
             }
@@ -537,6 +599,14 @@
         [
             null,
             "https://www.isc.org/isc-license-1.0.html"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/ISC"
+        ],
+        [
+            "Wikipedia page",
+            "https://en.wikipedia.org/wiki/ISC_license"
         ]
     ]
 }

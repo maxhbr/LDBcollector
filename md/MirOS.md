@@ -9,6 +9,8 @@ The MirOS Licence (MirOS)
 
 -   `scancode://mir-os`
 
+-   `The MirOS Licence (MirOS)`
+
 -   `MirOS Licence`
 
 Comments on (easy) usability
@@ -42,11 +44,11 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/miros.html
 
+-   **OSI Page:** https://opensource.org/licenses/MirOS
+
 -   **SPDX:** http://spdx.org/licenses/MirOS.json
 
 -   **SPDX:** https://spdx.org/licenses/MirOS.html
-
--   https://opensource.org/licenses/MirOS
 
 -   http://www.opensource.org/licenses/MirOS
 
@@ -88,6 +90,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -104,6 +109,7 @@ Raw Data
             "The MirOS Licence",
             "MirOS License",
             "scancode://mir-os",
+            "The MirOS Licence (MirOS)",
             "MirOS Licence"
         ],
         "__impliedId": "MirOS",
@@ -319,6 +325,48 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/MirOS",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "MirOS",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "The MirOS Licence (MirOS)",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved"
+                ],
+                "id": "MirOS",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/MirOS"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "MirOS",
+                        "The MirOS Licence (MirOS)",
+                        "MirOS"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/MirOS"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -381,6 +429,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/MirOS"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/MirOS"
             ]
         ]
     }

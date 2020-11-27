@@ -9,6 +9,8 @@ Reciprocal Public License 1.1 (RPL-1.1)
 
 -   `RPL 1.1`
 
+-   `Reciprocal Public License, Version 1.1`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -224,6 +226,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 ### Raw JSON
 
     {
@@ -231,7 +236,8 @@ Raw Data
             "RPL-1.1",
             "Reciprocal Public License 1.1",
             "scancode://rpl-1.1",
-            "RPL 1.1"
+            "RPL 1.1",
+            "Reciprocal Public License, Version 1.1"
         ],
         "__impliedId": "RPL-1.1",
         "__impliedAmbiguousNames": [
@@ -387,6 +393,50 @@ Raw Data
                     ]
                 },
                 "CopyleftKind": "MaximalCopyleft"
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/RPL-1.1",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "RPL-1.1",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": "RPL-1.5",
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Reciprocal Public License, Version 1.1",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "obsolete",
+                    "osi-approved"
+                ],
+                "id": "RPL-1.1",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/RPL-1.1"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "RPL-1.1",
+                        "Reciprocal Public License, Version 1.1",
+                        "RPL-1.1"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/RPL-1.1"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -435,6 +485,10 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/licenses/license-list.html#RPL"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/RPL-1.1"
             ]
         ]
     }

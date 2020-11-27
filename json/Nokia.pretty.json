@@ -3,7 +3,9 @@
         "Nokia",
         "Nokia Open Source License",
         "scancode://nokos-1.0a",
-        "NOKOS License 1.0a"
+        "NOKOS License 1.0a",
+        "Nokia Open Source License, Version 1.0a",
+        "License :: OSI Approved :: Nokia Open Source License"
     ],
     "__impliedId": "Nokia",
     "__impliedComments": [
@@ -155,6 +157,55 @@
                     "Nokia"
                 ]
             }
+        },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/Nokia",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "Nokia",
+                    "scheme": "SPDX"
+                },
+                {
+                    "identifier": "License :: OSI Approved :: Nokia Open Source License",
+                    "scheme": "Trove"
+                }
+            ],
+            "superseded_by": null,
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "Nokia Open Source License, Version 1.0a",
+            "other_names": [],
+            "keywords": [
+                "discouraged",
+                "non-reusable",
+                "osi-approved"
+            ],
+            "id": "Nokia",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/Nokia"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "Nokia",
+                    "Nokia Open Source License, Version 1.0a",
+                    "Nokia",
+                    "License :: OSI Approved :: Nokia Open Source License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/Nokia"
+                    ]
+                ]
+            }
         }
     },
     "__impliedJudgement": [
@@ -195,6 +246,10 @@
         [
             null,
             "http://www.opensource.org/licenses/nokia"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/Nokia"
         ],
         [
             null,

@@ -9,6 +9,12 @@ MIT License (MIT)
 
 -   `scancode://mit`
 
+-   `MIT/Expat License`
+
+-   `Expat`
+
+-   `License :: OSI Approved :: MIT License`
+
 -   `MIT license / X11 license`
 
 -   `mit-license`
@@ -51,6 +57,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   “Because MIT has used many licenses for software, the Free Software
+    Foundation considers MIT License ambiguous. The MIT License
+    published on the OSI site is the same as the Expat License. ”
+    (source:
+    [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
+
 General Comments
 ----------------
 
@@ -74,11 +87,15 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/MIT
 
+-   **OSI Page:** https://opensource.org/licenses/mit
+
 -   **SPDX:** http://spdx.org/licenses/MIT.json
 
 -   **SPDX:** https://spdx.org/licenses/MIT.html
 
--   https://opensource.org/licenses/MIT
+-   **Wikipedia page:** https://en.wikipedia.org/wiki/MIT\_License
+
+-   **tl;dr legal:** https://tldrlegal.com/license/mit-license
 
 -   https://opensource.com/article/18/3/patent-grant-mit-license
 
@@ -131,6 +148,9 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -158,6 +178,9 @@ Raw Data
             "MIT License",
             "scancode://mit",
             "mit",
+            "MIT/Expat License",
+            "Expat",
+            "License :: OSI Approved :: MIT License",
             "MIT license / X11 license",
             "mit-license"
         ],
@@ -402,6 +425,101 @@ Raw Data
                     ]
                 }
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/mit",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "MIT",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "Expat",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "MIT",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: MIT License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "MIT/Expat License",
+                "other_names": [
+                    {
+                        "note": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License.",
+                        "name": "MIT"
+                    },
+                    {
+                        "note": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License.",
+                        "name": "Expat"
+                    }
+                ],
+                "keywords": [
+                    "osi-approved",
+                    "popular",
+                    "permissive"
+                ],
+                "id": "MIT",
+                "links": [
+                    {
+                        "note": "tl;dr legal",
+                        "url": "https://tldrlegal.com/license/mit-license"
+                    },
+                    {
+                        "note": "Wikipedia page",
+                        "url": "https://en.wikipedia.org/wiki/MIT_License"
+                    },
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/mit"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT",
+                        "MIT/Expat License",
+                        "MIT",
+                        "Expat",
+                        "MIT",
+                        "License :: OSI Approved :: MIT License",
+                        "MIT",
+                        "Expat"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "OpenSourceInitiative",
+                            {
+                                "tag": "NeutralJudgement",
+                                "contents": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License.\n"
+                            }
+                        ]
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "tl;dr legal",
+                            "https://tldrlegal.com/license/mit-license"
+                        ],
+                        [
+                            "Wikipedia page",
+                            "https://en.wikipedia.org/wiki/MIT_License"
+                        ],
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/mit"
+                        ]
+                    ]
+                }
+            },
             "Wikipedia": {
                 "Distribution": {
                     "value": "Permissive",
@@ -614,6 +732,13 @@ Raw Data
                 }
             ],
             [
+                "OpenSourceInitiative",
+                {
+                    "tag": "NeutralJudgement",
+                    "contents": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License.\n"
+                }
+            ],
+            [
                 "SPDX",
                 {
                     "tag": "PositiveJudgement",
@@ -709,6 +834,18 @@ Raw Data
             [
                 null,
                 "https://opensource.com/article/19/4/history-mit-license"
+            ],
+            [
+                "tl;dr legal",
+                "https://tldrlegal.com/license/mit-license"
+            ],
+            [
+                "Wikipedia page",
+                "https://en.wikipedia.org/wiki/MIT_License"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/mit"
             ]
         ]
     }

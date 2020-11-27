@@ -4,6 +4,8 @@
         "Sun Public License v1.0",
         "scancode://spl-1.0",
         "SPL 1.0",
+        "Sun Public License, Version 1.0",
+        "License :: OSI Approved :: Sun Public License",
         "Sun Public License 1.0"
     ],
     "__impliedId": "SPL-1.0",
@@ -208,6 +210,55 @@
                 ]
             },
             "CopyleftKind": "WeakCopyleft"
+        },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/SPL-1.0",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "SPL-1.0",
+                    "scheme": "SPDX"
+                },
+                {
+                    "identifier": "License :: OSI Approved :: Sun Public License",
+                    "scheme": "Trove"
+                }
+            ],
+            "superseded_by": null,
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "Sun Public License, Version 1.0",
+            "other_names": [],
+            "keywords": [
+                "discouraged",
+                "non-reusable",
+                "osi-approved"
+            ],
+            "id": "SPL-1.0",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/SPL-1.0"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "SPL-1.0",
+                    "Sun Public License, Version 1.0",
+                    "SPL-1.0",
+                    "License :: OSI Approved :: Sun Public License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/SPL-1.0"
+                    ]
+                ]
+            }
         }
     },
     "__impliedJudgement": [
@@ -260,6 +311,10 @@
         [
             null,
             "http://www.opensource.org/licenses/SPL-1.0"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/SPL-1.0"
         ]
     ]
 }

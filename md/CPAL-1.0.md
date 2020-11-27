@@ -9,6 +9,8 @@ Common Public Attribution License 1.0 (CPAL-1.0)
 
 -   `CPAL 1.0`
 
+-   `Common Public Attribution License Version 1.0 (CPAL-1.0)`
+
 -   `cpal_1.0`
 
 Comments on (easy) usability
@@ -60,9 +62,9 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/cpal\_1.0
 
--   **SPDX:** http://spdx.org/licenses/CPAL-1.0.json
+-   **OSI Page:** https://opensource.org/licenses/CPAL-1.0
 
--   https://opensource.org/licenses/CPAL-1.0
+-   **SPDX:** http://spdx.org/licenses/CPAL-1.0.json
 
 -   https://spdx.org/licenses/CPAL-1.0.html
 
@@ -201,6 +203,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpal-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -221,6 +226,7 @@ Raw Data
             "Common Public Attribution License 1.0",
             "scancode://cpal-1.0",
             "CPAL 1.0",
+            "Common Public Attribution License Version 1.0 (CPAL-1.0)",
             "cpal_1.0"
         ],
         "__impliedId": "CPAL-1.0",
@@ -450,6 +456,48 @@ Raw Data
                 },
                 "CopyleftKind": "SaaSCopyleft"
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/CPAL-1.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "CPAL-1.0",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Common Public Attribution License Version 1.0 (CPAL-1.0)",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved"
+                ],
+                "id": "CPAL-1.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/CPAL-1.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "CPAL-1.0",
+                        "Common Public Attribution License Version 1.0 (CPAL-1.0)",
+                        "CPAL-1.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/CPAL-1.0"
+                        ]
+                    ]
+                }
+            },
             "Google OSS Policy": {
                 "rating": "CANNOT_BE_USED",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -531,6 +579,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/CPAL-1.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/CPAL-1.0"
             ]
         ]
     }

@@ -3,7 +3,10 @@
         "ZPL-2.0",
         "Zope Public License 2.0",
         "scancode://zpl-2.0",
-        "ZPL 2.0"
+        "ZPL 2.0",
+        "The Zope Public License, Version 2.0",
+        "Zope-2.0",
+        "License :: OSI Approved :: Zope Public License"
     ],
     "__impliedId": "ZPL-2.0",
     "__impliedComments": [
@@ -203,6 +206,60 @@
                 ]
             }
         },
+        "OpenSourceInitiative": {
+            "text": [
+                {
+                    "url": "https://opensource.org/licenses/ZPL-2.0",
+                    "title": "HTML",
+                    "media_type": "text/html"
+                }
+            ],
+            "identifiers": [
+                {
+                    "identifier": "Zope-2.0",
+                    "scheme": "DEP5"
+                },
+                {
+                    "identifier": "ZPL-2.0",
+                    "scheme": "SPDX"
+                },
+                {
+                    "identifier": "License :: OSI Approved :: Zope Public License",
+                    "scheme": "Trove"
+                }
+            ],
+            "superseded_by": null,
+            "_sourceURL": "https://opensource.org/licenses/",
+            "name": "The Zope Public License, Version 2.0",
+            "other_names": [],
+            "keywords": [
+                "discouraged",
+                "non-reusable",
+                "osi-approved"
+            ],
+            "id": "ZPL-2.0",
+            "links": [
+                {
+                    "note": "OSI Page",
+                    "url": "https://opensource.org/licenses/ZPL-2.0"
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "ZPL-2.0",
+                    "The Zope Public License, Version 2.0",
+                    "Zope-2.0",
+                    "ZPL-2.0",
+                    "License :: OSI Approved :: Zope Public License"
+                ],
+                "__impliedURLs": [
+                    [
+                        "OSI Page",
+                        "https://opensource.org/licenses/ZPL-2.0"
+                    ]
+                ]
+            }
+        },
         "Google OSS Policy": {
             "rating": "NOTICE",
             "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -298,6 +355,10 @@
         [
             null,
             "http://www.zope.com/Marks"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/ZPL-2.0"
         ]
     ]
 }

@@ -9,6 +9,12 @@ Common Public License 1.0 (CPL-1.0)
 
 -   `CPL 1.0`
 
+-   `Common Public License, Version 1.0`
+
+-   `CPL`
+
+-   `License :: OSI Approved :: Common Public License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -47,9 +53,9 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/cpl1.0.php
 
--   **SPDX:** http://spdx.org/licenses/CPL-1.0.json
+-   **OSI Page:** https://opensource.org/licenses/CPL-1.0
 
--   https://opensource.org/licenses/CPL-1.0
+-   **SPDX:** http://spdx.org/licenses/CPL-1.0.json
 
 -   https://spdx.org/licenses/CPL-1.0.html
 
@@ -173,6 +179,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -191,7 +200,10 @@ Raw Data
             "CPL-1.0",
             "Common Public License 1.0",
             "scancode://cpl-1.0",
-            "CPL 1.0"
+            "CPL 1.0",
+            "Common Public License, Version 1.0",
+            "CPL",
+            "License :: OSI Approved :: Common Public License"
         ],
         "__impliedId": "CPL-1.0",
         "__impliedAmbiguousNames": [
@@ -394,6 +406,60 @@ Raw Data
                 },
                 "CopyleftKind": "WeakCopyleft"
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/CPL-1.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "CPL",
+                        "scheme": "DEP5"
+                    },
+                    {
+                        "identifier": "CPL-1.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Common Public License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": "EPL-1.0",
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Common Public License, Version 1.0",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "obsolete",
+                    "osi-approved"
+                ],
+                "id": "CPL-1.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/CPL-1.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "CPL-1.0",
+                        "Common Public License, Version 1.0",
+                        "CPL",
+                        "CPL-1.0",
+                        "License :: OSI Approved :: Common Public License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/CPL-1.0"
+                        ]
+                    ]
+                }
+            },
             "Wikipedia": {
                 "Linking": {
                     "value": "Permissive",
@@ -514,6 +580,10 @@ Raw Data
             [
                 null,
                 "http://www.padsproj.org/License.html"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/CPL-1.0"
             ]
         ]
     }

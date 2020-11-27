@@ -9,6 +9,10 @@ IBM Public License v1.0 (IPL-1.0)
 
 -   `IPL 1.0`
 
+-   `IBM Public License, Version 1.0`
+
+-   `License :: OSI Approved :: IBM Public License`
+
 -   `IBM Public License 1.0`
 
 -   `ibmpl`
@@ -49,9 +53,9 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/ibmpl.php
 
--   **SPDX:** http://spdx.org/licenses/IPL-1.0.json
+-   **OSI Page:** https://opensource.org/licenses/IPL-1.0
 
--   https://opensource.org/licenses/IPL-1.0
+-   **SPDX:** http://spdx.org/licenses/IPL-1.0.json
 
 -   https://spdx.org/licenses/IPL-1.0.html
 
@@ -148,6 +152,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ibmpl-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -171,6 +178,8 @@ Raw Data
             "IBM Public License v1.0",
             "scancode://ibmpl-1.0",
             "IPL 1.0",
+            "IBM Public License, Version 1.0",
+            "License :: OSI Approved :: IBM Public License",
             "IBM Public License 1.0",
             "ibmpl"
         ],
@@ -401,6 +410,55 @@ Raw Data
                 },
                 "CopyleftKind": "WeakCopyleft"
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/IPL-1.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "IPL-1.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: IBM Public License",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "IBM Public License, Version 1.0",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "non-reusable",
+                    "osi-approved"
+                ],
+                "id": "IPL-1.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/IPL-1.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "IPL-1.0",
+                        "IBM Public License, Version 1.0",
+                        "IPL-1.0",
+                        "License :: OSI Approved :: IBM Public License"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/IPL-1.0"
+                        ]
+                    ]
+                }
+            },
             "Wikipedia": {
                 "Linking": {
                     "value": "Copylefted",
@@ -505,6 +563,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/IPL-1.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/IPL-1.0"
             ]
         ]
     }

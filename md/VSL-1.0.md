@@ -9,6 +9,10 @@ Vovida Software License v1.0 (VSL-1.0)
 
 -   `Vovida Software License 1.0`
 
+-   `The Vovida Software License, Version 1.0`
+
+-   `License :: OSI Approved :: Vovida Software License 1.0`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -34,11 +38,11 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/vovidapl.php
 
+-   **OSI Page:** https://opensource.org/licenses/VSL-1.0
+
 -   **SPDX:** http://spdx.org/licenses/VSL-1.0.json
 
 -   **SPDX:** https://spdx.org/licenses/VSL-1.0.html
-
--   https://opensource.org/licenses/VSL-1.0
 
 -   http://www.opensource.org/licenses/VSL-1.0
 
@@ -121,6 +125,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vsl-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -132,7 +139,9 @@ Raw Data
             "VSL-1.0",
             "Vovida Software License v1.0",
             "scancode://vsl-1.0",
-            "Vovida Software License 1.0"
+            "Vovida Software License 1.0",
+            "The Vovida Software License, Version 1.0",
+            "License :: OSI Approved :: Vovida Software License 1.0"
         ],
         "__impliedId": "VSL-1.0",
         "__impliedComments": [
@@ -325,6 +334,55 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/VSL-1.0",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "VSL-1.0",
+                        "scheme": "SPDX"
+                    },
+                    {
+                        "identifier": "License :: OSI Approved :: Vovida Software License 1.0",
+                        "scheme": "Trove"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "The Vovida Software License, Version 1.0",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "non-reusable",
+                    "osi-approved"
+                ],
+                "id": "VSL-1.0",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/VSL-1.0"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "VSL-1.0",
+                        "The Vovida Software License, Version 1.0",
+                        "VSL-1.0",
+                        "License :: OSI Approved :: Vovida Software License 1.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/VSL-1.0"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -384,6 +442,10 @@ Raw Data
             [
                 null,
                 "http://www.vovida.org"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/VSL-1.0"
             ]
         ]
     }

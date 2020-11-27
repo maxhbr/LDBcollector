@@ -34,11 +34,11 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/eudatagrid.php
 
+-   **OSI Page:** https://opensource.org/licenses/EUDatagrid
+
 -   **SPDX:** http://spdx.org/licenses/EUDatagrid.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1546
-
--   https://opensource.org/licenses/EUDatagrid
 
 -   http://www.eu-egee.org/
 
@@ -92,6 +92,9 @@ Raw Data
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
@@ -308,7 +311,64 @@ Raw Data
                             "tag": "OlConditionTreeAnd",
                             "contents": []
                         },
-                        "_permission_actions": []
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾ä½¿ã",
+                                "_action_uri": "http://open-license.hitachi.com/actions/1",
+                                "_action_id": "actions/1",
+                                "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«ä½¿ç¨ãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/3",
+                                "_action_id": "actions/3",
+                                "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "åå¾ãããã¤ããªããã®ã¾ã¾ä½¿ã",
+                                "_action_uri": "http://open-license.hitachi.com/actions/6",
+                                "_action_id": "actions/6",
+                                "_action_name": "åå¾ãããã¤ããªãä½¿ç¨ãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/114",
+                                "_action_id": "actions/114",
+                                "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããè¡¨ç¤ºãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/118",
+                                "_action_id": "actions/118",
+                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããè¡¨ç¤ºãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/287",
+                                "_action_id": "actions/287",
+                                "_action_name": "åå¾ãããã¤ããªãè¡¨ç¤ºãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/288",
+                                "_action_id": "actions/288",
+                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãè¡¨ç¤ºãã"
+                            }
+                        ]
                     },
                     {
                         "_permission_summary": "",
@@ -317,7 +377,40 @@ Raw Data
                             "tag": "OlConditionTreeAnd",
                             "contents": []
                         },
-                        "_permission_actions": []
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/4",
+                                "_action_id": "actions/4",
+                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããä½¿ç¨ãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/8",
+                                "_action_id": "actions/8",
+                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãä½¿ç¨ãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/90",
+                                "_action_id": "actions/90",
+                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããçºè¡¨ãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/277",
+                                "_action_id": "actions/277",
+                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãçºè¡¨ãã"
+                            }
+                        ]
                     },
                     {
                         "_permission_summary": "",
@@ -326,7 +419,24 @@ Raw Data
                             "tag": "OlConditionTreeAnd",
                             "contents": []
                         },
-                        "_permission_actions": []
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "åå¾ããã³ã¼ãããã®ã¾ã¾åé å¸ãã",
+                                "_action_uri": "http://open-license.hitachi.com/actions/9",
+                                "_action_id": "actions/9",
+                                "_action_name": "åå¾ããã½ã¼ã¹ã³ã¼ããæ¹å¤ããã«é å¸ãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "åå¾ãããã¤ããªããã®ã¾ã¾åé å¸ãã",
+                                "_action_uri": "http://open-license.hitachi.com/actions/11",
+                                "_action_id": "actions/11",
+                                "_action_name": "åå¾ãããã¤ããªãé å¸ãã"
+                            }
+                        ]
                     },
                     {
                         "_permission_summary": "",
@@ -335,7 +445,24 @@ Raw Data
                             "tag": "OlConditionTreeAnd",
                             "contents": []
                         },
-                        "_permission_actions": []
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/12",
+                                "_action_id": "actions/12",
+                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ããé å¸ãã"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/14",
+                                "_action_id": "actions/14",
+                                "_action_name": "æ¹å¤ããã½ã¼ã¹ã³ã¼ãããçæãããã¤ããªãé å¸ãã"
+                            }
+                        ]
                     },
                     {
                         "_permission_summary": "",
@@ -344,7 +471,16 @@ Raw Data
                             "tag": "OlConditionTreeAnd",
                             "contents": []
                         },
-                        "_permission_actions": []
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/32",
+                                "_action_id": "actions/32",
+                                "_action_name": "ã¨ã³ãã¦ã¼ã¶ãã­ã¥ã¡ã³ããé å¸ç©ã«å«ãã"
+                            }
+                        ]
                     },
                     {
                         "_permission_summary": "",
@@ -353,7 +489,16 @@ Raw Data
                             "tag": "OlConditionTreeAnd",
                             "contents": []
                         },
-                        "_permission_actions": []
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/557",
+                                "_action_id": "actions/557",
+                                "_action_name": "ã½ããã¦ã§ã¢ãæ´¾çããè£½åã®æ¨å¥¨ãè²©å£²ä¿é²ã«åç§°ãä½¿ã"
+                            }
+                        ]
                     }
                 ],
                 "_license_id": "licenses/1546",
@@ -371,6 +516,50 @@ Raw Data
                         [
                             "open-license",
                             "http://open-license.hitachi.com/licenses/1546"
+                        ]
+                    ]
+                }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/EUDatagrid",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "EUDatagrid",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "EU DataGrid Software License",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "non-reusable",
+                    "osi-approved"
+                ],
+                "id": "EUDatagrid",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/EUDatagrid"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "EUDatagrid",
+                        "EU DataGrid Software License",
+                        "EUDatagrid"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/EUDatagrid"
                         ]
                     ]
                 }
@@ -429,6 +618,10 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/EUDatagrid"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/EUDatagrid"
             ],
             [
                 "open-license",

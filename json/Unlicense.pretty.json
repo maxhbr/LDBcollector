@@ -180,7 +180,88 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": []
                     },
-                    "_permission_actions": []
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したコードをそのまま使う",
+                            "_action_uri": "http://open-license.hitachi.com/actions/1",
+                            "_action_id": "actions/1",
+                            "_action_name": "取得したソースコードを改変せずに使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/3",
+                            "_action_id": "actions/3",
+                            "_action_name": "取得したソースコードを改変する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/4",
+                            "_action_id": "actions/4",
+                            "_action_name": "改変したソースコードを使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したバイナリをそのまま使う",
+                            "_action_uri": "http://open-license.hitachi.com/actions/6",
+                            "_action_id": "actions/6",
+                            "_action_name": "取得したバイナリを使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/8",
+                            "_action_id": "actions/8",
+                            "_action_name": "改変したソースコードから生成したバイナリを使用する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "取得したバイナリをそのまま再頒布する",
+                            "_action_uri": "http://open-license.hitachi.com/actions/11",
+                            "_action_id": "actions/11",
+                            "_action_name": "取得したバイナリを頒布する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/14",
+                            "_action_id": "actions/14",
+                            "_action_name": "改変したソースコードから生成したバイナリを頒布する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/35",
+                            "_action_id": "actions/35",
+                            "_action_name": "ソフトウェアを販売する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/90",
+                            "_action_id": "actions/90",
+                            "_action_name": "改変したソースコードを発表する"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/277",
+                            "_action_id": "actions/277",
+                            "_action_name": "改変したソースコードから生成したバイナリを発表する"
+                        }
+                    ]
                 }
             ],
             "_license_id": "licenses/844",

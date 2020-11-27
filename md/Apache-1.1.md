@@ -15,6 +15,8 @@ Apache License 1.1 (Apache-1.1)
 
 -   `Apache 1.1`
 
+-   `Apache Software License, Version 1.1`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -49,13 +51,13 @@ URLs
 
 -   **Homepage:** http://www.apache.org/licenses/
 
+-   **OSI Page:** https://opensource.org/licenses/Apache-1.1
+
 -   **SPDX:** http://spdx.org/licenses/Apache-1.1.json
 
 -   **SPDX:** https://spdx.org/licenses/Apache-1.1.html
 
 -   http://apache.org/licenses/LICENSE-1.1
-
--   https://opensource.org/licenses/Apache-1.1
 
 Text
 ----
@@ -125,6 +127,9 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml "Scancode")
     (CC0-1.0)
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -150,7 +155,8 @@ Raw Data
             "ASL 1.1",
             "Apache License 1.1",
             "scancode://apache-1.1",
-            "Apache 1.1"
+            "Apache 1.1",
+            "Apache Software License, Version 1.1"
         ],
         "__impliedId": "Apache-1.1",
         "__impliedAmbiguousNames": [
@@ -374,6 +380,50 @@ Raw Data
                     ]
                 }
             },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/Apache-1.1",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [
+                    {
+                        "identifier": "Apache-1.1",
+                        "scheme": "SPDX"
+                    }
+                ],
+                "superseded_by": "Apache-2.0",
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "Apache Software License, Version 1.1",
+                "other_names": [],
+                "keywords": [
+                    "discouraged",
+                    "obsolete",
+                    "osi-approved"
+                ],
+                "id": "Apache-1.1",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/Apache-1.1"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Apache-1.1",
+                        "Apache Software License, Version 1.1",
+                        "Apache-1.1"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/Apache-1.1"
+                        ]
+                    ]
+                }
+            },
             "finos/OSLC-handbook": {
                 "terms": [
                     {
@@ -536,6 +586,10 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/Apache-1.1"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Apache-1.1"
             ]
         ]
     }
