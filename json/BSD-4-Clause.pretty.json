@@ -256,8 +256,16 @@
                     "_permission_summary": "",
                     "_permission_description": "",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                            "_condition_id": "conditions/1",
+                            "_condition_name": "ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -282,8 +290,16 @@
                     "_permission_summary": "",
                     "_permission_description": "",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/2",
+                            "_condition_id": "conditions/2",
+                            "_condition_name": "頒布物に付属する資料に、ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -308,8 +324,16 @@
                     "_permission_summary": "",
                     "_permission_description": "謝辞の内容はこちら\"This product includes software developed by the <organization>.\"",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                            "_condition_id": "conditions/13",
+                            "_condition_name": "謝辞を含める",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -326,8 +350,16 @@
                     "_permission_summary": "",
                     "_permission_description": "",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "書面による特別な許可を取る",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
+                        }
                     },
                     "_permission_actions": [
                         {

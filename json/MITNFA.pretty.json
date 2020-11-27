@@ -187,8 +187,16 @@
                     "_permission_summary": "",
                     "_permission_description": "ソフトウェアの関連文書もソフトウェアと同様に扱う。\r\nソフトウェアを提供する相手にも同じ権利を許可することになる。",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                            "_condition_id": "conditions/1",
+                            "_condition_name": "ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -256,19 +264,43 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": [
                             {
-                                "tag": "OlConditionTreeAnd",
-                                "contents": []
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                                    "_condition_id": "conditions/1",
+                                    "_condition_name": "ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
                             },
                             {
                                 "tag": "OlConditionTreeOr",
                                 "contents": [
                                     {
-                                        "tag": "OlConditionTreeAnd",
-                                        "contents": []
+                                        "tag": "OlConditionTreeLeaf",
+                                        "contents": {
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/273",
+                                            "_condition_id": "conditions/273",
+                                            "_condition_name": "原著作者のバグ・レポートのe-mailアドレスやURLを、改変に責任を持つ団体の連絡先に変更する",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
+                                        }
                                     },
                                     {
-                                        "tag": "OlConditionTreeAnd",
-                                        "contents": []
+                                        "tag": "OlConditionTreeLeaf",
+                                        "contents": {
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/274",
+                                            "_condition_id": "conditions/274",
+                                            "_condition_name": "原著作者のバグ・レポートのe-mailアドレスやURLを削除する",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
+                                        }
                                     }
                                 ]
                             }

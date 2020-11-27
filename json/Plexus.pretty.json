@@ -205,12 +205,28 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": [
                             {
-                                "tag": "OlConditionTreeAnd",
-                                "contents": []
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                    "_condition_id": "conditions/68",
+                                    "_condition_name": "当該ソフトウェアに含まれる著作権表示を含める",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
                             },
                             {
-                                "tag": "OlConditionTreeAnd",
-                                "contents": []
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                    "_condition_id": "conditions/8",
+                                    "_condition_name": "当該ライセンスのコピーを渡す",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
                             }
                         ]
                     },
@@ -237,8 +253,16 @@
                     "_permission_summary": "",
                     "_permission_description": "ソフトウェアの関連文書もソフトウェアと同様に扱う。",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/2",
+                            "_condition_id": "conditions/2",
+                            "_condition_name": "頒布物に付属する資料に、ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -263,8 +287,16 @@
                     "_permission_summary": "",
                     "_permission_description": "\"DOM4J\"という名称を使う場合。\r\ndom4j-info@metastuff.comに連絡して、MetaStuff, Ltd.の許可を取る。",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "書面による特別な許可を取る",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -281,8 +313,16 @@
                     "_permission_summary": "",
                     "_permission_description": "\"DOM4J\"という名称を使う場合。\r\nMetaStuff, Ltd.の許可を取る。\r\n\"DOM4J\"は、MetaStuff, Ltd.の登録商標である。",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "書面による特別な許可を取る",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
+                        }
                     },
                     "_permission_actions": [
                         {

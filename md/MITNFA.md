@@ -291,8 +291,16 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "ã½ããã¦ã§ã¢ã®é¢é£ææ¸ãã½ããã¦ã§ã¢ã¨åæ§ã«æ±ãã\r\nã½ããã¦ã§ã¢ãæä¾ããç¸æã«ãåãæ¨©å©ãè¨±å¯ãããã¨ã«ãªãã",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": []
+                            "tag": "OlConditionTreeLeaf",
+                            "contents": {
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                                "_condition_id": "conditions/1",
+                                "_condition_name": "ã©ã¤ã»ã³ã¹ã«å«ã¾ãã¦ããèä½æ¨©è¡¨ç¤ºãæ¡ä»¶ä¸è¦§ãåè²¬äºé ãå«ãã",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
+                            }
                         },
                         "_permission_actions": [
                             {
@@ -360,19 +368,43 @@ Raw Data
                             "tag": "OlConditionTreeAnd",
                             "contents": [
                                 {
-                                    "tag": "OlConditionTreeAnd",
-                                    "contents": []
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                                        "_condition_id": "conditions/1",
+                                        "_condition_name": "ã©ã¤ã»ã³ã¹ã«å«ã¾ãã¦ããèä½æ¨©è¡¨ç¤ºãæ¡ä»¶ä¸è¦§ãåè²¬äºé ãå«ãã",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
                                 },
                                 {
                                     "tag": "OlConditionTreeOr",
                                     "contents": [
                                         {
-                                            "tag": "OlConditionTreeAnd",
-                                            "contents": []
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/273",
+                                                "_condition_id": "conditions/273",
+                                                "_condition_name": "åèä½èã®ãã°ã»ã¬ãã¼ãã®e-mailã¢ãã¬ã¹ãURLããæ¹å¤ã«è²¬ä»»ãæã¤å£ä½ã®é£çµ¡åã«å¤æ´ãã",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
                                         },
                                         {
-                                            "tag": "OlConditionTreeAnd",
-                                            "contents": []
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/274",
+                                                "_condition_id": "conditions/274",
+                                                "_condition_name": "åèä½èã®ãã°ã»ã¬ãã¼ãã®e-mailã¢ãã¬ã¹ãURLãåé¤ãã",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
                                         }
                                     ]
                                 }

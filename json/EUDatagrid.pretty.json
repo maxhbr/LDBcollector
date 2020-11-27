@@ -263,8 +263,16 @@
                     "_permission_summary": "",
                     "_permission_description": "サブライセンシにも同じ権利を許可することになる。",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/630",
+                            "_condition_id": "conditions/630",
+                            "_condition_name": "本ライセンスに従って、EU DataGridの参加者に対し、自身の改変物や派生物を使用、表示、改変、再頒布、サブライセンスできる、世界規模で非独占的で使用料無料で無制限のライセンスを付与する",
+                            "_condition_description": "ただし、ユーザーと書面による個別の使用許諾契約を締結する場合を除く。",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "RESTRICTION"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -305,8 +313,16 @@
                     "_permission_summary": "",
                     "_permission_description": "ソフトウェアの関連文書もソフトウェアと同様に扱う。\r\nサブライセンシにも同じ権利を許可することになる。 ",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                            "_condition_id": "conditions/1",
+                            "_condition_name": "ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -334,12 +350,28 @@
                         "tag": "OlConditionTreeAnd",
                         "contents": [
                             {
-                                "tag": "OlConditionTreeAnd",
-                                "contents": []
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                                    "_condition_id": "conditions/1",
+                                    "_condition_name": "ライセンスに含まれている著作権表示、条件一覧、免責事項を含める",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
                             },
                             {
-                                "tag": "OlConditionTreeAnd",
-                                "contents": []
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/630",
+                                    "_condition_id": "conditions/630",
+                                    "_condition_name": "本ライセンスに従って、EU DataGridの参加者に対し、自身の改変物や派生物を使用、表示、改変、再頒布、サブライセンスできる、世界規模で非独占的で使用料無料で無制限のライセンスを付与する",
+                                    "_condition_description": "ただし、ユーザーと書面による個別の使用許諾契約を締結する場合を除く。",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
                             }
                         ]
                     },
@@ -366,8 +398,16 @@
                     "_permission_summary": "",
                     "_permission_description": "●謝辞の内容はこちら\r\n\"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\"\r\n第三者の謝辞がソフトウェアに表示される場合は、ソフトウェア自体に含める。\r\n●サブライセンシにも同じ権利を許可することになる。",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                            "_condition_id": "conditions/13",
+                            "_condition_name": "謝辞を含める",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
+                        }
                     },
                     "_permission_actions": [
                         {
@@ -384,8 +424,16 @@
                     "_permission_summary": "",
                     "_permission_description": "●\"EDG\"、\"EDG Toolkit\"、\"EU DataGrid Project\"という名称を使う場合。\r\nhep-project-grid-edg-license@cern.chに連絡する。\r\n●サブライセンシにも同じ権利を許可することになる。",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": []
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "書面による特別な許可を取る",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
+                        }
                     },
                     "_permission_actions": [
                         {
