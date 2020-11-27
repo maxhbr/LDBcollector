@@ -451,6 +451,25 @@
             "_sourceURL": "http://open-license.hitachi.com/licenses/1546",
             "_license_name": "EU DataGrid Software License",
             "_license_summary": "https://opensource.org/licenses/EUDatagrid",
+            "_license_content": "EU DataGrid Software License\r\n\r\n\r\nCopyright (c) 2001 EU DataGrid. All rights reserved.\r\n\r\nThis software includes voluntary contributions made to the EU DataGrid. For more\r\ninformation on the EU DataGrid, please see http://www.eu-datagrid.org/.\r\n\r\nInstallation, use, reproduction, display, modification and redistribution of this\r\nsoftware, with or without modification, in source and binary forms, are\r\npermitted. Any exercise of rights under this license by you or your sub-licensees\r\nis subject to the following conditions:\r\n\r\n1. Redistributions of this software, with or without modification, must reproduce\r\nthe above copyright notice and the above license statement as well as this list\r\nof conditions, in the software, the user documentation and any other materials\r\nprovided with the software.\r\n\r\n2. The user documentation, if any, included with a redistribution, must include\r\nthe following notice: \"This product includes software developed by the EU\r\nDataGrid (http://www.eu-datagrid.org/).\"\r\n\r\nAlternatively, if that is where third-party acknowledgments normally appear, this\r\nacknowledgment must be reproduced in the software itself.\r\n\r\n3. The names \"EDG\", \"EDG Toolkit\", and \"EU DataGrid Project\" may not be used to\r\nendorse or promote software, or products derived therefrom, except with prior\r\nwritten permission by hep-project-grid-edg-license@cern.ch.\r\n\r\n4. You are under no obligation to provide anyone with any bug fixes, patches,\r\nupgrades or other modifications, enhancements or derivatives of the\r\nfeatures,functionality or performance of this software that you may develop.\r\nHowever, if you publish or distribute your modifications, enhancements or\r\nderivative works without contemporaneously requiring users to enter into a\r\nseparate written license agreement, then you are deemed to have granted\r\nparticipants in the EU DataGrid a worldwide, non-exclusive, royalty-free,\r\nperpetual license to install, use, reproduce, display, modify, redistribute and\r\nsub-license your modifications, enhancements or derivative works, whether in\r\nbinary or source code form, under the license conditions stated in this list of\r\nconditions.\r\n\r\n5. DISCLAIMER\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE EU DATAGRID AND CONTRIBUTORS \"AS IS\" AND ANY\r\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\r\nWARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND FITNESS FOR A\r\nPARTICULAR PURPOSE OR USE ARE DISCLAIMED. THE EU DATAGRID AND CONTRIBUTORS MAKE\r\nNO REPRESENTATION THAT THE SOFTWARE, MODIFICATIONS, ENHANCEMENTS OR DERIVATIVE\r\nWORKS THEREOF, WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADE SECRET OR OTHER\r\nPROPRIETARY RIGHT.\r\n\r\n6. LIMITATION OF LIABILITY\r\n\r\nTHE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER\r\nPERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR\r\nPUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF\r\nSUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS\r\nINTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT\r\n(INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF\r\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+            "_license_notices": [
+                {
+                    "_notice_description": "無保証である。",
+                    "_notice_content": "当該ソフトウェアは、著作権者およびコントリビュータによって「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、商業的な使用可能性、満足すべき品質、特定の目的に対する適合性、あるいは、使用に関する暗黙の保証を含むが、それに限定されるものではない。著作権者もコントリビュータも、当該ソフトウェア、あるいは、当該ソフトウェアの改変物、拡張機能、派生物が、特許、著作権、トレードシークレットなどの知的財産権を侵害しないことを表明しない。",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/856",
+                    "_notice_id": "notices/856"
+                },
+                {
+                    "_notice_description": "",
+                    "_notice_content": "著作権者もコントリビュータも、ライセンシや第三者に対して、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか保証であるか(過失を含む)不法行為であるか製造物責任その他であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した直接損害、間接損害、特別損害、付随的損害、派生的損害、または、懲罰的損害のいずれに対しても、代用品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償を含めるが、それに限定されない補償を含め、一切責任を負わないものとする。",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/857",
+                    "_notice_id": "notices/857"
+                }
+            ],
             "_license_description": "",
             "_license_baseUri": "http://open-license.hitachi.com/",
             "_license_schemaVersion": "0.1",

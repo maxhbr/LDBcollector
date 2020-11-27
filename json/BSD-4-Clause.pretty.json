@@ -377,6 +377,25 @@
             "_sourceURL": "http://open-license.hitachi.com/licenses/277",
             "_license_name": "BSD 4-clause \"Original\" or \"Old\" License",
             "_license_summary": "BSD-4-Clause",
+            "_license_content": "Copyright (c) {{year}}, {{copyright holder}} \r\nAll rights reserved. \r\n\r\nRedistribution and use in source and binary forms, with or without \r\nmodification, are permitted provided that the following conditions are met: \r\n\r\n    1. Redistributions of source code must retain the above copyright \r\n    notice, this list of conditions and the following disclaimer. \r\n    2. Redistributions in binary form must reproduce the above copyright \r\n    notice, this list of conditions and the following disclaimer in the \r\n    documentation and/or other materials provided with the distribution. \r\n    3. All advertising materials mentioning features or use of this software \r\n    must display the following acknowledgement: \r\n    This product includes software developed by {{the organization}}. \r\n    4. Neither the name of {{the organization nor the \r\n    names of its contributors}} may be used to endorse or promote products \r\n    derived from this software without specific prior written permission. \r\n\r\nTHIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} \"AS IS\" AND ANY \r\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \r\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \r\nDISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY \r\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \r\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \r\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND \r\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \r\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+            "_license_notices": [
+                {
+                    "_notice_description": "無保証である。",
+                    "_notice_content": "当該ソフトウェアは、著作権者によって「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、商業的な使用可能性、および、特定の目的に対する適合性に関する暗黙の保証を含むが、それに限定されるものではない。\r\n",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/102",
+                    "_notice_id": "notices/102"
+                },
+                {
+                    "_notice_description": "",
+                    "_notice_content": "著作権者は、事由の如何を問わず、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか厳格責任であるか(過失を含む)不法行為であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した直接損害、間接損害、付随的損害、特別損害、懲罰的損害、または、派生的損害のいずれに対しても(代替品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償も含めるが、それに限定されない補償を含め)一切責任を負わないものとする。",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/103",
+                    "_notice_id": "notices/103"
+                }
+            ],
             "_license_description": "",
             "_license_baseUri": "http://open-license.hitachi.com/",
             "_license_schemaVersion": "0.1",

@@ -703,6 +703,25 @@ Raw Data
                 "_sourceURL": "http://open-license.hitachi.com/licenses/16",
                 "_license_name": "zlib/libpng license",
                 "_license_summary": "",
+                "_license_content": "The zlib/libpng License\r\n\r\nCopyright (c) ï¼yearï¼ ï¼copyright holdersï¼\r\n\r\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\r\n\r\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\r\n\r\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \r\n        the original software. If you use this software in a product, an acknowledgment in the product \r\n        documentation  would be appreciated but is not required.\r\n\r\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \r\n         the original software.\r\n\r\n      3. This notice may not be removed or altered from any source distribution.",
+                "_license_notices": [
+                    {
+                        "_notice_description": "ç¡ä¿è¨¼ã§ãã",
+                        "_notice_content": "å½è©²ã½ããã¦ã§ã¢ã¯ããç¾ç¶ã®ã¾ã¾(as-is)ãã§æä¾ããã¦ãããæç¤ºã§ãããé»ç¤ºã§ããããåããããããªãä¿è¨¼ããªãã",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/1",
+                        "_notice_id": "notices/1"
+                    },
+                    {
+                        "_notice_description": "",
+                        "_notice_content": "èä½èã¯ãå½è©²ã½ããã¦ã§ã¢ã®ä½¿ç¨ã«ãã£ã¦çºçããæå®³ã®ãããã«å¯¾ãã¦ãä¸åè²¬ä»»ãè² ããªããã®ã¨ããã",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/132",
+                        "_notice_id": "notices/132"
+                    }
+                ],
                 "_license_description": "",
                 "_license_baseUri": "http://open-license.hitachi.com/",
                 "_license_schemaVersion": "0.1",

@@ -340,6 +340,25 @@
             "_sourceURL": "http://open-license.hitachi.com/licenses/288",
             "_license_name": "DOM4J License",
             "_license_summary": "",
+            "_license_content": "Copyright 2001-2005 (C) MetaStuff, Ltd. \r\nAll Rights Reserved. \r\n\r\nRedistribution and use of this software and \r\nassociated documentation (\"Software\"), with \r\nor without modification, are permitted provided \r\nthat the following conditions are met: \r\n\r\n1. Redistributions of source code must retain \r\n   copyright statements and notices. Redistributions \r\n   must also contain a copy of this document. \r\n2. Redistributions in binary form must reproduce \r\n   the above copyright notice, this list of conditions \r\n   and the following disclaimer in the documentation \r\n   and/or other materials provided with the distribution. \r\n3. The name \"DOM4J\" must not be used to endorse or promote \r\n   products derived from this Software without prior written \r\n   permission of MetaStuff, Ltd. For written permission, \r\n   please contact dom4j-info@metastuff.com. \r\n4. Products derived from this Software may not be called \r\n   \"DOM4J\" nor may \"DOM4J\" appear in their names without \r\n   prior written permission of MetaStuff, Ltd. DOM4J is a \r\n   registered trademark of MetaStuff, Ltd. \r\n5. Due credit should be given to the DOM4J Project \r\n   http://www.dom4j.org/ \r\n\r\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS \r\n\"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, \r\nBUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY \r\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO \r\nEVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR \r\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR \r\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT \r\nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; \r\nOR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \r\n LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT \r\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY \r\nOF SUCH DAMAGE.",
+            "_license_notices": [
+                {
+                    "_notice_description": "無保証である",
+                    "_notice_content": "当該ソフトウェアは、著作権者およびコントリビュータによって「現状のまま(as-is)」で提供されており、明示であるか黙示であるかを問わず、いかなる保証もない。ここでいう保証とは、商業的な使用可能性、および、特定の目的に対する適合性に関する暗黙の保証を含むが、それに限定されるものではない。",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/5",
+                    "_notice_id": "notices/5"
+                },
+                {
+                    "_notice_description": "",
+                    "_notice_content": "著作権者もコントリビュータも、事由の如何を問わず、損害発生の原因如何を問わず、かつ、責任の根拠が契約であるか厳格責任であるか(過失を含む)不法行為であるかを問わず、仮にそのような損害が発生する可能性を知らされていたとしても、当該ソフトウェアの使用によって発生した直接損害、間接損害、付随的損害、特別損害、懲罰的損害、または、派生的損害のいずれに対しても(代替品または代用サービスの調達、使用の喪失、データの喪失、利益の喪失に対する補償、または、業務の中断に対する補償も含めるが、それに限定されない補償を含め)一切責任を負わないものとする。",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/6",
+                    "_notice_id": "notices/6"
+                }
+            ],
             "_license_description": "\"DOM4J\"は、MetaStuff, Ltd.の登録商標である。\r\n\r\n正当なクレジットは\"DOM4J Project http://www.dom4j.org/\"にある。\r\n",
             "_license_baseUri": "http://open-license.hitachi.com/",
             "_license_schemaVersion": "0.1",

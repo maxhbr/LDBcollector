@@ -466,6 +466,17 @@ Raw Data
                 "_sourceURL": "http://open-license.hitachi.com/licenses/698",
                 "_license_name": "MIT +no-false-attribs License",
                 "_license_summary": "",
+                "_license_content": "Copyright 2013, NAN contributors:\r\n  - Rod Vagg <https://github.com/rvagg>\r\n  - Benjamin Byholm <https://github.com/kkoopa>\r\n  - Trevor Norris <https://github.com/trevnorris>\r\n  - Nathan Rajlich <https://github.com/TooTallNate>\r\n  - Brett Lawson <https://github.com/brett19>\r\n  - Ben Noordhuis <https://github.com/bnoordhuis>\r\n(the \"Original Author\")\r\nAll rights reserved.\r\n\r\nMIT +no-false-attribs License\r\n\r\nPermission is hereby granted, free of charge, to any person\r\nobtaining a copy of this software and associated documentation\r\nfiles (the \"Software\"), to deal in the Software without\r\nrestriction, including without limitation the rights to use,\r\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\r\ncopies of the Software, and to permit persons to whom the\r\nSoftware is furnished to do so, subject to the following\r\nconditions:\r\n\r\nThe above copyright notice and this permission notice shall be\r\nincluded in all copies or substantial portions of the Software.\r\n\r\nDistributions of all or part of the Software intended to be used\r\nby the recipients as they would use the unmodified Software,\r\ncontaining modifications that substantially alter, remove, or\r\ndisable functionality of the Software, outside of the documented\r\nconfiguration mechanisms provided by the Software, shall be\r\nmodified such that the Original Author's bug reporting email\r\naddresses and urls are either replaced with the contact information\r\nof the parties responsible for the changes, or removed entirely.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\r\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\r\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\r\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\r\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\r\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\r\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\r\nOTHER DEALINGS IN THE SOFTWARE.\r\n\r\n\r\nExcept where noted, this license applies to any and all software\r\nprograms and associated documentation files created by the\r\nOriginal Author, when distributed with the Software.",
+                "_license_notices": [
+                    {
+                        "_notice_description": "ç¡ä¿è¨¼ã§ãã",
+                        "_notice_content": "å½è©²ã½ããã¦ã§ã¢ã¯ããç¾ç¶ã®ã¾ã¾(as-is)ãã§æä¾ããã¦ãããæç¤ºã§ãããé»ç¤ºã§ããããåããããããªãä¿è¨¼ããªãã\r\nããã§ããä¿è¨¼ã¨ã¯ãåæ¥­çãªä½¿ç¨å¯è½æ§ãç¹å®ã®ç®çã«å¯¾ããé©åæ§ãããã³ãæ¨©å©éä¾µå®³ã«ã¤ãã¦ã®ä¿è¨¼ãå«ãããããã«éå®ããããã®ã§ã¯ãªãã",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/3",
+                        "_notice_id": "notices/3"
+                    }
+                ],
                 "_license_description": "",
                 "_license_baseUri": "http://open-license.hitachi.com/",
                 "_license_schemaVersion": "0.1",

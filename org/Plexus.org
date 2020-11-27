@@ -470,6 +470,25 @@
               "_sourceURL": "http://open-license.hitachi.com/licenses/288",
               "_license_name": "DOM4J License",
               "_license_summary": "",
+              "_license_content": "Copyright 2001-2005 (C) MetaStuff, Ltd. \r\nAll Rights Reserved. \r\n\r\nRedistribution and use of this software and \r\nassociated documentation (\"Software\"), with \r\nor without modification, are permitted provided \r\nthat the following conditions are met: \r\n\r\n1. Redistributions of source code must retain \r\n   copyright statements and notices. Redistributions \r\n   must also contain a copy of this document. \r\n2. Redistributions in binary form must reproduce \r\n   the above copyright notice, this list of conditions \r\n   and the following disclaimer in the documentation \r\n   and/or other materials provided with the distribution. \r\n3. The name \"DOM4J\" must not be used to endorse or promote \r\n   products derived from this Software without prior written \r\n   permission of MetaStuff, Ltd. For written permission, \r\n   please contact dom4j-info@metastuff.com. \r\n4. Products derived from this Software may not be called \r\n   \"DOM4J\" nor may \"DOM4J\" appear in their names without \r\n   prior written permission of MetaStuff, Ltd. DOM4J is a \r\n   registered trademark of MetaStuff, Ltd. \r\n5. Due credit should be given to the DOM4J Project \r\n   http://www.dom4j.org/ \r\n\r\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS \r\n\"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, \r\nBUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY \r\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO \r\nEVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR \r\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR \r\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT \r\nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; \r\nOR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \r\n LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT \r\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY \r\nOF SUCH DAMAGE.",
+              "_license_notices": [
+                  {
+                      "_notice_description": "ç¡ä¿è¨¼ã§ãã",
+                      "_notice_content": "å½è©²ã½ããã¦ã§ã¢ã¯ãèä½æ¨©èããã³ã³ã³ããªãã¥ã¼ã¿ã«ãã£ã¦ãç¾ç¶ã®ã¾ã¾(as-is)ãã§æä¾ããã¦ãããæç¤ºã§ãããé»ç¤ºã§ããããåããããããªãä¿è¨¼ããªããããã§ããä¿è¨¼ã¨ã¯ãåæ¥­çãªä½¿ç¨å¯è½æ§ãããã³ãç¹å®ã®ç®çã«å¯¾ããé©åæ§ã«é¢ããæé»ã®ä¿è¨¼ãå«ãããããã«éå®ããããã®ã§ã¯ãªãã",
+                      "_notice_baseUri": "http://open-license.hitachi.com/",
+                      "_notice_schemaVersion": "0.1",
+                      "_notice_uri": "http://open-license.hitachi.com/notices/5",
+                      "_notice_id": "notices/5"
+                  },
+                  {
+                      "_notice_description": "",
+                      "_notice_content": "èä½æ¨©èãã³ã³ããªãã¥ã¼ã¿ããäºç±ã®å¦ä½ãåãããæå®³çºçã®åå å¦ä½ãåããããã¤ãè²¬ä»»ã®æ ¹æ ãå¥ç´ã§ãããå³æ ¼è²¬ä»»ã§ããã(éå¤±ãå«ã)ä¸æ³è¡çºã§ããããåãããä»®ã«ãã®ãããªæå®³ãçºçããå¯è½æ§ãç¥ãããã¦ããã¨ãã¦ããå½è©²ã½ããã¦ã§ã¢ã®ä½¿ç¨ã«ãã£ã¦çºçããç´æ¥æå®³ãéæ¥æå®³ãä»éçæå®³ãç¹å¥æå®³ãæ²ç½°çæå®³ãã¾ãã¯ãæ´¾ççæå®³ã®ãããã«å¯¾ãã¦ã(ä»£æ¿åã¾ãã¯ä»£ç¨ãµã¼ãã¹ã®èª¿éãä½¿ç¨ã®åªå¤±ããã¼ã¿ã®åªå¤±ãå©çã®åªå¤±ã«å¯¾ããè£åãã¾ãã¯ãæ¥­åã®ä¸­æ­ã«å¯¾ããè£åãå«ããããããã«éå®ãããªãè£åãå«ã)ä¸åè²¬ä»»ãè² ããªããã®ã¨ããã",
+                      "_notice_baseUri": "http://open-license.hitachi.com/",
+                      "_notice_schemaVersion": "0.1",
+                      "_notice_uri": "http://open-license.hitachi.com/notices/6",
+                      "_notice_id": "notices/6"
+                  }
+              ],
               "_license_description": "\"DOM4J\"ã¯ãMetaStuff, Ltd.ã®ç»é²åæ¨ã§ããã\r\n\r\næ­£å½ãªã¯ã¬ã¸ããã¯\"DOM4J Project http://www.dom4j.org/\"ã«ããã\r\n",
               "_license_baseUri": "http://open-license.hitachi.com/",
               "_license_schemaVersion": "0.1",
